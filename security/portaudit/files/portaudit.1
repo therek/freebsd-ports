@@ -26,7 +26,7 @@
 .\" (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 .\" THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 .\"
-.\" $FreeBSD: ports/security/portaudit/files/portaudit.1,v 1.1 2004/02/21 21:19:41 eik Exp $
+.\" $FreeBSD: ports/security/portaudit/files/portaudit.1,v 1.2 2004/03/11 11:11:59 eik Exp $
 .\"
 .Dd March 11, 2004
 .Os FreeBSD
@@ -43,6 +43,8 @@
 .
 .Nm
 .Op Fl a
+.Op Fl A
+.Op Fl C
 .Op Fl V
 .Op Fl d
 .Op Fl F
@@ -74,6 +76,11 @@ The following options are supported:
 .Bl -tag -width ".Fl X"
 .It Fl a
 Print a vulnerability report for all installed packages
+.It Fl A
+Print a vulnerability report for all ports in PORTSDIR (slow).
+.It Fl C
+Print a vulnerability report for the port in the current working directory.
+Mostly useful for committers.
 .It Fl F
 Fetch the current database from the
 .Fx servers
@@ -118,7 +125,7 @@ Print a vulnerability report for all installed packages:
 .Sh CAVEATS
 .
 The format of
-.Pa %%DATABASEDIR%%/auditfile.tbz
+.Pa %%PREFIX%%/etc/portaudit.conf
 might change.
 .
 .
