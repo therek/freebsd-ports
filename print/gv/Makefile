@@ -4,12 +4,12 @@
 # Date created:		16 Apr 1996
 # Whom:			tg@freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/gv/Makefile,v 1.21 1999/08/31 01:44:51 peter Exp $
 #
 
 DISTNAME=	gv-3.5.8
 CATEGORIES=	print
-MASTER_SITES=	ftp://thep.physik.uni-mainz.de/pub/gv/unix/  \
+MASTER_SITES=	ftp://ftpthep.physik.uni-mainz.de/pub/gv/unix/  \
 		${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR=	support/ghostscript/gnu/gv/unix
 
