@@ -2,11 +2,11 @@
 # Date created:		31 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11/ruby-X11/Makefile,v 1.1 2001/05/30 15:47:57 knu Exp $
+# $FreeBSD: ports/x11/ruby-X11/Makefile,v 1.2 2001/06/20 06:47:23 knu Exp $
 #
 
 PORTNAME=	X11
-PORTVERSION=	0.3
+PORTVERSION=	0.4
 CATEGORIES=	x11 ruby
 MASTER_SITES=	http://hostname.2y.net/~matju/RubyX11/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -26,10 +26,11 @@ do-install:
 	${MKDIR} ${RUBY_SITELIBDIR}/${PORTNAME}
 	${INSTALL_DATA} ${WRKSRC}/${PORTNAME}/* ${RUBY_SITELIBDIR}/${PORTNAME}/
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}/tests
 .for f in ${EXAMPLES}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 .endfor
+	${MV} ${RUBY_EXAMPLESDIR}/${PORTNAME}/Vector.rb ${RUBY_EXAMPLESDIR}/${PORTNAME}/tests/
 	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
 .for f in ${DOCS}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
