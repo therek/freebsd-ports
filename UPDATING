@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20040815:
+  AFFECTS: users of net/openldap22{,-sasl}-server
+  AUTHOR: eik@FreeBSD.org
+
+  The start/stop script has moved to ${PREFIX}/etc/rc.d. Users on 5.x
+  who want to start the daemon early can set WITH_RCORDER=yes.
+
+  Setting WITH_ODBC_TYPE is not sufficient to enable SQL backend
+  support, WITH_ODBC=yes is required.
+
 20040813:
   AFFECTS: users of x11/kdebase3 (kdm)
   AUTHOR: kde@freebsd.org
@@ -591,4 +601,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.57 2004/08/13 18:01:32 lofi Exp $
+$FreeBSD: ports/UPDATING,v 1.58 2004/08/13 19:02:23 lofi Exp $
