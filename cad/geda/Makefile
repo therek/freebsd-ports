@@ -3,7 +3,7 @@
 # Date created:			24 Nov 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/geda/Makefile,v 1.14 1999/09/10 16:27:23 foxfair Exp $
+# $FreeBSD: ports/cad/geda/Makefile,v 1.15 1999/11/29 02:37:49 jseger Exp $
 #
 
 DISTNAME=	gEDA-19990516
@@ -23,5 +23,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--with-gtk-config=${GTK_CONFIG}
+
+MAN1=		gschem.1 gnetlist.1
 
 .include <bsd.port.mk>
