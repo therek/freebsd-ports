@@ -1,15 +1,15 @@
 # New ports collection makefile for:	jlex
-# Version required:	1.2.3
 # Date created:		1 June 1999
 # Whom:			jake@checker.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/jlex/Makefile,v 1.2 1999/08/25 06:16:27 obrien Exp $
 #
 
-DISTNAME=	Main
-PKGNAME=	jlex-1.2.3
+PORTNAME=	jlex
+PORTVERSION=	1.2.3
 CATEGORIES=	java
 MASTER_SITES=	http://www.cs.princeton.edu/~appel/modern/java/JLex/Archive/1.2.3/
+DISTNAME=	Main
 EXTRACT_SUFX=	.java
 
 MAINTAINER=	jake@checker.org

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Expect
-# Version required:	1.07
 # Date created:		14 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/lang/p5-Expect/Makefile,v 1.1.1.1 2000/02/20 22:01:37 jedgar Exp $
+# $FreeBSD: ports/lang/p5-Expect/Makefile,v 1.2 2000/03/22 01:59:21 will Exp $
 #
 
-DISTNAME=	Expect.pm-1.07
-PKGNAME=	p5-Expect-1.07
+PORTNAME=	p5-Expect
+PORTVERSION=	1.07
 CATEGORIES=	lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Expect
+DISTNAME=	Expect.pm-1.07
 
 MAINTAINER=	will@FreeBSD.org
 

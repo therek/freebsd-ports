@@ -1,15 +1,15 @@
 # New ports collection makefile for:	elk
-# Version required:	3.0pl3
 # Date created:		08 March 1995
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/elk/Makefile,v 1.21 1999/12/23 18:50:09 steve Exp $
+# $FreeBSD: ports/lang/elk/Makefile,v 1.22 2000/01/14 16:34:15 imura Exp $
 #
 
-DISTNAME=	elk-3.0
-PKGNAME=	elk-3.0.3
+PORTNAME=	elk
+PORTVERSION=	3.0.3
 CATEGORIES=	lang
 MASTER_SITES=	http://www-rn.informatik.uni-bremen.de/software/elk/dist/
+DISTNAME=	elk-3.0
 
 MAINTAINER=	ports@FreeBSD.org
 

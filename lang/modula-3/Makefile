@@ -1,12 +1,12 @@
 # New ports collection makefile for:	modula-3
-# Version required:	3.6
 # Date created:		18 Mar 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3/Makefile,v 1.34 1999/08/28 02:17:16 mharo Exp $
+# $FreeBSD: ports/lang/modula-3/Makefile,v 1.35 1999/08/28 02:42:25 mharo Exp $
 #
 
-DISTNAME=	modula-3-3.6
+PORTNAME=	modula-3
+PORTVERSION=	3.6
 CATEGORIES=	lang
 DISTFILES=
 

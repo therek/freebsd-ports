@@ -1,13 +1,12 @@
 # New ports collection makefile for:    Dylan
-# Version required:     2.0
 # Date created:         23 Jan 1998
 # Whom:                 housel@acm.org
 #
-# $FreeBSD: ports/lang/dylan/Makefile,v 1.8 1999/08/25 06:34:21 obrien Exp $
+# $FreeBSD: ports/lang/dylan/Makefile,v 1.9 1999/12/24 18:39:32 mharo Exp $
 #
 
-DISTNAME=	gd-2.2.0
-PKGNAME=	dylan-2.2.0
+PORTNAME=	dylan
+PORTVERSION=	2.2.0
 CATEGORIES=	lang
 MASTER_SITES=	ftp://berlin.ccc.de/pub/gd/src/                        \
 		ftp://berlin.ccc.de/pub/gd/FreeBSD/                    \
@@ -25,7 +24,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} d2c-2.2.0-FreeBSD.gz
 MAINTAINER= 	housel@acm.org
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
-WRKSRC=		$(WRKDIR)/gd/src
+WRKSRC=		${WRKDIR}/gd/src
 
 GNU_CONFIGURE=  yes
 CONFIGURE_ARGS= --srcdir=$(WRKSRC)

@@ -1,13 +1,12 @@
 # New ports collection makefile for:	wamcc
-# Version required:	2.22
 # Date created:		14 September 1999
 # Whom:			Jerry Hicks <wghicks@bellsouth.net>
 #
-# $FreeBSD: ports/lang/wamcc/Makefile,v 1.2 2000/02/21 19:06:50 fenner Exp $
+# $FreeBSD: ports/lang/wamcc/Makefile,v 1.3 2000/02/21 19:46:19 green Exp $
 #
 
-DISTNAME=	wamcc2.22
-PKGNAME=	wamcc-2.22
+PORTNAME=	wamcc
+PORTVERSION=	2.22
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/loco/wamcc/
 DISTFILES=	wamcc2.22.tar.Z prg.tar.Z

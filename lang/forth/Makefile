@@ -1,12 +1,12 @@
 # New ports collection makefile for:    pfe
-# Version required:     0.9.14
 # Date created:         23 November 1994
 # Whom:                 mr
 #
-# $FreeBSD: ports/lang/forth/Makefile,v 1.13 1999/10/10 23:51:41 steve Exp $
+# $FreeBSD: ports/lang/forth/Makefile,v 1.14 1999/12/24 04:43:29 steve Exp $
 #
 
-DISTNAME=	pfe-0.9.14
+PORTNAME=	pfe
+PORTVERSION=	0.9.14
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.taygeta.com/pub/Forth/Compilers/native/unix/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	atlast
-# Version required:     1.0
 # Date created:         26 Ag 97
 # Whom:                 Pedro Giffuni
 #
-# $FreeBSD: ports/lang/atlast/Makefile,v 1.3 1999/08/25 06:34:15 obrien Exp $
+# $FreeBSD: ports/lang/atlast/Makefile,v 1.4 1999/11/03 06:34:36 jim Exp $
 #
 
-DISTNAME=	atlast-1.0
+PORTNAME=	atlast
+PORTVERSION=	1.0
 CATEGORIES=	lang
 MASTER_SITES=	http://www.fourmilab.ch/atlast/ \
 		http://www.fourmilab.to/atlast/

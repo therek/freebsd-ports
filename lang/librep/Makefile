@@ -1,12 +1,12 @@
 # New ports collection makefile for:   librep
-# Version required:    0.11.1
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/librep/Makefile,v 1.6 2000/03/08 12:09:46 nakai Exp $
+# $FreeBSD: ports/lang/librep/Makefile,v 1.7 2000/03/24 19:09:23 ade Exp $
 #
 
-DISTNAME=	librep-0.11.1
+PORTNAME=	librep
+PORTVERSION=	0.11.1
 CATEGORIES=	lang
 MASTER_SITES=	ftp://librep.sourceforge.net/pub/librep/
 

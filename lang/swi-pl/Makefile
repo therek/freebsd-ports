@@ -1,15 +1,15 @@
 # New ports collection makefile for: SWI-Prolog
-# Version required:		3.2.9
 # Date created:			10 August 1996
 # Whom:				Michael Butschky <butsch@computi.erols.com>
 #
-# $FreeBSD: ports/lang/swi-pl/Makefile,v 1.19 1999/08/25 06:35:30 obrien Exp $
+# $FreeBSD: ports/lang/swi-pl/Makefile,v 1.20 1999/08/31 06:47:07 mharo Exp $
 #
 
-DISTNAME=	pl-3.2.9
-PKGNAME=	swi-pl-3.2.9
+PORTNAME=	swi-pl
+PORTVERSION=	3.2.9
 CATEGORIES=	lang
 MASTER_SITES=	ftp://swi.psy.uva.nl/pub/SWI-Prolog/
+DISTNAME=	pl-3.2.9
 
 MAINTAINER=	max@FreeBSD.org
 

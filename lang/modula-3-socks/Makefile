@@ -1,15 +1,15 @@
 # New ports collection makefile for:	modula-3-socks
-# Version required:	A.B9.06
 # Date created:		31 Oct 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3-socks/Makefile,v 1.5 1999/08/27 22:29:37 mharo Exp $
+# $FreeBSD: ports/lang/modula-3-socks/Makefile,v 1.6 1999/08/27 22:42:04 mharo Exp $
 #
 
-DISTNAME=	socks
-PKGNAME=	modula-3-socks-1.0
+PORTNAME=	modula-3-socks
+PORTVERSION=	1.0
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.cup.hp.com/dist/socks/A.B9.06/
+DISTNAME=	socks
 
 MAINTAINER=	jdp@polstra.com
 

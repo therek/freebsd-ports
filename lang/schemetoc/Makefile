@@ -1,15 +1,15 @@
 # New ports collection makefile for:	Scheme-to-C
-# Version required:	15mar93
 # Date created:		28 Dec 1994
 # Whom:			jmacd@uclink.berkeley.edu
 #
-# $FreeBSD: ports/lang/schemetoc/Makefile,v 1.14 1999/08/31 06:47:03 mharo Exp $
+# $FreeBSD: ports/lang/schemetoc/Makefile,v 1.15 2000/03/01 09:56:48 tg Exp $
 #
 
-DISTNAME=	15mar93
-PKGNAME= 	schemetoc-93.3.15
+PORTNAME= 	schemetoc
+PORTVERSION= 	93.3.15
 CATEGORIES=	lang
 MASTER_SITES=	ftp://gatekeeper.dec.com/pub/DEC/Scheme-to-C/
+DISTNAME=	15mar93
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jmacd@FreeBSD.org

@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  mixal
-# Version required: 0.0
 # Date created:			  21-Dec-1996
 # Whom:                 	  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/lang/mixal/Makefile,v 1.6 2000/03/20 02:36:46 obrien Exp $
+# $FreeBSD: ports/lang/mixal/Makefile,v 1.7 2000/03/22 00:27:12 obrien Exp $
 #
 
-DISTNAME=	mixal-1.06
+PORTNAME=	mixal
+PORTVERSION=	1.06
 CATEGORIES=	lang
 MASTER_SITES=	http://www.ccil.org/retro/  \
 		ftp://locke.ccil.org/pub/retro/

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	Objective Caml
-# Version required:	2.04
 # Date created:		24 December 1996
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/lang/ocaml/Makefile,v 1.11 2000/02/28 15:44:19 imura Exp $
+# $FreeBSD: ports/lang/ocaml/Makefile,v 1.12 2000/03/26 06:02:58 kris Exp $
 #
 
-DISTNAME=	ocaml-2.04
+PORTNAME=	ocaml
+PORTVERSION=	2.04
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.inria.fr/lang/caml-light/ \
 		ftp://ftp.kurims.kyoto-u.ac.jp/pub/lang/caml-light/
-DISTFILES=	${DISTNAME}.tar.gz ${DOCFILES}
+DISTFILES=	${PORTNAME}${PORTVERSION}.tar.gz ${DOCFILES}
 
 MAINTAINER=	ortmann@isl.net
 

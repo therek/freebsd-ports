@@ -1,16 +1,16 @@
 # ex:ts=8
 # Ports collection makefile for:  mawk
-# Version required: 0.0
 # Date created:			  24 Dec 1998
 # Whom:				  Pedro F. Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/lang/mawk/Makefile,v 1.7 2000/03/20 02:36:45 obrien Exp $
+# $FreeBSD: ports/lang/mawk/Makefile,v 1.8 2000/03/22 00:27:09 obrien Exp $
 #
 
-DISTNAME=	mawk1.3.3
-PKGNAME=	mawk-1.3.3
+PORTNAME=	mawk
+PORTVERSION=	1.3.3
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.whidbey.net/pub/brennan/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	obrien@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sml-mode.el
-# Version required:	3.3
 # Date created:		23 December 1999
 # Whom:			J Koshy <jkoshy@freebsd.org>
 #
-# $FreeBSD: ports/lang/sml-mode.el/Makefile,v 1.2 1999/12/30 01:36:39 jkoshy Exp $
+# $FreeBSD: ports/lang/sml-mode.el/Makefile,v 1.3 2000/02/08 09:27:16 peter Exp $
 #
 
-DISTNAME=	sml-mode-3.3
+PORTNAME=	sml-mode
+PORTVERSION=	3.3
 CATEGORIES=	lang elisp
 MASTER_SITES=	ftp://ftp.research.bell-labs.com/dist/smlnj/contrib/emacs/ \
 		http://people.FreeBSD.org/~jkoshy/PORTS/

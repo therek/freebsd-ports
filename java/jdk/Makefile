@@ -1,12 +1,12 @@
 # New ports collection makefile for:	jdk
-# Version required:     1.1.8
 # Date created:		Feb, 8, 1998
 # Whom:			Nate Williams <nate@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jdk/Makefile,v 1.28 1999/11/10 00:18:20 nate Exp $
+# $FreeBSD: ports/java/jdk/Makefile,v 1.29 2000/02/07 20:12:07 billf Exp $
 #
 
-DISTNAME=	jdk-${JDK_VERSION}
+PORTNAME=	jdk
+PORTVERSION=	${JDK_VERSION}
 CATEGORIES=	java devel
 MASTER_SITES=	ftp://ftp.sc.sri.com/pub/FreeBSD/JDK/ \
 		http://www.freebsd.org/java/

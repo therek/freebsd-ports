@@ -1,14 +1,14 @@
 # New ports collection makefile for:    JavaBeans Activation Framework (JAF)
-# Version required:	1.0.1
 # Date created:		1999/08/08
 # Whom:			Jose Marques
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/jaf/Makefile,v 1.1.1.1 1999/11/01 04:29:39 steve Exp $
 #
 
-DISTNAME=	jaf1_0_1
-PKGNAME=	jaf-1.0.1
+PORTNAME=	jaf
+PORTVERSION=	1.0.1
 CATEGORIES=	java
+DISTNAME=	jaf1_0_1
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	noway@nohow.demon.co.uk

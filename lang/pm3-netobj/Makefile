@@ -1,12 +1,12 @@
 # New ports collection makefile for:	pm3-netobj
-# Version required:	1.1.13
 # Date created:		11 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/pm3-netobj/Makefile,v 1.1.1.1 2000/02/13 23:46:09 jdp Exp $
+# $FreeBSD: ports/lang/pm3-netobj/Makefile,v 1.2 2000/02/20 23:46:25 asami Exp $
 #
 
-DISTNAME=	pm3-netobj-${VERSION}
+PORTVERSION=	pm3-netobj
+PORTVERSION=	1.1.13
 CATEGORIES=	lang
 DISTFILES=
 
@@ -23,7 +23,7 @@ INSTALL_TARGET=	all
 MAN1=		netobjd.1 stubgen.1
 PLIST_SUB+=	SOVERSION=${SOVERSION} TARGET=${TARGET} \
 		TARGETDIR=${TARGETDIR} WORDSIZE=${WORDSIZE}
-WRKSRC=		${WRKDIRPREFIX}${.CURDIR}/../pm3-base/work/pm3-${VERSION}
+WRKSRC=		${WRKDIRPREFIX}${.CURDIR}/../pm3-base/work/pm3-${PORTVERSION}
 
 BUILDDIRS=	network/netobjects/netobj \
 		network/netobjects/netobjd \
@@ -32,7 +32,6 @@ PROGS=		bin/netobjd \
 		bin/stubgen
 L1=		${PREFIX}/lib/m3/${TARGET}/
 SOVERSION=	7
-VERSION=	1.1.13
 # hack to work around bsd.port.mk problem
 USE_BZIP2=	yes
 

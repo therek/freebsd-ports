@@ -1,15 +1,15 @@
 # New ports collection makefile for:	tcl8.3.b1
-# Version required:	8.3.b1
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl83/Makefile,v 1.26 2000/01/05 07:11:48 jseger Exp $
+# $FreeBSD: ports/lang/tcl83/Makefile,v 1.27 2000/01/05 18:33:10 jseger Exp $
 #
 
-DISTNAME=	tcl8.3b1
-PKGNAME=	tcl-8.3.b1
+PORTNAME=	tcl
+PORTVERSION=	8.3.b1
 CATEGORIES=	lang #tcl83
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_3/
+DISTNAME=	tcl8.3b1
 
 MAINTAINER=	jseger@FreeBSD.org
 

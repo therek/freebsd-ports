@@ -1,12 +1,12 @@
 # New ports collection makefile for:    irb
-# Version required:     0.6.1
 # Date created:         19 April 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/lang/irb/Makefile,v 1.4 1999/08/26 21:09:20 cpiazza Exp $
+# $FreeBSD: ports/lang/irb/Makefile,v 1.5 1999/11/14 01:41:48 steve Exp $
 #
 
-DISTNAME=	irb-0.6.1
+PORTNAME=	irb
+PORTVERSION=	0.6.1
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.netlab.co.jp/pub/lang/ruby/contrib/ \
 		ftp://ftp.TokyoNet.AD.JP/pub/misc/ruby/contrib/ \

@@ -1,18 +1,18 @@
 # New ports collection makefile for:    objc compiler
-# Version required:     1.8.18
 # Date created:         16 May 1998
 # Whom:                 chuckr@freebsd.org
 #
-# $FreeBSD: ports/lang/objc/Makefile,v 1.13 2000/01/10 06:31:15 chuckr Exp $
+# $FreeBSD: ports/lang/objc/Makefile,v 1.14 2000/02/08 09:27:12 peter Exp $
 #
 
-DISTNAME=       objc-3.1.5
-CATEGORIES=     lang
-MASTER_SITES=   http://metalab.unc.edu/pub/Linux/devel/lang/objc/ \
+PORTNAME=	objc
+PORTVERSION=	3.1.5
+CATEGORIES=	lang
+MASTER_SITES=	http://metalab.unc.edu/pub/Linux/devel/lang/objc/ \
 		http://people.FreeBSD.org/~chuckr/
 DISTFILES=	objc-3.1.5-bootstrap.tar.gz objc-3.1.5.tar.gz
 
-MAINTAINER=     chuckr@freebsd.org
+MAINTAINER=	chuckr@freebsd.org
 
 BUILD_DEPENDS=	$(PREFIX)/lib/libgc.a:$(PORTSDIR)/devel/boehm-gc
 

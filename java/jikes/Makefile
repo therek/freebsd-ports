@@ -1,12 +1,12 @@
 # New ports collection makefile for:    jikes
-# Version required:     0.41
 # Date created:         09 December 1998
 # Whom:                 Matthew Dillon <dillon@backplane.com>
 #
-# $FreeBSD: ports/java/jikes/Makefile,v 1.15 1999/09/27 18:52:35 archie Exp $
+# $FreeBSD: ports/java/jikes/Makefile,v 1.16 2000/01/24 02:53:12 archie Exp $
 #
 
-DISTNAME=	jikes-1.11
+PORTNAME=	jikes
+PORTVERSION=	1.11
 CATEGORIES=	java
 MASTER_SITES=	ftp://ftp.whistle.com/pub/archie/misc/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	TenDRA
-# Version required:	4.1.2
 # Date created:		7 Apr 1998
 # Whom:			Robert Nordier <rnordier@iafrica.com>
 #
-# $FreeBSD: ports/lang/TenDRA/Makefile,v 1.10 1999/08/25 06:34:14 obrien Exp $
+# $FreeBSD: ports/lang/TenDRA/Makefile,v 1.11 1999/08/31 06:46:42 mharo Exp $
 #
 
-DISTNAME=	TenDRA-4.1.2
+PORTNAME=	TenDRA
+PORTVERSION=	4.1.2
 CATEGORIES=	lang
 MASTER_SITES=	ftp://alph.dera.gov.uk/pub/TenDRA/
 

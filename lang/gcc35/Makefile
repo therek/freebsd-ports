@@ -1,17 +1,16 @@
 # ex:ts=8 
 # Ports collection makefile for:	egcs 
-# Version required: 0.0
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.83 2000/03/20 02:36:26 obrien Exp $
+# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.84 2000/03/22 00:26:53 obrien Exp $
 #
 
 SNAPDATE=	2000-03-13
 SNAPVER=	${SNAPDATE:S/-//g}
 
-DISTNAME=	gcc-2.96
-PKGNAME=	gcc-devel-${SNAPVER}
+PORTNAME=	gcc-devel
+PORTVERSION=	${SNAPVER}
 CATEGORIES=	lang java
 MASTER_SITES=	ftp://ftp.freesoftware.com/pub/egcs/snapshots/${SNAPDATE}/  \
 		ftp://egcs.cygnus.com/pub/egcs/snapshots/${SNAPDATE}/  \

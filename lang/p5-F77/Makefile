@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-ExtUtils-F77
-# Version required:			1.12
 # Date created:				December 7 1999
 # Whom:	      				jmz
 #
-# $FreeBSD: ports/lang/p5-F77/Makefile,v 1.1.1.1 1999/12/07 21:17:40 jmz Exp $
+# $FreeBSD: ports/lang/p5-F77/Makefile,v 1.2 2000/01/07 16:40:05 asami Exp $
 #
 
-DISTNAME=	ExtUtils-F77-1.12
-PKGNAME=	p5-ExtUtils-F77-1.12
+PORTNAME=	p5-ExtUtils-F77
+PORTVERSION=	1.12
 CATEGORIES=	lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	ExtUtils
+DISTNAME=	ExtUtils-F77-1.12
 
 MAINTAINER=	jmz@FreeBSD.org
 

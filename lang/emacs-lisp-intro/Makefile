@@ -1,12 +1,12 @@
 # New ports collection makefile for:	emacs-lisp-intro
-# Version required:	1.05
 # Date created:		18 November 1997
 # Whom:			Don Croyle <croyle@gelemna.ft-wayne.in.us>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/emacs-lisp-intro/Makefile,v 1.5 1999/08/25 06:34:27 obrien Exp $
 #
 
-DISTNAME=	emacs-lisp-intro-1.05
+PORTNAME=	emacs-lisp-intro
+PORTVERSION=	1.05
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs

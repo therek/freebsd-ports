@@ -1,19 +1,19 @@
 # New ports collection makefile for:	erlang
-# Version required:	R6B-0
 # Date created:		11 Dec 1998
 # Whom:			ruslan@shevchenko.kiev.ua
 #
-# $FreeBSD: ports/lang/erlang/Makefile,v 1.7 1999/12/31 20:34:28 steve Exp $
+# $FreeBSD: ports/lang/erlang/Makefile,v 1.8 2000/01/03 11:43:33 asami Exp $
 #
 
-DISTNAME=	otp_src_R6B-0
-PKGNAME=	erlang-6.1.0
+PORTNAME=	erlang
+PORTVERSION=	6.1.0
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.erlang.org/pub/download/     \
 		http://www.erlang.org/download/        \
 		http://erlang.stacken.kth.se/download/ \
 		http://www.csd.uu.se/ftp/mirror/erlang/download/
-DISTFILES=	otp_src_R6B-0.tar.gz  ${ERLANG_MAN} ${ERLANG_DOCS}
+DISTNAME=	otp_src_R6B-0
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${ERLANG_MAN} ${ERLANG_DOCS}
 
 PATCH_SITES=	http://www.erlang.org/faq/ http://erlang.stacken.kth.se/faq/
 PATCHFILES=	tmp_patch_R6B0.2.txt tmp_patch_R6B0.3.txt \

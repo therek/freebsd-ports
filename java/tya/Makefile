@@ -2,13 +2,14 @@
 # Date created:		16 May 1999
 # Whom:			jburkhol@home.com
 #
-# $FreeBSD: ports/java/tya/Makefile,v 1.11 2000/01/24 05:19:10 steve Exp $
+# $FreeBSD: ports/java/tya/Makefile,v 1.12 2000/04/06 07:30:49 mharo Exp $
 #
 
-DISTNAME=	tya17
-PKGNAME=	tya-1.7
+PORTNAME=	tya
+PORTVERSION=	1.7
 CATEGORIES=	java
 MASTER_SITES=	http://sax.sax.de/~adlibit/
+DISTNAME=	tya17
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jburkhol@home.com

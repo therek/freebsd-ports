@@ -1,15 +1,15 @@
 # New ports collection makefile for:	pike
-# Version required:	0.6
 # Date created:		16 Jan 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/lang/pike/Makefile,v 1.3 2000/01/29 22:43:25 reg Exp $
+# $FreeBSD: ports/lang/pike/Makefile,v 1.4 2000/02/13 01:04:21 reg Exp $
 #
 
-DISTNAME=	Pike-v0.6.110
-PKGNAME=	pike-0.6
+PORTNAME=	pike
+PORTVERSION=	0.6
 CATEGORIES=	lang
 MASTER_SITES=	http://pike.idonex.se/download/
+DISTNAME=	Pike-v0.6.110
 
 MAINTAINER=	vns@delta.odessa.ua
 

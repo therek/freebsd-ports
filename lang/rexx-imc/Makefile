@@ -1,12 +1,12 @@
 # New ports collection makefile for:	REXX/imc
-# Version required:			1.6d
 # Date created:				Septermber 21 96
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/rexx-imc/Makefile,v 1.9 1999/08/31 06:47:01 mharo Exp $
+# $FreeBSD: ports/lang/rexx-imc/Makefile,v 1.10 1999/09/09 19:18:38 nectar Exp $
 #
 
-DISTNAME=	rexx-imc-1.7
+PORTNAME=	rexx-imc
+PORTVERSION=	1.7
 CATEGORIES=	lang
 MASTER_SITES=	http://ruby.comlab.ox.ac.uk/imc/distribution/           \
 		ftp://ftp.sai.msu.su/pub/unix/rexx/                     \

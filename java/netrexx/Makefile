@@ -1,15 +1,15 @@
 # New ports collection makefile for:	NetRexx
-# Version required:     1.160
 # Date created:		Feb 8, 1999
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/java/netrexx/Makefile,v 1.2 2000/02/13 17:09:07 dirk Exp $
+# $FreeBSD: ports/java/netrexx/Makefile,v 1.3 2000/02/27 08:05:04 kris Exp $
 #
 
-DISTNAME=	NetRexx
-PKGNAME=	netrexx-1.160
+PORTNAME=	netrexx
+PORTVERSION=	1.160
 CATEGORIES=	java lang
 MASTER_SITES=	http://www.ibm.com/technology/NetRexx/
+DISTNAME=	NetRexx
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org

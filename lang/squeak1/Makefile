@@ -1,13 +1,12 @@
 # New ports collection makefile for:   	squeak1
-# Version required:    			1.31
 # Date created:        			20 December 1998
 # Whom:                			jesse@cs.uni-magdeburg.de
 #
-# $FreeBSD: ports/lang/squeak1/Makefile,v 1.9 2000/02/20 21:02:00 steve Exp $
+# $FreeBSD: ports/lang/squeak1/Makefile,v 1.10 2000/02/26 01:42:22 asami Exp $
 #
 
-DISTNAME=	1.31
-PKGNAME=	squeak-1.31
+PORTNAME=	squeak
+PORTVERSION=	1.31
 CATEGORIES=	lang
 MASTER_SITES=	http://www.apfel.de/~jesse/squeak/ \
 		ftp://alix.inria.fr/pub/squeak/unix/ \
@@ -17,7 +16,7 @@ MASTER_SITES=	http://www.apfel.de/~jesse/squeak/ \
 		http://st-www.cs.uiuc.edu/ftp/Smalltalk/Squeak/ \
 		ftp://uiarchive.cso.uiuc.edu/pub/lang/smalltalk/smalltalk/Squeak/ \
 		http://wuarchive.wustl.edu/languages/smalltalk/smalltalk/Squeak/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${SQUEAK_SRC}
+DISTFILES=	${PORTVERSION}${EXTRACT_SUFX} ${SQUEAK_SRC}
 
 MAINTAINER=	jesse@cs.uni-magdeburg.de
 

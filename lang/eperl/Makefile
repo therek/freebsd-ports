@@ -1,12 +1,12 @@
 # New ports collection makefile for:	eperl
-# Version required:	2.2.14
 # Date created:		03-Sep-1997
 # Whom:			Ralf S. Engelschall <rse@engelschall.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/eperl/Makefile,v 1.31 1999/08/25 06:34:28 obrien Exp $
 #
 
-DISTNAME=	eperl-2.2.14
+PORTNAME=	eperl
+PORTVERSION=	2.2.14
 CATEGORIES=	lang www perl5
 MASTER_SITES=	http://www.engelschall.com/sw/eperl/distrib/ \
 		ftp://ftp.engelschall.com/sw/eperl/ \

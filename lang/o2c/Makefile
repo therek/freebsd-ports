@@ -1,11 +1,11 @@
 # New ports collection makefile for:	Oberon2C
-# Version required:	1.16
 # Date created:		December 3, 1997
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/lang/o2c/Makefile,v 1.5 1999/08/25 06:35:05 obrien Exp $
+# $FreeBSD: ports/lang/o2c/Makefile,v 1.6 1999/10/27 09:17:21 mharo Exp $
 
-DISTNAME=	o2c-1.16
+PORTNAME=	o2c
+PORTVERSION=	1.16
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.uni-kl.de/pub/informatik/software/ \
 		ftp://ftp.archive.de.uu.net/pub/programming/languages/oberon/www.uni-kl.de/OOC/files/misc/

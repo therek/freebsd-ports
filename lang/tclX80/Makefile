@@ -1,15 +1,15 @@
 # New ports collection makefile for:	tclX
-# Version required:	8.0.4
 # Date created:		6 February 1996
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tclX80/Makefile,v 1.30 1999/08/31 06:47:12 mharo Exp $
+# $FreeBSD: ports/lang/tclX80/Makefile,v 1.31 1999/09/02 21:59:29 jseger Exp $
 #
 
-DISTNAME=	tclX8.0.4
-PKGNAME=	tclX-8.0.4
+PORTNAME=	tclX
+PORTVERSION=	8.0.4
 CATEGORIES=	lang tcl80 tk80
 MASTER_SITES=	ftp://ftp.neosoft.com/pub/tcl/tclx-distrib/
+DISTNAME=	tclX8.0.4
 
 MAINTAINER=	jseger@FreeBSD.org
 

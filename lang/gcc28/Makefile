@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:	gcc
-# Version required: 0.0
 # Date created:				17 Jan 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/gcc28/Makefile,v 1.28 2000/03/20 02:36:27 obrien Exp $
+# $FreeBSD: ports/lang/gcc28/Makefile,v 1.29 2000/03/22 00:26:55 obrien Exp $
 #
 
-DISTNAME=	gcc-2.8.1
+PORTNAME=	gcc
+PORTVERSION=	2.8.1
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gcc

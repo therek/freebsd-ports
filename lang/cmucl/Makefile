@@ -1,19 +1,19 @@
 # New ports collection makefile for:    CMUCL
-# Version required:     18a, build 19970824
 # Date created:         Jul, 15, 1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/lang/cmucl/Makefile,v 1.9 1999/08/25 06:34:20 obrien Exp $
+# $FreeBSD: ports/lang/cmucl/Makefile,v 1.10 2000/02/08 09:27:10 peter Exp $
 #
 #
 
-DISTNAME=	cmucl-18b.x86.freebsd22
-PKGNAME=	cmucl-18b
+PORTNAME=	cmucl
+PORTVERSION=	18b
 CATEGORIES=	lang
 MASTER_SITES=	http://www2.cons.org:8000/freebsd-distfiles/ \
 		ftp://ftp2.cons.org/pub/languages/lisp/cmucl/release/ \
 		http://www2.cons.org:8000/ftp-area/cmucl/release/ \
 		http://people.FreeBSD.org/~cracauer/freebsd-distfiles/
+DISTNAME=	cmucl-18b.x86.freebsd22
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER= 	cracauer@cons.org

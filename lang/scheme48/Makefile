@@ -1,12 +1,12 @@
 # New ports collection makefile for:    scheme48
-# Version required:     0.46
 # Date created:         25 Aug 1997
 # Whom:                 jmacd
 #
-# $FreeBSD: ports/lang/scheme48/Makefile,v 1.12 1999/08/31 06:47:02 mharo Exp $
+# $FreeBSD: ports/lang/scheme48/Makefile,v 1.13 1999/12/24 18:39:35 mharo Exp $
 #
 
-DISTNAME=	scheme48-0.46
+PORTNAME=	scheme48
+PORTVERSION=	0.46
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp-swiss.ai.mit.edu/pub/s48/
 EXTRACT_SUFX=	.tgz

@@ -1,13 +1,12 @@
 # New ports collection makefile for:	scm
-# Version required:	5d2
 # Date created:		Sat Nov  5 17:11:01 PST 1994
 # Whom:			hsu
 #
-# $FreeBSD: ports/lang/scm/Makefile,v 1.15 1999/08/25 06:35:23 obrien Exp $
+# $FreeBSD: ports/lang/scm/Makefile,v 1.16 2000/01/14 17:19:30 imura Exp $
 #
 
-DISTNAME=	scm
-PKGNAME=	scm-5d2
+PORTNAME=	scm
+PORTVERSION=	5d2
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.swiss.ai.mit.edu/pub/scm/OLD/
@@ -20,7 +19,7 @@ EXTRACT_ONLY=	scm5d2.zip slib2c7.zip
 
 USE_ZIP=	yes
 GNU_CONFIGURE=	yes
-
+WRKSRC=		${WRKDIR}/scm
 MAN1=		scm.1
 
 IMPLINIT=	${PREFIX}/libdata/scm/Init.scm

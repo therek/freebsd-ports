@@ -1,19 +1,19 @@
 # New ports collection makefile for: CAML
-# Version required:	0.74
 # Date created:		21 July 1998
 # Whom:			jkoshy
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/caml-light/Makefile,v 1.7 1999/08/25 06:34:18 obrien Exp $
 #
 
-DISTNAME=	cl74unix
-PKGNAME=	caml-0.74
+PORTNAME=	caml
+PORTVERSION=	0.74
 CATEGORIES=	lang elisp
 MASTER_SITES=	ftp://ftp.inria.fr/lang/caml-light/ \
 	ftp://sunsite.doc.ic.ac.uk/computing/programming/languages/ml/caml-light/ \
 	ftp://arcadia.informatik.uni-muenchen.de/pub/comp/programming/languages/functional/caml-light/ \
 	ftp://sunsite.icm.edu.pl/pub/programming/caml/ \
 	http://wwwfun.kurims.kyoto-u.ac.jp/soft/caml-light/
+DISTNAME=	cl74unix
 
 MAINTAINER=	jkoshy@freebsd.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	bwbasic
-# Version required:	2.20
 # Date created:		16 Jan 1997
 # Whom:			msmith@gsoft.com.au
 #
-# $FreeBSD: ports/lang/bwbasic/Makefile,v 1.8 1999/08/25 06:34:17 obrien Exp $
+# $FreeBSD: ports/lang/bwbasic/Makefile,v 1.9 1999/08/28 02:41:54 mharo Exp $
 #
 
-DISTNAME=	bwbasic-2.20
+PORTNAME=	bwbasic
+PORTVERSION=	2.20
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.rahul.net/pub/rhn/
 DISTFILES=	bwbasic-2.20.tar.Z bwb-2.20-patch01.tar.Z.uu.txt

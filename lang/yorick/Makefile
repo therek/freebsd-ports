@@ -1,16 +1,16 @@
 # New ports collection makefile for:	Yorick
-# Version required:	1.4.1
 # Date created:         26 Oct 97
 # Whom:                 Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/lang/yorick/Makefile,v 1.4 1999/08/25 06:35:40 obrien Exp $
+# $FreeBSD: ports/lang/yorick/Makefile,v 1.5 1999/11/26 18:34:42 steve Exp $
 #
 
-DISTNAME=	yorick-1.4
-PKGNAME=	yorick-1.4.1
+PORTNAME=	yorick
+PORTVERSION=	1.4.1
 CATEGORIES=	lang math
 MASTER_SITES=	ftp://ftp-icf.llnl.gov/pub/Yorick/		\
 		ftp://wuarchive.wustl.edu/languages/yorick/
+DISTNAME=	yorick-1.4
 
 PATCH_SITES=	ftp://ftp-icf.llnl.gov/pub/Yorick/
 PATCHFILES=	yorick-1.4.diff.gz

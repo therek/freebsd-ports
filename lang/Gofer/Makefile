@@ -1,15 +1,15 @@
 # New ports collection makefile for:	gofer
-# Version required:     2.30
 # Date created:         Wed Feb  1 01:51:59 PST 1995
 # Whom:                 hsu
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/Gofer/Makefile,v 1.11 1999/08/25 06:34:11 obrien Exp $
 #
 
-DISTNAME=	gofer230a
-PKGNAME=	gofer-2.30a
+PORTNAME=	gofer
+PORTVERSION=	2.30a
 CATEGORIES=	lang
 MASTER_SITES=	ftp://cs.nott.ac.uk/nott-fp/languages/haskell/gofer/
+DISTNAME=	gofer230a
 
 MAINTAINER=	hsu@FreeBSD.org
 

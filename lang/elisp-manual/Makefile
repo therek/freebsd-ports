@@ -1,12 +1,12 @@
 # New ports collection makefile for:		elisp-manual
-# Version required:	20-2.5
 # Date created:		18 November 1997
 # Whom:			Don Croyle <croyle@gelemna.ft-wayne.in.us>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/elisp-manual/Makefile,v 1.5 1999/08/25 06:34:25 obrien Exp $
 #
 
-DISTNAME=	elisp-manual-20-2.5
+PORTNAME=	elisp-manual
+PORTVERSION=	20-2.5
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs

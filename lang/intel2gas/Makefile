@@ -1,12 +1,12 @@
 # New ports collection makefile for:	intel2gas
-# Version required:     1.2
 # Date created:		12 May 1999
 # Whom:			G. Adam Stanislav
 #
-# $FreeBSD: ports/lang/intel2gas/Makefile,v 1.2 1999/08/25 06:34:46 obrien Exp $
+# $FreeBSD: ports/lang/intel2gas/Makefile,v 1.3 1999/08/28 01:57:30 mharo Exp $
 #
 
-DISTNAME=	intel2gas-1.2
+PORTNAME=	intel2gas
+PORTVERSION=	1.2
 CATEGORIES=	lang
 MASTER_SITES=	http://hermes.terminal.at/intel2gas/
 

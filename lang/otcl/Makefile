@@ -1,12 +1,12 @@
 # New ports collection makefile for: otcl
-# Version required:	1.0a5
 # Date created:		23 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/lang/otcl/Makefile,v 1.6 1999/11/28 18:31:28 steve Exp $
+# $FreeBSD: ports/lang/otcl/Makefile,v 1.7 2000/02/23 14:02:31 imura Exp $
 #
 
-DISTNAME=	otcl-1.0a5
+PORTNAME=	otcl
+PORTVERSION=	1.0a5
 CATEGORIES=	lang
 MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/
 
