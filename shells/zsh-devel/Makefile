@@ -2,7 +2,7 @@
 # Date created:			31 October 1998
 # Whom:				shige
 #
-# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.48 2000/06/15 10:24:55 sobomax Exp $
+# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.49 2000/06/29 02:31:40 asami Exp $
 #
 
 PORTNAME=	zsh
@@ -37,16 +37,7 @@ INSTALL_TARGET=	install install.info
 MAN1=		zsh.1 zshbuiltins.1 zshcompctl.1 zshexpn.1 zshmisc.1 \
 		zshoptions.1 zshall.1 zshparam.1 zshzle.1 zshmodules.1 \
 		zshzftpsys.1 zshcompsys.1 zshcompwid.1
-PLIST_SUB=	ZSH_VER="${ZSH_VER}" ZSHFUNC_SUBDIR="${ZSHFUNC_SUBDIR}" \
-		LIBZSH="${LIBZSH}"
-
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 400013
-LIBZSH=		@comment lib/zsh/libzsh-${ZSH_VER}.so
-.else
-LIBZSH=		lib/zsh/libzsh-${ZSH_VER}.so
-.endif
+PLIST_SUB=	ZSH_VER="${ZSH_VER}" ZSHFUNC_SUBDIR="${ZSHFUNC_SUBDIR}"
 
 # If you want to build a static binary, uncomment the following line
 #LDFLAGS+=-static
@@ -79,4 +70,4 @@ post-install:
 	  ${ECHO} ${PREFIX}/bin/zsh) > /etc/shells
 	@${RM} /etc/shells.bak
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
