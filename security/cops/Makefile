@@ -2,7 +2,7 @@
 # Date created:				29 August 1996
 # Whom:					oly
 #
-# $FreeBSD: ports/security/cops/Makefile,v 1.7 2000/04/09 18:29:28 cpiazza Exp $
+# $FreeBSD: ports/security/cops/Makefile,v 1.8 2000/04/10 04:43:48 cpiazza Exp $
 #
 
 PORTNAME=	cops
@@ -10,8 +10,6 @@ PORTVERSION=	1.04
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cert.org/pub/tools/cops/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
-
-MAINTAINER=	oly@world.std.com
 
 WRKSRC=		${WRKDIR}/cops_104
 EXECUTABLE=	home.chk user.chk is_writable crc crc_check \

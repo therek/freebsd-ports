@@ -2,14 +2,14 @@
 # Date Created:				29 Dec 1999
 # Whom:					Yuan-Chen Cheng <ycheng@sinica.edu.tw>
 #
-# $FreeBSD: ports/devel/popt/Makefile,v 1.1.1.1 1999/12/30 12:31:23 jedgar Exp $
+# $FreeBSD: ports/devel/popt/Makefile,v 1.2 2000/04/11 21:30:08 mharo Exp $
 #
 
 PORTNAME=	popt
 PORTVERSION=	1.4
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.redhat.com/pub/redhat/current/SRPMS/SRPMS/ \
-		ftp://ftp.cdrom.com/pub/linux/redhat/current/SRPMS/SRPMS/
+MASTER_SITES=	ftp://ftp.redhat.com/redhat/current/SRPMS/SRPMS/ \
+		ftp://ftp.freesoftware.com/pub/linux/redhat/current/SRPMS/SRPMS/
 EXTRACT_SUFX=	-1.src.rpm
 
 MAINTAINER=	ycheng@sinica.edu.tw
