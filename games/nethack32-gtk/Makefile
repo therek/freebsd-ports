@@ -2,9 +2,8 @@
 # Date created:				June 15, 2000
 # Whom:					Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/games/nethack-gtk/Makefile,v 1.6 2001/01/13 21:41:41 sf Exp $
+# $FreeBSD: ports/games/nethack-gtk/Makefile,v 1.7 2001/03/22 19:54:41 sf Exp $
 #
-BROKEN=		Gtk+-1.2.9 does not allow setuid program
 
 PORTNAME=	nethack
 PORTVERSION=	1.1.5
