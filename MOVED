@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.164 2003/07/09 10:22:21 nork Exp $
+# $FreeBSD: ports/MOVED,v 1.165 2003/07/11 12:04:44 erwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -385,3 +385,4 @@ graphics/glass||2003-07-03|useless
 www/linux-phoenix|www/linux-mozillafirebird|2003-07-03|legal problem with name
 graphics/kpovmodeler||2003-07-03|now part of kdegraphics
 www/linux-opera7|www/linux-opera|2003-07-09|move to www/linux-opera
+www/xswallow||2003-07-12|port is obsolete
