@@ -3,7 +3,7 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.8 1999/10/12 07:14:29 mharo Exp $
+# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.9 2000/01/19 16:53:46 shige Exp $
 #
 
 DISTNAME=	wl-1.0.3
@@ -81,7 +81,7 @@ post-configure:
 
 pre-build:
 .if (${EMACS_PORT} == "xemacs21-mule")
-	@${INSTALL_DATA} ${FILESDIR}/_pkg.el ${WRKSRC}/
+	@${CP} ${FILESDIR}/_pkg.el ${WRKSRC}/
 .endif
 
 pre-install:
