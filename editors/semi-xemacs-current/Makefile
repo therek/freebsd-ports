@@ -2,7 +2,7 @@
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-xemacs-current/Makefile,v 1.5 2000/01/02 14:20:48 shige Exp $
+# $FreeBSD: ports/editors/semi-xemacs-current/Makefile,v 1.6 2000/04/14 06:20:43 asami Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -13,12 +13,7 @@ PORTCLASS=	slave
 MASTERDIR=	${.CURDIR}/../../editors/semi-emacs-current
 
 # emacs port setup
-EMACS_NAME=	xemacs
-EMACS_PORT=	xemacs
-EMACS_VER=	19.16
-EMACS_LIBDIR=		lib/${EMACS_NAME}
-# xemacs-19.16 has no version specific site-lisp directories.
-EMACS_LIBDIR_WITH_VER=	${EMACS_LIBDIR}
+EMACS_PORT_NAME=	xemacs
 
 # use pkg/* files in ${.CURDIR}
 PKGDIR=		${.CURDIR}/pkg

@@ -2,7 +2,7 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/wemi-mule/Makefile,v 1.6 1999/10/16 06:06:20 shige Exp $
+# $FreeBSD: ports/editors/wemi-mule/Makefile,v 1.7 2000/04/14 06:20:53 asami Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -13,18 +13,10 @@ PORTCLASS=	slave
 MASTERDIR=	${.CURDIR}/../../editors/wemi-emacs
 
 # emacs port setup
-EMACS_NAME=	mule
-EMACS_PORT=	mule
-EMACS_VER=	19.34
-EMACS_LIBDIR=		share/${EMACS_NAME}
-EMACS_LIBDIR_WITH_VER=	${EMACS_LIBDIR}/${EMACS_VER}
+EMACS_PORT_NAME=	mule
 
 # whether emacs requires *-setupel.el
 REQUIRE_SETUPEL=	YES
-# whether emacs has a *-common port
-HAS_COMMON_PORT=	YES
-# whether emacs has mule feature
-HAS_MULE=		YES
 
 # use pkg/* files in ${.CURDIR}
 PKGDIR=		${.CURDIR}/pkg
