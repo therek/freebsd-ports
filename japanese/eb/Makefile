@@ -3,7 +3,7 @@
 # Date created:			20 Jan 1999
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/eb/Makefile,v 1.5 1999/08/25 05:23:48 obrien Exp $
 #
 
 DISTNAME=	eb-2.3.2
@@ -26,6 +26,7 @@ APPENDIXFILES=	cencro-1.0.tar.gz \
 		chujiten6-2.3.tar.gz \
 		colloc-2.0.tar.gz \
 		crownfj-2.0.tar.gz \
+		daihyakka-1.0.tar.gz \
 		daijirin-2.0.tar.gz \
 		dd75-2.0.tar.gz \
 		genius-1.0.tar.gz \
