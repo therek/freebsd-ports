@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.416 2001/01/09 09:42:46 jkoshy Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.417 2001/01/14 06:05:15 will Exp $
 #
     SUBDIR += zziplib
 
@@ -288,6 +288,7 @@
     SUBDIR += p5-Term-ANSIColor
     SUBDIR += p5-Term-Query
     SUBDIR += p5-Term-ReadKey
+    SUBDIR += p5-Term-Screen
     SUBDIR += p5-Term-Size
     SUBDIR += p5-Tie-DB_FileLock
     SUBDIR += p5-Tie-IxHash
