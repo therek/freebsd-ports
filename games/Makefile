@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.318 2000/12/13 14:27:29 roam Exp $
+# $FreeBSD: ports/games/Makefile,v 1.319 2000/12/15 16:56:02 roam Exp $
 #
 
     SUBDIR += 3dc
@@ -301,6 +301,7 @@
     SUBDIR += xtrojka
     SUBDIR += xtron
     SUBDIR += xtruco
+    SUBDIR += xtux
     SUBDIR += xvier
     SUBDIR += xvmahjongg
     SUBDIR += xvmines
