@@ -1,9 +1,9 @@
 # New ports collection makefile for:	psgml for xemacs-mule
-# Version required:	1.1.6
+# Version required:	1.2.0
 # Date created:		26 May 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/editors/psgml-xemacs-mule/Makefile,v 1.4 1999/09/09 16:28:46 taoka Exp $
+# $FreeBSD: ports/editors/psgml-xemacs-mule/Makefile,v 1.5 1999/09/10 21:09:43 shige Exp $
 #
 
 MAINTAINER=	kuriyama@FreeBSD.org
@@ -22,6 +22,7 @@ EMACS_LIBDIR=	lib/xemacs
 # pkg/* files are used in ${.CURDIR}
 PKGDIR=		${.CURDIR}/pkg
 
-HAVE_COMMON_PORT=	YES
+# whether emacs has a *-common port
+HAS_COMMON_PORT=	YES
 
 .include <${MASTERDIR}/Makefile>
