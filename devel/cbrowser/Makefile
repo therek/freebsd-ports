@@ -2,14 +2,15 @@
 # Date created:		20 April 2000
 # Whom:			jkoshy
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/cbrowser/Makefile,v 1.1.1.1 2000/04/20 13:11:32 jkoshy Exp $
 #
 
 PORTNAME=	cbrowser
 PORTVERSION=	0.6
 CATEGORIES=	devel tk82
 MASTER_SITES=	http://www.ziplink.net/~felaco/cbrowser/ \
-		http://people.freebsd.org/~jkoshy/PORTS/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=jkoshy
 
 MAINTAINER=	jkoshy@freebsd.org
 

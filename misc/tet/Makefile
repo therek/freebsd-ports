@@ -2,14 +2,15 @@
 # Date created:		02 Oct 1998
 # Whom:			jkoshy
 #
-# $FreeBSD: ports/misc/tet/Makefile,v 1.13 2000/02/08 09:28:12 peter Exp $
+# $FreeBSD: ports/misc/tet/Makefile,v 1.14 2000/04/14 08:46:49 asami Exp $
 #
 
 PORTNAME=		tet
 PORTVERSION=		3.3d
 CATEGORIES=		misc
 MASTER_SITES=		ftp://ftp.rdg.opengroup.org/pub/TET/TET3/ \
-			http://people.FreeBSD.org/~jkoshy/PORTS/
+			${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	jkoshy
 DISTFILES=		${PORTNAME}${PORTVERSION}-unsup.src.tar.gz
 
 MAINTAINER=		jkoshy@freebsd.org
