@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.323 2004/01/02 21:56:58 krion Exp $
+# $FreeBSD: ports/LEGAL,v 1.324 2004/01/02 22:04:20 krion Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -344,3 +344,5 @@ zh-moettf/*		ports/chinese/moettf	Contact Taiwan Ministry of
 zh-ntuttf/*		ports/chinese/ntuttf	No commercial use
 ztelnet-*		ports/net/ztelnet	zmodem code has 
 						restrictive copyright
+urchin-*		ports/www/urchin5	Commercial software, also
+						comes bundled with Apache-SSL
