@@ -2,11 +2,11 @@
 # Date created:        11 November 1997
 # Whom:                Brion Moss <brion@queeg.com>
 #
-# $FreeBSD: ports/textproc/catdoc/Makefile,v 1.10 1999/08/31 02:09:01 peter Exp $
+# $FreeBSD: ports/textproc/catdoc/Makefile,v 1.11 2000/04/09 21:52:12 cpiazza Exp $
 #
 
 PORTNAME=	catdoc
-PORTVERSION= 	0.90.3
+PORTVERSION= 	0.91.4
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN} \
 		ftp://ftp.ice.ru/pub/vitus/
@@ -14,8 +14,10 @@ MASTER_SITE_SUBDIR=	support/catdoc
 
 MAINTAINER=	brion@queeg.com
 
+WRKSRC=		${WRKDIR}/catdoc
+
 GNU_CONFIGURE=	yes
-MAN1=		catdoc.1
+MAN1=		catdoc.1 xls2csv.1
 
 .if exists(${PREFIX}/bin/wish8.0)
 CONFIGURE_ARGS+=	--with-wish=${PREFIX}/bin/wish8.0
