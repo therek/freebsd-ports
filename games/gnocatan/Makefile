@@ -2,7 +2,7 @@
 # Date created:				22nd July 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gnocatan/Makefile,v 1.6 2000/11/03 16:19:23 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnocatan
@@ -11,7 +11,7 @@ CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	adam-ports@blacktabby.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
