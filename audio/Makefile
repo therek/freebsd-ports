@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.140 2000/06/09 05:40:08 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.141 2000/06/10 06:58:31 will Exp $
 #
 
     SUBDIR += afsp
@@ -123,6 +123,7 @@
     SUBDIR += xmp
     SUBDIR += xmpeg3
     SUBDIR += xmradio
+    SUBDIR += xsidplay
     SUBDIR += xtuner
     SUBDIR += yamt
 
