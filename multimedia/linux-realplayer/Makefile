@@ -2,11 +2,11 @@
 # Date created:        31 January 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.14 2000/06/11 06:04:59 imura Exp $
+# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.15 2000/07/11 15:13:01 taoka Exp $
 #
 
 PORTNAME=	linux-realplayer
-PORTVERSION= 	7.b2
+PORTVERSION= 	7.cs1
 CATEGORIES=	audio graphics linux
 MASTER_SITES=	# fetch manually
 DISTNAME=	rp${PORTVERSION:R}_linux20_libc6_i386_${PORTVERSION:E}
