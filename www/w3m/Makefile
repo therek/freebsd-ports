@@ -2,12 +2,12 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.28 2001/06/19 12:56:09 kuriyama Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.29 2001/07/21 18:21:55 sf Exp $
 #
 
 PORTNAME=	w3m
 PORTVERSION=	0.2.1
-PORTREVISION=	2
+PORTREVISION=	1
 CATEGORIES+=	www ipv6
 MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/w3m/ \
 		http://mi.med.tohoku.ac.jp/~satodai/w3m/src/ \
