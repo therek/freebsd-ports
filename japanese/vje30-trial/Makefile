@@ -3,7 +3,7 @@
 # Date created:		14 January 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/vje30-trial/Makefile,v 1.5 2000/02/02 16:49:37 flathill Exp $
 #
 
 DISTNAME=	vje-delta-3.0t
@@ -21,7 +21,7 @@ NO_BUILD=	yes
 
 ONLY_FOR_ARCHS=	i386
 
-PLIST_SUB=	X11BASE="${X11BASE}" BINSTUFF="${BINSTUFF}"
+PLIST_SUB=	BINSTUFF="${BINSTUFF}"
 
 WRKSRC=		${WRKDIR}/usr/local
 
@@ -47,12 +47,13 @@ BINSTUFF=	vje	\
 		vjeacc
 
 post-patch:
-	@cd ${WRKSRC}/vje30/bin && ${RM} swingall.jar *.orig
+	@cd ${WRKSRC}/vje30/bin && ${RM} swingall.jar
+	@find ${WRKSRC} -name '*.orig' -delete
 
 do-install:
 	@cd ${WRKSRC} && tar cf - . | tar xf - -C ${PREFIX}
 .for f in ${BINSTUFF}
-	@${LN} -fs ${PREFIX}/vje30/bin/$f ${X11BASE}/bin/$f
+	@${LN} -fs ${PREFIX}/vje30/bin/$f ${PREFIX}/bin/$f
 .endfor
 	@${CHMOD} a+x ${PREFIX}/etc/rc.d/vje.sh
 	@${CHMOD} a+w ${PREFIX}/vje30/dic/vjed95m.dic
