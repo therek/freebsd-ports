@@ -2,14 +2,15 @@
 # Date created:		19 April 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/www/evg/Makefile,v 1.2 1999/08/31 11:28:45 asami Exp $
+# $FreeBSD: ports/www/evg/Makefile,v 1.3 2000/04/10 00:05:00 cpiazza Exp $
 #
 
 PORTNAME=	evg
-PORTVERSION=	1.01
+PORTVERSION=	1.0.1
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.uni-klu.ac.at/pub/projects/evg/	\
 		http://www.chg.ru/~dima/
+DISTNAME=	evg-1.01
 
 MAINTAINER=	dima@Chg.RU
 
