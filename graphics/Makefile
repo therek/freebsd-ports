@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.179 2000/02/21 22:49:13 jedgar Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.180 2000/02/22 22:03:45 jedgar Exp $
 #
 
     SUBDIR += 4va
@@ -39,7 +39,6 @@
     SUBDIR += geomview
     SUBDIR += gfont
     SUBDIR += gif2png
-    SUBDIR += giflib
     SUBDIR += gifmerge
     SUBDIR += gifsicle
     SUBDIR += giftool
