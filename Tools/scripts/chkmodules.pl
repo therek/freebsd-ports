@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/Tools/scripts/chkmodules.pl,v 1.1 2004/05/14 01:58:16 eik Exp $
+# $FreeBSD: ports/Tools/scripts/chkmodules.pl,v 1.2 2004/05/14 18:03:55 eik Exp $
 #
 # MAINTAINER=	eik@FreeBSD.org
 #
@@ -36,11 +36,10 @@
 # Clement Laforet.
 #
 
-use strict;
-use File::Find;
-
 require 5.005;
 use strict;
+use File::Find;
+use Cwd 'abs_path';
 
 my $portsdir = $ENV{PORTSDIR} ? $ENV{PORTSDIR} : '/usr/ports';
 my $cvsroot  = $ENV{CVSROOT}  ? $ENV{CVSROOT}  : '/home/ncvs/CVSROOT-ports';
@@ -48,6 +47,7 @@ my @excludes = $ENV{EXCLUDE}  ? split(' ', $ENV{EXCLUDE}) : ('local', 'rookies')
 
 -d "$portsdir"        or die "Can't find ports tree at $portsdir.\n";
 -f "$cvsroot/modules" or die "Can't read modules file $cvsroot/modules.\n";
+$portsdir = abs_path($portsdir);
 
 my %ports = ('ports' => 1);
 
