@@ -1,8 +1,8 @@
 # Common stuff for Licq-based ports
-# $FreeBSD: ports/net/licq-devel/Makefile.inc,v 1.3 2002/02/07 14:17:09 fjoe Exp $
+# $FreeBSD: ports/net/licq-devel/Makefile.inc,v 1.4 2002/02/08 10:10:39 fjoe Exp $
 
 PKGNAMEPREFIX=		licq-
-TIMESTAMP=		20020128
+TIMESTAMP=		20020312
 LICQ_VER=		1.1.0-${TIMESTAMP}
 QT_LICQ_VER=		${LICQ_VER}
 RMS_LICQ_VER=		0.23
