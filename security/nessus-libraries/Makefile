@@ -2,7 +2,7 @@
 # Date created:				07 Noevmber 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.10 2000/09/09 12:51:36 kevlo Exp $
+# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.11 2000/10/28 02:04:17 jeh Exp $
 #
 
 PORTNAME=	nessus-libraries
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${PORTVERSION}/src/ \
 		ftp://ftp.chg.ru/pub/security/nessus/nessus-${PORTVERSION}/src/ \
 		ftp://ftp.sekure.net/pub/nessus/nessus-${PORTVERSION}/src/
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@freebsd.org
 
 DIST_SUBDIR=	nessus
 WRKSRC=		${WRKDIR}/nessus-libraries
