@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.141 2001/09/11 10:23:36 mharo Exp $
+# $FreeBSD: ports/math/Makefile,v 1.142 2001/09/16 18:09:01 kevlo Exp $
 #
     SUBDIR += yacas
 
@@ -63,6 +63,7 @@
     SUBDIR += p5-Bit-ShiftReg
     SUBDIR += p5-Bit-Vector
     SUBIDR += p5-Date-Handler
+    SUBDIR += p5-Math-Base85
     SUBDIR += p5-Math-Bezier
     SUBDIR += p5-Math-BigIntFast
     SUBDIR += p5-Math-Currency
