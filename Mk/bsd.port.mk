@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.492 2004/07/14 08:18:16 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.493 2004/07/17 14:23:34 eik Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1493,7 +1493,7 @@ MYSQL_VER=	${DEFAULT_MYSQL_VER}
 .if defined(BROKEN_WITH_MYSQL)
 .	for VER in ${BROKEN_WITH_MYSQL}
 .		if (${MYSQL_VER} == "${VER}")
-IGNORE=		"Doesn't work with MySQL version : ${MYSQL_VER} (Doesn't support MySQL ${BROKEN_WITH_MYSQL})"
+IGNORE=		Doesn't work with MySQL version : ${MYSQL_VER} (Doesn't support MySQL ${BROKEN_WITH_MYSQL})
 .		endif
 .	endfor
 .endif # BROKEN_WITH_MYSQL
