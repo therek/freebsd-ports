@@ -1,12 +1,12 @@
 # New ports collection makefile for:    magic
-# Version required:     6.4.4
 # Date created:         18 Dec 1994
 # Whom:                 swallace
 #
-# $FreeBSD$
+# $FreeBSD: ports/cad/magic/Makefile,v 1.16 1999/08/25 04:52:33 obrien Exp $
 #
 
-DISTNAME=       magic-6.5
+PORTNAME=	magic
+PORTVERSION=	6.5
 CATEGORIES=	cad
 MASTER_SITES=	ftp://gatekeeper.dec.com/pub/DEC/WRL/projects/magic/6.5/
 DISTFILES=	magic-6_5_tar.Z

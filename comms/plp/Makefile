@@ -1,16 +1,16 @@
 # New ports collection makefile for:	Psion Link Protocol
-# Version required:			1.8
 # Date created:				Tue Nov 30 15:43:27 EST 1999
 # Whom:					Maurice Castro <maurice@serc.rmit.edu.au>
 #
-# $FreeBSD: ports/comms/plp/Makefile,v 1.2 2000/02/27 09:10:12 kris Exp $
+# $FreeBSD: ports/comms/plp/Makefile,v 1.3 2000/03/21 23:01:14 asami Exp $
 #
 
-DISTNAME=	plp_1_8
-PKGNAME=	plp-1.8
+PORTNAME=	plp
+PORTVERSION=	1.8
 CATEGORIES=	comms
 MASTER_SITES=	http://www.proudman51.freeserve.co.uk/psion/ \
 		http://people.FreeBSD.org/~kris/distfiles/
+DISTNAME=	${PORTNAME}_1_8
 
 MAINTAINER=	maurice@serc.rmit.edu.au
 

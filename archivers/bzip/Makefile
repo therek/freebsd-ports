@@ -1,12 +1,12 @@
 # New ports collection makefile for:    bzip
-# Version required:     0.21
 # Date created:         Fr  27 Sep 1996 11:47:35 MET DST
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/archivers/bzip/Makefile,v 1.14 1999/08/28 01:56:52 mharo Exp $
+# $FreeBSD: ports/archivers/bzip/Makefile,v 1.15 1999/08/31 06:40:08 mharo Exp $
 #
 
-DISTNAME=       bzip-0.21
+PORTNAME=	bzip
+PORTVERSION=	0.21
 CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.connectnet.com/pub/bzip/bzip-0.21/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mserver
-# Version required:	0.23a
 # Date created:		21 May 1999
 # Whom:		Maxim Sobolev <sobomax@altavista.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/mserver/Makefile,v 1.2 1999/08/25 05:12:37 obrien Exp $
 #
 
-DISTNAME=	mserver-0.23a
+PORTNAME=	mserver
+PORTVERSION=	0.23a
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.innet.be/pub/staff/carl/
 

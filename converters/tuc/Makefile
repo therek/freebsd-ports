@@ -1,12 +1,12 @@
 # New ports collection makefile for:	tuc
-# Version required:			1.10
 # Date created:				30 March 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/tuc/Makefile,v 1.3 1999/08/25 05:16:30 obrien Exp $
 #
 
-DISTNAME=	tuc-1.10
+PORTNAME=	tuc
+PORTVERSION=	1.10
 CATEGORIES=	converters
 MASTER_SITES=	http://www.whizkidtech.net/fports/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	FElt
-# Version required:	3.02
 # Date created:		19 October 1996
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/cad/felt/Makefile,v 1.14 2000/02/14 22:37:19 mharo Exp $
+# $FreeBSD: ports/cad/felt/Makefile,v 1.15 2000/02/29 02:08:55 jedgar Exp $
 #
 
-DISTNAME=	felt-3.02
+PORTNAME=	felt
+PORTVERSION=	3.02
 CATEGORIES=	cad
 MASTER_SITES=	ftp://felt.sourceforge.net/pub/FElt/ \
 		http://symphony.clarku.edu/atkinson/felt/Binaries/ \

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	snooper
-# Version required:	19991202
 # Date created:		4 May 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/comms/snooper/Makefile,v 1.6 1999/12/02 03:24:21 itojun Exp $
+# $FreeBSD: ports/comms/snooper/Makefile,v 1.7 2000/01/29 20:01:39 mharo Exp $
 #
 
-DISTNAME=	snooper-19991202
-PKGNAME=	snooper-19991202
+PORTNAME=	snooper
+PORTVERSION=	1999.12.02
 CATEGORIES=	comms
 MASTER_SITES=   ftp://ftp.foretune.co.jp/pub/tools/snooper/
+DISTNAME=	snooper-19991202
 
 MAINTAINER=	itojun@itojun.org
 

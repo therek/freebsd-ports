@@ -1,15 +1,15 @@
 # New ports collection makefile for:	makeself
-# Version required:	1.5.3
 # Date created:		22 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/archivers/makeself/Makefile,v 1.2 1999/12/29 02:50:41 jedgar Exp $
+# $FreeBSD: ports/archivers/makeself/Makefile,v 1.3 2000/03/22 01:58:48 will Exp $
 #
 
-DISTNAME=	makeself
-PKGNAME=	makeself-1.5.3
+PORTNAME=	makeself
+PORTVERSION=	1.5.3
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.lokigames.com/~megastep/makeself/
+DISTNAME=	makeself
 EXTRACT_SUFX=	.gz.sh
 
 MAINTAINER=	will@FreeBSD.org

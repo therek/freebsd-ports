@@ -1,12 +1,12 @@
 # New ports collection makefile for:	i18ntools
-# Version required:			1.0
 # Date created:				17 April 1999
 # Whom:					G. Adam Stanislav
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/i18ntools/Makefile,v 1.3 1999/08/25 05:16:19 obrien Exp $
 #
 
-DISTNAME=	i18ntools-1.0
+PORTNAME=	i18ntools
+PORTVERSION=	1.0
 CATEGORIES=	converters
 MASTER_SITES=	ftp://ftp.whizkidtech.net/unix/ \
 		http://www.whizkidtech.net/fports/

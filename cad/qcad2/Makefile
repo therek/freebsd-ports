@@ -1,15 +1,15 @@
 # New ports collection makefile for:	qcad
-# Version required:	1.3.3
 # Date created:		10 Dec 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/qcad/Makefile,v 1.3 2000/02/27 11:21:54 kris Exp $
+# $FreeBSD: ports/cad/qcad/Makefile,v 1.4 2000/03/22 01:58:55 will Exp $
 #
 
-DISTNAME=	qcad_source
-PKGNAME=	qcad-1.3.3
+PORTNAME=	qcad
+PORTVERSION=	1.3.3
 CATEGORIES=	cad
 MASTER_SITES=	http://www.ultraviolet.org/qcad/
+DISTNAME=	qcad_source
 
 MAINTAINER=	will@FreeBSD.org
 

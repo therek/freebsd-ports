@@ -1,17 +1,17 @@
 # New ports collection makefile for:    unzip
-# Version required:     5.*
 # Date created:         17 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/archivers/unzip/Makefile,v 1.26 1999/08/28 01:56:54 mharo Exp $
+# $FreeBSD: ports/archivers/unzip/Makefile,v 1.27 1999/08/31 06:40:21 mharo Exp $
 #
 
-DISTNAME=       unzip540
-PKGNAME=        unzip-5.40
+PORTNAME=	unzip-5.40
+PORTVERSION=	unzip-5.40
 CATEGORIES=	archivers
-MASTER_SITES=   ftp://ftp.cdrom.com/pub/infozip/src/
+MASTER_SITES=	ftp://ftp.cdrom.com/pub/infozip/src/
+DISTNAME=	unzip540
 
-MAINTAINER=     ache@FreeBSD.org
+MAINTAINER=	ache@FreeBSD.org
 
 Y2K=		http://www.cdrom.com/pub/infozip/FAQ.html#Y2K
 

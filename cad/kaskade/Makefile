@@ -1,15 +1,15 @@
 # New ports collection makefile for:	Kaskade
-# Version required:	3.1.1
 # Date created:		19 Sept. 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/cad/kaskade/Makefile,v 1.11 2000/02/08 16:42:07 imura Exp $
+# $FreeBSD: ports/cad/kaskade/Makefile,v 1.12 2000/03/20 21:33:24 jedgar Exp $
 #
 
-DISTNAME=	3.1.1
-PKGNAME=	kaskade-3.1.1
+PORTNAME=	kaskade
+PORTVERSION=	3.1.1
 CATEGORIES=	cad
 MASTER_SITES=	ftp://ftp.zib.de/pub/kaskade/3.x/
+DISTNAME=	${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org

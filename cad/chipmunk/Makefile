@@ -1,12 +1,12 @@
 # New ports collection makefile for:	chipmunk
-# Version required:	5.51
 # Date created:		29 July 1995
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD: ports/cad/chipmunk/Makefile,v 1.8 1999/08/25 04:52:29 obrien Exp $
+# $FreeBSD: ports/cad/chipmunk/Makefile,v 1.9 1999/09/24 05:11:56 cpiazza Exp $
 #
 
-DISTNAME=	chipmunk-5.51
+PORTNAME=	chipmunk
+PORTVERSION=	5.51
 CATEGORIES=	cad
 MASTER_SITES=	http://www.cs.berkeley.edu/~lazzaro/chipmunk/pickup/sources/
 DISTFILES=	psys-1.51.tar.gz log-5.51.tar.gz netcmpbeta.tar.gz \

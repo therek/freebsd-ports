@@ -1,15 +1,15 @@
 # New ports collection makefile for:   mlan
-# Version required:    1.03
 # Date created:        4 January 2000
 # Whom:                phk
 #
-# $FreeBSD: ports/comms/mlan/Makefile,v 1.1 2000/01/04 22:11:41 phk Exp $
+# $FreeBSD: ports/comms/mlan/Makefile,v 1.2 2000/01/04 22:20:08 phk Exp $
 #
 
-DISTNAME=	mlpb103
-PKGNAME=	mlan-1.03
+PORTNAME=	mlan
+PORTVERSION=	1.03
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.dalsemi.com/pub/auto_id/public/
+DISTNAME=	mlpb103
 
 MAINTAINER=	phk@FreeBSD.org
 

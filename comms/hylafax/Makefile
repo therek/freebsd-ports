@@ -1,17 +1,17 @@
 # ports collection makefile for:	hylafax
-# Version required:	v4.0pl2
 # Date created:		19 Apr 1997
 # Whom:			ports@freebsd.org
 #
-# $FreeBSD: ports/comms/hylafax/Makefile,v 1.32 2000/02/13 17:09:05 dirk Exp $
+# $FreeBSD: ports/comms/hylafax/Makefile,v 1.33 2000/02/24 02:04:15 mharo Exp $
 #
 
-DISTNAME=	hylafax-v4.0pl2
-PKGNAME=	hylafax-4.0.2
+PORTNAME=	hylafax
+PORTVERSION=	4.0.2
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.sgi.com/sgi/fax/source/ \
 		ftp://ftp.leo.org/pub/comp/os/unix/networking/fax/hylafax/source/ \
 		ftp://ftp.sisis.de/pub/hylafax/source/
+DISTNAME=	${PORTNAME}-v4.0pl2
 EXTRACT_SUFX=	-tar.gz
 
 PATCH_SITES=	http://www.hylafax.org/patches/

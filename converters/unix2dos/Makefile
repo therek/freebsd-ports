@@ -1,12 +1,12 @@
 # New ports collection makefile for:	unix2dos
-# Version required:	1.0
 # Date created:		1 February 1999
 # Whom:			obonilla@fisicc-ufm.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/unix2dos/Makefile,v 1.2 1999/08/25 05:16:31 obrien Exp $
 #
 
-DISTNAME=	unix2dos-1.0
+PORTNAME=	unix2dos
+PORTVERSION=	1.0
 CATEGORIES=	converters
 MASTER_SITES=	http://www.fisicc-ufm.edu/~obonilla/files/
 

@@ -1,20 +1,20 @@
 # ex:ts=8
 # Ports collection makefile for:  minicom
-# Version required: 0.0
 # Date created:			  Fri Dec 01, 1995
 # Whom:				  obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/comms/minicom/Makefile,v 1.26 2000/03/20 02:36:46 obrien Exp $
+# $FreeBSD: ports/comms/minicom/Makefile,v 1.27 2000/03/22 00:27:10 obrien Exp $
 #
 
-DISTNAME=	${PKGNAME}.src
-PKGNAME=	minicom-1.83.0
+PORTNAME=	minicom
+PORTVERSION=	1.83.0
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SUNSITE}  \
 		http://www.pp.clinet.fi/~walker/mc-dev/  \
 		http://www.clinet.fi/~walker/  \
 		http://www.pp.clinet.fi/~walker/
 MASTER_SITE_SUBDIR=	apps/serialcomm/dialout
+DISTNAME=	${PKGNAME}.src
 
 MAINTAINER=	obrien@FreeBSD.org
 

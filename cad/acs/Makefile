@@ -1,12 +1,12 @@
 # New ports collection makefile for:	acs
-# Version required:	0.25
 # Date created:		01 January 1995
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/acs/Makefile,v 1.11 1999/08/25 04:52:27 obrien Exp $
+# $FreeBSD: ports/cad/acs/Makefile,v 1.12 1999/11/16 10:40:03 tg Exp $
 #
 
-DISTNAME=	acs-0.25
+PORTNAME=	acs
+PORTVERSION=	0.25
 CATEGORIES=	cad
 MASTER_SITES=	http://www.geda.seul.org/dist/ \
 		http://www.geda.coelacanth.com/dist/ \

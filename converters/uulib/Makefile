@@ -1,20 +1,20 @@
 # New ports collection makefile for:	uulib
-# Version Required:     0.5.9
 # Date Created:		04 Aug 1996
 # Whom:			Tim Vanderhoek <ac199@freenet.hamilton.on.ca>
 #
-# $FreeBSD: ports/converters/uulib/Makefile,v 1.20 1999/08/27 21:13:42 mharo Exp $
+# $FreeBSD: ports/converters/uulib/Makefile,v 1.21 1999/08/31 06:41:06 mharo Exp $
 #
 
-DISTNAME=       uudeview-0.5.13
-PKGNAME=        uulib-0.5.13
+PORTNAME=	uulib
+PORTVERSION=	0.5.13
 CATEGORIES=	converters
 MASTER_SITES=	ftp://tsx-11.mit.edu/pub/linux/sources/usr.bin/ \
 		http://www.informatik.uni-frankfurt.de/~fp/uudeview/Apps/frank/
+DISTNAME=	uudeview-${PORTVERSION}
 
 MAINTAINER=	hoek@FreeBSD.org
 
-GNU_CONFIGURE=		yes
+GNU_CONFIGURE=	yes
 
 MAN3=		uulib.3
 

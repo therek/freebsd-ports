@@ -1,15 +1,15 @@
 # New ports collection makefile for:	mmencode
-# Version required:	2.7
 # Date created:		30 September 1999
 # Whom:			kbyanc
 #
-# $FreeBSD: ports/converters/mmencode/Makefile,v 1.1.1.1 1999/10/01 17:54:15 cpiazza Exp $
+# $FreeBSD: ports/converters/mmencode/Makefile,v 1.2 1999/10/01 17:56:00 cpiazza Exp $
 #
 
-DISTNAME=	mm2.7
-PKGNAME=	mmencode-2.7
+PORTNAME=	mmencode
+PORTVERSION=	2.7
 CATEGORIES=	converters
 MASTER_SITES=	ftp://thumper.bellcore.com/pub/nsb/
+DISTNAME=	mm${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	kbyanc@posi.net

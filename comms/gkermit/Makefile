@@ -1,15 +1,15 @@
 # New ports collection makefile for:	gkermit
-# Version required:     1.0
 # Date created:		8 Jan 2000
 # Whom:			dom@myrddin.demon.co.uk
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/gkermit/Makefile,v 1.1 2000/01/11 16:13:17 ade Exp $
 #
 
-DISTNAME=	gkermit
-PKGNAME=        gkermit-1.0
+PORTNAME=	gkermit
+PORTVERSION=	1.0
 CATEGORIES=	comms
 MASTER_SITES=	ftp://kermit.columbia.edu/kermit/archives/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	dom@myrddin.demon.co.uk
 

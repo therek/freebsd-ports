@@ -1,15 +1,15 @@
 # New ports collection makefile for:    nulib
-# Version required:     3.25
 # Date created:         Thu May  8 00:14:31 PDT 1997
 # Whom:                 Steven Wallace <swallace@freebsd.org>
 #
-# $FreeBSD: ports/archivers/nulib/Makefile,v 1.5 1999/08/25 04:25:12 obrien Exp $
+# $FreeBSD: ports/archivers/nulib/Makefile,v 1.6 2000/02/08 09:25:42 peter Exp $
 #
 
-DISTNAME=	nulib325
-PKGNAME=	nulib-3.25
+PORTNAME=	nulib
+PORTVERSION=	3.25
 CATEGORIES=	archivers
 MASTER_SITES=	http://people.FreeBSD.org/~jseger/
+DISTNAME=	nulib325
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=     jseger@FreeBSD.org

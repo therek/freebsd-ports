@@ -1,12 +1,12 @@
 # New ports collection makefile for:	lzo
-# Version required:			1.06
 # Date created:				21 Feb 1998
 # Whom:					giffunip@asme.org
 #
-# $FreeBSD: ports/archivers/lzo/Makefile,v 1.10 1999/12/04 23:40:26 cpiazza Exp $
+# $FreeBSD: ports/archivers/lzo/Makefile,v 1.11 1999/12/22 13:48:57 jedgar Exp $
 #
 
-DISTNAME=	lzo-1.06
+PORTNAME=	lzo
+PORTVERSION=	1.06
 CATEGORIES=	archivers devel
 MASTER_SITES= 	${MASTER_SITE_SUNSITE} \
 		http://wildsau.idv.uni-linz.ac.at/mfx/lzo-download/
