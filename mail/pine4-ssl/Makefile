@@ -3,7 +3,7 @@
 # Date created:		29 Jul 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.12 2000/01/15 02:16:49 nsayer Exp $
+# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.13 2000/01/17 12:39:57 asami Exp $
 #
 # I spent a <strong>very frustrating</strong> half hour with portlint
 # on this one and could never get it to fewer than 8 frigging warnings.
@@ -19,7 +19,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 CATEGORIES=	mail news
 
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/ \
-		http://www.kfu.com/~nsayer/encryption/noexport/
+		http://www.kfu.com/~nsayer/encryption/software/
 
 MAINTAINER=	nsayer@freebsd.org
 
