@@ -1,7 +1,9 @@
-@comment $FreeBSD: ports/security/ike-scan/pkg-plist,v 1.1 2003/05/08 05:10:46 foxfair Exp $
+@comment $FreeBSD: ports/security/ike-scan/pkg-plist,v 1.2 2004/02/10 22:10:52 linimon Exp $
 bin/ike-scan
-share/ike-scan/ike-backoff-patterns
-share/ike-scan/ike-vendor-ids
+bin/psk-crack
+%%DATADIR%%/ike-backoff-patterns
+%%DATADIR%%/ike-vendor-ids
+%%DATADIR%%/psk-crack-dictionary
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/COPYING
 %%PORTDOCS%%%%DOCSDIR%%/NEWS
