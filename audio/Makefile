@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.125 2000/02/10 02:00:20 cpiazza Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.126 2000/02/10 06:39:03 cpiazza Exp $
 #
 
     SUBDIR += amp
@@ -56,6 +56,7 @@
     SUBDIR += nspmod
     SUBDIR += play
     SUBDIR += playmidi
+    SUBDIR += pysol-sound-server
     SUBDIR += radio
     SUBDIR += raproxy
     SUBDIR += replay
