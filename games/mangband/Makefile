@@ -1,7 +1,7 @@
 # New ports collection makefile for:   mangband
 # Date created:        30 Dec 1998
 #
-# $FreeBSD: ports/games/mangband/Makefile,v 1.6 2000/03/30 20:57:14 mharo Exp $
+# $FreeBSD: ports/games/mangband/Makefile,v 1.7 2000/04/14 12:26:03 asami Exp $
 #
 
 PORTNAME=       mangband
@@ -10,7 +10,7 @@ CATEGORIES=	games
 MASTER_SITES=   http://www.umr.edu/~keldon/MAngband/
 DISTNAME=       mangband-054
 
-MAINTAINER=     ache@freebsd.org
+MAINTAINER=     ports@freebsd.org
 
 WRKSRC=         ${WRKDIR}/mangband/src
 ALL_TARGET=     install

@@ -2,7 +2,7 @@
 # Date created:         26 June 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/mail/elm+ME/Makefile,v 1.60 2000/05/24 10:26:04 ache Exp $
+# $FreeBSD: ports/mail/elm+ME/Makefile,v 1.61 2000/08/14 13:26:59 ache Exp $
 #
 
 PORTNAME=	elm
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.ozone.fmi.fi/KEH/ \
 		ftp://ftp.funet.fi/pub/unix/mail/elm/elm-2.4ME+/ \
 		ftp://ftp.ibp.fr/pub/unix/mail/elm-me/
 
-MAINTAINER=	ache@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION:S/ME+/\.ME+\./}
 MAN1=		answer.1 checkalias.1 elm.1 elmalias.1 fastmail.1 \
