@@ -3,12 +3,10 @@
 # Date created:			  23 January 2000
 # Whom:				  David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/shells/44bsd-csh/Makefile,v 1.4 2000/06/29 07:02:50 obrien Exp $
+# $FreeBSD: ports/shells/44bsd-csh/Makefile,v 1.5 2000/11/05 21:46:45 asmodai Exp $
 #
-FORBIDDEN=	"Temporary filename problems allow potential root compromise"
-
 PORTNAME=	44bsd-csh
-PORTVERSION=	20000409
+PORTVERSION=	20001106
 CATEGORIES=	shells
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	obrien
