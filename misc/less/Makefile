@@ -2,13 +2,13 @@
 # Date created:		8 Nov 1994
 # Whom:			ache
 #
-# $FreeBSD: ports/misc/less/Makefile,v 1.29 2000/05/23 06:35:25 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	less
-PORTVERSION=	354
+PORTVERSION=	358
 CATEGORIES=	misc
-MASTER_SITES=	http://home.flash.net/~marknu/less/ \
+MASTER_SITES=	http://www.greenwoodsoftware.com/%SUBDIR%/ \
 		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	less
 
