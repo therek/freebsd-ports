@@ -2,25 +2,29 @@
 # Date created:				2000-11-04
 # Whom:					trevor
 #
-# $FreeBSD: ports/x11-wm/evilwm/Makefile,v 1.3 2000/12/25 02:40:19 trevor Exp $
+# $FreeBSD: ports/x11-wm/evilwm/Makefile,v 1.4 2000/12/25 03:02:32 trevor Exp $
 #
 
 PORTNAME=		evilwm
-PORTVERSION=		0.2.7
+PORTVERSION=		0.3.11
 CATEGORIES=		x11-wm
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
+DISTNAME=		${PORTNAME}_${PORTVERSION}-1
 
 MAINTAINER=	trevor@FreeBSD.org
 
 DOCDIR=		share/doc/${PORTNAME}
-DOCS=		Changes.kja3 README
+DOCS=		ChangeLog README README.multihead
 MAN1=		evilwm.1
 PLIST=		${WRKDIR}/pkg-plist
 USE_X_PREFIX=	yes
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 do-build:
-	cd ${WRKSRC} && ${CC} ${CFLAGS} -I${X11BASE}/include -L${X11BASE}/lib -o evilwm *.c -lX11
+	cd ${WRKSRC} && ${CC} ${CFLAGS} -I${X11BASE}/include \
+		-DMOUSE -DSTDIO -DSOLIDDRAG -DCOLOURMAP -DVWM \
+		-L${X11BASE}/lib -o evilwm *.c -lX11
 
 pre-install:
 	${ECHO} bin/evilwm > ${PLIST}
@@ -33,11 +37,11 @@ pre-install:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/evilwm ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/evilwm.man ${PREFIX}/man/man1/evilwm.1
+	${INSTALL_MAN} ${WRKSRC}/evilwm.1 ${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/${DOCDIR}
+	${MKDIR} ${DOCSDIR}
 .for i in ${DOCS}
-	${INSTALL_DATA} ${WRKSRC}/${i} ${PREFIX}/${DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/${i} ${DOCSDIR}
 .endfor
 .endif
 
