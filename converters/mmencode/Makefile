@@ -3,7 +3,7 @@
 # Date created:		30 September 1999
 # Whom:			kbyanc
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/mmencode/Makefile,v 1.1.1.1 1999/10/01 17:54:15 cpiazza Exp $
 #
 
 DISTNAME=	mm2.7
@@ -22,7 +22,7 @@ ALL_TARGET=	mmencode
 
 do-install:
 	@cd ${WRKSRC}		&& ${INSTALL_PROGRAM} mmencode ${PREFIX}/bin
-	@cd ${WRKSRC}/../man	&& ${CP} mmencode.1 ${PREFIX}/man/man1
+	@cd ${WRKSRC}/../man	&& ${INSTALL_MAN} mmencode.1 ${PREFIX}/man/man1
 	@cd ${PREFIX}/bin	&& ${LN} -s mmencode mimencode
 
 .include <bsd.port.mk>
