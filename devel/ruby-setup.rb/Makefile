@@ -2,16 +2,13 @@
 # Date created:		11 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-setup.rb/Makefile,v 1.1 2001/06/11 07:20:35 knu Exp $
 #
 
 PORTNAME=	setup.rb
-PORTVERSION=	2.0.4
+PORTVERSION=	2.1.0
 CATEGORIES=	devel ruby
-MASTER_SITES=	${MASTER_SITE_LOCAL} \
-		http://www9.xdsl.ne.jp/~aamine/soft/ \
-		http://www.xdsl.ne.jp/Cd/aamine/soft/
-MASTER_SITE_SUBDIR=	knu
+MASTER_SITES=	http://www.loveruby.net/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME:R}-${PORTVERSION}
 DIST_SUBDIR=	ruby
