@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-gcj/Makefile,v 1.5 2000/10/02 03:10:02 jeh Exp $
+# $FreeBSD: ports/devel/i386-rtems-gcj/Makefile,v 1.6 2000/10/08 00:24:09 asami Exp $
 #
 
 PORTNAME=	gcj
@@ -43,17 +43,10 @@ CONFIGURE_ARGS?=	--with-gnu-as --with-gnu-ld --with-newlib --verbose \
 CONFIGURE_WRKSRC?=	${WRKDIR}/build-${LCLTARGET}
 CONFIGURE_SCRIPT?=	../${JAVANAME}/configure
 
-MAKE_FLAGS=	LANGUAGES="java"
+PATCH_WRKSRC=		${WRKDIR}
+PATCH_STRIP=		-p
 
-.if defined(PATCH_DEBUG)
-PATCH_DEBUG_TMP=	yes
-PATCH_ARGS=		-d ${WRKDIR}/${JAVANAME} -E ${PATCH_STRIP}
-PATCH_DIST_ARGS=	-d ${WRKDIR} -E ${PATCH_DIST_STRIP}
-.else
-PATCH_DEBUG_TMP=	no
-PATCH_ARGS=		-d ${WRKDIR}/${JAVANAME} --forward --quiet -E ${PATCH_STRIP}
-PATCH_DIST_ARGS=	-d ${WRKDIR} --forward --quiet -E ${PATCH_DIST_STRIP}
-.endif
+MAKE_FLAGS=	LANGUAGES="java"
 
 pre-configure:
 	@(cd ${WRKDIR} ; \
