@@ -6,6 +6,12 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20040629:
+  AFFECTS: users of net/daapd
+
+  Daapd must now be enabled in rc.conf. Add this to your /etc/rc.conf:
+  daapd_enable="YES"
+
 20040626:
   AFFECTS: users of php4 and php5 with the PDFlib extension
 
@@ -337,4 +343,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.34 2004/06/25 11:25:45 pav Exp $
+$FreeBSD: ports/UPDATING,v 1.35 2004/06/26 08:29:19 ale Exp $
