@@ -3,11 +3,11 @@
 # Date created:			Jun 14, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/txt2regex/Makefile,v 1.1 2001/06/14 07:51:23 ijliao Exp $
 #
 
 PORTNAME=	txt2regex
-PORTVERSION=	0.3
+PORTVERSION=	0.3.1
 CATEGORIES=	misc
 MASTER_SITES=	http://txt2regex.sourceforge.net/
 EXTRACT_SUFX=	.tgz
@@ -21,10 +21,10 @@ NO_BUILD=	yes
 
 post-patch:
 	@${PERL} -pi -e "s,/bin/bash,${LOCALBASE}/bin/bash,g ; \
-		s,\`seq,\`gseq,g" ${WRKSRC}/txt2regex-0.3.sh
+		s,\`seq,\`gseq,g" ${WRKSRC}/${DISTNAME}.sh
 	@${PERL} -pi -e "s,/usr,${LOCALBASE},g" ${WRKSRC}/Makefile
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/txt2regex-0.3.sh ${PREFIX}/bin/txt2regex
+	${INSTALL_SCRIPT} ${WRKSRC}/${DISTNAME}.sh ${PREFIX}/bin/txt2regex
 
 .include <bsd.port.mk>
