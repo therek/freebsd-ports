@@ -2,7 +2,7 @@
 # Date created:		1 April 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/qpopper/Makefile,v 1.57 2001/06/02 18:55:42 alex Exp $
+# $FreeBSD: ports/mail/qpopper/Makefile,v 1.58 2001/06/02 21:15:12 kris Exp $
 #
 
 PORTNAME=	qpopper
@@ -17,7 +17,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 .if ${OSVERSION} >= 400014
 PATCH_SITES=	http://www.imasy.or.jp/~ume/ipv6/
-PATCHFILES=	qpopper4.0.2-ipv6-20010504.diff.gz
+PATCHFILES=	qpopper4.0.3-ipv6-20010504.diff.gz
 PATCH_DIST_STRIP=	-p1
 .endif
 
