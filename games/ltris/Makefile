@@ -2,11 +2,11 @@
 # Date created:				19 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/ltris/Makefile,v 1.1 2000/10/19 16:15:34 sobomax Exp $
 #
 
 PORTNAME=	ltris
-PORTVERSION=	001017
+PORTVERSION=	001115
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	lgames
