@@ -3,11 +3,11 @@
 # Date created:			  27 Mar 1999
 # Whom:				  Jerry Hicks
 #
-# $FreeBSD: ports/devel/bison/Makefile,v 1.15 2001/09/23 00:21:22 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		bison
-PORTVERSION=		1.29
+PORTVERSION=		1.30
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	bison
