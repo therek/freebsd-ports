@@ -2,7 +2,7 @@
 # Date created:		10 July 2000
 # Whom:			n_hibma@qubesoft.com
 #
-# $FreeBSD: ports/mail/mailman/Makefile,v 1.15 2001/05/11 11:59:27 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mailman
@@ -18,13 +18,14 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/httpd:${PORTSDIR}/www/apache13
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS= --prefix=${MAILMANDIR} \
-		--with-mail-gid=daemon --with-cgi-gid=${CGI_GID}
+		--with-mail-gid=${MAIL_GID} --with-cgi-gid=${CGI_GID}
 USE_PYTHON=	yes
 
 USERNAME?=	mailman
 USERID?=	89
 
 CGI_GID?=	nogroup
+MAIL_GID?=	daemon
 
 MMDIR?=		mailman
 MAILMANDIR=	${PREFIX}/${MMDIR}
