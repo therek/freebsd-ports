@@ -2,7 +2,7 @@
 # Date created:		19 July 1996
 # Whom:			koshy
 #
-# $FreeBSD: ports/benchmarks/netperf/Makefile,v 1.11 2000/04/08 22:04:20 mharo Exp $
+# $FreeBSD: ports/benchmarks/netperf/Makefile,v 1.12 2000/09/09 09:54:49 kris Exp $
 #
 
 PORTNAME=	netperf
@@ -14,8 +14,6 @@ DISTNAME=	netperf-2.1pl3
 PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
 PATCHFILES=	netperf-21pl3-20000721.diff.gz
 PATCH_DIST_STRIP=	-p1
-
-MAINTAINER=	fenner@freebsd.org
 
 MAKEFILE=	makefile
 MAN1=		netperf.1 netserver.1
