@@ -2,15 +2,16 @@
 # Date created:				20 February 1998
 # Whom:	      				Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/devel/p5-ReadLine-Perl/Makefile,v 1.5 2000/01/21 22:23:57 mph Exp $
+# $FreeBSD: ports/devel/p5-ReadLine-Perl/Makefile,v 1.6 2000/04/11 21:29:50 mharo Exp $
 #
 
-PORTNAME=	Term-ReadLine-Perl
+PORTNAME=	ReadLine-Perl
 PORTVERSION=	0.9907
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Term
 PKGNAMEPREFIX=	p5-
+DISTNAME=	Term-ReadLine-Perl-${PORTVERSION}
 
 MAINTAINER=	mph@freebsd.org
 

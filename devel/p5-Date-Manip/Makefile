@@ -2,15 +2,16 @@
 # Date created:				April 28th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Date-Manip/Makefile,v 1.11 1999/11/10 08:00:39 ache Exp $
+# $FreeBSD: ports/devel/p5-Date-Manip/Makefile,v 1.12 2000/04/11 21:29:25 mharo Exp $
 #
 
-PORTNAME=	DateManip
+PORTNAME=	Date-Manip
 PORTVERSION=	5.35
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Date
 PKGNAMEPREFIX=	p5-
+DISTNAME=	DateManip-${PORTVERSION}
 
 MAINTAINER=	jfitz@FreeBSD.org
 

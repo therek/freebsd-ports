@@ -2,15 +2,16 @@
 # Date created:				October 12th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Time/Makefile,v 1.13 1999/08/31 06:42:31 mharo Exp $
+# $FreeBSD: ports/devel/p5-Time/Makefile,v 1.14 2000/04/11 21:29:57 mharo Exp $
 #
 
-PORTNAME=	Time-modules
+PORTNAME=	Time
 PORTVERSION=	98.112901
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Time
 PKGNAMEPREFIX=	p5-
+DISTNAME=	Time-modules-${PORTVERSION}
 
 MAINTAINER=	jfitz@FreeBSD.org
 

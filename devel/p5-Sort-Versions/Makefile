@@ -2,15 +2,16 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Sort-Versions/Makefile,v 1.5 1999/08/31 06:42:25 mharo Exp $
+# $FreeBSD: ports/devel/p5-Sort-Versions/Makefile,v 1.6 2000/04/11 21:29:53 mharo Exp $
 #
 
-PORTNAME=	SortVersions
+PORTNAME=	Sort-Versions
 PORTVERSION=	1.1
-PKGNAMEPREFIX=	p5-
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Sort
+PKGNAMEPREFIX=	p5-
+DISTNAME=	SortVersions-${PORTVERSION}
 
 MAINTAINER=	jfitz@FreeBSD.org
 
