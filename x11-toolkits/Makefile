@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.65 2000/05/22 02:53:46 will Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.66 2000/05/27 00:10:33 obrien Exp $
 #
 
     SUBDIR += FWF
@@ -54,6 +54,7 @@
     SUBDIR += vdkbuilder
     SUBDIR += wxgtk
     SUBDIR += xbae
+    SUBDIR += xenophilia
     SUBDIR += xforms
     SUBDIR += xg
     SUBDIR += xmhtml
