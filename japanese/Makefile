@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.276 2000/07/10 03:34:46 steve Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.277 2000/07/11 15:59:37 taoka Exp $
 #
 
     SUBDIR += Canna
@@ -285,6 +285,7 @@
     SUBDIR += w3
     SUBDIR += w3m
     SUBDIR += w3m-ssl
+    SUBDIR += wdic-fpw
     SUBDIR += web1913-fpw
     SUBDIR += weblint97
     SUBDIR += wine
