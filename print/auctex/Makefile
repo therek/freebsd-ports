@@ -2,17 +2,18 @@
 # Date created:				21 November 1999
 # Whom:					Martin Kammerhofer
 #
-# $FreeBSD: ports/print/auctex/Makefile,v 1.3 2000/04/09 17:49:17 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		auctex
-PORTVERSION=		9.9p
+PORTVERSION=		10.0g
 CATEGORIES=		print elisp
 MASTER_SITES=		${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR=	support/auctex
 
 MAINTAINER=		mkamm@gmx.net
 
+# NOTE: AUC TeX 10 requires Emacs version to be >= 20
 # EMACS_NAME must be 'emacs' or 'xemacs' - it is used for byte compiling
 #    emacs lisp files (*.el => *.elc)
 # EMACS_PORT is only used for dependency registration, the installed bits
