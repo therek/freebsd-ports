@@ -2,14 +2,14 @@
 # Date created:		Sun Nov 28 19:55:19 EST 1999
 # Whom:			jdunn@aquezada.com
 #
-# $FreeBSD: ports/audio/cd-console/Makefile,v 1.1 1999/12/25 15:32:34 steve Exp $
+# $FreeBSD: ports/audio/cd-console/Makefile,v 1.2 2000/04/08 21:23:20 mharo Exp $
 #
 
 PORTNAME=	cd-console
 PORTVERSION=	2.3
 CATEGORIES=	audio
 MASTER_SITES=	http://www.cs.helsinki.fi/~salerma/cd-console/ \
-		ftp://ftp.aquezada.com/pub/cd-console/
+		ftp://ftp.aquezada.com/pub/distrib/cd-console/
 
 MAINTAINER=	jdunn@aquezada.com
 
