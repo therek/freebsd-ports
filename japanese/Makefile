@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.349 2001/03/17 07:52:05 kuriyama Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.350 2001/04/07 01:47:09 will Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -18,6 +18,7 @@
     SUBDIR += bible_names-fpw
     SUBDIR += binder
     SUBDIR += bookview
+    SUBDIR += cannadic
     SUBDIR += canuum
     SUBDIR += cdrom2
     SUBDIR += chasen
