@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.291 2001/03/29 21:45:25 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.292 2001/03/31 04:05:25 will Exp $
 #
 
     SUBDIR += 4va
@@ -61,6 +61,7 @@
     SUBDIR += gimp1
     SUBDIR += giram
     SUBDIR += gle
+    SUBDIR += glide3
     SUBDIR += gliv
     SUBDIR += gltk
     SUBDIR += gnofract4d
