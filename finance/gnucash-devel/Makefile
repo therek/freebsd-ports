@@ -4,14 +4,14 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.7 1999/08/25 05:26:38 obrien Exp $
 #
 
 DISTNAME=	xacc-1.0.18
 PKGNAME=	gnucash-1.0.18
 CATEGORIES=	deskutils
-MASTER_SITES=	http://www.gnucash.org/xacc/download/  \
-		ftp://ftp.gnucash.org/pub/xacc/
+MASTER_SITES=	http://www.gnucash.org/pub/xacc/  \
+		ftp://ftp.gnucash.org/pub/gnucash/xacc/
 
 MAINTAINER=     obrien@FreeBSD.org
 
