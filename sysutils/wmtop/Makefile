@@ -2,7 +2,7 @@
 # Date created:		07 May 2000
 # Whom:			Dan Piponi <wmtop@tanelorn.demon.co.uk>
 #
-# $FreeBSD: ports/sysutils/wmtop/Makefile,v 1.4 2001/02/26 03:37:39 steve Exp $
+# $FreeBSD$
 
 PORTNAME=	wmtop
 PORTVERSION=	0.84
@@ -12,6 +12,7 @@ MASTER_SITES=	http://wmtop.sourceforge.net/ \
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	wmtop@tanelorn.demon.co.uk
+COMMENT=	Windowmaker dock app to display top 3 CPU consuming processes
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

@@ -2,7 +2,7 @@
 # Date created:				22 April 2000
 # Whom:					ajk@iu.edu
 #
-# $FreeBSD: ports/security/cracklib/Makefile,v 1.1 2000/12/19 12:55:33 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cracklib
@@ -14,6 +14,7 @@ DISTNAME=	${PORTNAME},${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ajk@iu.edu
+COMMENT=	Password-checking library
 
 MAN3=		cracklib.3
 MLINKS=		cracklib.3 FascistCheck.3

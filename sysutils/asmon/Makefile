@@ -2,7 +2,7 @@
 # Date created:		27 Sep 1999
 # Whom:			jack
 #
-# $FreeBSD: ports/sysutils/asmon/Makefile,v 1.8 2000/08/03 07:59:31 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asmon
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_AFTERSTEP}
 MASTER_SITE_SUBDIR=	apps/asmon
 
 MAINTAINER=	jack@germanium.xtalwind.net
+COMMENT=	A swallowable applet monitors the CPU usage, memory and swap, etc
 
 USE_X_PREFIX=	yes
 

@@ -2,7 +2,7 @@
 # Date created:			12 March 1997
 # Whom:		Andrew <andrew@ugh.net.au>, Iain Templeton <iain@ugh.net.au>
 #
-# $FreeBSD: ports/sysutils/idled/Makefile,v 1.7 2000/08/11 01:34:09 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	idled
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.darkwing.com/idled/download/	\
 		ftp://ftp.cs.hope.edu/pub/idled/
 
 MAINTAINER=	andrew@ugh.net.au
+COMMENT=	A daemon that logs out idle users and those users hogging resources
 
 NO_CDROM=	non-profit use and distribution only
 MANCOMPRESSED=	yes

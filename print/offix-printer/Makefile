@@ -2,7 +2,7 @@
 # Date created:      28 Jun 1997
 # Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD: ports/print/offix-printer/Makefile,v 1.9 2000/04/09 17:50:20 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	offix-printer
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	desktop_managers/OffiX
 DISTNAME=	Printer-2.4
 
 MAINTAINER=	ruslan@shevchenko.kiev.ua
+COMMENT=	OffiX printer icon with support of DND protocol
 
 LIB_DEPENDS=	Dnd.1:${PORTSDIR}/x11/libdnd
 

@@ -2,7 +2,7 @@
 # Date created:		2 May 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/sysutils/xbatt/Makefile,v 1.11 2000/04/22 10:13:50 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xbatt
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://www.clave.gr.jp/~eto/xbatt/
 
 MAINTAINER=	nobu@psrc.isac.co.jp
+COMMENT=	Laptop battery status display for X11
 
 ONLY_FOR_ARCHS=	i386
 

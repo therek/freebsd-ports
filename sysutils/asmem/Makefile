@@ -2,7 +2,7 @@
 # Date created:		4 June 1999
 # Whom:				jack
 #
-# $FreeBSD: ports/sysutils/asmem/Makefile,v 1.9 2000/08/03 09:26:19 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		asmem
@@ -13,6 +13,7 @@ MASTER_SITES=		${MASTER_SITE_AFTERSTEP} \
 MASTER_SITE_SUBDIR=	apps/asmem
 
 MAINTAINER=	jack@germanium.xtalwind.net
+COMMENT=	An AfterStep look-n-feel memory utilization monitor
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

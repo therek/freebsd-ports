@@ -2,7 +2,7 @@
 # Date created:		29 October 1999
 # Whom:			Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/sysutils/prips/Makefile,v 1.5 2000/04/22 10:13:01 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	prips
@@ -12,6 +12,7 @@ MASTER_SITES=	http://ipsc.sourceforge.net/dist/prips/
 DISTNAME=	${PKGNAME}-src
 
 MAINTAINER=	jeremy@external.org
+COMMENT=	Prints IP subnet ranges by list or CIDR
 
 WRKSRC=		${WRKDIR}/prips
 

@@ -2,7 +2,7 @@
 # Date created:		14 March 97
 # Whom:			Lars Koeller <Lars.Koeller@Uni-Bielefeld.DE>
 #
-# $FreeBSD: ports/sysutils/xperfmon/Makefile,v 1.26 2000/04/22 10:14:04 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xperfmon++
@@ -15,6 +15,7 @@ DISTNAME=	xperfmon++v1.1
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
+COMMENT=	A graphical X11 system performance monitor
 
 USE_IMAKE=	yes
 MAN1=		xperfmon++.1

@@ -2,7 +2,7 @@
 # Date created:        23 May 1999
 # Whom:                Stephen Kiernan <sk-ports@vegamuse.org>
 #
-# $FreeBSD: ports/sysutils/wminet/Makefile,v 1.9 2000/11/10 13:10:44 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wminet
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://www.neotokyo.org/illusion/downloads/
 
 MAINTAINER=	sk-ports@vegamuse.org
+COMMENT=	Window Maker dockable inetd monitor
 
 WRKSRC=		${WRKDIR}/wminet.app/wminet
 

@@ -2,7 +2,7 @@
 # Date created:		4 Mar 2001
 # Whom:			Martin Kammerhofer <mkamm@gmx.net>
 #
-# $FreeBSD: ports/sysutils/cvsweb-converters/Makefile,v 1.1 2001/03/15 13:36:29 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cvsweb-converters
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://www.sbox.TUGraz.at/home/d/dada/distfiles/
 
 MAINTAINER=	mkamm@gmx.net
+COMMENT=	Create hyperlinks to cvsweb from cvs[up] output or FreeBSD commitlogs
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/URI/Escape.pm:${PORTSDIR}/net/p5-URI \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Compress/Zlib.pm:${PORTSDIR}/archivers/p5-Compress-Zlib \

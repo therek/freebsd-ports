@@ -2,7 +2,7 @@
 # Date created:				December 28th 2000
 # Whom:	      				Alex Kapranoff <kapr@crosswinds.net>
 #
-# $FreeBSD: ports/russian/p5-Lingua-RU-Charset/Makefile,v 1.1 2000/12/31 05:07:46 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Lingua-RU-Charset
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Lingua
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kapr@crosswinds.net
+COMMENT=	Perl extension for detecting and converting various russian character sets
 
 PERL_CONFIGURE=	YES
 

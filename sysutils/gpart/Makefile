@@ -2,7 +2,7 @@
 # Date created:		29 Sep 1999
 # Whom:			Andrew Stevenson <andrew@ugh.net.au>
 #
-# $FreeBSD: ports/sysutils/gpart/Makefile,v 1.6 2000/12/08 15:02:54 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gpart
@@ -14,6 +14,7 @@ MASTER_SITES=	http://home.pages.de/~michab/gpart/ \
 MASTER_SITE_SUBDIR=	system/filesystems
 
 MAINTAINER=	andrew@ugh.net.au
+COMMENT=	Tries to recover lost partition tables and file systems
 
 USE_GMAKE=	yes
 MAN8=		gpart.8

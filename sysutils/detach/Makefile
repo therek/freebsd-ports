@@ -2,7 +2,7 @@
 # Date created:		2 November 1999
 # Whom:			arnej@pvv.org
 #
-# $FreeBSD: ports/sysutils/detach/Makefile,v 1.2 2000/04/09 19:07:29 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	detach
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.ntnu.no/pub/unix/utils/
 
 MAINTAINER=	arnej@pvv.org
+COMMENT=	Start a process detached from a terminal
 
 MAN1=		detach.1
 

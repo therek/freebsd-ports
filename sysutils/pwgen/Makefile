@@ -2,7 +2,7 @@
 # Date created:		22 July 2000
 # Whom:			Oddbjorn Steffensen <oddbjorn@tricknology.org>
 #
-# $FreeBSD: ports/sysutils/pwgen/Makefile,v 1.3 2000/10/13 20:29:13 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pwgen
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://www.tricknology.org/ports/
 
 MAINTAINER=	oddbjorn@tricknology.org
+COMMENT=	A simple password generator
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 

@@ -2,7 +2,7 @@
 # Date created:				5 June 2000
 # Whom:					walt
 #
-# $FreeBSD: ports/sysutils/monitord/Makefile,v 1.2 2000/06/20 09:30:28 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	monitord
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.erudition.net/pub/monitord/
 
 MAINTAINER=	walt@erudition.net
+COMMENT=	Service that restarts other standalone services if they terminate
 
 MAN8=		monitord.8
 

@@ -2,7 +2,7 @@
 # Date created:		January 2, 1998
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/security/p5-PGP-Sign/Makefile,v 1.16 2001/03/01 06:38:27 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	PGP-Sign
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	PGP
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	croyle@gelemna.org
+COMMENT=	Create detached PGP signatures for data
 
 PERL_CONFIGURE=	yes
 CONFIGURE_ARGS=	PGPS=${PGPS} PGPV=${PGPV} PGPSTYLE=${PGPSTYLE}

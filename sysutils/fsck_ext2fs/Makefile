@@ -2,7 +2,7 @@
 # Date Created:				16 Jul 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/sysutils/fsck_ext2fs/Makefile,v 1.1 2000/12/06 22:48:44 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fsck_ext2fs
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	alex
 
 MAINTAINER=	roman@xpert.com
+COMMENT=	Ext2fs filesystem consistency check and interactive repair
 
 MAN8=		fsck_ext2fs.8
 

@@ -2,7 +2,7 @@
 # Date created:		27 November 1998
 # Whom:			Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/sysutils/wmmon/Makefile,v 1.16 2000/07/10 01:32:55 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmmon
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://linux.tucows.com/files/x11/dock/
 
 MAINTAINER=	sk-ports@vegamuse.org
+COMMENT=	WindowMaker dockable system load/performance monitor
 
 WRKSRC=		${WRKDIR}/wmmon.app/wmmon
 

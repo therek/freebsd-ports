@@ -2,7 +2,7 @@
 # Date created:			  Sun May 3, 1999
 # Whom:                 	shipley@dis.org
 #
-# $FreeBSD: ports/security/slush/Makefile,v 1.10 2000/09/22 01:59:01 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	slush
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/kris/ \
 		ftp://www.dis.org/pub/Security/
 
 MAINTAINER=	shipley@dis.org
+COMMENT=	A telnet-like application which uses a secure SSL channel
 
 GNU_CONFIGURE=	yes
 

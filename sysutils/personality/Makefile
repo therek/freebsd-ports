@@ -2,7 +2,7 @@
 # Date created:		25 Mar 2001
 # Whom:			Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/personality/Makefile,v 1.1 2001/03/25 20:34:45 andreas Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	personality
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils
 DISTFILES=	# none
 
 MAINTAINER=	andreas_and_joe@tao.org.uk
+COMMENT=	System configuration management utility to alter system personality
 
 WRKSRC=		${WRKDIR}/src
 NO_BUILD=	YES

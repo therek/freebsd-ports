@@ -2,7 +2,7 @@
 # Date created:		11 February 1999
 # Whom:			Alex Le Heux
 #
-# $FreeBSD: ports/security/sslproxy/Makefile,v 1.9 2000/04/21 08:19:05 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sslproxy
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.obdev.at/pub/Products/sslproxy/
 DISTNAME=	sslproxy.2000_Jan_29
 
 MAINTAINER=	alexlh@funk.org
+COMMENT=	Proxies non-SSL request over an SSL connection
 
 USE_OPENSSL=	YES
 

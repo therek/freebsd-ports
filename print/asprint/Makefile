@@ -2,7 +2,7 @@
 # Date created:		16 August 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/print/asprint/Makefile,v 1.9 2000/04/09 17:49:15 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asprint
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	apps/asprint
 DISTNAME=	asprint
 
 MAINTAINER=	brett@peloton.runet.edu
+COMMENT=	A simple browser to allow a user to print
 
 USE_X_PREFIX=	yes
 ALL_TARGET=	asprint

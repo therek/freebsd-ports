@@ -2,7 +2,7 @@
 # Date created:		Sun Aug 13 12:36:14 CDT 1995
 # Whom:			erich@rrnet.com
 #
-# $FreeBSD: ports/shells/rc/Makefile,v 1.10 2000/04/09 18:34:01 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rc
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.star.le.ac.uk/~tjg/rc/release/ \
 		ftp://ftp.sys.utoronto.ca/pub/rc/
 
 MAINTAINER=	saken@hotel.rmta.org
+COMMENT=	A unix incarnation of the plan9 shell
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-history

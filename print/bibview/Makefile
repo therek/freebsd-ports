@@ -2,7 +2,7 @@
 # Date created:		21 July 1997
 # Whom:			dbader@eece.unm.edu
 #
-# $FreeBSD: ports/print/bibview/Makefile,v 1.8 2000/04/09 17:49:19 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bibview
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR= biblio/bibtex/utils/bibview-2.0
 
 MAINTAINER=	dbader@eece.unm.edu
+COMMENT=	Graphical interface for manipulating BibTeX bibliography databases
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/bibview-${PORTVERSION}

@@ -2,7 +2,7 @@
 # Date created:        21 September 1999
 # Whom:                Mike Muir <mmuir@es.co.nz>
 #
-# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.20 2001/04/22 16:55:23 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmhm
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	fenner
 
 MAINTAINER=	mmuir@cwnet.com
+COMMENT=	WindowMaker dockable hardware monitor for FreeBSD
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

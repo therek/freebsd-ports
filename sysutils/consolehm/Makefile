@@ -2,7 +2,7 @@
 # Date created:        27 September 1999
 # Whom:                Mike Muir <mmuir@es.co.nz>
 #
-# $FreeBSD: ports/sysutils/consolehm/Makefile,v 1.10 2001/01/16 17:32:31 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	consolehm
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	fenner
 
 MAINTAINER=	mmuir@cwnet.com
+COMMENT=	Console based hardware monitor for FreeBSD
 
 WRKSRC=		${WRKDIR}/consolehm/consolehm
 

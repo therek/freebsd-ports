@@ -2,7 +2,7 @@
 # Date created:			24 Jul, 1997
 # Whom:				kline
 #
-# $FreeBSD: ports/print/enscript-letter/Makefile,v 1.13 2001/05/22 18:16:59 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	enscript-${PAPERSIZE}
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	enscript
 DISTNAME=	enscript-${PORTVERSION}
 
 MAINTAINER=	kline@thought.org
+COMMENT=	ASCII-to-PostScript filter
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:		7 December 1998
 # Whom:			Rick & Samu
 #
-# $FreeBSD: ports/security/sniff/Makefile,v 1.5 2000/04/21 08:19:00 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		sniff
@@ -12,6 +12,7 @@ MASTER_SITES=		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	fenner
 
 MAINTAINER=		veraldi@cs.unibo.it
+COMMENT=	Program to sniff logins and passwords
 
 MAN1=			sniff.1
 HAS_CONFIGURE=		yes

@@ -2,7 +2,7 @@
 # Date created:		December 6, 1999
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/print/pstotext/Makefile,v 1.8 2001/07/13 03:40:26 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pstotext
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ob@breuninger.org
+COMMENT=	A PostScript to Text converter
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu
 

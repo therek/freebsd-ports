@@ -2,7 +2,7 @@
 # Date created:         7 Aug 1997
 # Whom:                 eserte@cs.tu-berlin.de
 #
-# $FreeBSD: ports/print/dvips2ascii/Makefile,v 1.5 2000/04/09 17:39:57 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dvips2ascii
@@ -11,6 +11,7 @@ CATEGORIES=	print
 MASTER_SITES=	http://www.de.freebsd.org/~eserte/distfiles/
 
 MAINTAINER=	eserte@cs.tu-berlin.de
+COMMENT=	PostScript (created by dvips) to ascii converter
 
 do-build:
 	${MV} ${WRKSRC}/dvips2ascii ${WRKSRC}/dvips2ascii.orig

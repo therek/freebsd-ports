@@ -2,7 +2,7 @@
 # Date created:		8 Jan 2000
 # Whom:			NAKAJI Hiroyuki <nakaji@tutrp.tut.ac.jp>
 #
-# $FreeBSD: ports/sysutils/pkg_remove/Makefile,v 1.3 2000/04/22 10:12:59 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pkg_remove
@@ -12,6 +12,7 @@ MASTER_SITES=	# none
 DISTFILES=	# none
 
 MAINTAINER=	nakaji@jp.freebsd.org
+COMMENT=	Utility to uninstall packages
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes

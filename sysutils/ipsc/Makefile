@@ -2,7 +2,7 @@
 # Date created:		31 October 1999
 # Whom:			Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/sysutils/ipsc/Makefile,v 1.10 2000/10/05 07:22:48 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ipsc
@@ -12,6 +12,7 @@ MASTER_SITES=	http://ipsc.sourceforge.net/dist/ipsc/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	jeremy@external.org
+COMMENT=	An IP Subnet Calculator
 
 BUILD_DEPENDS=	${PORTSDIR}/sysutils/prips/work/prips/prips.o:${PORTSDIR}/sysutils/prips:build
 

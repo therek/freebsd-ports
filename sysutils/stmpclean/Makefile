@@ -2,7 +2,7 @@
 # Date created:        4 August 1999
 # Whom:                shalunov
 #
-# $FreeBSD: ports/sysutils/stmpclean/Makefile,v 1.3 2000/04/09 19:08:34 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	stmpclean
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.mccme.ru/users/shalunov/
 
 MAINTAINER=	shalunov@mccme.ru
+COMMENT=	Remove old files from temporary directories
 
 MAN8=		stmpclean.8
 MANCOMPRESSED=	no
