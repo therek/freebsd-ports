@@ -2,15 +2,12 @@
 # Date created:				Thu May	3 22:04:21 BRT 2001
 # Whom:		Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/games/hlserver-svencoop/Makefile,v 1.1 2001/05/04 02:09:12 lioux Exp $
+# $FreeBSD: ports/games/hlserver-svencoop/Makefile,v 1.2 2001/05/08 20:26:59 lioux Exp $
 #
 
 PORTNAME=	svencoop
 PORTVERSION=	1.19.1
-MASTER_SITES=	http://www.smidge.com/files/sc/ \
-		http://www.cfgn.net/files/files/ \
-		http://ftp.ioerror.com/ftp/pub2/halflife/mods/svencoop/ \
-		ftp://ftp.ioerror.com/pub2/halflife/mods/svencoop/ \
+MASTER_SITES=	ftp://ftp.ioerror.com/pub2/halflife/mods/svencoop/ \
 		http://www.svencoop.com/files/
 DISTFILES=	svencoop19.tar.gz svencoop19_patch.tar.gz
 
