@@ -2,7 +2,7 @@
 # Date created:				March 30th 2001
 # Whom:					Alex Kapranoff <kapr@crosswinds.net>
 #
-# $FreeBSD: ports/www/p5-HTML-Clean/Makefile,v 1.2 2001/05/26 11:52:31 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HTML-Clean
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	kapr@crosswinds.net
+MAINTAINER=	ports@freebsd.org
 
 PERL_CONFIGURE=	yes
 
