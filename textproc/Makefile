@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.223 2001/08/06 12:15:37 ijliao Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.224 2001/08/06 12:52:06 ijliao Exp $
 #
 
     SUBDIR += agrep
@@ -103,6 +103,7 @@
     SUBDIR += p5-String-Strip
     SUBDIR += p5-Text-Autoformat
     SUBDIR += p5-Text-Bind
+    SUBDIR += p5-Text-CSV
     SUBDIR += p5-Text-CSV_XS
     SUBDIR += p5-Text-DoubleMetaphone
     SUBDIR += p5-Text-FillIn
