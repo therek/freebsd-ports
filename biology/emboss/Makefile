@@ -2,11 +2,11 @@
 # Date created:		31 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/emboss/Makefile,v 1.2 2000/08/12 16:15:47 nbm Exp $
+# $FreeBSD: ports/biology/emboss/Makefile,v 1.3 2000/08/21 10:07:20 sobomax Exp $
 #
 
 PORTNAME=	emboss
-PORTVERSION=	1.1.0
+PORTVERSION=	1.4.0
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.uk.embnet.org/pub/EMBOSS/
 DISTNAME=	EMBOSS-${PORTVERSION}
@@ -22,20 +22,20 @@ USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/gd" \
 		LIBS="-L${LOCALBASE}/lib"
 
+DOC_DIRS= doc/manuals doc/tutorials doc/programs/text doc/programs/html
+
+post-patch:
+.for DIR in ${DOC_DIRS}
+	@ ${PERL} -pi.orig -e \
+	  "s#share/\\$$\(PACKAGE\)/doc#share/doc/\\$$\(PACKAGE\)#" \
+	  ${WRKSRC}/${DIR}/Makefile.in
+.endfor
+
 post-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/emboss/acd/emboss.default \
 	  ${PREFIX}/etc/emboss.default.sample
 .if !defined(BATCH)
 	@ ${CAT} ${PKGMESSAGE}
 .endif
-
-DOC_DIRS= doc/manuals doc/tutorials doc/programs/text doc/programs/html
-
-post-patch:
-.for DIR in ${DOC_DIRS}
-	@perl -pi.orig -e \
-		"s#share/\\$$\(PACKAGE\)/doc#share/doc/\\$$\(PACKAGE\)#" \
-		${WRKSRC}/${DIR}/Makefile.in
-.endfor
 
 .include <bsd.port.mk>
