@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.339 2004/02/15 01:24:49 dougb Exp $
+# $FreeBSD: ports/MOVED,v 1.340 2004/02/17 10:54:40 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -814,3 +814,5 @@ mail/mozilla-thunderbird|mail/thunderbird|2004-02-14|Name change to fit the proj
 devel/linux-p4v|devel/p4v|2004-02-14|FreeBSD native version of port now available
 mail/p5-Mail-SpamAssassin-snapshot||2004-02-14|No longer needed
 lang/squeak2|lang/squeak3|2004-02-17|Outdated, obsolete and no longer needed
+www/mozilla-gtk2|www/mozilla|2004-02-17|GTK2 mozilla is now the default
+www/mozilla-devel-gtk2|www/mozilla-devel|2004-02-17|GTK2 mozilla is now the default
