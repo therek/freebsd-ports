@@ -2,11 +2,11 @@
 # Date created:				April 18th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/mrtg/Makefile,v 1.29 2000/12/12 21:36:44 demon Exp $
+# $FreeBSD: ports/net/mrtg/Makefile,v 1.30 2000/12/13 12:10:28 demon Exp $
 #
 
 PORTNAME=	mrtg
-PORTVERSION=	2.9.6
+PORTVERSION=	2.9.7
 CATEGORIES=	net
 MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/mrtg/pub/ \
 		${MASTER_SITE_RINGSERVER}
