@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.334 2004/02/11 01:20:08 maho Exp $
+# $FreeBSD: ports/MOVED,v 1.335 2004/02/11 07:18:08 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -809,3 +809,4 @@ mail/ksig|misc/kdeaddons3|2004-02-09|ksig is now included in kdeaddons
 converters/ktnef|deskutils/kdepim3|2004-02-09|ktnef is now included in kdepim
 lang/g95|lang/gfortran|2004-02-11|change to appropreate name
 www/mozilla-firebird|www/firefox|2004-02-11|Project changed names
+x11-wm/mosfet-liquid||2003-02-13|obsolete
