@@ -2,7 +2,7 @@
 # Date created:				2 July 2000
 # Whom:					Kelly Yancey <kbyanc@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/cclient/Makefile,v 1.8 2001/04/05 03:21:37 nsayer Exp $
+# $FreeBSD: ports/mail/cclient/Makefile,v 1.9 2001/04/08 19:50:29 mi Exp $
 #
 
 PORTNAME=	cclient
@@ -18,11 +18,9 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	ports@freebsd.org
 
 INSTALLS_SHLIB=	yes
-.if defined(WITH_SSL)
-ALL_TARGET=	bsf SSLTYPE=unix
-.else
 ALL_TARGET=	bsf
-
+.if defined(WITH_SSL)
+MAKE_ARGS+=	SSLTYPE=unix
 USE_OPENSSL=	yes
 .endif
 
