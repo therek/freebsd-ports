@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache2/pkg-plist,v 1.64 2004/07/01 05:54:56 clement Exp $
+@comment $FreeBSD: ports/www/apache2/pkg-plist,v 1.65 2004/07/02 13:47:40 clement Exp $
 @unexec if cmp -s %D/etc/apache2/highperformance.conf %D/etc/apache2/highperformance-std.conf; then rm -f %D/etc/apache2/highperformance.conf; fi
 etc/apache2/highperformance-std.conf
 @exec [ -f %B/highperformance.conf ] || cp %B/%f %B/highperformance.conf
@@ -1653,8 +1653,6 @@ share/apache2/build/special.mk
 %%PORTDOCS%%%%DOCSDIR%%/vhosts/name-based.xml.ja
 %%PORTDOCS%%%%DOCSDIR%%/vhosts/name-based.xml.ko
 %%PORTDOCS%%%%DOCSDIR%%/vhosts/name-based.xml.meta
-%%PORTDOCS%%@dirrm share/nls/en_US.US-ASCII
-%%PORTDOCS%%@dirrm share/nls/POSIX
 %%PORTDOCS%%@dirrm %%DOCSDIR%%/vhosts
 %%PORTDOCS%%@dirrm %%DOCSDIR%%/style/xsl/util
 %%PORTDOCS%%@dirrm %%DOCSDIR%%/style/xsl
