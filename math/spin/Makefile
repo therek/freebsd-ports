@@ -2,16 +2,16 @@
 # Date created:		Oct 23, 1997
 # Whom:			jhanna@home.com
 #
-# $FreeBSD: ports/math/spin/Makefile,v 1.11 2000/04/14 07:20:41 asami Exp $
+# $FreeBSD: ports/math/spin/Makefile,v 1.12 2000/05/14 05:40:50 billf Exp $
 #
 
 PORTNAME=	spin
-PORTVERSION=	3.39
+PORTVERSION=	3.3.10
 CATEGORIES=	math
 MASTER_SITES=	ftp://netlib.bell-labs.com/netlib/spin/ \
 		ftp://www.netlib.org/spin/ \
 		ftp://ftp.freesoftware.com/pub/netlib/spin/
-DISTFILES=	spin339.tar.gz html.tar.gz
+DISTFILES=	spin3310.tar.gz html.tar.gz
 
 MAINTAINER=	jhanna@home.com
 
@@ -28,9 +28,9 @@ pre-build:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/spin ${PREFIX}/bin
-	${INSTALL_SCRIPT} ${WRKDIR}/Xspin3.3/xspin338.tcl ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKDIR}/Xspin3.3/xspin3310.tcl ${PREFIX}/bin
 	${RM} -f ${PREFIX}/bin/xspin
-	${LN} -s ${PREFIX}/bin/xspin338.tcl ${PREFIX}/bin/xspin
+	${LN} -s ${PREFIX}/bin/xspin3310.tcl ${PREFIX}/bin/xspin
 
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/spin/Doc
