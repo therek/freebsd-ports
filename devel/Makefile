@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.310 2000/07/07 13:27:22 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.311 2000/07/07 14:02:30 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -37,7 +37,6 @@
     SUBDIR += crossgo32-djgpp2
     SUBDIR += crossgo32-djgpp2-pdcurses
     SUBDIR += crossm68k
-    SUBDIR += crosssco
     SUBDIR += cs
     SUBDIR += cscope
     SUBDIR += cssc
@@ -224,7 +223,6 @@
     SUBDIR += robodoc
     SUBDIR += rpc2
     SUBDIR += rvm
-    SUBDIR += scogdb
     SUBDIR += sdcc
     SUBDIR += sdl
     SUBDIR += sdl-devel
