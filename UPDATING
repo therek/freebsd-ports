@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20041214:
+  AFFECTS: users of net/freenet6
+  AUTHOR: edwin@FreeBSD.org
+
+  The FreeNet6 Service must now be enabled / disabled in rc.conf:
+    freenet6_enable="YES"
+
 20041213:
   AFFECTS: users of security/cryptplug, deskutils/kdepim3
   AUTHOR: lofi@freebsd.org
@@ -1238,4 +1245,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.114 2004/12/13 20:32:21 lofi Exp $
+$FreeBSD: ports/UPDATING,v 1.115 2004/12/13 20:35:39 lofi Exp $
