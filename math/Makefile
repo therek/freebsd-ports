@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.107 2001/01/04 00:09:15 will Exp $
+# $FreeBSD: ports/math/Makefile,v 1.108 2001/02/01 13:25:14 knu Exp $
 #
 
     SUBDIR += PDL
@@ -76,6 +76,7 @@
     SUBDIR += rcalc
     SUBDIR += ruby-bigfloat
     SUBDIR += ruby-bitvector
+    SUBDIR += ruby-gnuplot
     SUBDIR += ruby-narray
     SUBDIR += sc
     SUBDIR += scigraphica
