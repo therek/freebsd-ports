@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.96 1999/09/19 14:37:35 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.97 2000/01/02 17:17:28 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -51,7 +51,7 @@ Y2K=		http://www.php.net/y2k.php3
 
 PHP_DISTDIR=	version4/downloads
 
-VERSION_APACHE=	1.3.9
+VERSION_APACHE=	1.3.11
 VERSION_PHP=	4.0b2
 
 NO_LATEST_LINK=	yes
