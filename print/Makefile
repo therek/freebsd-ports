@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.98 1999/09/10 08:32:24 dirk Exp $
+# $FreeBSD: ports/print/Makefile,v 1.99 1999/11/01 04:08:04 steve Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -42,6 +42,7 @@
     SUBDIR += html2latex
     SUBDIR += html2ps-a4
     SUBDIR += html2ps-letter
+    SUBDIR += hyperlatex
     SUBDIR += ifhp
     SUBDIR += jadetex
     SUBDIR += klyx
@@ -57,6 +58,7 @@
     SUBDIR += mp-letter
     SUBDIR += mpage
     SUBDIR += musixtex
+    SUBDIR += nenscript
     SUBDIR += offix-printer
     SUBDIR += pbm2ppa
     SUBDIR += pclprint
