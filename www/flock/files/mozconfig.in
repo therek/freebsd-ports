@@ -1,5 +1,5 @@
 # .mozconfig.in -*-shell-script-*-
-# $FreeBSD: ports/www/phoenix/files/mozconfig.in,v 1.2 2002/10/22 09:26:56 alane Exp $
+# $FreeBSD: ports/www/phoenix/files/mozconfig.in,v 1.3 2002/10/22 11:04:48 alane Exp $
 ######################################################################
 # standard opts from README
 export MOZ_PHOENIX=1
@@ -29,6 +29,7 @@ ac_add_options --with-system-mng=@LOCALBASE@
 ######################################################################
 # enable features
 ac_add_options --with-pthreads
+ac_add_options --enable-xft
 ac_add_options --enable-crypto
 ac_add_options --enable-xinerama
 ac_add_options --enable-reorder
