@@ -2,7 +2,7 @@
 # Date created:		12 December 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/ftp/curl/Makefile,v 1.19 2000/09/04 00:56:41 kris Exp $
+# $FreeBSD: ports/ftp/curl/Makefile,v 1.20 2000/09/22 01:58:53 kris Exp $
 #
 
 PORTNAME=	curl
@@ -26,8 +26,6 @@ SHLIB_VER=	0
 MAKE_ENV=	SHLIB_VER="${SHLIB_VER}"
 PLIST_SUB=	SHLIB_VER="${SHLIB_VER}"
 
-.include <bsd.port.pre.mk>
-
 .if defined(WITH_SSL)
 USE_OPENSSL=	YES
 CONFIGURE_ENV+=	CPPFLAGS='-I${OPENSSLINC} -I${OPENSSLINC}/openssl' \
@@ -46,4 +44,4 @@ post-configure:
 	${WRKSRC}/${x}.pre_sed > ${WRKSRC}/${x}
 .endfor
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
