@@ -1,6 +1,6 @@
 # localized makefile
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice-1.1/files/Makefile.localized,v 1.5 2005/02/15 06:21:59 maho Exp $
+# $FreeBSD: ports/editors/openoffice-1.1/files/Makefile.localized,v 1.6 2005/02/21 09:50:18 maho Exp $
 
 ################################################################
 .if defined(LOCALIZED_LANG)
