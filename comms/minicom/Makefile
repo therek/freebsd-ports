@@ -3,11 +3,12 @@
 # Date created:			  Fri Dec 01, 1995
 # Whom:				  obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/comms/minicom/Makefile,v 1.30 2000/09/25 12:21:20 asami Exp $
+# $FreeBSD: ports/comms/minicom/Makefile,v 1.31 2000/09/27 10:16:21 asami Exp $
 #
 
 PORTNAME=	minicom
 PORTVERSION=	1.83.1
+PORTREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SUNSITE}  \
 		http://www.pp.clinet.fi/~walker/mc-dev/  \
