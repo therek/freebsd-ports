@@ -2,7 +2,7 @@
 # Date created:		Feb, 8, 1998
 # Whom:			Nate Williams <nate@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jdk/Makefile,v 1.31 2000/05/31 09:44:15 sobomax Exp $
+# $FreeBSD: ports/java/jdk/Makefile,v 1.32 2000/06/12 12:55:45 sobomax Exp $
 #
 
 PORTNAME=	jdk
@@ -33,6 +33,7 @@ DISTFILES=	jdk${JDK_VERSION}_ELF.V1999-11-9.tar.gz
 .endif
 
 do-install:
+	@${RM} -f ${WRKSRC}/include/freebsd/typedefs_md.h.orig
 	${MKDIR} ${PREFIX}/jdk${JDK_VERSION}
 	(cd ${WRKSRC} && ${TAR} -c -f - .) \
 		| (cd ${PREFIX}/jdk${JDK_VERSION} && ${TAR} --unlink -x -f -)
