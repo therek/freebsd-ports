@@ -2,11 +2,11 @@
 # Date created:         Sun Jul 15 13:19:01 CEST 2001
 # Whom:                 se
 #
-# $FreeBSD: ports/ftp/jftpgw/Makefile,v 1.1 2001/07/15 13:30:19 se Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jftpgw
-PORTVERSION=	0.0.13a
+PORTVERSION=	0.0.13g
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.mcknight.de/jftpgw/
 
@@ -16,7 +16,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-confpath=${PREFIX}/etc \
 		--with-logpath=/var/log \
 		--enable-crypt \
-#		--enable-sftp
+		--enable-sftp
 
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/jftpgw ${PREFIX}/sbin/
