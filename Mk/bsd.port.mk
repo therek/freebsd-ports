@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.442 2003/03/12 00:28:17 anholt Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.443 2003/03/19 06:26:14 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3011,8 +3011,8 @@ _PATCH_DEP=		extract
 _PATCH_SEQ=		patch-message patch-depends pre-patch pre-patch-script \
 				do-patch post-patch post-patch-script
 _CONFIGURE_DEP=	patch
-_CONFIGURE_SEQ=	configure-message patch-libtool build-depends lib-depends \
-				misc-depends pre-configure pre-configure-script \
+_CONFIGURE_SEQ=	build-depends lib-depends misc-depends configure-message \
+				patch-libtool pre-configure pre-configure-script \
 				do-configure post-configure post-configure-script
 _BUILD_DEP=		configure
 _BUILD_SEQ=		build-message pre-build pre-build-script do-build \
