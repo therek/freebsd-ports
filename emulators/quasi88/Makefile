@@ -2,11 +2,11 @@
 # Date created:		22 May 1999
 # Whom:				Nishika <nishika@cheerful.com>
 #
-# $FreeBSD: ports/emulators/quasi88/Makefile,v 1.6 2000/10/07 21:49:41 asami Exp $
+# $FreeBSD: ports/emulators/quasi88/Makefile,v 1.7 2001/02/14 05:43:00 lioux Exp $
 #
 
 PORTNAME=	quasi88
-PORTVERSION=	0.3.2
+PORTVERSION=	0.4.3
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.117.ne.jp/~show/pc8801/
 EXTRACT_SUFX=	.tgz
@@ -16,7 +16,7 @@ MAINTAINER=	nishika@cheerful.com
 USE_X_PREFIX=	yes
 USE_XLIB=	yes
 USE_GMAKE=	yes
-DATAFILES=	FAQ FORMAT GET-IMAGE HELP HISTORY LIST MANUAL QUASI88
+DATAFILES=	FAQ FORMAT GET-IMAGE HISTORY MANUAL QUASI88 _quasi88rc
 
 .if !defined(WITH_SOUND)
 pre-everything:
