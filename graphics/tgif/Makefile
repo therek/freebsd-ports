@@ -3,7 +3,7 @@
 # Date created:         30 Jan 1999
 # Whom:                 bmc@WillsCreek.COM
 #
-# $FreeBSD: ports/graphics/tgif/Makefile,v 1.21 1999/10/10 23:23:06 steve Exp $
+# $FreeBSD: ports/graphics/tgif/Makefile,v 1.22 1999/11/26 23:12:34 billf Exp $
 #
 
 DISTNAME=	tgif-4.1.25
@@ -13,7 +13,8 @@ MASTER_SITES=	ftp://bourbon.cs.umd.edu/pub/tgif/ \
 
 MAINTAINER=	bmc@WillsCreek.COM
 
-RUN_DEPENDS=	giftopnm:${PORTSDIR}/graphics/netpbm
+RUN_DEPENDS=	giftopnm:${PORTSDIR}/graphics/netpbm \
+		pnmtopng:${PORTSDIR}/graphics/pnmtopng
 
 USE_IMAKE=	yes
 MAN1=		tgif.1
