@@ -2,7 +2,7 @@
 # Date created:		November 28 1999
 # Whom:			Stephen Montgomery-Smith <stephen@math.missouri.edu>
 #
-# $FreeBSD: ports/textproc/hevea/Makefile,v 1.6 2001/02/05 16:34:40 olgeni Exp $
+# $FreeBSD: ports/textproc/hevea/Makefile,v 1.7 2001/06/27 06:07:14 dwcjr Exp $
 #
 
 PORTNAME=		hevea
@@ -19,6 +19,8 @@ EXTRACT_ONLY=		${PORTNAME}-${PORTVERSION}.tar.gz
 MAINTAINER=		stephen@math.missouri.edu
 
 BUILD_DEPENDS=		ocamlc:${PORTSDIR}/lang/ocaml
+
+PLIST_SUB=		HEVEAVERSION=${PORTVERSION}
 
 TEX_DIR=		${PREFIX}/share/texmf/tex/latex
 TEXHASH=		${PREFIX}/bin/texhash
