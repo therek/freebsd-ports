@@ -2,7 +2,7 @@
 # Date created:		27 June 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/cocoon/Makefile,v 1.13 2001/02/01 08:18:47 kuriyama Exp $
+# $FreeBSD: ports/textproc/cocoon/Makefile,v 1.14 2001/02/05 16:34:29 olgeni Exp $
 #
 
 PORTNAME=	cocoon
@@ -11,7 +11,7 @@ CATEGORIES=	textproc www java
 MASTER_SITES=	http://xml.apache.org/cocoon/dist/
 DISTNAME=	Cocoon-${PORTVERSION}
 
-MAINTAINER=	kuriyama@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/javac:${PORTSDIR}/java/jdk
 RUN_DEPENDS=	${LOCALBASE}/libexec/apache/mod_jserv.so:${PORTSDIR}/www/apache-jserv
