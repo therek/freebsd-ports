@@ -2,7 +2,7 @@
 # Date created:		7 July 2000 1:05 MSD
 # Whom:			Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/russian/apache13-modssl/Makefile,v 1.3 2000/07/22 10:47:53 alex Exp $
+# $FreeBSD: ports/russian/apache13-modssl/Makefile,v 1.4 2000/08/06 14:09:48 nbm Exp $
 #
 
 PORTNAME=	apache+mod_ssl
@@ -10,6 +10,7 @@ PORTVERSION= 	${VERSION_APACHE}+${RA_VERSION}+${VERSION_MODSSL}
 CATEGORIES=	russian www security
 MASTER_SITES=	ftp://ftp.lexa.ru/pub/apache-rus/ \
 		ftp://ftp.lexa.ru/pub/apache-rus/old-versions/ \
+		ftp://ftp.chg.ru/pub/WWW/httpd/apache-rus/ \
 		http://www.modssl.org/source/ \
 		ftp://ftp.modssl.org/source/ \
 		ftp://ftp.pca.dfn.de/pub/tools/net/mod_ssl/ \
@@ -34,7 +35,7 @@ USE_OPENSSL=	RSA
 
 VERSION_APACHE=	1.3.12
 VERSION_MODSSL=	2.6.5
-RA_VERSION=	29.6
+RA_VERSION=	29.7
 
 USE_PERL5=	yes
 HAS_CONFIGURE=	yes
