@@ -2,14 +2,16 @@
 # Date created:				14 June 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libj2dplot/Makefile,v 1.3 2000/10/03 05:12:46 lioux Exp $
+# $FreeBSD: ports/x11-toolkits/libj2dplot/Makefile,v 1.4 2001/01/16 19:08:37 will Exp $
 #
 
 PORTNAME=	libj2dplot
 PORTVERSION=	0.6.5
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/glove/source/ \
-		ftp://ftp.newplanetsoftware.com/pub/thx/source/
+		ftp://ftp.newplanetsoftware.com/pub/thx/source/ \
+		ftp://gd.tuwien.ac.at/hci/jx/source-1.5.3/ \
+		ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/
 DISTNAME=	J2DPlot_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org

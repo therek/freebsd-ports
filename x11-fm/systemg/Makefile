@@ -2,13 +2,14 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-fm/systemg/Makefile,v 1.3 2000/10/03 05:12:44 lioux Exp $
+# $FreeBSD: ports/x11-fm/systemg/Makefile,v 1.4 2001/01/16 19:08:36 will Exp $
 #
 
 PORTNAME=	systemg
 PORTVERSION=	1.0.1
 CATEGORIES=	x11-fm
-MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/systemg/source/
+MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/systemg/source/ \
+		ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/
 DISTNAME=	SystemG_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org

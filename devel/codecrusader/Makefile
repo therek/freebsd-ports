@@ -2,17 +2,14 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/devel/codecrusader/Makefile,v 1.15 2001/01/16 17:30:15 sobomax Exp $
+# $FreeBSD: ports/devel/codecrusader/Makefile,v 1.16 2001/01/16 19:08:32 will Exp $
 #
 
 PORTNAME=	code_crusader
 PORTVERSION=	2.1.4
 PORTREVISION=	1
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/jx/source-1.5.3/ \
-		ftp://ftp.newplanetsoftware.com/pub/jcc/source/ \
-		ftp://ftp.newplanetsoftware.com/pub/medic/source/ \
-		ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/
+MASTER_SITES=	ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/
 DISTNAME=	${PORTNAME}_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org

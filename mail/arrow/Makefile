@@ -2,13 +2,14 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/arrow/Makefile,v 1.5 2001/01/16 17:31:17 sobomax Exp $
+# $FreeBSD: ports/mail/arrow/Makefile,v 1.6 2001/01/16 19:08:33 will Exp $
 #
 
 PORTNAME=	arrow
 PORTVERSION=	1.0.8
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/arrow/source/
+MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/arrow/source/ \
+		ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/
 DISTNAME=	Arrow_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org

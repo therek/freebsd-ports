@@ -2,14 +2,16 @@
 # Date created:				14 June 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libjparser/Makefile,v 1.3 2000/10/03 05:12:47 lioux Exp $
+# $FreeBSD: ports/x11-toolkits/libjparser/Makefile,v 1.4 2001/01/16 19:08:38 will Exp $
 #
 
 PORTNAME=	libjparser
 PORTVERSION=	1.1.8
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/glove/source/ \
-		ftp://ftp.newplanetsoftware.com/pub/thx/source/
+		ftp://ftp.newplanetsoftware.com/pub/thx/source/ \
+		ftp://gd.tuwien.ac.at/hci/jx/source-1.5.3/ \
+		ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/
 DISTNAME=	JParser_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org

@@ -2,13 +2,14 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/deskutils/notebook/Makefile,v 1.4 2001/01/16 17:30:13 sobomax Exp $
+# $FreeBSD: ports/deskutils/notebook/Makefile,v 1.5 2001/01/16 19:08:32 will Exp $
 #
 
 PORTNAME=	notebook
 PORTVERSION=	1.0.1
 CATEGORIES=	deskutils
-MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/notebook/source/
+MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/notebook/source/ \
+		ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/
 DISTNAME=	Notebook_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org

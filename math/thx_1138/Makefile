@@ -2,13 +2,14 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/math/thx_1138/Makefile,v 1.4 2001/01/16 17:31:30 sobomax Exp $
+# $FreeBSD: ports/math/thx_1138/Makefile,v 1.5 2001/01/16 19:08:34 will Exp $
 #
 
 PORTNAME=	thx_1138
 PORTVERSION=	1.0.5
 CATEGORIES=	math
-MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/thx/source/
+MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/thx/source/ \
+		ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/
 DISTNAME=	${PORTNAME:S,_,-,}_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org

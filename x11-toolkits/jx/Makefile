@@ -2,16 +2,15 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/x11-toolkits/jx/Makefile,v 1.11 2001/01/16 19:08:37 will Exp $
+# $FreeBSD: ports/x11-toolkits/jx/Makefile,v 1.12 2001/02/14 04:12:50 lioux Exp $
 #
 
 PORTNAME=	JX
 PORTVERSION=	1.5.3
 PORTREVISION=	1
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/jx/source-1.5.3/ \
-		ftp://ftp.newplanetsoftware.com/pub/jcc/source/ \
-		ftp://ftp.newplanetsoftware.com/pub/medic/source/ \
+MASTER_SITES=	http://www.ibiblio.org/pub/Linux/libs/X/c++libs/ \
+		ftp://gd.tuwien.ac.at/hci/jx/source-1.5.3/ \
 		ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/
 DISTNAME=	${PORTNAME}_source-${PORTVERSION}
 
