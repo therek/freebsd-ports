@@ -1,19 +1,19 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap2/files/slapd.sh,v 1.2 2002/09/01 17:06:10 dwcjr Exp $
+# $FreeBSD: ports/net/openldap20/files/slapd.sh,v 1.3 2002/09/19 21:49:55 ijliao Exp $
 
 slapd_program=@@PREFIX@@/libexec/slapd
 
 # Uncomment one of the following:
 #
 # IPv4 Only
-#slapd_args='-h ldap://0.0.0.0;'
+#slapd_args='-h ldap://0.0.0.0'
 #
 # IPv6 and IPv4
-#slapd_ags='-h "ldap://[::] ldap://0.0.0.0";'
+#slapd_ags='-h "ldap://[::] ldap://0.0.0.0"'
 #
 # IPv6 Only
-#slapd_args='-h ldap://[::];'
+#slapd_args='-h ldap://[::]'
 #
 #
 slapd_args=
@@ -24,7 +24,7 @@ case "$1" in
 start)
     if [ -x $slapd ]; then
 	echo -n ' slapd'
-	${slapd_program} ${slapd_args}
+	eval ${slapd_program} ${slapd_args}
 
     fi
     ;;
