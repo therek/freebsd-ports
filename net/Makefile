@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.415 2000/10/23 15:24:16 imura Exp $
+# $FreeBSD: ports/net/Makefile,v 1.416 2000/10/24 02:18:57 jeh Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -264,6 +264,7 @@
     SUBDIR += ttt
     SUBDIR += tund
     SUBDIR += ucd-snmp
+    SUBDIR += unison
     SUBDIR += vnc
     SUBDIR += vtun
     SUBDIR += wais
