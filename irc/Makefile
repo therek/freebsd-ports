@@ -1,4 +1,4 @@
-# $FreeBSD: ports/irc/Makefile,v 1.34 2001/06/16 14:22:15 joe Exp $
+# $FreeBSD: ports/irc/Makefile,v 1.35 2001/08/18 23:06:54 ijliao Exp $
 #
 
     SUBDIR += bitchx
@@ -39,6 +39,7 @@
     SUBDIR += scrollz-doc
     SUBDIR += sic
     SUBDIR += sirc
+    SUBDIR += sircd
     SUBDIR += slirc
     SUBDIR += tirc
     SUBDIR += tircproxy
