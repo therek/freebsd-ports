@@ -2,11 +2,11 @@
 # Date created:		13-Aug-2000
 # Whom:			Leo Kim <leo@florida.sarang.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/p5-MP3-ID3v1Tag/Makefile,v 1.1 2000/09/16 04:44:33 will Exp $
 #
 
 PORTNAME=	MP3-ID3v1Tag
-PORTVERSION=	1.10
+PORTVERSION=	1.11
 CATEGORIES=	audio perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=MP3
@@ -14,11 +14,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	leo@florida.sarang.net
 
-USE_PERL5=	YES
-MAN3=		MP3::ID3v1Tag.3 MPEG::ID3v1Tag.3
-MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
-do-configure:
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+MAN3=		MP3::ID3v1Tag.3
+MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 .include <bsd.port.mk>
