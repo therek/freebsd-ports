@@ -3,7 +3,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql/Makefile,v 1.48 1999/10/10 22:06:27 cpiazza Exp $
+# $FreeBSD: ports/databases/postgresql/Makefile,v 1.49 1999/11/08 20:43:39 andreas Exp $
 #
 
 DISTNAME=	postgresql-6.5.2
@@ -12,7 +12,6 @@ MASTER_SITES=	ftp://ftp.postgresql.org/pub/ \
 		ftp://ftp.iodynamics.com/pub/mirror/postgresql/ \
 		ftp://ftp.de.postgresql.org/ \
 		ftp://ftp.digex.net/pub/packages/database/postgresql/ \
-		ftp://ftp.incoma.ru/pub/unix/postgresql/ \
 		ftp://ftp.sunet.se/pub/unix/databases/relational/postgresql/
 
 MAINTAINER=	andreas@FreeBSD.org
