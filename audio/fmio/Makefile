@@ -2,16 +2,15 @@
 # Date created:				10 Feb 2001
 # Whom:					Den Ivanov <d.s.div@bigfoot.com>
 #
-# $FreeBSD: ports/audio/fmio/Makefile,v 1.2 2001/05/27 18:11:35 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fmio
-PORTVERSION=	1.1.4
-PORTREVISION=	1
+PORTVERSION=	1.2.18
 CATEGORIES=	audio
 MASTER_SITES=	http://www.jumbo.narod.ru/src/fmio/
 
-MAINTAINER=	d.s.div@bigfoot.com
+MAINTAINER=	kunia@istc.kiev.ua
 
 MAN1=		fmio.1
 MANCOMPRESSED=	no
