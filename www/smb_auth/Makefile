@@ -2,7 +2,7 @@
 # Date created:				13 January 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/smb_auth/Makefile,v 1.4 2000/11/01 15:51:10 sobomax Exp $
+# $FreeBSD: ports/www/smb_auth/Makefile,v 1.5 2001/02/05 15:33:47 olgeni Exp $
 #
 
 PORTNAME=	smb_auth
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.hacom.nl/~richard/software/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/sbin/squid:${PORTSDIR}/www/squid22 \
+RUN_DEPENDS=	${LOCALBASE}/sbin/squid:${PORTSDIR}/www/squid24 \
 		${LOCALBASE}/sbin/smbd:${PORTSDIR}/net/samba
 
 ALL_TARGET=	smb_auth
