@@ -3,7 +3,7 @@
 # Date created:			10 June 1997
 # Whom:				Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.41 1999/09/07 10:45:22 steve Exp $
+# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.42 1999/09/18 03:11:59 steve Exp $
 #
 
 DISTNAME=	enlightenment-0.15.5
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://www.rasterman.com/pub/enlightenment/enlightenment/ \
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	esd.1:${PORTSDIR}/audio/esound \
+LIB_DEPENDS=	esd.2:${PORTSDIR}/audio/esound \
 		Fnlib.0:${PORTSDIR}/graphics/fnlib \
 		gif.5:${PORTSDIR}/graphics/giflib \
 		Imlib.4:${PORTSDIR}/graphics/imlib \
