@@ -3,7 +3,7 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-emacs/Makefile,v 1.11 1999/10/16 06:01:24 shige Exp $
+# $FreeBSD: ports/editors/semi-emacs/Makefile,v 1.12 1999/10/18 05:25:20 kuriyama Exp $
 #
 
 DISTNAME=	semi-${SEMI_VER}
@@ -107,6 +107,11 @@ post-build:
 	@${MAKE} info-build
 .endif
 
+pre-install:
+.if defined(EMACS_PACKAGESDIR) && defined(EMACS_PACKAGES_SUBDIRS)
+	@${MAKE} mkdir-site-packages
+.endif
+
 post-install:
 	@${MKDIR} -p ${PREFIX}/share/semi
 	@${TOUCH} ${PREFIX}/share/semi/${SEMI_COOKIE}
@@ -155,6 +160,11 @@ info-build-by-emacs:
 		${MAKEINFO_EMACS} $${i} ${MAKEINFO_EMACS_FLAGS} || ${TRUE} ; \
 	done)
 .endif
+
+mkdir-site-packages:
+	@(for i in ${EMACS_PACKAGES_SUBDIRS} ; do \
+		${MKDIR} ${PREFIX}/${EMACS_PACKAGESDIR}/$${i} ; \
+	done)
 
 doc-install:
 	@${MKDIR} ${PREFIX}/${SEMIDOCDIR}

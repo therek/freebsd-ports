@@ -3,7 +3,7 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/flim-emacs-current/Makefile,v 1.10 1999/10/11 06:15:13 shige Exp $
+# $FreeBSD: ports/editors/flim-emacs-current/Makefile,v 1.11 1999/10/14 15:11:02 shige Exp $
 #
 
 DISTNAME=	flim-${FLIM_VER}
@@ -103,6 +103,11 @@ post-build:
 	@${MAKE} info-build
 .endif
 
+pre-install:
+.if defined(EMACS_PACKAGESDIR) && defined(EMACS_PACKAGES_SUBDIRS)
+	@${MAKE} mkdir-site-packages
+.endif
+
 post-install:
 # install package-cookie
 	@${MKDIR} -p ${PREFIX}/share/flim
@@ -152,6 +157,11 @@ info-build-by-emacs:
 		${MAKEINFO_EMACS} $${i} ${MAKEINFO_EMACS_FLAGS} || ${TRUE} ; \
 	done)
 .endif
+
+mkdir-site-packages:
+	@(for i in ${EMACS_PACKAGES_SUBDIRS} ; do \
+		${MKDIR} ${PREFIX}/${EMACS_PACKAGESDIR}/$${i} ; \
+	done)
 
 doc-install:
 	@${MKDIR} ${PREFIX}/${FLIMDOCDIR}
