@@ -2,11 +2,12 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.81 2001/09/05 20:12:17 knu Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.82 2001/10/02 22:41:35 jim Exp $
 #
 
 PORTNAME=		xchat
 PORTVERSION=		1.8.4
+PORTREVISION=		1
 CATEGORIES+=		irc gnome ipv6
 MASTER_SITES=		http://xchat.org/files/source/1.8/ \
 			http://xchat.linuxpower.org/files/source/1.8/
@@ -52,10 +53,11 @@ CONFIGURE_ARGS+=	--enable-openssl
 
 .if defined(HAVE_GNOME)
 USE_GNOME=		yes
-CONFIGURE_ARGS+=	--enable-gnome --enable-panel --enable-gdk-pixbuf
+CONFIGURE_ARGS+=	--enable-gnome --enable-panel --enable-gdk-pixbuf \
+			--enable-zvt
 MAKE_ARGS=		icondir="${PREFIX}/share/gnome/pixmaps"
 .else
-CONFIGURE_ARGS+=	--disable-gnome --disable-gdk-pixbuf
+CONFIGURE_ARGS+=	--disable-gnome --disable-gdk-pixbuf --disable-zvt
 .endif
 
 .if ${OSVERSION} < 500007
