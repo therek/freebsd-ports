@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.313 2001/03/10 12:46:11 trevor Exp $
+# $FreeBSD: ports/www/Makefile,v 1.314 2001/03/12 08:59:49 vanilla Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -185,6 +185,7 @@
     SUBDIR += p5-libapreq
     SUBDIR += p5-libwww
     SUBDIR += peacock
+    SUBDIR += pgdriver
     SUBDIR += plugger
     SUBDIR += pruby
     SUBDIR += publicfile
