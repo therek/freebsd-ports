@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.74 2002/01/07 08:55:54 demon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.75 2002/01/10 14:58:53 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -227,7 +227,6 @@ MASTER_SITE_SOURCEWARE+= \
 	ftp://sunsite.org.uk/Mirrors/sourceware.cygnus.com/pub/%SUBDIR%/
 
 MASTER_SITE_SOURCEFORGE+= \
-	http://telia.dl.sourceforge.net/%SUBDIR%/ \
 	http://prdownloads.sourceforge.net/%SUBDIR%/ \
 	ftp://ftp3.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
 	http://ftp3.sourceforge.net/%SUBDIR%/ \
@@ -236,7 +235,8 @@ MASTER_SITE_SOURCEFORGE+= \
 	ftp://ftp2.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
 	http://ftp2.sourceforge.net/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/sourceforge/%SUBDIR%/ \
-	ftp://ftp.chg.ru/pub/sourceforge/%SUBDIR%/
+	ftp://ftp.chg.ru/pub/sourceforge/%SUBDIR%/ \
+	http://telia.dl.sourceforge.net/%SUBDIR%/
 
 MASTER_SITE_SUNSITE+=	\
 	ftp://metalab.unc.edu/pub/Linux/%SUBDIR%/ \
