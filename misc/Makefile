@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.378 2001/09/06 11:17:01 will Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.379 2001/09/11 10:19:02 mharo Exp $
 #
 
     SUBDIR += 40upgrade
@@ -96,6 +96,7 @@
     SUBDIR += jive
     SUBDIR += kcd
     SUBDIR += kde2-i18n
+    SUBDIR += kdeaddons
     SUBDIR += kdeutils2
     SUBDIR += kdirstat
     SUBDIR += khotkeys
@@ -137,10 +138,10 @@
     SUBDIR += p5-I18N-LangTags
     SUBDIR += p5-LEGO-RCX
     SUBDIR += p5-Locale-Codes
-    SUBDIR += peq
     SUBDIR += patchutils
     SUBDIR += pbs
     SUBDIR += pdmenu
+    SUBDIR += peq
     SUBDIR += pg
     SUBDIR += pinfo
     SUBDIR += pkg_tarup
