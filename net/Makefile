@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.479 2001/03/10 19:44:13 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.480 2001/03/11 02:29:42 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -138,7 +138,6 @@
     SUBDIR += ldapmodule
     SUBDIR += ldapsdk
     SUBDIR += libicq
-    SUBDIR += libjabber
     SUBDIR += libnet
     SUBDIR += libnids
     SUBDIR += libsmi
