@@ -2,11 +2,11 @@
 # Date Created:				24 July 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/gtk-theme-switch/Makefile,v 1.1 2000/07/24 17:27:13 sobomax Exp $
 #
 
 PORTNAME=	gtk-theme-switch
-PORTVERSION= 	0.3
+PORTVERSION= 	0.4
 CATEGORIES=	x11
 MASTER_SITES=	http://www.muhri.net/
 
