@@ -3,7 +3,7 @@
 # Date created:		Jun 20 1997
 # Whom:			ada@bsd.org
 #
-# $FreeBSD: ports/games/freeciv/Makefile,v 1.26 1999/09/28 22:47:13 cpiazza Exp $
+# $FreeBSD: ports/games/freeciv/Makefile,v 1.27 1999/09/30 13:04:23 sheldonh Exp $
 #
 
 DISTNAME=	freeciv-1.8.3
@@ -19,7 +19,7 @@ MAINTAINER=	sheldonh@freebsd.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 .if defined(USE_GTK)
-LIB_DEPENDS+=	Imlib.4:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS+=	Imlib.5:${PORTSDIR}/graphics/imlib
 .endif
 
 USE_BZIP2=	yes
