@@ -2,11 +2,12 @@
 # Date created:				6/5/1998
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/security/krb5/Makefile,v 1.21 2000/06/24 02:49:07 nectar Exp $
+# $FreeBSD: ports/security/krb5/Makefile,v 1.22 2000/06/30 17:41:24 nectar Exp $
 #
 
 PORTNAME=		krb5
 PORTVERSION=		1.2.1
+PORTREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		# manual download
 EXTRACT_SUFX=		.tar
