@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.401 2001/07/22 02:21:53 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.402 2001/07/22 02:24:01 lioux Exp $
 #
 
     SUBDIR += 0verkill
@@ -193,6 +193,7 @@
     SUBDIR += q3server-freezetag
     SUBDIR += q3server-osp
     SUBDIR += q3server-ra3
+    SUBDIR += q3server-ut
     SUBDIR += qcc
     SUBDIR += qix
     SUBDIR += qkmj
