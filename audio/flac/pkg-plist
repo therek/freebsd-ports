@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/flac/pkg-plist,v 1.8 2002/10/05 16:37:28 naddy Exp $
+@comment $FreeBSD: ports/audio/flac/pkg-plist,v 1.9 2003/02/23 02:14:52 naddy Exp $
 bin/flac
 bin/metaflac
 include/FLAC++/all.h
@@ -278,5 +278,3 @@ share/aclocal/libOggFLAC.m4
 @dirrm include/OggFLAC
 @dirrm include/FLAC++
 @dirrm include/FLAC
-%%XMMS%%@cwd %%X11BASE%%
-%%XMMS%%lib/xmms/Input/libxmms-flac.so
