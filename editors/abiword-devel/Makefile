@@ -2,7 +2,7 @@
 # Date created:         3 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.14 2000/10/05 06:36:08 reg Exp $
+# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.15 2001/01/03 07:51:15 keith Exp $
 #
 
 # Note: this port cannot be built when the textproc/mswordview port is
@@ -15,14 +15,14 @@ CATEGORIES=	editors
 MASTER_SITES=	http://download.abisource.com/releases/${PORTVERSION}/src/
 DISTNAME=	abi-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} expat.tar.gz unixfonts.tar.gz \
-		wv.tar.gz abidistfiles.tar.gz
+		wv.tar.gz abidistfiles.tar.gz libiconv.tar.gz
 
 MAINTAINER=	wolman@cs.washington.edu
 
 # unzip is needed during the installation process
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
-		iconv.2:${PORTSDIR}/converters/iconv
+LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+#		iconv.2:${PORTSDIR}/converters/iconv
 RUN_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 
 DIST_SUBDIR=	AbiWord
