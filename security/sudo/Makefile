@@ -1,12 +1,12 @@
 # New ports collection makefile for:    sudo
-# Version required:     1.6.1
+# Version required:     1.6.2p1
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/security/sudo/Makefile,v 1.27 1999/12/10 19:51:09 obrien Exp $
+# $FreeBSD: ports/security/sudo/Makefile,v 1.28 1999/12/22 17:53:38 mharo Exp $
 #
 
-DISTNAME=	sudo-1.6.1
+DISTNAME=	sudo-1.6.2p1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cs.colorado.edu/pub/sysadmin/sudo/
 
