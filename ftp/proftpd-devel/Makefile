@@ -2,7 +2,7 @@
 # Date created:		26 January 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.36 2001/03/07 00:32:00 mharo Exp $
+# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.37 2001/03/07 00:33:55 mharo Exp $
 #
 
 PORTNAME=	proftpd
@@ -14,6 +14,8 @@ MASTER_SITES=	ftp://ftp.proftpd.org/distrib/source/ \
 		ftp://ftp.club-internet.fr/pub/mirrors/ftp.proftpd.org/distrib/source/
 
 MAINTAINER=	mharo@FreeBSD.org
+
+FORBIDDEN=	"Security vulnerability - check back in a few days"
 
 .if defined(WITH_LDAP)
 MASTER_SITES+=	http://www.horde.net/~jwm/software/proftpd-ldap/
