@@ -2,7 +2,7 @@
 # Date created:		02 Nov 1999
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/databases/freetds/Makefile,v 1.5 2000/06/03 07:59:18 dirk Exp $
+# $FreeBSD: ports/databases/freetds/Makefile,v 1.6 2000/06/16 10:37:41 sobomax Exp $
 
 PORTNAME=	freetds
 PORTVERSION=	0.50
@@ -16,7 +16,7 @@ MAINTAINER=	midom@dammit.lt
 WRKSRC=		${WRKDIR}/freetds
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--with-tdsver=7.0 \
 		--enable-dbmfix

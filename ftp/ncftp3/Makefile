@@ -3,7 +3,7 @@
 # Date created:			  4 Nov 1994
 # Whom:				  ache
 #
-# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.76 2000/04/22 09:56:44 mharo Exp $
+# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.77 2000/06/16 08:48:12 sobomax Exp $
 #
 
 PORTNAME=	ncftp3
@@ -15,7 +15,7 @@ DISTNAME=	ncftp-${PORTVERSION}-src
 MAINTAINER=	obrien@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-src//}
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ncurses
 MAN1=		ncftp3.1 ncftpbatch.1 ncftpget.1 ncftpls.1 ncftpput.1

@@ -2,7 +2,7 @@
 # Date created:				29 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/Hermes/Makefile,v 1.11 2000/06/15 17:12:24 sobomax Exp $
+# $FreeBSD: ports/graphics/Hermes/Makefile,v 1.12 2000/06/16 08:18:10 sobomax Exp $
 #
 
 PORTNAME=	Hermes
@@ -16,7 +16,7 @@ MASTER_SITES=	http://tzo.linux.tucows.com/files/x11/dev/ \
 MAINTAINER=	will@FreeBSD.org
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 USE_GMAKE=	yes
 
 post-install:

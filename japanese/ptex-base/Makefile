@@ -2,7 +2,7 @@
 # Date created:		05 Oct 1997
 # Whom:			max
 #
-# $FreeBSD: ports/japanese/ptex-common/Makefile,v 1.31 2000/04/12 14:37:15 knu Exp $
+# $FreeBSD: ports/japanese/ptex-common/Makefile,v 1.32 2000/06/16 10:38:41 sobomax Exp $
 #
 
 PORTNAME=	ptex
@@ -18,7 +18,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 MAINTAINER=	max@FreeBSD.org
 
 MANUAL_PACKAGE_BUILD=	incompatible with other versions of ptex-*
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 USE_GMAKE=	yes
 EXTRACT_ONLY=	${DISTFILES:Ntexmflib-*}
 DIST_SUBDIR=	${PORTNAME}

@@ -2,7 +2,7 @@
 # Date created:		28 Feburary 2000
 # Whom:			Jeremy Lea <reg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.7 2000/06/15 17:12:30 sobomax Exp $
+# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.8 2000/06/16 08:18:13 sobomax Exp $
 #
 
 PORTNAME=	XFree86-aoutlibs
@@ -18,7 +18,7 @@ ONLY_FOR_ARCHS=	i386
 
 WRKSRC=		${WRKDIR}/lib
 NO_BUILD=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 PORTOBJFORMAT=	aout
 
 USE_X_PREFIX=	yes

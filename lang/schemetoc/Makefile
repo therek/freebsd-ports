@@ -2,7 +2,7 @@
 # Date created:		28 Dec 1994
 # Whom:			jmacd@uclink.berkeley.edu
 #
-# $FreeBSD: ports/lang/schemetoc/Makefile,v 1.17 2000/06/15 17:59:18 sobomax Exp $
+# $FreeBSD: ports/lang/schemetoc/Makefile,v 1.18 2000/06/16 08:18:52 sobomax Exp $
 #
 
 PORTNAME= 	schemetoc
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	jmacd@FreeBSD.org
 
 USE_XLIB=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 NO_WRKSUBDIR=	yes
 MAN1=		scc.1 sci.1
 

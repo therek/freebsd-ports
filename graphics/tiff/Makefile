@@ -4,7 +4,7 @@
 #			Mikhail Teterin <mi@aldan.algebra.com>
 #			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/tiff/Makefile,v 1.27 2000/06/15 17:59:43 sobomax Exp $
+# $FreeBSD: ports/graphics/tiff/Makefile,v 1.28 2000/06/16 08:19:23 sobomax Exp $
 #
 
 PORTNAME=	tiff
@@ -18,7 +18,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ZIP --with-JPEG \
 		--with-DIR_BIN=${PREFIX}/bin \

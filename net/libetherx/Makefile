@@ -2,7 +2,7 @@
 # Date created:			4 April 2000
 # Whom:				Kostya Lukin <lukin@okbmei.msk.su>
 #
-# $FreeBSD: ports/net/libetherx/Makefile,v 1.2 2000/05/16 14:15:27 nbm Exp $
+# $FreeBSD: ports/net/libetherx/Makefile,v 1.3 2000/06/16 08:47:15 sobomax Exp $
 #
 
 PORTNAME=	libetherx
@@ -17,7 +17,7 @@ LIB_DEPENDS=	jabber.1:${PORTSDIR}/net/libjabber \
 		adns.0:${PORTSDIR}/net/adns
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 MAN1=		etherx-config.1
 

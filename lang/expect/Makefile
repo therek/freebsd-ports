@@ -2,7 +2,7 @@
 # Date created:		20 November 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/lang/expect/Makefile,v 1.47 2000/05/28 03:22:14 steve Exp $
+# $FreeBSD: ports/lang/expect/Makefile,v 1.48 2000/06/16 10:37:27 sobomax Exp $
 
 PORTNAME=	expect
 PORTVERSION=	5.31.8
@@ -15,7 +15,7 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS?=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 WRKSRC=		${WRKDIR}/expect-5.31
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS?= --enable-shared \
 		--with-tclconfig=${PREFIX}/lib/tcl8.2 \

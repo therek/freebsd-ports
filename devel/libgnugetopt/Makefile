@@ -2,7 +2,7 @@
 # Date created:				2 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.11 2000/06/07 17:44:38 obrien Exp $
+# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.12 2000/06/16 08:47:22 sobomax Exp $
 #
 
 PORTNAME=	libgnugetopt
@@ -12,7 +12,7 @@ MASTER_SITES= 	ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/obrien/
 
 MAINTAINER=	obrien@FreeBSD.org
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 do-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/getopt.h ${PREFIX}/include

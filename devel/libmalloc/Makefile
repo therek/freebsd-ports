@@ -3,7 +3,7 @@
 # Date created:			  11 January 1995
 # Whom:				  jkh
 #
-# $FreeBSD: ports/devel/libmalloc/Makefile,v 1.22 2000/04/11 21:28:43 mharo Exp $
+# $FreeBSD: ports/devel/libmalloc/Makefile,v 1.23 2000/06/16 08:47:39 sobomax Exp $
 #
 
 PORTNAME=	libmalloc
@@ -14,7 +14,7 @@ DISTNAME=	malloc-${PORTVERSION}
 
 MAINTAINER=	obrien@FreeBSD.org
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.pre.mk>
 

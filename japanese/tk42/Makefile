@@ -2,7 +2,7 @@
 # Date created:		
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tk42/Makefile,v 1.12 2000/04/12 14:38:06 knu Exp $
+# $FreeBSD: ports/japanese/tk42/Makefile,v 1.13 2000/06/16 10:38:45 sobomax Exp $
 #
 
 PORTNAME=	tk
@@ -21,7 +21,7 @@ LIB_DEPENDS=	tcl76jp.1:${PORTSDIR}/japanese/tcl76
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 USE_AUTOCONF=	yes
 USE_XLIB=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
 

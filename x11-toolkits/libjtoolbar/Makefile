@@ -2,7 +2,7 @@
 # Date created:				30 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libjtoolbar/Makefile,v 1.1 2000/06/09 19:51:29 will Exp $
+# $FreeBSD: ports/x11-toolkits/libjtoolbar/Makefile,v 1.2 2000/06/16 08:47:30 sobomax Exp $
 #
 
 PORTNAME=	libjtoolbar
@@ -24,7 +24,7 @@ WRKSRC=		${WRKDIR}/JX-1.5.3
 
 USE_XLIB=	yes
 USE_GMAKE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 MAKE_ENV=	JX_INSTALL_ROOT="${PREFIX}/bin" \
 		JX_LIB_ROOT="${PREFIX}/lib" \
 		X11PREFIX="${X11PREFIX}" \

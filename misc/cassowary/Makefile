@@ -2,7 +2,7 @@
 # Date created:        01 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD>org>
 #
-# $FreeBSD: ports/misc/cassowary/Makefile,v 1.8 2000/06/15 17:12:49 sobomax Exp $
+# $FreeBSD: ports/misc/cassowary/Makefile,v 1.9 2000/06/16 08:18:21 sobomax Exp $
 #
 
 PORTNAME=	cassowary
@@ -15,7 +15,7 @@ MAINTAINER=	nakai@FreeBSD.org
 BUILD_DEPENDS=	guile:${PORTSDIR}/lang/guile
 LIB_DEPENDS=	GTL.3:${PORTSDIR}/misc/gtl
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-guile-prefix=${LOCALBASE} \
 		--enable-guile-build \

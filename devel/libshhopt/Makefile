@@ -2,7 +2,7 @@
 # Date created:				11 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libshhopt/Makefile,v 1.7 2000/04/11 21:28:46 mharo Exp $
+# $FreeBSD: ports/devel/libshhopt/Makefile,v 1.8 2000/06/16 08:47:48 sobomax Exp $
 #
 
 PORTNAME=		libshhopt
@@ -14,7 +14,7 @@ DISTNAME=		shhopt-${PORTVERSION}
 MAINTAINER=		obrien@FreeBSD.org
 
 USE_GMAKE=		yes
-INSTALLS_SHLIBS=		yes
+INSTALLS_SHLIB=		yes
 
 post-install:
 .if !defined(NOPORTDOCS)

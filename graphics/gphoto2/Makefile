@@ -2,7 +2,7 @@
 # Date created:		26 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.10 2000/04/29 21:12:08 cpiazza Exp $
+# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.11 2000/06/16 10:38:08 sobomax Exp $
 #
 
 PORTNAME=	gphoto
@@ -19,7 +19,7 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		GTK_CONFIG="${GTK_CONFIG}" \

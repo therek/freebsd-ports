@@ -2,7 +2,7 @@
 # Date created:				28th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/misc/amanda24/Makefile,v 1.28 2000/06/15 17:12:38 sobomax Exp $
+# $FreeBSD: ports/misc/amanda24/Makefile,v 1.29 2000/06/16 08:18:18 sobomax Exp $
 #
 
 PORTNAME=	amanda
@@ -19,7 +19,7 @@ RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot
 WRKSRC=		${WRKDIR}/amanda-2.4.1p1
 NO_LATEST_LINK=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 LIBTOOLFLAGS=	--disable-ltlibs --release-ignore
 CONFIGURE_ARGS= --libexecdir=${PREFIX}/libexec/amanda \
 		--with-amandahosts --with-fqdn \

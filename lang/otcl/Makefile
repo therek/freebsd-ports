@@ -2,7 +2,7 @@
 # Date created:		23 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/lang/otcl/Makefile,v 1.9 2000/05/31 18:17:39 hoek Exp $
+# $FreeBSD: ports/lang/otcl/Makefile,v 1.10 2000/06/16 08:48:20 sobomax Exp $
 #
 
 PORTNAME=	otcl
@@ -14,10 +14,10 @@ MAINTAINER=	obonilla@fisicc-ufm.edu
 
 LIB_DEPENDS=    tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-tcl-ver=8.2 --with-tk-ver=8.2
-USE_AUTOCONF= yes
+USE_AUTOCONF=	yes
 PKGINSTALL=	${PORTSDIR}/lang/tcl82/pkg/INSTALL.tclsh
 PKGDEINSTALL=	${PORTSDIR}/lang/tcl82/pkg/DEINSTALL.tclsh
 

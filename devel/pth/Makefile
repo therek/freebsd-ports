@@ -2,7 +2,7 @@
 # Date Created:			23 May 1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/pth/Makefile,v 1.48 2000/06/15 17:59:06 sobomax Exp $
+# $FreeBSD: ports/devel/pth/Makefile,v 1.49 2000/06/16 08:18:32 sobomax Exp $
 #
 
 PORTNAME=	pth
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	pth
 
 MAINTAINER=	rse@engelschall.com
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--enable-pthread \

@@ -2,7 +2,7 @@
 # Date created:                        15 Feb 2000
 # Whom:                                Andrew L. Neporada <andrew@chg.ru>
 #
-# $FreeBSD: ports/math/gsl/Makefile,v 1.3 2000/06/04 17:08:38 will Exp $
+# $FreeBSD: ports/math/gsl/Makefile,v 1.4 2000/06/16 10:38:09 sobomax Exp $
 #
 
 PORTNAME=	gsl
@@ -21,7 +21,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	andrew@chg.ru
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GSLREF=		gsl-ref.ps.gz
 
 post-install:

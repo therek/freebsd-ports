@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.78 2000/06/15 17:12:27 sobomax Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.79 2000/06/16 08:18:12 sobomax Exp $
 #
 
 PORTNAME=	XFree86
@@ -26,7 +26,7 @@ MAINTAINER=	jmz@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DIST_SUBDIR}
 IS_INTERACTIVE=	yes	# configure script asks questions
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 .if (${MACHINE} != "alpha")
 #NO_PACKAGE=	package available from XFree86
 .endif

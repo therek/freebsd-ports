@@ -2,7 +2,7 @@
 # Date created:			4 April 2000
 # Whom:				Kostya Lukin <lukin@okbmei.msk.su>
 #
-# $FreeBSD: ports/textproc/libxode/Makefile,v 1.2 2000/05/16 14:05:13 nbm Exp $
+# $FreeBSD: ports/textproc/libxode/Makefile,v 1.3 2000/06/16 08:47:59 sobomax Exp $
 #
 
 PORTNAME=	libxode
@@ -13,6 +13,6 @@ MASTER_SITES=	http://download.jabber.org/dists/1.0/
 MAINTAINER=	lukin@okbmei.msk.su
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:         11 July 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/devel/libslang/Makefile,v 1.19 2000/04/11 21:28:48 mharo Exp $
+# $FreeBSD: ports/devel/libslang/Makefile,v 1.20 2000/06/16 08:47:52 sobomax Exp $
 #
 
 PORTNAME=	libslang
@@ -15,7 +15,7 @@ MAINTAINER=	xaa+ports@timewasters.nl
 
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 #WRKSRC=		${WRKDIR}/slang
 
 ALL_TARGET=	all elf

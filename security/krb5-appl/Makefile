@@ -2,7 +2,7 @@
 # Date created:				6/5/1998
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/security/krb5/Makefile,v 1.17 2000/04/09 18:29:49 cpiazza Exp $
+# $FreeBSD: ports/security/krb5/Makefile,v 1.18 2000/06/16 08:46:57 sobomax Exp $
 #
 
 PORTNAME=		krb5
@@ -17,7 +17,7 @@ BUILD_DEPENDS=		gm4:${PORTSDIR}/devel/m4
 
 KERBEROSV_URL=		http://web.mit.edu/network/kerberos-form.html
 USE_GMAKE=		yes
-INSTALLS_SHLIBS=		yes
+INSTALLS_SHLIB=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS?=	--enable-shared --with-ccopts="${CFLAGS}"
 CONFIGURE_ENV=		INSTALL="${INSTALL}"

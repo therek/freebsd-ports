@@ -2,7 +2,7 @@
 # Date created:		19 July 1998
 # Whom:			Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/esound/Makefile,v 1.19 2000/04/08 21:23:27 mharo Exp $
+# $FreeBSD: ports/audio/esound/Makefile,v 1.20 2000/06/16 10:37:24 sobomax Exp $
 #
 
 PORTNAME=	esound
@@ -16,6 +16,6 @@ MAINTAINER=	vanilla@FreeBSD.org
 LIB_DEPENDS=	audiofile.0:${PORTSDIR}/audio/libaudiofile
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>

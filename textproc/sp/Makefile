@@ -2,7 +2,7 @@
 # Date created:		April 26, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/sp/Makefile,v 1.16 2000/06/15 17:59:28 sobomax Exp $
+# $FreeBSD: ports/textproc/sp/Makefile,v 1.17 2000/06/16 08:19:09 sobomax Exp $
 #
 
 PORTNAME=	sp
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.jclark.com/pub/sp/
 
 MAINTAINER=	chuckr@FreeBSD.org
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 post-patch:
 	$(CP) $(WRKSRC)/Makefile $(WRKSRC)/Makefile.sed

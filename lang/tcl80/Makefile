@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl80/Makefile,v 1.26 2000/06/15 17:59:35 sobomax Exp $
+# $FreeBSD: ports/lang/tcl80/Makefile,v 1.27 2000/06/16 08:19:12 sobomax Exp $
 #
 
 PORTNAME=	tcl
@@ -17,7 +17,7 @@ Y2K=            http://www.scriptics.com/Y2K.html
 
 NO_LATEST_LINK=	yes
 WRKSRC=		${WRKDIR}/tcl8.0.5/unix
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}

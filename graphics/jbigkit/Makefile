@@ -2,7 +2,7 @@
 # Date created:		19 November 1996
 # Whom:			mi
 #
-# $FreeBSD: ports/graphics/jbigkit/Makefile,v 1.13 2000/06/09 22:48:25 will Exp $
+# $FreeBSD: ports/graphics/jbigkit/Makefile,v 1.14 2000/06/16 08:46:40 sobomax Exp $
 #
 
 PORTNAME=	jbigkit
@@ -14,7 +14,7 @@ MAINTAINER=	mi@aldan.algebra.com
 
 WRKSRC= ${WRKDIR}/${PORTNAME}
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 MAN1=	jbgtopbm.1 pbmtojbg.1
 

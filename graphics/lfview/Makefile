@@ -2,7 +2,7 @@
 # Date created:		24 February 1999
 # Whom:			Yuu Yashiki
 #
-# $FreeBSD: ports/graphics/lfview/Makefile,v 1.4 2000/04/14 10:46:32 asami Exp $
+# $FreeBSD: ports/graphics/lfview/Makefile,v 1.5 2000/06/16 08:47:02 sobomax Exp $
 #
 
 PORTNAME=	lfview
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	s974123@cc.matsuyama-u.ac.jp
 
 USE_IMAKE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 NO_INSTALL_MANPAGES=	yes
 
 do-install:

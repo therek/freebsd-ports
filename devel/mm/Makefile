@@ -2,7 +2,7 @@
 # Date Created:			14 March 1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/mm/Makefile,v 1.20 2000/05/21 09:36:41 rse Exp $
+# $FreeBSD: ports/devel/mm/Makefile,v 1.21 2000/06/16 08:48:09 sobomax Exp $
 #
 
 PORTNAME=	mm
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.engelschall.com/sw/mm/ \
 
 MAINTAINER=	rse@engelschall.com
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 
 MAN1=		mm-config.1

@@ -2,7 +2,7 @@
 # Date created:        16 March 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/devel/gettext/Makefile,v 1.19 2000/06/13 06:58:39 reg Exp $
+# $FreeBSD: ports/devel/gettext/Makefile,v 1.20 2000/06/16 10:37:52 sobomax Exp $
 #
 
 PORTNAME=	gettext
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	gettext
 MAINTAINER=	reg@FreeBSD.org
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 PLIST_SUB=	LOCALBASE=${LOCALBASE} X11BASE=${X11BASE}
 

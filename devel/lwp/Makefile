@@ -2,7 +2,7 @@
 # Date created:				Tue Mar 21 17:51:25 EST 2000
 # Whom:					jaharkes
 #
-# $FreeBSD: ports/devel/lwp/Makefile,v 1.1 2000/05/29 04:13:30 steve Exp $
+# $FreeBSD: ports/devel/lwp/Makefile,v 1.2 2000/06/16 08:48:06 sobomax Exp $
 #
 
 PORTNAME=	lwp
@@ -14,6 +14,6 @@ MAINTAINER=	coda@cs.cmu.edu
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>

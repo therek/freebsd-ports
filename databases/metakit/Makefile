@@ -2,7 +2,7 @@
 # Date created:		25 December 1999
 # Whom:			Russell L. Carter <rcarter@pinyon.org>
 #
-# $FreeBSD: ports/databases/metakit/Makefile,v 1.3 2000/06/14 13:21:08 sobomax Exp $
+# $FreeBSD: ports/databases/metakit/Makefile,v 1.4 2000/06/16 08:48:07 sobomax Exp $
 #
 
 PORTNAME=	metakit
@@ -15,7 +15,7 @@ MAINTAINER=	rcarter@pinyon.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/builds
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 LIBTOOLFILES=	../unix/aclocal.m4
 CONFIGURE_SCRIPT= ../unix/configure
 MAKE_ARGS=	CXXFLAGS="-Dq4_STD ${CFLAGS}"

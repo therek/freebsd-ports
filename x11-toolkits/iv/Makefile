@@ -2,7 +2,7 @@
 # Date created:		23.sept.1994
 # Whom:			adam
 #
-# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.24 2000/04/10 01:10:32 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.25 2000/06/16 10:38:31 sobomax Exp $
 #
 
 PORTNAME=	iv
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	tanimura@FreeBSD.org
 
 USE_XLIB=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 DIST_SUBDIR=	iv
 WRKSRC=		${WRKDIR}/iv

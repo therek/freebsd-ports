@@ -2,7 +2,7 @@
 # Date created:			21 Sept 1996
 # Whom:				giffunip
 #
-# $FreeBSD: ports/lang/cim/Makefile,v 1.14 2000/04/12 06:17:57 obrien Exp $
+# $FreeBSD: ports/lang/cim/Makefile,v 1.15 2000/06/16 10:37:10 sobomax Exp $
 #
 
 PORTNAME=	cim
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.ifi.uio.no/pub/cim/
 MAINTAINER=	ports@FreeBSD.org
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 MAN1=		cim.1
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:         04 September 1997
 # Whom:                 Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.21 2000/06/15 17:59:16 sobomax Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.22 2000/06/16 08:18:47 sobomax Exp $
 #
 
 PORTNAME=	ruby
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://ftp.netlab.co.jp/pub/lang/ruby/${BRANCH_NAME}/ \
 MAINTAINER=	yasuf@bsdclub.org
 
 GNU_CONFIGURE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--enable-shared
 MAN1=		ruby.1
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"

@@ -2,7 +2,7 @@
 # Date created:         20 February 1995
 # Whom:                 Tim Wilkinson <tim@sarc.city.ac.uk>
 #
-# $FreeBSD: ports/java/kaffe/Makefile,v 1.48 2000/04/12 06:14:52 obrien Exp $
+# $FreeBSD: ports/java/kaffe/Makefile,v 1.49 2000/06/16 08:46:42 sobomax Exp $
 #
 
 PORTNAME=	kaffe
@@ -17,7 +17,7 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png
 
 GNU_CONFIGURE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 MAN1=		kaffe.1
 

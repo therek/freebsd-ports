@@ -2,7 +2,7 @@
 # Date created:		17 July 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/libdockapp/Makefile,v 1.9 2000/05/29 22:24:54 will Exp $
+# $FreeBSD: ports/x11-wm/libdockapp/Makefile,v 1.10 2000/06/16 08:47:15 sobomax Exp $
 #
 
 PORTNAME=	libdockapp
@@ -18,6 +18,6 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>

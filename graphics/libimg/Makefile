@@ -2,7 +2,7 @@
 # Date Created:		20 February 1999
 # Whom:			Glenn Johnson
 #
-# $FreeBSD: ports/graphics/libimg/Makefile,v 1.6 2000/04/14 10:46:34 asami Exp $
+# $FreeBSD: ports/graphics/libimg/Makefile,v 1.7 2000/06/16 08:47:28 sobomax Exp $
 #
 
 PORTNAME=	libimg
@@ -22,7 +22,7 @@ WRKSRC=		${WRKDIR}/img1.2.2
 
 ALL_TARGET=	default
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-tcl=${PREFIX}/lib/tcl8.2 --with-tk=${PREFIX}/lib/tk8.2 \
 		--disable-stubs

@@ -2,7 +2,7 @@
 # Date created:		11 March 1997
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tcl76/Makefile,v 1.12 2000/05/31 18:17:38 hoek Exp $
+# $FreeBSD: ports/japanese/tcl76/Makefile,v 1.13 2000/06/16 10:38:44 sobomax Exp $
 #
 
 PORTNAME=	tcl
@@ -18,7 +18,7 @@ MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 USE_AUTOCONF=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
 PKGINSTALL=	${PORTSDIR}/lang/tcl82/pkg/INSTALL.tclsh

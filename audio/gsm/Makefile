@@ -2,7 +2,7 @@
 # Date created:		5 January 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/audio/gsm/Makefile,v 1.15 2000/04/08 21:23:40 mharo Exp $
+# $FreeBSD: ports/audio/gsm/Makefile,v 1.16 2000/06/16 10:38:09 sobomax Exp $
 #
 
 PORTNAME=	gsm
@@ -14,7 +14,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/gsm-1.0-pl10
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 MAN1=		toast.1
 MAN3=		gsm.3 gsm_explode.3 gsm_option.3 gsm_print.3

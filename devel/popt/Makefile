@@ -2,7 +2,7 @@
 # Date Created:				29 Dec 1999
 # Whom:					Yuan-Chen Cheng <ycheng@sinica.edu.tw>
 #
-# $FreeBSD: ports/devel/popt/Makefile,v 1.7 2000/06/15 17:58:59 sobomax Exp $
+# $FreeBSD: ports/devel/popt/Makefile,v 1.8 2000/06/16 08:18:31 sobomax Exp $
 #
 
 PORTNAME=	popt
@@ -15,7 +15,7 @@ MAINTAINER=	ycheng@sinica.edu.tw
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 

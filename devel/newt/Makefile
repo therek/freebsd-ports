@@ -2,7 +2,7 @@
 # Date created:		08 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/newt/Makefile,v 1.6 2000/05/14 05:40:49 billf Exp $
+# $FreeBSD: ports/devel/newt/Makefile,v 1.7 2000/06/16 08:48:15 sobomax Exp $
 #
 
 PORTNAME=	newt
@@ -25,7 +25,7 @@ BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/misc/rpm \
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 WRKSRC=		${WRKDIR}/newt-0.50
 VERSION=	0
 MAKE_ENV+=	prefix=${PREFIX} VERSION=${VERSION} CC=${CC} PCFLAGS="${CFLAGS}"

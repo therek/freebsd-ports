@@ -2,7 +2,7 @@
 # Date created:				Septermber 21 96
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/rexx-imc/Makefile,v 1.13 2000/06/15 17:59:11 sobomax Exp $
+# $FreeBSD: ports/lang/rexx-imc/Makefile,v 1.14 2000/06/16 08:18:40 sobomax Exp $
 #
 
 PORTNAME=	rexx-imc
@@ -17,7 +17,7 @@ PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 MAKE_ENV=	MKDIR="${MKDIR}" OPTFLAGS="${CFLAGS}"
 MAN1=		rexx.1

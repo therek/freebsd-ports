@@ -3,7 +3,7 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD: ports/emulators/wine/Makefile,v 1.82 2000/06/15 16:44:06 sobomax Exp $
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.83 2000/06/16 08:19:45 sobomax Exp $
 #
 
 PORTNAME=	wine
@@ -20,7 +20,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 
 WRKSRC=		${WRKDIR}/wine-${PORTVERSION:S/.//g}
 GNU_CONFIGURE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 LDCONFIG_DIRS=	%%PREFIX%%/lib/wine
 MAN1=		wine.1
 MAN5=		wine.conf.5

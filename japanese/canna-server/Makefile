@@ -3,7 +3,7 @@
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #			NIIMI Satoshi <sa2c@and.or.jp>
 #
-# $FreeBSD: ports/japanese/Canna/Makefile,v 1.31 2000/04/30 23:24:26 asami Exp $
+# $FreeBSD: ports/japanese/Canna/Makefile,v 1.32 2000/06/16 10:38:32 sobomax Exp $
 #
 
 PORTNAME=	Canna
@@ -16,7 +16,7 @@ MAINTAINER=	max@FreeBSD.org
 
 BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 ALL_TARGET=	canna
 INSTALL_TARGET=	install install.man

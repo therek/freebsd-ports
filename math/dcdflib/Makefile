@@ -2,7 +2,7 @@
 # Date created:		08 September 1998
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/math/dcdflib/Makefile,v 1.3 2000/04/14 07:19:55 asami Exp $
+# $FreeBSD: ports/math/dcdflib/Makefile,v 1.4 2000/06/16 10:37:17 sobomax Exp $
 #
 
 PORTNAME=	dcdflib.c
@@ -14,7 +14,7 @@ MAINTAINER=	tobez@plab.ku.dk
 
 WRKSRC=		${WRKDIR}/dcdflib.c/src
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.pre.mk>
 

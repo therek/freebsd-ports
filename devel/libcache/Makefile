@@ -2,7 +2,7 @@
 # Date created:		04 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/libcache/Makefile,v 1.3 2000/04/11 21:28:32 mharo Exp $
+# $FreeBSD: ports/devel/libcache/Makefile,v 1.4 2000/06/16 08:47:08 sobomax Exp $
 #
 
 PORTNAME=	libcache
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.afro-productions.com/
 
 MAINTAINER=	will@FreeBSD.org
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--enable-shared
 WRKSRC=		${WRKDIR}/libcache

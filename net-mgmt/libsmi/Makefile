@@ -2,7 +2,7 @@
 # Date created:			Tue Jan 27 2000
 # Whom:				Marcin Cieslak <saper@system.pl>
 #
-# $FreeBSD: ports/net/libsmi/Makefile,v 1.2 2000/04/09 18:12:05 cpiazza Exp $
+# $FreeBSD: ports/net/libsmi/Makefile,v 1.3 2000/06/16 08:47:53 sobomax Exp $
 #
 
 PORTNAME=	libsmi
@@ -17,7 +17,7 @@ MAINTAINER=	saper@system.pl
 #USE_X_PREFIX=	yes
 
 GNU_CONFIGURE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 USE_GMAKE=	yes
 MIBDIR=		${PREFIX}/share/smi/mibs
 CONFIGURE_ARGS+=--with-data-dir=${PREFIX}/share/smi \

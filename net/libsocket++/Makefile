@@ -4,7 +4,7 @@
 # Whom:				  Narvi <narvi@haldjas.folklore.ee>
 #				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/net/libsocket++/Makefile,v 1.10 2000/05/28 04:07:21 steve Exp $
+# $FreeBSD: ports/net/libsocket++/Makefile,v 1.11 2000/06/16 08:47:54 sobomax Exp $
 #
 
 PORTNAME=	libsocket++
@@ -18,7 +18,7 @@ DISTNAME=	socket++-1.10
 MAINTAINER=	narvi@haldjas.folklore.ee
 
 GNU_CONFIGURE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 NOPROFILE=	true
 
 post-configure:

@@ -2,7 +2,7 @@
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.24 2000/06/04 15:31:18 billf Exp $
+# $FreeBSD: ports/graphics/gd/Makefile,v 1.25 2000/06/16 10:37:45 sobomax Exp $
 #
 
 PORTNAME=       gd
@@ -22,7 +22,7 @@ LIB_DEPENDS+=	ttf.4:${PORTSDIR}/print/freetype \
 USE_XLIB=	yes
 .endif
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 pre-fetch:
 .if !defined(WITH_X11)

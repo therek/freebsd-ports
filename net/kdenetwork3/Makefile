@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.43 2000/05/17 09:21:51 will Exp $
+# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.44 2000/06/16 08:46:49 sobomax Exp $
 #
 
 PORTNAME=	kdenetwork
@@ -20,7 +20,7 @@ LIB_DEPENDS=	uu.1:${PORTSDIR}/converters/uulib \
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
 USE_QT2=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
 		--with-qt-includes=${X11BASE}/include/qt2 \

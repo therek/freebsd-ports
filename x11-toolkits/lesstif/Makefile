@@ -2,7 +2,7 @@
 # Date created:		December 10, 1996
 # Whom:			1wardd@airmail.net
 #
-# $FreeBSD: ports/x11-toolkits/lesstif/Makefile,v 1.42 2000/04/22 01:06:47 will Exp $
+# $FreeBSD: ports/x11-toolkits/lesstif/Makefile,v 1.43 2000/06/16 08:46:59 sobomax Exp $
 #
 
 PORTNAME=	lesstif
@@ -20,7 +20,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/automake:${PORTSDIR}/devel/automake
 MANUAL_PACKAGE_BUILD=	do not want to install during interactive build
 USE_AUTOCONF=	yes
 USE_X_PREFIX=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=  yes
 CONFIGURE_ARGS+=--enable-static --enable-shared --disable-build-Xlt \
 		--enable-production --disable-debug --disable-build-Xbae

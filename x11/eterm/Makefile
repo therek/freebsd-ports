@@ -2,7 +2,7 @@
 # Date created:        24 November 1997
 # Whom:                Murray Stokely <murray@cdrom.com>
 #
-# $FreeBSD: ports/x11/eterm/Makefile,v 1.24 2000/05/14 05:21:52 billf Exp $
+# $FreeBSD: ports/x11/eterm/Makefile,v 1.25 2000/06/16 10:37:26 sobomax Exp $
 #
 
 PORTNAME=	eterm
@@ -22,7 +22,7 @@ LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib"
 
 MAN1=		Eterm.1

@@ -2,7 +2,7 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.8 2000/06/11 08:05:33 knu Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.9 2000/06/16 10:37:15 sobomax Exp $
 #
 
 PORTNAME=	cyrus-sasl
@@ -16,7 +16,7 @@ MAINTAINER=	hetzels@westbend.net
 
 USE_OPENSSL=	RSA
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.pre.mk>
 

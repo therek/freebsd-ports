@@ -2,7 +2,7 @@
 # Date created:         2 July 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/math/lapack/Makefile,v 1.18 2000/04/14 07:20:12 asami Exp $
+# $FreeBSD: ports/math/lapack/Makefile,v 1.19 2000/06/16 08:46:58 sobomax Exp $
 #
 
 PORTNAME=	lapack
@@ -16,7 +16,7 @@ MAINTAINER=	jmz@FreeBSD.org
 
 DIST_SUBDIR=	lapack
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 MANCOMPRESSED=	maybe
 MANL=	cbdsqr.l cgbbrd.l cgbcon.l cgbequ.l cgbmv.l cgbrfs.l cgbsv.l cgbsvx.l \

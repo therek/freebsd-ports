@@ -2,7 +2,7 @@
 # Date created:		25 September 1998
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/graphics/Cgraph/Makefile,v 1.6 2000/06/15 17:12:23 sobomax Exp $
+# $FreeBSD: ports/graphics/Cgraph/Makefile,v 1.7 2000/06/16 08:17:54 sobomax Exp $
 #
 
 PORTNAME=	Cgraph
@@ -15,7 +15,7 @@ MAINTAINER=	tobez@plab.ku.dk
 
 WRKSRC=		${WRKDIR}/Cgraph/source
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 post-extract:
 	@${CP} ${FILESDIR}/Makefile.lib ${WRKSRC}/Makefile

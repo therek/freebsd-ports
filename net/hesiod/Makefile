@@ -2,7 +2,7 @@
 # Date created:				6/11/1998
 # Whom:					n@nectar.com
 #
-# $FreeBSD: ports/net/hesiod/Makefile,v 1.9 2000/04/09 18:11:37 cpiazza Exp $
+# $FreeBSD: ports/net/hesiod/Makefile,v 1.10 2000/06/16 10:38:24 sobomax Exp $
 #
 
 PORTNAME=		hesiod
@@ -23,7 +23,7 @@ MAN3=			hesiod.3 hesiod_end.3 hesiod_free_list.3 	\
 MAN5=			hesiod.conf.5
 
 GNU_CONFIGURE=		yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=		yes
 
 .include <bsd.port.pre.mk>
 

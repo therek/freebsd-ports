@@ -2,7 +2,7 @@
 # Date created:         03 Oct 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/plplot/Makefile,v 1.14 2000/06/15 17:58:58 sobomax Exp $
+# $FreeBSD: ports/math/plplot/Makefile,v 1.15 2000/06/16 08:18:28 sobomax Exp $
 #
 
 PORTNAME=	plplot
@@ -17,7 +17,7 @@ DISTNAME=       plplot4p99j
 MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --with-gcc=yes --with-double=yes
 

@@ -2,7 +2,7 @@
 # Date created:		21 December 1996
 # Whom:			jmz
 #
-# $FreeBSD: ports/graphics/pgplot/Makefile,v 1.13 2000/06/15 17:58:55 sobomax Exp $
+# $FreeBSD: ports/graphics/pgplot/Makefile,v 1.14 2000/06/16 08:18:26 sobomax Exp $
 #
 
 PORTNAME=       pgplot
@@ -14,7 +14,7 @@ DISTNAME=       ${PORTNAME}${PORTVERSION}
 MAINTAINER=	jmz@FreeBSD.org
 
 USE_XLIB=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 WRKSRC=		${WRKDIR}/pgplot
 
 .include <bsd.port.pre.mk>

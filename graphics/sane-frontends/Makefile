@@ -2,7 +2,7 @@
 # Date created:			Sat Jul 19 16:23:10 MET DST 1997
 # Whom:				gary@hotlava.com
 #
-# $FreeBSD: ports/graphics/sane/Makefile,v 1.24 2000/06/15 17:59:18 sobomax Exp $
+# $FreeBSD: ports/graphics/sane/Makefile,v 1.25 2000/06/16 08:18:49 sobomax Exp $
 #
 
 PORTNAME=	sane
@@ -21,7 +21,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"

@@ -2,7 +2,7 @@
 # Date created:				1 April 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/converters/libutf-8/Makefile,v 1.5 2000/04/20 10:45:33 mharo Exp $
+# $FreeBSD: ports/converters/libutf-8/Makefile,v 1.6 2000/06/16 08:47:55 sobomax Exp $
 #
 
 PORTNAME=	libutf
@@ -15,7 +15,7 @@ DISTNAME=	libutf-8-1.0
 
 MAINTAINER=	adam@whizkidtech.net
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 MAN3=		libutf-8.3 fgetu8.3 fputu8.3 sgetu8.3 sputu8.3
 

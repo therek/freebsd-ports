@@ -2,7 +2,7 @@
 # Date created:		Aug 17 1996
 # Whom:			chuckr
 #
-# $FreeBSD: ports/lang/itcl/Makefile,v 1.26 2000/05/31 18:17:38 hoek Exp $
+# $FreeBSD: ports/lang/itcl/Makefile,v 1.27 2000/06/16 10:38:30 sobomax Exp $
 #
 
 PORTNAME=	itcl
@@ -16,7 +16,7 @@ MAINTAINER=	dmlb@ragnet.demon.co.uk
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 
 WRKSRC=		${WRKDIR}/itcl3.0.1/itcl/unix
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl8.2
 CONFIGURE_ENV=	PORTSDIR=${PORTSDIR} ITCL_LIB_FILE=${ITCL_LIB_FILE}

@@ -2,7 +2,7 @@
 # Date created:				27 April 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/devel/fastcrc/Makefile,v 1.6 2000/04/11 21:27:51 mharo Exp $
+# $FreeBSD: ports/devel/fastcrc/Makefile,v 1.7 2000/06/16 10:37:31 sobomax Exp $
 #
 
 PORTNAME=	fastcrc
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 
 ONLY_FOR_ARCHS=	i386
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libfcrc.so.1 ${PREFIX}/lib

@@ -2,7 +2,7 @@
 # Date created:		5 March 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/x11-toolkits/slingshot/Makefile,v 1.12 2000/06/15 17:59:25 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/slingshot/Makefile,v 1.13 2000/06/16 08:19:08 sobomax Exp $
 #
 
 PORTNAME=	slingshot
@@ -19,7 +19,7 @@ LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 
 WRKSRC=		${WRKDIR}/sspkg2.1
 USE_X_PREFIX=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 USE_GMAKE=	yes
 MAKE_ENV=       OPENWINHOME=${X11BASE}
 

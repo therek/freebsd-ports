@@ -2,7 +2,7 @@
 # Date created:		Dec 28 1998
 # Whom:			Lars Koeller <Lars.Koeller@Uni-Bielefeld.DE>
 #
-# $FreeBSD: ports/math/fftw/Makefile,v 1.9 2000/04/14 07:20:00 asami Exp $
+# $FreeBSD: ports/math/fftw/Makefile,v 1.10 2000/06/16 10:37:36 sobomax Exp $
 #
 
 PORTNAME=	fftw
@@ -18,7 +18,7 @@ MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 .if ${ARCH} == "i386"
 CONFIGURE_ARGS=	--enable-i386-hacks

@@ -2,7 +2,7 @@
 # Date created:         31 October 1996
 # Whom:			Pedro Giffuni S.
 #
-# $FreeBSD: ports/math/fftpack/Makefile,v 1.13 2000/04/14 07:19:59 asami Exp $
+# $FreeBSD: ports/math/fftpack/Makefile,v 1.14 2000/06/16 10:37:32 sobomax Exp $
 #
 
 PORTNAME=	fftpack
@@ -20,7 +20,7 @@ EXTRACT_CMD=		${TAR}
 EXTRACT_BEFORE_ARGS=	-xf
 EXTRACT_AFTER_ARGS=	# empty
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.pre.mk>
 

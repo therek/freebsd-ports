@@ -2,7 +2,7 @@
 # Date created:		Wed Dec 11 15:16:19 CST 1996
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/databases/typhoon/Makefile,v 1.11 2000/06/15 16:43:55 sobomax Exp $
+# $FreeBSD: ports/databases/typhoon/Makefile,v 1.12 2000/06/16 08:19:37 sobomax Exp $
 #
 
 PORTNAME=	typhoon
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	ports@FreeBSD.org
 
 HAS_CONFIGURE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 MAN3=d_close.3 d_crget.3 d_crread.3 d_crset.3 d_dbdpath.3 d_dbfpath.3 \
      d_dbget.3 d_dbset.3 d_delete.3 d_fillnew.3 d_getsequence.3 d_keyfind.3 \

@@ -2,7 +2,7 @@
 # Date created:				4 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/EZWGL/Makefile,v 1.23 2000/06/15 17:12:24 sobomax Exp $
+# $FreeBSD: ports/graphics/EZWGL/Makefile,v 1.24 2000/06/16 08:18:09 sobomax Exp $
 #
 
 PORTNAME=	EZWGL
@@ -17,7 +17,7 @@ LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		png.3:${PORTSDIR}/graphics/png
 
 USE_X_PREFIX=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"

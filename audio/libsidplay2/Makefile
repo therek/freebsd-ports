@@ -2,7 +2,7 @@
 # Date created:        31 October 1996
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/audio/sidplay/Makefile,v 1.9 2000/06/15 17:59:22 sobomax Exp $
+# $FreeBSD: ports/audio/sidplay/Makefile,v 1.10 2000/06/16 08:18:54 sobomax Exp $
 #
 
 PORTNAME=	sidplay
@@ -17,7 +17,7 @@ MAINTAINER=	sec@42.org
 WRKSRC=		${WRKDIR}/lib${PKGNAME}
 USE_XLIB=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 USE_GMAKE=	yes
 
 .include <bsd.port.mk>

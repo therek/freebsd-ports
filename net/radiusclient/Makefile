@@ -2,7 +2,7 @@
 # Date created:        Wed Nov  4 08:48:08 EST 1998
 # Whom:                maurice
 #
-# $FreeBSD: ports/net/radiusclient/Makefile,v 1.9 2000/06/15 17:59:10 sobomax Exp $
+# $FreeBSD: ports/net/radiusclient/Makefile,v 1.10 2000/06/16 08:18:39 sobomax Exp $
 #
 
 PORTNAME=	radiusclient
@@ -15,6 +15,6 @@ MAINTAINER=	maurice@serc.rmit.edu.au
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				24 Apr 1996
 # Whom:					pst
 #
-# $FreeBSD: ports/net/socks5/Makefile,v 1.29 2000/06/15 17:59:28 sobomax Exp $
+# $FreeBSD: ports/net/socks5/Makefile,v 1.30 2000/06/16 08:19:09 sobomax Exp $
 #
 
 PORTNAME=	socks5
@@ -25,7 +25,7 @@ RESTRICTED=	"no commercial use"
 #		--with-passwd
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-libconffile=${PREFIX}/etc/libsocks5.conf \
 		--with-srvconffile=${PREFIX}/etc/socks5.conf \

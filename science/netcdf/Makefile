@@ -2,7 +2,7 @@
 # Date created:		29 July 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/netcdf/Makefile,v 1.5 2000/05/29 03:40:12 steve Exp $
+# $FreeBSD: ports/math/netcdf/Makefile,v 1.6 2000/06/16 08:48:13 sobomax Exp $
 #
 
 PORTNAME=	netcdf
@@ -14,7 +14,7 @@ DISTFILES=	${PORTNAME}-3.5-beta3.tar.Z
 MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-3.5-beta3/src
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-fPIC -DPIC -Df2cFortran"
 

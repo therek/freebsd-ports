@@ -2,7 +2,7 @@
 # Date created: 	30 October 1999
 # Whom:			James Howard <howardjp@wam.umd.edu>
 #
-# $FreeBSD: ports/devel/freelibiberty/Makefile,v 1.4 2000/04/11 21:27:57 mharo Exp $
+# $FreeBSD: ports/devel/freelibiberty/Makefile,v 1.5 2000/06/16 10:37:40 sobomax Exp $
 #
 
 PORTNAME=	freelibiberty
@@ -15,7 +15,7 @@ DISTNAME=	libiberty-${PORTVERSION}
 
 MAINTAINER=	howardjp@wam.umd.edu
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libiberty.a ${PREFIX}/lib

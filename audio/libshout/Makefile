@@ -2,7 +2,7 @@
 # Date created:				06 Jun 2000
 # Whom:					zach@pabst.bendnet.com
 #
-# $FreeBSD: ports/audio/libshout/Makefile,v 1.1 2000/06/07 17:15:02 will Exp $
+# $FreeBSD: ports/audio/libshout/Makefile,v 1.2 2000/06/16 08:47:49 sobomax Exp $
 #
 
 PORTNAME=	libshout
@@ -13,7 +13,7 @@ MASTER_SITES=	http://developer.icecast.org/libshout/releases/
 MAINTAINER=	zach@pabst.bendnet.com
 
 GNU_CONFIGURE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:        11 May 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/gtk--/Makefile,v 1.21 2000/06/14 13:21:04 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtk--/Makefile,v 1.22 2000/06/16 10:38:10 sobomax Exp $
 #
 
 PORTNAME=	gtkmm
@@ -23,7 +23,7 @@ USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-static=yes \
 		--without-gnome

@@ -2,7 +2,7 @@
 # Date created:		14 May 1997
 # Whom:			ejc@bazzle.com
 #
-# $FreeBSD: ports/devel/omniORB/Makefile,v 1.11 2000/04/11 21:29:17 mharo Exp $
+# $FreeBSD: ports/devel/omniORB/Makefile,v 1.12 2000/06/16 08:48:19 sobomax Exp $
 #
 
 PORTNAME=	omniORB
@@ -20,7 +20,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
 USE_NEWGCC=	yes
 USE_GMAKE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 MAKEFILE=	GNUmakefile
 ALL_TARGET=	export
 MAKE_ENV=	CDEBUGFLAGS="${CFLAGS}" CXXDEBUGFLAGS="${CXXFLAGS}" \

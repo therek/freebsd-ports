@@ -2,7 +2,7 @@
 # Date created:        05 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/gtl/Makefile,v 1.3 2000/04/14 08:45:55 asami Exp $
+# $FreeBSD: ports/misc/gtl/Makefile,v 1.4 2000/06/16 10:38:21 sobomax Exp $
 #
 
 PORTNAME=	gtl
@@ -13,7 +13,7 @@ DISTNAME=	GTL-${PORTVERSION}
 
 MAINTAINER=	nakai@FreeBSD.org
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 USE_NEWGCC=	yes
 

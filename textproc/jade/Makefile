@@ -2,7 +2,7 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/jade/Makefile,v 1.23 2000/04/09 21:52:46 cpiazza Exp $
+# $FreeBSD: ports/textproc/jade/Makefile,v 1.24 2000/06/16 10:38:50 sobomax Exp $
 #
 
 PORTNAME=	jade
@@ -22,7 +22,7 @@ BROKEN=		nsgmls coredumps in static constructors
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"
 CONFIGURE_ARGS=	--enable-default-catalog=${PREFIX}/share/sgml/catalog

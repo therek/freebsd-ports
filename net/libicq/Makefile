@@ -2,7 +2,7 @@
 # Date Created:				31 Oct 1998
 # Whom:					Seiichirou Hiraoka
 #
-# $FreeBSD: ports/net/libicq/Makefile,v 1.10 2000/04/09 18:12:01 cpiazza Exp $
+# $FreeBSD: ports/net/libicq/Makefile,v 1.11 2000/06/16 08:47:27 sobomax Exp $
 #
 
 PORTNAME=	libicq
@@ -18,7 +18,7 @@ LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}"
 
 .include <bsd.port.mk>

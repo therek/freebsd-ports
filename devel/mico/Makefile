@@ -2,7 +2,7 @@
 # Date created:        11 July 1998
 # Whom:                Marc G. Fournier <scrappy@freebsd.org>
 #
-# $FreeBSD: ports/devel/mico/Makefile,v 1.42 2000/04/11 21:29:04 mharo Exp $
+# $FreeBSD: ports/devel/mico/Makefile,v 1.43 2000/06/16 08:48:09 sobomax Exp $
 #
 
 PORTNAME=	mico
@@ -19,7 +19,7 @@ MICOVER=	`${ECHO} ${DISTNAME} | ${SED} 's/mico-//'`
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 USE_NEWGCC=	yes
 
 .if defined(QT2)

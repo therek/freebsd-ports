@@ -3,7 +3,7 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.39 2000/05/06 23:25:49 kris Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.40 2000/06/16 10:38:26 sobomax Exp $
 #
 
 PORTNAME=	imap-uw
@@ -22,7 +22,7 @@ MAINTAINER=	imap-uw@freebsd.ady.ro
 
 Y2K=		http://www.washington.edu/imap/IMAP-FAQs/FAQ-00002.html
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 PAMAUTH?=	yes
 .if ${PAMAUTH} != "no"
 ALL_TARGET=	bfp

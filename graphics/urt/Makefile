@@ -2,7 +2,7 @@
 # Date created:		Jan 5 1997
 # Whom:			cfs@ing.puc.cl (original)
 #
-# $FreeBSD: ports/graphics/urt/Makefile,v 1.22 2000/06/15 16:44:02 sobomax Exp $
+# $FreeBSD: ports/graphics/urt/Makefile,v 1.23 2000/06/16 08:19:39 sobomax Exp $
 #
 
 PORTNAME=	urt
@@ -24,7 +24,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libpbm.a:${PORTSDIR}/graphics/netpbm
 EXTRACT_ONLY=	urt-3.1b.tar.Z
 
 USE_XLIB=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 NO_WRKSUBDIR=   yes
 CONFIGURE_SCRIPT=Configure
 CONFIGURE_ARGS=	config/urt

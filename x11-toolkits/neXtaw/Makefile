@@ -2,7 +2,7 @@
 # Date created:		16 January 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/neXtaw/Makefile,v 1.19 2000/06/07 12:19:25 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/neXtaw/Makefile,v 1.20 2000/06/16 08:48:13 sobomax Exp $
 #
 
 PORTNAME=	neXtaw
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.inf.ufrgs.br/~casantos/neXtaw/
 MAINTAINER=	tg@FreeBSD.org
 
 USE_IMAKE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 MAN1=		neXtclock.1
 

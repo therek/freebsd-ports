@@ -2,7 +2,7 @@
 # Date created:				1st June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/oaf/Makefile,v 1.2 2000/06/08 21:25:21 ade Exp $
+# $FreeBSD: ports/devel/oaf/Makefile,v 1.3 2000/06/16 08:48:18 sobomax Exp $
 #
 
 PORTNAME=	oaf
@@ -23,7 +23,7 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
 		--enable-static --enable-shared

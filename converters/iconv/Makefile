@@ -2,7 +2,7 @@
 # Date created:		21 Sep 1999
 # Whom:			joy@urc.ac.ru
 #
-# $FreeBSD: ports/converters/iconv/Makefile,v 1.2 2000/04/08 23:24:30 mharo Exp $
+# $FreeBSD: ports/converters/iconv/Makefile,v 1.3 2000/06/16 10:38:25 sobomax Exp $
 #
 
 PORTNAME=	iconv
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.urc.ac.ru/pub/OS/FreeBSD/converters/
 
 MAINTAINER=	joy@urc.ac.ru
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 MAN1=		iconv.1
 MAN3=		iconv.3 iconv_close.3 iconv_open.3

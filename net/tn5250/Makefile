@@ -2,7 +2,7 @@
 # Date created:			20 January 2000
 # Whom:				Elias Mandouvalos <ocean@compulink.gr>
 #
-# $FreeBSD: ports/net/tn5250/Makefile,v 1.6 2000/06/15 16:43:52 sobomax Exp $
+# $FreeBSD: ports/net/tn5250/Makefile,v 1.7 2000/06/16 08:19:30 sobomax Exp $
 #
 
 PORTNAME=	tn5250
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://cvs.cleveland.lug.net/pub/tn5250/
 MAINTAINER=	ports@FreeBSD.org
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 MAN1=		scs2ascii.1 scs2pdf.1 tn5250.1 lp5250d.1
 

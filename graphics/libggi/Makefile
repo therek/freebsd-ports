@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD: ports/graphics/libggi/Makefile,v 1.2 2000/04/14 10:46:34 asami Exp $
+# $FreeBSD: ports/graphics/libggi/Makefile,v 1.3 2000/06/16 08:47:19 sobomax Exp $
 #
 
 PORTNAME=	libggi
@@ -16,7 +16,7 @@ LIB_DEPENDS=	gii.0:${PORTSDIR}/devel/libgii
 
 USE_BZIP2=	yes
 USE_XLIB=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gii=${PREFIX}
 

@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl83/Makefile,v 1.33 2000/06/15 17:59:37 sobomax Exp $
+# $FreeBSD: ports/lang/tcl83/Makefile,v 1.34 2000/06/16 08:19:19 sobomax Exp $
 #
 
 PORTNAME=	tcl
@@ -22,7 +22,7 @@ Y2K=            http://www.scriptics.com/Y2K.html
 
 PATCH_DIST_ARGS= -d ${WRKDIR}/${DISTNAME} -E ${PATCH_DIST_STRIP}
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}

@@ -2,7 +2,7 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.11 2000/06/01 16:09:56 ade Exp $
+# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.12 2000/06/16 10:37:47 sobomax Exp $
 #
 
 PORTNAME=	gdk-pixbuf
@@ -21,7 +21,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		GTK_CONFIG="${GTK_CONFIG}" \

@@ -2,7 +2,7 @@
 # Date created:		20 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/Wnn/Makefile,v 1.29 2000/04/11 14:12:46 knu Exp $
+# $FreeBSD: ports/japanese/Wnn/Makefile,v 1.30 2000/06/16 10:38:36 sobomax Exp $
 #
 
 PORTNAME=	Wnn
@@ -19,7 +19,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	taoka@FreeBSD.org
 
 USE_XLIB=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 PATCHDIR=	${.CURDIR}/../../japanese/Wnn/patches
 FILESDIR=	${.CURDIR}/../../japanese/Wnn/files
 PKGDIR=		${.CURDIR}/../../japanese/Wnn/pkg

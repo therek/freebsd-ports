@@ -2,7 +2,7 @@
 # Date Created:			26 Sep 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/libgtop/Makefile,v 1.30 2000/06/01 16:10:36 ade Exp $
+# $FreeBSD: ports/devel/libgtop/Makefile,v 1.31 2000/06/16 08:47:23 sobomax Exp $
 #
 
 PORTNAME=	libgtop
@@ -21,7 +21,7 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 USE_PERL5=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \

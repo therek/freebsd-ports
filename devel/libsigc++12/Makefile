@@ -2,7 +2,7 @@
 # Date created:        27 January 2000
 # Whom:                Joe Lu <JoeLu@JoeLu.m8.ntu.edu.tw>
 #
-# $FreeBSD: ports/devel/libsigc++/Makefile,v 1.4 2000/06/14 13:21:11 sobomax Exp $
+# $FreeBSD: ports/devel/libsigc++/Makefile,v 1.5 2000/06/16 08:47:50 sobomax Exp $
 #
 
 PORTNAME=	libsigc++
@@ -15,7 +15,7 @@ MAINTAINER=	JoeLu@JoeLu.m8.ntu.edu.tw
 
 GNU_CONFIGURE=	yes
 USE_NEWGCC=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 post-install:
 .if !defined(NOPORTDOCS)

@@ -2,7 +2,7 @@
 # Date created:		3 June 1995
 # Whom:			roberto
 #
-# $FreeBSD: ports/devel/libgetline/Makefile,v 1.6 2000/04/11 21:28:37 mharo Exp $
+# $FreeBSD: ports/devel/libgetline/Makefile,v 1.7 2000/06/16 08:47:18 sobomax Exp $
 #
 
 PORTNAME=	getline
@@ -17,6 +17,6 @@ MAN3=		getline.3
 
 WRKSRC=		${WRKDIR}/getline-39
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>

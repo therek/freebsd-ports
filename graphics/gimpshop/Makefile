@@ -2,7 +2,7 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.73 2000/06/01 16:25:19 ade Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.74 2000/06/16 10:37:52 sobomax Exp $
 #
 
 PORTNAME=	gimp
@@ -36,7 +36,7 @@ USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 LIBTOOLFLAGS=	--disable-ltlibs --release-ignore
 
 .if !defined(WITH_PERL)

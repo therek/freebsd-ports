@@ -2,7 +2,7 @@
 # Date created:		1 August 1999
 # Whom:			Michael Sardo <jaeger16@yahoo.com>
 #
-# $FreeBSD: ports/x11-toolkits/gtkglarea/Makefile,v 1.6 2000/06/05 11:39:15 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtkglarea/Makefile,v 1.7 2000/06/16 10:38:16 sobomax Exp $
 #
 
 PORTNAME=	gtkglarea
@@ -18,7 +18,7 @@ LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 CONFIGURE_ARGS=	--with-lib-GL
 

@@ -2,7 +2,7 @@
 # Date created:		Mon Jan 18 17:03:33 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pdflib/Makefile,v 1.9 2000/04/09 17:50:24 cpiazza Exp $
+# $FreeBSD: ports/print/pdflib/Makefile,v 1.10 2000/06/16 08:48:22 sobomax Exp $
 #
 
 PORTNAME=	pdflib
@@ -18,7 +18,7 @@ LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 FETCH_BEFORE_ARGS=	-b
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-perl5=${PERL} \
 		--with-tiff=${PREFIX} \

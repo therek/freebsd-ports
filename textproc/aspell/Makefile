@@ -2,7 +2,7 @@
 # Date created:				7 December 1998
 # Whom:					Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/aspell/Makefile,v 1.18 2000/06/15 17:12:40 sobomax Exp $
+# $FreeBSD: ports/textproc/aspell/Makefile,v 1.19 2000/06/16 08:18:18 sobomax Exp $
 #
 
 PORTNAME=	aspell
@@ -18,7 +18,7 @@ LIB_DEPENDS=	pspell.2:${PORTSDIR}/textproc/pspell
 
 USE_NEWGCC=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ENV+=	CXXFLAGS="${CXXFLAGS} -I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 USE_GMAKE=	yes

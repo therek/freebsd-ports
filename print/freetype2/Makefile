@@ -2,7 +2,7 @@
 # Date created:		January 24, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/print/freetype/Makefile,v 1.17 2000/06/14 13:21:32 sobomax Exp $
+# $FreeBSD: ports/print/freetype/Makefile,v 1.18 2000/06/16 10:37:42 sobomax Exp $
 #
 
 PORTNAME=	freetype
@@ -23,7 +23,7 @@ MAINTAINER=	jseger@FreeBSD.org
 
 USE_XLIB=	yes
 USE_GMAKE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-nls --enable-static --enable-shared
 

@@ -2,7 +2,7 @@
 # Date created:				10/23/1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/heimdal/Makefile,v 1.17 2000/05/18 16:18:15 nectar Exp $
+# $FreeBSD: ports/security/heimdal/Makefile,v 1.18 2000/06/16 10:38:23 sobomax Exp $
 #
 
 PORTNAME=		heimdal
@@ -30,7 +30,7 @@ MAN8=			ftpd.8 hprop.8 hpropd.8 kdc.8 kpasswdd.8 kstash.8 \
 			string2key.8
 
 USE_LIBTOOL=		yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=		yes
 CONFIGURE_ARGS=		--prefix=${PREFIX} --enable-shared
 
 .if defined(HEIMDAL_HOME)

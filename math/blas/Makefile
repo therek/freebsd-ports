@@ -2,7 +2,7 @@
 # Date created:         27 October 1994
 # Whom:                 ljo
 #
-# $FreeBSD: ports/math/blas/Makefile,v 1.26 2000/06/15 17:12:43 sobomax Exp $
+# $FreeBSD: ports/math/blas/Makefile,v 1.27 2000/06/16 08:18:19 sobomax Exp $
 #
 
 PORTNAME=	blas
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 NO_WRKSUBDIR=	yes
 
 pre-build:

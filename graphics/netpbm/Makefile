@@ -2,7 +2,7 @@
 # Date created:		?
 # Whom:			jmz (original)
 #
-# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.32 2000/06/14 13:21:21 sobomax Exp $
+# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.33 2000/06/16 08:48:15 sobomax Exp $
 #
 
 PORTNAME=	netpbm
@@ -19,7 +19,7 @@ LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		png.3:${PORTSDIR}/graphics/png
 
 USE_GMAKE=	yes
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 MAKEFILE=	GNUmakefile
 ALL_TARGET=	merge
 INSTALL_TARGET=	install-merge install-dev

@@ -2,7 +2,7 @@
 # Date created:		31 October 1994
 # Whom:			ljo
 #
-# $FreeBSD: ports/math/eispack/Makefile,v 1.25 2000/04/14 07:19:56 asami Exp $
+# $FreeBSD: ports/math/eispack/Makefile,v 1.26 2000/06/16 10:37:23 sobomax Exp $
 #
 
 PORTNAME=	eispack
@@ -18,7 +18,7 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	blas.1:${PORTSDIR}/math/blas
 
 DIST_SUBDIR=	${PORTNAME}
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 NO_WRKSUBDIR=	yes
 
 SRCS =	csroot.f epslon.f pythag.f bakvec.f balanc.f balbak.f bandr.f \

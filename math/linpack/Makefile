@@ -2,7 +2,7 @@
 # Date created:		31 October 1994
 # Whom:			ljo
 #
-# $FreeBSD: ports/math/linpack/Makefile,v 1.25 2000/04/14 07:20:15 asami Exp $
+# $FreeBSD: ports/math/linpack/Makefile,v 1.26 2000/06/16 08:48:05 sobomax Exp $
 #
 
 PORTNAME=	linpack
@@ -17,7 +17,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=    blas.1:${PORTSDIR}/math/blas
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 DIST_SUBDIR=	${PORTNAME}
 NO_WRKSUBDIR=	yes
 
