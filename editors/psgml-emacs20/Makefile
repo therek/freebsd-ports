@@ -3,7 +3,7 @@
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/psgml-emacs20/Makefile,v 1.4 1999/08/25 05:44:10 obrien Exp $
+# $FreeBSD: ports/editors/psgml-emacs20/Makefile,v 1.5 1999/08/31 06:43:15 mharo Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -16,7 +16,7 @@ MASTERDIR=	${.CURDIR}/../psgml-emacs
 # emacs port setup
 EMACS_NAME=	emacs
 EMACS_PORT=	emacs20
-EMACS_VER=	20.4
+EMACS_VER=	20.5
 EMACS_LIBDIR=	share/${EMACS_NAME}
 
 # pkg/* files are used in ${.CURDIR}
