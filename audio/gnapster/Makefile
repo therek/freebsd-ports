@@ -2,13 +2,13 @@
 # Date created:		24 December 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnapster/Makefile,v 1.9 2000/04/04 23:14:56 cpiazza Exp $
+# $FreeBSD: ports/audio/gnapster/Makefile,v 1.10 2000/04/08 21:23:29 mharo Exp $
 #
 
 PORTNAME=	gnapster
-PORTVERSION=	1.3.8
+PORTVERSION=	1.3.9
 CATEGORIES=	audio
-MASTER_SITES=	http://www.gotlinux.org/~jasta/files/
+MASTER_SITES=	http://www.faradic.net/~jasta/files/
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
