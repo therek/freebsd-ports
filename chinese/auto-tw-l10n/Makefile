@@ -2,7 +2,7 @@
 # Date created:		7 Oct 2000
 # Whom:			"Michael C . Wu" <keichii@iteration.net>
 #
-# $FreeBSD: ports/chinese/auto-tw-l10n/Makefile,v 1.5 2000/12/23 06:29:17 clive Exp $
+# $FreeBSD: ports/chinese/auto-tw-l10n/Makefile,v 1.6 2000/12/24 20:42:24 keith Exp $
 
 PORTNAME=	auto-tw-l10n
 PORTVERSION=	1.2
@@ -58,7 +58,7 @@ do-install:
 	@${ECHO} "*************************************************************"
 	@${ECHO} "* 中文大五碼說明:                                           *"
 	@${ECHO} "* 請告知您的使用者比對他們的舊設定跟新設定, 在              *"
-	@${ECHO} "* ${PREFIX}/share/skel/zh_TW.Big5.dot.*                    *"
+	@${ECHO} "* ${PREFIX}/share/skel/zh_TW.Big5/dot.*                     *"
 	@${ECHO} "*************************************************************"
 
 .include <bsd.port.mk>
