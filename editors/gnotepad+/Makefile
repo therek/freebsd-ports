@@ -2,7 +2,7 @@
 # Date created:		08 March 1999
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.9 2000/06/01 16:25:36 ade Exp $
+# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.10 2000/06/14 13:21:12 sobomax Exp $
 #
 
 PORTNAME=	gnotepad+
@@ -18,6 +18,7 @@ DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX} \
 MAINTAINER=	brett@peloton.runet.edu
 
 LIB_DEPENDS=    gnome.4:${PORTSDIR}/x11/gnomelibs
+RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
