@@ -3,7 +3,7 @@
 # Date created:			  Mon Oct 28, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/emulators/spim/Makefile,v 1.15 2000/06/07 22:52:13 asami Exp $
+# $FreeBSD: ports/emulators/spim/Makefile,v 1.16 2000/11/13 12:26:50 obrien Exp $
 #
 
 PORTNAME=	spim
@@ -12,7 +12,7 @@ CATEGORIES=	emulators
 MASTER_SITES=	ftp://ftp.cs.wisc.edu/pub/spim/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 PREFIX?=	${LOCALBASE}
 NO_WRKSUBDIR=	yes
