@@ -2,19 +2,19 @@
 # Date created:				26 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/encompass/Makefile,v 1.17 2001/06/06 10:41:40 sobomax Exp $
 #
 
 PORTNAME=	encompass
 PORTVERSION=	0.4.2
+PORTREVISION=	1
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gtkhtml.10:${PORTSDIR}/www/gtkhtml \
-		neon.15:${PORTSDIR}/www/neon
+LIB_DEPENDS=	neon.15:${PORTSDIR}/www/neon
 
 USE_GNOME=	yes
 USE_X_PREFIX=	yes

@@ -2,21 +2,18 @@
 # Date created:        28 March 2001
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/www/barque/Makefile,v 1.1 2001/03/30 08:45:20 nakai Exp $
+# $FreeBSD: ports/www/barque/Makefile,v 1.2 2001/05/04 21:41:22 ade Exp $
 #
 
 PORTNAME=	barque
 PORTVERSION=	0.1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTFILES=	${PORTNAME}-0.1-2.tar.gz
 
 MAINTAINER=	nakai@FreeBSD.org
-
-LIB_DEPENDS=	gtkhtml.10:${PORTSDIR}/www/gtkhtml \
-		ghttp.1:${PORTSDIR}/www/libghttp
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-0.1-2
 

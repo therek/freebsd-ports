@@ -2,20 +2,18 @@
 # Date created:		05 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/screem/Makefile,v 1.19 2001/03/29 16:34:58 sobomax Exp $
+# $FreeBSD: ports/www/screem/Makefile,v 1.20 2001/05/04 21:41:25 ade Exp $
 #
 
 PORTNAME=	screem
 PORTVERSION=	0.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.screem.org/src/
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
-
-LIB_DEPENDS=	gtkhtml.10:${PORTSDIR}/www/gtkhtml
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

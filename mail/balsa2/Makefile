@@ -2,20 +2,19 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.44 2001/05/04 21:41:14 ade Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.45 2001/05/11 16:36:28 ade Exp $
 #
 
 PORTNAME=	balsa
 PORTVERSION=	1.1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail gnome
 MASTER_SITES=	http://www.theochem.kth.se/~pawsa/balsa/ \
 		ftp://ftp.newton.cx/pub/balsa/
 
 MAINTAINER=	gnome@FreeBSD.org
 
-LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
-		gtkhtml.10:${PORTSDIR}/www/gtkhtml
+LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
