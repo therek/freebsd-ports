@@ -3,11 +3,11 @@
 # Date created:			Jul 20, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/audio/libsndfile/Makefile,v 1.1 2001/07/20 02:45:18 ijliao Exp $
+# $FreeBSD: ports/audio/libsndfile/Makefile,v 1.2 2001/08/24 23:16:41 dwcjr Exp $
 #
 
 PORTNAME=	libsndfile
-PORTVERSION=	0.0.24
+PORTVERSION=	0.0.26
 CATEGORIES=	audio
 MASTER_SITES=	http://www.zip.com.au/~erikd/libsndfile/
 
@@ -21,7 +21,7 @@ PORTDOCS=	ChangeLog NEWS api.html bugs.html index.html libsndfile.jpg \
 		new_file_type.HOWTO sf_info.html
 
 pre-patch:
-	@${PERL} -pi -e 's|-g -O2 |\$$CFLAGS |g' ${WRKSRC}/configure
+	@${PERL} -pi -e 's|-g -O2 ||g' ${WRKSRC}/configure
 
 .if !defined(NOPORTDOCS)
 post-install:
