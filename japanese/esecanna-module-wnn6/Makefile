@@ -3,13 +3,13 @@
 # Date created:		26 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/esecanna-module-wnn6/Makefile,v 1.1.1.1 2000/03/07 09:44:05 flathill Exp $
 #
 
 DISTNAME=	esecanna-module-wnn6_0.13.0
 PKGNAME=	ja-esecanna-module-wnn6-0.13.0
 CATEGORIES=	japanese
-MASTER_SITES=	http://www.idaemons.org/ports/distfiles/ \
+MASTER_SITES=	http://people.FreeBSD.org/~knu/ports/distfiles/ \
 		http://esecanna.netfort.gr.jp/
 
 MAINTAINER=	knu@idaemons.org
