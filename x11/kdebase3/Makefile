@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.72 2001/08/17 17:58:48 will Exp $
 #
 
 PORTNAME=	kdebase
@@ -23,6 +23,7 @@ USE_XPM=	yes
 USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
+CONFIGURE_ENV+=	RUN_KAPPFINDER=no
 CONFIGURE_ARGS+=--with-xdmdir=${X11BASE}/lib/X11/xdm \
 		--with-qt-dir=${X11BASE} \
 		--without-ldap \
