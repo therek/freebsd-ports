@@ -2,7 +2,7 @@
 # Date created:                         03/09/2000
 # Whom:                                 smoberly@xavier.dyndns.org
 #
-# $FreeBSD: ports/deskutils/bulb/Makefile,v 1.3 2000/10/05 07:10:25 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bulb
@@ -10,7 +10,7 @@ PORTVERSION=	1.0.6
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	http://www.idiap.ch/~gobry/bulb/
 
-MAINTAINER=	smoberly@xavier.dyndns.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
