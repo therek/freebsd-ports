@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.397 2004/04/05 03:43:19 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.398 2004/04/06 08:40:04 ale Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1009,3 +1009,4 @@ multimedia/acme|sysutils/gnomecontrolcenter2|2004-04-04|merged into gnomecontrol
 x11/gswitchit|x11/gnomeapplets2|2004-04-04|merged into gnomeapplets2
 devel/gnomevfs-extras|devel/gnomevfs2|2004-04-04|merged into gnomevfs2
 games/scummvm|emulators/scummvm|2004-04-06|new category
+ftp/wget+ipv6||2004-04-06|removed, ftp/wget has this function
