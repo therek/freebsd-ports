@@ -2,11 +2,11 @@
 # Date created:		1 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-dl/Makefile,v 1.7 2001/09/17 17:54:12 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dl
-PORTVERSION=	0.8.1
+PORTVERSION=	0.9
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://kt-www.jaist.ac.jp/~ttate/ftp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -22,6 +22,12 @@ USE_RUBY_EXTCONF=	yes
 INSTALL_TARGET=	site-install
 
 DOCS_EN=	Changes README README.html
+
+.include <bsd.port.pre.mk>
+
+.if ${ARCH} == i386
+CONFIGURE_ARGS+=	--with-asm
+.endif
 
 post-extract:
 	@${ECHO} "LIB= test" > ${WRKSRC}/test/Makefile
@@ -44,4 +50,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/test/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
