@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.120 2002/11/08 18:59:52 sada Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.121 2002/12/25 06:44:28 ijliao Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -84,20 +84,21 @@ MASTER_SITE_GCC+=	\
 	ftp://ftp.dti.ad.jp/pub/lang/gcc/%SUBDIR%/
 
 MASTER_SITE_GNOME+=	\
-	ftp://archive.progeny.com/GNOME/%SUBDIR%/ \
-	ftp://ftp.rpmfind.net/linux/gnome.org/%SUBDIR%/ \
+	http://archive.progeny.com/GNOME/%SUBDIR%/ \
+	http://ftp.rpmfind.net/linux/gnome.org/%SUBDIR%/ \
 	ftp://ftp.mirror.ac.uk/sites/ftp.gnome.org/pub/GNOME/%SUBDIR%/ \
-	ftp://fr.rpmfind.net/linux/gnome.org/%SUBDIR%/ \
-	ftp://ftp.linux.org.uk/mirrors/ftp.gnome.org/%SUBDIR%/ \
+	http://fr.rpmfind.net/linux/gnome.org/%SUBDIR%/ \
+	http://ftp.linux.org.uk/mirrors/ftp.gnome.org/%SUBDIR%/ \
+	http://planetmirror.com/pub/GNOME/%SUBDIR%/ \
 	ftp://ftp.dit.upm.es/linux/gnome/%SUBDIR%/ \
 	ftp://ftp.dataplus.se/pub/linux/gnome/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/X11/gnome/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/pub/GNOME/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/X/gnome/%SUBDIR%/ \
+	http://mirror.aarnet.edu.au/pub/GNOME/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/gnome/&,} \
 	ftp://ftp.tr.gnome.org/pub/GNOME/%SUBDIR%/ \
 	ftp://ftp.cse.buffalo.edu/pub/Gnome/%SUBDIR%/ \
-	ftp://ftp.sunet.se/pub/X11/GNOME/%SUBDIR%/ \
 	ftp://ftp.no.gnome.org/pub/GNOME/%SUBDIR%/
 
 MASTER_SITE_GNU+=	\
