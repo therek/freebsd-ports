@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.11 2000/09/21 08:36:26 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.12 2000/09/21 23:56:38 kris Exp $
 #
 
 MASTER_SITE_XCONTRIB+=	\
@@ -175,8 +175,8 @@ MASTER_SITE_RUBY+= \
 	ftp://ftp.netlab.co.jp/pub/lang/ruby/%SUBDIR%/ \
 	ftp://ftp.TokyoNet.AD.JP/pub/misc/ruby/%SUBDIR%/ \
 	ftp://ftp.iij.ad.jp/pub/lang/ruby/%SUBDIR%/ \
-	ftp://blade.nagaokaut.ac.jp/pub/lang/ruby/%SUBDIR%/ \
 	ftp://ftp.krnet.ne.jp/pub/ruby/%SUBDIR%/ \
+	ftp://ftp.nctu.edu.tw/computer-languages/ruby/%SUBDIR%/ \
 	ftp://mirror.nucba.ac.jp/mirror/ruby/%SUBDIR%/
 
 MASTER_SITE_THEMES+= \
