@@ -2,7 +2,7 @@
 # Date created:			31 October 1998
 # Whom:				shige
 #
-# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.51 2000/09/06 15:07:31 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zsh
@@ -38,6 +38,12 @@ MAN1=		zsh.1 zshbuiltins.1 zshcompctl.1 zshexpn.1 zshmisc.1 \
 		zshoptions.1 zshall.1 zshparam.1 zshzle.1 zshmodules.1 \
 		zshzftpsys.1 zshcompsys.1 zshcompwid.1
 PLIST_SUB=	ZSH_VER="${ZSH_VER}" ZSHFUNC_SUBDIR="${ZSHFUNC_SUBDIR}"
+
+pre-everything::
+	@${ECHO} "The main zsh port (ports/shells/zsh) has been upgraded"
+	@${ECHO} "to 4.0.1.  It is highly advised that you use that port"
+	@${ECHO} "instead of this one."
+	@${FALSE}
 
 # If you want to build a static binary, uncomment the following line
 #LDFLAGS+=-static
