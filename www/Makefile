@@ -1,8 +1,9 @@
-# $FreeBSD: ports/www/Makefile,v 1.307 2001/02/26 10:36:25 demon Exp $
+# $FreeBSD: ports/www/Makefile,v 1.308 2001/03/03 08:58:04 knu Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
     SUBDIR += WebMagick
+    SUBDIR += adzap
     SUBDIR += adzapper
     SUBDIR += amaya
     SUBDIR += analog
