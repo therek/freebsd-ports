@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.116 2000/09/01 16:44:19 taoka Exp $
+# $FreeBSD: ports/print/Makefile,v 1.117 2000/09/14 00:54:31 asami Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -92,6 +92,7 @@
     SUBDIR += rlpr
     SUBDIR += rtf2latex
     SUBDIR += ruby-clibpdf
+    SUBDIR += sgf2tex
     SUBDIR += t1utils
     SUBDIR += teTeX
     SUBDIR += tex
