@@ -3,7 +3,7 @@
 # Date created:			  Thur Dec 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.14 2001/08/20 22:10:50 obrien Exp $
+# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.15 2001/08/27 20:47:02 obrien Exp $
 #
 
 PORTNAME=	compaq-cc
@@ -23,7 +23,6 @@ MAINTAINER=	obrien@FreeBSD.org
 RESTRICTED=	"Distribution not allowed"
 
 BUILD_DEPENDS=	rpm:${PORTSDIR}/archivers/rpm
-RUN_DEPENDS=	${LINUXBASE}/lib/ld-linux.so.2:${PORTSDIR}/emulators/linux_base
 
 ONLY_FOR_ARCHS=	alpha
 
@@ -42,6 +41,7 @@ NO_WRKSUBDIR=		yes
 NO_BUILD=		yes
 NO_FILTER_SHLIBS=	yes
 NO_MTREE=		yes
+USE_LINUX=		yes
 
 do-install:
 	@if [ -z "`kldstat -v | ${GREP} -E 'linux'`" ]; then \
