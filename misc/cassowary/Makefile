@@ -3,7 +3,7 @@
 # Date created:        01 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD>org>
 #
-# $FreeBSD: ports/misc/cassowary/Makefile,v 1.4 2000/01/12 05:59:52 nakai Exp $
+# $FreeBSD: ports/misc/cassowary/Makefile,v 1.5 2000/01/31 06:45:21 nakai Exp $
 #
 
 DISTNAME=	cassowary-0.55
@@ -16,10 +16,11 @@ BUILD_DEPENDS=	guile:${PORTSDIR}/lang/guile
 LIB_DEPENDS=	GTL.3:${PORTSDIR}/misc/gtl
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=	--with-guile-prefix=${LOCALBASE} \
+CONFIGURE_ARGS=	--with-guile-prefix=${LOCALBASE} \
 		--enable-guile-build \
 		--enable-permissive
 USE_GMAKE=	yes
 USE_NEWGCC=	yes
+USE_BISON=	yes
 
 .include <bsd.port.mk>
