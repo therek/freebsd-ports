@@ -5,7 +5,7 @@
 # Based on:		emulators/linux_base by marcel@FreeBSD.org
 #			& graphics/xmovie by sanpei@sanpei.org
 #
-# $FreeBSD: ports/x11-toolkits/linux-gtk/Makefile,v 1.2 2000/06/12 07:54:07 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/linux-gtk/Makefile,v 1.3 2000/11/01 09:55:05 obrien Exp $
 #
 
 PORTNAME?=	gtk
@@ -18,7 +18,11 @@ DISTFILES=	${RPM_SET}
 MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	rpm:${PORTSDIR}/misc/rpm
+.if (${MACHINE_ARCH} == "i386")
 RUN_DEPENDS=	/compat/linux/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
+.elif (${MACHINE_ARCH} == "alpha")
+RUN_DEPENDS=	/compat/linux/lib/libc.so.6.1:${PORTSDIR}/emulators/linux_base
+.endif
 
 ONLY_FOR_ARCHS=	i386 alpha
 DIST_SUBDIR=	rpm
