@@ -2,17 +2,17 @@
 # Date created:        17 Feb 1999
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/audio/shorten/Makefile,v 1.6 2000/11/02 22:40:59 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	shorten
-PORTVERSION=	3.3
+PORTVERSION=	3.4
 CATEGORIES=	audio archivers
-MASTER_SITES=	http://shnutils.etree.org/misc/
+MASTER_SITES=	http://shnutils.etree.org/shorten/source/
 
 MAINTAINER=	sec@42.org
 
-RESTRICTED=	"May not be sold."
+RESTRICTED=	"May not be sold, may not be used commercially."
 
 GNU_CONFIGURE=	yes
 
