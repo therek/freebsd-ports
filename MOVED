@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.390 2004/03/27 20:54:58 nork Exp $
+# $FreeBSD: ports/MOVED,v 1.391 2004/03/28 05:05:06 kris Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1000,3 +1000,4 @@ mail/mew-xemacs21|mail/mew|2004-03-28|removed old version of xemacs 21.x
 mail/mew2-xemacs21|mail/mew2|2004-03-28|removed old version of xemacs 21.x
 mail/mew3-xemacs21|mail/mew3|2004-03-28|removed old version of xemacs 21.x
 net/memcached|databases/memcached|2004-03-27|remove duplicate port
+japanese/emacs21-emcws|japanese/emacs-emcws|2004-03-29|emacs 21.x moved to default port location
