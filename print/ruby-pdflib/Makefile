@@ -2,7 +2,7 @@
 # Date created:		21 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/ruby-pdflib/Makefile,v 1.1 2001/02/21 03:55:32 knu Exp $
 #
 
 PORTNAME=	pdflib
@@ -15,7 +15,10 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	pdf.3:${PORTSDIR}/print/pdflib3
+LIB_DEPENDS=	pdf.3:${PORTSDIR}/print/pdflib3 \
+		jpeg.9:${PORTSDIR}/graphics/jpeg \
+		png.4:${PORTSDIR}/graphics/png \
+		tiff.4:${PORTSDIR}/graphics/tiff
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
