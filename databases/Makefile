@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.77 2000/10/03 20:55:15 nectar Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.78 2000/10/05 01:35:17 jeh Exp $
 #
     SUBDIR += zpygresqlda
     SUBDIR += cdb
@@ -26,6 +26,8 @@
     SUBDIR += mysql-navigator
     SUBDIR += mysql322-client
     SUBDIR += mysql322-server
+    SUBDIR += mysql323-client
+    SUBDIR += mysql323-server
     SUBDIR += mysqltcl
     SUBDIR += mytop
     SUBDIR += p5-DBD-CSV
