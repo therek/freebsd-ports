@@ -2,7 +2,7 @@
 # Date created:				June 6th 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/mail/abook/Makefile,v 1.1 2001/02/15 17:14:07 ijliao Exp $
+# $FreeBSD: ports/mail/abook/Makefile,v 1.2 2001/03/21 05:13:52 kevlo Exp $
 #
 
 PORTNAME=	abook
@@ -22,5 +22,6 @@ LIB_DEPENDS=	ncurses.5:${PORTSDIR}/devel/ncurses
 GNU_CONFIGURE=	yes
 
 MAN1=		abook.1
+MAN5=		abookrc.5
 
 .include <bsd.port.post.mk>
