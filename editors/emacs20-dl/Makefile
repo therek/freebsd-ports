@@ -2,7 +2,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.19 2001/01/16 17:30:25 sobomax Exp $
+# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.20 2001/04/20 20:26:53 shige Exp $
 #
 
 PORTNAME=	emacs-dl
@@ -47,11 +47,11 @@ PLIST_SUB=	EMACS_VER=${EMACS_VER} EMACS_ARCH=${CONFIGURE_TARGET} \
 SCRIPTS_ENV=	SED=${SED} MV=${MV} \
 		DOC_FILE=${DOC_FILE}
 
+.include <bsd.port.pre.mk>
+
 .if defined(WITH_XPG4)
-.if ${OSVERSION} >= 220000 && ${OSVERSION} < 400020
-CONFIGURE_ARGS+=	--with-xpg4
-.endif
-.if ${OSVERSION} >= 500000 && ${OSVERSION} < 500005
+.if ${OSVERSION} >= 220000 && ${OSVERSION} < 400020 || \
+	${OSVERSION} >= 500000 && ${OSVERSION} < 500005
 CONFIGURE_ARGS+=	--with-xpg4
 .endif
 .endif
@@ -64,4 +64,4 @@ do-install:
 	@${INSTALL} -c -s -m 555 -o root -g wheel ${WRKSRC}/src/emacs ${PREFIX}/bin/emacs-dl-${EMACS_VER}
 	@${INSTALL_DATA} ${WRKSRC}/etc/DOC ${PREFIX}/share/emacs/${EMACS_VER}/etc/${DOC_FILE}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
