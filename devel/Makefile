@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/Makefile,v 1.504 2001/04/13 15:35:58 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -390,6 +390,7 @@
     SUBDIR += ruby-intl
     SUBDIR += ruby-lapidary
     SUBDIR += ruby-libglade
+    SUBDIR += ruby-libgtop
     SUBDIR += ruby-locale
     SUBDIR += ruby-metaruby
     SUBDIR += ruby-mmap
