@@ -2,7 +2,7 @@
 # Date created:		09 July 1998
 # Whom:			Adrian Penisoara <ady@freebsd.ady.ro>
 #
-# $FreeBSD: ports/mail/pine4/Makefile,v 1.49 2001/02/10 22:40:57 sf Exp $
+# $FreeBSD: ports/mail/pine4/Makefile,v 1.50 2001/02/11 22:05:16 sf Exp $
 #
 # The changes to ?= on some of these lines is required for the
 # pine4-ssl port. Also, please mirror changes to the files/
@@ -10,6 +10,7 @@
 
 PORTNAME?=	pine
 PORTVERSION?=	4.33
+PORTREVISION=	1
 CATEGORIES=	mail news
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/
 DISTNAME?=	${PORTNAME}${PORTVERSION}
