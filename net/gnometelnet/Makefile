@@ -2,11 +2,11 @@
 # Date created:				2 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gnometelnet/Makefile,v 1.5 2000/11/01 15:51:07 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnometelnet
-PORTVERSION=	2.2
+PORTVERSION=	2.4
 CATEGORIES=	net gnome
 MASTER_SITES=	http://www.cyest.org/downloads/
 DISTNAME=	${PORTNAME:S/gnome/gnome-/}-${PORTVERSION}
