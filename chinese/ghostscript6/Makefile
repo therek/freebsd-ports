@@ -2,11 +2,11 @@
 # Date created:		Nov 27 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/ghostscript6/Makefile,v 1.3 2001/04/20 03:57:05 keith Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ghostscript
-PORTVERSION=	6.51
+PORTVERSION=	6.52
 CATEGORIES=	chinese print
 MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/CID/CMap/ \
 		ftp://freebsd.sinica.edu.tw/pub/keith/GS6TTF/ \
