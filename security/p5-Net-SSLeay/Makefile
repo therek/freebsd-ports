@@ -2,11 +2,11 @@
 # Date created:				April 17th 2000
 # Whom:	      				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/security/p5-Net-SSLeay/Makefile,v 1.12 2001/05/10 01:20:52 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Net-SSLeay
-PORTVERSION=	1.09
+PORTVERSION=	1.12
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
