@@ -1,9 +1,10 @@
+# ex:ts=8
 # New ports collection makefile for:	stlport
 # Version required:	3.01
 # Date Created:		2 December 1998
 # Whom:			Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/devel/stlport/Makefile,v 1.3 1999/08/25 05:50:16 obrien Exp $
+# $FreeBSD: ports/devel/stlport/Makefile,v 1.4 1999/10/21 19:02:28 fenner Exp $
 #
 
 DISTNAME=	STLport-3.01
@@ -11,6 +12,8 @@ PKGNAME=	stlport-3.01
 CATEGORIES=	devel
 MASTER_SITES=	http://corp.metabyte.com/~fbp/stl/ \
 		ftp://maroon.webmaster.com/pub/STLport/
+
+MAINTAINER=	obrien@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 GNU_CONFIGURE=	yes

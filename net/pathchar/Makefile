@@ -1,9 +1,10 @@
+# ex:ts=8
 # New ports collection makefile for:  pathchar
 # Version required:    a0 (a.out systems), a1 (ELF systems)
 # Date created:        7 November 1998
 # Whom:                Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/net/pathchar/Makefile,v 1.6 1999/08/30 14:23:45 peter Exp $
+# $FreeBSD: ports/net/pathchar/Makefile,v 1.7 1999/10/21 19:02:26 fenner Exp $
 #
 
 DISTNAME=	pathchar-a1-freebsd-3.0
@@ -12,6 +13,8 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/pathchar/  \
 		http://www.caida.org/Tools/Pathchar/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} pathcharnotes.html
+
+MAINTAINER=	obrien@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
