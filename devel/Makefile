@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.419 2001/01/17 20:47:03 vanilla Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.420 2001/01/19 06:16:45 knu Exp $
 #
     SUBDIR += zziplib
 
@@ -236,6 +236,7 @@
     SUBDIR += p5-Devel-DProf
     SUBDIR += p5-Devel-Peek
     SUBDIR += p5-Devel-Symdump
+    SUBDIR += p5-Dialog
     SUBDIR += p5-Errno
     SUBDIR += p5-File-BasicFlock
     SUBDIR += p5-File-Binary
