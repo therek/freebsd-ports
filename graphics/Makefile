@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.242 2000/11/03 17:03:25 trevor Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.243 2000/11/03 17:08:13 trevor Exp $
 #
 
     SUBDIR += 4va
@@ -94,6 +94,7 @@
     SUBDIR += killustrator
     SUBDIR += kplot3d
     SUBDIR += lcms
+    SUBDIR += leafpak
     SUBDIR += lfview
     SUBDIR += libdjvu++
     SUBDIR += libflash
