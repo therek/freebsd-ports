@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/open-motif/pkg-plist,v 1.11 2001/11/23 08:48:03 sf Exp $
+@comment $FreeBSD: ports/x11-toolkits/open-motif/pkg-plist,v 1.12 2002/09/13 18:42:27 ijliao Exp $
 %%MOTIF_DEMOS%%bin/DNDDemo
 %%MOTIF_DEMOS%%bin/airport
 %%MOTIF_DEMOS%%bin/autopopups
@@ -352,4 +352,5 @@ share/doc/open-motif/RELNOTES
 %%MOTIF_DEMOS%%@dirrm lib/X11/help
 @dirrm lib/X11/bindings
 @dirrm include/uil
+@dirrm include/Mrm
 @dirrm include/Xm
