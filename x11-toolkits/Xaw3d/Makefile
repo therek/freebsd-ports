@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.32 2000/06/16 21:52:14 asami Exp $
+# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.33 2000/10/08 10:23:43 asami Exp $
 #
 
 PORTNAME=	Xaw3d
@@ -41,7 +41,7 @@ post-install:
 	${MKDIR} ${PREFIX}/share/doc/Xaw3d
 	${CP} ${WRKSRC}/README.XAW3D ${PREFIX}/share/doc/Xaw3d
 .if exists(${X11BASE}/bin/XFree86)
-	${LN} ${X11BASE}/lib/libXaw3d.so.7 ${X11BASE}/lib/libXaw3d.so.6
+	${LN} -sf ${X11BASE}/lib/libXaw3d.so.7 ${X11BASE}/lib/libXaw3d.so.6
 .endif
 	@${CAT} ${PKGMESSAGE}
 
