@@ -1,6 +1,7 @@
-@comment $FreeBSD: ports/mail/popa3d/pkg-plist,v 1.4 2002/01/12 13:04:41 dinoex Exp $
+@comment $FreeBSD: ports/mail/popa3d/pkg-plist,v 1.5 2002/01/13 10:39:01 dinoex Exp $
+@exec mkdir -p %D/empty
+@dirrm empty
 libexec/popa3d
 %%PORTDOCS%%share/doc/popa3d/DESIGN
 %%PORTDOCS%%share/doc/popa3d/LICENSE
 %%PORTDOCS%%@dirrm share/doc/popa3d
-%%PORTDOCS%%@dirrm empty
