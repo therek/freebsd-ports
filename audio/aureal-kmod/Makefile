@@ -2,7 +2,7 @@
 # Date created:				15 January 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/aureal-kmod/Makefile,v 1.4 2001/01/28 09:10:08 sobomax Exp $
+# $FreeBSD: ports/audio/aureal-kmod/Makefile,v 1.5 2001/02/05 15:26:12 sobomax Exp $
 #
 
 PORTNAME=	aureal-kmod
@@ -33,7 +33,7 @@ VERSION_SOUND_C!=	${AWK} '/.*\$$FreeBSD/ { print $$4; exit; }' \
 VERSION_SOUND_C=
 .endif
 
-VERSION_SOUND_C:=	${VERSION_SOUND_C:S/.//g}
+VERSION_SOUND_C:=	${VERSION_SOUND_C:S/1.17.2.//}
 
 .if ${OSVERSION} < 410000
 BROKEN=		"FreeBSD 3.*, 4.0 are not supported"
@@ -47,7 +47,7 @@ PORTREVISION=	2
 # FreeBSD 4.2
 PORTVERSION=    1.3
 
-.if ${VERSION_SOUND_C} < 11724
+.if ${VERSION_SOUND_C} < 4
 # FreeBSD 4.2 before kobj MFC
 PORTREVISION=	1
 
