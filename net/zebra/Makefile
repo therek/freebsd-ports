@@ -2,7 +2,7 @@
 # Date created:		So  31 Mai 1998 11:00:30 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/zebra/Makefile,v 1.38 2000/08/18 14:33:07 joe Exp $
+# $FreeBSD: ports/net/zebra/Makefile,v 1.39 2000/10/03 13:14:28 andreas Exp $
 #
 
 PORTNAME=	zebra
@@ -25,8 +25,7 @@ MAN8=		bgpd.8 ospf6d.8 ospfd.8 ripd.8 ripngd.8 zebra.8
 .if ${OSVERSION} >= 400014
 PLIST:=         ${WRKDIR}/PLIST
 pre-install:
-	@${CAT} ${PKGDIR}/PLIST.v6 > ${PLIST}
-	@${CAT} ${PKGDIR}/PLIST >> ${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist.v6 ${PKGDIR}/pkg-plist ${PLIST}
 .else
 CONFIGURE_ARGS+=--disable-ospf6d --disable-ripngd
 .endif
