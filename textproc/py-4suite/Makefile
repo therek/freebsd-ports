@@ -2,11 +2,11 @@
 # Date created:		16 March 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/py-4suite/Makefile,v 1.1 2001/03/23 00:54:36 jeh Exp $
 #
 
 PORTNAME=	4suite
-PORTVERSION=	0.10.2
+PORTVERSION=	0.11
 CATEGORIES=	textproc python
 MASTER_SITES=	ftp://ftp.4suite.org/pub/4Suite/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,22 +14,26 @@ DISTNAME=	4Suite-${PORTVERSION}
 
 MAINTAINER=	johann@egenetics.com
 
-BUILD_DEPENDS=	${PYDISTUTILS}
-RUN_DEPENDS=	${PYXML}
+BUILD_DEPENDS=	${PYDISTUTILS} \
+		${PYXML}
 
 USE_PYTHON=	yes
-INSTALLS_SHLIB=	yes
 
 .include <bsd.port.pre.mk>
-.if ${PYTHON_VERSION} == "python1.5"
+.if ${PYTHON_VERSION} == "python1.5" || ${PYTHON_VERSION} == "python1.6"
 PLIST_SUB+=	PACKAGE_DIR=xml PYTHON2_ONLY="@comment "
 .else
 PLIST_SUB+=	PACKAGE_DIR=_xmlplus PYTHON2_ONLY=""
 .endif
 
 post-patch:
+	@ ${PERL} -pi -e \
+	  's#(copy_to=.)docs#$$1doc/py-${PORTNAME}#; \
+	   s#(copy_to=.)(test_suite|demo)#$$1examples/py-${PORTNAME}/$$2#' \
+	  ${WRKSRC}/setup.py
 .if defined(NOPORTDOCS)
-	@ ${PERL} -pi -e '/^data_files\.extend/ && s/^/#/' ${WRKSRC}/setup.py
+	@ ${PERL} -pi -e 's/(data_files=)data_files + /$$1/' \
+	  ${WRKSRC}/setup.py
 .endif
 
 do-build:
@@ -37,6 +41,6 @@ do-build:
 
 do-install:
 	@ cd ${WRKSRC} && ${PYTHON_CMD} setup.py install -c -O1 \
-	  --prefix=${PREFIX}
+	  --prefix=${PREFIX} --install-data=${PREFIX}/share
 
 .include <bsd.port.post.mk>
