@@ -2,14 +2,14 @@
 # Date created:         20 July 1997
 # Whom:                 Yukihiro Nakai<Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.18 2000/03/12 07:03:04 asami Exp $
+# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.19 2000/04/12 04:55:47 mharo Exp $
 #
 
 PORTNAME=	snes9x
-PORTVERSION=	1.29
+PORTVERSION=	1.32
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.snes9x.com/zips/
-DISTNAME=	s9xs129
+DISTNAME=	s9xs132
 
 MAINTAINER=	nakai@FreeBSD.org
 
@@ -42,6 +42,5 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/snes9x ${PREFIX}/bin
-	${INSTALL_PROGRAM} ${WRKSRC}/s9xserver ${PREFIX}/bin
 
 .include <bsd.port.mk>
