@@ -2,16 +2,16 @@
 # Date created:		06 Mar 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/ude/Makefile,v 1.6 2000/06/22 05:52:15 will Exp $
+# $FreeBSD: ports/x11-wm/ude/Makefile,v 1.7 2000/08/03 09:28:16 asami Exp $
 #
 
 PORTNAME=	ude
-PORTVERSION= 	0.2.7.1
+PORTVERSION= 	0.2.7b.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ude.the-coffeeshop.dk/pub/UDE/
 MASTER_SITE_SUBDIR=	udeproject
-DISTNAME=	${PORTNAME}-0.2.7-BETA
+DISTNAME=	${PORTNAME}-0.2.7b-BETA
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -22,5 +22,17 @@ USE_XPM=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -lintl"
+
+post-install:
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/ude
+	${INSTALL_DATA} ${WRKSRC}/doc/*.lyx ${PREFIX}/share/doc/ude
+	${INSTALL_DATA} ${WRKSRC}/doc/*.tex ${PREFIX}/share/doc/ude
+	${INSTALL_DATA} ${WRKSRC}/doc/*.txt ${PREFIX}/share/doc/ude
+	@${MKDIR} ${PREFIX}/share/doc/ude/html
+	${INSTALL_DATA} ${WRKSRC}/doc/html/*.html ${PREFIX}/share/doc/ude/html
+	@${MKDIR} ${PREFIX}/share/doc/ude/html/uwm
+	${INSTALL_DATA} ${WRKSRC}/doc/html/uwm/*.html ${PREFIX}/share/doc/ude/html/uwm
+.endif
 
 .include <bsd.port.mk>
