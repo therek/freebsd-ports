@@ -2,11 +2,11 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++/Makefile,v 1.29 2000/10/19 14:43:40 kevlo Exp $
+# $FreeBSD: ports/audio/timidity++/Makefile,v 1.30 2001/01/23 14:45:52 sf Exp $
 #
 
 PORTNAME=	timidity++
-PORTVERSION=	2.10.2
+PORTVERSION=	2.10.3
 CATEGORIES=	audio
 MASTER_SITES=	http://www.goice.co.jp/member/mo/timidity/dist/
 DISTNAME=	TiMidity++-${PORTVERSION}
@@ -20,7 +20,8 @@ SLAVEDIRS=	audio/timidity++-emacs
 # rest are included by timidity++-emacs port
 SLAVEDIRS+=	audio/timidity++-gtk audio/timidity++-motif \
 		audio/timidity++-slang audio/timidity++-tcltk \
-		audio/timidity++-xaw audio/timidity++-xskin
+		audio/timidity++-xaw audio/timidity++-xskin \
+		japanese/timidity++-slang japanese/timidity++-tcltk
 USE_BZIP2=	yes
 WANT_ESOUND=	yes
 GNU_CONFIGURE=	yes
