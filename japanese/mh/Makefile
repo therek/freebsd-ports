@@ -2,11 +2,12 @@
 # Date created:		28 March 1995
 # Whom:			Akito FUJITA <fujita@zoo.ncl.omron.co.jp>
 #
-# $FreeBSD: ports/japanese/mh/Makefile,v 1.19 2000/04/11 14:15:04 knu Exp $
+# $FreeBSD: ports/japanese/mh/Makefile,v 1.20 2000/06/17 05:33:59 knu Exp $
 #
 
 PORTNAME=	mh
 PORTVERSION=	${VERSION}.j${JP_VERSION}
+PORTREVISION=	1
 CATEGORIES=	japanese mail
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		ftp://komadori.planet.sci.kobe-u.ac.jp/pub/MH/ \
@@ -35,5 +36,15 @@ MAN8=	ap.8 conflict.8 dp.8 fmtdump.8 install-mh.8 post.8
 MANLANG=	"" ja
 MANCOMPRESSED=	yes
 INSTALLS_SHLIB=	yes
+
+DOCDIR=		${PREFIX}/share/doc/${PKGBASE}
+READMES=	00.READ.ME.1ST CHANGES.JP COMMANDS.JP FAQ.JP FEATURES.JP \
+		INSTALL.JP OPTIONS.JP READ-ME.JP TODO.JP
+
+post-install:
+.if !defined(NOPORTDOCS)
+	${MKDIR} ${DOCDIR}
+	(cd ${WRKSRC}/doc-JP; ${INSTALL_DATA} ${READMES} ${DOCDIR}) 
+.endif
 
 .include <bsd.port.mk>
