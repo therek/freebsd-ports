@@ -2,7 +2,7 @@
 # Date created:		10 February 1998
 # Whom:			FURUSAWA,Kazuhisa <kazu@jp.freebsd.org>
 #
-# $FreeBSD: ports/games/xbloody/Makefile,v 1.3 1999/08/25 06:04:49 obrien Exp $
+# $FreeBSD: ports/games/xbloody/Makefile,v 1.4 2000/04/14 12:27:04 asami Exp $
 #
 
 PORTNAME=	xbloody
@@ -15,7 +15,6 @@ MAINTAINER=	kazu@jp.freebsd.org
 
 NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes
-NO_INSTALL_MANPAGES= yes
 
 post-install:
 .if !defined(NOPORTDOCS)
