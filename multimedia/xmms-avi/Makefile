@@ -2,7 +2,7 @@
 # Date created:			  Feb 6 2000
 # Whom:				  Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xmms-avi/Makefile,v 1.1 2001/03/20 02:32:41 will Exp $
 #
 
 PORTNAME=	xmms-avi
@@ -14,6 +14,8 @@ MASTER_SITES=	http://www.xmms.org/files/plugins/avi-xmms/ \
 DISTNAME=	avi-xmms-${PORTVERSION}
 
 MAINTAINER=	roman@xpert.com
+
+BROKEN=		Maintainer is working on a fix
 
 BUILD_DEPENDS=	xmms-config:${PORTSDIR}/audio/xmms
 LIB_DEPENDS=	aviplay.0:${PORTSDIR}/graphics/avifile
