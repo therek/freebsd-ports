@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php5/scripts/configure.php,v 1.9 2003/07/17 08:52:24 nork Exp $
+# $FreeBSD: ports/lang/php5/scripts/configure.php,v 1.10 2003/09/24 08:49:20 edwin Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -47,6 +47,7 @@ MCRYPT		"Encryption support" ${WITH_MCRYPT:-OFF} \
 MHASH		"Crypto-hashing support" ${WITH_MHASH:-OFF} \
 MIME		"mime_magic support" ${WITH_MIME:-OFF} \
 MING		"ming shockwave flash support" ${WITH_MING:-OFF} \
+MNOGOSEARCH	"mnoGoSearch support" ${WITH_MNOGOSEARCH:-OFF} \
 MYSQL		"MySQL database support" ${WITH_MYSQL:-OFF} \
 NCURSES		"ncurses support (CLI only)" ${WITH_NCURSES:-OFF} \
 OPENLDAP	"OpenLDAP support" ${WITH_OPENLDAP:-OFF} \
