@@ -3,7 +3,7 @@
 # Date created:			  28 Mar 1998
 # Whom:				  bsdx
 #
-# $FreeBSD: ports/net/sniffit/Makefile,v 1.12 2000/06/07 17:44:39 obrien Exp $
+# $FreeBSD: ports/net/sniffit/Makefile,v 1.13 2000/06/29 02:31:36 asami Exp $
 #
 
 PORTNAME=	sniffit
@@ -13,6 +13,10 @@ MASTER_SITES=	http://reptile.rug.ac.be/~coder/sniffit/files/  \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	obrien
 DISTNAME=	sniffit.0.3.7.beta
+
+PATCH_SITES=	http://ftp.debian.org/debian/dists/stable/main/source/net/
+PATCHFILES=	sniffit_0.3.7.beta-6.1.diff.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	obrien@FreeBSD.org
 
