@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.238 2001/07/07 03:16:34 ijliao Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.239 2001/07/07 14:44:00 ijliao Exp $
 #
 
     SUBDIR += abook
@@ -155,6 +155,7 @@
     SUBDIR += qmailadmin
     SUBDIR += qmailanalog
     SUBDIR += qpopper
+    SUBDIR += qtools
     SUBDIR += rblcheck
     SUBDIR += rftp
     SUBDIR += ripmime
