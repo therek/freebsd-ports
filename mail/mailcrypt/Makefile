@@ -3,7 +3,7 @@
 # Date created:        29 May 1998
 # Whom:                Murray Stokely <murray@cdrom.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mailcrypt/Makefile,v 1.3 1999/08/25 06:50:16 obrien Exp $
 #
 
 DISTNAME=	mailcrypt-3.4
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	mailcrypt
 
 MAINTAINER=	murray@cdrom.com
 
-BROKEN= 	"requires emacs to build but has no dependency for it."
+BUILD_DEPENDS=	emacs:${PORTSDIR}/editors/emacs
 
 GNU_CONFIGURE=	yes
 
