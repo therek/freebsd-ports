@@ -2,7 +2,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.77 2000/11/08 09:55:54 sobomax Exp $
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.78 2001/01/08 02:09:08 sobomax Exp $
 #
 
 PORTNAME=	windowmaker
@@ -19,6 +19,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 
 MAINTAINER=	sobomax@FreeBSD.org
 
+BUILD_DEPENDS=	${LOCALBASE}/lib/libfreetype.a:${PORTSDIR}/print/freetype2
 LIB_DEPENDS=	ungif.5:${PORTSDIR}/graphics/libungif \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png \
