@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.40 1999/09/19 20:07:39 nectar Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.41 1999/09/24 16:16:01 taoka Exp $
 #
 
     SUBDIR += FWF
@@ -31,7 +31,7 @@
     SUBDIR += py-wxPython
     SUBDIR += qt-i18n
     SUBDIR += qt142
-    SUBDIR += qt201
+    SUBDIR += qt20
     SUBDIR += ruby-gtk
     SUBDIR += rubytk
     SUBDIR += slingshot
