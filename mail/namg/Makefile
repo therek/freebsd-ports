@@ -2,11 +2,11 @@
 # Date created:        1 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/namg/Makefile,v 1.1 2001/02/14 13:50:13 jeh Exp $
 #
 
 PORTNAME=	namg
-PORTVERSION=	0.2.8
+PORTVERSION=	0.3.0
 CATEGORIES=	mail
 MASTER_SITES=	http://www.zip.com.au/~gsymonds/NAMG/
 DISTNAME=	NAMG-${PORTVERSION}
