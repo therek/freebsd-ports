@@ -3,11 +3,11 @@
 # Date created:			Mar 4, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/perltidy/Makefile,v 1.6 2001/07/03 08:53:24 ijliao Exp $
+# $FreeBSD: ports/devel/perltidy/Makefile,v 1.7 2001/07/04 07:33:54 ijliao Exp $
 #
 
 PORTNAME=	perltidy
-PORTVERSION=	20010702
+PORTVERSION=	20010723
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
