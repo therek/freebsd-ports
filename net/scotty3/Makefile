@@ -2,7 +2,7 @@
 # Date created:		18 February 1995
 # Whom:			Gennady Sorokopud <gena@netvisions.net.il>
 #
-# $FreeBSD: ports/net/scotty/Makefile,v 1.40 2000/04/09 18:13:31 cpiazza Exp $
+# $FreeBSD: ports/net/scotty/Makefile,v 1.41 2000/06/08 20:25:45 alex Exp $
 #
 
 PORTNAME=	scotty
@@ -15,7 +15,7 @@ MAINTAINER=	dima@Chg.RU
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 GNU_CONFIGURE=  yes
-CONFIGURE_ARGS=	--with-tcl-config=${LOCALBASE}/tcl8.2 \
+CONFIGURE_ARGS=	--with-tcl-config=${LOCALBASE}/lib/tcl8.2 \
 		--with-tk-config=${LOCALBASE}/lib/tk8.2
 
 WRKSRC=${WRKDIR}/${DISTNAME}/unix
