@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.425 2001/01/28 08:50:47 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.426 2001/01/28 20:04:25 dannyboy Exp $
 #
     SUBDIR += zziplib
 
@@ -337,6 +337,7 @@
     SUBDIR += py-mxStack
     SUBDIR += py-mxTools
     SUBDIR += qtarch
+    SUBDIR += qt-designer
     SUBDIR += qtez
     SUBDIR += qtk
     SUBDIR += re2c
