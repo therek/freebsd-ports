@@ -2,13 +2,13 @@
 # Date created:		20 Sep 2000
 # Whom:			Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/www/mod_zap/Makefile,v 1.1 2000/10/24 02:33:55 jeh Exp $
+# $FreeBSD: ports/www/mod_zap/Makefile,v 1.2 2000/11/01 14:55:59 jeh Exp $
 #
 
 PORTNAME=	mod_zap
 PORTVERSION=	1.0
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.indexdata.dk/pub/yaz/ \
+MASTER_SITES=	http://ftp.indexdata.dk/pub/yaz/ \
 		http://people.FreeBSD.org/~jeh/
 DISTNAME=	zap-${PORTVERSION}
 
