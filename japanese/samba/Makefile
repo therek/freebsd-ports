@@ -2,7 +2,7 @@
 # Date created:				27 Dec 1999
 # Whom:					Shinya Sasaki <pcmaster@osk3.3web.ne.jp>
 #
-# $FreeBSD: ports/japanese/samba/Makefile,v 1.14 2001/07/14 06:01:06 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	samba
@@ -22,7 +22,7 @@ MAINTAINER=	nakaji@jp.FreeBSD.org
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 
 SAMBA_VERSION=		2.0.10
-SAMBA_JA_VERSION=	1.1
+SAMBA_JA_VERSION=	1.2
 
 # directories
 VARDIR=		/var
@@ -85,7 +85,7 @@ post-install:
 	fi
 	${INSTALL_SCRIPT} ${WRKDIR}/${DISTNAME}/source/script/mksmbpasswd.sh ${PREFIX}/bin/make_smbpasswd
 
-	${MKDIR} -p -m 500 ${SAMBA_PRIVATE}
+	${MKDIR} -m 500 ${SAMBA_PRIVATE}
 	${CHOWN} root:wheel ${SAMBA_PRIVATE}
 	${CAT} /etc/passwd | ${PREFIX}/bin/make_smbpasswd > ${SAMBA_PRIVATE}/smbpasswd.default
 	if [ ! -e ${SAMBA_PRIVATE}/smbpasswd ]; then	\
