@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.246 2004/09/23 15:07:39 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.247 2004/09/25 00:58:58 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -176,6 +176,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <dates>
       <discovery>2004-07-11</discovery>
       <entry>2004-09-22</entry>
+      <modified>2004-09-24</modified>
     </dates>
   </vuln>
 
