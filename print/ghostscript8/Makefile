@@ -3,7 +3,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.43 2000/03/25 21:02:45 andreas Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.44 2000/03/25 21:50:52 andreas Exp $
 #
 
 DISTNAME=	ghostscript-${GS_VERSION}
@@ -73,7 +73,8 @@ pre-fetch:
 .endif
 
 post-extract:
-	@${LN} -s ${PORTSDIR}/graphics/jpeg/work/jpeg-6b ${WRKSRC}/jpeg
+	@${LN} -s ${WRKDIRPREFIX}${PORTSDIR}/graphics/jpeg/work/jpeg-6b \
+		${WRKSRC}/jpeg
 	@cd ${WRKSRC}/src; ${TAR} -xzf ${DISTDIR}/${HP8XX_DRV}
 
 do-configure:
