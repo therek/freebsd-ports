@@ -2,12 +2,11 @@
 # Date created:		9 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-drb/Makefile,v 1.6 2000/12/18 05:31:10 knu Exp $
+# $FreeBSD: ports/net/ruby-drb/Makefile,v 1.7 2000/12/25 14:23:06 knu Exp $
 #
 
 PORTNAME=	drb
-PORTVERSION=	1.3
-PORTREVISION=	1
+PORTVERSION=	1.3.1
 CATEGORIES=	net ruby
 MASTER_SITES=	${MASTER_SITE_RUBY} \
 		http://www2a.biglobe.ne.jp/~seki/ruby/
