@@ -2,7 +2,7 @@
 # Date created:		10 May, 2000
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/security/gnupg-idea/Makefile,v 1.7 2001/04/30 00:34:26 kris Exp $
+# $FreeBSD: ports/security/gnupg-idea/Makefile,v 1.8 2001/06/25 06:43:13 dinoex Exp $
 #
 
 PORTNAME=	gnupg-idea
@@ -41,6 +41,10 @@ pre-fetch:
 CONTRIB=	idea rsa
 .else
 CONTRIB=	rsa
+
+pre-fetch:
+	@${ECHO_MSG}
+	@${ECHO_MSG} You must set variable MAKE_IDEA to YES, only rsa is build now.
 .endif
 
 .include <bsd.port.pre.mk>
