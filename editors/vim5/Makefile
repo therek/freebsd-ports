@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.119 2001/07/23 16:27:58 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME?=	vim
@@ -26,14 +26,13 @@ PATCHFILES+=	5.8.0${p}
 
 MAINTAINER?=	obrien@FreeBSD.org
 
-SLAVEDIRS=	editors/vim-lite
-
 .if defined(PACKAGE_BUILDING) && !defined(LITE)
 BUILD_DEPENDS=	tclsh8.0:${PORTSDIR}/lang/tcl80
 LIB_DEPENDS=	tcl80.1:${PORTSDIR}/lang/tcl80
 USE_PERL5=	yes
 .endif
 
+LATEST_LINK?=	vim5
 DIST_SUBDIR=	vim
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 PATCH_DIST_ARGS=	-d ${WRKDIR}/${DISTNAME} --forward --quiet -E ${PATCH_DIST_STRIP}
