@@ -3,13 +3,12 @@
 # Date created:         19 February 1999
 # Whom:                 Dima Sivachenko
 #
-# $FreeBSD: ports/net/xferstats/Makefile,v 1.5 1999/08/30 14:24:33 peter Exp $
+# $FreeBSD: ports/net/xferstats/Makefile,v 1.6 1999/10/09 18:42:10 vanilla Exp $
 #
 
 DISTNAME=	xferstats-2.14
 CATEGORIES=	net
-MASTER_SITES=	http://xferstats.off.net/download/xferstats-2.00/ \
-		ftp://xferstats.off.net/pub/xferstats/xferstats-2.00/ \
+MASTER_SITES=	ftp://ftp.wu-ftpd.org/pub/support/	\
 		ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
 
 MAINTAINER=	dima@Chg.RU
