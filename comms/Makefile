@@ -1,4 +1,4 @@
-# $FreeBSD: ports/comms/Makefile,v 1.40 2000/01/04 22:11:31 phk Exp $
+# $FreeBSD: ports/comms/Makefile,v 1.41 2000/01/11 16:13:11 ade Exp $
 #
 
     SUBDIR += asmodem
@@ -15,7 +15,6 @@
     SUBDIR += mlan
     SUBDIR += mserver
     SUBDIR += qpage
-    SUBDIR += rzsz
     SUBDIR += seyon
     SUBDIR += snooper
     SUBDIR += sredird
