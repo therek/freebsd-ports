@@ -2,11 +2,12 @@
 # Date created:		Fri Oct  3 18:50:53 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/devel/SpecTcl/Makefile,v 1.11 2000/01/03 21:59:04 andreas Exp $
+# $FreeBSD: ports/devel/SpecTcl/Makefile,v 1.12 2000/04/11 21:26:59 mharo Exp $
 #
 
 PORTNAME=	SpecTcl
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	devel tk80
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/guitools/
 DISTNAME=	${PORTNAME}${PORTVERSION}
@@ -16,6 +17,10 @@ MAINTAINER=	andreas@FreeBSD.org
 RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
 
 NO_BUILD=	yes
+
+post-patch:
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/bin/specJava
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/bin/specTcl
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/specJava ${PREFIX}/bin
