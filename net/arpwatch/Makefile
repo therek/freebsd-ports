@@ -2,16 +2,15 @@
 # Date created:         March 24 1997
 # Whom:                 Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/net/arpwatch/Makefile,v 1.15 2000/04/15 10:04:06 asami Exp $
+# $FreeBSD: ports/net/arpwatch/Makefile,v 1.16 2000/09/14 10:25:28 brian Exp $
 #
 
 PORTNAME=	arpwatch
-PORTVERSION=	2.1.a6
+PORTVERSION=	2.1.a10
 CATEGORIES=	net
 MASTER_SITES=	http://www.Awfulhak.org/arpwatch/ \
-		ftp://ftp.ee.lbl.gov/ \
-		ftp://ftp.cso.uiuc.edu/pub/security/coast/unix/arpwatch/
-DISTNAME=	arpwatch-2.1a6
+		ftp://ftp.ee.lbl.gov/
+DISTNAME=	arpwatch-2.1a10
 
 MAINTAINER=	brian@Awfulhak.org
 
@@ -23,8 +22,8 @@ MAN8=		arpwatch.8 arpsnmp.8
 post-install:
 	if [ ! -d ${PREFIX}/arpwatch ]; then				\
 		${MKDIR} ${PREFIX}/arpwatch;				\
-		${CHMOD} 775 ${PREFIX}/arpwatch;				\
-		${CHOWN} root.operator ${PREFIX}/arpwatch;			\
+		${CHMOD} 775 ${PREFIX}/arpwatch;			\
+		${CHOWN} root.operator ${PREFIX}/arpwatch;		\
 	fi
 	${TOUCH} ${PREFIX}/arpwatch/arp.dat
 	${CHMOD} 644 ${PREFIX}/arpwatch/arp.dat
