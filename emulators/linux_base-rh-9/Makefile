@@ -3,7 +3,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.32 1999/09/03 07:25:49 marcel Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.33 1999/09/08 09:45:01 marcel Exp $
 #
 
 DISTNAME=		linux_base
@@ -155,6 +155,10 @@ do-install:
 		${ECHO} $$R; \
 		rpm -i ${RPMFLAGS} ${RPMDIR}/$$R; \
 	done
+#
+# Install yp.conf as a hint to NIS users
+#
+	${INSTALL} ${COPY} -m 644 ${FILESDIR}/yp.conf ${PREFIX}/etc
 #
 # Finish
 #
