@@ -2,7 +2,7 @@
 # Date created:		22 August 2000
 # Whom:			jasone
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/libsock/Makefile,v 1.1 2000/08/23 07:35:46 jasone Exp $
 #
 
 PORTNAME=	libsock
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.canonware.com/download/canonware/
 MAINTAINER=	jasone@FreeBSD.org
 
 BUILD_DEPENDS=	cook:${PORTSDIR}/devel/cook \
-		libstash:${PORTSDIR}/devel/libstash
+		${LOCALBASE}/lib/libstash.a:${PORTSDIR}/devel/libstash
 
 USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
