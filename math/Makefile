@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.96 2001/01/03 23:38:33 will Exp $
+# $FreeBSD: ports/math/Makefile,v 1.97 2001/01/03 23:38:54 will Exp $
 #
 
     SUBDIR += PDL
@@ -50,6 +50,7 @@
     SUBDIR += p5-Bit-Vector
     SUBDIR += p5-Math-Bezier
     SUBDIR += p5-Math-BigIntFast
+    SUBDIR += p5-Math-Currency
     SUBDIR += p5-Math-Expr
     SUBDIR += p5-Math-Logic
     SUBDIR += p5-MatrixReal
