@@ -3,7 +3,7 @@
 # Date created:		26 May 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/editors/psgml-xemacs-mule/Makefile,v 1.2 1999/08/25 05:44:11 obrien Exp $
+# $FreeBSD: ports/editors/psgml-xemacs-mule/Makefile,v 1.3 1999/08/31 06:43:17 mharo Exp $
 #
 
 MAINTAINER=	kuriyama@FreeBSD.org
@@ -16,8 +16,8 @@ MASTERDIR=	${.CURDIR}/../psgml-emacs
 # emacs port setup
 EMACS_NAME=	xemacs
 EMACS_PORT=	xemacs-mule
-EMACS_VER=	20.4
-EMACS_LIBDIR=	lib/xemacs-20.4
+EMACS_VER=	21.1.6
+EMACS_LIBDIR=	lib/xemacs-21.1.6
 
 # pkg/* files are used in ${.CURDIR}
 PKGDIR=		${.CURDIR}/pkg

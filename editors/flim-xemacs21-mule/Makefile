@@ -3,7 +3,7 @@
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/flim-xemacs-mule/Makefile,v 1.3 1999/08/25 05:43:47 obrien Exp $
+# $FreeBSD: ports/editors/flim-xemacs-mule/Makefile,v 1.4 1999/08/31 06:43:06 mharo Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -16,9 +16,9 @@ MASTERDIR=	${.CURDIR}/../../editors/flim-emacs
 # emacs port setup
 EMACS_NAME=	xemacs
 EMACS_PORT=	xemacs-mule
-EMACS_VER=	20.4
+EMACS_VER=	21.1.6
 EMACS_LIBDIR=		lib/${EMACS_NAME}-${EMACS_VER}
-# xemacs-mule-20.4 has no version specific site-lisp directories.
+# xemacs-mule-21.1.6 has no version specific site-lisp directories.
 EMACS_LIBDIR_WITH_VER=	${EMACS_LIBDIR}
 
 # RUN_DEPENDS port name's suffix is '-common'.
