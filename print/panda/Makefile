@@ -2,7 +2,7 @@
 # Date created:		28 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/print/panda/Makefile,v 1.1 2001/03/28 09:33:32 knu Exp $
+# $FreeBSD: ports/print/panda/Makefile,v 1.2 2001/04/03 12:56:52 knu Exp $
 #
 
 PORTNAME=	panda
@@ -27,6 +27,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${PREFIX}/include" \
 		CFLAGS="${CFLAGS} ${PTHREAD_CFLAGS}" \
 		LDFLAGS="-L${PREFIX}/lib" \
 		LIBS="${PTHREAD_LIBS}"
+MAKE_ARGS=	NOPROFILE=true
 INSTALLS_SHLIB=	yes
 
 MAN3=		checkinfo.3 initpanda.3 makedate.3 nowdate.3 \
