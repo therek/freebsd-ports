@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.241 2001/07/31 10:06:37 sobomax Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.242 2001/08/17 17:08:29 ijliao Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -168,6 +168,7 @@
     SUBDIR += tclplugin
     SUBDIR += tcltutor
     SUBDIR += tinycobol
+    SUBDIR += treecc
     SUBDIR += wamcc
     SUBDIR += yabasic
     SUBDIR += yap
