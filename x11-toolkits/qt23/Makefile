@@ -2,11 +2,11 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.77 2001/03/10 05:52:33 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt23/Makefile,v 1.78 2001/03/10 17:06:18 will Exp $
 #
 
 PORTNAME?=	qt
-PORTVERSION?=	2.2.4
+PORTVERSION?=	2.3.0
 CATEGORIES?=	x11-toolkits
 MASTER_SITES=	ftp://ftp.trolltech.com/qt/source/
 DISTNAME=	qt-x11-${PORTVERSION}
