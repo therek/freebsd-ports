@@ -2,11 +2,11 @@
 # Date created:				31 May 2000
 # Whom:					kbyanc@posi.net
 #
-# $FreeBSD: ports/audio/grip/Makefile,v 1.5 2001/07/19 07:08:33 markp Exp $
+# $FreeBSD: ports/audio/grip/Makefile,v 1.6 2001/07/19 13:41:45 markp Exp $
 #
 
 PORTNAME=	grip
-PORTVERSION=	2.95
+PORTVERSION=	2.96
 CATEGORIES=	audio
 MASTER_SITES=	http://www.nostatic.org/grip/
 EXTRACT_SUFX=	.tgz
