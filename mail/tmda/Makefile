@@ -2,11 +2,11 @@
 # Date created:				08 June 2001
 # Whom:					Jason R. Mastaler <jason@mastaler.com>
 #
-# $FreeBSD: ports/mail/tmda/Makefile,v 1.3 2001/08/30 00:52:23 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tmda
-PORTVERSION=	0.37
+PORTVERSION=	0.40
 CATEGORIES=	mail python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	tmda
@@ -14,15 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jason@mastaler.com
 
-RUN_DEPENDS=    ${QMAIL_DIR}/bin/qmail-send:${PORTSDIR}/mail/qmail
-
 USE_PYTHON=	yes
-
-.if exists(${PREFIX}/qmail/bin/qmail-send)
-QMAIL_DIR?=     ${PREFIX}/qmail
-.else
-QMAIL_DIR?=     /var/qmail
-.endif
 
 do-build:
 	(cd ${WRKSRC}; ${PYTHON_CMD} ./compileall)
@@ -37,9 +29,11 @@ do-install:
 post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/tmda
-.for f in ChangeLog COPYRIGHT CRYPTO FAQ INSTALL README THANKS TODO UPGRADE contrib/*.* doc/tmda*
+	${MKDIR} ${PREFIX}/share/doc/tmda/htdocs
+.for f in ChangeLog COPYRIGHT CRYPTO INSTALL README THANKS TODO UPGRADE contrib/*.*
 	@${INSTALL_DATA} ${WRKSRC}/$f ${PREFIX}/share/doc/tmda
 .endfor
+	@${INSTALL_DATA} ${WRKSRC}/htdocs/*.html ${PREFIX}/share/doc/tmda/htdocs
 	@${ECHO_MSG}
 	@${ECHO_MSG} See ${PREFIX}/share/doc/tmda/INSTALL for configuration instructions
 .endif
