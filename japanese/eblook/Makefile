@@ -2,7 +2,7 @@
 # Date created:		20 August 1999
 # Whom:			Shigeyuki Fukushima <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/eblook/Makefile,v 1.3 2000/01/23 11:41:16 taoka Exp $
+# $FreeBSD: ports/japanese/eblook/Makefile,v 1.4 2000/04/11 14:13:10 knu Exp $
 #
 
 PORTNAME=	eblook
@@ -24,7 +24,7 @@ PLIST_SUB=	DOCDIR=${DOCDIR}
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@[ ! -d ${PREFIX}/${DOCDIR} ] && ${MKDIR} ${PREFIX}/${DOCDIR}
+	@${MKDIR} ${PREFIX}/${DOCDIR}
 	@for i in AUTHORS COPYING ChangeLog NEWS README ; do \
 		${INSTALL_DATA} ${WRKSRC}/$${i} ${PREFIX}/${DOCDIR} ;\
 	done
