@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/archivers/Makefile,v 1.24 1999/08/25 04:25:00 obrien Exp $
 #
 
     SUBDIR += arc
@@ -12,6 +12,7 @@
     SUBDIR += lha
     SUBDIR += linux_rar
     SUBDIR += lzo
+    SUBDIR += makeself
     SUBDIR += nulib
     SUBDIR += p5-Compress-Zlib
     SUBDIR += pkzip

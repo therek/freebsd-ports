@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.247 1999/11/26 19:08:26 steve Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.248 1999/12/10 15:15:16 steve Exp $
 #
 
     SUBDIR += 221upgrade
@@ -66,7 +66,6 @@
     SUBDIR += logsurfer
     SUBDIR += lv
     SUBDIR += magicpoint
-    SUBDIR += makeself
     SUBDIR += man.el
     SUBDIR += mc
     SUBDIR += mgp-mode.el
