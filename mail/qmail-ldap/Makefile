@@ -2,16 +2,16 @@
 # Date created:				21 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.1 2000/09/19 15:46:56 sobomax Exp $
 #
 
 PORTNAME=	qmail
-PORTVERSION= 	1.03
+PORTVERSION= 	${QMAIL_VERSION}.${LDAP_PATCH_DATE}
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-ldap
 
 PATCH_SITES=	http://www.nrg4u.com/qmail/
-PATCHFILES=	qmail-ldap-1.03-20000501.patch.gz
+PATCHFILES=	qmail-ldap-1.03-${LDAP_PATCH_DATE}.patch.gz
 
 MAINTAINER=	lioux@linf.unb.br
 
@@ -21,10 +21,17 @@ LIB_DEPENDS+=	ldap.1:${PORTSDIR}/net/openldap
 .include <bsd.port.pre.mk>
 .endif
 
-DOCFILES+=	${WRKSRC}/QLDAPINSTALL ${WRKSRC}/ANTISPAM
+#PREFIX=		/var/qmail-ldap
+
+DOCFILES+=	${WRKSRC}/QLDAPINSTALL ${WRKSRC}/QLDAPNEWS \
+		${WRKSRC}/QLDAPTODO ${WRKSRC}/QLDAPPICTURE \
+		${WRKSRC}/ANTISPAM
+
+LDAP_PATCH_DATE=	20000701
 
 # Local overrides
-MASTERDIR=	${.CURDIR}/../qmail
+MASTERDIR=	${PORTSDIR}/mail/qmail
+#MASTERDIR=	${.CURDIR}/../qmail
 PATCHDIR=	${.CURDIR}/patches
 PKGDIR_LOCAL=	${.CURDIR}/pkg
 DESCR=		${PKGDIR_LOCAL}/DESCR
