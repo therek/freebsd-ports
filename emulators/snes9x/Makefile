@@ -1,17 +1,17 @@
 # New ports collection makefile for:    snes9x
-# Version required:     119a
+# Version required:     1.26
 # Date created:         20 July 1997
 # Whom:                 Yukihiro Nakai<Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.14 1999/09/20 01:56:08 cpiazza Exp $
+# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.15 1999/09/22 04:06:50 green Exp $
 #
 
-DISTNAME=	s9xs125
-PKGNAME=	snes9x-1.25
+DISTNAME=	s9xs126
+PKGNAME=	snes9x-1.26
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.snes9x.com/zips/
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 .if ${MACHINE_ARCH} == i386
 BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
