@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/postfix/scripts/configure.postfix,v 1.36 2003/07/02 11:23:10 daichi Exp $
+# $FreeBSD: ports/mail/postfix/scripts/configure.postfix,v 1.37 2003/07/07 08:28:33 osa Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -180,13 +180,13 @@ while [ "$1" ]; do
 			echo "OPENLDAP_SUFFIX=	+openldap12"
 			;;
 		OpenLDAP20)
-			echo "BUILD_DEPENDS+=	\${LOCALBASE}/lib/libldap.a:\${PORTSDIR}/net/openldap20"
+			echo "BUILD_DEPENDS+=	\${LOCALBASE}/lib/libldap.a:\${PORTSDIR}/net/openldap20-client"
 			echo "POSTFIX_CCARGS+=	-DHAS_LDAP -I\${LOCALBASE}/include"
  			echo "POSTFIX_AUXLIBS+=	-lldap -llber"
 			echo "OPENLDAP_SUFFIX=	+openldap20"
 			;;
 		OpenLDAP21)
-			echo "BUILD_DEPENDS+=	\${LOCALBASE}/lib/libldap.a:\${PORTSDIR}/net/openldap21"
+			echo "BUILD_DEPENDS+=	\${LOCALBASE}/lib/libldap.a:\${PORTSDIR}/net/openldap21-client"
  			echo "POSTFIX_CCARGS+=	-DHAS_LDAP -I\${LOCALBASE}/include"
  			echo "POSTFIX_AUXLIBS+=	-lldap -llber"
  			echo "OPENLDAP_SUFFIX=	+openldap21"

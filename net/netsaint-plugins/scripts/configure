@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/netsaint-plugins/scripts/configure,v 1.6 2003/01/04 16:17:27 seanc Exp $
+# $FreeBSD: ports/net/netsaint-plugins/scripts/configure,v 1.7 2003/02/24 02:56:34 edwin Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -87,7 +87,7 @@ while [ "$1" ]; do
 			SUB_PGSQL=""
 			;;
 		\"OpenLDAP\")
-			echo "LIB_DEPENDS+=	ldap.2:\${PORTSDIR}/net/openldap20"
+			echo "LIB_DEPENDS+=	ldap.2:\${PORTSDIR}/net/openldap20-client"
 			echo "CONFIGURE_ARGS+=	--enable-ldap"
 			SUB_LDAP=""
 			;;
