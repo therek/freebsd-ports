@@ -1,15 +1,15 @@
 # New ports collection Makefile for:	isilo
-# Version required:	2.55
 # Date created:		20 December 1999
 # Whom:			nik
 #
-# $FreeBSD: ports/palm/isilo/Makefile,v 1.4 2000/01/30 22:56:09 nik Exp $
+# $FreeBSD: ports/palm/isilo/Makefile,v 1.5 2000/02/03 20:53:10 nik Exp $
 #
 
-DISTNAME=	iSiloBSD
-PKGNAME=	isilo-2.55
+PORTNAME=	isilo
+PORTVERSION= 	2.55
 CATEGORIES=	palm textproc
 MASTER_SITES=	ftp://ftp.iSilo.com/pub/
+DISTNAME=	iSiloBSD
 
 MAINTAINER=	nik@FreeBSD.org
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	PilRC
-# Version required:	2.5b1
 # Date created:		29 Mar 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/palm/pilrc/Makefile,v 1.1.1.1 2000/03/31 05:16:29 kuriyama Exp $
 #
 
-DISTNAME=	pilrcsrc
-PKGNAME=	pilrc-2.5b1
+PORTNAME=	pilrc
+PORTVERSION= 	2.5b1
 CATEGORIES=	palm
 MASTER_SITES=	http://www.hig.se/~ardiri/development/palmIII/pilrc/
+DISTNAME=	pilrcsrc
 
 MAINTAINER=	kuriyama@FreeBSD.org
 

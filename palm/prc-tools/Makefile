@@ -1,12 +1,12 @@
 # New ports collection makefile for:	Palm OS PRC-tools
-# Version required:	2.0
 # Date created:		Mar 22 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/palm/prc-tools/Makefile,v 1.16 2000/03/31 04:20:29 kuriyama Exp $
 #
 
-DISTNAME=	prc-tools-2.0
+PORTNAME=	prc-tools
+PORTVERSION= 	2.0
 CATEGORIES=	palm
 MASTER_SITES=	http://www.palm.com/devzone/tools/gcc/dist/
 

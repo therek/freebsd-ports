@@ -1,12 +1,12 @@
 # New ports collection makefile for:    imgvtopgm
-# Version required:     2.0
 # Date created:         Wed Jun 16 04:42:22 JST 1999
 # Whom:                 sumikawa@ebina.hitachi.co.jp
 #
-# $FreeBSD: ports/palm/imgvtopgm/Makefile,v 1.2 1999/09/07 06:30:51 sumikawa Exp $
+# $FreeBSD: ports/palm/imgvtopgm/Makefile,v 1.3 2000/03/21 08:14:55 mharo Exp $
 #
 
-DISTNAME=	imgvtopgm-2.0
+PORTNAME=	imgvtopgm
+PORTVERSION= 	2.0
 CATEGORIES=	palm graphics
 MASTER_SITES=	http://www.trends.net/~mu/srcs/
 

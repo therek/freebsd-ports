@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xcopilot
-# Version required:		0.6.6
 # Date created:			July 17 1997
 # Whom:				Nick Sayer <nsayer@quack.kfu.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/palm/xcopilot/Makefile,v 1.9 1999/08/30 14:33:04 peter Exp $
 #
 
-DISTNAME=	xcopilot-0.6.6
+PORTNAME=	xcopilot
+PORTVERSION= 	0.6.6
 CATEGORIES=	palm emulators
 MASTER_SITES=	http://xcopilot.cuspy.com/build/
 

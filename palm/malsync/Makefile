@@ -1,16 +1,16 @@
 # ports collection makefile for:	malsync
-# Version required:		1.8
 # Date created:			Tue Feb 22 00:06:07 CET 2000
 # Whom:				Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/palm/malsync/Makefile,v 1.1.1.1 2000/02/22 20:26:58 dirk Exp $
 #
 
-DISTNAME=	malsync_src_1_8
-PKGNAME=	malsync-1.8
+PORTNAME=	malsync
+PORTVERSION= 	1.8
 CATEGORIES=	palm
 MASTER_SITES=	http://www.tomw.org/ \
 		http://people.FreeBSD.org/~dirk/ports/distfiles/
+DISTNAME=	malsync_src_1_8
 
 MAINTAINER=	dirk@FreeBSD.org
 
