@@ -2,7 +2,7 @@
 # Date created:         03 October 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnustep/Makefile,v 1.18 2001/06/26 12:12:34 tg Exp $
+# $FreeBSD: ports/devel/gnustep/Makefile,v 1.19 2001/06/26 16:16:58 olgeni Exp $
 #
 
 PORTNAME=	gnustep
@@ -37,7 +37,7 @@ GNU_ARCH=	${MACHINE_ARCH}
 .endif
 
 SYSLIBDIR=	${PREFIX}/System/Libraries/${GNU_ARCH}/${OPSYS:L}
-COMBOLIBDIR=	${SYSLIBDIR}/gnu-gnu-gnu-xgps
+COMBOLIBDIR=	${SYSLIBDIR}/gnu-gnu-gnu
 XGPSBUNDLEDIR=	${PREFIX}/System/Library/Bundles/libgnustep-xgps.bundle/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/
 
 do-install:	# empty
