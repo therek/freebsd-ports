@@ -2,11 +2,12 @@
 # Date created:		30 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/graphics/xv/Makefile,v 1.43 2001/01/16 17:31:08 sobomax Exp $
+# $FreeBSD: ports/graphics/xv/Makefile,v 1.44 2001/02/20 15:29:47 mi Exp $
 #
 
 PORTNAME=	xv
 PORTVERSION=	3.10a
+PORTREVISION=	1
 CATEGORIES+=	graphics
 MASTER_SITES=	ftp://ftp.cis.upenn.edu/pub/xv/ \
 		ftp://ftp.trilon.com/pub/xv/ \
