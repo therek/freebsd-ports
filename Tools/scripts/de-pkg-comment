@@ -16,7 +16,7 @@
 #
 # MAINTAINER=	knu@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/Tools/scripts/de-pkg-comment,v 1.1 2003/02/18 12:42:44 knu Exp $
 #
 
 begin
@@ -102,8 +102,9 @@ ARGV.each { |$dir|
 	  end
 
 	  open(commentfile) { |f|
-	    comment = f.gets.chomp
-	    contents << "COMMENT#{assign}\t#{comment}\n"
+	    comment = f.gets.strip
+	    quoted_comment = comment.gsub(/#/, '\\#').gsub(/\$/, '$$')
+	    contents << "COMMENT#{assign}\t#{quoted_comment}\n"
 	  }
 	when /^COMMENTFILE\s*([?!:]?=)/
 	  info("COMMENTFILE is defined.  Please check out and edit manually.")
