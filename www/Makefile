@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.371 2001/06/17 10:36:40 dirk Exp $
+# $FreeBSD: ports/www/Makefile,v 1.372 2001/06/18 14:11:20 wjv Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -129,6 +129,7 @@
     SUBDIR += mod_csacek
     SUBDIR += mod_dav
     SUBDIR += mod_dtcl
+    SUBDIR += mod_extract_forwarded
     SUBDIR += mod_fastcgi
     SUBDIR += mod_gzip
     SUBDIR += mod_hosts_access
