@@ -2,7 +2,7 @@
 # Date created:		7 March 2000
 # Whom:			support@kryltech.com
 #
-# $FreeBSD: ports/www/ssserver/Makefile,v 1.1 2000/07/21 13:43:36 nbm Exp $
+# $FreeBSD: ports/www/ssserver/Makefile,v 1.2 2000/10/08 10:23:17 asami Exp $
 #
 
 PORTNAME=	ssserver
@@ -11,6 +11,8 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.kryltech.com/download/FreeBSD.x86.3/
 
 MAINTAINER=	support@kryltech.com
+
+RUN_DEPENDS=	${LOCALBASE}/sbin/httpd:${PORTSDIR}/www/apache13
 
 ONLY_FOR_ARCHS=	i386
 NO_BUILD=	yes
