@@ -2,11 +2,11 @@
 # Date created:		6 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/pm3-gui/Makefile,v 1.3 2000/02/20 23:46:23 asami Exp $
+# $FreeBSD: ports/lang/pm3-gui/Makefile,v 1.4 2000/04/12 06:19:58 obrien Exp $
 #
 
 PORTNAME=	pm3-gui
-PORTVERSION=	1.1.13
+PORTVERSION=	1.1.14
 CATEGORIES=	lang
 DISTFILES=
 

@@ -2,11 +2,11 @@
 # Date created:		6 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/pm3-base/Makefile,v 1.4 2000/04/12 06:19:55 obrien Exp $
+# $FreeBSD: ports/lang/pm3-base/Makefile,v 1.5 2000/06/28 15:35:53 jdp Exp $
 #
 
 PORTNAME=	pm3-base
-PORTVERSION=	1.1.13
+PORTVERSION=	1.1.14
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=jdp/pm3
@@ -66,7 +66,7 @@ CFLAGS+=	-mieee
 TARGET=		FBSD_ALPHA
 TARGETDIR=	fbsd-alpha
 WORDSIZE=	64
-BOOTSTRAP=	pm3-${PORTVERSION}a-${TARGET}-boot.tar.bz2
+BOOTSTRAP=	pm3-${PORTVERSION}-${TARGET}-boot.tar.bz2
 .endif
 
 .if empty(TARGET)
