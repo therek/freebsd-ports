@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.293 2000/08/15 11:54:59 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.294 2000/08/17 10:34:29 sobomax Exp $
 #
 
     SUBDIR += 3dc
@@ -35,11 +35,7 @@
     SUBDIR += connect4
     SUBDIR += corewars
     SUBDIR += cosmo
-    SUBDIR += crafty
-    SUBDIR += crafty-open-large
-    SUBDIR += crafty-open-medium
-    SUBDIR += crafty-open-rock
-    SUBDIR += crafty-open-small
+    SUBDIR += cowsay
     SUBDIR += crossfire
     SUBDIR += cursive
     SUBDIR += digger-vgl
