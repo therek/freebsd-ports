@@ -2,7 +2,7 @@
 # Date created:			10 June 1997
 # Whom:				Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.61 2001/01/27 16:53:18 vanilla Exp $
+# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.62 2001/02/02 11:17:18 vanilla Exp $
 #
 
 PORTNAME=	enlightenment
@@ -42,7 +42,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 .include <bsd.port.pre.mk>
 
 .if (${MACHINE} == "alpha") && (${XFREE86_VERSION} == 3)
-CONFIGURE_ARS+=	--disable-zoom
+CONFIGURE_ARGS+=--disable-zoom
 .endif
 
 MAN1=		enlightenment.1
