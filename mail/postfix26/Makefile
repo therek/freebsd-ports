@@ -2,7 +2,7 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.29 2001/02/05 15:11:03 olgeni Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.30 2001/02/05 17:29:37 sf Exp $
 #
 
 PORTNAME=	postfix
@@ -60,7 +60,7 @@ BIN2=	postalias postcat postconf postdrop postfix \
 .if defined(WITH_MYSQL)
 BUILD_DEPENDS+=		${LOCALBASE}/lib/mysql/libmysqlclient.a:${PORTSDIR}/databases/mysql323-client
 POSTFIX_CCARGS+=	-DHAS_MYSQL -I${LOCALBASE}/include/mysql
-POSTFIX_AUXLIBS+=	${LOCALBASE}/lib/mysql/libmysqlclient.a -lm
+POSTFIX_AUXLIBS+=	${LOCALBASE}/lib/mysql/libmysqlclient.a -lm -lz
 .endif
 
 .if defined(WITH_LDAP)
