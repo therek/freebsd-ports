@@ -3,12 +3,13 @@
 # Date created:		09 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/wmthemeinstall/Makefile,v 1.1.1.1 1999/10/10 23:59:11 steve Exp $
 #
 
 DISTNAME=	wmthemeinstall-0.62
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://hellblazer.dhis.org/projects/wmthemeinstall/download/
+MASTER_SITES=	http://www.lovett.com/FreeBSD/ \
+		ftp://ftp.cronyx.ru/.w3/distfiles/
 
 MAINTAINER=	andrews@technologist.com
 
@@ -22,9 +23,7 @@ CONFIGURE_ENV=	GTK_CONFIG="${X11BASE}/bin/gtk12-config"
 DOCS_DIR=	${PREFIX}/share/wmthemeinstall
 
 pre-build:
-	@${SED} -e s,/usr/local,${PREFIX},g ${WRKSRC}/wmOptions.c \
-		> ${WRKSRC}/wmOptions.c.new
-	@${MV} ${WRKSRC}/wmOptions.c.new ${WRKSRC}/wmOptions.c
+	@${PERL} -pi -e "s:/usr/local:${PREFIX}:g" ${WRKSRC}/wmOptions.c
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/wmthemeinstall ${PREFIX}/bin
