@@ -2,7 +2,7 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.82 2001/06/14 17:37:58 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.83 2001/06/14 18:43:04 sheldonh Exp $
 #
 
 PORTNAME=	exim
@@ -179,7 +179,6 @@ pre-install:
 	@PKG_PREFIX="${PREFIX}" ${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 
 post-install:
-	${INSTALL_SCRIPT} ${FILESDIR}/exim.sh ${PREFIX}/etc/rc.d
 	@${CAT} ${PKGMESSAGE}
 
 
