@@ -2,7 +2,7 @@
 # Date created:		3 July 2000
 # Whom:			Ryuichiro IMURA <imura@af.airnet.ne.jp>
 #
-# $FreeBSD: ports/japanese/msdosfs/Makefile,v 1.2 2000/10/14 22:02:57 imura Exp $
+# $FreeBSD: ports/japanese/msdosfs/Makefile,v 1.3 2000/10/14 23:29:54 imura Exp $
 #
 
 PORTNAME=	msdosfs
@@ -25,10 +25,11 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/msdosfs.ja
 LAST_UPDATED=	20001007
 PATCHDIR=	${MASTERDIR}/patches.4
 .elif ${OSVERSION} >= 500013
-LAST_UPDATED=	20001009
+LAST_UPDATED=	20001022
 PATCHDIR=	${MASTERDIR}/patches.5
 NO_PACKAGE=	"to avoid crashing a machine when try to install incorrect version"
 .else
+LAST_UPDATED=	20001007
 BROKEN=		"It may not work with your FreeBSD version (but I'm not sure)"
 .endif
 
