@@ -3,7 +3,7 @@
 # Date created:				20 July 1999
 # Whom:					Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/rrdtool/Makefile,v 1.2 1999/08/30 14:24:02 peter Exp $
 #
 
 DISTNAME=	rrdtool-1.0.0
@@ -38,6 +38,7 @@ do-install:
 		${INSTALL_DATA} ${WRKSRC}/contrib/log2rrd/README ${PREFIX}/share/doc/rrdtool/README.log2rrd
 		${INSTALL_DATA} ${WRKSRC}/doc/*.html ${PREFIX}/share/doc/rrdtool
 .endif
+		${MKDIR} ${PREFIX}/lib/perl5/site_perl/${PERL_VER}
 		for file in piped/RRDp.pm shared/RRDs.pm; do \
 			${INSTALL_DATA} ${WRKSRC}/perl-$$file ${PREFIX}/lib/perl5/site_perl/${PERL_VER}; \
 		done
