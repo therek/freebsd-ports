@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.101 1999/09/08 22:26:08 sada Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.102 1999/09/08 22:32:55 asami Exp $
 #
 
     SUBDIR += amp
@@ -52,6 +52,7 @@
     SUBDIR += rio
     SUBDIR += ripenc
     SUBDIR += ripit
+    SUBDIR += ripit-atapi
     SUBDIR += rosegarden
     SUBDIR += rplay
     SUBDIR += rsynth
