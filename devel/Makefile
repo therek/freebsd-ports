@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.443 2001/02/22 13:23:11 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.444 2001/02/26 21:44:57 mi Exp $
 #
     SUBDIR += zziplib
 
@@ -26,6 +26,7 @@
     SUBDIR += avr-binutils
     SUBDIR += avr-gcc
     SUBDIR += avr-libc
+    SUBDIR += avrprog
     SUBDIR += bcc
     SUBDIR += bin86
     SUBDIR += binutils-m68k
