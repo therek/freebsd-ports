@@ -2,11 +2,11 @@
 # Date created:				19 June 2000
 # Whom:				Sergey Samoyloff <gonza@techline.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/smapi/Makefile,v 1.1 2000/07/03 07:47:36 sobomax Exp $
 #
 
 PORTNAME=	smapi
-PORTVERSION=	000629
+PORTVERSION=	000731
 CATEGORIES=	mail
 MASTER_SITES=	http://cvs.physcip.uni-stuttgart.de/cvs2/
 
