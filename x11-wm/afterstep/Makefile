@@ -2,7 +2,7 @@
 # Date created:		October 29th 1996
 # Whom:			jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/x11-wm/afterstep/Makefile,v 1.33 2000/04/17 00:18:54 reg Exp $
+# $FreeBSD: ports/x11-wm/afterstep/Makefile,v 1.34 2000/08/03 09:27:49 asami Exp $
 #
 
 PORTNAME=	afterstep
@@ -12,6 +12,12 @@ MASTER_SITES=	${MASTER_SITE_AFTERSTEP} \
 		ftp://ftp.cs.tu-berlin.de/pub/X/afterstep/
 MASTER_SITE_SUBDIR=	stable/archives
 DISTNAME=	AfterStep-${PORTVERSION}
+
+.if defined(XFREE86_VERSION) && (${XFREE86_VERSION} == 4)
+BUILD_DEPENDS=	${X11BASE}/bin/xmkmf:${PORTSDIR}/x11/XFree86-4
+.else
+BUILD_DEPENDS=	${X11BASE}/bin/xmkmf:${PORTSDIR}/x11/XFree86
+.endif
 
 MAINTAINER=	jfitz@FreeBSD.org
 
