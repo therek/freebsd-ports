@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.168 2001/03/25 20:34:38 andreas Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.169 2001/03/31 01:57:05 will Exp $
 #
     SUBDIR += yawho
 
@@ -82,6 +82,7 @@
     SUBDIR += obliterate
     SUBDIR += p5-Filesys-DiskSpace
     SUBDIR += p5-LJ-Cache
+    SUBDIR += p5-LJ-TextMessage
     SUBDIR += p5-Quota
     SUBDIR += p5-Schedule-At
     SUBDIR += p5-Schedule-Cron
