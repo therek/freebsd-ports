@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xmhtml
-# Version required:     1.69
 # Date created:		18 Feb 1999
 # Whom:			Peter Hawkins <thepish@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/xmhtml/Makefile,v 1.7 1999/08/31 02:59:46 peter Exp $
 #
 
-DISTNAME=	XmHTML-1.1.0
+PORTNAME=	XmHTML
+PORTVERSION= 	1.1.0
 CATEGORIES=	x11-toolkits www
 MASTER_SITES=	ftp://crl.nmsu.edu/pub/XmHTML/ \
 		ftp://ftp.ist.co.uk/pub/motif/XmHTML/ \

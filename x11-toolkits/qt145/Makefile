@@ -1,12 +1,12 @@
 # New ports collection makefile for:   qt
-# Version required:	1.45
 # Date created:		30 Jul 1996
 # Whom:			searle@longacre.demon.co.uk
 #
-# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.38 2000/03/20 23:25:19 jseger Exp $
+# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.39 2000/03/22 01:59:38 will Exp $
 #
 
-DISTNAME=	qt-1.45
+PORTNAME=	qt
+PORTVERSION=	1.45
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.troll.no/qt/source/
 

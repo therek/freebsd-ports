@@ -1,16 +1,16 @@
 # New ports collection makefile for:	SlingShot
-# Version required:	2.1
 # Date created:		5 March 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/x11-toolkits/slingshot/Makefile,v 1.9 1999/08/31 02:59:35 peter Exp $
+# $FreeBSD: ports/x11-toolkits/slingshot/Makefile,v 1.10 2000/04/01 01:46:54 mharo Exp $
 #
 
-DISTNAME=	SlingShot2.1
-PKGNAME=	slingshot-2.1
+PORTNAME=	slingshot
+PORTVERSION= 	2.1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+DISTNAME=	SlingShot${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,13 +1,12 @@
 # New ports collection makefile for:   	fltk
-# Version required:			1.0.7
 # Date created:				11 February 1999
 # Whom:                			Dima Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.11 2000/01/28 00:31:00 jedgar Exp $
+# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.12 2000/03/20 23:25:17 jseger Exp $
 #
 
-DISTNAME=	fltk-1.0.7-source
-PKGNAME=	fltk-1.0.7
+PORTNAME=	fltk
+PORTVERSION= 	1.0.7
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.fltk.org/pub/fltk/${VERSION}/ \
 		ftp://ftp.chg.ru/pub/X11/fltk/${VERSION}/ \
@@ -15,6 +14,7 @@ MASTER_SITES=	ftp://ftp.fltk.org/pub/fltk/${VERSION}/ \
 		ftp://ftp.northamerica.net/pub/ESP/fltk/${VERSION}/ \
 		ftp://ftp.funet.fi/mirrors/ftp.easysw.com/pub/fltk/${VERSION}/ \
 		ftp://ftp.kddlabs.co.jp/pub/lang/fltk/${VERSION}/
+DISTNAME=	${PKGNAME}-source
 
 MAINTAINER=	dima@chg.ru
 

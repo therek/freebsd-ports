@@ -1,12 +1,12 @@
 # New ports collection makefile for:	Xaw3d
-# Version required:	1.5
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.27 2000/03/23 22:13:06 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.28 2000/04/02 02:57:44 mharo Exp $
 #
 
-DISTNAME=	Xaw3d-1.5
+PORTNAME=	Xaw3d
+PORTVERSION= 	1.5
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	widgets/Xaw3d/R6.3

@@ -1,19 +1,19 @@
 # New ports collection makefile for:	py-gtk
-# Version required:			0.6.2
 # Date created:				09/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.34 1999/10/14 16:49:39 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.35 1999/10/17 17:08:01 nectar Exp $
 #
 
-DISTNAME=	gnome-python-1.0.50
-PKGNAME=	py-gtk-0.6.3
+PORTNAME=	py-gtk
+PORTVERSION=	0.6.3
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	ftp://ftp.daa.com.au/pub/james/python/ \
 		ftp://ftp.gimp.org/pub/gtk/python/ \
 		ftp://infosoc.uni-koeln.de/pub/ftp.gimp.org/pub/gtk/python/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/gtk/python/ \
 		ftp://stef.u-picardie.fr/mirror/ftp.gimp.org/gtk/python/
+DISTNAME=	gnome-python-1.0.50
 
 MAINTAINER=	nectar@FreeBSD.org
 

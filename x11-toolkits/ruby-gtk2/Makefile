@@ -1,12 +1,12 @@
 # New ports collection makefile for:    ruby-gtk
-# Version required:     0.23
 # Date created:         19 April 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.5 1999/11/14 01:40:32 steve Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.6 2000/02/23 00:27:22 jedgar Exp $
 #
 
-DISTNAME=	ruby-gtk-0.23
+PORTNAME=	ruby-gtk
+PORTVERSION= 	0.23
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://www.ueda.info.waseda.ac.jp/~igarashi/ruby/ \
 		ftp://ftp.netlab.co.jp/pub/lang/ruby/contrib/ \

@@ -1,17 +1,17 @@
 # New ports collection makefile for:	tix
-# Version required:	4.1.0.007
 # Date created:		22 December 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.32 2000/02/10 23:57:23 jmz Exp $
+# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.33 2000/02/17 20:15:04 jmz Exp $
 #
 
-DISTNAME=	Tix4.1.0.007
-PKGNAME=	tix-4.1.0.007
+PORTNAME=	tix
+PORTVERSION= 	4.1.0.007
 CATEGORIES=	x11-toolkits tk82
 MASTER_SITES=   http://www.neosoft.com/tcl/ftparchive/%SUBDIR%/ \
 		ftp://ftp.riken.go.jp/pub/lang/tcl/netsoft/%SUBDIR%/
 MASTER_SITE_SUBDIR= sorted/packages-8.0/x11/Tix/4.1.0.007
+DISTNAME=	Tix${PORTVERSION}
 
 MAINTAINER=	jmz@FreeBSD.org
 

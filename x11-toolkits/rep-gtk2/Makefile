@@ -1,12 +1,12 @@
 # New ports collection makefile for:   rep-gtk
-# Version required:    0.9.1
 # Date created:        06 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.8 2000/03/08 12:11:16 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.9 2000/03/21 17:47:32 ade Exp $
 #
 
-DISTNAME=	rep-gtk-0.9.1
+PORTNAME=	rep-gtk
+PORTVERSION=	0.9.1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://rep-gtk.sourceforge.net/pub/rep-gtk/
 

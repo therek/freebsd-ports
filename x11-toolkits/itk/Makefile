@@ -1,15 +1,15 @@
 # New ports collection makefile for:	itk
-# Version required:	3.0.1
 # Date created:		Aug 17 1996
 # Whom:			chuckr
 #
-# $FreeBSD: ports/x11-toolkits/itk/Makefile,v 1.2 1999/08/31 02:59:20 peter Exp $
+# $FreeBSD: ports/x11-toolkits/itk/Makefile,v 1.3 1999/11/28 18:31:16 steve Exp $
 #
 
-DISTNAME=	itcl3.0.1
-PKGNAME=	itk-3.0.1
+PORTNAME=	itk
+PORTVERSION= 	3.0.1
 CATEGORIES=	x11-toolkits tk82
 MASTER_SITES=	ftp://ftp.tcltk.com/pub/itcl/
+DISTNAME=	itcl${PORTVERSION}
 
 MAINTAINER=	dmlb@ragnet.demon.co.uk
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	motif
-# Version required:	2.1.10
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/Motif-dummy/Makefile,v 1.4 1999/08/31 02:59:08 peter Exp $
 #
 
-DISTNAME=	Motif-2.1.10
+PORTNAME=	Motif
+PORTVERSION= 	2.1.10
 CATEGORIES=	x11-toolkits
 DISTFILES=	# empty
 
