@@ -2,17 +2,17 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl83/Makefile,v 1.38 2001/01/16 17:31:16 sobomax Exp $
+# $FreeBSD: ports/lang/tcl83/Makefile,v 1.39 2001/03/08 05:05:10 keith Exp $
 #
 
 PORTNAME=	tcl
-PORTVERSION=	8.3.2
+PORTVERSION=	8.3.3
 CATEGORIES=	lang tcl83
 MASTER_SITES=	${MASTER_SITE_TCLTK}
 MASTER_SITE_SUBDIR=	tcl8_3
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	dirk.meyer@dinoex.sub.org
 
 PATCH_DIST_ARGS=	-d ${WRKDIR}/${DISTNAME} -E ${PATCH_DIST_STRIP}
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
