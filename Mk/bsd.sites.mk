@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.279 2005/01/24 14:56:36 vs Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.280 2005/01/29 18:04:14 tobez Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -772,9 +772,9 @@ MASTER_SITE_PACKETSTORM+= \
 	http://packetstormsecurity.org.pk/%SUBDIR%/
 
 MASTER_SITE_PERL_CPAN+=	\
-	http://www.cpan.dk/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/languages/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%SUBDIR%/ \
+	http://www.cpan.dk/CPAN/modules/by-module/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,lang/perl/CPAN/modules/by-module/&,} \
 	ftp://ftp.kddlabs.co.jp/lang/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/lang/CPAN/modules/by-module/%SUBDIR%/ \
