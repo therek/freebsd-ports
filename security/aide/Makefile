@@ -2,7 +2,7 @@
 # Date created:				Tue Jan  4 11:45:29 PST 2000
 # Whom:					Cy Schubert (Cy.Schubert@uumail.gov.bc.ca)
 #
-# $FreeBSD: ports/security/aide/Makefile,v 1.4 2001/02/06 13:17:00 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aide
@@ -21,7 +21,7 @@ CONFIGURE_ARGS+=--with-mhash \
 		--with-zlib \
 		--with-config_file=/var/adm/aide/aide.conf
 
-CONFIGURE_ENV+=	LIBS='-L${LOCALBASE}/lib ${PTHREAD_LIBS}'
+CONFIGURE_ENV+=	LIBS="-L${LOCALBASE}/lib ${PTHREAD_LIBS}"
 
 MAN1=		aide.1
 MAN5=		aide.conf.5
