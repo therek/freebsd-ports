@@ -2,13 +2,13 @@
 # Date created:				Septermber 21 96
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/rexx-imc/Makefile,v 1.15 2000/06/16 21:51:21 asami Exp $
+# $FreeBSD: ports/lang/rexx-imc/Makefile,v 1.16 2000/10/23 21:03:00 will Exp $
 #
 
 PORTNAME=	rexx-imc
 PORTVERSION=	1.7
 CATEGORIES=	lang
-MASTER_SITES=	http://ruby.comlab.ox.ac.uk/imc/distribution/ \
+MASTER_SITES=	http://users.comlab.ox.ac.uk/ian.collier/distribution/ \
 		ftp://ftp.sai.msu.su/pub/unix/rexx/ \
 		ftp://crydee.sai.msu.ru/zeus/unix/rexx/
 PATCH_SITES=	${MASTER_SITES}
@@ -17,9 +17,9 @@ PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	ports@FreeBSD.org
 
+MAKE_ENV=	MKDIR="${MKDIR}" OPTFLAGS="${CFLAGS}"
 INSTALLS_SHLIB=	yes
 
-MAKE_ENV=	MKDIR="${MKDIR}" OPTFLAGS="${CFLAGS}"
 MAN1=		rexx.1
 
 post-extract:
