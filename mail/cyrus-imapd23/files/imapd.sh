@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop cyrus-imapd
-# $FreeBSD: ports/mail/cyrus-imapd22/files/imapd.sh,v 1.8 2003/09/26 17:15:16 ume Exp $
+# $FreeBSD: ports/mail/cyrus-imapd22/files/imapd.sh,v 1.9 2003/10/01 18:09:34 ume Exp $
 
 # PROVIDE: cyrus_imapd
 # REQUIRE: DAEMON
@@ -32,6 +32,11 @@ rcvar=`set_rcvar`
 command="${prefix}/cyrus/bin/master"
 pidfile="/var/run/cyrus-master.pid"
 required_files="${prefix}/etc/cyrus.conf ${prefix}/etc/imapd.conf"
+stop_postcmd="cyrus_imapd_poststop"
+
+cyrus_imapd_poststop() {
+	/bin/rm -f ${pidfile}
+}
 
 load_rc_config $name
 run_rc_command "$1"
