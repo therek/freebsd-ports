@@ -2,12 +2,11 @@
 # Date created:				18 Apr 2001
 # Whom:					Soeren Boll Overgaard <boll@tolkien.dk>
 #
-# $FreeBSD: ports/sysutils/wmcpuload/Makefile,v 1.5 2001/09/08 21:04:51 petef Exp $
+# $FreeBSD: ports/sysutils/wmcpuload/Makefile,v 1.6 2001/09/15 14:32:55 lioux Exp $
 #
 
 PORTNAME=	wmcpuload
-PORTVERSION=	0.6.0
-PORTREVISION=	1
+PORTVERSION=	0.7.0
 CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://www.sh.rim.or.jp/~ssato/src/
 DISTNAME=	WMCPULoad-${PORTVERSION}
