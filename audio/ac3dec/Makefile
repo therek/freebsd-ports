@@ -2,13 +2,13 @@
 # Date created:				23 Jun 2001
 # Whom:					Marc van Woerkom <3d@freebsd.org>
 #
-# $FreeBSD: $
+# $FreeBSD$
 #
 
 PORTNAME=	ac3dec
 PORTVERSION=	0.6.1
 CATEGORIES=	audio
-MASTER_SITES=	http://gusnet.cx/aaron/codecs/tarballs/
+MASTER_SITES=	http://dara.notbsd.org/~aholtzma/ac3/tarballs/
 
 MAINTAINER=	3d@FreeBSD.org
 
