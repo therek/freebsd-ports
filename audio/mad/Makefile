@@ -2,11 +2,11 @@
 # Date created:        18 November 2000
 # Whom:                Jason R. Mastaler <jason-freebsd@mastaler.com> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/mad/Makefile,v 1.1 2000/12/19 15:38:59 lioux Exp $
 #
 
 PORTNAME=	mad
-PORTVERSION=	0.12.1b
+PORTVERSION=	0.12.5b
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.mars.org/pub/mpeg/
@@ -14,16 +14,15 @@ MASTER_SITE_SUBDIR=	mad
 
 MAINTAINER=	jason-freebsd@mastaler.com
 
-GNU_CONFIGURE=	yes
-# This port is not CFLAGS SAFE, something like CFLAGS="-O -Os"
-# breaks configure and configure likes to use -O2 instead of
-# trusting the system. We'll have it use -O instead of -O*
-# since this configure requires a standard and this has
-# been the system standard
-CONFIGURE_ENV=	CFLAGS="-O -pipe"
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+LIBTOOLFILES=	configure libmad/configure
+CONFIGURE_ARGS=	--disable-debugging --enable-sso --enable-accuracy
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LDFLAGS="-L${LOCALBASE}/lib"
 
-MAN1=			abxtest.1 madplay.1
+MAN1=		abxtest.1 madplay.1
 
 .include <bsd.port.mk>
