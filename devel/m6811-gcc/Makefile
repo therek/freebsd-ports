@@ -2,13 +2,15 @@
 # Date created:		Thu Sep 14 11:10:01 CDT 1995
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/devel/gcc-6811/Makefile,v 1.10 2000/04/24 18:46:36 kris Exp $
+# $FreeBSD: ports/devel/gcc-6811/Makefile,v 1.11 2000/05/30 04:53:34 jake Exp $
 #
 
 PORTNAME=	gcc-6811
 PORTVERSION=	2.6.3
 CATEGORIES=	devel
-MASTER_SITES=	ftp://nyquist.ee.ualberta.ca/pub/motorola/68hc11/gcc/
+MASTER_SITES=	ftp://nyquist.ee.ualberta.ca/pub/motorola/68hc11/gcc/ \
+		ftp://ftp.celestial.com/mirrors/gnu/ \
+		ftp://ftp.inria.fr/gnu/
 DISTFILES=	gcc-6811-fsf.tar.gz gcc-2.6.3.tar.gz
 
 MAINTAINER=	jake@FreeBSD.org
