@@ -2,7 +2,7 @@
 # Date created:				17 June 2000
 # Whom:					Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/erun/Makefile,v 1.1 2000/07/10 04:01:52 steve Exp $
 #
 
 PORTNAME=	E-Run
@@ -12,7 +12,7 @@ MASTER_SITES=	http://void.mapopolis.com/~jacob/c0de/
 
 MAINTAINER=	kbyanc@posi.net
 
-LIB_DEPENDS=    epplet.1:${PORTSDIR}/x11-wm/epplets
+LIB_DEPENDS=    epplet.1:${PORTSDIR}/x11-wm/libepplet
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
