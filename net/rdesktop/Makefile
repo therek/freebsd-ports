@@ -2,7 +2,7 @@
 # Date created:               13 December 2000
 # Whom:                       mwest@uct.ac.za
 #
-# $FreeBSD: ports/net/rdesktop/Makefile,v 1.2 2001/07/10 03:08:42 dwcjr Exp $
+# $FreeBSD: ports/net/rdesktop/Makefile,v 1.3 2001/08/18 23:24:24 ijliao Exp $
 #
 
 PORTNAME=	rdesktop
@@ -35,5 +35,6 @@ do-patch:
 	@${PERL} -pi.orig -e 's:^install.*:install\: rdesktop:g' ${WRKSRC}/Makefile
 	@${PERL} -pi.orig -e 's:^.*\(INSTALL\) rdp-srvr.*::g' ${WRKSRC}/Makefile
 	@${PERL} -pi.orig -e 's:<endian.h>:<machine/endian.h>:g' ${WRKSRC}/rdesktop.h
+	@${PATCH} ${PATCH_ARGS} < files/patch-aa
 
 .include <bsd.port.mk>
