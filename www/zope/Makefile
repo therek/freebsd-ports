@@ -2,7 +2,7 @@
 # Date created:         Sat 21 Aug 1999
 # Whom:                 Peter Cornelius <pcc@gmx.net>
 #
-# $FreeBSD: ports/www/zope/Makefile,v 1.8 2000/07/05 12:37:06 tg Exp $
+# $FreeBSD: ports/www/zope/Makefile,v 1.9 2000/08/05 05:02:53 kris Exp $
 #
 
 PORTNAME=	zope
@@ -64,7 +64,7 @@ do-install:	#
 		${ECHO} "===>   therein and incorporate them to your apache.conf." ; \
 		${ECHO} "===>   Creating rc startup file for Zope-${PORTVERSION}..." ; \
 		${SED} -e "s|%%ZOPEBASEDIR%%|${ZOPEBASEDIR}|g" -e "s|%%CGI_BIN_DIR%%|${CGI_BIN_DIR}|g" \
-			< ${FILESDIR}/zope.sh.in > ${PREFIX}/etc.rc.d/zope.sh; \
+			< ${FILESDIR}/zope.sh.in > ${PREFIX}/etc/rc.d/zope.sh; \
 		${CHMOD} ug+x,o-rwx ${PREFIX}/etc/rc.d/zope.sh ; \
 		${ECHO} "===>  Done with ${PREFIX}/etc/rc.d/zope.sh." ; \
 		${CAT} ${FILESDIR}/Message ; \
