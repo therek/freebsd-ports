@@ -2,7 +2,7 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.53 2001/07/07 23:34:36 okazaki Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.54 2001/07/20 14:24:10 okazaki Exp $
 #
 
 PORTNAME=	openssl
@@ -16,7 +16,7 @@ MASTER_SITES=	http://www.openssl.org/source/ \
 MAINTAINER=	ports@FreeBSD.org
 
 .include <bsd.port.pre.mk>
-.if exists(/usr/lib/libssl.a) && ${OSVERSION} >= 400014
+.if exists(/usr/lib/libssl.a) && ${OSVERSION} >= 430000
 FORBIDDEN=	"OpenSSL is already in the base system"
 .endif
 
