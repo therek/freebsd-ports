@@ -3,7 +3,7 @@
 # Date created:		17 Dec 1998
 # Whom:			asami
 #
-# $FreeBSD: ports/misc/30upgrade/Makefile,v 1.10 1999/08/25 07:20:58 obrien Exp $
+# $FreeBSD: ports/misc/30upgrade/Makefile,v 1.11 2000/01/06 06:57:43 asami Exp $
 #
 
 DISTNAME=	30upgrade-1999.01.05
@@ -16,7 +16,7 @@ MAINTAINER=	asami@FreeBSD.org
 
 .if !defined(PACKAGE_BUILDING)
 BROKEN=		this \"port\" is for building packages for distribution only, please get the package from http://www.freebsd.org/ports/ if you need an upgrade
-.elif ${OSVERSION} < 340000
+.elif ${OSVERSION} < 340000 || ${OSVERSION} >= 400000
 FORBIDDEN=	this needs to be built on a recent 3-stable system
 .endif
 NO_MTREE=	yes
