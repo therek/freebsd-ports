@@ -2,7 +2,7 @@
 # Date created:				2000-10-05
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/snd/Makefile,v 1.2 2000/10/19 08:35:25 trevor Exp $
+# $FreeBSD: ports/audio/snd/Makefile,v 1.3 2000/11/22 11:56:18 sobomax Exp $
 #
 
 PORTNAME=		snd
@@ -21,7 +21,7 @@ LIB_DEPENDS=		intl.1:${PORTSDIR}/devel/gettext
 WITHOUT_GTKEXTRA=	yes
 .endif
 .if !defined(WITHOUT_GTKEXTRA)
-LIB_DEPENDS+=		gtkextra.12:${PORTSDIR}/x11-toolkits/gtkextra
+LIB_DEPENDS+=		gtkextra.13:${PORTSDIR}/x11-toolkits/gtkextra
 .endif
 .if !defined(WITHOUT_GUILE)
 LIB_DEPENDS+=		guile.9:${PORTSDIR}/lang/guile
