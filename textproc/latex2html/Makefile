@@ -2,7 +2,7 @@
 # Date created:		3 May 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/textproc/latex2html/Makefile,v 1.19 2001/07/10 13:54:21 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	latex2html
@@ -13,6 +13,11 @@ MASTER_SITE_SUBDIR=	support/${PORTNAME}
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/b/beta/}
 
 MAINTAINER=	brett@peloton.runet.edu
+
+.include <bsd.port.pre.mk>
+
+# Global variables
+#
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/latex:${PORTSDIR}/print/teTeX \
 		${LOCALBASE}/bin/gs:${PORTSDIR}/print/ghostscript-gnu \
@@ -25,13 +30,35 @@ CONFIGURE_ARGS=	--with-perl=${PERL} \
 		--disable-gif \
 		--libdir=${DATADIR}
 
-post-install:
+MSG_FILE=	${PKGDIR}/pkg-message
+
+# Local variables
+#
+
+DOC_FILES=	FAQ INSTALL LICENSE README
+
+# Port-patch
+#
+
+post-patch: patch-message
+
+patch-message:
+	@${SED} 's|%%PREFIX%%|${PREFIX}|g' ${MSG_FILE} > ${PKGMESSAGE}
+
+# Post-install
+#
+
+post-install: install-docs display-message
+
+install-docs:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/${PORTNAME}
-.for file in FAQ INSTALL LICENSE README
-	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/${PORTNAME}
+	@${MKDIR} ${DOCSDIR}
+.for file in ${DOC_FILES}
+	@${INSTALL_DATA} ${WRKSRC}/${file} ${DOCSDIR}
 .endfor
 .endif
+
+display-message:
 	@${CAT} ${PKGMESSAGE}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
