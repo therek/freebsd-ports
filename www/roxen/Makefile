@@ -2,7 +2,7 @@
 # Date created:				07 April 2001
 # Whom:					Kai Voigt (k@123.org)
 #
-# $FreeBSD: ports/www/roxen/Makefile,v 1.11 2001/05/29 14:21:41 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	roxen
@@ -37,7 +37,7 @@ post-install:
 .include <bsd.port.pre.mk>
 
 .if defined(PARALLEL_PACKAGE_BUILD) && ${OSVERSION} >= 500000
-FORBIDDEN=	hang
+IGNORE=	hang
 .endif
 
 .include <bsd.port.post.mk>

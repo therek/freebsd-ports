@@ -2,7 +2,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/Motif-dummy/Makefile,v 1.4 1999/08/31 02:59:08 peter Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Motif
@@ -15,7 +15,7 @@ NO_BUILD=	yes
 NO_INSTALL=	yes
 IS_INTERACTIVE=	yes
 .if !defined(PACKAGE_BUILDING)
-FORBIDDEN=	this is a dummy package for installing Motif dependencies
+IGNORE=	this is a dummy package for installing Motif dependencies
 .endif
 
 .include <bsd.port.mk>
