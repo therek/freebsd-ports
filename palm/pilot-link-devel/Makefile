@@ -2,7 +2,7 @@
 # Date created:         November, 1997
 # Whom:                 Paul Traina <pst@freebsd.org>
 #
-# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.38 2000/08/04 01:38:52 ade Exp $
+# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.39 2000/08/21 10:07:32 sobomax Exp $
 #
 
 PORTNAME=	pilot-link
@@ -28,9 +28,7 @@ MAN1=		dlpsh.1 ietf2datebook.1 install-datebook.1 \
 MAN7=		pilot-link.7
 
 post-install:
-	@${ECHO} "#!/bin/sh" > ${LOCALBASE}/etc/rc.d/pilot-link.sh
-	@${ECHO} "" >> ${LOCALBASE}/etc/rc.d/pilot-link.sh
-	@${ECHO} "${LDCONFIG} -m ${PREFIX}/lib" >> ${LOCALBASE}/etc/rc.d/pilot-link.sh
+	@{$SED} "s|%%PREFIX%%|${PREFIX}|g" < ${FILESDIR}/pilot-link.sh > ${PREFIX}/etc/rc.d/pilot-link.sh
 	@${CHMOD} 750 ${LOCALBASE}/etc/rc.d/pilot-link.sh
 
 .include <bsd.port.mk>
