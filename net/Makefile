@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.570 2001/07/06 17:23:03 ijliao Exp $
+# $FreeBSD: ports/net/Makefile,v 1.571 2001/07/06 17:36:05 ijliao Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -390,6 +390,7 @@
     SUBDIR += vrrp
     SUBDIR += vtun
     SUBDIR += wais
+    SUBDIR += wakeonlan
     SUBDIR += walker
     SUBDIR += whatmask
     SUBDIR += wide-dhcp
