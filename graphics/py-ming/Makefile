@@ -2,11 +2,12 @@
 # Date created:		16 Oct 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/py-ming/Makefile,v 1.1 2000/10/16 10:42:35 knu Exp $
+# $FreeBSD: ports/graphics/py-ming/Makefile,v 1.2 2000/10/17 09:04:40 knu Exp $
 #
 
 PORTNAME=	ming
 PORTVERSION=	0.0.2e
+PORTREVISION=	1
 CATEGORIES=	graphics python
 MASTER_SITES=	http://www.opaque.net/ming/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
