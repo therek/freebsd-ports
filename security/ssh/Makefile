@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.95 2000/04/17 15:18:40 mharo Exp $
+# $FreeBSD: ports/security/ssh/Makefile,v 1.96 2000/04/21 08:19:02 mharo Exp $
 #
 # Maximal ssh package requires YES values for
 # WITH_PERL, WITH_TCPWRAP
@@ -13,7 +13,7 @@ PORTVERSION=	1.2.27
 CATEGORIES=	security net ipv6
 MASTER_SITES=	ftp://ftp.cs.hut.fi/pub/ssh/
 
-MAINTAINER=	torstenb@FreeBSD.org
+MAINTAINER=	kris@FreeBSD.org
 
 USE_AUTOCONF=	YES	# unfortunately... see comments in patch-xa for details
 
