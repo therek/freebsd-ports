@@ -2,7 +2,7 @@
 # Date created:		12 October 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xpuyo/Makefile,v 1.10 2000/01/22 11:46:08 nakai Exp $
+# $FreeBSD: ports/games/xpuyo/Makefile,v 1.11 2000/04/14 12:28:02 asami Exp $
 #
 
 PORTNAME=	xpuyo
@@ -15,7 +15,6 @@ MAINTAINER=	nakai@FreeBSD.org
 WRKSRC=		${WRKDIR}/xpuyo
 USE_IMAKE=	yes
 XMKMF=		xmkmf
-NO_INSTALL_MANPAGES= yes
 
 RESTRICTED=	"The author\'s ashamed of the quality of this version"
 
