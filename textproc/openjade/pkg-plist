@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/openjade/pkg-plist,v 1.18 2003/02/28 16:41:50 kuriyama Exp $
+@comment $FreeBSD: ports/textproc/openjade/pkg-plist,v 1.19 2003/07/01 06:20:25 kuriyama Exp $
 bin/openjade
 lib/libogrove.a
 lib/libogrove.so
@@ -19,4 +19,4 @@ share/sgml/openjade/dsssl.dtd
 share/sgml/openjade/extensions.dsl
 share/sgml/openjade/fot.dtd
 share/sgml/openjade/style-sheet.dtd
-@exec %%XMLCATMGR%% -sc %%CATALOG_PORTS_SGML%% add openjade/catalog
+@exec %%XMLCATMGR%% -sc %%CATALOG_PORTS_SGML%% add CATALOG openjade/catalog
