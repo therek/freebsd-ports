@@ -2,11 +2,11 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-runit/Makefile,v 1.1 2000/08/22 10:31:09 knu Exp $
 #
 
 PORTNAME=	runit
-PORTVERSION=	0.2.3
+PORTVERSION=	0.2.4
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://homepage1.nifty.com/markey/ruby/rubyunit/
 PKGNAMEPREFIX=	ruby-
