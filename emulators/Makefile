@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.72 2001/05/20 02:48:11 will Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.73 2001/05/29 16:55:38 ijliao Exp $
 #
     SUBDIR += zsnes
 
@@ -33,6 +33,7 @@
     SUBDIR += mastergear
     SUBDIR += mtools
     SUBDIR += osf1_base
+    SUBDIR += p-interp
     SUBDIR += pcemu
     SUBDIR += prodosemu
     SUBDIR += qcl
