@@ -2,11 +2,11 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-unit/Makefile,v 1.10 2001/01/19 09:41:15 knu Exp $
+# $FreeBSD: ports/devel/ruby-unit/Makefile,v 1.11 2001/02/08 09:35:40 knu Exp $
 #
 
 PORTNAME=	unit
-PORTVERSION=	0.3.3a
+PORTVERSION=	0.4.1
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://homepage1.nifty.com/markey/ruby/rubyunit/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -25,6 +25,7 @@ RUBY_SHEBANG_FILES=	${WRKSRC}/bin/c2t.rb	\
 
 BINS=		c2t		runtest
 DOCS=		ChangeLog	README		ToDo
+DOCS_JA=	README.ja
 
 do-build:
 .if !defined(NOPORTDOCS)
@@ -44,6 +45,9 @@ do-install:
 	${MKDIR} ${RUBY_DOCDIR}/runit/ja
 .for f in ${DOCS}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/runit/
+.endfor
+.for f in ${DOCS_JA}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/runit/ja/
 .endfor
 	${CP} -R ${WRKSRC}/doc_en/ ${RUBY_DOCDIR}/runit/
 	${CP} -R ${WRKSRC}/doc_ja/ ${RUBY_DOCDIR}/runit/ja/
