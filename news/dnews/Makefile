@@ -2,7 +2,7 @@
 # Date created:		Thu May 29 17:16:36 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/dnews/Makefile,v 1.15 2000/04/09 17:32:49 cpiazza Exp $
+# $FreeBSD: ports/news/dnews/Makefile,v 1.16 2000/04/21 07:51:43 mharo Exp $
 #
 
 PORTNAME=	dnews
@@ -15,6 +15,11 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	ports@FreeBSD.org
 
 Y2K=		http://netwinsite.com/dnews_y2k.htm
+
+# NOTE: this won't work for fetching files from the CDROM.  However since
+# we don't have permission to put this on the CDROM it shouldn't matter much.
+FETCH_CMD=		ftp
+FETCH_BEFORE_ARGS=	-a
 
 WRKSRC=		${WRKDIR}/dnews
 NO_CDROM=	"no answer yet, if we are allowed to put it onto CDROM"
