@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap20-server/files/slurpd.sh,v 1.3 2003/08/28 12:51:07 edwin Exp $
+# $FreeBSD: ports/net/openldap20-server/files/slurpd.sh,v 1.4 2003/08/30 09:11:51 edwin Exp $
 #
 
 # PROVIDE: slurpd
@@ -31,6 +31,6 @@ load_rc_config $name
 if [ -n "$slurpd_args" ]; then
   warn "slurpd_args is deprecated, use slurpd_flags"
   slurpd_flags="$slurpd_args"
-end
+fi
 
 run_rc_command "$1"
