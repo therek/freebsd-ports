@@ -3,16 +3,17 @@
 # Date created:		9 January 1998
 # Whom:			desmo@bandwidth.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/ircd-hybrid/Makefile,v 1.12 1999/08/25 06:12:44 obrien Exp $
 #
 
-DISTNAME=	ircd-hybrid-5.3p6
+DISTNAME=	ircd-hybrid-5.3p7
 CATEGORIES=	irc
 MASTER_SITES=	ftp://ftp.blackened.com/pub/irc/hybrid/
 
 MAINTAINER=	desmo@bandwidth.org
 
 GNU_CONFIGURE=	yes
+IS_INTERACTIVE=	yes
 
 MAN8=		ircd.8
 
