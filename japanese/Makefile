@@ -1,7 +1,8 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.313 2000/11/13 06:15:21 green Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.314 2000/11/30 15:02:58 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
+    SUBDIR += CGdic-fpw
     SUBDIR += Canna
     SUBDIR += FreeWnn-lib
     SUBDIR += FreeWnn-server
