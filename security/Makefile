@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.201 2001/06/20 13:38:45 nsayer Exp $
+# $FreeBSD: ports/security/Makefile,v 1.202 2001/06/21 11:37:30 knu Exp $
 #
 
     SUBDIR += aafid2
@@ -150,6 +150,7 @@
     SUBDIR += saint
     SUBDIR += scanssh
     SUBDIR += seahorse
+    SUBDIR += secpanel
     SUBDIR += siphon
     SUBDIR += skip
     SUBDIR += slurpie
