@@ -2,17 +2,17 @@
 # Date created:		4 May 1998
 # Whom:			kargl@apl.washington.edu
 #
-# $FreeBSD: ports/devel/ftnchek/Makefile,v 1.13 2000/09/02 13:40:35 sobomax Exp $
+# $FreeBSD: ports/devel/ftnchek/Makefile,v 1.14 2000/09/25 12:21:13 asami Exp $
 
 PORTNAME=	ftnchek
-PORTVERSION=	2.12.2
+PORTVERSION=	3.0.0
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.netlib.org/fortran/
 DISTFILES=	${PORTNAME}.tgz
 
 MAINTAINER=     kargl@apl.washington.edu
 
-MAN1=		dcl2inc.1 ftnchek.1 ftnpp.1
+MAN1=		dcl2inc.1 ftnchek.1
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_dir_lispdir=${PREFIX}/share/emacs/site-lisp
