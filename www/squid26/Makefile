@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid23/Makefile,v 1.74 2001/01/12 06:46:04 peter Exp $
+# $FreeBSD: ports/www/squid23/Makefile,v 1.75 2001/02/05 15:33:48 olgeni Exp $
 #
 
 PORTNAME=	squid
@@ -33,7 +33,7 @@ GNU_CONFIGURE=	yes
 # Follow the apache port's lead...
 CONFIGURE_ARGS=	--bindir=${PREFIX}/sbin  --sysconfdir=${PREFIX}/etc/squid \
 		--localstatedir=${PREFIX}/squid
-STRIP=		# won't install scripts correctly othervise.
+STRIP=		# won't install scripts correctly otherwise.
 MAKEFILE=	makefile
 
 # Some other configure options..
