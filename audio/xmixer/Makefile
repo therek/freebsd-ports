@@ -2,7 +2,7 @@
 # Date created:		27 October 1999
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/audio/xmixer/Makefile,v 1.7 2000/11/02 22:38:54 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmixer
@@ -14,6 +14,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
+USE_REINPLACE=	yes
 USE_GTK=	yes
 USE_AUTOCONF=	yes
 
@@ -21,6 +22,6 @@ MAN1=		xmixer.1
 MLINKS=		xmixer.1 xgmixer.1
 
 pre-patch:
-	@find ${WRKSRC} -type f | xargs  ${PERL} -pi -e 's|rxvt -e|xterm -e|g'
+	@find ${WRKSRC} -type f | xargs  ${REINPLACE_CMD} -e 's|rxvt -e|xterm -e|g'
 
 .include <bsd.port.mk>
