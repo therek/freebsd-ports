@@ -2,16 +2,17 @@
 # Date created:		10 November 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/databases/gnats/Makefile,v 1.35 2001/04/11 21:57:44 ben Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnats
 PORTVERSION=	3.113.1
+PORTREVISION=	1
 CATEGORIES=	databases elisp
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR= gnats
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	des@FreeBSD.org
 
 BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4
 
