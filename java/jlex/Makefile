@@ -2,7 +2,7 @@
 # Date created:		1 June 1999
 # Whom:			jake@checker.org
 #
-# $FreeBSD: ports/java/jlex/Makefile,v 1.2 1999/08/25 06:16:27 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jlex
@@ -11,12 +11,11 @@ CATEGORIES=	java
 MASTER_SITES=	http://www.cs.princeton.edu/~appel/modern/java/JLex/Archive/1.2.3/
 DISTNAME=	Main
 EXTRACT_SUFX=	.java
+EXTRACT_ONLY=	#
 
 MAINTAINER=	jake@checker.org
 
 BUILD_DEPENDS=	${LOCALBASE}/${JAVADIR}/bin/java:${PORTSDIR}/java/jdk
-
-EXTRACT_ONLY=
 
 JAVADIR=	jdk1.1.8
 JAVAC=		${LOCALBASE}/${JAVADIR}/bin/javac
