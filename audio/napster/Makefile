@@ -2,21 +2,21 @@
 # Date created:         Thu Nov 18 01:07:00 PST 1999
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/audio/napster/Makefile,v 1.9 2000/10/08 10:19:14 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	napster
-PORTVERSION=	1.1b
+PORTVERSION=	0.9b
 CATEGORIES=	audio net
 MASTER_SITES=	http://www.gis.net/~nite/
-DISTNAME=	nap-linux-1.1BETA
+DISTNAME=	nap-bsd-0.9BETA
 
 MAINTAINER=	dburr@FreeBSD.org
 
 FORBIDDEN=	"Remote vulnerabilities"
 
 # leaving this here, in case they decide to drop the BSD version again *sigh*
-RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
+# RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 
 ONLY_FOR_ARCHS=	i386
 WRKSRC=		${WRKDIR}/nap
