@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.302 2000/10/28 12:19:45 jeh Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.303 2000/11/07 10:36:57 rse Exp $
 #
 
     SUBDIR += 221upgrade
@@ -45,6 +45,7 @@
     SUBDIR += dnetc
     SUBDIR += dog
     SUBDIR += dotfile
+    SUBDIR += emma
     SUBDIR += estic
     SUBDIR += ewipe
     SUBDIR += ezload
