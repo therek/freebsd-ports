@@ -2,13 +2,14 @@
 # Date created:				2000-12-17
 # Whom:					trevor
 #
-# $FreeBSD: ports/x11/buttonbox/Makefile,v 1.1 2000/12/17 09:52:13 trevor Exp $
+# $FreeBSD: ports/x11/buttonbox/Makefile,v 1.2 2001/08/14 09:10:04 trevor Exp $
 #
 
 PORTNAME=	buttonbox
 PORTVERSION=	0.03
 CATEGORIES=	x11
-MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITES=	http://www.sto-kerrig.org/buttonbox/ \
+		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	trevor
 DISTNAME=	${PORTNAME:S/b/B/g}-${PORTVERSION}
 
