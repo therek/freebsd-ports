@@ -3,12 +3,12 @@
 # Date created:			15 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/pclock/Makefile,v 1.4 1999/08/31 02:58:00 peter Exp $
+# $FreeBSD: ports/x11-clocks/pclock/Makefile,v 1.5 1999/12/04 00:57:15 jim Exp $
 #
 
 DISTNAME=	pclock-0.13
 CATEGORIES=	x11-clocks windowmaker afterstep
-MASTER_SITES=	ftp://ftp.kourakos.com/pub/
+MASTER_SITES=	ftp://ftp.kourakos.com/pub/pclock/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jim@FreeBSD.org
