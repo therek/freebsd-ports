@@ -1,16 +1,16 @@
 # New ports collection makefile for:	pine
-# Version required:     4.10
+# Version required:     4.20
 # Date created:		09 July 1998
 # Whom:			Adrian Penisoara <ady@freebsd.ady.ro>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/pine4/Makefile,v 1.35 1999/08/25 06:50:39 obrien Exp $
 #
 # The changes to ?= on some of these lines is required for the
 # pine4-ssl port. Also, please mirror changes to the files/
 # directory to the pine4-ssl port.
 
-DISTNAME?=       pine4.10
-PKGNAME?=        pine-4.10
+DISTNAME?=       pine4.20
+PKGNAME?=        pine-4.20
 CATEGORIES=     mail news
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/
 
