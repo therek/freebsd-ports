@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.167 2000/09/23 14:40:33 nbm Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.168 2000/10/04 04:52:32 trevor Exp $
 #
 
     SUBDIR += adcomplain
@@ -113,6 +113,7 @@
     SUBDIR += rlytest
     SUBDIR += ruby-net-imap
     SUBDIR += ruby-tmail
+    SUBDIR += sendmail
     SUBDIR += serialmail
     SUBDIR += sigrot
     SUBDIR += smail
