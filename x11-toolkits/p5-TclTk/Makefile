@@ -2,7 +2,7 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Tcl-Tk/Makefile,v 1.18 2000/10/23 21:03:11 will Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Tcl-Tk/Makefile,v 1.19 2001/03/01 06:38:51 vanilla Exp $
 #
 
 PORTNAME=	TclTk
@@ -22,5 +22,9 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Tcl::Tk.3
+
+post-patch:
+	@${PERL} -pi -e 's,%LOCALBASE%,${LOCALBASE},g; \
+		s,%X11BASE%,${X11BASE},g' ${WRKSRC}/Makefile.PL
 
 .include <bsd.port.mk>
