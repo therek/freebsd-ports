@@ -19,6 +19,10 @@ upgrades.
   mkdir -p /tmp/.ICE-unix && chmod 1777 /tmp/.ICE-unix && 
   chown root:wheel /tmp/.ICE-unix
 
+  Also, make sure you do NOT have clear_tmp_enable="YES" set in /etc/rc.conf,
+  as it will remove the directory on every reboot and applications will re-
+  create it with the wrong ownership.
+
 20041227:
   AFFECTS: users of lang/gambas
   AUTHOR: thierry@FreeBSD.org
@@ -1336,4 +1340,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.124 2004/12/27 22:55:51 thierry Exp $
+$FreeBSD: ports/UPDATING,v 1.125 2004/12/29 20:01:19 lofi Exp $
