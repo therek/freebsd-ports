@@ -2,14 +2,14 @@
 # Date created:         24 Nov 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/vtk/Makefile,v 1.6 2000/04/17 00:18:20 reg Exp $
+# $FreeBSD: ports/math/vtk/Makefile,v 1.7 2000/04/20 20:52:49 mharo Exp $
 #
 
 PORTNAME=	vtk
-PORTVERSION=	3.1
+PORTVERSION=	3.1.2
 CATEGORIES=	math
 MASTER_SITES=	ftp://public.kitware.com/pub/vtk/
-DISTNAME=	vtk31Unix
+DISTNAME=	vtk312Unix
 
 MAINTAINER=	ports@FreeBSD.org
 
