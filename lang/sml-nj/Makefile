@@ -2,7 +2,7 @@
 # Date created:        7 July 1998
 # Whom:                jkoshy
 #
-# $FreeBSD: ports/lang/sml-nj/Makefile,v 1.11 2000/06/14 11:09:01 jkoshy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	smlnj
@@ -70,6 +70,8 @@ do-install:
 		${SED} -e "s,${WRKDIR},${SML_BASE}," < $$file > \
 			${SML_LIBDIR}/`${BASENAME} $$file`; \
 	done
+	@${CHOWN} -R ${BINOWN}:${BINGRP} ${SML_BINDIR}
+	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${SML_SRCDIR}
 .for file in ${SML_EXES}
 	-${LN} -s ${SML_BINDIR}/${file} ${PREFIX}/bin/${file}
 .endfor
