@@ -3,7 +3,7 @@
 # Date created:				September 29th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Mysql/Makefile,v 1.20 1999/08/25 05:21:28 obrien Exp $
+# $FreeBSD: ports/databases/p5-Mysql/Makefile,v 1.21 1999/08/31 06:41:19 mharo Exp $
 #
 
 DISTNAME=	Msql-Mysql-modules-1.2016
@@ -12,7 +12,7 @@ CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	DBD
 
-MAINTAINER=	vanilla@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/Data/ShowTable.pm:${PORTSDIR}/devel/p5-Data-ShowTable \
 		${PREFIX}/lib/perl5/site_perl/${PERL_VER}/i386-freebsd/DBI.pm:${PORTSDIR}/databases/p5-DBI
