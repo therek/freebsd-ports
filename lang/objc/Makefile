@@ -2,7 +2,7 @@
 # Date created:         16 May 1998
 # Whom:                 chuckr@freebsd.org
 #
-# $FreeBSD: ports/lang/objc/Makefile,v 1.14 2000/02/08 09:27:12 peter Exp $
+# $FreeBSD: ports/lang/objc/Makefile,v 1.15 2000/04/12 06:19:37 obrien Exp $
 #
 
 PORTNAME=	objc
@@ -17,7 +17,7 @@ MAINTAINER=	chuckr@freebsd.org
 BUILD_DEPENDS=	$(PREFIX)/lib/libgc.a:$(PORTSDIR)/devel/boehm-gc
 
 HAS_CONFIGURE=	yes
-MAN1=		cvtimport.1 objc.1 postlink.1
+MAN1=		cvtimport.1 objc.1 postlink.1 vici.1
 MAN3=		Array.3 AsciiFiler.3 Bag.3 Block.3 CAObject.3 Cltn.3 \
 		Complex.3 Dictionary.3 Float.3 Fraction.3 IdArray.3 IntArray.3\
 		BigInt.3 IntegerModp.3 Matrix.3 Message.3 Monomial.3 Object.3\
