@@ -2,12 +2,12 @@
 # Date created:         15 March 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/japanese/rubytk/Makefile,v 1.6 2000/04/12 14:37:30 knu Exp $
+# $FreeBSD: ports/japanese/rubytk/Makefile,v 1.7 2000/04/14 17:10:44 knu Exp $
 #
 
 CATEGORIES=	japanese
 
-MAINTAINER=	yasuf@big.or.jp
+MAINTAINER=	yasuf@bsdclub.org
 
 TCL_VERSION?=	80
 TK_VERSION?=	80
