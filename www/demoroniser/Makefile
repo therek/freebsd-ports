@@ -3,15 +3,16 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/demoroniser/Makefile,v 1.2 1999/08/31 02:42:47 peter Exp $
 #
 
 DISTNAME=	demoroniser
 PKGNAME=	demoroniser-1.0
 CATEGORIES=	www
-MASTER_SITES=	http://www.fourmilab.ch/webtools/demoroniser/
+MASTER_SITES=	http://www.fourmilab.ch/webtools/demoroniser/ \
+		http://www.freebsd.org/~jedgar/distfiles/
 
-MAINTAINER=	jedgar@fxp.org
+MAINTAINER=	jedgar@FreeBSD.org
 
 USE_ZIP=	yes
 NO_BUILD=	yes
