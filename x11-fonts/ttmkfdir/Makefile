@@ -2,11 +2,11 @@
 # Date created:		September 08, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/ttmkfdir/Makefile,v 1.10 2000/10/04 06:40:06 sobomax Exp $
+# $FreeBSD: ports/x11-fonts/ttmkfdir/Makefile,v 1.11 2001/01/09 19:13:17 trevor Exp $
 #
 
 PORTNAME=	ttmkfdir
-PORTVERSION= 	0.0
+PORTVERSION=	0.0
 CATEGORIES=	x11-fonts x11
 MASTER_SITES=	http://www.joerg-pommnitz.de/TrueType/
 DISTNAME=	${PORTNAME}

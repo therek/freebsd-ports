@@ -2,11 +2,11 @@
 # Date created:         7 December 1994
 # Whom:                 asami
 #
-# $FreeBSD: ports/x11-fonts/xfed/Makefile,v 1.23 1999/08/31 06:52:38 mharo Exp $
+# $FreeBSD: ports/x11-fonts/xfed/Makefile,v 1.24 2000/04/10 00:44:42 cpiazza Exp $
 #
 
 PORTNAME=	xfed
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/graphics/systems/X11.old/pub/R6untarred/contrib/programs/
 DISTNAME=	${PORTNAME}

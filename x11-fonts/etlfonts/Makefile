@@ -2,11 +2,11 @@
 # Date created:		3 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/etlfonts/Makefile,v 1.11 2000/09/12 13:03:47 asami Exp $
+# $FreeBSD: ports/x11-fonts/etlfonts/Makefile,v 1.12 2000/10/08 10:23:22 asami Exp $
 #
 
 PORTNAME=	etlfonts-noncjk
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://ftp.etl.go.jp/pub/mule/fonts/
 DISTNAME=	non-cjk
