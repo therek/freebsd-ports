@@ -2,7 +2,7 @@
 # Date created:				10 Mar 2000
 # Whom:					dom@happygiraffe.net
 #
-# $FreeBSD: ports/x11-fonts/mozilla-fonts/Makefile,v 1.4 2001/06/07 07:46:06 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mozilla-fonts
@@ -13,6 +13,8 @@ CATEGORIES=	x11-fonts www
 MASTER_SITES=	http://www.myrddin.demon.co.uk/dist/
 
 MAINTAINER=	dom@happygiraffe.net
+
+BROKEN=		"Does not build"
 
 USE_X_PREFIX=	true
 
