@@ -2,12 +2,12 @@
 # Date created:				6 November 1994
 # Whom:					jmz
 #
-# $FreeBSD: ports/textproc/ispell/Makefile,v 1.62 2001/08/13 01:26:04 jmz Exp $
+# $FreeBSD: ports/textproc/ispell/Makefile,v 1.63 2001/08/15 20:33:15 knu Exp $
 #
 
 PORTNAME?=	ispell
 PORTVERSION?=	3.2.05
-PORTREVISION=	1
+PORTREVISION?=	1
 CATEGORIES+=	textproc
 MASTER_SITES=	http://fmg-www.cs.ucla.edu/geoff/tars/
 DISTNAME=	ispell-3.2.05		# needed for slave ports / options
