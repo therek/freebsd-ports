@@ -2,11 +2,11 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD: ports/security/drweb/Makefile,v 1.6 2001/08/25 16:31:39 ache Exp $
+# $FreeBSD: ports/security/drweb/Makefile,v 1.7 2001/09/01 08:41:22 demon Exp $
 #
 
 PORTNAME=	drweb
-PORTVERSION=	4.25
+PORTVERSION=    4.26
 CATEGORIES=	security
 MASTER_SITES=	http://www.drweb.ru/ftp/web_pub/
 DISTNAME=	${PORTNAME}d-${PORTVERSION}-freebsd4
@@ -23,6 +23,7 @@ DRWEB_PREFIX=	${PREFIX}/${PORTNAME}
 
 do-install:
 	-@${MKDIR} -v ${DRWEB_PREFIX}
+	@cd ${DRWEB_PREFIX}; ${RM} -f drw*.txt drw*.vdb drweb drwebd
 	${TAR} -xzf ${WRKSRC}/${DISTNAME}.tar.gz -C ${DRWEB_PREFIX} --exclude *.ini
 	${TAR} -xzOf ${WRKSRC}/${DISTNAME}.tar.gz drweb32.ini | \
 		${SED} 's#__INSTALL_DIR__#${DRWEB_PREFIX}#' \
