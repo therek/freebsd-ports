@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.295 2000/08/11 10:41:28 will Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.296 2000/08/11 21:41:49 will Exp $
 #
 
     SUBDIR += 9term
@@ -56,6 +56,8 @@
     SUBDIR += powershell
     SUBDIR += props
     SUBDIR += qrash
+    SUBDIR += ruby-kde
+    SUBDIR += ruby-kde-i18n
     SUBDIR += rxvt
     SUBDIR += stockticker_applet
     SUBDIR += sxpc
