@@ -2,16 +2,16 @@
 # Date created:         02 Dez 1997
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/fidogate/Makefile,v 1.10 2000/03/08 16:47:07 jedgar Exp $
+# $FreeBSD: ports/news/fidogate/Makefile,v 1.11 2000/04/09 17:32:51 cpiazza Exp $
 #
 
 PORTNAME=	fidogate
-PORTVERSION=	4.4.0
-CATEGORIES=	news
-MASTER_SITES=	${MASTER_SITE_SUNSITE} \
-		ftp://ftp.fido.de/pub/fidogate/ \
+PORTVERSION=	4.4.1
+CATEGORIES=	news mail
+MASTER_SITES=	ftp://ftp.fido.de/pub/fidogate/ \
 		ftp://ftp.gwdg.de/pub/linux/fido/fidogate/ \
-		ftp://ftp.fu-berlin.de/unix/news/fidogate/
+		ftp://ftp.fu-berlin.de/unix/news/fidogate/ \
+		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/fido
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
@@ -46,7 +46,7 @@ pre-install:
 	${MKDIR} ${PREFIX}/share/doc/fidogate/misc
 	${MKDIR} ${PREFIX}/share/doc/fidogate/gatebau
 
-DOCLIST = \
+DOCLIST=	\
 	fidogate.texi fidogate.txt \
 	gatebau94.txt kludge-rfc.doc msgid.doc \
 	qmail.txt texinfo.tex \
