@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/gnutls/pkg-plist,v 1.9 2004/06/04 21:52:53 sergei Exp $
+@comment $FreeBSD: ports/security/gnutls/pkg-plist,v 1.10 2004/09/10 08:15:53 sergei Exp $
 bin/certtool
 bin/gnutls-cli
 bin/gnutls-cli-debug
@@ -27,6 +27,8 @@ lib/libgnutls.a
 lib/libgnutls.la
 lib/libgnutls.so
 lib/libgnutls.so.12
+libdata/pkgconfig/gnutls-extra.pc
+libdata/pkgconfig/gnutls.pc
 share/aclocal/libgnutls-extra.m4
 share/aclocal/libgnutls.m4
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
