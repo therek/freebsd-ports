@@ -3,7 +3,7 @@
 # Date created:		22 December 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.29 1999/12/05 06:45:59 jmz Exp $
+# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.30 1999/12/09 16:16:26 asami Exp $
 #
 
 DISTNAME=	Tix4.1.0.007
@@ -63,5 +63,6 @@ post-install:
 	${RM} ${PREFIX}/include/tix/generic/tix.h
 	@# These two files are the same
 	${LN} -sf ../../tix.h ${PREFIX}/include/tix/generic
+	${MV} ${PREFIX}/man/mann/tixwish.1 ${PREFIX}/man/man1
 
 .include <bsd.port.post.mk>
