@@ -2,7 +2,7 @@
 # Date created:				2000-09-05
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/audio/spiralsynth/Makefile,v 1.3 2000/10/04 05:09:17 trevor Exp $
+# $FreeBSD: ports/audio/spiralsynth/Makefile,v 1.4 2000/12/06 22:53:38 trevor Exp $
 #
 
 PORTNAME=	spiralsynth
@@ -16,12 +16,20 @@ MAINTAINER=	trevor@FreeBSD.org
 LIB_DEPENDS=	fltk.1:${PORTSDIR}/x11-toolkits/fltk
 
 USE_X_PREFIX=	yes
-
+MAKE_ENV=	PTHREAD_LIBS="${PTHREAD_LIBS}" \
+		PTHREAD_CFLAGS="${PTHREAD_CFLAGS}"
 GNU_CONFIGURE=	yes
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 
 DOC_FILES=	CHANGES COPYING README
+
+post-patch:
+	${PERL} -pi -e 's|-O3|${PTHREAD_CFLAGS}|g ; \
+			s|CFLAGS =|CFLAGS +=|g ; \
+			s|CXXFLAGS=|CXXFLAGS+=|g ; \
+			s|-lm|${PTHREAD_LIBS} -lm|g ; \
+			s|/usr/X11R6|${X11BASE}|g' ${WRKSRC}/Makefile.in
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/SpiralSynth ${PREFIX}/bin
