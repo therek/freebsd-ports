@@ -1,4 +1,4 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.45 2001/04/08 15:32:56 shige Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.46 2001/04/08 16:33:27 shige Exp $
 #
 
     SUBDIR += abacus
@@ -10,6 +10,7 @@
     SUBDIR += cbb
     SUBDIR += gaddr
     SUBDIR += gcal
+    SUBDIR += gemcal
     SUBDIR += genius
     SUBDIR += gnofin
     SUBDIR += gnomepim
