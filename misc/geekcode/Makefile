@@ -2,15 +2,13 @@
 # Date created:		30 Aug 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/geekcode/Makefile,v 1.8 2000/06/30 20:55:23 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	geekcode
 PORTVERSION=	1.7
 CATEGORIES=	misc
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
-		http://seymour.lazygenes.net/ \
-		http://www.zort.on.ca/software/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	geekcode
 
 MAINTAINER=	cpiazza@FreeBSD.org
