@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.79 2000/06/16 08:18:12 sobomax Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.80 2000/06/16 21:52:08 asami Exp $
 #
 
 PORTNAME=	XFree86
@@ -25,7 +25,6 @@ PATCHFILES= 	fix-01-r128
 MAINTAINER=	jmz@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DIST_SUBDIR}
-IS_INTERACTIVE=	yes	# configure script asks questions
 INSTALLS_SHLIB=	yes
 .if (${MACHINE} != "alpha")
 #NO_PACKAGE=	package available from XFree86
@@ -71,8 +70,16 @@ pre-fetch:
 
 post-extract:
 	@${MV} ${WRKSRC}/programs/Xserver/hw/xfree86/vga256/drivers/i810/os-support/linux/agpgart.h ${WRKSRC}/programs/Xserver/hw/xfree86/vga256/drivers/i810/
+	@if [ -r ${FILESDIR}/config ]; then \
+		${ECHO} Using your existing ${FILESDIR}/config ; \
+		${CP} ${FILESDIR}/config ${WRKDIR}/config ; \
+	fi
 
 .include <bsd.port.pre.mk>
+
+.if !exists(${FILESDIR}/config)
+IS_INTERACTIVE=	yes	# configure script asks questions
+.endif
 
 pre-install:
 	${MKDIR} ${X11BASE}
