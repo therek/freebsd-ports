@@ -2,7 +2,7 @@
 # Date created:		3 July 2000
 # Whom:			Ryuichiro IMURA <imura@af.airnet.ne.jp>
 #
-# $FreeBSD: ports/japanese/msdosfs/Makefile,v 1.4 2000/10/23 16:29:19 imura Exp $
+# $FreeBSD: ports/japanese/msdosfs/Makefile,v 1.5 2000/10/27 18:44:35 imura Exp $
 #
 
 PORTNAME=	msdosfs
@@ -10,12 +10,12 @@ PORTVERSION=	${LAST_UPDATED}
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.linkclub.or.jp/~clover/ \
 		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	imura
+MASTER_SITE_SUBDIR=	asami
 DISTNAME=	${PORTNAME}-ja-20000421
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		mount_msdos-20000701.tar.gz
 
-MAINTAINER=	imura@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/msdosfs.ja
 

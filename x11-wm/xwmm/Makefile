@@ -1,17 +1,17 @@
 # New ports collection makefile for:	xwmm
 # Date created:		26 Nov 1999
-# Whom:			imura@FreeBSD.org
+# Whom:			imura@af.airnet.ne.jp
 #
-# $FreeBSD: ports/x11-wm/xwmm/Makefile,v 1.3 2000/04/10 19:50:46 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/xwmm/Makefile,v 1.4 2000/06/29 07:02:59 obrien Exp $
 #
 
 PORTNAME=	xwmm
 PORTVERSION= 	0.7
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	imura
+MASTER_SITE_SUBDIR=	asami
 
-MAINTAINER=	imura@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_QT2=	yes
