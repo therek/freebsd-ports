@@ -2,13 +2,13 @@
 # Date created:		27 Feb 1995
 # Whom:			ache
 #
-# $FreeBSD: ports/audio/playmidi/Makefile,v 1.12 2000/01/05 20:56:45 jedgar Exp $
+# $FreeBSD: ports/audio/playmidi/Makefile,v 1.13 2000/04/08 21:24:12 mharo Exp $
 #
 
 PORTNAME=	playmidi
 PORTVERSION=	2.4
 CATEGORIES=	audio
-MASTER_SITES=	http://nl.linux.org/~diz/playmidi/
+MASTER_SITES=	http://people.nl.linux.org/~diz/playmidi/
 
 MAINTAINER=	ports@FreeBSD.org
 
