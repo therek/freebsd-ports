@@ -2,7 +2,7 @@
 # Date created:		Sa  12 Okt 1996 19:20:51 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/lyx/Makefile,v 1.50 2000/08/13 16:03:49 dirk Exp $
+# $FreeBSD: ports/print/lyx/Makefile,v 1.51 2000/09/10 11:06:01 dirk Exp $
 #
 
 PORTNAME=	lyx
@@ -45,5 +45,6 @@ pre-fetch:
 
 post-patch:
 	(cd ${WRKSRC}; ${TOUCH} Makefile.in */Makefile.in src/config.h.in)
+	(cd ${WRKSRC}/lib/doc; ${RM} -f *.orig)
 
 .include <bsd.port.mk>
