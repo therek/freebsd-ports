@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.38 1999/11/25 06:46:40 nsayer Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.39 1999/12/24 14:02:15 jedgar Exp $
 #
 
     SUBDIR += aftp
@@ -30,6 +30,7 @@
     SUBDIR += stella
     SUBDIR += stonx
     SUBDIR += tkhfs
+    SUBDIR += truereality
     SUBDIR += vgb
     SUBDIR += vice
     SUBDIR += vMac
