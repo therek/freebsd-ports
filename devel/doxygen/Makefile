@@ -2,13 +2,13 @@
 # Date created:        20 March 1998
 # Whom:                Joep Grooten <joep@di.nl>
 #
-# $FreeBSD: ports/devel/doxygen/Makefile,v 1.8 2001/01/28 19:50:35 dannyboy Exp $
+# $FreeBSD: ports/devel/doxygen/Makefile,v 1.9 2001/03/13 06:38:14 kuriyama Exp $
 #
 
 PORTNAME=	doxygen
 PORTVERSION=	1.2.6
 CATEGORIES=	devel
-MASTER_SITES=	http://www.stack.nl/~dimitri/doxygen/dl/
+MASTER_SITES=	ftp://ftp.stack.nl/pub/users/dimitri/
 EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	joep@di.nl
