@@ -2,7 +2,7 @@
 # Date created:		28 Sept 1995
 # Whom:			dchapes@zeus.leitch.com
 #
-# $FreeBSD: ports/devel/cflow/Makefile,v 1.7 2000/04/11 21:27:20 mharo Exp $
+# $FreeBSD: ports/devel/cflow/Makefile,v 1.8 2000/06/07 22:07:05 asami Exp $
 #
 
 PORTNAME=	cflow
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	devel/lang/c
 
-MAINTAINER=	dchapes@zeus.leitch.com
+MAINTAINER=	bsdport@ddm.wox.org
 
 USE_GMAKE=	yes
 MAN1=		cflow.1

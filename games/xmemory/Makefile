@@ -2,7 +2,7 @@
 # Date Created:		Sat Feb  7 21:37:09 EST 1998
 # Whom:			Dave Chapeskie <dchapes@ddm.on.ca>
 #
-# $FreeBSD: ports/games/xmemory/Makefile,v 1.3 1999/08/25 06:05:34 obrien Exp $
+# $FreeBSD: ports/games/xmemory/Makefile,v 1.4 2000/04/14 12:27:42 asami Exp $
 #
 
 PORTNAME=	xmemory
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/multiplayer
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	dchapes@ddm.on.ca
+MAINTAINER=	bsdport@ddm.wox.org
 
 USE_IMAKE=	yes
 MAN1=		xmemory.1

@@ -2,7 +2,7 @@
 # Date created:				Mon Oct 12 12:32:07 EDT 1998
 # Whom:					Dave Chapeskie <dchapes@ddm.on.ca>
 #
-# $FreeBSD: ports/games/ifm/Makefile,v 1.6 2000/04/14 12:25:55 asami Exp $
+# $FreeBSD: ports/games/ifm/Makefile,v 1.7 2000/09/25 12:21:23 asami Exp $
 #
 
 PORTNAME=	ifm
@@ -17,7 +17,7 @@ MASTER_SITES=	ftp://ftp.gmd.de/if-archive/mapping-tools/ \
 		ftp://ftp.nodomainname.net/pub/mirrors/if-archive/mapping-tools/
 DISTFILES=	ifm41.tgz
 
-MAINTAINER=	dchapes@ddm.on.ca
+MAINTAINER=	bsdport@ddm.wox.org
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
