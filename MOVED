@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.376 2004/03/19 23:56:41 trevor Exp $
+# $FreeBSD: ports/MOVED,v 1.377 2004/03/20 00:58:19 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -982,3 +982,4 @@ textproc/yaxi|textproc/ocaml-yaxi|2004-03-19|port renamed
 devel/camomile|devel/ocaml-camomile|2004-03-19|port renamed
 archivers/gshar+gunshar|archivers/sharutils|2004-03-19|port renamed
 devel/imake|devel/imake-4|2004-03-19|removed, obsoleted by imake-4 long ago
+net/arpwatch-devel|net-mgmt/arpwatch-devel|2004-03-20|moved to better fitting category
