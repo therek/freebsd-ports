@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.166 2002/04/27 11:15:18 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.167 2002/05/07 02:27:53 kris Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -51,6 +51,7 @@ mbstring	"multibyte string module" OFF \
 YP		"YP/NIS support" OFF \
 BCMath		"BCMath support" OFF \
 Hyperwave	"Hyperwave support" OFF \
+mcve		"MCVE Credit Card Verification support" OFF \
 ming		"ming library support" OFF \
 MCAL		"Modular Calendar Access Library support" OFF \
 sockets		"sockets support" OFF \
@@ -321,6 +322,10 @@ while [ "$1" ]; do
 		\"Hyperwave\")
 			echo "CONFIGURE_ARGS+=--with-hyperwave=yes"
 			;;
+		\"mcve\")
+			echo "LIB_DEPENDS+=	mcve.0:\${PORTSDIR}/devel/libmcve"
+			echo "CONFIGURE_ARGS+=--with-mcve=\${LOCALBASE}"
+ 			;;
 		\"ming\")
 			echo "LIB_DEPENDS+=	ming.3:\${PORTSDIR}/graphics/ming"
 			echo "CONFIGURE_ARGS+=--with-ming=\${LOCALBASE}"
