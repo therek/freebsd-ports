@@ -1,8 +1,8 @@
 # New ports collection makefile for:	Quanta+
 # Date created:				19 May 2000
-# Whom:					Will Andrews <ports@FreeBSD.org>
+# Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/www/quanta/Makefile,v 1.4 2000/06/22 05:52:09 will Exp $
+# $FreeBSD: ports/www/quanta/Makefile,v 1.5 2000/09/09 22:18:08 jedgar Exp $
 #
 
 PORTNAME=	quanta
@@ -11,7 +11,7 @@ CATEGORIES=	www kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jeremy@external.org
 
 LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11/
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext/
