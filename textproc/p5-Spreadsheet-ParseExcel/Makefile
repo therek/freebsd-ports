@@ -2,11 +2,11 @@
 # Date created:		25 Dec 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/p5-Spreadsheet-ParseExcel/Makefile,v 1.3 2001/03/01 06:38:45 vanilla Exp $
+# $FreeBSD: ports/textproc/p5-Spreadsheet-ParseExcel/Makefile,v 1.4 2001/04/30 23:42:54 mharo Exp $
 #
 
 PORTNAME=	Spreadsheet-ParseExcel
-PORTVERSION=	0.21
+PORTVERSION=	0.2403
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Spreadsheet
@@ -20,7 +20,8 @@ RUN_DEPENDS=	${BUILD_DEPENDS}
 PERL_CONFIGURE=	yes
 
 MAN3=		Spreadsheet::ParseExcel.3 \
-		Spreadsheet::ParseExcel::Utility.3
+		Spreadsheet::ParseExcel::Utility.3 \
+		Spreadsheet::ParseExcel::SaveParser.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 .include <bsd.port.mk>
