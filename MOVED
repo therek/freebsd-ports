@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.405 2004/04/18 10:33:14 clement Exp $
+# $FreeBSD: ports/MOVED,v 1.406 2004/04/19 01:05:15 eik Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1041,3 +1041,4 @@ net/eudc-emacs20||2004-04-19|removed port depending on OpenLDAP 1.2
 net/openldap12||2004-04-19|removed ancient port
 net/py-ldap1||2004-04-19|removed port depending on OpenLDAP 1.2
 www/web500gw||2004-04-19|removed port depending on OpenLDAP 1.2
+games/neverputt|games/neverball|2004-04-19|merged into neverball
