@@ -3,15 +3,14 @@
 # Date created:			  Mon Oct 28, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/emulators/spim/Makefile,v 1.18 2001/02/27 04:55:11 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	spim
-PORTVERSION=	6.3
-PORTREVISION=	1
+PORTVERSION=	6.4
 CATEGORIES=	emulators
-MASTER_SITES=	ftp://ftp.cs.wisc.edu/pub/spim/
-DISTNAME=	${PORTNAME}${PORTVERSION}
+MASTER_SITES=	http://www.cs.wisc.edu/~larus/SPIM/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
