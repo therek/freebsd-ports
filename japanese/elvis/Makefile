@@ -2,7 +2,7 @@
 # Date created:         5 October 1995
 # Whom:                 Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/japanese/elvis/Makefile,v 1.20 2001/01/29 02:49:43 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	elvis
@@ -16,7 +16,7 @@ DISTNAME=	${PORTNAME}-1.8
 PATCH_SITES=    ftp://ftp.foretune.co.jp/pub/tools/jelvis/
 PATCHFILES=	j${PORTNAME}1.8p4-j1.1.tar.Z
 
-MAINTAINER=	sanpei@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 
