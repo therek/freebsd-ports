@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.303 2001/04/17 17:56:11 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.304 2001/04/17 18:07:30 will Exp $
 #
 
     SUBDIR += 4va
@@ -166,6 +166,7 @@
     SUBDIR += pgperl
     SUBDIR += pgplot
     SUBDIR += photopc
+    SUBDIR += picturebook
     SUBDIR += piddle
     SUBDIR += pixmap
     SUBDIR += plasma-kmod
