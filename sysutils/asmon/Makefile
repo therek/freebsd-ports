@@ -3,13 +3,13 @@
 # Date created:		27 Sep 1999
 # Whom:			jack
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/asmon/Makefile,v 1.1.1.1 1999/10/05 16:30:00 cpiazza Exp $
 #
 
 DISTNAME=	asmon-0.60
 CATEGORIES=	sysutils afterstep
-MASTER_SITES=	ftp://ftp.afterstep.org/apps/asmem/ \
-		http://www.tigr.net/afterstep/as-apps/download/asmon/
+MASTER_SITES=	ftp://ftp.afterstep.org/apps/asmem/
+#		http://www.tigr.net/afterstep/as-apps/download/asmon/
 
 MAINTAINER=	jack@germanium.xtalwind.net
 
