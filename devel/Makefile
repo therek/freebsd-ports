@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.383 2001/01/01 05:45:34 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.384 2001/01/01 09:32:01 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -11,6 +11,7 @@
     SUBDIR += a2dev
     SUBDIR += adabroker
     SUBDIR += amulet
+    SUBDIR += arm-aout-binutils
     SUBDIR += asis
     SUBDIR += asl
     SUBDIR += astyle
