@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.277 2000/12/19 12:10:32 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.278 2000/12/19 12:45:29 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -136,6 +136,7 @@
     SUBDIR += p5-CGI
     SUBDIR += p5-CGI_Lite
     SUBDIR += p5-CGI-FastTemplate
+    SUBDIR += p5-CGI-Minimal
     SUBDIR += p5-FastCGI
     SUBDIR += p5-HTML
     SUBDIR += p5-HTML-Embperl
