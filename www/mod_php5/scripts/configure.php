@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.95 2000/06/06 20:45:50 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.96 2000/07/01 14:25:59 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -94,7 +94,7 @@ while [ "$1" ]; do
 			fi
 			;;
 		\"IMAP\")
-			echo "LIB_DEPENDS+=	c-client4.7:\${PORTSDIR}/mail/imap-uw"
+			echo "LIB_DEPENDS+=	c-client4.7:\${PORTSDIR}/mail/cclient"
 			echo "CONFIGURE_ARGS+=--with-imap=\${PREFIX}"
 			;;
 		\"MySQL\")
