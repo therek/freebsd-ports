@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/games/gtypist/pkg-plist,v 1.1 2001/05/27 16:49:54 ijliao Exp $
 @unexec install-info --delete %D/info/gtypist.info %D/info/dir
 info/gtypist.info
 @exec install-info %D/info/gtypist.info %D/info/dir
@@ -7,14 +7,22 @@ share/gtypist/d.typ
 share/gtypist/demo.typ
 share/gtypist/esp.typ
 share/gtypist/gtypist.typ
+share/gtypist/ktde.typ
+share/gtypist/kten.typ
+share/gtypist/ktfr.typ
+share/gtypist/ktlecten.typ
+share/gtypist/ktno.typ
+share/gtypist/ktnumber.typ
 share/gtypist/m.typ
 share/gtypist/n.typ
 share/gtypist/q.typ
 share/gtypist/r.typ
 share/gtypist/s.typ
 share/gtypist/t.typ
+share/gtypist/ttde.typ
 share/gtypist/u.typ
 share/gtypist/v.typ
 share/locale/de/LC_MESSAGES/gtypist.mo
 share/locale/es/LC_MESSAGES/gtypist.mo
+share/locale/fi/LC_MESSAGES/gtypist.mo
 @dirrm share/gtypist
