@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.249 1999/12/10 15:21:48 steve Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.250 1999/12/10 15:32:42 steve Exp $
 #
 
     SUBDIR += 221upgrade
@@ -74,6 +74,7 @@
     SUBDIR += mshell
     SUBDIR += numchar
     SUBDIR += nwrite
+    SUBDIR += orville-write
     SUBDIR += p5-Array-PrintCols
     SUBDIR += p5-Business-CreditCard
     SUBDIR += p5-Locale-Codes
