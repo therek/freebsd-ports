@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.623 2001/08/24 22:59:53 ache Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.624 2001/08/28 06:10:50 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -519,7 +519,6 @@
     SUBDIR += shtool
     SUBDIR += sip
     SUBDIR += soup
-    SUBDIR += source-highlight
     SUBDIR += sparc-rtems-binutils
     SUBDIR += sparc-rtems-chill
     SUBDIR += sparc-rtems-g77
