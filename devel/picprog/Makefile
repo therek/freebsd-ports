@@ -2,13 +2,13 @@
 # Date created:         31 August 1999
 # Whom:                 Johan Kerckaert <kirk@bricsnet.com>
 #
-# $FreeBSD: ports/devel/picprog/Makefile,v 1.2 2000/04/11 21:30:07 mharo Exp $
+# $FreeBSD: ports/devel/picprog/Makefile,v 1.3 2001/06/12 15:52:45 kevlo Exp $
 #
 
 PORTNAME=	picprog
 PORTVERSION=	1.0.1
 CATEGORIES=	devel
-MASTER_SITES=	http://www.pp.htv.fi/jhyvatti/pic/
+MASTER_SITES=	http://hyvatti.iki.fi/~jaakko/pic/
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -18,9 +18,9 @@ MAN1=		picprog.1
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/picprog
-	${INSTALL_MAN} ${WRKSRC}/picprog.html ${PREFIX}/share/doc/picprog
-	${INSTALL_MAN} ${WRKSRC}/*.gif ${PREFIX}/share/doc/picprog
+	@${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/picprog.html ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/*.gif ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
