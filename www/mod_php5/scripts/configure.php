@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.159 2002/03/21 22:11:01 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.160 2002/03/21 22:29:14 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -94,7 +94,6 @@ while [ "$1" ]; do
 			;;
 		\"zlib\")
 			echo "CONFIGURE_ARGS+=--with-zlib"
-			ZLIB=1
 			;;
 		\"bzip2\")
 			if [ -x /usr/bin/bzip2 ]; then
@@ -125,8 +124,11 @@ while [ "$1" ]; do
 			echo "		--with-tiff-dir=\${LOCALBASE}"
 			;;
 		\"IMAP\")
-			echo "LIB_DEPENDS+=	c-client4.8:\${PORTSDIR}/mail/cclient"
-			echo "CONFIGURE_ARGS+=--with-imap=\${LOCALBASE}"
+			if [ -z "$IMAP" ]; then
+				echo "LIB_DEPENDS+=	c-client4.8:\${PORTSDIR}/mail/cclient"
+				echo "CONFIGURE_ARGS+=--with-imap=\${LOCALBASE}"
+				IMAP=1
+			fi
 			;;
 		\"IMAP-SSL\")
 			echo "CONFIGURE_ARGS+=--with-imap-ssl=\${LOCALBASE}"
@@ -221,9 +223,11 @@ while [ "$1" ]; do
 			LIBS="${LIBS} -L\${OPENSSLBASE}/lib -lcrypto -lssl"
 			;;
 		\"XML\")
-			echo "LIB_DEPENDS+=	expat.2:\${PORTSDIR}/textproc/expat2"
-			echo "CONFIGURE_ARGS+=--with-expat-dir=\${LOCALBASE}"
-			XML=1
+			if [ -z "$XML" ]; then
+				echo "LIB_DEPENDS+=	expat.2:\${PORTSDIR}/textproc/expat2"
+				echo "CONFIGURE_ARGS+=--with-expat-dir=\${LOCALBASE}"
+				XML=1
+			fi
 			;;
 		\"XMLRPC\")
 			echo "CONFIGURE_ARGS+=--with-xmlrpc"
@@ -263,9 +267,11 @@ while [ "$1" ]; do
 			echo "CONFIGURE_ARGS+=--with-gettext=\${LOCALBASE}"
 			;;
 		\"iconv\")
-			echo "LIB_DEPENDS+=	iconv.3:\${PORTSDIR}/converters/libiconv"
-			echo "CONFIGURE_ARGS+=--with-iconv=\${LOCALBASE}"
-			ICONV=1
+			if [ -z "$ICONV" ]; then
+				echo "LIB_DEPENDS+=	iconv.3:\${PORTSDIR}/converters/libiconv"
+				echo "CONFIGURE_ARGS+=--with-iconv=\${LOCALBASE}"
+				ICONV=1
+			fi
 			;;
 		\"pspell\")
 			echo "LIB_DEPENDS+=	pspell.4:\${PORTSDIR}/textproc/pspell"
