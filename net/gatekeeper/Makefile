@@ -2,11 +2,12 @@
 # Date created:		Wed Apr 15 15:41:00 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gatekeeper/Makefile,v 1.10 2000/06/14 13:21:27 sobomax Exp $
+# $FreeBSD: ports/net/gatekeeper/Makefile,v 1.11 2000/10/21 09:51:56 roger Exp $
 #
 
 PORTNAME=	gatekeeper
 PORTVERSION=	0.12
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.willamowius.de/download/
 DISTNAME=	gk012

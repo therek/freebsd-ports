@@ -2,11 +2,12 @@
 # Date created:		Wed Apr 5 11:00:00 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/opengatekeeper/Makefile,v 1.13 2000/06/08 11:02:54 roger Exp $
+# $FreeBSD: ports/net/opengatekeeper/Makefile,v 1.14 2000/08/18 18:51:52 roger Exp $
 #
 
 PORTNAME=	opengatekeeper
 PORTVERSION=	0.9a3
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.sourceforge.net/OpenGatekeeper/
 DISTNAME=	opengate_0.9alpha3
