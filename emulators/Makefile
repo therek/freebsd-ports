@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.63 2000/12/25 18:49:27 obrien Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.64 2001/03/08 02:39:22 nsayer Exp $
 #
 
     SUBDIR += aftp
@@ -14,6 +14,7 @@
     SUBDIR += fmsx
     SUBDIR += freesci
     SUBDIR += frodo
+    SUBDIR += gnuboy
     SUBDIR += gsnes9x
     SUBDIR += hfs
     SUBDIR += hfsutils
