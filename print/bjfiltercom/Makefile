@@ -2,14 +2,14 @@
 # Date created:		2001.02.10
 # Whom:                 taoka@FreeBSD.org
 #
-# $FreeBSD: ports/print/bjfiltercom/Makefile,v 1.1 2001/03/01 05:45:57 taoka Exp $
+# $FreeBSD: ports/print/bjfiltercom/Makefile,v 1.2 2001/03/07 08:16:24 taoka Exp $
 #
 
 PORTNAME?=	bjfiltercom
 PORTVERSION?=	1.0
 CATEGORIES=	print linux
 MASTER_SITES=	ftp://www.canon-sales.co.jp/pub/driver/printer/BJ/linux/
-DISTFILES=	${PORTNAME}-${PORTVERSION}-0.i386.rpm
+DISTFILES=	${RPMFILES}
 .if !defined(SLAVE_PORT)
 DISTFILES+=	${DOC_DISTFILES}
 .endif
@@ -43,6 +43,7 @@ NO_BUILD=	yes
 NO_FILTER_SHLIBS=	yes
 NO_MTREE=	yes
 
+RPMFILES=	${PORTNAME}-${PORTVERSION}-0.i386.rpm
 .if defined(SLAVE_PORT)
 FILTER=		${FILESDIR}/filter
 PAPERSIZE?=	a4
@@ -61,7 +62,7 @@ do-build:
 		${FILTER} > ${WRKDIR}/filter${PRTYPE}
 
 do-install:
-	for R in ${DISTFILES}; do \
+	for R in ${RPMFILES}; do \
 		rpm -U ${RPMFLAGS} ${RPMDIR}/$$R; \
 	done
 .for i in ${BIN_FILES}
