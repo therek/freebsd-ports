@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.145 1999/09/24 16:02:37 taoka Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.146 1999/09/27 17:40:01 sumikawa Exp $
 #
 
     SUBDIR += 4va
@@ -21,6 +21,7 @@
     SUBDIR += enfle
     SUBDIR += eterm-bg
     SUBDIR += fbm
+    SUBDIR += flashplayer
     SUBDIR += fli2gif
     SUBDIR += fly
     SUBDIR += fnlib
