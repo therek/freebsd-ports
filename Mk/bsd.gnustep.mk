@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/devel/gnustep/bsd.gnustep.mk,v 1.4 2003/06/18 04:06:58 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.5 2003/07/26 14:38:58 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -25,7 +25,7 @@
 #	your port depends on the gnustep-gui port.
 #
 # USE_GNUSTEP_BACK=yes
-#	your port depends on teh gnustep-back port.
+#	your port depends on the gnustep-back port.
 #
 # USE_GNUSTEP_CONFIGURE=yes
 #	call configure script with GNUstep.sh sourced in the current shell
