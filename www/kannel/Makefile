@@ -2,7 +2,7 @@
 # Date created:		19 Jun 2000
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/kannel/Makefile,v 1.1 2000/07/19 14:23:19 alex Exp $
 
 PORTNAME=	kannel
 PORTVERSION=	0.10.2
@@ -17,6 +17,7 @@ LIB_DEPENDS=    xml:${PORTSDIR}/textproc/libxml
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 WRKSRC=         ${WRKDIR}/gateway-0.10.2/
+CFLAGS+=	-pthread
 
 do-install:
 .if !defined(NOPORTDOCS)
@@ -29,7 +30,7 @@ do-install:
 .if !defined(NOPORTDOCS)
 post-install:
 	@cd ${WRKSRC}/doc && \
-		for a in `/usr/bin/find . -type f | ${SED} -e 's:^\./::g` ; \
+		for a in `/usr/bin/find . -type f | ${SED} -e 's:^\./::g'` ; \
 			do ${ECHO} share/doc/kannel/$$a >> ${TMPPLIST} ; done
 	@${ECHO} "@dirrm share/doc/kannel/arch" >> ${TMPPLIST}
 	@${ECHO} "@dirrm share/doc/kannel/userguide" >> ${TMPPLIST}
