@@ -2,11 +2,12 @@
 # Date created:         26 June 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/mail/elm+ME/Makefile,v 1.64 2001/01/31 17:16:05 sf Exp $
+# $FreeBSD: ports/mail/elm+ME/Makefile,v 1.65 2001/02/10 20:35:41 sf Exp $
 #
 
 PORTNAME=	elm+ME
 PORTVERSION=	2.4.88
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	mail
 DISTNAME=	${PORTNAME:S/+ME//}-${PORTVERSION:R}ME+${PORTVERSION:E}
@@ -71,14 +72,16 @@ MIMETYPES=	elm.mimetypes
 # will probably be fixed in the next release, for instance, fake a patch.
 # the alternative would be to disable this option in pre-configure script.
 post-patch:
-	@${PERL} -pi.bsd -e 's,setgid,setegid,' ${WRKSRC}/lib/localmbx.c
+	@${PERL} -pi.fbsd -e 's,setgid,setegid,' \
+		${WRKSRC}/lib/localmbx.c \
+		${WRKSRC}/src/init.c ${WRKSRC}/src/lock.c
 
 #
 # Post-configure
 #
 
 post-configure:
-	@${PERL} -pi.bsd -e 's,/usr/local,${PREFIX},' ${WRKSRC}/nls/LANGS
+	@${PERL} -pi.fbsd -e 's,/usr/local,${PREFIX},' ${WRKSRC}/nls/LANGS
 
 #
 # Post-install
