@@ -1,8 +1,9 @@
-# $FreeBSD: ports/net/Makefile,v 1.348 2000/04/15 06:45:27 asami Exp $
+# $FreeBSD: ports/net/Makefile,v 1.349 2000/04/15 15:04:09 roger Exp $
 #
 
     SUBDIR += SSLtelnet
     SUBDIR += adns
+    SUBDIR += amcl
     SUBDIR += archie
     SUBDIR += archie.el
     SUBDIR += argus
