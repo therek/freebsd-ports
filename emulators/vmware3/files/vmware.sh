@@ -2,12 +2,13 @@
 #
 # Start or stop vmware
 #
-# $FreeBSD: ports/emulators/vmware2/files/vmware.sh,v 1.6 2000/07/31 21:56:37 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/files/vmware.sh,v 1.7 2000/09/22 17:22:23 knu Exp $
 
 vmware_dir=@@PREFIX@@/lib/vmware
 networking=@@NETWORKING@@
 host_ip=@@HOST_IP@@
 netmask=@@NETMASK@@
+dev_vmnet1=@@LINUXBASE@@/dev/vmnet1
 
 [ -x $vmware_dir/bin/vmware ] || exit
 
@@ -25,7 +26,12 @@ start)
     if [ $networking -eq 1 ]; then
 	sysctl net.link.ether.bridge_refresh && bridge="_bridge"
 	kldload if_tap.ko
-	echo -n >@@LINUXBASE@@/dev/vmnet1
+	if [ ! -e $dev_vmnet1 ]; then
+		echo "$dev_vmnet1 does not exist!" >&2
+		echo "Your VMware installation seems broken.  Please reinstall VMware port." >&2
+		exit 255
+	fi
+	echo -n > $dev_vmnet1
 	ifconfig vmnet1 $host_ip netmask $netmask
 	if [ _$bridge != _ ]; then
 	    sysctl -w net.link.ether.bridge_refresh=1
