@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/libvorbis/Makefile,v 1.1 2000/11/02 21:15:11 trevor Exp $
 #
 
 PORTNAME=	libvorbis
@@ -18,6 +18,7 @@ LIB_DEPENDS=	ogg.0:${PORTSDIR}/audio/libogg
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+USE_AUTOMAKE=	yes
 WRKSRC=		${WRKDIR}/vorbis
 
 ACLOCAL?=	${LOCALBASE}/bin/aclocal
