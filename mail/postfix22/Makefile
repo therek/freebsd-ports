@@ -2,11 +2,11 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.25 2000/11/14 06:28:54 will Exp $
 #
 
 PORTNAME=	postfix
-PORTVERSION= 	19991231.10
+PORTVERSION= 	19991231.13
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.merit.edu/postfix/official/ \
 		ftp://ftp.tux.org/pub/net/postfix/official/ \
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.merit.edu/postfix/official/ \
 		ftp://ftp.cs.tu-berlin.de/pub/net/mail/postfix/official/ \
 		ftp://ftp.mira.net/pub/unix/mail/postfix/official/ \
 		ftp://coda.nctu.edu.tw/network/mail/postfix/official/
-DISTNAME=	${PORTNAME}-19991231-pl10
+DISTNAME=	${PORTNAME}-19991231-pl13
 
 MAINTAINER=	blaz@amis.net
 
