@@ -3,13 +3,13 @@
 # Date created:			Oct 27 1998
 # Whom:				Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/replay/Makefile,v 1.14 1999/12/27 08:20:33 nakai Exp $
+# $FreeBSD: ports/audio/replay/Makefile,v 1.15 2000/01/26 06:50:47 nakai Exp $
 #
 
 DISTNAME=	replay-source-dgtk_0.61
 PKGNAME=	replay-0.61
 CATEGORIES=	audio
-MASTER_SITES=	ftp://narayan.replicant.nu/pub/replay/ \
+MASTER_SITES=	http://replay.replicant.nu/files/ \
 		ftp://ftp.icemark.ch/pub/replay/ \
 		ftp://k2.lund.se/pub/replay/
 
