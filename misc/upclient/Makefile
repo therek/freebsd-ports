@@ -3,12 +3,13 @@
 # Date created:		20 Aug 1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/upclient/Makefile,v 1.2 1999/08/30 13:26:18 peter Exp $
 #
 
 DISTNAME=	upclient-3.04
 CATEGORIES=	misc
-MASTER_SITES=	ftp://uptime.hexon.cx/pub/
+MASTER_SITES=	ftp://uptime.hexon.cx/pub/ \
+		http://uptime.hexon.cx/download/
 
 MAINTAINER=	kbyanc@posi.net
 
