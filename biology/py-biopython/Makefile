@@ -2,11 +2,11 @@
 # Date created:		28 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/py-biopython/Makefile,v 1.6 2001/06/15 13:25:55 wjv Exp $
+# $FreeBSD: ports/biology/py-biopython/Makefile,v 1.7 2001/06/29 15:04:06 wjv Exp $
 #
 
 PORTNAME=	biopython
-PORTVERSION=	1.00.a1
+PORTVERSION=	1.00.a2
 CATEGORIES=	biology python
 MASTER_SITES=	http://www.biopython.org/Download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -62,7 +62,7 @@ EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-build_helper.py
 PLIST_OMNIORB=	"@comment "
 PLIST_FNORB=	""
 .elif ${CORBA_ORB} == "orbit"
-RUN_DEPENDS+=	${PREFIX}/include/orbit-python/orbit-python.h:${PORTSDIR}/devel/py-orbit
+RUN_DEPENDS+=	${LOCALBASE}/include/orbit-python/orbit-python.h:${PORTSDIR}/devel/py-orbit
 CORBA_ORBNAME=	ORBit
 PLIST_OMNIORB=	"@comment "
 PLIST_FNORB=	"@comment "
