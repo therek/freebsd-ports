@@ -2,13 +2,12 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.37 2001/06/10 09:48:08 brian Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.38 2001/07/12 14:26:09 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
 PORTNAME=	vmware2
-PORTVERSION=	2.0.3.799
-PORTREVISION=	2
+PORTVERSION=	2.0.4.1142
 CATEGORIES=	emulators linux
 MASTER_SITES=	http://www4.vmware.com/software/ \
 		${FREEBSD_MODULE_SITES} \
