@@ -2,17 +2,15 @@
 # Date created:        4 June 1996
 # Whom:                jkoshy
 #
-# $FreeBSD: ports/devel/ctags/Makefile,v 1.15 2001/03/21 05:59:30 jkoshy Exp $
+# $FreeBSD: ports/devel/ctags/Makefile,v 1.16 2001/04/25 03:41:28 jkoshy Exp $
 #
 
 PORTNAME=	ctags
 PORTVERSION=	5.0.1
 CATEGORIES=	devel
-MASTER_SITES=	http://ctags.sourceforge.net/archives/ \
-		${MASTER_SITE_SUNSITE} \
-		http://fly.hiwaay.net/~darren/archives/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	devel/lang/c jkoshy
+MASTER_SITE_SUBDIR=	ctags jkoshy
 
 MAINTAINER=	jkoshy@FreeBSD.org
 
