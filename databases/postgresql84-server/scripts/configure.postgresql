@@ -2,7 +2,7 @@
 # -*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/databases/postgresql7/scripts/configure.postgresql,v 1.2 2001/02/25 00:41:44 olgeni Exp $
+# $FreeBSD: ports/databases/postgresql7/scripts/configure.postgresql,v 1.3 2001/04/21 11:34:34 vanilla Exp $
 #
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -88,7 +88,8 @@ while [ "$1" ]; do
 				fi
 			fi
 			cat <<-EOF
-				BUILD_DEPENDS+=	ant:\${PORTSDIR}/devel/jakarta-ant
+				BUILD_DEPENDS+=	\${LOCALBASE}/bin/ant:\${PORTSDIR}/devel/jakarta-ant
+				CONFIGURE_ENV+= ANT=\${LOCALBASE}/bin/ant
 				WITH_JDBC=YES
 				MAKE_ENV+=	JAVA_HOME=\${JAVA_HOME}
 				SCRIPTS_ENV+=	JAVA_HOME=\${JAVA_HOME}
