@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap20/files/slapd.sh,v 1.3 2002/09/19 21:49:55 ijliao Exp $
+# $FreeBSD: ports/net/openldap20/files/slapd.sh,v 1.4 2003/04/07 07:29:35 edwin Exp $
 
 slapd_program=@@PREFIX@@/libexec/slapd
 
@@ -15,14 +15,16 @@ slapd_program=@@PREFIX@@/libexec/slapd
 # IPv6 Only
 #slapd_args='-h ldap://[::]'
 #
+# Add '-u ldap -g ldap' when you do not want to run
+# slapd as root
 #
 slapd_args=
 
-pidfile=/var/run/slapd.pid
+pidfile=@@LDAP_RUN_DIR@@/slapd.pid
 
 case "$1" in
 start)
-    if [ -x $slapd ]; then
+    if [ -x ${slapd_program} ]; then
 	echo -n ' slapd'
 	eval ${slapd_program} ${slapd_args}
 
