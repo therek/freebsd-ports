@@ -2,11 +2,11 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.83 2000/10/13 07:59:47 vanilla Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.84 2000/11/13 01:20:56 vanilla Exp $
 #
 
 PORTNAME=	gimp
-PORTVERSION=	1.1.29
+PORTVERSION=	1.1.30
 CATEGORIES=	graphics gnome
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/unstable/v${PORTVERSION}/ \
 		ftp://ftp.insync.net/pub/mirrors/ftp.gimp.org/gimp/unstable/v${PORTVERSION}/ \
