@@ -2,7 +2,7 @@
 # Date created:		2001.02.08
 # Whom:                 taoka@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/linux-libxml/Makefile,v 1.1 2001/02/12 16:37:14 taoka Exp $
 #
 
 PORTNAME=	libxml
@@ -12,6 +12,8 @@ PORTVERSION=	1.4.0
 PORTVERSION=	1.7.3
 .endif
 CATEGORIES=	textproc linux
+
+MAINTAINER=	taoka@FreeBSD.org
 
 RPM_SET=	libxml-${PORTVERSION}-1.${MACHINE_ARCH}.rpm
 

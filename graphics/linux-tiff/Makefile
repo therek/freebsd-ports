@@ -2,12 +2,14 @@
 # Date created:		2001.02.08
 # Whom:                 taoka@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/linux-tiff/Makefile,v 1.1 2001/02/12 16:41:11 taoka Exp $
 #
 
 PORTNAME=	tiff
 PORTVERSION=	3.4
 CATEGORIES=	graphics linux
+
+MAINTAINER=	taoka@FreeBSD.org
 
 RPM_SET=	libtiff-${PORTVERSION}-6.${MACHINE_ARCH}.rpm
 
