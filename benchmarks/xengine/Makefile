@@ -3,13 +3,15 @@
 # Date created:		17 January 1997
 # Whom:			FURUSAWA,Kazuhisa <furusawa@com.cs.osakafu-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/xengine/Makefile,v 1.8 1999/08/25 04:45:50 obrien Exp $
 #
 
-PKGNAME=	xengine-1.0.1
+DISTNAME=	xengine-1.0.1
 CATEGORIES=	benchmarks
 MASTER_SITES=	ftp://ftp.lab.kdd.co.jp/Usenet/comp.sources.x/volume09/xengine/
 DISTFILES=	part01.z patch1.z
+
+PATCH_DIST_STRIP=	-p1	# no ${PATCHFILES} but used below
 
 MAINTAINER=	kazu@jp.freebsd.org
 
@@ -20,9 +22,8 @@ NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes
 
 EXTRACT_CMD=		zcat
-EXTRACT_BEFORE_ARGS= 
+EXTRACT_BEFORE_ARGS=	#empty
 EXTRACT_AFTER_ARGS=	| gunshar -d $(WRKDIR)
-PATCH_DIST_STRIP=	-p1	# no ${PATCHFILES} but used below
 
 MAN1=		xengine.1
 
