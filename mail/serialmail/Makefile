@@ -2,7 +2,7 @@
 # Date created:		2 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/mail/serialmail/Makefile,v 1.6 2000/04/13 20:00:46 cpiazza Exp $
+# $FreeBSD: ports/mail/serialmail/Makefile,v 1.7 2000/06/29 07:02:29 obrien Exp $
 #
 
 PORTNAME=	serialmail
@@ -18,7 +18,7 @@ MAINTAINER=	tom@FreeBSD.org
 MAN1=		maildirqmtp.1 maildirserial.1 maildirsmtp.1 serialqmtp.1 serialsmtp.1 setlock.1
 
 .if defined(NOPORTDOCS)
-PLIST=		${PKGDIR}/PLIST.nodocs
+PLIST=		${PKGDIR}/pkg-plist.nodocs
 .endif
 
 # QMAIL_DIR is the directory where qmail is installed
