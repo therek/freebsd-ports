@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.230 1999/11/05 03:51:22 cpiazza Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.231 1999/11/23 03:46:08 jkoshy Exp $
 #
 
     SUBDIR += ElectricFence
@@ -61,6 +61,7 @@
     SUBDIR += ilu
     SUBDIR += insight
     SUBDIR += jam
+    SUBDIR += kdbg
     SUBDIR += ktranslator
     SUBDIR += lclint
     SUBDIR += libPropList
@@ -95,6 +96,7 @@
     SUBDIR += ncurses
     SUBDIR += noweb
     SUBDIR += omniORB
+    SUBDIR += p5-AppConfig
     SUBDIR += p5-BSD-Resource
     SUBDIR += p5-C-Scan
     SUBDIR += p5-ConfigReader
