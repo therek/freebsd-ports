@@ -2,11 +2,11 @@
 # Date created:				02 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/pharmacy/Makefile,v 1.7 2000/10/05 07:10:32 reg Exp $
+# $FreeBSD: ports/devel/pharmacy/Makefile,v 1.8 2000/10/21 17:15:05 jedgar Exp $
 #
 
 PORTNAME=	pharmacy
-PORTVERSION=	0.2.1
+PORTVERSION=	0.2.1a
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR= ${PORTNAME}
