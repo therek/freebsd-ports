@@ -2,7 +2,7 @@
 # Date created:		20 July 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/news/grn/Makefile,v 1.1 2000/07/20 08:09:28 sobomax Exp $
+# $FreeBSD: ports/news/grn/Makefile,v 1.2 2000/08/21 08:59:12 sobomax Exp $
 #
 
 PORTNAME=	grn
@@ -14,7 +14,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		xml.5:${PORTSDIR}/textproc/libxml
-RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
+RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 
 USE_X_PREFIX=	yes
 USE_BZIP2=	yes
