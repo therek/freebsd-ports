@@ -2,7 +2,7 @@
 # Date created:		19 February 2001
 # Whom:			MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/migemo-emacs20/Makefile,v 1.4 2001/07/23 03:55:42 knu Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
@@ -24,7 +24,6 @@ ALL_TARGET=	migemo.elc
 PLIST_SUB=	MIGEMO="@comment " ELISP=""
 
 do-install:
-	${MKDIR} ${PREFIX}/${EMACS_LIBDIR}/site-lisp/migemo
 	${INSTALL_DATA} ${WRKSRC}/migemo.el ${PREFIX}/${EMACS_LIBDIR}/site-lisp
 	${INSTALL_DATA} ${WRKSRC}/migemo.elc ${PREFIX}/${EMACS_LIBDIR}/site-lisp
 

@@ -2,7 +2,7 @@
 # Date Created:			24 Mar 2001
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/migemo-xemacs21-mule/Makefile,v 1.2 2001/04/11 05:03:03 knu Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
@@ -26,7 +26,6 @@ ALL_TARGET=	migemo.elc
 PLIST_SUB=	MIGEMO="@comment " ELISP=""
 
 do-install:
-	${MKDIR} ${PREFIX}/${EMACS_LIBDIR}/site-lisp/migemo
 	${INSTALL_DATA} ${WRKSRC}/migemo.el ${PREFIX}/${EMACS_LIBDIR}/site-lisp
 	${INSTALL_DATA} ${WRKSRC}/migemo.elc ${PREFIX}/${EMACS_LIBDIR}/site-lisp
 
