@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/lang/Makefile,v 1.241 2001/07/31 10:06:37 sobomax Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -15,6 +15,7 @@
     SUBDIR += ccscript
     SUBDIR += cel
     SUBDIR += cim
+    SUBDIR += clips
     SUBDIR += clisp
     SUBDIR += cmucl
     SUBDIR += compaq-cc
