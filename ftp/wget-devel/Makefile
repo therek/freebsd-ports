@@ -2,12 +2,12 @@
 # Date created:			  31 December 1996
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/wget/Makefile,v 1.39 2001/06/05 14:38:11 sf Exp $
+# $FreeBSD: ports/ftp/wget/Makefile,v 1.40 2001/07/19 18:28:48 sf Exp $
 #
 
 PORTNAME=	wget
 PORTVERSION=	1.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ftp www ipv6
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.dl.ac.uk/ccp14/ftp-mirror/wget/pub/unix/util/wget/ \
