@@ -2,7 +2,7 @@
 # Date created:        12 July 2000
 # Whom:                Kim Scarborough <user@unknown.nu>
 #
-# $FreeBSD: ports/devel/camlp4/Makefile,v 1.5 2001/04/20 15:00:14 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	camlp4
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/cristal/camlp4/ \
 		http://www.unknown.nu/ports/
 
 MAINTAINER=	user@unknown.nu
+
+BROKEN=		"Does not build"
 
 BUILD_DEPENDS=	ocamlc.opt:${PORTSDIR}/lang/ocaml
 
