@@ -2,7 +2,7 @@
 # Date created:				31 December 1999
 # Whom:					Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/www/p5-Apache-ASP/Makefile,v 1.4 2000/06/17 02:37:05 will Exp $
+# $FreeBSD: ports/www/p5-Apache-ASP/Makefile,v 1.5 2001/03/01 06:36:50 vanilla Exp $
 #
 
 PORTNAME=	Apache-ASP
@@ -15,7 +15,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	igor@zynaps.ru
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/mod_perl \
-		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5 \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Digest/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5 \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/MLDBM.pm:${PORTSDIR}/databases/p5-MLDBM \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/HTTP/Date.pm:${PORTSDIR}/www/p5-libwww \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Devel/Symdump.pm:${PORTSDIR}/devel/p5-Devel-Symdump
