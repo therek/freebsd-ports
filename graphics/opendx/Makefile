@@ -3,7 +3,7 @@
 # Date created:		27 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/opendx/Makefile,v 1.1.1.1 1999/09/20 06:43:20 tg Exp $
 #
 
 DISTNAME=	dx-4.0.7
@@ -22,5 +22,9 @@ CONFIGURE_ENV=	CFLAGS="${CFLAGS} -Dfreebsd" \
 		CXXFLAGS="${CFLAGS} -Dfreebsd"
 NO_MTREE=	yes
 PLIST_SUB=	ARCH=${MACHINE_ARCH}
+
+post-patch:
+	@find ${WRKSRC} -name Makefile.in | \
+	  xargs /usr/bin/perl -pi -e 's/-lXm /\$${MOTIFLIB} /g'
 
 .include <bsd.port.mk>
