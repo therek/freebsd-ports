@@ -2,7 +2,7 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.50 2000/05/31 07:27:49 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.51 2000/06/27 14:24:29 sheldonh Exp $
 #
 
 PORTNAME=	exim
@@ -14,6 +14,8 @@ MASTER_SITES=	ftp://ftp.cus.cam.ac.uk/pub/software/programs/exim/ \
 DISTFILES=	exim-3.15.tar.gz exim-texinfo-3.10.tar.gz
 
 MAINTAINER=	sheldonh@FreeBSD.org
+
+FORBIDDEN=	Bug with system filters used to freeze messages for manual thawing
 
 # If WITHOUT_X11 is not defined, the eximon monitor, which requires X, will
 # be built. Comment it out unless you have or want XFree86 installed!
