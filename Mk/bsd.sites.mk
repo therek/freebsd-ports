@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.1 2000/06/14 02:14:49 asami Exp $
 #
 
 MASTER_SITE_XCONTRIB+=	\
@@ -96,8 +96,8 @@ MASTER_SITE_TCLTK+= \
 	ftp://ftp.lip6.fr/pub/tcl/distrib/%SUBDIR%/
 
 MASTER_SITE_SOURCEFORGE+= \
-	http://download.sourceforge.net/%SUBDIR%/ \
-	ftp://download.sourceforge.net/pub/sourceforge/%SUBDIR%/
+	ftp://download.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
+	http://download.sourceforge.net/%SUBDIR%/
 
 # Where to put distfiles that don't have any other master site
 MASTER_SITE_LOCAL?= \
