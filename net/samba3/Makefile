@@ -2,11 +2,11 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba-devel/Makefile,v 1.63 2001/06/23 21:17:09 dwcjr Exp $
+# $FreeBSD: ports/net/samba-devel/Makefile,v 1.64 2001/07/10 03:29:57 dwcjr Exp $
 #
 
 PORTNAME=	samba
-PORTVERSION=	2.2.0a
+PORTVERSION=	2.2.1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.samba.org/pub/samba/%SUBDIR%/ \
 		ftp://samba.anu.edu.au/pub/samba/%SUBDIR%/ \
@@ -124,7 +124,9 @@ post-install:
 		${MKDIR} ${DOCSDIR}/$$i ;		\
 		for j in ${WRKDIR}/${DISTNAME}/docs/$$i/* ; do		\
 			if [ $$j != ${WRKDIR}/${DISTNAME}/docs/htmldocs/using_samba ] ; then \
-				${INSTALL_DATA} $$j ${DOCSDIR}/$$i ;\
+				if [ $$j != ${WRKDIR}/${DISTNAME}/docs/textdocs/outdated ] ; then \
+					${INSTALL_DATA} $$j ${DOCSDIR}/$$i ;\
+				fi; \
 			fi; \
 		done							\
 	done
