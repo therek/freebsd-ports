@@ -2,7 +2,7 @@
 # Date created:				2 Nov 1999
 # Whom:					Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/libtabe/Makefile,v 1.18 2000/10/31 12:45:30 kevlo Exp $
+# $FreeBSD: ports/chinese/libtabe/Makefile,v 1.19 2000/11/06 18:14:43 keith Exp $
 #
 
 PORTNAME=	libtabe
@@ -16,7 +16,7 @@ LIB_DEPENDS=	db2.0:${PORTSDIR}/databases/db
 
 WRKSRC=		${WRKDIR}/libtabe
 USE_XLIB=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 HAS_CONFIGURE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
