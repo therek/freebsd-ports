@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.625 2005/01/25 00:07:42 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.626 2005/01/26 16:57:32 oliver Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1381,3 +1381,4 @@ print/ggv2|print/ggv|2005-01-25|moved to non-versioned directory
 editors/ghex2|editors/ghex|2005-01-25|moved to non-versioned directory
 x11-fm/xfce4-fm-icons||2005-01-26|got obsolete by xfce 4.2 update
 misc/xfce4-panel-themes||2005-01-26|got obsolete by xfce 4.2 update
+x11-wm/xfce4-menueditor||2005-01-30|got obsolete since it is now included in xfce4-desktop
