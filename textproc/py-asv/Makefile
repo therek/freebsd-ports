@@ -2,19 +2,19 @@
 # Date created:		4 April 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/py-asv/Makefile,v 1.2 2001/04/05 07:11:58 sobomax Exp $
 #
 
 PORTNAME=	asv
 PORTVERSION=	0.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc python
 MASTER_SITES=	http://tratt.net/~laurie/python/asv/releases/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	johann@egenetics.com
 
-PYTHON_VERSION=	python2.0
+PYTHON_VERSION=	python2.1
 
 ASV_BASEDIR=	${PREFIX}/lib/${PYTHON_VERSION}/site-packages
 ASV_DOCDIR=	${PREFIX}/share/doc/py-asv
