@@ -2,11 +2,11 @@
 # Date created:		99/09/29
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/color-mate/Makefile,v 1.1.1.1 1999/10/07 15:59:37 taoka Exp $
+# $FreeBSD: ports/editors/color-mate/Makefile,v 1.2 2000/04/14 00:25:21 mharo Exp $
 #
 
 PORTNAME=	color-mate
-PORTVERSION=	10.0.1
+PORTVERSION=	10.4
 CATEGORIES=	editors elisp
 MASTER_SITES=	http://www.netlab.is.tsukuba.ac.jp/~yokota/archive/
 
