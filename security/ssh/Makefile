@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.110 2001/02/09 23:07:20 kris Exp $
+# $FreeBSD$
 #
 # Maximal ssh package requires YES values for
 # WITH_PERL, WITH_TCPWRAP
@@ -65,6 +65,12 @@ CONFIGURE_ARGS+= --without-idea
 .endif
 
 .include <bsd.port.pre.mk>
+
+.if ${OSVERSION} > 500023
+LIB_DEPENDS+=	gmp.4:${PORTSDIR}/math/libgmp3
+MAKE_ENV+=	GMPINCDIR="${LOCALBASE}/include" \
+		GMPLIBDIR="${LOCALBASE}/lib"
+.endif
 
 .if (${OSVERSION} >= 400016 && !defined(REALLY_WANT_SSH))
 FORBIDDEN=		"OpenSSH is a superior version of SSH which has been included in the FreeBSD base system since 4.0-RELEASE. This port is now deprecated and will be removed at some point in the future. To override this warning set the REALLY_WANT_SSH environment variable and rebuild."
