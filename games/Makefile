@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.365 2001/04/25 11:06:06 markm Exp $
+# $FreeBSD: ports/games/Makefile,v 1.366 2001/05/03 01:44:16 lioux Exp $
 #
 
     SUBDIR += 3dc
@@ -109,6 +109,7 @@
     SUBDIR += heroes
     SUBDIR += hex
     SUBDIR += hlserver-action
+    SUBDIR += hlserver-admin
     SUBDIR += hlserver-cs
     SUBDIR += hlserver-dod
     SUBDIR += hlserver-fa
