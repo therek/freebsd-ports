@@ -2,13 +2,13 @@
 # Date created:		29 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/qmailanalog/Makefile,v 1.6 2000/04/13 20:00:40 cpiazza Exp $
+# $FreeBSD: ports/mail/qmailanalog/Makefile,v 1.7 2001/01/16 17:31:24 sobomax Exp $
 #
 
 PORTNAME=	qmailanalog
 PORTVERSION=	0.70
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.qmail.org/pub/software/
+MASTER_SITES=	ftp://cr.yp.to/software/
 
 MAINTAINER=	nbm@FreeBSD.org
 
