@@ -2,11 +2,11 @@
 # Date created:				December 7 1999
 # Whom:	      				jmz
 #
-# $FreeBSD: ports/lang/p5-F77/Makefile,v 1.3 2000/04/12 06:19:45 obrien Exp $
+# $FreeBSD: ports/lang/p5-F77/Makefile,v 1.4 2000/06/17 02:36:33 will Exp $
 #
 
 PORTNAME=	ExtUtils-F77
-PORTVERSION=	1.12
+PORTVERSION=	1.13
 CATEGORIES=	lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	ExtUtils
