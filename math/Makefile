@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.87 2000/10/28 12:36:04 jeh Exp $
+# $FreeBSD: ports/math/Makefile,v 1.88 2000/11/23 14:13:38 knu Exp $
 #
 
     SUBDIR += PDL
@@ -22,6 +22,7 @@
     SUBDIR += fudgit
     SUBDIR += geg
     SUBDIR += glove
+    SUBDIR += glpk
     SUBDIR += gnumeric
     SUBDIR += gnuplot
     SUBDIR += gnuplot+
