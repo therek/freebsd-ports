@@ -2,7 +2,7 @@
 # Date created:		Mar 22 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/prc-tools-gcc/Makefile,v 1.3 2000/04/21 07:52:09 mharo Exp $
+# $FreeBSD: ports/palm/prc-tools-gcc/Makefile,v 1.4 2000/04/27 07:50:55 kuriyama Exp $
 #
 
 PORTNAME=	prc-tools-gcc
@@ -17,7 +17,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 MAINTAINER=	kuriyama@FreeBSD.org
 
 BUILD_DEPENDS=	${PREFIX}/bin/m68k-palmos-as:${PORTSDIR}/palm/prc-tools-binutils \
-		${LOCALBASE}/bin/autoheader:${PORSDIR}/devel/autoconf
+		${LOCALBASE}/bin/autoheader:${PORTSDIR}/devel/autoconf
 
 USE_BISON=	YES
 USE_GMAKE=	YES
