@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.285 2003/05/22 14:41:51 trevor Exp $
+# $FreeBSD: ports/LEGAL,v 1.286 2003/06/02 16:10:42 olgeni Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -27,7 +27,6 @@ actx-*			ports/games/actx	contains commercial
 						character data
 adom-*			ports/games/adom	Copy of CD must be sent to
 						author
-agsatellite		ports/audio/agsatellite	Unsure of licensing issues
 alephone-data		ports/games/alephone-data Don't sell for profit
 altivore		ports/security/altivore	No redistribution allowed
 aswedit-*		ports/www/aswedit	Commercial software.
@@ -153,6 +152,7 @@ libidea			ports/security/libidea	Crypto; export-controlled
 libudbc			ports/databases/libudbc		Downloading and redistribution
 						terms are unclear.
 limewire		ports/net/limewire	No redistribution allowed
+linux-agsatellite	ports/net/linux-agsatellite	Unsure of licensing issues
 linux-divx4linux	ports/multimedia/linux-divx4linux	Restrictive copyright
 linux-eagle		ports/cad/linux-eagle		Non-commercial usage only &
 			ports/german/linux-eagle	Sale for profit not permitted
