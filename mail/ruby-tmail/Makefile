@@ -2,11 +2,11 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/mail/ruby-tmail/Makefile,v 1.6 2000/09/26 08:02:11 knu Exp $
+# $FreeBSD: ports/mail/ruby-tmail/Makefile,v 1.7 2000/11/18 21:00:22 knu Exp $
 #
 
 PORTNAME=	tmail
-PORTVERSION=	0.8.14
+PORTVERSION=	0.8.15
 CATEGORIES=	mail ruby
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www1.u-netsurf.ne.jp/~brew/mine/soft/
