@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.523 2005/01/24 22:25:58 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.524 2005/01/25 00:50:02 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -279,7 +279,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <affects>
       <package>
 	<name>yamt</name>
-	<range><gt>0</gt></range>
+	<range><gt>0.5_2</gt></range>
       </package>
     </affects>
     <description>
@@ -301,6 +301,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <dates>
       <discovery>2004-12-15</discovery>
       <entry>2005-01-23</entry>
+      <modified>2005-01-25</modified>
     </dates>
   </vuln>
 
