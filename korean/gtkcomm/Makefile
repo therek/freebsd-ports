@@ -2,11 +2,11 @@
 # Date created:		05 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/gtkcomm/Makefile,v 1.1 2000/05/01 02:56:09 steve Exp $
+# $FreeBSD: ports/korean/gtkcomm/Makefile,v 1.2 2000/06/25 09:33:15 cjh Exp $
 #
 
 PORTNAME=	gtkcomm
-PORTVERSION=	0.5.9
+PORTVERSION=	0.5.10
 CATEGORIES=	korean comms
 MASTER_SITES=	http://kldp.org/~namsh/tools/gtkcomm/
 
