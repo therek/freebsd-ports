@@ -2,11 +2,12 @@
 # Date created:				24 May 1999
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/squirm/Makefile,v 1.11 2001/02/05 15:33:49 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	squirm
 PORTVERSION=	1.23
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.senet.com.au/squirm/ \
 		http://www.elab.co.za/squirm/
