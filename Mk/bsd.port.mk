@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.335 2000/04/11 21:38:02 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.336 2000/04/16 11:35:52 asami Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -686,7 +686,7 @@ USE_NEWGCC=	yes
 .endif
 
 .if defined(USE_QT2)
-LIB_DEPENDS+=	qt2.2:${PORTSDIR}/x11-toolkits/qt20
+LIB_DEPENDS+=	qt2.3:${PORTSDIR}/x11-toolkits/qt21
 USE_NEWGCC=	yes
 .endif
 
@@ -1566,7 +1566,7 @@ do-fetch:
 				${ECHO_MSG} ">> Please correct this problem and try again."; \
 				exit 1; \
 			fi ; \
-			if [ -f ${MD5_FILE} ]; then \
+			if [ -f ${MD5_FILE} -a "x${FORCE_FETCH}" = "x" ]; then \
 				if ! ${GREP} -q "^MD5 (.*$$file)" ${MD5_FILE}; then \
 					${ECHO_MSG} ">> $$file is not in ${MD5_FILE}."; \
 					${ECHO_MSG} ">> Either ${MD5_FILE} is out of date, or"; \
@@ -2206,7 +2206,8 @@ fetch-list:
 # Checksumming utilities
 
 .if !target(makesum)
-makesum: fetch
+makesum:
+	@cd ${.CURDIR} && ${MAKE} ${__softMAKEFLAGS} fetch FORCE_FETCH=yes
 	@${MKDIR} ${FILESDIR}
 	@if [ -f ${MD5_FILE} ]; then ${RM} -f ${MD5_FILE}; fi
 	@(cd ${DISTDIR}; \
