@@ -16,7 +16,7 @@
 # This code now mainly supports FreeBSD, but patches to update support for
 # OpenBSD and NetBSD will be accepted.
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.25 2000/12/31 18:59:43 mharo Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.26 2001/02/14 10:56:10 mharo Exp $
 # $Id: portlint.pl,v 1.28.2.1 2000/04/24 02:12:36 mharo Exp $
 #
 
@@ -98,7 +98,7 @@ sub version {
 }
 
 
-getopts('abchtvBM:N:V');
+getopts('abchtvB:M:NV');
 
 &usage if $opt_h;
 &version if $opt_V;
@@ -275,7 +275,7 @@ foreach my $i (@checker) {
 	} else {
 		my $proc = $checker{$i};
 		&$proc($i) || &perror("Cannot open the file $i\n");
-		if ($i !~ /^files\/patch-/) {
+		if ($i !~ m@/files/patch-@) {
 			&checklastline($i)
 				|| &perror("Cannot open the file $i\n");
 		}
