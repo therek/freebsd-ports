@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.165 2001/02/21 04:38:19 knu Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.166 2001/02/21 06:05:27 ijliao Exp $
 #
 
     SUBDIR += agrep
@@ -119,6 +119,7 @@
     SUBDIR += py-xml
     SUBDIR += rand
     SUBDIR += rman
+    SUBDIR += ruby-csv
     SUBDIR += ruby-erb
     SUBDIR += ruby-html-parser
     SUBDIR += ruby-qt2xml
