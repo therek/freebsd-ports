@@ -2,7 +2,7 @@
 # Date created:                         16 March 1999
 # Whom:                                 Pavel Andreev
 #
-# $FreeBSD: ports/net/icqlib0/Makefile,v 1.13 2000/12/31 11:20:33 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	icqlib
@@ -17,6 +17,8 @@ MAINTAINER=	lioux@FreeBSD.org
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
+
+LATEST_LINK=	icqlib0
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/icqlib/icq.h ${PREFIX}/include/icq0.h
