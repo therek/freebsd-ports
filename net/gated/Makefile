@@ -2,7 +2,7 @@
 # Date created:		29 October 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/net/gated/Makefile,v 1.28 2000/05/15 00:43:36 dec Exp $
+# $FreeBSD: ports/net/gated/Makefile,v 1.29 2000/12/11 02:58:15 steve Exp $
 #
 
 PORTNAME=	gated
@@ -16,6 +16,11 @@ MAINTAINER=	dec@FreeBSD.org
 WRKSRC=		${WRKDIR}/${PORTNAME}-public-3_6
 
 GNU_CONFIGURE=	yes
+
+# use this option, if log_in_vain="YES"
+.if defined(WITHOUT_SMUX)
+CONFIGURE_ARGS+=        --disable-smux
+.endif
 
 post-configure:
 	cd ${WRKSRC} && ${MAKE} depend
