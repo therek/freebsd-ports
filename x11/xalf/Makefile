@@ -2,11 +2,12 @@
 # Date created:				27 March 2001
 # Whom:					Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/xalf/Makefile,v 1.5 2001/05/08 16:39:16 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xalf
 PORTVERSION=	0.12
+PORTREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	http://www.lysator.liu.se/~astrand/projects/xalf/ \
 		http://www.lysator.liu.se/~astrand/projects/xalf/old/
