@@ -3,11 +3,11 @@
 # Date created:			Feb 17, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/news/ija/Makefile,v 1.1 2001/02/17 16:35:10 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ija
-PORTVERSION=	0.4.11
+PORTVERSION=	0.4.13
 CATEGORIES=	news
 MASTER_SITES=	http://wildspark.com/asher/ija/
 EXTRACT_SUFX=	.gz
