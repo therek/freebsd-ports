@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.183 2000/08/18 18:53:11 knu Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.184 2000/08/27 06:17:13 obrien Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -101,6 +101,7 @@
     SUBDIR += ruby-man
     SUBDIR += ruby-perl
     SUBDIR += ruby-python
+    SUBDIR += ruby-usersguide
     SUBDIR += scheme48
     SUBDIR += schemetoc
     SUBDIR += scm
