@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Under a BSDL license. Copyright by Mario S F Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: ports/net/freenet/files/wrapper.sh,v 1.2 2003/05/03 03:20:46 lioux Exp $
+# $FreeBSD: ports/net/freenet/files/wrapper.sh,v 1.3 2003/07/29 13:58:16 maho Exp $
 
 PREFIX="%%PREFIX%%"
 # java
@@ -31,7 +31,7 @@ configure_java_classpath () {
 }
 
 display_usage () {
-  echo "Usage: ${0} [-h] [-i|-o]"
+  echo "Usage: ${0} [-h] [-c] [-i|-o]"
   echo 'Options:'
   echo '  -h  Display this help message'
   echo '  -c  Configure FreeNet node'
@@ -114,7 +114,7 @@ if [ $# -lt 1 ]; then
 fi
 
 # parse command line parameters
-while getopts ":io" COMMAND_LINE_ARGUMENT ; do
+while getopts "chio" COMMAND_LINE_ARGUMENT ; do
   case "${COMMAND_LINE_ARGUMENT}" in
   c)
 	CONFIGURE=yes
