@@ -2,10 +2,11 @@
 # Date created:		20 February, 2001
 # Whom:			Alastair D'Silva <deece@newmillennium.net.au>
 #
-# $FreeBSD: ports/lang/php4/Makefile,v 1.1 2001/02/25 21:25:26 dirk Exp $
+# $FreeBSD: ports/lang/php4/Makefile,v 1.2 2001/04/22 23:09:14 dirk Exp $
 #
 
 PORTNAME=	php4
+PORTREVISION=	0
 CATEGORIES=	lang
 
 MASTERDIR=	${.CURDIR}/../../www/mod_php4
