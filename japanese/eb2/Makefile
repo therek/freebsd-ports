@@ -1,13 +1,13 @@
 # New ports collection makefile for:	eb
-# Version required:		2.3.5
+# Version required:		2.3.6
 # Date created:			20 Jan 1999
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/eb/Makefile,v 1.8 1999/10/27 08:45:29 mharo Exp $
+# $FreeBSD: ports/japanese/eb/Makefile,v 1.9 1999/11/27 06:17:45 sumikawa Exp $
 #
 
-DISTNAME=	eb-2.3.5
-PKGNAME=	ja-eb-2.3.5
+DISTNAME=	eb-2.3.6
+PKGNAME=	ja-eb-2.3.6
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/eb/
 DISTFILES=	${EBFILES} ${APPENDIXFILES}
@@ -47,10 +47,11 @@ EXTRACT_ONLY=	${EBFILES}
 DIST_SUBDIR=	eb
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--with-zlib
-CONFIGURE_ENV=	INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
-		INSTALL_DATA="${INSTALL_DATA}"
 
 APPENDIXDIR=	${PREFIX}/share/eb/appendix
+
+post-extract:
+	cd ${WRKSRC} && ${RM} -rf zlib
 
 post-install:
 .for file in ${APPENDIXFILES}
