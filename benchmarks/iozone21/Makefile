@@ -3,7 +3,7 @@
 # Date created:			  26 September 1994
 # Whom:				  jmz
 #
-# $FreeBSD: ports/benchmarks/iozone21/Makefile,v 1.33 2000/03/22 00:26:59 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	iozone
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.cs.uni-sb.de/pub/others/
 EXTRACT_SUFX=	.shar.gz
 
 MAINTAINER=	obrien@FreeBSD.org
+
+LATEST_LINK=	iozone21
 
 EXTRACT_CMD=	( gzcat | awk '{if (/^\#!/) x++} {if(x) print $$0'}| /bin/sh )
 EXTRACT_BEFORE_ARGS=	<
