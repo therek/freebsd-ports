@@ -2,20 +2,24 @@
 # Date created:		29 October 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/net/gated/Makefile,v 1.26 2000/04/06 20:32:06 peter Exp $
+# $FreeBSD: ports/net/gated/Makefile,v 1.27 2000/04/09 18:11:18 cpiazza Exp $
 #
 
 PORTNAME=	gated
-PORTVERSION=	3.5.11
+PORTVERSION=	3.6.0
 CATEGORIES=	net
-MASTER_SITES=   ftp://ftp.gated.merit.edu/net-research/gated/
-DISTNAME=	gated-3-5-11
+MASTER_SITES=   http://www.gated.org/gated-web/code/source/gated/
+DISTNAME=	gated-pub
+WRKSRC=		${WRKDIR}/gated-public-3_6
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dec@FreeBSD.org
 
-FORBIDDEN=	"Security hole (buffer overflow possibly yielding root)"
+GNU_CONFIGURE= 	yes
 
-ALL_TARGET=	gated
-MAN8=		gated.8 ripquery.8 ospf_monitor.8 gdc.8
+post-configure:
+	cd ${WRKSRC} && make depend
+
+post-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/src/gdc/gdc ${WRKSRC}/src/ospf_monitor/ospf_monitor ${WRKSRC}/src/ripquery/ripquery ${PREFIX}/sbin
 
 .include <bsd.port.mk>
