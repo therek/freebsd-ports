@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.487 2004/04/19 01:37:11 ade Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.488 2004/04/19 23:39:52 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -273,10 +273,12 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  Default: not set.
 ##
 #
-# USE_OPENLDAP		- Says that the port uses the OpenLDAP libraries
-#					  Implies: WANT_OPENLDAP_VER?=21
-# WANT_OPENLDAP_VER	- Legal values are: 20, 21, and 22
-#					  If set to an unkown value, the port is marked BROKEN.
+# USE_OPENLDAP			- Says that the port uses the OpenLDAP libraries
+#						  Implies: WANT_OPENLDAP_VER?=21
+# WANT_OPENLDAP_VER		- Legal values are: 21, 22
+#						  If set to an unkown value, the port is marked BROKEN.
+# WANT_OPENLDAP_SASL	- Says that the system should use OpenLDAP libraries
+#						  with SASL support.
 #
 ##
 # USE_AUTOTOOLS	-	Says that the port uses various GNU autotools
@@ -1329,12 +1331,17 @@ WANT_OPENLDAP_VER=	${USE_OPENLDAP_VER}
 .endif
 
 .if defined(USE_OPENLDAP)
-.if !empty(WANT_OPENLDAP_VER:M2[0-9]) && \
-	exists(${PORTSDIR}/net/openldap${WANT_OPENLDAP_VER}-client/Makefile)
-OPENLDAP_LIB_VER=	${WANT_OPENLDAP_VER:C/^2[0-1]$/2/:C/^2([2-9])$/20\1/}
-LIB_DEPENDS+=		ldap.${OPENLDAP_LIB_VER}:${PORTSDIR}/net/openldap${WANT_OPENLDAP_VER}-client
+.if defined(WANT_OPENLDAP_SASL)
+_OPENLDAP_FLAVOUR=	-sasl
 .else
-BROKEN=			"unknown OpenLDAP version: ${WANT_OPENLDAP_VER}"
+_OPENLDAP_FLAVOUR=
+.endif
+.if ${WANT_OPENLDAP_VER} == 22
+LIB_DEPENDS+=		ldap-2.2.7:${PORTSDIR}/net/openldap22${_OPENLDAP_FLAVOUR}-client
+.elif ${WANT_OPENLDAP_VER} == 21
+LIB_DEPENDS+=		ldap.2:${PORTSDIR}/net/openldap21${_OPENLDAP_FLAVOUR}-client
+.else
+BROKEN=				"unknown OpenLDAP version: ${WANT_OPENLDAP_VER}"
 .endif
 .endif
 
