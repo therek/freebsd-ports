@@ -3,7 +3,7 @@
 # Date created:		14 September 1994
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xpm/Makefile,v 1.25 1999/08/25 06:15:32 obrien Exp $
 #
 
 DISTNAME=       xpm-3.4k
@@ -16,13 +16,8 @@ USE_IMAKE=	yes
 
 MAN1=		cxpm.1 sxpm.1
 
-.include <bsd.port.pre.mk>
-
 post-install:
-.if ${PORTOBJFORMAT} == "aout"
-	${LN} -sf libXpm.so.4.11 ${PREFIX}/lib/libXpm.so
-.endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
+	${LDCONFIG} -m ${PREFIX}/lib
 	@ranlib ${PREFIX}/lib/libXpm.a
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
