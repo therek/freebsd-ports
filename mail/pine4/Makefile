@@ -2,7 +2,7 @@
 # Date created:		09 July 1998
 # Whom:			Adrian Penisoara <ady@freebsd.ady.ro>
 #
-# $FreeBSD: ports/mail/pine4/Makefile,v 1.39 2000/01/17 12:39:54 asami Exp $
+# $FreeBSD: ports/mail/pine4/Makefile,v 1.40 2000/04/13 20:00:27 cpiazza Exp $
 #
 # The changes to ?= on some of these lines is required for the
 # pine4-ssl port. Also, please mirror changes to the files/
@@ -19,6 +19,15 @@ MAINTAINER?=	pine@freebsd.ady.ro
 Y2K=		http://www.washington.edu/pine/QandA/sysadmins.html#Millenium
 
 MAN1=		pine.1 pico.1 pilot.1
+
+# Define "WITH_LDAP" to include ldap support.
+# If the ldap port is installed somewhere other than /usr/local, define
+# LDAP_PREFIX as well.
+#
+.if defined(WITH_LDAP)
+LDAP_PREFIX?=	${LOCALBASE}
+BUILD_DEPENDS+=	${LDAP_PREFIX}/lib/libldap.a:${PORTSDIR}/net/ldap
+.endif
 
 post-patch:
 	for i in ${WRKSRC}/doc/pine.1 \
@@ -38,6 +47,11 @@ post-patch:
 			$$i.sed >$$i ; \
 		${RM} $$i.sed ; \
 	done
+.if defined(WITH_LDAP)
+	-mkdir ${WRKSRC}/ldap
+	ln -sf ${LDAP_PREFIX}/include ${WRKSRC}/ldap/include
+	ln -sf  ${LDAP_PREFIX}/lib ${WRKSRC}/ldap/libraries
+.endif
 
 do-build:
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ./build bsf)
