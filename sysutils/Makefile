@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.123 2000/07/10 03:53:45 steve Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.124 2000/07/10 12:09:29 steve Exp $
 #
 
     SUBDIR += LPRng
@@ -30,6 +30,7 @@
     SUBDIR += doconfig
     SUBDIR += eject
     SUBDIR += ffsrecov
+    SUBDIR += fileutils
     SUBDIR += flexbackup
     SUBDIR += fontedit
     SUBDIR += fortunelock
