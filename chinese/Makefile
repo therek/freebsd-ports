@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.43 1999/10/19 08:10:42 foxfair Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.44 1999/10/27 10:54:17 nakai Exp $
 #
 
     SUBDIR += CJK
@@ -10,14 +10,11 @@
     SUBDIR += autoconvert
     SUBDIR += bg5ps
     SUBDIR += big5con
-    SUBDIR += big5fonts
     SUBDIR += c2t
     SUBDIR += celvis
     SUBDIR += cless
-    SUBDIR += cnsfonts
     SUBDIR += cxterm
     SUBDIR += gb2ps
-    SUBDIR += gbfonts
     SUBDIR += gbscript
     SUBDIR += hc
     SUBDIR += hztty
