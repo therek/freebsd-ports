@@ -2,13 +2,14 @@
 # Date created:				25 July 2000
 # Whom:					David Sugar <dyfet@gnu.org>
 #
-# $FreeBSD: ports/devel/commoncpp/Makefile,v 1.6 2000/11/01 14:51:16 sobomax Exp $
+# $FreeBSD: ports/devel/commoncpp/Makefile,v 1.7 2000/11/01 16:28:49 jeh Exp $
 #
 
 PORTNAME=	CommonC++
 PORTVERSION=	1.2.5.1
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITES=	ftp://www.voxilla.org/pub/ape/ \
+		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	cplusplus
 
 MAINTAINER=	dyfet@gnu.org
