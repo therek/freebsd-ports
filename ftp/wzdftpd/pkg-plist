@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/ftp/wzdftpd/pkg-plist,v 1.6 2004/06/22 19:18:41 pav Exp $
+@comment $FreeBSD: ports/ftp/wzdftpd/pkg-plist,v 1.7 2004/08/28 20:31:48 sem Exp $
 bin/siteconfig
 bin/siteuptime
 bin/sitewho
@@ -57,7 +57,7 @@ etc/file_groups.txt
 %%DATADIR%%/modules/libwzd_sfv.a
 %%DATADIR%%/modules/libwzd_sfv.so
 %%PERL%%%%DATADIR%%/modules/libwzd_perl.a
-%%PERL%%%%DATADIR%%/modules/libwzd_perl.la 
+%%PERL%%%%DATADIR%%/modules/libwzd_perl.la
 %%PERL%%%%DATADIR%%/modules/libwzd_perl.so
 %%TCL%%%%DATADIR%%/modules/libwzd_tcl.a
 %%TCL%%%%DATADIR%%/modules/libwzd_tcl.la
