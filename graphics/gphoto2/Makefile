@@ -3,7 +3,7 @@
 # Date created:		26 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.5 1999/10/21 06:24:16 cpiazza Exp $
+# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.6 2000/04/02 00:04:12 mharo Exp $
 #
 
 DISTNAME=	gphoto-0.4.0
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.mustec.eu.org/~psj/downloads/ \
 
 MAINTAINER=	anders@fix.no
 
-BUILD_DEPENDS=	${LOCALBASE}/include/ppm.h:${PORTSDIR}/graphics/etpbm
+BUILD_DEPENDS=	${LOCALBASE}/include/ppm.h:${PORTSDIR}/graphics/netpbm
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		gdk_imlib.5:${PORTSDIR}/graphics/imlib
 RUN_DEPENDS=	convert:${PORTSDIR}/graphics/ImageMagick
