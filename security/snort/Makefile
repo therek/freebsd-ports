@@ -2,7 +2,7 @@
 # Date created:		Mon Aug  2 12:04:08 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/snort/Makefile,v 1.12 2000/07/10 13:35:51 dirk Exp $
+# $FreeBSD: ports/security/snort/Makefile,v 1.13 2000/08/03 06:11:34 dirk Exp $
 #
 
 PORTNAME=	snort
@@ -15,6 +15,43 @@ MAINTAINER=	dirk@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 MAN8=		snort.8
+
+.if defined(WITH_FLEXRESP)
+BUILD_DEPENDS+=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
+CONFIGURE_ARGS+=--enable-flexresp
+CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include"
+LDFLAGS+=	"-L${LOCALBASE}/lib"
+.endif
+
+.if defined(WITH_MYSQL)
+LIB_DEPENDS+=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+CONFIGURE_ARGS+=--with-mysql-includes=${LOCALBASE}/include/mysql \
+		--with-mysql-libraries=${LOCALBASE}/lib/mysql
+.endif
+
+.if defined(WITH_ODBC)
+LIB_DEPENDS+=	odbc.1:${PORTSDIR}/databases/unixODBC
+CONFIGURE_ARGS+=--with-unixodbc-includes=${LOCALBASE}/include \
+		--with-unixodbc-libraries=${LOCALBASE}/lib
+LDFLAGS+=	-pthread
+.endif
+
+.if defined(WITH_POSTGRES)
+LIB_DEPENDS+=	pq.2:${PORTSDIR}/databases/postgresql
+CONFIGURE_ARGS+=--with-libpq-includes=${LOCALBASE}/pgsql/include \
+		--with-libpq-libraries=${LOCALBASE}/pgsql/lib
+.if exists(/usr/lib/libssl.a) && exists(/usr/lib/libcrypto.a)
+LDFLAGS+=	-lssl -lcrypto
+.endif
+.endif
+
+CONFIGURE_ENV+=	LDFLAGS="${LDFLAGS}"
+
+pre-configure:
+	@${ECHO} ""
+	@${ECHO} "Set WITH_FLEXRESP, WITH_MYSQL, WITH_ODBC or WITH_POSTGRES"
+	@${ECHO} "to get additional support."
+	@${ECHO} ""
 
 post-install:
 	${MKDIR} ${PREFIX}/share/snort
