@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.66 2000/05/27 00:10:33 obrien Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.67 2000/06/01 08:06:36 sobomax Exp $
 #
 
     SUBDIR += FWF
@@ -22,8 +22,8 @@
     SUBDIR += lesstif
     SUBDIR += linux-gtk
     SUBDIR += neXtaw
-    SUBDIR += openmotif
-    SUBDIR += openmotif-devel
+    SUBDIR += open-motif
+    SUBDIR += open-motif-devel
     SUBDIR += p5-Gtk
     SUBDIR += p5-Tcl-Tk
     SUBDIR += p5-Tk
