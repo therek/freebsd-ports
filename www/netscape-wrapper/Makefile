@@ -2,11 +2,11 @@
 # Date created:		3 May 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/netscape-wrapper/Makefile,v 1.2 2000/06/27 18:44:44 knu Exp $
+# $FreeBSD: ports/www/netscape-wrapper/Makefile,v 1.3 2000/07/07 08:43:19 knu Exp $
 #
 
 PORTNAME=	netscape-wrapper
-PORTVERSION=	2000.07.7
+PORTVERSION=	2000.07.07
 CATEGORIES=	www
 MASTER_SITES=	# none
 DISTFILES=	# none
