@@ -2,11 +2,12 @@
 # Date Created:	21 August 1996
 # Whom:	Andrew Stevenson <andrew@ugh.net.au> based heavily on the changes by Stephen Melvin <melvin@zytek.com>
 #
-# $FreeBSD: ports/mail/poppassd/Makefile,v 1.8 2000/04/13 20:00:31 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	poppassd
 PORTVERSION=	4.0
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.qualcomm.com/eudora/servers/unix/password/
 DISTNAME=	pwserve-4
