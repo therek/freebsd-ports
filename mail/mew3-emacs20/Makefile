@@ -2,7 +2,7 @@
 # Date created:		21 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew2-emacs20/Makefile,v 1.2 2001/08/25 09:17:57 kiri Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mew
@@ -19,7 +19,7 @@ MAINTAINER?=	kiri@FreeBSD.org
 MEW_MAJOR_VER?=	2
 
 # distfile version
-MEW_VER=	${MEW_MAJOR_VER}.0
+MEW_VER=	${MEW_MAJOR_VER}.1
 
 # document install directory by install-doc target
 MEW_DOCDIR?=	share/doc/${PORTNAME}${MEW_MAJOR_VER}
