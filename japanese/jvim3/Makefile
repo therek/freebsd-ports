@@ -2,7 +2,7 @@
 # Date created:         98/11/17
 # Whom:                 Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.23 2001/07/05 19:49:03 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jvim
@@ -33,13 +33,13 @@ PORT_DOCDIR=	${PREFIX}/share/doc/ja-jvim-${PORTVERSION}
 # -DUSE_X11 is the cause of a problem treating Japanese
 MACHINE=	-DBSD_UNIX -DUSE_LOCALE
 CC=		cc ${CFLAGS} -Wall -traditional -Dconst=
-LIBS=		-ltermlib -lxpg4
+LIBS=		-ltermlib -lxpg4 -L${PREFIX}/lib 
 
 .if !defined(WITHOUT_X11)
 USE_XLIB=	yes
 MACHINE+=	-DUSE_X11
 CC+=		-I${X11BASE}/include
-LIBS+=		-L${PREFIX}/lib -L${X11BASE}/lib -lX11
+LIBS+=		-L${X11BASE}/lib -lX11
 .endif
 
 # Specifying a velue INPUT_METHOD, and seting values BUILD_DEPENDS,
