@@ -2,11 +2,11 @@
 # Date created:				Mon Jan  1 10:37:30 2001
 # Whom:					will
 #
-# $FreeBSD: ports/math/p5-Bit-Vector/Makefile,v 1.2 2001/03/01 06:37:03 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Bit-Vector
-PORTVERSION=	6.1
+PORTVERSION=	6.2
 CATEGORIES=	math perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Bit
