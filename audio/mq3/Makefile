@@ -2,7 +2,7 @@
 # Date created:				16 Jan 2001
 # Whom:					Erich Zigler <erich@tacni.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/mq3/Makefile,v 1.2 2001/04/03 08:13:56 will Exp $
 #
 
 PORTNAME=	mq3
@@ -13,7 +13,8 @@ MASTER_SITES=	http://www.mq3.org/source/
 MAINTAINER=	erich@tacni.net
 
 LIB_DEPENDS=	fftw.2:${PORTSDIR}/math/fftw \
-		vorbis.0:${PORTSDIR}/audio/libvorbis
+		vorbis.0:${PORTSDIR}/audio/libvorbis \
+		qthreads.0:${PORTSDIR}/lang/guile
 BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 
 USE_QT_VER=	2
