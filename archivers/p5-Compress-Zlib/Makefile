@@ -2,11 +2,11 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/p5-Compress-Zlib/Makefile,v 1.26 2001/07/23 14:10:57 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Compress-Zlib
-PORTVERSION=	1.14
+PORTVERSION=	1.16
 CATEGORIES=	archivers perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Compress
