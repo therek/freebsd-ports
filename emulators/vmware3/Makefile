@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.28 2000/11/02 23:01:40 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.29 2000/11/07 14:40:23 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
@@ -102,6 +102,8 @@ setoptions:
 	${SED} 	-e 's;@@PREFIX@@;${PREFIX};' \
 		-e 's;@@LINUXBASE@@;${LINUXBASE};' \
 		-e 's;@@NETWORKING@@;${VMNET_NETWORKING};' \
+		-e 's;@@BRIDGED@@;${VMNET_BRIDGED};' \
+		-e 's;@@BRIDGE_INTF@@;${VMNET_BRIDGED_INTERFACE};' \
 		${FILESDIR}/vmware.sh > ${WRKDIR}/vmware.sh
 
 	${SED} 	-e 's;@@PREFIX@@;${PREFIX};' \
