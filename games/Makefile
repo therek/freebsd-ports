@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.331 2001/02/27 06:12:55 steve Exp $
+# $FreeBSD: ports/games/Makefile,v 1.332 2001/03/01 18:01:22 clive Exp $
 #
 
     SUBDIR += 3dc
@@ -177,6 +177,7 @@
     SUBDIR += sxsame
     SUBDIR += tank
     SUBDIR += teg
+    SUBDIR += tetrinet
     SUBDIR += tetrinet-x
     SUBDIR += tinymux
     SUBDIR += tkmoo
