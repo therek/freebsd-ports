@@ -2,13 +2,13 @@
 # Date created:		31 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/skk-tools/Makefile,v 1.6 2000/10/15 03:19:11 nbm Exp $
+# $FreeBSD: ports/japanese/skk-tools/Makefile,v 1.7 2001/05/31 22:22:49 ade Exp $
 #
 
 PORTNAME=	skk-tools
 PORTVERSION=	9.6
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://skk.kuis.kyoto-u.ac.jp/skk/${PORTVERSION}/
+MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 DISTNAME=	skk${PORTVERSION}
 
 MAINTAINER=	matusita@jp.FreeBSD.org

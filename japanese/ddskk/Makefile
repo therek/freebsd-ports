@@ -2,13 +2,13 @@
 # Date created:		31 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/skk-elisp/Makefile,v 1.8 2000/10/15 03:19:10 nbm Exp $
+# $FreeBSD: ports/japanese/skk-elisp/Makefile,v 1.9 2001/05/31 22:22:48 ade Exp $
 #
 
 PORTNAME=	skk-elisp
 PORTVERSION=	9.6
 CATEGORIES=	japanese elisp
-MASTER_SITES=	ftp://skk.kuis.kyoto-u.ac.jp/skk/${PORTVERSION}/
+MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 DISTNAME=	skk${PORTVERSION}
 
 MAINTAINER=	matusita@jp.FreeBSD.org
