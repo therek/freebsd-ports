@@ -2,7 +2,7 @@
 # Date created:			  Fri Oct 02, 1998
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/misc/Howto/Makefile,v 1.6 2001/01/16 17:31:35 sobomax Exp $
+# $FreeBSD: ports/misc/Howto/Makefile,v 1.7 2001/03/10 05:44:19 vanilla Exp $
 #
 
 PORTNAME=	Howto
@@ -19,7 +19,7 @@ DISTFILES=	Linux+FreeBSD.sgml.gz  \
 
 MAINTAINER=	ports@FreeBSD.org
 
-#BUILD_DEPENDS=	sgmlfmt:${PORTSDIR}/textproc/sgmlformat
+BUILD_DEPENDS=	sgmlfmt:${PORTSDIR}/textproc/sgmlformat
 
 DIST_SUBDIR=	Howto
 NO_WRKSUBDIR=	yes
