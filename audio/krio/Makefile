@@ -3,7 +3,7 @@
 # Date created:        22 Sep 1999
 # Whom:                ak@freenet.co.uk
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/krio/Makefile,v 1.1 2000/01/29 22:19:15 steve Exp $
 #
 
 DISTNAME=	Krio-19990721
@@ -23,6 +23,7 @@ USE_QT=		yes
 WRKSRC=		${WRKDIR}/Krio
 
 do-install:
+		${MKDIR} ${PREFIX}/share/icons/mini ${PREFIX}/share/applnk/Utilities
 		${INSTALL_PROGRAM} ${WRKSRC}/krio ${PREFIX}/bin/krio
 		${INSTALL_DATA} ${WRKSRC}/icons/krio.xpm ${PREFIX}/share/icons/krio.xpm
 		${INSTALL_DATA} ${WRKSRC}/icons/mini/mini-krio.xpm ${PREFIX}/share/icons/mini/krio.xpm
