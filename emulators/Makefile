@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.71 2001/04/22 02:35:51 nakai Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.72 2001/05/20 02:48:11 will Exp $
 #
     SUBDIR += zsnes
 
@@ -35,6 +35,7 @@
     SUBDIR += osf1_base
     SUBDIR += pcemu
     SUBDIR += prodosemu
+    SUBDIR += qcl
     SUBDIR += quasi88
     SUBDIR += rtc
     SUBDIR += sim
