@@ -2,23 +2,26 @@
 # Date created:				31 March 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/x11-clocks/wmfishtime/Makefile,v 1.2 2001/04/17 18:26:25 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmfishtime
-PORTVERSION=	1.21
+PORTVERSION=	1.23
 CATEGORIES=	x11-clocks windowmaker
 MASTER_SITES=	http://www.ne.jp/asahi/linux/timecop/software/ \
 		http://www.freenix.no/~anders/
 
 MAINTAINER=	anders@fix.no
 
+LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
+
 USE_GTK=	yes
 USE_X_PREFIX=	yes
 
-pre-build:
-	${PERL} -pi -e "s@gcc@${CC}@g; s@-O3@${CFLAGS}@g; \
-			s@gtk-config@${GTK_CONFIG}@g; s@-lgtk@-lgtk12@g" ${WRKSRC}/Makefile
+GTK_LIBS?=	`${GTK_CONFIG} --libs`
+GTK_CFLAGS?=	`${GTK_CONFIG} --cflags`
+MAKE_ARGS+=	CFLAGS="${CFLAGS} -Wall -I${LOCALBASE}/include ${GTK_CFLAGS}" \
+		GTK_LIBS="${GTK_LIBS}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/wmfishtime ${PREFIX}/bin
