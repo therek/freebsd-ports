@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.77 2001/05/02 11:25:01 tg Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.78 2001/07/25 11:11:25 tg Exp $
 #
 
 PORTNAME=	python
@@ -46,6 +46,12 @@ DEMODIR=	${PREFIX}/share/examples/${PYTHON_VERSION}
 .if ${OSVERSION} < 400000
 LIB_DEPENDS+=	ncurses.5:${PORTSDIR}/devel/ncurses
 CFLAGS+=	-I${LOCALBASE}/include/ncurses -I${LOCALBASE}/include
+CONFIGURE_ENV+=	LDFLAGS="-L${LOCALBASE}/lib"
+.endif
+
+.if ${OSVERSION} > 500023
+LIB_DEPENDS+=	gmp.3:${PORTSDIR}/math/libgmp
+CFLAGS+=	-I${LOCALBASE}/include
 CONFIGURE_ENV+=	LDFLAGS="-L${LOCALBASE}/lib"
 .endif
 
