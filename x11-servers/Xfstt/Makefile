@@ -3,7 +3,7 @@
 # Date created:		11 September 1998
 # Whom:			jabley@clear.co.nz
 #
-# $FreeBSD: ports/x11-servers/Xfstt/Makefile,v 1.3 1999/08/31 02:58:38 peter Exp $
+# $FreeBSD: ports/x11-servers/Xfstt/Makefile,v 1.4 1999/12/25 02:26:46 steve Exp $
 #
 
 DISTNAME=	xfstt-1.0
@@ -11,7 +11,7 @@ CATEGORIES=	x11-servers
 MASTER_SITES=	$(MASTER_SITE_SUNSITE)
 MASTER_SITE_SUBDIR=	X11/fonts
 
-MAINTAINER=	jabley@clear.co.nz
+MAINTAINER=	rip@pinetec.co.za
 
 WRKSRC=		$(WRKDIR)/xfstt-1.0
 
