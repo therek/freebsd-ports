@@ -2,11 +2,11 @@
 # Date created:				19 Dec 1999
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/comms/sredird/Makefile,v 1.4 2000/06/23 13:21:59 sobomax Exp $
+# $FreeBSD: ports/comms/sredird/Makefile,v 1.5 2000/11/01 15:50:55 sobomax Exp $
 #
 
 PORTNAME=	sredird
-PORTVERSION=	1.1.7
+PORTVERSION=	1.1.8
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/serial
