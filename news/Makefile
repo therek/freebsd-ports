@@ -1,4 +1,4 @@
-# $FreeBSD: ports/news/Makefile,v 1.53 2000/06/09 17:38:55 will Exp $
+# $FreeBSD: ports/news/Makefile,v 1.54 2000/07/20 08:09:27 sobomax Exp $
 #
 
     SUBDIR += atp
@@ -30,6 +30,7 @@
     SUBDIR += p5-News-Newsrc
     SUBDIR += pan
     SUBDIR += pgpmoose
+    SUBDIR += PicMonger
     SUBDIR += plor
     SUBDIR += rkive
     SUBDIR += slnr
