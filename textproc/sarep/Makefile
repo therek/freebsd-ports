@@ -4,10 +4,10 @@
 # Date created:                   Feb 18, 1999
 # Whom:                           ache
 #
-# $FreeBSD: ports/textproc/sarep/Makefile,v 1.8 1999/09/26 18:57:02 ache Exp $
+# $FreeBSD: ports/textproc/sarep/Makefile,v 1.9 1999/11/19 01:23:15 ache Exp $
 #
 
-DISTNAME=       sarep-1.0
+DISTNAME=       sarep-1.1
 CATEGORIES=	textproc
 MASTER_SITES=   http://tarp.worldserve.net/software/
 EXTRACT_SUFX=
