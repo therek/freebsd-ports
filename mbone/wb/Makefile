@@ -2,7 +2,7 @@
 # Date created:		2 Novermber 1996
 # Whom:			fenner
 #
-# $FreeBSD: ports/mbone/wb/Makefile,v 1.8 1999/08/31 06:48:08 mharo Exp $
+# $FreeBSD: ports/mbone/wb/Makefile,v 1.9 2000/04/14 08:49:30 asami Exp $
 #
 
 PORTNAME=       wb
@@ -18,7 +18,7 @@ NO_BUILD=	yes
 USE_X_PREFIX=	yes
 
 # XXX ghostscript, ghostscript3, ghostscript4 or ghostscript5 will all do.
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript5
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
 
 .include <bsd.port.pre.mk>
 

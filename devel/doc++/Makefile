@@ -2,7 +2,7 @@
 # Date created:		20 Dec 1998
 # Whom:			Ruslan@Shevchenko.Kiev.UA
 #
-# $FreeBSD: ports/devel/doc++/Makefile,v 1.8 2000/04/30 19:32:40 steve Exp $
+# $FreeBSD: ports/devel/doc++/Makefile,v 1.9 2000/07/11 07:59:59 kevlo Exp $
 #
 
 PORTNAME=	doc++
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	apps/doctools
 MAINTAINER=	Ruslan@Shevchenko.Kiev.UA
 
 RUN_DEPENDS=	tex:${PORTSDIR}/print/teTeX \
-		gs:${PORTSDIR}/print/ghostscript5 \
+		gs:${PORTSDIR}/print/ghostscript55 \
 		anytopnm:${PORTSDIR}/graphics/netpbm
 
 GNU_CONFIGURE=	yes

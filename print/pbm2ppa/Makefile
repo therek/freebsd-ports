@@ -2,7 +2,7 @@
 # Date created:		18 November 1998
 # Whom:			smace@freebsd.org
 #
-# $FreeBSD: ports/print/pbm2ppa/Makefile,v 1.9 2000/04/09 17:50:21 cpiazza Exp $
+# $FreeBSD: ports/print/pbm2ppa/Makefile,v 1.10 2000/09/25 12:21:37 asami Exp $
 #
 
 PORTNAME=	pbm2ppa
@@ -13,7 +13,7 @@ DISTFILES=	ppa-${PORTVERSION}.tar.gz
 
 MAINTAINER=	smace@freebsd.org
 
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript5 \
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55 \
 		enscript:${PORTSDIR}/print/enscript-letter
 
 USE_GMAKE=	yes
