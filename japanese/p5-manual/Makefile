@@ -2,7 +2,7 @@
 # Date created:		29 June 1998
 # Whom:			SADA Kenji <sada@e-mail.ne.jp>
 #
-# $FreeBSD: ports/japanese/p5-manual/Makefile,v 1.6 2000/08/27 06:13:34 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	man
@@ -52,9 +52,9 @@ do-install:
 .include <bsd.port.post.mk>
 
 plist:
-	@${ECHO} -n >${PLIST}
+	@${ECHO_CMD} -n >${PLIST}
 .for item in 1 3
 .for file in ${CAT${item}}
-	@${ECHO} man/ja/cat${item}/${file}.gz >>${PLIST}
+	@${ECHO_CMD} man/ja/cat${item}/${file}.gz >>${PLIST}
 .endfor
 .endfor

@@ -2,7 +2,7 @@
 # Date created:		22 January 1999
 # Whom:			Kazutoki TAKAMUNE <takamune@avrl.mei.co.jp>
 #
-# $FreeBSD: ports/japanese/epwutil/Makefile,v 1.6 2000/04/11 14:13:27 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	epwutil
@@ -35,11 +35,11 @@ do-install:
 
 post-install:
 .for file in ${EPWPROGS}
-	${ECHO} man/${MANLANG}/cat1/${file}.1${MANEXT} >> ${TMPPLIST}
+	${ECHO_CMD} man/${MANLANG}/cat1/${file}.1${MANEXT} >> ${TMPPLIST}
 .endfor
 .if !defined(NOPORTDOCS)
-	${ECHO} ${EPWDOCDIR}/${EPWDOCS} >> ${TMPPLIST}
-	${ECHO} "@dirrm ${EPWDOCDIR}" >> ${TMPPLIST}
+	${ECHO_CMD} ${EPWDOCDIR}/${EPWDOCS} >> ${TMPPLIST}
+	${ECHO_CMD} "@dirrm ${EPWDOCDIR}" >> ${TMPPLIST}
 .endif
 
 .include <bsd.port.mk>

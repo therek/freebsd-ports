@@ -2,7 +2,7 @@
 # Date created:			23 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mnews/Makefile,v 1.21 2000/01/25 22:01:29 sumikawa Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mnews
@@ -59,13 +59,13 @@ do-install:
 .endif
 
 post-install:
-	@${ECHO} my.domain.com > ${PREFIX}/etc/mnews/default-domain.default
+	@${ECHO_CMD} my.domain.com > ${PREFIX}/etc/mnews/default-domain.default
 	@if [ \! -e ${PREFIX}/etc/mnews/default-domain ]; then \
 	if [ X${BATCH} = X ]; then \
 		while [ X$$domain = X ]; do \
 			read -p "Enter the domain name of this host>" domain; \
 		done; \
-		${ECHO} $$domain > ${PREFIX}/etc/mnews/default-domain; \
+		${ECHO_CMD} $$domain > ${PREFIX}/etc/mnews/default-domain; \
 	else \
 		${ECHO} "Now, you need to make sure ${PREFIX}/etc/mnews/default-domain"; \
 		${ECHO} "contains correct domain name."; \

@@ -2,7 +2,7 @@
 # Date created:		5 Sep 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim/Makefile,v 1.11 2000/10/10 05:10:06 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jvim
@@ -51,7 +51,7 @@ JPLIB+=		-ljd -lcrypt
 #
 # Make a value of INPUT_METHOD
 .if defined(INPUT_METHOD)
-INPUT_METHOD!=	${ECHO} ${INPUT_METHOD} | sed -e 's/^/-/' -e 's/ /+/g'
+INPUT_METHOD!=	${ECHO_CMD} ${INPUT_METHOD} | sed -e 's/^/-/' -e 's/ /+/g'
 .endif
 #
 # For ONEW library
@@ -60,7 +60,7 @@ BUILD_DEPENDS+=	${LOCALBASE}/lib/libonew${INPUT_METHOD}.a:${PORTSDIR}/japanese/o
 JPDEF+=		-DONEW
 # If we use ONEW libray, then -lonew*.a should appear
 # before the other libraries.
-JPLIB!=		echo ${JPLIB} | sed 's%^%-lonew${INPUT_METHOD} %'
+JPLIB!=		${ECHO_CMD} ${JPLIB} | sed 's%^%-lonew${INPUT_METHOD} %'
 .endif
 
 pre-build:

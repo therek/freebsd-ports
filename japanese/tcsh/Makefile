@@ -2,7 +2,7 @@
 # Date created:		29 November 1997
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tcsh/Makefile,v 1.13 2000/07/13 01:34:36 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcsh
@@ -36,7 +36,7 @@ post-install:
 .endif
 	@${ECHO} "updating /etc/shells"
 	@${CP} /etc/shells /etc/shells.bak
-	@(${GREP} -v ${PREFIX}/bin/tcsh /etc/shells.bak; ${ECHO} ${PREFIX}/bin/tcsh) >/etc/shells
+	@(${GREP} -v ${PREFIX}/bin/tcsh /etc/shells.bak; ${ECHO_CMD} ${PREFIX}/bin/tcsh) >/etc/shells
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>

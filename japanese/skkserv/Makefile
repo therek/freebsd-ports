@@ -2,7 +2,7 @@
 # Date created:		31 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/skkserv/Makefile,v 1.11 2001/05/31 22:22:50 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	skkserv
@@ -27,21 +27,21 @@ STARTUP_SCRIPT=	${PREFIX}/etc/rc.d/skkserv.sh
 post-install:
 	@if [ ! -f ${STARTUP_SCRIPT} ]; then \
 		${ECHO} "Installing ${STARTUP_SCRIPT} file."; \
-		${ECHO} "#!/bin/sh" > ${STARTUP_SCRIPT}; \
-		${ECHO} 'case $$1 in' >> ${STARTUP_SCRIPT}; \
-		${ECHO} "start)" >> ${STARTUP_SCRIPT}; \
-		${ECHO} "	if [ -f ${PREFIX}/sbin/skkserv ]; then" >> \
+		${ECHO_CMD} "#!/bin/sh" > ${STARTUP_SCRIPT}; \
+		${ECHO_CMD} 'case $$1 in' >> ${STARTUP_SCRIPT}; \
+		${ECHO_CMD} "start)" >> ${STARTUP_SCRIPT}; \
+		${ECHO_CMD} "	if [ -f ${PREFIX}/sbin/skkserv ]; then" >> \
 			${STARTUP_SCRIPT}; \
-		${ECHO} "		${ECHO} -n ' skkserv'; ${PREFIX}/sbin/skkserv" >> \
+		${ECHO_CMD} "		${ECHO_CMD} -n ' skkserv'; ${PREFIX}/sbin/skkserv" >> \
 			${STARTUP_SCRIPT}; \
-		${ECHO} "	fi" >> ${STARTUP_SCRIPT}; \
-		${ECHO} "	;;" >> ${STARTUP_SCRIPT}; \
-		${ECHO} "stop)" >> ${STARTUP_SCRIPT}; \
-		${ECHO} "	;;" >> ${STARTUP_SCRIPT}; \
-		${ECHO} "*)" >> ${STARTUP_SCRIPT}; \
-		${ECHO} '	${ECHO} "usage: $$0 {start|stop}" 1>&2' >> ${STARTUP_SCRIPT}; \
-		${ECHO} "	;;" >> ${STARTUP_SCRIPT}; \
-		${ECHO} 'esac' >> ${STARTUP_SCRIPT}; \
+		${ECHO_CMD} "	fi" >> ${STARTUP_SCRIPT}; \
+		${ECHO_CMD} "	;;" >> ${STARTUP_SCRIPT}; \
+		${ECHO_CMD} "stop)" >> ${STARTUP_SCRIPT}; \
+		${ECHO_CMD} "	;;" >> ${STARTUP_SCRIPT}; \
+		${ECHO_CMD} "*)" >> ${STARTUP_SCRIPT}; \
+		${ECHO_CMD} '	${ECHO_CMD} "usage: $$0 {start|stop}" 1>&2' >> ${STARTUP_SCRIPT}; \
+		${ECHO_CMD} "	;;" >> ${STARTUP_SCRIPT}; \
+		${ECHO_CMD} 'esac' >> ${STARTUP_SCRIPT}; \
 		${CHMOD} ${BINMODE} ${STARTUP_SCRIPT}; \
 	fi
 

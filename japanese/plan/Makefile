@@ -3,7 +3,7 @@
 # Date created:			  Sat Jan 31, 1998
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/japanese/plan/Makefile,v 1.11 2000/10/08 10:21:17 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=       plan
@@ -20,7 +20,7 @@ PLIST=	${WRKDIR}/PLIST
 EXTRA_PATCHES=  ${.CURDIR}/files/patch-*
 
 post-build:
-	${ECHO} share/doc/plan/plan_calEUC.ps > ${WRKDIR}/PLIST
+	${ECHO_CMD} share/doc/plan/plan_calEUC.ps > ${WRKDIR}/PLIST
 	${CAT} ${MASTERDIR}/pkg-plist >> ${WRKDIR}/PLIST
 
 post-install:

@@ -2,7 +2,7 @@
 # Date created:                      4 May 1998
 # Whom:                              Doug Barton <Doug@gorean.org>
 #
-# $FreeBSD: ports/irc/sirc/Makefile,v 1.9 2000/11/03 09:06:59 dougb Exp $
+# $FreeBSD$
 #
 # If you need SOCKS support, define SOCKS_SERVER with
 # the name of your SOCKS proxy and remove the '#'.
@@ -71,7 +71,7 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/ssfe.1 ${PREFIX}/man/man1
 	${INSTALL_MAN} ${WRKSRC}/sirc.1 ${PREFIX}/man/man1
 .if defined(SOCKS_SERVER)
-	${ECHO} '&load("socks.pl");' >> ${PREFIX}/libexec/sirc/sircrc.pl
+	${ECHO_CMD} '&load("socks.pl");' >> ${PREFIX}/libexec/sirc/sircrc.pl
 .endif
 .if !defined(NOPORTDOCS)
 	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${PREFIX}/libexec/sirc
