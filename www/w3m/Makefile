@@ -3,7 +3,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.5 2000/01/10 14:48:37 sumikawa Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.6 2000/01/18 12:34:25 sumikawa Exp $
 #
 
 DISTNAME=	w3m-${W3M_DIST_VER}
@@ -33,7 +33,9 @@ DOCS=		FAQ.html MANUAL.html MANUAL_lynx.html README \
 SED_CMD=	-e "s,%%PREFIX%%,${PREFIX},g" \
 		-e "s,%%LOCALBASE%%,${LOCALBASE},g"
 
-.if defined(USE_INET6)
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400014
 SED_CMD+=	-e "s,undef INET6,define INET6,g"
 .endif
 
@@ -84,4 +86,4 @@ post-install:
 	@${INSTALL_MAN} ${WRKSRC}/doc-jp/w3m.1 ${PREFIX}/man/ja/man1
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
