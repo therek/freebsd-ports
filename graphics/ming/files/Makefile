@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/ming/files/Makefile,v 1.7 2001/07/06 19:57:43 knu Exp $
+# $FreeBSD$
 
 LIB=		ming
 SHLIB_MAJOR?=	3
@@ -57,8 +57,8 @@ INCS=		blocklist.h \
 		displaylist.h \
 		fill.h \
 		libming.h \
-		ming.h \
-		mingpp.h \
+		../ming.h \
+		../mingpp.h \
 		movie.h \
 		movieclip.h \
 		position.h \
