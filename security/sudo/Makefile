@@ -3,7 +3,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/security/sudo/Makefile,v 1.29 2000/02/05 08:37:43 mharo Exp $
+# $FreeBSD: ports/security/sudo/Makefile,v 1.30 2000/03/20 23:53:40 mharo Exp $
 #
 
 DISTNAME=	sudo-1.6.2p3
@@ -29,6 +29,7 @@ MAN8=		sudo.8 visudo.8
 
 post-patch:
 	perl -i -pe 's,!!PREFIX!!,${PREFIX},g' ${WRKSRC}/*.man
+	perl -i -pe 's,^,#,g' ${WRKSRC}/sample.sudoers
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/sample.sudoers ${PREFIX}/etc/sudoers.sample
