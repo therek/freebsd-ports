@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.465 2005/01/13 19:46:40 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.466 2005/01/13 19:51:06 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -695,13 +695,16 @@ http_access deny Gopher</pre>
       </body>
     </description>
     <references>
-	<url>http://tigger.uic.edu/~jlongs2/holes/greed.txt</url>
-	<url>http://secunia.com/advisories/13534/</url>
-	<mlist msgid="653D74053BA6F54A81ED83DCF969DF08CFA2AA@pivxes1.pivx.com">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110321888413132</mlist>
+      <cvename>CAN-2004-1273</cvename>
+      <cvename>CAN-2004-1274</cvename>
+      <url>http://tigger.uic.edu/~jlongs2/holes/greed.txt</url>
+      <url>http://secunia.com/advisories/13534/</url>
+      <mlist msgid="653D74053BA6F54A81ED83DCF969DF08CFA2AA@pivxes1.pivx.com">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110321888413132</mlist>
     </references>
     <dates>
       <discovery>2004-12-15</discovery>
       <entry>2005-01-03</entry>
+      <modified>2005-01-13</modified>
     </dates>
   </vuln>
 
