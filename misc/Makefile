@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.298 2000/10/05 04:04:56 nakai Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.299 2000/10/19 04:29:34 trevor Exp $
 #
 
     SUBDIR += 221upgrade
@@ -109,6 +109,7 @@
     SUBDIR += peq
     SUBDIR += pdmenu
     SUBDIR += pinfo
+    SUBDIR += pkg_tarup
     SUBDIR += porteasy
     SUBDIR += proxyper
     SUBDIR += py-distutils
