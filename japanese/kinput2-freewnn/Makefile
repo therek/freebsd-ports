@@ -2,7 +2,7 @@
 # Date created:		19 Dec 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kinput2-freewnn/Makefile,v 1.7 2000/09/08 04:34:29 taoka Exp $
+# $FreeBSD: ports/japanese/kinput2-freewnn/Makefile,v 1.8 2000/09/17 15:11:12 taoka Exp $
 #
 
 PORTNAME=	kinput2
@@ -17,7 +17,7 @@ MAINTAINER=	taoka@FreeBSD.org
 LIB_DEPENDS=	${LIB_INPUT_METHOD}
 BUILD_DEPENDS=	${BUILD_INPUT_METHOD}
 
-PATCHDIR=	${.CURDIR}/../kinput2-freewnn/patches
+PATCHDIR=	${.CURDIR}/../kinput2-freewnn/files
 FILESDIR=	${.CURDIR}/../kinput2-freewnn/files
 USE_IMAKE=	yes
 MAN1=		kinput2.1

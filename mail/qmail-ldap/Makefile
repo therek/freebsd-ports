@@ -2,7 +2,7 @@
 # Date created:				21 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.2 2000/09/28 20:56:03 nbm Exp $
+# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.3 2000/10/03 05:12:30 lioux Exp $
 #
 
 PORTNAME=	qmail
@@ -32,11 +32,11 @@ LDAP_PATCH_DATE=	20000701
 # Local overrides
 MASTERDIR=	${PORTSDIR}/mail/qmail
 #MASTERDIR=	${.CURDIR}/../qmail
-PATCHDIR=	${.CURDIR}/patches
-PKGDIR_LOCAL=	${.CURDIR}/pkg
-DESCR=		${PKGDIR_LOCAL}/DESCR
-PLIST=		${PKGDIR_LOCAL}/PLIST
-PKGMESSAGE=	${PKGDIR_LOCAL}/MESSAGE
+PATCHDIR=	${.CURDIR}/files
+PKGDIR_LOCAL=	${.CURDIR}
+DESCR=		${PKGDIR_LOCAL}/pkg-descr
+PLIST=		${PKGDIR_LOCAL}/pkg-plist
+PKGMESSAGE=	${PKGDIR_LOCAL}/pkg-message
 
 PRE_MK_INCLUDED=	yes
 

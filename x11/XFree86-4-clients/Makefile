@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11/XFree86-4-clients/Makefile,v 1.85 2000/08/25 10:34:29 asami Exp $
+# $FreeBSD: ports/x11/XFree86-4-clients/Makefile,v 1.86 2000/09/21 08:36:27 sobomax Exp $
 #
 
 PORTNAME=	clients
@@ -19,7 +19,7 @@ XFREE86_VERSION=	4
 USE_IMAKE=		YES
 DIST_SUBDIR=		xc
 WRKSRC=			${WRKDIR}/xc
-PATCHDIR=		${PORTSDIR}/x11/XFree86-4-libraries/patches
+PATCHDIR=		${PORTSDIR}/x11/XFree86-4-libraries/files
 SCRIPTS_ENV+=		PREFIX=${PREFIX} \
 			X11BASE=${X11BASE} \
 			WRKDIR=${WRKDIR} \

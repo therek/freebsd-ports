@@ -2,7 +2,7 @@
 # Date created:		6 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/mule/Makefile,v 1.43 2000/09/17 15:29:19 taoka Exp $
+# $FreeBSD: ports/editors/mule/Makefile,v 1.44 2000/09/17 15:47:02 taoka Exp $
 #
 
 PORTNAME=	mule
@@ -33,10 +33,10 @@ SLAVEDIRS=	chinese/mule-freewnn
 USE_XLIB=	yes
 EXTRACT_ONLY=	emacs-${EMACS_VERSION}b${EXTRACT_SUFX}
 WRKSRC=		${WRKDIR}/emacs-${EMACS_VERSION}
-PATCHDIR=	${.CURDIR}/../../editors/mule-common/patches
+PATCHDIR=	${.CURDIR}/../../editors/mule-common/files
 FILESDIR=	${.CURDIR}/../../editors/mule-common/files
 SCRIPTDIR=	${.CURDIR}/../../editors/mule-common/scripts
-PLIST=		${.CURDIR}/../../editors/mule/pkg/PLIST
+PLIST=		${.CURDIR}/../../editors/mule/pkg-plist
 INSTALL_COOKIE=	${WRKDIR}/.install_done-${PKGNAME}
 PACKAGE_COOKIE=	${WRKDIR}/.package_done-${PKGNAME}
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:		5 Sep 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim/Makefile,v 1.8 2000/04/11 14:14:04 knu Exp $
+# $FreeBSD: ports/japanese/jvim/Makefile,v 1.9 2000/09/08 04:34:33 taoka Exp $
 #
 
 PORTNAME=	jvim
@@ -14,9 +14,9 @@ DISTNAME=	${PORTNAME}${PORTVERSION}+onew2.2.10
 
 MAINTAINER=	taoka@FreeBSD.org
 
-PATCHDIR=	${.CURDIR}/../jvim/patches
+PATCHDIR=	${.CURDIR}/../jvim/files
 FILESDIR=	${.CURDIR}/../jvim/files
-PLIST=		${.CURDIR}/../jvim/pkg/PLIST
+PLIST=		${.CURDIR}/../jvim/pkg-plist
 MANLANG=	ja
 MAN1=		jcat.1 jfold.1 jgrep.1 jvim.1
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}

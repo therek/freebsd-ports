@@ -2,14 +2,14 @@
 # Date created:		14 Jun 1999
 # Whom:			CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/netscape47-communicator/Makefile,v 1.21 2000/08/24 18:05:46 cjh Exp $
+# $FreeBSD: ports/korean/netscape47-communicator/Makefile,v 1.22 2000/08/25 15:23:49 cjh Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../netscape4-communicator
 SUBMASTERDIR=	${.CURDIR}/../netscape${BROWSER_VER}-communicator
 FILESDIR=	${SUBMASTERDIR}/files
-PATCHDIR=	${SUBMASTERDIR}/patches
-PKGDIR=		${SUBMASTERDIR}/pkg
+PATCHDIR=	${SUBMASTERDIR}/files
+PKGDIR=		${SUBMASTERDIR}
 
 BROWSER_VER=	47
 BROWSER_VERSION=	4.75

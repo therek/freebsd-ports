@@ -2,7 +2,7 @@
 # Date created:		27 December 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/custom-mule/Makefile,v 1.6 2000/04/14 06:20:20 asami Exp $
+# $FreeBSD: ports/editors/custom-mule/Makefile,v 1.7 2000/07/17 02:40:09 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -16,8 +16,8 @@ MASTERDIR=	${.CURDIR}/../../editors/custom-emacs
 EMACS_PORT_NAME=	mule
 
 # pkg/* files but PLIST are used in ${.CURDIR}
-PKGDIR=		${.CURDIR}/pkg
-PATCHDIR=	${.CURDIR}/patches
-PLIST=		${MASTERDIR}/pkg/PLIST
+PKGDIR=		${.CURDIR}
+PATCHDIR=	${.CURDIR}/files
+PLIST=		${MASTERDIR}/pkg-plist
 
 .include <${MASTERDIR}/Makefile>

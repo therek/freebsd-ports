@@ -2,7 +2,7 @@
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.31 2000/09/06 02:00:29 asami Exp $
+# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.32 2000/09/21 08:46:02 sobomax Exp $
 #
 
 PORTNAME?=	xtt-common
@@ -38,7 +38,7 @@ BINOWN=		root
 BINGRP=		wheel
 MASTERDIR?=	${.CURDIR}/../XttXF86srv-common
 FILESDIR=	${MASTERDIR}/files
-PATCHDIR=	${MASTERDIR}/patches
+PATCHDIR=	${MASTERDIR}/files
 .if defined(USE_SHARED_WRKSRC)
 WRKDIR=		${MASTERDIR}/work
 .endif

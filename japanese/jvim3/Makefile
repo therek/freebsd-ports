@@ -2,7 +2,7 @@
 # Date created:         98/11/17
 # Whom:                 Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.17 2000/08/25 02:12:50 taoka Exp $
+# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.18 2000/09/08 04:34:36 taoka Exp $
 #
 
 PORTNAME=	jvim
@@ -19,9 +19,9 @@ MAINTAINER=	taoka@FreeBSD.org
 USE_XLIB=	yes
 
 NO_LATEST_LINK=	YES	# waiting for jgrep, jfold, jcat
-PATCHDIR=	${.CURDIR}/../jvim3/patches
+PATCHDIR=	${.CURDIR}/../jvim3/files
 FILESDIR=	${.CURDIR}/../jvim3/files
-PLIST=		${.CURDIR}/../jvim3/pkg/PLIST
+PLIST=		${.CURDIR}/../jvim3/pkg-plist
 EXTRACT_ONLY=	vim-3.0.tar.gz
 WRKSRC=		${WRKDIR}/vim
 MAKEFILE=	makjunix.mak

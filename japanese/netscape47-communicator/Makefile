@@ -2,7 +2,7 @@
 # Date created:		13 Mar 1998
 # Whom:			sada
 #
-# $FreeBSD: ports/japanese/netscape47-communicator/Makefile,v 1.21 2000/07/26 10:37:01 sada Exp $
+# $FreeBSD: ports/japanese/netscape47-communicator/Makefile,v 1.22 2000/08/19 22:48:10 sada Exp $
 #
 
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
@@ -12,8 +12,8 @@ DISTNAME=	communicator-ja-euc-v475-export.generic-generic-generic
 MASTERDIR=	${.CURDIR}/../netscape4-communicator
 SUBMASTERDIR=	${.CURDIR}/../netscape${BROWSER_VER}-communicator
 FILESDIR=	${SUBMASTERDIR}/files
-PATCHDIR=	${SUBMASTERDIR}/patches
-PKGDIR=		${SUBMASTERDIR}/pkg
+PATCHDIR=	${SUBMASTERDIR}/files
+PKGDIR=		${SUBMASTERDIR}
 
 BROWSER_VER=	47
 BROWSER_VERSION=	4.75

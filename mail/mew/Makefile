@@ -2,7 +2,7 @@
 # Date created:		21 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew/Makefile,v 1.24 2000/08/03 09:25:23 asami Exp $
+# $FreeBSD: ports/mail/mew/Makefile,v 1.25 2000/08/09 17:52:16 gj Exp $
 #
 
 PORTNAME=	mew-${EMACS_PORT_NAME}
@@ -39,7 +39,7 @@ PLIST_SUB=	EMACS_LISPDIR=${EMACS_LISPDIR} \
 		EMACS_ETCDIR=${EMACS_ETCDIR} \
 		EMACS_INFODIR=${EMACS_INFODIR} \
 		EMACS_PKGDIR=${EMACS_PKGDIR}
-PATCHDIR=	${.CURDIR}/../mew/patches
+PATCHDIR=	${.CURDIR}/../mew/files
 SCRIPTDIR=	${.CURDIR}/../mew/scripts
 FILESDIR=	${.CURDIR}/../mew/files
 

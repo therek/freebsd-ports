@@ -2,7 +2,7 @@
 # Date created:        8 Feb 2000
 # Whom:                imura@FreeBSD.org
 #
-# $FreeBSD: ports/devel/kdelibdocs/Makefile,v 1.5 2000/04/11 21:28:21 mharo Exp $
+# $FreeBSD: ports/devel/kdelibdocs/Makefile,v 1.6 2000/04/14 16:02:37 imura Exp $
 #
 
 PORTNAME=	kdelibdocs
@@ -21,6 +21,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	"--with-qtdoc-dir=${X11BASE}/share/doc/qt/html" \
 		"--with-qt-includes=${X11BASE}/include/X11/qt"
 
-PATCHDIR=	${.CURDIR}/patches
+PATCHDIR=	${.CURDIR}/files
 
 .include <bsd.port.mk>

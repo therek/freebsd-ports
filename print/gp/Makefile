@@ -2,7 +2,7 @@
 # Date created:		15 April 1997
 # Whom:			Kiriyama Kazuhiko<kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/print/gp/Makefile,v 1.19 2000/05/01 18:03:33 jseger Exp $
+# $FreeBSD: ports/print/gp/Makefile,v 1.20 2000/05/03 09:01:01 asami Exp $
 #
 
 PORTNAME=	gp
@@ -13,7 +13,7 @@ DISTNAME=	GP-2.5p2
 
 MAINTAINER=	kiri@kiri.toba-cmt.ac.jp
 
-PATCHDIR=	${.CURDIR}/../../print/gp/patches
+PATCHDIR=	${.CURDIR}/../../print/gp/files
 FILESDIR=	${.CURDIR}/../../print/gp/files
 SCRIPTDIR=	${.CURDIR}/../../print/gp/scripts
 
