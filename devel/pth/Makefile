@@ -1,12 +1,12 @@
 # New ports collection makefile for:   pth
-# Version required:		1.2.0
+# Version required:		1.2.1
 # Date Created:			23 May 1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/pth/Makefile,v 1.37 1999/09/28 09:21:03 rse Exp $
+# $FreeBSD: ports/devel/pth/Makefile,v 1.38 1999/10/31 15:27:28 rse Exp $
 #
 
-DISTNAME=	pth-1.2.0
+DISTNAME=	pth-1.2.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.engelschall.com/sw/pth/
