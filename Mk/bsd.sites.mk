@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.175 2003/09/06 20:48:14 knu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.176 2003/09/06 20:52:17 knu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -177,7 +177,6 @@ MASTER_SITE_EXIM+=	\
 	ftp://ftp.tin.org/pub/mail/exim/%SUBDIR%/ \
 	ftp://ftp.freenet.de/pub/ftp.csx.cam.ac.uk/pub/software/email/exim/%SUBDIR%/ \
 	ftp://ftp.esat.net/pub/networking/mail/mta/exim/%SUBDIR%/ \
-	ftp://nagoya.linux.or.jp/mirror/exim/%SUBDIR%/ \
 	ftp://exim.stupendous.net/mirror/exim/%SUBDIR%/ \
 	http://washitake.com/mail/exim/mirror/%SUBDIR%/ \
 	http://exim.psshee.com/ftp/%SUBDIR%/ \
