@@ -2,7 +2,7 @@
 # Date created:		25 Jul 2001
 # Whom:			dwcjr@FreeBSD.org
 #
-# $FreeBSD: ports/editors/joe-devel/Makefile,v 1.16 2001/06/26 02:38:22 dwcjr Exp $
+# $FreeBSD: ports/editors/joe-devel/Makefile,v 1.17 2001/06/26 03:34:40 dwcjr Exp $
 #
 
 PORTNAME=	joe-devel
@@ -11,6 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	joe-editor
+DISTNAME=	joe-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	petef@databits.net
