@@ -2,7 +2,7 @@
 # Date created:		03 Feb 20001
 # Whom:			Mario S F Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xmps-win32-plugin/Makefile,v 1.1 2001/02/13 03:16:31 lioux Exp $
 #
 
 PORTNAME=	xmps-win32-plugin
@@ -24,9 +24,9 @@ USE_X_PREFIX=	yes
 INSTALLS_SHLIB=	yes
 PLIST_SUB=	LIB_VERSION="${LIB_VERSION}"
 
-CODEC_PORT=	${PORTSDIR}/graphics/win32-codecs
-#CODEC_PORT=	../win32-codecs
-CODEC_DETECTION_FILE!=	cd ${CODEC_PORT} && ${MAKE} -V CODEC_DETECTION_FILE
+#CODEC_PORT=	${PORTSDIR}/graphics/win32-codecs
+CODEC_PORT=	${.CURDIR}/../win32-codecs
+CODEC_DETECTION_FILE!=	${MAKE} -f ${CODEC_PORT}/Makefile -V CODEC_DETECTION_FILE
 LIB_VERSION=    0
 
 post-patch:

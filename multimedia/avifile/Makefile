@@ -2,7 +2,7 @@
 # Date created: 	16 September 2000
 # Whom: 		Holger Lamm
 #
-# $FreeBSD: ports/graphics/avifile/Makefile,v 1.9 2001/01/28 21:30:40 sf Exp $
+# $FreeBSD: ports/graphics/avifile/Makefile,v 1.10 2001/02/13 02:38:12 lioux Exp $
 #
 
 PORTNAME=	avifile
@@ -38,9 +38,9 @@ PLIST_SUB=	LIB_VERSION="${LIB_VERSION}"
 
 FMT=	/usr/bin/fmt
 
-CODEC_PORT=	${PORTSDIR}/graphics/win32-codecs
-#CODEC_PORT=	../win32-codecs
-CODEC_DETECTION_FILE!=	cd ${CODEC_PORT} && ${MAKE} -V CODEC_DETECTION_FILE
+#CODEC_PORT=	${PORTSDIR}/graphics/win32-codecs
+CODEC_PORT=	${.CURDIR}/../win32-codecs
+CODEC_DETECTION_FILE!=	${MAKE} -f ${CODEC_PORT}/Makefile -V CODEC_DETECTION_FILE
 
 LIB_VERSION=	0
 # Adhoc fix. First part.
