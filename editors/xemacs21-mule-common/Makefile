@@ -3,7 +3,7 @@
 # Date created:		5 Dec 1997
 # Whom:			Kazuyuki IENAGA <ienaga@jsys.co.jp>
 #
-# $FreeBSD: ports/editors/xemacs-mule-common/Makefile,v 1.10 1999/09/10 23:38:56 asami Exp $
+# $FreeBSD: ports/editors/xemacs-mule-common/Makefile,v 1.11 1999/11/27 03:14:27 steve Exp $
 #
 
 # This is the COMMON port of XEmacs Mule slave ports(editors/xemacs-mule,
@@ -51,7 +51,7 @@ MAN1=		ctags.1 etags.1 gnuattach.1 gnuclient.1 gnudoit.1 \
 INSTALL_TARGET=	install-arch-indep
 PKGINSTALL=	${WRKDIR}/INSTALL.${PKGNAME}
 PLIST=		${PKGDIR}/PLIST
-DESCR=		${WRKDIR}/DESCR.${PKGNAME}
+# DESCR=		${WRKDIR}/DESCR.${PKGNAME}
 PLIST_SUB=	XEMACS_DIR=${XEMACS_DIR}
 PKGINSTALL=	${WRKDIR}/INSTALL
 TMPPLIST=	${WRKDIR}/.PLIST.mktmp-${PKGNAME}
@@ -74,8 +74,6 @@ pre-install:
 	@if [ ! -f ${PREFIX}/lib/xemacs/info/dir ]; then \
 		${SED} -ne '1,/Menu:/p' /usr/share/info/dir > ${PREFIX}/lib/xemacs/info/dir; \
 	fi
-	@${SED} -e "s/%%XEMACS_VER%%/${XEMACS_VER}/g" \
-		${DESCR_TMPL} > ${DESCR}
 	@${SED} -e "s/%%XEMACS_VER%%/${XEMACS_VER}/g" \
 		${INSTALL_TMPL} > ${PKGINSTALL}
 
