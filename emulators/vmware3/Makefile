@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.38 2001/07/12 14:26:09 knu Exp $
+# $FreeBSD$
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
@@ -85,6 +85,9 @@ pre-patch:
 .endfor
 
 post-patch:
+.if ${OSVERSION} >= 500023
+	cat ${FILESDIR}/kse.patch | (cd ${WRKSRC} && patch) > /dev/null 2>&1
+.endif
 	${CP} ${FILESDIR}/Makefile ${WRKSRC}
 	${CP} ${FILESDIR}/Makefile.vmmon ${WRKSRC}/vmmon-only/Makefile
 	${RM} -rf ${WRKSRC}/vmmon-only/linux/
