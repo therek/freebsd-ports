@@ -93,7 +93,7 @@ upgrades.
   instance that files that were formerly found under
   PREFIX/share/sqwebmail/etc/ are now located under PREFIX/etc/sqwebmail.
   Furthermore you need to set sqwebmaild_enable=YES in your rc.conf 
-  because the rc.d script has been migrated to use the rc.sub Subsystem
+  because the rc.d script has been migrated to use the rc.subr Subsystem
 
 20050108:
   AFFECTS: users of mail/courier-imap
@@ -1461,4 +1461,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.134 2005/01/14 21:22:31 adamw Exp $
+$FreeBSD: ports/UPDATING,v 1.135 2005/01/17 16:52:19 oliver Exp $
