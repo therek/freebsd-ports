@@ -2,7 +2,7 @@
 # Date created:         23 Jan 1998
 # Whom:                 housel@acm.org
 #
-# $FreeBSD: ports/lang/dylan/Makefile,v 1.9 1999/12/24 18:39:32 mharo Exp $
+# $FreeBSD: ports/lang/dylan/Makefile,v 1.10 2000/04/12 06:18:05 obrien Exp $
 #
 
 PORTNAME=	dylan
@@ -19,6 +19,7 @@ MASTER_SITES=	ftp://berlin.ccc.de/pub/gd/src/                        \
 		ftp://ftp.infodrom.north.de/pub/unix/language/dylan/gwydion/FreeBSD/ \
 		ftp://ftp.fu-berlin.de/pub/unix/languages/dylan/src/   \
 		ftp://ftp.fu-berlin.de/pub/unix/languages/dylan/FreeBSD/
+DISTNAME=	gd-2.2.0
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} d2c-2.2.0-FreeBSD.gz
 
 MAINTAINER= 	housel@acm.org

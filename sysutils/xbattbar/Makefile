@@ -2,14 +2,14 @@
 # Date created:		Fri Feb 18 10:05:12 JST 2000
 # Whom:                 sumikawa
 #
-# $FreeBSD: ports/sysutils/xbattbar/Makefile,v 1.1.1.1 2000/02/20 17:00:31 sumikawa Exp $
+# $FreeBSD: ports/sysutils/xbattbar/Makefile,v 1.2 2000/04/09 19:08:58 cpiazza Exp $
 #
 
 PORTNAME=	xbattbar
 PORTVERSION= 	1.3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://infonet.aist-nara.ac.jp/member/suguru/
-DISTNAMe=	${PORTNAME}_${PORTVERSION}
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	sumikawa@FreeBSD.org
 

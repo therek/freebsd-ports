@@ -2,14 +2,14 @@
 # Date created:		14 April 1998
 # Whom:			Donald J. Maddox <dmaddox@conterra.com>
 #
-# $FreeBSD: ports/x11-fm/x-files/Makefile,v 1.14 1999/11/28 18:32:32 steve Exp $
+# $FreeBSD: ports/x11-fm/x-files/Makefile,v 1.15 2000/04/10 00:39:33 cpiazza Exp $
 #
 
 PORTNAME=	x-files
 PORTVERSION= 	2.00b1
 CATEGORIES=	x11-fm tk82
 MASTER_SITES=   http://www.hut.fi/~mkivinie/X-Files/data/
-DISTNAME=	X-files-${PORTVERSION}
+DISTNAME=	X-Files-${PORTVERSION}
 
 MAINTAINER=     dmaddox@conterra.com
 

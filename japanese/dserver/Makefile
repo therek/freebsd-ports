@@ -2,7 +2,7 @@
 # Date created:		3 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/dserver/Makefile,v 1.9 2000/04/11 14:13:02 knu Exp $
+# $FreeBSD: ports/japanese/dserver/Makefile,v 1.10 2000/04/12 14:31:35 knu Exp $
 #
 
 PORTNAME=	dserver
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.pu-toyama.ac.jp/pub/misc/ \
 		ftp://ftp.sra.co.jp/pub/net/ndtp/misc/
 DISTNAME=	${PORTNAME}2.2betapl2
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
-		${DISTNAME}.addtable.${EXTRACT_SUFX} \
+		${DISTNAME}.addtable${EXTRACT_SUFX} \
 		kenjiro-ndtpd.diff \
 		kenjiro-dictlist.diff
 EXTRACT_ONLY=	${DISTFILES:Nkenjiro-*}

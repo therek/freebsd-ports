@@ -2,7 +2,7 @@
 # Date created:		24 December 1996
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/lang/ocaml/Makefile,v 1.12 2000/03/26 06:02:58 kris Exp $
+# $FreeBSD: ports/lang/ocaml/Makefile,v 1.13 2000/04/12 06:19:40 obrien Exp $
 #
 
 PORTNAME=	ocaml
@@ -10,7 +10,7 @@ PORTVERSION=	2.04
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.inria.fr/lang/caml-light/ \
 		ftp://ftp.kurims.kyoto-u.ac.jp/pub/lang/caml-light/
-DISTFILES=	${PORTNAME}${PORTVERSION}.tar.gz ${DOCFILES}
+DISTFILES=	${PKGNAME}.tar.gz ${DOCFILES}
 
 MAINTAINER=	ortmann@isl.net
 

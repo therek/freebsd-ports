@@ -2,7 +2,7 @@
 # Date created:        20 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-clocks/asclock/Makefile,v 1.9 2000/01/08 11:23:57 nakai Exp $
+# $FreeBSD: ports/x11-clocks/asclock/Makefile,v 1.10 2000/04/10 00:32:23 cpiazza Exp $
 #
 
 PORTNAME=	asclock
@@ -10,7 +10,7 @@ PORTVERSION= 	1.0
 CATEGORIES=	x11-clocks afterstep
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=		applications
-DISTNAMe=	${PORTNAME}
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nakai@FreeBSD.org
