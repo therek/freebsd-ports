@@ -3,7 +3,7 @@
 # Date created:		26 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/nam/Makefile,v 1.2 1999/08/30 14:23:23 peter Exp $
 #
 
 DISTNAME=	nam-src-1.0a7
@@ -21,6 +21,7 @@ MANCOMPRESSED=	no
 WRKSRC=		${WRKDIR}/${PKGNAME}
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-tcl-ver=8.2 --with-tk-ver=8.2
 
 ALL_TARGET=
 
