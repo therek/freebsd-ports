@@ -2,7 +2,7 @@
 # Date created:		August 31, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wdm/Makefile,v 1.38 2000/04/29 23:52:49 steve Exp $
+# $FreeBSD: ports/x11/wdm/Makefile,v 1.39 2000/06/20 07:38:54 will Exp $
 #
 
 PORTNAME=	wdm
@@ -20,7 +20,7 @@ LIB_DEPENDS=	wraster.3:${PORTSDIR}/x11-wm/windowmaker
 DIST_SUBDIR=	wdm
 USE_X_PREFIX=	yes
 USE_AUTOMAKE=	yes
-AUTOMAKE=	automake -a -i
+AUTOMAKE_ARGS=	--include-deps
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include \
 			-DCSRG_BASED -DHAS_SETUSERCONTEXT" \
 		LIBS="-L${LOCALBASE}/lib ${LIBPAM}"
@@ -28,6 +28,8 @@ CONFIGURE_ARGS=	--with-logdir=/var/log \
 		--with-runlockdir=/var/run \
 		--with-wdmdir=${PREFIX}/lib/X11/wdm \
 		--with-Logo=Earth200x130.xpm \
+		--with-gfx-incs=${X11BASE}/include/WINGs \
+		--with-gfx-libs=${X11BASE}/lib \
 		--with-defuserpath=/bin:/usr/bin:/sbin:/usr/sbin:${X11BASE}/bin:${LOCALBASE}/bin \
 		--with-defsystempath=/bin:/usr/bin:/sbin:/usr/sbin:${X11BASE}/bin \
 		--with-wmlist=wmaker:afterstep:blackbox:ctwm:enlightenment:fvwm:fvwm2:fvwm95:olvwm:qvwm:tvtwm
@@ -41,7 +43,7 @@ CONFIGURE_ARGS+=	--enable-pam
 LIBPAM=		-lpam
 .endif
 
-pre-fetch:
+pre-everything:
 .if !defined(WITH_PAM)
 	@${ECHO_MSG} "To build this port with PAM support, define \"WITH_PAM\"."
 .endif
