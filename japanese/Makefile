@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.356 2001/04/13 19:10:12 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.357 2001/04/22 05:22:44 knu Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -276,6 +276,7 @@
     SUBDIR += ruby-eb
     SUBDIR += ruby-kakasi
     SUBDIR += ruby-man
+    SUBDIR += ruby-romkan
     SUBDIR += ruby-slang
     SUBDIR += ruby-uconv
     SUBDIR += ruby-tcltklib
