@@ -2,7 +2,7 @@
 # Date created:				12 February 1999
 # Whom:                			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/x11-wm/flwm/Makefile,v 1.11 2000/11/13 12:45:38 demon Exp $
+# $FreeBSD: ports/x11-wm/flwm/Makefile,v 1.12 2001/02/05 21:05:36 olgeni Exp $
 #
 
 PORTNAME=	flwm
@@ -16,6 +16,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	demon@FreeBSD.org
 
 LIB_DEPENDS=	fltk.1:${PORTSDIR}/x11-toolkits/fltk
+
+MAKE_ENV+=	PTHREAD_LIBS=${PTHREAD_LIBS}
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
