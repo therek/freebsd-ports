@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.363 2004/10/04 21:29:46 linimon Exp $
+# $FreeBSD: ports/LEGAL,v 1.364 2004/10/14 10:23:14 clive Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -444,6 +444,9 @@ pmake-*.tar.Z		ports/devel/pmake	Non-commercial use only
 poseidonCE-*		ports/java/poseidon	Redistribution is not permitted
 ppsmall-*		ports/archivers/ppunpack	No commercial redistribution
 prodosemu.*		ports/emulators/prodosemu	Restrictive copyright on the ROM image
+hcwPVRP2.sys		ports/multimedia/pvr250	Driver is part of the cdrom
+						distribution coming with the
+						TV card.
 qkmj95p5-freebsd	ports/games/qkmj	Do not sell for profit
 qmail-*			ports/mail/qmail-*	Restricted binary distribution
 						of modified versions
