@@ -2,13 +2,15 @@
 # Date Created:				20 May 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/net/iperf/Makefile,v 1.1 2001/05/27 17:42:22 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	iperf
-PORTVERSION= 	1.2
+PORTVERSION= 	1.6.3
+DISTNAME=	iperf-1.6.3-source
 CATEGORIES=	net
 MASTER_SITES=	http://dast.nlanr.net/Projects/Iperf/
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	petef@FreeBSD.org
 
