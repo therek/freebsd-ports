@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.46 1999/11/11 10:20:55 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.47 2000/01/05 20:20:25 jseger Exp $
 #
 
     SUBDIR += FWF
@@ -6,6 +6,7 @@
     SUBDIR += Xaw3d
     SUBDIR += blt
     SUBDIR += fltk
+    SUBDIR += guile-gtk
     SUBDIR += gtk--
     SUBDIR += gtk-engines
     SUBDIR += gtk10
