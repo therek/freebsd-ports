@@ -2,7 +2,7 @@
 # Date created:		2000/09/16
 # Whom:			Nick Sayer
 #
-# $FreeBSD: ports/net/airport/Makefile,v 1.3 2000/10/06 00:06:28 nsayer Exp $
+# $FreeBSD: ports/net/airport/Makefile,v 1.4 2001/03/07 14:24:52 nsayer Exp $
 #
 
 PORTNAME=	airport
@@ -14,7 +14,8 @@ DISTFILES=	configurator_13${EXTRACT_SUFX}
 MAINTAINER=	nsayer@freebsd.org
 
 RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk \
-		${LOCALBASE}/share/java/classes/jfc-${JFC_VERSION}/swingall.jar:${PORTSDIR}/java/jfc
+		${LOCALBASE}/share/java/classes/jfc-${JFC_VERSION}/swingall.jar:${PORTSDIR}/java/jfc \
+		${LOCALBASE}/bin/javavm:${PORTSDIR}/java/javavmwrapper
 
 USE_ZIP=	YES
 
@@ -32,7 +33,6 @@ do-install:
 		${MKDIR} ${PREFIX}/share/airport; \
 		${CP} -r ${WRKSRC}/* ${PREFIX}/share/airport; \
 		${SED} -e s,%%PREFIX%%,${PREFIX},g \
-			-e s/%%JDK_VERSION%%/${JDK_VERSION}/ \
 			-e s/%%JFC_VERSION%%/${JFC_VERSION}/ \
 			< ${FILESDIR}/airport > ${PREFIX}/bin/airport; \
 		${CHMOD} a+x ${PREFIX}/bin/airport
