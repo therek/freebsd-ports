@@ -2,11 +2,11 @@
 # Date created:				10 April 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/phpnuke/Makefile,v 1.6 2001/07/22 05:06:44 dwcjr Exp $
+# $FreeBSD: ports/www/phpnuke/Makefile,v 1.7 2001/08/16 17:07:38 lioux Exp $
 #
 
 PORTNAME=	phpnuke
-PORTVERSION=	5.1
+PORTVERSION=	5.2
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
