@@ -3,7 +3,7 @@
 # Date created:		1 February 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/wmdate/Makefile,v 1.7 1999/12/22 20:20:18 jim Exp $
+# $FreeBSD: ports/x11-clocks/wmdate/Makefile,v 1.8 2000/02/08 09:29:32 peter Exp $
 #
 
 DISTNAME=	wmdate-0.7
@@ -14,7 +14,7 @@ MASTER_SITES=	http://wit401310.student.utwente.nl/apps/apps/ \
 MAINTAINER=	jim@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-BUILD_DEPENDS=	${PREFIX}/include/dockapp.h:${PORTSDIR}/x11-wm/libdockapp
+BUILD_DEPENDS=	${X11BASE}/include/dockapp.h:${PORTSDIR}/x11-wm/libdockapp
 
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes
