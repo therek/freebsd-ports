@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.233 1999/09/09 02:06:52 taoka Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.234 1999/09/09 15:11:05 taoka Exp $
 #
 
     SUBDIR += 221upgrade
@@ -26,7 +26,6 @@
     SUBDIR += colortail
     SUBDIR += crosspad
     SUBDIR += cstream
-    SUBDIR += ctk
     SUBDIR += cwish
     SUBDIR += deco
     SUBDIR += dejagnu
