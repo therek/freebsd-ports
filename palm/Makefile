@@ -1,4 +1,4 @@
-# $FreeBSD: ports/palm/Makefile,v 1.27 2001/03/22 22:33:08 fenner Exp $
+# $FreeBSD: ports/palm/Makefile,v 1.28 2001/03/25 13:38:26 ijliao Exp $
 #
 
     SUBDIR += bibelot
@@ -24,6 +24,7 @@
     SUBDIR += prc-tools-binutils
     SUBDIR += prc-tools-gcc
     SUBDIR += romeo
+    SUBDIR += sitescooper
     SUBDIR += syncal
     SUBDIR += syncmal
     SUBDIR += txt2pdbdoc
