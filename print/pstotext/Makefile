@@ -2,11 +2,11 @@
 # Date created:		December 6, 1999
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/print/pstotext/Makefile,v 1.2 2000/04/09 17:41:11 cpiazza Exp $
+# $FreeBSD: ports/print/pstotext/Makefile,v 1.3 2000/04/09 17:50:31 cpiazza Exp $
 #
 
 PORTNAME=	pstotext
-PORTVERSION=	2.1
+PORTVERSION=	1.8g
 CATEGORIES=	print
 MASTER_SITES=	http://www.research.digital.com/SRC/virtualpaper/cgi-bin/nph-download.tcl/pstotext.tar.Z?object=pstotext
 DISTNAME=	pstotext
@@ -16,7 +16,7 @@ MAINTAINER=	ob@seicom.NET
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
 
-WRKSRC=		${WRKDIR}/src
+WRKSRC=		${WRKDIR}/${PORTNAME}
 MAN1=		pstotext.1
 
 .include <bsd.port.mk>
