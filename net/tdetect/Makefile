@@ -4,7 +4,7 @@
 # Date created:			  Sun Jan 31, 1997
 # Whom:               		  shipley@dis.org
 #
-# $FreeBSD: ports/net/tdetect/Makefile,v 1.5 1999/08/30 14:24:17 peter Exp $
+# $FreeBSD: ports/net/tdetect/Makefile,v 1.6 1999/10/25 03:31:12 obrien Exp $
 #
 
 DISTNAME=	tdetect-0.2
@@ -15,6 +15,14 @@ MASTER_SITES=	http://sb.123.org/ \
 		http://ftp.ceti.com.pl/pub/scout/progs/Unix/
 
 MAINTAINER=	shipley@dis.org
+
+.include <bsd.port.pre.mk>
+
+pre-configure:
+	${PERL} -pi.dist -e 's/trdetect/tdetect/g' ${WRKSRC}/config.h
+.if ${OSVERSION} > 330002
+	${PERL} -pi.orig -e 's/LOG_AUTHPRIV/LOG_SECURITY/g' ${WRKSRC}/config.h
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tdetect ${PREFIX}/sbin/tdetect
@@ -33,4 +41,4 @@ post-install:
 		${ECHO} ''; \
 	fi
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
