@@ -5,7 +5,7 @@
 #					msmith@freebsd.org
 # Relevant URLs:			http://www.corel.com/
 #
-# $FreeBSD: ports/editors/wordperfect/Makefile,v 1.7 1999/08/25 05:44:48 obrien Exp $
+# $FreeBSD: ports/editors/wordperfect/Makefile,v 1.8 1999/08/28 02:17:09 mharo Exp $
 
 DISTNAME=	GUILG00
 PKGNAME=	wordperfect-8.0
@@ -49,7 +49,7 @@ pre-install:
 	${ECHO} "   This installation of WordPerfect will expire in 90 days," ; \
 	${ECHO} "   unless you retrieve a free registration key from" ; \
 	${ECHO} "" ; \
-	${ECHO} "         https://livewire.corel.com/wp8LinuxReg/" ; \
+	${ECHO} "       http://venus.corel.com/nasapps/wp8linuxreg/register.html" ; \
 	${ECHO} "" ; \
 	${ECHO} "   to register your copy TODAY. Do this now!" ; \
 	${ECHO} "" ; \
