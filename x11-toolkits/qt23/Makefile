@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.60 2000/10/25 03:33:34 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.61 2000/10/29 03:35:18 will Exp $
 #
 
 PORTNAME=	qt
@@ -48,7 +48,7 @@ INSTALLS_SHLIB=yes
 .endif
 
 pre-fetch:
-.if !defined(QT_GIF_AVAILABLE) || !defined(HAVE_UNISYS_LICENSE)
+.if !defined(QT_GIF_AVAILABLE) && !defined(HAVE_UNISYS_LICENSE)
 	@${ECHO}
 	@${ECHO} "GIF support is disabled in QT by default due to the"
 	@${ECHO} "restrictive license on LZW compression owned by Unisys."
