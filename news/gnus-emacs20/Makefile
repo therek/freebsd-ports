@@ -2,7 +2,7 @@
 # Date created:        29 January 2001
 # Whom:                ilya
 #
-# $FreeBSD: ports/news/gnus-emacs20/Makefile,v 1.2 2001/02/11 16:39:08 jeh Exp $
+# $FreeBSD: ports/news/gnus-emacs20/Makefile,v 1.3 2001/03/12 03:05:03 kuriyama Exp $
 #
 
 PORTNAME=	gnus
@@ -17,7 +17,7 @@ MASTER_SITES=	http://quimby.gnus.org/gnus/dist/ \
 		ftp://ftp.task.gda.pl/mirror/ftp.gnus.org/pub/gnus/ \
 		http://www.gnus.org/dist/ \
 		ftp://ftp.gnus.org/dist/ \
-		ftp://ftp.twoguys.org/gnus/ \
+		ftp://ftp.twoguys.org/gnus/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 
 MAINTAINER=	ilya@martynov.org
