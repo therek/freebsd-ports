@@ -2,13 +2,13 @@
 # Date created:		16 Oct 2000
 # Whom:			Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/imlib2/Makefile,v 1.75 2001/09/11 02:22:38 ache Exp $
+# $FreeBSD: ports/graphics/imlib2/Makefile,v 1.76 2001/10/08 20:09:02 lioux Exp $
 #
 
 PORTNAME=	imlib2
 PORTVERSION=	1.0.4
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.ny.us.rasterman.com/files/ \
+MASTER_SITES=	http://www.nl.rasterman.com/files/ \
 		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	enlightenment
 
