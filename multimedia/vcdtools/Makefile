@@ -3,15 +3,18 @@
 # Date created:	 	Mar 9, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/vcdtools/Makefile,v 1.1 2001/03/08 17:54:08 ijliao Exp $
 #
 
 PORTNAME=	vcdtools
 PORTVERSION=	0.4
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.munich-vision.de/vcd/
+MASTER_SITES=	http://www.mpegnews.com/files/video/
+DISTNAME=	${PORTNAME}_v${PORTVERSION}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
+
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 do-install:
 .for f in mkvcdfs vcdmplex
