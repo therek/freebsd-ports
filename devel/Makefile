@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.289 2000/06/01 20:16:20 ade Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.290 2000/06/06 13:56:26 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -121,6 +121,7 @@
     SUBDIR += mkcmd
     SUBDIR += mkmf
     SUBDIR += mm
+    SUBDIR += moonshine
     SUBDIR += mprof
     SUBDIR += msrc0
     SUBDIR += nana
