@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.156 2003/06/01 19:36:05 naddy Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.157 2003/06/11 22:56:51 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -192,6 +192,7 @@ MASTER_SITE_GNOME+=	\
 	ftp://ftp.tuwien.ac.at/linux/gnome.org/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/gnome/&,} \
 	ftp://ftp.cse.buffalo.edu/pub/Gnome/%SUBDIR%/ \
+	http://ftp.gnome.org/pub/GNOME/%SUBDIR%/
 
 MASTER_SITE_GNU+=	\
 	ftp://ftp.gnu.org/gnu/%SUBDIR%/ \
