@@ -3,12 +3,12 @@
 # Date created:         16 December 1995
 # Whom:                 Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/swisswatch/Makefile,v 1.8 1999/08/31 02:58:01 peter Exp $
 #
 
 DISTNAME=	swisswatch-0.06
 CATEGORIES=	x11-clocks
-MASTER_SITES=	ftp://ports.jp.freebsd.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/
+MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	sanpei@jp.FreeBSD.org
