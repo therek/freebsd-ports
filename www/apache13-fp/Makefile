@@ -2,12 +2,12 @@
 # Date created:         Sat Oct 31 16:30:00 CDT 1997
 # Whom:                 hetzels@westbend.net
 #
-# $FreeBSD: ports/www/apache13-fp/Makefile,v 1.25 2001/03/08 12:35:09 olgeni Exp $
+# $FreeBSD: ports/www/apache13-fp/Makefile,v 1.26 2001/04/17 11:10:33 roam Exp $
 #
 
 PORTNAME=	apache_fp
-PORTVERSION=	1.3.19
-PORTREVISION=	1
+PORTVERSION=	1.3.20
+#PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.apache.org/dist/httpd/ \
 		ftp://ftp.microsoft.com/products/frontpage/ \
@@ -51,7 +51,7 @@ PKGMESSAGE=	pkg-message.freebsd
 .else
 FRONTPAGE=	fp40.bsdi.tar.Z
 EXTRA_PATCHES=	${FILESDIR}/change_server.bsdi ${FILESDIR}/fp_install.bsdi
-.if ${OSVERSION} < 50016
+.if ${OSVERSION} < 500016
 PKGMESSAGE=	pkg-message.bsdi
 .endif
 .endif
@@ -97,10 +97,11 @@ CONFIGURE_ARGS=	 \
 		  --server-uid=${HTTPD_USER} \
 		  --server-gid=${HTTPD_GROUP} \
 		  --without-confadjust \
-		  --enable-shared=max \
 		  --enable-module=most \
 		  --enable-module=auth_db \
+		  --enable-module=mmap_static \
 		  --disable-module=auth_dbm \
+		  --enable-shared=max \
 		  --add-module=${MOD_FP} \
 		  --enable-shared=frontpage
 
