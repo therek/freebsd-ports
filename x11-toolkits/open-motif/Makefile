@@ -3,7 +3,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.6 2000/06/03 18:36:14 obrien Exp $
+# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.7 2000/06/03 18:38:47 obrien Exp $
 #
 
 PORTNAME=	open-motif
@@ -20,6 +20,7 @@ MAINTAINER=	obrien@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 PREFIX?=	/	# will install into ${PREFIX}/usr/X11R6
+NO_MTREE=	yes
 USE_X_PREFIX=	yes
 NO_WRKSUBDIR=	yes
 EXTRACT_ONLY=	# don't exact the tarball

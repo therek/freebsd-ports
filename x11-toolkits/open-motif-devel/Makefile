@@ -3,7 +3,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/open-motif-devel/Makefile,v 1.6 2000/06/03 18:36:15 obrien Exp $
+# $FreeBSD: ports/x11-toolkits/open-motif-devel/Makefile,v 1.7 2000/06/03 18:38:44 obrien Exp $
 #
 
 PORTNAME=	open-motif-devel
@@ -13,13 +13,14 @@ MASTER_SITES=	ftp://openmotif.opengroup.org/pub/openmotif/R2.1.30/binaries/metro
 		ftp://ftp.opengroup.org/pub/openmotif/R2.1.30/binaries/metrolink/  \
 		ftp://ftp.isca.uiowa.edu/pub/mirrors/openmotif/binaries/metrolink/  \
 		ftp://ftp.kddlabs.co.jp:/X11/openmotif/binaries/metrolink/
-DISTFILES=	openmotif-2.1.30-1_MLI${EXTRACT_SUFX}
+DISTNAME=	openmotif-${PORTVERSION}-1_MLI
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	obrien@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 PREFIX?=	/	# will install into ${PREFIX}/usr/X11R6
+NO_MTREE=	yes
 USE_X_PREFIX=	yes
 NO_WRKSUBDIR=	yes
 EXTRACT_ONLY=	# don't exact the tarball
