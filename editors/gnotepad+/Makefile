@@ -2,11 +2,11 @@
 # Date created:		08 March 1999
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.11 2000/09/13 08:41:49 sobomax Exp $
+# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.12 2000/10/05 07:22:33 reg Exp $
 #
 
 PORTNAME=	gnotepad+
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.3
 CATEGORIES=	editors www gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	gnotepad
