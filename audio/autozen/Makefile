@@ -2,7 +2,7 @@
 # Date created:				2000-09-16
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/audio/autozen/Makefile,v 1.2 2000/10/02 05:28:47 trevor Exp $
+# $FreeBSD: ports/audio/autozen/Makefile,v 1.3 2000/10/05 06:35:46 reg Exp $
 #
 
 PORTNAME=	autozen
@@ -22,6 +22,13 @@ DOC_FILES=	CHANGES COPYING
 DATA_FILES=	deep-relax.seq relax.seq test.seq test2.seq test3.seq
 
 post-patch:
+	@if [ -f /usr/include/sys/soundcard.h ]; then \
+		${PERL} -pi -e "s=linux/soundcard.h=sys/soundcard.h=g" \
+			${WRKSRC}/autozen.c; \
+	else \
+		${PERL} -pi -e "s=linux/soundcard.h=machine/soundcard.h=g" \
+			${WRKSRC}/autozen.c; \
+	fi
 	@${PERL} -pi -e "s=X11BASE=${X11BASE}=g" ${WRKSRC}/autozen.c
 
 do-install:
