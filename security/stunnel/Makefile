@@ -2,11 +2,11 @@
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.24 2000/12/20 05:56:08 kris Exp $
+# $FreeBSD: ports/security/stunnel/Makefile,v 1.25 2000/12/20 12:59:12 roam Exp $
 #
 
 PORTNAME=	stunnel
-PORTVERSION=	3.10
+PORTVERSION=	3.11
 CATEGORIES=	security
 MASTER_SITES=	http://www.stunnel.org/download/stunnel/src/ \
 		ftp://opensores.thebunker.net/pub/mirrors/stunnel/ \
@@ -16,6 +16,7 @@ MASTER_SITES=	http://www.stunnel.org/download/stunnel/src/ \
 MAINTAINER=	martti.kuparinen@ericsson.com
 
 USE_OPENSSL=	YES
+IS_INTERACTIVE=	YES	# prompts for information while generating certificate
 
 USE_AUTOCONF=	yes
 CONFIGURE_ARGS=	--localstatedir=/var/run
