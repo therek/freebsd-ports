@@ -2,7 +2,7 @@
 # Date created:		1-Aug-1995
 # Whom:			pst
 #
-# $FreeBSD: ports/net/zephyr/Makefile,v 1.12 2001/02/11 18:30:28 jeh Exp $
+# $FreeBSD: ports/net/zephyr/Makefile,v 1.13 2001/03/29 19:36:35 mikeh Exp $
 #
 
 PORTNAME=	zephyr
@@ -15,6 +15,7 @@ MAINTAINER=	ports@FreeBSD.org
 WRKSRC=		${WRKDIR}/zephyr
 
 USE_XLIB=	yes
+USE_BISON=	yes
 
 GNU_CONFIGURE=	yes
 .if exists(/usr/lib/libkrb.a) && defined(MAKE_EBONES)
