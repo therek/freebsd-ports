@@ -2,11 +2,11 @@
 # Date created:		15 Jul 2000
 # Whom:			matusita@jp.FreeBSD.org
 #
-# $FreeBSD: ports/net/jwhois/Makefile,v 1.3 2001/03/22 10:10:05 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jwhois
-PORTVERSION=	2.4.2
+PORTVERSION=	3.0.1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	jwhois
