@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.368 2000/06/28 00:31:45 archie Exp $
+# $FreeBSD: ports/net/Makefile,v 1.369 2000/06/30 01:12:14 will Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -63,6 +63,7 @@
     SUBDIR += fping
     SUBDIR += freewais-sf
     SUBDIR += fspclient
+    SUBDIR += gabber
     SUBDIR += gaim
     SUBDIR += gated
     SUBDIR += gatekeeper
