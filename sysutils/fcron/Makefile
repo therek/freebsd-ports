@@ -3,12 +3,11 @@
 # Date created:			Mar 1, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/fcron/Makefile,v 1.7 2001/08/25 20:10:19 dwcjr Exp $
+# $FreeBSD: ports/sysutils/fcron/Makefile,v 1.8 2001/09/21 15:47:27 sf Exp $
 #
 
 PORTNAME=	fcron
-PORTVERSION=	1.1.1
-PORTREVISION=	2
+PORTVERSION=	2.0.0
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://fcron.free.fr/
