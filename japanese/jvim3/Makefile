@@ -2,7 +2,7 @@
 # Date created:         98/11/17
 # Whom:                 Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.21 2001/01/15 18:21:40 taoka Exp $
+# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.22 2001/06/30 09:44:15 taoka Exp $
 #
 
 PORTNAME=	jvim
@@ -15,8 +15,6 @@ DISTFILES=	vim-3.0.tar.gz \
 		${JPATCH}
 
 MAINTAINER=	taoka@FreeBSD.org
-
-USE_XLIB=	yes
 
 NO_LATEST_LINK=	YES	# waiting for jgrep, jfold, jcat
 PATCHDIR=	${.CURDIR}/../jvim3/files
@@ -33,9 +31,17 @@ JPATCH=		jvim.2.1a.tar.gz
 PLIST_SUB=	VERSION=${PORTVERSION}
 PORT_DOCDIR=	${PREFIX}/share/doc/ja-jvim-${PORTVERSION}
 # -DUSE_X11 is the cause of a problem treating Japanese
-MACHINE=	 -DBSD_UNIX -DUSE_LOCALE -DUSE_X11
-CC=		cc ${CFLAGS} -Wall -traditional -Dconst= -I${X11BASE}/include
-LIBS=		-ltermlib -lxpg4 -L${PREFIX}/lib -L${X11BASE}/lib -lX11
+MACHINE=	-DBSD_UNIX -DUSE_LOCALE
+CC=		cc ${CFLAGS} -Wall -traditional -Dconst=
+LIBS=		-ltermlib -lxpg4
+
+.if !defined(WITHOUT_X11)
+USE_XLIB=	yes
+MACHINE+=	-DUSE_X11
+CC+=		-I${X11BASE}/include
+LIBS+=		-L${PREFIX}/lib -L${X11BASE}/lib -lX11
+.endif
+
 # Specifying a velue INPUT_METHOD, and seting values BUILD_DEPENDS,
 # LIB_DEPENDS, etc.
 FEPOPT=		-DJP_DEF=\"EEE\"
