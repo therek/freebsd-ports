@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.225 2000/10/01 15:27:34 alex Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.226 2000/10/02 14:43:53 knu Exp $
 #
 
     SUBDIR += 4va
@@ -70,9 +70,6 @@
     SUBDIR += guilib
     SUBDIR += gview
     SUBDIR += gxanim
-    SUBDIR += gyvefigs
-    SUBDIR += gyvegui
-    SUBDIR += gyvekernel
     SUBDIR += hdf
     SUBDIR += hobbes-icons-xpm
     SUBDIR += hppsmtools
