@@ -3,7 +3,7 @@
 # Date created:		17 Aug 1998
 # Whom:			Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnome/Makefile,v 1.10 1999/10/12 08:03:30 asami Exp $
+# $FreeBSD: ports/x11/gnome/Makefile,v 1.11 1999/10/14 09:42:09 nakai Exp $
 #
 
 DISTNAME=	gnome-1.0.53
@@ -24,7 +24,7 @@ LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 		xml.5:${PORTSDIR}/textproc/libxml \
 		gnomeprint.2:${PORTSDIR}/print/gnomeprint \
 		ghttp.1:${PORTSDIR}/www/libghttp \
-		obgnome.1:${PORTSDIR}/lang/gnomeobjc
+		obgnome.1:${PORTSDIR}/lang/gnomeobjc \
 		glade.2:${PORTSDIR}/devel/libglade
 RUN_DEPENDS=	${X11BASE}/share/gnome/sounds/startup.wav:${PORTSDIR}/audio/gnomeaudio \
 		panel:${PORTSDIR}/x11/gnomecore \
@@ -38,7 +38,7 @@ RUN_DEPENDS=	${X11BASE}/share/gnome/sounds/startup.wav:${PORTSDIR}/audio/gnomeau
 		gulp:${PORTSDIR}/sysutils/gnomeadmin \
 		gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter \
 		gtop:${PORTSDIR}/sysutils/gtop \
-		gmc:${PORTSDIR}/x11-fm/gnomemc
+		gmc:${PORTSDIR}/x11-fm/gnomemc \
 		gnumeric:${PORTSDIR}/math/gnumeric
 
 EXTRACT_ONLY=	# empty
