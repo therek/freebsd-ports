@@ -4,7 +4,7 @@
 #
 # Borrowed from jakarta-tomcat41
 #
-# $FreeBSD: ports/www/jakarta-tomcat4/files/startup.sh,v 1.4 2002/05/08 21:54:06 znerd Exp $
+# $FreeBSD: ports/www/resin2/files/resin.sh.in,v 1.1 2003/11/20 21:25:09 glewis Exp $
 #
 
 # Determine PREFIX
@@ -22,6 +22,7 @@ ARGS="-conf $PREFIX/etc/%%APP_NAME%%.xml \
 -pid %%PID_FILE%%"
 PATH=/usr/sbin:/usr/bin:/bin
 
+unset CLASSPATH
 export JAVA_HOME=%%JAVA_HOME%%
 export RESIN_HOME=$PREFIX/%%APP_NAME%%
 
