@@ -1,10 +1,11 @@
-# $FreeBSD: ports/converters/Makefile,v 1.25 1999/10/01 17:54:52 cpiazza Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.26 1999/10/20 01:08:41 kuriyama Exp $
 #
 
     SUBDIR += aish
     SUBDIR += btoa
     SUBDIR += fconv
     SUBDIR += i18ntools
+    SUBDIR += iconv
     SUBDIR += ish
     SUBDIR += kdesupport11
     SUBDIR += kdesupport11-i18n
