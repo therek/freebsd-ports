@@ -2,7 +2,7 @@
 # Date created:				31 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/databases/p5-Text-Query-SQL/Makefile,v 1.1 2000/12/31 05:44:52 will Exp $
+# $FreeBSD: ports/databases/p5-Text-Query-SQL/Makefile,v 1.2 2001/03/01 06:39:00 vanilla Exp $
 #
 
 PORTNAME=	Text-Query-SQL
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Text
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Text/Query.pm:${PORTSDIR}/textproc/p5-Text-Query
 RUN_DEPENDS=	${BUILD_DEPENDS}

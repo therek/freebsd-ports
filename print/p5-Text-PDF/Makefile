@@ -2,7 +2,7 @@
 # Date created:				30 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/print/p5-Text-PDF/Makefile,v 1.3 2001/04/15 15:53:36 kevlo Exp $
+# $FreeBSD: ports/print/p5-Text-PDF/Makefile,v 1.4 2001/05/19 19:49:33 ijliao Exp $
 #
 
 PORTNAME=	Text-PDF
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Text
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Compress/Zlib.pm:${PORTSDIR}/archivers/p5-Compress-Zlib
 RUN_DEPENDS=	${BUILD_DEPENDS}

@@ -2,7 +2,7 @@
 # Date created:				01 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-XML-DT/Makefile,v 1.1 2001/01/04 00:00:06 will Exp $
+# $FreeBSD: ports/textproc/p5-XML-DT/Makefile,v 1.2 2001/03/01 06:39:10 vanilla Exp $
 #
 
 PORTNAME=	XML-DT
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser
 RUN_DEPENDS=	${BUILD_DEPENDS}

@@ -2,7 +2,7 @@
 # Date created:				28 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/mail/p5-Email-Valid/Makefile,v 1.2 2001/02/26 03:20:30 steve Exp $
+# $FreeBSD: ports/mail/p5-Email-Valid/Makefile,v 1.3 2001/03/01 06:37:28 vanilla Exp $
 #
 
 PORTNAME=	Email-Valid
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Email
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/DNS.pm:${PORTSDIR}/net/p5-Net-DNS \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Mail/Address.pm:${PORTSDIR}/mail/p5-Mail-Tools

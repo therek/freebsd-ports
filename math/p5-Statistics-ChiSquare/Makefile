@@ -2,7 +2,7 @@
 # Date created:				01 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/math/p5-Statistics-ChiSquare/Makefile,v 1.1 2001/01/03 09:35:25 nbm Exp $
+# $FreeBSD: ports/math/p5-Statistics-ChiSquare/Makefile,v 1.2 2001/03/01 06:38:45 vanilla Exp $
 #
 
 PORTNAME=	Statistics-ChiSquare
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Statistics
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

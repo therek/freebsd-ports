@@ -2,7 +2,7 @@
 # Date created:				31 May 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Getopt-Long/Makefile,v 1.1 2001/06/11 04:34:52 will Exp $
 #
 
 PORTNAME=	Getopt-Long
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Getopt
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

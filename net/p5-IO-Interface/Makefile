@@ -2,7 +2,7 @@
 # Date created:				26 April 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/net/p5-IO-Interface/Makefile,v 1.1 2001/04/28 15:16:30 joe Exp $
+# $FreeBSD: ports/net/p5-IO-Interface/Makefile,v 1.2 2001/05/17 11:22:00 joe Exp $
 #
 
 PORTNAME=	IO-Interface
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IO
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

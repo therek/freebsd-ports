@@ -2,7 +2,7 @@
 # Date created:				29 March 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/net/p5-Tie-NetAddr-IP/Makefile,v 1.1 2001/04/02 20:02:38 asmodai Exp $
+# $FreeBSD: ports/net/p5-Tie-NetAddr-IP/Makefile,v 1.2 2001/04/02 20:08:39 asmodai Exp $
 #
 
 PORTNAME=	Tie-NetAddr-IP
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Tie
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/NetAddr/IP.pm:${PORTSDIR}/net/p5-NetAddr-IP
 RUN_DEPENDS=	${BUILD_DEPENDS}

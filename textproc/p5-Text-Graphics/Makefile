@@ -2,7 +2,7 @@
 # Date created:				30 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-Text-Graphics/Makefile,v 1.1 2000/12/31 05:38:40 will Exp $
+# $FreeBSD: ports/textproc/p5-Text-Graphics/Makefile,v 1.2 2001/03/01 06:38:58 vanilla Exp $
 #
 
 PORTNAME=	Text-Graphics
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Text
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Text/Wrapper.pm:${PORTSDIR}/textproc/p5-Text-Wrapper
 RUN_DEPENDS=	${BUILD_DEPENDS}

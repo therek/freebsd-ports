@@ -2,7 +2,7 @@
 # Date created:				30 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/p5-Text-FixedLength-Extra/Makefile,v 1.1 2001/05/11 16:11:50 vanilla Exp $
 #
 
 PORTNAME=	Text-FixedLength-Extra
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Text
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Text/FixedLength.pm:${PORTSDIR}/textproc/p5-Text-FixedLength
 RUN_DEPENDS=	${BUILD_DEPENDS}

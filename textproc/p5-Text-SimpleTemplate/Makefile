@@ -2,7 +2,7 @@
 # Date created:				26 February 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/p5-Text-SimpleTemplate/Makefile,v 1.1 2001/03/01 06:46:49 will Exp $
 #
 
 PORTNAME=	Text-SimpleTemplate
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Text
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

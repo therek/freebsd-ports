@@ -2,7 +2,7 @@
 # Date created:				28 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-Text-Autoformat/Makefile,v 1.1 2000/12/31 05:17:09 will Exp $
+# $FreeBSD: ports/textproc/p5-Text-Autoformat/Makefile,v 1.2 2001/03/01 06:38:52 vanilla Exp $
 #
 
 PORTNAME=	Text-Autoformat
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Text
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				25 April 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/p5-AsciiDB-TagFile/Makefile,v 1.1 2001/04/28 14:55:30 joe Exp $
 #
 
 PORTNAME=	AsciiDB-TagFile
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	AsciiDB
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				29 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-Text-DoubleMetaphone/Makefile,v 1.1 2000/12/31 05:20:36 will Exp $
+# $FreeBSD: ports/textproc/p5-Text-DoubleMetaphone/Makefile,v 1.2 2001/03/01 06:38:55 vanilla Exp $
 #
 
 PORTNAME=	Text-DoubleMetaphone
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Text
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

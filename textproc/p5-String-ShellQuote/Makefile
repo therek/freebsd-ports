@@ -2,7 +2,7 @@
 # Date created:				31 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-String-ShellQuote/Makefile,v 1.1 2001/01/03 23:56:48 will Exp $
+# $FreeBSD: ports/textproc/p5-String-ShellQuote/Makefile,v 1.2 2001/03/01 06:38:49 vanilla Exp $
 #
 
 PORTNAME=	String-ShellQuote
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	String
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

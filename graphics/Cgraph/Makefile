@@ -2,7 +2,7 @@
 # Date created:		25 September 1998
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/graphics/Cgraph/Makefile,v 1.7 2000/06/16 08:17:54 sobomax Exp $
+# $FreeBSD: ports/graphics/Cgraph/Makefile,v 1.8 2000/06/16 21:50:39 asami Exp $
 #
 
 PORTNAME=	Cgraph
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://totoro.berkeley.edu/software/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	tobez@plab.ku.dk
+MAINTAINER=	tobez@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/Cgraph/source
 

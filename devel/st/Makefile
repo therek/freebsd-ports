@@ -2,7 +2,7 @@
 # Date created:         Sun Feb 18 2001
 # Whom:                 tobez@tobez.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/st/Makefile,v 1.1 2001/03/17 06:48:17 dinoex Exp $
 #
 
 PORTNAME=	st
@@ -12,7 +12,7 @@ MASTER_SITES=	http://oss.sgi.com/projects/state-threads/download/ \
 		ftp://oss.sgi.com/www/projects/state-threads/download/ \
 		http://www.tobez.org/download/port-mirrors/devel/st/
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 INSTALLS_SHLIB=	yes
 

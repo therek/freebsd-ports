@@ -2,7 +2,7 @@
 # Date created:				03 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/math/p5-Set-Window/Makefile,v 1.1 2001/01/04 00:09:15 will Exp $
+# $FreeBSD: ports/math/p5-Set-Window/Makefile,v 1.2 2001/03/01 06:38:43 vanilla Exp $
 #
 
 PORTNAME=	Set-Window
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Set
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

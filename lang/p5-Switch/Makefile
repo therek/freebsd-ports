@@ -2,7 +2,7 @@
 # Date created:				26 April 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/lang/p5-Switch/Makefile,v 1.1 2001/04/28 15:08:07 joe Exp $
+# $FreeBSD: ports/lang/p5-Switch/Makefile,v 1.2 2001/05/19 19:43:36 ijliao Exp $
 #
 
 PORTNAME=	Switch
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	../by-authors/id/DCONWAY
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=  ${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Filter/Util/Call.pm:${PORTSDIR}/devel/p5-Filter \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Text/Balanced.pm:${PORTSDIR}/devel/p5-Parse-RecDescent

@@ -2,7 +2,7 @@
 # Date created:		08 September 1998
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/math/dcdflib/Makefile,v 1.4 2000/06/16 10:37:17 sobomax Exp $
+# $FreeBSD: ports/math/dcdflib/Makefile,v 1.5 2000/06/16 21:51:38 asami Exp $
 #
 
 PORTNAME=	dcdflib.c
@@ -10,7 +10,7 @@ PORTVERSION=	1.1
 CATEGORIES=	math
 MASTER_SITES=	ftp://odin.mda.uth.tmc.edu/pub/source/
 
-MAINTAINER=	tobez@plab.ku.dk
+MAINTAINER=	tobez@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/dcdflib.c/src
 

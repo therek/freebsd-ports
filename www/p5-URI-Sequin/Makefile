@@ -2,7 +2,7 @@
 # Date created:				25 April 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-URI-Sequin/Makefile,v 1.1 2001/04/28 13:53:35 joe Exp $
 #
 
 PORTNAME=	Sequin
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	URI
 PKGNAMEPREFIX=	p5-URI-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

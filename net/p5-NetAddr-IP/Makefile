@@ -2,7 +2,7 @@
 # Date created:				12 July 2000
 # Whom:					Christopher N. Harrell <cnh@ivmg.net>
 #
-# $FreeBSD: ports/net/p5-NetAddr-IP/Makefile,v 1.4 2001/03/27 13:02:58 asmodai Exp $
+# $FreeBSD: ports/net/p5-NetAddr-IP/Makefile,v 1.5 2001/03/29 19:38:18 asmodai Exp $
 #
 
 PORTNAME=	NetAddr-IP
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	NetAddr
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

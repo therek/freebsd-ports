@@ -2,7 +2,7 @@
 # Date created:		08 February 1999
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/math/PDL/Makefile,v 1.11 2000/11/15 12:49:46 sobomax Exp $
+# $FreeBSD: ports/math/PDL/Makefile,v 1.12 2001/02/14 20:19:40 lioux Exp $
 #
 
 PORTNAME=	PDL
@@ -11,7 +11,7 @@ CATEGORIES=	math perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	PDL
 
-MAINTAINER=	tobez@plab.ku.dk
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/PGPLOT.pm:${PORTSDIR}/graphics/pgperl \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/ExtUtils/F77.pm:${PORTSDIR}/lang/p5-F77

@@ -2,7 +2,7 @@
 # Date created:         Sun Oct 31 1999
 # Whom:                 tobez@plab.ku.dk
 #
-# $FreeBSD: ports/www/mathopd/Makefile,v 1.10 2001/02/05 15:33:29 olgeni Exp $
+# $FreeBSD: ports/www/mathopd/Makefile,v 1.11 2001/02/18 15:37:58 kevlo Exp $
 #
 
 PORTNAME=	mathopd
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.mathopd.org/dist/ \
 		http://www.tobez.org/download/port-mirrors/www/mathopd/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/p/pl/}
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 post-install:
 	@${INSTALL_DATA} ${FILESDIR}/mathopd.conf.sample ${PREFIX}/etc

@@ -2,7 +2,7 @@
 # Date created:				17 May 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Log-Dispatch/Makefile,v 1.1 2001/05/19 22:32:06 joe Exp $
 #
 
 PORTNAME=	Log-Dispatch
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Log
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 RUN_DEPENDS=    ${BUILD_DEPENDS}
 

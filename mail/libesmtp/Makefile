@@ -2,7 +2,7 @@
 # Date created:         Sun Feb 21 2001
 # Whom:                 tobez@tobez.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/libesmtp/Makefile,v 1.1 2001/03/07 10:52:02 roam Exp $
 #
 
 PORTNAME=	libesmtp
@@ -11,7 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.stafford.uklinux.net/libesmtp/ \
 		http://www.tobez.org/download/port-mirrors/mail/libesmtp/
 
-MAINTAINER=	tobez@tobez.org
+MAINTAINER=	tobez@FreeBSD.org
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
