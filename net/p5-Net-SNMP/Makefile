@@ -2,11 +2,11 @@
 # Date created:				30 June 2000
 # Whom:					Christopher N. Harrell <cnh@ivmg.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Net-SNMP/Makefile,v 1.1 2000/07/06 20:55:28 will Exp $
 #
 
 PORTNAME=	Net-SNMP
-PORTVERSION=	3.50
+PORTVERSION=	3.60
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
@@ -14,13 +14,12 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-3.5
+WRKSRC=		${WRKDIR}/${PORTNAME}-3.6
+
 USE_PERL5=	yes
+PERL_CONFIGURE=	yes
+
 MAN3=		Net::SNMP.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>
