@@ -2,7 +2,7 @@
 # Date created:			21 May 2000
 # Whom:				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/xmms-tfmx/Makefile,v 1.5 2001/06/21 15:35:22 sobomax Exp $
 #
 
 PORTNAME=	xmms-tfmx
@@ -11,7 +11,7 @@ CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.nuug.no/pub/anders/distfiles/ \
 		http://www.freenix.no/~anders/
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	xmms.2:${PORTSDIR}/audio/xmms
 

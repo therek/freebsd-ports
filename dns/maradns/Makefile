@@ -2,7 +2,7 @@
 # Date created:				26 May 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/net/maradns/Makefile,v 1.4 2001/08/13 16:10:50 kevlo Exp $
+# $FreeBSD: ports/net/maradns/Makefile,v 1.5 2001/08/24 14:57:19 dwcjr Exp $
 #
 
 PORTNAME=	maradns
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.maradns.org/download/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 USE_BZIP2=	yes
 

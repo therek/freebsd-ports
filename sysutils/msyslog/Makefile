@@ -2,7 +2,7 @@
 # Date created:				14 May 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/sysutils/msyslog/Makefile,v 1.3 2001/07/01 15:36:45 kevlo Exp $
+# $FreeBSD: ports/sysutils/msyslog/Makefile,v 1.4 2001/08/29 06:37:43 petef Exp $
 #
 
 PORTNAME=	msyslog
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.core-sdi.com/soft/ \
 DISTNAME=	${PORTNAME}-v${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 .if defined(WITH_MYSQL)
 LIB_DEPENDS+=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client

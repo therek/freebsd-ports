@@ -2,7 +2,7 @@
 # Date created:		13 September 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/news/xrn/Makefile,v 1.1 2001/09/14 13:50:58 markp Exp $
+# $FreeBSD: ports/news/xrn/Makefile,v 1.2 2001/10/04 03:49:43 petef Exp $
 #
 
 PORTNAME=	xrn
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://sipb.mit.edu/pub/xrn/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		xrn.1

@@ -2,7 +2,7 @@
 # Date created:				September 10 2000
 # Whom:	      				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/apache-contrib/Makefile,v 1.5 2001/01/16 17:32:53 sobomax Exp $
+# $FreeBSD: ports/www/apache-contrib/Makefile,v 1.6 2001/04/10 22:21:05 dirk Exp $
 #
 
 PORTNAME=	apache-contrib
@@ -15,7 +15,7 @@ MASTER_SITES=	http://www.apache.org/dist/%SUBDIR%/ \
 		ftp://ftp.sunet.se/pub/www/servers/apache/dist/%SUBDIR%/
 MASTER_SITE_SUBDIR=	httpd/contrib/modules/1.3
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13

@@ -2,7 +2,7 @@
 # Date created:		25 March 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/vpnd/Makefile,v 1.1 2001/03/31 02:17:37 will Exp $
 #
 
 PORTNAME=	vpnd
@@ -11,7 +11,7 @@ CATEGORIES=	security
 MASTER_SITES=	http://sunsite.dk/vpnd/archive/ \
 		http://www.freenix.no/~anders/
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 HAS_CONFIGURE=	yes

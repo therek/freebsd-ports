@@ -2,7 +2,7 @@
 # Date created:		9 June 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_extract_forwarded/Makefile,v 1.1 2001/06/19 01:59:10 jeh Exp $
 #
 
 PORTNAME=	mod_extract_forwarded
@@ -11,7 +11,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://web.systhug.com/mod_extract_forwarded/ \
 		http://www.freenix.no/~anders/
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13

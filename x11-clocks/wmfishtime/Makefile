@@ -2,7 +2,7 @@
 # Date created:				31 March 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/wmfishtime/Makefile,v 1.4 2001/05/27 07:31:01 sobomax Exp $
 #
 
 PORTNAME=	wmfishtime
@@ -11,7 +11,7 @@ CATEGORIES=	x11-clocks windowmaker
 MASTER_SITES=	http://www.ne.jp/asahi/linux/timecop/software/ \
 		http://www.freenix.no/~anders/
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 

@@ -2,7 +2,7 @@
 # Date created:		18 September 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/xmp/Makefile,v 1.9 2001/04/17 11:02:01 roam Exp $
+# $FreeBSD: ports/audio/xmp/Makefile,v 1.10 2001/04/30 21:55:34 mharo Exp $
 #
 
 PORTNAME=	xmp
@@ -12,7 +12,7 @@ MASTER_SITES=	http://xmp.helllabs.org/pkg/%SUBDIR%/ \
 		http://xmp.linuxave.net/pkg/%SUBDIR%/
 MASTER_SITE_SUBDIR=	${PORTVERSION}
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 USE_BZIP2=	yes
 USE_XLIB=	yes

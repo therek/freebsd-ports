@@ -2,7 +2,7 @@
 # Date created:		18 June 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/mail/dkimap4/Makefile,v 1.1 2001/07/07 03:16:37 ijliao Exp $
+# $FreeBSD: ports/mail/dkimap4/Makefile,v 1.2 2001/08/24 13:44:51 dwcjr Exp $
 #
 
 PORTNAME=	dkimap4
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.dbox.handshake.de/download/ \
 		http://www.cs.cmu.edu/~kroening/dbox/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes

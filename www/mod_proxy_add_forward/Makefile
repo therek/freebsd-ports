@@ -2,7 +2,7 @@
 # Date created:		25 March 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_proxy_add_forward/Makefile,v 1.1 2001/03/31 02:14:14 will Exp $
 #
 
 PORTNAME=	mod_proxy_add_forward
@@ -13,7 +13,7 @@ MASTER_SITES=	http://develooper.com/code/mpaf/ \
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.c
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13

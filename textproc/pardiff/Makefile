@@ -2,7 +2,7 @@
 # Date created:		08 July 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/textproc/pardiff/Makefile,v 1.1 2001/07/08 15:08:21 kevlo Exp $
+# $FreeBSD: ports/textproc/pardiff/Makefile,v 1.2 2001/08/18 06:58:47 mharo Exp $
 #
 
 PORTNAME=	pardiff
@@ -11,7 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	pardiff
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

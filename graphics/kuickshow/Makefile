@@ -2,7 +2,7 @@
 # Date created:		5 May 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/kuickshow/Makefile,v 1.1 2001/05/20 03:21:36 will Exp $
+# $FreeBSD: ports/graphics/kuickshow/Makefile,v 1.2 2001/08/26 07:30:44 petef Exp $
 #
 
 PORTNAME=	kuickshow
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:			18 August 2001
 # Whom:				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/mod_watch/Makefile,v 1.1 2001/09/03 18:27:28 knu Exp $
+# $FreeBSD: ports/www/mod_watch/Makefile,v 1.2 2001/09/17 03:45:48 dwcjr Exp $
 #
 
 PORTNAME=	mod_watch
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.snert.com/Software/mod_watch/ \
 DISTNAME=	${PORTNAME}203
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13

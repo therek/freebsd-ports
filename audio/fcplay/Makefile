@@ -2,7 +2,7 @@
 # Date created:			17 September 2000
 # Whom:				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/fcplay/Makefile,v 1.3 2001/01/09 16:43:19 kevlo Exp $
+# $FreeBSD: ports/audio/fcplay/Makefile,v 1.4 2001/04/30 12:45:12 olgeni Exp $
 #
 
 PORTNAME=	fcplay
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.nuug.no/pub/anders/distfiles/ \
 		http://www.freenix.no/~anders/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/include/sidplay/compconf.h:${PORTSDIR}/audio/libsidplay
 

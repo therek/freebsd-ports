@@ -2,7 +2,7 @@
 # Date created:				10 June 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/fpm/Makefile,v 1.1 2001/06/27 21:40:54 will Exp $
+# $FreeBSD: ports/security/fpm/Makefile,v 1.2 2001/07/01 15:41:51 kevlo Exp $
 #
 
 PORTNAME=	fpm
@@ -11,7 +11,7 @@ CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 USE_GNOME=	yes
 USE_X_PREFIX=	yes

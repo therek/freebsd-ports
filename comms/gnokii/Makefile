@@ -2,7 +2,7 @@
 # Date created:         15 March 1999
 # Whom:                 staffanu
 #
-# $FreeBSD: ports/comms/gnokii/Makefile,v 1.3 2000/04/08 23:22:30 mharo Exp $
+# $FreeBSD: ports/comms/gnokii/Makefile,v 1.4 2001/05/03 01:12:45 greid Exp $
 #
 
 PORTNAME=	gnokii
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.gnokii.org/pub/gnokii/pre/ \
 		ftp://urtica.linuxnews.pl/pub/people/pkot/gnokii/
 DISTNAME=	${PORTNAME}-${PORTVERSION}_pre22
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 

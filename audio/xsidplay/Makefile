@@ -2,7 +2,7 @@
 # Date created:        28 November 1999
 # Whom:                Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/xsidplay/Makefile,v 1.11 2001/04/15 15:24:15 dinoex Exp $
+# $FreeBSD: ports/audio/xsidplay/Makefile,v 1.12 2001/08/02 19:48:43 lioux Exp $
 #
 
 PORTNAME=	xsidplay
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages
 		http://www.freenix.no/~anders/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	sidplay.1:${PORTSDIR}/audio/libsidplay
 

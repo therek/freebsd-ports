@@ -2,7 +2,7 @@
 # Date created:			11 February 2001
 # Whom:				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_throttle/Makefile,v 1.1 2001/03/12 21:56:51 will Exp $
 #
 
 PORTNAME=	mod_throttle
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.snert.com/Software/mod_throttle/ \
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//g}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13

@@ -2,7 +2,7 @@
 # Date created:		5 May 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/nbsmtp/Makefile,v 1.1 2001/05/20 03:25:18 will Exp $
 #
 
 PORTNAME=	nbsmtp
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www2.fastdial.net/~drysdam/software/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 

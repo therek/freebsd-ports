@@ -2,7 +2,7 @@
 # Date created:		24 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/thttpd/Makefile,v 1.20 2001/05/01 00:34:46 mharo Exp $
+# $FreeBSD: ports/www/thttpd/Makefile,v 1.21 2001/08/24 00:19:30 petef Exp $
 #
 
 PORTNAME=	thttpd
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.acme.com/software/thttpd/ \
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} notes.html
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 IGNOREFILES=	notes.html
 

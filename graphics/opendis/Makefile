@@ -2,7 +2,7 @@
 # Date created:		22 May 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/opendis/Makefile,v 1.1 2001/06/08 16:54:23 will Exp $
 #
 
 PORTNAME=	opendis
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://ods.sourceforge.net/dl/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:				18 July 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/tcm/Makefile,v 1.1 2001/08/18 06:39:47 ijliao Exp $
 #
 
 PORTNAME=	tcm
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.cs.utwente.nl/pub/tcm/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 USE_BISON=	yes
 USE_MOTIF=	yes

@@ -2,7 +2,7 @@
 # Date created:				12 August 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/x11-fm/gentoo/Makefile,v 1.2 2001/08/12 18:18:59 dougb Exp $
+# $FreeBSD: ports/x11-fm/gentoo/Makefile,v 1.3 2001/08/26 16:30:39 petef Exp $
 #
 
 PORTNAME=	gentoo
@@ -11,7 +11,7 @@ CATEGORIES=	x11-fm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
