@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.45 2000/02/16 04:52:59 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.46 2000/03/02 06:42:59 brian Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -24,7 +24,7 @@ IGNOREFILES!=	${SED} 's:^\(.*\)$$:${PKGNAME}/\1:g' ${FILESDIR}/ignorefiles
 DISTFILES+=	${IGNOREFILES}
 
 CVS_CMD?=	cvs -z3
-CVS_DATE=	Tue Feb  1 02:19:07 EST 2000
+CVS_DATE=	Fri Mar  3 00:37:20 EST 2000
 SED?=		/usr/bin/sed
 CVS_DATE_!=	${ECHO} -n "${CVS_DATE}" | ${SED} 's/[ \t:]/_/g'
 CVS_SITES?=	anoncvs@anoncvs1.ca.openbsd.org:/cvs \
