@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.  */
 
-/* $FreeBSD$ */
+/* $FreeBSD: ports/devel/gdb6/files/freebsd-uthread.c,v 1.1 2004/05/13 04:28:38 obrien Exp $ */
 
 /* This module implements a sort of half target that sits between the
    machine-independent parts of GDB and the ptrace interface (infptrace.c) to
@@ -720,9 +720,10 @@ freebsd_uthread_notice_signals (ptid_t ptid)
 /* Fork an inferior process, and start debugging it with /proc.  */
 
 static void
-freebsd_uthread_create_inferior (char *exec_file, char *allargs, char **env)
+freebsd_uthread_create_inferior (char *exec_file, char *allargs, char **env,
+				 int from_tty)
 {
-  child_ops.to_create_inferior (exec_file, allargs, env);
+  child_ops.to_create_inferior (exec_file, allargs, env, from_tty);
 
   if (PIDGET(inferior_ptid) && freebsd_uthread_active)
     {
