@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.3 2004/06/04 17:29:07 ade Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.4 2004/07/19 07:15:24 ale Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -130,19 +130,17 @@ check-makevars::
 		@${ECHO_CMD} "installed a conflicting PHP port without the Apache Module."
 		@${FALSE}
 .	endif
-.else
+.endif
+
+.endif
+
+.endif
+
+.endif
+
+.endif
 
 PHP_PORT?=	${PORTSDIR}/lang/php${PHP_VER}
-
-.endif
-
-.endif
-
-.endif
-
-.endif
-
-.endif
 
 .if defined(WANT_PHP_PEAR)
 .	if defined(USE_PHP_BUILD)
