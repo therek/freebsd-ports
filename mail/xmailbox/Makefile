@@ -2,7 +2,7 @@
 # Date created:				23 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/mail/xmailbox/Makefile,v 1.10 2000/08/03 09:25:31 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		xmailbox
@@ -13,12 +13,13 @@ MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=		ports@FreeBSD.org
 
+USE_REINPLACE=		yes
 USE_IMAKE=		yes
 USE_XPM=		yes
 MAN1=			xmailbox.1
 
 post-patch:
-	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/XMailbox.ad
+	@${REINPLACE_CMD} -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/XMailbox.ad
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/xmailbox

@@ -2,7 +2,7 @@
 # Date created:		19 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/mail/mreport/Makefile,v 1.5 2001/02/05 15:10:56 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mreport
@@ -12,13 +12,14 @@ MASTER_SITES=	ftp://ftp.datrix.co.za/pub/mreport/
 
 MAINTAINER=	ports@FreeBSD.org
 
+USE_REINPLACE=	yes
 ALL_TARGET=	ALL
 MAN8=		mreport.8
 
 post-patch:
-	${PERL} -pi -e "s/^.TH mreport 1/.TH mreport 8/g; s/^.LO 1/.LO 8/g;" \
+	@${REINPLACE_CMD} -e "s/^.TH mreport 1/.TH mreport 8/g; s/^.LO 1/.LO 8/g;" \
 		${WRKSRC}/mreport.1
-	${PERL} -pi -e "s/^CC.+//g; s/-Wall -c -O2/${CFLAGS} -c/g;" \
+	@${REINPLACE_CMD} -E -e "s/^CC.+//g; s/-Wall -c -O2/${CFLAGS} -c/g;" \
 		${WRKSRC}/Makefile
 
 do-install:
