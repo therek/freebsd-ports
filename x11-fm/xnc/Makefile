@@ -2,7 +2,7 @@
 # Date created:		5 February 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/x11-fm/xnc/Makefile,v 1.6 2000/07/07 19:06:54 steve Exp $
+# $FreeBSD: ports/x11-fm/xnc/Makefile,v 1.7 2000/07/13 07:19:31 sobomax Exp $
 #
 
 PORTNAME=	xnc
@@ -24,7 +24,7 @@ MAINTAINER=	dima@Chg.RU
 #		lha:${PORTSDIR}/archivers/lha		\
 #		bzip2:${PORTSDIR}/archivers/bzip2
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.3:${PORTSDIR}/graphics/png
+		png.4:${PORTSDIR}/graphics/png
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_X_PREFIX=	yes
