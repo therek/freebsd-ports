@@ -2,11 +2,11 @@
 # Date created:		09 Feb 1995
 # Whom:			gpalmer
 #
-# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.29 2001/03/07 22:42:42 olgeni Exp $
+# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.30 2001/03/08 15:26:10 olgeni Exp $
 #
 
 PORTNAME=	smalltalk
-PORTVERSION=	1.95.3
+PORTVERSION=	1.95.4
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -29,8 +29,7 @@ pre-patch:
 		 s|\$$\OPT_CFLAGS||g' ${WRKSRC}/configure
 
 	@find ${WRKSRC} -name 'Makefile.in' | xargs ${PERL} -pi -e \
-		's|examples lib-src|lib-src examples|g ; \
-		 s|make mostlyclean|\$$\(MAKE\) mostlyclean|g ; \
+		's|make mostlyclean|\$$\(MAKE\) mostlyclean|g ; \
 		 s|\@MAKEINFO\@|\@MAKEINFO\@ --no-split|g'
 
 post-install:
