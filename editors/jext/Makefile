@@ -2,11 +2,11 @@
 # Date created:		17 Febrary 2000
 # Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/jext/Makefile,v 1.8 2000/07/27 10:19:44 sobomax Exp $
+# $FreeBSD: ports/editors/jext/Makefile,v 1.9 2000/08/22 06:55:36 sobomax Exp $
 #
 
 PORTNAME=	jext
-PORTVERSION=	2.8.1.1
+PORTVERSION=	2.8.1.2
 CATEGORIES=	editors java
 MASTER_SITES=	http://www.jext.org/ \
 		http://members.xoom.com/romainguy/
