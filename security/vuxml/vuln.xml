@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.327 2004/10/27 12:25:05 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.328 2004/10/27 21:11:09 josef Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -2623,7 +2623,6 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <affects>
       <package>
 	<name>agenda-snow-libs</name>
-	<name>linux-openmotif</name>
 	<name>linux_base</name>
 	<name>open-motif</name>
 	<name>open-motif-devel</name>
@@ -2650,6 +2649,10 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <package>
 	<name>xpm</name>
 	<range><lt>3.4k_1</lt></range>
+      </package>
+      <package>
+	<name>linux-openmotif</name>
+	<range><lt>2.2.4</lt></range>
       </package>
     </affects>
     <description>
