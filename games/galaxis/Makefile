@@ -2,11 +2,11 @@
 # Date created:				30 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/galaxis/Makefile,v 1.4 2000/04/02 00:58:00 mharo Exp $
+# $FreeBSD: ports/games/galaxis/Makefile,v 1.5 2000/04/14 06:42:57 mharo Exp $
 #
 
 PORTNAME=	galaxis
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	games
 MASTER_SITES=	ftp://locke.ccil.org/pub/esr/
 
