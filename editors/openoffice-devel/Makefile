@@ -3,7 +3,7 @@
 # Date created:		30 October 1999
 # Whom:			dkwiebe
 #
-# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.1.1.1 1999/12/09 17:05:36 obrien Exp $
+# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.2 1999/12/09 17:13:36 obrien Exp $
 #
 
 DISTNAME=	so51a_lnx_01
@@ -34,7 +34,7 @@ IGNORE="Please manually download ${DISTFILES} from www.sun.com/staroffice or cop
 .endif
 
 post-configure:
-	${PERL} -pi.orig -e 's/DefaultDestPath = "Office51";/DefaultDestPath = "${PREFIX}/Office51";/' ${WRKSRC}/office51/setup.ins
+	${PERL} -pi.orig -e 's|DefaultDestPath = "Office51";|DefaultDestPath = "${PREFIX}/Office51";|' ${WRKSRC}/office51/setup.ins
 
 do-install:
 	unzip -u -L ${WRKDIR}/so51inst/office51/setup.zip -d ${WRKDIR}/tmp
