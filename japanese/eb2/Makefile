@@ -1,13 +1,13 @@
 # New ports collection makefile for:	eb
-# Version required:		2.3.6
+# Version required:		2.3.7
 # Date created:			20 Jan 1999
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/eb/Makefile,v 1.9 1999/11/27 06:17:45 sumikawa Exp $
+# $FreeBSD: ports/japanese/eb/Makefile,v 1.10 2000/01/22 06:40:14 sumikawa Exp $
 #
 
-DISTNAME=	eb-2.3.6
-PKGNAME=	ja-eb-2.3.6
+DISTNAME=	eb-2.3.7
+PKGNAME=	ja-eb-2.3.7
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/eb/
 DISTFILES=	${EBFILES} ${APPENDIXFILES}
