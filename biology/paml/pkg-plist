@@ -1,10 +1,9 @@
-@comment $FreeBSD: ports/biology/paml/pkg-plist,v 1.4 2003/02/14 23:21:23 naddy Exp $
+@comment $FreeBSD: ports/biology/paml/pkg-plist,v 1.5 2003/10/22 09:29:51 osa Exp $
 bin/baseml
 bin/basemlg
 bin/chi2
 bin/codeml
 bin/evolver
-bin/mcmctree
 bin/pamp
 bin/yn00
 %%PORTDOCS%%%%DOCSDIR%%/pamlDOC.pdf
