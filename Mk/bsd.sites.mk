@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.169 2003/08/18 08:00:37 kuriyama Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.170 2003/08/20 22:49:38 kuriyama Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -588,7 +588,7 @@ MASTER_SITE_REDHAT_LINUX+= \
 # servers at the DNS lookup level. (safe to use with "fetch -A")
 #
 MASTER_SITE_RINGSERVER+=	\
-	ftp://www.dnsbalance.ring.gr.jp/pub/%SUBDIR%/ \
+	ftp://www.t.ring.gr.jp/pub/%SUBDIR%/ \
 	http://www.t.ring.gr.jp/archives/%SUBDIR%/
 
 MASTER_SITE_RUBY+= \
