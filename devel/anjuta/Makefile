@@ -2,11 +2,11 @@
 # Date created:				31 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/anjuta/Makefile,v 1.2 2001/05/18 15:07:39 ade Exp $
+# $FreeBSD: ports/devel/anjuta/Makefile,v 1.3 2001/08/12 08:24:54 demon Exp $
 #
 
 PORTNAME=	anjuta
-PORTVERSION=	0.1.6
+PORTVERSION=	0.1.7
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	anjuta
