@@ -2,11 +2,12 @@
 # Date created:				Mon Oct 18 12:01:28 EDT 1999
 # Whom:					???#
 #
-# $FreeBSD: ports/net/coda5_server/Makefile,v 1.12 2000/10/05 22:40:55 shafeeq Exp $
+# $FreeBSD: ports/net/coda5_server/Makefile,v 1.13 2001/01/19 21:57:53 shafeeq Exp $
 #
 
 PORTNAME=	coda
 PORTVERSION=	${CODA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/src/
 PKGNAMESUFFIX=	-${CODA_SUITE}
