@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/lang/perl5.8/files/use.perl,v 1.9 2005/02/01 13:36:21 tobez Exp $
 
 this=`echo -n $0 | /usr/bin/sed -e 's!^.*/!!'`
 PERL_VERSION="%%PERL_VERSION%%"
@@ -42,7 +42,7 @@ if [ "x$this" = "xuse.perl" ]; then
 else
 	if [ "$2" = "POST-INSTALL" ] ; then
 		need_remove_links=yes
-		if [ $osreldate -ge 502100 ] ; then
+		if [ $osreldate -ge 500036 ] ; then
 			need_create_links=yes
 			need_cleanup_make_conf=yes
 			need_cleanup_manpath=yes
