@@ -3,7 +3,7 @@
 # Date created:		14 Jan 1999
 # Whom:			Richard Seaman, Jr. <dick@tar.com>
 #
-# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.2 1999/11/30 15:59:40 billf Exp $
+# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.3 1999/12/01 00:08:28 julian Exp $
 #
 
 DISTNAME=      linuxthreads
@@ -34,7 +34,16 @@ post-extract:
 		${CP} -p ${threads_files} ${WRKSRC}/.  ;  \
 		${CP} -p Examples/ex6.c ${WRKSRC}/Examples/.
 
+post-build:
+	@cd ${FILESDIR} ; \
+		${MKDIR} ${WRKSRC}/libgcc_r ; \
+		${LN} -s ${FILESDIR}/Makefile.libgcc_r ${WRKSRC}/libgcc_r/Makefile
+	@cd ${WRKSRC}/libgcc_r ; \
+		${MAKE}
+
 pre-install:
+	@cd ${WRKSRC}/libgcc_r ; \
+		${MAKE} install
 
 post-install:
 	@sh ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
