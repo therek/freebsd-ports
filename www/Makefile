@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.213 2000/04/18 18:13:06 ache Exp $
+# $FreeBSD: ports/www/Makefile,v 1.214 2000/04/26 08:51:05 asami Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -116,6 +116,7 @@
     SUBDIR += p5-WWW-Search
     SUBDIR += p5-libapreq
     SUBDIR += p5-libwww
+    SUBDIR += peacock
     SUBDIR += plugger
     SUBDIR += publicfile
     SUBDIR += py-HTMLgen
