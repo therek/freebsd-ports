@@ -3,7 +3,7 @@
 # Date created:        Fri Jul 30 20:50:16 MET DST 1999
 # Whom:                nox@jelal.kn-bremen.de
 #
-# $FreeBSD: ports/games/gracer/Makefile,v 1.3 1999/11/28 18:09:47 steve Exp $
+# $FreeBSD: ports/games/gracer/Makefile,v 1.4 1999/12/27 23:15:16 jedgar Exp $
 #
 
 DISTNAME= 	gracer-0.1.4
@@ -26,7 +26,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include \
 		LIBS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
 USE_GMAKE=	yes
 # for plib (sound):
-NEW_GCC=	yes
+USE_NEWGCC=	yes
 CONFIGURE_ARGS+= --with-plib=${X11BASE}
 
 .include <bsd.port.mk>
