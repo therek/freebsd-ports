@@ -2,7 +2,7 @@
 # Date created:				11 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/lftp/Makefile,v 1.40 2001/01/05 14:58:50 clive Exp $
+# $FreeBSD: ports/ftp/lftp/Makefile,v 1.41 2001/01/18 13:31:53 kevlo Exp $
 #
 
 PORTNAME=	lftp
@@ -23,12 +23,6 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 MAN1=		lftp.1
-
-.if defined(NOPORTDOCS)
-NODOCS=	"@comment "
-.endif
-
-PLIST_SUB=	NOPORTDOCS=${NODOCS}
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
