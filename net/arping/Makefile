@@ -2,11 +2,11 @@
 # Date Created:				1 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/net/arping/Makefile,v 1.1 2000/10/16 14:27:46 jeh Exp $
+# $FreeBSD: ports/net/arping/Makefile,v 1.2 2000/10/21 23:44:50 jeh Exp $
 #
 
 PORTNAME=	arping
-PORTVERSION=	0.95
+PORTVERSION=	0.96
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.nss.nu/pub/synscan/ \
 		ftp://ftp.cerias.purdue.edu/pub/tools/unix/netutils/arping/
