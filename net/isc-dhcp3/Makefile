@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.68 2001/08/17 09:12:51 mharo Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.69 2001/08/19 18:19:15 dwcjr Exp $
 #
 
 PORTNAME=	dhcp
@@ -29,8 +29,6 @@ MAINTAINER=	clefevre@citeweb.net
 #
 # Global variables
 #
-
-FETCH_BEFORE_ARGS+=	-p
 
 HAS_CONFIGURE=	yes
 
