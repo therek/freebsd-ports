@@ -3,7 +3,7 @@
 # Date created:		4 Oct 1999
 # Whom:			Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/net/iplog/Makefile,v 1.2 1999/10/26 03:28:28 mharo Exp $
+# $FreeBSD: ports/net/iplog/Makefile,v 1.3 2000/01/29 21:40:47 steve Exp $
 #
 
 DISTNAME=	iplog-2.1.0
@@ -17,7 +17,7 @@ PATCH_SITES=	http://ojnk.sourceforge.net/stuff/ \
 PATCHFILES=	iplog-2.1.0-2.diff
 PATCH_DIST_STRIP=-p1
 
-MAINTAINER=	dr@domix.de
+MAINTAINER=	ust@cert.siemens.de
 
 GNU_CONFIGURE=	yes
 MAKE_FLAGS=	CONF_ARGS="--prefix=${PREFIX}"
