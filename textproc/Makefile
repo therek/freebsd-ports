@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.159 2001/01/23 07:55:56 knu Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.160 2001/01/30 10:21:20 kevlo Exp $
 #
 
     SUBDIR += agrep
@@ -151,6 +151,7 @@
     SUBDIR += xml4j
     SUBDIR += xp
     SUBDIR += xt
+    SUBDIR += y2l
     SUBDIR += yodl
 
 .include <bsd.port.subdir.mk>
