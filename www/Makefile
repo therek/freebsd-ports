@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.330 2001/03/31 02:14:14 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.331 2001/03/31 11:04:29 nakai Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -206,6 +206,7 @@
     SUBDIR += reportmagic
     SUBDIR += roxen
     SUBDIR += ruboard
+    SUBDIR += ruby-http-access
     SUBDIR += screem
     SUBDIR += sitecopy
     SUBDIR += skipstone
