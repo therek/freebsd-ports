@@ -1,18 +1,19 @@
 # New ports collection makefile for:	eterm
 # Date created:        24 November 1997
-# Whom:                Murray Stokely <murray@cdrom.com>
+# Whom:                Murray Stokely <murray@freebsd.org>
 #
-# $FreeBSD: ports/x11/eterm/Makefile,v 1.25 2000/06/16 10:37:26 sobomax Exp $
+# $FreeBSD: ports/x11/eterm/Makefile,v 1.26 2000/06/16 21:52:10 asami Exp $
 #
 
 PORTNAME=	eterm
 PORTVERSION= 	0.8.10
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.eterm.org/pub/Eterm/ \
-		http://eterm.is.nontoxic.org/download/ \
-		ftp://ftp.livewire.com.au/pub/linuxberg/files/x11/system/ \
-		ftp://ftp.c-com.net/pub/.30/LinuxBerg/files/x11/system/ \
-		ftp://ftp.sunsite.auc.dk/disk6/linuxberg.com/files/x11/system/
+MASTER_SITES=	ftp://eterm.sourceforge.net/pub/eterm/ \
+	        ftp://ftp.enlightenment.org/pub/enlightenment/Eterm/ \
+	        ftp://ftp.themes.org/pub/enlightenment/eterm/ \
+	        ftp://ftp.dti.ad.jp/pub/X/Eterm/ \
+	        http://download.sourceforge.net/eterm/ \
+	        http://eterm.sourceforge.net/download/
 DISTNAME=	Eterm-${PORTVERSION}
 
 MAINTAINER=	murray@FreeBSD.org
