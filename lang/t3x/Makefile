@@ -2,15 +2,15 @@
 # Date created:				15 October 2000
 # Whom:					Nils M Holm <nmh@t3x.org>
 #
-# $FreeBSD: ports/lang/t3x/Makefile,v 1.2 2001/03/18 15:43:57 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	t3x
-PORTVERSION=	6.10.2
+PORTVERSION=	6.10.5
 CATEGORIES=	lang devel
-MASTER_SITES= 	http://www.t3x.org/Compiler/ \
-		http://www.homepages.de/home/nmh/T3X/Compiler/
-DISTNAME=	t3x-6A2
+MASTER_SITES= 	http://www.not-compatible.org/files/ \
+		http://www.t3x.org/files/
+DISTNAME=	t3x-6A5
 
 MAINTAINER=	nmh@t3x.org
 
