@@ -2,12 +2,12 @@
 # Date created:		23 June 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/xt/Makefile,v 1.13 2000/07/25 07:23:55 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xt
 PORTVERSION=	19991105
-CATEGORIES=	textproc
+CATEGORIES=	textproc java
 MASTER_SITES=	ftp://ftp.jclark.com/pub/xml/
 DISTNAME=	${PORTNAME}
 
