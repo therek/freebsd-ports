@@ -2,7 +2,7 @@
 # Date Created:				10 February 2000
 # Whom:					Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gdtclft/Makefile,v 1.1 2000/06/09 05:34:06 will Exp $
 #
 
 PORTNAME=	Gdtclft
@@ -14,7 +14,8 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 MAINTAINER=	mi@aldan.algebra.com
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82 \
-		gd.1:${PORTSDIR}/graphics/gd
+		gd.1:${PORTSDIR}/graphics/gd \
+		ttf.4:${PORTSDIR}/print/freetype
 
 MAKEFILE=	${FILESDIR}/Makefile.bsd
 MAKE_ENV=	TCL_VER=8.2 MKDIR="${MKDIR}" INSTALL_DATA="${INSTALL_DATA}"
