@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.239 1999/12/25 15:43:37 steve Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.240 1999/12/27 01:40:49 steve Exp $
 #
 
     SUBDIR += ElectricFence
@@ -93,6 +93,7 @@
     SUBDIR += m68knewlib
     SUBDIR += makedepend
     SUBDIR += mico
+    SUBDIR += mkcmd
     SUBDIR += mkmf
     SUBDIR += mm
     SUBDIR += mprof
