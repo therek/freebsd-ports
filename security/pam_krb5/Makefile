@@ -2,7 +2,7 @@
 # Date created:				11/03/2000
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/security/pam_krb5/Makefile,v 1.3 2001/01/23 20:52:45 nectar Exp $
+# $FreeBSD: ports/security/pam_krb5/Makefile,v 1.4 2001/02/05 16:20:31 nectar Exp $
 #
 
 PORTNAME=		pam_krb5
@@ -36,11 +36,11 @@ KRB5_IMPL="heimdal"
 .elif defined(HEIMDAL_HOME) && exists(${HEIMDAL_HOME}/include/heim_err.h)
 KRB5BASE=${HEIMDAL_HOME}
 KRB5_IMPL=heimdal
-LIB_DEPENDS+=		krb5.15:${PORTSDIR}/security/heimdal
+LIB_DEPENDS+=		krb5.16:${PORTSDIR}/security/heimdal
 .elif exists(${LOCALBASE}/include/heim_err.h)
 KRB5BASE=${LOCALBASE}
 KRB5_IMPL=heimdal
-LIB_DEPENDS+=		krb5.15:${PORTSDIR}/security/heimdal
+LIB_DEPENDS+=		krb5.16:${PORTSDIR}/security/heimdal
 .elif defined(KRB5_HOME) && exists(${KRB5_HOME}/include/mit-sipb-copyright.h)
 KRB5BASE=${KRB5_HOME}
 KRB5_IMPL=mit
