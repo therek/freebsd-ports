@@ -3,7 +3,7 @@
 # Whom:					Patrick Li <pat@databits.net>
 # With help from:	Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gkrellmqst/Makefile,v 1.2 2001/07/03 18:00:01 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gkrellmqst
@@ -12,7 +12,7 @@ CATEGORIES=	net games
 MASTER_SITES=	http://tadpol.org/unxware/
 DISTNAME=	gkrellm_qst-${PORTVERSION:S/.p/pre_/}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/include/gkrellm/gkrellm.h:${PORTSDIR}/sysutils/gkrellm
 RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm \

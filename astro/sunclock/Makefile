@@ -3,7 +3,7 @@
 # Date created:		15 September 1996
 # Whom:			torstenb
 #
-# $FreeBSD: ports/astro/sunclock/Makefile,v 1.15 2001/07/25 17:35:38 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sunclock
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.ac-grenoble.fr/ge/geosciences/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.p/pre/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 

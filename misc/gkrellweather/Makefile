@@ -3,7 +3,7 @@
 # Whom:					Patrick Li <pat@databits.net>
 # With help from:	Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/gkrellweather/Makefile,v 1.3 2001/07/14 23:10:17 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gkrellweather
@@ -12,7 +12,7 @@ PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.cse.unsw.edu.au/~flam/repository/c/gkrellm/
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/include/gkrellm/gkrellm.h:${PORTSDIR}/sysutils/gkrellm
 RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm \

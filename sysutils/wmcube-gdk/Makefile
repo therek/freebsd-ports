@@ -2,7 +2,7 @@
 # Date created:				Thu Aug 16 12:42:18 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/sysutils/wmcube-gdk/Makefile,v 1.2 2001/09/26 03:07:37 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmcube
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.ne.jp/asahi/linux/timecop/software/
 PKGNAMESUFFIX=	-gdk
 DISTNAME=	${PORTNAME}${PKGNAMESUFFIX}-${PORTVERSION}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

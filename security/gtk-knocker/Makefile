@@ -2,7 +2,7 @@
 # Date created:				Tue Jul 10 02:18:39 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/security/gtk-knocker/Makefile,v 1.1 2001/07/30 00:56:50 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	knocker
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 PKGNAMEPREFIX=	gtk-
 DISTNAME=	gtk-${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes

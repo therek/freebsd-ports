@@ -2,7 +2,7 @@
 # Date Created:				Tue Jun 26 18:04:37 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/astro/gkrellmoon/Makefile,v 1.1 2001/06/28 02:55:40 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gkrellmoon
@@ -11,7 +11,7 @@ CATEGORIES=	astro
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	gkrellmoon
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/include/gkrellm/gkrellm.h:${PORTSDIR}/sysutils/gkrellm
 RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm

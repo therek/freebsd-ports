@@ -2,7 +2,7 @@
 # Date created:				Sun Jul 29 10:25:08 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/security/rain/Makefile,v 1.2 2001/08/01 02:15:22 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rain
@@ -10,7 +10,7 @@ PORTVERSION=	1.2.8r2
 CATEGORIES=	security net
 MASTER_SITES=	http://www.tenebrous.com/rain/files/
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

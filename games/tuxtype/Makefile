@@ -2,7 +2,7 @@
 # Date created:				Mon Aug  6 21:53:03 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/games/tuxtype/Makefile,v 1.2 2001/08/10 04:17:26 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tuxtype
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 LIB_DEPENDS=	SDL_image.10:${PORTSDIR}/graphics/sdl_image \
 		SDL_mixer.2:${PORTSDIR}/audio/sdl_mixer

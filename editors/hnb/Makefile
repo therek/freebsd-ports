@@ -2,7 +2,7 @@
 # Date created:				Fri Jul  6 05:37:14 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/editors/hnb/Makefile,v 1.2 2001/09/08 00:10:45 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hnb
@@ -11,7 +11,7 @@ CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

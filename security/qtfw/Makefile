@@ -2,7 +2,7 @@
 # Date created:				Sat Aug 25 10:42:02 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/security/qtfw/Makefile,v 1.1 2001/08/29 11:29:30 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qtfw
@@ -11,7 +11,7 @@ CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 HAS_CONFIGURE=	yes
 USE_GMAKE=	yes

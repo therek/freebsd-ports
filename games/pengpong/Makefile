@@ -2,7 +2,7 @@
 # Date created:				Fri Aug 24 18:21:25 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/games/pengpong/Makefile,v 1.1 2001/09/03 16:31:09 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pengpong
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 LIB_DEPENDS=	SDL_image.10:${PORTSDIR}/graphics/sdl_image
 

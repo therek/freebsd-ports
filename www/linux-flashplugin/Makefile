@@ -2,7 +2,7 @@
 # Date created:		13 Feburary 2000
 # Whom:			Matt Heckaman <matt@LUCIDA.QC.CA>
 #
-# $FreeBSD: ports/www/linux-flashplugin/Makefile,v 1.8 2001/03/29 10:08:24 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flashplugin
@@ -13,7 +13,7 @@ PKGNAMEPREFIX=	linux-
 DISTNAME=	flash_linux
 DIST_SUBDIR=	${PORTNAME}/${PORTVERSION}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 USE_LINUX=	yes

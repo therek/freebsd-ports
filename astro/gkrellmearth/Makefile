@@ -3,7 +3,7 @@
 # Whom:					Patrick Li <pat@databits.net>
 # With help from:	Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/gkrellmearth/Makefile,v 1.1 2001/07/02 23:23:12 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	earth
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.geocities.com/saintdead/
 PKGNAMEPREFIX=	gkrellm
 DISTNAME=	${PORTNAME}_anim-${PORTVERSION}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/include/gkrellm/gkrellm.h:${PORTSDIR}/sysutils/gkrellm
 RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm

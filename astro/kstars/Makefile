@@ -2,7 +2,7 @@
 # Date created:				Thu Sep 13 16:00:55 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/astro/kstars/Makefile,v 1.3 2001/09/27 00:15:36 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kstars
@@ -11,7 +11,7 @@ CATEGORIES=	astro kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 USE_KDELIBS_VER=	2

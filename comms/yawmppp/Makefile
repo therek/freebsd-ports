@@ -2,7 +2,7 @@
 # Date created:				07 Mar 2000
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/comms/yawmppp/Makefile,v 1.6 2001/08/03 18:05:51 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yawmppp
@@ -11,7 +11,7 @@ CATEGORIES=	comms windowmaker
 MASTER_SITES=	ftp://ftp.seul.org/pub/yawmppp/ \
 		http://www.dcc.unicamp.br/~guazzibe/yawmppp/arch/
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

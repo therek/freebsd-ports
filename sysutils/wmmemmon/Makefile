@@ -2,7 +2,7 @@
 # Date created:				Wed May  9 17:55:21 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/sysutils/wmmemmon/Makefile,v 1.4 2001/09/23 19:33:37 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmmemmon
@@ -11,7 +11,7 @@ CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://www.sh.rim.or.jp/~ssato/src/
 DISTNAME=	WMMemMon-${PORTVERSION}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 WRKSRC=		${WRKDIR}/${DISTNAME}

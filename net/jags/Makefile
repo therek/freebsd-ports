@@ -2,7 +2,7 @@
 # Date created:				Thu Jul  5 17:13:11 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/net/jags/Makefile,v 1.3 2001/07/15 00:56:18 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jags
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://sumpan.campus.luth.se/software/jags/download/
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_XPM=	yes

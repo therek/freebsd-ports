@@ -2,7 +2,7 @@
 # Date created:				Wed Jul 18 08:35:56 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/games/glchess/Makefile,v 1.2 2001/08/20 15:59:34 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glchess
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 RUN_DEPENDS=	crafty:${PORTSDIR}/games/crafty \
 		gnuchess:${PORTSDIR}/games/gnuchess

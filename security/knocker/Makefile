@@ -2,7 +2,7 @@
 # Date created:				Tue Jul 10 01:42:52 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/security/knocker/Makefile,v 1.1 2001/07/29 23:53:40 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	knocker
@@ -11,7 +11,7 @@ CATEGORIES=	security net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	pat@FreeBSD.org
 
 USE_AUTOCONF=	yes
 
