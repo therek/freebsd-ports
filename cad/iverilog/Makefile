@@ -3,7 +3,7 @@
 # Date created:		Feb 13, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/iverilog/Makefile,v 1.1 2001/02/13 11:02:14 ijliao Exp $
+# $FreeBSD: ports/cad/iverilog/Makefile,v 1.2 2001/02/22 04:58:04 ijliao Exp $
 #
 
 PORTNAME=	iverilog
@@ -12,7 +12,7 @@ CATEGORIES=	cad
 MASTER_SITES=	ftp://icarus.com/pub/eda/verilog/v${PORTVERSION}/
 DISTNAME=	verilog-${PORTVERSION}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	keichii@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 
