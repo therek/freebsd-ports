@@ -3,7 +3,7 @@
 # Date created:				2000 Feb. 13
 # Whom:					Abel Chow <abel_chow@yahoo.com>
 #
-# $FreeBSD: ports/devel/cproto/Makefile,v 1.2 2000/04/11 21:27:27 mharo Exp $
+# $FreeBSD: ports/devel/cproto/Makefile,v 1.3 2000/07/23 19:09:53 obrien Exp $
 #
 
 PORTNAME=	cproto
@@ -11,7 +11,7 @@ PORTVERSION=	4.6
 CATEGORIES=	devel
 MASTER_SITES=	http://www.vex.net/~cthuang/cproto/
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	YES
 MAN1=		cproto.1
