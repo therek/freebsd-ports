@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/Makefile,v 1.214 1999/08/25 05:47:12 obrien Exp $
 #
 
     SUBDIR += ElectricFence
@@ -16,6 +16,7 @@
     SUBDIR += bison
     SUBDIR += boehm-gc
     SUBDIR += cccc
+    SUBDIR += cdecl
     SUBDIR += cdk
     SUBDIR += cflow
     SUBDIR += clig
