@@ -1,13 +1,13 @@
 # New ports collection makefile for:	p5-DBI
-# Version required:			1.12
+# Version required:			1.13
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-DBI/Makefile,v 1.23 1999/08/25 05:21:24 obrien Exp $
+# $FreeBSD: ports/databases/p5-DBI/Makefile,v 1.24 1999/08/31 06:41:15 mharo Exp $
 #
 
-DISTNAME=	DBI-1.12
-PKGNAME=	p5-DBI-1.12
+DISTNAME=	DBI-1.13
+PKGNAME=	p5-DBI-1.13
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	DBI
@@ -22,6 +22,7 @@ CONFIGURE_ARGS=	PREFIX=${PREFIX}
 MAN1=		dbiproxy.1 \
 		dbish.1
 MAN3=		Bundle::DBI.3 \
+		DBD::ADO.3 \
 		DBD::Proxy.3 \
 		DBI.3 \
 		DBI::DBD.3 \
@@ -29,7 +30,8 @@ MAN3=		Bundle::DBI.3 \
 		DBI::Format.3 \
 		DBI::ProxyServer.3 \
 		DBI::Shell.3 \
-		DBI::W32ODBC.3
+		DBI::W32ODBC.3 \
+		Win32::DBIODBC.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
