@@ -2,7 +2,7 @@
 # Date created:        6 May 1996
 # Whom:                joerg
 #
-# $FreeBSD: ports/deskutils/xpostit/Makefile,v 1.10 2000/04/08 22:04:07 mharo Exp $
+# $FreeBSD: ports/deskutils/xpostit/Makefile,v 1.11 2000/05/29 23:47:47 will Exp $
 #
 
 PORTNAME=	xpostit
@@ -17,5 +17,6 @@ MAINTAINER=	joerg@FreeBSD.org
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/xpostit
+MAN1=		xpostit.1
 
 .include <bsd.port.mk>
