@@ -1,5 +1,5 @@
 # portaudit text based database
-# $FreeBSD: ports/security/portaudit-db/database/portaudit.txt,v 1.8 2004/06/17 06:35:51 eik Exp $
+# $FreeBSD: ports/security/portaudit-db/database/portaudit.txt,v 1.9 2004/06/17 07:13:37 eik Exp $
 apache>=2.*<2.0.49_1|http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0488|mod_ssl stack-based buffer overflow|662cd99e-bc9d-11d8-916c-000347dd607f
 apache+mod_ssl*<1.3.31+2.8.18|http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0488|mod_ssl stack-based buffer overflow|662cd99e-bc9d-11d8-916c-000347dd607f
 ru-apache+mod_ssl<1.3.31+30.20+2.8.18|http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0488|mod_ssl stack-based buffer overflow|662cd99e-bc9d-11d8-916c-000347dd607f
@@ -17,3 +17,4 @@ ja-squirrelmail<1.4.3a,1|http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2004-
 moinmoin<1.2.2|http://www.osvdb.org/6704|MoinMoin administrative group name privilege escalation vulnerability|da9e6438-bfc0-11d8-b00e-000347a4fa7d
 phpnuke<=7.3|http://www.waraxe.us/?modname=sa&id=032|Multiple security flaws in PhpNuke 6.x - 7.3|33ab4a47-bfc1-11d8-b00e-000347a4fa7d
 webmin<1.150|http://www.webmin.com/changes-1.150.html http://www.osvdb.org/6729 http://www.osvdb.org/6730|Multiple vulnerabilities in Webmin|ab61715f-c027-11d8-b00e-000347a4fa7d
+racoon<20040617a|http://lists.netsys.com/pipermail/full-disclosure/2004-June/022617.html http://www.securityfocus.com/archive/1/366023 http://securitytracker.com/alerts/2004/Jun/1010495.html http://orange.kame.net/dev/cvsweb.cgi/kame/kame/kame/racoon/crypto_openssl.c#rev1.86|Racoon may validate invalid certificates|a96c1d37-c033-11d8-b00e-000347a4fa7d
