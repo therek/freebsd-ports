@@ -3,7 +3,7 @@
 # Date created:				11/09/2000
 # Whom:					Peng HaiJie   (phj@cn.freebsd.org)
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/chinput2/Makefile,v 1.1 2000/12/02 16:31:57 vanilla Exp $
 #
 
 PORTNAME=	chinput2
@@ -16,6 +16,8 @@ MAINTAINER=	phj@cn.FreeBSD.org
 
 BUILD_DEPENDS=	mysql:${PORTSDIR}/databases/mysql322-client
 RUN_DEPENDS=	mysql:${PORTSDIR}/databases/mysql322-client
+
+USE_XLIB=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
