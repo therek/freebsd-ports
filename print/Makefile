@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.136 2001/02/12 17:10:23 taoka Exp $
+# $FreeBSD: ports/print/Makefile,v 1.137 2001/02/21 03:55:32 knu Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -55,6 +55,7 @@
     SUBDIR += klyx
     SUBDIR += latex
     SUBDIR += latex2rtf
+    SUBDIR += lilypond
     SUBDIR += lout
     SUBDIR += lprps-a4
     SUBDIR += lprps-letter
