@@ -2,7 +2,7 @@
 # Date created:				2001-03-02
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/p5-Net-IRC/Makefile,v 1.1 2001/03/02 15:01:20 trevor Exp $
 #
 
 PORTNAME=		Net-IRC
@@ -35,6 +35,8 @@ pre-install:
 .endif
 	${ECHO} @dirrm lib/perl5/site_perl/%%PERL_VER%%/Net/IRC >> ${PLIST}
 	${ECHO} @dirrm lib/perl5/site_perl/%%PERL_VER%%/Net >> ${PLIST}
+	${ECHO} @dirrm lib/perl5/site_perl/%%PERL_VER%%/%%PERL_ARCH%%/auto/Net \
+		>> ${PLIST}
 	${ECHO} @dirrm share/examples/p5-Net-IRC >> ${PLIST}
 
 post-install:
