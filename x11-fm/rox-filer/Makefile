@@ -2,7 +2,7 @@
 # Date created:        13 November 2000
 # Whom:                Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD: ports/x11-fm/rox-filer/Makefile,v 1.11 2001/06/09 21:41:50 olgeni Exp $
+# $FreeBSD: ports/x11-fm/rox-filer/Makefile,v 1.12 2001/07/12 19:58:18 olgeni Exp $
 
 PORTNAME=	rox
 PORTVERSION=	1.1.6
@@ -14,9 +14,10 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	olgeni@FreeBSD.org
 
+LIB_DEPENDS=    gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 RUN_DEPENDS=	${LOCALBASE}/share/Choices:${PORTSDIR}/x11-fm/rox-base
 
-USE_GNOMECTRL=	yes
+USE_GTK=	yes
 MAN1=		rox.1
 
 do-build:
