@@ -2,7 +2,7 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.128 2001/02/05 15:33:32 olgeni Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.129 2001/02/25 21:22:03 dirk Exp $
 #
 
 PORTNAME?=	mod_php4
@@ -69,7 +69,7 @@ post-install:
 	@${INSTALL_DATA} ${WRKSRC}/php.ini-dist ${PREFIX}/etc
 .else
 	@${MKDIR} ${PREFIX}/etc/php.standalone
-	@${INSTALL_DATA} ${WRKSRC}/php.ini-dist ${PREFIX}/etc/php.standalone/php.ini-dist
+	@${INSTALL_DATA} ${WRKSRC}/php.ini-dist ${PREFIX}/etc/php.standalone
 .endif
 
 .if !defined(NOPORTDOCS)
