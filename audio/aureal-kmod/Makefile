@@ -2,7 +2,7 @@
 # Date created:				15 January 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/aureal-kmod/Makefile,v 1.10 2001/08/13 13:20:28 sobomax Exp $
 #
 
 PORTNAME=	aureal-kmod
@@ -29,8 +29,8 @@ MAKE_ENV=	WRKSRC="${WRKSRC}"
 .include <bsd.port.pre.mk>
 
 .if exists(${SRCPREFIX}/sys/dev/sound/pcm/sound.c)
-VERSION_SOUND_C!=	${AWK} '/.*\$$FreeBSD/ { print $$4; exit; }' \
-				${SRCPREFIX}/sys/dev/sound/pcm/sound.c
+VERSION_SOUND_C!=	ident < ${SRCPREFIX}/sys/dev/sound/pcm/sound.c | \
+			${AWK} '{ print $$3; exit }'
 .else
 VERSION_SOUND_C=
 .endif
