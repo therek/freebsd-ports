@@ -2,11 +2,12 @@
 # Date created:			8 February 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-reference/Makefile,v 1.1 2001/02/07 22:51:54 knu Exp $
+# $FreeBSD: ports/lang/ruby-reference/Makefile,v 1.2 2001/02/19 15:52:11 knu Exp $
 #
 
 PORTNAME=	ruby-reference
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	lang ruby
 MASTER_SITES=	http://www.pragmaticprogrammer.com/ruby/downloads/files/
 DISTNAME=	rubyref_html_${PORTVERSION}
