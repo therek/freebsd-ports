@@ -2,12 +2,12 @@
 # Date created:		18 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/znavigator/Makefile,v 1.1 2000/09/18 20:02:54 nbm Exp $
+# $FreeBSD: ports/www/znavigator/Makefile,v 1.2 2000/11/09 00:18:10 nbm Exp $
 #
 
 PORTNAME=	znavigator
 PORTVERSION=	2.00
-CATEGORIES=	www
+CATEGORIES=	www zope
 MASTER_SITES=	http://www.zope.org/Members/jonas/ZNavigator/
 DISTNAME=	${ZOPEPRODUCTNAME}-${PORTVERSION}
 EXTRACT_SUFX=	.tgz

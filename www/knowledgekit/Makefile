@@ -2,12 +2,12 @@
 # Date created:		18 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/knowledgekit/Makefile,v 1.1 2000/09/18 18:51:21 nbm Exp $
 #
 
 PORTNAME=	knowledgekit
 PORTVERSION=	1.6.7
-CATEGORIES=	www
+CATEGORIES=	www zope
 MASTER_SITES=	http://www.zope.org/Members/Bill/Products/KnowledgeKit/
 DISTNAME=	KnowledgeKit-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
