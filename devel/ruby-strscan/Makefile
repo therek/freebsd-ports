@@ -2,16 +2,13 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.17 2001/03/25 16:51:15 knu Exp $
+# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.18 2001/04/07 12:17:20 knu Exp $
 #
 
 PORTNAME=	strscan
 PORTVERSION=	0.6.3
 CATEGORIES=	devel ruby
-MASTER_SITES=	${MASTER_SITE_LOCAL} \
-		http://www9.xdsl.ne.jp/~aamine/soft/ \
-		http://www.xdsl.ne.jp/Cd/aamine/soft/
-MASTER_SITE_SUBDIR=	knu
+MASTER_SITES=	http://www.loveruby.net/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DIST_SUBDIR=	ruby
 
@@ -28,17 +25,14 @@ DOCS_JA=	README.ja \
 		doc.ja/changes.html doc.ja/index.html \
 		doc.ja/reference.html doc.ja/usage.html
 
-post-patch:
-	${RUBY} -i -pe "gsub /'ARCH'/, %q/'arch'/" ${WRKSRC}/setup.rb
-
-do-install:
+post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_DOCDIR}/strscan/ja
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
 .for f in ${DOCS_EN}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/strscan/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
 .endfor
 .for f in ${DOCS_JA}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/strscan/ja/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/ja/
 .endfor
 .endif
 
