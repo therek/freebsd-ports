@@ -2,20 +2,19 @@
 # Date created:		22 August 2000
 # Whom:			jasone
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/proxy/Makefile,v 1.1 2000/08/23 07:35:51 jasone Exp $
 #
 
 PORTNAME=	proxy
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.0
 CATEGORIES=	net
-DISTNAME=	canonware-1.0.0
+DISTNAME=	canonware-1.1.0
 MASTER_SITES=	http://www.canonware.com/download/canonware/
 
 MAINTAINER=	jasone@FreeBSD.org
 
 BUILD_DEPENDS=	cook:${PORTSDIR}/devel/cook
 
-USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
 
 MAN1=		proxy.1
