@@ -1,19 +1,9 @@
 
-$FreeBSD: ports/audio/xmms/files/patch-ltmain.sh,v 1.1 2002/01/14 13:38:33 sobomax Exp $
+$FreeBSD: ports/multimedia/xmms/files/patch-ltmain.sh,v 1.2 2002/03/05 21:09:09 pat Exp $
 
---- ltmain.sh.orig	Mon Sep 24 14:12:50 2001
-+++ ltmain.sh	Tue Mar  5 11:16:25 2002
-@@ -2444,6 +2444,9 @@
- 	  *-*-openbsd*)
- 	    # Do not include libc due to us having libc/libc_r.
- 	    ;;
-+	  *-*-freebsd*)
-+	    # FreeBSD doesn't need this...
-+	    ;;
- 	  *)
- 	    # Add libc to deplibs on all other systems if necessary.
- 	    if test $build_libtool_need_lc = "yes"; then
-@@ -4210,10 +4213,12 @@
+--- ltmain.sh.orig	Fri Sep  5 13:18:43 2003
++++ ltmain.sh	Fri Sep  5 13:18:09 2003
+@@ -4333,10 +4333,12 @@
  	fi
  
  	# Install the pseudo-library for information purposes.
