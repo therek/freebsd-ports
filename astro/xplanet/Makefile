@@ -2,11 +2,11 @@
 # Date created:		22 Feb 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/astro/xplanet/Makefile,v 1.10 2000/07/04 05:34:51 will Exp $
+# $FreeBSD: ports/astro/xplanet/Makefile,v 1.11 2000/08/03 09:22:22 asami Exp $
 #
 
 PORTNAME=	xplanet
-PORTVERSION=	0.70
+PORTVERSION=	0.73
 CATEGORIES=	astro x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.radcyberzine.com/xglobe/
@@ -30,7 +30,7 @@ CONFIGURE_ENV=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
 MAKE_ENV=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
 		CPPFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -L${X11BASE}/lib -lm"
-MAN1=		xplanet.1 xplanetbg.1
+MAN1=		xplanet.1 xplanetbg.1 tkxplanet.1 tzcoord.pl.1
 
 .include <bsd.port.pre.mk>
 
