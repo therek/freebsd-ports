@@ -2,7 +2,7 @@
 # Date created:		25 June 1996
 # Whom:			MITA Yoshio <mita@iis.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/xcalendar/Makefile,v 1.1 2001/03/16 02:37:16 kuriyama Exp $
 #
 
 PORTNAME=	xcalendar
