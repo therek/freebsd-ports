@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.1 2000/09/06 20:06:58 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.2 2000/09/06 22:40:09 knu Exp $
 #
 
 Ruby_Include=			bsd.ruby.mk
@@ -152,6 +152,13 @@ ruby-setup-build:
 	@${ECHO_MSG} "===>  Running ${RUBY_SETUP} to build"
 	@cd ${WRKSRC}; \
 	${SETENV} ${MAKE_ENV} ${RUBY} ${RUBY_SETUP} setup
+
+do-install:	ruby-setup-install
+
+ruby-setup-install:
+	@${ECHO_MSG} "===>  Running ${RUBY_SETUP} to install"
+	cd ${WRKSRC}; \
+	${SETENV} ${MAKE_ENV} ${RUBY} ${RUBY_SETUP} install
 .endif
 
 .if defined(USE_LIBRUBY)
