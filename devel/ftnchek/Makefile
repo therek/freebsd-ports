@@ -2,10 +2,10 @@
 # Date created:		4 May 1998
 # Whom:			kargl@apl.washington.edu
 #
-# $FreeBSD: ports/devel/ftnchek/Makefile,v 1.8 1999/12/10 19:37:07 flathill Exp $
+# $FreeBSD: ports/devel/ftnchek/Makefile,v 1.9 2000/04/11 21:27:59 mharo Exp $
 
 PORTNAME=	ftnchek
-PORTVERSION=	2.11.2
+PORTVERSION=	2.12.0
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.netlib.org/fortran/
 DISTNAME=	${PORTNAME}
