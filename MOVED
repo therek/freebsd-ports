@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.458 2004/06/21 00:56:53 kris Exp $
+# $FreeBSD: ports/MOVED,v 1.459 2004/06/21 01:38:55 perky Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1175,3 +1175,4 @@ finance/moneydance||2004-06-20|port broken for >2 months
 x11-themes/mkultra||2004-06-20|port broken for >2 months
 lang/python15||2004-06-21|removed deprecated port
 lang/python20||2004-06-21|removed deprecated port
+converters/xunicode||2004-06-21|no longer maintained
