@@ -3,13 +3,15 @@
 # Date created:		7 July 1998
 # Whom:			Jerry Hicks <jhicks@glenatl.glenayre.com>
 #
-# $FreeBSD: ports/devel/m68knewlib/Makefile,v 1.5 1999/08/25 05:48:39 obrien Exp $
+# $FreeBSD: ports/devel/m68knewlib/Makefile,v 1.6 2000/01/07 18:15:39 fenner Exp $
 #
 
 DISTNAME=	newlib-1.8.1
 PKGNAME=	m68knewlib-1.8.1
 CATEGORIES=	devel
-MASTER_SITES=   ftp://ftp.cygnus.com/pub/newlib/
+MASTER_SITES=	ftp://sourceware.cygnus.com/pub/newlib/
+
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	m68k-coff-gcc:${PORTSDIR}/devel/m68kgcc
 
