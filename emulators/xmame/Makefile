@@ -2,11 +2,11 @@
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.16 2001/01/16 19:08:33 will Exp $
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.17 2001/01/21 02:40:41 vanilla Exp $
 #
 
 PORTNAME=	xmame
-PORTVERSION=	0.37b10.1
+PORTVERSION=	0.37b11.1
 CATEGORIES=	emulators
 MASTER_SITES=	http://x.mame.net/download/ \
 		ftp://ftp.kaupp.cx/pub/xmame/ \
@@ -25,12 +25,8 @@ MAN6=		xmame.6
 XMAMEDOCS=	changes.mame \
 		changes.unix \
 		credits.txt \
-		imgtool.txt \
+		gamelist.mame \
 		liesmich.unix \
-		mess.txt \
-		messnew.txt \
-		messold.txt \
-		messroms.txt \
 		multiplayer-readme.txt \
 		readme.mame \
 		xmame-doc-1.html \
