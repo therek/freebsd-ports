@@ -2,11 +2,12 @@
 # Date created:		16 March 1998
 # Whom:			Jun Kuriyama <kuriyama@opt.phys.waseda.ac.jp>
 #
-# $FreeBSD: ports/textproc/dsssl-docbook-modular/Makefile,v 1.37 2001/03/12 01:29:26 kuriyama Exp $
+# $FreeBSD: ports/textproc/dsssl-docbook-modular/Makefile,v 1.38 2001/03/17 03:55:53 kuriyama Exp $
 #
 
 PORTNAME=	dsssl-docbook-modular
 PORTVERSION=	1.64
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://nwalsh.com/docbook/dsssl/
 DISTNAME=	db${PORTVERSION:S/.//g}
