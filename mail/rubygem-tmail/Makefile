@@ -2,7 +2,7 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/ruby-tmail/Makefile,v 1.1 2000/08/22 08:36:30 knu Exp $
 #
 
 PORTNAME=	tmail
@@ -14,7 +14,8 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-BUILD_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
+BUILD_DEPENDS=	ruby:${PORTSDIR}/lang/ruby \
+		${RUBY_SITELIBDIR}/amstd/info.rb:${PORTSDIR}/devel/ruby-amstd
 RUN_DEPENDS=	ruby:${PORTSDIR}/lang/ruby \
 		${RUBY_SITELIBDIR}/amstd/info.rb:${PORTSDIR}/devel/ruby-amstd \
 		${RUBY_SITELIBDIR}/racc/parser.rb:${PORTSDIR}/devel/ruby-racc-runtime \
