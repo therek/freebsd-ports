@@ -2,11 +2,11 @@
 # Date created:				17 March 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.38 2000/06/01 16:10:08 ade Exp $
+# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.39 2000/06/02 14:43:08 sobomax Exp $
 #
 
 PORTNAME=	gnomecore
-PORTVERSION= 	1.2.0
+PORTVERSION= 	1.2.1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-core
