@@ -2,11 +2,12 @@
 # Date created:				Dec 22 2000
 # Whom:	      				vanilla@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/p5-Gimp/Makefile,v 1.1 2001/03/14 22:16:40 vanilla Exp $
 #
 
 PORTNAME=	Gimp
 PORTVERSION=	1.21
+PORTREVISION=	1
 CATEGORIES=	graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Gimp
@@ -17,7 +18,7 @@ MAINTAINER=	vanilla@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gtk.pm:${PORTSDIR}/x11-toolkits/p5-Gtk \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/PDL.pm:${PORTSDIR}/math/PDL \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Parse/RecDescent.pm:${PORTSDIR}/devel/p5-Parse-RecDescent
-LIB_DEPENDS=	gimp.1:${PORTSDIR}/graphics/gimp1
+LIB_DEPENDS=	gimp.2:${PORTSDIR}/graphics/gimp1
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 USE_GTK=	yes
