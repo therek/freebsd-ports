@@ -2,11 +2,11 @@
 # Date created:				21 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gcompris/Makefile,v 1.5 2000/09/18 07:31:21 sobomax Exp $
+# $FreeBSD: ports/games/gcompris/Makefile,v 1.6 2000/10/05 07:10:36 reg Exp $
 #
 
 PORTNAME=	gcompris
-PORTVERSION= 	0.3.1
+PORTVERSION= 	0.3.4
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
