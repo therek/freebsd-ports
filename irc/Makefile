@@ -1,4 +1,4 @@
-# $FreeBSD: ports/irc/Makefile,v 1.18 2001/01/19 09:00:20 knu Exp $
+# $FreeBSD: ports/irc/Makefile,v 1.19 2001/03/02 15:01:11 trevor Exp $
 #
 
     SUBDIR += bitchx
@@ -19,7 +19,6 @@
     SUBDIR += ninja
     SUBDIR += olirc
     SUBDIR += p5-IRC
-    SUBDIR += p5-Net-IRC
     SUBDIR += party
     SUBDIR += quirc
     SUBDIR += roxirc
