@@ -1,18 +1,17 @@
 # New ports collection makefile for:   xwhois
-# Version required:    0.3.5
+# Version required:    0.3.9
 # Date created:        31 December 1998
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/net/xwhois/Makefile,v 1.8 1999/08/30 14:24:34 peter Exp $
+# $FreeBSD: ports/net/xwhois/Makefile,v 1.9 1999/08/31 06:49:24 mharo Exp $
 #
 
-DISTNAME=	xwhois-0.3.6
+DISTNAME=	xwhois-0.3.9
 CATEGORIES=	net
 MASTER_SITES=	http://c64.org/~nr/ \
 		http://www.goatnet.ml.org/ \
 		ftp://sangis.kalix.net/pub/nr/xwhois/ \
 		ftp://c64.org/pub/nr/xwhois/ \
-		ftp://ftp.infodrom.north.de/pub/unix/gtkbuffet/apps/xwhois/ \
 		http://www.physics.adelaide.edu.au/~kkennawa/
 
 MAINTAINER=	kris@FreeBSD.org
