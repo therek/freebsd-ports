@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.5 2003/06/25 01:35:17 nork Exp $
+# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.6 2003/07/04 02:26:08 nork Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -16,7 +16,7 @@ else
 			export $i
 		done
 	fi
-	/usr/bin/dialog --title "configuration options" --clear --checklist "\n\
+	/usr/bin/dialog --title "PHP configuration options" --clear --checklist "\n\
 Please select desired options:" -1 -1 16 \
 BCMATH		"bc style precision math functions" ${WITH_BCMATH:-OFF} \
 BZIP2		"bzip2 library support" ${WITH_BZIP2:-OFF} \
