@@ -2,26 +2,27 @@
 # Date created:		2000-10-01
 # Whom:			Trevor Johnson <trevor@freebsd.org>
 #
-# $FreeBSD: ports/mail/xc-mail/Makefile,v 1.3 2000/10/19 02:58:14 trevor Exp $
+# $FreeBSD: ports/mail/xc-mail/Makefile,v 1.4 2000/12/17 14:28:29 trevor Exp $
 #
 
 PORTNAME=	xc-mail
-PORTVERSION=	20001216
+PORTVERSION=	1.3
+PORTEPOCH=	1
 CATEGORIES=	mail
-MASTER_SITES=	${MASTER_SITE_LOCAL}
-# ftp://trilug.fh-trier.de/pub/XCmail/cvs-snapshot/
-MASTER_SITE_SUBDIR=	trevor/${PORTNAME}/${PORTVERSION}
-DISTNAME=	${PORTNAME}-1.3devel
+MASTER_SITES=	http://js.zet.net/XCmail/download/ \
+		ftp://trier.linux.de/pub/XCmail/ \
+		ftp://ftp.myth.co.uk/pub/mirrors/xcmail/
 
 MAINTAINER=	trevor@FreeBSD.org
 
 LIB_DEPENDS=	Xclasses.1:${PORTSDIR}/x11-toolkits/xclasses
+RUN_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 
-CONFIGURE_ARGS= \
+CONFIGURE_ARGS=	\
 		--includedir=${X11BASE}/include/ \
 		--libdir=${X11BASE}/lib/ \
 		--x-includes=${X11BASE}/include/ \
