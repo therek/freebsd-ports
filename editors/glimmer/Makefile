@@ -1,16 +1,16 @@
-# New ports collection makefile for:	codecommander
+# New ports collection makefile for:	latte
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/codecommander/Makefile,v 1.1 2000/08/01 10:14:03 sobomax Exp $
+# $FreeBSD: ports/editors/latte/Makefile,v 1.2 2000/08/04 16:11:05 ade Exp $
 #
 
-PORTNAME=	codecommander
-PORTVERSION= 	0.9.7
+PORTNAME=	latte-editor
+PORTVERSION= 	0.9.11
 CATEGORIES=	editors gnome python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=	${PORTNAME:S/c/C/g}
-DISTNAME=	${PORTNAME:S/c/C/g}-${PORTVERSION}
+MASTER_SITE_SUBDIR=	${PORTNAME:S/-editor//}
+DISTNAME=	${PORTNAME:S/-editor//}-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
@@ -20,7 +20,6 @@ RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
 		python:${PORTSDIR}/lang/python
 
 USE_X_PREFIX=	yes
-#USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
