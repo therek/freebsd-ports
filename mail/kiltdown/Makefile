@@ -2,7 +2,7 @@
 # Date Created:				16 Jun 2001
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/kiltdown/Makefile,v 1.4 2001/07/25 15:05:10 knu Exp $
+# $FreeBSD: ports/mail/kiltdown/Makefile,v 1.5 2001/08/01 11:56:19 knu Exp $
 #
 
 PORTNAME=	kiltdown
@@ -24,6 +24,14 @@ MY_CONFIGURE_ARGS+=	-qtinc /usr/X11R6/include/qt2 -qtlib /usr/X11R6/lib
 MY_CONFIGURE_ARGS+=	-dbinc /usr/local/include/db3 -dblib /usr/local/lib
 BUILD_ENV+=		PATH=${PATH}:${X11BASE}/bin
 
+post-patch:
+	@${PERL5} -pi \
+	 -e "s/SYS_CFLAGS=-pthread/SYS_CFLAGS=${PTHREAD_CFLAGS} ${CFLAGS}/" \
+		${WRKSRC}/configs/bsd-generic 
+	@${PERL5} -pi \
+	 -e "s/SYS_LDFLAGS=-pthread/SYS_LDFLAGS=${PTHREAD_LIBS} ${LDFLAGS}/" \
+		${WRKSRC}/configs/bsd-generic 
+
 do-configure:
 	(cd ${CONFIGURE_WRKSRC} && \
 		./${CONFIGURE_SCRIPT} ${MY_CONFIGURE_ARGS} )
@@ -32,4 +40,3 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/kiltdown/kiltdown ${PREFIX}/bin/
 
 .include <bsd.port.mk>
-
