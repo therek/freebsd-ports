@@ -2,7 +2,7 @@
 # Date created:         27.Apr 2000
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/net/crescendo/Makefile,v 1.3 2000/08/21 10:07:19 sobomax Exp $
+# $FreeBSD: ports/net/crescendo/Makefile,v 1.4 2000/10/05 07:17:06 reg Exp $
 
 PORTNAME=	crescendo
 PORTVERSION=	1.1.6
@@ -15,9 +15,9 @@ RUN_DEPENDS=	tf:${PORTSDIR}/net/tinyfugue
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GNOME=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--enable-compile-warnings=yes
+USE_GNOMELIBS=	yes
+CONFIGURE_ARGS+=	--enable-compile-warnings=yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 CFLAGS+=	-g
