@@ -2,7 +2,7 @@
 # Date created:         12 May 1999
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/python-doc-html/Makefile,v 1.10 2001/03/15 12:29:01 tg Exp $
+# $FreeBSD: ports/lang/python-doc-html/Makefile,v 1.11 2001/05/02 12:01:35 tg Exp $
 #
 
 PORTNAME=	python-doc-${DOCFORMAT}
@@ -18,9 +18,10 @@ DIST_SUBDIR=	python
 USE_PYTHON=	yes
 USE_BZIP2=	yes
 NO_BUILD=	yes
-PLIST=		${PKGDIR}/pkg-plist_${DOCFORMAT}
+PLIST=		${WRKDIR}/pkg-plist_${DOCFORMAT}
 
 DOCDIR=		${PREFIX}/share/doc/${PYTHON_VERSION}
+PLIST_DIFF=	${FILESDIR}/plist-${DOCFORMAT}-${PORTVERSION}.diff
 
 DOCFORMAT?=	html
 
@@ -35,6 +36,12 @@ DOCFORMAT?=	html
 do-extract:
 	@${RM} -rf ${WRKDIR}
 	@${MKDIR} ${WRKDIR}
+
+pre-install:
+	@${CP} ${PKGDIR}/pkg-plist_${DOCFORMAT} ${WRKDIR}
+	@if [ -f ${PLIST_DIFF} ]; then \
+		cd ${WRKDIR} && patch -p --quiet < ${PLIST_DIFF}; \
+	fi
 
 do-install:
 .if !defined(NOPORTDOCS)
