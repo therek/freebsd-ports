@@ -2,7 +2,7 @@
 # Date created:		19 December 1994
 # Whom:			janek
 #
-# $FreeBSD: ports/ftp/moxftp/Makefile,v 1.28 2000/11/07 23:28:04 asami Exp $
+# $FreeBSD: ports/ftp/moxftp/Makefile,v 1.29 2000/11/13 14:10:05 kevlo Exp $
 #
 
 PORTNAME=	moxftp
@@ -18,7 +18,6 @@ USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 MAN1=		${PROGRAM_NAME}.1
 PLIST_SUB=	PROGRAM_NAME=${PROGRAM_NAME} RESOURCE_NAME=${RESOURCE_NAME}
-STRIP=		# empty
 
 .if !defined(WANT_ATHENA_VERSION)
 USE_MOTIF=	yes
@@ -31,8 +30,9 @@ PROGRAM_NAME=	xftp
 RESOURCE_NAME=	Xftp
 .endif
 
-post-install:
-	@strip ${PREFIX}/bin/${PROGRAM_NAME}
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/${PROGRAM_NAME} ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/${PROGRAM_NAME}.man ${MANPREFIX}/man/man1/${PROGRAM_NAME}.1
+	${INSTALL_DATA} ${WRKSRC}/${RESOURCE_NAME}.ad ${PREFIX}/lib/X11/app-defaults/${RESOURCE_NAME}
 
 .include <bsd.port.mk>
