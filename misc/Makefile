@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.269 2000/04/02 23:56:25 mharo Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.270 2000/04/14 08:35:27 asami Exp $
 #
 
     SUBDIR += 221upgrade
@@ -80,6 +80,7 @@
     SUBDIR += mmv
     SUBDIR += most
     SUBDIR += mshell
+    SUBDIR += muuz
     SUBDIR += numchar
     SUBDIR += nwrite
     SUBDIR += orville-write
