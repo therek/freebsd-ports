@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.293 2000/06/09 03:27:53 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.294 2000/06/09 03:35:19 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -193,6 +193,7 @@
     SUBDIR += prcs
     SUBDIR += pth
     SUBDIR += pth-devel
+    SUBDIR += py-htmlkit
     SUBDIR += py-kjbuckets
     SUBDIR += py-kqueue
     SUBDIR += py-mxDateTime
