@@ -3,7 +3,7 @@
 # Date created:		21 September 1999
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/tclreadline/Makefile,v 1.1.1.1 1999/09/24 04:10:28 taoka Exp $
 #
 
 DISTNAME=	tclreadline-1.0.0
@@ -13,7 +13,6 @@ MASTER_SITES=	http://www.zellner.org/tclreadline/download/
 MAINTAINER=	darius@dons.net.au
 
 GNU_CONFIGURE=	yes
-GMAKE=		yes
 MANN=		tclreadline.n
 
 .include <bsd.port.pre.mk>
