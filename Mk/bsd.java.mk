@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.11 2002/05/09 10:09:26 znerd Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.12 2002/05/09 11:00:01 znerd Exp $
 #
 
 .if !defined(Java_Include)
@@ -276,7 +276,7 @@ JAVA_PORT=		${_JAVA_PORT_FREEBSD_1_2}
 #    (1) JDK 1.3.1 for FreeBSD
 #    (2) Sun JDK 1.3.1 for Linux
 #    (3) IBM JDK 1.3.1 for Linux
-#    (3) Blackdown JDK 1.3.1 for Linux
+#    (4) Blackdown JDK 1.3.1 for Linux
 #
 # If the FreeBSD JDK 1.3.1 is installed or if none of the 1.3.1 JDK's is
 # installed, then the FreeBSD JDK 1.3.1 is used as a dependency for the port.
