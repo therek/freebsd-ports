@@ -3,7 +3,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/editors/openoffice/Makefile,v 1.26 2001/05/18 06:09:31 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	openoffice
@@ -14,7 +14,7 @@ MASTER_SITES=	http://a2024.g.akamai.net/7/2024/2064/OpenOffice638/anoncvs.openof
 DISTNAME=	oo_638_src
 #DISTFILES=	oo_638_src${EXTRACT_SUFX} solenv638_linuxintel${EXTRACT_SUFX}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	stlport:${PORTSDIR}/devel/stlport
 
