@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.288 2000/09/04 04:19:47 sada Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.289 2000/09/04 14:38:50 sobomax Exp $
 #
 
     SUBDIR += 221upgrade
@@ -111,6 +111,7 @@
     SUBDIR += qclock
     SUBDIR += qhacc
     SUBDIR += quotes
+    SUBDIR += quranref
     SUBDIR += rfc
     SUBDIR += rpm
     SUBDIR += rpm2cpio
