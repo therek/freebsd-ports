@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.464 2004/07/01 17:06:33 ade Exp $
+# $FreeBSD: ports/MOVED,v 1.465 2004/07/02 09:52:40 netchild Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1183,3 +1183,4 @@ devel/autoconf257||2004-07-01|autotools cleanup
 devel/automake17||2004-07-01|autotools cleanup
 devel/libtool14||2004-07-01|autotools cleanup
 math/libgmp-freebsd|math/libgmp4|2004-07-02|superseded by API compatible version
+devel/umbrello|devel/kdesdk3|2004-07-02|Umbrello was integrated into kdesdk package
