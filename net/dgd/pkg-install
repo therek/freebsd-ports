@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/dgd/pkg-install,v 1.1 2003/08/29 18:30:08 glewis Exp $
 
 if [ "$2" = "PRE-INSTALL" ]; then
 	exit 0
@@ -9,7 +9,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin
 
 USER=mud
 GROUP=${USER}
-UID=91
+UID=97
 GID=${UID}
 
 if [ -z "${DATADIR}" ]; then
