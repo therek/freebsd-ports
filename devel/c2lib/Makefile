@@ -3,21 +3,19 @@
 # Date created:			Feb 16, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/c2lib/Makefile,v 1.4 2001/04/11 16:38:37 ijliao Exp $
+# $FreeBSD: ports/devel/c2lib/Makefile,v 1.5 2001/06/16 16:32:44 ijliao Exp $
 #
 
 PORTNAME=	c2lib
-PORTVERSION=	1.2.11
+PORTVERSION=	1.2.12
 CATEGORIES=	devel
 MASTER_SITES=	http://www.annexia.org/freeware/c2lib/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-
 USE_GMAKE=	yes
-
 INSTALLS_SHLIB=	yes
 
 SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
