@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.93 2002/07/22 00:35:25 kuriyama Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.94 2002/07/23 11:13:49 naddy Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -178,6 +178,14 @@ MASTER_SITE_PERL_CPAN+=	\
 	http://cpan.shellhung.org/modules/by-module/%SUBDIR%/ \
 	ftp://sunsite.org.uk/packages/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/lang/perl/CPAN/modules/by-module/%SUBDIR%/
+
+MASTER_SITE_REDHAT_LINUX+= \
+	ftp://ftp.rutgers.edu/pub/redhat/linux/%SUBDIR%/ \
+	ftp://ftp.redhat.com/redhat/linux/%SUBDIR%/ \
+	ftp://ftp.nluug.nl/site/ftp.redhat.com/redhat/linux/%SUBDIR%/ \
+	ftp://ftp.mirror.ac.uk/sites/ftp.redhat.com/pub/redhat/linux/%SUBDIR%/ \
+	ftp://ftp.riken.go.jp/pub/Linux/redhat/releases/%SUBDIR%/ \
+	ftp://ftp.kddlabs.co.jp/pub/Linux/packages/RedHat/redhat/linux/%SUBDIR%/
 
 #
 # RingServers in Japan
