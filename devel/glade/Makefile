@@ -2,7 +2,7 @@
 # Date created:		29 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/devel/glade/Makefile,v 1.19 2000/02/23 00:05:08 ade Exp $
+# $FreeBSD: ports/devel/glade/Makefile,v 1.20 2000/04/11 21:28:06 mharo Exp $
 #
 
 PORTNAME=	glade
@@ -12,7 +12,7 @@ MASTER_SITES=   http://glade.pn.org/
 
 MAINTAINER=     ade@FreeBSD.org
 
-.if defined(USE_GNOME)
+.if defined(WITH_GNOME)
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
 PLIST_GNOME=	${PKGDIR}/PLIST.gnome
 .else
@@ -32,13 +32,13 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/libs"
 
-.if !defined(USE_GNOME)
+.if !defined(WITH_GNOME)
 pre-extract:
-	@${ECHO} "You can add hooks for GNOME by defining USE_GNOME"
+	@${ECHO} "You can add hooks for GNOME by defining WITH_GNOME"
 .endif
 
 post-patch:
-.if !defined(USE_GNOME)
+.if !defined(WITH_GNOME)
 	@cd ${WRKSRC} && ${PATCH} ${PATCH_ARGS} < ${FILESDIR}/patch-nognome
 .endif
 

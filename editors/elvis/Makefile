@@ -2,7 +2,7 @@
 # Date created:		1999-09-01
 # Whom:			Christian Weisgerber <naddy@unix-ag.uni-kl.de>
 #
-# $FreeBSD: ports/editors/elvis/Makefile,v 1.2 1999/10/27 07:15:46 mharo Exp $
+# $FreeBSD: ports/editors/elvis/Makefile,v 1.3 2000/04/14 00:25:25 mharo Exp $
 #
 
 PORTNAME=	elvis
@@ -20,13 +20,13 @@ CONFIGURE_ARGS=	--bindir=${PREFIX}/bin --datadir=${PREFIX}/share/elvis
 MAN1=		elvis.1 elvtags.1 ref.1
 
 # Support building on systems with or without X11 installed.
-.if defined(NO_X11)
+.if defined(WITHOUT_X11)
 CONFIGURE_ARGS+=	--with-x=no
 .else
 USE_XLIB=	yes
 
 pre-fetch:
-	@${ECHO_MSG} "To build this port without X11, define \"NO_X11\"."
+	@${ECHO_MSG} "To build this port without X11, define \"WITHOUT_X11\"."
 .endif
 
 pre-configure:

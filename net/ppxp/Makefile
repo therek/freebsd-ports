@@ -4,7 +4,7 @@
 #			KUNISHIMA Takeo <kunishi@c.oka-pu.ac.jp>
 #			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/net/ppxp/Makefile,v 1.11 2000/04/09 18:13:13 cpiazza Exp $
+# $FreeBSD: ports/net/ppxp/Makefile,v 1.12 2000/04/14 17:10:46 knu Exp $
 #
 
 PORTNAME=	ppxp
@@ -18,7 +18,7 @@ MAINTAINER=	nosuzuki@e-mail.ne.jp
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		xforms.0:${PORTSDIR}/x11-toolkits/xforms
-.if defined(USE_TCLJP)
+.if defined(WITH_TCLJP)
 BUILD_DEPENDS=	wish8.0jp:${PORTSDIR}/japanese/tk80 \
 		tclsh8.0jp:${PORTSDIR}/japanese/tcl80
 LIB_DEPENDS+=	tcl80jp.1:${PORTSDIR}/japanese/tcl80
@@ -36,7 +36,7 @@ WRKSRC=		${WRKDIR}/ppxp
 USE_GMAKE=	yes
 MAKEFILE=	makefile
 GNU_CONFIGURE=	yes
-.if defined(USE_TCLJP)
+.if defined(WITH_TCLJP)
 CONFIGURE_ARGS+= --with-tclsh=${PREFIX}/bin/tclsh8.0jp \
 		--with-wish=${PREFIX}/bin/wish8.0jp \
 		--with-tcl-includes=${PREFIX}/include/tcl8.0jp \

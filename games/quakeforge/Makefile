@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/games/quakeforge/Makefile,v 1.3 2000/04/14 12:26:26 asami Exp $
+# $FreeBSD: ports/games/quakeforge/Makefile,v 1.4 2000/04/16 23:33:39 asami Exp $
 #
 
 PORTNAME=	QuakeForge
@@ -14,7 +14,7 @@ DISTNAME=	quakeforge
 
 MAINTAINER=	darius@dons.net.au
 
-.if defined(USE_GLX)
+.if defined(WITH_GLX)
 LIB_DEPENDS=	GL.1:${PORTSDIR}/graphics/glx
 .else
 CONFIGURE_ARGS+= --without-opengl
@@ -38,8 +38,8 @@ USE_XLIB=	yes
 PLIST=		${WRKDIR}/PLIST
 
 pre-fetch:
-.if !defined(USE_GLX)
-	@${ECHO_MSG} "Define USE_GLX to use GLX (otherwise it is explicitly disabled!)"
+.if !defined(WITH_GLX)
+	@${ECHO_MSG} "Define WITH_GLX to use GLX (otherwise it is explicitly disabled!)"
 .endif
 
 .if defined(BATCH)
@@ -125,14 +125,14 @@ do-extract:
 
 pre-configure:
 	@${CP} ${PKGDIR}/PLIST ${PLIST}
-.if defined(USE_GLX)
+.if defined(WITH_GLX)
 	${CAT} ${PKGDIR}/PLIST.glx >>${PLIST}
 .endif
 	cd ${WRKSRC}; \
 	autoheader;
 
 BINARIES=	quake-x11 qw-client-x11 qw-server
-.if defined(USE_GLX)
+.if defined(WITH_GLX)
 BINARIES+=	quake-gl qw-client-gl
 .endif
 

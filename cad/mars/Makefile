@@ -3,7 +3,7 @@
 # Date created:			  Mon Nov 18, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/cad/mars/Makefile,v 1.15 2000/03/22 00:27:08 obrien Exp $
+# $FreeBSD: ports/cad/mars/Makefile,v 1.16 2000/04/08 23:20:04 mharo Exp $
 #
 
 PORTNAME=	mars
@@ -21,7 +21,7 @@ NO_WRKSUBDIR=	yes
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 .if defined(HAVE_MOTIF) && !defined(PACKAGE_BUILDING)
 MAKEFILE=       Makefile.XMotif
-.elif defined(WITH_X) && (${WITH_X} == NO || ${WITH_X} == no)
+.elif defined(WITHOUT_X11)
 MAKEFILE=	Makefile.NoX
 .else
 USE_XLIB=	yes

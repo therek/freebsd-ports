@@ -2,7 +2,7 @@
 # Date created:				28 September 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/audio/wmtune/Makefile,v 1.6 2000/03/20 20:48:54 mharo Exp $
+# $FreeBSD: ports/audio/wmtune/Makefile,v 1.7 2000/04/08 21:24:46 mharo Exp $
 #
 
 PORTNAME=	wmtune
@@ -26,12 +26,12 @@ PATCH_ARGS	=-p0 -d ${WRKDIR}
 
 .include <bsd.port.pre.mk>
 
-.if !defined(USE_RADIOTRACK)
+.if !defined(WITH_RADIOTRACK)
 WMTUNE_DIFF=	wmtune.diff.gz
 pre-fetch:
 	@${ECHO}
 	@${ECHO} "To enable support for RadioTrack radio cards,"
-	@${ECHO} "define USE_RADIOTRACK (make USE_RADIOTRACK=yes)."
+	@${ECHO} "define WITH_RADIOTRACK (make WITH_RADIOTRACK=yes)."
 	@${ECHO}
 	@sleep 3
 .else

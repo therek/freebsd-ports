@@ -2,7 +2,7 @@
 # Date created:        12 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/mtr/Makefile,v 1.21 2000/03/07 23:49:01 billf Exp $
+# $FreeBSD: ports/net/mtr/Makefile,v 1.22 2000/04/09 18:12:22 cpiazza Exp $
 #
 
 PORTNAME=	mtr
@@ -31,10 +31,10 @@ CONFIGURE_ARGS+=--disable-ipv6
 #.endif
 
 pre-patch:
-.if !defined(USE_GTK)
+.if !defined(WITH_GTK)
 	@${ECHO} ""
 	@${ECHO} "If you want to compile with GTK support,"
-	@${ECHO} "hit Ctrl-C right now and use \"make USE_GTK=yes\" "
+	@${ECHO} "hit Ctrl-C right now and use \"make WITH_GTK=yes\" "
 	@${ECHO} ""
 CONFIGURE_ARGS+=--with-gtk-prefix=/nopath
 .else

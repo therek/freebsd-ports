@@ -2,7 +2,7 @@
 # Date created:        19 April 1998
 # Whom:                marcus
 #
-# $FreeBSD: ports/misc/gone/Makefile,v 1.5 1999/08/25 07:21:46 obrien Exp $
+# $FreeBSD: ports/misc/gone/Makefile,v 1.6 2000/04/14 08:45:52 asami Exp $
 #
 
 PORTNAME=       gone
@@ -20,10 +20,10 @@ GNU_CONFIGURE=  yes
 # override this with WITH_SETUID=yes in your environment.
 # Be aware that setting gone to suid MAY be a security hole.
 #
-WITH_SETUID?=	no
-.if ${WITH_SETUID} == yes
-CONFIGURE_ENV=        with_setuid=yes
+.if defined(WITH_SETUID)
+CONFIGURE_ENV=	with_setuid=yes
 .else
-CONFIGURE_ENV=		with_setuid=no
+CONFIGURE_ENV=	with_setuid=no
 .endif
+
 .include <bsd.port.mk>

@@ -3,7 +3,7 @@
 # Date created:         13 September 1999
 # Whom:                 Marc E E van Woerkom  <van.woerkom@netcologne.de>
 #
-# $FreeBSD: ports/graphics/glx/Makefile,v 1.5 2000/04/14 17:43:52 knu Exp $
+# $FreeBSD: ports/graphics/glx/Makefile,v 1.6 2000/04/15 15:13:42 knu Exp $
 #
 #
 # Notes:
@@ -91,16 +91,16 @@ GNU_CONFIGURE=	yes
 # we support nvidia RIVA 128, TNT.. and Matrox G200/400 cards
 .if defined(CHIPSET_3D)
 .if ${CHIPSET_3D} == RIVA
-WITH_CHIPSET=	--with-chipset=tnt
+CONFIGURE_ARGS=	--with-chipset=tnt
 .endif
 .if ${CHIPSET_3D} == MGA
-WITH_CHIPSET=	--with-chipset=mga
+CONFIGURE_ARGS=	--with-chipset=mga
 .endif
 .endif
 
-CONFIGURE_ARGS= --with-mesa=${MESADIR} \
+CONFIGURE_ARGS+= --with-mesa=${MESADIR} \
 		--with-mesa-version=mesa30 \
-		${WITH_CHIPSET}  # --with-mmx-asm --with-3dnow-asm
+		# --with-mmx-asm --with-3dnow-asm
 
 USE_GMAKE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		4 January 1999
 # Whom:			Alex Perel <veers@disturbed.net>
 #
-# $FreeBSD: ports/mail/zmailer/Makefile,v 1.2 2000/02/22 06:30:11 kris Exp $
+# $FreeBSD: ports/mail/zmailer/Makefile,v 1.3 2000/04/13 20:01:08 cpiazza Exp $
 #
 
 PORTNAME=	zmailer
@@ -14,7 +14,7 @@ MAINTAINER=	veers@disturbed.net
 
 GNU_CONFIGURE=	yes
 
-.if defined(USE_SSL)
+.if defined(WITH_SSL)
 USE_OPENSSL=	RSA
 CONFIGURE_ARGS= --with-openssl
 .else

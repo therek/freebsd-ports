@@ -3,7 +3,7 @@
 # Date created:		30 April 1999
 # Whom:			FUJISHIMA Satsuki <k5@respo.or.jp>
 #
-# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.11 2000/02/28 08:33:12 asami Exp $
+# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.12 2000/04/08 23:17:47 mharo Exp $
 #
 
 PORTNAME=	linux_rar
@@ -41,7 +41,7 @@ post-fetch:
 
 pre-configure:
 	@${ECHO_MSG} "To install unrar bundled with this package,"
-	@${ECHO_MSG} "set variable WITH_UNRAR=YES."
+	@${ECHO_MSG} "set variable WITH_UNRAR=yes."
 
 do-install:
 	@${MKDIR} ${PREFIX}/share/doc/rar ${PREFIX}/share/rar

@@ -2,7 +2,7 @@
 # Date created:		15 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/mc/Makefile,v 1.43 2000/04/14 08:46:16 asami Exp $
+# $FreeBSD: ports/misc/mc/Makefile,v 1.44 2000/04/16 11:56:27 knu Exp $
 #
 
 PORTNAME=	mc
@@ -15,7 +15,7 @@ MAINTAINER=	reg@FreeBSD.org
 
 LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 		intl.1:${PORTSDIR}/devel/gettext
-.if defined(USE_NCURSES_PORT)
+.if defined(WITH_NCURSES_PORT)
 LIB_DEPENDS+=	ncurses.4:${PORTSDIR}/devel/ncurses
 .elif defined(WITH_SLANG)
 LIB_DEPENDS+=	slang.1:${PORTSDIR}/devel/libslang

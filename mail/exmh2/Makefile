@@ -2,7 +2,7 @@
 # Date created:			1 Jan 97
 # Whom:				Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/mail/exmh2/Makefile,v 1.39 2000/04/13 09:01:47 knu Exp $
+# $FreeBSD: ports/mail/exmh2/Makefile,v 1.40 2000/04/14 17:10:40 knu Exp $
 #
 
 # "+=" and "?=" lines are for sharing this Makefile with japanese/exmh2.
@@ -29,7 +29,7 @@ TCLSH=		tclsh8.2
 .if defined(JAPANESE_EXMH)
 RUN_DEPENDS+=	repl:${PORTSDIR}/japanese/mh
 .else
-.if defined(USE_MH)
+.if defined(WITH_MH)
 RUN_DEPENDS+=	repl:${PORTSDIR}/mail/mh
 .else
 RUN_DEPENDS+=	repl:${PORTSDIR}/mail/nmh

@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.63 2000/04/04 09:53:11 tg Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.64 2000/04/12 06:20:07 obrien Exp $
 #
 
 PORTNAME=	python
@@ -36,9 +36,8 @@ SETUP_FILE=	Setup
 #
 # This option is enabled by default.
 #
-WITH_THREADS?=	yes
 LIBC_R!=	/sbin/ldconfig -r | grep c_r || true
-.if ${LIBC_R} != "" && defined(WITH_THREADS) && ${WITH_THREADS} == yes
+.if (${LIBC_R} != "") && !defined(WITHOUT_THREADS)
 CONFIGURE_ARGS+=	--with-thread
 CFLAGS+=		-D_THREAD_SAFE
 CONFIGURE_ENV+=		LDFLAGS="-pthread ${LDFLAGS}"
@@ -57,8 +56,7 @@ PLIST_GMP=	${PKGDIR}/PLIST.gmp
 # to a web tree checker, to a collection of simple scripts that are useful
 # while extending or managing Python.
 #
-WITH_TOOLS?=	yes
-.if defined(WITH_TOOLS) && ${WITH_TOOLS} == yes
+.if !defined(WITHOUT_TOOLS)
 PLIST_TOOLS=	${PKGDIR}/PLIST.Tools
 .endif
 
@@ -99,7 +97,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/Misc/python-mode.el ${PREFIX}/share/emacs/site-lisp
 	${INSTALL_DATA} ${WRKSRC}/Misc/COPYRIGHT ${PREFIX}/share/doc/python
 	@${MKDIR} ${PREFIX}/lib/python1.5/site-packages
-.if defined(WITH_TOOLS) && ${WITH_TOOLS} == yes
+.if !defined(WITHOUT_TOOLS)
 	@cd ${WRKSRC}; tar cf - Tools | \
 		(cd ${PREFIX}/lib/python1.5; tar xf -)
 .endif

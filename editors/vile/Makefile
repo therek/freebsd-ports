@@ -2,7 +2,7 @@
 # Date created:         Wed Nov 26, 1996
 # Whom:                 pgf
 #
-# $FreeBSD: ports/editors/vile/Makefile,v 1.21 2000/02/02 21:51:19 gj Exp $
+# $FreeBSD: ports/editors/vile/Makefile,v 1.22 2000/04/14 00:25:49 mharo Exp $
 #
 
 PORTNAME=	vile
@@ -18,15 +18,15 @@ MAKEFILE=	makefile
 GNU_CONFIGURE=	yes
 MAN1=		vile.1
 
-.if defined(USE_PERL)
+.if defined(WITH_PERL)
 CONFIGURE_ARGS=	--with-perl
 PLIST=		${PKGDIR}/PLIST.perl
 USE_PERL5=	yes
 .endif
 
 pre-configure:
-.if ! defined(USE_PERL)
-	@${ECHO_MSG} "Define USE_PERL if you want to make a vile which includes"
+.if ! defined(WITH_PERL)
+	@${ECHO_MSG} "Define WITH_PERL if you want to make a vile which includes"
 	@${ECHO_MSG} "PERL functionality"
 .endif
 
@@ -38,7 +38,7 @@ post-install:
 	@if ! [ -d ${PREFIX}/share/vile/macros ]; then ${MKDIR} ${PREFIX}/share/vile/macros; fi
 	${INSTALL_DATA} ${WRKSRC}/macros/*.rc ${PREFIX}/share/vile/macros
 	${INSTALL_SCRIPT} ${WRKSRC}/macros/vile-pager ${PREFIX}/share/vile/macros
-.if defined(USE_PERL)
+.if defined(WITH_PERL)
 	${INSTALL_DATA} ${WRKSRC}/*.doc ${PREFIX}/share/doc/vile
 .endif
 	@${ECHO_MSG} "Look in ${PREFIX}/share/doc/vile for documentation."

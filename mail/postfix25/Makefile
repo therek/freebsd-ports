@@ -2,7 +2,7 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.17 2000/04/03 01:58:08 peter Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.18 2000/04/13 20:00:32 cpiazza Exp $
 #
 
 PORTNAME=	postfix
@@ -21,7 +21,7 @@ MAINTAINER=	torstenb@FreeBSD.org
 
 # WARNING: this is based on a patch submitted by a user and has not been
 # tested. Use it at your own risk !
-.if defined(USE_MYSQL) && ${USE_MYSQL} == YES
+.if defined(WITH_MYSQL)
 BUILD_DEPENDS+=		${LOCALBASE}/lib/mysql/libmysqlclient.a:${PORTSDIR}/databases/mysql322-client
 POSTFIX_CCARGS+=	-DHAS_MYSQL -I${LOCALBASE}/include/mysql
 POSTFIX_AUXLIBS+=	${LOCALBASE}/lib/mysql/libmysqlclient.a -lm
@@ -29,7 +29,7 @@ POSTFIX_AUXLIBS+=	${LOCALBASE}/lib/mysql/libmysqlclient.a -lm
 
 # WARNING: this is based on a patch submitted by a user and has not been
 # tested. Use it at your own risk !
-.if defined(USE_LDAP) && ${USE_LDAP} == YES
+.if defined(WITH_LDAP)
 BUILD_DEPENDS+=		${LOCALBASE}/lib/libldap.a:${PORTSDIR}/net/openldap
 POSTFIX_CCARGS+=	-DHAS_LDAP -I${LOCALBASE}/include
 POSTFIX_AUXLIBS+=	${LOCALBASE}/lib/libldap.a ${PREFIX}/lib/liblber.a

@@ -2,7 +2,7 @@
 # Date created:		Jun 20 1997
 # Whom:			ada@bsd.org
 #
-# $FreeBSD: ports/games/freeciv/Makefile,v 1.31 2000/02/29 15:25:58 sheldonh Exp $
+# $FreeBSD: ports/games/freeciv/Makefile,v 1.32 2000/04/14 06:42:54 mharo Exp $
 #
 
 PORTNAME=	freeciv
@@ -10,20 +10,20 @@ PORTVERSION=	1.10.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.freeciv.org/pub/freeciv/stable_version/ \
 		ftp://ftp.pvv.ntnu.no/pub/freeciv/stable_version/
-.if defined(USE_GTK) && (${USE_GTK} == YES || ${USE_GTK} == yes)
+.if defined(WITH_GTK)
 PKGNAMESUFFIX=	-gtk
 .endif
 
 MAINTAINER=	sheldonh@freebsd.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-.if defined(USE_GTK)
+.if defined(WITH_GTK)
 LIB_DEPENDS+=	Imlib.5:${PORTSDIR}/graphics/imlib
 .endif
 
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
-.if defined(USE_GTK) && (${USE_GTK} == YES || ${USE_GTK} == yes)
+.if defined(WITH_GTK)
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 .else

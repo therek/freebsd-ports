@@ -2,7 +2,7 @@
 # Date created:		18 Mar 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3/Makefile,v 1.35 1999/08/28 02:42:25 mharo Exp $
+# $FreeBSD: ports/lang/modula-3/Makefile,v 1.36 2000/04/12 06:19:26 obrien Exp $
 #
 
 PORTNAME=	modula-3
@@ -33,11 +33,11 @@ major=		6
 temp_prefix=	${WRKSRC}/installed
 
 # Support building on systems with or without X11 installed.
-.ifdef NO_X11
+.ifdef WITHOUT_X11
 PLIST=		${WRKDIR}/PLIST.noX11
 .else
 pre-fetch:
-	@${ECHO_MSG} "To build this port without X11, define \"NO_X11\"."
+	@${ECHO_MSG} "To build this port without X11, define \"WITHOUT_X11\"."
 
 PLIST=		${WRKDIR}/PLIST
 MAN1+=		formsedit.1 replayheap.1 showheap.1 shownew.1 showthread.1

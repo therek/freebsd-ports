@@ -2,7 +2,7 @@
 # Date created:		26 August 1997
 # Whom:			Michael Elbel (me)
 #
-# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.33 2000/01/07 22:18:59 gj Exp $
+# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.34 2000/04/13 06:50:40 knu Exp $
 #
 
 PORTNAME=	xemacs
@@ -43,7 +43,7 @@ PLIST_SUB=	XEMACS_VER=20.4 XEMACS_ARCH=${XEMACS_ARCH}
 
 # Have
 pre-configure:
-	@${ECHO_MSG} "To compile in the MULE features, set the environment variable USE_MULE"
+	@${ECHO_MSG} "To compile in the MULE features, set the environment variable WITH_MULE"
 .if defined(HAVE_MOTIF)
 	@${ECHO_MSG} ""
 	@${ECHO_MSG} "If your MOTIF library is actually lesstif, you might occasionally"
@@ -52,7 +52,7 @@ pre-configure:
 	@${ECHO_MSG} "which will force the use of athena widgets for dialogs."
 .endif
 
-.if defined(USE_MULE)
+.if defined(WITH_MULE)
 WITH_MULE=	--with-mule
 MULEDISTFILE=	${DISTNAME}-mule.tar.gz
 PLIST=		${PKGDIR}/PLIST.mule

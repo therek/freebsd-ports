@@ -2,7 +2,7 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.47 2000/04/12 06:28:33 obrien Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.48 2000/04/14 18:18:37 jim Exp $
 #
 
 PORTNAME=	xchat
@@ -13,12 +13,12 @@ MASTER_SITES=	http://xchat.org/files/source/1.4/ \
 
 MAINTAINER=	jim@FreeBSD.org
 
-.if defined(USE_SOCKS)
+.if defined(WITH_SOCKS)
 BUILD_DEPENDS+=	${LOCALBASE}/lib/libsocks5.a:${PORTSDIR}/net/socks5
 .endif
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		Imlib.5:${PORTSDIR}/graphics/imlib
-.if defined(USE_GNOME)
+.if defined(WITH_GNOME)
 LIB_DEPENDS+=	gnome.3:${PORTSDIR}/x11/gnomelibs
 .endif
 
@@ -32,13 +32,13 @@ USE_PERL5=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-nls --disable-python
 
-.if defined(USE_SOCKS)
+.if defined(WITH_SOCKS)
 CONFIGURE_ARGS+= --enable-socks
 .endif
 
-.if defined(USE_GNOME)
+.if defined(WITH_GNOME)
 CONFIGURE_ARGS+= --enable-gnome
-.if defined(USE_PANEL)
+.if defined(WITH_PANEL)
 CONFIGURE_ARGS+= --enable-panel
 .else
 CONFIGURE_ARGS+= --disable-panel
@@ -50,7 +50,7 @@ CONFIGURE_ARGS+= --disable-gnome
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"
 
-.if defined(USE_GNOME)
+.if defined(WITH_GNOME)
 PLIST=		${PKGDIR}/PLIST.gnome
 .endif
 

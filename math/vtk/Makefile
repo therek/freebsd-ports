@@ -2,7 +2,7 @@
 # Date created:         24 Nov 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/vtk/Makefile,v 1.4 2000/03/30 08:25:04 tg Exp $
+# $FreeBSD: ports/math/vtk/Makefile,v 1.5 2000/04/14 07:20:47 asami Exp $
 #
 
 PORTNAME=	vtk
@@ -22,24 +22,21 @@ WRKSRC=		$(WRKDIR)/vtk31
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --with-mesa --with-shared --with-tcl --with-bsdmake
 CONFIGURE_ARGS+=	--with-contrib --with-tkwidget
-CONFIGURE_ENV=	CFLAGS="${CFLAGS}" CXXFLAGS="${CFLAGS}"
 
 # Support for Python is compiled in by default.
-WITH_PYTHON?=	yes
-.if defined(WITH_PYTHON) && $(WITH_PYTHON) == yes
+.if !defined(WITHOUT_PYTHON)
 CONFIGURE_ARGS+=	--with-python
 BUILD_DEPENDS+=	python:${PORTSDIR}/lang/python
 RUN_DEPENDS+=	python:${PORTSDIR}/lang/python
 .endif
 
-WITH_PATENTED?=	no
-.if defined(WITH_PATENTED) && $(WITH_PATENTED) == yes
+.if defined(WITH_PATENTED)
 CONFIGURE_ARGS+=	--with-patented
 PLIST=		${PKGDIR}/PLIST.with_patented
 .endif
 
 post-install:
-.if defined(WITH_PYTHON) && $(WITH_PYTHON) == yes
+.if !defined(WITHOUT_PYTHON)
 	${PREFIX}/bin/python  -c "import compileall; compileall.compile_dir( '${PREFIX}/lib/vtk/python' );"
 	${PREFIX}/bin/python -Oc "import compileall; compileall.compile_dir( '${PREFIX}/lib/vtk/python' );"
 .endif

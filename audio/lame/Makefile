@@ -2,7 +2,7 @@
 # Date created:        11 January 1998
 # Whom:                yoshiaki Uchikawa
 #
-# $FreeBSD: ports/audio/lame/Makefile,v 1.8 1999/11/21 21:13:35 cpiazza Exp $
+# $FreeBSD: ports/audio/lame/Makefile,v 1.9 2000/04/08 21:23:51 mharo Exp $
 #
 
 PORTNAME=	lame
@@ -16,7 +16,7 @@ PATCHFILES=	lame3.51.patch.gz
 
 MAINTAINER=	yoshiaki@kt.rim.or.jp
 
-.if !defined(NO_X11)
+.if !defined(WITHOUT_X11)
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 .endif
 
@@ -24,7 +24,7 @@ PATCH_DIST_STRIP = -p1
 
 WRKSRC= 	${WRKDIR}/dist10/lsf/encoder/
 USE_GMAKE=	YES
-MAKE_ENV=	NO_X11=${NO_X11}
+MAKE_ENV=	WITHOUT_X11=${WITHOUT_X11}
 ALL_TARGET=	lame
 RESTRICTED=	Condition is not clear
 

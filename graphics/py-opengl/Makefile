@@ -2,7 +2,7 @@
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.3 2000/03/20 23:25:12 jseger Exp $
+# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.4 2000/04/14 10:47:12 asami Exp $
 #
 
 PORTNAME=	opengl
@@ -30,7 +30,6 @@ PLIST_SUB+=	OSMAJOR=${OSMAJOR}
 #
 # Support for Numeric is compiled in by default.
 #
-WITH_NUMERIC?=	yes
 NUMPYDIR=	${LOCALBASE}/lib/python1.5/site-packages/numerical
 
 #
@@ -41,8 +40,7 @@ SETUP_FILES=	${FILESDIR}/Setup.base
 #
 # Support for Togl is compiled in by default.
 #
-WITH_TOGL?=	yes
-.if defined(WITH_TOGL) && $(WITH_TOGL) == yes
+.if !defined(WITHOUT_TOGL)
 SETUP_FILES+=	${FILESDIR}/Setup.add.togl
 LIB_DEPENDS+=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 .endif

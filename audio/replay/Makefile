@@ -2,7 +2,7 @@
 # Date created:			Oct 27 1998
 # Whom:				Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/replay/Makefile,v 1.16 2000/02/18 02:27:58 nakai Exp $
+# $FreeBSD: ports/audio/replay/Makefile,v 1.17 2000/04/08 21:24:15 mharo Exp $
 #
 
 PORTNAME=	replay
@@ -26,15 +26,15 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
-.if defined(USE_I18N)
+.if defined(WITH_I18N)
 CONFIGURE_ARGS+=       --enable-i18n=JAPANESE
 .endif
 
 pre-configure:
-.if !defined(USE_I18N)
+.if !defined(WITH_I18N)
 	@${ECHO_MSG}
 	@${ECHO_MSG} "If you would like build replay with I18N support"
-	@${ECHO_MSG} "you must set the variable USE_I18N"
+	@${ECHO_MSG} "you must set the variable WITH_I18N"
 	@${ECHO_MSG} "(Now JAPANESE only)"
 	@${ECHO_MSG}
 .else

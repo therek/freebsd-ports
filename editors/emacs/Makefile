@@ -2,7 +2,7 @@
 # Date created:		29 October 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/editors/emacs/Makefile,v 1.43 1999/08/31 06:42:56 mharo Exp $
+# $FreeBSD: ports/editors/emacs/Makefile,v 1.44 2000/04/14 00:25:25 mharo Exp $
 #
 
 PORTNAME=	emacs
@@ -22,7 +22,7 @@ NO_LATEST_LINK=	yes
 WRKSRC=		${WRKDIR}/emacs-19.34
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-.if !defined(NO_X11)
+.if !defined(WITHOUT_X11)
 CONFIGURE_ARGS=	--with-x-toolkit --sharedstatedir=/var/run
 USE_XLIB=	yes
 .else
