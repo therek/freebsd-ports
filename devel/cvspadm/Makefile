@@ -2,11 +2,11 @@
 # Date Created:				17 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/devel/cvspadm/Makefile,v 1.2 2001/07/22 04:16:54 dwcjr Exp $
+# $FreeBSD: ports/devel/cvspadm/Makefile,v 1.3 2001/08/22 23:05:24 petef Exp $
 #
 
 PORTNAME=	cvspadm
-PORTVERSION=	0.1.1
+PORTVERSION=	0.1.2
 CATEGORIES=	devel
 MASTER_SITES=	http://hackfoo.net/projs/
 
