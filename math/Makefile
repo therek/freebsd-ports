@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.83 2000/09/18 00:43:26 steve Exp $
+# $FreeBSD: ports/math/Makefile,v 1.84 2000/09/20 18:45:51 will Exp $
 #
 
     SUBDIR += PDL
@@ -42,6 +42,7 @@
     SUBDIR += octave
     SUBDIR += oleo
     SUBDIR += p5-Math-Expr
+    SUBDIR += p5-Math-Logic
     SUBDIR += p5-MatrixReal
     SUBDIR += p5-Set-IntSpan
     SUBDIR += pari
