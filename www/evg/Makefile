@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/www/evg/Makefile,v 1.8 2001/01/07 17:49:50 will Exp $
+# $FreeBSD: ports/www/evg/Makefile,v 1.9 2001/06/09 19:32:14 sf Exp $
 #
 
 PORTNAME=	evg
@@ -35,7 +35,7 @@ do-install:
 	@ ${INSTALL_SCRIPT} ${WRKSRC}/evg ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
 	@ ${MKDIR} ${PREFIX}/share/doc/evg
-	@ ${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/evg
+	@ ${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				14 February 1999
 # Whom:                			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/net/ggsd/Makefile,v 1.11 2000/10/05 06:42:15 reg Exp $
+# $FreeBSD: ports/net/ggsd/Makefile,v 1.12 2000/11/13 12:44:25 demon Exp $
 #
 
 PORTNAME=	ggsd
@@ -27,9 +27,9 @@ USE_GTK=	yes
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ggsd ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/ggsd
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/ggsd
-	${INSTALL_DATA} ${WRKSRC}/example.scr ${PREFIX}/share/doc/ggsd
+	@${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/example.scr ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

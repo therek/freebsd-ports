@@ -2,7 +2,7 @@
 # Date created:         9 February 1999
 # Whom:                 Dima Sivachenko
 #
-# $FreeBSD: ports/misc/quotes/Makefile,v 1.9 2000/11/13 12:44:16 demon Exp $
+# $FreeBSD: ports/misc/quotes/Makefile,v 1.10 2001/01/08 10:00:13 demon Exp $
 #
 
 PORTNAME=	quotes
@@ -28,9 +28,9 @@ do-install:
 	@ ${INSTALL_SCRIPT} ${WRKSRC}/quotesmailer ${PREFIX}/bin
 	@ ${INSTALL_DATA} ${WRKSRC}/sample.quotesrc ${PREFIX}/etc/quotesrc.sample
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/quotes
-	@ ${INSTALL_DATA} ${WRKSRC}/quotes.txt ${PREFIX}/share/doc/quotes
-	@ ${INSTALL_DATA} ${WRKSRC}/QuExample.pm ${PREFIX}/share/doc/quotes
+	@ ${MKDIR} ${DOCSDIR}
+	@ ${INSTALL_DATA} ${WRKSRC}/quotes.txt ${DOCSDIR}
+	@ ${INSTALL_DATA} ${WRKSRC}/QuExample.pm ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

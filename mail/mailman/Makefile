@@ -2,7 +2,7 @@
 # Date created:		10 July 2000
 # Whom:			n_hibma@qubesoft.com
 #
-# $FreeBSD: ports/mail/mailman/Makefile,v 1.14 2001/05/04 11:59:16 demon Exp $
+# $FreeBSD: ports/mail/mailman/Makefile,v 1.15 2001/05/11 11:59:27 demon Exp $
 #
 
 PORTNAME=	mailman
@@ -41,13 +41,13 @@ pre-configure:
 post-install:
 	@${CHOWN} -R :${USERNAME} ${MAILMANDIR}
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/mailman
+	@${MKDIR} ${DOCSDIR}
 .for f in BUGS FAQ INSTALL NEWS README* UPGRADING
-	@${INSTALL_DATA} ${WRKSRC}/$f ${PREFIX}/share/doc/mailman
+	@${INSTALL_DATA} ${WRKSRC}/$f ${DOCSDIR}
 .endfor
 .endif
 	@echo All related binaries have been installed in ${MAILMANDIR}/bin
-	@echo See ${PREFIX}/share/doc/mailman/INSTALL for installation instructions \(prefix == ${MAILMANDIR}\).
+	@echo See ${DOCSDIR}/INSTALL for installation instructions \(prefix == ${MAILMANDIR}\).
 	@echo 'Sample entry for httpd.conf for Apache:'
 	@echo '  ScriptAlias /mailman/ ${MAILMANDIR}/cgi-bin/'
 	@echo '  <Directory ${MAILMANDIR}/cgi-bin/>'
