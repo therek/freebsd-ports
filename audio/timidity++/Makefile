@@ -3,7 +3,7 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/timidity++/Makefile,v 1.16 1999/09/10 17:08:53 sada Exp $
 #
 
 DISTNAME=	TiMidity++-1.3.10
@@ -11,7 +11,7 @@ PKGNAME=	timidity++-1.3.10
 CATEGORIES=	audio
 MASTER_SITES=	http://www.goice.co.jp/member/mo/timidity/dist/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	yatt@msc.biglobe.ne.jp
 
 # If you don't have X11, type "make -DNO_X11" or uncomment this.
 #NO_X11=	yes
