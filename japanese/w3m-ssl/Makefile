@@ -2,7 +2,7 @@
 # Date Created:                12 Oct 1999
 # Whom:                        MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/w3m-ssl/Makefile,v 1.5 2000/04/14 17:24:54 knu Exp $
+# $FreeBSD: ports/japanese/w3m-ssl/Makefile,v 1.6 2000/09/22 01:58:54 kris Exp $
 #
 
 PKGNAMESUFFIX=	-ssl
@@ -10,7 +10,7 @@ CATEGORIES=	japanese
 
 MASTERDIR=	${.CURDIR}/../../www/w3m
 PKGDIR=		${.CURDIR}/pkg
-PLIST=		${MASTERDIR}/pkg/PLIST.ja
+PLIST=		${MASTERDIR}/pkg-plist.ja
 
 JAPANESE=	Yes
 USE_OPENSSL=	YES

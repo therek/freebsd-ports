@@ -2,14 +2,14 @@
 # Date Created:			8 Oct 1999
 # Whom:				SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/w3m/Makefile,v 1.4 2000/04/13 08:33:33 knu Exp $
+# $FreeBSD: ports/japanese/w3m/Makefile,v 1.5 2000/04/14 17:24:53 knu Exp $
 #
 
 CATEGORIES=	japanese
 
 MASTERDIR=	${.CURDIR}/../../www/w3m
 PKGDIR=		${.CURDIR}/pkg
-PLIST=		${MASTERDIR}/pkg/PLIST.ja
+PLIST=		${MASTERDIR}/pkg-plist.ja
 
 JAPANESE=	Yes
 
