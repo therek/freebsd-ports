@@ -2,11 +2,11 @@
 # Date Created:		Mar 4 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.12 2000/06/08 18:57:45 ume Exp $
+# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.13 2000/06/18 19:25:56 ume Exp $
 #
 
 PORTNAME=	gkrellm
-PORTVERSION=	0.9.10
+PORTVERSION=	0.10.0
 CATEGORIES=	sysutils ipv6
 MASTER_SITES=	http://web.wt.net/~billw/gkrellm/ \
 		${MASTER_SITE_LOCAL}
@@ -24,7 +24,7 @@ USE_GMAKE=	yes
 MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 INCLUDES=	gkrellm.h gkrellm_public_proto.h gkrellm_private_proto.h
-DOCS=		COPYRIGHT README Themes
+DOCS=		COPYRIGHT README Themes.html
 
 # You should aware that GKrellM must be setuid root to obtain
 # temperatures.  If your motherboard doesn't support LM78/79 feature,
