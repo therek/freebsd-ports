@@ -3,11 +3,12 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/chinese/lunar/Makefile,v 1.7 2000/03/22 00:28:25 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lunar
 PORTVERSION=	2.1
+PORTREVISION=	1
 CATEGORIES=	chinese
 MASTER_SITES=	ftp://ftp.ifcss.org/pub/software/unix/c-utils/  \
 		ftp://ftp.edu.tw/Chinese/ifcss/software/unix/c-utils/  \
