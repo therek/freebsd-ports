@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.89 2000/02/14 04:02:10 obrien Exp $
+# $FreeBSD: ports/security/Makefile,v 1.90 2000/02/18 12:19:46 markm Exp $
 #
 
     SUBDIR += bjorb
@@ -86,5 +86,6 @@
     SUBDIR += whisker
     SUBDIR += xinetd
     SUBDIR += zebedee
+    SUBDIR += zombiezapper
 
 .include <bsd.port.subdir.mk>
