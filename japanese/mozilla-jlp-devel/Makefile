@@ -2,9 +2,10 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.9 2001/04/12 15:46:41 sada Exp $
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.10 2001/04/13 18:06:57 sf Exp $
 #
 
+BROKEN=		out of sync with mozilla
 PORTNAME=	mozilla
 PORTVERSION=	0.8.1
 PORTREVISION=	1
