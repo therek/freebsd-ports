@@ -2,14 +2,13 @@
 # Date created:			8 August 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/libworkman/Makefile,v 1.8 2000/06/16 21:50:21 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libworkman
 PORTVERSION=	1.4
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.midwinter.com/WorkMan/SNAPSHOTS/ \
-		${MASTER_SITE_LOCAL}
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	jim
 DISTNAME=	${PORTNAME}-1999-06-20
 
