@@ -2,14 +2,14 @@
 # Date created:		6 June 2000
 # Whom:			Toshihiro Inoue <tino@pa2.so-net.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/mingw-binutils/Makefile,v 1.1 2000/06/26 19:19:07 knu Exp $
 #
 
 PORTNAME=	binutils
 PORTVERSION=	2.9.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR= binutil
+MASTER_SITE_SUBDIR= binutils
 PKGNAMEPREFIX=	mingw-
 
 MAINTAINER=	tino@pa2.so-net.ne.jp
