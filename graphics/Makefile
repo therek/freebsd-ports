@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/graphics/Makefile,v 1.318 2001/06/01 17:59:59 sobomax Exp $
 #
 
     SUBDIR += 4va
@@ -29,6 +29,7 @@
     SUBDIR += ecg2png
     SUBDIR += electriceyes
     SUBDIR += enfle
+    SUBDIR += enjoympeg
     SUBDIR += eog
     SUBDIR += eps2png
     SUBDIR += epstool
