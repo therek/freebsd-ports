@@ -2,36 +2,60 @@
 # Date created:		9 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-drb/Makefile,v 1.7 2000/12/25 14:23:06 knu Exp $
+# $FreeBSD: ports/net/ruby-drb/Makefile,v 1.8 2001/01/18 16:57:25 knu Exp $
 #
 
 PORTNAME=	drb
-PORTVERSION=	1.3.1
+PORTVERSION=	1.3.2
 CATEGORIES=	net ruby
-MASTER_SITES=	${MASTER_SITE_RUBY} \
-		http://www2a.biglobe.ne.jp/~seki/ruby/
+MASTER_SITES=	http://www2a.biglobe.ne.jp/~seki/ruby/
 MASTER_SITE_SUBDIR=	contrib
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-# not mandatory, but recommended to use acl with DRb
 RUN_DEPENDS=	${RUBY_SITELIBDIR}/acl.rb:${PORTSDIR}/security/ruby-acl
 
 USE_RUBY=	yes
-
-NO_BUILD=	yes
+.if !defined(NOPORTDOCS)
+USE_RUBY_RD=	yes
+.endif
 
 post-extract:
-	${RM} ${WRKSRC}/lib/acl.rb
+	${MKDIR} ${WRKSRC}/acl/doc ${WRKSRC}/acl/lib ${WRKSRC}/acl/runit
+	cd ${WRKSRC} && for f in */acl*; do ${MV} $$f ${WRKSRC}/acl/$$f; done
+	${MKDIR} ${WRKSRC}/sample/ja
+	${MV} ${WRKSRC}/sample/*.ja ${WRKSRC}/sample/ja/
+
+post-patch:
+.if !defined(NOPORTDOCS)
+	cd ${WRKSRC}/doc && for f in drb-ref.rd*; do \
+		${MV} $$f $$f.orig; \
+		( ${ECHO} '=begin'; ${CAT} $$f.orig; ${ECHO} '=end' ) > $$f; \
+		${RM} $$f.orig; \
+	done
+.endif
+
+do-build:
+.if !defined(NOPORTDOCS)
+	cd ${WRKSRC}/doc && for f in *.rd; do \
+		${RUBY_RD} $$f > `${ECHO} $$f | ${SED} 's/\.rd$$/.html/'`; \
+	done
+	cd ${WRKSRC}/doc && for f in *.rd.ja; do \
+		${RUBY_RD} $$f > `${ECHO} $$f | ${SED} 's/\.rd.ja$$/.ja.html/'`; \
+	done
+	${MKDIR} ${WRKSRC}/doc/ja
+	cd ${WRKSRC}/doc && ${MV} *.rd.ja *.ja.html ja/
+.endif
 
 do-install:
-	@cd ${WRKSRC}; \
-	${RUBY} install.rb
+	${CP} -R ${WRKSRC}/lib/* ${RUBY_SITELIBDIR}/
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/drb
-	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/drb
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${CP} -R ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
+	${CP} -R ${WRKSRC}/doc/* ${RUBY_DOCDIR}/${PORTNAME}/
 .endif
 
 .include <bsd.port.mk>
