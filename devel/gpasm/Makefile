@@ -2,21 +2,23 @@
 # Date created:				4 Aug 2000
 # Whom:					Samuel Tardieu <sam@inf.enst.fr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/gpasm/Makefile,v 1.1 2000/09/16 04:30:34 will Exp $
 #
 
 PORTNAME=	gpasm
-PORTVERSION=	0.8.9
+PORTVERSION=	0.8.10
 CATEGORIES=	devel
-MASTER_SITES=	http://download.sourceforge.net/gpasm/
+MASTER_SITES=	http://gpasm.sourceforge.net/
 
 MAINTAINER=	sam@inf.enst.fr
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-0.0.8
 GNU_CONFIGURE=	yes
 MAKE_ARGS=	DATADIR=${PREFIX}/share/gpasm
 
+.if !defined(NOPORTDOCS)
 post-install:
-	strip ${PREFIX}/bin/gpasm
+	${MKDIR} ${PREFIX}/share/doc/gpasm
+	${INSTALL_DATA} ${WRKSRC}/doc/gpasm.ps ${PREFIX}/share/doc/gpasm
+.endif
 
 .include <bsd.port.mk>
