@@ -3,7 +3,7 @@
 # Date created: 	30 October 1999
 # Whom:			James Howard <howardjp@wam.umd.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/freelibiberty/Makefile,v 1.1.1.1 1999/11/05 03:50:47 cpiazza Exp $
 #
 
 DISTNAME=	libiberty-0.1
@@ -17,7 +17,6 @@ MAINTAINER=	howardjp@wam.umd.edu
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libiberty.a ${PREFIX}/lib
-	${INSTALL_DATA} ${WRKSRC}/libiberty_p.a ${PREFIX}/lib
 	${INSTALL_DATA} ${WRKSRC}/libiberty.so.1 ${PREFIX}/lib
 	${LN} -sf ${PREFIX}/lib/libiberty.so.1 ${PREFIX}/lib/libiberty.so
 	${INSTALL_DATA} ${WRKSRC}/libiberty.h ${PREFIX}/include
