@@ -3,7 +3,7 @@
 # Date created:		17 November 1996
 # Whom:			mi
 #
-# $FreeBSD: ports/graphics/hdf/Makefile,v 1.12 1999/08/27 21:14:04 mharo Exp $
+# $FreeBSD: ports/graphics/hdf/Makefile,v 1.13 1999/08/28 01:57:15 mharo Exp $
 #
 
 DISTNAME=	HDF4.1r2
@@ -11,7 +11,7 @@ PKGNAME=	hdf-4.1r2
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.ncsa.uiuc.edu/HDF/HDF4.1r2/tar/
 
-MAINTAINER=	mi@aldan.ziplink.net
+MAINTAINER=	mi@aldan.algebra.com
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 

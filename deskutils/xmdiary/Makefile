@@ -3,7 +3,7 @@
 # Date created:		29 Sep 1997
 # Whom:			mi@aldan.ziplink.net
 #
-# $FreeBSD: ports/deskutils/xmdiary/Makefile,v 1.5 1999/08/25 05:26:57 obrien Exp $
+# $FreeBSD: ports/deskutils/xmdiary/Makefile,v 1.6 1999/08/27 21:13:45 mharo Exp $
 #
 
 DISTNAME=	xmdiary-3.0.1
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	office
 DISTFILES=      ${DISTNAME}.tar.gz xmdfix.gz
 
-MAINTAINER=	mi@aldan.ziplink.net
+MAINTAINER=	mi@aldan.algebra.com
 
 NO_CDROM=	"Don't sell for profit"
 EXTRACT_ONLY=	${DISTNAME}.tar.gz

@@ -3,14 +3,14 @@
 # Date created:		19 November 1996
 # Whom:			mi
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/jbigkit/Makefile,v 1.6 1999/08/25 06:14:19 obrien Exp $
 #
 
 DISTNAME=	jbigkit-1.0
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.informatik.uni-erlangen.de/pub/doc/ISO/JBIG/
 
-MAINTAINER=	mi@aldan.ziplink.net
+MAINTAINER=	mi@aldan.algebra.com
 
 WRKSRC= ${WRKDIR}/jbigkit
 MAN1=	jbgtopbm.1 pbmtojbg.1
