@@ -2,7 +2,7 @@
 # Date Created:				18 September 1999
 # Whom:				 	Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/x11-wm/gnome2wmaker/Makefile,v 1.3 2000/04/10 19:49:55 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/gnome2wmaker/Makefile,v 1.4 2000/06/01 16:25:30 ade Exp $
 #
 
 PORTNAME=	gnome2wmaker
@@ -12,7 +12,8 @@ MASTER_SITES=	http://ulli.linuxbox.com/gnome2wmaker/
 
 MAINTAINER=     reg@FreeBSD.org
 
-BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
+BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
+		wmaker:${PORTSDIR}/x11-wm/windowmaker
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
 		wmaker:${PORTSDIR}/x11-wm/windowmaker
 
