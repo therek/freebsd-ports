@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.230 1999/09/30 03:19:17 cpiazza Exp $
+# $FreeBSD: ports/games/Makefile,v 1.231 1999/10/10 23:55:15 steve Exp $
 #
 
     SUBDIR += 3dc
@@ -229,6 +229,7 @@
     SUBDIR += xzip
     SUBDIR += yahtzee
     SUBDIR += yamsweeper
+    SUBDIR += znibbles
     SUBDIR += ztrack
 
 .include <bsd.port.subdir.mk>
