@@ -2,11 +2,12 @@
 # Date created:				24 Apr 1996
 # Whom:					pst
 #
-# $FreeBSD: ports/net/socks5/Makefile,v 1.32 2000/08/30 19:43:27 imp Exp $
+# $FreeBSD: ports/net/socks5/Makefile,v 1.33 2000/10/10 05:05:27 imp Exp $
 #
 
 PORTNAME=	socks5
 PORTVERSION=	1.0.11
+PORTREVISION=	1
 CATEGORIES=	net security
 DISTNAME=	socks5-v1.0r11
 
