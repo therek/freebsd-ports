@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.385 2000/07/27 15:31:50 kevlo Exp $
+# $FreeBSD: ports/net/Makefile,v 1.386 2000/07/29 06:28:08 sada Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -34,6 +34,7 @@
     SUBDIR += coda_doc
     SUBDIR += coda_intro
     SUBDIR += coda_server
+    SUBDIR += crescendo
     SUBDIR += cricket
     SUBDIR += cvsup
     SUBDIR += cvsup-bin
