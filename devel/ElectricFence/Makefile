@@ -3,18 +3,22 @@
 # Date created: 	13 November 1997
 # Whom:			jraynard
 #
-# $FreeBSD: ports/devel/ElectricFence/Makefile,v 1.10 2000/03/22 00:26:28 obrien Exp $
+# $FreeBSD: ports/devel/ElectricFence/Makefile,v 1.11 2000/04/11 21:26:53 mharo Exp $
 #
 
 PORTNAME=	electricfence
-PORTVERSION=	2.0.5
+PORTVERSION=	2.2.2
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITES=	ftp://ftp.perens.com/pub/ElectricFence/Beta/  \
+		ftp://ftp.netsw.org/netsw/System/Libs/Memory/Debug/  \
+		ftp://ftp.sai.msu.su/pub/unix/debug/  \
+		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	devel/lang/c
 DISTNAME=	ElectricFence-${PORTVERSION}
 
 MAINTAINER=	obrien@FreeBSD.org
 
+CFLAGS+=	-D__USE_BSD
 MAN3=		libefence.3
 
 do-install:
