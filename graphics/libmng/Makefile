@@ -2,12 +2,12 @@
 # Date created:		Nov 2, 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/graphics/libmng/Makefile,v 1.5 2001/03/13 15:56:36 sobomax Exp $
+# $FreeBSD: ports/graphics/libmng/Makefile,v 1.6 2001/04/28 16:16:07 mi Exp $
 #
 
 PORTNAME=	libmng
 PORTVERSION=	1.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.3-t.com/libmng/download/ \
 		${MASTER_SITE_SOURCEFORGE} \
@@ -16,8 +16,8 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	mi@aldan.algebra.com
 
-LIB_DEPENDS=	jpeg:${PORTSDIR}/graphics/jpeg \
-		lcms:${PORTSDIR}/graphics/lcms
+LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
+		lcms.1:${PORTSDIR}/graphics/lcms
 
 MAKEFILE=	${FILESDIR}/Makefile.bsd
 MAKE_ARGS+=	-j2
