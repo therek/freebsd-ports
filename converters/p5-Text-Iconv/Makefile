@@ -2,7 +2,7 @@
 # Date created:		26 Dec 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/converters/p5-Text-Iconv/Makefile,v 1.2 2001/02/05 14:30:41 olgeni Exp $
+# $FreeBSD: ports/converters/p5-Text-Iconv/Makefile,v 1.3 2001/03/01 06:38:59 vanilla Exp $
 #
 
 PORTNAME=	Text-Iconv
@@ -17,7 +17,7 @@ MAINTAINER=	skv@protey.ru
 LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv
 
 PERL_CONFIGURE=	yes
-CONFIGURE_ARGS+=	INC="-I${LOCALBASE}/include" LIBS="-L${LOCALBASE/lib"
+CONFIGURE_ARGS+=	INC="-I${LOCALBASE}/include" LIBS="-L${LOCALBASE}/lib -liconv"
 
 MAN3=		Text::Iconv.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
