@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.105 2000/02/27 19:50:32 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.106 2000/03/27 20:38:59 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -47,7 +47,7 @@ Y2K=		http://www.php.net/y2k.php3
 PHP_DISTDIR=	version4/downloads
 
 VERSION_APACHE=	1.3.12
-VERSION_PHP=	4.0b4pl1
+VERSION_PHP=	4.0RC1
 
 NO_LATEST_LINK=	yes
 USE_PERL5=	yes
@@ -97,7 +97,8 @@ PHP_CONF_ARGS=	--prefix=${PREFIX} \
 		--with-config-file-path=${PREFIX}/etc \
 		--disable-debug \
 		--enable-track-vars \
-		--without-gd
+		--without-gd \
+		--disable-pear
 
 pre-fetch:
 	@${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure.php
