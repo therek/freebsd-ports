@@ -4,7 +4,7 @@
 #			Mikhail Teterin <mi@aldan.algebra.com>
 #			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/tiff/Makefile,v 1.28 2000/06/16 08:19:23 sobomax Exp $
+# $FreeBSD: ports/graphics/tiff/Makefile,v 1.29 2000/06/16 21:50:52 asami Exp $
 #
 
 PORTNAME=	tiff
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.onshore.com/pub/libtiff/ \
 		http://www.libtiff.org/
 DISTNAME=	${PORTNAME}-v${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
