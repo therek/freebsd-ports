@@ -1,10 +1,11 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.76 2000/06/13 09:25:23 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.77 2000/06/13 14:08:45 sobomax Exp $
 #
 
     SUBDIR += FWF
     SUBDIR += Motif-dummy
     SUBDIR += Xaw3d
     SUBDIR += blt
+    SUBDIR += buffy
     SUBDIR += clean-theme-gtk
     SUBDIR += fltk
     SUBDIR += fox
