@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/elm+ME/pkg-plist,v 1.17 2002/05/10 00:41:57 sada Exp $
+@comment $FreeBSD: ports/mail/elm+ME/pkg-plist,v 1.18 2002/06/24 04:51:30 ijliao Exp $
 bin/answer
 bin/checkalias
 bin/elm
@@ -16,7 +16,7 @@ bin/newmail
 @unexec rm -f %B/wnewmail
 bin/printmail
 bin/readmsg
-etc/rc.d/00elm.sh
+etc/rc.d/000.elm.sh
 %%LIB_SUBDIR%%/elm-help.0
 %%LIB_SUBDIR%%/elm-help.1
 %%LIB_SUBDIR%%/elm-help.2
