@@ -2,32 +2,15 @@
 # Date created:				19 Aug 1998
 # Whom:					ichiro@ichiro.org
 #
-# $FreeBSD: ports/japanese/gd/Makefile,v 1.13 2000/07/30 18:03:06 steve Exp $
+# $FreeBSD: ports/japanese/gd/Makefile,v 1.14 2001/02/06 13:21:53 olgeni Exp $
 #
 
-PORTNAME=	gd
-PORTVERSION=	1.6.3
-CATEGORIES=	japanese graphics
-MASTER_SITES=   http://www.boutell.com/gd/http/ \
-		ftp://ftp.boutell.com/pub/boutell/gd/
-
-PATCH_SITES=    ftp://ftp.ipc.chiba-u.ac.jp/pub/pub.yamaga/gd/${PORTVERSION}/
-PATCHFILES=	${DISTNAME}.ttf-kanji.patch.990731
+CATEGORIES=	japanese
 
 MAINTAINER=	ichiro@ichiro.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+MASTERDIR=	${.CURDIR}/../../graphics/gd
 
-FETCH_BEFORE_ARGS=	-b
-USE_LIBTOOL=		yes
-CFLAGS+=	-DJISX0208
-CONFIGURE_ENV+=		CFLAGS="${CFLAGS} -I${LOCALBASE}/include"
-CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/gd \
-			--libdir=${PREFIX}/lib
-INSTALLS_SHLIB=	yes
+MAKE_ARGS=	-DJISX0208
 
-pre-install:
-	${MKDIR} ${PREFIX}/include/gd
-	${MKDIR} ${PREFIX}/share/examples/gd
-
-.include <bsd.port.mk>
+.include "${MASTERDIR}/Makefile"
