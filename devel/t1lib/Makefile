@@ -3,7 +3,7 @@
 # Date created:			13, May, 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/devel/t1lib/Makefile,v 1.12 2001/01/21 04:26:37 ijliao Exp $
+# $FreeBSD: ports/devel/t1lib/Makefile,v 1.13 2001/02/15 19:09:09 ijliao Exp $
 #
 
 PORTNAME=	t1lib
@@ -34,5 +34,7 @@ ALL_TARGET=	without_doc
 #.else
 #BUILD_DEPEND+=	${LOCALBASE}/bin/latex:${PORTSDIR}/print/latex
 #.endif
+
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>
