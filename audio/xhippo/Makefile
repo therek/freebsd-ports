@@ -2,11 +2,11 @@
 # Date created:				16 March 1999
 # Whom:					Rod Taylor <rod@zort.on.ca>
 #
-# $FreeBSD: ports/audio/xhippo/Makefile,v 1.11 2000/08/07 05:49:56 kevlo Exp $
+# $FreeBSD: ports/audio/xhippo/Makefile,v 1.12 2000/09/16 18:08:30 ade Exp $
 #
 
 PORTNAME=	xhippo
-PORTVERSION=	2.6
+PORTVERSION=	2.7
 CATEGORIES=	audio
 MASTER_SITES=	http://zenchaos.netpedia.net/software/ \
 		http://www.us-lot.org/~azz/xhippo/
