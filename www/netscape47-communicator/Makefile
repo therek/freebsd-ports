@@ -2,14 +2,19 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.77 2000/10/29 18:44:11 sada Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.78 2000/10/31 15:24:23 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
-PORTVERSION?=	4.76
+PORTVERSION?=	${DEFAULT_PORTVERSION}
 
 .if !defined(_PREMKINCLUDED)
 .include <bsd.port.pre.mk>
+.endif
+.if ${ARCH} == "alpha"
+DEFAULT_PORTVERSION?=	4.77
+.else
+DEFAULT_PORTVERSION?=	4.76
 .endif
 
 MASTER_SITES=	ftp://ftp.netscape.com/pub/${NETSCAPE_DIST_SUBDIR}/
