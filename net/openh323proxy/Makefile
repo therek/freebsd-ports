@@ -2,14 +2,14 @@
 # Date created:		Tue Nov 21 12:59:00 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/openh323proxy/Makefile,v 1.1 2000/11/22 17:51:39 roger Exp $
 #
 
 PORTNAME=	openh323proxy
-PORTVERSION=	0.9a3.m08
+PORTVERSION=	0.9a3.m09
 CATEGORIES=	net
 MASTER_SITES=	http://download.sourceforge.net/openh323proxy/
-DISTNAME=	${PORTNAME}_0.9a3_m08
+DISTNAME=	${PORTNAME}_0.9a3_m09
 
 MAINTAINER=	roger@FreeBSD.org
 
