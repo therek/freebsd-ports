@@ -2,13 +2,14 @@
 # Date created:				8 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/sdl/Makefile,v 1.12 2000/04/22 21:25:57 vanilla Exp $
+# $FreeBSD: ports/devel/sdl/Makefile,v 1.13 2000/05/17 11:18:27 sobomax Exp $
 #
 
 PORTNAME=		sdl
 PORTVERSION=		1.0.8
 CATEGORIES=		devel
-MASTER_SITES=		http://www.devolution.com/~slouken/SDL/release/
+MASTER_SITES=		http://www.libsdl.org/release/ \
+			http://www.devolution.com/~slouken/SDL/release/
 DISTNAME=		SDL-${PORTVERSION}
 
 MAINTAINER=		sobomax@FreeBSD.org
