@@ -2,7 +2,7 @@
 # Date created:        	2000.07.12
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/wdic-fpw/Makefile,v 1.4 2000/11/08 00:50:54 taoka Exp $
+# $FreeBSD: ports/japanese/wdic-fpw/Makefile,v 1.5 2000/11/14 06:46:44 taoka Exp $
 #
 
 PORTNAME=	wdic-fpw
@@ -65,6 +65,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/readme.1st ${PREFIX}/share/doc/wdic-fpw
 	${INSTALL_DATA} ${WRKSRC}/readme.txt ${PREFIX}/share/doc/wdic-fpw
 .endif
-
 
 .include <bsd.port.mk>
