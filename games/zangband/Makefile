@@ -2,11 +2,12 @@
 # Date created:        29 May 2000
 # Whom:                Makoto YAMAKURA <makoto@pinpott.spnet.ne.jp>
 #
-# $FreeBSD: ports/games/zangband/Makefile,v 1.1 2000/08/09 17:34:15 cpiazza Exp $
+# $FreeBSD: ports/games/zangband/Makefile,v 1.2 2000/09/05 01:46:29 steve Exp $
 #
 
 PORTNAME=	zangband
 PORTVERSION=	2.4.0${JP_VERSION}
+PORTREVISION=	1
 CATEGORIES+=	games
 MASTER_SITES=	ftp://export.andrew.cmu.edu/angband/Variant/ \
 		ftp://ftp.sunet.se/pub/games/Angband/Variant/ \
@@ -49,7 +50,7 @@ ANGBANDBIN?=	bin/jzangband
 
 E_VERSION=	${PORTVERSION:S/${JP_VERSION}//}
 .if defined(JAPANESE)
-PATCH_VERSION=	000822
+PATCH_VERSION?=	000901
 JP_VERSION=	.j${PATCH_VERSION}
 PLIST_ADD=	${PKGDIR}/PLIST.ja
 MAKE_ARGS+=	JAPANESE_CFLAGS="-DJP -DEUC"
