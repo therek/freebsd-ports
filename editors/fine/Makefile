@@ -3,7 +3,7 @@
 # Date created:			17 August 1999
 # Whom:				Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/fine/Makefile,v 1.2 1999/08/25 05:43:37 obrien Exp $
 #
 
 DISTNAME=	fine
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://razor.fer.uni-lj.si/pub/software/bojank/fine/
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
+USE_NEWGCC=	yes
 USE_GMAKE=	yes
 USE_QT=		yes
 WRKSRC=		${WRKDIR}/fine
