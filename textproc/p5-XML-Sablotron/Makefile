@@ -2,12 +2,11 @@
 # Date created:		13 Nov 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/p5-XML-Sablotron/Makefile,v 1.6 2001/06/20 21:52:35 dannyboy Exp $
+# $FreeBSD: ports/textproc/p5-XML-Sablotron/Makefile,v 1.7 2001/08/25 04:57:53 petef Exp $
 #
 
 PORTNAME=	XML-Sablotron
-PORTVERSION=	0.61
-PORTREVISION=	1
+PORTVERSION=	0.65
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML
@@ -20,7 +19,12 @@ LIB_DEPENDS=	sablot.65:${PORTSDIR}/textproc/sablotron \
 
 PERL_CONFIGURE=	yes
 CONFIGURE_ARGS=	LIBS='-L${LOCALBASE}/lib -lexpat -lsablot -liconv' \
-		INC='-I${LOCALBASE}/include'
+		INC='-I${LOCALBASE}/include' \
+		EXPATLIBPATH='${LOCALBASE}/lib' \
+		EXPATINCPATH='${LOCALBASE}/include' \
+		SABLOTLIBPATH='${LOCALBASE}/lib' \
+		SABLOTINCPATH='${LOCALBASE}/include'
+
 post-patch:
 		@${PERL} -pi -e 's,%%PREFIX%%,${PREFIX},g' \
 			${WRKSRC}/Sablotron/Makefile.PL
