@@ -2,11 +2,11 @@
 # Date created:         20 Feb 1996
 # Whom:                 Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/misc/fd/Makefile,v 1.27 2001/04/10 11:48:25 knu Exp $
+# $FreeBSD: ports/misc/fd/Makefile,v 1.28 2001/05/31 06:20:19 knu Exp $
 #
 
 PORTNAME=	fd
-PORTVERSION=	1.03s
+PORTVERSION=	1.03t
 CATEGORIES=	misc
 MASTER_SITES=	http://hp.vector.co.jp/authors/VA012337/soft/fd/
 MASTER_SITE_SUBDIR=	steve
