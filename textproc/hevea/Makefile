@@ -2,10 +2,10 @@
 # Date created:		November 28 1999
 # Whom:			Stephen Montgomery-Smith <stephen@math.missouri.edu>
 #
-# $FreeBSD: ports/textproc/hevea/Makefile,v 1.2 2000/01/24 06:14:41 steve Exp $
+# $FreeBSD: ports/textproc/hevea/Makefile,v 1.3 2000/04/09 21:52:38 cpiazza Exp $
 #
 
-PORTNAME=		heavea
+PORTNAME=		hevea
 PORTVERSION= 		1.04
 CATEGORIES=		textproc
 MASTER_SITES=		ftp://ftp.inria.fr/INRIA/Projects/para/hevea/
