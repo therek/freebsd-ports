@@ -2,7 +2,7 @@
 # Date created:		2 March 1997
 # Whom:			Yoshiro MIHIRA
 #
-# $FreeBSD: ports/japanese/oleo/Makefile,v 1.8 2000/03/06 14:08:32 sada Exp $
+# $FreeBSD: ports/japanese/oleo/Makefile,v 1.9 2000/04/11 14:15:53 knu Exp $
 #
 
 PORTNAME=	oleo
@@ -18,7 +18,7 @@ PATCH_SITES=	http://www.hh.iij4u.or.jp/%7Ehayasida/oleo/
 PATCHFILES=	${DISTNAME}-${PORTVERSION}jb2.diff.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=    sanpei@sanpei.org
+MAINTAINER=    sanpei@FreeBSD.org
 
 CONFIGURE_ENV= CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -L${X11BASE}/lib"

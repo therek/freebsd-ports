@@ -2,7 +2,7 @@
 # Date created:		Sep 15, 1997
 # Whom:			Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/textproc/wdiff/Makefile,v 1.5 2000/04/09 21:53:17 cpiazza Exp $
+# $FreeBSD: ports/textproc/wdiff/Makefile,v 1.6 2000/07/02 14:09:34 sanpei Exp $
 #
 
 PORTNAME=	wdiff
@@ -11,7 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	wdiff
 
-MAINTAINER=	sanpei@sanpei.org
+MAINTAINER=	sanpei@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		6 December 1999
 # Whom:			Yoshiro MIHIRA <sanpei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/ngraph-fonts/Makefile,v 1.2 2000/04/11 14:15:47 knu Exp $
+# $FreeBSD: ports/japanese/ngraph-fonts/Makefile,v 1.3 2000/07/02 14:14:04 sanpei Exp $
 #
 
 PORTNAME=	ngraph-fonts
@@ -11,7 +11,7 @@ CATEGORIES=	japanese math x11-fonts
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=     sanpei@sanpei.org
+MAINTAINER=     sanpei@FreeBSD.org
 
 RUN_DEPENDS= \
 	${X11BASE}/lib/X11/fonts/local/kanji18.pcf.gz:${PORTSDIR}/japanese/kanji18 \

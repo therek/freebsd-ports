@@ -2,7 +2,7 @@
 # Date created:		22 October 1999
 # Whom:			Kazuki Sakamoto <sakamoto@netbsd.org>
 #
-# $FreeBSD: ports/games/rollemup/Makefile,v 1.4 2000/04/22 02:25:31 will Exp $
+# $FreeBSD: ports/games/rollemup/Makefile,v 1.5 2000/07/31 08:41:22 kevlo Exp $
 # $NetBSD: Makefile,v 1.4 1999/11/23 16:54:40 hubertf Exp $
 #
 
@@ -12,7 +12,7 @@ CATEGORIES=	games linux
 MASTER_SITES=	http://usa.lostboys.nl/medialab/rollemup/Linux/
 DISTNAME=	Rollemup
 
-MAINTAINER=	sanpei@sanpei.org
+MAINTAINER=	sanpei@FreeBSD.org
 
 RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 

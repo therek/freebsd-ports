@@ -2,7 +2,7 @@
 # Date created:		15 January 2000
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/print/poster/Makefile,v 1.2 2000/04/09 17:41:10 cpiazza Exp $
+# $FreeBSD: ports/print/poster/Makefile,v 1.3 2000/04/09 17:50:30 cpiazza Exp $
 #
 
 PORTNAME=	poster
@@ -11,7 +11,7 @@ CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.ics.ele.tue.nl/pub/users/jos/poster/
 DISTNAME=	poster
 
-MAINTAINER=	sanpei@sanpei.org
+MAINTAINER=	sanpei@FreeBSD.org
 
 ALL_TARGET=	poster
 NO_WRKSUBDIR=	yes

@@ -2,7 +2,7 @@
 # Date created:		23.Feb.1996
 # Whom:			sanpei@yy.cs.keio.ac.jp
 #
-# $FreeBSD: ports/japanese/iv/Makefile,v 1.15 2000/04/11 14:13:54 knu Exp $
+# $FreeBSD: ports/japanese/iv/Makefile,v 1.16 2000/06/17 05:33:53 knu Exp $
 #
 
 PORTNAME=	iv
@@ -17,7 +17,7 @@ PATCH_SITES=	${MASTER_SITE_PORTS_JP}
 PATCHFILES=	${DISTNAME}j-gamma-fixcmpfont.patch
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	sanpei@sanpei.org
+MAINTAINER=	sanpei@FreeBSD.org
 
 USE_XLIB=	yes
 DIST_SUBDIR=	iv

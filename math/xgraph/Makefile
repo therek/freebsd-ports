@@ -2,7 +2,7 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/math/xgraph/Makefile,v 1.15 1999/12/10 19:31:40 steve Exp $
+# $FreeBSD: ports/math/xgraph/Makefile,v 1.16 2000/04/14 07:20:52 asami Exp $
 #
 
 PORTNAME=	xgraph
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.cs.utoronto.ca/pub/radford/
 DISTNAME=	xgraph-11
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	sanpei@sanpei.org
+MAINTAINER=	sanpei@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		xgraph.1

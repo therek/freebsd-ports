@@ -2,7 +2,7 @@
 # Date created:				2 April 1997
 # Whom:	Andrey Zakhvatov <andy@icc.surw.chel.su>
 #
-# $FreeBSD: ports/deskutils/cal/Makefile,v 1.10 2000/04/08 22:03:23 mharo Exp $
+# $FreeBSD: ports/deskutils/cal/Makefile,v 1.11 2000/04/10 03:58:45 mharo Exp $
 #
 
 PORTNAME=		cal
@@ -11,7 +11,7 @@ CATEGORIES=		deskutils
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/shell
 
-MAINTAINER=	sanpei@sanpei.org
+MAINTAINER=	sanpei@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/cal-3.5/source
 MAKEFILE=	makefile.unx

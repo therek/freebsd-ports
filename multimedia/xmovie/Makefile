@@ -2,7 +2,7 @@
 # Date created:		20 December 1998
 # Whom:			MIHIRA Sanpei Yoshiro <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.7 2000/05/29 03:51:37 steve Exp $
+# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.8 2000/06/29 07:02:21 obrien Exp $
 #
 
 PORTNAME=	xmovie
@@ -17,7 +17,7 @@ DISTNAME=	${PORTNAME}-i586-${PORTVERSION}
 PATCH_SITES=	${RPM_MIRRORS:S/__DIR__/${STDDIR}/g}
 PATCHFILES=	${RPM_LIBPNG}
 
-MAINTAINER=	sanpei@sanpei.org
+MAINTAINER=	sanpei@FreeBSD.org
 
 BUILD_DEPENDS=	rpm:${PORTSDIR}/misc/rpm
 RUN_DEPENDS=	${LINUX_BASE}/lib/libc.so.6:${PORTSDIR}/emulators/linux_base \
