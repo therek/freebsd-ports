@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.239 2001/06/20 15:02:26 ijliao Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.240 2001/07/07 12:43:56 ijliao Exp $
 #
 
     SUBDIR += Maaate
@@ -22,6 +22,7 @@
     SUBDIR += cdplay
     SUBDIR += cdplayer.app
     SUBDIR += cdrdao
+    SUBDIR += chordpack
     SUBDIR += cmp3
     SUBDIR += csound
     SUBDIR += csound-manual
