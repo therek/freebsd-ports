@@ -2,7 +2,7 @@
 # Date created:		23 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-slang/Makefile,v 1.1 2000/08/23 04:35:47 knu Exp $
 #
 
 PORTNAME=	slang
@@ -39,7 +39,11 @@ DOCS_JA=	README.euc
 
 .include <bsd.port.pre.mk>
 
+.if defined(PKGNAMEPREFIX)
 PKGNAMEPREFIX:=	${PKGNAMEPREFIX}ruby-
+.else
+PKGNAMEPREFIX=	ruby-
+.endif
 
 do-configure:
 	@cd ${WRKSRC}; \
