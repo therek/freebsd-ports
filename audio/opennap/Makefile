@@ -2,11 +2,11 @@
 # Date created:			26 July 2000
 # Whom:				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD: ports/audio/opennap/Makefile,v 1.1.1.1 2000/07/27 08:21:25 dburr Exp $
+# $FreeBSD: ports/audio/opennap/Makefile,v 1.2 2000/10/08 10:19:15 asami Exp $
 #
 
 PORTNAME=	opennap
-PORTVERSION=	0.35
+PORTVERSION=	0.37
 CATEGORIES=	audio net
 MASTER_SITES=	ftp://download.sourceforge.net/pub/sourceforge/opennap/ \
 		ftp://ftp.darenet.dk/mirrors/mirror.linuxberg.com/files/console/servers/ \
