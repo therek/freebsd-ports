@@ -2,7 +2,7 @@
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD: ports/www/mozilla/Makefile,v 1.50 2000/10/27 09:24:08 sobomax Exp $
+# $FreeBSD: ports/www/mozilla/Makefile,v 1.51 2000/10/31 07:16:00 reg Exp $
 #
 
 PORTNAME=	mozilla
@@ -49,7 +49,7 @@ CONFIGURE_ARGS=					\
 		--with-jpeg=${LOCALBASE}	\
 		--with-png=${LOCALBASE}
 MAKE_ENV=	LD_LIBRARY_PATH=${WRKSRC}/dist/bin \
-		CC_ONLY_FLAGS="${FLAGS}" CCC_ONLY_FLAGS="${CXXFLAGS}"
+		CC_ONLY_FLAGS="${CFLAGS}" CCC_ONLY_FLAGS="${CXXFLAGS}"
 
 post-build:
 	@${SED} -e "s;@PREFIX@;${PREFIX};g" \
