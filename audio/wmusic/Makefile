@@ -2,11 +2,11 @@
 # Date created:				16 September 2000
 # Whom:					eric
 #
-# $FreeBSD: ports/audio/wmusic/Makefile,v 1.3 2001/04/09 10:41:31 eric Exp $
+# $FreeBSD: ports/audio/wmusic/Makefile,v 1.4 2001/04/14 21:34:46 eric Exp $
 #
 
 PORTNAME=	wmusic
-PORTVERSION=	1.4.5
+PORTVERSION=	1.4.6
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	http://hadess.net/files/
 
@@ -19,6 +19,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${X11BASE}
 CONFIGURE_ENV=	PATH_GTKCONFIG=${X11BASE}/bin/gtk12-config
 
+USE_GMAKE=	yes
 USE_GLIB=	yes
 USE_GTK=	yes
 USE_X_PREFIX=	yes
