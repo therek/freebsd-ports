@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.217 2001/09/07 15:44:14 sobomax Exp $
+# $FreeBSD$
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -177,6 +177,10 @@ radius*			ports/net/radius	Binary redistribution only,
 rarlnx*			ports/archivers/linux_rar	Only unmodified original package can be distributed
 rkive3.1.tar.gz		ports/news/rkive	Restrictive copyright
 rman-3.*		ports/textproc/rman	Don't sell for profit
+robocode-*		ports/games/robocode	Restrictive license. Particularly,
+						redistribution isn't permitted
+						and user should delete software
+						after 60 days.
 rsaref*			ports/security/{rsaref,ssh} Crypto; export-controlled
 rp*_linux20_libc6_i386_*_rpm	ports/audio/linux-realplayer	Redistribution not allowed.
 Scilab-*		ports/math/Scilab	Don't sell for profit.
