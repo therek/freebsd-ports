@@ -2,11 +2,11 @@
 # Date created:         03 October 2000
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/py-gdbm/Makefile,v 1.1 2000/10/20 09:11:37 tg Exp $
 #
 
 PORTNAME=	gdbm
-PORTVERSION= 	${PYTHON_PORTVERSION}
+PORTVERSION=	${PYTHON_PORTVERSION}
 CATEGORIES=	databases python
 MASTER_SITES=	ftp://www.python.org/pub/python/src/ \
 		ftp://ftp.cwi.nl/pub/python/src/
