@@ -2,13 +2,13 @@
 # Date created:			13 Dec, 1997
 # Whom:				kline
 #
-# $FreeBSD: ports/mail/rftp/Makefile,v 1.5 2000/04/13 20:00:44 cpiazza Exp $
+# $FreeBSD: ports/mail/rftp/Makefile,v 1.6 2001/02/05 15:11:08 olgeni Exp $
 #
 
 PORTNAME=	rftp
 PORTVERSION=	1.2
 CATEGORIES=	mail
-MASTER_SITES=	ftp://toxic.magnesium.net/pub/FreeBSD/rftp/
+MASTER_SITES=	http://muuz.deadbbs.com/FreeBSD/rftp/
 
 MAINTAINER=	kline@thought.org
 
