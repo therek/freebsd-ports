@@ -3,7 +3,7 @@
 # Date created:			Jul 23, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/guitartex/Makefile,v 1.1 2001/07/24 16:34:30 ijliao Exp $
 #
 
 PORTNAME=	guitartex
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
-RUN_BUILD=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Tk.pm:${PORTSDIR}/x11-toolkits/p5-Tk \
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Tk.pm:${PORTSDIR}/x11-toolkits/p5-Tk \
 		latex:${PORTSDIR}/print/latex
 
 USE_PERL5=	yes
