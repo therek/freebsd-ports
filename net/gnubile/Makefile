@@ -2,11 +2,11 @@
 # Date created:		19 May 2000
 # Whom:			Klaus Herrmann <klaus.herrmann@gmx.net>
 #
-# $FreeBSD: ports/net/gnubile/Makefile,v 1.2 2000/08/19 20:23:42 steve Exp $
+# $FreeBSD: ports/net/gnubile/Makefile,v 1.3 2000/10/05 06:42:16 reg Exp $
 #
 
 PORTNAME=	gnubile
-PORTVERSION= 	0.20
+PORTVERSION=	0.20
 CATEGORIES=	net gnome audio
 MASTER_SITES=	http://gnutella.wego.com/file_depot/0-10000000/110000-120000/116705/folder/127699/
 

@@ -2,11 +2,11 @@
 # Date created:                21 Nov 1998
 # Whom:                        bradh
 #
-# $FreeBSD: ports/net/nocol/Makefile,v 1.6 2000/04/09 18:12:34 cpiazza Exp $
+# $FreeBSD: ports/net/nocol/Makefile,v 1.7 2001/01/10 14:02:29 sf Exp $
 #
 
 PORTNAME=	nocol
-PORTVERSION= 	4.3
+PORTVERSION=	4.3
 PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.netplex-tech.com/software/nocol/downloads/

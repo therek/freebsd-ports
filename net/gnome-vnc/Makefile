@@ -2,12 +2,12 @@
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/net/gnome-vnc/Makefile,v 1.3 2000/04/09 18:11:27 cpiazza Exp $
+# $FreeBSD: ports/net/gnome-vnc/Makefile,v 1.4 2000/06/01 16:25:29 ade Exp $
 #
 
 PORTNAME=	gnome-vnc
 PORTVERSION=	0.1
-CATEGORIES= 	net gnome
+CATEGORIES=	net gnome
 MASTER_SITES=	ftp://ftp.daa.com.au/pub/james/gnome/
 
 MAINTAINER=	domi@saargate.de

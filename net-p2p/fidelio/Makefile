@@ -2,11 +2,11 @@
 # Date created:				13 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/fidelio/Makefile,v 1.1 2000/11/15 18:26:29 sobomax Exp $
+# $FreeBSD: ports/net/fidelio/Makefile,v 1.2 2001/01/09 08:17:00 sobomax Exp $
 #
 
 PORTNAME=	fidelio
-PORTVERSION= 	0.9.5
+PORTVERSION=	0.9.5
 CATEGORIES=	net gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}

@@ -2,7 +2,7 @@
 # Date created:		14 April 2000
 # Whom:			nishida@csl.sony.co.jp
 #
-# $FreeBSD: ports/net/tcpillust/Makefile,v 1.1.1.1 2000/07/29 06:26:00 sada Exp $
+# $FreeBSD: ports/net/tcpillust/Makefile,v 1.2 2000/11/07 23:28:14 asami Exp $
 #
 
 PORTNAME=	tcpillust
@@ -24,7 +24,7 @@ MAN1=	tcpillust.1
 
 DOCS=	README
 
-SAMPLES= tcpclient.log tcpserver.log
+SAMPLES=	tcpclient.log tcpserver.log
 
 post-install:
 .if !defined(NOPORTDOCS)

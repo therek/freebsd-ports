@@ -2,11 +2,11 @@
 # Date created:				31 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/spat/Makefile,v 1.1 2000/10/31 12:41:16 sobomax Exp $
+# $FreeBSD: ports/net/spat/Makefile,v 1.2 2001/01/04 20:57:31 sobomax Exp $
 #
 
 PORTNAME=	spat
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	net gnome
 MASTER_SITES=	http://spat.codehost.com/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.1$/-1/}.src

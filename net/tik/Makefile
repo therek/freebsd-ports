@@ -2,7 +2,7 @@
 # Date created:				13 January 1999
 # Whom:					Eugene M. Kim <astralblue@usa.net>
 #
-# $FreeBSD: ports/net/tik/Makefile,v 1.10 2000/10/08 10:22:36 asami Exp $
+# $FreeBSD: ports/net/tik/Makefile,v 1.11 2001/01/28 21:07:06 sf Exp $
 #
 
 PORTNAME=	tik
@@ -22,7 +22,7 @@ PLIST=		${WRKDIR}/PLIST
 
 SORT?=		sort
 
-SRCDIRS= 	share/tik share/tik/components share/tik/media \
+SRCDIRS=	share/tik share/tik/components share/tik/media \
 		share/tik/packages share/tik/strs
 
 .include <bsd.port.pre.mk>
@@ -31,7 +31,7 @@ SRCDIRS= 	share/tik share/tik/components share/tik/media \
 EGDIR=		share/examples/tik
 EGFILES=	example.tikstrs example.pkgrc
 DOCDIR=		share/doc/tik
-DOCFILES=	CHANGES CONTRIBUTORS COPYING LICENSE README-LANG	   \
+DOCFILES=	CHANGES CONTRIBUTORS COPYING LICENSE README-LANG \
 		NEW-FEATURES TODO
 
 # The packing list starts with just bin/tik.  As we install things,
