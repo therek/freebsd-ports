@@ -1,6 +1,7 @@
-# $FreeBSD: ports/palm/Makefile,v 1.9 1999/12/28 02:27:41 nakai Exp $
+# $FreeBSD: ports/palm/Makefile,v 1.10 2000/01/29 04:48:11 steve Exp $
 #
 
+    SUBDIR += coldsync
     SUBDIR += gnomepilot
     SUBDIR += imgvtopgm
     SUBDIR += isilo
