@@ -2,49 +2,32 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/wordnet-fpw/Makefile,v 1.4 2000/11/02 18:58:10 taoka Exp $
+# $FreeBSD: ports/japanese/wordnet-fpw/Makefile,v 1.5 2001/02/06 13:22:00 olgeni Exp $
 #
 
 PORTNAME=	wordnet-fpw
 PORTVERSION=	${WN_VER}.${WNFPW_VER}
 CATEGORIES=	japanese
-MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/wordnet/ \
-		ftp://ftp.dict.org/pub/dict/pre/
-DISTNAME=	wordnet-${WN_VER}-fpw${WNFPW_VER}-src
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
-		dict-wn-${WN_ORG_VER}-pre.tar.gz
-EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
+MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/wordnet/
+DISTNAME=	wordnet-${WN_VER}-fpw${WNFPW_VER}
 
 MAINTAINER=	taoka@FreeBSD.org
 
-BUILD_DEPENDS=	fpwmake:${PORTSDIR}/japanese/freepwing \
-		catdump:${PORTSDIR}/japanese/epwutil \
-		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Jcode.pm:${PORTSDIR}/japanese/p5-Jcode
-
-WRKSRC=		${WRKDIR}/wordnet-${WN_VER}-fpw${WNFPW_VER}
+USE_ZIP=	yes
+NO_BUILD=	yes
+WRKSRC=		${WRKDIR}/wordnet
+EXTRACT_BEFORE_ARGS=	-qL
 WNFPW_VER=	1.1.2
 WN_VER=		1.6
-WN_ORG_VER=	1.5
 
-post-extract:
-	cd ${WRKSRC}; \
-	${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} \
-		${_DISTDIR}/dict-wn-${WN_ORG_VER}-pre.tar.gz \
-		${EXTRACT_AFTER_ARGS}; \
-	${GZIP_CMD} ${EXTRACT_BEFORE_ARGS} wn.dict.dz > wn.dict
-
-do-build:
-		cd ${WRKSRC}; \
-		fpwmake > /dev/null; \
-		fpwmake catalogs
 
 do-install:
 	${MKDIR} ${PREFIX}/share/dict/wordnet-fpw/wordnet/data
-	${INSTALL_DATA} ${WRKSRC}/honmon ${PREFIX}/share/dict/wordnet-fpw/wordnet/data
+	${INSTALL_DATA} ${WRKSRC}/wordnet/data/honmon ${PREFIX}/share/dict/wordnet-fpw/wordnet/data
 	${INSTALL_DATA} ${WRKSRC}/catalogs ${PREFIX}/share/dict/wordnet-fpw
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/wordnet-fpw
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/wordnet-fpw
+	${INSTALL_DATA} ${WRKSRC}/readme ${PREFIX}/share/doc/wordnet-fpw
 .endif
 
 .include <bsd.port.mk>
