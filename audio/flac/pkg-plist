@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/flac/pkg-plist,v 1.3 2001/06/10 14:03:01 sf Exp $
+@comment $FreeBSD: ports/audio/flac/pkg-plist,v 1.4 2001/08/03 14:09:24 sf Exp $
 bin/flac
 bin/metaflac
 include/FLAC/all.h
@@ -10,6 +10,7 @@ include/FLAC/seek_table.h
 include/FLAC/stream_decoder.h
 include/FLAC/stream_encoder.h
 include/FLAC/utility.h
+@dirrm include/FLAC
 lib/libFLAC.a
 lib/libFLAC.so
 lib/libFLAC.so.1

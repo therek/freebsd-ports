@@ -3,7 +3,7 @@
 # Date created:		Mar 18, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/flac/Makefile,v 1.9 2001/08/31 14:20:16 sobomax Exp $
 #
 
 PORTNAME=	flac
@@ -27,6 +27,8 @@ PLIST_SUB=	XMMS="@comment "
 BUILD_DEPENDS+=	nasm:${PORTSDIR}/devel/nasm
 .endif
 
+USE_AUTOMAKE=	yes
+AUTOMAKE_ARGS=	--include-deps
 USE_LIBTOOL=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
