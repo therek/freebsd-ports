@@ -3,10 +3,10 @@
 # Date created:			2 Jun 1997
 # Whom:				Ruslan Shevchenko <rssh@satori.ipri.kiev.ua>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/sr/Makefile,v 1.6 1999/08/25 06:35:29 obrien Exp $
 #
 
-DISTNAME=	sr
+DISTNAME=	sr231
 PKGNAME=	sr-2.3.1
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.cs.arizona.edu/sr/
