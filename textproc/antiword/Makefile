@@ -2,14 +2,13 @@
 # Date created:				8 June 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/antiword/Makefile,v 1.1.1.1 2000/06/09 09:16:09 sobomax Exp $
 #
 
 PORTNAME=	antiword
 PORTVERSION=	0.30
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.winfield.demon.nl/linux/
-DISTNAME=	${PORTNAME}
 
 MAINTAINER=	leeym@cae.ce.ntu.edu.tw
 
