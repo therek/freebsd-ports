@@ -2,13 +2,14 @@
 # Date created:		9 February 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/sysutils/xdu/Makefile,v 1.12 2000/04/09 19:09:00 cpiazza Exp $
+# $FreeBSD: ports/sysutils/xdu/Makefile,v 1.13 2000/04/22 10:13:55 mharo Exp $
 #
 
 PORTNAME=	xdu
 PORTVERSION=	3.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ftp.arl.mil/pub/
+MASTER_SITES=	http://sd.wareonearth.com/~phil/xdu/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
