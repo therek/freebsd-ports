@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/misc/Makefile,v 1.376 2001/09/03 13:45:14 sobomax Exp $
 #
 
     SUBDIR += 40upgrade
@@ -170,6 +170,7 @@
     SUBDIR += sls
     SUBDIR += smssend
     SUBDIR += snowflake
+    SUBDIR += speedtouch_usb
     SUBDIR += splitvt
     SUBDIR += sshbuddy
     SUBDIR += stan
