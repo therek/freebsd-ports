@@ -2,7 +2,7 @@
 # Date Created:				16 March 2001
 # Whom:				 	olgeni@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gtk-qn-x11-theme/Makefile,v 1.1 2001/03/16 22:24:28 olgeni Exp $
 #
 
 PORTNAME=	gtk-qn-x11-theme
@@ -10,7 +10,7 @@ PORTVERSION=	0.1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_THEMES}
 MASTER_SITE_SUBDIR=	gtk
-DISTNAME=	qn-x11-1.2.x
+DISTNAME=	qn-x11-1.2.x-200103112104
 
 MAINTAINER=	olgeni@FreeBSD.org
 
