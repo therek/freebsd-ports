@@ -1,4 +1,4 @@
-$FreeBSD: ports/emulators/vmware2/files/Hints.FreeBSD,v 1.6 2000/06/19 18:02:59 knu Exp $
+$FreeBSD: ports/emulators/vmware2/files/Hints.FreeBSD,v 1.7 2000/07/18 19:13:15 knu Exp $
 
 Here is a list of some useful hints on using VMware on FreeBSD.
 
@@ -81,9 +81,9 @@ empty or when you're about to eject the media.
 - Under FreeBSD, floppy device should be configured as follows:
 
 	Type: file
-	Path: /dev/rfd0
+	Path: /dev/fd0
 
-(Obtain the write permission on /dev/rfd0 if you write floppy disks)
+(Obtain the write permission on /dev/fd0 if you write floppy disks)
 
 - VMware creates a file that is about 25% larger than the guest OS's
 RAM size, unlinks it and mmap's on it on the first startup of the VM.
