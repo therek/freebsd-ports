@@ -3,12 +3,11 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD: ports/emulators/wine/Makefile,v 1.73 1999/08/31 06:43:57 mharo Exp $
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.74 1999/11/14 20:49:22 se Exp $
 #
 
-DATE=		991031
 DISTNAME=	Wine-${DATE}
-PKGNAME=	wine-99.10.31
+PKGNAME=	wine-99.11.14
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	ALPHA/wine/development
@@ -17,14 +16,17 @@ MAINTAINER=	se@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
+DATE=		991114
 WRKSRC=		${WRKDIR}/wine-${DATE}
 GNU_CONFIGURE=	yes
 MAN1=		wine.1
-MAN1=		wine.conf.5
+MAN5=		wine.conf.5
 ONLY_FOR_ARCHS=	i386
 
+.if !defined(NDEBUG)
 STRIP=
 CFLAGS+=	-g
+.endif
 
 post-configure:
 		cd ${WRKSRC} && make depend
