@@ -2,7 +2,7 @@
 # Date created:		01 Sep 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/uvscan-dat/Makefile,v 1.48 2001/08/29 17:39:46 jeh Exp $
+# $FreeBSD: ports/security/uvscan-dat/Makefile,v 1.49 2001/09/05 11:36:06 jeh Exp $
 #
 
 PORTNAME=	uvscan_dat
@@ -29,7 +29,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/libexec/uvscan
 .endfor
 	${MKDIR} ${PREFIX}/share/doc/uvscan
-.for file in reseller.txt readme.txt packing.lst
+.for file in reseller.txt packing.lst
 	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/uvscan
 .endfor
 	${INSTALL_SCRIPT} ${WRKDIR}/update_dat ${PREFIX}/sbin
