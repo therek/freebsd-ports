@@ -2,11 +2,11 @@
 # Date created:				11 August 2000
 # Whom:					Peter Haight <peterh@sapros.com>
 #
-# $FreeBSD: ports/net/fugu/Makefile,v 1.3 2001/04/06 06:34:54 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fugu
-PORTVERSION=	1.1.6
+PORTVERSION=	1.1.8
 CATEGORIES=	net python
 MASTER_SITES=	http://fugu.gale.org/dist/
 
@@ -18,6 +18,7 @@ USE_OPENSSL=	yes
 USE_PYTHON=	yes
 USE_XLIB=	yes
 USE_X_PREFIX=	yes
+USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
 
 CFLAGS+=	-I${LOCALBASE}/include -L${LOCALBASE}/lib
