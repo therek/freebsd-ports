@@ -3,7 +3,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.55 1999/11/03 09:45:25 tg Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.56 2000/01/06 11:46:18 tg Exp $
 #
 
 DISTNAME=       py152
@@ -34,7 +34,7 @@ SETUP_FILE=	Setup
 #
 # Support for Tk is compiled in by default only if X11 is installed.
 #
-.if exists(${X11_BASE})
+.if exists(${X11BASE})
 WITH_TK?=	yes
 .endif
 .if defined(WITH_TK) && $(WITH_TK) == yes
