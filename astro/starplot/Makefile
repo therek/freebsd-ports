@@ -2,11 +2,11 @@
 # Date created:				Mon Aug 20 09:08:07 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/starplot/Makefile,v 1.1 2001/08/30 04:50:19 trevor Exp $
 #
 
 PORTNAME=	starplot
-PORTVERSION=	0.92.1
+PORTVERSION=	0.92.2
 CATEGORIES=	astro
 MASTER_SITES=	http://www.princeton.edu/~kmccarty/downloads/
 
