@@ -2,7 +2,7 @@
 # Date created:				Sat Mar 10 16:40:06 EST 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.7 2001/05/01 18:11:59 lioux Exp $
+# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.8 2001/05/03 01:34:44 lioux Exp $
 #
 
 PORTNAME?=	cs
@@ -50,7 +50,7 @@ pre-patch:
 # remove trailing ^M
 .for file in *.cfg */*.cfg *.gam */*.gam *.htm */*.htm \
 	*.inf */*.inf *.lst */*.lst *.sc */*.sc \
-	*.scr */*.scr *.txt */*.txt
+	*.scr */*.scr *.txt */*.txt *.TXT */*.TXT
 	@${PERL} -pi -ne 's!\r\n!\n!' ${WRKSRC}/${file} >/dev/null 2>/dev/null
 .endfor
 
