@@ -3,7 +3,7 @@
 # Date created:		08 Jan 2000
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/security/dsniff/Makefile,v 1.1 2000/01/09 03:13:57 kris Exp $
+# $FreeBSD: ports/security/dsniff/Makefile,v 1.2 2000/01/09 05:14:18 kris Exp $
 
 DISTNAME=	dsniff-1.2
 CATEGORIES=	security
@@ -15,5 +15,6 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet \
 		${LOCALBASE}/lib/libnids.a:${PORTSDIR}/net/libnids
 
 GNU_CONFIGURE=	yes
+USE_XLIB=	yes
 
 .include <bsd.port.mk>
