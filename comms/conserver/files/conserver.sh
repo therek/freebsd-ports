@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/comms/conserver/files/conserver.sh,v 1.2 2000/11/21 17:31:44 obrien Exp $
+# $FreeBSD: ports/comms/conserver/files/conserver.sh,v 1.3 2000/11/23 12:03:35 obrien Exp $
 
 if ! PREFIX=$(expr $0 : "\(/.*\)/etc/rc\.d/$(basename $0)\$"); then
     echo "$0: Cannot determine the PREFIX" >&2
@@ -20,7 +20,7 @@ restart)
 	$0 stop
 	$0 start
 	;;
-status)
+status|stat)
 	ps -auxww | egrep '(conserver|console)' | egrep -v "($0|egrep)"
 	;;
 *)
