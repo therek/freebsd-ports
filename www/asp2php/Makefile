@@ -2,7 +2,7 @@
 # Date created:				Thu 29 Jun 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/asp2php/Makefile,v 1.1 2000/06/29 20:05:44 will Exp $
+# $FreeBSD: ports/www/asp2php/Makefile,v 1.2 2000/10/05 06:47:40 reg Exp $
 #
 
 PORTNAME=	asp2php
@@ -21,8 +21,8 @@ WANT_GTK=	yes
 
 .if defined(HAVE_GTK)
 USE_GTK=	yes
-ALL_TARGET+=	gtkasp2php
-INSTALL_TARGET+=install-gtk
+ALL_TARGET=	all gtkasp2php
+INSTALL_TARGET=	install install-gtk
 PLIST_SUB+=	WANT_GTK=""
 .else
 PLIST_SUB+=	WANT_GTK="@comment "
