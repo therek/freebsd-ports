@@ -2,13 +2,13 @@
 # Date created:		04 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/twinlib/Makefile,v 1.7 2000/06/16 21:51:10 asami Exp $
+# $FreeBSD: ports/graphics/twinlib/Makefile,v 1.8 2000/06/22 05:52:02 will Exp $
 #
 
 PORTNAME=	twinlib
 PORTVERSION=	0.2.3
 CATEGORIES=	graphics devel
-MASTER_SITES=	http://rio.xdev.org/twinlib/
+MASTER_SITES=	http://nroard.free.fr/twinlib/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
