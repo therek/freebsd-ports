@@ -2,7 +2,7 @@
 # Date created:				28 September 2001
 # Whom:					Alexey Zelkin <phantom@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/bugzilla/Makefile,v 1.1 2001/10/01 13:18:55 phantom Exp $
 #
 
 PORTNAME=	bugzilla
@@ -38,7 +38,7 @@ BUGZILLADIR=	${PREFIX}/www/data.default/bugzilla
 BUGZILLADOCS=	html images txt rel_notes.txt
 BONSAIPERLWC=	*.cgi *.pl *.pm processmail syncshadowdb
 
-pre-everything:
+pre-everything::
 	@${ECHO_MSG} ""
 	@${ECHO_MSG} "You may use the following options:"
 	@${ECHO_MSG} ""
