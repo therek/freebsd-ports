@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.431 2000/11/16 20:11:48 demon Exp $
+# $FreeBSD: ports/net/Makefile,v 1.432 2000/11/17 23:08:14 kris Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -232,6 +232,7 @@
     SUBDIR += ruby-drb
     SUBDIR += ruby-icmp
     SUBDIR += ruby-ldap
+    SUBDIR += ruby-pcap
     SUBDIR += ruby-snmp
     SUBDIR += ruby-uri
     SUBDIR += rwhois
