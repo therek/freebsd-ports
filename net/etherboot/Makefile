@@ -1,12 +1,12 @@
 # New ports collection makefile for:   etherboot
-# Version required:    4.1
+# Version required:    4.2.9
 # Date created:        16 April 1999
 # Whom:                Doug Ambrisko <ambrisko@whistle.com>
 #
-# $FreeBSD: ports/net/etherboot/Makefile,v 1.5 1999/08/30 14:22:40 peter Exp $
+# $FreeBSD: ports/net/etherboot/Makefile,v 1.6 1999/09/27 02:23:47 steve Exp $
 #
 
-DISTNAME=	etherboot-4.2.5
+DISTNAME=	etherboot-4.2.9
 PKGNAME=	etherboot-4.2
 CATEGORIES=	net
 MASTER_SITES=	http://www.slug.org.au/etherboot/ \
