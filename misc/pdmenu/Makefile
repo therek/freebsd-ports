@@ -2,11 +2,13 @@
 # Date created:		14 December 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/misc/pdmenu/Makefile,v 1.10 2000/11/09 01:32:03 nbm Exp $
+# $FreeBSD$
 
 PORTNAME=	pdmenu
 PORTVERSION=	1.2.65
 CATEGORIES=	misc
+# http://kitenet.net is unreachable for a long time now, asked the
+# author and maintaier for a known replacement - edwin 20021227
 MASTER_SITES=	http://kitenet.net/programs/code/pdmenu/
 DISTNAME=	pdmenu_${PORTVERSION}
 
