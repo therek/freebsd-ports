@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.626 2001/08/29 02:27:30 petef Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.627 2001/08/29 12:34:50 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -72,7 +72,6 @@
     SUBDIR += cons
     SUBDIR += cons-test
     SUBDIR += cook
-    SUBDIR += cpp2html
     SUBDIR += cppadvio
     SUBDIR += cproto
     SUBDIR += crossgo32
