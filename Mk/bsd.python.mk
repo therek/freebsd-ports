@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.50 2004/06/21 01:33:52 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.51 2004/07/08 15:53:45 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -251,7 +251,7 @@ check-makevars::
 PYTHON_MASTER_SITES=		${MASTER_SITE_PYTHON}
 .if defined(PYTHON_REL) && ${PYTHON_REL} == 240
 PYTHON_MASTER_SITE_SUBDIR=	ftp/python/2.4
-PYTHON_DISTFILE=			Python-${PYTHON_PORTVERSION:S/2.4./2.4/}.tar.gz
+PYTHON_DISTFILE=			Python-${PYTHON_PORTVERSION:S/2.4./2.4/}.tgz
 PYTHON_WRKSRC=				${WRKDIR}/Python-${PYTHON_PORTVERSION:S/2.4./2.4/}
 .else
 PYTHON_MASTER_SITE_SUBDIR=	ftp/python/${PYTHON_PORTVERSION}
