@@ -3,7 +3,7 @@
 # Date created:		30 September 1999
 # Whom:			cjm2
 #
-# $FreeBSD: ports/net/ddup/Makefile,v 1.1.1.1 1999/11/01 02:08:06 steve Exp $
+# $FreeBSD: ports/net/ddup/Makefile,v 1.2 2000/01/02 11:35:01 obrien Exp $
 #
 
 DISTNAME=	ddup-2.0.4
@@ -22,6 +22,7 @@ post-configure:
 		${WRKSRC}/INSTALL-C
 
 post-install:
+	${INSTALL_MAN} ${FILESDIR}/ddup.1 ${PREFIX}/man/man1
 	strip ${PREFIX}/sbin/ddup
 
 .include <bsd.port.mk>
