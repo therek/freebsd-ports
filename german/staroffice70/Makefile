@@ -2,7 +2,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/editors/staroffice52/Makefile,v 1.27 2001/06/03 16:29:55 obrien Exp $
+# $FreeBSD: ports/editors/staroffice52/Makefile,v 1.28 2001/09/04 22:30:19 alex Exp $
 #
 
 PORTNAME=	staroffice
@@ -40,7 +40,7 @@ INSTDB.INS=	${PREFIX}/office52/program/instdb.ins
 SUNSOLVE=	${WRKDIR}/109939-02
 ADABAS_DIST=	soa-5_2-ga-bin-linux-en.bin
 SIZE!=		/bin/df -k . | /usr/bin/tail -n 1 | /usr/bin/awk '{print $$4}'
-LINPROCFS!=	mount | grep linprocfs | awk '{print $1}'
+LINPROCFS!=	/sbin/mount | /usr/bin/grep linprocfs | /usr/bin/awk '{print $1}'
 
 .include <bsd.port.pre.mk>
 
@@ -52,7 +52,7 @@ pre-fetch:
 	@${ECHO} -----------------------------------------------------------
 	@${ECHO}
 	@${ECHO} Staroffice setup needs a running linprocfs, which is not
-	@${ECHO} activated on your system. Please read the linprocfs(5)
+	@${ECHO} activated on your system. Please read the linprocfs\(5\)
 	@${ECHO} manpage and add the following line to /etc/fstab:
 	@${ECHO}
 	@${ECHO} linproc /compat/linux/proc linprocfs rw 0 0

@@ -2,7 +2,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/german/staroffice52/Makefile,v 1.22 2001/06/03 16:29:56 obrien Exp $
+# $FreeBSD: ports/german/staroffice52/Makefile,v 1.23 2001/09/04 22:30:18 alex Exp $
 #
 
 PORTNAME=	staroffice
@@ -38,7 +38,7 @@ INSTDB.INS=	${PREFIX}/office52/program/instdb.ins
 SUNSOLVE=	${WRKDIR}/109939-02
 ADABAS_DIST=	soa-5_2-ga-bin-linux-de.bin
 SIZE!=		/bin/df -k . | /usr/bin/tail -n 1 | /usr/bin/awk '{print $$4}'
-LINPROCFS!=	mount | grep linprocfs | awk '{print $1}'
+LINPROCFS!=	/sbin/mount | /usr/bin/grep linprocfs | /usr/bin/awk '{print $1}'
 
 .include <bsd.port.pre.mk>
 
@@ -51,7 +51,7 @@ pre-fetch:
 	@${ECHO}
 	@${ECHO} Staroffice benoetigt ein gemountetes linprocfs, das auf
 	@${ECHO} ihrem System nicht aktiviert ist. Bitte lesen Sie die
-	@${ECHO} linprocfs(5) manpage und fuegen Sie folgende Line zu der
+	@${ECHO} linprocfs\(5\) manpage und fuegen Sie folgende Line zu der
 	@${ECHO} Datei /etc/fstab hinzu:
 	@${ECHO}
 	@${ECHO} linproc /compat/linux/proc linprocfs rw 0 0
