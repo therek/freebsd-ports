@@ -2,7 +2,7 @@
 # Date created:				23 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/ncurses/Makefile,v 1.24 2000/11/10 12:52:47 tg Exp $
+# $FreeBSD: ports/devel/ncurses/Makefile,v 1.25 2000/11/13 11:59:46 tg Exp $
 #
 
 PORTNAME=		ncurses
@@ -14,6 +14,12 @@ MASTER_SITE_SUBDIR=	ncurses
 MAINTAINER=		ports@FreeBSD.org
 
 Y2K=			http://www.gnu.org/software/year2000.html
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400000
+FORBIDDEN=	already is in the base system
+.endif
 
 MANUAL_PACKAGE_BUILD=	conflicts with system ncurses
 USE_LIBTOOL=		yes
@@ -191,4 +197,4 @@ post-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/c++/${file} ${PREFIX}/share/examples/ncurses/c++
 .endfor
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
