@@ -2,11 +2,11 @@
 # Date created:		25 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/converters/xunicode/Makefile,v 1.4 2001/03/18 14:23:58 knu Exp $
+# $FreeBSD: ports/converters/xunicode/Makefile,v 1.5 2001/04/19 18:54:36 knu Exp $
 #
 
 PORTNAME=	xunicode
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.3
 CATEGORIES=	converters x11
 MASTER_SITES=	http://www.ab.wakwak.com/~tino/jatk/
 
