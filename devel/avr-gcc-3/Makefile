@@ -2,11 +2,11 @@
 # Date created:		29 Nov 2000
 # Whom:			Joerg Wunsch <joerg@freebsd.org>
 #
-# $FreeBSD: ports/devel/avr-gcc/Makefile,v 1.9 2001/08/12 16:33:45 joerg Exp $
+# $FreeBSD: ports/devel/avr-gcc/Makefile,v 1.10 2001/08/12 20:18:16 joerg Exp $
 #
 
 PORTNAME=	gcc
-PORTVERSION=	3.0
+PORTVERSION=	3.0.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	${PORTNAME}/${PORTNAME}-${PORTVERSION}
