@@ -2,7 +2,7 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1)
 # Whom:			torstenb
 #
-# $FreeBSD: ports/news/inn-stable/Makefile,v 1.48 2000/02/26 11:01:26 andreas Exp $
+# $FreeBSD: ports/news/inn-stable/Makefile,v 1.49 2000/04/09 17:32:57 cpiazza Exp $
 
 PORTNAME=	inn-stable
 PORTVERSION=	v22
@@ -85,10 +85,10 @@ pre-extract:
 	@${ECHO} ">> building inn2 with NEWSINFO=${NEWSINFO}..."
 
 pre-install:
-.for dir in ${NEWSSPOOL} ${NEWSLIB} ${NEWSLOG} ${NEWSMAN} ${NEWSINFO}
-	${MKDIR} ${dir}
-	${CHOWN} news:news ${dir}
-.endfor
+	@for dir in ${NEWSSPOOL} ${NEWSLIB} ${NEWSLOG} ${NEWSMAN} ${NEWSINFO}; do \
+		${MKDIR} $$dir; \
+		${CHOWN} news:news $$dir; \
+	done
 
 update: build
 	@(cd ${WRKSRC} ; ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} update)
