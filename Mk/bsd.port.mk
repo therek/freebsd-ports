@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.407 2002/04/02 05:24:33 kris Exp $
+# $FreeBSD$
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3154,6 +3154,7 @@ PACKAGE-DEPENDS-LIST= \
 			if (${ECHO} $$checked | ${GREP} -qwv "$$dir"); then \
 				childout=$$(cd $$dir; ${MAKE} CHILD_DEPENDS=yes PARENT_CHECKED="$$checked" package-depends-list); \
 				set -- $$childout; \
+				childname=""; childdir=""; \
 				while [ $$\# != 0 ]; do \
 					childname="$$childname $$1"; \
 					childdir="$$childdir $$2"; \
