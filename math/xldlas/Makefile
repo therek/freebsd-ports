@@ -2,7 +2,7 @@
 # Date created:         20 Dec 97
 # Whom:                 Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/math/xldlas/Makefile,v 1.9 1999/08/30 11:53:40 peter Exp $
+# $FreeBSD: ports/math/xldlas/Makefile,v 1.10 2000/04/14 07:20:53 asami Exp $
 #
 
 PORTNAME=	xldlas
@@ -14,7 +14,7 @@ MASTER_SITES=	http://a42.com/~thor/xldlas/			\
 MASTER_SITE_SUBDIR=	apps/graphics/visualization
 EXTRACT_SUFX=	-source.tgz
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
 
