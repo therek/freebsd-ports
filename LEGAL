@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.312 2003/11/19 02:45:13 trevor Exp $
+# $FreeBSD: ports/LEGAL,v 1.313 2003/11/22 23:03:56 pav Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -101,6 +101,8 @@ dnews			ports/news/dnews	Only free for schools and
 						We currently ask for permission
 						to put a package on the CD-ROM.
 dsnake-*		ports/games/dsnake	Licence prohibits any reselling.
+eawpats*		ports/audio/eawpats	Some of the patches are not
+						for commercial use.
 edith*			ports/editors/edith	Redistribution not allowed.
 eijiro*.txt		ports/japanese/eijiro-fpw The original dictionary is not
 						free
