@@ -2,7 +2,7 @@
 # Date created:				1999-01-11
 # Whom:					Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/deft/Makefile,v 1.6 2000/10/10 00:43:25 jeh Exp $
+# $FreeBSD: ports/biology/deft/Makefile,v 1.7 2000/10/10 00:48:15 jeh Exp $
 #
 
 PORTNAME=	deft
@@ -25,7 +25,7 @@ BUILD_DEPENDS=	ftn77:${PORTSDIR}/lang/f77
 .endif
 
 post-patch:
-	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g \
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g"\
 		${WRKDIR}/${DISTNAME}/examples/DeFT
 
 post-configure:
