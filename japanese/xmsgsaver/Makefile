@@ -2,15 +2,15 @@
 # Date created:		8 March 2000
 # Whom:			Tatsuya Kudoh (CDR/TK)
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/xmsgsaver/Makefile,v 1.1 2000/05/01 02:54:03 steve Exp $
 #
 
 PORTNAME=	xmsgsaver
-PORTVERSION=	1.7
+PORTVERSION=	1.8.1
 CATEGORIES=	japanese misc
-MASTER_SITES=	http://delegate.uec.ac.jp:8081/club/koken/~kudoh/soft/
+MASTER_SITES=	http://www.xdsl.ne.jp/ga/cdr/soft/dl/
 
-MAINTAINER=	kudoh@koken.club.uec.ac.jp
+MAINTAINER=	cdr@ga.xdsl.ne.jp
 
 LIB_DEPENDS=	VFlib2.24:${PORTSDIR}/japanese/vflib
 
