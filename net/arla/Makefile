@@ -2,11 +2,11 @@
 # Date created:			09 Sep 1998
 # Whom:				Peter Hawkins <thepish@FreeBSD.org>
 #
-# $FreeBSD: ports/net/arla/Makefile,v 1.13 2000/05/18 03:11:59 kris Exp $
+# $FreeBSD: ports/net/arla/Makefile,v 1.14 2000/07/11 23:43:18 assar Exp $
 #
 
 PORTNAME=	arla
-PORTVERSION=	0.33.1
+PORTVERSION=	0.34.2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.stacken.kth.se/pub/arla/
 
