@@ -2,11 +2,12 @@
 # Date created:				19th June 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/gnomedb/Makefile,v 1.1 2001/06/19 08:12:10 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnomedb
 PORTVERSION=	0.2.10
+PORTREVISION=	1
 CATEGORIES=	databases gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-db
