@@ -3,12 +3,12 @@
 # Date created:		31 October 1999
 # Whom:			Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/sysutils/ipsc/Makefile,v 1.2 1999/12/10 01:21:46 imura Exp $
+# $FreeBSD: ports/sysutils/ipsc/Makefile,v 1.3 2000/01/12 05:57:53 cpiazza Exp $
 #
 
 DISTNAME=	ipsc-0.4.2-src
 PKGNAME=	ipsc-0.4.2
-CATEGORIES=	sysutils gnome x11 
+CATEGORIES=	sysutils gnome
 MASTER_SITES=	http://www.interloper.net/~dan/software/dist/ipsc/
 
 MAINTAINER=	jeremy@external.org
@@ -19,6 +19,9 @@ LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		gnome.3:${PORTSDIR}/x11/gnomelibs
 .endif
 
+.if defined(USE_GNOME)
+USE_XLIB=	YES
+.endif
 WRKSRC=		${WRKDIR}/ipsc/src
 
 post-extract:
