@@ -4,10 +4,10 @@
 # Date created:         8 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/misc/less/Makefile,v 1.25 2000/02/14 23:25:26 ache Exp $
+# $FreeBSD: ports/misc/less/Makefile,v 1.26 2000/03/03 20:06:09 asami Exp $
 #
 
-DISTNAME=       less-346
+DISTNAME=       less-352
 CATEGORIES=	misc
 MASTER_SITES=   http://home.flash.net/~marknu/less/ \
 		${MASTER_SITE_GNU}
