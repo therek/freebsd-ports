@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gnapster
-# Version required:	1.3.7
+# Version required:	1.3.8
 # Date created:		24 December 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnapster/Makefile,v 1.7 2000/03/25 05:02:57 cpiazza Exp $
+# $FreeBSD: ports/audio/gnapster/Makefile,v 1.8 2000/03/29 03:12:52 cpiazza Exp $
 #
 
-DISTNAME=	gnapster-1.3.7
+DISTNAME=	gnapster-1.3.8
 CATEGORIES=	audio
 MASTER_SITES=	http://www.gotlinux.org/~jasta/files/
 
