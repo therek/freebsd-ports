@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.330 2000/01/29 22:30:37 steve Exp $
+# $FreeBSD: ports/net/Makefile,v 1.331 2000/02/07 19:34:04 andreas Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -43,6 +43,7 @@
     SUBDIR += dgd-lpmud
     SUBDIR += dgd-net
     SUBDIR += dhid
+    SUBDIR += dhcpconf
     SUBDIR += dip
     SUBDIR += dlint
     SUBDIR += dnsutl
