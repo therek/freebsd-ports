@@ -2,10 +2,10 @@
 # Date created:		1999-08-30
 # Whom:			Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/xmolwt/Makefile,v 1.4 2000/07/07 19:59:23 steve Exp $
+# $FreeBSD: ports/biology/xmolwt/Makefile,v 1.5 2000/10/05 06:36:01 reg Exp $
 
 PORTNAME=	xmolwt
-PORTVERSION=	0.3
+PORTVERSION=	0.4
 CATEGORIES=	biology
 MASTER_SITES=	http://www.st.hirosaki-u.ac.jp/~rmiya/xmolwt/
 
