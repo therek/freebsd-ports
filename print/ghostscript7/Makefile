@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript-gnu/Makefile,v 1.50 2001/09/11 02:59:06 ache Exp $
+# $FreeBSD: ports/print/ghostscript-gnu/Makefile,v 1.51 2001/09/11 19:12:18 knu Exp $
 #
 
 PORTNAME=	ghostscript
@@ -127,7 +127,7 @@ CFLAGS+=	-D_LITTLE_ENDIAN
 
 .SILENT:
 
-pre-everything:
+pre-everything::
 .if !defined(A4)
 	${ECHO_MSG} "Type \"make A4=yes\" if you want -DA4 for compilation."
 .else
