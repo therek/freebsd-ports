@@ -2,11 +2,11 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/converters/ruby-iconv/Makefile,v 1.11 2000/10/12 13:52:18 knu Exp $
+# $FreeBSD: ports/converters/ruby-iconv/Makefile,v 1.12 2000/11/29 11:46:39 sobomax Exp $
 #
 
 PORTNAME=	iconv
-PORTVERSION=	0.4.3
+PORTVERSION=	0.4.4
 CATEGORIES=	converters ruby
 MASTER_SITES=	http://member.nifty.ne.jp/nokada/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
