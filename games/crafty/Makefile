@@ -2,11 +2,11 @@
 # Date created:				31 May 1998
 # Whom:					Stefan Eggers <seggers@semyam.dinoco.de>
 #
-# $FreeBSD: ports/games/crafty/Makefile,v 1.22 2000/01/12 00:00:26 mph Exp $
+# $FreeBSD: ports/games/crafty/Makefile,v 1.23 2000/04/14 00:45:47 mharo Exp $
 #
 
 PORTNAME=	crafty
-PORTVERSION=	17.6
+PORTVERSION=	17.9
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.cis.uab.edu/pub/hyatt/ \
 		ftp://ftp.cis.uab.edu/pub/hyatt/common/ \
@@ -14,13 +14,13 @@ MASTER_SITES=	ftp://ftp.cis.uab.edu/pub/hyatt/ \
 		ftp://ftp.jpunix.com/pub/hyatt/ \
 		ftp://ftp.jpunix.com/pub/hyatt/common/ \
 		ftp://ftp.jpunix.com/pub/hyatt/v17/
-DISTFILES=	crafty-17.6.tar.gz crafty.doc crafty.faq read.me start.zip
+DISTFILES=	crafty-${PORTVERSION}.tar.gz crafty.doc crafty.faq read.me start.zip
 
 MAINTAINER=	seggers@semyam.dinoco.de
 
 ALL_TARGET=	crafty
 DIST_SUBDIR=	crafty
-EXTRACT_ONLY=	crafty-17.6.tar.gz
+EXTRACT_ONLY=	crafty-${PORTVERSION}.tar.gz
 IGNOREFILES=	crafty.doc crafty.faq read.me
 
 MAN6=		crafty.6
