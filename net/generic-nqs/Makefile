@@ -3,7 +3,7 @@
 # Date created:         01 May 1998
 # Whom:                 tonym
 #
-# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.5 1999/12/27 15:47:27 steve Exp $
+# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.6 2000/03/04 23:02:48 cpiazza Exp $
 #
 # View this file with tabstop=4
 #
@@ -13,6 +13,8 @@ CATEGORIES=		net
 MASTER_SITES=	http://ftp.gnqs.org/pub/gnqs/source/by-version-number/v3.50/
 
 MAINTAINER=		tony.maher@ebioinformatics.com
+
+FORBIDDEN=	"Local root compromise"
 
 Y2K=			http://www.gnqs.org/Year2000.htm
 
