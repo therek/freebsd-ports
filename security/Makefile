@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.83 2000/01/10 04:57:15 dbaker Exp $
+# $FreeBSD: ports/security/Makefile,v 1.84 2000/01/14 02:12:49 asami Exp $
 #
 
     SUBDIR += bjorb
@@ -58,6 +58,7 @@
     SUBDIR += portscanner
     SUBDIR += portsentry
     SUBDIR += rsaref
+    SUBDIR += saint
     SUBDIR += skip
     SUBDIR += slush
     SUBDIR += smurflog
