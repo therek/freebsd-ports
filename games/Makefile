@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.274 2000/05/30 19:27:05 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.275 2000/06/05 12:03:52 sobomax Exp $
 #
 
     SUBDIR += 3dc
@@ -117,6 +117,7 @@
     SUBDIR += ptkei
     SUBDIR += pysol
     SUBDIR += qcc
+    SUBDIR += qix
     SUBDIR += qstat
     SUBDIR += quakeforge
     SUBDIR += quakeserver
