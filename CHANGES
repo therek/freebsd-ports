@@ -10,7 +10,7 @@ in the release notes.
 
 All ports committers are allowed to commit to this file.
 
-20050107:
+20050207:
 AUTHOR: portmgr@FreeBSD.org
   The following changes were committed:
 
@@ -795,4 +795,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.36 2004/12/31 18:23:43 netchild Exp $
+$FreeBSD: ports/CHANGES,v 1.37 2005/02/07 12:27:18 krion Exp $
