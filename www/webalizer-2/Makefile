@@ -3,11 +3,11 @@
 # Date created:         18.Apr.2000
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.15 2000/04/18 18:10:57 ache Exp $
+# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.16 2000/04/18 19:04:24 ache Exp $
 #
 
 PORTNAME=	webalizer
-PORTVERSION=    2.00-11
+PORTVERSION=    2.00-12
 CATEGORIES=	www
 MASTER_SITES=   ftp://ftp.mrunix.net/pub/webalizer/pre-release/
 DISTNAME=       ${PORTNAME}-${PORTVERSION}-src
