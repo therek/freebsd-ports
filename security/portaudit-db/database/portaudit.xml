@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 This file is in the public domain.
-  $FreeBSD: ports/security/portaudit-db/database/portaudit.xml,v 1.10 2004/08/17 07:56:37 eik Exp $
+  $FreeBSD: ports/security/portaudit-db/database/portaudit.xml,v 1.11 2004/08/23 23:12:02 eik Exp $
 -->
 <!DOCTYPE vuxml PUBLIC "-//vuxml.org//DTD VuXML 1.1//EN" "http://www.vuxml.org/dtd/vuxml-1/vuxml-11.dtd">
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -139,6 +139,8 @@ This file is in the public domain.
       <url>http://www.idefense.com/application/poi/display?id=125&amp;type=vulnerabilities&amp;flashstatus=false</url>
       <url>http://www.osvdb.org/8654</url>
       <url>http://www.osvdb.org/8655</url>
+      <bid>10931</bid>
+      <bid>10932</bid>
     </references>
     <dates>
       <discovery>2004-03-30</discovery>
@@ -751,7 +753,7 @@ This file is in the public domain.
     <topic>gaim remotely exploitable vulnerabilities in MSN component</topic>
     <affects>
       <package>
-	<name>{ja-,}gaim</name>
+	<name>{ja-,ru-,}gaim</name>
 	<range><lt>0.81_1</lt></range>
       </package>
     </affects>
@@ -774,7 +776,7 @@ This file is in the public domain.
     <dates>
       <discovery>2004-08-12</discovery>
       <entry>2004-08-12</entry>
-      <modified>2004-08-12</modified>
+      <modified>2004-08-30</modified>
     </dates>
   </vuln>
 
