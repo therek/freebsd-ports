@@ -3,7 +3,7 @@
 # Date created:		24 Nov 1998
 # Whom:			mac@jp.freebsd.org
 #
-# $FreeBSD: ports/x11-wm/windowmaker-i18n/Makefile,v 1.63 1999/09/18 03:12:10 steve Exp $
+# $FreeBSD: ports/x11-wm/windowmaker-i18n/Makefile,v 1.64 1999/10/01 01:30:19 dan Exp $
 #
 
 DISTNAME=	WindowMaker-0.61.0
@@ -19,7 +19,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
-		PropList.1:${PORTSDIR}/devel/libPropList \
+		PropList.2:${PORTSDIR}/devel/libPropList \
 		intl.1:${PORTSDIR}/devel/gettext
 BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
 RUN_DEPENDS=	${X11BASE}/share/WindowMaker/Themes/Checker.themed/style:${PORTSDIR}/graphics/wmicons
