@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-emacs/Makefile,v 1.25 2000/10/08 10:19:29 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	apel
@@ -20,6 +20,9 @@ APEL_VER=	10.3
 APEL_SETUPEL=	apel-setupel.el
 # document install directory by install-doc target
 APELDOCDIR?=	share/doc/apel
+# apel lispdir
+APEL_LISPDIR?=			${LOCALBASE}/${EMACS_SITE_LISPDIR}
+APEL_VERSION_SPECIFIC_LISPDIR?=	${LOCALBASE}/${EMACS_VERSION_SITE_LISPDIR}
 
 # This is a master port.
 PORTCLASS?=	master
@@ -36,6 +39,9 @@ ALL_TARGET?=	elc
 # environments
 SCRIPTS_ENV+=	TARGETS="${APEL_SETUPEL}"
 PLIST_SUB+=	APELDOCDIR=${APELDOCDIR} APEL_SETUPEL=${APEL_SETUPEL}
+MAKE_ARGS+=	PREFIX="${LOCALBASE}" \
+		LISPDIR="${APEL_LISPDIR}" \
+		VERSION_SPECIFIC_LISPDIR="${APEL_VERSION_SPECIFIC_LISPDIR}"
 
 .include <bsd.port.pre.mk>
 
