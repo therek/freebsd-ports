@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 10:58:59 2001
 # Whom:					will
 #
-# $FreeBSD: ports/math/p5-Math-Currency/Makefile,v 1.2 2001/03/01 06:38:17 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Math-Currency
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${BUILD_DEPENDS}
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 500007
-BROKEN=		"Needs Perl 5.6.0 for Math::BigFloat"
+IGNORE=		"Needs Perl 5.6.0 for Math::BigFloat"
 .endif
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
