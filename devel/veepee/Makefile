@@ -2,7 +2,7 @@
 # Date created:				2 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/veepee/Makefile,v 1.8 2001/03/29 16:33:23 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	veepee
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.river-bank.demon.co.uk/software/
 DISTNAME=	VeePee-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
+
+BROKEN=		"Does not build"
 
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd
 
