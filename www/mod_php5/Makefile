@@ -2,7 +2,7 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.138 2001/05/10 07:32:28 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.139 2001/05/10 08:24:36 dirk Exp $
 #
 
 PORTNAME?=	mod_php4
@@ -63,8 +63,6 @@ pre-fetch:
 
 post-install:
 .if !defined(STANDALONE)
-	@${ECHO} "Restarting Apache..."
-	@${PREFIX}/sbin/apachectl restart
 	@${INSTALL_DATA} ${WRKSRC}/php.ini-dist ${PREFIX}/etc
 .else
 	@${MKDIR} ${PREFIX}/etc/php.standalone

@@ -2,7 +2,7 @@
 # Date created:		Wed Feb 23 11:28:12 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php3/Makefile,v 1.125 2001/04/22 23:08:05 dirk Exp $
+# $FreeBSD: ports/www/mod_php3/Makefile,v 1.126 2001/05/10 08:24:36 dirk Exp $
 #
 
 PORTNAME?=	mod_php3
@@ -62,8 +62,6 @@ pre-fetch:
 
 post-install:
 .if !defined(STANDALONE)
-	@${ECHO} "Restarting Apache..."
-	@${PREFIX}/sbin/apachectl restart
 	@${INSTALL_DATA} ${WRKSRC}/php3.ini-dist ${PREFIX}/etc
 .else
 	@${MKDIR} ${PREFIX}/etc/php.standalone
