@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.78 2000/06/13 15:38:36 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.79 2000/06/20 20:14:43 will Exp $
 #
 
     SUBDIR += FWF
@@ -17,6 +17,7 @@
     SUBDIR += gtk-engines-collection
     SUBDIR += gtk10
     SUBDIR += gtk12
+    SUBDIR += gtkbe
     SUBDIR += gtkglarea
     SUBDIR += gtkstep
     SUBDIR += gtkstep-pastel
