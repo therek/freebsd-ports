@@ -3,7 +3,7 @@
 # Date created:         26 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/iozone/Makefile,v 1.23 1999/08/25 04:45:42 obrien Exp $
 #
 
 DISTNAME=       iozone
@@ -23,7 +23,7 @@ ALL_TARGET=
 MAN1=		iozone.1
 
 do-install:
-	${STRIP} ${WRKSRC}/iozone
+	strip ${WRKSRC}/iozone
 	${INSTALL_PROGRAM} ${WRKSRC}/iozone ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/iozone.1 ${PREFIX}/man/man1
 
