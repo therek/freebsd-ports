@@ -2,11 +2,11 @@
 # Date created:        18 November 2000
 # Whom:                Jason R. Mastaler <jason-freebsd@mastaler.com> et al.
 #
-# $FreeBSD: ports/audio/mad/Makefile,v 1.1 2000/12/19 15:38:59 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mad
-PORTVERSION=	0.12.5b
+PORTVERSION=	0.13.0b
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.mars.org/pub/mpeg/
