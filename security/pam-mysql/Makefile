@@ -2,7 +2,7 @@
 # Date created:				29 August 2000
 # Whom:	      				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/pam-mysql/Makefile,v 1.2 2000/10/13 20:18:29 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pam_mysql
@@ -11,7 +11,7 @@ CATEGORIES=	security databases
 MASTER_SITES=	http://download.sourceforge.net/pam-mysql/ \
 		http://www.freenix.no/~anders/
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	anders@FreeBSD.org
 
 LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
