@@ -1,10 +1,11 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.73 2000/06/09 20:43:57 ade Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.74 2000/06/11 05:50:48 imura Exp $
 #
 
     SUBDIR += FWF
     SUBDIR += Motif-dummy
     SUBDIR += Xaw3d
     SUBDIR += blt
+    SUBDIR += clean-theme-gtk
     SUBDIR += fltk
     SUBDIR += fox
     SUBDIR += gob
@@ -48,6 +49,7 @@
     SUBDIR += ruby-gtk
     SUBDIR += rubytk
     SUBDIR += slingshot
+    SUBDIR += thinice
     SUBDIR += tix
     SUBDIR += tk80
     SUBDIR += tk82
