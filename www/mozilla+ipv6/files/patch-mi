@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/www/mozilla+ipv6/files/patch-mi,v 1.7 2001/09/19 04:32:50 sumikawa Exp $
 
 --- nsprpub/config/FreeBSD.mk.orig	Sat Jul 29 03:50:35 2000
 +++ nsprpub/config/FreeBSD.mk	Mon Sep 17 10:47:08 2001
@@ -40,14 +40,3 @@ $FreeBSD$
  endif
  
  ARCH			= freebsd
-@@ -61,3 +63,10 @@
- MKSHLIB			= $(LD) $(DSO_LDOPTS)
- 
- G++INCLUDES		= -I/usr/include/g++
-+
-+# IPv6 support part of the KAME.
-+ifeq ($(shell test -f /usr/local/v6/lib/libinet6.a && echo kame),kame)
-+OS_LIBS			+= -L/usr/local/v6/lib -linet6
-+endif
-+
-+OS_LIBS			+= -lxpg4
