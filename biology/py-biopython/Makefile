@@ -2,7 +2,7 @@
 # Date created:		28 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/py-biopython/Makefile,v 1.5 2001/05/29 12:50:01 sobomax Exp $
+# $FreeBSD: ports/biology/py-biopython/Makefile,v 1.6 2001/06/15 13:25:55 wjv Exp $
 #
 
 PORTNAME=	biopython
@@ -76,7 +76,7 @@ PLIST_FNORB=	"@comment "
 
 pre-fetch:
 .if !defined(BATCH) && !defined(WITH_CORBA)
-	@ ${CAT} files/corba.msg
+	@ ${CAT} ${FILESDIR}/corba.msg
 .endif
 
 post-configure:
