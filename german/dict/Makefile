@@ -3,11 +3,11 @@
 # Date created:         6 August 1997
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/dict/Makefile,v 1.8 1999/08/29 11:29:43 peter Exp $
+# $FreeBSD: ports/german/dict/Makefile,v 1.9 1999/09/19 10:30:44 wosch Exp $
 #
 
-DISTNAME=       dict-1.1
-PKGNAME=        de-dict-1.1
+DISTNAME=       dict-1.2
+PKGNAME=        de-dict-1.2
 CATEGORIES=	german
 MASTER_SITES=   http://www.de.freebsd.org/~wosch/src/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${dict}.gz
