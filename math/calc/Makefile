@@ -2,16 +2,16 @@
 # Date created:         3 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/math/calc/Makefile,v 1.15 1999/12/26 20:24:20 billf Exp $
+# $FreeBSD: ports/math/calc/Makefile,v 1.16 2000/04/14 07:19:50 asami Exp $
 #
 
 PORTNAME=	calc
-PORTVERSION=	2.11.1
+PORTVERSION=	2.11.2
 CATEGORIES=	math
-MASTER_SITES=	ftp://reality.sgi.com/users/chongo/src/calc/		\
-		ftp://ftp.uu.net/pub/calc/				\
-		http://reality.sgi.com/chongo/src/calc/
-DISTNAME=	calc-2.11.1t3.0
+MASTER_SITES=	ftp://ftp.uu.net/pub/calc/ \
+		ftp://ftp.u-aizu.ac.jp/pub/SciEng/math/math-packs/calc/ \
+		ftp://ftp.batnet.com/pub/wombats/noll/ftp/pub/calc/
+DISTNAME=	calc-2.11.2t1.0
 
 MAINTAINER=	jmz@FreeBSD.org
 
