@@ -26,7 +26,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.5 2000/10/21 09:50:57 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.6 2000/10/22 21:33:10 des Exp $
 #
 
 use strict;
@@ -968,7 +968,7 @@ MAIN:{
 	    clean_tree();
 	} else {
 	    foreach $port (keys(%reqd)) {
-		if (!($reqd{$port} & &REQ_IMPLICIT)) {
+		if ($reqd{$port} == &REQ_EXPLICIT) {
 		    clean_port($port);
 		}
 	    }
@@ -988,7 +988,7 @@ MAIN:{
     # some dependencies (most commonly XFree86) may be bogus.
     if ($build || $packages) {
 	foreach $port (keys(%reqd)) {
-	    if (!($reqd{$port} & &REQ_IMPLICIT)) {
+	    if ($reqd{$port} == &REQ_EXPLICIT) {
 		build_port($port);
 	    }
 	}
