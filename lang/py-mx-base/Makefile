@@ -2,11 +2,11 @@
 # Date created:		18 March 2001
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/py-mx-base/Makefile,v 1.10 2001/03/22 13:33:59 tg Exp $
+# $FreeBSD: ports/lang/py-mx-base/Makefile,v 1.11 2001/03/26 11:38:29 tg Exp $
 #
 
 PORTNAME=	mx-base
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.1
 CATEGORIES=	lang python
 MASTER_SITES=	http://www.lemburg.com/python/ \
 		${MASTER_SITE_LOCAL}
