@@ -2,15 +2,17 @@
 # Date created:		16 November 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xsokoban/Makefile,v 1.13 2000/04/14 12:28:21 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xsokoban
 PORTVERSION=	3.3c
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.pmg.lcs.mit.edu/pub/xsokoban/
+MASTER_SITES=	http://www.cs.cornell.edu/andru/release/ \
+		ftp://ftp.pmg.lcs.mit.edu/pub/xsokoban/
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	A puzzle of pushing objects to the goals
 
 USE_IMAKE=	yes
 USE_XPM=	yes
