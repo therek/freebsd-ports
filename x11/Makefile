@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.277 2000/01/29 05:46:00 steve Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.278 2000/01/29 22:42:52 steve Exp $
 #
 
     SUBDIR += 9term
@@ -18,6 +18,7 @@
     SUBDIR += gnomecore
     SUBDIR += gnomelibs
     SUBDIR += gyroscope
+    SUBDIR += imwheel
     SUBDIR += kb2mb2
     SUBDIR += kde11
     SUBDIR += kde11-i18n
