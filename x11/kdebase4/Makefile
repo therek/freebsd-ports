@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.57 2000/10/28 23:22:11 will Exp $
+# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.58 2000/10/29 03:09:46 will Exp $
 #
 
 PORTNAME=	kdebase
@@ -11,7 +11,7 @@ CATEGORIES=	x11 kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	kevlo@FreeBSD.org
 
 LIB_DEPENDS=	kdeui.4:${PORTSDIR}/x11/kdelibs2 \
 		intl.1:${PORTSDIR}/devel/gettext

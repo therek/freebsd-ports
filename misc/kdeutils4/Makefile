@@ -2,7 +2,7 @@
 # Date created:				Sun 14 May 2000 02:52:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/kdeutils2/Makefile,v 1.46 2000/10/28 23:22:15 will Exp $
+# $FreeBSD: ports/misc/kdeutils2/Makefile,v 1.47 2000/10/29 03:09:49 will Exp $
 #
 
 PORTNAME=	kdeutils
@@ -11,7 +11,7 @@ CATEGORIES=	misc kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	kevlo@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.4:${PORTSDIR}/x11/kdelibs2

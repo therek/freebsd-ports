@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 16:33:15
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/koffice/Makefile,v 1.12 2000/10/30 02:25:22 will Exp $
+# $FreeBSD: ports/editors/koffice/Makefile,v 1.13 2000/10/30 02:47:57 will Exp $
 #
 
 PORTNAME=	koffice
@@ -11,7 +11,7 @@ CATEGORIES=	editors kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	kevlo@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2 \
 		iconv.1:${PORTSDIR}/converters/iconv

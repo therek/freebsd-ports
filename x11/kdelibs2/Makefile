@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.63 2000/10/29 00:21:14 will Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.64 2000/10/29 03:09:47 will Exp $
 #
 
 PORTNAME=	kdelibs
@@ -11,7 +11,7 @@ CATEGORIES=	x11 x11-toolkits
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	kevlo@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png \

@@ -2,7 +2,7 @@
 # Date created:				14 May 2000 02:45:53
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/kdetoys2/Makefile,v 1.16 2000/10/28 23:22:15 will Exp $
+# $FreeBSD: ports/x11-clocks/kdetoys2/Makefile,v 1.17 2000/10/29 03:09:48 will Exp $
 #
 
 PORTNAME=	kdetoys
@@ -11,7 +11,7 @@ CATEGORIES=	x11-clocks kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	kevlo@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2
 

@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 01:14:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.39 2000/10/28 23:22:15 will Exp $
+# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.40 2000/10/29 03:09:48 will Exp $
 #
 
 PORTNAME=	kdesupport
@@ -11,7 +11,7 @@ CATEGORIES=	converters kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	kevlo@FreeBSD.org
 
 BUILD_DEPENDS=	jade:${PORTSDIR}/textproc/jade \
 		${PREFIX}/share/sgml/linuxdoc:${PORTSDIR}/textproc/linuxdoc
