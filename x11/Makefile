@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.311 2000/11/21 06:52:45 dougb Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.312 2000/11/26 14:03:42 roam Exp $
 #
 
     SUBDIR += 9term
@@ -14,6 +14,7 @@
     SUBDIR += bgrot
     SUBDIR += blast
     SUBDIR += bricons
+    SUBDIR += buttonbox
     SUBDIR += dgs
     SUBDIR += dxpc
     SUBDIR += dynamag
