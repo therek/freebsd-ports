@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.84 2000/11/23 04:44:42 dburr Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.85 2000/11/23 04:58:28 dburr Exp $
 #
     SUBDIR += zpygresqlda
     SUBDIR += cdb
@@ -32,7 +32,6 @@
     SUBDIR += mysql323-server
     SUBDIR += mysqltcl
     SUBDIR += mytop
-    SUBDIR += p5-ApacheDBI
     SUBDIR += p5-ApacheDBILogConfig
     SUBDIR += p5-ApacheDBILogger
     SUBDIR += p5-DBD-CSV

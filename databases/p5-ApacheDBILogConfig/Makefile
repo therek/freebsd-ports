@@ -2,7 +2,7 @@
 # Date created:				November 22, 2000
 # Whom:	      				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/p5-ApacheDBILogConfig/Makefile,v 1.1 2000/11/23 04:44:53 dburr Exp $
 #
 
 PORTNAME=	Apache-DBILogConfig
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	dburr@FreeBSD.ORG
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VERSION}/Apache/DBI.pm:${PORTSDIR}/databases/p5-ApacheDBI \
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VERSION}/Apache/DBI.pm:${PORTSDIR}/www/p5-Apache-DBI \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VERSION}/${PERL_ARCH}/DBI.pm:${PORTSDIR}/databases/p5-DBI \
 		${LOCALBASE}/libexec/apache/libperl.so:${PORTSDIR}/www/mod_perl
 

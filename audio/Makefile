@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.190 2000/11/02 22:52:17 fenner Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.191 2000/11/03 17:08:14 fenner Exp $
 #
 
     SUBDIR += afsp
@@ -120,7 +120,6 @@
     SUBDIR += rio500
     SUBDIR += ripenc
     SUBDIR += ripit
-    SUBDIR += ripit-atapi
     SUBDIR += rosegarden
     SUBDIR += rplay
     SUBDIR += rsynth
