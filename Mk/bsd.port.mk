@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.386 2001/11/05 21:28:44 markm Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.387 2001/11/09 15:48:40 knu Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -941,8 +941,10 @@ NONEXISTENT?=	/nonexistent
 
 # Miscellaneous overridable commands:
 GMAKE?=			gmake
+ACLOCAL?=		aclocal14
 AUTOMAKE?=		automake14
 AUTOCONF?=		autoconf213
+AUTOHEADER?=		autoheader213
 LIBTOOL?=		libtool
 XMKMF?=			xmkmf -a
 .if exists(/sbin/md5)
