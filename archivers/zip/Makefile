@@ -3,13 +3,14 @@
 # Date created:		22 Dec 1994
 # Whom:			ache
 #
-# $FreeBSD: ports/archivers/zip/Makefile,v 1.22 2001/05/23 20:24:42 olgeni Exp $
+# $FreeBSD: ports/archivers/zip/Makefile,v 1.23 2001/08/06 01:11:41 dougb Exp $
 #
 
 PORTNAME=	zip
 PORTVERSION=	2.3
 CATEGORIES=	archivers
-MASTER_SITES=	${MASTER_SITE_TEX_CTAN:S,%SUBDIR%,tools/zip/info-zip/src/,}
+MASTER_SITES=	ftp://ftp.uu.net/pub/archiving/zip/src/ \
+		${MASTER_SITE_TEX_CTAN:S,%SUBDIR%,tools/zip/info-zip/src/,}
 ZCRYPT_SRC=	zcrypt29-exportable.zip
 DISTFILES=	zip23${EXTRACT_SUFX} ${ZCRYPT_SRC}
 
