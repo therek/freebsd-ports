@@ -2,12 +2,13 @@
 # Date created:		22 May 2000
 # Whom:			Marco Rodrigues <drkangel@drkangel.org>
 #
-# $FreeBSD: ports/mail/solidpop3d/Makefile,v 1.2 2000/06/09 13:28:52 sobomax Exp $
+# $FreeBSD: ports/mail/solidpop3d/Makefile,v 1.3 2000/11/12 03:56:30 vanilla Exp $
 #
 
 PORTNAME=	solidpop3d
 PORTVERSION=	0.15
-CATEGORIES=	mail
+PORTREVISION=	1
+CATEGORIES=	mail ipv6
 MASTER_SITES=	http://solidpop3d.pld.org.pl/ \
 		ftp://207.176.230.192/
 DISTNAME=	solid-pop3d-${PORTVERSION}
