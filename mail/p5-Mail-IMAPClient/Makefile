@@ -2,11 +2,11 @@
 # Date created:		14 Nov 2000
 # Whom:			TAKAHASHI Kaoru <kaoru@kaisei.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-IMAPClient/Makefile,v 1.1 2000/12/19 13:02:46 will Exp $
+# $FreeBSD: ports/mail/p5-Mail-IMAPClient/Makefile,v 1.2 2001/01/03 04:15:50 vanilla Exp $
 #
 
 PORTNAME=	Mail-IMAPClient
-PORTVERSION=	2.0.5
+PORTVERSION=	2.0.6
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
