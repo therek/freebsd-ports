@@ -1,4 +1,4 @@
-# $FreeBSD: ports/german/Makefile,v 1.16 2001/04/17 09:00:45 demon Exp $
+# $FreeBSD: ports/german/Makefile,v 1.17 2001/04/29 13:45:02 dirk Exp $
 #
 
     SUBDIR += BBBike
@@ -14,7 +14,6 @@
     SUBDIR += php_doc
     SUBDIR += staroffice5
     SUBDIR += staroffice52
-    SUBDIR += webalizer
     SUBDIR += webalizer2
 
 .include <bsd.port.subdir.mk>
