@@ -2,11 +2,11 @@
 # Date created:				20 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/mail/grepmail/Makefile,v 1.17 2001/02/05 15:10:37 olgeni Exp $
+# $FreeBSD: ports/mail/grepmail/Makefile,v 1.18 2001/02/11 05:02:34 jedgar Exp $
 #
 
 PORTNAME=	grepmail
-PORTVERSION=	4.45
+PORTVERSION=	4.47
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
