@@ -2,7 +2,7 @@
 # Date created:        18 December 1997
 # Whom:                andy
 #
-# $FreeBSD: ports/lang/ici/Makefile,v 1.5 2000/03/21 00:40:47 jedgar Exp $
+# $FreeBSD: ports/lang/ici/Makefile,v 1.6 2000/04/12 06:18:56 obrien Exp $
 #
 
 PORTNAME=	ici
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.research.canon.com.au/pub/misc/ici/ \
 		ftp://ftp.ntua.gr/pub/lang/ici/ \
 		http://www.zeta.org.au/~atrn/ici/distfiles/
 
-MAINTAINER=	andy@research.canon.com.au
+MAINTAINER=	atrn@zeta.org.au
 
 MAKEFILE=	Makefile.bsd
 MAN1=		ici.1
