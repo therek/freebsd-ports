@@ -2,18 +2,23 @@
 # Date created:				Wed 29 Nov 2000
 # Whom:					joseph@randomnetworks.com
 #
-# $FreeBSD: ports/net/sendip/Makefile,v 1.1 2000/12/19 11:01:57 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sendip
-PORTVERSION=	1.4
+PORTVERSION=	2.1
 CATEGORIES=	net
 MASTER_SITES=	http://www.earth.li/projectpurple/files/
 
 MAINTAINER=	joseph@randomnetworks.com
 
-WRKSRC=		${WRKDIR}/sendip
+USE_GMAKE=	yes
+USE_REINPLACE=	yes
 
 MAN1=		sendip.1
+
+pre-install:
+	${REINPLACE_CMD} -e "s:/usr/local:${PREFIX}:g" ${WRKSRC}/Makefile;
+	${REINPLACE_CMD} -e "s:/share/man/man1:/man/man1:g" ${WRKSRC}/Makefile;
 
 .include <bsd.port.mk>
