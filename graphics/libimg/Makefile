@@ -2,7 +2,7 @@
 # Date Created:		20 February 1999
 # Whom:			Glenn Johnson
 #
-# $FreeBSD: ports/graphics/libimg/Makefile,v 1.9 2000/07/04 07:13:10 sobomax Exp $
+# $FreeBSD: ports/graphics/libimg/Makefile,v 1.10 2001/02/12 21:46:32 mi Exp $
 #
 
 PORTNAME=	libimg
@@ -41,5 +41,5 @@ post-install:
 
 .include <bsd.port.mk>
 
-PLIST_SUBP!=	${ENV} TCL_VER=${TCL_VER} ${MAKE} -f ${MAKEFILE} environ
+PLIST_SUBP!=	${SETENV} TCL_VER=${TCL_VER} ${MAKE} -f ${MAKEFILE} environ
 PLIST_SUB+=	${PLIST_SUBP}

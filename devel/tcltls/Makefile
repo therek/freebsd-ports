@@ -2,7 +2,7 @@
 # Date created:				4 May 2000
 # Whom:					mi@aldan.algebra.com
 #
-# $FreeBSD: ports/devel/tcltls/Makefile,v 1.2 2001/02/21 22:37:37 mi Exp $
+# $FreeBSD: ports/devel/tcltls/Makefile,v 1.3 2001/02/21 22:59:52 mi Exp $
 #
 
 PORTNAME=	tcltls
@@ -41,5 +41,5 @@ TCLVND=		${TCL_VER:S/.//}
 
 .include <bsd.port.mk>
 
-PLIST_SUBP!=	${ENV} ${MAKE_ENV} ${MAKE} -f ${MAKEFILE} environ
+PLIST_SUBP!=	${SETENV} ${MAKE_ENV} ${MAKE} -f ${MAKEFILE} environ
 PLIST_SUB+=	${PLIST_SUBP}

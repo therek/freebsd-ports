@@ -2,7 +2,7 @@
 # Date Created:				10 February 2000
 # Whom:					Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/graphics/gdtclft/Makefile,v 1.4 2001/02/01 01:50:02 jeh Exp $
+# $FreeBSD: ports/graphics/gdtclft/Makefile,v 1.5 2001/02/12 10:01:03 knu Exp $
 #
 
 PORTNAME=	Gdtclft
@@ -31,4 +31,4 @@ MANCOMPRESSED=	maybe
 
 .include <bsd.port.mk>
 
-PLIST_SUB!=	${ENV} TCL_VER=${TCL_VER} ${MAKE} -f ${MAKEFILE} env
+PLIST_SUB!=	${SETENV} TCL_VER=${TCL_VER} ${MAKE} -f ${MAKEFILE} env
