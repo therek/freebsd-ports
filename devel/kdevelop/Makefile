@@ -2,7 +2,7 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.25 2001/04/03 08:14:01 will Exp $
 #
 
 PORTNAME=	kdevelop
@@ -18,7 +18,6 @@ RUN_DEPENDS=	gmake:${PORTSDIR}/devel/gmake
 .if defined(WITH_OPTIONAL_DEPENDS)
 RUN_DEPENDS+=	autoconf:${PORTSDIR}/devel/autoconf \
 		automake:${PORTSDIR}/devel/automake \
-		${LOCALBASE}/share/doc/HTML/en/kdelibs/kdecore/index.html:${PORTSDIR}/devel/kdelibdocs \
 		ktranslator:${PORTSDIR}/devel/ktranslator \
 		kdoc:${PORTSDIR}/textproc/kdoc \
 		kiconedit:${PORTSDIR}/graphics/kdegraphics2 \
