@@ -2,7 +2,7 @@
 # Date created:		13 Feb 1999
 # Whom:			Ching-Hong Wu <woju@freebsd.ntu.edu.tw>
 #
-# $FreeBSD: ports/chinese/telnet/Makefile,v 1.5 2000/10/03 14:31:22 kevlo Exp $
+# $FreeBSD: ports/chinese/telnet/Makefile,v 1.6 2000/10/04 15:35:36 kevlo Exp $
 #
 
 PORTNAME=	telnet
@@ -17,7 +17,7 @@ SRCDIR=		/usr/src/usr.bin/telnet
 
 do-extract:
 .if exists (${SRCDIR})
-	@${MKDIR} work
+	@${MKDIR} ${WRKDIR}
 	@${CP} -R ${SRCDIR} ${WRKSRC}
 .else
 BROKEN=	"You need to build this port with ${SRCDIR}"
