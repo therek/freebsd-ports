@@ -2,23 +2,25 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.69 2001/06/21 16:36:46 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.70 2001/07/11 12:08:36 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
 PORTVERSION=	${RUBY_PORTVERSION}
 CATEGORIES=	lang ruby ipv6
 MASTER_SITES=	${MASTER_SITE_RUBY}
-MASTER_SITE_SUBDIR=	${RUBY_VER}
+MASTER_SITE_SUBDIR=	snapshots
 DISTNAME=	${RUBY_DISTNAME}
 DIST_SUBDIR=	ruby
 
-PATCH_SITES=	http://www.ruby-lang.org/~knu/ \
-		http://www.iDaemons.org/distfiles/
-PATCHFILES=	${RUBY_PATCHFILES}
-PATCH_DIST_STRIP=	-p1
+#PATCH_SITES=	${MASTER_SITE_RUBY}
+#PATCH_SITE_SUBDIR=	snapshots
+#PATCHFILES=	${RUBY_PATCHFILES}
+#PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	knu@FreeBSD.org
+
+USE_BZIP2=	yes
 
 USE_RUBY=	yes
 RUBY_NO_BUILD_DEPENDS=	yes
@@ -114,6 +116,8 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/ext/curses/hello.rb ${WRKSRC}/ext/curses/rain.rb ${WRKSRC}/ext/curses/view.rb ${RUBY_EXAMPLESDIR}/curses
 	${MKDIR} ${RUBY_EXAMPLESDIR}/pty
 	${INSTALL_DATA} ${WRKSRC}/ext/pty/expect_sample.rb ${WRKSRC}/ext/pty/script.rb ${WRKSRC}/ext/pty/shl.rb ${RUBY_EXAMPLESDIR}/pty
+	${INSTALL_DATA} ${WRKSRC}/COPYING* ${RUBY_DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/LEGAL ${RUBY_DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README* ${RUBY_DOCDIR}
 	${MKDIR} ${RUBY_DOCDIR}/etc
 	${INSTALL_DATA} ${WRKSRC}/ext/etc/etc.txt* ${RUBY_DOCDIR}/etc
@@ -122,7 +126,7 @@ post-install:
 	${MKDIR} ${RUBY_DOCDIR}/pty
 	${INSTALL_DATA} ${WRKSRC}/ext/pty/README* ${RUBY_DOCDIR}/pty
 	${MKDIR} ${RUBY_DOCDIR}/readline
-	${INSTALL_DATA} ${WRKSRC}/ext/readline/README ${RUBY_DOCDIR}/readline
+	${INSTALL_DATA} ${WRKSRC}/ext/readline/README* ${RUBY_DOCDIR}/readline
 	${CP} -R ${WRKSRC}/doc/* ${RUBY_DOCDIR}/
 .endif
 	@${CAT} ${PKGMESSAGE}
