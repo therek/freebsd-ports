@@ -4,10 +4,10 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.10 2000/02/15 09:26:13 agc Exp $
-# $FreeBSD$
+# $FreeBSD: ports/audio/festvox-abc/Makefile,v 1.1 2000/09/16 08:39:44 will Exp $
 #
 
-PORTNAME=	festvox_abc
+PORTNAME=	festvox-abc
 PORTVERSION=	2.0
 CATEGORIES=	audio
 MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
@@ -16,9 +16,9 @@ DIST_SUBDIR=	festival
 
 MAINTAINER=	trevor@jpj.net
 
-RUN_DEPENDS=	festival:../festival \
-		${LOCALBASE}/share/festival/lib/ogi_spanish/ogi_span_mx_lts.scm:../festogi-spanish \
-		${LOCALBASE}/share/festival/lib/dicts/ogi_lex.out:../festlex-ogi
+RUN_DEPENDS=	festival:${.CURDIR}/../festival \
+		${LOCALBASE}/share/festival/lib/ogi_spanish/ogi_span_mx_lts.scm:${.CURDIR}/../festogi-spanish \
+		${LOCALBASE}/share/festival/lib/dicts/ogi_lex.out:${.CURDIR}/../festlex-ogi
 
 RESTRICTED=	no-commercial-use
 

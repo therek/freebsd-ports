@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.10 2000/02/15 09:26:16 agc Exp $
-# $FreeBSD$
+# $FreeBSD: ports/audio/festvox-ogirab/Makefile,v 1.1 2000/09/16 08:39:49 will Exp $
 #
 
 PORTNAME=	festvox-ogirab
@@ -18,8 +18,8 @@ DIST_SUBDIR=	festival
 
 MAINTAINER=	trevor@jpj.net
 
-RUN_DEPENDS=	festival:../festival \
-		${LOCALBASE}/share/festival/lib/dicts/ogi_lex.out:../festlex-ogi
+RUN_DEPENDS=	festival:${.CURDIR}/../festival \
+		${LOCALBASE}/share/festival/lib/dicts/ogi_lex.out:${.CURDIR}/../festlex-ogi
 
 RESTRICTED=	no-commercial-use
 

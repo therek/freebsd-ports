@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.7 1999/12/28 04:19:59 wiz Exp $
-# $FreeBSD$
+# $FreeBSD: ports/audio/festlex-poslex/Makefile,v 1.1 2000/09/16 08:39:43 will Exp $
 #
 
 PORTNAME=	festlex-poslex
@@ -17,7 +17,7 @@ DIST_SUBDIR=	festival
 
 MAINTAINER=	trevor@jpj.net
 
-RUN_DEPENDS=	festival:../festival
+RUN_DEPENDS=	festival:${.CURDIR}/../festival
 
 WRKSRC=		${WRKDIR}/festival
 

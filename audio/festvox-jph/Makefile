@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.10 2000/02/15 09:26:14 agc Exp $
-# $FreeBSD$
+# $FreeBSD: ports/audio/festvox-jph/Makefile,v 1.1 2000/09/17 22:05:58 will Exp $
 #
 
 PORTNAME=	festvox-jph
@@ -21,9 +21,9 @@ MAINTAINER=	trevor@jpj.net
 
 RESTRICTED=	no-commercial-use
 
-RUN_DEPENDS=	festival:../festival \
-		${LOCALBASE}/share/festival/lib/dicts/wsj.wp39.poslexR:../festlex-poslex \
-		${LOCALBASE}/share/festival/lib/dicts/ogi_lex.out:../festlex-ogi
+RUN_DEPENDS=	festival:${.CURDIR}/../festival \
+		${LOCALBASE}/share/festival/lib/dicts/wsj.wp39.poslexR:${.CURDIR}/../festlex-poslex \
+		${LOCALBASE}/share/festival/lib/dicts/ogi_lex.out:${.CURDIR}/../festlex-ogi
 
 WRKSRC=		${WRKDIR}/festival
 
