@@ -2,7 +2,7 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++-emacs/Makefile,v 1.10 2000/08/16 15:26:59 kevlo Exp $
+# $FreeBSD: ports/audio/timidity++-emacs/Makefile,v 1.11 2000/10/05 06:35:56 reg Exp $
 #
 
 PORTNAME=	timidity++
@@ -33,8 +33,7 @@ USE_XLIB=	yes
 CONFIGURE_ARGS=	--enable-dynamic=${INTERFACE}
 
 MASTERDIR=	${.CURDIR}/../../audio/timidity++
-PKGDIR=		${.CURDIR}/pkg
-PKGMESSAGE=	${PKGDIR}/MESSAGE
+PKGDIR=		${.CURDIR}
 PLIST_SUB=	TIMID_LIBDIR=${TIMID_LIBDIR}
 DIST_SUBDIR=	timidity
 
