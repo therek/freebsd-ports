@@ -3,7 +3,7 @@
 # Date created:		29 Jul 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.5 1999/08/25 06:50:40 obrien Exp $
+# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.6 1999/09/10 04:35:24 nsayer Exp $
 #
 # I spent a <strong>very frustrating</strong> half hour with portlint
 # on this one and could never get it to fewer than 8 frigging warnings.
@@ -35,6 +35,8 @@ MASTERDIR=	${.CURDIR}/../pine4
 
 FILESDIR=	${.CURDIR}/files
 
+.include <bsd.port.pre.mk>
+
 .if !exists(${DISTDIR}/${DISTNAME}${EXTRACT_SUFX})
 IGNORE='Please fill out the form at http://www.kfu.com/~nsayer/encryption/pine.html and place the sources at ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} then run make again'
 .endif
@@ -45,4 +47,4 @@ post-extract:
 do-build:
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ./build bsf EXTRAAUTHENTICATORS=ssl)
 
-.include "${MASTERDIR}/Makefile"
+.include <bsd.port.post.mk>
