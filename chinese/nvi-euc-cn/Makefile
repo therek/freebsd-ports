@@ -3,10 +3,10 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/nvi-euc-cn/Makefile,v 1.16 1999/08/25 04:57:56 obrien Exp $
 #
 
-PKGNAME=	zh-nvi-euccn-1.79.19990331
+PKGNAME=	zh-nvi-euccn-1.79.19991117
 
 MASTERDIR=	${.CURDIR}/../../editors/nvi-m17n
 COMMENT=	${.CURDIR}/pkg/COMMENT

@@ -3,10 +3,10 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/nvi-iso-2022-jp/Makefile,v 1.17 1999/08/25 05:25:59 obrien Exp $
 #
 
-PKGNAME=	ja-nvi-iso2022jp-1.79.19990331
+PKGNAME=	ja-nvi-iso2022jp-1.79.19991117
 
 MASTERDIR=	${.CURDIR}/../../editors/nvi-m17n
 COMMENT=	${.CURDIR}/pkg/COMMENT
