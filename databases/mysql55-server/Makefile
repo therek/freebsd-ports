@@ -2,7 +2,7 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.86 2000/11/16 10:29:04 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.87 2000/12/01 10:31:48 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -29,7 +29,9 @@ CONFIGURE_ARGS=	--localstatedir=${DB_DIR} \
 		--without-debug \
 		--without-readline \
 		--without-bench \
-		--with-mit-threads=no
+		--with-mit-threads=no \
+		--with-libwrap \
+		--with-unix-socket-path=${DB_DIR}/mysql.sock
 .if ${MACHINE_ARCH} == "i386"
 CONFIGURE_ARGS+=--enable-assembler
 .endif
