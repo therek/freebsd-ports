@@ -2,7 +2,7 @@
 # Date created:				16 October 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-plugins/Makefile,v 1.12 2000/10/28 02:04:18 jeh Exp $
+# $FreeBSD: ports/security/nessus-plugins/Makefile,v 1.13 2000/11/09 13:27:28 des Exp $
 #
 
 PORTNAME=	nessus-plugins
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${PORTVERSION}/src/ \
 		ftp://ftp.chg.ru/pub/security/nessus/nessus-${PORTVERSION}/src/ \
 		ftp://ftp.sekure.net/pub/nessus/nessus-${PORTVERSION}/src/
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	olgeni@uli.it
 
 BUILD_DEPENDS=	${LOCALBASE}/include/nessus/config.h:${PORTSDIR}/security/nessus \
 		${LOCALBASE}/bin/nmap:${PORTSDIR}/security/nmap
