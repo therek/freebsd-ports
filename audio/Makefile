@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.166 2000/09/16 19:02:05 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.167 2000/09/17 22:00:22 will Exp $
 #
 
     SUBDIR += afsp
@@ -34,6 +34,7 @@
     SUBDIR += festvox-don
     SUBDIR += festvox-el11
     SUBDIR += festvox-hvs
+    SUBDIR += festvox-jph
     SUBDIR += festvox-kal16
     SUBDIR += festvox-kal8
     SUBDIR += festvox-ked16
