@@ -3,7 +3,7 @@
 # Date created:		19 Sep 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.4 1999/10/17 13:45:05 asami Exp $
+# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.5 1999/10/29 10:25:00 nakai Exp $
 #
 
 DISTNAME=	xpuyopuyo-0.2.7
@@ -19,12 +19,11 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
+USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"
-USE_GMAKE=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xpuyopuyo ${PREFIX}/bin/xpuyopuyo
