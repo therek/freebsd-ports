@@ -2,7 +2,7 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/stockticker_applet/Makefile,v 1.5 2001/05/04 21:41:27 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	stockticker_applet
@@ -17,6 +17,8 @@ MAINTAINER=	sobomax@FreeBSD.org
 USE_GNOME=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
+CONFIGURE_ENV=	CPPFLAGS=-I${LOCALBASE}/include \
+		LDFLAGS=-L${LOCALBASE}/lib
 
 pre-patch:
 	@${PERL} -pi -e 's|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
