@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.347 2001/05/20 13:15:53 ijliao Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 40upgrade
@@ -159,6 +159,7 @@
     SUBDIR += tkrunit
     SUBDIR += ttyrec
     SUBDIR += tvguide
+    SUBDIR += uf-view
     SUBDIR += uk-phone
     SUBDIR += uk-postcodes
     SUBDIR += unclutter
