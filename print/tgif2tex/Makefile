@@ -2,12 +2,12 @@
 # Date created:		12 Mar 1998
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/tgif2tex/Makefile,v 1.4 2000/04/09 17:41:24 cpiazza Exp $
+# $FreeBSD: ports/print/tgif2tex/Makefile,v 1.5 2000/04/09 17:50:43 cpiazza Exp $
 #
 
 PORTNAME=	tgif2tex
 PORTVERSION=	1.46
-CATEGORIES=	print
+CATEGORIES+=	print
 MASTER_SITES=	http://camphor.elcom.nitech.ac.jp/~nakano/tgif2tex/
 DISTNAME=	${PORTNAME}
 

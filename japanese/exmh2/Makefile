@@ -2,10 +2,10 @@
 # Date created:		15 Mar 1999
 # Whom:		Takeshi WATANABE <watanabe@komadori.planet.sci.kobe-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/exmh2/Makefile,v 1.4 1999/08/31 06:45:29 mharo Exp $
+# $FreeBSD: ports/japanese/exmh2/Makefile,v 1.5 2000/04/11 14:13:38 knu Exp $
 #
 
-CATEGORIES=	japanese mail tk80
+CATEGORIES=	japanese
 
 MAINTAINER=	ports@FreeBSD.org
 

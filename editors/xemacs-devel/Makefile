@@ -2,12 +2,12 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.42 2000/02/18 01:59:03 gj Exp $
+# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.43 2000/04/13 06:50:41 knu Exp $
 #
 
 PORTNAME=	xemacs
 PORTVERSION=	${XEMACS_VER}
-CATEGORIES?=	editors
+CATEGORIES+=	editors
 MASTER_SITES=	\
 		ftp://ftp.xemacs.org/pub/xemacs/xemacs-${XEMACS_REL}/ \
 		ftp://ftp.mpi-sb.mpg.de/pub/gnu/mirror/ftp.xemacs.org/xemacs/xemacs-${XEMACS_REL}/ \

@@ -3,10 +3,12 @@
 # Date created:			  Sat Jan 31, 1998
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/japanese/plan/Makefile,v 1.8 2000/03/22 00:27:00 obrien Exp $
+# $FreeBSD: ports/japanese/plan/Makefile,v 1.9 2000/04/12 14:37:03 knu Exp $
 #
 
 BROKEN=		"doesn't build properly from version 1.7.1"
+
+CATEGORIES=	japanese
 
 MAKE_ENV+=	JAPANESE=yes
 

@@ -2,16 +2,16 @@
 # Date created:		17 October 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/misc/ewipe/Makefile,v 1.17 1999/08/25 07:21:36 obrien Exp $
+# $FreeBSD: ports/misc/ewipe/Makefile,v 1.18 2000/04/13 08:58:32 knu Exp $
 #
 
 PORTNAME=	ewipe
 PORTVERSION=	1.1.0
-CATEGORIES=	misc tk42
+CATEGORIES+=	misc tk42
 MASTER_SITES=	http://www.jnet-jp.to/~sekisita/ewipe/ \
 		http://freefall.freebsd.org/~itojun/distfiles/
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER?=	itojun@itojun.org
 
 #RUN_DEPENDS=	wish4.2:${PORTSDIR}/x11-toolkits/tk42
 

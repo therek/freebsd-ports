@@ -2,10 +2,10 @@
 # Date created:		07 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/xv/Makefile,v 1.6 2000/01/09 14:51:17 shige Exp $
+# $FreeBSD: ports/japanese/xv/Makefile,v 1.7 2000/04/13 08:34:10 knu Exp $
 #
 
-CATEGORIES=	japanese graphics
+CATEGORIES=	japanese
 
 MAINTAINER=	shige@FreeBSD.org
 

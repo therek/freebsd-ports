@@ -2,10 +2,10 @@
 # Date created:		12 Mar 1998
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tgif2tex/Makefile,v 1.3 1999/08/25 05:27:27 obrien Exp $
+# $FreeBSD: ports/japanese/tgif2tex/Makefile,v 1.4 2000/04/12 14:38:03 knu Exp $
 #
 
-CATEGORIES=	japanese print
+CATEGORIES=	japanese
 
 RUN_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
 

@@ -4,15 +4,12 @@
 #			KUNISHIMA Takeo <kunishi@c.oka-pu.ac.jp>
 #			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/net/ppxp/Makefile,v 1.10 1999/12/25 18:49:27 steve Exp $
+# $FreeBSD: ports/net/ppxp/Makefile,v 1.11 2000/04/09 18:13:13 cpiazza Exp $
 #
 
 PORTNAME=	ppxp
 PORTVERSION=	0.99120923
-CATEGORIES=	net tk82
-.if defined(USE_TCLJP)
-CATEGORIES+=	japanese
-.endif
+CATEGORIES+=	net tk82
 MASTER_SITES=	http://www.dsl.gr.jp/~manabe/PPxP/packages/	\
 		http://www.linet.gr.jp/~manabe/PPxP/packages/	\
 		http://www.dsl.ics.tut.ac.jp/~manabe/PPxP/packages/

@@ -2,7 +2,7 @@
 # Date created:		5 Dec 1997
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/xemacs21-canna/Makefile,v 1.10 2000/01/14 18:09:22 shige Exp $
+# $FreeBSD: ports/japanese/xemacs21-canna/Makefile,v 1.11 2000/04/13 08:33:42 knu Exp $
 #
 
 # This is the MASTER port of Japanese XEmacs slave ports
@@ -21,7 +21,7 @@
 #	LIB_INPUT_METHOD  : LIB_DEPENDS list of Input Methods
 #	BUILD_INPUT_METHOD: BUILD_DEPENDS list of Input Methods
 
-CATEGORIES=	japanese editors
+CATEGORIES=	japanese
 
 MANLANG=	ja
 MAN1=		xemacs-ja.1

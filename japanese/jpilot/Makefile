@@ -2,13 +2,13 @@
 # Date created:        Tue Aug 31 23:23:00 JST 1999
 # Whom:                sumikawa
 #
-# $FreeBSD: ports/japanese/jpilot/Makefile,v 1.7 2000/04/11 14:14:00 knu Exp $
+# $FreeBSD: ports/japanese/jpilot/Makefile,v 1.8 2000/04/13 09:24:19 knu Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../palm/jpilot
 COMMENT=	${.CURDIR}/pkg/COMMENT
 
-CATEGORIES=	japanese palm comms
+CATEGORIES=	japanese
 
 MAINTAINER=	sumikawa@FreeBSD.org
 

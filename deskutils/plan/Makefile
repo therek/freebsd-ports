@@ -2,13 +2,13 @@
 # Date created:				14 April 1996
 # Whom:	Daniel Eischen <deischen@iworks.InterWorks.org>
 #
-# $FreeBSD: ports/deskutils/plan/Makefile,v 1.18 1999/09/05 22:06:57 obrien Exp $
+# $FreeBSD: ports/deskutils/plan/Makefile,v 1.19 2000/04/08 22:03:48 mharo Exp $
 #
 # Also update	ports/japanese/plan/ (ja-plan) when this port is updated
 
 PORTNAME=	plan
 PORTVERSION=	1.8.2
-CATEGORIES=	deskutils
+CATEGORIES+=	deskutils
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}  \
 		ftp://ftp.fu-berlin.de/pub/unix/graphics/plan/
 MASTER_SITE_SUBDIR=	applications

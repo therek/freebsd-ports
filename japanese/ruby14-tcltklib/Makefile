@@ -2,10 +2,10 @@
 # Date created:         15 March 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/japanese/rubytk/Makefile,v 1.5 1999/12/24 04:33:46 steve Exp $
+# $FreeBSD: ports/japanese/rubytk/Makefile,v 1.6 2000/04/12 14:37:30 knu Exp $
 #
 
-CATEGORIES=	japanese x11-toolkits
+CATEGORIES=	japanese
 
 MAINTAINER=	yasuf@big.or.jp
 
