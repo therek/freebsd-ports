@@ -2,7 +2,7 @@
 # Date created:         		13 September 1999
 # Whom:                 		Marc E E van Woerkom  <van.woerkom@netcologne.de>
 #
-# $FreeBSD: ports/graphics/utah-glx/Makefile,v 1.7 2000/04/17 00:17:48 reg Exp $
+# $FreeBSD: ports/graphics/utah-glx/Makefile,v 1.8 2000/05/22 14:43:20 sobomax Exp $
 #
 
 PORTNAME=	utah-glx
@@ -26,7 +26,7 @@ GLUTVER?=	3
 
 CONFIGURE_SCRIPT=autogen.sh
 CONFIGURE_ARGS=	--enable-extra \
-		--with-mesa=${PORTSDIR}/graphics/Mesa3/work/Mesa-3.2 \
+		--with-mesa=${WRKDIRPREFIX}${.CURDIR}/../../graphics/Mesa3/work/Mesa-3.2 \
 		--sysconfdir=${PREFIX}/etc \
 		--with-moduledir=${PREFIX}/lib/modules
 CONFIGURE_ENV=	TCLSH="tclsh8.2"
