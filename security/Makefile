@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.182 2001/04/07 02:13:54 will Exp $
+# $FreeBSD: ports/security/Makefile,v 1.183 2001/04/07 07:33:45 will Exp $
 #
 
     SUBDIR += aafid2
@@ -129,6 +129,7 @@
     SUBDIR += rid
     SUBDIR += rsaref
     SUBDIR += ruby-acl
+    SUBDIR += ruby-sha1
     SUBDIR += ruby-ssl
     SUBDIR += ruby-tcpwrap
     SUBDIR += saint
