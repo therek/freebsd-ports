@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.552 2004/10/28 21:21:03 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.553 2004/10/29 07:40:25 skv Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1294,3 +1294,6 @@ audio/streamtuner-local|audio/streamtuner|2004-10-28|plugins rolled into main po
 audio/streamtuner-python|audio/streamtuner|2004-10-28|plugins rolled into main port
 audio/streamtuner-xiph|audio/streamtuner|2004-10-28|plugins rolled into main port
 www/p5-HTTPD-Tools|www/p5-HTTPD-User-Manage|2004-10-29|module was renamed
+irc/liece|irc/riece|2004-10-31|Upgrade to irc/riece
+irc/liece-dcc|irc/riece|2004-10-31|Integrated into irc/riece
+irc/liece-emacs20|irc/rieceemacs20|2004-10-31|Upgrade to irc/riece-emacs20
