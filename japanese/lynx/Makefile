@@ -3,7 +3,7 @@
 # Date created:         10 August 1998
 # Whom:                 Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lynx/Makefile,v 1.7 1999/08/25 05:25:17 obrien Exp $
+# $FreeBSD: ports/japanese/lynx/Makefile,v 1.8 1999/08/31 06:45:44 mharo Exp $
 #
 
 DISTNAME=       lynx2.8.2rel.1
@@ -12,6 +12,8 @@ CATEGORIES=	japanese www
 MASTER_SITES=   http://sol.slcc.edu/lynx/current/
 
 MAINTAINER=	shige@FreeBSD.org
+
+FORBIDDEN=  "Riddled with buffer overflows exploitable by a malicious server to execute code as the local user."
 
 WRKSRC=		${WRKDIR}/lynx2-8-2
 

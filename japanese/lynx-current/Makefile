@@ -3,7 +3,7 @@
 # Date created:         10 August 1998
 # Whom:                 Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lynx-current/Makefile,v 1.15 1999/12/10 16:37:54 shige Exp $
+# $FreeBSD: ports/japanese/lynx-current/Makefile,v 1.16 2000/02/08 09:26:59 peter Exp $
 #
 
 DISTNAME=	lynx2.8.3dev.16
@@ -14,6 +14,8 @@ MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		http://sol.slcc.edu/lynx/current/
 
 MAINTAINER=	shige@FreeBSD.org
+
+FORBIDDEN=  "Riddled with buffer overflows exploitable by a malicious server to execute code as the local user."
 
 USE_BZIP2=	YES
 NO_LATEST_LINK=	YES
