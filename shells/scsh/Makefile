@@ -2,11 +2,11 @@
 # Date created:         Jul, 15, 1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/shells/scsh/Makefile,v 1.16 2000/07/22 10:28:45 alex Exp $
+# $FreeBSD: ports/shells/scsh/Makefile,v 1.17 2000/10/08 06:04:55 asami Exp $
 #
 
 PORTNAME=	scsh
-PORTVERSION=	0.5.2
+PORTVERSION=	0.5.3
 CATEGORIES=	shells lang
 MASTER_SITES=	ftp://ftp-swiss.ai.mit.edu/pub/su/scsh/
 
