@@ -2,7 +2,7 @@
 # Date created:                        	25 December 1999
 # Whom:                                 Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/net/centericq/Makefile,v 1.10 2000/12/12 15:47:29 clive Exp $
+# $FreeBSD: ports/net/centericq/Makefile,v 1.11 2001/01/12 15:58:56 alex Exp $
 #
 
 PORTNAME=	centericq
@@ -18,8 +18,6 @@ LIB_DEPENDS=	ncurses.5:${PORTSDIR}/devel/ncurses
 CFLAGS+=	-nostdinc -I${LOCALBASE}/include/ncurses \
 		-I${LOCALBASE}/include -I/usr/include
 .endif
-
-LIB_DEPENDS=	icq.0:${PORTSDIR}/net/libicq
 
 USE_GMAKE=	yes
 HAS_CONFIGURE=	yes
