@@ -2,22 +2,22 @@
 # Date created:				7 July 2000
 # Whom:					dbader@eece.unm.edu
 #
-# $FreeBSD: ports/biology/paml/Makefile,v 1.3 2001/07/03 08:17:14 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	paml
-PORTVERSION=	3.1
+PORTVERSION=	3.13
 CATEGORIES=	biology
 MASTER_SITES=	ftp://abacus.gene.ucl.ac.uk/pub/paml/
-DISTNAME=	paml3.1
-EXTRACT_SUFX=	.tar.Z
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	dbader@eece.unm.edu
+COMMENT=	Phylogenetic Analysis by Maximum Likelihood (PAML)
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
+MAKE_ARGS=	CC="${CC}" CFLAGS="${CFLAGS}"
 
-BINARIES=	baseml basemlg chi2 codeml codemlsites evolver mcmctree \
-		pamp yn00
+BINARIES=	baseml basemlg chi2 codeml evolver mcmctree pamp yn00
 
 do-install:
 .for f in ${BINARIES}
