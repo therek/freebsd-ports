@@ -3,7 +3,7 @@
 # Date created:		29 Nov 1998
 # Whom:			sada
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/cgi-lib/Makefile,v 1.1.1.1 1999/11/01 03:59:33 steve Exp $
 #
 
 DISTNAME=	cgi-lib
@@ -24,6 +24,7 @@ USE_PERL5=	yes
 INSTALLDIR=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/cgi-lib.pl ${INSTALLDIR}/
+	${MKDIR} ${INSTALLDIR}
+	${INSTALL_SCRIPT} ${WRKDIR}/cgi-lib.pl ${INSTALLDIR}
 
 .include <bsd.port.mk>
