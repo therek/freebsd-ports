@@ -2,7 +2,7 @@
 # Date created:				24 August 2000
 # Whom:					sobomax@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/svgalib/Makefile,v 1.2 2000/08/30 17:41:07 sobomax Exp $
+# $FreeBSD: ports/graphics/svgalib/Makefile,v 1.3 2000/09/01 15:12:10 sobomax Exp $
 #
 
 PORTNAME=	svgalib
@@ -105,6 +105,12 @@ MAN7=		svgalib.7 svgalib.chips.7 svgalib.et4000.7		\
 		svgalib.faq.7 svgalib.mach32.7 threedkit.7 vgagl.7
 MAN8=		mode3.8
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 400000
+BROKEN=		"3.* doesn't supported - please upgrade to use the port"
+.endif
+
 pre-patch:
 	${PERL} -pi -e 's.\x0D..' ${WRKSRC}/utils/gtf/*
 	${MKDIR} ${WRKSRC}/include/linux
@@ -114,4 +120,4 @@ post-install:
 	cd ${WRKSRC}/include/linux && \
 		${INSTALL_DATA} keyboard.h kd.h ${PREFIX}/include/linux
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
