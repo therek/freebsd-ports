@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.495 2001/03/28 18:23:46 keichii Exp $
+# $FreeBSD: ports/net/Makefile,v 1.496 2001/03/28 23:33:10 murray Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -33,6 +33,7 @@
     SUBDIR += cflowd
     SUBDIR += choparp
     SUBDIR += cidr
+    SUBDIR += cisco_conf
     SUBDIR += ciscoconf
     SUBDIR += citrix_ica
     SUBDIR += clog
