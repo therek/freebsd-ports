@@ -2,11 +2,11 @@
 # Date created:        December 05 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-clocks/mlclock/Makefile,v 1.7 1999/10/05 02:36:08 nakai Exp $
+# $FreeBSD: ports/x11-clocks/mlclock/Makefile,v 1.8 2000/04/10 00:32:41 cpiazza Exp $
 #
 
 PORTNAME=	mlclock
-PORTVERSION= 	1.1
+PORTVERSION=	1.1
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://www.hry.info.gifu-u.ac.jp/~hideki/
 
