@@ -2,7 +2,7 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.70 2000/05/19 21:14:09 jim Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.71 2000/05/30 06:47:14 sobomax Exp $
 #
 
 PORTNAME=	gimp
@@ -56,9 +56,12 @@ PLIST=			${WRKDIR}/PLIST
 .else
 PLISTORIG=		${PKGDIR}/PLIST.perl
 PLIST=			${WRKDIR}/PLIST.perl
+.endif
+
+.if !defined(WITH_PERL)
 pre-fetch:
-	@${ECHO} -n "If you want to compile without perl support "
-	@${ECHO} "'make -DWITHOUT_PERL' instead"
+	@${ECHO} -n "If you want to compile with perl support use"
+	@${ECHO} "'make -DWITH_PERL' instead"
 .endif
 
 .if defined(WITH_GNOME) || (exists(${X11BASE}/bin/gnome-config) \
