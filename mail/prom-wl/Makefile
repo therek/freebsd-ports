@@ -2,7 +2,7 @@
 # Date created:		28 Aug 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/prom-wl/Makefile,v 1.3 2001/01/16 17:31:23 sobomax Exp $
+# $FreeBSD: ports/mail/prom-wl/Makefile,v 1.4 2001/03/29 22:39:24 mharo Exp $
 #
 
 PORTNAME=	prom-wl
@@ -12,8 +12,8 @@ MASTER_SITES=	http://www02.so-net.ne.jp/~murata/software/pub/
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
-# This port requires Wanderlust. But we can't decide which Wanderlust to depends,
-# there is NO RUN_DEPNDS mail/wanderlust-*.
+# This port requires Wanderlust. But we can't decide which Wanderlust to
+# depends, there is NO RUN_DEPENDS mail/wanderlust-*.
 RUN_DEPENDS=	procmail:${PORTSDIR}/mail/procmail
 
 NO_BUILD=	yes
