@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.214 2000/09/07 04:54:04 sada Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.215 2000/09/14 08:18:49 sobomax Exp $
 #
 
     SUBDIR += 4va
@@ -102,6 +102,7 @@
     SUBDIR += linux_glx
     SUBDIR += linux_mesa
     SUBDIR += linux_mesa3
+    SUBDIR += morpheus
     SUBDIR += mpeg
     SUBDIR += mpeg-lib
     SUBDIR += mpeg2codec
