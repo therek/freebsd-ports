@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/audio/flac/files/patch-configure.in,v 1.4 2001/06/08 02:06:30 ijliao Exp $
 --- configure.in.orig	Thu Jun  7 21:27:38 2001
 +++ configure.in	Thu Jun  7 21:28:13 2001
 @@ -51,14 +51,11 @@
@@ -6,7 +6,7 @@ $FreeBSD$
  fi
  
 -CFLAGS='-I./include -I $(top_srcdir)/include -Wall -W'
-+CFLAGS="-I./include -I \$(top_srcdir)/include"
++CFLAGS="$CFLAGS -I./include -I \$(top_srcdir)/include"
  if test x$debug = xtrue; then
 -	CFLAGS="$CFLAGS -g -O0 -DDEBUG"
 +	CFLAGS="$CFLAGS -g -DDEBUG"
