@@ -2,7 +2,7 @@
 # Date created:         Sat 21 Aug 1999
 # Whom:                 Peter Cornelius <pcc@gmx.net>
 #
-# $FreeBSD: ports/www/zope/Makefile,v 1.25 2001/03/31 12:12:26 nbm Exp $
+# $FreeBSD: ports/www/zope/Makefile,v 1.26 2001/05/03 10:14:53 nbm Exp $
 #
 
 PORTNAME=	zope
@@ -65,7 +65,7 @@ do-install:
 	@${ECHO} "===>   Please be patient, some builds need their time."
 	@${ECHO} "===>   Copying..."
 	@${CP} -Rp ${WRKSRC}/* ${ZOPEBASEDIR}/
-	@#${CP} -Rp ${WRKDIR}/lib ${ZOPEBASEDIR}/
+	@${CP} -Rp ${WRKDIR}/lib ${ZOPEBASEDIR}/
 	@#
 	@${CHMOD} -R u+w ${ZOPEBASEDIR}
 	@(cd ${ZOPEBASEDIR} && ${PYTHON_CMD} w_pcgi.py)
