@@ -2,7 +2,7 @@
 # Date created:		09 July 1998
 # Whom:			Adrian Penisoara <ady@freebsd.ady.ro>
 #
-# $FreeBSD: ports/mail/pine4/Makefile,v 1.41 2000/06/27 16:25:32 alex Exp $
+# $FreeBSD: ports/mail/pine4/Makefile,v 1.42 2000/07/17 08:19:25 kbyanc Exp $
 #
 # The changes to ?= on some of these lines is required for the
 # pine4-ssl port. Also, please mirror changes to the files/
@@ -15,6 +15,8 @@ MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/
 DISTNAME?=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER?=	pine@freebsd.ady.ro
+
+FORBIDDEN=	"Remotely exploitable buffer overflows."
 
 Y2K=		http://www.washington.edu/pine/QandA/sysadmins.html#Millenium
 
