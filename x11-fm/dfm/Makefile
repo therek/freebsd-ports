@@ -2,7 +2,7 @@
 # Date created:				25 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-fm/dfm/Makefile,v 1.23 2001/06/15 12:28:56 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dfm
@@ -14,6 +14,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
+USE_REINPLACE=	yes
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 USE_IMLIB=	yes
@@ -28,7 +29,7 @@ PORTDOCS=	ANNOUNCE BUGS COPYRIGHT CREDITS ChangeLog DOWNLOAD HELP.ERROR \
 		NO_WARRANTY README START TESTED TODO
 
 pre-patch:
-	@${PERL} -pi -e \
+	@${REINPLACE_CMD} -e \
 		's|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 
 post-install:
