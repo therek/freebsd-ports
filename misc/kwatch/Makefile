@@ -2,11 +2,11 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <zerium@webindex.no>
 #
-# $FreeBSD: ports/misc/kwatch/Makefile,v 1.17 2001/04/03 08:14:19 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kwatch
-PORTVERSION=	2.0.1
+PORTVERSION=	2.2.0
 CATEGORIES=	misc kde
 MASTER_SITES=	http://www.m-j-s.net/pub/kde/ \
 		${MASTER_SITE_KDE}
@@ -18,5 +18,8 @@ BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 
 USE_KDELIBS_VER=	2
 GNU_CONFIGURE=	yes
+
+post-patch:
+	@${PERL} -pi -e 's|-O2 ||g' ${WRKSRC}/configure
 
 .include <bsd.port.mk>
