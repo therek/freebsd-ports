@@ -2,12 +2,11 @@
 # Date created:				Sun Feb 25 21:13:59 CET 2001
 # Whom:					Bas Kruit <baskruit@bsltwr.dhis.org>
 #
-# $FreeBSD: ports/net/dhisd/Makefile,v 1.1 2001/03/12 22:52:32 will Exp $
+# $FreeBSD: ports/net/dhisd/Makefile,v 1.2 2001/03/12 22:52:32 will Exp $
 #
 
 PORTNAME=		dhisd
-PORTVERSION=		4.0
-PORTREVISION=		1
+PORTVERSION=		4.0.3
 CATEGORIES=		net
 MASTER_SITES=		http://bsltwr.dhis.org/ftp/pub/dhis/ \
 			ftp://ftp.dhis.org/pub/dhis/
