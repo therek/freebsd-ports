@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.75 2000/04/13 19:09:04 cpiazza Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.76 2000/04/16 03:30:28 jmz Exp $
 #
 
 PORTNAME=	XFree86
@@ -67,6 +67,9 @@ pre-fetch:
 	@${ECHO} Assuming that you have fetched a USA-Legal Wraphelp.c.
 .endif
 .endif
+
+post-extract:
+	@${MV} ${WRKSRC}/programs/Xserver/hw/xfree86/vga256/drivers/i810/os-support/linux/agpgart.h ${WRKSRC}/programs/Xserver/hw/xfree86/vga256/drivers/i810/
 
 .include <bsd.port.pre.mk>
 
