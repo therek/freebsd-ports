@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.312 2000/10/26 02:05:09 jeh Exp $
+# $FreeBSD: ports/games/Makefile,v 1.313 2000/10/28 01:29:09 will Exp $
 #
 
     SUBDIR += 3dc
@@ -33,6 +33,7 @@
     SUBDIR += CaribbeanStud
     SUBDIR += bzflag
     SUBDIR += cgoban
+    SUBDIR += civ2demo
     SUBDIR += clanbomber
     SUBDIR += columns
     SUBDIR += connect4
