@@ -2,19 +2,22 @@
 # Date created:		21 September 1999
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/devel/tclreadline/Makefile,v 1.8 2000/07/27 11:45:08 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tclreadline
-PORTVERSION=	1.0.3
+PORTVERSION=	2.1.0
 CATEGORIES=	devel tcl80 tcl82
-MASTER_SITES=	ftp://tclreadline.sourceforge.net/pub/tclreadline/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	tclreadline
 
 MAINTAINER=	darius@dons.net.au
 
-GNU_CONFIGURE=	yes
-GMAKE=		yes
+USE_LIBTOOL=	yes
+INSTALLS_SHLIB=	yes
 MANN=		tclreadline.n
+
+PLIST_SUB+=	VERSION="${PORTVERSION}"
 
 .include <bsd.port.pre.mk>
 
