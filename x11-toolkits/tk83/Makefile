@@ -2,14 +2,14 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk83/Makefile,v 1.46 2001/04/17 10:39:43 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tk
-PORTVERSION=	8.3.3
+PORTVERSION=	8.3.4
 CATEGORIES=	x11-toolkits tk83
-MASTER_SITES=	${MASTER_SITE_TCLTK}
-MASTER_SITE_SUBDIR=	tcl8_3
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	tcl
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	dinoex@FreeBSD.org
