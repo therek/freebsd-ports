@@ -2,7 +2,7 @@
 # Date created:				1 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.29 2001/01/09 15:40:45 sobomax Exp $
+# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.30 2001/01/23 17:28:58 sobomax Exp $
 #
 
 PORTNAME=	sdl-devel
@@ -40,6 +40,9 @@ CONFIGURE_ARGS+=--enable-video-opengl
 .include <bsd.port.pre.mk>
 
 MAN3!=		/bin/cat ${FILESDIR}/man3
+
+pre-configure:
+	@find ${WRKSRC} -type f -name Makefile.in | xargs ${TOUCH}
 
 post-configure:
 	@cd ${WRKSRC} && \
