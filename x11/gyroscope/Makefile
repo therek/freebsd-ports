@@ -2,7 +2,7 @@
 # Date created:			31 July 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gyroscope/Makefile,v 1.7 2000/10/05 06:42:32 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gyroscope
@@ -15,7 +15,8 @@ MAINTAINER=	jim@FreeBSD.org
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 
 ALL_TARGET=	# empty
 

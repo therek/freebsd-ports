@@ -2,7 +2,7 @@
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/x11/gmessage/Makefile,v 1.5 2001/02/05 16:18:00 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gmessage
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.brettnacher.org/users/dominik/FreeBSD/
 MAINTAINER=	domi@saargate.de
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				2000-10-08
 # Whom:					trevor
 #
-# $FreeBSD: ports/x11/portoseguro/Makefile,v 1.3 2000/10/17 02:49:05 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	portoseguro
@@ -17,7 +17,8 @@ MAINTAINER=	trevor@FreeBSD.org
 CONFIGURE_ENV=	GTKCONFIG=${GTK_CONFIG}
 USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
