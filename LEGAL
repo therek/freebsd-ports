@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.357 2004/08/12 18:06:44 pav Exp $
+# $FreeBSD: ports/LEGAL,v 1.358 2004/08/14 06:03:44 maho Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -247,6 +247,7 @@ gogo239b.tgz		ports/audio/gogo	Condition is not clear
 grande-KXL-*.tar.gz	ports/games/grande	Possible copyright infringement
 graphviz/*		ports/graphics/graphviz	Needs license before fetching
 grass*ipafull*		ports/japanese/ipa-ttfonts Cannot distribute fonts without i18n'ed grass
+himeno/*		ports/benchmarks/himeno	Uncertain to distribute sources and binaries
 hjb3_0-linux.sfx	ports/www/hotjava	Licensed for individual
 						non-commercial use only.
 HyperSpec-*		ports/devel/clisp-hyperspec	Commercial redistribution prohibited
