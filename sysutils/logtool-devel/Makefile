@@ -3,7 +3,7 @@
 # Date created:			Dec 30, 2000
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.8 2001/02/23 01:49:49 ijliao Exp $
+# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.9 2001/06/12 06:55:09 ijliao Exp $
 #
 
 PORTNAME=	logtool
@@ -27,6 +27,11 @@ post-patch:
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/logtool.1 ${PREFIX}/man/man1
+	@${CP} ${WRKSRC}/conf/logtool.conf ${PREFIX}/etc/logtool/logtool.conf.dist
+	@${CP} ${WRKSRC}/conf/exclude ${PREFIX}/etc/logtool/exclude.dist
+	@${CP} ${WRKSRC}/conf/green ${PREFIX}/etc/logtool/green.dist
+	@${CP} ${WRKSRC}/conf/include ${PREFIX}/etc/logtool/include.dist
+	@${CP} ${WRKSRC}/conf/yellow ${PREFIX}/etc/logtool/yellow.dist
 .if !defined(NOPORTDOCS)
 	@${ECHO_MSG} "===>   Installing logtool docs in ${PREFIX}/share/doc/logtool"
 	@${MKDIR} ${PREFIX}/share/doc/logtool && ${CHMOD} a+rx ${PREFIX}/share/doc/logtool
