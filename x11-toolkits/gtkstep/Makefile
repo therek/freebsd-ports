@@ -2,13 +2,13 @@
 # Date Created:				7 nov 98
 # Whom:				 	Gilad Rom
 #
-# $FreeBSD: ports/x11-toolkits/gtkstep/Makefile,v 1.17 2000/11/03 15:35:26 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkstep
 PORTVERSION=	2.2
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	http://ulli.linuxave.net/gtkstep/
+MASTER_SITES=	http://ulli.on.openave.net/gtkstep/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
