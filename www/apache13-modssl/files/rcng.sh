@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/apache13-modssl/files/rcng.sh,v 1.1 2004/05/03 04:27:23 dinoex Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
@@ -27,4 +27,4 @@ load_rc_config $name
 
 pidfile="${apache_pidfile}"
 
-run_rc_commmand "$1"
+run_rc_command "$1"
