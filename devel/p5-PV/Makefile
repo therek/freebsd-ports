@@ -3,7 +3,7 @@
 # Date created:				April 18th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-PV/Makefile,v 1.7 1999/08/25 05:49:24 obrien Exp $
+# $FreeBSD: ports/devel/p5-PV/Makefile,v 1.8 1999/08/31 06:42:18 mharo Exp $
 #
 
 DISTNAME=	perlvision
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-RUN_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/i386-freebsd/Curses.pm:${PORTSDIR}/devel/p5-Curses
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/i386-freebsd/Curses.pm:${PORTSDIR}/devel/p5-Curses
 
 USE_PERL5=	YES
 
