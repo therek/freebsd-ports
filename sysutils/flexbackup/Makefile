@@ -3,7 +3,7 @@
 # Date created:         Wed Nov  3 17:58:26 MST 1999
 # Whom:                 John Reynolds <jreynold@primenet.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/flexbackup/Makefile,v 1.3 1999/11/14 02:36:56 steve Exp $
 #
 
 DISTNAME=       flexbackup-0.9.8
@@ -12,7 +12,7 @@ MASTER_SITES=   http://www.bluecherry.net/~edwinh/flexbackup/tarball/ \
 		http://members.home.com/flexbackup/tarball/ \
 		http://metalab.unc.edu/pub/linux/system/backup/
 
-MAINTAINER=     jreynold@primenet.com
+MAINTAINER=     jjreynold@home.com
 
 RUN_DEPENDS=    afio:${PORTSDIR}/sysutils/afio \
 		buffer:${PORTSDIR}/misc/buffer
