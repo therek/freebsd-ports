@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.379 2001/07/07 13:13:46 ijliao Exp $
+# $FreeBSD: ports/www/Makefile,v 1.380 2001/07/08 07:07:40 markp Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -234,6 +234,7 @@
     SUBDIR += p5-WWW-Babelfish
     SUBDIR += p5-WWW-Robot
     SUBDIR += p5-WWW-Search
+    SUBDIR += p5-WWW-Search-Google
     SUBDIR += p5-libapreq
     SUBDIR += p5-libwww
     SUBDIR += peacock
