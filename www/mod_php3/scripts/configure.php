@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.99 2000/12/24 10:56:11 dirk Exp $
+# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.100 2000/12/24 11:13:29 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -97,6 +97,9 @@ while [ "$1" ]; do
 		\"PostgreSQL\")
 			echo "LIB_DEPENDS+=	pq.2:\${PORTSDIR}/databases/postgresql7"
 			echo "CONFIGURE_ARGS+=--with-pgsql=\${PREFIX}/pgsql"
+			if /usr/bin/ldd ${PREFIX}/pgsql/bin/postgres | /usr/bin/grep -q "libssl"; then
+				LIBS="-lcrypto -lssl"
+			fi
 			;;
 		\"SybaseDB\")
 			echo "LIB_DEPENDS+=	sybdb.0:\${PORTSDIR}/databases/freetds"
@@ -126,7 +129,7 @@ while [ "$1" ]; do
 			echo "LIB_DEPENDS+=	lber.1:\${PORTSDIR}/net/openldap"
 			echo "CONFIGURE_ARGS+=--with-ldap=\${PREFIX}"
 			if [ -f /usr/lib/libkrb.a -a -f /usr/lib/libdes.a -a ! -L /usr/lib/libdes.a ]; then
-				echo "CONFIGURE_ENV+=	LIBS='-lkrb -ldes -L\${PREFIX}/lib'"
+				LIBS="${LIBS} -lkrb -ldes -L\${PREFIX}/lib"
 			fi
 			;;
 		\"SNMP\")
@@ -154,3 +157,7 @@ while [ "$1" ]; do
 	esac
 	shift
 done
+
+if [ "${LIBS}" ]; then
+	echo "CONFIGURE_ENV+=   LIBS='${LIBS}'"
+fi
