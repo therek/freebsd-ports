@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/rtems-gcc/Makefile,v 1.1 2001/06/29 12:36:48 jeh Exp $
 #
 
 PORTNAME=	gcc
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	gcc
 EXTRACT_ONLY=	# Empty
 
 MAINTAINER=	jeh@FreeBSD.org
+
+PKGNAMEPREFIX=	rtems-
 
 NO_BUILD=	YES
 NO_INSTALL=	YES
