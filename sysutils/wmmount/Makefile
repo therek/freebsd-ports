@@ -2,7 +2,7 @@
 # Date created:		04 Janyary 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/sysutils/wmmount/Makefile,v 1.9 2000/08/03 09:26:40 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmmount
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.geocities.com/SiliconValley/Vista/2471/files/
 DISTNAME=	${PORTNAME}-1.0-beta2
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ozz@FreeBSD.org.ru
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 

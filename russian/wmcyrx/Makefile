@@ -2,7 +2,7 @@
 # Date created:		04 Janyary 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/russian/wmcyrx/Makefile,v 1.9 2001/01/16 17:32:14 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmcyrx
@@ -12,7 +12,7 @@ MASTER_SITES=	http://freebsd.org.ru/~osa/distfiles/ \
 		ftp://ftp.ssau.ru/pub/linux_soft/Cyrillic/ \
 		ftp://ftp.uven.ru/pub/cyrillic/X11/keyboard/
 
-DISTNAME=	cyrx-${PORTVERSION}
+DISTNAME=	ports@FreeBSD.org
 
 MAINTAINER=	ozz@FreeBSD.org.ru
 

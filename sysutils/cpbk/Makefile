@@ -2,7 +2,7 @@
 # Date created:		12 April 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/sysutils/cpbk/Makefile,v 1.2 1999/08/31 01:59:40 peter Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cpbk
@@ -11,7 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://pep.netnation.com/cpbk/ \
 		ftp://mocha.mkintraweb.com/pub/linux/cpbk/
 
-MAINTAINER=	ozz@FreeBSD.org.ru
+MAINTAINER=	ports@FreeBSD.org
 
 MAN1=		cpbk.1
 MANCOMPRESSED=	yes
