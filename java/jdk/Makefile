@@ -3,7 +3,7 @@
 # Date created:		Feb, 8, 1998
 # Whom:			Nate Williams <nate@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jdk/Makefile,v 1.27 1999/09/23 00:58:44 nate Exp $
+# $FreeBSD: ports/java/jdk/Makefile,v 1.28 1999/11/10 00:18:20 nate Exp $
 #
 
 DISTNAME=	jdk-${JDK_VERSION}
@@ -32,7 +32,7 @@ DISTFILES=	jdk${JDK_VERSION}_ELF.V1999-11-9.tar.gz
 
 do-install:
 	${MKDIR} ${PREFIX}/jdk${JDK_VERSION}
-	(cd ${WRKSRC} && tar -c -f - .) \
-		| (cd ${PREFIX}/jdk${JDK_VERSION} && tar fx -)
+	(cd ${WRKSRC} && ${TAR} -c -f - .) \
+		| (cd ${PREFIX}/jdk${JDK_VERSION} && ${TAR} --unlink -x -f -)
 
 .include <bsd.port.post.mk>
