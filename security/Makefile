@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.88 2000/02/14 02:59:59 obrien Exp $
+# $FreeBSD: ports/security/Makefile,v 1.89 2000/02/14 04:02:10 obrien Exp $
 #
 
     SUBDIR += bjorb
@@ -47,6 +47,7 @@
     SUBDIR += openssl
     SUBDIR += p5-Authen-PAM
     SUBDIR += p5-Authen-Radius
+    SUBDIR += p5-Crypt-CBC
     SUBDIR += p5-Crypt-DES
     SUBDIR += p5-Crypt-IDEA
     SUBDIR += p5-Digest-MD5
