@@ -2,23 +2,25 @@
 # Date created:         Sat Nov 08 09:47:12 CET 1997
 # Whom:                 se
 #
-# $FreeBSD: ports/games/xblast/Makefile,v 1.7 1999/08/31 06:44:33 mharo Exp $
+# $FreeBSD: ports/games/xblast/Makefile,v 1.8 2000/04/14 12:27:02 asami Exp $
 #
 
 PORTNAME=	xblast
-PORTVERSION=	2.6b
+PORTVERSION=	2.6.1
 CATEGORIES=	games
-# after end of beta test period:
-# MASTER_SITES= ${MASTER_SITE_XCONTRIB}
-# MASTER_SITE_SUBDIR= games/multiplayer
-# but right now only available from:
-MASTER_SITES=	http://www.ikp.uni-koeln.de/~vogel/archive/
-DISTNAME=       xblast-2.6.beta
+MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR=	games/arcade
+DISTNAME=	xblast-2.6.1.sound
 
 MAINTAINER=	se@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/XBlast-2.6.beta
+WRKSRC=		${WRKDIR}/XBlast-2.6-sound
 USE_IMAKE=      yes
-MAN1=		xblast.1
+NO_INSTALL_MANPAGES=	yes
+MANN=		xblast.n
+MANCOMPRESSED=	no
+
+post-install:
+	@${INSTALL_MAN} ${WRKSRC}/xblast.man ${MANNPREFIX}/man/mann/xblast.n
 
 .include <bsd.port.mk>
