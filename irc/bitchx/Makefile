@@ -2,7 +2,7 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.18 2000/07/07 18:24:40 steve Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.19 2000/09/01 02:50:57 kevlo Exp $
 #
 
 PORTNAME=	BitchX
@@ -23,12 +23,12 @@ WRKSRC=		${WRKDIR}/BitchX
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes
 .if defined(WITH_GNOME)
-CONFIGURE_ARGS+=	--with-gtk --enable-sound
+CONFIGURE_ARGS+=	--with-gtk
 .else
 CONFIGURE_ARGS+=	--without-gtk
 .endif
 .if defined(WITH_ESD)
-CONFIGURE_ARGS+=	--with-gtk --enable-sound
+CONFIGURE_ARGS+=	--enable-sound
 .endif
 .if defined(WITH_PLUGINS)
 CONFIGURE_ARGS+=	--with-plugins=pkga,possum,encrypt,hint,abot,acro,amp,blowfish,scan,wavplay,qmail,fserv,nap,qbx
@@ -47,19 +47,9 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 MAKE_ENV+=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		INSTALL_DATA="${INSTALL_DATA}"
 
-.if !defined(WITH_GNOME)
 pre-extract:
-	@${ECHO} "Define WITH_GNOME if you want to build GTK BitchX"
-.endif
-.if !defined(WITH_ESD)
-	@${ECHO} "Define WITH_ESD for ESD sound support in GTK BitchX"
-.endif
-.if !defined(WITH_PLUGINS)
-	@${ECHO} "Define WITH_PLUGINS if you wish to build the plugins"
-.endif
-.if !defined(WITH_LATIN)
-	@${ECHO} "Define WITH_LATIN if you are using an ISO-8859-1 screenfont"
-.endif
+	@${CAT} ${PKGDIR}/MESSAGE
+
 .if defined(WITH_LATIN)
 pre-patch:
 	@${PERL} -pi -e "s!#undef LATIN1!#define LATIN1!" ${WRKSRC}/include/config.h
