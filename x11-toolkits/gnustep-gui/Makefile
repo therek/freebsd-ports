@@ -2,7 +2,7 @@
 # Date created:         03 October 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnustep/Makefile,v 1.13 2000/08/23 10:49:46 tg Exp $
+# $FreeBSD: ports/devel/gnustep/Makefile,v 1.14 2000/09/21 12:01:41 tg Exp $
 #
 
 PORTNAME=	gnustep
@@ -34,6 +34,7 @@ CONFIGURE_ARGS=	--with-library-combo=gnu-gnu-gnu-xgps \
 		--with-tiff-library=${LOCALBASE}/lib \
 		--with-tiff-include=${LOCALBASE}/include # --enable-threads=posix
 CONFIGURE_TARGET=
+USE_BISON=	yes
 USE_GMAKE=	yes
 USE_XLIB=	yes
 MAKEFILE=
