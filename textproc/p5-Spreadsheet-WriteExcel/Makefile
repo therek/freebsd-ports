@@ -2,11 +2,11 @@
 # Date created:		25 Dec 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/p5-Spreadsheet-WriteExcel/Makefile,v 1.5 2001/05/01 10:10:03 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Spreadsheet-WriteExcel
-PORTVERSION= 	0.33
+PORTVERSION=	0.34
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Spreadsheet
@@ -25,6 +25,7 @@ MAN3=		Spreadsheet::WriteExcel.3 \
 		Spreadsheet::WriteExcel::Format.3 \
 		Spreadsheet::WriteExcel::Formula.3 \
 		Spreadsheet::WriteExcel::OLEwriter.3 \
+		Spreadsheet::WriteExcel::Utility.3 \
 		Spreadsheet::WriteExcel::Workbook.3 \
 		Spreadsheet::WriteExcel::WorkbookBig.3 \
 		Spreadsheet::WriteExcel::Worksheet.3
