@@ -2,13 +2,13 @@
 # Date created:         14 July 2000
 # Whom:                 Peter Haight <peterh@sapros.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gale/Makefile,v 1.1 2000/08/11 11:19:18 will Exp $
 #
 
 PORTNAME=	gale
 PORTVERSION=	0.99a
 CATEGORIES=     net
-MASTER_SITES=   http://www.gale.org/dist/
+MASTER_SITES=   http://download.gale.org/
 
 MAINTAINER=     peterh@sapros.com
 
