@@ -3,7 +3,7 @@
 # Date created:        07 May 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/graphics/killustrator/Makefile,v 1.9 2000/01/07 16:40:03 asami Exp $
+# $FreeBSD: ports/graphics/killustrator/Makefile,v 1.10 2000/02/24 07:00:57 asami Exp $
 #
 
 DISTNAME=	killustrator-0.7.1
@@ -17,14 +17,9 @@ LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 RUN_DEPENDS=	${LOCALBASE}/bin/kdehelp:${PORTSDIR}/x11/kdebase11
 
+USE_QT=		yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ENV+=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include -L${LOCALBASE}/lib"
 
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 400004
-BROKEN=		"Requires NEWGCC-compiled KDE libs"
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
