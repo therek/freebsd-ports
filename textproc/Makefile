@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.237 2001/09/03 05:48:01 ijliao Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.238 2001/09/11 07:50:32 asmodai Exp $
 #
 
     SUBDIR += agrep
@@ -47,6 +47,7 @@
     SUBDIR += gdome2
     SUBDIR += glimpse
     SUBDIR += gmat
+    SUBDIR += gpp
     SUBDIR += grap
     SUBDIR += gsed
     SUBDIR += gtk-doc
