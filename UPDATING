@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20040313:
+  AFFECTS: users of textproc/expat2
+
+  Users of expat2 (and its many dependencies) should do the following to
+  properly update expat2 and all of its dependencies:
+
+  portupgrade -rf textproc/expat2
+
 20040311:
   AFFECTS: users of databases/postgresql7
 
@@ -116,4 +124,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.6 2004/03/09 19:40:42 lofi Exp $
+$FreeBSD: ports/UPDATING,v 1.7 2004/03/11 21:20:23 osa Exp $
