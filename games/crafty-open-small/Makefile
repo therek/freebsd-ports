@@ -2,13 +2,13 @@
 # Date created:				1 June 1998
 # Whom:					Stefan Eggers <seggers@semyam.dinoco.de>
 #
-# $FreeBSD: ports/games/crafty-open-small/Makefile,v 1.3 1999/08/25 06:03:13 obrien Exp $
+# $FreeBSD: ports/games/crafty-open-small/Makefile,v 1.4 2000/04/14 00:45:46 mharo Exp $
 #
 
 PORTNAME=	crafty-open-small
 PORTVERSION=	19970301
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.cis.uab.edu/pub/hyatt/common/
+MASTER_SITES=	ftp://ftp.cis.uab.edu/pub/hyatt/common/small/
 DISTNAME=	small
 
 MAINTAINER=	seggers@semyam.dinoco.de
