@@ -2,11 +2,12 @@
 # Date created:			5 April 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/ruby-ri/Makefile,v 1.1 2001/04/05 14:11:09 knu Exp $
 #
 
 PORTNAME=	ri
 PORTVERSION=	0.7a
+PORTREVISION=	1
 CATEGORIES=	lang ruby
 MASTER_SITES=	ftp://www.pragmaticprogrammer.com/ruby/downloads/files/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -27,7 +28,7 @@ EMACSLISPDIR=	${PREFIX}/share/emacs/site-lisp
 XEMACSLISPDIR=	${PREFIX}/lib/xemacs/site-lisp
 
 post-patch:
-	${RUBY} -i -pe 'gsub /!!PREFIX!!/, "${PREFIX}"' \
+	${RUBY} -i -pe 'gsub %r|/usr/local|, "${PREFIX}"' \
 		${WRKSRC}/contrib/dblack/emacs/ri.el
 
 do-install:
