@@ -2,13 +2,13 @@
 # Date created:				10 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/java/javavmwrapper/Makefile,v 1.2 2000/06/20 07:40:20 sobomax Exp $
+# $FreeBSD$
 #
 # This port is self contained in the src directory.
 #
 
 PORTNAME=	javavmwrapper
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	java
 MASTER_SITES=	# none
 DISTFILES=	# none
