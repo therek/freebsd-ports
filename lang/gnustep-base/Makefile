@@ -2,7 +2,7 @@
 # Date created:         17 April 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/gnustep-base/Makefile,v 1.18 2001/06/26 11:59:01 tg Exp $
+# $FreeBSD: ports/lang/gnustep-base/Makefile,v 1.19 2001/07/11 11:22:17 tg Exp $
 #
 
 PORTNAME=	gnustep-base
@@ -40,8 +40,8 @@ GNU_ARCH=	ix86
 .else
 GNU_ARCH=	${MACHINE_ARCH}
 .endif
-PLIST_SUB+=	GNU_ARCH=${GNU_ARCH} OPSYS=${OPSYS:L} VERSION=${PORTVERSION}
-
+PLIST_SUB+=	GNU_ARCH=${GNU_ARCH} OPSYS=${OPSYS:L} VERSION=${PORTVERSION} \
+		MAJORVERSION=${PORTVERSION:C/([0-9]).*/\1/1}
 ETCDIR=		${PREFIX}/../etc
 SYSLIBDIR=	${PREFIX}/System/Libraries
 
