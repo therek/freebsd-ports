@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.415 2001/09/21 05:48:17 knu Exp $
+# $FreeBSD: ports/games/Makefile,v 1.416 2001/09/23 09:51:06 ijliao Exp $
 #
 
     SUBDIR += 0verkill
@@ -131,6 +131,7 @@
     SUBDIR += hlserver-oz
     SUBDIR += hlserver-si
     SUBDIR += hlserver-svencoop
+    SUBDIR += hlserver-vs
     SUBDIR += hlserver-wasteland
     SUBDIR += hlserver-wizwars
     SUBDIR += icbm3d
