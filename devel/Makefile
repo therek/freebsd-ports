@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.424 2001/01/23 07:39:59 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.425 2001/01/28 08:50:47 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -50,6 +50,7 @@
     SUBDIR += cons
     SUBDIR += cons-test
     SUBDIR += cook
+    SUBDIR += cpp2html
     SUBDIR += cproto
     SUBDIR += crossgo32
     SUBDIR += crossgo32-djgpp2
