@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.132 2000/09/22 17:06:00 alex Exp $
+# $FreeBSD: ports/security/Makefile,v 1.133 2000/09/26 02:50:31 foxfair Exp $
 #
 
     SUBDIR += aafid2
@@ -114,6 +114,7 @@
     SUBDIR += tripwire
     SUBDIR += tripwire-131
     SUBDIR += uvscan-dat
+    SUBDIR += vlock
     SUBDIR += vscan
     SUBDIR += whisker
     SUBDIR += xinetd
