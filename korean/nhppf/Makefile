@@ -2,16 +2,15 @@
 # Date created:         19 Apr 1997
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/nhppf/Makefile,v 1.7 1999/09/03 18:05:59 sada Exp $
+# $FreeBSD: ports/korean/nhppf/Makefile,v 1.8 2000/04/13 09:17:15 asami Exp $
 #
 
 PORTNAME=	nhppf
 PORTVERSION=	2.1
 CATEGORIES=	korean
-MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/users/cjh/nhppf/ \
-		ftp://jazz.snu.ac.kr/pub/unix/util/nhppf/
+MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/users/cjh/nhppf/
 
-MAINTAINER=	cjh@kr.freebsd.org
+MAINTAINER=	cjh@FreeBSD.org
 
 RUN_DEPENDS=    ${PREFIX}/share/texmf/fonts/type1/korean/pkmj/pkmjm0.pfb:$(PORTSDIR)/korean/hlatexpsfonts-wansungstd
 
@@ -19,13 +18,8 @@ NO_BUILD=	yes
 
 USE_PERL5=	yes
 
-do-configure:
-	${SED} -e 's,%%PREFIX%%,${PREFIX},g' \
-		${WRKSRC}/nhppf > ${WRKSRC}/nhppf.perl
-
 do-install:
-	@cd ${WRKSRC}; \
-	${INSTALL_SCRIPT} nhppf.perl ${PREFIX}/bin/nhppf
+	${INSTALL_SCRIPT} ${WRKSRC}/nhppf ${PREFIX}/bin/nhppf
 	${MKDIR} ${PREFIX}/share/doc/nhppf
 .for DOC in ChangeLog README charlist test.html
 	${INSTALL_DATA} ${WRKSRC}/${DOC} ${PREFIX}/share/doc/nhppf
