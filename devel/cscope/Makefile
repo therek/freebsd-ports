@@ -3,7 +3,7 @@
 # Date created:		1998-11-21
 # Whom:			Castor Fu
 #
-# $FreeBSD: ports/devel/cscope/Makefile,v 1.3 1999/08/25 05:47:41 obrien Exp $
+# $FreeBSD: ports/devel/cscope/Makefile,v 1.4 1999/08/27 21:13:46 mharo Exp $
 #
 
 DISTNAME=	cscope-13.7
@@ -13,6 +13,7 @@ MAINTAINER=	castor@alumni.caltech.edu
 
 NO_WRKSUBDIR=yes
 NO_CHECKSUM=yes
+NO_PACKAGE="Redistribution license from Lucent Technologies required."
 RESTRICTED="Redistribution license from Lucent Technologies required."
 MAKEFILE=makefile
 
