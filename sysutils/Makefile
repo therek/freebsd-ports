@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.118 2000/06/21 15:52:48 sobomax Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.119 2000/06/22 10:33:46 sobomax Exp $
 #
 
     SUBDIR += LPRng
@@ -82,6 +82,7 @@
     SUBDIR += symlinks
     SUBDIR += syslog-ng
     SUBDIR += tcplist
+    SUBDIR += truncate
     SUBDIR += tua
     SUBDIR += ucspi-tcp
     SUBDIR += upsd
