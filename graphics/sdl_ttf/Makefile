@@ -2,7 +2,7 @@
 # Date created:				20 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sdl_ttf/Makefile,v 1.1 2000/09/20 16:17:38 sobomax Exp $
+# $FreeBSD: ports/graphics/sdl_ttf/Makefile,v 1.2 2000/09/28 11:52:06 sobomax Exp $
 #
 
 PORTNAME=	sdl_ttf
@@ -21,7 +21,8 @@ USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 USE_FREETYPE=	yes
 INSTALLS_SHLIB=	yes
-CONFIGURE_ENV=	SDL_CONFIG="${SDL_CONFIG}"
+CONFIGURE_ENV=	SDL_CONFIG="${SDL_CONFIG}" \
+		CPPFLAGS="-I${LOCALBASE}/include"
 
 post-extract:
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
