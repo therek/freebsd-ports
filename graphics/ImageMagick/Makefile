@@ -2,7 +2,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.118 2001/08/25 03:18:42 petef Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.119 2001/09/11 02:02:57 ache Exp $
 #
 
 PORTNAME=	ImageMagick
@@ -89,14 +89,14 @@ PLIST_SUB+=	MODULES='@comment '
 
 .if defined(WITHOUT_X11)
 PKGNAMESUFFIX=	-nox11
-BUILD_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript6-nox11
-RUN_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript6-nox11
+BUILD_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript-gnu-nox11
+RUN_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript-gnu-nox11
 CONFIGURE_ARGS+=	--without-x --without-wmf
 PLIST_SUB+=	X11='@comment '
 .else
 LIB_DEPENDS+=	wmf.1:${PORTSDIR}/graphics/libwmf
-BUILD_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript6
-RUN_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript6
+BUILD_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript-gnu
+RUN_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript-gnu
 USE_XLIB=	yes
 MAN1+=		animate.1 display.1 import.1
 PLIST_SUB+=	X11=''

@@ -2,7 +2,7 @@
 # Date created: 	Tue Nov 14 18:29:48 MET 1995
 # Whom: 		Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/apsfilter/Makefile,v 1.85 2001/06/05 11:38:33 sobomax Exp $
+# $FreeBSD: ports/print/apsfilter/Makefile,v 1.86 2001/08/15 20:33:14 knu Exp $
 #
 
 PORTNAME=	apsfilter
@@ -39,9 +39,9 @@ MAKE_ENV+=      NO_X=true
 #
 # ps emulator
 .if defined(WITHOUT_X11)
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6-nox11
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu-nox11
 .else
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu
 .endif
 # all needed decompression utilities
 .if !exists(/usr/bin/bzip2)
@@ -73,9 +73,9 @@ RUN_DEPENDS+=	smbclient:${PORTSDIR}/net/samba
 #
 # ps emulator
 .if defined(WITHOUT_X11)
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6-nox11
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu-nox11
 .else
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu
 .endif
 # most important "xxx to ps" filter utilities
 RUN_DEPENDS+=	a2ps:${PORTSDIR}/print/a2ps-letter

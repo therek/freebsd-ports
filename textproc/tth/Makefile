@@ -2,7 +2,7 @@
 # Date created:         19 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/tth/Makefile,v 1.20 2000/11/03 16:35:21 sobomax Exp $
+# $FreeBSD: ports/textproc/tth/Makefile,v 1.21 2001/02/05 16:35:17 olgeni Exp $
 #
 
 PORTNAME=	tth
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6 \
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu \
 		latex:${PORTSDIR}/print/teTeX \
 		ppmtogif:${PORTSDIR}/graphics/netpbm
 

@@ -2,7 +2,7 @@
 # Date created:		3 Apr 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.28 2001/08/31 13:44:40 sf Exp $
+# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.29 2001/09/01 16:04:37 sf Exp $
 #
 
 PORTNAME=	xcircuit
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:R}
 
 MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu
 BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4
 
 USE_BZIP2=	yes

@@ -2,7 +2,7 @@
 # Date created:		03 July 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.14 2001/06/08 11:55:07 tg Exp $
+# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.15 2001/09/01 18:00:06 dwcjr Exp $
 #
 
 PORTNAME=	pstoedit
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION:S/./_/}
 
 MAINTAINER=	jseger@FreeBSD.org
 
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu
 LIB_DEPENDS=	plot.4:${PORTSDIR}/graphics/plotutils \
 		plotter.4:${PORTSDIR}/graphics/plotutils
 

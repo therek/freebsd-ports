@@ -2,7 +2,7 @@
 # Date created:		12 February 2001
 # Whom:			grog
 #
-# $FreeBSD: ports/misc/instant-workstation/Makefile,v 1.4 2001/03/19 00:18:07 grog Exp $
+# $FreeBSD: ports/misc/instant-workstation/Makefile,v 1.5 2001/08/02 09:14:27 dirk Exp $
 #
 
 PORTNAME=	instant-workstation
@@ -18,7 +18,7 @@ RUN_DEPENDS=	acroread:${PORTSDIR}/print/acroread4 \
 		dos2unix:${PORTSDIR}/converters/unix2dos \
 		emacs:${PORTSDIR}/editors/emacs20 \
 		fetchmail:${PORTSDIR}/mail/fetchmail \
-		ghostscript:${PORTSDIR}/print/ghostscript6 \
+		ghostscript:${PORTSDIR}/print/ghostscript-gnu \
 		grip:${PORTSDIR}/audio/grip \
 		gimp:${PORTSDIR}/graphics/gimp1 \
 		gv:${PORTSDIR}/print/gv \

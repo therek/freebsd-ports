@@ -2,7 +2,7 @@
 # Date created:				21 August 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/print/ggv/Makefile,v 1.26 2001/05/11 16:36:32 ade Exp $
+# $FreeBSD: ports/print/ggv/Makefile,v 1.27 2001/05/21 19:58:53 ade Exp $
 #
 
 PORTNAME=	ggv
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	stable/sources/ggv
 
 MAINTAINER=	gnome@FreeBSD.org
 
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes

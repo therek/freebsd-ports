@@ -2,7 +2,7 @@
 # Date created:				5 July 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/peps/Makefile,v 1.1 2001/07/07 03:52:10 markp Exp $
+# $FreeBSD: ports/graphics/peps/Makefile,v 1.2 2001/08/22 23:05:51 petef Exp $
 #
 
 PORTNAME=	peps
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.whizkidtech.net/peps/
 
 MAINTAINER=	petef@FreeBSD.org
 
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6 \
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu \
 		pnmtopng:${PORTSDIR}/graphics/netpbm
 
 post-patch:

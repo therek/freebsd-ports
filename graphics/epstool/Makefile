@@ -2,7 +2,7 @@
 # Date created:		23 October 1999
 # Whom:			Yuzo FURUKAWA <hurukawa@kuee.kyoto-u.ac.jp>
 #
-# $FreeBSD: ports/graphics/epstool/Makefile,v 1.6 2001/01/15 14:21:27 kevlo Exp $
+# $FreeBSD: ports/graphics/epstool/Makefile,v 1.7 2001/06/12 16:04:19 kevlo Exp $
 #
 
 PORTNAME=	epstool
@@ -13,7 +13,7 @@ DISTNAME=	gsv40src
 
 MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

@@ -2,7 +2,7 @@
 # Date created:				12 February 2001
 # Whom:					nik
 #
-# $FreeBSD: ports/graphics/eps2png/Makefile,v 1.3 2001/03/10 07:08:19 kris Exp $
+# $FreeBSD: ports/graphics/eps2png/Makefile,v 1.4 2001/08/24 21:32:50 tobez Exp $
 #
 
 PORTNAME=	eps2png
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	../../authors/Johan_Vromans
 
 MAINTAINER=	nik@freebsd.org
 
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu
 
 PERL_CONFIGURE=	yes
 

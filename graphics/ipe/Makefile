@@ -2,7 +2,7 @@
 # Date created:				October 25 2000
 # Whom:					bremner@unb.ca
 #
-# $FreeBSD: ports/graphics/ipe/Makefile,v 1.1 2001/04/07 03:12:08 will Exp $
+# $FreeBSD: ports/graphics/ipe/Makefile,v 1.2 2001/04/21 13:59:25 roam Exp $
 #
 
 PORTNAME=	Ipe
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.cs.uni-magdeburg.de/pub/ipe/ \
 
 MAINTAINER=	bremner@unb.ca
 
-RUN_DEPENDS= 	gs:${PORTSDIR}/print/ghostscript6 \
+RUN_DEPENDS= 	gs:${PORTSDIR}/print/ghostscript-gnu \
 		latex:${PORTSDIR}/print/teTeX
 
 USE_XLIB=	yes
