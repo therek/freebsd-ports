@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.408 2000/09/25 14:43:52 ade Exp $
+# $FreeBSD: ports/net/Makefile,v 1.409 2000/09/28 18:21:30 nbm Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -230,6 +230,7 @@
     SUBDIR += sdl_net
     SUBDIR += sendfile
     SUBDIR += sharity-light
+    SUBDIR += sing
     SUBDIR += slirp
     SUBDIR += smbtcpdump
     SUBDIR += sniffit
