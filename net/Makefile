@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.612 2001/09/09 03:46:12 kris Exp $
+# $FreeBSD: ports/net/Makefile,v 1.613 2001/09/16 20:44:09 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -227,6 +227,7 @@
     SUBDIR += netsed
     SUBDIR += nettest
     SUBDIR += ngrep
+    SUBDIR += ngrep-lib
     SUBDIR += nocol
     SUBDIR += ns
     SUBDIR += nsc
