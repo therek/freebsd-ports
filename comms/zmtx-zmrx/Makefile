@@ -3,7 +3,7 @@
 # Date created:			  29 July 1996
 # Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/comms/zmtx-zmrx/Makefile,v 1.9 2000/03/22 00:28:26 obrien Exp $
+# $FreeBSD: ports/comms/zmtx-zmrx/Makefile,v 1.10 2000/04/08 23:22:44 mharo Exp $
 #
 
 PORTNAME=	zmtx-zmrx
@@ -23,7 +23,6 @@ EXTRACT_BEFORE_ARGS=
 EXTRACT_AFTER_ARGS=	|sh
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile
-PKG_CMD=	/usr/sbin/pkg_create -D ${PKGDIR}/licence
 MAN1=		zmrx.1 zmtx.1
 
 do-install:
@@ -34,7 +33,7 @@ do-install:
 
 post-install:
 	@${ECHO} ""
-	@/usr/bin/more ${PKGDIR}/licence
+	@/usr/bin/more ${PKGMESSAGE}
 	@${ECHO} ""
 
 .include <bsd.port.mk>
