@@ -1,13 +1,11 @@
 # New ports collection makefile for:	xv-m17n
-# Version required:	3.10a
 # Date created:		07 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xv-m17n/Makefile,v 1.5 1999/08/31 06:45:23 mharo Exp $
+# $FreeBSD: ports/graphics/xv-m17n/Makefile,v 1.6 2000/01/09 14:51:14 shige Exp $
 #
 
-PKGNAME=	xv-m17n-3.10a
-CATEGORIES=	graphics
+PKGNAMESUFFIX=	-m17n
 
 MAINTAINER=	shige@FreeBSD.org
 
