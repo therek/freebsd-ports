@@ -2,7 +2,7 @@
 # Date created:		Mon Jun 28 18:02:04 PDT 1999
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.25 2001/06/17 18:38:05 steve Exp $
+# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.26 2001/06/17 18:40:06 steve Exp $
 #
 
 PORTNAME=	libmcrypt
@@ -23,6 +23,7 @@ LIBTOOLFLAGS=	# empty
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 INSTALLS_SHLIB=	yes
+PLIST_SUB=	CONFIGURE_TARGET=${CONFIGURE_TARGET}
 
 MAN3=		mcrypt.3
 
