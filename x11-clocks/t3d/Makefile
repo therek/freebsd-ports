@@ -2,7 +2,7 @@
 # Date created:		20 Apr 1998
 # Whom:			J Han <hjh@best.com>
 #
-# $FreeBSD: ports/x11-clocks/t3d/Makefile,v 1.6 1999/12/24 04:37:04 steve Exp $
+# $FreeBSD: ports/x11-clocks/t3d/Makefile,v 1.7 2000/04/10 00:32:51 cpiazza Exp $
 #
 
 PORTNAME=	t3d
@@ -18,7 +18,9 @@ EXTRACT_CMD=		${GZIP_CMD}
 EXTRACT_BEFORE_ARGS=	-dc
 EXTRACT_AFTER_ARGS=	| ${SH}
 
-NO_WRKSUBDIR=		yes
-USE_IMAKE=		yes
+NO_WRKSUBDIR=	yes
+USE_IMAKE=	yes
+
+MAN1=		t3d.1
 
 .include <bsd.port.mk>
