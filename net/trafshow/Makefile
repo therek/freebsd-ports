@@ -2,11 +2,12 @@
 # Date created:         25 September 1996
 # Whom:                 igor@zynaps.ru
 #
-# $FreeBSD: ports/net/trafshow/Makefile,v 1.14 2000/06/28 12:53:15 alex Exp $
+# $FreeBSD: ports/net/trafshow/Makefile,v 1.15 2000/10/29 22:27:34 jeh Exp $
 #
 
 PORTNAME=	trafshow
 PORTVERSION=	3.1
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.nsk.su/pub/RinetSoftware/
 EXTRACT_SUFX=	.tgz
