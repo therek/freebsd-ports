@@ -2,7 +2,7 @@
 # Date created:				28 June 1996
 # Whom:					markm
 #
-# $FreeBSD: ports/security/xinetd/Makefile,v 1.26 2000/06/24 15:19:24 vanilla Exp $
+# $FreeBSD: ports/security/xinetd/Makefile,v 1.27 2000/07/05 12:36:50 tg Exp $
 #
 
 PORTNAME=	xinetd
@@ -16,7 +16,8 @@ MAINTAINER=	vanilla@FreeBSD.org
 FETCH_BEFORE_ARGS=	-b
 GNU_CONFIGURE=	yes
 ALL_TARGET=	build
-CONFIGURE_ARGS=	--with-loadavg --with-libwrap --with-inet6
+CONFIGURE_ARGS=	--with-loadavg --with-libwrap
+# --with-inet6 "ipv6's code seens buggy.."
 
 MAN5=		xinetd.conf.5
 MAN8=		xinetd.8 xinetd.log.8
