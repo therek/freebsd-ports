@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.484 2001/03/31 16:10:33 demon Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.485 2001/04/02 13:29:01 olgeni Exp $
 #
 
     SUBDIR += ElectricFence
@@ -282,6 +282,7 @@
     SUBDIR += p5-IO-Stty
     SUBDIR += p5-IO-Tty
     SUBDIR += p5-IO-stringy
+    SUBDIR += p5-IPC-ShareLite
     SUBDIR += p5-IPC-Shareable
     SUBDIR += p5-Include
     SUBDIR += p5-Ioctl
