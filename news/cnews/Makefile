@@ -2,7 +2,7 @@
 # Date created:		28 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/cnews/Makefile,v 1.31 2000/04/09 17:32:45 cpiazza Exp $
+# $FreeBSD: ports/news/cnews/Makefile,v 1.32 2000/04/13 06:59:20 cpiazza Exp $
 #
 
 PORTNAME=	cnews
