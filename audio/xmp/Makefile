@@ -3,11 +3,10 @@
 # Date created:		18 September 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/xmp/Makefile,v 1.1.1.1 1999/09/18 20:46:21 cpiazza Exp $
+# $FreeBSD: ports/audio/xmp/Makefile,v 1.2 2000/02/13 13:18:24 jedgar Exp $
 #
 
 DISTNAME=	xmp-2.0.0
-PKGNAME=	xmp-2.0.0
 CATEGORIES=	audio
 MASTER_SITES=	http://xmp.helllabs.org/pkg/2.0.0/ \
 		http://xmp.linuxbox.com/pkg/2.0.0/
