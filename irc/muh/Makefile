@@ -2,11 +2,11 @@
 # Date created:        25 Sept 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/irc/muh/Makefile,v 1.8 2000/03/08 02:56:46 billf Exp $
+# $FreeBSD: ports/irc/muh/Makefile,v 1.9 2000/04/12 06:28:18 obrien Exp $
 #
 
 PORTNAME=	muh
-PORTVERSION=	2.05a
+PORTVERSION=	2.05c
 CATEGORIES=	irc
 MASTER_SITES=	http://mind.riot.org/muh/download/
 DISTNAME=	${PORTNAME}${PORTVERSION}
