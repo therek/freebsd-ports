@@ -2,7 +2,7 @@
 # Date created:		9 Jun 2000
 # Whom:			Michael Vasilenko <acid@cn.ua>
 #
-# $FreeBSD: ports/mail/icqmail/Makefile,v 1.3 2000/08/04 15:38:25 ade Exp $
+# $FreeBSD: ports/mail/icqmail/Makefile,v 1.4 2000/09/05 01:43:15 steve Exp $
 #
 
 PORTNAME=	icqmail
@@ -11,7 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	never@nevermind.kiev.ua
 
 LIB_DEPENDS=	icq.1:${PORTSDIR}/net/icqlib \
 		mimelib.3:${PORTSDIR}/converters/kdesupport2 \
