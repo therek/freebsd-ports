@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.433 2001/02/12 14:59:53 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.434 2001/02/12 16:40:04 taoka Exp $
 #
     SUBDIR += zziplib
 
@@ -115,6 +115,7 @@
     SUBDIR += gnustep
     SUBDIR += gpasm
     SUBDIR += gperf
+    SUBDIR += gtgt
     SUBDIR += gtranslator
     SUBDIR += gvd
     SUBDIR += happy
