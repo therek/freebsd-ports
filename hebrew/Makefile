@@ -1,7 +1,7 @@
-# $FreeBSD: ports/hebrew/Makefile,v 1.3 2000/08/02 11:07:43 nbm Exp $
+# $FreeBSD: ports/hebrew/Makefile,v 1.4 2000/08/02 12:01:15 nbm Exp $
 #
 
     SUBDIR += elmar-fonts
+    SUBDIR += pine
 
 .include <bsd.port.subdir.mk>
-    SUBDIR += pine
