@@ -2,10 +2,10 @@
 # Date created:        13 November 2000
 # Whom:                Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fm/rox-base/Makefile,v 1.1 2000/11/26 04:52:13 dougb Exp $
 
 PORTNAME=	rox-base
-PORTVERSION=	0.1.29
+PORTVERSION=	1.0.0
 CATEGORIES=	x11-fm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	rox
@@ -14,10 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	olgeni@uli.it
 
-WRKSRC=		${WRKDIR}/rox-base
-
-do-build:
-	@${ECHO} "Nothing to build"
+NO_BUILD= 	yes
 
 do-install:
 	${MKDIR} ${PREFIX}/share/Choices
