@@ -2,12 +2,12 @@
 # Date created:		14 Jan 1999
 # Whom:			Richard Seaman, Jr. <dick@tar.com>
 #
-# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.18 2001/01/16 17:30:20 sobomax Exp $
+# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.19 2001/02/18 21:59:43 tegge Exp $
 #
 
 PORTNAME=	linuxthreads
 PORTVERSION=	2.1.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	glibc
@@ -26,7 +26,8 @@ BROKEN="Requires FreeBSD 4.0 or newer"
 
 threads_files := README.FreeBSD clone.S clone.h freebsd-compat.h getgr_r.c \
 	gethostby_r.c getnetby_r.c getprotoby_r.c getpw_r.c getservby_r.c \
-	lclone.c libc_calls.c libc_thread.c sched.c uthread_file.c
+	lclone.c libc_calls.c libc_thread.c sched.c uthread_file.c \
+	wraputhread.c
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 SRC_BASE=	/usr/src
@@ -41,11 +42,11 @@ post-extract:
 .endfor
 	@cd ${FILESDIR} ; \
 		${CP} -p ${threads_files} ${WRKSRC}/.
+	@${MKDIR} -p ${WRKSRC}/libgcc_r
+	@test -f ${WRKSRC}/libgcc_r/Makefile || \
+	${LN} -s ${FILESDIR}/Makefile.libgcc_r ${WRKSRC}/libgcc_r/Makefile
 
-post-build:
-	@cd ${FILESDIR} ; \
-		${MKDIR} ${WRKSRC}/libgcc_r ; \
-		${LN} -s ${FILESDIR}/Makefile.libgcc_r ${WRKSRC}/libgcc_r/Makefile
+pre-build:
 	@cd ${WRKSRC}/libgcc_r ; \
 		${MAKE}
 
