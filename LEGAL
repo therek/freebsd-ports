@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.333 2004/02/24 19:53:38 lioux Exp $
+# $FreeBSD: ports/LEGAL,v 1.334 2004/02/27 21:49:36 eik Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -83,6 +83,7 @@ csound			ports/audio/csound	Distribution prohibited; may be
 csound-manual		ports/audio/csound-manual	same as csound
 dc3play-*		ports/graphics/dc3play	No redistribution due to
 						beta status
+dcl-*			ports/science/cdcl	No commercial use
 dgd/dgd-1.*		ports/net/dgd		License required for commercial
 						use as a server, and even for
 						distribution of sources and/or
