@@ -2,11 +2,11 @@
 # Date created:				April 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-Apache/Makefile,v 1.18 2000/04/10 00:06:14 cpiazza Exp $
+# $FreeBSD: ports/www/p5-Apache/Makefile,v 1.19 2000/04/23 16:12:38 vanilla Exp $
 #
 
 PORTNAME=	p5-Apache
-PORTVERSION=	1.23
+PORTVERSION=	1.24
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
