@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.195 2001/02/14 13:50:13 jeh Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.196 2001/02/15 17:14:02 ijliao Exp $
 #
 
     SUBDIR += abook
@@ -80,6 +80,7 @@
     SUBDIR += namg
     SUBDIR += newmail
     SUBDIR += nmh
+    SUBDIR += nullmailer
     SUBDIR += p5-Email-Find
     SUBDIR += p5-Email-Valid
     SUBDIR += p5-IMAP-Admin
