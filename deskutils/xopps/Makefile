@@ -3,7 +3,7 @@
 # Date created:		1 Ag 1997
 # Whom:			Pedro Giffuni (orig)
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/xopps/Makefile,v 1.8 1999/08/25 05:26:59 obrien Exp $
 #
 
 DISTNAME=	xopps.1.13
@@ -23,5 +23,8 @@ MAN1=	xopps.1
 
 pre-patch:
 	$(CP) $(WRKSRC)/Defines.spr $(WRKSRC)/Defines.$(MACH)
+
+pre-install:
+	$(MKDIR) $(PREFIX)/lib/help
 
 .include <bsd.port.mk>
