@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:	sted
 # Date created:				19 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/sted/Makefile,v 1.4 2000/03/31 01:37:36 obrien Exp $
+# $FreeBSD: ports/editors/sted/Makefile,v 1.5 2000/04/14 00:25:41 mharo Exp $
 #
 
 PORTNAME=	sted

@@ -1,8 +1,9 @@
+# ex:ts=8
 # Ports collection makefile for:  compaq-cc
 # Date created:			  Thur Dec 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.6 2001/01/11 02:55:54 obrien Exp $
+# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.7 2001/01/16 17:31:10 sobomax Exp $
 #
 
 PORTNAME=	compaq-cc

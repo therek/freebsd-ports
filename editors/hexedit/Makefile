@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:	hexedit
 # Date created:				5 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/hexedit/Makefile,v 1.8 2000/03/31 01:37:28 obrien Exp $
+# $FreeBSD: ports/editors/hexedit/Makefile,v 1.9 2000/04/14 00:25:31 mharo Exp $
 #
 
 PORTNAME=		hexedit

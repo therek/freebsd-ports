@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:	libgnugetopt
 # Date created:				2 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.13 2000/06/16 21:50:04 asami Exp $
+# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.14 2000/06/29 02:31:18 asami Exp $
 #
 
 PORTNAME=	libgnugetopt

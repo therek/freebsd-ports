@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:	cccc
 # Date created:				12 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/cccc/Makefile,v 1.11 2000/03/31 01:37:22 obrien Exp $
+# $FreeBSD: ports/devel/cccc/Makefile,v 1.12 2000/04/11 21:27:16 mharo Exp $
 #
 
 PORTNAME=		cccc

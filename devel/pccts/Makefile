@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:	pccts
 # Date created:				22 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/pccts/Makefile,v 1.11 2000/03/31 01:37:35 obrien Exp $
+# $FreeBSD: ports/devel/pccts/Makefile,v 1.12 2000/04/11 21:30:04 mharo Exp $
 #
 
 PORTNAME=		pccts

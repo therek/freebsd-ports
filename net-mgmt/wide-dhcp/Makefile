@@ -1,8 +1,9 @@
+# ex:ts=8
 # Ports collection makefile for:  dhcp
 # Date created:			  21 November 1995
 # Whom:				  Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/net/wide-dhcp/Makefile,v 1.26 2000/07/05 12:36:46 tg Exp $
+# $FreeBSD: ports/net/wide-dhcp/Makefile,v 1.27 2001/01/16 17:32:00 sobomax Exp $
 #
 
 PORTNAME=	wide-dhcp

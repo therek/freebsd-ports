@@ -1,8 +1,9 @@
+# ex:ts=8
 # Ports collection makefile for:  mutt w/pgp hooks
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.101 2000/11/16 13:14:26 tg Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.102 2001/01/16 17:31:20 sobomax Exp $
 #
 
 PORTNAME=	mutt

@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:	star
 # Date created:		Thu May  1 20:28:44 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/star/Makefile,v 1.21 2000/04/09 19:08:32 cpiazza Exp $
+# $FreeBSD: ports/sysutils/star/Makefile,v 1.22 2000/04/22 10:13:18 mharo Exp $
 #
 
 PORTNAME=		star

@@ -1,8 +1,9 @@
+# ex:ts=8
 # Ports collection makefile for:  rsync
 # Date created:			  Sat Aug 3, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/rsync/Makefile,v 1.52 2001/01/09 17:09:44 obrien Exp $
+# $FreeBSD: ports/net/rsync/Makefile,v 1.53 2001/01/16 17:31:56 sobomax Exp $
 #
 
 PORTNAME=	rsync

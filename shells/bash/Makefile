@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:	bash
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/bash2/Makefile,v 1.46 2000/11/30 11:42:35 obrien Exp $
+# $FreeBSD: ports/shells/bash2/Makefile,v 1.47 2001/01/16 17:32:23 sobomax Exp $
 #
 
 PORTNAME=	bash
