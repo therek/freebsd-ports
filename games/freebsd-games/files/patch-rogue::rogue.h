@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/games/freebsd-games/files/patch-rogue::rogue.h,v 1.1 2003/08/21 20:24:01 glewis Exp $
 
 --- rogue/rogue.h	17 Dec 2001 12:43:23 -0000	1.3.2.1
 +++ rogue/rogue.h	21 Aug 2003 20:04:36 -0000
@@ -16,14 +16,13 @@ $FreeBSD$
  	char *real;
  	unsigned short id_status;
  };
-@@ -472,3 +475,10 @@
+@@ -472,3 +475,9 @@
  	short second;	/* 0 - 59 */
  };
  
 +/*
 + * external routine declarations.
 + */
-+#define HUNGER_STR_LEN 8
 +extern  char    hunger_str[HUNGER_STR_LEN];
 +extern  char    login_name[MAX_OPT_LEN];
 +extern  const char   *error_file;
