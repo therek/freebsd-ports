@@ -2,7 +2,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule/Makefile,v 1.35 2001/01/19 15:14:09 kiri Exp $
+# $FreeBSD$
 #
 
 # This is the MASTER port of XEmacs Mule slave ports(japanese/xemacs${XEMACS_MAJOR_VER}-*)
@@ -28,9 +28,9 @@ MAINTAINER?=	kiri@FreeBSD.org
 BUILD_DEPENDS=	${BUILD_INPUT_METHOD}
 .if defined(MULE_SLAVE)
 RUN_DEPENDS=	${LOCALBASE}/lib/xemacs-${XEMACS_VER}/lisp/x-win-xfree86.elc:${PORTSDIR}/editors/xemacs${XEMACS_MAJOR_VER}-mule-common \
-		${LOCALBASE}/lib/xemacs/mule-packages/pkginfo/MANIFEST.skk:${PORTSDIR}/editors/xemacs-basic-mule-packages
+		${LOCALBASE}/lib/xemacs/mule-packages/pkginfo/MANIFEST.skk:${PORTSDIR}/editors/xemacs-mule-packages
 .else
-RUN_DEPENDS=	${LOCALBASE}/lib/xemacs/mule-packages/pkginfo/MANIFEST.skk:${PORTSDIR}/editors/xemacs-basic-mule-packages
+RUN_DEPENDS=	${LOCALBASE}/lib/xemacs/mule-packages/pkginfo/MANIFEST.skk:${PORTSDIR}/editors/xemacs-mule-packages
 .endif
 LIB_DEPENDS=	compface.1:${PORTSDIR}/mail/faces \
 		intl.1:${PORTSDIR}/devel/gettext \
