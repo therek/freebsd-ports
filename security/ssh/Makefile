@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.102 2000/09/17 08:45:11 kris Exp $
+# $FreeBSD: ports/security/ssh/Makefile,v 1.103 2000/09/21 23:37:29 kris Exp $
 #
 # Maximal ssh package requires YES values for
 # WITH_PERL, WITH_TCPWRAP
@@ -132,8 +132,7 @@ CONFIGURE_ARGS+= --with-socks="-L${PREFIX}/lib -lsocks5" --with-socks5
 USE_XLIB=	yes
 PLIST:=		${WRKDIR}/PLIST
 pre-install:
-	@${CAT} ${PKGDIR}/PLIST.X11 > ${PLIST}
-	@${CAT} ${PKGDIR}/PLIST >> ${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist.x11 ${PKGDIR}/pkg-plist > ${PLIST}
 .else
 CONFIGURE_ARGS+= --without-x
 .endif
