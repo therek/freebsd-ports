@@ -2,7 +2,7 @@
 # Date created:        00/04/18
 # Whom:                Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/pips800/Makefile,v 1.1.1.1 2000/09/01 16:28:23 taoka Exp $
+# $FreeBSD: ports/japanese/pips800/Makefile,v 1.2 2000/12/14 14:46:14 taoka Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
@@ -26,7 +26,11 @@ DESCR=		${.CURDIR}/pkg-descr
 .include <bsd.port.pre.mk>
 
 PRTYPE?=	800
+.if (${PORTVERSION} == 1.3)
+RUN_DEPENDS+=	/compat/linux/usr/lib/libpm${PRTYPE}c.so:${PORTSDIR}/print/pips${PRTYPE}
+.else
 RUN_DEPENDS+=	/compat/linux/usr/lib/libPrt${PRTYPE}.so:${PORTSDIR}/print/pips${PRTYPE}
+.endif
 
 do-install:     # empty
 
