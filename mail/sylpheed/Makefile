@@ -2,11 +2,11 @@
 # Date created:                 15 June 2000
 # Whom:                         shigeri <shigeri@m10.alpha-net.ne.jp>
 #
-# $FreeBSD: ports/mail/sylpheed/Makefile,v 1.5 2000/07/02 14:46:39 sada Exp $
+# $FreeBSD: ports/mail/sylpheed/Makefile,v 1.6 2000/09/05 01:40:43 steve Exp $
 #
 
 PORTNAME=	sylpheed
-PORTVERSION=	0.3.27
+PORTVERSION=	0.4.0
 CATEGORIES=	mail
 MASTER_SITES=	http://sylpheed.good-day.net/sylpheed/
 
@@ -21,11 +21,13 @@ USE_BZIP2=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
+CONFIGURE_ARGS= --datadir=${PREFIX}/share/${PORTNAME} \
+		--disable-glibtest --disable-gtktest
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		DATADIRNAME=share \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
-CONFIGURE_ARGS= --disable-glibtest --disable-gtktest
 
 DOCS=		ABOUT-NLS COPYING ChangeLog ChangeLog.jp INSTALL INSTALL.jp \
 		README README.jp TODO.jp
