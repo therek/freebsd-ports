@@ -2,7 +2,7 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.47 2000/10/08 05:59:12 asami Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.48 2000/10/08 10:22:52 asami Exp $
 #
 
 PORTNAME=	openssl
@@ -20,8 +20,11 @@ MAINTAINER=	dirk@FreeBSD.org
 .if ${OSVERSION} >= 400014
 FORBIDDEN=	"OpenSSL is already in the base system"
 .endif
+
 .if ${PORTOBJFORMAT} == "aout"
-NOSHARED=	yes
+MAKE_ARGS+= WHOLE_ARCHIVE_FLAG=-Bforcearchive
+.else
+MAKE_ARGS+= WHOLE_ARCHIVE_FLAG=--whole-archive
 .endif
 
 USE_PERL5=	yes
