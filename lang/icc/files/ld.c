@@ -31,7 +31,7 @@
  */
 
 #include <sys/cdefs.h>
-__FBSDID("$FreeBSD: ports/lang/icc/files/ld.c,v 1.9 2003/12/22 15:03:23 netchild Exp $");
+__FBSDID("$FreeBSD: ports/lang/icc/files/ld.c,v 1.10 2004/01/11 15:32:07 netchild Exp $");
 
 #include <err.h>
 #include <stdio.h>
@@ -184,7 +184,9 @@ main(int argc, char *argv[], char *envp[])
 
 	for (i = 0; i < argc; i++) {
 	 	if (ARGCMP(i, "-CPLUSPLUS") || ARGCMP(i, "-MT") ||
-		    ARGCMP(i, "-PIC"))
+		    ARGCMP(i, "-PIC") ||
+		    (ARGCMP(i, "-m") && i<argc-1 && ARGCMP(i+1, "elf_i386")) ||
+		    (ARGCMP(i, "elf_i386") && i != 0 && ARGCMP(i-1, "-m")))
 			continue;
 
 		/* prepend "-melf_i386" to the commandline */
