@@ -3,7 +3,7 @@
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.8 2000/01/30 20:10:25 dbaker Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.9 2000/02/13 08:38:24 dbaker Exp $
 #
 
 DISTNAME=       dnetc
@@ -18,13 +18,13 @@ DISTFILES=	dnetc458b-freebsd-x86-elf.tar.gz
 ONLY_FOR_ARCHS=	i386
 
 .if ${OSVERSION} < 220000
-BROKEN=		"No version is built for your system."
+BROKEN=		"dnetc is not available for your version of FreeBSD.  Please upgrade."
 .elif ${OSVERSION} < 300000
 BROKEN=		"No version is currently available for your system.  Please try again later."
 .endif
 
 .if exists(/usr/local/distributed.net/rc5des)
-BROKEN=		"RC5DES/DNETC conflict: Please deinstall all rc5des ports/packages"
+BROKEN=		"rc5des/dnetc conflict: Please deinstall all rc5des ports/packages first."
 .endif
 
 MAINTAINER=     dbaker@distributed.net
@@ -34,7 +34,6 @@ NO_BUILD=	yes
 
 BINDIR=		${PREFIX}/distributed.net
 LIBDIR=		${PREFIX}/etc/rc.d/
-WRKSRC=		${WRKDIR}
 
 CLIENTUID=	nobody
 CLIENTGID=	daemon
