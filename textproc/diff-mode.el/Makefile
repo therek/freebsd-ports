@@ -2,18 +2,19 @@
 # Date created:		18 Apr 2000
 # Whom:			OKAZAKI Tetsurou
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/diff-mode.el/Makefile,v 1.1 2000/07/06 19:08:29 knu Exp $
 #
 
 PORTNAME=	diff-mode.el
 PORTVERSION=	1.8
+PORTREVISION=	1
 CATEGORIES=	textproc elisp
 MASTER_SITES=	ftp://rum.cs.yale.edu/pub/monnier/misc/
 DISTNAME=	diff-mode-${PORTVERSION}.el
 EXTRACT_SUFX=	# empty
 EXTRACT_ONLY=	# empty
 
-MAINTAINER=	okazaki@be.to
+MAINTAINER=	okazaki@FreeBSD.org
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
