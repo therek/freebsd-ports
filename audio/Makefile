@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.180 2000/10/23 15:24:13 imura Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.181 2000/10/28 05:59:03 will Exp $
 #
 
     SUBDIR += afsp
@@ -62,6 +62,7 @@
     SUBDIR += holyshout
     SUBDIR += icecast
     SUBDIR += id3ed
+    SUBDIR += id3lib
     SUBDIR += id3ren
     SUBDIR += juke
     SUBDIR += kdemultimedia11
