@@ -5,7 +5,7 @@
 #      - make options output
 #      - apache2 man/docs routines
 #
-# $FreeBSD: ports/www/apache2/Makefile.doc,v 1.5 2004/02/16 14:07:48 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.doc,v 1.6 2004/06/05 11:14:18 clement Exp $
 #
 
 ## Available knobs:
@@ -51,6 +51,7 @@
 ##            SUEXEC_DOCROOT:     SuExec root directory
 ##            SUEXEC_USERDIR:     User subdirectory (default public_html)
 ##            SUEXEC_SAFEPATH:    Set the safepath
+##            SUEXEC_LOGFILE:     Set log file for suexec (default: /var/log/httpd-suexec.log)
 ##            SUEXEC_UIDMIN:      Minimal allowed UID (default 1000)
 ##            SUEXEC_GIDMIN:      Minimal allowed GID (default 1000)
 ##            SUEXEC_CALLER:      User allowed to call SuExec (default

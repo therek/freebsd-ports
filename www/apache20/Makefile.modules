@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache2/Makefile.modules,v 1.12 2004/05/29 22:07:37 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.modules,v 1.13 2004/06/05 11:14:18 clement Exp $
 #
 
 .if defined(SLAVE_DESIGNED_FOR) && ${PORTVERSION} != ${SLAVE_DESIGNED_FOR}
@@ -195,6 +195,7 @@ CONFIGURE_ARGS+=	--with-ssl=${OPENSSLBASE}
 SUEXEC_DOCROOT?=		${PREFIX_RELDEST}/www/data
 SUEXEC_USERDIR?=		public_html
 SUEXEC_SAFEPATH?=		${PREFIX_RELDEST}/bin:${LOCALBASE}/bin:/usr/bin:/bin
+SUEXEC_LOGFILE?=		/var/log/httpd-suexec.log
 SUEXEC_UIDMIN?=			1000
 SUEXEC_GIDMIN?=			1000
 SUEXEC_CALLER?=			${WWWOWN}
@@ -205,7 +206,7 @@ CONFIGURE_ARGS+=		--with-suexec-caller=${SUEXEC_CALLER} \
 				--with-suexec-userdir="${SUEXEC_USERDIR}" \
 				--with-suexec-docroot="${SUEXEC_DOCROOT}" \
 				--with-suexec-safepath="${SUEXEC_SAFEPATH}" \
-				--with-suexec-logfile="/var/log/httpd-suexec.log" \
+				--with-suexec-logfile="${SUEXEC_LOGFILE}" \
 				--with-suexec-bin="${PREFIX_RELDEST}/sbin/suexec"
 .   if defined(WITH_SUEXEC_UMASK)
 CONFIGURE_ARGS+=			--with-suexec-umask=${WITH_SUEXEC_UMASK}
