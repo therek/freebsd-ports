@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.605 2001/09/01 18:47:53 lioux Exp $
+# $FreeBSD: ports/net/Makefile,v 1.606 2001/09/01 18:52:44 lioux Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -255,6 +255,7 @@
     SUBDIR += p5-IO-Interface
     SUBDIR += p5-Mon
     SUBDIR += p5-Net
+    SUBDIR += p5-Net-CIDR
     SUBDIR += p5-Net-DLookup
     SUBDIR += p5-Net-DNS
     SUBDIR += p5-Net-Daemon
