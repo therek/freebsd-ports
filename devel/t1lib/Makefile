@@ -3,11 +3,11 @@
 # Date created:			13, May, 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/devel/t1lib/Makefile,v 1.15 2001/06/05 11:38:28 sobomax Exp $
+# $FreeBSD: ports/devel/t1lib/Makefile,v 1.16 2001/07/11 19:25:04 ijliao Exp $
 #
 
 PORTNAME=	t1lib
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/graphics
@@ -25,7 +25,7 @@ CONFIGURE_ARGS+=	--without-x
 .endif
 
 USE_GMAKE=	yes
-WRKSRC=		${WRKDIR}/T1-${PORTVERSION}
+WRKSRC=		${WRKDIR}/T1Lib-${PORTVERSION}
 
 # DOCS depends on LaTeX and LaTeX-babel module
 #.if defined(NOPORTDOCS)
