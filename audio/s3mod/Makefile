@@ -2,7 +2,7 @@
 # Date created:         9 March 1995
 # Whom:                 ugen
 #
-# $FreeBSD: ports/audio/s3mod/Makefile,v 1.7 1999/08/25 04:36:07 obrien Exp $
+# $FreeBSD: ports/audio/s3mod/Makefile,v 1.8 2000/04/08 21:24:24 mharo Exp $
 #
 
 PORTNAME=	s3mod
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/players
 DISTNAME=	${PORTNAME}-v${PORTVERSION}
 
-MAINTAINER=	ugen@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=	freebsd
 
