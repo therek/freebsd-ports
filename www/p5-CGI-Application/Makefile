@@ -2,11 +2,11 @@
 # Date created:				Mon Jan  1 10:52:22 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-CGI-Application/Makefile,v 1.1 2001/01/03 23:24:01 will Exp $
+# $FreeBSD: ports/www/p5-CGI-Application/Makefile,v 1.2 2001/03/01 06:37:04 vanilla Exp $
 #
 
 PORTNAME=	CGI-Application
-PORTVERSION=	1.0
+PORTVERSION=	1.2
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	CGI

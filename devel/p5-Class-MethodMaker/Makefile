@@ -2,11 +2,11 @@
 # Date created:				2000-07-09
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/devel/p5-Class-MethodMaker/Makefile,v 1.3 2000/10/16 03:25:12 trevor Exp $
+# $FreeBSD: ports/devel/p5-Class-MethodMaker/Makefile,v 1.4 2001/03/01 06:37:06 vanilla Exp $
 #
 
 PORTNAME=		Class-MethodMaker
-PORTVERSION=		0.96
+PORTVERSION=		1.02
 CATEGORIES=		devel perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Class
