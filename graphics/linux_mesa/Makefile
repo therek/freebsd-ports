@@ -3,7 +3,7 @@
 # Date created:         Oct, 8 1998
 # Whom:                 cracauer
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/linux_mesa/Makefile,v 1.6 1999/08/25 05:49:25 obrien Exp $
 #
 
 DISTNAME=       MesaLib-2.6
@@ -16,6 +16,7 @@ MAINTAINER=	cracauer@cons.org
 BUILD_DEPENDS=	/compat/linux/usr/lib/libglide2x.so:${PORTSDIR}/emulators/linux_glide \
 		/compat/linux/usr/bin/gcc:${PORTSDIR}/devel/linux_devtools
 
+BROKEN=		linux crosscompilation needs to be fixed first
 ONLY_FOR_ARCHS=	i386
 
 ALL_TARGET=	linux-glide
