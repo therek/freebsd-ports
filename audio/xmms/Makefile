@@ -2,7 +2,7 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms/Makefile,v 1.24 2000/10/05 07:22:28 reg Exp $
+# $FreeBSD: ports/audio/xmms/Makefile,v 1.25 2000/10/10 08:46:46 sobomax Exp $
 #
 
 PORTNAME=	xmms
@@ -47,7 +47,6 @@ PLIST_SUB+=	MIKMODPLUGIN:="@comment "
 
 .if defined(HAVE_GNOME)
 USE_GNOME=	yes
-BROKEN=		"pkg-plist broken due to inability to disable reg's CONFIGURE_ARGS"
 .else
 CONFIGURE_ARGS=	--without-gnome
 .endif
