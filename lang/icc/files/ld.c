@@ -28,7 +28,7 @@
  * Based on a shell-script written by Dan Nelson <dnelson@allantgroup.com>
  * with some modifications by Alexander Leidinger <netchild@FreeBSD.org>.
  *
- * $FreeBSD: ports/lang/icc/files/ld.c,v 1.4 2002/11/08 15:59:38 netchild Exp $
+ * $FreeBSD: ports/lang/icc/files/ld.c,v 1.5 2003/01/11 17:21:41 netchild Exp $
  */
 
 /* Uses code marked: */
@@ -202,6 +202,10 @@ main(int argc, char *argv[], char *envp[])
 		 *	 ICC passes "-dynamic-linker" to it.
 		 */
 		if (ARGCMP("--dynamic-linker") || ARGCMP("-dynamic-linker")) {
+			dynamic++;
+			continue;
+		}
+		if (ARGCMP("-shared")) {
 			dynamic++;
 			continue;
 		}
