@@ -2,7 +2,7 @@
 # Date created:         22 APR 1997
 # Whom:                 eric
 #
-# $FreeBSD: ports/editors/jed/Makefile,v 1.12 1999/12/08 23:32:15 cpiazza Exp $
+# $FreeBSD: ports/editors/jed/Makefile,v 1.13 2000/04/14 00:25:33 mharo Exp $
 #
 
 PORTNAME=	jed
@@ -21,8 +21,9 @@ LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang
 
 USE_XLIB=	yes
 
-# comment out the next line if you don't want the X version of JED.
+.if !defined(NO_XJED)
 XJED=	xjed
+.endif
 
 DIST_SUBDIR=	jed
 GNU_CONFIGURE=  yes
