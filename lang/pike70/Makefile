@@ -2,7 +2,7 @@
 # Date created:		16 Jan 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/lang/pike/Makefile,v 1.5 2000/04/12 06:19:54 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pike
@@ -15,6 +15,7 @@ MAINTAINER=	vns@delta.odessa.ua
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src/
 
+USE_SUBMAKE=	yes
 IS_INTERACTIVE=	yes
 GNU_CONFIGURE=  yes
 .if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)

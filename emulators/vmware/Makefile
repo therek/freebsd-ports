@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware/Makefile,v 1.8 2000/06/03 07:27:10 knu Exp $
+# $FreeBSD$
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.8 1999/12/17 00:38:27 vsilyaev Exp $
 #
 
@@ -32,6 +32,7 @@ RUN_DEPENDS=	${LINUX_DIR}/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
 
 RESTRICTED=	"Not sure if we can redistribute it"
 
+USE_SUBMAKE=	yes
 LINUX_DIR=	/compat/linux
 VMDIR=		${PREFIX}/lib/vmware
 
