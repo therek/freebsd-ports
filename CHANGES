@@ -10,6 +10,12 @@ in the release notes.
 
 All ports committers are allowed to commit to this file.
 
+20050321:
+AUTHOR: kwm@FreeBSD.org
+  The gstreamer-plugins gconf dependencie moved to its own port in devel.
+  When your application needs gstreamer-plug-gconf, just add 
+  USE_GSTREAMER=gconf to you Makefile
+
 20050319:
 AUTHOR: gnome@FreeBSD.org
   New GNOME components have been added to bsd.gnome.mk.  See
@@ -848,4 +854,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.40 2005/03/14 07:44:44 edwin Exp $
+$FreeBSD: ports/CHANGES,v 1.41 2005/03/19 20:06:57 marcus Exp $
