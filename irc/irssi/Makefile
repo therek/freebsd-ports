@@ -2,7 +2,7 @@
 # Date created:			14 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/irssi/Makefile,v 1.49 2001/04/27 16:39:50 ijliao Exp $
+# $FreeBSD: ports/irc/irssi/Makefile,v 1.50 2001/05/06 20:17:43 vanilla Exp $
 #
 
 PORTNAME=	irssi
@@ -12,6 +12,8 @@ CATEGORIES+=	irc ipv6	# `+=' is for slave ports
 MASTER_SITES=	http://irssi.org/files/
 
 MAINTAINER?=	vanilla@FreeBSD.org
+
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 USE_BZIP2=	yes
 USE_PERL5=	yes
