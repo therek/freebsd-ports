@@ -2,11 +2,11 @@
 # Date created:		7 December 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/misc/pybliographer/Makefile,v 1.1 2000/12/07 12:50:57 sobomax Exp $
+# $FreeBSD: ports/misc/pybliographer/Makefile,v 1.2 2000/12/07 13:01:34 sobomax Exp $
 #
 
 PORTNAME=	pybliographer
-PORTVERSION=	1.0.7
+PORTVERSION=	1.0.8
 CATEGORIES=	misc python gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/pyblio/
