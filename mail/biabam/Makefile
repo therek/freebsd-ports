@@ -2,7 +2,7 @@
 # Date created:		03 January 2001
 # Whom:			George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/biabam/Makefile,v 1.1 2001/02/27 06:05:36 steve Exp $
 #
 
 PORTNAME=		biabam
@@ -10,7 +10,7 @@ PORTVERSION=		0.9.2
 CATEGORIES=		mail
 MASTER_SITES=		http://mmj.dk/biabam/
 
-MAINTAINER=		greid@ukug.uk.freebsd.org
+MAINTAINER=		greid@FreeBSD.org
 
 NO_BUILD=		yes
 
