@@ -2,11 +2,11 @@
 # Date created:				8 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/extace/Makefile,v 1.6 2000/10/05 07:22:21 reg Exp $
+# $FreeBSD: ports/audio/extace/Makefile,v 1.7 2000/11/01 15:50:54 sobomax Exp $
 #
 
 PORTNAME=	extace
-PORTVERSION=	1.3.2
+PORTVERSION=	1.4.5
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	eXtace
@@ -20,6 +20,7 @@ USE_IMLIB=	yes
 USE_ESOUND=	yes
 WANT_GNOME=	yes
 USE_LIBTOOL=	yes
+CONFIGURE_ARGS=	--disable-alsa
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -DHAVE_LIBFFTW" \
 		LIBS="-L${LOCALBASE}/lib"
 
@@ -30,6 +31,8 @@ USE_GNOME=	yes
 .endif
 
 pre-patch:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g'
 
