@@ -2,24 +2,20 @@
 # Date created:		18th February 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 #
-# $FreeBSD: ports/emulators/prodosemu/Makefile,v 1.7 2000/01/22 13:15:48 mharo Exp $
+# $FreeBSD: ports/emulators/prodosemu/Makefile,v 1.8 2000/04/12 04:55:40 mharo Exp $
 #
 
 PORTNAME=	prodosemu
 PORTVERSION=	0.1
 CATEGORIES=	emulators
-MASTER_SITES=	ftp://ftp.apple.asimov.net/pub/apple_II/emulators/prodosemu/ \
-		ftp://apple2.caltech.edu/pub/apple2/emulators/
+MASTER_SITES=	ftp://apple2.caltech.edu/pub/apple2/emulators/
 DISTNAME=	${PORTNAME}.v${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
 NO_PACKAGE=	yes
 RESTRICTED=	apple.rom copyright is owned by Apple and cannot be distributed.
-WRKSRC=		${WRKDIR}/prodosemu-v0.1
-
-post-patch:
-	@${PERL} -pi -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/*.c
+WRKSRC=		${WRKDIR}/${PORTNAME}-v${PORTVERSION}
 
 post-install:
 .if !defined(NOPORTDOCS)
