@@ -2,7 +2,7 @@
 # Date created:		24 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/mail/procmail/Makefile,v 1.35 2001/06/05 11:20:56 olgeni Exp $
+# $FreeBSD: ports/mail/procmail/Makefile,v 1.36 2001/06/14 14:18:22 dwcjr Exp $
 #
 
 PORTNAME=	procmail
@@ -27,6 +27,6 @@ MAN5=		procmailex.5 procmailrc.5 procmailsc.5
 .include <bsd.port.pre.mk>
 
 post-configure:
-       @${PERL} -pi -e 's|/usr/local|${PREFIX}|g' ${WRKSRC}/config.h
+	@${PERL} -pi -e 's|/usr/local|${PREFIX}|g' ${WRKSRC}/config.h
 
 .include <bsd.port.post.mk>
