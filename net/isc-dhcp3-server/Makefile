@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.63 2001/05/21 19:30:29 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dhcp
@@ -24,7 +24,7 @@ PKGNAMEPREFIX=	isc-
 PKGNAMESUFFIX=	3
 DISTNAME=	${PORTNAME}-${RELEASE}${VERSION}${PATCHLEVEL}
 
-MAINTAINER=	clefevre@poboxes.com
+MAINTAINER=	clefevre@redirect.to
 
 #
 # Global variables

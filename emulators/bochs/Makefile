@@ -3,7 +3,7 @@
 # Date created:			  16 December 1997
 # Whom:				  alex
 #
-# $FreeBSD: ports/emulators/bochs/Makefile,v 1.35 2001/06/02 16:42:56 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bochs
@@ -14,7 +14,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.bochs.com/bochs/
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	clefevre@poboxes.com
+MAINTAINER=	clefevre@redirect.to
 
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:         Monday 29 January 2001
 # Whom:                 Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/security/op/Makefile,v 1.1 2001/04/07 02:13:54 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	op
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.cerias.purdue.edu/pub/tools/%SUBDIR%/ \
 		ftp://ftp.nask.pl/pub/mirror/coast.cs.purdue.edu/%SUBDIR%/
 MASTER_SITE_SUBDIR=	unix/sysutils/${PORTNAME}
 
-MAINTAINER=	clefevre@poboxes.com
+MAINTAINER=	clefevre@redirect.to
 
 #
 # Global variables

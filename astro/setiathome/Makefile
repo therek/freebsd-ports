@@ -2,7 +2,7 @@
 # Date created:         22 Apr 1999
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD: ports/astro/setiathome/Makefile,v 1.25 2001/01/28 19:48:30 jeh Exp $
+# $FreeBSD$
 
 PORTNAME=	setiathome
 PORTVERSION=	3.03
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.cdrom.com/pub/setiathome/ \
 DISTNAME=	${PORTNAME}-${PORTVERSION}.${PORT_HOST}
 EXTRACT_SUFX=	.tar
 
-MAINTAINER=	clefevre@poboxes.com
+MAINTAINER=	clefevre@redirect.to
 
 .include <bsd.port.pre.mk>
 
