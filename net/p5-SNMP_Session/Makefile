@@ -2,7 +2,7 @@
 # Date created:				13 June 1999
 # Whom:					Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD: ports/net/p5-SNMP_Session/Makefile,v 1.9 2001/01/08 23:47:49 kuriyama Exp $
+# $FreeBSD: ports/net/p5-SNMP_Session/Makefile,v 1.10 2001/03/01 06:38:33 vanilla Exp $
 #
 
 PORTNAME=	SNMP_Session
@@ -11,11 +11,18 @@ CATEGORIES=	net perl5
 MASTER_SITES=	ftp://ftp.switch.ch/software/sources/network/snmp/perl/
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	petef@databits.net
 
 PERL_CONFIGURE=	yes
 
-pre-install:
-	${PERL} -pi -e "s:/usr/local:${PREFIX}:g" ${WRKSRC}/Makefile;
+post-configure:
+	@${PERL} -pi -e "s:/usr/local:${PREFIX}:g" ${WRKSRC}/Makefile;
+
+post-install:
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/p5-SNMP_Session
+	${INSTALL_DATA} ${WRKSRC}/README.SNMP_util \
+		${PREFIX}/share/doc/p5-SNMP_Session
+.endif
 
 .include <bsd.port.mk>
