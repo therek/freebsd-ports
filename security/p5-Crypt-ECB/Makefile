@@ -2,17 +2,20 @@
 # Date created:				Wed Jan  3 16:09:46 2001
 # Whom:					will
 #
-# $FreeBSD: ports/security/p5-Crypt-ECB/Makefile,v 1.1 2001/01/03 23:26:02 will Exp $
+# $FreeBSD: ports/security/p5-Crypt-ECB/Makefile,v 1.2 2001/03/01 06:37:14 vanilla Exp $
 #
 
 PORTNAME=	Crypt-ECB
-PORTVERSION=	1.1
+PORTVERSION=	1.1p2
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Crypt
 PKGNAMEPREFIX=	p5-
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/p/-/}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	tobez@FreeBSD.org
+
+WRKSRC=		${WRKDIR}/${DISTNAME:S/-2//}
 
 PERL_CONFIGURE=	yes
 
