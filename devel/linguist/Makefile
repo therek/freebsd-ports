@@ -2,7 +2,7 @@
 # Date created:				31 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/linguist/Makefile,v 1.1 2000/10/31 14:50:43 sobomax Exp $
 #
 
 PORTNAME=	linguist
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.trolltech.com/qt/pre-releases/
 DISTNAME=	${PORTNAME}-pre
 
 MAINTAINER=	sobomax@FreeBSD.org
+
+BUILD_DEPENDS=	tmake:${PORTSDIR}/devel/tmake
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
