@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.199 2000/05/22 12:42:10 sobomax Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.200 2000/05/29 08:54:59 sobomax Exp $
 #
 
     SUBDIR += 4va
@@ -36,6 +36,7 @@
     SUBDIR += gcolor
     SUBDIR += gd
     SUBDIR += gdk-pixbuf
+    SUBDIR += gdtclft
     SUBDIR += geomview
     SUBDIR += gfont
     SUBDIR += gif2png
