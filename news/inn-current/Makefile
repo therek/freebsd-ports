@@ -3,10 +3,10 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1), 14 Feb 1999 (2.2)
 # Whom:			torstenb
 #
-# $FreeBSD: ports/news/inn/Makefile,v 1.34 1999/08/30 14:31:37 peter Exp $
+# $FreeBSD: ports/news/inn/Makefile,v 1.35 1999/08/31 06:49:33 mharo Exp $
 #
 
-DISTNAME=	inn-2.2
+DISTNAME=	inn-2.2.1
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.isc.org/isc/inn/
 
@@ -25,11 +25,13 @@ INN_NEWSLIB?=${PREFIX}/news
 INN_NEWSLOG?=/var/log/news
 
 HAS_CONFIGURE=		yes
-CONFIGURE_ENV+=		MANDIR=${PREFIX}/man
+CONFIGURE_ARGS+=	--mandir=${PREFIX}/man
 CONFIGURE_ARGS+=	--prefix=${INN_NEWSLIB}
 CONFIGURE_ARGS+=	--with-spool-dir=${INN_NEWSSPOOL}
 CONFIGURE_ARGS+=	--with-log-dir=${INN_NEWSLOG}
 CONFIGURE_ARGS+=	--with-perl
+CONFIGURE_ARGS+=	--with-tmp-path=${INN_NEWSSPOOL}/tmp
+CONFIGURE_ARGS+=	--with-largefiles
 
 # Various Options. See ${WRKSRC}/INSTALL for details
 
@@ -58,6 +60,6 @@ MAN8=	actived.8 actsync.8 actsyncd.8 archive.8 batcher.8 buffchan.8 \
 
 post-install:
 	${SED} <${FILESDIR}/innd.sh >${PREFIX}/etc/rc.d/innd.sh \
-		s+!!PREFIX!!+${PREFIX}+g && ${CHMOD} +x ${PREFIX}/etc/rc.d/innd.sh
+		s+!!PREFIX!!+${PREFIX}+g && chmod +x ${PREFIX}/etc/rc.d/innd.sh
 
 .include <bsd.port.mk>
