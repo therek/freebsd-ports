@@ -2,7 +2,7 @@
 # Date created:		29 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/nntp/Makefile,v 1.20 2000/04/21 07:51:47 mharo Exp $
+# $FreeBSD: ports/news/nntp/Makefile,v 1.21 2000/08/07 07:17:32 kevlo Exp $
 #
 
 PORTNAME=	nntp
@@ -22,8 +22,8 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libcnews.a:${PORTSDIR}/news/cnews
 NO_WRKSUBDIR=	yes
 MAN1=		nntpxmit.1
 MAN8=		nntpd.8c acttimes.8c
-PLIST_SUB+=     NEWSBIN=${NEWSBIN:S=${PREFIX}/==}
-PLIST_SUB+=    	NEWSCTL=${NEWSCTL:S=${PREFIX}/==}
+PLIST_SUB+=	NEWSBIN=${NEWSBIN:S=${PREFIX}/==}
+PLIST_SUB+=	NEWSCTL=${NEWSCTL:S=${PREFIX}/==}
 
 MODIFY=		conf.h Makefile
 
