@@ -1,9 +1,10 @@
 # New ports collection makefile for:    less
+# http://www.flash.net/~marknu/less/
 # Version required:     3.*
 # Date created:         8 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/misc/less/Makefile,v 1.22 1999/09/08 16:32:03 ache Exp $
+# $FreeBSD: ports/misc/less/Makefile,v 1.23 1999/12/23 02:27:06 ache Exp $
 #
 
 DISTNAME=       less-346
