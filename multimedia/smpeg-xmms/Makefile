@@ -2,11 +2,11 @@
 # Date created:				30 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/smpeg-xmms/Makefile,v 1.2 2000/12/27 08:06:22 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	smpeg-xmms
-PORTVERSION=	0.3.3
+PORTVERSION=	0.3.4
 CATEGORIES=	graphics gnome
 MASTER_SITES=	ftp://ftp.xmms.org/xmms/plugins/smpeg-xmms/
 
