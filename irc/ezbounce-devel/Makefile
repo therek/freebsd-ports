@@ -2,11 +2,11 @@
 # Date created:	 	19 February 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/ezbounce/Makefile,v 1.13 2000/06/20 21:45:52 cpiazza Exp $
+# $FreeBSD: ports/irc/ezbounce/Makefile,v 1.14 2000/07/03 23:19:58 will Exp $
 #
 
 PORTNAME=	ezbounce
-PORTVERSION=	0.99.7
+PORTVERSION=	0.99.10
 CATEGORIES=	irc
 MASTER_SITES=  	http://druglord.freelsd.org/ezbounce/
 
@@ -14,22 +14,26 @@ MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE= 	yes
 
+post-patch:
+	@${SED} -e "s:/path/to:${PREFIX}/sbin:" ${WRKSRC}/sample.conf > \
+		${WRKSRC}/ezbounce.conf.default
+
 do-install:
-	@ ${ECHO} ------------------------------------------------------------------
-	@ ${ECHO} You will need to read http://druglord.freelsd.org/ezbounce/README
-	@ ${ECHO} and http://druglord.freelsd.org/ezbounce/mdidentd.README
-	@ ${ECHO} to set up this program.
-	@ ${ECHO} Also, edit ${PREFIX}/etc/ezbounce.conf to your liking.
-	@ ${ECHO} ------------------------------------------------------------------
-	${INSTALL_PROGRAM} -C ${WRKSRC}/ezbounce ${PREFIX}/sbin
-	${INSTALL_PROGRAM} -C ${WRKSRC}/mdidentd/mdidentd ${PREFIX}/sbin
-	@ ${SED} -e s:/path/to:${PREFIX}/sbin: ${WRKSRC}/sample.conf > \
-		${WRKSRC}/sample.conf.new
-	if [ ! -f ${PREFIX}/etc/ezbounce.conf ]; then \
-			${INSTALL_SCRIPT} -C ${WRKSRC}/sample.conf.new \
-			${PREFIX}/etc/ezbounce.conf; \
-		fi
-	${INSTALL_SCRIPT} -C ${WRKSRC}/sample.conf.new \
-		${PREFIX}/etc/ezbounce.conf.default
+	${INSTALL_PROGRAM} ${WRKSRC}/ezbounce ${PREFIX}/sbin
+	${INSTALL_PROGRAM} ${WRKSRC}/mdidentd/mdidentd ${PREFIX}/sbin
+	${INSTALL_SCRIPT} ${WRKSRC}/ezbounce.conf.default ${PREFIX}/etc
+.if !exists(${PREFIX}/etc/ezbounce.conf)
+	${INSTALL_SCRIPT} ${WRKSRC}/ezbounce.conf.default \
+		${PREFIX}/etc/ezbounce.conf
+.endif
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/ezbounce
+	${INSTALL_DATA} ${WRKSRC}/CHANGES ${PREFIX}/share/doc/ezbounce
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/ezbounce
+	${INSTALL_DATA} ${WRKSRC}/TODO ${PREFIX}/share/doc/ezbounce
+	${INSTALL_DATA} ${WRKSRC}/mdidentd/README \
+		${PREFIX}/share/doc/ezbounce/mdidentd.README
+.endif
+	@${SED} -e "s:/usr/local:${PREFIX}:g" ${PKGMESSAGE}
 
 .include <bsd.port.mk>
