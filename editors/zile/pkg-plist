@@ -1,12 +1,8 @@
-@comment $FreeBSD: ports/editors/zile/pkg-plist,v 1.4 2003/06/08 01:18:51 naddy Exp $
+@comment $FreeBSD: ports/editors/zile/pkg-plist,v 1.5 2003/11/16 14:36:15 krion Exp $
 bin/zile
 %%DATADIR%%/AUTODOC
 %%DATADIR%%/FAQ
 %%DATADIR%%/HELP
-%%DATADIR%%/LATEST_VERSION
-%%DATADIR%%/MINIHELP1
-%%DATADIR%%/MINIHELP2
-%%DATADIR%%/MINIHELP3
 %%DATADIR%%/TUTORIAL
 %%DATADIR%%/zilerc.sample
 @dirrm %%DATADIR%%
