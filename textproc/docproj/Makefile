@@ -3,7 +3,7 @@
 # Date created:        27 June 1998
 # Whom:                Nik Clayton <nik@freebsd.org>
 #
-# $FreeBSD: ports/textproc/docproj/Makefile,v 1.17 1999/08/31 02:09:10 peter Exp $
+# $FreeBSD: ports/textproc/docproj/Makefile,v 1.18 1999/12/24 01:22:18 nik Exp $
 #
 
 DISTNAME=	docproj
@@ -15,7 +15,6 @@ DISTFILES=	# empty
 MAINTAINER=	nik@freebsd.org
 
 RUN_DEPENDS=	instant:${PORTSDIR}/textproc/sgmlformat \
-		sgmlnorm:${PORTSDIR}/textproc/sp \
 		jade:${PORTSDIR}/textproc/jade \
 		tidy:${PORTSDIR}/www/tidy \
 		w3m:${PORTSDIR}/www/w3m \
