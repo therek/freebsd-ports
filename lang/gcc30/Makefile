@@ -3,13 +3,13 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc30/Makefile,v 1.103 2001/05/04 08:50:08 obrien Exp $
+# $FreeBSD: ports/lang/gcc30/Makefile,v 1.104 2001/06/02 19:12:03 obrien Exp $
 #
 
 SNAPDATE=	2001-04-30
 SNAPVER=	${SNAPDATE:S/-//g}
 
-PORTNAME=	gcc-devel
+PORTNAME=	gcc-30snap
 PORTVERSION=	${SNAPVER}
 CATEGORIES=	lang java
 MASTER_SITES=	ftp://ftp.freesoftware.com/pub/sourceware/gcc/snapshots/${SNAPDATE}/  \
