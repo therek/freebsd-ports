@@ -2,14 +2,13 @@
 # Date created:				3 October 2000
 # Whom:					Sean Farley <sean-freebsd@farley.org>
 #
-# $FreeBSD: ports/audio/gsi/Makefile,v 1.1 2000/12/07 18:05:11 sobomax Exp $
+# $FreeBSD: ports/audio/gsi/Makefile,v 1.2 2000/12/07 18:08:37 sobomax Exp $
 #
 
 PORTNAME=	gsi
 PORTVERSION=	0.9.4
 CATEGORIES=	audio
-MASTER_SITES=	http://www.farley.org/ \
-		http://www.xs4all.nl/~whs/gsi/bestanden/
+MASTER_SITES=	http://www.farley.org/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
