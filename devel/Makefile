@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.283 2000/05/09 18:31:39 hoek Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.284 2000/05/24 04:34:15 dwhite Exp $
 #
 
     SUBDIR += ElectricFence
@@ -109,6 +109,7 @@
     SUBDIR += linux_devtools
     SUBDIR += linux_kdump
     SUBDIR += linuxthreads
+    SUBDIR += lwp
     SUBDIR += m4
     SUBDIR += m68kbinutils
     SUBDIR += m68kgcc
@@ -198,6 +199,8 @@
     SUBDIR += re2c
     SUBDIR += rinfo
     SUBDIR += robodoc
+    SUBDIR += rpc2
+    SUBDIR += rvm
     SUBDIR += scogdb
     SUBDIR += sdcc
     SUBDIR += sdl
