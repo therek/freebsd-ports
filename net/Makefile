@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.369 2000/06/30 01:12:14 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.370 2000/06/30 14:34:11 sobomax Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -231,6 +231,7 @@
     SUBDIR += tund
     SUBDIR += ucd-snmp
     SUBDIR += vnc
+    SUBDIR += vtun
     SUBDIR += wais
     SUBDIR += wide-dhcp
     SUBDIR += wmnet
