@@ -3,19 +3,11 @@
 # Date created:		17 January 1998
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mew-xemacs-mule/Makefile,v 1.3 1999/08/25 06:50:28 obrien Exp $
 #
 
-PKGNAME=	mew-xemacs-mule-1.93
+EMACS_PORT_NAME=	xemacs-mule
 
-EMACS_NAME=	XEmacs-Mule-20.4
-DIRSECTION=	Local Packages:
-DIRENTRY=	"* Mew::		Messaging in the Emacs World (English)." \
-		"* Mew.jis::	Messaging in the Emacs World (Japanese)."
-INFOFILE=	mew.info \
-		mew.jis.info
+MASTERDIR=		${.CURDIR}/../../mail/mew
 
-MASTERDIR=	${.CURDIR}/../../mail/mew-common
-PKGDIR=		${.CURDIR}/pkg
-
-.include	"${MASTERDIR}/Makefile"
+.include "${MASTERDIR}/Makefile"
