@@ -1,12 +1,12 @@
 # New ports collection makefile for:	kpp
-# Version required:	0.15c
+# Version required:	0.16d
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kpp/Makefile,v 1.1.1.1 2000/02/26 18:45:41 jedgar Exp $
+# $FreeBSD: ports/devel/kpp/Makefile,v 1.2 2000/03/22 01:58:58 will Exp $
 #
 
-DISTNAME=	kpp-0.15c
+DISTNAME=	kpp-0.16d
 CATEGORIES=	devel
 MASTER_SITES=	http://www.msoe.edu/~geiseri/files/
 
@@ -16,8 +16,7 @@ LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11
 
 GNU_CONFIGURE=	yes
 USE_QT=		yes
-USE_NEWGCC=	yes
-CONFIGURE_ARGS= --prefix=${PREFIX} --datadir=${PREFIX}
+CONFIGURE_ARGS+=--datadir=${PREFIX}
 CONFIGURE_ENV=  KDEDIR="${PREFIX}"
 
 .include <bsd.port.mk>
