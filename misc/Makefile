@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.244 1999/11/03 01:19:44 jim Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.245 1999/11/03 20:13:01 jim Exp $
 #
 
     SUBDIR += 221upgrade
@@ -78,6 +78,7 @@
     SUBDIR += peq
     SUBDIR += pdmenu
     SUBDIR += pinfo
+    SUBDIR += proxyper
     SUBDIR += qclock
     SUBDIR += quotes
     SUBDIR += rc5des
