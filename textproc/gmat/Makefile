@@ -2,7 +2,7 @@
 # Date created:		31 December 2000
 # Whom:			grog
 #
-# $FreeBSD: ports/textproc/gmat/Makefile,v 1.4 2001/02/01 00:42:57 grog Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gmat
@@ -12,7 +12,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-0.2.4
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.ora.com/pub/gmat/
 
-MAINTAINER=	grog
+MAINTAINER=	grog@FreeBSD.Org
 
 RUN_DEPENDS=	${LOCALBASE}/bin/nsgmls:${PORTSDIR}/textproc/sp		\
 		${LOCALBASE}/bin/procmail:${PORTSDIR}/mail/procmail	\
