@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.369 2001/05/27 05:38:22 vanilla Exp $
+# $FreeBSD: ports/www/Makefile,v 1.370 2001/06/08 04:23:35 markp Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -78,6 +78,7 @@
     SUBDIR += http_load
     SUBDIR += httperf
     SUBDIR += httptunnel
+    SUBDIR += httrack
     SUBDIR += hypermail
     SUBDIR += indexme
     SUBDIR += jakarta-tomcat
