@@ -2,13 +2,13 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.36 2001/05/31 06:07:31 cjh Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.37 2001/06/10 09:48:08 brian Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
 PORTNAME=	vmware2
 PORTVERSION=	2.0.3.799
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	emulators linux
 MASTER_SITES=	http://www4.vmware.com/software/ \
 		${FREEBSD_MODULE_SITES} \
@@ -98,10 +98,6 @@ post-patch:
 		${WRKSRC}/vmmon-only/freebsd/*.c
 .endif
 	cd ${WRKSRC}/vmmon-only/freebsd && ${TOUCH} bus_if.h device_if.h
-.if ${OSVERSION} >= 500018
-	${PERL} -i -pe 's,<sys/lock\.h>,<sys/mutex.h>,' \
-		${WRKSRC}/vmmon-only/freebsd/*.c
-.endif
 .if ${OSVERSION} >= 500019
 	${PERL} -i -pe 's,<machine/ioctl_fd\.h>,<sys/fdcio.h>,' \
 		${WRKSRC}/vmmon-only/freebsd/*.c \
