@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache2/Makefile.modules,v 1.13 2004/06/05 11:14:18 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.modules,v 1.14 2004/07/01 05:54:56 clement Exp $
 #
 
 .if defined(SLAVE_DESIGNED_FOR) && ${PORTVERSION} != ${SLAVE_DESIGNED_FOR}
@@ -25,6 +25,7 @@ PKGNAMESUFFIX=	-${SLAVE_PORT_MPM}
 .   if ${WITH_MPM} != "prefork"
 PKGNAMESUFFIX=		-${WITH_MPM:L}
 WITH_THREADS=		yes
+WITHOUT_MODULES+=	cgi
 .      if ${WITH_MPM:L} == "worker"
 PLIST_SUB+=	PREFORK="@comment " WORKER="" THREADPOOL="@comment "
 .      elif  ${WITH_MPM:L} == "perchild"
