@@ -2,14 +2,15 @@
 # Date created:		Di   5 Mai 1998 21:31:03 CEST
 # Whom:			andreas
 #
-# $FreeBSD: ports/net/ntp/Makefile,v 1.19 2001/04/15 13:57:22 dinoex Exp $
+# $FreeBSD: ports/net/ntp/Makefile,v 1.20 2001/07/07 14:10:09 ijliao Exp $
 #
 
 PORTNAME=	ntp
-PORTVERSION=	4.0.99m-rc2
+PORTVERSION=	4.0.99m.r2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.udel.edu/pub/ntp/ntp4/ \
 		http://www.eeics.udel.edu/~ntp/ntp_spool/ntp4/
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/.r/-rc/}
 
 MAINTAINER=	Cy.Schubert@uumail.gov.bc.ca
 
