@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/Makefile,v 1.19 2000/02/23 00:44:17 jedgar Exp $
+# $FreeBSD: ports/astro/Makefile,v 1.20 2000/07/02 07:22:53 will Exp $
 #
 
     SUBDIR += dgpsip
@@ -8,6 +8,7 @@
     SUBDIR += rmap
     SUBDIR += saoimage
     SUBDIR += sattrack
+    SUBDIR += seti_applet
     SUBDIR += setiathome
     SUBDIR += ssystem
     SUBDIR += stars
