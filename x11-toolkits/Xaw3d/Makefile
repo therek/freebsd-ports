@@ -3,7 +3,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.25 1999/08/31 06:52:40 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.26 2000/02/22 08:01:52 asami Exp $
 #
 
 DISTNAME=	Xaw3d-1.5
@@ -15,8 +15,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xc/lib/Xaw3d
 USE_IMAKE=	yes
-
-.include <bsd.port.pre.mk>
 
 post-extract:
 	${MKDIR} ${WRKSRC}/X11/Xaw3d
@@ -30,12 +28,9 @@ post-configure:
 .endif
 
 post-install:
-.if ${PORTOBJFORMAT} == "aout"
-	${LN} -sf libXaw3d.so.6.1 ${PREFIX}/lib/libXaw3d.so
-.endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
+	${LDCONFIG} -m ${PREFIX}/lib
 	${MKDIR} ${PREFIX}/share/doc/Xaw3d
 	${CP} ${WRKSRC}/README.XAW3D ${PREFIX}/share/doc/Xaw3d
 	@${CAT} ${PKGMESSAGE}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
