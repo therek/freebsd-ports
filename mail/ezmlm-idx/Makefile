@@ -3,7 +3,7 @@
 # Date created:		28 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.6 1999/08/25 06:50:10 obrien Exp $
+# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.7 2000/02/09 20:57:56 tom Exp $
 
 DISTNAME=	ezmlm-idx-${IDX_VERSION}
 CATEGORIES=	mail
@@ -83,7 +83,7 @@ post-patch:
 	@${ECHO} ${QMAIL_DIR} >> ${WRKDIR}/.PPREFIX
 	@${ECHO} ${NOPORTDOCS} ${USE_MYSQL} >> ${WRKDIR}/.PPREFIX
 	@${MV} ${WRKSRC}/idx.h ${WRKSRC}/idx.h.orig
-	@${SED} -e 's#TXT_ETC_EZMLMRC "/etc/ezmlmrc"#TXT_ETC_EZMLMRC "${PREFIX}/etc/ezmlmrc"#' \
+	@${SED} -e 's#/etc/ezmlm/#'${PREFIX}'/etc/ezmlm/#' \
 		< ${WRKSRC}/idx.h.orig > ${WRKSRC}/idx.h
 	@${CP} ${PKGDIR}/PLIST ${WRKDIR}
 .if !defined(NOPORTDOCS)
@@ -103,8 +103,9 @@ do-install:
 .for file in ${MY_SCRIPTS}
 	@${INSTALL_SCRIPT} ${WRKSRC}/ezmlm-${file} ${PREFIX}/bin
 .endfor
+	@${MKDIR} ${PREFIX}/etc/ezmlm
 .for file in ${MY_CONFIG}
-	@${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/etc/${file}.sample
+	@${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/etc/ezmlm/${file}.sample
 .endfor
 .for file in ${MAN1}
 	@${INSTALL_MAN} ${WRKSRC}/${file} ${PREFIX}/man/man1
