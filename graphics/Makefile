@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.144 1999/09/20 18:40:40 mph Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.145 1999/09/24 16:02:37 taoka Exp $
 #
 
     SUBDIR += 4va
@@ -18,6 +18,7 @@
     SUBDIR += dc3play
     SUBDIR += dore
     SUBDIR += electriceyes
+    SUBDIR += enfle
     SUBDIR += eterm-bg
     SUBDIR += fbm
     SUBDIR += fli2gif
