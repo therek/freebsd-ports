@@ -3,7 +3,7 @@
 # Date created:		19 July 1999
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/gridpix/Makefile,v 1.2 1999/08/25 06:14:10 obrien Exp $
+# $FreeBSD: ports/graphics/gridpix/Makefile,v 1.3 1999/09/09 23:10:07 asami Exp $
 #
 
 DISTNAME=	GridPix-2.1
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://stampede.cs.berkeley.edu/pub/GridPix/
 
 MAINTAINER=	asami@FreeBSD.org
 
-BUILD_DEPENDS=	${X11BASE}/lib/libpnm.a:${PORTSDIR}/graphics/netpbm
+BUILD_DEPENDS=	${LOCALBASE}/lib/libpnm.a:${PORTSDIR}/graphics/netpbm
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
 # create necessary directories -- don't want to depend on an http

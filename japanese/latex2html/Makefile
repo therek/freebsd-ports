@@ -3,7 +3,7 @@
 # Date created:		3 Apr 1999
 # Whom:			Sugimoto Sadahiro <ixtl@utmc.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/latex2html/Makefile,v 1.3 1999/08/25 05:25:08 obrien Exp $
 #
 # Default image format is GIF.
 # If you prefer PNG to GIF, define USE_PNG (`make -DUSE_PNG`).
@@ -21,7 +21,7 @@ MAINTAINER=	ixtl@utmc.or.jp
 RUN_DEPENDS=	${PREFIX}/bin/latex:${PORTSDIR}/print/latex \
 		${PREFIX}/bin/dvips:${PORTSDIR}/print/dvips \
 		${PREFIX}/bin/gs:${PORTSDIR}/print/ghostscript5 \
-		${X11BASE}/bin/anytopnm:${PORTSDIR}/graphics/netpbm
+		${LOCALBASE}/bin/anytopnm:${PORTSDIR}/graphics/netpbm
 
 .ifdef USE_PNG
 RUN_DEPENDS +=	${X11BASE}/bin/pnmtopng:${PORTSDIR}/graphics/pnmtopng
