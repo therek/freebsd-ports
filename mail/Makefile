@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.210 2001/03/31 13:47:10 nakai Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.211 2001/04/04 21:45:52 nsayer Exp $
 #
 
     SUBDIR += abook
