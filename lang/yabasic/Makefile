@@ -1,9 +1,9 @@
 # New ports collection makefile for:	yabasic
-# Version required:	2.61
+# Version required:	2.62
 # Date created:		11 Nov 1999
 # Whom:			Frank Gruender
 #
-# $FreeBSD: ports/lang/yabasic/Makefile,v 1.2 2000/01/02 13:52:19 vanilla Exp $
+# $FreeBSD: ports/lang/yabasic/Makefile,v 1.3 2000/01/24 06:10:36 steve Exp $
 #
 
 DISTNAME=	yab
@@ -14,6 +14,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	elwood@mc5sys.in-berlin.de
 
+USE_BISON=	yes
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${PKGNAME}
