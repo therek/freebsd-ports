@@ -2,7 +2,7 @@
 # Date created:		01 Aug 2001
 # Whom:			Scot W. Hetzel
 #
-# $FreeBSD: ports/misc/compat4x/Makefile,v 1.2 2001/08/15 07:40:36 sobomax Exp $
+# $FreeBSD: ports/misc/compat4x/Makefile,v 1.3 2001/08/15 18:17:47 knu Exp $
 #
 
 PORTNAME=	compat4x
@@ -65,7 +65,7 @@ do-build:
 	) > ${WRKDIR}/000.${PORTNAME}.sh
 
 do-install:
-	${MKDIR} ${TARGET_DIR}
+	${MKDIR} ${TARGET_DIR} ${PREFIX}/etc/rc.d
 	${INSTALL_DATA} ${WRKSRC}/* ${TARGET_DIR}/
 .if ${OSVERSION} >= 500000
 	${LN} -sf ${TARGET_DIR}/libc_r.so.4.compat4x ${TARGET_DIR}/libc_r.so.4

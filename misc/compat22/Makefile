@@ -2,7 +2,7 @@
 # Date created:		01 Aug 2001
 # Whom:			Scot W. Hetzel
 #
-# $FreeBSD: ports/misc/compat22/Makefile,v 1.2 2001/08/15 07:40:35 sobomax Exp $
+# $FreeBSD: ports/misc/compat22/Makefile,v 1.3 2001/08/15 18:17:47 knu Exp $
 #
 
 PORTNAME=	compat22
@@ -44,7 +44,7 @@ do-build:
 	) > ${WRKDIR}/000.${PORTNAME}.sh
 
 do-install:
-	${MKDIR} ${TARGET_DIR}
+	${MKDIR} ${TARGET_DIR} ${PREFIX}/libexec ${PREFIX}/etc/rc.d
 	${INSTALL_DATA} ${WRKSRC}/* ${TARGET_DIR}/
 	${INSTALL_DATA} ${WRKDIR}/usr/libexec/ld.so ${PREFIX}/libexec/
 	${INSTALL_SCRIPT} ${WRKDIR}/000.${PORTNAME}.sh ${PREFIX}/etc/rc.d/
