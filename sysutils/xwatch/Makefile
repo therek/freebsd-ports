@@ -2,13 +2,13 @@
 # Date created:				17 July 1998
 # Whom:					mph
 #
-# $FreeBSD: ports/sysutils/xwatch/Makefile,v 1.10 2000/04/22 10:14:11 mharo Exp $
+# $FreeBSD: ports/sysutils/xwatch/Makefile,v 1.11 2000/10/05 06:42:28 reg Exp $
 #
 
 PORTNAME=	xwatch
 PORTVERSION=	0.1.0
 CATEGORIES=	sysutils
-MASTER_SITES=	http://hem.passagen.se/osk/
+MASTER_SITES=	http://www.student.lu.se/~nbi98oli/src/obsolete/
 
 MAINTAINER=	mph@freebsd.org
 
