@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/drweb-sendmail/files/drweb-smf.sh,v 1.1 2001/08/24 15:57:23 ache Exp $
+# $FreeBSD: ports/security/drweb-sendmail/files/drweb-smf.sh,v 1.3 2001/08/25 11:02:57 ache Exp $
 
 drwebfilter='!!PREFIX!!/sbin/drweb-smf'
 
@@ -11,6 +11,7 @@ start)
 	    $drwebfilter -u/var/run/drwebd -m/var/run/drweb-smf.sock \
 		-a!!PREFIX!!/drweb/infected.!!! -f/tmp -r -x -h -l -ba \
 		-gpostmaster -epostmaster@your.domain.name
+	    /bin/chmod 660 /var/run/drweb-smf.sock
 	fi
 	;;
 stop)
