@@ -2,7 +2,7 @@
 # Date created:         17 Jan 1999
 # Whom:                 Lars Koeller
 #
-# $FreeBSD: ports/print/hp2xx/Makefile,v 1.7 2000/07/04 07:12:55 sobomax Exp $
+# $FreeBSD: ports/print/hp2xx/Makefile,v 1.8 2001/01/16 17:32:09 sobomax Exp $
 #
 
 PORTNAME=	hp2xx
@@ -14,7 +14,7 @@ DISTNAME=	hp2xx-3.20-png
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/sources
 USE_XLIB=	yes

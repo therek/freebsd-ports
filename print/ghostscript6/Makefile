@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.70 2001/07/06 10:35:32 andreas Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.71 2001/08/23 18:15:54 mi Exp $
 #
 
 PORTNAME=	ghostscript
@@ -35,7 +35,7 @@ EXTRACT_ONLY=	${GS_SOURCES}
 MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/graphics/jpeg:extract
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
 WRKSRC=		${WRKDIR}/gs${PORTVERSION}
 ALL_TARGET=	all pcl3opts escputil

@@ -2,7 +2,7 @@
 # Date created:		Mon Jan 18 17:03:33 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pdflib3/Makefile,v 1.12 2000/09/13 21:46:32 billf Exp $
+# $FreeBSD: ports/print/pdflib3/Makefile,v 1.13 2001/03/11 00:47:19 billf Exp $
 #
 
 PORTNAME=	pdflib
@@ -14,7 +14,7 @@ MAINTAINER=	billf@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/afm/Courier:${PORTSDIR}/print/afm
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 RESTRICTED=	"many odd restrictions on usage and distribution"
 INSTALLS_SHLIB=	yes

@@ -2,7 +2,7 @@
 # Date created:		28 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/print/ruby-panda/Makefile,v 1.4 2001/04/15 08:15:15 knu Exp $
+# $FreeBSD: ports/print/ruby-panda/Makefile,v 1.5 2001/07/29 12:14:10 knu Exp $
 #
 
 PORTNAME=	panda
@@ -17,7 +17,7 @@ MAINTAINER=	knu@FreeBSD.org
 
 LIB_DEPENDS=	panda.0:${PORTSDIR}/print/panda \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
 USE_RUBY=	yes

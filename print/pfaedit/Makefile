@@ -2,7 +2,7 @@
 # Date created:		25 March 2001
 # Whom:			KANOU Hiroki <kanou@mil.allnet.ne.jp>
 #
-# $FreeBSD: ports/print/pfaedit/Makefile,v 1.1 2001/05/19 17:09:56 ijliao Exp $
+# $FreeBSD: ports/print/pfaedit/Makefile,v 1.2 2001/08/27 16:01:32 kevlo Exp $
 #
 
 PORTNAME=	pfaedit
@@ -21,7 +21,7 @@ LIBGUNI_VER=	010808
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		ungif.5:${PORTSDIR}/graphics/libungif
 
 USE_XLIB=	yes

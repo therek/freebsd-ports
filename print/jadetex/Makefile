@@ -2,7 +2,7 @@
 # Date created:         5 December 1998
 # Whom:                 Sean Kelly <kelly@ad1440.net>
 #
-# $FreeBSD: ports/print/jadetex/Makefile,v 1.17 2001/04/04 19:57:35 nik Exp $
+# $FreeBSD: ports/print/jadetex/Makefile,v 1.18 2001/09/08 01:15:04 murray Exp $
 #
 
 PORTNAME=		jadetex
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	jadetex
 MAINTAINER=		nik
 
 BUILD_DEPENDS=		hugelatex:${PORTSDIR}/print/hugelatex
-LIB_DEPENDS=		png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=		png.5:${PORTSDIR}/graphics/png
 RUN_DEPENDS=		tex:${PORTSDIR}/print/teTeX
 
 MAKE_ENV=		TEXMFCNF=${FILESDIR}:${PREFIX}/share/texmf/web2c

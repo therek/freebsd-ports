@@ -2,7 +2,7 @@
 # Date created:		9 August 1996
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/print/transfig/Makefile,v 1.29 2000/12/11 02:59:41 steve Exp $
+# $FreeBSD: ports/print/transfig/Makefile,v 1.30 2001/07/09 23:55:59 dwcjr Exp $
 #
 
 PORTNAME=	transfig
@@ -16,7 +16,7 @@ DISTNAME=	${PORTNAME}.${PORTVERSION}
 MAINTAINER=	chuckr@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 RUN_DEPENDS=	ppmtogif:${PORTSDIR}/graphics/netpbm
 
 USE_IMAKE=	yes
