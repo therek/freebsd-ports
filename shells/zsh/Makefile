@@ -3,11 +3,11 @@
 # Date created:			11 Feb. 1995
 # Whom:				torstenb
 #
-# $FreeBSD: ports/shells/zsh/Makefile,v 1.33 1999/09/10 22:03:36 torstenb Exp $
+# $FreeBSD: ports/shells/zsh/Makefile,v 1.34 1999/09/11 10:00:15 asami Exp $
 #
 
-DISTNAME=       zsh-3.0.6
-PKGNAME=	zsh-3.0.6
+DISTNAME=       zsh-3.0.7
+PKGNAME=	zsh-3.0.7
 CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.sterling.com/zsh/ \
 		ftp://ftp.rge.com/pub/shells/zsh/ \
