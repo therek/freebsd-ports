@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear-PEAR/Makefile.common,v 1.7 2004/08/26 22:29:13 thierry Exp $
+# $FreeBSD: ports/devel/pear-PEAR/Makefile.common,v 1.8 2004/11/04 16:46:43 pav Exp $
 
 # Common code for pear- ports.
 
@@ -210,7 +210,7 @@ do-install-scriptfiles: do-install-scriptfiles-msg
 .  for file in ${SCRIPTFILES}
 	@${MV} ${WRKSRC}/pear-${file} ${WRKSRC}/${file}
 	@${REINPLACE_CMD} -e "s|@php_bin@|${SCRIPTFILESDIR}/php|g" ${WRKSRC}/${file}
-	@${INSTALL_DATA} ${WRKSRC}/${file} ${SCRIPTFILESDIR}/${file}
+	@${INSTALL_SCRIPTS} ${WRKSRC}/${file} ${SCRIPTFILESDIR}/${file}
 	@${CHMOD} 555 ${SCRIPTFILESDIR}/${file}
 .  endfor
 . endif
