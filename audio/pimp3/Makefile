@@ -2,13 +2,13 @@
 # Date created:				23 February 2000
 # Whom:					rbt@zort.on.ca
 #
-# $FreeBSD: ports/audio/pimp3/Makefile,v 1.7 2001/04/03 04:32:14 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pimp3
 PORTVERSION=	0.5.8
 CATEGORIES=	audio
-MASTER_SITES=	ftp://pimp3.sourceforge.net/pub/pimp3/
+MASTER_SITES=	http://unixpages.org/distfiles/
 
 MAINTAINER=	ports@FreeBSD.org
 
