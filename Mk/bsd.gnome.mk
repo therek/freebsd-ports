@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.8 2001/05/04 21:39:25 ade Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.9 2001/05/11 16:36:08 ade Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -281,10 +281,10 @@ MAKE_ENV+=		HAVE_IMLIB=${HAVE_IMLIB}
 
 .if defined(USE_GNOMELIBS)
 CONFIGURE_ARGS+=--with-gnome=${PREFIX}
-.if !defined(HAVE_GNOME) || ${CONFIGURE_ARGS:S/--localstatedir=//} == ${CONFIGURE_ARGS}
+.if !defined(HAVE_GNOME) && ${CONFIGURE_ARGS:S/--localstatedir=//} == ${CONFIGURE_ARGS}
 CONFIGURE_ARGS+=--localstatedir=${PREFIX}/share/gnome
 .endif
-.if !defined(HAVE_GNOME) || ${CONFIGURE_ARGS:S/--datadir=//} == ${CONFIGURE_ARGS}
+.if !defined(HAVE_GNOME) && ${CONFIGURE_ARGS:S/--datadir=//} == ${CONFIGURE_ARGS}
 CONFIGURE_ARGS+=--datadir=${PREFIX}/share/gnome
 .endif
 LIB_DEPENDS+=	gnome.5:${PORTSDIR}/x11/gnomelibs
