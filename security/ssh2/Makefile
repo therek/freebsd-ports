@@ -2,7 +2,7 @@
 # Date created:		5 Oct 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/security/ssh2/Makefile,v 1.100 2000/09/02 03:56:56 kris Exp $
+# $FreeBSD: ports/security/ssh2/Makefile,v 1.101 2000/10/30 12:57:16 steve Exp $
 #
 
 PORTNAME=	ssh2
@@ -15,7 +15,7 @@ DISTNAME=	ssh-${PORTVERSION}
 
 MAINTAINER=	issei@jp.FreeBSD.org
 
-RESTRICTED=	"Crypto; export-controlled"
+#RESTRICTED=	"Crypto; export-controlled"
 
 GNU_CONFIGURE=	YES
 
