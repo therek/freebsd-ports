@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.569 2005/02/19 12:49:38 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.570 2005/02/20 18:53:25 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -83,6 +83,9 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	    (kdelibs-3.3.2/dcop/dcopidlng/dcopidlng) creates temporary
 	    files in a unsecure manner.</p>
 	</blockquote>
+	<p><strong>Note:</strong> dcopidlng is only used at build
+	  time, so only users installing KDE are vulnerable, not users
+	  already running KDE.</p>
       </body>
     </description>
     <references>
@@ -93,6 +96,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <dates>
       <discovery>2005-01-21</discovery>
       <entry>2005-02-18</entry>
+      <modified>2005-02-20</modified>
     </dates>
   </vuln>
 
