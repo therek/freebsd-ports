@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.44 2003/06/16 22:35:59 adamw Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.45 2003/06/19 03:33:11 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -477,7 +477,8 @@ USE_GNOME+=	gtk12
 # Hack USE_GNOME to the modular infrastructure for port maintainers that
 # didn't do so themselves.  New ports should NOT set USE_GNOME=yes.
 . if ${USE_GNOME}=="yes"
-USE_GNOME+=gnomeprefix gnomehack gtkhtml libpanel
+USE_GNOME:=	${USE_GNOME:S/yes//}
+USE_GNOME+=	gnomeprefix gnomehack gtkhtml libpanel
 . endif
 
 # First of all expand all USE_GNOME_IMPL recursively
