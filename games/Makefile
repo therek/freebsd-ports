@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.322 2001/01/05 13:19:35 nbm Exp $
+# $FreeBSD: ports/games/Makefile,v 1.323 2001/01/21 17:08:17 clive Exp $
 #
 
     SUBDIR += 3dc
@@ -119,6 +119,7 @@
     SUBDIR += madbomber
     SUBDIR += maelstrom
     SUBDIR += magiccube4d
+    SUBDIR += mahjong
     SUBDIR += mangband
     SUBDIR += merlin
     SUBDIR += mindfocus
