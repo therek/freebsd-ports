@@ -2,11 +2,11 @@
 # Date created:		23rd August, 2000
 # Whom:			Ben Smithurst <ben@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/cvsmail/Makefile,v 1.5 2001/07/12 21:45:46 ben Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cvsmail
-PORTVERSION=	1.7
+PORTVERSION=	1.9
 CATEGORIES=	mail
 MASTER_SITES=	http://www.smithurst.org/ben/software/mail/dists/
 DISTNAME=	mailutils-${PORTVERSION}
