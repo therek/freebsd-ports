@@ -2,7 +2,7 @@
 # Date created:         22 Sep 2000
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/projectcenter.app/Makefile,v 1.2 2000/11/21 12:21:26 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	projectcenter.app
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.projectcenter.ch/
 DISTNAME=	ProjectCenter-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+BROKEN=		"Does not build"
 
 BUILD_DEPENDS=	${XGPSBUNDLEDIR}/libgnustep-xgps:${PORTSDIR}/x11-toolkits/gnustep-xgps
 RUN_DEPENDS=	${XGPSBUNDLEDIR}/libgnustep-xgps:${PORTSDIR}/x11-toolkits/gnustep-xgps
