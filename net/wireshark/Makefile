@@ -2,11 +2,11 @@
 # Date created:        10 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/ethereal/Makefile,v 1.35 2000/11/21 10:56:33 asmodai Exp $
+# $FreeBSD: ports/net/ethereal/Makefile,v 1.36 2001/01/29 16:30:18 sobomax Exp $
 #
 
 PORTNAME=	ethereal
-PORTVERSION=	0.8.15
+PORTVERSION=	0.8.16
 CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.ethereal.com/pub/ethereal/ \
 		ftp://gd.tuwien.ac.at/infosys/security/ethereal/ \
