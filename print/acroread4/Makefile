@@ -2,10 +2,10 @@
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/print/acroread4/Makefile,v 1.27 2000/08/21 21:32:26 dima Exp $
+# $FreeBSD: ports/print/acroread4/Makefile,v 1.28 2000/10/08 10:22:41 asami Exp $
 #
 
-PORTNAME=	acroread
+PORTNAME=	acroread4
 PORTVERSION=	4.05
 CATEGORIES=	print linux
 MASTER_SITES=	ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/
@@ -23,8 +23,6 @@ RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulat
 .elif ${ARCH} == "alpha"
 RUN_DEPENDS=	/compat/osf1/usr/shlib/libc.so:${PORTSDIR}/emulators/osf1_base
 .endif
-
-NO_LATEST_LINK=	yes
 
 ONLY_FOR_ARCHS=	i386 alpha
 
