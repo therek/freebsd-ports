@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.397 2001/08/18 04:17:49 ijliao Exp $
+# $FreeBSD: ports/www/Makefile,v 1.398 2001/08/23 15:37:28 petef Exp $
 #
     SUBDIR += zope-guf
     SUBDIR += zope-zmysqlda
@@ -261,6 +261,7 @@
     SUBDIR += roxen
     SUBDIR += ruboard
     SUBDIR += ruby-http-access
+    SUBDIR += ruby-tmpl
     SUBDIR += screem
     SUBDIR += sitecopy
     SUBDIR += skipstone
