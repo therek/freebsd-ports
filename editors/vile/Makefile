@@ -2,14 +2,27 @@
 # Date created:         Wed Nov 26, 1996
 # Whom:                 pgf
 #
-# $FreeBSD: ports/editors/vile/Makefile,v 1.24 2000/10/08 00:38:53 asami Exp $
+# $FreeBSD: ports/editors/vile/Makefile,v 1.25 2000/11/21 23:19:03 gj Exp $
 #
 
 PORTNAME=	vile
-PORTVERSION=	9.2
+PORTVERSION=	9.2_pj
+DISTNAME=	vile-9.2
 CATEGORIES=	editors
 MASTER_SITES=   ftp://ftp.phred.org/pub/vile/ \
-		ftp://id.wing.net/pub/pgf/vile/
+		ftp://dickey.his.com/vile/
+PATCH_SITES=	${MASTER_SITES:S,vile/,vile/patches,g}
+PATCHFILES=	vile-9.2a.patch.gz \
+		vile-9.2b.patch.gz \
+		vile-9.2c.patch.gz \
+		vile-9.2d.patch.gz \
+		vile-9.2e.patch.gz \
+		vile-9.2f.patch.gz \
+		vile-9.2g.patch.gz \
+		vile-9.2h.patch.gz \
+		vile-9.2i.patch.gz \
+		vile-9.2j.patch.gz
+
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	gj@freebsd.org
@@ -24,10 +37,23 @@ PLIST=		${PKGDIR}/pkg-plist.perl
 USE_PERL5=	yes
 .endif
 
+.if defined(WITH_FILTERS)
+CONFIGURE_ARGS+= --with-builtin-filters=all
+PLIST=		${PKGDIR}/pkg-plist.filt
+.endif
+
+.if defined(WITH_PERL) && defined(WITH_FILTERS)
+PLIST=		${PKGDIR}/pkg-plist.perl+filt
+.endif
+
 pre-configure:
 .if ! defined(WITH_PERL)
 	@${ECHO_MSG} "Define WITH_PERL if you want to make a vile which includes"
 	@${ECHO_MSG} "PERL functionality"
+.endif
+.if ! defined(WITH_FILTERS)
+	@${ECHO_MSG} "Define WITH_FILTERS if you want to make a vile which includes"
+	@${ECHO_MSG} "all filters in the binary"
 .endif
 
 post-install:
