@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc33/pkg-plist,v 1.49 2003/08/04 17:21:31 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc33/pkg-plist,v 1.50 2003/12/14 21:09:36 gerald Exp $
 bin/cpp33
 bin/g++33
 bin/g77-33
@@ -38,6 +38,3 @@ share/java/libgcj-%%GCC_VER%%.jar
 @comment Insert PLIST.lib here
 @comment -=[ begin PLIST.lib ]=-
 @comment -=[ end PLIST.lib ]=-
-@comment Insert PLIST.gcj-inc here
-@comment -=[ begin PLIST.gcj-inc ]=-
-@comment -=[ end PLIST.gcj-inc ]=-
