@@ -2,18 +2,18 @@
 # Date created:		2 May 1998
 # Whom:                 dbader@eece.unm.edu
 #
-# $FreeBSD: ports/net/mpich/Makefile,v 1.24 2001/04/17 19:14:18 kris Exp $
+# $FreeBSD: ports/net/mpich/Makefile,v 1.25 2001/04/17 19:14:32 kris Exp $
 #
 
 PORTNAME=	mpich
 PORTVERSION=	1.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.mcs.anl.gov/pub/mpi/
 
 PATCH_SITES=	ftp://ftp.mcs.anl.gov/pub/mpi/patch/1.2.1/
 PATCHFILES=	5487 5524 5542 5543 5594 5597 5613 5655 5687 5700 5776 \
-		5800 5810 5831 5832 5841 5848 5899 5906
+		5800 5810 5831 5832 5841 5848 5899 5906 5996
 
 MAINTAINER=	dbader@eece.unm.edu
 
