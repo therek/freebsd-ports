@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.457 2003/07/22 03:51:15 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.458 2003/07/27 02:06:26 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -795,7 +795,8 @@ SED?=		/usr/bin/sed
 SETENV?=	/usr/bin/env
 SH?=		/bin/sh
 STRIP_CMD?=	/usr/bin/strip
-SU?=		/usr/bin/su
+SU_CMD?=	/usr/bin/su root -c
+#SU_CMD?=	/usr/local/bin/sudo su -c
 TAIL?=		/usr/bin/tail
 TEST?=		test				# Shell builtin
 TR?=		/usr/bin/tr
@@ -3258,7 +3259,7 @@ ${${target:U}_COOKIE}: ${_${target:U}_DEP} ${_${target:U}_SEQ}
 .endif
 	@echo "===>  Switching to root credentials for '${target}' target"
 	@cd ${.CURDIR} && \
-		${SU} root -c "${MAKE} ${__softMAKEFLAGS} ${_${target:U}_SUSEQ}"
+		${SU_CMD} "${MAKE} ${__softMAKEFLAGS} ${_${target:U}_SUSEQ}"
 	@echo "===>  Returning to user credentials"
 	@${TOUCH} ${TOUCH_FLAGS} ${.TARGET}
 .elif defined(USE_SUBMAKE)
