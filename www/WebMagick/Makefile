@@ -1,15 +1,15 @@
 # New ports collection makefile for:    WebMagick
-# http://www.cyberramp.net/~bfriesen/webmagick/
+# http://www.simplesystems.org/WebMagick/
 # Version required:                     1.4*
 # Date created:                         20 May 1998
 # Whom:                                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/WebMagick/Makefile,v 1.12 1999/08/31 02:42:36 peter Exp $
 #
 
-DISTNAME=       WebMagick-1.45
+DISTNAME=       WebMagick-1.46
 CATEGORIES=     www
-MASTER_SITES=   http://www.cyberramp.net/~bfriesen/webmagick/dist/
+MASTER_SITES=   ftp://ftp.simplesystems.org/pub/WebMagick/
 
 LIB_DEPENDS=    Magick.4:${PORTSDIR}/graphics/ImageMagick
 
