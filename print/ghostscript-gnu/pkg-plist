@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/ghostscript-gnu/pkg-plist,v 1.24 2004/01/12 14:34:03 krion Exp $
+@comment $FreeBSD: ports/print/ghostscript-gnu/pkg-plist,v 1.25 2004/06/13 12:36:20 nork Exp $
 bin/bdftops
 bin/dvipdf
 bin/eps2eps
@@ -46,7 +46,6 @@ bin/wftopfa
 %%PORTDOCS%%share/doc/ghostscript/%%GS_VERSION%%/epag/gsepagif.sh
 %%PORTDOCS%%share/doc/ghostscript/%%GS_VERSION%%/epag/psprint
 %%PORTDOCS%%share/doc/ghostscript/%%GS_VERSION%%/eplaser/readme-eplaser-705.euc
-%%PORTDOCS%%share/doc/ghostscript/%%GS_VERSION%%/eplaser/readme-eplaser-705-jp.euc
 %%PORTDOCS%%share/doc/ghostscript/%%GS_VERSION%%/gdi/README
 %%PORTDOCS%%share/doc/ghostscript/%%GS_VERSION%%/hpdj/NEWS
 %%PORTDOCS%%share/doc/ghostscript/%%GS_VERSION%%/hpdj/hpdj.html
