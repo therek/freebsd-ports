@@ -2,13 +2,13 @@
 # Date created:		29 Oct 1997
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/graphics/cqcam/Makefile,v 1.13 1999/12/25 05:03:26 billf Exp $
+# $FreeBSD: ports/graphics/cqcam/Makefile,v 1.14 2000/04/13 06:28:08 obrien Exp $
 #
 
 PORTNAME=	cqcam
 PORTVERSION=	0.45a
 CATEGORIES=	graphics tk82
-MASTER_SITES=	ftp://ftp.cdrom.com/pub/unixfreeware/graphics/
+MASTER_SITES=	ftp://ftp.freesoftware.com/pub/unixfreeware/graphics/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
