@@ -3,10 +3,10 @@
 # Date created:				21 Feb 1998
 # Whom:					giffunip@asme.org
 #
-# $FreeBSD: ports/archivers/lzo/Makefile,v 1.8 1999/09/04 19:46:23 cpiazza Exp $
+# $FreeBSD: ports/archivers/lzo/Makefile,v 1.9 1999/11/21 00:53:52 cpiazza Exp $
 #
 
-DISTNAME=	lzo-1.04
+DISTNAME=	lzo-1.06
 CATEGORIES=	archivers devel
 MASTER_SITES= 	${MASTER_SITE_SUNSITE} \
 		http://wildsau.idv.uni-linz.ac.at/mfx/lzo-download/
