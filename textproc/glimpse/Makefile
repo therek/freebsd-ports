@@ -1,27 +1,25 @@
 # New ports collection makefile for:	glimpse
+# http://webglimpse.org/
 # Date created:		25 August 1996
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/textproc/glimpse/Makefile,v 1.18 1999/08/31 02:09:16 peter Exp $
+# $FreeBSD: ports/textproc/glimpse/Makefile,v 1.19 2000/04/09 21:52:35 cpiazza Exp $
 #
 
 PORTNAME=	glimpse
-PORTVERSION= 	4.1
+PORTVERSION=    4.12.6
 CATEGORIES=	textproc databases
-MASTER_SITES=   ftp://ftp.cs.arizona.edu/glimpse/
-DISTNAME=	${PKGNAME}.src
-EXTRACT_SUFX=	.tar.Z
+MASTER_SITES=   ftp://ftp.polito.it/pub/tools/unix/harvest/
 
 MAINTAINER=	chuckr@freebsd.org
 
-WRKSRC=         ${WRKDIR}/glimpse-4.1
-USE_GMAKE=	yes
 NO_CDROM=	"Restrictive copyright (don't sell for profit)"
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=  CFLAGS="${CFLAGS} -DISO_CHAR_SET=1"
 MAN1=		glimpse.1 glimpseindex.1 glimpseserver.1 agrep.1
 
 pre-configure:
+	${RM} ${WRKSRC}/config.cache
 	${CHMOD} ugo+x ${WRKSRC}/configure
 
 post-install:
