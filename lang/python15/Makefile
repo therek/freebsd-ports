@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.66 2000/07/27 12:19:38 tg Exp $
+# $FreeBSD: ports/lang/python15/Makefile,v 1.67 2000/07/28 11:08:07 tg Exp $
 #
 
 PORTNAME=	python
@@ -23,6 +23,7 @@ CONFIGURE_ENV=	OPT="${CFLAGS}"
 INSTALL_TARGET=	install
 PLIST=		${WRKDIR}/PLIST
 MAN1=		python.1
+NO_LATEST_LINK=	yes
 
 #
 # The standard setup file
