@@ -2,7 +2,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.51 2000/11/25 21:35:37 ben Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.52 2001/03/20 20:27:59 obrien Exp $
 #
 
 PORTNAME=		linux_base
@@ -199,6 +199,9 @@ do-install:
 	@${LN} -s /var/tmp ${LINUXBASE}/usr/tmp
 
 post-install:
+# Fix unknown uid/gids that come out of the RPMs, to avoid
+# the quotacheck warning about unknown owners.
+	@${CHOWN} root:wheel ${LINUXBASE}/usr/man/man8/setserial.8
 	@${ECHO} ''
 	@fmt ${PKGMESSAGE}
 	@${ECHO} ''
