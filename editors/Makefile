@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.163 2001/10/01 20:32:43 knu Exp $
+# $FreeBSD$
 #
 
     SUBDIR += AbiWord
@@ -31,6 +31,7 @@
     SUBDIR += emacs20
     SUBDIR += emacs20-dl
     SUBDIR += emacs20-mule-devel
+    SUBDIR += emacs21
     SUBDIR += fb
     SUBDIR += fine
     SUBDIR += flim-emacs
