@@ -4,7 +4,7 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/muttzilla/Makefile,v 1.2 2000/02/13 03:23:52 obrien Exp $
+# $FreeBSD: ports/mail/muttzilla/Makefile,v 1.3 2000/02/13 21:39:30 obrien Exp $
 #
 
 DISTNAME=	muttzilla-0.40
@@ -15,19 +15,19 @@ MAINTAINER=	obrien@FreeBSD.org
 
 pre-configure:
 	@${PERL} -pi.orig \
-		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:"  \
+		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:g"  \
 		${WRKSRC}/muttzilla.h
 	@${PERL} -pi.orig \
-		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:"  \
+		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:g"  \
 		${WRKSRC}/mzmail.sh
 	@${PERL} -pi.orig \
-		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:"  \
+		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:g"  \
 		${WRKSRC}/mzmail.py
 	@${PERL} -pi.orig \
-		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:"  \
+		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:g"  \
 		${WRKSRC}/mznews.sh
 	@${PERL} -pi.orig \
-		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:"  \
+		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:g"  \
 		${WRKSRC}/mznews.py
 
 post-install:
