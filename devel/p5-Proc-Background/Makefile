@@ -2,11 +2,11 @@
 # Date created:				Wed Jan  3 10:32:39 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Proc-Background/Makefile,v 1.4 2001/08/31 11:17:47 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Proc-Background
-PORTVERSION=	1.06
+PORTVERSION=	1.07
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Proc
