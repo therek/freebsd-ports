@@ -2,7 +2,7 @@
 # Date created:				8th October 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/bonobo/Makefile,v 1.8 2000/03/28 02:57:56 ade Exp $
+# $FreeBSD: ports/devel/bonobo/Makefile,v 1.9 2000/04/11 21:27:13 mharo Exp $
 #
 
 PORTNAME=	bonobo
@@ -15,7 +15,7 @@ MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
 		intl.1:${PORTSDIR}/devel/gettext \
-		gdk_pixbuf.1:${PORTSDIR}/graphics/gdk-pixbuf \
+		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
 		xml.5:${PORTSDIR}/textproc/libxml
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
