@@ -3,7 +3,7 @@
 # Date created:		31 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-servers/Xatm/Makefile,v 1.1.1.1 1999/12/27 05:22:23 taoka Exp $
 #
 
 DISTNAME=	xfs-atm+cid-3.0.1
