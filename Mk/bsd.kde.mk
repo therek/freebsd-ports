@@ -1,15 +1,13 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.1 2001/03/24 22:15:32 will Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.2 2001/03/25 23:22:46 will Exp $
 #
 # Please view me with 4 column tabs!
 
 # Please make sure all changes to this file are past through the maintainer. 
 # Do not commit them yourself (unless of course you're the Port's Wraith ;).
 KDE_MAINTAINER=		will@FreeBSD.org
-
-.if defined(_POSTMKINCLUDED)
 
 # This section contains the USE_ definitions.
 # XXX: Write HAVE_ definitions sometime.
@@ -105,5 +103,4 @@ USE_KDELIBS_VER=2
 .endif
 # End of USE_KDEBASE_VER
 
-.endif
 # End of use part.
