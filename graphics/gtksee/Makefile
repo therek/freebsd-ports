@@ -2,13 +2,13 @@
 # Date created:		Sun Nov 22 12:08:18 CET 1998
 # Whom:			Dirk Froemberg <ibex@physik.TU-Berlin.DE>
 #
-# $FreeBSD: ports/graphics/gtksee/Makefile,v 1.21 2000/07/04 07:12:54 sobomax Exp $
+# $FreeBSD: ports/graphics/gtksee/Makefile,v 1.22 2000/10/05 06:36:18 reg Exp $
 #
 
 PORTNAME=	gtksee
 PORTVERSION=	0.5.0
 CATEGORIES=	graphics
-MASTER_SITES=	http://hotaru.clinuxworld.com/gtksee/ \
+MASTER_SITES=	http://www.linux.tucows.com/files/x11/graphics/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
 
 MAINTAINER=	dirk@FreeBSD.org
