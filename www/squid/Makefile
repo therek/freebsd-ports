@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid23/Makefile,v 1.66 2000/04/10 00:06:52 cpiazza Exp $
+# $FreeBSD: ports/www/squid23/Makefile,v 1.67 2000/04/17 20:32:57 peter Exp $
 #
 
 PORTNAME=	squid
@@ -13,20 +13,11 @@ MASTER_SITES=  \
 	ftp://www.unimelb.edu.au/pub/cwis/servers/unix/squid/squid-2/STABLE/ \
 	ftp://sunsite.auc.dk/pub/infosystems/squid/squid-2/STABLE/ \
 	ftp://ftp.net.lut.ac.uk/squid/squid-2/STABLE/
-DISTNAME=	squid-2.3.STABLE2
+DISTNAME=	squid-2.3.STABLE3
 EXTRACT_SUFX=	-src.tar.gz
 
-PATCH_SITES=	http://www.squid-cache.org/Versions/v2/2.3/bugs/
-PATCHFILES=	squid-2.3.stable2-EOF_in_cf.data.pre.patch \
-		squid-2.3.stable2-USE_DNSSERVER.patch \
-		squid-2.3.stable2-USE_DNSSERVER_part2.patch \
-		squid-2.3.stable2-hostname_whitespace.patch \
-		squid-2.3.stable2-netdb_exchange_loop.patch \
-		squid-2.3.stable2-getMyHostname.patch \
-		squid-2.3.stable2-redirected_username_logging.patch \
-		squid-2.3.stable2-snmp-problems.patch \
-		squid-2.3.stable2-getpwnam_return_value.patch \
-		squid-2.3.stable2-mimeGetIconURL_returns_NULL.patch
+#PATCH_SITES=	http://www.squid-cache.org/Versions/v2/2.3/bugs/
+#PATCHFILES=	
 
 MAINTAINER=	peter@freebsd.org
 
