@@ -3,17 +3,17 @@
 # Date created:			  20 Jun 1996
 # Whom:				  jkh
 #
-# $FreeBSD: ports/ftp/ncftp/Makefile,v 1.14 2000/03/22 00:27:20 obrien Exp $
+# $FreeBSD: ports/ftp/ncftp/Makefile,v 1.15 2000/04/12 05:31:16 mharo Exp $
 #
 
-PORTNAME=	ncftp
+PORTNAME=	ncftp1
 PORTVERSION=	1.9.5
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.ncftp.com/ncftp/
+DISTNAME=	ncftp-${PORTVERSION}
 
 MAINTAINER=	obrien@FreeBSD.org
 
-NO_LATEST_LINK=	yes
 MAN1=		ncftp.1
 
 do-install:
