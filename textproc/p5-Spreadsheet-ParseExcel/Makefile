@@ -2,26 +2,38 @@
 # Date created:		25 Dec 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/p5-Spreadsheet-ParseExcel/Makefile,v 1.4 2001/04/30 23:42:54 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Spreadsheet-ParseExcel
-PORTVERSION=	0.2403
+PORTVERSION=	0.26
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Spreadsheet
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	skv@protey.ru
+MAINTAINER=	skv@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/OLE/Storage_Lite.pm:${PORTSDIR}/devel/p5-OLE-Storage_Lite
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	yes
+PLIST_SUB=	EXAMPLESDIR="share/examples/${PORTNAME}"
 
 MAN3=		Spreadsheet::ParseExcel.3 \
-		Spreadsheet::ParseExcel::Utility.3 \
-		Spreadsheet::ParseExcel::SaveParser.3
+		Spreadsheet::ParseExcel::SaveParser.3 \
+		Spreadsheet::ParseExcel::Utility.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+
+post-install:
+
+.ifndef(NOPORTDOCS)
+	@${ECHO_MSG} "===>   Installing examples for ${PKGNAME}"
+	@${MKDIR} ${EXAMPLESDIR}/Excel
+	@${INSTALL_DATA} ${WRKSRC}/sample/README ${WRKSRC}/sample/res* \
+		${EXAMPLESDIR}
+	@${INSTALL_SCRIPT} ${WRKSRC}/sample/*.pl ${EXAMPLESDIR}
+	@${INSTALL_DATA} ${WRKSRC}/sample/Excel/* ${EXAMPLESDIR}/Excel
+.endif
 
 .include <bsd.port.mk>
