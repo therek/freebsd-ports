@@ -2,14 +2,14 @@
 # Date created:		Mon Aug  2 12:04:08 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/snort/Makefile,v 1.23 2001/09/22 21:39:31 dirk Exp $
+# $FreeBSD: ports/security/snort/Makefile,v 1.24 2001/09/22 22:09:29 kris Exp $
 #
 
 PORTNAME=	snort
 PORTVERSION=	1.8.1
 PORTREVISION=	1
 CATEGORIES=	security
-MASTER_SITES=	http://snort.sourcefire.com/releases/ \
+MASTER_SITES=	http://snort.sourcefire.com/releases/
 DISTNAME=	${PORTNAME}-1.8.1-RELEASE
 
 MAINTAINER=	kris@FreeBSD.org
