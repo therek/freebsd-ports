@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.478 2001/03/31 02:37:33 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.479 2001/03/31 02:45:55 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -92,6 +92,7 @@
     SUBDIR += entity
     SUBDIR += f77flow
     SUBDIR += fam
+    SUBDIR += fampp
     SUBDIR += fastcrc
     SUBDIR += ffcall
     SUBDIR += fhist
