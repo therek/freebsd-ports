@@ -2,7 +2,7 @@
 # Date created:				Mon May 28 02:14:47 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/sysutils/wmcube/Makefile,v 1.2 2001/06/02 04:12:13 lioux Exp $
+# $FreeBSD: ports/sysutils/wmcube/Makefile,v 1.3 2001/06/04 02:34:08 dougb Exp $
 #
 
 PORTNAME=	wmcube
@@ -14,13 +14,13 @@ MAINTAINER=	pat@databits.net
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/${PORTNAME}
 USE_X_PREFIX=	yes
-USE_GMAKE=	yes
 USE_XPM=	yes
+MAKEFILE=	Makefile.FREEBSD
 
-do-configure:
-	@${SED} -e "s|/usr/X11R6/|${X11BASE}/|" \
-		${WRKSRC}/Makefile.FREEBSD > \
-		${WRKSRC}/Makefile
+do-install:
+	@${INSTALL_PROGRAM} ${WRKSRC}/wmcube ${PREFIX}/bin
+	@${CHMOD} g+s ${PREFIX}/bin/wmcube
+	@${CHOWN} root:kmem ${PREFIX}/bin/wmcube
 
 post-install:
 .for file in *.wmc
@@ -35,10 +35,10 @@ post-install:
 	@${ECHO} "===>   Please Read pkg-descr and README for usage information"
 	@${INSTALL} -d -o ${SHAREOWN} -g ${SHAREGRP} -m 555 \
 		${PREFIX}/share/doc/${PORTNAME}
-.for file in CHANGES COPYING README TODO
+.for file in CHANGES README TODO
 	@${INSTALL_DATA} ${WRKSRC}/../${file} ${PREFIX}/share/doc/${PORTNAME}
 .endfor
 .endif # !NOPORTDOCS
-	@${SED} -e "s|/usr/X11R6|${PREFIX}|" ${PKGMESSAGE}
+	@${SED} -e "s|%%PREFIX%%|${PREFIX}|" ${PKGMESSAGE}
 
 .include <bsd.port.mk>
