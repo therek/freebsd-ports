@@ -2,7 +2,7 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-wp-packages/Makefile,v 1.20 2000/12/01 12:55:27 kiri Exp $
+# $FreeBSD: ports/editors/xemacs-wp-packages/Makefile,v 1.21 2001/02/22 13:31:28 kiri Exp $
 #
 
 PORTNAME=	xemacs-wp-packages
@@ -22,9 +22,10 @@ DIST_SUBDIR=	xemacs
 MAINTAINER=	kiri@FreeBSD.org
 
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}/xemacs-packages
+WRKSRC=		${WRKDIR}/${PACKAGES_SUBDIR}
 
 XEMACSDIR=	${PREFIX}/lib/xemacs
+PACKAGES_SUBDIR=	xemacs-packages
 
 do-extract:
 	@${MKDIR} ${WRKSRC}
@@ -35,9 +36,15 @@ do-extract:
 
 do-install:
 	${MKDIR} ${XEMACSDIR}
-	${CP} -Rp ${WRKDIR}/xemacs-packages ${XEMACSDIR}
+	${CP} -R ${WRKSRC} ${XEMACSDIR}
 
 post-install:
+	@cd ${WRKDIR} && \
+	find ${PACKAGES_SUBDIR} -type f|sort|${SED} 's:^:lib/xemacs/:' >> ${TMPPLIST}; \
+	find ${PACKAGES_SUBDIR}/*/* -type d|sort -r|${SED} 's:^:@dirrm lib/xemacs/:'>> ${TMPPLIST}
+	@${ECHO} '@unexec rmdir %D/lib/xemacs/${PACKAGES_SUBDIR}/* 2>/dev/null || true' >> ${TMPPLIST}
+	@${ECHO} '@unexec rmdir %D/lib/xemacs/${PACKAGES_SUBDIR} 2>/dev/null || true' >> ${TMPPLIST}
+	@${ECHO} '@unexec rmdir %D/lib/xemacs 2>/dev/null || true' >> ${TMPPLIST}
 	@${ECHO_MSG} "    This is the set of the packages for xemacs with the wp category. You can"
 	@${ECHO_MSG} "install other packages provided by XEmacs.org with editors/xemacs-*-packages"
 	@${ECHO_MSG} "ports. These ports are prepared for corresponding XEmacs packages except for"
