@@ -2,16 +2,16 @@
 # Date created:        28 May 1998
 # Whom:                Daniel O'Connor <darius@dons.net.au>
 #
-# $FreeBSD: ports/games/qstat/Makefile,v 1.8 2000/10/04 06:39:59 sobomax Exp $
+# $FreeBSD: ports/games/qstat/Makefile,v 1.9 2000/11/27 09:02:22 sobomax Exp $
 #
 
 PORTNAME=	qstat
-PORTVERSION=	2.4.a
-CATEGORIES=	games
-MASTER_SITES=	http://www.activesw.com/people/steve/
+PORTVERSION=	2.4.c
+CATEGORIES=	games net
+MASTER_SITES=	http://www.qstat.org/
 DISTNAME=	qstat${PORTVERSION:S/.//g}
 
-MAINTAINER=	darius@dons.net.au
+MAINTAINER=	pat@databits.net
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/qstat ${PREFIX}/bin
