@@ -2,7 +2,7 @@
 # Date created:		18 March 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/archivers/fastjar/Makefile,v 1.4 2000/04/24 15:51:08 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fastjar
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	knu@FreeBSD.org
+COMMENT=	A version of JDK's `jar' command written entirely in C
 
 GNU_CONFIGURE=	YES
 
