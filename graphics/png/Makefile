@@ -2,11 +2,11 @@
 # Date created:         5 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/png/Makefile,v 1.40 2001/04/06 15:02:06 sobomax Exp $
 #
 
 PORTNAME=	png
-PORTVERSION=	1.0.10
+PORTVERSION=	1.0.11
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.libpng.org/pub/png/src/ \
 		${MASTER_SITE_SOURCEFORGE}
