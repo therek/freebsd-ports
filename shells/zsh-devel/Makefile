@@ -2,7 +2,7 @@
 # Date created:			31 October 1998
 # Whom:				shige
 #
-# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.49 2000/06/29 02:31:40 asami Exp $
+# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.50 2000/06/30 08:12:39 knu Exp $
 #
 
 PORTNAME=	zsh
@@ -28,7 +28,7 @@ MAINTAINER=	shige@FreeBSD.org
 USE_AUTOCONF=	yes
 
 ZSH_VER=	${PORTVERSION}
-ZSHFUNC_FILES=	zsh-functions-freebsd-2000.05.15.tar.gz
+ZSHFUNC_FILES=	zsh-functions-freebsd-2000.09.06.tar.gz
 ZSHFUNC_SUBDIR=	share/zsh/${ZSH_VER}/functions
 NO_LATEST_LINK=	yes
 GNU_CONFIGURE=	yes
