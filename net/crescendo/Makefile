@@ -2,7 +2,7 @@
 # Date created:         27.Apr 2000
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/net/crescendo/Makefile,v 1.4 2000/10/05 07:17:06 reg Exp $
+# $FreeBSD: ports/net/crescendo/Makefile,v 1.5 2000/10/10 04:08:30 kevlo Exp $
 
 PORTNAME=	crescendo
 PORTVERSION=	1.1.6
@@ -15,8 +15,8 @@ RUN_DEPENDS=	tf:${PORTSDIR}/net/tinyfugue
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
-USE_GNOMELIBS=	yes
 CONFIGURE_ARGS+=	--enable-compile-warnings=yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
@@ -24,6 +24,11 @@ CFLAGS+=	-g
 PLIST_SUB=	DOCDIR=${DOCDIR}
 
 DOCDIR=		share/doc/${PORTNAME}
+
+pre-patch:
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
+		 s|\$\(prefix\)/share/|\$\(datadir\)/|g'
 
 post-install:
 .if !defined(NOPORTDOCS)
