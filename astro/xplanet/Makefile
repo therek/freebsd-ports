@@ -2,11 +2,11 @@
 # Date created:		22 Feb 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/astro/xplanet/Makefile,v 1.13 2000/10/05 06:57:30 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xplanet
-PORTVERSION=	0.73
+PORTVERSION=	0.81
 CATEGORIES=	astro x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.radcyberzine.com/xglobe/
