@@ -2,7 +2,7 @@
 # Date created:		Tue Sep 25 15:52:09 BRT 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/ffmpeg/Makefile,v 1.1 2001/09/25 19:27:10 lioux Exp $
 #
 
 PORTNAME=	ffmpeg
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	lioux@FreeBSD.org
 
+BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
