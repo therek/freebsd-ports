@@ -3,7 +3,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.62 1999/09/06 23:14:37 steve Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.63 1999/10/09 01:50:33 jmz Exp $
 #
 
 DISTNAME=	xc
@@ -19,9 +19,6 @@ DISTFILES=	X335src-1.tgz X335src-2.tgz
 MAINTAINER=	jmz@FreeBSD.org
 
 .include <bsd.port.pre.mk>
-.if ${OSVERSION} > 400010
-BROKEN=		problem with /usr/include/signal.h
-.endif
 
 IS_INTERACTIVE=	yes	# configure script asks questions
 NO_PACKAGE=	package available from XFree86
