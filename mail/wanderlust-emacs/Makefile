@@ -3,7 +3,7 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.5 1999/09/09 16:32:14 taoka Exp $
+# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.6 1999/09/10 20:54:17 shige Exp $
 #
 
 DISTNAME=	wl-1.0.3
@@ -39,11 +39,11 @@ RUN_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}
 .endif
 # depends on semi
 .if defined(EMACS_PACKAGESDIR)
-BUILD_DEPENDS+=	${PREFIX}/${EMACS_PACKAGESDIR}/lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}-current
-RUN_DEPENDS+=	${PREFIX}/${EMACS_PACKAGESDIR}/lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}-current
+BUILD_DEPENDS+=	${PREFIX}/${EMACS_PACKAGESDIR}/lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}
+RUN_DEPENDS+=	${PREFIX}/${EMACS_PACKAGESDIR}/lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}
 .else
-BUILD_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR}/site-lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}-current
-RUN_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR}/site-lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}-current
+BUILD_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR}/site-lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}
+RUN_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR}/site-lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}
 .endif
 
 .if (${EMACS_PORT} == "xemacs-mule")
