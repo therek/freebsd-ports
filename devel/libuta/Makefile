@@ -2,11 +2,11 @@
 # Date created:				29 March 2001
 # Whom:					Oliver Lehmann <lehmann@ans-netz.de>
 #
-# $FreeBSD: ports/devel/libuta/Makefile,v 1.1 2001/04/05 19:01:47 alex Exp $
+# $FreeBSD: ports/devel/libuta/Makefile,v 1.2 2001/04/09 21:55:03 steve Exp $
 #
 
 PORTNAME=	libuta
-PORTVERSION=	0.3.36
+PORTVERSION=	0.3.38
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
