@@ -3,7 +3,7 @@
 # Date created:         01 Mar 2000
 # Whom:                 max
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.73 2000/02/10 15:50:45 jmz Exp $
+# $FreeBSD: ports/devel/imake/Makefile,v 1.1.1.1 2000/03/02 04:11:55 max Exp $
 #
 
 DISTNAME=	X336src-1
@@ -25,6 +25,7 @@ MAN1=		imake.1 lndir.1 makedepend.1 xmkmf.1 makestrs.1 \
 		makeg.1 mkdirhier.1
 MANCOMPRESSED=	yes
 INSTALL_TARGET=	install install.man
+MTREE_FILE=	/etc/mtree/BSD.x11.dist
 
 do-configure:
 	@${ECHO} > ${WRKSRC}/cf/host.def
