@@ -19,7 +19,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 */
 
-__FBSDID("$FreeBSD: ports/devel/gdb6/files/kvm-fbsd-i386.h,v 1.1 2004/06/20 22:22:02 obrien Exp $");
+__FBSDID("$FreeBSD: ports/devel/gdb6/files/kvm-fbsd-i386.h,v 1.2 2004/08/23 06:34:48 obrien Exp $");
 
 #include <machine/frame.h>
 #include "i386-tdep.h"
@@ -56,6 +56,7 @@ ksym_maxuseraddr (void)
    but we don't think that's too important right now.  */
 enum frametype { tf_normal, tf_trap, tf_interrupt, tf_syscall };
 
+#if __FreeBSD_version >= 500032
 CORE_ADDR
 fbsd_kern_frame_saved_pc (struct frame_info *fi)
 {
@@ -99,6 +100,7 @@ fbsd_kern_frame_saved_pc (struct frame_info *fi)
 #undef oEIP
     }
 }
+#endif	// __FreeBSD_version >= 500032
 
 static void
 fetch_kcore_registers (struct pcb *pcb)
