@@ -2,7 +2,7 @@
 # Date created:				2000-10-08
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/portoseguro/Makefile,v 1.1 2000/10/08 21:47:23 trevor Exp $
 #
 
 PORTNAME=	portoseguro
@@ -26,7 +26,7 @@ do-install:
 .endfor
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${X11BASE}/share/doc/portoseguro
-	${INSTALL_DATA} ${WRKSRC}/README ${LOCALBASE}/share/doc/portoseguro
+	${INSTALL_DATA} ${WRKSRC}/README ${X11BASE}/share/doc/portoseguro
 .endif
 
 .include <bsd.port.mk>
