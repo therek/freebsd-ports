@@ -2,16 +2,16 @@
 # Date created:                         17 Oct 2000
 # Whom:                                 Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/net/gtk+licq/Makefile,v 1.2 2001/04/07 21:02:44 will Exp $
+# $FreeBSD: ports/net/gtk+licq/Makefile,v 1.3 2001/05/09 09:37:07 alex Exp $
 #
 
 PORTNAME=	gtk+licq
 PORTVERSION=	0.50.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://gtk.licq.org/download/
 
-MAINTAINER=	ishmael27@home.com
+MAINTAINER=	roman@xpert.com
 
 BUILD_DEPENDS=	${LOCALBASE}/include/licq/licq_icqd.h:${PORTSDIR}/net/licq
 LIB_DEPENDS=	pspell.4:${PORTSDIR}/textproc/pspell
