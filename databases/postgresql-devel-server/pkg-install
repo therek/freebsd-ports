@@ -1,11 +1,11 @@
 #! /bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/databases/postgresql7/pkg/INSTALL,v 1.1 2000/04/16 18:43:19 andreas Exp $
 
 PATH=/bin:/usr/sbin
 
 if [ -z "${DB_DIR}" ]; then
-	DB_DIR=/usr/local/pgsql/data
+	DB_DIR=${PKG_PREFIX}/pgsql/data
 fi
 
 case $2 in
