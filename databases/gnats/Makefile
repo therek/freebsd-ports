@@ -3,7 +3,7 @@
 # Date created:		10 November 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/databases/gnats/Makefile,v 1.26 1999/12/24 08:26:14 mharo Exp $
+# $FreeBSD: ports/databases/gnats/Makefile,v 1.27 1999/12/30 22:56:08 asami Exp $
 #
 
 DISTNAME=	gnats-3.112.1
@@ -23,6 +23,7 @@ CONFIGURE_ARGS= --with-lispdir=${PREFIX}/share/emacs/site-lisp \
 		--with-release-based
 
 USE_GMAKE=	yes
+USE_BISON=	yes
 MAN1=		edit-pr.1 query-pr.1 send-pr.1
 MAN7=		gnats.7
 MAN8=		mkcat.8 rmcat.8 mkdist.8 queue-pr.8 file-pr.8 gen-index.8
