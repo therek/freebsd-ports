@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.38 2000/07/21 05:42:17 obrien Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.39 2000/09/27 10:36:12 obrien Exp $
 #
 
 PORTNAME=	isc-dhcp3
@@ -14,13 +14,11 @@ DISTNAME=	dhcp-3.0b2pl5
 
 MAINTAINER=	obrien@FreeBSD.org
 
-BUILD_DEPENDS=	${LOCALBASE}/include/bind/res_update.h:${PORTSDIR}/net/bind8
-
 Y2K=		http://www.isc.org/y2k.html
 
 HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-nsupdate
 
+MAN3=		dhcpctl.3 omapi.3
 MAN5=		dhclient.conf.5 dhclient.leases.5 dhcp-contrib.5 \
 		dhcp-eval.5 dhcp-options.5 dhcpd.conf.5 \
 		dhcpd.leases.5
