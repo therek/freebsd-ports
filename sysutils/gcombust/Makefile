@@ -2,25 +2,28 @@
 # Date created:		Tue Jun 22 21:17:03 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD: ports/sysutils/gcombust/Makefile,v 1.12 2000/04/22 10:12:13 mharo Exp $
+# $FreeBSD: ports/sysutils/gcombust/Makefile,v 1.13 2000/05/29 03:13:50 steve Exp $
 #
 
 PORTNAME=	gcombust
-PORTVERSION=	0.1.32
+PORTVERSION=	0.1.33
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.abo.fi/~jmunsin/gcombust/
 
 MAINTAINER=	nox@jelal.kn-bremen.de
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		intl.1:${PORTSDIR}/devel/gettext
-RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrecord
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrecord \
+		mkisofs:${PORTSDIR}/sysutils/mkisofs \
+		cdlabelgen:${PORTSDIR}/print/cdlabelgen
 
-GNU_CONFIGURE=	yes
+GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
-CONFIGURE_ENV=	GTK_CONFIG=${PREFIX}/bin/gtk12-config
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS+=--without-included-gettext --datadir=${PREFIX}/share
+CONFIGURE_ENV+=	GTK_CONFIG=${GTK_CONFIG} CPPFLAGS="-I${LOCALBASE}/include" \
+		LDFLAGS="-L${LOCALBASE}/include"
 
-# for patch-ab (/dev/cd0a -> /dev/rcd0a)
 post-configure:
 	cd ${WRKSRC}/po && ${MAKE} update-po
 
