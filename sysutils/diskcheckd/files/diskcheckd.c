@@ -25,7 +25,7 @@
  */
 
 static const char rcsid[] =
-	"$FreeBSD: src/usr.sbin/diskcheckd/diskcheckd.c,v 1.3 2001/08/20 13:24:38 brian Exp $";
+	"$FreeBSD: ports/sysutils/diskcheckd/files/diskcheckd.c,v 1.4 2001/08/20 15:09:33 brian Exp $";
 
 #include <sys/types.h>
 #include <sys/sysctl.h>
@@ -47,7 +47,10 @@ static const char rcsid[] =
 #define DKTYPENAMES
 #include <sys/disklabel.h>
 
-#define	_PATH_CONF	"/etc/diskcheckd.conf"
+#ifndef _PATH_CONF
+#define	_PATH_CONF	"/usr/local/etc/diskcheckd.conf"
+#endif
+
 #define	_PATH_SAVE	_PATH_VARDB"diskcheckd.offsets"
 
 #define	READ_SIZE (64 << 10)

@@ -1,6 +1,6 @@
-# $FreeBSD: src/usr.sbin/diskcheckd/Makefile,v 1.3 2001/07/20 04:23:01 obrien Exp $
+# $FreeBSD: ports/sysutils/diskcheckd/files/Makefile,v 1.4 2001/07/20 06:20:32 obrien Exp $
 
-BINDIR?=	/usr/sbin
+BINDIR?=	/usr/local/sbin
 
 PROG=	diskcheckd
 MAN8=	diskcheckd.8
