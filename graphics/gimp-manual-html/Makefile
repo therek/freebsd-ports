@@ -2,7 +2,7 @@
 # Date created:		5 June 1998
 # Whom:			Brett Taylor
 #
-# $FreeBSD: ports/graphics/gimp-manual-html/Makefile,v 1.14 2000/01/26 23:40:29 mph Exp $
+# $FreeBSD: ports/graphics/gimp-manual-html/Makefile,v 1.15 2000/04/14 10:45:57 asami Exp $
 #
 
 PORTNAME=	GimpUserManual
@@ -26,7 +26,7 @@ DOCFORMAT=HTML
 .endif
 .endif
 
-PLIST=		${PKGDIR}/PLIST_${DOCFORMAT}
+PLIST=		${PKGDIR}/pkg-plist_${DOCFORMAT}
 
 pre-fetch:
 	@${ECHO} "This manual is available in three formats: HTML, PDF, and"
