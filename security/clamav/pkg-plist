@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/clamav/pkg-plist,v 1.13 2004/04/01 16:36:28 eik Exp $
+@comment $FreeBSD: ports/security/clamav/pkg-plist,v 1.14 2004/06/15 10:04:48 eik Exp $
 @unexec [ ! -f /var/run/clamav/clamd.pid ] || %%RC_DIR%%/clamav-clamd%%RC_SUFX%% stop || true
 @unexec [ ! -f /var/run/clamav/freshclam.pid ] || %%RC_DIR%%/clamav-freshclam%%RC_SUFX%% stop || true
 bin/clamav-config
@@ -16,9 +16,9 @@ lib/libclamav.so.1
 lib/libclamav.so
 lib/libclamav.a
 libdata/pkgconfig/libclamav.pc
-@unexec if cmp -s %D/etc/clamav.conf %D/etc/clamav.conf.default; then rm -f %D/etc/clamav.conf; fi
-etc/clamav.conf.default
-@exec [ -f %B/clamav.conf ] || cp %B/%f %B/clamav.conf
+@unexec if cmp -s %D/etc/clamd.conf %D/etc/clamd.conf.default; then rm -f %D/etc/clamd.conf; fi
+etc/clamd.conf.default
+@exec [ -f %B/clamd.conf ] || cp %B/%f %B/clamd.conf
 @unexec if cmp -s %D/etc/freshclam.conf %D/etc/freshclam.conf.default; then rm -f %D/etc/freshclam.conf; fi
 etc/freshclam.conf.default
 @exec [ -f %B/freshclam.conf ] || cp %B/%f %B/freshclam.conf

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav/files/clamav-clamd.sh,v 1.2 2004/02/10 14:06:49 eik Exp $
+# $FreeBSD: ports/security/clamav/files/clamav-clamd.sh,v 1.3 2004/04/19 15:21:33 eik Exp $
 #
 
 # PROVIDE: clamd
@@ -24,20 +24,12 @@ rcvar=`set_rcvar`
 command=%%PREFIX%%/sbin/clamd
 pidfile=/var/run/clamav/clamd.pid
 required_dirs=%%DATADIR%%
-required_files=%%PREFIX%%/etc/clamav.conf
+required_files=%%PREFIX%%/etc/clamd.conf
 
-stop_postcmd=stop_postcmd
+# read settings, set default values
+load_rc_config "$name"
+: ${clamav_clamd_enable="NO"}
+: ${clamav_clamd_flags=""}
+: ${clamav_clamd_socket="%%CLAMAV_CLAMD_SOCKET%%"}
 
-stop_postcmd()
-{
-  rm -f $pidfile
-}
-
-# set defaults
-
-clamav_clamd_enable=${clamav_clamd_enable:-"NO"}
-clamav_clamd_flags=${clamav_clamd_flags:-""}
-clamav_clamd_socket=${clamav_clamd_socket:-"%%CLAMAV_CLAMD_SOCKET%%"}
-
-load_rc_config $name
 run_rc_command "$1"
