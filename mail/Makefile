@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/mail/Makefile,v 1.99 1999/08/25 06:50:00 obrien Exp $
 #
 
     SUBDIR += adcomplain
@@ -93,5 +93,6 @@
     SUBDIR += xpbiff
     SUBDIR += xpbiff-youbin
     SUBDIR += youbin
+    SUBDIR += zmailer
 
 .include <bsd.port.subdir.mk>
