@@ -2,13 +2,14 @@
 # Date created:		3 June 1995
 # Whom:			roberto
 #
-# $FreeBSD: ports/devel/libdlmalloc/Makefile,v 1.15 2000/06/16 08:47:13 sobomax Exp $
+# $FreeBSD: ports/devel/libdlmalloc/Makefile,v 1.16 2000/06/16 21:49:58 asami Exp $
 #
 
 PORTNAME=	dlmalloc
 PORTVERSION=	2.6.5
 CATEGORIES=	devel
-MASTER_SITES=	ftp://gee.cs.oswego.edu/pub/misc/
+MASTER_SITES=	ftp://gee.cs.oswego.edu/pub/misc/  \
+		ftp://ftp.netsw.org/netsw/System/Libs/Memory/Optimize/
 DISTFILES=	malloc-2.6.5.c
 
 MAINTAINER=	roberto@FreeBSD.org
