@@ -2,7 +2,7 @@
 # Date created:         03 October 2000
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/py-gdbm/Makefile,v 1.1 2000/10/20 09:11:37 tg Exp $
+# $FreeBSD: ports/databases/py-gdbm/Makefile,v 1.2 2001/02/05 14:31:42 olgeni Exp $
 #
 
 PORTNAME=	gdbm
@@ -15,24 +15,20 @@ DISTFILES=	${PYTHON_DISTFILE}
 
 MAINTAINER=	tg@FreeBSD.org
 
+BUILD_DEPENDS=	${PYDISTUTILS}
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
 
 DIST_SUBDIR=	python
 USE_PYTHON=	yes
 WRKSRC=		${PYTHON_WRKSRC}/Modules
-CONFIGURE_ENV=	PYTHON=${PYTHON_CMD}
-ALL_TARGET=	sharedmods
-MAKE_FLAGS=	OPT="${CFLAGS}"
 
 post-extract:
-	@${CP} ${FILESDIR}/Setup ${WRKSRC}
-	@${CP} ${PYTHON_LIBDIR}/config/Makefile.pre.in ${WRKSRC}
+	@${CP} ${FILESDIR}/setup.py ${WRKSRC}
 
-do-configure:
-	@(cd ${WRKSRC}; \
-		${SETENV} ${CONFIGURE_ENV} ${MAKE} -f Makefile.pre.in boot)
+do-build:
+	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py build)
 
 do-install:
-	${INSTALL_DATA} ${WRKSRC}/gdbmmodule.so ${PYTHON_SITELIBDIR}
+	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py install)
 
 .include <bsd.port.mk>
