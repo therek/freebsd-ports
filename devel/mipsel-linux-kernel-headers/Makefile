@@ -2,7 +2,7 @@
 # Date created:		14 June 2001
 # Whom:			Lev Serebryakov <lev@serebryakov.spb.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/mipsel-linux-kernel-headers/Makefile,v 1.1 2001/06/30 11:35:32 dinoex Exp $
 #
 
 PORTNAME=	kernel-headers
@@ -19,6 +19,7 @@ USE_BZIP2=	yes
 NO_BUILD=	yes
 
 do-install:
+	-${MKDIR} ${PREFIX}/${PKGNAMEPREFIX:S/-$//}
 	(cd ${WRKSRC} && tar --exclude '*.orig' -cf - *) \
 		| (cd ${PREFIX}/${PKGNAMEPREFIX:S/-$//} && tar xf -)
 	${LN} -sf ${PREFIX}/${PKGNAMEPREFIX:S/-$//}/include/asm-mips \
