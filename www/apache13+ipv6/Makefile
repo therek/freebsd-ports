@@ -3,11 +3,11 @@
 # Date created:         Fri Feb 18 03:04:36 JST 2000
 # Whom:                 sumikawa
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/apache13+ipv6/Makefile,v 1.1.1.1 2000/02/20 16:54:06 sumikawa Exp $
 #
 
 DISTNAME=       apache_1.3.11
-PKGNAME=        apache-1.3.11
+PKGNAME=        apache+ipv6-1.3.11
 CATEGORIES=	www ipv6
 MASTER_SITES=   http://www.apache.org/dist/ \
 		ftp://ftp.ccs.neu.edu/net/mirrors/ftp.apache.org/apache/dist/ \
