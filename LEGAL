@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.243 2002/05/12 18:45:23 keith Exp $
+# $FreeBSD: ports/LEGAL,v 1.244 2002/05/13 13:58:20 netchild Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -238,6 +238,7 @@ upsmon*			ports/sysutils/upsmon	Redistribute only with
 						original source code.
 uzap.tar.gz             ports/editors/uzap      Restrictive copyright
 vbsd407e.tar.Z		ports/security/vscan	Commercial software
+vdesk-*			ports/x11/vdesk		Distributed without license
 vice-*			ports/emulators/vice	ROMs are copyrighted by
 						Commodore Business Machines
 vmware*			ports/emulators/vmware*	Commercial software
