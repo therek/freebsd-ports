@@ -3,13 +3,12 @@
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/grun/Makefile,v 1.1.1.1 1999/09/09 15:09:34 taoka Exp $
 #
 
 DISTNAME=	grun-0.8.1
 CATEGORIES=	misc
-MASTER_SITES=	http://www.geocities.com/ResearchTriangle/Facility/1468/sg/ \
-		ftp://skar.petech.ac.za/pub/gtksoft/
+MASTER_SITES=	http://www.geocities.com/ResearchTriangle/Facility/1468/sg/
 
 MAINTAINER=	domi@saargate.de
 
