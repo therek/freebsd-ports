@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop cyrus-imapd
-# $FreeBSD: ports/mail/cyrus-imapd2/files/imapd.sh,v 1.9 2003/10/01 18:09:34 ume Exp $
+# $FreeBSD: ports/mail/cyrus-imapd2/files/imapd.sh,v 1.10 2003/12/04 08:20:07 ume Exp $
 
 # PROVIDE: cyrus_imapd
 # REQUIRE: DAEMON
