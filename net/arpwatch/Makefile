@@ -2,17 +2,16 @@
 # Date created:         March 24 1997
 # Whom:                 Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/net/arpwatch/Makefile,v 1.14 2000/04/15 09:43:45 obrien Exp $
+# $FreeBSD: ports/net/arpwatch/Makefile,v 1.15 2000/04/15 10:04:06 asami Exp $
 #
 
 PORTNAME=	arpwatch
-PORTVERSION=	2.1.a4
+PORTVERSION=	2.1.a6
 CATEGORIES=	net
 MASTER_SITES=	http://www.Awfulhak.org/arpwatch/ \
 		ftp://ftp.ee.lbl.gov/ \
 		ftp://ftp.cso.uiuc.edu/pub/security/coast/unix/arpwatch/
-DISTNAME=	arpwatch-2.1a4
-EXTRACT_SUFX=	.tar.Z
+DISTNAME=	arpwatch-2.1a6
 
 MAINTAINER=	brian@Awfulhak.org
 
