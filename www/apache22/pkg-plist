@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache21/pkg-plist,v 1.61 2004/12/13 18:48:02 clement Exp $
+@comment $FreeBSD: ports/www/apache21/pkg-plist,v 1.62 2004/12/16 08:25:33 clement Exp $
 @exec mkdir -p %D/etc/apache21 2> /dev/null
 @unexec if cmp -s %D/etc/apache21/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache21/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd-std.conf
@@ -208,7 +208,6 @@ sbin/apxs
 sbin/checkgid
 sbin/dbmmanage
 sbin/envvars
-sbin/envvars-std
 sbin/htcacheclean
 sbin/htdbm
 sbin/htdigest
@@ -505,6 +504,8 @@ share/apache21/build/special.mk
 @unexec rmdir %D/libexec/apache21 2> /dev/null || true
 @dirrm include/apache21
 @exec mkdir -p %D/etc/apache21/Includes 2> /dev/null || true
+@exec mkdir -p %D/etc/apache2/envvars.d 2> /dev/null || true
 @unexec rmdir %D/etc/apache21/Includes 2> /dev/null || true
+@unexec rmdir %D/etc/apache2/envvars.d 2> /dev/null || true
 @unexec rm -f %D/etc/apache21/httpd.conf.bak 2> /dev/null || true
 @unexec rmdir %D/etc/apache21 2> /dev/null || echo "===> If you plan to do not reinstall apache21, you can safely remove %D/etc/apache21."
