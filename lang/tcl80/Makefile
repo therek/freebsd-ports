@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl80/Makefile,v 1.27 2000/06/16 08:19:12 sobomax Exp $
+# $FreeBSD: ports/lang/tcl80/Makefile,v 1.28 2000/06/16 21:51:23 asami Exp $
 #
 
 PORTNAME=	tcl
@@ -21,8 +21,8 @@ INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
-PKGINSTALL=	${PKGDIR}/INSTALL.tclsh
-PKGDEINSTALL=	${PKGDIR}/DEINSTALL.tclsh
+PKGINSTALL=	${PKGDIR}/pkg-install.tclsh
+PKGDEINSTALL=	${PKGDIR}/pkg-deinstall.tclsh
 
 SHLIB_MAJOR=	1
 SHLIB_MINOR=	5

@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl82/Makefile,v 1.30 2000/06/16 08:19:18 sobomax Exp $
+# $FreeBSD: ports/lang/tcl82/Makefile,v 1.31 2000/06/16 21:51:21 asami Exp $
 #
 
 PORTNAME=	tcl
@@ -21,8 +21,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
 MAKE_ENV=	SHORT_TCL_VER=82
-PKGINSTALL=     ${PKGDIR}/INSTALL.tclsh
-PKGDEINSTALL=   ${PKGDIR}/DEINSTALL.tclsh
+PKGINSTALL=     ${PKGDIR}/pkg-install.tclsh
+PKGDEINSTALL=   ${PKGDIR}/pkg-deinstall.tclsh
 
 PLIST_SUB=	TCL_VER=8.2 SHORT_TCL_VER=82
 
