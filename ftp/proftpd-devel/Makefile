@@ -2,7 +2,7 @@
 # Date created:		26 January 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.28 2000/07/28 18:00:59 mharo Exp $
+# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.29 2000/11/24 22:23:38 mharo Exp $
 #
 
 PORTNAME=	proftpd
@@ -26,7 +26,8 @@ USE_AUTOCONF=	yes
 CONFIGURE_ARGS=	--localstatedir=/var/run \
 		--disable-sendfile
 
-MODULES?=	mod_ratio:mod_readme
+#allow user to override
+MODULES?=	mod_ratio:mod_readme:mod_tar
 
 .if !empty(MODULES)
 CONFIGURE_ARGS+= --with-modules=${MODULES}
