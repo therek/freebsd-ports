@@ -2,7 +2,7 @@
 # Date created:		15 August 2000
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/www/oops/Makefile,v 1.3 2000/12/11 21:00:21 jedgar Exp $
+# $FreeBSD: ports/www/oops/Makefile,v 1.4 2000/12/14 14:23:18 jedgar Exp $
 #
 
 PORTNAME=	oops
@@ -21,12 +21,16 @@ CONFIGURE_ARGS=	--sbindir=${PREFIX}/sbin \
 		--libdir=${PREFIX}/libexec/oops \
 		--enable-oops-user=oops
 
+MAN8=		oops.8 oopsctl.8
+
 pre-install:
 	@PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 
 .include <bsd.port.pre.mk>
 
 post-install:
+	@${INSTALL_MAN} ${WRKSRC}/doc/oops.8 ${PREFIX}/man/man8
+	@${INSTALL_MAN} ${WRKSRC}/doc/oopsctl.8 ${PREFIX}/man/man8
 	@PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 	@ ${ECHO} "------------------------------------------------------------"
 	@ ${ECHO} "Sample of configuration file placed at ${PREFIX}/etc/oops !"
