@@ -2,7 +2,7 @@
 # Date created:		24 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/emulators/xsystem35/Makefile,v 1.24 2000/10/05 06:36:10 reg Exp $
+# $FreeBSD: ports/emulators/xsystem35/Makefile,v 1.25 2000/10/08 10:20:06 asami Exp $
 #
 
 PORTNAME=	xsystem35
@@ -11,7 +11,7 @@ CATEGORIES=	emulators
 MASTER_SITES=	http://www.aist-nara.ac.jp/~masaki-c/private/unitbase/xsys35/down/
 DISTNAME=	${PORTNAME}-1.2.5-1
 
-MAINTAINER=	k5@cheerful.com
+MAINTAINER=	sf@FreeBSD.org
 
 USE_IMAKE=	yes
 USE_GTK=	yes

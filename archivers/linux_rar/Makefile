@@ -3,7 +3,7 @@
 # Date created:		30 April 1999
 # Whom:			FUJISHIMA Satsuki <k5@respo.or.jp>
 #
-# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.15 2000/07/07 19:16:23 steve Exp $
+# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.16 2000/10/08 10:19:07 asami Exp $
 #
 
 PORTNAME=	linux_rar
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.netlab.sk/public/rarsoft/rar/ \
 DISTNAME=	rarlnx271
 EXTRACT_SUFX=	.sfx
 
-MAINTAINER=	k5@cheerful.com
+MAINTAINER=	sf@FreeBSD.org
 
 BUILD_DEPENDS=	/compat/linux/lib/ld-linux.so.2:${PORTSDIR}/emulators/linux_base
 RUN_DEPENDS=	/compat/linux/lib/ld-linux.so.2:${PORTSDIR}/emulators/linux_base

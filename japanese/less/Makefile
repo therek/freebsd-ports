@@ -2,7 +2,7 @@
 # Date created:		7 March 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/less/Makefile,v 1.19 2000/11/15 14:48:40 shige Exp $
+# $FreeBSD: ports/japanese/less/Makefile,v 1.20 2000/12/16 06:46:59 kuriyama Exp $
 #
 
 PORTNAME=	less+iso
@@ -20,7 +20,7 @@ PATCH_SITES=	http://www.io.com/~kazushi/less/
 PATCHFILES=	${DISTNAME}-iso${PORTVERSION:E}.patch.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	k5@cheerful.com
+MAINTAINER=	sf@FreeBSD.org
 
 USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
