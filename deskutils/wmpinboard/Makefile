@@ -2,13 +2,14 @@
 # Date created:			17 January 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/wmpinboard/Makefile,v 1.11 2000/04/08 22:03:55 mharo Exp $
+# $FreeBSD: ports/deskutils/wmpinboard/Makefile,v 1.12 2000/08/03 09:22:51 asami Exp $
 #
 
 PORTNAME=	wmpinboard
 PORTVERSION=	0.10
 CATEGORIES=	deskutils afterstep windowmaker
-MASTER_SITES=	http://www.tu-ilmenau.de/~gomar/stuff/wmpinboard/
+MASTER_SITES=	http://www.tu-ilmenau.de/~gomar/stuff/wmpinboard/ \
+		http://soupnazi.org/FreeBSD/ports/distfiles/
 
 MAINTAINER=	jim@FreeBSD.org
 

@@ -2,15 +2,14 @@
 # Date created:		1 February 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/wmdate/Makefile,v 1.11 2000/06/29 07:02:57 obrien Exp $
+# $FreeBSD: ports/x11-clocks/wmdate/Makefile,v 1.12 2000/08/03 09:27:01 asami Exp $
 #
 
 PORTNAME=	wmdate
 PORTVERSION= 	0.7
 CATEGORIES=	x11-clocks windowmaker afterstep
-MASTER_SITES=	http://wit401310.student.utwente.nl/apps/apps/ \
-		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	jim
+MASTER_SITES=	http://wit401310.student.utwente.nl/~dalroi/apps/apps/ \
+		http://soupnazi.org/FreeBSD/ports/distfiles/
 
 MAINTAINER=	jim@FreeBSD.org
 
