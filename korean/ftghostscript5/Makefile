@@ -2,7 +2,7 @@
 # Date created:		27 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/ftghostscript5/Makefile,v 1.13 2000/01/29 22:00:45 steve Exp $
+# $FreeBSD: ports/korean/ftghostscript5/Makefile,v 1.14 2000/04/13 09:16:15 asami Exp $
 #
 # Based on print/ghostscript5 and japanese/vfghostscript5
 #   use Adobe's CID-keyed Korean font because there are no wide accepted
@@ -66,8 +66,8 @@ HFFTYPE=        gs5-hfftype-0.2.tar.gz
 GS_CID_PATCH=   gs5.10-cid-bugfix.diff
 
 post-extract:
-	${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../../graphics/jpeg/work/jpeg-6b ${WRKSRC}/jpeg
-	${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../../graphics/png/work/libpng-1.0.5 ${WRKSRC}/libpng
+	${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../../graphics/jpeg/work/jpeg-* ${WRKSRC}/jpeg
+	${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../../graphics/png/work/libpng-* ${WRKSRC}/libpng
 	# additional PCL3  driver
 	$(TAR) -xvf ${WRKDIR}/hpdj-2.6/hpdj.tar -C $(WRKSRC)
 	@${CAT} ${WRKSRC}/devs.mak-5.10.add >> ${WRKSRC}/devs.mak
