@@ -2,7 +2,7 @@
 # Date created:		04 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/heretic/Makefile,v 1.2 2000/04/03 04:42:34 will Exp $
+# $FreeBSD: ports/games/heretic/Makefile,v 1.3 2000/04/14 06:53:13 mharo Exp $
 #
 
 PORTNAME=	heretic
@@ -23,7 +23,7 @@ USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 MAKE_ENV=	WANT_OGL="no" WANT_OGL_FULLSCREEN="no" WANT_NICE_OGL="no"
 .if !defined(NO_WAD)
-PLIST=		${PKGDIR}/PLIST.nowad
+PLIST=		${PKGDIR}/pkg-plist.nowad
 .endif
 ALL_TARGET=	x11
 BINARY=		xheretic
