@@ -2,7 +2,7 @@
 # Date created:				16 August 2000
 # Whom:					Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/databases/db3/Makefile,v 1.24 2000/09/22 16:48:50 sobomax Exp $
+# $FreeBSD: ports/databases/db3/Makefile,v 1.25 2001/01/01 10:14:57 will Exp $
 #
 
 PORTNAME=	db3
@@ -29,5 +29,8 @@ CONFIGURE_ARGS=		--enable-compat185 \
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/${CONFIGURE_SCRIPT}
+
+post-patch:
+	@${CHMOD} 755 ${WRKSRC}/${CONFIGURE_SCRIPT}
 
 .include <bsd.port.mk>
