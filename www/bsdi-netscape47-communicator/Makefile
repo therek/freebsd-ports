@@ -3,12 +3,14 @@
 # Whom:			Trevor Johnson <trevor@jpj.net>
 # based on work by thepish and girgen@partitur.se
 #
-# $FreeBSD: ports/www/bsdi-netscape47-communicator/Makefile,v 1.68 2000/08/08 16:42:16 sada Exp $
+# $FreeBSD: ports/www/bsdi-netscape47-communicator/Makefile,v 1.69 2000/10/02 05:39:34 trevor Exp $
 #
 
 PORTNAME=	bsdi-netscape-${BROWSER}
 
 MAINTAINER=	trevor@FreeBSD.org
+
+FORBIDDEN= 	"buffer overflow when processing HTML forms, reported by Michal Zalewski--example at http://people.freebsd.org/~trevor/hostile-page.htm" 
 
 ONLY_FOR_ARCHS=	i386
 
