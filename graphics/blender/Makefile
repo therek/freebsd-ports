@@ -2,7 +2,7 @@
 # Date created:         14 November 2000
 # Whom:                 Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD: ports/graphics/blender/Makefile,v 1.1 2000/12/19 09:56:06 will Exp $
+# $FreeBSD: ports/graphics/blender/Makefile,v 1.2 2001/01/16 17:30:54 sobomax Exp $
 #
 
 PORTNAME=	blender
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.blender.nl/pub/
 DISTNAME=	blender${PORTVERSION}-freebsd-3.4-i386-static
 
-MAINTAINER=	olgeni@uli.it
+MAINTAINER=	olgeni@freebsd.org
 
 NO_CDROM=	"Commercial distribution prohibited"
 

@@ -2,7 +2,7 @@
 # Date created:         Sat Aug 19 20:36:34 CEST 2000
 # Whom:                 olgeni@uli.it
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fonts/jmk-x11-fonts/Makefile,v 1.1 2000/11/18 12:23:15 sanpei Exp $
 #
 
 PORTNAME=	jmk-x11-fonts
@@ -10,7 +10,7 @@ PORTVERSION=	3.0
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.ntrnet.net/~jmknoble/fonts/
 
-MAINTAINER=	olgeni@uli.it
+MAINTAINER=	olgeni@freebsd.org
 
 USE_IMAKE=	yes
 

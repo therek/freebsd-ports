@@ -2,7 +2,7 @@
 # Date created:				Sat Aug 12 15:02:03 CEST 2000
 # Whom:					olgeni@uli.it
 #
-# $FreeBSD: ports/x11-fonts/nucleus/Makefile,v 1.2 2000/10/08 10:23:24 asami Exp $
+# $FreeBSD: ports/x11-fonts/nucleus/Makefile,v 1.3 2000/11/26 02:43:55 dougb Exp $
 #
 
 PORTNAME=	nucleus
@@ -11,7 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://dreamer.nitro.dk/linux/lfp/
 
-MAINTAINER=	olgeni@uli.it
+MAINTAINER=	olgeni@freebsd.org
 
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes

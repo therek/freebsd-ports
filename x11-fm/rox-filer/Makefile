@@ -2,7 +2,7 @@
 # Date created:        13 November 2000
 # Whom:                Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD: ports/x11-fm/rox-filer/Makefile,v 1.1 2000/11/26 04:53:49 dougb Exp $
+# $FreeBSD: ports/x11-fm/rox-filer/Makefile,v 1.2 2000/12/27 13:02:39 kevlo Exp $
 
 PORTNAME=	rox
 PORTVERSION=	1.0.0
@@ -12,7 +12,7 @@ MASTER_SITE_SUBDIR=	rox
 DISTNAME=	rox-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	olgeni@uli.it
+MAINTAINER=	olgeni@freebsd.org
 
 RUN_DEPENDS=	${LOCALBASE}/share/Choices:${PORTSDIR}/x11-fm/rox-base
 
