@@ -2,11 +2,11 @@
 # Date created:		10 Jan 2000
 # Whom:			Matthew Pounsett <mattp@conundrum.com>
 #
-# $FreeBSD: ports/sysutils/sarah/Makefile,v 1.4 2000/07/07 13:36:00 sobomax Exp $
+# $FreeBSD: ports/sysutils/sarah/Makefile,v 1.5 2001/02/26 04:12:30 steve Exp $
 #
 
 PORTNAME=	sarah
-PORTVERSION=	0.6b
+PORTVERSION=	0.7b
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.conundrum.com/pub/sarah/
 
@@ -29,6 +29,7 @@ do-install:
 	${MKDIR} ${PREFIX}/share/doc/sarah
 	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/sarah
 	${INSTALL_MAN} ${WRKSRC}/CHANGES ${PREFIX}/share/doc/sarah
+	${INSTALL_MAN} ${WRKSRC}/TODO ${PREFIX}/share/doc/sarah
 .endif
 
 .include <bsd.port.mk>
