@@ -2,7 +2,7 @@
 # Date created:			30 August 2001
 # Whom:				dd
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/qident/Makefile,v 1.1 2001/08/30 13:55:37 dd Exp $
 #
 
 PORTNAME=	qident
@@ -25,7 +25,7 @@ MANCOMPSUFFIX=	.gz
 MANCOMPSUFFIX=
 .endif
 
-pre-build:
+post-patch:
 	@${PERL} -pi -e 's/getopt[.]h/unistd.h/g' ${WRKSRC}/*
 
 do-install:
