@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/Makefile,v 1.180 2001/04/19 08:40:47 sobomax Exp $
 #
     SUBDIR += yawho
 
@@ -94,6 +94,7 @@
     SUBDIR += p5-Schedule-At
     SUBDIR += p5-Schedule-Cron
     SUBDIR += p5-Schedule-Match
+    SUBDIR += p5-Stat-lsMode
     SUBDIR += p5-SyslogScan
     SUBDIR += p5-Unix-ConfigFile
     SUBDIR += p5-Unix-Syslog
