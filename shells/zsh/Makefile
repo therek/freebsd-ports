@@ -3,7 +3,7 @@
 # Date created:			11 Feb. 1995
 # Whom:				torstenb
 #
-# $FreeBSD: ports/shells/zsh/Makefile,v 1.37 1999/12/07 18:43:06 billf Exp $
+# $FreeBSD: ports/shells/zsh/Makefile,v 1.38 1999/12/08 21:57:33 billf Exp $
 #
 
 DISTNAME=       zsh-3.0.7
@@ -18,6 +18,7 @@ MASTER_SITES=	ftp://ftp.sterling.com/zsh/ \
 
 MAINTAINER=	torstenb@FreeBSD.org
 
+NO_LATEST_LINK=	yes
 GNU_CONFIGURE=	yes
 MAN1=		zsh.1 zshbuiltins.1 zshcompctl.1 zshexpn.1 zshmisc.1 \
 		zshoptions.1 zshall.1 zshparam.1 zshzle.1
