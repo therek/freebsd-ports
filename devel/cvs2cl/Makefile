@@ -2,11 +2,11 @@
 # Date created:		6 June 2000
 # Whom:			knu@FreeBSD.org
 #
-# $FreeBSD: ports/devel/cvs2cl/Makefile,v 1.8 2000/07/09 03:15:07 knu Exp $
+# $FreeBSD: ports/devel/cvs2cl/Makefile,v 1.9 2000/08/15 08:58:34 knu Exp $
 #
 
 PORTNAME=	cvs2cl
-PORTVERSION=	2.12
+PORTVERSION=	2.13
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	knu
