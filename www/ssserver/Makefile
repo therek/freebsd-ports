@@ -2,7 +2,7 @@
 # Date created:		7 March 2000
 # Whom:			support@kryltech.com
 #
-# $FreeBSD: ports/www/ssserver/Makefile,v 1.2 2000/10/08 10:23:17 asami Exp $
+# $FreeBSD: ports/www/ssserver/Makefile,v 1.3 2001/04/05 10:27:16 mharo Exp $
 #
 
 PORTNAME=	ssserver
@@ -12,17 +12,15 @@ MASTER_SITES=	http://www.kryltech.com/download/FreeBSD.x86.3/
 
 MAINTAINER=	support@kryltech.com
 
-RUN_DEPENDS=	${LOCALBASE}/sbin/httpd:${PORTSDIR}/www/apache13
-
 ONLY_FOR_ARCHS=	i386
 NO_BUILD=	yes
 
 INSTALL_RWDATA=	${INSTALL} ${COPY} -o ${SHAREOWN} -g ${SHAREGRP} -m 666
 
 do-install:
+	@${MKDIR} ${PREFIX}/www/cgi-bin/ssserverdata
 	@${INSTALL_PROGRAM} ${WRKSRC}/ssserver ${PREFIX}/www/cgi-bin
 	@${INSTALL_PROGRAM} ${WRKSRC}/image ${PREFIX}/www/cgi-bin
-	@${MKDIR} ${PREFIX}/www/cgi-bin/ssserverdata
 	@${INSTALL_PROGRAM} ${WRKSRC}/ssserverdata/sssconf ${PREFIX}/www/cgi-bin/ssserverdata/sssconf
 	@${INSTALL_DATA} ${WRKSRC}/ssserverdata/Afrikaans.ssl ${PREFIX}/www/cgi-bin/ssserverdata
 	@${INSTALL_DATA} ${WRKSRC}/ssserverdata/Bulgarian.ssl ${PREFIX}/www/cgi-bin/ssserverdata
