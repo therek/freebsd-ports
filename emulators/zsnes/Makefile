@@ -2,15 +2,15 @@
 # Date created:				Fri May  4 13:10:11 CEST 2001
 # Whom:					Stijn Hoop <stijn@win.tue.nl>
 #
-# $FreeBSD: ports/emulators/zsnes/Makefile,v 1.3 2001/05/31 13:46:57 olgeni Exp $
+# $FreeBSD: ports/emulators/zsnes/Makefile,v 1.4 2001/06/11 12:40:19 olgeni Exp $
 #
 
 PORTNAME=	zsnes
-PORTVERSION=	1.29
+PORTVERSION=	1.31
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
-DISTNAME=	zsnes-${PORTVERSION}src
+DISTNAME=	zsnes${PORTVERSION:S/.//}src
 
 MAINTAINER=	stijn@win.tue.nl
 
@@ -21,6 +21,8 @@ LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12 \
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_ZIP=	yes
+EXTRACT_BEFORE_ARGS=	-q -a
 
 MAN1=		zsnes.1
 
@@ -30,7 +32,7 @@ ONLY_FOR_ARCHS=	i386
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 MAKE_ENV+=	SDL_CONFIG=${SDL_CONFIG} PREFIX=${PREFIX}
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+WRKSRC=		${WRKDIR}/zsnes
 BUILD_WRKSRC=	${WRKSRC}/src
 MAKEFILE=	makefile.linux
 ALL_TARGET=	ALL
