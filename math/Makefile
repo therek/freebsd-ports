@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.69 1999/11/26 20:59:05 steve Exp $
+# $FreeBSD: ports/math/Makefile,v 1.70 2000/01/29 06:23:15 steve Exp $
 #
 
     SUBDIR += PDL
@@ -57,6 +57,7 @@
     SUBDIR += umfpack
     SUBDIR += vtk
     SUBDIR += wingz
+    SUBDIR += wmcalc
     SUBDIR += xgfe
     SUBDIR += xgraph
     SUBDIR += xldlas
