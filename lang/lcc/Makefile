@@ -3,7 +3,7 @@
 # Date created:			  Sat Dec 7, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/lang/lcc/Makefile,v 1.10 2000/03/22 00:27:02 obrien Exp $
+# $FreeBSD: ports/lang/lcc/Makefile,v 1.11 2000/04/12 06:19:09 obrien Exp $
 #
 
 PORTNAME=	lcc
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.cs.princeton.edu/pub/packages/lcc/
 
 MAINTAINER=	obrien@FreeBSD.org
 #origial [and extensive] patches by Soren Schmidt  / sos@freebsd.org
+
+PLIST_SUB+=	ARCH=${ARCH}
 
 MAKEFILE=	makefile
 MAKE_FLAGS=	BUILDDIR=${LCCBUILDDIR} HOSTFILE=etc/${OPSYS}.c -f
