@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/oniguruma/files/BSDmakefile,v 1.2 2003/02/04 09:39:50 knu Exp $
+# $FreeBSD: ports/devel/oniguruma/files/BSDmakefile,v 1.3 2003/03/13 02:31:42 knu Exp $
 
 LIB=		onig
 SHLIB_MAJOR?=	0
@@ -6,8 +6,8 @@ SHLIB_MINOR?=	0
 CFLAGS+=	-DHAVE_CONFIG_H -DNOT_RUBY
 SRCS=		regerror.o regcomp.o regexec.o reggnu.o \
 		regposix.o regposerr.o regparse.o
-INCS=		regex.h \
-		onigposix.h
+INCS=		onigposix.h \
+		oniguruma.h
 NOMAN=		YES
 LIBDIR=		${LOCALBASE}/lib
 INCSDIR=	${LOCALBASE}/include/onig
