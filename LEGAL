@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.181 2000/10/26 14:05:03 imura Exp $
+# $FreeBSD: ports/LEGAL,v 1.182 2000/10/28 01:34:17 jeh Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -22,6 +22,9 @@ adom-*			ports/games/adom	Copy of CD must be sent to
 aswedit-*		ports/www/aswedit	Commercial software.
 atari800-*		ports/emulators/atari800 xf25 contains copyright ROMs
 						and cannot be distributed.
+avifile			ports/graphics/avifile	The program is under GPL but
+						legality of the codecs is
+						unknown. 
 bb-*			ports/net/bb		FreeBSD has permission from
 						author to put bb onto CDROM.
 bro-*			ports/security/bro	No distribution due to
