@@ -2,7 +2,7 @@
 # Date created:		18 November 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/cooledit/Makefile,v 1.29 2001/01/16 17:30:24 sobomax Exp $
+# $FreeBSD: ports/editors/cooledit/Makefile,v 1.30 2001/08/20 06:21:51 kris Exp $
 #
 
 PORTNAME=	cooledit
@@ -13,8 +13,6 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 MASTER_SITE_SUBDIR=	apps/editors/X/cooledit
 
 MAINTAINER=	brett@peloton.runet.edu
-
-BROKEN=		"linker failure"
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
