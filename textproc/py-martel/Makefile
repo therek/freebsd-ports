@@ -2,36 +2,38 @@
 # Date created:		19 October 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/textproc/py-martel/Makefile,v 1.3 2000/11/13 16:30:44 jeh Exp $
+# $FreeBSD: ports/textproc/py-martel/Makefile,v 1.4 2000/11/14 12:05:15 jeh Exp $
 #
 
 PORTNAME=	martel
-PORTVERSION=	0.3.5
+PORTVERSION=	0.4
 PORTEPOCH=	1
 CATEGORIES=	textproc biology python
 MASTER_SITES=	http://www.biopython.org/~dalke/Martel/
-PKGNAMEPREFIX=	py-
-DISTNAME=	Martel-0.35
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+DISTNAME=	Martel-0.4
 
 MAINTAINER=	johann@egenetics.com
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/TextTools/__init__.py:${PORTSDIR}/textproc/py-mxTextTools
 
 PYTHON_VERSION=	python2.0
-NO_BUILD=	yes
 
 MARTEL_DIR=	${PYTHON_SITELIBDIR}/Martel
 MARTEL_EXAMPLEDIR=${PREFIX}/share/examples/martel
 MARTEL_DOCDIR=	${PREFIX}/share/doc/martel
 
+do-build:
+	@ ${PYTHON_CMD} ${PYTHON_LIBDIR}/compileall.py ${WRKSRC}
+	@ ${PYTHON_CMD} -O ${PYTHON_LIBDIR}/compileall.py ${WRKSRC}
+
 do-install:
 	@ ${MKDIR} ${MARTEL_DIR}
-	@ (cd ${WRKSRC} && find *.py examples formats test \
+	@ (cd ${WRKSRC} && find *.py *.pyc *.pyo formats test \
 	  | cpio --quiet -pdum -R ${BINOWN}:${BINGRP} ${MARTEL_DIR})
-	@ ${PYTHON_CMD} ${PYTHON_LIBDIR}/compileall.py ${MARTEL_DIR}
-	@ ${PYTHON_CMD} -O ${PYTHON_LIBDIR}/compileall.py ${MARTEL_DIR}
-	@ ${MKDIR} ${MARTEL_EXAMPLEDIR}
+	@ ${MKDIR} ${MARTEL_EXAMPLEDIR}/builders
 	@ ${INSTALL_DATA} ${WRKSRC}/examples/* ${MARTEL_EXAMPLEDIR}
+	@ ${INSTALL_DATA} ${WRKSRC}/builders/* ${MARTEL_EXAMPLEDIR}/builders
 
 post-install:
 .if !defined(NOPORTDOCS)
