@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.161 2001/07/20 09:36:50 ijliao Exp $
+# $FreeBSD: ports/print/Makefile,v 1.162 2001/07/24 16:34:18 ijliao Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -46,6 +46,7 @@
     SUBDIR += freetype
     SUBDIR += freetype2
     SUBDIR += ft2demos
+    SUBDIR += gfontview
     SUBDIR += ggv
     SUBDIR += ghostscript55
     SUBDIR += ghostscript6
