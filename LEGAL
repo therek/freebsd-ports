@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.283 2003/05/13 20:19:18 fjoe Exp $
+# $FreeBSD: ports/LEGAL,v 1.284 2003/05/22 14:16:32 trevor Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -147,6 +147,7 @@ ksh93			ports/shells/ksh93	User must agree to "regularly monitor the Website".
 ksocrat			ports/russian/ksocrat	No redistribution allowed
 l_cc_p*_*.*.*.tar	ports/lang/icc		No redistribution allowed
 l_fc_p*_6.0.*.tar	ports/lang/ifc		No redistribution allowed
+lame			ports/audio/lame	may be patented
 lgrind			ports/print/lgrind	Contains non-free code written by Van Jacobson
 libidea			ports/security/libidea	Crypto; export-controlled
 libudbc			ports/databases/libudbc		Downloading and redistribution
