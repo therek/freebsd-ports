@@ -2,7 +2,7 @@
 # Date created:		21 July 1996
 # Whom:			Tim Vanderhoek <ac199@freenet.hamilton.on.ca>
 #
-# $FreeBSD: ports/news/slnr/Makefile,v 1.6 1999/08/30 14:31:54 peter Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	slnr
@@ -10,7 +10,7 @@ PORTVERSION=	2.3.0
 CATEGORIES=	news
 MASTER_SITES=	http://www3.sympatico.ca/john.vanderhoek/tim/src/slnr/
 
-MAINTAINER=	ac199@freenet.hamilton.on.ca
+MAINTAINER=	hoek@FreeBSD.org
 
 RUN_DEPENDS=	zip:${PORTSDIR}/archivers/zip
 
