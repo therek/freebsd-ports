@@ -2,11 +2,11 @@
 # Date created:		11 December 1998
 # Whom:			rv@gnu.org
 #
-# $FreeBSD: ports/devel/cons/Makefile,v 1.15 2000/08/18 18:57:21 rv Exp $
+# $FreeBSD: ports/devel/cons/Makefile,v 1.16 2000/08/18 19:21:49 rv Exp $
 #
 
 PORTNAME=	cons
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.dsmit.com/cons/stable/ \
 		http://www.gnu.org/software/cons/stable/ \
