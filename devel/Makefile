@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.582 2001/07/01 15:59:24 kevlo Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.583 2001/07/02 08:14:08 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -102,6 +102,7 @@
     SUBDIR += doc++
     SUBDIR += dotconf
     SUBDIR += doxygen
+    SUBDIR += ebnf2yacc
     SUBDIR += ecgi
     SUBDIR += elftoaout
     SUBDIR += elib-emacs
