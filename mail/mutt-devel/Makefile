@@ -3,12 +3,12 @@
 # Date created:			  6 Jun 2001
 # Whom:				  Udo Schweigert
 #
-# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.112 2001/06/13 19:28:40 dwcjr Exp $
+# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.113 2001/06/14 23:32:31 dwcjr Exp $
 #
 
 PORTNAME=	mutt-devel
 PORTVERSION=	1.3.19
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/mirrors/mutt/devel/ \
 		ftp://ftp.parodius.com/pub/mutt/devel/
@@ -18,8 +18,6 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 DIST_SUBDIR=    mutt
 GNU_CONFIGURE=  yes
-CONFIGURE_TARGET=${ARCH}-portbld-freebsd${OSREL}
-CONFIGURE_ENV=  CC="${CC} -I${LOCALBASE}/include" LDFLAGS=-L${LOCALBASE}/lib
 CONFIGURE_ARGS= --enable-pop --enable-imap --enable-flock --disable-fcntl \
                 --with-sharedir=${PREFIX}/share/mutt \
                 --with-docdir=${PREFIX}/share/doc/mutt \
@@ -27,6 +25,8 @@ CONFIGURE_ARGS= --enable-pop --enable-imap --enable-flock --disable-fcntl \
                 --with-iconv=${PREFIX}
 
 MAINTAINER=	ust@cert.siemens.de
+
+.include <bsd.port.pre.mk>
 
 USE_GMAKE=	yes
 USE_AUTOMAKE=	yes
@@ -100,7 +100,10 @@ PATCHFILES+=	patch-${PATCH_VERSION}.rr.compressed.gz \
 		patch-${PATCH_VERSION}.vvv.quote.gz \
 		patch-${PATCH_VERSION}.vvv.ru.gz
 PATCH_DIST_STRIP=	-p1
-CONFIGURE_ARGS+=	--enable-nntp --with-regex --enable-compressed
+CONFIGURE_ARGS+=	--enable-nntp --enable-compressed
+.if ${OSVERSION} < 500000 # --with-regex broken under -current
+CONFIGURE_ARGS+=	--enable-compressed
+.endif
 .endif
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/i$//}
@@ -160,4 +163,4 @@ post-install:
 .endif
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
