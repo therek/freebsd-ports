@@ -1,4 +1,4 @@
-$FreeBSD: ports/Tools/scripts/release/README,v 1.3 2002/03/27 04:48:14 steve Exp $
+$FreeBSD: ports/Tools/scripts/release/README,v 1.4 2002/05/20 07:31:51 will Exp $
 
 This directory contains the scripts that are used to break up the packages
 for a given release, so that they fit on a particular 4 CD set.  They rely
@@ -18,7 +18,7 @@ PWD=`pwd`
    OR
    cd $PWD/releng && cvs up -dP
 3) cd $PWD/releng
-4) make RELEASE=4.6-RELEASE SRCSCRIPTS=${PWD}/srcscripts
+4) make RELEASE=4.6-RELEASE SRCSCRIPTDIR=${PWD}/srcscripts
 5) cd 4.6-RELEASE
 6) ./doit.sh
    [ answer prompts and stuff as it appears ]
