@@ -2,7 +2,7 @@
 # Date created:		23 Oct 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/linux-netscape47-communicator/Makefile,v 1.3 2001/04/08 17:16:39 keith Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netscape-${BROWSER_ARC}
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/
 DISTNAME=	${REGION}-nskit-${BROWSER_VERSION}
 
 MAINTAINER=	keith@FreeBSD.org
+
+BROKEN=		"Broken by upgrade to linux-netscape47-communicator 4.79"
 
 # ?= is for ports that include this Makefile.
 # We need Arphic because there's no font with all sizes to deal with Java.
