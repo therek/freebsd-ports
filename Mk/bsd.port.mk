@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.472 2003/11/07 17:55:41 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.473 2003/11/08 03:22:08 marcus Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1282,7 +1282,7 @@ BUILD_DEPENDS+=	${ampath:S/://}/automake:${PORTSDIR}/devel/automake${use_amver}
 AUTOMAKE_ARGS+=	-i
 WANT_AUTOCONF_VER?=${old_acver}
 .else
-BUILD_DEPENDS+=         ${LOCALBASE}/bin/automake${dev_amver}:${PORTSDIR}/devel/automake{dev_amver}
+BUILD_DEPENDS+=         ${LOCALBASE}/bin/automake${dev_amver}:${PORTSDIR}/devel/automake${dev_amver}
 WANT_AUTOCONF_VER?=${dev_acver}
 .endif # ${use_amver} == ${old_amver}
 .else # bad automake version
