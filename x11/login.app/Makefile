@@ -2,14 +2,16 @@
 # Date created:				17 January 1999
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/login.app/Makefile,v 1.8 2001/02/05 16:18:11 olgeni Exp $
+# $FreeBSD: ports/x11/login.app/Makefile,v 1.9 2001/05/14 19:00:06 sobomax Exp $
 #
 
 PORTNAME=	login.app
 PORTVERSION=	2.0.0.a7
 CATEGORIES=	x11 windowmaker
-MASTER_SITES=	http://wm.current.nu/files/Login.app/ \
+MASTER_SITES=	${MASTER_SITE_LOCAL} \
+		http://wm.current.nu/files/Login.app/ \
 		http://wm.current.nu/files/Login.app/Themes/
+MASTER_SITE_SUBDIR=	sobomax
 DISTFILES=	Login.app-${PORTVERSION:S/.a/-Alpha-/}${EXTRACT_SUFX} \
 		Drone${EXTRACT_SUFX}
 
