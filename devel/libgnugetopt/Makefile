@@ -3,8 +3,13 @@
 # Date created:				2 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.15 2001/02/07 14:51:14 obrien Exp $
+# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.16 2001/02/14 05:42:43 lioux Exp $
 #
+
+#	Note that GCC contains the master copy of GNU's getopt in libiberty/
+#	and include/.  The next time this port is updated, it should use
+#	the latest GCC release (the smaller -core dist is fine) for the
+#	distfile.	-- obrien
 
 PORTNAME=	libgnugetopt
 PORTVERSION=	1.1
