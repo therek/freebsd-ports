@@ -2,7 +2,7 @@
 # Date created:				16 September 2000
 # Whom:					eric
 #
-# $FreeBSD: ports/audio/wmusic/Makefile,v 1.5 2001/04/17 13:31:15 eric Exp $
+# $FreeBSD: ports/audio/wmusic/Makefile,v 1.6 2001/05/14 07:16:05 eric Exp $
 #
 
 PORTNAME=	wmusic
@@ -22,6 +22,7 @@ USE_GMAKE=	yes
 USE_GLIB=	yes
 USE_GTK=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/src/wmusic ${PREFIX}/bin
