@@ -2,7 +2,7 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/iso8879/Makefile,v 1.12 1999/08/31 06:51:17 mharo Exp $
+# $FreeBSD: ports/textproc/iso8879/Makefile,v 1.13 2000/04/09 21:52:43 cpiazza Exp $
 #
 
 PORTNAME=	iso8879
@@ -12,11 +12,10 @@ MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
 DISTNAME=	isoENTS
 EXTRACT_SUFX=	.zip
 
-MAINTAINER=	jfieber@FreeBSD.org
+MAINTAINER=	kuriyama@FreeBSD.org
 
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
 
-NO_MTREE=       yes
 EXTRACT_ONLY=	# empty
 NO_BUILD=       yes
 NO_WRKSUBDIR=	yes
