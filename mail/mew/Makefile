@@ -2,7 +2,7 @@
 # Date created:		21 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew/Makefile,v 1.25 2000/08/09 17:52:16 gj Exp $
+# $FreeBSD: ports/mail/mew/Makefile,v 1.26 2000/10/08 07:20:59 asami Exp $
 #
 
 PORTNAME=	mew-${EMACS_PORT_NAME}
@@ -182,7 +182,7 @@ post-configure:
 	${CP} ${SAMPLEFILES} ${WRKTMPDIR}
 
 pre-install:
-	${ENV} ${SCRIPTS_ENV} ${SH} ${FILESDIR}/tmpl2file.sh
+	${SETENV} ${SCRIPTS_ENV} ${SH} ${FILESDIR}/tmpl2file.sh
 	@${MKDIR} ${ELISPDIR} ${INFODIR}
 .if (${EMACS_NAME} == "xemacs")
 	@${MKDIR} ${ETCDIR}/etc
@@ -225,9 +225,9 @@ post-install:
 #arrange:
 #	${MKDIR} ${PKGDIR}
 #	${ECHO} ${COMMENT_TEXT} > ${PKGDIR}/COMMENT
-#	${ENV} ${SCRIPTS_ENV} WRKTMPDIR=${PKGDIR} TMPL_FILES=DESCR \
+#	${SETENV} ${SCRIPTS_ENV} WRKTMPDIR=${PKGDIR} TMPL_FILES=DESCR \
 #		${SH} ${FILESDIR}/tmpl2file.sh
-#	${ENV} ${SCRIPTS_ENV} WRKTMPDIR=${PKGDIR} ${SH} ${FILESDIR}/message.sh
+#	${SETENV} ${SCRIPTS_ENV} WRKTMPDIR=${PKGDIR} ${SH} ${FILESDIR}/message.sh
 #	${CHOWN} kiri:staff ${PKGDIR} ${PKGDIR}/COMMENT ${PKGDIR}/DESCR ${PKGDIR}/MESSAGE
 #.if (${EMACS_NAME} == "xemacs") && ${EMACS_MAJOR_VER} > 20
 #	${MAKE} PLIST_SUB_EXCLS="${PLIST_SUB_EXCLS} EMACS_INFODIR=${EMACS_INFODIR}" \

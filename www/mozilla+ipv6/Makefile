@@ -2,7 +2,7 @@
 # Date created:		25 Aug 2000
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.48 2000/10/24 12:36:31 knu Exp $
+# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.49 2000/10/25 20:17:30 sumikawa Exp $
 #
 
 PORTNAME=	mozilla
@@ -54,10 +54,10 @@ post-build:
 		${FILESDIR}/mozilla.sh >${WRKSRC}/mozilla
 	@${CHMOD} 555 ${WRKSRC}/mozilla
 	@(cd ${WRKSRC}/dist/bin; \
-	  ${ENV} LD_LIBRARY_PATH=. MOZILLA_FIVE_HOME=. ./regxpcom; \
+	  ${SETENV} LD_LIBRARY_PATH=. MOZILLA_FIVE_HOME=. ./regxpcom; \
 	  ${ECHO} skin,install,select,classic/1.0 >> chrome/installed-chrome.txt; \
 	  ${ECHO} locale,install,select,en-US >> chrome/installed-chrome.txt; \
-	  ${ENV} LD_LIBRARY_PATH=. MOZILLA_FIVE_HOME=. ./regchrome)
+	  ${SETENV} LD_LIBRARY_PATH=. MOZILLA_FIVE_HOME=. ./regchrome)
 
 do-install:
 	${MKDIR} ${PREFIX}/lib/mozilla

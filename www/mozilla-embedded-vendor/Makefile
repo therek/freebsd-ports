@@ -2,7 +2,7 @@
 # Date created:				16 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mozilla-embedded/Makefile,v 1.1 2000/08/17 09:31:54 sobomax Exp $
+# $FreeBSD: ports/www/mozilla-embedded/Makefile,v 1.2 2000/08/31 12:26:03 sobomax Exp $
 #
 
 PORTNAME=	mozilla-embedded
@@ -29,7 +29,7 @@ do-build:
 	cd ${WRKSRC}/embedding/config && ${SETENV} ${MAKE_ENV} ${GMAKE} \
 		${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${ALL_TARGET}
 	(cd ${WRKSRC}/dist/bin && \
-	  ${ENV} LD_LIBRARY_PATH=${WRKSRC}/dist/Embed \
+	  ${SETENV} LD_LIBRARY_PATH=${WRKSRC}/dist/Embed \
 		MOZILLA_FIVE_HOME=${WRKSRC}/dist/Embed ./regxpcom)
 	find ${WRKSRC}/dist/Embed -name "*.so" | xargs strip
 
