@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:	bash
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/bash2/Makefile,v 1.44 2000/05/23 12:04:49 ache Exp $
+# $FreeBSD: ports/shells/bash2/Makefile,v 1.45 2000/11/30 01:31:37 ache Exp $
 #
 
 PORTNAME=	bash
@@ -15,7 +16,7 @@ MASTER_SITE_SUBDIR=	bash
 DISTFILES=      bash-${PORTVERSION}.tar.gz bash-doc-${PORTVERSION}.tar.gz
 .endif
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 GNU_CONFIGURE=	Yes
 CONFIGURE_ARGS=	--with-installed-readline
