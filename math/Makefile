@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.133 2001/06/24 23:45:34 dd Exp $
+# $FreeBSD: ports/math/Makefile,v 1.134 2001/07/06 16:30:35 ijliao Exp $
 #
     SUBDIR += yacas
 
@@ -69,6 +69,7 @@
     SUBDIR += p5-Math-Interpolate
     SUBDIR += p5-Math-Logic
     SUBDIR += p5-Math-Random
+    SUBDIR += p5-Math-Random-MT
     SUBDIR += p5-MatrixReal
     SUBDIR += p5-Set-IntSpan
     SUBDIR += p5-Set-Window
