@@ -3,7 +3,7 @@
 # Date created:			Dec 30, 2000
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.6 2001/01/29 02:03:41 ijliao Exp $
+# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.7 2001/02/11 16:25:17 ijliao Exp $
 #
 
 PORTNAME=	logtool
@@ -20,7 +20,7 @@ CONFIGURE_ARGS=	--prefix=/usr/local --sysconfdir=/usr/local/etc/logtool
 
 ALL_TARGET=	build
 
-MAN1:		logtool.1
+MAN1=		logtool.1
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/logtool.1 ${PREFIX}/man/man1
