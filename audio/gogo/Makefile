@@ -2,14 +2,14 @@
 # Date created:        01 July 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/audio/gogo/Makefile,v 1.21 2000/07/19 05:48:10 nakai Exp $
+# $FreeBSD: ports/audio/gogo/Makefile,v 1.22 2000/07/20 10:41:37 nakai Exp $
 #
 
 PORTNAME=	gogo
-PORTVERSION=	2.35
+PORTVERSION=	2.36
 CATEGORIES=	audio
 MASTER_SITES=	http://homepage1.nifty.com/herumi/soft/gogo2/src/
-DISTNAME=	gogo235
+DISTNAME=	gogo236
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nakai@FreeBSD.org
