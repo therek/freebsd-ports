@@ -2,12 +2,11 @@
 # Date created:         27.01.2001
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.9 2001/02/01 15:23:08 ache Exp $
+# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.10 2001/02/05 15:33:30 olgeni Exp $
 #
 
 PORTNAME=	mnogosearch
-PORTVERSION=	3.1.9
-PORTREVISION=	3
+PORTVERSION=    3.1.10
 CATEGORIES=	www databases
 MASTER_SITES=	http://search.mnogo.ru/Download/
 
@@ -54,11 +53,6 @@ pre-fetch:
 	@${ECHO} "WITH_MNOGO_MYSQL=yes or WITH_MNOGO_PGSQL=yes respectively."
 	@${ECHO}
 .endif
-
-# Add missing msql DB initialization files
-post-patch:
-	${CP} ${FILESDIR}/msql_ispell.txt ${WRKSRC}/create/msql/ispell.txt
-	${CP} ${FILESDIR}/msql_track.txt ${WRKSRC}/create/msql/track.txt
 
 pre-install:
 	@${MKDIR} ${PREFIX}/share/mnogosearch
