@@ -2,11 +2,11 @@
 # Date created:				25 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/math/grpn/Makefile,v 1.1.1.1 1999/11/26 20:50:14 steve Exp $
+# $FreeBSD: ports/math/grpn/Makefile,v 1.2 2000/04/14 07:20:09 asami Exp $
 #
 
 PORTNAME=	grpn
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	math gnome
 MASTER_SITES=	http://wilkins.ne.mediaone.net/grpn/
 
