@@ -2,11 +2,11 @@
 # Date created:        2 January 1997
 # Whom:                Yukihiro Nakai<Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/qvwm/Makefile,v 1.38 2001/02/05 21:05:43 olgeni Exp $
+# $FreeBSD: ports/x11-wm/qvwm/Makefile,v 1.39 2001/02/11 20:38:17 nakai Exp $
 #
 
 PORTNAME=	qvwm
-PORTVERSION=	1.1.9
+PORTVERSION=	1.1.10
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://www.qvwm.org/pub/qvwm/
 
