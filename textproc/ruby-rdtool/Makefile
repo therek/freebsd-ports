@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.6 2000/08/16 12:21:20 knu Exp $
+# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.7 2000/08/22 06:52:18 knu Exp $
 #
 
 PORTNAME=	rdtool
@@ -60,7 +60,8 @@ post-build:
 .endif
 
 post-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/rmi2html.rb ${PREFIX}/bin/rmi2html
+	${INSTALL_SCRIPT} ${WRKSRC}/rmi2html.rb ${PREFIX}/bin/
+	${LN} -sf rmi2html.rb ${PREFIX}/bin/rmi2html
 	${INSTALL_DATA} ${WRKSRC}/rd/rd2rmi-lib.rb ${RUBY_SITELIBDIR}/rd/
 	${MKDIR} ${EMACSLISPDIR}
 	${INSTALL_DATA} ${WRKSRC}/utils/rd-mode.el ${EMACSLISPDIR}/
