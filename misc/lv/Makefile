@@ -1,17 +1,17 @@
 # New ports collection makefile for:    lv
 # Date created:         Fri Nov  6 09:06:33 PST 1998
-# Whom:                 sumikawa@kame.net
+# Whom:                 sumikawa@FreeBSD.org
 #
-# $FreeBSD: ports/misc/lv/Makefile,v 1.9 1999/11/04 09:10:09 sumikawa Exp $
+# $FreeBSD: ports/misc/lv/Makefile,v 1.10 2000/04/14 08:46:12 asami Exp $
 #
 
 PORTNAME=	lv
-PORTVERSION=	4.49.3
+PORTVERSION=	4.49.4
 CATEGORIES=	misc
 MASTER_SITES=	http://www.ff.iij4u.or.jp/~nrt/freeware/
-DISTNAME=	lv4493
+DISTNAME=	lv4494
 
-MAINTAINER=	sumikawa@kame.net
+MAINTAINER=	sumikawa@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 GNU_CONFIGURE=	yes
