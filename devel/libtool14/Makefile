@@ -2,12 +2,12 @@
 # Date created:		6 May 1998
 # Whom:			Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/devel/libtool/Makefile,v 1.12 2000/09/25 07:38:14 sobomax Exp $
+# $FreeBSD: ports/devel/libtool/Makefile,v 1.13 2000/10/24 16:00:52 reg Exp $
 #
 
 PORTNAME=	libtool
 PORTVERSION=	1.3.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	libtool
@@ -18,8 +18,8 @@ MAINTAINER=	reg@FreeBSD.org
 # FreeBSD support, and would require that all Ports users upgrade for no
 # reason.
 
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--disable-ltdl-install
 CONFIGURE_ENV=	PREFIX=${PREFIX}
 
 .include <bsd.port.mk>
