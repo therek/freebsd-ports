@@ -2,16 +2,17 @@
 # Date created:         25 Aug 1997
 # Whom:                 jmacd
 #
-# $FreeBSD: ports/lang/scheme48/Makefile,v 1.13 1999/12/24 18:39:35 mharo Exp $
+# $FreeBSD: ports/lang/scheme48/Makefile,v 1.14 2000/04/12 06:20:26 obrien Exp $
 #
 
 PORTNAME=	scheme48
-PORTVERSION=	0.46
+PORTVERSION=	0.53
 CATEGORIES=	lang
-MASTER_SITES=	ftp://ftp-swiss.ai.mit.edu/pub/s48/
+MASTER_SITES=	http://www.neci.nj.nec.com/homepages/kelsey/ \
+		ftp://ftp.nj.nec.com/pub/kelsey/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER= 	jmacd@FreeBSD.org
+MAINTAINER= 	nectar@FreeBSD.org
 
 GNU_CONFIGURE=  yes
 ALL_TARGET = 	enough
