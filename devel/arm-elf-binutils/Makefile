@@ -3,18 +3,19 @@
 # Date created:		3 November 2000
 # Whom:			Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/arm-elf-binutils/Makefile,v 1.1 2001/01/04 12:29:50 obrien Exp $
 #
 
 PORTNAME=	binutils
-PORTVERSION=	2.10.1
+PORTVERSION=	2.11
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR=	binutils
+MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
+MASTER_SITE_SUBDIR=	binutils/releases
 PKGNAMEPREFIX=	arm-elf-
 
 MAINTAINER=	esk@ira.uka.de
 
+USE_BZIP2=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=arm-elf
