@@ -2,7 +2,7 @@
 # Date created:         7 April 1999
 # Whom:                 futatuki
 #
-# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.21 2000/11/07 06:56:03 dougb Exp $
+# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.22 2000/11/11 06:17:33 kevlo Exp $
 #
 
 PORTNAME=		cdrdao
@@ -26,7 +26,8 @@ MAN1=		cdrdao.1
 
 .include <bsd.port.pre.mk>
 
-CONFIGURE_ARGS=	--disable-gtkmmtest
+CONFIGURE_ARGS=	--disable-gtkmmtest --with-pcctsbin=${LOCALBASE}/bin \
+		--with-pcctsinc=${LOCALBASE}/include/pccts
 
 .if defined(WITHOUT_SCGLIB) && ${OSVERSION} > 300000
 CONFIGURE_ARGS+=	--without-scglib
