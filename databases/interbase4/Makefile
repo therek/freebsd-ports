@@ -2,7 +2,7 @@
 # Date created:				1998-nov-01
 # Whom:					Berend de Boer <berend@pobox.com>
 #
-# $FreeBSD: ports/databases/interbase4/Makefile,v 1.9 2000/03/19 01:42:56 jedgar Exp $
+# $FreeBSD: ports/databases/interbase4/Makefile,v 1.10 2000/04/08 22:48:32 mharo Exp $
 #
 
 PORTNAME=	interbase
@@ -13,6 +13,7 @@ DISTNAME=	IB_4.0_FreeBSD
 
 MAINTAINER=	berend@pobox.com
 
+FORBIDDEN=	"Backdoored by Borland"
 ONLY_FOR_ARCHS=	i386
 
 NO_WRKSUBDIR=
