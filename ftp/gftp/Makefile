@@ -3,13 +3,13 @@
 # Date Created:		21 Feb 1999
 # Whom:			Damjan Marion <dmarion@open.hr>
 #
-# $FreeBSD: ports/ftp/gftp/Makefile,v 1.7 1999/09/09 23:00:42 cpiazza Exp $
+# $FreeBSD: ports/ftp/gftp/Makefile,v 1.8 1999/11/14 00:54:42 cpiazza Exp $
 #
 
 DISTNAME=	gftp-2.0.5a
 CATEGORIES=	ftp
 MASTER_SITES=	http://gftp.seul.org/ \
-		ftp://gftp.seul.org/pub/gftp
+		ftp://gftp.seul.org/pub/gftp/
 
 MAINTAINER=	dmarion@open.hr
 
