@@ -2,7 +2,7 @@
 # Date Created:			24 Mar 2001
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/migemo-xemacs21-mule/Makefile,v 1.1 2001/04/11 04:54:06 knu Exp $
 #
 
 MASTERDIR=      ${.CURDIR}/../../japanese/migemo-emacs20
