@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.222 2003/09/28 17:27:32 sumikawa Exp $
+# $FreeBSD: ports/MOVED,v 1.223 2003/09/28 17:45:38 sumikawa Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -614,3 +614,4 @@ japanese/tcsh-nls-multi||2003-09-28|Port was broken and out of date
 japanese/tcsh-nls-rishu||2003-09-28|Port was broken and out of date
 japanese/tcsh-nls-roomi||2003-09-28|Port was broken and out of date
 japanese/tcsh-nls-ruri2||2003-09-28|Port was broken and out of date
+mail/exim-ldap||2003-09-29|Depends on ancient OpenLDAP, which should be retired
