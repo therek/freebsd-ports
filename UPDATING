@@ -6,6 +6,12 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20040622:
+  AFFECTS: users of net/openslp
+
+  The openslp port must now be enabled / disabled and configured in
+  rc.conf.  See the script for details.
+
 20040619:
   AFFECTS: users of sysutils/webmin and sysutils/usermin
 
@@ -318,4 +324,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.31 2004/06/18 16:42:06 hrs Exp $
+$FreeBSD: ports/UPDATING,v 1.32 2004/06/19 20:59:49 olgeni Exp $
