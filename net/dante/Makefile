@@ -2,11 +2,11 @@
 # Date created:			  20 October 1999
 # Whom:				  Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/net/dante/Makefile,v 1.9 2000/11/26 18:17:25 roam Exp $
+# $FreeBSD: ports/net/dante/Makefile,v 1.10 2001/02/26 06:41:40 ijliao Exp $
 #
 
 PORTNAME=	dante
-PORTVERSION=	1.1.8
+PORTVERSION=	1.1.9
 CATEGORIES=	net security
 MASTER_SITES=	ftp://ftp.inet.no/pub/socks/ \
 		http://www.freenix.no/~anders/ \
