@@ -2,7 +2,7 @@
 # Date created:		Dec 13 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/mod_gzip/Makefile,v 1.4 2001/05/08 15:29:26 mi Exp $
+# $FreeBSD: ports/www/mod_gzip/Makefile,v 1.5 2001/05/08 15:32:16 mi Exp $
 #
 
 PORTNAME=	mod_gzip
@@ -32,10 +32,10 @@ do-build:
 do-install:
 	cd ${WRKSRC} && ${LOCALBASE}/sbin/apxs -A -i ${PORTNAME}.so
 
-post-install:
 .if !defined(NOPORTDOCS)
+post-install:
 	@${MKDIR} ${PREFIX}/share/doc/${PORTNAME}
-	@${INSTALL_DATA} ${_DISTDIR}/${DISTFILES:N*gz} \
+	@cd ${_DISTDIR} && ${INSTALL_DATA} ${DISTFILES:N*gz} \
 		${PREFIX}/share/doc/${PORTNAME}
 .endif
 
