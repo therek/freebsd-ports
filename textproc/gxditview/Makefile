@@ -2,11 +2,10 @@
 # Date created:                24 June 1998
 # Whom:                        Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/textproc/gxditview/Makefile,v 1.5 2000/12/13 10:42:53 ru Exp $
+# $FreeBSD: ports/textproc/gxditview/Makefile,v 1.6 2001/01/16 17:32:44 sobomax Exp $
 #
 
 PORTNAME=	gxditview
-PORTVERSION=	1.16.1
 CATEGORIES=	textproc
 DISTFILES=	# none
 
@@ -17,7 +16,13 @@ WRKSRC=		${WRKDIR}/${DISTNAME}
 USE_IMAKE=	yes
 MAN1=		gxditview.1
 
-GXDVSRC?=	/usr/src/contrib/groff/xditview
+.if exists(/usr/src/contrib/groff/src/xditview)
+GXDVSRC=	/usr/src/contrib/groff/src/xditview
+PORTVERSION=	1.17
+.else
+GXDVSRC=	/usr/src/contrib/groff/xditview
+PORTVERSION=	1.16.1
+.endif
 
 do-extract:
 	@if [ ! -d ${GXDVSRC} ]; then \
