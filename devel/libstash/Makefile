@@ -2,13 +2,13 @@
 # Date created:		22 August 2000
 # Whom:			jasone
 #
-# $FreeBSD: ports/devel/libstash/Makefile,v 1.1 2000/08/23 07:35:43 jasone Exp $
+# $FreeBSD: ports/devel/libstash/Makefile,v 1.2 2000/11/29 07:56:08 jasone Exp $
 #
 
 PORTNAME=	libstash
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 CATEGORIES=	devel
-DISTNAME=	canonware-1.1.0
+DISTNAME=	canonware-1.2.0
 MASTER_SITES=	http://www.canonware.com/download/canonware/
 
 MAINTAINER=	jasone@FreeBSD.org

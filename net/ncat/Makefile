@@ -2,13 +2,13 @@
 # Date created:		22 August 2000
 # Whom:			jasone
 #
-# $FreeBSD: ports/net/ncat/Makefile,v 1.1 2000/08/23 07:35:49 jasone Exp $
+# $FreeBSD: ports/net/ncat/Makefile,v 1.2 2000/11/29 07:56:09 jasone Exp $
 #
 
 PORTNAME=	ncat
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 CATEGORIES=	net
-DISTNAME=	canonware-1.1.0
+DISTNAME=	canonware-1.2.0
 MASTER_SITES=	http://www.canonware.com/download/canonware/
 
 MAINTAINER=	jasone@FreeBSD.org
