@@ -2,11 +2,11 @@
 # Date created:        12 September 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gdm/Makefile,v 1.10 2001/05/11 16:36:38 ade Exp $
+# $FreeBSD: ports/x11/gdm/Makefile,v 1.11 2001/06/05 05:00:50 ade Exp $
 #
 
 PORTNAME=	gdm
-PORTVERSION=	2.2.2.1
+PORTVERSION=	2.2.3.2
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=		stable/sources/gdm
@@ -33,7 +33,7 @@ pre-patch:
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 post-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/config/gnomerc ${PREFIX}/etc/gdm/
-	${CAT} ${PKGMESSAGE}
+	@${INSTALL_SCRIPT} ${WRKSRC}/config/gnomerc ${PREFIX}/etc/gdm/
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
