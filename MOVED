@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.535 2004/10/23 04:58:33 linimon Exp $
+# $FreeBSD: ports/MOVED,v 1.536 2004/10/23 05:05:38 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1275,3 +1275,4 @@ misc/bookcase|misc/tellico|2004-10-17|renamed
 audio/net-rhythmbox|audio/rhythmbox|2004-10-20|broken and audio/rhythmbox has more features
 audio/ruby-musicbrainz||2004-10-22|distfile did not keep up with libmusicbrainz
 devel/ruby-flex_rb||2004-10-22|did not compile
+devel/ruby-gconf|devel/ruby-gconf2|2004-10-22|did not install
