@@ -2,13 +2,13 @@
 # Date created:		Mon Jun 28 18:02:04 PDT 1999
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.9 2000/04/09 18:29:53 cpiazza Exp $
+# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.10 2000/04/21 08:18:34 mharo Exp $
 #
 
 PORTNAME=	libmcrypt
 PORTVERSION=	2.2.4
 CATEGORIES=	security
-MASTER_SITES=	ftp://argeas.cs-net.gr/pub/unix/mcrypt/ \
+MASTER_SITES=	ftp://argeas.cs-net.gr/pub/unix/mcrypt/old/ \
 		ftp://ftp.internat.freebsd.org/pub/FreeBSD/distfiles/
 
 MAINTAINER=	nsayer@freebsd.org
