@@ -3,16 +3,18 @@
 # Date created:		14 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/converters/recode/Makefile,v 1.6 1999/08/25 05:16:28 obrien Exp $
+# $FreeBSD: ports/converters/recode/Makefile,v 1.7 1999/08/31 06:41:04 mharo Exp $
 #
 
-DISTNAME=	recode-3.4
+DISTNAME=	recode-3.5
 CATEGORIES=	converters
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	recode
 
 MAINTAINER=	torstenb@FreeBSD.org
 
-GNU_CONFIGURE=	YES
+USE_LIBTOOL=	yes
+
+MAN1=		recode.1
 
 .include <bsd.port.mk>
