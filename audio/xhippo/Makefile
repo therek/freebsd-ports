@@ -2,11 +2,11 @@
 # Date created:				16 March 1999
 # Whom:					Rod Taylor <rod@zort.on.ca>
 #
-# $FreeBSD: ports/audio/xhippo/Makefile,v 1.18 2001/05/21 18:14:44 fenner Exp $
+# $FreeBSD: ports/audio/xhippo/Makefile,v 1.19 2001/06/08 08:43:28 kevlo Exp $
 #
 
 PORTNAME=	xhippo
-PORTVERSION=	3.1
+PORTVERSION=	3.2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	xhippo
@@ -21,8 +21,8 @@ WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
 MAKE_ARGS=	CFLAGS="${CFLAGS}"
 
-DOCS=		ChangeLog gnu-xhippo.html screenshot.jpeg xhippo.info.gz \
-		xhippo.ps.gz xhippo.sgml xhippo.txt.gz
+DOCS=		ChangeLog gnu-xhippo.html screenshot.jpeg xhippo.html.gz \
+		xhippo.info.gz xhippo.ps.gz xhippo.sgml xhippo.txt.gz
 
 .include <bsd.port.pre.mk>
 
