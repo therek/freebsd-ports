@@ -2,11 +2,11 @@
 # Date created:				3 July 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/converters/mimepp/Makefile,v 1.7 2000/04/08 23:24:32 mharo Exp $
+# $FreeBSD: ports/converters/mimepp/Makefile,v 1.8 2000/04/30 19:38:17 steve Exp $
 #
 
 PORTNAME=		mimepp
-PORTVERSION=		1.2.4
+PORTVERSION=		1.3.1
 CATEGORIES=		converters
 MASTER_SITES=		http://www.hunnysoft.com/mimepp/
 
