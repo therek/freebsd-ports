@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.9 2000/04/12 04:56:06 mharo Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.10 2000/04/14 21:01:57 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.9 2000/01/23 22:29:24 vsilyaev Exp $
 #
 
@@ -75,6 +75,9 @@ setoptions:
 		-e 's;@@NETMASK@@;${VMNET_NETMASK};' \
 		${FILESDIR}/vmware.sh > ${WRKDIR}/vmware.sh
 
+	${SED} 	-e 's;@@PREFIX@@;${PREFIX};' \
+		${FILESDIR}/vmware > ${WRKDIR}/vmware
+
 pre-install: setoptions
 	${INSTALL_MAN} ${WRKSRC}/man/man1/vmware.1 ${MANPREFIX}/man/man1
 	${MKDIR} ${VMDIR}/lib/modules
@@ -95,7 +98,7 @@ pre-install: setoptions
 		${INSTALL_SCRIPT} ${WRKSRC}/bin/$${i} ${VMDIR}/bin; \
 	done
 	${INSTALL_SCRIPT} -m 4555 ${WRKSRC}/bin/vmware ${VMDIR}/bin
-	${LN} -s ${VMDIR}/bin/vmware ${PREFIX}/bin/
+	${INSTALL_SCRIPT} ${WRKDIR}/vmware ${PREFIX}/bin
 	${MKDIR} ${VMDIR}/lib
 	${INSTALL_DATA} ${WRKSRC}/lib/config ${VMDIR}/lib
 	${MKDIR} ${VMDIR}/lib/floppies
