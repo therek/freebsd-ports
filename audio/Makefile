@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.103 1999/09/09 09:41:41 dburr Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.104 1999/09/10 17:08:53 sada Exp $
 #
 
     SUBDIR += amp
@@ -83,6 +83,7 @@
     SUBDIR += xmix
     SUBDIR += xmmix
     SUBDIR += xmms
+    SUBDIR += xmp
     SUBDIR += xmpeg3
     SUBDIR += xmradio
     SUBDIR += xtuner
