@@ -1,5 +1,5 @@
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ccache/files/ccache-howto-freebsd.txt.in,v 1.1 2004/12/02 14:10:34 ahze Exp $
 #
 
 To use ccache add the following to /etc/make.conf
@@ -12,6 +12,9 @@ CXX=%%LOCALBASE%%/libexec/ccache/c++
 CC=cc
 CXX=c++
 .endif
+.else
+CC=/usr/bin/cc
+CXX=/usr/bin/c++
 .endif
 
 For Korn/Bourne shells Add the following to /etc/profile:
