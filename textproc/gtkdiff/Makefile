@@ -2,7 +2,7 @@
 # Date created:		17 November 1999
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/textproc/gtkdiff/Makefile,v 1.5 2000/05/24 16:06:49 sobomax Exp $
+# $FreeBSD: ports/textproc/gtkdiff/Makefile,v 1.6 2000/06/01 16:25:40 ade Exp $
 #
 
 PORTNAME=	gtkdiff
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.ainet.or.jp/~inoue/software/gtkdiff/
 MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
+RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
