@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.127 2000/04/14 23:12:59 knu Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.128 2000/05/24 06:12:43 gsutter Exp $
 #
 
     SUBDIR += adcomplain
@@ -14,7 +14,7 @@
     SUBDIR += cucipop
     SUBDIR += cyrus
     SUBDIR += distribute
-    SUBDIR += elm
+    SUBDIR += elm+ME
     SUBDIR += elm25
     SUBDIR += emil
     SUBDIR += exim

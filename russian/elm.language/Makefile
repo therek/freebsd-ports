@@ -2,7 +2,7 @@
 # Whom:                 ache
 # Date created:		1995/12/20
 #
-# $FreeBSD: ports/russian/elm.language/Makefile,v 1.16 2000/04/13 19:14:06 cpiazza Exp $
+# $FreeBSD: ports/russian/elm.language/Makefile,v 1.17 2000/04/21 07:52:16 mharo Exp $
 #
 
 PORTNAME=	elm
@@ -12,7 +12,7 @@ EXTRACT_ONLY=	# empty
 
 MAINTAINER=	ache@FreeBSD.org
 
-RUN_DEPENDS+=	elm:${PORTSDIR}/mail/elm
+RUN_DEPENDS+=	elm:${PORTSDIR}/mail/elm+ME
 
 NO_WRKSUBDIR=	YES
 NO_BUILD=	YES
