@@ -2,11 +2,11 @@
 # Date created:		21 January 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/www/links/Makefile,v 1.11 2001/02/26 08:38:18 demon Exp $
+# $FreeBSD: ports/www/links/Makefile,v 1.12 2001/06/18 13:31:33 demon Exp $
 #
 
 PORTNAME=	links
-PORTVERSION=	0.96pre6
+PORTVERSION=	0.96pre7
 CATEGORIES=	www
 MASTER_SITES=	http://artax.karlin.mff.cuni.cz/~mikulas/vyplody/links/download/ \
 		http://www.add.com.pl/links/download/ \
