@@ -3,7 +3,7 @@
 # Date created:		16 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/smail/Makefile,v 1.28 2000/02/12 19:23:43 torstenb Exp $
+# $FreeBSD: ports/mail/smail/Makefile,v 1.29 2000/02/27 10:05:09 kris Exp $
 #
 
 DISTNAME=	smail-3.2.0.111
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.uu.net/networking/mail/smail/ \
 
 MAINTAINER=	torstenb@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/libident.a:${PORTSDIR}/security/libident
+BUILD_DEPENDS=	${LOCALBASE}/lib/libident.a:${PORTSDIR}/security/libident
 .if !exists(/usr/include/tcpd.h)
 LIB_DEPENDS=	wrap.7:${PORTSDIR}/security/tcp_wrapper
 .endif
