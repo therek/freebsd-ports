@@ -2,7 +2,7 @@
 # Date created:        Mar  6 22:07:42 EST 2000
 # Whom:                billf
 #
-# $FreeBSD: ports/games/xsheep/Makefile,v 1.3 2000/04/14 12:28:16 asami Exp $
+# $FreeBSD: ports/games/xsheep/Makefile,v 1.4 2000/08/03 09:24:24 asami Exp $
 #
 
 PORTNAME=	xsheep
@@ -15,6 +15,8 @@ MAINTAINER=	billf@FreeBSD.org
 USE_X_PREFIX=	YES
 USE_XPM=	YES
 WRKSRC=		${WRKDIR}/xsheep
+
+BROKEN=		"Author broke the distfile by removing a bunch of required files"
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/xsheep ${PREFIX}/bin
