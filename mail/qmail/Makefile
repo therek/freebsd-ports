@@ -2,7 +2,7 @@
 # Date created:		25 May 1998
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail/Makefile,v 1.21 2000/09/28 20:56:02 nbm Exp $
+# $FreeBSD: ports/mail/qmail/Makefile,v 1.22 2000/10/03 05:12:28 lioux Exp $
 #
 
 PORTNAME=	qmail
@@ -99,7 +99,7 @@ NO_MTREE=	yes
 
 do-configure:
 	@# Create/Check the necessary groups/users
-	@PKG_PREFIX=${PREFIX} ${PERL5} ${PKGDIR}/INSTALL
+	@PKG_PREFIX=${PREFIX} ${PERL5} ${PKGINSTALL}
 	@${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
 	@${ECHO} ${PREFIX} > ${WRKSRC}/conf-qmail
 
@@ -107,7 +107,7 @@ post-patch: thereal-post-patch
 
 do-install:
 	@# Check again, just in case (ideally should error if not found)
-	@PKG_PREFIX=${PREFIX} ${PERL5} ${PKGDIR}/INSTALL
+	@PKG_PREFIX=${PREFIX} ${PERL5} ${PKGINSTALL}
 	@${MKDIR} ${PREFIX}/${DOCDIR} ${PREFIX}/configure
 	@cd ${WRKSRC} ; ./install
 	${INSTALL_PROGRAM} ${CONFIGUREPROGS} ${PREFIX}/configure
@@ -138,7 +138,7 @@ do-install:
 	@${MKDIR} ${LOCALBASE}/etc/rc.d
 	@${LN} -sf ${PREFIX}/rc ${LOCALBASE}/etc/rc.d/qmail.sh
 	@${ECHO}
-	@${SED} s!/var/qmail!${PREFIX}!g ${PKGDIR}/MESSAGE | /usr/bin/fmt
+	@${SED} s!/var/qmail!${PREFIX}!g ${PKGMESSAGE} | /usr/bin/fmt
 
 # hack to allow slave ports to include bsd.port.pre.mk and then this file
 .if defined(_PREMKINCLUDED)
