@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.355 2001/04/10 11:26:15 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.356 2001/04/10 11:27:58 lioux Exp $
 #
 
     SUBDIR += 3dc
@@ -156,6 +156,7 @@
     SUBDIR += oneko
     SUBDIR += oneko-sakura
     SUBDIR += oonsoo
+    SUBDIR += penguin-command
     SUBDIR += pentix
     SUBDIR += phalanx
     SUBDIR += pmars
