@@ -2,7 +2,7 @@
 # Date created:				21 Sep 1999
 # Whom:					HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/gru/Makefile,v 1.2 2000/04/14 06:53:09 mharo Exp $
+# $FreeBSD: ports/games/gru/Makefile,v 1.3 2001/03/27 03:49:22 kuriyama Exp $
 #
 
 PORTNAME=	gru
@@ -10,7 +10,7 @@ PORTVERSION=	8087
 CATEGORIES=	games
 MASTER_SITES=	http://hp.vector.co.jp/authors/VA004959/gru/
 
-MAINTAINER=	cbc06942@pop06.odn.ne.jp
+MAINTAINER=	hym@cocoa.freemail.ne.jp
 
 USE_IMAKE=	yes
 

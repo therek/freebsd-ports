@@ -2,7 +2,7 @@
 # Date Created:		1 Jul 2000
 # Whom:			HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/SETIsupport/Makefile,v 1.1 2001/04/07 06:38:49 will Exp $
 #
 
 PORTNAME=	SETISupport
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.jar
 EXTRACT_ONLY=
 
-MAINTAINER=	th@cis.ibaraki.ac.jp
+MAINTAINER=	hym@cocoa.freemail.ne.jp
 
 RUN_DEPENDS=	javavm:${PORTSDIR}/java/javavmwrapper \
 		${LOCALBASE}/etc/javavms:${PORTSDIR}/java/jre \
