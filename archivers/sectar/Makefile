@@ -2,11 +2,11 @@
 # Date created:        22 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/sectar/Makefile,v 1.1 2001/01/23 07:04:38 ijliao Exp $
 #
 
 PORTNAME=		sectar
-PORTVERSION=		0.8
+PORTVERSION=		1.0
 CATEGORIES=		archivers
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	star
