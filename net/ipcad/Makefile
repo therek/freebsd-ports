@@ -2,11 +2,11 @@
 # Date created:				15 April 2001
 # Whom:					vlm@spelio.net.ru
 #
-# $FreeBSD: ports/net/ipcad/Makefile,v 1.1 2001/04/17 18:06:49 will Exp $
+# $FreeBSD: ports/net/ipcad/Makefile,v 1.2 2001/04/27 11:28:13 ijliao Exp $
 #
 
 PORTNAME=	ipcad
-PORTVERSION=	2.1.1
+PORTVERSION=	2.2
 CATEGORIES=	net
 MASTER_SITES=	http://www.spelio.net.ru/soft/
 
