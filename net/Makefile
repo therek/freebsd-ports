@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.545 2001/05/29 17:02:52 ijliao Exp $
+# $FreeBSD: ports/net/Makefile,v 1.546 2001/05/30 03:14:38 lioux Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -267,6 +267,7 @@
     SUBDIR += p5-Socks
     SUBDIR += p5-Tie-NetAddr-IP
     SUBDIR += p5-URI
+    SUBDIR += p5-XPC
     SUBDIR += p5-perl-ldap
     SUBDIR += pathchar
     SUBDIR += pchar
