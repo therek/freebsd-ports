@@ -3,7 +3,7 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/wmanager/Makefile,v 1.1.1.1 1999/12/06 00:50:05 cpiazza Exp $
 #
 
 DISTNAME=	wmanager-0.2
@@ -19,6 +19,7 @@ USE_QT=		yes
 USE_BZIP2=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_NEWGCC=	yes
 MAKE_ENV=	prefix=${PREFIX}
 
 WRKSRC=		${WRKDIR}/wmanager
@@ -37,7 +38,7 @@ do-install:
 	@${ECHO}
 	@${ECHO} "Docs have been installed in ${PREFIX}/share/wmanager/."
 	@${ECHO} "You are advised to have a look at the sample .wmanagerrc"
-	@${ECHO} "and .xinitrc's available there.
+	@${ECHO} "and .xinitrc's available there."
 	@${ECHO}
 
 .endif
