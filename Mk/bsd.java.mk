@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.57 2004/11/07 00:51:53 hq Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.58 2004/11/09 02:11:42 hq Exp $
 #
 
 .if !defined(Java_Include)
@@ -330,6 +330,16 @@ check-makevars::
 	@${FALSE}
 .		endif
 
+# Set default values for JAVA_BUILD and JAVA_RUN
+# When nothing is set, assume JAVA_BUILD=jdk and JAVA_RUN=jre
+# (unless NO_BUILD is set)
+.		if !defined(JAVA_EXTRACT) && !defined(JAVA_BUILD) && !defined(JAVA_RUN)
+.			if !defined(NO_BUILD)
+JAVA_BUILD=	jdk
+.			endif
+JAVA_RUN=	jre
+.		endif
+
 # JDK dependency setting
 .		undef _JAVA_PORTS_INSTALLED
 .		undef _JAVA_PORTS_POSSIBLE
@@ -444,14 +454,6 @@ JAVA_BUILD=		jdk
 
 # Add the JDK port to the dependencies
 DEPEND_JAVA=	${JAVA}:${PORTSDIR}/${JAVA_PORT}
-# When nothing is set, assume JAVA_BUILD=jdk and JAVA_RUN=jre
-# (unless NO_BUILD is set)
-.		if !defined(JAVA_EXTRACT) && !defined(JAVA_BUILD) && !defined(JAVA_RUN)
-.			if !defined(NO_BUILD)
-JAVA_BUILD=	jdk
-.			endif
-JAVA_RUN=	jre
-.		endif
 .		if defined(JAVA_EXTRACT)
 EXTRACT_DEPENDS+=	${DEPEND_JAVA}
 .		endif
