@@ -2,7 +2,7 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.129 2001/02/25 21:22:03 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.130 2001/03/04 18:44:38 dirk Exp $
 #
 
 PORTNAME?=	mod_php4
@@ -61,6 +61,8 @@ PLIST_SUB=	PHPDOCDIR=${PHPDOCDIR:S/^${PREFIX}\///} \
 
 pre-fetch:
 	@${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure.php
+
+post-extract: post-extract-jstring post-extract-ming
 
 post-install:
 .if !defined(STANDALONE)
