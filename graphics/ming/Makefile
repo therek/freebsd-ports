@@ -2,11 +2,12 @@
 # Date created:		14 October 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ming/Makefile,v 1.5 2001/01/22 09:24:05 knu Exp $
+# $FreeBSD: ports/graphics/ming/Makefile,v 1.6 2001/03/20 09:32:54 knu Exp $
 #
 
 PORTNAME=	ming
 PORTVERSION=	0.1.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.opaque.net/ming/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${PORTNAME}-examples${EXTRACT_SUFX}

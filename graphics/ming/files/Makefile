@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/ming/files/Makefile,v 1.3 2001/01/21 05:57:47 knu Exp $
+# $FreeBSD: ports/graphics/ming/files/Makefile,v 1.4 2001/03/20 09:32:54 knu Exp $
 
 LIB=		ming
 SHLIB_MAJOR?=	2
@@ -84,6 +84,12 @@ pre-_includeinstall:
 
 beforeinstall:
 	${INSTALL} -C -o ${INCOWN} -g ${INCGRP} -m ${INCMODE} \
-		${.CURDIR}/blocks/swf.h ${INCDIR}/blocks/
+		${.CURDIR}/blocks/block.h ${.CURDIR}/blocks/cxform.h \
+		${.CURDIR}/blocks/matrix.h ${.CURDIR}/blocks/outputblock.h \
+		${.CURDIR}/blocks/sound.h ${.CURDIR}/blocks/sprite.h \
+		${.CURDIR}/blocks/swf.h ${.CURDIR}/blocks/blocktypes.h \
+		${.CURDIR}/blocks/character.h ${.CURDIR}/blocks/libswf.h \
+		${.CURDIR}/blocks/method.h ${.CURDIR}/blocks/output.h \
+		${.CURDIR}/blocks/rect.h  ${INCDIR}/blocks/
 	${INSTALL} -C -o ${INCOWN} -g ${INCGRP} -m ${INCMODE} \
 		${.CURDIR}/c++/ming.h ${INCDIR}/c++/
