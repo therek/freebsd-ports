@@ -3,7 +3,7 @@
 # Date created:				November 5th 1999
 # Whom:	      				Sheldon Hearn <sheldonh@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_perl/Makefile,v 1.4 2000/01/18 14:27:11 sheldonh Exp $
+# $FreeBSD: ports/www/mod_perl/Makefile,v 1.5 2000/03/10 10:41:13 sheldonh Exp $
 #
 
 DISTNAME=	mod_perl-1.21_02
