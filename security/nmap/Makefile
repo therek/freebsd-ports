@@ -3,10 +3,10 @@
 # Date created:			  Tue Aug 04, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nmap/Makefile,v 1.39 2000/06/02 03:18:40 will Exp $
+# $FreeBSD: ports/security/nmap/Makefile,v 1.40 2001/03/20 16:39:14 obrien Exp $
 #
 
-PORTNAME=	nmap
+PORTNAME?=	nmap
 PORTVERSION=	2.54.b22
 CATEGORIES=	security
 MASTER_SITES=	http://www.insecure.org/nmap/dist/  \
@@ -27,10 +27,9 @@ CFLAGS+=	-DDLT_RAW=12 # for obsoleted <net/bpf.h>
 .endif
 MAN1=		nmap.1
 
-post-extract:
-	@${RM} -rf ${WRKSRC}/libpcap*
-
+.if !target(post-install)
 post-install:
 	@strip ${PREFIX}/bin/nmap
+.endif
 
 .include <bsd.port.post.mk>
