@@ -2,11 +2,12 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.44 2000/06/16 08:48:19 sobomax Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.45 2000/07/16 09:18:40 dirk Exp $
 #
 
 PORTNAME=	openssl
 PORTVERSION=	0.9.5a
+PORTREVISION=	1
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.openssl.org/source/ \
 		ftp://ftp.openssl.org/source/ \
@@ -23,7 +24,6 @@ FORBIDDEN=	"OpenSSL is already in the base system"
 NOSHARED=	yes
 .endif
 
-RESTRICTED=	"Cryptography"
 USE_PERL5=	yes
 .if defined(NOSHARED)
 PLIST=		${PKGDIR}/PLIST.noshared
@@ -69,25 +69,11 @@ MAN3=		BN_CTX_new.3 BN_CTX_start.3 BN_add.3 BN_add_word.3 \
 MAN5=		config.5
 MAN7=		des_modes.7
 
-.if !defined(USA_RESIDENT) || ${USA_RESIDENT} != YES && ${USA_RESIDENT} != NO
-pre-fetch:
-	@${ECHO} ""
-	@${ECHO} "You must set variable USA_RESIDENT to YES, if you are USA resident"
-	@${ECHO} "or to NO, if you aren't USA resident to build this package."
-	@${ECHO} "You must also have installed rsaref port if you are USA resident."
-	@${FALSE}
-.elif defined(USA_RESIDENT)
-.if ${USA_RESIDENT} == YES && !defined(I_HAVE_AN_RSA_LICENSE)
-LIB_DEPENDS=	rsaref.2:${PORTSDIR}/security/rsaref
-RSAREF=		rsaref
-.endif
-.endif
-
 do-configure:
 	@cd ${WRKSRC} \
 	&& ${SETENV} CC="${CC}" CFLAGS="${CFLAGS}" PERL="${PERL}" \
 	   ./config --prefix=${PREFIX} --openssldir=${PREFIX}/openssl \
-	   ${RSAREF} -L${PREFIX}/lib
+	   -L${PREFIX}/lib
 
 post-install:
 .if !defined(NOSHARED)
