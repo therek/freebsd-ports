@@ -2,13 +2,14 @@
 # Date created:		04 March 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/net/nsping/Makefile,v 1.3 2000/09/25 12:21:31 asami Exp $
+# $FreeBSD: ports/net/nsping/Makefile,v 1.4 2000/11/25 08:13:43 roam Exp $
 #
 
 PORTNAME=	nsping
 PORTVERSION=	0.8
 CATEGORIES=	net
-MASTER_SITES=	http://www.enteract.com/~tqbf/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	roam
 DISTFILES=	nsping.tar.gz
 
 MAINTAINER=	roam@FreeBSD.org
