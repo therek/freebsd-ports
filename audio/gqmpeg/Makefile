@@ -2,12 +2,12 @@
 # Date Created:		28 Oct 1998
 # Whom:			Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.29 2001/01/28 18:52:17 sf Exp $
+# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.30 2001/01/28 22:13:23 sf Exp $
 #
 
 PORTNAME=	gqmpeg
-PORTVERSION=	0.8.1
-PORTREVISION=	1
+PORTVERSION=	0.8.3
+#PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
