@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.71 2003/02/24 02:56:31 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.72 2003/02/24 04:39:53 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -176,3 +176,4 @@ net/amcl|net/gnome-mud|2003-02-23|project renamed
 net/openldap|net/openldap12|2003-02-23|port renamed
 net/openldap2|net/openldap20|2003-02-23|port renamed
 www/caudium|www/caudium10|2003-02-23|port renamed
+mail/imp||2003-02-24|security vulnerability
