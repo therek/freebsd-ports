@@ -3,7 +3,7 @@
 # Date created:		11 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/Wnn6-lib/Makefile,v 1.23 1999/08/25 05:23:26 obrien Exp $
 #
 
 DISTNAME=	Wnn6-SDK-sources
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.omronsoft.co.jp/pub/Wnn6/sdk_source/
 
 MAINTAINER=	taoka@FreeBSD.org
 
-BUILD_DEPENDS=	imake:${PORTSDIR}/x11/XFree86
+BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
 
 WRKSRC=		${WRKDIR}/src/contrib/im/Xsi
 DOCDIR=		${PREFIX}/share/doc/ja-Wnn6-lib

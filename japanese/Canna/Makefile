@@ -4,7 +4,7 @@
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #			NIIMI Satoshi <sa2c@and.or.jp>
 #
-# $FreeBSD: ports/japanese/Canna/Makefile,v 1.27 1999/08/25 05:23:22 obrien Exp $
+# $FreeBSD: ports/japanese/Canna/Makefile,v 1.28 1999/08/31 06:45:25 mharo Exp $
 #
 
 DISTNAME=	Canna32p2
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.nec.co.jp/pub/Canna/Canna32/
 
 MAINTAINER=	max@FreeBSD.org
 
-BUILD_DEPENDS=	imake:${PORTSDIR}/x11/XFree86
+BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
 
 ALL_TARGET=	canna
 INSTALL_TARGET=	install install.man

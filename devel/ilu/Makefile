@@ -3,7 +3,7 @@
 # Date created:         29.9.1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/devel/ilu/Makefile,v 1.21 1999/08/28 01:57:03 mharo Exp $
+# $FreeBSD: ports/devel/ilu/Makefile,v 1.22 2000/02/08 09:26:03 peter Exp $
 #
 
 DISTNAME=	ilu-2.0alpha13
@@ -19,7 +19,7 @@ PATCHFILES=	${DISTNAME}-patches.html.gz
 
 MAINTAINER=	cracauer@cons.org
 
-BUILD_DEPENDS=	imake:${PORTSDIR}/x11/XFree86
+BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
 
 # The FreeBSD port uses its own shared library patches. The native
 # ILU support is incomplete and disabled here.
