@@ -4,11 +4,11 @@
 #
 # based on the OpenBSD port by Kevin Lo <kevlo@openbsd.org>
 # $OpenBSD: Makefile,v 1.6 2000/12/10 15:00:14 kevlo Exp $
-# $FreeBSD: ports/www/august/Makefile,v 1.1 2000/12/31 08:43:51 trevor Exp $
+# $FreeBSD: ports/www/august/Makefile,v 1.2 2001/01/09 16:43:01 trevor Exp $
 #
 
 PORTNAME=	august
-PORTVERSION=	0.62b
+PORTVERSION=	0.63b
 CATEGORIES=	www editors
 MASTER_SITES=	http://www.lls.se/~johanb/august/
 DISTNAME=	${PORTNAME}${PORTVERSION}.src
