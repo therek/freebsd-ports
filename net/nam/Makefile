@@ -2,14 +2,14 @@
 # Date created:		26 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/net/nam/Makefile,v 1.5 2000/04/09 18:12:25 cpiazza Exp $
+# $FreeBSD: ports/net/nam/Makefile,v 1.6 2000/04/16 10:44:48 asami Exp $
 #
 
 PORTNAME=	nam
-PORTVERSION=	1.0.a7
+PORTVERSION=	1.0a8
 CATEGORIES=	net
 MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/vint/
-DISTNAME=	nam-src-1.0a7
+DISTNAME=	nam-src-${PORTVERSION}
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
 
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libtclcl.a:${PORTSDIR}/devel/tclcl
 MAN1=		nam.1
 MANCOMPRESSED=	no
 
-WRKSRC=		${WRKDIR}/nam-1.0a7
+WRKSRC=		${WRKDIR}/${PKGNAME}
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-tcl-ver=8.2 --with-tk-ver=8.2
