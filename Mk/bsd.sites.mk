@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.191 2003/10/28 08:14:06 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.192 2003/10/28 09:32:01 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -787,11 +787,13 @@ MASTER_SITE_VIM+= \
 
 MASTER_SITE_WINDOWMAKER+= \
 	ftp://ftp.windowmaker.org/pub/%SUBDIR%/ \
-	ftp://ftp.goldweb.com.au/pub/WindowMaker/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/X11/window_managers/windowmaker/%SUBDIR%/ \
-	ftp://ftp.ameth.org/pub/mirrors/ftp.windowmaker.org/%SUBDIR%/ \
 	ftp://ftp.minet.net/pub/windowmaker/%SUBDIR%/ \
 	ftp://gd.tuwien.ac.at/hci/windowmaker/%SUBDIR%/ \
+	ftp://ftp.zcu.cz/pub/X11/windowmaker/%SUBDIR%/ \
+	ftp://ftp.informatik.uni-hamburg.de/pub/soft/X/contrib/window_managers/windowmaker/%SUBDIR%/ \
+	ftp://ftp.uvsq.fr/pub8/X11/window-managers/windowmaker/%SUBDIR%/ \
+	ftp://ftp.maisel.int-evry.fr/pub/windowmaker/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/X/WindowMaker/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/X11/windowmanagers/windowmaker/%SUBDIR%/
 
