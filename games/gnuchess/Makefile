@@ -3,11 +3,11 @@
 # Date created:		04 July 1996
 # Whom:			markm
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gnuchess/Makefile,v 1.7 1999/08/25 06:03:35 obrien Exp $
 #
 
-DISTNAME=	gnuchess-4.0.pl79
-PKGNAME=	gnuchess-4.0.79
+DISTNAME=	gnuchess-4.0.pl80
+PKGNAME=	gnuchess-4.0.80
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gnuchess
