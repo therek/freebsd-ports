@@ -2,7 +2,7 @@
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.18 2000/09/23 10:11:05 jedgar Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.19 2001/01/16 17:31:39 sobomax Exp $
 #
 
 PORTNAME=	dnetc
@@ -30,6 +30,7 @@ BROKEN=		"rc5des/dnetc conflict: Please deinstall all rc5des ports/packages firs
 .endif
 
 MAINTAINER=	dbaker@distributed.net
+FORBIDDEN=	"Local buffer overflows yielding user nobody"
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
