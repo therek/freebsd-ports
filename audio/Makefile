@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.122 2000/01/08 17:25:59 ade Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.123 2000/01/29 04:36:50 steve Exp $
 #
 
     SUBDIR += amp
@@ -32,6 +32,7 @@
     SUBDIR += kmp3
     SUBDIR += kmpg
     SUBDIR += knapster
+    SUBDIR += krio
     SUBDIR += lame
     SUBDIR += libaudiofile
     SUBDIR += libcdaudio
