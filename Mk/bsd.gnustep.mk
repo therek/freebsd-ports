@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.15 2004/11/07 21:43:20 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.16 2004/11/14 08:06:15 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -35,7 +35,7 @@
 #
 # USE_GNUSTEP_INSTALL=yes
 #	call install target with GNUstep.sh sourced in the current shell
-# 
+#
 
 # ---------------------------------------------------------------------------
 .if !defined(_POSTMKINCLUDED)

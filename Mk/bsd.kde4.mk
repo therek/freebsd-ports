@@ -1,11 +1,11 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.46 2004/12/13 20:11:44 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.47 2004/12/29 21:51:42 lofi Exp $
 #
 # Please view me with 4 column tabs!
 
-# Please make sure all changes to this file are past through the maintainer. 
+# Please make sure all changes to this file are past through the maintainer.
 # Do not commit them yourself (unless of course you're the Port's Wraith ;).
 KDE_MAINTAINER=		will@FreeBSD.org
 

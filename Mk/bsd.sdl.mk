@@ -29,7 +29,7 @@
 #
 
 #
-# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.6 2004/11/08 12:07:24 arved Exp $
+# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.7 2004/12/23 10:10:15 krion Exp $
 #
 
 SDL_Include_MAINTAINER=		edwin@FreeBSD.org
@@ -46,7 +46,7 @@ _USE_SDL_ALL=	gfx gui image mixer mm net sdl sound ttf
 # _PORTDIR_xxx	subdirectory below ${PORTSDIR}/${_SUBDIR_xxx}, default sdl_xxx
 # _LIB_xxx		name of the shared lib, default SDL_xxx
 # _REQUIRES_xxx	also needs these SDL libraries
-# 
+#
 
 _VERSION_gfx=	13
 _SUBDIR_gfx=	graphics

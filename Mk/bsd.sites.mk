@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.273 2004/12/23 20:57:21 netchild Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.274 2005/01/09 10:02:12 leeym Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1294,5 +1294,5 @@ MASTER_SITE_XORG+= \
 MASTER_SITE_GNUSTEP+= \
 	http://python.planetmirror.com/pub/gnustep/gnustep/%SUBDIR%/ \
 	ftp://ftp.gnustep.org/pub/gnustep/%SUBDIR%/ \
-	ftp://ftp.easynet.nl/mirror/GNUstep/pub/gnustep/%SUBDIR%/ 
+	ftp://ftp.easynet.nl/mirror/GNUstep/pub/gnustep/%SUBDIR%/
 
