@@ -2,7 +2,7 @@
 # Date created:		27 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/xgalaga/Makefile,v 1.15 2000/04/14 12:27:23 asami Exp $
+# $FreeBSD: ports/games/xgalaga/Makefile,v 1.16 2000/08/03 09:24:08 asami Exp $
 #
 
 PORTNAME=	xgalaga
@@ -22,7 +22,7 @@ CONFIGURE_ARGS=	--prefix=${X11BASE}/lib/X11/xgalaga \
 
 .if defined(NOSOUND)
 CONFIGURE_ARGS+=	--without-sound
-PLIST=			${PKGDIR}/PLIST.nosound
+PLIST=			${PKGDIR}/pkg-plist.nosound
 .else
 pre-configure:
 	@${ECHO} "*****************************************************"
