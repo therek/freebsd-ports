@@ -2,11 +2,11 @@
 # Date created:				2000-12-29
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/opmixer/Makefile,v 1.7 2001/03/13 15:18:04 sobomax Exp $
 #
 
 PORTNAME=	opmixer
-PORTVERSION=	0.60
+PORTVERSION=	0.65
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	optronic
@@ -25,6 +25,7 @@ WRKSRC=		${WRKDIR}/opmixer
 pre-install:
 	${ECHO} "bin/opmixer" > ${PLIST}
 	${ECHO} "bin/opmixer-load" >> ${PLIST}
+	${ECHO} "bin/volset" >> ${PLIST}
 .if !defined(NOPORTDOCS)
 	${ECHO} ${DOCDIR}/README >> ${PLIST}
 	${ECHO} @dirrm ${DOCDIR} >> ${PLIST}
@@ -37,7 +38,7 @@ do-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/opmixer ${WRKSRC}/opmixer-load \
-		${PREFIX}/bin
+		${WRKSRC}/volset ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/${DOCDIR}
