@@ -2,7 +2,7 @@
 # Date created:         16 November 1996
 # Whom:                 proff
 #
-# $FreeBSD: ports/graphics/xmountains/Makefile,v 1.5 2000/04/14 10:47:55 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmountains
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.epcc.ed.ac.uk/~spb/xmountains/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	proff@iq.org
+MAINTAINER=	ports@FreeBSD.Org
 
 NO_WRKSUBDIR=	yes
 
