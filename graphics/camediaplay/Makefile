@@ -2,7 +2,7 @@
 # Date created:		2 May 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/camediaplay/Makefile,v 1.17 2001/02/11 04:33:02 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	camediaplay
@@ -16,12 +16,13 @@ MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/build
 
+USE_REINPLACE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	OPTFLAG=""
 MAN1=		camediaplay.1
 
 post-patch:
-	@${PERL} -pi -e "s|<sys/dir.h>|<dirent.h>|g" ${WRKSRC}/../src/*.c
+	@${REINPLACE_CMD} -e "s|<sys/dir.h>|<dirent.h>|g" ${WRKSRC}/../src/*.c
 
 post-install:
 .if !defined(NOPORTDOCS)

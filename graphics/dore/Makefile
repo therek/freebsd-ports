@@ -2,7 +2,7 @@
 # Date created:		10 February 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/graphics/dore/Makefile,v 1.12 2000/04/13 06:28:15 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pdore
@@ -14,6 +14,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
+USE_REINPLACE=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/dore
@@ -25,7 +26,7 @@ post-extract:
 	@${MKDIR} ${WRKSRC}/lib
 
 post-patch:
-	@${PERL} -pi -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/src/subsys/*.c
+	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/src/subsys/*.c
 
 pre-install:
 	@${MKDIR} ${PREFIX}/share/dore
