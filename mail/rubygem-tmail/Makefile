@@ -2,7 +2,7 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/mail/ruby-tmail/Makefile,v 1.12 2001/03/14 19:28:45 knu Exp $
+# $FreeBSD: ports/mail/ruby-tmail/Makefile,v 1.13 2001/03/20 08:51:04 knu Exp $
 #
 
 PORTNAME=	tmail
@@ -23,11 +23,7 @@ USE_RUBY=	yes
 USE_RUBY_AMSTD=	yes
 USE_RUBY_SETUP=	yes
 
-post-patch:
-	${RUBY} -i -ne '/\btmail\b/ and print' \
-		${WRKSRC}/ext/PATHCONV ${WRKSRC}/lib/PATHCONV
-	for d in cparse cscan; do ${RM} -rf ${WRKSRC}/ext/$$d; done
-	for d in amstd raccrt strscan; do ${RM} -rf ${WRKSRC}/lib/$$d; done
+CONFIGURE_ARGS=	--with=ext/mails,lib/tmail
 
 do-install:
 .if !defined(NOPORTDOCS)
