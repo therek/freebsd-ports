@@ -2,12 +2,12 @@
 # Date created:				Mar 18, 1999
 # Whom:					mi
 #
-# $FreeBSD: ports/devel/tclgetopts/Makefile,v 1.6 2000/03/31 23:33:23 jedgar Exp $
+# $FreeBSD: ports/devel/tclgetopts/Makefile,v 1.7 2000/04/14 05:44:32 asami Exp $
 #
 
 PORTNAME=	tclGetOpts
 PORTVERSION=	1.0
-CATEGORIES=	devel tcl76 tcl80 tcl82
+CATEGORIES=	devel tcl80 tcl82
 MASTER_SITES=	ftp://ftp.neosoft.com/languages/tcl/alcatel/code/ \
 		http://www.neosoft.com/tcl/ftparchive/alcatel/code/
 DISTNAME=	${PORTNAME}
