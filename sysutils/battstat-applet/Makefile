@@ -2,7 +2,7 @@
 # Date created:			17 July 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/battstat-applet/Makefile,v 1.4 2001/01/16 17:32:26 sobomax Exp $
+# $FreeBSD: ports/sysutils/battstat-applet/Makefile,v 1.5 2001/03/29 16:34:42 sobomax Exp $
 #
 
 PORTNAME=	battstat-applet
@@ -11,7 +11,7 @@ CATEGORIES=	sysutils gnome
 MASTER_SITES=	http://spektr.eu.org/~jp/battstat/
 DISTNAME=	battstat_applet-${PORTVERSION}
 
-MAINTAINER=	jim@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 
