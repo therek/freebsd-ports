@@ -2,7 +2,7 @@
 # Date created:		26 June 1999
 # Whom:			Brian Buchanan <brian@CSUA.Berkeley.EDU>
 #
-# $FreeBSD: ports/games/flightgear/Makefile,v 1.8 2000/10/08 01:10:50 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		FlightGear
@@ -39,11 +39,13 @@ pre-configure:
 .else
 PLIST=		${MASTERDIR}/pkg-plist.notools
 ADDPATCHES=	${MASTERDIR}/patches.tools/disable-tools
-USE_AUTOCONF=	yes
+USE_AUTOCONF_VER=213
 .endif
 
 USE_NEWGCC=	yes
 GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	\
+	LDFLAGS="${LDFLAGS} -L${X11BASE}/lib -lGLU -lGL -lglut ${PTHREAD_LIBS}"
 CONFIGURE_ARGS+=--bindir=${PREFIX}/FlightGear/bin
 USE_GMAKE=	yes
 
@@ -54,6 +56,8 @@ pre-patch:
 	   done )
 
 post-configure:
+	@find ${WRKSRC} -type f | xargs ${PERL} -pi -e \
+		"s@#include.*<malloc.h>@#include <stdlib.h>@g"
 	@(cd ${WRKSRC};touch Makefile.in */Makefile.in */*/Makefile.in \
 	                     */*/*/Makefile.in; \
 	  ./config.status)

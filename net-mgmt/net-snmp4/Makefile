@@ -2,7 +2,7 @@
 # Date created:				26 June 1996
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/net-snmp/Makefile,v 1.56 2001/02/08 02:39:57 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ucd-snmp
@@ -16,7 +16,7 @@ MASTER_SITE_SUBDIR= net-snmp
 
 MAINTAINER=	billf@FreeBSD.org
 
-USE_AUTOCONF=	yes
+USE_AUTOCONF_VER=213
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 LIBTOOLFLAGS=	--disable-ltlibs --release-ignore

@@ -2,7 +2,7 @@
 # Date created:		23 Jan 1998
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tcl80/Makefile,v 1.16 2000/10/08 09:59:34 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcl
@@ -25,8 +25,7 @@ PATCH_DIST_ARGS=-d ${TOPDIR} -E ${PATCH_DIST_STRIP}
 .else
 PATCH_DIST_ARGS=-d ${TOPDIR} --forward --quiet -E ${PATCH_DIST_STRIP}
 .endif
-GNU_CONFIGURE=	yes
-USE_AUTOCONF=	yes
+USE_AUTOCONF_VER=213
 CONFIGURE_ARGS=	--enable-shared
 RANLIB=		ranlib
 PKGINSTALL=	${PORTSDIR}/lang/tcl82/pkg-install.tclsh

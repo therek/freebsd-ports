@@ -2,7 +2,7 @@
 # Date created:		3 Jun 1999
 # Whom:			JunSeon Oh <hollywar@mail.holywar.net>
 #
-# $FreeBSD: ports/korean/bitchx/Makefile,v 1.11 2000/12/24 14:29:40 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	BitchX
@@ -21,7 +21,7 @@ MAINTAINER=	hollywar@mail.holywar.net
 
 WRKSRC=		${WRKDIR}/BitchX
 
-USE_AUTOCONF=	yes
+USE_AUTOCONF_VER=213
 USE_GMAKE=	yes
 CONFIGURE_ARGS=	--with-plugins \
 		--exec-prefix="${PREFIX}/share"	\

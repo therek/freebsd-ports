@@ -2,7 +2,7 @@
 # Date created:        Fri Jul 30 20:50:16 MET DST 1999
 # Whom:                nox@jelal.kn-bremen.de
 #
-# $FreeBSD: ports/games/gracer/Makefile,v 1.14 2001/06/10 15:28:40 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gracer
@@ -20,7 +20,7 @@ LIB_DEPENDS=	ungif.5:${PORTSDIR}/graphics/libungif \
 		tcl82.1:${PORTSDIR}/lang/tcl82
 
 USE_MESA=	YES
-USE_AUTOCONF=	YES
+USE_AUTOCONF_VER=213
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include \
 			  -I${LOCALBASE}/include/tcl8.2 \
 			  -I${X11BASE}/include" \

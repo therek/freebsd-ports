@@ -2,7 +2,7 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/flux/Makefile,v 1.8 2000/11/01 11:28:47 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flux
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.copyleft.no/projects/fluxlib/ \
 MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
-USE_AUTOMAKE=	yes
+USE_AUOTMAKE_VER=14
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 

@@ -2,7 +2,7 @@
 # Date created: 10th February, 2001
 # Whom:		Thierry Thomas <tthomas@mail.dotcom.fr>
 #
-# $FreeBSD: ports/news/newsx/Makefile,v 1.3 2001/08/07 16:25:27 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	newsx
@@ -55,7 +55,7 @@ post-install:
 .endif
 
 #GNU_CONFIGURE=	yes
-USE_AUTOCONF= yes
+USE_AUTOMAKE_VER=14
 
 MAN1=	newsq.1
 MAN5=	newsx.conf.5 in.hosts.5

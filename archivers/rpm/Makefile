@@ -2,7 +2,7 @@
 # Date created:		30 April 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/rpm/Makefile,v 1.35 2001/03/20 21:29:25 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rpm
@@ -21,7 +21,7 @@ LIB_DEPENDS+=	bz2.1:${PORTSDIR}/archivers/bzip2
 .endif
 
 USE_GMAKE=	yes
-USE_AUTOMAKE=	yes
+USE_AUTOMAKE_VER=14
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--with-glob
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

@@ -2,7 +2,7 @@
 # Date created:		11 November 2000
 # Whom:			Stephen Kiernan <sk-ports@vegamuse.org>
 #
-# $FreeBSD: ports/mail/mahogany/Makefile,v 1.2 2001/02/05 15:10:43 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		mahogany
@@ -21,7 +21,7 @@ BUILD_DEPENDS+=		latex2html:${PORTSDIR}/textproc/latex2html
 .endif
 
 PYTHON_VERSION=		python1.5
-USE_AUTOCONF=		yes
+USE_AUTOCONF_VER=	213
 USE_GMAKE=		yes
 CONFIGURE_ENV+=		OSTYPE=${OPSYS}
 

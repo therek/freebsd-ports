@@ -2,7 +2,7 @@
 # Date created:		10 August 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.62 2001/04/16 07:06:29 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	icewm
@@ -22,7 +22,7 @@ WANT_ESOUND=	yes
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_AUTOCONF=	yes
+USE_AUTOCONF_VER=213
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--enable-i18n --enable-nls \
