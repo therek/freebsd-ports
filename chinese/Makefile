@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.54 2000/09/26 11:08:46 foxfair Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.55 2000/10/03 15:43:01 kevlo Exp $
 #
     SUBDIR += xmms
 
@@ -34,6 +34,7 @@
     SUBDIR += nvi-euc-tw
     SUBDIR += pine3
     SUBDIR += pine4
+    SUBDIR += pyDict
     SUBDIR += rxvt
     SUBDIR += stardict
     SUBDIR += ted
