@@ -2,7 +2,7 @@
 # Date Created:				10 May 2001
 # Whom:					Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/gemcal/Makefile,v 1.1 2001/05/20 03:20:21 will Exp $
 #
 
 PORTNAME=	gemcal
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.quickhack.net/mhc/arc/
 DISTNAME=	mhc-current-snap${PORTVERSION}
 
 MAINTAINER?=	yoichi@eken.phys.nagoya-u.ac.jp
+
+RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/gtk.so:${PORTSDIR}/x11-toolkits/ruby-gtk
 
 USE_RUBY=	yes
 
