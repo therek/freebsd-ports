@@ -3,7 +3,7 @@
 # Date created:         23 November 1994
 # Whom:                 mr
 #
-# $FreeBSD: ports/lang/forth/Makefile,v 1.12 1999/08/25 06:34:33 obrien Exp $
+# $FreeBSD: ports/lang/forth/Makefile,v 1.13 1999/10/10 23:51:41 steve Exp $
 #
 
 DISTNAME=	pfe-0.9.14
@@ -13,10 +13,10 @@ MASTER_SITES=	ftp://ftp.taygeta.com/pub/Forth/Compilers/native/unix/
 MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
+HAS_CONFIGURE=	yes
+CONFIGURE_SCRIPT=	config.sh
+CONFIGURE_ARGS=	${OPSYS}
 MAN1=		pfe.1
-
-do-configure:
-	(cd ${WRKSRC}; ${SH} ./config.sh FreeBSD)
 
 post-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pfe ${PREFIX}/bin
