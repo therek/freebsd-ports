@@ -2,7 +2,7 @@
 # Date created:				June 15, 2000
 # Whom:					Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/games/nethack-gtk/Makefile,v 1.4 2001/01/02 22:52:25 sf Exp $
+# $FreeBSD: ports/games/nethack-gtk/Makefile,v 1.5 2001/01/03 16:39:51 sf Exp $
 #
 
 PORTNAME=	nethack
@@ -21,6 +21,13 @@ PATCHFILES=	nh-3.2.2-3.2.3.diff \
 		nethack-gtk-1.1.5-nethack-3.2.3.patch.gz
 
 MAINTAINER=	sf@FreeBSD.org
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
 
 USE_XPM=	yes
 USE_GTK=	yes
@@ -47,4 +54,4 @@ post-install:
 	${CP} ${WRKSRC}/doc/Guidebook.txt ${PREFIX}/share/doc/nethack
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
