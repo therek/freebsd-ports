@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.382 2001/10/02 16:24:47 tobez Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.383 2001/10/02 16:29:17 tobez Exp $
 #
 
     SUBDIR += 40upgrade
@@ -11,6 +11,7 @@
     SUBDIR += acron
     SUBDIR += afbackup
     SUBDIR += afbackup-client
+    SUBDIR += afbackup-server
     SUBDIR += alevt
     SUBDIR += amanda
     SUBDIR += amanda24-client
