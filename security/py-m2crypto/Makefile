@@ -2,7 +2,7 @@
 # Date created:				27 March 2001
 # Whom:					Peter Haight <peterh@sapros.com>
 #
-# $FreeBSD: ports/security/py-m2crypto/Makefile,v 1.1 2001/03/31 01:51:59 will Exp $
+# $FreeBSD: ports/security/py-m2crypto/Makefile,v 1.2 2001/04/15 15:22:19 kevlo Exp $
 #
 
 PORTNAME=	m2crypto
@@ -10,7 +10,7 @@ PORTVERSION=	0.06
 CATEGORIES=	security python
 MASTER_SITES=	http://www.post1.com/home/ngps/m2/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	${PORTNAME}-${PORTVERSION}-snap4
+DISTNAME=	${PORTNAME}-${PORTVERSION}-snap6
 
 MAINTAINER=	peterh@sapros.com
 
