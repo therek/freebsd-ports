@@ -2,7 +2,7 @@
 # Date created:				Sun 25 Feb 2001
 # Whom:					will
 #
-# $FreeBSD: ports/games/xjump/Makefile,v 1.1 2001/02/26 03:06:56 will Exp $
+# $FreeBSD: ports/games/xjump/Makefile,v 1.2 2001/03/06 17:19:18 sf Exp $
 #
 
 PORTNAME=	xjump
@@ -27,7 +27,7 @@ MAKE_ARGS=	CC="${CC} ${CFLAGS}" RECORD_FILE="/var/games/xjump.record" \
 ALL_TARGET=	xjump
 
 do-install:
-	${INSTALL_PROGRAM} -m 2775 -g games ${WRKSRC}/xjump ${PREFIX}/bin
+	${INSTALL_PROGRAM} -m 2755 -g games ${WRKSRC}/xjump ${PREFIX}/bin
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
