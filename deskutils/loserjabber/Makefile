@@ -2,11 +2,11 @@
 # Date created:				21 October 2000
 # Whom:					ryan
 #
-# $FreeBSD: ports/deskutils/loserjabber/Makefile,v 1.3 2001/01/05 12:56:46 kevlo Exp $
+# $FreeBSD: ports/deskutils/loserjabber/Makefile,v 1.4 2001/02/17 18:58:14 dannyboy Exp $
 #
 
 PORTNAME=	loserjabber
-PORTVERSION=	2.1.4
+PORTVERSION=	2.1.5
 CATEGORIES=	deskutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	loserjabber
