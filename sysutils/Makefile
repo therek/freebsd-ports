@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.180 2001/04/19 08:40:47 sobomax Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.181 2001/04/28 14:21:38 joe Exp $
 #
     SUBDIR += yawho
 
@@ -98,6 +98,7 @@
     SUBDIR += p5-SyslogScan
     SUBDIR += p5-Unix-ConfigFile
     SUBDIR += p5-Unix-Syslog
+    SUBDIR += paicc
     SUBDIR += perf
     SUBDIR += personality
     SUBDIR += pib
