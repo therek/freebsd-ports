@@ -2,7 +2,7 @@
 # Date created:        31 January 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.11 2000/02/28 08:33:16 asami Exp $
+# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.12 2000/04/08 21:23:56 mharo Exp $
 #
 
 PORTNAME=	linux-realplayer
@@ -19,6 +19,8 @@ ONLY_FOR_ARCHS= i386
 NO_CDROM=       "Redistribution not allowed"
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/rvplayer5.0/
+
+STRIP=		# Linux binary should not be stripped by INSTALL_PROGRAM as it uses /usr/bin/strip which then brands the binary as a FreeBSD ELF one.
 
 LIBFILES=	libdecdnet.so libra14_4.so libra28_8.so libradnet.so \
 		librarv10.so librasipr.so librv10dec.so librvcore.so \
@@ -58,6 +60,7 @@ do-install:
 .endfor
 
 	${INSTALL_PROGRAM} ${WRKSRC}/rvplayer ${PREFIX}/bin/
+	/compat/linux/usr/bin/strip ${PREFIX}/bin/rvplayer
 	/usr/bin/brandelf -t Linux ${PREFIX}/bin/rvplayer
 
 	${INSTALL_DATA} ${WRKSRC}/welcome.rm ${PREFIX}/share/rvplayer5.0/
