@@ -2,7 +2,7 @@
 # Date created:		19 June 1998
 # Whom:			Chuck Robey (chuckr)
 #
-# $FreeBSD: ports/graphics/plotutils/Makefile,v 1.10 2000/03/01 03:57:09 chuckr Exp $
+# $FreeBSD: ports/graphics/plotutils/Makefile,v 1.11 2000/04/14 10:47:02 asami Exp $
 #
 
 PORTNAME=	plotutils
@@ -18,6 +18,7 @@ USE_LIBTOOL=	yes
 USE_NEWGCC=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-libplotter --enable-libxmi
+MAN1=		ode.1 plot.1 spline.1 tek2plot.1
 
 .ifdef HAVE_MOTIF
 CONFIGURE_ARGS+=	--with-motif
