@@ -2,11 +2,11 @@
 # Date created:		1 Oct 1999
 # Whom:			runge@rostock.zgdv.de
 #
-# $FreeBSD: ports/audio/xmradio/Makefile,v 1.8 2000/08/03 09:22:34 asami Exp $
+# $FreeBSD: ports/audio/xmradio/Makefile,v 1.9 2000/11/01 13:31:02 jeh Exp $
 #
 
 PORTNAME=	xmradio
-PORTVERSION=	0.8
+PORTVERSION=	1.0
 CATEGORIES=	audio
 MASTER_SITES=	http://www.rostock.zgdv.de/~runge/radio/
 
