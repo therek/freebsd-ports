@@ -2,13 +2,17 @@
 # Date created:         5 December 1998
 # Whom:                 Sean Kelly <kelly@ad1440.net>
 #
-# $FreeBSD: ports/print/jadetex/Makefile,v 1.13 2000/10/08 10:22:43 asami Exp $
+# $FreeBSD: ports/print/jadetex/Makefile,v 1.14 2001/01/03 17:20:20 sf Exp $
 #
 
 PORTNAME=		jadetex
 PORTVERSION=		2.20
 CATEGORIES=		print
 MASTER_SITES=		http://www.tug.org/applications/jadetex/
+
+PATCH_SITES=		http://indev.insu.com/openjade/
+PATCHFILES=		jadetex-2.20.patch
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=		kelly@ad1440.net
 
