@@ -2,18 +2,18 @@
 # Date created:				20 April 1998
 # Whom:					rkw
 #
-# $FreeBSD: ports/comms/mgetty+sendfax/Makefile,v 1.33 2000/09/10 22:44:57 jmz Exp $
+# $FreeBSD: ports/comms/mgetty+sendfax/Makefile,v 1.34 2000/10/08 10:19:22 asami Exp $
 #
 
 PORTNAME=	mgetty
-PORTVERSION=	1.1.22.8.17
+PORTVERSION=	1.1.24.01.07
 CATEGORIES=	comms
-MASTER_SITES=	ftp://ftp.leo.org/pub/comp/os/unix/networking/mgetty/
-DISTNAME=	mgetty1.1.22-Aug17
+MASTER_SITES=	ftp://alpha.greenie.net/pub/mgetty/source/1.1/
+DISTNAME=	mgetty1.1.24-Jan07
 
 MAINTAINER=	jmz@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/mgetty-1.1.22
+WRKSRC=		${WRKDIR}/mgetty-1.1.24
 MAKE_FLAGS=	prefix=${PREFIX} -f
 MAN1=		coverpg.1 \
 		fax.1 \
