@@ -2,7 +2,7 @@
 # Date created:                 21 December 2000
 # Whom:                         Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/textproc/gutenbook/Makefile,v 1.3 2000/12/31 07:31:26 will Exp $
+# $FreeBSD$
 
 PORTNAME=	gutenbook
 PORTVERSION=	0.1.10
@@ -21,7 +21,8 @@ RUN_DEPENDS=	zip:${PORTSDIR}/archivers/zip \
 
 site_perl=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 NO_BUILD=	yes
 
 MODULES=	Etext.pm File.pm Index.pm Network.pm PropList.pm
