@@ -2,11 +2,11 @@
 # Date created:				Thu Apr  6 21:30:52 EDT 2000
 # Whom:					jaharkes
 #
-# $FreeBSD: ports/devel/rvm/Makefile,v 1.7 2001/01/19 21:57:53 shafeeq Exp $
+# $FreeBSD: ports/devel/rvm/Makefile,v 1.8 2001/04/23 20:41:47 shafeeq Exp $
 #
 
 PORTNAME=	rvm
-PORTVERSION=	1.4
+PORTVERSION=	1.6
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/rvm/src/
 
@@ -15,7 +15,7 @@ MAINTAINER=	coda@cs.cmu.edu
 LIB_DEPENDS=	lwp.2:${PORTSDIR}/devel/lwp
 
 USE_GMAKE=	yes
-USE_LIBTOOL=	yes
+GNU_CONFIGURE=  yes
 INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>

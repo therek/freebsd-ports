@@ -2,11 +2,11 @@
 # Date created:				Wed Mar 22 19:06:45 EST 2000
 # Whom:					jaharkes
 #
-# $FreeBSD: ports/devel/rpc2/Makefile,v 1.6 2001/01/19 21:57:52 shafeeq Exp $
+# $FreeBSD: ports/devel/rpc2/Makefile,v 1.7 2001/04/23 20:41:46 shafeeq Exp $
 #
 
 PORTNAME=	rpc2
-PORTVERSION=	1.11
+PORTVERSION=	1.12
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/
 
@@ -15,7 +15,7 @@ MAINTAINER=	coda@cs.cmu.edu
 LIB_DEPENDS=	lwp.2:${PORTSDIR}/devel/lwp
 
 USE_GMAKE=	yes
-USE_LIBTOOL=	yes
+GNU_CONFIGURE=  yes
 INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>
