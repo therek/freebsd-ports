@@ -2,14 +2,14 @@
 # Date created:         26 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/benchmarks/iozone/Makefile,v 1.29 2000/04/08 22:04:11 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	iozone
-PORTVERSION=	3.53
+PORTVERSION=	3.67
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.iozone.org/src/current/
-DISTNAME=	iozone3_53
+DISTNAME=	${PORTNAME}${PORTVERSION:S/./_/}
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	jmz@FreeBSD.org
