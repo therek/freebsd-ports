@@ -3,7 +3,7 @@
 # Date created:				16 October 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-plugins/Makefile,v 1.1.1.1 1999/12/01 05:40:10 foxfair Exp $
+# $FreeBSD: ports/security/nessus-plugins/Makefile,v 1.2 1999/12/01 19:46:21 foxfair Exp $
 #
 
 DISTNAME=	nessus-plugins-0.99.1
@@ -29,10 +29,10 @@ WRKSRC=		${WRKDIR}/nessus-plugins
 
 GNU_CONFIGURE=	yes
 
-.include <bsd.port.pre.mk>  
-                            
-.if ${OSVERSION} >= 400001     
-BROKEN=		"Can't be built successfully in -CURRENT"       
-.endif 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400001
+BROKEN=		"Can't be built successfully in -CURRENT"
+.endif
 
 .include <bsd.port.mk>
