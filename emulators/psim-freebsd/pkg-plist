@@ -1,4 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/emulators/psim-freebsd/pkg-plist,v 1.1 2001/10/12 21:42:54 obrien Exp $
 bin/psim-freebsd
 share/examples/psim-freebsd/dot.gdbinit
 %%PORTDOCS%%share/doc/psim-freebsd/HOW-TO
+%%PORTDOCS%%@dirrm share/doc/psim-freebsd
+@dirrm share/examples/psim-freebsd
