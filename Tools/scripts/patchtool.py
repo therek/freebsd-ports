@@ -12,7 +12,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.2 2001/07/31 07:41:01 sobomax Exp $
+# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.3 2001/07/31 07:42:43 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
 #				     highly discouraged!!!
@@ -161,8 +161,6 @@ def getrelpath(path, wrksrc):
 		commonpart = commonpart[:-1]
 	path = path[len(commonpart):]
 	wrksrc = wrksrc[len(commonpart):]
-	if wrksrc == '':
-		path = path[1:]
 	adjust = ''
 	while os.path.normpath(os.path.join(wrksrc, adjust)) != '.':
 		adjust = os.path.join(adjust, '..')
