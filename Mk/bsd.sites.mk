@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.272 2004/12/22 00:06:31 edwin Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.273 2004/12/23 20:57:21 netchild Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -396,7 +396,7 @@ MASTER_SITE_FEDORA_LINUX+= \
 	ftp://mirror.pop-rs.rnp.br/pub/download.fedora.redhat.com/pub/fedora/linux/core/%SUBDIR%/ \
 	ftp://ftp.tecnoera.com/pub/fedora/linux/%SUBDIR%/ \
 	ftp://mirror.netglobalis.net/pub/fedora/%SUBDIR%/ \
-	ftp://ftp.telmexchile.cl/Unix/fedora/linux/core/ --> %SUBDIR%/ \
+	ftp://ftp.telmexchile.cl/Unix/fedora/linux/core/%SUBDIR%/ \
 	http://ftp.isu.net.sa/pub/mirrors/fedora.redhat.com/%SUBDIR%/ \
 	ftp://ftp.isu.net.sa/pub/mirrors/fedora.redhat.com/fedora/%SUBDIR%/ \
 	http://ftp.udl.es/pub/fedora/linux/core/%SUBDIR%/ \
