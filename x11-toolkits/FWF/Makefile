@@ -2,7 +2,7 @@
 # Date created:		14 July 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/FWF/Makefile,v 1.24 2000/11/07 23:28:18 asami Exp $
+# $FreeBSD: ports/x11-toolkits/FWF/Makefile,v 1.25 2001/02/05 16:48:44 olgeni Exp $
 #
 
 PORTNAME=	fwf
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=libs/X/fwf
 
 MAINTAINER=	jseger@FreeBSD.org
+
+BROKEN=		"Does not compile"
 
 .if ${MACHINE_ARCH} == "alpha"
 BROKEN=		../../lib/libfwf.a: cannot read symbols
