@@ -2,7 +2,7 @@
 # Date created:		2 September 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/hppsmtools/Makefile,v 1.6 2001/08/27 15:26:05 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hppsmtools
@@ -10,7 +10,7 @@ PORTVERSION=	1.0
 PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://unimut.fsk.uni-heidelberg.de/demi/photosmart/ \
-		http://www.freenix.no/~anders/ \
+		http://atreides.freenix.no/~anders/ \
 		ftp://totem.fix.no/pub/mirrors/misc/
 
 MAINTAINER=	ports@FreeBSD.org

@@ -2,14 +2,14 @@
 # Date created:		25 March 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/mod_proxy_add_forward/Makefile,v 1.1 2001/03/31 02:14:14 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mod_proxy_add_forward
 PORTVERSION=	20010201
 CATEGORIES=	www
 MASTER_SITES=	http://develooper.com/code/mpaf/ \
-		http://www.freenix.no/~anders/
+		http://atreides.freenix.no/~anders/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.c
 

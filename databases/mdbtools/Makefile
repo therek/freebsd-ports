@@ -2,7 +2,7 @@
 # Date created:				25 April 2001
 # Whom:	      				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/databases/mdbtools/Makefile,v 1.1 2001/04/27 07:40:58 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mdbtools
@@ -10,7 +10,7 @@ PORTVERSION=	0.3
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.nuug.no/pub/anders/distfiles/ \
-		http://www.freenix.no/~anders/
+		http://atreides.freenix.no/~anders/
 MASTER_SITE_SUBDIR=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 

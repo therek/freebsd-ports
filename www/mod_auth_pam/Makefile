@@ -2,14 +2,14 @@
 # Date created:				2 April 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/mod_auth_pam/Makefile,v 1.1 2001/04/07 04:25:18 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mod_auth_pam
 PORTVERSION=	1.0a
 CATEGORIES=	www
 MASTER_SITES=	http://pam.sourceforge.net/mod_auth_pam/dist/ \
-		http://www.freenix.no/~anders/
+		http://atreides.freenix.no/~anders/
 
 MAINTAINER=	ports@FreeBSD.org
 
