@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.375 2004/12/11 21:28:47 marius Exp $
+# $FreeBSD: ports/LEGAL,v 1.376 2004/12/15 21:02:12 thierry Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -443,6 +443,7 @@ pim6dd-*.tar.gz		net/pim6dd		Cannot be sold for profit
 platon*			ports/biology/platon	US$ 5000 for commercial users,
 						(free for academic)
 pmake-*.tar.Z		ports/devel/pmake	Non-commercial use only
+polygraph-*-src.tgz	ports/benchmarks/polygraph	Redistribution is not permitted by licence
 poseidonCE-*		ports/java/poseidon	Redistribution is not permitted
 ppsmall-*		ports/archivers/ppunpack	No commercial redistribution
 prodosemu.*		ports/emulators/prodosemu	Restrictive copyright on the ROM image
