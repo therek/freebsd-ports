@@ -2,7 +2,7 @@
 # Date created:		6 June 2000
 # Whom:			knu@FreeBSD.org
 #
-# $FreeBSD: ports/devel/cvsutils/Makefile,v 1.6 2001/02/17 21:41:47 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cvsutils
@@ -14,9 +14,12 @@ MASTER_SITE_SUBDIR=	knu
 MAINTAINER=	knu@FreeBSD.org
 
 USE_AUTOMAKE=	YES
-AUTOMAKE=	./bootstrap
+AUTOMAKE_ARGS=	--add-missing
 USE_PERL5=	YES
 WRKSRC=		${WRKDIR}/${PORTNAME}
+
+pre-configure:
+	cd ${WRKSRC} ; aclocal
 
 post-install:
 .if !defined(NOPORTDOCS)
