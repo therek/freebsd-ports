@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/Makefile,v 1.491 2001/04/05 16:17:11 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -22,6 +22,7 @@
     SUBDIR += asl
     SUBDIR += asmutils
     SUBDIR += astyle
+    SUBDIR += atlas
     SUBDIR += autoconf
     SUBDIR += autogen
     SUBDIR += automake
