@@ -2,11 +2,11 @@
 # Date created:		18 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/rbnamazu/Makefile,v 1.3 2000/09/07 07:44:34 knu Exp $
+# $FreeBSD: ports/japanese/rbnamazu/Makefile,v 1.4 2000/09/26 08:01:48 knu Exp $
 #
 
 PORTNAME=	rbnamazu
-PORTVERSION=	0.3
+PORTVERSION=	0.4
 CATEGORIES=	japanese textproc ruby
 MASTER_SITES=	ftp://ftp.namazu.org/pub/namazu/ruby/
 DIST_SUBDIR=	ruby
