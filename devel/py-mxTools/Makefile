@@ -2,13 +2,13 @@
 # Date created:		20 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-mxTools/Makefile,v 1.3 1999/08/31 06:42:39 mharo Exp $
+# $FreeBSD: ports/devel/py-mxTools/Makefile,v 1.4 2000/04/11 21:30:15 mharo Exp $
 #
 
 PORTNAME=	mxTools
 PORTVERSION=	1.0.0
 CATEGORIES=	devel python
-MASTER_SITES=	http://starship.skyport.net/~lemburg/
+MASTER_SITES=	http://starship.python.net/~lemburg/
 PKGNAMEPREFIX=	py-
 
 MAINTAINER=	tg@FreeBSD.org

@@ -2,13 +2,13 @@
 # Date created:		12 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-mxDateTime/Makefile,v 1.3 1999/08/31 06:42:38 mharo Exp $
+# $FreeBSD: ports/devel/py-mxDateTime/Makefile,v 1.4 2000/04/11 21:30:14 mharo Exp $
 #
 
 PORTNAME=	mxDateTime
 PORTVERSION=	1.3.0
 CATEGORIES=	devel python
-MASTER_SITES=	http://starship.skyport.net/~lemburg/
+MASTER_SITES=	http://starship.python.net/~lemburg/
 PKGNAMEPREFIX=	py-
 
 MAINTAINER=	tg@FreeBSD.org
