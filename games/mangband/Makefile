@@ -2,7 +2,7 @@
 # Date created:        30 Dec 1998
 # Whom: Adam Kranzel (adam@alameda.edu)
 #
-# $FreeBSD: ports/games/mangband/Makefile,v 1.11 2001/06/01 06:04:49 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mangband
@@ -12,7 +12,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://mangband.org/download/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//g}
 
-MAINTAINER=	adam@alameda.edu
+MAINTAINER=	adam@blacktabby.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/src
 
