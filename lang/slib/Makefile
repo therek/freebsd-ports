@@ -2,7 +2,7 @@
 # Date created:        01 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/lang/slib/Makefile,v 1.14 2001/07/31 09:36:03 sobomax Exp $
+# $FreeBSD: ports/lang/slib/Makefile,v 1.15 2001/08/16 15:05:35 nakai Exp $
 #
 
 PORTNAME=	slib
@@ -24,6 +24,7 @@ NO_BUILD=	yes
 do-install:
 	${MKDIR} ${PREFIX}/share/slib
 	${INSTALL_DATA} ${WRKSRC}/*.scm ${PREFIX}/share/slib
+	${RM} -f ${LOCALBASE}/share/guile/slib
 	${LN} -sf ${PREFIX}/share/slib ${LOCALBASE}/share/guile/slib
 	${LOCALBASE}/bin/guile -c \
 		"(use-modules (ice-9 slib)) (require 'new-catalog)"
