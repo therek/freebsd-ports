@@ -2,7 +2,7 @@
 # Date created:		26 Aug 2004
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.7 2004/08/27 16:32:23 ume Exp $
+# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.8 2004/08/27 18:33:07 ume Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
@@ -294,7 +294,7 @@ post-patch:
 .if ${PIPS_MAJOR} >= 2
 	${REINPLACE_CMD} -e 's,/etc/ekpdrc,${PREFIX}&,' \
 		${WRKSRC}/ekpd/cbtd_setup.c
-	${REINPLACE_CMD} -e 's,/dev/lp0,/dev/ulpt0,' \
+	${REINPLACE_CMD} -e 's;/dev/\(usb/\)\{0,1\}lp0;/dev/ulpt0;' \
 		-e 's,^SUBDIRS = rc$$,#&,' \
 		${WRKSRC}/ekpd/Makefile.in
 .if ${DIST_TYPE} != cups
