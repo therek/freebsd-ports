@@ -2,7 +2,7 @@
 # Date created:				28 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/yank/Makefile,v 1.5 2000/04/08 22:04:16 mharo Exp $
+# $FreeBSD: ports/deskutils/yank/Makefile,v 1.6 2000/06/01 16:25:45 ade Exp $
 #
 
 PORTNAME=	yank
@@ -22,8 +22,7 @@ USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-x
-CONFIGURE_ENV+=	CFLAGS="-I${LOCALBASE}/include ${CFLAGS}" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
