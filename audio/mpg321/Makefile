@@ -3,7 +3,7 @@
 # Date created:			Mar 17, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/mpg321/Makefile,v 1.5 2001/07/17 15:25:59 ijliao Exp $
+# $FreeBSD: ports/audio/mpg321/Makefile,v 1.6 2001/07/20 06:21:33 ijliao Exp $
 #
 
 PORTNAME=	mpg321
@@ -15,17 +15,13 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	smpeg.1:${PORTSDIR}/graphics/smpeg \
-		ao.1:${PORTSDIR}/audio/libao \
-		SDL-1.1.3:${PORTSDIR}/devel/sdl12 \
+LIB_DEPENDS=	ao.1:${PORTSDIR}/audio/libao \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 BUILD_DEPENDS=	${LOCALBASE}/lib/libmad.a:${PORTSDIR}/audio/mad
 
-SDL_CONFIG=	${LOCALBASE}/bin/sdl11-config
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib -lc_r -lgnugetopt" \
-		CFLAGS="-I${LOCALBASE}/include" \
-		SDL_CONFIG="${SDL_CONFIG}"
+CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib ${PTHREAD_LIBS} -lgnugetopt" \
+		CFLAGS="-I${LOCALBASE}/include ${PTHREAD_CFLAGS}"
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
