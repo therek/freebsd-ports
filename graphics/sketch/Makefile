@@ -3,7 +3,7 @@
 # Date created:		04 November 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sketch/Makefile,v 1.8 1999/08/31 06:45:14 mharo Exp $
+# $FreeBSD: ports/graphics/sketch/Makefile,v 1.9 1999/09/20 07:56:52 tg Exp $
 #
 
 DISTNAME=	sketch-0.6.2
@@ -14,7 +14,8 @@ MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${PREFIX}/include/python1.5/Imaging.h:${PORTSDIR}/graphics/py-imaging
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python \
-		${PREFIX}/lib/python1.5/site-packages/_imaging.so:${PORTSDIR}/graphics/py-imaging
+		${PREFIX}/lib/python1.5/site-packages/_imaging.so:${PORTSDIR}/graphics/py-imaging \
+		${PREFIX}/lib/python1.5/site-packages/xml/__init__.py:${PORTSDIR}/textproc/py-xml
 
 SKETCHDIR=	${PREFIX}/share/sketch
 SKETCHDOCDIR=	${PREFIX}/share/doc/sketch
