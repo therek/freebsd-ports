@@ -2,7 +2,7 @@
 # Date created:         10 August 1998
 # Whom:                 Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lynx-current/Makefile,v 1.18 2000/04/11 14:14:55 knu Exp $
+# $FreeBSD: ports/japanese/lynx-current/Makefile,v 1.19 2000/06/29 07:02:23 obrien Exp $
 #
 
 PORTNAME=	lynx
@@ -17,12 +17,10 @@ DISTNAME=	${PORTNAME}${VERSION}${MINOR_VERSION}
 
 MAINTAINER=	shige@FreeBSD.org
 
-FORBIDDEN=  "Riddled with buffer overflows exploitable by a malicious server to execute code as the local user."
-
 WRKSRC=		${WRKDIR}/${PORTNAME}${VERSION:S/./-/g}
 
-VERSION=	2.8.3
-MINOR_VERSION=	dev.16
+VERSION=	2.8.4
+MINOR_VERSION=	dev.4
 
 USE_BZIP2=	YES
 NO_LATEST_LINK=	YES
@@ -33,9 +31,12 @@ CONFIGURE_ARGS=	--with-screen=ncurses --with-zlib \
 		--enable-nsl-fork --enable-persistent-cookies \
 		--enable-cjk --enable-file-upload --enable-justify-elts \
 		--enable-libjs --enable-read-eta --enable-source-cache
+.if (WITH_LYNX_EXPERIMENTAL_OPTS)
 # experimental optional configure args
-#   --enable-prettysrc --enable-color-style
-#
+CONFIGURE_ARGS+=	--enable-prettysrc --enable-color-style \
+			--enable-addrlist-page --enable-charset-choice \
+			--enable-htmlized-cfg
+.endif
 MAKEFILE=	makefile
 MAKE_ARGS=	helpdir=${PREFIX}/${LYNX_HELP} docdir=${PREFIX}/${LYNX_DOC}
 PLIST_SUB=	LYNX_LIB=${LYNX_LIB} LYNX_DOC=${LYNX_DOC} LYNX_HELP=${LYNX_HELP}
