@@ -6,6 +6,12 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20040429:
+  AFFECTS: users of sysutils/smartmontools
+
+  The smartmontools port must now be enabled / disabled and configured in
+  rc.conf.  See the pkg-message or script for details.
+
 20040420:
   AFFECTS: users of sysutils/cdrtools
 
@@ -161,4 +167,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.12 2004/04/20 09:07:43 lofi Exp $
+$FreeBSD: ports/UPDATING,v 1.13 2004/04/20 20:46:32 netchild Exp $
