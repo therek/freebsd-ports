@@ -2,11 +2,11 @@
 # Date created:				3 Mai 2000
 # Whom:					sam@inf.enst.fr
 #
-# $FreeBSD: ports/devel/perforce/Makefile,v 1.1 2000/06/10 06:22:53 will Exp $
+# $FreeBSD: ports/devel/perforce/Makefile,v 1.2 2000/10/28 01:32:50 jeh Exp $
 #
 
 PORTNAME=	perforce
-PORTVERSION=	00.1
+PORTVERSION=	00.2
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.perforce.com/pub/perforce/r${PORTVERSION}/bin.freebsd/ \
