@@ -3,13 +3,14 @@
 # Date created:         10 August 1998
 # Whom:                 Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lynx-current/Makefile,v 1.11 1999/09/08 13:46:50 shige Exp $
+# $FreeBSD: ports/japanese/lynx-current/Makefile,v 1.12 1999/09/08 14:11:05 shige Exp $
 #
 
 DISTNAME=	lynx2.8.3dev.8
 PKGNAME=	ja-lynx-2.8.3dev.8
 CATEGORIES=	japanese www
-MASTER_SITES=	http://sol.slcc.edu/lynx/current/
+MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
+		http://sol.slcc.edu/lynx/current/
 
 MAINTAINER=	shige@FreeBSD.org
 
