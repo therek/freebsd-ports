@@ -3,7 +3,7 @@
 # Date created:   Aug 2000
 # Whom:           peterho@ned.dem.csiro.au
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/viewkit/Makefile,v 1.1 2001/04/07 04:19:54 will Exp $
 #
 #
 #
@@ -22,7 +22,7 @@ AUTOCONFIG=      autoconf
 
 MOTIFPACKAGE?=   open-motif
 USE_X_PREFIX=   yes
-REQUIRES_MOTIF = yes
+USE_MOTIF = yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-${MOTIFPACKAGE}
 
