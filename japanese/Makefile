@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.220 1999/09/07 06:26:32 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.221 1999/09/08 17:10:15 taoka Exp $
 #
 
     SUBDIR += Canna
@@ -127,7 +127,6 @@
     SUBDIR += mhonarc
     SUBDIR += micq
     SUBDIR += mimekit
-    SUBDIR += mmm
     SUBDIR += mnews
     SUBDIR += mnews-gnspool
     SUBDIR += mtools

@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/www/Makefile,v 1.149 1999/08/31 02:42:34 peter Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -54,7 +54,6 @@
     SUBDIR += mapedit
     SUBDIR += marc-search
     SUBDIR += mhonarc
-    SUBDIR += mmm
     SUBDIR += momspider
     SUBDIR += mozilla
     SUBDIR += netscape3
