@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.339 2001/03/25 06:37:18 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.340 2001/03/28 03:46:35 steve Exp $
 #
 
     SUBDIR += 3dc
@@ -17,6 +17,7 @@
     SUBDIR += angband
     SUBDIR += antipolix
     SUBDIR += asc
+    SUBDIR += atlas
     SUBDIR += atomix
     SUBDIR += awele
     SUBDIR += baduki
