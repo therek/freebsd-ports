@@ -2,14 +2,14 @@
 # Date created:         6 Aug 1997
 # Whom:                 mark@grondar.za
 #
-# $FreeBSD: ports/textproc/par/Makefile,v 1.5 2000/07/16 13:53:14 alex Exp $
+# $FreeBSD: ports/textproc/par/Makefile,v 1.6 2001/02/05 16:35:04 olgeni Exp $
 #
 
 PORTNAME=	par
 PORTVERSION=	1.51
 CATEGORIES=	textproc
 MASTER_SITES=   http://www.cs.berkeley.edu/~amc/Par/
-DISTNAME=	Par151
+DISTNAME=	Par152
 
 MAINTAINER=	mark@grondar.za
 
