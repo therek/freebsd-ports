@@ -2,7 +2,7 @@
 # Date created:		11 December 1998
 # Whom:			rv@dsmit.com
 #
-# $FreeBSD: ports/devel/cons/Makefile,v 1.12 2000/07/14 11:26:51 alex Exp $
+# $FreeBSD: ports/devel/cons/Makefile,v 1.13 2000/08/11 00:34:21 will Exp $
 #
 
 PORTNAME=	cons
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.dsmit.com/cons/stable/ \
 		http://www.baldmt.com/cons/stable/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	rv@dsmit.com
+MAINTAINER=	rv@gnu.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${ARCH}-freebsd/MD5.pm:${PORTSDIR}/security/p5-MD5
 
