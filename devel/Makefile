@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.216 1999/09/05 20:25:03 billf Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.217 1999/09/07 08:18:37 asami Exp $
 #
 
     SUBDIR += ElectricFence
@@ -49,7 +49,6 @@
     SUBDIR += ftnchek
     SUBDIR += gaa
     SUBDIR += gcc11
-    SUBDIR += gdbtk
     SUBDIR += gettext
     SUBDIR += gide
     SUBDIR += gindent
@@ -62,6 +61,7 @@
     SUBDIR += gtksheet
     SUBDIR += id-utils
     SUBDIR += ilu
+    SUBDIR += insight
     SUBDIR += jam
     SUBDIR += ktranslator
     SUBDIR += lclint
