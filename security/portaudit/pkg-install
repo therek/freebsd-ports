@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/portaudit/pkg-install,v 1.1 2004/02/25 09:46:26 eik Exp $
+# $FreeBSD: ports/security/portaudit/pkg-install,v 1.2 2004/03/11 11:11:59 eik Exp $
 #
 
 case $2 in
@@ -9,7 +9,7 @@ POST-INSTALL)
     echo
     echo "===>  To check your installed ports for known vulnerabilities now do:"
     echo
-    echo "      %%PREFIX%%/bin/portaudit -F -a"
+    echo "      %%PREFIX%%/bin/portaudit -Fda"
     echo
   fi
   ;;

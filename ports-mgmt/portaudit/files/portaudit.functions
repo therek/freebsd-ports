@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit/files/portaudit.functions,v 1.4 2004/03/11 11:11:59 eik Exp $
+# $FreeBSD: ports/security/portaudit/files/portaudit.functions,v 1.5 2004/03/31 22:52:01 eik Exp $
 #
 
 portaudit_confs()
@@ -41,6 +41,7 @@ portaudit_confs()
 	FETCH_BEFORE_ARGS=${FETCH_BEFORE_ARGS:-"-p"}
 	FETCH_AFTER_ARGS=${FETCH_AFTER_ARGS:-}
 
+	MASTER_SITE_OVERRIDE=${MASTER_SITE_OVERRIDE:-"http://www.FreeBSD.org/ports/"}
 	MASTER_SITES=${MASTER_SITES:-"
 		ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
 		ftp://ftp.se.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
@@ -196,6 +197,9 @@ audit_cwd()
 fetch_locations()
 {
 	# site sort order is not overly smart
+	if [ -n "${MASTER_SITE_OVERRIDE}" ]; then
+		echo "${MASTER_SITE_OVERRIDE}"
+	fi
 	echo ${MASTER_SITES} | /usr/bin/tr -s ' \t' '\n' | /usr/bin/awk "
 		BEGIN { IGNORECASE=1; srand() }
 		/^$/ { next }
