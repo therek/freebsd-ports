@@ -2,7 +2,7 @@
 # Date created:       26 July 1997
 # Whom:               Filip Bovyn (bovynf@awe.be)
 #
-# $FreeBSD: ports/devel/amulet/Makefile,v 1.11 2000/06/16 08:18:18 sobomax Exp $
+# $FreeBSD: ports/devel/amulet/Makefile,v 1.12 2000/06/16 21:49:51 asami Exp $
 
 PORTNAME=	amulet
 PORTVERSION=	3.0
@@ -28,6 +28,7 @@ SO_VERSION=	3.0
 
 pre-build:
 	${CP} $(FILESDIR)/Makefile.vars.gcc.FreeBSD $(WRKSRC)/bin
+	${RM} -f ${WRKSRC}/include/amulet/*.orig
 
 do-build:
 	@(cd $(WRKSRC)/bin; $(MAKE_ENV) $(MAKE) libs)
