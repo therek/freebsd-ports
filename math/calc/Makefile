@@ -2,16 +2,17 @@
 # Date created:         3 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/math/calc/Makefile,v 1.18 2001/07/08 02:11:42 jmz Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	calc
 PORTVERSION=	2.11.5
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.uu.net/pub/calc/ \
 		ftp://ftp.u-aizu.ac.jp/pub/SciEng/math/math-packs/calc/ \
 		ftp://ftp.batnet.com/pub/wombats/noll/ftp/pub/calc/
-DISTNAME=	calc-2.11.5t4.4
+DISTNAME=	calc-2.11.5t4.5
 
 MAINTAINER=	jmz@FreeBSD.org
 
