@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.578 2001/07/19 19:06:03 knu Exp $
+# $FreeBSD: ports/net/Makefile,v 1.579 2001/07/21 18:54:06 jdp Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -225,6 +225,7 @@
     SUBDIR += nttcp
     SUBDIR += nylon
     SUBDIR += obnc
+    SUBDIR += odsclient
     SUBDIR += ohphone
     SUBDIR += openam
     SUBDIR += opengatekeeper
