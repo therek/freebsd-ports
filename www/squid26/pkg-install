@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid/pkg-install,v 1.10 2004/02/17 11:07:18 sergei Exp $
+# $FreeBSD: ports/www/squid/pkg-install,v 1.11 2004/03/17 07:06:45 sergei Exp $
 #
 
 PATH=/bin:/usr/bin:/usr/sbin
@@ -148,6 +148,15 @@ POST-INSTALL)
 	echo "     Please check your squid.conf and update it if necessary."
 	tput me
 	echo ""
+	if [ -f /etc/rc.subr ]; then
+		echo "     Please note that ${PKG_PREFIX}/etc/rc.d/squid.sh"
+		echo "     will not start squid automatically on this system."
+		echo "     You need to set squid_enable=yes in either"
+		echo "     /etc/rc.conf, /etc/rc.conf.local or /etc/rc.conf.d/squid"
+		echo "     See ${PKG_PREFIX}/etc/rc.d/squid.sh for more"
+		echo "     configuration options."
+		echo ""
+	fi
 	;;
 *)
 	exit 64
