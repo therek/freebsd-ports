@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.299 2000/10/01 14:57:23 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.300 2000/10/01 21:08:27 sada Exp $
 #
 
     SUBDIR += Canna
@@ -11,6 +11,7 @@
     SUBDIR += ack
     SUBDIR += acroread-jpnfont
     SUBDIR += addttfont
+    SUBDIR += another-htmllint
     SUBDIR += balsa
     SUBDIR += binder
     SUBDIR += bookview
