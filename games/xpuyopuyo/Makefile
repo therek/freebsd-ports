@@ -3,7 +3,7 @@
 # Date created:		19 Sep 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.2 1999/09/29 21:53:12 asami Exp $
+# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.3 1999/10/08 21:26:17 dan Exp $
 #
 
 DISTNAME=	xpuyopuyo-0.2.3
@@ -14,7 +14,7 @@ MAINTAINER=	yinjieh@csie.nctu.edu.tw
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		gnomeui.2:${PORTSDIR}/x11/gnomelibs
+		gnomeui.3:${PORTSDIR}/x11/gnomelibs
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

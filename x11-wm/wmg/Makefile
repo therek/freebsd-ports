@@ -3,7 +3,7 @@
 # Date created:        27 August 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/x11-wm/wmg/Makefile,v 1.2 1999/09/09 01:33:54 taoka Exp $
+# $FreeBSD: ports/x11-wm/wmg/Makefile,v 1.3 1999/10/08 03:30:15 nakai Exp $
 #
 
 DISTNAME=	wmG-0.14.0
@@ -16,7 +16,7 @@ MAINTAINER=	nakai@FreeBSD.org
 LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
 		esd.2:${PORTSDIR}/audio/esound \
-		gnome.2:${PORTSDIR}/x11/gnomelibs
+		gnome.3:${PORTSDIR}/x11/gnomelibs
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config

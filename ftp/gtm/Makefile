@@ -3,7 +3,7 @@
 # Date created:				05/28/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/ftp/gtm/Makefile,v 1.7 1999/08/31 06:44:00 mharo Exp $
+# $FreeBSD: ports/ftp/gtm/Makefile,v 1.8 1999/09/09 18:36:35 nectar Exp $
 #
 
 DISTNAME=		gtm-0.3.1
@@ -14,7 +14,7 @@ MASTER_SITES=		http://www.rnl.ist.utl.pt/~bapm/gtm/files/     \
 MAINTAINER=		nectar@FreeBSD.org
 
 # wget is in BUILD_DEPENDS because the configure script checks for it
-LIB_DEPENDS=		gnome.2:${PORTSDIR}/x11/gnomelibs               \
+LIB_DEPENDS=		gnome.3:${PORTSDIR}/x11/gnomelibs               \
 			capplet.1:${PORTSDIR}/sysutils/gnomecontrolcenter
 BUILD_DEPENDS=		wget:${PORTSDIR}/ftp/wget
 RUN_DEPENDS=		wget:${PORTSDIR}/ftp/wget

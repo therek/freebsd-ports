@@ -3,7 +3,7 @@
 # Date created:				29 Jul 1998
 # Whom:					rom
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/gide/Makefile,v 1.27 1999/08/25 05:48:03 obrien Exp $
 #
 
 DISTNAME= 	gIDE-0.1.2
@@ -14,7 +14,7 @@ MASTER_SITES=	http://gide.gdev.net/ \
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gnomeui.2:${PORTSDIR}/x11/gnomelibs \
+LIB_DEPENDS=	gnomeui.3:${PORTSDIR}/x11/gnomelibs \
 		guile.4:${PORTSDIR}/lang/guile
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

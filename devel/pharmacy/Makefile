@@ -3,7 +3,7 @@
 # Date created:				02 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/pharmacy/Makefile,v 1.1.1.1 1999/10/03 21:57:27 dan Exp $
 #
 
 DISTNAME=	pharmacy-0.2.1
@@ -12,7 +12,7 @@ MASTER_SITES=	http://pharmacy.learnrespect.org/
 
 MAINTAINER=	jedgar@fxp.org
 
-LIB_DEPENDS=	gnome.2:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
