@@ -2,14 +2,14 @@
 # Date created:         23 Mar 2001
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/security/pgpin/Makefile,v 1.1 2001/03/31 11:36:38 dinoex Exp $
+# $FreeBSD: ports/security/pgpin/Makefile,v 1.2 2001/06/24 04:28:52 dinoex Exp $
 #
 
 PORTNAME=	pgpin
-PORTVERSION=	010322
+PORTVERSION=	010323
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.fu-berlin.de/doc/IN/IN-CA/pgp/pgp263in/
-DISTNAME=	pgp263in010322
+DISTNAME=	pgp263in${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dinoex@FreeBSD.org
