@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.11 2000/09/28 18:04:46 ade Exp $
+# $FreeBSD: ports/mail/evolution/Makefile,v 1.12 2000/10/05 07:17:00 reg Exp $
 #
 
 PORTNAME=	evolution
@@ -25,6 +25,8 @@ LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml \
 		gtkhtml.4:${PORTSDIR}/www/gtkhtml \
 		ldap.1:${PORTSDIR}/net/openldap \
 		gpilotd.0:${PORTSDIR}/palm/gnomepilot
+
+BROKEN=		"Build failures with new bonobo"
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
