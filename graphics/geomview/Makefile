@@ -2,7 +2,7 @@
 # Date created:				5 November 1996
 # Whom:					fenner
 #
-# $FreeBSD: ports/graphics/geomview/Makefile,v 1.22 2000/04/14 10:45:52 asami Exp $
+# $FreeBSD: ports/graphics/geomview/Makefile,v 1.23 2000/08/03 09:24:45 asami Exp $
 #
 
 PORTNAME=	geomview
@@ -79,6 +79,7 @@ post-install:
 	${CP} -pr ${WRKSRC}/${i} ${PREFIX}/share/geomview
 	${CHOWN} -R ${SHAREOWN}.${SHAREGRP} ${PREFIX}/share/geomview/${i}
 .endfor
+	${CHMOD} -R g-w ${WRKSRC}/modules
 .for i in ${SHARE_MODS}
 	${RM} -rf ${PREFIX}/share/geomview/modules/${i}
 	${MKDIR} ${PREFIX}/share/geomview/modules/${i}
