@@ -1,6 +1,6 @@
-# $FreeBSD: ports/x11/ruby-gnome/Makefile.common,v 1.5 2002/06/03 10:53:47 knu Exp $
+# $FreeBSD: ports/x11/ruby-gnome/Makefile.common,v 1.6 2002/07/07 18:23:18 knu Exp $
 
-RUBY_GNOME_VERSION=		0.29
+RUBY_GNOME_VERSION=		0.30
 #RUBY_GNOME_SNAPSHOTDATE=	20010224
 .if defined(RUBY_GNOME_SNAPSHOTDATE)
 RUBY_GNOME_PORTVERSION=		${RUBY_GNOME_VERSION}.${RUBY_GNOME_SNAPSHOTDATE}
@@ -20,3 +20,8 @@ RUBY_GNOME_WRKSRC=	${WRKDIR}/${RUBY_GNOME_DISTNAME}
 RUBY_GNOME_PORTDIR=	${PORTSDIR}/x11/ruby-gnome
 
 MD5_FILE=	${RUBY_GNOME_PORTDIR}/distinfo
+
+post-extract:	pre-post-extract
+
+pre-post-extract:
+	${FIND} ${WRKSRC} -name CVS -type d -print0 | ${XARGS} -0 ${RM} -rf
