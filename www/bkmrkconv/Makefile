@@ -3,12 +3,12 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.1 2000/03/29 19:44:32 will Exp $
 #
 
 DISTNAME=	bkmrkconv
 PKGNAME=	bkmrkconv-1.08
-CATEGORIES=	converters www
+CATEGORIES=	www
 MASTER_SITES=	http://www.dcs.warwick.ac.uk/~csube/bkmrkconv/
 
 MAINTAINER=	will@FreeBSD.org
