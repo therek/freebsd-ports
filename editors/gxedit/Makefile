@@ -3,13 +3,14 @@
 # Date created:				01 Jul 1998
 # Whom:					Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/gxedit/Makefile,v 1.22 1999/08/25 05:43:52 obrien Exp $
 #
 
 DISTNAME=	GXedit1.23
 PKGNAME=	gxedit-1.23
 CATEGORIES=	editors
-MASTER_SITES=	http://devplanet.fastethernet.net/
+MASTER_SITES=	http://mirrors.darkelf.net/GXedit/ \
+		http://www.linuxbox.com/~drow/GXedit/
 
 MAINTAINER=	dom@myrddin.demon.co.uk
 
