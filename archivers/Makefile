@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.39 2000/06/28 05:01:45 wes Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.40 2000/08/12 12:12:37 knu Exp $
 #
 
     SUBDIR += 9e
@@ -26,6 +26,7 @@
     SUBDIR += rar
     SUBDIR += ruby-zlib
     SUBDIR += unace
+    SUBDIR += unadf
     SUBDIR += unarj
     SUBDIR += undms
     SUBDIR += unlzx
