@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/games/Makefile,v 1.360 2001/04/15 05:50:15 will Exp $
 #
 
     SUBDIR += 3dc
@@ -133,7 +133,6 @@
     SUBDIR += libshhcards
     SUBDIR += lincity
     SUBDIR += linux-q3ademo
-    SUBDIR += linuxdoom
     SUBDIR += ltris
     SUBDIR += madbomber
     SUBDIR += maelstrom
