@@ -2,7 +2,7 @@
 # Date created:			5 February 2001
 # Whom:				joe
 #
-# $FreeBSD: ports/net/jabber/Makefile,v 1.4 2000/10/08 10:22:30 asami Exp $
+# $FreeBSD: ports/net/jabber/Makefile,v 1.5 2001/02/12 19:44:37 joe Exp $
 #
 
 PORTNAME=	jabber
@@ -12,9 +12,7 @@ MASTER_SITES=	http://download.jabber.org/dists/1.4/final/
 
 MAINTAINER=	joe@FreeBSD.org
 
-BUILD_DEPENDS=	pth:${PORTSDIR}/devel/pth \
-		libxode-config:${PORTSDIR}/textproc/libxode \
-		jabber-config:${PORTSDIR}/net/libjabber
+BUILD_DEPENDS=	pth-config:${PORTSDIR}/devel/pth
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
