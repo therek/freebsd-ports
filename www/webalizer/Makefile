@@ -2,12 +2,12 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/www/webalizer/Makefile,v 1.25 2001/05/28 19:57:20 dinoex Exp $
+# $FreeBSD: ports/www/webalizer/Makefile,v 1.26 2001/06/04 11:29:30 dinoex Exp $
 #
 
 PORTNAME=	webalizer
 PORTVERSION=	2.1.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES+=	www
 MASTER_SITES=	ftp://ftp.mrunix.net/pub/webalizer/ \
 		ftp://ftp.dinoex.de/pub/FreeBSD/distfiles/
@@ -34,6 +34,7 @@ CONFIGURE_ARGS+=	--enable-dns \
 			--with-gdlib=${PREFIX}/lib \
 			--with-gd=${PREFIX}/include/gd
 CONFIGURE_ENV+=	LDFLAGS="-L${PREFIX}/lib"
+CFLAGS+=	-DLINKLIST_MAX_STRING=256
 MAKE_ARGS+=	CFLAGS="${CFLAGS}"
 MAN1=		${PKGNAMEPREFIX}webalizer.1
 DOC1=		CHANGES COPYING Copyright INSTALL \
