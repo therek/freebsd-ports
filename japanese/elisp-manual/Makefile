@@ -2,7 +2,7 @@
 # Date created:         28 Mar 2000
 # Whom:                 OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/japanese/elisp-manual/Makefile,v 1.1.1.1 2000/07/24 22:29:46 sada Exp $
+# $FreeBSD: ports/japanese/elisp-manual/Makefile,v 1.2 2000/10/07 22:11:20 asami Exp $
 #
 
 PORTNAME=	elisp-manual
@@ -16,7 +16,7 @@ PATCH_SITES=	ftp://ftp.ascii.co.jp/pub/GNU/elisp-manual-20/
 PATCHFILES=	elisp-manual-20-2.5-jp.ERRATA.000422.jis \
 		elisp-manual-20-2.5-jp.ERRATA.000508.jis
 
-MAINTAINER=	okazaki@be.to
+MAINTAINER=	okazaki@FreeBSD.org
 
 EMACS_PORT_NAME=	emacs20
 EMACS_NO_RUN_DEPENDS=	YES

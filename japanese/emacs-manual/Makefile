@@ -2,7 +2,7 @@
 # Date created:         14 April 1999
 # Whom:                 OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/japanese/emacs-manual/Makefile,v 1.13 2000/07/19 08:03:55 shige Exp $
+# $FreeBSD: ports/japanese/emacs-manual/Makefile,v 1.14 2000/10/07 22:11:23 asami Exp $
 #
 
 PORTNAME=	emacs-manual
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	emacs
 DISTNAME=	emacs-20.6-man-jp
 DISTFILES=	${DISTNAME}.tgz ${EMACS_ARC}
 
-MAINTAINER=	okazaki@be.to
+MAINTAINER=	okazaki@FreeBSD.org
 
 EMACS_PORT_NAME=	emacs20
 EMACS_NO_RUN_DEPENDS=	YES
@@ -22,7 +22,7 @@ EMACS_NO_RUN_DEPENDS=	YES
 ERRATA_FILE=
 
 EXTRACT_ONLY=	${DISTNAME}.tgz
-EMACS_DISTNAME= emacs-${EMACS_VER}
+EMACS_DISTNAME=	emacs-${EMACS_VER}
 EMACS_ARC=	${EMACS_DISTNAME}.tar.gz
 EMACS_SRCDIR=	${WRKDIR}/${EMACS_DISTNAME}
 EXTRACT_FILES=	${EMACS_DISTNAME}/man/ack.texi \
