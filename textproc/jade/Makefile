@@ -2,16 +2,17 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/jade/Makefile,v 1.30 2001/01/29 03:45:44 kuriyama Exp $
+# $FreeBSD: ports/textproc/jade/Makefile,v 1.31 2001/02/05 16:34:46 olgeni Exp $
 #
 
 PORTNAME=	jade
 PORTVERSION=	1.2.1
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.jclark.com/pub/jade/
 
-PATCH_SITES=	http://ftp.debian.org/debian/dists/unstable/main/source/text/
-PATCHFILES=	jade_1.2.1-13.diff.gz
+PATCH_SITES=	http://ftp.debian.org/debian/pool/main/j/jade/
+PATCHFILES=	jade_1.2.1-18.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	kuriyama@FreeBSD.org
