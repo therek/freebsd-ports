@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.313 2001/05/21 02:29:49 ade Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.314 2001/05/25 16:00:07 roam Exp $
 #
 
     SUBDIR += 4va
@@ -225,6 +225,7 @@
     SUBDIR += splitmpg
     SUBDIR += stamp
     SUBDIR += svgalib
+    SUBDIR += synaesthesia
     SUBDIR += tgif
     SUBDIR += tgif-nls
     SUBDIR += threeDS
