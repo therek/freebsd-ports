@@ -2,7 +2,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.22 2000/09/08 04:34:51 taoka Exp $
+# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.23 2000/10/08 10:20:03 asami Exp $
 #
 
 # This is the COMMON port of XEmacs Mule slave
@@ -18,7 +18,7 @@
 #	WITH_INPUT_METHOD : input methods(configure arguments)
 #	LIB_INPUT_METHOD  : LIB_DEPENDS list of Input Methods
 #	BUILD_INPUT_METHOD: BUILD_DEPENDS list of Input Methods
-#	WITH_XIM          : X Input Method(configure arguments)
+#	WITH_XIM          : X Input Method(configure arguments), xlib or motif
 
 XEMACS_MAJOR_VER=	21
 

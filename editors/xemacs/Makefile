@@ -2,7 +2,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.51 2000/08/09 17:45:08 gj Exp $
+# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.52 2000/09/23 19:27:20 gj Exp $
 #
 
 PORTNAME=	xemacs
@@ -24,18 +24,18 @@ LIB_DEPENDS+=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 
 XEMACS_REL=	21.1
 XEMACS_VER=	21.1.12
+XEMACS_ARCH=	${CONFIGURE_TARGET}
+
 DIST_SUBDIR=	xemacs
 
 SLAVEDIRS+=	editors/xemacs21-mule
 USE_XLIB=	yes
 USE_XPM=	yes
-USE_GMAKE=	yes
 STRIP=
-HAS_CONFIGURE=	yes
-XEMACS_ARCH=	${MACHINE_ARCH}--freebsd
+USE_AUTOCONF= 	yes
+CONFIGURE_TARGET=${MACHINE_ARCH}--freebsd
 
-CONFIGURE_ARGS?=${XEMACS_ARCH} --prefix=${PREFIX} \
-		--with-clash-detection \
+CONFIGURE_ARGS?=--with-clash-detection \
 		--lockdir=/var/run/emacs/lock \
 		--with-sound=native \
 		--with-session=yes \
