@@ -1,4 +1,4 @@
-# $FreeBSD: ports/korean/Makefile,v 1.42 2000/03/04 21:01:15 sada Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.43 2000/04/05 01:19:56 asami Exp $
 #
 
     SUBDIR += Wnn
@@ -16,6 +16,7 @@
     SUBDIR += fvwm95
     SUBDIR += gau
     SUBDIR += gtk10
+    SUBDIR += gtkcomm
     SUBDIR += h2ps
     SUBDIR += han
     SUBDIR += hanIM
