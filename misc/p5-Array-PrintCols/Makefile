@@ -2,7 +2,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/p5-Array-PrintCols/Makefile,v 1.15 2000/04/14 08:46:22 asami Exp $
+# $FreeBSD: ports/misc/p5-Array-PrintCols/Makefile,v 1.16 2000/10/23 21:03:01 will Exp $
 #
 
 PORTNAME=	Array-PrintCols
@@ -14,12 +14,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	YES
+USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Array::PrintCols.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>
