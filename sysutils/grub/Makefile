@@ -2,7 +2,7 @@
 # Whom:					rjoseph@mammalia.org
 # Date created:				24 July 2000
 #
-# $FreeBSD: ports/sysutils/grub/Makefile,v 1.1 2000/08/02 08:30:06 nbm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	grub
@@ -18,6 +18,9 @@ CONFIGURE_TARGET=	${MACHINE_ARCH}-freebsd-freebsd${OSREL}
 
 MAN1=		mbchk.1
 MAN8=		grub.8 grub-install.8
+
+pre-build:
+	@${RM} ${WRKSRC}/docs/grub.info*
 
 post-install:
 	@${CAT} ${PKGMESSAGE}
