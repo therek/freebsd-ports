@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.440 2000/12/14 03:40:26 jeh Exp $
+# $FreeBSD: ports/net/Makefile,v 1.441 2000/12/17 02:40:27 obrien Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -156,6 +156,7 @@
     SUBDIR += netatalk
     SUBDIR += netatalk-asun
     SUBDIR += netcat
+    SUBDIR += netmask
     SUBDIR += netpipes
     SUBDIR += netsaint
     SUBDIR += netsaint-plugins
