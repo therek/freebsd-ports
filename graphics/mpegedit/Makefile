@@ -2,13 +2,13 @@
 # Date created:		Thu Aug  1 10:50:57 CDT 1996
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/mpegedit/Makefile,v 1.17 2000/06/28 13:34:35 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mpegedit
 PORTVERSION=	2.2
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.netsw.org/netsw/Graphic/Movie/MPEG/mpegedit/
+MASTER_SITES=	http://www.netsw.org/graphic/movie/mpeg/mpegedit/
 DISTNAME=	${PORTNAME}_v${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
@@ -21,11 +21,11 @@ post-extract:
 	@find ${WRKSRC} -name '.depend' | xargs ${RM} -f
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/mpeg_edit ${PREFIX}/bin
+	@${INSTALL_PROGRAM} ${WRKSRC}/mpeg_edit ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/mpeg_edit
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/mpeg_edit
-	${INSTALL_DATA} ${WRKSRC}/manual.ps ${PREFIX}/share/doc/mpeg_edit
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/manual.ps ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
