@@ -1,12 +1,12 @@
 # New ports collection makefile for:    vile
-# Version required:     8.2
+# Version required:     9.0
 # Date created:         Wed Nov 26, 1996
 # Whom:                 pgf
 #
-# $FreeBSD: ports/editors/vile/Makefile,v 1.18 1999/08/25 05:44:32 obrien Exp $
+# $FreeBSD: ports/editors/vile/Makefile,v 1.19 1999/08/27 21:13:49 mharo Exp $
 #
 
-DISTNAME=	vile-8.2
+DISTNAME=	vile-9.0
 CATEGORIES=	editors
 MASTER_SITES=   ftp://ftp.clark.net/pub/dickey/vile/ \
 		ftp://ftp.phred.org/pub/vile/ \
