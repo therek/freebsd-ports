@@ -2,12 +2,11 @@
 # Date created:			14 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/eruby/Makefile,v 1.8 2000/12/11 19:54:50 knu Exp $
+# $FreeBSD: ports/textproc/eruby/Makefile,v 1.9 2000/12/12 14:04:26 knu Exp $
 #
 
 PORTNAME=	eruby
-PORTVERSION=	${VERSION}
-PORTREVISION=	${REVISION}
+PORTVERSION=	0.9.1
 CATEGORIES=	textproc www ruby
 MASTER_SITES=	http://www.modruby.net/archive/
 DIST_SUBDIR=	ruby
@@ -15,16 +14,6 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 USE_RUBY=	yes
-RUBY_REQUIRE=	160 <= Ruby
-
-.include <bsd.port.pre.mk>
-
-.if defined(RUBY_PROVIDED)
-VERSION=	0.1.3
-.else
-VERSION=	0.1.1
-REVISON=	1
-.endif
 
 CONFIGURE_ARGS=	--enable-shared --default-charset="${DEFAULT_CHARSET}"
 INSTALLS_SHLIB=	yes
@@ -50,4 +39,4 @@ post-install:
 .endfor
 .endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
