@@ -3,16 +3,16 @@
 # Date created:			May 1, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gsk/Makefile,v 1.1 2001/05/01 17:29:24 ijliao Exp $
 #
 
 PORTNAME=	gsk
-PORTVERSION=	0.3.0
+PORTVERSION=	0.3.1
 CATEGORIES=	net devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 .if !defined(WITHOUT_OPENSSL)
 USE_OPENSSL=	yes
