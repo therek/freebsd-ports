@@ -2,7 +2,7 @@
 # Date created:		13 Mar 1998
 # Whom:			sada
 #
-# $FreeBSD: ports/japanese/netscape47-communicator/Makefile,v 1.22 2000/08/19 22:48:10 sada Exp $
+# $FreeBSD: ports/japanese/netscape47-communicator/Makefile,v 1.23 2000/10/08 07:20:59 asami Exp $
 #
 
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
@@ -14,6 +14,7 @@ SUBMASTERDIR=	${.CURDIR}/../netscape${BROWSER_VER}-communicator
 FILESDIR=	${SUBMASTERDIR}/files
 PATCHDIR=	${SUBMASTERDIR}/files
 PKGDIR=		${SUBMASTERDIR}
+MD5_FILE=	${SUBMASTERDIR}/distinfo
 
 BROWSER_VER=	47
 BROWSER_VERSION=	4.75
