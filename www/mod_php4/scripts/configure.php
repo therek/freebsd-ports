@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.181 2003/02/06 15:18:06 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.182 2003/02/24 02:26:55 edwin Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -233,8 +233,8 @@ while [ "$1" ]; do
 			OPENLDAP1=1
 			;;
 		\"OpenLDAP2\")
-			echo "LIB_DEPENDS+=	ldap.2:\${PORTSDIR}/net/openldap2"
-			echo "LIB_DEPENDS+=	lber.2:\${PORTSDIR}/net/openldap2"
+			echo "LIB_DEPENDS+=	ldap.2:\${PORTSDIR}/net/openldap20"
+			echo "LIB_DEPENDS+=	lber.2:\${PORTSDIR}/net/openldap20"
 			echo "CONFIGURE_ARGS+=--with-ldap=\${LOCALBASE}"
 			if [ "$OPENLDAP1" ]; then
 				echo "OpenLDAP1 and OpenLDAP2 are mutually exclusive." > /dev/stderr

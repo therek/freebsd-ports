@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/cyrus-sasl/scripts/configure.sasl,v 1.14 2002/08/22 19:13:37 ade Exp $
+# $FreeBSD: ports/security/cyrus-sasl/scripts/configure.sasl,v 1.15 2003/02/24 02:26:55 edwin Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -152,8 +152,8 @@ while [ "$1" ]; do
 				rm -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc
 				exit 1
 			fi
-			echo "LIB_DEPENDS+=	ldap.2:\${PORTSDIR}/net/openldap2"
-			echo "LIB_DEPENDS+=	lber.2:\${PORTSDIR}/net/openldap2"
+			echo "LIB_DEPENDS+=	ldap.2:\${PORTSDIR}/net/openldap20"
+			echo "LIB_DEPENDS+=	lber.2:\${PORTSDIR}/net/openldap20"
 			echo "CONFIGURE_ARGS+=	--with-ldap=\${PREFIX}"
 			OPENLDAP=1
 			;;
