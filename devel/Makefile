@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.473 2001/03/17 16:59:15 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.474 2001/03/20 01:49:41 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -372,6 +372,7 @@
     SUBDIR += ruby-filelock
     SUBDIR += ruby-gemfinder
     SUBDIR += ruby-intl
+    SUBDIR += ruby-lapidary
     SUBDIR += ruby-libglade
     SUBDIR += ruby-locale
     SUBDIR += ruby-metaruby
