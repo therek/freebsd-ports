@@ -2,7 +2,7 @@
 # Date created:        28 February 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/shells/mudsh/Makefile,v 1.1 2001/03/01 15:57:14 clive Exp $
+# $FreeBSD: ports/shells/mudsh/Makefile,v 1.2 2001/03/11 06:50:52 kevlo Exp $
 #
 
 PORTNAME=	mudsh
@@ -24,7 +24,7 @@ post-extract:
 
 do-patch:
 	@(${SED} -e 's,/usr/local/bin/perl,${PERL},1' ${WRKSRC}/${DISTNAME} \
-		> foo && ${MV} foo ${WRKSRC}/${DISTNAME})
+		> ${WRKDIR}/foo && ${MV} ${WRKDIR}/foo ${WRKSRC}/${DISTNAME})
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${DISTNAME} ${PREFIX}/bin
