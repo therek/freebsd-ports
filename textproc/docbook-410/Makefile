@@ -4,7 +4,7 @@
 #
 # Based on nik's docbook-310 port
 #
-# $FreeBSD: ports/textproc/docbook-410/Makefile,v 1.3 2000/10/27 15:31:04 shige Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	docbook
@@ -29,6 +29,8 @@ PLIST_SUB=	DTD_NAME=${PORTNAME} DTD_VERSION=${PORTVERSION} \
 INSTDIR=	${PREFIX}/share/sgml/docbook
 ISOCAT=		${PREFIX}/share/sgml/iso8879/catalog
 MKCATALOG=	${PREFIX}/sbin/mkcatalog
+
+LATEST_LINK=	docbook-410
 
 pre-install:
 	@[ -d ${INSTDIR}/4.1 ] || ${MKDIR} ${INSTDIR}/4.1

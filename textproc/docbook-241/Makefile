@@ -4,7 +4,7 @@
 #
 # Based heavily on work by jfieber.
 #
-# $FreeBSD: ports/textproc/docbook-241/Makefile,v 1.9 2001/01/16 17:32:42 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	docbook
@@ -27,6 +27,8 @@ PLIST_SUB=	DTD_NAME=${PORTNAME} DTD_VERSION=2.4.1 MKCATALOG=${MKCATALOG}
 INSTDIR=	${PREFIX}/share/sgml/docbook
 ISOCAT=		${PREFIX}/share/sgml/iso8879/catalog
 MKCATALOG=	${PREFIX}/sbin/mkcatalog
+
+LATEST_LINK=	docbook-241
 
 pre-install:
 	@[ -d ${INSTDIR}/2.4.1 ] || ${MKDIR} ${INSTDIR}/2.4.1
