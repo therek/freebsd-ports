@@ -2,7 +2,7 @@
 # Date created:		28 March 1997
 # Whom:			gena
 #
-# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.39 2001/03/05 07:21:06 steve Exp $
+# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.40 2001/03/12 16:23:10 mikeh Exp $
 #
 
 PORTNAME=	xforms
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	gena@NetVision.net.il
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 INSTALLS_SHLIB=	yes
 NO_FILTER_SHLIBS=	yes
 
