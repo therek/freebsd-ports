@@ -3,7 +3,7 @@
 # Date created:		18 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/wu-ftpd/Makefile,v 1.28 1999/08/25 05:55:25 obrien Exp $
 #
 # REMINDER: to use ftpaccess(5) you need to specify -a in command line,
 # it is changed from previous versions
@@ -11,6 +11,9 @@
 DISTNAME=       wu-ftpd-2.5.0
 CATEGORIES=	ftp
 MASTER_SITES=   ftp://ftp.vr.net/pub/wu-ftpd/wu-ftpd/
+
+PATCH_SITES=	ftp://ftp.wu-ftpd.org/pub/wu-ftpd/quickfixes/apply_to_2.5.0/
+PATCHFILES=	mapped.path.overrun.patch
 
 MAINTAINER=     ache@FreeBSD.org
 
