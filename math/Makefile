@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.75 2000/06/29 02:08:20 will Exp $
+# $FreeBSD: ports/math/Makefile,v 1.76 2000/07/03 16:26:55 sobomax Exp $
 #
 
     SUBDIR += PDL
@@ -11,6 +11,7 @@
     SUBDIR += blas
     SUBDIR += calc
     SUBDIR += calctool
+    SUBDIR += concorde
     SUBDIR += dcdflib
     SUBDIR += eispack
     SUBDIR += eval
