@@ -2,7 +2,7 @@
 # Date created:         20 June 1996
 # Whom:                 Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/net/gnu-finger/Makefile,v 1.11 2000/04/09 18:11:29 cpiazza Exp $
+# $FreeBSD: ports/net/gnu-finger/Makefile,v 1.12 2000/07/02 13:37:52 sanpei Exp $
 #
 
 PORTNAME=	gnu-finger
@@ -12,7 +12,7 @@ MASTER_SITES=   ${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	finger
 DISTNAME=	finger-1.37
 
-MAINTAINER=     sanpei@FreeBSD.org
+MAINTAINER=     sanpei@sanpei.org
 
 HAS_CONFIGURE=	yes
 INSTALL_TARGET= server
