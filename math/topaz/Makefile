@@ -2,7 +2,7 @@
 # Date created:				29 July 1997
 # Whom:					Issei Suzuki <issei@jp.FreeBSD.ORG>
 #
-# $FreeBSD: ports/math/topaz/Makefile,v 1.5 2000/11/14 00:44:05 asami Exp $
+# $FreeBSD: ports/math/topaz/Makefile,v 1.6 2000/12/24 08:22:54 issei Exp $
 #
 
 PORTNAME=	topaz
@@ -17,7 +17,7 @@ LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 .include<bsd.port.pre.mk>
 .if ${OSVERSION} < 400010
-LIB_DEPENDS+=	ncurses:${PORTNAME}/devel/ncurses
+LIB_DEPENDS+=	ncurses:${PORTSDIR}/devel/ncurses
 .endif
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
