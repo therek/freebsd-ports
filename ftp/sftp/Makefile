@@ -2,12 +2,11 @@
 # Date created:		30 December 1999
 # Whom:			Cy Shubert <Cy.Shubert@uumail.gov.bc.ca>
 #
-# $FreeBSD: ports/ftp/sftp/Makefile,v 1.9 2000/10/08 00:58:54 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sftp
-PORTVERSION=	0.9.6
-PORTREVISION=	1
+PORTVERSION=	0.9.9
 CATEGORIES=	ftp security
 MASTER_SITES=	ftp://ftp.xbill.org/pub/sftp/
 
