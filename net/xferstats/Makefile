@@ -2,7 +2,7 @@
 # Date created:         19 February 1999
 # Whom:                 Dima Sivachenko
 #
-# $FreeBSD: ports/net/xferstats/Makefile,v 1.9 2000/10/05 06:22:59 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xferstats
@@ -15,7 +15,8 @@ MAINTAINER=	demon@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xferstats
 
-USE_GLIB=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	glib12
 GNU_CONFIGURE=	yes
 
 MAN8=		xferstats.8

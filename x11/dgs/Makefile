@@ -2,7 +2,7 @@
 # Date created:        22 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/dgs/Makefile,v 1.25 2001/09/11 02:28:38 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dgs
@@ -20,7 +20,8 @@ RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GLIB=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	glib12
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 

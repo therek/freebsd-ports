@@ -2,7 +2,7 @@
 # Date Created:			22 Oct 1998
 # Whom:				Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/libicq/Makefile,v 1.14 2000/08/08 05:08:07 flathill Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libicq
@@ -20,7 +20,8 @@ PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	flathill@FreeBSD.org
 
-USE_GLIB=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	glib12
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 

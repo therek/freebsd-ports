@@ -3,7 +3,7 @@
 # Date created:			May 1, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/net/gsk/Makefile,v 1.1 2001/05/01 17:29:24 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gsk
@@ -19,7 +19,8 @@ USE_OPENSSL=	yes
 CONFIGURE_ARGS=	--enable-ssl
 .endif
 
-USE_GLIB=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	glib12
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LIBS="${PTHREAD_LIBS}"
 USE_GMAKE=	yes
