@@ -1,8 +1,8 @@
 # New ports collection makefile for:    xcdplayer
-# Date created:         30 Sep 1994
-# Whom:                 swallace
+# Date created:		30 Sep 1994
+# Whom:			swallace
 #
-# $FreeBSD: ports/audio/xcdplayer/Makefile,v 1.11 2000/04/08 21:24:51 mharo Exp $
+# $FreeBSD: ports/audio/xcdplayer/Makefile,v 1.12 2000/05/14 05:00:49 billf Exp $
 #
 
 PORTNAME=	xcdplayer
@@ -16,5 +16,10 @@ MAINTAINER=	swallace@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		xcdplayer.1
+
+post-extract:
+	${CP} ${FILESDIR}/cdrom_freebsd.c ${WRKSRC}
+	${CP} ${FILESDIR}/cdrom_freebsd.h ${WRKSRC}
+	${CP} ${WRKSRC}/xcdplayer.1 ${WRKSRC}/xcdplayer.man
 
 .include <bsd.port.mk>
