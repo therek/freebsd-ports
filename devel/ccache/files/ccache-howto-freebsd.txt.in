@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/devel/ccache/files/ccache-howto-freebsd.txt.in,v 1.7 2005/02/04 09:07:12 ahze Exp $
+# $FreeBSD: ports/devel/ccache/files/ccache-howto-freebsd.txt.in,v 1.8 2005/02/05 14:28:03 ahze Exp $
 #
 
 To use ccache add the following to /etc/make.conf
@@ -24,6 +24,9 @@ For Korn/Bourne shells Add the following to /etc/profile:
 For csh/tcsh Add the following to /etc/csh.cshrc:
  setenv PATH %%PREFIX%%/libexec/ccache/:$PATH
  setenv CCACHE_PATH /usr/bin:%%LOCALBASE%%/bin
+
+For icc users:
+ Add %%ICCPREFIX%% to CCACHE_PATH
 
 --
 
