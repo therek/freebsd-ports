@@ -2,7 +2,7 @@
 # Date created:		2 Feb 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/jed/Makefile,v 1.4 2000/04/17 00:17:54 reg Exp $
+# $FreeBSD: ports/japanese/jed/Makefile,v 1.5 2000/04/24 15:51:16 knu Exp $
 #
 
 PORTNAME=	jed
@@ -77,6 +77,9 @@ pre-fetch:
 
 post-extract:
 	@cd ${WRKDIR} && ${MV} *.sl ${_LIBDIR}/
+
+post-patch:
+	@${RM} ${_INFODIR}/*.orig
 
 do-install:
 	@${MKDIR} ${JED_ROOT}
