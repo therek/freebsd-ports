@@ -2,13 +2,13 @@
 # Date created:		1999 november 7.
 # Whom:			Zahemszky, Gabor <ZGabor at CoDe dot HU>
 #
-# $FreeBSD: ports/security/sslwrap/Makefile,v 1.6 2000/09/22 01:59:04 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sslwrap
 PORTVERSION=	2.0.6
 CATEGORIES=	security
-MASTER_SITES=	http://www.rickk.com/sslwrap/
+MASTER_SITES=	http://www.quiltaholic.com/rickk/sslwrap/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ZGabor@CoDe.HU
