@@ -2,16 +2,16 @@
 # Date created:			Tue Feb 22 00:06:07 CET 2000
 # Whom:				Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/malsync/Makefile,v 1.7 2001/02/23 11:29:15 dirk Exp $
+# $FreeBSD: ports/palm/malsync/Makefile,v 1.8 2001/09/02 07:46:14 dirk Exp $
 #
 
 PORTNAME=	malsync
 PORTVERSION=	2.06
 PORTREVISION=	1
 CATEGORIES=	palm
-MASTER_SITES=	http://www.tomw.org/%SUBDIR%/ \
+MASTER_SITES=	http://www.tomw.org/malsync/ \
 		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	malsync
+MASTER_SITE_SUBDIR=	dirk
 DISTNAME=	malsync_2.0.6.src
 
 MAINTAINER=	dirk@FreeBSD.org
