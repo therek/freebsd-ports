@@ -2,23 +2,21 @@
 # Date created:		10 Dec 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/qcad/Makefile,v 1.5 2000/04/08 23:20:05 mharo Exp $
+# $FreeBSD: ports/cad/qcad/Makefile,v 1.6 2000/04/29 23:58:51 kris Exp $
 #
 
 PORTNAME=	qcad
-PORTVERSION=	1.3.3
+PORTVERSION=	1.4.0
 CATEGORIES=	cad
-MASTER_SITES=	http://www.ultraviolet.org/qcad/
-DISTNAME=	qcad_source
+MASTER_SITES=	http://download.sourceforge.net/qcad/
+DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	will@FreeBSD.org
 
 USE_XLIB=	yes
-MAKEFILE=	makefile
 MAKE_ENV=	CC="${CXX}"
 USE_QT2=	yes
-
-BROKEN=		"Compiler error"
+NO_WRKSUBDIR=	yes
 
 QCADDIR=	${PREFIX}/lib/qcad
 QCADDOCDIR=	${PREFIX}/share/doc/qcad
