@@ -2,7 +2,7 @@
 # Date created:         7 Aug 2000
 # Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/ruby-bigfloat/Makefile,v 1.1 2000/08/07 06:09:18 knu Exp $
 #
 
 PORTNAME=	bigfloat
@@ -15,6 +15,8 @@ MAINTAINER=	knu@FreeBSD.org
 
 BUILD_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
 RUN_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
+
+INSTALL_TARGET=	site-install
 
 NO_WRKSUBDIR=	yes
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
