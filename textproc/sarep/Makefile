@@ -4,7 +4,7 @@
 # Date created:                   Feb 18, 1999
 # Whom:                           ache
 #
-# $FreeBSD: ports/textproc/sarep/Makefile,v 1.9 1999/11/19 01:23:15 ache Exp $
+# $FreeBSD: ports/textproc/sarep/Makefile,v 1.10 1999/11/20 02:15:42 ache Exp $
 #
 
 DISTNAME=       sarep-1.1
@@ -14,7 +14,7 @@ EXTRACT_SUFX=
 
 MAINTAINER=     ache@freebsd.org
 
-RUN_DEPENDS=    ${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Text/CSV_XS.pm:${PORTSDIR}/textproc/p5-Text-CSV_XS
+RUN_DEPENDS=    ${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Text/CSV_XS.pm:${PORTSDIR}/textproc/p5-Text-CSV_XS
 
 EXTRACT_CMD=    $(SED)
 EXTRACT_BEFORE_ARGS= 's=^\#!/usr/bin/perl =\#!${PERL} =' <
