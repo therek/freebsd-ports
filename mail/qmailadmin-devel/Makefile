@@ -2,11 +2,11 @@
 # Date created:		23 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/qmailadmin/Makefile,v 1.4 2001/01/16 17:31:24 sobomax Exp $
+# $FreeBSD: ports/mail/qmailadmin/Makefile,v 1.5 2001/01/29 12:12:58 nbm Exp $
 #
 
 PORTNAME=	qmailadmin
-PORTVERSION=	0.42
+PORTVERSION=	0.45
 CATEGORIES=	mail www
 MASTER_SITES=	http://www.inter7.com/qmailadmin/
 
