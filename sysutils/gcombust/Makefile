@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gcombust
-# Version required:	0.1.22
+# Version required:	0.1.23
 # Date created:		Tue Jun 22 21:17:03 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD: ports/sysutils/gcombust/Makefile,v 1.5 1999/08/31 01:59:44 peter Exp $
+# $FreeBSD: ports/sysutils/gcombust/Makefile,v 1.6 1999/09/08 22:08:25 cpiazza Exp $
 #
 
-DISTNAME=	gcombust-0.1.22
+DISTNAME=	gcombust-0.1.23
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.abo.fi/~jmunsin/gcombust/
 
