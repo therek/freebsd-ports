@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.44 2000/10/28 01:16:36 scrappy Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.45 2000/10/29 05:08:36 will Exp $
 #
 
     SUBDIR += aish
@@ -28,6 +28,7 @@
     SUBDIR += p5-Unicode-String
     SUBDIR += recode
     SUBDIR += ruby-iconv
+    SUBDIR += ruby-sha1
     SUBDIR += tcs
     SUBDIR += tnef
     SUBDIR += trans
