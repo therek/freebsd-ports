@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/osiris/pkg-plist,v 1.2 2004/04/20 20:36:39 sergei Exp $
+@comment $FreeBSD: ports/security/osiris/pkg-plist,v 1.3 2004/07/08 13:38:59 vs Exp $
 sbin/osiris
 sbin/osirisd
 %%OSIRISMD%%sbin/osirismd
@@ -19,6 +19,3 @@ osiris/configs/default.windowsserver2003
 osiris/configs/default.windowsxp
 @dirrm osiris/configs
 @dirrm osiris
-%%PORTDOCS%%%%DOCSDIR%%/OsirisUserGuide.pdf
-%%PORTDOCS%%%%DOCSDIR%%/OsirisUserGuide.rtf
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
