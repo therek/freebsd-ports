@@ -3,7 +3,7 @@
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/textproc/gdict/Makefile,v 1.3 1999/11/15 02:44:35 kris Exp $
+# $FreeBSD: ports/textproc/gdict/Makefile,v 1.4 1999/12/10 19:16:21 flathill Exp $
 #
 
 DISTNAME=	gdict-0.7
@@ -16,6 +16,6 @@ LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gdict ${PREFIX}/bin
-	${INSTALL_PROGRAM} ${WRKSRC}/dict ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/cdict ${PREFIX}/bin
 
 .include <bsd.port.mk>
