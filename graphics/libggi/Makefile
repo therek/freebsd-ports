@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD: ports/graphics/libggi/Makefile,v 1.4 2000/06/16 21:50:55 asami Exp $
+# $FreeBSD: ports/graphics/libggi/Makefile,v 1.5 2001/05/07 11:57:28 jeh Exp $
 #
 
 PORTNAME=	libggi
@@ -68,5 +68,9 @@ MLINKS=		ggiDBGetBuffer.3ggi ggiDBGetNumBuffers.3ggi \
 		ggiSetMode.3ggi ggiCheckMode.3ggi - ggiGetMode.3ggi \
 		ggiSetOrigin.3ggi ggiGetOrigin.3ggi \
 		ggiSetPalette.3ggi ggiGetPalette.3ggi
+
+post-install:
+	@${CP} ${WRKSRC}/libggi.conf ${PREFIX}/etc/ggi/libggi.conf.dist
+	@${CP} ${WRKSRC}/extensions/misc/libggimisc.conf ${PREFIX}/etc/ggi/libggimisc.conf.dist
 
 .include <bsd.port.mk>
