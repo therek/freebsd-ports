@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.86 2004/12/08 06:29:09 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.87 2004/12/21 00:23:16 mezz Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -450,7 +450,7 @@ evolutiondataserver_DETECT=		${X11BASE}/libdata/pkgconfig/evolution-data-server-
 evolutiondataserver_USE_GNOME_IMPL=libgnome
 
 desktopfileutils_RUN_DEPENDS=update-desktop-database:${PORTSDIR}/devel/desktop-file-utils
-desktopfileutils_DETECT=	${X11BASE}/bin/update-desktop-database
+desktopfileutils_DETECT=	${LOCALBASE}/bin/update-desktop-database
 desktopfileutils_USE_GNOME_IMPL=glib20
 
 # End component definition section
