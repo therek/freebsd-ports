@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.121 2003/08/07 13:21:05 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.122 2003/08/18 03:41:58 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -183,6 +183,10 @@ RUBY_SHLIBVER?=		${RUBY_VER:S/.//}
 CONFIGURE_TARGET=	# empty
 
 RUBY_CONFIGURE_ARGS+=	--target="${RUBY_ARCH}" --program-prefix=""
+
+.if ${OSVERSION} >= 501000
+.undef RUBY_WITH_PTHREAD
+.endif
 
 .if defined(RUBY_WITH_PTHREAD)
 RUBY_CONFIGURE_ARGS+=	--with-libc_r=yes
