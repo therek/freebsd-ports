@@ -3,7 +3,7 @@
 # Date created:        6 Oct 1999
 # Whom:                Kentaro Inagaki <inagaki@tg.rim.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/makejvf/Makefile,v 1.1.1.1 1999/11/17 23:38:45 sumikawa Exp $
 #
 
 DISTNAME=	makejvf-1.0-fkr
@@ -23,39 +23,44 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 DIST_SUBDIR=    makejvf
 INSTALL_TARGET=	install-all
 BINARIES=	makejvf makejvfh makejvfk
-MAKEJVFDIR=	${PREFIX}/share/fonts/makejvf
-PTEXTFM=	standard nmin-ngoth jis morisawa
+TEXMF=		${PREFIX}/share/texmf
+MAKEJVF_DIR=	${PREFIX}/share/fonts/makejvf
+MAP_DIR=	${TEXMF}/dvips/makejvf
+PTEX_TFM_DIR=	${TEXMF}/fonts/tfm/makejvf
+DVIPS_TFM_DIR=	${TEXMF}/fonts/tfm/makejvf
+DVIPS_VF_DIR=	${TEXMF}/fonts/vf/makejvf
+PTEX_TFM=	standard nmin-ngoth jis morisawa
 
-DOCS=	README.1st README.txt test1.tex test2.tex kuten2jis jy1mch.fd
+DOCS=		README.1st README.txt test1.tex test2.tex kuten2jis jy1mch.fd
 
 post-extract:
-	@for i in ${PTEXTFM} ; do \
+	@for i in ${PTEX_TFM} ; do \
 		${TAR} -C ${WRKDIR}/ -zxf ${DISTDIR}/${DIST_SUBDIR}/$$i${EXTRACT_SUFX} ; \
 	done
 
 post-install:
-	@${MKDIR} ${MAKEJVFDIR}
-	@for i in ${PTEXTFM} ; do \
+	@${MKDIR} ${MAP_DIR}
+	@for i in ${PTEX_TFM} ; do \
 		${INSTALL_DATA} ${WRKDIR}/$$i/$$i.map \
-			${MAKEJVFDIR}/ ; \
+			${MAP_DIR}/ ; \
 	done
 
-	@${MKDIR} ${MAKEJVFDIR}/tfm/ptex
-	@for i in ${PTEXTFM} ; do \
+	@${MKDIR} ${PTEX_TFM_DIR}/ptex
+	@for i in ${PTEX_TFM} ; do \
 		${INSTALL_DATA} ${WRKDIR}/$$i/tfm/ptex/* \
-			${MAKEJVFDIR}/tfm/ptex/ ; \
+			${PTEX_TFM_DIR}/ptex/ ; \
 	done
 
-	@${MKDIR} ${MAKEJVFDIR}/tfm/dvips
-	@for i in ${PTEXTFM} ; do \
+	@${MKDIR} ${DVIPS_TFM_DIR}/dvips
+	@for i in ${PTEX_TFM} ; do \
 		${INSTALL_DATA} ${WRKDIR}/$$i/tfm/dvips/* \
-			${MAKEJVFDIR}/tfm/dvips/ ; \
+			${DVIPS_TFM_DIR}/dvips/ ; \
 	done
 
-	@${MKDIR} ${MAKEJVFDIR}/vf
-	@for i in ${PTEXTFM} ; do \
+	@${MKDIR} ${DVIPS_VF_DIR}
+	@for i in ${PTEX_TFM} ; do \
 		${INSTALL_DATA} ${WRKDIR}/$$i/vf/* \
-			${MAKEJVFDIR}/vf/ ; \
+			${DVIPS_VF_DIR}/ ; \
 	done
 
 .if !defined(NOPORTDOCS)
