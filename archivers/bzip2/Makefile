@@ -3,7 +3,7 @@
 # Date created:			  19 Nov 1997
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.33 2001/04/13 07:50:40 obrien Exp $
+# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.34 2001/09/07 06:16:40 obrien Exp $
 #
 
 PORTNAME=	bzip2
@@ -13,6 +13,10 @@ MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
 MASTER_SITE_SUBDIR=	bzip2/v100
 
 MAINTAINER=	ports@FreeBSD.org
+
+.if exists(/usr/bin/bzip2)
+IGNORE=		bzip2 is in the base system
+.endif
 
 INSTALLS_SHLIB=	yes
 
