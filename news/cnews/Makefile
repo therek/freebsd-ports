@@ -3,7 +3,7 @@
 # Date created:		28 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/cnews/Makefile,v 1.27 1999/12/25 01:55:46 steve Exp $
+# $FreeBSD: ports/news/cnews/Makefile,v 1.28 2000/01/12 04:25:08 cpiazza Exp $
 #
 
 DISTNAME=	c-news
@@ -29,8 +29,8 @@ PATCHFILES=	c-news-patch-fileart.c c-news-patch-namecheck.awk \
 		c-news-patch-doexpire c-news-patch-queuelen.tay \
 		c-news-patch-bunzip2 \
 		c-news-patch-ctl-underscore \
-		c-news-patch-y2k \
-		c-news-patch-pgpverify-1.12
+		c-news-patch-y2k-2 \
+		c-news-patch-pgpverify-1.12-perl4
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
 
@@ -60,6 +60,9 @@ PGPVERIFY?=	pgpverify-1.12
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 300000
+.if make(makesum) || defined(FETCH_ALL)
+PATCHFILES+=	c-news-patch-gawk3
+.endif
 .else
 PATCHFILES+=	c-news-patch-gawk3
 .endif
