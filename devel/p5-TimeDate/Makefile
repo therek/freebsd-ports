@@ -3,7 +3,7 @@
 # Date created:			Mon Sep  1 17:03:41 CEST 1997
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/devel/p5-TimeDate/Makefile,v 1.7 1999/08/31 06:42:32 mharo Exp $
+# $FreeBSD: ports/devel/p5-TimeDate/Makefile,v 1.8 2000/02/20 17:01:10 andreas Exp $
 #
 
 DISTNAME=	TimeDate-1.08
@@ -12,7 +12,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Date
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dima@Chg.RU
 
 USE_PERL5=	YES
 
