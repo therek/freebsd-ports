@@ -2,11 +2,11 @@
 # Date created:		03 Dec 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/pathalias/Makefile,v 1.3 1999/08/25 06:50:37 obrien Exp $
+# $FreeBSD: ports/mail/pathalias/Makefile,v 1.4 2000/04/13 20:00:25 cpiazza Exp $
 #
 
 PORTNAME=	pathalias
-PORTVERSION= 	9.11
+PORTVERSION=	9.11
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.lan-ks.de/pub/approved/ \
 		ftp://ftp.dinoex.sub.de/pub/approved/
