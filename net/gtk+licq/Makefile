@@ -2,12 +2,12 @@
 # Date created:                         17 Oct 2000
 # Whom:                                 Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gtk+licq/Makefile,v 1.2 2001/04/07 21:02:44 will Exp $
 #
 
 PORTNAME=	gtk+licq
 PORTVERSION=	0.50.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://gtk.licq.org/download/
 
@@ -31,9 +31,17 @@ USE_GNOME=	yes
 CONFIGURE_ARGS=	--enable-gnome
 .else
 CONFIGURE_ARGS=	--disable-gnome
+.endif
+
 post-patch:
+	@find ${WRKSRC} -name "Makefile.in*" | xargs ${PERL5} -pi -e \
+		's|-D_REENTRANT|${PTHREAD_CFLAGS} -D_REENTRANT|g ; \
+		s|^localedir =.*|localedir = \$$(prefix)/share/locale| ; \
+		s|^gtklicq_helpdir =.*|gtklicq_helpdir = \
+		\$$(datadir)/help/gtk+licq/C|'
+.if !defined(HAVE_GNOME)
 	@${PERL5} -pi -e \
-		's|^SUBDIRS\ =.*|SUBDIRS\ =\ |' ${WRKSRC}/doc/Makefile.in
+		's|^SUBDIRS =.*|SUBDIRS =|' ${WRKSRC}/doc/Makefile.in
 .endif
 
 post-configure:
