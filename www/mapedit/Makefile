@@ -2,7 +2,7 @@
 # Date created:		Fr   4 Apr 1997 17:45:31 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/mapedit/Makefile,v 1.16 2000/02/20 17:01:08 andreas Exp $
+# $FreeBSD: ports/www/mapedit/Makefile,v 1.17 2000/04/10 00:05:49 cpiazza Exp $
 #
 
 PORTNAME=	mapedit
@@ -13,8 +13,9 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/java/bin/java:${PORTSDIR}/java/jdk
+RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk
 
+JDK_VERSION=	1.1.8
 NO_BUILD=	yes
 
 pre-install:
