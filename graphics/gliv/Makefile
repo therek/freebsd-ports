@@ -2,14 +2,14 @@
 # Date created:				16 March 2001
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/gliv/Makefile,v 1.1 2001/03/17 16:35:37 vanilla Exp $
+# $FreeBSD: ports/graphics/gliv/Makefile,v 1.2 2001/03/23 14:08:40 kevlo Exp $
 #
 
 PORTNAME=	gliv
-PORTVERSION=	1.0b6
+PORTVERSION=	1.0b7
 CATEGORIES=	graphics
 MASTER_SITES=	http://gliv.tuxfamily.org/
-DISTNAME=	GLiv-1.0beta6
+DISTNAME=	GLiv-1.0beta7
 
 MAINTAINER=	ishmael27@home.com
 
