@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.317 1999/12/09 23:03:07 archie Exp $
+# $FreeBSD: ports/net/Makefile,v 1.318 1999/12/10 11:59:12 bp Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -149,6 +149,7 @@
     SUBDIR += radiusd-cistron
     SUBDIR += radreport
     SUBDIR += ratoolset
+    SUBDIR += rboot
     SUBDIR += rdist6
     SUBDIR += relay
     SUBDIR += rinetd

@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.246 1999/11/14 03:34:00 steve Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.247 1999/11/26 19:08:26 steve Exp $
 #
 
     SUBDIR += 221upgrade
@@ -84,7 +84,6 @@
     SUBDIR += proxyper
     SUBDIR += qclock
     SUBDIR += quotes
-    SUBDIR += rboot
     SUBDIR += rc5des
     SUBDIR += rfc
     SUBDIR += rpm
