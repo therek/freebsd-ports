@@ -3,13 +3,13 @@
 # Date created:			16 Aug 1999
 # Whom:				Patrick Bihan-Faou <patrick@mindstep.com>
 #
-# $FreeBSD: ports/net/pipsecd/Makefile,v 1.2 1999/08/30 14:23:48 peter Exp $
+# $FreeBSD: ports/net/pipsecd/Makefile,v 1.3 1999/09/10 15:09:14 jseger Exp $
 #
 
-DISTNAME=	pipsec-19990831
-PKGNAME=	pipsecd-19990831
+DISTNAME=	pipsec-19991014
+PKGNAME=	pipsecd-19991014
 CATEGORIES=	net security
-MASTER_SITES=	http://www.enst.fr/~beyssac/ \
+MASTER_SITES=	http://www.enst.fr/~beyssac/pipsec/ \
 		http://www.mindstep.com/pipsec/
 
 MAINTAINER=	patrick@mindstep.com
@@ -22,6 +22,7 @@ ALL_TARGET=	pipsecd
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pipsecd ${PREFIX}/sbin
+	${INSTALL_PROGRAM} ${WRKSRC}/pipsecd.sh ${PREFIX}/etc/rc.d
 	${MKDIR} ${PREFIX}/etc/ipsec
 	${INSTALL_DATA} ${WRKSRC}/pipsecd.conf.sample ${PREFIX}/etc/ipsec
 .if !defined(NOPORTDOCS)
