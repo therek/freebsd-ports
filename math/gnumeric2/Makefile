@@ -2,11 +2,11 @@
 # Date created:				08 October 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/math/gnumeric/Makefile,v 1.50 2000/12/08 21:10:56 ade Exp $
+# $FreeBSD: ports/math/gnumeric/Makefile,v 1.51 2000/12/15 17:54:21 ade Exp $
 #
 
 PORTNAME=	gnumeric
-PORTVERSION=	0.60
+PORTVERSION=	0.61
 CATEGORIES=	math gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnumeric
@@ -17,7 +17,6 @@ LIB_DEPENDS=	gnomeprint.13:${PORTSDIR}/print/gnomeprint \
 		glade.4:${PORTSDIR}/devel/libglade \
 		guile.9:${PORTSDIR}/lang/guile \
 		gnomeole2.0:${PORTSDIR}/devel/libole2 \
-		gb.0:${PORTSDIR}/lang/gnomebasic \
 		gal.3:${PORTSDIR}/x11-toolkits/gal
 
 USE_X_PREFIX=	yes
@@ -27,7 +26,7 @@ USE_GNOME=	yes
 USE_PYTHON=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-CONFIGURE_ARGS=	--with-guile --without-bonobo --with-gb
+CONFIGURE_ARGS=	--with-guile --without-bonobo --without-gb
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -lintl"
 
