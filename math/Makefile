@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.124 2001/05/21 12:41:57 sobomax Exp $
+# $FreeBSD: ports/math/Makefile,v 1.125 2001/05/25 16:00:21 roam Exp $
 #
 
     SUBDIR += GiNaC
@@ -47,7 +47,6 @@
     SUBDIR += netcdf
     SUBDIR += ngraph
     SUBDIR += ntl
-    SUBDIR += numpy
     SUBDIR += octave
     SUBDIR += oleo
     SUBDIR += p5-AI-NeuralNet-BackProp
