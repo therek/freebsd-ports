@@ -2,22 +2,23 @@
 # Date created:			14 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/irssi/Makefile,v 1.47 2001/04/26 17:12:23 vanilla Exp $
+# $FreeBSD: ports/irc/irssi/Makefile,v 1.48 2001/04/27 08:56:09 ijliao Exp $
 #
 
 PORTNAME=	irssi
 PORTVERSION=	0.7.98.3
 PORTREVISION=	3
-CATEGORIES=	irc ipv6
+CATEGORIES+=	irc ipv6	# `+=' is for slave ports
 MASTER_SITES=	http://irssi.org/files/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER?=	ports@FreeBSD.org	# `?=' is for slave ports
 
 USE_BZIP2=	yes
 USE_PERL5=	yes
 USE_GLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--without-socks --with-bot --without-servertest \
+# `+=' is for slave ports
+CONFIGURE_ARGS+=	--without-socks --with-bot --without-servertest \
 		--enable-perl-path=${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 CONFIGURE_ENV= LIBS="-L${LOCALBASE}/lib -lintl"
 
