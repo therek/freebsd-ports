@@ -2,11 +2,11 @@
 # Date created:				March 13, 2000
 # Whom:					Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-Apache-Session/Makefile,v 1.6 2001/02/05 15:33:38 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Apache-Session
-PORTVERSION=	1.53
+PORTVERSION=	1.54
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
@@ -25,6 +25,8 @@ MAN3=		Apache::Session.3 \
 		Apache::Session::File.3 \
 		Apache::Session::Flex.3 \
 		Apache::Session::Generate::MD5.3 \
+		Apache::Session::Generate::ModUniqueId.3 \
+		Apache::Session::Generate::ModUsertrack.3 \
 		Apache::Session::Lock::File.3 \
 		Apache::Session::Lock::MySQL.3 \
 		Apache::Session::Lock::Null.3 \
