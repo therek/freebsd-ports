@@ -2,7 +2,7 @@
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.28 2001/04/17 14:18:58 nsayer Exp $
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.29 2001/04/23 22:12:19 olgeni Exp $
 #
 
 PORTNAME?=	xmame
@@ -73,8 +73,7 @@ XMESSDOCS=	changes.mess \
 		messold.txt \
 		messroms.txt \
 		credits.txt
-PINMAMEDOCS=	credits.txt \
-		pinmame/simulation.txt \
+PINMAMEDOCS=	pinmame/simulation.txt \
 		pinmame/whatsnew.txt \
 		pinmame/pinmame.txt \
 		pinmame/gamelist.txt \
