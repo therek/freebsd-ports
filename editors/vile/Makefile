@@ -2,7 +2,7 @@
 # Date created:         Wed Nov 26, 1996
 # Whom:                 pgf
 #
-# $FreeBSD: ports/editors/vile/Makefile,v 1.22 2000/04/14 00:25:49 mharo Exp $
+# $FreeBSD: ports/editors/vile/Makefile,v 1.23 2000/04/17 00:17:29 reg Exp $
 #
 
 PORTNAME=	vile
@@ -20,7 +20,7 @@ MAN1=		vile.1
 
 .if defined(WITH_PERL)
 CONFIGURE_ARGS=	--with-perl
-PLIST=		${PKGDIR}/PLIST.perl
+PLIST=		${PKGDIR}/pkg-plist.perl
 USE_PERL5=	yes
 .endif
 
