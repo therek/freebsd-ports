@@ -2,13 +2,14 @@
 # Date created:		11 Dez 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/emulators/frodo/Makefile,v 1.9 2000/06/23 13:43:57 sobomax Exp $
+# $FreeBSD: ports/emulators/frodo/Makefile,v 1.10 2000/08/30 05:26:11 steve Exp $
 #
 
 PORTNAME=	frodo
 PORTVERSION=	4.1a
 CATEGORIES=	emulators tk82
-MASTER_SITES=	ftp://metalab.unc.edu/pub/micro/commodore/crossplatform/emulators/unix/
+MASTER_SITES=	ftp://metalab.unc.edu/pub/micro/commodore/crossplatform/emulators/Frodo/ \
+		ftp://ftp.funet.fi/pub/cbm/crossplatform/emulators/Frodo/ \
 DISTNAME=	FrodoV4_1a.Src
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
