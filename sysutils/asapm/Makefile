@@ -2,11 +2,11 @@
 # Date created:		6 Aug 1998
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/sysutils/asapm/Makefile,v 1.13 2000/04/22 10:11:27 mharo Exp $
+# $FreeBSD: ports/sysutils/asapm/Makefile,v 1.14 2000/06/23 13:14:35 sobomax Exp $
 #
 
 PORTNAME=	asapm
-PORTVERSION=	2.7
+PORTVERSION=	2.9
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_AFTERSTEP}
 MASTER_SITE_SUBDIR=	apps/asapm
