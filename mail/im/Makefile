@@ -3,10 +3,10 @@
 # Date created:		13 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/im/Makefile,v 1.5 1999/08/25 06:50:13 obrien Exp $
+# $FreeBSD: ports/mail/im/Makefile,v 1.6 1999/09/08 13:54:52 taoka Exp $
 #
 
-DISTNAME=	im-130
+DISTNAME=	im-140
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.mew.org/pub/Mew/ \
 		ftp://ftp.kyushu-u.ac.jp/pub/Misc/mew/ \
@@ -34,5 +34,10 @@ post-install:
 	${INSTALL_DATA} man/* ${PORTDOCDIR}/man; \
 	${INSTALL_DATA} dot.im/* ${SAMPLEDIR}
 .endif
+
+## for make PLIST (only maintainer use)
+#arrange:
+#	${MAKE} -DPLIST_OVERRIDE \
+#	DIRRMDEPTH=1 plist
 
 .include <bsd.port.mk>
