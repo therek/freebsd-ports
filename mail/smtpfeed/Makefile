@@ -2,11 +2,11 @@
 # Date created:		17 January 1998
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/mail/smtpfeed/Makefile,v 1.29 2000/01/30 17:09:27 itojun Exp $
+# $FreeBSD: ports/mail/smtpfeed/Makefile,v 1.30 2000/04/13 20:00:49 cpiazza Exp $
 #
 
 PORTNAME=	smtpfeed
-PORTVERSION= 	1.04
+PORTVERSION=	1.05
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.kyoto.wide.ad.jp/pub/mail/smtpfeed/ \
 		ftp://ftp.kyoto.wide.ad.jp/pub/mail/sendmail/ \
