@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.70 2001/08/12 17:19:41 knu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.71 2001/08/19 16:00:22 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -90,6 +90,7 @@ MASTER_SITE_GNU+=	\
 	ftp://ftp.kddlabs.co.jp/pub/gnu/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/gnu/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,GNU/&,} \
+	ftp://ftp.shellhung.org/pub/gnu/%SUBDIR%/ \
 	ftp://ftp.mirror.ac.uk/sites/ftp.gnu.org/pub/gnu/%SUBDIR%/ \
 	ftp://sunsite.org.uk/Mirrors/ftp.gnu.org/pub/gnu/%SUBDIR%/
 
@@ -164,6 +165,7 @@ MASTER_SITE_PERL_CPAN+=	\
 	ftp://ftp.is.co.za/programming/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/lang/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,lang/perl/CPAN/modules/by-module/&,} \
+	http://cpan.shellhung.org/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.mirror.ac.uk/sites/ftp.funet.fi/pub/languages/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://sunsite.org.uk/packages/perl/CPAN/modules/by-module/%SUBDIR%/
 
