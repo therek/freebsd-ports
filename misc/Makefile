@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.273 2000/05/29 19:57:40 hoek Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.274 2000/06/02 05:35:49 hoek Exp $
 #
 
     SUBDIR += 221upgrade
@@ -128,6 +128,7 @@
     SUBDIR += vera
     SUBDIR += videotext
     SUBDIR += viz
+    SUBDIR += whichman
     SUBDIR += wmcp
     SUBDIR += wmmand
     SUBDIR += wmstock
