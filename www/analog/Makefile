@@ -2,7 +2,7 @@
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/www/analog/Makefile,v 1.40 2001/08/28 23:22:45 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	analog
@@ -30,8 +30,8 @@ ALL_TARGET=	analog
 
 do-install:
 	${MKDIR} ${PREFIX}/share/analog/lang
-	${MKDIR} ${PREFIX}/www/data/images
-	${INSTALL_DATA} ${WRKSRC}/images/* ${PREFIX}/www/data/images
+	${MKDIR} ${PREFIX}/share/analog/images
+	${INSTALL_DATA} ${WRKSRC}/images/* ${PREFIX}/share/analog/images
 	${INSTALL_DATA} ${WRKSRC}/lang/* ${PREFIX}/share/analog/lang
 	${INSTALL_PROGRAM} ${WRKSRC}/analog ${PREFIX}/bin
 .if !exists(${PREFIX}/etc/analog.cfg)
