@@ -2,7 +2,7 @@
 # Date created:				03/16/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnome-icu/Makefile,v 1.24 2000/08/04 02:50:51 ade Exp $
+# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.25 2000/08/04 16:11:14 ade Exp $
 #
 
 PORTNAME=		gnomeicu
