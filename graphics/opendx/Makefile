@@ -2,7 +2,7 @@
 # Date created:		27 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/opendx/Makefile,v 1.11 2001/03/20 12:10:10 tg Exp $
+# $FreeBSD: ports/graphics/opendx/Makefile,v 1.12 2001/03/21 12:58:39 tg Exp $
 #
 
 PORTNAME=	opendx
@@ -29,6 +29,7 @@ USE_MOTIF=	yes
 USE_NEWGCC=	yes
 USE_XLIB=	yes
 AUTOMAKE_ARGS=	-a -i
+CONFIGURE_ARGS=	--without-magick
 CONFIGURE_ENV=	ARCH="" \
 		CFLAGS="${CFLAGS} -I${PREFIX}/include" \
 		CPPFLAGS="-I${PREFIX}/include" \
@@ -40,6 +41,7 @@ PLIST_SUB=	ARCH=${OPSYS:L}
 post-patch:
 	@find ${WRKSRC} -name Makefile.am | \
 	  xargs ${PERL} -pi -e "s;-lXm ;${MOTIFLIB} ;g"
+	@${RM} -f ${WRKSRC}/include/stamp-h.in
 
 pre-configure:
 	@cd ${WRKSRC} && aclocal && ${SETENV} ${CONFIGURE_ENV} autoheader
