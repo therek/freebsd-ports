@@ -2,11 +2,11 @@
 # Date Created:				13 Aug 2001
 # Whom:					Shell Hung <shell@shellhung.org>
 #
-# $FreeBSD: ports/devel/p5-Test-Harness/Makefile,v 1.2 2001/10/02 18:13:46 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Test-Harness
-PORTVERSION=	1.25
+PORTVERSION=	1.26
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Test
