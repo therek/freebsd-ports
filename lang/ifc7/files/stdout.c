@@ -23,10 +23,10 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD: ports/lang/icc/files/stderr.c,v 1.2 2002/09/17 12:10:46 netchild Exp $
+ * $FreeBSD: ports/lang/icc/files/stdout.c,v 1.1 2003/01/11 17:25:51 netchild Exp $
  */
 
 #include <stdio.h>
 
-#undef	stderr
-FILE *stderr = &__sF[2];
+#undef	stdout
+FILE *stdout = &__sF[1];
