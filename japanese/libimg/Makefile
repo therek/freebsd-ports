@@ -2,12 +2,12 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/libimg/Makefile,v 1.5 2000/04/11 14:14:41 knu Exp $
+# $FreeBSD: ports/japanese/libimg/Makefile,v 1.6 2000/06/17 05:33:57 knu Exp $
 #
 
 PORTNAME=	libimg
 PORTVERSION=	1.2b2
-CATEGORIES=	graphics tk80 japanese
+CATEGORIES=	japanese graphics tk80 japanese
 MASTER_SITES=	ftp://ftp.neosoft.com/pub/tcl/sorted/packages-8.0/graphics/Img/1.2/ \
 		http://www.aaa-int.or.jp/~jfactory/TkStep/dist/
 DISTNAME=	img${PORTVERSION}

@@ -2,8 +2,10 @@
 # Date created:                   Thur Nov 2, 2000
 # Whom:                           Michael C . Wu <keichii@iteration.net>
 #
-# $FreeBSD: ports/chinese/rxvt-big5/Makefile,v 1.3 2001/02/05 14:29:34 olgeni Exp $
+# $FreeBSD: ports/chinese/rxvt-big5/Makefile,v 1.4 2001/03/07 22:53:52 keichii Exp $
 #
+
+CATEGORIES=	chinese
 
 MASTERDIR=	${.CURDIR}/../../x11/rxvt
 

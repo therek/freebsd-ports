@@ -2,12 +2,12 @@
 # Date created:		20 April 1997
 # Whom:			nkazushi@highway.or.jp
 #
-# $FreeBSD: ports/japanese/plain2/Makefile,v 1.4 2000/03/07 23:38:38 fenner Exp $
+# $FreeBSD: ports/japanese/plain2/Makefile,v 1.5 2000/04/12 14:37:00 knu Exp $
 #
 
 PORTNAME=	plain2
 PORTVERSION=	2.54
-CATEGORIES=	textproc
+CATEGORIES=	japanese textproc
 MASTER_SITES=	ftp://ftp.nec.co.jp/pub/packages/plain2/
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src

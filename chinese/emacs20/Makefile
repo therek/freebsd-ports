@@ -3,8 +3,10 @@
 # Date created:			  Sat Nov 11, 2000
 # Whom:				  Clive Lin <clive@CirX.ORG>
 #
-# $FreeBSD: ports/chinese/emacs20/Makefile,v 1.1 2000/12/01 04:49:27 keith Exp $
+# $FreeBSD: ports/chinese/emacs20/Makefile,v 1.2 2000/12/06 13:24:41 clive Exp $
 #
+
+CATEGORIES=	chinese
 
 MASTERDIR=	${.CURDIR}/../../editors/emacs20
 

@@ -2,8 +2,10 @@
 # Date created:		27 Nov, 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/enscript/Makefile,v 1.1 2000/11/27 18:00:39 keith Exp $
 #
+
+CATEGORIES=	chinese
 
 PAPERSIZE=	a4
 MASTERDIR=	${.CURDIR}/../../print/enscript-letter

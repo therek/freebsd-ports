@@ -2,7 +2,7 @@
 # Date created:		21 Apr 2001
 # Whom:			luigi@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/picobsd/ssh-picobsd/Makefile,v 1.1 2001/04/22 14:03:02 luigi Exp $
 #
 # A small version of ssh for picobsd. A single binary does ssh,sshd and scp
 #
@@ -10,7 +10,7 @@
 PORTNAME=	ssh
 PORTVERSION=	1.2.27 # Note, 1.2.30 is under a more restrictive license
 PORTREVISION=	1
-CATEGORIES=	security picobsd
+CATEGORIES=	picobsd security
 MASTER_SITES=	ftp://ftp.cs.engr.uky.edu/cs/software/ \
 		ftp://ftp.cs.umn.edu/dept/users/rybski/ \
 		ftp://ftp.net.ohio-state.edu/disk/d/security/ssh/ \

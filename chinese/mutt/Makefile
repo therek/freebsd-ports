@@ -3,8 +3,10 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/chinese/mutt/Makefile,v 1.4 2000/09/02 06:03:51 obrien Exp $
+# $FreeBSD: ports/chinese/mutt/Makefile,v 1.5 2000/10/08 10:25:14 asami Exp $
 #
+
+CATEGORIES=	chinese
 
 MASTERDIR=	${.CURDIR}/../../mail/mutt
 

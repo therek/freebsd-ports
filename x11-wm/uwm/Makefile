@@ -4,12 +4,12 @@
 #
 # based on the NetBSD package
 # $NetBSD: Makefile,v 1.2 2000/02/02 08:07:07 itohy Exp $
-# $FreeBSD: ports/x11-wm/uwm/Makefile,v 1.2 2000/12/26 00:02:34 trevor Exp $
+# $FreeBSD: ports/x11-wm/uwm/Makefile,v 1.3 2001/01/09 15:37:15 trevor Exp $
 #
 
 PORTNAME=	uwm
 PORTVERSION=	19881027
-CATEGORIES=	x11
+CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_NETBSD}
 DISTNAME=	X.V11R3uwm
 

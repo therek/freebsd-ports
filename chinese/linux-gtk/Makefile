@@ -2,12 +2,12 @@
 # Date created:         25 Oct 2000
 # Whom:                 Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/linux-gtk/Makefile,v 1.1 2000/11/06 14:00:50 keith Exp $
+# $FreeBSD: ports/chinese/linux-gtk/Makefile,v 1.2 2001/03/20 20:27:57 obrien Exp $
 #
 
 PORTNAME=	linux-gtk
 PORTVERSION=	1.2.6
-CATEGORIES?=	x11-toolkits linux
+CATEGORIES?=	chinese x11-toolkits linux
 MASTER_SITES=	ftp://cle.linux.org.tw/pub/CLE/stable/v0.9p1/i386/RedHat/RPMS/ \
 		ftp://freebsd.sinica.edu.tw/pub/keith/zh-rpm/
 DISTFILES=	gtk+-1.2.6-7CLE.i386.rpm

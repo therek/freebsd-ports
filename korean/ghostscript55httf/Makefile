@@ -2,13 +2,13 @@
 # Date created:		3 Jul 2000
 # Whom:			CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.20 2001/01/20 15:08:08 cjh Exp $
+# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.21 2001/02/09 16:31:56 cjh Exp $
 #
 
 PORTNAME=	ghostscript
 PORTVERSION=	5.50
 PKGNAMESUFFIX=	-httf
-CATEGORIES=	print
+CATEGORIES=	korean print
 MASTER_SITES=	ftp://ftp.cs.wisc.edu/ghost/aladdin/gs550/ \
 		http://www.erdw.ethz.ch/~bonk/ftp/gs-driver-distrib/ \
 		http://www.ozemail.com.au/~geoffk/pdfencrypt/

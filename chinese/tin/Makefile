@@ -3,8 +3,10 @@
 # Date created:		2 Dev 1997
 # Whom:			Yen-Shuo Su <yssu@CCCA.NCTU.edu.tw>
 #
-# $FreeBSD: ports/chinese/tin/Makefile,v 1.24 2001/02/05 14:29:35 olgeni Exp $
+# $FreeBSD: ports/chinese/tin/Makefile,v 1.25 2001/04/19 02:44:17 clive Exp $
 #
+
+CATEGORIES=	chinese
 
 MASTERDIR=	${.CURDIR}/../../news/tin
 
