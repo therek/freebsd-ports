@@ -2,7 +2,7 @@
 # Date created:				October 25 2000
 # Whom:					bremner@unb.ca
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/ipe/Makefile,v 1.1 2001/04/07 03:12:08 will Exp $
 #
 
 PORTNAME=	Ipe
@@ -18,6 +18,6 @@ RUN_DEPENDS= 	gs:${PORTSDIR}/print/ghostscript6 \
 		latex:${PORTSDIR}/print/teTeX
 
 USE_XLIB=	yes
-REQUIRES_MOTIF= yes
+USE_MOTIF= 	yes
 
 .include <bsd.port.mk>
