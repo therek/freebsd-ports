@@ -2,7 +2,7 @@
 # Date created:				Mon Aug  6 21:53:03 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/tuxtype/Makefile,v 1.1 2001/08/08 04:21:17 lioux Exp $
 #
 
 PORTNAME=	tuxtype
@@ -18,6 +18,7 @@ LIB_DEPENDS=	SDL_image.10:${PORTSDIR}/graphics/sdl_image \
 
 USE_X_PREFIX=	yes
 USE_AUTOCONF=	yes
+USE_AUTOMAKE=	yes
 USE_GMAKE=	yes
 SDL_CONFIG=	${LOCALBASE}/bin/sdl11-config
 CONFIGURE_ENV=	SDL_CONFIG="${SDL_CONFIG}"
