@@ -3,11 +3,10 @@
 # Date created:		27 Jan 2000
 # Whom:			Carl Johan Madestrand <calle.madestrand@norrgarden.se>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/saint/Makefile,v 1.1 2000/01/29 22:33:17 steve Exp $
 #
 
-DISTNAME=	saint-1.5.beta2
-PKGNAME=	saint-1.5
+DISTNAME=	saint-1.5
 CATEGORIES=	security
 MASTER_SITES=	http://www.wwdsi.com/saint/downloads/
 
