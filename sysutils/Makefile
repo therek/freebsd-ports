@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.120 2000/06/30 10:05:21 alex Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.121 2000/07/05 13:16:03 sumikawa Exp $
 #
 
     SUBDIR += LPRng
@@ -14,6 +14,7 @@
     SUBDIR += cd-write
     SUBDIR += cdrecord
     SUBDIR += cfengine
+    SUBDIR += clockspeed
     SUBDIR += comconsole
     SUBDIR += consolehm 
     SUBDIR += contool
