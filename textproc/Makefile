@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.97 2000/06/29 19:23:59 ade Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.98 2000/07/02 09:33:36 ade Exp $
 #
 
     SUBDIR += agrep
@@ -17,6 +17,7 @@
     SUBDIR += dealt-ispell
     SUBDIR += deneu-ispell
     SUBDIR += dict
+    SUBDIR += diff-mode.el
     SUBDIR += diffstat
     SUBDIR += docbook
     SUBDIR += docbook-241
