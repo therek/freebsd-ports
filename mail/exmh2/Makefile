@@ -2,14 +2,15 @@
 # Date created:			1 Jan 97
 # Whom:				Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/mail/exmh2/Makefile,v 1.41 2000/04/17 00:18:10 reg Exp $
+# $FreeBSD: ports/mail/exmh2/Makefile,v 1.42 2000/10/11 15:58:07 markm Exp $
 #
 
 # "+=" and "?=" lines are for sharing this Makefile with japanese/exmh2.
 PORTNAME=	exmh
 PORTVERSION=	2.2
 CATEGORIES+=	mail tk82
-MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/exmh/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER?=	bmah@FreeBSD.org
 
