@@ -3,7 +3,7 @@
 # Date created:			Apr 26, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/afd/Makefile,v 1.1 2001/06/10 15:33:10 ijliao Exp $
 #
 
 PORTNAME=	afd
@@ -14,6 +14,8 @@ MASTER_SITES=	http://www.dwd.de/general/GBTI/afd/download/ \
 DISTNAME=	src-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+FORBIDDEN=	"Installs 88 setuid root applications; disaster waiting to happen"
 
 USE_MOTIF=	yes
 MAKE_ENV=	BINMODE=${BINMODE} \
