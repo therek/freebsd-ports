@@ -2,7 +2,7 @@
 # Date created:		22 May 1999
 # Whom:				Nishika <nishika@cheerful.com>
 #
-# $FreeBSD: ports/emulators/quasi88/Makefile,v 1.4 2000/04/12 04:55:41 mharo Exp $
+# $FreeBSD: ports/emulators/quasi88/Makefile,v 1.5 2000/04/17 00:17:34 reg Exp $
 #
 
 PORTNAME=	quasi88
@@ -18,16 +18,11 @@ USE_XLIB=	yes
 USE_GMAKE=	yes
 DATAFILES=	FAQ FORMAT GET-IMAGE HELP HISTORY LIST MANUAL QUASI88
 
-pre-patch:
 .if !defined(WITH_SOUND)
+pre-everything:
 	@ ${ECHO} "You can make quasi88 use sound by defining WITH_SOUND"
 .else
-	@ ${CP} ${FILESDIR}/patch-aa ${PATCHDIR}
-.endif
-
-post-patch:
-.if defined(WITH_SOUND)
-	@ ${RM} ${PATCHDIR}/patch-aa
+EXTRA_PATCHES=	${FILESDIR}/extra-patch-aa
 .endif
 
 do-install:
