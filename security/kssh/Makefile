@@ -2,11 +2,12 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/security/kssh/Makefile,v 1.8 2000/11/18 15:36:41 kevlo Exp $
+# $FreeBSD: ports/security/kssh/Makefile,v 1.9 2000/11/19 15:09:18 kevlo Exp $
 #
 
 PORTNAME=	kssh
 PORTVERSION=	0.4.1
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.geocities.com/bilibao/
 
