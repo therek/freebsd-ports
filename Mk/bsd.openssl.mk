@@ -2,7 +2,7 @@
 # Date created:		31 May 2002
 # Whom:			dinoex
 #
-# $FreeBSD: ports/Mk/bsd.openssl.mk,v 1.8 2003/08/31 03:28:27 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.openssl.mk,v 1.9 2003/09/03 04:26:36 dinoex Exp $
 #
 # this substitutes USE_OPENSSL=yes
 # just include this makefile after bsd.ports.pre.mk
@@ -53,7 +53,7 @@ WITH_OPENSSL_PORT=yes
 OPENSSLVER!=	${AWK} '/OPENSSL_VERSION_NUMBER/ { print $$3 }' \
 		/usr/include/openssl/opensslv.h
 # check for safe versions in the base
-.if ${OPENSSLVER} == 0x0090701fL || ${OPENSSLVER} == 0x0090702fL || ${OPENSSLVER} == 0x0090609fL
+.if ${OPENSSLVER} == 0x0090701fL || ${OPENSSLVER} == 0x0090702fL || ${OPENSSLVER} == 0x0090609fL || ${OPENSSLVER} == 0x0090703fL
 WITH_OPENSSL_BASE=yes
 .endif
 .endif
