@@ -2,11 +2,11 @@
 # Date created:		18 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.57 2001/08/23 07:47:23 knu Exp $
+# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.58 2001/08/23 12:36:52 knu Exp $
 #
 
 PORTNAME=	portupgrade
-PORTVERSION=	20010823b
+PORTVERSION=	20010826
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www.iDaemons.org/distfiles/
@@ -57,9 +57,11 @@ do-install:
 	cd ${WRKSRC} && ${RUBY} install.rb
 	${MKDIR} ${PREFIX}/share/zsh/site-functions
 	${INSTALL_DATA} ${WRKSRC}/misc/zsh/* ${PREFIX}/share/zsh/site-functions/
-.if !defined(NOPORTDOCS)
+	${MKDIR} ${EXAMPLESDIR}/bash
+	${INSTALL_DATA} ${WRKSRC}/misc/bash/* ${EXAMPLESDIR}/bash/
 	${MKDIR} ${EXAMPLESDIR}/tcsh
 	${INSTALL_DATA} ${WRKSRC}/misc/tcsh/* ${EXAMPLESDIR}/tcsh/
+.if !defined(NOPORTDOCS)
 	${MKDIR} ${DOCSDIR}
 .for f in ${DOCS}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${DOCSDIR}/
