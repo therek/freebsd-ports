@@ -2,13 +2,13 @@
 # Date created:		7 Oct 2000
 # Whom:			"Michael C . Wu" <keichii@iteration.net>
 #
-# $FreeBSD: ports/chinese/auto-tw-l10n/Makefile,v 1.3 2000/11/08 08:38:52 knu Exp $
+# $FreeBSD: ports/chinese/auto-tw-l10n/Makefile,v 1.4 2000/11/09 06:09:55 keith Exp $
 
 PORTNAME=	auto-tw-l10n
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	chinese
 MASTER_SITES=	ftp://ftp.iteration.net/pub/patch_chinese/
-DISTNAME=	zh-tw-skel
+DISTNAME=	zh-tw-skel-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	keichii@iteration.net
