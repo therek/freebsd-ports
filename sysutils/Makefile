@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.115 2000/06/02 15:32:58 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.116 2000/06/06 12:55:22 sobomax Exp $
 #
 
     SUBDIR += LPRng
@@ -52,6 +52,7 @@
     SUBDIR += manck
     SUBDIR += mei
     SUBDIR += mkisofs
+    SUBDIR += monitord
     SUBDIR += muse
     SUBDIR += no-login
     SUBDIR += npadmin
