@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.281 2000/07/19 01:18:43 kuriyama Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.282 2000/07/19 07:20:12 knu Exp $
 #
 
     SUBDIR += Canna
@@ -38,6 +38,7 @@
     SUBDIR += ee
     SUBDIR += elisa10x8
     SUBDIR += elisa8x8
+    SUBDIR += elisp-manual
     SUBDIR += elvis
     SUBDIR += emacs-manual
     SUBDIR += emacs20-dl-canna
