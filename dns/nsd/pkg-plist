@@ -1,8 +1,9 @@
-@comment $FreeBSD$
-sbin/nsd
-sbin/nsdc
-sbin/zonec
-sbin/nsd-notify
+@comment $FreeBSD: ports/dns/nsd/pkg-plist,v 1.2 2003/08/03 00:51:14 naddy Exp $
+etc/rc.d/nsd.sh
 etc/nsd/nsd.zones.sample
 etc/nsd/nsdc.conf.sample
+sbin/nsd
+sbin/nsd-notify
+sbin/nsdc
+sbin/zonec
 @dirrm etc/nsd
