@@ -2,7 +2,7 @@
 # Date created:				25 Jan 2000
 # Whom:					mike@fate.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/pgp6/Makefile,v 1.35 2000/05/29 06:17:53 will Exp $
 #
 
 PORTNAME=	pgp
@@ -24,6 +24,8 @@ WRKSRC=		${WRKDIR}/${DISTNAME}
 USE_GMAKE=      YES
 
 RESTRICTED=     "Crypto"
+
+MAN1=		pgp.1
 
 do-install:
 	cd ${WRKSRC}/clients/pgp/cmdline ; ${GMAKE} install
