@@ -2,7 +2,7 @@
 # Date Created:				10 February 2000
 # Whom:					Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/graphics/gdtclft/Makefile,v 1.5 2001/02/12 10:01:03 knu Exp $
+# $FreeBSD: ports/graphics/gdtclft/Makefile,v 1.6 2001/05/01 09:55:08 mharo Exp $
 #
 
 PORTNAME=	Gdtclft
@@ -27,7 +27,9 @@ MAKE_ENV=	TCL_VER=${TCL_VER} MKDIR="${MKDIR}" \
 ALL_TARGET=	all
 
 MANN=		gdtclft.n
-MANCOMPRESSED=	maybe
+
+post-install:
+	${INSTALL_MAN} ${WRKSRC}/${MANN} ${PREFIX}/man/mann/
 
 .include <bsd.port.mk>
 
