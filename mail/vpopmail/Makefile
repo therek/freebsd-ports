@@ -2,13 +2,14 @@
 # Date created:		21 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/vpopmail/Makefile,v 1.3 2000/10/08 08:53:06 asami Exp $
+# $FreeBSD: ports/mail/vpopmail/Makefile,v 1.4 2000/10/14 01:29:49 nbm Exp $
 #
 
 PORTNAME=	vpopmail
-PORTVERSION=	4.9.4
+PORTVERSION=	4.9.6.1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.inter7.com/vpopmail/
+DISTNAME=	vpopmail-4.9.6-1
 
 MAINTAINER=	nbm@FreeBSD.org
 
