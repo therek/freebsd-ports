@@ -2,7 +2,7 @@
 # Date created:				16 March 2001
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gliv/Makefile,v 1.1 2001/03/17 16:35:37 vanilla Exp $
 #
 
 PORTNAME=	gliv
@@ -22,7 +22,7 @@ USE_MESA=	yes
 GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes
 CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib -lgnugetopt" \
-		CFLAGS="-I${LOCALBASE}/include"
+		CPPFLAGS="-I${LOCALBASE}/include"
 
 MAN1=		GLiv.1
 
