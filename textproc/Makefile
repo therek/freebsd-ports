@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.155 2001/01/04 00:05:13 will Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.156 2001/01/13 15:50:15 alex Exp $
 #
 
     SUBDIR += agrep
@@ -118,6 +118,7 @@
     SUBDIR += ruby-html-parser
     SUBDIR += ruby-rdtool
     SUBDIR += ruby-xmlparser
+    SUBDIR += rxp
     SUBDIR += sablotron
     SUBDIR += sarep
     SUBDIR += sdf
