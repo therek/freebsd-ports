@@ -2,15 +2,17 @@
 # Date created:				23 May 2001
 # Whom:					Olivier Singla <lo_gafet@users.sourceforge.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/glg/Makefile,v 1.1 2001/06/11 04:24:11 will Exp $
 #
 
 PORTNAME=	glg
 PORTVERSION=	0.2.a
 CATEGORIES=	devel gnome
-MASTER_SITES=	http://glg.sourceforge.net/ \
-		${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=	glg
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+#		http://glg.sourceforge.net/ \
+#		${MASTER_SITE_SOURCEFORGE}
+#MASTER_SITE_SUBDIR=	glg
+MASTER_SITE_SUBDIR=	kris
 
 MAINTAINER=	lo_gafet@users.sourceforge.net
 
