@@ -2,7 +2,7 @@
 # Date created:         19 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/tth/Makefile,v 1.18 2000/09/29 12:20:33 tg Exp $
+# $FreeBSD: ports/textproc/tth/Makefile,v 1.19 2000/10/08 10:23:05 asami Exp $
 #
 
 PORTNAME=	tth
@@ -18,7 +18,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6 \
 		latex:${PORTSDIR}/print/teTeX \
-		pnmtopng:${PORTSDIR}/graphics/pnmtopng \
 		ppmtogif:${PORTSDIR}/graphics/netpbm
 
 MAN1=		tth.1

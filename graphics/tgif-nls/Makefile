@@ -2,7 +2,7 @@
 # Date created:         3 May 1999
 # Whom:                 one@netlab.is.tsukuba.ac.jp
 #
-# $FreeBSD: ports/graphics/tgif-nls/Makefile,v 1.10 2000/07/10 01:35:52 steve Exp $
+# $FreeBSD: ports/graphics/tgif-nls/Makefile,v 1.11 2000/09/05 01:41:31 steve Exp $
 #
 
 PORTNAME=	tgif
@@ -17,8 +17,7 @@ MAINTAINER=	one@netlab.is.tsukuba.ac.jp
 
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
-RUN_DEPENDS=	giftopnm:${PORTSDIR}/graphics/netpbm \
-		pnmtopng:${PORTSDIR}/graphics/pnmtopng
+RUN_DEPENDS=	giftopnm:${PORTSDIR}/graphics/netpbm
 
 USE_IMAKE=	yes
 MAN1=		tgif.1
