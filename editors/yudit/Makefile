@@ -2,13 +2,14 @@
 # Date created:		October 3, 1998
 # Whom:			rch@richard.eu.org
 #
-# $FreeBSD: ports/editors/yudit/Makefile,v 1.9 2000/04/14 06:21:02 asami Exp $
+# $FreeBSD: ports/editors/yudit/Makefile,v 1.10 2000/05/20 01:58:04 cpiazza Exp $
 #
 
 PORTNAME=	yudit
 PORTVERSION=	1.5
 CATEGORIES=	editors converters print
-MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITES=	http://yudit.org/download/ \
+		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR= apps/editors/X
 
 MAINTAINER=	rch@WriteMe.Com
