@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/math/galculator/pkg-plist,v 1.2 2003/07/08 15:08:39 naddy Exp $
+@comment $FreeBSD: ports/math/galculator/pkg-plist,v 1.3 2003/09/01 18:35:09 naddy Exp $
 bin/galculator
 share/applications/galculator.desktop
 share/galculator/glade/about.glade
@@ -6,6 +6,7 @@ share/galculator/glade/basic_buttons.glade
 share/galculator/glade/color.glade
 share/galculator/glade/dispctrl_bottom.glade
 share/galculator/glade/dispctrl_right.glade
+share/galculator/glade/dispctrl_right_vertical.glade
 share/galculator/glade/font.glade
 share/galculator/glade/main_frame.glade
 share/galculator/glade/prefs.glade
