@@ -2,11 +2,11 @@
 # Date created:				5 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/kcd/Makefile,v 1.5 2000/06/14 13:21:26 sobomax Exp $
+# $FreeBSD: ports/misc/kcd/Makefile,v 1.6 2000/08/20 10:21:01 will Exp $
 #
 
 PORTNAME=	kcd
-PORTVERSION=	5.0.1
+PORTVERSION=	5.0.2
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
