@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.238 2001/09/11 07:50:32 asmodai Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.239 2001/09/12 13:40:20 roam Exp $
 #
 
     SUBDIR += agrep
@@ -27,6 +27,7 @@
     SUBDIR += docbook-241
     SUBDIR += docbook-300
     SUBDIR += docbook-310
+    SUBDIR += docbook-400
     SUBDIR += docbook-410
     SUBDIR += docbook-tdg
     SUBDIR += docbook-xml
