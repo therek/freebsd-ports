@@ -2,13 +2,13 @@
 # Date created:		2 Feb 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/jed/Makefile,v 1.5 2000/04/24 15:51:16 knu Exp $
+# $FreeBSD: ports/japanese/jed/Makefile,v 1.6 2000/05/17 18:01:01 knu Exp $
 #
 
 PORTNAME=	jed
 PORTVERSION=	${VERSION}.j${JP_VERSION}
 CATEGORIES=	japanese editors
-MASTER_SITES=	http://people.FreeBSD.org/~knu/ports/distfiles/ \
+MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/local-distfiles/knu/ \
 		http://kondara.sdri.co.jp/~kikutani/slang/
 DISTNAME=	${PORTNAME}-B${VERSION:R}-${VERSION:E}__J${JP_VERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
