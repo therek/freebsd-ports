@@ -2,11 +2,11 @@
 # Date created:		31 January 2000
 # Whom:			jasone
 #
-# $FreeBSD: ports/devel/cook/Makefile,v 1.2 2000/02/22 05:35:50 jasone Exp $
+# $FreeBSD: ports/devel/cook/Makefile,v 1.3 2000/04/11 21:27:25 mharo Exp $
 #
 
 PORTNAME=	cook
-PORTVERSION=	2.11
+PORTVERSION=	2.15
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://www.canb.auug.org.au/~millerp/cook/
