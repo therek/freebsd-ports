@@ -3,7 +3,7 @@
 # Date Created:			  2 December 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/devel/stlport/Makefile,v 1.14 2001/08/31 16:36:50 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	stlport
@@ -27,6 +27,10 @@ ALL_TARGET=	clean all
 USE_GMAKE=	yes
 
 FIND?=	/usr/bin/find
+
+.if ${OSVERSION} < 440000
+BROKEN=		"Not supported on systems prior to FreeBSD 4.4"
+.endif
 
 pre-build:
 	@${LN} -sf /usr/include/g++ ${WRKSRC}/../include
