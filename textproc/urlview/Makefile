@@ -3,7 +3,7 @@
 # Date created:			  21 April 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/urlview/Makefile,v 1.11 2000/07/04 19:17:41 obrien Exp $
+# $FreeBSD: ports/textproc/urlview/Makefile,v 1.12 2001/02/05 16:35:18 olgeni Exp $
 #
 
 PORTNAME=	urlview
@@ -23,5 +23,9 @@ MAINTAINER=	obrien@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 MAN1=		urlview.1
+
+post-patch:
+	${PERL} -pi.prefix -e 's.!!PREFIX!!.${PREFIX}.g' \
+		${WRKSRC}/url_handler.sh
 
 .include <bsd.port.mk>
