@@ -1,9 +1,9 @@
 # New ports collection makefile for:	apel for emacs20
-# Version required:	9.22
+# Version required:	9.23
 # Date created:		22 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-emacs20/Makefile,v 1.8 1999/08/31 06:42:46 mharo Exp $
+# $FreeBSD: ports/editors/apel-emacs20/Makefile,v 1.9 1999/10/10 16:25:31 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
