@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.228 2004/03/17 17:22:47 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.229 2004/03/22 08:53:12 adamw Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -736,7 +736,7 @@ MASTER_SITE_SAMBA+= \
 	ftp://ru.samba.org/pub/samba/%SUBDIR%/ \
 	ftp://tr.samba.org/samba/%SUBDIR%/ \
 	http://sambafr.idealx.org/samba/ftp/%SUBDIR%/ \
-	ftp://ftp.easynet.be/samba/ftp/%SUBDIR%/ \
+	ftp://ftp.easynet.be/samba/%SUBDIR%/ \
 	ftp://ftp.linuxforum.net/ftp.samba.org/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/samba/&,}
 
