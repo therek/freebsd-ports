@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.409 2001/10/01 10:06:05 adrian Exp $
+# $FreeBSD$
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -255,6 +255,7 @@
     SUBDIR += pruby
     SUBDIR += publicfile
     SUBDIR += py-HTMLgen
+    SUBDIR += py-websvcs
     SUBDIR += qdecoder
     SUBDIR += quanta
     SUBDIR += quixote
