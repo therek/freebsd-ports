@@ -3,7 +3,7 @@
 # Date created:		26 January 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.19 1999/10/10 06:40:17 mharo Exp $
+# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.20 1999/10/10 07:10:39 mharo Exp $
 #
 
 DISTNAME=	proftpd-1.2.0pre8
@@ -13,7 +13,8 @@ MASTER_SITES=	ftp://ftp.tos.net/pub/proftpd/
 
 MAINTAINER=	mharo@FreeBSD.org
 
-MAN1=	ftpcount.1
+MAN1=	ftpcount.1 ftpwho.1
+MAN5=	xferlog.5
 MAN8=	proftpd.8 ftpshut.8
 
 USE_GMAKE=	yes
@@ -39,13 +40,14 @@ post-configure:
 	@${SED}	-e 's:/usr/bin:${PREFIX}/bin:' \
 		< ${WRKSRC}/src/ftpcount.1.pre_sed > ${WRKSRC}/src/ftpcount.1
 
-#STRIP=
 do-install:
-	@${MKDIR} /var/run/proftpd
 	@${INSTALL_PROGRAM} ${WRKSRC}/ftpcount ${PREFIX}/bin/ftpcount
+	@(cd ${PREFIX}/bin && ${LN} -s ftpcount ftpwho)
 	@${INSTALL_PROGRAM} ${WRKSRC}/proftpd ${PREFIX}/libexec/proftpd
 	@${INSTALL_PROGRAM} ${WRKSRC}/ftpshut ${PREFIX}/sbin/ftpshut
 	@${INSTALL_MAN} ${WRKSRC}/src/ftpcount.1 ${PREFIX}/man/man1/ftpcount.1
+	@${INSTALL_MAN} ${WRKSRC}/src/ftpwho.1 ${PREFIX}/man/man1/ftpwho.1
+	@${INSTALL_MAN} ${WRKSRC}/src/xferlog.5 ${PREFIX}/man/man5/xferlog.5
 	@${INSTALL_MAN} ${WRKSRC}/src/ftpshut.8 ${PREFIX}/man/man8/ftpshut.8
 	@${INSTALL_MAN} ${WRKSRC}/src/proftpd.8 ${PREFIX}/man/man8/proftpd.8
 	@${INSTALL_DATA} \
