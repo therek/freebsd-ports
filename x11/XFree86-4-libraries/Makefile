@@ -2,12 +2,12 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11/XFree86-4-libraries/Makefile,v 1.88 2000/09/29 01:39:51 asami Exp $
+# $FreeBSD: ports/x11/XFree86-4-libraries/Makefile,v 1.89 2000/10/26 06:03:45 asami Exp $
 #
 
 PORTNAME=	libraries
 PORTVERSION=	4.0.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XFREE}
 MASTER_SITE_SUBDIR=	${PORTVERSION}
