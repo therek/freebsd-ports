@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.205 2001/01/14 19:45:28 vanilla Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.206 2001/01/22 15:44:21 ijliao Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -106,6 +106,7 @@
     SUBDIR += ruby-man
     SUBDIR += ruby-perl
     SUBDIR += ruby-python
+    SUBDIR += ruby-reference
     SUBDIR += ruby-tcltklib
     SUBDIR += ruby-usersguide
     SUBDIR += ruby14
