@@ -1,9 +1,7 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/cccc/pkg-plist,v 1.2 2000/11/22 00:17:12 obrien Exp $
 bin/cccc
-share/cccc/cccc_inf.dat
-share/cccc/cccc_met.dat
-share/cccc/cccc_tmt.dat
-share/cccc/cccc_ug.htm
-share/doc/cccc/readme.txt
-@dirrm share/cccc
-@dirrm share/doc/cccc
+%%DATADIR%%/cccc_inf.dat
+%%DATADIR%%/cccc_met.dat
+%%DATADIR%%/cccc_tmt.dat
+%%DATADIR%%/cccc_ug.htm
+@dirrm %%DATADIR%%
