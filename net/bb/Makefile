@@ -1,12 +1,12 @@
 # New ports collection makefile for:	bb
-# Version required:     1.04H
 # Date created:         So  17 Nov 1996 16:59:23 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/bb/Makefile,v 1.38 2000/02/20 16:52:19 andreas Exp $
+# $FreeBSD: ports/net/bb/Makefile,v 1.39 2000/02/20 19:55:27 billf Exp $
 #
 
-DISTNAME=	bb-1.2a
+PORTNAME=	bb
+PORTVERSION=	1.2a
 CATEGORIES=	net
 MASTER_SITES=	http://maclawran.ca/~sean/bb-dnld/ \
 		http://freefall.freebsd.org/~andreas/download/

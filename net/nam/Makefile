@@ -1,15 +1,15 @@
 # New ports collection makefile for: nam
-# Version required:	1.0a7
 # Date created:		26 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/net/nam/Makefile,v 1.3 1999/11/29 03:46:08 steve Exp $
+# $FreeBSD: ports/net/nam/Makefile,v 1.4 2000/03/20 22:47:00 mharo Exp $
 #
 
-DISTNAME=	nam-src-1.0a7
-PKGNAME=	nam-1.0a7
+PORTNAME=	nam
+PORTVERSION=	1.0.a7
 CATEGORIES=	net
 MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/vint/
+DISTNAME=	nam-src-1.0a7
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	cvsup-mirror
-# Version required:	none
 # Date created:		01 February 1997
 # Whom:			jdp
 #
-# $FreeBSD: ports/net/cvsup-mirror/Makefile,v 1.8 2000/01/14 04:39:51 jdp Exp $
+# $FreeBSD: ports/net/cvsup-mirror/Makefile,v 1.9 2000/01/28 06:42:27 jdp Exp $
 #
 
-DISTNAME=	cvsup-mirror-1.1
+PORTNAME=	cvsup-mirror
+PORTVERSION=	1.1
 CATEGORIES=	net
 DISTFILES=
 

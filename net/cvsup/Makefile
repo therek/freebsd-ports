@@ -1,12 +1,12 @@
 # New ports collection makefile for:	cvsup
-# Version required:	16.1
 # Date created:		7 August 1996
 # Whom:			asami
 #
-# $FreeBSD: ports/net/cvsup/Makefile,v 1.35 1999/12/10 18:40:29 jdp Exp $
+# $FreeBSD: ports/net/cvsup/Makefile,v 1.36 2000/02/13 23:31:33 jdp Exp $
 #
 
-DISTNAME=	cvsup-16.1
+PORTNAME=	cvsup
+PORTVERSION=	16.1
 CATEGORIES=	devel net
 MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/development/CVSup/sources/ \
 		ftp://ftp.cs.tu-berlin.de/pub/FreeBSD/development/CVSup/sources/

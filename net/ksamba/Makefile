@@ -1,12 +1,12 @@
 # New ports collection makefile for:   ksamba
-# Version required:    Beta4
 # Date created:        18 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/net/ksamba/Makefile,v 1.11 1999/08/30 14:23:07 peter Exp $
+# $FreeBSD: ports/net/ksamba/Makefile,v 1.12 2000/02/24 07:01:06 asami Exp $
 #
 
-DISTNAME=	ksamba-0.3.3
+PORTNAME=	ksamba
+PORTVERSION=	0.3.3
 CATEGORIES=	kde net
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= unstable/apps/network

@@ -1,15 +1,15 @@
 # Ports collection makefile for:	gated
-# Version required:     3.5.11
 # Date created:		29 October 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/net/gated/Makefile,v 1.25 2000/03/20 22:49:55 mharo Exp $
+# $FreeBSD: ports/net/gated/Makefile,v 1.26 2000/04/06 20:32:06 peter Exp $
 #
 
-DISTNAME=       gated-3-5-11
-PKGNAME=        gated-3.5.11
+PORTNAME=	gated
+PORTVERSION=	3.5.11
 CATEGORIES=	net
 MASTER_SITES=   ftp://ftp.gated.merit.edu/net-research/gated/
+DISTNAME=	gated-3-5-11
 
 MAINTAINER=	ports@FreeBSD.org
 

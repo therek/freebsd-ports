@@ -1,15 +1,15 @@
 # New ports collection makefile for:	FreeWAIS-sf
-# Version required:	2.2.13
 # Date created:		19 November 1996
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/net/freewais-sf/Makefile,v 1.13 1999/10/10 23:44:52 steve Exp $
+# $FreeBSD: ports/net/freewais-sf/Makefile,v 1.14 2000/03/21 01:50:07 mharo Exp $
 #
 
-DISTNAME=	freeWAIS-sf-2.2.13
-PKGNAME=	freewais-sf-2.2.13
+PORTNAME=	freewais-sf
+PORTVERSION=	2.2.13
 CATEGORIES=	net databases
 MASTER_SITES=	ftp://ls6-ftp.cs.uni-dortmund.de/pub/src/freeWAIS-sf/
+DISTNAME=	freeWAIS-sf-2.2.13
 
 MAINTAINER=	ports@FreeBSD.org
 

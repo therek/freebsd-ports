@@ -1,20 +1,20 @@
 # ex:ts=8
 # Ports collection makefile for:  pathchar
-# Version required: 0.0
 # Date created:			  7 November 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/net/pathchar/Makefile,v 1.12 2000/03/20 02:37:06 obrien Exp $
+# $FreeBSD: ports/net/pathchar/Makefile,v 1.13 2000/03/22 00:27:31 obrien Exp $
 #
 
-DISTNAME=	pathchar-a1-freebsd-3.0
-PKGNAME=	pathchar-a1
+PORTNAME=	pathchar
+PORTVERSION=	a1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/pathchar/  \
 		http://www.caida.org/Tools/Pathchar/  \
 		http://www.fips.de/Computer/woman/  \
 		http://sitka.triumf.ca/net/  \
 		http://people.FreeBSD.org/~obrien/Distfiles/
+DISTNAME=	pathchar-a1-freebsd-3.0
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} pathcharnotes.html pathchar.8 \
 		pathchar.mantxt
 

@@ -1,11 +1,12 @@
 # New ports collection makefile for:	libnids
-# Version required:	1.13
 # Date created:		08 Jan 2000
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/net/libnids/Makefile,v 1.2 2000/01/28 05:58:43 kris Exp $
+# $FreeBSD: ports/net/libnids/Makefile,v 1.3 2000/02/18 02:15:24 mharo Exp $
+#
 
-DISTNAME=	libnids-1.13
+PORTNAME=	libnids
+PORTVERSION=	1.13
 CATEGORIES=	net
 MASTER_SITES=	http://www.packetfactory.net/libnids/dist/
 

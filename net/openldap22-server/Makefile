@@ -1,12 +1,12 @@
 # New ports collection makefile for:    openldap
-# Version required:     1.2.9
 # Date created:         20 Sep 1998
 # Whom:                 Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap/Makefile,v 1.11 2000/01/29 21:39:17 steve Exp $
+# $FreeBSD: ports/net/openldap/Makefile,v 1.12 2000/04/02 03:27:50 mharo Exp $
 #
 
-DISTNAME=	openldap-1.2.9
+PORTNAME=	openldap
+PORTVERSION=	1.2.9
 CATEGORIES=	net databases
 MASTER_SITES=	ftp://ftp.OpenLDAP.org/pub/OpenLDAP/openldap-release/ \
 		ftp://ftp.net.lut.ac.uk/openldap/openldap-release/ \

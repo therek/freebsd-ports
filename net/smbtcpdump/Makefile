@@ -1,17 +1,17 @@
 # ex:ts=8
 # Ports collection makefile for:  smbtcpdump
-# Version required: 0.0
 # Date created:			  2 Jun 1998
 # Whom:				  obrien
 #
-# $FreeBSD: ports/net/smbtcpdump/Makefile,v 1.10 2000/03/20 02:37:16 obrien Exp $
+# $FreeBSD: ports/net/smbtcpdump/Makefile,v 1.11 2000/03/22 00:27:42 obrien Exp $
 #
 
-DISTNAME=	tcpdump-3.4
-PKGNAME=	smbtcpdump-3.4
+PORTNAME=	smbtcpdump
+PORTVERSION=	3.4
 CATEGORIES=	net security
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/  \
 		ftp://ftp.uu.net/networking/ip/trace/tcpdump/
+DISTNAME=	tcpdump-3.4
 EXTRACT_SUFX=	.tar.Z
 
 PATCH_SITES=	ftp://ftp.samba.org/pub/samba/tcpdump-smb/

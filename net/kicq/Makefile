@@ -1,12 +1,12 @@
 # New ports collection makefile for:    kicq
-# Version required:                     0.3.0
 # Date created:                         16 March 1999
 # Whom:                                 Pavel Andreev
 #
-# $FreeBSD: ports/net/kicq/Makefile,v 1.4 1999/12/23 18:13:12 steve Exp $
+# $FreeBSD: ports/net/kicq/Makefile,v 1.5 2000/02/24 07:01:06 asami Exp $
 #
 
-DISTNAME=	kicq-0.3.0
+PORTNAME=	kicq
+PORTVERSION=	0.3.0
 CATEGORIES=	net kde
 MASTER_SITES=	http://download.sourceforge.net/kicq/
 

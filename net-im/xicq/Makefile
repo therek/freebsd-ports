@@ -1,15 +1,15 @@
 # New ports collection makefile for:	xicq
-# Version required:			12 July 1998
 # Date created:				29 June 1998
 # Whom:					scrappy
 #
-# $FreeBSD: ports/net/xicq/Makefile,v 1.6 1999/08/30 14:24:33 peter Exp $
+# $FreeBSD: ports/net/xicq/Makefile,v 1.7 1999/11/15 04:32:54 billf Exp $
 #
 
-DISTNAME=	xicq-071298-snapshot.src
-PKGNAME=	xicq-071298
+PORTNAME=	xicq
+PORTVERSION=	19980712	
 CATEGORIES=	net
 MASTER_SITES=	http://www.xtrophy.dk/xicq/
+DISTNAME=	xicq-071298-snapshot.src
 
 MAINTAINER=	scrappy@FreeBSD.org
 

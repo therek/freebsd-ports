@@ -1,12 +1,12 @@
 # New ports collection makefile for:   mtr
-# Version required:    0.42
 # Date created:        12 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/mtr/Makefile,v 1.20 2000/01/27 08:25:28 sumikawa Exp $
+# $FreeBSD: ports/net/mtr/Makefile,v 1.21 2000/03/07 23:49:01 billf Exp $
 #
 
-DISTNAME=	mtr-0.42
+PORTNAME=	mtr
+PORTVERSION=	0.42
 CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/ \
 		http://www.giovannelli.it/~gmarco/files/

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	binkd
-# Version required:	0.9.3
 # Date created:		19 August 1998
 # Whom:			Andrey Zakhvatov
 #
-# $FreeBSD: ports/net/binkd/Makefile,v 1.8 2000/04/01 01:39:40 mharo Exp $
+# $FreeBSD: ports/net/binkd/Makefile,v 1.9 2000/04/01 21:29:29 mharo Exp $
 #
 
-DISTNAME=	binkd093
-PKGNAME=	binkd-0.9.3
+PORTNAME=	binkd
+PORTVERSION=	0.9.3
 CATEGORIES=	net
 MASTER_SITES=	ftp://happy.kiev.ua/pub/fidosoft/mailer/binkd/
+DISTNAME=	binkd093
 
 MAINTAINER=	dsh@vlink.ru
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	bpft
-# Version required:     2.0
 # Date created:         17 March 1999
 # Whom:                 oddbjorn@tricknology.org
 #
-# $FreeBSD: ports/net/bpft/Makefile,v 1.2 1999/08/30 14:22:14 peter Exp $
+# $FreeBSD: ports/net/bpft/Makefile,v 1.3 2000/02/13 07:54:11 mharo Exp $
 #
 
-DISTNAME=	bpft-2.0
+PORTNAME=	bpft
+PORTVERSION=	2.0
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.nsk.su/pub/unix/
 EXTRACT_SUFX=	.tgz

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	arla
-# Version required:		0.31
 # Date created:			09 Sep 1998
 # Whom:				Peter Hawkins <thepish@FreeBSD.org>
 #
-# $FreeBSD: ports/net/arla/Makefile,v 1.8 1999/12/10 19:27:08 obrien Exp $
+# $FreeBSD: ports/net/arla/Makefile,v 1.9 2000/03/04 22:05:14 kris Exp $
 #
 
-DISTNAME=	arla-0.31
+PORTNAME=	arla
+PORTVERSION=	0.31
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.stacken.kth.se/pub/arla/
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for: 	ciscoconf
-# Version required: 			1.0beta1
 # Date created: 			11 September 1998
 # Whom: 				jabley@clear.co.nz
 #
-# $FreeBSD: ports/net/ciscoconf/Makefile,v 1.3 1999/08/30 14:22:17 peter Exp $
+# $FreeBSD: ports/net/ciscoconf/Makefile,v 1.4 2000/02/08 09:27:47 peter Exp $
 #
 
-DISTNAME=	ciscoconf-1.0beta1
-PKGNAME=	ciscoconf-1.0
+PORTNAME=	ciscoconf
+PORTVERSION=	1.0.b1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.patho.gen.nz/pub/users/jabley/ \
 		http://people.FreeBSD.org/~billf/
+DISTNAME=	ciscoconf-1.0beta1
 
 MAINTAINER=	jabley@clear.co.nz
 

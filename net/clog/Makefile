@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  clog
-# Version required: 0.0
 # Date created:			  Tue Nov 04, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/clog/Makefile,v 1.4 2000/03/20 02:36:12 obrien Exp $
+# $FreeBSD: ports/net/clog/Makefile,v 1.5 2000/03/22 00:26:44 obrien Exp $
 #
 
-DISTNAME=	clog-1.6
+PORTNAME=	clog
+PORTVERSION=	1.6
 CATEGORIES=	net security
 MASTER_SITES=	ftp://ftp.saturn.net/pub/users/brian/clog/  \
 		ftp://ftp.cso.uiuc.edu/pub/security/coast/unix/clog/  \

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    licq
-# Version required:                     0.81
 # Date created:                         2 July 1998
 # Whom:                                 Brian Feldman & Matt Heckaman
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/licq/Makefile,v 1.15 2000/04/01 05:21:20 green Exp $
 #
 
-DISTNAME=	licq-0.81
+PORTNAME=	licq
+PORTVERSION=	0.81
 CATEGORIES=	net
 MASTER_SITES=	http://download.sourceforge.net/licq/ \
 		ftp://ftp.wibble.net/pub/licq/srcs/ \

@@ -1,17 +1,15 @@
 # New ports collection makefile for:	datapipe
-# Version required:	1.0
 # Date created:		04 January 2000
 # Whom:			Daniel Baker <dbaker@FreeBSD.org> <dbaker@cuckoo.com>
 #
-# $FreeBSD: ports/net/datapipe/Makefile,v 1.1.1.1 2000/01/04 08:13:51 dbaker Exp $
+# $FreeBSD: ports/net/datapipe/Makefile,v 1.2 2000/01/12 07:52:50 kris Exp $
 #
 
-DISTNAME=	datapipe-1.0
+PORTNAME=	datapipe
+PORTVERSION=	1.0
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.distributed.net/pub/dcti/unsupported/ \
 		http://http.distributed.net/pub/dcti/unsupported/
-
-DISTFILE=	datapipe-1.0.tar.gz
 
 MAINTAINER=	dbaker@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gtksamba
-# Version required:			0.3.1
 # Date created:				4 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/net/gtksamba/Makefile,v 1.9 1999/10/17 13:45:01 asami Exp $
+# $FreeBSD: ports/net/gtksamba/Makefile,v 1.10 2000/03/29 07:16:47 kris Exp $
 #
 
-DISTNAME=	gtksamba-0.3.2pl1
+PORTNAME=	gtksamba
+PORTVERSION=	0.3.2.p1
 CATEGORIES=	net
 MASTER_SITES=	http://www.open-systems.com/gtksamba/
 

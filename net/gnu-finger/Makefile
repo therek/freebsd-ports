@@ -1,16 +1,16 @@
 # New ports collection makefile for:    GNU finger
-# Version required:     1.37
 # Date created:         20 June 1996
 # Whom:                 Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gnu-finger/Makefile,v 1.10 1999/08/30 14:22:50 peter Exp $
 #
 
-DISTNAME=       finger-1.37
-PKGNAME=        gnu-finger-1.37
+PORTNAME=	gnu-finger
+PORTVERSION=	1.37
 CATEGORIES=     net
 MASTER_SITES=   ${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	finger
+DISTNAME=	finger-1.37
 
 MAINTAINER=     sanpei@yy.cs.keio.ac.jp
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	ddup
-# Version required:	2.0.4
 # Date created:		30 September 1999
 # Whom:			cjm2
 #
-# $FreeBSD: ports/net/ddup/Makefile,v 1.4 2000/02/10 23:15:48 jedgar Exp $
+# $FreeBSD: ports/net/ddup/Makefile,v 1.5 2000/02/23 02:52:30 taoka Exp $
 #
 
-DISTNAME=	ddup-2.2Dm
-PKGNAME=	ddup-2.2
+PORTNAME=	ddup
+PORTVERSION=	2.2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ddup.sourceforge.net/pub/ddup/
+DISTNAME=	ddup-2.2Dm
 
 MAINTAINER=	cjm2@altavista.net
 

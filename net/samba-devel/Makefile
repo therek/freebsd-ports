@@ -1,13 +1,12 @@
 # New ports collection makefile for:	samba
-# Version required:			2.0.5a
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba/Makefile,v 1.44 1999/12/24 18:39:40 mharo Exp $
+# $FreeBSD: ports/net/samba/Makefile,v 1.45 2000/03/10 20:47:42 hosokawa Exp $
 #
 
-DISTNAME=	samba-2.0.6
-#PKGNAME=	samba-2.0.5
+PORTNAME=	samba
+PORTVERSION=	2.0.6
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.samba.org/pub/samba/ \
 		ftp://ring.asahi-net.or.jp/pub/net/samba/ \

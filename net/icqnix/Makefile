@@ -1,15 +1,15 @@
 # New ports collection makefile for:	icqnix
-# Version required:	b1
 # Date created:		27 Aug 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/net/icqnix/Makefile,v 1.1.1.1 1999/08/28 02:36:03 jim Exp $
+# $FreeBSD: ports/net/icqnix/Makefile,v 1.2 2000/02/23 00:14:12 asami Exp $
 #
 
-DISTNAME=	icqnix-beta1
-PKGNAME=	icqnix-b1
+PORTNAME=	icqnix
+PORTVERSION=	b1
 CATEGORIES=	net
 MASTER_SITES=	http://icqnix.linuxbox.com/
+DISTNAME=	icqnix-beta1
 
 MAINTAINER=	yinjieh@csie.nctu.edu.tw
 

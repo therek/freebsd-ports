@@ -1,12 +1,12 @@
 # New ports collection makefile for:	nstreams
-# Version required:	1.0.0
 # Date created:		22 September 1999
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/net/nstreams/Makefile,v 1.1.1.1 1999/09/25 03:40:27 cpiazza Exp $
+# $FreeBSD: ports/net/nstreams/Makefile,v 1.2 2000/02/07 03:12:50 kris Exp $
 #
 
-DISTNAME=	nstreams-1.0.0
+PORTNAME=	nstreams
+PORTVERSION=	1.0.0
 CATEGORIES=	net
 MASTER_SITES=	http://www.hsc.fr/cabinet/produits/nstreams/
 

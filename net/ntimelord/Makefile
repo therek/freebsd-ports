@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ntimelord
-# Version required:	1.0
 # Date created:		29 Oct 1997
 # Whom:			Takeru NAIKI <naiki@bfd.es.hokudai.ac.jp>
 #
-# $FreeBSD: ports/net/ntimelord/Makefile,v 1.2 1999/08/30 14:23:31 peter Exp $
+# $FreeBSD: ports/net/ntimelord/Makefile,v 1.3 2000/03/20 22:59:12 mharo Exp $
 #
 
-DISTNAME=	ntimelord-1.0
+PORTNAME=	ntimelord
+PORTVERSION=	1.0
 CATEGORIES=	net
 MASTER_SITES=	ftp://terminator.rs.itd.umich.edu/unix/netatalk/
 EXTRACT_SUFX=	.tar.Z

@@ -1,15 +1,15 @@
 # New ports collection makefile for: ns-2
-# Version required:	2.1b5
 # Date created:		26 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/net/ns/Makefile,v 1.2 1999/08/30 14:23:30 peter Exp $
+# $FreeBSD: ports/net/ns/Makefile,v 1.3 1999/11/28 18:31:26 steve Exp $
 #
 
-DISTNAME=	ns-src-2.1b5
-PKGNAME=	ns-2.1b5
+PORTNAME=	ns
+PORTVERSION=	2.1.b5
 CATEGORIES=	net
 MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/vint/
+DISTNAME=	ns-src-2.1b5
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
 

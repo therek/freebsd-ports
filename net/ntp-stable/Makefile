@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ntp
-# Version required:	4.0.99g
 # Date created:		Di   5 Mai 1998 21:31:03 CEST
 # Whom:			andreas
 #
-# $FreeBSD: ports/net/ntp/Makefile,v 1.10 2000/02/20 17:06:43 andreas Exp $
+# $FreeBSD: ports/net/ntp/Makefile,v 1.11 2000/04/01 04:27:57 mharo Exp $
 #
 
-DISTNAME=	ntp-4.0.99g
+PORTNAME=	ntp
+PORTVERSION=	4.0.99g
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.udel.edu/pub/ntp/ntp4/
 

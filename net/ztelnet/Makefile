@@ -1,9 +1,8 @@
 # New ports collection makefile for:    ztelnet
-# Version required:     1.0p3
 # Date created:         15 Mar 1998
 # Whom:                 CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ztelnet/Makefile,v 1.9 1999/08/30 14:24:37 peter Exp $
 #
 # In this ports..
 #   - new compilation diff for FreeBSD(now we can upload!)
@@ -12,8 +11,8 @@
 #     Thanks to Carl Mascott <cmascott@world.std.com>
 # NOTE: in first post-patch, we can ignore warnings.
 
-DISTNAME=	ztelnet2
-PKGNAME=	ztelnet-1.0p3
+PORTNAME=	ztelnet
+PORTVERSION=	1.0.p3
 CATEGORIES=	net
 MASTER_SITES=	ftp://jazz.snu.ac.kr/pub/unix/util/net/ztelnet/ \
 		ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/

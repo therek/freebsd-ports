@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gnome-vnc
-# Version required:		0.1
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/net/gnome-vnc/Makefile,v 1.1.1.1 1999/10/07 03:53:26 cpiazza Exp $
+# $FreeBSD: ports/net/gnome-vnc/Makefile,v 1.2 1999/10/17 13:45:05 asami Exp $
 #
 
-DISTNAME=	gnome-vnc-0.1
+PORTNAME=	gnome-vnc
+PORTVERSION=	0.1
 CATEGORIES= 	net
 MASTER_SITES=	ftp://ftp.daa.com.au/pub/james/gnome/
 

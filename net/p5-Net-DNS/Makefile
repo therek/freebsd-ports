@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Net-DNS
-# Version required:			0.12
 # Date created:				April 5th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Net-DNS/Makefile,v 1.12 1999/08/30 14:23:37 peter Exp $
+# $FreeBSD: ports/net/p5-Net-DNS/Makefile,v 1.13 1999/08/31 06:48:59 mharo Exp $
 #
 
-DISTNAME=	Net-DNS-0.12
-PKGNAME=	p5-Net-DNS-0.12
+PORTNAME=	p5-Net-DNS
+PORTVERSION=	0.12
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
+DISTNAME=	Net-DNS-0.12
 
 MAINTAINER=	jfitz@FreeBSD.org
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	sup
-# Version required:	<own lineage>
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/net/sup/Makefile,v 1.12 1999/08/30 14:24:13 peter Exp $
+# $FreeBSD: ports/net/sup/Makefile,v 1.13 2000/02/05 10:55:47 dirk Exp $
 #
 
-DISTNAME=	sup
-PKGNAME=	sup-2.0
+PORTNAME=	sup
+PORTVERSION=	2.0
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+DISTNAME=	sup
 
 MAINTAINER=	ports@FreeBSD.org
 

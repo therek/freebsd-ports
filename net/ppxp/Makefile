@@ -1,14 +1,14 @@
 # New ports collection makefile for: ppxp
-# Version required:	0.99120923
 # Date created:		24 Dec 1999
 # Whom:			Norio Suzuki <nosuzuki@e-mail.ne.jp>
 #			KUNISHIMA Takeo <kunishi@c.oka-pu.ac.jp>
 #			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/net/ppxp/Makefile,v 1.9 1999/11/28 18:31:35 steve Exp $
+# $FreeBSD: ports/net/ppxp/Makefile,v 1.10 1999/12/25 18:49:27 steve Exp $
 #
 
-DISTNAME=	ppxp-0.99120923
+PORTNAME=	ppxp
+PORTVERSION=	0.99120923
 CATEGORIES=	net tk82
 .if defined(USE_TCLJP)
 CATEGORIES+=	japanese

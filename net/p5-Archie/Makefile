@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Archie
-# Version required:			1.5
 # Date created:				October 19th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Archie/Makefile,v 1.9 1999/08/30 14:23:36 peter Exp $
+# $FreeBSD: ports/net/p5-Archie/Makefile,v 1.10 1999/08/31 06:48:58 mharo Exp $
 #
 
-DISTNAME=	perl_archie.1.5
-PKGNAME=	p5-Archie-1.5
+PORTNAME=	p5-Archie
+PORTVERSION=	1.5
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Archie
+DISTNAME=	perl_archie.1.5
 
 MAINTAINER=	jfitz@FreeBSD.org
 

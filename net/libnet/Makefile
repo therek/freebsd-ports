@@ -1,12 +1,12 @@
 # Ports collection makefile for:  libnet
-# Version required:		0.99g
 # Date created:			Sun Feb 3, 1999
 # Whom:				shipley@dis.org
 #
-# $FreeBSD: ports/net/libnet/Makefile,v 1.4 1999/10/08 02:33:48 cpiazza Exp $
+# $FreeBSD: ports/net/libnet/Makefile,v 1.5 1999/10/08 03:46:23 cpiazza Exp $
 #
 
-DISTNAME=	libnet-0.99g
+PORTNAME=	libnet
+PORTVERSION=	0.99g
 CATEGORIES=     net
 MASTER_SITES=	http://www.packetfactory.net/libnet/dist/
 EXTRACT_SUFX=	.tgz

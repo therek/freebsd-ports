@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ipfm
-# Version required:			0.10.4
 # Date Created:				4 Mar 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ipfm/Makefile,v 1.1.1.1 2000/03/11 15:36:23 jedgar Exp $
 #
 
-DISTNAME=	ipfm-0.10.4
+PORTNAME=	ipfm
+PORTVERSION=	0.10.4
 CATEGORIES=     net
 MASTER_SITES=	http://www.via.ecp.fr/~tibob/ipfm/archive/
 EXTRACT_SUFX=	.tgz

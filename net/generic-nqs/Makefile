@@ -1,20 +1,20 @@
 # New ports collection makefile for:	nqs (Generic NQS)
-# Version required:     3.50.6
 # Date created:         01 May 1998
 # Whom:                 tonym
 #
-# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.6 2000/03/04 23:02:48 cpiazza Exp $
+# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.7 2000/03/23 02:17:31 kris Exp $
 #
 # View this file with tabstop=4
 #
 
-DISTNAME=		Generic-NQS-3.50.6
+PORTNAME=		Generic-NQS
+PORTVERSION=	3.50.6
 CATEGORIES=		net
 MASTER_SITES=	http://ftp.gnqs.org/pub/gnqs/source/by-version-number/v3.50/
 
 MAINTAINER=		tony.maher@ebioinformatics.com
 
-FORBIDDEN=	"Local root compromise"
+FORBIDDEN=		"Local root compromise"
 
 Y2K=			http://www.gnqs.org/Year2000.htm
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ncplib
-# Version required:     1.3.4
 # Date created:		9 Dec 1999
 # Whom:			Boris Popov <bp@butya.kz>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ncplib/Makefile,v 1.2 1999/12/10 11:58:41 bp Exp $
 #
 
-DISTNAME=	ncplib-1.3.4
+PORTNAME=	ncplib
+PORTVERSION=	1.3.4
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.butya.kz/pub/nwlib/ \
 		http://www.chat.ru/~rbp/pub/nwlib/

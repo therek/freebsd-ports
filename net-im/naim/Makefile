@@ -1,16 +1,16 @@
 # New ports collection makefile for: naim
-# Version required:     	0.9.3
 # Date created:			02 March 1999
 # Whom:				mharo@area51.fremont.ca.us
 #
-# $FreeBSD: ports/net/naim/Makefile,v 1.10 2000/02/14 02:12:31 asami Exp $
+# $FreeBSD: ports/net/naim/Makefile,v 1.11 2000/03/20 22:47:45 mharo Exp $
 #
 
-DISTNAME=	naim-0.9.5-nicer2
-PKGNAME=	naim-0.9.5.2
+PORTNAME=	naim
+PORTVERSION=	0.9.5.2
 CATEGORIES=	net
 MASTER_SITES=	http://dev.n.ml.org/ \
 		ftp://ftp.netmug.org/pub/FreeBSD/distfiles/
+DISTNAME=	naim-0.9.5-nicer2
 
 MAINTAINER=	mharo@FreeBSD.org
 

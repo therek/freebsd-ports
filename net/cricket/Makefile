@@ -1,12 +1,12 @@
 # New ports collection makefile for:	Cricket
-# Version required:	0.72
 # Date created:		20 November 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/net/cricket/Makefile,v 1.1.1.1 2000/02/13 21:00:08 torstenb Exp $
+# $FreeBSD: ports/net/cricket/Makefile,v 1.2 2000/02/13 21:27:56 torstenb Exp $
 #
 
-DISTNAME=	cricket-0.72
+PORTNAME=	cricket
+PORTVERSION=	0.72
 CATEGORIES=	net
 MASTER_SITES=	http://www.munitions.com/~jra/cricket/dists/
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	elsa
-# Version required:			1.0b-018
 # Date created:				06 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/net/elsa/Makefile,v 1.2 1999/12/04 20:28:23 cpiazza Exp $
+# $FreeBSD: ports/net/elsa/Makefile,v 1.3 2000/01/04 14:19:49 jedgar Exp $
 #
 
-DISTNAME=	elsa-freebsd_x86
-PKGNAME=	elsa-1.0b-018
+PORTNAME=	elsa
+PORTVERSION=	1.0.b018
 CATEGORIES=	net
-MASTER_SITES=	""
+MASTER_SITES=
+DISTNAME=	elsa-freebsd_x86
 
 MAINTAINER=	jedgar@FreeBSD.org
 

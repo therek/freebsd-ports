@@ -1,12 +1,12 @@
 # New ports collection makefile for:   wmnet
-# Version required:    1.2
 # Date created:        24 November 1998
 # Whom:                Rich Neswold <rneswold@mcs.net>
 #
-# $FreeBSD: ports/net/wmnet/Makefile,v 1.4 1999/08/30 14:24:31 peter Exp $
+# $FreeBSD: ports/net/wmnet/Makefile,v 1.5 2000/02/22 14:25:23 jedgar Exp $
 #
 
-DISTNAME=	wmnet-1.2
+PORTNAME=	wmnet
+PORTVERSION=	1.2
 CATEGORIES=	net windowmaker
 MASTER_SITES=	ftp://ftp.enteract.com/users/rneswold/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    wais
-# Version required:     0.5
 # Date created:         20 Sep 1994
 # Whom:                 adam
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/wais/Makefile,v 1.14 1999/08/30 14:24:30 peter Exp $
 #
 
-DISTNAME=       freeWAIS-0.5
+PORTNAME=	freeWAIS
+PORTVERSION=	0.5
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.cnidr.org/pub/NIDR.tools/freewais/
 

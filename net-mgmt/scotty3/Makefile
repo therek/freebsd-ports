@@ -1,12 +1,12 @@
 # New ports collection makefile for:	scotty
-# Version required:	2.1.9
 # Date created:		18 February 1995
 # Whom:			Gennady Sorokopud <gena@netvisions.net.il>
 #
-# $FreeBSD: ports/net/scotty/Makefile,v 1.38 1999/11/28 18:31:48 steve Exp $
+# $FreeBSD: ports/net/scotty/Makefile,v 1.39 1999/12/23 23:51:52 steve Exp $
 #
 
-DISTNAME=	scotty-2.1.10
+PORTNAME=	scotty
+PORTVERSION=	2.1.10
 CATEGORIES=	net tk82
 MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/pub/local/tkined/
 

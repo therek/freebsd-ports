@@ -1,12 +1,12 @@
 # New ports collection makefile for:	everybuddy
-# Version required:		0.1.1
 # Date created:			1 Mar 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/everybuddy/Makefile,v 1.1.1.1 2000/03/02 09:28:23 jim Exp $
 #
 
-DISTNAME=	everybuddy-0.1.1
+PORTNAME=	everybuddy
+PORTVERSION=	0.1.1
 CATEGORIES=	net
 MASTER_SITES=	http://www.everybuddy.com/files/
 

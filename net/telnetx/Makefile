@@ -1,16 +1,16 @@
 # New ports collection makefile for:	telnetx
-# Version required:		?
 # Date created:			22 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/net/telnetx/Makefile,v 1.8 1999/08/31 06:49:21 mharo Exp $
+# $FreeBSD: ports/net/telnetx/Makefile,v 1.9 2000/01/29 05:30:41 asami Exp $
 #
 
-DISTNAME=	telnetx+transit.src.940401
-PKGNAME=	telnetx-940401
+PORTNAME=	telnetx
+PORTVERSION=	940401
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www.sfc.wide.ad.jp/~max/FreeBSD/ports/distfiles/
+DISTNAME=	telnetx+transit.src.940401
 
 MAINTAINER=	max@FreeBSD.org
 

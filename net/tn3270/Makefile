@@ -1,17 +1,17 @@
 # New ports collection makefile for:	tn3270
-# Version required:	4.4BSD-Lite
 # Date created:		30 August 1999
 # Whom:			markm
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/tn3270/Makefile,v 1.1.1.1 1999/08/30 20:27:50 markm Exp $
 #
 
-DISTNAME=	tn3270
-PKGNAME=	tn3270-4.4
+PORTNAME=	tn3270
+PORTVERSION=	4.4
 CATEGORIES=	net
 MASTER_SITES=	http://freefall.freebsd.org/~markm/ \
 		ftp://ftp.za.freebsd.org/pub/FreeBSD/distfiles/ \
 		ftp://ftp3.za.freebsd.org/pub/FreeBSD/distfiles/
+DISTNAME=	tn3270
 
 MAINTAINER=	markm@FreeBSD.ORG
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   isic
-# Version required:    0.05
 # Date created:                25 February 2000
 # Whom:                        Brad Hendrickse <bradh@uunet.co.za>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/isic/Makefile,v 1.1.1.1 2000/03/11 15:04:12 jedgar Exp $
 #
 
-DISTNAME=	isic-0.05
+PORTNAME=	isic
+PORTVERSION=	0.05
 CATEGORIES=	net
 MASTER_SITES=	http://expert.cc.purdue.edu/~frantzen/
 EXTRACT_SUFX=	.tgz

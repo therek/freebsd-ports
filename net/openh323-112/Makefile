@@ -1,18 +1,17 @@
 # New ports collection makefile for:	openh323
-# Version required:	1.1alpha1
 # Date created:		Thu Feb 17 15:00:48 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/net/openh323/Makefile,v 1.5 2000/02/29 08:41:41 roger Exp $
+# $FreeBSD: ports/net/openh323/Makefile,v 1.6 2000/04/04 13:38:09 roger Exp $
 #
 
-DISTNAME=	openh323_1.1alpha1
-PKGNAME=	openh323-1.1.a1
+PORTNAME=	openh323
+PORTVERSION=	1.1.a1
 CATEGORIES=	net
 MASTER_SITES=	http://www.openh323.org/bin/ \
 		http://www.de.openh323.org/bin/ \
 		http://www.ru.openh323.org/bin/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
+DISTFILES=	openh323_1.1alpha1${EXTRACT_SUFX} \
 		pwlib_min_1.14.tar.gz
 
 MAINTAINER=	roger@freebsd.org

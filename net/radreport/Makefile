@@ -1,15 +1,15 @@
 # New ports collection makefile for:	radreport
-# Version required:	1.3
 # Date created:		10/22/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/net/radreport/Makefile,v 1.1.1.1 1999/11/26 20:19:04 steve Exp $
+# $FreeBSD: ports/net/radreport/Makefile,v 1.2 2000/02/11 12:57:47 jedgar Exp $
 #
 
-DISTNAME=	radreport
-PKGNAME=	radreport-1.3
+PORTNAME=	radreport
+PORTVERSION=	1.3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.livingston.com/pub/le/contrib/radius/
+DISTNAME=	radreport
 EXTRACT_SUFX=
 
 MAINTAINER=	kbyanc@posi.net

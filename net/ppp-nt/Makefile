@@ -1,16 +1,16 @@
 # New ports collection makefile for:	ppp + nat + time schedule
-# Version required:	2.2.7
 # Date created:		10 August 1998
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ppp-nt/Makefile,v 1.7 1999/08/31 06:49:09 mharo Exp $
+# $FreeBSD: ports/net/ppp-nt/Makefile,v 1.8 2000/02/08 09:27:57 peter Exp $
 #
 
-DISTNAME=	ppp-2.2.7
-PKGNAME=	ppp-nt-2.2.7
+PORTNAME=	ppp-nt
+PORTVERSION=	2.2.7
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		http://people.FreeBSD.org/~sada/distfiles/
+DISTNAME=	ppp-2.2.7
 
 PATCH_SITES=	http://www.rr.iij4u.or.jp/~sada/patches/ \
 		http://people.FreeBSD.org/~sada/distfiles/

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gtkyahoo
-# Version required:		0.16
 # Date created:			18 August 1999
 # Whom:				dannyman@dannyland.org
 #
-# $FreeBSD:$
+# $FreeBSD: ports/net/gtkyahoo/Makefile,v 1.1.1.1 1999/08/27 22:35:33 jim Exp $
 #
 
-DISTNAME=	gtkyahoo-0.16
+PORTNAME=	gtkyahoo
+PORTVERSION=	0.16
 CATEGORIES=	net
 MASTER_SITES=	http://www.unixtools.org/gtkyahoo/dist/tars/
 

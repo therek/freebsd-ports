@@ -1,19 +1,19 @@
 # ex:ts=8
 # Ports collection makefile for:  dhcp
-# Version required: 0.0
 # Date created:			  21 November 1995
 # Whom:				  Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/net/wide-dhcp/Makefile,v 1.22 2000/03/20 02:37:37 obrien Exp $
+# $FreeBSD: ports/net/wide-dhcp/Makefile,v 1.23 2000/03/22 00:28:12 obrien Exp $
 #
 
-DISTNAME=       dhcp-1.4.0p6
-PKGNAME=        wide-dhcp-1.4.0p6
+PORTNAME=	wide-dhcp
+PORTVERSION=	1.4.0.p6
 CATEGORIES=     net
 MASTER_SITES=   ftp://sh.wide.ad.jp/WIDE/free-ware/dhcp/ \
 		ftp://ftp.netlab.is.tsukuba.ac.jp/pub/network/wide-dhcp/ \
 		ftp://ftp.st.ryukoku.ac.jp/pub/network/dhcp/wide/ \
 		ftp://ftp.sage-au.org.au/pub/network/boot/wide-dhcp/
+DISTNAME=	dhcp-1.4.0p6
 
 MAINTAINER=	obrien@FreeBSD.org
 

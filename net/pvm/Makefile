@@ -1,16 +1,16 @@
 # New ports collection makefile for:	pvm3
-# Version required:			3.4.3
 # Date created:				11 March 1999
 # Whom:					Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/net/pvm/Makefile,v 1.3 1999/08/31 11:28:42 asami Exp $
+# $FreeBSD: ports/net/pvm/Makefile,v 1.4 2000/03/29 21:24:05 will Exp $
 #
 
-DISTNAME=	pvm3.4.3
-PKGNAME=	pvm-3.4.3
+PORTNAME=	pvm
+PORTVERSION=	3.4.3
 CATEGORIES=	net
 MASTER_SITES=	http://www.netlib.org/pvm3/	\
 		ftp://ftp.chg.ru/pub/prog/parallel/pvm/pvm3/
+DISTNAME=	pvm3.4.3
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dima@Chg.RU

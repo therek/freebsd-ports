@@ -1,15 +1,15 @@
 # New ports collection makefile for:    sendfile
-# Version required:     2.1
 # Date created:         30 Oct 1997
 # Whom:                 sec@42.org
 #
-# $FreeBSD: ports/net/sendfile/Makefile,v 1.12 1999/08/30 14:24:08 peter Exp $
+# $FreeBSD: ports/net/sendfile/Makefile,v 1.13 2000/03/09 20:00:32 ade Exp $
 #
 
-DISTNAME=	sendfile-20000102
-PKGNAME=	sendfile-2.1
+PORTNAME=	sendfile
+PORTVERSION=	2.1
 CATEGORIES=	net
 MASTER_SITES=   ftp://ftp.belwue.de/pub/unix/sendfile/current/
+DISTNAME=	sendfile-20000102
 
 MAINTAINER=	sec@42.org
 

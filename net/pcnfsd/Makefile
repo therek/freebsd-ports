@@ -1,15 +1,15 @@
 # New ports collection makefile for:	pcnfsd
-# Version required:	93.02.16
 # Date created:		Oct 6, 1994
 # Whom:			pst
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/pcnfsd/Makefile,v 1.11 1999/08/30 14:23:46 peter Exp $
 #
 
-DISTNAME=	pcnfsd.93.02.16
-PKGNAME=	pcnfsd-93.02.16
+PORTNAME=	pcnfsd
+PORTVERSION=	93.02.16
 CATEGORIES=	net
 MASTER_SITES=	ftp://bcm.tmc.edu/pcnfs/
+DISTNAME=	pcnfsd.93.02.16
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org

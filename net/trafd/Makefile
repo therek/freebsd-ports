@@ -1,12 +1,12 @@
 # New ports collection makefile for:	trafd
-# Version required:	3.0
 # Date created:		22 January 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/net/trafd/Makefile,v 1.1 2000/01/29 05:37:36 steve Exp $
+# $FreeBSD: ports/net/trafd/Makefile,v 1.2 2000/02/12 20:18:58 imura Exp $
 #
 
-DISTNAME=	trafd-3.0
+PORTNAME=	trafd
+PORTVERSION=	3.0
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.riss-telecom.ru/pub/dev/trafd/
 EXTRACT_SUFX=	.tgz

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   tund
-# Version required:    0.11
 # Date created:        20 July 1999
 # Whom:                Sergey Kosyakov <ks@itp.ac.ru>
 #
-# $FreeBSD: ports/net/tund/Makefile,v 1.3 1999/09/18 17:48:11 steve Exp $
+# $FreeBSD: ports/net/tund/Makefile,v 1.4 2000/02/06 22:14:03 kris Exp $
 #
 
-DISTNAME=	tund-0.20
+PORTNAME=	tund
+PORTVERSION=	0.20
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.chg.ru/pub/networking/freebsd/
 

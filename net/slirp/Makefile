@@ -1,12 +1,12 @@
 # New ports collection makefile for:	slirp
-# Version required:	1.0c
 # Date created:		25 Aug 1995
 # Whom:			Alain Kalker <A.C.P.M.Kalker@student.utwente.nl>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/slirp/Makefile,v 1.12 1999/08/30 14:24:10 peter Exp $
 #
 
-DISTNAME=	slirp-1.0c
+PORTNAME=	slirp
+PORTVERSION=	1.0c
 CATEGORIES=	net
 MASTER_SITES=	ftp://blitzen.canberra.edu.au/pub/slirp/
 

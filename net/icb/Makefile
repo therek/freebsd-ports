@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  icb
-# Version required: 0.0
 # Date created:			  Tue Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.ucdavis.edu)
 #
-# $FreeBSD: ports/net/icb/Makefile,v 1.5 2000/03/20 02:36:32 obrien Exp $
+# $FreeBSD: ports/net/icb/Makefile,v 1.6 2000/03/22 00:26:58 obrien Exp $
 #
 
-DISTNAME=	icb-5.0.9
+PORTNAME=	icb
+PORTVERSION=	5.0.9
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.swcp.com/pub/icb/clients/unix/  \
 		ftp://ftp.empire.net/pub/icb/clients/  \

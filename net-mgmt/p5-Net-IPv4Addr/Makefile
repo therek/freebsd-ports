@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Net-IPv4Addr
-# Version required:			0.08
 # Date created:				25 February 2000
 # Whom:                			Brad Hendrickse <bradh@uunet.co.za>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Net-IPv4Addr/Makefile,v 1.1 2000/02/25 16:38:56 ade Exp $
 #
 
-DISTNAME=	Net-IPv4Addr-0.08
-PKGNAME=	p5-Net-IPv4Addr-0.08
+PORTNAME=	p5-Net-IPv4Addr
+PORTVERSION=	0.08
 CATEGORIES=	net perl5
 # not using CPAN due to them messing up the filename and version numbers
 MASTER_SITES=	http://indev.insu.com/sources/
+DISTNAME=	Net-IPv4Addr-${PORTVERSION}
 
 MAINTAINER=	bradh@uunet.co.za
 

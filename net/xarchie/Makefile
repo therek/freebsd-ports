@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xarchie
-# Version required:	2.0.10
 # Date created:		24 September 1994
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/xarchie/Makefile,v 1.15 1999/08/30 14:24:32 peter Exp $
 #
 
-DISTNAME=	xarchie-2.0.10
+PORTNAME=	xarchie
+PORTVERSION=	2.0.10
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications

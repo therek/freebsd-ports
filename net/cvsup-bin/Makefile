@@ -1,12 +1,12 @@
 # New ports collection makefile for:	cvsup-bin
-# Version required:	16.1
 # Date created:		12 November 1997
 # Whom:			Sheldon Hearn <axl@iafrica.com>
 #
-# $FreeBSD: ports/net/cvsup-bin/Makefile,v 1.14 1999/12/10 18:40:36 jdp Exp $
+# $FreeBSD: ports/net/cvsup-bin/Makefile,v 1.15 1999/12/28 05:35:34 jdp Exp $
 #
 
-DISTNAME=	cvsup-bin-16.1
+PORTNAME=	cvsup-bin
+PORTVERSION=	16.1
 CATEGORIES=	devel net
 MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/development/CVSup/binaries/
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	RAToolSet
-# Version required:			3.5.8
 # Date created:				May 4th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ratoolset/Makefile,v 1.13 1999/12/10 21:22:21 steve Exp $
+# $FreeBSD: ports/net/ratoolset/Makefile,v 1.14 2000/02/27 23:07:51 steve Exp $
 #
 
-DISTNAME=	RAToolSet-3.5.8
-PKGNAME=	ratoolset-3.5.8
+PORTNAME=	ratoolset
+PORTVERSION=	3.5.8
 CATEGORIES=	net tk82
 MASTER_SITES=	ftp://ftp.isi.edu/ra/RAToolSet/
+DISTNAME=	RAToolSet-3.5.8
 
 MAINTAINER=	jfitz@FreeBSD.org
 

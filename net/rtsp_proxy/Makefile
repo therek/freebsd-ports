@@ -1,15 +1,15 @@
 # New ports collection makefile for: 	rtsp_proxy
-# Version required: 			1.0
 # Date created:				8 June 1999
 # Whom:					Richard Kiss <richard@homemail.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/rtsp_proxy/Makefile,v 1.4 1999/08/30 14:24:05 peter Exp $
 #
 
-DISTNAME=	SS1.0.1
-PKGNAME=	rtsp_proxy-1.0
+PORTNAME=	rtsp_proxy
+PORTVERSION=	1.0
 CATEGORIES=	net
 MASTER_SITES=	http://www.streamingserver.org/priss/
+DISTNAME=	SS1.0.1
 EXTRACT_SUFX=   .tgz
 
 MAINTAINER=	richard@homemail.com

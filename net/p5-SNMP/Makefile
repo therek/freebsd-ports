@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-SNMP
-# Version required:			1.8b3
 # Date created:				May 5th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-SNMP/Makefile,v 1.8 1999/08/31 06:49:03 mharo Exp $
+# $FreeBSD: ports/net/p5-SNMP/Makefile,v 1.9 1999/09/04 23:50:35 billf Exp $
 #
 
-DISTNAME=	SNMP-1.8.1
-PKGNAME=	p5-SNMP-1.8.1
+PORTNAME=	p5-SNMP
+PORTVERSION=	1.8.1
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	SNMP
+DISTNAME=	SNMP-${PORTVERSION}
 
 MAINTAINER=	jfitz@FreeBSD.org
 

@@ -1,17 +1,17 @@
 # ex:ts=8
 # Ports collection makefile for:  bounce
-# Version required: 0.0
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/bounce/Makefile,v 1.6 2000/03/20 02:36:09 obrien Exp $
+# $FreeBSD: ports/net/bounce/Makefile,v 1.7 2000/03/22 00:26:42 obrien Exp $
 #
 
-DISTNAME=	bounce
-PKGNAME=	bounce-1.0
+PORTNAME=	bounce
+PORTVERSION=	1.0
 CATEGORIES=	net security
 MASTER_SITES=	http://www.eleves.ens.fr:8080/home/espel/  \
 		http://people.FreeBSD.org/~obrien/Distfiles/
+DISTNAME=	bounce
 EXTRACT_SUFX=	.c
 
 MAINTAINER=	obrien@FreeBSD.org

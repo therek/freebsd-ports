@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mpich (portable mpi standard imp.)
-# Version required:	1.2.0
 # Date created:		2 May 1998
 # Whom:                 dbader@eece.unm.edu
 #
-# $FreeBSD: ports/net/mpich/Makefile,v 1.13 2000/01/31 23:45:14 mharo Exp $
+# $FreeBSD: ports/net/mpich/Makefile,v 1.14 2000/04/02 04:26:02 mharo Exp $
 #
 
-DISTNAME=	mpich-1.2.0
+PORTNAME=	mpich
+PORTVERSION=	1.2.0
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.mcs.anl.gov/pub/mpi/
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	fspclient
-# Version required:	0.0-h+
 # Date created:		7 Nov 1994
 # Whom:			ache
 #
-# $FreeBSD: ports/net/fspclient/Makefile,v 1.13 1999/12/23 03:41:49 ache Exp $
+# $FreeBSD: ports/net/fspclient/Makefile,v 1.14 1999/12/27 21:35:40 steve Exp $
 #
 
-DISTNAME=	fspclient
-PKGNAME=	fspclient-0.0.h
+PORTNAME=	fspclient
+PORTVERSION=	0.0.h
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/network/file-transfer
+DISTNAME=	fspclient
 
 MAINTAINER=	ports@FreeBSD.org
 

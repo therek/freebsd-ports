@@ -1,12 +1,12 @@
 # New ports collection makefile for:   kdenetwork
-# Version required:    Beta4
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.40 2000/02/15 13:45:02 imura Exp $
+# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.41 2000/02/24 07:01:03 asami Exp $
 #
 
-DISTNAME=	kdenetwork-1.1.2
+PORTNAME=	kdenetwork
+PORTVERSION=	1.1.2
 CATEGORIES=	net news kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2

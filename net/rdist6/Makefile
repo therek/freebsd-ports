@@ -1,12 +1,12 @@
 # New ports collection makefile for:	rdist
-# Version required:	rdist-6.1.5
 # Date created:		19 August 1995
 # Whom:			peter
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/rdist6/Makefile,v 1.19 1999/08/30 14:23:58 peter Exp $
 #
 
-DISTNAME=	rdist-6.1.5
+PORTNAME=	rdist
+PORTVERSION=	6.1.5
 CATEGORIES=	net
 MASTER_SITES=	http://www.magnicomp.com/download/rdist/ \
 		ftp://ftp.rge.com/pub/admin/rdist/ \

@@ -1,13 +1,12 @@
 # New ports collection makefile for:	ascend-radius
-# Version required:			980618 (v1.16)
 # Date created:				August 28th 96
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ascend-radius/Makefile,v 1.12 1999/08/30 14:22:06 peter Exp $
+# $FreeBSD: ports/net/ascend-radius/Makefile,v 1.13 1999/08/31 06:48:37 mharo Exp $
 #
 
-#DISTNAME=	radius-980618
-PKGNAME=	ascend-radius-980618
+PORTNAME=	ascend-radius
+PORTVERSION=	980618
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ascend.com/pub/Software-Releases/Radius/Current/ \
 		ftp://ftp.ascend.com/pub/Software-Releases/Radius/Current/doc/ \

@@ -1,14 +1,15 @@
 # New ports collection makefile for:	nsping
-# Version required:	0.8
 # Date created:		04 March 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/nsping/Makefile,v 1.1 2000/03/05 09:38:50 kris Exp $
+#
 
-DISTNAME=	nsping
-PKGNAME=	nsping-0.8
+PORTNAME=	nsping
+PORTVERSION=	0.8
 CATEGORIES=	net
 MASTER_SITES=	http://www.enteract.com/~tqbf/
+DISTNAME=	nsping
 
 MAINTAINER=	kris@FreeBSD.org
 

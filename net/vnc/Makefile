@@ -1,13 +1,12 @@
 # New ports collection makefile for:	vnc
-# Version required:     3.3.3r1
 # Date created:		24 February 1998
 # Whom:			msmith
 #
-# $FreeBSD: ports/net/vnc/Makefile,v 1.14 2000/02/10 01:41:25 cpiazza Exp $
+# $FreeBSD: ports/net/vnc/Makefile,v 1.15 2000/02/17 00:45:46 cpiazza Exp $
 #
 
-DISTNAME=       	vnc-3.3.3r1_unixsrc
-PKGNAME=        	vnc-3.3.3r1
+PORTNAME=		vnc
+PORTVERSION=		3.3.3r1
 CATEGORIES=		net
 MASTER_SITES=   	http://www.uk.research.att.com/vnc/dist/
 DISTFILES=		vnc-3.3.3r1_unixsrc.tgz \

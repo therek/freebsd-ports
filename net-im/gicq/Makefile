@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gicq
-# Version required:			0.33
 # Date Created:				31 Oct 1998
 # Whom:					Seiichirou Hiraoka
 #
-# $FreeBSD: ports/net/gicq/Makefile,v 1.12 2000/01/28 01:39:05 flathill Exp $
+# $FreeBSD: ports/net/gicq/Makefile,v 1.13 2000/02/08 09:27:49 peter Exp $
 #
 
-DISTNAME=	gicq-0.33
+PORTNAME=	gicq
+PORTVERSION=	0.33
 CATEGORIES=	net
 MASTER_SITES=	http://people.FreeBSD.org/~flathill/distfiles/ \
 		ftp://ftp.korsoft.com/pub/gicq/

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    ttt
-# Version required:     1.3
 # Date created:         22 September 1998
 # Whom:                 Kenjiro Cho <kjc@csl.sony.co.jp>
 #
-# $FreeBSD: ports/net/ttt/Makefile,v 1.15 1999/08/30 14:24:27 peter Exp $
+# $FreeBSD: ports/net/ttt/Makefile,v 1.16 1999/11/28 18:32:25 steve Exp $
 #
 
-DISTNAME=       ttt-1.4
+PORTNAME=	ttt
+PORTVERSION=	1.4
 CATEGORIES=	net tk82
 MASTER_SITES=   ftp://ftp.csl.sony.co.jp/pub/kjc/
 
