@@ -2,13 +2,15 @@
 # Date created:		20 November 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/net/cricket/Makefile,v 1.2 2000/02/13 21:27:56 torstenb Exp $
+# $FreeBSD: ports/net/cricket/Makefile,v 1.3 2000/04/09 18:10:42 cpiazza Exp $
 #
 
 PORTNAME=	cricket
 PORTVERSION=	0.72
 CATEGORIES=	net
-MASTER_SITES=	http://www.munitions.com/~jra/cricket/dists/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
+		http://www.munitions.com/~jra/cricket/dists/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	torstenb@FreeBSD.org
 
