@@ -2,13 +2,14 @@
 # Date created:        	2000.07.12
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/wdic-fpw/Makefile,v 1.1.1.1 2000/07/12 05:58:10 taoka Exp $
 #
 
 PORTNAME=	wdic001-fpw
 PORTVERSION=	0.11
 CATEGORIES=	japanese
-MASTER_SITES=	http://www.wdic.org/file/ \
+MASTER_SITES=	http://www.infonets.hiroshima-u.ac.jp/~taoka/FreeBSD/ports/ \
+		http://www.wdic.org/file/ \
 		http://www.geocities.co.jp/SiliconValley-Bay/2872/
 DISTFILES=	${DICTFILES} wdc001fpw-${PORTVERSION}.tar.gz
 EXTRACT_ONLY=	wdc001fpw-${PORTVERSION}.tar.gz
