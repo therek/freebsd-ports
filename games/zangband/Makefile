@@ -2,15 +2,15 @@
 # Date created:        29 May 2000
 # Whom:                Makoto YAMAKURA <makoto@pinpott.spnet.ne.jp>
 #
-# $FreeBSD: ports/games/zangband/Makefile,v 1.5 2000/10/08 02:29:06 asami Exp $
+# $FreeBSD: ports/games/zangband/Makefile,v 1.6 2000/10/08 10:20:17 asami Exp $
 #
 
 PORTNAME=	zangband
 PORTVERSION=	2.4.0${JA_VERSION}
 PORTREVISION=	1
 CATEGORIES+=	games
-MASTER_SITES=	ftp://export.andrew.cmu.edu/angband/Variant/ \
-		ftp://ftp.sunet.se/pub/games/Angband/Variant/ \
+MASTER_SITES=	ftp://clockwork.dementia.org/angband/Variant/ZAngband/ \
+		ftp://ftp.sunet.se/pub/games/Angband/Variant/ZAngband/ \
 		${JA_MASTER_SITE}
 DISTFILES=	${PORTNAME}-${E_VERSION:S/.//g}-src.zip \
 		${JA_DISTFILE}
