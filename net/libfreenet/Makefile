@@ -3,15 +3,15 @@
 # Date created:			Mar 31, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/libfreenet/Makefile,v 1.1 2001/03/31 07:32:19 ijliao Exp $
 #
 
 PORTNAME=	libfreenet
-PORTVERSION=	0.3.0
+PORTVERSION=	0.4.0
 CATEGORIES=	net
 MASTER_SITES=	http://thalassocracy.org/libfreenet/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_OPENSSL=	yes
 USE_LIBTOOL=	yes
