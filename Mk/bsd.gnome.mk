@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.36 2003/06/01 00:16:07 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.37 2003/06/01 00:32:22 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -48,7 +48,10 @@ gnomehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "Makefile.in*" | ${XARGS} ${REINPLA
 				 s|[(]datadir[)]/gnome/|(datadir)/|g ; \
 				 s|[(]libdir[)]/pkgconfig|(prefix)/libdata/pkgconfig|g ; \
 				 s|[$$][(]localstatedir[)]/scrollkeeper|${SCROLLKEEPER_DIR}|g ; \
-				 s|[(]libdir[)]/bonobo/servers|(prefix)/libdata/bonobo/servers|g'
+				 s|[(]libdir[)]/bonobo/servers|(prefix)/libdata/bonobo/servers|g' ; \
+			${FIND} ${WRKSRC} -name "configure" | ${XARGS} ${REINPLACE_CMD} -e \
+				's|-lpthread|${PTHREAD_LIBS}|g ; \
+				 s|DATADIRNAME=lib|DATADIRNAME=share|g'
 
 gnomehier_RUN_DEPENDS=	${X11BASE}/share/gnome/.keep_me:${PORTSDIR}/misc/gnomehier
 gnomehier_DETECT=	${X11BASE}/share/gnome/.keep_me
