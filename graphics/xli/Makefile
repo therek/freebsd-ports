@@ -2,7 +2,7 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/xli/Makefile,v 1.18 2000/07/04 07:13:33 sobomax Exp $
+# $FreeBSD: ports/graphics/xli/Makefile,v 1.19 2001/03/26 06:11:19 jkoshy Exp $
 #
 
 PORTNAME=	xli
@@ -19,8 +19,7 @@ LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_IMAKE=	yes
-MANN=		xli.n xlito.n
-MANCOMPRESSED=	no
+MAN1=		xli.1 xlito.1
 
 post-patch:
 	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/Imakefile
