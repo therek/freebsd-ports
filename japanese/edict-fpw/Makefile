@@ -2,13 +2,13 @@
 # Date created:        	00/01/14
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/edict-fpw/Makefile,v 1.2 2000/04/11 14:13:13 knu Exp $
+# $FreeBSD: ports/japanese/edict-fpw/Makefile,v 1.3 2000/08/24 13:42:09 taoka Exp $
 #
 
 PORTNAME=	edict-fpw
 PORTVERSION=	1.2.1
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/freepwing/fpwbooks/edict/ \
+MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/edict/ \
 		ftp://ftp.cc.monash.edu.au/pub/nihongo/ \
 		ftp://ftp.cdrom.com/pub/japanese/monash/ \
 		ftp://ftp.sedl.org/pub/mirrors/nihongo/ \
@@ -24,7 +24,6 @@ MAINTAINER=    	taoka@FreeBSD.org
 BUILD_DEPENDS=	fpwmake:${PORTSDIR}/japanese/freepwing \
 		catdump:${PORTSDIR}/japanese/epwutil \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Jcode.pm:${PORTSDIR}/japanese/p5-Jcode
-
 
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}
 
