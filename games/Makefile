@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.351 2001/04/07 05:30:41 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.352 2001/04/07 05:33:57 will Exp $
 #
 
     SUBDIR += 3dc
@@ -303,6 +303,7 @@
     SUBDIR += xroach
     SUBDIR += xroads
     SUBDIR += xrobots
+    SUBDIR += xrot
     SUBDIR += xrubik
     SUBDIR += xscavenger
     SUBDIR += xscorch
