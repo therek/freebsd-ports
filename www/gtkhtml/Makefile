@@ -2,23 +2,20 @@
 # Date created:				2nd June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/www/gtkhtml/Makefile,v 1.21 2001/03/12 15:56:54 ade Exp $
+# $FreeBSD: ports/www/gtkhtml/Makefile,v 1.22 2001/03/29 16:34:50 sobomax Exp $
 #
 
 PORTNAME=	gtkhtml
-PORTVERSION=	0.8.2
+PORTVERSION=	0.9.2
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gtkhtml
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	bonobo.2:${PORTSDIR}/devel/bonobo \
-		ghttp.1:${PORTSDIR}/www/libghttp \
-		wwwzip.1:${PORTSDIR}/www/libwww \
-		gconf-1.1:${PORTSDIR}/devel/gconf \
+LIB_DEPENDS=	glibwww.1:${PORTSDIR}/www/glibwww \
 		pspell.4:${PORTSDIR}/textproc/pspell \
-		gal.4:${PORTSDIR}/x11-toolkits/gal
+		gal.6:${PORTSDIR}/x11-toolkits/gal
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.321 2001/04/07 00:34:42 will Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.322 2001/05/04 21:39:45 ade Exp $
 #
 
     SUBDIR += 9term
@@ -32,6 +32,7 @@
     SUBDIR += gdm
     SUBDIR += gmessage
     SUBDIR += gnome
+    SUBDIR += gnome-fifth-toe
     SUBDIR += gnomeapplets
     SUBDIR += gnomecore
     SUBDIR += gnomelibs

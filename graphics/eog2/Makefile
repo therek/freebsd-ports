@@ -2,20 +2,17 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/eog/Makefile,v 1.19 2001/02/15 19:22:43 ade Exp $
+# $FreeBSD: ports/graphics/eog/Makefile,v 1.20 2001/03/29 16:33:56 sobomax Exp $
 #
 
 PORTNAME=	eog
 PORTVERSION=	0.6
+PORTREVISION=	1
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/eog
 
 MAINTAINER=	ade@FreeBSD.org
-
-LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade \
-		bonobo.2:${PORTSDIR}/devel/bonobo \
-		gconf-1.1:${PORTSDIR}/devel/gconf
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

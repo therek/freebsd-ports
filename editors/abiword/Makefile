@@ -2,7 +2,7 @@
 # Date created:         3 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.16 2001/01/08 06:28:36 keith Exp $
+# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.17 2001/03/06 09:45:09 keith Exp $
 #
 
 # Note: this port cannot be built when the textproc/mswordview port is
@@ -11,6 +11,7 @@
 
 PORTNAME=	AbiWord
 PORTVERSION=	0.7.13
+PORTREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://www.abisource.com/downloads/Version-${PORTVERSION}/lf/
 DISTNAME=	abi-${PORTVERSION}
@@ -24,7 +25,6 @@ MAINTAINER=	wolman@cs.washington.edu
 # unzip is needed during the installation process
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
-#		iconv.2:${PORTSDIR}/converters/iconv
 RUN_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 
 DIST_SUBDIR=	AbiWord

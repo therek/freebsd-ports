@@ -2,23 +2,19 @@
 # Date created:				20 Jun 2000
 # Whom:				Erich Zigler <erich@tacni.net>
 #
-# $FreeBSD: ports/net/gabber/Makefile,v 1.11 2001/03/13 15:18:04 sobomax Exp $
+# $FreeBSD: ports/net/gabber/Makefile,v 1.12 2001/03/29 16:34:21 sobomax Exp $
 #
 
 PORTNAME=	gabber
-PORTVERSION=	0.8.1
-CATEGORIES=	net
+PORTVERSION=	0.8.2
+CATEGORIES=	net gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	erich@tacni.net
 
-LIB_DEPENDS=	gtkmm.2:${PORTSDIR}/x11-toolkits/gtk-- \
-		gnomemm.3:${PORTSDIR}/x11-toolkits/gnome-- \
-		sigc.1:${PORTSDIR}/devel/libsigc++ \
-		gal.4:${PORTSDIR}/x11-toolkits/gal \
-		giconv.2:${PORTSDIR}/converters/libiconv \
-		glade.4:${PORTSDIR}/devel/libglade
+LIB_DEPENDS=	gnomemm.6:${PORTSDIR}/x11-toolkits/gnome-- \
+		gal.6:${PORTSDIR}/x11-toolkits/gal
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
@@ -35,5 +31,7 @@ post-patch:
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
+	@find ${WRKSRC}/src -name "*.[ch]" | xargs ${PERL} -pi -e \
+		's|\<iconv.h\>|\<giconv.h\>|g'
 
 .include <bsd.port.mk>
