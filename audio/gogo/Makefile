@@ -2,7 +2,7 @@
 # Date created:        01 July 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/audio/gogo/Makefile,v 1.24 2000/12/24 04:57:08 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gogo
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	nakai@FreeBSD.org
 
 # More than version 0.98
-BUILD_DEPENDS=	nasm-0.98:${PORTSDIR}/devel/nasm
+BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 
 USE_GMAKE=	yes
 ALL_TARGET=	gogo
