@@ -2,7 +2,7 @@
 # Date created:		7 Feb 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-qt2gl/Makefile,v 1.7 2001/04/06 10:08:13 knu Exp $
+# $FreeBSD: ports/graphics/ruby-qt2gl/Makefile,v 1.8 2001/08/23 06:46:34 knu Exp $
 #
 
 PORTNAME=	qt2gl
@@ -27,7 +27,7 @@ USE_RUBY_EXTCONF=	yes
 USE_GMAKE=	yes
 
 WRKSRC=		${RUBY_QT2_WRKSRC}/modules/opengl
-CONFIGURE_ARGS=	${RUBY_QT2_CONFIGURE_ARGS}
+CONFIGURE_ARGS=	${RUBY_QT2_CONFIGURE_ARGS:S/--with-qt2=qt2/--with-qt2=qtgl/}
 MAKE_ARGS=	LOCAL_LIBS=-lgcc
 INSTALL_TARGET=	site-install
 
