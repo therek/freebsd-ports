@@ -2,7 +2,7 @@
 # Date created:				03/27/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/devel/py-kjbuckets/Makefile,v 1.7 2000/06/20 13:37:35 nectar Exp $
+# $FreeBSD: ports/devel/py-kjbuckets/Makefile,v 1.8 2000/09/08 12:23:57 tg Exp $
 #
 
 PORTNAME=		kjbuckets
@@ -14,16 +14,14 @@ DISTNAME=		kjb
 
 MAINTAINER=		nectar@FreeBSD.org
 
-BUILD_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
-RUN_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
-
+USE_PYTHON=		yes
 NO_WRKSUBDIR=		yes
+MAKE_ENV=		PYTHON_VERSION=${PYTHON_VERSION}
 MAKEFILE=		makefile
 
 do-install:
-	${MKDIR} ${PREFIX}/lib/python1.5/site-packages
-	${INSTALL_DATA} ${WRKSRC}/kjbucketsmodule.so                   \
-		${PREFIX}/lib/python1.5/site-packages/
+	${MKDIR} ${PYTHON_SITELIBDIR}
+	${INSTALL_DATA} ${WRKSRC}/kjbucketsmodule.so ${PYTHON_SITELIBDIR}
 .if !defined(NOPORTDOCS)
 	${INSTALL_DATA} ${WRKSRC}/kjbuckets.html ${PREFIX}/share/doc/
 .endif
