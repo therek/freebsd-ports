@@ -3,16 +3,14 @@
 # Date created:		26 Nov 1999
 # Whom:			imura@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/xwmm/Makefile,v 1.1.1.1 1999/11/26 20:42:06 imura Exp $
 #
 
 DISTNAME=	xwmm-0.7
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://www.softarc.com/~msharkey/wmm/
+MASTER_SITES=	http://people.FreeBSD.org/~imura/distfiles/
 
 MAINTAINER=	imura@FreeBSD.org
-
-FETCH_BEFORE_ARGS=	-b
 
 USE_X_PREFIX=	yes
 USE_QT2=	yes
@@ -22,7 +20,7 @@ ALL_TARGET=	# empty
 
 do-install:
 	$(INSTALL_PROGRAM) $(WRKSRC)/xwmm $(PREFIX)/bin
-	$(INSTALL_SCRIPT) $(WRKSRC)/startkde.fixed $(PREFIX)/bin
+	$(INSTALL_SCRIPT) $(WRKSRC)/startkde.fixed $(PREFIX)/bin/startkde.xwmm
 	$(MKDIR) $(PREFIX)/lib/X11/xwmm
 	$(INSTALL_DATA) $(WRKSRC)/system.xwmmrc $(PREFIX)/lib/X11/xwmm
 
