@@ -2,11 +2,11 @@
 # Date created:				7 January 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/pysol-sound-server/Makefile,v 1.15 2001/04/09 11:54:48 sobomax Exp $
 #
 
 PORTNAME=	pysol-sound-server
-PORTVERSION=	2.30
+PORTVERSION=	2.40
 CATEGORIES=	audio games
 MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/download/pysol/pysol-sound-server/
 
@@ -16,10 +16,13 @@ LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12 \
 		smpeg.1:${PORTSDIR}/graphics/smpeg \
 		SDL_mixer.2:${PORTSDIR}/audio/sdl_mixer
 
+SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
+
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
+USE_BZIP2=	yes
 USE_PYTHON=	yes
 HAS_CONFIGURE=	yes
-ALL_TARGET=	pysolsoundservermodule.so
+CONFIGURE_ENV=	SDL_CONFIG="${SDL_CONFIG}"
 
 .include <bsd.port.mk>
