@@ -4,13 +4,14 @@
 # Date created: 13 Sep 1997
 # Whom:         ache@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/adcomplain/Makefile,v 1.29 1999/08/25 06:50:01 obrien Exp $
 #
 
-DISTNAME=       adcomplain-3.52
+DISTNAME=      adcomplain.pl
+PKGNAME=       adcomplain-3.52
 CATEGORIES=     mail news
 MASTER_SITES=   http://www.rdrop.com/users/billmc/
-DISTFILES=      adcomplain.pl.uu
+EXTRACT_SUFX=	.uu
 
 MAINTAINER=     ache@FreeBSD.org
 
@@ -25,7 +26,7 @@ NO_BUILD=       YES
 post-patch:
 	cd ${WRKSRC}; \
 	${CP} adcomplain.pl adcomplain.pl.old; \
-	sed 's=%PERL5%=${PERL}=' < adcomplain.pl.old > adcomplain.pl
+	${SED} 's=%PERL5%=${PERL}=' < adcomplain.pl.old > adcomplain.pl
 
 do-install:
 	cd ${WRKSRC}; \
