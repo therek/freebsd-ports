@@ -2,11 +2,11 @@
 # Date created:         Sat 21 Aug 1999
 # Whom:                 Peter Cornelius <pcc@gmx.net>
 #
-# $FreeBSD: ports/www/zope/Makefile,v 1.27 2001/05/03 10:23:54 nbm Exp $
+# $FreeBSD: ports/www/zope/Makefile,v 1.28 2001/07/04 20:52:41 olgeni Exp $
 #
 
 PORTNAME=	zope
-PORTVERSION=	2.3.3
+PORTVERSION=	2.4.0
 CATEGORIES=	www python
 MASTER_SITES=	http://www.zope.org/Products/Zope/${PORTVERSION}/
 DISTNAME=	Zope-${PORTVERSION}-src
