@@ -2,13 +2,15 @@
 # Date created:		2000-10-01
 # Whom:			Trevor Johnson <trevor@freebsd.org>
 #
-# $FreeBSD: ports/mail/xc-mail/Makefile,v 1.2 2000/10/16 22:38:46 trevor Exp $
+# $FreeBSD: ports/mail/xc-mail/Makefile,v 1.3 2000/10/19 02:58:14 trevor Exp $
 #
 
 PORTNAME=	xc-mail
-PORTVERSION=	20001018
+PORTVERSION=	20001216
 CATEGORIES=	mail
-MASTER_SITES=	ftp://trilug.fh-trier.de/pub/XCmail/cvs-snapshot/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+# ftp://trilug.fh-trier.de/pub/XCmail/cvs-snapshot/
+MASTER_SITE_SUBDIR=	trevor/${PORTNAME}/${PORTVERSION}
 DISTNAME=	${PORTNAME}-1.3devel
 
 MAINTAINER=	trevor@FreeBSD.org
