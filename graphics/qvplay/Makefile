@@ -2,7 +2,7 @@
 # Date created:		2 May 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/qvplay/Makefile,v 1.7 2001/01/09 05:57:02 itojun Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qvplay
@@ -29,9 +29,9 @@ pre-configure:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/qvplay
-.for file  in ${PORTDOCS}
-	${INSTALL_DATA} ${WRKSRC}/../../${file} ${PREFIX}/share/doc/qvplay
+	@${MKDIR} ${DOCSDIR}
+.for file in ${PORTDOCS}
+	${INSTALL_DATA} ${WRKSRC}/../../${file} ${DOCSDIR}
 .endfor
 .endif
 	@${SED} -e 's#/usr/local#${PREFIX}#' ${PKGMESSAGE}

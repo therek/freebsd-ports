@@ -2,7 +2,7 @@
 # Date created:				4 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/drm/Makefile,v 1.3 2000/03/29 07:18:06 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		drm
@@ -20,7 +20,8 @@ ALL_TARGET=
 do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/bugs ${PREFIX}/bin/drm
 .if !defined(NOPORTDOCS)
-	@ ${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/README.drm
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

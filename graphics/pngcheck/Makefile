@@ -2,7 +2,7 @@
 # Date created:				Tue 04 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/graphics/pngcheck/Makefile,v 1.2 2000/07/08 00:44:31 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pngcheck
@@ -18,9 +18,9 @@ MAKEFILE=	Makefile.unx
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pngcheck ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/pngcheck
-	${INSTALL_DATA} ${WRKSRC}/CHANGELOG ${PREFIX}/share/doc/pngcheck
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/pngcheck
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/CHANGELOG ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

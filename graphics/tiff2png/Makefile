@@ -2,7 +2,7 @@
 # Date created:				Tue 04 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/graphics/tiff2png/Makefile,v 1.4 2000/11/26 15:35:36 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tiff2png
@@ -22,8 +22,8 @@ ALL_TARGET=	tiff2png
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tiff2png ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/tiff2png
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/tiff2png
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				11 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xkoules/Makefile,v 1.10 2000/10/08 01:59:44 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xkoules
@@ -29,9 +29,9 @@ post-extract:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/xkoules
+	@${MKDIR} ${DOCSDIR}
 .for file in ANNOUNCE BUGS Card ChangeLog Koules.FAQ TODO
-	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/xkoules
+	@${INSTALL_DATA} ${WRKSRC}/${file} ${DOCSDIR}
 .endfor
 .endif
 

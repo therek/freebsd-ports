@@ -2,7 +2,7 @@
 # Date created:		19 Sep 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/sysutils/mei/Makefile,v 1.13 2001/01/09 05:57:08 itojun Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mei
@@ -32,8 +32,8 @@ BROKEN=		not support CAM
 
 .if !defined(NOPORTDOCS)
 post-install:
-	${MKDIR} ${PREFIX}/share/doc/mei
-	${INSTALL_DATA} ${WRKSRC}/*txt ${PREFIX}/share/doc/mei
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/*txt ${DOCSDIR}
 .endif
 
 .include <bsd.port.post.mk>

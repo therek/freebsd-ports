@@ -2,7 +2,7 @@
 # Date created:				27 July 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-fm/ezfm/Makefile,v 1.11 2000/05/28 03:23:07 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ezfm
@@ -35,8 +35,8 @@ do-install:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/ezfm
-	@ ${INSTALL_DATA} ${WRKSRC}/COPYING ${PREFIX}/share/doc/ezfm
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/COPYING ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

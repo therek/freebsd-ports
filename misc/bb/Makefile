@@ -2,7 +2,7 @@
 # Date created:				22 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/bb/Makefile,v 1.4 2000/03/29 07:19:04 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		bb
@@ -30,9 +30,9 @@ do-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/${file}.s3m ${PREFIX}/share/bb
 .endfor
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/bb
+	@${MKDIR} ${DOCSDIR}
 .for file in ANNOUNCE COPYING README
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/bb
+	@${INSTALL_DATA} ${WRKSRC}/${file} ${DOCSDIR}
 .endfor
 .endif
 

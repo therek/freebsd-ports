@@ -2,7 +2,7 @@
 # Date created:		19 October 1996
 # Whom:			pgs
 #
-# $FreeBSD: ports/graphics/hobbes-icons-xpm/Makefile,v 1.12 2001/08/23 20:21:49 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hobbes-icons-xpm3
@@ -28,9 +28,9 @@ do-install:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/hobbes-icons-xpm3
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/hobbes-icons-xpm3
-	${INSTALL_SCRIPT} ${WRKSRC}/*.shar ${PREFIX}/share/doc/hobbes-icons-xpm3
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
+	@${INSTALL_SCRIPT} ${WRKSRC}/*.shar ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

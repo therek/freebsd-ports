@@ -2,7 +2,7 @@
 # Date created:				18 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xmines/Makefile,v 1.4 2000/04/14 12:27:45 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmines
@@ -18,8 +18,8 @@ USE_X_PREFIX=	yes
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/xmines
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xmines
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		21 Mar 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/devel/flick/Makefile,v 1.8 2000/09/25 12:21:12 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flick
@@ -19,9 +19,9 @@ MAKEFILE=	GNUmakefile
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/flick
-	${INSTALL_DATA}	${WRKSRC}/doc/guts/*.ps ${PREFIX}/share/doc/flick
-	${INSTALL_DATA}	${WRKSRC}/doc/usersguide/*.ps ${PREFIX}/share/doc/flick
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/doc/guts/*.ps ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/doc/usersguide/*.ps ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

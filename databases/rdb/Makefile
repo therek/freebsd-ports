@@ -2,7 +2,7 @@
 # Date created:				2000 Feb. 8
 # Whom:					Abel Chow <abel_chow@yahoo.com>
 #
-# $FreeBSD: ports/databases/rdb/Makefile,v 1.3 2000/03/07 20:19:45 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rdb
@@ -33,9 +33,9 @@ do-install:
 .endfor
 .if !defined(NOPORTDOCS)
 	@${ECHO_MSG} "===>   Installing documentation for ${PKGNAME}"
-	${MKDIR} ${PREFIX}/share/doc/rdb
+	@${MKDIR} ${DOCSDIR}
 .for docfile in ${DOCFILES}
-	${INSTALL_DATA} ${WRKSRC}/doc/${docfile} ${PREFIX}/share/doc/rdb
+	@${INSTALL_DATA} ${WRKSRC}/doc/${docfile} ${DOCSDIR}
 .endfor
 .endif
 

@@ -2,7 +2,7 @@
 # Date created:			5 December 1996
 # Whom:				Pedro Giffuni
 #
-# $FreeBSD: ports/x11/libsx/Makefile,v 1.12 2001/02/05 16:18:09 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libsx
@@ -30,7 +30,7 @@ do-install:
 post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/libsx
-	${INSTALL_MAN} ${WRKSRC}/docs/* ${PREFIX}/share/doc/libsx
+	${INSTALL_DATA} ${WRKSRC}/docs/* ${PREFIX}/share/doc/libsx
 	${GZIP_CMD} ${PREFIX}/share/doc/libsx/*.doc
 .endif
 

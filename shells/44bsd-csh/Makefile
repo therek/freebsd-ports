@@ -3,7 +3,7 @@
 # Date created:			  23 January 2000
 # Whom:				  David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/shells/44bsd-csh/Makefile,v 1.7 2000/11/09 20:22:10 asmodai Exp $
+# $FreeBSD$
 #
 PORTNAME=	44bsd-csh
 PORTVERSION=	20001106
@@ -29,9 +29,8 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/csh ${PREFIX}/bin/44bsd-csh
 	${INSTALL_MAN} ${WRKSRC}/csh.1 ${PREFIX}/man/man1/44bsd-csh.1
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/44bsd-csh
-	${INSTALL_MAN} ${WRKSRC}/USD.doc/paper.ascii.gz  \
-		${PREFIX}/share/doc/44bsd-csh
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/USD.doc/paper.ascii.gz ${DOCSDIR}
 .endif
 	@${ECHO} "Updating /etc/shells"
 	@${CP} /etc/shells /etc/shells.bak

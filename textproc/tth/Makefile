@@ -2,7 +2,7 @@
 # Date created:         19 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/tth/Makefile,v 1.21 2001/02/05 16:35:17 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tth
@@ -32,10 +32,10 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/ps2gif ${PREFIX}/bin
 	${INSTALL_SCRIPT} ${WRKSRC}/ps2png ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/tth.1 ${PREFIX}/man/man1
-	${MKDIR} ${PREFIX}/share/doc/tth
-	${INSTALL_SCRIPT} ${WRKSRC}/license.txt ${PREFIX}/share/doc/tth
 .if !defined(NOPORTDOCS)
-	${INSTALL_SCRIPT} ${WRKSRC}/tth_manual.html ${PREFIX}/share/doc/tth
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/license.txt ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/tth_manual.html ${DOCSDIR}
 .endif
 	@${CAT} ${PKGMESSAGE}
 

@@ -2,7 +2,7 @@
 # Date created:				9 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xisola/Makefile,v 1.5 2000/04/14 12:27:30 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xisola
@@ -19,8 +19,8 @@ NO_INSTALL_MANPAGES=	yes
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/xisola
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xisola
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		5 Oct 1998
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/sysutils/upsmon/Makefile,v 1.5 2000/04/22 10:13:29 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	upsmon
@@ -24,8 +24,8 @@ do-install:
 	@${CHMOD} +x ${PREFIX}/etc/rc.d/upsmon.sh
 
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/upsmon
-	${INSTALL_DATA} ${WRKSRC}/INSTALL ${PREFIX}/share/doc/upsmon
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/INSTALL ${DOCSDIR}
 .endif
 
 post-install:

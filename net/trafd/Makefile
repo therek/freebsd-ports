@@ -2,7 +2,7 @@
 # Date created:		22 January 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/net/trafd/Makefile,v 1.3 2000/04/09 18:13:50 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	trafd
@@ -26,8 +26,8 @@ do-install:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/trafd
-	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/trafd/README
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .endif
 	${MKDIR} ${PREFIX}/var/trafd
 	${MKDIR} ${PREFIX}/var/log

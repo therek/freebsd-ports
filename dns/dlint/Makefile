@@ -3,7 +3,7 @@
 # Date created:			  Wed Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/dlint/Makefile,v 1.9 2000/12/23 19:26:59 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dlint
@@ -25,8 +25,8 @@ do-install:
 	cd ${WRKSRC} ; ${INSTALL_SCRIPT} dlint digparse ${PREFIX}/sbin
 	${INSTALL_MAN} ${WRKSRC}/dlint.8 ${PREFIX}/man/man8
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/dlint
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/dlint
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

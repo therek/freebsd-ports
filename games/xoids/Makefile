@@ -2,7 +2,7 @@
 # Date created:				16 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xoids/Makefile,v 1.9 2000/08/03 09:24:15 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xoids
@@ -22,8 +22,8 @@ post-extract:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/xoids
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xoids
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

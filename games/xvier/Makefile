@@ -2,7 +2,7 @@
 # Date created:				17 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xvier/Makefile,v 1.7 2000/09/25 12:21:25 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xvier
@@ -21,8 +21,8 @@ MAN6=		xvier.6
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/xvier
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xvier
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				29 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xtron/Makefile,v 1.6 2000/04/14 12:28:31 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtron
@@ -26,9 +26,9 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/pixmaps/* ${PREFIX}/share/xtron
 	${INSTALL_DATA} ${WRKSRC}/xtronrc ${PREFIX}/lib/X11/app-defaults/Tron
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/xtron
-	${INSTALL_DATA} ${WRKSRC}/CHANGES ${PREFIX}/share/doc/xtron
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xtron
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/CHANGES ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
