@@ -2,11 +2,11 @@
 # Date created:				30 June 2001
 # Whom:					petef@databits.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/pgen/Makefile,v 1.1 2001/07/01 15:50:28 kevlo Exp $
 #
 
 PORTNAME=	pgen
-PORTVERSION=	0.1
+PORTVERSION=	0.2
 CATEGORIES=	mail
 MASTER_SITES=	http://www.myrddin.demon.co.uk/dist/
 
