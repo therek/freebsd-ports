@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/security/cyrus-sasl2/pkg-install,v 1.12 2003/01/30 14:04:02 ume Exp $
+#	$FreeBSD: ports/security/cyrus-sasl2/pkg-install,v 1.13 2003/06/01 04:21:05 ume Exp $
 #
 # Created by: stb@FreeBSD.org for the cyrus imap server
 # Added to the cyrus-sasl port by hetzels@westbend.net
@@ -70,12 +70,6 @@ create_user() {
 		fi
 		echo "*** Updated user \`${USER}'."
 	fi
-# Don't know why we need the daemon user in the cyrus group
-# hopefully this doesn't affect anyone. It's a leftover from
-# the pre-SASL cyrus-imapd server.
-#	if ! ${PW} group mod ${GROUP} -m daemon; then
-#		echo "*** can't add user \`daemon' to group \`${GROUP}'"
-#	fi
 }
 
 create_sasldb() {
