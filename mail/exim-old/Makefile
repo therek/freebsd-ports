@@ -2,7 +2,7 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.77 2001/06/11 09:20:19 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.78 2001/06/11 09:40:24 sheldonh Exp $
 #
 
 PORTNAME=	exim
@@ -159,7 +159,7 @@ do-configure:
 	${SED} ${SEDLIST} < ${WRKSRC}/src/EDITME > ${WRKSRC}/Local/Makefile
 	${SED} ${SEDLIST} < ${FILESDIR}/configure.default \
 	    > ${WRKSRC}/src/configure.default
-	${CP} ${FILESDIR}/eximon.conf ${WRKSRC}/Local
+	${CP} ${WRKSRC}/exim_monitor/EDITME ${WRKSRC}/Local/eximon.conf
 	cd ${WRKSRC}/doc && \
 	for i in ../../exim-texinfo-3.20/doc/* ; do \
 		${LN} -sf $$i ; \
