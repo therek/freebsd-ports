@@ -3,7 +3,7 @@
 # Date created:			  15th June 1996
 # Whom:				  gpalmer
 #
-# $FreeBSD: ports/security/fwtk/Makefile,v 1.21 2000/06/02 03:18:38 will Exp $
+# $FreeBSD: ports/security/fwtk/Makefile,v 1.22 2000/08/27 05:26:24 obrien Exp $
 #
 
 PORTNAME=	fwtk
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 DISTFILES=	fwtk2.1${EXTRACT_SUFX} fwtk-doc-only${EXTRACT_SUFX}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RESTRICTED=	"No form of redistribution is allowed"
 
