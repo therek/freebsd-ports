@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# $FreeBSD$
+# $FreeBSD: ports/Tools/make_index,v 1.7 1999/08/25 04:43:00 obrien Exp $
 #
 # Written to speed-up INDEX file generation.  The new scheme
 # basically visits each port once and writes out each port's
@@ -25,7 +25,11 @@ sub by_path {
   # Collapse all the '..' sequences.
     my @f = split('/', $name), @p = ();
     foreach (@f) { (/\.\./) ? pop(@p) : push(@p, $_); }
-    return $by_path{join('/', @p)};
+    $name = join('/', @p);
+    return $by_path{$name} if (defined $by_path{$name});
+
+    print STDERR "make_index: no entry for: $name\n";
+    return undef;
 }
 
 # This routine replaces what used to be the time-consuming
