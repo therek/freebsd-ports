@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-property/Makefile,v 1.7 2000/09/26 08:02:00 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	property
@@ -27,12 +27,12 @@ post-patch:
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/property.rb ${RUBY_SITELIBDIR}
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_DOCDIR}/property/ja
+	${MKDIR} ${RUBY_MODDOCDIR}/ja
 .for f in property-example.rb test.default property.README Properties.html rubyapi.css
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/property
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}
 .endfor
 .for f in property.README.ja Properties-ja.html
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/property/ja
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/ja
 .endfor
 .endif
 

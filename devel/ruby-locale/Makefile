@@ -2,7 +2,7 @@
 # Date created:		15 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-locale/Makefile,v 1.4 2000/09/26 08:01:55 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	locale
@@ -25,10 +25,10 @@ INSTALL_TARGET=	site-install
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/locale
-	${INSTALL_DATA} ${WRKSRC}/test.rb ${RUBY_EXAMPLESDIR}/locale/
-	${MKDIR} ${RUBY_DOCDIR}/locale
-	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_DOCDIR}/locale/
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
+	${INSTALL_DATA} ${WRKSRC}/test.rb ${RUBY_MODEXAMPLESDIR}/
+	${MKDIR} ${RUBY_MODDOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_MODDOCDIR}/
 .endif
 
 .include <bsd.port.mk>

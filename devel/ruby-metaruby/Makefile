@@ -2,7 +2,7 @@
 # Date created:		8 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-metaruby/Makefile,v 1.2 2001/03/19 07:14:17 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	metaruby
@@ -22,11 +22,11 @@ DOCS=		ChangeLog	Overview	TODO		doc/*
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
-	${INSTALL_DATA} ${WRKSRC}/samples/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
-	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
+	${INSTALL_DATA} ${WRKSRC}/samples/* ${RUBY_MODEXAMPLESDIR}/
+	${MKDIR} ${RUBY_MODDOCDIR}
 .for f in ${DOCS}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/
 .endfor
 .endif
 

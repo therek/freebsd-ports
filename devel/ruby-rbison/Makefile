@@ -2,7 +2,7 @@
 # Date created:		2 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-rbison/Makefile,v 1.1 2000/11/02 03:03:24 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rbison
@@ -29,13 +29,13 @@ NO_BUILD=	yes
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/rbison ${PREFIX}/bin/
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/rbison
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
 .for f in ${EXAMPLES}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_EXAMPLESDIR}/rbison/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODEXAMPLESDIR}/
 .endfor
-	${MKDIR} ${RUBY_DOCDIR}/rbison
+	${MKDIR} ${RUBY_MODDOCDIR}
 .for f in ${DOCS}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/rbison/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/
 .endfor
 .endif
 

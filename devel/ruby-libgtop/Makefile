@@ -2,7 +2,7 @@
 # Date created:		13 Apr 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-libgtop/Makefile,v 1.1 2001/04/13 15:53:54 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libgtop
@@ -29,13 +29,13 @@ EXAMPLES=	test.rb
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
 .for f in ${EXAMPLES}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODEXAMPLESDIR}/
 .endfor
-	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
+	${MKDIR} ${RUBY_MODDOCDIR}
 .for f in ${DOCS}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/
 .endfor
 .endif
 

@@ -2,7 +2,7 @@
 # Date created:		28 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-gimp/Makefile,v 1.3 2001/08/24 06:08:46 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gimp
@@ -44,12 +44,12 @@ DOCS_JA=	doc/API.ja.html \
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/plug-ins/*.rb ${X11BASE}/libexec/gimp/1.2/plug-ins/
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
+	${MKDIR} ${RUBY_MODDOCDIR}/ja
 .for f in ${DOCS_EN}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/
 .endfor
 .for f in ${DOCS_JA}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/ja/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/ja/
 .endfor
 .endif
 

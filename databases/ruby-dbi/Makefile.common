@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/ruby-dbi/Makefile.common,v 1.13 2002/07/07 17:36:41 knu Exp $
+# $FreeBSD: ports/databases/ruby-dbi/Makefile.common,v 1.14 2002/10/05 10:20:09 knu Exp $
 
 RUBY_DBI_PORTNAME=	dbi
 # Don't forget to clear PORTREVISION's on update
@@ -13,3 +13,5 @@ RUBY_DBI_PORTDIR=	${PORTSDIR}/databases/ruby-${RUBY_DBI_PORTNAME}
 RUBY_DBI_WRKSRC?=	${WRKDIR}/ruby-${RUBY_DBI_PORTNAME}-all
 
 MD5_FILE?=		${RUBY_DBI_PORTDIR}/distinfo
+
+RUBY_MODNAME?=		${RUBY_DBI_PORTNAME}/${PORTNAME}

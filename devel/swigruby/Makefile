@@ -2,7 +2,7 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/swigruby/Makefile,v 1.3 2000/09/07 15:18:20 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	swigruby
@@ -29,14 +29,14 @@ do-configure:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/swigruby
-	${CP} -R ${WRKSRC}/examples/ ${RUBY_EXAMPLESDIR}/swigruby/
-	${MKDIR} ${RUBY_DOCDIR}/swigruby/ja
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
+	${CP} -R ${WRKSRC}/examples/ ${RUBY_MODEXAMPLESDIR}/
+	${MKDIR} ${RUBY_MODDOCDIR}/ja
 .for f in ${DOCS_EN}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/swigruby/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/
 .endfor
 .for f in ${DOCS_JA}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/swigruby/ja/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/ja/
 .endfor
 .endif
 

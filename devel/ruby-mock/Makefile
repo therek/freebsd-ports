@@ -2,7 +2,7 @@
 # Date created:		2 September 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-mock/Makefile,v 1.1 2001/09/02 18:42:07 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mock
@@ -27,10 +27,10 @@ post-patch:
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/mock.rb ${RUBY_SITELIBDIR}/
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
-	${INSTALL_DATA} ${WRKSRC}/demo/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
-	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
-	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_DOCDIR}/${PORTNAME}/
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
+	${INSTALL_DATA} ${WRKSRC}/demo/* ${RUBY_MODEXAMPLESDIR}/
+	${MKDIR} ${RUBY_MODDOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_MODDOCDIR}/
 .endif
 
 .include <bsd.port.mk>

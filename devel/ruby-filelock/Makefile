@@ -2,7 +2,7 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-filelock/Makefile,v 1.4 2000/09/26 08:01:52 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	filelock
@@ -26,13 +26,13 @@ EXAMPLES=	test.rb	tst1.rb	tst2.rb	tst3.rb	tst4.rb
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/filelock
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
 .for f in ${EXAMPLES}
-	${INSTALL_DATA} ${WRKSRC}/samples/${f} ${RUBY_EXAMPLESDIR}/filelock/
+	${INSTALL_DATA} ${WRKSRC}/samples/${f} ${RUBY_MODEXAMPLESDIR}/
 .endfor
-	${MKDIR} ${RUBY_DOCDIR}/filelock
+	${MKDIR} ${RUBY_MODDOCDIR}
 .for f in ${DOCS}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/filelock/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/
 .endfor
 .endif
 
