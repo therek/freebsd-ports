@@ -2,14 +2,14 @@
 # Date created:		16 May 1999
 # Whom:			jburkhol@home.com
 #
-# $FreeBSD: ports/java/tya/Makefile,v 1.16 2000/09/11 07:37:22 sobomax Exp $
+# $FreeBSD: ports/java/tya/Makefile,v 1.17 2000/09/25 07:32:40 sobomax Exp $
 #
 
 PORTNAME=	tya
-PORTVERSION=	1.7.2
+PORTVERSION=	1.7.3
 CATEGORIES=	java
 MASTER_SITES=	http://sax.sax.de/~adlibit/
-DISTNAME=	tya17v2
+DISTNAME=	tya17v3
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	sobomax@FreeBSD.org
