@@ -1,14 +1,14 @@
-# New ports collection makefile for:	mod_auth_pam
+# New ports collection makefile for:	mod_mp3
 # Date created:				7 April 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/mod_mp3/Makefile,v 1.6 2001/04/30 15:40:39 kevlo Exp $
+# $FreeBSD: ports/www/mod_mp3/Makefile,v 1.7 2001/05/09 09:55:53 alex Exp $
 #
 
 PORTNAME=	mod_mp3
-PORTVERSION=	0.15
+PORTVERSION=	0.16
 CATEGORIES=	www audio
-MASTER_SITES=	http://www.tangent.org/mod_mp3/ \
+MASTER_SITES=	http://media.tangent.org/ \
 		ftp://ftp.tangent.org/pub/apache/ \
 		http://www.freenix.no/~anders/
 
