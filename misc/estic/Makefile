@@ -2,15 +2,13 @@
 # Date created:				21 Sep 1996
 # Whom:					Julian Stacey <jhs@freebsd.org>
 #
-# $FreeBSD: ports/misc/estic/Makefile,v 1.8 1999/08/27 22:29:48 mharo Exp $
+# $FreeBSD: ports/misc/estic/Makefile,v 1.9 2000/04/14 08:45:39 asami Exp $
 #
 
 PORTNAME=		estic
 PORTVERSION=		1.40
 CATEGORIES=		misc
-MASTER_SITES=		ftp://linux01.gwdg.de/pub/isdn/estic/  \
-			ftp://ftp.franken.de/pub/isdn4linux/estic/  \
-			http://www.fast.de/~uli/isdn/estic/
+MASTER_SITES=		ftp://linux01.gwdg.de/pub/isdn/estic/old-versions/v1.40/
 DISTNAME=		estic-${PORTVERSION}-sources
 
 MAINTAINER=		jhs@FreeBSD.org
