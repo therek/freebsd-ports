@@ -2,15 +2,16 @@
 # Date created:        16 March 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/fakebo/Makefile,v 1.8 2000/04/09 18:29:33 cpiazza Exp $
+# $FreeBSD: ports/security/fakebo/Makefile,v 1.9 2000/04/21 08:18:18 mharo Exp $
 #
 
 PORTNAME=	fakebo
 PORTVERSION=	0.4.1
 CATEGORIES=	security
-MASTER_SITES=	http://yi.com/home/KosturjakVlatko/ \
-		ftp://ftp.bitcon.no/.4/console/adm/ \
-		ftp://ftp.iinet.net.au/mirrors1/berg/files/console/adm/ \
+MASTER_SITES=	ftp://ftp.deva.net/pub/sources/networking/ids/ \
+		ftp://the.ausmac.net/wd2a/security/port-loggers/ \
+		ftp://ftp.mayn.de/pub/unix/security/network/ \
+		ftp://ftp.cps.unizar.es/pub/unix/security/ \
 		ftp://ftp.linux.hr/pub/fakebo/
 
 MAINTAINER=	kris@FreeBSD.org
