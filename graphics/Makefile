@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.154 1999/11/01 03:39:02 steve Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.155 1999/11/07 17:01:19 steve Exp $
 #
 
     SUBDIR += 4va
@@ -98,6 +98,7 @@
     SUBDIR += plotmtv
     SUBDIR += plotutils
     SUBDIR += png
+    SUBDIR += png2html
     SUBDIR += pnmtopng
     SUBDIR += povray
     SUBDIR += povray31
