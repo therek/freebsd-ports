@@ -2,23 +2,23 @@
 # Date created:		Dec 13 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/mod_gzip/Makefile,v 1.2 2001/01/16 19:08:36 will Exp $
+# $FreeBSD: ports/www/mod_gzip/Makefile,v 1.3 2001/02/03 20:41:26 will Exp $
 #
 
 PORTNAME=	mod_gzip
-PORTVERSION=	1.3.14.6e
+PORTVERSION=	1.3.19.1a
 CATEGORIES=	www
-MASTER_SITES=	http://12.17.228.52/mod_gzip/src/${PORTVERSION}/
+MASTER_SITES=	http://www.remotecommunications.com/apache/mod_gzip/src/${PORTVERSION}/
 DISTFILES=	${PORTNAME}.c.gz
 EXTRACT_ONLY=	${DISTFILES:M*.gz}
 
-MAINTAINER=	mi@aldan.algebra.com
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 
 .if !defined(NOPORTDOCS)
-DISTFILES+=	readme.txt
+DISTFILES+=	changes.txt commands.txt samples.txt
 .endif
 
 NO_WRKSUBDIR=	YES
