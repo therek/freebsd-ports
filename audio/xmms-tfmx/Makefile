@@ -2,15 +2,14 @@
 # Date created:			21 May 2000
 # Whom:				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/xmms-tfmx/Makefile,v 1.2 2000/10/05 06:35:59 reg Exp $
+# $FreeBSD: ports/audio/xmms-tfmx/Makefile,v 1.3 2000/12/04 14:40:34 kevlo Exp $
 #
 
 PORTNAME=	xmms-tfmx
 PORTVERSION=	0.3
 CATEGORIES=	audio
-MASTER_SITES=	http://fatal.telia.nu/hosted/ \
-		http://www.freenix.no/~anders/ \
-		ftp://totem.fix.no/pub/mirrors/misc/
+MASTER_SITES=	ftp://ftp.nuug.no/pub/anders/distfiles/ \
+		http://www.freenix.no/~anders/
 
 MAINTAINER=	anders@fix.no
 
