@@ -3,14 +3,13 @@
 # Date created:		2 Dev 1997
 # Whom:			Yen-Shuo Su <yssu@CCCA.NCTU.edu.tw>
 #
-# $FreeBSD: ports/chinese/tin/Makefile,v 1.26 2001/05/22 18:19:39 sobomax Exp $
+# $FreeBSD: ports/chinese/tin/Makefile,v 1.27 2001/06/25 18:34:32 clive Exp $
 #
 
 CATEGORIES=	chinese
 
 MASTERDIR=	${.CURDIR}/../../news/tin
 
-PORTREVISION=	2
 MAINTAINER=	yssu@CCCA.NCTU.edu.tw
 
 EXTRA_PATCHES=	${.CURDIR}/files/patch-charset.c \
