@@ -8,24 +8,21 @@
 #
 # Modern FreeBSD systems already have a group mail.
 #
-# $FreeBSD: ports/mail/exim/pkg-install,v 1.3 2001/12/11 12:34:53 sheldonh Exp $
+# $FreeBSD$
 #
 
 PKG_PREFIX=${PKG_PREFIX:=/usr/local}
 
-uid=26
-gid=6
 user=mailnull
 group=mail
 
 if [ "$2" = "PRE-INSTALL" ]; then
-	# uid=26(mailnull) gid=26(mailnull) groups=26(mailnull)
-	if ! /usr/bin/id ${uid} | /usr/bin/grep -q "uid=${uid}(${user})"; then
-		echo "Exim requires user ${user} (UID ${uid}).  Please update your system." 1>&2
+	if ! /usr/bin/id ${user} > /dev/null; then
+		echo "Exim requires user ${user}.  Please update your system." 1>&2
 		exit 1
 	fi
-	if ! /usr/bin/grep -q "^${group}:[^:]*:${gid}:" < /etc/group; then
-		echo "Exim requires group ${group} (GID ${gid}).  Please update your system." 1>&2
+	if ! /usr/bin/grep -q "^${group}:" < /etc/group; then
+		echo "Exim requires group ${group}.  Please update your system." 1>&2
 		exit 1
 	fi
 fi
