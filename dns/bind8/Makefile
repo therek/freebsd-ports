@@ -2,7 +2,7 @@
 # Date created:		18 July 1997
 # Whom:			jseger@scds.com
 #
-# $FreeBSD: ports/net/bind8/Makefile,v 1.20 2001/01/29 22:28:43 kris Exp $
+# $FreeBSD: ports/net/bind8/Makefile,v 1.21 2001/01/31 07:21:18 dougb Exp $
 #
 
 PORTNAME=	bind
@@ -26,9 +26,13 @@ MAN8=		named-bootconf.8 named-xfer.8 named.8 ndc.8 nslookup.8 \
 PATCH_ARGS=	-d ${WRKDIR}
 PATCH_DIST_ARGS=	-d ${WRKDIR}
 
+PKGMESSAGE=	${WRKDIR}/message
+
 post-install:
 	@(cd ${WRKDIR}/doc/man && ${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} clean all ${INSTALL_TARGET})
 	${MKDIR} ${PREFIX}/share/doc/bind8
 	${INSTALL_DATA} ${WRKDIR}/doc/html/* ${PREFIX}/share/doc/bind8
+	${SED} -e 's,@PREFIX@,${PREFIX},g' ${FILESDIR}/message > ${PKGMESSAGE}
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
