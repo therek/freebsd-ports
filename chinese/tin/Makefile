@@ -3,17 +3,19 @@
 # Date created:		2 Dev 1997
 # Whom:			Yen-Shuo Su <yssu@CCCA.NCTU.edu.tw>
 #
-# $FreeBSD: ports/chinese/tin/Makefile,v 1.23 2000/12/07 16:37:49 clive Exp $
+# $FreeBSD: ports/chinese/tin/Makefile,v 1.24 2001/02/05 14:29:35 olgeni Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../news/tin
 
+PORTREVISION=	1
 MAINTAINER=	yssu@CCCA.NCTU.edu.tw
 
 EXTRA_PATCHES=	${.CURDIR}/files/patch-charset.c \
 		${.CURDIR}/files/patch-cook.c \
 		${.CURDIR}/files/patch-init.c \
-		${.CURDIR}/files/patch-misc.c
+		${.CURDIR}/files/patch-misc.c \
+		${.CURDIR}/files/patch-page.c
 
 .include "${MASTERDIR}/Makefile"
 
