@@ -1,16 +1,16 @@
-# New ports collection makefile for:   libU77
-# Version required:    2.6
-# Date Created:                8 October 1998
-# Whom:                        Glenn Johnson <gjohnson@nola.srrc.usda.gov>
+# New ports collection makefile for:	libU77
+# Version required:		2.6
+# Date Created:			8 October 1998
+# Whom:				Glenn Johnson <gjohnson@nola.srrc.usda.gov>
 #
-# $FreeBSD: ports/devel/libU77/Makefile,v 1.2 1999/08/25 05:48:17 obrien Exp $
+# $FreeBSD: ports/devel/libU77/Makefile,v 1.3 1999/11/24 23:43:44 cpiazza Exp $
 #
 
-DISTNAME=      libU77-2.6
-CATEGORIES=    devel
-MASTER_SITES=  http://flo.mech.eng.usyd.edu.au/norris/src/
+DISTNAME=	libU77-2.6
+CATEGORIES=	devel
+MASTER_SITES=	http://flo.mech.eng.usyd.edu.au/~norris/src/
 
-MAINTAINER=    ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 
