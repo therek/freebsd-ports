@@ -3,7 +3,7 @@
 # Date created:				Wed, 23 Feb 2000
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/devel/libg++/Makefile,v 1.4 2000/04/11 21:28:36 mharo Exp $
+# $FreeBSD: ports/devel/libg++/Makefile,v 1.5 2000/04/15 09:21:30 obrien Exp $
 #
 
 PORTNAME=	libg++
@@ -26,6 +26,8 @@ MAINTAINER=	obrien@FreeBSD.org
 CONFIGURE_TARGET=	${ARCH}-portbld-freebsd${OSREL}
 PLIST_SUB=	GCC28SUBDIR=${GCC28DIR}
 USE_NEWGCC=	yes
+
+BROKEN=		"Does not build - compiler error"
 
 pre-configure:
 	@${CP} -p ${FILESDIR}/Makefile.libg++ ${WRKSRC}/Makefile
