@@ -1,17 +1,19 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/portaudit/pkg-deinstall,v 1.1 2004/02/25 09:46:26 eik Exp $
+# $FreeBSD: ports/security/portaudit/pkg-deinstall,v 1.2 2004/03/11 11:11:59 eik Exp $
 #
 
 case $2 in
 POST-DEINSTALL)
   echo
   echo "The portaudit package has been deleted."
-  echo "If you're *not* upgrading and won't be using"
-  echo "it any longer, you may want to remove the"
-  echo "portaudit database:"
-  echo
-  echo "  rm -Rf %%DATABASEDIR%%"
+  if [ -f "%%DATABASEDIR%%/auditfile.tbz" ]; then
+    echo "If you're *not* upgrading and won't be using"
+    echo "it any longer, you may want to remove the"
+    echo "portaudit database:"
+    echo
+    echo "  rm -Rf %%DATABASEDIR%%"
+  fi
   echo
   ;;
 esac
