@@ -2,7 +2,7 @@
 # Date created:		10 November 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/databases/gnats/Makefile,v 1.28 2000/01/21 14:09:26 asami Exp $
+# $FreeBSD: ports/databases/gnats/Makefile,v 1.29 2000/04/08 22:48:28 mharo Exp $
 #
 
 PORTNAME=	gnats
@@ -35,6 +35,10 @@ CONFIGURE_ENV=  SEND_PR=/usr/bin/false
 # the gnats distribution comes with a lot of baggage we don't want to install
 # just install gnats
 INSTALL_TARGET=	install-gnats install-send-pr
+
+.if defined(WANT_FREEFALL_CFG)
+EXTRA_PATCHES=	${FILESDIR}/gnats-edit-pr.patch ${FILESDIR}/file-pr.c.patch
+.endif
 
 post-build:
 	(cd ${WRKSRC}/gnats;   ${MAKE} info)
