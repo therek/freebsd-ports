@@ -3,11 +3,12 @@
 # Date created:			  6 Jun 2001
 # Whom:				  Udo Schweigert
 #
-# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.115 2001/07/17 20:21:26 dwcjr Exp $
+# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.116 2001/07/26 07:29:04 jim Exp $
 #
 
 PORTNAME=	mutt-devel
 PORTVERSION=	1.3.20
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/mirrors/mutt/devel/ \
 		ftp://ftp.parodius.com/pub/mutt/devel/
@@ -19,7 +20,7 @@ MAINTAINER=	ust@cert.siemens.de
 
 DIST_SUBDIR=    mutt
 GNU_CONFIGURE=  yes
-CONFIGURE_ARGS=	--enable-pop --enable-imap --enable-flock --disable-fcntl \
+CONFIGURE_ARGS=	--enable-flock --disable-fcntl \
 		--with-sharedir=${PREFIX}/share/mutt \
 		--with-docdir=${PREFIX}/share/doc/mutt \
 		--sysconfdir=${PREFIX}/etc \
@@ -77,6 +78,15 @@ CONFIGURE_ARGS+=	--with-curses=${PREFIX}
 .endif
 .if defined(WITH_MUTT_SSL)
 CONFIGURE_ARGS+=	--with-ssl=${OPENSSLBASE}
+.endif
+.if defined(WITH_MUTT_POP)
+CONFIGURE_ARGS+=	--enable-pop
+.endif
+.if defined(WITH_MUTT_IMAP)
+CONFIGURE_ARGS+=	--enable-imap
+.endif
+.if defined(WITH_MUTT_POP_IMAP)
+CONFIGURE_ARGS+=	--enable-pop --enable-imap
 .endif
 
 PATCH_DIST_STRIP=	-p1
