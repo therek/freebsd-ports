@@ -2,14 +2,14 @@
 # Date created:		16 November 1998
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/truetypefonts/Makefile,v 1.7 2001/04/10 14:24:41 sada Exp $
+# $FreeBSD: ports/japanese/truetypefonts/Makefile,v 1.8 2001/04/14 06:56:22 knu Exp $
 #
 
 PORTNAME=	truetypefonts
-PORTVERSION=	2001.03.06
+PORTVERSION=	2001.08.18
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	ftp://ftp.debian.org/debian/pool/main/t/ttf-xtt/
-DISTNAME=	ttf-xtt_0.${PORTVERSION:S/.//g}-9
+DISTNAME=	ttf-xtt_0.${PORTVERSION:S/.//g}-1
 
 MAINTAINER=	ports@FreeBSD.org
 
