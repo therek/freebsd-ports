@@ -2,7 +2,7 @@
 # Date created:                         2 July 1998
 # Whom:                                 Brian Feldman & Matt Heckaman
 #
-# $FreeBSD: ports/net/licq/Makefile,v 1.16 2000/04/09 18:12:10 cpiazza Exp $
+# $FreeBSD: ports/net/licq/Makefile,v 1.17 2000/06/14 13:21:26 sobomax Exp $
 #
 
 PORTNAME=	licq
@@ -38,7 +38,8 @@ post-configure:
 	    INSTALL_DATA="${INSTALL_DATA}" \
 	    INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 	    INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
-	    ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS}; then \
+	    ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS} \
+		--enable-spoofing; then \
 			${ECHO} "===>  Script \"${CONFIGURE_SCRIPT}\" failed: here are the contents of \"${CONFIGURE_LOG}\""; \
 			${CAT} ${CONFIGURE_LOG}; \
 			${ECHO} "(end of \"${CONFIGURE_LOG}\")"; \
