@@ -3,7 +3,7 @@
 # Date created:         3 Dec 1996
 # Whom:                 paulo@isr.uc.pt
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/povray31/Makefile,v 1.6 1999/08/25 06:14:43 obrien Exp $
 #
 
 DISTNAME=	povray31
@@ -45,6 +45,7 @@ do-install:
 		(cd ${POVLIB}; tar xpf -)
 	@${INSTALL_DATA} ${WRKSRC}/*.ini ${POVLIB}/
 	@${INSTALL_DATA} ${WRKSRC}/*.doc ${POVLIB}/
+	@${INSTALL_DATA} ${WRKSRC}/*.txt ${POVLIB}/
 	@${INSTALL_DATA} ${WRKSRC}/*.gif ${WRKSRC}/*.xpm ${POVLIB}/
 	@${INSTALL_SCRIPT} ${WRKSRC}/allscene.sh ${POVLIB}/
 	@${RM} -f ${PREFIX}/man/man1/povray.1*
