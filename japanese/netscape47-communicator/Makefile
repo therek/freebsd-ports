@@ -2,10 +2,10 @@
 # Date created:		13 Mar 1998
 # Whom:			sada
 #
-# $FreeBSD: ports/japanese/netscape47-communicator/Makefile,v 1.18 2000/04/11 14:15:38 knu Exp $
+# $FreeBSD: ports/japanese/netscape47-communicator/Makefile,v 1.19 2000/05/13 15:32:06 sada Exp $
 #
 
-DISTNAME=	communicator-ja-euc-v473-export.generic-generic-generic
+DISTNAME=	communicator-ja-euc-v473-export.generic-generic-generic-20000715
 
 MASTERDIR=	${.CURDIR}/../netscape4-communicator
 SUBMASTERDIR=	${.CURDIR}/../netscape${BROWSER_VER}-communicator
