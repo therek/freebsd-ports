@@ -2,7 +2,7 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/chinese/xmms/Makefile,v 1.3 2000/10/07 23:35:00 asami Exp $
+# $FreeBSD: ports/chinese/xmms/Makefile,v 1.4 2000/11/16 17:59:18 keith Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../audio/xmms
@@ -12,7 +12,7 @@ PATCH_SITE_SUBDIR=	sobomax
 
 EXTRA_PATCHES=	${.CURDIR}/files/extra-patch-xmms-1.2.x-xfont
 
-MAINTAINER=	clive@CirX.ORG
+MAINTAINER=	clive@FreeBSD.org
 
 #RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/TrueType/bsmi00lp.ttf:${PORTSDIR}/chinese/arphicttf
 

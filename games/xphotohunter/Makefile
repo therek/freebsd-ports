@@ -2,7 +2,7 @@
 # Date created:		12 Aug 1999
 # Whom:			clive
 #
-# $FreeBSD: ports/games/xphotohunter/Makefile,v 1.6 2000/04/14 12:28:00 asami Exp $
+# $FreeBSD: ports/games/xphotohunter/Makefile,v 1.7 2000/10/05 06:57:35 reg Exp $
 #
 
 PORTNAME=	xphotohunter
@@ -10,7 +10,7 @@ PORTVERSION=	1.4
 CATEGORIES=	games
 MASTER_SITES=	http://www.oz.nthu.edu.tw/~u860905/Xphotohunter/
 
-MAINTAINER=	clive@CirX.ORG
+MAINTAINER=	clive@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

@@ -3,12 +3,12 @@
 # Date created:			  Sat Nov 11, 2000
 # Whom:				  Clive Lin <clive@CirX.ORG>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/emacs20/Makefile,v 1.1 2000/12/01 04:49:27 keith Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../editors/emacs20
 
-MAINTAINER=	clive@CirX.ORG
+MAINTAINER=	clive@FreeBSD.org
 
 .if !defined(WITHOUT_X11)
 RUN_DEPENDS+=	${X11BASE}/lib/X11/fonts/local/kc15f.pcf.gz:${PORTSDIR}/chinese/kcfonts \
