@@ -2,11 +2,11 @@
 # Date created:				17th August 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/medusa/Makefile,v 1.3 2000/10/05 07:17:19 reg Exp $
+# $FreeBSD: ports/sysutils/medusa/Makefile,v 1.4 2000/11/03 17:52:39 ade Exp $
 #
 
 PORTNAME=	medusa
-PORTVERSION=	0.2.2
+PORTVERSION=	0.3.0
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/medusa
@@ -22,8 +22,8 @@ USE_X_PREFIX=	yes
 USE_GNOME=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--enable-shared --enable-static
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
+		LIBS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
