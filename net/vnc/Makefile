@@ -2,17 +2,22 @@
 # Date created:		24 February 1998
 # Whom:			msmith
 #
-# $FreeBSD: ports/net/vnc/Makefile,v 1.21 2000/11/03 00:45:18 bmah Exp $
+# $FreeBSD: ports/net/vnc/Makefile,v 1.22 2001/01/16 17:31:59 sobomax Exp $
 #
 
 PORTNAME=	vnc
 PORTVERSION=	3.3.3.2
-CATEGORIES=	net
+PORTREVISION=	1
+CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.uk.research.att.com/vnc/dist/ \
 		ftp://ftp.uk.research.att.com/pub/vnc/dist/
 DISTFILES=	vnc-3.3.3r2_unixsrc.tgz \
 		vnc-latest_doc.tgz
 EXTRACT_ONLY=	vnc-3.3.3r2_unixsrc.tgz
+
+PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
+PATCHFILES=	vnc-3.3.3r2-v6-20010421.diff.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	bmah@freebsd.org
 
