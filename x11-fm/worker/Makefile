@@ -2,11 +2,11 @@
 # Date created:				14 March 2001
 # Whom:					Simon Dick <simond@irrelevant.org>
 #
-# $FreeBSD: ports/x11-fm/worker/Makefile,v 1.2 2001/04/02 13:37:05 olgeni Exp $
+# $FreeBSD: ports/x11-fm/worker/Makefile,v 1.3 2001/07/03 12:15:18 kevlo Exp $
 #
 
 PORTNAME=	worker
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.boomerangsworld.de/worker/downloads/ \
 		http://www.informatik.uni-halle.de/~hoffmanr/worker/downloads/
