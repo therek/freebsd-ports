@@ -2,7 +2,7 @@
 # Date created: 	30 January 2001
 # Whom:			jkoshy
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/nspostgres/Makefile,v 1.1 2001/01/30 10:48:23 jkoshy Exp $
 #
 
 PORTNAME=	nspostgres
@@ -13,8 +13,9 @@ DISTNAME=	nspostgres3_0
 
 MAINTAINER=	jkoshy@freebsd.org
 
-RUN_DEPENDS=	${LOCALBASE}/aolserver/bin/nsd:${PORTSDIR}/www/aolserver \
+BUILD_DEPENDS=	${LOCALBASE}/aolserver/bin/nsd:${PORTSDIR}/www/aolserver \
 		${LOCALBASE}/pgsql/bin/postmaster:${PORTSDIR}/databases/postgresql7
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
 WRKSRC=		${WRKDIR}/nspostgres
 
