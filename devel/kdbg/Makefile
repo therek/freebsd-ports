@@ -3,7 +3,7 @@
 # Date created:				02 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/kdbg/Makefile,v 1.1.1.1 1999/11/26 20:14:55 steve Exp $
+# $FreeBSD: ports/devel/kdbg/Makefile,v 1.2 1999/11/27 01:04:04 steve Exp $
 #
 
 DISTNAME=	kdbg-1.0.1
@@ -11,7 +11,7 @@ CATEGORIES=	devel kde
 MASTER_SITES=	http://members.telecom.at/~johsixt/ \
 		ftp://eudaptics.co.at/pub/people/jsixt/
 
-MAINTAINER=	jedgar2fxp.org
+MAINTAINER=	jedgar@fxp.org
 
 BUILD_DEPENDS=	libtool:${PORTSDIR}/devel/libtool
 LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11
