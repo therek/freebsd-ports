@@ -2,7 +2,7 @@
 # Date created:				6 October 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/bind9/Makefile,v 1.23 2000/12/01 23:42:12 ade Exp $
+# $FreeBSD: ports/net/bind9/Makefile,v 1.24 2001/01/21 00:42:48 will Exp $
 #
 
 PORTNAME=	bind
@@ -11,7 +11,7 @@ CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind9/${PORTVERSION}/ \
 		ftp://ftp.sunet.se/pub/network/isc/bind9/${PORTVERSION}/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	DougB@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=/var

@@ -2,7 +2,7 @@
 # Date created:		18 July 1997
 # Whom:			jseger@scds.com
 #
-# $FreeBSD: ports/net/bind8/Makefile,v 1.19 2001/01/05 14:03:21 jedgar Exp $
+# $FreeBSD: ports/net/bind8/Makefile,v 1.20 2001/01/29 22:28:43 kris Exp $
 #
 
 PORTNAME=	bind
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind/src/8.2.3/
 DISTFILES=	bind-src.tar.gz bind-doc.tar.gz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	DougB@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/src
 
