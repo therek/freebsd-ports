@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.31 2000/12/28 21:39:24 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.32 2001/01/16 17:30:29 sobomax Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
@@ -92,6 +92,10 @@ post-patch:
 .if exists(/sys/compat/linux/linux_ioctl.h)
 	${PERL} -i -pe 's,i386(/linux/linux_ioctl\.h),compat$$1,' \
 		${WRKSRC}/vmnet-only/freebsd/vmnet_linux.c
+.endif
+.if exists(/usr/include/sys/selinfo.h)
+	${PERL} -i -pe 's,<sys/select\.h>,<sys/selinfo.h>,' \
+		${WRKSRC}/vmmon-only/freebsd/*.c
 .endif
 
 setoptions:
