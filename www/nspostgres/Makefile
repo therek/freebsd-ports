@@ -2,13 +2,14 @@
 # Date created: 	30 January 2001
 # Whom:			jkoshy
 #
-# $FreeBSD: ports/www/nspostgres/Makefile,v 1.4 2001/09/03 08:57:32 jkoshy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nspostgres
 PORTVERSION=	3.0
 CATEGORIES=	www databases
-MASTER_SITES=	ftp://ftp.aolserver.com/modules/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	aolserver
 DISTNAME=	nspostgres3_0
 
 MAINTAINER=	jkoshy@freebsd.org
@@ -20,7 +21,7 @@ RUN_DEPENDS=	${BUILD_DEPENDS}
 WRKSRC=		${WRKDIR}/nspostgres
 
 USE_GMAKE=	yes
-MAKE_ENV+=	POSTGRES=${PREFIX}/pgsql BUILDPREFIX=${PREFIX}
+MAKE_ENV+=	POSTGRES=${PREFIX} BUILDPREFIX=${PREFIX}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/nspostgres.so ${PREFIX}/aolserver/bin
