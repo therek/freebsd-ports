@@ -2,20 +2,21 @@
 # Date created:		09 Apr 2000
 # Whom:			Peter Losher <plosher@wwiv.com>
 #
-# $FreeBSD: ports/mail/listar/Makefile,v 1.1 2000/07/20 13:49:25 nbm Exp $
+# $FreeBSD: ports/mail/listar/Makefile,v 1.2 2000/10/08 10:22:01 asami Exp $
 #
 
 PORTNAME=	listar
-PORTVERSION=	0.129a
+PORTVERSION=	1.0.0.b1
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.listar.org/pub/listar/
+MASTER_SITES=	ftp://ftp.listar.org/pub/listar/snapshots/tar/
+DISTFILES=	listar-1.0.0-snap20010225${EXTRACT_SUFX}
 
 MAINTAINER=	plosher@wwiv.com
 
 USE_GMAKE=	yes
 
 NO_PACKAGE=	"Requires listar uid"
-WRKSRC=		${WRKDIR}/${DISTNAME}/src
+WRKSRC=		${WRKDIR}/listar-1.0.0/src
 
 pre-patch:
 
