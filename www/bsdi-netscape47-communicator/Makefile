@@ -3,12 +3,12 @@
 # Whom:			Trevor Johnson <trevor@jpj.net>
 # based on work by thepish and girgen@partitur.se
 #
-# $FreeBSD: ports/www/bsdi-netscape47-communicator/Makefile,v 1.67 2000/08/08 16:20:32 sada Exp $
+# $FreeBSD: ports/www/bsdi-netscape47-communicator/Makefile,v 1.68 2000/08/08 16:42:16 sada Exp $
 #
 
 PORTNAME=	bsdi-netscape-${BROWSER}
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 

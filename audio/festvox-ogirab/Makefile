@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.10 2000/02/15 09:26:16 agc Exp $
-# $FreeBSD: ports/audio/festvox-ogirab/Makefile,v 1.1 2000/09/16 08:39:49 will Exp $
+# $FreeBSD: ports/audio/festvox-ogirab/Makefile,v 1.2 2000/09/20 09:09:56 asami Exp $
 #
 
 PORTNAME=	festvox-ogirab
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.leb.net/pub/blinux/festival/mirror.ogi-synth_home/ \
 DISTNAME=	voice_ogirab_di-2.0
 DIST_SUBDIR=	festival
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 RUN_DEPENDS=	festival:${.CURDIR}/../festival \
 		${LOCALBASE}/share/festival/lib/dicts/ogi_lex.out:${.CURDIR}/../festlex-ogi

@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.10 2000/02/15 09:26:14 agc Exp $
-# $FreeBSD: ports/audio/festvox-jph/Makefile,v 1.1 2000/09/17 22:05:58 will Exp $
+# $FreeBSD: ports/audio/festvox-jph/Makefile,v 1.2 2000/09/20 09:09:51 asami Exp $
 #
 
 PORTNAME=	festvox-jph
@@ -17,7 +17,7 @@ SUB=		festival/mirror.ogi-synth_home/
 DISTNAME=	voice_jph_di-2.0
 DIST_SUBDIR=	festival
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 RESTRICTED=	no-commercial-use
 

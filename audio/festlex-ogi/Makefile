@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.8 2000/02/15 09:26:12 agc Exp $
-# $FreeBSD: ports/audio/festlex-ogi/Makefile,v 1.1 2000/09/16 08:39:42 will Exp $
+# $FreeBSD: ports/audio/festlex-ogi/Makefile,v 1.2 2000/09/20 09:09:40 asami Exp $
 #
 
 PORTNAME=	festlex-ogi
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
 DISTNAME=	OGIlexicon-2.0
 DIST_SUBDIR=	festival
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 RUN_DEPENDS=	festival:${.CURDIR}/../festival \
 		${LOCALBASE}/share/festival/lib/dicts/wsj.wp39.poslexR:${.CURDIR}/../festlex-poslex

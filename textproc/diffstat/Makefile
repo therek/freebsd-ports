@@ -2,7 +2,7 @@
 # Date created:		Oct 23, 1999
 # Whom:			Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/textproc/diffstat/Makefile,v 1.3 2000/05/19 08:14:32 cpiazza Exp $
+# $FreeBSD: ports/textproc/diffstat/Makefile,v 1.4 2000/06/08 09:03:31 knu Exp $
 #
 
 PORTNAME=	diffstat
@@ -11,7 +11,7 @@ CATEGORIES=	textproc devel
 MASTER_SITES=	ftp://dickey.his.com/diffstat/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 MAKEFILE=	makefile

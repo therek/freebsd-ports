@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.7 1999/12/28 04:19:59 wiz Exp $
-# $FreeBSD$
+# $FreeBSD: ports/audio/festogi-spanish/Makefile,v 1.1 2000/09/16 08:39:43 will Exp $
 #
 
 PORTNAME=	festogi-spanish
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
 DISTNAME=	OGIspanish-2.0
 DIST_SUBDIR=	festival
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 RUN_DEPENDS=	festival:../festival
 

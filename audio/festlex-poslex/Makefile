@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.7 1999/12/28 04:19:59 wiz Exp $
-# $FreeBSD: ports/audio/festlex-poslex/Makefile,v 1.1 2000/09/16 08:39:43 will Exp $
+# $FreeBSD: ports/audio/festlex-poslex/Makefile,v 1.2 2000/09/20 09:09:47 asami Exp $
 #
 
 PORTNAME=	festlex-poslex
@@ -15,7 +15,7 @@ MASTER_SITES=	http://www.speech.cs.cmu.edu/festival/cstr/festival/1.4.1/ \
 DISTNAME=	festlex_POSLEX
 DIST_SUBDIR=	festival
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 RUN_DEPENDS=	festival:${.CURDIR}/../festival
 

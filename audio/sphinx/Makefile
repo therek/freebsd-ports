@@ -2,7 +2,7 @@
 # Date created:				30 Mar 2000
 # Whom:					trevor@jpj.net
 #
-# $FreeBSD: ports/audio/sphinx/Makefile,v 1.5 2000/06/16 08:19:10 sobomax Exp $
+# $FreeBSD: ports/audio/sphinx/Makefile,v 1.6 2000/06/16 21:50:23 asami Exp $
 #
 
 PORTNAME=	sphinx
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	cmusphinx
 DISTNAME=	sphinx2-0.2
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

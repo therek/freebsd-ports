@@ -2,7 +2,7 @@
 # Date created:				2000-09-18
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/wrapper/Makefile,v 1.1 2000/09/19 16:45:39 ade Exp $
 #
 
 PORTNAME=	wrapper
@@ -11,7 +11,7 @@ CATEGORIES=	x11
 MASTER_SITES=	http://jpj.net/~trevor/freebsd/ports/
 EXTRACT_SUFX=	.c.gz
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes

@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.11 1999/12/28 04:19:58 wiz Exp $
-# $FreeBSD: ports/audio/festival/Makefile,v 1.1 2000/09/16 08:39:40 will Exp $
+# $FreeBSD: ports/audio/festival/Makefile,v 1.2 2000/09/17 10:06:24 green Exp $
 #
 
 PORTNAME=	festival
@@ -32,7 +32,7 @@ DISTFILES+=	OGIresLPC-2.0.4.tar.gz
 PATCHFILES=	OGIfestpatch-${PORTVERSION}.tar.gz
 .endif
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 LIB_DEPENDS=	audio.1:${PORTSDIR}/audio/nas \
 		esd.2:${PORTSDIR}/audio/esound

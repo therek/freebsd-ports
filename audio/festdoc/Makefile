@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.7 2000/01/05 17:56:46 wiz Exp $
-# $FreeBSD$
+# $FreeBSD: ports/audio/festdoc/Makefile,v 1.1 2000/09/16 08:39:39 will Exp $
 #
 
 PORTNAME=	festdoc
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.speech.cs.cmu.edu/festival/cstr/festival/1.4.1/ \
 		ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.1/
 DIST_SUBDIR=	festival
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 NO_BUILD=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		26 Jan 2000
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/x11-wm/sapphire/Makefile,v 1.5 2000/06/14 13:21:01 sobomax Exp $
+# $FreeBSD: ports/x11-wm/sapphire/Makefile,v 1.6 2000/09/05 15:43:04 sobomax Exp $
 #
 
 PORTNAME=	sapphire
@@ -11,7 +11,7 @@ CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 DIST_SUBDIR=	sapphire
 

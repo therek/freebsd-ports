@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.10 2000/02/15 09:26:14 agc Exp $
-# $FreeBSD: ports/audio/festvox-hvs/Makefile,v 1.1 2000/09/16 08:39:46 will Exp $
+# $FreeBSD: ports/audio/festvox-hvs/Makefile,v 1.2 2000/09/20 09:09:49 asami Exp $
 #
 
 PORTNAME=	festvox-hvs
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.leb.net/pub/blinux/festival/mirror.ogi-synth_home/ \
 DISTNAME=	voice_hvs_di-2.0
 DIST_SUBDIR=	festival
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 RESTRICTED=	no-commercial-use
 

@@ -2,7 +2,7 @@
 # Date created:                                2000-07-09
 # Whom:                                        Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/security/p5-GnuPG-Interface/Makefile,v 1.2 2000/07/17 06:39:28 kevlo Exp $
+# $FreeBSD: ports/security/p5-GnuPG-Interface/Makefile,v 1.3 2000/09/23 18:28:12 nbm Exp $
 #
 
 PORTNAME=	GnuPG-Interface
@@ -15,7 +15,7 @@ MASTER_SITES=	http://download.sourceforge.net/${PORTNAME}/ \
 MASTER_SITE_SUBDIR=	GnuPG
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 RUN_DEPENDS=	gpg:${PORTSDIR}/security/gnupg \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Class/MethodMaker.pm:${PORTSDIR}/devel/p5-Class-MethodMaker

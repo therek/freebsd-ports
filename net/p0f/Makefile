@@ -2,7 +2,7 @@
 # Date created:				2000-06-12
 # Whom:					Trevor Johnson
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p0f/Makefile,v 1.1 2000/07/10 03:50:55 steve Exp $
 #
 
 PORTNAME=		p0f
@@ -12,7 +12,7 @@ MASTER_SITES=		http://lcamtuf.hack.pl/
 DISTNAME=		${PORTNAME}
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		trevor@jpj.net
+MAINTAINER=		trevor@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

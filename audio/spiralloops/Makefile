@@ -3,7 +3,7 @@
 # Whom:					Trevor Johnson <trevor@jpj.net>
 # based on the NetBSD port
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/spiralsynth/Makefile,v 1.1 2000/09/16 19:02:05 will Exp $
 #
 
 PORTNAME=	spiralsynth
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.blueammonite.f9.co.uk/SpiralSynth/dload/ \
 		http://jpj.net/~trevor/freebsd/ports/
 DISTNAME=	SpiralSynth-${PORTVERSION}
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 LIB_DEPENDS=	fltk.1:${PORTSDIR}/x11-toolkits/fltk
 

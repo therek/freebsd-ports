@@ -2,7 +2,7 @@
 # Date created:                                2000-07-09
 # Whom:                                        Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Class-MethodMaker/Makefile,v 1.1.1.1 2000/07/12 16:22:32 kevlo Exp $
 #
 
 PORTNAME=              Class-MethodMaker
@@ -12,7 +12,7 @@ MASTER_SITES=          ${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=    Class
 PKGNAMEPREFIX=         p5-
 
-MAINTAINER=    trevor@jpj.net
+MAINTAINER=    trevor@FreeBSD.org
 
 USE_PERL5=     yes
 

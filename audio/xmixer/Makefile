@@ -2,7 +2,7 @@
 # Date created:		27 October 1999
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/audio/xmixer/Makefile,v 1.3 2000/04/08 21:24:55 mharo Exp $
+# $FreeBSD: ports/audio/xmixer/Makefile,v 1.4 2000/07/07 19:59:22 steve Exp $
 #
 
 PORTNAME=	xmixer
@@ -11,7 +11,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.hdk-berlin.de/~rasca/
 MASTER_SITE_SUBDIR=	apps/sound/mixers
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 

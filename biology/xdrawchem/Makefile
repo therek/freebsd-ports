@@ -2,7 +2,7 @@
 # Date created:				13 April 2000
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/biology/xdrawchem/Makefile,v 1.2 2000/07/19 13:24:20 alex Exp $
+# $FreeBSD: ports/biology/xdrawchem/Makefile,v 1.3 2000/09/18 23:14:46 ade Exp $
 #
 
 PORTNAME=	xdrawchem
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.prism.gatech.edu/~gte067k/xdrawchem/
 DISTNAME=	xdc083
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 MAKE_ENV=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" QTDIR="${X11BASE}"
 USE_GMAKE=	yes
