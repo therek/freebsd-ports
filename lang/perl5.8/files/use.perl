@@ -1,5 +1,5 @@
 #! %%PREFIX%%/bin/perl -w
-# $FreeBSD: ports/lang/perl5/files/use.perl,v 1.5 2002/06/16 12:40:13 tobez Exp $
+# $FreeBSD: ports/lang/perl5.8/files/use.perl,v 1.6 2002/07/21 17:09:12 tobez Exp $
 use strict;
 
 # XXX what to do with perldoc, pelbug, perlcc ??
@@ -17,7 +17,7 @@ EOF
 my $port_perl = '%%PREFIX%%/bin/perl';
 $port_perl =~ tr|/|/|s;
 
-my $ident = `/usr/bin/ident -q /usr/bin/perl5`;
+my $ident = `[ -r /usr/bin/perl5 ] && /usr/bin/ident -q /usr/bin/perl5`;
 
 @ARGV == 1 or usage();
 if ($ARGV[0] eq 'port') {
