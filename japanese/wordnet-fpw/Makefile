@@ -2,7 +2,7 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/wordnet-fpw/Makefile,v 1.1.1.1 2000/06/23 18:23:04 taoka Exp $
+# $FreeBSD: ports/japanese/wordnet-fpw/Makefile,v 1.2 2000/06/29 15:13:03 taoka Exp $
 #
 
 PORTNAME=	wordnet-fpw
@@ -18,7 +18,8 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=    	taoka@FreeBSD.org
 
 BUILD_DEPENDS=	fpwmake:${PORTSDIR}/japanese/freepwing \
-		catdump:${PORTSDIR}/japanese/epwutil
+		catdump:${PORTSDIR}/japanese/epwutil \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Jcode.pm:${PORTSDIR}/japanese/p5-Jcode
 
 WRKSRC=		${WRKDIR}/wordnet-${WN_VER}-fpw${WNFPW_VER}
 WNFPW_VER=	1.1.2
