@@ -2,7 +2,7 @@
 # Date created:        5 June 1997
 # Whom:                Ruslan Shevchenko <rssh@cki.ipri.kiev.ua>
 #
-# $FreeBSD: ports/math/simpack/Makefile,v 1.14 2000/06/16 21:51:36 asami Exp $
+# $FreeBSD: ports/math/simpack/Makefile,v 1.15 2000/08/11 06:34:47 asami Exp $
 #
 
 PORTNAME=	simpack
@@ -33,7 +33,7 @@ post-build: create-libs create-scripts
 do-install: do-install-bin do-install-include do-install-lib do-install-doc
 
 post-install:
-	@${SH} ${PKGDIR}/REQ
+	@${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 do-install-bin:
 	@for i in `${CAT} ${FILESDIR}/FILES-BIN` ; do \
