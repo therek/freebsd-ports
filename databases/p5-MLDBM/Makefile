@@ -2,17 +2,17 @@
 # Date created:                         December 3 1997
 # Whom:                                 ache@freebsd.org
 #
-# $FreeBSD: ports/databases/p5-MLDBM/Makefile,v 1.14 2001/01/16 17:30:11 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	MLDBM
-PORTVERSION=	2.00
+PORTVERSION=	2.01
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	MLDBM
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	erwin@lansing.dk
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/FreezeThaw.pm:${PORTSDIR}/devel/p5-FreezeThaw \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Storable.pm:${PORTSDIR}/devel/p5-Storable
