@@ -2,11 +2,11 @@
 # Date created:		1 May 1998
 # Whom:			Brett Taylor
 #
-# $FreeBSD: ports/x11-wm/afterstep-stable/Makefile,v 1.43 2001/01/06 21:30:41 demon Exp $
+# $FreeBSD: ports/x11-wm/afterstep-stable/Makefile,v 1.44 2001/02/05 21:05:34 olgeni Exp $
 #
 
 PORTNAME=	afterstep
-PORTVERSION=	1.8.8
+PORTVERSION=	1.8.9
 CATEGORIES=	x11-wm afterstep
 MASTER_SITES=	${MASTER_SITE_AFTERSTEP}
 MASTER_SITE_SUBDIR=	stable
