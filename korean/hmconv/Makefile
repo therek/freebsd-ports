@@ -2,13 +2,14 @@
 # Date created:         31 Mar 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hmconv/Makefile,v 1.5 2000/04/21 22:03:48 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hmconv
 PORTVERSION=	1.0.3
 CATEGORIES=	korean mail
 MASTER_SITES=	ftp://ftp.kaist.ac.kr/pub/hangul/code/hmconv/ \
+		ftp://ftp.kr.FreeBSD.org/pub/FreeBSD-kr/distfiles/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/code/hmconv/
 DISTNAME=	hmconv1.0pl3
 

@@ -2,13 +2,14 @@
 # Date created:         4 Apr 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hpscat/Makefile,v 1.7 2000/04/21 22:03:50 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hpscat
 PORTVERSION=	1.3jshin
 CATEGORIES=	korean print
-MASTER_SITES=	ftp://ftp.kaist.ac.kr/pub/hangul/print/hpscat/ \
+MASTER_SITES=	ftp://ftp.kr.FreeBSD.org/pub/FreeBSD-kr/distfiles/ \
+		ftp://ftp.kaist.ac.kr/pub/hangul/print/hpscat/ \
 		ftp://ftp.kaist.ac.kr/pub/hangul/editor/ked/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/print/hpscat/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/editor/ked/
