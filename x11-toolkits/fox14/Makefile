@@ -2,7 +2,7 @@
 # Date created:		23 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.2 2000/04/10 01:10:15 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.3 2000/05/28 15:19:46 will Exp $
 #
 
 PORTNAME=	fox
