@@ -2,14 +2,16 @@
 # Date created:				7 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-fm/workplace/Makefile,v 1.15 2000/10/05 07:36:57 trevor Exp $
+# $FreeBSD: ports/x11-fm/workplace/Makefile,v 1.16 2000/10/06 06:27:14 trevor Exp $
 #
 
 PORTNAME=	workplace
 PORTVERSION= 	1.0.a3
 PORTEPOCH=	1
 CATEGORIES=	x11-fm
-MASTER_SITES=	http://people.freebsd.org/~trevor/ports/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	trevor
+
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	workplace-1.0.a3+tj1.diff.gz
 
