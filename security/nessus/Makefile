@@ -2,7 +2,7 @@
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.23 2001/01/24 12:43:12 olgeni Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.24 2001/02/05 23:42:42 olgeni Exp $
 #
 
 PORTNAME=	nessus
@@ -26,9 +26,14 @@ LIB_DEPENDS=	nasl.1:${PORTSDIR}/security/nessus-libnasl
 DIST_SUBDIR=	nessus
 WRKSRC=		${WRKDIR}/nessus-core
 
-HAVE_GTK=	yes
 USE_LIBTOOL=	yes
-.if defined(WITHOUT_GTK)
+WANT_GTK=	yes
+
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_GTK) && !defined(WITHOUT_GTK)
+USE_GTK=	yes
+.else
 CONFIGURE_ARGS+=	--disable-gtk
 .endif
 
@@ -41,4 +46,4 @@ post-install:
 	@${ECHO} "collection."
 	@${ECHO} "================================================================================"
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
