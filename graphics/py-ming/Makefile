@@ -2,7 +2,7 @@
 # Date created:		16 Oct 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/py-ming/Makefile,v 1.8 2001/07/06 19:57:43 knu Exp $
+# $FreeBSD: ports/graphics/py-ming/Makefile,v 1.9 2001/09/18 05:57:16 knu Exp $
 #
 
 PORTNAME=	ming
@@ -24,7 +24,7 @@ MD5_FILE=	${.CURDIR}/../ming/distinfo
 WRKSRC=		${WRKDIR}/${DISTNAME}/py_ext
 MAKE_ARGS=	PYTHON_VERSION="${PYTHON_VERSION}"
 
-EXAMPLES=	shape.py test.py ../examples/python/*.py
+EXAMPLES=	../examples/python/*.py
 
 do-extract:
 	${MKDIR} ${WRKDIR}
