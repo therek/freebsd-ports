@@ -12,7 +12,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.6 2002/01/03 20:01:58 sobomax Exp $
+# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.7 2002/01/04 14:50:57 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
 #				     highly discouraged!!!
@@ -269,6 +269,7 @@ def query_yn(message, default = False):
 		elif reply == '' and default in (True, False):
 			return default
 		print 'Wrong answer "%s", please try again' % reply
+	return default
 
 
 #
@@ -556,6 +557,11 @@ def generate(args, automatic, force, ignoremtime):
 
 			if os.path.isdir(patchdir):
 				patches.adddir(patchdir, wrksrc)
+
+			extra_patches = querymakevar('EXTRA_PATCHES', portdir, True)
+			for extra_patch in extra_patches.split():
+				if os.path.isfile(extra_patch):
+					patches.addpatchfile(extra_patch, wrksrc)
 
 			patchobj = patches.lookupbytarget(wrksrc, relpath)
 			if patchobj == None:
