@@ -2,11 +2,11 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/galeon/Makefile,v 1.13 2000/11/28 13:20:32 sobomax Exp $
+# $FreeBSD: ports/www/galeon/Makefile,v 1.14 2000/12/27 16:48:35 sobomax Exp $
 #
 
 PORTNAME=	galeon
-PORTVERSION=	0.8.3
+PORTVERSION=	0.8.4
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_LOCAL:S/%SUBDIR%/sobomax/} \
 		${MASTER_SITE_SOURCEFORGE}
