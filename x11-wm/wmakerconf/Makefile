@@ -2,7 +2,7 @@
 # Date Created:				14 August 1999
 # Whom:					Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.29 2001/08/15 20:33:12 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmakerconf
@@ -10,7 +10,7 @@ PORTVERSION=	2.8.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://ulli.on.openave.net/wmakerconf/
 
-MAINTAINER=	dr@domix.de
+MAINTAINER=	nc-rotherdo@netcologne.de
 
 RUN_DEPENDS=	rpm:${PORTSDIR}/archivers/rpm
 .if !exists(/usr/bin/bzip2)
