@@ -2,15 +2,15 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.35 2001/04/20 14:28:08 olgeni Exp $
+# $FreeBSD$
 #
 
-PORTNAME=       BitchX
-PORTVERSION=	1.0c18
+PORTNAME=	BitchX
+PORTVERSION=	1.0c19
 CATEGORIES+=	irc gnome
 MASTER_SITES=	ftp://ftp.bitchx.com/pub/BitchX/source/ \
 		ftp://ftp.bitchx.org/pub/BitchX/source/
-DISTNAME=	ircii-pana-1.0c18
+DISTNAME=	ircii-pana-1.0c19
 
 MAINTAINER=	calle.madestrand@norrgarden.se
 
