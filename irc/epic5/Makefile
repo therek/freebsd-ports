@@ -2,11 +2,11 @@
 # Date created:		11 November 1998
 # Whom:			Ben Hutchinson <benhutch@xfiles.org.uk>
 #
-# $FreeBSD: ports/irc/epic4/Makefile,v 1.33 2001/03/22 12:34:35 asmodai Exp $
+# $FreeBSD: ports/irc/epic4/Makefile,v 1.34 2001/03/26 08:51:19 asmodai Exp $
 #
 
 PORTNAME=	epic4
-PORTVERSION=	0.10.1
+PORTVERSION=	1.0
 # Make CATEGORIES overridable for slave ports
 CATEGORIES?=	irc
 MASTER_SITES=	ftp://ftp.magenet.com/pub/epic/%SUBDIR%/ \
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://ftp.magenet.com/pub/epic/%SUBDIR%/ \
 #		ftp://ftp.neato.org/pub/epic/%SUBDIR%/ \
 #		ftp://totem.fix.no/pub/mirrors/epic/%SUBDIR%/ \
 #		ftp://broken.com/pub/ircii/%SUBDIR%/
-MASTER_SITE_SUBDIR=	EPIC4-BETA
+MASTER_SITE_SUBDIR=	EPIC4-PRODUCTION
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTFILE_HELP}
 DIST_SUBDIR=	epic4
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
