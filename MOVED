@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.226 2003/09/30 00:03:47 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.227 2003/10/01 05:51:19 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -619,3 +619,4 @@ editors/wordperfect||2003-09-29|obsolete, sources pulled from the internet
 sysutils/arson||2003-09-30|unfetchable, maintainer request to remove, 
 www/mozilla-embedded||2003-10-01|was seldom used and broken
 www/mozilla-embedded-devel||2003-10-01|was seldom used and broken
+net/6to4||2003-10-04|To be replaced by net/hf6to4
