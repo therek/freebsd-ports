@@ -2,15 +2,14 @@
 # Date created:		08 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/newt/Makefile,v 1.12 2001/03/20 20:27:58 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	newt
 PORTVERSION=	0.50.8.2
 CATEGORIES=	devel
-MASTER_SITES=	\
-	ftp://ftp.redhat.com/pub/redhat/redhat-6.2/SRPMS/SRPMS/ \
-	ftp://ftp.infomagic.com/pub/mirrors/linux/RedHat/redhat-6.2/SRPMS/SRPMS/
+MASTER_SITES=	ftp://ftp.redhat.com/pub/redhat/redhat-6.2-en/os/i386/SRPMS/
+
 DISTNAME=	${PORTNAME}-0.50.8-2
 EXTRACT_SUFX=	.src.rpm
 
