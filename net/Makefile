@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.514 2001/04/07 05:39:16 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.515 2001/04/07 05:54:49 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -349,6 +349,7 @@
     SUBDIR += wais
     SUBDIR += wide-dhcp
     SUBDIR += wmnet
+    SUBDIR += wmnetmon
     SUBDIR += xarchie
     SUBDIR += xbone
     SUBDIR += xferstats
