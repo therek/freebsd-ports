@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/x11-toolkits/fl_editor/pkg-plist,v 1.1 2001/09/03 18:46:33 knu Exp $
 include/FL/Fl_Editor.H
 @exec ln -fs %f %B/Fl_Editor.h
 @unexec rm -f %B/Fl_Editor.h
@@ -47,3 +47,4 @@ lib/libfleditor.so.1
 %%PORTDOCS%%share/doc/fl_editor/Fl_StatusPanel.html
 %%PORTDOCS%%share/doc/fl_editor/Fl_StatusPanel.jpg
 %%PORTDOCS%%share/doc/fl_editor/index.html
+%%PORTDOCS%%@dirrm share/doc/fl_editor
