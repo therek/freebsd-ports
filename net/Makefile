@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.299 1999/09/25 05:13:42 cpiazza Exp $
+# $FreeBSD: ports/net/Makefile,v 1.300 1999/09/25 05:59:45 taoka Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -79,6 +79,7 @@
     SUBDIR += libicq
     SUBDIR += libnet
     SUBDIR += libsocket++
+    SUBDIR += libunp
     SUBDIR += licq
     SUBDIR += macipgw
     SUBDIR += mars_nwe
