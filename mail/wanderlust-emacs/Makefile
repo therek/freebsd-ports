@@ -3,7 +3,7 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.6 1999/09/10 20:54:17 shige Exp $
+# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.7 1999/10/11 06:25:20 shige Exp $
 #
 
 DISTNAME=	wl-1.0.3
@@ -84,9 +84,6 @@ post-install:
 	@install-info --section=${DIRSECTION} ${PREFIX}/${EMACS_VER_LIBDIR}/info/wl-ja.info ${PREFIX}/${EMACS_VER_LIBDIR}/info/dir
 .endif
 .if (${EMACS_PORT} == "emacs20" || ${EMACS_PORT} == "mule")
-	@if [ ! -f ${PREFIX}/info/dir ]; then \
-		${SED} -ne '1,/Menu:/p' /usr/share/info/dir > ${PREFIX}/info/dir; \
-	fi
 	@${INSTALL_DATA} ${WRKSRC}/doc/wl-ja.info ${PREFIX}/info
 	@install-info --section=${DIRSECTION} ${PREFIX}/info/wl-ja.info ${PREFIX}/info/dir
 .endif
