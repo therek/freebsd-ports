@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/leo/pkg-plist,v 1.3 2003/09/29 18:11:07 krion Exp $
+@comment $FreeBSD: ports/editors/leo/pkg-plist,v 1.4 2003/10/09 13:56:07 krion Exp $
 bin/leo
 %%PYTHON_SITELIBDIR%%/leo/Icons/LeoWin.gif
 %%PYTHON_SITELIBDIR%%/leo/Icons/Leoapp.GIF
@@ -63,6 +63,7 @@ bin/leo
 %%PYTHON_SITELIBDIR%%/leo/plugins/outline_export.py
 %%PYTHON_SITELIBDIR%%/leo/plugins/override_commands.py
 %%PYTHON_SITELIBDIR%%/leo/plugins/plugins_menu.py
+%%PYTHON_SITELIBDIR%%/leo/plugins/quit_leo.py
 %%PYTHON_SITELIBDIR%%/leo/plugins/read_only_nodes.py
 %%PYTHON_SITELIBDIR%%/leo/plugins/redefine_put.py
 %%PYTHON_SITELIBDIR%%/leo/plugins/redirect_to_log.py
