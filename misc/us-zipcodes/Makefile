@@ -2,18 +2,17 @@
 # Date created:         1997-12-30
 # Whom:                 wosch
 #
-# $FreeBSD: ports/misc/us-zipcodes/Makefile,v 1.8 2000/06/29 07:02:34 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zipcodes
 PORTVERSION=	1.0
 CATEGORIES=	misc
-MASTER_SITES=	${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	wosch/src asami/LOCAL_PORTS
+MASTER_SITES=	http://galileo.spaceports.com/~jharris/distfiles/
 PKGNAMEPREFIX=	us-
 DISTFILES=	${PORTNAME}.gz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jharris@widomaker.com
 
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${GZCAT}
