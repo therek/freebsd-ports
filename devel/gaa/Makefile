@@ -3,12 +3,12 @@
 # Date created:		2 February 1999
 # Whom:			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/gaa/Makefile,v 1.2 1999/08/25 05:47:58 obrien Exp $
 #
 
 DISTNAME=	gaa-1.5
 CATEGORIES=	devel
-MASTER_SITES=	http://gaa.netpedia.net/
+MASTER_SITES=	ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dima@chg.ru
