@@ -3,7 +3,7 @@
 # Date created:				28 September 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/audio/wmtune/Makefile,v 1.4 2000/02/25 00:14:16 jedgar Exp $
+# $FreeBSD: ports/audio/wmtune/Makefile,v 1.5 2000/03/04 12:59:01 jedgar Exp $
 #
 
 DISTNAME=	wmtune-1.0
@@ -11,7 +11,6 @@ CATEGORIES=	audio windowmaker
 MASTER_SITES=	http://www.fxp.org/~jedgar/distfiles/ \
 		http://www.soren.org/linux/wmtune/dl/ \
 		http://www.rostock.zgdv.de/~runge/radio/
-		
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${WMTUNE_DIFF}
 
