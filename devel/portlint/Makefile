@@ -3,14 +3,14 @@
 # Date created:		13 Jun 1997
 # Whom:			Jun-ichiro itojun Hagino <itojun@itojun.org>
 #
-# $FreeBSD: ports/devel/portlint/Makefile,v 1.24 1999/08/25 05:49:52 obrien Exp $
+# $FreeBSD: ports/devel/portlint/Makefile,v 1.25 1999/09/28 16:23:03 sumikawa Exp $
 #
 
 DISTNAME=       portlint-2.1
 CATEGORIES=	devel
 DISTFILES=	#empty
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 NO_BUILD=	yes
 NO_CHECKSUM=	yes
