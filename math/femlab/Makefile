@@ -2,7 +2,7 @@
 # Date created:		19 June 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/math/femlab/Makefile,v 1.5 1999/08/25 07:08:17 obrien Exp $
+# $FreeBSD: ports/math/femlab/Makefile,v 1.6 2000/04/14 07:19:58 asami Exp $
 #
 
 PORTNAME=	femlab
@@ -14,9 +14,9 @@ DISTNAME=	femlab-2d-v${PORTVERSION}
 
 MAINTAINER=	giffunip@asme.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/libsx.a:${PORTSDIR}/x11/libsx
+BUILD_DEPENDS=	${X11BASE}/lib/libsx.a:${PORTSDIR}/x11/libsx
 
-WRKSRC=         ${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_X_PREFIX=	yes
 
 FEMLAB_HOME=	${PREFIX}/lib/X11/femlab
