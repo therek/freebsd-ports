@@ -2,31 +2,27 @@
 # Date created:		6 June 2000
 # Whom:			knu@FreeBSD.org
 #
-# $FreeBSD: ports/devel/cvsutils/Makefile,v 1.2 2000/06/07 08:17:15 knu Exp $
+# $FreeBSD: ports/devel/cvsutils/Makefile,v 1.3 2000/06/07 17:24:35 knu Exp $
 #
 
 PORTNAME=	cvsutils
-PORTVERSION=	2000.06.06
+PORTVERSION=	0.1.5
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/knu/
 
 MAINTAINER=	knu@FreeBSD.org
 
+USE_AUTOMAKE=	YES
+AUTOMAKE=	./bootstrap
 USE_PERL5=	YES
-NO_BUILD=	YES
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-PROGS=		cvschroot \
-		cvsco \
-		cvsdiff \
-		cvsdiscard \
-		cvspurge \
-		cvsrmadm \
-		cvsu
-
-do-install:
-.for f in ${PROGS}
-	${INSTALL_SCRIPT} ${WRKSRC}/${f} ${PREFIX}/bin/
+post-install:
+.if !defined(NOPORTDOCS)
+	${MKDIR} ${PREFIX}/share/doc/cvsutils
+.for f in AUTHORS ChangeLog FAQ NEWS README TODO 
+	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/share/doc/cvsutils/
 .endfor
+.endif
 
 .include <bsd.port.mk>
