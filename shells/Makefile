@@ -1,4 +1,4 @@
-# $FreeBSD: ports/shells/Makefile,v 1.25 2000/01/29 22:35:36 steve Exp $
+# $FreeBSD: ports/shells/Makefile,v 1.26 2000/04/15 04:27:23 obrien Exp $
 #
 
     SUBDIR += 44bsd-csh
@@ -8,6 +8,7 @@
     SUBDIR += esh
     SUBDIR += flash
     SUBDIR += ksh93
+    SUBDIR += osh
     SUBDIR += pdksh
     SUBDIR += perlsh
     SUBDIR += rc
