@@ -2,16 +2,16 @@
 # Date created:		27 February 1999
 # Whom:			sada
 #
-# $FreeBSD: ports/www/libxpg4-ns/Makefile,v 1.10 2000/06/18 09:26:50 asami Exp $
+# $FreeBSD: ports/www/libxpg4-ns/Makefile,v 1.11 2000/06/29 07:02:54 obrien Exp $
 #
 
-PORTNAME=	libxpg4-ns
+PORTNAME=	libxpg4
 PORTVERSION= 	3.3
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	sada
-DISTNAME=	libxpg4-3.3
+PKGNAMESUFFIX=	-ns
 
 MAINTAINER=	sada@FreeBSD.ORG
 
