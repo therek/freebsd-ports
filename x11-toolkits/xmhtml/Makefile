@@ -2,7 +2,7 @@
 # Date created:		18 Feb 1999
 # Whom:			Peter Hawkins <thepish@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/xmhtml/Makefile,v 1.13 2001/01/16 17:33:19 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/xmhtml/Makefile,v 1.14 2001/05/31 22:44:45 ade Exp $
 #
 
 PORTNAME=	XmHTML
@@ -17,6 +17,7 @@ LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_LIBTOOL=	yes
+GNU_CONFIGURE=	no
 USE_MOTIF=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
