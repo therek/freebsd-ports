@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.159 1999/11/26 20:28:31 steve Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.160 1999/11/27 14:40:57 steve Exp $
 #
 
     SUBDIR += 4va
@@ -79,6 +79,7 @@
     SUBDIR += lfview
     SUBDIR += libimg
     SUBDIR += libwmf
+    SUBDIR += linux_glx
     SUBDIR += mpeg-lib
     SUBDIR += mpeg2codec
     SUBDIR += mpeg2play
