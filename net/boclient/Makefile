@@ -2,11 +2,11 @@
 # Date created:		12 August 1998
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/net/boclient/Makefile,v 1.2 1999/08/30 14:22:12 peter Exp $
+# $FreeBSD: ports/net/boclient/Makefile,v 1.3 2000/04/09 18:10:18 cpiazza Exp $
 #
 
 PORTNAME=	boclient
-PORTVERSION=	1.2.1
+PORTVERSION=	1.21
 CATEGORIES=	net security
 MASTER_SITES=	http://www.ennui.net/~crioux/ \
 		http://orifice.rotten.com/cDc/ \
