@@ -3,7 +3,7 @@
 # Date created:        03 Mar 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/misc/delay/Makefile,v 1.5 1999/11/12 21:04:53 jim Exp $
+# $FreeBSD: ports/misc/delay/Makefile,v 1.6 1999/12/31 06:49:51 billf Exp $
 #
 
 DISTNAME=	delay-1.4
@@ -12,7 +12,7 @@ MASTER_SITES=	http://onegeek.org/~tom/software/delay/dl/
 
 MAINTAINER=	gmarco@giovannelli.it
 
-HAS_CONFIGURE=	yes
+GNU_CONFIGURE=	yes
 
 MAN1=	delay.1
 
