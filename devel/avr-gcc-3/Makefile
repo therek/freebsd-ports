@@ -2,7 +2,7 @@
 # Date created:		29 Nov 2000
 # Whom:			Joerg Wunsch <joerg@freebsd.org>
 #
-# $FreeBSD: ports/devel/avr-gcc/Makefile,v 1.1 2000/12/05 15:21:02 joerg Exp $
+# $FreeBSD: ports/devel/avr-gcc/Makefile,v 1.2 2001/03/10 20:45:38 joerg Exp $
 #
 
 PORTNAME=	gcc
@@ -20,7 +20,8 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=	joerg@freebsd.org
 
 BUILD_DEPENDS=	avr-as:${PORTSDIR}/devel/avr-binutils \
-		avr-ld:${PORTSDIR}/devel/avr-binutils
+		avr-ld:${PORTSDIR}/devel/avr-binutils \
+		autoheader:${PORTSDIR}/devel/autoconf
 RUN_DEPENDS=	avr-as:${PORTSDIR}/devel/avr-binutils \
 		avr-ld:${PORTSDIR}/devel/avr-binutils
 
@@ -30,7 +31,6 @@ WRKSRC=		${WRKDIR}/gcc-${PORTVERSION}
 # the original master site still uses .gz.
 #USE_BZIP2=	yes
 USE_GMAKE=	yes
-USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS=	--target=avr
