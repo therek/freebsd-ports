@@ -2,12 +2,12 @@
 # Date created:		27 Mar 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-sdl/Makefile,v 1.2 2001/03/26 18:05:55 knu Exp $
+# $FreeBSD: ports/devel/ruby-sdl/Makefile,v 1.3 2001/03/28 09:53:15 knu Exp $
 #
 
 PORTNAME=	sdl
 PORTVERSION=	0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel graphics audio ruby
 MASTER_SITES=	http://www.kmc.kyoto-u.ac.jp/~ohai/rubysdl/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -24,15 +24,8 @@ LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl-devel \
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
-CONFIGURE_ARGS=	--with-sdl-config="sdl11-config" \
-		--with-cflags="${PTHREAD_CFLAGS}" \
-		--with-ldflags="${PTHREAD_LIBS}"
+CONFIGURE_ARGS=	--with-sdl-config="sdl11-config"
 INSTALL_TARGET=	site-install
-
-.include <bsd.port.pre.mk>
-.if ${OSVERSION} < 500018
-BROKEN=	"libc_r conflicts with libc on your system. (Ruby/SDL can be used on 5-CURRENT only)"
-.endif
 
 post-install:
 .if !defined(NOPORTDOCS)
@@ -42,4 +35,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_DOCDIR}/${PORTNAME}/ja/
 .endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
