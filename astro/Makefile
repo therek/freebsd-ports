@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/Makefile,v 1.30 2001/04/07 02:27:21 will Exp $
+# $FreeBSD: ports/astro/Makefile,v 1.31 2001/04/07 06:38:48 will Exp $
 #
 
     SUBDIR += SETIsupport
@@ -10,6 +10,7 @@
     SUBDIR += luna
     SUBDIR += openuniverse
     SUBDIR += p5-Astro-MoonPhase
+    SUBDIR += p5-Astro-Sunrise
     SUBDIR += p5-Astro-SunTime
     SUBDIR += p5-GPS
     SUBDIR += p5-Geo-METAR
