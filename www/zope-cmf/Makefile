@@ -2,11 +2,11 @@
 # Date created:		18 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/zope-cmf/Makefile,v 1.3 2001/08/08 14:39:25 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zope-cmf
-PORTVERSION=	1.1
+PORTVERSION=	1.3
 CATEGORIES=	www zope
 MASTER_SITES=	http://cmf.zope.org/download/CMF-${PORTVERSION}/
 DISTNAME=	CMF-${PORTVERSION}
