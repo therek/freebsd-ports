@@ -2,22 +2,29 @@
 # Date created:		23 October 1999
 # Whom:			Yuzo FURUKAWA <hurukawa@kuee.kyoto-u.ac.jp>
 #
-# $FreeBSD: ports/graphics/epstool/Makefile,v 1.4 2000/04/13 06:28:21 obrien Exp $
+# $FreeBSD: ports/graphics/epstool/Makefile,v 1.5 2000/07/16 19:58:41 steve Exp $
 #
 
 PORTNAME=	epstool
-PORTVERSION=	1.40
+PORTVERSION=	1.60
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.cs.wisc.edu/ghost/ghostgum/ \
 		ftp://ftp.fh-koblenz.de/pub/Ghostscript/ghostgum/
-DISTNAME=	${PORTNAME}-140
+DISTNAME=	gsv36src
 
 MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
+
+USE_ZIP=	yes
 MAKEFILE=	makefile.unx
+
+post-extract:
+.for file in epstool.zip src.zip
+	@cd ${WRKDIR} && unzip -q -aa ${file}
+.endfor
 
 post-install:
 .if !defined(NOPORTDOCS)
