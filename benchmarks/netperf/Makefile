@@ -3,7 +3,7 @@
 # Date created:		19 July 1996
 # Whom:			koshy
 #
-# $FreeBSD: ports/benchmarks/netperf/Makefile,v 1.8 1999/08/25 04:45:45 obrien Exp $
+# $FreeBSD: ports/benchmarks/netperf/Makefile,v 1.9 1999/09/04 23:39:25 mharo Exp $
 #
 
 DISTNAME=	netperf-2.1pl3
@@ -15,16 +15,24 @@ MAINTAINER=	fenner@freebsd.org
 
 MAKEFILE=	makefile
 MAN1=		netperf.1 netserver.1
-MINSTALL=	${INSTALL} ${COPY} -o ${MANOWN} -g ${MANGRP} -m ${MANMODE}
+
+SCRIPTS=	arr_script snapshot_script tcp_range_script tcp_rr_script \
+		tcp_stream_script udp_rr_script udp_stream_script
+
+post-patch:
+.for i in ${SCRIPTS}
+	@${MV} ${WRKSRC}/$i ${WRKSRC}/$i.pre-sed
+	@${SED} -e 's^%%PREFIX%%^${PREFIX}^' ${WRKSRC}/$i.pre-sed > ${WRKSRC}/$i
+.endfor
 
 post-install:
 	strip ${PREFIX}/netperf/netperf
 	strip ${PREFIX}/netperf/netserver
-	${MINSTALL} ${WRKSRC}/netperf.man ${PREFIX}/man/man1/netperf.1
-	${MINSTALL} ${WRKSRC}/netserver.man ${PREFIX}/man/man1/netserver.1
+	${INSTALL_MAN} ${WRKSRC}/netperf.man ${PREFIX}/man/man1/netperf.1
+	${INSTALL_MAN} ${WRKSRC}/netserver.man ${PREFIX}/man/man1/netserver.1
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/netperf
-	${MINSTALL} ${WRKSRC}/netperf.ps ${PREFIX}/share/doc/netperf
+	${INSTALL_DATA} ${WRKSRC}/netperf.ps ${PREFIX}/share/doc/netperf
 	${GZIP_CMD} ${PREFIX}/share/doc/netperf/netperf.ps
 .endif
 
