@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.11 1999/12/28 04:19:58 wiz Exp $
-# $FreeBSD: ports/audio/festival/Makefile,v 1.3 2000/10/02 05:38:36 trevor Exp $
+# $FreeBSD: ports/audio/festival/Makefile,v 1.4 2000/10/07 20:52:45 asami Exp $
 #
 
 PORTNAME=	festival
@@ -39,9 +39,9 @@ LIB_DEPENDS=	audio.1:${PORTSDIR}/audio/nas \
 
 DIST_SUBDIR=	festival
 
-EXTRA_PATCHES=	${FILESDIR}/patch-aa
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-aa
 .if defined (WITH_OGI)
-EXTRA_PATCHES=	${FILESDIR}/patch-aa-ogi
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-aa-ogi
 RESTRICTED=	no-commercial-use
 .endif
 
