@@ -2,12 +2,11 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba/Makefile,v 1.58 2001/06/07 19:17:14 dwcjr Exp $
+# $FreeBSD: ports/net/samba/Makefile,v 1.59 2001/06/08 18:30:48 dwcjr Exp $
 #
 
 PORTNAME=	samba
-PORTVERSION=	2.0.9
-PORTREVISION=	1
+PORTVERSION=	2.0.10
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.samba.org/pub/samba/%SUBDIR%/ \
 		ftp://ring.asahi-net.or.jp/pub/net/samba/%SUBDIR%/ \
