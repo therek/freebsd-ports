@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.19 2004/06/12 12:36:28 krion Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.20 2004/06/26 15:40:28 krion Exp $
 #
 # set -x
 
@@ -32,6 +32,8 @@ bin/smime_keys
 @unexec if cmp -s %D/etc/mime.types.dist %D/etc/mime.types; then rm -f %D/etc/mime.types; fi
 etc/Muttrc.dist
 etc/mime.types.dist
+@exec if [ ! -f %D/etc/Muttrc ]; then cp %D/etc/Muttrc.dist %D/etc/Muttrc; fi
+@exec if [ ! -f %D/etc/mime.types ]; then cp %D/etc/mime.types.dist %D/etc/mime.types; fi
 EOF
 
 if [ "$MUTT_NLS" = "yes" ]; then
