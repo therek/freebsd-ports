@@ -1,21 +1,20 @@
 # New ports collection makefile for:	Blackened IRC client
-# Version required:	1.7.0
+# Version required:	1.7.1
 # Date created:		11 Jun 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/blackened/Makefile,v 1.6 1999/08/25 06:12:36 obrien Exp $
 #
 
 DISTNAME=	blackened-${VERSION}
 CATEGORIES=	irc
-MASTER_SITES=	ftp://ftp.blackened.com/pub/irc/blackened/ \
-		http://www.psn.net/~andrews/blackened/
+MASTER_SITES=	ftp://ftp.blackened.com/pub/irc/blackened/
 
 MAINTAINER=	andrews@technologist.com
 
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${PKGNAME}
-VERSION=	1.7.0
+VERSION=	1.7.1
 PLIST_SUB=	VERSION=${VERSION}
 
 MAKE_ENV=	prefix=${PREFIX}
