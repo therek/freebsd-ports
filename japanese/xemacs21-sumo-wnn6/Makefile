@@ -3,12 +3,10 @@
 # Date created:        19 August 1999
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/xemacs21-sumo-wnn6/Makefile,v 1.8 1999/11/27 04:00:11 steve Exp $
+# $FreeBSD: ports/japanese/xemacs21-sumo-wnn6/Makefile,v 1.9 2000/01/06 01:51:50 shige Exp $
 #
 
-.include	<bsd.port.pre.mk>
-
-XEMACS_MAJOR_VER=	${.CURDIR:S!^${PORTSDIR}/japanese/xemacs!!:S!-sumo-wnn6$!!}
+XEMACS_MAJOR_VER=	21
 LANGPREFIX=		ja-
 NAMEEXT=		-wnn6
 
