@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.160 2000/03/08 12:10:53 kuriyama Exp $
+# $FreeBSD: ports/LEGAL,v 1.161 2000/06/02 02:58:09 will Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -105,6 +105,7 @@ molden			ports/biology/molden	free for academic,
 						do not re-distribute source and
 						 executable
 msql-*			ports/databases/msql	Not free for commercial org.
+mypaedia		ports/japanese/mypaedia-fpw The original dictionary is not free
 netscape-*-us-*		ports/www/netscape*	Crypto; export-controlled
 netshow-*		ports/graphics/netshow	Commercial software
 nte-1.5a23		ports/mbone/nte		Crypto; export-controlled
@@ -137,6 +138,7 @@ shorten-*		ports/audio/shorten	May not be sold. May not be
 						distributed if modified.
 sim-2.3.tar.gz		ports/emulators/sim	No commercial use
 socks5-*		ports/net/socks5	No commercial use
+srd			ports/japanese/srd-fpw	The original dictionary is not free
 ssh-*			ports/security/ssh*	Crypto; export-controlled
 *mod_ssl*		ports/www/apache13-modssl Crypto; export-controlled
 apache*-ssl		ports/www/apache12-ssl	
