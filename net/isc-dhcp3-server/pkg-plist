@@ -1,7 +1,5 @@
-@comment $FreeBSD: ports/net/isc-dhcp3-server/pkg-plist,v 1.27 2004/03/16 20:31:15 des Exp $
+@comment $FreeBSD: ports/net/isc-dhcp3-server/pkg-plist,v 1.28 2004/06/25 18:50:13 eik Exp $
 bin/omshell
 etc/dhcpd.conf.sample
 etc/rc.d/isc-dhcpd.sh
 sbin/dhcpd
-@exec [ -f /var/db/dhcpd.leases ] || touch /var/db/dhcpd.leases
-@unexec [ -s /var/db/dhcpd.leases ] || rm -f /var/db/dhcpd.leases
