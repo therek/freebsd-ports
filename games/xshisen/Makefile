@@ -3,7 +3,7 @@
 # Date created:               9 Oct 1996
 # Whom:                 Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xshisen/Makefile,v 1.13 1999/08/25 06:06:09 obrien Exp $
+# $FreeBSD: ports/games/xshisen/Makefile,v 1.14 1999/11/24 07:20:03 nakai Exp $
 #
 
 DISTNAME=	xshisen-1.36
@@ -26,9 +26,9 @@ MANLANG=	"" ja
 MAN6=		xshisen.6
 
 post-install:
-	@${CHOWN} games:games ${PREFIX}/bin/xshisen
+	@${CHOWN} root:games ${PREFIX}/bin/xshisen
 	@${CHMOD} 2555 ${PREFIX}/bin/xshisen
-	@${CHOWN} games:games ${PREFIX}/lib/X11/xshisen/xshisen-scores
+	@${CHOWN} root:games ${PREFIX}/lib/X11/xshisen/xshisen-scores
 	@${CHMOD} 0660 ${PREFIX}/lib/X11/xshisen/xshisen-scores
 	${INSTALL_MAN} ${WRKSRC}/xshisen.man ${PREFIX}/man/man6/xshisen.6
 	@${PREFIX}/bin/xshisen -KCONV jis < ${WRKSRC}/xshisen.jman-jis \
