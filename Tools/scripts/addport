@@ -6,7 +6,7 @@
 #             and Michael Haro <mharo@FreeBSD.org>
 #
 # $Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp $
-# $FreeBSD: ports/Tools/scripts/addport,v 1.5 2000/08/09 19:27:29 will Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.6 2000/08/11 14:31:28 will Exp $
 #
 # MAINTAINER= mharo@FreeBSD.org
 # however feel free to submit patches to will@FreeBSD.org.  =)
@@ -14,17 +14,14 @@
 
 use Cwd "abs_path";
 use Getopt::Std;
+use Sys::Hostname;
 use strict;
 
 my %opts;
 
-if (getopts('d:h:intu:v', \%opts)) {
-	usage();
-	exit 1;
-}
+getopts('d:h:intu:v', \%opts);
 
 my $dir = $opts{'d'};
-print "dir = $dir\n";
 my $h = "freefall.FreeBSD.org";
 $h = $opts{'h'} if ($opts{'h'} ne "");
 my $n = $opts{'n'};
@@ -48,7 +45,7 @@ my $mv = "mv";
 my $rm = "rm";
 
 # now check to make sure this isn't running on freefall
-chomp(my $myhost = lc(`hostname`));
+chomp(my $myhost = lc(hostname()));
 if ($myhost ne lc($h)) {
 	$ssh = "$ENV{CVS_RSH} $u\@$h";
 	$repo = "$u\@$h:/home/ncvs";
@@ -86,6 +83,12 @@ if (!$vanilla) {
 		push(@commands, "$make distclean");
 		push(@commands, "$make build");
 	}
+}
+
+if ($dir eq "") {
+	warnx("Need to specify a directory with -d argument!");
+	usage();
+	exit 1;
 }
 
 my @dirs = split(/\,/, $dir);
