@@ -1,18 +1,18 @@
-# New ports collection makefile for:	pgpmoose
+# New ports collection makefile for:	c-nocem
 # Date created:		19.May 1999
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/c-nocem/Makefile,v 1.1 2000/08/02 10:24:56 nbm Exp $
 
 PORTNAME=	c-nocem
-PORTVERSION=	3.5
+PORTVERSION=	3.6
 CATEGORIES=	news security
 MASTER_SITES=	http://sites.inka.de/~bigred/sw/ \
 		ftp://ftp.lan-ks.de/pub/FreeBSD/distfiles/
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
 
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/news/cnews:patch
+BUILD_DEPENDS= /nonexistent:${PORTSDIR}/news/cnews:patch
 
 WRKSRC=		${WRKDIR}/c-nocem
 USE_GMAKE=	yes
