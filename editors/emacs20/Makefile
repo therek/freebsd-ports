@@ -2,7 +2,7 @@
 # Date created:		29 October 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/editors/emacs20/Makefile,v 1.51 2001/05/22 18:16:56 sobomax Exp $
+# $FreeBSD: ports/editors/emacs20/Makefile,v 1.52 2001/09/17 17:40:09 dwcjr Exp $
 #
 
 PORTNAME=	emacs
@@ -16,27 +16,17 @@ MAINTAINER=	ports@FreeBSD.org
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes
 CONFIGURE_TARGET=	${MACHINE_ARCH}--freebsd
-.if !defined(WITHOUT_X11)
+.if defined(WITHOUT_X11)
+CONFIGURE_ARGS=	--with-x=no --with-pop
+.else
 CONFIGURE_ARGS=	--with-x-toolkit --with-pop
 USE_XLIB=	yes
-.else
-CONFIGURE_ARGS=	--with-x=no --with-pop
 .endif
 
 MAKE_ENV=	INSTALL_SCRIPT="${INSTALL_SCRIPT}"
 MAN1=		emacs.1 etags.1 ctags.1
 PLIST_SUB=	EMACS_VER=20.7 EMACS_ARCH=${CONFIGURE_TARGET}
 #WRKSRC=		${WRKDIR}/emacs-20.7
-
-.if defined(WITH_XPG4)
-CONFIGURE_ARGS+=	--with-xpg4
-.endif
-
-pre-fetch:
-.if !defined(WITH_XPG4)
-	@${ECHO_MSG} "NOTE: You can have international locale library support "
-	@${ECHO_MSG} "by adding \"WITH_XPG4=yes\" to argument of make."
-.endif
 
 pre-build:
 	${RM} -rf ${WRKSRC}/info/*
