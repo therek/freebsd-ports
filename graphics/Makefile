@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.177 2000/02/13 02:06:48 imura Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.178 2000/02/13 23:59:04 jdp Exp $
 #
 
     SUBDIR += 4va
@@ -33,6 +33,7 @@
     SUBDIR += fujiplay
     SUBDIR += fxtv
     SUBDIR += g2
+    SUBDIR += gcolor
     SUBDIR += gd
     SUBDIR += gdk-pixbuf
     SUBDIR += geomview
