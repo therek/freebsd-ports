@@ -3,13 +3,14 @@
 # Date created:		22 September 1998
 # Whom:			Kenjiro Cho <kjc@csl.sony.co.jp>
 #
-# $FreeBSD: ports/x11-toolkits/blt/Makefile,v 1.29 1999/11/04 11:06:47 asami Exp $
+# $FreeBSD: ports/x11-toolkits/blt/Makefile,v 1.30 1999/11/28 18:30:48 steve Exp $
 #
 
 DISTNAME=	BLT2.4m
 PKGNAME=	blt-2.4m
 CATEGORIES=	x11-toolkits tk82
-MASTER_SITES=	ftp://ftp.tcltk.com/pub/blt/
+MASTER_SITES=	ftp://ftp.tcltk.com/pub/blt/ \
+		ftp://ftp.csl.sony.co.jp/pub/kjc/ttt-libs/
 
 MAINTAINER=	kjc@csl.sony.co.jp
 
