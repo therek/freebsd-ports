@@ -2,14 +2,14 @@
 # Date created:				May 9th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/rwhois/Makefile,v 1.15 2000/07/05 12:36:43 tg Exp $
+# $FreeBSD: ports/net/rwhois/Makefile,v 1.16 2000/10/23 21:03:04 will Exp $
 #
 
 PORTNAME=	rwhois
-PORTVERSION=	1.0.b9.2
-CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.rwhois.net/pub/
-DISTNAME=	rwhois-1.0B9.2
+PORTVERSION=	1.5.7
+CATEGORIES=	net ipv6
+MASTER_SITES=	http://www.rwhois.net/ftp/
+DISTNAME=	${PORTNAME}d-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -17,27 +17,27 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	wrap.7:${PORTSDIR}/security/tcp_wrapper
 .endif
 
-HAS_CONFIGURE=	YES
+HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX}/lib/rwhois
-INSTALL_TARGET=	install install-sample-data install-chroot
 
-MAN8=		rmkdbindex.8 rwhoisd.8
+BINOWN=		bin
+BINGRP=		bin
 
-.include <bsd.port.pre.mk>
+MAN8=		rwhois_indexer.8 rwhoisd.8
 
-.if ${OSVERSION} < 400011
-LIBCVERSION=	3.1
-.else
-LIBCVERSION=	4
-.endif
-PLIST_SUB=	LIBCVERSION=${LIBCVERSION}
+PORTDOCS=	INSTALL.html TODO UPGRADE operations_guide.html \
+		operations_guide.txt rfc2167.txt security.html security.txt
 
 post-install:
-	${MKDIR} -p ${PREFIX}/share/doc/rwhois
-	${INSTALL_DATA} ${WRKSRC}/doc/* ${PREFIX}/share/doc/rwhois
-	${MV} ${PREFIX}/share/doc/rwhois/rmkdbindex.8 ${PREFIX}/man/man8	
-	${MV} ${PREFIX}/share/doc/rwhois/rwhoisd.8 ${PREFIX}/man/man8	
-	@ ${ECHO_MSG} "Installing ${PREFIX}/etc/rc.d/rwhoisd.sh startup file..."
+	${INSTALL_MAN} ${WRKSRC}/doc/rwhois_indexer.8 ${PREFIX}/man/man8
+	${INSTALL_MAN} ${WRKSRC}/doc/rwhoisd.8 ${PREFIX}/man/man8
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/rwhois
+.for file in ${PORTDOCS}
+	${INSTALL_DATA} ${WRKSRC}/doc/${file} ${PREFIX}/share/doc/rwhois
+.endfor
+.endif
+	@${ECHO_MSG} "Installing ${PREFIX}/etc/rc.d/rwhoisd.sh startup file..."
 	${INSTALL_SCRIPT} -m 751 ${FILESDIR}/rwhoisd.sh ${PREFIX}/etc/rc.d/rwhoisd.sh
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
