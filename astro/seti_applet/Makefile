@@ -2,7 +2,7 @@
 # Date Created:		1 Jul 2000
 # Whom:			HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/astro/seti_applet/Makefile,v 1.4 2000/10/12 15:47:12 kevlo Exp $
+# $FreeBSD: ports/astro/seti_applet/Makefile,v 1.5 2001/02/26 04:30:29 steve Exp $
 #
 
 PORTNAME=	seti_applet
@@ -12,7 +12,7 @@ CATEGORIES=	astro gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME:S/_/-/}
 
-MAINTAINER=	th@cis.ibaraki.ac.jp
+MAINTAINER=	cbc06942@pop06.odn.ne.jp
 
 LIB_DEPENDS=	gtop.1:${PORTSDIR}/devel/libgtop
 RUN_DEPENDS=	setiathome:${PORTSDIR}/astro/setiathome
