@@ -2,11 +2,11 @@
 # Date created:		15 May 2001
 # Whom:			jasone
 #
-# $FreeBSD: ports/lang/onyx/Makefile,v 1.4 2001/08/22 06:54:59 jasone Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	onyx
-PORTVERSION=	2.1.0
+PORTVERSION=	2.2.0
 CATEGORIES=	lang
 MASTER_SITES=	http://www.canonware.com/download/onyx/
 
@@ -15,6 +15,8 @@ MAINTAINER=	jasone@FreeBSD.org
 BUILD_DEPENDS=	cook:${PORTSDIR}/devel/cook
 
 GNU_CONFIGURE=	yes
+# Hack around brokenness in configure script.  Remove after 2.2.0.
+CFLAGS=
 INSTALLS_SHLIB=	yes
 
 MAN1=		onyx.1
