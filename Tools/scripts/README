@@ -1,4 +1,4 @@
-$FreeBSD: ports/Tools/scripts/README,v 1.9 2000/10/19 10:47:28 trevor Exp $
+$FreeBSD: ports/Tools/scripts/README,v 1.10 2001/12/11 10:49:51 sobomax Exp $
 
 addport	- future replacement for easy-import
 
@@ -9,6 +9,8 @@ checkcats.py - verify that master categories in all ports are correct and
 checknewvers - checks for availability for a newest version of distfiles on
                MASTER_SITES (ftp only).
 close-pr  - a slightly hacked version of edit-pr(1) to quickly close PR.
+de-pkg-comment - converts pkg-comment to COMMENT (will be obsoleted when
+                 the mass conversion is finished)
 distclean - compare md5 sums of distfiles in ports/distfiles with currently
             installed ports collection in ports/* and prompt to remove
             unmatched entries
