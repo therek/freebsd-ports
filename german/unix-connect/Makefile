@@ -2,7 +2,7 @@
 # Date created:         01.May 1999
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/unix-connect/Makefile,v 1.1 2001/08/18 20:57:05 dinoex Exp $
+# $FreeBSD: ports/german/unix-connect/Makefile,v 1.2 2001/08/20 06:36:29 dinoex Exp $
 
 PORTNAME=	unix-connect
 PORTVERSION=	0.92
@@ -25,6 +25,7 @@ CONFIGURE_ARGS+=--with-mail=sendmail
 CONFIGURE_ARGS+=--with-news=cnews
 CONFIGURE_ARGS+=--enable-testing
 CFLAGS+=-g
+CFLAGS:= ${CFLAGS:S/-O[0-9]*//g}	# gcc generates broken code in uwsmtp
 
 post-install:
 .if !defined(NOPORTDOCS)
