@@ -2,7 +2,7 @@
 # Date created:				15 August 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/pygmy/Makefile,v 1.1 2000/08/15 08:15:32 sobomax Exp $
+# $FreeBSD: ports/mail/pygmy/Makefile,v 1.2 2000/08/30 07:39:46 sobomax Exp $
 #
 
 PORTNAME=	pygmy
@@ -12,11 +12,12 @@ MASTER_SITES=	http://www.cs.uit.no/~kjetilja/Pygmy/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python \
-		${LOCALBASE}/lib/python1.5/site-packages/_gnomemodule.so:${PORTSDIR}/x11-toolkits/py-gnome
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python \
-		${LOCALBASE}/lib/python1.5/site-packages/_gnomemodule.so:${PORTSDIR}/x11-toolkits/py-gnome
+BUILD_DEPENDS=	${LOCALBASE}/lib/${PYTHON_VERSION}/site-packages/_gnomemodule.so:${PORTSDIR}/x11-toolkits/py-gnome
+RUN_DEPENDS=	${LOCALBASE}/lib/${PYTHON_VERSION}/site-packages/_gnomemodule.so:${PORTSDIR}/x11-toolkits/py-gnome
 
+USE_PYTHON=	yes
+
+MAKE_ENV=	PYTHON_VERSION="${PYTHON_VERSION}"
 ALL_TARGET=	pythonprogs
 
 do-configure:
