@@ -2,11 +2,11 @@
 # Date created:		Wed Aug 18 13:23:00 BST 1999
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/misc/alevt/Makefile,v 1.7 2000/06/23 13:21:58 sobomax Exp $
+# $FreeBSD: ports/misc/alevt/Makefile,v 1.8 2000/07/04 07:12:42 sobomax Exp $
 #
 
 PORTNAME=	alevt
-PORTVERSION=	1.5.1
+PORTVERSION=	1.6.0
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://user.exit.de/froese/alevt/
