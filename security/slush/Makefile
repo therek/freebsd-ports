@@ -2,13 +2,14 @@
 # Date created:			  Sun May 3, 1999
 # Whom:                 	shipley@dis.org
 #
-# $FreeBSD: ports/security/slush/Makefile,v 1.9 2000/06/02 03:18:45 will Exp $
+# $FreeBSD: ports/security/slush/Makefile,v 1.10 2000/09/22 01:59:01 kris Exp $
 #
 
 PORTNAME=	slush
 PORTVERSION=	0.1.1
 CATEGORIES=	security
-MASTER_SITES=	http://violet.ibs.com.au/slush/files/ \
+MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/kris/ \
+		http://violet.ibs.com.au/slush/files/ \
 		ftp://www.dis.org/pub/Security/
 
 MAINTAINER=	shipley@dis.org
