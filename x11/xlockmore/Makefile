@@ -2,11 +2,11 @@
 # Date created:		9 November 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.50 2000/04/03 11:07:25 tg Exp $
+# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.51 2000/04/13 19:10:42 cpiazza Exp $
 #
 
 PORTNAME=	xlockmore
-PORTVERSION= 	4.16
+PORTVERSION= 	4.16.1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.tux.org/pub/tux/bagleyd/xlockmore/ \
 		${MASTER_SITE_XCONTRIB}
