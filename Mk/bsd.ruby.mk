@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.127 2003/10/31 18:43:43 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.128 2003/10/31 19:34:05 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -148,6 +148,8 @@ RUBY_PORTVERSION?=	${RUBY_VERSION}.2003.10.15
 .endif
 #      defined(RUBY_VER) && ${RUBY_VER} == 1.8
 
+CONFIGURE_TARGET=	${ARCH}-portbld-freebsd${OSREL:C/\..*//}${RUBY_R}
+
 RUBY_ARCH?=		${ARCH}-freebsd${OSREL:C/\..*//}${RUBY_R}
 RUBY_NAME?=		ruby${RUBY_SUFFIX}
 
@@ -181,9 +183,7 @@ RUBY_WITH_SUFFIX?=	${RUBY_WITHOUT_SUFFIX}${_RUBY_SUFFIX}
 RUBY_PKGNAMEPREFIX?=	ruby${RUBY_SUFFIX}-	# could be rb${RUBY_SUFFIX}-
 RUBY_SHLIBVER?=		${RUBY_VER:S/.//}
 
-CONFIGURE_TARGET=	# empty
-
-RUBY_CONFIGURE_ARGS+=	--target="${RUBY_ARCH}" --program-prefix=""
+RUBY_CONFIGURE_ARGS+=	--program-prefix=""
 
 # PORTDIRNAME is not defined yet
 _IS_RUBY_R_PORT=	${.CURDIR:M*_r}
