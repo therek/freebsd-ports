@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.156 2000/01/23 00:59:59 mharo Exp $
+# $FreeBSD: ports/LEGAL,v 1.157 2000/02/14 23:03:56 mharo Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -40,6 +40,7 @@ contool-*		ports/sysutils/contool	Don't incorporate the source
 cos-*			ports/java/cos		Special conditions apply for
 						commercial use.
 cosmo/*			ports/games/cosmo	Possible copyright infringement
+cryptix-jce-*		ports/java/cryptix-jce	Testing purpose only.
 cscope			ports/devel/cscope	Redistribution license from Lucent Technologies required
 crack-5.0		ports/security/crack	Crypto; export-controlled
 cs-0.3			ports/devel/cs		License required for
