@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.284 2000/03/31 18:40:04 jhb Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.285 2000/05/17 23:39:56 will Exp $
 #
 
     SUBDIR += 9term
@@ -20,6 +20,7 @@
     SUBDIR += fbsd-icons
     SUBDIR += gmessage
     SUBDIR += gnome
+    SUBDIR += gnomeapplets
     SUBDIR += gnomecore
     SUBDIR += gnomelibs
     SUBDIR += gyroscope
