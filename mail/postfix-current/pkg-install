@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/mail/postfix-current/pkg-install,v 1.6 2001/03/14 02:33:15 kuriyama Exp $
+#	$FreeBSD: ports/mail/postfix-current/pkg-install,v 1.7 2002/01/30 19:47:43 dwcjr Exp $
 #
 
 PKG_PREFIX=${PKG_PREFIX:=/usr/local}
@@ -83,6 +83,13 @@ if [ x"$2" = xPRE-INSTALL ]; then
 fi
 
 if [ x"$2" = xPOST-INSTALL ]; then
+        if [ ! -f ${PKG_PREFIX}/etc/postfix/main.cf ]; then
+                cp ${PKG_PREFIX}/etc/postfix/sample-main.cf ${PKG_PREFIX}/etc/postfix/main.cf
+        fi
+        if [ ! -f ${PKG_PREFIX}/etc/postfix/master.cf ]; then
+                cp ${PKG_PREFIX}/etc/postfix/sample-master.cf ${PKG_PREFIX}/etc/postfix/master.cf
+        fi
+
 	sh ${PKG_PREFIX}/etc/postfix/post-install tempdir=/tmp \
 	 config_directory=${PKG_PREFIX}/etc/postfix \
 	 daemon_directory=${PKG_PREFIX}/libexec/postfix \
