@@ -2,11 +2,11 @@
 # Date created:        05 June 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/spager/Makefile,v 1.2 2000/07/07 19:59:17 steve Exp $
+# $FreeBSD: ports/x11-wm/spager/Makefile,v 1.3 2000/10/05 06:42:56 reg Exp $
 #
 
 PORTNAME=	spager
-PORTVERSION=	0.08
+PORTVERSION=	0.12
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.stanford.edu/~satyakid/
 
@@ -29,7 +29,9 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/spager ${PREFIX}/bin/
 	${MKDIR} ${PREFIX}/share/spager
 	${INSTALL_SCRIPT} ${WRKSRC}/spager.jl ${PREFIX}/share/spager
-	${INSTALL_SCRIPT} ${WRKSRC}/x-message.jl ${PREFIX}/share/spager
+	${MKDIR} ${PREFIX}/share/spager/merlin
+	${INSTALL_SCRIPT} ${WRKSRC}/merlin/message.jl ${PREFIX}/share/spager/merlin
+	${INSTALL_SCRIPT} ${WRKSRC}/merlin/util.jl ${PREFIX}/share/spager/merlin
 	${INSTALL_DATA} ${WRKSRC}/sample.rc ${PREFIX}/share/spager
 	@${CAT} ${PKGMESSAGE}
 
