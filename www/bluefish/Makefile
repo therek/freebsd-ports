@@ -2,11 +2,11 @@
 # Date created:			25 July 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/www/bluefish/Makefile,v 1.16 2000/10/13 09:23:57 reg Exp $
+# $FreeBSD: ports/www/bluefish/Makefile,v 1.17 2000/12/24 21:49:07 jim Exp $
 #
 
 PORTNAME=	bluefish
-PORTVERSION= 	0.6
+PORTVERSION=	0.6
 CATEGORIES=	www editors
 MASTER_SITES=	http://bluefish.openoffice.nl/download/ \
 		http://student.wau.nl/~olivier/bluefish/download/
@@ -17,13 +17,13 @@ RUN_DEPENDS=	weblint:${PORTSDIR}/www/weblint
 
 USE_GMAKE=	yes
 USE_BZIP2=	yes
-USE_X_PREFIX= 	yes
+USE_X_PREFIX=	yes
 USE_IMLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-install-location="${X11BASE}/lib/bluefish" \
 		--disable-nls
 
-MANCOMPRESSED=	yes
+MANCOMPRESSED=	no
 MAN1=		bluefish.1
 
 post-install:
