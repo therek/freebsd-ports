@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.461 2001/03/10 19:40:14 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.462 2001/03/10 21:32:46 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -421,6 +421,7 @@
     SUBDIR += uclmmbase
     SUBDIR += ucpp
     SUBDIR += uds
+    SUBDIR += uisp
     SUBDIR += understand_c
     SUBDIR += ups-debug
     SUBDIR += veepee
