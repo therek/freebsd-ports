@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.235 1999/11/26 19:24:26 steve Exp $
+# $FreeBSD: ports/games/Makefile,v 1.236 1999/12/10 06:34:21 imura Exp $
 #
 
     SUBDIR += 3dc
@@ -112,6 +112,7 @@
     SUBDIR += speyes
     SUBDIR += spider
     SUBDIR += starlanes
+    SUBDIR += sxsame
     SUBDIR += tank
     SUBDIR += tetrinet-x
     SUBDIR += tinymux
