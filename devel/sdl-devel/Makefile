@@ -2,11 +2,11 @@
 # Date created:				1 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.15 2000/05/17 11:18:27 sobomax Exp $
+# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.16 2000/06/06 08:05:50 sobomax Exp $
 #
 
 PORTNAME=		sdl-devel
-PORTVERSION=		1.1.2
+PORTVERSION=		1.1.3
 CATEGORIES=		devel
 MASTER_SITES=		http://www.libsdl.org/release/ \
 			http://www.devolution.com/~slouken/SDL/release/
