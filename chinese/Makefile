@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.68 2000/11/07 04:49:56 keith Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.69 2000/11/08 01:07:01 kevlo Exp $
 #
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
@@ -23,6 +23,7 @@
     SUBDIR += gbscript
     SUBDIR += hc
     SUBDIR += hztty
+    SUBDIR += joe
     SUBDIR += kcfonts
     SUBDIR += libtabe
     SUBDIR += linux-gtk
