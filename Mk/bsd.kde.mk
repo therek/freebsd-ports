@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.13 2002/05/11 20:01:09 will Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.14 2002/06/16 20:27:51 will Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -67,6 +67,7 @@ USE_KDELIBS_VER=2
 # kdelibs 3.x common stuff
 LIB_DEPENDS+=	kdecore:${PORTSDIR}/x11/kdelibs3
 USE_QT_VER=		3
+PREFIX=			${KDE_PREFIX}
 
 .else
 
@@ -94,6 +95,12 @@ QTDIR=                 ${X11BASE}
 CONFIGURE_ENV+=        MOC="${MOC}" QTDIR="${QTDIR}"
 
 .elif ${USE_QT_VER} == 3
+
+# Yeah, it's namespace pollution, but this is really the best place for this
+# stuff since arts/kdelibs use it.
+KDE_VERSION=	3.0.2
+KDE_ORIGVER=	3.0.1
+KDE_PREFIX?=	${LOCALBASE}
 
 QTCPPFLAGS?=
 QTCGFLIBS?=
