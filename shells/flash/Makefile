@@ -1,12 +1,12 @@
 # New ports collection makefile for:	flash
-# Version required:	0.9.1
 # Date created:		11 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/shells/flash/Makefile,v 1.2 2000/01/17 12:22:46 asami Exp $
+# $FreeBSD: ports/shells/flash/Makefile,v 1.3 2000/03/22 01:59:29 will Exp $
 #
 
-DISTNAME=	flash-0.9.1
+PORTNAME=	flash
+PORTVERSION= 	0.9.1
 CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.netsoc.ucd.ie/pub/computing/flash/
 
