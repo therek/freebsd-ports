@@ -2,11 +2,11 @@
 # Date created:					June 2nd 1997
 # Whom:						jfitz
 #
-# $FreeBSD: ports/news/diablo/Makefile,v 1.11 2000/04/21 07:51:42 mharo Exp $
+# $FreeBSD: ports/news/diablo/Makefile,v 1.12 2000/06/26 12:29:46 des Exp $
 #
 
 PORTNAME=	diablo
-PORTVERSION=	2.2
+PORTVERSION=	2.3
 CATEGORIES=	news
 MASTER_SITES=	http://www.openusenet.org/diablo/download/
 DISTNAME=	${PKGNAME}-REL
