@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.48 2000/01/12 04:51:33 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.49 2000/01/25 11:15:30 nakai Exp $
 #
 
     SUBDIR += FWF
@@ -43,6 +43,8 @@
     SUBDIR += tk83
     SUBDIR += tkstep80
     SUBDIR += v
+    SUBDIR += vdk
+    SUBDIR += vdkbuilder
     SUBDIR += wxgtk
     SUBDIR += xbae
     SUBDIR += xforms
