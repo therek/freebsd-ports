@@ -2,11 +2,12 @@
 # Date created:                   Sun Sep 9, 2001
 # Whom:                           statue@freebsd.sinica.edu.tw
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/zhcon/Makefile,v 1.1 2001/09/08 16:37:52 clive Exp $
 #
 
 PORTNAME=	zhcon
 PORTVERSION=	0.14f
+PORTREVISION=	1
 CATEGORIES=	chinese
 MASTER_SITES=	http://freebsd.sinica.edu.tw/~statue/ \
 		ftp://ftp.gnuchina.org/pub/linux/chinese/inputmethod/console/zhcon/BSDPort/
