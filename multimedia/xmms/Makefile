@@ -3,7 +3,7 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms/Makefile,v 1.2 1999/08/25 04:36:27 obrien Exp $
+# $FreeBSD: ports/audio/xmms/Makefile,v 1.3 1999/09/19 21:01:49 cpiazza Exp $
 #
 
 DISTNAME=	xmms-0.9.1
@@ -15,7 +15,7 @@ MAINTAINER=	esk@ira.uka.de
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		glib12.2:${PORTSDIR}/devel/glib12 \
 		mikmod.2:${PORTSDIR}/audio/libmikmod \
-		esd.1:${PORTSDIR}/audio/esound
+		esd.2:${PORTSDIR}/audio/esound
 
 USE_LIBTOOL=	yes
 CONFIGURE_ENV=	GTK_CONFIG=${X11BASE}/bin/gtk12-config \
