@@ -2,7 +2,7 @@
 # Date created:				28th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/misc/amanda24/Makefile,v 1.31 2001/01/27 05:31:09 will Exp $
+# $FreeBSD: ports/misc/amanda24/Makefile,v 1.32 2001/01/27 17:18:36 cwt Exp $
 #
 
 PORTNAME=	amanda
@@ -21,7 +21,7 @@ USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 LIBTOOLFLAGS=	--disable-ltlibs --release-ignore
-CONFIGURE_ARGS= --libexecdir=${PREFIX}/libexec/amanda \
+CONFIGURE_ARGS=	--libexecdir=${PREFIX}/libexec/amanda \
 		--with-amandahosts --with-fqdn \
 		--with-dump-honor-nodump \
 		--with-user=operator --with-group=operator
