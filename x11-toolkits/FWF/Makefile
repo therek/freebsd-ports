@@ -2,14 +2,13 @@
 # Date created:		14 July 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/FWF/Makefile,v 1.21 2000/04/10 01:10:09 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/FWF/Makefile,v 1.22 2000/08/03 09:27:31 asami Exp $
 #
 
 PORTNAME=	fwf
 PORTVERSION= 	4.0
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	${MASTER_SITE_SUNSITE}	\
-		ftp://ftp.let.rug.nl/pub/FWF/
+MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=libs/X/fwf
 
 MAINTAINER=	jseger@FreeBSD.org
