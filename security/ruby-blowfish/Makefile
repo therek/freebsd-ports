@@ -2,7 +2,7 @@
 # Date created:		8 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-blowfish/Makefile,v 1.4 2001/06/26 10:48:14 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	blowfish
@@ -32,11 +32,11 @@ DOCS_EN=	ChangeLog README TODO
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
-	${INSTALL_DATA} ${WRKSRC}/testbf.rb ${RUBY_EXAMPLESDIR}/${PORTNAME}/
-	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
+	${INSTALL_DATA} ${WRKSRC}/testbf.rb ${RUBY_MODEXAMPLESDIR}/
+	${MKDIR} ${RUBY_MODDOCDIR}
 .for f in ${DOCS_EN}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/
 .endfor
 .endif
 

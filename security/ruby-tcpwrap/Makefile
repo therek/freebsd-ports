@@ -2,7 +2,7 @@
 # Date created:		15 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-tcpwrap/Makefile,v 1.8 2001/04/23 19:00:49 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcpwrap
@@ -32,14 +32,14 @@ DOCS_JA=	README.ja	doc/tcpwrap.html.ja
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/tcpwrap
-	${INSTALL_DATA} ${WRKSRC}/sample/echod.rb ${RUBY_EXAMPLESDIR}/tcpwrap/
-	${MKDIR} ${RUBY_DOCDIR}/tcpwrap/ja
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
+	${INSTALL_DATA} ${WRKSRC}/sample/echod.rb ${RUBY_MODEXAMPLESDIR}/
+	${MKDIR} ${RUBY_MODDOCDIR}/ja
 .for f in ${DOCS_EN}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/tcpwrap/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/
 .endfor
 .for f in ${DOCS_JA}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/tcpwrap/ja/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/ja/
 .endfor
 .endif
 
