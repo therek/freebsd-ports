@@ -2,7 +2,7 @@
 # Date created:        2 November 2000
 # Whom:                Bill Fenner <fenner@FreeBSD.Org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/xmms-shn/Makefile,v 1.1 2000/11/03 17:08:17 fenner Exp $
 #
 
 PORTNAME=	xmms-shn
@@ -14,6 +14,7 @@ MAINTAINER=	fenner@FreeBSD.Org
 
 LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+BUILD_DEPENDS=	xmms-config:${PORTSDIR}/audio/xmms
 RUN_DEPENDS=	xmms:${PORTSDIR}/audio/xmms
 
 USE_AUTOCONF=	yes
