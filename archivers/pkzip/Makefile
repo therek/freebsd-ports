@@ -2,7 +2,7 @@
 # Date created:         17 Mar 1999
 # Whom:                 xxx
 #
-# $FreeBSD: ports/archivers/pkzip/Makefile,v 1.8 2001/01/16 17:30:02 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pkzip
@@ -13,6 +13,8 @@ DISTNAME=	pklin251
 EXTRACT_SUFX=	.exe
 
 MAINTAINER=	dbader@eece.unm.edu
+
+FORBIDDEN=	"security bug--see <URL:http://www.security.nnov.ru/advisories/archdt.asp> and <URL:http://cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-2001-1270>"
 
 BUILD_DEPENDS=	${LINUXBASE}/etc/redhat-release:${PORTSDIR}/emulators/linux_base
 
