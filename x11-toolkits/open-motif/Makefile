@@ -3,7 +3,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.6 2000/06/03 18:36:14 obrien Exp $
 #
 
 PORTNAME=	open-motif
@@ -15,6 +15,8 @@ MASTER_SITES=	ftp://openmotif.opengroup.org/pub/openmotif/R2.1.30/binaries/metro
 		ftp://ftp.kddlabs.co.jp/X11/openmotif/binaries/metrolink/
 DISTNAME=	openmotif-${PORTVERSION}-1_MLI
 EXTRACT_SUFX=	.tgz
+
+MAINTAINER=	obrien@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 PREFIX?=	/	# will install into ${PREFIX}/usr/X11R6
