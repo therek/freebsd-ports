@@ -2,7 +2,7 @@
 # Date created:         Thu Aug  1 21:32:14 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/x11-fonts/freefonts/Makefile,v 1.12 2000/09/17 18:20:39 ade Exp $
+# $FreeBSD: ports/x11-fonts/freefonts/Makefile,v 1.13 2000/10/08 10:23:22 asami Exp $
 #
 
 PORTNAME=	freefonts
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/fonts/
 
 MAINTAINER=	ports@FreeBSD.org
 
+RESTRICTED=	"see accompanying .license files"
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 
