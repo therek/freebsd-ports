@@ -2,14 +2,14 @@
 # Date created:			3 July 1999
 # Whom:				Shen Chuan-Hsing <statue@mail.elife.idv.tw>
 #
-# $FreeBSD: ports/chinese/joe/Makefile,v 1.4 2001/03/31 08:09:34 keith Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	chinese
 
 MASTERDIR=	${.CURDIR}/../../editors/joe
 
-PATCH_SITES=	http://freebsd.sinica.edu.tw/~statue/
+PATCH_SITES=	ftp://freebsd.sinica.edu.tw/pub/statue/joe/
 PATCHFILES=	zh-joe-2.8_3-patch
 PATCH_DIST_STRIP=	-p1
 
