@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.80 2000/04/30 08:21:56 kris Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.81 2000/06/09 06:36:26 kris Exp $
 #
 
 PORTNAME=	XFree86
@@ -65,6 +65,7 @@ EXTRACT_ONLY=	X400src-1.tgz X400src-2.tgz
 DISTFILES+=	Wraphelp.c
 IGNOREFILES=	Wraphelp.c
 .if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+.BEGIN:
 	${SH} ${PKGDIR}/INSTALL
 .endif
 .endif
