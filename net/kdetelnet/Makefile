@@ -3,7 +3,7 @@
 # Date created:		14 May 1998
 # Whom:			Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/net/kdetelnet/Makefile,v 1.5 1999/09/18 03:12:07 steve Exp $
+# $FreeBSD: ports/net/kdetelnet/Makefile,v 1.6 2000/02/15 13:45:02 imura Exp $
 #
 
 DISTNAME=	ktelnet-0.61
@@ -14,25 +14,20 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	hanspb@persbraten.vgs.no
 
-BUILD_DEPENDS=	moc:${PORTSDIR}/x11-toolkits/qt142
-LIB_DEPENDS=	qt.2:${PORTSDIR}/x11-toolkits/qt142 \
-		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		kdecore.2:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11
 
-HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	"--prefix=$(PREFIX)"
-CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" \
-		INSTALL_SCRIPT="install -c -m 555"
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CXXFLAGS="$(CXXFLAGS)" \
+		INSTALL_SCRIPT="$(INSTALL_SCRIPT)"
+USE_QT=		yes
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/HTML/en/ktelnet
-	${MKDIR} ${PREFIX}/share/doc/HTML/de/ktelnet
-	${INSTALL_MAN} ${WRKSRC}/doc/index.en.html \
-		${PREFIX}/share/doc/HTML/en/ktelnet/index.html
-	${INSTALL_MAN} ${WRKSRC}/doc/index.de.html \
-		${PREFIX}/share/doc/HTML/de/ktelnet/index.html
+.for DIR in en de
+	@${MKDIR} ${PREFIX}/share/doc/HTML/${DIR}/ktelnet
+	@${INSTALL_MAN} ${WRKSRC}/doc/index.${DIR}.html \
+	    ${PREFIX}/share/doc/HTML/${DIR}/ktelnet/index.html
+.endfor
 .endif
 
 .include <bsd.port.mk>
