@@ -2,7 +2,7 @@
 # Date created:				7 August 2001
 # Whom:					will
 #
-# $FreeBSD: ports/misc/kdeaddons/Makefile,v 1.3 2001/08/20 20:48:10 will Exp $
+# $FreeBSD: ports/misc/kdeaddons/Makefile,v 1.4 2001/08/30 17:22:42 knu Exp $
 #
 
 PORTNAME=	kdeaddons
@@ -13,7 +13,8 @@ MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
 
 MAINTAINER?=	ports@FreeBSD.org
 
-USE_KDELIBS_VER=2
+USE_KDEBASE_VER=2
+LIB_DEPENDS=	noatun.0:${PORTSDIR}/audio/kdemultimedia2
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
