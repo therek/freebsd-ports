@@ -3,7 +3,7 @@
 # Date created:		4 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/jtex209-both/Makefile,v 1.10 1999/08/25 05:24:30 obrien Exp $
 #
 
 DISTNAME?=	ja-jlatex209-a17-n152
@@ -19,6 +19,7 @@ MANUAL_PACKAGE_BUILD=	incompatible with other versions of jtex-*
 USE_GMAKE=	yes
 NO_WRKSUBDIR=	yes
 EXTRACT_ONLY=	jtex-1.52.tar.gz
+USE_BISON=	yes
 
 # Which latex to be made at BATCH mode.  BOTH, ASCII, NTT are available.
 BATCH_TEX?=	BOTH
