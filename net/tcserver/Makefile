@@ -2,7 +2,7 @@
 # Date created:				06 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/net/tcserver/Makefile,v 1.5 2000/07/05 12:36:41 tg Exp $
+# $FreeBSD: ports/net/tcserver/Makefile,v 1.6 2000/07/10 21:32:43 jedgar Exp $
 #
 
 PORTNAME=	tcserver
@@ -70,7 +70,7 @@ do-install:
 		${PREFIX}/share/tcserver
 .endif
 	${INSTALL_DATA} ${WRKSRC}/content/tcserver-test.mov ${PREFIX}/share/tcserver/content
-	if [ ! -f ${PREFIX}/etc/rc.d/tcserver.sh ]; then \
+	@if [ ! -f ${PREFIX}/etc/rc.d/tcserver.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/tcserver.sh startup file."; \
 		${INSTALL_SCRIPT} ${WRKSRC}/scripts/tcserver.init \
 			${PREFIX}/etc/rc.d/tcserver.sh; \
