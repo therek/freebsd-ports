@@ -3,17 +3,21 @@
 # Date created:		30 Aug 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/geekcode/Makefile,v 1.4 1999/09/28 17:01:01 cpiazza Exp $
+# $FreeBSD: ports/misc/geekcode/Makefile,v 1.5 2000/02/22 04:50:44 cpiazza Exp $
 #
 
 DISTNAME=	geekcode-1.7
 CATEGORIES= 	misc
 MASTER_SITES=	http://seymour.lazygenes.net/ \
-		http://www.zort.on.ca/software
+		http://www.zort.on.ca/software/
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
 do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/geekcode ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/geekcode ${PREFIX}/bin
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/geekcode
+	${INSTALL_DATA} ${WRKSRC}/geekcode.txt ${PREFIX}/share/doc/geekcode
+.endif
 
 .include <bsd.port.mk>
