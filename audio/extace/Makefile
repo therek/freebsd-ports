@@ -2,7 +2,7 @@
 # Date created:				8 April 2000
 # Whom:					Maxim Sobolev
 #
-# $FreeBSD: Exp $
+# $FreeBSD: ports/audio/extace/Makefile,v 1.1.1.1 2000/05/23 09:47:27 sobomax Exp $
 #
 
 PORTNAME=		extace
@@ -13,6 +13,7 @@ MASTER_SITES=		http://download.sourceforge.net/eXtace/
 MAINTAINER=		sobomax@FreeBSD.org
 
 LIB_DEPENDS=		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
+			gdk_imlib.5:${PORTSDIR}/graphics/imlib \
 			esd.2:${PORTSDIR}/audio/esound \
 			fftw.2:${PORTSDIR}/math/fftw
 
