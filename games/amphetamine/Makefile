@@ -2,12 +2,12 @@
 # Date created:		6 March 2000
 # Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/amphetamine/Makefile,v 1.1.1.1 2000/06/05 12:00:18 sobomax Exp $
+# $FreeBSD: ports/games/amphetamine/Makefile,v 1.2 2000/08/03 09:23:21 asami Exp $
 #
 
 PORTNAME=	amphetamine
 PORTVERSION=	0.8.8
-CATEGORIES=	graphics
+CATEGORIES=	games
 MASTER_SITES=	http://www.dataway.ch/~lukasl/amph/files/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${PORTNAME}-data-${DATAVERSION}${EXTRACT_SUFX}
