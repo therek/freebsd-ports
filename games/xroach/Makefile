@@ -2,13 +2,13 @@
 # Date created:		22 December 1995
 # Whom:			markm
 #
-# $FreeBSD: ports/games/xroach/Makefile,v 1.12 2000/04/14 12:28:10 asami Exp $
+# $FreeBSD: ports/games/xroach/Makefile,v 1.13 2000/05/14 05:40:52 billf Exp $
 #
 
 PORTNAME=	xroach
 PORTVERSION=	4.4
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.freesoftware.com/pub/4.4BSD-Lite/4.4BSD-Lite/usr/src/games/
+MASTER_SITES=	${MASTER_SITE_BACKUP}
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	markm@FreeBSD.org
