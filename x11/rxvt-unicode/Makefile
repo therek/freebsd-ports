@@ -3,8 +3,11 @@
 # Date created:         5th December 1994
 # Whom:                 gpalmer@FreeBSD.org
 #
-# $FreeBSD: ports/x11/rxvt/Makefile,v 1.29 1999/09/02 03:23:48 cpiazza Exp $
+# $FreeBSD: ports/x11/rxvt/Makefile,v 1.30 1999/10/25 02:36:34 cpiazza Exp $
 #
+# If possible, please consider updating the simple ports/x11-clocks/rclock
+# (and maybe ports/chinese/rxvt) when you upgrade rxvt.  These ports all use
+# the same distfile.
 
 DISTNAME=	rxvt-2.7.1
 CATEGORIES=	x11
