@@ -2,13 +2,15 @@
 # Date created:		15 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/devel/libtai/Makefile,v 1.2 2000/10/03 05:12:22 lioux Exp $
+# $FreeBSD: ports/devel/libtai/Makefile,v 1.3 2001/02/14 04:12:43 lioux Exp $
 #
 
 PORTNAME=	libtai
 PORTVERSION=	0.60
 CATEGORIES=	devel
-MASTER_SITES=	http://cr.yp.to/libtai/
+MASTER_SITES=	http://cr.yp.to/libtai/ \
+		ftp://mirror.pipex.net/pub/qmail/ \
+		ftp://ftp.rifkin.technion.ac.il/pub/qmail/
 
 MAINTAINER=	lioux@FreeBSD.org
 

@@ -2,14 +2,16 @@
 # Date created:		16 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/sysutils/clockspeed/Makefile,v 1.4 2001/01/16 17:32:26 sobomax Exp $
+# $FreeBSD: ports/sysutils/clockspeed/Makefile,v 1.5 2001/01/16 19:08:35 will Exp $
 #
 
 PORTNAME=	clockspeed
 PORTVERSION=	0.62
 PORTREVISION=	1
 CATEGORIES=	sysutils
-MASTER_SITES=	http://cr.yp.to/clockspeed/
+MASTER_SITES=	http://cr.yp.to/clockspeed/ \
+		ftp://mirror.pipex.net/pub/qmail/ \
+		ftp://ftp.rifkin.technion.ac.il/pub/qmail/
 
 MAINTAINER=	lioux@FreeBSD.org
 
