@@ -2,13 +2,13 @@
 # Date Created:			24 Mar 2001
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/emacs-w3m-emacs20/Makefile,v 1.2 2001/04/11 04:11:40 knu Exp $
+# $FreeBSD: ports/www/emacs-w3m-emacs20/Makefile,v 1.3 2001/05/24 02:30:11 knu Exp $
 #
 
 PORTNAME=	emacs-w3m
 PORTVERSION=	1.0
 CATEGORIES=	www elisp
-MASTER_SITES=	http://namazu.org/~tsuchiya/emacs-w3m/
+MASTER_SITES=	http://emacs-w3m.namazu.org/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 DISTNAME=	w3m_el-${PORTVERSION}
 
