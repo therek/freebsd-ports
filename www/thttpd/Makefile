@@ -2,7 +2,7 @@
 # Date created:		24 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/thttpd/Makefile,v 1.19 2001/04/08 22:17:00 steve Exp $
+# $FreeBSD: ports/www/thttpd/Makefile,v 1.20 2001/05/01 00:34:46 mharo Exp $
 #
 
 PORTNAME=	thttpd
@@ -18,13 +18,6 @@ MAINTAINER=	anders@fix.no
 IGNOREFILES=	notes.html
 
 GNU_CONFIGURE=	yes
-
-.include <bsd.port.pre.mk>
-
-# Kqueue doesn't work in -current with thttpd.
-.if ${OSVERSION} >= 500000
-CFLAGS+=	-DHAVE_FREEBSD_CURRENT
-.endif
 
 MAN1=		makeweb.1 htpasswd.1
 MAN8=		thttpd.8 redirect.8 ssi.8 syslogtocern.8
@@ -87,4 +80,4 @@ config-message:
 	@${ECHO} ""
 	@${ECHO} "====================================================================="
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
