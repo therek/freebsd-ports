@@ -2,11 +2,11 @@
 # Date created:        	00/06/14
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/srd-fpw/Makefile,v 1.1.1.1 2000/06/23 19:04:06 taoka Exp $
+# $FreeBSD: ports/japanese/srd-fpw/Makefile,v 1.2 2000/08/25 00:54:38 taoka Exp $
 #
 
 PORTNAME=	srd-fpw
-PORTVERSION=	1.1
+PORTVERSION=	1.1.1
 CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/srd-fpw/
 DISTNAME=	srd-fpw${PORTVERSION}-src
@@ -26,24 +26,18 @@ post-extract:
 	@if [ ! -f ${DICT_PATH}/SRD.INI ]; then \
 	  ${ECHO} "###################################################"; \
 	  ${ECHO} "Specify a mount point for Random House's CD-ROM"; \
-	  ${ECHO} "and excecute the following command again:"; \
+	  ${ECHO} "or a directory which you copied it from the CD-ROM".; \
+	  ${ECHO} "And excecute the following command again:"; \
 	  ${ECHO} "  make DICT_PATH=${DICT_PATH}"; \
 	  ${ECHO} "###################################################"; \
 	  ${FALSE}; \
 	fi
-	${MKDIR} ${WRKSRC}/source/DATA
-	${CP} ${DICT_PATH}/Readme.txt ${WRKSRC}/source
-	${CP} ${DICT_PATH}/DATA/main.txt ${WRKSRC}/source/DATA/
-	${CP} ${DICT_PATH}/DATA/en.dat ${WRKSRC}/source/DATA/
-	${CP} ${DICT_PATH}/DATA/tr.dat ${WRKSRC}/source/DATA/
-	${CP} ${DICT_PATH}/DATA/img.dat ${WRKSRC}/source/DATA/
 
 do-build:
 #	cd ${WRKSRC}; fpwmake SRCDIR=${DICT_PATH} > /dev/null; \
-#	cd ${WRKSRC}; fpwmake SRCDIR=${DICT_PATH}; \
 	cd ${WRKSRC}; \
-	fpwmake png; \
-	fpwmake ; \
+	fpwmake SRCDIR=${DICT_PATH} png; \
+	fpwmake SRCDIR=${DICT_PATH}; \
 	fpwmake catalogs
 
 do-install:
