@@ -1,13 +1,13 @@
 # New ports collection makefile for:	PowerPak
-# Version required:			990901
+# Version required:			990905
 # Date created:				19 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/powerpak/Makefile,v 1.6 1999/09/02 05:07:29 cpiazza Exp $
+# $FreeBSD: ports/games/powerpak/Makefile,v 1.7 1999/09/02 06:32:41 cpiazza Exp $
 #
 
 DISTNAME=	PowerPak
-PKGNAME=	powerpak-990901
+PKGNAME=	powerpak-990905
 CATEGORIES= 	games
 MASTER_SITES=	http://www.angelfire.com/va/powerpakgsdk/images/
 
@@ -28,17 +28,17 @@ do-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/libPP.a ${PREFIX}/lib
 	@ ${INSTALL_DATA} ${WRKSRC}/libPP.so ${PREFIX}/lib
 	@ ${MKDIR} ${PREFIX}/include/PowerPak
-.for file in IMG.h powerpak.h PowerDraw/gfx.h PowerDraw/powerdraw.h PowerDraw/primitives.h PowerDraw/sprites.h PowerDraw/truetype.h PowerInput/keyboard.h PowerInput/mouse.h PowerInput/powerinput.h
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/include/PowerPak
-.endfor
+	@ ${INSTALL_DATA} ${WRKSRC}/*.h ${PREFIX}/include/PowerPak
+	@ ${INSTALL_DATA} ${WRKSRC}/PowerDraw/*.h ${PREFIX}/include/PowerPak
+	@ ${INSTALL_DATA} ${WRKSRC}/PowerInput/*.h ${PREFIX}/include/PowerPak
 	@ ${MKDIR} ${PREFIX}/share/examples/PowerPak/PowerDraw
 	@ ${INSTALL_DATA} ${WRKSRC}/PowerDraw/examples/Makefile.UNIX ${PREFIX}/share/examples/PowerPak/PowerDraw/Makefile
-.for file in crackman.ttf crackman.txt ex1.c ex2.c ex3.c ex4.c ex4.pcx ex5.c ex5-1.pcx ex5-2.pcx ex6.c ex7.c
-	@ ${INSTALL_DATA} ${WRKSRC}/PowerDraw/examples/${file} ${PREFIX}/share/examples/PowerPak/PowerDraw
-.endfor
+	@ ${INSTALL_DATA} ${WRKSRC}/PowerDraw/examples/*.c ${PREFIX}/share/examples/PowerPak/PowerDraw
+	@ ${INSTALL_DATA} ${WRKSRC}/PowerDraw/examples/*.ttf ${PREFIX}/share/examples/PowerPak/PowerDraw
+	@ ${INSTALL_DATA} ${WRKSRC}/PowerDraw/examples/*.pcx ${PREFIX}/share/examples/PowerPak/PowerDraw 
 	@ ${MKDIR} ${PREFIX}/share/examples/PowerPak/PowerInput
 	@ ${INSTALL_DATA} ${WRKSRC}/PowerInput/examples/Makefile.UNIX ${PREFIX}/share/examples/PowerPak/PowerInput/Makefile
-.for file in ex1.c ex2.c ex3.c ex4.c
+.for file in ex1.c ex2.c ex3.c ex4.c ex5.c sprite.pcx
 	@ ${INSTALL_DATA} ${WRKSRC}/PowerInput/examples/${file} ${PREFIX}/share/examples/PowerPak/PowerInput
 .endfor
 
