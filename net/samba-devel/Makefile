@@ -2,7 +2,7 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba-devel/Makefile,v 1.67 2001/08/26 01:33:17 dwcjr Exp $
+# $FreeBSD: ports/net/samba-devel/Makefile,v 1.68 2001/09/01 05:18:45 dwcjr Exp $
 #
 
 PORTNAME=	samba
@@ -96,7 +96,7 @@ post-install:
 	fi
 	${CHMOD} 700 ${SAMBA_PRIVATE}
 	if [ ! -f ${SAMBA_PRIVATE}/smbpasswd ] ; then			\
-		${CAT} /etc/passwd | ${PREFIX}/bin/make_smbpasswd > ${SAMBA_PRIVATE}/smbpasswd ; \
+		${CAT} /etc/passwd | ${GREP} -v "^#" | ${PREFIX}/bin/make_smbpasswd > ${SAMBA_PRIVATE}/smbpasswd ; \
 		${CHMOD} 600 ${SAMBA_PRIVATE}/smbpasswd ;			\
 	fi
 	${CHMOD} 500 ${SAMBA_PRIVATE}
