@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.201 2001/07/08 15:55:54 kevlo Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.202 2001/07/19 18:32:08 knu Exp $
 #
     SUBDIR += yawho
 
@@ -72,6 +72,7 @@
     SUBDIR += kdeadmin
     SUBDIR += koncd
     SUBDIR += lavaps
+    SUBDIR += lfm
     SUBDIR += libretto-config
     SUBDIR += lmmon
     SUBDIR += log_analysis
