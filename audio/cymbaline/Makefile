@@ -3,11 +3,11 @@
 # Date created:			Jun 20, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/audio/cymbaline/Makefile,v 1.1 2001/06/20 15:02:29 ijliao Exp $
+# $FreeBSD: ports/audio/cymbaline/Makefile,v 1.2 2001/07/06 01:37:13 ijliao Exp $
 #
 
 PORTNAME=	cymbaline
-PORTVERSION=	0.7
+PORTVERSION=	0.8b
 CATEGORIES=	audio python
 MASTER_SITES=	http://www.silmarill.org/cymbaline/
 DISTNAME=	${PORTNAME}
