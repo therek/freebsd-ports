@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.360 2000/05/14 17:04:17 jseger Exp $
+# $FreeBSD: ports/net/Makefile,v 1.361 2000/05/17 23:39:59 will Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -99,6 +99,7 @@
     SUBDIR += kdenetwork2
     SUBDIR += kdetelnet
     SUBDIR += kicq
+    SUBDIR += kmud
     SUBDIR += ksamba
     SUBDIR += kxicq
     SUBDIR += lambdamoo
