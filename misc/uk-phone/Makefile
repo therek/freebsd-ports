@@ -2,11 +2,11 @@
 # Date created:         1998-01-01
 # Whom:                 wosch
 #
-# $FreeBSD: ports/misc/uk-phone/Makefile,v 1.14 2001/07/20 18:36:00 brian Exp $
+# $FreeBSD: ports/misc/uk-phone/Makefile,v 1.15 2001/08/23 17:00:58 brian Exp $
 #
 
 PORTNAME=	uk-phone
-PORTVERSION=	2.5
+PORTVERSION=	2.6
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.Awfulhak.org/pub/uk-phone/ \
 		http://people.FreeBSD.org/~brian/uk-phone/
