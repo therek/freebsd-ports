@@ -3,11 +3,10 @@
 # Date created:		26 May 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/editors/psgml-xemacs-mule/Makefile,v 1.7 1999/12/02 14:00:52 shige Exp $
+# $FreeBSD: ports/editors/psgml-xemacs21-mule/Makefile,v 1.8 2000/01/06 14:27:10 shige Exp $
 #
 
 MAINTAINER=	kuriyama@FreeBSD.org
-BROKEN=		editors/xemacs-mule is removed.
 
 # This is a slave port.
 PORTCLASS=	slave
@@ -16,7 +15,8 @@ MASTERDIR=	${.CURDIR}/../psgml-emacs
 
 # emacs port setup
 EMACS_NAME=	xemacs
-EMACS_PORT=	xemacs-mule
+EMACS_PORT=	xemacs21-mule
+EMACS_CMD=	${PREFIX}/bin/${EMACS_PORT}
 EMACS_VER=	21.1.8
 EMACS_LIBDIR=	lib/xemacs
 
