@@ -2,11 +2,12 @@
 # Date created:		31 December 2000
 # Whom:			grog
 #
-# $FreeBSD: ports/textproc/gmat/Makefile,v 1.1 2001/01/01 01:32:04 grog Exp $
+# $FreeBSD: ports/textproc/gmat/Makefile,v 1.2 2001/01/11 03:37:02 grog Exp $
 #
 
 PORTNAME=	gmat
 PORTVERSION= 	0.2.4b
+PORTREVISION=	1
 WRKSRC=		${WRKDIR}/${PORTNAME}-0.2.4
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.ora.com/pub/gmat/
