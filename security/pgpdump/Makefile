@@ -2,7 +2,7 @@
 # Date created:				19 Jul 2000
 # Whom:					TAKAHASHI Kaoru
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/pgpdump/Makefile,v 1.1 2000/10/28 06:14:37 will Exp $
 #
 
 PORTNAME=	pgpdump
@@ -17,5 +17,9 @@ HAS_CONFIGURE=  yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pgpdump ${PREFIX}/bin
+.if !defined(NOPORTDOCS)
+	${MKDIR} ${PREFIX}/share/doc/pgpdump
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/pgpdump
+.endif
 
 .include <bsd.port.mk>
