@@ -2,7 +2,7 @@
 # Date created:				7 May 1998
 # Whom:					Matthew Hunt <mph@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xinfocom/Makefile,v 1.5 2000/04/14 12:27:28 asami Exp $
+# $FreeBSD: ports/games/xinfocom/Makefile,v 1.6 2000/06/14 05:44:52 mph Exp $
 #
 
 PORTNAME=		xinfocom
@@ -17,6 +17,5 @@ MAINTAINER=		mph@freebsd.org
 WRKSRC=			${WRKDIR}/xinfocom
 
 USE_IMAKE=		yes
-NO_INSTALL_MANPAGES=	yes
 
 .include <bsd.port.mk>
