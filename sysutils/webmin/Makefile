@@ -2,12 +2,12 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.44 2001/04/26 11:45:24 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.45 2001/04/28 13:34:35 olgeni Exp $
 #
 
 PORTNAME=	webmin
 PORTVERSION=	0.85
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	sysutils
 MASTER_SITES=	http://webadmin.sourceforge.net/webmin/updates/ \
 		http://webadmin.sourceforge.net/webmin/download/
@@ -23,13 +23,14 @@ USE_PERL5=	yes
 SCRIPTS_ENV+=	WRKDIR="${WRKDIR}"
 
 .if defined(WITH_UPDATES)
-WEBMIN_MODULES=	squid-0.85-1.wbm.gz useradmin-0.85-1.wbm.gz net-0.85-1.wbm.gz apache-0.85-2.wbm.gz quota-0.85-1.wbm.gz bind8-0.85-1.wbm.gz
+WEBMIN_MODULES=	postgresql-0.85-1.wbm.gz squid-0.85-1.wbm.gz useradmin-0.85-1.wbm.gz net-0.85-1.wbm.gz apache-0.85-2.wbm.gz quota-0.85-1.wbm.gz bind8-0.85-1.wbm.gz
 .endif
 
 post-extract:
 .if defined(WITH_UPDATES)
 	if [ "${WEBMIN_MODULES}" != "" ]; then \
 		for webmin_module in ${WEBMIN_MODULES}; do \
+			${ECHO} "===> Unpacking updated module: $${webmin_module}"; \
 			${TAR} xfz ${DISTDIR}/$${webmin_module} -C ${WRKSRC}; \
 		done; \
 	fi
