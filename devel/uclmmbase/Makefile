@@ -3,7 +3,7 @@
 # Date created:				Thanksgiving Day, 1999
 # Whom:	      				Garrett Wollman <wollman@lcs.mit.edu>
 #
-# $FreeBSD: ports/devel/uclmmbase/Makefile,v 1.2 2000/01/29 21:43:48 steve Exp $
+# $FreeBSD: ports/devel/uclmmbase/Makefile,v 1.3 2000/02/29 01:58:27 jedgar Exp $
 #
 
 DISTNAME=	common-1.1.2
@@ -11,16 +11,19 @@ PKGNAME=	uclmmbase-1.1.2
 CATEGORIES=	devel
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/common/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	fenner@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/common
 GNU_CONFIGURE=	yes
+.if ${OSVERSION} > 400015
+CONFIGURE_ARGS+=	--enable-ipv6
+.endif
 
 RESTRICTED=	"Contains DES cryptography."
 
 INSTALL_HDRS=	base64.h config_win32.h config_unix.h crypt_random.h \
 		debug.h hmac.h mbus.h md5.h memory.h net_udp.h qfDES.h \
-		rtp.h util.h version.h
+		rtp.h uclconf.h util.h version.h
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libuclmmbase.a ${PREFIX}/lib
