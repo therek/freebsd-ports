@@ -2,7 +2,7 @@
 # Date created:		12 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/libjconv/Makefile,v 1.1 2001/01/16 18:27:25 knu Exp $
 #
 
 PORTNAME=	libjconv
@@ -16,6 +16,9 @@ MASTER_SITES=	ftp://ftp.rpmlinux.com/kondara/%SUBDIR%/ \
 MASTER_SITE_SUBDIR=	Jirai/SOURCES
 
 MAINTAINER=	knu@FreeBSD.org
+
+LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv
+RUN_DEPENDS=	${LOCALBASE}/libexec/iconv/iso-2022-jp.so:${PORTSDIR}/converters/iconv-extra
 
 INSTALLS_SHLIB=	yes
 
