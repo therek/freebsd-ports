@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.35 2004/04/20 09:07:43 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.36 2004/05/21 22:47:45 lofi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -163,6 +163,12 @@ CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-l${QTNAME}" \
 .endif # defined(USE_QT_VER)
 
 # End of USE_QT_VER section
+
+# XXX - This really belongs into bsd.port.mk
+.if !defined(_NO_KDE_CONFTARGET_HACK)
+CONFIGURE_TARGET=
+CONFIGURE_ARGS+=--build=${MACHINE_ARCH}-portbld-freebsd${OSREL}
+.endif
 
 # Assemble plist from parts
 # <alane@freebsd.org> 2002-12-06
