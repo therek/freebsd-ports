@@ -3,11 +3,11 @@
 # Date created:		27 Oct 1998
 # Whom:			Abel Chow <achow@transoft.net>
 #
-# $FreeBSD: ports/www/tidy/Makefile,v 1.12 1999/10/08 22:56:20 dan Exp $
+# $FreeBSD: ports/www/tidy/Makefile,v 1.13 1999/11/21 01:17:41 cpiazza Exp $
 #
 
-DISTNAME=	tidy22oct99
-PKGNAME=	tidy-0.10.99.1
+DISTNAME=	tidy30nov99
+PKGNAME=	tidy-0.11.99.2
 CATEGORIES=	www
 MASTER_SITES=	http://www.w3.org/People/Raggett/
 EXTRACT_SUFX=	.tgz
