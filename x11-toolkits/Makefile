@@ -1,10 +1,9 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.42 1999/10/02 03:28:07 imura Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.43 1999/10/09 17:37:11 vanilla Exp $
 #
 
     SUBDIR += FWF
     SUBDIR += Motif-dummy
     SUBDIR += Xaw3d
-    SUBDIR += auis
     SUBDIR += blt
     SUBDIR += fltk
     SUBDIR += gtk--
