@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.382 2001/07/12 21:04:56 tobez Exp $
+# $FreeBSD: ports/www/Makefile,v 1.383 2001/07/17 16:40:29 tobez Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -117,6 +117,7 @@
     SUBDIR += mdw
     SUBDIR += mgstat
     SUBDIR += mhonarc
+    SUBDIR += micro_httpd
     SUBDIR += mmosaic
     SUBDIR += mnoGoSearch-current
     SUBDIR += mod_access_identd
