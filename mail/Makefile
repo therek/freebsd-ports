@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.204 2001/03/10 18:56:50 will Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.205 2001/03/12 07:18:06 dinoex Exp $
 #
 
     SUBDIR += abook
@@ -155,7 +155,6 @@
     SUBDIR += teapop
     SUBDIR += tkrat
     SUBDIR += tkrat2
-    SUBDIR += vbsfilter-1.3
     SUBDIR += vpopmail
     SUBDIR += vrfy
     SUBDIR += wanderlust-emacs
