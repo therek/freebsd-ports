@@ -2,13 +2,14 @@
 # Date created:                10 Mar 2001
 # Whom:                        Shen Chuan-Hsing
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/qe/Makefile,v 1.1 2001/03/17 12:19:46 clive Exp $
 #
 
 PORTNAME=	qe
 PORTVERSION=	0.0.34
 CATEGORIES=	chinese
-MASTER_SITES=	http://www.cc.ncu.edu.tw/~center5/product/qe/
+MASTER_SITES=	http://www.cc.ncu.edu.tw/~center5/product/qe/ \
+		http://freebsd.sinica.edu.tw/~statue/
 
 MAINTAINER=	statue@freebsd.sinica.edu.tw
 
