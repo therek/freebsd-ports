@@ -1,9 +1,10 @@
+# ex:ts=8
 # New ports collection makefile for:    vnless
 # Version required:     1.0
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/vietnamese/vnless/Makefile,v 1.5 1999/08/31 02:11:48 peter Exp $
 #
 
 DISTNAME=	vnless

@@ -1,9 +1,10 @@
+# ex:ts=8
 # New ports collection makefile for:    vnpstext
 # Version required:     1.1
 # Date created:         Sat Dec 7, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/vietnamese/vnpstext/Makefile,v 1.8 1999/08/31 02:11:50 peter Exp $
 #
 
 DISTNAME=	vnpstext

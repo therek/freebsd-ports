@@ -1,9 +1,10 @@
+# ex:ts=8
 # New ports collection makefile for:    vnelvis
 # Version required:     1.4
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/vietnamese/vnelvis/Makefile,v 1.8 1999/08/31 02:11:46 peter Exp $
 #
 
 DISTNAME=	vnelvis
