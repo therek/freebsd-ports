@@ -2,11 +2,11 @@
 # Date created:        20 January 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/math/abs/Makefile,v 1.7 2000/08/03 09:25:36 asami Exp $
+# $FreeBSD: ports/math/abs/Makefile,v 1.8 2000/10/13 20:16:27 ade Exp $
 #
 
 PORTNAME=	abs
-PORTVERSION=	0.6a
+PORTVERSION=	0.8
 CATEGORIES=	math
 MASTER_SITES=	http://www.ping.be/bertin/ \
 		http://www.giovannelli.it/~gmarco/files/
@@ -16,18 +16,17 @@ MAINTAINER=	gmarco@giovannelli.it
 
 USE_XLIB=	yes
 USE_XPM=	yes
-WRKSRC=         ${WRKDIR}/${DISTNAME}/src
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/abs ${PREFIX}/bin
 
 post-install:
-	@${ECHO} "For the changes from previous version 0.5"
-	@${ECHO} "you can read the NEWS file in ${WRKDIR}"
-	@${ECHO} ""
-	@${ECHO} "There are also some examples (not installed) in :"
-	@${ECHO} "${WRKDIR}/Examples"
-	@${ECHO} ""
-	@${ECHO} ""
+	@${ECHO_MSG} "For the changes from previous version"
+	@${ECHO_MSG} "you can read the NEWS file in ${WRKSRC}"
+	@${ECHO_MSG} ""
+	@${ECHO_MSG} "There are also some examples (not installed) in :"
+	@${ECHO_MSG} "${WRKSRC}/Examples"
+	@${ECHO_MSG} ""
+	@${ECHO_MSG} ""
 
 .include <bsd.port.mk>
