@@ -2,7 +2,7 @@
 # Date created:				03/16/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnome-icu/Makefile,v 1.21 2000/06/01 16:25:29 ade Exp $
+# $FreeBSD: ports/net/gnome-icu/Makefile,v 1.22 2000/06/15 19:40:35 nectar Exp $
 #
 
 PORTNAME=		gnomeicu
@@ -16,7 +16,7 @@ MASTER_SITES=		ftp://gnomeicu.gdev.net/pub/gnomeicu/ \
 MAINTAINER=		nectar@FreeBSD.org
 
 LIB_DEPENDS=		panel_applet.4:${PORTSDIR}/x11/gnomecore \
-			gdbm.2:${PORTSDIR}/database/gdbm
+			gdbm.2:${PORTSDIR}/databases/gdbm
 
 GTK_CONFIG?=		${X11BASE}/bin/gtk12-config
 
