@@ -2,17 +2,17 @@
 # Date created:				6 June 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/misc/whichman/Makefile,v 1.1.1.1 2000/06/06 14:13:30 sobomax Exp $
+# $FreeBSD: ports/misc/whichman/Makefile,v 1.2 2000/06/23 13:22:00 sobomax Exp $
 #
 
 PORTNAME=	whichman
-PORTVERSION=	1.9
+PORTVERSION=	2.0
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://www.linuxfocus.org/~guido.socher/
 MASTER_SITE_SUBDIR=	apps/doctools
 
-MAINTAINER=	leeym@cae.ce.ntu.edu.tw
+MAINTAINER=	ports@FreeBSD.org
 
 MAN1=		whichman.1 ftff.1 ftwhich.1
 
