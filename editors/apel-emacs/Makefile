@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-emacs/Makefile,v 1.24 2000/07/13 05:10:02 shige Exp $
+# $FreeBSD: ports/editors/apel-emacs/Makefile,v 1.25 2000/10/08 10:19:29 asami Exp $
 #
 
 PORTNAME=	apel
@@ -15,7 +15,7 @@ PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 MAINTAINER?=	shige@FreeBSD.org
 
 # distfile version
-APEL_VER=	10.2
+APEL_VER=	10.3
 # setupel filename
 APEL_SETUPEL=	apel-setupel.el
 # document install directory by install-doc target
@@ -79,7 +79,6 @@ post-install:
 .if !defined(NOPORTDOCS)
 	@${MAKE} doc-install
 .endif
-
 
 ###############################################################################
 #
