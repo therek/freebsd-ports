@@ -2,7 +2,7 @@
 # Date created:				20th July 2000
 # Whom:					Miklos Niedermayer <mico@bsd.hu>
 #
-# $FreeBSD: ports/databases/mysql++/Makefile,v 1.6 2001/02/18 14:53:50 dirk Exp $
+# $FreeBSD: ports/databases/mysql++/Makefile,v 1.7 2001/03/07 22:28:27 olgeni Exp $
 #
 
 PORTNAME=	mysql++
@@ -18,7 +18,7 @@ LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 USE_GMAKE=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ENV=	CXXFLAGS="${CXXFLAGS} -D_FIX_FOR_BSD_ "
-INSTALL_SHLIB=	yes
+INSTALLS_SHLIB=	yes
 
 pre-configure:
 	${RM} ${WRKSRC}/examples/Makefile.in
