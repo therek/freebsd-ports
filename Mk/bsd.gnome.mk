@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.11 2001/07/04 18:29:48 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.12 2001/09/11 18:56:22 reg Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -307,6 +307,27 @@ LIB_DEPENDS+=	panel_applet.5:${PORTSDIR}/x11/gnomecore
 .if defined(WANT_GNOME) && !defined(HAVE_GNOME)
 PLIST_SUB+=		GNOME:="@comment " NOGNOME:="" DATADIR="share"
 .endif
+
+# Start of GNOME_VALIDATE_DEPS_CHAIN part.
+.if defined(USE_GNOMELIBS) && defined(GNOME_VALIDATE_DEPS_CHAIN)
+BUILD_DEPENDS+=	python:${PORTSDIR}/lang/python
+CHKDPCHN_CMD?=	${PORTSDIR}/Tools/scripts/chkdepschain.py
+CHKDPCHN_CACHE=	.chkdpchn.cache.${PKGNAME}
+
+.if !target(pre-extract)
+pre-extract::
+	@${ECHO_MSG} "===>  Validating build-time dependency chain for ${PKGNAME}"
+	@${MKDIR} ${WRKDIR}
+	@${CHKDPCHN_CMD} -b -s ${WRKDIR}/${CHKDPCHN_CACHE}
+.endif
+
+.if !target(pre-install)
+pre-install::
+	@${ECHO_MSG} "===>  Validating run-time dependency chain for ${PKGNAME}"
+	@${CHKDPCHN_CMD} -r -L ${WRKDIR}/${CHKDPCHN_CACHE}
+.endif
+.endif
+# End of GNOME_VALIDATE_DEPS_CHAIN part.
 
 .endif
 # End of use part.
