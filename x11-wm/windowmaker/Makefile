@@ -2,12 +2,12 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.86 2001/06/16 09:42:25 sobomax Exp $
 #
 
 PORTNAME=	windowmaker
 PORTVERSION=	0.65.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-wm windowmaker
 MASTER_SITES=	${MASTER_SITE_WINDOWMAKER}
 MASTER_SITE_SUBDIR=	beta/srcs
