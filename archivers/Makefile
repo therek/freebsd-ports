@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.41 2000/10/28 01:58:22 will Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.42 2000/11/30 14:21:28 sobomax Exp $
 #
 
     SUBDIR += 9e
@@ -14,6 +14,7 @@
     SUBDIR += hpack.non-usa.only
     SUBDIR += lha
     SUBDIR += libarc
+    SUBDIR += libcabinet
     SUBDIR += linux_rar
     SUBDIR += lzo
     SUBDIR += lzop
