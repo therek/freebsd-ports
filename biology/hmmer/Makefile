@@ -2,11 +2,12 @@
 # Date created:		June 29 1998
 # Whom:			barnhart@genetics.wustl.edu
 #
-# $FreeBSD: ports/biology/hmmer/Makefile,v 1.9 2001/07/05 08:58:12 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hmmer
 PORTVERSION=	2.2.g
+PORTREVISION=	1
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.genetics.wustl.edu/pub/eddy/hmmer/${VERSIONSTRING}/
 DISTNAME=	${PORTNAME}-${VERSIONSTRING}
