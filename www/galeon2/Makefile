@@ -2,15 +2,19 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/galeon/Makefile,v 1.14 2000/12/27 16:48:35 sobomax Exp $
+# $FreeBSD: ports/www/galeon/Makefile,v 1.15 2001/01/11 09:02:30 sobomax Exp $
 #
 
 PORTNAME=	galeon
-PORTVERSION=	0.8.4
+PORTVERSION=	0.9.b1
 CATEGORIES=	www gnome
-MASTER_SITES=	${MASTER_SITE_LOCAL:S/%SUBDIR%/sobomax/} \
-		${MASTER_SITE_SOURCEFORGE}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
+		${MASTER_SITE_LOCAL:S/%SUBDIR%/sobomax/}
 MASTER_SITE_SUBDIR=	${PORTNAME}
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/.b/pre/}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
+		libmpfilelocprovider_s.a.gz
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
@@ -38,13 +42,14 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-mozilla-includes="${MOZHEADERS}" \
 		--with-mozilla-libs="${MOZLIBS}"
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib -pthread -lgcc_r"
+		LIBS="-L${LOCALBASE}/lib -L${WRKSRC} -pthread -lgcc_r"
 
 CFLAGS+=	-D_REENTRANT -D_THREAD_SAFE -fno-rtti
 
 
-.if !defined(WITH_FULL_MOZILLA)
 post-extract:
+	@${GZCAT} ${DISTDIR}/libmpfilelocprovider_s.a.gz > ${WRKSRC}/libmpfilelocprovider_s.a
+.if !defined(WITH_FULL_MOZILLA)
 	@${ECHO_MSG}
 	@${ECHO_MSG} " By default the port uses mozilla-embedded for html rendering, but if you are"
 	@${ECHO_MSG} " planning to use both Mozilla and Galeon you can instruct it to use mozilla by"
