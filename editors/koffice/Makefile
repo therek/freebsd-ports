@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 16:33:15
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/koffice/Makefile,v 1.25 2001/08/19 20:38:27 will Exp $
+# $FreeBSD: ports/editors/koffice/Makefile,v 1.26 2001/08/20 12:26:05 olgeni Exp $
 #
 
 PORTNAME=	koffice
@@ -24,6 +24,12 @@ USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes
+
+post-patch:
+	@${PERL} -pi -e "s@Icon=killustrator@Icon=kontour@g" \
+		${WRKSRC}/templates/Illustration.desktop
+	@${PERL} -pi -e "s@KIllustrator@Kontour@g" \
+		${WRKSRC}/templates/Illustration.desktop
 
 pre-configure:
 	find ${WRKSRC} -name Makefile.in | xargs ${PERL} -pi -e \
