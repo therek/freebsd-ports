@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050306:
+  AFFECTS: users of math/ploticus
+  AUTHOR: linimon@FreeBSD.org
+
+  ploticus is now installed as bin/ploticus rather than bin/pl to
+  avoid useless conflicts with other ports.
+
 20050303:
   AFFECTS: users of net/i2p
   AUTHOR: lioux@FreeBSD.org
@@ -1699,4 +1706,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.155 2005/03/01 23:04:36 brooks Exp $
+$FreeBSD: ports/UPDATING,v 1.156 2005/03/04 02:52:52 lioux Exp $
