@@ -2,7 +2,7 @@
 # Date created:         03 October 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnustep/Makefile,v 1.17 2001/04/07 18:03:56 ben Exp $
+# $FreeBSD: ports/devel/gnustep/Makefile,v 1.18 2001/06/26 12:12:34 tg Exp $
 #
 
 PORTNAME=	gnustep
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PREFIX}/System/Makefiles/GNUstep.sh:${PORTSDIR}/devel/gnustep-mak
 		${SYSLIBDIR}/libobjc.so:${PORTSDIR}/lang/gnustep-objc \
 		${COMBOLIBDIR}/libgnustep-base.so:${PORTSDIR}/lang/gnustep-base \
 		${COMBOLIBDIR}/libgnustep-gui.so:${PORTSDIR}/x11-toolkits/gnustep-gui \
-		${XGPSBUNDLEDIR}/libgnustep-xgps:${PORTSDIR}/x11-toolkits/gnustep-xgps
+		${XGPSBUNDLEDIR}/libgnustep-xgps:${PORTSDIR}/x11-toolkits/gnustep-xgps \
 		${SYSLIBDIR}/lib:${PORTSDIR}/lang/gnustep-guile
 
 PREFIX=		${LOCALBASE}/GNUstep
