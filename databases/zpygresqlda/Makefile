@@ -2,13 +2,13 @@
 # Date created:		07 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/databases/zpygresqlda/Makefile,v 1.3 2000/11/04 00:04:18 nbm Exp $
+# $FreeBSD: ports/databases/zpygresqlda/Makefile,v 1.4 2001/04/21 11:43:12 vanilla Exp $
 #
 
 PORTNAME=	zpygresqlda
 PORTVERSION=	0.3.2
 PORTREVISION=	1
-CATEGORIES=	databases
+CATEGORIES=	databases www zope
 MASTER_SITES=	http://www.zope.org/Members/reedstrm/ZPyGreSQLDA-rjr/
 DISTNAME=	ZPyGreSQLDA-0.3-rjr2
 
