@@ -2,7 +2,7 @@
 # Date created:         Feb 18, 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/comms/ecu/Makefile,v 1.22 2000/04/08 23:22:29 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ecu
@@ -14,6 +14,11 @@ MAINTAINER=	ache@FreeBSD.org
 
 do-configure:
 	cd ${WRKSRC}; yes "" | ./Configure
+
+pre-patch:
+	@${PERL} -pi.orig -e "s@#include +<malloc.h>@@g" \
+	${WRKSRC}/ecu.h ${WRKSRC}/ecunumrev.c ${WRKSRC}/ptyfork.c \
+	${WRKSRC}/qmake.c ${WRKSRC}/unsupported/tts/tts.c
 
 post-install:
 	cd ${WRKSRC}/doc; \
