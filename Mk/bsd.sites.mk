@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.160 2003/07/04 11:44:42 perky Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.161 2003/07/04 21:30:03 olgeni Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -141,8 +141,8 @@ MASTER_SITE_DEBIAN_NON_US+=	\
 	ftp://ftp2.it.debian.org/debian-non-US/%SUBDIR%/
 
 MASTER_SITE_ECLIPSE+= \
-	ftp://download.eclipse.org/%SUBDIR%/ \
 	http://download.eclipse.org/downloads/drops/%SUBDIR%/ \
+	ftp://download.eclipse.org/%SUBDIR%/ \
 	ftp://sunsite.informatik.rwth-aachen.de/pub/mirror/eclipse/%SUBDIR%/ \
 	http://sunsite.informatik.rwth-aachen.de/eclipse/downloads/drops/%SUBDIR%/ \
 	ftp://ftp.tu-clausthal.de/pub/eclipse/downloads/drops/%SUBDIR%/ \
