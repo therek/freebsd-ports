@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.256 2000/01/27 13:08:02 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.257 2000/01/29 05:21:22 steve Exp $
 #
 
     SUBDIR += Canna
@@ -42,6 +42,7 @@
     SUBDIR += emacs20-dl-wnn6
     SUBDIR += epwutil
     SUBDIR += escpf
+    SUBDIR += esecanna-vje30
     SUBDIR += eterm
     SUBDIR += ewipe
     SUBDIR += exmh2
@@ -265,6 +266,8 @@
     SUBDIR += vfxdvi360
     SUBDIR += vfxdvi400
     SUBDIR += vfxdvi600
+    SUBDIR += vje30
+    SUBDIR += vje30-trial
     SUBDIR += w3
     SUBDIR += w3m
     SUBDIR += w3m-ssl
