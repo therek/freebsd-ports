@@ -2,15 +2,15 @@
 # Date created:		16 August 2000
 # Whom:			Clive Lin <clive@CirX.ORG>
 #
-# $FreeBSD: ports/security/gpa/Makefile,v 1.1 2000/08/16 21:02:11 ade Exp $
+# $FreeBSD: ports/security/gpa/Makefile,v 1.2 2000/10/05 06:42:22 reg Exp $
 #
 
 PORTNAME=	gpa
-PORTVERSION= 	0.3.1
+PORTVERSION=	0.3.1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/pub/gcrypt/devel/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	clive@FreeBSD.org
 
 RUN_DEPENDS=	gpg:${PORTSDIR}/security/gnupg
 
