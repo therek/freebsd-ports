@@ -2,7 +2,7 @@
 # Date created:		20 Jan 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/canuum/Makefile,v 1.7 2000/03/08 18:45:59 asami Exp $
+# $FreeBSD: ports/japanese/canuum/Makefile,v 1.8 2000/04/11 14:12:55 knu Exp $
 #
 
 PORTNAME=	canuum
@@ -15,6 +15,8 @@ DISTFILES=	Uum4.109.tar.gz \
 EXTRACT_ONLY=	Uum4.109.tar.gz
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+
+FORBIDDEN=	"Several root exploits"
 
 BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
