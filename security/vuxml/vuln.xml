@@ -28,16 +28,19 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.150 2004/07/16 07:31:22 eik Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.151 2004/07/22 14:43:13 trhodes Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
   <vuln vid="2de14f7a-dad9-11d8-b59a-00061bc2ad93">
-    <topic>Multiple Potential Buffer Overruns in Samba 3.0.x</topic>
+    <topic>Multiple Potential Buffer Overruns in Samba</topic>
     <affects>
       <package>
         <name>samba3</name>
-        <range><ge>3.0.2</ge><lt>3.0.4_4</lt></range>
+        <range><ge>3.0.2</ge><lt>3.0.5</lt></range>
+      </package>
+      <package>
+	<name>samba</name>
 	<range><lt>2.2.10</lt></range>
       </package>
     </affects>
