@@ -2,11 +2,11 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/stockticker_applet/Makefile,v 1.1 2000/08/01 12:16:29 sobomax Exp $
+# $FreeBSD: ports/x11/stockticker_applet/Makefile,v 1.2 2000/08/04 16:11:37 ade Exp $
 #
 
 PORTNAME=	stockticker_applet
-PORTVERSION=	0.1.2
+PORTVERSION=	0.2.0
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME:S/_applet//}
