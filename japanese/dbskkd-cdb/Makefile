@@ -2,7 +2,7 @@
 # Date created:		17 Jun 1999
 # Whom:			Makoto Matsushita <matusita@jp.FreeBSD.ORG>
 #
-# $FreeBSD: ports/japanese/dbskkd-cdb/Makefile,v 1.5 2000/04/25 04:06:13 knu Exp $
+# $FreeBSD: ports/japanese/dbskkd-cdb/Makefile,v 1.6 2000/08/29 20:12:09 knu Exp $
 #
 
 PORTNAME=	dbskkd-cdb
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.ne.jp/asahi/bdx/info/software/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${CDB_DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	matusita@jp.Freebsd.ORG
+MAINTAINER=	matusita@jp.FreeBSD.org
 
 CDB_DISTNAME=	cdb-0.55
 

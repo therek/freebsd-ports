@@ -2,7 +2,7 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2-i18n/Makefile,v 1.21 2000/04/17 23:17:55 mharo Exp $
+# $FreeBSD: ports/x11-wm/fvwm2-i18n/Makefile,v 1.22 2000/08/03 09:27:56 asami Exp $
 #
 
 PORTNAME=	fvwm2-i18n
@@ -14,7 +14,7 @@ DISTNAME=	fvwm-${PORTVERSION}
 PATCH_SITES=	ftp://ftp.ics.es.osaka-u.ac.jp/pub/CFAN/fvwm-users-jp/I18N_MB/
 PATCHFILES=	fvwm-${PORTVERSION}-I18N_MB-${FVWM_PATCHVER}.patch
 
-MAINTAINER=	matusita@jp.freebsd.org
+MAINTAINER=	matusita@jp.FreeBSD.org
 
 .if !defined(WITHOUT_XPM)
 USE_XPM=	yes

@@ -2,7 +2,7 @@
 # Date created:		31 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/skk-jisyo/Makefile,v 1.3 1999/08/27 22:29:28 mharo Exp $
+# $FreeBSD: ports/japanese/skk-jisyo/Makefile,v 1.4 2000/04/12 14:37:40 knu Exp $
 #
 
 PORTNAME=	skk-jisyo
@@ -12,7 +12,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	ftp://skk.kuis.kyoto-u.ac.jp/skk/${PORTVERSION}/
 DISTNAME=	skk${PORTVERSION}
 
-MAINTAINER=	matusita@jp.freebsd.org
+MAINTAINER=	matusita@jp.FreeBSD.org
 
 .if !defined(SKKJISYO_SIZE)
 SKKJISYO_SIZE=	L
