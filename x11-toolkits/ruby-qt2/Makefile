@@ -2,7 +2,7 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.6 2000/09/06 09:32:56 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.7 2000/09/07 07:44:36 knu Exp $
 #
 
 PORTNAME=	qt
@@ -19,6 +19,8 @@ LIB_DEPENDS=	${QTLIB}.${QTLIB_SHLIBVER}:${PORTSDIR}/x11-toolkits/${QT_PORTNAME}
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
+
+USE_GMAKE=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 CONFIGURE_ARGS=	--with-qt-include=${X11BASE}/include/X11/qt \

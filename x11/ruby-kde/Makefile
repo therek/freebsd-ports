@@ -2,7 +2,7 @@
 # Date created:		14 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.4 2000/09/06 09:35:46 knu Exp $
+# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.5 2000/09/07 07:44:37 knu Exp $
 #
 
 PORTNAME=	kde
@@ -20,6 +20,8 @@ RUN_DEPENDS=	${LOCALBASE}/lib/ruby/site_ruby/${RUBY_VER}/qt.rb:${PORTSDIR}/x11-t
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
+
+USE_GMAKE=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 CONFIGURE_ARGS=	--with-x-dir=${X11BASE} \
