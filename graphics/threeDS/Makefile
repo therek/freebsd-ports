@@ -2,12 +2,11 @@
 # Date created:				5 December 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/threeDS/Makefile,v 1.2 2001/01/18 19:28:48 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	threeDS
-PORTVERSION=	0.2
-PORTREVISION=	1
+PORTVERSION=	0.3.1
 CATEGORIES=	graphics python
 MASTER_SITES=	http://www.demonseed.net/~jp/code/threeDS/
 
