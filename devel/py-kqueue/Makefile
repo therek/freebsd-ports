@@ -2,13 +2,13 @@
 # Date created:				05/23/2000
 # Whom:					dwhite@FreeBSD.org
 #
-# $FreeBSD: ports/devel/py-kqueue/Makefile,v 1.4 2000/06/05 03:57:36 dwhite Exp $
+# $FreeBSD: ports/devel/py-kqueue/Makefile,v 1.5 2000/06/19 19:21:59 dwhite Exp $
 #
 
 PORTNAME=		kqueue
 PORTVERSION=		1.1
 CATEGORIES=		devel python
-MASTER_SITES=		{$MASTER_SITE_LOCAL}
+MASTER_SITES=		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	dwhite
 PKGNAMEPREFIX=		py-
 DISTNAME=		PyKQueue-${PORTVERSION}
