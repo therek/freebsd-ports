@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.15 2000/11/03 17:52:13 ade Exp $
+# $FreeBSD: ports/mail/evolution/Makefile,v 1.16 2000/11/14 14:10:08 ade Exp $
 #
 
 PORTNAME=	evolution
@@ -24,6 +24,8 @@ LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml \
 		gtkhtml.5:${PORTSDIR}/www/gtkhtml \
 		ldap.1:${PORTSDIR}/net/openldap \
 		gpilotd.0:${PORTSDIR}/palm/gnomepilot
+
+BROKEN=		"Not compatible with current version of x11-toolkits/gal"
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
