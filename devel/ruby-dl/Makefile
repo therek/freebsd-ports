@@ -2,11 +2,11 @@
 # Date created:		1 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-dl/Makefile,v 1.1 2001/07/06 10:09:40 knu Exp $
+# $FreeBSD: ports/devel/ruby-dl/Makefile,v 1.2 2001/07/19 07:22:55 knu Exp $
 #
 
 PORTNAME=	dl
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://kt-www.jaist.ac.jp/~ttate/ftp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -21,8 +21,7 @@ USE_RUBY_EXTCONF=	yes
 #WRKSRC=		${WRKDIR}/ruby-${PORTNAME}-${PORTVERSION}
 INSTALL_TARGET=	site-install
 
-DOCS_EN=	Changes README
-DOCS_JA=	README.ja
+DOCS_EN=	Changes README README.html
 
 post-extract:
 	@${ECHO} "LIB= test" > ${WRKSRC}/test/Makefile
@@ -37,12 +36,9 @@ post-patch:
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/h2rb ${PREFIX}/bin/
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
 .for f in ${DOCS_EN}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
-.endfor
-.for f in ${DOCS_JA}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/ja/
 .endfor
 	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
 	${INSTALL_DATA} ${WRKSRC}/test/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
