@@ -2,7 +2,7 @@
 # Date created:		13 June 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-xemacs20/Makefile,v 1.5 2000/01/02 14:16:57 shige Exp $
+# $FreeBSD: ports/editors/apel-xemacs20/Makefile,v 1.6 2000/04/14 06:20:16 asami Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -13,12 +13,7 @@ PORTCLASS=	slave
 MASTERDIR=	${.CURDIR}/../../editors/apel-emacs
 
 # emacs port setup
-EMACS_NAME=	xemacs
-EMACS_PORT=	xemacs20
-EMACS_VER=	20.4
-EMACS_LIBDIR=		lib/${EMACS_NAME}
-# xemacs-20.4 has no version specific site-lisp directories.
-EMACS_LIBDIR_WITH_VER=	lib/${EMACS_NAME}
+EMACS_PORT_NAME=	xemacs20
 
 # use pkg/* files in ${.CURDIR}
 PKGDIR=		${.CURDIR}/pkg
