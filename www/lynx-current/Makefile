@@ -3,7 +3,7 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/lynx-current/Makefile,v 1.114 2000/05/07 19:26:25 ache Exp $
+# $FreeBSD: ports/www/lynx-current/Makefile,v 1.115 2000/05/23 17:03:58 ache Exp $
 #
 
 PORTNAME=	lynx
@@ -18,7 +18,6 @@ LIB_DEPENDS=    intl.1:${PORTSDIR}/devel/gettext
 
 USE_BZIP2=      YES
 NO_LATEST_LINK=	YES
-WRKSRC=         ${WRKDIR}/lynx2-8-4
 GNU_CONFIGURE=  YES
 CONFIGURE_ARGS= --with-screen=ncurses --with-zlib --libdir="${L_LIB}" \
 		--enable-nsl-fork --enable-persistent-cookies \
