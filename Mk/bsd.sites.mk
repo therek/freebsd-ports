@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.9 2000/09/05 01:04:52 steve Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.10 2000/09/20 18:18:23 sobomax Exp $
 #
 
 MASTER_SITE_XCONTRIB+=	\
@@ -27,6 +27,14 @@ MASTER_SITE_XCONTRIB+=	\
 	ftp://ftp.is.co.za/x/contrib/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/X11/contrib/%SUBDIR%/ \
 	ftp://ftp.huji.ac.il/mirror/X11/contrib/%SUBDIR%/
+
+MASTER_SITE_XFREE+= \
+	ftp://ftp.xfree86.org/pub/XFree86/%SUBDIR%/source/ \
+	ftp://ftp.freesoftware.com/pub/XFree86/%SUBDIR%/source/ \
+	ftp://ftp.lip6.fr/pub/X11/XFree86/XFree86-%SUBDIR%/source/ \
+	ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/%SUBDIR%/source/ \
+	ftp://sunsite.doc.ic.ac.uk/packages/XFree86/%SUBDIR%/source/ \
+	http://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.xfree86.org/XFree86/%SUBDIR%/source/
 
 MASTER_SITE_GNU+=	\
 	ftp://ftp.gnu.org/gnu/%SUBDIR%/ \

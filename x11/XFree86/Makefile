@@ -2,17 +2,14 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.80 2000/06/16 21:52:08 asami Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.81 2000/07/31 12:30:43 sheldonh Exp $
 #
 
 PORTNAME=	XFree86
 PORTVERSION= 	3.3.6
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.6/source/ \
-		ftp://ftp.freesoftware.com/pub/XFree86/3.3.6/source/ \
-		ftp://ftp.lip6.fr/pub/X11/XFree86/XFree86-3.3.6/source/ \
-		ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/3.3.6/source/ \
-		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/3.3.6/source/
+MASTER_SITES=	${MASTER_SITE_XFREE}
+MASTER_SITE_SUBDIR=	${PORTVERSION}
 DISTFILES=	X336src-1.tgz X336src-2.tgz
 
 PATCH_SITES=	ftp://ftp.xfree.org/pub/XFree86/3.3.6/fixes/ \

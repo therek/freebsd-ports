@@ -2,16 +2,14 @@
 # Date created:         7 November 1996
 # Whom:                 asami
 #
-# $FreeBSD: ports/x11/XFree86-contrib/Makefile,v 1.17 2000/03/13 08:29:50 asami Exp $
+# $FreeBSD: ports/x11/XFree86-contrib/Makefile,v 1.18 2000/04/13 19:09:08 cpiazza Exp $
 #
 
 PORTNAME=	XFree86-contrib
 PORTVERSION= 	3.3.6
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.6/source/ \
-		ftp://ftp.freesoftware.com/pub/XFree86/3.3.6/source/ \
-		ftp://ftp.lip6.fr/pub/X11/XFree86/XFree86-3.3.6/source/ \
-		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/3.3.6/source/
+MASTER_SITES=	${MASTER_SITE_XFREE}
+MASTER_SITE_SUBDIR=	${PORTVERSION}
 DISTNAME=	X336contrib
 EXTRACT_SUFX=	.tgz
 
