@@ -3,7 +3,7 @@
 # Date created:		04 Aug 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/rosegarden/Makefile,v 1.11 1999/08/25 04:36:04 obrien Exp $
 #
 
 DISTNAME=	rosegarden-2.1
@@ -21,7 +21,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/tclmidi/tclmidi31.so:$(PORTSDIR)/audio/tclmidi
 
 GNU_CONFIGURE=	yes
 USE_AUTOCONF=	yes
-USE_XLIB=	yes
+USE_X_PREFIX=	yes
 CONFIGURE_ARGS=	--with-tclincl=${LOCALBASE}/include/tcl8.0/
 CONFIGURE_ENV=	LIBS="-L${PREFIX}/lib"
 
