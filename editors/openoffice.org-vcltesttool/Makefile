@@ -3,7 +3,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/editors/openoffice/Makefile,v 1.24 2000/11/03 11:18:36 obrien Exp $
+# $FreeBSD: ports/editors/openoffice/Makefile,v 1.25 2001/05/18 06:09:14 obrien Exp $
 #
 
 PORTNAME=	openoffice
@@ -16,7 +16,7 @@ DISTNAME=	oo_627_src
 
 MAINTAINER=	obrien@FreeBSD.org
 
-#BROKEN=		'work in progress -- does not work yet'
+BROKEN=		'work in progress -- does not work yet'
 
 BZIP2=		yes
 CONFIGURE_WRKSRC=	${WRKSRC}/config_office
