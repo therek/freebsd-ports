@@ -3,7 +3,7 @@
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/bounce/Makefile,v 1.10 2000/06/07 17:44:34 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bounce
@@ -27,6 +27,6 @@ do-build:
 	(cd ${WRKSRC} && ${CC} ${CFLAGS} -o ${DISTNAME} ${DISTNAME}.c)
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/${DISTNAME} ${PREFIX}/libexec
+	${INSTALL_PROGRAM} ${WRKSRC}/${DISTNAME} ${PREFIX}/sbin
 
 .include <bsd.port.mk>

@@ -1,2 +1,2 @@
-@comment $FreeBSD$
-libexec/bounce
+@comment $FreeBSD: ports/net/bounce/pkg-plist,v 1.2 2000/11/22 00:17:10 obrien Exp $
+sbin/bounce
