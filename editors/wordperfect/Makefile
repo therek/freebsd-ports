@@ -4,18 +4,18 @@
 #					msmith@freebsd.org
 # Relevant URLs:			http://www.corel.com/
 #
-# $FreeBSD: ports/editors/wordperfect/Makefile,v 1.11 2000/04/04 21:45:54 msmith Exp $
+# $FreeBSD: ports/editors/wordperfect/Makefile,v 1.12 2000/04/14 00:25:52 mharo Exp $
 
 PORTNAME=	wordperfect
 PORTVERSION=	8.0
-CATEGORIES=     editors linux
-MASTER_SITES=	
+CATEGORIES=	editors linux
+MASTER_SITES=	# must fetch manually
 DISTNAME=	GUILG00
 EXTRACT_SUFX=	.GZ
 
 MAINTAINER=	msmith@freebsd.org
 
-RUN_DEPENDS=    /compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
+RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 
 ONLY_FOR_ARCHS=	i386
 NO_CDROM=	"LIC: redistribution not allowed"
