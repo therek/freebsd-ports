@@ -2,14 +2,14 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint-plugins/Makefile,v 1.2 2001/01/09 00:06:24 will Exp $
+# $FreeBSD: ports/net/netsaint-plugins/Makefile,v 1.3 2001/01/12 23:10:58 mharo Exp $
 #
 
 PORTNAME=	netsaint-plugins
-PORTVERSION=	1.2.8.4
+PORTVERSION=	1.2.9.1
 CATEGORIES=	net
 MASTER_SITES=	http://download.sourceforge.net/netsaintplug/
-DISTNAME=	${PORTNAME}-1.2.8-4
+DISTNAME=	${PORTNAME}-1.2.9-1
 
 MAINTAINER=	ports@FreeBSD.org
 
