@@ -2,7 +2,7 @@
 # Date created:         Wed Jul 31 21:59:42 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/splitmpg/Makefile,v 1.7 2000/04/23 22:59:37 kris Exp $
+# $FreeBSD: ports/graphics/splitmpg/Makefile,v 1.8 2000/05/29 22:13:23 will Exp $
 #
 
 PORTNAME=	splitmpg
@@ -11,6 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.ecel.uwa.edu.au/users/michael/ \
 		ftp://ftp.netcom.com/pub/ms/msimmons/
 DISTNAME=	${PORTNAME}
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
