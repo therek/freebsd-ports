@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.140 2000/10/28 12:44:14 jeh Exp $
+# $FreeBSD: ports/security/Makefile,v 1.141 2000/11/05 01:38:46 trevor Exp $
 #
 
     SUBDIR += aafid2
@@ -27,7 +27,7 @@
     SUBDIR += fwtk
     SUBDIR += gag
     SUBDIR += gnupg
-    SUBDIR += gnupg-rsa
+    SUBDIR += gnupg-idea
     SUBDIR += gpa
     SUBDIR += gpasman
     SUBDIR += gtkportscan
