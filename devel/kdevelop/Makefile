@@ -2,7 +2,7 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.21 2001/03/12 11:29:00 demon Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.22 2001/03/23 21:58:26 demon Exp $
 #
 
 PORTNAME=	kdevelop
@@ -16,6 +16,7 @@ MAINTAINER=	demon@FreeBSD.org
 
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	kdeui.4:${PORTSDIR}/x11/kdelibs2
+RUN_DEPENDS=	gmake:${PORTSDIR}/devel/gmake
 .if defined(WITH_OPTIONAL_DEPENDS)
 RUN_DEPENDS+=	autoconf:${PORTSDIR}/devel/autoconf \
 		automake:${PORTSDIR}/devel/automake \
