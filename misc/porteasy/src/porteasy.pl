@@ -26,7 +26,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.40 2004/04/02 16:08:17 des Exp $
+# $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.41 2004/04/05 13:27:21 des Exp $
 #
 
 use strict;
@@ -1135,7 +1135,7 @@ MAIN:{
 	       )
 	or usage();
 
-    if (!@ARGV &&
+    if (!@ARGV && !$installed &&
 	($build || $fetch || $list || $packages || $plist || $website)) {
 	usage();
     }
