@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.106 2000/10/29 21:41:01 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.107 2000/10/29 21:49:35 vanilla Exp $
 #
 
     SUBDIR += FWF
@@ -53,6 +53,7 @@
     SUBDIR += p5-Glade
     SUBDIR += p5-Gnome
     SUBDIR += p5-Gtk
+    SUBDIR += p5-GtkGLArea
     SUBDIR += p5-Tcl-Tk
     SUBDIR += p5-Tk
     SUBDIR += pango
