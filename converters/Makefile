@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.26 1999/10/20 01:08:41 kuriyama Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.27 1999/11/01 03:31:30 steve Exp $
 #
 
     SUBDIR += aish
@@ -13,6 +13,7 @@
     SUBDIR += mimepp
     SUBDIR += mmencode
     SUBDIR += mpack
+    SUBDIR += p5-Convert-Recode
     SUBDIR += p5-Convert-UU
     SUBDIR += p5-MIME-Base64
     SUBDIR += recode
