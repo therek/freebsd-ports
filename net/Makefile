@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.488 2001/03/14 02:12:49 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.489 2001/03/14 02:17:49 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -87,6 +87,7 @@
     SUBDIR += flow-tools
     SUBDIR += flowscan
     SUBDIR += fping
+    SUBDIR += freeradius-devel
     SUBDIR += freewais-sf
     SUBDIR += fspclient
     SUBDIR += fugu
