@@ -26,14 +26,14 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.24 2002/03/07 23:24:23 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.25 2002/07/16 22:54:05 des Exp $
 #
 
 use strict;
 use Fcntl;
 use Getopt::Long;
 
-my $VERSION	= "2.7.3";
+my $VERSION	= "2.7.4";
 my $COPYRIGHT	= "Copyright (c) 2000-2002 Dag-Erling Smørgrav. " .
 		  "All rights reserved.";
 
@@ -461,7 +461,6 @@ sub find_master($) {
     my $port = shift;		# Port
 
     local *FILE;		# File handle
-    my $master;			# Master directory
 
     if ($masterport{$port}) {
 	return $masterport{$port};
@@ -473,6 +472,8 @@ sub find_master($) {
     open(FILE, "$portsdir/$port/Makefile")
 	or bsd::err(1, "unable to read Makefile for $port");
     while (<FILE>) {
+	my $master;		# Master directory
+
 	if (/^(?:MAIN|MASTER)DIR\s*=\s*(\S+)\s*$/) {
 	    $master = $1;
 	} elsif (/^\.?include \"([^\"]+)\/Makefile(?:[^\/\"]*)\"\s*$/) {
@@ -484,8 +485,13 @@ sub find_master($) {
 	    $master =~ s|/+|/|g;
 	    1 while ($master =~ s|/[^\./]*/\.\./|/|);
 	    $master =~ s|^/||;
+	    $master =~ s|/$||;
+	    if ($master eq $port) {
+		bsd::warnx("master port heuristics failed for %s", $port);
+		next;
+	    }
 	    if ($master !~ m|^[^/]+/[^/]+$|) {
-		bsd::warn("invalid master for %s: %s", $port, $master);
+		bsd::warnx("invalid master for %s: %s", $port, $master);
 		next;
 	    }
 	    close(FILE);
