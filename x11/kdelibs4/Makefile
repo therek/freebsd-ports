@@ -3,7 +3,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.41 2000/03/25 21:49:45 will Exp $
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.42 2000/04/03 00:37:31 will Exp $
 #
 
 DISTNAME=	kdelibs-1.1.2
@@ -27,7 +27,6 @@ USE_GMAKE=	yes
 USE_QT=		yes
 USE_LIBTOOL=	yes
 LIBTOOLFLAGS=
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --x-includes="$(X11BASE)/include" \
 		--x-libraries="$(X11BASE)/lib" --disable-static
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${PREFIX}/include" \
