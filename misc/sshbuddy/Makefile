@@ -2,7 +2,7 @@
 # Date created:		26 September 1999
 # Whom:			Dan Moschuk <dan@freebsd.org>
 #
-# $FreeBSD: ports/misc/sshbuddy/Makefile,v 1.3 2000/03/10 21:25:22 dan Exp $
+# $FreeBSD: ports/misc/sshbuddy/Makefile,v 1.4 2000/04/14 08:46:46 asami Exp $
 #
 
 PORTNAME=	sshbuddy
@@ -11,7 +11,7 @@ CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.sundilla.net/pub/linux/apps/sshbuddy/beta1.05/
 DISTFILES=	${PORTNAME}${PORTVERSION}.tar
 
-MAINTAINER=	dan@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 RUN_DEPENDS=	expectk:${PORTSDIR}/lang/expect
 
