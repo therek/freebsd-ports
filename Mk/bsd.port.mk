@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.419 2002/07/09 13:37:26 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.420 2002/08/04 06:01:48 obrien Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -737,7 +737,7 @@ PREFIX?=		${LOCALBASE}
 	@${ECHO_CMD} "This port requires the OpenSSL library, which is part of"
 	@${ECHO_CMD} "the FreeBSD crypto distribution but not installed on your"
 	@${ECHO_CMD} "machine. Please see the \"OpenSSL\" section in the handbook"
-	@${ECHO_CMD} "(at \"http://www.FreeBSD.org/handbook/openssl.html\", for instance)"
+	@${ECHO_CMD} "(at \"http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/handbook/openssl.html\", for instance)"
 	@${ECHO_CMD} "for instructions on how to obtain and install the FreeBSD"
 	@${ECHO_CMD} "OpenSSL distribution."
 	@${FALSE}
