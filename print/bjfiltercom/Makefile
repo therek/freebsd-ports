@@ -2,7 +2,7 @@
 # Date created:		2001.02.10
 # Whom:                 taoka@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/bjfiltercom/Makefile,v 1.1 2001/03/01 05:45:57 taoka Exp $
 #
 
 PORTNAME?=	bjfiltercom
@@ -26,7 +26,6 @@ RUN_DEPENDS=	/compat/linux/lib/libc.so.6:${PORTSDIR}/emulators/linux_base \
 		/compat/linux/usr/lib/libxml.so.1:${PORTSDIR}/textproc/linux-libxml \
 		/compat/linux/usr/lib/libjpeg.so.62:${PORTSDIR}/graphics/linux-jpeg \
 		/compat/linux/usr/lib/libtiff.so.3:${PORTSDIR}/graphics/linux-tiff \
-		/compat/linux/usr/lib/libglade.so.0:${PORTSDIR}/devel/linux-libglade \
 		/compat/linux/usr/lib/libglade.so.0:${PORTSDIR}/devel/linux-libglade
 BIN_FILES=	bjprn stsmon printui lgmon bjfilter
 .endif
