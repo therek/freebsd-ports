@@ -2,7 +2,7 @@
 # Date created:		15 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/irc/nethirc/Makefile,v 1.5 2000/04/12 06:28:19 obrien Exp $
+# $FreeBSD: ports/irc/nethirc/Makefile,v 1.6 2000/05/20 05:11:14 will Exp $
 #
 
 PORTNAME=	nethirc
@@ -17,7 +17,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/5.005/Net/IRC.pm:${PORTSDIR}/irc/p
 
 NO_BUILD=	yes
 USE_PERL5=	yes
-MAN1=		nethirc.1
+MAN1=		nethirc.1 nhirc.1
 
 do-install:
 	(cd ${WRKSRC} && ${SH} install.sh ${PREFIX})
