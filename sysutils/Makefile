@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.114 2000/06/01 16:30:32 ade Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.115 2000/06/02 15:32:58 will Exp $
 #
 
     SUBDIR += LPRng
@@ -35,6 +35,7 @@
     SUBDIR += gkrellm
     SUBDIR += glload
     SUBDIR += gnomecontrolcenter
+    SUBDIR += gnomefind
     SUBDIR += gpart
     SUBDIR += gtar
     SUBDIR += gtop
