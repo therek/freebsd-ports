@@ -3,11 +3,11 @@
 # Date created:		Jan 8, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/palm/bibelot/Makefile,v 1.1 2001/01/21 16:36:25 ijliao Exp $
 #
 
 PORTNAME=	bibelot
-PORTVERSION=	0.8
+PORTVERSION=	0.9
 CATEGORIES=	palm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -16,10 +16,9 @@ MAINTAINER=	ijliao@FreeBSD.org
 
 USE_PERL5=	yes
 
-NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/${PORTNAME}.pl ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME}.pl ${PREFIX}/bin
 
 .include <bsd.port.mk>
