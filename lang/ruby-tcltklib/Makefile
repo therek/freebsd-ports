@@ -2,19 +2,18 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.20 2000/10/08 10:31:13 asami Exp $
+# $FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.21 2000/10/20 19:56:04 knu Exp $
 #
 
 PORTNAME=	tcltklib
 PORTVERSION=	${RUBY_PORTVERSION}
 CATEGORIES+=	lang x11-toolkits ruby tcl${TCL_VERSION} tk${TK_VERSION}
-MASTER_SITES=	${MASTER_SITE_RUBY}
-MASTER_SITE_SUBDIR=	${RUBY_VER}
-DISTNAME=	${RUBY_DISTNAME}
-DIST_SUBDIR=	ruby
+MASTER_SITES=	# none
+DISTFILES=	# none
 
 MAINTAINER?=	knu@FreeBSD.org
 
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/${RUBY_PORT}:patch
 LIB_DEPENDS=	${TCL_LIB}.1:${PORTSDIR}/${TCL_CATEGORY}/tcl${TCL_VERSION} \
 		${TK_LIB}.1:${PORTSDIR}/${TK_CATEGORY}/tk${TK_VERSION}
 
@@ -22,9 +21,7 @@ USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 USE_XLIB=	yes
 
-MD5_FILE=	${PORTSDIR}/lang/ruby/distinfo
-
-WRKSRC=		${RUBY_WRKSRC}/ext/tcltklib
+WRKSRC=		${WRKDIR}/${PORTNAME}
 CONFIGURE_ARGS=	--with-tcllib="${TCL_LIB}" --with-tklib="${TK_LIB}" \
 		--with-tcl-lib="${LOCALBASE}/lib/${TCL_DIR}" \
 		--with-tk-lib="${LOCALBASE}/lib/${TK_DIR}" \
@@ -60,14 +57,18 @@ PKGNAMEPREFIX:=	${PKGNAMEPREFIX}${RUBY_PKGNAMEPREFIX}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 .endif
 
+do-extract:
+	${MKDIR} ${WRKDIR}
+	${LN} -sf `cd ${PORTSDIR}/${RUBY_PORT} && ${MAKE} -V WRKDIR`/${PORTNAME} ${WRKDIR}/
+
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/tcltklib
-	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/tcltklib/
-	${MKDIR} ${RUBY_EXAMPLESDIR}/tcltklib/demo
-	${INSTALL_DATA} ${WRKSRC}/demo/* ${RUBY_EXAMPLESDIR}/tcltklib/demo/
-	${MKDIR} ${RUBY_DOCDIR}/tcltklib/ja
-	${INSTALL_DATA} ${WRKSRC}/*.euc ${RUBY_DOCDIR}/tcltklib/ja/
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}/demo
+	${INSTALL_DATA} ${WRKSRC}/demo/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/demo/
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
+	${INSTALL_DATA} ${WRKSRC}/*.euc ${RUBY_DOCDIR}/${PORTNAME}/ja/
 .endif
 
 .include <bsd.port.post.mk>

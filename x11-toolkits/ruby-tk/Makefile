@@ -2,27 +2,24 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-tk/Makefile,v 1.20 2000/10/08 10:31:13 asami Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-tk/Makefile,v 1.21 2000/10/20 19:56:04 knu Exp $
 #
 
 PORTNAME=	tk
 PORTVERSION=	${RUBY_PORTVERSION}
 CATEGORIES+=	x11-toolkits ruby tk${TK_VERSION}
-MASTER_SITES=	${MASTER_SITE_RUBY}
-MASTER_SITE_SUBDIR=	${RUBY_VER}
-DISTNAME=	${RUBY_DISTNAME}
-DIST_SUBDIR=	ruby
+MASTER_SITES=	# none
+DISTFILES=	# none
 
 MAINTAINER?=	knu@FreeBSD.org
 
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/${RUBY_PORT}:patch
 RUN_DEPENDS=	${RUBY_ARCHLIBDIR}/tcltklib.so:${PORTSDIR}/${TCLTKLIB_CATEGORY}/ruby-tcltklib
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
-MD5_FILE=	${PORTSDIR}/lang/ruby/distinfo
-
-WRKSRC=		${RUBY_WRKSRC}/ext/tk
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
 TK_VERSION?=	82
 .if defined(WITH_TCLTK_JP)
@@ -39,10 +36,14 @@ PKGNAMEPREFIX:=	${PKGNAMEPREFIX}${RUBY_PKGNAMEPREFIX}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 .endif
 
+do-extract:
+	${MKDIR} ${WRKDIR}
+	${LN} -sf `cd ${PORTSDIR}/${RUBY_PORT} && ${MAKE} -V WRKDIR`/${PORTNAME} ${WRKDIR}/
+
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/tk
-	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/tk/
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 .endif
 
 .include <bsd.port.post.mk>

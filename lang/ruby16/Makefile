@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.42 2001/02/19 15:51:37 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.43 2001/03/19 10:51:53 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -47,8 +47,11 @@ CONFIGURE_ARGS+=	--enable-ipv6
 
 post-patch:
 	find ${WRKSRC} -name '*.orig' -delete
-.for d in Win32API gdbm tcltklib tk
+.for d in Win32API
 	${RM} -rf ${WRKSRC}/ext/${d}
+.endfor
+.for d in gdbm tcltklib tk
+	${MV} ${WRKSRC}/ext/${d} ${WRKDIR}/
 .endfor
 
 post-install:
