@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.164 2000/09/19 15:46:56 sobomax Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.165 2000/09/21 13:01:39 nbm Exp $
 #
 
     SUBDIR += adcomplain
@@ -122,6 +122,7 @@
     SUBDIR += solidpop3d
     SUBDIR += sonicmail
     SUBDIR += spruce
+    SUBDIR += sqwebmail
     SUBDIR += sylpheed
     SUBDIR += teapop
     SUBDIR += tkrat
