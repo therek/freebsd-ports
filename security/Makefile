@@ -1,9 +1,10 @@
-# $FreeBSD: ports/security/Makefile,v 1.106 2000/06/02 02:56:28 will Exp $
+# $FreeBSD: ports/security/Makefile,v 1.107 2000/06/13 15:09:38 sada Exp $
 #
 
     SUBDIR += bjorb
     SUBDIR += bro
     SUBDIR += bugs
+    SUBDIR += calife
     SUBDIR += cfs
     SUBDIR += checkpassword
     SUBDIR += chrootuid
