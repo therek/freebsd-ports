@@ -3,7 +3,7 @@
 # Date created:        3 October 1999
 # Whom:                Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/flashplugin/Makefile,v 1.2 1999/10/12 08:09:46 asami Exp $
+# $FreeBSD: ports/www/flashplugin/Makefile,v 1.3 1999/10/12 20:59:06 sada Exp $
 #
 
 DISTNAME=	flash-0.4.3
@@ -17,6 +17,12 @@ PATCH_SITES=	http://leed.t.u-tokyo.ac.jp/~yamagata/flash/
 PATCHFILES=	flash-0.4.3-fbsd-19990512.patch
 
 MAINTAINER=	knu@idaemons.org
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400000
+BROKEN=		"This port will only build a broken binary under FreeBSD 4.0 or later. Try pkg_add'ing 3-STABLE's package with compat30 installed."
+.endif
 
 USE_XLIB=	yes
 MAKE_ENV=	OBJFORMAT=aout LIBRARY_PATH=${PREFIX}/lib/aout
@@ -36,4 +42,4 @@ do-install:
 	${MKDIR} ${PREFIX}/lib/netscape/plugins
 	cd ${WRKSRC} && ${SETENV} OBJFORMAT=aout ${INSTALL_PROGRAM} libswf.so ${PREFIX}/lib/netscape/plugins
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
