@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.36 2001/03/20 09:21:34 sobomax Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -55,7 +55,8 @@ MASTER_SITE_GNOME+=	\
 	ftp://fr2.rpmfind.net/linux/gnome.org/%SUBDIR%/ \
 	ftp://ftp.dit.upm.es/linux/gnome/%SUBDIR%/ \
 	ftp://sunsite.uio.no/pub/GNOME/%SUBDIR%/ \
-	ftp://ftp.dataplus.se/pub/linux/gnome/%SUBDIR%/
+	ftp://ftp.dataplus.se/pub/linux/gnome/%SUBDIR%/ \
+	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/gnome/&,} \
 
 MASTER_SITE_GNU+=	\
 	ftp://ftp.gnu.org/gnu/%SUBDIR%/ \
