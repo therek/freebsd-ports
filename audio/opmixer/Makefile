@@ -2,7 +2,7 @@
 # Date created:				2000-12-29
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/opmixer/Makefile,v 1.2 2000/12/31 15:43:46 trevor Exp $
+# $FreeBSD: ports/audio/opmixer/Makefile,v 1.3 2000/12/31 16:35:44 trevor Exp $
 #
 
 PORTNAME=	opmixer
@@ -39,7 +39,7 @@ do-install:
 		${PREFIX}/bin
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/${DOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/{DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/${DOCDIR}
 .endif
 
 .include <bsd.port.mk>
