@@ -3,10 +3,10 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.63 1999/08/25 05:21:21 obrien Exp $
 #
 
-DISTNAME=	mysql-3.22.24
+DISTNAME=	mysql-3.22.25
 PKGNAME?=	${DISTNAME:S/-/-server-/}
 CATEGORIES=	databases
 MASTER_SITES=	http://www.fh-wolfenbuettel.de/ftp/pub/database/mysql/Downloads/MySQL-3.22/ \
