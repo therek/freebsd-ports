@@ -3,7 +3,7 @@
 # Date created:			Aug 13, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/minidom/Makefile,v 1.1 2001/08/13 17:18:30 ijliao Exp $
 #
 
 PORTNAME=	minidom
@@ -16,17 +16,15 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	xml2:${PORTSDIR}/textproc/libxml2 \
 		giconv:${PORTSDIR}/converters/libiconv
 
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 USE_GLIB=	yes
 USE_LIBTOOL=	yes
-USE_AUTOCONF=	yes
-GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
+CONFIGURE_ARGS=	--with-libxml2=yes
 INSTALLS_SHLIB=	yes
 
 post-patch:
-	@${PERL} -pi -e "s,-lglib,-lglib12,g ; \
-		s,glib-config,${GLIB_CONFIG},g" ${WRKSRC}/configure.in
+	@${PERL} -pi -e 's|-lglib|-lglib12|g ; \
+		 s|glib-config|${GLIB_CONFIG}|g' ${WRKSRC}/configure
 
 .include <bsd.port.mk>
