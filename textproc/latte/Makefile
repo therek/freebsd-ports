@@ -3,7 +3,7 @@
 # Date created:         15 August 1999
 # Whom:                 Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/textproc/latte/Makefile,v 1.1.1.1 1999/09/10 06:34:30 cpiazza Exp $
+# $FreeBSD: ports/textproc/latte/Makefile,v 1.2 1999/09/17 17:36:20 cpiazza Exp $
 #
 
 DISTNAME=	latte-1.1
@@ -16,6 +16,7 @@ MAINTAINER=	dr@domix.de
 USE_NEWGCC=	yes
 USE_LIBTOOL=	yes
 MAKE_FLAGS=	CONF_ARGS="--prefix=${PREFIX}"
+CONFIGURE_ARGS+=	--enable-shared
 
 post-install:
 	strip ${PREFIX}/bin/latte-html
