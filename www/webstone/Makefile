@@ -2,7 +2,7 @@
 # Date created:        25 March 1997
 # Whom:                Soren Dossing <sauber@netcom.com>
 #
-# $FreeBSD: ports/www/webstone/Makefile,v 1.10 2001/02/05 15:33:56 olgeni Exp $
+# $FreeBSD: ports/www/webstone/Makefile,v 1.11 2001/04/05 10:53:20 mharo Exp $
 #
 
 PORTNAME=	webstone
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.mindcraft.com/webstone/ \
 DISTNAME=	ws25_src
 EXTRACT_SUFX=	.tgz 
 
-MAINTAINER=	sauber@netcom.com
+MAINTAINER=	k_nishizawa@anet.ne.jp
 
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/WebStone2.5/src
