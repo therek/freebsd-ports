@@ -2,7 +2,7 @@
 # Date created:         3 Jun 1999
 # Whom:                 Oh Junseon <hollywar@mail.holywar.net>
 #
-# $FreeBSD: ports/korean/engdic/Makefile,v 1.4 1999/09/20 00:55:43 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	engdic
@@ -14,5 +14,10 @@ MASTER_SITES=	ftp://ftp.holywar.net/pub/engdic/ \
 MAINTAINER=	hollywar@mail.holywar.net
 
 ALL_TARGET=	clean all
+
+post-patch:
+	@for f in ${WRKSRC}/Makefile ${WRKSRC}/engdic.h; do \
+	 ${PERL} -pi -e 's,/usr/local,${PREFIX},g' $$f; \
+	done
 
 .include <bsd.port.mk>
