@@ -2,11 +2,12 @@
 # Date created:				14 December 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/moleskine/Makefile,v 1.1 2000/12/14 12:34:25 sobomax Exp $
 #
 
 PORTNAME=	moleskine
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	editors python gnome
 MASTER_SITES=	http://www.moleskine.f2s.com/
 DISTNAME=	${PORTNAME:S/^m/M/}-${PORTVERSION}
