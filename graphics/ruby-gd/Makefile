@@ -2,12 +2,11 @@
 # Date created:		27 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/ruby-gd/Makefile,v 1.7 2001/04/09 18:20:16 sobomax Exp $
 #
 
 PORTNAME=	GD
-PORTVERSION=	0.7.2
-PORTREVISION=	1
+PORTVERSION=	0.7.3
 CATEGORIES=	graphics ruby
 MASTER_SITES=	http://kirara.prec.kyoto-u.ac.jp/~tam/GD/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -26,7 +25,9 @@ USE_RUBY_EXTCONF=	yes
 USE_RUBY_RD=	yes
 .endif
 
-CONFIGURE_ARGS=	--with-gd-include="${LOCALBASE}/include/gd" --with-jpeg \
+CONFIGURE_ARGS=	--with-gd-include="${LOCALBASE}/include/gd" \
+		--with-gd-lib="${LOCALBASE}/lib" \
+		--with-jpeg \
 		--with-freetype
 INSTALL_TARGET=	site-install
 
@@ -43,7 +44,7 @@ WITH_X11_CHECK=		# empty
 USE_XLIB=	yes
 USE_XPM=	yes
 PKGNAMESUFFIX_XPM=	+xpm
-CONFIGURE_ARGS+=	--with-x-dir="${X11BASE}" --with-xpm
+CONFIGURE_ARGS+=	--with-X11-dir="${X11BASE}" --with-xpm
 .endif
 
 EXAMPLES_EN=	example.rb	\
@@ -53,7 +54,6 @@ DOCS_EN=	Changes		\
 		TODO		\
 		readme.en	\
 		doc/INSTALL.en	\
-		doc/manual.css	\
 		doc/manual.html	\
 		doc/manual.rd	\
 		doc/manual_index.html
