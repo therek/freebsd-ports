@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 12:14:41 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Make/Makefile,v 1.1 2001/01/03 23:37:40 will Exp $
+# $FreeBSD: ports/devel/p5-Make/Makefile,v 1.2 2001/03/01 06:38:16 vanilla Exp $
 #
 
 PORTNAME=	Make
@@ -16,9 +16,8 @@ MAINTAINER=	ports@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 
-MAN1PREFIX=	${PREFIX}
-MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN1=		perlmake.1
+MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Make.3
 
 pre-configure:
