@@ -3,19 +3,23 @@
 # Date created:			  Sat July 20, 1996
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.68 2000/06/25 21:35:41 obrien Exp $
+# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.69 2000/06/30 06:07:53 obrien Exp $
 #
 
 PORTNAME=	lsof
-PORTVERSION=	4.50
+PORTVERSION=	4.50.1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://vic.cc.purdue.edu/pub/tools/unix/lsof/  \
 		ftp://vic.cc.purdue.edu/pub/tools/unix/lsof/NEW/ \
 		ftp://ftp.cert.dfn.de/pub/tools/admin/lsof/  \
+		ftp://ftp.cert.dfn.de/pub/tools/admin/lsof/NEW/  \
 		ftp://ftp.auscert.org.au/pub/mirrors/vic.cc.purdue.edu/lsof/  \
 		ftp://ftp.web.ad.jp/pub/UNIX/tools/lsof/  \
-		ftp://ftp.sunet.se/pub/unix/admin/lsof/
-DISTNAME=	${PORTNAME}_${PORTVERSION}_W
+		ftp://ftp.web.ad.jp/pub/UNIX/tools/lsof/NEW/  \
+		ftp://ftp.sunet.se/pub/unix/admin/lsof/  \
+		ftp://ftp.sunet.se/pub/unix/admin/lsof/NEW/
+#DISTNAME=	${PORTNAME}_${PORTVERSION}_W
+DISTNAME=	${PORTNAME}_4.51A.freebsd
 
 MAINTAINER=	obrien@FreeBSD.org
 
