@@ -1,18 +1,18 @@
 # New ports collection makefile for:	gnomepim
-# Version required:			1.0.9
+# Version required:			1.0.50
 # Date created:				17 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.11 1999/08/25 05:26:37 obrien Exp $
+# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.12 1999/08/31 06:41:28 mharo Exp $
 #
 
-DISTNAME=	gnome-pim-1.0.9
-PKGNAME=	gnomepim-1.0.9
+DISTNAME=	gnome-pim-1.0.50
+PKGNAME=	gnomepim-1.0.50
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	sources/gnome-pim
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
