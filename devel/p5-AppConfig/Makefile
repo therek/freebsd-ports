@@ -2,7 +2,7 @@
 # Date created:				23 October 1999
 # Whom:					Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/devel/p5-AppConfig/Makefile,v 1.2 2000/04/11 21:29:18 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	AppConfig
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	App/ABW
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	igor@zynaps.ru
+COMMENT=	A Perl module for reading configuration files
 
 PERL_CONFIGURE=	YES
 

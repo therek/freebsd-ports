@@ -2,7 +2,7 @@
 # Date created:			October 30th, 2000
 # Whom:	      			Nicholas Esborn <nick@netdot.net>
 #
-# $FreeBSD: ports/devel/p5-Time-Period/Makefile,v 1.1 2000/10/31 18:39:27 jim Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Time-Period
@@ -14,6 +14,7 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	Period-${PORTVERSION}
 
 MAINTAINER=	nick@netdot.net
+COMMENT=	A perl module that contains code to deal with time periods
 
 PERL_CONFIGURE=	YES
 

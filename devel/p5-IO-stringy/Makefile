@@ -2,7 +2,7 @@
 # Date created:				April 27 1998
 # Whom:	      				Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-IO-stringy/Makefile,v 1.19 2001/08/18 23:15:25 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	IO-stringy
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	IO
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	shell@shellhung.org
+COMMENT=	Perl5 module for using IO handles with non-file objects
 
 PERL_CONFIGURE=	YES
 

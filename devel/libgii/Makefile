@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD: ports/devel/libgii/Makefile,v 1.6 2001/05/07 11:43:24 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libgii
@@ -11,6 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.ggi-project.org/pub/ggi/ggi/2_0_beta_3/
 
 MAINTAINER=	mwest@uct.ac.za
+COMMENT=	API for input sources
 
 USE_BZIP2=	yes
 USE_XLIB=	yes

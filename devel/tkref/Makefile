@@ -2,7 +2,7 @@
 # Date created:         3 August 1997
 # Whom:                 Bruce Gingery <bgingery@gtcs.com>
 #
-# $FreeBSD: ports/devel/tkref/Makefile,v 1.11 2000/04/14 05:44:35 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkref
@@ -13,6 +13,7 @@ MASTER_SITES=	http://gtcs.com/softdist/ \
 MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 
 MAINTAINER=	bgingery@gtcs.com
+COMMENT=	A programmer's GUI reference for Tcl/Tk and major packages
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

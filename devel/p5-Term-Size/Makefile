@@ -2,7 +2,7 @@
 # Date created:				6 December 2000
 # Whom:	      				Brad Jones <brad@kazrak.com>
 #
-# $FreeBSD: ports/devel/p5-Term-Size/Makefile,v 1.1 2000/12/19 12:22:58 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Term-Size
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Term
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	brad@kazrak.com
+COMMENT=	A Perl5 module to handle window size changes.
 
 PERL_CONFIGURE=	YES
 

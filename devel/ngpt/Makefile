@@ -2,7 +2,7 @@
 # Date created:				Wed Jul 25 22:10:00 PDT 2001
 # Whom:					Arun Sharma <arun@sharmas.dhs.org>
 #
-# $FreeBSD: ports/devel/ngpt/Makefile,v 1.1 2001/08/10 02:18:58 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ngpt
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.sharma-home.net/~adsharma/projects/freebsd/
 MASTER_SITE_SUBDIR=	ngpt-${PORTVERSION}.tar.gz
 
 MAINTAINER=	arun@sharmas.dhs.org
+COMMENT=	NGPT is a next generation pthread implementation based on GNU pth
 
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes

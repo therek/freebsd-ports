@@ -2,7 +2,7 @@
 # Date created:		27 Dec 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/devel/p5-IO/Makefile,v 1.1 2001/03/10 19:22:59 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	IO
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	IO
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	skv@protey.ru
+COMMENT=	Various IO modules for Perl
 
 PERL_CONFIGURE=	yes
 CONFIGURE_ARGS+=	POLLUTE=1

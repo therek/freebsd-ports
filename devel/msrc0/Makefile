@@ -2,7 +2,7 @@
 # Date created:        17 November 1999
 # Whom:                ajk@waterspout.com
 #
-# $FreeBSD: ports/devel/msrc0/Makefile,v 1.2 2000/04/11 21:29:12 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	msrc0
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.physics.purdue.edu/pub/pundits/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ajk@waterspout.com
+COMMENT=	Meta source fake-out script for building ksb tools
 
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-0.6

@@ -2,7 +2,7 @@
 # Date created:		17 January 2000
 # Whom:			rip@pinetec.co.za
 #
-# $FreeBSD: ports/devel/cvsmapfs/Makefile,v 1.1 2000/01/29 05:03:49 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cvsmapfs
@@ -11,6 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.pn.com/pub/bb/cvsmapfs/
 
 MAINTAINER=	rip@pinetec.co.za
+COMMENT=	Helps keep track of modes and permissions of files in cvs
 
 USE_PERL5=	YES
 NO_BUILD=	YES

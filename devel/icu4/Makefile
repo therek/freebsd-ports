@@ -2,7 +2,7 @@
 # Date created:				22 Jan 2001
 # Whom:					dwm
 #
-# $FreeBSD: ports/devel/icu/Makefile,v 1.1 2001/03/17 08:49:14 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	icu
@@ -12,6 +12,7 @@ MASTER_SITES=	http://oss.software.ibm.com/developerworks/opensource/icu/project/
 EXTRACT_SUFX=   .tgz
 
 MAINTAINER=	dwm@caimis.com
+COMMENT=	International Components for Unicode (from IBM)
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/source
 GNU_CONFIGURE=	yes

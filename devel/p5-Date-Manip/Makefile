@@ -2,7 +2,7 @@
 # Date created:				April 28th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Date-Manip/Makefile,v 1.18 2001/03/01 06:37:22 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Date-Manip
@@ -14,6 +14,7 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	DateManip-${PORTVERSION}
 
 MAINTAINER=	kapr@crosswinds.net
+COMMENT=	Perl5 module containing date manipulation routines
 
 PERL_CONFIGURE=	YES
 

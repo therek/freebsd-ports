@@ -2,7 +2,7 @@
 # Date created:         30th May 1999
 # Whom:                 Phil Maker <pjm@gnu.org>
 #
-# $FreeBSD: ports/devel/nana/Makefile,v 1.6 2000/04/11 21:29:12 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nana
@@ -11,6 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.cs.ntu.edu.au/pub/nana/
 
 MAINTAINER=	pjm@gnu.org
+COMMENT=	Support for assertion checking and logging using GNU C and GDB
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:				27 April 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/devel/fastcrc/Makefile,v 1.7 2000/06/16 10:37:31 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fastcrc
@@ -11,6 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://www.whizkidtech.net/fports/
 
 MAINTAINER=	adam@whizkidtech.net
+COMMENT=	Fast CRC routines
 
 BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 

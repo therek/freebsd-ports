@@ -2,7 +2,7 @@
 # Date created:		30 January 1996
 # Whom:		 	vazquez@iqm.unicamp.br	
 #
-# $FreeBSD: ports/devel/fpp/Makefile,v 1.4 1999/10/26 01:50:04 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fpp
@@ -13,6 +13,7 @@ DISTNAME=	fdfpp
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	vazquez@iqm.unicamp.br
+COMMENT=	Fortran preprocessor for FORTRAN 77 and Fortran 90 programs
 
 USE_GMAKE=	yes
 ALL_TARGET=	bsd44

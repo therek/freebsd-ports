@@ -2,7 +2,7 @@
 # Date created:			28 June 1997
 # Whom:				Sander Vesik <sander@haldjas.folklore.ee>
 #
-# $FreeBSD: ports/devel/tclcheck/Makefile,v 1.4 2000/04/14 05:44:31 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tclcheck
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://catless.ncl.ac.uk/pub/
 DISTNAME=	tclCheck-${PORTVERSION}
 
 MAINTAINER=	sander@haldjas.folklore.ee
+COMMENT=	A program to check the nesting of parenthesis in tcl scripts
 
 MAN1=		tclCheck.1
 MANCOMPRESSED=	yes

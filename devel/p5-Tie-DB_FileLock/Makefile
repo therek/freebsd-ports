@@ -2,7 +2,7 @@
 # Date created:				August 17 2000
 # Whom:	      				Josh Tiefenbach <josh@zipperup.org>
 #
-# $FreeBSD: ports/devel/p5-Tie-DB_FileLock/Makefile,v 1.1 2000/09/16 04:50:58 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Tie-DB_FileLock
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Tie
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	josh@zipperup.org
+COMMENT=	Locking access to Berkeley DB v1.x
 
 PERL_CONFIGURE=	yes
 

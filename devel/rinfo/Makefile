@@ -2,7 +2,7 @@
 # Date created:         23th March 1998
 # Whom:                 Mark Chapman <markc@ctgi.net>
 #
-# $FreeBSD: ports/devel/rinfo/Makefile,v 1.2 1999/08/25 05:50:06 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rinfo
@@ -11,6 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://www.ctgi.net/pub/ctgi/
 
 MAINTAINER=	markc@ctgi.net
+COMMENT=	List status of files checked out of RCS repositories
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/rinfo ${PREFIX}/bin/rinfo

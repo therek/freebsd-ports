@@ -2,7 +2,7 @@
 # Date created:		24-Jul-2000
 # Whom:			Leo Kim <leo@florida.sarang.net>
 #
-# $FreeBSD: ports/devel/p5-B-Graph/Makefile,v 1.2 2001/01/10 01:06:30 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	B-Graph
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=B
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	leo@florida.sarang.net
+COMMENT=	Perl Compiler backend to diagram OP trees
 
 PERL_CONFIGURE=	yes
 MAN3=		B::Graph.3
