@@ -3,7 +3,7 @@
 # Date created:		23 June 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/lotusxsl/Makefile,v 1.4 1999/08/31 06:51:21 mharo Exp $
+# $FreeBSD: ports/textproc/lotusxsl/Makefile,v 1.5 1999/11/07 05:58:58 kuriyama Exp $
 #
 
 DISTNAME=	lotusxsl_0_18_4
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	kuriyama@FreeBSD.org
 
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
-RUN_DEPENDS=	${PREFIX}/share/java/classes/xml4j.jar:${PORTSDIR}/textproc/xml4j
+RUN_DEPENDS=	${LOCALBASE}/share/java/classes/xml4j.jar:${PORTSDIR}/textproc/xml4j
 
 EXTRACT_CMD=		unzip
 EXTRACT_BEFORE_ARGS=	-a -q -L
