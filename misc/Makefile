@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.360 2001/07/23 10:02:18 ijliao Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.361 2001/07/30 00:51:24 lioux Exp $
 #
 
     SUBDIR += 40upgrade
@@ -68,6 +68,7 @@
     SUBDIR += gnomeuserdocs
     SUBDIR += gnomeutils
     SUBDIR += gnuls
+    SUBDIR += goldstr
     SUBDIR += gone
     SUBDIR += gonvert
     SUBDIR += gplbp
