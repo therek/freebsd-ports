@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/Makefile,v 1.198 2001/07/03 18:13:05 sobomax Exp $
 #
     SUBDIR += yawho
 
@@ -130,6 +130,7 @@
     SUBDIR += samefile
     SUBDIR += sarah
     SUBDIR += sdd
+    SUBDIR += service-config
     SUBDIR += setcdboot
     SUBDIR += setquota
     SUBDIR += skill
