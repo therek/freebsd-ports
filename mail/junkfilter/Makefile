@@ -3,14 +3,14 @@
 # Whom:					Gregory Sutter <gsutter@zer0.org>
 
 #
-# $FreeBSD: ports/mail/junkfilter/Makefile,v 1.4 2001/05/28 11:46:06 gsutter Exp $
+# $FreeBSD: ports/mail/junkfilter/Makefile,v 1.5 2001/05/28 19:44:08 gsutter Exp $
 #
 
 PORTNAME=	junkfilter
-PORTVERSION=	20010528
+PORTVERSION=	20010529
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
-		http://junkfilter.zer0.org/pkg/${PORTVERSION}
+		http://junkfilter.zer0.org/pkg/${PORTVERSION}/
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}
 DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
