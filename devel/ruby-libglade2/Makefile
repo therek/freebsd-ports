@@ -2,16 +2,15 @@
 # Date created:		8 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-libglade/Makefile,v 1.1 2001/02/07 20:00:57 knu Exp $
+# $FreeBSD: ports/devel/ruby-libglade/Makefile,v 1.2 2001/05/04 21:41:08 ade Exp $
 #
 
 PORTNAME=	libglade
-PORTVERSION=	1.1
-PORTREVISION=	1
+PORTVERSION=	1.2
 CATEGORIES=	devel ruby gnome
 MASTER_SITES=	http://beta4.com/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
-DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
+DISTNAME=	ruby-${PORTNAME}-${PORTVERSION:S/./-/g}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
@@ -30,10 +29,10 @@ INSTALL_TARGET=	site-install
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/libglade/
-	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/libglade/
-	${MKDIR} ${RUBY_DOCDIR}/libglade
-	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_DOCDIR}/libglade/
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
+	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_DOCDIR}/${PORTNAME}/
 .endif
 
 .include <bsd.port.mk>
