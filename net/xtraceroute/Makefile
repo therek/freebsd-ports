@@ -2,7 +2,7 @@
 # Date created:        17 February 2000
 # Whom:                Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.4 2000/05/17 11:06:51 sobomax Exp $
+# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.5 2000/06/02 07:43:40 sobomax Exp $
 #
 
 PORTNAME=	xtraceroute
@@ -23,7 +23,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-GL-prefix=${X11BASE}/lib \
-		--with-lib-MesaGL
+		--with-lib-GL
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
