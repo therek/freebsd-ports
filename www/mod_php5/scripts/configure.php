@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.128 2001/05/10 07:32:30 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.129 2001/05/13 11:34:53 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -189,7 +189,7 @@ while [ "$1" ]; do
 		\"japanese\")
 			${CAT} << EOF
 MASTER_SITES+=	ftp://night.fminn.nagano.nagano.jp/php4/
-DISTFILES=	\${DISTNAME}\${EXTRACT_SUFX} php4_jstring-20010205.tar.gz php4_mbregex-1.2.tar.gz
+DISTFILES=	\${DISTNAME}\${EXTRACT_SUFX} php4_jstring-1.1.1.tar.gz php4_mbregex-1.2.1.tar.gz
 CONFIGURE_ARGS+=--enable-jstring --enable-mbregex
 BUILD_DEPENDS+=	automake:\${PORTSDIR}/devel/automake
 BUILD_DEPENDS+=	autoconf:\${PORTSDIR}/devel/autoconf
