@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.150 1999/11/10 23:54:57 cpiazza Exp $
+# $FreeBSD: ports/LEGAL,v 1.151 1999/12/09 17:18:51 obrien Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -32,7 +32,6 @@ bzip-*			ports/archivers/bzip	Some algorithms used may
 						to unfriendly legal action.
 cap60/*			ports/net/cap		Don't sell for profit
 cfs-*			ports/security/cfs	Crypto; export-controlled
-cku190.tar.gz		ports/comms/kermit	Restrictive copyright
 contool-*		ports/sysutils/contool	Don't incorporate the source
 						code into a product which is
 						subsequently sold.
