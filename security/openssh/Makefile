@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.3 1999/11/09 12:43:38 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.4 1999/11/11 14:33:11 green Exp $
 #
 
 DISTNAME=	OpenSSH-1.2
@@ -31,7 +31,7 @@ WRKSRC=		${WRKDIR}/ssh
 
 do-fetch:
 .if !exists(${WRKDIR}/.fetch_done)
-	@${SETENV} WRKDIR=${WRKDIR} ${SCRIPTDIR}/fetchit)
+	@${SETENV} WRKDIR=${WRKDIR} ${SCRIPTDIR}/fetchit
 .endif
 	@${TOUCH} ${WRKDIR}/.fetch_done
 
