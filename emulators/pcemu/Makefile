@@ -3,20 +3,12 @@
 # Date created:		7 March 1995
 # Whom:			joerg
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/pcemu/Makefile,v 1.14 1999/08/25 05:49:30 obrien Exp $
 #
 
 DISTNAME=	pcemu1.01alpha
-PKGNAME=	pcemu-1.01a
+PKGNAME=	pcemu-1.01b
 CATEGORIES=	emulators
-
-# Warning notice:  by now, you'll have to live with those warnings:
-#
-#In file included from /usr/include/sys/types.h:48,
-#                 from /usr/include/stdio.h:43,
-#                 from main.c:22:
-#/usr/include/machine/endian.h:50: warning: `LITTLE_ENDIAN' redefined
-#*Initialization*:1: warning: this is the location of the previous definition
 
 #
 # This could in theory become a chicken-and-egg problem.  Anyway,
