@@ -2,11 +2,11 @@
 # Date created:         		September 18, 1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/x11-toolkits/wxgtk-devel/Makefile,v 1.26 2001/08/02 09:17:11 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wxgtk
-PORTVERSION=	2.3.0
+PORTVERSION=	2.3.1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://wesley.informatik.uni-freiburg.de/pub/linux/wxxt/source/
@@ -42,9 +42,5 @@ pre-patch:
 	@${PERL} -pi -e 's|-l\$$THREADS_LIB|${PTHREAD_LIBS}|g ; \
 			 s|-l\$$THREADS_LINK|${PTHREAD_LIBS}|g' \
 				${WRKSRC}/configure
-
-post-install:
-	@${RM} -rf ${PREFIX}/include/wx/motif
-	@${RM} -rf ${PREFIX}/include/wx/msw
 
 .include <bsd.port.mk>
