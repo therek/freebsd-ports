@@ -2,7 +2,7 @@
 # Date created:				November 5 2000
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/gdrdao/Makefile,v 1.2 2001/03/23 06:36:32 dinoex Exp $
+# $FreeBSD$
 
 PORTNAME=	gdrdao
 PORTVERSION=	0.4.1
@@ -14,7 +14,8 @@ MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	cdrdao:${PORTSDIR}/audio/cdrdao
 
-USE_GNOME=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gnomeprefix gnomelibs
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>
