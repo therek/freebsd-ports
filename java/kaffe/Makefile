@@ -3,10 +3,10 @@
 # Date created:         20 February 1995
 # Whom:                 Tim Wilkinson <tim@sarc.city.ac.uk>
 #
-# $FreeBSD: ports/java/kaffe/Makefile,v 1.43 1999/08/25 06:16:30 obrien Exp $
+# $FreeBSD: ports/java/kaffe/Makefile,v 1.44 1999/09/18 03:12:03 steve Exp $
 #
 
-DISTNAME=	kaffe-1.0.b4
+DISTNAME=	kaffe-1.0.5
 CATEGORIES=	java
 MASTER_SITES=	ftp://ftp.transvirtual.com/pub/kaffe/
 
@@ -16,7 +16,6 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		gif.5:${PORTSDIR}/graphics/giflib \
 		png.3:${PORTSDIR}/graphics/png
 
-WRKSRC=		${WRKDIR}/kaffe-1.0b4
 GNU_CONFIGURE=	yes
 MAN1=		kaffe.1
 
