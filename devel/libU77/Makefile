@@ -2,13 +2,13 @@
 # Date Created:			8 October 1998
 # Whom:				Glenn Johnson <gjohnson@nola.srrc.usda.gov>
 #
-# $FreeBSD: ports/devel/libU77/Makefile,v 1.8 2000/06/16 21:49:57 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libU77
 PORTVERSION=	2.6
 CATEGORIES=	devel
-MASTER_SITES=	http://flo.mech.eng.usyd.edu.au/~norris/src/
+MASTER_SITES=	http://www.esc.auckland.ac.nz/People/Staff/Norris/src/
 
 MAINTAINER=	ports@FreeBSD.org
 
