@@ -2,7 +2,7 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.11 2001/06/09 01:43:01 knu Exp $
+# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.12 2001/06/09 02:33:13 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
@@ -86,9 +86,13 @@ post-install:
 		${LN} -fs ${RUBY_WITHOUT_SUFFIX}${RUBY_DEFAULT_SUFFIX}${RUBY_R} ${RUBY_WITHOUT_SUFFIX}${RUBY_R}; \
 		${LN} -fs ruby${RUBY_DEFAULT_SUFFIX}${RUBY_R}.1 ${PREFIX}/man/man1/ruby${RUBY_R}.1; \
 	fi
-	${LN} -fs ${IRB_WITHOUT_SUFFIX}${RUBY_DEFAULT_SUFFIX} ${IRB_WITHOUT_SUFFIX}
+	if [ -x ${RUBY_WITHOUT_SUFFIX} ]; then \
+		${LN} -fs ${IRB_WITHOUT_SUFFIX}${RUBY_DEFAULT_SUFFIX} ${IRB_WITHOUT_SUFFIX}; \
+	fi
 .if !empty(RUBY_R)
-	${LN} -fs ${IRB_WITH_SUFFIX} ${IRB_WITHOUT_SUFFIX}${RUBY_R}
+	if [ -x ${RUBY_WITHOUT_SUFFIX}${RUBY_R} ]; then \
+		${LN} -fs ${IRB_WITH_SUFFIX} ${IRB_WITHOUT_SUFFIX}${RUBY_R}; \
+	fi
 .endif
 	${LDCONFIG} -m ${LOCALBASE}/lib
 	${RUBY_WITH_SUFFIX} ${RUBY_FLAGS} -i -p \
