@@ -2,7 +2,7 @@
 # Date created:		1 April 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/popper/Makefile,v 1.31 2000/04/13 20:00:31 cpiazza Exp $
+# $FreeBSD: ports/mail/popper/Makefile,v 1.32 2000/05/23 07:11:48 sobomax Exp $
 #
 
 PORTNAME=	qpopper
@@ -13,6 +13,8 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ache@freebsd.org
+
+FORBIDDEN=	"Remote buffer overflow yielding gid mail"
 
 # Set POPD_YOUBIN_SUPPORT variable in the environment to enable
 # youbin support.
