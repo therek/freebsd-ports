@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.146 2001/11/18 22:29:38 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.147 2001/11/18 22:35:30 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -48,6 +48,7 @@ YP		"YP/NIS support" OFF \
 BCMath		"BCMath support" OFF \
 Hyperwave	"Hyperwave support" OFF \
 ming		"ming library support" OFF \
+MCAL		"Modular Calendar Access Library support" OFF \
 sockets		"sockets support" OFF \
 sysvsem		"System V semaphore support" OFF \
 sysvshm		"System V shared memory support" OFF \
@@ -275,6 +276,10 @@ EOF
 		\"ming\")
 			echo "LIB_DEPENDS+=	ming.3:\${PORTSDIR}/graphics/ming"
 			echo "CONFIGURE_ARGS+=--with-ming=\${PREFIX}"
+			;;
+		\"MCAL\")
+			echo "CONFIGURE_ARGS+=--with-mcal=\${PREFIX}"
+			echo "LIB_DEPENDS+=	mcal.0:\${PORTSDIR}/misc/libmcal"
 			;;
 		\"sockets\")
 			echo "CONFIGURE_ARGS+=--enable-sockets"
