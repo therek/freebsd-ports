@@ -2,11 +2,11 @@
 # Date Created:		23 June 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/ftp/downloader/Makefile,v 1.15 2000/06/11 07:51:46 knu Exp $
+# $FreeBSD: ports/ftp/downloader/Makefile,v 1.16 2000/08/11 01:14:10 will Exp $
 #
 
 PORTNAME=	downloader
-PORTVERSION=	1.18
+PORTVERSION=	1.19
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.krasu.ru/soft/chuchelo/files/ \
 		ftp://ftp.server51.freshmeat.net/pub/d4x/ \
@@ -20,7 +20,6 @@ LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 MSGFMT_CMD=	${LOCALBASE}/bin/msgfmt
 WRKSRC=		${WRKDIR}/${DISTNAME}/main
-CONFIGURE_ENV=	LIBS="-lintl"
 MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		MSGFMT_CMD="${MSGFMT_CMD}"
 
