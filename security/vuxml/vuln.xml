@@ -28,10 +28,34 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.130 2004/06/26 00:45:07 trhodes Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.131 2004/06/27 19:26:14 eik Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="da9e6438-bfc0-11d8-b00e-000347a4fa7d">
+    <topic>MoinMoin administrative group name privilege escalation vulnerability</topic>
+    <affects>
+      <package>
+        <name>moinmoin</name>
+        <range><lt>1.2.2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p>A serious flaw exists in the MoinMoin software
+	  which may allow a malicious user to gain access to
+	  unauthorized privileges.</p>
+      </body>
+    </description>
+    <references>
+      <url>http://www.osvdb.org/6704</url>
+    </references>
+    <dates>
+      <discovery>2004-05-04</discovery>
+      <entry>2004-06-28</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="7a9d5dfe-c507-11d8-8898-000d6111a684">
     <topic>isc-dhcp3-server buffer overflow in logging mechanism</topic>
     <affects>
