@@ -5,7 +5,7 @@
 # Whom:			David O'Brien <obrien@FreeBSD.org>
 # Whom:                 Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/crack/Makefile,v 1.10 1999/08/31 01:50:59 peter Exp $
 #
 
 DISTNAME=	crack5.0
@@ -46,6 +46,5 @@ do-install:
 	@${MKDIR} ${PREFIX}/crack
 	@${RM} -f ${WRKSRC}/Run/*
 	@(cd ${WRKSRC} ; tar cf - . | (cd ${PREFIX}/crack; tar xfBp -))
-
 
 .include <bsd.port.mk>
