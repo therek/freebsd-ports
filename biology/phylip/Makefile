@@ -2,7 +2,7 @@
 # Date created:				4 July 2000
 # Whom:					dbader@eece.unm.edu
 #
-# $FreeBSD: ports/biology/phylip/Makefile,v 1.1 2000/07/10 03:25:43 steve Exp $
+# $FreeBSD: ports/biology/phylip/Makefile,v 1.2 2001/04/02 05:10:14 mharo Exp $
 #
 
 PORTNAME=	phylip
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	dbader@eece.unm.edu
 
+USE_XLIB=	yes
 NO_WRKSUBDIR=	yes
 
 BINARIES=	clique consense contml contrast dnacomp dnadist dnainvar \
