@@ -1,12 +1,12 @@
 # New ports collection makefile for:    9wm
-# Version required:     1.1
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/9wm/Makefile,v 1.8 1999/08/31 02:59:51 peter Exp $
 #
 
-DISTNAME=	9wm-1.1
+PORTNAME=	9wm
+PORTVERSION= 	1.1
 CATEGORIES=	x11-wm plan9
 MASTER_SITES=	ftp://ftp.mathcs.emory.edu/pub/arnold/
 EXTRACT_SUFX=	.shar.gz

@@ -1,19 +1,19 @@
 # New ports collection makefile for:	afterstep-i18n
-# Version required:	1.0
 # Date created:		23 October 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.10 1999/08/31 06:53:04 mharo Exp $
+# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.11 2000/02/08 09:29:45 peter Exp $
 #
 
-DISTNAME=	AfterStep-1.0
-PKGNAME=	afterstep-i18n-1.0
+PORTNAME=	afterstep-i18n
+PORTVERSION= 	1.0
 CATEGORIES=	x11-wm afterstep
 MASTER_SITES=	${MASTER_SITE_AFTERSTEP} \
 		http://people.FreeBSD.org/~kuriyama/distfiles/ \
 		http://www.itlb.te.noda.sut.ac.jp/~manome/afterstep/archive/ \
 		http://www.itlb.te.noda.sut.ac.jp/~manome/afterstep/archive/icons/
 MASTER_SITE_SUBDIR=	stable/archives
+DISTNAME=	AfterStep-1.0
 DISTFILES=      ${DISTNAME}.tar.gz \
 		unofficial-I18N.98Feb27.tar.gz \
 		kterm.xpm kterm2.xpm KTerm-AS.xpm netscape4.xpm

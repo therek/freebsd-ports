@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xfce
-# Version required:	3.3.1
 # Date created:		30 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.25 2000/01/22 12:49:37 nakai Exp $
+# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.26 2000/03/04 14:27:46 nakai Exp $
 #
 
-DISTNAME=	xfce-3.3.1
+PORTNAME=	xfce
+PORTVERSION= 	3.3.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.xfce.org/archive/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	WindowMaker Theme Installer
-# Version required:	0.62
 # Date created:		09 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/wmthemeinstall/Makefile,v 1.1.1.1 1999/10/10 23:59:11 steve Exp $
+# $FreeBSD: ports/x11-wm/wmthemeinstall/Makefile,v 1.2 1999/12/29 21:17:14 steve Exp $
 #
 
-DISTNAME=	wmthemeinstall-0.62
+PORTNAME=	wmthemeinstall
+PORTVERSION= 	0.62
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.lovett.com/FreeBSD/ \
 		ftp://ftp.cronyx.ru/.w3/distfiles/

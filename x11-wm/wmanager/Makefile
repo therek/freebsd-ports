@@ -1,12 +1,12 @@
 # New ports collection makefile for:	wmanager
-# Version required:	0.2
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/wmanager/Makefile,v 1.2 1999/12/10 16:50:24 wes Exp $
+# $FreeBSD: ports/x11-wm/wmanager/Makefile,v 1.3 2000/03/22 01:59:41 will Exp $
 #
 
-DISTNAME=	wmanager-0.2
+PORTNAME=	wmanager
+PORTVERSION= 	0.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://heuss.techfak.uni-bielefeld.de/www/mtessmer/wmanager/
 EXTRACT_SUFX=	.src.tar.bz2

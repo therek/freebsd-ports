@@ -1,15 +1,15 @@
 # New ports collection makefile for:	sapphire
-# Version required:	0.14.0.2
 # Date created:		26 Jan 2000
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/x11-wm/sapphire/Makefile,v 1.1.1.1 2000/01/27 11:07:40 nakai Exp $
+# $FreeBSD: ports/x11-wm/sapphire/Makefile,v 1.2 2000/02/21 16:57:00 taoka Exp $
 #
 
-DISTNAME=	sapphire-0.14.0-2
-PKGNAME=	sapphire-0.14.0.2
+PORTNAME=	sapphire
+PORTVERSION= 	0.14.0.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://download.sourceforge.net/sapphire/
+DISTNAME=	${PORTNAME}-0.14.0-2
 
 MAINTAINER=	trevor@jpj.net
 

@@ -1,17 +1,17 @@
 # New ports collection makefile for:	olvwm
-# Version required:	4.1
 # Date created:		21 October 1994
 # Whom:			smace
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/olvwm/Makefile,v 1.21 1999/08/31 03:00:13 peter Exp $
 #
 
-DISTNAME=	olvwm4
-PKGNAME=	olvwm-4.2
+PORTNAME=	olvwm
+PORTVERSION= 	4.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	window_managers
+DISTNAME=	${PORTNAME}4
 EXTRACT_SUFX=	.tar.Z
 
 PATCH_SITES=	${MASTER_SITES}

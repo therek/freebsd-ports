@@ -1,15 +1,15 @@
 # New ports collection makefile for:	ctwm
-# Version required:	3.4
 # Date created:		13 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/x11-wm/ctwm/Makefile,v 1.23 1999/09/10 20:40:57 torstenb Exp $
+# $FreeBSD: ports/x11-wm/ctwm/Makefile,v 1.24 2000/02/13 19:29:13 torstenb Exp $
 #
 
-DISTNAME=	ctwm-3.5.2b
+PORTNAME=	ctwm
+PORTVERSION= 	3.5.2b
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://slhp1.epfl.ch/pub/
-DISTFILES+=	ctwm-3.5.2b.tar.gz ctwm-images.tar.gz
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ctwm-images${EXTRACT_SUFX}
 
 MAINTAINER=	torstenb@FreeBSD.org
 
@@ -17,7 +17,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 BUILD_DEPENDS=  gm4:${PORTSDIR}/devel/m4
 RUN_DEPENDS=    gm4:${PORTSDIR}/devel/m4
 
-MAKE_ENV+=	LOCALBASE=${LOCALBASE}
+MAKE_ENV=	LOCALBASE=${LOCALBASE}
 
 USE_IMAKE=	yes
 MAN1=		ctwm.1

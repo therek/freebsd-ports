@@ -1,16 +1,16 @@
 # New ports collection makefile for:	ude
-# Version required:	0.2.7.1
 # Date created:		06 Mar 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/ude/Makefile,v 1.2 2000/03/22 01:59:39 will Exp $
+# $FreeBSD: ports/x11-wm/ude/Makefile,v 1.3 2000/03/25 18:56:40 will Exp $
 #
 
-DISTNAME=	ude-0.2.7-BETA
-PKGNAME=	ude-0.2.7.1
+PORTNAME=	ude
+PORTVERSION= 	0.2.7.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://download.sourceforge.net/pub/sourceforge/udeproject/ \
 		ftp://ude.the-coffeeshop.dk/pub/UDE/
+DISTNAME=	${PORTNAME}-0.2.7-BETA
 
 MAINTAINER=	will@FreeBSD.org
 

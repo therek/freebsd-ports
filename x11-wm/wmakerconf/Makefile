@@ -1,12 +1,12 @@
 # New ports collection makefile for:	wmakerconf
-# Version required:			2.6.1
 # Date Created:				14 August 1999
 # Whom:					Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.14 2000/02/16 13:08:25 tg Exp $
+# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.15 2000/04/06 10:06:54 mharo Exp $
 #
 
-DISTNAME=	wmakerconf-2.6.1
+PORTNAME=	wmakerconf
+PORTVERSION= 	2.6.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://ulli.linuxave.net/wmakerconf/
 
