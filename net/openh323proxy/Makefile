@@ -2,7 +2,7 @@
 # Date created:		Tue Nov 21 12:59:00 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/openh323proxy/Makefile,v 1.3 2001/05/31 22:22:56 ade Exp $
+# $FreeBSD: ports/net/openh323proxy/Makefile,v 1.4 2001/07/11 06:52:53 roger Exp $
 #
 
 PORTNAME=	openh323proxy
@@ -14,8 +14,6 @@ DISTNAME=	${PORTNAME}_0.9a3_m09
 MAINTAINER=	roger@FreeBSD.org
 
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/net/openh323:build
-
-BROKEN=         Will not work until someone writes a GetRoutingTable function
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
