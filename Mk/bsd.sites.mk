@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.68 2001/08/08 08:30:19 kuriyama Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.69 2001/08/12 16:30:02 knu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -55,7 +55,7 @@ MASTER_SITE_COMP_SOURCES+=	\
 #
 #    http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html
 #
-MASTER_SITE_FREEBSD+=	\
+MASTER_SITE_FREEBSD_ORG+=	\
 	ftp://ftp.FreeBSD.org/pub/FreeBSD/%SUBDIR%/ \
 	ftp://ftp.se.FreeBSD.org/pub/FreeBSD/%SUBDIR%/ \
 	ftp://ftp.jp.FreeBSD.org/pub/FreeBSD/%SUBDIR%/ \
