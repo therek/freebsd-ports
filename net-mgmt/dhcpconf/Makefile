@@ -2,12 +2,11 @@
 # Date created:		20 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/net/dhcpconf/Makefile,v 1.2 2000/03/22 01:59:28 will Exp $
+# $FreeBSD: ports/net/dhcpconf/Makefile,v 1.3 2000/04/09 18:10:57 cpiazza Exp $
 #
 
 PORTNAME=	dhcpconf
 PORTVERSION=	0.7.0
-DISTNAME=	dhcp-conf
 CATEGORIES=	net sysutils
 MASTER_SITES=	http://members.xoom.com/vschade/dhcp-conf/
 DISTNAME=	dhcp-conf
