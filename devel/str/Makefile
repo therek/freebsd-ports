@@ -1,12 +1,12 @@
 # New ports collection makefile for:	str
-# Version required:		0.9.1
+# Version required:		0.9.2
 # Date Created:			09 Jan 2000
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/str/Makefile,v 1.1.1.1 2000/01/09 19:47:04 rse Exp $
 #
 
-DISTNAME=	str-0.9.1
+DISTNAME=	str-0.9.2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.engelschall.com/sw/str/ \
 		ftp://ftp.engelschall.com/sw/str/
