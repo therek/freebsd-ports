@@ -2,7 +2,7 @@
 # Date created:		25 May 1998
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail/Makefile,v 1.23 2000/10/08 08:51:35 asami Exp $
+# $FreeBSD: ports/mail/qmail/Makefile,v 1.24 2000/11/01 00:24:14 lioux Exp $
 #
 
 PORTNAME=	qmail
@@ -19,7 +19,9 @@ DISTNAME=	${PORTNAME}-${QMAIL_VERSION}
 # Patch necessary to cope with non-RFC >512 dns entries
 # Since AOL has been using those, the problem has skyrocketed from minor to
 # groundzero. qmail being RFC compliant need to be "fixed" to work with those
-PATCH_SITES?=	http://www.ckdhr.com/ckd/
+PATCH_SITES?=	http://www.ckdhr.com/ckd/ \
+		${MASTER_SITE_LOCAL}
+PATCH_SITE_SUBDIR?=	lioux
 PATCHFILES?=	qmail-103.patch
 PATCH_DIST_STRIP+=	-p1
 
