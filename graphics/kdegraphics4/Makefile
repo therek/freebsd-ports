@@ -2,7 +2,7 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/kdegraphics2/Makefile,v 1.50 2001/08/25 02:17:56 will Exp $
 #
 
 PORTNAME=	kdegraphics
@@ -26,7 +26,7 @@ CONFIGURE_ARGS+=--without-kamera
 .include <bsd.port.pre.mk>
 
 # temporarily disable kamera, it requires gphoto2
-PLIST_SUB+=	KAMERA:="@comment "
+PLIST_SUB+=	KAMERA="@comment "
 
 SANE_CONFIG=	${LOCALBASE}/bin/sane-config
 
@@ -36,9 +36,9 @@ WITH_SANE=	yes
 
 .if defined(WITH_SANE) && ${WITH_SANE} == yes
 LIB_DEPENDS+=	sane.1:${PORTSDIR}/graphics/sane-backends
-PLIST_SUB+=	SANE:=""
+PLIST_SUB+=	SANE=""
 .else
-PLIST_SUB+=	SANE:="@comment "
+PLIST_SUB+=	SANE="@comment "
 pre-everything::
 	@${ECHO_MSG}
 	@${ECHO_MSG} "If you want to compile with scanner (SANE) support,"
