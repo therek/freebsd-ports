@@ -2,7 +2,7 @@
 # Date created:		2 May 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/xxgdb/Makefile,v 1.10 2000/04/14 05:44:42 asami Exp $
+# $FreeBSD: ports/devel/xxgdb/Makefile,v 1.11 2000/09/27 02:54:56 sanpei Exp $
 #
 
 PORTNAME=	xxgdb
@@ -21,9 +21,9 @@ MAN1=		xxgdb.1
 #  we have the cookie anyway and it's much easier this way
 #  than modifying the Imakefile.
 post-build:
-	cd ${WRKSRC}; gcc -o xxgdbiowin -O2 xxgdbiowin.c
+	cd ${WRKSRC} && ${CC} ${CFLAGS} -o xxgdbiowin xxgdbiowin.c
 
 post-install:
-	install -c -s ${WRKSRC}/xxgdbiowin ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/xxgdbiowin ${PREFIX}/bin
 
 .include <bsd.port.mk>
