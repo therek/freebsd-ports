@@ -2,7 +2,7 @@
 # Date created:		7 Nov 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/p5-Jcode/Makefile,v 1.9 2000/08/27 16:52:45 knu Exp $
+# $FreeBSD: ports/japanese/p5-Jcode/Makefile,v 1.10 2001/01/07 17:49:46 will Exp $
 #
 
 PORTNAME=	Jcode
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	../../authors/id/D/DA/DANKOGAI
 MAINTAINER=	kuriyama@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64
-RUN_DEPENDS=	${BUILD_DEPENDS}
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64
 
 USE_PERL5=	yes
 USE_ZIP=	yes
