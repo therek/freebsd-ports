@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.389 2000/07/31 15:14:24 nbm Exp $
+# $FreeBSD: ports/net/Makefile,v 1.390 2000/08/02 16:17:16 sobomax Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -62,6 +62,7 @@
     SUBDIR += etherboot
     SUBDIR += ethereal
     SUBDIR += everybuddy
+    SUBDIR += flow-tools
     SUBDIR += fping
     SUBDIR += freewais-sf
     SUBDIR += fspclient
