@@ -2,11 +2,11 @@
 # Date created:				14 February 2001
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/conference/Makefile,v 1.1 2001/03/11 02:29:42 will Exp $
 #
 
 PORTNAME=	conference
-PORTVERSION=	0.4
+PORTVERSION=	0.4.1
 CATEGORIES=	net
 MASTER_SITES=	http://download.jabber.org/dists/1.4/final/
 
@@ -17,7 +17,6 @@ RUN_DEPENDS=	jabberd:${JABBER_PORT}
 
 .include <bsd.port.pre.mk>
 
-IS_INTERACTIVE=	yes
 JABBER_PORT=	${PORTSDIR}/net/jabber
 JABBER_WRKSRC!=	cd ${JABBER_PORT} && ${MAKE} -V WRKSRC
 MAKE_ENV=	JABBER_WRKSRC=${JABBER_WRKSRC}
