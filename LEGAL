@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.377 2005/01/18 21:37:18 clement Exp $
+# $FreeBSD: ports/LEGAL,v 1.378 2005/01/20 07:56:35 phantom Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -313,9 +313,9 @@ jdk-1_5_0-bin-scsl.*	ports/java/jdk15	Redistribution of pre-compiled
 						binaries is not permitted
 jdk-1_5_0-src-scsl.*	ports/java/jdk15	Redistribution of pre-compiled
 						binaries is not permitted
-j2sdk-1_5_0-doc.*	ports/java/jdk15-doc	This documentation is under
-						license and export control/
-j2sdk-1_5_0-*-i586.bin	ports/java/linux-sun-jdk15 Redistribution of repackaged
+jdk-1_5_0-doc.*		ports/java/jdk15-doc	This documentation is under
+						license and export control.
+jdk-1_5_0-*-i586.bin	ports/java/linux-sun-jdk15 Redistribution of repackaged
 						binaries not permitted.
 j2sdkee-*		ports/java/j2sdkee	For development and testing use
 						only; redistribution prohibited
