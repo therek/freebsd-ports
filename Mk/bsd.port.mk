@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.341 2000/07/04 08:47:50 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.342 2000/07/19 16:41:22 asami Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -912,7 +912,7 @@ MTREE_FILE=	/etc/mtree/BSD.local.dist
 .endif
 MTREE_CMD?=	/usr/sbin/mtree
 .if ${OSVERSION} >= 500010
-MTREE_ARGS?=	-U -f ${MTREE_FILE} -d -e -p -L
+MTREE_ARGS?=	-U -f ${MTREE_FILE} -L -d -e -p
 .else
 MTREE_ARGS?=	-U -f ${MTREE_FILE} -d -e -p
 .endif
