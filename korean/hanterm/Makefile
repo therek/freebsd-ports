@@ -2,7 +2,7 @@
 # Date created:		12 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanterm/Makefile,v 1.15 2000/07/16 22:22:51 cjh Exp $
+# $FreeBSD: ports/korean/hanterm/Makefile,v 1.16 2000/07/16 23:09:29 cjh Exp $
 #
 
 PORTNAME=	hanterm
@@ -17,6 +17,7 @@ RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/local/johabm16.pcf.gz:${PORTSDIR}/korean/j
 
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES= yes
+ALL_TARGET=	hanterm
 
 post-install:
 	${MKDIR} ${PREFIX}/share/doc/hanterm
