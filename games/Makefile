@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.271 2000/05/20 04:07:18 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.272 2000/05/22 15:11:01 sobomax Exp $
 #
 
     SUBDIR += 3dc
@@ -256,6 +256,7 @@
     SUBDIR += xtic
     SUBDIR += xtriangles
     SUBDIR += xtris
+    SUBDIR += xtrojka
     SUBDIR += xtron
     SUBDIR += xtruco
     SUBDIR += xvier
