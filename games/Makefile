@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.284 2000/07/18 09:44:24 kevlo Exp $
+# $FreeBSD: ports/games/Makefile,v 1.285 2000/07/21 16:05:15 sobomax Exp $
 #
 
     SUBDIR += 3dc
@@ -121,6 +121,7 @@
     SUBDIR += pp
     SUBDIR += ptkei
     SUBDIR += pysol
+    SUBDIR += pythoong
     SUBDIR += qcc
     SUBDIR += qix
     SUBDIR += qstat
