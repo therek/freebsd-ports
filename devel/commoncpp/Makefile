@@ -2,11 +2,11 @@
 # Date created:				25 July 2000
 # Whom:					David Sugar <dyfet@gnu.org>
 #
-# $FreeBSD: ports/devel/commoncpp/Makefile,v 1.1 2000/07/27 10:03:56 sobomax Exp $
+# $FreeBSD: ports/devel/commoncpp/Makefile,v 1.2 2000/08/22 17:18:19 sobomax Exp $
 #
 
 PORTNAME=	CommonC++
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	cplusplus
@@ -14,16 +14,21 @@ MASTER_SITE_SUBDIR=	cplusplus
 MAINTAINER=	dyfet@gnu.org
 
 USE_GMAKE=	yes
+USE_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_AUTOCONF=	yes
+#USE_AUTOCONF=	yes
 INSTALLS_SHLIB=	yes
-AUTOCONF=	autoconf && ${PERL} -pi -e 's|-lpthread|-pthread|g ; \
-			s|l\$$ost_cv_thread_library|\$$ost_cv_thread_library|g' \
-			${WRKSRC}/configure
+#AUTOCONF=	autoconf && ${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+#		s|l\$$ost_cv_thread_library|\$$ost_cv_thread_library|g' \
+#			${WRKSRC}/configure
+#
+# I had immense problems with autoconf generated on xBSD 4.0 where the
+# generated configure would mangle library names.
 
 post-extract:
-	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
-		's|-release \$$\(LT_RELEASE\)||g'
+	cd ${WRKSRC} ; ./configure
+#	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+#		's|-release \$$\(LT_RELEASE\)||g'
 
 post-install:
 .if !defined(NOPORTDOCS)
