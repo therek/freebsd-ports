@@ -2,7 +2,7 @@
 # Date created:			  Fri Oct 02, 1998
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/misc/Howto/Makefile,v 1.7 2001/03/10 05:44:19 vanilla Exp $
+# $FreeBSD: ports/misc/Howto/Makefile,v 1.8 2001/03/12 12:01:46 vanilla Exp $
 #
 
 PORTNAME=	Howto
@@ -10,7 +10,8 @@ PORTVERSION=	1.0
 PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://metalab.unc.edu/pub/Linux/docs/HOWTO/other-formats/sgml/ \
-		ftp://metalab.unc.edu/pub/Linux/docs/HOWTO/mini/other-formats/sgml/
+		ftp://metalab.unc.edu/pub/Linux/docs/HOWTO/mini/other-formats/sgml/ \
+		ftp://metalab.unc.edu/pub/Linux/docs/HOWTO/other-formats/docbook/
 DISTFILES=	Linux+FreeBSD.sgml.gz  \
 		DNS-HOWTO.sgml.gz  \
 		NFS-HOWTO.sgml.gz  \
