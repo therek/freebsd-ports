@@ -2,7 +2,7 @@
 # Date created:		3 July 2000
 # Whom:			Ryuichiro IMURA <imura@af.airnet.ne.jp>
 #
-# $FreeBSD: ports/japanese/msdosfs/Makefile,v 1.6 2000/10/28 08:37:17 imura Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	msdosfs
@@ -59,8 +59,5 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKDIR}/mount_msdos/mount_jamsdos ${PREFIX}/sbin
 	${INSTALL_SCRIPT} ${WRKSRC}/msdos_ja.ko ${PREFIX}/lib/ja-msdosfs
 	${INSTALL_SCRIPT} ${WRKDIR}/ja-msdosfs.sh ${PREFIX}/etc/rc.d
-
-post-install:
-	/sbin/kldload ${PREFIX}/lib/ja-msdosfs/msdos_ja.ko
 
 .include <bsd.port.post.mk>
