@@ -1,5 +1,6 @@
-# $FreeBSD: ports/russian/Makefile,v 1.29 2000/12/31 05:07:45 will Exp $
+# $FreeBSD$
 #
+    SUBDIR += xxkb
 
     SUBDIR += X.language
     SUBDIR += apache13
