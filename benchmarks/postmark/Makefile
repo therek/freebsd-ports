@@ -4,13 +4,14 @@
 # Date created:			  Sat Sep 18, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/postmark/Makefile,v 1.1.1.1 1999/09/19 04:13:04 obrien Exp $
 #
 
 DISTNAME=	postmark-1_11
 PKGNAME=	postmark-1.11
 CATEGORIES=	benchmarks
-MASTER_SITES=	http://www.netapp.com/ftp/
+MASTER_SITES=	http://www.netapp.com/ftp/  \
+		http://www.taronga.com/~nick/files/
 EXTRACT_SUFX=	.c
 
 MAINTAINER=     obrien@FreeBSD.org
