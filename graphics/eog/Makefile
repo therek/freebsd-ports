@@ -3,7 +3,7 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/eog/Makefile,v 1.1.1.1 1999/10/14 05:06:53 nakai Exp $
+# $FreeBSD: ports/graphics/eog/Makefile,v 1.2 1999/10/27 10:25:56 nakai Exp $
 #
 
 DISTNAME=	eog-0.2
