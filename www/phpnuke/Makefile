@@ -2,7 +2,7 @@
 # Date created:				10 April 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/phpnuke/Makefile,v 1.2 2001/05/19 17:22:07 ijliao Exp $
+# $FreeBSD: ports/www/phpnuke/Makefile,v 1.3 2001/05/21 12:00:07 ijliao Exp $
 #
 
 PORTNAME=	phpnuke
