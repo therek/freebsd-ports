@@ -2,11 +2,11 @@
 # Date created:				3 January 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/easygtk/Makefile,v 1.1 2001/01/03 14:32:40 sobomax Exp $
 #
 
 PORTNAME=	easygtk
-PORTVERSION= 	1.2
+PORTVERSION=	1.2
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://www.linsupport.com/sw/ \
 		http://www.linuxbox.com/~drow/EasyGTK/

@@ -2,11 +2,11 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.33 2000/10/08 10:23:43 asami Exp $
+# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.34 2000/12/27 20:53:49 markm Exp $
 #
 
 PORTNAME=	Xaw3d
-PORTVERSION= 	1.5
+PORTVERSION=	1.5
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	widgets/Xaw3d/R6.3

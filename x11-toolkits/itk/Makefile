@@ -2,11 +2,11 @@
 # Date created:		Aug 17 1996
 # Whom:			chuckr
 #
-# $FreeBSD: ports/x11-toolkits/itk/Makefile,v 1.5 2000/06/16 10:38:31 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/itk/Makefile,v 1.6 2000/06/16 21:52:16 asami Exp $
 #
 
 PORTNAME=	itk
-PORTVERSION= 	3.0.1
+PORTVERSION=	3.0.1
 CATEGORIES=	x11-toolkits tk82
 MASTER_SITES=	ftp://ftp.tcltk.com/pub/itcl/
 DISTNAME=	itcl${PORTVERSION}

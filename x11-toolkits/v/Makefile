@@ -2,11 +2,11 @@
 # Date created:         8 Feb 1998
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/v/Makefile,v 1.15 2000/04/10 01:11:12 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/v/Makefile,v 1.16 2000/10/08 10:23:46 asami Exp $
 #
 
 PORTNAME=	v
-PORTVERSION= 	1.19
+PORTVERSION=	1.19
 CATEGORIES=	x11-toolkits devel graphics
 MASTER_SITES=	ftp://ftp.ntua.gr/pub/X11/v/old/ \
 		ftp://ftp.dl.ac.uk/ccp14/ftp-mirror/programming/objectcentral/old/

@@ -2,11 +2,11 @@
 # Date created:				14 December 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gtkscintilla/Makefile,v 1.1 2000/12/14 12:18:24 sobomax Exp $
 #
 
 PORTNAME=	gtkscintilla
-PORTVERSION= 	0.2
+PORTVERSION=	0.2
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://www.moleskine.f2s.com/
 DISTNAME=	GtkScintilla-${PORTVERSION}

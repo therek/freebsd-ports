@@ -2,11 +2,11 @@
 # Date created:         12 Jan 1999
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/py-tkinter/Makefile,v 1.3 2000/09/08 11:58:51 tg Exp $
+# $FreeBSD: ports/x11-toolkits/py-tkinter/Makefile,v 1.4 2000/10/09 12:11:24 tg Exp $
 #
 
 PORTNAME=	tkinter
-PORTVERSION= 	${PYTHON_PORTVERSION}
+PORTVERSION=	${PYTHON_PORTVERSION}
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	ftp://www.python.org/pub/python/src/ \
 		ftp://ftp.cwi.nl/pub/python/src/

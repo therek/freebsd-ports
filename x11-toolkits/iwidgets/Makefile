@@ -2,11 +2,11 @@
 # Date created:		Aug 17 1996
 # Whom:			chuckr
 #
-# $FreeBSD: ports/x11-toolkits/iwidgets/Makefile,v 1.3 1999/11/28 18:31:19 steve Exp $
+# $FreeBSD: ports/x11-toolkits/iwidgets/Makefile,v 1.4 2000/04/10 01:10:33 cpiazza Exp $
 #
 
 PORTNAME=	iwidgets
-PORTVERSION= 	3.0.0
+PORTVERSION=	3.0.0
 CATEGORIES=	x11-toolkits tk82
 MASTER_SITES=	ftp://ftp.tcltk.com/pub/itcl/
 DISTNAME=	itcl3.0.1

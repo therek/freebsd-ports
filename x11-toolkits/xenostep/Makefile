@@ -2,11 +2,11 @@
 # Date Created:				14 November 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/xenostep/Makefile,v 1.1 2000/11/14 08:54:28 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/xenostep/Makefile,v 1.2 2000/12/04 11:34:30 sobomax Exp $
 #
 
 PORTNAME=	xenostep
-PORTVERSION= 	200011270836
+PORTVERSION=	200011270836
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_THEMES}
 MASTER_SITE_SUBDIR=	gtk

@@ -2,11 +2,11 @@
 # Date created:		December 10, 1996
 # Whom:			1wardd@airmail.net
 #
-# $FreeBSD: ports/x11-toolkits/lesstif/Makefile,v 1.46 2000/09/01 09:18:59 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/lesstif/Makefile,v 1.47 2000/12/14 21:54:27 dannyboy Exp $
 #
 
 PORTNAME=	lesstif
-PORTVERSION= 	0.91.8
+PORTVERSION=	0.91.8
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.lesstif.org/pub/hungry/lesstif/srcdist/  \
 		ftp://ftp.hungry.com/pub/hungry/lesstif/srcdist/ \

@@ -2,11 +2,11 @@
 # Date created:				3 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-toolkits/xg/Makefile,v 1.5 2000/11/07 23:28:19 asami Exp $
+# $FreeBSD: ports/x11-toolkits/xg/Makefile,v 1.6 2000/11/13 15:00:50 kevlo Exp $
 #
 
 PORTNAME=	xg
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://messners.com/code/ \
 		http://www.messners.com/code/

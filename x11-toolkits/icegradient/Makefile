@@ -2,11 +2,11 @@
 # Date Created:				21 August 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/icegradient/Makefile,v 1.2 2000/10/05 06:42:50 reg Exp $
+# $FreeBSD: ports/x11-toolkits/icegradient/Makefile,v 1.3 2000/12/30 12:06:43 sobomax Exp $
 #
 
 PORTNAME=	icegradient
-PORTVERSION= 	200012290259
+PORTVERSION=	200012290259
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.themes.org/pub/themes/gtk/ \
 		${MASTER_SITE_LOCAL}

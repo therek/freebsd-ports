@@ -2,11 +2,11 @@
 # Date created:        1 January 2000
 # Whom:                Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.9 2000/08/21 10:07:26 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.10 2000/10/05 06:42:49 reg Exp $
 #
 
 PORTNAME=	guile-gtk
-PORTVERSION= 	0.19
+PORTVERSION=	0.19
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://www.ping.de/sites/zagadka/guile-gtk/download/
 MASTER_SITE_SUBDIR=	unstable/sources/gnome-guile

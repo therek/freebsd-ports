@@ -2,11 +2,11 @@
 # Date created:				25 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/libgtkeditor/Makefile,v 1.1 2000/09/25 11:27:11 sobomax Exp $
 #
 
 PORTNAME=	libgtkeditor
-PORTVERSION= 	0.1.8
+PORTVERSION=	0.1.8
 CATEGORIES=	x11-toolkits editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME:S/lib//}

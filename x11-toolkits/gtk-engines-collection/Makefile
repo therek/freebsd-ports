@@ -2,11 +2,11 @@
 # Date created:				13 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtk-engines-collection/Makefile,v 1.8 2000/11/01 15:51:11 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtk-engines-collection/Makefile,v 1.9 2000/11/14 08:59:39 sobomax Exp $
 #
 
 PORTNAME=	gtk-engines-collection
-PORTVERSION= 	1.6
+PORTVERSION=	1.6
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	# empty
 DISTFILES=	# empty

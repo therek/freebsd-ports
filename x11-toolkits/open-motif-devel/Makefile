@@ -3,11 +3,11 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/open-motif-devel/Makefile,v 1.8 2000/06/07 07:08:56 asami Exp $
+# $FreeBSD: ports/x11-toolkits/open-motif-devel/Makefile,v 1.9 2000/07/18 09:34:13 obrien Exp $
 #
 
 PORTNAME=	open-motif-devel
-PORTVERSION= 	2.1.30
+PORTVERSION=	2.1.30
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://openmotif.opengroup.org/pub/openmotif/R2.1.30/binaries/metrolink/  \
 		ftp://ftp.opengroup.org/pub/openmotif/R2.1.30/binaries/metrolink/  \

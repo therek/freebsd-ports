@@ -2,11 +2,11 @@
 # Date created:		06 November 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.31 2000/10/08 03:07:46 asami Exp $
+# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.32 2000/10/08 10:07:18 asami Exp $
 #
 
 PORTNAME=	tkstep
-PORTVERSION= 	8.0.4
+PORTVERSION=	8.0.4
 CATEGORIES=	x11-toolkits tk80
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_0/
 DISTNAME=	tk${PORTVERSION}

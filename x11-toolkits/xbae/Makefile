@@ -4,11 +4,11 @@
 # With some
 # modifications from:	Andreas Klemm <andreas@FreeBSD.ORG>
 #
-# $FreeBSD: ports/x11-toolkits/xbae/Makefile,v 1.17 2000/12/29 16:15:12 lkoeller Exp $
+# $FreeBSD: ports/x11-toolkits/xbae/Makefile,v 1.18 2001/01/09 20:37:04 lkoeller Exp $
 #
 
 PORTNAME=	xbae
-PORTVERSION= 	4.8.4
+PORTVERSION=	4.8.4
 CATEGORIES=	x11-toolkits math
 MASTER_SITES=	ftp://ftp.lesstif.org/pub/hungry/lesstif/srcdist/ \
 		ftp://linux.mathematik.tu-darmstadt.de/pub/linux/mirrors/misc/lesstif/srcdist/
