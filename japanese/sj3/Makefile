@@ -2,7 +2,7 @@
 # Date created:		18 Aug 1998
 # Whom:			Hidekazu Kuroki <hidekazu@cs.titech.ac.jp>
 #
-# $FreeBSD: ports/japanese/sj3/Makefile,v 1.12 2000/04/12 14:37:37 knu Exp $
+# $FreeBSD: ports/japanese/sj3/Makefile,v 1.13 2000/07/05 12:36:36 tg Exp $
 #
 
 PORTNAME=	sj3
@@ -30,7 +30,7 @@ do-configure:
 post-install:
 	if [ ! -f ${STARTUP_SCRIPT} ]; then 				\
 		${ECHO} "Installing ${STARTUP_SCRIPT} startup file."; 	\
-		${INSTALL_SCRIPT} ${FILESDIR}/sj3.sh ${STARTUP_SCRIPT};	\
+		${INSTALL_SCRIPT} ${FILESDIR}/sj3.sh.in ${STARTUP_SCRIPT};	\
 	fi
 	${SETENV} PKG_PREFIX=${PREFIX} \
 		${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
