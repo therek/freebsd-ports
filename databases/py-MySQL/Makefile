@@ -2,7 +2,7 @@
 # Date created:				05 September 1999
 # Whom:                 		Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/databases/py-MySQL/Makefile,v 1.7 2001/01/21 15:40:36 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	py-MySQL
@@ -19,13 +19,18 @@ USE_PYTHON=	yes
 
 .include <bsd.port.pre.mk>
 
-.if ${PYTHON_VERSION} != "python2.1"
+.if ${PYTHON_VERSION} != "python2.1" && ${PYTHON_VERSION} != "python2.2"
 ALL_TARGET=	MySQLmodule.so
+.endif
+.if ${PYTHON_VERSION} == "python2.2"
+MAKEFILE_PREIN=	${FILESDIR}/Makefile.pre.in
+.else
+MAKEFILE_PREIN=	${LOCALBASE}/lib/${PYTHON_VERSION}/config/Makefile.pre.in
 .endif
 
 pre-configure:
 	${CP} ${FILESDIR}/Setup ${WRKSRC}/Setup
-	${LN} -s ${LOCALBASE}/lib/${PYTHON_VERSION}/config/Makefile.pre.in ${WRKSRC}/
+	${LN} -s ${MAKEFILE_PREIN} ${WRKSRC}/
 
 do-configure:
 	cd ${WRKSRC} && ${MAKE} -f Makefile.pre.in boot
