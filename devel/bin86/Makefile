@@ -2,11 +2,11 @@
 # Date created:				2000-10-19
 # Whom:					trevor
 #
-# $FreeBSD: ports/devel/bin86/Makefile,v 1.3 2000/12/25 08:44:50 trevor Exp $
+# $FreeBSD: ports/devel/bin86/Makefile,v 1.4 2001/04/10 09:10:50 trevor Exp $
 #
 
 PORTNAME=	bin86
-PORTVERSION=	0.15.5
+PORTVERSION=	0.16.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.cix.co.uk/~mayday/
 
@@ -17,7 +17,6 @@ DOCDIR=		share/doc/${PORTNAME}
 MAN1=		as86.1 ld86.1
 ONLY_FOR_ARCHS=	i386
 PLIST=		${WRKDIR}/pkg-plist
-WRKSRC=		${WRKDIR}/${PORTNAME}
 
 post-extract:
 	find ${WRKSRC} -type f -print0 | xargs -0 ${CHMOD} 644
