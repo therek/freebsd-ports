@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.600 2001/07/20 09:32:40 knu Exp $
+# $FreeBSD$
 #
 
     SUBDIR += ElectricFence
@@ -150,6 +150,7 @@
     SUBDIR += global
     SUBDIR += gmake
     SUBDIR += gnomecrash
+    SUBDIR += gnomedebug
     SUBDIR += gnomevfs
     SUBDIR += gnustep
     SUBDIR += gnustep-make
