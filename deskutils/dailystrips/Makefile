@@ -2,11 +2,11 @@
 # Date created:				13 July 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/deskutils/dailystrips/Makefile,v 1.4 2001/08/22 23:05:20 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dailystrips
-PORTVERSION=	1.0.18
+PORTVERSION=	1.0.20
 CATEGORIES=	deskutils www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
