@@ -2,11 +2,11 @@
 # Date created:				16 March 2001
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/gliv/Makefile,v 1.4 2001/06/17 18:09:38 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gliv
-PORTVERSION=	1.2
+PORTVERSION=	1.3.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://gliv.tuxfamily.org/
 
