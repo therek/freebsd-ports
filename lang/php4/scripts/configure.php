@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.13 2004/01/24 13:15:54 ale Exp $
+# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.14 2004/05/07 23:30:29 ale Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -61,7 +61,6 @@ ORACLE		"Oracle support" ${WITH_ORACLE:-OFF} \
 OVERLOAD	"user-space object overloading support" ${WITH_OVERLOAD:-OFF} \
 PCNTL		"pcntl support (CLI only)" ${WITH_PCNTL:-OFF} \
 PCRE		"Perl Compatible Regular Expression support" ${WITH_PCRE:-OFF} \
-PDFLIB		"PDFlib support" ${WITH_PDFLIB:-OFF} \
 POSIX		"POSIX-like functions" ${WITH_POSIX:-OFF} \
 POSTGRESQL	"PostgreSQL database support" ${WITH_POSTGRESQL:-OFF} \
 PSPELL		"pspell support" ${WITH_PSPELL:-OFF} \
