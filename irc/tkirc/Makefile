@@ -2,11 +2,11 @@
 # Date created:         Jan 15 1998
 # Whom:                 brianfeldman@hotmail.com
 #
-# $FreeBSD: ports/irc/tkirc/Makefile,v 1.12 2000/04/12 06:28:31 obrien Exp $
+# $FreeBSD: ports/irc/tkirc/Makefile,v 1.13 2000/08/29 22:27:26 green Exp $
 #
 
 PORTNAME=	tkirc
-PORTVERSION=	2.42
+PORTVERSION=	2.43
 CATEGORIES=	irc tk83
 MASTER_SITES=	ftp://ftp.netsplit.de/pub/tcltk/
 DISTNAME=	${PORTNAME}${PORTVERSION}
