@@ -3,7 +3,7 @@
 # Date created:		21 Aug 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/znibbles/Makefile,v 1.1.1.1 1999/11/01 04:10:49 steve Exp $
 #
 
 DISTNAME=	znibbles-0.0.7
@@ -20,12 +20,13 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 HAS_CONFIGURE=	yes
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"
+CONFIGURE_ARGS=	--without-motif \
+		--disable-motif
 
 MAN6=	nibbles.6 znibbles.6 gznibbles.6 znibblesX.6
 
 post-install:
 	@strip ${PREFIX}/bin/nibbles
-	@strip ${PREFIX}/bin/znibbles
 	@strip ${PREFIX}/bin/znibblesX
 	@strip ${PREFIX}/bin/gznibbles
 
