@@ -2,7 +2,7 @@
 # Date created:		2000/08/12
 # Whom:			makeport.pl
 #
-# $FreeBSD: ports/games/bzflag/Makefile,v 1.1 2000/08/12 00:28:04 nbm Exp $
+# $FreeBSD: ports/games/bzflag/Makefile,v 1.2 2000/08/12 01:10:45 nbm Exp $
 #
 
 PORTNAME=	bzflag
@@ -27,6 +27,9 @@ MAN6=	bzflag.6 bzfrelay.6 bzfls.6 bzfs.6
 
 do-configure:
 	@${CP} ${FILESDIR}/config-sys ${WRKSRC}/
+
+post-build:
+	@(cd ${WRKSRC}/man && ${MAKE} targets)
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/bin/* ${PREFIX}/bin/
