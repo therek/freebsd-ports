@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.119 2001/01/23 07:54:15 knu Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.120 2001/01/23 07:55:09 knu Exp $
 #
 
     SUBDIR += FWF
@@ -75,6 +75,7 @@
     SUBDIR += py-wxPython
     SUBDIR += qt145
     SUBDIR += qt22
+    SUBDIR += qt22-static
     SUBDIR += rep-gtk
     SUBDIR += ruby-fltk
     SUBDIR += ruby-gtk
