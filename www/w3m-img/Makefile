@@ -2,10 +2,11 @@
 # Date Created:                22 July 2001
 # Whom:                        MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m-img/Makefile,v 1.1 2001/07/21 18:21:56 sf Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-img
+COMMENT=	A pager/text-based WWW browser with inline image support
 
 MASTERDIR=	${.CURDIR}/../../www/w3m
 PKGDIR=		${.CURDIR}
