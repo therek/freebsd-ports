@@ -1,4 +1,4 @@
-# $FreeBSD: ports/biology/Makefile,v 1.37 2001/08/14 09:36:30 wjv Exp $
+# $FreeBSD: ports/biology/Makefile,v 1.38 2001/08/17 08:39:25 wjv Exp $
 #
 
     SUBDIR += babel
@@ -37,6 +37,7 @@
     SUBDIR += rasmol
     SUBDIR += recombine
     SUBDIR += seaview
+    SUBDIR += seqio
     SUBDIR += sim4
     SUBDIR += tinker
     SUBDIR += treeviewx
