@@ -2,7 +2,7 @@
 # Date created:		Tue Sep 28 02:25:17 JST 1999
 # Whom:			Yuki Sawada <samy@goldmoon.org>
 #
-# $FreeBSD: ports/graphics/enfle/Makefile,v 1.14 2000/04/30 00:20:45 steve Exp $
+# $FreeBSD: ports/graphics/enfle/Makefile,v 1.15 2000/06/20 15:28:56 sobomax Exp $
 #
 
 PORTNAME=	enfle
@@ -20,12 +20,10 @@ LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
 		arc.1:${PORTSDIR}/archivers/libarc
 
 USE_BZIP2=	yes
-USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--enable-all-plugins \
 		--enable-plugins-dir \
-		--enable-archiver="-libarc" \
 		--disable-static
 
 MAN1=		enfle.1
