@@ -2,7 +2,7 @@
 # Date created:				2 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql-navigator/Makefile,v 1.8 2001/03/30 11:27:50 demon Exp $
+# $FreeBSD: ports/databases/mysql-navigator/Makefile,v 1.9 2001/04/02 11:01:09 demon Exp $
 #
 
 PORTNAME=	mysql-navigator
@@ -14,10 +14,9 @@ DISTNAME=	mysql_navigator_${PORTVERSION}
 
 MAINTAINER=	demon@FreeBSD.org
 
-LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client \
-		kdecore.4:${PORTSDIR}/x11/kdelibs2
+LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
-USE_QT2=	yes
+USE_KDELIBS_VER=2
 INSTALLS_SHLIB=	yes
 
 do-install:
