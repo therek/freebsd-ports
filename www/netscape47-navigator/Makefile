@@ -3,7 +3,7 @@
 # Date created:		20 Sept 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/netscape47-navigator/Makefile,v 1.41 1999/10/04 22:21:32 sada Exp $
 #
 
 MASTER_SITES=	ftp://ftp.netscape.com./pub/communicator/english/4.7/unix/unsupported/freebsd/navigator_standalone/

@@ -3,7 +3,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.48 1999/10/04 22:21:24 sada Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.49 1999/10/06 07:58:59 obrien Exp $
 #
 
 DISTNAME?=	netscape-${BROWSER}-${BROWSER_VER}

@@ -3,7 +3,7 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.49 1999/10/04 22:21:29 sada Exp $
 #
 
 MASTER_SITES?=	ftp://ftp.netscape.com./pub/communicator/english/4.7/unix/unsupported/freebsd/complete_install/
