@@ -2,11 +2,12 @@
 # Date created:		27 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/security/tcp_wrapper/Makefile,v 1.27 2000/06/16 08:19:23 sobomax Exp $
+# $FreeBSD: ports/security/tcp_wrapper/Makefile,v 1.28 2000/06/16 21:51:54 asami Exp $
 #
 
 PORTNAME=	tcp_wrappers
 PORTVERSION=	7.6
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.porcupine.org/pub/security/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
