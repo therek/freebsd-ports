@@ -2,7 +2,7 @@
 # Date created:		11 May 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/net/coda5_doc/Makefile,v 1.5 1999/08/30 14:22:22 peter Exp $
+# $FreeBSD: ports/net/coda5_doc/Makefile,v 1.6 2000/04/09 18:10:34 cpiazza Exp $
 #
 
 PORTNAME=	coda-doc
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/doc/
 DISTNAME=	coda-doc-5.2.0-1
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ijliao@csie.nctu.edu.tw
+MAINTAINER=	ijliao@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/usr
 

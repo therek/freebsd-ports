@@ -2,7 +2,7 @@
 # Date created:		24 April 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/bnetd/Makefile,v 1.13 2000/04/14 00:45:35 mharo Exp $
+# $FreeBSD: ports/games/bnetd/Makefile,v 1.14 2000/07/05 12:36:29 tg Exp $
 #
 
 PORTNAME=	bnetd
@@ -10,7 +10,7 @@ PORTVERSION=	0.4.21
 CATEGORIES=	games net
 MASTER_SITES=	http://www.bnetd.org/files/
 
-MAINTAINER=	ijliao@csie.nctu.edu.tw
+MAINTAINER=	ijliao@FreeBSD.org
 
 MAN1=		bnchat.1 bnetd.1 bnftp.1 bnpass.1
 MAN5=		bnetd.conf.5 bntext.5

@@ -2,7 +2,7 @@
 # Date created:                Dec 30, 2000
 # Whom:                        Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/security/integrit/Makefile,v 1.1 2000/12/31 11:15:43 will Exp $
+# $FreeBSD: ports/security/integrit/Makefile,v 1.2 2001/01/11 15:54:05 kevlo Exp $
 #
 
 PORTNAME=	integrit
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/b/-beta/}
 
-MAINTAINER=		ijliao@csie.nctu.edu.tw
+MAINTAINER=		ijliao@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/integrit-1.04
 

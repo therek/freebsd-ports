@@ -3,7 +3,7 @@
 # Date created:			Dec 30, 2000
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.2 2001/01/12 18:47:03 keith Exp $
+# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.3 2001/01/14 19:24:20 clive Exp $
 #
 
 PORTNAME=	logtool
@@ -11,7 +11,7 @@ PORTVERSION=	1.0.3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://users.digitex.net/~max/
 
-MAINTAINER=	ijliao@csie.nctu.edu.tw
+MAINTAINER=	ijliao@FreeBSD.org
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 

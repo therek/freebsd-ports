@@ -2,7 +2,7 @@
 # Date created:				Dec 17, 2000
 # Whom:					Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Term-Screen/Makefile,v 1.1 2001/01/15 06:22:07 will Exp $
 #
 
 PORTNAME=	Term-Screen
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	Term
 PKGNAMEPREFIX=	p5-
 DISTNAME=	Screen-${PORTVERSION}
 
-MAINTAINER=	ijliao@csie.nctu.edu.tw
+MAINTAINER=	ijliao@FreeBSD.org
 
 USE_PERL5=	YES
 

@@ -2,7 +2,7 @@
 # Date created:		June 29, 1999
 # Whom:	      		Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/x11-toolkits/pike-gtk/Makefile,v 1.3 2000/04/21 07:01:54 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/pike-gtk/Makefile,v 1.4 2000/10/05 06:42:50 reg Exp $
 #
 
 PORTNAME=	pike-gtk
@@ -11,7 +11,7 @@ CATEGORIES=	x11-toolkits lang
 MASTER_SITES=	http://pike-community.org/sites/pigtk/download/
 DISTNAME=	pigtk_${PORTVERSION}
 
-MAINTAINER=	ijliao@csie.nctu.edu.tw
+MAINTAINER=	ijliao@FreeBSD.org
 
 BUILD_DEPENDS=	pike:${PORTSDIR}/lang/pike
 
