@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/graphics/netpbm/pkg-plist,v 1.38 2002/07/31 00:09:27 naddy Exp $
 bin/411toppm
 bin/anytopnm
 bin/asciitopgm
@@ -152,6 +152,7 @@ bin/pnmscalefixed
 bin/pnmshear
 bin/pnmsmooth
 bin/pnmsplit
+bin/pnmstitch
 bin/pnmtile
 bin/pnmtoddif
 bin/pnmtofiasco
