@@ -2,7 +2,7 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.1 2001/08/24 15:57:23 ache Exp $
+# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.2 2001/08/24 19:40:59 ache Exp $
 #
 
 PORTNAME=	drweb_sendmail
@@ -46,7 +46,7 @@ IGNORE=	"depends on the system sources. Please place them under /usr/src first"
 .endif
 
 post-extract:
-	cd ${WRKDIR}/${DISTNAME} && ${TAR} -xvzf ${WRKDIR}/${DISTNAME}/${DISTNAME}.tar.gz clients/drwebdc clients/sendmail
+	cd ${WRKDIR}/${DISTNAME} && ${TAR} -xzf ${WRKDIR}/${DISTNAME}/${DISTNAME}.tar.gz clients/drwebdc clients/sendmail
 
 pre-build:
 	@${CAT} pkg-message
