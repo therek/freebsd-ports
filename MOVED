@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.473 2004/07/09 17:08:17 bland Exp $
+# $FreeBSD: ports/MOVED,v 1.474 2004/07/19 04:49:20 dinoex Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1192,3 +1192,4 @@ misc/cfe||2004-07-06|no longer exists
 devel/p5-WWW-Mechanize-FormFiller|www/p5-WWW-Mechanize-FormFiller|2004-07-09|moved to correct category (www)
 editors/moleskine||2004-07-09|project officially dead for last 1.5 years
 mail/sendmail-old|mail/sendmail811|2004-07-17|renamed
+mail/msmtp-devel|mail/msmtp|2004-07-19|mail/msmtp is now stable again
