@@ -2,17 +2,19 @@
 # Date created:			26 August 2001
 # Whom:				Gea-Suan Lin (gslin@ccca.nctu.edu.tw)
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ntalk/Makefile,v 1.1 2001/08/29 10:56:13 ijliao Exp $
 #
 
 PORTNAME=	ntalk
-PORTVERSION=	0.3.1
+PORTVERSION=	0.4
 CATEGORIES=	net
 MASTER_SITES=	http://kab.w.interia.pl/
 
 MAINTAINER=	gslin@ccca.nctu.edu.tw
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
+
+ALL_TARGET=	${PORTNAME}
 
 post-patch:
 	@${PERL} -pi -e "s,-lpthread,${PTHREAD_LIBS},g" ${WRKSRC}/Makefile
@@ -21,7 +23,7 @@ do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${DOCSDIR}
-.for FILE in COPYING ChangeLog INSTALL README
+.for FILE in AUTHORS COPYING ChangeLog INSTALL README
 	@${INSTALL_DATA} ${WRKSRC}/${FILE} ${DOCSDIR}
 .endfor
 .endif
