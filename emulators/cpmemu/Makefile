@@ -3,7 +3,7 @@
 # Date created:		28 June 1995
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD: ports/emulators/cpmemu/Makefile,v 1.13 1999/08/28 16:50:28 cpiazza Exp $
+# $FreeBSD: ports/emulators/cpmemu/Makefile,v 1.14 1999/11/14 03:05:04 steve Exp $
 #
 
 DISTNAME=	cpm-0.2.1
