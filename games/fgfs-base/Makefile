@@ -2,7 +2,7 @@
 # Date created:		26 June 1999
 # Whom:			Brian Buchanan <brian@CSUA.Berkeley.EDU>
 #
-# $FreeBSD: ports/games/flightgear/Makefile,v 1.6 1999/08/25 06:03:22 obrien Exp $
+# $FreeBSD: ports/games/flightgear/Makefile,v 1.7 2000/04/14 06:42:52 mharo Exp $
 #
 
 PORTNAME=		FlightGear
@@ -37,7 +37,7 @@ pre-configure:
 	  cd ${WRKDIR}/gpc231; ${GMAKE}; \
 	  ${GMAKE} PREFIX=${WRKSRC}/gfcgpc install)
 .else
-PLIST=		${MASTERDIR}/pkg/PLIST.notools
+PLIST=		${MASTERDIR}/pkg-plist.notools
 ADDPATCHES=	${MASTERDIR}/patches.tools/disable-tools
 USE_AUTOCONF=	yes
 .endif
