@@ -2,19 +2,18 @@
 # Date created:		13 January 2000
 # Whom:			Matthew Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/www/aolserver/Makefile,v 1.10 2001/06/01 06:05:14 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aolserver
 PORTVERSION=	3.4
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.aolserver.com/server/ \
-		http://aolserver.com/archive/server/
-DISTNAME=	${PORTNAME}-${PORTVERSION}
+MASTER_SITES=	ftp://ftp.aolserver.com/aolserver/
+DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	mab@red-bean.com
 
-WRKSRC=	${WRKDIR}/${DISTNAME}
+WRKSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 USE_GMAKE=	yes
 
