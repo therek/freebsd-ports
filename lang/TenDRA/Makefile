@@ -2,7 +2,7 @@
 # Date created:		7 Apr 1998
 # Whom:			Robert Nordier <rnordier@iafrica.com>
 #
-# $FreeBSD: ports/lang/TenDRA/Makefile,v 1.11 1999/08/31 06:46:42 mharo Exp $
+# $FreeBSD: ports/lang/TenDRA/Makefile,v 1.12 2000/04/12 06:17:46 obrien Exp $
 #
 
 PORTNAME=	TenDRA
@@ -11,6 +11,8 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://alph.dera.gov.uk/pub/TenDRA/
 
 MAINTAINER=	rnordier@FreeBSD.org
+
+BROKEN=		"Does not compile."
 
 ONLY_FOR_ARCHS=	i386
 OSRELEASE!=	uname -r
