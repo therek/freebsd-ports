@@ -2,7 +2,7 @@
 # Date created:		98/11/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lookup-mule/Makefile,v 1.11 2000/04/11 14:14:52 knu Exp $
+# $FreeBSD: ports/japanese/lookup-mule/Makefile,v 1.12 2000/07/10 17:31:23 taoka Exp $
 #
 
 PORTNAME=	lookup
@@ -36,7 +36,7 @@ CONFIGURE_ARGS= --with-emacs=${EMACS_CMD} \
 		--infodir=${PORTINFODIR}
 
 post-install:
-.if (${EMACS_PORT_NAME} == "xemacs")
+.if (${EMACS_PORT_NAME} == "xemacs21-mule")
 	${RM} -f ${WRKDIR}/${MANIFEST}
 	emacsdir=`${ECHO} ${EMACSDIR} | ${SED} -e "s;^${PREFIX}/;;"`; \
 	${CAT} ${PLIST} | ${GREP} -e "^$${emacsdir}" | \
