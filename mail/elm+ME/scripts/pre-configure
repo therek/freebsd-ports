@@ -2,7 +2,7 @@
 #
 #       pre-configure script for Elm port to FreeBSD
 #
-# $FreeBSD: ports/mail/elm+ME/scripts/pre-configure,v 1.31 2002/04/08 11:34:22 sobomax Exp $
+# $FreeBSD: ports/mail/elm+ME/scripts/pre-configure,v 1.32 2002/05/10 00:41:58 sada Exp $
 
 [ -r /usr/include/inttypes.h ] && has_inttypes=define || has_inttypes=undef
 
@@ -307,6 +307,9 @@ suffix=''
 packer=''
 optimize='${CFLAGS}'
 ccflags='${DEBUG}'
+picflag='-fPIC'
+nopic=''
+shared_extra=''
 cppflags=''
 ldflags='-s'
 cc='cc'
