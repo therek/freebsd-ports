@@ -2,11 +2,11 @@
 # Date created:		17 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-odbc/Makefile,v 1.3 2001/06/08 11:23:58 knu Exp $
+# $FreeBSD: ports/databases/ruby-odbc/Makefile,v 1.4 2001/06/10 09:19:15 knu Exp $
 #
 
 PORTNAME=	odbc
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	databases ruby
 MASTER_SITES=	http://www.ch-werner.de/rubyodbc/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -20,15 +20,13 @@ LIB_DEPENDS=	odbc.1:${PORTSDIR}/databases/unixODBC
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
-CONFIGURE_ENV=	PTHREAD_LIBS="${PTHREAD_LIBS}"
-CONFIGURE_ARGS=	--with-cflags="${PTHREAD_CFLAGS}"
+RUBY_WITH_PTHREAD=	yes
+
+CONFIGURE_ARGS=	--with-pthread-cflags="${PTHREAD_CFLAGS}" \
+		--with-pthread-libs="${PTHREAD_LIBS}"
 INSTALL_TARGET=	site-install
 
 DOCS_EN=	ChangeLog README doc/odbc.html
-
-post-patch:
-	${RUBY} -i -pe '/require \x27mkmf\x27/ and $$_ += "$$libs.sub!(/-lc\\b/, ENV[\x27PTHREAD_LIBS\x27])\n"' \
-		${WRKSRC}/${RUBY_EXTCONF}
 
 post-install:
 .if !defined(NOPORTDOCS)
