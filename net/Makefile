@@ -1,10 +1,11 @@
-# $FreeBSD: ports/net/Makefile,v 1.449 2001/01/09 07:37:24 kris Exp $
+# $FreeBSD: ports/net/Makefile,v 1.450 2001/01/09 15:19:16 jeh Exp $
 #
 
     SUBDIR += 44bsd-rdist
     SUBDIR += SSLtelnet
     SUBDIR += adasockets
     SUBDIR += adns
+    SUBDIR += aim
     SUBDIR += airport
     SUBDIR += amcl
     SUBDIR += archie
