@@ -2,7 +2,7 @@
 # Date created:				August 25, 1999
 # Whom:					Oleg Kiselyov <oleg@pobox.com>
 #
-# $FreeBSD: ports/math/linalg/Makefile,v 1.1 2000/04/07 01:47:49 will Exp $
+# $FreeBSD: ports/math/linalg/Makefile,v 1.2 2000/04/14 07:20:14 asami Exp $
 #
 
 PORTNAME=	linalg
@@ -16,6 +16,8 @@ WRKSRC=		${WRKDIR}/LinAlg
 ALL_TARGET=	lib
 INSTALL_TARGET=	lib
 USE_GMAKE=	yes
+
+BROKEN=		"Tries to run eg++"
 
 post-install:
 	$(INSTALL_DATA) ${WRKSRC}/libla.a ${PREFIX}/lib
