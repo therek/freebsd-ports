@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.35 2003/04/20 23:54:41 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.36 2003/06/01 00:16:07 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -349,7 +349,7 @@ gnomecontrolcenter2_LIB_DEPENDS=gnome-window-settings.1:${PORTSDIR}/sysutils/gno
 gnomecontrolcenter2_DETECT=${X11BASE}/libdata/pkgconfig/gnome-window-settings-2.0.pc
 gnomecontrolcenter2_USE_GNOME_IMPL=gnomedesktop metacity
 
-libgda2_LIB_DEPENDS=	gda-2.1:${PORTSDIR}/databases/libgda2
+libgda2_LIB_DEPENDS=	gda-2.2:${PORTSDIR}/databases/libgda2
 libgda2_DETECT=			${X11BASE}/libdata/pkgconfig/libgda.pc
 libgda2_USE_GNOME_IMPL=	glib20 libxslt
 
