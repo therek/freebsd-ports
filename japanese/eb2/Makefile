@@ -3,19 +3,14 @@
 # Date created:			20 Jan 1999
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/eb/Makefile,v 1.6 1999/09/06 19:19:14 taoka Exp $
+# $FreeBSD: ports/japanese/eb/Makefile,v 1.7 1999/09/20 07:22:39 taoka Exp $
 #
 
 DISTNAME=	eb-2.3.3
 PKGNAME=	ja-eb-2.3.3
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/eb/appendix/ \
-		ftp://ftp.sra.co.jp/pub/misc/eb/appendix/old/ \
-		ftp://ftp.sra.co.jp/pub/misc/eb/ \
-		ftp://ftp.sra.co.jp/pub/misc/eb/old/ \
-		ftp://ftp.mei.co.jp/free/others/Dictionary/eb/appendix/ \
-		ftp://ftp.mei.co.jp/free/others/Dictionary/eb/
-DISTFILES=	${EBFILES} ${APPENDIXFILES}
+MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/eb/
+DISTFILES=	${EBFILES} ${APPENDIXFILES:S,^,appendix/,}
 
 MAINTAINER=	takamune@avrl.mei.co.jp
 
