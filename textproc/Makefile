@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.79 1999/12/27 02:12:20 steve Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.80 1999/12/29 07:26:56 steve Exp $
 #
 
     SUBDIR += agrep
@@ -6,6 +6,7 @@
     SUBDIR += br-ispell
     SUBDIR += c2html
     SUBDIR += catdoc
+    SUBDIR += chpp
     SUBDIR += cocoon
     SUBDIR += code2html
     SUBDIR += cole
