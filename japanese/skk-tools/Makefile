@@ -2,21 +2,28 @@
 # Date created:		31 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/skk-tools/Makefile,v 1.7 2001/05/31 22:22:49 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	skk-tools
-PORTVERSION=	9.6
+PORTVERSION=	1.0
+PORTEPOCH=	1
 CATEGORIES=	japanese
-MASTER_SITES=	${MASTER_SITE_PORTS_JP}
-DISTNAME=	skk${PORTVERSION}
+MASTER_SITES=	http://openlab.ring.gr.jp/skk/tools/ \
+		${MASTER_SITE_RINGSERVER}
+MASTER_SITE_SUBDIR=	text/elisp/skk/tools
+DISTNAME=	skktools-${PORTVERSION}
 
 MAINTAINER=	matusita@jp.FreeBSD.org
 
-BUILD_DEPENDS=	${NONEXISTENT}:${SKK_MASTERDIR}:configure
+USE_BZIP2=	yes
 
-SKK_MASTERDIR=	${.CURDIR}/../../japanese/skk-jisyo
-WRKSRC=		${WRKDIRPREFIX}${SKK_MASTERDIR}/work/skk-${PORTVERSION}
-MAKE_ARGS=	SUBDIRS='jisyo-tools'
+GNU_CONFIGURE=	yes
+
+DOCSDIR=	${PREFIX}/share/doc/skk
+
+post-install:
+	${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/READMEs/README.C ${DOCSDIR}/README.skktools
 
 .include <bsd.port.mk>
