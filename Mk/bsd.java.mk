@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.22 2002/08/12 10:57:35 znerd Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.23 2002/08/12 11:02:58 znerd Exp $
 #
 
 .if !defined(Java_Include)
@@ -79,10 +79,10 @@ _DEPEND_JIKES=	${_JIKES_PATH}:${PORTSDIR}/java/jikes
 .		undef HAVE_JAVA_FREEBSD_1_2
 .		undef HAVE_JAVA_FREEBSD_1_3
 .		undef HAVE_JAVA_BLACKDOWN_LINUX_1_2
-.		undef HAVE_JAVA_SUN_LINUX_1_2
 .		undef HAVE_JAVA_BLACKDOWN_LINUX_1_3
-.		undef HAVE_JAVA_SUN_LINUX_1_3
 .		undef HAVE_JAVA_IBM_LINUX_1_3
+.		undef HAVE_JAVA_SUN_LINUX_1_2
+.		undef HAVE_JAVA_SUN_LINUX_1_3
 .		undef HAVE_JAVA_SUN_LINUX_1_4
 
 .		if exists(${_JAVA_HOME_FREEBSD_1_1}/${_JDK_FILE})
@@ -97,17 +97,17 @@ HAVE_JAVA_FREEBSD_1_3=	YES
 .		if exists(${_JAVA_HOME_BLACKDOWN_LINUX_1_2}/${_JDK_FILE})
 HAVE_JAVA_BLACKDOWN_LINUX_1_2=	YES
 .		endif
-.		if exists(${_JAVA_HOME_SUN_LINUX_1_2}/${_JDK_FILE})
-HAVE_JAVA_SUN_LINUX_1_2=	YES
-.		endif
 .		if exists(${_JAVA_HOME_BLACKDOWN_LINUX_1_3}/${_JDK_FILE})
 HAVE_JAVA_BLACKDOWN_LINUX_1_3=	YES
 .		endif
-.		if exists(${_JAVA_HOME_SUN_LINUX_1_3}/${_JDK_FILE})
-HAVE_JAVA_SUN_LINUX_1_3=	YES
-.		endif
 .		if exists(${_JAVA_HOME_IBM_LINUX_1_3}/${_JDK_FILE})
 HAVE_JAVA_IBM_LINUX_1_3=	YES
+.		endif
+.		if exists(${_JAVA_HOME_SUN_LINUX_1_2}/${_JDK_FILE})
+HAVE_JAVA_SUN_LINUX_1_2=	YES
+.		endif
+.		if exists(${_JAVA_HOME_SUN_LINUX_1_3}/${_JDK_FILE})
+HAVE_JAVA_SUN_LINUX_1_3=	YES
 .		endif
 .		if exists(${_JAVA_HOME_SUN_LINUX_1_4}/${_JDK_FILE})
 HAVE_JAVA_SUN_LINUX_1_4=	YES
@@ -132,12 +132,12 @@ JAVA_PORT=	${_JAVA_PORT_FREEBSD_1_2}
 JAVA_PORT=	${_JAVA_PORT_FREEBSD_1_3}
 .			elif ${_JAVA_HOME} == ${_JAVA_HOME_BLACKDOWN_LINUX_1_2}
 JAVA_PORT=	${_JAVA_PORT_BLACKDOWN_LINUX_1_2}
-.			elif ${_JAVA_HOME} == ${_JAVA_HOME_SUN_LINUX_1_2}
-JAVA_PORT=	${_JAVA_PORT_SUN_LINUX_1_2}
 .			elif ${_JAVA_HOME} == ${_JAVA_HOME_BLACKDOWN_LINUX_1_3}
 JAVA_PORT=	${_JAVA_PORT_BLACKDOWN_LINUX_1_3}
 .			elif ${_JAVA_HOME} == ${_JAVA_HOME_IBM_LINUX_1_3}
 JAVA_PORT=	${_JAVA_PORT_IBM_LINUX_1_3}
+.			elif ${_JAVA_HOME} == ${_JAVA_HOME_SUN_LINUX_1_2}
+JAVA_PORT=	${_JAVA_PORT_SUN_LINUX_1_2}
 .			elif ${_JAVA_HOME} == ${_JAVA_HOME_SUN_LINUX_1_3}
 JAVA_PORT=	${_JAVA_PORT_SUN_LINUX_1_3}
 .			elif ${_JAVA_HOME} == ${_JAVA_HOME_SUN_LINUX_1_4}
