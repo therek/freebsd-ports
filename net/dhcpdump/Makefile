@@ -2,11 +2,11 @@
 # Date created:        1 March 2001
 # Whom:                Edwin Groothuis (edwin@mavetju.org)
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dhcpdump/Makefile,v 1.1 2001/03/14 02:17:49 will Exp $
 #
 
 PORTNAME=      dhcpdump
-PORTVERSION=   1.0
+PORTVERSION=   1.1
 CATEGORIES=    net
 MASTER_SITES=  http://www.mavetju.org/download/
 
