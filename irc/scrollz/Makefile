@@ -3,13 +3,16 @@
 # Date created:		10 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/scrollz/Makefile,v 1.2 1999/08/25 06:12:55 obrien Exp $
 #
 
 DISTNAME=	ScrollZ-1.8i5-FreeBSD-3.2
 PKGNAME=	scrollz-1.8i5
 CATEGORIES=	irc
-MASTER_SITES=	ftp://ftp.scrollz.net/ScrollZ/
+MASTER_SITES=	ftp://ftp.scrollz.net/pub/ScrollZ/ \
+		ftp://scrollz.unixpower.com/ScrollZ/ \
+		http://white.hole.org/Bins/ \
+		ftp://ftp.enlighte.nu/pub/ScrollZ/Bins/
 EXTRACT_SUFX=	.bz2
 
 MAINTAINER=	andrews@technologist.com
