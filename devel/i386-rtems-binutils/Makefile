@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-binutils/Makefile,v 1.5 2000/10/02 03:10:01 jeh Exp $
+# $FreeBSD: ports/devel/i386-rtems-binutils/Makefile,v 1.6 2000/10/08 00:13:26 asami Exp $
 #
 
 PORTNAME=	binutils
@@ -36,17 +36,13 @@ CONFIGURE_ARGS?=	--verbose
 CONFIGURE_WRKSRC?=	${WRKDIR}/build-${LCLTARGET}
 CONFIGURE_SCRIPT?=	../${BINNAME}/configure
 
+PATCH_DIST_STRIP?=	-p1
+
 MAN1=		${LCLTARGET}-ar.1 ${LCLTARGET}-nm.1 ${LCLTARGET}-objdump.1 \
 		${LCLTARGET}-ranlib.1 ${LCLTARGET}-size.1 \
 		${LCLTARGET}-strings.1 ${LCLTARGET}-strip.1 \
 		${LCLTARGET}-objcopy.1 ${LCLTARGET}-addr2line.1 \
 		${LCLTARGET}-nlmconv.1 ${LCLTARGET}-as.1 ${LCLTARGET}-ld.1
-
-.if defined(PATCH_DEBUG)
-PATCH_DIST_ARGS=   -d ${WRKDIR} -E ${PATCH_DIST_STRIP}
-.else
-PATCH_DIST_ARGS=   -d ${WRKDIR} --forward --quiet -E ${PATCH_DIST_STRIP}
-.endif
 
 pre-configure:
 	@(cd ${WRKDIR} ; ${MKDIR} build-${LCLTARGET})
