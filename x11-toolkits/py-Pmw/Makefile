@@ -2,12 +2,11 @@
 # Date created:		03 June 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/pmw/Makefile,v 1.10 2000/04/04 09:53:05 tg Exp $
+# $FreeBSD: ports/x11-toolkits/pmw/Makefile,v 1.11 2000/04/10 01:10:46 cpiazza Exp $
 #
 
 PORTNAME=	py-pmw
-PORTVERSION= 	0.8.3
-DISTNAME=	Pmw.0.8.3
+PORTVERSION=	0.8.3
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	ftp://ftp.dscpl.com.au/pub/pmw/
 DISTNAME=	Pmw.${PORTVERSION}
