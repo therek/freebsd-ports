@@ -3,10 +3,10 @@
 # Date created:        4 June 1996
 # Whom:                jkoshy
 #
-# $FreeBSD: ports/devel/ctags/Makefile,v 1.4 1999/08/25 05:47:43 obrien Exp $
+# $FreeBSD: ports/devel/ctags/Makefile,v 1.5 1999/08/31 06:41:37 mharo Exp $
 #
 
-DISTNAME=	ctags-3.2.2
+DISTNAME=	ctags-3.3.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE}\
 		http://fly.hiwaay.net/~darren/archives/ \
@@ -15,9 +15,12 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}\
 MAINTAINER=	jkoshy@FreeBSD.org
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-macro-patterns
+CONFIGURE_ARGS=	--enable-macro-patterns --disable-etags
 
-MAN1=		ctags.1
-MLINKS=		ctags.1 etags.1
+MAN1=		exctags.1
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/ctags ${PREFIX}/bin/exctags
+	${INSTALL_MAN} ${WRKSRC}/ctags.1 ${PREFIX}/man/man1/exctags.1
 
 .include <bsd.port.mk>
