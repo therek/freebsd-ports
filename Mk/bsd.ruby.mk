@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.7 2000/10/20 19:43:58 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.8 2000/10/20 21:10:00 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -161,9 +161,13 @@ PLIST_SUB+=		RUBY_VERSION="${RUBY_VERSION}" \
 .if defined(RUBY_REQUIRE)
 USE_RUBY=		yes
 
+.if exists(${RUBY})
 RUBY_PROVIDED!=		${RUBY} -e '\
 	Ruby = ${RUBY_VERSION_CODE}; \
 	value = begin; ${RUBY_REQUIRE}; end and puts value'
+.else
+RUBY_PROVIDED=		"should be"	# the latest version is going to be installed
+.endif
 
 .if empty(RUBY_PROVIDED)
 .undef RUBY_PROVIDED
