@@ -3,12 +3,12 @@
 # Date created:		12 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/ucspi-tcp/Makefile,v 1.6 1999/08/31 02:00:13 peter Exp $
 #
 
 DISTNAME=	ucspi-tcp-0.84
 CATEGORIES=	sysutils net
-MASTER_SITES=	ftp://koobera.math.uic.edu/pub/software/
+MASTER_SITES=	ftp://koobera.math.uic.edu/www/software/
 
 MAINTAINER=     dom@myrddin.demon.co.uk
 
