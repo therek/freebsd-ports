@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.481 2001/03/11 15:27:54 joe Exp $
+# $FreeBSD: ports/net/Makefile,v 1.482 2001/03/12 22:52:28 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -141,6 +141,7 @@
     SUBDIR += libicq
     SUBDIR += libnet
     SUBDIR += libnids
+    SUBDIR += librsync
     SUBDIR += libsmi
     SUBDIR += libsocket++
     SUBDIR += libunp
