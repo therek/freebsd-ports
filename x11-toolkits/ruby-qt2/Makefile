@@ -1,8 +1,8 @@
 # New ports collection makefile for:	Ruby-qt2
-# Date created:		12 Aug 2000
+# Date created:		9 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.17 2001/01/09 21:51:24 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.18 2001/01/18 16:52:47 knu Exp $
 #
 
 PORTNAME=	qt2
