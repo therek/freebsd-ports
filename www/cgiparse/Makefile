@@ -2,7 +2,7 @@
 # Date created:				30 March 1997
 # Whom:					jmg
 #
-# $FreeBSD: ports/www/cgiparse/Makefile,v 1.11 2000/06/16 18:14:38 jmg Exp $
+# $FreeBSD: ports/www/cgiparse/Makefile,v 1.12 2000/08/11 19:18:30 jmg Exp $
 #
 
 PORTNAME=	cgiparse
@@ -14,5 +14,8 @@ MASTER_SITES=	http://resnet.uoregon.edu/~gurney_j/jmpc/dist/	\
 MAINTAINER=	jmg@FreeBSD.org
 
 LIB_DEPENDS=	mime.1:${PORTSDIR}/devel/mime:install
+
+GNU_CONFIGURE=	yes
+MAN3=		cgiclose.3 cgigetvalue.3 cginewquerystr.3
 
 .include <bsd.port.mk>
