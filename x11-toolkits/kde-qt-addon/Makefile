@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/kde-qt-addon/Makefile,v 1.5 2000/07/29 02:44:47 will Exp $
 #
 
 PORTNAME=	kde-qt-addon
@@ -15,6 +15,7 @@ MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	qt2.4:${PORTSDIR}/x11-toolkits/qt22
 
+BROKEN=		"Not needed with the current KDE2 snapshots"
 WRKSRC=		${WRKDIR}/${PORTNAME}
 MOC?=		${X11BASE}/bin/moc2
 SOMAJOR=	4
