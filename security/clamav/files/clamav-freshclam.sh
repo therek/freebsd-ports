@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav/files/clamav-freshclam.sh,v 1.4 2004/10/14 09:30:47 eik Exp $
+# $FreeBSD: ports/security/clamav/files/clamav-freshclam.sh,v 1.5 2004/12/22 02:10:11 edwin Exp $
 #
 
 # PROVIDE: freshclam
-# REQUIRE: LOGIN
+# REQUIRE: LOGIN clamd
 # BEFORE: mail
 # KEYWORD: FreeBSD shutdown
 
@@ -22,7 +22,7 @@ name=clamav_freshclam
 rcvar=`set_rcvar`
 
 command=%%PREFIX%%/bin/freshclam
-pidfile=/var/run/clamav/freshclam.pid
+pidfile=%%RUNDIR%%/freshclam.pid
 command_args="--daemon"
 required_dirs=%%DBDIR%%
 required_files=%%PREFIX%%/etc/freshclam.conf

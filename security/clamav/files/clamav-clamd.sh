@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav/files/clamav-clamd.sh,v 1.4 2004/10/14 09:30:47 eik Exp $
+# $FreeBSD: ports/security/clamav/files/clamav-clamd.sh,v 1.5 2004/12/22 02:10:11 edwin Exp $
 #
 
 # PROVIDE: clamd
@@ -22,7 +22,7 @@ name=clamav_clamd
 rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/clamd
-pidfile=/var/run/clamav/clamd.pid
+pidfile=%%RUNDIR%%/clamd.pid
 required_dirs=%%DBDIR%%
 required_files=%%PREFIX%%/etc/clamd.conf
 
