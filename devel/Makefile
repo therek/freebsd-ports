@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.459 2001/03/10 17:39:43 alex Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.460 2001/03/10 19:22:59 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -174,6 +174,7 @@
     SUBDIR += libsock
     SUBDIR += libstash
     SUBDIR += libtai
+    SUBDIR += libtar
     SUBDIR += libtecla
     SUBDIR += libtool
     SUBDIR += libunicode
