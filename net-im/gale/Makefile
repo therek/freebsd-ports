@@ -2,7 +2,7 @@
 # Date created:         14 July 2000
 # Whom:                 Peter Haight <peterh@sapros.com>
 #
-# $FreeBSD: ports/net/gale/Makefile,v 1.2 2000/09/05 12:49:44 asmodai Exp $
+# $FreeBSD: ports/net/gale/Makefile,v 1.3 2000/09/22 01:58:57 kris Exp $
 #
 
 PORTNAME=	gale
@@ -14,6 +14,7 @@ MAINTAINER=     peterh@sapros.com
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc
 LIB_DEPENDS=	wwwcore.1:${PORTSDIR}/www/libwww
+LIB_DEPENDS=	rsaref.2:${PORTSDIR}/security/rsaref
 
 GNU_CONFIGURE=	yes
 
