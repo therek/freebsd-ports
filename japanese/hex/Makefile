@@ -2,7 +2,7 @@
 # Date created:		Nov 5, 1996
 # Whom:			IMAMURA Tomoaki (yu@pastel.club.or.jp)
 #
-# $FreeBSD: ports/japanese/hex/Makefile,v 1.11 2000/04/11 14:13:51 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hex
@@ -18,7 +18,7 @@ MANLANG=	ja
 MAN1=		hex.1
 
 do-build:
-	cd ${WRKSRC}; ${CC} ${CFLAGS} hex.cc -o hex
+	cd ${WRKSRC}; ${CXX} ${CXXFLAGS} hex.cc -o hex
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/hex ${PREFIX}/bin
