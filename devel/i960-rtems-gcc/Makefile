@@ -2,12 +2,13 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i960-rtems-gcc/Makefile,v 1.1 2000/07/10 04:32:18 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gcc
 
 MAINTAINER=	jeh@FreeBSD.org
 
-LCLTARGET=	i960-rtems
+RTEMS_ARCH=	i960
+
 .include "${.CURDIR}/../i386-rtems-gcc/Makefile"
