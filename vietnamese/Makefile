@@ -1,5 +1,6 @@
-# $FreeBSD: ports/vietnamese/Makefile,v 1.7 2001/02/07 11:34:25 obrien Exp $
+# $FreeBSD: ports/vietnamese/Makefile,v 1.8 2001/02/10 08:22:36 obrien Exp $
 #
+    SUBDIR += vnxfonts
     SUBDIR += vntex
 
     SUBDIR += libviet
