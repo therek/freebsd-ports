@@ -2,7 +2,7 @@
 # Date created:		9 November 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.51 2000/04/13 19:10:42 cpiazza Exp $
+# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.52 2000/04/27 08:31:21 tg Exp $
 #
 
 PORTNAME=	xlockmore
@@ -22,6 +22,9 @@ CONFIGURE_ARGS= --without-gl --without-motif --without-sx \
 		--without-nas --without-gtk #--enable-customization
 .if defined(MAKE_KERBEROS4)
 CONFIGURE_ARGS+= --enable-kerberos4
+.endif
+.if defined(KRB5_HOME) && exists(${KRB5_HOME})
+CONFIGURE_ARGS+= --enable-kerberos5
 .endif
 USE_X_PREFIX=	yes
 MAN1=		xlock.1
