@@ -2,11 +2,11 @@
 # Date created:		14 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.7 2000/09/10 07:57:04 knu Exp $
+# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.8 2000/09/26 08:01:54 knu Exp $
 #
 
 PORTNAME=	kde
-PORTVERSION=	0.12
+PORTVERSION=	0.13
 CATEGORIES=	x11 kde ruby
 MASTER_SITES=	http://sfns.u-shizuoka-ken.ac.jp/geneng/horie_hp/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -28,6 +28,7 @@ CONFIGURE_ARGS=	--with-x-dir=${X11BASE} \
 		--with-qt-include=${X11BASE}/include/X11/qt \
 		--with-qt-lib=${X11BASE}/lib \
 		--with-kde-dir=${LOCALBASE}
+MAKE_ARGS=	LOCAL_LIBS=-lgcc
 INSTALL_TARGET=	site-install
 
 .if defined(WITH_I18N)
