@@ -2,7 +2,7 @@
 # Date Created:				26 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/audio/musicbrainz/Makefile,v 1.1 2000/10/28 07:30:46 will Exp $
+# $FreeBSD: ports/audio/musicbrainz/Makefile,v 1.2 2000/10/29 01:04:19 will Exp $
 #
 
 PORTNAME=	musicbrainz
@@ -15,8 +15,7 @@ MAINTAINER=	roman@xpert.com
 
 INSTALLS_SHLIB=	yes
 USE_GMAKE=	yes
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=	--prefix=${PREFIX}
+USE_LIBTOOL=	yes
 
 post-extract:
 	${TOUCH} ${WRKSRC}/stamp-h.in
