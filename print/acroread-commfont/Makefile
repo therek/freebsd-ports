@@ -1,7 +1,7 @@
 # New ports collection makefile for:	acroread-commfont
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/acroread-commfont/Makefile,v 1.8 2000/04/11 04:49:08 knu Exp $
+# $FreeBSD: ports/print/acroread-commfont/Makefile,v 1.9 2000/04/14 16:55:52 knu Exp $
 #
 
 PORTNAME=	acroread
@@ -14,6 +14,7 @@ DISTNAME?=	commfont # dummy
 MAINTAINER=	taoka@FreeBSD.org
 
 NO_BUILD=	yes
+SLAVEDIRS=	chinese/acroread-chsfont chinese/acroread-chtfont
 
 .include <bsd.port.pre.mk>
 
