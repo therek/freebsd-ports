@@ -3,7 +3,7 @@
 # Date created:			11 Feb. 1995
 # Whom:				torstenb
 #
-# $FreeBSD: ports/shells/zsh/Makefile,v 1.31 1999/08/31 06:50:38 mharo Exp $
+# $FreeBSD: ports/shells/zsh/Makefile,v 1.32 1999/09/10 20:42:22 torstenb Exp $
 #
 
 DISTNAME=       zsh-3.0.6
@@ -24,7 +24,7 @@ MAN1=		zsh.1 zshbuiltins.1 zshcompctl.1 zshexpn.1 zshmisc.1 \
 		zshoptions.1 zshall.1 zshparam.1 zshzle.1
 
 # If you want to build a static binary, uncomment the following line
-#LDFLAGS+=-static
+#CONFIGURE_ENV+=	"LDFLAGS=-static"
 
 post-install:
 	@install-info ${PREFIX}/info/zsh.info ${PREFIX}/info/dir
