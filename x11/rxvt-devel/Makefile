@@ -2,7 +2,7 @@
 # Date created:         5th December 1994
 # Whom:                 gpalmer@FreeBSD.org
 #
-# $FreeBSD: ports/x11/rxvt-devel/Makefile,v 1.47 2001/04/11 00:37:48 lioux Exp $
+# $FreeBSD: ports/x11/rxvt-devel/Makefile,v 1.48 2001/05/26 13:32:07 lioux Exp $
 #
 # If possible, please consider updating the simple ports/x11-clocks/rclock
 # (and maybe ports/chinese/rxvt) when you upgrade rxvt.  These ports all use
@@ -79,7 +79,7 @@ pre-fetch:
 	@${ECHO_MSG} "WITHOUT_XIM=yes		disable support for XIM (X Input Method) protocol"
 	@${ECHO_MSG} "WITH_GREEK_KEYBOARD=yes		add support for greek keyboard"
 	@${ECHO_MSG} "WITH_MENUBAR=yes		add support for rxvt menu bar system"
-	@${ECHO_MSG} "WITH_WITH_MOUSEWHEEL=yes	add support for scrolling via mouse wheel"
+	@${ECHO_MSG} "WITH_MOUSEWHEEL=yes	add support for scrolling via mouse wheel"
 	@${ECHO_MSG} "				or buttons 4 & 5"
 	@${ECHO_MSG} "WITH_NEXT_SCROLLBAR=yes		add support for a NeXT-like scrollbar"
 	@${ECHO_MSG} "WITH_RXVT_SCROLLBAR=yes		add support for the original rxvt scrollbar"
