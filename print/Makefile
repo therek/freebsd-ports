@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.150 2001/04/01 21:43:25 knu Exp $
+# $FreeBSD: ports/print/Makefile,v 1.151 2001/04/16 14:06:09 ijliao Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -128,6 +128,7 @@
     SUBDIR += tr2latex
     SUBDIR += transfig
     SUBDIR += trueprint
+    SUBDIR += ttftot42
     SUBDIR += virtualpaper
     SUBDIR += xdvi
     SUBDIR += xdvik
