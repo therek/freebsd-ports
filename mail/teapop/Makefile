@@ -2,7 +2,7 @@
 # Date created:			18 May 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/teapop/Makefile,v 1.7 2001/02/05 15:11:16 olgeni Exp $
+# $FreeBSD: ports/mail/teapop/Makefile,v 1.8 2001/02/09 20:35:19 jim Exp $
 #
 
 PORTNAME=	teapop
@@ -50,5 +50,13 @@ CONFIGURE_ARGS+=	--with-drac=${PREFIX}/lib \
 .endif
 
 MAN8=		teapop.8
+
+post-install:
+	@${ECHO} "		"
+	@${ECHO} "------------------------------------------------------------------------"
+	@${ECHO} "===> Be sure to copy ${LOCALBASE}/etc/teapop.passwd.sample to"
+	@${ECHO} "===> ${LOCALBASE}/etc/teapop.passwd before using teapop"
+	@${ECHO} "------------------------------------------------------------------------"
+	@${ECHO} "		"
 
 .include <bsd.port.mk>
