@@ -2,11 +2,11 @@
 # Date created:		9 November 1999
 # Whom:			Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD: ports/mail/tkrat2/Makefile,v 1.24 2000/04/13 20:00:51 cpiazza Exp $
+# $FreeBSD: ports/mail/tkrat2/Makefile,v 1.25 2000/06/09 00:30:57 will Exp $
 #
 
 PORTNAME=	tkrat
-PORTVERSION= 	2.0.1
+PORTVERSION= 	2.0.rc1
 CATEGORIES=	mail tk82
 MASTER_SITES=	ftp://ftp.md.chalmers.se/pub/tkrat/ \
 		ftp://ftp.sunet.se/pub/unix/mail/tkrat/
