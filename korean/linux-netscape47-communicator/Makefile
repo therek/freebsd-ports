@@ -2,7 +2,7 @@
 # Date created:		25 Jun 2000
 # Whom:			cjh@FreeBSD.org
 #
-# $FreeBSD: ports/korean/linux-netscape47-communicator/Makefile,v 1.3 2001/08/12 14:40:54 cjh Exp $
+# $FreeBSD$
 #
 
 RUN_DEPENDS=	${PREFIX}/bin/${BROWSER_ARC}-${BROWSER_VERSION}:${PORTSDIR}/www/linux-netscape47-${BROWSER_NAME}
@@ -14,8 +14,8 @@ BROWSER_ARC=    ${BROWSER_NAME}-linux
 MASTERDIR_LINUX= ${.CURDIR}/../linux-netscape47-communicator
 NSUBDIR=	lib/netscape-linux
 START_SCRIPT=	${MASTERDIR_LINUX}/files/start.sh.in
-# for 4.78, temporary
-BROWSER_VERSION=      4.78
+# for 4.79, temporary
+BROWSER_VERSION=      4.79
 
 post-patch:
 	${PATCH} ${PATCH_DIST_ARGS} < ${MASTERDIR_LINUX}/files/patch-aa
