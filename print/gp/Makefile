@@ -2,7 +2,7 @@
 # Date created:		15 April 1997
 # Whom:			Kiriyama Kazuhiko<kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/print/gp/Makefile,v 1.18 2000/04/14 17:10:41 knu Exp $
+# $FreeBSD: ports/print/gp/Makefile,v 1.19 2000/05/01 18:03:33 jseger Exp $
 #
 
 PORTNAME=	gp
@@ -26,8 +26,8 @@ LANGUAGE?=	English
 .if (${LANGUAGE} == "English")
 FORBIDDEN=	Broken unless someone makes it work with tcl/tk 8.X
 ALL_TARGET=	filters
-LIB_DEPENDS=	tcl76.1:${PORTSDIR}/lang/tcl76
-RUN_DEPENDS+=	${PREFIX}/bin/wish4.2:${PORTSDIR}/x11-toolkits/tk42
+#LIB_DEPENDS=	tcl76.1:${PORTSDIR}/lang/tcl76
+#RUN_DEPENDS+=	${PREFIX}/bin/wish4.2:${PORTSDIR}/x11-toolkits/tk42
 LANGEXT=	en
 DOCDIRNAME=	Doc
 DOCEXT=
