@@ -2,17 +2,17 @@
 # Date created:        27 Jun 1999
 # Whom:                Sakai Hiroaki <sakai@miya.ee.kagu.sut.ac.jp>
 #
-# $FreeBSD: ports/games/xblood/Makefile,v 1.2 1999/08/25 06:04:49 obrien Exp $
+# $FreeBSD: ports/games/xblood/Makefile,v 1.3 2000/04/14 12:27:03 asami Exp $
 #
 
 PORTNAME=	xblood
-PORTVERSION=	1.0
+PORTVERSION=	2.0
 CATEGORIES=	games
-MASTER_SITES=	http://wwwmiya.ee.kagu.sut.ac.jp/~sakai/
+MASTER_SITES=	http://www.seki.ee.kagu.sut.ac.jp/~sakai/myfreesoft/ \
+		http://hp.vector.co.jp/authors/VA014157/myfreesoft/ \
+		http://www.people.or.jp/~hsakai/myfreesoft/
 
-MAINTAINER=	sakai@miya.ee.kagu.sut.ac.jp
-
-ALL_TARGET=	xblood
+MAINTAINER=	sakai@seki.ee.kagu.sut.ac.jp
 
 USE_X_PREFIX=	yes
 
