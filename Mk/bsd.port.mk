@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.424 2002/09/19 00:16:39 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.425 2002/09/25 17:50:03 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3461,10 +3461,8 @@ fake-pkg:
 		done; \
 	fi
 .if !defined(NO_MTREE)
-	@if [ ! -d ${PKG_DBDIR}/${PKGNAME} ]; then \
-		if [ -f ${MTREE_FILE} ]; then \
-			${CP} ${MTREE_FILE} ${PKG_DBDIR}/${PKGNAME}/+MTREE_DIRS; \
-		fi; \
+	@if [ -f ${MTREE_FILE} ]; then \
+		${CP} ${MTREE_FILE} ${PKG_DBDIR}/${PKGNAME}/+MTREE_DIRS; \
 	fi
 .endif
 	@if [ -e /tmp/${PKGNAME}-required-by ]; then \
