@@ -3,13 +3,12 @@
 # Date created:         12 February 1995
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xkeycaps/Makefile,v 1.11 1999/08/31 02:51:01 peter Exp $
 #
 
-DISTNAME=	xkeycaps-2.42
+DISTNAME=	xkeycaps-2.45
 CATEGORIES=	x11
-MASTER_SITES=	${MASTER_SITE_XCONTRIB}
-MASTER_SITE_SUBDIR=	applications
+MASTER_SITES=	http://www.jwz.org/xkeycaps/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jmz@FreeBSD.org
