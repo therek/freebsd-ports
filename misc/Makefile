@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.361 2001/07/30 00:51:24 lioux Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.362 2001/07/31 09:28:19 ijliao Exp $
 #
 
     SUBDIR += 40upgrade
@@ -123,6 +123,7 @@
     SUBDIR += p5-Business-CreditCard
     SUBDIR += p5-File-CounterFile
     SUBDIR += p5-Finance-Quote
+    SUBDIR += p5-Geo-Weather
     SUBDIR += p5-I18N-Charset
     SUBDIR += p5-I18N-LangTags
     SUBDIR += p5-LEGO-RCX
