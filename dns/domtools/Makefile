@@ -2,13 +2,15 @@
 # Date created:				12 Jun 1999
 # Whom:					alexp
 #
-# $FreeBSD: ports/net/domtools/Makefile,v 1.5 2000/04/20 20:15:20 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	domtools
 PORTVERSION=	1.5.0
 CATEGORIES=	net
-MASTER_SITES=	http://www.domtools.com/pub/
+MASTER_SITES=	http://www.domtools.com/pub/ \
+		http://www.ussrback.com/UNIX/utilities/ \
+		http://packetstormsecurity.org/UNIX/utilities/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	veers@disturbed.net
