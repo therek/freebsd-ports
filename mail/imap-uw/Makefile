@@ -3,7 +3,7 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.41 2000/06/16 21:51:31 asami Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.42 2000/07/17 08:47:01 kbyanc Exp $
 #
 
 PORTNAME=	imap-uw
