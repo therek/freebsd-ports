@@ -2,7 +2,7 @@
 # Date created:				Sun 02 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/devel/viewcvs/Makefile,v 1.3 2001/05/27 14:03:13 ijliao Exp $
+# $FreeBSD: ports/devel/viewcvs/Makefile,v 1.4 2001/07/04 14:33:52 kevlo Exp $
 #
 
 PORTNAME=	viewcvs
@@ -13,20 +13,23 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
-
+USE_PYTHON=	yes
 NO_BUILD=	yes
+PKGMESSAGE=	${WRKDIR}/pkg-message
 
 pre-install:
-	${PERL} -pi -e "s:/usr/local/viewcvs-dev:${PREFIX}/share/viewcvs:g" ${WRKSRC}/viewcvs-install
+	@ ${PERL} -pi -e "s:/usr/local/viewcvs-dev:${PREFIX}/share/viewcvs:g" \
+	  ${WRKSRC}/viewcvs-install
 
 do-install:
-	(cd ${WRKSRC} && ${LOCALBASE}/bin/python ${WRKSRC}/viewcvs-install)
+	@ cd ${WRKSRC} && ${PYTHON_CMD} viewcvs-install
 
 post-install:
-	@${ECHO}
-	@${CAT} ${PKGMESSAGE} | ${SED} -e "s:%%PREFIX%%:${PREFIX}:g"
-	@${ECHO}
+	@ ${SED} -e "s:%%PREFIX%%:${PREFIX}:g" pkg-message >${PKGMESSAGE}
+.if !defined(BATCH)
+	@ ${ECHO}
+	@ ${CAT} ${PKGMESSAGE}
+	@ ${ECHO}
+.endif
 
 .include <bsd.port.mk>
