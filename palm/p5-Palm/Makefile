@@ -2,13 +2,13 @@
 # Date created:				29 April 2000
 # Whom:					Andrew Arensburger <arensb+freebsd-ports@ooblick.com>
 #
-# $FreeBSD: ports/palm/p5-Palm/Makefile,v 1.3 2001/03/01 06:38:27 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	p5-Palm
 PORTVERSION=	1.2.4
 CATEGORIES=	palm perl5
-MASTER_SITES=	http://www.ooblick.com/software/coldsync/
+MASTER_SITES=	http://www.coldsync.org/download/
 
 MAINTAINER=	arensb@ooblick.com
 
