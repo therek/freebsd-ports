@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.350 2001/04/07 05:24:30 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.351 2001/04/07 05:30:41 will Exp $
 #
 
     SUBDIR += 3dc
@@ -87,6 +87,7 @@
     SUBDIR += gnomebreakout
     SUBDIR += gnomechess
     SUBDIR += gnomegames
+    SUBDIR += gnomekiss
     SUBDIR += gnomememoryblocks
     SUBDIR += gnuchess
     SUBDIR += gnugo
