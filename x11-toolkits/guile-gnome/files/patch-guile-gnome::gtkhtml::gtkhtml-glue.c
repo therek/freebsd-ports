@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11-toolkits/guile-gnome/files/patch-guile-gnome::gtkhtml::gtkhtml-glue.c,v 1.2 2001/08/17 14:50:30 sobomax Exp $
 
 --- guile-gnome/gtkhtml/gtkhtml-glue.c.orig	Tue Feb  6 05:46:22 2001
 +++ guile-gnome/gtkhtml/gtkhtml-glue.c	Fri Aug 17 17:47:25 2001
