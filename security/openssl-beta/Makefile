@@ -2,7 +2,7 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.43 2000/04/25 22:16:22 dirk Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.44 2000/06/16 08:48:19 sobomax Exp $
 #
 
 PORTNAME=	openssl
@@ -31,6 +31,7 @@ PLIST=		${PKGDIR}/PLIST.noshared
 ALL_TARGET=	freebsd-shared all
 SHLIBVER=	1
 MAKE_ENV+=	SHLIBVER=${SHLIBVER}
+INSTALLS_SHLIB=	yes
 .endif
 
 MANPREFIX=	${PREFIX}/openssl
