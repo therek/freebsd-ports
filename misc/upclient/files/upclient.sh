@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/upclient/files/upclient.sh,v 1.2 2001/11/19 06:38:34 pat Exp $
 #
 # Start or stop upclient.
 #
@@ -21,6 +21,8 @@ program_path=${program_dir}/${program_file}
 config_dir=${PREFIX}/etc
 config_file=${program_file}.conf
 config_path=${config_dir}/${config_file}
+
+sample_path=${config_path}.sample
 
 pid_dir=/var/run
 pid_file=${program_file}.pid
@@ -54,7 +56,15 @@ start)
 			"${config_path}."
                 exit 72
 	fi
-        ${program_path} &&
+	kw="IdleTime|OS|(OS|CPU)Level"
+	if egrep -qs "^[$ws]*Send($kw)[$ws]*=" ${config_path}
+	then
+		logger -sp ${syslog_facility} -t ${program_file} \
+			"unable to start: ${config_path} needs to be updated" \
+			"from ${sample_path}."
+                exit 72
+	fi
+        ${program_path} 2> /dev/null &&
         echo -n " ${program_file}"
         ;;
 stop)
