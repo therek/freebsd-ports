@@ -2,7 +2,7 @@
 # Date created:				Sat Mar 10 16:40:06 EST 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.15 2001/09/29 04:57:48 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME?=	cs
@@ -38,7 +38,7 @@ WRKSRC?=		${WRKDIR}/${PORTNAME}
 .endif
 PLIST_SUB+=	${PLIST_SUB_MASTER}
 
-INSTALL_DIR=	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m ${BINMODE}
+INSTALL_DIR=	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m 755
 SORT?=		/usr/bin/sort
 
 HALFLIFESERVER_PORT=	${.CURDIR}/../halflifeserver
