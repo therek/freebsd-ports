@@ -2,7 +2,7 @@
 # Date created:        00/05/22
 # Whom:                Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pips800/Makefile,v 1.7 2000/12/18 00:46:46 taoka Exp $
+# $FreeBSD: ports/print/pips800/Makefile,v 1.8 2001/01/09 01:49:29 taoka Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
@@ -93,6 +93,20 @@ do-install:
 
 # a target for the maintainer
 _MAKE_COMMENT_DESCR:
+.if defined(INTERNATIONAL_PRODUCTS)
+.if ${PRTYPE} != -sc880
+.for file in pkg-comment pkg-descr
+.if ${PRTYPE} == -sc680_777
+	${SED}	-e 's,Stylus Color880,Stylus Color680/Stylus Color777,g' \
+		-e 's/880/${PRTYPE:S/^-sc//}/g' \
+		${.CURDIR}/../pips-sc880/${file} > ${.CURDIR}/${file}
+.else
+	${SED}	-e 's/880/${PRTYPE:S/^-sc//}/g' \
+		${.CURDIR}/../pips-sc880/${file} > ${.CURDIR}/${file}
+.endif
+.endfor
+.endif
+.else # for defined(INTERNATIONAL_PRODUCTS)
 .if ${PRTYPE} != 800
 .for file in pkg-comment pkg-descr
 .if ${PRTYPE} == 820_3300
@@ -111,5 +125,6 @@ _MAKE_COMMENT_DESCR:
 .endif
 .endfor
 .endif
+.endif # for defined(INTERNATIONAL_PRODUCTS)
 
 .include <bsd.port.post.mk>
