@@ -2,7 +2,7 @@
 # Date created:		20 February 1999
 # Whom:			Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/postilion/Makefile,v 1.11 2001/02/05 15:11:04 olgeni Exp $
+# $FreeBSD: ports/mail/postilion/Makefile,v 1.12 2001/02/13 00:42:11 mi Exp $
 #
 
 PORTNAME=	postilion
@@ -17,7 +17,6 @@ LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83 \
 RUN_DEPENDS=	${LOCALBASE}/lib/Img1.2/pkgIndex.tcl:${PORTSDIR}/graphics/libimg
 BUILD_DEPENDS=	tclsh8.3:${PORTSDIR}/lang/tcl83
 
-FETCH_BEFORE_ARGS=	-b
 MAKEFILE=	${FILESDIR}/Makefile.bsd
 MAKE_ARGS=	PORTVERSION="${PORTVERSION}" LOCALBASE="${LOCALBASE}" \
 		MKDIR="${MKDIR}" INSTALL_DATA="${INSTALL_DATA}" \
