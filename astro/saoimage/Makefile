@@ -2,11 +2,11 @@
 # Date created:		21 Feb 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/astro/saoimage/Makefile,v 1.13 2000/06/20 07:17:16 will Exp $
+# $FreeBSD: ports/astro/saoimage/Makefile,v 1.14 2000/10/28 15:01:32 kevlo Exp $
 #
 
 PORTNAME=	saoimage
-PORTVERSION=	1.28.5
+PORTVERSION=	1.29.3
 CATEGORIES=	astro
 MASTER_SITES=	ftp://cfa-ftp.harvard.edu/pub/gsc/SAOimage/ \
 		ftp://ftp.u-aizu.ac.jp/pub/graphics/image/SAO/SAOimage/
