@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.556 2004/11/01 02:19:42 markus Exp $
+# $FreeBSD: ports/MOVED,v 1.557 2004/11/04 15:05:41 nork Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1300,3 +1300,4 @@ irc/liece-emacs20|irc/rieceemacs20|2004-10-31|Upgrade to irc/riece-emacs20
 japanese/ndtpd|japanese/ebnetd|2004-10-31|successor project
 net/dcgui|net/valknut|2004-10-31|renamed
 japanese/lookup-mule||2004-11-05|no longer supported
+emulators/linux-mupen64|emulators/mupen64|2004-11-08|replaced with native port
