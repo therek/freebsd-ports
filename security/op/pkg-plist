@@ -1,6 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/op/pkg-plist,v 1.2 2001/04/10 10:52:20 lioux Exp $
 bin/op
 etc/op.access.sample
-%%PORTDOCS%%%%DOCDIR%%/README
-%%PORTDOCS%%%%DOCDIR%%/op.paper
-%%PORTDOCS%%@dirrm %%DOCDIR%%
+%%PORTDOCS%%share/doc/op/README
+%%PORTDOCS%%share/doc/op/op.paper
+%%PORTDOCS%%@dirrm share/doc/op
