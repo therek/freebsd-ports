@@ -2,11 +2,11 @@
 # Date Created:		2 May 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/irc/irchat-pj-emacs20/Makefile,v 1.1 2001/05/06 10:43:22 knu Exp $
+# $FreeBSD: ports/irc/irchat-pj-emacs20/Makefile,v 1.2 2001/05/08 09:30:14 knu Exp $
 #
 
 PORTNAME=	irchat-pj
-PORTVERSION=	2.5.3
+PORTVERSION=	2.5.5
 CATEGORIES=	irc elisp
 MASTER_SITES=	ftp://ftp.fan.gr.jp/pub/elisp/irchat-pj/2.5/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
@@ -21,8 +21,6 @@ RUN_DEPENDS=	${LOCALBASE}/${LISPDIR:S,/${PORTNAME}$,/pure,}/pure-make.el:${PORTS
 EMACS_PORT_NAME?=	emacs20
 LISPDIR?=	${EMACS_LIBDIR}/site-lisp/${PORTNAME}
 ETCDIR=		share/doc/${PORTNAME}
-ALL_TARGET?=	lisp
-INSTALL_TARGET?=	install-lisp
 
 LDFLAGS=	${PTHREAD_LIBS}
 CFLAGS+=	${PTHREAD_CFLAGS} -DUSE_PTHREAD -DENABLE_PTHREAD_ATTR

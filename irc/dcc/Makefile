@@ -2,11 +2,11 @@
 # Date Created:		6 May 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/dcc/Makefile,v 1.1 2001/05/06 10:15:35 knu Exp $
 #
 
 PORTNAME=	dcc
-PORTVERSION=	2.5.3
+PORTVERSION=	2.5.5
 CATEGORIES=	irc
 MASTER_SITES=	ftp://ftp.fan.gr.jp/pub/elisp/irchat-pj/2.5/
 DISTNAME=	irchat-pj-${PORTVERSION}p
