@@ -2,7 +2,7 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1), 14 Feb 1999 (2.2)
 # Whom:			torstenb
 #
-# $FreeBSD: ports/news/inn/Makefile,v 1.48 2001/05/24 14:17:13 des Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	inn
@@ -10,6 +10,7 @@ PORTVERSION=	2.3.2
 PORTREVISION=	2
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.isc.org/isc/inn/
+NO_LATEST_LINK=	yes
 
 MAINTAINER=	des@FreeBSD.org
 
