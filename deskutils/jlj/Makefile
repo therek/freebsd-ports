@@ -2,11 +2,11 @@
 # Date created:				29 April 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/jlj/Makefile,v 1.1 2001/05/24 14:17:27 ijliao Exp $
 #
 
 PORTNAME=	jlj
-PORTVERSION=	1.7
+PORTVERSION=	1.8
 CATEGORIES=	deskutils net
 MASTER_SITES=	http://www.cis.rit.edu/~jerry/Software/perl/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
