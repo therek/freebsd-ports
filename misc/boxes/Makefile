@@ -2,7 +2,7 @@
 # Date created:				3 March 2000
 # Whom:					Patrick Seal (patseal@hyperhost.net)
 #
-# $FreeBSD: ports/misc/boxes/Makefile,v 1.5 2000/05/17 20:20:50 hoek Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	boxes
@@ -22,9 +22,6 @@ ALL_TARGET=	boxes
 MAKE_ARGS=	GLOBALCONF=${GLOBALCONF} CFLAGS_ADDTL="${CFLAGS}"
 
 GLOBALCONF=	${PREFIX}/share/boxes/boxes-config
-
-do-patch:
-	${TOUCH} ${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/boxes ${PREFIX}/bin
