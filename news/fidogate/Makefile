@@ -3,7 +3,7 @@
 # Date created:         02 Dez 1997
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/fidogate/Makefile,v 1.8 2000/01/24 05:53:32 steve Exp $
+# $FreeBSD: ports/news/fidogate/Makefile,v 1.9 2000/02/20 15:58:49 taoka Exp $
 #
 
 DISTNAME=	fidogate-4.4.0
@@ -25,6 +25,12 @@ FORBIDDEN=	indefinite hang
 
 USE_GMAKE=	yes
 USE_PERL5=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 300000
+EXTRA_PATCHES+=	${FILESDIR}/patch-perl
+.endif
 
 pre-configure:
 	@${MV} ${WRKSRC}/config.make ${WRKSRC}/config.make.sed
@@ -63,4 +69,4 @@ post-install:
 		(cd ${PREFIX}/share/examples/fidogate; tar xf -)
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
