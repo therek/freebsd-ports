@@ -2,16 +2,21 @@
 # Date Created:				1 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/thinice/Makefile,v 1.2 2000/10/05 06:42:52 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	thinice
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	http://www.ing.umu.se/~stric/theme/
-DISTNAME=	gtk-${PORTNAME}-theme-${PORTVERSION}
+MASTER_SITES=	${MASTER_SITE_THEMES} \
+		http://www.ing.umu.se/~stric/theme/
+MASTER_SITE_SUBDIR=	gtk
+DISTNAME=	ThinIce-1.2.x-200104091453
+#DISTNAME=	gtk-${PORTNAME}-theme-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
+
+WRKSRC=		${WRKDIR}/gtk-${PORTNAME}-theme-${PORTVERSION}
 
 USE_X_PREFIX=	yes
 USE_GTK=	yes
