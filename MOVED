@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.253 2003/11/07 21:00:06 anholt Exp $
+# $FreeBSD: ports/MOVED,v 1.254 2003/11/08 01:10:03 maho Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -656,3 +656,5 @@ sysutils/prune|sysutils/fileprune|2003-11-06|renamed because of conflict with gr
 graphics/Mesa3|graphics/libglut|2003-11-06|split into graphics/mesagl and graphics/libglut
 japanese/openoffice|japanese/openoffice-1.0|2003-01-07|renamed 
 japanese/openoffice-devel|japanese/openoffice-1.1|2003-01-07|renamed 
+editors/openoffice|editors/openoffice-1.0|2003-01-07|renamed 
+editors/openoffice-devel|editors/openoffice-1.1|2003-01-07|renamed 
