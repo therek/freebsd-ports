@@ -2,11 +2,12 @@
 # Date Created:				5 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/security/hping/Makefile,v 1.3 2001/07/15 03:15:18 brian Exp $
+# $FreeBSD: ports/security/hping/Makefile,v 1.4 2001/09/14 13:24:59 dwcjr Exp $
 #
 
 PORTNAME=	hping
 PORTVERSION=	2.0.0r1
+PORTEPOCH=	1
 CATEGORIES=	security net
 MASTER_SITES=	http://www.hping.org/
 DISTNAME=	hping2.0.0-rc1
