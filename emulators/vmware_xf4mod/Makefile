@@ -2,7 +2,7 @@
 # Date created:			  7 Mar 2001
 # Whom:				  Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/emulators/vmware_xf4mod/Makefile,v 1.1 2001/03/08 02:39:27 nsayer Exp $
+# $FreeBSD: ports/emulators/vmware_xf4mod/Makefile,v 1.2 2001/03/08 16:41:36 nsayer Exp $
 #
 
 PORTNAME=	vmware_xf4mod
@@ -29,6 +29,6 @@ do-extract:
 		${CP} ${DISTDIR}/${DISTNAME} ${WRKSRC}
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/${DISTNAME} ${PREFIX}/lib/modules/drivers
+	${INSTALL_DATA} ${WRKSRC}/${DISTNAME} ${PREFIX}/lib/modules/drivers
 
 .include <bsd.port.mk>
