@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.84 2003/03/29 17:44:17 fjoe Exp $
+# $FreeBSD: ports/MOVED,v 1.85 2003/03/30 03:38:51 ijliao Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -190,3 +190,4 @@ graphics/qdraw||2003-03-24|obsolete
 x11-fm/rox-base||2003-03-24|obsolete
 graphics/xvid|multimedia/xvid|2003-03-29|new category
 print/dvipdfm-cjk|print/dvipdfmx|2003-03-29|port renamed
+games/tetris|games/bsdtris|2003-04-02|port renamed (see ports/13693)
