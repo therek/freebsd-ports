@@ -2,7 +2,7 @@
 # Date created:		Sun Jul 18 21:51:23 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD: ports/archivers/rpm2cpio/Makefile,v 1.6 2001/03/20 20:28:12 obrien Exp $
+# $FreeBSD: ports/archivers/rpm2cpio/Makefile,v 1.7 2001/05/26 03:43:53 dougb Exp $
 #
 
 PORTNAME=	rpm2cpio
