@@ -2,25 +2,32 @@
 # Date created:				09/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.45 2001/05/04 21:39:58 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	py-gtk
-PORTVERSION=	0.6.7
+PORTVERSION=	0.6.8
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-python	
-DISTNAME=	gnome-python-1.4.0
+DISTNAME=	gnome-python-1.4.1
 
 MAINTAINER=	gnome@FreeBSD.org
+
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/Numeric/Numeric.py:${PORTSDIR}/math/py-numeric
+LIB_DEPENDS=	gtkgl.5:${PORTSDIR}/x11-toolkits/gtkglarea \
+		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/Numeric/Numeric.py:${PORTSDIR}/math/py-numeric
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/pygtk
 
 USE_GMAKE=	yes
 USE_GNOME=	yes
 USE_PYTHON=	yes
-USE_LIBTOOL=	yes
+GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	PYTHON=${PYTHON_CMD}
+CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share \
+		--datadir=${PREFIX}/share
 
 EG_SRC_DIR=	${WRKSRC}/examples
 EG_DST_DIR=	${PREFIX}/share/examples/py-gtk
