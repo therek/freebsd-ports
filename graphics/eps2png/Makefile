@@ -2,11 +2,12 @@
 # Date created:				12 February 2001
 # Whom:					nik
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/eps2png/Makefile,v 1.1 2001/02/12 18:37:23 nik Exp $
 #
 
 PORTNAME=	eps2png
 PORTVERSION=	1.7
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	../../authors/Johan_Vromans
@@ -19,7 +20,6 @@ USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 do-install:
-	${INSTALL_SCRIPT} ${INSTALL_WRKSRC}/script/${PORTNAME} ${PREFIX}/bin
-
+	@cd ${WRKSRC}; ${SETENV} ${INSTALL_ENV} ${MAKE} INSTALLSCRIPT=${PREFIX}/bin install
 
 .include <bsd.port.mk>
