@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.12 2000/09/07 07:29:07 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.13 2000/09/26 08:01:53 knu Exp $
 #
 
 PORTNAME=	gtk
@@ -15,22 +15,24 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	yasuf@bsdclub.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
-
 USE_XLIB=	yes
+USE_GTK=	yes
+WANT_IMLIB=	yes
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
-CONFIGURE_ARGS=	${GTK_CONFIG}
 INSTALL_TARGET=	site-install
 
-.if defined(WITHOUT_IMLIB)
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_IMLIB)
+USE_IMLIB=	yes
 .else
-LIB_DEPENDS+=	Imlib.5:${PORTSDIR}/graphics/imlib
-GTK_CONFIG?=	${X11BASE}/bin/imlib-config
+PLIST=		${WRKDIR}/PLIST
+pre-install:
+	@${SED} -e '/gdkimlib/d' ${PKGDIR}/PLIST > ${PLIST}
 .endif
 
 post-configure:
@@ -43,7 +45,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/sample/*.rb ${RUBY_EXAMPLESDIR}/gtk
 	${MKDIR} ${RUBY_EXAMPLESDIR}/gtk/browser
 	${INSTALL_DATA} ${WRKSRC}/doc/*.rb ${RUBY_EXAMPLESDIR}/gtk/browser
-.if !defined(NO_IMLIB)
+.if defined(HAVE_IMLIB)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/gtk/gdkimlib
 	${INSTALL_DATA} ${WRKSRC}/sample/gdkimlib/*.rb ${RUBY_EXAMPLESDIR}/gtk/gdkimlib
 .endif
@@ -52,4 +54,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/api-ja/* ${RUBY_DOCDIR}/gtk/ja
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

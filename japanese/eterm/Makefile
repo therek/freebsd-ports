@@ -2,7 +2,7 @@
 # Date created:        11th December 1998
 # Whom:                MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/eterm/Makefile,v 1.12 2000/06/17 05:33:52 knu Exp $
+# $FreeBSD: ports/japanese/eterm/Makefile,v 1.13 2000/08/28 19:01:31 knu Exp $
 #
 
 PORTNAME=	eterm
@@ -16,15 +16,16 @@ DISTNAME=	Eterm-${PORTVERSION}
 
 MAINTAINER=	nobutaka@nobutaka.com
 
-LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 BUILD_DEPENDS=  man2html:${PORTSDIR}/textproc/man2html
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	LIBS="-lxpg4"
+USE_IMLIB=	yes
+USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--enable-trans=imlib --enable-utmp --enable-multi-charset=kanji \
 		--enable-xim --with-theme-update
+CONFIGURE_ENV=	LIBS="-lxpg4"
+
 MAN1=		Eterm.1
 INSTALLS_SHLIB=	yes
 

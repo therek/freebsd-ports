@@ -2,7 +2,7 @@
 # Date created:		9 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/hex/Makefile,v 1.8 2000/07/07 19:59:09 steve Exp $
+# $FreeBSD: ports/games/hex/Makefile,v 1.9 2000/09/05 01:18:45 steve Exp $
 #
 
 PORTNAME=	hex
@@ -13,9 +13,8 @@ MASTER_SITES=	http://www.nott.ac.uk/~psystrj/ \
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib
-
-USE_X_PREFIX=	YES
+USE_X_PREFIX=	yes
+USE_IMLIB=	yes
 MAKE_ENV=	GRAPHICPATH="${GRAPHICPATH}" LEVELPATH="${LEVELPATH}"
 
 GRAPHICPATH=	${PREFIX}/share/hex/graphics

@@ -2,7 +2,7 @@
 # Date created:				30 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/gview/Makefile,v 1.15 2000/05/29 21:40:03 cpiazza Exp $
+# $FreeBSD: ports/graphics/gview/Makefile,v 1.16 2000/07/19 06:12:02 cpiazza Exp $
 #
 
 PORTNAME=	gview
@@ -14,15 +14,17 @@ MASTER_SITES=	http://netpedia.net/hosting/gview/ \
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
-LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_X_PREFIX=	yes
+USE_IMLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib" \
-		GTK_CONFIG="${GTK_CONFIG}"
+		LIBS="-L${LOCALBASE}/lib"
+
+pre-patch:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
+		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
+		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure
 
 post-install:
 .if !defined(NOPORTDOCS)

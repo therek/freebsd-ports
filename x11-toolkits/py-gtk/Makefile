@@ -2,7 +2,7 @@
 # Date created:				09/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.41 2000/09/18 12:55:15 tg Exp $
+# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.42 2000/09/30 15:00:48 nectar Exp $
 #
 
 PORTNAME=	py-gtk
@@ -14,22 +14,20 @@ DISTNAME=	gnome-python-1.0.53
 
 MAINTAINER=	nectar@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12                  \
-		Imlib.5:${PORTSDIR}/graphics/imlib
-
-GTK_CONFIG=	${X11BASE}/bin/gtk12-config
-USE_GMAKE=	yes
-USE_PYTHON=	yes
-CONFIGURE_ENV=	GTK_CONFIG=${GTK_CONFIG} PYTHON=${PYTHON_CMD}
-USE_LIBTOOL=	yes
-PLIST_COMPLETE= ${PKGDIR}/PLIST
+LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/pygtk
+
+USE_GMAKE=	yes
+USE_IMLIB=	yes
+USE_PYTHON=	yes
+USE_LIBTOOL=	yes
+CONFIGURE_ENV=	PYTHON=${PYTHON_CMD}
+
 EG_SRC_DIR=	${WRKSRC}/examples
 EG_DST_DIR=	${PREFIX}/share/examples/py-gtk
 
 .if !defined(NOPORTDOCS)
-PLIST=		${PLIST_COMPLETE}
 post-install:
 	${MKDIR} ${EG_DST_DIR}
 	${TAR} -C ${EG_SRC_DIR} -cf - . | ${TAR} -C ${EG_DST_DIR} -xvf -
@@ -43,7 +41,7 @@ PLIST=		${WRKDIR}/PLIST.nodocs
 pre-install:
 	${RM} -f ${PLIST}
 	${GREP} -E -v '^(@dirrm )?(share/examples/)|(share/doc/)'       \
-		${PLIST_COMPLETE} > ${PLIST}
+		${PKGDIR}/PLIST > ${PLIST}
 .endif
 
 .include <bsd.port.mk>

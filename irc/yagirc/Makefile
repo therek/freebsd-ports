@@ -2,7 +2,7 @@
 # Date created:				6 July 1998
 # Whom:					mph
 #
-# $FreeBSD: ports/irc/yagirc/Makefile,v 1.22 2000/06/14 05:44:52 mph Exp $
+# $FreeBSD: ports/irc/yagirc/Makefile,v 1.23 2000/08/03 09:25:02 asami Exp $
 #
 
 PORTNAME=	yagirc
@@ -13,18 +13,14 @@ MASTER_SITE_SUBDIR=	mph
 
 MAINTAINER=	mph@freebsd.org
 
-LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
-		esd.2:${PORTSDIR}/audio/esound
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_XPM=	yes
 USE_GMAKE=	yes
 USE_PERL5=	yes
+USE_IMLIB=	yes
+USE_ESOUND=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--disable-gnome --disable-pthread
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		05 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/gtkcomm/Makefile,v 1.2 2000/06/25 09:33:15 cjh Exp $
+# $FreeBSD: ports/korean/gtkcomm/Makefile,v 1.3 2000/08/31 17:30:40 cjh Exp $
 #
 
 PORTNAME=	gtkcomm
@@ -13,12 +13,13 @@ MASTER_SITES=	http://kldp.org/~namsh/tools/gtkcomm/
 MAINTAINER=	cjh@kr.freebsd.org
 
 RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/local/gulim12.pcf.gz:${PORTSDIR}/korean/baekmukfonts-bdf
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		Imlib.5:${PORTSDIR}/graphics/imlib
 
-USE_X_PREFIX=	YES
-GNU_CONFIGURE=	YES
-CONFIGURE_ENV=	GLIB_CONFIG=${LOCALBASE}/bin/glib12-config \
-		GTK_CONFIG=${X11BASE}/bin/gtk12-config
+USE_X_PREFIX=	yes
+USE_IMLIB=	yes
+GNU_CONFIGURE=	yes
+
+pre-patch:
+	@${PERL} -pi -e 's^-l(pthread|c_r)^-pthread^g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 
 .include <bsd.port.mk>

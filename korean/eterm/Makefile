@@ -2,7 +2,7 @@
 # Date created:        8 Jun 1999
 # Whom:                Oh Junseon <hollywar@mail.holywar.net>
 #
-# $FreeBSD: ports/korean/eterm/Makefile,v 1.3 1999/10/08 03:29:57 nakai Exp $
+# $FreeBSD: ports/korean/eterm/Makefile,v 1.4 2000/04/13 09:16:13 asami Exp $
 #
 
 PORTNAME=	eterm
@@ -18,12 +18,12 @@ DISTNAME=	Eterm-${PORTVERSION}
 
 MAINTAINER=	hollywar@mail.holywar.net
 
-LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 RUN_DEPENDS=    ${PREFIX}/lib/X11/fonts/local/hmm12.pcf.gz:${PORTSDIR}/korean/hanyangfonts
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-GNU_CONFIGURE=	yes
+USE_IMLIB=	yes
+USE_LIBTOOL=	yes
 CONFIGURE_ENV=  LIBS="-L${LOCALBASE}/lib -lxpg4"
 MAN1=		Eterm.1
 

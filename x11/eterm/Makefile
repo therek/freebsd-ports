@@ -2,7 +2,7 @@
 # Date created:        24 November 1997
 # Whom:                Murray Stokely <murray@freebsd.org>
 #
-# $FreeBSD: ports/x11/eterm/Makefile,v 1.26 2000/06/16 21:52:10 asami Exp $
+# $FreeBSD: ports/x11/eterm/Makefile,v 1.27 2000/10/03 11:54:47 murray Exp $
 #
 
 PORTNAME=	eterm
@@ -18,10 +18,9 @@ DISTNAME=	Eterm-${PORTVERSION}
 
 MAINTAINER=	murray@FreeBSD.org
 
-LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_IMLIB=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib"

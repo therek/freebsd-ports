@@ -2,7 +2,7 @@
 # Date created:		12 Aug 1999
 # Whom:			clive
 #
-# $FreeBSD: ports/games/xphotohunter/Makefile,v 1.5 2000/03/19 03:10:20 foxfair Exp $
+# $FreeBSD: ports/games/xphotohunter/Makefile,v 1.6 2000/04/14 12:28:00 asami Exp $
 #
 
 PORTNAME=	xphotohunter
@@ -12,9 +12,9 @@ MASTER_SITES=	http://www.oz.nthu.edu.tw/~u860905/Xphotohunter/
 
 MAINTAINER=	clive@CirX.ORG
 
-LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib
-
 USE_X_PREFIX=	yes
+USE_GMAKE=	yes
+USE_IMLIB=	yes
 
 post-install:
 	@${CAT} ${PKGMESSAGE}

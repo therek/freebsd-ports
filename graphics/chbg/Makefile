@@ -2,7 +2,7 @@
 # Date created:		10 Dec 1999
 # Whom:			Peter Jones <p@dancris.com>
 #
-# $FreeBSD: ports/graphics/chbg/Makefile,v 1.1 1999/12/25 15:54:15 steve Exp $
+# $FreeBSD: ports/graphics/chbg/Makefile,v 1.2 2000/04/13 06:28:07 obrien Exp $
 #
 
 PORTNAME=	chbg
@@ -14,12 +14,10 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	p@dancris.com
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		Imlib.5:${PORTSDIR}/graphics/imlib
-
 USE_GMAKE=	yes
+USE_IMLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${X11BASE}/bin/gtk12-config" \
-		CFLAGS="-I${LOCALBASE}/include ${CFLAGS}"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>

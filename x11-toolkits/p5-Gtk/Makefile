@@ -2,7 +2,7 @@
 # Date created:		28 Oct 1997
 # Whom:	      		Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.29 2000/06/17 02:36:56 will Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.30 2000/09/12 04:06:12 vanilla Exp $
 #
 
 PORTNAME=	Gtk
@@ -15,15 +15,14 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib
-
 USE_PERL5=	yes
+USE_IMLIB=	yes
 
 MAN3=		Gtk::GtkColorSelectButton.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		--with-gdkimlib --without-gnome CC="${CC}" CCFLAGS="${CFLAGS}"
+	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+	--with-gdkimlib --without-gnome CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

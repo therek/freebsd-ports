@@ -2,7 +2,7 @@
 # Date Created:				23 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtk-engines/Makefile,v 1.20 2000/02/06 19:21:21 ade Exp $
+# $FreeBSD: ports/x11-toolkits/gtk-engines/Makefile,v 1.21 2000/04/10 01:10:20 cpiazza Exp $
 #
 
 PORTNAME=	gtk-engines
@@ -13,13 +13,9 @@ MASTER_SITE_SUBDIR=	stable/sources/gtk-engines
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_X_PREFIX=	yes
+USE_IMLIB=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 THEMES=		metal notif pixmap redmond95
 

@@ -2,7 +2,7 @@
 # Date created:		23 June 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/graphics/fnlib/Makefile,v 1.17 2000/06/16 10:37:38 sobomax Exp $
+# $FreeBSD: ports/graphics/fnlib/Makefile,v 1.18 2000/06/16 21:50:43 asami Exp $
 #
 
 PORTNAME=	fnlib
@@ -15,10 +15,9 @@ MASTER_SITES=	http://mirror.nucba.ac.jp/mirror/enlightenment/enlightenment/libs/
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
-
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_IMLIB=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib"

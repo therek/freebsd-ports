@@ -2,7 +2,7 @@
 # Date created:		25 December 1998
 # Whom:			Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/qiv/Makefile,v 1.11 2000/05/14 04:57:28 billf Exp $
+# $FreeBSD: ports/graphics/qiv/Makefile,v 1.12 2000/07/28 12:04:10 sobomax Exp $
 #
 
 PORTNAME=	qiv
@@ -13,10 +13,10 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	billf@FreeBSD.org
 
-LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib
-
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_IMLIB=	yes
+
 MAN1=		qiv.1
 
 do-configure:

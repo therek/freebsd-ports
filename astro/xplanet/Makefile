@@ -2,7 +2,7 @@
 # Date created:		22 Feb 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/astro/xplanet/Makefile,v 1.11 2000/08/03 09:22:22 asami Exp $
+# $FreeBSD: ports/astro/xplanet/Makefile,v 1.12 2000/09/01 06:31:18 will Exp $
 #
 
 PORTNAME=	xplanet
@@ -16,20 +16,19 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
-		jpeg.9:${PORTSDIR}/graphics/jpeg
+LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_X_PREFIX=	yes
 USE_MESA=	yes
 USE_GMAKE=	yes
+USE_IMLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-map-extension=jpg
-CONFIGURE_ENV=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
-		CPPFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -L${X11BASE}/lib -lm"
-MAKE_ENV=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
-		CPPFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
+MAKE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -L${X11BASE}/lib -lm"
+
 MAN1=		xplanet.1 xplanetbg.1 tkxplanet.1 tzcoord.pl.1
 
 .include <bsd.port.pre.mk>
