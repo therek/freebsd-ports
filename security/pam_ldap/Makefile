@@ -2,7 +2,7 @@
 # Date created:				26 May 2001
 # Whom:	      				Joe Clarke <marcus@marcuscom.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/pam_ldap/Makefile,v 1.1 2001/06/08 19:00:18 dwcjr Exp $
 #
 
 PORTNAME=	pam_ldap
@@ -33,8 +33,8 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:S/.//g}
 
 post-install:
 	@${ECHO} "================================================================================"
-	@${ECHO} "Copy/move/symlink ${PREFIX}/etc/pam_ldap/ldap.conf.dist to"
-	@${ECHO} "${PREFIX}/etc/pam_ldap/ldap.conf to be able to use it."
+	@${ECHO} "Copy/move/symlink ${PREFIX}/etc/ldap.conf.dist to"
+	@${ECHO} "${PREFIX}/etc/ldap.conf to be able to use it."
 	@${ECHO} "Add lines like the following to /etc/pam.conf"
 	@${ECHO} "to get things going:"
 	@${ECHO} ""
