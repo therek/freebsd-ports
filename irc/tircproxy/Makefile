@@ -2,11 +2,11 @@
 # Date created:		11 Aug 1999
 # Whom:			Eugeny Kuzakov <CoreDumped@CoreDumped.null.ru>
 #
-# $FreeBSD: ports/irc/tircproxy/Makefile,v 1.2 2000/04/12 06:28:30 obrien Exp $
+# $FreeBSD: ports/irc/tircproxy/Makefile,v 1.3 2000/11/02 14:25:56 sobomax Exp $
 #
 
 PORTNAME=	tircproxy
-PORTVERSION=	0.4.3
+PORTVERSION=	0.4.5
 CATEGORIES=	irc
 MASTER_SITES=	http://bre.klaki.net/programs/tircproxy/
 
