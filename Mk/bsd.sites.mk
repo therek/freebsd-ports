@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.267 2004/12/20 10:06:34 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.268 2004/12/20 10:14:27 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -781,6 +781,7 @@ MASTER_SITE_SUNSITE+=	\
 	ftp://ftp.chg.ru/pub/Linux/sunsite/%SUBDIR%/
 
 MASTER_SITE_SUSE+= 	\
+	http://mirrors.usc.edu/pub/linux/distributions/suse/%SUBDIR%/ \
 	ftp://ftp-linux.cc.gatech.edu/pub/suse/suse/%SUBDIR%/ \
 	http://mirror.usu.edu/mirrors/suse/%SUBDIR%/ \
 	ftp://ftp.ale.org/pub/suse/%SUBDIR%/ \
