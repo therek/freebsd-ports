@@ -2,13 +2,13 @@
 # Date created:        20 January 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/newosaka/Makefile,v 1.6 2000/01/07 02:27:19 nakai Exp $
+# $FreeBSD: ports/japanese/newosaka/Makefile,v 1.7 2000/04/11 14:15:44 knu Exp $
 #
 
 PORTNAME=	newosaka
 PORTVERSION=	1.0
 CATEGORIES+=	japanese
-MASTER_SITES=	ftp://ports.jp.freebsd.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/
+MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 DISTFILES=	new-osaka.tar.gz
 
 MAINTAINER=	nakai@FreeBSD.org

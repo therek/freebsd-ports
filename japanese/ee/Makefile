@@ -2,14 +2,14 @@
 # Date created:		20 Jan 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/ee/Makefile,v 1.4 1999/08/25 05:23:52 obrien Exp $
+# $FreeBSD: ports/japanese/ee/Makefile,v 1.5 2000/04/11 14:13:16 knu Exp $
 #
 
 PORTNAME=	jee
 PORTVERSION=	1.0
 CATEGORIES=	japanese editors
 MASTER_SITES=	ftp://ftp.mogami-wire.co.jp/pub/beta/ \
-		ftp://ports.jp.freebsd.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/
+		${MASTER_SITE_PORTS_JP}
 DISTFILES=	${PORTNAME}.tar.gz \
 		ee-3.0.tar.gz \
 		libncurses-3.0.tar.gz

@@ -2,14 +2,14 @@
 # Date created:		3 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/dserver/Makefile,v 1.10 2000/04/12 14:31:35 knu Exp $
+# $FreeBSD: ports/japanese/dserver/Makefile,v 1.11 2000/04/16 04:14:07 asami Exp $
 #
 
 PORTNAME=	dserver
 PORTVERSION=	2.2.2
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.pu-toyama.ac.jp/pub/misc/ \
-		ftp://ports.jp.FreeBSD.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/ \
+		${MASTER_SITE_PORTS_JP} \
 		ftp://ftp.sra.co.jp/pub/net/ndtp/misc/
 DISTNAME=	${PORTNAME}2.2betapl2
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

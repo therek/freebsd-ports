@@ -2,17 +2,17 @@
 # Date created:         18 Febrary 1999
 # Whom:                 Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/mail/mailx/Makefile,v 1.3 1999/08/31 06:47:25 mharo Exp $
+# $FreeBSD: ports/mail/mailx/Makefile,v 1.4 2000/04/13 19:59:54 cpiazza Exp $
 #
 
 PORTNAME=	mailx
 PORTVERSION= 	0.5
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ports.jp.freebsd.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/ \
+MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		ftp://ftp.noc.titech.ac.jp/pub/tmp/aki/FreeBSD/mailx/
 DISTFILES=	mail-2.2.8.tar.gz mailx-memo-2.2.8R
 
-PATCH_SITES=	ftp://ports.jp.freebsd.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/ \
+PATCH_SITES=	${MASTER_SITE_PORTS_JP} \
 		ftp://ftp.noc.titech.ac.jp/pub/tmp/aki/FreeBSD/mailx/
 PATCHFILES=	mailx.v05.patch.gz
 PATCH_DIST_STRIP=	-p1

@@ -2,13 +2,13 @@
 # Date created:		26 May 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kcc/Makefile,v 1.7 1999/08/25 05:24:51 obrien Exp $
+# $FreeBSD: ports/japanese/kcc/Makefile,v 1.8 2000/04/11 14:14:22 knu Exp $
 #
 
 PORTNAME=	kcc
 PORTVERSION=	1.0
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ports.jp.freebsd.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/
+MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	taoka@FreeBSD.org
