@@ -2,7 +2,7 @@
 # Date created:		13 Jan 2000
 # Whom:			Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/comms/qico/Makefile,v 1.6 2000/11/17 15:10:03 kevlo Exp $
+# $FreeBSD: ports/comms/qico/Makefile,v 1.7 2001/02/17 15:14:16 kevlo Exp $
 #
 
 PORTNAME=	qico
@@ -19,14 +19,14 @@ MAKE_ENV+=	SH=${SH} AWK=${AWK} MORDA="${MORDA}" DEFS="${DEFS}"
 DEFS+=		-DAMIGA4D
 .endif
 
-.if !defined(WITHOUT_QICO_MORDA)
+.if defined(WITH_QICO_MORDA)
 MORDA=		1
 .endif
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/qico.conf.sample ${PREFIX}/etc/
 	${INSTALL_PROGRAM} ${WRKSRC}/src/qico ${PREFIX}/libexec/
-.if !defined(WITHOUT_QICO_MORDA)
+.if defined(WITH_QICO_MORDA)
 	${INSTALL_PROGRAM} ${WRKSRC}/src/qcc ${PREFIX}/bin/
 .endif
 
