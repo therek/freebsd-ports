@@ -2,11 +2,11 @@
 # Date created:				03/16/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.31 2000/11/29 11:46:42 sobomax Exp $
+# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.32 2001/02/15 16:57:25 nectar Exp $
 #
 
 PORTNAME=	gnomeicu
-PORTVERSION=	0.95.2
+PORTVERSION=	0.96
 CATEGORIES=	net gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR= gnomeicu
