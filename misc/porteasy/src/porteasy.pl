@@ -26,7 +26,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.34 2003/07/21 08:30:40 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.35 2003/10/01 15:15:37 des Exp $
 #
 
 use strict;
@@ -333,7 +333,7 @@ sub update_index() {
 	cvs("update", "-l")
 	    or bsd::errx(1, "error updating the index file");
     }
-    cvs("update", "Mk", "Templates")
+    cvs("update", "Mk", "Templates", "Tools")
 	or bsd::errx(1, "error updating the ports infrastructure");
     $index = "$portsdir/INDEX-" . substr($release, 0, 1);
     if (! -f $index) {
@@ -741,7 +741,7 @@ sub find_port_file($$) {
     $master = $port;
     while (!-f "$portsdir/$master/$file") {
 	if (!($master = $masterport{$master})) {
-	    bsd:errx(1, "$port has no $file");
+	    bsd::errx(1, "$port has no $file");
 	}
     }
     return "$portsdir/$master/$file";
