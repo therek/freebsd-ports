@@ -2,17 +2,19 @@
 # Date created:		18 September 2001
 # Whom:	      		Johann Visagie <wjv@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/quixote/Makefile,v 1.1 2001/09/18 10:51:37 wjv Exp $
 #
 
 PORTNAME=	quixote
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	http://www.mems-exchange.org/software/files/quixote/
 DISTNAME=	Quixote-${PORTVERSION}
 
 MAINTAINER=	wjv@FreeBSD.org
 
+BUILD_DEPENDS=	${PYDISTUTILS}
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/compiler/__init__.py:${PORTSDIR}/lang/py-compiler
 
 USE_PYTHON=	yes
