@@ -2,13 +2,13 @@
 # Date created:				12 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/merlin/Makefile,v 1.6 2000/04/14 18:40:17 knu Exp $
+# $FreeBSD: ports/games/merlin/Makefile,v 1.7 2000/06/21 17:12:44 sobomax Exp $
 #
 
 PORTNAME=	merlin
 PORTVERSION=	1.0
 CATEGORIES=	games
-MASTER_SITES=	http://www-dse.doc.ic.ac.uk/~np2/software/download/
+MASTER_SITES=	http://www.doc.ic.ac.uk/~np2/software/download/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
