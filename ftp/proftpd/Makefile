@@ -2,7 +2,7 @@
 # Date created:		26 January 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.35 2001/02/11 21:26:52 mharo Exp $
+# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.36 2001/03/07 00:32:00 mharo Exp $
 #
 
 PORTNAME=	proftpd
@@ -40,13 +40,13 @@ CONFIGURE_ARGS+=	--disable-pam
 MODULES?=	mod_ratio:mod_readme:mod_quota:mod_wrap
 
 .if defined(WITH_LDAP)
-MODULES:=$(MODULES):mod_ldap
+MODULES:=${MODULES}:mod_ldap
 BUILD_DEPENDS+=	${LOCALBASE}/lib/libldap.a:${PORTSDIR}/net/openldap
 CONFIGURE_ENV+=	CFLAGS="-I/usr/local/include -g" LDFLAGS=-L/usr/local/lib
 .endif
 
 .if defined(WITH_MYSQL)
-MODULES:=$(MODULES):mod_sql:mod_sql_mysql
+MODULES:=${MODULES}:mod_sql:mod_sql_mysql
 LIB_DEPENDS+=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 CONFIGURE_ENV+=	CFLAGS="-I${PREFIX}/include" LDFLAGS="-L${PREFIX}/lib/mysql"
 .endif
@@ -57,7 +57,7 @@ CONFIGURE_ARGS+= --with-modules=${MODULES}
 
 .if defined(WITH_LDAP)
 post-extract:
-	rm -rf ${WRKSRC}/contrib/mod_ldap.c
+	${RM} -rf ${WRKSRC}/contrib/mod_ldap.c
 	tar --to-stdout -xvz -f ${DISTDIR}/${MOD_LDAP} */mod_ldap.c > ${WRKSRC}/contrib/mod_ldap.c
 .endif
 
