@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.526 2001/04/29 11:23:20 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.527 2001/05/01 17:28:12 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -212,6 +212,7 @@
     SUBDIR += linux_devtools
     SUBDIR += linux_kdump
     SUBDIR += linuxthreads
+    SUBDIR += log4cpp
     SUBDIR += lwp
     SUBDIR += m4
     SUBDIR += m68k-rtems-binutils
