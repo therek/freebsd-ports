@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.224 2001/10/09 21:20:16 lioux Exp $
+# $FreeBSD: ports/LEGAL,v 1.225 2001/10/24 08:37:30 wjv Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -205,6 +205,8 @@ socks5-*		ports/net/socks5	No commercial use
 speedmgmt.tar.gz	ports/net/pppoa		Not for redistribution - see
 						http://www.alcatel.com/consumer-
 						/dsl/disclaimer_lx.htm
+spread-src-*.tar.gz	ports/net/spread	See the license:
+						http://www.spread.org/license/
 srd			ports/japanese/srd-fpw	The original dictionary is not free
 ssh-*			ports/security/ssh*	Crypto; export-controlled
 *mod_ssl*		ports/www/apache13-modssl Crypto; export-controlled
