@@ -2,13 +2,13 @@
 # Date created:		Nov 5, 1996
 # Whom:			IMAMURA Tomoaki (yu@pastel.club.or.jp)
 #
-# $FreeBSD: ports/japanese/hex/Makefile,v 1.10 2000/02/21 16:32:18 taoka Exp $
+# $FreeBSD: ports/japanese/hex/Makefile,v 1.11 2000/04/11 14:13:51 knu Exp $
 #
 
 PORTNAME=	hex
 PORTVERSION=	2.04
 CATEGORIES=	japanese
-MASTER_SITES=	http://www.yl.is.s.u-tokyo.ac.jp/~nayuta/S/hex/
+MASTER_SITES=	http://www.tsg.ne.jp/GANA/S/hex/
 EXTRACT_SUFX=	.tgz
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}
 
