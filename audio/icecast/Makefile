@@ -3,7 +3,7 @@
 # Date created:		28 Jan 1999
 # Whom:			Chip Marshall <chip@eboai.org>
 #
-# $FreeBSD: ports/audio/icecast/Makefile,v 1.7 1999/10/05 04:59:10 dburr Exp $
+# $FreeBSD: ports/audio/icecast/Makefile,v 1.8 2000/01/28 11:05:07 reg Exp $
 #
 
 DISTNAME=	icecast-1.3.0
@@ -19,6 +19,9 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-libwrap
 
 ALL_TARGET=	all mkpasswd
+
+post-extract:
+	@( cd ${WRKSRC}; ${RM} -f shout/calibrate shout/stresstest )
 
 post-configure:
 	@${MAKE} WRKSRC=${WRKSRC}/liveice do-configure
