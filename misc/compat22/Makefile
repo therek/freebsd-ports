@@ -2,12 +2,11 @@
 # Date created:		01 Aug 2001
 # Whom:			Scot W. Hetzel
 #
-# $FreeBSD: ports/misc/compat22/Makefile,v 1.3 2001/08/15 18:17:47 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	compat22
-PORTVERSION=	4.3
-PORTREVISION=	1
+PORTVERSION=	4.4
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_FREEBSD_ORG}
 MASTER_SITE_SUBDIR=	releases/${ARCH}/${PORTVERSION}-RELEASE/${PORTNAME}
@@ -19,7 +18,7 @@ DISTFILES=	${PORTNAME}.aa \
 		${PORTNAME}.ae
 DIST_SUBDIR=	${ARCH}/${PORTVERSION}
 
-MAINTAINER=	hetzels@westbend.net
+MAINTAINER=	ports@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 PORTOBJFORMAT=	aout
