@@ -3,7 +3,7 @@
 # Date created:		26 February 1999
 # Whom:			Kai Voigt (k@123.org)
 #
-# $FreeBSD: ports/www/roxen/Makefile,v 1.4 1999/08/31 02:43:13 peter Exp $
+# $FreeBSD: ports/www/roxen/Makefile,v 1.5 1999/09/18 17:35:21 steve Exp $
 #
 
 DISTNAME=	roxen_1.3.111-0.6-40bit
@@ -19,8 +19,10 @@ GNU_CONFIGURE=	yes
 STARTUP_SCRIPT=	${PREFIX}/etc/rc.d/roxen.sh
 
 post-patch:
-	@${SED} -e "s|%%PREFIX%%|${PREFIX}|g" ${FILESDIR}/roxen.sh > \
+	@${SED} -e "s|%%PREFIX%%|${PREFIX}|g" ${FILESDIR}/roxen.sh.in > \
 	  ${WRKDIR}/roxen.sh
+	@${SED} -e "s|%%PREFIX%%|${PREFIX}|g" ${FILESDIR}/MESSAGE.in > \
+	  ${PKGDIR}/MESSAGE
 
 do-configure:
 	@(cd ${WRKSRC}; \
@@ -29,18 +31,8 @@ do-configure:
 post-install:
 	@if [ ! -f ${STARTUP_SCRIPT} ]; then \
 	  ${ECHO} "Installing ${STARTUP_SCRIPT} startup file."; \
-	  ${INSTALL_SCRIPT} ${FILESDIR}/roxen.sh ${STARTUP_SCRIPT}; \
+	  ${INSTALL_SCRIPT} ${WRKDIR}/roxen.sh ${STARTUP_SCRIPT}; \
 	fi
-	@${ECHO_MSG} "Installation of Roxen Challenger finished!"
-	@${ECHO_MSG} ""
-	@${ECHO_MSG} "Now perform the following steps to initialize"
-	@${ECHO_MSG} "the webserver."
-	@${ECHO_MSG} ""
-	@${ECHO_MSG} "# cd ${PREFIX}/roxen/server/"
-	@${ECHO_MSG} "# ./install"
-	@${ECHO_MSG} ""
-	@${ECHO_MSG} "Then follow the instructions.  For further"
-	@${ECHO_MSG} "documentation read http://roxen.com/documentation/"
-	@${ECHO_MSG} ""
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
