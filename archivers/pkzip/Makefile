@@ -2,7 +2,7 @@
 # Date created:         17 Mar 1999
 # Whom:                 xxx
 #
-# $FreeBSD: ports/archivers/pkzip/Makefile,v 1.7 2000/04/08 23:17:51 mharo Exp $
+# $FreeBSD: ports/archivers/pkzip/Makefile,v 1.8 2001/01/16 17:30:02 sobomax Exp $
 #
 
 PORTNAME=	pkzip
@@ -14,9 +14,10 @@ EXTRACT_SUFX=	.exe
 
 MAINTAINER=	dbader@eece.unm.edu
 
-RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base
+BUILD_DEPENDS=	${LINUXBASE}/etc/redhat-release:${PORTSDIR}/emulators/linux_base
 
 ONLY_FOR_ARCHS=	i386
+USE_LINUX=	yes
 
 NO_BUILD=	Yes
 NO_PACKAGE=	Shareware
