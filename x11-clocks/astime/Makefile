@@ -2,11 +2,11 @@
 # Date created:        21 Nov 1998
 # Whom:                Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/x11-clocks/astime/Makefile,v 1.10 2000/04/10 00:32:29 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/astime/Makefile,v 1.11 2000/04/24 08:26:24 kris Exp $
 #
 
 PORTNAME=	astime
-PORTVERSION=	2.5
+PORTVERSION=	2.6
 CATEGORIES=	x11-clocks afterstep
 MASTER_SITES=	ftp://ftp.afterstep.org/apps/astime/ \
 		http://www.tigr.net/afterstep/as-apps/download/astime/ \
