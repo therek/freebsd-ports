@@ -2,7 +2,7 @@
 # Date created:				17 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.26 2001/05/04 21:39:29 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnomepim
@@ -28,5 +28,8 @@ pre-patch:
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
+.for file in vcc.y vobject.c
+	@${PERL} -pi -e "s/malloc.h/stdlib.h/g" ${WRKSRC}/libversit/${file}
+.endfor
 
 .include <bsd.port.mk>
