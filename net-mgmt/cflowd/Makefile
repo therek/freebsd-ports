@@ -2,12 +2,12 @@
 # Date created:		Di   7 Nov 2000 19:48:50 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/cflowd/Makefile,v 1.3 2000/12/31 11:34:50 andreas Exp $
+# $FreeBSD: ports/net/cflowd/Makefile,v 1.4 2001/03/13 22:20:15 andreas Exp $
 #
 
 PORTNAME=	cflowd
 PORTVERSION=	2-1-b1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.caida.org/pub/cflowd/
 DISTNAME=	${PORTNAME}-${PORTVERSION}
@@ -23,6 +23,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libArts.a:${PORTSDIR}/net/arts++
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+USE_NEWGCC=	yes
 USE_BISON=	yes
 
 CONFIGURE_ARGS+=--enable-shared --with-artspp=${PREFIX}
