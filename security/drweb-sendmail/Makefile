@@ -2,12 +2,12 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.20 2001/10/03 22:14:56 ache Exp $
 #
 
 PORTNAME=	drweb_sendmail
 PORTVERSION=    4.26
-PORTREVISION=   6
+PORTREVISION=   7
 CATEGORIES=	security mail
 MASTER_SITES=	http://www.drweb.ru/ftp/web_pub/
 DISTNAME=	drwebd-${PORTVERSION}-freebsd4
@@ -83,8 +83,8 @@ pre-install:
 		${ECHO} "${PREFIX}/sbin"; \
 		${ECHO} ; \
 		${ECHO} u; \
-		${ECHO} /var/run/drweb-smf.sock; \
-		${ECHO} root; \
+		${ECHO} "${PREFIX}/drweb/drweb-smf.sock"; \
+		${ECHO} drweb; \
 		${ECHO} "${PREFIX}/drweb/infected.!!!"; \
 		${ECHO} y; \
 		${ECHO} /tmp; \
