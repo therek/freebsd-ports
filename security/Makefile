@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.95 2000/03/05 10:25:51 kris Exp $
+# $FreeBSD: ports/security/Makefile,v 1.96 2000/03/10 14:03:44 jedgar Exp $
 #
 
     SUBDIR += bjorb
@@ -30,6 +30,7 @@
     SUBDIR += keyprint
     SUBDIR += kmap
     SUBDIR += krb5
+    SUBDIR += kssh
     SUBDIR += l0pht-watch
     SUBDIR += libident
     SUBDIR += libmcrypt
