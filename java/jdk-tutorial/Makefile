@@ -2,12 +2,12 @@
 # Date created:		Tue Mar 23 10:18:20 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/java/jdk-tutorial/Makefile,v 1.14 2001/01/25 14:51:52 ijliao Exp $
+# $FreeBSD: ports/java/jdk-tutorial/Makefile,v 1.15 2001/02/26 03:49:29 steve Exp $
 #
 
 PORTNAME=	jdk-tutorial
 PORTVERSION=	1.1.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	java
 MASTER_SITES=	ftp://ftp.javasoft.com/docs/
 DISTNAME=	tutorial
