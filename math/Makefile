@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.126 2001/05/28 09:09:38 roam Exp $
+# $FreeBSD: ports/math/Makefile,v 1.127 2001/05/29 16:13:20 ijliao Exp $
 #
 
     SUBDIR += GiNaC
@@ -99,6 +99,7 @@
     SUBDIR += simpack
     SUBDIR += slsc
     SUBDIR += snns
+    SUBDIR += spar
     SUBDIR += spin
     SUBDIR += ss
     SUBDIR += superlu
