@@ -1,10 +1,15 @@
-@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.59 2004/10/31 05:19:20 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.60 2004/11/05 19:48:46 obrien Exp $
 bin/c++40
 bin/cpp40
 bin/fastjar40
 bin/g++40
 bin/gcc40
 bin/gcov40
+%%FORTRAN%%bin/gfortran40
+%%FORTRAN%%lib/libgfortran.a
+%%FORTRAN%%lib/libgfortranbegin.a
+%%FORTRAN%%lib/libgfortran.la
+%%FORTRAN%%lib/libgfortranbegin.la
 bin/%%GNU_HOST%%-c++40
 bin/%%GNU_HOST%%-gcc-%%GCC_VER%%
 bin/%%GNU_HOST%%-gcc40
