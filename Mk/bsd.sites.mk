@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.90 2002/06/11 16:17:20 tobez Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.91 2002/06/19 19:21:53 pat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -77,17 +77,17 @@ MASTER_SITE_FREEBSD_ORG+=	\
 
 MASTER_SITE_GNOME+=	\
 	ftp://ftp.rpmfind.net/linux/gnome.org/%SUBDIR%/ \
-	ftp://ftp.cse.buffalo.edu/pub/Gnome/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/X11/GNOME/%SUBDIR%/ \
 	ftp://ftp.dit.upm.es/linux/gnome/%SUBDIR%/ \
-	ftp://ftp.tr.gnome.org/pub/GNOME/%SUBDIR%/ \
 	ftp://ftp.no.gnome.org/pub/GNOME/%SUBDIR%/ \
 	ftp://ftp.dataplus.se/pub/linux/gnome/%SUBDIR%/ \
 	ftp://ftp.mirror.ac.uk/sites/ftp.gnome.org/pub/GNOME/%SUBDIR%/ \
-	ftp://ftp.informatik.hu-berlin.de/pub/Mirrors/www.gnome.org/%SUBDIR%/ \
+	ftp://ftp.chg.ru/pub/X11/gnome/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/gnome/&,} \
 	ftp://ftp.yggdrasil.com/mirrors/site/ftp.gnome.org/pub/GNOME/%SUBDIR%/ \
-	ftp://ftp.chg.ru/pub/X11/gnome/%SUBDIR%/
+	ftp://ftp.tr.gnome.org/pub/GNOME/%SUBDIR%/ \
+	ftp://ftp.informatik.hu-berlin.de/pub/Mirrors/www.gnome.org/%SUBDIR%/ \
+	ftp://ftp.cse.buffalo.edu/pub/Gnome/%SUBDIR%/
 
 MASTER_SITE_GNU+=	\
 	ftp://ftp.gnu.org/gnu/%SUBDIR%/ \
