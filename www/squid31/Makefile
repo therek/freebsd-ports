@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid23/Makefile,v 1.67 2000/04/17 20:32:57 peter Exp $
+# $FreeBSD: ports/www/squid23/Makefile,v 1.68 2000/05/17 01:18:36 peter Exp $
 #
 
 PORTNAME=	squid
@@ -80,7 +80,7 @@ MAKEFILE=	makefile
 #CONFIGURE_ARGS+= --disable-http-violations
 #  - Enable Transparent Proxy support for IP-Filter systems (incl 3.0)
 #CONFIGURE_ARGS+= --enable-ipf-transparent
-# (--enable-leakfinfer is a developer support tool only)
+# (--enable-leakfinder is a developer support tool only)
 #  - Compile out code that does optional Ident (RFC931) lookups
 #CONFIGURE_ARGS+= --disable-ident-lookups
 #  - Disable squid's internal async DNS lookup code.
