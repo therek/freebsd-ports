@@ -2,11 +2,11 @@
 # Date created:		?
 # Whom:			jmz (original)
 #
-# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.29 2000/05/21 08:41:16 knu Exp $
+# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.30 2000/06/04 22:36:26 will Exp $
 #
 
 PORTNAME=	netpbm
-PORTVERSION=	9.3
+PORTVERSION=	9.4
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.sourceforge.net/netpbm/
 EXTRACT_SUFX=	.tgz
@@ -22,7 +22,9 @@ MAKEFILE=	GNUmakefile
 ALL_TARGET=	merge
 INSTALL_TARGET=	install-merge install-dev
 
-.include "files/manpages"
+.include <bsd.port.pre.mk>
+
+.include "${FILESDIR}/manpages"
 
 post-patch:
 	@${PERL} -pi -e "s|%%X11BASE%%|${X11BASE}|g" ${WRKSRC}/pbmplus.h
@@ -30,4 +32,4 @@ post-patch:
 post-install:
 	${LDCONFIG} -m ${PREFIX}/lib
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
