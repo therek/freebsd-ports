@@ -2,7 +2,7 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/sawfish/Makefile,v 1.29 2000/10/05 07:22:50 reg Exp $
+# $FreeBSD: ports/x11-wm/sawfish/Makefile,v 1.30 2000/10/09 10:32:12 sobomax Exp $
 #
 
 PORTNAME=	sawfish
@@ -35,6 +35,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 USE_GNOME=	yes
 CONFIGURE_ARGS+=--enable-capplet
 PLIST_SUB+=	GNOME:=""
+BROKEN=		"pkg-plist broken due to inability to disable reg's CONFIGURE_ARGS"
 .else
 CONFIGURE_ARGS+=--disable-capplet \
 		--disable-gnome-widgets \
