@@ -2,11 +2,12 @@
 # Date created:		23 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt2canvas/Makefile,v 1.1 2001/01/23 07:54:15 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2canvas/Makefile,v 1.2 2001/03/12 18:57:24 knu Exp $
 #
 
 PORTNAME=	qt2canvas
 PORTVERSION=	${RUBY_QT2_PORTVERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	${RUBY_QT2_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -23,13 +24,11 @@ USE_RUBY_EXTCONF=	yes
 
 USE_GMAKE=	yes
 
+.include <bsd.port.pre.mk>
 .include "${.CURDIR}/../ruby-qt2/Makefile.common"
 
 WRKSRC=		${RUBY_QT2_WRKSRC}/modules/canvas
-CONFIGURE_ARGS=	--with-qt2-include=${X11BASE}/include/qt2 \
-		--with-qt2-lib=${X11BASE}/lib \
-		--with-qt2=qt2 \
-		--with-x11-dir=${X11BASE}
+CONFIGURE_ARGS=	${RUBY_QT2_CONFIGURE_ARGS}
 MAKE_ARGS=	LOCAL_LIBS=-lgcc
 INSTALL_TARGET=	site-install
 
@@ -39,4 +38,4 @@ post-install:
 	${CP} -R ${WRKSRC}/examples/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
