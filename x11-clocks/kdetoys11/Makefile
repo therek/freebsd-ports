@@ -2,17 +2,34 @@
 # Date created:		18 may 1999
 # Whom:			imura@cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-clocks/kdetoys11-i18n/Makefile,v 1.8 2000/04/10 00:32:39 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/kdetoys11-i18n/Makefile,v 1.9 2000/04/14 16:02:43 imura Exp $
 #
 
-MASTERDIR=	${.CURDIR}/../../audio/kdemultimedia11-i18n
 PORTNAME=	kdetoys
+PORTVERSION=	1.1.2
 CATEGORIES=	x11-clocks kde
+MASTER_SITES=	$(MASTER_SITE_KDE)
+MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/source/bz2
 
 MAINTAINER=	imura@FreeBSD.org
 
 BUILD_DEPENDS=	convert:${PORTSDIR}/graphics/ImageMagick
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 
-.include "${MASTERDIR}/Makefile"
+USE_BZIP2=	yes
+USE_GMAKE=	yes
+USE_NEWGCC=	yes
+USE_LIBTOOL=	yes
+CONFIGURE_ARGS=	"--with-qt-includes=${QTDIR}/include/X11/qt" \
+		"--with-extra-includes=${LOCALBASE}/include" \
+		"--with-extra-libs=${LOCALBASE}/lib"
+CONFIGURE_ENV=	QTDIR=${QTDIR} \
+		DO_NOT_COMPILE=mouse
 
-CONFIGURE_ENV+=	DO_NOT_COMPILE=mouse
+.if defined(PREFIX)
+QTDIR?=		${PREFIX}
+.else
+QTDIR?=		${X11BASE}
+.endif
+
+.include <bsd.port.mk>

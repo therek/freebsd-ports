@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.40 2000/09/20 19:04:38 will Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.41 2000/10/23 02:59:42 jeh Exp $
 #
 
     SUBDIR += aish
@@ -11,7 +11,6 @@
     SUBDIR += iconv-rfc1345
     SUBDIR += ish
     SUBDIR += kdesupport11
-    SUBDIR += kdesupport11-i18n
     SUBDIR += kdesupport2
     SUBDIR += libiconv
     SUBDIR += libutf-8

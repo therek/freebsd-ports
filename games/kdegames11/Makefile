@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/games/kdegames11/Makefile,v 1.38 2000/04/14 06:53:22 mharo Exp $
+# $FreeBSD: ports/games/kdegames11/Makefile,v 1.39 2000/05/17 11:37:38 will Exp $
 #
 
 PORTNAME=	kdegames
@@ -13,14 +13,15 @@ MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
 
 MAINTAINER=	will@FreeBSD.org
 
+BUILD_DEPENDS=	convert:${PORTSDIR}/graphics/ImageMagick
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		QwSpriteField.7:${PORTSDIR}/converters/kdesupport11
 
 USE_BZIP2=	yes
 USE_QT=		yes
-GNU_CONFIGURE= yes
+GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-CONFIGURE_ENV= CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555"
+CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555"
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.354 2000/10/10 18:08:11 ade Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.355 2000/10/21 14:40:55 des Exp $
 #
 
     SUBDIR += ElectricFence
@@ -24,7 +24,6 @@
     SUBDIR += bonobo
     SUBDIR += bugbuddy
     SUBDIR += c_c++_reference
-    SUBDIR += c_c++_reference-i18n
     SUBDIR += camlp4
     SUBDIR += cbrowser
     SUBDIR += cc65
@@ -113,11 +112,8 @@
     SUBDIR += imake-4
     SUBDIR += jam
     SUBDIR += kdbg
-    SUBDIR += kdbg-i18n
     SUBDIR += kdelibdocs
-    SUBDIR += kdelibdocs-i18n
     SUBDIR += kdevelop
-    SUBDIR += kdevelop-i18n
     SUBDIR += kpp
     SUBDIR += ktranslator
     SUBDIR += lclint

@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.308 2000/10/19 16:15:34 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.309 2000/10/20 07:32:35 sobomax Exp $
 #
 
     SUBDIR += 3dc
@@ -100,7 +100,6 @@
     SUBDIR += kbubbles
     SUBDIR += jzip
     SUBDIR += kdegames11
-    SUBDIR += kdegames11-i18n
     SUBDIR += kdegames2
     SUBDIR += klondike
     SUBDIR += krogue

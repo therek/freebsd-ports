@@ -2,11 +2,12 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/converters/kdesupport11/Makefile,v 1.30 2000/06/16 08:46:50 sobomax Exp $
+# $FreeBSD: ports/converters/kdesupport11/Makefile,v 1.31 2000/06/16 21:50:25 asami Exp $
 #
 
 PORTNAME=	kdesupport
-PORTVERSION=	1.1.2.1
+PORTVERSION=	1.1.2
+PORTREVISION=	1
 CATEGORIES=	converters kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2

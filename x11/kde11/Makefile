@@ -2,7 +2,7 @@
 # Date created:        4 November 1997
 # Whom:                Satoshi Asami <asami@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/kde11/Makefile,v 1.27 2000/04/19 19:45:58 mharo Exp $
+# $FreeBSD: ports/x11/kde11/Makefile,v 1.28 2000/05/17 11:37:43 will Exp $
 #
 
 PORTNAME=	kde
@@ -20,7 +20,8 @@ RUN_DEPENDS=	kwm:${PORTSDIR}/x11/kdebase11 \
 		kmahjongg:${PORTSDIR}/games/kdegames11 \
 		kghostview:${PORTSDIR}/graphics/kdegraphics11 \
 		kmail:${PORTSDIR}/net/kdenetwork11 \
-		kmedia:${PORTSDIR}/audio/kdemultimedia11
+		kmedia:${PORTSDIR}/audio/kdemultimedia11 \
+		kworldwatch:${PORTSDIR}/x11-clocks/kdetoys11-i18n
 
 NO_BUILD=	yes
 

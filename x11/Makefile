@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.307 2000/10/04 04:45:06 trevor Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.308 2000/10/08 21:47:14 trevor Exp $
 #
 
     SUBDIR += 9term
@@ -40,13 +40,10 @@
     SUBDIR += imwheel
     SUBDIR += kb2mb2
     SUBDIR += kde11
-    SUBDIR += kde11-i18n
     SUBDIR += kde2
     SUBDIR += kdebase11
-    SUBDIR += kdebase11-i18n
     SUBDIR += kdebase2
     SUBDIR += kdelibs11
-    SUBDIR += kdelibs11-i18n
     SUBDIR += kdelibs2
     SUBDIR += kvidtune
     SUBDIR += kworldwatch

@@ -2,15 +2,20 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.46 2000/06/16 21:52:13 asami Exp $
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.47 2000/07/04 07:13:07 sobomax Exp $
 #
 
 PORTNAME=	kdelibs
-PORTVERSION= 	1.1.2.1
+PORTVERSION= 	1.1.2
+PORTREVISION=	2
 CATEGORIES=	x11 kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
 DISTNAME=	kdelibs-1.1.2
+
+PATCH_SITES=	ftp://ftp.kde.gr.jp/pub/kde/stable/latest/distribution/tar/generic/jp-patch/
+PATCHFILES=	kdelibs-ja.19990903.diff.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	will@FreeBSD.org
 
@@ -36,21 +41,5 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${PREFIX}/include" \
 # generate KDE style mtree
 MTREE_CMD=	${CAT} ${MTREE_FILE} ${FILESDIR}/kde.dist | /usr/sbin/mtree
 MTREE_ARGS=	-U -d -e -p
-
-pre-install:
-.for applink in Applications Development Games Graphics Internet Multimedia \
-		Network Settings System Utilities
-	@${MKDIR} ${PREFIX}/share/applnk/${applink}
-.endfor
-.for lang in cs da de el es fi fr hu it ja nl pl pt ru sv zh_CN.GB2312
-	@${MKDIR} ${PREFIX}/share/doc/HTML/${lang}
-.endfor
-.for mimelnk in application audio image inode text video
-	@${MKDIR} ${PREFIX}/share/mimelnk/${mimelnk}
-.endfor
-	@${MKDIR} ${PREFIX}/share/icons/large
-	@${MKDIR} ${PREFIX}/share/icons/mini
-	@${MKDIR} ${PREFIX}/share/sounds
-	@${MKDIR} ${PREFIX}/share/wallpapers
 
 .include <bsd.port.mk>
