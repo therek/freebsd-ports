@@ -3,11 +3,11 @@
 # Date created:		2 june 2000
 # Whom:			Paul Becke <pbecke@javagear.com>
 #
-# $FreeBSD: ports/devel/arm-aout-binutils/Makefile,v 1.3 2001/04/09 00:10:20 obrien Exp $
+# $FreeBSD: ports/devel/arm-aout-binutils/Makefile,v 1.4 2001/04/09 00:37:22 obrien Exp $
 #
 
 PORTNAME=	binutils
-PORTVERSION=	2.11
+PORTVERSION=	2.11.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
 MASTER_SITE_SUBDIR=	binutils/releases
