@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/www/Makefile,v 1.326 2001/03/28 14:30:55 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -21,6 +21,7 @@
     SUBDIR += aswedit
     SUBDIR += august
     SUBDIR += bacon
+    SUBDIR += barque
     SUBDIR += bk2site
     SUBDIR += bkmrkconv
     SUBDIR += bluefish
