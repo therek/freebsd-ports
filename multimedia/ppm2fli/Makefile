@@ -2,19 +2,15 @@
 # Date created:		7 Jan 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/graphics/ppm2fli/Makefile,v 1.6 2001/08/23 20:21:50 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ppm2fli
-PORTVERSION=	2.0d
+PORTVERSION=	2.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://vento.pi.tu-berlin.de/ppm2fli/
-DISTNAME=	${PORTNAME}_${PORTVERSION}
-EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
-
-NO_WRKSUBDIR=	yes
 
 MAN1=	ppm2fli.1 unflick.1
 
@@ -25,7 +21,7 @@ pre-patch:
 do-install:
 .for name in ppm2fli unflick
 	${INSTALL_PROGRAM} ${WRKSRC}/${name} ${PREFIX}/bin/${name}
-	${INSTALL_MAN} ${WRKSRC}/${name}.man ${MANPREFIX}/man/man1/${name}.1
+	${INSTALL_MAN} ${WRKSRC}/${name}.1 ${MANPREFIX}/man/man1/${name}.1
 .endfor
 
 .include <bsd.port.mk>
