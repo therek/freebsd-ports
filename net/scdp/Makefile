@@ -2,7 +2,7 @@
 # Date created:                14 September 2001
 # Whom:                        arved@arved.de
 #
-# $FreeBSD: ports/net/scdp/Makefile,v 1.1 2001/10/05 20:15:44 petef Exp $
+# $FreeBSD$
 
 PORTNAME=	scdp
 PORTVERSION=	1.0.b
@@ -17,8 +17,9 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+USE_REINPLACE=	yes
 
 post-patch:
-	@${PERL} -pi -e 's,malloc.h,stdlib.h,' ${WRKSRC}/scdp.c
+	${REINPLACE_CMD} -e 's,malloc.h,stdlib.h,' ${WRKSRC}/scdp.c
 
 .include <bsd.port.mk>
