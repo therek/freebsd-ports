@@ -2,13 +2,13 @@
 # Date created:				17 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/battalion/Makefile,v 1.10 2000/04/02 00:56:57 mharo Exp $
+# $FreeBSD: ports/games/battalion/Makefile,v 1.11 2000/04/14 00:45:27 mharo Exp $
 #
 
 PORTNAME=	battalion
 PORTVERSION=	1.4
 CATEGORIES=	games
-MASTER_SITES=	http://www.evl.uic.edu/aej/
+MASTER_SITES=	http://www.evl.uic.edu/aej/BATTALION/
 DISTFILES=	battalionSource1.4.tar.Z battalionSUN4.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
