@@ -3,7 +3,7 @@
 # Date created:		10 May 1998
 # Whom:			nordwick@xcf.berkeley.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/java-cup/Makefile,v 1.5 1999/08/25 06:16:19 obrien Exp $
 #
 
 DISTNAME=	java_cup_v10g
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.cs.princeton.edu/~appel/modern/java/CUP/
 
 MAINTAINER=	nordwick@xcf.berkeley.edu
 
-JAVASUBDIR=	jdk1.1.7
+JAVASUBDIR=	jdk1.1.8
 JAVADIR=	${PREFIX}/${JAVASUBDIR}
 JAVALIBDIR=	${JAVADIR}/lib
 
@@ -26,7 +26,7 @@ PLIST_SUB=	JAVASUBDIR=${JAVASUBDIR}
 
 do-build:
 	for JSRC in ${WRKSRC}/java_cup/*.java ${WRKSRC}/java_cup/runtime/*.java; \
-	do CLASSPATH=${WRKSRC} ${PREFIX}/jdk1.1.7/bin/javac $$JSRC; done
+	do CLASSPATH=${WRKSRC} ${PREFIX}/${JAVASUBDIR}/bin/javac $$JSRC; done
 
 do-install:
 	${MKDIR} ${JAVALIBDIR}/java_cup
