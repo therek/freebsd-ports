@@ -2,15 +2,15 @@
 # Date created:         1 Apr 1997
 # Whom:                 cjh
 #
-# $FreeBSD: ports/audio/splay/Makefile,v 1.10 2000/04/08 21:24:29 mharo Exp $
+# $FreeBSD: ports/audio/splay/Makefile,v 1.11 2001/04/02 13:57:01 cjh Exp $
 #
 # pthread library can be used, but sound quality is buggy
 #
 
 PORTNAME=		splay
-PORTVERSION=		0.9.5.1
+PORTVERSION=		0.9.5.2
 CATEGORIES=		audio
-MASTER_SITES=		ftp://splay.sourceforge.net/pub/splay/
+MASTER_SITES=		http://splay.sourceforge.net/tgz/
 
 MAINTAINER=		cjh@FreeBSD.org
 
