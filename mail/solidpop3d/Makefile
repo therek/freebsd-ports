@@ -2,7 +2,7 @@
 # Date created:		22 May 2000
 # Whom:			Marco Rodrigues <drkangel@drkangel.org>
 #
-# $FreeBSD: ports/mail/solidpop3d/Makefile,v 1.3 2000/11/12 03:56:30 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	solidpop3d
@@ -35,6 +35,7 @@ post-extract:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/spop3d ${PREFIX}/libexec
+	${INSTALL_PROGRAM} ${WRKSRC}/src/pop_auth ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/man/pop_auth.1 ${PREFIX}/man/man1
 	${INSTALL_MAN} ${WRKSRC}/man/spop3d.conf.5 ${PREFIX}/man/man5
 	${INSTALL_MAN} ${WRKSRC}/man/dot-spop3d.5 ${PREFIX}/man/man5
