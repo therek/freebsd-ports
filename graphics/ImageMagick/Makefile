@@ -2,7 +2,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.105 2001/04/10 23:15:57 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ImageMagick
@@ -70,7 +70,7 @@ PLIST_SUB+=	MODULES=''
 PLIST_SUB+=	MODULES='@comment '
 .endif
 
-.if defined(NO_X)
+.if defined(WITHOUT_X11)
 PKGNAMESUFFIX=	-nox11
 BUILD_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript6-nox11
 RUN_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript6-nox11

@@ -2,7 +2,7 @@
 # Date created:		03 May 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/libungif/Makefile,v 1.16 2001/03/21 20:27:31 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libungif
@@ -17,7 +17,7 @@ INSTALLS_SHLIB=	yes
 
 USE_LIBTOOL=	yes
 
-.ifdef (NO_X)
+.ifdef (WITHOUT_X11)
 PLIST_SUB+=	X11='@comment '
 CONFIGURE_ARGS+=--with-x=no
 PKGNAMESUFFIX=	-nox11

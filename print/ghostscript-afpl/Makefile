@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.67 2001/04/01 15:55:30 andreas Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ghostscript
@@ -40,12 +40,12 @@ LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
 WRKSRC=		${WRKDIR}/gs${PORTVERSION}
 ALL_TARGET=	all pcl3opts escputil
 
-.if !defined(NO_X)
+.if !defined(WITHOUT_X11)
 USE_XLIB=	yes
 .else
-# XXX Hack.  If you've done something like "-DNO_X" on the command line
-# (instead of NO_X=true, or similar) gmake won't pick it up.  So make sure
-# that NO_X is defined *and* has a value.
+# XXX Hack.  If you've done something like "-DWITHOUT_X11" on the command line
+# (instead of WITHOUT_X11=true, or similar) gmake won't pick it up.  So make
+# sure that NO_X is defined *and* has a value.
 MAKE_ENV+=	NO_X=true
 .endif
 

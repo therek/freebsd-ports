@@ -2,7 +2,7 @@
 # Date created:         6 June 2000
 # Whom:                 jmz
 #
-# $FreeBSD: ports/games/qix/Makefile,v 1.4 2000/09/12 13:03:57 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qix
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	jmz
 
 MAINTAINER=	jmz@FreeBSD.org
 
-.if defined(NO_X)
+.if defined(WITHOUT_X11)
 MAKE_ARGS=	NO_X11=yes
 .include <bsd.port.pre.mk>
 .else

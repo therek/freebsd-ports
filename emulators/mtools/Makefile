@@ -2,7 +2,7 @@
 # Date created:         5 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/emulators/mtools/Makefile,v 1.42 2001/04/29 00:01:37 jmz Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mtools
@@ -19,7 +19,7 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=	jmz@FreeBSD.org
 
 GNU_CONFIGURE=	yes
-.if !defined(NO_X)
+.if !defined(WITHOUT_X11)
 USE_XLIB=	yes
 CONFIGURE_ARGS=	--enable-xdf --enable-floppyd
 PLIST_SUB=	WITH_X11=""
@@ -36,7 +36,7 @@ MAN1=		mattrib.1 mbadblocks.1 mcat.1 mcd.1 mcopy.1 mdel.1 mdeltree.1 \
 		mtoolstest.1 mtools.1 mtype.1 mzip.1
 MAN5=		mtools.5
 
-.if !defined(NO_X)
+.if !defined(WITHOUT_X11)
 MAN1+=		floppyd.1 floppyd_installtest.1
 .endif
 

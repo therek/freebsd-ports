@@ -2,7 +2,7 @@
 # Date created:		6 February 1996
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tclX82/Makefile,v 1.37 2001/02/05 15:04:13 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tclX
@@ -14,7 +14,7 @@ DISTNAME=	tclX8.2.0
 
 MAINTAINER=	mi@aldan.algebra.com
 
-.ifdef NO_X
+.ifdef WITHOUT_X11
 LIB_DEPENDS=	tcl${TCL_DVER}.1:${PORTSDIR}/lang/tcl${TCL_DVER}
 PKGNAMESUFFIX=	-nox11
 .else
@@ -33,7 +33,7 @@ CONFIGURE_ARGS= --enable-shared \
 		--with-tk="${LOCALBASE}/lib/tk${TCL_VER}"
 PLIST_SUB=	TCLX_LONG_VER=8.2 TCLX_SHORT_VER=82
 
-.ifdef NO_X
+.ifdef WITHOUT_X11
 CONFIGURE_ARGS+=--enable-tk=NO
 PLIST_SUB+=	X11='@comment '
 .else
