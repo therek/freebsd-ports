@@ -3,7 +3,7 @@
 # Date created:			  16 Apr 1996
 # Whom:				  tg@freebsd.org
 #
-# $FreeBSD: ports/print/gv/Makefile,v 1.27 2000/04/09 17:49:50 cpiazza Exp $
+# $FreeBSD: ports/print/gv/Makefile,v 1.28 2000/08/27 04:18:33 obrien Exp $
 #
 
 PORTNAME=	gv
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	support/ghostscript/gnu/gv/unix
 
 MAINTAINER=	obrien@freebsd.org
 
-LIB_DEPENDS=	Xaw3d.7:${PORTSDIR}/x11-toolkits/Xaw3d
+LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 
 USE_IMAKE=	yes
 MAN1=		gv.1
