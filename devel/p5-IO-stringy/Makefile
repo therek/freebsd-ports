@@ -2,7 +2,7 @@
 # Date created:				April 27 1998
 # Whom:	      				Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-IO-stringy/Makefile,v 1.10 2000/06/09 20:43:41 will Exp $
+# $FreeBSD: ports/devel/p5-IO-stringy/Makefile,v 1.11 2000/11/25 07:20:32 dougb Exp $
 #
 
 PORTNAME=	IO-stringy
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IO
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	eivind@FreeBSD.org
+MAINTAINER=	ijliao@csie.nctu.edu.tw
 
 USE_PERL5=	YES
 
