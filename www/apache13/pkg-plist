@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache13/pkg-plist,v 1.56 2004/10/25 14:19:55 ache Exp $
+@comment $FreeBSD: ports/www/apache13/pkg-plist,v 1.57 2004/11/06 22:41:07 ache Exp $
 bin/checkgid
 bin/dbmmanage
 bin/htdigest
@@ -659,6 +659,7 @@ www/icons/world2.png
 @exec mkdir -p %D/www/proxy
 @unexec if [ -L %D/www/cgi-bin ]; then rm -f %D/www/cgi-bin; fi
 @unexec if [ -L %D/www/data ]; then rm -f %D/www/data; fi
+@unexec rm -f %D/etc/apache/httpd.conf.bak 2> /dev/null || true
 @dirrm etc/apache
 @dirrm include/apache/xml
 @dirrm include/apache
