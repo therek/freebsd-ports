@@ -2,11 +2,11 @@
 # Date created:				01 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/math/p5-Statistics-Distributions/Makefile,v 1.1 2001/01/04 00:01:32 will Exp $
+# $FreeBSD: ports/math/p5-Statistics-Distributions/Makefile,v 1.2 2001/03/01 06:38:46 vanilla Exp $
 #
 
 PORTNAME=	Statistics-Distributions
-PORTVERSION=	0.05
+PORTVERSION=	0.06
 CATEGORIES=	math perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Statistics
