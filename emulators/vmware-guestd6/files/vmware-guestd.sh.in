@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/emulators/vmware-guestd4/files/vmware-guestd.sh,v 1.4 2004/03/16 15:37:28 matusita Exp $
+# $FreeBSD: ports/emulators/vmware-guestd4/files/vmware-guestd.sh,v 1.5 2004/03/21 03:12:42 matusita Exp $
 #
 
 # PROVIDE: vmware-guestd
@@ -41,7 +41,7 @@ unset start_cmd
 stop_precmd="${checkvm_cmd}"
 unset stop_cmd
 command="${PREFIX}/sbin/vmware-guestd"
-command_args=">/dev/null 2>&1"
+command_args="--halt-command '/sbin/shutdown -p now' >/dev/null 2>&1"
 pidfile="/var/run/${name}.pid"
 
 load_rc_config $name
