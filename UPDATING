@@ -26,7 +26,7 @@ upgrades.
 
   In Mailman 2.1.5, some significant changes have been made to the
   file formats for qfiles and the pendings database.  See
-  $PREFIX/share/docs/mailman/UPGRADING for details (if you define
+  $PREFIX/share/doc/mailman/UPGRADING for details (if you define
   NOPORTDOCS, refer relevant file in an archive).
 
 20040527:
@@ -236,4 +236,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.24 2004/05/31 12:38:52 mat Exp $
+$FreeBSD: ports/UPDATING,v 1.25 2004/05/31 17:21:42 marcus Exp $
