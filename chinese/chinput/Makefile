@@ -3,7 +3,7 @@
 # Date created:                          09/07/2000
 # Whom:                                  Peng HaiJie   (phj@cn.freebsd.org)
 #
-# $FreeBSD: ports/chinese/chinput/Makefile,v 1.2 2000/09/12 05:55:09 vanilla Exp $
+# $FreeBSD: ports/chinese/chinput/Makefile,v 1.3 2000/09/12 05:56:03 vanilla Exp $
 #
 
 PORTNAME=	chinput
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.cn.freebsd.org/pub/ported/
 DISTNAME=	zh-chinput-2.1
 
 MAINTAINER=	phj@cn.FreeBSD.org
+
+BROKEN=		"Patch fails"
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
