@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.272 2003/01/18 09:05:13 edwin Exp $
+# $FreeBSD: ports/LEGAL,v 1.273 2003/01/27 15:33:45 arved Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -38,6 +38,7 @@ bb-*			ports/net/bb		FreeBSD has permission from
 						author to put bb onto CDROM.
 bcwipe			ports/security/bcwipe	Non-Commercial Distribution and
 						Use Only
+bitstream-vera		ports/x11-fonts/bitstream-vera Preliminary version not for redistribution
 bnetd			ports/games/bnetd	has been disabled for legal issue
 bro-*			ports/security/bro	No distribution due to
 						alpha status
