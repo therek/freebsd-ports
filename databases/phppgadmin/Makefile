@@ -2,15 +2,14 @@
 # Date created:		19 Jan 2001
 # Whom:			nbm
 #
-# $FreeBSD: ports/databases/phppgadmin/Makefile,v 1.1 2001/01/19 15:00:39 nbm Exp $
+# $FreeBSD: ports/databases/phppgadmin/Makefile,v 1.2 2001/04/21 11:43:10 vanilla Exp $
 #
 
 PORTNAME=	phppgadmin
-PORTVERSION=	2.2.1.p1
-PORTREVISION=	1
+PORTVERSION=	2.3
 CATEGORIES=	databases www
 MASTER_SITES=	ftp://ftp.greatbridge.org/pub/phppgadmin/stable/
-DISTNAME=	phpPgAdmin_2-2-1-pl1
+DISTNAME=	phpPgAdmin_2-3
 
 MAINTAINER=	nbm@FreeBSD.org
 
