@@ -2,21 +2,21 @@
 # Date created:		18 Feb 1996
 # Whom:			torstenb
 #
-# $FreeBSD: ports/www/libwww/Makefile,v 1.25 2001/09/17 17:40:29 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libwww
-PORTVERSION=	5.3.2
+PORTVERSION=	5.4.0
 CATEGORIES=	www devel
 MASTER_SITES=	http://www.w3.org/Library/Distribution/
 DISTNAME=	w3c-${PKGNAME}
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 CONFIGURE_ARGS=	--enable-shared --enable-static --with-zlib
-DOCDIR=		${PREFIX}/share/doc/libwww
 MAKE_ENV=	objformat=${PORTOBJFORMAT}
 
 post-install:
