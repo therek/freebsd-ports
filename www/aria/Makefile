@@ -2,14 +2,14 @@
 # Date created:        30 March 2001
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/aria/Makefile,v 1.1 2001/03/31 11:04:34 nakai Exp $
 #
 
 PORTNAME=	aria
-PORTVERSION=	0.9.1.1
+PORTVERSION=	0.10.1
 CATEGORIES=	www
 MASTER_SITES=	http://aria.rednoah.com/storage/sources/
-DISTNAME=	${PORTNAME}-0.9.1pl1
+DISTNAME=	${PORTNAME}-0.10.1test9
 
 MAINTAINER=	nakai@FreeBSD.org
 
