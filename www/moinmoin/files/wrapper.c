@@ -1,13 +1,14 @@
 /*
   MoinMoin setuid wrapper by perky
-  $FreeBSD: ports/www/moinmoin/files/wrapper.c,v 1.1 2001/10/15 12:43:36 ijliao Exp $
+  $FreeBSD: ports/www/moinmoin/files/wrapper.c,v 1.2 2002/02/15 06:43:04 kevlo Exp $
 */
 #include <unistd.h>
 
 int
 main(int argc, char *argv[], char *envp[])
 {
-	char *margv[] = { PYTHON_PATH, SCRIPT_PATH, NULL };
+	char *margv[] = { PYTHON_PATH, MOIN_PREFIX"/cgi-bin/moin.cgi", NULL };
 
+	chdir(MOIN_PREFIX);
 	return execve(PYTHON_PATH, margv, envp);
 }
