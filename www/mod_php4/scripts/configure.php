@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.142 2001/09/29 16:40:27 lioux Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.143 2001/11/05 12:07:16 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -8,7 +8,11 @@ fi
 tempfile=`/usr/bin/mktemp -t checklist`
 
 if [ "${BATCH}" ]; then
-	set \"zlib\" \"MySQL\"
+	if [ "${PHP4_OPTIONS}" ]; then
+		set ${PHP4_OPTIONS}
+	else
+		set \"zlib\" \"MySQL\"
+	fi
 else
 	/usr/bin/dialog --title "configuration options" --clear \
 		--checklist "\n\
