@@ -3,7 +3,7 @@
 # Date created:		08 Jan 2000
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/net/libnids/Makefile,v 1.1 2000/01/09 03:10:28 kris Exp $
+# $FreeBSD: ports/net/libnids/Makefile,v 1.2 2000/01/28 05:58:43 kris Exp $
 
 DISTNAME=	libnids-1.13
 CATEGORIES=	net
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
 
 GNU_CONFIGURE=	yes
 
-MAN3=		libnids
+MAN3=		libnids.3
 
 do-install:
 		${INSTALL_DATA} ${WRKSRC}/src/nids.h ${PREFIX}/include
