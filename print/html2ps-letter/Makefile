@@ -1,9 +1,9 @@
-# New ports collection makefile for:	html2ps
+# New ports collection makefile for:	html2ps-letter
 # Version required:	1.0b1
 # Date created:		Sat Nov 22 12:54:50 CET 1997
 # Whom:			andreas
 #
-# $FreeBSD: ports/print/html2ps/Makefile,v 1.9 1999/08/31 01:44:53 peter Exp $
+# $FreeBSD: ports/print/html2ps-letter/Makefile,v 1.10 1999/08/31 06:49:51 mharo Exp $
 #
 
 DISTNAME=	html2ps-1.0b1
@@ -24,13 +24,14 @@ BUILD_DEPENDS=	mogrify:${PORTSDIR}/graphics/ImageMagick \
 site_perl=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}
 USE_PERL5=	YES
 NO_BUILD=	YES
-IS_INTERACTIVE=	YES
+
+PAPERSIZE?=	letter
 
 MAN1=		html2ps.1
 MAN5=		html2psrc.5
-SCRIPTS_ENV+=	PERL5=${PERL5}
+SCRIPTS_ENV+=	PERL=${PERL} PAPERSIZE=${PAPERSIZE}
 
 do-install:
-	@cd ${WRKSRC}; ${PERL5} install
+	@cd ${WRKSRC}; ${PERL} install
 
 .include <bsd.port.mk>
