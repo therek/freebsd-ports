@@ -2,19 +2,17 @@
 # Date created:		15 August 2000
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/www/oops/Makefile,v 1.2 2000/10/08 10:23:14 asami Exp $
+# $FreeBSD: ports/www/oops/Makefile,v 1.3 2000/12/11 21:00:21 jedgar Exp $
 #
 
 PORTNAME=	oops
-PORTVERSION=	1.4.16
+PORTVERSION=	1.5.2
 CATEGORIES=	www
 MASTER_SITES=	http://zipper.paco.net/~igor/oops/
 
-FORBIDDEN=	"Remotely exploitable"
-
 MAINTAINER=	ozz@FreeBSD.org.ru
 
-LIB_DEPENDS=	db2.0:${PORTSDIR}/databases/db
+LIB_DEPENDS=	gigabase_r.2:${PORTSDIR}/databases/gigabase
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--sbindir=${PREFIX}/sbin \
