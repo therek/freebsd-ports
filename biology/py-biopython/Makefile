@@ -2,26 +2,27 @@
 # Date created:		28 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/py-biopython/Makefile,v 1.2 2000/08/05 16:01:27 will Exp $
+# $FreeBSD: ports/biology/py-biopython/Makefile,v 1.3 2000/09/08 12:23:53 tg Exp $
 #
 
 PORTNAME=	biopython
-PORTVERSION=	0.90.d02
+PORTVERSION=	0.90.d03
 CATEGORIES=	biology python
 MASTER_SITES=	http://www.biopython.org/Download/
 PKGNAMEPREFIX=	py-
-DISTNAME=	biopython-0.90-d02
+DISTNAME=	biopython-0.90-d03
 
 MAINTAINER=	johann@egenetics.com
 
-BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15 \
-		${LOCALBASE}/lib/python1.5/site-packages/Numeric/Numeric.py:${PORTSDIR}/math/numpy \
-		${LOCALBASE}/lib/python1.5/site-packages/distutils/core.py:${PORTSDIR}/misc/py-distutils
+USE_PYTHON=	yes
+
+BUILD_DEPENDS=	${PYDISTUTILS} \
+		${PYTHON_SITELIBDIR}/Numeric/Numeric.py:${PORTSDIR}/math/numpy
 
 do-build:
-	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} python setup.py build)
+	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py build)
 
 do-install:
-	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} python setup.py install)
+	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py install)
 
 .include <bsd.port.mk>
