@@ -2,14 +2,14 @@
 # Date created:		04 Janyary 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/russian/wmcyrx/Makefile,v 1.8 2000/08/03 09:26:13 asami Exp $
+# $FreeBSD: ports/russian/wmcyrx/Makefile,v 1.9 2001/01/16 17:32:14 sobomax Exp $
 #
 
 PORTNAME=	wmcyrx
 PORTVERSION=	2.1
 CATEGORIES=	russian windowmaker
-MASTER_SITES=	http://yard.hitech.mipt.ru/~mini/distrib/ \
-		ftp://ftp.ssau.ru/pub/software/Linux/Cyrillic/ \
+MASTER_SITES=	http://freebsd.org.ru/~osa/distfiles/ \
+		ftp://ftp.ssau.ru/pub/linux_soft/Cyrillic/ \
 		ftp://ftp.uven.ru/pub/cyrillic/X11/keyboard/
 
 DISTNAME=	cyrx-${PORTVERSION}
