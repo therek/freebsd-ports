@@ -1,8 +1,8 @@
 
-$FreeBSD: ports/net/l2tpd/files/patch-network.c,v 1.1 2002/10/23 13:21:53 sobomax Exp $
+$FreeBSD$
 
 --- network.c.orig	Wed Apr 10 23:09:33 2002
-+++ network.c	Wed Apr 16 16:07:19 2003
++++ network.c	Thu Oct 16 23:14:23 2003
 @@ -14,9 +14,6 @@
  #include <stdio.h>
  #include <errno.h>
@@ -30,3 +30,14 @@ $FreeBSD: ports/net/l2tpd/files/patch-network.c,v 1.1 2002/10/23 13:21:53 soboma
      server.sin_port = htons (gconfig.port);
      if ((server_socket = socket (PF_INET, SOCK_DGRAM, 0)) < 0)
      {
+@@ -364,8 +360,8 @@
+                 extract (buf->start, &tunnel, &call);
+                 if (debug_network)
+                 {
+-                    log (LOG_DEBUG, "%s: recv packet from %s, size = %d,
+-tunnel = %d, call = %d\n", __FUNCTION__, inet_ntoa (from.sin_addr), recvsize, tunnel, call);
++                    log (LOG_DEBUG, "%s: recv packet from %s, size = %d, "
++"tunnel = %d, call = %d\n", __FUNCTION__, inet_ntoa (from.sin_addr), recvsize, tunnel, call);
+                 }
+                 if (packet_dump)
+                 {
