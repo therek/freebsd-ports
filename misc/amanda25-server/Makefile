@@ -2,12 +2,12 @@
 # Date created:				28th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/misc/amanda24-server/Makefile,v 1.39 2001/02/02 21:02:26 jeh Exp $
+# $FreeBSD: ports/misc/amanda24-server/Makefile,v 1.40 2001/02/05 20:21:02 jeh Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
 PORTVERSION=	2.4.2p1
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	amanda
