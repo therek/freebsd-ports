@@ -3,13 +3,14 @@
 # Date created:		17 March 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/namazu/Makefile,v 1.4 1999/08/31 06:45:53 mharo Exp $
+# $FreeBSD: ports/japanese/namazu/Makefile,v 1.5 2000/02/01 13:39:37 flathill Exp $
 #
 
 DISTNAME=	namazu-1.3.0.11
 PKGNAME=	ja-namazu-1.3.0.11
 CATEGORIES=	japanese textproc
-MASTER_SITES=	http://openlab.ring.gr.jp/namazu/release/
+MASTER_SITES=	http://www.namazu.org/stable/ \
+		http://people.FreeBSD.org/~flathill/distfiles/
 
 MAINTAINER=	flathill@FreeBSD.org
 
