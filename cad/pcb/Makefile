@@ -2,13 +2,14 @@
 # Date created:		19 October 1994
 # Whom:			mr
 #
-# $FreeBSD: ports/cad/pcb/Makefile,v 1.23 1999/11/25 06:38:04 jseger Exp $
+# $FreeBSD: ports/cad/pcb/Makefile,v 1.24 2000/04/08 23:20:04 mharo Exp $
 #
 
 PORTNAME=	pcb
 PORTVERSION=	1.7
 CATEGORIES=	cad
-MASTER_SITES=	ftp://ftp.netlab.is.tsukuba.ac.jp/pub/linux/Plamo/Plamo-current/contrib/Electronic/sources/
+MASTER_SITES=	ftp://ftp.riken.go.jp/pub/Linux/plamo/Plamo-1.4.x/contrib/Electronic/sources/ \
+		ftp://sunsite.sut.ac.jp/pub/archives/linux/jp-linux/plamo/Plamo-1.4.x/contrib/Electronic/sources/
 
 MAINTAINER=	jseger@FreeBSD.org
 
