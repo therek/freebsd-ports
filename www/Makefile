@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.267 2000/10/28 05:11:11 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.268 2000/10/28 06:09:53 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -68,6 +68,7 @@
     SUBDIR += jesred
     SUBDIR += jetty
     SUBDIR += junkbuster
+    SUBDIR += junkbuster-zlib
     SUBDIR += kannel
     SUBDIR += kdreamsite
     SUBDIR += knowledgekit
