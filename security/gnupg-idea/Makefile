@@ -2,7 +2,7 @@
 # Date created:		10 May, 2000
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/security/gnupg-idea/Makefile,v 1.6 2000/11/06 06:42:01 knu Exp $
+# $FreeBSD: ports/security/gnupg-idea/Makefile,v 1.7 2001/04/30 00:34:26 kris Exp $
 #
 
 PORTNAME=	gnupg-idea
@@ -15,7 +15,7 @@ DISTFILES=	${CONTRIB:S|$|.c|}
 DIST_SUBDIR=	${PORTNAME}
 EXTRACT_ONLY=	# none
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/bin/gpg:${PORTSDIR}/security/gnupg
 
