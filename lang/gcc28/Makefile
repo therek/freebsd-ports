@@ -3,7 +3,7 @@
 # Date created:				17 Jan 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/gcc28/Makefile,v 1.31 2000/11/10 17:37:13 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gcc
@@ -20,6 +20,8 @@ PATCHFILES=	bounds-checking-2.8.1-1.01.tar.gz
 MAINTAINER=	obrien@FreeBSD.org
 
 NO_CDROM=	'old version, not worth the cost in real estate'
+
+LATEST_LINK=	gcc28
 
 .include <bsd.port.pre.mk>
 

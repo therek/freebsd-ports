@@ -3,7 +3,7 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc295/Makefile,v 1.79 2001/03/19 01:13:24 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gcc
@@ -21,6 +21,8 @@ DISTFILES=	gcc-core-${GCC_REV}${EXTRACT_SUFX} \
 MAINTAINER=	obrien@FreeBSD.org
 
 USE_BZIP2=	yes
+
+LATEST_LINK=	gcc295
 
 .include <bsd.port.pre.mk>
 

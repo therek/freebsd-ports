@@ -3,7 +3,7 @@
 # Date created:				17 Jan 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/gcc27/Makefile,v 1.1.1.1 2000/03/22 19:10:40 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gcc
@@ -19,6 +19,8 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} libg++-2.7.2${EXTRACT_SUFX}
 MAINTAINER=	obrien@FreeBSD.org
 
 NO_CDROM=	'old version, not worth the cost in real estate'
+
+LATEST_LINK=	gcc27
 
 .include <bsd.port.pre.mk>
 
