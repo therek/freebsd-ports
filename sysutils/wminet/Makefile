@@ -2,7 +2,7 @@
 # Date created:        23 May 1999
 # Whom:                Stephen Kiernan <sk-ports@vegamuse.org>
 #
-# $FreeBSD: ports/sysutils/wminet/Makefile,v 1.5 2000/04/22 10:13:42 mharo Exp $
+# $FreeBSD: ports/sysutils/wminet/Makefile,v 1.6 2000/08/03 09:26:32 asami Exp $
 #
 
 PORTNAME=	wminet
@@ -12,14 +12,14 @@ MASTER_SITES=	http://www.neotokyo.org/illusion/
 
 MAINTAINER=	sk-ports@vegamuse.org
 
+WRKSRC=		${WRKDIR}/wminet.app/wminet
+
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 
-WRKSRC=		${WRKDIR}/wminet.app/wminet
-
-.if !defined(NOPORTDOCS)
 post-install:
-	${MKDIR} ${PREFIX}/share/doc/wminet
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/wminet
 	${INSTALL_MAN} ${WRKSRC}/../HINTS ${PREFIX}/share/doc/wminet
 .endif
 
