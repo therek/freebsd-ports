@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.22 2002/04/12 10:34:54 tg Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.23 2002/04/17 11:34:47 tg Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -11,9 +11,9 @@ Python_Include_MAINTAINER=	tg@FreeBSD.org
 
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the Python
-# language. It's automatically included when USE_PYTHON, PYTHON_VERSION or
-# USE_PYDISTUTILS is defined in the ports' makefile. Define PYTHON_VERSION
-# to override the defaults that USE_PYTHON would give you.
+# language. It's automatically included when USE_PYTHON or PYTHON_VERSION
+# is defined in the ports' makefile. Define PYTHON_VERSION to override the
+# defaults that USE_PYTHON would give you.
 #
 # The variables:
 #
