@@ -2,7 +2,7 @@
 # Date created:		2 March 1997
 # Whom:			Yoshiro MIHIRA
 #
-# $FreeBSD: ports/japanese/oleo/Makefile,v 1.9 2000/04/11 14:15:53 knu Exp $
+# $FreeBSD: ports/japanese/oleo/Makefile,v 1.10 2000/08/03 14:28:29 sanpei Exp $
 #
 
 PORTNAME=	oleo
@@ -19,6 +19,9 @@ PATCHFILES=	${DISTNAME}-${PORTVERSION}jb2.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=    sanpei@FreeBSD.org
+
+# xmkmf is for configure script, not for USE_IMAKE.
+BUILD_DEPENDS=	xmkmf:${PORTSDIR}/devel/imake-4
 
 CONFIGURE_ENV= CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
