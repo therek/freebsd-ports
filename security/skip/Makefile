@@ -3,7 +3,7 @@
 # Date created:         		26 November 1997
 # Whom:                 		Archie L. Cobbs <archie@whistle.com>
 #
-# $FreeBSD: ports/security/skip/Makefile,v 1.15 1999/12/29 05:32:39 peter Exp $
+# $FreeBSD: ports/security/skip/Makefile,v 1.16 2000/01/26 01:55:00 archie Exp $
 
 DISTNAME=		skip-1.0
 CATEGORIES=		security
@@ -63,5 +63,11 @@ post-patch:
 	  ${SED} '/^#pragma ident/d' < $$FILE > $$FILE.new ; \
 	  ${MV} $$FILE.new $$FILE; \
 	done
+
+# This is for port maintenance, uncomment to regenerate patch set
+#diffs:
+#	rm -rf patches/patch-*
+#	diff -ur --unidirectional-new-file skipsrc-1.0.orig work.new \
+#		| split -p ^diff - patches/patch-
 
 .include <bsd.port.mk>
