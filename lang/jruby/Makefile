@@ -2,11 +2,11 @@
 # Date created:			20 September 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/jruby/Makefile,v 1.2 2001/09/23 05:41:25 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jruby
-PORTVERSION=	0.1.7
+PORTVERSION=	0.2.0
 CATEGORIES=	lang ruby java
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
