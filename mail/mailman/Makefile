@@ -2,11 +2,12 @@
 # Date created:		10 July 2000
 # Whom:			n_hibma@qubesoft.com
 #
-# $FreeBSD: ports/mail/mailman/Makefile,v 1.2 2000/08/05 00:31:40 ade Exp $
+# $FreeBSD: ports/mail/mailman/Makefile,v 1.3 2000/08/05 00:50:34 ade Exp $
 #
 
 PORTNAME=	mailman
 PORTVERSION=	2.0b5
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=   http://download.sourceforge.net/mailman/
 DISTNAME=       mailman-2.0beta5
