@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.169 2000/10/14 04:51:34 gshapiro Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.170 2000/10/20 23:00:57 kris Exp $
 #
 
     SUBDIR += adcomplain
@@ -8,6 +8,7 @@
     SUBDIR += balsa
     SUBDIR += bbmail
     SUBDIR += biffer
+    SUBDIR += bsmtp
     SUBDIR += bulk_mailer
     SUBDIR += cclient
     SUBDIR += cclient-maildir
