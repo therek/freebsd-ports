@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.292 2000/07/28 15:42:29 sobomax Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.293 2000/07/31 13:23:04 nbm Exp $
 #
 
     SUBDIR += 9term
@@ -57,6 +57,7 @@
     SUBDIR += props
     SUBDIR += qrash
     SUBDIR += rxvt
+    SUBDIR += stockticker_applet
     SUBDIR += sxpc
     SUBDIR += tkgoodstuff
     SUBDIR += tycoon
