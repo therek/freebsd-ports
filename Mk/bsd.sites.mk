@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.80 2002/03/17 04:51:20 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.81 2002/04/09 09:40:38 sobomax Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -228,15 +228,11 @@ MASTER_SITE_SOURCEWARE+= \
 	ftp://sunsite.org.uk/Mirrors/sourceware.cygnus.com/pub/%SUBDIR%/
 
 MASTER_SITE_SOURCEFORGE+= \
-	http://prdownloads.sourceforge.net/%SUBDIR%/ \
-	ftp://ftp3.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
-	http://ftp3.sourceforge.net/%SUBDIR%/ \
-	ftp://ftp1.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
-	http://ftp1.sourceforge.net/%SUBDIR%/ \
-	ftp://ftp2.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
-	http://ftp2.sourceforge.net/%SUBDIR%/ \
+	http://us.dl.sourceforge.net/%SUBDIR%/ \
+	http://eu.dl.sourceforge.net/%SUBDIR%/ \
+	ftp://us.dl.sourceforge.net/%SUBDIR%/ \
+	ftp://eu.dl.sourceforge.net/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/sourceforge/%SUBDIR%/ \
-	http://telia.dl.sourceforge.net/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/sourceforge/%SUBDIR%/
 
 MASTER_SITE_SUNSITE+=	\
