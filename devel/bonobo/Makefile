@@ -2,12 +2,11 @@
 # Date created:				8th October 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/bonobo/Makefile,v 1.36 2001/05/14 21:58:30 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bonobo
-PORTVERSION=	1.0.4
-PORTREVISION=	1
+PORTVERSION=	1.0.6
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/bonobo
@@ -20,9 +19,8 @@ USE_X_PREFIX=	yes
 USE_PERL5=	yes
 USE_GMAKE=	yes
 USE_GNOMECTRL=	yes
-USE_LIBTOOL=	yes
+GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
-LIBTOOLFILES=	configure libefs/configure
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
@@ -32,10 +30,5 @@ pre-patch:
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
-
-# XXX: hack - will be fixed in next release - say hi to
-#      GNOME release engineering :)
-post-patch:
-	@find ${WRKSRC} -name '*.idl' | xargs touch
 
 .include <bsd.port.mk>
