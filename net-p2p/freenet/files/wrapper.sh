@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Under a BSDL license. Copyright by Mario S F Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: ports/net/freenet/files/wrapper.sh,v 1.4 2004/03/12 01:02:48 lioux Exp $
+# $FreeBSD: ports/net/freenet/files/wrapper.sh,v 1.5 2004/11/28 18:46:54 lioux Exp $
 
 export JAVA_VERSION
 
@@ -9,7 +9,7 @@ PREFIX="%%PREFIX%%"
 # java
 JAVA_VERSION="%%JAVA_VERSION%%"
 JAVAVM_CALL="%%JAVAVM%%"
-JAR_DIR="%%JAR_DIR%%"
+JAVAJARDIR="%%JAVAJARDIR%%"
 JAR_FILES="%%JAR_FILES%%"
 JAR_START="%%JAR_START%%"
 # data
@@ -84,10 +84,7 @@ prepare_home_dir () {
   # link the jar files
   for jar in ${JAR_FILES}
   do
-	if [ ! -h ${HOME_DIR}/${jar} ]
-	then
-		ln -sf ${PREFIX}/${JAR_DIR}/${jar} ${HOME_DIR}/${jar}
-	fi
+	ln -sf ${PREFIX}/${JAVAJARDIR}/${jar} ${HOME_DIR}/${jar}
   done
 }
 
