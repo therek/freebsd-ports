@@ -2,11 +2,11 @@
 # Date created:				7 April 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/mod_mp3/Makefile,v 1.12 2001/08/12 16:14:01 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mod_mp3
-PORTVERSION=	0.25
+PORTVERSION=	0.31
 CATEGORIES=	www audio
 MASTER_SITES=	http://media.tangent.org/ \
 		ftp://ftp.tangent.org/pub/apache/ \
@@ -17,6 +17,7 @@ MAINTAINER=	ports@FreeBSD.org
 BUILD_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
 
+HAS_CONFIGURE=	yes
 MAKE_ARGS+=	APXS="${APXS}"
 
 APXS?=		${LOCALBASE}/sbin/apxs
