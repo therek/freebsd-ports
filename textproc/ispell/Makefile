@@ -2,17 +2,16 @@
 # Date created:				6 November 1994
 # Whom:					jmz
 #
-# $FreeBSD: ports/textproc/ispell/Makefile,v 1.59 2001/07/02 15:14:28 jmz Exp $
+# $FreeBSD: ports/textproc/ispell/Makefile,v 1.60 2001/08/01 05:03:54 dinoex Exp $
 #
 
 PORTNAME?=	ispell
-PORTVERSION?=	3.2.04
-PORTREVISION=	1
+PORTVERSION?=	3.2.05
 CATEGORIES+=	textproc
 MASTER_SITES=	http://fmg-www.cs.ucla.edu/geoff/tars/
 
 MAINTAINER?=	jmz@FreeBSD.org
-ISPELL_FILES= 	ispell-3.2.04.tar.gz
+ISPELL_FILES= 	ispell-3.2.05.tar.gz
 
 MAN1=		ispell.1
 MAN4=		ispell.4 english.4
