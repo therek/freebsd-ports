@@ -2,7 +2,7 @@
 # Date created:				6 Jul 2000
 # Whom:					Carl Johan Madestrand
 #
-# $FreeBSD: ports/audio/teknap/Makefile,v 1.3 2000/07/06 03:48:38 will Exp $
+# $FreeBSD: ports/audio/teknap/Makefile,v 1.4 2000/09/17 18:58:40 ade Exp $
 #
 
 PORTNAME=	TekNap
@@ -13,9 +13,6 @@ MASTER_SITES=	ftp://ftp.teknap.com/pub/TekNap/ \
 
 MAINTAINER=	cj@vallcom.net
 
-.if defined(WITH_GTK)
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-.endif
 .if defined(WITH_MP3)
 BUILD_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 .endif
@@ -23,41 +20,41 @@ BUILD_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 BUILD_DEPENDS=	xmms:${PORTSDIR}/audio/xmms
 .endif
 
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 WRKSRC=		${WRKDIR}/TekNap
-GNU_CONFIGURE=	yes
-USE_GMAKE=	yes
 
-.if defined(WITH_GTK)
-CONFIGURE_ARGS+= 	--with-gtk
-.endif
-.if defined(WITH_MP3)
-CONFIGURE_ARGS+=	--enable-mp3
-.endif
-.if defined(WITH_XMMS)
-CONFIGURE_ARGS+=	--enable-xmms
-.endif
-CONFIGURE_ARGS+=	--exec-prefix="${PREFIX}/share" \
-			--bindir="${PREFIX}/bin" \
-			--datadir="${PREFIX}/share" \
-			--libdir="${PREFIX}/share"
-
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}"
-MAKE_ENV+=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
-		INSTALL_DATA="${INSTALL_DATA}"
 PLIST_SUB+=	PORTVERSION="${PORTVERSION}"
+
+USE_GMAKE=	yes
+WANT_GTK=	yes
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
+
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_GTK)
+USE_GTK=	yes
+CONFIGURE_ARGS+=--with-gtk
+.else
+CONFIGURE_ARGS+=--without-gtk
+.endif
+
+.if defined(WITH_MP3)
+CONFIGURE_ARGS+=--enable-mp3
+.endif
+
+.if defined(WITH_XMMS)
+CONFIGURE_ARGS+=--enable-xmms
+.endif
 
 pre-extract:
 	@${ECHO} "Available switches:"
 	@${ECHO} "-------------------"
-	@${ECHO} "WITH_GTK - Add GTK support"
 	@${ECHO} "WITH_MP3 - Support MP3 playback"
 	@${ECHO} "WITH_XMMS - Support XMMS"
+
 pre-configure:
-	${PERL} -pi -e "s:-lc_r:-pthread:g" ${WRKSRC}/configure
+	@${PERL} -pi -e "s:-lc_r:-pthread:g" ${WRKSRC}/configure
 
 post-install:
 .if !defined(NOPORTDOCS)
@@ -70,4 +67,4 @@ post-install:
 	@${ECHO}
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

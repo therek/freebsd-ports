@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim6/Makefile,v 1.83 2000/09/02 00:05:59 obrien Exp $
+# $FreeBSD: ports/editors/vim6/Makefile,v 1.84 2000/09/26 14:48:33 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -45,15 +45,15 @@ PLIST_SUB=	VIM_VER=${DISTNAME:S/-//:S/.//}
 MAN1=		vim.1 vimtutor.1 xxd.1 ectags.1
 MLINKS=		vim.1 rvim.1  vim.1 rview.1  ectags.1 etags.1
 
+.include <bsd.port.pre.mk>
+
 .if !defined(LITE)
 MLINKS+=	vim.1 gvim.1  vim.1 gview.1  vim.1 rgvim.1  vim.1 rgview.1
 
 MAKE_ARGS+=	X_LIBS=-lxpg4 CONF_OPT_MAX="--enable-max-features"
 
-.if defined(HAVE_GTK)
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+.if defined(WITH_GTK)
+USE_GTK=	yes
 MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=gtk --with-gtk-prefix=${X11BASE} --enable-multibyte --enable-fontset --enable-multibyte --enable-xim"
 .elif defined(HAVE_MOTIF)
 REQUIRES_MOTIF=	yes
@@ -83,4 +83,4 @@ post-install:
 	@${RM} -f ${PREFIX}/man/man1/etags.1
 	@${MV} ${PREFIX}/man/man1/ctags.1 ${PREFIX}/man/man1/ectags.1
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
