@@ -2,7 +2,7 @@
 # Date created:        20 April 1997
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/games/xfrisk/Makefile,v 1.9 2000/04/14 12:27:22 asami Exp $
+# $FreeBSD: ports/games/xfrisk/Makefile,v 1.10 2000/05/30 03:27:59 will Exp $
 #
 
 PORTNAME=	xfrisk
@@ -13,7 +13,7 @@ DISTNAME=	XFrisk-${PORTVERSION}
 
 MAINTAINER=	mph@freebsd.org
 
-LIB_DEPENDS=	Xaw.6:${PORTSDIR}/x11-toolkits/Xaw3d
+LIB_DEPENDS=	Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d
 
 NO_CDROM=	Possible trademark infringement
 
