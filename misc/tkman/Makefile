@@ -2,7 +2,7 @@
 # Date created:         27 Dec 1994
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/tkman/Makefile,v 1.41 2000/06/23 13:43:59 sobomax Exp $
+# $FreeBSD: ports/misc/tkman/Makefile,v 1.42 2000/06/26 12:53:41 tg Exp $
 #
 
 PORTNAME=	tkman
@@ -26,5 +26,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/tkman-help.html ${PREFIX}/share/doc/tkman
 .endif
 	${INSTALL_SCRIPT} ${WRKSRC}/contrib/tkmanclient ${PREFIX}/bin
+	@${MKDIR} ${PREFIX}/etc/periodic/weekly
+	${INSTALL_SCRIPT} ${FILESDIR}/310.index_manpages ${PREFIX}/etc/periodic/weekly
 
 .include <bsd.port.mk>
