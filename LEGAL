@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.314 2003/12/04 11:42:44 pav Exp $
+# $FreeBSD: ports/LEGAL,v 1.315 2003/12/08 02:02:26 oliver Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -65,6 +65,8 @@ clibpdf*		ports/print/clibpdf	License required for bundling
 						use, and use by educational,
 						non-profit, and government
 						organizations.
+CODE2000.ZIP		ports/x11-fonts/code2000	Only unmodified original
+						package can be distributed.
 contool-*		ports/sysutils/contool	Don't incorporate the source
 						code into a product which is
 						subsequently sold.
