@@ -2,16 +2,17 @@
 # Date created:				28 DEC 1998
 # Whom:					Steven G. Kargl
 #
-# $FreeBSD: ports/lang/f2c/Makefile,v 1.4 2000/04/12 06:18:24 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	f2c
 PORTVERSION=	3.0.0
 CATEGORIES=	lang
-MASTER_SITES=	ftp://troutmask.apl.washington.edu/pub/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	lioux
 DISTNAME=	f2c-freebsd.3.0.0
 
-MAINTAINER=	kargl@troutmask.apl.washington.edu
+MAINTAINER=	ports@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 
