@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD:$
+# $FreeBSD: ports/net/openldap21/files/slurpd.sh,v 1.1 2003/02/24 04:27:22 edwin Exp $
 #
 
 slurpd=@@PREFIX@@/libexec/slurpd
-pidfile=/var/run/slurpd.pid
+pidfile=/var/run/ldap/slurpd.pid
 
 case "$1" in
 start)
