@@ -2,7 +2,7 @@
 # Date created:        20 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/www/vrweb/Makefile,v 1.15 2000/01/27 10:58:12 nakai Exp $
+# $FreeBSD: ports/www/vrweb/Makefile,v 1.16 2000/04/10 00:07:03 cpiazza Exp $
 #
 
 PORTNAME=	vrweb
@@ -39,5 +39,7 @@ do-install:
 	${MKDIR} ${PREFIX}/share/doc/vrweb/icons
 	${CP} ${WRKDIR}/icons/* ${PREFIX}/share/doc/vrweb/icons
 .endif
+
+BROKEN=	"does not compile with recent Mesa"
 
 .include <bsd.port.mk>
