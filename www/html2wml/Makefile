@@ -2,11 +2,11 @@
 # Date created:        15 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/www/html2wml/Makefile,v 1.1 2001/03/21 03:32:59 okazaki Exp $
+# $FreeBSD: ports/www/html2wml/Makefile,v 1.2 2001/05/19 19:19:09 greid Exp $
 #
 
 PORTNAME=	html2wml
-PORTVERSION=	0.4.2
+PORTVERSION=	0.4.5r2
 CATEGORIES=	www
 MASTER_SITES=	http://maddingue.free.fr/techie/download/Html2Wml/
 
@@ -41,8 +41,10 @@ post-install:
 .endfor
 	${INSTALL_DATA} ${WRKSRC}/t/form.html \
 		${PREFIX}/share/doc/html2wml/t
-.for D in inc_para.wml inc_prev.wml include.html links.html mix1.html \
-	mix2.html struct.html xtreme.html
+.for D in inc_para.wml inc_prev.wml mix1.html mix2.html struct.html \
+	t-a.html t-anchor.html t-br.html t-double-tags.html t-extcharset.html \
+	t-frames.html t-img.html t-include.html t-nest.html t-no-tag.html \
+	t-special-chars.html t-urls.html
 	${INSTALL_DATA} ${WRKSRC}/t/samples/$D \
 		${PREFIX}/share/doc/html2wml/t/samples
 .endfor
