@@ -2,10 +2,10 @@
 # Date created:		Oct 27, 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/comms/kermit/Makefile,v 1.21 2000/02/20 10:10:25 joerg Exp $
+# $FreeBSD: ports/comms/kermit/Makefile,v 1.22 2000/04/08 23:22:32 mharo Exp $
 #
 
-PKGNAME=	kermit
+PORTNAME=	kermit
 PORTVERSION=	7.0.196
 CATEGORIES=	comms
 MASTER_SITES=	ftp://kermit.columbia.edu/kermit/archives/
