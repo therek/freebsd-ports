@@ -4,7 +4,7 @@
 #
 # %%APP_TITLE%% startup script.
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/jakarta-tomcat4/files/startup.sh,v 1.3 2002/03/30 14:51:12 znerd Exp $
 #
 
 
@@ -13,15 +13,17 @@ MYSELF=`basename $0`
 
 case "$1" in
 	start)
+		echo -n ' '
 		truncate -s 0 %%PID_FILE%%
 		chown %%USER%%:%%GROUP%% %%PID_FILE%%
 		chmod 600 %%PID_FILE%%
-		su -f -m %%USER%% -c "exec %%CONTROL_SCRIPT%% start > /dev/null" && echo -n ' %%APP_SHORTNAME%%'
+		su -f -m %%USER%% -c "exec %%CONTROL_SCRIPT%% start" >/dev/null && echo -n '%%APP_SHORTNAME%%'
 		;;
 	stop)
+		echo -n ' '
 		chown %%USER%%:%%GROUP%% %%PID_FILE%%
 		chmod 600 %%PID_FILE%%
-		su -f -m %%USER%% -c "exec %%CONTROL_SCRIPT%% stop > /dev/null" && echo -n ' %%APP_SHORTNAME%%'
+		su -f -m %%USER%% -c "exec %%CONTROL_SCRIPT%% stop" >/dev/null 2>&1 ; echo -n '%%APP_SHORTNAME%%'
 		;;
 	*)
 		echo ""
