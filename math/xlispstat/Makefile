@@ -1,19 +1,19 @@
 # New ports collection makefile for:    xlisp-stat
-# Version required:     3.52
 # Date created:         Tue Aug 15 17:57:48 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/math/xlispstat/Makefile,v 1.8 1999/08/30 11:53:41 peter Exp $
+# $FreeBSD: ports/math/xlispstat/Makefile,v 1.9 1999/12/23 23:50:12 steve Exp $
 #
 
-DISTNAME=	xlispstat-3-52-9
-PKGNAME=	xlispstat-3.52.9
+PORTNAME=	xlispstat
+PORTVERSION=	3.52.9
 CATEGORIES=	math lang
 MASTER_SITES=	ftp://ftp.stat.umn.edu/pub/xlispstat/current/   \
 		http://lib.stat.cmu.edu/xlispstat/Src/current/  \
 		ftp://ftp.stat.unipg.it/pub/stat/xlispstat/current/     \
 		ftp://srsuna.shlrc.mq.edu.au/pub/xlispstat/current/     \
 		ftp://statlab.uni-heidelberg.de/pub/mirrors/umn/xlispstat/current
+DISTNAME=	xlispstat-3-52-9
 
 MAINTAINER=	erich@FreeBSD.org
 

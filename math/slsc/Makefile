@@ -1,15 +1,15 @@
 # New ports collection makefile for:	slsc
-# Version required:		0.2.3
 # Date created:			6 January 2000
 # Whom:				Jonathan McDowell <noodles@earth.li>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/slsc/Makefile,v 1.1 2000/01/29 06:23:20 steve Exp $
 #
 
-DISTNAME=	slsc
-PKGNAME=	slsc-0.2.3
+PORTNAME=	slsc
+PORTVERSION=	0.2.3
 CATEGORIES=	math
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/slsc/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	noodles@earth.li
 

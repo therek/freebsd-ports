@@ -1,12 +1,12 @@
 # New ports collection makefile for:		geg
-# Version required:				1.0.1
 # Date created:					8 Aug 1998
 # Whom:						rom
 #
-# $FreeBSD: ports/math/geg/Makefile,v 1.12 1999/08/25 07:09:49 obrien Exp $
+# $FreeBSD: ports/math/geg/Makefile,v 1.13 1999/11/01 01:02:35 steve Exp $
 #
 
-DISTNAME=	geg-1.0.1
+PORTNAME=	geg
+PORTVERSION=	1.0.1
 CATEGORIES=	math
 MASTER_SITES=	http://www.infolaunch.com/~daveb/ \
 		ftp://metalab.unc.edu/pub/Linux/science/visualization/plotting/

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	METIS
-# Version required:	4.0
 # Date created:         26 Oct 97
 # Whom:                 Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/metis/Makefile,v 1.5 1999/08/25 07:11:54 obrien Exp $
 #
 
-DISTNAME=	metis-4.0
+PORTNAME=	metis
+PORTVERSION=	4.0
 CATEGORIES=	math
 MASTER_SITES=	http://www-users.cs.umn.edu/~karypis/metis/metis/files/
 

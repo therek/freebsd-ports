@@ -1,12 +1,12 @@
 # New ports collection makefile for:	PDL
-# Version required:	2.0
 # Date created:		08 February 1999
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/math/PDL/Makefile,v 1.4 2000/03/20 23:25:15 jseger Exp $
+# $FreeBSD: ports/math/PDL/Makefile,v 1.5 2000/03/22 00:00:27 mharo Exp $
 #
 
-DISTNAME=	PDL-2.0
+PORTNAME=	PDL
+PORTVERSION=	2.0
 CATEGORIES=	math perl5
 MASTER_SITES=	http://www.fastlane.net/~jcerney/%SUBDIR%/ \
 		${MASTER_SITE_PERL_CPAN}

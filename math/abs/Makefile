@@ -1,16 +1,16 @@
 # New ports collection makefile for:   abs
-# Version required:    0.5
 # Date created:        20 January 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/math/abs/Makefile,v 1.4 1999/08/25 07:06:21 obrien Exp $
+# $FreeBSD: ports/math/abs/Makefile,v 1.5 1999/11/12 21:04:43 jim Exp $
 #
 
-DISTNAME=	abs-src-0.6a
-PKGNAME=	abs-0.6
+PORTNAME=	abs
+PORTVERSION=	0.6
 CATEGORIES=	math
 MASTER_SITES=	http://www.ping.be/bertin/ \
 		http://www.giovannelli.it/~gmarco/files/
+DISTNAME=	abs-src-0.6a
 
 MAINTAINER=	gmarco@giovannelli.it
 

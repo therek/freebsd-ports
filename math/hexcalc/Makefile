@@ -3,13 +3,14 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/math/hexcalc/Makefile,v 1.10 1999/08/25 07:10:41 obrien Exp $
+# $FreeBSD: ports/math/hexcalc/Makefile,v 1.11 1999/08/31 06:47:45 mharo Exp $
 #
 
-DISTNAME=	hexcalc
-PKGNAME=	hexcalc-1.11
+PORTNAME=	hexcalc
+PORTVERSION=	1.11
 CATEGORIES=	math
 MASTER_SITES=	ftp://aixpdslib.seas.ucla.edu/pub/hexcalc/RISC/3.2/src/
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	..tar.Z
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	dcdflib
-# Version required:	1.1
 # Date created:		08 September 1998
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/dcdflib/Makefile,v 1.2 1999/08/25 07:07:45 obrien Exp $
 #
 
-DISTNAME=	dcdflib.c-1.1
+PORTNAME=	dcdflib.c
+PORTVERSION=	1.1
 CATEGORIES=	math
 MASTER_SITES=	ftp://odin.mda.uth.tmc.edu/pub/source/
 

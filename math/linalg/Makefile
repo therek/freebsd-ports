@@ -1,12 +1,12 @@
 # New ports collection makefile for:	LinAlg
-# Version required:			4.3
 # Date created:				August 25, 1999
 # Whom:					Oleg Kiselyov <oleg@pobox.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/linalg/Makefile,v 1.1 2000/04/07 01:47:49 will Exp $
 #
 
-DISTNAME=	linalg-4.3
+PORTNAME=	linalg
+PORTVERSION=	4.3
 CATEGORIES=	math
 MASTER_SITES=	http://people.FreeBSD.org/~will/distfiles/
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	SuperLU
-# Version required:	2.0
 # Date created:		31 Oct 97
 # Whom:			Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/math/superlu/Makefile,v 1.6 1999/08/25 07:16:08 obrien Exp $
+# $FreeBSD: ports/math/superlu/Makefile,v 1.7 1999/12/23 19:30:16 steve Exp $
 #
 
-DISTNAME=	superlu_2.0
-PKGNAME=	superlu-2.0
+PORTNAME=	superlu
+PORTVERSION=	2.0
 CATEGORIES=	math
 MASTER_SITES=	http://www.nersc.gov/~xiaoye/SuperLU/
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 

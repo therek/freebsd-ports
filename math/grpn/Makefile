@@ -1,12 +1,12 @@
 # New ports collection makefile for:	grpn
-# Version required:			1.1.0
 # Date created:				25 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/grpn/Makefile,v 1.1.1.1 1999/11/26 20:50:14 steve Exp $
 #
 
-DISTNAME=	grpn-1.1.0
+PORTNAME=	grpn
+PORTVERSION=	1.1.0
 CATEGORIES=	math gnome
 MASTER_SITES=	http://wilkins.ne.mediaone.net/grpn/
 

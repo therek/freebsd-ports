@@ -1,16 +1,16 @@
 # New ports collection makefile for:	femlab
-# Version required:	v1.1
 # Date created:		19 June 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/femlab/Makefile,v 1.5 1999/08/25 07:08:17 obrien Exp $
 #
 
-DISTNAME=	femlab-2d-v1.1
-PKGNAME=	femlab-1.1
+PORTNAME=	femlab
+PORTVERSION=	1.1
 CATEGORIES=	math cad
 MASTER_SITES=	ftp://ftp.md.chalmers.se/pub/Femlab/	\
 		ftp://ftp.ifs.hr/pub/SciUtil/
+DISTNAME=	femlab-2d-v${PORTVERSION}
 
 MAINTAINER=	giffunip@asme.org
 

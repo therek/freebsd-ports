@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sc
-# Version required:		6.21
 # Date created:			30 July 1998
 # Whom:				Heinz Tschabitscher
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/sc/Makefile,v 1.2 1999/08/25 07:14:23 obrien Exp $
 #
 
-DISTNAME=	sc-6.21
+PORTNAME=	sc
+PORTVERSION=	6.21
 CATEGORIES=	math
 MASTER_SITES=	ftp://gatekeeper.dec.com/pub/misc/
 EXTRACT_SUFX=	.tar.Z

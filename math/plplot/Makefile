@@ -1,18 +1,18 @@
 # New ports collection makefile for:    plplot
-# Version required:     4p99j
 # Date created:         03 Oct 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/plplot/Makefile,v 1.11 2000/01/14 17:35:21 imura Exp $
+# $FreeBSD: ports/math/plplot/Makefile,v 1.12 2000/02/02 21:23:24 jedgar Exp $
 #
 
-DISTNAME=       plplot4p99j
-PKGNAME=	plplot-4.99j
+PORTNAME=	plplot
+PORTVERSION=	4.99j
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.uniovi.es/pub6/graphics/plotting/ \
 		ftp://dino.ph.utexas.edu/plplot/distrib/alpha/ \
 		ftp://ftp.u-aizu.ac.jp/pub/misc/tools/plot/plplot/distrib/alpha/ \
 		ftp://ftp.che.utexas.edu/pub/graphics/
+DISTNAME=       plplot4p99j
 
 MAINTAINER=	ports@FreeBSD.org
 

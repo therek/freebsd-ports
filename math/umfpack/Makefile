@@ -1,15 +1,15 @@
 # New ports collection makefile for:	UMFPACK
-# Version required:	2.2.1
 # Date created:		5 Nov 97
 # Whom:			Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/math/umfpack/Makefile,v 1.4 1999/08/25 07:16:53 obrien Exp $
+# $FreeBSD: ports/math/umfpack/Makefile,v 1.5 1999/12/23 19:31:56 steve Exp $
 #
 
-DISTNAME=	UMFPACK2.2.1
-PKGNAME=	umfpack-2.2.1
+PORTNAME=	umfpack
+PORTVERSION=	2.2.1
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.cise.ufl.edu/pub/faculty/davis/umfpack/
+DISTNAME=	UMFPACK${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 

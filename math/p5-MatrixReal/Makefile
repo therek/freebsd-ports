@@ -1,15 +1,16 @@
 # Ports collection Makefile for:	Math-MatrixReal
-# Version Required:			1.2
 # Date Created:				Aug 14 1997
 # Whom:					Sander Vesik <sander@haldjas.folklore.ee>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/p5-MatrixReal/Makefile,v 1.5 1999/08/25 07:12:55 obrien Exp $
 
-DISTNAME=		Math-MatrixReal-1.2
-PKGNAME=		p5-MatrixReal-1.2
+PORTNAME=		MatrixReal
+PORTVERSION=		1.2
 CATEGORIES=		math perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Math
+PKGNAMEPREFIX=		p5-
+DISTNAME=		Math-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	sander@haldjas.folklore.ee
 

@@ -1,15 +1,16 @@
 # New ports collection makefile for:	numpy
-# Version required:	15.2
 # Date created:		20 April 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/numpy/Makefile,v 1.17 1999/08/31 06:47:48 mharo Exp $
+# $FreeBSD: ports/math/numpy/Makefile,v 1.18 2000/03/27 10:33:46 tg Exp $
 #
 
-DISTNAME=	Numerical-15.2
-PKGNAME=	py-numeric-15.2
+PORTNAME=	numeric
+PORTVERSION=	15.2
 CATEGORIES=	math python
 MASTER_SITES=	http://downloads.sourceforge.net/
+PKGNAMEPREFIX=	py-
+DISTNAME=	Numerical-${PORTVERSION}
 
 MAINTAINER=	tg@FreeBSD.org
 

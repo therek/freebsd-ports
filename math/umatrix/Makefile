@@ -1,12 +1,12 @@
 # New ports collection makefile for:	umatrix
-# Version required:			1.1
 # Date created:				1 May 1997
 # Whom:					Sandro Sigala <ssigala@globalnet.it>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/umatrix/Makefile,v 1.2 1999/08/25 07:16:25 obrien Exp $
 #
 
-DISTNAME=	umatrix-1.1
+PORTNAME=	umatrix
+PORTVERSION=	1.1
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ParMETIS
-# Version required:	2.0
 # Date created:         19 May 99
 # Whom:                 Eoin Lawless (eoin@maths.tcd.ie)
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/parmetis/Makefile,v 1.2 1999/08/25 07:13:27 obrien Exp $
 #
 
-DISTNAME=	ParMetis-2.0
+PORTNAME=	ParMetis
+PORTVERSION=	2.0
 CATEGORIES=	math
 MASTER_SITES=	http://www-users.cs.umn.edu/~karypis/metis/parmetis/files/
 

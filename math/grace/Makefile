@@ -1,13 +1,12 @@
 # New ports collection makefile for: grace
-# Version required:	5.0.1
 # Date created:		Dec 28 1998
 # Whom:			Lars Koeller <lkoeller@cc.fh-lippe.de>
 #
-# $FreeBSD: ports/math/grace/Makefile,v 1.9 2000/02/22 17:07:06 reg Exp $
+# $FreeBSD: ports/math/grace/Makefile,v 1.10 2000/03/12 18:51:31 asami Exp $
 #
 
-DISTNAME=	grace-5.0.3gamma
-PKGNAME=	grace-5.0.3g
+PORTNAME=	grace
+PORTVERSION=	5.0.3g
 CATEGORIES=	math print
 #
 # You never know when and why this caotic team moves it to ../src/old/   :-)
@@ -18,6 +17,7 @@ MASTER_SITES=	ftp://plasma-gate.weizmann.ac.il/pub/grace/src/ \
 		ftp://abragam.med.utoronto.ca/pub/mirrors/grace/src/old/ \
 		ftp://linux.mathematik.tu-darmstadt.de/pub/linux/mirrors/misc/grace/src/old/ \
 		ftp://linux.mathematik.tu-darmstadt.de/pub/linux/mirrors/misc/grace/src/
+DISTNAME=	grace-5.0.3gamma
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 

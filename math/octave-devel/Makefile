@@ -1,12 +1,12 @@
 # New ports collection makefile for:	octave
-# Version required:	2.0.14
 # Date created:		8 September 1998
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/math/octave/Makefile,v 1.25 2000/01/21 21:26:40 chuckr Exp $
+# $FreeBSD: ports/math/octave/Makefile,v 1.26 2000/02/03 03:18:13 chuckr Exp $
 #
 
-DISTNAME=	octave-2.0.16
+PORTNAME=	octave
+PORTVERSION=	2.0.16
 CATEGORIES=	math
 #MASTER_SITES=	ftp://ftp.che.wisc.edu/pub/octave/
 MASTER_SITES=	ftp://ftp.che.wisc.edu/pub/octave/ \
