@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/samba-devel/files/samba.sh.sample,v 1.5 2004/04/18 14:26:11 pav Exp $
+# $FreeBSD: ports/net/samba-devel/files/samba.sh.sample,v 1.6 2004/04/20 16:15:05 pav Exp $
 #
 
 # PROVIDE: nmbd smbd
@@ -63,7 +63,7 @@ samba_stop() {
 }
 
 nmbd_precmd() {
-    # XXX: Never delete winbindd_idmap.tdb and winbindd_cache.tdb
+    # XXX: Never delete winbindd_idmap, winbindd_cache and group_mapping
     if [ -d "%%SAMBA_LOCKDIR%%" ]; then
 	echo "Starting SAMBA: removing stale tdbs :"
 	for file in connections.tdb locking.tdb messages.tdb \
