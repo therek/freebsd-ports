@@ -3,7 +3,7 @@
 # Date created:		14 Jan 1999
 # Whom:			Richard Seaman, Jr. <dick@tar.com>
 #
-# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.8 2000/01/25 22:37:07 jasone Exp $
+# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.9 2000/01/29 03:15:21 jasone Exp $
 #
 
 DISTNAME=      glibc-linuxthreads-2.1.2
@@ -14,6 +14,15 @@ MASTER_SITE_SUBDIR= glibc
 ONLY_FOR_ARCHS= i386
 
 MAINTAINER=    jasone@freebsd.org
+
+.include <bsd.port.pre.mk>
+
+# This port only works on i386 right now.
+ONLY_FOR_ARCHS=i386
+
+.if ${OSVERSION} < 400000
+BROKEN="Requires FreeBSD 4.0 or newer"
+.endif
 
 threads_files := README.FreeBSD clone.S clone.h freebsd-compat.h getgr_r.c \
 	gethostby_r.c getnetby_r.c getprotoby_r.c getpw_r.c getservby_r.c \
@@ -51,4 +60,4 @@ post-install:
 
 #	@sh ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
