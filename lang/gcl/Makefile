@@ -3,7 +3,7 @@
 # Date created:         Feb  8 1995
 # Whom:                 hsu
 #
-# $FreeBSD: ports/lang/gcl/Makefile,v 1.14 1999/08/25 06:34:37 obrien Exp $
+# $FreeBSD: ports/lang/gcl/Makefile,v 1.15 1999/11/25 18:33:53 jseger Exp $
 #
 
 DISTNAME=       gcl-2.3
@@ -14,6 +14,12 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	jseger@FreeBSD.org
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400011
+BROKEN=		"GCL isn't compatible with the new signals."
+.endif
 
 MAKEFILE=	makefile
 
@@ -28,4 +34,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/info/gcl-si.info ${PREFIX}/info
 	@install-info ${PREFIX}/info/gcl-si.info ${PREFIX}/info/dir
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
