@@ -2,21 +2,20 @@
 # Date created:				1/11/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/www/grail/Makefile,v 1.17 2000/09/25 12:15:20 asami Exp $
+# $FreeBSD: ports/www/grail/Makefile,v 1.18 2000/11/23 18:45:28 sobomax Exp $
 #
 
 PORTNAME=	grail
 PORTVERSION= 	0.6
 CATEGORIES=	www python
-MASTER_SITES=	http://grail.sourceforge.net/source/ \
-		http://grail.cnri.reston.va.us/grail/source/
+MASTER_SITES=	ftp://ftp.python.org/pub/grail/
 DISTFILES=	${PORTNAME}-06.tgz
 
 MAINTAINER=	nectar@freebsd.org
 
-USE_PYTHON=	yes
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 
+USE_PYTHON=	yes
 GRAILSUBDIR=	share/grail
 GRAILDIR=	${PREFIX}/${GRAILSUBDIR}
 DIRS_CMD=	${SED} -e '/^@dirrm/bok' -e 'D' -e ':ok' -e 's,@dirrm ,,' < ${PLIST}
