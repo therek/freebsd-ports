@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.199 2000/03/05 09:50:38 asami Exp $
+# $FreeBSD: ports/www/Makefile,v 1.200 2000/03/05 10:13:42 kris Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -64,6 +64,7 @@
     SUBDIR += links
     SUBDIR += linux-netscape4
     SUBDIR += linux-netscape47-communicator
+    SUBDIR += linux-netscape47-navigator
     SUBDIR += lynx
     SUBDIR += lynx-current
     SUBDIR += lynx-ssl
