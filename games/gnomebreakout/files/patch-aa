@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/games/gnomebreakout/files/patch-aa,v 1.2 2001/02/08 10:39:20 sobomax Exp $
 
 --- Makefile.in.orig	Thu Feb  8 12:20:37 2001
 +++ Makefile.in	Thu Feb  8 12:21:38 2001

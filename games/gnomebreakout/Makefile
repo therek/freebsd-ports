@@ -2,11 +2,11 @@
 # Date created:				01 Sep 2000
 # Whom:					Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gnomebreakout/Makefile,v 1.4 2001/02/08 10:39:20 sobomax Exp $
 #
 
 PORTNAME=	gnomebreakout
-PORTVERSION=	0.5
+PORTVERSION=	0.5.1
 CATEGORIES=	games gnome
 MASTER_SITES=	http://www.senet.com.au/~alcaron/ \
 		http://linux.tucows.com/files/gnome/entertain/
