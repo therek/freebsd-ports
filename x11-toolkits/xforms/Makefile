@@ -2,7 +2,7 @@
 # Date created:		28 March 1997
 # Whom:			gena
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.38 2001/03/02 18:44:38 sobomax Exp $
 #
 
 PORTNAME=	xforms
@@ -35,5 +35,6 @@ DISTNAME=	bxform-${PORTVERSION:S/.//}-elf
 
 post-install:
 	@${LN} -sf ${PREFIX}/lib/libforms.so.0.88 ${PREFIX}/lib/libforms.so.0
+	@${LN} -sf ${PREFIX}/lib/libforms.so.0.88 ${PREFIX}/lib/libxforms.so.0
 
 .include <bsd.port.post.mk>
