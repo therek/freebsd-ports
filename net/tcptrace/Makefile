@@ -2,7 +2,7 @@
 # Date created:		3 March 1997
 # Whom:			fenner
 #
-# $FreeBSD: ports/net/tcptrace/Makefile,v 1.13 2001/01/12 01:32:05 fenner Exp $
+# $FreeBSD: ports/net/tcptrace/Makefile,v 1.14 2001/07/11 21:54:02 fenner Exp $
 #
 
 PORTNAME=	tcptrace
@@ -18,8 +18,9 @@ ALL_TARGET=	tcptrace
 
 MAN1=		tcptrace.1
 
-DOCFILES=	ARGS BUGS CHANGES COPYRIGHT FAQ README README.mailing_list \
-		README.modules README.tput_graphs WWW dot_tcptracerc.sample
+DOCFILES=	ARGS CHANGES COPYING COPYRIGHT FAQ README README.mailing_list \
+		README.modules README.tput_graphs THANKS WWW \
+		dot_tcptracerc.sample
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tcptrace ${PREFIX}/bin
