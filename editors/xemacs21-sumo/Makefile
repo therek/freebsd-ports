@@ -2,7 +2,7 @@
 # Date created:        19 August 1999
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule-sumo/Makefile,v 1.3 2000/04/13 06:50:45 knu Exp $
+# $FreeBSD: ports/editors/xemacs21-mule-sumo/Makefile,v 1.4 2000/04/15 06:24:34 knu Exp $
 #
 
 PORTNAME=	xemacs-${NAMEPREFIX}sumo
@@ -13,8 +13,8 @@ DISTFILES=	# empty
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
-RUN_DEPENDS=	${PREFIX}/lib/xemacs/xemacs-packages/pkginfo/MANIFEST.zenirc:${PORTSDIR}/editors/xemacs-sumo-packages \
-		${PREFIX}/lib/xemacs/mule-packages/pkginfo/MANIFEST.skk:${PORTSDIR}/editors/xemacs-mule-sumo-packages \
+RUN_DEPENDS=	${LOCALBASE}/lib/xemacs/xemacs-packages/pkginfo/MANIFEST.zenirc:${PORTSDIR}/editors/xemacs-sumo-packages \
+		${LOCALBASE}/lib/xemacs/mule-packages/pkginfo/MANIFEST.skk:${PORTSDIR}/editors/xemacs-mule-sumo-packages \
 		${RUN_DEP_LIST}
 
 EXTRACT_ONLY=	# empty
@@ -28,9 +28,9 @@ XEMACS_ARCH=		${MACHINE_ARCH}--freebsd
 .include <bsd.port.pre.mk>
 
 .if defined(PKGNAMEPREFIX) && (${PKGNAMEPREFIX} == "ja-")
-RUN_DEP_LIST=		${PREFIX}/lib/xemacs-${XEMACS_VER}/${XEMACS_ARCH}/config.values:${PORTSDIR}/japanese/xemacs${XEMACS_MAJOR_VER}${PKGNAMESUFFIX}
+RUN_DEP_LIST=		${LOCALBASE}/lib/xemacs-${XEMACS_VER}/${XEMACS_ARCH}/config.values:${PORTSDIR}/japanese/xemacs${XEMACS_MAJOR_VER}${PKGNAMESUFFIX}
 .else
-RUN_DEP_LIST=		${PREFIX}/lib/xemacs-${XEMACS_VER}/${XEMACS_ARCH}/config.values:${PORTSDIR}/editors/xemacs${XEMACS_MAJOR_VER}-mule
+RUN_DEP_LIST=		${LOCALBASE}/lib/xemacs-${XEMACS_VER}/${XEMACS_ARCH}/config.values:${PORTSDIR}/editors/xemacs${XEMACS_MAJOR_VER}-mule
 NAMEPREFIX=		mule-
 .endif
 
