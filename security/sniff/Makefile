@@ -2,13 +2,14 @@
 # Date created:		7 December 1998
 # Whom:			Rick & Samu
 #
-# $FreeBSD: ports/security/sniff/Makefile,v 1.4 2000/04/09 18:30:31 cpiazza Exp $
+# $FreeBSD: ports/security/sniff/Makefile,v 1.5 2000/04/21 08:19:00 mharo Exp $
 #
 
 PORTNAME=		sniff
 PORTVERSION=		1.0
 CATEGORIES=		security
-MASTER_SITES=		http://people.FreeBSD.org/~fenner/distfiles/
+MASTER_SITES=		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	fenner
 
 MAINTAINER=		veraldi@cs.unibo.it
 

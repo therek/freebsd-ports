@@ -2,14 +2,15 @@
 # Date created:		02 Aug 1997
 # Whom:			joes@seaport.net
 #
-# $FreeBSD: ports/comms/qpage/Makefile,v 1.12 2000/04/08 23:22:37 mharo Exp $
+# $FreeBSD: ports/comms/qpage/Makefile,v 1.13 2000/04/14 17:43:41 knu Exp $
 #
 
 PORTNAME=	qpage
 PORTVERSION=	3.2
 CATEGORIES=	comms
 #MASTER_SITES=	http://www.qpage.org/download/
-MASTER_SITES=	http://people.FreeBSD.org/~fenner/
+MASTER_SITES=		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	fenner
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	joes@seaport.net
