@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.89 1999/09/09 23:27:45 asami Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.90 1999/09/25 04:57:09 taoka Exp $
 #
 
     SUBDIR += AbiWord
@@ -15,6 +15,7 @@
     SUBDIR += bitmap-emacs20
     SUBDIR += bitmap-mule
     SUBDIR += bpatch
+    SUBDIR += color-mate
     SUBDIR += cooledit
     SUBDIR += custom-emacs
     SUBDIR += custom-mule
