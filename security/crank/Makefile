@@ -3,19 +3,24 @@
 # Date created:			Apr 18, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/security/crank/Makefile,v 1.2 2001/04/23 06:26:56 ijliao Exp $
+# $FreeBSD: ports/security/crank/Makefile,v 1.3 2001/08/09 09:00:57 ijliao Exp $
 #
 
 PORTNAME=	crank
-PORTVERSION=	0.1.4
+PORTVERSION=	0.2.1
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
+LIB_DEPENDS=	guile:${PORTSDIR}/lang/guile
+
 USE_GTK=	yes
 GNU_CONFIGURE=	yes
+GUILE_CONFIG=	${LOCALBASE}/bin/guile-config
+CONFIGURE_ENV=	CFLAGS="${CFLAGS} `${GUILE_CONFIG} compile`" \
+		LDFLAGS="`${GUILE_CONFIG} link`"
 USE_GMAKE=	yes
 
 .include <bsd.port.mk>
