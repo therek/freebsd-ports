@@ -2,13 +2,13 @@
 # Date Created:		20 February 1999
 # Whom:			Glenn Johnson
 #
-# $FreeBSD: ports/graphics/libimg/Makefile,v 1.11 2001/05/01 09:55:09 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libimg
 PORTVERSION=	1.2.4
 CATEGORIES=	graphics tk83
-MASTER_SITES=	ftp://ftp.neosoft.com/pub/tcl/sorted/packages-8.0/graphics/Img/1.2/
+MASTER_SITES=	http://www.neosoft.com/tcl/ftparchive/sorted/packages-8.0/graphics/Img/1.2/
 DISTNAME=	img${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
