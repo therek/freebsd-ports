@@ -2,7 +2,7 @@
 # Date created:         1 May 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.19 2000/04/22 10:11:41 mharo Exp $
+# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.20 2000/04/29 20:52:09 kris Exp $
 #
 
 PORTNAME=	cd-write
@@ -22,11 +22,9 @@ WRKSRC=		${WRKDIR}/cd-write
 BROKEN=		CAM
 .endif
 
-BROKEN=		"Missing TK header - see http://bento.freebsd.org/errorlogs/3-full/cd-write-1.4.1.log"
-
 pre-build:
 	@cd ${WRKSRC}; ${MV} Makefile Makefile~; \
-		${SED} -e s:/usr/local:${PREFIX}:g <Makefile~ >Makefile;\
+		${SED} -e s:/usr/local:${PREFIX}:g -e s/CFL/CXXFL/ <Makefile~ >Makefile;\
 		${ECHO} all: cd-write >> Makefile
 	@cd ${WRKSRC}/c++tk; ${MV} Makefile Makefile~; \
 		${SED} -e s:/usr/local:${PREFIX}:g <Makefile~ >Makefile
