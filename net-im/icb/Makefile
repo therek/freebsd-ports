@@ -3,12 +3,12 @@
 # Date created:			  Tue Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.ucdavis.edu)
 #
-# $FreeBSD: ports/net/icb/Makefile,v 1.9 2001/01/12 15:32:28 alex Exp $
+# $FreeBSD: ports/net/icb/Makefile,v 1.10 2001/01/14 20:41:02 vanilla Exp $
 #
 
 PORTNAME=	icb
 PORTVERSION=	5.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net tcl82
 MASTER_SITES=	http://www.obfuscation.org/ftp/pub/icb/ \
 		ftp://ftp.obfuscation.org/pub/icb/
@@ -16,10 +16,11 @@ DISTNAME=	c${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
+LIB_DEPENDS=	tcl83:${PORTSDIR}/lang/tcl83
+
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-tclinclude=${LOCALBASE}/include/tcl8.2 \
+CONFIGURE_ARGS=	--with-tclinclude=${LOCALBASE}/include/tcl8.3 \
 		--with-tcllib=${LOCALBASE}/lib
 
 do-install:
