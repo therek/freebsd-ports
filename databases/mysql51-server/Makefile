@@ -3,7 +3,7 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.72 2000/01/25 14:34:35 dirk Exp $
+# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.73 2000/02/15 10:11:21 dirk Exp $
 #
 
 DISTNAME=	mysql-3.22.32
@@ -15,10 +15,6 @@ MASTER_SITES=	http://www.fh-wolfenbuettel.de/ftp/pub/database/mysql/Downloads/My
 		ftp://ftp.sunet.se/pub/unix/databases/relational/mysql/Downloads/MySQL-3.22/
 
 MAINTAINER=	dirk@FreeBSD.org
-
-.if ${MACHINE_ARCH} == "alpha"
-BROKEN=		doesn\'t build on the alpha yet
-.endif
 
 Y2K=		http://www.tcx.se/Manual_chapter/manual_Introduction.html#Year_2000_compliance
 
