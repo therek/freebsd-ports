@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.349 2001/04/07 04:36:47 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.350 2001/04/07 05:24:30 will Exp $
 #
 
     SUBDIR += 3dc
@@ -195,6 +195,7 @@
     SUBDIR += trojka
     SUBDIR += tuxracer
     SUBDIR += tvp
+    SUBDIR += nighthawk
     SUBDIR += nil
     SUBDIR += nonsense
     SUBDIR += omega
