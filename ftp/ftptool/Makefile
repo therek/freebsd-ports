@@ -2,11 +2,12 @@
 # Date created:		19 March 1996
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD: ports/ftp/ftptool/Makefile,v 1.9 2000/04/12 05:31:08 mharo Exp $
+# $FreeBSD: ports/ftp/ftptool/Makefile,v 1.10 2001/05/21 07:09:45 kuriyama Exp $
 #
 
 PORTNAME=	ftptool
 PORTVERSION=	4.6
+PORTREVISION=	1
 CATEGORIES=	ftp
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities
@@ -18,6 +19,8 @@ LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/Ftptool4.6
+
+MAN1=		ftptool.1
 
 # Because lex.l is broken, lex.c is taken from old FreeBSD 1.1 port
 
