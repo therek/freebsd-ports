@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.425 2000/10/31 20:57:30 knu Exp $
+# $FreeBSD: ports/net/Makefile,v 1.426 2000/11/08 05:13:19 andreas Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -25,6 +25,7 @@
     SUBDIR += brouted
     SUBDIR += cap
     SUBDIR += centericq
+    SUBDIR += cflowd
     SUBDIR += choparp
     SUBDIR += cidr
     SUBDIR += ciscoconf
