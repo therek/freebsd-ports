@@ -2,7 +2,7 @@
 # Date created:		Sat Aug 21 06:13:59 EDT 1999
 # Whom:			Oryx Gazella <oryx@ungulate.net>
 #
-# $FreeBSD: ports/net/dhid/Makefile,v 1.5 2000/04/09 18:10:59 cpiazza Exp $
+# $FreeBSD: ports/net/dhid/Makefile,v 1.6 2000/04/20 20:17:33 mharo Exp $
 #
 
 PORTNAME=		dhid
@@ -26,9 +26,7 @@ do-install:
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/dhid.sh ]; then \
 		${ECHO} "===>   Installing ${PREFIX}/etc/rc.d/dhid.sh startup file."; \
-		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/dhid.sh; \
-		${ECHO} "[ -x \"${PREFIX}/sbin/dhid\" -a -f \"${PREFIX}/etc/dhid.conf\" ] && ${PREFIX}/sbin/dhid > /dev/null && ${ECHO} -n ' dhid'" >> ${PREFIX}/etc/rc.d/dhid.sh; \
-		${CHMOD} 751 ${PREFIX}/etc/rc.d/dhid.sh; \
+		${INSTALL_SCRIPT} -m 751 ${FILESDIR}/dhid.sh ${PREFIX}/etc/rc.d/dhid.sh; \
 	fi;
 	@${ECHO} "--------------------------------------------------------------------------"
 	@${ECHO} "Before dhid can run, you will need to register with a DHIS provider."

@@ -2,7 +2,7 @@
 # Date created:         Sat Apr 10 22:30:36 EEST 1999
 # Whom:                 vns@delta.odessa.ua
 #
-# $FreeBSD: ports/russian/apache13/Makefile,v 1.11 2000/04/13 19:13:59 cpiazza Exp $
+# $FreeBSD: ports/russian/apache13/Makefile,v 1.12 2000/04/21 07:52:13 mharo Exp $
 #
 
 PORTNAME=	apache
@@ -81,9 +81,7 @@ pre-install:
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/apache.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/apache.sh startup file."; \
-		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/apache.sh; \
-		${ECHO} "[ -x ${PREFIX}/sbin/apachectl ] && ${PREFIX}/sbin/apachectl start > /dev/null && ${ECHO_MSG} -n ' apache'" >> ${PREFIX}/etc/rc.d/apache.sh; \
-		${CHMOD} 751 ${PREFIX}/etc/rc.d/apache.sh; \
+		${INSTALL_SCRIPT} -m 751 ${FILESDIR}/apache.sh ${PREFIX}/etc/rc.d/apache.sh; \
 	fi
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid23/Makefile,v 1.69 2000/05/29 23:48:03 steve Exp $
+# $FreeBSD: ports/www/squid23/Makefile,v 1.70 2000/06/01 06:49:50 sobomax Exp $
 #
 
 PORTNAME=	squid
@@ -108,11 +108,7 @@ post-install:
 	${MKDIR} ${PREFIX}/squid/cache
 	@if [ ! -f ${PREFIX}/etc/rc.d/squid.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/squid.sh startup file."; \
-		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/squid.sh; \
-		${ECHO} "if [ -x ${PREFIX}/sbin/RunCache -a -f ${PREFIX}/etc/squid/squid.conf ]; then" >> ${PREFIX}/etc/rc.d/squid.sh; \
-		${ECHO} "	(cd /tmp; ${PREFIX}/sbin/RunCache >/dev/null 2>&1 &) ; ${ECHO} -n ' squid'" >> ${PREFIX}/etc/rc.d/squid.sh; \
-		${ECHO} "fi" >> ${PREFIX}/etc/rc.d/squid.sh; \
-		${CHMOD} 751 ${PREFIX}/etc/rc.d/squid.sh; \
+		${INSTALL_SCRIPT} -m 751 ${FILESDIR}/squid.sh ${PREFIX}/etc/rc.d/squid.sh; \
 	fi
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		December 17th 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/databases/msql/Makefile,v 1.35 1999/08/31 06:41:12 mharo Exp $
+# $FreeBSD: ports/databases/msql/Makefile,v 1.36 2000/04/08 22:48:34 mharo Exp $
 #
 
 PORTNAME=	msql
@@ -44,9 +44,8 @@ post-install:
 		@${MKDIR} ${PREFIX}/etc/rc.d
 		@if [ ! -f ${PREFIX}/etc/rc.d/msql2.sh ]; then \
 			${ECHO} "Installing ${PREFIX}/etc/rc.d/msql2.sh startup file."; \
-			${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/msql2.sh; \
-			${ECHO} "[ -x ${PREFIX}/bin/msql2d ] && su -l msql -c 'exec ${PREFIX}/bin/msql2d' > /dev/null 2>&1 & && ${ECHO} -n ' msql2'" >> ${PREFIX}/etc/rc.d/msql2.sh; \
-			${CHMOD} 751 ${PREFIX}/etc/rc.d/msql2.sh; \
+			${INSTALL_SCRIPT} -m 751 ${FILESDIR}/msql2d.sh \
+				${PREFIX}/etc/rc.d/msql2d.sh; \
 		fi
 .if !defined(BATCH)
 		@ /usr/bin/more -e ${FILESDIR}/post-install-notes

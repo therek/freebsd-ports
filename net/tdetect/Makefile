@@ -2,7 +2,7 @@
 # Date created:			  Sun Jan 31, 1997
 # Whom:               		  shipley@dis.org
 #
-# $FreeBSD: ports/net/tdetect/Makefile,v 1.9 1999/11/01 01:07:55 mharo Exp $
+# $FreeBSD: ports/net/tdetect/Makefile,v 1.10 2000/04/09 18:13:41 cpiazza Exp $
 #
 
 PORTNAME=	tdetect
@@ -28,10 +28,7 @@ do-install:
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/tdetect.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/tdetect.sh startup file."; \
-		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/tdetect.sh; \
-		${ECHO} "ETHERNETDEV=ed0" >> ${PREFIX}/etc/rc.d/tdetect.sh; \
-		${ECHO} '[ -x ${PREFIX}/sbin/tdetect ] && ${PREFIX}/sbin/tdetect $$ETHERNETDEV && ${ECHO} -n " tdetect"' >> ${PREFIX}/etc/rc.d/tdetect.sh; \
-		${CHMOD} 750 ${PREFIX}/etc/rc.d/tdetect.sh; \
+		${INSTALL_SCRIPT} -m 750 ${FILESDIR}/tdetect.sh ${PREFIX}/etc/rc.d/tdetect.sh; \
 		${SED} -e 's,/usr/local,${PREFIX},g' ${PKGMESSAGE}; \
 	fi
 

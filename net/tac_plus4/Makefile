@@ -2,7 +2,7 @@
 # Date created:		4 Mar 1997
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.12 2000/03/03 20:06:13 asami Exp $
+# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.13 2000/04/09 18:13:38 cpiazza Exp $
 #
 
 PORTNAME=	tac_plus
@@ -29,9 +29,7 @@ do-install:
 	${INSTALL_DATA} ${FILESDIR}/tac_plus.conf.example ${PREFIX}/etc/
 	@if [ ! -f ${PREFIX}/etc/rc.d/tac_plus.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/tac_plus.sh startup file."; \
-		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/tac_plus.sh; \
-		${ECHO} "[ -x ${PREFIX}/sbin/tac_plus -a -f ${PREFIX}/etc/tac_plus.conf ] && ${PREFIX}/sbin/tac_plus -C ${PREFIX}/etc/tac_plus.conf && echo -n ' tac_plus'" >> ${PREFIX}/etc/rc.d/tac_plus.sh; \
-		chmod 751 ${PREFIX}/etc/rc.d/tac_plus.sh; \
+		${INSTALL_SCRIPT} -m 751 ${FILESDIR}/tac_plus.sh ${PREFIX}/etc/rc.d/tac_plus.sh; \
 	fi
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/tac_plus

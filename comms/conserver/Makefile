@@ -2,7 +2,7 @@
 # Date created:         22 November 1997
 # Whom:                 Peter Wemm <peter@netplex.com.au>
 #
-# $FreeBSD: ports/comms/conserver/Makefile,v 1.11 1999/09/10 09:25:31 peter Exp $
+# $FreeBSD: ports/comms/conserver/Makefile,v 1.12 2000/04/08 23:22:28 mharo Exp $
 #
 
 PORTNAME=	conserver
@@ -37,11 +37,8 @@ post-extract:
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/conserver.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/conserver.sh startup file."; \
-		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/conserver.sh; \
-		${ECHO} "if [ -x ${PREFIX}/sbin/conserver -a -f ${PREFIX}/etc/conserver.cf ]; then" >> ${PREFIX}/etc/rc.d/conserver.sh; \
-		${ECHO} "	${PREFIX}/sbin/conserver -d -n ; ${ECHO} -n ' conserver'" >> ${PREFIX}/etc/rc.d/conserver.sh; \
-		${ECHO} "fi" >> ${PREFIX}/etc/rc.d/conserver.sh; \
-		${CHMOD} 751 ${PREFIX}/etc/rc.d/conserver.sh; \
+		${INSTALL_SCRIPT} -m 751 ${FILESDIR}/conserver.sh \
+			${PREFIX}/etc/rc.d/conserver.sh; \
 	fi
 
 .include <bsd.port.mk>

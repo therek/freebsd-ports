@@ -2,7 +2,7 @@
 # Date created:				06 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/net/elsa/Makefile,v 1.3 2000/01/04 14:19:49 jedgar Exp $
+# $FreeBSD: ports/net/elsa/Makefile,v 1.4 2000/04/09 18:11:09 cpiazza Exp $
 #
 
 PORTNAME=	elsa
@@ -56,9 +56,7 @@ do-install:
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/elsa.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/elsa.sh startup file."; \
-		${ECHO}  "#!/bin/sh" > ${PREFIX}/etc/rc.d/elsa.sh; \
-		${ECHO} "[ -x ${PREFIX}/sbin/elsa ] && ${PREFIX}/sbin/elsa -d ${PREFIX}/etc > /dev/null & && ${ECHO} -n ' elsa'" >> ${PREFIX}/etc/rc.d/elsa.sh; \
-		${CHMOD} 555 ${PREFIX}/etc/rc.d/elsa.sh; \
+		${INSTALL_SCRIPT} ${FILESDIR}/elsa.sh ${PREFIX}/etc/rc.d/elsa.sh; \
 	fi
 
 .include <bsd.port.post.mk>

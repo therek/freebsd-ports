@@ -2,7 +2,7 @@
 # Date created:		22 April 2000
 # Whom:			Vince Valenti <vince@blue-box.net>
 #
-# $FreeBSD: ports/sysutils/syslog-ng/Makefile,v 1.1 2000/04/25 12:48:02 will Exp $
+# $FreeBSD: ports/sysutils/syslog-ng/Makefile,v 1.2 2000/07/02 03:24:10 will Exp $
 #
 
 PORTNAME=	syslog-ng
@@ -51,9 +51,7 @@ post-install:
 	fi
 	@if [ ! -f ${PREFIX}/etc/rc.d/syslog-ng.sh.sample ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/syslog-ng.sh.sample startup file."; \
-		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/syslog-ng.sh.sample; \
-		${ECHO} "[ -x ${PREFIX}/sbin/syslog-ng ] && ${PREFIX}/sbin/syslog-ng && ${ECHO} -n ' syslog-ng'" >> ${PREFIX}/etc/rc.d/syslog-ng.sh.sample; \
-		${CHMOD} 755 ${PREFIX}/etc/rc.d/syslog-ng.sh.sample; \
+		${INSTALL_SCRIPT} ${FILESDIR}/syslog-ng.sh.sample ${PREFIX}/etc/rc.d/syslog-ng.sh.sample; \
 	fi
 	@${CAT} ${PKGMESSAGE}
 

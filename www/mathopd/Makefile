@@ -2,7 +2,7 @@
 # Date created:         Sun Oct 31 1999
 # Whom:                 tobez@plab.ku.dk
 #
-# $FreeBSD: ports/www/mathopd/Makefile,v 1.5 2000/04/10 00:05:51 cpiazza Exp $
+# $FreeBSD: ports/www/mathopd/Makefile,v 1.6 2000/06/08 09:16:07 knu Exp $
 #
 
 PORTNAME=	mathopd
@@ -23,9 +23,7 @@ post-install:
 	@${INSTALL_DATA} ${WRKSRC}/README  ${PREFIX}/share/doc/mathopd
 .endif
 	@if [ ! -f ${PREFIX}/etc/rc.d/mathopd.sh ]; then \
-		${ECHO} "#! ${SH}" > ${PREFIX}/etc/rc.d/mathopd.sh; \
-		${ECHO} "[ -x ${PREFIX}/sbin/mathopd ] && ${PREFIX}/sbin/mathopd < ${PREFIX}/etc/mathopd.conf && ${ECHO} -n ' mathopd'" >> ${PREFIX}/etc/rc.d/mathopd.sh; \
-		${CHMOD} 440 ${PREFIX}/etc/rc.d/mathopd.sh; \
+		${INSTALL_SCRIPT} ${FILESDIR}/mathopd.sh ${PREFIX}/etc/rc.d/mathopd.sh; \
 	fi
 	@${SED} -e 's,/usr/local,${PREFIX},g' ${PKGMESSAGE}
 

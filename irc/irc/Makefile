@@ -2,7 +2,7 @@
 # Date created:		23 August 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/irc/irc/Makefile,v 1.24 2000/02/16 01:49:29 billf Exp $
+# $FreeBSD: ports/irc/irc/Makefile,v 1.25 2000/04/12 06:28:11 obrien Exp $
 #
 
 PORTNAME=	irc
@@ -50,10 +50,7 @@ do-install:
 post-install:
 	@if [ ! -f ${STARTUP_SCRIPT} ]; then				\
 		${ECHO} "Installing ${STARTUP_SCRIPT} startup file.";	\
-		${ECHO} '#!/bin/sh' > ${STARTUP_SCRIPT};		\
-		${ECHO} "[ -f ${PREFIX}/etc/ircd/ircd.conf ] && ${PREFIX}/sbin/ircd && ${ECHO} -n ' ircd'" >> ${STARTUP_SCRIPT} ;			\
-		${CHMOD} 755 ${STARTUP_SCRIPT} ;			\
-		${CHOWN} bin.bin ${STARTUP_SCRIPT};			\
+		${INSTALL_SCRIPT} ${FILESDIR}/ircd.sh ${STARTUP_SCRIPT};\
 	fi
 
 .include <bsd.port.post.mk>

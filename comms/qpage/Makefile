@@ -2,7 +2,7 @@
 # Date created:		02 Aug 1997
 # Whom:			joes@seaport.net
 #
-# $FreeBSD: ports/comms/qpage/Makefile,v 1.13 2000/04/14 17:43:41 knu Exp $
+# $FreeBSD: ports/comms/qpage/Makefile,v 1.14 2000/06/22 19:15:30 fenner Exp $
 #
 
 PORTNAME=	qpage
@@ -20,9 +20,8 @@ MAN1=		qpage.1
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/qpage.sh ]; then \
 		${ECHO} "Install ${PREFIX}/etc/rc.d/qpage.sh startup file."; \
-		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/qpage.sh; \
-		${ECHO} "[ -x ${PREFIX}/bin/qpage ] && ${PREFIX}/bin/qpage -q10 && ${ECHO} -n ' qpage'" >> ${PREFIX}/etc/rc.d/qpage.sh; \
-		${CHMOD} 751 ${PREFIX}/etc/rc.d/qpage.sh; \
+		${INSTALL_SCRIPT} -m 751 ${FILESDIR}/qpage.sh \
+			${PREFIX}/etc/rc.d/qpage.sh \
 	fi
 
 .include <bsd.port.mk>

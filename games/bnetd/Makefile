@@ -2,7 +2,7 @@
 # Date created:		24 April 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/bnetd/Makefile,v 1.12 2000/03/31 07:48:01 mharo Exp $
+# $FreeBSD: ports/games/bnetd/Makefile,v 1.13 2000/04/14 00:45:35 mharo Exp $
 #
 
 PORTNAME=	bnetd
@@ -32,9 +32,8 @@ do-install:
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/bnetd.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/bnetd.sh startup file."; \
-		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/bnetd.sh; \
-		${ECHO} "cd ${PREFIX}; [ -x sbin/bnetd -a -f bnetd/conf/bnetd.conf ] && sbin/bnetd -c bnetd/conf/bnetd.conf > /dev/null && ${ECHO} -n ' bnetd'" >> ${PREFIX}/etc/rc.d/bnetd.sh; \
-		${CHMOD} 751 ${PREFIX}/etc/rc.d/bnetd.sh; \
+		${INSTALL_SCRIPT} -m 751 ${FILESDIR}/bnetd.sh \
+			${PREFIX}/etc/rc.d/bnetd.sh; \
 	fi
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/mule-common/Makefile,v 1.47 2000/04/14 16:47:38 knu Exp $
+# $FreeBSD: ports/editors/mule-common/Makefile,v 1.48 2000/06/23 15:37:57 taoka Exp $
 #
 
 PORTNAME=	mule-common
@@ -152,16 +152,7 @@ post-install:
 	@${TOUCH} ${TOUCH_FLAGS} ${INSTALL_COOKIE}
 	if [ ! -f ${STARTUP_SCRIPT} ]; then \
 		${ECHO} "Installing ${STARTUP_SCRIPT} startup file."; \
-		${ECHO} '#!/bin/sh' > ${STARTUP_SCRIPT}; \
-		${ECHO} '#${ECHO} -n " Mule"' >> ${STARTUP_SCRIPT}; \
-		${ECHO} 'if [ -d /var/run/emacs/lock ]; then' >> ${STARTUP_SCRIPT}; \
-		${ECHO} '     rm -f /var/run/emacs/lock/*' >> ${STARTUP_SCRIPT}; \
-		${ECHO} "else" >> ${STARTUP_SCRIPT}; \
-		${ECHO} "     mkdir -p /var/run/emacs/lock" >> ${STARTUP_SCRIPT}; \
-		${ECHO} "fi" >> ${STARTUP_SCRIPT} ; \
-		${ECHO} "${CHMOD} 1777 /var/run/emacs/lock${lockdir}" >> ${STARTUP_SCRIPT} ; \
-		${CHMOD} 755 ${STARTUP_SCRIPT} ;				\
-		${CHOWN} bin.bin ${STARTUP_SCRIPT};			\
+		${INSTALL_SCRIPT} ${FILESDIR}/mule.sh ${STARTUPSCRIPT}; \
 	fi
 
 post-package:

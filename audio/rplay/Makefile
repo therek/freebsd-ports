@@ -2,7 +2,7 @@
 # Date created:		16 March 1995
 # Whom:			rmallory@csusb.edu
 #
-# $FreeBSD: ports/audio/rplay/Makefile,v 1.16 2000/04/08 21:24:22 mharo Exp $
+# $FreeBSD: ports/audio/rplay/Makefile,v 1.17 2000/06/28 16:05:08 alex Exp $
 #
 
 PORTNAME=	rplay
@@ -34,9 +34,7 @@ post-install:
 .endfor
 .if !exists(${PREFIX}/etc/rc.d/rplayd.sh)
 	@${ECHO} "===>   Installing ${PREFIX}/etc/rc.d/rplayd.sh startup file"
-	@${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/rplayd.sh
-	@${ECHO} "[ -x ${PREFIX}/sbin/rplayd ] && ( ${PREFIX}/sbin/rplayd & ) && ${ECHO} -n ' rplayd'" >> ${PREFIX}/etc/rc.d/rplayd.sh
-	@${CHMOD} 751 ${PREFIX}/etc/rc.d/rplayd.sh
+	@${INSTALL_SCRIPT} -m 751 ${FILESDIR}/rplayd.sh ${PREFIX}/etc/rc.d/rplayd.sh
 .endif
 .if !exists(${PREFIX}/etc/rplay.hosts)
 	@${ECHO} localhost > ${PREFIX}/etc/rplay.hosts

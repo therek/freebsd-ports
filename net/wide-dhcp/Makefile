@@ -3,7 +3,7 @@
 # Date created:			  21 November 1995
 # Whom:				  Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/net/wide-dhcp/Makefile,v 1.24 2000/04/09 18:13:56 cpiazza Exp $
+# $FreeBSD: ports/net/wide-dhcp/Makefile,v 1.25 2000/04/15 01:44:53 asami Exp $
 #
 
 PORTNAME=	wide-dhcp
@@ -46,25 +46,7 @@ post-install:
 .endif
 	@if [ ! -f ${STARTUP_SCRIPT} ]; then				    \
 		${ECHO} "Installing ${STARTUP_SCRIPT} startup file.";	    \
-		${ECHO} '#!/bin/sh' > ${STARTUP_SCRIPT};		    \
-		${ECHO} 'DB_POOL=/etc/dhcpdb.pool' >> ${STARTUP_SCRIPT};    \
-		${ECHO} 'DB_RELAY=/etc/dhcpdb.relay' >> ${STARTUP_SCRIPT};  \
-		${ECHO} 'DB_BIND=/var/db/dhcpdb.bind' >> ${STARTUP_SCRIPT}; \
-		${ECHO} 'if [ -f $${DB_POOL} -a -f $${DB_RELAY} \'	    \
-			>> ${STARTUP_SCRIPT};				    \
-		${ECHO} '		-a -x ${PREFIX}/sbin/dhcps ]; then' \
-			>> ${STARTUP_SCRIPT};				    \
-		${ECHO} '	if [ -f $${DB_BIND} ]; then' >> ${STARTUP_SCRIPT}; \
-		${ECHO} '		find $${DB_POOL} -newer $${DB_BIND} -exec ${RM} $${DB_BIND} \;' \
-			>> ${STARTUP_SCRIPT};				    \
-		${ECHO} '	fi' >> ${STARTUP_SCRIPT};		    \
-		${ECHO} "	${PREFIX}/sbin/dhcps [Interface Name]"	    \
-			>> ${STARTUP_SCRIPT};				    \
-		${ECHO} "	${ECHO} -n ' dhcps'"			    \
-			>> ${STARTUP_SCRIPT};				    \
-		${ECHO} 'fi' >> ${STARTUP_SCRIPT};			    \
-		${CHMOD} 755 ${STARTUP_SCRIPT};				    \
-		${CHOWN} bin.bin ${STARTUP_SCRIPT};			    \
+		${INSTALL_SCRIPT} ${FILESDIR}/wide-dhcps.sh.sample ${STARTUP_SCRIPT}; \
 	fi
 	@if [ ! -c /dev/bpf1 ]; then \
 	    ${ECHO} "********************************************************";\

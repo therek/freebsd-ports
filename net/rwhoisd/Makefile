@@ -2,7 +2,7 @@
 # Date created:				May 9th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/rwhois/Makefile,v 1.13 2000/03/01 18:37:10 asami Exp $
+# $FreeBSD: ports/net/rwhois/Makefile,v 1.14 2000/04/09 18:13:29 cpiazza Exp $
 #
 
 PORTNAME=	rwhois
@@ -38,13 +38,6 @@ post-install:
 	${MV} ${PREFIX}/share/doc/rwhois/rmkdbindex.8 ${PREFIX}/man/man8	
 	${MV} ${PREFIX}/share/doc/rwhois/rwhoisd.8 ${PREFIX}/man/man8	
 	@ ${ECHO_MSG} "Installing ${PREFIX}/etc/rc.d/rwhoisd.sh startup file..."
-	@ ${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/rwhoisd.sh
-	@ ${ECHO} "#" >> ${PREFIX}/etc/rc.d/rwhoisd.sh
-	@ ${ECHO} "" >> ${PREFIX}/etc/rc.d/rwhoisd.sh
-	@ ${ECHO} "# remove or comment the following line and uncomment the one below it once you have" >> ${PREFIX}/etc/rc.d/rwhoisd.sh
-	@ ${ECHO} "# configured your server's data" >> ${PREFIX}/etc/rc.d/rwhoisd.sh
-	@ ${ECHO} "${ECHO} \"rwhoisd not started; sample data still in place.   See ${PREFIX}/share/doc/rwhois for details.\"" >> ${PREFIX}/etc/rc.d/rwhoisd.sh
-	@ ${ECHO} "#[ -x ${PREFIX}/lib/rwhois/sbin/rwhoisd ] && ${PREFIX}/lib/rwhois/sbin/rwhoisd -c ${PREFIX}/lib/rwhois/rwhois.conf & && ${ECHO} -n ' rwhoisd'" >> ${PREFIX}/etc/rc.d/rwhoisd.sh
-	${CHMOD} 751 ${PREFIX}/etc/rc.d/rwhoisd.sh
+	${INSTALL_SCRIPT} -m 751 ${FILESDIR}/rwhoisd.sh ${PREFIX}/etc/rc.d/rwhoisd.sh
 
 .include <bsd.port.post.mk>

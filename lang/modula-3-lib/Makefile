@@ -2,7 +2,7 @@
 # Date created:		28 Oct 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.23 2000/04/17 00:18:04 reg Exp $
+# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.24 2000/06/09 21:59:02 asami Exp $
 #
 
 PORTNAME=	modula-3-lib
@@ -153,11 +153,7 @@ do-install:
 	@if [ ! -f ${startup_script} ]; then \
 	    ${ECHO_MSG} "Installing ${startup_script} file"; \
 	    test -d ${startup_dir} || ${MKDIR} ${startup_dir}; \
-	    ${ECHO} "#!/bin/sh" > ${startup_script}; \
-	    ${ECHO} "${ECHO} -n ' Modula-3'" >> ${startup_script}; \
-	    ${ECHO} "${LDCONFIG} -m ${PREFIX}/lib/m3/FreeBSD2" \
-		>> ${startup_script}; \
-	    ${CHMOD} 755 ${startup_script}; \
+	    ${INSTALL_SCRIPT} ${FILESDIR}/50.m3.sh ${startup_script}; \
 	fi
 	@${ECHO_MSG} "Running ldconfig"
 	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib/m3/FreeBSD2
