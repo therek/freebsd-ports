@@ -3,7 +3,7 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.4 1999/08/25 06:50:56 obrien Exp $
+# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.5 1999/09/09 16:32:14 taoka Exp $
 #
 
 DISTNAME=	wl-1.0.3
@@ -38,8 +38,13 @@ RUN_DEPENDS=	${PKG_DBDIR}/${EMACS_PORT}-common-${MULE_VER}:${PORTSDIR}/editors/$
 RUN_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}
 .endif
 # depends on semi
+.if defined(EMACS_PACKAGESDIR)
+BUILD_DEPENDS+=	${PREFIX}/${EMACS_PACKAGESDIR}/lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}-current
+RUN_DEPENDS+=	${PREFIX}/${EMACS_PACKAGESDIR}/lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}-current
+.else
 BUILD_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR}/site-lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}-current
 RUN_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR}/site-lisp/semi/mime-setup.el:${PORTSDIR}/editors/semi-${EMACS_PORT}-current
+.endif
 
 .if (${EMACS_PORT} == "xemacs-mule")
 DIRSECTION=	"Local Packages:"
