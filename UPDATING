@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20041015
+  AFFECTS: users of www/apache2 with devel/apr
+  AUTHOR: clement@FreeBSD.org
+
+  WITH_APR_FROM_PORTS knob is no longer supported, since apr > 1.0
+  doesn't conflict with apache2's one. If you use apr 0.9.x you
+  won't be able to upgrade apache2 anymore.
+
 20041014:
   AFFECTS: users of security/clamav
   AUTHOR: eik@FreeBSD.org
@@ -903,4 +911,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.75 2004/10/14 09:30:47 eik Exp $
+$FreeBSD: ports/UPDATING,v 1.76 2004/10/14 15:00:09 sergei Exp $
