@@ -2,11 +2,11 @@
 # Date created:		27 June 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/cocoon/Makefile,v 1.11 2000/11/26 13:10:31 kuriyama Exp $
+# $FreeBSD: ports/textproc/cocoon/Makefile,v 1.12 2001/01/16 19:08:35 will Exp $
 #
 
 PORTNAME=	cocoon
-PORTVERSION= 	1.8
+PORTVERSION= 	1.8.2
 CATEGORIES=	textproc www java
 MASTER_SITES=	http://xml.apache.org/cocoon/dist/
 DISTNAME=	Cocoon-${PORTVERSION}
@@ -21,7 +21,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 JDK_VERSION=	1.1.8
 CLASSPATH=	${LOCALBASE}/jdk${JDK_VERSION}/lib/classes.zip
-LIBS=		fop_0_13_0.jar xalan_1_2_D02.jar xerces_1_2.jar
+LIBS=		fop_0_15_0.jar xalan_1_2_D02.jar xerces_1_2.jar
 JDIR=		${PREFIX}/share/java/classes
 CDIR=		${PREFIX}/etc/apache/cocoon
 SDIR=		${PREFIX}/share/java/cocoon
