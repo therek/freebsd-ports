@@ -2,7 +2,7 @@
 # Date created:		24 Jan 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/publicfile/Makefile,v 1.5 2000/07/29 16:25:40 nbm Exp $
+# $FreeBSD: ports/www/publicfile/Makefile,v 1.6 2000/10/04 06:40:06 sobomax Exp $
 #
 
 PORTNAME=	publicfile
@@ -13,7 +13,8 @@ MASTER_SITES=	http://cr.yp.to/publicfile/ \
 
 MAINTAINER=	nbm@FreeBSD.org
 
-RUN_DEPENDS=	setuidgid:${PORTSDIR}/sysutils/daemontools
+RUN_DEPENDS=	setuidgid:${PORTSDIR}/sysutils/daemontools \
+		tcpserver:${PORTSDIR}/sysutils/ucspi-tcp
 
 ALL_TARGET=	it
 INSTALL_TARGET=	setup check
