@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc33/pkg-plist,v 1.45 2003/04/23 13:20:53 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc33/pkg-plist,v 1.46 2003/05/15 12:56:34 gerald Exp $
 bin/cpp33
 bin/g++33
 bin/g77-33
@@ -35,8 +35,6 @@ lib/lib-org-xml-sax.a
 lib/lib-org-w3c-dom.la
 lib/lib-org-w3c-dom.a
 share/java/libgcj-3.3.jar
-@dirrm share/java/classes
-@dirrm share/java
 @comment Insert PLIST.gcc-lib here
 @comment -=[ begin PLIST.gcc-lib ]=-
 @comment -=[ end PLIST.gcc-lib ]=-
