@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/x11-fm/binder/Makefile,v 1.4 2000/04/13 08:51:33 knu Exp $
+# $FreeBSD: ports/x11-fm/binder/Makefile,v 1.5 2000/07/14 13:48:01 alex Exp $
 #
 
 PORTNAME=	binder
@@ -32,7 +32,7 @@ LANGUAGE?=
 .if (${LANGUAGE} == "Japanese")
 CATEGORY_LIST=	x11-fm windowmaker tkstep80 japanese
 RUN_DEP_LIST=	${LOCALBASE}/lib/tkstep8.0jp/tkstep.tcl:${PORTSDIR}/japanese/tkstep80
-LIB_DEP_LIST=	img1:${PORTSDIR}/japanese/libimg
+LIB_DEP_LIST=	img.1:${PORTSDIR}/japanese/libimg
 .else
 CATEGORY_LIST=	x11-fm windowmaker tkstep80
 RUN_DEP_LIST=	${LOCALBASE}/lib/tkstep8.0/tkstep.tcl:${PORTSDIR}/x11-toolkits/tkstep80
