@@ -3,12 +3,12 @@
 # Date Created:				7 nov 98
 # Whom:				 	Gilad Rom
 #
-# $FreeBSD: ports/x11-toolkits/gtkstep/Makefile,v 1.12 1999/11/11 10:39:58 tg Exp $
+# $FreeBSD: ports/x11-toolkits/gtkstep/Makefile,v 1.13 1999/12/25 01:33:11 steve Exp $
 #
 
 DISTNAME=	gtkstep-2.0
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	http://ulli.linuxbox.com/gtkstep/
+MASTER_SITES=	http://ulli.linuxave.net/gtkstep/
 
 MAINTAINER=	ports@FreeBSD.org
 
