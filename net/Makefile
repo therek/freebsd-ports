@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.406 2000/09/20 15:52:37 sobomax Exp $
+# $FreeBSD: ports/net/Makefile,v 1.407 2000/09/24 19:40:37 knu Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -250,6 +250,7 @@
     SUBDIR += telserv
     SUBDIR += tik
     SUBDIR += tintin++
+    SUBDIR += tintin++-devel
     SUBDIR += tinyfugue
     SUBDIR += tn3270
     SUBDIR += tn5250
