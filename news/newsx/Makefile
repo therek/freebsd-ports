@@ -1,10 +1,8 @@
 # New ports collection makefile for:	newsx
-# Date created:	31st August, 2000
-# Whom:		Ben Smithurst <ben@FreeBSD.org>
-# Date updated: 10th February, 2001
+# Date created: 10th February, 2001
 # Whom:		Thierry Thomas <tthomas@mail.dotcom.fr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/newsx/Makefile,v 1.1 2001/04/08 10:51:40 dinoex Exp $
 #
 
 PORTNAME=	newsx
