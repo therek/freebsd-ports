@@ -2,7 +2,7 @@
 # Date created:		14th April 1997
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/archivers/macutils/Makefile,v 1.9 2000/06/12 07:43:05 sobomax Exp $
+# $FreeBSD: ports/archivers/macutils/Makefile,v 1.10 2000/10/29 06:31:19 dougb Exp $
 #
 
 PORTNAME=	macutils
@@ -49,7 +49,7 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/man/macutil.1 ${MANPREFIX}/man/man1
 .if !defined(NOPORTDOCS)
 	@${ECHO_MSG} "===>  Installing supplementary documents..."
-	-${MKDIR} ${DOCDIR}
+	@${MKDIR} ${DOCDIR}
 .for file in ${DOCFILES}
 	${INSTALL_DATA} ${WRKSRC}/doc/${file} ${DOCDIR}/
 .endfor
