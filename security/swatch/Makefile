@@ -3,7 +3,7 @@
 # Date created:					May 2 97
 # Whom:						jfitz
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/swatch/Makefile,v 1.2 1999/08/31 01:51:54 peter Exp $
 #
 
 DISTNAME=      	swatch-2.2
@@ -11,7 +11,7 @@ CATEGORIES=	security sysutils
 MASTER_SITES=	ftp://ftp.stanford.edu/general/security-tools/swatch/ \
 		ftp://ftp.cert.dfn.de/pub/tools/audit/swatch/
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 NO_BUILD=	YES
 

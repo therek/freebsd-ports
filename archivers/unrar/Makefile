@@ -4,14 +4,14 @@
 # Date created:         28 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/unrar/Makefile,v 1.15 1999/08/25 04:25:18 obrien Exp $
 #
 
 DISTNAME=       unrar-2.50
 CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/arcers/
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 NO_WRKSUBDIR=   Yes
 

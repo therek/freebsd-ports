@@ -1,16 +1,16 @@
 # New ports collection makefile for:	pmw
 # Version required:	0.8.1
 # Date created:		03 June 1998
-# Whom:			Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/pmw/Makefile,v 1.7 1999/08/31 02:59:29 peter Exp $
 
 DISTNAME=	Pmw.0.8.1
 PKGNAME=	py-pmw-0.8.1
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	ftp://ftp.dscpl.com.au/pub/pmw/
 
-MAINTAINER=	tg@FreeBSD.ORG
+MAINTAINER=	tg@FreeBSD.org
 
 BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python

@@ -3,7 +3,7 @@
 # Date created:				
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-File-BasicFlock/Makefile,v 1.9 1999/08/25 05:49:10 obrien Exp $
 #
 
 DISTNAME=	File-BasicFLock-96.072401
@@ -12,7 +12,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 USE_PERL5=	YES
 

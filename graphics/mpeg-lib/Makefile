@@ -3,14 +3,14 @@
 # Date created:		16 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/mpeg-lib/Makefile,v 1.11 1999/08/25 06:14:27 obrien Exp $
 #
 
 DISTNAME=	mpeg_lib-1.2.1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.mni.mcgill.ca/pub/mpeg/
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/mpeg_lib
 

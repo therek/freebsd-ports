@@ -3,14 +3,14 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.11 1999/08/31 02:00:18 peter Exp $
 #
 
 DISTNAME=	webmin-0.73
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.webmin.com/webmin/download/
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 NO_BUILD=	yes
 IS_INTERACTIVE=	yes

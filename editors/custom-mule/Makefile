@@ -3,10 +3,10 @@
 # Date created:		27 December 1998
 # Whom:			shige
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/custom-mule/Makefile,v 1.3 1999/08/25 05:43:33 obrien Exp $
 #
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 PATCHFILES=	custom-1.9962.patch
 PATCH_SITES=	ftp://ftp.jpl.org/pub/elisp/semi-gnus-mule23@1934/

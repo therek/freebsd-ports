@@ -1,9 +1,9 @@
 # New ports collection makefile for:    gnustep
 # Version required:     0.5.5
 # Date created:         03 October 1998
-# Whom:                 Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnustep/Makefile,v 1.6 1999/08/25 05:48:09 obrien Exp $
+# $FreeBSD: ports/devel/gnustep/Makefile,v 1.7 1999/08/28 16:58:26 cpiazza Exp $
 #
 
 DISTNAME=       gstep-core-0.5.5
@@ -12,7 +12,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/core/ \
 		ftp://ftp.peanuts.org/Mirrors/GNUstep/gnustep/core/
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff34

@@ -3,7 +3,7 @@
 # Date created:		Thu Sep 14 11:10:01 CDT 1995
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/gcc11/Makefile,v 1.6 1999/08/25 05:47:59 obrien Exp $
 #
 
 DISTNAME=	gcc11
@@ -12,7 +12,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://nyquist.ee.ualberta.ca/pub/motorola/68hc11/gcc/ 
 DISTFILES=	gcc-6811-fsf.tar.gz gcc-2.6.3.tar.gz
 
-MAINTAINER=	erich@FreeBSD.ORG
+MAINTAINER=	erich@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 

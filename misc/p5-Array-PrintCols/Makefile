@@ -3,7 +3,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/p5-Array-PrintCols/Makefile,v 1.13 1999/08/25 07:22:15 obrien Exp $
 #
 
 DISTNAME=	Array-PrintCols-2.1
@@ -12,7 +12,7 @@ CATEGORIES=	misc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Array
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 USE_PERL5=	YES
 

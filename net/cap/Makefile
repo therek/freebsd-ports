@@ -1,9 +1,9 @@
 # New ports collection makefile for:	cap
 # Version required:		6.0PL198
 # Date created:			09 Nov 1996
-# Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
+# Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/cap/Makefile,v 1.6 1999/08/30 14:22:15 peter Exp $
 #
 
 DISTNAME=	cap60.pl100

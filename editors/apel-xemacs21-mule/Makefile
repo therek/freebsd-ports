@@ -1,12 +1,12 @@
 # New ports collection makefile for:	apel for xemacs-mule
 # Version required:	9.20
 # Date created:		13 June 1999
-# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.ORG>
+# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/apel-xemacs-mule/Makefile,v 1.4 1999/08/25 05:43:22 obrien Exp $
 #
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 # This is a slave port.
 PORTCLASS=	slave

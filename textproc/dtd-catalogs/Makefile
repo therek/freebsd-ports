@@ -3,7 +3,7 @@
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/dtd-catalogs/Makefile,v 1.4 1999/08/31 02:09:12 peter Exp $
 #
 
 DISTNAME=	dtd-catalogs-1.0
@@ -11,7 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 RUN_DEPENDS=	${ISO8879_CAT}:${PORTSDIR}/textproc/iso8879 \
 		${ISO12083_CAT}:${PORTSDIR}/textproc/iso12083 \

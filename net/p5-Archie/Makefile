@@ -3,7 +3,7 @@
 # Date created:				October 19th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Archie/Makefile,v 1.9 1999/08/30 14:23:36 peter Exp $
 #
 
 DISTNAME=	perl_archie.1.5
@@ -12,7 +12,7 @@ CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Archie
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 USE_PERL5=	YES
 

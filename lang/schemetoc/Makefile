@@ -3,7 +3,7 @@
 # Date created:         28 Dec 1994
 # Whom:                 jmacd@uclink.berkeley.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/schemetoc/Makefile,v 1.13 1999/08/25 06:35:22 obrien Exp $
 #
 
 DISTNAME= 	schemetoc-93.3.15
@@ -12,7 +12,7 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://gatekeeper.dec.com/pub/DEC/Scheme-to-C/
 DISTFILES=      15mar93.tar.Z
 
-MAINTAINER=	jmacd@FreeBSD.ORG
+MAINTAINER=	jmacd@FreeBSD.org
 
 BROKEN_ELF=	yes
 

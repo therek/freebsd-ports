@@ -3,7 +3,7 @@
 # Date created:			31 October 1998
 # Whom:				shige
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.33 1999/08/31 01:53:22 peter Exp $
 #
 
 DISTNAME=	zsh-3.1.6
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.zsh.org/zsh/ \
 		ftp://ftp.ips.oz.au/pub/packages/zsh/ \
 		ftp://ftp.uit.no/pub/unix/shells/zsh/
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-zsh-mem --enable-zsh-secure-free --enable-dynamic

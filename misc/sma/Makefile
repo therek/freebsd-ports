@@ -1,9 +1,9 @@
 # New ports collection makefile for:    sma
 # Version required:     0.9.13
 # Date created:         8 May 1998
-# Whom:                 Donald Burr <dburr@FreeBSD.ORG>
+# Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/sma/Makefile,v 1.5 1999/08/25 07:22:38 obrien Exp $
 #
 
 DISTNAME=	SMA
@@ -12,7 +12,7 @@ CATEGORIES=	misc
 MASTER_SITES=	http://www.scour.net/sma/
 EXTRACT_SUFX=	.pl
 
-MAINTAINER=	dburr@FreeBSD.ORG
+MAINTAINER=	dburr@FreeBSD.org
 
 RUN_DEPENDS=	smbclient:${PORTSDIR}/net/samba
 

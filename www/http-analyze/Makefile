@@ -3,7 +3,7 @@
 # Date created:		Fri Jul 11 06:11:41 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/http-analyze/Makefile,v 1.6 1999/08/31 02:42:52 peter Exp $
 #
 
 DISTNAME=       http-analyze2.01
@@ -12,7 +12,7 @@ CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.rent-a-guru.de/pub/http-analyze2.01/
 EXTRACT_SUFX=	-src.tar.gz
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 BUILD_DEPENDS=	${PREFIX}/lib/libgd.a:${PORTSDIR}/graphics/gd
 

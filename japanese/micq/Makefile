@@ -3,7 +3,7 @@
 # Date created:				31 Oct 1998
 # Whom:					flathill
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/micq/Makefile,v 1.4 1999/08/25 05:25:27 obrien Exp $
 #
 
 DISTNAME=	micq-0.4.0
@@ -18,7 +18,7 @@ PATCH_SITES=	http://www.tahoo.org/~taku/soft/micq-0.4.0-jp.patch \
 PATCHFILES=	micq-0.4.0-jp.patch
 PATCH_DIST_STRIP= -p1
 
-MAINTAINER=	flathill@FreeBSD.ORG
+MAINTAINER=	flathill@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/micq-0.4.0
 

@@ -1,9 +1,9 @@
 # New ports collection makefile for:	gnomeprint
 # Version required:			0.4
 # Date created:				15 Jan 1999
-# Whom:					Vanilla I. Shu <vanilla@FreeBSD.ORG>
+# Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.8 1999/08/31 01:44:49 peter Exp $
 #
 
 DISTNAME=	gnome-print-0.4

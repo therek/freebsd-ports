@@ -1,9 +1,9 @@
 # New ports collection makefile for:	replay
 # Version required:		0.61
 # Date created:			Oct 27 1998
-# Whom:				Vanilla Pooh Shu <vanilla@FreeBSD.ORG>
+# Whom:				Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/replay/Makefile,v 1.12 1999/08/25 04:36:00 obrien Exp $
 #
 
 DISTNAME=	replay-source-dgtk_0.61

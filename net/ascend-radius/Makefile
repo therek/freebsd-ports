@@ -3,7 +3,7 @@
 # Date created:				August 28th 96
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ascend-radius/Makefile,v 1.12 1999/08/30 14:22:06 peter Exp $
 #
 
 #DISTNAME=	radius-980618
@@ -20,7 +20,7 @@ DISTFILES=	radius-980618.tar.gz \
 		980618.pdf
 EXTRACT_ONLY=	radius-980618.tar.gz
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 WRKPREFIX=	radius-980618/radius-1.16-ascend
 WRKSRC=		${WRKDIR}/${WRKPREFIX}/ascendd

@@ -4,7 +4,7 @@
 # Date created:			  Sun Oct 12, 1997
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/aub/Makefile,v 1.6 1999/08/30 14:31:31 peter Exp $
 #
 
 DISTNAME=	aub
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.cdrom.com/pub/perl/CPAN/scripts/news/nntpstuff/aub/ \
 		ftp://ftp.perl.org/pub/CPAN/scripts/news/nntpstuff/aub/
 DISTFILES=	aub aub.1 BUG_FIXES
 
-MAINTAINER=	obrien@FreeBSD.ORG
+MAINTAINER=	obrien@FreeBSD.org
 
 DIST_SUBDIR=	aub
 NO_WRKSUBDIR=	yes

@@ -3,7 +3,7 @@
 # Date created:			10 August 1996
 # Whom:				Michael Butschky <butsch@computi.erols.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/swi-pl/Makefile,v 1.19 1999/08/25 06:35:30 obrien Exp $
 #
 
 DISTNAME=	pl-3.2.9
@@ -11,7 +11,7 @@ PKGNAME=	swi-pl-3.2.9
 CATEGORIES=	lang
 MASTER_SITES=	ftp://swi.psy.uva.nl/pub/SWI-Prolog/
 
-MAINTAINER=	max@FreeBSD.ORG
+MAINTAINER=	max@FreeBSD.org
 
 Y2K=		http://www.hio.hen.nl/faq/SWI-Prolog.html#7.__warranty
 

@@ -3,7 +3,7 @@
 # Date created:         26 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/lha/Makefile,v 1.12 1999/08/25 04:25:10 obrien Exp $
 #
 
 DISTNAME=       lha-114d
@@ -13,7 +13,7 @@ MASTER_SITES=   ftp://ftp.cs.titech.ac.jp/pub/tool/lha/ \
 		ftp://ftp.hipecs.hokudai.ac.jp/pub/unix/lha/ \
 		ftp://ftp.win.or.jp/pub/misc/
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 MAN1=		lha.1
 MANLANG=	ja

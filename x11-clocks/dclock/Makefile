@@ -3,7 +3,7 @@
 # Date created:		15 Aug 1996
 # Whom:			David Leonard <leonard@dstc.edu.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/dclock/Makefile,v 1.8 1999/08/31 02:57:57 peter Exp $
 #
 
 DISTNAME=	dclock
@@ -12,7 +12,7 @@ CATEGORIES=	x11-clocks
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 EXTRACT_SUFX=	.shar.Z
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
 MAN1=		dclock.1

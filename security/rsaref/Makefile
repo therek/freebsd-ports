@@ -4,7 +4,7 @@
 # Date created:         2 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/rsaref/Makefile,v 1.8 1999/08/31 01:51:40 peter Exp $
 #
 
 DISTNAME=       rsaref20.1996
@@ -16,7 +16,7 @@ MASTER_SITES=   ftp://utopia.hacktic.nl/pub/replay/pub/crypto/LIBS/rsa/ \
 		ftp://ftp.nstu.ru/pub/sources/security/crypt/
 EXTRACT_SUFX=   .tar.Z
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 WRKSRC=         ${WRKDIR}/source
 RESTRICTED=     "Crypto"

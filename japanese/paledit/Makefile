@@ -3,7 +3,7 @@
 # Date created:		14 Jan 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/paledit/Makefile,v 1.4 1999/08/25 05:26:14 obrien Exp $
 #
 
 DISTNAME=	paledit-0.91
@@ -11,7 +11,7 @@ PKGNAME=	ja-${DISTNAME}
 CATEGORIES=	japanese sysutils
 MASTER_SITES=	http://www.swlab.csce.kyushu-u.ac.jp/~nom/prj/paledit/
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 USE_PERL5=	yes
 GNU_CONFIGURE=	yes

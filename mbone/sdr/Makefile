@@ -1,9 +1,9 @@
 # New ports collection makefile for:	sdr
 # Version required:			2.4a7
 # Date created:				5 September 1996
-# Whom:	      Bill Fenner <fenner@FreeBSD.ORG>
+# Whom:	      Bill Fenner <fenner@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mbone/sdr/Makefile,v 1.13 1999/08/25 07:09:42 obrien Exp $
 #
 
 DISTNAME=	sdr-2.4a7n

@@ -2,7 +2,7 @@
 # Date created:		1 July 1996
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/mpegaudio/Makefile,v 1.4 1999/08/25 04:35:53 obrien Exp $
 #
 
 DISTNAME=	mpegaudio
@@ -11,7 +11,7 @@ CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.iuma.com/audio_utils/converters/source/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 MAN1=		mpeg_musicin.1 mpeg_musicout.1
 

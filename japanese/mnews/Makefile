@@ -1,9 +1,9 @@
 # New ports collection makefile for:	mnews
 # Version required:		1.21
 # Date created:			23 Sep 1996
-# Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
+# Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/mnews/Makefile,v 1.15 1999/08/25 05:25:30 obrien Exp $
 #
 
 DISTNAME=	mnews121

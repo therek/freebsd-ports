@@ -3,14 +3,14 @@
 # Date created:				18th July 1998
 # Whom:					Gary Palmer <gpalmer@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/cdb/Makefile,v 1.6 1999/08/25 05:21:05 obrien Exp $
 #
 
 DISTNAME=	cdb-0.55
 CATEGORIES=	databases
 MASTER_SITES=	ftp://koobera.math.uic.edu/www/software/
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=	it
 MAN1=		cdbget.1 cdbmake.1 cdbdump.1 cdbstats.1 cdbtest.1

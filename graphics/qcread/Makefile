@@ -3,7 +3,7 @@
 # Date created:        23 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/qcread/Makefile,v 1.3 1999/08/25 06:14:48 obrien Exp $
 #
 
 DISTNAME=	qcread-0.3
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://phobos.illtel.denver.co.us/pub/qcread/ \
 		http://phobos.illtel.denver.co.us/pub/qcread/
 
-MAINTAINER=	billf@FreeBSD.ORG
+MAINTAINER=	billf@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 

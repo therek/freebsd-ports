@@ -3,7 +3,7 @@
 # Date created:         8 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/less/Makefile,v 1.20 1999/08/25 07:22:00 obrien Exp $
 #
 
 DISTNAME=       less-337
@@ -11,7 +11,7 @@ CATEGORIES=	misc
 MASTER_SITES=   ${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	less
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 MAN1=		less.1 lesskey.1

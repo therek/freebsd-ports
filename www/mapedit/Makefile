@@ -3,7 +3,7 @@
 # Date created:		Fr   4 Apr 1997 17:45:31 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mapedit/Makefile,v 1.13 1999/08/31 02:42:58 peter Exp $
 #
 
 DISTNAME=	mapedit2.3
@@ -11,7 +11,7 @@ PKGNAME=	mapedit-2.3
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.boutell.com/pub/boutell/mapedit/
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 RUN_DEPENDS=	${PREFIX}/java/bin/java:${PORTSDIR}/java/jdk
 

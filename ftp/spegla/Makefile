@@ -2,9 +2,9 @@
 # New ports collection makefile for:    spegla
 # Version required:     0.93p2
 # Date created:         Sun Apr 19 16:17:25 PDT 1998
-# Whom:                 Jordan Hubbard <jkh@FreeBSD.ORG>
+# Whom:                 Jordan Hubbard <jkh@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/spegla/Makefile,v 1.6 1999/08/25 05:55:23 obrien Exp $
 #
 
 DISTNAME=	spegla-1.04

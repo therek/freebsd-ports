@@ -1,9 +1,9 @@
 # New ports collection makefile for:	numpy
 # Version required:	1.8
 # Date created:		20 April 1997
-# Whom:			Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/numpy/Makefile,v 1.16 1999/08/25 07:12:21 obrien Exp $
 #
 
 DISTNAME=	LLNLDistribution11
@@ -12,7 +12,7 @@ CATEGORIES=	math python
 MASTER_SITES=	ftp://ftp-icf.llnl.gov/pub/python/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tg@FreeBSD.ORG
+MAINTAINER=	tg@FreeBSD.org
 
 BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python

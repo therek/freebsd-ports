@@ -3,7 +3,7 @@
 # Date created:		Sat Nov 22 12:54:50 CET 1997
 # Whom:			andreas
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/html2ps/Makefile,v 1.9 1999/08/31 01:44:53 peter Exp $
 #
 
 DISTNAME=	html2ps-1.0b1
@@ -11,7 +11,7 @@ PKGNAME=	html2ps-1.0
 CATEGORIES=	print www perl5
 MASTER_SITES=	http://www.tdb.uu.se/~jan/
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 BUILD_DEPENDS=	mogrify:${PORTSDIR}/graphics/ImageMagick \
 		djpeg:${PORTSDIR}/graphics/jpeg \

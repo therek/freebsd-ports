@@ -3,7 +3,7 @@
 # Date created:         20 Sep 1998
 # Whom:                 msmith
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/citrix_ica/Makefile,v 1.14 1999/08/30 14:22:18 peter Exp $
 #
 
 DISTNAME=       linux
@@ -12,7 +12,7 @@ CATEGORIES=	comms
 MASTER_SITES=   
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=     msmith@FreeBSD.ORG
+MAINTAINER=     msmith@FreeBSD.org
 
 RUN_DEPENDS=    /compat/linux/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
 

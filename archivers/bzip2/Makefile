@@ -2,9 +2,9 @@
 # New ports collection makefile for:	bzip2
 # Version required:	0.9.0c
 # Date created:		19 Nov 1997
-# Whom:			Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.17 1999/08/25 04:25:03 obrien Exp $
 #
 
 DISTNAME=	bzip2-0.9.5c

@@ -3,14 +3,14 @@
 # Date created: 	Tue Nov 14 18:29:48 MET 1995
 # Whom: 		Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/apsfilter/Makefile,v 1.35 1999/08/31 01:44:30 peter Exp $
 #
 
 DISTNAME=	apsfilter-5.1.3
 CATEGORIES=	print
-MASTER_SITES=	http://www.FreeBSD.ORG/~andreas/apsfilter/download/
+MASTER_SITES=	http://www.FreeBSD.org/~andreas/apsfilter/download/
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55 \
 		html2ps:${PORTSDIR}/print/html2ps \

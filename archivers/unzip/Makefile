@@ -3,7 +3,7 @@
 # Date created:         17 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/archivers/unzip/Makefile,v 1.25 1999/08/25 04:25:19 obrien Exp $
+# $FreeBSD: ports/archivers/unzip/Makefile,v 1.26 1999/08/28 01:56:54 mharo Exp $
 #
 
 DISTNAME=       unzip540
@@ -11,7 +11,7 @@ PKGNAME=        unzip-5.40
 CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.cdrom.com/pub/infozip/src/
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 Y2K=		http://www.cdrom.com/pub/infozip/FAQ.html#Y2K
 

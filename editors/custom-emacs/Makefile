@@ -3,7 +3,7 @@
 # Date created:		27 December 1998
 # Whom:			shige
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/custom-emacs/Makefile,v 1.3 1999/08/25 05:43:32 obrien Exp $
 #
 
 DISTNAME=	custom-${CUSTOM_VER}
@@ -11,7 +11,7 @@ CATEGORIES=	editors elisp
 MASTER_SITES=	ftp://ftp.dina.kvl.dk/pub/Staff/Per.Abrahamsen/custom/ \
 		ftp://ftp.win.ne.jp/pub/word/elisp/
 
-MAINTAINER?=	shige@FreeBSD.ORG
+MAINTAINER?=	shige@FreeBSD.org
 
 # custom library
 CUSTOM_VER=	1.9962

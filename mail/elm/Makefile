@@ -4,7 +4,7 @@
 # Date created:         26 June 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/elm/Makefile,v 1.54 1999/08/25 06:50:07 obrien Exp $
 #
 
 DISTNAME=       elm-2.4ME+54
@@ -13,7 +13,7 @@ MASTER_SITES=   ftp://ftp.ozone.fmi.fi/KEH/ \
 		ftp://ftp.funet.fi/pub/unix/mail/elm/elm-2.4ME+/ \
 		ftp://ftp.ibp.fr/pub/unix/mail/elm-me/
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 WRKSRC=         ${WRKDIR}/elm2.4.ME+.54
 MAN1=           answer.1 checkalias.1 elm.1 elmalias.1 fastmail.1 \

@@ -1,9 +1,9 @@
 # New ports collection makefile for:	git
 # Version required:	4.3.17
 # Date created:		12 Jul 1995
-# Whom:			torstenb@FreeBSD.ORG
+# Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/git/Makefile,v 1.12 1999/08/25 07:21:42 obrien Exp $
 #
 
 DISTNAME=	git-4.3.17
@@ -11,7 +11,7 @@ CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	git
 
-MAINTAINER=	jseger@FreeBSD.ORG
+MAINTAINER=	jseger@FreeBSD.org
 
 GNU_CONFIGURE=	YES
 MAN1=		git.1 gitaction.1 gitkeys.1 gitmount.1 \

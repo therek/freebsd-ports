@@ -3,7 +3,7 @@
 # Date created:		6 May 1995
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/lmbench/Makefile,v 1.9 1999/08/25 04:45:43 obrien Exp $
 #
 
 DISTNAME=	lmbench
@@ -12,7 +12,7 @@ CATEGORIES=	benchmarks
 MASTER_SITES=	http://reality.sgi.com/lm_engr/lmbench/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	fenner@FreeBSD.ORG
+MAINTAINER=	fenner@FreeBSD.org
 
 ALL_TARGET=	build
 MAKE_ENV=	PATH=${PATH}:${WRKSRC}/scripts

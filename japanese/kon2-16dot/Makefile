@@ -3,7 +3,7 @@
 # Date created:         11 Apr 1997
 # Whom:                 Makoto Matsushita <matusita@jp.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/kon2-16dot/Makefile,v 1.22 1999/08/25 05:25:05 obrien Exp $
 #
 
 DISTNAME=	kon2-0.3
@@ -17,7 +17,7 @@ DISTFILES=	kon2-0.3.tar.gz \
 		k14.bdf 7x14rk.bdf \
 		jiskan16.bdf 8x16rk.bdf
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 

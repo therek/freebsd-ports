@@ -3,7 +3,7 @@
 # Date created:				April 5th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Net-DNS/Makefile,v 1.12 1999/08/30 14:23:37 peter Exp $
 #
 
 DISTNAME=	Net-DNS-0.12
@@ -12,7 +12,7 @@ CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 USE_PERL5=	YES
 

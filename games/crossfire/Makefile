@@ -3,7 +3,7 @@
 # Date created:         So  27 Okt 1996 12:25:55 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/crossfire/Makefile,v 1.29 1999/08/25 06:03:14 obrien Exp $
 #
 
 DISTNAME=	crossfire-${MAJ}.${MIN}.${PL}
@@ -17,7 +17,7 @@ MASTER_SITES=	http://www.FreeBSD.org/~andreas/download/ \
 DISTFILES=	${CF_SOURCES} ${CF_DOC} ${CF_MAPS} ${CF_SOUNDS} \
 		${CF_ARCH} ${CF_CLSERV}
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 BUILD_DEPENDS=	rplay:${PORTSDIR}/audio/rplay
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm

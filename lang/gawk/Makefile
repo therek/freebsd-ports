@@ -3,14 +3,14 @@
 # Date created:		Mi  21 Okt 1998 13:53:18 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/gawk/Makefile,v 1.5 1999/08/25 06:34:34 obrien Exp $
 
 DISTNAME=	gawk-3.0.3
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gawk
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 MANUAL_PACKAGE_BUILD=	confuses zsh
 GNU_CONFIGURE=	yes

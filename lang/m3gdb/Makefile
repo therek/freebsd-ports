@@ -3,14 +3,14 @@
 # Date created:        17 February 1999
 # Whom:                wagner@luthien.in-berlin.de
 #
-# $FreeBSD: ports/lang/m3gdb/Makefile,v 1.3 1999/08/25 06:34:54 obrien Exp $
+# $FreeBSD: ports/lang/m3gdb/Makefile,v 1.4 1999/08/27 22:29:36 mharo Exp $
 #
 
 DISTNAME=      m3gdb-4.17
 CATEGORIES=    lang devel
 MASTER_SITES=  http://www.freebsd.org/~jdp/distfiles/
 
-MAINTAINER=    jdp@FreeBSD.ORG
+MAINTAINER=    jdp@FreeBSD.org
 
 MAN1=          m3gdb.1
 MANCOMPRESSED= yes

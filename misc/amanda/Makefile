@@ -3,14 +3,14 @@
 # Date created:				28th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/amanda/Makefile,v 1.11 1999/08/25 07:21:05 obrien Exp $
 #
 
 DISTNAME=	amanda-2.3.0
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.cs.umd.edu/pub/amanda/old-versions/
 
-MAINTAINER=	gpalmer@FreeBSD.ORG
+MAINTAINER=	gpalmer@FreeBSD.org
 
 PATCH_STRIP=	
 MAN8=		amanda.8 amadmin.8 amcheck.8 amcleanup.8 amdump.8 \

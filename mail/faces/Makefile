@@ -2,9 +2,9 @@
 # Version required:	1.6.1
 # Date created:		09 December 96
 # Whom:			Lars Koeller <Lars_Koeller@odie.physik2.uni-rostock.de>
-#			Andreas Klemm <andreas@FreeBSD.ORG>
+#			Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/faces/Makefile,v 1.10 1999/08/25 06:50:11 obrien Exp $
 #
 
 DISTNAME=	faces-1.6.1

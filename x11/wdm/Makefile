@@ -1,9 +1,9 @@
 # New ports collection makefile for:	wdm
 # Version required:	1.0
 # Date created:		August 31, 1998
-# Whom:			Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/wdm/Makefile,v 1.24 1999/08/31 02:50:41 peter Exp $
 
 DISTNAME=	wdm-1.0
 CATEGORIES=	x11 windowmaker
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.windowmaker.org/pub/contrib/srcs/utils/ \
 		http://www.de.freebsd.org/de/gif/bsd/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DAEMONPIC}
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		gif.3:${PORTSDIR}/graphics/giflib \

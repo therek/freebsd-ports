@@ -3,7 +3,7 @@
 # Date created:		21 January 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/rayshade/Makefile,v 1.4 1999/08/25 06:14:51 obrien Exp $
 #
 
 DISTNAME=	rayshade.4.0
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://graphics.stanford.edu/pub/rayshade/	\
 		ftp://ftp.princeton.edu/pub/Graphics/rayshade.4.0/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=     ports@FreeBSD.ORG
+MAINTAINER=     ports@FreeBSD.org
 
 BUILD_DEPENDS=	$(LOCALBASE)/lib/librle.a:${PORTSDIR}/graphics/urt
 

@@ -3,7 +3,7 @@
 # Date created:		23 June 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/fnlib/Makefile,v 1.11 1999/08/25 06:13:53 obrien Exp $
 #
 
 DISTNAME=	fnlib-0.4
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://www.rasterman.com/pub/enlightenment/enlightenment/ \
 		ftp://ftp.enlightenment.org/pub/enlightenment/enlightenment/ \
 		ftp://ftp.labs.redhat.com/pub/imlib/TAR/
 
-MAINTAINER=	vanilla@FreeBSD.ORG
+MAINTAINER=	vanilla@FreeBSD.org
 
 LIB_DEPENDS=	Imlib.4:${PORTSDIR}/graphics/imlib
 

@@ -3,7 +3,7 @@
 # Date created:         27  Dec 1996
 # Whom:                 proff@iq.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/sced/Makefile,v 1.6 1999/08/25 06:14:54 obrien Exp $
 #
 
 DISTNAME=       sced-1.02
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.cs.berkeley.edu/~schenney/sced/src/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	povray:${PORTSDIR}/graphics/povray
 

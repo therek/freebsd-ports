@@ -3,7 +3,7 @@
 # Date created:        17 February 1999
 # Whom:                Seiichirou Hiraoka
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xosmulti/Makefile,v 1.2 1999/08/25 06:05:49 obrien Exp $
 #
 
 DISTNAME=	xosmulti_1.00_tar
@@ -12,7 +12,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www01.u-page.so-net.ne.jp/ka2/nakanita/multi/
 EXTRACT_SUFX=	.gz
 
-MAINTAINER=	flathill@FreeBSD.ORG
+MAINTAINER=	flathill@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xosmulti
 USE_X_PREFIX=	yes

@@ -3,7 +3,7 @@
 # Date created:		04 July 1996
 # Whom:			markm
 #
-# $FreeBSD: ports/games/gnuchess/Makefile,v 1.7 1999/08/25 06:03:35 obrien Exp $
+# $FreeBSD: ports/games/gnuchess/Makefile,v 1.8 1999/08/30 02:19:56 mph Exp $
 #
 
 DISTNAME=	gnuchess-4.0.pl80
@@ -12,7 +12,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gnuchess
 
-MAINTAINER=	markm@FreeBSD.ORG
+MAINTAINER=	markm@FreeBSD.org
 
 HAS_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/src

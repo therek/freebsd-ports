@@ -3,7 +3,7 @@
 # Date created:         Sat Nov 08 09:47:12 CET 1997
 # Whom:                 se
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xblast/Makefile,v 1.6 1999/08/25 06:04:48 obrien Exp $
 #
 
 DISTNAME=       xblast-2.6.beta
@@ -15,7 +15,7 @@ CATEGORIES=	games
 # but right now only available from:
 MASTER_SITES=	http://www.ikp.uni-koeln.de/~vogel/archive/
 
-MAINTAINER=	se@FreeBSD.ORG
+MAINTAINER=	se@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/XBlast-2.6.beta
 USE_IMAKE=      yes

@@ -1,9 +1,9 @@
 # New ports collection makefile for:	joe
 # Version required:	2.8
 # Date created:		01 Jul 1995
-# Whom:			torstenb@FreeBSD.ORG
+# Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/joe/Makefile,v 1.5 1999/08/25 05:43:56 obrien Exp $
 #
 
 DISTNAME=	joe2.8

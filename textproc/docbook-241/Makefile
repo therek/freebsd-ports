@@ -5,7 +5,7 @@
 #
 # Based heavily on work by jfieber.
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/docbook-241/Makefile,v 1.5 1999/08/31 02:09:06 peter Exp $
 #
 
 DISTNAME=	docbook-241
@@ -13,7 +13,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.ora.com/pub/davenport/
 DISTFILES=	docbk241.tar.Z
 
-MAINTAINER=	nik@FreeBSD.ORG
+MAINTAINER=	nik@FreeBSD.org
 
 RUN_DEPENDS=	${ISOCAT}:${PORTSDIR}/textproc/iso8879
 

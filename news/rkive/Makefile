@@ -1,9 +1,9 @@
 # New ports collection makefile for:	rkive
 # Version required:	3.1
 # Date created:		03 Jul 1995
-# Whom:			torstenb@FreeBSD.ORG
+# Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/rkive/Makefile,v 1.6 1999/08/30 14:31:51 peter Exp $
 #
 
 DISTNAME=	rkive3.1
@@ -12,7 +12,7 @@ CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.sterling.com/rkive/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 NO_CDROM=	"Don't make money from it"
 

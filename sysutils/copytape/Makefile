@@ -3,7 +3,7 @@
 # Date created:		23 October 1998
 # Whom:			Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/copytape/Makefile,v 1.3 1999/08/31 01:59:39 peter Exp $
 #
 
 DISTNAME=		copytape
@@ -13,7 +13,7 @@ MASTER_SITE=		${MASTER_SITE_COMP_SOURCES}
 MASTER_SITE_SUBDIR=	unix/volume8
 EXTRACT_SUFX=		.Z
 
-MAINTAINER=		ports@FreeBSD.ORG
+MAINTAINER=		ports@FreeBSD.org
 
 BUILD_DEPENDS=		gunshar:${PORTSDIR}/archivers/gshar+gunshar
 

@@ -3,7 +3,7 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/xli/Makefile,v 1.12 1999/08/25 06:15:24 obrien Exp $
+# $FreeBSD: ports/graphics/xli/Makefile,v 1.13 1999/08/25 06:46:43 fenner Exp $
 #
 
 DISTNAME=	xli.1.16
@@ -14,7 +14,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 MASTER_SITE_SUBDIR=	applications
 DISTFILES=	xli.1.16.tar.gz xli-png.tar.gz
 
-MAINTAINER=	jkoshy@FreeBSD.ORG
+MAINTAINER=	jkoshy@FreeBSD.org
 
 LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	semi-current for mule
 # Version required:	1.13.3
 # Date created:		9 May 1999
-# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.ORG>
+# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/semi-mule-current/Makefile,v 1.4 1999/08/25 05:44:19 obrien Exp $
 #
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 # This is a slave port.
 PORTCLASS=	slave

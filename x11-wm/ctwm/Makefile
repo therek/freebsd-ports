@@ -3,7 +3,7 @@
 # Date created:		13 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/ctwm/Makefile,v 1.21 1999/08/31 02:59:57 peter Exp $
 #
 
 DISTNAME=	ctwm-3.5
@@ -15,7 +15,7 @@ PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	ctwm-3.5-3.5.1.diffs.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

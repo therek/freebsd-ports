@@ -3,12 +3,12 @@
 # Date created:         1 May 1997
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.14 1999/08/31 01:59:34 peter Exp $
 #
 
 DISTNAME=       cd-write-1.4.1
 CATEGORIES=     sysutils
-MASTER_SITES=   http://www.FreeBSD.ORG/~jmz/
+MASTER_SITES=   http://www.FreeBSD.org/~jmz/
 
 MAINTAINER=     jmz@FreeBSD.org
 

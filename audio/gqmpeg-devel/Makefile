@@ -1,9 +1,9 @@
 # New ports collection makefile for:	gqmpeg
 # Version required:	0.6.3
 # Date Created:		28 Oct 1998
-# Whom:			Vanilla Pooh Shu <vanilla@FreeBSD.ORG>
+# Whom:			Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.17 1999/08/25 04:35:31 obrien Exp $
 #
 
 DISTNAME=	gqmpeg-0.6.3

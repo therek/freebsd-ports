@@ -3,7 +3,7 @@
 # Date created:		23 August 1994
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/irc/Makefile,v 1.21 1999/08/25 06:12:41 obrien Exp $
 #
 
 DISTNAME=	irc2.10.1
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.funet.fi/pub/networking/services/irc/server/ \
 		ftp://ftp.ut.ee/pub/unix/irc/server/ \
 		ftp://ftp.ntua.gr/pub/net/irc/server/
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 # the NOTE command is disabled by default
 # ENABLE_NOTE=yes

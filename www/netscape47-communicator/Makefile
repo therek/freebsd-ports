@@ -3,13 +3,13 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/netscape46-communicator/Makefile,v 1.47 1999/08/31 02:43:04 peter Exp $
 #
 
 MASTER_SITES?=	ftp://ftp.netscape.com/pub/communicator/english/4.61/unix/unsupported/freebsd/complete_install/
 DISTFILES?=	communicator-v461-export.x86-unknown-freebsd.tar.gz
 
-MAINTAINER?=	sada@FreeBSD.ORG
+MAINTAINER?=	sada@FreeBSD.org
 
 MASTERDIR=	${.CURDIR}/../netscape4-communicator
 NO_LATEST_LINK=	yes

@@ -3,7 +3,7 @@
 # Date created:		09 Feb 1995
 # Whom:			gpalmer
 #
-# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.17 1999/08/25 06:35:26 obrien Exp $
+# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.18 1999/08/27 22:29:39 mharo Exp $
 #
 
 DISTNAME=	smalltalk-1.1.5
@@ -11,7 +11,7 @@ CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	smalltalk
 
-MAINTAINER=	jraynard@FreeBSD.ORG
+MAINTAINER=	jraynard@FreeBSD.org
 
 BUILD_DEPENDS=	${PREFIX}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
 

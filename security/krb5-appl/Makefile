@@ -1,9 +1,9 @@
 # Ports collection Makefile for:	MIT Kerberos V
 # Version required:			1.0.5
 # Date created:				6/5/1998
-# Whom:					nectar@FreeBSD.ORG
+# Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/krb5/Makefile,v 1.13 1999/08/31 01:51:12 peter Exp $
 #
 
 DISTNAME=		krb5-1.0.6
@@ -13,7 +13,7 @@ DISTFILES=		krb5-1.0.6.src.tar.gz       \
 			krb5-1.0.6.doc.tar.gz       \
 			krb5-1.0.6.crypto.tar.gz
 
-MAINTAINER=		nectar@FreeBSD.ORG
+MAINTAINER=		nectar@FreeBSD.org
 
 BUILD_DEPENDS=		gm4:${PORTSDIR}/devel/m4
 

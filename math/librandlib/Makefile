@@ -1,9 +1,9 @@
 # New ports collection makefile for:	ranlib
 # Version required:	?
 # Date created:		06 April 1997
-# Whom:			Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/libranlib/Makefile,v 1.6 1999/08/25 07:11:07 obrien Exp $
 #
 
 DISTNAME=	ranlib.c
@@ -11,7 +11,7 @@ PKGNAME=	ranlib-1.0
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.netlib.org/random/
 
-MAINTAINER=	tg@FreeBSD.ORG
+MAINTAINER=	tg@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 

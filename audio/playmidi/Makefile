@@ -3,7 +3,7 @@
 # Date created:         27 Feb 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/playmidi/Makefile,v 1.9 1999/08/25 04:35:58 obrien Exp $
 #
 
 DISTNAME=       playmidi-2.3
@@ -11,7 +11,7 @@ CATEGORIES=     audio
 MASTER_SITES=   ${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/players
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 IS_INTERACTIVE= YES	# asks what devices you want to support
 HAS_CONFIGURE=  YES

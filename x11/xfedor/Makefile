@@ -6,7 +6,7 @@
 # ATTENTION: It not work in > 256 colors modes, please fix it
 # if you can.
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xfedor/Makefile,v 1.10 1999/08/31 02:50:58 peter Exp $
 #
 
 DISTNAME=       xfedor
@@ -16,7 +16,7 @@ MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/x11/util/
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 USE_IMAKE=      yes
 

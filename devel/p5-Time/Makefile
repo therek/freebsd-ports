@@ -3,7 +3,7 @@
 # Date created:				October 12th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Time/Makefile,v 1.12 1999/08/25 05:49:40 obrien Exp $
 #
 
 DISTNAME=	Time-modules-98.112901
@@ -12,7 +12,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Time
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 USE_PERL5=	YES
 

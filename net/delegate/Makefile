@@ -1,9 +1,9 @@
 # New ports collection makefile for:	DeleGate
 # Version required:		5.9.3
 # Date created:			26 Jan 1997
-# Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
+# Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/delegate/Makefile,v 1.18 1999/08/30 14:22:30 peter Exp $
 #
 
 DISTNAME=	delegate5.9.3
@@ -11,7 +11,7 @@ PKGNAME=	delegate-5.9.3
 CATEGORIES=	net www japanese
 MASTER_SITES=	ftp://etlport.etl.go.jp/pub/DeleGate/
 
-MAINTAINER=	max@FreeBSD.ORG
+MAINTAINER=	max@FreeBSD.org
 
 MAKE_ENV=	PATH=$${PATH}:.
 

@@ -1,9 +1,9 @@
 # New ports collection makefile for:	exim
 # Version required:	3.03
 # Date created:		23 June 1996
-# Whom:			markm@FreeBSD.ORG
+# Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.37 1999/08/26 08:29:04 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.38 1999/08/28 01:57:35 mharo Exp $
 #
 
 DISTNAME=	exim-3.03

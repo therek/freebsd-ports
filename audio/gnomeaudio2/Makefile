@@ -1,9 +1,9 @@
 # New ports collection makefile for:	gnomeaudio
 # Version required:			1.0.0
 # Date created:				29 Dec 1998
-# Whom:					Vanilla I. Shu <vanilla@FreeBSD.ORG>
+# Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/gnomeaudio/Makefile,v 1.10 1999/08/25 04:35:29 obrien Exp $
 #
 
 DISTNAME=	gnome-audio-1.0.0
@@ -12,7 +12,7 @@ CATEGORIES=	audio gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	sources/gnome-audio
 
-MAINTAINER=	vanilla@FreeBSD.ORG
+MAINTAINER=	vanilla@FreeBSD.org
 
 BUILD_DEPENDS=	gnome-config:${PORTSDIR}/x11/gnomelibs
 RUN_DEPENDS=	gnome-config:${PORTSDIR}/x11/gnomelibs

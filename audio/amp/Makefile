@@ -3,7 +3,7 @@
 # Date created:		Jun 23 1997
 # Whom:			Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/amp/Makefile,v 1.8 1999/08/25 04:35:16 obrien Exp $
 #
 
 DISTNAME=	amp-0.7.6
@@ -12,7 +12,7 @@ CATEGORIES=	audio
 # the author's site seems dead.
 MASTER_SITES=	ftp://ftp.clara.net/pub/unix/Audio/
 
-MAINTAINER=	vanilla@FreeBSD.ORG
+MAINTAINER=	vanilla@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes

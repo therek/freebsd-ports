@@ -3,7 +3,7 @@
 # Date created:				1 Jun 1997
 # Whom:					jmg
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/nspmod/Makefile,v 1.3 1999/08/25 04:35:56 obrien Exp $
 #
 
 DISTNAME=	nspmod-0.1
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.jeton.or.jp/users/toru/www/orgsoft/nspmod/	\
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/players
 
-MAINTAINER=	jmg@FreeBSD.ORG
+MAINTAINER=	jmg@FreeBSD.org
 
 MAN1=		nspmod.1
 

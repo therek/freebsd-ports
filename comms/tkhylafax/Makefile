@@ -3,7 +3,7 @@
 # Date created:		Sun Jun  8 11:51:21 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/tkhylafax/Makefile,v 1.8 1999/08/25 05:12:39 obrien Exp $
 #
 
 DISTNAME=	tkhylafax-3.0b2
@@ -11,7 +11,7 @@ PKGNAME=	tkhylafax-3.0
 CATEGORIES=	comms tk42
 MASTER_SITES=	http://www.NeoSoft.com/tcl/ftparchive/sorted/comm/tkhylafax-3.0b2/
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 RUN_DEPENDS=	wish4.2:${PORTSDIR}/x11-toolkits/tk42 \
 		sendfax:${PORTSDIR}/comms/hylafax \

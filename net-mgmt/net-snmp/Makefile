@@ -3,7 +3,7 @@
 # Date created:				26 June 1996
 # Whom:					gpalmer
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.32 1999/08/30 14:24:29 peter Exp $
 #
 
 DISTNAME=	ucd-snmp-4.0.1
@@ -12,7 +12,7 @@ MASTER_SITES= 	ftp://ucd-snmp.ucdavis.edu/ \
 		ftp://sunsite.cnlab-switch.ch/mirror/ucd-snmp/ \
 		ftp://ftp.win.or.jp/pub/network/snmp/ucd-snmp/
 
-MAINTAINER=	gpalmer@FreeBSD.ORG
+MAINTAINER=	gpalmer@FreeBSD.org
 
 CONFIGURE_ARGS=	--enable-shared
 

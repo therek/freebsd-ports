@@ -3,7 +3,7 @@
 # Date Created:			22 Oct 1998
 # Whom:				Seiichirou Hiraoka
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/libicq/Makefile,v 1.5 1999/08/25 05:25:12 obrien Exp $
 #
 
 DISTNAME=	libicq-0.33
@@ -16,7 +16,7 @@ PATCH_SITES=	http://www.freebsd.org/~flathill/distfiles/ \
 PATCHFILES=	libicq-0.33ja.patch
 PATCH_DIST_STRIP= -p1
 
-MAINTAINER=	flathill@FreeBSD.ORG
+MAINTAINER=	flathill@FreeBSD.org
 
 LIB_DEPENDS=    glib12.2:${PORTSDIR}/devel/glib12
 

@@ -1,9 +1,9 @@
 # New ports collection makefile for:    x11amp
 # Version required:     0.7
 # Date created:         13 Jul 1998
-# Whom:                 Donald Burr <dburr@FreeBSD.ORG>
+# Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/x11amp/Makefile,v 1.7 1999/08/25 04:36:21 obrien Exp $
 #
 
 DISTNAME=	x11amp-freebsd-0.8
@@ -12,7 +12,7 @@ CATEGORIES=	audio
 MASTER_SITES=	ftp://www.se.opensound.com/pub/oss/ossapps/
 EXTRACT_SUFX=	.tar.gz
 
-MAINTAINER=	dburr@FreeBSD.ORG
+MAINTAINER=	dburr@FreeBSD.org
 
 NO_BUILD=		YES
 NO_FILTER_SHLIBS=	YES

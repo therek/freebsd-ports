@@ -3,7 +3,7 @@
 # Date created:				10th February 1995
 # Whom:					gpalmer
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/xdaliclock/Makefile,v 1.13 1999/08/31 02:58:09 peter Exp $
 #
 
 DISTNAME=	xdaliclock-2.13
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.jwz.org/xdaliclock/ \
 		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
 
-MAINTAINER=	gpalmer@FreeBSD.ORG
+MAINTAINER=	gpalmer@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		xdaliclock.1

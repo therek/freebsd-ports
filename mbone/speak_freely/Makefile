@@ -4,14 +4,14 @@
 # Date created:         18 Apr 1996
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/mbone/speak_freely/Makefile,v 1.7 1999/08/25 07:09:44 obrien Exp $
 #
 
 DISTNAME=       speak_freely-6.1c
 CATEGORIES=     mbone audio security
 MASTER_SITES=   http://www.fourmilab.ch/speakfree/unix/prior-releases/6.1/
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 LIB_DEPENDS=    gsm.1:${PORTSDIR}/audio/gsm
 

@@ -3,7 +3,7 @@
 # Date created:				July 7th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Storable/Makefile,v 1.14 1999/08/25 05:49:36 obrien Exp $
 #
 
 DISTNAME=	Storable-0.6@3
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Storable
 EXTRACT_SUFX=	..tar.gz
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 USE_PERL5=	YES
 

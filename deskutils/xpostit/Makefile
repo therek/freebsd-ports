@@ -3,7 +3,7 @@
 # Date created:        6 May 1996
 # Whom:                joerg
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/xpostit/Makefile,v 1.8 1999/08/25 05:27:01 obrien Exp $
 #
 
 DISTNAME=      xpostit3.3.1
@@ -17,7 +17,7 @@ CATEGORIES=    deskutils
 MASTER_SITES=  ftp://ftp.hrz.tu-darmstadt.de/pub/X11/R5contrib/
 EXTRACT_SUFX=  .tar.Z
 
-MAINTAINER=    joerg@FreeBSD.ORG
+MAINTAINER=    joerg@FreeBSD.org
 
 USE_IMAKE=     yes
 WRKSRC=        ${WRKDIR}/xpostit

@@ -3,7 +3,7 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/p5-PGP/Makefile,v 1.14 1999/08/31 01:51:30 peter Exp $
 #
 
 DISTNAME=	PGP-0.3a
@@ -12,7 +12,7 @@ CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	PGP
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 BUILD_DEPENDS= 	pgp:${PORTSDIR}/security/pgp
 

@@ -1,9 +1,9 @@
 # New ports collection makefile for:    htmlpp
 # Version required:     3.9d
 # Date created:         9 Nov 1997
-# Whom:                 Donald Burr <dburr@FreeBSD.ORG>
+# Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/htmlpp/Makefile,v 1.6 1999/08/31 02:42:51 peter Exp $
 #
 
 DISTNAME=	htmlp42a
@@ -12,7 +12,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.imatix.com/pub/tools/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	dburr@FreeBSD.ORG
+MAINTAINER=	dburr@FreeBSD.org
 
 USE_PERL5=	YES
 

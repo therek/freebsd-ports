@@ -1,9 +1,9 @@
 # New ports collection makefile for:	rtpmon
 # Version required:			1.0a7
 # Date created:				1 November 1996
-# Whom:	      Bill Fenner <fenner@FreeBSD.ORG>
+# Whom:	      Bill Fenner <fenner@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mbone/rtpmon/Makefile,v 1.12 1999/08/25 07:09:39 obrien Exp $
 #
 
 DISTNAME=	rtpmon-1.0a7

@@ -3,7 +3,7 @@
 # Date Created:		30 Dec 1996
 # Whom:			Tim Vanderhoek <ac199@freenet.hamilton.on.ca>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/plor/Makefile,v 1.5 1999/08/30 14:31:50 peter Exp $
 #
 
 DISTNAME=	plor-0.3.1
@@ -11,7 +11,7 @@ CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.psy.unipd.it/pub/pluto/developers/ \
 		ftp://ftp.unipd.it/pub/Linux/pluto/developers/
 
-MAINTAINER=	hoek@FreeBSD.ORG
+MAINTAINER=	hoek@FreeBSD.org
 
 RUN_DEPENDS=    zip:${PORTSDIR}/archivers/zip
 

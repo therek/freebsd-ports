@@ -3,7 +3,7 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Devel-DProf/Makefile,v 1.9 1999/08/25 05:49:05 obrien Exp $
 #
 
 DISTNAME=	DProf-19990108
@@ -12,7 +12,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Devel
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 CONFIGURE_ARGS=	PREFIX=${PREFIX}
 USE_PERL5=	YES

@@ -3,7 +3,7 @@
 # Date created:				1999/04/07
 # Whom:					ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-URI/Makefile,v 1.5 1999/08/30 14:23:44 peter Exp $
 #
 
 DISTNAME=       URI-1.03
@@ -12,7 +12,7 @@ CATEGORIES=     net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=     URI
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 USE_PERL5=      YES
 MAN3=   \

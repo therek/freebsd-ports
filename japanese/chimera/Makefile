@@ -3,7 +3,7 @@
 # Date created:		26 December 1994
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/chimera/Makefile,v 1.12 1999/08/25 05:23:38 obrien Exp $
 #
 
 DISTNAME=	chimera-1.70p0
@@ -16,7 +16,7 @@ PATCH_SITES=	http://hasse.mathematik.tu-muenchen.de/%7Enikl/chimera-1.65p/ \
 PATCHFILES=	chimera-1.70p0-1.70p1.gz diff-1.70p1-jp-01
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 FETCH_BEFORE_ARGS=	-b
 USE_IMAKE=	yes

@@ -3,7 +3,7 @@
 # Date created:		22 December 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.25 1999/08/31 02:59:36 peter Exp $
 #
 
 DISTNAME=	Tix4.1.0.006
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.neosoft.com/tcl/ftparchive/sorted/devel/ \
 		ftp://ftp.gwdg.de/pub/x11/tcl/ftp.xpi.com/ \
 		ftp://ftp.riken.go.jp/pub/lang/tcl/netsoft/sorted/packages-7.6/devel/
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
 

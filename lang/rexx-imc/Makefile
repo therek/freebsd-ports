@@ -3,14 +3,14 @@
 # Date created:				Septermber 21 96
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/rexx-imc/Makefile,v 1.7 1999/08/25 06:35:18 obrien Exp $
+# $FreeBSD: ports/lang/rexx-imc/Makefile,v 1.8 1999/08/28 02:41:57 mharo Exp $
 #
 
 DISTNAME=	rexx-imc-1.6d
 CATEGORIES=	lang
 MASTER_SITES=	http://www.comlab.ox.ac.uk/oucl/users/ian.collier/distribution/
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 NO_WRKSUBDIR=	YES
 

@@ -3,7 +3,7 @@
 # Date created:         14 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/dvi2xx/Makefile,v 1.15 1999/08/31 01:44:38 peter Exp $
 #
 
 DISTNAME=	dvi2xx
@@ -13,7 +13,7 @@ CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR=	dviware
 
-MAINTAINER=	jmz@FreeBSD.ORG
+MAINTAINER=	jmz@FreeBSD.org
 
 MAN1=		dvi2xx.1
 IGNOREFILES=	${DISTFILES}

@@ -1,9 +1,9 @@
 # New ports collection makefile for:	LotusXSL
 # Version required:	0.17.4
 # Date created:		23 June 1999
-# Whom:			Jun Kuriyama <kuriyama@FreeBSD.ORG>
+# Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/lotusxsl/Makefile,v 1.3 1999/08/31 02:09:32 peter Exp $
 #
 
 DISTNAME=	lotusxsl_0_17_4
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.alphaworks.ibm.com/formula/lotusxsl/
 #MASTER_SITES=	http://apps.alphaworks.ibm.com/technologies/lotusxsl/
 EXTRACT_SUFX=	.zip
 
-MAINTAINER=	kuriyama@FreeBSD.ORG
+MAINTAINER=	kuriyama@FreeBSD.org
 
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
 RUN_DEPENDS=	${PREFIX}/share/java/classes/xml4j.jar:${PORTSDIR}/textproc/xml4j

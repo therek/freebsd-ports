@@ -3,7 +3,7 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/lynx/Makefile,v 1.87 1999/08/31 02:42:57 peter Exp $
 #
 
 DISTNAME=       lynx2.8.2rel.1
@@ -11,7 +11,7 @@ PKGNAME=        lynx-2.8.2rel.1
 CATEGORIES=	www
 MASTER_SITES=   http://sol.slcc.edu/lynx/current/
 
-MAINTAINER=	jseger@FreeBSD.ORG
+MAINTAINER=	jseger@FreeBSD.org
 
 USE_BZIP2=      YES
 WRKSRC=         ${WRKDIR}/lynx2-8-2

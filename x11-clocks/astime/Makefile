@@ -3,7 +3,7 @@
 # Date created:        21 Nov 1998
 # Whom:                Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/astime/Makefile,v 1.8 1999/08/31 02:57:55 peter Exp $
 #
 
 DISTNAME=	astime-2.1
@@ -13,7 +13,7 @@ MASTER_SITES=	http://bewoner.dma.be/Albert/software/ \
 		ftp://ftp.tux.org/pub/x/afterstep/apps/astime/ \
 		ftp://ftp.digex.net/.2/wm/AfterStep/apps/astime/
 
-MAINTAINER=	kris@FreeBSD.ORG
+MAINTAINER=	kris@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

@@ -3,7 +3,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.9 1999/08/25 05:43:36 obrien Exp $
 #
 
 DISTNAME=	emacs-20.4
@@ -16,7 +16,7 @@ PATCH_SITES=	http://www.etl.go.jp/~tomo/comp/emacsen/
 PATCHFILES=	emacs-20.4-dl.diff.gz
 PATCH_DIST_STRIP= -p1
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 RUN_DEPENDS=	emacs-20.4:${PORTSDIR}/editors/emacs20
 

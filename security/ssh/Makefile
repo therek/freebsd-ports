@@ -1,9 +1,9 @@
 # New ports collection makefile for:	ssh
 # Version required:     1.2.*
 # Date created:		30 Jul 1995
-# Whom:			torstenb@FreeBSD.ORG
+# Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/ssh/Makefile,v 1.80 1999/08/31 01:51:47 peter Exp $
 #
 # Maximal ssh package requires YES values for
 # USE_PERL, USE_TCPWRAP
@@ -13,7 +13,7 @@ DISTNAME=       ssh-1.2.27
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.cs.hut.fi/pub/ssh/
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 # You can set USA_RESIDENT appropriately in /etc/make.conf if this bugs you..
 

@@ -1,9 +1,9 @@
 # New ports collection makefile for:	ssh2
 # Version required:     2.0.*
 # Date created:		5 Oct 1998
-# Whom:			Issei Suzuki <issei@jp.FreeBSD.ORG>
+# Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/ssh2/Makefile,v 1.84 1999/08/31 01:51:48 peter Exp $
 #
 # Maximal ssh2 package requires YES values for
 # USE_SSH1, USE_TCPWRAP

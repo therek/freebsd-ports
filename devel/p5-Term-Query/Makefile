@@ -3,7 +3,7 @@
 # Date created:				21 May 1998
 # Whom:	      				Garrett Wollman <wollman@lcs.mit.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Term-Query/Makefile,v 1.4 1999/08/25 05:49:38 obrien Exp $
 #
 
 DISTNAME=	Term-Query-2.0
@@ -12,7 +12,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Term
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/Array/PrintCols.pm:${PORTSDIR}/misc/p5-Array-PrintCols
 

@@ -3,10 +3,10 @@
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/psgml-emacs20/Makefile,v 1.4 1999/08/25 05:44:10 obrien Exp $
 #
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 # This is a slave port.
 PORTCLASS=	slave

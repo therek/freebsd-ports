@@ -3,7 +3,7 @@
 # Date created:		25 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xmagv/Makefile,v 1.3 1999/08/25 06:15:25 obrien Exp $
 #
 
 DISTNAME=	xmagv111
@@ -12,7 +12,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.vector.co.jp/pack/unix/art/graphics/loader/mag/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	flathill@FreeBSD.ORG
+MAINTAINER=	flathill@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xmagv
 GNU_CONFIGURE=	yes

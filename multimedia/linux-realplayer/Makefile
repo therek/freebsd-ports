@@ -3,7 +3,7 @@
 # Date created:        31 January 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.7 1999/08/25 04:35:47 obrien Exp $
+# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.8 1999/08/27 21:13:33 mharo Exp $
 #
 
 DISTNAME=	rv50_linux20
@@ -11,7 +11,7 @@ PKGNAME=	linux-realplayer-5.0
 CATEGORIES=	audio
 MASTER_SITES=	
 
-MAINTAINER=	kris@FreeBSD.ORG
+MAINTAINER=	kris@FreeBSD.org
 
 RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 

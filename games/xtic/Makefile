@@ -3,7 +3,7 @@
 # Date created:         22 June 1995
 # Whom:                 asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xtic/Makefile,v 1.6 1999/08/25 06:06:22 obrien Exp $
 #
 
 DISTNAME=       xtic1.12
@@ -12,7 +12,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

@@ -3,7 +3,7 @@
 # Date created:         31 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/arc/Makefile,v 1.9 1999/08/25 04:25:01 obrien Exp $
 #
 
 DISTNAME=       arc521e.pl8
@@ -12,7 +12,7 @@ CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/arcers/
 EXTRACT_SUFX=   .tar.Z
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 MAN1=		arc.1

@@ -3,7 +3,7 @@
 # Date created:		Sun Nov 15 22:07:12 CET 1998
 # Whom:			Dirk Froemberg <ibex@physik.TU-Berlin.DE>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/gmysql/Makefile,v 1.15 1999/08/25 05:21:12 obrien Exp $
 #
 
 DISTNAME=	gmysql-0.3.3
@@ -11,7 +11,7 @@ CATEGORIES=	databases
 MASTER_SITES=	http://www.loth.demon.co.uk/gmysql/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
 
-MAINTAINER=	dirk@FreeBSD.ORG
+MAINTAINER=	dirk@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		mysqlclient.6:${PORTSDIR}/databases/mysql322-client

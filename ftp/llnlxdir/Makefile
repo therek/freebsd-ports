@@ -2,9 +2,9 @@
 # Version required:			2.0
 # Date created:				9 November 1997
 #
-# Whom: Dima Ruban <dima@FreeBSD.ORG>
+# Whom: Dima Ruban <dima@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/llnlxdir/Makefile,v 1.7 1999/08/25 05:55:14 obrien Exp $
 #
 
 DISTNAME=	latest_xdir
@@ -13,7 +13,7 @@ CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp-lc.llnl.gov/pub/ia/llnlxdir/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	dima@FreeBSD.ORG
+MAINTAINER=	dima@FreeBSD.org
 
 MAN1=	xdir.1
 

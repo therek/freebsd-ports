@@ -3,7 +3,7 @@
 # Date created:		31 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/fkiss/Makefile,v 1.7 1999/08/25 06:03:20 obrien Exp $
 #
 
 DISTNAME=	fkiss028
@@ -11,7 +11,7 @@ PKGNAME=	fkiss-0.28
 CATEGORIES=	games
 MASTER_SITES=	http://www.oersted.co.jp/~yav/soft/fkiss/
 
-MAINTAINER=	flathill@FreeBSD.ORG
+MAINTAINER=	flathill@FreeBSD.org
 
 RUN_DEPENDS=	lha:${PORTSDIR}/archivers/lha
 

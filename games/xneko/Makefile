@@ -3,7 +3,7 @@
 # Date created:		22 December 1995
 # Whom:			markm
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xneko/Makefile,v 1.10 1999/08/25 06:05:43 obrien Exp $
 #
 
 DISTNAME=	xneko
@@ -11,7 +11,7 @@ PKGNAME=	xneko-4.4
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/bsd-sources/4.4BSD-Lite/usr/src/games/
 
-MAINTAINER=	markm@FreeBSD.ORG
+MAINTAINER=	markm@FreeBSD.org
 
 MAN6=		xneko.6
 MANCOMPRESSED=	maybe

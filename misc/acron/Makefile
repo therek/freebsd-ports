@@ -1,9 +1,9 @@
 # New ports collection makefile for:    acron
 # Version required:     1.2.4
 # Date created:         13 Dec 1997
-# Whom:                 Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/acron/Makefile,v 1.4 1999/08/25 07:21:03 obrien Exp $
+# $FreeBSD: ports/misc/acron/Makefile,v 1.5 1999/08/28 01:57:39 mharo Exp $
 #
 
 DISTNAME=       acron
@@ -12,7 +12,7 @@ CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.cs.uni-sb.de/pub/others/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 NO_BUILD=	yes
 

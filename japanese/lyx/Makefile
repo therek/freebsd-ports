@@ -3,7 +3,7 @@
 # Date created:		27 April 1999
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/lyx/Makefile,v 1.3 1999/08/25 05:25:19 obrien Exp $
 #
 
 DISTNAME=	lyx-1.0.0
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/stable/ \
 		http://cgi.din.or.jp/~kawakami/product/LyX/
 DISTFILES=	lyx-1.0.0.tar.gz lyx-jp-kit0.04for1.0.0.tar.gz
 
-MAINTAINER=	flathill@FreeBSD.ORG
+MAINTAINER=	flathill@FreeBSD.org
 
 BUILD_DEPENDS=	latex:${PORTSDIR}/print/teTeX
 RUN_DEPENDS=	latex:${PORTSDIR}/print/teTeX

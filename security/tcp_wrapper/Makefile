@@ -3,7 +3,7 @@
 # Date created:		27 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/tcp_wrapper/Makefile,v 1.21 1999/08/31 01:51:55 peter Exp $
 #
 
 DISTNAME=       tcp_wrappers_7.6
@@ -11,7 +11,7 @@ PKGNAME=        tcp_wrappers-7.6
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.porcupine.org/pub/security/
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 ALL_TARGET=	freebsd
 MAN3=		hosts_access.3

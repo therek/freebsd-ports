@@ -1,9 +1,9 @@
 # New ports collection makefile for:	gqview
 # Version required:			0.6.1
 # Date Created:				27 Oct 1998
-# Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.ORG>
+# Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gqview/Makefile,v 1.15 1999/08/25 06:14:08 obrien Exp $
 #
 
 DISTNAME=	gqview-0.7.0.src

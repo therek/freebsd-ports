@@ -3,14 +3,14 @@
 # Date created:		July 8, 1997
 # Whom:			jfieber
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/linuxdoc/Makefile,v 1.8 1999/08/31 02:09:31 peter Exp $
 #
 
 DISTNAME=	linuxdoc-1.1
 CATEGORIES=	textproc
 MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
 
-MAINTAINER=	jfieber@FreeBSD.ORG
+MAINTAINER=	jfieber@FreeBSD.org
 
 RUN_DEPENDS=    ${ISOCAT}:${PORTSDIR}/textproc/iso8879
 

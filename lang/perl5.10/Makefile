@@ -3,7 +3,7 @@
 # Date created:		16 April 1995
 # Whom:			markm
 #
-# $FreeBSD: ports/lang/perl5/Makefile,v 1.29 1999/08/25 06:35:12 obrien Exp $
+# $FreeBSD: ports/lang/perl5/Makefile,v 1.30 1999/08/28 01:57:33 mharo Exp $
 #
 
 DISTNAME=	perl5.005_02
@@ -12,7 +12,7 @@ CATEGORIES=	lang devel perl5
 MASTER_SITES=	ftp://ftp.digital.com/pub/plan/perl/CPAN/src/5.0/ \
 		ftp://ftp.cdrom.com/pub/perl/CPAN/src/5.0/
 
-MAINTAINER=	markm@FreeBSD.ORG
+MAINTAINER=	markm@FreeBSD.org
 
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	Configure

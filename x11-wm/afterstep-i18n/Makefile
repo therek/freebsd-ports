@@ -1,9 +1,9 @@
 # New ports collection makefile for:	afterstep-i18n
 # Version required:	1.0
 # Date created:		23 October 1998
-# Whom:			issei@jp.FreeBSD.ORG
+# Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.9 1999/08/31 02:59:53 peter Exp $
 #
 
 DISTNAME=	AfterStep-1.0
@@ -20,7 +20,7 @@ DISTFILES=      ${DISTNAME}.tar.gz \
 
 PATCH_DIST_STRIP=       -p1
 
-MAINTAINER=	issei@jp.FreeBSD.ORG
+MAINTAINER=	issei@jp.FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

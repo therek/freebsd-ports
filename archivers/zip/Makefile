@@ -3,7 +3,7 @@
 # Date created:         22 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/zip/Makefile,v 1.15 1999/08/25 04:25:21 obrien Exp $
 #
 
 DISTNAME=       zip22
@@ -11,7 +11,7 @@ PKGNAME=        zip-2.2
 CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.cdrom.com/pub/infozip/src/
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 Y2K=		http://www.cdrom.com/pub/infozip/FAQ.html#Y2K
 

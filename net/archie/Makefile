@@ -3,7 +3,7 @@
 # Date created:		20 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/archie/Makefile,v 1.8 1999/08/30 14:22:02 peter Exp $
 #
 
 DISTNAME=	c-archie-1.4.1-FIXED
@@ -12,7 +12,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.uu.net/networking/info-service/archie/clients/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/archie-1.4.1-FIX
 MAN1=		archie.1

@@ -3,7 +3,7 @@
 # Date created:        25 August 1998
 # Whom:                Seiichirou Hiraoka
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xhime/Makefile,v 1.3 1999/08/25 06:05:18 obrien Exp $
 #
 
 DISTNAME=	xhime151
@@ -12,7 +12,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.tcp-ip.or.jp/~shochan/linux/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	flathill@FreeBSD.ORG
+MAINTAINER=	flathill@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xhime1.51
 USE_IMAKE=	yes

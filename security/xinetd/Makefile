@@ -3,14 +3,14 @@
 # Date created:				28 June 1996
 # Whom:					markm
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/xinetd/Makefile,v 1.11 1999/08/31 01:52:00 peter Exp $
 #
 
 DISTNAME=	xinetd-2.1.8.6b6
 CATEGORIES=	security
 MASTER_SITES=	http://synack.net/xinetd/
 
-MAINTAINER=	markm@FreeBSD.ORG
+MAINTAINER=	markm@FreeBSD.org
 
 FETCH_BEFORE_ARGS=	-b
 GNU_CONFIGURE=	yes

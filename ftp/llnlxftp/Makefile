@@ -2,9 +2,9 @@
 # Version required:			2.1
 # Date created:				9 November 1997
 #
-# Whom: Dima Ruban <dima@FreeBSD.ORG>
+# Whom: Dima Ruban <dima@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/llnlxftp/Makefile,v 1.5 1999/08/25 05:55:15 obrien Exp $
 #
 
 DISTNAME=	latest_xftp
@@ -13,7 +13,7 @@ CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp-lc.llnl.gov/pub/ia/llnlxftp/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	dima@FreeBSD.ORG
+MAINTAINER=	dima@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/llnlxftp2.1/sources
 REQUIRES_MOTIF=	yes

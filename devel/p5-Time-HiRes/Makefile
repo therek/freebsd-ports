@@ -3,7 +3,7 @@
 # Date created:			13 June 1999
 # Whom:				Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Time-HiRes/Makefile,v 1.2 1999/08/25 05:49:42 obrien Exp $
 #
 
 DISTNAME=	Time-HiRes-01.20
@@ -12,7 +12,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Time
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	yes
 

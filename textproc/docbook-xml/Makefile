@@ -3,7 +3,7 @@
 # Date created:		28 March 1999
 # Whom:			kuriyama
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.4 1999/08/31 02:09:09 peter Exp $
 #
 
 DISTNAME=	db3x314
@@ -12,7 +12,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://nwalsh.com/docbook/xml/3.1.4/
 EXTRACT_SUFX=	.zip
 
-MAINTAINER=	kuriyama@FreeBSD.ORG
+MAINTAINER=	kuriyama@FreeBSD.org
 
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
 

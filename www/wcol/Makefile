@@ -3,7 +3,7 @@
 # Date created:		17 July 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/wcol/Makefile,v 1.4 1999/08/31 02:43:25 peter Exp $
 #
 
 DISTNAME=	wcolEpre.980713_100245
@@ -11,7 +11,7 @@ PKGNAME=	wcolEpre-1998.07.13
 CATEGORIES=	www
 MASTER_SITES=	http://shika.aist-nara.ac.jp/products/DEST/Wcol/
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 

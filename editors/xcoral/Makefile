@@ -3,7 +3,7 @@
 # Date created:         
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/xcoral/Makefile,v 1.9 1999/08/25 05:44:50 obrien Exp $
 #
 
 DISTNAME=	xcoral-3.2
@@ -11,7 +11,7 @@ CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	editors
 
-MAINTAINER=	erich@FreeBSD.ORG
+MAINTAINER=	erich@FreeBSD.org
 
 USE_X_PREFIX=	yes
 

@@ -3,7 +3,7 @@
 # Date created:		25 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xpx/Makefile,v 1.5 1999/08/25 06:15:33 obrien Exp $
 #
 
 DISTNAME=	xpx141
@@ -11,7 +11,7 @@ PKGNAME=	xpx-1.41
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.oersted.co.jp/~yav/soft/xpx/
 
-MAINTAINER=	flathill@FreeBSD.ORG
+MAINTAINER=	flathill@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xpx
 USE_IMAKE=	yes

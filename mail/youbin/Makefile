@@ -2,9 +2,9 @@
 # http://www.agusa.nuie.nagoya-u.ac.jp/software/youbin/youbin-e.html
 # Version required:		2.13
 # Date created:			09 Aug 1996
-# Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
+# Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/youbin/Makefile,v 1.19 1999/08/25 06:51:17 obrien Exp $
+# $FreeBSD: ports/mail/youbin/Makefile,v 1.20 1999/08/27 20:31:07 mharo Exp $
 #
 
 DISTNAME=	youbin-2.13
@@ -12,7 +12,7 @@ CATEGORIES=	mail
 MASTER_SITES=	ftp://nuis.nuie.nagoya-u.ac.jp/info/nagoya-u/ \
 		ftp://ftp.kyoto.wide.ad.jp/pub/net/
 
-MAINTAINER=	max@FreeBSD.ORG
+MAINTAINER=	max@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

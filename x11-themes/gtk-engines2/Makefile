@@ -1,9 +1,9 @@
 # New ports collection makefile for:	gtk-engines
 # Version required:			0.5
 # Date Created:				23 Dec 1998
-# Whom:					Vanilla I. Shu <vanilla@FreeBSD.ORG>
+# Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gtk-engines/Makefile,v 1.13 1999/08/31 02:59:13 peter Exp $
 #
 
 DISTNAME=	gtk-engines-0.5
@@ -11,7 +11,7 @@ CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	sources/gtk-engines
 
-MAINTAINER=	vanilla@FreeBSD.ORG
+MAINTAINER=	vanilla@FreeBSD.org
 
 LIB_DEPENDS=	gdk_imlib.4:${PORTSDIR}/graphics/imlib
 

@@ -3,7 +3,7 @@
 # Date created:		29 October 1994
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/emacs/Makefile,v 1.42 1999/08/25 05:43:35 obrien Exp $
 #
 
 DISTNAME=	emacs-19.34b
@@ -11,7 +11,7 @@ CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 Y2K=            http://www.gnu.org/software/year2000.html
 

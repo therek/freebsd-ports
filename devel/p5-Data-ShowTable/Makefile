@@ -3,7 +3,7 @@
 # Date created:				September 10th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Data-ShowTable/Makefile,v 1.10 1999/08/25 05:49:02 obrien Exp $
 #
 
 DISTNAME=	Data-ShowTable-3.3
@@ -12,7 +12,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Data
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 USE_PERL5=	YES
 CONFIGURE_ARGS=	PREFIX=${PREFIX} INSTALLSCRIPT=${PREFIX}/bin INSTALLMAN1DIR=${PREFIX}/man/man1

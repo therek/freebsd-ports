@@ -5,14 +5,14 @@
 # Date created:         8 Jul 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/pgp/Makefile,v 1.30 1999/08/31 01:51:32 peter Exp $
 #
 
 # Pick an initial default, else it doesn't get set in the INDEX.
 DISTNAME=	pgp262s
 CATEGORIES=	security
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 # Need to define USA_RESIDENT to YES or NO
 IS_INTERACTIVE=	YES

@@ -3,7 +3,7 @@
 # Date created:         7 November 1996
 # Whom:                 asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/XFree86-contrib/Makefile,v 1.14 1999/08/31 02:50:07 peter Exp $
 #
 
 DISTNAME=	X333contrib
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.3/source/ \
 		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/3.3.3/source/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	jmz@FreeBSD.ORG
+MAINTAINER=	jmz@FreeBSD.org
 
 # Define FORCE_PACKAGE from the command line if you want to override
 # this and build a package

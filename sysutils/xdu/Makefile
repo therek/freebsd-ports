@@ -3,7 +3,7 @@
 # Date created:		9 February 1995
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/xdu/Makefile,v 1.10 1999/08/31 02:00:29 peter Exp $
 #
 
 DISTNAME=	xdu-3.0
@@ -11,7 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.arl.mil/pub/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes

@@ -3,7 +3,7 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/piewm/Makefile,v 1.17 1999/08/31 03:00:14 peter Exp $
 #
 
 DISTNAME=	piewm
@@ -12,7 +12,7 @@ CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=    Xpm.4:${PORTSDIR}/graphics/xpm
 

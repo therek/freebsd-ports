@@ -1,9 +1,9 @@
 # New ports collection makefile for:    v
 # Version required:     1.19
 # Date created:         8 Feb 1998
-# Whom:                 Donald Burr <dburr@FreeBSD.ORG>
+# Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/v/Makefile,v 1.13 1999/08/31 02:59:42 peter Exp $
 #
 
 DISTNAME=	v-1.19
@@ -11,7 +11,7 @@ CATEGORIES=	x11-toolkits devel graphics
 MASTER_SITES=	ftp://ftp.ntua.gr/pub/X11/v/old/ \
 		ftp://ftp.dl.ac.uk/ccp14/ftp-mirror/programming/objectcentral/old/
 
-MAINTAINER=	dburr@FreeBSD.ORG
+MAINTAINER=	dburr@FreeBSD.org
 
 .if ${MACHINE_ARCH} == "alpha"
 BROKEN=		compiler error in function fixup_memory_subreg

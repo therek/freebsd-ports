@@ -3,7 +3,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/emacs20-dl-canna/Makefile,v 1.8 1999/08/25 05:23:56 obrien Exp $
 #
 
 DISTNAME=	emacs-canna-${DLCANNA_VER}
@@ -12,7 +12,7 @@ CATEGORIES=	japanese editors
 MASTER_SITES=	ftp://ftp.jaist.ac.jp/pub/GNU/elisp/emacs-20-dl/ \
 		ftp://ftp.ring.gr.jp/pub/text/elisp/jaist/emacs-20-dl/
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 BUILD_DEPENDS=	emacs-dl-${EMACS_VER}:${EMACSDL_DIR} \

@@ -3,14 +3,14 @@
 # Date Created:		7 Sep 1997
 # Whom:			Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/hfsutils/Makefile,v 1.17 1999/08/25 05:49:19 obrien Exp $
 #
 
 DISTNAME=	hfsutils-3.2.6
 CATEGORIES=	emulators tk80
 MASTER_SITES=	ftp://ftp.mars.org/pub/hfs/
 
-MAINTAINER=	vanilla@FreeBSD.ORG
+MAINTAINER=	vanilla@FreeBSD.org
 
 LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
 

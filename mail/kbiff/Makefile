@@ -3,14 +3,14 @@
 # Date created:		So  14 Jun 1998 13:09:18 CEST
 # Whom:			andreas
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/kbiff/Makefile,v 1.12 1999/08/25 06:50:14 obrien Exp $
 #
 
 DISTNAME=	kbiff-2.3
 CATEGORIES=	mail kde
 MASTER_SITES=	http://home.sprintmail.com/~granroth/kbiff/
 
-MAINTAINER=	kris@FreeBSD.ORG
+MAINTAINER=	kris@FreeBSD.org
 
 LIB_DEPENDS=	kdeui.2:${PORTSDIR}/x11/kdelibs11 \
 		intl.1:${PORTSDIR}/devel/gettext

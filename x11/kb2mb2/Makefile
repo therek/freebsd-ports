@@ -3,14 +3,14 @@
 # Date created:		24 December 1997
 # Whom:			Tatsumi Hosokawa
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/kb2mb2/Makefile,v 1.3 1999/08/31 02:50:22 peter Exp $
 #
 
 DISTNAME=	kb2mb2-1.0
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 
-MAINTAINER=	sada@FreeBSD.ORG
+MAINTAINER=	sada@FreeBSD.org
 
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes

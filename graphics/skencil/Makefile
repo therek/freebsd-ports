@@ -1,16 +1,16 @@
 # New ports collection makefile for:	sketch
 # Version required:	0.6.1
 # Date created:		04 November 1998
-# Whom:			Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/sketch/Makefile,v 1.7 1999/08/25 06:14:57 obrien Exp $
 #
 
 DISTNAME=	sketch-0.6.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.online.de/home/sketch/
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${PREFIX}/include/python1.5/Imaging.h:${PORTSDIR}/graphics/py-imaging
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python \

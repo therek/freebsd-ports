@@ -3,7 +3,7 @@
 # Date created:		12 December 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/curl/Makefile,v 1.9 1999/08/25 05:55:04 obrien Exp $
 
 DISTNAME=	curl-5.9
 CATEGORIES=	ftp www
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.fts.frontec.se/~dast/stuff/ \
 		ftp://ftp.win.or.jp/pub/network/www/misc/ \
 		ftp://crydee.sai.msu.ru/zeus/unix/WWW/tools/mirror/
 
-MAINTAINER=	kris@FreeBSD.ORG
+MAINTAINER=	kris@FreeBSD.org
 
 .if defined(USE_SSL)
 BUILD_DEPENDS=	${PREFIX}/lib/libssl.a:${PORTSDIR}/security/openssl \

@@ -4,7 +4,7 @@
 # Date created:         4 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.67 1999/08/25 05:55:19 obrien Exp $
 #
 
 DISTNAME=       ncftp-3.0beta19-src
@@ -12,7 +12,7 @@ PKGNAME=        ncftp-3.0b19
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.ncftp.com/ncftp/3.0BETA/
 
-MAINTAINER=	obrien@FreeBSD.ORG
+MAINTAINER=	obrien@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-src//}
 GNU_CONFIGURE=	yes

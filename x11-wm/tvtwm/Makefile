@@ -3,7 +3,7 @@
 # Date created:		5th December 1994
 # Whom:			gpalmer
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/tvtwm/Makefile,v 1.16 1999/08/31 03:00:18 peter Exp $
 #
 
 DISTNAME=	tvtwm.pl11
@@ -12,7 +12,7 @@ CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	window_managers
 
-MAINTAINER=	gpalmer@FreeBSD.ORG
+MAINTAINER=	gpalmer@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

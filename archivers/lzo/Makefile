@@ -3,7 +3,7 @@
 # Date created:				21 Feb 1998
 # Whom:					giffunip@asme.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/lzo/Makefile,v 1.6 1999/08/25 04:25:11 obrien Exp $
 #
 
 DISTNAME=       lzo-1.04
@@ -15,7 +15,7 @@ MASTER_SITES= 	ftp://ftp.uni-koeln.de/util/arc/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=libs/compression
 
-MAINTAINER=     ports@FreeBSD.ORG
+MAINTAINER=     ports@FreeBSD.org
 
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS+= 	--enable-shared=yes \

@@ -1,9 +1,9 @@
 # New ports collection makefile for:	p5-IO-stringy
 # Version required:			1.203
 # Date created:				April 27 1998
-# Whom:	      				Eivind Eklund <eivind@FreeBSD.ORG>
+# Whom:	      				Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-IO-stringy/Makefile,v 1.6 1999/08/25 05:49:20 obrien Exp $
 #
 
 DISTNAME=	IO-stringy-1.203
@@ -12,7 +12,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IO
 
-MAINTAINER=	eivind@FreeBSD.ORG
+MAINTAINER=	eivind@FreeBSD.org
 
 USE_PERL5=	YES
 

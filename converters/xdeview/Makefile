@@ -3,7 +3,7 @@
 # Date Created:		9 Feb 1997
 # Whom:			Tim Vanderhoek <ac199@freenet.hamilton.on.ca>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/xdeview/Makefile,v 1.17 1999/08/25 05:16:36 obrien Exp $
 #
 
 DISTNAME=	uudeview-0.5.13
@@ -12,7 +12,7 @@ CATEGORIES=	converters tk80
 MASTER_SITES=	ftp://tsx-11.mit.edu/pub/linux/sources/usr.bin/ \
 		http://www.informatik.uni-frankfurt.de/~fp/uudeview/Apps/frank/
 
-MAINTAINER=	hoek@FreeBSD.ORG
+MAINTAINER=	hoek@FreeBSD.org
 
 LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80 \
 		uu.1:${PORTSDIR}/converters/uulib

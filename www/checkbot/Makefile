@@ -3,7 +3,7 @@
 # Date created:				2. Feb 1998
 # Whom:	      				wosch@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/checkbot/Makefile,v 1.11 1999/08/31 02:42:45 peter Exp $
 #
 
 DISTNAME=	checkbot-1.54
@@ -11,7 +11,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	http://www.xs4all.nl/~graaff/checkbot/ \
 		http://www.freebsd.org/~wosch/src/
 
-MAINTAINER=	wosch@FreeBSD.ORG
+MAINTAINER=	wosch@FreeBSD.org
 
 site_perl=${PREFIX}/lib/perl5/site_perl/${PERL_VER}
 BUILD_DEPENDS=  \

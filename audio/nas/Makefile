@@ -3,7 +3,7 @@
 # Date created:		03 Nov 1994
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/nas/Makefile,v 1.11 1999/08/25 04:35:55 obrien Exp $
 #
 
 DISTNAME=	nas-1.2p5
@@ -12,7 +12,7 @@ CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	audio/nas
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 ALL_TARGET=	World

@@ -3,7 +3,7 @@
 # Date created:		21 October 1998
 # Whom:			kuriyama
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/chasen/Makefile,v 1.5 1999/08/25 05:23:37 obrien Exp $
 #
 
 DISTNAME=	chasen-sys1.51-dic1.5
@@ -12,7 +12,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.aist-nara.ac.jp/lab/nlp/tools/chasen/ \
 		http://www.freebsd.org/~kuriyama/distfiles/
 
-MAINTAINER=	kuriyama@FreeBSD.ORG
+MAINTAINER=	kuriyama@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/chasen1.51
 

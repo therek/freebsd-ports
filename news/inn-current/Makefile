@@ -3,14 +3,14 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1), 14 Feb 1999 (2.2)
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/inn/Makefile,v 1.34 1999/08/30 14:31:37 peter Exp $
 #
 
 DISTNAME=	inn-2.2
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.isc.org/isc/inn/
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 Y2K=		http://www.isc.org/inn-y2k.html
 

@@ -1,9 +1,9 @@
 # New ports collection makefile for:	Java Foundation Classes with Swing
 # Version required:	1.1
 # Date created:		17 May 1999
-# Whom:			Jun Kuriyama <kuriyama@FreeBSD.ORG>
+# Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/jfc/Makefile,v 1.6 1999/08/25 06:16:25 obrien Exp $
 #
 
 DISTNAME=	swing11
@@ -12,7 +12,7 @@ CATEGORIES=	java
 MASTER_SITES=	http://java.sun.com/products/jfc/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	kuriyama@FreeBSD.ORG
+MAINTAINER=	kuriyama@FreeBSD.org
 
 RUN_DEPENDS=	${PREFIX}/${JAVASUBDIR}/bin/java:${PORTSDIR}/java/jdk
 

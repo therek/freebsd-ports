@@ -3,7 +3,7 @@
 # Date created:		22 Aug 1996
 # Whom:			pst@freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/id-utils/Makefile,v 1.9 1999/08/25 05:48:11 obrien Exp $
 #
 
 DISTNAME=	id-utils-3.2
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	id-utils
 
-MAINTAINER=	pst@FreeBSD.ORG
+MAINTAINER=	pst@FreeBSD.org
 
 Y2K=		http://www.gnu.org/software/year2000.html
 

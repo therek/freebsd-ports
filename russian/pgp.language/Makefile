@@ -3,7 +3,7 @@
 # Date created:         4 May 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/pgp.language/Makefile,v 1.27 1999/08/31 01:47:01 peter Exp $
 #
 
 DISTNAME=       pgp26ru
@@ -11,7 +11,7 @@ PKGNAME=        ru-pgp-2.6.3ia
 CATEGORIES=     russian
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/crypto/pgp/
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 RESTRICTED=	"Crypto"
 

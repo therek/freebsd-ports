@@ -3,7 +3,7 @@
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/bash2/Makefile,v 1.38 1999/08/31 01:53:15 peter Exp $
 #
 
 DISTNAME=       bash-2.03
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	bash
 DISTFILES=      bash-2.03.tar.gz bash-doc-2.03.tar.gz
 .endif
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 GNU_CONFIGURE=	Yes
 CONFIGURE_ARGS= --with-installed-readline

@@ -3,14 +3,14 @@
 # Date created:		Sept 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/html/Makefile,v 1.6 1999/08/31 02:09:21 peter Exp $
 #
 
 DISTNAME=	html-4.0b
 CATEGORIES=	textproc
 MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
 
-MAINTAINER=	jfieber@FreeBSD.ORG
+MAINTAINER=	jfieber@FreeBSD.org
 
 NO_MTREE=       yes
 EXTRACT_ONLY=	# empty

@@ -3,7 +3,7 @@
 # Date created:		3 Apr 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.6 1999/08/25 04:52:38 obrien Exp $
 #
 
 DISTNAME=	xcircuit-1.7
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://bach.ece.jhu.edu/pub/tim/	\
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=apps/circuits
 
-MAINTAINER=     ports@FreeBSD.ORG
+MAINTAINER=     ports@FreeBSD.org
 
 BROKEN='bad MD5 checksum'
 

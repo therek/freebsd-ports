@@ -3,7 +3,7 @@
 # Date created:		5 February 1995
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/nkf/Makefile,v 1.16 1999/08/25 05:25:57 obrien Exp $
 #
 
 DISTNAME=	nkf-1.62
@@ -11,7 +11,7 @@ PKGNAME=	ja-nkf-1.62
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.sfc.wide.ad.jp/~max/FreeBSD/ports/distfiles/
 
-MAINTAINER=	max@FreeBSD.ORG
+MAINTAINER=	max@FreeBSD.org
 
 MAN1=		nkf.1
 

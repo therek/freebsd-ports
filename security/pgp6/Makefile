@@ -5,7 +5,7 @@
 # Date created:         10 Feb 1998
 # Whom:                 markm
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/pgp5/Makefile,v 1.30 1999/08/31 01:51:33 peter Exp $
 #
 
 DISTNAME=	pgp50i
@@ -15,7 +15,7 @@ MASTER_SITES=   ftp://ftp.ifi.uio.no/pub/pgp/5.0/unix/ \
 		ftp://ftp.doc.ic.ac.uk/pub/Mirrors/ftp.ifi.uio.no/pub/pgp/5.0/unix/
 EXTRACT_SUFX=   -unix-src.tar.gz
 
-MAINTAINER=	markm@FreeBSD.ORG
+MAINTAINER=	markm@FreeBSD.org
 
 Y2K=		http://www.pgpi.com/faq/pgpi.shtml#Year2000
 

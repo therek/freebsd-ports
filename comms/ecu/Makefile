@@ -3,7 +3,7 @@
 # Date created:         Feb 18, 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/ecu/Makefile,v 1.20 1999/08/25 05:12:34 obrien Exp $
 #
 
 DISTNAME=       ecu-4.08
@@ -11,7 +11,7 @@ CATEGORIES=	comms
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/comm/
 #MASTER_SITES=   ftp://tsx-11.mit.edu/pub/linux/sources/usr.bin/Communications/
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 do-configure:
 	cd ${WRKSRC}; yes "" | ./Configure

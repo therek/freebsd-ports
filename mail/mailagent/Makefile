@@ -1,9 +1,9 @@
 # New ports collection makefile for:	mailagent
 # Version required:		3.0pl65
 # Date created:			23 Sep 1996
-# Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
+# Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mailagent/Makefile,v 1.27 1999/08/25 06:50:15 obrien Exp $
 #
 
 DISTNAME=		mailagent-3.0@65
@@ -12,7 +12,7 @@ CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	../../authors/id/RAM
 
-MAINTAINER=	max@FreeBSD.ORG
+MAINTAINER=	max@FreeBSD.org
 
 USE_PERL5=	yes
 NO_PACKAGE=	"Correct FQDN needs to be hardcoded"

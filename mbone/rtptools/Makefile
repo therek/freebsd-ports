@@ -3,14 +3,14 @@
 # Date created:		5 January 1998
 # Whom:			fenner
 #
-# $FreeBSD$
+# $FreeBSD: ports/mbone/rtptools/Makefile,v 1.2 1999/08/25 07:09:40 obrien Exp $
 #
 
 DISTNAME=	rtptools-1.9
 CATEGORIES=	mbone
 MASTER_SITES=	ftp://ftp.cs.columbia.edu/pub/schulzrinne/rtptools/
 
-MAINTAINER=	fenner@FreeBSD.ORG
+MAINTAINER=	fenner@FreeBSD.org
 
 MAKE_ENV=	ARCH=freebsd CC=cc
 

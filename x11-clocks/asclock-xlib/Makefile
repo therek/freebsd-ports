@@ -1,16 +1,16 @@
 # New ports collection makefile for:	asclock-xlib
 # Version required:	2.0.11
 # Date created:		24 April 1999
-# Whom:			Jun Kuriyama <kuriyama@FreeBSD.ORG>
+# Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/asclock-xlib/Makefile,v 1.4 1999/08/31 02:57:55 peter Exp $
 #
 
 DISTNAME=	asclock-xlib-2.0.11
 CATEGORIES=	x11-clocks afterstep windowmaker
 MASTER_SITES=	http://www.asclock.org/tar/
 
-MAINTAINER=	kuriyama@FreeBSD.ORG
+MAINTAINER=	kuriyama@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

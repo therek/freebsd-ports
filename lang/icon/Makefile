@@ -1,9 +1,9 @@
 # New ports collection makefile for:    icon
 # Version required:     9.3.2
 # Date created:         05 April 1995
-# Whom:                 Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/icon/Makefile,v 1.14 1999/08/25 06:34:45 obrien Exp $
+# $FreeBSD: ports/lang/icon/Makefile,v 1.15 1999/08/28 16:36:05 cpiazza Exp $
 #
 
 DISTNAME=       unix
@@ -12,7 +12,7 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.cs.arizona.edu/icon/packages/unix/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 

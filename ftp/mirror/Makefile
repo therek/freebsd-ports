@@ -3,14 +3,14 @@
 # Date created:		15 May 1995
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/mirror/Makefile,v 1.11 1999/08/25 05:55:16 obrien Exp $
 #
 
 DISTNAME=	mirror-2.9
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://src.doc.ic.ac.uk/computing/archiving/mirror/
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 USE_PERL5=	yes
 NO_WRKSUBDIR=	yes

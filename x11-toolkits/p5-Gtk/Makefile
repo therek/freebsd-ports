@@ -3,7 +3,7 @@
 # Date created:		28 Oct 1997
 # Whom:	      		Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.24 1999/08/31 02:59:25 peter Exp $
 #
 
 DISTNAME=	Gtk-Perl-0.5121
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/perl/ \
 		${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Gtk
 
-MAINTAINER=	vanilla@FreeBSD.ORG
+MAINTAINER=	vanilla@FreeBSD.org
 
 LIB_DEPENDS=	gdk_imlib.4:${PORTSDIR}/graphics/imlib
 

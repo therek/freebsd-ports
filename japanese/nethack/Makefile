@@ -3,7 +3,7 @@
 # Date created:		13 February 1995
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/nethack/Makefile,v 1.27 1999/08/25 05:25:47 obrien Exp $
 #
 
 DISTNAME=	nethack-3.2.2
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	nethack
 PATCH_SITES=	ftp://mitsuko.jaist.ac.jp/pub/nethack/
 PATCHFILES=	jnethack-1.0.5.19970924.gz
 
-MAINTAINER=	max@FreeBSD.ORG
+MAINTAINER=	max@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

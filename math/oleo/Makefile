@@ -3,7 +3,7 @@
 # Date created:		3 September 1994
 # Whom:			mr
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/oleo/Makefile,v 1.13 1999/08/25 07:12:42 obrien Exp $
 #
 
 DISTNAME=	oleo-1.6
@@ -11,7 +11,7 @@ CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	oleo
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 HAS_CONFIGURE=	yes
 MAN1=		oleo.1

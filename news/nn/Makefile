@@ -3,7 +3,7 @@
 # Date created:		24 September 1994
 # Whom:			adam
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/nn/Makefile,v 1.21 1999/08/30 14:31:44 peter Exp $
 #
 
 DISTNAME=	nn-6.5.3
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.visi.com/users/mtpins/ \
 		ftp://maroon.webmaster.com/pub/nn/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=     ports@FreeBSD.ORG
+MAINTAINER=     ports@FreeBSD.org
 MAINTAINER=	jooji@webnology.com
 
 IS_INTERACTIVE=	yes

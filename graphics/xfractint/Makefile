@@ -3,7 +3,7 @@
 # Date created:         7 Sept 1995
 # Whom:                 cacho@mexicano.gdl.iteso.mx
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xfractint/Makefile,v 1.5 1999/08/25 06:15:22 obrien Exp $
 #
 
 DISTNAME=       xfrac304
@@ -12,7 +12,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.phoenix.net/pub/USERS/twegner/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
 NO_WRKSUBDIR=	yes

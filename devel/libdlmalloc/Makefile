@@ -3,7 +3,7 @@
 # Date created:		3 June 1995
 # Whom:			roberto
 #
-# $FreeBSD: ports/devel/libdlmalloc/Makefile,v 1.11 1999/08/25 05:48:19 obrien Exp $
+# $FreeBSD: ports/devel/libdlmalloc/Makefile,v 1.12 1999/08/28 02:42:17 mharo Exp $
 #
 
 DISTNAME=	dlmalloc
@@ -12,7 +12,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://gee.cs.oswego.edu/pub/misc/
 DISTFILES=	malloc-2.6.5.c
 
-MAINTAINER=	roberto@FreeBSD.ORG
+MAINTAINER=	roberto@FreeBSD.org
 
 NO_WRKSUBDIR=   yes
 

@@ -3,7 +3,7 @@
 # Date created:         15 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/tintin++/Makefile,v 1.9 1999/08/30 14:24:21 peter Exp $
 #
 
 DISTNAME=       tintin++v1.5pl6
@@ -14,7 +14,7 @@ MASTER_SITES=   ftp://ftp.walrus.com/pub/avatar/clients/ \
 		ftp://iclub.nsu.ru/pub/mud/clients/tintin++/
 EXTRACT_SUFX=   .tar.Z
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 WRKSRC=         ${WRKDIR}/tintin++/src
 GNU_CONFIGURE=	yes

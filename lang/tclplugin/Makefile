@@ -3,7 +3,7 @@
 # Date created:		Sat Nov  8 10:46:42 CET 1997
 # Whom:			andreas
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/tclplugin/Makefile,v 1.14 1999/08/25 06:35:38 obrien Exp $
 #
 
 DISTNAME=	tclplug20-src
@@ -11,7 +11,7 @@ PKGNAME=	tclplugin-2.0
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/plugin/
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 BROKEN_ELF=	yes
 

@@ -3,14 +3,14 @@
 # Date created:         Fr  27 Sep 1996 11:47:35 MET DST
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/archivers/bzip/Makefile,v 1.13 1999/08/25 04:25:02 obrien Exp $
+# $FreeBSD: ports/archivers/bzip/Makefile,v 1.14 1999/08/28 01:56:52 mharo Exp $
 #
 
 DISTNAME=       bzip-0.21
 CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.connectnet.com/pub/bzip/bzip-0.21/
 
-MAINTAINER=     andreas@FreeBSD.ORG
+MAINTAINER=     andreas@FreeBSD.org
 
 NO_CDROM=       "Restrictive copyright (don't sell for profit)"
 MAN1=		bzip.1 bunzip.1

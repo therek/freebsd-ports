@@ -3,7 +3,7 @@
 # Date created:		So   6 Apr 1997 04:25:57 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/nethack-qt/Makefile,v 1.24 1999/08/25 06:04:05 obrien Exp $
 #
 
 DISTNAME=	nethack-3.2.2
@@ -17,7 +17,7 @@ QT_PATCH=	qnethack-3.2.2.1.0.1.src.tar.gz
 QT_SOUND=	nhs.tar.gz
 DISTFILES=	nethack-3.2.2.tar.gz ${QT_PATCH} ${QT_SOUND}
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 BUILD_DEPENDS=	auplay:${PORTSDIR}/audio/nas \
 		xpmtoppm:${PORTSDIR}/graphics/netpbm

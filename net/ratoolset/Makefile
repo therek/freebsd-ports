@@ -3,7 +3,7 @@
 # Date created:				May 4th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ratoolset/Makefile,v 1.8 1999/08/30 14:23:58 peter Exp $
 #
 
 DISTNAME=	RAToolSet-3.5.2
@@ -11,7 +11,7 @@ PKGNAME=	ratoolset-3.5.2
 CATEGORIES=	net tk41
 MASTER_SITES=	ftp://ftp.isi.edu/ra/RAToolSet/
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 LIB_DEPENDS=	tk41.1:${PORTSDIR}/x11-toolkits/tk41
 

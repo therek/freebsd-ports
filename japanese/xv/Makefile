@@ -3,13 +3,13 @@
 # Date created:		07 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA (shige@kuis.kyoto-u.ac.jp)
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/xv/Makefile,v 1.4 1999/08/25 05:28:00 obrien Exp $
 #
 
 PKGNAME=	ja-xv-3.10a
 CATEGORIES=	japanese graphics
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 MASTERDIR=	${.CURDIR}/../../graphics/xv
 PKGDIR=		${.CURDIR}/pkg

@@ -3,9 +3,9 @@
 # Date created:		11 December 96
 # Whom:			Lars Koeller <Lars_Koeller@odie.physik2.uni-rostock.de>
 # With some
-# modifications from:	Andreas Klemm <andreas@FreeBSD.ORG>
+# modifications from:	Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/xbae/Makefile,v 1.7 1999/08/31 02:59:43 peter Exp $
 #
 
 DISTNAME=	Xbae-4.6.2

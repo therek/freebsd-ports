@@ -3,7 +3,7 @@
 # Date created:         1 May 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/d1489/Makefile,v 1.11 1999/08/31 01:46:58 peter Exp $
 #
 
 DISTNAME=       d1489-1.4
@@ -12,6 +12,6 @@ CATEGORIES=     russian
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/convert/char/
 EXTRACT_SUFX=   .tgz
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 .include <bsd.port.mk>

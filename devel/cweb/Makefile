@@ -1,9 +1,9 @@
 # New ports collection makefile for:	cweb
 # Version required:	3.41
 # Date created:		10 Feb 1998
-# Whom:			Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/cweb/Makefile,v 1.2 1999/08/25 05:47:47 obrien Exp $
 #
 
 DISTNAME=	cweb
@@ -12,7 +12,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR=	web/c_cpp/cweb
 
-MAINTAINER=	tg@FreeBSD.ORG
+MAINTAINER=	tg@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 MAN1=		cweb.1

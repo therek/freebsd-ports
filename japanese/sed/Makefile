@@ -3,7 +3,7 @@
 # Date created:		2 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/sed/Makefile,v 1.8 1999/08/25 05:26:49 obrien Exp $
 #
 
 DISTNAME=	sed-1.18
@@ -12,7 +12,7 @@ CATEGORIES=	japanese textproc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	sed
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 HAS_CONFIGURE=	yes
 PATCH_STRIP=	-p1

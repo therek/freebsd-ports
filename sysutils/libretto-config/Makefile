@@ -3,7 +3,7 @@
 # Date created:		19 Nov 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/libretto-config/Makefile,v 1.4 1999/08/31 01:59:49 peter Exp $
 #
 
 DISTNAME=	libapm-linux-1.0beta5
@@ -11,7 +11,7 @@ PKGNAME=	${PROGRAM_NAME}-1.0b5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://club.pep.ne.jp/~ishioka/Software/Linux/libapm/
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 

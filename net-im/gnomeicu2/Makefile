@@ -1,9 +1,9 @@
 # Ports collection Makefile for:	GnomeICU
 # Version required:			0.62a
 # Date created:				03/16/1999
-# Whom:					nectar@FreeBSD.ORG
+# Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gnome-icu/Makefile,v 1.13 1999/08/30 14:22:48 peter Exp $
 #
 
 DISTNAME=		gnomeicu-0.65
@@ -11,7 +11,7 @@ CATEGORIES=		net gnome
 MASTER_SITES=		ftp://gnomeicu.gdev.net/pub/gnomeicu/          \
 			http://www.nectar.cc/distfiles/
 
-MAINTAINER=		nectar@FreeBSD.ORG
+MAINTAINER=		nectar@FreeBSD.org
 
 LIB_DEPENDS=		panel_applet.1:${PORTSDIR}/x11/gnomecore
 

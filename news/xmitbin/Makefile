@@ -1,9 +1,9 @@
 # New ports collection makefile for:    xmitnin
 # Version required:     1.9
 # Date created:         29 Nov 1997
-# Whom:                 Donald Burr <dburr@FreeBSD.ORG>
+# Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/xmitbin/Makefile,v 1.2 1999/08/30 14:32:02 peter Exp $
 #
 
 DISTNAME=	xmitBin-1.9
@@ -12,7 +12,7 @@ CATEGORIES=	news mail
 MASTER_SITES=	ftp://ftp.cadence.com/utils/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	dburr@FreeBSD.ORG
+MAINTAINER=	dburr@FreeBSD.org
 
 MAN1=		xmitBin.1
 NO_WRKSUBDIR=	YES

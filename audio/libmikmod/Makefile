@@ -3,7 +3,7 @@
 # Date created:        Sun Apr 11 13:06:01 PDT 1999
 # Whom:                Michael Haro <mharo@area51.fremont.ca.us>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/libmikmod/Makefile,v 1.6 1999/08/25 04:35:45 obrien Exp $
 #
 
 DISTNAME=	libmikmod-3.1.7
@@ -11,7 +11,7 @@ CATEGORIES=	audio
 # The files at multimania.com seem to be corrupted
 MASTER_SITES=	http://mikmod.darkorb.net/libmikmod/
 
-MAINTAINER=	mharo@FreeBSD.ORG
+MAINTAINER=	mharo@FreeBSD.org
 
 LIB_DEPENDS=	esd.1:${PORTSDIR}/audio/esound
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	wemi-current for emacs
 # Version required:	1.13.3
 # Date created:		9 May 1999
-# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.ORG>
+# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/wemi-emacs-current/Makefile,v 1.5 1999/08/25 05:44:37 obrien Exp $
 #
 
 DISTNAME=	wemi-${WEMI_VER}
 CATEGORIES=	editors elisp
 MASTER_SITES=	ftp://ftp.jaist.ac.jp/pub/GNU/elisp/semi/wemi/
 
-MAINTAINER?=	shige@FreeBSD.ORG
+MAINTAINER?=	shige@FreeBSD.org
 
 PORTCLASS?=	master
 

@@ -3,18 +3,18 @@
 # Date created:		24 Dec 1998
 # Based on:		Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>'s
 #			japanese/man-doc
-# Whom:			SADA Kenji <sada@FreeBSD.ORG>
+# Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/xjman/Makefile,v 1.6 1999/08/25 05:27:55 obrien Exp $
+# $FreeBSD: ports/japanese/xjman/Makefile,v 1.7 1999/08/28 01:57:23 mharo Exp $
 #
 
 DISTNAME=	xjman-0.3
 PKGNAME=	ja-xjman-0.3
 CATEGORIES=	japanese
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
-		http://WWW.FreeBSD.ORG/~sada/distfiles/
+		http://WWW.FreeBSD.org/~sada/distfiles/
 
-MAINTAINER=	sada@FreeBSD.ORG
+MAINTAINER=	sada@FreeBSD.org
 
 NO_MTREE=	yes
 PLIST=		${WRKDIR}/PLIST

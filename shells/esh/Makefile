@@ -1,9 +1,9 @@
 # Ports collection Makefile for:	esh
 # Version required:			0.8
 # Date created:				05/20/1999
-# Whom:					nectar@FreeBSD.ORG
+# Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/esh/Makefile,v 1.3 1999/08/31 01:53:17 peter Exp $
 #
 
 DISTNAME=		esh-0.8
@@ -11,7 +11,7 @@ CATEGORIES=		shells
 MASTER_SITES=		http://esh.netpedia.net/                       \
 			http://www.nectar.cc/distfiles/
 
-MAINTAINER=		nectar@FreeBSD.ORG
+MAINTAINER=		nectar@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/esh
 

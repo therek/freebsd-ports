@@ -3,7 +3,7 @@
 # Date created:		July 9, 1997
 # Whom:			jfieber
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/iso12083/Makefile,v 1.3 1999/08/31 02:09:24 peter Exp $
 #
 
 DISTNAME=	iso12083-1993
@@ -11,7 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	ftp://info.ex.ac.uk/pub/SGML/ISO-12083/
 DISTFILES=	article.dtd book.dtd maths.dtd serial.dtd
 
-MAINTAINER=	jfieber@FreeBSD.ORG
+MAINTAINER=	jfieber@FreeBSD.org
 
 DIST_SUBDIR=	iso12083
 

@@ -3,7 +3,7 @@
 # Date created:		13 Jan 1999
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xbanner/Makefile,v 1.4 1999/08/31 02:50:50 peter Exp $
 #
 
 DISTNAME=	XBanner1.31
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://physics.fullerton.edu/pub/Linux/XBanner/	\
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=X11/xutils
 
-MAINTAINER=     ports@FreeBSD.ORG
+MAINTAINER=     ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

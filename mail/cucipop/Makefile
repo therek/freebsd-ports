@@ -3,7 +3,7 @@
 # Date created:		7 Jun 1997
 # Whom:			igor@zynaps.ru
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/cucipop/Makefile,v 1.8 1999/08/25 06:50:05 obrien Exp $
 #
 # NOTE: APOP works only for virtual hosts as designed!
 #       Virtual hosts works only with Berkeley DB2.
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.informatik.rwth-aachen.de/pub/packages/cucipop/
 
 #BUILD_DEPENDS=  ${PREFIX}/include/db2/db.h:${PORTSDIR}/databases/db
 
-MAINTAINER=	vanilla@FreeBSD.ORG
+MAINTAINER=	vanilla@FreeBSD.org
 
 MAN8=   cucipop.8 #makevpopdb.8
 

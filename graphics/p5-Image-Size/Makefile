@@ -3,7 +3,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/p5-Image-Size/Makefile,v 1.18 1999/08/25 06:14:34 obrien Exp $
 #
 
 DISTNAME=	Image-Size-2.9
@@ -12,7 +12,7 @@ CATEGORIES=	graphics www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Image
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 USE_PERL5=	YES
 CONFIGURE_ARGS=	PREFIX=${PREFIX}

@@ -3,7 +3,7 @@
 # Date created:         Dec 1 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/arena/Makefile,v 1.17 1999/08/31 02:42:41 peter Exp $
 #
 
 DISTNAME=       arena-CJK-beta3a
@@ -11,7 +11,7 @@ PKGNAME=        arena-i18n-beta3b
 CATEGORIES=     www
 MASTER_SITES=   ftp://ftp-eu.w3.org/pub/Arena/beta-3/
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 LIB_DEPENDS+=   jpeg.9:${PORTSDIR}/graphics/jpeg
 LIB_DEPENDS+=   png.3:${PORTSDIR}/graphics/png

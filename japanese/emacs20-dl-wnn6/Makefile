@@ -3,7 +3,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.7 1999/08/25 05:23:58 obrien Exp $
 #
 
 DISTNAME=	dl-wnn-0.3.6
@@ -11,7 +11,7 @@ PKGNAME=	ja-emacs20-dl-wnn6-0.3.6
 CATEGORIES=	japanese editors
 MASTER_SITES=	http://tt-www.cs.titech.ac.jp/~katsuya/emacs/
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 LIB_DEPENDS=	wnn6.1:${.CURDIR}/../../japanese/Wnn6-lib
 BUILD_DEPENDS=	emacs-dl-${EMACS_VER}:${EMACSDL_DIR} \

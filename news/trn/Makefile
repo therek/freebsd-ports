@@ -3,14 +3,14 @@
 # Date created:		21 October 1994
 # Whom:			smace
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/trn/Makefile,v 1.15 1999/08/30 14:31:58 peter Exp $
 #
 
 DISTNAME=	trn-3.6
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.uu.net/networking/news/readers/trn/
 
-MAINTAINER=	smace@FreeBSD.ORG
+MAINTAINER=	smace@FreeBSD.org
 
 RUN_DEPENDS=  munpack:${PORTSDIR}/converters/mpack
 

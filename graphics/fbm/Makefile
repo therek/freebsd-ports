@@ -3,7 +3,7 @@
 # Date created:		21 January 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/fbm/Makefile,v 1.2 1999/08/25 06:13:50 obrien Exp $
 #
 
 DISTNAME=	fbm-1.2
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/graphics/convert
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 

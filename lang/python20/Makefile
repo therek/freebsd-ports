@@ -3,7 +3,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/python/Makefile,v 1.52 1999/08/25 06:35:16 obrien Exp $
 #
 
 DISTNAME=       py152
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://www.python.org/pub/python/src/ \
 		ftp://ftp.cwi.nl/pub/python/src/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tg@FreeBSD.ORG
+MAINTAINER=	tg@FreeBSD.org
 
 LIB_DEPENDS=	${TK_DEPENDS}
 

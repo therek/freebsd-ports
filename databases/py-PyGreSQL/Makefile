@@ -1,9 +1,9 @@
 # Ports collection Makefile for:	PyGreSQL
 # Version required:			2.3
 # Date created:				2/22/1999
-# Whom:					nectar@FreeBSD.ORG
+# Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/py-PyGreSQL/Makefile,v 1.18 1999/08/25 05:21:34 obrien Exp $
 #
 
 DISTNAME=		PyGreSQL-2.4
@@ -13,7 +13,7 @@ MASTER_SITES=		ftp://ftp.druid.net/pub/distrib/               \
 			http://www.nectar.cc/distfiles/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		nectar@FreeBSD.ORG
+MAINTAINER=		nectar@FreeBSD.org
 
 BUILD_DEPENDS=		python:${PORTSDIR}/lang/python
 RUN_DEPENDS=		python:${PORTSDIR}/lang/python

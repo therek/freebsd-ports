@@ -3,7 +3,7 @@
 # Date created:        10 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ethereal/Makefile,v 1.15 1999/08/30 14:22:41 peter Exp $
 #
 
 DISTNAME=	ethereal-0.7.2
@@ -14,7 +14,7 @@ MASTER_SITES=	http://alpha1.linuxberg.com/files/x11/network/ \
 		http://ethereal.zing.org/distribution/ \
 		http://ethereal.boehm.org/distribution/
 		
-MAINTAINER=	billf@FreeBSD.ORG
+MAINTAINER=	billf@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 

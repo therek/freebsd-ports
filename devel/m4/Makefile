@@ -3,7 +3,7 @@
 # Date created:		25 October 1994
 # Whom:			mr
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/m4/Makefile,v 1.12 1999/08/25 05:48:35 obrien Exp $
 #
 
 DISTNAME=       m4-1.4
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=   ${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	m4
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 Y2K=		http://www.gnu.org/software/year2000.html
 

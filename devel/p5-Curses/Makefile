@@ -3,7 +3,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Curses/Makefile,v 1.11 1999/08/25 05:48:59 obrien Exp $
+# $FreeBSD: ports/devel/p5-Curses/Makefile,v 1.12 1999/08/28 01:57:05 mharo Exp $
 #
 
 DISTNAME=	Curses-1.02
@@ -12,7 +12,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Curses
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 USE_PERL5=	YES
 

@@ -3,7 +3,7 @@
 # Date created:         24 Jan 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/ha/Makefile,v 1.10 1999/08/25 04:25:07 obrien Exp $
 #
 
 DISTNAME=       ha0999
@@ -12,7 +12,7 @@ CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/arcers/
 EXTRACT_SUFX=   .tgz
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 NO_WRKSUBDIR=   yes
 MAKEFILE=       makefile.nix

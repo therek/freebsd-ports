@@ -1,9 +1,9 @@
 # New ports collection makefile for:	cdrom2
 # Version required:		1996/06/16
 # Date created:			03 Feb 1997
-# Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
+# Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/cdrom2/Makefile,v 1.3 1999/08/25 05:23:35 obrien Exp $
+# $FreeBSD: ports/japanese/cdrom2/Makefile,v 1.4 1999/08/27 22:29:24 mharo Exp $
 #
 
 DISTNAME=	euc
@@ -11,7 +11,7 @@ PKGNAME=	ja-cdrom2-1996.06.16
 CATEGORIES=	japanese misc
 MASTER_SITES=	ftp://ftp.nerimadors.or.jp/pub/src/cdrom2/
 
-MAINTAINER=	max@FreeBSD.ORG
+MAINTAINER=	max@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/cdrom2
 DIST_SUBDIR=	cdrom2

@@ -3,14 +3,14 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/jade/Makefile,v 1.17 1999/08/31 02:09:27 peter Exp $
 #
 
 DISTNAME=	jade-1.2.1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.jclark.com/pub/jade/
 
-MAINTAINER=	jfieber@FreeBSD.ORG
+MAINTAINER=	jfieber@FreeBSD.org
 
 .if ${MACHINE_ARCH} == "alpha"
 BROKEN=		nsgmls coredumps in static constructors

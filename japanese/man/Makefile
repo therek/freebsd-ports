@@ -3,7 +3,7 @@
 # Date created:		4 December 1996
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/man/Makefile,v 1.18 1999/08/25 05:25:21 obrien Exp $
 #
 
 DISTNAME=	jp-man-1.1g
@@ -12,7 +12,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	ftp://daemon.jp.freebsd.org/pub/FreeBSD-jp/man-jp/ \
 		${MASTER_SITE_PORTS_JP}
 
-MAINTAINER=	kuriyama@FreeBSD.ORG
+MAINTAINER=	kuriyama@FreeBSD.org
 
 RUN_DEPENDS=	${PREFIX}/bin/groff:${PORTSDIR}/japanese/groff \
 		jless:${PORTSDIR}/japanese/less

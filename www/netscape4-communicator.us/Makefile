@@ -4,14 +4,14 @@
 # Date created:         14 Feb 1998
 # Whom:                 obrien@cs.ucdavis.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/netscape4-communicator.us/Makefile,v 1.13 1999/08/31 02:43:03 peter Exp $
 #
 
 DISTNAME=	communicator-v407-us.x86-unknown-linux2.0_libc5
 PKGNAME=	netscape-communicator-4.07.us
 CATEGORIES=	www
 
-MAINTAINER=	obrien@FreeBSD.ORG
+MAINTAINER=	obrien@FreeBSD.org
 
 Y2K=		http://home.netscape.com/products/year2000/faq/client.html
 

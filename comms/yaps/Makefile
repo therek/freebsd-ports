@@ -3,7 +3,7 @@
 # Date created:         Di  29 Sep 1998 15:51:27 CEST
 # Whom:                 se
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/yaps/Makefile,v 1.5 1999/08/25 05:12:40 obrien Exp $
 #
 
 DISTNAME=       yaps-0.96
@@ -11,7 +11,7 @@ CATEGORIES=	comms
 MASTER_SITES=   ${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/serialcomm/machines
 
-MAINTAINER=     se@FreeBSD.ORG
+MAINTAINER=     se@FreeBSD.org
 
 USE_GMAKE=	true
 

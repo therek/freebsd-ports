@@ -1,9 +1,9 @@
 # New ports collection makefile for:	quakeserver
 # Version required:			0.991
 # Date created:				October 26th 1996
-# Whom:					jfitz@FreeBSD.ORG
+# Whom:					jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/games/quakeserver/Makefile,v 1.18 1999/08/25 06:04:21 obrien Exp $
+# $FreeBSD: ports/games/quakeserver/Makefile,v 1.19 1999/08/27 21:13:58 mharo Exp $
 #
 
 PKGNAME=	quakeserver-1.0

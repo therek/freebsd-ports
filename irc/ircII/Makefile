@@ -3,14 +3,14 @@
 # Date created:		18 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/ircII/Makefile,v 1.18 1999/08/25 06:12:42 obrien Exp $
 #
 
 DISTNAME=	ircii-4.4
 CATEGORIES=	irc
 MASTER_SITES=	ftp://cs-ftp.bu.edu/irc/clients/
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	IRCLIB=${PREFIX}/share/irc

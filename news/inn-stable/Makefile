@@ -3,7 +3,7 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1)
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/inn-stable/Makefile,v 1.43 1999/08/30 14:31:38 peter Exp $
 #
 
 DISTNAME=	inn-STABLE_2_2-1999-07-24_03-02
@@ -12,7 +12,7 @@ CATEGORIES=	news
 MASTER_SITES=	http://www.FreeBSD.org/~andreas/download/ \
 		ftp://ftp.isc.org/isc/inn/snapshots/
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 Y2K=		http://www.isc.org/inn-y2k.html
 

@@ -3,14 +3,14 @@
 # Date created:        2 January 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xflame/Makefile,v 1.3 1999/08/25 06:05:10 obrien Exp $
 #
 
 DISTNAME=	xflame-1.1.1
 CATEGORIES=	games
 MASTER_SITES=	http://www.owlnet.rice.edu/~rahul/
 
-MAINTAINER=	kris@FreeBSD.ORG
+MAINTAINER=	kris@FreeBSD.org
 
 USE_IMAKE=	yes
 

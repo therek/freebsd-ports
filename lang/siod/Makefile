@@ -3,7 +3,7 @@
 # Date created:        28 April 1999
 # Whom:                jkoshy
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/siod/Makefile,v 1.3 1999/08/25 06:35:24 obrien Exp $
 #
 
 DISTNAME=	siod
@@ -13,7 +13,7 @@ MASTER_SITES=	http://people.delphi.com/gjc/\
 		ftp://ftp.std.com/pub/gjc/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	jkoshy@FreeBSD.ORG
+MAINTAINER=	jkoshy@FreeBSD.org
 
 NO_WRKSUBDIR=	true
 MAKEFILE=	makefile

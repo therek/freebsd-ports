@@ -1,12 +1,12 @@
 # New ports collection makefile for:	semi for xemacs
 # Version required:	1.8.6
 # Date created:		25 July 1999
-# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.ORG>
+# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/semi-xemacs/Makefile,v 1.2 1999/08/25 05:44:19 obrien Exp $
 #
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 # This is a slave port.
 PORTCLASS=	slave

@@ -1,9 +1,9 @@
 # Ports collection Makefile for:	PyXML
 # Version required:			0.5.1
 # Date created:				04/17/1999
-# Whom:					nectar@FreeBSD.ORG
+# Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.4 1999/08/31 02:09:41 peter Exp $
 #
 
 DISTNAME=		xml-0.5.1
@@ -16,7 +16,7 @@ MASTER_SITES=		http://www.python.org/sigs/xml-sig/files/      \
 			http://www.nectar.cc/distfiles/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		nectar@FreeBSD.ORG
+MAINTAINER=		nectar@FreeBSD.org
 
 RUN_DEPENDS=		python:${PORTSDIR}/lang/python
 

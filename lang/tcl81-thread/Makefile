@@ -3,7 +3,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/tcl81-thread/Makefile,v 1.5 1999/08/25 06:35:35 obrien Exp $
 #
 
 DISTNAME=	tcl8.1b1
@@ -11,7 +11,7 @@ PKGNAME=	tcl-8.1.b1-thread
 CATEGORIES=	lang tcl81
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_1/
 
-MAINTAINER=	ejc@FreeBSD.ORG
+MAINTAINER=	ejc@FreeBSD.org
 
 Y2K=            http://www.scriptics.com/Y2K.html
 

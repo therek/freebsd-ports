@@ -3,7 +3,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/ghostscript55/Makefile,v 1.35 1999/08/31 01:44:47 peter Exp $
 #
 
 DISTNAME=	ghostscript-5.50
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.cs.wisc.edu/ghost/aladdin/gs550/ \
 DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
 		${HP850_DRV} ${DECRYPT_PDF}
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 Y2K=		http://www.cs.wisc.edu/~ghost/aladdin/y2k.html 
 

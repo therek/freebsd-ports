@@ -3,7 +3,7 @@
 # Date created:         31 Aug 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/X.language/Makefile,v 1.25 1999/08/31 01:46:56 peter Exp $
 #
 
 DISTNAME=       ru-X11-3.3
@@ -17,7 +17,7 @@ DISTFILES += Type1.koi8-r.tgz
 DISTFILES += Type1.koi8-r.free.tgz
 .endif
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 RUN_DEPENDS=	${X11BASE}/bin/xinit:${PORTSDIR}/x11/XFree86
 

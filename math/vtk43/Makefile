@@ -1,9 +1,9 @@
 # New ports collection makefile for:    vtk
 # Version required:     2.3
 # Date created:         24 Nov 1997
-# Whom:                 Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/vtk/Makefile,v 1.2 1999/08/25 07:17:20 obrien Exp $
 #
 
 DISTNAME=       vtk23unix
@@ -11,7 +11,7 @@ PKGNAME=	vtk-2.3
 CATEGORIES=	math
 MASTER_SITES=	ftp://vtk.scorec.rpi.edu/pub/
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3	\
 		tk80.1:${PORTSDIR}/x11-toolkits/tk80

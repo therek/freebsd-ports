@@ -3,7 +3,7 @@
 # Date created:		Sun Nov 22 12:08:18 CET 1998
 # Whom:			Dirk Froemberg <ibex@physik.TU-Berlin.DE>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gtksee/Makefile,v 1.15 1999/08/25 06:14:12 obrien Exp $
 #
 
 DISTNAME=	gtksee-0.3.0
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://sunsite.cqi.com.cn/~hotaru/gtksee/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
 
-MAINTAINER=	dirk@FreeBSD.ORG
+MAINTAINER=	dirk@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \

@@ -3,14 +3,14 @@
 # Date created:        14 March 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/wmmoonclock/Makefile,v 1.5 1999/08/25 04:22:45 obrien Exp $
 #
 
 DISTNAME=	wmMoonClock-1.26
 CATEGORIES=	astro windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 
-MAINTAINER=	kris@FreeBSD.ORG
+MAINTAINER=	kris@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm/
 

@@ -3,7 +3,7 @@
 # Date created:				October 24th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-Mail-Tools/Makefile,v 1.13 1999/08/25 06:50:37 obrien Exp $
 #
 
 DISTNAME=	MailTools-1.12
@@ -12,7 +12,7 @@ CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Net/SMTP.pm:${PORTSDIR}/net/p5-Net \
 		${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Net/Domain.pm:${PORTSDIR}/net/p5-Net

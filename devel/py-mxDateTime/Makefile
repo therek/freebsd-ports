@@ -1,9 +1,9 @@
 # New ports collection makefile for:	py-mxDateTime
 # Version required:	1.3.0
 # Date created:		12 May 1999
-# Whom:			Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/py-mxDateTime/Makefile,v 1.2 1999/08/25 05:49:56 obrien Exp $
 #
 
 DISTNAME=	mxDateTime-1.3.0
@@ -11,7 +11,7 @@ PKGNAME=	py-mxDateTime-1.3.0
 CATEGORIES=	devel python
 MASTER_SITES=	http://starship.skyport.net/~lemburg/
 
-MAINTAINER=	tg@FreeBSD.ORG
+MAINTAINER=	tg@FreeBSD.org
 
 BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python

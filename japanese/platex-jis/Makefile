@@ -1,9 +1,9 @@
 # New ports collection makefile for:	platex2e-jis
 # Version required:		<1998/09/01>
 # Date created:			05 Oct 1997
-# Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
+# Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/platex-jis/Makefile,v 1.10 1999/08/25 05:26:24 obrien Exp $
 #
 
 DISTNAME=	pl19980901j
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/platex/1998-09-01/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		plpatch.ltx jclasses.dtx tascmac.sty
 
-MAINTAINER=	max@FreeBSD.ORG
+MAINTAINER=	max@FreeBSD.org
 
 BUILD_DEPENDS=	ptex:${PORTSDIR}/japanese/ptex-jis \
 		platex-common:${PORTSDIR}/japanese/platex-common

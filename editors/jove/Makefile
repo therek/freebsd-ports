@@ -3,14 +3,14 @@
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/jove/Makefile,v 1.16 1999/08/25 05:43:57 obrien Exp $
 #
 
 DISTNAME=	jove-4.16
 CATEGORIES=	editors
 MASTER_SITES=	ftp://relay.cs.toronto.edu/pub/moraes/jove/
 
-MAINTAINER=	erich@FreeBSD.ORG
+MAINTAINER=	erich@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/jove
 MAN1=		jove.1 teachjove.1 xjove.1 jovetool.1

@@ -3,7 +3,7 @@
 # Date Created:		17 Sep 1997
 # Whom:			Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xjig/Makefile,v 1.4 1999/08/25 06:05:22 obrien Exp $
 #
 
 DISTNAME=	xjig-2.4
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	vanilla@FreeBSD.ORG
+MAINTAINER=	vanilla@FreeBSD.org
 
 USE_XLIB=	yes
 MAKEFILE=	Makefile.Linux

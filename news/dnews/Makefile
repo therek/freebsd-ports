@@ -3,7 +3,7 @@
 # Date created:		Thu May 29 17:16:36 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/dnews/Makefile,v 1.13 1999/08/30 14:31:34 peter Exp $
 #
 
 DISTNAME=	dnews47k_freebsd
@@ -12,7 +12,7 @@ CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.netwinsite.com/pub/netwinsite/dnews/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 Y2K=		http://netwinsite.com/dnews_y2k.htm
 

@@ -1,9 +1,9 @@
 # New ports collection makefile for: Netscape browser with Japanese resources
 # Version required:	4.08
 # Date created:		13 Mar 1998
-# Whom:			sada@FreeBSD.ORG
+# Whom:			sada@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/netscape4-communicator/Makefile,v 1.26 1999/08/25 05:25:50 obrien Exp $
 #
 
 DISTNAME=	ja-netscape-${BROWSER}-${BROWSER_VERSION}
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		http://www.bres.tsukuba.ac.jp/~yohta/netscape/
 DISTFILES=	${JAPANIZE_KIT}
 
-MAINTAINER=	sada@FreeBSD.ORG
+MAINTAINER=	sada@FreeBSD.org
 
 # ?= for ports that include this Makefile
 RUN_DEPENDS?=	${PREFIX}/bin/${BROWSER}-${BROWSER_VERSION}:${PORTSDIR}/www/netscape4-${BROWSER}

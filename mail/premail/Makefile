@@ -5,7 +5,7 @@
 # Date created:         31 Jan 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/mail/premail/Makefile,v 1.14 1999/08/25 06:50:44 obrien Exp $
+# $FreeBSD: ports/mail/premail/Makefile,v 1.15 1999/08/27 20:47:00 mharo Exp $
 #
 
 DISTNAME=       premail-0.46
@@ -13,7 +13,7 @@ CATEGORIES=     security mail
 MASTER_SITES=   ftp://ftp.jpunix.com/pub/remailer-tools/ \
 		ftp://ftp.kiarchive.ru/unix/crypto/
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 BUILD_DEPENDS+= pgp:${PORTSDIR}/security/pgp
 

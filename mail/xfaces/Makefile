@@ -3,9 +3,9 @@
 # Date created:		11 December 96
 # Whom:			Lars Koeller <Lars_Koeller@odie.physik2.uni-rostock.de>
 # With some 
-# modifications from:	Andreas Klemm <andreas@FreeBSD.ORG>
+# modifications from:	Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/xfaces/Makefile,v 1.15 1999/08/25 06:51:08 obrien Exp $
+# $FreeBSD: ports/mail/xfaces/Makefile,v 1.16 1999/08/28 01:57:36 mharo Exp $
 #
 
 DISTNAME=	xfaces-3.3

@@ -3,14 +3,14 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/kmpg/Makefile,v 1.13 1999/08/25 04:35:41 obrien Exp $
 #
 
 DISTNAME=	kmpg-0.4.3a
 CATEGORIES=	audio kde
 MASTER_SITES=	http://www.freebsd.org/~tom/distfiles/
 
-MAINTAINER=	tom@FreeBSD.ORG
+MAINTAINER=	tom@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.2:${PORTSDIR}/x11/kdelibs11

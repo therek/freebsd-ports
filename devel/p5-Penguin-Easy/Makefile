@@ -3,7 +3,7 @@
 # Date created:				May 28th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Penguin-Easy/Makefile,v 1.5 1999/08/25 05:49:27 obrien Exp $
 #
 
 DISTNAME=	Penguin-Easy-1.1
@@ -12,7 +12,7 @@ CATEGORIES=	devel security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Penguin
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 BUILD_DEPENDS= 	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/Penguin.pm:${PORTSDIR}/devel/p5-Penguin
 

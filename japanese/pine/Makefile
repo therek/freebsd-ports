@@ -3,7 +3,7 @@
 # Date created:		01 May 1996
 # Whom:			masafumi
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/pine/Makefile,v 1.18 1999/08/25 05:26:17 obrien Exp $
 #
 
 DISTNAME=	pine3.95
@@ -16,7 +16,7 @@ DISTFILES=	pine3.95.tar.gz pine3.95lj1.1b2.tar.gz
 PATCHFILES=	pine3.95lj1.1b2-b3.diff.gz
 PATCH_SITES=	${MASTER_SITE_PORTS_JP}
 
-MAINTAINER=	max@FreeBSD.ORG
+MAINTAINER=	max@FreeBSD.org
 
 BROKEN_ELF=	yes
 

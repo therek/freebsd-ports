@@ -3,7 +3,7 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.7 1999/08/25 06:50:03 obrien Exp $
 #
 
 DISTNAME=	balsa-0.4.9
@@ -11,7 +11,7 @@ CATEGORIES=	mail gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	sources/balsa
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 LIB_DEPENDS=	gnome.2:${PORTSDIR}/x11/gnomelibs \

@@ -3,7 +3,7 @@
 # Date created:		2 Novermber 1996
 # Whom:			fenner
 #
-# $FreeBSD$
+# $FreeBSD: ports/mbone/wb/Makefile,v 1.7 1999/08/25 07:09:46 obrien Exp $
 #
 
 DISTNAME=       wb-1.59
@@ -11,7 +11,7 @@ CATEGORIES=	mbone
 MASTER_SITES=   ftp://ftp.ee.lbl.gov/conferencing/wb/
 DISTFILES=      i386-wb-1.59.tar.Z
 
-MAINTAINER=	fenner@FreeBSD.ORG
+MAINTAINER=	fenner@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes

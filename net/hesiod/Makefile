@@ -3,7 +3,7 @@
 # Date created:				6/11/1998
 # Whom:					n@nectar.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/hesiod/Makefile,v 1.6 1999/08/30 14:22:54 peter Exp $
 #
 
 DISTNAME=		hesiod-3.0.2
@@ -11,7 +11,7 @@ CATEGORIES=		net
 MASTER_SITES=		ftp://athena-dist.mit.edu/pub/ATHENA/hesiod/   \
 			http://www.nectar.cc/distfiles/
 
-MAINTAINER=		nectar@FreeBSD.ORG
+MAINTAINER=		nectar@FreeBSD.org
 
 MAN1=			hesinfo.1
 MAN3=			hesiod.3 hesiod_end.3 hesiod_free_list.3 	\

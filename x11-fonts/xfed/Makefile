@@ -3,7 +3,7 @@
 # Date created:         7 December 1994
 # Whom:                 asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fonts/xfed/Makefile,v 1.22 1999/08/31 02:58:35 peter Exp $
 #
 
 DISTNAME=	xfed
@@ -11,7 +11,7 @@ PKGNAME=	xfed-1.0
 CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/graphics/systems/X11.old/pub/R6untarred/contrib/programs/
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 IGNOREFILES=	${DISTFILES}
 USE_IMAKE=	yes

@@ -1,9 +1,9 @@
 # New ports collection makefile for:    tank
 # Version required:     0.4a
 # Date created:         4 Mar 1998
-# Whom:                 Donald Burr <dburr@FreeBSD.ORG>
+# Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/tank/Makefile,v 1.10 1999/08/25 06:04:30 obrien Exp $
 #
 
 DISTNAME=	tank-0.4a-src
@@ -11,7 +11,7 @@ PKGNAME=	tank-0.4a
 CATEGORIES=	games
 MASTER_SITES=	http://step.polymtl.ca/~coyote/tank/
 
-MAINTAINER=	dburr@FreeBSD.ORG
+MAINTAINER=	dburr@FreeBSD.org
 
 LIB_DEPENDS=	MesaGL.14:${PORTSDIR}/graphics/Mesa3
 

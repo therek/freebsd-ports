@@ -3,7 +3,7 @@
 # Date created:         1 May 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/mpack/Makefile,v 1.9 1999/08/25 05:16:25 obrien Exp $
 #
 
 DISTNAME=       mpack-1.5-src
@@ -12,7 +12,7 @@ CATEGORIES=     converters mail news
 MASTER_SITES=   ftp://ftp.andrew.cmu.edu/pub/mpack/
 EXTRACT_SUFX=   .tar.Z
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 WRKSRC=         ${WRKDIR}/mpack
 MAKEFLAGS=      -f

@@ -3,7 +3,7 @@
 # Date created:		17 December 1994
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/mpeg_play/Makefile,v 1.14 1999/08/25 06:14:29 obrien Exp $
 #
 
 DISTNAME=	mpeg_play-2.4
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://mm-ftp.cs.berkeley.edu/pub/multimedia/mpeg/play/
 EXTRACT_SUFX=	-patched-src.tar.gz
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/mpeg_play
 USE_IMAKE=	yes

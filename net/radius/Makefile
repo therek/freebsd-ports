@@ -1,9 +1,9 @@
 # New ports collection makefile for:	radius
 # Version required:	merit radius 2.4.23
 # Date created:		4. July 1996
-# Whom:			torstenb@FreeBSD.ORG
+# Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/radius/Makefile,v 1.11 1999/08/30 14:23:55 peter Exp $
 #
 
 DISTNAME=	radius.3.6B.basic

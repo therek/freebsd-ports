@@ -3,7 +3,7 @@
 # Date created:		June 20, 1997
 # Whom:			jfieber
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fonts/xmbdfed/Makefile,v 1.11 1999/08/31 02:58:36 peter Exp $
 #
 
 DISTNAME=	xmbdfed-3.9
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://crl.nmsu.edu/CLR/multiling/General/
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	xmbdfed-3.9.patch1 xmbdfed-3.9.patch2
 
-MAINTAINER=	jfieber@FreeBSD.ORG
+MAINTAINER=	jfieber@FreeBSD.org
 
 .if defined(USE_FREETYPE)
 LIB_DEPENDS=	ttf.3:${PORTSDIR}/print/freetype

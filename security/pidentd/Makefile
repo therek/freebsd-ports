@@ -3,7 +3,7 @@
 # Date created:		19 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/pidentd/Makefile,v 1.26 1999/08/31 01:51:34 peter Exp $
 #
 
 DISTNAME=       pidentd-2.8.5
@@ -11,7 +11,7 @@ CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/ident/servers/ \
 		ftp://ftp.fu-berlin.de/unix/security/ident/servers/
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 ALL_TARGET=     freebsd
 MAKE_ENV=	REALPREFIX=${PREFIX}

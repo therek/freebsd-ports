@@ -3,7 +3,7 @@
 # Date created:				12 January 1997
 # Whom:					jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xspringies/Makefile,v 1.3 1999/08/25 06:06:18 obrien Exp $
 #
 
 DISTNAME=	xspringies-1.1
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://aixpdslib.seas.ucla.edu/pub/xspringies/RISC/3.2/src/
 DISTFILES=	xspringies.1.1.tar.Z
 
-MAINTAINER=	jkh@FreeBSD.ORG
+MAINTAINER=	jkh@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		xspringies.1

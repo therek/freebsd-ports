@@ -3,14 +3,14 @@
 # Date created:		April 26, 1997
 # Whom:			jfieber
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/sp/Makefile,v 1.11 1999/08/31 02:09:46 peter Exp $
 #
 
 DISTNAME=	sp-1.3
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.jclark.com/pub/sp/
 
-MAINTAINER=	chuckr@FreeBSD.ORG
+MAINTAINER=	chuckr@FreeBSD.org
 
 post-patch:
 	$(CP) $(WRKSRC)/Makefile $(WRKSRC)/Makefile.sed

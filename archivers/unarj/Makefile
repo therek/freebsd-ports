@@ -3,7 +3,7 @@
 # Date created:         28 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/unarj/Makefile,v 1.13 1999/08/25 04:25:17 obrien Exp $
 #
 
 DISTNAME=       unarj-2.43
@@ -11,7 +11,7 @@ CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/arcers/
 EXTRACT_SUFX=   .tgz
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 do-install:
 	${INSTALL} -d -m 755 -o $(SHAREOWN) -g ${SHAREGRP} \

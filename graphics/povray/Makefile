@@ -3,7 +3,7 @@
 # Date created:         3 Dec 1996
 # Whom:                 paulo@isr.uc.pt
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/povray/Makefile,v 1.17 1999/08/25 06:14:42 obrien Exp $
 #
 
 DISTNAME=	povray3
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.povray.org/pub/povray/Old-Versions/Official-3.0/Unix/ \
 		ftp://ftp.kappa.ro/pub/Linux/Graphics/Editors/povray/
 DISTFILES=	povuni_s.tgz povuni_d.tgz
 
-MAINTAINER=	kris@FreeBSD.ORG
+MAINTAINER=	kris@FreeBSD.org
 
 LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
 

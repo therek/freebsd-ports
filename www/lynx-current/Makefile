@@ -3,7 +3,7 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/lynx-current/Makefile,v 1.103 1999/08/31 02:42:57 peter Exp $
 #
 
 DISTNAME=       lynx2.8.3dev.5
@@ -11,7 +11,7 @@ PKGNAME=        lynx-2.8.3dev.5
 CATEGORIES=	www
 MASTER_SITES=   http://sol.slcc.edu/lynx/current/
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 USE_BZIP2=      YES
 NO_LATEST_LINK=	YES

@@ -3,7 +3,7 @@
 # Date created:		22 October 1994
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/logo/Makefile,v 1.15 1999/08/25 06:34:52 obrien Exp $
 #
 
 DISTNAME=	ucblogo-4.6
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://anarres.cs.berkeley.edu/pub/ucblogo/
 MASTER_SITE_SUBDIR=	ucblogo
 
-MAINTAINER=	jmacd@FreeBSD.ORG
+MAINTAINER=	jmacd@FreeBSD.org
 
 USE_XLIB=	yes
 MAKEFILE=	makefile

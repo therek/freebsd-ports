@@ -3,13 +3,13 @@
 # Date created:		07 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA (shige@kuis.kyoto-u.ac.jp)
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xv-m17n/Makefile,v 1.4 1999/08/25 06:15:37 obrien Exp $
 #
 
 PKGNAME=	xv-m17n-3.10a
 CATEGORIES=	graphics
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 MASTERDIR=	${.CURDIR}/../../graphics/xv
 PKGDIR=		${.CURDIR}/pkg

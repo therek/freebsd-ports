@@ -4,7 +4,7 @@
 # Date created:         15 May 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/rar/Makefile,v 1.17 1999/08/25 04:25:15 obrien Exp $
+# $FreeBSD: ports/archivers/rar/Makefile,v 1.18 1999/08/26 00:01:16 mharo Exp $
 #
 
 DISTNAME=       rarbsd
@@ -14,7 +14,7 @@ MASTER_SITES=   ftp://ftp.rarsoft.com/pub/rar/ \
 		ftp://ftp.cdrom.com/pub/sac/pack/
 EXTRACT_SUFX=   .sfx
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 CAT1=		rar.1
 

@@ -3,7 +3,7 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.6 1999/08/25 06:50:42 obrien Exp $
 #
 
 DISTNAME=	postfix-19990601
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.merit.edu/postfix/official/ \
 		ftp://ftp.cs.tu-berlin.de/pub/net/mail/postfix/official/ \
 		ftp://ftp.postfix.oaktree.co.uk/pub/postfix/official/
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	torstenb@FreeBSD.org
 
 ALL_TARGET=	default
 

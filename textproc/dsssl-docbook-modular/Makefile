@@ -3,7 +3,7 @@
 # Date created:		16 March 1998
 # Whom:			Jun Kuriyama <kuriyama@opt.phys.waseda.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/dsssl-docbook-modular/Makefile,v 1.22 1999/08/31 02:09:11 peter Exp $
 #
 
 DISTNAME=	db144
@@ -12,7 +12,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://nwalsh.com/docbook/dsssl/
 DISTFILES=	${DISTNAME}.zip ${DISTNAME}d.zip
 
-MAINTAINER=	kuriyama@FreeBSD.ORG
+MAINTAINER=	kuriyama@FreeBSD.org
 
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip \
 		${PREFIX}/share/sgml/docbook/3.0/catalog:${PORTSDIR}/textproc/docbook-300

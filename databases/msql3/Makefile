@@ -3,13 +3,13 @@
 # Date created:		December 17th 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/databases/msql/Makefile,v 1.33 1999/08/25 05:21:16 obrien Exp $
+# $FreeBSD: ports/databases/msql/Makefile,v 1.34 1999/08/27 21:13:44 mharo Exp $
 #
 
 DISTNAME=	msql-2.0.4.1
 CATEGORIES=	databases
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 # Not free for commercial use.  Must create a user on the local system
 NO_PACKAGE=	YES

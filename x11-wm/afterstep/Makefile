@@ -1,9 +1,9 @@
 # New ports collection makefile for:	afterstep
 # Version required:	1.0
 # Date created:		October 29th 1996
-# Whom:			jfitz@FreeBSD.ORG
+# Whom:			jfitz@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/afterstep/Makefile,v 1.30 1999/08/31 02:59:52 peter Exp $
 #
 
 DISTNAME=	AfterStep-1.0
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_AFTERSTEP} \
 		ftp://ftp.cs.tu-berlin.de/pub/X/afterstep/
 MASTER_SITE_SUBDIR=	stable/archives
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

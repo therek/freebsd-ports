@@ -3,7 +3,7 @@
 # Date created:		21 August 1995
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/netscape3/Makefile,v 1.33 1999/08/31 02:43:02 peter Exp $
 #
 
 DISTNAME?=	netscape-3.04
@@ -11,7 +11,7 @@ CATEGORIES=	www
 MASTER_SITES?=   ftp://archive:oldies@archive.netscape.com/archive/navigator/3.04/shipping/english/unix/bsdi11/navigator_complete/
 DISTFILES=      netscape-v304-export.x86-unknown-bsd.tar.gz
 
-MAINTAINER=	sada@FreeBSD.ORG
+MAINTAINER=	sada@FreeBSD.org
 
 Y2K=		http://home.netscape.com/products/year2000/faq/client.html
 

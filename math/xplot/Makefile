@@ -3,14 +3,14 @@
 # Date created:		3 March 1997
 # Whom:			fenner
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/xplot/Makefile,v 1.4 1999/08/30 11:53:45 peter Exp $
 #
 
 DISTNAME=	xplot-0.90
 CATEGORIES=	math graphics net
 MASTER_SITES=	ftp://mercury.lcs.mit.edu/pub/shep/
 
-MAINTAINER=	fenner@FreeBSD.ORG
+MAINTAINER=	fenner@FreeBSD.org
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes

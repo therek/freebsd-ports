@@ -1,9 +1,9 @@
 # New ports collection makefile for:    tth
 # Version required:     2.22
 # Date created:         19 Feb 1998
-# Whom:                 Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/tth/Makefile,v 1.12 1999/08/31 02:09:49 peter Exp $
 #
 
 DISTNAME=       tth_C
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.freebsd.org/~tg/ \
 		http://hutchinson.belmont.ma.us/tth/tth-noncom/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript5 \
 		ppmtogif:${PORTSDIR}/graphics/netpbm \

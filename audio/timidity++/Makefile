@@ -4,7 +4,7 @@
 # Date created:         17 Nov 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/audio/timidity/Makefile,v 1.13 1999/08/28 02:17:08 mharo Exp $
+# $FreeBSD: ports/audio/timidity/Makefile,v 1.14 1999/08/28 02:42:15 mharo Exp $
 #
 
 DISTNAME=       timidity-0.2i
@@ -14,7 +14,7 @@ MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/misc/hardware/soundcard/gus/ \
 TIINS=          goemon.tgz
 DISTFILES=      ${TIINS} ${DISTNAME}.tar.gz
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 NO_CDROM=       "Uses copyrighted patches"
 

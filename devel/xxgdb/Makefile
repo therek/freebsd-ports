@@ -3,7 +3,7 @@
 # Date created:		2 May 1995
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/xxgdb/Makefile,v 1.8 1999/08/25 05:50:32 obrien Exp $
 #
 
 DISTNAME=	xxgdb-1.12
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=   ${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 

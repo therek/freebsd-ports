@@ -3,7 +3,7 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.72 1999/08/25 05:49:49 obrien Exp $
 #
 
 DATE=		990426
@@ -13,7 +13,7 @@ CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	ALPHA/wine/development
 
-MAINTAINER=	se@FreeBSD.ORG
+MAINTAINER=	se@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

@@ -3,7 +3,7 @@
 # Date created:		7 January 1997
 # Whom:			Yoshiro MIHIRA
 #
-# $FreeBSD: ports/japanese/perl5/Makefile,v 1.19 1999/08/25 05:26:15 obrien Exp $
+# $FreeBSD: ports/japanese/perl5/Makefile,v 1.20 1999/08/30 15:51:04 shige Exp $
 #
 
 DISTNAME=	perl5.005_03
@@ -35,7 +35,7 @@ PATCH_SITES=	ftp://ftp.funet.fi/pub/languages/perl/CPAN/authors/id/WATANABE/ \
 PATCHFILES=	jperl5.005_03-990822.pat.gz
 PATCH_DIST_STRIP= -p1
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 

@@ -3,7 +3,7 @@
 # Date created:				April 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-Apache/Makefile,v 1.15 1999/08/31 02:43:06 peter Exp $
 #
 
 DISTNAME=	mod_perl-1.19
@@ -12,7 +12,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/www/apache13:patch
 

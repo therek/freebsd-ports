@@ -4,7 +4,7 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-libwww/Makefile,v 1.34 1999/08/31 02:43:11 peter Exp $
 #
 
 DISTNAME=       libwww-perl-5.44
@@ -13,7 +13,7 @@ CATEGORIES=     www perl5 devel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=     LWP
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 BUILD_DEPENDS=  ${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Digest.pm:${PORTSDIR}/security/p5-Digest-MD5 \
 		${PREFIX}/lib/perl5/site_perl/${PERL_VER}/URI.pm:${PORTSDIR}/net/p5-URI \

@@ -3,13 +3,13 @@
 # Date created:         8 Apr 1996
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/netscape3.language/Makefile,v 1.17 1999/08/31 01:47:01 peter Exp $
 #
 
 PKGNAME=        ru-netscape-3.01
 CATEGORIES=     russian www
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 RUN_DEPENDS += ${X11BASE}/lib/X11/nls/ru_SU.KOI8-R:${PORTSDIR}/russian/X.language
 RUN_DEPENDS += netscape:${PORTSDIR}/www/netscape3

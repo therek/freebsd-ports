@@ -7,7 +7,7 @@
 # Date created:         31 July 1995
 # Whom:                 faulkner@cactus.org
 #
-# $FreeBSD: ports/misc/astrolog/Makefile,v 1.17 1999/08/25 07:21:09 obrien Exp $
+# $FreeBSD: ports/misc/astrolog/Makefile,v 1.18 1999/08/27 22:29:47 mharo Exp $
 #
 
 DISTNAME=       ast54unx
@@ -20,7 +20,7 @@ EXTRACT_ONLY=   ${DISTNAME}.shr
 EPHEM=          LRZ5_24 CHI_24 CPJV_24
 DISTFILES=      ${EXTRACT_ONLY} ${EPHEM}
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     ache@FreeBSD.org
 
 USE_XLIB=	yes
 EXTRACT_CMD=    ${SH}

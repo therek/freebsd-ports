@@ -1,9 +1,9 @@
 # New ports collection makefile for:		cyrus
 # Version required:				1.5.19
 # Date created:					May 4th 1997
-# Whom:						jfitz@FreeBSD.ORG
+# Whom:						jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/mail/cyrus/Makefile,v 1.21 1999/08/25 06:50:06 obrien Exp $
+# $FreeBSD: ports/mail/cyrus/Makefile,v 1.22 1999/08/28 02:17:17 mharo Exp $
 #
 
 DISTNAME=	cyrus-imapd-v1.5.19
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 		http://www.freebsd.org/~stb/mirror/ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 		ftp://ftp.hanse.de/sites/transit/mirror/ftp.andrew.cmu.edu/pub/cyrus-mail/
 
-MAINTAINER=	stb@FreeBSD.ORG
+MAINTAINER=	stb@FreeBSD.org
 
 Y2K=		http://andrew2.andrew.cmu.edu/cyrus/imapd/y2k.html
 

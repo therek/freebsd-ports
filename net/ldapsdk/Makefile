@@ -3,7 +3,7 @@
 # Date created:	17 May 1999
 # Whom:		paul@freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ldapsdk/Makefile,v 1.5 1999/08/30 14:23:09 peter Exp $
 #
 
 DISTNAME=	ldapsdk_12311998
@@ -11,7 +11,7 @@ PKGNAME=	ldapsdk-1998.12.31
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.mozilla.org/pub/directory/c-sdk/ldap/
 
-MAINTAINER=	paul@FreeBSD.ORG
+MAINTAINER=	paul@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/mozilla
 MAKEFILE=	${WRKSRC}/directory/ldapsdk.mk

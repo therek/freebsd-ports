@@ -1,9 +1,9 @@
 # New ports collection makefile for: netscape3.language
 # Version required:	3.04
 # Date created:		17 November 1997
-# Whom:			SADA Kenji <sada@FreeBSD.ORG>
+# Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/netscape3.language/Makefile,v 1.8 1999/08/25 05:25:49 obrien Exp $
 #
 
 DISTNAME=	ja-netscape-3.04
@@ -14,7 +14,7 @@ DISTFILES=	NLS.tar.gz \
 		Netscape-JPfont \
 		Netscape-v301-ja_euc.ad.gz
 
-MAINTAINER=	sada@FreeBSD.ORG
+MAINTAINER=	sada@FreeBSD.org
 
 RUN_DEPENDS= \
 	${PREFIX}/bin/netscape:${PORTSDIR}/www/netscape3 \

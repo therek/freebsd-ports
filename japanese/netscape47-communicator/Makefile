@@ -3,12 +3,12 @@
 # Date created:		13 Mar 1998
 # Whom:			sada
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/netscape46-communicator/Makefile,v 1.12 1999/08/25 05:25:52 obrien Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../netscape4-communicator
 
-MAINTAINER=	sada@FreeBSD.ORG
+MAINTAINER=	sada@FreeBSD.org
 
 RUN_DEPENDS=	${PREFIX}/bin/${BROWSER}-${BROWSER_VERSION}:${PORTSDIR}/www/netscape46-${BROWSER}
 

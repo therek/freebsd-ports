@@ -3,7 +3,7 @@
 # Date created:                	9 Jan 1999
 # Whom:                        	bsdx
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/bchunk/Makefile,v 1.3 1999/08/31 01:59:33 peter Exp $
 #
 
 DISTNAME=	bchunk-1.0.0
@@ -12,7 +12,7 @@ MASTER_SITES=	http://hes.iki.fi/bchunk/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR= utils/disk-management
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=
 

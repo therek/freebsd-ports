@@ -3,7 +3,7 @@
 # Date created:		5 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/gawk/Makefile,v 1.15 1999/08/28 02:17:11 mharo Exp $
+# $FreeBSD: ports/japanese/gawk/Makefile,v 1.16 1999/08/28 02:42:18 mharo Exp $
 #
 
 DISTNAME=	gawk-2.15.6
@@ -12,7 +12,7 @@ CATEGORIES=	japanese textproc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gawk
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	bsd44

@@ -3,7 +3,7 @@
 # Date created:		2 November 1996
 # Whom:			fenner
 #
-# $FreeBSD$
+# $FreeBSD: ports/mbone/vat/Makefile,v 1.11 1999/08/25 07:09:45 obrien Exp $
 #
 
 DISTNAME=	vat-4.0b2
@@ -11,7 +11,7 @@ CATEGORIES=	mbone tk80
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/conferencing/vat/alpha-test/
 DISTFILES=	vatsrc-4.0b2.tar.gz
 
-MAINTAINER=	fenner@FreeBSD.ORG
+MAINTAINER=	fenner@FreeBSD.org
 
 GSM_DIR=	${.CURDIR}/../../audio/gsm
 GSM_WORK=	${WRKDIRPREFIX}${GSM_DIR}/work/gsm-1.0-pl10

@@ -3,7 +3,7 @@
 # Date created:         Tue Feb  7 12:02:49  1995
 # Whom:                 hsu
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.33 1999/08/25 06:13:39 obrien Exp $
 #
 
 DISTNAME=       MesaLib-3.0
@@ -13,7 +13,7 @@ MASTER_SITES= 	ftp://iris.ssec.wisc.edu/pub/Mesa/ \
 		ftp://ftp.fu-berlin.de/pub/unix/X11/graphics/Mesa/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} MesaDemos-3.0.tar.gz
 
-MAINTAINER=	jseger@FreeBSD.ORG
+MAINTAINER=	jseger@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/Mesa-3.0
 

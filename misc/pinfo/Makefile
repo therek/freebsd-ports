@@ -1,16 +1,16 @@
 # New ports collection makefile for:    pinfo
 # Version required:     0.5.5
 # Date created:         19 May 1999
-# Whom:                 Thomas Gellekum <tg@FreeBSD.ORG>
+# Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/pinfo/Makefile,v 1.3 1999/08/25 07:22:22 obrien Exp $
 #
 
 DISTNAME=       pinfo-0.5.5
 CATEGORIES=	misc
 MASTER_SITES=	http://zeus.polsl.gliwice.pl/~pborys/stable-version/
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	intl\.1:${PORTSDIR}/devel/gettext \
 		ncurses\.4:${PORTSDIR}/devel/ncurses

@@ -3,7 +3,7 @@
 # Date created:		6 February 1996
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/tclX80/Makefile,v 1.29 1999/08/25 06:35:38 obrien Exp $
 #
 
 DISTNAME=	tclX8.0.2
@@ -11,7 +11,7 @@ PKGNAME=	tclX-8.0.2
 CATEGORIES=	lang tcl80 tk80
 MASTER_SITES=	ftp://ftp.neosoft.com/pub/tcl/tclx-distrib/
 
-MAINTAINER=	jseger@FreeBSD.ORG
+MAINTAINER=	jseger@FreeBSD.org
 
 LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
 

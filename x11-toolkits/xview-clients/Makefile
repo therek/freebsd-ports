@@ -3,7 +3,7 @@
 # Date created:         22 November 1994
 # Whom:                 ljo (orig)
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/xview-clients/Makefile,v 1.20 1999/08/31 02:59:48 peter Exp $
 #
 
 DISTNAME=	xview3.2p1-X11R6
@@ -12,7 +12,7 @@ CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		${MASTER_SITE_XCONTRIB}
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 DEPENDS=	${PORTSDIR}/x11-toolkits/xview:install
 

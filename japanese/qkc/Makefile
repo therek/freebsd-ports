@@ -1,9 +1,9 @@
 # New ports collection makefile for:	qkcc
 # Version required:		1.0
 # Date created:			03 May 1996
-# Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
+# Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/qkc/Makefile,v 1.12 1999/08/25 05:26:41 obrien Exp $
 #
 
 DISTNAME=	qkcc100
@@ -12,7 +12,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.lab.kdd.co.jp/Usenet/fj.sources/1995/oct/ \
 		ftp://ftp.iis.u-tokyo.ac.jp/pub1/unix/Kanji/
 
-MAINTAINER=	max@FreeBSD.ORG
+MAINTAINER=	max@FreeBSD.org
 
 USE_ZIP=	yes
 NO_WRKSUBDIR=	yes

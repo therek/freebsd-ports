@@ -3,14 +3,14 @@
 # Date created:         4 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/ncftp2/Makefile,v 1.42 1999/08/25 05:55:19 obrien Exp $
 #
 
 DISTNAME=       ncftp-2.4.3
 CATEGORIES=	ftp
 MASTER_SITES=   ftp://ftp.ncftp.com/ncftp/
 
-MAINTAINER=	ache@FreeBSD.ORG
+MAINTAINER=	ache@FreeBSD.org
 
 GNU_CONFIGURE=  yes
 CONFIGURE_ENV=  ac_cv_func_getmaxyx=yes ac_cv_lib_readline=yes

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	donkey
 # Version required:		0.5
 # Date created:			17 Sep 1996
-# Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
+# Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/donkey/Makefile,v 1.3 1999/08/31 01:51:00 peter Exp $
 #
 
 DISTNAME=	donkey-0.5
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.aist-nara.ac.jp/pub/Security/tool/donkey/
 
-MAINTAINER=	max@FreeBSD.ORG
+MAINTAINER=	max@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 WRKSRC=			${WRKDIR}/${DISTNAME}/obj/FreeBSD

@@ -3,7 +3,7 @@
 # Date created:		19 December 1994
 # Whom:			janek
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/moxftp/Makefile,v 1.25 1999/08/25 05:55:17 obrien Exp $
 #
 
 DISTNAME=	moxftp-2.2
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://metalab.unc.edu/pub/X11/contrib/applications/ \
 		ftp://ftp.tk.mesh.ad.jp/pub/X/contrib/applications/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 REQUIRES_MOTIF=	yes
 GNU_CONFIGURE=	yes

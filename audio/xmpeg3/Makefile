@@ -3,7 +3,7 @@
 # Date created:		7 July 1997
 # Whom:			doconnor@ist.flinders.edu.au
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/xmpeg3/Makefile,v 1.11 1999/08/25 04:36:29 obrien Exp $
 #
 
 DISTNAME=	xmp3_1.0.0
@@ -12,7 +12,7 @@ CATEGORIES=	audio tk80
 MASTER_SITES=	ftp://ftp.funet.fi/pub/sci/audio/mpeg/amp/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	amp:${PORTSDIR}/audio/amp \
 		wish8.0:${PORTSDIR}/x11-toolkits/tk80

@@ -3,7 +3,7 @@
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/acroread/Makefile,v 1.14 1999/08/31 01:44:25 peter Exp $
 #
 
 DISTNAME=	ar302lin
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/3.x/ \
 		ftp://sunsite.cnlab-switch.ch/mirror/acrobatreader/unix/3.x/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	tg@FreeBSD.ORG
+MAINTAINER=	tg@FreeBSD.org
 
 RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 

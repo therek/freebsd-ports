@@ -1,9 +1,9 @@
 # New ports collection makefile for:    AbiWord
 # Version required:     0.5.5
 # Date created:         3 Mar 1999
-# Whom:                 Donald Burr <dburr@FreeBSD.ORG>
+# Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.4 1999/08/25 05:43:17 obrien Exp $
+# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.5 1999/08/28 01:57:08 mharo Exp $
 #
 
 DISTNAME=	abi-0.5.5-src
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.abisource.com/downloads/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} expat.tar.gz \
 		unixfonts-0.5.4.tar.gz
 
-MAINTAINER=	dburr@FreeBSD.ORG
+MAINTAINER=	dburr@FreeBSD.org
 
 BUILD_DEPENDS=	bash:${PORTSDIR}/shells/bash2
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \

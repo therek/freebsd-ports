@@ -3,13 +3,13 @@
 # Date created:		26 January 1998
 # Whom:			Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/wmweather/Makefile,v 1.6 1999/08/25 07:23:07 obrien Exp $
 
 DISTNAME=	wmWeather-1.31
 CATEGORIES=	misc windowmaker
 MASTER_SITES= 	http://nis-www.lanl.gov/~mgh/WindowMaker/
 
-MAINTAINER=	kris@FreeBSD.ORG
+MAINTAINER=	kris@FreeBSD.org
 
 LIB_DEPENDS=    Xpm.4:${PORTSDIR}/graphics/xpm
 

@@ -3,7 +3,7 @@
 # Date created:					June 2nd 1997
 # Whom:						jfitz
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/diablo/Makefile,v 1.8 1999/08/30 14:31:34 peter Exp $
 #
 
 DISTNAME=	diablo-1.15-rel
@@ -12,7 +12,7 @@ CATEGORIES=	news
 MASTER_SITES=	http://www.backplane.com/diablo/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	jfitz@FreeBSD.ORG
+MAINTAINER=	jfitz@FreeBSD.org
 
 BUILD_DEPENDS=	xmake:${PORTSDIR}/devel/xmake
 

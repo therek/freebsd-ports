@@ -1,12 +1,12 @@
 # New ports collection makefile for:	apel for emacs20
 # Version required:	9.20
 # Date created:		22 September 1998
-# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.ORG>
+# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/apel-emacs20/Makefile,v 1.7 1999/08/25 05:43:20 obrien Exp $
 #
 
-MAINTAINER=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 # This is a slave port.
 PORTCLASS=	slave

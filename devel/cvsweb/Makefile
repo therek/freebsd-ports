@@ -1,16 +1,16 @@
 # New ports collection makefile for:	cvsweb
 # Version required:	1.0
 # Date created:		27 Jun 1999
-# Whom:			SADA Kenji <sada@FreeBSD.ORG>
+# Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.5 1999/08/25 05:47:47 obrien Exp $
 #
 
 DISTNAME=	cvsweb-1.0
 CATEGORIES=	devel www
 MASTER_SITES=	http://www.freebsd.org/~fenner/cvsweb/
 
-MAINTAINER=	sada@FreeBSD.ORG
+MAINTAINER=	sada@FreeBSD.org
 
 NO_BUILD=	yes
 

@@ -1,9 +1,9 @@
 # New ports collection makefile for:    netrek
 # Version required:     COW 3.00pl0
 # Date created:         15 Mar 1999
-# Whom:                 Donald Burr <dburr@FreeBSD.ORG>
+# Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/netrek-COW3-bin/Makefile,v 1.2 1999/08/25 06:04:07 obrien Exp $
 #
 
 DISTNAME=	COW.3.00pl0.FreeBSD
@@ -12,7 +12,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://bigbang.astro.indiana.edu/pub/netrek/COW/COW-bin/
 EXTRACT_SUFX=	.gz
 
-MAINTAINER=	dburr@FreeBSD.ORG
+MAINTAINER=	dburr@FreeBSD.org
 
 USE_X_PREFIX=		YES
 NO_BUILD=		YES

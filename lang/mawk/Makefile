@@ -3,7 +3,7 @@
 # Date created:		24 Dec 1998
 # Whom:			Pedro F. Giffuni <giffunip@asme.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/mawk/Makefile,v 1.2 1999/08/25 06:34:54 obrien Exp $
 #
 
 DISTNAME=	mawk1.3.3
@@ -11,7 +11,7 @@ PKGNAME=	mawk-1.3.3
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.whidbey.net/pub/brennan/
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		$(WRKDIR)/$(PKGNAME)
 GNU_CONFIGURE=	yes

@@ -3,7 +3,7 @@
 # Date created:		21 June 1995
 # Whom:			Satoshi Asami (asami)
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/e93/Makefile,v 1.22 1999/08/25 05:43:34 obrien Exp $
 #
 
 DISTNAME=	e93-1.2r7X
@@ -12,7 +12,7 @@ CATEGORIES=	editors tcl80
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	editors
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tcl80.1:${PORTSDIR}/lang/tcl80
 

@@ -1,9 +1,9 @@
 # New ports collection makefile for:	p5-chart
 # Version required:	0.99b
 # Date Created:		8 April 1998
-# Whom:			Vanilla I. Shu <vanilla@FreeBSD.ORG>
+# Whom:			Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/p5-chart/Makefile,v 1.7 1999/08/25 06:14:34 obrien Exp $
 #
 
 DISTNAME=	Chart-0.99b

@@ -3,14 +3,14 @@
 # Date created:         Sun Apr 14 09:23:59 MET DST 1996
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/knews/Makefile,v 1.25 1999/08/30 14:31:39 peter Exp $
 #
 
 DISTNAME=	knews-1.0b.1
 CATEGORIES=	news
 MASTER_SITES=	http://www.matematik.su.se/~kjj/
 
-MAINTAINER=	andreas@FreeBSD.ORG
+MAINTAINER=	andreas@FreeBSD.org
 
 LIB_DEPENDS=    Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \

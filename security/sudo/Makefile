@@ -3,7 +3,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/sudo/Makefile,v 1.23 1999/08/31 01:51:52 peter Exp $
 #
 
 DISTNAME=	cu-sudo.v1.5.9p4
@@ -11,7 +11,7 @@ PKGNAME=	sudo-1.5.9.4
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cs.colorado.edu/pub/sysadmin/sudo/
 
-MAINTAINER=	mharo@FreeBSD.ORG
+MAINTAINER=	mharo@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/sudo.v1.5.9p4
 GNU_CONFIGURE=	yes

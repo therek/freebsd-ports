@@ -3,7 +3,7 @@
 # Date created:		22 November 1994
 # Whom:			ljo (orig)
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/xview/Makefile,v 1.12 1999/08/31 02:59:47 peter Exp $
 #
 
 DISTNAME=	xview3.2p1-X11R6
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}	\
 		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	libraries
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 IMAKEINCLUDE=	"-I${X11BASE}/lib/X11/config -I${WRKSRC}/config"

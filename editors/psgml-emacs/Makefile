@@ -3,14 +3,14 @@
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/psgml-emacs/Makefile,v 1.5 1999/08/25 05:44:08 obrien Exp $
 #
 
 DISTNAME=	psgml-1.1.6
 CATEGORIES=	editors elisp
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/sgml/ALPHA/
 
-MAINTAINER?=	shige@FreeBSD.ORG
+MAINTAINER=	shige@FreeBSD.org
 
 # distfile version
 PSGML_VER=	1.1.6

@@ -3,14 +3,14 @@
 # Date created:         10 July 1995
 # Whom:                 dom@myrddin.demon.co.uk
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.23 1999/08/31 02:51:13 peter Exp $
 #
 
 DISTNAME=	xscreensaver-3.17
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xscreensaver/
 
-MAINTAINER=	jseger@FreeBSD.ORG
+MAINTAINER=	jseger@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
