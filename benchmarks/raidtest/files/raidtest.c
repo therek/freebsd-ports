@@ -25,8 +25,9 @@
  */
 
 #include <sys/cdefs.h>
-__FBSDID("$FreeBSD: ports/benchmarks/raidtest/files/raidtest.c,v 1.1 2004/12/05 04:13:29 obrien Exp $");
+__FBSDID("$FreeBSD: ports/benchmarks/raidtest/files/raidtest.c,v 1.2 2004/12/08 19:40:33 pjd Exp $");
 
+#include <sys/param.h>
 #include <sys/types.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -43,6 +44,12 @@ __FBSDID("$FreeBSD: ports/benchmarks/raidtest/files/raidtest.c,v 1.1 2004/12/05 
 #include <sys/time.h>
 #include <sys/wait.h>
 
+#if __FreeBSD_version < 500028
+#warning FreeBSD 4.x
+typedef	u_quad_t	uintmax_t;
+typedef	quad_t		intmax_t;
+#define	strtoumax	strtouq
+#endif
 
 #define	DEFAULT_DATA_FILE	"raidtest.data"
 #define	MAX_IO_LENGTH		131072
