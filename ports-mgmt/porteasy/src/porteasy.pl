@@ -26,14 +26,14 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.43 2004/05/10 11:11:16 des Exp $
+# $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.44 2004/05/24 13:10:16 des Exp $
 #
 
 use strict;
 use Fcntl;
 use Getopt::Long;
 
-my $VERSION	= "2.7.15";
+my $VERSION	= "2.7.16";
 my $COPYRIGHT	= "Copyright (c) 2000-2004 Dag-Erling Smørgrav. " .
 		  "All rights reserved.";
 
@@ -532,7 +532,8 @@ sub get_installed() {
 	or bsd::err(1, "can't read database directory");
     foreach $port (readdir(DIR)) {
 	next if ($port eq "." || $port eq ".." || ! -d "$dbdir/$port");
-	if (!defined($origin = get_origin($port))) {
+	$origin = get_origin($port);
+	if (!defined($origin) || !$origin) {
 	    bsd::warnx("$port has no known origin");
 	} else {
 	    if ($installed{$origin}) {
@@ -869,14 +870,20 @@ sub show_port_plist($) {
     local *FILE;		# File handle
     my $file;			# File name
     my %files;			# Files to list
+    my %plist_sub;		# Substitution list
     my $prefix;			# Prefix
 
+    foreach (split(' ', capture(\&make, ($port, "-VPLIST_SUB")))) {
+	next unless m/^(\w+)=\"?(.*?)\"?$/;
+	$plist_sub{$1} = $2;
+    }
     $prefix = capture(\&make, ($port, "-VPREFIX"));
     chomp($prefix);
     sysopen(FILE, find_port_file($port, "pkg-plist"), O_RDONLY)
 	or bsd::err(1, "can't read packing list for $port");
     while (<FILE>) {
 	chomp();
+	s/\%\%(\w+)\%\%/$plist_sub{$1}/g;
 	$file = undef;
 	if (m/^[^\@]/) {
 	    $file = $_;
