@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.46 2000/05/17 23:15:07 will Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.47 2000/05/29 01:01:22 will Exp $
 #
 
 PORTNAME=	kdelibs
@@ -34,6 +34,7 @@ USE_GMAKE=	yes
 MAKE_ENV=	SOMAJOR="${SOMAJOR}" SOMINOR="${SOMINOR}" \
 PLIST_SUB+=	LIBVER="${SOMAJOR}"
 
+post-install:
 .for LIB in DCOP kab kdecore kdesu kdeui kfile kformula khtml kio kjs kmid \
 	    kparts kspell ksycoca kwrite
 	@${LN} -sf ${PREFIX}/lib/lib${LIB}.so.${SOMAJOR} ${PREFIX}/lib/lib${LIB}.so
