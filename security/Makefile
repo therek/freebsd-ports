@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.178 2001/03/31 01:51:59 will Exp $
+# $FreeBSD: ports/security/Makefile,v 1.179 2001/03/31 02:17:37 will Exp $
 #
 
     SUBDIR += aafid2
@@ -113,6 +113,7 @@
     SUBDIR += pgp6
     SUBDIR += pgpdump
     SUBDIR += pgpgpg
+    SUBDIR += pgpin
     SUBDIR += pidentd
     SUBDIR += pks
     SUBDIR += pktsuckers
