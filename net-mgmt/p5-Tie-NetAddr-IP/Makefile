@@ -2,11 +2,11 @@
 # Date created:				29 March 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/net/p5-Tie-NetAddr-IP/Makefile,v 1.2 2001/04/02 20:08:39 asmodai Exp $
+# $FreeBSD: ports/net/p5-Tie-NetAddr-IP/Makefile,v 1.3 2001/06/12 19:25:14 tobez Exp $
 #
 
 PORTNAME=	Tie-NetAddr-IP
-PORTVERSION=	1.00
+PORTVERSION=	1.50
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Tie
