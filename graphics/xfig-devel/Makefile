@@ -2,14 +2,14 @@
 # Date created:		4 January 1995
 # Whom:			roberto
 #
-# $FreeBSD: ports/graphics/xfig/Makefile,v 1.36 2000/08/03 09:24:59 asami Exp $
+# $FreeBSD: ports/graphics/xfig/Makefile,v 1.37 2000/09/05 18:34:50 asami Exp $
 #
 
 PORTNAME=	xfig
 PORTVERSION=	3.2.3c
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://www-epb.lbl.gov/xfig/ \
-		${MASTER_SITE_XCONTRIB}
+MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
+		ftp://www-epb.lbl.gov/xfig/libraries/
 MASTER_SITE_SUBDIR=	applications/drawing_tools/xfig
 DISTNAME=	${PORTNAME}.${PORTVERSION}.full
 
