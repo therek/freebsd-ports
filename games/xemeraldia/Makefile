@@ -2,7 +2,7 @@
 # Date created:		22 Mar 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/xemeraldia/Makefile,v 1.17 1999/12/10 19:24:55 steve Exp $
+# $FreeBSD: ports/games/xemeraldia/Makefile,v 1.18 2000/04/14 12:27:18 asami Exp $
 #
 
 PORTNAME=	xemeraldia
@@ -21,8 +21,11 @@ USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes
 
 post-install:
+	@${CHOWN} root:games ${PREFIX}/bin/xemeraldia
+	@${CHMOD} 2755 ${PREFIX}/bin/xemeraldia
 	@${MKDIR} ${PREFIX}/lib/X11/xemeraldia
 	@${TOUCH} ${PREFIX}/lib/X11/xemeraldia/xemeraldia.scores
-	@${CHMOD} 666 ${PREFIX}/lib/X11/xemeraldia/xemeraldia.scores
+	@${CHOWN} root:games ${PREFIX}/lib/X11/xemeraldia/xemeraldia.scores
+	@${CHMOD} 664 ${PREFIX}/lib/X11/xemeraldia/xemeraldia.scores
 
 .include <bsd.port.mk>
