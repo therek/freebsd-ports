@@ -2,11 +2,11 @@
 # Date created:				17 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtkextra/Makefile,v 1.6 2000/12/21 16:27:19 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkextra
-PORTVERSION=	0.99.12
+PORTVERSION=	0.99.13
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://gtkextra.sourceforge.net/src/ \
