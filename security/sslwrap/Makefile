@@ -2,11 +2,11 @@
 # Date created:		1999 november 7.
 # Whom:			Zahemszky, Gabor <ZGabor at CoDe dot HU>
 #
-# $FreeBSD: ports/security/sslwrap/Makefile,v 1.5 2000/04/09 18:30:35 cpiazza Exp $
+# $FreeBSD: ports/security/sslwrap/Makefile,v 1.6 2000/09/22 01:59:04 kris Exp $
 #
 
 PORTNAME=	sslwrap
-PORTVERSION=	2.0.5
+PORTVERSION=	2.0.6
 CATEGORIES=	security
 MASTER_SITES=	http://www.rickk.com/sslwrap/
 DISTNAME=	${PORTNAME}
@@ -15,7 +15,7 @@ MAINTAINER=	ZGabor@CoDe.HU
 
 USE_OPENSSL=	YES
 
-WRKSRC=		${WRKDIR}/sslwrap205
+WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION:S/.//g}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sslwrap ${PREFIX}/bin/sslwrap
