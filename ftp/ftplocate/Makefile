@@ -3,7 +3,7 @@
 # Date created:				7 December 1999
 # Whom:					tung@turtle.ee.ncku.edu.tw
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/ftplocate/Makefile,v 1.1 1999/12/25 05:04:25 steve Exp $
 #
 
 DISTNAME=	ftplocate-1.50
@@ -20,7 +20,8 @@ NO_BUILD=	yes
 do-install:
 	${INSTALL} -d ${PREFIX}/www/cgi-bin/ftplocate \
 		${PREFIX}/www/cgi-bin/ftplocate/index \
-		${PREFIX}/www/cgi-bin/ftplocate/desc
+		${PREFIX}/www/cgi-bin/ftplocate/desc \
+		${PREFIX}/www/data
 	${INSTALL} -o nobody -g nobody -m 755 -d ${PREFIX}/www/cgi-bin/ftplocate/cache
 	cd ${WRKSRC}; \
 	${INSTALL_DATA} \
