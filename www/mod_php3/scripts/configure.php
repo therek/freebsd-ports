@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.108 2001/03/10 13:19:57 dirk Exp $
+# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.109 2001/03/23 23:29:29 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -22,6 +22,7 @@ MySQL		"MySQL database support" ON \
 PostgreSQL	"PostgreSQL database support" OFF \
 SybaseDB	"Sybase/MS-SQL database support (DB-lib)" OFF \
 SybaseCT	"Sybase/MS-SQL database support (CT-lib)" OFF \
+Interbase	"Interbase 6 database support (Firebird)" OFF \
 dBase		"dBase database support" OFF \
 OpenLDAP	"OpenLDAP support" OFF \
 SNMP		"SNMP support" OFF \
@@ -126,6 +127,11 @@ while [ "$1" ]; do
 				exit 1
 			fi
 			SYBASECT=1
+			;;
+		\"Interbase\")
+			echo "LIB_DEPENDS+=	gds.1:\${PORTSDIR}/databases/firebird"
+			echo "CONFIGURE_ARGS+=--with-interbase=\${PREFIX}/firebird"
+			LIBS="${LIBS} -L\${PREFIX}/firebird/lib"
 			;;
 		\"dBase\")
 			echo "CONFIGURE_ARGS+=--with-dbase"
