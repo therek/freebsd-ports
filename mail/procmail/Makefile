@@ -3,17 +3,17 @@
 # Date created:		24 September 1994
 # Whom:			adam
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/procmail/Makefile,v 1.27 1999/08/25 06:50:44 obrien Exp $
 #
 
 DISTNAME=       procmail-3.13.1
-PKGNAME=        procmail-3.13.1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.procmail.org/pub/procmail/ \
 		ftp://ftp.informatik.rwth-aachen.de/pub/packages/procmail/
-INSTALL_TARGET= install-suid install.man
 
 MAINTAINER=     ache@FreeBSD.ORG
+
+INSTALL_TARGET= install-suid install.man
 
 # It asks for list af directories to do test for file locking
 # (defaults to /tmp and ".", so return should suffice in most cases).
