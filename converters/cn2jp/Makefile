@@ -2,7 +2,7 @@
 # Date created:				09 December 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/converters/cn2jp/Makefile,v 1.2 2001/01/08 02:39:31 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cn2jp
@@ -12,7 +12,7 @@ CATEGORIES=	converters chinese japanese
 MASTER_SITES=	http://w3.sys.es.osaka-u.ac.jp/~seke/software/cn2jp/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	leeym@cae.ce.ntu.edu.tw
+MAINTAINER=	leeym@FreeBSD.org
 
 INSTALLS_SHLIB=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
