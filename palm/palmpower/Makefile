@@ -2,11 +2,11 @@
 # Date Created:				22 Aug 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/palm/palmpower/Makefile,v 1.1 2000/10/12 12:19:11 jeh Exp $
 #
 
 PORTNAME=	palmpower
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	palm
 MASTER_SITES=	http://www.fh-wilhelmshaven.de/~akcaagaa/palmpower/files/
 
