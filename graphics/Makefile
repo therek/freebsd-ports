@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.233 2000/10/18 10:00:56 sobomax Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.234 2000/10/19 11:56:44 trevor Exp $
 #
 
     SUBDIR += 4va
@@ -9,6 +9,7 @@
     SUBDIR += ImageMagick
     SUBDIR += Mesa3
     SUBDIR += aalib
+    SUBDIR += acidwarp
     SUBDIR += aero
     SUBDIR += aview
     SUBDIR += avifile
