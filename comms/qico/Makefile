@@ -2,27 +2,33 @@
 # Date created:		13 Jan 2000
 # Whom:			Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/comms/qico/Makefile,v 1.3 2000/10/12 21:18:04 ade Exp $
+# $FreeBSD: ports/comms/qico/Makefile,v 1.4 2000/11/02 13:45:05 jedgar Exp $
 #
 
 PORTNAME=	qico
-PORTVERSION=	0.48.1
+PORTVERSION=	0.48.2
 CATEGORIES=	comms
 MASTER_SITES=	http://lev.serebryakov.spb.ru/download/0.48/
 
 MAINTAINER=	dsh@vlink.ru
 
 USE_GMAKE=	yes
-MAKE_ENV+=	SH=${SH} AWK=${AWK} DEFS="${DEFS}"
+MAKE_ENV+=	SH=${SH} AWK=${AWK} MORDA="${MORDA}" DEFS="${DEFS}"
 
 .if defined(WITH_AMIGA4D)
 DEFS+=		-DAMIGA4D
 .endif
 
+.if !defined(WITHOUT_MORDA)
+MORDA=		1
+.endif
+
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/qico.conf.sample ${PREFIX}/etc/
 	${INSTALL_PROGRAM} ${WRKSRC}/src/qico ${PREFIX}/libexec/
+.if !defined(WITHOUT_MORDA)
 	${INSTALL_PROGRAM} ${WRKSRC}/src/qcc ${PREFIX}/bin/
+.endif
 
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/qico
