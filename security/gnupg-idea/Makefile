@@ -2,7 +2,7 @@
 # Date created:		10 May, 2000 
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/security/gnupg-rsa/Makefile,v 1.3 2000/07/04 02:44:57 kuriyama Exp $
+# $FreeBSD: ports/security/gnupg-rsa/Makefile,v 1.4 2000/09/16 19:28:06 ade Exp $
 #
 
 PORTNAME=	gnupg-rsa
@@ -45,7 +45,13 @@ do-extract:
 	@${RM} -rf ${WRKDIR}
 	@${MKDIR} ${WRKDIR}
 .for i in ${DISTFILES}
-	${CP} ${_DISTDIR}/${i} ${WRKSRC}/${i}
+	@${CP} ${_DISTDIR}/${i} ${WRKSRC}/${i}
+.endfor
+
+do-patch:
+.for i in ${CONTRIB}
+	@${ECHO_MSG} "===>  Applying extra patch ${i}.c"
+	@${PATCH} ${PATCH_ARGS} < ${PATCHDIR}/patch-${i}.c
 .endfor
 
 do-build:
