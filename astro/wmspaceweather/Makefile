@@ -2,28 +2,22 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/wmspaceweather/Makefile,v 1.5 2000/06/20 21:45:55 cpiazza Exp $
+# $FreeBSD: ports/astro/wmspaceweather/Makefile,v 1.6 2000/08/03 09:22:20 asami Exp $
 
 PORTNAME=	wmspaceweather
 PORTVERSION=	1.04
 CATEGORIES=	astro windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
-DISTNAME=	wmSpaceWeather-1.04
+DISTNAME=	wmSpaceWeather-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmSpaceWeather
 
-USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 ALL_TARGET=	clean all
 
 MAN1=	wmSpaceWeather.1
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/wmSpaceWeather ${PREFIX}/bin
-	${INSTALL_SCRIPT} ${WRKSRC}/GetKp ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/wmSpaceWeather.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
