@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.316 2000/07/24 06:08:01 dburr Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.317 2000/07/27 10:03:55 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -262,6 +262,7 @@
     SUBDIR += sdcc
     SUBDIR += sdl
     SUBDIR += sdl-devel
+    SUBDIR += sdts++
     SUBDIR += sfio
     SUBDIR += sh-rtems-binutils
     SUBDIR += sh-rtems-chill
