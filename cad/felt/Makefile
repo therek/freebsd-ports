@@ -3,12 +3,12 @@
 # Date created:		19 October 1996
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD$
+# $FreeBSD: ports/cad/felt/Makefile,v 1.13 1999/08/25 04:52:29 obrien Exp $
 #
 
 DISTNAME=	felt-3.02
 CATEGORIES=	cad
-MASTER_SITES=	http://www-cse.ucsd.edu/users/atkinson/FElt/Binaries/ \
+MASTER_SITES=	http://symphony.clarku.edu/atkinson/felt/Binaries/ \
 		ftp://ftp.isd.uni-stuttgart.de/pub/src/FEM/FElt/
 EXTRACT_SUFX=	.src.tar.gz
 
