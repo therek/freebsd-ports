@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.554 2004/10/31 15:03:09 nork Exp $
+# $FreeBSD: ports/MOVED,v 1.555 2004/10/31 21:56:06 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1298,3 +1298,4 @@ irc/liece|irc/riece|2004-10-31|Upgrade to irc/riece
 irc/liece-dcc|irc/riece|2004-10-31|Integrated into irc/riece
 irc/liece-emacs20|irc/rieceemacs20|2004-10-31|Upgrade to irc/riece-emacs20
 japanese/ndtpd|japanese/ebnetd|2004-10-31|successor project
+net/dcgui|net/valknut|2004-10-31|renamed
