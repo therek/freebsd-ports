@@ -2,23 +2,23 @@
 # Date created:         15 July 1998
 # Whom:                 Chuck Robey (chuckr@freebsd.org)
 #
-# $FreeBSD: ports/print/a2ps-letter/Makefile,v 1.36 2000/06/16 21:51:51 asami Exp $
+# $FreeBSD: ports/print/a2ps-letter/Makefile,v 1.37 2000/06/29 07:02:42 obrien Exp $
 #
 
 PORTNAME=	a2ps
-PORTVERSION=	4.12
+PORTVERSION=	4.13
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		ftp://ftp.enst.fr/pub/unix/a2ps/
 MASTER_SITE_SUBDIR=	chuckr
 PKGNAMESUFFIX=	-${PAPERSIZE}
 DISTFILES=	a2ps-${PORTVERSION}${EXTRACT_SUFX} sheets.map
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	chuckr@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
-EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAN1=		a2ps.1 ogonkify.1 card.1 psmandup.1 fixps.1 pdiff.1 psset.1
 
 PAPERSIZE?=	letter
