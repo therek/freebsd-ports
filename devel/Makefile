@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.569 2001/06/22 07:23:39 kevlo Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.570 2001/06/22 22:16:29 dd Exp $
 #
 
     SUBDIR += ElectricFence
@@ -192,6 +192,7 @@
     SUBDIR += libdlmalloc
     SUBDIR += libdsp
     SUBDIR += libelf
+    SUBDIR += libevent
     SUBDIR += libffi
     SUBDIR += libformat
     SUBDIR += libg++
