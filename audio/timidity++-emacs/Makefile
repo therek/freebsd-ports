@@ -2,11 +2,11 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++-emacs/Makefile,v 1.5 2000/04/20 10:10:15 mharo Exp $
+# $FreeBSD: ports/audio/timidity++-emacs/Makefile,v 1.6 2000/04/27 09:53:51 knu Exp $
 #
 
 PORTNAME=	timidity++
-PORTVERSION=	2.9.2
+PORTVERSION=	2.9.3
 CATEGORIES=	audio
 MASTER_SITES=	http://www.goice.co.jp/member/mo/timidity/dist/
 PKGNAMESUFFIX=	-${INTERFACE}
