@@ -2,11 +2,11 @@
 # Date created:		24 Nov 1998
 # Whom:			mac@jp.freebsd.org
 #
-# $FreeBSD: ports/x11-wm/windowmaker-i18n/Makefile,v 1.80 2000/10/17 20:04:01 nakai Exp $
+# $FreeBSD: ports/x11-wm/windowmaker-i18n/Makefile,v 1.81 2001/01/11 00:18:30 sumikawa Exp $
 #
 
 PORTNAME=	windowmaker-i18n
-PORTVERSION=	0.63.1
+PORTVERSION=	0.64.0
 # PORTREVISION=
 CATEGORIES=	x11-wm windowmaker
 MASTER_SITES=	${MASTER_SITE_WINDOWMAKER}
@@ -33,7 +33,7 @@ USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	X11BASE=${X11BASE}  LOCALBASE=${LOCALBASE} \
 		CPPFLAGS="-I${LOCALBASE}/include" LIBS="-L${LOCALBASE}/lib" \
-		LINGUAS="bg cs da de el es fi fr gl hr hu it ja_JP.EUC ko nl no pl pt ro ru se sk tr zh_CN zh_TW.Big5"
+		LINGUAS="cs de es fr gl it ja_JP.EUC ko nl no pt ru sv tr fi hr el pl ro da zh_TW.Big5 zh_CN sk bg hu"
 CONFIGURE_ARGS=	--with-pixmapdir=${PREFIX}/include/X11/pixmaps \
 	--with-nlsdir=${PREFIX}/share/locale \
 	--with-libs-from="-L${LOCALBASE}/lib" \
