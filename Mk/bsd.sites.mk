@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.10 2000/09/20 18:18:23 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.11 2000/09/21 08:36:26 sobomax Exp $
 #
 
 MASTER_SITE_XCONTRIB+=	\
@@ -138,7 +138,6 @@ MASTER_SITE_GNOME+=	\
 MASTER_SITE_AFTERSTEP+=	\
 	ftp://ftp.afterstep.org/%SUBDIR%/ \
 	ftp://ftp.digex.net/pub/X11/window-managers/afterstep/%SUBDIR%/ \
-	ftp://ftp.alpha1.net/pub/mirrors/ftp.afterstep.org/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/X11/AfterStep/%SUBDIR%/ \
 	ftp://ftp.math.uni-bonn.de/pub/mirror/ftp.afterstep.org/pub/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/X/AfterStep/%SUBDIR%/
