@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.98 2000/12/11 22:56:18 dirk Exp $
+# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.99 2000/12/24 10:56:11 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -20,7 +20,6 @@ pdflib		"pdflib support (implies zlib)" OFF \
 IMAP		"IMAP support" OFF \
 MySQL		"MySQL database support" ON \
 PostgreSQL	"PostgreSQL database support" OFF \
-mSQL		"mSQL database support" OFF \
 SybaseDB	"Sybase/MS-SQL database support (DB-lib)" OFF \
 SybaseCT	"Sybase/MS-SQL database support (CT-lib)" OFF \
 dBase		"dBase database support" OFF \
@@ -98,10 +97,6 @@ while [ "$1" ]; do
 		\"PostgreSQL\")
 			echo "LIB_DEPENDS+=	pq.2:\${PORTSDIR}/databases/postgresql7"
 			echo "CONFIGURE_ARGS+=--with-pgsql=\${PREFIX}/pgsql"
-			;;
-		\"mSQL\")
-			echo "BUILD_DEPENDS+=	msql:\${PORTSDIR}/databases/msql"
-			echo "CONFIGURE_ARGS+=--with-msql=\${PREFIX}"
 			;;
 		\"SybaseDB\")
 			echo "LIB_DEPENDS+=	sybdb.0:\${PORTSDIR}/databases/freetds"
