@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.567 2001/07/03 02:43:47 lioux Exp $
+# $FreeBSD: ports/net/Makefile,v 1.568 2001/07/04 01:07:05 dd Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -302,6 +302,7 @@
     SUBDIR += radiusclient
     SUBDIR += radiusd-cistron
     SUBDIR += radreport
+    SUBDIR += radvd
     SUBDIR += ratoolset
     SUBDIR += rboot
     SUBDIR += rdesktop
