@@ -2,7 +2,7 @@
 # Date created:		11-Oct-99
 # Whom:			johnh@isi.edu
 #
-# $FreeBSD: ports/sysutils/lavaps/Makefile,v 1.7 2000/12/05 16:38:12 roam Exp $
+# $FreeBSD: ports/sysutils/lavaps/Makefile,v 1.8 2001/01/16 17:32:35 sobomax Exp $
 #
 
 PORTNAME=	lavaps
@@ -13,6 +13,9 @@ MASTER_SITES=	http://www.isi.edu/~johnh/SOFTWARE/LAVAPS/
 MAINTAINER=	johann@egenetics.com
 
 LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83
+
+BROKEN=		Changes to process info structs returned by kernel renders \
+		lavaps unbuildable - author has been made aware of this.
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib" CPPFLAGS="-I${LOCALBASE}/include"
