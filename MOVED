@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.148 2003/06/06 16:24:14 lioux Exp $
+# $FreeBSD: ports/MOVED,v 1.149 2003/06/07 17:55:40 ijliao Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -370,3 +370,4 @@ x11-wm/bbapm|sysutils/bbapm|2003-06-03|accurate category
 x11-wm/icemc|misc/icemc|2003-06-03|accurate category
 net/bittorrent|net/py-bittorrent|2003-06-06|duplicate entry
 testproc/py-trex||2003-06-08|part of py-xml
+devel/pear-install|devel/pear-PEAR|2003-06-08|merged
