@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.11 1999/12/28 04:19:58 wiz Exp $
-# $FreeBSD: ports/audio/festival/Makefile,v 1.6 2000/11/13 09:37:46 asami Exp $
+# $FreeBSD: ports/audio/festival/Makefile,v 1.7 2000/12/31 12:01:19 trevor Exp $
 #
 
 PORTNAME=	festival
@@ -106,14 +106,14 @@ pre-patch:
 post-patch:
 	${CP} ${FILESDIR}/top-Makefile ${WRKSRC}/Makefile
 	${CP} ${FILESDIR}/FreeBSD.mak ${SPEECHTOOLS}/config/systems/FreeBSD.mak
-	${CP} ${SPEECHTOOLS}/config/systems/ix86_FreeBSD3.3.mak \
-		${SPEECHTOOLS}/config/systems/ix86_FreeBSD3.4.mak
-	${CP} ${SPEECHTOOLS}/config/systems/ix86_FreeBSD3.3.mak \
-		${SPEECHTOOLS}/config/systems/ix86_FreeBSD3.5.mak
-	${CP} ${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.0.mak \
-		${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.1.mak
-	${CP} ${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.0.mak \
-		${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.2.mak
+.for i in 4 5
+	${LN} -fs ${SPEECHTOOLS}/config/systems/ix86_FreeBSD3.3.mak \
+		${SPEECHTOOLS}/config/systems/ix86_FreeBSD3.${i}.mak
+.endfor
+.for i in 1 2 3 4 5 6 7 8 9
+	${LN} -fs ${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.0.mak \
+		${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.${i}.mak
+.endfor
 	${CP} ${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.0.mak \
 		${SPEECHTOOLS}/config/systems/ix86_FreeBSD5.0.mak
 
