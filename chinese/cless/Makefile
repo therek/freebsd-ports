@@ -3,16 +3,13 @@
 # Date created:			  Sat Aug 10, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/chinese/cless/Makefile,v 1.12 2000/03/22 00:28:22 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cless
 PORTVERSION=	290
 CATEGORIES=	chinese misc
-MASTER_SITES=	ftp://ftp.ifcss.org/pub/software/unix/c-utils/  \
-		ftp://ftp.cuhk.hk/pub/chinese/ifcss/software/unix/c-utils/ \
-		ftp://ftp.edu.tw/Chinese/ifcss/software/unix/c-utils/
-
+MASTER_SITES=	ftp://ftp.cuhk.hk/pub/chinese/ifcss/software/unix/c-utils/
 MAINTAINER=	obrien@FreeBSD.org
 
 GNU_CONFIGURE=	yes
