@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.284 2001/03/17 16:35:33 vanilla Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.285 2001/03/20 02:32:40 will Exp $
 #
 
     SUBDIR += 4va
@@ -230,6 +230,7 @@
     SUBDIR += wmicons
     SUBDIR += xanim
     SUBDIR += xaos
+    SUBDIR += xawtv
     SUBDIR += xbarcode
     SUBDIR += xbmbrowser
     SUBDIR += xdgagrab
