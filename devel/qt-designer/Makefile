@@ -2,17 +2,17 @@
 # Date created:				Sat Feb  3 23:04:41 EST 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/qt-designer/Makefile,v 1.1 2001/02/04 04:43:12 will Exp $
+# $FreeBSD: ports/devel/qt-designer/Makefile,v 1.2 2001/03/11 01:14:38 will Exp $
 #
 
-MASTERDIR=	${.CURDIR}/../../x11-toolkits/qt22
+MASTERDIR=	${.CURDIR}/../../x11-toolkits/qt23
 
 PORTNAME=	qt-designer
 CATEGORIES=	devel
 
 .include "${MASTERDIR}/Makefile"
 
-LIB_DEPENDS+=	qt2.4:${PORTSDIR}/x11-toolkits/qt22
+LIB_DEPENDS+=	qt2.4:${PORTSDIR}/x11-toolkits/qt23
 
 WRKSRC=		${WRKDIR}/qt-${PORTVERSION}
 PATCHDIR=	${.CURDIR}/files
