@@ -2,7 +2,7 @@
 # Date created:		03 Feb 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/graphviz/Makefile,v 1.21 2001/02/28 15:03:55 kevlo Exp $
+# $FreeBSD: ports/graphics/graphviz/Makefile,v 1.22 2001/03/06 14:36:05 sf Exp $
 #
 
 PORTNAME=	graphviz
@@ -38,10 +38,14 @@ MAN3=		agraph.3 cdt.3 graph.3 pathplan.3
 MANN=		gdtclft.n tcldgl.n tcldgr.n tcldot.n tkspline.n
 
 PORTDOCS=	dotguide.pdf dottyguide.pdf gd.html leftyguide.pdf \
-		neatoguide.pdf tcldot.html
+		neatoguide.pdf tcldot.html Dot.ref
 
 post-patch:
 	@cd ${WRKSRC} && aclocal && autoheader && libtoolize --force
+
+# the tarball contains object files!
+post-configure:
+	@cd ${WRKSRC} && ${GMAKE} clean
 
 pre-build:
 	@cd ${WRKSRC}/cdt && ./iffe - set cc ${CC} ${CFLAGS} : run \
