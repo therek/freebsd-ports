@@ -2,7 +2,7 @@
 # Date created:        15 March 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/news/dejasearch/Makefile,v 1.10 2000/04/09 17:32:46 cpiazza Exp $
+# $FreeBSD: ports/news/dejasearch/Makefile,v 1.11 2000/04/24 07:45:32 kris Exp $
 #
 
 PORTNAME=	dejasearch
@@ -12,6 +12,8 @@ MASTER_SITES=	http://homemade.hypermart.net/dejasearch/ \
 		http://homemade.virtualave.net/dejasearch/
 
 MAINTAINER=	kris@FreeBSD.org
+
+FORBIDDEN=	"Does not work with new google deja service"
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP/UserAgent.pm:${PORTSDIR}/www/p5-libwww
 
