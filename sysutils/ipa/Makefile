@@ -2,11 +2,11 @@
 # Date created:				2 December 2000
 # Whom:					Andrey Simonenko
 #
-# $FreeBSD: ports/sysutils/ipa/Makefile,v 1.6 2001/03/09 12:18:38 sf Exp $
+# $FreeBSD: ports/sysutils/ipa/Makefile,v 1.7 2001/03/28 13:14:10 kevlo Exp $
 #
 
 PORTNAME=	ipa
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.simon.org.ua/ipa/
 
