@@ -2,16 +2,16 @@
 # Date created:				29 Jun 2001
 # Whom:					kapr@crosswinds.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/pscyr/Makefile,v 1.1 2001/07/02 09:04:24 demon Exp $
 #
 
 PORTNAME=	PSCyr
-PORTVERSION=	0.4c
+PORTVERSION=	0.4c1
 CATEGORIES=	russian print
 MASTER_SITES=	ftp://mch5.chem.msu.su/pub/russian/psfonts/ \
 		ftp://ftp.vsu.ru/pub/tex/font-packs/pscyr/
-DISTFILES=	${PORTNAME}-${PORTVERSION}-tex.tar.gz \
-		${PORTNAME}-${PORTVERSION}-type1.tar.gz
+DISTFILES=	${PORTNAME}-${PORTVERSION:S/1/-patch1/}-tex.tar.gz \
+		${PORTNAME}-${PORTVERSION:S/1/-patch1/}-type1.tar.gz
 
 MAINTAINER=	kapr@crosswinds.net
 
