@@ -2,18 +2,19 @@
 # Date created:                         20 May 1998
 # Whom:                                 ache
 #
-# $FreeBSD: ports/www/WebMagick/Makefile,v 1.17 2001/01/16 17:32:52 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	WebMagick
-PORTVERSION=	1.46
-PORTREVISION=   1
+PORTVERSION=    2.0p4
 CATEGORIES=	www graphics
-MASTER_SITES=	ftp://ftp.simplesystems.org/pub/WebMagick/
-
-LIB_DEPENDS=	Magick.5:${PORTSDIR}/graphics/ImageMagick
+MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=     webmagick
+DISTNAME=       ${PORTNAME}-2.0pre4
 
 MAINTAINER=	ache@freebsd.org
+
+LIB_DEPENDS=	Magick.5:${PORTSDIR}/graphics/ImageMagick
 
 USE_PERL5=	yes
 GNU_CONFIGURE=	yes
@@ -35,5 +36,7 @@ post-install:
 		${INSTALL_DATA} webmagickrc ${PREFIX}/etc; \
 	fi; \
 	${INSTALL_DATA} webmagickrc ${PREFIX}/etc/webmagickrc.dist
+	cd ${WRKSRC}/icons; \
+		${INSTALL_DATA} blue_help.gif ${PREFIX}/www/data/webmagick/blue_c.gif
 
 .include <bsd.port.mk>
