@@ -2,7 +2,7 @@
 # Date created:				17 July 2000
 # Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/fribidi/Makefile,v 1.1 2000/07/17 10:26:49 sobomax Exp $
+# $FreeBSD: ports/textproc/fribidi/Makefile,v 1.2 2000/07/18 08:02:11 sobomax Exp $
 #
 
 PORTNAME=	fribidi
@@ -10,15 +10,15 @@ PORTVERSION= 	0.1.12
 CATEGORIES=	textproc devel
 MASTER_SITES=	http://imagic.weizmann.ac.il/~dov/freesw/FriBidi/
 
+PATCH_SITES=	ftp://ftp.gtk.org/pub/gtk/v1.3/dependencies/
+PATCHFILES=	fribidi-0.1.12-glib2.patch
+PATCH_DIST_STRIP=	-p1
+
 MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	glib-1.3.1:${PORTSDIR}/devel/glib13
 
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib-config-2.0
-
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}"
 
 .include <bsd.port.mk>
