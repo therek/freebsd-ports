@@ -2,7 +2,7 @@
 # Date created:         25 Jan 1995
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/print/tr2latex/Makefile,v 1.13 2000/04/09 17:41:26 cpiazza Exp $
+# $FreeBSD: ports/print/tr2latex/Makefile,v 1.14 2000/04/09 17:50:44 cpiazza Exp $
 #
 
 PORTNAME=	tr2latex
@@ -16,12 +16,17 @@ MAINTAINER=	ports@FreeBSD.org
 
 IGNOREFILES=	${DISTNAME}${EXTRACT_SUFX}
 
+MAKEFILE=	Makefile.unix
+MAKE_ARGS=	CC="${CC}" CFLAGS="${CFLAGS}"
+ALL_TARGET=	tr2latex
 MAN1=		tr2latex.1
 
-post-extract:
-	${CP} ${WRKSRC}/Makefile.unix ${WRKSRC}/Makefile
-
-pre-install:
-	${MKDIR} ${PREFIX}/share/texmf/tex/latex/misc
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/tr2latex ${PREFIX}/bin/tr2latex
+	${INSTALL_MAN} ${WRKSRC}/tr2latex.man ${MANPREFIX}/man/man1/tr2latex.1
+	@${MKDIR} ${PREFIX}/share/texmf/tex/latex/misc
+.for file in troffman.sty troffms.sty
+	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/texmf/tex/latex/misc
+.endfor
 
 .include <bsd.port.mk>
