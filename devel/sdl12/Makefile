@@ -2,12 +2,11 @@
 # Date created:				1 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.23 2000/08/31 10:06:08 sobomax Exp $
+# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.24 2000/09/25 07:23:57 sobomax Exp $
 #
 
 PORTNAME=	sdl-devel
-PORTVERSION=	1.1.4
-PORTREVISION=	1
+PORTVERSION=	1.1.5
 CATEGORIES=	devel
 MASTER_SITES=	http://www.libsdl.org/release/ \
 		http://www.devolution.com/~slouken/SDL/release/
@@ -39,6 +38,10 @@ USE_MESA=	yes
 CONFIGURE_ARGS+=	--enable-video-opengl
 .endif
 
+.include <bsd.port.pre.mk>
+
+MAN3!=		/bin/cat ${FILESDIR}/man3
+
 post-configure:
 	@cd ${WRKSRC} && \
 		${CP} sdl-config sdl11-config && \
@@ -50,12 +53,12 @@ post-install:
 	@${MKDIR} ${PREFIX}/share/examples/SDL11
 	@${INSTALL_DATA} ${WRKSRC}/test/* ${PREFIX}/share/examples/SDL11
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/SDL11
+	@${MKDIR} ${PREFIX}/share/doc/SDL11/docs
 .for file in BUGS COPYING CREDITS README WhatsNew docs.html
 	@${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/SDL11
 .endfor
-	@cd ${WRKSRC}/docs; tar cf - `${ECHO} [^M]*` | \
-		(cd ${PREFIX}/share/doc/SDL11; ${TAR} --unlink -xf - )
+	@cd ${WRKSRC}/docs; tar cf - `${ECHO} [^Mm]*` | \
+		(cd ${PREFIX}/share/doc/SDL11/docs; ${TAR} --unlink -xf - )
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
