@@ -2,11 +2,11 @@
 # Date created:        1 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/cel/Makefile,v 1.1 2001/02/14 13:22:36 jeh Exp $
 #
 
 PORTNAME=	cel
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	lang
 MASTER_SITES=	http://www.redwoodsoft.com/cel/
 EXTRACT_SUFX=	.tgz
@@ -17,13 +17,12 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_GMAKE=	yes
 
-DOCFILES=	CoreArchitecture.html Credits DefaultProtos \
-		Linker.html Logs.html ProtoLanguage.html README \
-		SimpleDataFormat.html Threads activation.html \
-		stackframe structure.html todo.html
+DOCFILES=	CoreArchitecture.html DefaultProtos Linker.html \
+		Logs.html ProtoLanguage.html README SimpleDataFormat.html \
+		Threads activation.html stackframe structure.html todo.html
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/vm/aq ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/vm/cel ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/cel
 .for F in ${DOCFILES}
