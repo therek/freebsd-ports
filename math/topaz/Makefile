@@ -3,11 +3,11 @@
 # Date created:				29 July 1997
 # Whom:					Issei Suzuki <issei@jp.FreeBSD.ORG>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/topaz/Makefile,v 1.1.1.1 1999/11/01 02:27:10 steve Exp $
 #
 
-DISTNAME=	topaz-3_22-src
-PKGNAME=	topaz-3.22
+DISTNAME=	topaz-3_25-src
+PKGNAME=	topaz-3.25
 CATEGORIES=	math
 MASTER_SITES=	http://hp.vector.co.jp/authors/VA007663/topaz/bin/
 
@@ -20,7 +20,6 @@ CXX?=		c++
 MAKEFILE=	Makefile.freebsd
 USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/${PKGNAME}
-#TOPAZDIR=	${PREFIX}/libexec/topaz
 
 post-install:
 		${LN} -sf ${PREFIX}/lib/topaz/topaz.sh ${PREFIX}/bin/topaz
