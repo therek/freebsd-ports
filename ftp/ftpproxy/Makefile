@@ -2,13 +2,13 @@
 # Date created:				15 May 2001
 # Whom:					Philippe Le Berre <philippe@le-berre.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/ftpproxy/Makefile,v 1.1 2001/05/20 03:15:25 will Exp $
 #
 
 PORTNAME=	ftpproxy
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.7
 CATEGORIES=	ftp
-MASTER_SITES=	http://www.quietsche-entchen.de/download/
+MASTER_SITES=	http://ftp.daemons.de/download/
 DISTNAME=	ftpproxy-${PORTVERSION}
 
 MAINTAINER=	philippe@le-berre.com
