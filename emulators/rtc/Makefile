@@ -2,11 +2,11 @@
 # Date created:		28 March 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/emulators/rtc/Makefile,v 1.2 2000/04/12 04:55:42 mharo Exp $
+# $FreeBSD: ports/emulators/rtc/Makefile,v 1.3 2000/04/14 20:13:54 knu Exp $
 #
 
 PORTNAME=	rtc
-PORTVERSION=	2000.03.28
+PORTVERSION=	2000.05.05
 CATEGORIES=	emulators linux
 MASTER_SITES=	# none
 DISTFILES=	# none
