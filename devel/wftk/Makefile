@@ -2,7 +2,7 @@
 # Date created:				29 March 2001
 # Whom:					Oliver Lehmann <lehmann@ans-netz.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/libuta/Makefile,v 1.1 2001/04/05 19:01:47 alex Exp $
 #
 
 PORTNAME=	libuta
@@ -16,7 +16,7 @@ MAINTAINER=	lehmann@ans-netz.de
 LIB_DEPENDS=    png.4:${PORTSDIR}/graphics/png \
 		ttf.4:${PORTSDIR}/print/freetype \
 		sigc.1:${PORTSDIR}/devel/libsigc++ \
-		SDL-1.1.3:${PORTSDIR}/devel/sdl-devel \
+		SDL-1.1.3:${PORTSDIR}/devel/sdl12 \
 		SDL_mixer.2:${PORTSDIR}/audio/sdl_mixer
 
 USE_LIBTOOL=	YES
