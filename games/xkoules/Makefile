@@ -2,7 +2,7 @@
 # Date created:				11 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xkoules/Makefile,v 1.8 2000/04/14 12:27:35 asami Exp $
+# $FreeBSD: ports/games/xkoules/Makefile,v 1.9 2000/06/22 10:05:53 sobomax Exp $
 #
 
 PORTNAME=	xkoules
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	-src.tar.gz
 MAINTAINER=	ports@FreeBSD.org
 
 .if ${MACHINE_ARCH} == "alpha"
-PLIST=		${PKGDIR}/PLIST.alpha
+PLIST=		${PKGDIR}/pkg-plist.alpha
 .endif
 
 USE_IMAKE=	yes
