@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.171 2000/09/26 17:37:38 sobomax Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.172 2000/10/08 18:53:41 trevor Exp $
 #
 
     SUBDIR += afsp
@@ -147,6 +147,7 @@
     SUBDIR += wmmixer
     SUBDIR += wmmp3
     SUBDIR += wmtune
+    SUBDIR += wmusic
     SUBDIR += workman
     SUBDIR += wsoundprefs
     SUBDIR += wsoundserver
