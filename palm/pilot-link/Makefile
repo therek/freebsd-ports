@@ -3,7 +3,7 @@
 # Date created:         November, 1997
 # Whom:                 Paul Traina <pst@freebsd.org>
 #
-# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.28 1999/08/30 14:33:01 peter Exp $
+# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.29 1999/09/10 07:39:11 asami Exp $
 
 DISTNAME=	pilot-link.0.9.3
 PKGNAME=	pilot-link-0.9.3
@@ -25,6 +25,6 @@ MAN1=		dlpsh.1 ietf2datebook.1 install-datebook.1 \
 MAN7=		pilot-link.7
 
 post-install:
-        ${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
+	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>
