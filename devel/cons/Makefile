@@ -3,7 +3,7 @@
 # Date created:		11 December 1998
 # Whom:			rv@fore.com
 #
-# $FreeBSD: ports/devel/cons/Makefile,v 1.6 1999/09/10 10:48:19 tg Exp $
+# $FreeBSD: ports/devel/cons/Makefile,v 1.7 1999/10/31 23:56:56 steve Exp $
 #
 
 DISTNAME=	cons-${CONSVER}
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rv@fore.com
 
-RUN_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/MD5.pm:${PORTSDIR}/security/p5-MD5
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/MD5.pm:${PORTSDIR}/security/p5-MD5
 
 CONSVER=	1.7
 
