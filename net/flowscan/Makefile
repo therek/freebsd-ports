@@ -2,12 +2,12 @@
 # Date created:         Di  13 Mär 2001 08:23:55 CET
 # Whom:                 andreas@freebsd.org
 #
-# $FreeBSD: ports/net/flowscan/Makefile,v 1.11 2001/03/25 13:23:36 andreas Exp $
+# $FreeBSD: ports/net/flowscan/Makefile,v 1.12 2001/03/25 15:54:48 andreas Exp $
 #
 
 PORTNAME=	flowscan
 PORTVERSION=    1.006
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	http://net.doit.wisc.edu/~plonka/FlowScan/
 DISTFILES=	FlowScan-${PORTVERSION}.tar.gz
@@ -21,6 +21,7 @@ BUILD_DEPENDS=	ksh:${PORTSDIR}/shells/pdksh \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/ConfigReader/DirectiveStyle.pm:${PORTSDIR}/devel/p5-ConfigReader \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/HTML/Table.pm:${PORTSDIR}/www/p5-HTML-Table \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Cflow.pm:${PORTSDIR}/net/p5-Cflow
+RUN_DEPENDS=	gmake:${PORTSDIR}/devel/gmake
 
 CFLOWD_FLOWSCAN_PATCH=	yes
 HAS_CONFIGURE=		yes
