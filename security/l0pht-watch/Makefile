@@ -2,13 +2,13 @@
 # Date created:		11 Jan 1999
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/security/l0pht-watch/Makefile,v 1.4 2000/04/09 18:29:51 cpiazza Exp $
+# $FreeBSD: ports/security/l0pht-watch/Makefile,v 1.5 2000/04/21 08:18:31 mharo Exp $
 #
 
 PORTNAME=	l0pht-watch
 PORTVERSION=	1.1
 CATEGORIES=	security
-MASTER_SITES=	http://www.l0pht.com/advisories/
+MASTER_SITES=	http://www.atstake.com/research/tools/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	dom@myrddin.demon.co.uk
