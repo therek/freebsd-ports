@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.99 2000/09/17 11:18:16 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.100 2000/11/16 10:14:31 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -154,8 +154,8 @@ while [ "$1" ]; do
 			echo "CONFIGURE_ARGS+=--enable-ftp"
 			;;
 		\"gettext\")
-			echo "LIB_DEPENDS+=	intl.1:${PORTSDIR}/devel/gettext"
-			echo "CONFIGURE_ARGS+=--with-gettext=${PREFIX}"
+			echo "LIB_DEPENDS+=	intl.1:\${PORTSDIR}/devel/gettext"
+			echo "CONFIGURE_ARGS+=--with-gettext=\${PREFIX}"
 			;;
 		*)
 			echo "Invalid option(s): $*" > /dev/stderr
