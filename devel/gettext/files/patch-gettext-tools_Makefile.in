@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/devel/gettext/files/patch-gettext-tools_Makefile.in,v 1.2 2004/01/23 18:12:16 trevor Exp $
 
 --- gettext-tools/Makefile.in.orig	Sun Nov 30 14:03:22 2003
 +++ gettext-tools/Makefile.in	Fri Jan 23 15:24:35 2004
@@ -7,7 +7,7 @@ $FreeBSD$
  ACLOCAL_AMFLAGS = -I m4 -I ../gettext-runtime/m4 -I ../autoconf-lib-link/m4 -I ../config/m4
  
 -SUBDIRS = doc intl lib libuniname src po projects misc man m4 tests examples
-+SUBDIRS = doc intl lib libuniname src po projects misc man m4 examples
++SUBDIRS = doc intl lib libuniname src po projects misc man m4
  
  # vms_jackets.h is a header that comes with Compaq's "porting library".
  # KEEP_CRTL_SETLOCALE tells it to not override the native locale support.
