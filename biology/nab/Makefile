@@ -1,7 +1,7 @@
 # New ports collection Makefile for: nab
 # Date created:         Sept. 10, 2000
 # Whom:                 M. L. Dodson <bdodson@scms.utmb.edu>
-# $FreeBSD: ports/biology/nab/Makefile,v 1.3 2001/06/01 06:04:45 obrien Exp $
+# $FreeBSD$
 
 PORTNAME=	nab
 PORTVERSION=	4.3.2
@@ -26,6 +26,10 @@ INCS=	defreal.h       nab.h           nabcode.h       nabtypes.h
 
 post-extract:
 	@${CP} ${FILESDIR}/config.h ${WRKSRC}
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/cifparse/cifparse.c
 
 pre-install:
 	@cd ${WRKSRC}/src && \
