@@ -2,11 +2,11 @@
 # Date created:		10 Dec 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/cad/qcad/Makefile,v 1.13 2001/04/03 08:13:57 will Exp $
 #
 
 PORTNAME=	qcad
-PORTVERSION=	1.4.6
+PORTVERSION=	1.4.7
 CATEGORIES=	cad
 MASTER_SITES=	http://www.qcad.org/archives/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
