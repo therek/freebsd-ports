@@ -2,7 +2,7 @@
 # Date created:		4 Sep 2000
 # Whom:			IWASHITA Yoji <shuna@pop16.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/mutt-devel/Makefile,v 1.21 2001/04/09 04:55:16 knu Exp $
+# $FreeBSD: ports/japanese/mutt-devel/Makefile,v 1.22 2001/05/22 16:53:17 ijliao Exp $
 #
 
 PORTNAME=	mutt
@@ -29,7 +29,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/msgfmt:${PORTSDIR}/devel/gettext
 .endif
 RUN_DEPENDS=	urlview:${PORTSDIR}/textproc/urlview
 
-VERSION=	1.3.18
+VERSION=	1.3.19
 JP_VERSION=	0
 
 DIST_SUBDIR=	mutt
@@ -72,11 +72,16 @@ pre-configure:
 	(cd ${WRKSRC}; aclocal -I m4)
 
 post-install:
-	${INSTALL_DATA} ${DIFFDIR}/README.JA-PATCH ${DOCDIR}
-	${INSTALL_DATA} ${DIFFDIR}/manual-ja-patch.txt ${DOCDIR}
-	${INSTALL_DATA} ${DIFFDIR}/mutt-ja.rc ${DOCDIR}/samples
-	${INSTALL_DATA} ${DIFFDIR}/sample.muttrc-tt ${DOCDIR}/samples
-	${INSTALL_DATA} ${DIFFDIR}/usage-japanese.txt ${DOCDIR}
+	${INSTALL_DATA} ${DIFFDIR}/INSTALL.JA-PATCH.en ${DOCDIR}
+	${INSTALL_DATA} ${DIFFDIR}/INSTALL.JA-PATCH.ja ${DOCDIR}
+	${INSTALL_DATA} ${DIFFDIR}/README.JA-PATCH.en ${DOCDIR}
+	${INSTALL_DATA} ${DIFFDIR}/README.JA-PATCH.ja ${DOCDIR}
+	${INSTALL_DATA} ${DIFFDIR}/html/manual-ja-patch.en.html ${DOCDIR}/html
+	${INSTALL_DATA} ${DIFFDIR}/html/manual-ja-patch.ja.html ${DOCDIR}/html
+	${INSTALL_DATA} ${DIFFDIR}/html/usage-japanese.en.html ${DOCDIR}/html
+	${INSTALL_DATA} ${DIFFDIR}/html/usage-japanese.ja.html ${DOCDIR}/html
+	${INSTALL_DATA} ${DIFFDIR}/sample/mutt-ja.rc ${DOCDIR}/samples
+	${INSTALL_DATA} ${DIFFDIR}/sample/sample.muttrc-tt ${DOCDIR}/samples
 	${INSTALL_DATA} ${SRCDOCDIR}/manual_ja.txt ${DOCDIR}
 	${INSTALL_DATA} ${SRCDOCDIR}/manual_ja.tex ${DOCDIR}
 	${INSTALL_DATA} ${SRCDOCDIR}/manual_ja.html ${DOCDIR}
