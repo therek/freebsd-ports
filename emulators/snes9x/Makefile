@@ -3,7 +3,7 @@
 # Date created:         20 July 1997
 # Whom:                 Yukihiro Nakai<Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.13 1999/09/20 00:04:28 green Exp $
+# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.14 1999/09/20 01:56:08 cpiazza Exp $
 #
 
 DISTNAME=	s9xs125
@@ -11,7 +11,7 @@ PKGNAME=	snes9x-1.25
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.snes9x.com/zips/
 
-MAINTAINER=	green@FreeBSD.org
+MAINTAINER=	nacai@iname.com
 
 .if ${MACHINE_ARCH} == i386
 BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
