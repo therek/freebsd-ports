@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.216 2001/03/17 14:35:01 ijliao Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.217 2001/03/17 16:39:07 vanilla Exp $
 #
 
     SUBDIR += Maaate
@@ -50,6 +50,7 @@
     SUBDIR += festvox-rab16
     SUBDIR += festvox-rab8
     SUBDIR += festvox-tll
+    SUBDIR += flac
     SUBDIR += freeamp
     SUBDIR += gdcd
     SUBDIR += gdrdao
