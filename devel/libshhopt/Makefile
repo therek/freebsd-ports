@@ -3,7 +3,7 @@
 # Date created:				11 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libshhopt/Makefile,v 1.4 2000/03/21 01:11:01 jedgar Exp $
+# $FreeBSD: ports/devel/libshhopt/Makefile,v 1.5 2000/03/29 07:16:37 kris Exp $
 #
 
 DISTNAME=		shhopt-1.1.6
@@ -11,7 +11,7 @@ PKGNAME=		libshhopt-1.1.6
 CATEGORIES=		devel
 MASTER_SITES=		http://home.sol.no/~sverrehu/pub-unix/files/
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=		obrien@FreeBSD.org
 
 USE_GMAKE=		yes
 

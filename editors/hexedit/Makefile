@@ -3,7 +3,7 @@
 # Date created:				5 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/hexedit/Makefile,v 1.6 1999/08/25 05:43:53 obrien Exp $
+# $FreeBSD: ports/editors/hexedit/Makefile,v 1.7 2000/03/29 07:18:31 kris Exp $
 #
 
 DISTNAME=		hexedit-1.1.0
@@ -13,7 +13,7 @@ MASTER_SITES=		http://www.chez.com/prigaux/ \
 MASTER_SITE_SUBDIR=	utils/file/hex
 EXTRACT_SUFX=		.src.tgz
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=		obrien@FreeBSD.org
 
 USE_AUTOCONF=		yes
 

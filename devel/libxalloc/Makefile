@@ -3,7 +3,7 @@
 # Date created:				12 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libxalloc/Makefile,v 1.2 1999/08/25 05:48:30 obrien Exp $
+# $FreeBSD: ports/devel/libxalloc/Makefile,v 1.3 2000/03/29 07:16:39 kris Exp $
 #
 
 DISTNAME=	xalloc-1.0.3
@@ -11,7 +11,7 @@ PKGNAME=	libxalloc-1.0.3
 CATEGORIES=	devel
 MASTER_SITES=	http://home.sol.no/~sverrehu/pub-unix/files/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 USE_GMAKE=	yes
 

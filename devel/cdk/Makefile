@@ -3,7 +3,7 @@
 # Date created:				6 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/cdk/Makefile,v 1.2 1999/08/25 05:47:29 obrien Exp $
+# $FreeBSD: ports/devel/cdk/Makefile,v 1.3 2000/03/29 07:16:40 kris Exp $
 #
 
 DISTNAME=		cdk-4.9.1
@@ -11,7 +11,7 @@ CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/ui
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=		obrien@FreeBSD.org
 
 ALL_TARGET=		SRCDIR=${WRKSRC} libcdk.so.1
 

@@ -3,14 +3,14 @@
 # Date created:				19 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/sted/Makefile,v 1.2 1999/08/25 05:44:27 obrien Exp $
+# $FreeBSD: ports/editors/sted/Makefile,v 1.3 2000/03/29 07:18:28 kris Exp $
 #
 
 DISTNAME=	sted-0.2.2
 CATEGORIES=	editors
 MASTER_SITES=	http://user.tninet.se/~uxm165t/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/sted
 
