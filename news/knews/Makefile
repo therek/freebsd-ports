@@ -2,7 +2,7 @@
 # Date created:         Sun Apr 14 09:23:59 MET DST 1996
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/knews/Makefile,v 1.29 2000/04/16 17:35:58 andreas Exp $
+# $FreeBSD: ports/news/knews/Makefile,v 1.30 2000/04/21 07:51:45 mharo Exp $
 #
 
 PORTNAME=	knews
@@ -14,9 +14,9 @@ MAINTAINER=	andreas@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.3:${PORTSDIR}/graphics/png \
-		compface:${PORTSDIR}/mail/faces
-RUN_DEPENDS=	newsp:${PORTSDIR}/print/mp-letter
+		png.3:${PORTSDIR}/graphics/png
+#		compface:${PORTSDIR}/mail/faces
+RUN_DEPENDS=    newsp:${PORTSDIR}/print/mp-letter
 
 USE_IMAKE=	yes
 MAKE_FLAGS=	BINDIR=${PREFIX}/bin MANDIR=${PREFIX}/man/man1 \
