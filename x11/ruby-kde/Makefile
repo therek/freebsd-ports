@@ -2,7 +2,7 @@
 # Date created:		14 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.14 2001/03/17 11:47:02 knu Exp $
+# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.15 2001/04/06 17:18:24 knu Exp $
 #
 
 PORTNAME=	kde
@@ -34,11 +34,11 @@ INSTALL_TARGET=	site-install
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/kde
-	${CP} -R ${WRKSRC}/examples/ ${RUBY_EXAMPLESDIR}/kde/
-	${MKDIR} ${RUBY_DOCDIR}/kde/ja
-	${INSTALL_DATA} ${WRKSRC}/README.txt ${RUBY_DOCDIR}/kde/
-	${INSTALL_DATA} ${WRKSRC}/README.jp.txt ${RUBY_DOCDIR}/kde/ja/
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${CP} -R ${WRKSRC}/examples/ ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
+	${INSTALL_DATA} ${WRKSRC}/README.txt ${RUBY_DOCDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/README.jp.txt ${RUBY_DOCDIR}/${PORTNAME}/ja/
 .endif
 
 .include <bsd.port.mk>
