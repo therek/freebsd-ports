@@ -28,7 +28,7 @@ IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/portaudit-db/database/portaudit.xml,v 1.12 2004/08/30 10:58:47 eik Exp $
+  $FreeBSD: ports/security/portaudit-db/database/portaudit.xml,v 1.13 2004/09/03 20:27:26 eik Exp $
 
 -->
 <!DOCTYPE vuxml PUBLIC "-//vuxml.org//DTD VuXML 1.1//EN" "http://www.vuxml.org/dtd/vuxml-1/vuxml-11.dtd">
@@ -991,7 +991,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </package>
       <package>
 	<name>FreeBSD</name>
-	<range><le>491101</le></range>
+	<range><lt>491101</lt></range>
 	<range><ge>500000</ge><lt>502114</lt></range>
       </package>
     </affects>
