@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.229 2001/05/05 22:38:22 knu Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.230 2001/05/05 23:20:11 knu Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -8,6 +8,7 @@
     SUBDIR += TenDRA
     SUBDIR += aleph
     SUBDIR += atlast
+    SUBDIR += awka
     SUBDIR += bc-gcc
     SUBDIR += bwbasic
     SUBDIR += caml-light
