@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.44 2000/12/02 06:25:48 obrien Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.45 2000/12/02 08:49:48 obrien Exp $
 #
 
 PORTNAME=	isc-dhcp3
@@ -57,5 +57,7 @@ post-install:
 		strip ${PREFIX}/sbin/${file}; \
 	fi
 .endfor
+	${INSTALL_SCRIPT} ${FILESDIR}/isc-dhcpd.sh.sample  \
+		${PREFIX}/etc/rc.d
 
 .include <bsd.port.mk>
