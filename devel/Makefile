@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.646 2001/10/01 13:18:49 phantom Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.647 2001/10/06 12:09:52 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -446,6 +446,7 @@
     SUBDIR += pth-devel
     SUBDIR += ptl
     SUBDIR += py-coro
+    SUBDIR += py-cxx
     SUBDIR += py-functional
     SUBDIR += py-game
     SUBDIR += py-grouch
