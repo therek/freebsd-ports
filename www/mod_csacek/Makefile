@@ -2,11 +2,11 @@
 # Date created:				22 Feb 2001
 # Whom:					Milan Salajka <ms@vol.cz>
 #
-# $FreeBSD: ports/www/mod_csacek/Makefile,v 1.1 2001/03/12 21:53:37 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mod_csacek
-PORTVERSION=	2.1.6
+PORTVERSION=	2.1.8
 CATEGORIES=	www
 MASTER_SITES=	http://www.csacek.cz/distrib/
 DISTNAME=	${PORTNAME:S/mod_//g}-${PORTVERSION}
