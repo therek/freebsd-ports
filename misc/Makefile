@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/misc/Makefile,v 1.371 2001/08/15 07:40:35 sobomax Exp $
 #
 
     SUBDIR += 40upgrade
@@ -84,6 +84,7 @@
     SUBDIR += gtkfind
     SUBDIR += gtl
     SUBDIR += gwhich
+    SUBDIR += hb
     SUBDIR += hello
     SUBDIR += heyu
     SUBDIR += histring
