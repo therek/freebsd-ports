@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.380 2000/07/13 16:17:09 kevlo Exp $
+# $FreeBSD: ports/net/Makefile,v 1.381 2000/07/14 08:18:58 kuriyama Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -220,6 +220,7 @@
     SUBDIR += sup
     SUBDIR += tac_plus4
     SUBDIR += tcpflow
+    SUBDIR += tcpmssd
     SUBDIR += tcpshow
     SUBDIR += tcptrace
     SUBDIR += tcserver
