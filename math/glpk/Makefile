@@ -2,7 +2,7 @@
 # Date created:		16 December 2000
 # Whom:			Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/math/glpk/Makefile,v 1.2 2001/02/05 15:04:46 olgeni Exp $
+# $FreeBSD: ports/math/glpk/Makefile,v 1.3 2001/03/13 11:27:18 demon Exp $
 #
 
 PORTNAME=	glpk
@@ -10,9 +10,24 @@ PORTVERSION=	2.1
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	glpk
+.if !defined(NOPORTDOCS)
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DOCFILES}
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
+.endif
 
 MAINTAINER=	demon@FreeBSD.org
 
 GNU_CONFIGURE=	yes
+
+DOCFILES=	glpk_lr-1.1.1.ps.gz glpk_sm.ps.gz glpk_ug-1.1.1.ps.gz
+
+post-install:
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/glpk
+	for file in ${DOCFILES} ; do \
+		${INSTALL_DATA} ${DISTDIR}/$$file ${PREFIX}/share/doc/glpk/ ; \
+		${GUNZIP_CMD} ${PREFIX}/share/doc/glpk/$$file ; \
+	done
+.endif
 
 .include <bsd.port.mk>
