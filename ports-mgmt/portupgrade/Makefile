@@ -2,19 +2,19 @@
 # Date created:		18 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.80 2001/09/26 16:04:05 knu Exp $
+# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.81 2001/10/06 15:52:58 knu Exp $
 #
 
 PORTNAME=	portupgrade
-PORTVERSION=	20011006
+PORTVERSION=	20011006.1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www.iDaemons.org/distfiles/
 MASTER_SITE_SUBDIR=	knu
-DISTNAME=	pkgtools-${PORTVERSION}
+DISTNAME=	pkgtools-${PORTVERSION:R}
 
-#PATCH_SITES=	${MASTER_SITES}
-#PATCHFILES=	pkgtools-${PORTVERSION}.1.patch.gz
+PATCH_SITES=	${MASTER_SITES}
+PATCHFILES=	pkgtools-${PORTVERSION}.patch.gz
 
 MAINTAINER=	knu@FreeBSD.org
 
@@ -40,9 +40,8 @@ NO_BUILD=	yes
 MAN1=		pkg_deinstall.1 \
 		pkg_fetch.1 \
 		pkg_glob.1 \
-		pkg_which.1 \
+		pkgdb.1 \
 		portcvsweb.1 \
-		ports_glob.1 \
 		portsclean.1 \
 		portsdb.1 \
 		portupgrade.1 \
@@ -69,6 +68,8 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/misc/bash/* ${EXAMPLESDIR}/bash/
 	${MKDIR} ${EXAMPLESDIR}/tcsh
 	${INSTALL_DATA} ${WRKSRC}/misc/tcsh/* ${EXAMPLESDIR}/tcsh/
+	# Remove old database
+	${RM} -f /var/db/pkg/pkgdb.byfile.db
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${DOCSDIR}
 .for f in ${DOCS}
