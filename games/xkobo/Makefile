@@ -1,9 +1,9 @@
 # New ports collection makefile for:    xkobo
-# Version required:     1.11
-# Date created:         18 Jul 1995
-# Whom:                 jkh
+# Version required:	1.11
+# Date created:		18 Jul 1995
+# Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xkobo/Makefile,v 1.14 1999/08/25 06:05:25 obrien Exp $
 #
 
 DISTNAME=       xkobo-1.11
