@@ -2,7 +2,7 @@
 # Date created:         22 Apr 1999
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD: ports/astro/setiathome/Makefile,v 1.19 2000/05/30 10:49:29 asami Exp $
+# $FreeBSD: ports/astro/setiathome/Makefile,v 1.20 2000/06/01 17:27:59 will Exp $
 
 PORTNAME=	setiathome
 PORTVERSION=	2.4
