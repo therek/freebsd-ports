@@ -2,24 +2,24 @@
 # Date created:				10 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/KnightCap/Makefile,v 1.9 2000/03/29 07:17:36 kris Exp $
+# $FreeBSD: ports/games/KnightCap/Makefile,v 1.10 2000/04/14 12:25:49 asami Exp $
 #
 
 PORTNAME=	knightcap
-PORTVERSION=	3.5
+PORTVERSION=	3.6
 CATEGORIES=	games
-MASTER_SITES=	ftp://samba.anu.edu.au/pub/KnightCap/
+MASTER_SITES=	ftp://samba.anu.edu.au/pub/KnightCap/ \
+		ftp://ftp.bmtmicro.com/pub/linux/tucows/files/x11/entertain/ \
+		ftp://ftp.cadvision.com/pub/linuxberg/files/x11/entertain/
 DISTNAME=	KnightCap-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	bugg@bugg.strangled.net
 
 LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3\
 		GLU.14:${PORTSDIR}/graphics/Mesa3 \
 		glut.3:${PORTSDIR}/graphics/Mesa3
 
-FETCH_BEFORE_ARGS=	-P
 ALL_TARGET=	KnightCap
-USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/Export
 
 do-install:
