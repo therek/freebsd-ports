@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.26 2002/09/17 09:12:32 znerd Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.27 2002/10/14 19:16:40 znerd Exp $
 #
 
 .if !defined(Java_Include)
@@ -365,7 +365,7 @@ WITH_JIKES=	YES
 	@${ECHO} "${PKGNAME}: \"${USE_JIKES}\" is not a valid value for USE_JIKES. It should be YES or NO, or it should be undefined.";
 	@${FALSE}
 .				endif
-.			elif exists(${_JIKES_PATH})
+.			elif exists(${_JIKES_PATH}) && !defined(NO_BUILD)
 JAVAC=		${_JIKES_PATH}
 WITH_JIKES=	YES
 .			endif
