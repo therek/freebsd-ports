@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/audio/mpg123/files/patch-ab,v 1.6 2001/08/21 16:58:33 sobomax Exp $
+$FreeBSD: ports/audio/mpg123/files/patch-ab,v 1.7 2002/02/18 09:34:12 des Exp $
 
 --- mpg123.c.orig	Tue Aug 21 19:48:17 2001
 +++ mpg123.c	Tue Aug 21 19:49:02 2001
@@ -41,17 +41,7 @@ $FreeBSD: ports/audio/mpg123/files/patch-ab,v 1.6 2001/08/21 16:58:33 sobomax Ex
      }
  
      return newfile;
-@@ -605,6 +609,9 @@
- 		}
- 
- 		if(fr->header_change > 1 || init) {
-+
-+			init_output();
-+
- 			old_rate = ai.rate;
- 			old_format = ai.format;
- 			old_channels = ai.channels;
-@@ -787,6 +794,10 @@
+@@ -784,6 +788,10 @@
          _wildcard(&argc,&argv);
  #endif
  
@@ -62,7 +52,7 @@ $FreeBSD: ports/audio/mpg123/files/patch-ab,v 1.6 2001/08/21 16:58:33 sobomax Ex
  	if(sizeof(short) != 2) {
  		fprintf(stderr,"Ouch SHORT has size of %d bytes (required: '2')\n",(int)sizeof(short));
  		exit(1);
-@@ -923,17 +933,6 @@
+@@ -917,17 +925,6 @@
  				&dirname, &filename))
  				fprintf(stderr, "\nDirectory: %s", dirname);
  			fprintf(stderr, "\nPlaying MPEG stream from %s ...\n", filename);
