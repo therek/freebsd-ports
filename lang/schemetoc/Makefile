@@ -2,11 +2,11 @@
 # Date created:		28 Dec 1994
 # Whom:			jmacd@uclink.berkeley.edu
 #
-# $FreeBSD: ports/lang/schemetoc/Makefile,v 1.18 2000/06/16 08:18:52 sobomax Exp $
+# $FreeBSD: ports/lang/schemetoc/Makefile,v 1.19 2000/06/16 21:51:23 asami Exp $
 #
 
-PORTNAME= 	schemetoc
-PORTVERSION= 	93.3.15
+PORTNAME=	schemetoc
+PORTVERSION=	93.3.15
 CATEGORIES=	lang
 MASTER_SITES=	ftp://gatekeeper.dec.com/pub/DEC/Scheme-to-C/
 DISTNAME=	15mar93

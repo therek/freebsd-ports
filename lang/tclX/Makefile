@@ -2,7 +2,7 @@
 # Date created:		6 February 1996
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tclX82/Makefile,v 1.35 2000/06/16 21:51:24 asami Exp $
+# $FreeBSD: ports/lang/tclX82/Makefile,v 1.36 2000/07/13 20:54:32 ade Exp $
 #
 
 PORTNAME=	tclX
@@ -31,7 +31,7 @@ MAN3=   CmdWrite.3 Handles.3 Keylist.3 ObjCmdWrite.3 TclXInit.3 \
 	Tcl_HandleTblRelease.3 Tcl_HandleTblUseCount.3 Tcl_HandleWalk.3 \
 	Tcl_HandleXlate.3  Tclx_Init.3  Tclxcmd_Init.3 TkX_Main.3 Tkx_Init.3
 
-MANN=   Memory.n TclX.n Tcl_DisplayMemory.n Tcl_InitMemory.n \
+MANN=	Memory.n TclX.n Tcl_DisplayMemory.n Tcl_InitMemory.n \
 	Tcl_ValidateAllMemory.n ckalloc.n ckfree.n memory.n
 
 .include <bsd.port.pre.mk>

@@ -2,7 +2,7 @@
 # Date created:		16 April 1995
 # Whom:			markm
 #
-# $FreeBSD: ports/lang/perl5/Makefile,v 1.33 2000/04/13 18:57:37 asami Exp $
+# $FreeBSD: ports/lang/perl5/Makefile,v 1.34 2000/05/14 05:40:49 billf Exp $
 #
 
 PORTNAME=	perl
@@ -21,7 +21,7 @@ CONFIGURE_ARGS=		-sde -Dprefix=${PREFIX}
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} > 300003
-FORBIDDEN= perl is in system
+FORBIDDEN=	perl is in system
 .endif
 
 MAN1=	a2p.1 c2ph.1 h2ph.1 h2xs.1 perl.1 perl5004delta.1 \

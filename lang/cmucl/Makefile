@@ -2,7 +2,7 @@
 # Date created:         Jul, 15, 1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/lang/cmucl/Makefile,v 1.11 2000/04/12 06:18:01 obrien Exp $
+# $FreeBSD: ports/lang/cmucl/Makefile,v 1.12 2000/06/29 07:02:27 obrien Exp $
 #
 #
 
@@ -17,7 +17,7 @@ MASTER_SITE_SUBDIR=	cracauer
 DISTNAME=	cmucl-18b.x86.freebsd22
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER= 	cracauer@cons.org
+MAINTAINER=	cracauer@cons.org
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes

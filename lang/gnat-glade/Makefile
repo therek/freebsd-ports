@@ -2,11 +2,11 @@
 # Date created:         3 May 2000
 # Whom:                 sam@inf.enst.fr
 #
-# $FreeBSD: ports/lang/gnat-glade/Makefile,v 1.1 2000/07/31 15:01:35 nbm Exp $
+# $FreeBSD: ports/lang/gnat-glade/Makefile,v 1.2 2000/12/21 10:35:18 will Exp $
 #
 
-PORTNAME= 	gnat-glade
-PORTVERSION= 	3.13p
+PORTNAME=	gnat-glade
+PORTVERSION=	3.13p
 CATEGORIES=	lang
 MASTER_SITES=	ftp://cs.nyu.edu/pub/gnat/${PORTVERSION}/glade/
 DISTNAME=	glade-${PORTVERSION}-src

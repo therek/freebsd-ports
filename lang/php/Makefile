@@ -2,11 +2,11 @@
 # Date created:		7 Sep 2000
 # Whom:			Peter Pentchev <roam@orbitel.bg>
 #
-# $FreeBSD: ports/lang/php/Makefile,v 1.3 2001/01/17 08:01:32 roam Exp $
+# $FreeBSD: ports/lang/php/Makefile,v 1.4 2001/01/28 20:28:16 roam Exp $
 #
 
 PORTNAME=	php
-PORTVERSION= 	3.0.18
+PORTVERSION=	3.0.18
 PORTREVISION=	1
 CATEGORIES=	lang www
 MASTER_SITES=	ftp://ftp.php.net/pub/${PHP_DISTDIR}/ \

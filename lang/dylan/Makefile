@@ -2,7 +2,7 @@
 # Date created:         23 Jan 1998
 # Whom:                 housel@acm.org
 #
-# $FreeBSD: ports/lang/dylan/Makefile,v 1.12 2000/06/20 13:37:36 nectar Exp $
+# $FreeBSD: ports/lang/dylan/Makefile,v 1.13 2000/12/02 15:32:55 kevlo Exp $
 #
 
 PORTNAME=	dylan
@@ -22,7 +22,7 @@ DISTNAME=	gd-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} d2c-${PORTVERSION}-FreeBSD.gz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER= 	housel@acm.org
+MAINTAINER=	housel@acm.org
 
 RUN_DEPENDS=	libtool:${PORTSDIR}/devel/libtool
 
