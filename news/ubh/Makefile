@@ -2,7 +2,7 @@
 # Date created:			24 July 2000
 # Whom:				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD: ports/news/ubh/Makefile,v 1.2 2000/07/26 09:09:06 dburr Exp $
+# $FreeBSD: ports/news/ubh/Makefile,v 1.3 2000/10/16 01:43:24 kris Exp $
 #
 
 PORTNAME=	ubh
@@ -12,7 +12,8 @@ MASTER_SITES=	http://ubh.sourceforge.net/download/
 
 MAINTAINER=	dburr@FreeBSD.ORG
 
-RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/News/Newsrc.pm:${PORTSDIR}/news/p5-News-Newsrc
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/News/Newsrc.pm:${PORTSDIR}/news/p5-News-Newsrc \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/NNTP.pm:${PORTSDIR}/net/p5-Net
 
 NO_BUILD=	YES
 
