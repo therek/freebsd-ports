@@ -2,11 +2,12 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.1 2000/10/29 14:19:38 knu Exp $
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.2 2000/10/30 04:38:42 knu Exp $
 #
 
 PORTNAME=	mozilla
 PORTVERSION=	M18
+PORTREVISION=	1
 CATEGORIES=	japanese www
 MASTER_SITES=	http://www.mozilla.gr.jp/jlp/ \
 		http://mozilla.inmel.net/
