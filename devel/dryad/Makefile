@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/dryad/Makefile,v 1.1 2000/06/28 17:38:37 ade Exp $
 #
 
 PORTNAME=	dryad
@@ -17,7 +17,7 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		glade.3:${PORTSDIR}/devel/libglade \
 		oaf.0:${PORTSDIR}/devel/oaf \
 		bonobo.2:${PORTSDIR}/devel/bonobo \
-		gdf.0:${PORTSDIR}/devel/gnome-debug
+		gdf.0:${PORTSDIR}/devel/gnomedebug
 RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 USE_X_PREFIX=	yes
