@@ -2,15 +2,13 @@
 # Date created:		17 Feb 1998
 # Whom:			Ugo Paternostro <paterno@dsi.unifi.it>
 #
-# $FreeBSD: ports/graphics/dc20ctrl/Makefile,v 1.4 1999/09/07 10:45:21 steve Exp $
+# $FreeBSD: ports/graphics/dc20ctrl/Makefile,v 1.5 2000/04/13 06:28:10 obrien Exp $
 #
 
 PORTNAME=	dc20ctrl
 PORTVERSION=	0.4
 CATEGORIES=	graphics
 MASTER_SITES=   http://aguirre.dsi.unifi.it/~paterno/binaries/
-
-MAINTAINER=	paterno@dsi.unifi.it
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff \
