@@ -2,7 +2,7 @@
 # Date created:		4 December 1996
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/man/Makefile,v 1.23 2000/10/08 10:20:57 asami Exp $
+# $FreeBSD: ports/japanese/man/Makefile,v 1.24 2001/01/04 21:45:03 sf Exp $
 #
 
 PORTNAME=	man
