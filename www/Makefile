@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.300 2001/01/29 10:45:00 ache Exp $
+# $FreeBSD: ports/www/Makefile,v 1.301 2001/01/29 10:50:33 ache Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -130,6 +130,7 @@
     SUBDIR += netscape47-navigator
     SUBDIR += nscache
     SUBDIR += npc
+    SUBDIR += nspostgres
     SUBDIR += oops
     SUBDIR += p5-Apache
     SUBDIR += p5-Apache-ASP
