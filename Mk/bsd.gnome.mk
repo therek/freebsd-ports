@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.68 2004/05/22 21:04:52 pav Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.69 2004/05/22 21:09:11 pav Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -599,6 +599,10 @@ PLIST_SUB+=	GNOMEDESKTOP:="@comment " NOGNOMEDESKTOP:=""
 .endif
 .endif
 .endif
+.endif
+
+.if ${MAINTAINER}=="gnome@FreeBSD.org"
+CONFIGURE_FAIL_MESSAGE=	"Please direct the output of the failure of the make command to a file, and then feed that file to the gnomelogalyzer, available from "http://www.freebsd.org/gnome/gnomelogalyzer.sh", which will diagnose the problem and suggest a solution.  If - and only if - the gnomelogalyzer cannot solve the problem, report the problem to the FreeBSD GNOME team at ${MAINTAINER}, and attach \"${CONFIGURE_WRKSRC}/${CONFIGURE_LOG}\" and the output of the failure of the make command.  Also, it might be a good idea to provide an overview of all packages installed on your system (e.g. an \`ls ${PKG_DBDIR}\`)."
 .endif
 
 .endif
