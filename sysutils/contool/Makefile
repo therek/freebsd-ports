@@ -1,12 +1,12 @@
 # New ports collection makefile for:    contool
-# Version required:     3.3a
 # Date created:         2 Dec 1996
 # Whom:                 nsayer@quack.kfu.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/contool/Makefile,v 1.9 1999/08/31 01:59:38 peter Exp $
 #
 
-DISTNAME=	contool-3.3a
+PORTNAME=	contool
+PORTVERSION= 	3.3a
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.kfu.com/pub/
 

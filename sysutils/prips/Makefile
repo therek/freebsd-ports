@@ -1,15 +1,15 @@
 # New ports collection makefile for:	prips
-# Version required:	0.9.4
 # Date created:		29 October 1999
 # Whom:			Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/sysutils/prips/Makefile,v 1.2 1999/12/10 01:10:17 imura Exp $
+# $FreeBSD: ports/sysutils/prips/Makefile,v 1.3 2000/01/12 04:29:55 cpiazza Exp $
 #
 
-DISTNAME=	prips-0.9.4-src
-PKGNAME=	prips-0.9.4
+PORTNAME=	prips
+PORTVERSION= 	0.9.4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.interloper.net/~dan/software/dist/prips/
+DISTNAME=	${PKGNAME}-src
 
 MAINTAINER=	jeremy@external.org
 

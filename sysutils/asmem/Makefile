@@ -1,11 +1,12 @@
 # New ports collection makefile for:	asfsm
-# Version required:	asmem-1.5
 # Date created:		4 June 1999
 # Whom:				jack
 #
-# $FreeBSD: ports/sysutils/asmem/Makefile,v 1.5 1999/09/27 02:15:50 steve Exp $
+# $FreeBSD: ports/sysutils/asmem/Makefile,v 1.6 1999/12/25 01:31:26 steve Exp $
+#
 
-DISTNAME=	asmem-1.5
+PORTNAME=	asmem
+PORTVERSION=	1.5
 CATEGORIES=	sysutils afterstep
 MASTER_SITES=	ftp://ftp.afterstep.org/apps/asmem/ \
 		http://www.bewoner.dma.be/Albert/software/

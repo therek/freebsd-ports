@@ -1,13 +1,12 @@
-# Generated automatically from Makefile.in by configure.
-# New ports collection makefile for:    lavaps
-# Version required:     1.8
-# Date created:         11-Oct-99
-# Whom:                 johnh@isi.edu
+# New ports collection makefile for:	lavaps
+# Date created:		11-Oct-99
+# Whom:			johnh@isi.edu
 #
-# $FreeBSD: ports/sysutils/lavaps/Makefile,v 1.1.1.1 1999/10/21 05:36:33 cpiazza Exp $
+# $FreeBSD: ports/sysutils/lavaps/Makefile,v 1.2 1999/11/28 18:31:20 steve Exp $
 #
 
-DISTNAME=       lavaps-1.8
+PORTNAME=	lavaps
+PORTVERSION=	1.8
 CATEGORIES=     sysutils
 MASTER_SITES=   http://www.isi.edu/~johnh/SOFTWARE/LAVAPS/
 

@@ -1,11 +1,12 @@
 # New ports collection makefile for: cpbk
-# Version required:	2.0
 # Date created:		12 April 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/cpbk/Makefile,v 1.2 1999/08/31 01:59:40 peter Exp $
+#
 
-DISTNAME=	cpbk-2.0
+PORTNAME=	cpbk
+PORTVERSION=	2.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://pep.netnation.com/cpbk/ \
 		ftp://mocha.mkintraweb.com/pub/linux/cpbk/

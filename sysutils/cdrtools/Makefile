@@ -1,12 +1,12 @@
 # New ports collection makefile for:    cdrecord
-# Version required:     1.8
 # Date created:         2 November 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cdrecord/Makefile,v 1.28 2000/01/18 23:36:07 dirk Exp $
+# $FreeBSD: ports/sysutils/cdrecord/Makefile,v 1.29 2000/01/29 23:53:55 dirk Exp $
 #
 
-DISTNAME=	cdrecord-1.8
+PORTNAME=	cdrecord
+PORTVERSION= 	1.8
 CATEGORIES=	sysutils audio
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/ \
 		ftp://ftp.cs.tu-berlin.de/pub/misc/cdrecord/ \

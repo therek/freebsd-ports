@@ -1,12 +1,12 @@
 # New ports collection makefile for:	su2
-# Version required:	1.3
 # Date created:		12 Sep 1996
 # Whom:			gurney_j@efn.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/su2/Makefile,v 1.5 1999/08/31 02:00:10 peter Exp $
 #
 
-DISTNAME=	su2-1.3
+PORTNAME=	su2
+PORTVERSION= 	1.3
 CATEGORIES=	sysutils security
 MASTER_SITES=	ftp://ftp.ccs.neu.edu/pub/sysadmin/
 

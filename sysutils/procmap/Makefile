@@ -1,12 +1,12 @@
 # New ports collection makefile for:	procmap
-# Version required:	(self contained)
 # Date created:		22 March 2000
 # Whom:			Jason Evans <jasone@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/procmap/Makefile,v 1.1 2000/03/23 03:28:55 jasone Exp $
+# $FreeBSD: ports/sysutils/procmap/Makefile,v 1.2 2000/04/07 23:19:11 asami Exp $
 #
 
-DISTNAME=	procmap-1.0
+PORTNAME=	procmap
+PORTVERSION=	1.0
 CATEGORIES=	sysutils
 DISTFILES=	#empty
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   consolehm
-# Version required:    1.2
 # Date created:        27 September 1999
 # Whom:                Mike Muir <mmuir@es.co.nz>
 #
-# $FreeBSD: ports/sysutils/consolehm/Makefile,v 1.1.1.1 1999/09/26 22:33:38 dan Exp $
+# $FreeBSD: ports/sysutils/consolehm/Makefile,v 1.2 1999/10/21 06:04:14 cpiazza Exp $
 #
 
-DISTNAME=	consolehm-1.2
+PORTNAME=	consolehm
+PORTVERSION= 	1.2
 CATEGORIES=	sysutils
 MASTER_SITES= 	ftp://mongol.dhis.org/pub/consolehm/ \
 		http://www.es.co.nz/~mmuir/

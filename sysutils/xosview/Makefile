@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  xosview
-# Version required: 0.0
 # Date created:			  19 Nov 1997
 # Whom:				  Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/sysutils/xosview/Makefile,v 1.21 2000/03/20 02:37:41 obrien Exp $
+# $FreeBSD: ports/sysutils/xosview/Makefile,v 1.22 2000/03/22 00:28:17 obrien Exp $
 #
 
-DISTNAME=	xosview-1.7.3
+PORTNAME=	xosview
+PORTVERSION= 	1.7.3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://lore.ece.utexas.edu/~bgrayson/xosview/ \
 		${MASTER_SITE_SUNSITE}

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ascpu
-# Version required:	1.8
 # Date created:         18 February 1999
 # Whom:                 Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/sysutils/ascpu/Makefile,v 1.5 1999/08/31 01:59:30 peter Exp $
+# $FreeBSD: ports/sysutils/ascpu/Makefile,v 1.6 1999/12/24 04:53:40 steve Exp $
 #
 
-DISTNAME=	ascpu-1.8
+PORTNAME=	ascpu
+PORTVERSION= 	1.8
 CATEGORIES=	sysutils afterstep
 MASTER_SITES=	http://bewoner.dma.be/Albert/software/ \
 		http://www.tigr.net/afterstep/as-apps/download/ascpu/	\

@@ -1,13 +1,12 @@
 # New ports collection makefile for:    upsd
-# Version required:     2.0.1.6
 # Date created:         11 Jul 1996
 # Whom:                 alexis
 #
-# $FreeBSD: ports/sysutils/upsd/Makefile,v 1.4 1999/08/31 02:00:15 peter Exp $
+# $FreeBSD: ports/sysutils/upsd/Makefile,v 1.5 2000/01/24 04:52:59 steve Exp $
 #
 
-DISTNAME=	upsd-2.0.1.6
-PKGNAME=	upsd-2.0
+PORTNAME=	upsd
+PORTVERSION=	2.0.1.6
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://www.ww.net/pub/wildwind/upsd/ \
 		http://www.cre8tivegroup.com/ \

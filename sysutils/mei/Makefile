@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mei
-# Version required:	1.53
 # Date created:		19 Sep 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/sysutils/mei/Makefile,v 1.8 1999/08/31 01:59:52 peter Exp $
+# $FreeBSD: ports/sysutils/mei/Makefile,v 1.9 2000/02/08 09:28:56 peter Exp $
 #
 
-DISTNAME=	mei-1.53
+PORTNAME=	mei
+PORTVERSION= 	1.53
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.vector.co.jp/authors/VA001240/archive/ \
 		http://people.FreeBSD.org/~itojun/distfiles/

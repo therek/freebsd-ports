@@ -1,12 +1,12 @@
 # New ports collection makefile for:	upsmon
-# Version required:	2.1.3
 # Date created:		5 Oct 1998
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/upsmon/Makefile,v 1.3 1999/08/31 02:00:17 peter Exp $
 #
 
-DISTNAME=	upsmon-2.1.3
+PORTNAME=	upsmon
+PORTVERSION= 	2.1.3
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://newcorridor.com/pub/upsmon/
 

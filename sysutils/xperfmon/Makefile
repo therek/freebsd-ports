@@ -1,18 +1,17 @@
-# New ports collection makefile for:	xperfmon++ V1.40
-# Version required:	1.1
+# New ports collection makefile for:	xperfmon++
 # Date created:		14 March 97
 # Whom:			Lars Koeller <Lars.Koeller@Uni-Bielefeld.DE>
 #
-# $FreeBSD: ports/sysutils/xperfmon/Makefile,v 1.23 1999/08/31 02:00:37 peter Exp $
+# $FreeBSD: ports/sysutils/xperfmon/Makefile,v 1.24 2000/03/20 21:19:37 mharo Exp $
 #
 
-DISTNAME=	xperfmon++v1.1
-PKGNAME=	xperfmon++-2.0
+PORTNAME=	xperfmon++
+PORTVERSION=	2.0
 CATEGORIES=     sysutils
-# In Germany try this
 MASTER_SITES=	ftp://ftp.uni-bielefeld.de/pub/systems/FreeBSD/lkoeller/ \
 		ftp://ftp.u-aizu.ac.jp/pub/misc/tools/xperfmon/ \
 		ftp://ftp.ibank.ru/pub/unix_src/benchmarks/
+DISTNAME=	xperfmon++v1.1
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE

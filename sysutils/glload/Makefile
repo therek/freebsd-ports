@@ -1,12 +1,12 @@
 # New ports collection makefile for:	glload
-# Version required:		0.4.0
 # Date created:			04 Dec 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/glload/Makefile,v 1.9 2000/02/08 09:29:01 peter Exp $
+# $FreeBSD: ports/sysutils/glload/Makefile,v 1.10 2000/03/20 23:25:16 jseger Exp $
 #
 
-DISTNAME=	glload-0.4.0
+PORTNAME=	glload
+PORTVERSION= 	0.4.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://glload.netpedia.net/source/ \
 		http://people.FreeBSD.org/~vanilla/

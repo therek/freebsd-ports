@@ -1,16 +1,16 @@
 # ex:ts=8
 # Ports collection makefile for:  setcdboot
-# Version required:     	  1.0
 # Date created:			  Mon Jan 17, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/sysutils/setcdboot/Makefile,v 1.2 2000/01/18 07:24:54 obrien Exp $
+# $FreeBSD: ports/sysutils/setcdboot/Makefile,v 1.3 2000/02/13 18:12:29 obrien Exp $
 #
 
-DISTNAME=	setcdboot
-PKGNAME=	setcdboot-1.0
+PORTNAME=	setcdboot
+PORTVERSION=	1.0
 CATEGORIES=	sysutils
 MASTER_SITES=	'part of port'
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.c
 
 MAINTAINER=     obrien@FreeBSD.org

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    nut
-# Version required:     nut-0.43.1
 # Date created:         08 Jan 2000
 # Whom:                 Boris Popov <bp@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/nut/Makefile,v 1.3 2000/02/21 08:23:25 bp Exp $
+# $FreeBSD: ports/sysutils/nut/Makefile,v 1.4 2000/03/06 12:55:35 bp Exp $
 #
 
-DISTNAME=	nut-0.43.1
+PORTNAME=	nut
+PORTVERSION= 	0.43.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.exploits.org/nut/release/
 

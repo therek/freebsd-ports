@@ -1,12 +1,12 @@
 # New ports collection makefile for:    pib
-# Version required:     1.1
 # Date created:         30 December 1996
 # Whom:                 Mike Smith <msmith@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/pib/Makefile,v 1.15 1999/11/25 18:00:30 jseger Exp $
+# $FreeBSD: ports/sysutils/pib/Makefile,v 1.16 2000/02/08 09:28:58 peter Exp $
 #
 
-DISTNAME=	pib-1.1
+PORTNAME=	pib
+PORTVERSION= 	1.1
 CATEGORIES=	sysutils tk82
 MASTER_SITES=	http://people.FreeBSD.org/~msmith/pib/
 

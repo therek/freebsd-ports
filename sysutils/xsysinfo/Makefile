@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xsysinfo
-# Version required:	1.4a
 # Date created:		4 April 1996
 # Whom:			jdli
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/xsysinfo/Makefile,v 1.10 1999/08/31 02:00:42 peter Exp $
 #
 
-DISTNAME=	xsysinfo-1.4a
+PORTNAME=	xsysinfo
+PORTVERSION= 	1.4a
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://freebsd.csie.nctu.edu.tw/pub/jdli/source/
 

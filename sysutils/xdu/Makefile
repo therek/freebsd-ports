@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xdu
-# Version required:	R6 contrib tape
 # Date created:		9 February 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/sysutils/xdu/Makefile,v 1.10 1999/08/31 02:00:29 peter Exp $
+# $FreeBSD: ports/sysutils/xdu/Makefile,v 1.11 1999/08/31 06:51:01 mharo Exp $
 #
 
-DISTNAME=	xdu-3.0
+PORTNAME=	xdu
+PORTVERSION= 	3.0
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.arl.mil/pub/
 EXTRACT_SUFX=	.tar.Z

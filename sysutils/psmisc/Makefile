@@ -1,12 +1,12 @@
 # New ports collection makefile for:    psmisc
-# Version required:     psmisc-17
 # Date created:         10 March 1998
 # Whom:                 rantapaa@uswest.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/psmisc/Makefile,v 1.3 1999/08/31 02:00:00 peter Exp $
 #
 
-DISTNAME=       psmisc-17
+PORTNAME=	psmisc
+PORTVERSION= 	17
 CATEGORIES=     sysutils
 MASTER_SITES=   ftp://ftp.cdrom.com/pub/linux/slackware-3.6/source/a/procps/ \
 		ftp://ftp.bitcon.no/pub/linux/slackware/source/a/procps/

@@ -1,31 +1,30 @@
 # New ports collection makefile for:	webmin
-# Version required:	0.77
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.14 2000/01/08 13:50:03 andreas Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.15 2000/02/06 12:34:25 vanilla Exp $
 #
 
-DISTNAME=	webmin-${VERSION}
+PORTNAME=	webmin
+PORTVERSION= 	0.77
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.webmin.com/webmin/download/
 
 MAINTAINER=	andreas@FreeBSD.org
 
-VERSION=	0.77
 NO_BUILD=	yes
 IS_INTERACTIVE=	yes
 USE_PERL5=	yes
 
 post-patch:
-	${CP} ${WRKDIR}/webmin-${VERSION}/bind8/config-freebsd-3.0 \
-	${WRKDIR}/webmin-${VERSION}/bind8/config-freebsd-3.1
-	${CP} ${WRKDIR}/webmin-${VERSION}/bind8/config-freebsd-3.0 \
-	${WRKDIR}/webmin-${VERSION}/bind8/config-freebsd-3.2
-	${CP} ${WRKDIR}/webmin-${VERSION}/bind8/config-freebsd-3.0 \
-	${WRKDIR}/webmin-${VERSION}/bind8/config-freebsd-3.3
-	${CP} ${WRKDIR}/webmin-${VERSION}/bind8/config-freebsd-3.0 \
-	${WRKDIR}/webmin-${VERSION}/bind8/config-freebsd-3.4
+	${CP} ${WRKDIR}/webmin-${PORTVERSION}/bind8/config-freebsd-3.0 \
+	${WRKDIR}/webmin-${PORTVERSION}/bind8/config-freebsd-3.1
+	${CP} ${WRKDIR}/webmin-${PORTVERSION}/bind8/config-freebsd-3.0 \
+	${WRKDIR}/webmin-${PORTVERSION}/bind8/config-freebsd-3.2
+	${CP} ${WRKDIR}/webmin-${PORTVERSION}/bind8/config-freebsd-3.0 \
+	${WRKDIR}/webmin-${PORTVERSION}/bind8/config-freebsd-3.3
+	${CP} ${WRKDIR}/webmin-${PORTVERSION}/bind8/config-freebsd-3.0 \
+	${WRKDIR}/webmin-${PORTVERSION}/bind8/config-freebsd-3.4
 
 do-install:
 	${MKDIR} ${PREFIX}/lib/webmin

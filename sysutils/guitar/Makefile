@@ -1,12 +1,12 @@
 # New ports collection makefile for:	guiTAR
-# Version required:		0.1.4
 # Date created:			Sat Aug 14 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/guitar/Makefile,v 1.2 2000/01/29 23:49:04 billf Exp $
 #
 
-DISTNAME=	guiTAR-0.1.4
+PORTNAME=	guiTAR
+PORTVERSION= 	0.1.4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://disq.bir.net.tr/guitar/ \
 		http://artemis.efes.net/disq/guitar/

@@ -1,11 +1,12 @@
 # New ports collection makefile for:    detach
-# Version required:	1.3
 # Date created:		2 November 1999
 # Whom:			arnej@pvv.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/detach/Makefile,v 1.1 1999/12/25 16:14:20 steve Exp $
+#
 
-DISTNAME=	detach-1.3
+PORTNAME=	detach
+PORTVERSION= 	1.3
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.ntnu.no/pub/unix/utils/
 

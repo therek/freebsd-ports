@@ -1,12 +1,12 @@
 # New ports collection makefile for:	daemontools
-# Version required:     0.53
 # Date created:		09 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/daemontools/Makefile,v 1.2 1999/08/31 01:59:40 peter Exp $
 #
 
-DISTNAME=	daemontools-0.53
+PORTNAME=	daemontools
+PORTVERSION= 	0.53
 CATEGORIES=	sysutils
 MASTER_SITES=   ftp://koobera.math.uic.edu/www/software/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    cpdup
-# Version required:     3.*
 # Date created:         28 Oct 1999
 # Whom:                 dillon
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/cpdup/Makefile,v 1.1 1999/10/31 16:27:19 dillon Exp $
 #
 
-DISTNAME=       cpdup-1.02
+PORTNAME=	cpdup
+PORTVERSION= 	1.02
 CATEGORIES=	sysutils
 MASTER_SITES=   http://www.backplane.com/FreeBSDPorts/
 #MASTER_SITE_SUBDIR=	cp

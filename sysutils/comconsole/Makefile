@@ -1,12 +1,12 @@
 # New ports collection makefile for: comconsole
-# Version required:	0.1
 # Date created:		27 Dec 1998
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/comconsole/Makefile,v 1.2 1999/08/31 01:59:37 peter Exp $
+# $FreeBSD: ports/sysutils/comconsole/Makefile,v 1.3 1999/08/31 06:50:44 mharo Exp $
 #
 
-DISTNAME=	comconsole-0.1
+PORTNAME=	comconsole
+PORTVERSION=	0.1
 CATEGORIES=	sysutils
 MASTER_SITES=	#
 DISTFILES=

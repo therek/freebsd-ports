@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sarah
-# Version required:	0.3b
 # Date created:		10 Jan 2000
 # Whom:			Matthew Pounsett <mattp@conundrum.com>
 #
-# $FreeBSD: ports/sysutils/sarah/Makefile,v 1.1.1.1 2000/01/10 19:31:22 dbaker Exp $
+# $FreeBSD: ports/sysutils/sarah/Makefile,v 1.2 2000/01/18 00:33:24 jedgar Exp $
 #
 
-DISTNAME=		sarah-0.3b
+PORTNAME=		sarah
+PORTVERSION=		0.3b
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://ftp.conundrum.com/pub/sarah/
 

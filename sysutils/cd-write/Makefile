@@ -1,12 +1,12 @@
 # New ports collection makefile for:    cd-write
-# Version required:     1.4.1
 # Date created:         1 May 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.16 1999/12/05 16:10:36 jmz Exp $
+# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.17 2000/02/08 09:28:53 peter Exp $
 #
 
-DISTNAME=       cd-write-1.4.1
+PORTNAME=	cd-write
+PORTVERSION= 	1.4.1
 CATEGORIES=     sysutils
 MASTER_SITES=   http://people.FreeBSD.org/~jmz/
 

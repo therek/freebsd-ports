@@ -1,11 +1,12 @@
 # New ports collection makefile for:    stat
-# Version required:     1.3
 # Date created:         16 Februar 1996
 # Whom:                 wosch
 #
-# $FreeBSD: ports/sysutils/stat/Makefile,v 1.6 1999/08/31 02:00:07 peter Exp $
+# $FreeBSD: ports/sysutils/stat/Makefile,v 1.7 1999/09/19 10:30:46 wosch Exp $
+#
 
-DISTNAME=       stat-1.3
+PORTNAME=	stat
+PORTVERSION= 	1.3
 CATEGORIES=	sysutils
 MASTER_SITES=   http://www.de.freebsd.org/~wosch/src/
 

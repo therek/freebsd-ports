@@ -1,13 +1,12 @@
 # New ports collection makefile for:    nologin
-# Version required:     1.0
 # Date created:         15 Jul 1998
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/no-login/Makefile,v 1.4 1999/08/31 01:59:57 peter Exp $
+# $FreeBSD: ports/sysutils/no-login/Makefile,v 1.5 1999/08/31 06:50:55 mharo Exp $
 #
 
-DISTNAME=	nologin
-PKGNAME=	nologin-1.0
+PORTNAME=	nologin
+PORTVERSION= 	1.0
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.xmission.com/pub/users/s/softweyr/pub/
 DISTFILES=	nologin.c nologin.8
