@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.200 2001/03/07 10:51:59 roam Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.201 2001/03/09 22:31:32 sada Exp $
 #
 
     SUBDIR += abook
@@ -113,6 +113,7 @@
     SUBDIR += popa3d
     SUBDIR += poppassd
     SUBDIR += popper
+    SUBDIR += poppwd
     SUBDIR += postfix
     SUBDIR += postfix-current
     SUBDIR += postilion
