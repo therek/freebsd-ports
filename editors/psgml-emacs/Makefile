@@ -3,14 +3,14 @@
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/psgml-emacs/Makefile,v 1.6 1999/08/31 06:43:14 mharo Exp $
+# $FreeBSD: ports/editors/psgml-emacs/Makefile,v 1.7 1999/10/16 11:57:54 shige Exp $
 #
 
 DISTNAME=	psgml-${PSGML_VER}
 CATEGORIES=	editors elisp
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/sgml/
 
-MAINTAINER=	shige@FreeBSD.org
+MAINTAINER?=	shige@FreeBSD.org
 
 # distfile version
 PSGML_VER=		1.2.0
@@ -37,7 +37,7 @@ HAS_COMMON_PORT=	NO
 #
 .if defined(EMACS_PORT)
 PKGNAME=	psgml-${EMACS_PORT}-${PSGML_VER}
-EMACS_CMD=	${PREFIX}/bin/${EMACS_NAME}-${EMACS_VER}
+EMACS_CMD?=	${PREFIX}/bin/${EMACS_NAME}-${EMACS_VER}
 BUILD_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}
 .if defined(HAS_COMMON_PORT) && (${HAS_COMMON_PORT} == "YES")
 RUN_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}-common
