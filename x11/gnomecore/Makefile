@@ -2,7 +2,7 @@
 # Date created:				17 March 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.34 2000/03/28 02:54:50 ade Exp $
+# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.35 2000/04/13 19:09:31 cpiazza Exp $
 #
 
 PORTNAME=	gnomecore
@@ -16,7 +16,7 @@ MAINTAINER=	ade@FreeBSD.org
 
 RUN_DEPENDS=	${X11BASE}/share/gnome/sounds/startup.wav:${PORTSDIR}/audio/gnomeaudio
 LIB_DEPENDS=	gtop.1:${PORTSDIR}/devel/libgtop \
-		gnomeprint.6:${PORTSDIR}/print/gnomeprint \
+		gnomeprint.7:${PORTSDIR}/print/gnomeprint \
 		ghttp.1:${PORTSDIR}/www/libghttp
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

@@ -2,7 +2,7 @@
 # Date created:		17 Aug 1998
 # Whom:			Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnome/Makefile,v 1.16 2000/03/28 02:54:46 ade Exp $
+# $FreeBSD: ports/x11/gnome/Makefile,v 1.17 2000/04/13 19:09:29 cpiazza Exp $
 #
 
 PORTNAME=	gnome
@@ -22,7 +22,7 @@ LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 		gnome.3:${PORTSDIR}/x11/gnomelibs \
 		gtop.1:${PORTSDIR}/devel/libgtop \
 		xml.5:${PORTSDIR}/textproc/libxml \
-		gnomeprint.6:${PORTSDIR}/print/gnomeprint \
+		gnomeprint.7:${PORTSDIR}/print/gnomeprint \
 		ghttp.1:${PORTSDIR}/www/libghttp \
 		obgnome.1:${PORTSDIR}/lang/gnomeobjc \
 		glade.3:${PORTSDIR}/devel/libglade
