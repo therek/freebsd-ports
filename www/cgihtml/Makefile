@@ -2,15 +2,15 @@
 # Date created:		3 Nov 1997
 # Whom:			Ian Vaudrey <i.vaudrey@bigfoot.com>
 #
-# $FreeBSD: ports/www/cgihtml/Makefile,v 1.7 2000/06/16 08:18:24 sobomax Exp $
+# $FreeBSD: ports/www/cgihtml/Makefile,v 1.8 2000/06/16 21:52:05 asami Exp $
 #
 
 PORTNAME=	cgihtml
 PORTVERSION= 	1.69
 CATEGORIES=	devel www
-MASTER_SITES=	ftp://ftp.eekim.com/pub/users/eekim/cgihtml/
+MASTER_SITES=	ftp://hcs.harvard.edu/pub/web/tools/cgihtml/
 
-MAINTAINER=	i.vaudrey@bigfoot.com
+MAINTAINER=	roam@orbitel.bg
 
 INSTALLS_SHLIB=	yes
 
