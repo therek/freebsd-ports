@@ -3,7 +3,7 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/sawmill/Makefile,v 1.5 2000/01/26 07:02:03 nakai Exp $
+# $FreeBSD: ports/x11-wm/sawmill/Makefile,v 1.6 2000/01/31 04:53:52 nakai Exp $
 #
 
 DISTNAME=	sawmill-0.23
@@ -36,8 +36,7 @@ CONFIGURE_ARGS+=	--enable-capplet
 .else
 CONFIGURE_ARGS+=	--disable-capplet
 .endif
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include\
-			-I${LOCALBASE}/include/giflib" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib -lxpg4"
