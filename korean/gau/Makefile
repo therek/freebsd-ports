@@ -1,13 +1,12 @@
 # New ports collection makefile for:    gau
-# Version required:     0.3.1
 # Date created:         23 Jul 1998
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/gau/Makefile,v 1.3 1999/08/30 12:08:46 peter Exp $
+# $FreeBSD: ports/korean/gau/Makefile,v 1.4 2000/02/20 15:16:43 taoka Exp $
 #
 
-DISTNAME=	gau-0.4.1
-PKGNAME=	ko-gau-0.4.1
+PORTNAME=	gau
+PORTVERSION=	0.4.1
 CATEGORIES=	korean comms
 MASTER_SITES=	http://www.kr.freebsd.org/~hwang/gau/
 

@@ -1,14 +1,15 @@
 # New ports collection makefile for:	seri font collection
-# Version required:	none
 # Date created:		Fri Mar 27 17:26:42 KST 1998
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/kaistfonts/Makefile,v 1.7 1999/08/30 12:08:59 peter Exp $
 #
 
-DISTNAME=	ko-kaistfonts-ksc-1.0
+PORTNAME=	kaistfonts-ksc
+PORTVERSION=	1.0
 CATEGORIES=	korean x11-fonts
 MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
+DISTNAME=	${PKGNAME}
 DISTFILES=	kaist-newmj18.bdf.gz ks_philgi16.bdf.gz \
 		kaist-newmj16.bdf.gz ks_iyagi16.bdf.gz
 

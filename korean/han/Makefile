@@ -1,13 +1,12 @@
 # New ports collection makefile for:	han
-# Version required:	1.0fb
 # Date created:		12 Apr 1997
 # Whom:			Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/han/Makefile,v 1.5 1999/08/30 12:08:49 peter Exp $
 #
 
-DISTNAME=	han-1.0fb
-PKGNAME=	ko-han-1.0fb
+PORTNAME=	han
+PORTVERSION=	1.0fb
 CATEGORIES=	korean
 MASTER_SITES=	ftp://jazz.snu.ac.kr/pub/unix/FreeBSD-kr/source/han/
 

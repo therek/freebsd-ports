@@ -1,16 +1,16 @@
 # New ports collection makefile for:	Munhwa fonts collection(cid)
-# Version required:     none
 # Date created:		30 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/munhwafonts-cid/Makefile,v 1.1.1.1 1999/09/03 15:59:02 sada Exp $
+# $FreeBSD: ports/korean/munhwafonts-cid/Makefile,v 1.2 2000/02/03 05:58:20 taoka Exp $
 #
 
-DISTNAME=	munhwafonts-cid
-PKGNAME=	ko-munhwafonts-cid-1.0
+PORTNAME=	munhwafonts-cid
+PORTVERSION=	1.0
 CATEGORIES=	korean print
 MASTER_SITES=	ftp://ftp.ora.com/pub/examples/nutshell/cjkv/adobe/ \
 		ftp://ftp.ora.com/pub/examples/nutshell/cjkv/adobe/samples/
+DISTNAME=	${PORTNAME}
 DISTFILES=	${CID_FONTS_KO} ${CID_CMAP_KO}
 
 MAINTAINER=	cjh@kr.freebsd.org

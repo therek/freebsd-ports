@@ -1,13 +1,12 @@
 # New ports collection makefile for:	hanterm3.04
-# Version required:     3.04beta7
 # Date created:		12 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanterm/Makefile,v 1.11 1999/09/09 17:16:43 sada Exp $
+# $FreeBSD: ports/korean/hanterm/Makefile,v 1.12 2000/02/08 09:27:09 peter Exp $
 #
 
-DISTNAME=	hanterm-3.1.3
-PKGNAME=	ko-hanterm-3.1.3
+PORTNAME=	hanterm
+PORTVERSION=	3.1.3
 CATEGORIES=	korean x11
 MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/ \
 		http://people.FreeBSD.org/~sada/distfiles/

@@ -1,15 +1,15 @@
 # New ports collection makefile for:    linux_locale
-# Version required:	1.0
 # Date created:         Apr 20 1999
 # Whom:                 cjh@kr.freebsd.org
 #
-# $FreeBSD: ports/korean/linux_locale/Makefile,v 1.3 1999/08/30 12:09:00 peter Exp $
+# $FreeBSD: ports/korean/linux_locale/Makefile,v 1.4 2000/02/28 08:33:47 asami Exp $
 #
 
-DISTNAME=	linux_locale-ko-1.0
-PKGNAME=	ko-linux_locale-1.0
+PORTNAME=	linux_locale
+PORTVERSION=	1.0
 CATEGORIES=	korean emulators linux
 MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
+DISTNAME=	${PORTNAME}-${PKGNAMEPREFIX}${PORTVERSION}
 
 MAINTAINER=	cjh@kr.freebsd.org
 

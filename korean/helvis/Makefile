@@ -1,16 +1,16 @@
 # New ports collection makefile for:    helvis-1.8h2-
-# Version required:     1.8h2-
 # Date created:         2 Apr 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/helvis/Makefile,v 1.3 1999/08/30 12:08:55 peter Exp $
+# $FreeBSD: ports/korean/helvis/Makefile,v 1.4 2000/02/14 02:08:20 asami Exp $
 #
 
-DISTNAME=	helvis-1.8h2-
-PKGNAME=	ko-helvis-1.8h2
+PORTNAME=	helvis
+PORTVERSION=	1.8h2
 CATEGORIES=	korean editors
 MASTER_SITES=	ftp://ftp.kaist.ac.kr/pub/hangul/editor/HElvis/ \
 		ftp://sunsite.kren.nm.kr/pub/packages/hangul/editor/HElvis/
+DISTNAME=	helvis-1.8h2-
 
 MAINTAINER=	junker@jazz.snu.ac.kr
 

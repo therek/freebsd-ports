@@ -1,15 +1,16 @@
 # New ports collection makefile for:	Baekmuk Korean TrueType fonts
-# Version required:	2.0
 # Date created:		17 Jan 2000
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/baekmukfonts-ttf/Makefile,v 1.1 2000/01/29 22:28:26 steve Exp $
 #
 
-DISTNAME=	baekmuk-ttf-2.0
-PKGNAME=	ko-baekmukfonts-ttf-2.0
+PORTNAME=	baekmukfonts
+PORTVERSION=	2.0
 CATEGORIES=	korean
 MASTER_SITES=	ftp://ftp.mizi.co.kr/pub/baekmuk/
+PKGNAMESUFFIX=	-ttf
+DISTNAME=	baekmuk${PKGNAMESUFFIX}-${PORTVERSION}
 
 MAINTAINER=	cjh@kr.freebsd.org
 

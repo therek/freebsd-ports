@@ -3,14 +3,15 @@
 # Date created:         1 Apr 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/elm/Makefile,v 1.5 1999/08/30 12:08:41 peter Exp $
 #
 
-DISTNAME=	elm2.4h4.1
-PKGNAME=	ko-elm-2.4h4.1
+PORTNAME=	elm
+PORTVERSION=	2.4h4.1
 CATEGORIES=	korean mail
 MASTER_SITES=	ftp://ftp.kaist.ac.kr/pub/hangul/mail/old/Others/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/mail/old/Others/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	junker@jazz.snu.ac.kr
 

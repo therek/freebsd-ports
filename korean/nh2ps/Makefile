@@ -1,13 +1,12 @@
 # New ports collection makefile for:    nh2ps-2.3
-# Version required:     2.3
 # Date created:         2 Apr 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/nh2ps/Makefile,v 1.9 1999/08/30 12:09:08 peter Exp $
 #
 
-DISTNAME=	nh2ps-2.3.1
-PKGNAME=	ko-nh2ps-2.3.1
+PORTNAME=	nh2ps
+PORTVERSION=	2.3.1
 CATEGORIES=	korean print
 MASTER_SITES=	ftp://jazz.snu.ac.kr/pub/unix/util/nh2ps/
 

@@ -1,15 +1,16 @@
 # New ports collection makefile for:	hanterm-xf86
-# Version required:     hanterm-xf-p16
 # Date created:		22 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanterm-xf86/Makefile,v 1.16 1999/09/03 18:30:23 sada Exp $
+# $FreeBSD: ports/korean/hanterm-xf86/Makefile,v 1.17 2000/04/01 05:18:27 mharo Exp $
 #
 
-DISTNAME=	hanterm-xf-p18
-PKGNAME=	ko-hanterm-xf-18
+PORTNAME=	hanterm
+PORTVERSION=	18
 CATEGORIES=	korean x11
 MASTER_SITES=	http://www.kr.FreeBSD.org/~hwang/hanterm/
+PKGNAMESUFFIX=	-xf
+DISTNAME=	hanterm-xf-p18
 
 MAINTAINER=	cjh@kr.freebsd.org
 

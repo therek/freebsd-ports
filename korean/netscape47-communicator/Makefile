@@ -1,9 +1,8 @@
 # New ports collection makefile for: Netscape browser with Korean resources
-# Version required:	4.7
 # Date created:		14 Jun 1999
 # Whom:			cjh@kr.freebsd.org
 #
-# $FreeBSD: ports/korean/netscape47-communicator/Makefile,v 1.15 2000/02/08 16:22:12 imura Exp $
+# $FreeBSD: ports/korean/netscape47-communicator/Makefile,v 1.16 2000/03/05 04:23:21 sada Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../netscape4-communicator

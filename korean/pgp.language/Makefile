@@ -1,18 +1,18 @@
 # New ports collection makefile for: pgp.language (korean)
-# Version required:     2.6.3i
 # Date created:         22 Jul 1998
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/pgp.language/Makefile,v 1.7 1999/08/30 12:09:11 peter Exp $
 #
 # This is based on ja-pgp.
 #
 
-DISTNAME=	pgp263i-${PGP_LANGUAGE}
-PKGNAME=	ko-pgp-2.6.3
+PORTNAME=	pgp
+PORTVERSION=	2.6.3
 CATEGORIES=	korean security
 MASTER_SITES=	http://sparcs.kaist.ac.kr/~firiel/Works/ \
 		ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
+DISTNAME=	pgp263i-${PGP_LANGUAGE}
 
 MAINTAINER=	cjh@kr.freebsd.org
 

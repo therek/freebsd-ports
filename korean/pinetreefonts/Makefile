@@ -1,17 +1,17 @@
 # New ports collection makefile for:	pinetree fonts(x11)
-# Version required:     1.0
 # Date created:		22 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/pinetreefonts/Makefile,v 1.10 1999/08/30 12:09:14 peter Exp $
 #
 
-DISTNAME=       pinetree.precomposed-1.01-bdf
-PKGNAME=	ko-pinetreefonts-1.01
+PORTNAME=	pinetreefonts
+PORTVERSION=	1.01
 CATEGORIES=	korean x11-fonts
 MASTER_SITES=	ftp://cglab.snu.ac.kr/pub/hangul/n3f/tar/ \
 		ftp://ftp.kaist.ac.kr/pub/hangul/fonts/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/fonts/
+DISTNAME=       pinetree.precomposed-${PORTVERSION}-bdf
 
 MAINTAINER=	junker@jazz.snu.ac.kr
 

@@ -1,9 +1,8 @@
 # New ports collection makefile for:	acroread-korfont
-# Version required:	1999.7.20
 # Date created:		99/06/16
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/acroread-korfont/Makefile,v 1.3 1999/08/30 12:08:36 peter Exp $
+# $FreeBSD: ports/korean/acroread-korfont/Makefile,v 1.4 2000/02/28 08:33:44 asami Exp $
 #
 
 DISTNAME=	korfont

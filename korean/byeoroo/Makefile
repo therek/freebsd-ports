@@ -1,13 +1,12 @@
 # New ports collection makefile for:	byeoroo
-# Version required:     byeoroo-0.0.19990503
 # Date created:		04 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/byeoroo/Makefile,v 1.2 1999/08/30 12:08:40 peter Exp $
 #
 
-DISTNAME=	byeoroo-0.0.19990605.3
-PKGNAME=	ko-byeoroo-0.0.19990605.3
+PORTNAME=	byeoroo
+PORTVERSION=	0.0.19990605.3
 CATEGORIES=	korean x11
 MASTER_SITES=	http://adam.kaist.ac.kr/~cwryu/archive/byeoroo/
 
