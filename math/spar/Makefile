@@ -3,11 +3,11 @@
 # Date created:			Jun 1, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/math/spar/Makefile,v 1.2 2001/06/09 17:35:10 ijliao Exp $
+# $FreeBSD: ports/math/spar/Makefile,v 1.3 2001/06/19 05:35:26 ijliao Exp $
 #
 
 PORTNAME=	spar
-PORTVERSION=	0.5.6
+PORTVERSION=	0.5.9
 CATEGORIES=	math devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
