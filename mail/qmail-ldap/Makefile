@@ -2,7 +2,7 @@
 # Date created:				21 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.8 2001/02/05 15:11:06 olgeni Exp $
+# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.9 2001/02/12 02:59:37 lioux Exp $
 #
 
 PORTNAME=	qmail
@@ -13,6 +13,8 @@ PKGNAMESUFFIX=	-ldap
 PATCH_SITES=	http://www.nrg4u.com/qmail/
 PATCHFILES=	qmail-ldap-1.03-${LDAP_PATCH_DATE}.patch.gz
 PATCH_DIST_STRIP+=	-p1
+
+EXTRA_PATCHES+=	${QMAILPORT_PATCHDIR}/patch-ab ${QMAILPORT_PATCHDIR}/patch-ac
 
 MAINTAINER=	lioux@FreeBSD.org
 
@@ -29,13 +31,16 @@ LDAP_PATCH_DATE=	20010201
 
 #PREFIX=		/var/qmail-ldap
 
+QMAILPORT=	${PORTSDIR}/mail/qmail
+QMAILPORT_PATCHDIR!=	cd ${QMAILPORT} && ${MAKE} -V PATCHDIR
+
 DOCFILES+=	${WRKSRC}/QLDAPINSTALL ${WRKSRC}/QLDAPNEWS \
 		${WRKSRC}/QLDAPTODO ${WRKSRC}/QLDAPPICTURE \
 		${WRKSRC}/ANTISPAM
 
-yetanotherone-pre-fetch: tls-pre-fetch
+yetanotherone-pre-fetch: ldap-pre-fetch
 
-tls-pre-fetch:
+ldap-pre-fetch:
 	@${ECHO_MSG} ""
 	@${ECHO_MSG} "You may use the following build options:"
 	@${ECHO_MSG} ""
@@ -46,9 +51,9 @@ tls-pre-fetch:
 	@${ECHO_MSG} "WITH_CLEARTEXTPASSWD=yes	use cleartext passwords"
 	@${ECHO_MSG} ""
 
-yetanotherone-post-patch: tls-post-patch
+yetanotherone-post-patch: ldap-post-patch
 
-tls-post-patch:
+ldap-post-patch:
 .if defined(WITH_LDAP_CLUSTER)
 	@${PERL} -pi -ne "s|#LDAPFLAGS=-DQLDAP_CLUSTER|LDAPFLAGS\+=-DQLDAP_CLUSTER|" ${WRKSRC}/Makefile
 .endif # WITH_LDAP_CLUSTER
@@ -67,7 +72,7 @@ tls-post-patch:
 .endif # WITH_CLEARTEXTPASSWD
 
 # Local overrides
-MASTERDIR=	${PORTSDIR}/mail/qmail
+MASTERDIR=	${QMAILPORT}
 #MASTERDIR=	${.CURDIR}/../qmail
 PATCHDIR=	${.CURDIR}/files
 PKGDIR_LOCAL=	${.CURDIR}
