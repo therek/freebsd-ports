@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/databases/gnomedb/files/patch-configure,v 1.8 2002/05/01 20:23:00 sobomax Exp $
 
 --- configure.orig	Mon Apr 15 15:30:28 2002
 +++ configure	Wed May  1 11:51:50 2002
@@ -20,12 +20,3 @@ $FreeBSD$
  		
  		
  		
-@@ -8906,7 +8907,7 @@
- 
- GNOMEDB_CFLAGS="`gda-config --cflags client` `gnome-config --cflags xml oaf bonobox print gdk_pixbuf`"
- GNOMEDB_LIBS="`gda-config --libs client` `gnome-config --libs xml oaf bonobox print gdk_pixbuf`"
--GNOMEDB_CFLAGS="${GNOMEDB_CFLAGS} -DGNOMELOCALEDIR=\\\"${datadir}/locale\\\""
-+GNOMEDB_CFLAGS="${GNOMEDB_CFLAGS} -DGNOMELOCALEDIR=\\\"${prefix}/share/locale\\\""
- 
- 
- 

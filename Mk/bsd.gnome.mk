@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.70 2004/06/07 20:42:02 adamw Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.71 2004/06/26 22:08:40 adamw Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -59,7 +59,9 @@ gnomehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "Makefile.in*" | ${XARGS} ${REINPLA
 				 s|[(]libdir[)]/bonobo/servers|(prefix)/libdata/bonobo/servers|g' ; \
 			${FIND} ${WRKSRC} -name "configure" | ${XARGS} ${REINPLACE_CMD} -e \
 				's|-lpthread|${PTHREAD_LIBS}|g ; \
-				 s|DATADIRNAME=lib|DATADIRNAME=share|g'
+				 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
+				 s|{datadir}/locale|{prefix}/share/locale|g ; \
+				 s|{libdir}/locale|{prefix}/share/locale|g'
 
 lthack_PRE_PATCH=	${FIND} ${WRKSRC} -name "configure" | ${XARGS} ${REINPLACE_CMD} -e \
 				'/^LIBTOOL_DEPS="$$ac_aux_dir\/ltmain.sh"$$/s|$$|; $$ac_aux_dir/ltconfig $$LIBTOOL_DEPS;|'
