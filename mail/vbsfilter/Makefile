@@ -2,7 +2,7 @@
 # Date created:				10.Mar 2001
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/vbsfilter/Makefile,v 1.1 2001/03/13 06:47:25 dinoex Exp $
+# $FreeBSD: ports/mail/vbsfilter/Makefile,v 1.2 2001/03/29 16:34:14 sobomax Exp $
 #
 
 PORTNAME=	vbsfilter
@@ -17,13 +17,16 @@ MAINTAINER=	dirk.meyer@dinoex.sub.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libmilter.a:${PORTSDIR}/mail/sendmail
 
-NO_PACKAGE=	"only with sendmail from the ports"
-
 CTARGETS+=	vbsfilter-1.3
 CFLAGS+=	-Wall -I$(LOCALBASE)/include ${PTHREAD_CFLAGS}
 FLAGS+=		${PTHREAD_LIBS}
 LDFLAGS+=	-L$(LOCALBASE)/lib
 LIBS+=		-lmilter -lsmutil
+
+.if defined(BATCH)
+SENDMAIL_WITH_MILTER=	yes
+.endif
+
 .if defined(SENDMAIL_WITH_SFIO)
 LIBS+=		-lsfio
 .endif
