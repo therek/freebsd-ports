@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.94 2000/08/10 10:26:26 obrien Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.95 2000/08/26 09:46:47 obrien Exp $
 #
 
 PORTNAME=	mutt
@@ -17,7 +17,7 @@ MASTER_SITES=	ftp://ftp.guug.de/pub/mutt/ \
 		ftp://ftp.fu-berlin.de/pub/unix/mail/mutt/mutt-international/ \
 		ftp://ftp.gwdg.de/pub/unix/mail/mutt/international/ \
 		ftp://ftp.iks-jena.de/pub/mitarb/lutz/crypt/software/pgp/mutt/
-DISTNAME=	${PKGNAME}i
+DISTNAME=	${PORTNAME}-${PORTVERSION}i
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} charmaps-0.0.tar.gz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
