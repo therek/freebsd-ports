@@ -2,7 +2,7 @@
 # Date created:		18 Feb 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/textproc/unroff/Makefile,v 1.8 1999/08/31 02:09:50 peter Exp $
+# $FreeBSD: ports/textproc/unroff/Makefile,v 1.9 2000/04/09 21:53:15 cpiazza Exp $
 #
 
 PORTNAME=	unroff
@@ -26,7 +26,8 @@ UNROFF_SITE=	http://www-rn.informatik.uni-bremen.de/software/unroff
 PATCH1=		me-misc-patch
 PATCH2=		misc-patch-2
 
-MAN1=		unroff.1 unroff-html.1 unroff-html-man.1 unroff-html-ms.1
+MAN1=		unroff.1 unroff-html.1 unroff-html-man.1 \
+		unroff-html-me.1 unroff-html-ms.1
 MANCOMPRESSED=	yes
 
 pre-patch:
