@@ -2,12 +2,12 @@
 # Date created:				1 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.28 2001/01/03 14:22:00 sobomax Exp $
+# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.29 2001/01/09 15:40:45 sobomax Exp $
 #
 
 PORTNAME=	sdl-devel
 PORTVERSION=	1.1.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.libsdl.org/release/ \
 		http://www.devolution.com/~slouken/SDL/release/
@@ -25,7 +25,8 @@ INSTALLS_SHLIB=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ENV=	NASM="${LOCALBASE}/bin/nasm"
 CONFIGURE_ARGS=	--enable-video-aalib \
-		--enable-video-svga
+		--enable-video-svga \
+		--enable-video-vgl
 
 CFLAGS+=	-D_THREAD_SAFE
 
