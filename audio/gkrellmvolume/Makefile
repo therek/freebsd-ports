@@ -2,7 +2,7 @@
 # Date Created:		Jun 22 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/gkrellmvolume/Makefile,v 1.1.1.1 2000/06/22 18:16:28 ume Exp $
 #
 
 PORTNAME=	gkrellmvolume
@@ -15,8 +15,8 @@ MAINTAINER=	ume@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		gdk_imlib.5:${PORTSDIR}/graphics/imlib
-BUILD_DEPENDS=	${PREFIX}/include/gkrellm/gkrellm.h:${PORTSDIR}/sysutils/gkrellm
-RUN_DEPENDS=	${PREFIX}/bin/gkrellm:${PORTSDIR}/sysutils/gkrellm
+BUILD_DEPENDS=	${X11BASE}/include/gkrellm/gkrellm.h:${PORTSDIR}/sysutils/gkrellm
+RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
