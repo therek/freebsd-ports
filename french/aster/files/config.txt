@@ -1,5 +1,5 @@
 # Configuration file
-# $FreeBSD: ports/french/aster/files/config.txt,v 1.3 2003/08/18 14:20:17 oliver Exp $
+# $FreeBSD: ports/french/aster/files/config.txt,v 1.4 2003/12/08 02:07:21 oliver Exp $
 #
 # Fields are separated by a "|" (the space is significative)
 #
@@ -66,3 +66,5 @@ ARGPYT | exec | 03-2002 | Execution/E_SUPERV.py
 ARGEXE | exec | 03-2002 | -eficas_path ./Eficas
 #
 GZIP | tool | ? | HOME_GZIP/gzip
+CRP  | tool | ? | HOME_CRP/crp_aster.sh 
+CRS  | tool | ? | HOME_CRS/crs.sh
