@@ -3,14 +3,14 @@
 # Date created:         23 July 1995
 # Whom:                 asami
 #
-# $FreeBSD: ports/graphics/xgrasp/Makefile,v 1.6 1999/08/25 06:15:23 obrien Exp $
+# $FreeBSD: ports/graphics/xgrasp/Makefile,v 1.7 1999/08/31 06:45:20 mharo Exp $
 #
 
 DISTNAME=	xgrasp.1.7d
 PKGNAME=	xgrasp-1.7d
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://qiclab.scn.rain.com/pub/X11/	\
-		ftp://ftp.cs.ubc.ca/mirror1/x-contrib.R5/
+MASTER_SITES=	${MASTER_SITE_XCONTRIB}
+MASTER_SITE_SUBDIR=	../R5contrib
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
