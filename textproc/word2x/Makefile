@@ -1,16 +1,13 @@
 # New ports collection makefile for:	word2x
-# Version required:	0.003
+# Version required:	0.005
 # Date created:		10 June 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/word2x/Makefile,v 1.8 2000/01/29 22:46:04 reg Exp $
+# $FreeBSD: ports/textproc/word2x/Makefile,v 1.9 2000/02/08 09:29:07 peter Exp $
 
-DISTNAME=	word2x
-PKGNAME=	word2x-0.003
+DISTNAME=	word2x-0.005
 CATEGORIES=	textproc
-MASTER_SITES=	ftp://ftp.gu.net/pub/unix/viewers/ \
-		ftp://ftp.afti.nsu.ru/pub/source/utils/word2x/ \
-		http://people.FreeBSD.org/~billf/
+MASTER_SITES=	http://word2x.alcom.co.uk/download/
 
 MAINTAINER=	billf@FreeBSD.org
 
