@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.252 2001/09/20 09:18:26 knu Exp $
+# $FreeBSD$
 #
 
     SUBDIR += ETHOberonV4
@@ -35,6 +35,7 @@
     SUBDIR += expect
     SUBDIR += f2c
     SUBDIR += f77
+    SUBDIR += ferite
     SUBDIR += fesi
     SUBDIR += forth
     SUBDIR += gawk
