@@ -2,7 +2,7 @@
 # Date created:		19 September 1997
 # Whom:			steve@farrell.org
 #
-# $FreeBSD: ports/x11/tycoon/Makefile,v 1.9 2000/04/13 19:10:04 cpiazza Exp $
+# $FreeBSD: ports/x11/tycoon/Makefile,v 1.10 2000/08/03 09:28:44 asami Exp $
 #
 
 PORTNAME=	tycoon
@@ -11,15 +11,16 @@ CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/desktop
 
-MAINTAINER=	steve@farrell.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	xforms:${PORTSDIR}/x11-toolkits/xforms
 
 USE_IMAKE=	yes
 USE_XPM=	yes
-NO_INSTALL_MANPAGES=	yes
 
-pre-install:
-	@cd ${WRKSRC}/xbackdrop/backdrops; ${MV} index index.orig; ${SED} -e 's,/usr/lib,${PREFIX}/lib,' index.orig > index; ${RM} index.orig index~
+post-build:
+	${RM} -f ${WRKSRC}/xbackdrop/backdrops/index~ ;\
+	${PERL} -pi -e 's,/usr/lib,${PREFIX}/lib,' \
+		${WRKSRC}/xbackdrop/backdrops/index
 
 .include <bsd.port.mk>
