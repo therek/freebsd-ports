@@ -2,7 +2,7 @@
 # Date created:		5 Oct 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/security/ssh2/Makefile,v 1.93 2000/04/05 22:21:42 will Exp $
+# $FreeBSD: ports/security/ssh2/Makefile,v 1.94 2000/04/09 18:30:33 cpiazza Exp $
 #
 # Maximal ssh2 package requires YES values for
 # USE_SSH1, USE_TCPWRAP
@@ -102,7 +102,7 @@ post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/sshd.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/sshd.sh startup file."; \
 		${SED} -e 's+!!PREFIX!!+${PREFIX}+' < ${FILESDIR}/sshd.sh \
-			> ${PREFIX}/etc/rc.d/sshd.sh
+			> ${PREFIX}/etc/rc.d/sshd.sh; \
 		${CHMOD} 751 ${PREFIX}/etc/rc.d/sshd.sh; \
 	fi
 
