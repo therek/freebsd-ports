@@ -1,17 +1,16 @@
 # New ports collection makefile for:   gifsicle
-# Version required:    1.9.1
+# Version required:    1.16.1
 # Date created:                19 December 1998
 # Whom:                        Brad Hendrickse <bradh@iafrica.com>
 #
-# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.5 1999/08/25 06:14:01 obrien Exp $
+# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.6 2000/02/08 09:26:46 peter Exp $
 #
 
-DISTNAME=	gifsicle-1.11.1
+DISTNAME=	gifsicle-1.16.1
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.lcdf.org/gifsicle/ \
-		http://people.FreeBSD.org/~flathill/distfiles/
+MASTER_SITES=	http://www.lcdf.org/gifsicle/
 
-MAINTAINER=	bradh@iafrica.com
+MAINTAINER=	bradh@uunet.co.za
 
 MAN1=		gifsicle.1
 
