@@ -2,7 +2,7 @@
 # Date created:		05 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/screem/Makefile,v 1.14 2000/08/21 10:55:20 sobomax Exp $
+# $FreeBSD: ports/www/screem/Makefile,v 1.15 2000/10/05 07:17:22 reg Exp $
 #
 
 PORTNAME=	screem
@@ -30,7 +30,7 @@ pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
-		's|\@GNOME_DATA_PREFIX\@/gnome|\@GNOME_DATA_PREFIX\@|g ; \
+		's|\@GNOME_DATA_PREFIX\@|\$$\(datadir\)|g ; \
 		 s|\$\(datadir\)/gnome|\$\(datadir\)|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
