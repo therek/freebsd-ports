@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc34/pkg-plist,v 1.56 2004/03/20 19:50:58 obrien Exp $
+@comment $FreeBSD: ports/lang/gcc34/pkg-plist,v 1.57 2004/03/22 02:10:27 obrien Exp $
 bin/c++34
 bin/cpp34
 bin/g++34
@@ -29,8 +29,7 @@ bin/grepjar34
 %%LIBJAVA%%lib/libffi.la
 %%LIBJAVA%%lib/libffi.a
 %%LIBJAVA%%lib/logging.properties
-%%LIBJAVA%%lib/pkgconfig/libgcj.pc
-%%LIBJAVA%%@dirrm lib/pkgconfig
+%%LIBJAVA%%libdata/pkgconfig/libgcj.pc
 %%LIBJAVA%%lib/security/classpath.security
 %%LIBJAVA%%lib/security/libgcj.security
 %%LIBJAVA%%@dirrm lib/security
