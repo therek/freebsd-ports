@@ -2,11 +2,11 @@
 # Date created:		7 May 2000
 # Whom:			imura@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/linux-lesstif-ns/Makefile,v 1.1.1.1 2000/05/07 06:05:24 imura Exp $
 #
 
 PORTNAME=	lesstif
-PORTVERSION=	0.90.5
+PORTVERSION=	0.91.0
 CATEGORIES=	www x11-toolkits linux
 MASTER_SITES=	ftp://ftp.lesstif.org/pub/hungry/lesstif/srcdist/  \
 		ftp://ftp.hungry.com/pub/hungry/lesstif/srcdist/ \
