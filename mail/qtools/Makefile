@@ -2,11 +2,11 @@
 # Date created:				3 July 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/mail/qtools/Makefile,v 1.1 2001/07/13 15:05:20 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qtools
-PORTVERSION=	0.55
+PORTVERSION=	0.56
 CATEGORIES=	mail
 MASTER_SITES=	http://www.superscript.com/qtools/
 
