@@ -1,9 +1,10 @@
-# $FreeBSD: ports/astro/Makefile,v 1.33 2001/06/28 02:55:32 lioux Exp $
+# $FreeBSD: ports/astro/Makefile,v 1.34 2001/07/02 23:23:07 lioux Exp $
 #
 
     SUBDIR += SETIsupport
     SUBDIR += dgpsip
     SUBDIR += ephem
+    SUBDIR += fooseti
     SUBDIR += gkrellmearth
     SUBDIR += gkrellmoon
     SUBDIR += glunarclock
