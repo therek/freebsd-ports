@@ -2,7 +2,7 @@
 # Date created:		28 March 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.11 2000/09/07 19:36:11 nik Exp $
+# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.12 2000/10/05 10:19:40 kuriyama Exp $
 #
 
 PORTNAME=	docbook-xml
@@ -19,22 +19,23 @@ NO_BUILD=	yes
 WRKSRC=		${WRKDIR}
 
 INSTDIR=	${PREFIX}/share/xml
-DTDDIR=		${INSTDIR}/dtd/docbook
-ENTDIR=		${INSTDIR}/entity
-MISCDIR=	${INSTDIR}/misc/docbook
+DTDDIR=		${INSTDIR}/docbook
+ENTDIR=		${INSTDIR}/docbook/ent
 DTDFILES=	calstblx.dtd dbcentx.mod dbgenent.mod dbhierx.mod \
 		dbnotnx.mod dbpoolx.mod docbookx.dtd soextblx.dtd
-MISCFILES=	40chg.txt readme.txt
+MISCFILES=	40chg.txt 41chg.txt readme.txt
+
+post-extract:
+	${SED} -e 's|%%PREFIX%%|${PREFIX}|g' ${FILESDIR}/catalog.tmpl > ${WRKSRC}/catalog
 
 pre-install:
-	@[ -d ${INSTDIR} ] || ${MKDIR} ${INSTDIR}
-	@[ -d ${DTDDIR}	 ] || ${MKDIR} ${DTDDIR}
-	@[ -d ${ENTDIR}	 ] || ${MKDIR} ${ENTDIR}
-	@[ -d ${MISCDIR} ] || ${MKDIR} ${MISCDIR}
+	${MKDIR} ${ENTDIR}
 
 do-install:
 	@(cd ${WRKSRC};     ${INSTALL_DATA} ${DTDFILES} ${DTDDIR})
 	@(cd ${WRKSRC}/ent; ${INSTALL_DATA} *.ent ${ENTDIR})
-	@(cd ${WRKSRC};     ${INSTALL_DATA} ${MISCFILES} ${MISCDIR})
+	@(cd ${WRKSRC};     ${INSTALL_DATA} ${MISCFILES} ${DTDDIR})
+	${INSTALL_DATA} ${WRKSRC}/catalog ${INSTDIR}
+	${INSTALL_DATA} ${FILESDIR}/catalog.docbook ${DTDDIR}/catalog
 
 .include <bsd.port.mk>
