@@ -3,7 +3,7 @@
 # Date created:		25 Dec 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/japanese/magicpoint/Makefile,v 1.13 1999/12/01 18:57:09 kris Exp $
+# $FreeBSD: ports/japanese/magicpoint/Makefile,v 1.14 1999/12/23 01:14:46 kuriyama Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../misc/magicpoint
@@ -11,7 +11,7 @@ COMMENT=	${.CURDIR}/pkg/COMMENT
 
 LIB_DEPENDS=	VFlib2.24:${PORTSDIR}/japanese/vflib
 
-PKGNAME=	ja-magicpoint-1.05a
+PKGNAME=	ja-magicpoint-1.06a
 CATEGORIES=	japanese
 
 MAINTAINER=	itojun@itojun.org

@@ -3,12 +3,12 @@
 # Date created:		24 December 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.14 1999/12/01 19:01:46 kris Exp $
+# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.15 1999/12/23 00:05:16 kuriyama Exp $
 #
 # "?=" and "+=" are for localized (i.e. Japanese) version
 
-DISTNAME=	magicpoint-1.05a
-PKGNAME?=	magicpoint-1.05a
+DISTNAME=	magicpoint-1.06a
+PKGNAME?=	magicpoint-1.06a
 CATEGORIES+=	misc
 MASTER_SITES=	ftp://ftp.mew.org/pub/MagicPoint/
 
