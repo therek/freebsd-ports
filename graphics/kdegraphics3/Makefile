@@ -2,7 +2,7 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/kdegraphics2/Makefile,v 1.47 2001/08/19 00:04:22 olgeni Exp $
+# $FreeBSD: ports/graphics/kdegraphics2/Makefile,v 1.48 2001/08/20 20:51:37 olgeni Exp $
 #
 
 PORTNAME=	kdegraphics
@@ -16,24 +16,35 @@ MAINTAINER=	will@FreeBSD.org
 BUILD_DEPENDS=	dvips:${PORTSDIR}/print/teTeX
 RUN_DEPENDS=	dvips:${PORTSDIR}/print/teTeX
 
-# temporarily disable kamera, it requires gphoto2
-PLIST_SUB+=	KAMERA:="@comment "
-
-.if defined(WITH_SANE)
-LIB_DEPENDS+=	sane.1:${PORTSDIR}/graphics/sane-backends
-PLIST_SUB+=	SANE:=""
-.else
-PLIST_SUB+=	SANE:="@comment "
-pre-everything::
-	@${ECHO_MSG} "===> If you want to compile this port with scanner support, use \"make WITH_SANE=yes\""
-.endif
-
 USE_KDELIBS_VER=2
 USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ARGS+=--without-kamera
+
+.include <bsd.port.pre.mk>
+
+# temporarily disable kamera, it requires gphoto2
+PLIST_SUB+=	KAMERA:="@comment "
+
+SANE_CONFIG=	${LOCALBASE}/bin/sane-config
+
+.if exists(${SANE_CONFIG})
+WITH_SANE=	yes
+.endif
+
+.if defined(WITH_SANE) && ${WITH_SANE} == yes
+LIB_DEPENDS+=	sane.1:${PORTSDIR}/graphics/sane-backends
+PLIST_SUB+=	SANE:=""
+.else
+PLIST_SUB+=	SANE:="@comment "
+pre-everything::
+	@${ECHO_MSG}
+	@${ECHO_MSG} "If you want to compile with scanner (SANE) support,"
+	@${ECHO_MSG} "hit Ctrl-C right now and use \"make WITH_SANE=yes\""
+	@${ECHO_MSG}
+.endif
 
 pre-configure:
 	${PERL} -pi -e "s@libkscan_la_LIBADD =@libkscan_la_LIBADD= -lintl@g" ${WRKSRC}/libkscan/Makefile.in
@@ -42,4 +53,4 @@ pre-configure:
 	find ${WRKSRC} -name Makefile.in | xargs ${PERL} -pi -e \
 		"s@GPHOTO2_LIBS =@GPHOTO2_LIBS= -lintl@g"
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
