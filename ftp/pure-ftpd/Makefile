@@ -2,11 +2,11 @@
 # Date created:				22 April 2001
 # Whom:					Frank DENIS
 #
-# $FreeBSD: ports/ftp/pure-ftpd/Makefile,v 1.14 2001/10/03 15:41:09 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pure-ftpd
-PORTVERSION=	0.99.9
+PORTVERSION=	1.0.0
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	pureftpd
@@ -26,7 +26,9 @@ LIB_DEPENDS+=	mysqlclient:${PORTSDIR}/databases/mysql323-client
 .endif
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=	--with-everything --with-paranoidmsg
+CONFIGURE_ARGS+=	--with-everything \
+			--with-paranoidmsg \
+			--sysconfdir=/etc
 # language support requested?
 .if defined(WITH_LANG)
 CONFIGURE_ARGS+=	--with-language="${WITH_LANG}"
@@ -86,7 +88,7 @@ pre-fetch:
 	@${ECHO} "WITH_LANG=lang        - enable compilation of language \
 		support, lang is one of"
 	@${ECHO} "  english, german, romanian, french, polish, spanish, dutch,"
-	@${ECHO} "  italian, brazilian-portuguese or danish."
+	@${ECHO} "  italian, brazilian-portuguese, danish, slovak or korean."
 	@${ECHO}
 
 post-install:
