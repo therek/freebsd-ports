@@ -2,10 +2,11 @@
 # Date created:		28 April 2001
 # Whom:			jdp
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/cvsup-devel/Makefile,v 1.1 2001/04/28 20:53:53 jdp Exp $
 #
 
 PORTVERSION=	16.1a
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp3.freebsd.org/pub/FreeBSD/development/CVSup/snapshots/ \
 		ftp://ftp.freebsd.org/pub/FreeBSD/development/CVSup/snapshots/ \
