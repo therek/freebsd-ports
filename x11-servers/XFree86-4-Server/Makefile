@@ -3,7 +3,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.70 1999/12/24 16:42:04 markm Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.71 2000/01/12 03:44:15 jmz Exp $
 #
 
 DISTNAME=	xc
@@ -68,7 +68,7 @@ pre-install:
 
 post-install:
 .if ${PORTOBJFORMAT} == "aout"
-.for lib in PEX5 SM XIE Xi Xmu Xt oldX
+.for lib in PEX5 SM XIE Xi Xmu Xt oldX XThrStub
 	${LN} -sf lib${lib}.so.6.0 ${PREFIX}/lib/lib${lib}.so
 .endfor
 .for lib in X11 Xaw Xtst
