@@ -2,15 +2,14 @@
 # Date created:		2000/11/10
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/mod_auth_pgsql/Makefile,v 1.1 2001/01/13 01:29:38 jeh Exp $
+# $FreeBSD: ports/www/mod_auth_pgsql/Makefile,v 1.2 2001/04/21 11:43:04 vanilla Exp $
 
 PORTNAME=	mod_auth_pgsql
-PORTVERSION=	0.9.5a
-PORTREVISION=	1
+PORTVERSION=	0.9.9
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.eurolink.it/pub/linux/postgreSQL/mod_auth_pgsql/
+MASTER_SITES=	http://www.giuseppetanzilli.it/mod_auth_pgsql/dist/
 
-MAINTAINER=	mi@aldan.algebra.com
+MAINTAINER=	ports@freebsd.org
 
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/${AP_PORT}
 RUN_DEPENDS=	${LOCALBASE}/sbin/${AP_TARGET}:${PORTSDIR}/www/${AP_PORT}
