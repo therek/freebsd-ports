@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.306 2000/10/30 13:55:25 nakai Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.307 2000/10/30 13:56:23 nakai Exp $
 #
 
     SUBDIR += Canna
@@ -56,6 +56,7 @@
     SUBDIR += exmh2
     SUBDIR += expect
     SUBDIR += freepwing
+    SUBDIR += gal
     SUBDIR += gawk
     SUBDIR += gd
     SUBDIR += gicq
