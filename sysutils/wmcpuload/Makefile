@@ -2,7 +2,7 @@
 # Date created:				18 Apr 2001
 # Whom:					Soeren Boll Overgaard <boll@tolkien.dk>
 #
-# $FreeBSD: ports/sysutils/wmcpuload/Makefile,v 1.4 2001/09/04 23:26:20 lioux Exp $
+# $FreeBSD: ports/sysutils/wmcpuload/Makefile,v 1.5 2001/09/08 21:04:51 petef Exp $
 #
 
 PORTNAME=	wmcpuload
@@ -20,6 +20,7 @@ ONLY_FOR_ARCHS=	i386
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+USE_XPM=	yes
 
 .ifndef(NOPORTDOCS)
 post-install:
