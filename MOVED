@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.487 2004/08/01 09:37:03 sem Exp $
+# $FreeBSD: ports/MOVED,v 1.488 2004/08/03 22:36:48 ade Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1216,5 +1216,5 @@ net/zebra-devel||2004-07-27|The same as net/zebra for some time
 mail/pear-mailparse|mail/pecl-mailparse|2004-07-30|Renamed
 security/lcrzo|net/netwib|2004-08-01|The project has been renamed and port moved to better category
 security/lcrzoex|net/netwox|2004-08-01|The project has been renamed and port moved to better category
-devel/autoconf|devel/autoconf253|2004-08-03|autotools cleanup  
-devel/automake|devel/automake15|2004-08-03|autotools cleanup  
+devel/autoconf|devel/autoconf253|2004-08-03|autotools cleanup
+devel/automake|devel/automake15|2004-08-03|autotools cleanup
