@@ -2,7 +2,7 @@
 # Date created:				2001-02-21
 # Whom:					trevor
 #
-# $FreeBSD: ports/devel/cvsgraph/Makefile,v 1.6 2001/05/31 22:48:46 ade Exp $
+# $FreeBSD: ports/devel/cvsgraph/Makefile,v 1.7 2001/06/01 18:56:04 trevor Exp $
 #
 
 PORTNAME=	cvsgraph
@@ -14,7 +14,7 @@ MAINTAINER=	trevor@FreeBSD.org
 
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

@@ -2,7 +2,7 @@
 # Date created:				10 May 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/clanlib/Makefile,v 1.2 2000/10/08 00:07:44 asami Exp $
+# $FreeBSD: ports/devel/clanlib/Makefile,v 1.3 2001/01/09 23:08:59 sobomax Exp $
 #
 
 PORTNAME=	clanlib
@@ -15,7 +15,7 @@ DISTNAME=	ClanLib-${PORTVERSION}
 MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	Hermes.1:${PORTSDIR}/graphics/Hermes \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		vga.1:${PORTSDIR}/graphics/svgalib
 
 .if defined(WITHOUT_GL)
