@@ -2,11 +2,11 @@
 # Date created:        28 May 2001
 # Whom:                Patrick Alken <cosine@ellipse.mcs.drexel.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ald/Makefile,v 1.1 2001/05/28 21:18:41 greid Exp $
 #
 
 PORTNAME=	ald
-PORTVERSION=	0.0.16
+PORTVERSION=	0.0.17
 CATEGORIES=	devel
 MASTER_SITES=	http://ellipse.mcs.drexel.edu/source/
 
