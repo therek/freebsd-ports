@@ -2,13 +2,13 @@
 # Date created:         7 April 1999
 # Whom:                 futatuki
 #
-# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.18 2000/06/30 15:43:37 motoyuki Exp $
+# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.19 2000/11/01 02:45:38 jeh Exp $
 #
 
 PORTNAME=	cdrdao
 PORTVERSION=	1.1.4
 CATEGORIES=	audio
-MASTER_SITES=	http://www.ping.de/sites/daneb/
+MASTER_SITES=	ftp://cdrdao.sourceforge.net/pub/cdrdao/
 EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	futatuki@debug.gr.jp
