@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.294 2000/06/09 03:35:19 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.295 2000/06/09 22:01:55 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -184,6 +184,7 @@
     SUBDIR += patch
     SUBDIR += pccts
     SUBDIR += pcre
+    SUBDIR += perforce
     SUBDIR += pharmacy
     SUBDIR += picprog
     SUBDIR += pmake
