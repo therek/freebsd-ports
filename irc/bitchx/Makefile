@@ -2,14 +2,17 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.15 2000/06/01 16:25:11 ade Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.16 2000/06/28 12:33:57 alex Exp $
 #
 
 PORTNAME=	BitchX
 PORTVERSION=	1.0c16
 CATEGORIES=	irc gnome
 MASTER_SITES=	ftp://ftp.bitchx.com/pub/BitchX/source/ \
+		ftp://ftp.bitchx.org/pub/BitchX/source/ \
 		ftp://ukug.uk.freebsd.org/pub/lord_cj/
+PATCH_SITES=	ftp://ftp.bitchx.org/pub/BitchX/source/
+PATCHFILES=	1.0c16-format.patch
 
 MAINTAINER=	cj@vallcom.net
 
@@ -17,6 +20,7 @@ MAINTAINER=	cj@vallcom.net
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 .endif
 
+PATCH_DIST_ARGS=       -d ${WRKSRC}/source --forward --quiet -E ${PATCH_DIST_STRIP}
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 WRKSRC=		${WRKDIR}/BitchX
