@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/net/Makefile,v 1.611 2001/09/08 13:01:34 sobomax Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -96,6 +96,7 @@
     SUBDIR += flow-tools
     SUBDIR += flowscan
     SUBDIR += fping
+    SUBDIR += freebsd-uucp
     SUBDIR += freeradius-devel
     SUBDIR += freewais-sf
     SUBDIR += fspclient
