@@ -1,8 +1,7 @@
-# $FreeBSD$
+# $FreeBSD: ports/ftp/Makefile,v 1.2 1999/08/25 05:54:58 obrien Exp $
 #
 
     SUBDIR += IglooFTP
-    SUBDIR += beroftpd
     SUBDIR += cftp
     SUBDIR += curl
     SUBDIR += downloader
