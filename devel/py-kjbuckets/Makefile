@@ -2,7 +2,7 @@
 # Date created:				03/27/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/devel/py-kjbuckets/Makefile,v 1.6 2000/04/14 18:40:14 knu Exp $
+# $FreeBSD: ports/devel/py-kjbuckets/Makefile,v 1.7 2000/06/20 13:37:35 nectar Exp $
 #
 
 PORTNAME=		kjbuckets
@@ -14,8 +14,8 @@ DISTNAME=		kjb
 
 MAINTAINER=		nectar@FreeBSD.org
 
-BUILD_DEPENDS=		python:${PORTSDIR}/lang/python
-RUN_DEPENDS=		python:${PORTSDIR}/lang/python
+BUILD_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
+RUN_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
 
 NO_WRKSUBDIR=		yes
 MAKEFILE=		makefile

@@ -2,7 +2,7 @@
 # Date created:		25 December 1999
 # Whom:			Russell L. Carter <rcarter@pinyon.org>
 #
-# $FreeBSD: ports/databases/metakit/Makefile,v 1.5 2000/06/16 21:50:35 asami Exp $
+# $FreeBSD: ports/databases/metakit/Makefile,v 1.6 2000/07/31 08:38:53 sobomax Exp $
 #
 
 PORTNAME=	metakit
@@ -13,8 +13,8 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	rcarter@pinyon.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
+RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/builds
 

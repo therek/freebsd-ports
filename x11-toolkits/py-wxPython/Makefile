@@ -2,7 +2,7 @@
 # Date created:         		September 18, 1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/x11-toolkits/py-wxPython/Makefile,v 1.8 2000/06/15 19:16:37 nectar Exp $
+# $FreeBSD: ports/x11-toolkits/py-wxPython/Makefile,v 1.9 2000/06/20 13:37:39 nectar Exp $
 #
 
 PORTNAME=	py-wxPython
@@ -13,9 +13,9 @@ DISTNAME=	wxPython-${PORTVERSION}
 
 MAINTAINER=	nectar@FreeBSD.ORG
 
-BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python
+BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 LIB_DEPENDS=	wx_gtk.2:${PORTSDIR}/x11-toolkits/wxgtk
-RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python
+RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 

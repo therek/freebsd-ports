@@ -2,7 +2,7 @@
 # Date created:				04/17/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.7 2000/05/05 09:14:53 tg Exp $
+# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.8 2000/06/20 13:37:38 nectar Exp $
 #
 
 PORTNAME=		py-xml
@@ -17,7 +17,7 @@ DISTNAME=		PyXML-${PORTVERSION}
 MAINTAINER=		nectar@FreeBSD.org
 
 BUILD_DEPENDS=		${LOCALBASE}/lib/python1.5/site-packages/distutils/core.py:${PORTSDIR}/misc/py-distutils
-RUN_DEPENDS=		python:${PORTSDIR}/lang/python
+RUN_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
 
 PLIST=			${WRKDIR}/PLIST
 

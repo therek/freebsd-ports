@@ -2,7 +2,7 @@
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.7 2000/05/16 09:07:56 tg Exp $
+# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.8 2000/08/03 09:24:53 asami Exp $
 #
 
 PORTNAME=	opengl
@@ -15,9 +15,9 @@ DISTNAME=	PyOpenGL-${PORTVERSION}
 
 MAINTAINER=	aa8vb@ipass.net
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python \
+BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15 \
 		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python \
+RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15 \
 		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy
 
 USE_MESA=	yes

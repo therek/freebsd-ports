@@ -2,7 +2,7 @@
 # Date created:				05/23/2000
 # Whom:					dwhite@FreeBSD.org
 #
-# $FreeBSD: ports/devel/py-kqueue/Makefile,v 1.6 2000/07/10 17:07:17 dwhite Exp $
+# $FreeBSD: ports/devel/py-kqueue/Makefile,v 1.7 2000/07/19 04:51:17 dwhite Exp $
 #
 
 PORTNAME=		kqueue
@@ -15,8 +15,8 @@ DISTNAME=		PyKQueue-${PORTVERSION}
 
 MAINTAINER=		dwhite@FreeBSD.org
 
-BUILD_DEPENDS=		python:${PORTSDIR}/lang/python
-RUN_DEPENDS=		python:${PORTSDIR}/lang/python
+BUILD_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
+RUN_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
 
 .include <bsd.port.pre.mk>
 

@@ -2,7 +2,7 @@
 # Date created:				06/22/2000
 # Whom:					kbyanc@posi.net
 #
-# $FreeBSD: ports/devel/py-coro/Makefile,v 1.1 2000/07/07 13:27:22 sobomax Exp $
+# $FreeBSD: ports/devel/py-coro/Makefile,v 1.2 2000/07/17 09:12:47 kbyanc Exp $
 #
 
 PORTNAME=		coro
@@ -15,8 +15,8 @@ DISTNAME=		egp-coro-20000424
 MAINTAINER=		kbyanc@posi.net
 
 BUILD_DEPENDS=		${LOCALBASE}/lib/libcoro.a:${PORTSDIR}/devel/libcoro \
-			python:${PORTSDIR}/lang/python
-RUN_DEPENDS=		python:${PORTSDIR}/lang/python
+			python1.5:${PORTSDIR}/lang/python15
+RUN_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
 
 CORO_MODULES=		coroutinemodule.so sendfilemodule.so
 CORO_PACKAGE=		coro corodns coromysql corourl \

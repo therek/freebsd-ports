@@ -2,7 +2,7 @@
 # Date created:				09/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.38 2000/06/07 18:06:25 ade Exp $
+# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.39 2000/08/21 10:07:33 sobomax Exp $
 #
 
 PORTNAME=	py-gtk
@@ -14,10 +14,10 @@ DISTNAME=	gnome-python-1.0.53
 
 MAINTAINER=	nectar@FreeBSD.org
 
-BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python
+BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12                  \
 		Imlib.5:${PORTSDIR}/graphics/imlib
-RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python
+RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
 GTK_CONFIG=	${X11BASE}/bin/gtk12-config
 USE_GMAKE=	yes

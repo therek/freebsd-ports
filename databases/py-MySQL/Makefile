@@ -2,7 +2,7 @@
 # Date created:				05 September 1999
 # Whom:                 		Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/databases/py-MySQL/Makefile,v 1.3 2000/04/23 16:24:04 vanilla Exp $
+# $FreeBSD: ports/databases/py-MySQL/Makefile,v 1.4 2000/06/01 08:28:46 sobomax Exp $
 #
 
 PORTNAME=	py-MySQL
@@ -13,9 +13,9 @@ DISTNAME=	MySQLmodule-${PORTVERSION}
 
 MAINTAINER=	dr@domix.de
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
+BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
 ALL_TARGET=	MySQLmodule.so
 

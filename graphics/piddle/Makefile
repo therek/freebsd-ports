@@ -2,7 +2,7 @@
 # Date created:				29 Feb 2000
 # Whom:					dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/graphics/piddle/Makefile,v 1.3 2000/05/22 10:26:31 will Exp $
+# $FreeBSD: ports/graphics/piddle/Makefile,v 1.4 2000/06/14 13:21:23 sobomax Exp $
 #
 
 PORTNAME=	piddle
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dom@myrddin.demon.co.uk
 
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 NO_BUILD=	yes

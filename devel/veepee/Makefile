@@ -2,7 +2,7 @@
 # Date created:				2 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/veepee/Makefile,v 1.1 2000/08/02 13:30:28 sobomax Exp $
 #
 
 PORTNAME=	veepee
@@ -13,10 +13,10 @@ DISTNAME=	VeePee-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
+BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gd.1:${PORTSDIR}/graphics/gd
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
 USE_XLIB=	yes
 USE_LIBTOOL=	yes

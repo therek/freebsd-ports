@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/www/evg/Makefile,v 1.3 2000/04/10 00:05:00 cpiazza Exp $
+# $FreeBSD: ports/www/evg/Makefile,v 1.4 2000/04/15 01:58:53 asami Exp $
 #
 
 PORTNAME=	evg
@@ -14,7 +14,7 @@ DISTNAME=	evg-1.01
 
 MAINTAINER=	dima@Chg.RU
 
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 RUN_DEPENDS+=	convert:${PORTSDIR}/graphics/ImageMagick
 RUN_DEPENDS+=	xv:${PORTSDIR}/graphics/xv
 

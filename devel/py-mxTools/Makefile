@@ -2,7 +2,7 @@
 # Date created:		20 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-mxTools/Makefile,v 1.5 2000/06/16 09:11:03 tg Exp $
+# $FreeBSD: ports/devel/py-mxTools/Makefile,v 1.6 2000/06/16 09:21:10 tg Exp $
 #
 
 PORTNAME=	mxTools
@@ -13,8 +13,8 @@ PKGNAMEPREFIX=	py-
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
+RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
 USE_ZIP=	yes
 EXTRACT_BEFORE_ARGS=	-aq

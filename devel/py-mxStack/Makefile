@@ -2,7 +2,7 @@
 # Date created:		14 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-mxStack/Makefile,v 1.5 2000/06/16 09:06:49 tg Exp $
+# $FreeBSD: ports/devel/py-mxStack/Makefile,v 1.6 2000/06/16 09:33:21 tg Exp $
 #
 
 PORTNAME=	mxStack
@@ -13,8 +13,8 @@ PKGNAMEPREFIX=	py-
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
+RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
 USE_ZIP=	yes
 EXTRACT_BEFORE_ARGS=	-aq

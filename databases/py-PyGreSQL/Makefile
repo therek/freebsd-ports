@@ -2,7 +2,7 @@
 # Date created:				2/22/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/databases/py-PyGreSQL/Makefile,v 1.21 2000/06/20 13:37:34 nectar Exp $
+# $FreeBSD: ports/databases/py-PyGreSQL/Makefile,v 1.22 2000/08/26 09:15:05 andreas Exp $
 #
 
 PORTNAME=		py-PyGreSQL
@@ -14,8 +14,8 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		nectar@FreeBSD.org
 
-BUILD_DEPENDS=		python:${PORTSDIR}/lang/python
-RUN_DEPENDS=		python:${PORTSDIR}/lang/python
+BUILD_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
+RUN_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
 LIB_DEPENDS=		pq.2:${PORTSDIR}/databases/postgresql7
 
 MAKE_ENV=		PYTHON=${PREFIX}/bin/python \

@@ -2,7 +2,7 @@
 # Date created:				06/08/2000
 # Whom:					kbyanc@posi.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/py-htmlkit/Makefile,v 1.1 2000/06/09 22:01:55 will Exp $
 #
 
 PORTNAME=		HtmlKit
@@ -15,7 +15,7 @@ EXTRACT_SUFX=		.tar
 
 MAINTAINER=		kbyanc@posi.net
 
-RUN_DEPENDS=		python:${PORTSDIR}/lang/python
+RUN_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
 
 NO_BUILD=		yes
 

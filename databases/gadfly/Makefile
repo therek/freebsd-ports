@@ -2,7 +2,7 @@
 # Date created:         30 October 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/gadfly/Makefile,v 1.3 1999/08/31 06:41:10 mharo Exp $
+# $FreeBSD: ports/databases/gadfly/Makefile,v 1.4 2000/04/08 22:48:25 mharo Exp $
 #
 
 PORTNAME=	gadfly
@@ -13,8 +13,8 @@ DISTNAME=       kwP
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
+RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
 NO_WRKSUBDIR=	yes
 

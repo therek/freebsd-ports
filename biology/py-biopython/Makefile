@@ -2,7 +2,7 @@
 # Date created:		28 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/py-biopython/Makefile,v 1.1 2000/07/31 12:12:23 nbm Exp $
+# $FreeBSD: ports/biology/py-biopython/Makefile,v 1.2 2000/08/05 16:01:27 will Exp $
 #
 
 PORTNAME=	biopython
@@ -14,7 +14,7 @@ DISTNAME=	biopython-0.90-d02
 
 MAINTAINER=	johann@egenetics.com
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python \
+BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15 \
 		${LOCALBASE}/lib/python1.5/site-packages/Numeric/Numeric.py:${PORTSDIR}/math/numpy \
 		${LOCALBASE}/lib/python1.5/site-packages/distutils/core.py:${PORTSDIR}/misc/py-distutils
 
