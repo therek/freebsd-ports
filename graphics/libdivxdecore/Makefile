@@ -1,8 +1,8 @@
 # New ports collection makefile for:	libdivxdecore
-# Date created:		03 Feb 20001
+# Date created:		03 Feb 2001
 # Whom:			Mario S F Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/libdivxdecore/Makefile,v 1.1 2001/02/12 21:16:50 lioux Exp $
 #
 
 PORTNAME=	libdivxdecore
