@@ -2,7 +2,7 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.14 2000/09/22 01:58:59 kris Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.15 2000/10/08 10:22:51 asami Exp $
 #
 
 PORTNAME=	cyrus-sasl
@@ -43,12 +43,18 @@ CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc \
 		--enable-static \
 		--enable-login \
 		--with-pwcheck=/var/pwcheck \
+		--with-dblib=ndbm \
 		--with-rc4=openssl
 
 SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 		PREFIX="${PREFIX}" \
 		TOUCH="${TOUCH}" \
-		MKDIR="${MKDIR}"
+		MKDIR="${MKDIR}" \
+		ENABLE_DB3="${ENABLE_DB3}" \
+		ENABLE_MYSQL="${ENABLE_MYSQL}" \
+		ENABLE_LDAP="${ENABLE_LDAP}"
+
+# ENABLE_* variables can be used by depending ports to enable options.
 
 # JavaSASL needs someone to look at to get it to build
 #JAVADIR=        jdk1.1.8
@@ -65,16 +71,16 @@ SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 #.endif
 
 .if defined(KRB5_HOME) && exists(${KRB5_HOME})
-CONFIGURE_ARGS+= --enable-gssapi=${KRB5_HOME}
+CONFIGURE_ARGS+=	--enable-gssapi=${KRB5_HOME}
 .else
-CONFIGURE_ARGS+= --disable-gssapi
+CONFIGURE_ARGS+=	--disable-gssapi
 GSSAPI=	"@comment "
 .endif
 
 .if exists(/usr/lib/libkrb.a)
-CONFIGURE_ARGS+= --enable-krb4
+CONFIGURE_ARGS+=	--enable-krb4
 .else
-CONFIGURE_ARGS+= --disable-krb4
+CONFIGURE_ARGS+=	--disable-krb4
 EBONES=	"@comment "
 .endif
 
