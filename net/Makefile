@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.322 2000/01/02 10:23:19 obrien Exp $
+# $FreeBSD: ports/net/Makefile,v 1.323 2000/01/04 08:17:21 dbaker Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -85,6 +85,7 @@
     SUBDIR += kdetelnet
     SUBDIR += kicq
     SUBDIR += ksamba
+    SUBDIR += lambdamoo
     SUBDIR += ldap
     SUBDIR += ldapsdk
     SUBDIR += libicq
