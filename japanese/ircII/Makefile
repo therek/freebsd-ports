@@ -2,11 +2,12 @@
 # Date created:		02 May 1996
 # Whom:			Masafumi
 #
-# $FreeBSD: ports/japanese/ircII/Makefile,v 1.11 1999/08/31 06:45:35 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ircii
 PORTVERSION=	2.8.2
+PORTREVISION=	1
 CATEGORIES=	japanese irc
 MASTER_SITES=	ftp://cs-ftp.bu.edu/irc/clients/ \
 		ftp://ftp.kyoto.wide.ad.jp/IRC/ircII/
