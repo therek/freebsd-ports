@@ -3,7 +3,7 @@
 # Date created:		Sat Aug 22 12:00:00 CDT 1998
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.56 2000/01/08 19:17:37 rse Exp $
+# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.57 2000/01/22 21:13:59 rse Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -41,18 +41,17 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 
 MAINTAINER=	rse@engelschall.com
 
-BUILD_DEPENDS=	openssl:${PORTSDIR}/security/openssl \
-		mm-config:${PORTSDIR}/devel/mm \
+USE_OPENSSL=	NORSA
+
+.include <bsd.port.pre.mk>
+
+BUILD_DEPENDS=	mm-config:${PORTSDIR}/devel/mm \
 		${PREFIX}/lib/libmm.a:${PORTSDIR}/devel/mm
-LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
-		ssl.1:${PORTSDIR}/security/openssl
-RUN_DEPENDS=	openssl:${PORTSDIR}/security/openssl
 
 VERSION_APACHE=	1.3.11
 VERSION_MODSSL=	2.5.0
 
 Y2K=		http://www.modssl.org/docs/2.4/ssl_faq.html#y2k
-RESTRICTED=	"Contains cryptography"
 
 USE_PERL5=	yes
 HAS_CONFIGURE=	yes
@@ -91,6 +90,7 @@ CFLAGS+=	-O6 -funroll-loops -fstrength-reduce -fomit-frame-pointer \
 CONFIGURE_ENV=	CFLAGS='${CFLAGS}' \
 		OPTIM='${OPTIM}' \
 		SSL_BASE='SYSTEM' \
+		RSA_BASE='SYSTEM' \
 		EAPI_MM='SYSTEM' \
 		PATH="${PREFIX}/bin:${PATH}"
 
@@ -133,4 +133,4 @@ post-install:
 		${CHMOD} 751 ${PREFIX}/etc/rc.d/apache.sh; \
 	fi
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
