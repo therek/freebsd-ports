@@ -2,10 +2,10 @@
 # Date created:				29 MAY 2000
 # Whom:					Eric Schwertfeger <eric@cybernut.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/lsh/Makefile,v 1.1 2000/06/02 02:56:28 will Exp $
 
 PORTNAME=	lsh
-PORTVERSION=	0.9.10
+PORTVERSION=	0.9.11
 CATEGORIES=	security ipv6
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/security/lsh/
 DISTNAME=	${PORTNAME}-${PORTVERSION}
