@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.248 1999/12/10 15:15:16 steve Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.249 1999/12/10 15:21:48 steve Exp $
 #
 
     SUBDIR += 221upgrade
@@ -99,7 +99,6 @@
     SUBDIR += team
     SUBDIR += tet
     SUBDIR += tkcron
-    SUBDIR += tkdiff
     SUBDIR += tkinfo
     SUBDIR += tkman
     SUBDIR += tkrunit
