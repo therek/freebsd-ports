@@ -3,12 +3,12 @@
 # Date created:			  Thu Aug 23, 2001
 # Whom:				  David W. Chapman Jr. (dwcjr@FreeBSD.org)
 #
-# $FreeBSD: ports/sysutils/diskcheckd/Makefile,v 1.1 2001/08/24 14:33:09 dwcjr Exp $
+# $FreeBSD: ports/sysutils/diskcheckd/Makefile,v 1.2 2001/08/28 16:52:45 dwcjr Exp $
 #
 
 PORTNAME=	diskcheckd
 PORTVERSION=	20010823
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	# part of port
 DISTFILES=	# part of port
@@ -41,6 +41,7 @@ do-extract:
 
 do-patch:
 	@${PERL} -pi.fbsd -e 's|/usr/local/sbin|${PREFIX}/sbin|g' ${WRKSRC}/Makefile
+	@${PERL} -pi.fbsd -e 's|/usr/local/etc/diskcheckd.conf|${PREFIX}/etc/diskcheckd.conf|g' ${WRKSRC}/diskcheckd.8
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/diskcheckd ${PREFIX}/sbin
