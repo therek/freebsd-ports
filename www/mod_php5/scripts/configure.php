@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.165 2002/04/17 05:46:46 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.166 2002/04/27 11:15:18 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -131,7 +131,7 @@ while [ "$1" ]; do
 			echo "CONFIGURE_ARGS+=--with-bz2=${BZ2PREFIX}"
 			;;
 		\"mcrypt\")
-			echo "LIB_DEPENDS+=	mcrypt.6:\${PORTSDIR}/security/libmcrypt"
+			echo "LIB_DEPENDS+=	mcrypt.7:\${PORTSDIR}/security/libmcrypt"
 			echo "CONFIGURE_ARGS+=--with-mcrypt=\${LOCALBASE}"
 			;;
 		\"mhash\")
