@@ -2,15 +2,16 @@
 # Date created:		3 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/ruby-sha1/Makefile,v 1.1 2000/11/02 19:16:43 knu Exp $
 #
 
 PORTNAME=	sha1
-PORTVERSION=	2000.11.03
+PORTVERSION=	1.1
+PORTEPOCH=	1
 CATEGORIES=	converters ruby
 MASTER_SITES=	http://www.omcl.org/~spcoltri/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
-DISTNAME=	ruby-${PORTNAME}
+DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
