@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.292 2001/03/31 04:05:25 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.293 2001/04/01 03:38:37 nsayer Exp $
 #
 
     SUBDIR += 4va
@@ -191,6 +191,7 @@
     SUBDIR += ruby-ming
     SUBDIR += ruby-opengl
     SUBDIR += ruby-qt2gl
+    SUBDIR += ruby-tgif
     SUBDIR += s10sh
     SUBDIR += sane-backends
     SUBDIR += sane-frontends
