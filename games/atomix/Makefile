@@ -3,7 +3,7 @@
 # Date created:        30 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/atomix/Makefile,v 1.1.1.1 2000/02/04 13:02:44 nakai Exp $
 #
 
 DISTNAME=	atomix-0.2.0-1
@@ -12,6 +12,9 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.informatik.uni-oldenburg.de/~pearl/download/
 
 MAINTAINER=	nakai@FreeBSD.org
+
+LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
+		xml.5:${PORTSDIR}/textproc/libxml
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
