@@ -2,11 +2,11 @@
 # Date created:		15 May 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/print/pdq/Makefile,v 1.4 2000/04/09 17:40:58 cpiazza Exp $
+# $FreeBSD: ports/print/pdq/Makefile,v 1.5 2000/04/09 17:50:26 cpiazza Exp $
 #
 
 PORTNAME=	pdq
-PORTVERSION=	2.1.1
+PORTVERSION=	2.2.1
 CATEGORIES=	print
 MASTER_SITES=	ftp://feynman.tam.uiuc.edu/pub/pdq/
 EXTRACT_SUFX=	.tgz
@@ -19,6 +19,7 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--enable-pdqlibdir=${PREFIX}/etc/pdq
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"
 
@@ -26,12 +27,11 @@ MAN1=		lpd_cancel.1 lpd_print.1 lpd_status.1 pdq.1 xpdq.1
 MAN5=		printrc.5
 
 post-install:
-	${CP} ${WRKSRC}/sample_etc_printrc ${PREFIX}/etc/printrc.sample
 	strip ${PREFIX}/bin/pdq
 	strip ${PREFIX}/bin/xpdq
 	strip ${PREFIX}/bin/lpd_cancel
 	strip ${PREFIX}/bin/lpd_print
 	strip ${PREFIX}/bin/lpd_status
-	@${CAT} pkg/MESSAGE
+	@${SED} 's|%%PREFIX%%|${PREFIX}|g' pkg/MESSAGE
 
 .include <bsd.port.mk>
