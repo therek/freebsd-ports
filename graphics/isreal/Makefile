@@ -2,13 +2,14 @@
 # Date created:				Mar 31, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/graphics/isreal/Makefile,v 1.2 2001/05/27 09:14:40 ijliao Exp $
+# $FreeBSD: ports/graphics/isreal/Makefile,v 1.3 2001/06/08 05:36:35 markp Exp $
 #
 
 PORTNAME=	isreal
 PORTVERSION=	2.0
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.striker.ottawa.on.ca/pub/isreal/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	markp
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	markp@FreeBSD.org
