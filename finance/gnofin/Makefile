@@ -3,14 +3,14 @@
 # Date created:				Sun Jul 18 1999
 # Whom:					domi@saargate.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/gnofin/Makefile,v 1.1.1.1 1999/12/23 20:42:33 jedgar Exp $
 #
 
-DISTNAME=	gnofin-0.5.10
+DISTNAME=	gnofin-0.7.1
 CATEGORIES=	deskutils
-MASTER_SITES=	ftp://jagger.berkeley.edu/pub/darin/gnofin/source/
+MASTER_SITES=	http://download.sourceforge.net/gnofin/
 
-MAINTAINER=	domi@saargate.de
+MAINTAINER=	jedgar@FreeBSD.org
 
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
 
