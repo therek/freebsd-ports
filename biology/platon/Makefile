@@ -2,13 +2,13 @@
 # Date created:		1999-04-22
 # Whom:			Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/platon/Makefile,v 1.7 2000/05/28 03:56:25 steve Exp $
+# $FreeBSD: ports/biology/platon/Makefile,v 1.8 2000/06/08 08:51:02 knu Exp $
 #
 
 PORTNAME=	platon
 PORTVERSION=	2000.06.05
 CATEGORIES=	biology
-MASTER_SITES=	ftp://xraysoft.chem.ruu.nl/pub/unix/
+MASTER_SITES=	ftp://xraysoft.chem.uu.nl/pub/unix/
 DISTNAME=	platon
 
 MAINTAINER=	rmiya@cc.hirosaki-u.ac.jp
