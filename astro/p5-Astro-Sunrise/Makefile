@@ -2,11 +2,11 @@
 # Date created:				25 April 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/astro/p5-Astro-Sunrise/Makefile,v 1.1 2001/04/28 15:03:42 joe Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Astro-Sunrise
-PORTVERSION=	0.04
+PORTVERSION=	0.05
 CATEGORIES=	astro perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Astro
