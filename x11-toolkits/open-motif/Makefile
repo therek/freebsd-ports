@@ -3,7 +3,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.12 2000/08/29 02:02:17 obrien Exp $
+# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.13 2000/09/14 10:43:24 asami Exp $
 #
 
 PORTNAME=	open-motif
@@ -25,6 +25,7 @@ MAINTAINER=	steve@FreeBSD.org
 
 RUN_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
 
+MTREE_FILE=	/etc/mtree/BSD.x11-4.dist
 DIST_SUBDIR=	openmotif
 WRKSRC=		${WRKDIR}/motif
 USE_IMAKE=	yes
