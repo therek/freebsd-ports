@@ -2,11 +2,12 @@
 # Date created:		23 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt2table/Makefile,v 1.5 2001/03/28 12:33:17 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2table/Makefile,v 1.6 2001/04/06 09:22:09 knu Exp $
 #
 
 PORTNAME=	qt2table
 PORTVERSION=	${RUBY_QT2_PORTVERSION}
+PORTREVISION=	${RUBY_QT2_PORTREVISION}
 CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	${RUBY_QT2_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -20,12 +21,8 @@ RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/qt2.so:${RUBY_QT2_PORTDIR}
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
-RUBY_WITH_PTHREAD=	yes
 
 USE_GMAKE=	yes
-
-.include <bsd.port.pre.mk>
-.include "${.CURDIR}/../ruby-qt2/Makefile.common"
 
 WRKSRC=		${RUBY_QT2_WRKSRC}/modules/table
 CONFIGURE_ARGS=	${RUBY_QT2_CONFIGURE_ARGS}
@@ -38,4 +35,5 @@ post-install:
 	${CP} -R ${WRKSRC}/examples/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 .endif
 
-.include <bsd.port.post.mk>
+.include "${.CURDIR}/../ruby-qt2/Makefile.common"
+.include <bsd.port.mk>

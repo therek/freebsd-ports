@@ -2,11 +2,12 @@
 # Date created:		7 Feb 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-qt2gl/Makefile,v 1.5 2001/03/28 12:33:15 knu Exp $
+# $FreeBSD: ports/graphics/ruby-qt2gl/Makefile,v 1.6 2001/04/06 09:22:07 knu Exp $
 #
 
 PORTNAME=	qt2gl
 PORTVERSION=	${RUBY_QT2_PORTVERSION}
+PORTREVISION=	${RUBY_QT2_PORTREVISION}
 CATEGORIES=	graphics x11-toolkits ruby
 MASTER_SITES=	${RUBY_QT2_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -22,12 +23,8 @@ RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/qt2.so:${RUBY_QT2_PORTDIR} \
 USE_MESA=	yes
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
-RUBY_WITH_PTHREAD=	yes
 
 USE_GMAKE=	yes
-
-.include <bsd.port.pre.mk>
-.include "${.CURDIR}/../../x11-toolkits/ruby-qt2/Makefile.common"
 
 WRKSRC=		${RUBY_QT2_WRKSRC}/modules/opengl
 CONFIGURE_ARGS=	${RUBY_QT2_CONFIGURE_ARGS}
@@ -45,4 +42,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_DOCDIR}/${PORTNAME}/
 .endif
 
-.include <bsd.port.post.mk>
+.include "${.CURDIR}/../../x11-toolkits/ruby-qt2/Makefile.common"
+.include <bsd.port.mk>

@@ -2,11 +2,12 @@
 # Date created:		9 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.27 2001/04/05 19:26:20 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.28 2001/04/06 09:22:08 knu Exp $
 #
 
 PORTNAME=	qt2
 PORTVERSION=	${RUBY_QT2_PORTVERSION}
+PORTREVISION=	${RUBY_QT2_PORTREVISION}
 CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	${RUBY_QT2_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -18,12 +19,8 @@ MAINTAINER=	knu@FreeBSD.org
 USE_QT_VER=	2
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
-RUBY_WITH_PTHREAD=	yes
 
 USE_GMAKE=	yes
-
-.include <bsd.port.pre.mk>
-.include "${.CURDIR}/Makefile.common"
 
 WRKSRC=		${RUBY_QT2_WRKSRC}
 CONFIGURE_ARGS=	${RUBY_QT2_CONFIGURE_ARGS}
@@ -46,4 +43,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README.jp ${RUBY_DOCDIR}/${PORTNAME}/ja/
 .endif
 
-.include <bsd.port.post.mk>
+.include "${.CURDIR}/Makefile.common"
+.include <bsd.port.mk>
