@@ -2,7 +2,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.49 2000/11/21 07:38:23 marcel Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.50 2000/11/25 01:49:16 asami Exp $
 #
 
 PORTNAME=		linux_base
@@ -36,6 +36,7 @@ RPM_MIRRORS=		\
 	ftp://ftp.crc.ca/mirrors/by-site/ftp.redhat.com/redhat/__DIR__/ \
 	ftp://ftp.nluug.nl/site/ftp.redhat.com/redhat/__DIR__/ \
 	ftp://mirror.nucba.ac.jp/mirror/redhat/__DIR__/ \
+	ftp://ftp.mirror.ac.uk/sites/ftp.redhat.com/pub/redhat/__DIR__/ \
 	ftp://ftp.is.co.za/linux/distributions/redhat/__DIR__/ \
 	ftp://mirror.aarnet.edu.au/pub/linux/redhat/__DIR__/
 
