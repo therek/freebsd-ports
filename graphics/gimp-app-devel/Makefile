@@ -2,11 +2,11 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.69 2000/04/26 21:49:30 jim Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.70 2000/05/19 21:14:09 jim Exp $
 #
 
 PORTNAME=	gimp
-PORTVERSION=	1.1.22
+PORTVERSION=	1.1.23
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/unstable/v${PORTVERSION}/ \
 		ftp://ftp.insync.net/pub/mirrors/ftp.gimp.org/gimp/unstable/v${PORTVERSION}/ \
@@ -27,8 +27,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		mpeg.1:${PORTSDIR}/graphics/mpeg-lib \
 		png.3:${PORTSDIR}/graphics/png \
-		tiff.4:${PORTSDIR}/graphics/tiff \
-		intl.1:${PORTSDIR}/devel/gettext
+		tiff.4:${PORTSDIR}/graphics/tiff
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
