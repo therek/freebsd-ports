@@ -3,7 +3,7 @@
 # Date created:         2 July 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/math/lapack/Makefile,v 1.13 1999/09/22 22:05:07 jmz Exp $
+# $FreeBSD: ports/math/lapack/Makefile,v 1.14 1999/10/06 01:48:54 jmz Exp $
 #
 
 DISTNAME=	LAPACK
@@ -207,7 +207,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/BLAS/SRC/libblas.* ${PREFIX}/lib
 	${INSTALL_DATA} ${WRKSRC}/SRC/liblapack.* ${PREFIX}/lib
 .if ${PORTOBJFORMAT} == "elf"
-	${LN} -sf libblas.so.2 ${PREFIX}/lib/libblas.so
+	${LN} -sf libblas.so.3 ${PREFIX}/lib/libblas.so
 	${LN} -sf liblapack.so.3 ${PREFIX}/lib/liblapack.so
 .else
 	${LN} -sf libblas.so.2.0 ${PREFIX}/lib/libblas.so
