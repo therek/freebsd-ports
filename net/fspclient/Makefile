@@ -3,7 +3,7 @@
 # Date created:         7 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/net/fspclient/Makefile,v 1.11 1999/08/30 14:22:43 peter Exp $
+# $FreeBSD: ports/net/fspclient/Makefile,v 1.12 1999/08/31 06:48:47 mharo Exp $
 #
 
 DISTNAME=       fspclient.0.0-h+
@@ -12,7 +12,7 @@ CATEGORIES=	net
 MASTER_SITES=   ftp://ftp.germany.eu.net/pub/networking/fsp/
 EXTRACT_SUFX=   .tar.z
 
-MAINTAINER=     ache@FreeBSD.org
+MAINTAINER=     ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/fspclient
 GNU_CONFIGURE=	yes
