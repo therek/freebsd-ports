@@ -2,14 +2,15 @@
 # Date created:        23 March 2001
 # Whom:                Roland Jesse <jesse@cs.uni-magdeburg.de>
 #
-# $FreeBSD: ports/misc/mango/Makefile,v 1.2 2001/05/09 14:41:08 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mango
 PORTVERSION=	0.3
 PORTREVISION=	2
 CATEGORIES=	misc
-MASTER_SITES=	http://prdownloads.sourceforge.net/mango/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=mango
 
 MAINTAINER=	jesse@cs.uni-magdeburg.de
 
