@@ -2,26 +2,26 @@
 # Date created:                 2 Jul 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/hlatex-psfonts-uhc-extra/Makefile,v 1.1.1.1 2000/07/04 17:53:23 cjh Exp $
+# $FreeBSD: ports/korean/hlatex-psfonts-uhc-extra/Makefile,v 1.2 2000/07/05 13:39:05 cjh Exp $
 #
 
-PORTNAME=               HLaTeX-psfonts-${HLATEX_ENCODING}-extra
-PORTVERSION=            0.99
-CATEGORIES=             korean print
-MASTER_SITES=           ftp://ftp.linguistik.uni-erlangen.de/pub/hangul/HLaTeX/packed/
-DISTFILES=              ${HLATEX_PSFONTS_EXTRA}
-DIST_SUBDIR=		hlatex
+PORTNAME=	HLaTeX-psfonts-${HLATEX_ENCODING}-extra
+PORTVERSION=	0.99
+CATEGORIES=	korean print
+MASTER_SITES=	ftp://ftp.linguistik.uni-erlangen.de/pub/hangul/HLaTeX/packed/
+DISTFILES=	${HLATEX_PSFONTS_EXTRA}
+DIST_SUBDIR=	hlatex
 EXTRACT_ONLY=
 
-MAINTAINER=             cjh@FreeBSD.org
+MAINTAINER=	cjh@FreeBSD.org
 
-RUN_DEPENDS=		${LOCALBASE}/share/texmf/doc/latex/hlatex/uhc.ks:${PORTSDIR}/korean/hlatex
+RUN_DEPENDS=	${LOCALBASE}/share/texmf/doc/latex/hlatex/uhc.ks:${PORTSDIR}/korean/hlatex
 
 # just install directly
-NO_BUILD=		YES
-NO_WRKSUBDIR=		YES
+NO_BUILD=	YES
+NO_WRKSUBDIR=	YES
 
-TEXMF=			${PREFIX}/share/texmf
+TEXMF=		${PREFIX}/share/texmf
 
 # default encoding
 HLATEX_ENCODING=        uhc

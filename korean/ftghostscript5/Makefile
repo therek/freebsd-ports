@@ -2,7 +2,7 @@
 # Date created:		27 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/ftghostscript5/Makefile,v 1.17 2000/07/16 10:36:07 cjh Exp $
+# $FreeBSD: ports/korean/ftghostscript5/Makefile,v 1.18 2000/08/03 09:25:18 asami Exp $
 #
 # Based on print/ghostscript5 and japanese/vfghostscript5
 #   use Adobe's CID-keyed Korean font because there are no wide accepted
@@ -58,11 +58,11 @@ DECRYPT_PDF=	pdf_sec.ps
 # vflib patch
 VFLIB_GS=       gs5.10-vflib-1.1.tar.gz
 # kfftype
-KFFTYPE=        gs5-kfftype.tar.gz
+KFFTYPE=	gs5-kfftype.tar.gz
 # kfftype patches
 KFFTYPE_PATCH=  gs5-kfftype-patch1.diff gs5-kfftype-patch2.diff
 # hfftype patch
-HFFTYPE=        gs5-hfftype-0.2.tar.gz
+HFFTYPE=	gs5-hfftype-0.2.tar.gz
 # cid-keyed font bug patch for 5.10
 GS_CID_PATCH=   gs5.10-cid-bugfix.diff
 

@@ -2,7 +2,7 @@
 # Date created:		15 Mar 1998
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/johabfonts/Makefile,v 1.11 2000/07/23 05:06:25 cjh Exp $
+# $FreeBSD: ports/korean/johabfonts/Makefile,v 1.12 2000/09/12 13:03:53 asami Exp $
 #
 
 PORTNAME=	johabfonts
@@ -10,7 +10,7 @@ PORTVERSION=	3.04
 CATEGORIES=	korean x11-fonts
 MASTER_SITES=	ftp://ftp.kaist.ac.kr/pub/hangul/terminal/hanterm/hanterm304beta/fonts/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/terminal/hanterm/hanterm304beta/fonts/
-DISTNAME=       hanterm304fonts
+DISTNAME=	hanterm304fonts
 
 MAINTAINER=	cjh@FreeBSD.org
 

@@ -2,10 +2,10 @@
 # Date created:                 Jun 29 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/hlatexp-pkfonts600/Makefile,v 1.2 2000/10/08 10:21:44 asami Exp $
+# $FreeBSD: ports/korean/hlatexp-pkfonts600/Makefile,v 1.3 2000/11/03 11:40:27 cjh Exp $
 #
 
-MASTERDIR=      ${.CURDIR}/../hlatexp-pkfonts300
+MASTERDIR=	${.CURDIR}/../hlatexp-pkfonts300
 FILESDIR=	${.CURDIR}/files
 PKGDIR=		${.CURDIR}
 MD5_FILE=	${.CURDIR}/distinfo

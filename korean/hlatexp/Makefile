@@ -2,7 +2,7 @@
 # Date created:                 Jun 28 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/hlatexp/Makefile,v 1.2 2000/07/08 12:08:07 cjh Exp $
+# $FreeBSD: ports/korean/hlatexp/Makefile,v 1.3 2000/08/31 17:09:51 cjh Exp $
 #
 
 PORTNAME=	hLaTeXp
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://knot.kaist.ac.kr/pub/htex/hlatexp/ \
 DISTFILES=	unpacked.tar.gz htex.tfm.tar.gz
 DIST_SUBDIR=	htex
 
-MAINTAINER=     cjh@FreeBSD.org
+MAINTAINER=	cjh@FreeBSD.org
 
 # it depends teTeX.
 RUN_DEPENDS=	virtex:${PORTSDIR}/print/teTeX
@@ -22,7 +22,7 @@ NO_BUILD=	YES
 
 TEXMF=		${PREFIX}/share/texmf
 TEXMFCNF=	${TEXMF}/web2c/texmf.cnf
-PKFONTSUB= 's@(^PKFONTS\s+=\s+\.)@\1;\$$TEXMF/fonts/pk/\{xhan300,xhan600,xhan1200\}@g'
+PKFONTSUB=	's@(^PKFONTS\s+=\s+\.)@\1;\$$TEXMF/fonts/pk/\{xhan300,xhan600,xhan1200\}@g'
 
 do-install:
 	### pk dir

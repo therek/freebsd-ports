@@ -2,16 +2,16 @@
 # Date created:         17 Mar 1998
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org
 #
-# $FreeBSD: ports/korean/hanIM/Makefile,v 1.10 2000/08/03 09:25:21 asami Exp $
+# $FreeBSD: ports/korean/hanIM/Makefile,v 1.11 2000/11/05 02:32:40 cjh Exp $
 #
 
 PORTNAME=	hanIM
 PORTVERSION=	1.2.1
 PORTREVISION=	1
-CATEGORIES=     korean x11
+CATEGORIES=	korean x11
 MASTER_SITES=   ftp://ftp.mizi.com/pub/hanIM/
 
-MAINTAINER=     cjh@FreeBSD.org
+MAINTAINER=	cjh@FreeBSD.org
 
 RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/local/gulim12.pcf.gz:${PORTSDIR}/korean/baekmukfonts-bdf
 

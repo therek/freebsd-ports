@@ -2,7 +2,7 @@
 # Date created:         25 Sep 2000
 # Whom:                 cjh
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/texinfo/Makefile,v 1.1 2000/09/25 16:06:41 cjh Exp $
 #
 
 PORTNAME=	texinfo
@@ -11,7 +11,7 @@ CATEGORIES=	korean print
 MASTER_SITES=	http://master.debian.or.kr/~cwryu/archive/texinfo-ko/
 DISTNAME=	${PORTNAME}-ko-${PORTVERSION}
 
-MAINTAINER=     cjh@FreeBSD.org
+MAINTAINER=	cjh@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 RUN_DEPENDS=	${LOCALBASE}/share/texmf/doc/latex/hlatex/uhc.ks:${PORTSDIR}/korean/hlatex

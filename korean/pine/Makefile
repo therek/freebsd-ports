@@ -4,16 +4,16 @@
 #
 # k3 means pico hangul patch
 #
-# $FreeBSD: ports/korean/pine/Makefile,v 1.14 2000/07/23 05:06:37 cjh Exp $
+# $FreeBSD: ports/korean/pine/Makefile,v 1.15 2000/09/29 08:07:30 kris Exp $
 #
 
 PORTNAME=	pine
 PORTVERSION=	3.96k.3
-CATEGORIES=     korean mail news
+CATEGORIES=	korean mail news
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/old/ \
 		ftp://ftp.kaist.ac.kr/pub/hangul/incoming/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/incoming/
-DISTNAME=       pine3.96
+DISTNAME=	pine3.96
 DISTFILES=	pine3.96.tar.Z pine396k2.tar.gz
 
 PATCH_SITES=	ftp://ftp.kr.freebsd.org/pub/users/cjh/unix-app/misc/

@@ -2,7 +2,7 @@
 # Date created:		22 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/pinetreefonts/Makefile,v 1.13 2000/07/23 05:06:38 cjh Exp $
+# $FreeBSD: ports/korean/pinetreefonts/Makefile,v 1.14 2000/09/12 13:03:54 asami Exp $
 #
 
 PORTNAME=	pinetreefonts
@@ -11,7 +11,7 @@ CATEGORIES=	korean x11-fonts
 MASTER_SITES=	ftp://cglab.snu.ac.kr/pub/hangul/n3f/tar/ \
 		ftp://ftp.kaist.ac.kr/pub/hangul/fonts/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/fonts/
-DISTNAME=       pinetree.precomposed-${PORTVERSION}-bdf
+DISTNAME=	pinetree.precomposed-${PORTVERSION}-bdf
 
 MAINTAINER=	cjh@FreeBSD.org
 

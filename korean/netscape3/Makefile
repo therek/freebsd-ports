@@ -2,7 +2,7 @@
 # Date created:		6 Apr 1995
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/netscape3/Makefile,v 1.12 2000/07/23 05:06:31 cjh Exp $
+# $FreeBSD: ports/korean/netscape3/Makefile,v 1.13 2000/10/08 10:21:47 asami Exp $
 #
 
 PORTNAME=	netscape
@@ -22,16 +22,16 @@ NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 
 # This directory is hard-coded into the netscape binary
-LIBDIR=         ${PREFIX}/lib/netscape
-BINDIR=         ${PREFIX}/bin
-NLSDIR=         ${LIBDIR}/nls
-RESSUB=         ko_KR.EUC
-RESDIR=         ${LIBDIR}/${RESSUB}
+LIBDIR=	${PREFIX}/lib/netscape
+BINDIR=	${PREFIX}/bin
+NLSDIR=	${LIBDIR}/nls
+RESSUB=	ko_KR.EUC
+RESDIR=	${LIBDIR}/${RESSUB}
 
 NLSSRC=		${WRKDIR}/netscape-ko
 MISCFILES=	README about splash license mail.msg
 
-STARTFILE=      netscape.sh
+STARTFILE=	netscape.sh
 STARTFILE_SRC=  ${FILESDIR}/netscape.sh
 
 do-configure:
