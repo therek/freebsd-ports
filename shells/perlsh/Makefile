@@ -2,7 +2,7 @@
 # Date created:		11 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/shells/perlsh/Makefile,v 1.8 2001/06/07 11:09:45 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	perlsh
@@ -42,7 +42,7 @@ pre-install:
 	${PERL} -pi -e "s:/usr/local/man/man1:${MAN3PREFIX}/man/man1:g" ${WRKSRC}/Makefile;
 	${PERL} -pi -e "s:/usr/local/lib/perl5/5.00503/man/man3:${MAN3PREFIX}/man/man3:g" ${WRKSRC}/Makefile;
 
-post-install: 
+post-install:
 	@${ECHO} "Updating /etc/shells"
 	@${CP} /etc/shells /etc/shells.bak
 	@(${GREP} -v ${PREFIX}/bin/psh /etc/shells.bak; \

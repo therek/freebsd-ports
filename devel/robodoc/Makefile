@@ -2,7 +2,7 @@
 # Date created:				15 Dec 1999
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/robodoc/Makefile,v 1.5 2000/07/25 01:43:14 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	robodoc
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
-GNU_CONFIGURE=	yes	
+GNU_CONFIGURE=	yes
 MAKEFILE=	makefile
 
 MAN1=		robodoc.1

@@ -2,14 +2,14 @@
 # Date created:		26 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.15 2000/12/02 16:09:43 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gphoto
 PORTVERSION=	0.4.3
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.gphoto.net/dist/
-      
+
 MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	convert:${PORTSDIR}/graphics/ImageMagick

@@ -1,8 +1,8 @@
-# New ports collection makefile for:	oonsoo 
+# New ports collection makefile for:	oonsoo
 # Date created:		23rd June, 1997
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/games/oonsoo/Makefile,v 1.11 2000/10/29 06:31:34 dougb Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	oonsoo

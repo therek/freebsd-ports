@@ -1,8 +1,8 @@
-# New ports collection makefile for:	yahtzee 
+# New ports collection makefile for:	yahtzee
 # Date created:		Friday 4th July, 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 #
-# $FreeBSD: ports/games/yahtzee/Makefile,v 1.6 2000/10/29 06:31:36 dougb Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yahtzee

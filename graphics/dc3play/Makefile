@@ -2,7 +2,7 @@
 # Date created:		15 Jul 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/dc3play/Makefile,v 1.9 2001/01/09 05:57:02 itojun Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dc3play
@@ -27,7 +27,7 @@ post-patch:
 post-install:
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/dc3play
-.for file in PROTOCOL README.english README.japanese 
+.for file in PROTOCOL README.english README.japanese
 	${INSTALL_DATA} ${WRKSRC}/../${file} ${PREFIX}/share/doc/dc3play
 .endfor
 .endif

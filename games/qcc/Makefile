@@ -2,7 +2,7 @@
 # Date created:					October 25th 1996
 # Whom:						jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/games/qcc/Makefile,v 1.7 2000/04/14 12:26:25 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qcc
@@ -16,7 +16,7 @@ MAINTAINER=	ports@freebsd.org
 WRKSRC=		${WRKDIR}/send
 MAKEFILE=	makefile
 
-do-install:	
+do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/qcc ${PREFIX}/bin
 		@ ${MKDIR} ${PREFIX}/share/qcc/v101qc
 		${INSTALL_DATA} ${WRKSRC}/readme.txt ${PREFIX}/share/qcc

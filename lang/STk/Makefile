@@ -1,8 +1,8 @@
 # New ports collection makefile for:	STk
-# Date created:		17 Sep 96 
+# Date created:		17 Sep 96
 # Whom:			jmacd@cs.berkeley.edu
 #
-# $FreeBSD: ports/lang/STk/Makefile,v 1.21 2000/04/12 06:17:42 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	STk
