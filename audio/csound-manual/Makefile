@@ -2,7 +2,7 @@
 # Date created:				2000-10-11
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/csound-manual/Makefile,v 1.1 2000/10/12 02:01:02 trevor Exp $
 #
 
 PORTNAME=	csound-manual
@@ -26,10 +26,11 @@ MAINTAINER=	trevor@FreeBSD.org
 
 RUN_DEPENDS=	csound:${PORTSDIR}/audio/csound
 
-RESTRICTED=     "no redistribution; no commercial use except to make music (see http://mitpress.mit.edu/e-books/csound/fpage/FAQml/faq/faq.html#THE CSOUND COPYRIGHT ISSUES)"
+RESTRICTED=	"no redistribution; no commercial use except to make music (see http://mitpress.mit.edu/e-books/csound/fpage/FAQml/faq/faq.html#THE CSOUND COPYRIGHT ISSUES)"
 
 NO_BUILD=		yes
 NO_MTREE=		yes
+PLIST=			${WRKDIR}/pkg-plist
 PREFIX=			${X11BASE}/share/doc/csound
 USE_ZIP=		yes
 WRKSRC=			${WRKDIR}/manual
@@ -45,8 +46,5 @@ pre-install:
 
 do-install:
 	cd ${WRKSRC} && pax -r -w * ${PREFIX}
-
-post-clean:
-	${RM} -f ${PLIST}
 
 .include <bsd.port.mk>
