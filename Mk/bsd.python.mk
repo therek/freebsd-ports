@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.43 2004/01/20 09:14:09 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.44 2004/01/26 02:11:36 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -189,7 +189,7 @@ PYTHON_PORTVERSION=	${_PYTHON_PORTVERSION}
 
 # Python-2.4
 .if ${PYTHON_VERSION} == "python2.4"
-PYTHON_PORTVERSION?=2.4.a0.20040106
+PYTHON_PORTVERSION?=2.4.a0.20040311
 PYTHON_PORTSDIR=	${PORTSDIR}/lang/python-devel
 PYTHON_REL=			240
 PYTHON_SUFFIX=		24
