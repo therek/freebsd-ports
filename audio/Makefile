@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.126 2000/02/10 06:39:03 cpiazza Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.127 2000/03/07 11:39:42 tg Exp $
 #
 
     SUBDIR += amp
@@ -21,6 +21,7 @@
     SUBDIR += gnomemedia
     SUBDIR += gogo
     SUBDIR += gqmpeg
+    SUBDIR += gramofile
     SUBDIR += gsm
     SUBDIR += icecast
     SUBDIR += id3ed
