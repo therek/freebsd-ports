@@ -3,14 +3,15 @@
 # Date created:			  Sat Sep 18, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/benchmarks/postmark/Makefile,v 1.6 2000/04/08 22:04:25 mharo Exp $
+# $FreeBSD: ports/benchmarks/postmark/Makefile,v 1.7 2000/12/22 22:41:34 obrien Exp $
 #
 
 PORTNAME=	postmark
-PORTVERSION=	1.11
+PORTVERSION=	1.13
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.netapp.com/ftp/  \
 		http://www.taronga.com/~nick/files/
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/./_/g}
 EXTRACT_SUFX=	.c
 
 MAINTAINER=	ports@FreeBSD.org
