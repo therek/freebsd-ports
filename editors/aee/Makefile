@@ -2,7 +2,7 @@
 # Date created:		19 Aug 1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/editors/aee/Makefile,v 1.1.1.1 1999/09/25 04:55:50 taoka Exp $
+# $FreeBSD: ports/editors/aee/Makefile,v 1.2 2000/04/14 00:25:16 mharo Exp $
 #
 
 PORTNAME=	aee
@@ -25,7 +25,7 @@ pre-fetch:
 .else
 USE_XLIB=	yes
 ALL_TARGET=	both
-PLIST=		${PKGDIR}/PLIST.xae
+PLIST=		${PKGDIR}/pkg-plist.xae
 .endif
 
 MAN1=		aee.1
