@@ -2,7 +2,7 @@
 # Date created:		1999/05/29
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/java/jsdk/Makefile,v 1.9 2000/04/12 06:14:48 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jsdk
@@ -20,6 +20,10 @@ NO_CDROM=	"Sun has a funky license for this software"
 RESTRICTED=	"no commercial use"
 
 WRKSRC=		${WRKDIR}/JSDK2.0
+
+.if defined(BATCH) || defined(PACKAGE_BUILDING)
+IGNORE=		"Should be fetched manually"
+.endif
 
 do-fetch:
 	@if [ ! -f ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} ]; then \
