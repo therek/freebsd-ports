@@ -2,7 +2,7 @@
 # Date created:         14 April 1999
 # Whom:                 OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/japanese/emacs-manual/Makefile,v 1.12 2000/04/30 20:10:28 steve Exp $
+# $FreeBSD: ports/japanese/emacs-manual/Makefile,v 1.13 2000/07/19 08:03:55 shige Exp $
 #
 
 PORTNAME=	emacs-manual
@@ -48,7 +48,7 @@ post-extract:
 # workaround target (please delete after emacs-20.7-man-jp is released).
 pre-patch:
 	@(cd ${WRKSRC} && \
-	${PATCH} ${PATCH_ARGS} < ${FILESDIR}/patch-texinfmt.el.patch ; \
+	${PATCH} ${PATCH_ARGS} < ${FILESDIR}/extra-patch-texinfmt.el.patch ; \
 	)
 
 post-patch:

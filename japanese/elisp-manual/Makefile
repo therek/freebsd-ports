@@ -2,7 +2,7 @@
 # Date created:         28 Mar 2000
 # Whom:                 OKAZAKI Tetsurou
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/elisp-manual/Makefile,v 1.1.1.1 2000/07/24 22:29:46 sada Exp $
 #
 
 PORTNAME=	elisp-manual
@@ -37,7 +37,7 @@ post-extract:
 
 pre-patch:
 	@(cd ${WRKSRC} && \
-	${PATCH} ${PATCH_ARGS} < ${FILESDIR}/patch-texinfmt.el.patch ; \
+	${PATCH} ${PATCH_ARGS} < ${FILESDIR}/extra-patch-texinfmt.el.patch ; \
 	)
 
 post-patch:
