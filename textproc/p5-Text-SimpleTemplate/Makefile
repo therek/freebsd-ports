@@ -2,11 +2,11 @@
 # Date created:				26 February 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-Text-SimpleTemplate/Makefile,v 1.1 2001/03/01 06:46:49 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Text-SimpleTemplate
-PORTVERSION=	0.35
+PORTVERSION=	0.36
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Text
