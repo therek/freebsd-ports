@@ -2,7 +2,7 @@
 # Date created:				16 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/frotz/Makefile,v 1.8 2001/06/26 08:29:48 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	frotz
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.ifarchive.org/if-archive/infocom/interpreters/frotz/ \
 		http://wuarchive.wustl.edu/doc/misc/if-archive/infocom/interpreters/frotz/ \
 		http://www.ifarchive.org/if-archive/infocom/interpreters/frotz/
 
-MAINTAINER=	adam@alameda.edu
+MAINTAINER=	adam@blacktabby.org
 
 MAKE_ARGS=	CC="${CC}" OPTS="${CFLAGS}" PREFIX="${PREFIX}" \
 		CONFIG_DIR="${PREFIX}/etc" INCL="" LIB=""
@@ -23,9 +23,9 @@ do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/frotz ${PREFIX}/bin
 	@${INSTALL_MAN} ${WRKSRC}/frotz.6 ${MANPREFIX}/man/man6
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/frotz
+	@${MKDIR} ${DOCSDIR}
 .for file in BUGS HOW_TO_PLAY README
-	@${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/frotz
+	@${INSTALL_MAN} ${WRKSRC}/${file} ${DOCSDIR}
 .endfor
 .endif
 
