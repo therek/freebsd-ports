@@ -2,7 +2,7 @@
 # Date created:				September 29th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Mysql/Makefile,v 1.33 2001/01/21 15:40:35 dirk Exp $
+# $FreeBSD: ports/databases/p5-Mysql/Makefile,v 1.34 2001/03/01 06:38:20 vanilla Exp $
 #
 
 PORTNAME=	Mysql-modules
@@ -32,6 +32,6 @@ MAN3=		Bundle::DBD::mysql.3 \
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 pre-configure:
-		@${PERL} -i -e 's| -lgz||' ${WRKSRC}/lib/DBD/mysql/Install.pm
+		@${PERL} -p -i -e 's| -lgz||' ${WRKSRC}/lib/DBD/mysql/Install.pm
 
 .include <bsd.port.mk>
