@@ -1,7 +1,7 @@
 #
 # auditfile.txt - FreeBSD ports vulnerabilities database
 #
-# $FreeBSD: ports/security/portaudit/database/auditfile.txt,v 1.1 2004/01/27 19:24:52 eik Exp $
+# $FreeBSD: ports/security/portaudit/database/auditfile.txt,v 1.2 2004/01/28 16:19:08 eik Exp $
 #
 # MAINTAINER=ports@FreeBSD.org
 #
@@ -34,3 +34,4 @@ apache+mod_ssl>=1.3<1.3.29|http://www.apacheweek.com/features/security-13|Multip
 apache+ipv6>=1.3<1.3.29|http://www.apacheweek.com/features/security-13|Multiple security vulnerabilities
 ru-apache>=1.3<1.3.29|http://www.apacheweek.com/features/security-13|Multiple security vulnerabilities
 ru-apache+mod_ssl>=1.3<1.3.29|http://www.apacheweek.com/features/security-13|Multiple security vulnerabilities
+clamav<0.65_7|http://www.freebsd.org/cgi/query-pr.cgi?pr=ports/62586|remote exploitable DOS vulnerability
