@@ -2,7 +2,7 @@
 # Date created:		7 May 1999
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/editors/the/Makefile,v 1.4 2000/02/17 05:18:26 taoka Exp $
+# $FreeBSD: ports/editors/the/Makefile,v 1.5 2000/04/14 00:25:44 mharo Exp $
 #
 
 PORTNAME=	the
@@ -19,7 +19,9 @@ BUILD_DEPENDS=	rexx:${PORTSDIR}/lang/rexx-imc
 RUN_DEPENDS=	rexx:${PORTSDIR}/lang/rexx-imc
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-rexximc --with-ncurses
+CONFIGURE_ARGS=	--with-ncurses --with-rexximc \
+		--with-rexxincdir=${LOCALBASE}/include \
+		--with-rexxlibdir=${LOCALBASE}/lib
 
 post-install:
 .if !defined(NOPORTDOCS)
