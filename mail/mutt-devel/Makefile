@@ -3,14 +3,14 @@
 # Date created:			  
 # Whom:				  
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.108 2001/06/09 01:08:01 dwcjr Exp $
 #
 
 PORTNAME=	mutt-devel
 PORTVERSION=	1.3.19
 PORTREVISION=	1
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.demon.co.uk/pub/mirrors/mutt/devel \
+MASTER_SITES=	ftp://ftp.demon.co.uk/pub/mirrors/mutt/devel/ \
 		ftp://ftp.parodius.com/pub/mutt/devel/
 DISTNAME=	mutt-${PORTVERSION}i
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
