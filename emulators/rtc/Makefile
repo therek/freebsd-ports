@@ -2,7 +2,7 @@
 # Date created:		28 March 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/emulators/rtc/Makefile,v 1.1.1.1 2000/04/03 15:28:29 knu Exp $
+# $FreeBSD: ports/emulators/rtc/Makefile,v 1.2 2000/04/12 04:55:42 mharo Exp $
 #
 
 PORTNAME=	rtc
@@ -19,11 +19,11 @@ LINUX_DIR=	/compat/linux
 KMODDIR=	${PREFIX}/modules
 
 CDEV_MAJOR=	202
-DEVFILE=	/dev/rtc
+DEVDIR=		${LINUX_DIR}/dev
 
 STARTUP=	rtc.sh
 MAKE_ARGS=	KMODDIR="${KMODDIR}" CDEV_MAJOR="${CDEV_MAJOR}"
-PLIST_SUB=	DEVFILE="${DEVFILE}" CDEV_MAJOR="${CDEV_MAJOR}" RTC_H_DIR="${RTC_H_DIR}"
+PLIST_SUB=	DEVDIR="${DEVDIR}" CDEV_MAJOR="${CDEV_MAJOR}" RTC_H_DIR="${RTC_H_DIR}"
 
 .include <bsd.port.pre.mk>
 
@@ -46,10 +46,11 @@ do-extract:
 
 pre-install:
 	${MKDIR} ${KMODDIR}
+	${MKDIR} ${DEVDIR}
 
 post-install:
-	${RM} -f ${DEVFILE}
-	mknod ${DEVFILE} c ${CDEV_MAJOR} 0
+	${RM} -f ${DEVDIR}/rtc
+	mknod ${DEVDIR}/rtc c ${CDEV_MAJOR} 0
 	${INSTALL_DATA} ${WRKSRC}/rtc.h ${PREFIX}/include/
 	${MKDIR} ${PREFIX}/share/examples/rtc
 	${INSTALL_DATA} ${WRKSRC}/test.c ${PREFIX}/share/examples/rtc/
