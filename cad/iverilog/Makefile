@@ -3,7 +3,7 @@
 # Date created:		Feb 13, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/cad/iverilog/Makefile,v 1.1 2001/02/13 11:02:14 ijliao Exp $
 #
 
 PORTNAME=	iverilog
@@ -16,6 +16,7 @@ MAINTAINER=	ijliao@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 
+USE_BISON=	yes
 USE_GMAKE=	yes
 
 MAN1=	iverilog.1
