@@ -2,13 +2,14 @@
 # Date created:			  15 Apr 2000
 # Whom:				  Patrick Seal <patseal@hyperhost.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/mscompress/Makefile,v 1.1 2000/05/07 13:20:54 jedgar Exp $
 #
 
 PORTNAME=	mscompress
 PORTVERSION=	0.3
 CATEGORIES=	archivers
-MASTER_SITES=	ftp://ftp.penguin.cz/pub/users/mhi/mscompress/
+MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR= utils/compress
 
 MAINTAINER=	patseal@hyperhost.net
 
