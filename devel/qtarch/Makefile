@@ -2,13 +2,13 @@
 # Date created:				17 Oct 1998
 # Whom:					Frank Gruender
 #
-# $FreeBSD: ports/devel/qtarch/Makefile,v 1.7 2000/04/14 05:44:16 asami Exp $
+# $FreeBSD: ports/devel/qtarch/Makefile,v 1.8 2000/06/08 09:08:17 knu Exp $
 #
 
 PORTNAME=	qtarch
 PORTVERSION=	1.4.4
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.qtarch.intranova.net/pub/qtarch/
+MASTER_SITES=	ftp://qtarch.sourceforge.net/pub/qtarch/
 DISTNAME=	${PORTNAME}-${PORTVERSION:R}-${PORTVERSION:E}
 
 MAINTAINER=	elwood@mc5sys.in-berlin.de
