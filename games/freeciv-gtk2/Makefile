@@ -3,7 +3,7 @@
 # Date created:		Jun 20 1997
 # Whom:			ada@bsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/freeciv/Makefile,v 1.23 1999/08/25 06:03:25 obrien Exp $
 #
 
 DISTNAME=	freeciv-1.8.1
@@ -13,12 +13,10 @@ MASTER_SITES=	ftp://ftp.freeciv.org/pub/freeciv/stable_version/ \
 
 MAINTAINER=	ada@bsd.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		Imlib.4:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+CONFIGURE_ARGS=	--disable-gtktest
 
 .include <bsd.port.mk>
