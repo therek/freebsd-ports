@@ -3,7 +3,7 @@
 # Date created:		2000/02/19
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/cryptix-jce/Makefile,v 1.1.1.1 2000/02/19 12:26:03 kuriyama Exp $
 #
 
 DISTNAME=	cryptix-jce-20000211
@@ -16,6 +16,7 @@ RUN_DEPENDS=	${LOCALBASE}/jdk1.1.8/bin/java:${PORTSDIR}/java/jdk
 
 USE_ZIP=	yes
 NO_BUILD=	yes
+RESTRICTED=	Testing purpose only (from README.TXT).
 
 do-install:
 	${INSTALL_DATA} ${WRKDIR}/bin/cryptix-jce-api.jar ${PREFIX}/share/java/classes/
