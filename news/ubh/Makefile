@@ -2,11 +2,11 @@
 # Date created:			24 July 2000
 # Whom:				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD: ports/news/ubh/Makefile,v 1.3 2000/10/16 01:43:24 kris Exp $
+# $FreeBSD: ports/news/ubh/Makefile,v 1.4 2000/10/20 20:34:46 dburr Exp $
 #
 
 PORTNAME=	ubh
-PORTVERSION=	1.3
+PORTVERSION=	1.5
 CATEGORIES=	news graphics
 MASTER_SITES=	http://ubh.sourceforge.net/download/
 
