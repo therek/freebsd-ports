@@ -1,7 +1,8 @@
-# $FreeBSD: ports/palm/Makefile,v 1.4 1999/08/30 14:32:59 peter Exp $
+# $FreeBSD: ports/palm/Makefile,v 1.5 1999/08/30 18:14:17 sumikawa Exp $
 #
 
     SUBDIR += imgvtopgm
+    SUBDIR += jpilot
     SUBDIR += kpilot
     SUBDIR += pilot-link
     SUBDIR += pilot_makedoc
