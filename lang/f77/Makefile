@@ -2,7 +2,7 @@
 # Date created:				19 JAN 1999
 # Whom:					Steven G. Kargl
 #
-# $FreeBSD: ports/lang/f77/Makefile,v 1.4 1999/08/27 22:29:34 mharo Exp $
+# $FreeBSD: ports/lang/f77/Makefile,v 1.5 2000/04/12 06:18:26 obrien Exp $
 #
 
 PORTNAME=	f77
@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PREFIX}/bin/fpp:${PORTSDIR}/devel/fpp \
 .endif
 
 # Set F77NAME to the name of the Fortran 77 wrapper.
-F77NAME=	fc
+F77NAME=	ftn77
 
 .ifdef GNU_CPP
 MAKE_ARGS=	"CFLAGS= ${CFLAGS} -DPP_COMMAND='\"/usr/bin/cpp\"' \
