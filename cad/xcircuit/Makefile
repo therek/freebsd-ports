@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xcircuit
-# Version required:	2.0b3
+# Version required:	2.0b4
 # Date created:		3 Apr 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.12 1999/12/23 17:26:57 jedgar Exp $
+# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.13 2000/01/24 06:04:01 steve Exp $
 #
 
-DISTNAME=	xcircuit-2.0b3
+DISTNAME=	xcircuit-2.0b4
 CATEGORIES=	cad
 MASTER_SITES=	ftp://bach.ece.jhu.edu/pub/tim/xcircuit/ \
 		http://bach.ece.jhu.edu/~tim/programs/xcircuit/archive/
@@ -14,12 +14,16 @@ MASTER_SITES=	ftp://bach.ece.jhu.edu/pub/tim/xcircuit/ \
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
 
 USE_BZIP2=	yes
 USE_IMAKE=	yes
 XMKMF=		xmkmf
 
 MAN1=		xcircuit.1
+
+post-patch:
+	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/Imakefile
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/xcircuit
