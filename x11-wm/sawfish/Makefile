@@ -2,12 +2,11 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/sawfish/Makefile,v 1.36 2000/12/05 14:07:29 sobomax Exp $
+# $FreeBSD: ports/x11-wm/sawfish/Makefile,v 1.37 2000/12/06 13:40:35 sobomax Exp $
 #
 
 PORTNAME=	sawfish
-PORTVERSION= 	0.34
-PORTREVISION=	1
+PORTVERSION= 	0.35
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	sawmill
@@ -43,9 +42,6 @@ CONFIGURE_ARGS+=--disable-capplet \
 		--without-gdk-pixbuf
 PLIST_SUB+=	GNOME:="@comment "
 .endif
-
-post-extract:
-	@${CP} ${FILESDIR}/zh_TW.Big5.po ${WRKSRC}/po
 
 pre-patch:
 	@${PERL} -pi -e 's^-l(pthread|c_r)^-pthread^g ; \
