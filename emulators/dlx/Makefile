@@ -3,7 +3,7 @@
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/dlx/Makefile,v 1.9 2000/04/15 09:38:52 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dlx
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://max.stanford.edu/pub/max/pub/hennessy-patterson.software/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 .if ${MACHINE_ARCH} == alpha
 BROKEN=		will not build on alpha

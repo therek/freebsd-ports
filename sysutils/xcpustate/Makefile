@@ -3,7 +3,7 @@
 # Date created:			  31-Dec-1995
 # Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/sysutils/xcpustate/Makefile,v 1.18 2000/04/09 19:08:59 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcpustate
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.cs.toronto.edu/pub/jdd/xcpustate/  \
 MASTER_SITE_SUBDIR=	utilities
 EXTRACT_SUFX=	.shar
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 EXTRACT_CMD=	${CAT}
 EXTRACT_BEFORE_ARGS=

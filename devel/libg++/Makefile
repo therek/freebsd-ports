@@ -3,7 +3,7 @@
 # Date created:				Wed, 23 Feb 2000
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/devel/libg++/Makefile,v 1.9 2000/06/29 02:31:25 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libg++
@@ -23,7 +23,7 @@ PATCHFILES=	${DISTNAME}-20000312.diff.gz  \
 		${DISTNAME}-20000914.diff.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 CONFIGURE_TARGET=	${ARCH}-portbld-freebsd${OSREL}
 PLIST_SUB=	GCC28SUBDIR=${GCC28DIR}

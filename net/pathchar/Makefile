@@ -3,7 +3,7 @@
 # Date created:			  7 November 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/net/pathchar/Makefile,v 1.18 2000/06/10 20:44:37 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pathchar
@@ -18,7 +18,7 @@ DISTNAME=	pathchar-a1-freebsd-3.0
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} pathcharnotes.html pathchar.8 \
 		pathchar.mantxt
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}

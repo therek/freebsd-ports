@@ -3,7 +3,7 @@
 # Date created:			  Mon Jan 17, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/sysutils/setcdboot/Makefile,v 1.4 2000/04/09 19:08:27 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	setcdboot
@@ -13,7 +13,7 @@ MASTER_SITES=	# part of port
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.c
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 DISTDIR=	${FILESDIR}

@@ -3,7 +3,7 @@
 # Date created:			  Sat Feb 28, 1998
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/security/bro/Makefile,v 1.16 2000/04/21 08:18:10 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bro
@@ -13,7 +13,7 @@ CATEGORIES=	security
 #see http://www-nrg.ee.lbl.gov/bro-info.html
 DISTNAME=	vp-bro-0.5-alpha
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RESTRICTED=	"Author wishes Alpha releases not to be distrubted."
 
