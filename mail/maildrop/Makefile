@@ -3,7 +3,7 @@
 # Date created:		16 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/mail/maildrop/Makefile,v 1.5 1999/11/23 08:41:05 kris Exp $
+# $FreeBSD: ports/mail/maildrop/Makefile,v 1.6 1999/12/24 18:39:36 mharo Exp $
 #
 
 DISTNAME=	maildrop-0.64
@@ -18,7 +18,7 @@ MAINTAINER=	tom@eborcom.com
 # want these extensions installed, NO_GDBM must be defined.
 #
 .if !defined(NO_GDBM)
-BUILD_DEPENDS=	${PREFIX}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
+BUILD_DEPENDS=	${LOCALBASE}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
 .endif
 
 ALL_TARGET=	config.h xconfig.h all
