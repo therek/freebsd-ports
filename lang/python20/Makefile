@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python20/Makefile,v 1.77 2001/05/02 11:30:58 tg Exp $
+# $FreeBSD: ports/lang/python20/Makefile,v 1.78 2001/05/02 12:00:13 tg Exp $
 #
 
 PORTNAME=	python
@@ -113,7 +113,7 @@ pre-install:
 .for platform in ${PLATFORMS}
 	${MKDIR} ${PYTHON_LIBDIR}/${platform}
 .for file in FCNTL.py IN.py SOCKET.py TERMIOS.py regen
-	${INSTALL_DATA} ${WRKSRC}/Lib/${platform}/${file} 
+	${INSTALL_DATA} ${WRKSRC}/Lib/${platform}/${file} \
 		${PYTHON_LIBDIR}/${platform}
 .endfor
 .endfor
@@ -122,7 +122,8 @@ pre-install:
 post-install:
 	strip ${PREFIX}/bin/python
 	@${MKDIR} ${PREFIX}/share/emacs/site-lisp
-	${INSTALL_DATA} ${WRKSRC}/Misc/python-mode.el ${PREFIX}/share/emacs/site-lisp
+	${INSTALL_DATA} ${WRKSRC}/Misc/python-mode.el \
+		${PREFIX}/share/emacs/site-lisp
 	@${MKDIR} ${PYTHON_SITELIBDIR}
 .if !defined(WITHOUT_TOOLS)
 	@cd ${WRKSRC}; tar -c --exclude='*CVS*' -f - Tools | \
