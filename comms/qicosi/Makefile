@@ -2,11 +2,12 @@
 # Date created:		13 Jan 2000
 # Whom:			Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/comms/qico/Makefile,v 1.7 2001/02/17 15:14:16 kevlo Exp $
+# $FreeBSD: ports/comms/qico/Makefile,v 1.8 2001/03/11 08:24:39 kevlo Exp $
 #
 
 PORTNAME=	qico
 PORTVERSION=	0.48.4
+PORTREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	http://lev.serebryakov.spb.ru/download/0.48/
 
@@ -21,6 +22,9 @@ DEFS+=		-DAMIGA4D
 
 .if defined(WITH_QICO_MORDA)
 MORDA=		1
+PLIST_SUB+=	WITH_QICO_MORDA=""
+.else
+PLIST_SUB+=	WITH_QICO_MORDA="@comment "
 .endif
 
 do-install:
