@@ -3,7 +3,7 @@
 # Date created:		Sat Aug 22 12:00:00 CDT 1998
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.57 2000/01/22 21:13:59 rse Exp $
+# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.58 2000/02/12 08:36:28 kris Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -41,7 +41,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 
 MAINTAINER=	rse@engelschall.com
 
-USE_OPENSSL=	NORSA
+USE_OPENSSL=	RSA
 
 .include <bsd.port.pre.mk>
 
