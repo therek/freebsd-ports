@@ -3,16 +3,14 @@
 # Date created:        27 November 1998
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/sysutils/wmmon/Makefile,v 1.10 1999/08/31 02:00:23 peter Exp $
+# $FreeBSD: ports/sysutils/wmmon/Makefile,v 1.11 2000/02/13 00:05:36 imura Exp $
 #
 
 DISTNAME=	wmmon-1.0b2
 CATEGORIES=	sysutils windowmaker
-MASTER_SITES=	ftp://ftp.mezaway.org/pub/DockApps/ \
+MASTER_SITES=	ftp://ftp.tecnogi.com/pub/linux/WindowMaker/ \
 		http://www.physics.adelaide.edu.au/~kkennawa/ \
-		ftp://ftp.tecnogi.com/pub/linux/WindowMaker/ \
-		ftp://ftp.deva.net/pub/sources/X11/WindowMaker/dockapps/ \
-		ftp://ftp.paco.odessa.ua/.2/x11/wm/WindowMaker/apps/
+		ftp://ftp.deva.net/pub/sources/X11/windowmaker/dockapps/
 
 MAINTAINER=	sk-ports@vegamuse.org
 
@@ -25,7 +23,7 @@ WRKSRC=		${WRKDIR}/wmmon.app/wmmon
 .include <bsd.port.pre.mk>
 
 .if $(OSVERSION) < 400000
-BROKEN=		'cannot compile with 3-stable'
+#BROKEN=		'cannot compile with 3-stable'
 .endif
 
 .if !defined(NOPORTDOCS)
