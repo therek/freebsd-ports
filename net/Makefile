@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/net/Makefile,v 1.565 2001/06/30 12:26:52 sobomax Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -110,6 +110,7 @@
     SUBDIR += ghtool
     SUBDIR += gicq
     SUBDIR += gkrellm_snmp
+    SUBDIR += gkrellmqst
     SUBDIR += gnet
     SUBDIR += gnomba
     SUBDIR += gnome-vnc
