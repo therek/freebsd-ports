@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.65 2000/04/17 00:18:05 reg Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.66 2000/07/27 12:19:38 tg Exp $
 #
 
 PORTNAME=	python
@@ -31,7 +31,7 @@ SETUP_FILE=	Setup
 
 #
 # If you don't want to use Python's thread module, you need to set
-# WITHOUT_THREADS. libc_r should be installed on current systems.
+# WITHOUT_THREADS. libc_r should be installed on nowadays' systems.
 #
 LIBC_R!=	/sbin/ldconfig -r | grep c_r || true
 .if (${LIBC_R} != "") && !defined(WITHOUT_THREADS)
