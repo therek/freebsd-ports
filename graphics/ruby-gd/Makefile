@@ -2,11 +2,12 @@
 # Date created:		27 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-gd/Makefile,v 1.4 2000/10/29 09:54:35 knu Exp $
+# $FreeBSD: ports/graphics/ruby-gd/Makefile,v 1.5 2001/02/12 10:48:29 knu Exp $
 #
 
 PORTNAME=	GD
 PORTVERSION=	0.7.2
+PORTREVISION=	1
 CATEGORIES=	graphics ruby
 MASTER_SITES=	http://kirara.prec.kyoto-u.ac.jp/~tam/GD/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
