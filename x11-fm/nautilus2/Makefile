@@ -2,7 +2,7 @@
 # Date created:         		28th August 2000
 # Whom:                 		ade, archie
 #
-# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.22 2001/05/11 16:36:41 ade Exp $
+# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.23 2001/05/14 17:18:52 sobomax Exp $
 #
 
 PORTNAME=	nautilus
@@ -23,11 +23,8 @@ LIB_DEPENDS=	medusa.0:${PORTSDIR}/sysutils/medusa \
 		ghttp.1:${PORTSDIR}/www/libghttp \
 		eel.0:${PORTSDIR}/x11-toolkits/eel
 
-# Disable - I don't have a time to compile it now. Will be enabled back later.
-WITHOUT_MOZILLA=	yes
-
 .if !defined(WITHOUT_MOZILLA)
-MOZILLA=	mozilla
+MOZILLA=	mozilla-embedded
 BUILD_DEPENDS=	${X11BASE}/include/mozilla/gtkmozembed.h:${PORTSDIR}/www/mozilla-headers \
 		${X11BASE}/lib/${MOZILLA}/libgtkembedmoz.so:${PORTSDIR}/www/${MOZILLA}
 RUN_DEPENDS=	${X11BASE}/lib/${MOZILLA}/libgtkembedmoz.so:${PORTSDIR}/www/${MOZILLA}
