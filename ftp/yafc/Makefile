@@ -2,11 +2,11 @@
 # Date created:		10 June 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/yafc/Makefile,v 1.19 2001/06/12 09:35:02 markp Exp $
+# $FreeBSD: ports/ftp/yafc/Makefile,v 1.20 2001/07/18 03:29:25 dwcjr Exp $
 #
 
 PORTNAME=	yafc
-PORTVERSION=	0.7.2
+PORTVERSION=	0.7.4
 CATEGORIES=	ftp
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
