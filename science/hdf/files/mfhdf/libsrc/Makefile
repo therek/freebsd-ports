@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/hdf/files/mfhdf/libsrc/Makefile,v 1.1 1999/11/14 02:32:11 steve Exp $
+# $FreeBSD$
 
 .PATH:  ${.CURDIR} ${.CURDIR}/../fortran/config ${.CURDIR}/../fortran
 
@@ -13,8 +13,6 @@ SHLIB_MINOR	= 3
 
 LIBDIR		= ${PREFIX}/lib
 
-# uncomment the line below to avoid building static libraries
-#INTERNALLIB	= Yes
 # comment out the line below to build the profile libs
 NOPROFILE=yes
 
