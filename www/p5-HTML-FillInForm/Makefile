@@ -2,11 +2,11 @@
 # Date created:				March 30th 2001
 # Whom:	      				Alex Kapranoff <kapr@crosswinds.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-HTML-FillInForm/Makefile,v 1.1 2001/03/31 01:23:20 will Exp $
 #
 
 PORTNAME=	HTML-FillInForm
-PORTVERSION=	0.11
+PORTVERSION=	0.18
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
@@ -14,13 +14,14 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kapr@crosswinds.net
 
-BUILD_DEPEND=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/HTML/Parser.pm:${PORTSDIR}/www/p5-HTML-Parser
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/HTML/Parser.pm:${PORTSDIR}/www/p5-HTML-Parser
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	yes
 
 INSTALL_TARGET=	pure_install
 
 MAN3=		HTML::FillInForm.3
-MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 .include <bsd.port.mk>
