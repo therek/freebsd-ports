@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/libosip/pkg-plist,v 1.3 2002/10/25 23:58:28 naddy Exp $
 include/osip/const.h
 include/osip/dialog.h
 include/osip/fifo.h
@@ -16,8 +16,8 @@ include/osip/thread.h
 include/osip/urls.h
 lib/libfsmtl.a
 lib/libfsmtl.so
-lib/libfsmtl.so.0
+lib/libfsmtl.so.9
 lib/libosip.a
 lib/libosip.so
-lib/libosip.so.0
+lib/libosip.so.9
 @dirrm include/osip
