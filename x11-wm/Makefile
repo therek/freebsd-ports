@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/Makefile,v 1.20 1999/08/31 02:59:49 peter Exp $
 #
 
     SUBDIR += 9menu
@@ -22,6 +22,7 @@
     SUBDIR += icewm
     SUBDIR += iconmaker
     SUBDIR += libdockapp
+    SUBDIR += libwmfun
     SUBDIR += lwm
     SUBDIR += mlvwm
     SUBDIR += olvwm
