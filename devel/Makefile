@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.301 2000/06/26 19:18:54 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.302 2000/06/28 01:05:46 chuckr Exp $
 #
 
     SUBDIR += ElectricFence
@@ -53,6 +53,7 @@
     SUBDIR += dmake
     SUBDIR += doc++
     SUBDIR += doxygen
+    SUBDIR += dryad
     SUBDIR += elftoaout
     SUBDIR += f77flow
     SUBDIR += fastcrc
@@ -74,6 +75,7 @@
     SUBDIR += glib12
     SUBDIR += global
     SUBDIR += gmake
+    SUBDIR += gnomedebug
     SUBDIR += gnustep
     SUBDIR += gperf
     SUBDIR += gtksheet
