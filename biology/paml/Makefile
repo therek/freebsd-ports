@@ -2,19 +2,19 @@
 # Date created:				7 July 2000
 # Whom:					dbader@eece.unm.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/paml/Makefile,v 1.1 2000/07/10 03:21:00 steve Exp $
 #
 
 PORTNAME=	paml
-PORTVERSION=	3.01
+PORTVERSION=	3.03
 CATEGORIES=	biology
 MASTER_SITES=	ftp://abacus.gene.ucl.ac.uk/pub/paml/
-DISTNAME=	paml3.0a
+DISTNAME=	paml3.0c
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	dbader@eece.unm.edu
 
-NO_WRKSUBDIR=	yes
+WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
 BINARIES=	baseml basemlg chi2 codeml codemlsites evolver mcmctree \
 		pamp yn00
@@ -25,7 +25,7 @@ do-install:
 .endfor
 .if !defined(NOPORTDOCS)
 		${MKDIR} ${PREFIX}/share/doc/${PORTNAME}
-		${INSTALL_DATA} ${WRKSRC}/pamlDOC.pdf \
+		${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/doc/pamlDOC.pdf \
 			${PREFIX}/share/doc/${PORTNAME}
 .endif
 
