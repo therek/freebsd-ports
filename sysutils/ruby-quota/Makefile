@@ -2,12 +2,11 @@
 # Date created:		21 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/sysutils/ruby-quota/Makefile,v 1.3 2001/07/17 04:51:21 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	quota
-PORTVERSION=	0.4
-PORTREVISION=	1
+PORTVERSION=	0.4.1
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	http://kt-www.jaist.ac.jp/~ttate/ftp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
