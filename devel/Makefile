@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.465 2001/03/12 22:08:30 will Exp $
+# $FreeBSD$
 #
 
     SUBDIR += ElectricFence
@@ -351,6 +351,7 @@
     SUBDIR += py-mxStack
     SUBDIR += py-mxTools
     SUBDIR += qtarch
+    SUBDIR += pyncurses
     SUBDIR += qt-designer
     SUBDIR += qtez
     SUBDIR += qtk
