@@ -2,11 +2,11 @@
 # Date created:		28 March 1997
 # Whom:			dlowe
 #
-# $FreeBSD: ports/devel/xmake/Makefile,v 1.4 2000/04/14 05:44:40 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmake
-PORTVERSION=	1.05
+PORTVERSION=	1.06
 CATEGORIES=	devel
 MASTER_SITES=	http://apollo.backplane.com/xmake/ \
 		ftp://atari.saturn5.com/pub/dlowe/
