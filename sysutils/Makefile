@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.169 2001/03/31 01:57:05 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.170 2001/03/31 02:08:19 will Exp $
 #
     SUBDIR += yawho
 
@@ -90,6 +90,7 @@
     SUBDIR += p5-SyslogScan
     SUBDIR += p5-Unix-ConfigFile
     SUBDIR += p5-Unix-Syslog
+    SUBDIR += perf
     SUBDIR += personality
     SUBDIR += pib
     SUBDIR += pkg_remove
