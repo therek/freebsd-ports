@@ -2,17 +2,16 @@
 # Date created:		12 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanterm/Makefile,v 1.13 2000/04/13 09:16:32 asami Exp $
+# $FreeBSD: ports/korean/hanterm/Makefile,v 1.14 2000/06/29 07:02:25 obrien Exp $
 #
 
 PORTNAME=	hanterm
 PORTVERSION=	3.1.3
 CATEGORIES=	korean x11
-MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/ \
-		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	sada
+MASTER_SITES=	ftp://elf.kaist.ac.kr/pub/hanterm/ \
+		ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
 
-MAINTAINER=	cjh@kr.freebsd.org
+MAINTAINER=	cjh@FreeBSD.org
 
 RUN_DEPENDS=	${PREFIX}/lib/X11/fonts/local/johabm16.pcf.gz:${PORTSDIR}/korean/johabfonts
 
