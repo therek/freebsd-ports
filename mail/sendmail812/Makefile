@@ -2,7 +2,7 @@
 # Date created:				20 Apr 2000
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/sendmail/Makefile,v 1.9 2001/03/13 06:44:50 dinoex Exp $
+# $FreeBSD: ports/mail/sendmail/Makefile,v 1.10 2001/03/13 13:17:58 dinoex Exp $
 #
 
 PORTNAME=	sendmail
@@ -23,7 +23,7 @@ PLIST=		${WRKDIR}/.PLIST.more
 #
 # SENDMAIL_WITH_TLS=YES
 # SENDMAIL_WITH_SASL=YES
-# SENDMAIL_WITH_SFIO=YES  
+# SENDMAIL_WITH_SFIO=YES
 # SENDMAIL_WITH_MILTER=YES
 
 .if defined(SENDMAIL_WITH_TLS)
