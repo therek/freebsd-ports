@@ -10,13 +10,17 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.33 2001/03/13 19:18:06 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.34 2001/03/13 20:26:05 ade Exp $
 #
 
 # Where to put distfiles that don't have any other master site
 MASTER_SITE_LOCAL?= \
 	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
-	ftp://ftp.jp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
+	ftp://ftp.se.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
+	ftp://ftp.jp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
+	ftp://ftp.uk.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
+	ftp://ftp.ru.FreeBSD.og/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
+	ftp://ftp.nectec.or.th/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
 
 MASTER_SITE_PORTS_JP+=	\
 	ftp://ports.jp.FreeBSD.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/%SUBDIR%/ \
@@ -200,8 +204,9 @@ MASTER_SITE_SOURCEWARE+= \
 	ftp://unix.hensa.ac.uk/mirrors/sourceware.cygnus.com/pub/%SUBDIR%/
 
 MASTER_SITE_SOURCEFORGE+= \
-	ftp://download.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
-	http://download.sourceforge.net/%SUBDIR%/ \
+	ftp://ftp2.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
+	http://ftp2.sourceforge.net/%SUBDIR%/ \
+	ftp://ftp3.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
 	ftp://projects.sourceforge.net/pub/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/sourceforge/%SUBDIR%/ \
 	ftp://ftp.mirror.ac.uk/sites/download.sourceforge.net/pub/sourceforge/%SUBDIR%/
