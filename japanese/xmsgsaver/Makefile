@@ -2,13 +2,13 @@
 # Date created:		8 March 2000
 # Whom:			Tatsuya Kudoh (CDR/TK)
 #
-# $FreeBSD: ports/japanese/xmsgsaver/Makefile,v 1.2 2001/09/25 09:34:41 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmsgsaver
 PORTVERSION=	1.8.1
 CATEGORIES=	japanese misc
-MASTER_SITES=	http://www.xdsl.ne.jp/ga/cdr/soft/dl/
+MASTER_SITES=	http://www19.xdsl.ne.jp/~cdr/soft/dl/
 
 MAINTAINER=	cdr@ga.xdsl.ne.jp
 
