@@ -2,12 +2,12 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.9 2000/08/08 16:08:30 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.10 2000/08/12 20:09:27 knu Exp $
 #
 
 PORTNAME=	ruby-gtk
 PORTVERSION= 	0.23
-CATEGORIES=	x11-toolkits	# ruby
+CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	http://www.ruby-lang.org/gtk/download/
 DIST_SUBDIR=	ruby
 

@@ -2,12 +2,12 @@
 # Date created:			12 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/mod_ruby/Makefile,v 1.1 2000/08/11 16:39:39 knu Exp $
+# $FreeBSD: ports/www/mod_ruby/Makefile,v 1.2 2000/08/12 20:09:21 knu Exp $
 #
 
 PORTNAME=	mod_ruby
 PORTVERSION=	${RELEASE_VER}.${SNAPSHOT_DATE}
-CATEGORIES=	www lang	# ruby
+CATEGORIES=	www ruby
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	knu
 DIST_SUBDIR=	ruby

@@ -2,12 +2,12 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/ruby-uconv/Makefile,v 1.1 2000/08/10 18:47:20 knu Exp $
+# $FreeBSD: ports/japanese/ruby-uconv/Makefile,v 1.2 2000/08/11 11:11:38 knu Exp $
 #
 
 PORTNAME=	uconv
 PORTVERSION=	0.4.4
-CATEGORIES=	japanese converters	# ruby
+CATEGORIES=	japanese converters ruby
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www.bekkoame.ne.jp/~yoshidam/
 MASTER_SITE_SUBDIR=	knu

@@ -2,12 +2,12 @@
 # Date created:		15 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/ruby-syslog/Makefile,v 1.1 2000/08/15 02:28:40 knu Exp $
 #
 
 PORTNAME=	syslog
 PORTVERSION=	0.1.1
-CATEGORIES=	sysutils	# ruby
+CATEGORIES=	sysutils ruby
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www.bekkoame.ne.jp/~yoshidam/
 MASTER_SITE_SUBDIR=	knu

@@ -2,12 +2,12 @@
 # Date created:		15 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/ruby-libwrap/Makefile,v 1.1 2000/08/15 14:37:53 knu Exp $
 #
 
 PORTNAME=	libwrap
 PORTVERSION=	0.1
-CATEGORIES=	security	# ruby
+CATEGORIES=	security ruby
 MASTER_SITES=	http://www.ruby-lang.org/~shugo/libwrap-ruby/
 PKGNAMEPREFIX=	ruby-
 DISTNAME=	${PORTNAME}-ruby-${PORTVERSION}

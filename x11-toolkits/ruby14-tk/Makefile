@@ -2,12 +2,12 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/rubytk/Makefile,v 1.11 2000/08/08 16:08:31 knu Exp $
+# $FreeBSD: ports/x11-toolkits/rubytk/Makefile,v 1.12 2000/08/12 20:09:41 knu Exp $
 #
 
 PORTNAME=	rubytk
 PORTVERSION=	1.4.5
-CATEGORIES+=	x11-toolkits	# ruby
+CATEGORIES+=	x11-toolkits ruby
 MASTER_SITES=	ftp://ftp.netlab.co.jp/pub/lang/ruby/${BRANCH_NAME}/ \
 		ftp://ftp.TokyoNet.AD.JP/pub/misc/ruby/${BRANCH_NAME}/ \
 		ftp://ftp.iij.ad.jp/pub/lang/ruby/${BRANCH_NAME}/ \

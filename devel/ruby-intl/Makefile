@@ -2,12 +2,12 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-intl/Makefile,v 1.1 2000/08/09 12:29:23 knu Exp $
+# $FreeBSD: ports/devel/ruby-intl/Makefile,v 1.2 2000/08/12 20:09:29 knu Exp $
 #
 
 PORTNAME=	intl
 PORTVERSION=	0.11
-CATEGORIES=	devel	# ruby
+CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.page.sannet.ne.jp/hirata-naoto/
 PKGNAMEPREFIX=	ruby-
 DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-${PORTVERSION}

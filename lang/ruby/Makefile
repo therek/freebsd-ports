@@ -2,12 +2,12 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.26 2000/08/12 20:09:22 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.27 2000/08/15 19:53:08 knu Exp $
 #
 
 PORTNAME=	ruby
 PORTVERSION=	1.4.5
-CATEGORIES=	lang ipv6	# ruby
+CATEGORIES=	lang ruby ipv6
 MASTER_SITES=	ftp://ftp.netlab.co.jp/pub/lang/ruby/${BRANCH_NAME}/ \
 		ftp://ftp.TokyoNet.AD.JP/pub/misc/ruby/${BRANCH_NAME}/ \
 		ftp://ftp.iij.ad.jp/pub/lang/ruby/${BRANCH_NAME}/ \

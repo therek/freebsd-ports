@@ -2,12 +2,12 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.2 2000/08/12 20:09:35 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.3 2000/08/13 17:53:06 knu Exp $
 #
 
 PORTNAME=	qt
 PORTVERSION=	0.11
-CATEGORIES=	x11-toolkits	# ruby
+CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	http://sfns.u-shizuoka-ken.ac.jp/geneng/horie_hp/ruby/
 PKGNAMEPREFIX=	ruby-
 DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-${PORTVERSION}
