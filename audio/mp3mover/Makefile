@@ -3,15 +3,15 @@
 # Date created:			Apr 18, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/mp3mover/Makefile,v 1.3 2001/04/27 05:47:49 ijliao Exp $
+# $FreeBSD: ports/audio/mp3mover/Makefile,v 1.4 2001/05/05 07:55:12 ijliao Exp $
 #
 
 PORTNAME=	mp3mover
-PORTVERSION=	1.41
+PORTVERSION=	1.43
 CATEGORIES=	audio perl5
 MASTER_SITES=	http://www.doc.ic.ac.uk/~jsm00/scripts/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/MP3/Tag.pm:${PORTSDIR}/audio/p5-tagged
 
