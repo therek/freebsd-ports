@@ -3,14 +3,14 @@
 # Date created:         29 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/latex/Makefile,v 1.40 2000/01/27 23:18:56 jmz Exp $
+# $FreeBSD: ports/print/latex/Makefile,v 1.41 2000/02/07 01:13:52 jmz Exp $
 #
 
 VERSION=	99.12
 DISTNAME=	latex
 PKGNAME=	latex2e-${VERSION}
 CATEGORIES=     print
-MASTER_SITES=   ftp://ftp.cdrom.com/pub/tex/package/
+MASTER_SITES=   ftp://ftp.freesoftware.com/pub/tex/package/
 DISTFILES=	latex_mf-${VERSION}.tar.gz latex_tfm-${VERSION}.tar.gz \
 		latex_base-${VERSION}.tar.gz latex_tools-${VERSION}.tar.gz \
 		latex_graphics-${VERSION}.tar.gz latex_psnfss-${VERSION}.tar.gz
