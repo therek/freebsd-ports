@@ -2,7 +2,7 @@
 # Date created:				Sat 3 June 2000
 # Whom:					will
 #
-# $FreeBSD: ports/audio/gdcd/Makefile,v 1.2 2000/06/22 05:53:07 will Exp $
+# $FreeBSD: ports/audio/gdcd/Makefile,v 1.3 2000/07/07 19:36:00 steve Exp $
 #
 
 PORTNAME=	gdcd
@@ -22,7 +22,7 @@ USE_X_PREFIX=	yes
 USE_AUTOMAKE=	yes
 AUTOMAKE=	automake -a -i
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GLIB_CONFIG="${GTK_CONFIG}" \
+		GLIB_CONFIG="${GLIB_CONFIG}" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--disable-glibtest --disable-gtktest
