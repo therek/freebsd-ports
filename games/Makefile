@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.340 2001/03/28 03:46:35 steve Exp $
+# $FreeBSD: ports/games/Makefile,v 1.341 2001/04/05 16:50:10 alex Exp $
 #
 
     SUBDIR += 3dc
@@ -197,6 +197,7 @@
     SUBDIR += omega
     SUBDIR += twitch
     SUBDIR += uox3
+    SUBDIR += varconf
     SUBDIR += wmeyes
     SUBDIR += wmminichess
     SUBDIR += wmtictactoe
