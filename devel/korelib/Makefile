@@ -2,13 +2,13 @@
 # Date created:				10 May 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/korelib/Makefile,v 1.1 2001/05/11 21:28:04 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	korelib
 PORTVERSION=	0.0.1
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.thekompany.com/Korelib/releases/
+MASTER_SITES=	ftp://ftp.rygannon.com/pub/Korelib/releases/
 
 MAINTAINER=	ports@FreeBSD.org
 
