@@ -1,12 +1,12 @@
 # New ports collection Makefile for: rxvt
-# Version required:	2.6.1
+# Version required:	2.7.1
 # Date created:         5th December 1994
 # Whom:                 gpalmer@FreeBSD.org
 #
-# $FreeBSD: ports/x11/rxvt/Makefile,v 1.28 1999/08/31 02:50:38 peter Exp $
+# $FreeBSD: ports/x11/rxvt/Makefile,v 1.29 1999/09/02 03:23:48 cpiazza Exp $
 #
 
-DISTNAME=	rxvt-2.6.1
+DISTNAME=	rxvt-2.7.1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.rxvt.org/pub/rxvt/ \
 		ftp://mason.primenet.com.au/pub/rxvt/ \
