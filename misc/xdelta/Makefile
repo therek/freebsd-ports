@@ -2,7 +2,7 @@
 # Date created:					Sun May  4 21:40:06 CDT 1997
 # Whom:						jmacd
 #
-# $FreeBSD: ports/misc/xdelta/Makefile,v 1.26 2001/01/16 17:31:45 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xdelta
@@ -14,13 +14,10 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	c9710216@atlas.newcastle.edu.au
 
 USE_GLIB=	yes
-USE_LIBTOOL=	yes
+GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
+CONFIGURE_TARGET=	--target=${MACHINE_ARCH}-unknown-freebsd${OSREL}
 
 MAN1=		xdelta.1
-
-pre-patch:
-	@${PERL} -pi -e 's|\$\(top_builddir\)/libtool|\$\(prefix\)/bin/libtool|' \
-		${WRKSRC}/configure
 
 .include <bsd.port.mk>
