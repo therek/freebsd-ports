@@ -2,14 +2,13 @@
 # Date created:		31 October 1994
 # Whom:			ljo
 #
-# $FreeBSD: ports/math/eispack/Makefile,v 1.26 2000/06/16 10:37:23 sobomax Exp $
+# $FreeBSD: ports/math/eispack/Makefile,v 1.27 2000/06/16 21:51:32 asami Exp $
 #
 
 PORTNAME=	eispack
 PORTVERSION=	1.0
 CATEGORIES=	math
-MASTER_SITES=	ftp://ftp.netlib.org/eispack/ \
-		ftp://netlib.bell-labs.com/netlib/eispack/ \
+MASTER_SITES=	ftp://netlib.bell-labs.com/netlib/eispack/ \
 		ftp://www.hensa.ac.uk/mirrors/netlib/eispack/
 DISTFILES=	${SRCS:.f=.f.gz}
 
