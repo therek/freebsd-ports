@@ -2,7 +2,7 @@
 # Date created:		07 Feb 1999
 # Whom:			Scott Blachowicz <Scott.Blachowicz@seaslug.org>
 #
-# $FreeBSD: ports/mail/nmh/Makefile,v 1.23 2000/04/27 14:02:17 knu Exp $
+# $FreeBSD: ports/mail/nmh/Makefile,v 1.24 2000/06/29 07:02:29 obrien Exp $
 #
 # Makefile variables of interest:
 #
@@ -94,7 +94,7 @@ MLINKS=	mh-profile.5 mh_profile.5
 MAN8=	ap.8 conflict.8 dp.8 fmtdump.8 install-mh.8 mh-mts.8 post.8
 
 post-install:
-	@PKG_PREFIX='${PREFIX}' ${SH} ${PKGDIR}/INSTALL
+	@PKG_PREFIX='${PREFIX}' ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 	chgrp mail ${PREFIX}/bin/inc
 	${CHMOD} g+s ${PREFIX}/bin/inc
 
