@@ -2,7 +2,7 @@
 # Date created:		2 November 1997
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/lang/guile/Makefile,v 1.22 2000/03/11 22:16:20 asami Exp $
+# $FreeBSD: ports/lang/guile/Makefile,v 1.23 2000/04/12 06:18:49 obrien Exp $
 #
 
 PORTNAME=	guile
@@ -14,15 +14,10 @@ MASTER_SITE_SUBDIR=	guile
 
 MAINTAINER=	jseger@FreeBSD.org
 
-GNU_CONFIGURE=	YES
-CONFIGURE_ARGS=	--with-threads
-
 USE_LIBTOOL=	yes
 LIBTOOLFILES=	configure guile-readline/configure
+CONFIGURE_ARGS=	--with-threads
 
 PLIST_SUB=	GUILE_VER=1.3.4
-
-post-install:
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>
