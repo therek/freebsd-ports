@@ -2,11 +2,12 @@
 # Date created:		30 April 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/rpm/Makefile,v 1.27 2000/10/05 04:09:43 nakai Exp $
+# $FreeBSD: ports/misc/rpm/Makefile,v 1.28 2000/10/17 08:42:00 nakai Exp $
 #
 
 PORTNAME=	rpm
 PORTVERSION=	3.0.6
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.rpm.org/pub/rpm/dist/rpm-3.0.x/
 
@@ -21,7 +22,7 @@ USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--with-glob
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
-INSTALL_SHLIB=	yes
+INSTALLS_SHLIB=	yes
 
 MANLANG=	"" ja pl ru
 
