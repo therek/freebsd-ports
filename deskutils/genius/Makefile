@@ -2,7 +2,7 @@
 # Date created:				1 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/deskutils/genius/Makefile,v 1.10 2000/08/04 16:11:11 ade Exp $
+# $FreeBSD: ports/deskutils/genius/Makefile,v 1.11 2000/10/05 07:10:25 reg Exp $
 #
 
 PORTNAME=	genius
@@ -10,7 +10,7 @@ PORTVERSION=	0.4.6
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	http://ftp.5z.com/pub/genius/
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

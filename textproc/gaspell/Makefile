@@ -2,7 +2,7 @@
 # Date created:				17th February 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/gaspell/Makefile,v 1.6 2000/08/04 01:33:14 ade Exp $
+# $FreeBSD: ports/textproc/gaspell/Makefile,v 1.7 2000/08/21 14:59:19 ade Exp $
 #
 
 PORTNAME=	gaspell
@@ -11,7 +11,7 @@ CATEGORIES=	textproc gnome
 MASTER_SITES=	http://aspell.sourceforge.net/
 DISTNAME=	${PORTNAME}-.30
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		aspell.8:${PORTSDIR}/textproc/aspell
