@@ -2,13 +2,13 @@
 # Date created:		December 3, 1997
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/lang/o2c/Makefile,v 1.10 2001/05/28 19:45:43 fenner Exp $
+# $FreeBSD: ports/lang/o2c/Makefile,v 1.11 2001/07/11 16:33:44 fenner Exp $
 
 PORTNAME=	o2c
 PORTVERSION=	1.16
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.uni-kl.de/pub/informatik/software/ \
-		ftp://ftp.archive.de.uu.net/pub/programming/languages/oberon/www.uni-kl.de/OOC/files/misc/
+		http://www.breuninger.org/files/distfiles/
 
 MAINTAINER=	ob@breuninger.org
 
