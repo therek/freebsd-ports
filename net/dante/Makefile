@@ -2,11 +2,11 @@
 # Date created:			  20 October 1999
 # Whom:				  Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/net/dante/Makefile,v 1.3 2000/03/21 01:04:41 jedgar Exp $
+# $FreeBSD: ports/net/dante/Makefile,v 1.4 2000/04/09 18:10:49 cpiazza Exp $
 #
 
 PORTNAME=	dante
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.inet.no/pub/socks/ \
 		http://www.freenix.no/~anders/ \
@@ -27,7 +27,6 @@ post-install:
 	${INSTALL} -d -m 555 ${PREFIX}/share/doc/dante
 	@${INSTALL_DATA} ${WRKSRC}/doc/README* ${PREFIX}/share/doc/dante
 	@${INSTALL_DATA} ${WRKSRC}/doc/rfc* ${PREFIX}/share/doc/dante
-	@${INSTALL_DATA} ${WRKSRC}/doc/FAQ ${PREFIX}/share/doc/dante
 	@${INSTALL_DATA} ${WRKSRC}/doc/SOCKS4.protocol ${PREFIX}/share/doc/dante
 
 .include <bsd.port.mk>
