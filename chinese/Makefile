@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.40 1999/09/07 11:28:45 foxfair Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.41 1999/09/07 11:37:04 foxfair Exp $
 #
 
     SUBDIR += CJK
@@ -35,6 +35,7 @@
     SUBDIR += telnet
     SUBDIR += tin
     SUBDIR += ve
+    SUBDIR += xa+cv
     SUBDIR += xcin
     SUBDIR += xcin25
 
