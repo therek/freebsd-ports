@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim6/Makefile,v 1.104 2001/02/15 12:12:43 obrien Exp $
+# $FreeBSD: ports/editors/vim6/Makefile,v 1.105 2001/02/15 12:18:48 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -56,7 +56,6 @@ MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=athena" ${I18N}
 #MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=yes" ${I18N}
 .elif defined(WITH_GTK)
 MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=gtk --with-gtk-prefix=${X11BASE}" ${I18N}
-MAKE_ARGS+=	CONF_OPT_PERL="--enable-pythoninterp"
 MAKE_ARGS+=	X_LIBS="$(X_LIBS) -lXt"
 .else
 USE_MOTIF=	yes
