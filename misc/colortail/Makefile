@@ -2,28 +2,26 @@
 # Date created:                25 February 1999
 # Whom:                        Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/colortail/Makefile,v 1.8 2000/06/07 18:14:45 cpiazza Exp $
+# $FreeBSD: ports/misc/colortail/Makefile,v 1.9 2000/06/20 21:45:52 cpiazza Exp $
 #
 
 PORTNAME=	colortail
-PORTVERSION=	0.2.0
+PORTVERSION=	0.3.0
 CATEGORIES=	misc
-MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/cpiazza/
-# commented out until I upgrade to 0.3.0
-# MASTER_SITES=	http://www.student.hk-r.se/~pt98jan/
+MASTER_SITES=	http://www.student.hk-r.se/~pt98jan/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	bugg@bugg.strangled.net
+
+LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 GNU_CONFIGURE=	yes
 
-MAN1=		colortail.1
-
 post-install:
 	@ ${MKDIR} ${PREFIX}/share/colortail
-	@ ${INSTALL_DATA} ${WRKSRC}/CONFIG ${PREFIX}/share/colortail/CONFIG.example
+	@ ${INSTALL_DATA} ${WRKSRC}/example-conf/conf* ${PREFIX}/share/colortail/
 	@ ${ECHO} "*********************************************"
-	@ ${ECHO} "An example of the colour configuration is in"
-	@ ${ECHO} "${PREFIX}/share/colortail/CONFIG.example"
+	@ ${ECHO} "Examples of the color configuration files are"
+	@ ${ECHO} "in ${PREFIX}/share/colortail/"
 	@ ${ECHO} "*********************************************"
 
 .include <bsd.port.mk>
