@@ -3,14 +3,14 @@
 # Date created:				16 March 1999
 # Whom:					Rod Taylor <rod@zort.on.ca>
 #
-# $FreeBSD: ports/audio/xhippo/Makefile,v 1.5 1999/08/25 04:36:23 obrien Exp $
+# $FreeBSD: ports/audio/xhippo/Makefile,v 1.6 1999/11/05 03:42:13 cpiazza Exp $
 #
 
 DISTNAME=	xhippo-2.0
 CATEGORIES=	audio
 MASTER_SITES=	http://zenchaos.netpedia.net/software/
 
-MAINTAINER=	ron@zort.on.ca
+MAINTAINER=	rod@zort.on.ca
 
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
