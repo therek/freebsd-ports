@@ -2,7 +2,7 @@
 # Date created:		15 March 1995
 # Whom:			Nobuhiro Yasutomi
 #
-# $FreeBSD: ports/x11-clocks/emiclock/Makefile,v 1.16 1999/10/26 04:16:05 mharo Exp $
+# $FreeBSD: ports/x11-clocks/emiclock/Makefile,v 1.17 2000/04/10 00:32:35 cpiazza Exp $
 #
 
 PORTNAME=	emiclock
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.noge.com/pub/EmiClock/X11/
 MAINTAINER=	koba@noge.com
 
 .if ${MACHINE_ARCH} != "i386"
-PLIST=		${PKGDIR}/PLIST.nosound
+PLIST=		${PKGDIR}/pkg-plist.nosound
 .endif
 
 USE_IMAKE=	yes
