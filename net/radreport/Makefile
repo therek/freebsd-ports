@@ -2,17 +2,18 @@
 # Date created:		10/22/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/net/radreport/Makefile,v 1.2 2000/02/11 12:57:47 jedgar Exp $
+# $FreeBSD: ports/net/radreport/Makefile,v 1.3 2000/04/09 18:13:18 cpiazza Exp $
 #
 
-PORTNAME=	radreport
-PORTVERSION=	1.3
-CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.livingston.com/pub/le/contrib/radius/
-DISTNAME=	radreport
+PORTNAME=		radreport
+PORTVERSION=		1.3
+CATEGORIES=		net
+MASTER_SITES=		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	kbyanc
+DISTNAME=		radreport
 EXTRACT_SUFX=
 
-MAINTAINER=	kbyanc@posi.net
+MAINTAINER=		kbyanc@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
