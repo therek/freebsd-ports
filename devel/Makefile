@@ -1,6 +1,5 @@
-# $FreeBSD: ports/devel/Makefile,v 1.457 2001/03/08 13:09:28 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.458 2001/03/09 23:07:21 lioux Exp $
 #
-    SUBDIR += zziplib
 
     SUBDIR += ElectricFence
     SUBDIR += ORBacus
@@ -428,5 +427,6 @@
     SUBDIR += xwpe
     SUBDIR += xxgdb
     SUBDIR += yacl
+    SUBDIR += zziplib
 
 .include <bsd.port.subdir.mk>
