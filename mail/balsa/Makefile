@@ -2,7 +2,7 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.20 2000/06/26 17:27:53 sobomax Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.21 2000/07/04 10:56:53 sobomax Exp $
 #
 
 PORTNAME=	balsa
@@ -15,7 +15,9 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		PropList.2:${PORTSDIR}/devel/libPropList
-RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
+RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter \
+		${X11BASE}/share/gnome/sounds/login.wav:${PORTSDIR}/audio/gnomeaudio \
+		panel:${PORTSDIR}/x11/gnomecore
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
