@@ -3,7 +3,7 @@
 # Date created:         4 October 1995
 # Whom:                 Juergen Lock <nox@jelal.hb.north.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/afio/Makefile,v 1.8 1999/08/31 01:59:28 peter Exp $
 #
 
 DISTNAME=       afio-2.4.5
@@ -17,7 +17,6 @@ MAINTAINER=	nox@jelal.hb.north.de
 WRKSRC=		${WRKDIR}/afio.2.4.5
 ALL_TARGET=	afio
 MAN1=		afio.1
-
 
 post-install:
 .if !defined(NOPORTDOCS)
