@@ -2,7 +2,7 @@
 # Date created:		09 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/sysutils/daemontools53/Makefile,v 1.1.1.1 2000/04/27 21:25:35 nbm Exp $
+# $FreeBSD: ports/sysutils/daemontools53/Makefile,v 1.2 2000/07/29 16:32:34 nbm Exp $
 #
 
 PORTNAME=	daemontools
@@ -13,7 +13,7 @@ MASTER_SITES=	http://cr.yp.to/daemontools/ \
 
 MAINTAINER=	dom@myrddin.demon.co.uk
 
-NO_PACKAGE=	Unsure of djb\'s license
+NO_PACKAGE=	"Unsure of djb\'s license"
 
 ALL_TARGET=	it man
 INSTALL_TARGET=	setup
