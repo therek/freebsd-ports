@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.325 2001/02/08 12:42:56 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.326 2001/02/08 17:36:25 ijliao Exp $
 #
 
     SUBDIR += 3dc
@@ -203,6 +203,7 @@
     SUBDIR += xbl
     SUBDIR += xblackjack
     SUBDIR += xblast
+    SUBDIR += xblast-beta
     SUBDIR += xblood
     SUBDIR += xbloody
     SUBDIR += xboard
