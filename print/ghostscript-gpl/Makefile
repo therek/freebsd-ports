@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript-afpl/Makefile,v 1.74 2001/09/11 20:18:29 knu Exp $
+# $FreeBSD: ports/print/ghostscript-afpl/Makefile,v 1.75 2001/09/11 20:22:01 knu Exp $
 #
 
 PORTNAME=	ghostscript
@@ -50,7 +50,7 @@ MLINKS=		gslp.1 gsbj.1 \
 		ps2ps.1 eps2eps.1
 
 .if defined(A4)
-CFLAGS+=	-DA4
+MAKE_ENV+=	A4=${A4}
 .endif
 
 .if !defined(WITHOUT_X11)
