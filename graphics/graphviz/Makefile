@@ -2,13 +2,13 @@
 # Date created:		03 Feb 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/graphviz/Makefile,v 1.20 2000/12/09 06:17:16 kevlo Exp $
+# $FreeBSD: ports/graphics/graphviz/Makefile,v 1.21 2001/02/28 15:03:55 kevlo Exp $
 #
 
 PORTNAME=	graphviz
 PORTVERSION=	1.7c
 CATEGORIES=	graphics tk83
-MASTER_SITES=	http://www.research.att.com/sw/tools/graphviz/
+MASTER_SITES=	http://www.research.att.com/sw/tools/graphviz/dist/
 DISTNAME=	gviz${PORTVERSION:S/.//}
 EXTRACT_SUFX=	.tgz
 
