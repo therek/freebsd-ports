@@ -2,7 +2,7 @@
 # Date created:				18 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/deskutils/abacus/Makefile,v 1.11 2000/07/07 18:44:41 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	abacus
@@ -20,6 +20,7 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82 \
 		tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
+USE_REINPLACE=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 MAKE_ENV=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}"
@@ -32,7 +33,7 @@ post-extract:
 	@(cd ${WRKSRC}; ${RM} canvas; ${LN} -sf canvas-tcl8.2.2 canvas)
 
 post-patch:
-	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/abacus
+	@${REINPLACE_CMD} -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/abacus
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/abacus ${PREFIX}/bin
