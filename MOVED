@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.244 2003/11/02 21:07:21 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.245 2003/11/02 21:26:16 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -646,3 +646,4 @@ lang/jgnat-doc-html||2003-11-03|Broken and not supported by ACT
 lang/jgnat-doc-info||2003-11-03|Broken and not supported by ACT
 lang/jgnat-doc-ps||2003-11-03|Broken and not supported by ACT
 lang/jgnat-doc-txt||2003-11-03|Broken and not supported by ACT
+devel/amulet||2003-11-03|Development stopped in 1998; see OpenAmulet instead
