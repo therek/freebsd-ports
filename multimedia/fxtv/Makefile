@@ -2,13 +2,14 @@
 # Date created:		Thu Nov  4 19:54:04 EST 1999
 # Whom:			Randall Hopper <aa8vb@nc.rr.com>
 #
-# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.30 2000/08/08 02:55:04 steve Exp $
+# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.31 2000/09/05 18:34:49 asami Exp $
 #
 
 PORTNAME=	fxtv
 PORTVERSION=	1.02
 CATEGORIES=	graphics
-MASTER_SITES=	http://people.freebsd.org/~rhh/fxtv/
+MASTER_SITES=		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	rhh
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	aa8vb@nc.rr.com
