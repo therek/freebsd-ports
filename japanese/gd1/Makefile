@@ -3,7 +3,7 @@
 # Date created:				19 Aug 1998
 # Whom:					ichiro@ichiro.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/gd/Makefile,v 1.9 1999/09/08 16:50:29 taoka Exp $
 #
 
 DISTNAME=       gd-1.6.3
@@ -12,7 +12,7 @@ CATEGORIES=	japanese graphics
 MASTER_SITES=   http://www.boutell.com/gd/http/ \
 		ftp://ftp.boutell.com/pub/boutell/gd/
 
-PATCH_SITES=    ftp://ftp.ipc.chiba-u.ac.jp/pub/pub.yamaga/gd/1.6.3
+PATCH_SITES=    ftp://ftp.ipc.chiba-u.ac.jp/pub/pub.yamaga/gd/1.6.3/
 PATCHFILES=     gd-1.6.3.ttf-kanji.patch.990731
 
 MAINTAINER=	ichiro@ichiro.org
