@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.185 2001/03/19 10:22:43 kiri Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.186 2001/03/19 11:36:23 kiri Exp $
 #
 
     SUBDIR += agrep
@@ -142,6 +142,7 @@
     SUBDIR += sablotron
     SUBDIR += sarep
     SUBDIR += sdf
+    SUBDIR += sdocbook-xml
     SUBDIR += se-ispell
     SUBDIR += sgmlformat
     SUBDIR += sgmls
