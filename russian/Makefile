@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/russian/Makefile,v 1.24 1999/08/31 01:46:54 peter Exp $
 #
 
     SUBDIR += X.language
@@ -13,6 +13,7 @@
     SUBDIR += pine.language
     SUBDIR += rispell
     SUBDIR += wmcyrx
+    SUBDIR += xcode
     SUBDIR += xruskb
 
 .include <bsd.port.subdir.mk>
