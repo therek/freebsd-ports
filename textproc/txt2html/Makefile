@@ -2,17 +2,16 @@
 # Date created:         29 Jun 1998
 # Whom:                 Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/textproc/txt2html/Makefile,v 1.4 2000/04/09 21:53:14 cpiazza Exp $
+# $FreeBSD: ports/textproc/txt2html/Makefile,v 1.5 2000/05/21 11:52:05 knu Exp $
 #
 
 PORTNAME=	txt2html
-PORTVERSION= 	1.27
+PORTVERSION= 	1.28
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.aigeek.com/txt2html/
 
 MAINTAINER=	croyle@gelemna.org
 
-WRKSRC=		${WRKDIR}/txt2html
 NO_BUILD=	yes
 
 do-configure:
@@ -23,7 +22,7 @@ do-install:
 	${MKDIR} ${PREFIX}/share/doc/txt2html
 	${INSTALL_DATA} ${WRKSRC}/txt2html.dict ${PREFIX}/share/doc/txt2html/
 .if !defined(NOPORTDOCS)
-.for file in INSTALL LICENSE README changes.html sample.html sample.txt
+.for file in INSTALL LICENSE README changes.html sample.foot sample.html sample.txt
 	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/txt2html/
 .endfor
 .endif
