@@ -2,13 +2,13 @@
 # Date created:		Fri Aug 14 15:32:26 CEST 1998
 # Whom:			Slaven Rezic <eserte@cs.tu-berlin.de>
 #
-# $FreeBSD: ports/german/BBBike/Makefile,v 1.7 2000/04/08 22:01:08 mharo Exp $
+# $FreeBSD: ports/german/BBBike/Makefile,v 1.8 2000/12/19 11:36:19 wosch Exp $
 #
 
 PORTNAME=	BBBike
-PORTVERSION=	3.01
+PORTVERSION=	3.03
 CATEGORIES=	german
-MASTER_SITES=	http://pub.cs.tu-berlin.de/src/BBBike/
+MASTER_SITES=	http://prdownloads.sourceforge.net/bbbike/
 
 MAINTAINER=	eserte@onlineoffice.de
 
@@ -20,6 +20,10 @@ POD2MAN=	pod2man
 MAN1=		bbbike.1
 
 MYDESTDIR=	${PREFIX}/BBBike
+
+.if !defined(PERL_VERSION) || ${PERL_VERSION} <= 5.00503
+PLIST=		${PKGDIR}/pkg-plist.5005
+.endif
 
 do-build:
 	cd ${WRKSRC}/ext/BBBikeXS; ${PERL5} Makefile.PL; make all install clean; ${RM} Makefile.old
