@@ -2,11 +2,12 @@
 # Date created:        00/05/22
 # Whom:                Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pips800/Makefile,v 1.5 2000/12/14 14:46:09 taoka Exp $
+# $FreeBSD: ports/print/pips800/Makefile,v 1.6 2000/12/14 15:29:51 taoka Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
 PORTVERSION?=	1.2
+PORTREVISION=	1
 CATEGORIES?=	print linux
 MASTER_SITES?=	http://www.epkowa.on.arena.ne.jp/pips/data/${PRTYPE}/
 DISTNAME?=	${PORTNAME}-${PORTVERSION}
@@ -23,11 +24,11 @@ NO_WRKSUBDIR=	yes
 PLIST_SUB=	BASE_NAME=${BASE_NAME} PRTYPE=${PRTYPE} LIB_DIR_FILE=usr/lib/${LIB_FILE} LIB_README=${LIB_NAME}
 MD5_FILE=	${.CURDIR}/distinfo
 .if (${PORTVERSION} == 1.2)
-PORTREVISION=   1
 LIB_FILE=	libPrt${PRTYPE}.so
 LIB_NAME=	"@comment Readme of the Lib for only 1.3 or later"
 FILTER=		${FILESDIR}/filter.rev_1.2
 .else
+RUN_DEPENDS+=	/compat/linux/usr/lib/libpng.so.2:${PORTSDIR}/graphics/linux-png
 LIB_FILE=	libpm${PRTYPE}c.so
 LIB_NAME=	share/doc/${BASE_NAME}/libpm${PRTYPE}c.readme
 FILTER=		${FILESDIR}/filter.rev
