@@ -2,11 +2,11 @@
 # Date created:				June 5th 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/tmetric/Makefile,v 1.1 2000/06/05 13:25:36 will Exp $
 #
 
 PORTNAME=	tmetric
-PORTVERSION=	v0.2
+PORTVERSION=	v0.3
 CATEGORIES=	benchmarks net
 MASTER_SITES=	http://netgraft.com/projects/tmetric/
 
