@@ -2,7 +2,7 @@
 # Date created:		25 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/xunicode/Makefile,v 1.1 2000/08/25 16:13:23 knu Exp $
 #
 
 PORTNAME=	xunicode
@@ -17,7 +17,10 @@ USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 post-patch:
-	${PERL} -i -pe 's,/usr/X11R6\b,${X11BASE},g' ${WRKSRC}/MakeInclude
+	${PERL} -i -p \
+		-e 's,/usr/X11R6\b,${X11BASE},g;' \
+		-e 's,^CXX(FLAGS)? *=.*,,;' \
+		${WRKSRC}/MakeInclude
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/lib/libxunicode.a ${PREFIX}/lib/
