@@ -2,7 +2,7 @@
 # Date created:		11 Dec 1998
 # Whom:			ruslan@shevchenko.kiev.ua
 #
-# $FreeBSD: ports/lang/erlang/Makefile,v 1.8 2000/01/03 11:43:33 asami Exp $
+# $FreeBSD: ports/lang/erlang/Makefile,v 1.9 2000/04/12 06:18:20 obrien Exp $
 #
 
 PORTNAME=	erlang
@@ -20,7 +20,7 @@ PATCHFILES=	tmp_patch_R6B0.2.txt tmp_patch_R6B0.3.txt \
 		tmp_patch_R6B0.4.txt tmp_patch_R6B0.5.txt \
 		tmp_patch_R6B0.7.txt tmp_patch_R6B0.8.txt
 
-MAINTAINER=	seb@strollo.org
+MAINTAINER=	seb@bluetail.com
 
 # Make sure jdk is available (see use below)
 BUILD_DEPENDS=  ${JAVABINDIR}/javac:${PORTSDIR}/java/jdk
