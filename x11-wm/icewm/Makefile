@@ -1,15 +1,14 @@
 # New ports collection makefile for:	icewm
-# Version required:	0.9.52
+# Version required:	1.0.0
 # Date created:		10 August 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.44 1999/11/24 07:02:13 nakai Exp $
+# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.45 1999/12/01 09:34:00 nakai Exp $
 #
 
-DISTNAME=	icewm-0.9.52
+DISTNAME=	icewm-1.0.0
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://www.kiss.uni-lj.si/~k4fr0235/icewm/devel/ \
-		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
+MASTER_SITES=	http://download.sourceforge.net/icewm/
 EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	nakai@FreeBSD.org
