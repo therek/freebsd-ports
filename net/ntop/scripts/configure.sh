@@ -1,5 +1,5 @@
 # ex:ts=4
-# $FreeBSD: ports/net/ntop/scripts/configure.sh,v 1.1 2003/06/15 18:50:37 oliver Exp $
+# $FreeBSD: ports/net/ntop/scripts/configure.sh,v 1.2 2003/07/17 04:57:17 daichi Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -80,7 +80,7 @@ while [ "$1" ]; do
 			;;
 
 		\"locale\")
-			echo "LIB_DEPENDS+=	intl.4:\${PORTSDIR}/devel/gettext"
+			echo "LIB_DEPENDS+=	intl.5:\${PORTSDIR}/devel/gettext"
 			echo "CONFIGURE_ARGS+=--with-localedir=\${LOCALBASE}/share/locale"
 			echo "CONFIGURE_ARGS+=--enable-i18n"
 			;;
