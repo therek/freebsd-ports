@@ -2,7 +2,7 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.18 2000/06/01 16:25:10 ade Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.19 2000/06/22 08:01:28 sobomax Exp $
 #
 
 PORTNAME=	balsa
@@ -30,7 +30,7 @@ CONFIGURE_ENV=	CPPFLAGS='-I${LOCALBASE}/include' \
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
 		--with-gnome=${PREFIX} \
-		--enable-system-install
+		--enable-threads
 
 MAN1=		balsa.1
 
