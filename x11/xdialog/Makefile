@@ -2,7 +2,7 @@
 # Date created:				Jan 8, 2001
 # Whom:					Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xdialog/Makefile,v 1.1 2001/01/08 23:26:48 vanilla Exp $
 #
 
 PORTNAME=	xdialog
@@ -24,7 +24,7 @@ NODOCS=	"@comment "
 
 PLIST_SUB=	NOPORTDOCS=${NODOCS}
 
-.if defined(NOPORTDOCS)
+.if !defined(NOPORTDOCS)
 post-install:
 	${MKDIR} ${PREFIX}/share/${PORTNAME}
 	${CP} ${WRKSRC}/html/* ${PREFIX}/share/${PORTNAME}
