@@ -190,7 +190,7 @@ Option "XkbRules" "xfree86"
   Users of -stable or older -current can switch to X.Org by setting
   X_WINDOW_SYSTEM=xorg in make.conf and following the same process.
 
-  Alternately, portupgrade can be used with packages:
+  Alternately, FreeBSD 5.x and later users can use portupgrade with packages:
     cd /var/db/pkg
     portupgrade -o devel/imake-6  imake-4*
     portupgrade -o x11/xorg-libraries  XFree86-libraries
@@ -694,4 +694,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.63 2004/08/29 10:11:49 obrien Exp $
+$FreeBSD: ports/UPDATING,v 1.64 2004/08/29 14:06:34 sem Exp $
