@@ -2,10 +2,10 @@
 # Date created:         Sep 10 1999
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/www/qdecoder/Makefile,v 1.2 2000/04/02 17:38:17 mharo Exp $
+# $FreeBSD: ports/www/qdecoder/Makefile,v 1.3 2000/04/10 00:06:44 cpiazza Exp $
 #
 
-PORTNAME=	qDecode
+PORTNAME=	qDecoder
 PORTVERSION= 	5.0.8
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.hongik.com/pub/qDecoder/
