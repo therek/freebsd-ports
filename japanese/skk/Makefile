@@ -2,7 +2,7 @@
 # Date created:		04 Mar 1997
 # Whom:			Makoto Matsushita <matusita@jp.freebsd.org>
 #
-# $FreeBSD: ports/japanese/skk/Makefile,v 1.13 2000/04/12 14:37:38 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	skk
@@ -11,7 +11,7 @@ CATEGORIES=	japanese elisp
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	matusita@jp.FreeBSD.org
+MAINTAINER=	matusita@FreeBSD.org
 
 SKKJISYO_SIZE?=	L
 SKKJISYO?=	SKK-JISYO.${SKKJISYO_SIZE}

@@ -2,7 +2,7 @@
 # Date created:		10 Aug 2000
 # Whom:			matusita@jp.FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux-vmware-toolbox/Makefile,v 1.5 2001/05/24 02:38:02 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vmware-toolbox
@@ -12,7 +12,7 @@ MASTER_SITES=	# none
 PKGNAMEPREFIX=	linux-
 DISTNAME=	vmware-linux-tools
 
-MAINTAINER=	matusita@jp.FreeBSD.org
+MAINTAINER=	matusita@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 USE_LINUX=	yes
