@@ -2,7 +2,7 @@
 # Date created:				1/11/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/www/grail/Makefile,v 1.14 2000/04/10 00:05:18 cpiazza Exp $
+# $FreeBSD: ports/www/grail/Makefile,v 1.15 2000/06/22 14:06:24 nectar Exp $
 #
 
 PORTNAME=		grail
@@ -14,8 +14,8 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		nectar@freebsd.org
 
-BUILD_DEPENDS=		python:${PORTSDIR}/lang/python
-RUN_DEPENDS=		${PREFIX}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
+USE_PYTHON=		yes
+RUN_DEPENDS=		${PYTHON_LIBDIR}/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 
 WRKSRC=			${WRKDIR}/${PKGNAME}
 
