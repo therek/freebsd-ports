@@ -2,7 +2,7 @@
 # Date created:		Nov 3 1999
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.6 2001/01/16 17:31:09 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jdk
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://iodynamics.com/pub/mirror/linux-jdk/JDK-1.2.2/i386/rc4/ \
 PKGNAMEPREFIX=	linux-
 DISTNAME=	jdk-1.2.2-RC4-linux-i386-glibc-2.1.2
 
-MAINTAINER=	K.J.Koster@kpn.com
+MAINTAINER=	znerd@FreeBSD.org
 
 RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base \
 		javavm:${PORTSDIR}/java/javavmwrapper
