@@ -2,11 +2,11 @@
 # Date created:				10 April 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/mod_backhand/Makefile,v 1.2 2001/04/13 04:26:12 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mod_backhand
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.cnds.jhu.edu/pub/backhand/
 
