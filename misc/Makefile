@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.353 2001/06/14 05:43:05 dwcjr Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.354 2001/06/14 07:51:20 ijliao Exp $
 #
 
     SUBDIR += 40upgrade
@@ -36,6 +36,7 @@
     SUBDIR += cstream
     SUBDIR += cuecat
     SUBDIR += cwish
+    SUBDIR += datedif
     SUBDIR += deco
     SUBDIR += dejagnu
     SUBDIR += delay
