@@ -3,7 +3,7 @@
 # Date created:		6 January 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.28 1999/09/06 15:44:57 kuriyama Exp $
+# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.29 1999/12/09 16:06:34 kuriyama Exp $
 #
 
 DISTNAME=	jpman-3.4
@@ -19,7 +19,7 @@ NO_MTREE=	yes
 WRKSRC=		${WRKDIR}/man
 PLIST=		${WRKDIR}/PLIST
 
-MANSECS=	1 5 6 7 8
+MANSECS=	1 3 5 6 7 8
 JAMANDIR?=	/usr/opt/doc/ja_JP.eucJP/man
 
 do-extract:
