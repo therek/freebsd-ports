@@ -2,38 +2,37 @@
 # Date created:		19 December 1994
 # Whom:			janek
 #
-# $FreeBSD: ports/ftp/moxftp/Makefile,v 1.27 2000/04/12 05:31:16 mharo Exp $
+# $FreeBSD: ports/ftp/moxftp/Makefile,v 1.28 2000/11/07 23:28:04 asami Exp $
 #
 
 PORTNAME=	moxftp
 PORTVERSION=	2.2
 CATEGORIES=	ftp
-MASTER_SITES=	ftp://metalab.unc.edu/pub/X11/contrib/applications/ \
-	  	ftp://ftp.inria.fr/X/contrib-R5/applications/ \
-		ftp://ftp.tk.mesh.ad.jp/pub/X/contrib/applications/
+MASTER_SITES=	ftp://ftp.ibiblio.org/pub/X11/contrib/applications/ \
+		ftp://ftp.inria.fr/X/contrib-R5/applications/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
-GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes
+GNU_CONFIGURE=	yes
 MAN1=		${PROGRAM_NAME}.1
 PLIST_SUB=	PROGRAM_NAME=${PROGRAM_NAME} RESOURCE_NAME=${RESOURCE_NAME}
-STRIP=
+STRIP=		# empty
 
 .if !defined(WANT_ATHENA_VERSION)
 USE_MOTIF=	yes
 CONFIGURE_ARGS=	motif
-PROGRAM_NAME=mftp
-RESOURCE_NAME=Mftp
+PROGRAM_NAME=	mftp
+RESOURCE_NAME=	Mftp
 .else
 CONFIGURE_ARGS=	athena
-PROGRAM_NAME=xftp
-RESOURCE_NAME=Xftp
+PROGRAM_NAME=	xftp
+RESOURCE_NAME=	Xftp
 .endif
 
 post-install:
 	@strip ${PREFIX}/bin/${PROGRAM_NAME}
-	@${INSTALL_MAN} ${WRKSRC}/${PROGRAM_NAME}.man ${PREFIX}/man/man1/${PROGRAM_NAME}.1
+	${INSTALL_MAN} ${WRKSRC}/${PROGRAM_NAME}.man ${MANPREFIX}/man/man1/${PROGRAM_NAME}.1
 
 .include <bsd.port.mk>
