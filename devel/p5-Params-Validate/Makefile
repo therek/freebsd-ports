@@ -2,11 +2,11 @@
 # Date created:				10 April 2001
 # Whom:					Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Params-Validate/Makefile,v 1.1 2001/04/10 19:46:03 will Exp $
 #
 
 PORTNAME=	Params-Validate
-PORTVERSION=	0.03
+PORTVERSION=	0.04
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Devel/DROLSKY
