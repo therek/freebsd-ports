@@ -2,7 +2,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/security/sudo/Makefile,v 1.37 2001/02/21 12:42:59 mharo Exp $
+# $FreeBSD: ports/security/sudo/Makefile,v 1.38 2001/03/07 10:31:39 mharo Exp $
 #
 
 PORTNAME=	sudo
@@ -17,8 +17,7 @@ MAINTAINER=	mharo@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 
-CONFIGURE_ARGS=	--with-skey \
-		--sysconfdir=${PREFIX}/etc \
+CONFIGURE_ARGS= --sysconfdir=${PREFIX}/etc \
 		--disable-log-wrap \
 		--with-ignore-dot \
 		--with-tty-tickets \
@@ -27,6 +26,13 @@ CONFIGURE_ARGS=	--with-skey \
 		--with-all-insults \
 		--with-logincap \
 		--disable-root-sudo
+
+.ifdef(WITH_OPIE)
+CONFIGURE_ARGS+=--with-opie \
+		--with-long-otp-prompt
+.else
+CONFIGURE_ARGS+=--with-skey
+.endif
 
 MAN5=		sudoers.5
 MAN8=		sudo.8 visudo.8
