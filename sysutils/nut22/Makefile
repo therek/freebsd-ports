@@ -2,11 +2,11 @@
 # Date created:         08 Jan 2000
 # Whom:                 Boris Popov <bp@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/nut/Makefile,v 1.5 2000/04/09 19:08:12 cpiazza Exp $
+# $FreeBSD: ports/sysutils/nut/Makefile,v 1.6 2000/04/22 10:12:53 mharo Exp $
 #
 
 PORTNAME=	nut
-PORTVERSION=	0.43.1
+PORTVERSION=	0.44.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.exploits.org/nut/release/
 
@@ -18,7 +18,10 @@ LIB_DEPENDS=    gd:${PORTSDIR}/graphics/gd
 
 GNU_CONFIGURE=  yes
 CONFIGURE_ARGS= --sysconfdir=${PREFIX}/etc/nut \
-		--with-uid=65534 --with-gid=68
+		--with-cgipath=${PREFIX}/share/nut/cgi \
+		--with-modelpath=${PREFIX}/sbin \
+		--with-uid=65534 --with-gid=68 
+
 ALL_TARGET=	all
 
 PLIST=	${WRKDIR}/PLIST.DYN
@@ -51,7 +54,11 @@ post-install:
 	@${CHMOD} 0755 ${PREFIX}/etc/rc.d/upsd.sh.sample
 .if !defined(NOPORTDOCS)
 	@if ! [ -d ${NDOCDIR} ]; then ${MKDIR} ${NDOCDIR}; fi
-	${INSTALL_DATA} ${WRKSRC}/docs/* ${NDOCDIR}
+	@if ! [ -d ${NDOCDIR}/cables ]; then ${MKDIR} ${NDOCDIR}/cables; fi
+	${INSTALL_DATA} ${WRKSRC}/docs/cables/*.txt ${NDOCDIR}/cables
+	${INSTALL_DATA} ${WRKSRC}/docs/*.txt ${NDOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/docs/FAQ ${NDOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/docs/Changes.trust ${NDOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${NDOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/QUICKSTART ${NDOCDIR}
 .endif
