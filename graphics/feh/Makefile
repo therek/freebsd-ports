@@ -2,11 +2,11 @@
 # Date created:				16 Oct 2000
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/feh/Makefile,v 1.3 2001/03/12 14:40:12 sf Exp $
+# $FreeBSD: ports/graphics/feh/Makefile,v 1.4 2001/08/18 23:30:02 ijliao Exp $
 #
 
 PORTNAME=	feh
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxbrit.co.uk/downloads/
 
