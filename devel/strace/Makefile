@@ -2,7 +2,7 @@
 # Date created:		Tue May 15 22:29:27 MSD 2001
 # Whom:			Alex Semenyaka <alex@rinet.ru>
 #
-# $FreeBSD: ports/devel/strace/Makefile,v 1.2 2001/05/15 20:42:13 yar Exp $
+# $FreeBSD: ports/devel/strace/Makefile,v 1.3 2001/09/07 12:50:30 yar Exp $
 #
 
 PORTNAME=	strace
@@ -24,7 +24,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/strace ${PREFIX}/bin
 	${INSTALL_SCRIPT} ${WRKSRC}/strace-graph ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/strace.1 ${PREFIX}/man/man1
-	-${MKDIR} ${PREFIX}/share/strace
+	${MKDIR} ${PREFIX}/share/strace
 	${INSTALL_DATA} ${WRKSRC}/xlate.el ${PREFIX}/share/strace
 
 .include <bsd.port.mk>
