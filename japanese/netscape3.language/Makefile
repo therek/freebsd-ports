@@ -2,7 +2,7 @@
 # Date created:		17 November 1997
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/netscape3.language/Makefile,v 1.11 2000/07/13 15:05:58 sada Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netscape
@@ -19,6 +19,7 @@ MAINTAINER=	sada@FreeBSD.org
 RUN_DEPENDS=	${LOCALBASE}/bin/netscape:${PORTSDIR}/www/netscape3 \
 		${PKG_DBDIR}/ja-netscape-fonts-1.0:${PORTSDIR}/japanese/netscape-fonts
 
+IGNORE=		"is old and has some security bugs"
 DIST_SUBDIR=	netscape3
 NO_WRKSUBDIR=	YES
 NO_BUILD=	YES
