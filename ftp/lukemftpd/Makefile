@@ -2,11 +2,12 @@
 # Date created:				12 April 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/ftp/lukemftpd/Makefile,v 1.1 2001/04/13 09:08:12 demon Exp $
+# $FreeBSD: ports/ftp/lukemftpd/Makefile,v 1.2 2001/05/14 00:23:21 jeh Exp $
 #
 
 PORTNAME=	lukemftpd
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/misc/lukemftp/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
