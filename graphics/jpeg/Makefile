@@ -2,8 +2,10 @@
 # Date created:		6 November 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/graphics/jpeg/Makefile,v 1.19 2000/03/21 14:57:39 jseger Exp $
+# $FreeBSD: ports/graphics/jpeg/Makefile,v 1.20 2000/04/14 10:46:26 asami Exp $
 #
+# PLEASE update print/ghostscript5 (there's a symlink that uses a hardwired
+# version number) when updating this port.  Thank you.
 
 PORTNAME=       jpeg
 PORTVERSION=	6b

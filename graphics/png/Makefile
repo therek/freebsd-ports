@@ -3,8 +3,10 @@
 # Date created:         5 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/graphics/png/Makefile,v 1.21 2000/04/14 10:47:03 asami Exp $
+# $FreeBSD: ports/graphics/png/Makefile,v 1.22 2000/04/23 17:30:22 ache Exp $
 #
+# PLEASE update print/ghostscript5 (there's a symlink that uses a hardwired
+# png version number) when updating this port.  Thank you.
 
 PORTNAME=	png
 PORTVERSION=    1.0.6
