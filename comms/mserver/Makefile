@@ -2,13 +2,13 @@
 # Date created:				21 May 1999
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/comms/mserver/Makefile,v 1.5 2000/11/01 15:50:55 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mserver
 PORTVERSION=	0.23a
 CATEGORIES=	comms
-MASTER_SITES=	ftp://ftp.innet.be/pub/staff/carl/
+MASTER_SITES=	ftp://ftp.be.uu.net/pub/staff/carl/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
