@@ -3,7 +3,7 @@
 # Date created:		14 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/groff/Makefile,v 1.16 1999/08/25 05:24:16 obrien Exp $
+# $FreeBSD: ports/japanese/groff/Makefile,v 1.17 1999/08/28 02:41:51 mharo Exp $
 #
 
 DISTNAME=	groff-1.10
@@ -39,6 +39,8 @@ post-patch:
 	  esac; \
 	done
 
+.include <bsd.port.pre.mk>
+
 post-install:
 	@${CP} -p /usr/share/tmac/tmac.an ${PREFIX}/share/groff/tmac
 	@${CP} -p /usr/share/tmac/tmac.andoc ${PREFIX}/share/groff/tmac
@@ -46,10 +48,14 @@ post-install:
 	@${CP} -p /usr/share/tmac/tmac.orig_me ${PREFIX}/share/groff/tmac
 	@${CP} -p /usr/share/tmac/tmac.vgrind ${PREFIX}/share/groff/tmac
 	@${CP} -p /usr/share/tmac/eqnrc ${PREFIX}/share/groff/tmac
+.if ${OSVERSION} >= 400000
+	@${CP} -p /usr/share/tmac/locale/hyphen.us-ru ${PREFIX}/share/groff/tmac
+.else
 	@${CP} -p /usr/share/tmac/hyphen.us-ru ${PREFIX}/share/groff/tmac
+.endif
 	@${CP} -p /usr/share/tmac/troffrc ${PREFIX}/share/groff/tmac
 	@${CP} -p /usr/share/tmac/mdoc/doc-common ${PREFIX}/share/groff/tmac/mdoc
 	@${CP} -p /usr/share/tmac/mdoc/doc-syms ${PREFIX}/share/groff/tmac/mdoc
 	@/usr/bin/patch -d ${PREFIX}/share/groff/tmac < ${FILESDIR}/rc.diff
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
