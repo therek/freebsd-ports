@@ -3,13 +3,13 @@
 # Date created:		28 June 1995
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD: ports/emulators/cpmemu/Makefile,v 1.12 1999/08/25 05:49:11 obrien Exp $
+# $FreeBSD: ports/emulators/cpmemu/Makefile,v 1.13 1999/08/28 16:50:28 cpiazza Exp $
 #
 
 DISTNAME=	cpm-0.2.1
 PKGNAME=	cpmemu-0.2.1
 CATEGORIES=	emulators
-MASTER_SITES=	ftp://ftp.cdrom.com/pub/linux/slackware/source/extra-stuff/CPM-80-emulator/
+MASTER_SITES=	ftp://ftp.cdrom.com/pub/linux/slackware-4.0/source/extra-stuff/CPM-80-emulator/
 
 MAINTAINER=	ports@FreeBSD.org
 
