@@ -2,15 +2,15 @@
 # Date created:		17 Apr 1999
 # Whom:			runge@rostock.zgdv.de
 #
-# $FreeBSD: ports/x11-clocks/xtu/Makefile,v 1.4 2000/08/03 09:27:09 asami Exp $
+# $FreeBSD: ports/x11-clocks/xtu/Makefile,v 1.5 2000/10/20 13:49:53 jeh Exp $
 #
 
 PORTNAME=	xtu
 PORTVERSION=	1.1
 CATEGORIES=	x11-clocks
-MASTER_SITES=	http://www.rostock.zgdv.de/~runge/xtu/
+MASTER_SITES=	http://core.de/~coto/xtu/
 
-MAINTAINER=	runge@rostock.zgdv.de
+MAINTAINER=	runge@core.de
 
 USE_IMAKE=	yes
 USE_XPM=	yes
