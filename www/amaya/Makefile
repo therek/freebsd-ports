@@ -1,8 +1,8 @@
 # New ports collection makefile for:	amaya
 # Date created:		26 Dec 1998
-# Whom:			Don Croyle <croyle@gelemna.ft-wayne.in.us>
+# Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/www/amaya/Makefile,v 1.9 2000/04/10 00:04:12 cpiazza Exp $
+# $FreeBSD: ports/www/amaya/Makefile,v 1.10 2000/04/30 19:57:16 steve Exp $
 #
 
 PORTNAME=	amaya
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.w3.org/Amaya/Distribution/ \
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	croyle@gelemna.ft-wayne.in.us
+MAINTAINER=	croyle@gelemna.org
 
 REQUIRES_MOTIF=	yes
 USE_XLIB=	yes

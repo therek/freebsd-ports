@@ -1,8 +1,8 @@
 # New ports collection makefile for: p5-PGP-Sign
 # Date created:		January 2, 1998
-# Whom:			Don Croyle <croyle@gelemna.ft-wayne.in.us>
+# Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/security/p5-PGP-Sign/Makefile,v 1.11 2000/04/17 00:18:40 reg Exp $
+# $FreeBSD: ports/security/p5-PGP-Sign/Makefile,v 1.12 2000/04/21 08:18:44 mharo Exp $
 #
 
 PORTNAME=	p5-PGP-Sign
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	PGP
 DISTNAME=	PGP-Sign-0.16
 
-MAINTAINER=	croyle@gelemna.ft-wayne.in.us
+MAINTAINER=	croyle@gelemna.org
 
 USE_PERL5=	yes
 

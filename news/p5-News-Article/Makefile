@@ -1,18 +1,18 @@
 # New ports collection makefile for: p5-News-Article
 # Date created: January 2, 1998
-# Whom: Don Croyle <croyle@gelemna.ft-wayne.in.us>
+# Whom: Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/news/p5-News-Article/Makefile,v 1.7 2000/04/09 17:33:12 cpiazza Exp $
+# $FreeBSD: ports/news/p5-News-Article/Makefile,v 1.8 2000/04/21 07:51:50 mharo Exp $
 #
 
 PORTNAME=	p5-News-Article
 PORTVERSION=	1.21
 CATEGORIES=	news perl5
 MASTER_SITES=	http://www.erlenstar.demon.co.uk/perl/ \
-		http://www.infonex.com/~dacroyle/freebsd/
+		http://www.gelemna.org/ports/
 DISTNAME=	News-Article-1.21
 
-MAINTAINER=	croyle@gelemna.ft-wayne.in.us
+MAINTAINER=	croyle@gelemna.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/DNS.pm:${PORTSDIR}/net/p5-Net-DNS \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/i386-freebsd/Net/NNTP.pm:${PORTSDIR}/net/p5-Net \

@@ -1,8 +1,8 @@
 # New ports collection makefile for:    xconq
 # Date created:         2 Jun 1998
-# Whom:                 Don Croyle <croyle@gelemna.ft-wayne.in.us>
+# Whom:                 Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/games/xconq/Makefile,v 1.10 1999/08/25 06:04:59 obrien Exp $
+# $FreeBSD: ports/games/xconq/Makefile,v 1.11 2000/04/14 12:27:12 asami Exp $
 #
 
 PORTNAME=	xconq
@@ -10,7 +10,7 @@ PORTVERSION=	7.2.2
 CATEGORIES=	games
 MASTER_SITES=	ftp://sourceware.cygnus.com/pub/xconq/
 
-MAINTAINER=	croyle@gelemna.ft-wayne.in.us
+MAINTAINER=	croyle@gelemna.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

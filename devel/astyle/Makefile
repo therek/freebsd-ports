@@ -1,19 +1,19 @@
 # New ports collection makefile for:	astyle
 # Date created:		31 Jan 1999
-# Whom:			Don Croyle <croyle@gelemna.ft-wayne.in.us>
+# Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/devel/astyle/Makefile,v 1.8 2000/02/14 23:06:58 mharo Exp $
+# $FreeBSD: ports/devel/astyle/Makefile,v 1.9 2000/04/11 21:27:04 mharo Exp $
 #
 
 PORTNAME=	astyle
 PORTVERSION=	1.11.6
 CATEGORIES= 	devel textproc
 MASTER_SITES=	ftp://astyle.sourceforge.net/pub/astyle/stable/src/\
-		http://www.infonex.com/~dacroyle/freebsd/
+		http://www.gelemna.org/ports/
 DISTNAME=	${PORTNAME}_${PORTVERSION}_src
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	croyle@gelemna.ft-wayne.in.us
+MAINTAINER=	croyle@gelemna.org
 
 WRKSRC=		${WRKDIR}/astyle_1.11.6
 
