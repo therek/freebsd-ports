@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnomedebug/Makefile,v 1.6 2000/08/21 10:07:25 sobomax Exp $
+# $FreeBSD: ports/devel/gnomedebug/Makefile,v 1.7 2000/09/01 18:22:00 ade Exp $
 #
 
 PORTNAME=	gnomedebug
@@ -16,7 +16,8 @@ MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		oaf.0:${PORTSDIR}/devel/oaf \
-		bonobo.2:${PORTSDIR}/devel/bonobo
+		bonobo.2:${PORTSDIR}/devel/bonobo \
+		glade.4:${PORTSDIR}/devel/libglade
 RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 USE_X_PREFIX=	yes
