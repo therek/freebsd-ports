@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1997
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/security/cfs/Makefile,v 1.10 2000/07/18 03:20:03 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cfs
@@ -11,6 +11,7 @@ CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.hacktic.nl/pub/crypto/disk/cfs/ \
 		ftp://ftp.uni-bielefeld.de/pub/crypto/replay/disk/cfs/
 DISTNAME=	cfs.1.4.0.beta2
+PORTREVISION=	1
 
 MAINTAINER=	green@FreeBSD.org
 
