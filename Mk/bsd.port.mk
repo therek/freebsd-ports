@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.476 2004/01/20 16:18:33 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.477 2004/01/20 19:35:27 marcus Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -69,6 +69,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  Optional.
 # PKGNAMESUFFIX	- Suffix to specify compilation options.  Optional.
 #				  Do not define this in your Makefile.
+# UNIQUENAME	- A name for your port that is globally unique.  By default,
+# 				  this is set to ${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}
 # DISTNAME		- Name of port or distribution used in generating
 #				  WRKSRC and DISTFILES below (default:
 #				  ${PORTNAME}-${PORTVERSION}).
@@ -1017,7 +1019,8 @@ USE_SUBMAKE=	yes
 # where 'make config' records user configuration options
 PORT_DBDIR?=	/var/db/ports
 
-OPTIONSFILE?=${PORT_DBDIR}/${PORTNAME}/options
+UNIQUENAME?=${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}
+OPTIONSFILE?=${PORT_DBDIR}/${UNIQUENAME}/options
 .if exists(${OPTIONSFILE})
 .include "${OPTIONSFILE}"
 .endif
@@ -4901,8 +4904,8 @@ config:
 .if !defined(OPTIONS)
 	@${ECHO_MSG} "===> No options to configure"
 .else
-	@(${MKDIR} ${PORT_DBDIR}/${PORTNAME} 2> /dev/null) || \
-		(${ECHO_MSG} "===> Cannot create ${PORT_DBDIR}/${PORTNAME}, check permissions"; exit 1)
+	@(${MKDIR} ${PORT_DBDIR}/${UNIQUENAME} 2> /dev/null) || \
+		(${ECHO_MSG} "===> Cannot create ${PORT_DBDIR}/${UNIQUENAME}, check permissions"; exit 1)
 	-@if [ -e ${OPTIONSFILE} ]; then \
 		. ${OPTIONSFILE}; \
 	fi; \
@@ -4971,7 +4974,7 @@ rmconfig:
 .if exists(${OPTIONSFILE})
 	-@${ECHO_MSG} "===> Removing user-configured options for ${PORTNAME}"; \
 	${RM} -f ${OPTIONSFILE}; \
-	${RMDIR} ${PORT_DBDIR}/${PORTNAME}
+	${RMDIR} ${PORT_DBDIR}/${UNIQUENAME}
 .else
 	@${ECHO_MSG} "===> No user-specified options configured for ${PORTNAME}"
 .endif
