@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/zebra/files/zebractl.sh,v 1.4 2001/01/27 08:58:15 andreas Exp $
+# $FreeBSD: ports/net/zebra/files/zebractl.sh,v 1.5 2001/01/29 22:12:54 andreas Exp $
 #
 # zebra start/stop script by "Andreas Klemm <andreas@FreeBSD.ORG>"
 #
@@ -19,6 +19,10 @@ fi
 
 case $1 in
 	start)
+		if [ ! -f !!PREFIX!!/etc/zebra/zebra.conf ]; then
+			echo "error: zebra.conf config file is mandatory"
+			exit 1
+		fi
 		[ -f !!PREFIX!!/etc/zebra/zebra.conf ] \
 			&& !!PREFIX!!/sbin/zebra -d && echo -n ' zebra'
 		[ -f !!PREFIX!!/etc/zebra/ripd.conf ] \
