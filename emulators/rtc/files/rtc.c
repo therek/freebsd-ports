@@ -22,7 +22,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD: ports/emulators/rtc/files/rtc.c,v 1.7 2003/03/23 12:36:58 nork Exp $
+ * $FreeBSD: ports/emulators/rtc/files/rtc.c,v 1.8 2003/05/15 13:06:57 mbr Exp $
  * $vmFreeBSD: vmware/vmnet-only/freebsd/vmnet.c,v 1.14 2000/01/23 22:29:50 vsilyaev Exp $
  */
 
@@ -168,7 +168,6 @@ rtc_detach(struct rtc_softc *sc)
 	if (sc->var.flags.opened) {
 		return EBUSY;
 	}
-	destroy_dev(sc->dev);
 	FREE(sc, M_DEVBUF);
 	return error;
 }
