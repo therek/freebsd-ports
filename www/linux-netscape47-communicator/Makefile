@@ -3,10 +3,10 @@
 # Whom:				girgen@partitur.se
 # Based on work by:		thepish
 #
-# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.25 2001/04/07 16:41:36 mharo Exp $
+# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.26 2001/07/28 23:17:50 sada Exp $
 #
 
-PORTNAME=	linux-netscape-${BROWSER}
+PORTNAME=	linux-netscape-${BROWSER_NAME}
 PORTVERSION=	4.78
 CATEGORIES=	www linux
 
@@ -20,7 +20,7 @@ NETSCAPE_DIST_ARCH=	supported/linux22
 NETSCAPE_DIST_TAG=	x86-unknown-linux2.2
 
 # don't overwrite the native FreeBSD port's shell script wrapper in ${PREFIX}/bin
-BROWSER_ARC=	${BROWSER}-linux
+BROWSER_ARC=	${BROWSER_NAME}-linux
 
 USE_LINUX_LIB=	yes
 

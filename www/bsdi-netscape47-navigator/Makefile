@@ -3,10 +3,10 @@
 # Whom:			Trevor Johnson <trevor@jpj.net>
 # based on work by Dirk Froemberg <dirk@FreeBSD.org> and girgen@partitur.se
 #
-# $FreeBSD: ports/www/bsdi-netscape47-navigator/Makefile,v 1.52 2000/08/08 16:42:18 sada Exp $
+# $FreeBSD: ports/www/bsdi-netscape47-navigator/Makefile,v 1.53 2000/11/04 23:08:02 trevor Exp $
 #
 
-BROWSER=	navigator
+BROWSER_NAME=	navigator
 PKGMESSAGE=	../bsdi-netscape47-communicator/pkg-message
 
 .include "../bsdi-netscape47-communicator/Makefile"

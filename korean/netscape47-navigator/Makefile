@@ -2,10 +2,10 @@
 # Date created:		14 Jun 1999
 # Whom:			CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/netscape47-navigator/Makefile,v 1.15 2000/04/13 09:17:10 asami Exp $
+# $FreeBSD: ports/korean/netscape47-navigator/Makefile,v 1.16 2000/06/25 13:33:48 cjh Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../netscape47-communicator
-BROWSER=	navigator
+BROWSER_NAME=	navigator
 
 .include	"${MASTERDIR}/Makefile"

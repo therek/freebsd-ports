@@ -3,9 +3,9 @@
 # Whom:				Dirk Froemberg <dirk@FreeBSD.org>
 # Based on work by:		girgen@partitur.se
 #
-# $FreeBSD: ports/www/linux-netscape47-navigator/Makefile,v 1.21 2000/04/06 15:30:45 sada Exp $
+# $FreeBSD: ports/www/linux-netscape47-navigator/Makefile,v 1.22 2000/04/10 00:05:45 cpiazza Exp $
 #
 
-BROWSER=	navigator
+BROWSER_NAME=	navigator
 
 .include "../linux-netscape47-communicator/Makefile"

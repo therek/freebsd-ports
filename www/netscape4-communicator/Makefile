@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.80 2001/06/02 19:11:53 sada Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.81 2001/08/05 18:18:01 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -30,12 +30,12 @@ USE_XLIB=	yes
 NO_BUILD=	yes
 NO_FILTER_SHLIBS=	yes
 STRIP=
-WRKSRC?=	${WRKDIR}/${BROWSER}-v408.x86-unknown-freebsd
+WRKSRC?=	${WRKDIR}/${BROWSER_NAME}-v408.x86-unknown-freebsd
 PKGDIR=		${.CURDIR}
 
 AUTOADMIN?=	autoadmin-v408.x86-unknown-freebsd.tar.gz
-BROWSER?=	communicator
-BROWSER_ARC?=	${BROWSER}
+BROWSER_NAME?=	communicator
+BROWSER_ARC?=	${BROWSER_NAME}
 BROWSER_VER?=	4.08
 FORTIFY=	Fortify-1.4.6-unix-x86
 NDIR=		${PREFIX}/${NSUBDIR}
@@ -48,7 +48,7 @@ MAILCAP?=	${MASTERDIR}/files/mailcap
 PLIST_SUB=	BROWSER=${BROWSER_ARC} BROWSER_VER=${BROWSER_VER} \
 		NSUBDIR=${NSUBDIR}
 
-.if (${BROWSER} == "communicator") && !defined(NO_AUTOADMIN)
+.if (${BROWSER_NAME} == "communicator") && !defined(NO_AUTOADMIN)
 DISTFILES+=	${AUTOADMIN}
 .endif
 
@@ -110,7 +110,7 @@ do-install:
 		${INSTALL_DATA} ${MAILCAP} ${NDIR}; \
 	fi
 	${RM} -rf ${NDIR}/movemail-src
-.if (${BROWSER} == "communicator") && !defined(NO_AUTOADMIN)
+.if (${BROWSER_NAME} == "communicator") && !defined(NO_AUTOADMIN)
 	tar zxf ${DISTDIR}/${AUTOADMIN} -C ${NDIR}
 .endif
 .if defined(WITH_128BIT) && !defined(NO_FORTIFY)

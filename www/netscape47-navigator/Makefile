@@ -2,10 +2,10 @@
 # Date created:		20 Sept 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/www/netscape47-navigator/Makefile,v 1.51 2000/08/19 21:49:40 sada Exp $
+# $FreeBSD: ports/www/netscape47-navigator/Makefile,v 1.52 2000/10/29 17:01:21 sada Exp $
 #
 
-BROWSER=	navigator
+BROWSER_NAME=	navigator
 INFILE_HEAD=	'Navigator,4.76.0.20001006'
 
 .include "${.CURDIR}/../netscape47-communicator/Makefile"
