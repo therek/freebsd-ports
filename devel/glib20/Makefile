@@ -2,11 +2,11 @@
 # Date Created:			28 July 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/glib13/Makefile,v 1.38 2001/03/23 05:34:23 vanilla Exp $
+# $FreeBSD: ports/devel/glib13/Makefile,v 1.39 2001/03/23 05:42:21 ade Exp $
 #
 
 PORTNAME=	glib
-PORTVERSION=	1.3.2
+PORTVERSION=	1.3.4
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.gimp.org/pub/%SUBDIR%/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/%SUBDIR%/ \
@@ -16,8 +16,9 @@ MASTER_SITE_SUBDIR=	gtk/v${PORTVERSION:R}
 
 MAINTAINER=	ade@FreeBSD.org
 
+BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 LIB_DEPENDS=	giconv.2:${PORTSDIR}/converters/libiconv
-#iconv.1:${PORTSDIR}/converters/iconv
+RUN_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 
 NO_LATEST_LINK=	"Unstable, development version."
 
@@ -31,5 +32,7 @@ MAN1=		glib-config-2.0.1 glib-genmarshal.1
 pre-patch:
 	@find ${WRKSRC} -type f | xargs ${GREP} -l iconv.h | \
 		xargs ${PERL} -pi -e "s|iconv\.h|giconv.h|g"
+	@find ${WRKSRC} -name Makefile.in | xargs ${PERL} -pi -e \
+		's|\$\(libdir\)/pkgconfig|\$\(prefix\)/libdata/pkgconfig|g'
 
 .include <bsd.port.mk>
