@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.227 1999/10/08 15:40:57 sada Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.228 1999/10/12 17:46:48 flathill Exp $
 #
 
     SUBDIR += Canna
@@ -225,6 +225,7 @@
     SUBDIR += tgif
     SUBDIR += tgif2tex
     SUBDIR += timidity++-slang
+    SUBDIR += timidity++-tcltk
     SUBDIR += tk42
     SUBDIR += tk80
     SUBDIR += tkstep80
