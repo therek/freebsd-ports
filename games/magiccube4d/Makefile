@@ -2,14 +2,14 @@
 # Date Created: 			September 25, 2000
 # Whom:					Jeremy <karlj000@unbc.ca>
 #
-# $FreeBSD: ports/games/magiccube4d/Makefile,v 1.1 2000/10/26 02:05:11 jeh Exp $
+# $FreeBSD: ports/games/magiccube4d/Makefile,v 1.2 2000/10/26 10:07:43 sobomax Exp $
 #
 
 PORTNAME=	magiccube4d
 PORTVERSION=	2.1
 CATEGORIES=	games
 MASTER_SITES=	http://www.superliminal.com/cube/
-DISTNAME=	magiccube4d-src-${PORTVERSION:S/./_/}
+DISTNAME=	mc4d-src-${PORTVERSION:S/./_/}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	karlj000@unbc.ca
@@ -18,6 +18,7 @@ USE_X_PREFIX=	yes
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+WRKSRC=		${WRKDIR}/${PORTNAME}-src-${PORTVERSION:S/./_/}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/magiccube4d ${PREFIX}/bin
