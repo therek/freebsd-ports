@@ -3,7 +3,7 @@
 # Date created:				Nov 6th 1999
 # Whom:					troll
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xracer/Makefile,v 1.1.1.1 1999/11/21 19:18:35 cpiazza Exp $
 #
 
 DISTNAME=		xracer-0.94
@@ -13,8 +13,10 @@ DISTFILES=		xracer-0.94.tar.gz xracer-data.tar.gz
 
 MAINTAINER=		troll@digitalspark.net
 
-LIB_DEPENDS=		jpeg.9:${PORTSDIR}/graphics/jpeg
+LIB_DEPENDS=		jpeg.9:${PORTSDIR}/graphics/jpeg \
+			GL.14:${PORTSDIR}/graphics/Mesa3
 
+USE_XLIB=		yes
 MAKEFILE=		Makefile
 WRKSRC=			${WRKDIR}/xracer-0.94
 
