@@ -2,12 +2,13 @@
 # Date created:				Tue Mar 27 20:47:31 EST 2001
 # Whom:					pat@databits.net et al
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/hlserver-fa/Makefile,v 1.1 2001/04/10 11:26:19 lioux Exp $
 #
 
 PORTNAME=	firearms
 PORTVERSION=	2.5
 MASTER_SITES=	http://absurd.ranney.com/fa/ \
+		http://fileplanet.games-world.net/dl/ftp1.gamespy.com/action/half-life/modifications/firearms/ \
 		http://ftp1download.gamespy.com/fileplanet/action/half-life/modifications/firearms/
 DISTNAME=	fa_rc25_linux_full
 

@@ -2,19 +2,17 @@
 # Date created:				Wed Apr 25 11:45:11 SAST 2001
 # Whom:					markm@freebsd.org et al
 #
-# $FreeBSD: ports/games/hlserver-action/Makefile,v 1.2 2001/04/25 17:14:58 lioux Exp $
+# $FreeBSD: ports/games/hlserver-action/Makefile,v 1.3 2001/05/01 20:10:31 lioux Exp $
 #
 
 PORTNAME=	action
 PORTVERSION=	0.4
-MASTER_SITES=	http://ftp1download.gamespy.com/fileplanet/fpnew/action/half-life/modifications/ahl/ \
-		http://fileplanet.games-world.net/dl/ftp1.gamespy.com/fpnew/action/half-life/modifications/ahl/ \
-		ftp://ftp.barrysworld.com/pub/games/halflife/mods/actionhl/official_patches/linux/ \
-		ftp://fileplanet.blueyonder.co.uk/ftp1.gamespy.com/fpnew/action/half-life/modifications/ahl/ \
-		ftp://ftp2.3ddownloads.com/90380/telefragged/ahl/ \
+MASTER_SITES=	ftp://ftp2.3ddownloads.com/90380/telefragged/ahl/ \
 		ftp://ftp.3ddownloads.com/90380/telefragged/ahl/ \
-		ftp://ftp.gamesurf.de/pub/gamesurf/halflife/mods/actionhl/beta4/ \
+		ftp://ftp.barrysworld.com/pub/games/halflife/mods/actionhl/official_patches/linux/ \
 		ftp://ftp.wireplay.net/pub/downloads/fps/halflife/mods/action/linux/ \
+		http://ftp1download.gamespy.com/fileplanet/fpnew/action/half-life/modifications/ahl/ \
+		http://fileplanet.games-world.net/dl/ftp1.gamespy.com/fpnew/action/half-life/modifications/ahl/ \
 		ftp://ftp.blackmesa.de/mods/ahl/
 DISTNAME=	action
 EXTRACT_SUFX=	.tgz

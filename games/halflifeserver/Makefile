@@ -2,20 +2,19 @@
 # Date created:				Sat Jul 15 14:27:16 SAST 2000
 # Whom:					markm@FreeBSD.org
 #
-# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.17 2001/04/27 01:06:46 lioux Exp $
+# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.18 2001/05/10 02:11:51 lioux Exp $
 #
 
 PORTNAME=	hlds
 PORTVERSION=	3.1.0.6
 PORTREVISION=	2
 CATEGORIES=	games linux
-MASTER_SITES=	http://ftp1download.gamespy.com/fileplanet/fpnew/action/half-life/official/ \
-		ftp://ftp.fasta.fh-dortmund.de/gdi/halflife/server/linux/ \
-		http://fileplanet.games-world.net/dl/ftp1.gamespy.com/fpnew/action/half-life/official/ \
-		ftp://fileplanet.blueyonder.co.uk/ftp1.gamespy.com/fpnew/action/half-life/official/ \
+MASTER_SITES=	http://games.velocity.net/files/Halflife/ \
 		ftp://ftp.gmd.de/people/cla/hl/hl-newest/linux/ \
-		ftp://ftp.fh-rosenheim.de/pub/games/halflife/servers/ \
-		ftp://ftp.icsmedia.de/pub/games/halflife/hl_server/
+		ftp://ftp.icsmedia.de/pub/games/halflife/hl_server/ \
+		http://ftp1download.gamespy.com/fileplanet/fpnew/action/half-life/official/ \
+		http://fileplanet.games-world.net/dl/ftp1.gamespy.com/fpnew/action/half-life/official/ \
+		ftp://ftp.fh-rosenheim.de/pub/games/halflife/servers/
 DISTNAME=	hlds_l3106
 
 MAINTAINER=	pat@databits.net

@@ -2,14 +2,16 @@
 # Date created:				Sat Mar 24 00:10:43 EST 2001
 # Whom:					pat@databits.net et al
 #
-# $FreeBSD: ports/games/hlserver-dod/Makefile,v 1.1 2001/04/10 11:24:48 lioux Exp $
+# $FreeBSD: ports/games/hlserver-dod/Makefile,v 1.2 2001/05/08 20:26:57 lioux Exp $
 #
 
 PORTNAME=	dodbeta
 PORTVERSION=	1.1
-MASTER_SITES=	http://ftp1download.gamespy.com/fileplanet/fpnew/action/half-life/modifications/dod/
+MASTER_SITES=	ftp://ftp.gigabell.net/pub/exp/hl/mod/dod/ \
+		ftp://ftp.task.gda.pl/vol/d33/ftp.extreme-players.de/exp/hl/mod/dod/ \
+		http://www.thekillinggrounds.com/downloads/
 DISTNAME=	dod_linux_beta11_full
-EXTRACT_SUFX=	.tgz
+EXTRACT_SUFX=	.tar
 
 WRKSRC=		${WRKDIR}/dod
 

@@ -2,19 +2,13 @@
 # Date created:			23 Mar 2001
 # Whom:				Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/games/hlserver-opfor/Makefile,v 1.3 2001/05/05 21:01:17 lioux Exp $
+# $FreeBSD: ports/games/hlserver-opfor/Makefile,v 1.4 2001/05/08 20:26:59 lioux Exp $
 #
 
 PORTNAME=	opfor
 PORTVERSION=	1.1.0.6
-MASTER_SITES=	http://ftp1download.gamespy.com/fileplanet/fpnew/action/half-life/official/ \
-		ftp://fileplanet.games-world.net/ftp1.gamespy.com/fpnew/action/half-life/official/ \
-		ftp://fileplanet.blueyonder.co.uk/ftp1.gamespy.com/fpnew/action/half-life/official/ \
-		ftp://fileplanet.gil.com.au/fpnew/action/half-life/official/ \
-		ftp://fileplanet.ngi.it/fileplanet/fpnew/action/half-life/official/ \
-		http://www.jetstreamgames.co.nz/files/pub/gamespyftp1/fpnew/action/half-life/official/ \
-		ftp://ftp1.terian.net/mirrors/fileplanet/fpnew/action/half-life/official/ \
-		ftp://ftp2.terian.net/mirrors/fileplanet/fpnew/action/half-life/official/
+MASTER_SITES=	http://fileplanet.games-world.net/dl/ftp1.gamespy.com/fpnew/action/half-life/official/ \
+		http://ftp1download.gamespy.com/fileplanet/fpnew/action/half-life/official/
 DISTNAME=	op4-linux-${PORTVERSION:S/.//g}
 
 MAINTAINER=	lioux@FreeBSD.org

@@ -2,14 +2,14 @@
 # Date created:				Fri May	4 17:43:25 BRT 2001
 # Whom:		Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/hlserver-wasteland/Makefile,v 1.1 2001/05/04 21:00:30 lioux Exp $
 #
 
 PORTNAME=	wasteland
 PORTVERSION=	0.2b
-MASTER_SITES=	http://194.195.228.180/exp/hl/mod/wastelandhl/ \
-		ftp://ftp.gigabell.net/pub/exp/hl/mod/wastelandhl/ \
+MASTER_SITES=	ftp://ftp.gigabell.net/pub/exp/hl/mod/wastelandhl/ \
 		ftp://ftp.task.gda.pl/mirror/ftp.extreme-players.de/exp/hl/mod/wastelandhl/ \
+		http://194.195.228.180/exp/hl/mod/wastelandhl/ \
 		http://ftp2.extreme-players.de/exp/hl/mod/wastelandhl/
 DISTNAME=	whlbeta2_linux
 
