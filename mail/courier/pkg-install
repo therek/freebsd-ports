@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/courier/pkg-install,v 1.3 2002/06/08 18:54:01 ijliao Exp $
+# $FreeBSD: ports/mail/courier/pkg-install,v 1.4 2003/12/11 14:01:59 sergei Exp $
 #
 
 PKG_PREFIX=${PKG_PREFIX:=/usr/local}
 
-USER=mailnull;	UID=26
-GROUP=mailnull;	GID=26
+USER=courier;	UID=465
+GROUP=courier;	GID=465
 
 ask() {
     local question default answer
