@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.242 1999/10/31 16:30:21 dillon Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.243 1999/11/01 03:43:30 steve Exp $
 #
 
     SUBDIR += 221upgrade
@@ -109,6 +109,7 @@
     SUBDIR += videotext
     SUBDIR += viz
     SUBDIR += wmcp
+    SUBDIR += wmfire
     SUBDIR += wmmand
     SUBDIR += wmstock
     SUBDIR += wmweather
