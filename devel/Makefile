@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.247 2000/01/19 15:56:38 asami Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.248 2000/01/26 05:57:13 fenner Exp $
 #
 
     SUBDIR += ElectricFence
@@ -46,6 +46,7 @@
     SUBDIR += fastcrc
     SUBDIR += fhist
     SUBDIR += flick
+    SUBDIR += flux
     SUBDIR += fortran-utils
     SUBDIR += fpp
     SUBDIR += freelibiberty
