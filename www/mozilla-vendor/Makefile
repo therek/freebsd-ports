@@ -2,7 +2,7 @@
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD: ports/www/mozilla/Makefile,v 1.46 2000/08/14 00:04:10 reg Exp $
+# $FreeBSD: ports/www/mozilla/Makefile,v 1.47 2000/10/24 12:36:31 knu Exp $
 #
 
 PORTNAME=	mozilla
@@ -13,6 +13,10 @@ MASTER_SITE_SUBDIR=	mozilla/releases/${PORTVERSION:S/M/m/}/src
 DISTNAME=	${PORTNAME}-source-${PORTVERSION}
 
 MAINTAINER=	reg@FreeBSD.org
+
+# This port has not been update to M18, because of the requirement of moving
+# to world riteable directories.  Until you can fix that, please don't send
+# me patches.
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		IDL.2:${PORTSDIR}/devel/ORBit
