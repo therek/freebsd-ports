@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.82 2002/07/17 17:25:03 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.83 2002/09/11 17:30:11 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -342,5 +342,8 @@ RUN_DEPENDS+=		${DEPEND_RUBY_AMSTD}
 .if defined(USE_RUBY_RD) && !defined(NOPORTDOCS)
 BUILD_DEPENDS+=		${DEPEND_RUBY_RD2}
 .endif
+
+MASTER_SITE_BACKUP+=	\
+	http://www.iDaemons.org/distfiles/${DIST_SUBDIR}/
 
 .endif
