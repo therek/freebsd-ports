@@ -3,16 +3,16 @@
 # Date created:				1 November 1996
 # Whom:	      Bill Fenner <fenner@FreeBSD.org>
 #
-# $FreeBSD: ports/mbone/rtpmon/Makefile,v 1.12 1999/08/25 07:09:39 obrien Exp $
+# $FreeBSD: ports/mbone/rtpmon/Makefile,v 1.13 1999/08/31 06:48:01 mharo Exp $
 #
 
 DISTNAME=	rtpmon-1.0a7
-CATEGORIES=	mbone tk42
+CATEGORIES=	mbone tk82
 MASTER_SITES=	ftp://mm-ftp.cs.berkeley.edu/pub/rtpmon/
 
 MAINTAINER=	fenner@FreeBSD.org
 
-LIB_DEPENDS=	tk42.1:${PORTSDIR}/x11-toolkits/tk42
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 BUILD_DEPENDS=	autoconf:${PORTSDIR}/devel/autoconf
 
 GNU_CONFIGURE=	yes
