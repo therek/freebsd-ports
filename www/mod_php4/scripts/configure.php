@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.118 2001/03/14 23:11:43 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.119 2001/03/23 23:29:30 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -35,6 +35,7 @@ ming		"ming library support" OFF \
 sockets		"sockets support" OFF \
 sysvsem		"System V semaphore support" OFF \
 sysvshm		"System V shared memory support" OFF \
+transsid	"Transparent session id" OFF \
 2> /tmp/checklist.tmp.$$
 
 	retval=$?
@@ -215,6 +216,9 @@ EOF
 			;;
 		\"sysvshm\")
 			echo "CONFIGURE_ARGS+=--enable-sysvshm"
+			;;
+		\"transsid\")
+			echo "CONFIGURE_ARGS+=--enable-trans-sid"
 			;;
 		*)
 			echo "Invalid option(s): $*" > /dev/stderr
