@@ -2,11 +2,11 @@
 # Date created:				27 March 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/xlhtml/Makefile,v 1.7 2001/05/22 10:01:26 sobomax Exp $
+# $FreeBSD: ports/textproc/xlhtml/Makefile,v 1.8 2001/06/05 10:48:01 sobomax Exp $
 #
 
 PORTNAME=	xlhtml
-PORTVERSION=	0.2.9.6
+PORTVERSION=	0.2.9.7
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.xlhtml.org/
 DISTNAME=	xlHtml-${PORTVERSION}
