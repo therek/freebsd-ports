@@ -3,7 +3,7 @@
 # Date created:				Nov 7th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.1.1.1 1999/11/23 01:20:38 cpiazza Exp $
+# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.2 1999/12/09 15:34:45 asami Exp $
 #
 
 DISTNAME=	xshipwars-client-1.23
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://fox.mit.edu/pub/xsw/
 DISTFILES=	xsw1.23.tgz stimages1.3.tgz
 
 MAINTAINER=	troll@digitalspark.net
+
+LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 WRKSRC=		${WRKDIR}/xsw1.23/client
 USE_XLIB=	YES
