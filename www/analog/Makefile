@@ -2,7 +2,7 @@
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/www/analog/Makefile,v 1.28 2000/06/04 19:21:05 will Exp $
+# $FreeBSD: ports/www/analog/Makefile,v 1.29 2000/07/02 23:06:22 ache Exp $
 #
 
 PORTNAME=	analog
@@ -18,7 +18,7 @@ MASTER_SITES=   http://www.analog.cx/ \
 		ftp://download.netvision.net.il/pub/mirrors/analog/ \
 		ftp://mabuse.phil.uni-passau.de/pub/mirrors/analog/
 
-MAINTAINER=     ache@freebsd.org
+MAINTAINER=     ports@freebsd.org
 
 Y2K=            http://www.analog.cx/
 

@@ -2,7 +2,7 @@
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/bash2/Makefile,v 1.43 2000/05/07 20:33:28 ache Exp $
+# $FreeBSD: ports/shells/bash2/Makefile,v 1.44 2000/05/23 12:04:49 ache Exp $
 #
 
 PORTNAME=	bash
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	bash
 DISTFILES=      bash-${PORTVERSION}.tar.gz bash-doc-${PORTVERSION}.tar.gz
 .endif
 
-MAINTAINER=	ache@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	Yes
 CONFIGURE_ARGS=	--with-installed-readline
