@@ -1,4 +1,4 @@
-# $FreeBSD: ports/benchmarks/Makefile,v 1.16 2000/06/06 13:38:50 sobomax Exp $
+# $FreeBSD$
 #
 
     SUBDIR += bonnie
@@ -13,6 +13,7 @@
     SUBDIR += netpipe
     SUBDIR += polygraph
     SUBDIR += postmark
+    SUBDIR += pybench
     SUBDIR += rawio
     SUBDIR += tcpblast
     SUBDIR += tmetric
