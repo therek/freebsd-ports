@@ -2,7 +2,7 @@
 # Date created:		8 May 2000
 # Whom:			jasone
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/cvsupit/Makefile,v 1.1 2000/05/09 04:08:17 jasone Exp $
 #
 
 PORTNAME=	cvsupit
@@ -18,13 +18,8 @@ BUILD_DEPENDS=	cvsup:${PORTSDIR}/net/cvsup-bin
 NO_INSTALL=	yes
 .endif
 NO_BUILD=	yes
-NO_WRKSUBDIR=	yes
 
-post-extract:
-	cd ${FILESDIR} ; \
-		${CP} -p Makefile ${WRKDIR}
-
-post-install:
+do-install:
 .if !make(package)
 	@${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
 .endif
