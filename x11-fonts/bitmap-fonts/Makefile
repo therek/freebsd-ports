@@ -3,7 +3,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/bitmap-font/Makefile,v 1.8 1999/12/24 14:20:54 shige Exp $
+# $FreeBSD: ports/x11-fonts/bitmap-font/Makefile,v 1.9 2000/02/08 04:33:48 shige Exp $
 #
 
 DISTNAME=	bitmap-mule-${BITMAP_VER}
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.jpl.org/pub/elisp/bitmap/
 
 MAINTAINER=	shige@FreeBSD.org
 
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86
+
 # distfile version
 BITMAP_VER=	8.2
 BITMAP_FONT=	etl6x12-bitmap etl7x14-bitmap etl8x16-bitmap etl12x24-bitmap
@@ -21,8 +23,6 @@ PKGINSTALL=     ${WRKDIR}/INSTALL
 PKGDEINSTALL=   ${WRKDIR}/DEINSTALL
 
 USE_X_PREFIX=	yes
-
-BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86
 
 PLIST_SUB=	FONTSDIR=${FONTSDIR}
 
@@ -37,7 +37,6 @@ do-build:
 		${SED} -e 's,%%FONTSDIR%%,${FONTSDIR},g' \
 			< ${FILESDIR}/$${file}.tmpl > ${WRKDIR}/$${file}; \
 	done
-
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
