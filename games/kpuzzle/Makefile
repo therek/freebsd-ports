@@ -2,7 +2,7 @@
 # Date created:				2000-11-04
 # Whom:					trevor
 #
-# $FreeBSD: ports/games/kpuzzle/Makefile,v 1.2 2001/03/25 07:08:58 trevor Exp $
+# $FreeBSD: ports/games/kpuzzle/Makefile,v 1.3 2001/04/15 05:49:39 will Exp $
 #
 
 PORTNAME=		kpuzzle
@@ -11,7 +11,9 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	unstable/apps/games
 
-MAINTAINER=	trevor@FreeBSD.org
+MAINTAINER=	will@FreeBSD.org
+
+BROKEN=		"installation error"
 
 BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext
 
