@@ -2,11 +2,11 @@
 # Date created:				10 April 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/phpnuke/Makefile,v 1.7 2001/08/16 17:07:38 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	phpnuke
-PORTVERSION=	5.2
+PORTVERSION=	5.3
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -23,7 +23,7 @@ RUN_DEPENDS+=	${LOCALBASE}/libexec/apache/libphp3.so:${PORTSDIR}/www/mod_php3
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
-DOCS=		ADDONS-MODULES BUGS CHANGES README TODO
+DOCS=		ADDONS-MODULES BLOCKS BUGS CHANGES README TODO
 
 pre-everything:
 .if !defined(WITH_PHP4)
