@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim6/Makefile,v 1.120 2001/05/10 00:40:33 obrien Exp $
+# $FreeBSD: ports/editors/vim6/Makefile,v 1.121 2001/05/23 09:36:25 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -41,7 +41,7 @@ PATCH_DIST_ARGS=	-d ${WRKDIR}/${PORTNAME}${PORTVERSION:S/.//g} --forward --quiet
 MAKE_ARGS+=	CONF_ARGS="--prefix=${PREFIX} --with-tlib=termlib"
 ALL_TARGET=	#
 PLIST_SUB=	VIM_VER=${DISTNAME:S/-//:S/.//}
-MAN1=		eview.1 evin.1 gvimdiff.1 vim.1 vimdiff.1 vimtutor.1 xxd.1
+MAN1=		eview.1 evim.1 gvimdiff.1 vim.1 vimdiff.1 vimtutor.1 xxd.1
 MLINKS=		vim.1 rvim.1  vim.1 rview.1
 
 .include <bsd.port.pre.mk>
