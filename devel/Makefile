@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.549 2001/05/28 14:54:39 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.550 2001/05/28 21:18:40 greid Exp $
 #
 
     SUBDIR += ElectricFence
@@ -503,6 +503,7 @@
     SUBDIR += xwpe
     SUBDIR += xxgdb
     SUBDIR += yacl
+    SUBDIR += zthread
     SUBDIR += zziplib
 
 .include <bsd.port.subdir.mk>
