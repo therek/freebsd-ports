@@ -2,31 +2,66 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/textproc/gsed/Makefile,v 1.1 2000/12/19 08:13:26 will Exp $
+# $FreeBSD: ports/textproc/gsed/Makefile,v 1.2 2000/12/28 15:58:55 kevlo Exp $
 #
 
-PORTNAME=	gsed
+PORTNAME=	sed
 PORTVERSION=	3.02
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR=	sed
-DISTNAME=	sed-${PORTVERSION}
+MASTER_SITE_SUBDIR=	${PORTNAME}
+PKGNAMEPREFIX=	g
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	clefevre@citeweb.net
+
+#
+# Global variables
+#
 
 GNU_CONFIGURE=	yes
 
 # sed's configure seems to be buggy !
 # CONFIGURE_ARGS=	--program-prefix=g
 
+USE_GMAKE=	yes
+
+.if make(do-install)
+# DESTDIR isn't honored. fake it w/ prefix.
+MAKE_ARGS=	prefix=${PREFIX}
+.endif
+
 MAN1=		gsed.1
 
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/sed/sed ${PREFIX}/bin/gsed
-	${INSTALL_MAN} ${WRKSRC}/doc/sed.1 ${PREFIX}/man/man1/gsed.1
-	${INSTALL_DATA} ${WRKSRC}/doc/sed.info ${PREFIX}/info
-	@install-info ${PREFIX}/info/sed.info ${PREFIX}/info/dir
-	@${MKDIR} ${PREFIX}/share/examples/gsed
-	${INSTALL_DATA} ${WRKSRC}/dc.sed ${PREFIX}/share/examples/gsed
+#
+# Local variables
+#
+
+PATCH_SUBDIRS=	. doc lib sed
+
+SAMP_FILES=	dc.sed
+SAMP_DIR=	${PREFIX}/share/examples/${PKGBASE}
+
+#
+# Post-configure
+#
+
+post-configure: patch-makefiles
+
+patch-makefiles:
+.for subdir in ${PATCH_SUBDIRS}
+	@${PERL} -pi.fbsd -e 's/s,x,x,/s,^,g,/' ${WRKSRC}/${subdir}/Makefile
+.endfor
+
+#
+# Post-install
+#
+
+post-install: install-sample-files
+
+install-sample-files:
+	@${MKDIR} ${SAMP_DIR}
+.for file in ${SAMP_FILES}
+	@${INSTALL_DATA} ${WRKSRC}/${file} ${SAMP_DIR}/${file}
+.endfor
 
 .include <bsd.port.mk>
