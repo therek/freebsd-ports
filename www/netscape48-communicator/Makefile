@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.67 2000/05/13 12:34:22 sada Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.68 2000/05/13 16:19:21 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -27,7 +27,7 @@ NO_BUILD=	yes
 NO_FILTER_SHLIBS=	yes
 STRIP=
 WRKSRC?=	${WRKDIR}/${BROWSER}-v408.x86-unknown-freebsd
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR?=	${.CURDIR}/pkg
 
 AUTOADMIN?=	autoadmin-v408.x86-unknown-freebsd.tar.gz
 BROWSER?=	communicator
