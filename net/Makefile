@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.553 2001/06/10 04:18:31 markp Exp $
+# $FreeBSD: ports/net/Makefile,v 1.554 2001/06/11 03:44:22 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -271,6 +271,7 @@
     SUBDIR += p5-URI
     SUBDIR += p5-XPC
     SUBDIR += p5-perl-ldap
+    SUBDIR += passlogd
     SUBDIR += pathchar
     SUBDIR += pchar
     SUBDIR += pcnfsd
