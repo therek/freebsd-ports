@@ -2,14 +2,14 @@
 # Date created:        01 July 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/audio/gogo/Makefile,v 1.14 2000/03/08 12:08:05 nakai Exp $
+# $FreeBSD: ports/audio/gogo/Makefile,v 1.15 2000/04/08 21:23:37 mharo Exp $
 #
 
 PORTNAME=	gogo
-PORTVERSION=	2.26a
+PORTVERSION=	2.30f
 CATEGORIES=	audio
 MASTER_SITES=	http://homepage1.nifty.com/herumi/soft/gogo2/src/
-DISTNAME=	gogo226a
+DISTNAME=	gogo230f
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nakai@FreeBSD.org
@@ -29,6 +29,8 @@ MAKE_ARGS+=	DONT_USE_KANJI=-DNO_KANJI
 MAKE_ARGS+=	DONT_USE_KANJI=
 .endif
 RESTRICTED=	Condition is not clear
+
+WRKSRC=		${WRKDIR}/gogo231f
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gogo ${PREFIX}/bin
