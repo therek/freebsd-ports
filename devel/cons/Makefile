@@ -2,14 +2,14 @@
 # Date created:		11 December 1998
 # Whom:			rv@dsmit.com
 #
-# $FreeBSD: ports/devel/cons/Makefile,v 1.11 2000/06/04 04:22:17 hoek Exp $
+# $FreeBSD: ports/devel/cons/Makefile,v 1.12 2000/07/14 11:26:51 alex Exp $
 #
 
 PORTNAME=	cons
-PORTVERSION=	1.8.d
+PORTVERSION=	2.0.1
 CATEGORIES=	devel
-MASTER_SITES=	http://www.dsmit.com/cons/
-DISTNAME=	cons-1.8-dev
+MASTER_SITES=	http://www.dsmit.com/cons/stable/ \
+		http://www.baldmt.com/cons/stable/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rv@dsmit.com
@@ -21,8 +21,8 @@ NO_BUILD=	yes
 PLIST_SUB=	CONS_VER=${PORTVERSION}
 
 MAN1=		cons.1
-DOCS=		CHANGES COPYRIGHT INSTALL MANIFEST README RELEASE cons.html \
-		TODO test.log
+DOCS=		CHANGES COPYING COPYRIGHT INSTALL MANIFEST README RELEASE \
+		cons.html TODO
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/cons ${PREFIX}/bin/cons
