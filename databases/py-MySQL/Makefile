@@ -2,7 +2,7 @@
 # Date created:				05 September 1999
 # Whom:                 		Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/databases/py-MySQL/Makefile,v 1.2 2000/04/08 22:48:55 mharo Exp $
+# $FreeBSD: ports/databases/py-MySQL/Makefile,v 1.3 2000/04/23 16:24:04 vanilla Exp $
 #
 
 PORTNAME=	py-MySQL
@@ -28,10 +28,11 @@ do-configure:
 
 .if !defined(NOPORTDOCS)
 post-install:
-	${MKDIR} ${PREFIX}/share/doc/py-MySQL
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/py-MySQL
-	${ECHO} "share/doc/py-MySQL/README" >> ${TMPPLIST}
-	${ECHO} "@dirrm share/doc/py-MySQL" >> ${TMPPLIST}
+	@${MKDIR} ${PREFIX}/share/doc/py-MySQL
+	@${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/py-MySQL
+	@${ECHO} "share/doc/py-MySQL/README" >> ${TMPPLIST}
+	@${ECHO} "@dirrm share/doc/py-MySQL" >> ${TMPPLIST}
 .endif
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
