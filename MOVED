@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.285 2003/12/29 10:39:14 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.286 2003/12/30 12:29:02 erwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -731,3 +731,4 @@ deskutils/xfce4-notes|deskutils/xfce4-notes-plugin|2003-12-20|renamed
 devel/sip||2003-12-27|Integrated into py-sip
 java/orion||2003-12-29|Duplicate of www/orion
 www/p5-HTML-MagicTemplate|textproc/p5-Text-MagicTemplate|2003-12-30|Integrated into Text::MagicTemplate
+games/steam|games/linux-steam|2004-01-02|Port renamed
