@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.562 2001/06/19 11:38:54 wjv Exp $
+# $FreeBSD: ports/net/Makefile,v 1.563 2001/06/21 12:46:12 knu Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -201,7 +201,6 @@
     SUBDIR += net-http
     SUBDIR += net-snmp
     SUBDIR += netatalk
-    SUBDIR += netatalk-asun
     SUBDIR += netcat
     SUBDIR += netmask
     SUBDIR += netpipes
