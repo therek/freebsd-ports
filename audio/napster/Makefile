@@ -3,7 +3,7 @@
 # Date created:         Thu Nov 18 01:07:00 PST 1999
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/napster/Makefile,v 1.1.1.1 1999/11/18 09:17:15 dburr Exp $
 #
 
 DISTNAME=	nap-linux-0.6BETA
@@ -20,10 +20,10 @@ WRKSRC=		${WRKDIR}/nap
 NO_BUILD=	yes
 
 do-patch:
-	brandelf -t Linux ${WRKSRC}/nap
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/nap ${PREFIX}/bin/nap
+	brandelf -t Linux ${PREFIX}/bin/nap
 	${MKDIR} ${PREFIX}/share/nap
 	${INSTALL_DATA} ${WRKSRC}/nap.conf ${PREFIX}/share/nap
 .if (!defined(NOPORTDOCS))
