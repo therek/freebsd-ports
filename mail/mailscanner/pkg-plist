@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.18 2005/01/26 17:32:05 sem Exp $
+@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.19 2005/02/16 16:11:36 vs Exp $
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
 etc/MailScanner/filetype.rules.conf.sample
@@ -19,6 +19,7 @@ lib/MailScanner/MailScanner/Config.pm
 lib/MailScanner/MailScanner/ConfigDefs.pl
 lib/MailScanner/MailScanner/CustomConfig.pm
 lib/MailScanner/MailScanner/CustomFunctions/MyExample.pm
+lib/MailScanner/MailScanner/CustomFunctions/DavidHooton.pm
 lib/MailScanner/MailScanner/Exim.pm
 lib/MailScanner/MailScanner/EximDiskStore.pm
 lib/MailScanner/MailScanner/Lock.pm
