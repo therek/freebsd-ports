@@ -1,16 +1,16 @@
 # New ports collection makefile for:   slrn
-# Version required:    0.9.5.7
+# Version required:    0.9.6.2
 # Date created:        28 March 1997
 # Whom:                Carey Jones <mcj@acquiesce.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/slrn/Makefile,v 1.17 1999/08/30 14:31:54 peter Exp $
 #
 
-DISTNAME=	slrn-0.9.5.7
+DISTNAME=	slrn-0.9.6.2
 CATEGORIES=	news
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/slrn/
 
-MAINTAINER=	xaa@xaa.iae.nl
+MAINTAINER=	xaa+ports@timewasters.nl
 
 LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang
 
