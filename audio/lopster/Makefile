@@ -2,11 +2,12 @@
 # Date created:		19 Oct 2000
 # Whom:			Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/audio/lopster/Makefile,v 1.3 2000/11/03 14:16:01 sobomax Exp $
+# $FreeBSD: ports/audio/lopster/Makefile,v 1.4 2000/11/10 13:17:09 kevlo Exp $
 #
 
 PORTNAME=	lopster
 PORTVERSION=	0.9.6
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
