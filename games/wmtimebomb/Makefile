@@ -3,7 +3,7 @@
 # Date created:		10 August 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/wmtimebomb/Makefile,v 1.9 1999/09/18 03:12:11 steve Exp $
+# $FreeBSD: ports/games/wmtimebomb/Makefile,v 1.10 1999/10/07 03:58:31 cpiazza Exp $
 
 DISTNAME=	wmtimebomb.20
 PKGNAME=	wmtimebomb-0.2.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		gif.5:${PORTSDIR}/graphics/giflib \
 		png.3:${PORTSDIR}/graphics/png
-BUILD_DEPENDS=	${PREFIX}/lib/libWMaker.a:${PORTSDIR}/x11-wm/windowmaker
+BUILD_DEPENDS=	${X11BASE}/lib/libWMaker.a:${PORTSDIR}/x11-wm/windowmaker
 
 WRKSRC=		${WRKDIR}/wmtimebomb.app
 USE_IMAKE=	yes
