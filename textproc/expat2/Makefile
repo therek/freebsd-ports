@@ -2,38 +2,29 @@
 # Date created:		Thu Aug 26 14:38:07 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/expat/Makefile,v 1.5 2000/10/18 05:46:54 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	expat
-PORTVERSION= 	1.2
+PORTVERSION= 	1.95.1
 CATEGORIES=	textproc
-MASTER_SITES=	ftp://ftp.jclark.com/pub/xml/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	expat
 
-MAINTAINER=	knu@FreeBSD.org
+MAINTAINER=	kuriyama@FreeBSD.org
 
-SHLIB_MAJOR=	1
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--enable-shared --enable-static
+USE_LIBTOOL=	yes
+USE_GMAKE=	yes
 
-MAKEFILES=	Makefile.lib Makefile.prog
-MAKE_ARGS=	SHLIB_MAJOR="${SHLIB_MAJOR}" NOPROFILE=true
+INSTALLS_SHLIBS=	yes
+
+SHLIB_MAJOR=	0
+
 PLIST_SUB=	SHLIB_MAJOR="${SHLIB_MAJOR}"
 
-do-build:
-.for f in ${MAKEFILES}
-	${CP} ${FILESDIR}/${f} ${WRKSRC}/
-.endfor
-	${MV} ${WRKSRC}/xmlwf/* ${WRKSRC}/
-	${RMDIR} ${WRKSRC}/xmlwf
-.for f in ${MAKEFILES}
-	@(cd ${WRKSRC}; \
-	${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${f} ${MAKE_ARGS} ${ALL_TARGET})
-.endfor
-
-do-install:
-	${MKDIR} ${PREFIX}/include/xml
-.for f in ${MAKEFILES}
-	@(cd ${WRKSRC}; \
-	${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${f} ${MAKE_ARGS} ${INSTALL_TARGET})
-.endfor
+post-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/xmlwf/xmlwf ${PREFIX}/bin
 
 .include <bsd.port.mk>
