@@ -2,7 +2,7 @@
 # Date created:		20 Jan 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/ee/Makefile,v 1.5 2000/04/11 14:13:16 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jee
@@ -16,6 +16,8 @@ DISTFILES=	${PORTNAME}.tar.gz \
 EXTRACT_ONLY=	ee-3.0.tar.gz
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+
+BROKEN=		"Does not compile"
 
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 
