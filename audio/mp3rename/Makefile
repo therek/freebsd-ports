@@ -2,11 +2,11 @@
 # Date created:         6 Januari 2000
 # Whom:                 Sander Janssen <janssen@rendo.dekooi.nl>
 #
-# $FreeBSD: ports/audio/mp3rename/Makefile,v 1.1 2000/01/08 17:26:05 ade Exp $
+# $FreeBSD: ports/audio/mp3rename/Makefile,v 1.2 2000/04/08 21:24:02 mharo Exp $
 #
 
 PORTNAME=	mp3rename
-PORTVERSION=	0.4
+PORTVERSION=	0.6
 CATEGORIES=	audio
 MASTER_SITES=	http://www.rendo.dekooi.nl/~janssen/
 
