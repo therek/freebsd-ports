@@ -2,7 +2,7 @@
 # Date created:		19 October 1994
 # Whom:			mr
 #
-# $FreeBSD: ports/cad/pcb/Makefile,v 1.26 2001/09/17 17:40:04 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pcb
@@ -17,8 +17,7 @@ BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4 \
 		latex:${PORTSDIR}/print/teTeX
 
 USE_IMAKE=	yes
-MANN=		pcb.n
-MANCOMPRESSED=	no
+MAN1=		pcb.1
 
 pre-install:
 	-${MKDIR} ${DOCSDIR}
