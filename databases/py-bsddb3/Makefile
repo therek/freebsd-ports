@@ -2,12 +2,12 @@
 # Date created:				22 March 2001
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/databases/py-bsddb3/Makefile,v 1.1 2001/05/19 14:20:33 ijliao Exp $
+# $FreeBSD: ports/databases/py-bsddb3/Makefile,v 1.2 2001/07/25 15:05:08 knu Exp $
 #
 
 PORTNAME=	bsddb3
 PORTVERSION=	3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR= pybsddb
@@ -15,7 +15,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	perky@python.or.kr
 
-LIB_DEPENDS=	db3.3:${PORTSDIR}/databases/db3
+LIB_DEPENDS=	db3.2:${PORTSDIR}/databases/db3
 
 USE_PYTHON=	yes
 SETUP_CMD=	cd ${WRKSRC} && ${PYTHON_CMD} setup.py

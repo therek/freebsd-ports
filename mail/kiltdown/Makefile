@@ -2,19 +2,19 @@
 # Date Created:				16 Jun 2001
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/kiltdown/Makefile,v 1.3 2001/07/16 18:18:39 dinoex Exp $
+# $FreeBSD: ports/mail/kiltdown/Makefile,v 1.4 2001/07/25 15:05:10 knu Exp $
 #
 
 PORTNAME=	kiltdown
 PORTVERSION=	0.8.045
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	kiltdown
 
 MAINTAINER=	dinoex@FreeBSD.org
 
-LIB_DEPENDS=	db3.3:${PORTSDIR}/databases/db3
+LIB_DEPENDS=	db3.2:${PORTSDIR}/databases/db3
 
 USE_X_PREFIX=	yes
 USE_QT_VER=	2

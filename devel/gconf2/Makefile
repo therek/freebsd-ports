@@ -2,12 +2,12 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gconf/Makefile,v 1.19 2001/06/05 04:57:59 ade Exp $
+# $FreeBSD: ports/devel/gconf/Makefile,v 1.20 2001/07/25 15:05:08 knu Exp $
 #
 
 PORTNAME=	gconf
 PORTVERSION=	1.0.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/GConf
@@ -17,7 +17,7 @@ MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile \
 		oaf.0:${PORTSDIR}/devel/oaf \
-		db3.3:${PORTSDIR}/databases/db3
+		db3.2:${PORTSDIR}/databases/db3
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
