@@ -2,11 +2,12 @@
 # Date created:		3 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/dserver/Makefile,v 1.12 2000/06/09 21:21:49 asami Exp $
+# $FreeBSD: ports/japanese/dserver/Makefile,v 1.13 2000/10/08 10:20:29 asami Exp $
 #
 
 PORTNAME=	dserver
 PORTVERSION=	2.2.2
+PORTREVISION=	1
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.pu-toyama.ac.jp/pub/misc/ \
 		${MASTER_SITE_PORTS_JP} \
