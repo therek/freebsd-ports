@@ -2,7 +2,7 @@
 # Date created:		Fri Sep  1 00:05:55 MDT 2000
 # Whom:			Wes Peters <wes@softweyr.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/snobol/Makefile,v 1.1 2000/09/01 06:52:03 wes Exp $
 
 PORTNAME=	snobol
 PORTVERSION=	0.99.4
