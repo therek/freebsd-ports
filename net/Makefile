@@ -1,9 +1,10 @@
-# $FreeBSD: ports/net/Makefile,v 1.402 2000/09/16 04:21:20 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.403 2000/09/16 04:38:17 will Exp $
 #
 
     SUBDIR += SSLtelnet
     SUBDIR += adasockets
     SUBDIR += adns
+    SUBDIR += airport
     SUBDIR += amcl
     SUBDIR += archie
     SUBDIR += archie.el
