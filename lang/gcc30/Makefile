@@ -3,10 +3,10 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.85 2000/04/12 06:18:32 obrien Exp $
+# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.86 2000/04/14 17:15:19 obrien Exp $
 #
 
-SNAPDATE=	2000-04-10
+SNAPDATE=	2000-05-01
 SNAPVER=	${SNAPDATE:S/-//g}
 
 PORTNAME=	gcc-devel
@@ -30,7 +30,7 @@ NO_CDROM=	'dated material'
 
 .include <bsd.port.pre.mk>
 
-EGCS_REV=	${DISTNAME:S/gcc-//g}
+EGCS_REV=	2.96
 LIBSTDCPP_REV=	4
 WRKSRC=		${WRKDIR}/egcs-${SNAPVER}
 
@@ -56,7 +56,7 @@ CONFIGURE_ARGS+= --enable-shared
 CONFIGURE_ARGS+= --enable-threads=posix
 .endif
 ALL_TARGET=	bootstrap
-MAN1=		cccp.1 eg++.1 eg77.1 egcc.1
+MAN1=		eg++.1 eg77.1 egcc.1
 
 pre-patch:
 	@${MV} ${WRKSRC}/gcc/config/i386/freebsd.h ${WRKSRC}/gcc/config/i386/freebsd-aout.h
