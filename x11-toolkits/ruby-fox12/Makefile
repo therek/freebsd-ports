@@ -2,11 +2,11 @@
 # Date created:		24 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/ruby-fox/Makefile,v 1.1 2001/03/06 14:13:50 knu Exp $
 #
 
 PORTNAME=	fox
-PORTVERSION=	0.99.161
+PORTVERSION=	0.99.166
 CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	fxruby
