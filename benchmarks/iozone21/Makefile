@@ -3,13 +3,13 @@
 # Date created:         26 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/benchmarks/iozone/Makefile,v 1.25 1999/09/20 18:47:25 jmz Exp $
+# $FreeBSD: ports/benchmarks/iozone/Makefile,v 1.26 1999/09/22 09:07:58 asami Exp $
 #
 
-DISTNAME=       iozone3_9
+DISTNAME=       iozone
 PKGNAME=	iozone-3.9
 CATEGORIES=	benchmarks
-MASTER_SITES=   http://www.iozone.org/src/stable/
+MASTER_SITES=   http://www.iozone.org/src/
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	jmz@FreeBSD.org
