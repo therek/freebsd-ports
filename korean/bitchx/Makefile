@@ -2,29 +2,28 @@
 # Date created:		3 Jun 1999
 # Whom:			JunSeon Oh <hollywar@mail.holywar.net>
 #
-# $FreeBSD: ports/korean/bitchx/Makefile,v 1.8 2000/09/13 03:26:39 cjh Exp $
+# $FreeBSD: ports/korean/bitchx/Makefile,v 1.9 2000/10/05 07:22:43 reg Exp $
 #
 
 PORTNAME=	BitchX
 PORTVERSION=	1.0c16
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	korean irc gnome
 MASTER_SITES=	ftp://ftp.bitchx.com/pub/BitchX/source/ \
 		ftp://ukug.uk.freebsd.org/pub/lord_cj/
 
-PATCH_SITES=    ftp://ftp.holywar.net/pub/FreeBSD/
-PATCHFILES=     bx-korean-aa.patch\
-		bx-korean-ab.patch
+PATCH_SITES=	ftp://ftp.holywar.net/pub/FreeBSD/
+PATCHFILES=	bx-korean-aa.patch\
+		bx-korean-ab.patch\
+		bx-korean-ac.patch
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	hollywar@mail.holywar.net
 
-WRKSRC=         ${WRKDIR}/BitchX
+WRKSRC=		${WRKDIR}/BitchX
 
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes
-WANT_ESOUND=	yes
-WANT_GNOME=	yes
 CONFIGURE_ARGS=	--with-plugins \
 		--exec-prefix="${PREFIX}/share"	\
 		--bindir="${PREFIX}/bin" \
