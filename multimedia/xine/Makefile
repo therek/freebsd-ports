@@ -2,14 +2,14 @@
 # Date created:         14 Oct 2000
 # Whom:                 alex
 #
-# $FreeBSD: ports/graphics/xine/Makefile,v 1.11 2001/01/24 09:19:41 alex Exp $
+# $FreeBSD: ports/graphics/xine/Makefile,v 1.12 2001/01/24 18:53:27 vanilla Exp $
 #
 
 PORTNAME=		xine
-PORTVERSION=		0.3.6
-PORTREVISION=		3
+PORTVERSION=		0.3.7
 CATEGORIES=		graphics
-MASTER_SITES=		http://xine.sourceforge.net/files/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	xine
 DISTNAME=		${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=		roman@xpert.com
