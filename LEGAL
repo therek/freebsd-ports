@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.366 2004/11/10 09:05:29 ahze Exp $
+# $FreeBSD: ports/LEGAL,v 1.367 2004/11/11 21:35:03 pav Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -596,6 +596,10 @@ xtris-*.tar.gz		ports/games/xtris	Possible trademark infringement
 xwpl-*-freebsd.tar.gz	ports/math/xwpl		Free for Non-Commercial Use Only
 xzx-pro-*.tar.gz	ports/emulators/xzx	Redistribution forbidden by
 						license
+yasou-fpw*		ports/japanese/yasou-fpw No commercial use, and no
+						redistribution allowed with fee
+						except media and/or shipping
+						cost
 zangband/*		ports/japanese/zangband	Possible copyright infringement
 ZendOptimizer-*.tar.gz	ports/devel/ZendOptimizer Redistribution of pre-compiled
 						binaries is not permitted
