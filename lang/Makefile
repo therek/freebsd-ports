@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.243 2001/08/17 18:04:40 ijliao Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.244 2001/08/18 06:17:14 ijliao Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -81,6 +81,7 @@
     SUBDIR += mozart
     SUBDIR += nawk
     SUBDIR += nickle
+    SUBDIR += nml
     SUBDIR += nqc
     SUBDIR += o2c
     SUBDIR += objc
