@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.357 2001/09/25 19:27:06 lioux Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.358 2001/10/01 14:14:49 lioux Exp $
 #
 
     SUBDIR += 4va
@@ -15,6 +15,7 @@
     SUBDIR += aview
     SUBDIR += avifile
     SUBDIR += backfract
+    SUBDIR += barcode
     SUBDIR += blender
     SUBDIR += cadubi
     SUBDIR += camediaplay
