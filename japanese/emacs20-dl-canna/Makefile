@@ -2,7 +2,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/emacs20-dl-canna/Makefile,v 1.17 2000/04/11 14:13:24 knu Exp $
+# $FreeBSD: ports/japanese/emacs20-dl-canna/Makefile,v 1.18 2000/05/29 03:49:00 steve Exp $
 #
 
 PORTNAME=	emacs20-dl-canna
@@ -31,7 +31,7 @@ PLIST_SUB=	EMACS_VER=${EMACS_VER} EMACS_ARCH=${MACHINE_ARCH}--freebsd \
 		DLCANNA_VER=${DLCANNA_VER} LISPDIR=${LISPDIR} DOCDIR=${DOCDIR}
 
 # ports variables
-EMACS_VER=	20.6
+EMACS_VER=	20.7
 EMACSDL_DIR=	${.CURDIR}/../../editors/emacs20-dl
 EMACSDL_SRCDIR=	${WRKDIRPREFIX}${EMACSDL_DIR}/work/emacs-${EMACS_VER}/src
 APEL_DEPENDS=	${PREFIX}/share/emacs/${EMACS_VER}/site-lisp/emu/emu.el
