@@ -2,7 +2,7 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.146 2001/08/08 21:56:12 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.147 2001/08/22 20:13:50 dirk Exp $
 #
 
 PORTNAME?=	mod_php4
@@ -19,6 +19,10 @@ MASTER_SITES=	http://us.php.net/${PHP_DISTDIR}/ \
 		http://www.php.cz/${PHP_DISTDIR}/ \
 		http://php3.globe.de/${PHP_DISTDIR}/
 DISTNAME=	php-${PORTVERSION}
+
+PATCHFILES=	php_configure.3.diff
+PATCH_SITES=	http://www.physik.tu-berlin.de/~ibex/ports/distfiles/ \
+		${MASTER_SITE_LOCAL}/dirk/
 
 MAINTAINER=	dirk@FreeBSD.org
 
