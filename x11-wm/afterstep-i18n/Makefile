@@ -2,14 +2,14 @@
 # Date created:		23 October 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.11 2000/02/08 09:29:45 peter Exp $
+# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.12 2000/04/10 19:49:32 cpiazza Exp $
 #
 
 PORTNAME=	afterstep-i18n
 PORTVERSION= 	1.0
 CATEGORIES=	x11-wm afterstep
 MASTER_SITES=	${MASTER_SITE_AFTERSTEP} \
-		http://people.FreeBSD.org/~kuriyama/distfiles/ \
+		ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/kuriyama/ \
 		http://www.itlb.te.noda.sut.ac.jp/~manome/afterstep/archive/ \
 		http://www.itlb.te.noda.sut.ac.jp/~manome/afterstep/archive/icons/
 MASTER_SITE_SUBDIR=	stable/archives
