@@ -2,11 +2,11 @@
 # Date Created:				3 Mar, 2001
 # Whom:					clive
 #
-# $FreeBSD: ports/www/p5-Template-Toolkit/Makefile,v 1.2 2001/04/01 03:28:18 clive Exp $
+# $FreeBSD: ports/www/p5-Template-Toolkit/Makefile,v 1.3 2001/04/02 12:24:15 clive Exp $
 #
 
 PORTNAME=	Template-Toolkit
-PORTVERSION=	2.01
+PORTVERSION=	2.02
 CATEGORIES=	www textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Template
@@ -19,6 +19,8 @@ RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 PERL_CONFIGURE=	yes
+
+MASTER_SITE_BACKUP+=	http://www.template-toolkit.org/download/
 
 .if defined(BATCH)
 CONFIGURE_ENV=	|
@@ -53,7 +55,7 @@ MAN3=	Template.3 Template::Base.3 Template::Constants.3 Template::Context.3 \
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 post-patch:
-	${PERL} -pi -e 's,/usr/local/tt2,${LOCALBASE}/share/tt2,g' \
+	${PERL} -pi -e 's,${LOCALBASE}/tt2,${LOCALBASE}/share/tt2,g' \
 		${CONFIGURE_WRKSRC}/${CONFIGURE_SCRIPT}
 
 .include <bsd.port.mk>
