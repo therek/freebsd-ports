@@ -2,11 +2,11 @@
 # Date created:			19 December 1998
 # Whom:				Brad Hendrickse <bradh@iafrica.com>
 #
-# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.10 2000/07/04 04:40:33 will Exp $
+# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.11 2000/12/19 08:24:08 sobomax Exp $
 #
 
 PORTNAME=	gifsicle
-PORTVERSION=	1.23
+PORTVERSION=	1.25
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lcdf.org/gifsicle/
 
@@ -23,7 +23,7 @@ CONFIGURE_ARGS+=	--enable-ungif
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/gifsicle
+	@${MKDIR} ${PREFIX}/share/doc/gifsicle
 	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/gifsicle
 .endif
 
