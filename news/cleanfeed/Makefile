@@ -2,18 +2,20 @@
 # Date created:				09 October 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/news/cleanfeed/Makefile,v 1.2 2001/06/17 16:17:45 ijliao Exp $
+# $FreeBSD: ports/news/cleanfeed/Makefile,v 1.3 2001/09/09 16:15:36 kevlo Exp $
 #
 
 PORTNAME=	cleanfeed
 PORTVERSION=	20010805
+PORTREVISION=	1
 CATEGORIES=	news
 MASTER_SITES=	http://www.bofh.it/~md/cleanfeed/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	leeym@leeym.com
 
-RUN_DEPENDS=	${LOCALBASE}/news/bin/innd:${PORTSDIR}/news/inn
+RUN_DEPENDS=	${LOCALBASE}/news/bin/innd:${PORTSDIR}/news/inn \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Digest/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5
 
 NO_BUILD=	yes
 BINOWN=		news
