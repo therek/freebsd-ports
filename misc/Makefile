@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.312 2000/12/19 10:20:36 will Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.313 2000/12/23 17:11:44 okazaki Exp $
 #
 
     SUBDIR += 221upgrade
@@ -108,6 +108,7 @@
     SUBDIR += p5-Array-PrintCols
     SUBDIR += p5-Business-CreditCard
     SUBDIR += p5-File-CounterFile
+    SUBDIR += p5-Finance-Quote
     SUBDIR += p5-I18N-Charset
     SUBDIR += p5-I18N-LangTags
     SUBDIR += p5-LEGO-RCX
