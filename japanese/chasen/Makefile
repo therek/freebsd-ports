@@ -3,7 +3,7 @@
 # Whom:			kuriyama
 #
 # $NetBSD: Makefile,v 1.2 1999/06/07 09:54:39 sakamoto Exp $
-# $FreeBSD: ports/japanese/chasen/Makefile,v 1.15 2001/03/05 11:28:55 knu Exp $
+# $FreeBSD: ports/japanese/chasen/Makefile,v 1.16 2001/03/05 21:08:05 knu Exp $
 #
 
 PORTNAME=	chasen
@@ -13,7 +13,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.aist-nara.ac.jp/pub/lab/nlp/tools/chasen/
 DISTNAME=	${PORTNAME}-sys${PORTVERSION}-ipadic2.1
 
-MAINTAINER=	knu@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 MAKE_ARGS=	NOPROFILE=true
