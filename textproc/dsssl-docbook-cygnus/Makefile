@@ -2,7 +2,7 @@
 # Date created:        2 Feb 2000
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/dsssl-docbook-cygnus/Makefile,v 1.1 2000/10/31 06:01:38 kuriyama Exp $
 #
 
 PORTNAME=	dsssl-docbook-cygnus
@@ -15,7 +15,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
-RUN_DEPENDS=	${LOCALBASE}/share/sgml/docbook/dsssl/modular/frames/navbar.htm:${PORTSDIR}/textproc/dsssl-docbook-modular
+RUN_DEPENDS=	${LOCALBASE}/share/sgml/docbook/dsssl/modular/frames/navbar.htm:${PORTSDIR}/textproc/dsssl-docbook-modular \
+		jade:${PORTSDIR}/textproc/jade
 
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/stylesheets
