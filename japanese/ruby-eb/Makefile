@@ -2,11 +2,12 @@
 # Date created:		6 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/ruby-eb/Makefile,v 1.4 2001/04/04 15:37:44 knu Exp $
+# $FreeBSD: ports/japanese/ruby-eb/Makefile,v 1.5 2001/06/25 21:25:05 knu Exp $
 #
 
 PORTNAME=	eb
 PORTVERSION=	1.6
+PORTREVISION=	1
 CATEGORIES=	japanese ruby
 MASTER_SITES=	http://www.threeweb.ad.jp/~nyasu/software/
 DISTNAME=	ruby-${PORTNAME}${PORTVERSION}

@@ -1,5 +1,6 @@
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile.common,v 1.10 2001/06/09 02:49:06 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile.common,v 1.11 2001/08/23 06:46:34 knu Exp $
 
+# Don't forget to clear PORTREVISION's on update
 RUBY_QT2_VERSION=	0.14
 RUBY_QT2_PORTVERSION=	${RUBY_QT2_VERSION}
 RUBY_QT2_MASTER_SITES=	http://sfns.u-shizuoka-ken.ac.jp/geneng/horie_hp/ruby/

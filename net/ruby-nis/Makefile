@@ -2,11 +2,12 @@
 # Date created:		21 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ruby-nis/Makefile,v 1.1 2001/06/21 12:46:13 knu Exp $
 #
 
 PORTNAME=	nis
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	net ruby
 MASTER_SITES=	http://kt-www.jaist.ac.jp/~ttate/ftp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

@@ -2,11 +2,12 @@
 # Date created:		29 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-pam/Makefile,v 1.1 2001/05/30 16:00:25 knu Exp $
+# $FreeBSD: ports/security/ruby-pam/Makefile,v 1.2 2001/08/06 17:58:58 knu Exp $
 #
 
 PORTNAME=	pam
 PORTVERSION=	1.3
+PORTREVISION=	1
 CATEGORIES=	security ruby
 MASTER_SITES=	http://kt-www.jaist.ac.jp/~ttate/ftp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

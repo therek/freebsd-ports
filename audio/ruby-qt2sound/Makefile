@@ -2,12 +2,12 @@
 # Date created:		13 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/ruby-qt2sound/Makefile,v 1.1 2001/08/23 07:30:33 knu Exp $
 #
 
 PORTNAME=	qt2sound
 PORTVERSION=	${RUBY_QT2_PORTVERSION}
-PORTREVISION=	${RUBY_QT2_PORTREVISION}
+PORTREVISION=	1
 CATEGORIES=	audio x11-toolkits ruby
 MASTER_SITES=	${RUBY_QT2_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

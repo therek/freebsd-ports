@@ -2,11 +2,12 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/mail/ruby-tmail/Makefile,v 1.17 2001/08/01 05:52:47 knu Exp $
+# $FreeBSD: ports/mail/ruby-tmail/Makefile,v 1.18 2001/09/08 14:38:01 knu Exp $
 #
 
 PORTNAME=	tmail
 PORTVERSION=	0.9.8
+PORTREVISION=	1
 CATEGORIES=	mail ruby
 MASTER_SITES=	http://www.loveruby.net/archive/
 MASTER_SITE_SUBDIR=	knu

@@ -2,11 +2,12 @@
 # Date created:		1 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-snmp/Makefile,v 1.3 2000/09/26 08:02:08 knu Exp $
+# $FreeBSD: ports/net/ruby-snmp/Makefile,v 1.4 2001/01/19 16:37:56 knu Exp $
 #
 
 PORTNAME=	snmp
 PORTVERSION=	0.2.1
+PORTREVISION=	1
 CATEGORIES=	net ruby
 MASTER_SITES=	http://w3cic.riken.go.jp/~tsuruoka/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

@@ -2,11 +2,12 @@
 # Date created:		3 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-dbi/Makefile,v 1.3 2001/06/09 14:23:33 knu Exp $
+# $FreeBSD: ports/databases/ruby-dbi/Makefile,v 1.4 2001/07/29 11:03:43 knu Exp $
 #
 
 PORTNAME=	${RUBY_DBI_PORTNAME}
 PORTVERSION=	${RUBY_DBI_PORTVERSION}
+PORTREVISION=	1
 CATEGORIES=	databases ruby
 MASTER_SITES=	${RUBY_DBI_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

@@ -2,11 +2,12 @@
 # Date created:		15 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-tcpwrap/Makefile,v 1.7 2001/04/16 05:14:48 knu Exp $
+# $FreeBSD: ports/security/ruby-tcpwrap/Makefile,v 1.8 2001/04/23 19:00:49 knu Exp $
 #
 
 PORTNAME=	tcpwrap
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	security ruby
 MASTER_SITES=	http://www.shugo.net/archive/ruby-tcpwrap/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

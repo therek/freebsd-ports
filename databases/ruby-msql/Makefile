@@ -2,11 +2,12 @@
 # Date created:		9 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/ruby-msql/Makefile,v 1.1 2001/06/09 15:48:26 knu Exp $
 #
 
 PORTNAME=	msql
 PORTVERSION=	0.2.4a
+PORTREVISION=	1
 CATEGORIES=	databases ruby
 MASTER_SITES=	http://www.isc.meiji.ac.jp/~ce11725/ruby/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

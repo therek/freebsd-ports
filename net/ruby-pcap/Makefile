@@ -2,11 +2,12 @@
 # Date created:		20 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ruby-pcap/Makefile,v 1.1 2000/11/19 22:06:30 knu Exp $
 #
 
 PORTNAME=	pcap
 PORTVERSION=	0.6
+PORTREVISION=	1
 CATEGORIES=	net ruby
 MASTER_SITES=	http://www.goto.info.waseda.ac.jp/~fukusima/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

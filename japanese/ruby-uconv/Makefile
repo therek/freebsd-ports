@@ -2,11 +2,12 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/ruby-uconv/Makefile,v 1.8 2001/01/30 19:26:22 knu Exp $
+# $FreeBSD: ports/japanese/ruby-uconv/Makefile,v 1.9 2001/03/15 19:13:39 knu Exp $
 #
 
 PORTNAME=	uconv
 PORTVERSION=	0.4.6
+PORTREVISION=	1
 CATEGORIES=	japanese converters ruby
 MASTER_SITES=	http://www.yoshidam.net/
 DIST_SUBDIR=	ruby

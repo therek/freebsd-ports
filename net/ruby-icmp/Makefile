@@ -2,11 +2,12 @@
 # Date created:		1 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-icmp/Makefile,v 1.2 2000/11/02 19:06:06 knu Exp $
+# $FreeBSD: ports/net/ruby-icmp/Makefile,v 1.3 2001/02/07 19:26:42 knu Exp $
 #
 
 PORTNAME=	icmp
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	net ruby
 MASTER_SITES=	http://www.notwork.org/~gotoyuzo/ruby/src/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

@@ -2,11 +2,12 @@
 # Date created:		2 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/ruby-sqlrelay/Makefile,v 1.1 2001/07/06 10:24:48 knu Exp $
 #
 
 PORTNAME=	${SQLRELAY_PORTNAME}
 PORTVERSION=	${SQLRELAY_PORTVERSION}
+PORTREVISION=	1
 CATEGORIES=	databases ruby
 MASTER_SITES=	# none
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

@@ -2,11 +2,12 @@
 # Date created:		25 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-fltk/Makefile,v 1.6 2001/09/03 09:08:38 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-fltk/Makefile,v 1.7 2001/09/10 16:14:18 knu Exp $
 #
 
 PORTNAME=	fltk
 PORTVERSION=	0.2
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}

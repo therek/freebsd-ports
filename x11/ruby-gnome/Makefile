@@ -2,11 +2,12 @@
 # Date created:		28 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/ruby-gnome/Makefile,v 1.1 2001/02/28 12:52:25 knu Exp $
 #
 
 PORTNAME=	gnome
 PORTVERSION=	${RUBY_GNOME_PORTVERSION}
+PORTREVISION=	1
 CATEGORIES=	x11 ruby
 MASTER_SITES=	${RUBY_GNOME_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

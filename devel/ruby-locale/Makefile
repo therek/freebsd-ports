@@ -2,11 +2,12 @@
 # Date created:		15 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-locale/Makefile,v 1.3 2000/09/07 14:39:30 knu Exp $
+# $FreeBSD: ports/devel/ruby-locale/Makefile,v 1.4 2000/09/26 08:01:55 knu Exp $
 #
 
 PORTNAME=	locale
 PORTVERSION=	0.2
+PORTREVISION=	1
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://kafka.salem.mass.edu/~yashi/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

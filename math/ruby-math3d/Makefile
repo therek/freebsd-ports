@@ -2,11 +2,12 @@
 # Date created:		8 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/ruby-math3d/Makefile,v 1.1 2001/05/08 11:23:36 knu Exp $
 #
 
 PORTNAME=	math3d
 PORTVERSION=	0.02
+PORTREVISION=	1
 CATEGORIES=	math ruby
 MASTER_SITES=	http://www2.giganet.net/~yoshi/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

@@ -2,11 +2,12 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-filelock/Makefile,v 1.3 2000/09/19 16:09:10 knu Exp $
+# $FreeBSD: ports/devel/ruby-filelock/Makefile,v 1.4 2000/09/26 08:01:52 knu Exp $
 #
 
 PORTNAME=	filelock
 PORTVERSION=	0.2
+PORTREVISION=	1
 CATEGORIES=	devel ruby
 MASTER_SITES=	${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	contrib

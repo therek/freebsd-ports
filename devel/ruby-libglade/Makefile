@@ -2,11 +2,12 @@
 # Date created:		8 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-libglade/Makefile,v 1.2 2001/05/04 21:41:08 ade Exp $
+# $FreeBSD: ports/devel/ruby-libglade/Makefile,v 1.3 2001/06/25 22:56:24 knu Exp $
 #
 
 PORTNAME=	libglade
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	devel ruby gnome
 MASTER_SITES=	http://beta4.com/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

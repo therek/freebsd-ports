@@ -2,12 +2,12 @@
 # Date created:		9 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.29 2001/04/06 10:08:14 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.30 2001/04/27 10:11:51 knu Exp $
 #
 
 PORTNAME=	qt2
 PORTVERSION=	${RUBY_QT2_PORTVERSION}
-PORTREVISION=	${RUBY_QT2_PORTREVISION}
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	${RUBY_QT2_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

@@ -2,11 +2,12 @@
 # Date created:		20 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-flex_rb/Makefile,v 1.1 2001/07/20 09:11:46 knu Exp $
 #
 
 PORTNAME=	flex_rb
 PORTVERSION=	0.10
+PORTREVISION=	1
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.inf.bme.hu/~pts/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

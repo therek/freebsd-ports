@@ -2,12 +2,12 @@
 # Date created:		28 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-gdk_pixbuf/Makefile,v 1.1 2001/02/28 12:58:23 knu Exp $
+# $FreeBSD: ports/graphics/ruby-gdk_pixbuf/Makefile,v 1.2 2001/05/04 21:41:13 ade Exp $
 #
 
 PORTNAME=	gdk_pixbuf
 PORTVERSION=	${RUBY_GNOME_PORTVERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics ruby gnome
 MASTER_SITES=	${RUBY_GNOME_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

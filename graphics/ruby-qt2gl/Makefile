@@ -2,12 +2,12 @@
 # Date created:		7 Feb 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-qt2gl/Makefile,v 1.8 2001/08/23 06:46:34 knu Exp $
+# $FreeBSD: ports/graphics/ruby-qt2gl/Makefile,v 1.9 2001/08/24 06:05:57 knu Exp $
 #
 
 PORTNAME=	qt2gl
 PORTVERSION=	${RUBY_QT2_PORTVERSION}
-PORTREVISION=	${RUBY_QT2_PORTREVISION}
+PORTREVISION=	1
 CATEGORIES=	graphics x11-toolkits ruby
 MASTER_SITES=	${RUBY_QT2_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

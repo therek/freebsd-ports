@@ -2,11 +2,12 @@
 # Date created:		21 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/print/ruby-pdflib/Makefile,v 1.2 2001/03/14 14:08:10 knu Exp $
+# $FreeBSD: ports/print/ruby-pdflib/Makefile,v 1.3 2001/09/11 02:59:20 ache Exp $
 #
 
 PORTNAME=	pdflib
 PORTVERSION=	0.6
+PORTREVISION=	1
 CATEGORIES=	print ruby
 MASTER_SITES=	http://www-nh.scphys.kyoto-u.ac.jp/~thitoshi/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

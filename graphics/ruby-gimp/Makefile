@@ -2,11 +2,12 @@
 # Date created:		28 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-gimp/Makefile,v 1.2 2001/03/17 21:05:35 knu Exp $
+# $FreeBSD: ports/graphics/ruby-gimp/Makefile,v 1.3 2001/08/24 06:08:46 knu Exp $
 #
 
 PORTNAME=	gimp
 PORTVERSION=	20010315
+PORTREVISION=	1
 CATEGORIES=	graphics ruby
 MASTER_SITES=	http://homepage1.nifty.com/susho/software/gimp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

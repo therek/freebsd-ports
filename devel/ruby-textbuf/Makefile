@@ -2,11 +2,12 @@
 # Date created:		19 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-textbuf/Makefile,v 1.5 2001/08/12 05:36:13 knu Exp $
+# $FreeBSD: ports/devel/ruby-textbuf/Makefile,v 1.6 2001/08/12 05:37:42 knu Exp $
 #
 
 PORTNAME=	textbuf
 PORTVERSION=	0.3.8
+PORTREVISION=	1
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.loveruby.net/archive/
 MASTER_SITE_SUBDIR=	knu

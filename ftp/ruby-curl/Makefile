@@ -2,12 +2,12 @@
 # Date created:		31 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/ftp/ruby-curl/Makefile,v 1.1 2001/03/31 12:13:40 knu Exp $
+# $FreeBSD: ports/ftp/ruby-curl/Makefile,v 1.2 2001/04/06 10:26:21 knu Exp $
 #
 
 PORTNAME=	curl
 PORTVERSION=	0.0.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ftp www ruby
 MASTER_SITES=	http://www.d1.dion.ne.jp/~matuyuki/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

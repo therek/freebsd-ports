@@ -2,11 +2,12 @@
 # Date created:		23 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-slang/Makefile,v 1.8 2000/12/06 15:37:37 knu Exp $
+# $FreeBSD: ports/devel/ruby-slang/Makefile,v 1.9 2001/02/14 05:42:56 lioux Exp $
 #
 
 PORTNAME=	slang
 PORTVERSION=	0.51
+PORTREVISION=	1
 CATEGORIES+=	devel ruby
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www.kondara.org/~g/

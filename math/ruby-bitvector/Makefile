@@ -2,11 +2,12 @@
 # Date created:		23 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/ruby-bitvector/Makefile,v 1.1 2000/11/23 14:13:41 knu Exp $
 #
 
 PORTNAME=	bitvector
 PORTVERSION=	0.1.6
+PORTREVISION=	1
 CATEGORIES=	math ruby
 MASTER_SITES=	http://www.ce.chalmers.se/~feldt/ruby/extensions/bitvector/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

@@ -2,11 +2,12 @@
 # Date created:		20 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/audio/ruby-audiofile/Makefile,v 1.3 2001/07/26 05:17:02 knu Exp $
+# $FreeBSD: ports/audio/ruby-audiofile/Makefile,v 1.4 2001/08/30 08:56:49 knu Exp $
 #
 
 PORTNAME=	audiofile
 PORTVERSION=	0.2
+PORTREVISION=	1
 CATEGORIES=	audio ruby
 MASTER_SITES=	http://%SUBDIR%.sourceforge.net/download/
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}

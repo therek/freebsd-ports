@@ -2,11 +2,12 @@
 # Date created:		10 April 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-rudl/Makefile,v 1.6 2001/06/26 10:18:51 sobomax Exp $
 #
 
 PORTNAME=	rudl
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://froukepc.dhs.org/rudl/download/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

@@ -2,11 +2,12 @@
 # Date created:		13 Apr 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-libgtop/Makefile,v 1.1 2001/04/13 15:53:54 knu Exp $
 #
 
 PORTNAME=	libgtop
 PORTVERSION=	0.1.0
+PORTREVISION=	1
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.colinsteele.org/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

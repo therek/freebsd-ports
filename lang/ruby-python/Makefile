@@ -2,12 +2,12 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-python/Makefile,v 1.13 2001/02/05 15:04:11 olgeni Exp $
+# $FreeBSD: ports/lang/ruby-python/Makefile,v 1.14 2001/03/29 08:23:04 knu Exp $
 #
 
 PORTNAME=	python
 PORTVERSION=	0.3.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang ruby python
 MASTER_SITES=	http://www.goto.info.waseda.ac.jp/~fukusima/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

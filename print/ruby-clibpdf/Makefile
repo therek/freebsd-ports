@@ -2,11 +2,12 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/print/ruby-clibpdf/Makefile,v 1.3 2000/09/26 08:01:51 knu Exp $
+# $FreeBSD: ports/print/ruby-clibpdf/Makefile,v 1.4 2001/05/19 16:10:53 knu Exp $
 #
 
 PORTNAME=	clibpdf
 PORTVERSION=	20010519
+PORTREVISION=	1
 CATEGORIES=	print ruby
 MASTER_SITES=	http://www2s.biglobe.ne.jp/~Nori/ruby/dist/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

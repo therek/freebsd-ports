@@ -2,11 +2,12 @@
 # Date created:		28 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/ruby-gdk_imlib/Makefile,v 1.1 2001/02/28 12:54:28 knu Exp $
 #
 
 PORTNAME=	gdk_imlib
 PORTVERSION=	${RUBY_GNOME_PORTVERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics ruby
 MASTER_SITES=	${RUBY_GNOME_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

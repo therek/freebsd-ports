@@ -2,11 +2,12 @@
 # Date created:		1 Feb 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/math/ruby-narray/Makefile,v 1.2 2001/04/06 10:45:50 knu Exp $
+# $FreeBSD: ports/math/ruby-narray/Makefile,v 1.3 2001/07/02 05:19:27 knu Exp $
 #
 
 PORTNAME=	narray
 PORTVERSION=	0.5.4
+PORTREVISION=	1
 CATEGORIES=	math ruby
 MASTER_SITES=	http://www.ir.isas.ac.jp/~masa/ruby/dist/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

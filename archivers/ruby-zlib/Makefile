@@ -2,11 +2,12 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/archivers/ruby-zlib/Makefile,v 1.8 2001/05/06 14:05:06 knu Exp $
+# $FreeBSD: ports/archivers/ruby-zlib/Makefile,v 1.9 2001/05/06 14:23:53 knu Exp $
 #
 
 PORTNAME=	zlib
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	archivers ruby
 MASTER_SITES=	http://www.blue.sky.or.jp/atelier/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

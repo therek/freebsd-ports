@@ -2,11 +2,12 @@
 # Date created:		12 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/ruby-gdome/Makefile,v 1.1 2001/07/12 06:46:03 knu Exp $
 #
 
 PORTNAME=	gdome
 PORTVERSION=	0.1
+PORTREVISION=	1
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://download.berlios.de/libgdome-ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

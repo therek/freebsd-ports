@@ -2,11 +2,12 @@
 # Date created:		12 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-sysvipc/Makefile,v 1.1 2001/05/12 20:29:14 knu Exp $
+# $FreeBSD: ports/devel/ruby-sysvipc/Makefile,v 1.2 2001/07/01 16:11:42 knu Exp $
 #
 
 PORTNAME=	sysvipc
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://deisui.bug.org/~ueno/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

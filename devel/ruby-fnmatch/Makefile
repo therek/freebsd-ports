@@ -2,11 +2,12 @@
 # Date created:		11 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-fnmatch/Makefile,v 1.1 2001/06/10 17:24:10 knu Exp $
+# $FreeBSD: ports/devel/ruby-fnmatch/Makefile,v 1.2 2001/06/11 05:01:43 knu Exp $
 #
 
 PORTNAME=	fnmatch
 PORTVERSION=	1.1b
+PORTREVISION=	1
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.ruby-lang.org/~knu/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

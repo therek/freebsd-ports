@@ -2,11 +2,12 @@
 # Date created:		28 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/print/ruby-panda/Makefile,v 1.5 2001/07/29 12:14:10 knu Exp $
+# $FreeBSD: ports/print/ruby-panda/Makefile,v 1.6 2001/09/11 02:59:19 ache Exp $
 #
 
 PORTNAME=	panda
 PORTVERSION=	0.0.5
+PORTREVISION=	1
 CATEGORIES=	print ruby
 MASTER_SITES=	http://www2s.biglobe.ne.jp/~Nori/ruby/dist/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

@@ -2,11 +2,12 @@
 # Date created:		6 April 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-tgif/Makefile,v 1.2 2001/04/08 08:54:49 knu Exp $
+# $FreeBSD: ports/graphics/ruby-tgif/Makefile,v 1.3 2001/04/08 13:47:21 knu Exp $
 #
 
 PORTNAME=	tgif
 PORTVERSION=	20010408
+PORTREVISION=	1
 CATEGORIES=	graphics ruby
 MASTER_SITES=	http://www2s.biglobe.ne.jp/~Nori/ruby/dist/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

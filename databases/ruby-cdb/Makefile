@@ -2,11 +2,12 @@
 # Date created:		8 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/ruby-cdb/Makefile,v 1.1 2001/03/08 12:42:10 knu Exp $
 #
 
 PORTNAME=	cdb
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	databases ruby
 MASTER_SITES=	http://www.fan.gr.jp/~kaz/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

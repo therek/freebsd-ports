@@ -2,11 +2,12 @@
 # Date created:		20 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-mcrypt/Makefile,v 1.1 2001/06/21 11:37:30 knu Exp $
+# $FreeBSD: ports/security/ruby-mcrypt/Makefile,v 1.2 2001/06/26 10:48:14 knu Exp $
 #
 
 PORTNAME=	mcrypt
 PORTVERSION=	0.2
+PORTREVISION=	1
 CATEGORIES=	security ruby
 MASTER_SITES=	http://www.rubylinks.de/download/ \
 		http://www.no.rubylinks.de/download/ \

@@ -2,11 +2,12 @@
 # Date created:		11 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-perl/Makefile,v 1.8 2000/09/26 08:01:59 knu Exp $
+# $FreeBSD: ports/lang/ruby-perl/Makefile,v 1.9 2001/02/07 18:09:55 knu Exp $
 #
 
 PORTNAME=	perl
 PORTVERSION=	0.2.7
+PORTREVISION=	1
 CATEGORIES=	lang ruby perl5
 MASTER_SITES=	http://www.yoshidam.net/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

@@ -2,11 +2,12 @@
 # Date created:		22 August 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-avl/Makefile,v 1.1 2001/08/22 08:04:04 knu Exp $
 #
 
 PORTNAME=	avl
 PORTVERSION=	0.1
+PORTREVISION=	1
 CATEGORIES+=	devel ruby
 MASTER_SITES=	http://bocks.dhs.org/~pizman/avl/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
