@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/kterm16c/Makefile,v 1.22 2000/04/17 00:17:56 reg Exp $
+# $FreeBSD: ports/japanese/kterm16c/Makefile,v 1.23 2000/07/19 15:34:21 shige Exp $
 #
 
 PORTNAME=	kterm16c
@@ -35,7 +35,8 @@ USE_IMAKE=	yes
 DOCDIR=		${PREFIX}/share/doc/kterm16c
 
 post-extract:
-	@${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} ${DISTDIR}/pcemu1.01alpha.tar.gz \
+	@${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} \
+		${DISTDIR}/${DIST_SUBDIR}/pcemu1.01alpha.tar.gz \
 		${EXTRACT_AFTER_ARGS} -C ${WRKDIR} pcemu1.01alpha/vga.bdf
 	@cd ${WRKDIR}/pcemu1.01alpha; \
 		bdftopcf vga.bdf > vga.pcf; \
