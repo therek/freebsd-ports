@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript-afpl/Makefile,v 1.73 2001/09/11 19:24:30 knu Exp $
+# $FreeBSD: ports/print/ghostscript-afpl/Makefile,v 1.74 2001/09/11 20:18:29 knu Exp $
 #
 
 PORTNAME=	ghostscript
@@ -16,7 +16,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/AFPL/gs700/ \
 		ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/AFPL/fonts/
 MASTER_SITE_SUBDIR=	${PORTNAME} gimp-print hpinkjet
-PKGNAMESUFFIX=	-afpl
 
 DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
 		${DECRYPT_PDF} ${HP8XX_DRV} ${HPDJ_SRC} ${PCL3_SRC} \

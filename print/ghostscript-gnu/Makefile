@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript-gnu/Makefile,v 1.51 2001/09/11 19:12:18 knu Exp $
+# $FreeBSD: ports/print/ghostscript-gnu/Makefile,v 1.52 2001/09/11 20:18:03 knu Exp $
 #
 
 PORTNAME=	ghostscript
@@ -17,7 +17,6 @@ MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/gnu/gs651/ \
 		ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/gnu/fonts/
 MASTER_SITE_SUBDIR=	${PORTNAME} gimp-print hpinkjet
-PKGNAMESUFFIX=	-gnu
 
 DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
 		${DECRYPT_PDF} ${HP8XX_DRV} ${HPDJ_SRC} ${PCL3_SRC} \
