@@ -2,7 +2,7 @@
 # Date created:		24 October 2000
 # Whom:			kaj@Raditex.se
 #
-# $FreeBSD: ports/www/webredirect/Makefile,v 1.2 2001/02/05 15:33:56 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	webredirect
@@ -12,12 +12,13 @@ MASTER_SITES=	ftp://Raditex.se/pub/kaj/
 
 MAINTAINER=	rasmus@kaj.se
 
+ALL_TARGET=	depend all
+
 MAN1=		webredirect.1
 
-.include <bsd.port.pre.mk>
+pre-build:
+	@${TOUCH} ${WRKSRC}/incu/depend.mk
 
-do-configure:
-	${TOUCH} ${WRKSRC}/incu/depend.mk && cd ${WRKSRC} && ${MAKE} depend
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/webredirect ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/webredirect.1 ${PREFIX}/man/man1
@@ -25,4 +26,4 @@ do-install:
 post-install:
 	@${CAT} ${PKGMESSAGE}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
