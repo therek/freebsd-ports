@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.133 2001/08/01 12:02:51 knu Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.134 2001/08/04 08:41:12 ijliao Exp $
 #
     SUBDIR += zpygresqlda
     SUBDIR += adodb
@@ -35,6 +35,7 @@
     SUBDIR += myodbc
     SUBDIR += mysql++
     SUBDIR += mysql-editor
+    SUBDIR += mysql-gui
     SUBDIR += mysql-jdbc-mm
     SUBDIR += mysql-navigator
     SUBDIR += mysql2pgsql
