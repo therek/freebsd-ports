@@ -2,7 +2,7 @@
 # Date created:				29 Mar 2000
 # Whom:					trevor@jpj.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/rmap/Makefile,v 1.1 2000/07/02 07:22:54 will Exp $
 #
 
 PORTNAME=	rmap
@@ -10,7 +10,7 @@ PORTVERSION=	1.2
 CATEGORIES=	astro
 MASTER_SITES=	http://www.reza.net/rmap/
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt

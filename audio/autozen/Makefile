@@ -2,7 +2,7 @@
 # Date created:				2000-09-16
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/autozen/Makefile,v 1.1 2000/09/16 17:29:54 ade Exp $
 #
 
 PORTNAME=	autozen
@@ -11,7 +11,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.linuxlabs.com/software/download/
 DISTNAME=	AutoZen-${PORTVERSION}
 
-MAINTAINER=	trevor@jpj.net
+MAINTAINER=	trevor@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
