@@ -2,7 +2,7 @@
 # Date created:		17 June 1998
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/bg5ps/Makefile,v 1.6 2000/11/03 12:26:50 kevlo Exp $
+# $FreeBSD: ports/chinese/bg5ps/Makefile,v 1.7 2000/11/06 18:14:36 keith Exp $
 #
 
 PORTNAME=	bg5ps
@@ -13,7 +13,6 @@ DISTNAME=	bg5ps-1.3.0
 
 MAINTAINER=	keith@FreeBSD.org
 
-USE_GMAKE=	yes
 USE_FREETYPE=	yes
 USE_PYTHON=	yes
 
