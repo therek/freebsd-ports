@@ -2,11 +2,11 @@
 # Date created:		August 22 2001
 # Whom:			Michiel De Wilde <michiel.dewilde@rug.ac.be>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/mosfet-liquid/Makefile,v 1.1 2001/08/27 11:13:14 olgeni Exp $
 #
 
 PORTNAME=	mosfet-liquid
-PORTVERSION=	0.5.1
+PORTVERSION=	0.6
 CATEGORIES=	x11-wm kde
 MASTER_SITES=	http://www.mosfet.org/
 DISTNAME=	${PORTNAME}${PORTVERSION}
