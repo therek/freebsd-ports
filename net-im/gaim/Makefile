@@ -2,7 +2,7 @@
 # Date created:			26 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gaim/Makefile,v 1.36 2000/12/24 01:41:06 jim Exp $
+# $FreeBSD: ports/net/gaim/Makefile,v 1.37 2001/03/07 17:50:33 jim Exp $
 #
 
 PORTNAME=		gaim
@@ -30,6 +30,7 @@ MAN1=			gaim.1
 
 .if defined(HAVE_GNOME)
 USE_GNOME=		yes
+RUN_DEPENDS=		ispell:${PORTSDIR}/texproc/ispell
 CONFIGURE_ARGS+=	--enable-panel
 .else
 CONFIGURE_ARGS+=	--disable-gnome
