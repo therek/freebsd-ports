@@ -2,7 +2,7 @@
 # Date created:				20 Apr 2000
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/sendmail/Makefile,v 1.24 2001/10/02 05:47:54 dinoex Exp $
+# $FreeBSD: ports/mail/sendmail/Makefile,v 1.25 2001/10/07 06:40:39 dinoex Exp $
 #
 
 PORTNAME=	sendmail
@@ -95,8 +95,8 @@ post-build:
 pre-install:
 	@${CAT} ${PKGDIR}/pkg-plist >${PLIST}
 	@${CAT} ${FILESDIR}/pkg-milter >>${PLIST}
-	if ! pw groupshow smmsp; then pw groupadd smmsp -g 501; fi
-	if ! pw usershow smmsp; then pw useradd smmsp -g smmsp -u 501 \
+	if ! pw groupshow smmsp; then pw groupadd smmsp -g 90; fi
+	if ! pw usershow smmsp; then pw useradd smmsp -g smmsp -u 90 \
 		-h - -d /nonexistent -s /nonexistent -c "Sendmail Queue"; fi
 .if !defined(NOPORTDOCS)
 	@cd ${WRKSRC} && find cf -type f | \
