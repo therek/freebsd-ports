@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20041222:
+  AFFECTS: users of security/clamav, security/clamav-devel
+  AUTHOR: jylefort@brutele.be
+
+  The ClamAV database path has changed from /usr/local/share/clamav to
+  /var/db/clamav. You should update the DatabaseDirectory keyword in
+  /usr/local/etc/clamd.conf and /usr/local/etc/freshclam.conf.
+
 20041221
   AFFECTS: users of security/gpgme03
   AUTHOR: clement@FreeBSD.org
@@ -1264,4 +1272,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.117 2004/12/19 03:41:46 hq Exp $
+$FreeBSD: ports/UPDATING,v 1.118 2004/12/21 09:21:46 clement Exp $

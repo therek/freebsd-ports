@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav/files/clamav-milter.sh,v 1.2 2004/01/30 15:19:22 netchild Exp $
+# $FreeBSD: ports/security/clamav/files/clamav-milter.sh,v 1.3 2004/10/14 09:30:47 eik Exp $
 #
 
 # PROVIDE: clamav-milter
@@ -22,7 +22,7 @@ name=clamav_milter
 rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/clamav-milter
-required_dirs=%%DATADIR%%
+required_dirs=%%DBDIR%%
 required_files=%%PREFIX%%/etc/clamd.conf
 
 start_precmd=start_precmd
