@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.201 2000/12/19 11:26:48 will Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.202 2000/12/19 13:59:59 will Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -50,6 +50,7 @@
     SUBDIR += intel2gas
     SUBDIR += intercal
     SUBDIR += itcl
+    SUBDIR += jgnat
     SUBDIR += lcc
     SUBDIR += libobjects
     SUBDIR += librep
