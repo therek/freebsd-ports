@@ -2,14 +2,12 @@
 # Date created:        01 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/lang/slib/Makefile,v 1.8 2000/04/16 03:00:52 nakai Exp $
+# $FreeBSD: ports/lang/slib/Makefile,v 1.9 2000/10/20 04:48:02 nakai Exp $
 #
 
 PORTNAME=	slib
 PORTVERSION=	2c9
 CATEGORIES=	lang
-#MASTER_SITES=	${MASTER_SITE_GNU}
-#MASTER_SITE_SUBDIR=	scm
 MASTER_SITES=	http://swissnet.ai.mit.edu/ftpdir/scm/
 
 MAINTAINER=	nakai@FreeBSD.org
