@@ -2,16 +2,16 @@
 # Date created:		29 Dec 1998
 # Whom:			Boris Popov <bp@FreeBSD.org>
 #
-# $FreeBSD: ports/net/mars_nwe/Makefile,v 1.9 2000/04/09 18:12:12 cpiazza Exp $
+# $FreeBSD: ports/net/mars_nwe/Makefile,v 1.10 2000/05/16 07:45:35 bp Exp $
 #
 
 PORTNAME=	mars_nwe
-PORTVERSION=	0.99.b18
+PORTVERSION=	0.99.b19
 CATEGORIES=	net
 MASTER_SITES=	http://www.compu-art.de/download/ \
 		ftp://ftp.gwdg.de/pub/linux/misc/ncpfs/mars_nwe/ \
 		ftp://ftp.butya.kz/pub/mars_nwe/
-DISTNAME=	mars_nwe-0.99.pl18
+DISTNAME=	mars_nwe-0.99.pl19
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	bp@FreeBSD.org
