@@ -3,11 +3,11 @@
 # Date created:			May 30, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/netscript/Makefile,v 1.1 2001/05/30 13:25:41 ijliao Exp $
 #
 
 PORTNAME=	netscript
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	net
 MASTER_SITES=	http://www.realhalo.org/netscript/
 EXTRACT_SUFX=	.tgz
