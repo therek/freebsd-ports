@@ -3,7 +3,7 @@
 # Date created:		28 June 1995
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/xspread/Makefile,v 1.7 1999/10/10 23:49:48 steve Exp $
 #
 
 DISTNAME=	xspread3.1.1c
@@ -17,6 +17,8 @@ USE_XLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${X11BASE}/include" \
 		LIBS="-L${X11BASE}/lib"
+
+FETCH_BEFORE_ARGS=	-t
 
 INSTALL_TARGET=	install install.man
 MAN1=		xspread.1 pxspread.1
