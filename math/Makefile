@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.128 2001/06/01 03:47:49 ijliao Exp $
+# $FreeBSD: ports/math/Makefile,v 1.129 2001/06/05 05:22:15 ade Exp $
 #
 
     SUBDIR += GiNaC
@@ -109,6 +109,7 @@
     SUBDIR += topaz
     SUBDIR += umatrix
     SUBDIR += umfpack
+    SUBDIR += vecfem
     SUBDIR += vtk
     SUBDIR += wingz
     SUBDIR += wingz3
