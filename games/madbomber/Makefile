@@ -1,8 +1,8 @@
 # New ports collection makefile for:	madbomber
-# Date created:				13 May 1998
+# Date created:				28 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/madbomber/Makefile,v 1.1 2000/09/28 08:07:19 sobomax Exp $
 #
 
 PORTNAME=	madbomber
