@@ -2,7 +2,7 @@
 # Date created:				11 Oct 1998
 # Whom:					mph
 #
-# $FreeBSD: ports/net/micq/Makefile,v 1.15 2001/01/18 23:45:14 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	micq
@@ -16,8 +16,11 @@ MAINTAINER=	ports@freebsd.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:S/.1/-p1/}/src
 
+MAN1=		micq.1
+
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/micq ${PREFIX}/bin
+		${INSTALL_MAN} ${WRKSRC}/../micq.1 ${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)
 		${MKDIR} ${PREFIX}/share/doc/micq
 		${INSTALL_DATA} ${WRKSRC}/../README ${PREFIX}/share/doc/micq
