@@ -2,7 +2,7 @@
 # Date created:				16 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mozilla-embedded/Makefile,v 1.1 2000/08/17 09:31:54 sobomax Exp $
 #
 
 PORTNAME=	mozilla-embedded
@@ -40,7 +40,7 @@ do-install:
 	${CHMOD} 755 ${PREFIX}/include/mozilla-embedded
 	cd ${WRKSRC}/dist/Embed && ${TAR} -chf - * | \
 		${TAR} -xf - -C ${PREFIX}/lib/mozilla-embedded
-	${INSTALL_DATA} ${WRKSRC}/dist/include/gtkmozembed.h \
-		${PREFIX}/include/mozilla-embedded
+	cd ${WRKSRC}/dist/include && ${TAR} -chf - . | \
+		${TAR} -xf - -C ${PREFIX}/include/mozilla-embedded
 
 .include <bsd.port.mk>
