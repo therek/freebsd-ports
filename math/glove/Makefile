@@ -2,14 +2,14 @@
 # Date created:		14 June 2000
 # Whom:			 Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/math/glove/Makefile,v 1.5 2001/01/16 19:08:34 will Exp $
+# $FreeBSD: ports/math/glove/Makefile,v 1.6 2001/02/22 02:49:45 lioux Exp $
 #
 
 PORTNAME=	glove
 PORTVERSION=	1.0.1
 CATEGORIES=	math
-MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/glove/source/ \
-		ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	lioux
 DISTNAME=	Glove_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org
