@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.9 1999/11/15 06:47:56 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.10 1999/11/17 00:55:54 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -63,10 +63,13 @@ do-extract:
 	@${CP} ${FILESDIR}/strlcpy.c ${WRKSRC}/lib/
 
 post-patch:
-	@${PERL} -pi.orig -e 's:_PATH_STDPATH:_PATH_STDPATH "${PREFIX}/bin":' \
+	@${PERL} -pi.orig -e 's:(_PATH_STDPATH):$$1 "${PREFIX}/bin":g' \
 		${WRKSRC}/sshd.c
 	@${PERL} -pi.orig -e 's:__PREFIX__:${PREFIX}:g' ${WRKSRC}/ssh.h
 	@${PERL} -pi.orig -e 's:__PREFIX__:${PREFIX}:g' ${WRKSRC}/sshd_config
+	@${PERL} -pi.openssl -e \
+		's:^(\s*#\s*include\s+<)ssl(/\w+\.h>\s*)$$:$$1openssl$$2:g' \
+		${WRKSRC}/*.[ch]
 
 pre-install:
 	@cd ${WRKSRC} && ${MAKE} DESTDIR=${PREFIX} distribution
