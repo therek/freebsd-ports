@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.81 2000/06/09 06:36:26 kris Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.82 2000/06/09 08:33:53 kris Exp $
 #
 
 PORTNAME=	XFree86
@@ -58,16 +58,15 @@ pre-fetch:
 .elif defined(USA_RESIDENT)
 .if ${USA_RESIDENT} == NO
 pre-fetch:
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+	${SH} ${PKGDIR}/INSTALL
+.endif
 MASTER_SITES+=	ftp://psych.psy.uq.oz.au/pub/X11R5/ \
 		ftp://ftp.internat.freebsd.org/pub/FreeBSD/X11-Crypto/ \
 		ftp://ftp3.za.freebsd.org/pub/FreeBSD/X11-Crypto/
 EXTRACT_ONLY=	X400src-1.tgz X400src-2.tgz
 DISTFILES+=	Wraphelp.c
 IGNOREFILES=	Wraphelp.c
-.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
-.BEGIN:
-	${SH} ${PKGDIR}/INSTALL
-.endif
 .endif
 .if ${USA_RESIDENT} == YES
 pre-fetch:
