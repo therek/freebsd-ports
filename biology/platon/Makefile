@@ -2,7 +2,7 @@
 # Date created:		1999-04-22
 # Whom:			Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/platon/Makefile,v 1.9 2000/08/01 23:31:19 jedgar Exp $
+# $FreeBSD: ports/biology/platon/Makefile,v 1.10 2001/03/12 14:31:53 kevlo Exp $
 #
 
 PORTNAME=	platon
@@ -17,6 +17,9 @@ MAINTAINER=	rmiya@cc.hirosaki-u.ac.jp
 # the condition that it is not redistributed for a current & fresh copy.
 # There is a charge of US$ 5000 for commercial users.
 RESTRICTED=	"free for academic, US$ 5000 for commercial users"
+
+# This port only has snapshot archive
+IGNOREFILES=	platon.tar.gz
 
 SAMPLES=	azt.dat bucky.spf c476.spf c540.cart3d check.def cubane.spf \
 		cyto.spf ml.pdb s810c.cif s913a.res sucrose.spf
