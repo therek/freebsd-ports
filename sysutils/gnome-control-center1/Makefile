@@ -2,7 +2,7 @@
 # Date created:				29 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gnomecontrolcenter/Makefile,v 1.32 2001/05/04 21:39:42 ade Exp $
+# $FreeBSD: ports/sysutils/gnomecontrolcenter/Makefile,v 1.33 2001/05/11 16:36:33 ade Exp $
 #
 
 PORTNAME=	gnomecontrolcenter
@@ -14,7 +14,7 @@ DISTNAME=	control-center-${PORTVERSION}
 
 MAINTAINER=	gnome@FreeBSD.org
 
-LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
+LIB_DEPENDS=	gnomecanvaspixbuf.1:${PORTSDIR}/graphics/gnomecanvas \
 		gnomevfs.0:${PORTSDIR}/devel/gnomevfs
 
 USE_X_PREFIX=	yes
