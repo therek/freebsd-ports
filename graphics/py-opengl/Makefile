@@ -2,11 +2,11 @@
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.12 2001/02/09 17:41:52 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	opengl
-PORTVERSION=	1.5.6
+PORTVERSION=	1.5.7
 CATEGORIES=	graphics python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	py${PORTNAME}
@@ -26,7 +26,8 @@ USE_PYTHON=	yes
 USE_MESA=	yes
 
 OSMAJOR!=	/usr/bin/uname -r | sed -e 's/\..*//'
-PLIST_SUB+=	OSMAJOR=${OSMAJOR}
+PLIST_SUB+=	OSMAJOR=${OSMAJOR} \
+		PYTHON_SITELIBDIR=${PYTHON_SITELIBDIR:S|^${LOCALBASE}/||g}
 
 SETUP_CMD=	cd ${WRKSRC} && ${PYTHON_CMD} setup.py
 
@@ -38,7 +39,7 @@ do-build:
 	${SETUP_CMD} build
 
 do-install:        
-	${SETUP_CMD} install
+	${SETUP_CMD} install -c -O1 --prefix=${PREFIX}
 
 post-install:
 	${LOCALBASE}/bin/tclsh8.3 ${WRKSRC}/register.tcl
