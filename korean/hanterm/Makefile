@@ -2,14 +2,14 @@
 # Date created:		12 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanterm/Makefile,v 1.18 2000/11/28 12:38:03 cjh Exp $
+# $FreeBSD: ports/korean/hanterm/Makefile,v 1.19 2001/01/20 15:09:23 cjh Exp $
 #
 
 PORTNAME=	hanterm
-PORTVERSION=	3.1.4
-PORTREVISION=	1
+PORTVERSION=	3.1.5
+#PORTREVISION=	1
 CATEGORIES=	korean x11
-MASTER_SITES=	http://quagga.kaist.ac.kr/hanterm/download/
+MASTER_SITES=	http://hanterm.org/download/
 
 MAINTAINER=	cjh@FreeBSD.org
 
@@ -21,7 +21,7 @@ ALL_TARGET=	hanterm
 
 post-install:
 	${MKDIR} ${PREFIX}/share/doc/hanterm
-	${INSTALL_DATA} ${WRKSRC}/hanterm.html ${PREFIX}/share/doc/hanterm/
-	${INSTALL_DATA} ${WRKSRC}/CHANGELOG ${PREFIX}/share/doc/hanterm/
+	${INSTALL_DATA} ${WRKSRC}/doc/hanterm.html ${PREFIX}/share/doc/hanterm/
+	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${PREFIX}/share/doc/hanterm/
 
 .include <bsd.port.mk>
