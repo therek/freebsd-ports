@@ -2,18 +2,20 @@
 # Date created:         2 May 1999
 # Whom:                 oyvindmo@initio.no
 #
-# $FreeBSD: ports/audio/ripit/Makefile,v 1.6 1999/09/06 19:23:01 cpiazza Exp $
+# $FreeBSD: ports/audio/ripit/Makefile,v 1.7 2000/04/08 21:24:19 mharo Exp $
 #
 
 PORTNAME=	ripit
-PORTVERSION=	1.5
+PORTVERSION=	1.6
 CATEGORIES=	audio
 MASTER_SITES=	http://www.initio.no/~oyvindmo/distfiles/
 
 MAINTAINER=	oyvindmo@initio.no
 
 RUN_DEPENDS=	bladeenc:${PORTSDIR}/audio/bladeenc \
+		lame:${PORTSDIR}/audio/lame \
 		tosha:${PORTSDIR}/audio/tosha \
+		cdda2wav:${PORTSDIR}/sysutils/cdrecord \
 		cda:${PORTSDIR}/audio/xmcd
 
 NO_BUILD=	yes
