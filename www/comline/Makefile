@@ -2,7 +2,7 @@
 # Date created:         9 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/comline/Makefile,v 1.11 1999/09/21 10:11:24 asami Exp $
+# $FreeBSD: ports/www/comline/Makefile,v 1.12 2000/04/10 00:04:50 cpiazza Exp $
 #
 
 PORTNAME=	comline
@@ -16,6 +16,8 @@ DISTFILES=      w3c-libwww-4.0D.tar.gz \
 		w3c_4.0D_src.tar.gz
 
 MAINTAINER=     ache@freebsd.org
+
+WRKSRC=		${WRKDIR}/WWW
 
 do-build:
 	cd ${WRKSRC}; ./BUILD comline
