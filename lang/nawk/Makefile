@@ -3,11 +3,11 @@
 # Date created:			  29 April 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/lang/nawk/Makefile,v 1.16 2001/02/21 20:33:18 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nawk
-PORTVERSION=	20001115
+PORTVERSION=	20020101
 CATEGORIES=	lang
 MASTER_SITES=	http://cm.bell-labs.com/who/bwk/
 DISTNAME=	awk
