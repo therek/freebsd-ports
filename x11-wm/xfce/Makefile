@@ -2,7 +2,7 @@
 # Date created:		30 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.45 2001/08/05 19:19:10 nakai Exp $
+# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.46 2001/08/05 19:23:37 nakai Exp $
 #
 
 PORTNAME=	xfce
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.xfce.org/archive/
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	gdk_pibxuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 
 USE_X_PREFIX=	yes
 USE_GTK=	yes
