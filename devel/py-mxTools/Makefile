@@ -2,7 +2,7 @@
 # Date created:		20 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-mxTools/Makefile,v 1.4 2000/04/11 21:30:15 mharo Exp $
+# $FreeBSD: ports/devel/py-mxTools/Makefile,v 1.5 2000/06/16 09:11:03 tg Exp $
 #
 
 PORTNAME=	mxTools
@@ -32,9 +32,13 @@ post-extract:
 do-configure:
 	@(cd ${WRKSRC} && ${CONFIGURE_ENV} ${MAKE} -f Makefile.pre.in boot)
 
-post-install:
+do-install:
 	@${MKDIR} ${TOOLSDIR}
 	${INSTALL_DATA} ${WRKDIR}/NewBuiltins/*.py ${TOOLSDIR}
+	@${MKDIR} ${TOOLSDIR}/mxTools
+.for file in __init__.py mxTools.so xmap.so
+	${INSTALL_DATA} ${WRKDIR}/NewBuiltins/mxTools/${file} ${TOOLSDIR}/mxTools
+.endfor
 	@${PREFIX}/bin/python ${PYTHONSCRIPTDIR}/compileall.py ${TOOLSDIR}
 	@${PREFIX}/bin/python -O ${PYTHONSCRIPTDIR}/compileall.py ${TOOLSDIR}
 	@${MKDIR} ${EXAMPLEDIR}
