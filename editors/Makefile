@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.160 2001/09/17 19:09:46 sada Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.161 2001/09/21 05:45:49 knu Exp $
 #
 
     SUBDIR += AbiWord
@@ -54,6 +54,7 @@
     SUBDIR += glimmer
     SUBDIR += gmanedit
     SUBDIR += gnotepad+
+    SUBDIR += gnuserv-emacs20
     SUBDIR += gxedit
     SUBDIR += hexcurse
     SUBDIR += hexedit
