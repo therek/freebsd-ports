@@ -2,7 +2,7 @@
 # Date created:				2 Nov 2000
 # Whom:					Kazumasa Nishizawa <k_nishizawa@anet.ne.jp>
 #
-# $FreeBSD: ports/www/webstone-ssl/Makefile,v 1.1 2000/12/03 21:01:58 will Exp $
+# $FreeBSD: ports/www/webstone-ssl/Makefile,v 1.2 2001/02/05 15:33:56 olgeni Exp $
 #
 
 PORTNAME=	webstone
@@ -21,6 +21,9 @@ GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/WebStone${PORTVERSION}/src
 ALL_TARGET=	install
 NO_INSTALL_MANPAGES=	yes
+
+CONFIGURE_ENV=	"CFLAGS=${CFLAGS} -I${OPENSSLINC}" \
+		LIBS=-L${OPENSSLLIB}
 
 do-install:
 	@${RMDIR} ${WRKSRC}/../bin/runs
