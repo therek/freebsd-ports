@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.420 2002/08/04 06:01:48 obrien Exp $
+# $FreeBSD$
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1748,7 +1748,7 @@ _MANPAGES+=	${MANN:S%^%${MANNPREFIX}/man/${lang}/mann/%}
 
 .endfor
 
-.if defined(_MLINKS) && make(generate-plist)
+.if defined(_MLINKS)
 _TMLINKS!=	${ECHO_CMD} ${_MLINKS} | ${AWK} '{for (i=2; i<=NF; i+=2) print $$i}'
 .else
 _TMLINKS=
