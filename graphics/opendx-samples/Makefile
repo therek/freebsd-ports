@@ -1,9 +1,9 @@
-# New ports collection makefile for:	opendx
+# New ports collection makefile for:	opendx-samples
 # Version required:	4.0
 # Date created:		06 Oct 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/opendx-samples/Makefile,v 1.1.1.1 1999/10/06 09:05:28 tg Exp $
 #
 
 DISTNAME=	dxsamples-4.0
