@@ -2,7 +2,7 @@
 # Date created:				2000-12-16
 # Whom:					trevor
 #
-# $FreeBSD: ports/x11-wm/swm/Makefile,v 1.2 2001/02/02 15:10:47 trevor Exp $
+# $FreeBSD: ports/x11-wm/swm/Makefile,v 1.3 2001/03/20 21:31:36 trevor Exp $
 #
 
 PORTNAME=	swm
@@ -22,6 +22,7 @@ MAN1=		swm.1 swmbg.1
 PLIST=		${WRKDIR}/pkg-plist
 SCRIPTS=	startswm.default
 USE_GMAKE=	yes
+USE_XPM=	yes
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-src
 
