@@ -2,7 +2,7 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.33 2001/02/27 20:42:17 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.34 2001/02/27 20:53:58 olgeni Exp $
 #
 
 PORTNAME=	webmin
@@ -22,6 +22,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Net/SSL
 NO_BUILD=	yes
 IS_INTERACTIVE=	yes
 USE_PERL5=	yes
+SCRIPTS_ENV+=	WRKDIR="${WRKDIR}"
 
 .if defined(WITH_UPDATES)
 WEBMIN_MODULES=	apache.wbm.gz mysql.wbm.gz status.wbm.gz file.wbm.gz
@@ -68,7 +69,7 @@ do-install:
 	@cd ${PREFIX}/lib/webmin && find . -name "*.orig" -print \
 		| xargs ${RM}
 	@cd ${PREFIX}/lib/webmin && ./setup.sh
-	@${MV} /tmp/webmin.sh ${PREFIX}/etc/rc.d/webmin.sh
+	@${CP} ${WRKDIR}/webmin.sh ${PREFIX}/etc/rc.d/webmin.sh
 	@${CHMOD} 554 ${PREFIX}/etc/rc.d/webmin.sh
 
 post-install:
