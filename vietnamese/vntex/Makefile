@@ -3,7 +3,7 @@
 # Date created:			  Tue Feb 06, 2001
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/vietnamese/vntex/Makefile,v 1.1 2001/02/07 11:34:32 obrien Exp $
 #
 
 PORTNAME=	vntex
@@ -13,6 +13,9 @@ MASTER_SITES=	http://www.fi.muni.cz/~thanh/download/
 DISTNAME=	vntex
 
 MAINTAINER=     obrien@FreeBSD.org
+
+#	actually just need to make sure ${PREFIX}/share/texmf/tex/ exists
+RUN_DEPENDS=	virtex:${PORTSDIR}/print/teTeX
 
 USE_ZIP=	yes
 NO_BUILD=	yes
