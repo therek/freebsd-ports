@@ -3,7 +3,7 @@
 # Date created:				29 June 1998
 # Whom:					scrappy
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/xicq/Makefile,v 1.6 1999/08/30 14:24:33 peter Exp $
 #
 
 DISTNAME=	xicq-071298-snapshot.src
@@ -11,9 +11,9 @@ PKGNAME=	xicq-071298
 CATEGORIES=	net
 MASTER_SITES=	http://www.xtrophy.dk/xicq/
 
-MAINTAINER=	scrappy@freebsd.org
+MAINTAINER=	scrappy@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/xicq-071298
+WRKSRC=		${WRKDIR}/${PKGNAME}
 
 USE_GMAKE=	yes
 MAKE_ENV=	OPT="${CFLAGS}"
