@@ -3,10 +3,10 @@
 # Date created:         30 Jan 1999
 # Whom:                 bmc@WillsCreek.COM
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/tgif/Makefile,v 1.19 1999/08/25 06:15:02 obrien Exp $
 #
 
-DISTNAME=	tgif-4.1.16
+DISTNAME=	tgif-4.1.17
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://bourbon.cs.umd.edu/pub/tgif/ \
 		ftp://ftp.cs.ucla.edu/pub/tgif/
