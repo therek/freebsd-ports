@@ -2,13 +2,13 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vera-fpw/Makefile,v 1.1.1.1 2000/06/23 18:20:00 taoka Exp $
+# $FreeBSD: ports/japanese/vera-fpw/Makefile,v 1.2 2000/06/29 15:13:02 taoka Exp $
 #
 
 PORTNAME=	vera-fpw
 PORTVERSION=	${VERA_VER}.${VERAFPW_VER}
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/freepwing/fpwbooks/vera/ \
+MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/vera/ \
 		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	vera
 DISTNAME=	vera-${VERA_VER}-fpw${VERAFPW_VER}-src

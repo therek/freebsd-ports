@@ -2,13 +2,13 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/wordnet-fpw/Makefile,v 1.2 2000/06/29 15:13:03 taoka Exp $
+# $FreeBSD: ports/japanese/wordnet-fpw/Makefile,v 1.3 2000/07/19 15:38:01 knu Exp $
 #
 
 PORTNAME=	wordnet-fpw
 PORTVERSION=	${WN_VER}.${WNFPW_VER}
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/freepwing/fpwbooks/wordnet/ \
+MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/wordnet/ \
 		ftp://ftp.dict.org/pub/dict/pre/
 DISTNAME=	wordnet-${WN_VER}-fpw${WNFPW_VER}-src
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
