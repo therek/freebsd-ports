@@ -2,7 +2,7 @@
 # Date created:		31 January 2000
 # Whom:			jasone
 #
-# $FreeBSD: ports/devel/cook/Makefile,v 1.5 2000/05/30 23:19:09 jasone Exp $
+# $FreeBSD: ports/devel/cook/Makefile,v 1.6 2000/10/27 21:12:59 jasone Exp $
 #
 
 PORTNAME=	cook
@@ -15,6 +15,7 @@ MASTER_SITE_SUBDIR=	devel/make
 MAINTAINER=	jasone@freebsd.org
 
 BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
