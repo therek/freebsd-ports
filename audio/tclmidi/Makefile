@@ -2,7 +2,7 @@
 # Date created:         14 May 1999
 # Whom:                 shanee@augusta.de
 #
-# $FreeBSD: ports/audio/tclmidi/Makefile,v 1.3 1999/11/28 18:32:00 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tclmidi
@@ -27,7 +27,13 @@ MANN=		midiconf.n midievnt.n midifree.n midiget.n midigrep.n \
 		midiwrit.n midivers.n midimove.n midicopy.n mididel.n \
 		miditrck.n mididev.n miditime.n midifeat.n
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 500035
+BROKEN=		"Does not compile on 5.0"
+.endif
+
 post-install:
 	@${CAT} ${PKGMESSAGE} | ${SED} s#/usr/local#${PREFIX}#g
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
