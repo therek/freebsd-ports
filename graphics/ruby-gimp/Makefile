@@ -2,7 +2,7 @@
 # Date created:		28 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-gimp/Makefile,v 1.1 2001/02/28 17:03:39 knu Exp $
+# $FreeBSD: ports/graphics/ruby-gimp/Makefile,v 1.2 2001/03/17 21:05:35 knu Exp $
 #
 
 PORTNAME=	gimp
@@ -16,7 +16,7 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 BUILD_DEPENDS=	gimptool:${.CURDIR}/../gimp1
-LIB_DEPENDS=	gimp.1:${.CURDIR}/../gimp1
+LIB_DEPENDS=	gimp.2:${.CURDIR}/../gimp1
 RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/gtk.so:${PORTSDIR}/x11-toolkits/ruby-gtk
 
 USE_RUBY=	yes
