@@ -3,7 +3,7 @@
 # Date created:				24 September 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/lmmon/Makefile,v 1.1.1.1 1999/09/27 17:18:47 cpiazza Exp $
 #
 
 DISTNAME=	lmmon-0.50
@@ -18,7 +18,6 @@ MANCOMPRESSED=	yes
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 400000
-pre-fetch:
 BROKEN="This port uses the intpm controller which is only available in FreeBSD 4.0+"
 .endif
 
