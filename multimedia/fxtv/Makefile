@@ -3,7 +3,7 @@
 # Date created:		Thu Nov  4 19:54:04 EST 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.22 1999/10/27 09:42:37 roger Exp $
+# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.23 1999/11/05 12:30:12 roger Exp $
 #
 
 DISTNAME=	fxtv-1.02
@@ -34,6 +34,5 @@ MAN1=		fxtv.1
 
 pre-install:
 	${CP} ${WRKSRC}/fxtv.1 ${WRKSRC}/fxtv.man
-
 
 .include <bsd.port.mk>
