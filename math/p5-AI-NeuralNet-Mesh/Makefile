@@ -2,7 +2,7 @@
 # Date created:				15 Nov 2000
 # Whom:					will
 #
-# $FreeBSD: ports/math/p5-AI-NeuralNet-Mesh/Makefile,v 1.2 2001/01/01 11:06:07 will Exp $
+# $FreeBSD: ports/math/p5-AI-NeuralNet-Mesh/Makefile,v 1.3 2001/03/01 06:36:48 vanilla Exp $
 #
 
 PORTNAME=	AI-NeuralNet-Mesh
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
+USE_ZIP=	yes
 NO_WRKSUBDIR=	yes
 PERL_CONFIGURE=	yes
 
