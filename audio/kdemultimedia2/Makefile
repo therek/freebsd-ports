@@ -2,7 +2,7 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.51 2001/03/24 22:15:55 will Exp $
+# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.52 2001/04/03 08:13:54 will Exp $
 #
 
 PORTNAME=	kdemultimedia
@@ -22,6 +22,7 @@ USE_AUTOCONF=	yes
 CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-qt-libraries=${X11BASE}/lib
 USE_GMAKE=	yes
+MAKE_ENV=	${CONFIGURE_ENV}
 
 pre-configure:
 	${PERL} -pi -e "s@all_includes=\"@all_includes=\"-I/usr/include @g" ${WRKSRC}/acinclude.m4 ${WRKSRC}/aclocal.m4
