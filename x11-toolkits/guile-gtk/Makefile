@@ -2,20 +2,19 @@
 # Date created:        1 January 2000
 # Whom:                Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.6 2000/06/16 10:38:23 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.7 2000/06/16 21:52:32 asami Exp $
 #
 
 PORTNAME=	guile-gtk
-PORTVERSION= 	0.18
+PORTVERSION= 	0.19
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	${MASTER_SITE_GNOME}
+MASTER_SITES=	http://www.ping.de/sites/zagadka/guile-gtk/download/
 MASTER_SITE_SUBDIR=	unstable/sources/gnome-guile
-DISTNAME=	gnome-guile-0.10
 
-MAINTAINER=	mab@red-bean.com
+MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		guile.6:${PORTSDIR}/lang/guile
+		guile.9:${PORTSDIR}/lang/guile
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
@@ -27,7 +26,5 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
-
-WRKSRC=		${WRKDIR}/${DISTNAME}/guile-gtk
 
 .include <bsd.port.mk>
