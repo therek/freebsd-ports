@@ -2,7 +2,7 @@
 # Date created:				31 May 2000
 # Whom:					rmiya
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/chemeq/Makefile,v 1.1 2000/07/10 03:14:14 steve Exp $
 
 PORTNAME=	chemeq
 PORTVERSION=	1.10
@@ -20,7 +20,7 @@ MAN1=		chemeq.1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/chemeq ${PREFIX}/bin
-	${INSTALL_MAN}	${WRKSRC}/chemeq.1 ${PREFIX}/man/man1
+	${INSTALL_MAN}	${WRKSRC}/chemeq.1 ${MAN1PREFIX}/man/man1
 
 post-install:
 .if !defined(NOPORTDOCS)
