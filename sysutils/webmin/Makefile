@@ -2,7 +2,7 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.35 2001/02/27 21:48:17 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.36 2001/02/27 22:10:32 olgeni Exp $
 #
 
 PORTNAME=	webmin
@@ -61,6 +61,11 @@ post-patch:
 		-e "s@^stop_cmd=.*@stop_cmd=${LOCALBASE}/etc/rc.d/pgsql.sh stop@" \
 		${WRKSRC}/postgresql/config.sed > ${WRKSRC}/postgresql/config
 	${RM} ${WRKSRC}/postgresql/config.sed
+
+	${CP} ${WRKSRC}/dhcpd/config-freebsd ${WRKSRC}/dhcpd/config-freebsd.sed
+	${SED}	-e "s@^dhcpd_conf=.*@dhcpd_conf=${LOCALBASE}/etc/dhcpd.conf@" \
+		${WRKSRC}/dhcpd/config-freebsd.sed > ${WRKSRC}/dhcpd/config-freebsd
+	${RM} ${WRKSRC}/dhcpd/config-freebsd.sed
 
 do-install:
 	@${MKDIR} ${PREFIX}/lib/webmin
