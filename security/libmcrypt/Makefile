@@ -2,24 +2,25 @@
 # Date created:		Mon Jun 28 18:02:04 PDT 1999
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.16 2000/11/07 14:17:46 nsayer Exp $
+# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.17 2001/01/01 12:26:47 kevlo Exp $
 #
 
 PORTNAME=	libmcrypt
-PORTVERSION=	2.2.7
+PORTVERSION=	2.4.9
 CATEGORIES=	security
-MASTER_SITES=	ftp://mcrypt.hellug.gr/pub/mcrypt/libmcrypt/ \
-		ftp://argeas.cs-net.gr/pub/unix/mcrypt/old/ \
-		ftp://ftp.internat.freebsd.org/pub/FreeBSD/distfiles/
+MASTER_SITES=	ftp://mcrypt.hellug.gr/pub/mcrypt/libmcrypt/
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ports@FreeBSD.org
 
-INSTALLS_SHLIB=	yes
-USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--disable-posix-threads
-
-MAN3=		mcrypt.3
+LIB_DEPENDS=	ltdl.1:${PORTSDIR}/devel/libtool
 
 RESTRICTED=	"yes - cryptography"
+
+USE_LIBTOOL=	yes
+INSTALLS_SHLIB=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
+
+MAN3=		mcrypt.3
 
 .include <bsd.port.mk>
