@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/gettext/pkg-plist,v 1.31 2004/12/21 01:00:29 marcus Exp $
+@comment $FreeBSD: ports/devel/gettext/pkg-plist,v 1.32 2004/12/24 08:38:44 marcus Exp $
 bin/autopoint
 bin/envsubst
 bin/gettext
@@ -23,6 +23,7 @@ bin/xgettext
 include/autosprintf.h
 include/gettext-po.h
 include/libintl.h
+@exec /bin/mkdir -p %D/lib/gettext
 lib/libasprintf.a
 lib/libasprintf.so
 lib/libasprintf.so.0
