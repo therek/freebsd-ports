@@ -1,8 +1,8 @@
 # New ports collection makefile for:	fconv
 # Date created:		21 April 1999
-# Whom:			Chris Costello <chris@calldei.com>
+# Whom:			Chris Costello <chris@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/fconv/Makefile,v 1.6 2000/02/08 09:25:58 peter Exp $
+# $FreeBSD: ports/converters/fconv/Makefile,v 1.7 2000/04/08 23:24:30 mharo Exp $
 #
 
 PORTNAME=	fconv
