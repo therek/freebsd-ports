@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/chinese/mutt/Makefile,v 1.6 2001/05/22 18:19:37 sobomax Exp $
+# $FreeBSD: ports/chinese/mutt/Makefile,v 1.7 2001/07/29 15:28:41 clive Exp $
 #
 
 CATEGORIES=	chinese
@@ -12,7 +12,8 @@ MASTERDIR=	${.CURDIR}/../../mail/mutt-devel
 
 MAINTAINER=	ycheng@sinica.edu.tw
 
-PATCH_SITES=	http://www.cirx.org/~clive/dist/mutt13/
+PATCH_SITES=	http://www.cirx.org/~clive/dist/mutt13/ \
+		ftp://freebsd.sinica.edu.tw/pub/clive/mutt13/
 PATCHFILES=	${PKGNAMEPREFIX}mutt-${PORTVERSION}.diff.gz
 PATCH_DIST_ARGS=	-d ${WRKDIR} --quiet
 
