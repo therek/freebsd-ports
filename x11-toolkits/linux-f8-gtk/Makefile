@@ -4,7 +4,7 @@
 # Based on:		emulators/linux_base by marcel@FreeBSD.org
 #			& graphics/xmovie by sanpei@sanpei.org
 #
-# $FreeBSD: ports/x11-toolkits/linux-gtk/Makefile,v 1.6 2001/03/07 21:02:44 sf Exp $
+# $FreeBSD: ports/x11-toolkits/linux-gtk/Makefile,v 1.7 2001/03/07 22:12:22 sf Exp $
 #
 
 PORTNAME?=	gtk
@@ -15,7 +15,7 @@ MASTER_SITES=	${RPM_MIRRORS:S/__DIR__/${STDDIR}/g}
 PKGNAMEPREFIX=	linux-
 DISTFILES=	${RPM_SET}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER?=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	rpm:${PORTSDIR}/misc/rpm
 USE_LINUX_PREFIX=	yes
