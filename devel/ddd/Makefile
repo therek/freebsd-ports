@@ -4,10 +4,10 @@
 # Date created:			  Tue Jan 28, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/devel/ddd/Makefile,v 1.24 2000/02/17 05:45:55 obrien Exp $
+# $FreeBSD: ports/devel/ddd/Makefile,v 1.25 2000/02/17 05:46:50 obrien Exp $
 #
 
-DISTNAME=	ddd-3.2
+DISTNAME=	ddd-3.2.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR= ddd
