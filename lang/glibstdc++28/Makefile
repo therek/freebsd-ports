@@ -3,7 +3,7 @@
 # Date created:				03 Mar 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/glibstdc++28/Makefile,v 1.26 2001/01/16 17:31:11 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glibstdc++
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	libstdc++
 DISTNAME=	libstdc++-2.8.1.1
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	gcc28:${PORTSDIR}/lang/gcc28 \
 		g++28:${PORTSDIR}/lang/gcc28
