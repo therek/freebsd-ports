@@ -2,7 +2,7 @@
 # Date created:				29 August 1998
 # Whom:                			Dima Sivachenko <demon@gpad.ac.ru>
 #
-# $FreeBSD: ports/textproc/man2html/Makefile,v 1.7 2001/02/05 16:34:52 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	man2html
@@ -29,8 +29,8 @@ do-install:
 	${PERL5} ${WRKSRC}/install.me -batch -binpath ${PREFIX}/bin \
 	-manpath ${PREFIX}/man -libpath ${PREFIX}/lib \
 	-perlpath ${PERL5}
-	if [ -f ${CGIDIR} ] ; then \
-		${INSTALL_PROGRAM} ${WRKSRC}/man.cgi ${CGIDIR} ; \
+	if [ -d ${CGIDIR} ] ; then \
+		${INSTALL_SCRIPT} ${WRKSRC}/man.cgi ${CGIDIR} ; \
 	fi
 
 .include <bsd.port.mk>
