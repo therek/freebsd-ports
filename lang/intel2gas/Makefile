@@ -2,13 +2,14 @@
 # Date created:		12 May 1999
 # Whom:			G. Adam Stanislav
 #
-# $FreeBSD: ports/lang/intel2gas/Makefile,v 1.3 1999/08/28 01:57:30 mharo Exp $
+# $FreeBSD: ports/lang/intel2gas/Makefile,v 1.4 2000/04/12 06:19:00 obrien Exp $
 #
 
 PORTNAME=	intel2gas
 PORTVERSION=	1.2
 CATEGORIES=	lang
-MASTER_SITES=	http://hermes.terminal.at/intel2gas/
+MASTER_SITES=	http://hermes.terminal.at/intel2gas/ \
+		ftp://ftp.scene.org/pub/resources/code/libs/ptc/hermes/intel2gas/
 
 MAINTAINER=	adam@whizkidtech.net
 
