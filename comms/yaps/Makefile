@@ -2,7 +2,7 @@
 # Date created:         Di  29 Sep 1998 15:51:27 CEST
 # Whom:                 se
 #
-# $FreeBSD: ports/comms/yaps/Makefile,v 1.6 1999/08/31 06:40:59 mharo Exp $
+# $FreeBSD: ports/comms/yaps/Makefile,v 1.7 2000/04/08 23:22:43 mharo Exp $
 #
 
 PORTNAME=	yaps
@@ -18,10 +18,12 @@ USE_GMAKE=	true
 MAN1=		yaps.1
 
 post-install:
-	${MKDIR} ${PREFIX}/share/doc/yaps; \
-	${INSTALL_DATA} ${WRKSRC}/yaps.rc ${PREFIX}/etc/yaps.rc.sample; \
-	${INSTALL_DATA} ${WRKSRC}/yaps.doc ${PREFIX}/share/doc/yaps; \
-	${INSTALL_DATA} ${WRKSRC}/yaps.html ${PREFIX}/share/doc/yaps; \
-	${INSTALL_MAN} ${WRKSRC}/yaps.1 ${PREFIX}/man/man1;
+	${INSTALL_DATA} ${WRKSRC}/yaps.rc ${PREFIX}/etc/yaps.rc.sample
+	${INSTALL_MAN} ${WRKSRC}/yaps.1 ${PREFIX}/man/man1
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/yaps
+	${INSTALL_DATA} ${WRKSRC}/yaps.doc ${PREFIX}/share/doc/yaps
+	${INSTALL_DATA} ${WRKSRC}/yaps.html ${PREFIX}/share/doc/yaps
+.endif
 
 .include <bsd.port.mk>
