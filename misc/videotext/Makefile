@@ -2,7 +2,7 @@
 # Date created:		Tue June 8 15:11:00 BST 1999
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/misc/videotext/Makefile,v 1.6 2000/02/18 02:10:26 ade Exp $
+# $FreeBSD: ports/misc/videotext/Makefile,v 1.7 2000/04/14 08:46:59 asami Exp $
 #
 
 PORTNAME=	videotext
@@ -17,7 +17,7 @@ LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-MAN1=		videotext.1 tunerctl.1
+MAN1=		videotext.1 tunerctl.1 vtxget.1
 
 .include <bsd.port.pre.mk>
 
