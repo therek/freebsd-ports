@@ -2,7 +2,7 @@
 # Date created:         25 September 1996
 # Whom:                 igor@zynaps.ru
 #
-# $FreeBSD: ports/net/trafshow/Makefile,v 1.13 2000/04/09 18:13:51 cpiazza Exp $
+# $FreeBSD: ports/net/trafshow/Makefile,v 1.14 2000/06/28 12:53:15 alex Exp $
 #
 
 PORTNAME=	trafshow
@@ -31,6 +31,7 @@ post-patch:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/trafshow ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/trafshow.1 ${PREFIX}/man/man1
-	${INSTALL_DATA} ${WRKSRC}/.trafshow ${PREFIX}/etc/trafshow
+	${INSTALL_DATA} ${WRKSRC}/.trafshow ${PREFIX}/etc/trafshow.dist
+	${CP} ${PREFIX}/etc/trafshow.dist ${PREFIX}/etc/trafshow
 
 .include <bsd.port.post.mk>
