@@ -2,11 +2,11 @@
 # Date created:				16 February 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/asc/Makefile,v 1.1 2001/02/17 21:51:30 sobomax Exp $
 #
 
 PORTNAME=	asc
-PORTVERSION=	1.3.8
+PORTVERSION=	1.3.12
 CATEGORIES=	games
 MASTER_SITES=	ftp://asc-hq.sourceforge.net/pub/asc-hq/develop/ \
 		ftp://asc-hq.sourceforge.net/pub/asc-hq/ \

@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/games/asc/files/patch-source::unix::fileio.h,v 1.1 2001/02/17 21:51:31 sobomax Exp $
 
 --- source/unix/fileio.h	2001/02/17 17:39:14	1.1
 +++ source/unix/fileio.h	2001/02/17 17:39:23
