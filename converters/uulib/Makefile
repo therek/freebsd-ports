@@ -2,7 +2,7 @@
 # Date Created:		04 Aug 1996
 # Whom:			Tim Vanderhoek <ac199@freenet.hamilton.on.ca>
 #
-# $FreeBSD: ports/converters/uulib/Makefile,v 1.24 2000/06/16 08:19:39 sobomax Exp $
+# $FreeBSD: ports/converters/uulib/Makefile,v 1.25 2000/06/16 21:50:27 asami Exp $
 #
 
 PORTNAME=	uulib
@@ -40,13 +40,14 @@ do-install:
 	@/usr/bin/ranlib ${PREFIX}/lib/libuu.a
 	${INSTALL_DATA} ${WRKSRC}/uulib/uudeview.h ${PREFIX}/include
 	${INSTALL_MAN} ${FILESDIR}/uulib.3 ${PREFIX}/man/man3
-	perl -pi -e '$$a = '\''${PREFIX}/'\''; $$a =~ s/([^\w\/])/\\$$1/g; s/FUNKYTOKENHERE/$$a/' ${PREFIX}/man/man3/uulib.3
+	${PERL} -pi -e '$$a = '\''${PREFIX}/'\''; $$a =~ s/([^\w\/])/\\$$1/g; \
+		s/FUNKYTOKENHERE/$$a/' ${PREFIX}/man/man3/uulib.3
 .if !defined(NOPORTDOCS)
 	@${ECHO_MSG} "===>   Installing documentation for ${PKGNAME}"
 	@${MKDIR} ${PREFIX}/share/doc/uulib
-	@${INSTALL_MAN} ${FILESDIR}/porting.notes ${PREFIX}/share/doc/uulib
+	@${INSTALL_DATA} ${FILESDIR}/porting.notes ${DOCSDIR}
 .for docfile in ${DOCFILES}
-	@${INSTALL_MAN} ${WRKSRC}/${docfile} ${PREFIX}/share/doc/uulib
+	@${INSTALL_DATA} ${WRKSRC}/${docfile} ${DOCSDIR}
 .endfor
 .endif
 
