@@ -2,14 +2,14 @@
 # Date created:		03 July 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.13 2001/04/02 08:30:53 mharo Exp $
+# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.14 2001/06/08 11:55:07 tg Exp $
 #
 
 PORTNAME=	pstoedit
 PORTVERSION=	3.21
 CATEGORIES=	graphics print
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Network/1958/pstoedit/
-DISTNAME=	${PORTNAME}_3_21
+DISTNAME=	${PORTNAME}_${PORTVERSION:S/./_/}
 
 MAINTAINER=	jseger@FreeBSD.org
 
