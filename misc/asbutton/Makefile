@@ -2,14 +2,13 @@
 # Date created:			10 May 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/asbutton/Makefile,v 1.7 2000/06/23 13:14:36 sobomax Exp $
+# $FreeBSD: ports/misc/asbutton/Makefile,v 1.8 2000/08/03 09:25:45 asami Exp $
 #
 
 PORTNAME=	asbutton
 PORTVERSION=	0.3
 CATEGORIES=	misc windowmaker afterstep
-MASTER_SITES=	${MASTER_SITE_AFTERSTEP}
-MASTER_SITE_SUBDIR=	apps/asbutton
+MASTER_SITES=	http://www.tigr.net/afterstep/download/asbutton/
 
 MAINTAINER=	jim@FreeBSD.org
 
