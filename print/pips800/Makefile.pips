@@ -2,7 +2,7 @@
 # Date created:		26 Aug 2004
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.2 2004/08/26 04:11:15 ume Exp $
+# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.3 2004/08/26 19:04:33 ume Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
@@ -282,7 +282,7 @@ post-patch:
 .endif
 .if ${PORTVERSION} == 2.6.2 || ${DIST_TYPE} == lpr
 	${REINPLACE_CMD} -e 's,@CUPS_LIBS@,@CUPS_LIBS@ -lintl,' \
-		-e 's,^INCLUDES =  @GTK_CFLAGS@ $$,INCLUDES =  @GTK_CFLAGS@ $(INCLTDL),' \
+		-e 's,^INCLUDES =  @GTK_CFLAGS@ $$,INCLUDES =  @GTK_CFLAGS@ $$(INCLTDL),' \
 		${WRKSRC}/src/Makefile.in
 .endif
 .endif
