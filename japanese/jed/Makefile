@@ -2,7 +2,7 @@
 # Date created:		2 Feb 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/jed/Makefile,v 1.12 2001/02/10 13:19:54 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jed
@@ -16,7 +16,7 @@ DISTNAME=	${PORTNAME}-B${VERSION:R}-${VERSION:E}__J${JP_VERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${PORTNAME}-extralibs-${VERSION}.tar.gz
 
-MAINTAINER=	knu@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	slang.2:${PORTSDIR}/japanese/libslang \
 		${LIBDEP_CANNA}
