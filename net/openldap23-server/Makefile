@@ -2,7 +2,7 @@
 # Date created:		20 Sep 1998
 # Whom:			Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap2/Makefile,v 1.39 2001/08/01 11:56:19 knu Exp $
+# $FreeBSD: ports/net/openldap2/Makefile,v 1.40 2001/09/09 08:26:36 olgeni Exp $
 #
 
 PORTNAME=	openldap
@@ -48,6 +48,11 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 .if defined(WITH_SASL)
 LIB_DEPENDS+=	sasl.8:${PORTSDIR}/security/cyrus-sasl
 CPPFLAGS+=	-I${LOCALBASE}/include/sasl
+.endif
+
+.if defined(WITH_ODBC)
+LIB_DEPENDS+=	iodbc.2:${PORTSDIR}/databases/libiodbc
+CONFIGURE_ARGS+=--enable-sql
 .endif
 
 CONFIGURE_ENV=	CPPFLAGS="${CPPFLAGS}" \
