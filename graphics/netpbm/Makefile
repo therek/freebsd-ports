@@ -3,7 +3,7 @@
 # Date created:		?
 # Whom:			jmz (original)
 #
-# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.20 1999/09/07 10:45:26 steve Exp $
+# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.21 1999/11/01 01:14:17 steve Exp $
 #
 
 DISTNAME=	netpbm-8.0
@@ -13,8 +13,7 @@ MASTER_SITE_SUBDIR=	apps/graphics/convert
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
-		jpeg.9:${PORTSDIR}/graphics/jpeg
+LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff
 
 WRKSRC=		${WRKDIR}/netpbm
 USE_IMAKE=	yes
