@@ -2,7 +2,7 @@
 # Date created:				Sat 3 June 2000
 # Whom:					will
 #
-# $FreeBSD: ports/audio/gdcd/Makefile,v 1.6 2000/10/13 09:27:45 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gdcd
@@ -17,7 +17,7 @@ LIB_DEPENDS=	cdaudio.1:${PORTSDIR}/audio/libcdaudio
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
 USE_AUTOMAKE=	yes
-AUTOMAKE=	automake -a -i
+AUTOMAKE_ARGS=	-a -i
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
