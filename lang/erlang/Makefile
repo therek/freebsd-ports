@@ -3,7 +3,7 @@
 # Date created:		11 Dec 1998
 # Whom:			ruslan@shevchenko.kiev.ua
 #
-# $FreeBSD: ports/lang/erlang/Makefile,v 1.6 1999/08/25 06:34:29 obrien Exp $
+# $FreeBSD: ports/lang/erlang/Makefile,v 1.7 1999/12/31 20:34:28 steve Exp $
 #
 
 DISTNAME=	otp_src_R6B-0
@@ -32,6 +32,7 @@ EXTRACT_ONLY=	otp_src_R6B-0.tar.gz
 ERLANG_MAN=     otp_src_doc_man_R6B-0.tar.gz
 ERLANG_DOCS=	otp_src_doc_html_R6B-0.tar.gz
 
+USE_XLIB=	yes
 USE_GMAKE=	yes
 USE_PERL5=	yes
 GNU_CONFIGURE=	yes
