@@ -2,7 +2,7 @@
 # Date created:					December 6th 2000
 # Whom:						des
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/linux-opera/Makefile,v 1.2 2000/12/06 16:57:04 des Exp $
 #
 
 PORTNAME=	linux-opera
@@ -13,7 +13,8 @@ DISTNAME=	opera-4.0-b3-static.i386
 
 MAINTAINER=	des@FreeBSD.org
 
-RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base
+RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base \
+		/compat/linux/usr/lib/libjpeg.so.62:${PORTSDIR}/graphics/linux-jpeg
 
 NO_BUILD=	yes
 
