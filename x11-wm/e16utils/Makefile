@@ -2,7 +2,7 @@
 # Date Created:				17 Oct 2000
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/x11-wm/e16utils/Makefile,v 1.1 2000/12/11 22:45:59 clive Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	e16utils
@@ -33,7 +33,7 @@ do-build:
 do-install:
 .for i in ${SUB_STUBS}
 	@cd ${WRKDIR}/${i} ; \
-	${INSTALL_PROGRAM} `${ECHO} '${i}' | ${SED} -e 's,-\(.*\),,'` \
+	${INSTALL_PROGRAM} `${ECHO_CMD} '${i}' | ${SED} -e 's,-\(.*\),,'` \
 	${PREFIX}/bin
 .endfor
 

@@ -2,7 +2,7 @@
 # Date created:				2000-11-04
 # Whom:					trevor
 #
-# $FreeBSD: ports/x11-wm/evilwm/Makefile,v 1.4 2000/12/25 03:02:32 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		evilwm
@@ -27,12 +27,12 @@ do-build:
 		-L${X11BASE}/lib -o evilwm *.c -lX11
 
 pre-install:
-	${ECHO} bin/evilwm > ${PLIST}
+	${ECHO_CMD} bin/evilwm > ${PLIST}
 .if !defined(NOPORTDOCS)
 .for i in ${DOCS}
-	${ECHO} ${DOCDIR}/${i} >> ${PLIST}
+	${ECHO_CMD} ${DOCDIR}/${i} >> ${PLIST}
 .endfor
-	${ECHO} @dirrm ${DOCDIR} >> ${PLIST}
+	${ECHO_CMD} @dirrm ${DOCDIR} >> ${PLIST}
 .endif
 
 do-install:

@@ -2,7 +2,7 @@
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.33 2000/10/08 07:21:02 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME?=	xtt-common
@@ -162,7 +162,7 @@ pre-configure:
 	    ${SETENV} ${SCRIPT_ENV} DISTDIR=${DISTDIR} WRKDIR=${WRKDIR} \
 		FILESDIR=${FILESDIR} ${MAKE}) ; \
 	   ${CAT} ${HOSTDEFLOCAL} ${HOSTDEFSRV} > ${HOSTDEFDST} ; \
-	   ${ECHO} "#include <${LOCALFILE}>" >> ${HOSTDEFORG} )
+	   ${ECHO_CMD} "#include <${LOCALFILE}>" >> ${HOSTDEFORG} )
 
 .if ${SERVER} == common
 do-install:

@@ -2,7 +2,7 @@
 # Date created:        20 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-clocks/asclock/Makefile,v 1.12 2000/08/03 09:26:50 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asclock
@@ -21,7 +21,7 @@ MAN1=		asclock.1
 
 pre-configure:
 	(cd ${WRKSRC}; \
-	${ECHO} ${ASCLOCK_LANG} | ${WRKSRC}/configure > /dev/null)
+	${ECHO_CMD} ${ASCLOCK_LANG} | ${WRKSRC}/configure > /dev/null)
 	@${ECHO_MSG} "*****************  NOTE  *****************"
 	@${ECHO_MSG} "*                                        *"
 	@${ECHO_MSG} "*  You can choose languages for asclock. *"

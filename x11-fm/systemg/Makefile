@@ -2,7 +2,7 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-fm/systemg/Makefile,v 1.5 2001/02/22 02:49:46 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	systemg
@@ -70,7 +70,7 @@ post-extract:
 .endfor
 
 post-patch:
-	@${ECHO} "SEARCHDIRS += ${PORTINCLUDES}" >> \
+	@${ECHO_CMD} "SEARCHDIRS += ${PORTINCLUDES}" >> \
 		${WRKSRC}/${EXTRALIBFILES_MAKE_WRKSRC}/jx_constants
 
 pre-build:

@@ -2,7 +2,7 @@
 # Date Created:				14 November 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/xenostep/Makefile,v 1.2 2000/12/04 11:34:30 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xenostep
@@ -26,7 +26,7 @@ DIRS=		"XenoStep Classic" "XenoStep Classic Small" "XenoStep HeliX" \
 
 post-extract:
 	for dir in ${DIRS}; do \
-		destdir=`${ECHO} $${dir} | ${SED} 's| |_|g'`; \
+		destdir=`${ECHO_CMD} $${dir} | ${SED} 's| |_|g'`; \
 		${CP} -R "${WRKSRC}/$${dir}" "${WRKSRC}/$${destdir}"; \
 	done
 

@@ -4,7 +4,7 @@
 #
 # based on the NetBSD package
 # $NetBSD: Makefile,v 1.2 2000/02/02 08:07:07 itohy Exp $
-# $FreeBSD: ports/x11-wm/uwm/Makefile,v 1.3 2001/01/09 15:37:15 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	uwm
@@ -24,9 +24,9 @@ post-patch:
 	${PERL} -pi -e 's:/usr/lib/X11:${PREFIX}/lib/X11:g' ${WRKSRC}/uwm.man
 
 pre-install:
-	${ECHO} bin/uwm > ${PLIST}
-	${ECHO} lib/X11/uwm/system.uwmrc >> ${PLIST}
-	${ECHO} @dirrm lib/X11/uwm >> ${PLIST}
+	${ECHO_CMD} bin/uwm > ${PLIST}
+	${ECHO_CMD} lib/X11/uwm/system.uwmrc >> ${PLIST}
+	${ECHO_CMD} @dirrm lib/X11/uwm >> ${PLIST}
 
 post-install:
 	${MKDIR} ${PREFIX}/lib/X11/uwm

@@ -2,7 +2,7 @@
 # Date created:				2000-12-16
 # Whom:					trevor
 #
-# $FreeBSD: ports/x11-wm/aewm/Makefile,v 1.2 2001/01/07 21:52:31 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aewm
@@ -21,12 +21,12 @@ USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 
 pre-install:
-	${ECHO} bin/aewm > ${PLIST}
+	${ECHO_CMD} bin/aewm > ${PLIST}
 .if !defined(NOPORTDOCS)
 	for i in ${DOCS}; \
-		do ${ECHO} ${DOCDIR}/$${i} >> ${PLIST}; \
+		do ${ECHO_CMD} ${DOCDIR}/$${i} >> ${PLIST}; \
 	done
-	${ECHO} @dirrm ${DOCDIR} >> ${PLIST}
+	${ECHO_CMD} @dirrm ${DOCDIR} >> ${PLIST}
 .endif
 
 do-install:

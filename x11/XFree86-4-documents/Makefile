@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11/XFree86-4-documents/Makefile,v 1.5 2001/03/29 12:04:21 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	documents
@@ -32,11 +32,11 @@ post-extract:
 
 do-configure:
 	(cd ${WRKSRC} ; \
-	 ${ECHO} "#define BuildMiscDocs YES" > host.def ; \
-	 ${ECHO} "#define BuildSpecsDocs YES" >> host.def ; \
-	 ${ECHO} "#define BuildLinuxDocPS NO" >> host.def ; \
-	 ${ECHO} "#define InstallHardcopyDocs YES" >> host.def ; \
-	 ${ECHO} "#define FreeBSDBuildXdoc YES" >> host.def ; \
+	 ${ECHO_CMD} "#define BuildMiscDocs YES" > host.def ; \
+	 ${ECHO_CMD} "#define BuildSpecsDocs YES" >> host.def ; \
+	 ${ECHO_CMD} "#define BuildLinuxDocPS NO" >> host.def ; \
+	 ${ECHO_CMD} "#define InstallHardcopyDocs YES" >> host.def ; \
+	 ${ECHO_CMD} "#define FreeBSDBuildXdoc YES" >> host.def ; \
 	 imake -DUseInstalled ${PROJECTROOT} -I. -I${PREFIX}/lib/X11/config \
 		-DTOPDIR=.. -DCURDIR=.; \
 	 ${MAKE} Makefiles ; \

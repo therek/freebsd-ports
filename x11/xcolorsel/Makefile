@@ -2,7 +2,7 @@
 # Date Created:			11 November 1998
 # Whom:				Wayne Cuddy <wayne@crb-web.com>
 #
-# $FreeBSD: ports/x11/xcolorsel/Makefile,v 1.5 2001/05/01 10:27:59 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcolorsel
@@ -22,7 +22,7 @@ USE_XPM=	yes
 MAN1=		xcolorsel.1
 
 post-patch:
-	${ECHO} "*.file: ${X11BASE}/lib/X11/rgb.txt" >> ${WRKSRC}/Xcolorsel.ad
+	${ECHO_CMD} "*.file: ${X11BASE}/lib/X11/rgb.txt" >> ${WRKSRC}/Xcolorsel.ad
 	${PERL} -pi -e "s|#include <malloc.h>||g; s|/Xaw/|/Xaw3d/|g;" \
 		${WRKSRC}/*.[ch]
 	${PERL} -pi -e "s|app2head|./app2head|g; \

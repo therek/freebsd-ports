@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.34 2000/12/27 20:53:49 markm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Xaw3d
@@ -27,7 +27,7 @@ post-extract:
 .if exists(${X11BASE}/bin/XFree86)
 post-build:
 	${CP} ${PKGDIR}/pkg-plist ${PLIST}
-	${ECHO} "lib/libXaw3d.so.7" >> ${PLIST}
+	${ECHO_CMD} "lib/libXaw3d.so.7" >> ${PLIST}
 .endif
 
 # Workaround a bug in egcs on FreeBSD/Alpha.

@@ -2,7 +2,7 @@
 # Date created:				2000-12-17
 # Whom:					trevor
 #
-# $FreeBSD: ports/x11/buttonbox/Makefile,v 1.2 2001/08/14 09:10:04 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	buttonbox
@@ -27,13 +27,13 @@ do-build:
 		colour.c dispatcher.c main.c
 
 pre-install:
-	${ECHO} bin/buttonbox > ${PLIST}
-	${ECHO} lib/X11/app-defaults/ButtonBox.ad >> ${PLIST}
+	${ECHO_CMD} bin/buttonbox > ${PLIST}
+	${ECHO_CMD} lib/X11/app-defaults/ButtonBox.ad >> ${PLIST}
 .if !defined(NOPORTDOCS)
 	for i in ${DOCS}; \
-		do ${ECHO} ${DOCDIR}/$${i} >> ${PLIST}; \
+		do ${ECHO_CMD} ${DOCDIR}/$${i} >> ${PLIST}; \
 	done
-	${ECHO} @dirrm ${DOCDIR} >> ${PLIST}
+	${ECHO_CMD} @dirrm ${DOCDIR} >> ${PLIST}
 .endif
 
 do-install:

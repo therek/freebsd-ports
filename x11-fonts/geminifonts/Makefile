@@ -2,7 +2,7 @@
 # Date created:				Oct 30, 2000
 # Whom:					mi@aldan.algebra.com
 #
-# $FreeBSD: ports/x11-fonts/geminifonts/Makefile,v 1.1 2000/12/03 20:48:22 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gemini
@@ -36,8 +36,8 @@ post-install:
 # applications look for cronyx-*-koi8-r or koi8-r explicitly.	-mi
 post-build:
 	# Creating aliases for koi8-r encoding and Cronyx foundry:
-	@${ECHO} >> ${WRKSRC}/fonts.alias
-	@${ECHO} "! Automaticly generated aliases for koi8-r encoding:" \
+	@${ECHO_CMD} >> ${WRKSRC}/fonts.alias
+	@${ECHO_CMD} "! Automaticly generated aliases for koi8-r encoding:" \
 		>> ${WRKSRC}/fonts.alias
 	${AWK} '/gemini/ { \
 		name = $$2; \
