@@ -2,7 +2,7 @@
 # Date created:		26 Aug 1997
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vfghostscript5/Makefile,v 1.41 2001/09/13 03:23:07 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vfghostscript
@@ -68,6 +68,9 @@ GS_DRIVERS+=	epag-3.09.tar.gz
 
 # replacement for pdf_sec.ps, that allows you to read encrypted PDF files
 DECRYPT_PDF=	pdf_sec.ps
+
+# Latest version is rather ja-vfghostscript-5.5.x
+NO_LATEST_LINK=yes
 
 post-extract:
 	${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../../graphics/jpeg/work/jpeg-6b ${WRKSRC}/jpeg
