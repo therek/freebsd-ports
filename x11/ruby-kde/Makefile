@@ -2,7 +2,7 @@
 # Date created:		14 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.13 2001/02/27 03:30:02 knu Exp $
+# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.14 2001/03/17 11:47:02 knu Exp $
 #
 
 PORTNAME=	kde
@@ -15,9 +15,9 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	${LOCALBASE}/lib/ruby/site_ruby/${RUBY_VER}/qt.rb:${PORTSDIR}/x11-toolkits/ruby-qt
 
+USE_KDELIBS_VER=	1
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
