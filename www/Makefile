@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.266 2000/10/28 03:24:15 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.267 2000/10/28 05:11:11 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -193,6 +193,7 @@
     SUBDIR += webfs
     SUBDIR += webglimpse
     SUBDIR += weblint
+    SUBDIR += webredirect
     SUBDIR += webstone
     SUBDIR += wml
     SUBDIR += wmnetselect
