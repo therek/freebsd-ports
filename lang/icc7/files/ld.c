@@ -28,7 +28,7 @@
  * Based on a shell-script written by Dan Nelson <dnelson@allantgroup.com>
  * with some modifications by Alexander Leidinger <netchild@FreeBSD.org>.
  *
- * $FreeBSD: ports/lang/icc/files/ld.c,v 1.5 2003/01/11 17:21:41 netchild Exp $
+ * $FreeBSD: ports/lang/icc/files/ld.c,v 1.6 2003/04/26 10:27:29 netchild Exp $
  */
 
 /* Uses code marked: */
@@ -328,7 +328,11 @@ main(int argc, char *argv[], char *envp[])
 
 		/* Switch Linux stuff to FreeBSD counterparts. */
 		if (ARGCMP("/lib/ld-linux.so.2")) {
+#if __FreeBSD_version >= 501105
+			addarg(&al, "/libexec/ld-elf.so.1", 1);
+#else
 			addarg(&al, "/usr/libexec/ld-elf.so.1", 1);
+#endif
 			continue;
 		}
 		if (ARGCMP("-L/usr/lib")) {
