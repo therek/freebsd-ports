@@ -2,7 +2,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/shells/es/Makefile,v 1.10 2000/06/04 04:37:24 hoek Exp $
+# $FreeBSD: ports/shells/es/Makefile,v 1.11 2000/12/08 13:06:26 roam Exp $
 #
 
 PORTNAME=	es
@@ -12,7 +12,7 @@ CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.sys.toronto.edu/pub/es/
 DISTNAME=	es-0.9-beta1
 
-MAINTAINER=	rittle@latour.rsch.comm.mot.com
+MAINTAINER=	ljrittle@acm.org
 
 GNU_CONFIGURE=	yes
 
