@@ -2,11 +2,11 @@
 # Date created:		11-Oct-99
 # Whom:			johnh@isi.edu
 #
-# $FreeBSD: ports/sysutils/lavaps/Makefile,v 1.2 1999/11/28 18:31:20 steve Exp $
+# $FreeBSD: ports/sysutils/lavaps/Makefile,v 1.3 2000/04/09 19:07:53 cpiazza Exp $
 #
 
 PORTNAME=	lavaps
-PORTVERSION=	1.8
+PORTVERSION=	1.10
 CATEGORIES=     sysutils
 MASTER_SITES=   http://www.isi.edu/~johnh/SOFTWARE/LAVAPS/
 
