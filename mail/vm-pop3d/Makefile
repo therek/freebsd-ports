@@ -1,8 +1,8 @@
-# New ports collection makefile for:	gslin
+# New ports collection makefile for:	vm-pop3d
 # Date created:			24 August 2001
 # Whom:				Gea-Suan Lin (gslin@ccca.nctu.edu.tw)
 #
-# $FreeBSD: ports/mail/vm-pop3d/Makefile,v 1.1 2001/08/24 08:51:23 ijliao Exp $
+# $FreeBSD: ports/mail/vm-pop3d/Makefile,v 1.2 2001/08/24 12:47:54 ijliao Exp $
 #
 
 PORTNAME=	vm-pop3d
