@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/Makefile,v 1.154 2001/02/13 13:56:33 sobomax Exp $
 #
     SUBDIR += yawho
 
@@ -72,6 +72,7 @@
     SUBDIR += nut
     SUBDIR += nwclient
     SUBDIR += obliterate
+    SUBDIR += p5-Filesys-DiskSpace
     SUBDIR += p5-Quota
     SUBDIR += p5-Schedule-At
     SUBDIR += p5-Schedule-Cron
