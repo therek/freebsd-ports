@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.152 2001/02/04 22:44:32 sobomax Exp $
+# $FreeBSD$
 #
     SUBDIR += yawho
 
@@ -13,6 +13,7 @@
     SUBDIR += bchunk
     SUBDIR += bkpupsd
     SUBDIR += cd-write
+    SUBDIR += cd9660_unicode
     SUBDIR += cdrecord
     SUBDIR += cfengine
     SUBDIR += checkservice
