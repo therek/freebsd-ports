@@ -2,7 +2,7 @@
 # Date created:         3 Dec 1996
 # Whom:                 paulo@isr.uc.pt
 #
-# $FreeBSD: ports/graphics/povray31/Makefile,v 1.10 2000/07/04 07:13:19 sobomax Exp $
+# $FreeBSD: ports/graphics/povray31/Makefile,v 1.11 2001/03/20 09:54:46 knu Exp $
 #
 
 PORTNAME=	povray
@@ -20,7 +20,7 @@ DISTFILES=	povuni_s.tgz povuni_d.tgz
 MAINTAINER=	olli@fromme.com
 
 #BUILD_DEPENDS=  unzip:${PORTSDIR}/archivers/unzip
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
 DIST_SUBDIR=	povray31
 

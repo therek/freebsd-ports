@@ -2,7 +2,7 @@
 # Date created:		10 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/imlib/Makefile,v 1.76 2001/08/03 07:23:58 sobomax Exp $
 #
 
 PORTNAME=	imlib
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	stable/sources/imlib
 
 MAINTAINER=	gnome@FreeBSD.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		ungif.5:${PORTSDIR}/graphics/libungif
 

@@ -2,7 +2,7 @@
 # Date created:		14 October 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ming/Makefile,v 1.8 2001/04/13 15:08:26 knu Exp $
+# $FreeBSD: ports/graphics/ming/Makefile,v 1.9 2001/07/06 19:57:42 knu Exp $
 #
 
 PORTNAME=	ming
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		ungif.5:${PORTSDIR}/graphics/libungif
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src

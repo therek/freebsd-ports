@@ -2,7 +2,7 @@
 # Date created:				Tue 04 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/graphics/tiff2png/Makefile,v 1.3 2000/07/09 19:43:54 dannyboy Exp $
+# $FreeBSD: ports/graphics/tiff2png/Makefile,v 1.4 2000/11/26 15:35:36 kevlo Exp $
 #
 
 PORTNAME=	tiff2png
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.libpng.org/pub/png/src/ \
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 MAKEFILE=	Makefile.unx
 ALL_TARGET=	tiff2png

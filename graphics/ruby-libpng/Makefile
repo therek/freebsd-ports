@@ -2,7 +2,7 @@
 # Date created:		27 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-libpng/Makefile,v 1.3 2000/09/28 06:33:25 knu Exp $
+# $FreeBSD: ports/graphics/ruby-libpng/Makefile,v 1.4 2000/10/10 08:36:04 knu Exp $
 #
 
 PORTNAME=	libpng
@@ -18,7 +18,7 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes

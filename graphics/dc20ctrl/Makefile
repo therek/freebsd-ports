@@ -2,7 +2,7 @@
 # Date created:		17 Feb 1998
 # Whom:			Ugo Paternostro <paterno@dsi.unifi.it>
 #
-# $FreeBSD: ports/graphics/dc20ctrl/Makefile,v 1.10 2001/01/29 00:44:07 kris Exp $
+# $FreeBSD: ports/graphics/dc20ctrl/Makefile,v 1.11 2001/02/07 20:33:47 kris Exp $
 #
 
 PORTNAME=	dc20ctrl
@@ -15,7 +15,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 MAKE_ARGS=	-DUSE_JPEG -DUSE_TIFF -DUSE_PNG
 

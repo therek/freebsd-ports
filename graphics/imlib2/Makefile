@@ -2,7 +2,7 @@
 # Date created:		16 Oct 2000
 # Whom:			Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/imlib2/Makefile,v 1.73 2001/03/06 17:26:22 sf Exp $
+# $FreeBSD: ports/graphics/imlib2/Makefile,v 1.74 2001/04/30 22:04:54 mharo Exp $
 #
 
 PORTNAME=	imlib2
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	enlightenment
 
 MAINTAINER=	ishmael27@home.com
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		ungif.5:${PORTSDIR}/graphics/libungif \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \

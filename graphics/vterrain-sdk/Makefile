@@ -2,7 +2,7 @@
 # Date created:				27 Apr 2001
 # Whom:					Randall Hopper <aa8vb@nc.rr.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/vterrain-sdk/Makefile,v 1.3 2001/06/11 08:28:45 sobomax Exp $
 #
 
 PORTNAME=	vterrain-sdk
@@ -18,7 +18,7 @@ MAINTAINER=	aa8vb@nc.rr.com
 
 LIB_DEPENDS=	netcdf.1:${PORTSDIR}/math/netcdf \
 		shp.1:${PORTSDIR}/devel/shapelib \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		osg.1:${PORTSDIR}/graphics/osg \
 		projection.1:${PORTSDIR}/misc/projectionlib
 

@@ -2,7 +2,7 @@
 # Date created:		30 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/graphics/xv/Makefile,v 1.48 2001/03/08 17:33:29 shige Exp $
+# $FreeBSD: ports/graphics/xv/Makefile,v 1.49 2001/06/14 15:53:52 shige Exp $
 #
 
 PORTNAME=	xv
@@ -37,7 +37,7 @@ MAINTAINER?=	shige@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 USE_IMAKE=	yes
 .if !defined(NOMAN)

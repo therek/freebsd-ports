@@ -2,7 +2,7 @@
 # Date created:		10 August 2001
 # Whom:			Thomas E. Zander
 #			with lots of help from Vladimir Kushnir
-# $FreeBSD$
+# $FreeBSD: ports/graphics/mplayer/Makefile,v 1.2 2001/08/25 04:51:38 dinoex Exp $
 #
 
 PORTNAME=	mplayer
@@ -29,7 +29,7 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_XLIB=	yes
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 RUN_DEPENDS=	${PREFIX}/share/mplayer/fonts:${PORTSDIR}/graphics/mplayer-fonts
 
 CONFIGURE_ARGS+=--disable-esd

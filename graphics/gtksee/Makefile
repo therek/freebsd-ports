@@ -2,7 +2,7 @@
 # Date created:		Sun Nov 22 12:08:18 CET 1998
 # Whom:			Dirk Froemberg <ibex@physik.TU-Berlin.DE>
 #
-# $FreeBSD: ports/graphics/gtksee/Makefile,v 1.24 2001/08/15 20:33:16 knu Exp $
+# $FreeBSD: ports/graphics/gtksee/Makefile,v 1.25 2001/08/23 09:20:03 kris Exp $
 #
 
 PORTNAME=	gtksee
@@ -16,7 +16,7 @@ MAINTAINER=	dirk@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
 RUN_DEPENDS=	bzip:${PORTSDIR}/archivers/bzip
 .if !exists(/usr/bin/bzip2)

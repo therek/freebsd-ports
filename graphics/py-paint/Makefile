@@ -2,7 +2,7 @@
 # Date created:				8 July 2001
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/graphics/py-paint/Makefile,v 1.1 2001/07/08 16:47:10 kevlo Exp $
+# $FreeBSD: ports/graphics/py-paint/Makefile,v 1.2 2001/07/09 03:07:47 kevlo Exp $
 #
 
 PORTNAME=	paint
@@ -15,7 +15,7 @@ MAINTAINER=	perky@python.or.kr
 
 BUILD_DEPENDS=	${PYDISTUTILS}
 LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		art_lgpl.5:${PORTSDIR}/graphics/libart
 
 USE_PYTHON=	yes

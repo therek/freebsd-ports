@@ -2,7 +2,7 @@
 # Date created:         3 Dec 1996
 # Whom:                 paulo@isr.uc.pt
 #
-# $FreeBSD: ports/graphics/povray/Makefile,v 1.24 2001/01/27 05:59:50 kris Exp $
+# $FreeBSD: ports/graphics/povray/Makefile,v 1.25 2001/02/12 11:37:46 knu Exp $
 #
 
 PORTNAME=	povray
@@ -19,7 +19,7 @@ DIST_SUBDIR=	povray30
 
 MAINTAINER=	kris@FreeBSD.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
 USE_XLIB=	yes
 MAN1=		povray.1

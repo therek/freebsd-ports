@@ -2,7 +2,7 @@
 # Date created:				24 February 1996
 # Whom:					Joseph Koshy <koshy@india.hp.com>
 #
-# $FreeBSD: ports/graphics/xaos/Makefile,v 1.14 2000/07/04 07:13:26 sobomax Exp $
+# $FreeBSD: ports/graphics/xaos/Makefile,v 1.15 2001/02/28 09:31:18 jkoshy Exp $
 #
 
 PORTNAME=	xaos
@@ -16,7 +16,7 @@ DISTNAME=	XaoS-${PORTVERSION}
 
 MAINTAINER=	jkoshy@freebsd.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 .if defined(WITH_SVGALIB)
 LIB_DEPENDS+=	vga.1:${PORTSDIR}/graphics/svgalib
 .endif

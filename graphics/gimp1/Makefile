@@ -2,7 +2,7 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.93 2001/08/18 06:03:21 clive Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.94 2001/08/21 16:29:15 knu Exp $
 #
 
 PORTNAME=	gimp
@@ -20,7 +20,7 @@ MAINTAINER=	vanilla@FreeBSD.org
 LIB_DEPENDS=	aa.1:${PORTSDIR}/graphics/aalib \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		mpeg.1:${PORTSDIR}/graphics/mpeg-lib \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
 SHLIBVER?=	${PORTVERSION:S/1.2.//g}

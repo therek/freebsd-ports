@@ -2,7 +2,7 @@
 # Date created:		03 Feb 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/graphviz/Makefile,v 1.24 2001/08/05 19:12:26 lioux Exp $
+# $FreeBSD: ports/graphics/graphviz/Makefile,v 1.25 2001/08/06 11:43:59 ijliao Exp $
 #
 
 PORTNAME=	graphviz
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		freetype.7:${PORTSDIR}/print/freetype2 \
 		tk83.1:${PORTSDIR}/x11-toolkits/tk83
 

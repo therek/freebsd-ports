@@ -2,7 +2,7 @@
 # Date created:         30 Aug 1999
 # Whom:                 saper@system.pl
 #
-# $FreeBSD: ports/graphics/gif2png/Makefile,v 1.11 2001/01/18 17:28:11 mharo Exp $
+# $FreeBSD: ports/graphics/gif2png/Makefile,v 1.12 2001/04/15 10:08:10 kris Exp $
 #
 
 PORTNAME=	gif2png
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.tuxedo.org/~esr/gif2png/
 
 MAINTAINER=	saper@system.pl
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python
 
 GNU_CONFIGURE=	yes

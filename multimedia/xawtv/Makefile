@@ -2,7 +2,7 @@
 # Date created:        03 March 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/graphics/xawtv/Makefile,v 1.1 2001/03/20 03:12:55 will Exp $
+# $FreeBSD: ports/graphics/xawtv/Makefile,v 1.2 2001/03/25 23:27:07 kris Exp $
 #
 
 PORTNAME=       xawtv
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 MAINTAINER=	greid@ukug.uk.freebsd.org
 
 LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/_/-/}

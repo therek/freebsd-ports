@@ -2,7 +2,7 @@
 # Date Created:		20 February 1999
 # Whom:			Glenn Johnson
 #
-# $FreeBSD: ports/graphics/libimg/Makefile,v 1.10 2001/02/12 21:46:32 mi Exp $
+# $FreeBSD: ports/graphics/libimg/Makefile,v 1.11 2001/05/01 09:55:09 mharo Exp $
 #
 
 PORTNAME=	libimg
@@ -14,7 +14,7 @@ DISTNAME=	img${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83 \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff
 

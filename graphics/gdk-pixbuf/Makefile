@@ -2,7 +2,7 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.18 2001/05/11 16:36:26 ade Exp $
+# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.19 2001/05/21 02:29:51 ade Exp $
 #
 
 PORTNAME?=	gdk-pixbuf
@@ -15,7 +15,7 @@ DISTNAME=	gdk-pixbuf-${PORTVERSION}
 
 MAINTAINER=	gnome@FreeBSD.org
 
-LIB_DEPENDS+=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS+=	png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 

@@ -2,7 +2,7 @@
 # Date created:			4 April 2001
 # Whom:				bruno schwander <bruno@tinkerbox.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/libgdgeda/Makefile,v 1.1 2001/04/07 00:08:21 vanilla Exp $
 #
 
 PORTNAME=	libgdgeda
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.geda.seul.org/pub/geda/dist/ \
 
 MAINTAINER=	bruno@tinkerbox.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

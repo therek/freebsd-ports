@@ -2,7 +2,7 @@
 # Date created:		?
 # Whom:			jmz (original)
 #
-# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.47 2001/09/04 23:49:26 lioux Exp $
+# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.48 2001/09/06 03:53:53 lioux Exp $
 #
 
 PORTNAME=	netpbm
@@ -16,7 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 USE_GMAKE=	yes
 MAKE_ENV=	LN="${LN}" RANLIB="${RANLIB}"
