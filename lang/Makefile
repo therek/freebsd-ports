@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.233 2001/06/04 15:02:49 knu Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.234 2001/06/14 16:59:44 markp Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -64,6 +64,7 @@
     SUBDIR += logo
     SUBDIR += lua
     SUBDIR += m3gdb
+    SUBDIR += malbolge
     SUBDIR += mawk
     SUBDIR += mdk
     SUBDIR += mit-scheme
