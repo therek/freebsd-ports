@@ -2,7 +2,7 @@
 # Date created:		16 November 1998
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/truetypefonts/Makefile,v 1.5 2000/09/12 11:08:03 asami Exp $
+# $FreeBSD: ports/japanese/truetypefonts/Makefile,v 1.6 2000/10/08 10:21:28 asami Exp $
 #
 
 PORTNAME=	truetypefonts
@@ -11,7 +11,7 @@ CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	http://www.linux.or.jp/%7Eishikawa/linux/dists/FreeType/
 DISTNAME=	xtt-fonts_0.${PORTVERSION:S/.//g}-3
 
-MAINTAINER=	candy@kgc.co.jp
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 
