@@ -2,7 +2,7 @@
 # Date created:		27 Apr 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/tclhttpd/Makefile,v 1.5 2001/03/29 21:32:13 mi Exp $
+# $FreeBSD: ports/www/tclhttpd/Makefile,v 1.6 2001/05/02 20:35:42 mi Exp $
 #
 
 PORTNAME=	tclhttpd
@@ -30,6 +30,8 @@ SHLIB_NAME!=	${MAKE} -f "${FILESDIR}/Makefile.lib" ech
 PLIST_SUB+=	TCL_VER=${TCL_VER} PORTVERSION=${PORTVERSION} \
 		SHLIB_NAME=${SHLIB_NAME}
 MAKE_ENV+=	TCLSH_PROG=tclsh${TCL_DVER}
+
+MAN1=	httpd.1
 
 do-build:
 	cd ${WRKSRC} && ${MAKE_ENV} ${MAKE} -j 2 TCL_DVER="${TCL_DVER}" \
