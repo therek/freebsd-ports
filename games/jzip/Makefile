@@ -2,13 +2,14 @@
 # Date created:				7 May 1998
 # Whom:					Matthew Hunt <mph@FreeBSD.org>
 #
-# $FreeBSD: ports/games/jzip/Makefile,v 1.7 2000/02/08 09:26:27 peter Exp $
+# $FreeBSD: ports/games/jzip/Makefile,v 1.8 2000/04/14 06:53:20 mharo Exp $
 #
 
 PORTNAME=		jzip
 PORTVERSION=		2.0.1g
 CATEGORIES=		games
-MASTER_SITES=   	http://people.FreeBSD.org/~mph/distfiles/
+MASTER_SITES=   	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	mph
 DISTNAME=		jzip201g
 
 MAINTAINER=		mph@freebsd.org

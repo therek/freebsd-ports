@@ -2,13 +2,14 @@
 # Date created:				6 July 1998
 # Whom:					mph
 #
-# $FreeBSD: ports/irc/yagirc/Makefile,v 1.20 2000/03/22 21:32:24 mph Exp $
+# $FreeBSD: ports/irc/yagirc/Makefile,v 1.21 2000/04/12 06:28:34 obrien Exp $
 #
 
 PORTNAME=	yagirc
 PORTVERSION=	0.66.1
 CATEGORIES=	irc
-MASTER_SITES=	http://people.FreeBSD.org/~mph/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	mph
 
 MAINTAINER=	mph@freebsd.org
 

@@ -2,14 +2,15 @@
 # Date created:		27 July 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xscrabble/Makefile,v 1.10 2000/02/08 09:26:25 peter Exp $
+# $FreeBSD: ports/games/xscrabble/Makefile,v 1.11 2000/04/14 12:28:15 asami Exp $
 #
 
 PORTNAME=	xscrabble
 PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	http://www.belgarath.demon.co.uk/programs/ \
-		http://people.FreeBSD.org/~mph/distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	mph
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org

@@ -2,13 +2,14 @@
 # Date created:        24 March 1998
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/math/xgfe/Makefile,v 1.14 2000/02/08 09:27:30 peter Exp $
+# $FreeBSD: ports/math/xgfe/Makefile,v 1.15 2000/04/14 07:20:50 asami Exp $
 #
 
 PORTNAME=	xgfe
 PORTVERSION=	2.0
 CATEGORIES=	math
-MASTER_SITES=	http://people.FreeBSD.org/~mph/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	mph
 
 MAINTAINER=	mph@freebsd.org
 
