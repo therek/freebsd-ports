@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.33 2000/02/24 07:00:56 asami Exp $
+# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.34 2000/04/14 10:46:28 asami Exp $
 #
 
 PORTNAME=	kdegraphics
@@ -11,7 +11,7 @@ CATEGORIES=	graphics kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
 
-MAINTAINER=	se@freebsd.org
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	ungif.5:${PORTSDIR}/graphics/libungif \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \

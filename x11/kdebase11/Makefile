@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdebase11/Makefile,v 1.44 2000/02/24 07:01:12 asami Exp $
+# $FreeBSD: ports/x11/kdebase11/Makefile,v 1.45 2000/04/13 19:09:39 cpiazza Exp $
 #
 
 PORTNAME=	kdebase
@@ -11,22 +11,19 @@ CATEGORIES=	x11 kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
 
-MAINTAINER=	se@freebsd.org
+MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		kdecore.3:${PORTSDIR}/x11/kdelibs11 \
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
 		intl.1:${PORTSDIR}/devel/gettext
 
 USE_XLIB=	yes
 USE_BZIP2=	yes
 USE_QT=		yes
-HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	"--prefix=$(PREFIX)" \
-		"--with-xdmdir=${X11BASE}/lib/X11/xdm"
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-xdmdir=${X11BASE}/lib/X11/xdm
 CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS) -DHAVE_GETUSERSHELL -DTIME_WITH_SYS_TIME" \
-		INSTALL_SCRIPT="install -c -m 555" \
-		PATH="${PATH}:${X11BASE}/bin"
+		INSTALL_SCRIPT="install -c -m 555" PATH="${PATH}:${X11BASE}/bin"
 USE_GMAKE=	yes
 MAKE_ENV=	RM=${RM}
 CFLAGS+=	"-I$(PREFIX)/include"

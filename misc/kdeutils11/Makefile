@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/misc/kdeutils11/Makefile,v 1.37 2000/02/24 07:01:01 asami Exp $
+# $FreeBSD: ports/misc/kdeutils11/Makefile,v 1.38 2000/04/14 08:46:04 asami Exp $
 #
 
 PORTNAME=	kdeutils
@@ -11,18 +11,15 @@ CATEGORIES=	misc kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
 
-MAINTAINER=	se@freebsd.org
+MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		kdecore.3:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 
 USE_BZIP2=	yes
 USE_QT=		yes
-HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	"--prefix=$(PREFIX)" \
-		"--with-extra-includes=$(PREFIX)/include"
-CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" \
-		INSTALL_SCRIPT="install -c -m 555"
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-extra-includes=$(PREFIX)/include
+CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555"
 USE_GMAKE=	yes
 
 .include <bsd.port.mk>

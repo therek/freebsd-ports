@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/converters/kdesupport11/Makefile,v 1.27 2000/02/24 06:50:16 asami Exp $
+# $FreeBSD: ports/converters/kdesupport11/Makefile,v 1.28 2000/04/08 23:24:31 mharo Exp $
 #
 
 PORTNAME=	kdesupport
@@ -12,19 +12,16 @@ MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
 DISTNAME=	kdesupport-1.1.2
 
-MAINTAINER=	se@freebsd.org
+MAINTAINER=	will@FreeBSD.org
 
 USE_BZIP2=	yes
 
 USE_QT=		yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	"--prefix=$(PREFIX)" \
-		"--without-libjpeg" \
-		"--without-libgif" \
-		"--without-libgdbm" \
-		"--without-libuulib"
-CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" \
-		INSTALL_SCRIPT="install -c -m 555"
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--without-libjpeg --without-libgif \
+		--without-libgdbm --without-libuulib
+CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555"
 
 post-install:
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib

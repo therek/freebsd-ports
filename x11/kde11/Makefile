@@ -2,7 +2,7 @@
 # Date created:        4 November 1997
 # Whom:                Satoshi Asami <asami@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/kde11/Makefile,v 1.26 2000/04/13 19:09:37 cpiazza Exp $
+# $FreeBSD: ports/x11/kde11/Makefile,v 1.27 2000/04/19 19:45:58 mharo Exp $
 #
 
 PORTNAME=	kde
@@ -12,7 +12,7 @@ MASTER_SITES=	# empty
 DISTFILES=	# none
 EXTRACT_ONLY=	# empty
 
-MAINTAINER=	se@freebsd.org
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	kwm:${PORTSDIR}/x11/kdebase11 \
