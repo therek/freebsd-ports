@@ -2,7 +2,7 @@
 # Date created:		9 January 2000
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/x11/xkbctrl/Makefile,v 1.5 2001/02/05 16:18:32 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xkbctrl
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.x.org/pub/unsupported/test/Xkb/programs/
 DISTFILES=	Imakefile xkbctrl.c
 
 MAINTAINER=	sanpei@FreeBSD.org
+COMMENT=	Display and manipulate XKB keyboard controls from the commandline
 
 DIST_SUBDIR=	xkbctrl
 USE_IMAKE=	yes

@@ -3,7 +3,7 @@
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
 # $NetBSD: Makefile,v 1.3 2000/08/27 02:46:07 jlam Exp $
-# $FreeBSD: ports/textproc/cdif/Makefile,v 1.3 2000/09/21 15:09:36 sanpei Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		cdif
@@ -13,6 +13,7 @@ MASTER_SITES=		ftp://ftp.iij.ad.jp/pub/IIJ/dist/utashiro/perl/
 EXTRACT_SUFX=		# empty
 
 MAINTAINER=		sanpei@FreeBSD.org
+COMMENT=	Display word context diff
 
 USE_PERL5=		yes
 

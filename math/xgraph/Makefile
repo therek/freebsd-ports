@@ -2,7 +2,7 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/math/xgraph/Makefile,v 1.18 2000/08/06 14:50:50 sanpei Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xgraph
@@ -13,6 +13,7 @@ DISTNAME=	xgraph-11
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	sanpei@FreeBSD.org
+COMMENT=	A program that helps you plot graphs
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}

@@ -3,7 +3,7 @@
 # Whom:			minoura@netbsd.org
 #
 # $NetBSD: Makefile,v 1.3 1999/12/22 15:37:13 sakamoto Exp $
-# $FreeBSD: ports/x11-fm/xcruise/Makefile,v 1.4 2000/08/03 14:28:33 sanpei Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcruise
@@ -12,6 +12,7 @@ CATEGORIES=	x11-fm
 MASTER_SITES=	http://tanaka-www.cs.titech.ac.jp/%7Eeuske/prog/
 
 MAINTAINER=	sanpei@FreeBSD.org
+COMMENT=	Navigate through a three-dimensional view of a file system
 
 USE_IMAKE=	yes
 

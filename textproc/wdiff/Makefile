@@ -2,7 +2,7 @@
 # Date created:		Sep 15, 1997
 # Whom:			Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/textproc/wdiff/Makefile,v 1.8 2001/02/05 16:35:19 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wdiff
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	wdiff
 
 MAINTAINER=	sanpei@FreeBSD.org
+COMMENT=	Display word differences between text files
 
 GNU_CONFIGURE=	yes
 

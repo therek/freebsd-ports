@@ -2,7 +2,7 @@
 # Date created:		15 January 2000
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/print/poster/Makefile,v 1.3 2000/04/09 17:50:30 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	poster
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.ics.ele.tue.nl/pub/users/jos/poster/
 DISTNAME=	poster
 
 MAINTAINER=	sanpei@FreeBSD.org
+COMMENT=	Resize a postscript image to print on larger media and/or multiple sheets
 
 ALL_TARGET=	poster
 NO_WRKSUBDIR=	yes

@@ -2,7 +2,7 @@
 # Date created:				2 April 1997
 # Whom:	Andrey Zakhvatov <andy@icc.surw.chel.su>
 #
-# $FreeBSD: ports/deskutils/cal/Makefile,v 1.11 2000/04/10 03:58:45 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		cal
@@ -12,6 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/shell
 
 MAINTAINER=	sanpei@FreeBSD.org
+COMMENT=	Enhanced color version of standard calendar utility
 
 WRKSRC=		${WRKDIR}/cal-3.5/source
 MAKEFILE=	makefile.unx
