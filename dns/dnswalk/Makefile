@@ -3,11 +3,11 @@
 # Date created:				17 January 1998
 # Whom:					Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dnswalk/Makefile,v 1.5 1999/08/30 14:22:38 peter Exp $
 
 DISTNAME=	dnswalk-2.0.2
 CATEGORIES=	net
-MASTER_SITES=	http://www.cis.ohio-state.edu/~barr/dnswalk/
+MASTER_SITES=	http://www.visi.com/~barr/dnswalk/
 
 MAINTAINER=	mph@freebsd.org
 
