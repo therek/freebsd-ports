@@ -2,10 +2,10 @@
 # Date created:		20 November 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/lang/expect/Makefile,v 1.45 2000/04/12 06:18:22 obrien Exp $
+# $FreeBSD: ports/lang/expect/Makefile,v 1.46 2000/04/24 08:48:45 kris Exp $
 
 PORTNAME=	expect
-PORTVERSION=	5.31.5
+PORTVERSION=	5.31.8
 CATEGORIES=	lang tcl82 tk82
 MASTER_SITES=	http://expect.nist.gov/
 DISTNAME=	expect
