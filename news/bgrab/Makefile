@@ -3,7 +3,7 @@
 # Date created:		27 July 1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/news/bgrab/Makefile,v 1.3 1999/08/30 14:31:31 peter Exp $
+# $FreeBSD: ports/news/bgrab/Makefile,v 1.4 1999/10/01 18:06:24 cpiazza Exp $
 #
 
 DISTNAME=	bgrab
