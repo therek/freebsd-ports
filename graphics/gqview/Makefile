@@ -2,31 +2,24 @@
 # Date Created:				27 Oct 1998
 # Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gqview/Makefile,v 1.25 2000/09/07 08:27:17 nakai Exp $
+# $FreeBSD: ports/graphics/gqview/Makefile,v 1.26 2000/10/05 07:22:39 reg Exp $
 #
 
 PORTNAME=	gqview
-PORTVERSION=	0.9.0
+PORTVERSION=	0.9.1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	nakai@FreeBSD.org
 
+LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+
 USE_X_PREFIX=	yes
-USE_IMLIB=	yes
-WANT_GNOME=	yes
+USE_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
-
-.include <bsd.port.pre.mk>
-
-.if defined(HAVE_GNOME)
-USE_GNOME=	yes
-.else
-CONFIGURE_ENV+=	GNOME_CONFIG=no
-.endif
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
@@ -40,4 +33,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/gqview
 .endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
