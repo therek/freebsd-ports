@@ -2,11 +2,11 @@
 # Date created:				19 Apr 2000
 # Whom:					will
 #
-# $FreeBSD: ports/games/xscorch/Makefile,v 1.2 2000/06/06 07:35:19 sobomax Exp $
+# $FreeBSD: ports/games/xscorch/Makefile,v 1.3 2000/07/16 05:17:35 will Exp $
 #
 
 PORTNAME=	xscorch
-PORTVERSION=	0.1.6
+PORTVERSION=	0.1.7
 CATEGORIES=	games
 MASTER_SITES=	http://chaos2.org/xscorch/
 
@@ -29,6 +29,7 @@ CONFIGURE_ARGS+=--without-gnome
 .endif
 CONFIGURE_ENV+=	GTK_CONFIG="${GTK_CONFIG}"
 USE_GMAKE=	yes
+CFLAGS+=	-g
 
 MAN6=		xscorch.6
 
