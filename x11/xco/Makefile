@@ -3,13 +3,13 @@
 # Date created:		6 Jun 1997
 # Whom:			Satoshi TAOKA
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xco/Makefile,v 1.3 1999/08/31 02:50:52 peter Exp $
 #
 
 DISTNAME=	xco
 PKGNAME=	xco-1.3
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.cs.purdue.edu:/pub/bingle/
+MASTER_SITES=	ftp://ftp.cs.purdue.edu/pub/bingle/
 
 MAINTAINER=	taoka@FreeBSD.org
 
