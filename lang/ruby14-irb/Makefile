@@ -3,7 +3,7 @@
 # Date created:         19 April 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/irb/Makefile,v 1.3 1999/08/25 06:34:48 obrien Exp $
 #
 
 DISTNAME=	irb-0.5.1
@@ -21,8 +21,10 @@ MAINTAINER=	yasuf@big.or.jp
 RUN_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
 
 WRKSRC=		${WRKDIR}/irb
+PLIST_SUB+=	RUBY_VER="${RUBY_VER}"
 
 RUBY=		${LOCALBASE}/bin/ruby
+RUBY_VER=	1.4
 
 do-build:
 	( cd ${WRKSRC}; \
@@ -31,9 +33,11 @@ do-build:
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/irb ${PREFIX}/bin
-	${MKDIR} ${PREFIX}/lib/ruby/irb
-	${INSTALL_DATA} ${WRKSRC}/*.rb ${PREFIX}/lib/ruby/irb
+	${MKDIR} ${PREFIX}/lib/ruby/${RUBY_VER}/irb
+	${INSTALL_DATA} ${WRKSRC}/*.rb ${PREFIX}/lib/ruby/${RUBY_VER}/irb
+.if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/ruby/irb
 	${INSTALL_DATA} ${WRKSRC}/README* ${PREFIX}/share/doc/ruby/irb
+.endif
 
 .include <bsd.port.mk>
