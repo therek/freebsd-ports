@@ -3,11 +3,11 @@
 # Date created:         Wed Nov 27 09:15:10 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/math/wingz/Makefile,v 1.8 1999/08/25 07:17:34 obrien Exp $
+# $FreeBSD: ports/math/wingz/Makefile,v 1.9 2000/02/05 10:57:25 dirk Exp $
 #
 
 DISTNAME=	Wingz-142
-CATEGORIES=	math
+CATEGORIES=	math linux
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/financial/spreadsheet
 EXTRACT_SUFX=	.tgz

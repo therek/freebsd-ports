@@ -3,12 +3,12 @@
 # Date created:         Jul 9, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.17 2000/01/10 13:04:34 marcel Exp $
+# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.18 2000/02/17 13:08:16 kuriyama Exp $
 #
 
 DISTNAME=		linux_devtools
 PKGNAME=		linux_devtools-6.1
-CATEGORIES=		emulators devel
+CATEGORIES=		devel emulators linux
 MASTER_SITES=		${RPM_MIRRORS:S/__DIR__/${STDDIR}/g}
 DISTFILES=		${RPM_KERNEL_HEADERS} \
 			${RPM_GLIBC_DEVEL} \

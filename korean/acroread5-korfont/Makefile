@@ -3,11 +3,11 @@
 # Date created:		99/06/16
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/acroread-korfont/Makefile,v 1.3 1999/08/30 12:08:36 peter Exp $
 #
 
 DISTNAME=	korfont
-CATEGORIES=	korean
+CATEGORIES=	korean linux
 
 MASTERDIR=	${.CURDIR}/../../print/acroread-commfont
 

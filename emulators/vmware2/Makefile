@@ -4,12 +4,12 @@
 # Whom:                 vns@delta.odessa.ua
 #
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.8 1999/12/17 00:38:27 vsilyaev Exp $
-# $FreeBSD: ports/emulators/vmware/Makefile,v 1.2 2000/01/28 06:22:50 obrien Exp $
+# $FreeBSD: ports/emulators/vmware/Makefile,v 1.3 2000/02/22 20:11:31 joe Exp $
 #
 
 DISTNAME=       VMware-1.1.2-364
 PKGNAME=        vmware-1.1.2
-CATEGORIES=	emulators
+CATEGORIES=	emulators linux
 MASTER_SITES=	http://www4.vmware.com/software/ \
 		http://vmware-svca.www.conxion.com/software/ \
 		http://vmware-chil.www.conxion.com/software/ \
@@ -127,7 +127,6 @@ post-install:
 	@${ECHO} "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" 
 .endif
 
-	
 pre-clean:
 	@${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc.linproc \
 		  ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc.net

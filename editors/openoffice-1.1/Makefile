@@ -3,12 +3,12 @@
 # Date created:		30 October 1999
 # Whom:			dkwiebe
 #
-# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.7 2000/01/29 21:52:21 steve Exp $
+# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.8 2000/02/27 15:01:11 steve Exp $
 #
 
 DISTNAME=	so51a_lnx_01
 PKGNAME=	staroffice-5.1a
-CATEGORIES=	editors
+CATEGORIES=	editors linux
 MASTER_SITES=	http://afug.hypermart.net/files/ \
 		http://www.hagenhomes.com/freebsd/files/  \
 		ftp://ftp.stat.duke.edu/pub/Users/sto/StarOffice51a/  \

@@ -3,11 +3,11 @@
 # Date created:		30 Jan 2000
 # Whom:			kris
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/mtv/Makefile,v 1.1 2000/01/30 09:54:40 kris Exp $
 #
 
 DISTNAME=	mtv-1.1.0.7
-CATEGORIES=	graphics
+CATEGORIES=	graphics linux
 MASTER_SITES=	ftp://ftp.mpegtv.com/pub/mpeg/mpegtv/player/x86-unknown-linux-glibc/packages/TGZ/
 DISTFILES=	mtv-1.1.0.7.tar.gz libforms.so.0.88.gz
 

@@ -3,12 +3,12 @@
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/print/acroread4/Makefile,v 1.19 1999/09/04 20:08:01 cpiazza Exp $
+# $FreeBSD: ports/print/acroread4/Makefile,v 1.20 1999/10/24 23:01:44 obrien Exp $
 #
 
 DISTNAME=	linux-ar-40
 PKGNAME=	acroread-4.0
-CATEGORIES=	print
+CATEGORIES=	print linux
 MASTER_SITES=	ftp://ftp-pac.adobe.com/pub/adobe/acrobatreader/unix/4.x/
 
 MAINTAINER=	dima@FreeBSD.org

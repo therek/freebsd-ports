@@ -3,12 +3,12 @@
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/print/acroread/Makefile,v 1.14 1999/08/31 01:44:25 peter Exp $
+# $FreeBSD: ports/print/acroread/Makefile,v 1.15 1999/08/31 06:49:44 mharo Exp $
 #
 
 DISTNAME=	ar302lin
 PKGNAME=	acroread-3.02
-CATEGORIES=	print
+CATEGORIES=	print linux
 MASTER_SITES=	ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/3.x/ \
 		ftp://sunsite.cnlab-switch.ch/mirror/acrobatreader/unix/3.x/
 EXTRACT_SUFX=	.tar.Z

@@ -5,11 +5,11 @@
 #					msmith@freebsd.org
 # Relevant URLs:			http://www.corel.com/
 #
-# $FreeBSD: ports/editors/wordperfect/Makefile,v 1.8 1999/08/28 02:17:09 mharo Exp $
+# $FreeBSD: ports/editors/wordperfect/Makefile,v 1.9 1999/09/02 04:57:32 mharo Exp $
 
 DISTNAME=	GUILG00
 PKGNAME=	wordperfect-8.0
-CATEGORIES=     editors
+CATEGORIES=     editors linux
 MASTER_SITES=	
 EXTRACT_SUFX=	.GZ
 

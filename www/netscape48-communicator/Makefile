@@ -3,11 +3,11 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.56 2000/01/17 12:39:58 asami Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.57 2000/01/25 03:21:57 asami Exp $
 #
 
 DISTNAME?=	netscape-${BROWSER}-${BROWSER_VER}
-CATEGORIES=	www
+CATEGORIES?=	www
 MASTER_SITES?=	ftp://ftp.netscape.com/pub/communicator/4.08/english/unix/unsupported/freebsd/professional_edition/
 DISTFILES?=	communicator-v408-export.x86-unknown-freebsd.tar.gz
 

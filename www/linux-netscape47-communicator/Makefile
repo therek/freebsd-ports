@@ -4,10 +4,11 @@
 # Whom:				girgen@partitur.se
 # Based on work by:		thepish
 #
-# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.15 2000/01/03 09:15:02 billf Exp $
+# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.16 2000/01/07 18:40:46 obrien Exp $
 #
 
 DISTNAME=	linux-netscape-${BROWSER}-${BROWSER_VER}
+CATEGORIES=	www linux
 MASTER_SITES=	ftp://ftp.netscape.com/pub/communicator/english/4.7/unix/supported/linux20_glibc2/complete_install/ \
 		ftp://ftp.sunet.se/pub/www/Netscape/communicator/english/4.7/unix/supported/linux20_glibc2/complete_install/
 DISTFILES=	communicator-v47-export.x86-unknown-linuxglibc2.0.tar.gz

@@ -3,12 +3,12 @@
 # Date created:         20 Sep 1998
 # Whom:                 msmith
 #
-# $FreeBSD: ports/net/citrix_ica/Makefile,v 1.14 1999/08/30 14:22:18 peter Exp $
+# $FreeBSD: ports/net/citrix_ica/Makefile,v 1.15 1999/08/31 06:48:41 mharo Exp $
 #
 
 DISTNAME=       linux
 PKGNAME=	citrix_ica-3.0.15
-CATEGORIES=	comms
+CATEGORIES=	comms linux
 MASTER_SITES=   
 EXTRACT_SUFX=	.tar.Z
 

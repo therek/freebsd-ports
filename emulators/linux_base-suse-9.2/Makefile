@@ -3,12 +3,12 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.38 2000/02/17 13:39:39 kuriyama Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.39 2000/02/18 18:14:07 marcel Exp $
 #
 
 DISTNAME=		linux_base
 PKGNAME=		linux_base-6.1
-CATEGORIES=		emulators
+CATEGORIES=		emulators linux
 MASTER_SITES=		${RPM_MIRRORS:S/__DIR__/${STDDIR}/g}
 DISTFILES=		${RPM_SET1} ${RPM_LDCONFIG} ${RPM_SET2} \
 			${RPM_RPM} ${RPM_SET3}

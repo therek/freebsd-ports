@@ -3,12 +3,12 @@
 # Date created:		99/06/16
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/acroread-commfont/Makefile,v 1.4 1999/08/31 01:44:26 peter Exp $
+# $FreeBSD: ports/print/acroread-commfont/Makefile,v 1.5 1999/08/31 06:49:43 mharo Exp $
 #
 
 DISTNAME?=	commfont # dummy
 PKGNAME=	${PKG_PRE}acroread-${DISTNAME}-1999.7.20
-CATEGORIES?=	japanese print
+CATEGORIES?=	japanese print linux
 MASTER_SITES=	ftp://ftp-pac.adobe.com/pub/adobe/acrobatreader/unix/4.x/
 
 MAINTAINER=	taoka@FreeBSD.org

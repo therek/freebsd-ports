@@ -3,12 +3,12 @@
 # Date created:		12 July 1998
 # Whom:			Jerry Hicks <jhicks@glenatl.glenayre.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/ETHOberonV4/Makefile,v 1.4 1999/08/25 06:34:10 obrien Exp $
 #
 
 DISTNAME=	ETHLinuxOberon
 PKGNAME=	ETHOberonV4-0.9
-CATEGORIES=	lang
+CATEGORIES=	lang linux
 MASTER_SITES=	ftp://ftp.inf.ethz.ch/pub/Oberon/OberonV4/Linux/latest/
 EXTRACT_SUFX=	.tgz
 

@@ -3,12 +3,12 @@
 # Date created:         Apr 20 1999
 # Whom:                 cjh@kr.freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/linux_locale/Makefile,v 1.3 1999/08/30 12:09:00 peter Exp $
 #
 
 DISTNAME=	linux_locale-ko-1.0
 PKGNAME=	ko-linux_locale-1.0
-CATEGORIES=	korean emulators
+CATEGORIES=	korean emulators linux
 MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
 
 MAINTAINER=	cjh@kr.freebsd.org

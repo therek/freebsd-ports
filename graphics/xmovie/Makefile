@@ -3,12 +3,12 @@
 # Date created:		20 December 1998
 # Whom:			MIHIRA Sanpei Yoshiro <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.1 2000/02/13 02:06:50 imura Exp $
+# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.2 2000/02/16 15:40:24 imura Exp $
 #
 
 DISTNAME=	xmovie-i586-1.3.1
 PKGNAME=	xmovie-1.3.1
-CATEGORIES=	graphics
+CATEGORIES=	graphics linux
 MASTER_SITES=	http://people.FreeBSD.org/~imura/distfiles/
 # Distfile has no version info. The original site is below.
 # MASTER_SITES=	http://heroine.linuxbox.com/

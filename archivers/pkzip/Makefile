@@ -3,12 +3,12 @@
 # Date created:         17 Mar 1999
 # Whom:                 xxx
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/pkzip/Makefile,v 1.5 1999/08/25 04:25:14 obrien Exp $
 #
 
 DISTNAME=       pklin251
 PKGNAME=        pkzip-2.5
-CATEGORIES=	archivers
+CATEGORIES=	archivers linux
 MASTER_SITES=   ftp://ftp.pkware.com/
 EXTRACT_SUFX=	.exe
 

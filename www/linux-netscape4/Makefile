@@ -3,12 +3,12 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.11 1999/08/31 02:42:56 peter Exp $
 #
 
 DISTNAME=	communicator-v408-export.x86-unknown-linux2.0_libc5
 PKGNAME=	linux-netscape-4.08
-CATEGORIES=	www
+CATEGORIES=	www linux
 MASTER_SITES=	ftp://ftp.netscape.com/pub/communicator/4.08/english/unix/supported/linux20/base_install/ \
 		ftp://sunsite.doc.ic.ac.uk/Mirrors/ftp.netscape.com/pub/communicator/4.08/english/unix/supported/linux20/base_install/ \
 		ftp://ftp.funet.fi/pub/mirrors/ftp.netscape.com/pub/communicator/4.08/english/unix/supported/linux20/base_install/ \

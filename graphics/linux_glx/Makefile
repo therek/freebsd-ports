@@ -3,11 +3,11 @@
 # Date created:         27 November 1999
 # Whom:                 Marc E E van Woerkom  <van.woerkom@netcologne.de>
 #
-# $FreeBSD: ports/graphics/linux_glx/Makefile,v 1.5 2000/02/08 09:26:50 peter Exp $
+# $FreeBSD: ports/graphics/linux_glx/Makefile,v 1.6 2000/02/27 07:35:59 cpiazza Exp $
 #
 
 DISTNAME=	linux_glx-991127
-CATEGORIES=	graphics
+CATEGORIES=	graphics linux
 MASTER_SITES=	http://people.FreeBSD.org/~3d/distfiles/glx/linux/
 
 MAINTAINER=	3d@freebsd.org
