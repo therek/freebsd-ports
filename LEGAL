@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.326 2004/01/09 13:29:37 clement Exp $
+# $FreeBSD: ports/LEGAL,v 1.327 2004/01/11 15:30:19 netchild Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -214,6 +214,8 @@ molden			ports/biology/molden	free for academic,
 						non profit usage
 						do not re-distribute source and
 						 executable
+motoya/*		ports/japanese/motoya-ttfonts	Personal use only and
+						some limitation
 Mmsaic			ports/www/Mosaic	Do not sell.  Do not distribute
 						binaries.
 mmosaic			ports/www/mmosaic	Do not sell (per NCSA).  Do not
