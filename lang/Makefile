@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.154 1999/12/07 21:19:30 jmz Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.155 1999/12/25 15:08:49 steve Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -84,6 +84,7 @@
     SUBDIR += siod
     SUBDIR += slib
     SUBDIR += smalltalk
+    SUBDIR += sml-mode.el
     SUBDIR += sml-nj
     SUBDIR += squeak1
     SUBDIR += squeak2
