@@ -3,7 +3,7 @@
 # Date created:			25 June 1997
 # Whom:				Carey Jones <mcj@acquiesce.org>
 #
-# $FreeBSD: ports/audio/mpg123/Makefile,v 1.19 1999/11/11 05:41:24 jkoshy Exp $
+# $FreeBSD: ports/audio/mpg123/Makefile,v 1.20 2000/01/26 07:37:46 sumikawa Exp $
 #
 
 DISTNAME=	mpg123-0.59r
@@ -46,11 +46,12 @@ pre-configure:
 	@${ECHO_MSG} "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 .endif
 .if $(MACHINE_ARCH) == "i386"
-.if !defined(OPT_ARCH) || (($(OPT_ARCH) != "i486") && ($(OPT_ARCH) != "i586"))
+.if !defined(OPT_ARCH) || (($(OPT_ARCH) != "i486") && ($(OPT_ARCH) != "i586") \
+    && ($(OPT_ARCH) != "3dnow"))
 	@${ECHO_MSG} "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 	@${ECHO_MSG} "Note: you can set OPT_ARCH to optimize for your hardware. (Eg:- make OPT_ARCH=i486)"
 .if $(PORTOBJFORMAT) == "elf"
-	@${ECHO_MSG} "Valid values are: i486, i586"
+	@${ECHO_MSG} "Valid values are: i486, i586, 3dnow"
 .else
 	@${ECHO_MSG} "Valid values are: i486"
 .endif
