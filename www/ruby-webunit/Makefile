@@ -2,14 +2,15 @@
 # Date created:		20 September 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/ruby-webunit/Makefile,v 1.1 2001/09/20 06:13:01 knu Exp $
+# $FreeBSD: ports/www/ruby-webunit/Makefile,v 1.2 2001/09/21 17:43:10 knu Exp $
 #
 
 PORTNAME=	webunit
-PORTVERSION=	20010922
+PORTVERSION=	20011002
 CATEGORIES=	www textproc ruby
-MASTER_SITES=	http://www.jbt.co.jp/user/yuichi/ruby/webunit/
+MASTER_SITES=	http://xp.jbt.co.jp/download/webunit/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
+DISTNAME=	${PORTNAME}-${PORTVERSION}-alpha
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
