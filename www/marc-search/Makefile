@@ -3,7 +3,7 @@
 # Date created:		25 November 1998
 # Whom:			Sheldon Hearn <axl@iafrica.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/marc-search/Makefile,v 1.5 1999/08/31 02:42:58 peter Exp $
 #
 
 DISTNAME=	marc-search.4.3
@@ -12,6 +12,8 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.oac.uci.edu/indiv/ehood/contrib/marc-search/
 
 MAINTAINER=	sheldonh@FreeBSD.org
+
+BROKEN=		"requires AppCfg.pm, supplied with Wilma"
 
 RUN_DEPENDS=	mhonarc:${PORTSDIR}/www/mhonarc \
 		${PREFIX}/lib/perl5/site_perl/${PERL_VER}/CGI_Lite.pm:${PORTSDIR}/www/p5-CGI_Lite
