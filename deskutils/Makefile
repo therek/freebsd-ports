@@ -1,4 +1,4 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.17 1999/09/09 15:11:05 taoka Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.18 1999/10/07 03:19:21 cpiazza Exp $
 #
 
     SUBDIR += abacus
@@ -6,6 +6,7 @@
     SUBDIR += cbb
     SUBDIR += gaddr
     SUBDIR += genius
+    SUBDIR += gnofin
     SUBDIR += gnomepim
     SUBDIR += gnucash
     SUBDIR += gtimer
