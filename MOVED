@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.289 2004/01/05 03:46:36 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.290 2004/01/05 19:56:43 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -735,3 +735,4 @@ games/steam|games/linux-steam|2004-01-02|Port renamed
 x11/gtk-smooth-engine|x11-toolkits/gtk-smooth-engine|2004-01-03|Re-import into correct category
 graphics/gthumb|graphics/gthumb2|2004-01-04|Old gtk1 version retired
 www/gnujsp||2004-01-05|Project abandoned, contain security compromise
+irc/irssi+perl|irc/irssi|2004-01-05|Main irssi port has Perl support
