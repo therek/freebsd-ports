@@ -3,7 +3,7 @@
 # Date created:			11 Feb. 1995
 # Whom:				torstenb
 #
-# $FreeBSD: ports/shells/zsh/Makefile,v 1.38 1999/12/08 21:57:33 billf Exp $
+# $FreeBSD: ports/shells/zsh/Makefile,v 1.39 2000/02/12 03:49:44 billf Exp $
 #
 
 DISTNAME=       zsh-3.0.7
@@ -29,6 +29,7 @@ PLIST_SUB=	ZSH_VERSION=${DISTNAME:S/zsh-//}
 
 post-build:
 # Fix ".so" macro problem by using "soelim" command.
+	@echo HERE!!!
 	@(cd ${WRKSRC} ; \
 		${LN} -sf ./Doc man1 ; \
 		if [ ! -f ./man1/zshall.1.source ]; then \
