@@ -2,7 +2,7 @@
 # Date created:		17 Aug 1998
 # Whom:			Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnome/Makefile,v 1.21 2000/06/01 16:10:01 ade Exp $
+# $FreeBSD: ports/x11/gnome/Makefile,v 1.22 2000/06/08 21:50:51 ade Exp $
 #
 
 PORTNAME=	gnome
@@ -36,7 +36,7 @@ RUN_DEPENDS=	${X11BASE}/share/themes/Metal/ICON.png:${PORTSDIR}/x11-toolkits/gtk
 		bug-buddy:${PORTSDIR}/devel/bugbuddy \
 		glade:${PORTSDIR}/devel/glade \
 		${LOCALBASE}/lib/python1.5/site-packages/_appletmodule.so:${PORTSDIR}/x11-toolkits/py-gnome \
-		${X11BASE}/share/gnome/help/users-guide/aboutug.html:${PORTSDIR}/misc/gnomeusersguide \
+		${X11BASE}/share/gnome/help/users-guide/C/aboutug.html:${PORTSDIR}/misc/gnomeusersguide \
 		gcalc:${PORTSDIR}/misc/gnomeutils \
 		gnomecard:${PORTSDIR}/deskutils/gnomepim \
 		${X11BASE}/share/gnome/sounds/startup.wav:${PORTSDIR}/audio/gnomeaudio \
