@@ -2,11 +2,12 @@
 # Date created:		10 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/irc/scrollz/Makefile,v 1.10 2001/02/19 13:21:18 roam Exp $
+# $FreeBSD: ports/irc/scrollz/Makefile,v 1.11 2001/07/06 16:07:38 kevlo Exp $
 #
 
 PORTNAME=	scrollz
 PORTVERSION=	1.8l
+PORTREVISION=	1
 CATEGORIES=	irc ipv6
 MASTER_SITES=	ftp://ftp.scrollz.com/pub/ScrollZ/source/ \
 		ftp://ftp.stealth.net/pub/mirrors/ftp.scrollz.com/pub/ScrollZ/source
@@ -14,6 +15,7 @@ DISTNAME=	ScrollZ-${PORTVERSION}
 
 MAINTAINER=	petef@databits.net
 
+IS_INTERACTIVE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--enable-ipv6
 
@@ -23,5 +25,12 @@ PLIST_SUB+=	SCROLLZ_VER="${PORTVERSION}"
 
 post-patch:
 	@${PERL} -pi -e 's!^IRCLIB =!IRCLIB ?=!' ${WRKSRC}/Makefile.in
+
+pre-build:
+.if !defined(BATCH)
+	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${CC} ${CFLAGS} -o SZdist \
+		SZdist.c)
+	@(cd $(WRKSRC); ./SZdist)
+.endif
 
 .include <bsd.port.mk>
