@@ -3,10 +3,10 @@
 # Date created:		19 Sep 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.6 1999/10/29 10:26:34 nakai Exp $
+# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.7 2000/01/27 17:24:34 green Exp $
 #
 
-DISTNAME=	xpuyopuyo-0.3.1
+DISTNAME=	xpuyopuyo-0.3.2
 CATEGORIES=	games
 MASTER_SITES=	http://chaos2.org/xpuyopuyo/ \
 		http://lenin.dabney.caltech.edu/~justins/xpuyopuyo/
@@ -26,6 +26,6 @@ CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"
 CONFIGURE_ARGS=	--enable-rotate-fixed --without-gnome
 
-MAN1=		xpuyopuyo.1
+MAN6=		xpuyopuyo.6
 
 .include <bsd.port.mk>
