@@ -2,11 +2,12 @@
 # Date created:		16 August 2001
 # Whom:	      		Johann Visagie <wjv@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-twisted/Makefile,v 1.3 2001/08/17 15:18:14 wjv Exp $
+# $FreeBSD: ports/devel/py-twisted/Makefile,v 1.4 2001/08/20 14:07:08 wjv Exp $
 #
 
 PORTNAME=	twisted
 PORTVERSION=	0.10.0
+PORTREVISION=	1
 CATEGORIES=	devel net python
 MASTER_SITES=	http://twistedmatrix.com/downloads/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,11 +21,13 @@ RUN_DEPENDS=	${PYTHON_SITELIBDIR}/unittest.py:${PORTSDIR}/devel/py-unit
 USE_PYTHON=	yes
 
 EXAMPLESDIR=	${PREFIX}/share/examples/twisted
-
+SCRIPTS=	accepttests build-deb cpyrght faucet gnusto im malyon \
+		manhole mapeditor mktap runtests tap2deb twistd \
+		twistd-debug
 MAN1=		faucet.1 gnusto.1 im.1 manhole.1 mktap.1 tap2deb.1 twistd.1
 
 post-patch:
-	@ ${PERL} -pi.orig -e 's/from pyunit import/import/g' \
+	@ ${PERL} -pi -e 's/from pyunit import/import/g' \
 	  ${WRKSRC}/bin/runtests ${WRKSRC}/twisted/test/*.py
 
 do-build:
@@ -33,8 +36,12 @@ do-build:
 do-install:
 	@ cd ${WRKSRC} && ${PYTHON_CMD} setup.py install -c -O1 \
 	  --prefix=${PREFIX}
-	@ ${INSTALL_SCRIPT} ${WRKSRC}/bin/* ${PREFIX}/bin
-	@ ${INSTALL_MAN} ${WRKSRC}/doc/man/*.1 ${MANPREFIX}/man/man1
+.for script in ${SCRIPTS}
+	@ ${INSTALL_SCRIPT} ${WRKSRC}/bin/${script} ${PREFIX}/bin
+.endfor
+.for manpage in ${MAN1}
+	@ ${INSTALL_MAN} ${WRKSRC}/doc/man/${manpage} ${MANPREFIX}/man/man1
+.endfor
 
 post-install:
 .if !defined(NOPORTDOCS)
