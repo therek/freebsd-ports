@@ -3,13 +3,14 @@
 # Date created:		22 September 1999
 # Whom:			Markus Holmberg <saska@acc.umu.se>
 #
-# $FreeBSD: ports/audio/mpmf20/Makefile,v 1.1.1.1 1999/09/27 17:51:11 cpiazza Exp $
+# $FreeBSD: ports/audio/mpmf20/Makefile,v 1.2 1999/09/27 18:17:43 cpiazza Exp $
 #
 
 DISTNAME=	mpmf20
 PKGNAME=	mpmf20-1.01
 CATEGORIES=	audio
-MASTER_SITES=	http://www.world.co.uk/sba/
+MASTER_SITES=	http://www.world.co.uk/sba/ \
+		http://www.acc.umu.se/~saska/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
@@ -18,8 +19,5 @@ MAKEFILE=	makefile
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/mpmf20 ${PREFIX}/bin
-
-post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
 
 .include <bsd.port.mk>
