@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.310 2000/11/02 09:01:19 nakai Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.311 2000/11/02 14:39:31 knu Exp $
 #
 
     SUBDIR += Canna
@@ -125,6 +125,7 @@
     SUBDIR += kterm16c
     SUBDIR += lambdamoo
     SUBDIR += latex2html
+    SUBDIR += leafrogue
     SUBDIR += less
     SUBDIR += lesw
     SUBDIR += libicq
