@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.24 2003/04/05 06:12:02 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.25 2003/04/05 07:42:11 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -442,9 +442,6 @@ USE_GNOME=	imlib
 .endif
 .if defined(USE_GLIB)
 USE_GNOME=	glib12
-.endif
-.if defined(USE_GNOMECTRL)
-USE_GNOME=	gnomeprefix gnomehack libcapplet
 .endif
 
 # Hack USE_GNOME to the modular infrastructure for port maintainers that
