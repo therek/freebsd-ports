@@ -3,7 +3,7 @@
 # Date created:		Tue Mar 23 10:18:20 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/jdk-tutorial/Makefile,v 1.8 1999/08/25 06:16:24 obrien Exp $
 #
 
 DISTNAME=	tutorial
@@ -21,9 +21,6 @@ PLIST_SUB+=	VERSION=${VERSION}
 PKGMESSAGE= ${WRKDIR}/MESSAGE
 
 .include <bsd.port.pre.mk>
-
-post-extract:
-	(cd ${WRKSRC} && ${CHOWN} -R root.wheel *)
 
 do-install:
 	${MKDIR} ${PREFIX}/jdk${VERSION}/docs/books/tutorial
