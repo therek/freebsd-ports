@@ -2,11 +2,11 @@
 # Date created:				16 September 2000
 # Whom:					eric
 #
-# $FreeBSD: ports/audio/wmusic/Makefile,v 1.2 2001/03/05 03:46:59 steve Exp $
+# $FreeBSD: ports/audio/wmusic/Makefile,v 1.3 2001/04/09 10:41:31 eric Exp $
 #
 
 PORTNAME=	wmusic
-PORTVERSION=	1.4.4
+PORTVERSION=	1.4.5
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	http://hadess.net/files/
 
