@@ -2,11 +2,11 @@
 # Date created:				5 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/kcd/Makefile,v 1.4 2000/05/07 21:41:50 jedgar Exp $
+# $FreeBSD: ports/misc/kcd/Makefile,v 1.5 2000/06/14 13:21:26 sobomax Exp $
 #
 
 PORTNAME=	kcd
-PORTVERSION=	4.11.2
+PORTVERSION=	5.0.1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -25,7 +25,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/ncurses -I${LOCALBASE}/include" 
 MAN1=		kcd.1
 
 post-patch:
-	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/*.cc
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/kcd.1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/kcdmain ${PREFIX}/bin
@@ -36,7 +36,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/kcd.sh.init ${PREFIX}/share/examples/kcd
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/kcd
-	${INSTALL_DATA} ${WRKSRC}/CHANGES ${PREFIX}/share/doc/kcd
+	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${PREFIX}/share/doc/kcd
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/kcd
 .endif
 
