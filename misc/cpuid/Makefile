@@ -3,7 +3,7 @@
 # Date created:			May 22, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/cpuid/Makefile,v 1.1 2001/05/22 14:31:29 ijliao Exp $
 #
 
 PORTNAME=	cpuid
@@ -13,6 +13,7 @@ MASTER_SITES=	http://people.qualcomm.com/karn/code/cpuid/
 
 MAINTAINER=	ports@FreeBSD.org
 
+ONLY_FOR_ARCHS=	i386
 ALL_TARGET=	${PORTNAME}
 
 do-install:
