@@ -2,13 +2,13 @@
 # Date created:				27 Feb 2000
 # Whom:					Dan Papasian <bugg@bugg.strangled.net>
 #
-# $FreeBSD: ports/games/gtetrinet/Makefile,v 1.3 2000/05/29 03:27:51 steve Exp $
+# $FreeBSD: ports/games/gtetrinet/Makefile,v 1.4 2000/06/01 16:25:40 ade Exp $
 
 PORTNAME=	gtetrinet
-PORTVERSION=	0.4
+PORTVERSION=	0.4.1
 CATEGORIES=	games gnome
-MASTER_SITES=	ftp://ftp.netis.com/pub/mirrors1/linuxberg/files/gnome/entertain/ \
-		ftp://ftp.sunsite.auc.dk/disk1/linuxberg.com/files/gnome/entertain/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	gtetrinet
 
 MAINTAINER=	bugg@bugg.strangled.net
 
