@@ -2,7 +2,7 @@
 # Date created:			19 February 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby_static/Makefile,v 1.7 2001/09/17 07:45:58 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ruby_static
@@ -22,8 +22,7 @@ USE_AUTOCONF=	yes
 # Beware, because gdbm is under GPL, you must treat the whole binary
 # as GPL says.
 EXT_PORTS=	archivers/ruby-zlib \
-		devel/ruby-strscan \
-		sysutils/ruby-syslog
+		devel/ruby-strscan
 _PORTSDIR=	${.CURDIR}/../..
 _RUBY_PORTDIR=	${_PORTSDIR}/${RUBY_PORT}
 
