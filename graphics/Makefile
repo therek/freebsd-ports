@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.227 2000/10/05 04:03:51 nakai Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.228 2000/10/14 09:36:46 knu Exp $
 #
 
     SUBDIR += 4va
@@ -196,6 +196,7 @@
     SUBDIR += xfpovray
     SUBDIR += xfractint
     SUBDIR += xgrasp
+    SUBDIR += xine
     SUBDIR += xli
     SUBDIR += xmagv
     SUBDIR += xmandel
