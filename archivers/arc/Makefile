@@ -2,11 +2,12 @@
 # Date created:         31 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/arc/Makefile,v 1.11 2000/04/08 23:17:38 mharo Exp $
+# $FreeBSD: ports/archivers/arc/Makefile,v 1.12 2001/01/16 17:29:59 sobomax Exp $
 #
 
 PORTNAME=	arc
 PORTVERSION=	5.21e.8
+PORTREVISION=   1
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.kiarchive.ru/pub/unix/arcers/
 DISTNAME=	arc521e.pl8
