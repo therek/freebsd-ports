@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.32 2001/01/16 17:30:29 sobomax Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.33 2001/01/22 10:39:32 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
@@ -153,7 +153,7 @@ pre-install: setoptions
 .endif
 
 post-install:
-	${LN} -s ${PREFIX}/etc/vmware /etc/vmware
+	${LN} -sf ${PREFIX}/etc/vmware /etc/
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>
