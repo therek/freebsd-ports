@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.73 2002/03/13 22:57:19 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.74 2002/03/26 22:19:59 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -104,8 +104,8 @@ RUBY?=			${LOCALBASE}/bin/${RUBY_NAME}
 RUBY_VERSION?=		1.7.2
 RUBY_PORT?=		lang/ruby${RUBY_R}-devel
 RUBY_DISTVERSION?=	${RUBY_VERSION:R}-2002.03.26
-#RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-yyyy.mm.dd.diff.bz2
-RUBY_PORTVERSION?=	${RUBY_VERSION}.2002.03.26
+RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-2002.04.12.diff.bz2
+RUBY_PORTVERSION?=	${RUBY_VERSION}.2002.04.12
 .else
 RUBY_VERSION?=		1.6.7
 RUBY_DISTVERSION?=	${RUBY_VERSION}
