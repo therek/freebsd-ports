@@ -2,14 +2,14 @@
 # Date created:         March 1st, 2001
 # Whom:                 Konrad Heuer
 #
-# $FreeBSD: ports/sysutils/rmonitor/Makefile,v 1.2 2001/06/23 14:38:21 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rmonitor
 PORTVERSION=	1.2
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://gwdu60.gwdg.de/pub/FreeBSD/misc/ \
-		ftp://gwdu61.gwdg.de/pub/FreeBSD/misc/
+MASTER_SITES=	ftp://gwdu111.gwdg.de/pub/FreeBSD/misc/ \
+		ftp://gwdu112.gwdg.de/pub/FreeBSD/misc/
 
 MAINTAINER=	kheuer@gwdu60.gwdg.de
 
