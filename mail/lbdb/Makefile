@@ -2,7 +2,7 @@
 # Date created:		2 February 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD: ports/mail/lbdb/Makefile,v 1.1.1.1 2000/02/03 13:46:39 nbm Exp $
+# $FreeBSD: ports/mail/lbdb/Makefile,v 1.2 2000/04/13 19:59:49 cpiazza Exp $
 #
 
 PORTNAME=	lbdb
@@ -18,6 +18,6 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=--libdir=${PREFIX}/libexec
 USE_GMAKE=	YES
 
-MAN1=		nodelist2lbdb.1 lbdbq.1 lbdb-fetchaddr.1
+MAN1=		nodelist2lbdb.1 lbdbq.1 lbdb-fetchaddr.1 lbdb_dotlock.1
 
 .include <bsd.port.mk>
