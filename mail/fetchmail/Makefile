@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.109 2000/11/14 15:29:23 kevlo Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.110 2000/11/27 01:00:19 roam Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, Tk, X11, etc..
@@ -19,7 +19,7 @@ MAINTAINER=	ve@sci.fi
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 .if defined(WITH_X11)
-RUN_DEPENDS=	${LOCALBASE}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
+RUN_DEPENDS=	${LOCALBASE}/lib/python2.0/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 .endif
 
 GNU_CONFIGURE=	yes
