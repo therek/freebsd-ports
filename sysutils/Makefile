@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.212 2001/08/27 17:17:03 roam Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.213 2001/08/29 00:18:25 lioux Exp $
 #
     SUBDIR += yawho
 
@@ -174,6 +174,7 @@
     SUBDIR += wmbattery
     SUBDIR += wmcpuload
     SUBDIR += wmcube
+    SUBDIR += wmcube-gdk
     SUBDIR += wmfire
     SUBDIR += wmfsm
     SUBDIR += wmhm
