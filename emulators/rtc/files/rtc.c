@@ -22,7 +22,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD: ports/emulators/rtc/files/rtc.c,v 1.6 2001/09/16 07:05:18 knu Exp $
+ * $FreeBSD: ports/emulators/rtc/files/rtc.c,v 1.7 2003/03/23 12:36:58 nork Exp $
  * $vmFreeBSD: vmware/vmnet-only/freebsd/vmnet.c,v 1.14 2000/01/23 22:29:50 vsilyaev Exp $
  */
 
@@ -266,11 +266,12 @@ rtc_poll(dev_t dev, int events, struct proc *p)
 }
 
 /* -=-=-=-=-=-=-=-=-= module load/unload stuff -=-=-=-=-=-=-=-=-= */
+static dev_t rtc_dev = NULL;
+
 static int
 init_module(void)
 {
 	int error = 0;
-	dev_t dev;
 
 #if __FreeBSD_version < 500104
    	error = cdevsw_add(&rtc_cdevsw);
@@ -278,8 +279,8 @@ init_module(void)
 		return error;
 #endif
 
-  	dev = make_dev(&rtc_cdevsw, 0, UID_ROOT, GID_WHEEL, 0600, DEVICE_NAME); 
-	if (dev==NULL)
+	rtc_dev = make_dev(&rtc_cdevsw, 0, UID_ROOT, GID_WHEEL, 0600, DEVICE_NAME);
+	if (rtc_dev==NULL)
 		error = ENOMEM;
 
 	return error;
@@ -298,6 +299,7 @@ cleanup_module(void)
 		DLog(Lfail, "%p busy", sc);
 		return error;
 	}
+	destroy_dev(rtc_dev);
 #if __FreeBSD_version < 500104
 	error = cdevsw_remove(&rtc_cdevsw);
 #endif
