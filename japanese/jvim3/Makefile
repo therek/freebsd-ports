@@ -2,15 +2,15 @@
 # Date created:         98/11/17
 # Whom:                 Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.15 2000/02/07 16:40:25 taoka Exp $
+# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.16 2000/04/11 14:14:10 knu Exp $
 #
 
 PORTNAME=	jvim
-PORTVERSION=	3.0.2.0j
+PORTVERSION=	3.0.j2.1b
 PKGNAMESUFFIX=	${INPUT_METHOD}
 CATEGORIES=	japanese editors
 MASTER_SITES=	ftp://ftp.vim.org/pub/vim/unix/ \
-		http://hp.vector.co.jp/authors/VA003457/vim/vim3/2.0/
+		http://hp.vector.co.jp/authors/VA003457/vim/vim3/2.1b/
 DISTFILES=	vim-3.0.tar.gz \
 		${JPATCH}
 
@@ -27,7 +27,7 @@ WRKSRC=		${WRKDIR}/vim
 MAKEFILE=	makjunix.mak
 MAN1=		jvim3.1
 
-JPATCH=		jvim.2.0.tar.gz
+JPATCH=		jvim.2.1beta.tar.gz
 PLIST_SUB=	VERSION=${PORTVERSION}
 PORT_DOCDIR=	${PREFIX}/share/doc/ja-jvim-${PORTVERSION}
 # -DUSE_X11 is the cause of a problem treating Japanese
