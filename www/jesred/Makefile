@@ -2,13 +2,17 @@
 # Date created:		Mon Nov  8 17:42:20 MSK 1999
 # Whom:			dsh@vlink.ru
 #
-# $FreeBSD: ports/www/jesred/Makefile,v 1.3 2000/04/10 00:05:29 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jesred
 PORTVERSION=	1.2.1
 CATEGORIES=	www
-MASTER_SITES=	http://ivs.cs.uni-magdeburg.de/~elkner/webtools/src/
+MASTER_SITES=	http://ivs.cs.uni-magdeburg.de/~elkner/webtools/src/ \
+		http://www.scn.rain.com/pub/network/www/ \
+		http://www.cit.uws.edu.au/pub/unix/web/proxy/ \
+		http://www.csu.ac.ru/pub/OS/Unix/network/www/squid/Addition/ \
+		http://www.acad.bg/ftp/pub/src/misc/
 DISTNAME=	jesred-1.2pl1
 
 MAINTAINER=	dsh@vlink.ru
