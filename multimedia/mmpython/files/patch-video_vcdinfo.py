@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/multimedia/mmpython/files/patch-video_vcdinfo.py,v 1.1 2004/06/10 19:04:24 krion Exp $
 
 --- video/vcdinfo.py.orig	Thu Jun 10 20:58:51 2004
 +++ video/vcdinfo.py	Thu Jun 10 20:59:19 2004
@@ -10,9 +10,9 @@ $FreeBSD$
 -        f.seek(32808, 0)
 -        buffer = f.read(50000)
 -        f.close()
-+        f.seek(32768, 0)
-+        buffer = f.read(50040)
-+	f.close()
++        f.seek(32768, 0) # FreeBSD requires seeking to 2048 multiple boundary.
++        buffer = f.read(50040) # Read 40 more to compensate for above seek.
++        f.close()
  
          if buffer.find('SVCD') > 0 and buffer.find('TRACKS.SVD') > 0 and \
                 buffer.find('ENTRIES.SVD') > 0:
