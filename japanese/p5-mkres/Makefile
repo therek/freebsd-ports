@@ -2,11 +2,11 @@
 # Date created:		29 Jun 1998
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/p5-mkres/Makefile,v 1.7 2000/08/27 06:13:34 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mkres
-PORTVERSION=	1.4
+PORTVERSION=	1.6
 CATEGORIES=	japanese perl5
 MASTER_SITES=	http://ftp.infonets.hiroshima-u.ac.jp/~taoka/FreeBSD/tt/
 EXTRACT_SUFX=	# none
