@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.417 2002/07/05 09:11:29 sobomax Exp $
+# $FreeBSD$
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -709,17 +709,6 @@ FILESDIR?=		${MASTERDIR}/files
 SCRIPTDIR?=		${MASTERDIR}/scripts
 PKGDIR?=		${MASTERDIR}
 
-# Special macro for doing in-place file editing using regexps
-.if defined(USE_REINPLACE)
-REINPLACE_ARGS?=	-i.bak
-.if ${OSVERSION} < 460101 || ( ${OSVERSION} >= 500000 && ${OSVERSION} < 500034 )
-BUILD_DEPENDS+=	${LOCALBASE}/bin/sed_inplace:${PORTSDIR}/textproc/sed_inplace
-REINPLACE_CMD?=	${LOCALBASE}/bin/sed_inplace ${REINPLACE_ARGS}
-.else
-REINPLACE_CMD?=	${SED} ${REINPLACE_ARGS}
-.endif
-.endif
-
 .if defined(USE_IMAKE) && !defined(USE_X_PREFIX)
 USE_X_PREFIX=	yes
 .endif
@@ -1055,6 +1044,17 @@ CONFIGURE_ARGS+=--x-libraries=${X11BASE}/lib --x-includes=${X11BASE}/include
 
 .if exists(${PORTSDIR}/../Makefile.inc)
 .include "${PORTSDIR}/../Makefile.inc"
+.endif
+
+# Special macro for doing in-place file editing using regexps
+.if defined(USE_REINPLACE)
+REINPLACE_ARGS?=	-i.bak
+.if ${OSVERSION} < 460101 || ( ${OSVERSION} >= 500000 && ${OSVERSION} < 500036 )
+BUILD_DEPENDS+=	${LOCALBASE}/bin/sed_inplace:${PORTSDIR}/textproc/sed_inplace
+REINPLACE_CMD?=	${LOCALBASE}/bin/sed_inplace ${REINPLACE_ARGS}
+.else
+REINPLACE_CMD?=	${SED} ${REINPLACE_ARGS}
+.endif
 .endif
 
 # Names of cookies used to skip already completed stages
