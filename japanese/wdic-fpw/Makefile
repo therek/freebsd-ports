@@ -2,7 +2,7 @@
 # Date created:        	2000.07.12
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/wdic-fpw/Makefile,v 1.2 2000/07/19 15:46:48 taoka Exp $
+# $FreeBSD: ports/japanese/wdic-fpw/Makefile,v 1.3 2000/11/02 09:21:44 taoka Exp $
 #
 
 PORTNAME=	wdic-fpw
@@ -36,8 +36,13 @@ post-extract:
 	${CP} ${LOCALBASE}/share/doc/freepwing/fpwutils.mk ${WRKSRC}
 	cd ${WRKSRC}/wdic${DICT_VERSION}; \
 	for i in ${DICTFILES}; do \
-		lha xqf ${DISTDIR}/$$i; \
+		echo $$i; \
+		lha xf ${DISTDIR}/$$i; \
 	done
+# for debugging on bento
+.if defined(PARALLEL_PACKAGE_BUILD)
+	ls ${WRKSRC}/wdic${DICT_VERSION}
+.endif
 
 post-build:
 	cd ${WRKSRC}; nkf -eSd catalogs.sjis > catalogs.txt; \
