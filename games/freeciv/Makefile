@@ -1,16 +1,15 @@
 # New ports collection makefile for:	freeciv
-# Version required:	1.8.3
+# Version required:	1.10.0
 # Date created:		Jun 20 1997
 # Whom:			ada@bsd.org
 #
-# $FreeBSD: ports/games/freeciv/Makefile,v 1.28 1999/10/10 09:38:28 asami Exp $
+# $FreeBSD: ports/games/freeciv/Makefile,v 1.29 1999/10/21 11:43:54 sheldonh Exp $
 #
 
-DISTNAME=	freeciv-1.9.0
+DISTNAME=	freeciv-1.10.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.freeciv.org/pub/freeciv/stable_version/ \
-		ftp://ftp.pvv.ntnu.no/pub/freeciv/stable_version/ \
-		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
+		ftp://ftp.pvv.ntnu.no/pub/freeciv/stable_version/
 
 MAINTAINER=	sheldonh@freebsd.org
 
