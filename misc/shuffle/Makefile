@@ -2,14 +2,13 @@
 # Date created:			3 June 2001
 # Whom:				Dima Dorfman <dima@unixfreak.org>
 #
-# $FreeBSD: ports/misc/shuffle/Makefile,v 1.1 2001/06/14 05:43:18 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	shuffle
 PORTVERSION=	20010603
 CATEGORIES=	misc
-MASTER_SITES=	${MASTER_SITE_LOCAL} \
-		http://www.unixfreak.org/~dima/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	dd
 
 MAINTAINER=	dd@FreeBSD.org
