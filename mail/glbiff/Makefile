@@ -2,7 +2,7 @@
 # Date created:				18 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/mail/glbiff/Makefile,v 1.14 2000/04/30 00:28:02 steve Exp $
+# $FreeBSD: ports/mail/glbiff/Makefile,v 1.15 2000/08/03 09:25:23 asami Exp $
 #
 
 PORTNAME=	glbiff
@@ -11,11 +11,16 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.dgp.utoronto.ca/~mac/projects/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	petef@databits.net
 
 USE_X_PREFIX=	yes
 USE_MESA=	yes
 GNU_CONFIGURE=	yes
+
+CFLAGS+=	${PTHREAD_CFLAGS} ${PTHREAD_LIBS:S/"//g}
+CONFIGURE_ENV=	CFLAGS="${CFLAGS}"
+MAKE_ENV=	PTHREAD_LIBS="${PTHREAD_LIBS}" \
+		PTHREAD_CFLAGS="${PTHREAD_CFLAGS}"
 
 MAN1=		glbiff.1
 MAN5=		glbiffrc.5
@@ -32,5 +37,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/glbiff
 .endfor
 .endif
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
