@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.268 2000/03/07 09:45:54 flathill Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.269 2000/03/24 16:25:41 imura Exp $
 #
 
     SUBDIR += Canna
@@ -121,6 +121,8 @@
     SUBDIR += libimg
     SUBDIR += libjcode
     SUBDIR += libslang
+    SUBDIR += linux-netscape47-communicator
+    SUBDIR += linux-netscape47-navigator
     SUBDIR += linux_locale
     SUBDIR += lipsf
     SUBDIR += lookup-emacs20
