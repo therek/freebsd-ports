@@ -2,12 +2,12 @@
 # Date created:         9 January 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.21 2001/06/07 00:15:36 jmz Exp $
+# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.22 2001/06/23 00:03:20 jmz Exp $
 #
 
 VERSION=	4.1
-REVISION=	6
-PORTREVISION=	1
+REVISION=	9
+PORTREVISION=	0
 
 PORTNAME=	xloadimage
 PORTVERSION=	${VERSION}.${REVISION}
@@ -36,6 +36,10 @@ MLINKS=		xloadimage.1 xsetbg.1 \
 
 post-patch:
 	@chmod a+rx ${WRKSRC}/configure
+	@cd ${WRKSRC}; ${MV} xloadimage.man xloadimage.man.old; \
+		${SED} -e s:/etc/X11/Xloadimage:${PREFIX}/etc/xloadimagerc: \
+		       -e s:/usr/lib/xloadimagerc:${PREFIX}/etc/xloadimagerc: \
+		< xloadimage.man.old > xloadimage.man
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xloadimage ${PREFIX}/bin
@@ -48,5 +52,8 @@ do-install:
 	mkdir -p ${PREFIX}/share/examples/xloadimage
 	${INSTALL_DATA} ${WRKSRC}/xloadimagerc \
 		${PREFIX}/share/examples/xloadimage/xloadimagerc
+
+post-install:
+	@${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>
