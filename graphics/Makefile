@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.148 1999/10/03 21:33:09 dan Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.149 1999/10/06 09:04:40 tg Exp $
 #
 
     SUBDIR += 4va
@@ -58,6 +58,7 @@
     SUBDIR += gyvekernel
     SUBDIR += hdf
     SUBDIR += hobbes-icons-xpm
+    SUBDIR += hppsmtools
     SUBDIR += hpscan
     SUBDIR += icod
     SUBDIR += imlib
