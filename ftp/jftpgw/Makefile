@@ -2,7 +2,7 @@
 # Date created:         Sun Jul 15 13:19:01 CEST 2001
 # Whom:                 se
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/jftpgw/Makefile,v 1.1 2001/07/15 13:30:19 se Exp $
 #
 
 PORTNAME=	jftpgw
@@ -22,7 +22,7 @@ do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/jftpgw ${PREFIX}/sbin/
 		${INSTALL_DATA} ${WRKSRC}/jftpgw.conf.sample ${PREFIX}/etc/
 		@${SED} -e 's:@PREFIX@:${PREFIX}:g' \
-			${FILESDIR}/jftpgw.sh.in > ${FILESDIR}/jftpgw.sh
-		${INSTALL_SCRIPT} ${FILESDIR}/jftpgw.sh ${PREFIX}/etc/rc.d
+			${FILESDIR}/jftpgw.sh.in > ${WRKDIR}/jftpgw.sh
+		${INSTALL_SCRIPT} ${WRKDIR}/jftpgw.sh ${PREFIX}/etc/rc.d
 
 .include <bsd.port.mk>
