@@ -2,7 +2,7 @@
 # Date created:         7 April 1999
 # Whom:                 futatuki
 #
-# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.15 2000/04/08 21:23:24 mharo Exp $
+# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.16 2000/04/17 00:17:02 reg Exp $
 #
 
 PORTNAME=		cdrdao
@@ -34,7 +34,7 @@ XCDRDAO=		yes
 
 .if defined(XCDRDAO)
 USE_NEWGCC=	yes
-LIB_DEPENDS+=		gtkmm-1.0.7:${PORTSDIR}/x11-toolkits/gtk--
+LIB_DEPENDS+=		gtkmm-1.2:${PORTSDIR}/x11-toolkits/gtk--
 MAN1+=		xcdrdao.1
 PLIST=${PKGDIR}/PLIST.xcdrdao
 .else
