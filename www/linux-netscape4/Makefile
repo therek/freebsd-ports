@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.17 2001/04/12 18:56:15 tom Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	linux-netscape
@@ -13,6 +13,9 @@ MASTER_SITE_SUBDIR=	tom
 DISTNAME=	communicator-v408-export.x86-unknown-linux2.0_libc5
 
 MAINTAINER=	ports@FreeBSD.org
+
+# This should have been marked FORBIDDEN long ago. - nectar 2002/02/10
+FORBIDDEN=	"Multiple vulnerabilities: see http://www.securityfocus.com/bid/2637, http://www.securityfocus.com/bid/1726"
 
 RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base \
 		netscape:${PORTSDIR}/www/netscape-wrapper
