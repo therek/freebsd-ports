@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.377 2000/12/19 12:22:58 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.378 2000/12/21 10:30:23 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -106,6 +106,7 @@
     SUBDIR += gtksheet
     SUBDIR += gtranslator
     SUBDIR += gvd
+    SUBDIR += happy
     SUBDIR += i386-rtems-binutils
     SUBDIR += i386-rtems-chill
     SUBDIR += i386-rtems-g77
