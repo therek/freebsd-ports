@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.187 2001/05/20 02:54:49 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.188 2001/05/25 19:09:35 ijliao Exp $
 #
     SUBDIR += yawho
 
@@ -144,6 +144,7 @@
     SUBDIR += unquote
     SUBDIR += upsd
     SUBDIR += upsmon
+    SUBDIR += userlist
     SUBDIR += uwatch
     SUBDIR += webmin
     SUBDIR += whowatch
