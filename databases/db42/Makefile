@@ -3,12 +3,12 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/db/Makefile,v 1.16 1999/08/25 05:21:07 obrien Exp $
+# $FreeBSD: ports/databases/db/Makefile,v 1.17 1999/08/27 21:13:43 mharo Exp $
 #
 
-DISTNAME=       db-2.7.5
+DISTNAME=       db-2.7.7
 CATEGORIES=	databases
-MASTER_SITES=   ftp://ftp.sleepycat.com/pub/
+MASTER_SITES=	http://www.sleepycat.com/update/2.7.7/
 
 MAINTAINER=	josh@ican.net
 
