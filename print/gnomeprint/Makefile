@@ -2,11 +2,11 @@
 # Date created:				15 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.24 2000/08/04 01:19:15 ade Exp $
+# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.25 2000/08/04 16:11:25 ade Exp $
 #
 
 PORTNAME=	gnomeprint
-PORTVERSION=	0.20
+PORTVERSION=	0.24
 CATEGORIES=	print gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-print
@@ -14,11 +14,14 @@ DISTNAME=	gnome-print-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 
-BUILD_DEPENDS=	gs:${PORTSDIR}/print/ghostscript5
+BUILD_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		xml.5:${PORTSDIR}/textproc/libxml
+		xml.5:${PORTSDIR}/textproc/libxml \
+		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+
+PLIST_SUB=	VERSION=${PORTVERSION}
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
