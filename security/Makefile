@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.202 2001/06/21 11:37:30 knu Exp $
+# $FreeBSD: ports/security/Makefile,v 1.203 2001/06/26 03:28:08 dwcjr Exp $
 #
 
     SUBDIR += aafid2
@@ -33,6 +33,7 @@
     SUBDIR += fakebo
     SUBDIR += find_ddos
     SUBDIR += firewalk
+    SUBDIR += fpm
     SUBDIR += fragrouter
     SUBDIR += fressh
     SUBDIR += fuzz
