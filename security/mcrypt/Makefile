@@ -4,7 +4,7 @@
 # based on the OpenBSD port
 #
 # $OpenBSD: Makefile,v 1.1.1.1 2000/11/27 15:56:03 avsm Exp $
-# $FreeBSD$
+# $FreeBSD: ports/security/mcrypt/Makefile,v 1.1 2001/03/23 05:16:45 trevor Exp $
 #
 
 PORTNAME=	mcrypt
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://argeas.cs-net.gr/pub/unix/mcrypt/ \
 		ftp://ftp.ntua.gr/pub/security/mcrypt/
 #		http://mcrypt.hellug.gr/mcrypt/
 
-MAINTAINER=	Trevor Johnson <trevor@FreeBSD.org>
+MAINTAINER=	trevor@FreeBSD.org
 
 LIB_DEPENDS=	mcrypt.4:${PORTSDIR}/security/libmcrypt/ \
 		mhash.2:${PORTSDIR}/security/mhash/ \
