@@ -3,7 +3,7 @@
 # Date created:         20 July 1997
 # Whom:                 Yukihiro Nakai<Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.11 1999/08/25 05:49:37 obrien Exp $
 #
 
 DISTNAME=	s9x119asrc
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.snes9x.com/zips/
 
 MAINTAINER=	nacai@iname.com
 
-BUILD_DEPENDS=	egcc:${PORTSDIR}/lang/pgcc
+BUILD_DEPENDS=	pgcc:${PORTSDIR}/lang/pgcc
 BUILD_DEPENDS+=	nasm:${PORTSDIR}/devel/nasm
 
 ONLY_FOR_ARCHS=	i386
