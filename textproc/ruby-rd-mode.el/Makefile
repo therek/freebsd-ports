@@ -2,11 +2,11 @@
 # Date created:		12 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/ruby-rd-mode.el/Makefile,v 1.1 2001/05/11 19:53:04 knu Exp $
 #
 
 PORTNAME=	rd-mode.el
-PORTVERSION=	0.6.8
+PORTVERSION=	0.6.10
 CATEGORIES=	textproc ruby elisp
 MASTER_SITES=	# none
 PKGNAMEPREFIX=	ruby-	# not ${RUBY_PKGNAMEPREFIX} since this is not version specific
@@ -31,9 +31,6 @@ do-extract:
 	${LN} -sf `cd ${.CURDIR}/../ruby-rdtool && ${MAKE} -V WRKSRC`/utils ${WRKSRC}
 
 do-install:
-	${MKDIR} ${RUBY_ELISPDIR}
-	${MKDIR} ${EMACSLISPDIR}
-	${MKDIR} ${XEMACSLISPDIR}
 .for f in ${ELISP_FILES}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_ELISPDIR}/
 	${LN} -sf ${RUBY_ELISPDIR}/${f} ${EMACSLISPDIR}/
