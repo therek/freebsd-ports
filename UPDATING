@@ -6,7 +6,7 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
-20040721:
+20040723:
   AFFECTS: users of FreeBSD-current, users of xorg
   AUTHOR: anholt@FreeBSD.org
 
@@ -498,4 +498,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.47 2004/07/19 09:34:42 ale Exp $
+$FreeBSD: ports/UPDATING,v 1.48 2004/07/23 22:09:30 anholt Exp $
