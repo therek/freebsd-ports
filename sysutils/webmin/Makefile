@@ -2,11 +2,11 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.22 2000/11/25 08:25:51 dougb Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.23 2000/11/25 20:29:42 demon Exp $
 #
 
 PORTNAME=	webmin
-PORTVERSION=	0.82
+PORTVERSION=	0.83
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.webmin.com/webmin/download/
 
