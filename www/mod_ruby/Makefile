@@ -2,11 +2,12 @@
 # Date created:			12 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/mod_ruby/Makefile,v 1.11 2001/03/05 12:35:06 knu Exp $
+# $FreeBSD: ports/www/mod_ruby/Makefile,v 1.12 2001/04/13 10:07:20 knu Exp $
 #
 
 PORTNAME=	mod_ruby
 PORTVERSION=	0.8.0
+PORTREVISION=	1
 CATEGORIES=	www ruby
 MASTER_SITES=	http://www.modruby.net/archive/
 DIST_SUBDIR=	ruby
@@ -14,7 +15,7 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 BUILD_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
-LIB_DEPENDS=	eruby.1:${PORTSDIR}/textproc/eruby
+LIB_DEPENDS=	eruby.9:${PORTSDIR}/textproc/eruby
 RUN_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
 
 USE_RUBY=	yes
