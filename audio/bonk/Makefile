@@ -3,17 +3,14 @@
 # Date created:			Jun 1, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/bonk/Makefile,v 1.1 2001/06/01 18:19:06 ijliao Exp $
 #
 
 PORTNAME=	bonk
-PORTVERSION=	0.4
+PORTVERSION=	0.5
 CATEGORIES=	audio
 MASTER_SITES=	http://yoyo.cc.monash.edu.au/~pfh/bonk/
 
-MAINTAINER=	ijliao@FreeBSD.org
-
-post-patch:
-	@${PERL} -pi -e "s,%%INSTALL_PROGRAM%%,${INSTALL_PROGRAM},g" ${WRKSRC}/Makefile
+MAINTAINER=	ports@FreeBSD.org
 
 .include <bsd.port.mk>
