@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.498 2004/08/15 03:43:08 lioux Exp $
+# $FreeBSD: ports/MOVED,v 1.499 2004/08/16 05:40:34 kris Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1237,3 +1237,4 @@ korean/hlatexp||2004-08-15|Port was unfetchable
 korean/hlatexp-pkfonts1200||2004-08-15|Port was unfetchable
 korean/hlatexp-pkfonts300||2004-08-15|Port was unfetchable
 korean/hlatexp-pkfonts600||2004-08-15|Port was unfetchable 
+misc/sword-modules||2004-08-17|Obsoleted
