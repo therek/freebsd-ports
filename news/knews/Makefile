@@ -2,11 +2,12 @@
 # Date created:         Sun Apr 14 09:23:59 MET DST 1996
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/knews/Makefile,v 1.35 2001/01/03 22:26:04 andreas Exp $
+# $FreeBSD: ports/news/knews/Makefile,v 1.36 2001/01/16 17:32:03 sobomax Exp $
 #
 
 PORTNAME=	knews
 PORTVERSION=	1.0b.1
+PORTREVISION=	1
 CATEGORIES=	news
 MASTER_SITES=	http://www.matematik.su.se/~kjj/
 
