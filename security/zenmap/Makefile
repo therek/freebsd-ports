@@ -4,7 +4,7 @@
 # Date created:			  Tue Aug 04, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nmap/Makefile,v 1.19 1999/08/31 01:51:19 peter Exp $
+# $FreeBSD: ports/security/nmap/Makefile,v 1.20 1999/09/07 10:48:48 obrien Exp $
 #
 
 DISTNAME=	nmap-2.3BETA5
@@ -23,14 +23,11 @@ RUN_DEPENDS=	nmap:${PORTSDIR}/security/nmap
 
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --libdir=${PREFIX}/share/misc
-MAKE_ENV=	GTK_CONFIG="${X11BASE}/bin/gtk12-config"
-
-post-extract:
-	@${RM} -rf ${WRKSRC}/libpcap*
+CONFIGURE_ENV=	GTK_CONFIG="${X11BASE}/bin/gtk12-config"
+WRKSRC:=	${WRKDIR}/${DISTNAME}/nmapfe
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/nmapfe/nmapfe ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/nmapfe ${PREFIX}/bin
 	cd ${PREFIX}/bin && ${LN} -f nmapfe xnmap
 
 .include <bsd.port.post.mk>
