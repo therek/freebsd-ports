@@ -2,11 +2,11 @@
 # Date created:			25 July 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/www/bluefish/Makefile,v 1.18 2001/01/06 08:31:15 clive Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bluefish
-PORTVERSION=	0.6
+PORTVERSION=	0.7
 CATEGORIES=	www editors
 MASTER_SITES=	http://pkedu.fbt.eitn.wau.nl/~olivier/downloads/ \
 		ftp://bluefish.advancecreations.com/pub/bluefish/downloads/ \
@@ -23,11 +23,19 @@ USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_IMLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-install-location="${X11BASE}/lib/bluefish" \
-		--disable-nls
+CONFIGURE_ARGS=	--with-install-location="${X11BASE}/lib/bluefish"
+
+.include <bsd.port.pre.mk>
+
+.if defined(WITH_AUTO_COMPLETE)
+CONFIGURE_ARGS+=	--with-autocomplet
+.endif
 
 MANCOMPRESSED=	no
 MAN1=		bluefish.1
+
+post-patch:
+	@${PERL} -pi -e 's|gtk-config|${GTK_CONFIG}|g;' ${WRKSRC}/configure
 
 post-install:
 .if !defined(NOPORTDOCS)
@@ -37,4 +45,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/bluefish
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
