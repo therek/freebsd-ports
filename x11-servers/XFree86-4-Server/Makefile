@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.77 2000/03/22 21:56:13 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.78 2000/04/13 19:09:05 cpiazza Exp $
 #
 
 PORTNAME=	XFree86
@@ -17,6 +17,7 @@ DISTFILES=	X400src-1.tgz X400src-2.tgz
 
 MAINTAINER=	jmz@FreeBSD.org
 
+WRKSRC=		${WRKDIR}/${DIST_SUBDIR}
 .if (${MACHINE} != "alpha")
 #NO_PACKAGE=	package available from XFree86
 .endif

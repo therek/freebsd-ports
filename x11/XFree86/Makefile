@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.74 2000/03/13 08:29:51 asami Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.75 2000/04/13 19:09:04 cpiazza Exp $
 #
 
 PORTNAME=	XFree86
@@ -20,10 +20,11 @@ PATCH_SITES=	ftp://ftp.xfree.org/pub/XFree86/3.3.6/fixes/ \
 		ftp://ftp.lip6.fr/pub/X11/XFree86/XFree86-3.3.6/fixes/ \
 		ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/3.3.6/fixes/ \
 		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/3.3.6/fixes/
-PATCHFILES= 	fix-01-r128	
+PATCHFILES= 	fix-01-r128
 
 MAINTAINER=	jmz@FreeBSD.org
 
+WRKSRC=		${WRKDIR}/${DIST_SUBDIR}
 IS_INTERACTIVE=	yes	# configure script asks questions
 .if (${MACHINE} != "alpha")
 #NO_PACKAGE=	package available from XFree86
