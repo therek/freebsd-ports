@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.195 2000/04/23 17:13:39 vanilla Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.196 2000/04/30 02:09:53 kris Exp $
 #
 
     SUBDIR += 4va
@@ -135,6 +135,7 @@
     SUBDIR += py-opengl
     SUBDIR += qcread
     SUBDIR += qiv
+    SUBDIR += quickpics
     SUBDIR += qvplay
     SUBDIR += rayshade
     SUBDIR += sane
