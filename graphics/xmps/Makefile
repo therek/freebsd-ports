@@ -2,7 +2,7 @@
 # Date created:			15 June 2000
 # Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xmps/Makefile,v 1.1.1.1 2000/06/15 10:48:01 sobomax Exp $
+# $FreeBSD: ports/graphics/xmps/Makefile,v 1.2 2000/10/05 07:10:48 reg Exp $
 #
 
 PORTNAME=	xmps
@@ -33,5 +33,9 @@ pre-patch:
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \
 		 s|\$$\(datadir\)/aclocal|\$$\(prefix\)/share/aclocal|g ; \
 		 s|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g'
+
+post-configure:
+	@${PERL} -pi -e 's|^deplibs_check_method=.*|deplibs_check_method=pass_all|' \
+		${WRKSRC}/libtool
 
 .include <bsd.port.mk>
