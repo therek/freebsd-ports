@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.67 1999/10/19 03:30:27 kuriyama Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.68 1999/10/19 15:51:58 kuriyama Exp $
 #
 
     SUBDIR += agrep
@@ -42,6 +42,7 @@
     SUBDIR += mswordview
     SUBDIR += nfbtrans
     SUBDIR += nicetext
+    SUBDIR += p5-Text-Template
     SUBDIR += p5-XML-Parser
     SUBDIR += par
     SUBDIR += perl2html
