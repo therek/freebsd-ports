@@ -2,14 +2,14 @@
 # Date created:		1 Ag 1997
 # Whom:			Pedro Giffuni (orig)
 #
-# $FreeBSD: ports/deskutils/xopps/Makefile,v 1.11 2000/04/08 22:04:05 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xopps
 PORTVERSION=	1.13
 CATEGORIES=	deskutils
 MASTER_SITES=	ftp://ftp.weird.com/pub/mirror/ \
-		ftp://devvax.jpl.nasa.gov/pub/xopps/
+		http://dl.droso.net/ports/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
