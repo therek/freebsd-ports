@@ -2,7 +2,7 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.81 2000/09/24 21:40:24 dirk Exp $
+# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.82 2000/10/24 14:32:47 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -148,9 +148,7 @@ CONFIGURE_ARGS+=--without-server
 MAKE_ENV=	CLIENT_ONLY="${CLIENT_ONLY}"
 
 post-install:
-	@${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/mysql-client.sh
-	@${ECHO} "" >> ${PREFIX}/etc/rc.d/mysql-client.sh
-	@${ECHO} "${LDCONFIG} -m ${PREFIX}/lib/mysql" >> ${PREFIX}/etc/rc.d/mysql-client.sh
+	@${SED} "s|%%PREFIX%%|${PREFIX}|g" < ${FILESDIR}/mysql-client.sh > ${PREFIX}/etc/rc.d/mysql-client.sh
 	@${CHMOD} 750 ${PREFIX}/etc/rc.d/mysql-client.sh
 
 .include <bsd.port.mk>
