@@ -2,13 +2,14 @@
 # Date Created:				5 Dec 1997
 # Whom:					Ming-I Hseh <PA@FreeBSD.Ntu.edu.TW>
 #
-# $FreeBSD: ports/chinese/kcfonts/Makefile,v 1.9 2000/04/13 08:28:05 asami Exp $
+# $FreeBSD: ports/chinese/kcfonts/Makefile,v 1.10 2000/04/30 04:15:33 vanilla Exp $
 #
 
 PORTNAME=	kcfonts
 PORTVERSION=	1.05
 CATEGORIES=	chinese x11-fonts
-MASTER_SITES=	ftp://freebsd.ntu.edu.tw/freebsd/taiwan/
+MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/distfiles/ \
+		ftp://wm28.csie.ncu.edu.tw/pub/distfiles/
 
 MAINTAINER=	PA@FreeBSD.ee.Ntu.edu.TW
 
