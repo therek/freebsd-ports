@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.171 2003/07/15 23:47:28 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.172 2003/07/19 17:08:21 perky Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -410,5 +410,5 @@ print/ggv||2003-07-15|removed as part of GNOME 1.4 desktop phase out
 x11-wm/spager||2003-07-15|removed as it depends on sawfish
 mail/gtkgrepmail||2003-07-15|removed as it depends on gnomecore
 x11-toolkits/eazel-themes||2003-07-15|removed as it depends on sawfish
-chinese/pycodec||2003-07-20|is replaced by converters/cjkcodecs
-korean/pycodec||2003-07-20|is replaced by converters/cjkcodecs
+chinese/pycodec||2003-07-20|is replaced by converters/py-cjkcodecs
+korean/pycodec||2003-07-20|is replaced by converters/py-cjkcodecs
