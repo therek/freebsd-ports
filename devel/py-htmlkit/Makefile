@@ -2,11 +2,12 @@
 # Date created:				06/08/2000
 # Whom:					kbyanc@posi.net
 #
-# $FreeBSD: ports/devel/py-htmlkit/Makefile,v 1.2 2000/09/08 12:23:57 tg Exp $
+# $FreeBSD: ports/devel/py-htmlkit/Makefile,v 1.3 2001/04/21 20:42:00 kbyanc Exp $
 #
 
 PORTNAME=		HtmlKit
 PORTVERSION=		1.0
+PORTREVISION=		1
 CATEGORIES=		devel python www
 MASTER_SITES=		http://www.dekorte.com/Software/Python/HtmlKit/Download/
 PKGNAMEPREFIX=		py-
@@ -14,16 +15,16 @@ DISTNAME=		HtmlKit
 
 MAINTAINER=		kbyanc@posi.net
 
-RUN_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
-
+USE_PYTHON=		yes
+PLIST_SUB=		PYTHON_SITELIBDIR=${PYTHON_SITELIBDIR:S/^${LOCALBASE}\///g}
 NO_BUILD=		yes
 
 do-install:
-	@${MKDIR} ${PREFIX}/lib/python1.5/site-packages
-	@${MKDIR} ${PREFIX}/lib/python1.5/site-packages/HtmlKit/
+	@${MKDIR} ${PYTHON_SITELIBDIR}/HtmlKit
 	@for i in ${WRKSRC}/*.py; do \
-	    ${INSTALL_DATA} $$i ${PREFIX}/lib/python1.5/site-packages/HtmlKit; \
+	    ${INSTALL_DATA} $$i ${PYTHON_SITELIBDIR}/HtmlKit; \
 	done
+	@${PYTHON_CMD} ${PYTHON_LIBDIR}/compileall.py ${PYTHON_SITELIBDIR}/HtmlKit
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/HtmlKit
 	@for i in ${WRKSRC}/Documentation/*; do \
