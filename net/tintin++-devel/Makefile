@@ -2,16 +2,16 @@
 # Date created:         15 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/net/tintin++/Makefile,v 1.12 2000/09/07 14:10:07 ache Exp $
+# $FreeBSD: ports/net/tintin++-devel/Makefile,v 1.13 2000/09/17 18:35:57 ade Exp $
 #
 
 PORTNAME=	tintin
-PORTVERSION=	1.8.2
+PORTVERSION=	1.8.3
 CATEGORIES=     net games
 MASTER_SITES=	http://mail.newclear.net/tintin/download/
-DISTNAME=	tintin++v1.82
+DISTNAME=	tintin++v1.83
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jhp@cocoja.holywar.net
 
 WRKSRC=         ${WRKDIR}/tintin++/src
 GNU_CONFIGURE=	yes
