@@ -1,11 +1,11 @@
 # New ports collection makefile for:    KeLP
 # Date created:         5 May 2000
 # Whom:                 Michael Wu <keichii@iteration.net>
-# $FreeBSD: ports/devel/kelp/Makefile,v 1.2 2001/01/07 17:49:45 will Exp $
+# $FreeBSD: ports/devel/kelp/Makefile,v 1.3 2001/03/07 22:57:17 keichii Exp $
 #
 
 PORTNAME=	kelp
-PORTVERSION=	1.3
+PORTVERSION=	1.3_1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.cs.ucsd.edu/pub/scg/KeLP/
 DISTNAME=	KeLP1.3
