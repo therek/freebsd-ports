@@ -2,11 +2,12 @@
 # Date created:				13th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/pspell/Makefile,v 1.16 2001/08/28 06:29:35 petef Exp $
+# $FreeBSD: ports/textproc/pspell/Makefile,v 1.17 2001/08/30 18:40:46 petef Exp $
 #
 
 PORTNAME=	pspell
 PORTVERSION=	0.12.2
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -26,5 +27,11 @@ INSTALLS_SHLIB=	yes
 post-patch:
 	@${PERL} -pi -e 's,\@INSTALL\@,install,' ${WRKSRC}/libltdl/Makefile.in \
 		${WRKSRC}/modules/Makefile.in
+
+post-build:
+	@cd ${WRKSRC}/modules && ${SH} ./add-modules
+
+post-install:
+	@cd ${WRKSRC}/modules && ${SETENV} ${MAKE_ENV} ${MAKE} install
 
 .include <bsd.port.mk>
