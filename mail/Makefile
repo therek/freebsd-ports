@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.173 2000/11/01 10:20:38 sobomax Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.174 2000/11/03 16:11:24 knu Exp $
 #
 
     SUBDIR += adcomplain
@@ -46,6 +46,7 @@
     SUBDIR += lbdb
     SUBDIR += listar
     SUBDIR += listmanager
+    SUBDIR += mahogany
     SUBDIR += mailagent
     SUBDIR += mailcrypt
     SUBDIR += maildrop
