@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.64 1999/08/30 11:53:38 peter Exp $
+# $FreeBSD: ports/math/Makefile,v 1.65 1999/09/09 00:54:05 taoka Exp $
 #
 
     SUBDIR += PDL
@@ -41,6 +41,7 @@
     SUBDIR += plplot
     SUBDIR += py-scientific
     SUBDIR += pygist
+    SUBDIR += rcalc
     SUBDIR += rng
     SUBDIR += sc
     SUBDIR += siag
@@ -49,6 +50,7 @@
     SUBDIR += spin
     SUBDIR += ss
     SUBDIR += superlu
+    SUBDIR += topaz
     SUBDIR += umatrix
     SUBDIR += umfpack
     SUBDIR += vtk
