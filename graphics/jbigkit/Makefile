@@ -3,10 +3,10 @@
 # Date created:		19 November 1996
 # Whom:			mi
 #
-# $FreeBSD: ports/graphics/jbigkit/Makefile,v 1.6 1999/08/25 06:14:19 obrien Exp $
+# $FreeBSD: ports/graphics/jbigkit/Makefile,v 1.7 1999/10/26 21:18:40 fenner Exp $
 #
 
-DISTNAME=	jbigkit-1.0
+DISTNAME=	jbigkit-1.1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.informatik.uni-erlangen.de/pub/doc/ISO/JBIG/
 
@@ -22,5 +22,8 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/libjbig/jbig.doc ${PREFIX}/share/doc/jbig
 .endif
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
+
+test: build
+	cd ${WRKSRC} && env LD_LIBRARY_PATH=${WRKSRC}/libjbig ${MAKE} test
 
 .include <bsd.port.mk>
