@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache2/Makefile.modules,v 1.3 2004/01/08 17:42:03 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.modules,v 1.4 2004/01/09 18:56:12 clement Exp $
 #
 
 .if defined(SLAVE_DESIGNED_FOR) && ${PORTVERSION} != ${SLAVE_DESIGNED_FOR}
@@ -195,7 +195,7 @@ SUEXEC_USERDIR?=		public_html
 SUEXEC_SAFEPATH?=		${PREFIX_RELDEST}/bin:${LOCALBASE}/bin:/usr/bin:/bin
 SUEXEC_UIDMIN?=			1000
 SUEXEC_GIDMIN?=			1000
-SUEXEC_CALLER?=			${APACHE_USER}
+SUEXEC_CALLER?=			${WWWOWN}
 _APACHE_MODULES+=		${SUEXEC_MODULES}
 CONFIGURE_ARGS+=		--with-suexec-caller=${SUEXEC_CALLER} \
 						--with-suexec-uidmin=${SUEXEC_UIDMIN} \
