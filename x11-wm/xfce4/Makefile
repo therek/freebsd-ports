@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xfce
-# Version required:	3.1.2
+# Version required:	3.2.0
 # Date created:		30 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.19 1999/09/27 05:01:46 dan Exp $
+# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.20 1999/10/06 03:31:05 nakai Exp $
 #
 
-DISTNAME=	xfce-3.1.2
+DISTNAME=	xfce-3.2.0
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.xfce.org/archive/ \
 		http://www.baysurf.net/linux/xfce/archive/
@@ -26,7 +26,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share \
 		--datadir=${PREFIX}/share
 
-MAN1=	xfbd.1 xfce.1 xfclock.1 xfhelp.1 xfmouse.1 xfpager.1 xfprint.1 \
-	xfsound.1 xfterm.1 xftrash.1 xftree.1 xfwm.1
+MAN1=	xfbd.1 xfce.1 xfclock.1 xfgnome.1 xfhelp.1 xfmouse.1 xfpager.1 \
+	xfprint.1 xfsound.1 xfterm.1 xftrash.1 xftree.1 xfwm.1
 
 .include <bsd.port.mk>
