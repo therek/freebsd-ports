@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.522 2001/04/26 18:01:53 joe Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.523 2001/04/28 14:39:58 joe Exp $
 #
 
     SUBDIR += ElectricFence
@@ -267,6 +267,7 @@
     SUBDIR += p5-Class-Tom
     SUBDIR += p5-Config-IniFiles
     SUBDIR += p5-Curses
+    SUBDIR += p5-Data-Compare
     SUBDIR += p5-Data-Flow
     SUBDIR += p5-Data-ShowTable
     SUBDIR += p5-Date-Calc
