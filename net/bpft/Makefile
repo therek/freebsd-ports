@@ -3,7 +3,7 @@
 # Date created:         17 March 1999
 # Whom:                 oddbjorn@tricknology.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/bpft/Makefile,v 1.2 1999/08/30 14:22:14 peter Exp $
 #
 
 DISTNAME=	bpft-2.0
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	oddbjorn@tricknology.org
 
-MAN1=		trafshow.1
+MAN1=		trafshow2.1
 
 post-install:
 .if !defined(NOPORTDOCS)
