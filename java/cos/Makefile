@@ -2,7 +2,7 @@
 # Date created:		1999/07/05
 # Whom:			Jose Marques <noway@nohow.demon.co.uk>
 #
-# $FreeBSD: ports/java/cos/Makefile,v 1.5 2001/05/27 13:08:01 jeh Exp $
+# $FreeBSD: ports/java/cos/Makefile,v 1.6 2001/06/23 14:33:00 kevlo Exp $
 #
 
 PORTNAME=	cos
@@ -25,8 +25,8 @@ do-install:
 	@${MKDIR} ${PREFIX}/share/java/classes ${PREFIX}/share/java/cos
 	@${INSTALL_DATA} ${WRKSRC}/lib/cos.jar ${PREFIX}/share/java/classes
 	@cd ${WRKSRC}; \
-	  ${CP} readme.html ${PREFIX}/share/java/cos; \
-	  ${CP} license.html ${PREFIX}/share/java/cos; \
+	  ${CP} readme.txt ${PREFIX}/share/java/cos; \
+	  ${CP} license.txt ${PREFIX}/share/java/cos; \
 	  ${CP} -R doc ${PREFIX}/share/java/cos; \
 	  ${CP} upload.war ${PREFIX}/share/java/cos/doc
 
