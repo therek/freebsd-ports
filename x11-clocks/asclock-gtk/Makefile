@@ -2,7 +2,7 @@
 # Date created:		16 March 1998
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/asclock-gtk/Makefile,v 1.9 2000/12/11 01:38:13 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asclock-gtk
@@ -18,7 +18,8 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 ALL_TARGET=	asclock
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 HAS_CONFIGURE=	yes
 
 .if defined(BATCH)
