@@ -2,7 +2,7 @@
 # Date created:		Aug 17 1996
 # Whom:			chuckr
 #
-# $FreeBSD: ports/x11-toolkits/itk/Makefile,v 1.8 2001/07/28 14:53:45 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	itk
@@ -18,6 +18,7 @@ MAINTAINER=	ports@freebsd.org
 LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83 \
 		itcl${MAJOR}${MINOR}.1:${PORTSDIR}/lang/itcl
 
+USE_REINPLACE=	yes
 WRKSRC=		${WRKDIR}/itcl${MAJOR}.${MINOR}/itk
 INSTALLS_SHLIB=	yes
 MAKE_ENV+=	${PLIST_SUB} \
@@ -44,11 +45,11 @@ post-extract:
 	${RM} ${WRKSRC}/pkgIndex.tcl
 
 post-patch:
-	${PERL} -pi \
+	${REINPLACE_CMD} \
 		-e 's,package require Itk,load \
 			[glob ${WRKSRC}/${ITK_LIB_FILE}*],;' \
 		-e 's,return$$,exit,' ${WRKSRC}/tests/*
-	${PERL} -pi \
+	${REINPLACE_CMD} \
 		-e 's,\@itk_LIB_FILE\@,${ITK_LIB_FILE},' \
 		${WRKSRC}/pkgIndex.tcl.in
 

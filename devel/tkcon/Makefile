@@ -2,7 +2,7 @@
 # Date created:         28 Jun 1999
 # Whom:                 wghicks@bellsouth.net
 #
-# $FreeBSD: ports/devel/tkcon/Makefile,v 1.8 2001/06/20 18:18:23 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkcon
@@ -15,10 +15,12 @@ MAINTAINER=	ports@freebsd.org
 
 RUN_DEPENDS=	wish8.3:${PORTSDIR}/x11-toolkits/tk83
 
+USE_REINPLACE=	yes
 NO_BUILD=	yes
+REINPLACE_ARGS=	-i.bak -E
 
 post-patch:
-	@${PERL} -pi \
+	@${REINPLACE_CMD} \
 		-e 's,docs\s+"([^"]+)",docs	"file:${PREFIX}/share/doc/tkcon/index.html\\n\1",' ${WRKSRC}/tkcon.tcl
 
 do-install:

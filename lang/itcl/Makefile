@@ -2,7 +2,7 @@
 # Date created:		Aug 17 1996
 # Whom:			chuckr
 #
-# $FreeBSD: ports/lang/itcl/Makefile,v 1.29 2000/10/08 10:02:05 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	itcl
@@ -17,6 +17,7 @@ MAINTAINER=	ports@freebsd.org
 LIB_DEPENDS=	tcl83:${PORTSDIR}/lang/tcl83
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/itcl
+USE_REINPLACE=	yes
 INSTALLS_SHLIB=	yes
 PKGINSTALL=	${PORTSDIR}/lang/tcl83/pkg-install.tclsh
 PKGDEINSTALL=	${PORTSDIR}/lang/tcl83/pkg-deinstall.tclsh
@@ -47,7 +48,7 @@ post-extract:
 	${RM} ${WRKSRC}/pkgIndex.tcl
 
 post-patch:
-	${PERL} -pi \
+	${REINPLACE_CMD} \
 		-e 's,package require Itcl,load [glob \
 			${WRKSRC}/${ITCL_LIB}.${SHLIB_MAJOR}*],;' \
 		${WRKSRC}/tests/*.test
