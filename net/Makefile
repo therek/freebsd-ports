@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.454 2001/01/25 15:55:33 ijliao Exp $
+# $FreeBSD: ports/net/Makefile,v 1.455 2001/01/28 19:03:41 clive Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -226,6 +226,7 @@
     SUBDIR += priss
     SUBDIR += proxy
     SUBDIR += pvm
+    SUBDIR += pvm++
     SUBDIR += queso
     SUBDIR += radius
     SUBDIR += radiusclient
