@@ -3,20 +3,17 @@
 # Date created:         		26 November 1997
 # Whom:                 		Archie L. Cobbs <archie@whistle.com>
 #
-# $FreeBSD: ports/security/skip/Makefile,v 1.16 2000/01/26 01:55:00 archie Exp $
+# $FreeBSD: ports/security/skip/Makefile,v 1.17 2000/02/01 18:39:05 archie Exp $
 
-DISTNAME=		skip-1.0
+DISTNAME=		skipsrc-1.0
+PKGNAME=		skip-1.0
 CATEGORIES=		security
-
 # Note: the original source comes from Sun, via this web page:
 #    http://skip.incog.com/src-form.html
 # The site below is outside of the U.S.
-
 MASTER_SITES=		ftp://ftp.replaytv.com/pub/replay/crypto/APPS/skip/ \
 			ftp://ftp.internat.freebsd.org/pub/FreeBSD/distfiles/
-
-DISTFILES=		skipsrc-1.0.tar.Z
-EXTRACT_SUFX=		tar.Z
+EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		archie@freebsd.org
 
@@ -50,7 +47,7 @@ MAN4=			skipd.conf.4 raw_keys.4
 # Also, we remove all the "#pragma ident" lines that generate
 # a bazillion warnings from the compiler.
 post-patch:
-	@find ${WRKSRC} -name '*.orig' -print | xargs rm
+	@find ${WRKSRC} -name '*.orig' -print | xargs ${RM}
 	@cd ${WRKSRC}; \
 	FILES=`find . -type f -print | xargs ${GREP} -l @@PREFIX@@`; \
 	for FILE in $$FILES; do \
