@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.592 2004/12/21 23:12:38 markus Exp $
+# $FreeBSD: ports/MOVED,v 1.593 2004/12/23 08:25:43 nork Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1362,3 +1362,4 @@ print/pxfonts||2004-12-19|already included in the teTeX distribution
 print/txfonts||2004-12-19|already included in the teTeX distribution
 audio/juk|multimedia/kdemultimedia3|2004-12-22|juk has been integrated into kdemultimedia3
 databases/sqlite|databases/sqlite2|2004-12-23|port renamed
+print/acroread5|print/acroread|2004-12-23|last Acrobat Reader port remaining
