@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.113 2002/10/15 17:27:15 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.114 2002/10/18 23:09:20 knu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -75,6 +75,12 @@ MASTER_SITE_FREEBSD_ORG+=	\
 	ftp://ftp.nectec.or.th/pub/FreeBSD/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/FreeBSD/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,FreeBSD/&,}
+
+MASTER_SITE_GCC+=	\
+	${MASTER_SITE_SOURCEWARE:S,%SUBDIR%,gcc/&,}  \
+	ftp://gcc.gnu.org/pub/gcc/%SUBDIR%/ \
+	ftp://ftp.iij.ad.jp/pub/gcc/%SUBDIR%/ \
+	ftp://ftp.dti.ad.jp/pub/lang/gcc/%SUBDIR%/
 
 MASTER_SITE_GNOME+=	\
 	ftp://archive.progeny.com/GNOME/%SUBDIR%/ \
