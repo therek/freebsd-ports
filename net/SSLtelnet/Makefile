@@ -2,7 +2,7 @@
 # Date created:		Mar 29, 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/net/SSLtelnet/Makefile,v 1.16 2000/09/22 04:25:06 kris Exp $
+# $FreeBSD: ports/net/SSLtelnet/Makefile,v 1.17 2001/01/09 20:59:54 issei Exp $
 
 PORTNAME=		SSLtelnet
 PORTVERSION=		0.13
@@ -10,6 +10,8 @@ CATEGORIES=		net security
 MASTER_SITES=		${MASTER_SITE_LOCAL} \
 			ftp://ftp.psy.uq.oz.au/pub/Crypto/SSLapps/
 MASTER_SITE_SUBDIR=	kris
+
+FORBIDDEN=		"Remotely exploitable buffer overflow"
 
 MAINTAINER=		issei@jp.FreeBSD.org
 
