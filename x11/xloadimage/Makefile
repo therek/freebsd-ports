@@ -2,7 +2,7 @@
 # Date created:         9 January 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.17 2000/03/03 23:34:11 jmz Exp $
+# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.18 2000/04/13 19:10:41 cpiazza Exp $
 #
 
 PORTNAME=	xloadimage
@@ -16,7 +16,7 @@ MAINTAINER=	jmz@FreeBSD.org
 
 USE_X_PREFIX=	yes
 ALL_TARGET=
-MAN1=		xloadimage.1
+MAN1=		xloadimage.1 uufilter.1
 
 do-configure:
 	cd ${WRKSRC} && ${MAKE} configure </dev/null
@@ -26,5 +26,6 @@ do-install:
 	cd ${WRKSRC} && ${INSTALL_PROGRAM} xloadimage uufilter ${PREFIX}/bin
 	cd ${WRKSRC} && ${INSTALL_DATA} xloadimagerc ${PREFIX}/lib/X11/app-defaults/Xloadimage
 	cd ${WRKSRC} && ${SED} -e s:/usr/lib/X11/Xloadimage:${PREFIX}/lib/X11/app-defaults/Xloadimage: < xloadimage.man >${PREFIX}/man/man1/xloadimage.1
+	${INSTALL_MAN} ${WRKSRC}/uufilter.man ${PREFIX}/man/man1/uufilter.1
 
 .include <bsd.port.mk>
