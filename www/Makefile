@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.268 2000/10/28 06:09:53 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.269 2000/11/13 17:27:21 sobomax Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -159,6 +159,7 @@
     SUBDIR += ruboard
     SUBDIR += screem
     SUBDIR += sitecopy
+    SUBDIR += skipstone
     SUBDIR += smb_auth
     SUBDIR += snarf
     SUBDIR += squid22
