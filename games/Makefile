@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.346 2001/04/05 19:30:08 alex Exp $
+# $FreeBSD: ports/games/Makefile,v 1.347 2001/04/05 19:32:45 alex Exp $
 #
 
     SUBDIR += 3dc
@@ -283,6 +283,7 @@
     SUBDIR += xpacman
     SUBDIR += xpanex
     SUBDIR += xpat2
+    SUBDIR += xpenguins
     SUBDIR += xphotohunter
     SUBDIR += xpilot
     SUBDIR += xpipeman
