@@ -2,18 +2,22 @@
 # Date created:				4 Aug 2000
 # Whom:					Samuel Tardieu <sam@inf.enst.fr>
 #
-# $FreeBSD: ports/devel/gpasm/Makefile,v 1.1 2000/09/16 04:30:34 will Exp $
+# $FreeBSD: ports/devel/gpasm/Makefile,v 1.2 2000/12/11 02:26:49 steve Exp $
 #
 
 PORTNAME=	gpasm
-PORTVERSION=	0.8.10
+PORTVERSION=	0.9.5
 CATEGORIES=	devel
-MASTER_SITES=	http://gpasm.sourceforge.net/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sam@inf.enst.fr
 
+LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
+
 GNU_CONFIGURE=	yes
-MAKE_ARGS=	DATADIR=${PREFIX}/share/gpasm
+CONFIGURE_ENV=	CC="cc -I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib -lgnugetopt"
 
 .if !defined(NOPORTDOCS)
 post-install:
