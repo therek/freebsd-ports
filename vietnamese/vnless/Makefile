@@ -3,7 +3,7 @@
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnless/Makefile,v 1.11 2000/04/15 01:56:14 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vnless
@@ -15,6 +15,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org
+
+PORTCOMMENT=	A pager utility that speaks Vietnamese
 
 ALL_TARGET=	clobber all
 MAN1=		vnless.1 vnlesskey.1

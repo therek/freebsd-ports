@@ -3,7 +3,7 @@
 # Date created:         Fri Feb 09, 2001
 # Whom:                 David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/vietnamese/libviet/Makefile,v 1.2 2001/02/11 23:11:33 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libviet
@@ -13,6 +13,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	obrien
 
 MAINTAINER=	obrien@FreeBSD.org
+
+PORTCOMMENT=	VIQR<->VISCII conversion and VISCII ctype-like routines
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/lib
 

@@ -3,7 +3,7 @@
 # Date created:			  Fri Jan 05, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/vietnamese/vnconvert/Makefile,v 1.2 2001/02/06 13:13:34 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vnconvert
@@ -15,6 +15,8 @@ DISTNAME=	convert
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	obrien@FreeBSD.org
+
+PORTCOMMENT=	Converts Vietnamese text files between popular formats
 
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile

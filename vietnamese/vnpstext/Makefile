@@ -3,7 +3,7 @@
 # Date created:         Sat Dec 7, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnpstext/Makefile,v 1.14 2000/04/15 01:56:16 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vnpstext
@@ -15,6 +15,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org
+
+PORTCOMMENT=	Converts 8-bit VISCII Vietnamese text into PostScript
 
 CFLAGS+=	-I../../include
 MAN1=		vnpstext.1

@@ -3,7 +3,7 @@
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vn7to8/Makefile,v 1.12 2000/04/15 01:56:09 asami Exp $
+# $FreeBSD$
 #
 #	version # is VISCII version supported + .<edit_revision>
 
@@ -16,6 +16,8 @@ DISTNAME=	vn7to8
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org
+
+PORTCOMMENT=	Converts between 7-bit Vietnamese VIQR and 8-bit VISCII formats
 
 BUILD_DEPENDS=  ${LOCALBASE}/lib/libviqr.a:${PORTSDIR}/vietnamese/libviet
 

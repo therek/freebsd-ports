@@ -3,7 +3,7 @@
 # Date created:		Monday, Dec 9, 1996
 # Whom:			David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnroff/Makefile,v 1.13 2000/04/21 08:18:07 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vnroff
@@ -14,6 +14,8 @@ DISTFILES=	vnroff.c.Z vnroff.1.Z
 DISTNAME=	${PORTNAME}-2.0
 
 MAINTAINER=	obrien@FreeBSD.org
+
+PORTCOMMENT=	Converts Vietnamese VIQR text into troff format
 
 NO_WRKSUBDIR=	yes
 MAN1=		vnroff.1

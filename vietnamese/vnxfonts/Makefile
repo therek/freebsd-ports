@@ -4,7 +4,7 @@
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/vietnamese/vnxfonts/Makefile,v 1.2 2001/02/10 23:53:32 obrien Exp $
+# $FreeBSD$
 #
 #	version # is VISCII version supported + .<edit_revision>
 
@@ -17,6 +17,8 @@ DISTNAME=	Xfonts
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=     obrien@FreeBSD.org
+
+PORTCOMMENT=	X fonts for displaying Vietnamese
 
 WRKSRC=		${WRKDIR}/fonts/X
 USE_X_PREFIX=	yes

@@ -3,7 +3,7 @@
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnelvis/Makefile,v 1.15 2000/04/21 08:18:03 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vnelvis
@@ -15,6 +15,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org
+
+PORTCOMMENT=	A vi clone that speaks Vietnamese
 
 BUILD_DEPENDS=  ${LOCALBASE}/lib/libviqr.a:${PORTSDIR}/vietnamese/libviet
 
