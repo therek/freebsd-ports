@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.340 2001/01/16 18:27:25 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.341 2001/01/17 14:30:49 sobomax Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -237,10 +237,6 @@
     SUBDIR += pips900
     SUBDIR += plain2
     SUBDIR += plan
-    SUBDIR += platex-common
-    SUBDIR += platex-euc
-    SUBDIR += platex-jis
-    SUBDIR += platex-sjis
     SUBDIR += platex209-euc
     SUBDIR += platex209-jis
     SUBDIR += platex209-sjis
