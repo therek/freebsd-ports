@@ -2,11 +2,11 @@
 # Date created:		June 2, 2001
 # Whom:			Ernst de Haan <ernst@jollem.com>
 #
-# $FreeBSD: ports/java/jlint/Makefile,v 1.1 2001/06/25 04:00:58 kevlo Exp $
+# $FreeBSD: ports/java/jlint/Makefile,v 1.2 2001/06/26 01:51:03 kevlo Exp $
 #
 
 PORTNAME=	jlint
-PORTVERSION=	2.1
+PORTVERSION=	2.3
 CATEGORIES=	java
 MASTER_SITES=	http://artho.com/jlint/ \
 		http://jollem.com/~ernst/
@@ -15,8 +15,6 @@ MAINTAINER=	ernst@jollem.com
 
 PLIST_SUB+=	T=${TARGET_DIR:S/^${PREFIX}\///}
 TARGET_DIR?=	${PREFIX}/bin
-
-WRKSRC=		${WRKDIR}/${PORTNAME}
 
 .include <bsd.port.pre.mk>
 
