@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.180 2000/10/26 13:10:20 jeh Exp $
+# $FreeBSD: ports/LEGAL,v 1.181 2000/10/26 14:05:03 imura Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -136,6 +136,7 @@ netshow-*		ports/graphics/netshow	Commercial software
 nte-1.5a23		ports/mbone/nte		Crypto; export-controlled
 openssl-*		ports/security/openssl	Crypto; export/import-controlled
 Crypt-*			ports/security/p5-Crypt-*	Crypto; export-controlled
+perforce-*		ports/devel/perforce	Restricted distribution
 perltools		ports/java/perltools	No redistribution
 pgp*			ports/security/pgp*	Various locality restrictions
 pklin*			ports/archivers/pkzip	Shareware
