@@ -2,13 +2,14 @@
 # Date created:		22 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/tcsh/Makefile,v 1.26 1999/08/31 06:50:36 mharo Exp $
+# $FreeBSD: ports/shells/tcsh/Makefile,v 1.27 2000/04/09 18:34:05 cpiazza Exp $
 #
 
 PORTNAME=	tcsh
-PORTVERSION= 	6.09
+PORTVERSION= 	6.09.00
 CATEGORIES=	shells
 MASTER_SITES=   ftp://ftp.astron.com/pub/tcsh/
+DISTNAME=	tcsh-6.09
 
 MAINTAINER=     ache@FreeBSD.org
 
