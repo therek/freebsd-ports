@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/x11/Makefile,v 1.325 2001/05/27 19:03:49 sobomax Exp $
 #
 
     SUBDIR += 9term
@@ -62,6 +62,7 @@
     SUBDIR += powershell
     SUBDIR += props
     SUBDIR += qrash
+    SUBDIR += ruby-X11
     SUBDIR += ruby-gnome
     SUBDIR += ruby-kde
     SUBDIR += rxvt
