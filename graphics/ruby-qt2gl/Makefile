@@ -2,7 +2,7 @@
 # Date created:		7 Feb 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-qt2gl/Makefile,v 1.6 2001/04/06 09:22:07 knu Exp $
+# $FreeBSD: ports/graphics/ruby-qt2gl/Makefile,v 1.7 2001/04/06 10:08:13 knu Exp $
 #
 
 PORTNAME=	qt2gl
@@ -36,8 +36,6 @@ post-extract:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
-	${CP} -R ${WRKSRC}/examples/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
 	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_DOCDIR}/${PORTNAME}/
 .endif
