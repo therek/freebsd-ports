@@ -3,13 +3,13 @@
 # Date Created:		23 June 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/ftp/downloader/Makefile,v 1.6 1999/08/26 23:08:20 cpiazza Exp $
+# $FreeBSD: ports/ftp/downloader/Makefile,v 1.7 1999/10/02 16:52:48 cpiazza Exp $
 #
 
-DISTNAME=	nt-1.05-BETA
-PKGNAME=	downloader-1.0b5
+DISTNAME=	nt-1.06
+PKGNAME=	downloader-1.06
 CATEGORIES=	ftp
-MASTER_SITES=	http://www.krasu.ru/soft/chuchelo/
+MASTER_SITES=	http://www.krasu.ru/soft/chuchelo/files/
 
 MAINTAINER=	ijliao@csie.nctu.edu.tw
 
