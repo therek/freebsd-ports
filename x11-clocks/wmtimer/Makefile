@@ -2,7 +2,7 @@
 # Date created:			Thu Apr 26 16:46:38 EDT 2001
 # Whom:				Patrick Li <pat@databits.net> et al
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/wmtimer/Makefile,v 1.1 2001/05/01 17:16:31 lioux Exp $
 #
 
 PORTNAME=	wmtimer
@@ -12,6 +12,7 @@ MASTER_SITES=	http://home.dwave.net/~jking/wmtimer/
 
 MAINTAINER=	pat@databits.net
 
+# if you change WRKSRC, check install NOPORTDOCS
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmtimer
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
@@ -41,7 +42,7 @@ do-install:
 .ifndef(NOPORTDOCS)
 	@${INSTALL} -d -o ${SHAREOWN} -g ${SHAREGRP} -m ${SHAREMODE} \
 		${PREFIX}/share/doc/wmtimer
-	@${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/wmtimer
+	@${INSTALL_DATA} ${WRKSRC}/../README ${PREFIX}/share/doc/wmtimer
 .endif # !NOPORTDOCS
 
 .include <bsd.port.mk>
