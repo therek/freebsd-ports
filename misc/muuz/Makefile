@@ -2,13 +2,13 @@
 # Date created:			  21 March 2000
 # Whom:				  kline@thought.org
 #
-# $FreeBSD: ports/misc/muuz/Makefile,v 1.3 2000/09/05 18:34:51 asami Exp $
+# $FreeBSD: ports/misc/muuz/Makefile,v 1.4 2001/01/16 17:31:41 sobomax Exp $
 #
 
 PORTNAME=	muuz
 PORTVERSION=	0.27.2
 CATEGORIES=	misc
-MASTER_SITES=	ftp://toxic.magnesium.net/pub/FreeBSD/muuz/
+MASTER_SITES=	http://muuz.deadbbs.com/FreeBSD/muuz/
 
 MAINTAINER=	kline@thought.org
 
