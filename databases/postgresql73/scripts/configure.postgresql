@@ -2,7 +2,7 @@
 # -*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/databases/postgresql7/scripts/configure.postgresql,v 1.7 2001/06/13 14:37:45 olgeni Exp $
+# $FreeBSD: ports/databases/postgresql7/scripts/configure.postgresql,v 1.8 2002/02/19 08:23:22 vanilla Exp $
 #
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -17,7 +17,7 @@ and restore of all databases is
 required. This is *NOT* done by the port!
 
 Select 'Yes' to continue the installation." -1 -1
-	if [ $1 -eq 1 ] ; then exit 1; fi
+	if [ $? -eq 1 ] ; then exit 1; fi
 fi
 
 if [ "${BATCH}" ]; then
