@@ -2,7 +2,7 @@
 # Date created:		08 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/newt/Makefile,v 1.10 2000/07/31 21:32:40 nbm Exp $
+# $FreeBSD: ports/devel/newt/Makefile,v 1.11 2000/09/08 12:23:49 tg Exp $
 #
 
 PORTNAME=	newt
@@ -20,7 +20,7 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang \
 		tcl82.1:${PORTSDIR}/lang/tcl82 \
 		popt.0:${PORTSDIR}/devel/popt
-BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/misc/rpm \
+BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/archivers/rpm \
 		python1.5:${PORTSDIR}/lang/python15
 
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:        31 January 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.17 2001/01/02 19:00:52 sf Exp $
+# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.18 2001/02/04 21:12:49 olgeni Exp $
 #
 
 PORTNAME=	linux-realplayer
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	_rpm
 MAINTAINER=	vns@delta.odessa.ua
 
 RUN_DEPENDS=	/compat/linux/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
-BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/misc/rpm2cpio
+BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/archivers/rpm2cpio
 
 EXTRACT_CMD=	rpm2cpio
 EXTRACT_BEFORE_ARGS=

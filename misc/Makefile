@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.332 2001/03/10 19:09:47 will Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.333 2001/03/11 04:48:23 grog Exp $
 #
 
     SUBDIR += 40upgrade
@@ -128,8 +128,6 @@
     SUBDIR += quranref
     SUBDIR += rfc
     SUBDIR += rname
-    SUBDIR += rpm
-    SUBDIR += rpm2cpio
     SUBDIR += rtfm
     SUBDIR += screen
     SUBDIR += scriptkit

@@ -2,7 +2,7 @@
 # Date Created:				29 Dec 1999
 # Whom:					Yuan-Chen Cheng <ycheng@sinica.edu.tw>
 #
-# $FreeBSD: ports/sysutils/logrotate/Makefile,v 1.6 2000/10/13 20:28:29 ade Exp $
+# $FreeBSD: ports/sysutils/logrotate/Makefile,v 1.7 2001/01/25 14:38:29 sf Exp $
 #
 
 PORTNAME=	logrotate
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	-1.src.rpm
 
 MAINTAINER=	ycheng@sinica.edu.tw
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/rpm2cpio:${PORTSDIR}/misc/rpm
+BUILD_DEPENDS=	${LOCALBASE}/bin/rpm2cpio:${PORTSDIR}/archivers/rpm
 LIB_DEPENDS=	popt.0:${PORTSDIR}/devel/popt
 
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:		2001.02.10
 # Whom:                 taoka@FreeBSD.org
 #
-# $FreeBSD: ports/print/bjfiltercom/Makefile,v 1.5 2001/03/10 10:43:57 taoka Exp $
+# $FreeBSD: ports/print/bjfiltercom/Makefile,v 1.6 2001/03/14 07:51:39 taoka Exp $
 #
 
 PORTNAME?=	bjfiltercom
@@ -17,7 +17,7 @@ EXTRACT_ONLY=	${RPMFILE}
 
 MAINTAINER=	taoka@FreeBSD.org
 
-BUILD_DEPENDS=  rpm2cpio:${PORTSDIR}/misc/rpm2cpio
+BUILD_DEPENDS=  rpm2cpio:${PORTSDIR}/archivers/rpm2cpio
 .if defined(SLAVE_PORT)
 RUN_DEPENDS=	stsmon:${PORTSDIR}/print/bjfiltercom \
 		pstops:${PORTSDIR}/print/psutils-${PAPERSIZE}

@@ -3,7 +3,7 @@
 # Date created:			  Thur Dec 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.9 2001/02/07 20:53:43 obrien Exp $
+# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.10 2001/02/14 20:19:38 lioux Exp $
 #
 
 PORTNAME=	compaq-cc
@@ -22,7 +22,7 @@ MAINTAINER=	obrien@FreeBSD.org
 
 RESTRICTED=	"Distribution not allowed"
 
-BUILD_DEPENDS=	rpm:${PORTSDIR}/misc/rpm
+BUILD_DEPENDS=	rpm:${PORTSDIR}/archivers/rpm
 
 ONLY_FOR_ARCHS=	alpha
 

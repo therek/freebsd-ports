@@ -2,7 +2,7 @@
 # Date created:		Nov 17, 1999
 # Whom:			keith@FreeBSD.org
 #
-# $FreeBSD: ports/chinese/cle_base/Makefile,v 1.3 2000/11/06 12:12:38 keith Exp $
+# $FreeBSD: ports/chinese/cle_base/Makefile,v 1.4 2000/11/30 13:49:15 keith Exp $
 #
 
 PORTNAME=		cle_base
@@ -17,7 +17,7 @@ EXTRACT_ONLY=
 
 MAINTAINER=		keith@FreeBSD.org
 
-RUN_DEPENDS=		rpm:${PORTSDIR}/misc/rpm
+RUN_DEPENDS=		rpm:${PORTSDIR}/archivers/rpm
 
 ONLY_FOR_ARCHS=		i386
 DIST_SUBDIR=		zh-rpm

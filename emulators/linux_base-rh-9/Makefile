@@ -2,7 +2,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.50 2000/11/25 01:49:16 asami Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.51 2000/11/25 21:35:37 ben Exp $
 #
 
 PORTNAME=		linux_base
@@ -17,7 +17,7 @@ PATCHFILES=		${UPDATES}
 
 MAINTAINER=		marcel@FreeBSD.org
 
-BUILD_DEPENDS=		rpm:${PORTSDIR}/misc/rpm
+BUILD_DEPENDS=		rpm:${PORTSDIR}/archivers/rpm
 
 ONLY_FOR_ARCHS=		alpha i386
 DIST_SUBDIR=		rpm

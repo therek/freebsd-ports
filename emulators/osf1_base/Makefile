@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.12 2000/04/20 19:34:27 obrien Exp $
+# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.13 2000/07/20 00:23:51 obrien Exp $
 #
 
 PORTNAME=	osf1_base
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.rpm
 
 MAINTAINER=	obrien@FreeBSD.org
 
-BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/misc/rpm2cpio
+BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/archivers/rpm2cpio
 
 ONLY_FOR_ARCHS=	alpha
 

@@ -2,7 +2,7 @@
 # Date created:		5 February 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/x11-fm/xnc/Makefile,v 1.12 2001/02/05 21:00:55 olgeni Exp $
+# $FreeBSD: ports/x11-fm/xnc/Makefile,v 1.13 2001/02/22 10:11:42 demon Exp $
 #
 
 PORTNAME=	xnc
@@ -16,7 +16,7 @@ MAINTAINER=	demon@FreeBSD.org
 # xnc will use the following programs if you have them installed.
 #RUN_DEPENDS=	zip:${PORTSDIR}/archivers/zip		\
 #		unzip:${PORTSDIR}/archivers/unzip	\
-#		rpm:${PORTSDIR}/misc/rpm		\
+#		rpm:${PORTSDIR}/archivers/rpm		\
 #		rar:${PORTSDIR}/archivers/rar		\
 #		unarj:${PORTSDIR}/archivers/unarj	\
 #		lha:${PORTSDIR}/archivers/lha		\

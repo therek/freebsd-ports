@@ -2,7 +2,7 @@
 # Date created:		16 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/mizifont/Makefile,v 1.15 2000/09/12 11:08:04 asami Exp $
+# $FreeBSD: ports/korean/mizifont/Makefile,v 1.16 2000/10/08 10:21:45 asami Exp $
 #
 
 PORTNAME=	mizifonts
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.rpm
 
 MAINTAINER=	cjh@FreeBSD.org
 
-BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/misc/rpm
+BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/archivers/rpm
 
 USE_X_PREFIX=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		May 18 2000
 # Whom:			Masahiro TAKEMURA
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/linux_mesa3/Makefile,v 1.10 2000/09/07 04:53:16 sada Exp $
 #
 
 PORTNAME=		mesa
@@ -18,7 +18,7 @@ PATCHFILES=
 
 MAINTAINER=		mastake@msel.t.u-tokyo.ac.jp
 
-BUILD_DEPENDS=		rpm2cpio:${PORTSDIR}/misc/rpm
+BUILD_DEPENDS=		rpm2cpio:${PORTSDIR}/archivers/rpm
 RUN_DEPENDS=		\
 	/compat/linux/lib/ld-linux.so.2:${PORTSDIR}/emulators/linux_base
 

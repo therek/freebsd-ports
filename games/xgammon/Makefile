@@ -2,7 +2,7 @@
 # Date created:		02 January 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xgammon/Makefile,v 1.17 2000/04/14 17:43:47 knu Exp $
+# $FreeBSD: ports/games/xgammon/Makefile,v 1.18 2000/04/18 09:06:14 tg Exp $
 #
 
 PORTNAME=	xgammon
@@ -17,7 +17,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/misc/rpm2cpio
+BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/archivers/rpm2cpio
 
 NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:		20 December 1998
 # Whom:			MIHIRA Sanpei Yoshiro <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.11 2000/10/08 12:21:42 sanpei Exp $
+# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.12 2000/12/05 04:00:18 sanpei Exp $
 #
 
 PORTNAME=	xmovie
@@ -13,8 +13,7 @@ DISTFILES=	${PORTNAME}-${PORTVERSION:R}-${PORTVERSION:E}.i386.rpm
 
 MAINTAINER=	sanpei@FreeBSD.org
 
-BUILD_DEPENDS=	rpm:${PORTSDIR}/misc/rpm \
-		rpm2cpio:${PORTSDIR}/misc/rpm2cpio
+BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/archivers/rpm
 RUN_DEPENDS=	${LINUX_BASE}/lib/libc.so.6:${PORTSDIR}/emulators/linux_base \
 		${LINUX_BASE}/usr/lib/libjpeg.so.62.0.0:${PORTSDIR}/graphics/linux-jpeg \
 		${LINUX_BASE}/usr/lib/libpng.so.2.1.0.3:${PORTSDIR}/graphics/linux-png

@@ -2,13 +2,13 @@
 # Date created:		30 April 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/rpm/Makefile,v 1.32 2000/11/02 04:29:55 nakai Exp $
+# $FreeBSD: ports/archivers/rpm/Makefile,v 1.33 2000/11/28 09:49:55 ben Exp $
 #
 
 PORTNAME=	rpm
 PORTVERSION=	3.0.6
 PORTREVISION=	4
-CATEGORIES=	misc
+CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.rpm.org/pub/rpm/dist/rpm-3.0.x/ \
 		ftp://ftp.mirror.ac.uk/sites/ftp.rpm.org/pub/rpm/dist/rpm-3.0.x/
 

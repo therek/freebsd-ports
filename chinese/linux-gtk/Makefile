@@ -2,7 +2,7 @@
 # Date created:         25 Oct 2000
 # Whom:                 Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/linux-gtk/Makefile,v 1.1 2000/11/06 14:00:50 keith Exp $
 #
 
 PORTNAME=	linux-gtk
@@ -14,7 +14,7 @@ DISTFILES=	gtk+-1.2.6-7CLE.i386.rpm
 
 MAINTAINER=	keith@FreeBSD.org
 
-BUILD_DEPENDS=	rpm:${PORTSDIR}/misc/rpm
+BUILD_DEPENDS=	rpm:${PORTSDIR}/archivers/rpm
 RUN_DEPENDS=	/compat/linux/CLE-0.9p1:${PORTSDIR}/chinese/cle_base
 
 DIST_SUBDIR=	zh-rpm

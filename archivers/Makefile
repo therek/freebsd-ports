@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.48 2001/01/29 19:39:14 sobomax Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.49 2001/02/08 17:32:39 sf Exp $
 #
 
     SUBDIR += 9e
@@ -30,6 +30,8 @@
     SUBDIR += pkzip
     SUBDIR += ppunpack
     SUBDIR += rar
+    SUBDIR += rpm
+    SUBDIR += rpm2cpio
     SUBDIR += ruby-zlib
     SUBDIR += sectar
     SUBDIR += ucl

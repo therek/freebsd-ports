@@ -2,12 +2,12 @@
 # Date created:		Sun Jul 18 21:51:23 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD: ports/misc/rpm2cpio/Makefile,v 1.4 2000/04/29 23:57:16 steve Exp $
+# $FreeBSD: ports/archivers/rpm2cpio/Makefile,v 1.5 2001/03/10 04:52:27 kris Exp $
 #
 
 PORTNAME=	rpm2cpio
 PORTVERSION=	1.1
-CATEGORIES=	misc
+CATEGORIES=	archivers
 MASTER_SITES=	http://www.iagora.com/~espel/
 DISTFILES=	${PORTNAME}
 
