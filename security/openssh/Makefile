@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.40 2000/02/01 08:11:56 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.41 2000/02/01 17:04:02 sumikawa Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -38,7 +38,7 @@ MAKE_ENV=	DESTDIR=${PREFIX} MANDIR=/man/man CRYPTOLIBS="${CRYPTOLIBS}"
 .if ${OSVERSION} < 400014
 MAKE_ENV+=	COMPAT_GETADDRINFO=yes
 .else
-MAKE_ENV+=	USE_INET6=yes
+MAKE_ENV+=	INET6FLAGS=-DINET6
 .endif
 .if !exists(/usr/include/tcpd.h)
 MAKE_ENV+=	TCP_WRAPPERS=no
