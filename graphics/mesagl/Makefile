@@ -2,7 +2,7 @@
 # Date created:         Tue Feb  7 12:02:49  1995
 # Whom:                 hsu
 #
-# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.35 2000/03/20 23:23:28 jseger Exp $
+# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.36 2000/04/13 06:28:01 obrien Exp $
 #
 
 PORTNAME=	Mesa
@@ -11,8 +11,8 @@ CATEGORIES=	graphics
 MASTER_SITES= 	http://download.sourceforge.net/mesa3d/ \
 		ftp://iris.ssec.wisc.edu/pub/Mesa/ \
 		ftp://ftp.fu-berlin.de/pub/unix/X11/graphics/Mesa/
-DISTFILES=	MesaLib-${PORTVERSION}${DISTNAME}${EXTRACT_SUFX} \
-		MesaDemos-${VERSION}.tar.gz
+DISTFILES=	MesaLib-${PORTVERSION}${EXTRACT_SUFX} \
+		MesaDemos-${PORTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	jseger@FreeBSD.org
 
