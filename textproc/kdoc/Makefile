@@ -2,7 +2,7 @@
 # Date created:				4 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/kdoc/Makefile,v 1.1 2001/03/03 21:39:04 demon Exp $
+# $FreeBSD: ports/textproc/kdoc/Makefile,v 1.2 2001/03/05 11:35:48 demon Exp $
 #
 
 PORTNAME=	kdoc
@@ -13,12 +13,13 @@ MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
 MAINTAINER=	demon@FreeBSD.org
 
+USE_BZIP2=	yes
+
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} < 500007
 BROKEN=		"Requires Perl version 5.6.0"
 .endif
 
-USE_BZIP2=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 
