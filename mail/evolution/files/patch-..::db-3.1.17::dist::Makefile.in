@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/mail/evolution-devel/files/patch-..::db-3.1.17::dist::Makefile.in,v 1.2 2003/05/07 06:07:55 marcus Exp $
 
 --- ../db-3.1.17/dist/Makefile.in.orig	Tue Jul 18 18:37:57 2000
 +++ ../db-3.1.17/dist/Makefile.in	Fri Dec 14 16:49:51 2001
