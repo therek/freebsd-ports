@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.373 2001/05/06 04:56:07 kris Exp $
+# $FreeBSD: ports/games/Makefile,v 1.374 2001/05/19 18:34:31 ijliao Exp $
 #
 
     SUBDIR += 0verkill
@@ -54,6 +54,7 @@
     SUBDIR += crafty-open-medium
     SUBDIR += crafty-open-rock
     SUBDIR += crafty-open-small
+    SUBDIR += crimson
     SUBDIR += crossfire
     SUBDIR += cursive
     SUBDIR += deal
