@@ -2,12 +2,12 @@
 # Date created:        23. June 2000
 # Whom:                Mathias Picker <mathiasp@virtual-earth.de>
 #
-# $FreeBSD: ports/lang/mozart/Makefile,v 1.4 2001/02/08 16:10:57 olgeni Exp $
+# $FreeBSD: ports/lang/mozart/Makefile,v 1.5 2001/05/28 14:55:21 olgeni Exp $
 #
 
 PORTNAME=	mozart
-PORTVERSION=	1.2.0.20010514
-CATEGORIES=	lang tk80
+PORTVERSION=	1.2.1.20010816
+CATEGORIES=	lang tk83
 MASTER_SITES=	ftp://ftp.mozart-oz.org/pub/mozart/${PORTVERSION}/tar/ \
 		ftp://ftp.sics.se/pub/mozart/${PORTVERSION}/tar/
 DISTFILES=	${DISTNAME}-src.tar.gz ${MOZART_DOCS}
@@ -19,7 +19,7 @@ MAINTAINER=	mathiasp@virtual-earth.de
 
 BUILD_DEPENDS=	emacs:${PORTSDIR}/editors/emacs20
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm \
-		tk80.1:${PORTSDIR}/x11-toolkits/tk80
+		tk83.1:${PORTSDIR}/x11-toolkits/tk83
 
 MOZART_DOCS=	mozart-${PORTVERSION}-doc.tar.gz
 
@@ -35,9 +35,10 @@ USE_XLIB=	yes
 # when configuring as root.
 CONFIGURE_ENV=	INSTALL=${CHMOD}
 CONFIGURE_ARGS=	--prefix=${PREFIX}/lib/oz  --disable-doc \
-	--with-inc-dir=${LOCALBASE}/include/tcl8.0,${LOCALBASE}/include/tk8.0 \
+	--with-inc-dir=${LOCALBASE}/include/tcl8.3,${LOCALBASE}/include/tk8.3 \
 	--with-lib-dir=${LOCALBASE}/lib --with-tcl-lib=${LOCALBASE}/lib \
-	--with-tk-lib=${LOCALBASE}/lib
+	--with-tk-lib=${LOCALBASE}/lib \
+	--with-tkinclude=${LOCALBASE}/include/tk8.3
 
 pre-extract:
 	@${ECHO}
