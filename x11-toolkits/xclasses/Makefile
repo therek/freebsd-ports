@@ -2,7 +2,7 @@
 # Date created:		2000-10-01
 # Whom:			Trevor Johnson <trevor@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/xclasses/Makefile,v 1.1 2000/10/04 04:52:56 trevor Exp $
 #
 
 PORTNAME=	xclasses
@@ -13,13 +13,20 @@ DISTNAME=	Xclasses-public-${PORTVERSION}.src
 
 MAINTAINER=	trevor@FreeBSD.org
 
-USE_X_PREFIX=	yes
+INSTALLS_SHLIB=	yes
 PLIST_SUB=	VERSION="${PORTVERSION}"
+USE_GMAKE=	yes
+USE_X_PREFIX=	yes
+USE_XPM=	yes
 WRKSRC=		${WRKDIR}/xclasses
 
 post-patch:
-	@${PERL} -pi -e "s=X11BASE=${X11BASE}=g" ${WRKSRC}/build \
-		${WRKSRC}/System/ARules.FreeBSD
+.for file in build System/ARules.FreeBSD
+	@${PERL} -pi \
+		-e "s|%%CXX%%|${CXX}|g;" \
+		-e "s|%%CXXFLAGS%%|${CXXFLAGS}|g;" \
+		-e "s|%%X11BASE%%|${X11BASE}|g;" ${WRKSRC}/${file}
+.endfor
 
 do-build:
 	@cd ${WRKSRC} && ${SH} build all
