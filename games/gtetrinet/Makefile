@@ -2,7 +2,7 @@
 # Date created:				27 Feb 2000
 # Whom:					Dan Papasian <bugg@bugg.strangled.net>
 #
-# $FreeBSD: ports/games/gtetrinet/Makefile,v 1.5 2000/07/07 18:26:48 steve Exp $
+# $FreeBSD$
 
 PORTNAME=	gtetrinet
 PORTVERSION=	0.4.1
@@ -11,6 +11,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	gtetrinet
 
 MAINTAINER=	bugg@bugg.strangled.net
+
+FORBIDDEN=	"Remotely exploitable buffer overflows.  See GTetrinet web site."
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
