@@ -3,7 +3,7 @@
 # Date created:			  Sat Sep 18, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/benchmarks/postmark/Makefile,v 1.7 2000/12/22 22:41:34 obrien Exp $
+# $FreeBSD: ports/benchmarks/postmark/Makefile,v 1.8 2000/12/23 22:24:26 dannyboy Exp $
 #
 
 PORTNAME=	postmark
