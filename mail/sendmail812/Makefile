@@ -2,7 +2,7 @@
 # Date created:				20 Apr 2000
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/sendmail/Makefile,v 1.8 2001/03/11 07:03:30 dinoex Exp $
+# $FreeBSD: ports/mail/sendmail/Makefile,v 1.9 2001/03/13 06:44:50 dinoex Exp $
 #
 
 PORTNAME=	sendmail
@@ -79,7 +79,7 @@ MAN8=	sendmail.8 mailstats.8 makemap.8 praliases.8 smrsh.8 \
 pre-install:
 	@${CAT} ${PKGDIR}/pkg-plist >${PLIST}
 .if defined(SENDMAIL_WITH_MILTER)
-	@${CAT} ${FILESDIR}/pkg-milter >${PLIST}
+	@${CAT} ${FILESDIR}/pkg-milter >>${PLIST}
 .endif
 .if !defined(NOPORTDOCS)
 	@cd ${WRKSRC} && find cf -type f | \
