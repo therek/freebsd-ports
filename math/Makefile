@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.68 1999/11/16 23:15:06 asami Exp $
+# $FreeBSD: ports/math/Makefile,v 1.69 1999/11/26 20:59:05 steve Exp $
 #
 
     SUBDIR += PDL
@@ -47,6 +47,7 @@
     SUBDIR += sc
     SUBDIR += siag
     SUBDIR += simpack
+    SUBDIR += slsc
     SUBDIR += snns
     SUBDIR += spin
     SUBDIR += ss
