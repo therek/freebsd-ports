@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.85 2001/06/04 11:52:52 jeh Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.86 2001/06/13 03:16:57 knu Exp $
 #
 
 PORTNAME=	postgresql
@@ -28,7 +28,6 @@ MAINTAINER=	girgen@partitur.se
 DIST_SUBDIR=	postgresql
 
 INSTALLS_SHLIB=	YES
-LDCONFIG_DIRS=	%%PREFIX%%/lib
 
 DOCDIR=		${WRKDIR}/${DISTNAME}/doc
 PLIST=		${WRKDIR}/.PLIST.generated
@@ -93,6 +92,10 @@ SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 # to determine the correct plist.
 .if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
 .include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
+.else
+# make utility targets like depends and describe happy
+LIB_DEPENDS=	tcl83:${PORTSDIR}/lang/tcl83 \
+		tk83:${PORTSDIR}/x11-toolkits/tk83
 .endif
 
 pre-everything:
@@ -100,7 +103,7 @@ pre-everything:
 
 pre-install:
 	@ ${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/pkg-install ${PORTNAME} PRE-INSTALL
-.if !defined(BATCH)	
+.if !defined(BATCH)
 # remind folks twice for a while, so they really don't miss the layout shift
 	@ ${SED} "s|/usr/local|${PREFIX}|g" < ${PKGMESSAGE} | head -n 25 | more -e
 .endif
