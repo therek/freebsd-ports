@@ -2,7 +2,7 @@
 # Date created:         21 Aug 2001
 # Whom:                 Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/p-interp/Makefile,v 1.2 2001/08/21 14:47:03 nsayer Exp $
 #
 
 PORTNAME=	p-interp
@@ -16,6 +16,8 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	nsayer@FreeBSD.org
+
+RESTRICTED=	"Redistribution rights for Apple Pascal disk images are unclear"
 
 MAN1=	ucsd.1 svolio.1 svolcvt.1
 
