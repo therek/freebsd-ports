@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile.common,v 1.11 2001/08/23 06:46:34 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile.common,v 1.12 2001/09/17 17:54:26 knu Exp $
 
 # Don't forget to clear PORTREVISION's on update
 RUBY_QT2_VERSION=	0.14
@@ -19,7 +19,11 @@ RUBY_QT2_CONFIGURE_ARGS= \
 
 MD5_FILE=		${RUBY_QT2_PORTDIR}/distinfo
 
-post-patch: post-patch-cflags
+post-patch: post-patch-cflags post-patch-c++
 
 post-patch-cflags:
 	${RUBY} -i -pe '~ /^\$$CFLAGS\b.*/ and $$_.sub!(/-O\w*/, "")' ${WRKSRC}/extconf.rb
+
+post-patch-c++:
+	${GREP} -Frl 'typedef VALUE (*VALUEFUNC)();' ${WRKSRC} | \
+		${XARGS} ${RUBY} -i -pe 'sub(/typedef VALUE \(\*VALUEFUNC\)\(\);/, "typedef VALUE (*VALUEFUNC)(...);")'
