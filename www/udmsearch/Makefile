@@ -2,7 +2,7 @@
 # Date created:		11/29/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/www/udmsearch/Makefile,v 1.8 2000/07/27 16:03:13 kevlo Exp $
+# $FreeBSD: ports/www/udmsearch/Makefile,v 1.9 2000/08/23 14:04:10 kevlo Exp $
 #
 
 PORTNAME=	udmsearch
@@ -24,7 +24,7 @@ CONFIGURE_ARGS=	--enable-charset-guesser \
 		--sysconfdir=${PREFIX}/etc/udmsearch \
 		--localstatedir=/var/udmsearch
 
-.if defined(WITH_POSTGRESQL)
+.if defined(WITH_PGSQL)
 LIB_DEPENDS=		pq.2:${PORTSDIR}/databases/postgresql7
 CONFIGURE_ARGS+=	--with-pgsql
 
