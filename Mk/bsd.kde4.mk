@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.21 2002/10/11 07:35:44 alane Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.22 2003/01/28 18:36:51 alane Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -92,8 +92,8 @@ CONFIGURE_ENV+=        MOC="${MOC}" QTDIR="${QTDIR}"
 .elif ${USE_QT_VER} == 3
 
 # Yeah, it's namespace pollution, but this is really the best place for this
-# stuff since arts/kdelibs use it.
-KDE_VERSION=	3.1
+# stuff. Arts does NOT use it anymore.
+KDE_VERSION=		3.1.1
 KDE_ORIGVER=	${KDE_VERSION}
 KDE_PREFIX?=	${LOCALBASE}
 
