@@ -2,7 +2,7 @@
 # Date created:		9 Dec 1999
 # Whom:			Boris Popov <bp@butya.kz>
 #
-# $FreeBSD: ports/net/ncplib/Makefile,v 1.2 1999/12/10 11:58:41 bp Exp $
+# $FreeBSD: ports/net/ncplib/Makefile,v 1.3 2000/04/09 18:12:26 cpiazza Exp $
 #
 
 PORTNAME=	ncplib
@@ -32,7 +32,7 @@ MAN1=	ncpasswd.1 ncprint.1 ncpsend.1 ncpurge.1
 MAN8=	ipxping.8
 
 .if ${OSVERSION} >= 400000
-PLIST=	${PKGDIR}/PLIST.4
+PLIST=	${PKGDIR}/pkg-plist.4
 .else
 MAN1+=	ncplist.1 ncplogin.1 ncplogout.1
 MAN8+=	mount_nwfs.8
