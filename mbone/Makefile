@@ -1,5 +1,6 @@
-# $FreeBSD: ports/mbone/Makefile,v 1.13 2000/03/08 16:42:49 fenner Exp $
+# $FreeBSD: ports/mbone/Makefile,v 1.14 2000/05/01 13:45:21 jseger Exp $
 #
+    SUBDIR += wbd
 
     SUBDIR += imm
     SUBDIR += nte
