@@ -7,7 +7,7 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20040813:
-  AFFECTS: users of kdm (x11/kdebase3)
+  AFFECTS: users of x11/kdebase3 (kdm)
   AUTHOR: kde@freebsd.org
 
   If you are unable to login to X via kdm after portupgrading to the latest 
@@ -591,4 +591,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.56 2004/08/13 17:23:20 lofi Exp $
+$FreeBSD: ports/UPDATING,v 1.57 2004/08/13 18:01:32 lofi Exp $
