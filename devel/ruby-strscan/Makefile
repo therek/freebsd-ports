@@ -2,11 +2,12 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.15 2001/03/20 08:27:39 knu Exp $
+# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.16 2001/03/20 08:51:03 knu Exp $
 #
 
 PORTNAME=	strscan
 PORTVERSION=	0.6.2
+PORTREVISION=	1
 CATEGORIES=	devel ruby
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www.xdsl.ne.jp/Cd/aamine/soft/
@@ -26,6 +27,9 @@ DOCS_EN=	README.en \
 DOCS_JA=	README.ja \
 		doc.ja/changes.html doc.ja/index.html \
 		doc.ja/reference.html doc.ja/usage.html
+
+post-patch:
+	${RUBY} -i -pe "gsub /'ARCH'/, %q/'arch'/" ${WRKSRC}/setup.rb
 
 do-install:
 .if !defined(NOPORTDOCS)
