@@ -2,7 +2,7 @@
 # Date created:				13 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/empire/Makefile,v 1.7 2000/08/13 14:32:33 steve Exp $
+# $FreeBSD: ports/games/empire/Makefile,v 1.8 2000/08/13 16:15:57 alex Exp $
 #
 
 PORTNAME=	empire
@@ -13,7 +13,7 @@ DISTNAME=	vms-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-MAN6=		vms-empire.6
+MAN6=		empire.6
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/vms-empire ${PREFIX}/bin/empire
