@@ -2,7 +2,7 @@
 # Date created:		31 October 1999
 # Whom:			Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/sysutils/ipsc/Makefile,v 1.9 2000/06/01 16:25:41 ade Exp $
+# $FreeBSD: ports/sysutils/ipsc/Makefile,v 1.10 2000/10/05 07:22:48 reg Exp $
 #
 
 PORTNAME=	ipsc
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	jeremy@external.org
 
-BUILD_DEPENDS=	${WRKDIRPREFIX}${PORTSDIR}/sysutils/prips/work/prips/prips.o:${PORTSDIR}/sysutils/prips:build
+BUILD_DEPENDS=	${PORTSDIR}/sysutils/prips/work/prips/prips.o:${PORTSDIR}/sysutils/prips:build
 
 WRKSRC=		${WRKDIR}/ipsc/src
 
