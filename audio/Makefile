@@ -1,6 +1,7 @@
-# $FreeBSD: ports/audio/Makefile,v 1.205 2001/01/29 08:24:01 kris Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.206 2001/02/03 18:16:34 dannyboy Exp $
 #
 
+    SUBDIR += Maaate
     SUBDIR += afsp
     SUBDIR += amp
     SUBDIR += ascd
