@@ -3,10 +3,10 @@
 # Date created:		16 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/smail/Makefile,v 1.26 1999/08/31 06:47:41 mharo Exp $
+# $FreeBSD: ports/mail/smail/Makefile,v 1.27 1999/09/10 11:44:40 torstenb Exp $
 #
 
-DISTNAME=	smail-3.2.0.107
+DISTNAME=	smail-3.2.0.110
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.uu.net/networking/mail/smail/ \
 		ftp://ftp.planix.com/pub/Smail/ \
