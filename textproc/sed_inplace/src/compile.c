@@ -36,7 +36,6 @@
  */
 
 #include <sys/cdefs.h>
-__FBSDID("$FreeBSD: src/usr.bin/sed/compile.c,v 1.21 2002/06/01 13:25:47 green Exp $");
 
 #ifndef lint
 static const char sccsid[] = "@(#)compile.c	8.1 (Berkeley) 6/6/93";
