@@ -2,11 +2,11 @@
 # Date created:		Feb 26, 2001
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/mail/althea/Makefile,v 1.3 2001/03/31 16:17:05 kevlo Exp $
+# $FreeBSD: ports/mail/althea/Makefile,v 1.4 2001/06/13 15:51:43 kevlo Exp $
 #
 
 PORTNAME=	althea
-PORTVERSION=	0.5.2
+PORTVERSION=	0.5.3
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
