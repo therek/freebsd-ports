@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.143 1999/09/20 06:44:46 tg Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.144 1999/09/20 18:40:40 mph Exp $
 #
 
     SUBDIR += 4va
@@ -112,6 +112,7 @@
     SUBDIR += tgif-nls
     SUBDIR += tiff
     SUBDIR += tifmerge
+    SUBDIR += togl
     SUBDIR += txtmerge
     SUBDIR += urt
     SUBDIR += vcg
