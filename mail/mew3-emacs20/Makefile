@@ -2,7 +2,7 @@
 # Date created:		21 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew2-emacs20/Makefile,v 1.1 2001/08/25 08:10:58 kiri Exp $
+# $FreeBSD: ports/mail/mew2-emacs20/Makefile,v 1.2 2001/08/25 09:17:57 kiri Exp $
 #
 
 PORTNAME=	mew
@@ -51,7 +51,7 @@ post-install:
 		for dir in contrib; do \
 			${CP} -R $${dir} ${PREFIX}/${MEW_DOCDIR}/ ; \
 		done)
-	${CHOWN} -R ${SHAREOWN}.${SHAREGRP} ${PREFIX}/${MEW_DOCDIR}
+	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/${MEW_DOCDIR}
 .endif
 
 ############################################################
