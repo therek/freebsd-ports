@@ -1,9 +1,8 @@
 # New ports collection makefile for:    omi
-# http://fromme.com/omi/
 # Date created:		19 August 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/ftp/omi/Makefile,v 1.6 1999/08/25 05:55:20 obrien Exp $
+# $FreeBSD: ports/ftp/omi/Makefile,v 1.7 2000/04/12 05:31:19 mharo Exp $
 #
 
 PORTNAME=	omi
