@@ -2,34 +2,19 @@
 # Date created:         09 December 1998
 # Whom:                 Matthew Dillon <dillon@backplane.com>
 #
-# $FreeBSD: ports/java/jikes/Makefile,v 1.18 2000/05/11 03:27:47 archie Exp $
+# $FreeBSD: ports/java/jikes/Makefile,v 1.19 2000/06/29 07:02:59 obrien Exp $
 #
 
 PORTNAME=	jikes
-PORTVERSION=	1.11
+PORTVERSION=	1.12
 CATEGORIES=	java
-MASTER_SITES=	${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	archie
+MASTER_SITES=	http://oss.software.ibm.com/developerworks/opensource/jikes/project/download/v112/
 
-MAINTAINER=	archie@whistle.com
+MAINTAINER=	archie@freebsd.org
 
-WRKSRC=		${WRKDIR}/jikes/src
 MAN1=		jikes.1
-MAKE_ENV=	WRKDIR=${WRKDIR}
-PATCH_STRIP=	-p2
 
-# 	(sufficiently handled by pkg/MESSAGE, but if IBM has an issue then
-#	uncomment this section)
-#
-#fetch-depends:
-#
-#.if !defined(READ_IBM_LICENSE)
-#	@echo ""
-#	@echo "You must read the IBM license prior to using this software,"
-#	@echo "then set READ_IBM_LICENSE=YES in /etc/make.conf.local"
-#	@echo ""
-#	@echo "The license is available at http://www.ibm.com/research/jikes"
-#	@${FALSE}
-#.endif
+HAS_CONFIGURE=	yes
+USE_GMAKE=	yes
 
 .include <bsd.port.mk>
