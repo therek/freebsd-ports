@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.244 2000/11/03 17:13:12 sada Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.245 2000/11/03 17:19:46 sobomax Exp $
 #
 
     SUBDIR += 4va
@@ -81,7 +81,7 @@
     SUBDIR += icod
     SUBDIR += imanager
     SUBDIR += imlib
-    SUBDIR += imlib2
+    SUBDIR += imlib2-tmp
     SUBDIR += jbigkit
     SUBDIR += jgraph
     SUBDIR += jgv
