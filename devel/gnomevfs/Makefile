@@ -2,11 +2,11 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnomevfs/Makefile,v 1.11 2000/11/03 17:51:42 ade Exp $
+# $FreeBSD: ports/devel/gnomevfs/Makefile,v 1.12 2000/11/03 21:51:30 ade Exp $
 #
 
 PORTNAME=	gnomevfs
-PORTVERSION=	0.4.1
+PORTVERSION=	0.4.2
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gnome-vfs
