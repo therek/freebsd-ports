@@ -2,7 +2,7 @@
 # Date created:		Jan 5 1997
 # Whom:			cfs@ing.puc.cl (original)
 #
-# $FreeBSD: ports/graphics/urt/Makefile,v 1.16 1999/09/07 10:45:27 steve Exp $
+# $FreeBSD: ports/graphics/urt/Makefile,v 1.17 2000/04/14 10:47:34 asami Exp $
 #
 
 PORTNAME=	urt
@@ -19,7 +19,7 @@ PATCH_DIST_STRIP=-p1
 MAINTAINER=	giffunip@asme.org
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff
-BUILD_DEPENDS=	${X11BASE}/lib/libpbm.a:${PORTSDIR}/graphics/netpbm
+BUILD_DEPENDS=	${LOCALBASE}/lib/libpbm.a:${PORTSDIR}/graphics/netpbm
 
 EXTRACT_ONLY=	urt-3.1b.tar.Z
 
