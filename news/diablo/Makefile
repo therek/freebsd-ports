@@ -2,7 +2,7 @@
 # Date created:					June 2nd 1997
 # Whom:						jfitz
 #
-# $FreeBSD: ports/news/diablo/Makefile,v 1.13 2000/08/30 12:10:00 des Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	diablo
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.openusenet.org/diablo/download/
 DISTNAME=	${PKGNAME}-REL
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	des@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	xmake:${PORTSDIR}/devel/xmake
 
