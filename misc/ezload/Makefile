@@ -2,7 +2,7 @@
 # Date created:		18 november 1999
 # Whom:			n_hibma
 #
-# $FreeBSD: ports/misc/ezload/Makefile,v 1.5 2001/01/16 17:31:39 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ezload
@@ -11,6 +11,8 @@ CATEGORIES=	misc
 MASTER_SITES=	http://www.etla.net/~n_hibma/usb/
 
 MAINTAINER=	n_hibma@FreeBSD.ORG
+
+BROKEN=		"Does not build"
 
 MAN1=		ezupload.1 ezdownload.1 aw.1
 MANCOMPRESSED=	yes
