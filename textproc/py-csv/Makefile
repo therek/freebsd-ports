@@ -2,26 +2,27 @@
 # Date created:		27 February 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/textproc/py-csv/Makefile,v 1.2 2001/06/19 08:44:49 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	csv
-PORTVERSION=	0.4
+PORTVERSION=	0.5
 CATEGORIES=	textproc python
 MASTER_SITES=	http://object-craft.com.au/projects/csv/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	wjv@FreeBSD.org
 
-USE_PYTHON=	yes
+BUILD_DEPENDS=	${PYDISTUTILS}
 
-WRKSRC=		${WRKDIR}/csv
+USE_PYTHON=	yes
+WRKSRC=		${WRKDIR}/${PORTNAME}
+PYTHON_SETUP=	${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py
 
 do-build:
-	@ cd ${WRKSRC} && ${PYTHON_CMD} setup.py build
+	@ cd ${WRKSRC} && ${PYTHON_SETUP} build
 
 do-install:
-	@ cd ${WRKSRC} && ${PYTHON_CMD} setup.py install \
-	  --prefix=${PREFIX}
+	@ cd ${WRKSRC} && ${PYTHON_SETUP} install --prefix=${PREFIX}
 
 .include <bsd.port.mk>
