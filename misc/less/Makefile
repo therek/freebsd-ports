@@ -3,10 +3,10 @@
 # Date created:         8 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/misc/less/Makefile,v 1.20 1999/08/25 07:22:00 obrien Exp $
+# $FreeBSD: ports/misc/less/Makefile,v 1.21 1999/08/31 06:48:18 mharo Exp $
 #
 
-DISTNAME=       less-337
+DISTNAME=       less-340
 CATEGORIES=	misc
 MASTER_SITES=   ${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	less
