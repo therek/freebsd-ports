@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.435 2005/01/04 20:28:26 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.436 2005/01/05 02:03:18 sem Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -37,23 +37,23 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <affects>
       <package>
         <name>exim</name>
-        <range><le>4.43+28_1</le></range>
+        <range><lt>4.43+28_1</lt></range>
       </package>
       <package>
         <name>exim-ldap2</name>
-        <range><le>4.43+28_1</le></range>
+        <range><lt>4.43+28_1</lt></range>
       </package>
       <package>
         <name>exim-mysql</name>
-        <range><le>4.43+28_1</le></range>
+        <range><lt>4.43+28_1</lt></range>
       </package>
       <package>
         <name>exim-postgresql</name>
-        <range><le>4.43+28_1</le></range>
+        <range><lt>4.43+28_1</lt></range>
       </package>
       <package>
         <name>exim-sa-exim</name>
-        <range><le>4.43+28_1</le></range>
+        <range><lt>4.43+28_1</lt></range>
       </package>
     </affects>
     <description>
