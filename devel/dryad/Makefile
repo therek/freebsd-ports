@@ -2,11 +2,11 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/dryad/Makefile,v 1.6 2000/08/04 16:11:06 ade Exp $
+# $FreeBSD: ports/devel/dryad/Makefile,v 1.7 2000/08/21 10:07:20 sobomax Exp $
 #
 
 PORTNAME=	dryad
-PORTVERSION=	0.1.3
+PORTVERSION=	0.1.4
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/dryad
