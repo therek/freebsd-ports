@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.193 2000/04/15 17:26:59 sada Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.194 2000/04/19 17:29:21 asami Exp $
 #
 
     SUBDIR += 4va
@@ -111,6 +111,7 @@
     SUBDIR += p5-Chart-PNGgraph
     SUBDIR += p5-GD
     SUBDIR += p5-GD-Graph
+    SUBDIR += p5-GD-Graph3d
     SUBDIR += p5-GD-TextUtil
     SUBDIR += p5-Image-Size
     SUBDIR += p5-chart
