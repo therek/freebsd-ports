@@ -3,7 +3,7 @@
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-xemacs21-mule-current/Makefile,v 1.12 2000/01/06 14:27:05 shige Exp $
+# $FreeBSD: ports/editors/semi-xemacs21-mule-current/Makefile,v 1.13 2000/01/11 14:47:42 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -16,7 +16,7 @@ MASTERDIR=	${.CURDIR}/../../editors/semi-emacs-current
 # emacs port setup
 EMACS_NAME=	xemacs
 EMACS_PORT=	xemacs21-mule
-EMACS_VER=	21.1.8
+EMACS_VER=	21.1.9
 EMACS_CMD=	${PREFIX}/bin/${EMACS_PORT}
 EMACS_PACKAGESDIR=	lib/${EMACS_NAME}/site-packages
 # packages-subdirectories which this port requires
