@@ -2,13 +2,14 @@
 # Date created:		9 February 2000
 # Whom:			diskiller@cnbinc.com
 #
-# $FreeBSD: ports/net/ppptraf/Makefile,v 1.1.1.1 2000/02/29 04:00:55 dburr Exp $
+# $FreeBSD: ports/net/ppptraf/Makefile,v 1.2 2000/04/09 18:13:10 cpiazza Exp $
 #
 
 PORTNAME=	ppptraf
 PORTVERSION=	1.0
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.borg-cube.com/users/diskiller/distfiles/
+MASTER_SITES=	ftp://ftp.borg-cube.com/users/diskiller/distfiles/ \
+		http://people.FreeBSD.org/~dburr/distfiles/
 
 MAINTAINER=	diskiller@cnbinc.com
 
