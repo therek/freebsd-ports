@@ -2,13 +2,13 @@
 # Date created:		08 March 2000
 # Whom:			Dave McKay <dave@mu.org>
 #
-# $FreeBSD: ports/security/seahorse/Makefile,v 1.6 2000/06/14 13:21:32 sobomax Exp $
+# $FreeBSD: ports/security/seahorse/Makefile,v 1.7 2000/07/10 20:19:01 will Exp $
 #
 
 PORTNAME=	seahorse
-PORTVERSION=	0.4.5
+PORTVERSION=	0.4.9
 CATEGORIES=	security
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITES=	http://seahorse.sourceforge.net/
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	dave@mu.org
