@@ -2,7 +2,7 @@
 # Date created:		4 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jtex209-both/Makefile,v 1.11 2000/01/27 01:05:08 taoka Exp $
+# $FreeBSD: ports/japanese/jtex209-both/Makefile,v 1.12 2000/04/11 14:14:02 knu Exp $
 #
 
 PORTNAME=	jlatex209
@@ -34,10 +34,10 @@ BATCH_TEX?=	BOTH
 .if ${BATCH_TEX} == BOTH
 _PORTVERSION=	${ASCII_VERSION}+${NTT_VERSION}
 _PKGNAMESUFFIX=	-ascii+ntt
-.elseif ${BATCH_TEX} == ASCII
+.elif ${BATCH_TEX} == ASCII
 _PORTVERSION=	${ASCII_VERSION}
 _PKGNAMESUFFIX=	-ascii
-.elseif ${BATCH_TEX} == NTT
+.elif ${BATCH_TEX} == NTT
 _PORTVERSION=	${NTT_VERSION}
 _PKGNAMESUFFIX=	-ntt
 .endif
