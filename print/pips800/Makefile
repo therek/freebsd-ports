@@ -2,7 +2,7 @@
 # Date created:        00/05/22
 # Whom:                Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: $
+# $FreeBSD: ports/print/pips800/Makefile,v 1.1.1.1 2000/09/01 16:35:54 taoka Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
@@ -26,7 +26,6 @@ BASE_NAME=	pips${PRTYPE}
 PAPERSIZE?=	a4
 
 .include <bsd.port.pre.mk>
-MD5_FILE=	${.CURDIR}/files/md5
 PRTYPE?=	800
 
 do-build:
@@ -58,6 +57,9 @@ do-install:
 .endif
 
 .include <bsd.port.post.mk>
+
+MD5_FILE=	${.CURDIR}/files/md5
+
 
 # target for maintainer
 _MAKE_COMMENT_DESCR:
