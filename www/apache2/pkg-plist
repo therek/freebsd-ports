@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/apache2/pkg-plist,v 1.57 2003/10/29 22:46:45 trevor Exp $
 @unexec if cmp -s %D/etc/apache2/highperformance.conf %D/etc/apache2/highperformance-std.conf; then rm -f %D/etc/apache2/highperformance.conf; fi
 etc/apache2/highperformance-std.conf
 @exec [ -f %B/highperformance.conf ] || cp %B/%f %B/highperformance.conf
@@ -1554,4 +1554,4 @@ share/apache2/build/special.mk
 @dirrm libexec/apache2
 @dirrm lib/apache2
 @dirrm include/apache2
-@dirrm etc/apache2
+@unexec rmdir %D/etc/apache2 2> /dev/null || echo "===> If you plan to do not reinstall apache2, you can safely remove %D/etc/apache2."
