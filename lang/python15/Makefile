@@ -3,7 +3,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.52 1999/08/25 06:35:16 obrien Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.53 1999/08/31 06:47:00 mharo Exp $
 #
 
 DISTNAME=       py152
@@ -20,7 +20,7 @@ LIB_DEPENDS=	${TK_DEPENDS}
 DIST_SUBDIR=	python
 WRKSRC=		${WRKDIR}/Python-1.5.2
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-fpectl
+CONFIGURE_ARGS=	--with-fpectl --with-libs='-lxpg4'
 CONFIGURE_ENV=	OPT="${CFLAGS}"
 INSTALL_TARGET=	install
 PLIST=		${WRKDIR}/PLIST
