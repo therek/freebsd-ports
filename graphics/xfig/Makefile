@@ -2,21 +2,21 @@
 # Date created:		4 January 1995
 # Whom:			roberto
 #
-# $FreeBSD: ports/graphics/xfig/Makefile,v 1.38 2000/10/23 19:55:06 jeh Exp $
+# $FreeBSD: ports/graphics/xfig/Makefile,v 1.39 2000/12/07 08:14:58 roam Exp $
 #
 
 PORTNAME=	xfig
-PORTVERSION=	3.2.3c
+PORTVERSION=	3.2.3d
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.xfig.org/xfigdist/ \
-		ftp://www-epb.lbl.gov/xfig/ \
-		${MASTER_SITE_XCONTRIB}
+		ftp://www-epb.lbl.gov/xfig/
 MASTER_SITE_SUBDIR=	applications/drawing_tools/xfig
 DISTNAME=	${PORTNAME}.${PORTVERSION}.full
 
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
+		png.4:${PORTSDIR}/graphics/png \
 		Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 RUN_DEPENDS=	fig2dev:${PORTSDIR}/print/transfig
 
@@ -25,6 +25,10 @@ WRKSRC=		${WRKDIR}/${PORTNAME}.${PORTVERSION}
 USE_IMAKE=	yes
 USE_XPM=	yes
 MAN1=		xfig.1
+
+.if !defined(NOPORTDOCS)
+INSTALL_TARGET=	install install.all
+.endif
 
 pre-fetch:
 .if !defined(NO_GSBIT)
