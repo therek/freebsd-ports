@@ -2,7 +2,7 @@
 # Date created:				14 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/databases/p5-MyObject/Makefile,v 1.3 2000/04/08 22:48:45 mharo Exp $
+# $FreeBSD: ports/databases/p5-MyObject/Makefile,v 1.4 2000/04/16 23:12:25 mharo Exp $
 #
 
 PORTNAME=	MyObject
@@ -25,7 +25,7 @@ MAN3=		MyObject.3
 
 do-extract:
 	@${MKDIR} ${WRKSRC}
-	@${CP} ${DISTDIR}/${DISTNAME} ${WRKSRC}
+	@${CP} ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} ${WRKSRC}
 	@(cd ${WRKSRC}; ${POD2MAN} MyObject.pm > MyObject.3)
 
 do-install:
