@@ -68,10 +68,10 @@ end
 
 IO::popen("xwininfo -display #{$display} -root -tree") {
   |io|
-  if NAME != "firebird"
+  if NAME != "firefox"
     $windows = io.grep(%r<"Mozilla"\s+"navigator:\s*browser">)
   else
-    $windows = io.grep(%r<MozillaFirebird-bin.*>)
+    $windows = io.grep(%r<MozillaFirefox-bin.*>)
   end
 }
 
