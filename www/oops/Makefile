@@ -2,11 +2,11 @@
 # Date created:		15 August 2000
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/www/oops/Makefile,v 1.4 2000/12/14 14:23:18 jedgar Exp $
+# $FreeBSD: ports/www/oops/Makefile,v 1.5 2000/12/14 17:31:34 sobomax Exp $
 #
 
 PORTNAME=	oops
-PORTVERSION=	1.5.2
+PORTVERSION=	1.5.5
 CATEGORIES=	www
 MASTER_SITES=	http://zipper.paco.net/~igor/oops/
 
