@@ -3,10 +3,10 @@
 # Date created:         2 November 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cdrecord/Makefile,v 1.23 1999/10/19 12:39:14 dirk Exp $
+# $FreeBSD: ports/sysutils/cdrecord/Makefile,v 1.24 1999/11/09 11:41:49 dirk Exp $
 #
 
-DISTNAME=	cdrecord-1.8a31
+DISTNAME=	cdrecord-1.8a33
 CATEGORIES=	sysutils audio
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/alpha/ \
 		ftp://ftp.cs.tu-berlin.de/pub/misc/cdrecord/alpha/ \
@@ -29,6 +29,8 @@ do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/cdrecord/OBJ/${ARCH}-freebsd-cc/cdrecord \
 	 ${PREFIX}/bin
 	@${INSTALL_PROGRAM} ${WRKSRC}/cdda2wav/OBJ/${ARCH}-freebsd-cc/cdda2wav \
+	 ${PREFIX}/bin
+	@${INSTALL_PROGRAM} ${WRKSRC}/misc/OBJ/${ARCH}-freebsd-cc/readcd \
 	 ${PREFIX}/bin
 	@${INSTALL_MAN} ${WRKSRC}/cdrecord/cdrecord.1 ${PREFIX}/man/man1
 	@${INSTALL_MAN} ${WRKSRC}/cdda2wav/cdda2wav.1 ${PREFIX}/man/man1
