@@ -2,7 +2,7 @@
 # Date created:				Sun 14 May 2000 02:47:57
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/games/kdegames2/Makefile,v 1.44 2000/10/25 03:33:45 will Exp $
+# $FreeBSD: ports/games/kdegames2/Makefile,v 1.45 2000/10/28 23:22:11 will Exp $
 #
 
 PORTNAME=	kdegames
@@ -25,7 +25,7 @@ CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
 		--with-qt-libraries=${X11BASE}/lib \
 		--with-extra-libs=${LOCALBASE}/lib
 CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
-		LIBS="-Wl,-export-dynamic -lqt2 -L${LOCALBASE}/lib -ljpeg -lgcc -lstdc++" \
+		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lgcc -lstdc++" \
 		CPPFLAGS="-I${LOCALBASE}/include"
 USE_GMAKE=	yes
 
