@@ -2,29 +2,23 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid23/Makefile,v 1.76 2001/02/19 13:15:19 olgeni Exp $
+# $FreeBSD: ports/www/squid23/Makefile,v 1.77 2001/03/29 16:34:59 sobomax Exp $
 #
 
 PORTNAME=	squid
 PORTVERSION=	2.3
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=  \
 	ftp://ftp.squid-cache.org/pub/squid-2/STABLE/ \
 	ftp://www.unimelb.edu.au/pub/cwis/servers/unix/squid/squid-2/STABLE/ \
 	ftp://sunsite.auc.dk/pub/infosystems/squid/squid-2/STABLE/ \
 	ftp://ftp.net.lut.ac.uk/squid/squid-2/STABLE/
-DISTNAME=	squid-2.3.STABLE4
+DISTNAME=	squid-2.3.STABLE5
 EXTRACT_SUFX=	-src.tar.gz
 
 PATCH_SITES=	http://www.squid-cache.org/Versions/v2/2.3/bugs/
-PATCHFILES=	squid-2.3.stable4-ftp_icon_not_found.patch \
-		squid-2.3.stable4-internal_dns_rcode_table_formatting.patch \
-		squid-2.3.stable4-ipfw_configure.patch \
-		squid-2.3.stable4-invalid_ip_acl_entry.patch \
-		squid-2.3.stable4-accel_only_access.patch \
-		squid-2.3.stable4-html_quoting.patch \
-		squid-2.3.stable4-carp-assertion.patch
-
+PATCHFILES=
 MAINTAINER=	adrian@freebsd.org
 
 DIST_SUBDIR=	squid2.3
