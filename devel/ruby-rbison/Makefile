@@ -2,13 +2,13 @@
 # Date created:		2 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-rbison/Makefile,v 1.1 2000/11/02 03:03:24 knu Exp $
 #
 
 PORTNAME=	rbison
-PORTVERSION=	0.0.5
+PORTVERSION=	0.0.7
 CATEGORIES=	devel ruby
-MASTER_SITES=	http://www.cs.umass.edu/~aseltine/rbison/
+MASTER_SITES=	http://www.cs.umass.edu/~aseltine/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DIST_SUBDIR=	ruby
 
@@ -24,7 +24,6 @@ DOCS=		ChangeLog		README
 EXAMPLES=	CalcFileLexer.rb	CalcStringLexer.rb	\
 		calc.in 		calc.ry			calc_test.rb
 
-NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 
 do-install:
