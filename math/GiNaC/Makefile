@@ -3,11 +3,11 @@
 # Date created:			Mar 7, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/math/GiNaC/Makefile,v 1.1 2001/03/07 07:09:02 ijliao Exp $
+# $FreeBSD: ports/math/GiNaC/Makefile,v 1.2 2001/03/27 15:02:29 ijliao Exp $
 #
 
 PORTNAME=	GiNaC
-PORTVERSION=	0.8.0
+PORTVERSION=	0.8.1
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftpthep.physik.uni-mainz.de/pub/GiNaC/ \
 		http://www.ginac.de/
