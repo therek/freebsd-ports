@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.1 2002/03/28 11:24:43 znerd Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.2 2002/03/29 11:22:41 znerd Exp $
 #
 
 .if !defined(Java_Include)
@@ -320,7 +320,6 @@ JAVA_CLASSES=	${JAVA_HOME}/jre/lib/rt.jar
 _DEPEND_JAVA=	${JAVA}:${PORTSDIR}/${JAVA_PORT}
 .		if !defined(NO_BUILD_DEPENDS_JAVA)
 BUILD_DEPENDS+=		${_DEPEND_JAVA}
-.BEGIN:
 .		endif
 .		if !defined(NO_RUN_DEPENDS_JAVA)
 RUN_DEPENDS+=		${_DEPEND_JAVA}
