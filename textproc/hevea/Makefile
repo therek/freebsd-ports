@@ -2,13 +2,19 @@
 # Date created:		November 28 1999
 # Whom:			Stephen Montgomery-Smith <stephen@math.missouri.edu>
 #
-# $FreeBSD: ports/textproc/hevea/Makefile,v 1.5 2000/10/08 10:05:16 asami Exp $
+# $FreeBSD: ports/textproc/hevea/Makefile,v 1.6 2001/02/05 16:34:40 olgeni Exp $
 #
 
 PORTNAME=		hevea
-PORTVERSION=		1.04
+PORTVERSION=		1.05
 CATEGORIES=		textproc
 MASTER_SITES=		ftp://ftp.inria.fr/INRIA/Projects/para/hevea/
+DISTFILES=		${PORTNAME}-${PORTVERSION}.tar.gz \
+			${PORTNAME}-${PORTVERSION}-manual-dvi.tar.gz \
+			${PORTNAME}-${PORTVERSION}-manual.pdf \
+			${PORTNAME}-${PORTVERSION}-manual.ps.gz \
+			${PORTNAME}-${PORTVERSION}-manual.tar.gz
+EXTRACT_ONLY=		${PORTNAME}-${PORTVERSION}.tar.gz
 
 MAINTAINER=		stephen@math.missouri.edu
 
@@ -20,6 +26,13 @@ TEXHASH=		${PREFIX}/bin/texhash
 post-install:
 	strip ${PREFIX}/bin/hevea
 	strip ${PREFIX}/bin/hacha
+.if !defined(NOPORTDOCS)
+	${MKDIR} ${PREFIX}/share/doc/hevea
+	${INSTALL_DATA} ${DISTDIR}/${PORTNAME}-${PORTVERSION}-manual.pdf ${PREFIX}/share/doc/hevea
+	${INSTALL_DATA} ${DISTDIR}/${PORTNAME}-${PORTVERSION}-manual.ps.gz ${PREFIX}/share/doc/hevea
+	(cd ${PREFIX}/share/doc/hevea; ${TAR} xvfz ${DISTDIR}/${PORTNAME}-${PORTVERSION}-manual.tar.gz)
+	(cd ${PREFIX}/share/doc/hevea; ${TAR} xvfz ${DISTDIR}/${PORTNAME}-${PORTVERSION}-manual-dvi.tar.gz)
+.endif
 	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
