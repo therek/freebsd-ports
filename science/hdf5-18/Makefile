@@ -2,13 +2,13 @@
 # Date created:		17 November 1996
 # Whom:			mi
 #
-# $FreeBSD: ports/graphics/hdf/Makefile,v 1.15 1999/11/14 02:31:56 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hdf
-PORTVERSION=	4.1r3
+PORTVERSION=	4.1r5
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.ncsa.uiuc.edu/HDF/HDF/HDF4.1r3/tar/
+MASTER_SITES=	ftp://ftp.ncsa.uiuc.edu/HDF/HDF/HDF${PORTVERSION}/tar/
 DISTNAME=	HDF${PORTVERSION}
 
 MAINTAINER=	mi@aldan.algebra.com
