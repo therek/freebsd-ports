@@ -2,7 +2,7 @@
 # Date created:				17 May 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/devel/p5-Log-Dispatch/Makefile,v 1.1 2001/05/19 22:32:06 joe Exp $
+# $FreeBSD: ports/devel/p5-Log-Dispatch/Makefile,v 1.2 2001/06/12 19:24:36 tobez Exp $
 #
 
 PORTNAME=	Log-Dispatch
@@ -33,6 +33,7 @@ MAN3=	Log::Dispatch.3 \
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 SCRIPTS_ENV+=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
+		MKDIR="${MKDIR}" \
 		REALCURDIR="${.CURDIR}"
 
 pre-fetch:
