@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.243 2000/08/11 15:51:03 knu Exp $
+# $FreeBSD: ports/www/Makefile,v 1.244 2000/08/11 16:39:38 knu Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -98,6 +98,7 @@
     SUBDIR += mod_ruby
     SUBDIR += momspider
     SUBDIR += mozilla
+    SUBDIR += mozilla-embedded
     SUBDIR += netscape-remote
     SUBDIR += netscape-wrapper
     SUBDIR += netscape3
