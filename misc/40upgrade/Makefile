@@ -2,7 +2,7 @@
 # Date created:		11 Jul 2000
 # Whom:			asami
 #
-# $FreeBSD: ports/misc/40upgrade/Makefile,v 1.3 2000/10/08 10:22:19 asami Exp $
+# $FreeBSD: ports/misc/40upgrade/Makefile,v 1.4 2000/11/02 21:34:03 asami Exp $
 #
 
 PORTNAME=	40upgrade
@@ -11,6 +11,8 @@ CATEGORIES=	misc
 DISTFILES=	# empty
 
 MAINTAINER=	asami@FreeBSD.org
+
+FORBIDDEN=	something wrong with shared library
 
 .include <bsd.port.pre.mk>
 
