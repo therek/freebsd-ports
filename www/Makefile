@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.376 2001/07/03 08:44:23 roam Exp $
+# $FreeBSD: ports/www/Makefile,v 1.377 2001/07/06 18:02:25 ijliao Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -160,6 +160,7 @@
     SUBDIR += mozilla+ipv6
     SUBDIR += mozilla-headers
     SUBDIR += neon
+    SUBDIR += netraider
     SUBDIR += netscape-remote
     SUBDIR += netscape-wrapper
     SUBDIR += netscape3
