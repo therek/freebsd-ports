@@ -3,7 +3,7 @@
 # Date created:         02 Feb 1996
 # Whom:                 chuckr@glue.umd.edu
 #
-# $FreeBSD: ports/graphics/xpdf/Makefile,v 1.25 1999/11/23 05:57:01 chuckr Exp $
+# $FreeBSD: ports/graphics/xpdf/Makefile,v 1.26 1999/12/10 18:29:20 chuckr Exp $
 #
 
 DISTNAME=       xpdf-0.90
@@ -22,7 +22,7 @@ PATCH_DIST_STRIP= -p1
 MAINTAINER=	chuckr@freebsd.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		t1.9:${PORTSDIR}/devel/t1lib
+		t1x.1:${PORTSDIR}/devel/t1lib
 
 .if !defined(PACKAGE_BUILDING)
 RESTRICTED=     "Contains cryptography"
