@@ -2,7 +2,7 @@
 # Date created:		29 Nov 2000
 # Whom:			Joerg Wunsch <joerg@freebsd.org>
 #
-# $FreeBSD: ports/devel/avr-gcc/Makefile,v 1.2 2001/03/10 20:45:38 joerg Exp $
+# $FreeBSD: ports/devel/avr-gcc/Makefile,v 1.3 2001/03/11 08:37:18 joerg Exp $
 #
 
 PORTNAME=	gcc
@@ -34,6 +34,7 @@ USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS=	--target=avr
+CONFIGURE_ENV=	CFLAGS="-O -pipe"
 
 MAKE_FLAGS=	LANGUAGES="c"
 
