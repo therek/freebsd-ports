@@ -2,13 +2,13 @@
 # Date created:        20 August 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/vpce/Makefile,v 1.4 2000/01/07 02:25:49 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vpce
 PORTVERSION=	0.3f
 CATEGORIES=	emulators
-MASTER_SITES=	http://www.fortunecity.com/roswell/vanthal/10/
+MASTER_SITES=	http://www.geocities.com/SiliconValley/Way/3340/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}_freebsd
 EXTRACT_SUFX=	.tgz
 
