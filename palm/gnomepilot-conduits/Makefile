@@ -2,7 +2,7 @@
 # Date created:		16th March 2000
 # Whom:			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/gnomepilot-conduits/Makefile,v 1.7 2000/06/01 16:25:34 ade Exp $
+# $FreeBSD: ports/palm/gnomepilot-conduits/Makefile,v 1.8 2000/07/11 23:14:36 ade Exp $
 #
 
 PORTNAME=	gnomepilot-conduits
@@ -30,5 +30,12 @@ CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" GLIB_CONFIG="${GLIB_CONFIG}" \
 		CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/pilot/include" \
 		LIBS="-L${LOCALBASE}/lib -L${LOCALBASE}/pilot/lib"
+
+post-extract:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
+		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>
