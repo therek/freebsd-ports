@@ -2,11 +2,12 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python15/Makefile,v 1.69 2000/10/08 02:42:11 asami Exp $
+# $FreeBSD: ports/lang/python15/Makefile,v 1.70 2000/10/09 12:18:06 tg Exp $
 #
 
 PORTNAME=	python
 PORTVERSION=	1.5.2
+PORTREVISION=	1
 CATEGORIES=	lang python
 MASTER_SITES=	ftp://www.python.org/pub/python/src/ \
 		ftp://ftp.cwi.nl/pub/python/src/
