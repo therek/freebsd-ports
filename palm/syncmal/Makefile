@@ -2,11 +2,11 @@
 # Date created:				March 17, 2001
 # Whom:	      				fenner
 #
-# $FreeBSD: ports/palm/syncmal/Makefile,v 1.3 2001/04/18 00:27:33 fenner Exp $
+# $FreeBSD: ports/palm/syncmal/Makefile,v 1.4 2001/04/19 23:23:27 fenner Exp $
 #
 
 PORTNAME=	syncmal
-PORTVERSION=	0.61
+PORTVERSION=	0.62
 CATEGORIES=	palm
 MASTER_SITES=	http://people.atl.mediaone.net/jasonday/code/syncmal/
 DISTNAME=	jpilot-${PORTNAME}_${PORTVERSION}${EXTRACTSUFX}
