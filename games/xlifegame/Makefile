@@ -2,7 +2,7 @@
 # Date created:		11 January 2000
 # Whom:			HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/xlifegame/Makefile,v 1.4 2000/07/21 14:29:18 dannyboy Exp $
+# $FreeBSD: ports/games/xlifegame/Makefile,v 1.5 2000/10/13 20:30:56 ade Exp $
 #
 
 PORTNAME=	xlifegame
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://puma.cis.ibaraki.ac.jp/pub/X11/ \
 		http://nadja.cis.ibaraki.ac.jp/pub/X11/
 
-MAINTAINER=	th@cis.ibaraki.ac.jp
+MAINTAINER=	cbc06942@pop06.odn.ne.jp
 
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes
