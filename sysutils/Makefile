@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.202 2001/07/19 18:32:08 knu Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.203 2001/07/20 20:54:11 ijliao Exp $
 #
     SUBDIR += yawho
 
@@ -90,6 +90,7 @@
     SUBDIR += monitord
     SUBDIR += msyslog
     SUBDIR += muse
+    SUBDIR += ndir
     SUBDIR += no-login
     SUBDIR += npadmin
     SUBDIR += nut
