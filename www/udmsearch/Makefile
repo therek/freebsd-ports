@@ -2,11 +2,11 @@
 # Date created:		11/29/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/www/udmsearch/Makefile,v 1.7 2000/07/13 11:56:30 sobomax Exp $
+# $FreeBSD: ports/www/udmsearch/Makefile,v 1.8 2000/07/27 16:03:13 kevlo Exp $
 #
 
 PORTNAME=	udmsearch
-PORTVERSION= 	3.0.20
+PORTVERSION= 	3.0.21
 CATEGORIES=	www databases
 MASTER_SITES=	http://mysearch.udm.net/Download/	\
 		ftp://ftp.izhcom.ru/pub/unix/UdmSearch/	\
@@ -20,6 +20,7 @@ MAN5=		indexer.conf.5
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-charset-guesser \
+		--enable-freebsd-pthreads \
 		--sysconfdir=${PREFIX}/etc/udmsearch \
 		--localstatedir=/var/udmsearch
 
