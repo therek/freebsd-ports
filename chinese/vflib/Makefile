@@ -2,7 +2,7 @@
 # Date created:		11 Dec 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/vflib/Makefile,v 1.1 2000/12/11 09:47:22 keith Exp $
 #
 
 PORTNAME=	vflib
@@ -31,7 +31,7 @@ USE_XLIB=	yes
 USE_AUTOCONF=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--with-freetype \
-		--with-freetype-includedir=${PREFIX}/include \
+		--with-freetype-includedir=${PREFIX}/include/freetype \
 		--with-freetype-libdir=${PREFIX}/lib
 
 pre-patch:
