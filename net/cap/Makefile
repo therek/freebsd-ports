@@ -3,7 +3,7 @@
 # Date created:			09 Nov 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/net/cap/Makefile,v 1.6 1999/08/30 14:22:15 peter Exp $
+# $FreeBSD: ports/net/cap/Makefile,v 1.7 1999/08/31 06:48:40 mharo Exp $
 #
 
 DISTNAME=	cap60.pl100
@@ -15,7 +15,6 @@ MASTER_SITES=	ftp://ftp-ns.rutgers.edu/pub/cap/ \
 		ftp://munnari.OZ.AU/mac/cap.patches/ \
 		ftp://ftp.kuis.kyoto-u.ac.jp/net/cap/ \
 		ftp://ftp.kuis.kyoto-u.ac.jp/net/cap/cap60.patches/
-
 DISTFILES=	${DISTNAME}.tar.Z patches.101-126.tar.Z patches.127-143.tar.Z \
 		patches.144-154.tar.Z patches.155-162.tar.Z \
 		patches.163-182.tar.Z patches.183-192.tar.Z
@@ -24,6 +23,8 @@ PATCH_SITES=	ftp://ftp-ns.rutgers.edu/pub/cap/cap.patches/ \
 		ftp://munnari.OZ.AU/mac/cap.patches/
 PATCHFILES=	cap60.patch193 cap60.patch194 cap60.patch195 cap60.patch196 \
 		cap60.patch197 cap60.patch198
+
+MAINTAINER=	ports@FreeBSD.org
 
 NO_CDROM=	"Don't sell for profit"
 WRKSRC=		${WRKDIR}/cap60
