@@ -2,7 +2,7 @@
 # Date created:		04 Janyary 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/sysutils/wmmount/Makefile,v 1.8 2000/07/11 08:59:24 kevlo Exp $
+# $FreeBSD: ports/sysutils/wmmount/Makefile,v 1.9 2000/08/03 09:26:40 asami Exp $
 #
 
 PORTNAME=	wmmount
@@ -18,7 +18,6 @@ LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 USE_IMAKE=	yes
 USE_XPM=	yes
-NO_INSTALL_MANPAGES=	yes
 
 post-patch:
 .for file in system.wmmount.eg system.wmmount.sh
