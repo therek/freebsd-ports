@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.395 2001/12/22 17:13:38 will Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.396 2002/01/23 03:48:44 will Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1246,6 +1246,7 @@ INSTALL_TARGET?=	install
 MASTER_SITES?=
 PATCH_SITES?=
 _MASTER_SITES_DEFAULT?=
+_PATCH_SITES_DEFAULT?=
 
 # Feed internal _{MASTER,PATCH}_SITES_n where n is a group designation
 # as per grouping rules (:something)
