@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.83 2000/03/27 20:39:01 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.84 2000/04/05 16:44:06 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -139,7 +139,8 @@ while [ "$1" ]; do
 			;;
 		\"modssl\")
 			cat << EOF
-PKGNAME=	apache+php+mod_ssl-\${VERSION_APACHE}+\${VERSION_PHP}+\${VERSION_MODSSL}
+PORTNAME=	apache+php+mod_ssl
+PORTVERSION=	\${VERSION_APACHE}+\${VERSION_PHP}+\${VERSION_MODSSL}
 DISTFILES+=	mod_ssl-\${VERSION_MODSSL}-\${VERSION_APACHE}\${EXTRACT_SUFX}
 
 USE_OPENSSL=	RSA
