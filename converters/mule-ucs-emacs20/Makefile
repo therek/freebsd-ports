@@ -2,7 +2,7 @@
 # Date created:		14 January 2000
 # Whom:			OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/converters/mule-ucs-emacs20/Makefile,v 1.1.1.1 2000/04/04 18:11:29 knu Exp $
+# $FreeBSD: ports/converters/mule-ucs-emacs20/Makefile,v 1.2 2000/04/07 20:19:26 knu Exp $
 #
 
 PORTNAME=	mule-ucs-${EMACS_PORT}
@@ -21,18 +21,14 @@ MAINTAINER=	okazaki@be.to
 MULEUCSDOCDIR=	share/doc/mule-ucs
 
 # emacs20
-EMACS_NAME=	emacs
-EMACS_PORT=	emacs20
-EMACS_VER=	20.6
-EMACS_LIBDIR=	share/${EMACS_NAME}
-EMACS_LIBDIR_WITH_VER=	${EMACS_LIBDIR}/${EMACS_VER}
+EMACS_PORT_NAME=	emacs20
 
 # target name for make build
 ALL_TARGET=	elc
 
 EMACS_CMD=	${PREFIX}/bin/${EMACS_NAME}-${EMACS_VER}
-BUILD_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}
-RUN_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}
+BUILD_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT_NAME}
+RUN_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT_NAME}
 SCRIPTS_ENV=	EMACS_LIBDIR=${EMACS_LIBDIR} EMACS_VER=${EMACS_VER} \
 		EMACS_LIBDIR_WITH_VER=${EMACS_LIBDIR_WITH_VER}
 PLIST_SUB=	EMACS_LIBDIR=${EMACS_LIBDIR} EMACS_VER=${EMACS_VER} \
