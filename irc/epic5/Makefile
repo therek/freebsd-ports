@@ -2,7 +2,7 @@
 # Date created:		11 November 1998
 # Whom:			Ben Hutchinson <benhutch@xfiles.org.uk>
 #
-# $FreeBSD: ports/irc/epic4/Makefile,v 1.37 2001/05/06 23:33:04 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	epic4
@@ -26,7 +26,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 #PATCHFILES=	${DISTNAME}-patch1
 #PATCH_DIST_STRIP=	-d ${WRKSRC}/source
 
-MAINTAINER=	anders@codefactory.se
+MAINTAINER=	anders@hack.org
 
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes

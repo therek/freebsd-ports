@@ -2,7 +2,7 @@
 # Date created:		18 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/irc/ircII/Makefile,v 1.29 2001/05/28 12:08:52 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ircii
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.warped.com/pub/ircII/ \
 		ftp://ircftp.au.eterna.com.au/pub/ircII/ \
 		ftp://ftp.plig.net/pub/ircII/
 
-MAINTAINER=	anders@codefactory.se
+MAINTAINER=	anders@hack.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	IRCLIB=${PREFIX}/share/irc
