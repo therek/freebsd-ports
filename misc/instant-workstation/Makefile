@@ -2,7 +2,7 @@
 # Date created:		12 February 2001
 # Whom:			grog
 #
-# $FreeBSD: ports/misc/instant-workstation/Makefile,v 1.3 2001/03/11 03:27:36 grog Exp $
+# $FreeBSD: ports/misc/instant-workstation/Makefile,v 1.4 2001/03/19 00:18:07 grog Exp $
 #
 
 PORTNAME=	instant-workstation
@@ -14,7 +14,7 @@ MAINTAINER=	grog@lemis.com
 
 RUN_DEPENDS=	acroread:${PORTSDIR}/print/acroread4 \
 		bash:${PORTSDIR}/shells/bash2 \
-		cdrecord:${PORTSDIR}/sysutils/cdrecord \
+		cdrecord:${PORTSDIR}/sysutils/cdrtools \
 		dos2unix:${PORTSDIR}/converters/unix2dos \
 		emacs:${PORTSDIR}/editors/emacs20 \
 		fetchmail:${PORTSDIR}/mail/fetchmail \

@@ -2,7 +2,7 @@
 # Date created:				2 April 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/koncd/Makefile,v 1.1 2001/04/02 20:38:11 demon Exp $
+# $FreeBSD: ports/sysutils/koncd/Makefile,v 1.2 2001/04/13 08:54:49 demon Exp $
 #
 
 PORTNAME=	koncd
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.koncd.de/download/ \
 
 MAINTAINER=	demon@FreeBSD.org
 
-RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrecord \
+RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrtools \
 		mkisofs:${PORTSDIR}/sysutils/mkisofs
 
 USE_KDELIBS_VER=2

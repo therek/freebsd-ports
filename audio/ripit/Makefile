@@ -2,7 +2,7 @@
 # Date created:         2 May 1999
 # Whom:                 oyvindmo@initio.no
 #
-# $FreeBSD: ports/audio/ripit/Makefile,v 1.9 2000/06/04 22:37:22 will Exp $
+# $FreeBSD: ports/audio/ripit/Makefile,v 1.10 2000/10/01 10:22:24 reg Exp $
 #
 
 PORTNAME=	ripit
@@ -17,7 +17,7 @@ RUN_DEPENDS=	bladeenc:${PORTSDIR}/audio/bladeenc \
 		lame:${PORTSDIR}/audio/lame \
 		gogo:${PORTSDIR}/audio/gogo \
 		tosha:${PORTSDIR}/audio/tosha \
-		cdda2wav:${PORTSDIR}/sysutils/cdrecord \
+		cdda2wav:${PORTSDIR}/sysutils/cdrtools \
 		cda:${PORTSDIR}/audio/xmcd
 
 NO_BUILD=	yes

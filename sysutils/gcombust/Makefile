@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 22 21:17:03 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD: ports/sysutils/gcombust/Makefile,v 1.22 2001/03/29 16:34:44 sobomax Exp $
+# $FreeBSD: ports/sysutils/gcombust/Makefile,v 1.23 2001/06/16 04:54:03 dwcjr Exp $
 #
 
 PORTNAME=	gcombust
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.abo.fi/~jmunsin/gcombust/
 MAINTAINER=	bsdx@looksharp.net
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
-RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrecord \
+RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrtools \
 		mkisofs:${PORTSDIR}/sysutils/mkisofs \
 		cdlabelgen:${PORTSDIR}/print/cdlabelgen
 

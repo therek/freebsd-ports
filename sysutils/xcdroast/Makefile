@@ -2,7 +2,7 @@
 # Date Created:		28 Sep 2000
 # Whom:			Oliver Lehmann <Kai_Allard_Liao@gmx.de>
 #
-# $FreeBSD: ports/sysutils/xcdroast/Makefile,v 1.1 2001/01/16 17:15:40 alex Exp $
+# $FreeBSD: ports/sysutils/xcdroast/Makefile,v 1.2 2001/03/12 17:49:32 sf Exp $
 #
 
 PORTNAME=	xcdroast
@@ -13,7 +13,7 @@ DISTNAME=	xcdroast-0.98alpha8
 
 MAINTAINER=	Kai_Allard_Liao@gmx.de
 
-RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrecord \
+RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrtools \
 		mkisofs:${PORTSDIR}/sysutils/mkisofs
 
 USE_X_PREFIX=	yes

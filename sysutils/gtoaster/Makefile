@@ -2,7 +2,7 @@
 # Date created:				28 September 2000
 # Whom:					eric
 #
-# $FreeBSD: ports/sysutils/gtoaster/Makefile,v 1.2 2001/03/14 19:33:28 vanilla Exp $
+# $FreeBSD: ports/sysutils/gtoaster/Makefile,v 1.3 2001/04/09 10:44:26 eric Exp $
 #
 
 PORTNAME=	gtoaster
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	eric@FreeBSD.org
 
-RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrecord \
+RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrtools \
 		mkisofs:${PORTSDIR}/sysutils/mkisofs
 
 WRKSRC=		${WRKDIR}/gtoaster
