@@ -3,29 +3,23 @@
 # Whom:				girgen@partitur.se
 # Based on work by:		thepish
 #
-# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.22 2000/05/08 19:20:34 knu Exp $
+# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.23 2000/05/19 08:05:41 cpiazza Exp $
 #
 
 PORTNAME=	linux-netscape-${BROWSER}
-PORTVERSION=	${BROWSER_VER}
 CATEGORIES=	www linux
-MASTER_SITES=	ftp://ftp.netscape.com/pub/communicator/english/4.73/unix/supported/linux20_glibc2/complete_install/ \
-		ftp://ftp.sunet.se/pub/www/Netscape/communicator/english/4.73/unix/supported/linux20_glibc2/complete_install/ \
-		ftp://ftp.netscape.com/pub/communicator/english/4.73/unix/supported/linux20_glibc2/navigator_standalone/ \
-		ftp://ftp.sunet.se/pub/www/Netscape/communicator/english/4.73/unix/supported/linux20_glibc2/navigator_standalone/
-DISTFILES=	${BROWSER}-v473-export.x86-unknown-linuxglibc2.0.tar.gz
 
 MAINTAINER=	girgen@partitur.se
 
-RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base \
-		netscape:${PORTSDIR}/www/netscape-wrapper
+RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base
 
 ONLY_FOR_ARCHS=	i386
 
+NETSCAPE_DIST_ARCH=	supported/linux22
+NETSCAPE_DIST_TAG=	x86-unknown-linux2.2
+
 # don't overwrite the native FreeBSD port's shell script wrapper in ${PREFIX}/bin
 BROWSER_ARC=	${BROWSER}-linux
-
-WRKSRC=		${WRKDIR}/${BROWSER}-v473.x86-unknown-linux2.0
 
 USE_LINUX_LIB=	yes
 
