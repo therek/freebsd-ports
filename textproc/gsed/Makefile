@@ -2,7 +2,7 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/gsed/Makefile,v 1.5 2001/06/09 12:59:34 roam Exp $
 #
 
 PORTNAME=	sed
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 PKGNAMEPREFIX=	g
 
-MAINTAINER=	clefevre@redirect.to
+MAINTAINER=	clefevre@citeweb.net
 
 #
 # Global variables

@@ -2,7 +2,7 @@
 # Date created:		20 Aug 1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/misc/upclient/Makefile,v 1.10 2001/06/09 12:59:32 roam Exp $
+# $FreeBSD: ports/misc/upclient/Makefile,v 1.11 2001/08/23 20:00:02 dwcjr Exp $
 #
 
 PORTNAME=	upclient
@@ -13,7 +13,7 @@ MASTER_SITES=	http://uptimes.atomicvoid.net/files/ \
 		ftp://ftp.uptimes.net/pub/uptimes/ \
 		http://www.uptimes.net/download/
 
-MAINTAINER=	clefevre@redirect.to
+MAINTAINER=	clefevre@citeweb.net
 
 BROKEN=		The 'uptime' project is closed for an undetermined period of \
 		time. You are advised to shutdown your uptime client until \

@@ -2,7 +2,7 @@
 # Date created:				10 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/sh-utils/Makefile,v 1.6 2001/06/09 12:59:32 roam Exp $
 #
 
 PORTNAME=	sh-utils
@@ -11,7 +11,7 @@ CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR= sh-utils
 
-MAINTAINER=	clefevre@redirect.to
+MAINTAINER=	clefevre@citeweb.net
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 

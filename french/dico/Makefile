@@ -2,7 +2,7 @@
 # Date created:				11 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/dico/Makefile,v 1.2 2001/06/16 13:58:39 roam Exp $
 #
 
 PORTNAME=	dico
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.montefiore.ulg.ac.be/~geuzaine/BRONNE/WWW/ftp/
 DISTNAME=	le_dico
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	clefevre@redirect.to
+MAINTAINER=	clefevre@citeweb.net
 
 NO_WRKSUBDIR=	true
 PATCH_STRIP=	-p1
