@@ -1,12 +1,12 @@
 #
-# $FreeBSD: ports/palm/pilot_makedoc/files/Makefile,v 1.2 1999/08/30 14:33:02 peter Exp $
+# $FreeBSD: ports/palm/pilot_makedoc/files/Makefile,v 1.3 2000/01/28 06:49:33 kris Exp $
 #
 
 CXX?=	g++
-CFLAGS?=-O2
+CXXFLAGS?=-O2
 
 pilot_makedoc:	makedoc7.cpp
-		${CXX} ${CFLAGS} -o pilot_makedoc makedoc7.cpp
+		${CXX} ${CXXFLAGS} -o pilot_makedoc makedoc7.cpp
 
 #
 # EOF
