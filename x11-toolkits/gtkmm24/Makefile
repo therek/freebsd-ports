@@ -2,11 +2,11 @@
 # Date created:        11 May 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/gtk--/Makefile,v 1.32 2001/05/11 16:36:44 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkmm
-PORTVERSION=	1.2.7
+PORTVERSION=	1.2.8
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
