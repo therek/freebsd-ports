@@ -2,7 +2,7 @@
 # Date created:		29 Mar 2001
 # Whom:			nbm
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/vqadmin/Makefile,v 1.1 2001/03/29 13:11:02 nbm Exp $
 #
 
 PORTNAME=	vqadmin
@@ -11,6 +11,11 @@ CATEGORIES=	mail
 MASTER_SITES= 	http://www.vpopmail.cx/
 
 MAINTAINER=	nbm@FreeBSD.org
+
+BUILD_DEPENDS= \
+        ${LOCALBASE}/vpopmail/lib/libvpopmail.a:${PORTSDIR}/mail/vpopmail
+RUN_DEPENDS= \
+        ${LOCALBASE}/vpopmail/lib/libvpopmail.a:${PORTSDIR}/mail/vpopmail
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--enable-cgibindir=${PREFIX}/www/cgi-bin.default/
