@@ -3,7 +3,7 @@
 # Date created:				19 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/gtksql/Makefile,v 1.3 1999/08/25 05:21:14 obrien Exp $
 #
 
 DISTNAME=	gtksql-0.3
@@ -27,7 +27,7 @@ LIB_DEPENDS +=	pq.2:${PORTSDIR}/databases/postgresql
 
 USE_X_PREFIX=	yes
 
-fetch-depends:
+pre-patch:
 .if !defined(USE_MYSQL) && !defined(USE_PGSQL)
 	@ ${ECHO} "You must specify which database to use, possible are:"
 	@ ${ECHO}
