@@ -2,7 +2,7 @@
 # Date created:					Sun May  4 21:40:06 CDT 1997
 # Whom:						jmacd
 #
-# $FreeBSD: ports/misc/xdelta/Makefile,v 1.23 2000/06/16 08:19:48 sobomax Exp $
+# $FreeBSD: ports/misc/xdelta/Makefile,v 1.24 2000/06/16 21:51:41 asami Exp $
 #
 
 PORTNAME=	xdelta
@@ -12,16 +12,11 @@ MASTER_SITES=	ftp://ftp.xcf.berkeley.edu/pub/xdelta/
 
 MAINTAINER=	c9710216@atlas.newcastle.edu.au
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
-LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-
+USE_GLIB=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS=-L${LOCALBASE}/lib \
-		GLIB_CONFIG="${GLIB_CONFIG}"
+		LIBS="-L${LOCALBASE}/lib"
 
 MAN1=           xdelta.1
 

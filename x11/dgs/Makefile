@@ -2,7 +2,7 @@
 # Date created:        22 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/dgs/Makefile,v 1.19 2000/06/16 21:52:10 asami Exp $
+# $FreeBSD: ports/x11/dgs/Makefile,v 1.20 2000/07/04 07:12:47 sobomax Exp $
 #
 
 PORTNAME=	dgs
@@ -16,18 +16,14 @@ MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS= 	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png \
-		tiff.4:${PORTSDIR}/graphics/tiff \
-		glib12.3:${PORTSDIR}/devel/glib12
-BUILD_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
+		tiff.4:${PORTSDIR}/graphics/tiff
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
 
-GLIB_CONFIG=	${LOCALBASE}/bin/glib12-config
-
-USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_GMAKE=	yes
+USE_GLIB=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GLIB_CONFIG=${GLIB_CONFIG}
-MAKE_ENV=	INSTALL=${INSTALL}
 
 MAN1=		dgs.1 dpsnx.agent.1
 MANM=		dpsexec makepsres xepsf

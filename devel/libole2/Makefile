@@ -2,7 +2,7 @@
 # Date created:				20th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/libole2/Makefile,v 1.2 2000/06/23 17:43:14 ade Exp $
+# $FreeBSD: ports/devel/libole2/Makefile,v 1.3 2000/06/29 21:04:14 ade Exp $
 #
 
 PORTNAME=	libole2
@@ -13,13 +13,9 @@ MASTER_SITE_SUBDIR=	unstable/sources/libole2
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-
 USE_GMAKE=	yes
+USE_GLIB=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}"
 
 .include <bsd.port.mk>

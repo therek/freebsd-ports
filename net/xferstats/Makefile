@@ -2,7 +2,7 @@
 # Date created:         19 February 1999
 # Whom:                 Dima Sivachenko
 #
-# $FreeBSD: ports/net/xferstats/Makefile,v 1.7 1999/10/25 03:04:55 cpiazza Exp $
+# $FreeBSD: ports/net/xferstats/Makefile,v 1.8 2000/04/09 18:13:59 cpiazza Exp $
 #
 
 PORTNAME=	xferstats
@@ -13,19 +13,16 @@ MASTER_SITES=	ftp://ftp.wu-ftpd.org/pub/support/	\
 
 MAINTAINER=	dima@Chg.RU
 
-LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-
 WRKSRC=		${WRKDIR}/xferstats
+
+USE_GLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}"
 
 MAN8=		xferstats.8
 
 do-install:
-		@ ${INSTALL_PROGRAM} ${WRKSRC}/xferstats ${PREFIX}/bin
-		@ ${INSTALL_MAN} ${WRKSRC}/xferstats.8 ${MAN8PREFIX}/man/man8
-		@ ${INSTALL_DATA} ${WRKSRC}/xferstats.cfg ${PREFIX}/etc/xferstats.cfg.sample
+	${INSTALL_PROGRAM} ${WRKSRC}/xferstats ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/xferstats.8 ${MAN8PREFIX}/man/man8
+	${INSTALL_DATA} ${WRKSRC}/xferstats.cfg ${PREFIX}/etc/xferstats.cfg.sample
 
 .include <bsd.port.mk>

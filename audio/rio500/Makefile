@@ -2,7 +2,7 @@
 # Date created:		27 May 2000
 # Whom:			Kazumasa Nishizawa <k_nishizawa@anet.ne.jp>
 #
-# $FreeBSD: ports/audio/rio500/Makefile,v 1.1 2000/07/10 03:11:35 steve Exp $
+# $FreeBSD: ports/audio/rio500/Makefile,v 1.2 2000/07/15 17:24:35 will Exp $
 #
 
 PORTNAME=       rio500
@@ -12,14 +12,10 @@ MASTER_SITES=   http://download.sourceforge.net/rio500/
 
 MAINTAINER=	k_nishizawa@anet.ne.jp
 
-LIB_DEPENDS=    glib12:${PORTSDIR}/devel/glib12
-
-GLIB_CONFIG=	${LOCALBASE}/bin/glib12-config
-
+USE_GLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-devicepath='/dev' \
 		--with-deviceentry='urio0' \
 		--with-id3support
-CONFIGURE_ENV=  GLIB_CONFIG="${GLIB_CONFIG}"
 
 .include <bsd.port.mk>
