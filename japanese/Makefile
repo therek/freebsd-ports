@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.252 2000/01/23 14:23:19 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.253 2000/01/24 04:12:42 steve Exp $
 #
 
     SUBDIR += Canna
@@ -32,6 +32,7 @@
     SUBDIR += eblook
     SUBDIR += ebw3
     SUBDIR += edict
+    SUBDIR += edict-sdic
     SUBDIR += ee
     SUBDIR += elisa10x8
     SUBDIR += elisa8x8
@@ -209,6 +210,7 @@
     SUBDIR += recjis
     SUBDIR += rubytk
     SUBDIR += rxvt
+    SUBDIR += sdic
     SUBDIR += sed
     SUBDIR += seizedesktop
     SUBDIR += sj3
