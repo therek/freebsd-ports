@@ -2,13 +2,13 @@
 # Date created:		22 September 1999
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/net/nstreams/Makefile,v 1.2 2000/02/07 03:12:50 kris Exp $
+# $FreeBSD: ports/net/nstreams/Makefile,v 1.3 2000/04/09 18:12:39 cpiazza Exp $
 #
 
 PORTNAME=	nstreams
 PORTVERSION=	1.0.0
 CATEGORIES=	net
-MASTER_SITES=	http://www.hsc.fr/cabinet/produits/nstreams/
+MASTER_SITES=	http://www.hsc.fr/ressources/outils/nstreams/download/
 
 MAINTAINER=	darius@dons.net.au
 
