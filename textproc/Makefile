@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.235 2001/08/25 08:40:26 kris Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.236 2001/08/28 23:58:13 petef Exp $
 #
 
     SUBDIR += agrep
@@ -161,6 +161,7 @@
     SUBDIR += rand
     SUBDIR += replaceit
     SUBDIR += rman
+    SUBDIR += rtf2htm
     SUBDIR += ruby-csv
     SUBDIR += ruby-erb
     SUBDIR += ruby-gdome
