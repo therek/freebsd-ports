@@ -2,11 +2,11 @@
 # Date created:        06 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/net/firetalk/Makefile,v 1.1 2001/01/06 14:23:48 alex Exp $
+# $FreeBSD: ports/net/firetalk/Makefile,v 1.2 2001/01/16 17:31:46 sobomax Exp $
 #
 
 PORTNAME=	firetalk
-PORTVERSION=	0.0.10
+PORTVERSION=	0.0.11
 CATEGORIES=	net
 MASTER_SITES=	http://www.penguinhosting.net/~ian/firetalk/
 
