@@ -2,26 +2,27 @@
 # Date created:         14 Oct 2000
 # Whom:                 alex
 #
-# $FreeBSD: ports/graphics/xine/Makefile,v 1.12 2001/01/24 18:53:27 vanilla Exp $
+# $FreeBSD: ports/graphics/xine/Makefile,v 1.13 2001/02/08 15:31:31 kevlo Exp $
 #
 
-PORTNAME=		xine
-PORTVERSION=		0.3.7
-CATEGORIES=		graphics
-MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
+PORTNAME=	xine
+PORTVERSION=	0.4.3
+CATEGORIES=	graphics
+MASTER_SITES=	http://xine.sourceforge.net/files/ \
+		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	xine
-DISTNAME=		${PORTNAME}_${PORTVERSION}
+#DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=		roman@xpert.com
+MAINTAINER=	roman@xpert.com
 
-USE_LIBTOOL=		yes
-USE_X_PREFIX=		yes
-USE_IMLIB=		yes
+USE_LIBTOOL=	yes
+USE_X_PREFIX=	yes
+USE_IMLIB=	yes
 CONFIGURE_ARGS+=	--with-w32-path=${LOCALBASE}/lib/win32
 
-WRKSRC=			${WRKDIR}/${PORTNAME}-${PORTVERSION}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-MAN1=			xine.1
+MAN1=		xine.1
 
 post-install:
 	@${CAT} ${PKGMESSAGE}
