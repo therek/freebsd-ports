@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.538 2001/05/24 12:37:07 ijliao Exp $
+# $FreeBSD: ports/net/Makefile,v 1.539 2001/05/27 05:37:09 vanilla Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -141,6 +141,7 @@
     SUBDIR += ipcad
     SUBDIR += ipcalc
     SUBDIR += ipcheck
+    SUBDIR += iperf
     SUBDIR += ipfm
     SUBDIR += iplog
     SUBDIR += ipw
