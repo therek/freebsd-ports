@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.572 2001/07/07 14:36:48 ijliao Exp $
+# $FreeBSD: ports/net/Makefile,v 1.573 2001/07/08 14:33:35 dwcjr Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -332,6 +332,7 @@
     SUBDIR += rwhois
     SUBDIR += samba
     SUBDIR += samba-devel
+    SUBDIR += sambasentinel
     SUBDIR += samplicator
     SUBDIR += satellite
     SUBDIR += scotty
