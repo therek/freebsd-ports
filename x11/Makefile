@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.309 2000/10/23 15:24:18 imura Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.310 2000/10/23 15:38:13 imura Exp $
 #
 
     SUBDIR += 9term
@@ -68,6 +68,7 @@
     SUBDIR += wdm
     SUBDIR += wmbutton
     SUBDIR += wmmatrix
+    SUBDIR += wmmenu
     SUBDIR += wrapper
     SUBDIR += wterm
     SUBDIR += x3270
