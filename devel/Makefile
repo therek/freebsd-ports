@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.348 2000/09/21 14:20:48 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.349 2000/09/21 16:18:13 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -258,6 +258,7 @@
     SUBDIR += powerpc-rtems-gdb
     SUBDIR += powerpc-rtems-objc
     SUBDIR += prcs
+    SUBDIR += projectcenter.app
     SUBDIR += pth
     SUBDIR += pth-devel
     SUBDIR += py-coro
