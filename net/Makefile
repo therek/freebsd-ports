@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.494 2001/03/24 18:49:50 lioux Exp $
+# $FreeBSD: ports/net/Makefile,v 1.495 2001/03/28 18:23:46 keichii Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -118,6 +118,7 @@
     SUBDIR += h2n
     SUBDIR += hagelslag
     SUBDIR += hesiod
+    SUBDIR += hx
     SUBDIR += icb
     SUBDIR += icmpinfo
     SUBDIR += icmpquery
