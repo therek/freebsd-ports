@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.154 2000/08/26 12:54:27 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.155 2000/09/14 17:43:12 sobomax Exp $
 #
 
     SUBDIR += afsp
@@ -22,6 +22,7 @@
     SUBDIR += esound
     SUBDIR += extace
     SUBDIR += gdcd
+    SUBDIR += gkrellmmms
     SUBDIR += gkrellmvolume
     SUBDIR += gmixer
     SUBDIR += gnapster
