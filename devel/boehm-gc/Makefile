@@ -2,7 +2,7 @@
 # Date created:		15 November 1996
 # Whom:			Mike McGaughey <mmcg@cs.monash.edu.au>
 #
-# $FreeBSD: ports/devel/boehm-gc/Makefile,v 1.9 2000/04/01 04:44:03 mharo Exp $
+# $FreeBSD: ports/devel/boehm-gc/Makefile,v 1.10 2000/04/11 21:27:12 mharo Exp $
 #
 
 PORTNAME=	boehm-gc
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/	\
 DISTNAME=	gc5.0alpha4
 
 MAINTAINER=	mmcg@cs.monash.edu.au
+
+ONLY_FOR_ARCHS=	i386
 
 FETCH_BEFORE_ARGS=	-b
 
