@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.277 2000/04/25 04:13:16 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.278 2000/04/25 21:14:05 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -73,7 +73,6 @@
     SUBDIR += id-utils
     SUBDIR += ilu
     SUBDIR += imake
-    SUBDIR += insight
     SUBDIR += jam
     SUBDIR += kdbg
     SUBDIR += kdbg-i18n
