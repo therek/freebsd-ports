@@ -2,12 +2,11 @@
 # Date created:		October 30, 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/graphics/lcms/Makefile,v 1.3 2001/04/10 23:14:05 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lcms
-PORTVERSION=	1.07
-PORTREVISION=	1
+PORTVERSION=	1.08
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.littlecms.com/
 
@@ -21,13 +20,13 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/src
 .ifndef NOPORTDOCS
 post-install:
 	${MKDIR} ${PREFIX}/share/doc/lcms
-	${CP} -rp ${WRKSRC}/../doc/* ${WRKSRC}/../samples/tifficc.c \
-		${WRKSRC}/../samples/wtpt.c ${WRKSRC}/../samples/neutral.c \
+	${CP} -rp ${WRKSRC}/../doc/* ${WRKSRC}/../tifficc/tifficc.c \
+		${WRKSRC}/../samples/wtpt.c ${WRKSRC}/../samples/icctrans.c \
 		${PREFIX}/share/doc/lcms/
 .endif
 
 post-build test:
 	cd ${WRKSRC}/../testbed && \
-		${SETENV} CFLAGS="${CFLAGS} -I../src" make -E CFLAGS test
+		${SETENV} CFLAGS="${CFLAGS} -I../include" make -E CFLAGS test
 
 .include <bsd.port.mk>
