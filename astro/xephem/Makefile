@@ -2,11 +2,12 @@
 # Date created:         Thu Aug  1 09:10:22 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/astro/xephem/Makefile,v 1.22 2000/11/07 23:27:53 asami Exp $
+# $FreeBSD: ports/astro/xephem/Makefile,v 1.23 2000/12/08 23:15:00 mph Exp $
 #
 
 PORTNAME=	xephem
 PORTVERSION=	3.4
+PORTREVISION=	1
 CATEGORIES=	astro
 MASTER_SITES=	http://www.clearskyinstitute.com/xephem/ \
 		ftp://iraf.noao.edu/contrib/xephem/ \
