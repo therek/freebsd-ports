@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-fm/Makefile,v 1.23 2001/03/31 02:58:09 will Exp $
+# $FreeBSD: ports/x11-fm/Makefile,v 1.24 2001/06/23 06:53:28 markp Exp $
 #
 
     SUBDIR += asfiles
@@ -9,6 +9,7 @@
     SUBDIR += ezfm
     SUBDIR += filerunner
     SUBDIR += fsv
+    SUBDIR += gentoo
     SUBDIR += gnomemc
     SUBDIR += jafm
     SUBDIR += mtoolsfm
