@@ -3,7 +3,7 @@
 # Date created:			09 Aug 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/youbin/Makefile,v 1.22 1999/09/09 08:37:41 max Exp $
+# $FreeBSD: ports/mail/youbin/Makefile,v 1.23 1999/09/09 16:01:03 max Exp $
 #
 
 DISTNAME=	youbin-2.13
@@ -25,7 +25,7 @@ MAN8=		youbind.8
 
 STARTUP_SCRIPT=	${PREFIX}/etc/rc.d/youbind.sh.sample
 
-pre-fetch:
+pre-build:
 	@${SETENV} ${SCRIPTS_ENV} ${SH} ${PKGDIR}/REQ ${PKGNAME} BUILD
 
 pre-install:
