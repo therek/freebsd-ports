@@ -3,19 +3,19 @@
 # Date created:		28 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/cnews/Makefile,v 1.26 1999/11/26 18:25:15 steve Exp $
+# $FreeBSD: ports/news/cnews/Makefile,v 1.27 1999/12/25 01:55:46 steve Exp $
 #
 
 DISTNAME=	c-news
 PKGNAME=	cnews-cr.g
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.cs.toronto.edu/pub/c-news/ \
+		ftp://ftp.dinoex.org/pub/c-news/ \
 		ftp://ftp.funet.fi/pub/unix/news/cnews/ \
 		ftp://ftp.win.or.jp/pub/network/news/cnews/ \
 		ftp://ftp.redcom.ru/pub/unix/usenet/c-news/ \
 		ftp://ftp.mc.hik.se/pub/unix/news/c-news/ \
-		ftp://ftp.lan-ks.de/pub/c-news/ \
-		ftp://ftp.dinoex.org/pub/c-news/
+		ftp://ftp.lan-ks.de/pub/c-news/
 EXTRACT_SUFX=	.tar.Z
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		pgpverify-1.12
