@@ -2,11 +2,11 @@
 # Date created:		20 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-cvs/Makefile,v 1.1 2001/07/20 09:32:40 knu Exp $
 #
 
 PORTNAME=	cvs
-PORTVERSION=	0.1
+PORTVERSION=	0.2
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://cvs.m17n.org/cgi-bin/viewcvs/ruby-${PORTNAME}/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -27,12 +27,13 @@ RUBY_SHEBANG_FILES=	${WRKSRC}/viztree ${WRKSRC}/reviz/reviz
 
 WRKSRC=		${WRKDIR}/ruby-${PORTNAME}
 
-DOCS=	README TODO cvs.html tempdir.html
+DOCS=	README TODO cvs.html diff.html tempdir.html
 
 do-build:
 .if !defined(NOPORTDOCS)
 	cd ${WRKSRC} && ${RUBY_RD} lib/cvs.rb > cvs.html
-	cd ${WRKSRC} && ${RUBY_RD} lib/cvs/tempdir.rb > tempdir.html
+	cd ${WRKSRC} && ${RUBY_RD} lib/diff.rb > diff.html
+	cd ${WRKSRC} && ${RUBY_RD} lib/tempdir.rb > tempdir.html
 .endif
 
 do-install:
