@@ -2,11 +2,11 @@
 # Date created:		18 Feb 2001
 # Whom:			Yarema <yds@dppl.com>
 #
-# $FreeBSD: ports/textproc/ruby-csv/Makefile,v 1.2 2001/09/12 13:59:35 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	csv
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.0
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www.jin.gr.jp/~nahi/Ruby/CSV/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -19,15 +19,11 @@ USE_RUBY=	yes
 
 NO_BUILD=	yes
 
-MODULES=	csv.rb
-
 do-install:
-.for f in ${MODULES}
-	${INSTALL_DATA} ${WRKSRC}/lib/${f} ${RUBY_SITELIBDIR}
-.endfor
+	cd ${WRKSRC}; ${RUBY} install.rb
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_DOCDIR}/csv
-	${INSTALL_DATA} ${WRKSRC}/README.txt ${RUBY_DOCDIR}/csv
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
+	${INSTALL_DATA} ${WRKSRC}/README.txt ${RUBY_DOCDIR}/${PORTNAME}
 .endif
 
 .include <bsd.port.mk>
