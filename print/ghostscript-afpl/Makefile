@@ -3,7 +3,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.42 2000/03/25 15:32:39 andreas Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.43 2000/03/25 21:02:45 andreas Exp $
 #
 
 DISTNAME=	ghostscript-${GS_VERSION}
@@ -29,6 +29,7 @@ EXTRACT_ONLY=	${GS_SOURCES}
 WRKSRC=		${WRKDIR}/gs${GS_VERSION}
 USE_GMAKE=	yes
 MAKEFILE=	src/unix-gcc.mak
+CFLAGS+=	-I${PREFIX}/include
 # Note: the order that the manpages are listed here matters because
 # some of them are symbolic links
 MAN1=		gs.1 dvipdf.1 font2c.1 eps2eps.1 gsbj.1 gsdj.1 gsdj500.1 \
