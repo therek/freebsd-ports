@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.254 2000/12/19 17:05:10 sobomax Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.255 2000/12/23 10:12:23 alex Exp $
 #
 
     SUBDIR += 4va
@@ -104,6 +104,7 @@
     SUBDIR += libflash
     SUBDIR += libggi
     SUBDIR += libimg
+    SUBDIR += liblug
     SUBDIR += libmng
     SUBDIR += libmorph
     SUBDIR += libungif
