@@ -3,7 +3,7 @@
 # Date created:			Jun 19, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/janosvm/Makefile,v 1.1 2001/06/18 21:03:57 ijliao Exp $
 #
 
 PORTNAME=	janosvm
@@ -14,7 +14,9 @@ MASTER_SITE_SUBDIR=	${DISTNAME}
 
 MAINTAINER=	ijliao@FreeBSD.org
 
+USE_XLIB=	yes
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-x
 USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes
 
