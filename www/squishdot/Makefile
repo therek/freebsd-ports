@@ -2,7 +2,7 @@
 # Date created:		06 Sep 2000
 # Whom:			makeport.pl
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/squishdot/Makefile,v 1.1 2000/09/06 22:48:38 nbm Exp $
 #
 
 PORTNAME=	squishdot
@@ -14,21 +14,25 @@ DISTNAME=	Squishdot-${PORTVERSION:S/./-/g}
 
 MAINTAINER=	nbm@FreeBSD.org
 
-RUN_DEPENDS=	${ZOPEBASEDIR}/z2.py:${PORTSDIR}/www/zope
+RUN_DEPENDS=	${LOCALBASE}/${SZOPEBASEDIR}/z2.py:${PORTSDIR}/www/zope
 
 NO_BUILD=	YES
 
-ZOPEBASEDIR?=		www/Zope
+# You can change this in the environment if you like.
+SZOPEBASEDIR?=		www/Zope
+
+# Don't change these
+ZOPEBASEDIR=		${PREFIX}/${SZOPEBASEDIR}
 ZOPEPRODUCTNAME=	Squishdot
 ZOPEPRODUCTDIR=		lib/python/Products
 
 WRKSRC=		${WRKDIR}/${ZOPEPRODUCTDIR}/${ZOPEPRODUCTNAME}
 
-PLIST_SUB=	ZOPEBASEDIR=${ZOPEBASEDIR}
+PLIST_SUB=	ZOPEBASEDIR=${SZOPEBASEDIR}
 
 do-install:
-	@${MKDIR} ${PREFIX}/${ZOPEBASEDIR}/${ZOPEPRODUCTDIR}/${ZOPEPRODUCTNAME}/
+	@${MKDIR} ${ZOPEBASEDIR}/${ZOPEPRODUCTDIR}/${ZOPEPRODUCTNAME}/
 	@${CP} -Rf ${WRKSRC}/* \
-		${PREFIX}/${ZOPEBASEDIR}/${ZOPEPRODUCTDIR}/${ZOPEPRODUCTNAME}/
+		${ZOPEBASEDIR}/${ZOPEPRODUCTDIR}/${ZOPEPRODUCTNAME}/
 
 .include <bsd.port.mk>
