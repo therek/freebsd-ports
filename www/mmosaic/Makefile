@@ -2,11 +2,11 @@
 # Date created:				2000-12-26
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mmosaic/Makefile,v 1.1 2000/12/27 06:54:32 trevor Exp $
 #
 
 PORTNAME=	mmosaic
-PORTVERSION=	3.7.1
+PORTVERSION=	3.7.2
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.enst.fr/pub/mbone/mMosaic/
 DISTNAME=	mMosaic-${PORTVERSION}
@@ -21,10 +21,6 @@ PLIST=		${WRKDIR}/pkg-plist
 USE_MOTIF=	yes
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/mMosaic-src-${PORTVERSION}
-
-post-patch:
-	${PERL} -pi -e "s:LOCALBASE:${LOCALBASE}:g" ${WRKSRC}/Makefile
-	${PERL} -pi -e "s:X11BASE:${X11BASE}:g" ${WRKSRC}/Makefile
 
 pre-install:
 	${ECHO} bin/mmosaic > ${PLIST}
