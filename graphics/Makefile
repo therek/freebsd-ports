@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.210 2000/08/21 10:29:03 jkh Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.211 2000/08/24 14:12:24 knu Exp $
 #
 
     SUBDIR += 4va
@@ -157,6 +157,7 @@
     SUBDIR += spigot
     SUBDIR += splitmpg
     SUBDIR += stamp
+    SUBDIR += svgalib
     SUBDIR += tgd
     SUBDIR += tgif
     SUBDIR += tgif-nls
