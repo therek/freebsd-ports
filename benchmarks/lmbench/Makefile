@@ -3,13 +3,15 @@
 # Date created:		6 May 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/benchmarks/lmbench/Makefile,v 1.9 1999/08/25 04:45:43 obrien Exp $
+# $FreeBSD: ports/benchmarks/lmbench/Makefile,v 1.10 1999/08/31 06:40:48 mharo Exp $
 #
 
 DISTNAME=	lmbench
 PKGNAME=	lmbench-1.1
 CATEGORIES=	benchmarks
-MASTER_SITES=	http://reality.sgi.com/lm_engr/lmbench/
+MASTER_SITES=	ftp://ftp.deva.net/pub/sources/system/benchmarks/ \
+		ftp://ftp.kuis.kyoto-u.ac.jp/misc/benchmarks/ \
+		ftp://ftp.netlab.is.tsukuba.ac.jp/pub/utils/benchmark/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	fenner@FreeBSD.org
