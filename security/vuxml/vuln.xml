@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.323 2004/10/25 19:27:02 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.324 2004/10/25 20:22:38 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -37,9 +37,12 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <affects>
       <package>
 	<name>gpdf</name>
-	<name>xpdf</name>
 	<name>cups-base</name>
 	<range><ge>0</ge></range>
+      </package>
+      <package>
+	<name>xpdf</name>
+	<range><lt>3.00_4</lt></range>
       </package>
       <package>
 	<name>kdegraphics</name>
