@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.464 2001/03/01 06:29:22 vanilla Exp $
+# $FreeBSD: ports/net/Makefile,v 1.465 2001/03/02 12:46:33 sumikawa Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -185,6 +185,7 @@
     SUBDIR += openldap
     SUBDIR += openldap2
     SUBDIR += openmcu
+    SUBDIR += oproute
     SUBDIR += p0f
     SUBDIR += p5-Archie
     SUBDIR += p5-Mon
