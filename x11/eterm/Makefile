@@ -2,7 +2,7 @@
 # Date created:        24 November 1997
 # Whom:                Murray Stokely <murray@freebsd.org>
 #
-# $FreeBSD: ports/x11/eterm/Makefile,v 1.35 2001/03/01 12:26:36 olgeni Exp $
+# $FreeBSD: ports/x11/eterm/Makefile,v 1.36 2001/09/07 19:59:56 olgeni Exp $
 #
 
 PORTNAME=	eterm
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.eterm.org/download/ \
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	Eterm-${PORTVERSION}
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER?=	olgeni@FreeBSD.org
 
 BUILD_DEPENDS=	man2html:${PORTSDIR}/textproc/man2html
 
@@ -23,7 +23,7 @@ LIB_DEPENDS=	Imlib2.1:${PORTSDIR}/graphics/imlib2 \
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-CONFIGURE_ARGS=	--enable-trans --enable-utmp \
+CONFIGURE_ARGS?=--enable-trans --enable-utmp \
 		--enable-xim --with-theme-update \
 		--with-backspace=bs --without-terminfo
 
