@@ -2,7 +2,7 @@
 # Date created:        18 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/epplets/Makefile,v 1.5 2000/06/16 10:37:24 sobomax Exp $
+# $FreeBSD: ports/x11-wm/epplets/Makefile,v 1.6 2000/06/16 21:52:38 asami Exp $
 #
 
 PORTNAME=	epplets
@@ -13,7 +13,8 @@ DISTNAME=	epplet-base-${PORTVERSION}
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	gtop.1:${PORTSDIR}/devel/libgtop
+LIB_DEPENDS=	gtop.1:${PORTSDIR}/devel/libgtop \
+		epplet.1:${PORTSDIR}/x11-wm/libepplet
 BUILD_DEPENDS=	enlightenment:${PORTSDIR}/x11-wm/enlightenment
 
 WRKSRC=		${WRKDIR}/Epplets-0.5
