@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.27 1999/12/06 04:49:22 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.28 1999/12/06 06:26:17 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -118,9 +118,9 @@ do-extract:
 	@${CP} ${FILESDIR}/pam_ssh.c ${WRKSRC}/pam_ssh/
 
 post-patch:
-	@${PERL} -pi.orig -e 's:__PREFIX__:${PREFIX}:g' ${WRKSRC}/ssh.h \
+	@${PERL} -pi -e 's:__PREFIX__:${PREFIX}:g' ${WRKSRC}/ssh.h \
 		${WRKSRC}/sshd_config ${WRKSRC}/pam_ssh/pam_ssh.c
-	@${PERL} -pi.openssl -e \
+	@${PERL} -pi -e \
 	    's:^(\s*#\s*include\s+<)ssl(/\w+\.h>\s*)$$:$$1openssl$$2:g' \
 	    ${WRKSRC}/*.[ch]
 
