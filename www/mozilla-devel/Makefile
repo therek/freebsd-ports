@@ -2,11 +2,11 @@
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD: ports/www/mozilla/Makefile,v 1.70 2001/08/08 06:54:31 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mozilla
-PORTVERSION=	0.9.3
+PORTVERSION=	0.9.4
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_MOZILLA}
