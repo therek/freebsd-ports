@@ -3,7 +3,7 @@
 # Date created:         24 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/mshell/Makefile,v 1.11 1999/08/25 07:22:13 obrien Exp $
 #
 
 DISTNAME=	mshell
@@ -18,7 +18,7 @@ NO_WRKSUBDIR=	yes
 MAN1=		mshell.1
 
 do-extract:
-	@rm -rf ${WRKDIR}
+	@${RM} -rf ${WRKDIR}
 	@${MKDIR} ${WRKDIR}
 	zcat ${DISTDIR}/${DISTFILES} |(cd ${WRKDIR}; \
 	${AWK} '{if (/^#!/) x++} {if(x) print $$0'}| ${SH})

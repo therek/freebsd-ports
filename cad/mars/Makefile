@@ -4,7 +4,7 @@
 # Date created:         Mon Nov 18, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/cad/mars/Makefile,v 1.10 1999/08/25 04:52:33 obrien Exp $
 #
 
 DISTNAME=	MaRS-2.1
@@ -39,7 +39,7 @@ do-install:
 	@(cd ${PREFIX}/share/doc ; \
 		${TAR} xfpz /${DISTDIR}/MaRS-2-doc.tar.gz ; \
 		[ -d mars ] && ${RM} -rf mars; \
-		/bin/mv doc mars )
+		${MV} doc mars )
 .endif
 
 .include <bsd.port.mk>

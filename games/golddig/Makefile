@@ -3,7 +3,7 @@
 # Date created:         20 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/golddig/Makefile,v 1.10 1999/08/25 06:03:40 obrien Exp $
 #
 
 DISTNAME=	golddig2
@@ -20,7 +20,7 @@ MAN6=		golddig.6
 pre-patch:
 	@(cd ${WRKSRC}; for i in 245 244 246 247; do \
 	    ${AWK} '{if (/^#!/) x++} {if(x) print $$0'} $$i| /bin/sh; \
-	  done; mv golddig2/* .)
+	  done; ${MV} golddig2/* .)
 
 pre-install:
 	@${MKDIR} ${PREFIX}/bin

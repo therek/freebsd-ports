@@ -3,7 +3,7 @@
 # Date created:			06 Feb 1998
 # Whom:				Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/mail/smtpd/Makefile,v 1.4 1999/08/25 06:50:52 obrien Exp $
+# $FreeBSD: ports/mail/smtpd/Makefile,v 1.5 1999/08/28 02:17:19 mharo Exp $
 #
 
 DISTNAME=      smtpd-2.0
@@ -20,7 +20,7 @@ MAINTAINER=    jonny@jonny.eng.br
 SPOOLBASE=	/var/smtpd
 
 post-patch:
-	@mv ${WRKSRC}/Makefile ${WRKSRC}/Makefile.tmp
+	@${MV} ${WRKSRC}/Makefile ${WRKSRC}/Makefile.tmp
 	@${SED} s+!!SPOOLBASE!!+${SPOOLBASE}+g < ${WRKSRC}/Makefile.tmp \
 	                                    > ${WRKSRC}/Makefile
 

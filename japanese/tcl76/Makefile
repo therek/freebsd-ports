@@ -3,7 +3,7 @@
 # Date created:		11 March 1997
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/tcl76/Makefile,v 1.9 1999/08/25 05:27:07 obrien Exp $
 #
 
 DISTNAME=	tcl7.6p2
@@ -39,7 +39,7 @@ post-configure:
 	@${CP} ${FILESDIR}/Makefile.lib ${WRKSRC}
 
 pre-build:
-	cd ${WRKSRC} && ${MAKE} -f Makefile.lib PREFIX=${PREFIX} VERSION=${VERSION} && rm *.o
+	cd ${WRKSRC} && ${MAKE} -f Makefile.lib PREFIX=${PREFIX} VERSION=${VERSION} && ${RM} *.o
 
 pre-install:
 	${MKDIR} ${PREFIX}/lib/tcl${VERSION}

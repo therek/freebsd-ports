@@ -3,7 +3,7 @@
 # Date created:		14 Sep 1996
 # Whom:			Hidekazu Kuroki <hidekazu@cs.titech.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/yamsweeper/Makefile,v 1.8 1999/08/25 06:06:33 obrien Exp $
 #
 
 DISTNAME=       yamsweeper-1.9
@@ -16,7 +16,7 @@ USE_IMAKE=	yes
 MAN1=		yamsweeper.1
 
 pre-configure:
-	@mv ${WRKSRC}/Imakefile ${WRKSRC}/Imakefile.old
+	@${MV} ${WRKSRC}/Imakefile ${WRKSRC}/Imakefile.old
 	@${CP} ${FILESDIR}/Imakefile ${WRKSRC}
 
 post-install:

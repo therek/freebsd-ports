@@ -3,7 +3,7 @@
 # Date created:		13th August 1995
 # Whom:			Julian Stacey <jhs@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/pbasic/Makefile,v 1.9 1999/08/25 06:35:11 obrien Exp $
 #
 
 DISTNAME=	pbasic-2.0-950813
@@ -20,7 +20,7 @@ MAKEFILE=	makefile
 MAN1=		pbasic.1
 
 do-configure:
-	-cd ${WRKSRC} ; rm -rf termio m68000 msdos vax pyramid ns32000 \
+	-cd ${WRKSRC} ; ${RM} -rf termio m68000 msdos vax pyramid ns32000 \
 			pdp11 cursor/cursor.dos cursor/cursor.ukc 
 
 do-install:

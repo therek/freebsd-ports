@@ -3,7 +3,7 @@
 # Date created:         22 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xjewel/Makefile,v 1.15 1999/08/25 06:05:21 obrien Exp $
 #
 
 DISTNAME=	xjewel-1.6
@@ -24,7 +24,7 @@ pre-install:
 		${PREFIX}/lib/X11/xjewel)
 
 post-install:
-	@(mv ${PREFIX}/bin/xjewel ${PREFIX}/bin/xjewel_; \
+	@(${MV} ${PREFIX}/bin/xjewel ${PREFIX}/bin/xjewel_; \
 	$(ECHO) "#!/bin/sh" >${PREFIX}/bin/xjewel; \
 	$(ECHO) "xset +fp ${PREFIX}/lib/X11/xjewel" >>${PREFIX}/bin/xjewel; \
 	$(ECHO) "${PREFIX}/bin/xjewel_" >>${PREFIX}/bin/xjewel; \

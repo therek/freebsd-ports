@@ -4,7 +4,7 @@
 # Date created:		Sat Dec 7, 1996
 # Whom:			David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/lang/lcc/Makefile,v 1.4 1999/08/28 01:57:30 mharo Exp $
+# $FreeBSD: ports/lang/lcc/Makefile,v 1.5 1999/08/28 02:17:14 mharo Exp $
 #
 
 DISTNAME=	lcc-3.6
@@ -34,7 +34,7 @@ pre-configure:
 		#${PKGDIR}/PLIST.in > ${PKGDIR}/PLIST
 	@${SED} -e "s:%%OPSYS%%:${OPSYS}:g"  \
 		${WRKSRC}/makefile > ${WRKSRC}/makefile.configured
-	@/bin/mv -f ${WRKSRC}/makefile.configured ${WRKSRC}/makefile
+	@${MV} -f ${WRKSRC}/makefile.configured ${WRKSRC}/makefile
 
 do-install:
 	@(umask 022 ; ${MKDIR} ${PREFIX}/${LCCDESTDIR})

@@ -3,7 +3,7 @@
 # Date created:		14 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/groff/Makefile,v 1.16 1999/08/25 05:24:16 obrien Exp $
 #
 
 DISTNAME=	groff-1.10
@@ -27,7 +27,7 @@ DESCS=		${WRKSRC}/devnippon/DESC.proto ${WRKSRC}/devps/DESC.in
 #for not writing "/usr/local" explicitly in the patch
 post-patch:
 	@for f in ${DESCS}; do \
-	  /bin/mv -f $${f} $${f}.tmp; \
+	  ${MV} -f $${f} $${f}.tmp; \
 	  ${SED} -e '$$d' $${f}.tmp > $${f}; \
 	  case $${f} in \
   	    */devnippon/*) \

@@ -4,7 +4,7 @@
 # Date created:         17 Nov 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/audio/timidity/Makefile,v 1.12 1999/08/25 04:36:14 obrien Exp $
+# $FreeBSD: ports/audio/timidity/Makefile,v 1.13 1999/08/28 02:17:08 mharo Exp $
 #
 
 DISTNAME=       timidity-0.2i
@@ -28,7 +28,7 @@ post-install:
 	${CP} goemon.cfg goemon.cfg.bak && \
 	${SED} 's=dir goemon=dir ${PREFIX}/lib/timidity/goemon=' \
 	   < goemon.cfg.bak > goemon.cfg && \
-	rm goemon.cfg.bak
+	${RM} goemon.cfg.bak
 
 
 .include <bsd.port.mk>

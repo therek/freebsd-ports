@@ -3,7 +3,7 @@
 # Date created:		25 May 1998
 # Whom:			Mario S F Ferreira <lioux@gns.com.br> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/qmail/Makefile,v 1.10 1999/08/25 06:50:45 obrien Exp $
 #
 
 DISTNAME=	qmail-1.03
@@ -138,7 +138,7 @@ thereal-post-patch:
 	if [ `dirname $i` != ${FILESDIR} ] ; \
 	then \
 		${CP} $i.sh $i.sh.orig; \
-		(head -c `expr \`ls -l $i.sh.orig \
+		(head -c `${EXPR} \`ls -l $i.sh.orig \
 		    | ${AWK} '{print $$5}'\` - 1` $i.sh.orig ; ${ECHO} '&') \
 		    > $i.sh ; \
 	fi

@@ -3,7 +3,7 @@
 # Date created:		22 December 1996
 # Whom:			jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/pgperl/Makefile,v 1.15 1999/08/25 06:14:35 obrien Exp $
 #
 
 DISTNAME=       PGPLOT-2.08
@@ -31,7 +31,7 @@ F2CLIB=	-lf2c
 .endif
 
 post-patch:
-	(cd ${WRKSRC}/ExtUtils; mv -f F77.pm F77.pm~; ${SED} -e \
+	(cd ${WRKSRC}/ExtUtils; ${MV} -f F77.pm F77.pm~; ${SED} -e \
 	    's/@F2CLIB@/${F2CLIB}/g' F77.pm~ > F77.pm)
 
 post-install:

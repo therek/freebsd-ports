@@ -3,7 +3,7 @@
 # Date created:		3 June 1995
 # Whom:			roberto
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/libdlmalloc/Makefile,v 1.11 1999/08/25 05:48:19 obrien Exp $
 #
 
 DISTNAME=	dlmalloc
@@ -17,7 +17,7 @@ MAINTAINER=	roberto@FreeBSD.ORG
 NO_WRKSUBDIR=   yes
 
 do-extract:
-	@rm -rf ${WRKDIR}
+	@${RM} -rf ${WRKDIR}
 	@${MKDIR} ${WRKDIR}
 	${CP} -p ${DISTDIR}/${DISTFILES} ${WRKDIR}
 	${CP} -p ${FILESDIR}/Makefile ${WRKDIR}

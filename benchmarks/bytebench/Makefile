@@ -3,7 +3,7 @@
 # Date created:         28 December 1995
 # Whom:                 se
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/bytebench/Makefile,v 1.11 1999/08/25 04:45:40 obrien Exp $
 #
 
 DISTNAME=       bytebench-3.1
@@ -32,6 +32,6 @@ do-install:
 	${CHMOD} 755 $(PREFIX)/lib/bytebench/pgms/*
 	${CHMOD} 755 $(PREFIX)/lib/bytebench/results
 	${CHMOD} 755 $(PREFIX)/lib/bytebench/testdir
-	@rm -f ${PREFIX}/lib/bytebench/pgms/*.orig
+	@${RM} -f ${PREFIX}/lib/bytebench/pgms/*.orig
 
 .include <bsd.port.mk>

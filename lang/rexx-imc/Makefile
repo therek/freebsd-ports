@@ -3,7 +3,7 @@
 # Date created:				Septermber 21 96
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/rexx-imc/Makefile,v 1.7 1999/08/25 06:35:18 obrien Exp $
 #
 
 DISTNAME=	rexx-imc-1.6d
@@ -25,7 +25,7 @@ UGLY_PATCH=	rexx.c rxfn.c util.c
 post-patch:
 .for c in ${UGLY_PATCH}
 	@${ECHO_MSG} "Changing struct fileinfo member errno to ferrno in ${c}"
-	@mv ${WRKSRC}/${c} ${WRKSRC}/${c}.old
+	@${MV} ${WRKSRC}/${c} ${WRKSRC}/${c}.old
 	@${SED} 's/->errno/->ferrno/g;' ${WRKSRC}/${c}.old > ${WRKSRC}/${c}
 	@${RM} ${WRKSRC}/${c}.old
 .endfor

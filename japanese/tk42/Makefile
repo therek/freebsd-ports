@@ -3,7 +3,7 @@
 # Date created:		
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tk42/Makefile,v 1.9 1999/08/25 05:27:28 obrien Exp $
+# $FreeBSD: ports/japanese/tk42/Makefile,v 1.10 1999/08/27 22:29:30 mharo Exp $
 #
 
 DISTNAME=	tk4.2p2
@@ -44,7 +44,7 @@ post-configure:
 	@${CP} ${FILESDIR}/Makefile.lib ${WRKSRC}
 
 pre-build:
-	cd ${WRKSRC} && ${MAKE} -f Makefile.lib PREFIX=${PREFIX} VERSION=${VERSION} && rm -f *.o
+	cd ${WRKSRC} && ${MAKE} -f Makefile.lib PREFIX=${PREFIX} VERSION=${VERSION} && ${RM} -f *.o
 
 pre-install:
 	${MKDIR} ${PREFIX}/lib/tk${VERSION}

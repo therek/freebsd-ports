@@ -3,7 +3,7 @@
 # Date created:		5 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/gawk/Makefile,v 1.14 1999/08/25 05:24:07 obrien Exp $
+# $FreeBSD: ports/japanese/gawk/Makefile,v 1.15 1999/08/28 02:17:11 mharo Exp $
 #
 
 DISTNAME=	gawk-2.15.6
@@ -40,7 +40,7 @@ pre-fetch:
 	    done; \
 	    for file in ${DISTPATCHES} ; do zcat $${file}; done | \
 		${SED} -e '1,/-----8</d' -e '/-----8</,/-----8</d' | uudecode; \
-	    rm -f ${DISTPATCHES};\
+	    ${RM} -f ${DISTPATCHES};\
 	 fi)
 .endif
 

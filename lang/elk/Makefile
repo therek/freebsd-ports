@@ -3,7 +3,7 @@
 # Date created:         08 March 1995
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/elk/Makefile,v 1.18 1999/08/25 06:34:26 obrien Exp $
 #
 
 DISTNAME=	elk-3.0
@@ -31,7 +31,7 @@ post-install:
 	  ${CP} bin/scheme ${PREFIX}/bin/elk; \
 	  ${MKDIR} ${PREFIX}/include/elk; \
 	  ${CP} -R include/* ${PREFIX}/include/elk; \
-	  rm -rf bin include)
+	  ${RM} -rf bin include)
 	@${INSTALL_MAN} ${WRKSRC}/doc/man/elk.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
