@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.578 2001/06/30 11:45:01 dinoex Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.579 2001/06/30 11:47:27 dinoex Exp $
 #
 
     SUBDIR += ElectricFence
@@ -12,6 +12,7 @@
     SUBDIR += acpicatools
     SUBDIR += adabroker
     SUBDIR += agenda-headers
+    SUBDIR += agenda-libs
     SUBDIR += ald
     SUBDIR += allegro
     SUBDIR += amulet
