@@ -1,11 +1,11 @@
 #!/bin/sh
 #
 # Under a BSDL license. Copyright by Mario S F Ferreira <lioux@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: ports/net/freenet/files/wrapper.sh,v 1.2 2003/05/03 03:20:46 lioux Exp $
 
 PREFIX="%%PREFIX%%"
 # java
-JAVAVM="%%JAVAVM%%"
+JAVAVM_CALL="%%JAVAVM%%"
 JAR_DIR="%%JAR_DIR%%"
 JAR_FILES="%%JAR_FILES%%"
 JAR_START="%%JAR_START%%"
@@ -19,7 +19,7 @@ CONFIG_FILE=freenet.conf
 configure_freenet () {
   echo "Configuring FreeNet node"
   cd ${HOME_DIR} &&
-  	${JAVAVM} -jar ./${JAR_START} freenet.node.Main --config "${@}" 
+  	${JAVAVM_CALL} -jar ./${JAR_START} freenet.node.Main --config "${@}" 
 }
 
 configure_java_classpath () {
@@ -91,7 +91,7 @@ prepare_home_dir () {
 start_freenet () {
   echo "Starting FreeNet node"
   cd ${HOME_DIR} &&
-	nice -10 ${JAVAVM} -jar ./${JAR_START} "${@}" &
+	nice -10 ${JAVAVM_CALL} -jar ./${JAR_START} "${@}" &
   echo $! > ${HOME_DIR}/freenet.pid
   exit 0
 }
