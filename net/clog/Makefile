@@ -3,15 +3,13 @@
 # Date created:			  Tue Nov 04, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/clog/Makefile,v 1.5 2000/03/22 00:26:44 obrien Exp $
+# $FreeBSD: ports/net/clog/Makefile,v 1.6 2000/04/09 18:10:28 cpiazza Exp $
 #
 
 PORTNAME=	clog
 PORTVERSION=	1.6
 CATEGORIES=	net security
-MASTER_SITES=	ftp://ftp.saturn.net/pub/users/brian/clog/  \
-		ftp://ftp.cso.uiuc.edu/pub/security/coast/unix/clog/  \
-		ftp://ftp.auscert.org.au/pub/coast/mirrors/ftp.saturn.net/clog/  \
+MASTER_SITES=	ftp://ftp.auscert.org.au/pub/coast/mirrors/ftp.saturn.net/clog/  \
 		ftp://ftp.ox.ac.uk/pub/comp/security/COAST/mirrors/ftp.saturn.net/clog/  \
 		ftp://ftp.rediris.es/mirror/coast/tools/unix/clog/
 
