@@ -2,7 +2,7 @@
 # Date created:						10/23/1999
 # Whom:								nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/heimdal/Makefile,v 1.41 2001/08/14 16:51:57 nectar Exp $
+# $FreeBSD: ports/security/heimdal/Makefile,v 1.42 2001/08/17 19:29:14 nectar Exp $
 #
 
 PORTNAME=		heimdal
@@ -81,6 +81,8 @@ pre-install:
 .if !exists(/usr/include/ifaddrs.h)
 	@${ECHO} include/ifaddrs.h >> ${PLIST}
 .endif
+
+.include "Makefile.man"
 
 # awful hack to avoid running automake after patching configure
 pre-configure:
