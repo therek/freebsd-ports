@@ -3,7 +3,7 @@
 # Date created:		So   7 Feb 1999 20:50:43 MET
 # Whom:			Lars Koeller <lkoeller@cc.fh-lippe.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/palm/syncal/Makefile,v 1.2 1999/08/30 14:33:03 peter Exp $
 #
 
 DISTNAME=	syncal-0.5
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ryeham.ee.ryerson.ca/pub/PalmOS/	\
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeled.DE
 
-LIB_DEPENDS=	pisock:${PORTSDIR}/palm/pilot-link
+LIB_DEPENDS=	pisock.3:${PORTSDIR}/palm/pilot-link
 RUN_DEPENDS=	ical:${PORTSDIR}/deskutils/ical
 
 NO_PACKAGE=	patches installed ical port
