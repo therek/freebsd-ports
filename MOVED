@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.304 2004/01/15 22:56:08 obraun Exp $
+# $FreeBSD: ports/MOVED,v 1.305 2004/01/16 01:38:54 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -751,3 +751,4 @@ lang/fpl||2004-01-10|Distfiles and maintainer dispappeared
 lang/ghc6|lang/ghc|2004-01-15|Make 6.x default version
 net/nttcp|benchmarks/nttcp|2004-01-16|Moved to right category
 net/ttcp|benchmarks/ttcp|2004-01-16|Moved to right category
+editors/ooodict-hu_HU|hungarian/ooodict|2004-01-16|Moved to right category
