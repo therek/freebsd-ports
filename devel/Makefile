@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.641 2001/09/16 20:55:26 tobez Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.642 2001/09/21 04:59:57 demon Exp $
 #
 
     SUBDIR += ElectricFence
@@ -378,6 +378,7 @@
     SUBDIR += p5-PV
     SUBDIR += p5-Params-Validate
     SUBDIR += p5-Parse-RecDescent
+    SUBDIR += p5-Parse-Yapp
     SUBDIR += p5-Penguin
     SUBDIR += p5-Penguin-Easy
     SUBDIR += p5-PerlMenu
