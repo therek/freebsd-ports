@@ -2,7 +2,7 @@
 # Date created:		15 July 1997
 # Whom:			Stephen Roznowski <sjr1@flash.net>
 #
-# $FreeBSD: ports/mail/xmail/Makefile,v 1.8 2000/04/13 20:01:03 cpiazza Exp $
+# $FreeBSD: ports/mail/xmail/Makefile,v 1.9 2000/08/03 09:25:31 asami Exp $
 #
 
 PORTNAME=	xmail
@@ -17,11 +17,5 @@ MAINTAINER=	ports@FreeBSD.org
 USE_IMAKE=	yes
 USE_XPM=	yes
 MAN1=		xmail.1
-MANCOMPRESSED=	no
-
-do-install:
-	$(INSTALL_PROGRAM) $(WRKSRC)/xmail $(PREFIX)/bin/xmail
-	$(INSTALL_MAN) $(WRKSRC)/xmail.man $(PREFIX)/man/man1/xmail.1
-	$(INSTALL_DATA) $(WRKSRC)/XMail.ad $(PREFIX)/lib/X11/app-defaults/XMail
 
 .include <bsd.port.mk>
