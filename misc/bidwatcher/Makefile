@@ -1,12 +1,12 @@
 # New ports collection makefile for:	bidwatcher
-# Version required:	1.0.2b
+# Version required:	1.0.3b
 # Date created:		24 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/misc/bidwatcher/Makefile,v 1.4 1999/10/18 20:01:45 mph Exp $
+# $FreeBSD: ports/misc/bidwatcher/Makefile,v 1.5 1999/12/07 16:31:21 mph Exp $
 #
 
-DISTNAME=	bidwatcher-1.0.2b
+DISTNAME=	bidwatcher-1.0.3b
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://www.low-fi.com/bw/download/
