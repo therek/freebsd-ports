@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.198 2001/02/26 05:17:54 steve Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.199 2001/02/27 06:05:31 steve Exp $
 #
 
     SUBDIR += abook
@@ -47,6 +47,7 @@
     SUBDIR += kbiff
     SUBDIR += knewmail
     SUBDIR += lbdb
+    SUBDIR += libesmtp
     SUBDIR += listar
     SUBDIR += listmanager
     SUBDIR += mahogany
