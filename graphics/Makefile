@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.320 2001/06/03 13:17:39 ijliao Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.321 2001/06/08 04:10:42 markp Exp $
 #
 
     SUBDIR += 4va
@@ -157,6 +157,7 @@
     SUBDIR += netpbm
     SUBDIR += netshow
     SUBDIR += nurbs++
+    SUBDIR += opendis
     SUBDIR += opendx
     SUBDIR += opendx-samples
     SUBDIR += opengl-man
