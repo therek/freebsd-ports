@@ -2,13 +2,13 @@
 # Date created:				14 December 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/py-gtkscintilla/Makefile,v 1.1 2000/12/14 12:24:35 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	py-gtkscintilla
-PORTVERSION=	0.1.1
+PORTVERSION=	0.3
 CATEGORIES=	x11-toolkits python
-MASTER_SITES=	http://www.moleskine.f2s.com/
+MASTER_SITES=	http://www.moleskine.f2s.com/files/
 DISTNAME=	PyGtkScintilla-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
