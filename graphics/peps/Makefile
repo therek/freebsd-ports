@@ -2,7 +2,7 @@
 # Date created:				5 July 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/peps/Makefile,v 1.2 2001/08/22 23:05:51 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	peps
@@ -15,8 +15,10 @@ MAINTAINER=	petef@FreeBSD.org
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu \
 		pnmtopng:${PORTSDIR}/graphics/netpbm
 
+USE_REINPLACE=	yes
+
 post-patch:
-	@${PERL} -pi -e 's!cc -O3!${CC} ${CFLAGS}!' ${WRKSRC}/Makefile
+	@${REINPLACE_CMD} -e 's!cc -O3!${CC} ${CFLAGS}!' ${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/peps ${PREFIX}/bin
