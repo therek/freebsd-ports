@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/libast/pkg-plist,v 1.2 2002/10/14 16:14:52 naddy Exp $
 bin/libast-config
 include/libast.h
 include/libast/array.h
@@ -12,6 +12,12 @@ include/libast/str.h
 include/libast/tok.h
 include/libast/types.h
 include/libast/url.h
+include/libast/avl_tree.h
+include/libast/iterator_if.h
+include/libast/map_if.h
+include/libast/objpair.h
+include/libast/sysdefs.h
+include/libast/vector_if.h
 lib/libast.a
 lib/libast.so
 lib/libast.so.2
