@@ -2,7 +2,7 @@
 # Date created:                 21 December 2000
 # Whom:                         Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/textproc/gutenbook/Makefile,v 1.1 2000/12/26 04:30:48 will Exp $
+# $FreeBSD: ports/textproc/gutenbook/Makefile,v 1.2 2000/12/31 07:23:49 will Exp $
 
 PORTNAME=	gutenbook
 PORTVERSION=	0.1.10
@@ -38,7 +38,7 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/PGB/${module} \
 		${PREFIX}/lib/perl5/site_perl/${PERL_VER}/PGB
 .endfor
-.if !defined(NOPORTDCS)
+.if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/gutenbook
 	${INSTALL_DATA} ${WRKSRC}/MANUAL ${PREFIX}/share/doc/gutenbook
 	${INSTALL_DATA} ${WRKSRC}/gutenbook.spec ${PREFIX}/share/doc/gutenbook
