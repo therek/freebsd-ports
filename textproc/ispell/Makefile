@@ -2,7 +2,7 @@
 # Date created:				6 November 1994
 # Whom:					jmz
 #
-# $FreeBSD: ports/textproc/ispell/Makefile,v 1.52 2001/01/13 15:41:14 alex Exp $
+# $FreeBSD: ports/textproc/ispell/Makefile,v 1.53 2001/02/04 21:51:32 ache Exp $
 #
 
 PORTNAME?=	ispell
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.cs.ucla.edu/pub/ispell-3.1/ \
 		ftp://ftp.kiarchive.ru/pub/unix/text/ispell/
 DISTNAME=	ispell-3.1
 
-MAINTAINER=	jmz@FreeBSD.org
+MAINTAINER?=	jmz@FreeBSD.org
 PATCH_SITES=	ftp://ftp.kiarchive.ru/pub/unix/text/ispell/
 ISPELL_FILES=	ispell-3.1.20.tar.gz
 HTML_PATCH=	ispell-html-mode.patch
