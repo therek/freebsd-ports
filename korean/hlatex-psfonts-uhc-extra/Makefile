@@ -2,7 +2,7 @@
 # Date created:                 2 Jul 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/hlatex-psfonts-uhc-extra/Makefile,v 1.1.1.1 2000/07/04 17:53:23 cjh Exp $
 #
 
 PORTNAME=               HLaTeX-psfonts-${HLATEX_ENCODING}-extra
