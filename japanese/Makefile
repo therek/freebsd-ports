@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.341 2001/01/17 14:30:49 sobomax Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.342 2001/01/30 16:26:31 max Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -167,6 +167,7 @@
     SUBDIR += mnews
     SUBDIR += mnews-gnspool
     SUBDIR += mnews-im
+    SUBDIR += monafonts
     SUBDIR += mozilla-jlp
     SUBDIR += msdosfs
     SUBDIR += mtools
