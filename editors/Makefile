@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.136 2000/12/18 20:38:31 demon Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.137 2001/01/01 14:12:46 alex Exp $
 #
 
     SUBDIR += AbiWord
@@ -72,6 +72,7 @@
     SUBDIR += nvi-perl
     SUBDIR += offix-editor
     SUBDIR += openoffice
+    SUBDIR += pico
     SUBDIR += psgml-emacs
     SUBDIR += psgml-emacs20
     SUBDIR += psgml-mule
