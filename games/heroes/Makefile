@@ -2,11 +2,11 @@
 # Date created:				15 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/heroes/Makefile,v 1.5 2000/12/21 16:48:56 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	heroes
-PORTVERSION=	0.8
+PORTVERSION=	0.9
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
