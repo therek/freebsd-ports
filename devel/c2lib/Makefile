@@ -3,11 +3,11 @@
 # Date created:			Feb 16, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/c2lib/Makefile,v 1.1 2001/02/16 11:07:05 ijliao Exp $
+# $FreeBSD: ports/devel/c2lib/Makefile,v 1.2 2001/03/10 19:13:29 ijliao Exp $
 #
 
 PORTNAME=	c2lib
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.annexia.org/freeware/c2lib/
 
