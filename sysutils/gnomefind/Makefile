@@ -2,7 +2,7 @@
 # Date created:		26 May 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/sysutils/gnomefind/Makefile,v 1.4 2000/06/20 08:24:21 sobomax Exp $
+# $FreeBSD: ports/sysutils/gnomefind/Makefile,v 1.5 2000/06/23 09:38:15 sobomax Exp $
 #
 
 PORTNAME=	gnomefind
@@ -17,7 +17,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		glade.3:${PORTSDIR}/devel/libglade \
 		Xpm.4:${PORTSDIR}/graphics/xpm
-RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
+RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
