@@ -2,11 +2,11 @@
 # Date created:		31 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/ruby-http-access/Makefile,v 1.1 2001/03/31 12:02:46 knu Exp $
+# $FreeBSD: ports/www/ruby-http-access/Makefile,v 1.2 2001/08/12 06:41:10 knu Exp $
 #
 
 PORTNAME=	http-access
-PORTVERSION=	2.B
+PORTVERSION=	2.C
 CATEGORIES=	www ruby
 MASTER_SITES=	http://www.jin.gr.jp/~nahi/Ruby/http-access/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -20,10 +20,6 @@ RUN_DEPENDS=	${RUBY_SITELIBDIR}/uri.rb:${PORTSDIR}/net/ruby-uri
 USE_RUBY=	yes
 
 NO_BUILD=	yes
-
-post-patch:
-	${RUBY} -i.orig -pe 'gsub(/\burb\b/, "uri"); gsub(/\bURb\b/, "URI")' \
-		${WRKSRC}/lib/http-access2.rb
 
 do-install:
 	cd ${WRKSRC}; ${RUBY} install.rb
