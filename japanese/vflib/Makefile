@@ -2,7 +2,7 @@
 # Date created:		10 May 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vflib/Makefile,v 1.27 2000/06/16 21:51:16 asami Exp $
+# $FreeBSD: ports/japanese/vflib/Makefile,v 1.28 2000/08/03 09:25:13 asami Exp $
 #
 
 PORTNAME=	vflib
@@ -14,6 +14,8 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		watanabe-vf.tar.Z
 
 MAINTAINER=	mita@jp.FreeBSD.org
+
+BUILD_DEPENDS=	xmkmf:${PORTSDIR}/devel/imake-4
 
 VFLIB_VERSION=	2.25.1
 PLIST_SUB=	VFLIB_VERSION=${VFLIB_VERSION}
