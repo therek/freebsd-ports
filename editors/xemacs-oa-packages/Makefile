@@ -3,7 +3,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs-packages/Makefile,v 1.7 2000/02/08 21:21:17 gj Exp $
+# $FreeBSD: ports/editors/xemacs-packages/Makefile,v 1.8 2000/02/17 21:43:53 gj Exp $
 #
 
 DISTNAME=	xemacs-packages
@@ -54,10 +54,10 @@ do-install:
 post-install:
 	@${ECHO_MSG} "This is only a subset of the available packages for xemacs."
 	@${ECHO_MSG} "You can install additional packages yourself from within xemacs by"
-	@${ECHO_MSG} "running it as root and using the 'Manage Packes' menu within"
+	@${ECHO_MSG} "running it as root and using the 'Manage Packages' menu within"
 	@${ECHO_MSG} "the 'Options' menu of the menubar."
 	@${ECHO_MSG} "To install all packages besides basic packages(xemacs-packages or"
-	@${ECHO_MSG} "xemacs-mule-packages), consider using the xemacs-other-packages or"
-	@${ECHO_MSG} "xemacs-mule-other-packages port."
+	@${ECHO_MSG} "xemacs-mule-packages), consider using the xemacs-sumo-packages or"
+	@${ECHO_MSG} "xemacs-mule-sumo-packages port."
 
 .include <bsd.port.mk>
