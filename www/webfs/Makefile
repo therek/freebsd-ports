@@ -1,12 +1,12 @@
 # New ports collection makefile for:	webfs
-# Version required:			0.8
+# Version required:			0.9
 # Date created:				18 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/www/webfs/Makefile,v 1.2 1999/11/27 01:02:34 steve Exp $
+# $FreeBSD: ports/www/webfs/Makefile,v 1.3 1999/12/24 21:33:42 jedgar Exp $
 #
 
-DISTNAME=	webfs-0.8
+DISTNAME=	webfs-0.9
 CATEGORIES=	www
 MASTER_SITES=	http://www.IN-Berlin.DE/User/kraxel/dl/
 
