@@ -3,7 +3,7 @@
 # Date created:				6/11/1998
 # Whom:					n@nectar.com
 #
-# $FreeBSD: ports/net/hesiod/Makefile,v 1.6 1999/08/30 14:22:54 peter Exp $
+# $FreeBSD: ports/net/hesiod/Makefile,v 1.7 1999/08/31 06:48:52 mharo Exp $
 #
 
 DISTNAME=		hesiod-3.0.2
@@ -27,14 +27,13 @@ GNU_CONFIGURE=		YES
 .include <bsd.port.pre.mk>
 
 .if ${PORTOBJFORMAT} == elf
-SHLIB=libhesiod.so.3
-CONFIGURE_ENV+=		LDFLAGS="-shared -Wl,-soname,${SHLIB}"
+VERSION=3
+SONAME="-Wl,-soname,libhesiod.so.${VERSION}"
 .else
-SHLIB=libhesiod.so.3.0
-CONFIGURE_ENV+=		LDFLAGS="-shared"
+VERSION=3.0
 .endif
 
-MAKE_ENV+=		SHLIB="${SHLIB}"
+MAKE_ENV+=		VERSION="${VERSION}" SONAME="${SONAME}"
 
 post-install:
 	${SETENV} OBJFORMAT="${PORTOBJFORMAT}" ${LDCONFIG} -m ${PREFIX}/lib
