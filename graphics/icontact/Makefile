@@ -2,7 +2,7 @@
 # Date created:			Apr 16, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/graphics/icontact/Makefile,v 1.1 2001/04/17 18:07:31 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	icontact
@@ -15,10 +15,12 @@ MAINTAINER=	markp@FreeBSD.org
 RUN_DEPENDS=	${LOCALBASE}/bin/ppmmake:${PORTSDIR}/graphics/netpbm \
 		${LOCALBASE}/bin/cjpeg:${PORTSDIR}/graphics/jpeg
 
+USE_REINPLACE=	yes
 MAN1=		icontact.1 xvtoppm.1
 
-pre-build:
-	${PERL} -pi -e "s@CC=cc@CC=${CC}@g;s@CFLAGS=-O@CFLAGS=${CFLAGS}@g" ${WRKSRC}/Makefile
+post-patch:
+	${REINPLACE_CMD} "s/CC=cc/CC=${CC}/g; s/CFLAGS=-O/CFLAGS=${CFLAGS}/g" \
+		${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/icontact ${PREFIX}/bin
