@@ -1,13 +1,13 @@
 # New ports collection makefile for:	imap-uw
-# Version required:	4.7a
+# Version required:	4.7b
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.33 2000/02/14 23:45:52 mharo Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.34 2000/02/14 23:49:09 mharo Exp $
 #
 
-DISTNAME=	imap-4.7a
-PKGNAME=	imap-uw-4.7a
+DISTNAME=	imap-4.7b
+PKGNAME=	imap-uw-4.7b
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/ \
 		ftp://ftp.funet.fi/pub/mirrors/ftp.cac.washington.edu/mail/ \
