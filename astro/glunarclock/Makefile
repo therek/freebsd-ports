@@ -2,25 +2,24 @@
 # Date created:				31 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/glunarclock/Makefile,v 1.8 2001/06/08 12:29:41 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glunarclock
-PORTVERSION=	0.22.3
+PORTVERSION=	0.24.1
 CATEGORIES=	astro gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
-DISTNAME=	${PORTNAME}_${PORTVERSION}-1
 
 MAINTAINER=	sobomax@FreeBSD.org
-
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 USE_GNOME=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
+
+MAN1=		glunarclock.1
 
 pre-configure:
 	@${RM} -f ${WRKSRC}/config.cache
