@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.305 2001/02/04 20:16:58 olgeni Exp $
+# $FreeBSD: ports/www/Makefile,v 1.306 2001/02/11 06:50:48 vanilla Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -42,6 +42,7 @@
     SUBDIR += css-mode.el
     SUBDIR += decss
     SUBDIR += demoroniser
+    SUBDIR += dillo
     SUBDIR += djvuplugin
     SUBDIR += eddie
     SUBDIR += encompass
