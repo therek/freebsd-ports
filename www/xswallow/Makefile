@@ -2,7 +2,7 @@
 # Date created:		1 May 2000
 # Whom:			Conrad Sabatier <conrads@home.com>
 #
-# $FreeBSD: ports/www/xswallow/Makefile,v 1.3 2000/12/10 17:46:44 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xswallow
@@ -17,6 +17,12 @@ USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/xswallow/xswallow
 
 PORTOBJFORMAT=	aout
+
+.include <bsd.port.pre.mk>
+
+.if ( ${OSVERSION} >= 500040 )
+IGNORE=		"a.out binaries cannot be built on 5.0"
+.endif
 
 #can't use ${INSTALL_PROGRAM} with aout binaries, do strip separately
 
@@ -62,4 +68,4 @@ post-install:
 	@echo WWW: http://skynet.csn.ul.ie/~caolan/docs/XSwallow.html
 	@echo
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
