@@ -3,7 +3,7 @@
 # Date created:		15 September 1996
 # Whom:			torstenb
 #
-# $FreeBSD: ports/astro/sunclock/Makefile,v 1.13 2001/04/22 14:35:29 ijliao Exp $
+# $FreeBSD: ports/astro/sunclock/Makefile,v 1.14 2001/07/10 01:43:18 dwcjr Exp $
 #
 
 PORTNAME=	sunclock
@@ -18,6 +18,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}v2
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
+USE_XPM=	YES
 USE_IMAKE=	YES
 
 MAN1=		sunclock.1
