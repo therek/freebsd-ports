@@ -2,14 +2,15 @@
 # Date created:		5 Sep 1999
 # Whom:			IWASHITA Yoji <shuna@pop16.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/mutt/Makefile,v 1.12 2000/08/28 18:21:01 knu Exp $
+# $FreeBSD: ports/japanese/mutt/Makefile,v 1.13 2000/12/16 19:58:42 cpiazza Exp $
 #
 
 PORTNAME=	mutt
 PORTVERSION=	${VERSION}.j${JP_VERSION}
 CATEGORIES=	japanese mail
 MASTER_SITES=	ftp://ftp.mutt.org/pub/mutt/ \
-		http://www.hiei.kit.ac.jp/~hitomi/mutt/ \
+		http://ha4.seikyou.ne.jp/home/Kohtaro.Hitomi/mutt/ \
+		http://www5.xdsl.ne.jp/~shuna/distfiles/mutt/ \
 		ftp://ftp.gbnet.net/pub/mutt-international/ \
 		ftp://ftp.guug.de/pub/mutt/ \
 		ftp://ftp.guug.de/pub/mutt/historic/
@@ -18,7 +19,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		manual_ja-${VERSION:R}i-2${EXTRACT_SUFX}
 
 PATCH_SITES=	http://www.geocities.co.jp/SiliconValley-PaloAlto/2594/ \
-		http://www2.odn.ne.jp/~aab27060/ports/distfiles/
+		http://www5.xdsl.ne.jp/~shuna/distfiles/mutt/
 PATCHFILES=	${DISTNAME}-jp${JP_VERSION}-diff.gz
 PATCH_DIST_STRIP=	-p1
 
