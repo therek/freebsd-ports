@@ -2,7 +2,7 @@
 # Date created:			3 June 2001
 # Whom:				Dima Dorfman <dima@unixfreak.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/shuffle/Makefile,v 1.1 2001/06/14 05:43:18 dwcjr Exp $
 #
 
 PORTNAME=	shuffle
@@ -12,21 +12,26 @@ MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www.unixfreak.org/~dima/distfiles/
 MASTER_SITE_SUBDIR=	dd
 
-MAINTAINER=	dima@unixfreak.org
+MAINTAINER=	dd@FreeBSD.org
 
+MANSECTS=	1
 MAN1=		shuffle.1
 MANCOMPRESSED=	maybe
 
-# This isn't very scalable, but I'm lazy..
-.if defined(NOMANCOMPRESS)
-MANNAME=	shuffle.1
+# MAN page COMPression SUFFIX
+.if !defined(NOMANCOMPRESS)
+MANCOMPSUFFIX=	.gz
 .else
-MANNAME=	shuffle.1.gz
+MANCOMPSUFFIX=
 .endif
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/shuffle ${PREFIX}/bin/shuffle
-	@${INSTALL_MAN} ${WRKSRC}/${MANNAME} ${PREFIX}/man/man1
+.for __s in ${MANSECTS}
+.for __m in ${MAN${__s}:S/$/${MANCOMPSUFFIX}/}
+	@${INSTALL_MAN} ${WRKSRC}/${__m} ${PREFIX}/man/man${__s}/${__m}
+.endfor
+.endfor
 
 #
 # Ports build/install stuff stops here.  Tarball creation stuff begins here.
