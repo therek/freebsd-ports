@@ -2,7 +2,7 @@
 # Date created:		20 Sep 1998
 # Whom:			Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap2/Makefile,v 1.29 2001/03/05 22:27:09 knu Exp $
+# $FreeBSD: ports/net/openldap2/Makefile,v 1.30 2001/03/29 16:34:25 sobomax Exp $
 #
 
 PORTNAME=	openldap
@@ -21,7 +21,7 @@ MASTER_SITES=	ftp://ftp.OpenLDAP.org/pub/OpenLDAP/%SUBDIR%/ \
 MASTER_SITE_SUBDIR=	openldap-release
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	knu@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	db3.2:${PORTSDIR}/databases/db3
 
