@@ -16,7 +16,7 @@
 # This code now mainly supports FreeBSD, but patches to update support for
 # OpenBSD and NetBSD will be accepted.
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.30 2002/11/18 02:37:30 anders Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.31 2002/11/18 21:28:12 lioux Exp $
 # $Id: portlint.pl,v 1.28.2.1 2000/04/24 02:12:36 mharo Exp $
 #
 
@@ -1199,7 +1199,13 @@ PATCH_SITES PATCHFILES PATCH_DIST_STRIP
 
 	&checkearlier($file, $tmp, @varnames);
 	$tmp = "\n" . $tmp;
-	if ($tmp =~ /\nMAINTAINER\??=[^\n]+/) {
+	if ($tmp =~ /\nMAINTAINER\??=([^\n]+)/) {
+		my $addr = $1;
+		$addr =~ s/^\s*//;
+		$addr =~ s/\s*$//;
+		if ($addr =~ /[\s,<>()]/) {
+			&perror("FATAL: MAINTAINER should be a single address without comment.");
+		}
 		$tmp =~ s/\nMAINTAINER\??=[^\n]+//;
 	} elsif ($whole !~ /\nMAINTAINER[?]?=/) {
 		&perror("FATAL: no MAINTAINER listed in $file.") unless ($slaveport && $makevar{MAINTAINER} ne '');
