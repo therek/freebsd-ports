@@ -2,7 +2,7 @@
 # Date created:		28 August 2001
 # Whom:			SASAKI Katuhiro <sahiro@crest.ocn.ne.jp>
 #
-# $FreeBSD: ports/japanese/kdeaddons/Makefile,v 1.1 2001/08/30 08:31:07 knu Exp $
+# $FreeBSD: ports/japanese/kdeaddons/Makefile,v 1.2 2001/08/30 17:23:03 knu Exp $
 #
 
 # This port does not work with another version of master port.
@@ -17,5 +17,8 @@ MAINTAINER=	sahiro@crest.ocn.ne.jp
 PATCH_SITES=	http://www.kde.gr.jp/patch/
 PATCHFILES=	kdeaddons-2.2-babelfish-ja-20010816.diff
 PATCH_DIST_STRIP=	-p1
+
+BUILD_DEPENDS=	${LOCALBASE}/include/kate/plugin.h:${PORTSDIR}/japanese/kdebase2
+RUN_DEPENDS=	kate:${PORTSDIR}/japanese/kdebase2
 
 .include "${MASTERDIR}/Makefile"
