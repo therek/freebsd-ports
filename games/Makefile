@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.357 2001/04/10 20:27:40 will Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 3dc
@@ -89,6 +89,7 @@
     SUBDIR += gnomegames
     SUBDIR += gnomekiss
     SUBDIR += gnomememoryblocks
+    SUBDIR += gnomermind
     SUBDIR += gnuchess
     SUBDIR += gnugo
     SUBDIR += gnurobots
