@@ -2,12 +2,12 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.76 2001/06/11 07:54:45 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.77 2001/06/11 09:20:19 sheldonh Exp $
 #
 
 PORTNAME=	exim
 PORTVERSION=	3.22
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.csx.cam.ac.uk/pub/software/email/exim/ \
 		http://www.exim.org/ftp/ \
@@ -60,6 +60,9 @@ LDAP_LIB_TYPE=UMICHIGAN
 #WITHOUT_MAILDIR=	yes
 #WITHOUT_MAILSTORE=	yes
 #WITHOUT_MBX=		yes
+#
+# Disable support for CDB-style lookups.
+#WITHOUT_CDB=		yes
 
 # You should not need to fiddle with anything below this point.
 
@@ -139,12 +142,16 @@ SEDLIST+=	-e 's,^LOOKUP_LIBS,\#LOOKUP_LIBS,' \
 SEDLIST+=	-e 's,^\# SUPPORT_MAILDIR=,SUPPORT_MAILDIR=,'
 .endif
 
-.if !defined(WITH_MAILSTORE)
+.if !defined(WITHOUT_MAILSTORE)
 SEDLIST+=	-e 's,^\# SUPPORT_MAILSTORE=,SUPPORT_MAILSTORE=,'
 .endif
 
-.if !defined(WITH_MAILMBX)
+.if !defined(WITHOUT_MBX)
 SEDLIST+=	-e 's,^\# SUPPORT_MBX=,SUPPORT_MBX=,'
+.endif
+
+.if !defined(WITHOUT_CDB)
+SEDLIST+=	-e 's,^\# LOOKUP_CDB=,LOOKUP_CDB=,'
 .endif
 
 do-configure:
