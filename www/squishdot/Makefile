@@ -2,11 +2,11 @@
 # Date created:		06 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/squishdot/Makefile,v 1.2 2000/09/07 13:30:21 nbm Exp $
+# $FreeBSD: ports/www/squishdot/Makefile,v 1.3 2000/09/22 11:41:37 nbm Exp $
 #
 
 PORTNAME=	squishdot
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.3
 CATEGORIES=	www
 MASTER_SITES=	http://squishdot.org/Download/ \
 		http://www.zope.org/Members/chrisw/Squishdot/
@@ -26,7 +26,7 @@ ZOPEBASEDIR=		${PREFIX}/${SZOPEBASEDIR}
 ZOPEPRODUCTNAME=	Squishdot
 ZOPEPRODUCTDIR=		lib/python/Products
 
-WRKSRC=		${WRKDIR}/${ZOPEPRODUCTDIR}/${ZOPEPRODUCTNAME}
+WRKSRC=		${WRKDIR}/${ZOPEPRODUCTNAME}
 
 PLIST_SUB=	ZOPEBASEDIR=${SZOPEBASEDIR}
 
