@@ -2,7 +2,7 @@
 # Date created:		Mon Aug  2 12:04:08 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/snort/Makefile,v 1.21 2001/08/06 22:22:11 dirk Exp $
+# $FreeBSD: ports/security/snort/Makefile,v 1.22 2001/08/16 19:49:10 dirk Exp $
 #
 
 PORTNAME=	snort
@@ -10,10 +10,9 @@ PORTVERSION=	1.8.1
 PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://snort.sourcefire.com/releases/ \
-		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
 DISTNAME=	${PORTNAME}-1.8.1-RELEASE
 
-MAINTAINER=	dirk@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/snort-1.8.1-RELEASE
 GNU_CONFIGURE=	yes
