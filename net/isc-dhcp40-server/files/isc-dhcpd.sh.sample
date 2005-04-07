@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/isc-dhcp3-server/files/isc-dhcpd.sh.sample,v 1.11 2004/10/17 12:54:35 pav Exp $
+# $FreeBSD: ports/net/isc-dhcp3-server/files/isc-dhcpd.sh.sample,v 1.12 2005/04/05 08:47:45 sem Exp $
 #
 # PROVIDE: dhcpd
 # REQUIRE: DAEMON
@@ -16,6 +16,8 @@
 name=dhcpd
 paranoia=%%PARANOIA%%				# compiled in paranoia?
 jail=%%JAIL%%				# compiled in jail?
+
+load_rc_config $name
 
 # override these variables in /etc/rc.conf
 dhcpd_enable=${dhcpd_enable:-"NO"}
