@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.666 2005/04/08 13:43:23 tobez Exp $
+# $FreeBSD: ports/MOVED,v 1.667 2005/04/09 16:06:35 sem Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1448,3 +1448,4 @@ math/p5-Statistics-Table-F||2005-04-08|Deprecated, no longer on CPAN
 math/p5-Math-BigIntFast||2005-04-08|Deprecated, no longer on CPAN
 www/p5-HTML-Navigation||2005-04-08|Deprecated, no longer on CPAN
 net/icqnix||2005-04-09|abandoned project
+mail/msmtp-devel||2005-04-10|Development version is not active anymore
