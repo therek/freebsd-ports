@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/cmpsfont/pkg-plist,v 1.5 2005/03/18 23:07:21 hrs Exp $
+@comment $FreeBSD: ports/print/cmpsfont/pkg-plist,v 1.6 2005/04/03 13:52:06 hrs Exp $
 share/fonts/cmpsfont/README
 share/fonts/cmpsfont/cmb10.afm
 share/fonts/cmpsfont/cmbsy10.afm
@@ -189,8 +189,8 @@ share/fonts/cmpsfont/logo8.pfb
 share/fonts/cmpsfont/logo9.pfb
 share/fonts/cmpsfont/logobf10.pfb
 share/fonts/cmpsfont/logosl10.pfb
-share/fonts/cmpsfont/Fontmap
-share/fonts/cmpsfont/fonts.dir
-share/fonts/cmpsfont/fonts.scale
+%%PLIST_X11%%share/fonts/cmpsfont/Fontmap
+%%PLIST_X11%%share/fonts/cmpsfont/fonts.dir
+%%PLIST_X11%%share/fonts/cmpsfont/fonts.scale
 @dirrm share/fonts/cmpsfont
 @unexec /bin/rmdir %D/share/fonts 2> /dev/null || /usr/bin/true
