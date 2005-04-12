@@ -1,4 +1,4 @@
-$FreeBSD: ports/Tools/scripts/README,v 1.15 2005/01/24 07:22:38 kris Exp $
+$FreeBSD: ports/Tools/scripts/README,v 1.16 2005/04/12 09:22:59 flz Exp $
 
 addport	- replacement for easy-import
 bump_revision.pl - Small script to bump the PORTREVISION variable of ports
@@ -33,6 +33,8 @@ prdone  - checks in the port, attempting to fill out the commit message using
 portsearch - A utility for searching the ports tree. It allows more detailed
              search criteria than ``make search key=<string>'' and accepts
              all perl(1) regular expressions.
+splitpatch.pl - A small script to convert multi-file patches to several
+                appropriately named single-file patches.
 tindex - script used to build INDEXes for supported FreeBSD branches, which
          are the source of the 'make fetchindex' INDEXes, and the build
          failure reports on ports@FreeBSD.org
