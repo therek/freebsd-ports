@@ -25,7 +25,7 @@
 .\" (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 .\" THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 .\"
-.\"	$FreeBSD: ports/textproc/cdiff/src/cdiff.1,v 1.3 2000/11/20 13:16:07 eivind Exp $
+.\"	$FreeBSD: ports/textproc/cdiff/src/cdiff.1,v 1.4 2002/03/10 22:01:55 eivind Exp $
 .\"
 .Dd October 24, 2000
 .Dt CDIFF 1
@@ -34,6 +34,7 @@
 .Nd show diffs with colors
 .Sh SYNOPSIS
 .Nm cdiff
+.Op Fl m
 .Op Ar diff ...
 .Sh DESCRIPTION
 .Nm
@@ -43,6 +44,11 @@ results to
 .Xr less 1 .
 If used on a color terminal, it makes diffs much easier to read.
 There is also handling of "cvs annotate" in it.
+.Pp
+.Bl -tag -width Ds
+.It Fl m
+Use bold, reverse and underline codes (for monochrome terminals).
+.El
 .Sh AUTHORS
 .Nm
 was written by
