@@ -1,6 +1,6 @@
 # ex:ts=8	-*-mode: makefile-*-
 # Common file for CUPS ports
-# $FreeBSD: ports/print/cups/Makefile.common,v 1.20 2005/02/18 10:53:19 krion Exp $
+# $FreeBSD: ports/print/cups/Makefile.common,v 1.21 2005/04/11 08:03:46 obrien Exp $
 
 CUPS_MASTER_SITES=\
   ftp://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/cups/${CUPS_VERSION}/ \
@@ -67,7 +67,7 @@ USE_GMAKE=	yes
 USE_PERL5_RUN=	yes
 GNU_CONFIGURE=	yes
 
-CONFIGURE_TARGET=	--build=${ARCH}-portbld-freebsd${OSREL}
+CONFIGURE_TARGET=	--build=${MACHINE_ARCH}-portbld-freebsd${OSREL}
 
 CONFIGURE_ARGS+=	--localstatedir=/var		\
 			--disable-pam			\
