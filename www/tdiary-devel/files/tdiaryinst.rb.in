@@ -2,9 +2,9 @@
 #
 # tdiaryinstall.rb - tDiary user directory copy script
 # Date created:                        13 July 2003
-# Whom:                                KAMIYA Satosi  <mimoriso@anet.ne.jp>
+# Whom:                                KAMIYA Satosi  <mimoriso@gmail.com>
 #
-# $FreeBSD: ports/www/tdiary/files/tdiaryinst.rb.in,v 1.2 2003/11/09 12:59:57 jeh Exp $
+# $FreeBSD: ports/www/tdiary/files/tdiaryinst.rb.in,v 1.3 2004/03/01 17:01:10 pav Exp $
 #
 
 require 'getoptlong'
@@ -30,6 +30,7 @@ module FileUtils16
   def FileUtils16.cp(src, dest, *options)
     begin
       FileUtils.cp(src, dest, *options)
+      FileUtils.chmod(0644, dest, *options)
     rescue TypeError
       optionhash = {}
       options.each { |o| optionhash[o] = true }
