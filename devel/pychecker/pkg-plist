@@ -1,6 +1,8 @@
-@comment $FreeBSD: ports/devel/pychecker/pkg-plist,v 1.7 2003/07/29 13:22:47 krion Exp $
+@comment $FreeBSD: ports/devel/pychecker/pkg-plist,v 1.8 2004/10/18 23:47:01 sobomax Exp $
 bin/pychecker
 %%PYTHON_SITELIBDIR%%/pychecker/CHANGELOG
+%%PYTHON_SITELIBDIR%%/pychecker/COPYRIGHT
+%%PYTHON_SITELIBDIR%%/pychecker/KNOWN_BUGS
 %%PYTHON_SITELIBDIR%%/pychecker/MAINTAINERS
 %%PYTHON_SITELIBDIR%%/pychecker/README
 %%PYTHON_SITELIBDIR%%/pychecker/TODO
