@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050415:
+  AFFECTS: users of net-mgmt/cricket
+  AUTHOR: ijliao@FreeBSD.org
+
+  As of 2004/11/09 cricket uses a separate user "wwwadm". If you
+  upgrade your installtion, make sure you chown your existing data.
+
 20050414:
   AFFECTS: users of databases/postgresql and any port that depends on it
   AUTHOR: girgen@FreeBSD.org
@@ -1950,4 +1957,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.176 2005/04/11 08:14:22 kwm Exp $
+$FreeBSD: ports/UPDATING,v 1.179 2005/04/13 23:15:49 girgen Exp $
