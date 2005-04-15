@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/postgrey/files/postgrey.sh,v 1.2 2004/09/23 02:07:36 will Exp $
+# $FreeBSD: ports/mail/postgrey/files/postgrey.sh,v 1.3 2005/01/27 00:03:28 will Exp $
 #
 
 # PROVIDE: postgrey
@@ -36,10 +36,7 @@ stop_postcmd()
 postgrey_enable=${postgrey_enable:-"NO"}
 postgrey_pidfile=${postgrey_pidfile:-"/var/run/postgrey.pid"}
 postgrey_flags=${postgrey_flags:-"--pidfile=${postgrey_pidfile} \
-	--inet=10023 -d --user=postgrey --group=postgrey --dbdir=/var/db/postgrey \
-	--whitelist-clients=%%PREFIX%%/etc/postfix/postgrey_whitelist_clients \
-	--whitelist-clients=%%PREFIX%%/etc/postfix/postgrey_whitelist_clients.local \
-	--whitelist-recipients=%%PREFIX%%/etc/postfix/postgrey_whitelist_recipients"}
+	--inet=10023 -d --user=postgrey --group=postgrey --dbdir=/var/db/postgrey"}
 
 pidfile="${postgrey_pidfile}"
 
