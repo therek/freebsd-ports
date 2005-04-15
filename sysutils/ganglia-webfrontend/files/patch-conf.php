@@ -1,22 +1,9 @@
 
-$FreeBSD$
+$FreeBSD: ports/sysutils/ganglia-webfrontend/files/patch-conf.php,v 1.4 2005/02/26 00:38:04 brooks Exp $
 
 --- conf.php.orig
 +++ conf.php
-@@ -3,11 +3,7 @@
- #
- # Gmetad-webfrontend version. Used to check for updates.
- #
--$majorversion = 2;
--$minorversion = 5;
--$microversion = 7;
--
--$ganglia_version = "$majorversion.$minorversion.$microversion";
-+include_once "./version.php";
- 
- #
- # The name of the directory in "./templates" which contains the
-@@ -22,12 +18,12 @@
+@@ -18,12 +18,12 @@
  #
  
  # Where gmetad stores the rrd archives.
