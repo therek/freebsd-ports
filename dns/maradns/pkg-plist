@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/dns/maradns/pkg-plist,v 1.15 2004/04/18 15:31:17 clement Exp $
+@comment $FreeBSD: ports/dns/maradns/pkg-plist,v 1.16 2004/06/02 14:49:32 krion Exp $
 bin/askmara
 etc/mararc.sample
 etc/rc.d/maradns.sh
@@ -24,7 +24,6 @@ sbin/zoneserver
 %%PORTDOCS%%%%DOCSDIR%%/en/misc/changelog.html
 %%PORTDOCS%%%%DOCSDIR%%/en/misc/changelog.txt
 %%PORTDOCS%%%%DOCSDIR%%/en/misc/credits.txt
-%%PORTDOCS%%%%DOCSDIR%%/en/misc/download.html
 %%PORTDOCS%%%%DOCSDIR%%/en/misc/faq.html
 %%PORTDOCS%%%%DOCSDIR%%/en/misc/faq.txt
 %%PORTDOCS%%%%DOCSDIR%%/en/misc/files.txt
