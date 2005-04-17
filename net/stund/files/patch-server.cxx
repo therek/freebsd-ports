@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/net/stund/files/patch-server.cxx,v 1.2 2005/04/17 10:49:07 sobomax Exp $
 
 --- server.cxx.orig
 +++ server.cxx
@@ -38,7 +38,7 @@ $FreeBSD$
 -      }
 +   if (background) {
 +       if (daemon(0,0) < 0) {
-+           cerr << "demon() call failed" << endl;
++           cerr << "daemon() call failed" << endl;
 +           exit(1);
 +       }
     }
