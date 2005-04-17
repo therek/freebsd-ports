@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/sixxs-aiccu/files/sixxs-aiccu.sh,v 1.1 2005/03/14 17:47:08 vs Exp $
 #
 
 # PROVIDE: sixxs-aiccu
@@ -18,9 +18,10 @@
 name=sixxs_aiccu
 rcvar=`set_rcvar`
 
-command="%%PREFIX%%/sbin/sixxs-aiccu start"
+command="%%PREFIX%%/sbin/sixxs-aiccu"
 command_args=%%PREFIX%%/etc/aiccu.conf
-stop_cmd="%%PREFIX%%/sbin/sixxs-aiccu stop"
+start_cmd="%%PREFIX%%/sbin/sixxs-aiccu start $command_args"
+stop_cmd="%%PREFIX%%/sbin/sixxs-aiccu stop $command_args"
 required_files=%%PREFIX%%/etc/aiccu.conf
 
 # set default
