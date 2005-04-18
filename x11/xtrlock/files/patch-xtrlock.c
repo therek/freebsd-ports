@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11/xtrlock/files/patch-xtrlock.c,v 1.2 2004/08/22 16:10:38 krion Exp $
 
 --- xtrlock.c.orig	Sun Aug 22 18:08:41 2004
 +++ xtrlock.c	Sun Aug 22 18:08:58 2004
@@ -15,12 +15,4 @@ $FreeBSD$
  
  #ifdef SHADOW_PWD
  #include <shadow.h>
-@@ -203,7 +201,7 @@
-         break;
-       }
-       break;
--    default:
-+    default: break;
-     }
-   }
-  loop_x:
+
