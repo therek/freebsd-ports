@@ -1,13 +1,12 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/vncreflector/files/vncreflector.sh.in,v 1.1 2005/01/20 10:35:48 brooks Exp $
 
 # PROVIDE: vncreflector
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
 # KEYWORD: FreeBSD shutdown
 
-_prefix="%%PREFIX%%"
-_etcdir="${_prefix}/etc/vncreflector"
+_etcdir="%%PREFIX%%/etc/vncreflector"
 
 # Define these vncreflector_* variables in one of these files:
 #       /etc/rc.conf
@@ -28,13 +27,13 @@ vncreflector_activefile=${vncreflector_logfile-"/var/log/vncreflector.log"}
 vncreflector_addr=${vncreflector_addr-""}
 #vncreflector_addr_5999=
 
-. /etc/rc.subr
+. %%RC_SUBR%%
 
 name="vncreflector"
 rcvar=`set_rcvar`
 start_cmd="vncreflector_start"
 stop_cmd="vncreflector_stop"
-command=${_prefix}/bin/${name}
+command="%%PREFIX%%/bin/${name}"
 # Disconnect from host, reread host file, reconnect.
 sig_reload=USR2
 
