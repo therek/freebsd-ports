@@ -1,6 +1,6 @@
 # ex:ts=8	-*-mode: makefile-*-
 # Common file for CUPS ports
-# $FreeBSD: ports/print/cups/Makefile.common,v 1.21 2005/04/11 08:03:46 obrien Exp $
+# $FreeBSD: ports/print/cups/Makefile.common,v 1.22 2005/04/12 03:26:23 obrien Exp $
 
 CUPS_MASTER_SITES=\
   ftp://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/cups/${CUPS_VERSION}/ \
@@ -78,7 +78,7 @@ CONFIGURE_ARGS+=	--localstatedir=/var		\
 			--with-rcdir=${CUPS_RCDIR}
 
 .if !defined(WITHOUT_GNUTLS)
-CONFIGURE_ARGS+=	--enable-gnutls
+CONFIGURE_ARGS+=	--enable-gnutls --disable-openssl
 LIB_DEPENDS+=		gnutls-openssl.12:${PORTSDIR}/security/gnutls
 .endif
 
