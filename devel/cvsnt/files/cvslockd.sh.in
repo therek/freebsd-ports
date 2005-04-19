@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/cvsnt/files/cvslockd.sh,v 1.1 2004/07/31 18:18:42 fjoe Exp $
 #
 # PROVIDE: cvslockd
 # REQUIRE: LOGIN
