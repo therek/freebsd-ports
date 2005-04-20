@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/tidy-devel/pkg-plist,v 1.5 2003/02/24 07:48:05 edwin Exp $
+@comment $FreeBSD: ports/www/tidy-devel/pkg-plist,v 1.6 2003/09/04 02:51:22 leeym Exp $
 bin/tab2space
 bin/tidy
 include/tidy/buffio.h
@@ -10,10 +10,11 @@ include/tidy/tidyenum.h
 %%SHLIB%%lib/libtidy.so
 lib/libtidy.a
 %%PORTDOCS%%%%DOCSDIR%%/Overview.html
+%%PORTDOCS%%%%DOCSDIR%%/checked_by_tidy.gif
 %%PORTDOCS%%%%DOCSDIR%%/faq.html
 %%PORTDOCS%%%%DOCSDIR%%/grid.gif
 %%PORTDOCS%%%%DOCSDIR%%/pending.html
-%%PORTDOCS%%%%DOCSDIR%%/quickref.html
+%%NSHLIB%%%%PORTDOCS%%%%DOCSDIR%%/quickref.html
 %%PORTDOCS%%%%DOCSDIR%%/release-notes.html
 %%PORTDOCS%%%%DOCSDIR%%/tidy.css
 %%PORTDOCS%%%%DOCSDIR%%/tidy.gif
