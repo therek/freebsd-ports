@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.402 2005/04/21 15:31:34 lawrance Exp $
+# $FreeBSD: ports/LEGAL,v 1.403 2005/04/21 16:59:13 brooks Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -555,6 +555,9 @@ texcm-ttf-20010117/*	x11-fonts/texcm-ttf	Cannot be sold or distributed
 timidity-*		audio/timidity		Uses copyrighted patches
 tinker*			biology/tinker		Distribution is prohibited
 tkman-2.*		misc/tkman		Do not sell for profit
+tolkien-ttf-*		x11-fonts/tolkien-ttf	Shareware.  Commercial usage 
+						or redistribution requires
+						license.
 tools-for-freebsd-*	emulators/vmware-tools2	Not sure if we can
 						redistribute this
 tracker-*.tgz		audio/tracker		Non-redistributable beta
