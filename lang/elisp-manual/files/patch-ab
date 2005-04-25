@@ -1,13 +1,12 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/elisp-manual/files/patch-ab,v 1.5 2005/04/20 13:48:17 vs Exp $
 
 --- elisp.texi.orig
 +++ elisp.texi
 @@ -1,12 +1,11 @@
  \input texinfo  @c -*-texinfo-*-
  @c %**start of header
--@setfilename elisp
-+@setfilename elisp.info
+ @setfilename elisp
  @settitle GNU Emacs Lisp Reference Manual
  @c %**end of header
 -
