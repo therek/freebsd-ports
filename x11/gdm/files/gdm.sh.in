@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/x11/gdm/files/gdm.sh.in,v 1.1 2005/04/11 08:12:57 kwm Exp $
 
 # PROVIDE: gdm
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@ command="%%PREFIX%%/bin/${name}"
 pidfile="/var/run/${name}.pid"
 
 gdm_start() {
-    checkyesno gdm_enable && echo "Starting GDM " && \
+    checkyesno gdm_enable && echo " Starting GDM " && \
     	${command}
 }
 
