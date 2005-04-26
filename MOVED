@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.675 2005/04/26 07:11:46 vs Exp $
+# $FreeBSD: ports/MOVED,v 1.676 2005/04/26 17:48:47 dinoex Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1458,3 +1458,4 @@ www/opera-devel|www/opera|2005-04-21|stable version caught up with -devel
 mail/policyd|mail/postfix-policyd-spf|2005-04-24|port renamed
 sysutils/gdesklets-sysinfo||2005-04-26|Project abandoned
 mail/sendmail812|mail/sendmail|2005-04-26|obsolete
+net/licq-jons-gtk-gui||2005-04-26|Project abandoned
