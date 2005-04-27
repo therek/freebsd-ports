@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/sysutils/ganglia-monitor-core/files/patch-srclib_libmetrics_freebsd_metrics.c,v 1.3 2005/04/15 21:19:46 brooks Exp $
 
 --- srclib/libmetrics/freebsd/metrics.c.orig
 +++ srclib/libmetrics/freebsd/metrics.c
@@ -58,7 +58,7 @@ $FreeBSD$
 +   }
 +
 +done:
-+   val.uint16 = freq;
++   val.uint32 = freq;
  
     return val;
  }
