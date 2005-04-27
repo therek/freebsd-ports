@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/audio/slimserver/files/patch-Slim_Utils_Prefs.pm,v 1.2 2004/12/31 00:17:05 brooks Exp $
+$FreeBSD: ports/audio/slimserver/files/patch-Slim_Utils_Prefs.pm,v 1.3 2005/04/21 05:17:02 brooks Exp $
 
 --- Slim/Utils/Prefs.pm.orig
 +++ Slim/Utils/Prefs.pm
@@ -14,16 +14,16 @@ $FreeBSD: ports/audio/slimserver/files/patch-Slim_Utils_Prefs.pm,v 1.2 2004/12/3
  	} else {
  
  		$path = '';
-@@ -126,7 +130,7 @@
- 	if ($os eq 'mac') {
- 		$CacheDir = catdir($ENV{'HOME'}, '/Library/Caches/SlimServer');
+@@ -131,7 +135,7 @@
+ 
  	} elsif ($os eq 'unix') {
+ 
 -		$CacheDir = $ENV{'HOME'};
 +		$CacheDir = "/var/db/slimserver/cache";
  	}
+ 
  	my @CacheDirs = splitdir($CacheDir);
- 	pop @CacheDirs;
-@@ -702,7 +706,7 @@
+@@ -714,7 +718,7 @@
  	} elsif (Slim::Utils::OSDetect::OS() eq 'win')  {
  		$prefsPath = $Bin;
  	} else {
