@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.680 2005/05/07 09:55:41 linimon Exp $
+# $FreeBSD: ports/MOVED,v 1.681 2005/05/08 08:27:26 nork Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1466,3 +1466,4 @@ www/mod_throttle||2005-05-07|author does not permit distribution of patch files
 www/mod_watch||2005-05-07|author does not permit distribution of patch files
 www/mod_watch4||2005-05-07|author does not permit distribution of patch files
 japanese/postgresql7-man|japanese/postgresql74-man|2005-05-08|port renamed
+devel/libuta|devel/wftk|2005-05-11|wftk is a fork of libuta which is not any longer maintained
