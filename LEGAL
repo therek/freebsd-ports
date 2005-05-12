@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.406 2005/05/09 16:08:52 dinoex Exp $
+# $FreeBSD: ports/LEGAL,v 1.407 2005/05/12 02:32:44 maho Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -491,7 +491,6 @@ rtplib-*		devel/rtplib		Limited use license
 ruby/ruby_cast_256.zip	security/ruby-cast_256	Crypto; export-controlled
 runrev/linux.tgz	devel/linux-runrev	Do not sell for profit
 scilab-*		math/scilab		Do not sell for profit
-sdpara/*		pors/math/sdpara	Unsure distribution condition
 sdr-*			mbone/sdr		Crypto; export-controlled
 serialmail-*		mail/serialmail		No license -- see
 						http://cr.yp.to/softwarelaw.html
