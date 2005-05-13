@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/clamav/pkg-deinstall,v 1.1 2004/02/03 06:43:06 glewis Exp $
+# $FreeBSD: ports/security/clamav/pkg-deinstall,v 1.2 2004/04/01 16:36:28 eik Exp $
 
 if [ "$2" != "POST-DEINSTALL" ]; then
 	exit 0

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav/files/clamav-milter.sh,v 1.4 2004/12/22 02:10:11 edwin Exp $
+# $FreeBSD: ports/security/clamav/files/clamav-milter.sh,v 1.5 2005/01/12 17:57:58 yar Exp $
 #
 
 # PROVIDE: clamav-milter
