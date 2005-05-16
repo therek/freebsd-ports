@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/rsync/files/rsyncd.sh,v 1.1 2003/11/16 23:08:12 eik Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: %%NAME%%
