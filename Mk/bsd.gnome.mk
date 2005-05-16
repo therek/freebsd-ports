@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.92 2005/03/21 17:47:08 adamw Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.93 2005/03/22 18:11:51 pav Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -41,13 +41,13 @@ Gnome_Pre_Include=			bsd.gnome.mk
 
 # non-version specific components
 _USE_GNOME_ALL= esound intlhack intltool lthack gnomehack \
-		gnomehier gnomemimedata gnomeprefix gnometarget pkgconfig 
+		gnomehier gnomemimedata gnomeprefix gnometarget pkgconfig
 
 # GNOME 1 components
 _USE_GNOME_ALL+= bonobo gal gconf gdkpixbuf glib12 glibwww \
 		gnomecanvas gnomedb gnomelibs gnomeprint gnomevfs gtk12 \
 		gtkhtml libcapplet libgda libghttp libglade libxml imlib \
-		oaf orbit pygnome pygtk 
+		oaf orbit pygnome pygtk
 
 # GNOME 2 components
 _USE_GNOME_ALL+= atk atspi desktopfileutils eel2 evolutiondataserver \
@@ -58,7 +58,7 @@ _USE_GNOME_ALL+= atk atspi desktopfileutils eel2 evolutiondataserver \
 		libgnomeprint libgnomeprintui libgnomeui libgsf libgsf_gnome \
 		libgtkhtml libidl librsvg2 libwnck libxml2 libxslt libzvt linc \
 		metacity nautilus2 nautiluscdburner orbit2 pango pygnome2 \
-		pygnomeextras pygtk2 vte 
+		pygnomeextras pygtk2 vte
 
 SCROLLKEEPER_DIR=	/var/db/scrollkeeper
 gnomehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "Makefile.in*" | ${XARGS} ${REINPLACE_CMD} -e \
