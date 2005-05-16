@@ -1,4 +1,4 @@
-$FreeBSD: ports/mail/dspam-devel/files/UPDATING,v 1.6 2005/05/05 21:05:12 pav Exp $
+$FreeBSD: ports/mail/dspam-devel/files/UPDATING,v 1.7 2005/05/09 15:55:42 vanilla Exp $
 
 This file documents some of the problems you may encounter when
 upgrading dspam port.  I will try my best to minimize these disruptions,
@@ -11,6 +11,13 @@ This file concetrate on the FreeBSD / port specific changes and one should read
 also the UPGRADING enclosed in the dspam distribution. You can see it by doing
 in the port directory:
 make extract;  more `find . -type f -maxdepth 2 -name UPGRADING`
+
+###########################################################################
+# dspam-devel-3.5.0.20050512.1145
+#
+
+BUGFIX: fixed signature embedding on malformatted boundary bug
+
 
 ###########################################################################
 # dspam-devel-3.5.0.20050506.0930
