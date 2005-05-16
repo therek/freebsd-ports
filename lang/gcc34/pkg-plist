@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc34/pkg-plist,v 1.60 2004/12/16 10:11:30 maho Exp $
+@comment $FreeBSD: ports/lang/gcc34/pkg-plist,v 1.61 2004/12/19 23:45:14 gerald Exp $
 bin/c++34
 bin/cpp34
 bin/g++34
@@ -26,17 +26,11 @@ bin/grepjar34
 %%LIBJAVA%%include/ffi.h
 %%LIBJAVA%%include/jni.h
 %%LIBJAVA%%include/jvmpi.h
-%%LIBJAVA%%lib/libffi.la
-%%LIBJAVA%%lib/libffi.a
 %%LIBJAVA%%lib/logging.properties
-%%LIBJAVA%%libdata/pkgconfig/libgcj.pc
 %%LIBJAVA%%lib/security/classpath.security
 %%LIBJAVA%%lib/security/libgcj.security
 %%LIBJAVA%%@dirrm lib/security
-%%LIBJAVA%%lib/lib-org-xml-sax.la
-%%LIBJAVA%%lib/lib-org-xml-sax.a
-%%LIBJAVA%%lib/lib-org-w3c-dom.la
-%%LIBJAVA%%lib/lib-org-w3c-dom.a
+%%LIBJAVA%%libdata/pkgconfig/libgcj.pc
 libexec/gcc/%%GNU_HOST%%/%%GCC_VER%%/cc1
 libexec/gcc/%%GNU_HOST%%/%%GCC_VER%%/cc1plus
 libexec/gcc/%%GNU_HOST%%/%%GCC_VER%%/f771
@@ -54,5 +48,3 @@ libexec/gcc/%%GNU_HOST%%/%%GCC_VER%%/install-tools/mkheaders
 @unexec rmdir %D/libdata/pkgconfig 2>/dev/null || true
 %%LIBJAVA%%share/java/libgcj-%%GCC_VER%%.jar
 @comment Insert PLIST.lib here
-@comment -=[ begin PLIST.lib ]=-
-@comment -=[ end PLIST.lib ]=-
