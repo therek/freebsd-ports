@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/libogg/pkg-plist,v 1.12 2004/12/13 06:26:36 krion Exp $
+@comment $FreeBSD: ports/audio/libogg/pkg-plist,v 1.13 2004/12/15 14:47:44 naddy Exp $
 include/ogg/config_types.h
 include/ogg/ogg.h
 include/ogg/os_types.h
@@ -80,7 +80,6 @@ share/aclocal/ogg.m4
 %%PORTDOCS%%%%DOCSDIR%%/vorbisword2.png
 %%PORTDOCS%%%%DOCSDIR%%/white-ogg.png
 %%PORTDOCS%%%%DOCSDIR%%/white-xifish.png
-@unexec rmdir %D/libdata/pkgconfig 2>/dev/null || true
 @dirrm include/ogg
 %%PORTDOCS%%@dirrm %%DOCSDIR%%/ogg
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
