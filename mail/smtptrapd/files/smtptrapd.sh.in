@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/smtptrapd/files/smtptrapd.sh,v 1.1 2005/03/20 21:35:13 anders Exp $
 #
 
 # PROVIDE: smtptrapd
