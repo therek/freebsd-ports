@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.690 2005/05/17 10:40:07 fjoe Exp $
+# $FreeBSD: ports/MOVED,v 1.691 2005/05/17 16:03:55 sem Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1491,3 +1491,4 @@ www/mnogosearch|www/mnogosearch31|2004-05-15|finished repocopy
 net/amule|net/amule1|2005-05-16|port renamed
 net/amule-devel|net/amule2|2005-05-16|obsolete
 databases/firebird|databases/firebird-server|2005-05-17|split into -client and -server
+audio/mpeg4ip-faad||2005-05-19|Port no longer needed with new mpeg4ip-1.3
