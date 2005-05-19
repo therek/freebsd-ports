@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid/pkg-install,v 1.16 2004/09/02 06:44:14 sem Exp $
+# $FreeBSD: ports/www/squid/pkg-install,v 1.17 2004/10/13 09:43:48 sergei Exp $
 #
 
 PATH=/bin:/usr/bin:/usr/sbin
@@ -121,13 +121,14 @@ PRE-INSTALL)
 	fi
 	;;
 POST-INSTALL)
-	for file in mime.conf squid.conf; do
+	for file in cachemgr.conf mime.conf squid.conf; do
 		if [ ! -f ${squid_confdir}/${file} \
 		    -a -f ${squid_confdir}/${file}.default ]; then
-		echo "Creating ${file} from default..."
-		install -c -o root -g ${squid_group} -m 0640 \
-		    ${squid_confdir}/${file}.default ${squid_confdir}/${file}
-	fi
+			echo "Creating ${file} from default..."
+			install -c -o root -g ${squid_group} -m 0640 \
+		    	    ${squid_confdir}/${file}.default \
+			    ${squid_confdir}/${file}
+		fi
 	done
 
 	echo "===> Post-installation informations for ${pkgname}"

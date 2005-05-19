@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050519:
+  AFFECTS: users of www/squid
+  AUTHOR: tmseck@netcologne.de
+
+  Starting with 2.5.10, the cachemgr.cgi program uses a configuration file
+  cachemgr.conf to control which hosts this program is allowed to manage.
+  To prevent abuse, the configuration defaults to "localhost" only.
+  Please see cachemgr.cgi(8) for further details.
+
 20050517:
   AFFECTS: users of www/mod_perl2 and all ports depending on it
   AUTHOR: lars.eggert@gmx.net.
@@ -2099,4 +2108,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.189 2005/05/17 16:35:12 sem Exp $
+$FreeBSD: ports/UPDATING,v 1.190 2005/05/17 17:13:42 sem Exp $
