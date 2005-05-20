@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/libslang2/pkg-plist,v 1.1 2005/05/16 17:13:02 novel Exp $
 bin/slsh
 etc/slsh.rc
 include/slang.h
@@ -11,8 +11,8 @@ lib/slang/v2/modules/termios-module.so
 lib/slang/v2/modules/select-module.so
 lib/slang/v2/modules/fcntl-module.so
 lib/slang/v2/modules/varray-module.so
-lib/slang/v2/modules/pcre-module.so
-lib/slang/v2/modules/png-module.so
+%%PCRE%%lib/slang/v2/modules/pcre-module.so
+%%PNG%%lib/slang/v2/modules/png-module.so
 share/slsh/scripts/jpegsize
 share/slsh/scripts/lsrpm
 share/slsh/scripts/sldb
