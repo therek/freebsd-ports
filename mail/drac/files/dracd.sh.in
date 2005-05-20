@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/drac/files/dracd.sh,v 1.4 2004/07/26 19:18:17 marcus Exp $
+# $FreeBSD: ports/mail/drac/files/dracd.sh.in,v 1.1 2005/04/22 13:51:40 vs Exp $
 
 # PROVIDE: dracd
 # REQUIRE: DAEMON
@@ -14,12 +14,13 @@
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
 dracd_enable=${dracd_enable-"NO"}
+dracd_flags=${dracd_flags-""}
 
 . %%RC_SUBR%%
 
 name="dracd"
 rcvar=`set_rcvar`
-command="%%PREFIX%%/sbin/rpc.dracd"
+command="%%PREFIX%%/sbin/rpc.dracd "${dracd_flags}
 
 load_rc_config $name
 run_rc_command "$1"
