@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.94 2005/05/16 21:20:23 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.95 2005/05/20 19:53:59 ahze Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -312,7 +312,7 @@ libartlgpl2_USE_GNOME_IMPL=	pkgconfig
 
 libgnomeprint_LIB_DEPENDS=	gnomeprint-2-2.1:${PORTSDIR}/print/libgnomeprint
 libgnomeprint_DETECT=		${X11BASE}/libdata/pkgconfig/libgnomeprint-2.2.pc
-libgnomeprint_USE_GNOME_IMPL=	libbonobo libartlgpl2 gtk20
+libgnomeprint_USE_GNOME_IMPL=	glib20 libxml2 pango libartlgpl2
 
 libgnomeprintui_LIB_DEPENDS=	gnomeprintui-2-2.1:${PORTSDIR}/x11-toolkits/libgnomeprintui
 libgnomeprintui_DETECT=		${X11BASE}/libdata/pkgconfig/libgnomeprintui-2.2.pc
