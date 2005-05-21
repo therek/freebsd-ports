@@ -1,8 +1,9 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/emulators/lib765/pkg-plist,v 1.1 2003/10/29 16:17:00 sergei Exp $
 include/765.h
 lib/lib765.a
+lib/lib765.la
 lib/lib765.so
-lib/lib765.so.3
+lib/lib765.so.4
 %%PORTDOCS%%%%DOCSDIR%%/765.txt
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
