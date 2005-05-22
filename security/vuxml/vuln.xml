@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.662 2005/05/19 19:56:44 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.663 2005/05/22 13:18:12 remko Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -112,7 +112,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	<p>A RST/GHC Advisory reports that there is an format string
 	  vulnerability in oops.  The vulnerability can be found in
 	  the MySQL/PgSQL authentication module.  Succesful
-	  exploitation may allow execution of arbitrary code.:</p>
+	  exploitation may allow execution of arbitrary code.</p>
       </body>
     </description>
     <references>
