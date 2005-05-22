@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/sid-milter/files/milter-sid.sh,v 1.1 2005/03/09 05:38:44 dinoex Exp $
 # 
 if ! test -x %%PREFIX%%/libexec/sid-filter
 then
@@ -27,7 +27,7 @@ stop)
 	rm -f /var/run/sid-filter.pid
 	;;
 wait)
-	while ps -ax -o pid,command | fgrep sid-filter
+	while ps -ax -o command | grep ^%%PREFIX%%/libexec/sid-filter
 	do
 		echo "please wait"
 		sleep 1
@@ -41,8 +41,13 @@ reload)
 		echo " sid-filter: not running" 2>&1
 	fi
 	;;
+restart)
+	$0 stop
+	sleep 1
+	$0 start
+	;;
 *)
-	echo "Usage: ${0##*/}: { start | stop | reload }" >&2
+	echo "Usage: ${0##*/}: { start | stop | reload | restart }" >&2
 	exit 64
 	;;
 esac
