@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dk-milter/files/milter-dk.sh,v 1.1 2005/05/22 13:39:11 ache Exp $
+# $FreeBSD$
 # 
 if ! test -x %%PREFIX%%/libexec/dk-filter
 then
