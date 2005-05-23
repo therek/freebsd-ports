@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050523:
+  AFFECTS: users of games/pvgdn
+  AUTOR: mek@mek.uz.ua
+
+  The following has been changed in the bnetd.conf file (starting with
+  version 1.7.7):
+    - The old config variable `servername' has been renamed to `hostname'.
+    - A new `servername' config variable has been introduced for server
+      identification.
+  
 20050519:
   AFFECTS: users of www/squid
   AUTHOR: tmseck@netcologne.de
@@ -2108,4 +2118,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.190 2005/05/17 17:13:42 sem Exp $
+$FreeBSD: ports/UPDATING,v 1.191 2005/05/19 14:17:00 pav Exp $
