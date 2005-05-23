@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/sid-milter/files/milter-sid.sh,v 1.1 2005/03/09 05:38:44 dinoex Exp $
+# $FreeBSD: ports/mail/sid-milter/files/milter-sid.sh,v 1.2 2005/05/22 21:37:49 dinoex Exp $
 # 
 if ! test -x %%PREFIX%%/libexec/sid-filter
 then
@@ -43,7 +43,6 @@ reload)
 	;;
 restart)
 	$0 stop
-	sleep 1
 	$0 start
 	;;
 *)
