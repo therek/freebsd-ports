@@ -1,14 +1,8 @@
-@comment $FreeBSD: ports/security/pfw/pkg-plist,v 1.1 2005/04/15 18:41:09 sem Exp $
+@comment $FreeBSD: ports/security/pfw/pkg-plist,v 1.2 2005/04/19 15:37:25 pav Exp $
 www/pfw/INSTALL
 www/pfw/README
 www/pfw/bin/pfctlwrapper.sh
 www/pfw/bin/pfctlwrapper.sh.remote
-www/pfw/conf/isakmpd.conf
-www/pfw/conf/pf-bart.conf
-www/pfw/conf/pf-demo.conf
-www/pfw/conf/pf-holodoc.conf
-www/pfw/conf/pf-test1.conf
-www/pfw/conf/pf.conf
 www/pfw/lib/altq.class.php
 www/pfw/lib/anchor.class.php
 www/pfw/lib/filter.class.php
@@ -58,7 +52,6 @@ www/pfw/web/tableedit.php
 www/pfw/web/test.php
 www/pfw/web/write.php
 @dirrm www/pfw/bin
-@dirrm www/pfw/conf
 @dirrm www/pfw/lib
 @dirrm www/pfw/web/manual
 @dirrm www/pfw/web
