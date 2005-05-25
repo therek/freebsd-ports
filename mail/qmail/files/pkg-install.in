@@ -1,6 +1,6 @@
 #!/bin/csh -f
 #
-# $FreeBSD: ports/mail/qmail/pkg-install,v 1.5 2005/05/11 12:50:32 pav Exp $
+# $FreeBSD: ports/mail/qmail/files/pkg-install.in,v 1.1 2005/05/17 09:14:30 sem Exp $
 #
 
 # Author : Marcos Tischer Vallim
@@ -98,7 +98,7 @@ case "POST-INSTALL":
 
 	%%RCDLINK%%ln -s ${PKG_PREFIX}/rc %%LOCALBASE%%/etc/rc.d/qmail.sh;
 
-	touch "${PKG_PREFIX}/alias/.qmail-{postmaster,root,mailer-daemon}";
+	touch ${PKG_PREFIX}/alias/.qmail-{postmaster,root,mailer-daemon};
 
 	if ($status) then
 		echo "Failed to create files :";
