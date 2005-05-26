@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.6 2005/03/20 16:01:42 kwm Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.7 2005/05/26 16:50:51 ahze Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -185,7 +185,7 @@ ffmpeg_DEPENDS=	multimedia/gstreamer-ffmpeg
 libcaca_PLIST=	libgstcacasink
 
 dv_DEPENDS=	multimedia/gstreamer-plugins-dv
-dv_PLIST=	libgstdv
+dv_PLIST=	libgstdvdec
 
 dvd_DEPENDS=	multimedia/gstreamer-plugins-dvd
 dvd_PLIST=	libgstdvdnavsrc
