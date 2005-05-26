@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/gettext/pkg-plist,v 1.34 2005/05/13 03:51:07 ahze Exp $
 bin/autopoint
 bin/envsubst
 bin/gettext
@@ -298,7 +298,6 @@ share/locale/zh_TW/LC_MESSAGES/gettext-tools.mo
 @dirrm %%DOCSDIR%%/javadoc1/images
 @dirrm %%DOCSDIR%%/javadoc1
 @dirrm %%DOCSDIR%%/examples/build-aux
-@dirrm %%DOCSDIR%%/examples/config
 @dirrm %%DOCSDIR%%/examples
 @dirrm %%DOCSDIR%%/csharpdoc
 @dirrm %%DOCSDIR%%
