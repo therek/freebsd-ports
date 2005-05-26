@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/ftp/wzdftpd/pkg-plist,v 1.8 2004/12/08 19:17:16 pav Exp $
+@comment $FreeBSD: ports/ftp/wzdftpd/pkg-plist,v 1.9 2005/02/25 19:22:20 sem Exp $
 bin/siteconfig
 bin/siteuptime
 bin/sitewho
@@ -20,6 +20,7 @@ include/wzdftpd/libwzd-auth/wzd_crypt.h
 include/wzdftpd/libwzd-auth/wzd_md5.h
 include/wzdftpd/libwzd-auth/wzd_md5crypt.h
 include/wzdftpd/libwzd-auth/wzd_pam.h
+include/wzdftpd/libwzd-auth/wzd_sha1.h
 include/wzdftpd/libwzd-auth/wzd_tls.h
 include/wzdftpd/libwzd-base/hash.h
 include/wzdftpd/libwzd-base/list.h
@@ -42,6 +43,7 @@ include/wzdftpd/wzd_data.h
 include/wzdftpd/wzd_debug.h
 include/wzdftpd/wzd_dir.h
 include/wzdftpd/wzd_file.h
+include/wzdftpd/wzd_fs.h
 include/wzdftpd/wzd_hardlimits.h
 include/wzdftpd/wzd_ip.h
 include/wzdftpd/wzd_libmain.h
