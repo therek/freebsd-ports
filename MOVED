@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.695 2005/05/22 14:46:57 markus Exp $
+# $FreeBSD: ports/MOVED,v 1.696 2005/05/23 05:11:09 adamw Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1495,3 +1495,4 @@ audio/mpeg4ip-faad||2005-05-19|Port no longer needed with new mpeg4ip-1.3
 net/iperf|benchmarks/iperf|2005-05-21|better category
 misc/kile-i18n|editors/kile|2005-05-22|Merged with kile
 x11-wm/gnome2wmaker||2005-05-22|obsolete and unsupported
+mail/bogofilter-current||2005-05-26|newer stable version available
