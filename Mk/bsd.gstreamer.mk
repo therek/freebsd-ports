@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.5 2005/03/17 05:55:26 ahze Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.6 2005/03/20 16:01:42 kwm Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -170,7 +170,7 @@ libmng_PLIST=	libgstmng
 libpng_DEPENDS=	graphics/gstreamer-plugins-libpng
 libpng_PLIST=	libgstpng
 
-libvisual_DEPNDS=	graphics/gstreamer-plugins-libvisual
+libvisual_DEPENDS=	graphics/gstreamer-plugins-libvisual
 
 swfdec_DEPENDS=	graphics/gstreamer-plugins-swfdec
 
