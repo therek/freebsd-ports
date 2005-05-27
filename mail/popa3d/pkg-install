@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/mail/popa3d/pkg-install,v 1.2 2000/04/01 03:39:48 mharo Exp $
 #
 
 if [ "$2" != "PRE-INSTALL" ]; then
@@ -27,4 +27,3 @@ if ! id -u "pop" > /dev/null 2>&1; then
 fi
 
 exit 0
-
