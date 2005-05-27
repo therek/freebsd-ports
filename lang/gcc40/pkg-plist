@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.65 2005/05/16 20:31:22 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.66 2005/05/22 21:44:14 gerald Exp $
 bin/c++40
 bin/cpp40
 bin/fastjar40
@@ -20,10 +20,6 @@ bin/%%GNU_HOST%%-gcj40
 bin/%%GNU_HOST%%-gcjh40
 include/mf-runtime.h
 %%FORTRAN%%bin/gfortran40
-%%FORTRAN%%lib/libgfortran.a
-%%FORTRAN%%lib/libgfortranbegin.a
-%%FORTRAN%%lib/libgfortran.la
-%%FORTRAN%%lib/libgfortranbegin.la
 %%LIBJAVA%%bin/addr2name.awk40
 %%LIBJAVA%%bin/gcj-dbtool40
 %%LIBJAVA%%bin/gij40
