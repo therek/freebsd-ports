@@ -1,7 +1,7 @@
-# $FreeBSD: ports/japanese/mecab/Makefile.common,v 1.1 2003/04/23 08:16:47 knu Exp $
+# $FreeBSD: ports/japanese/mecab/Makefile.common,v 1.2 2003/08/18 19:25:59 knu Exp $
 
 MECAB_PORTNAME=		mecab
-MECAB_PORTVERSION=	0.76
+MECAB_PORTVERSION=	0.81
 
 MECAB_PORTDIR=		${PORTSDIR}/japanese/${MECAB_PORTNAME}
 MECAB_WRKSRC_CMD=	cd ${MECAB_PORTDIR} && ${MAKE} -V WRKSRC
