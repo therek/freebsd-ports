@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc41/pkg-plist,v 1.66 2005/05/16 21:52:09 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc41/pkg-plist,v 1.67 2005/05/22 23:42:53 gerald Exp $
 bin/c++41
 bin/cpp41
 bin/fastjar41
@@ -28,9 +28,11 @@ include/mf-runtime.h
 %%LIBJAVA%%bin/jv-convert41
 %%LIBJAVA%%include/ffi.h
 %%LIBJAVA%%lib/logging.properties
+%%LIBJAVA%%lib/gcj-%%GCC_VER%%/classmap.db
 %%LIBJAVA%%lib/security/classpath.security
 %%LIBJAVA%%lib/security/libgcj.security
+%%LIBJAVA%%@dirrm lib/gcj-%%GCC_VER%%
+%%LIBJAVA%%@dirrm lib/security
 %%LIBJAVA%%libdata/pkgconfig/libgcj.pc
 %%LIBJAVA%%share/java/libgcj-%%GCC_VER%%.jar
-%%LIBJAVA%%@dirrm lib/security
 @comment Insert PLIST.lib here
