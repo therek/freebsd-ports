@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.292 2005/05/06 16:40:03 sem Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.293 2005/05/16 12:41:07 sem Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1115,7 +1115,7 @@ MASTER_SITE_SAVANNAH+= \
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_SOURCEFORGE)
-.for mirror in heanet aleron umn belnet nchc voxel optusnet kent unc
+.for mirror in heanet aleron umn belnet nchc voxel optusnet kent unc ufpr
 MASTER_SITE_SOURCEFORGE+= \
 	http://${mirror}.dl.sourceforge.net/sourceforge/%SUBDIR%/
 .endfor
