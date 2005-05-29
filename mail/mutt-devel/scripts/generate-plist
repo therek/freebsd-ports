@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.29 2005/03/21 08:51:21 krion Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.30 2005/05/08 08:40:13 oliver Exp $
 #
 # set -x
 
@@ -158,6 +158,9 @@ EOF
       html=$(($html + 1))
     fi
     if [ "$MUTT_IDN" = "yes" ]; then
+      html=$(($html + 1))
+    fi
+    if [ "$MUTT_REVERSE_REPLY_PATCH" = "yes" ]; then
       html=$(($html + 1))
     fi
     if [ "$MUTT_SLAVE_HTML_PAGES" != "" ]; then
