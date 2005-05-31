@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.7 2005/05/26 16:50:51 ahze Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.8 2005/05/26 20:26:59 ahze Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -59,7 +59,7 @@ _USE_GSTREAMER_ALL=	a52dec aalib artsd audiofile cairo cdaudio cdparanoia \
 			libpng libvisual mad mikmod mpeg2dec mpeg2enc mplex \
 			musepack musicbrainz nas sdl shout shout2 sidplay \
 			smoothwave sndfile speex theora ogg pango polypaudio \
-			swfdec vorbis xine xvid
+			swfdec vorbis xvid
 
 # other plugins
 OTHER_GSTREAMER_PLUGINS+=	core yes
@@ -199,8 +199,6 @@ mpeg2enc_DEPENDS=	multimedia/gstreamer-plugins-mpeg2enc
 mplex_DEPENDS=	multimedia/gstreamer-plugins-mplex
 
 theora_DEPENDS=	multimedia/gstreamer-plugins-theora
-
-xine_DEPENDS=	multimedia/gstreamer-plugins-xine
 
 xvid_DEPENDS=	multimedia/gstreamer-plugins-xvid
 
