@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050601:
+  AFFECTS: users of devel/perforce
+  AUTHOR: lth@FreeBSD.org
+
+  Upgrading to 2005.1 is straightforward, but it is highly recommended
+  to follow the upgrading instructions in the release notes:
+    http://www.perforce.com/perforce/doc.051/user/relnotes.txt
+
 20050526:
   AFFECTS: users of mail/sylpheed-claws
   AUTHOR: netchild@FreeBSD.org
@@ -2143,4 +2151,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.196 2005/05/27 07:39:44 netchild Exp $
+$FreeBSD: ports/UPDATING,v 1.197 2005/05/27 07:41:40 krion Exp $
