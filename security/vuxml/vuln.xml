@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.669 2005/06/01 15:36:40 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.670 2005/06/01 15:51:40 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -66,7 +66,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <package>
 	<name>mailman</name>
 	<name>ja-mailman</name>
-	<range><lt>2.1.5</lt></range>
+	<range><lt>2.1.6</lt></range>
       </package>
     </affects>
     <description>
