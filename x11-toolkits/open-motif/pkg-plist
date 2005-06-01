@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/open-motif/pkg-plist,v 1.13 2002/09/19 01:39:26 kris Exp $
+@comment $FreeBSD: ports/x11-toolkits/open-motif/pkg-plist,v 1.14 2004/08/15 15:22:06 steve Exp $
 %%MOTIF_DEMOS%%bin/DNDDemo
 %%MOTIF_DEMOS%%bin/airport
 %%MOTIF_DEMOS%%bin/autopopups
@@ -347,11 +347,11 @@ lib/libUil.so.3
 lib/libXm.a
 lib/libXm.so
 lib/libXm.so.3
-%%DOCSDIR%%/BUGREPORT
-%%DOCSDIR%%/COPYRIGHT.MOTIF
-%%DOCSDIR%%/README
-%%DOCSDIR%%/RELNOTES
-@dirrm %%DOCSDIR%%
+%%MANUALS%%%%DOCSDIR%%/BUGREPORT
+%%MANUALS%%%%DOCSDIR%%/COPYRIGHT.MOTIF
+%%MANUALS%%%%DOCSDIR%%/README
+%%MANUALS%%%%DOCSDIR%%/RELNOTES
+%%MANUALS%%@dirrm %%DOCSDIR%%
 %%MOTIF_DEMOS%%@dirrm lib/X11/uid/swedish/uid
 %%MOTIF_DEMOS%%@dirrm lib/X11/uid/swedish
 %%MOTIF_DEMOS%%@dirrm lib/X11/uid/japanese/uid
