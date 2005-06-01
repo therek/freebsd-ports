@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache2/files/apache.sh,v 1.11 2005/01/11 13:45:05 clement Exp $
+# $FreeBSD: ports/www/apache20/files/apache.sh,v 1.12 2005/06/01 17:47:53 clement Exp $
 #
 
 # PROVIDE: apache2
@@ -108,7 +108,6 @@ apache2_precmd()
 	else
 		return 0
         fi
-	echo DEBUG ${apache2_flags}
 }
 
 sig_reload=SIGUSR1
