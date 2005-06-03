@@ -28,10 +28,35 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.675 2005/06/01 17:07:58 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.676 2005/06/01 17:16:28 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="99b5cfa5-d3d2-11d9-8ffb-00061bc2ad93">
+    <topic>yamt -- Possible buffer overflow and directory transferal issue</topic>
+    <affects>
+      <package>
+	<name>yamt</name>
+	<range><lt>0.5_2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>In addition to the vulnerabilities listed in
+	  CVE CAN-2004-1302, several other issues have been
+	  found in audio/yamt, including buffer overflows
+	  and directory tranversals.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+    </references>
+    <dates>
+      <discovery>2005-01-20</discovery>
+      <entry>2005-06-03</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="ae6ec9b8-2f43-4d02-8129-c6a3a53ef09d">
     <topic>xview -- multiple buffer overflows in xv_parse_one</topic>
     <affects>
