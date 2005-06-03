@@ -28,10 +28,34 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.677 2005/06/03 02:09:22 trhodes Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.678 2005/06/03 02:15:20 trhodes Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="8c1da77d-d3e9-11d9-8ffb-00061bc2ad93">
+    <topic>xli -- buffer overflows</topic>
+    <affects>
+      <package>
+	<name>xli</name>
+	<range><lt>1.17.0_1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Buffer overflow in xloadimage may allow an attacker
+	  to execute arbitrary commands via a FACES format image.</p>
+      </body>
+    </description>
+    <references>
+	<cvename>CAN-2001-0775</cvename>
+	<url>http://www.debian.org/security/2005/dsa-695</url>
+    </references>
+    <dates>
+      <discovery>2000-02-19</discovery>
+      <entry>2005-06-03</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="99b5cfa5-d3d2-11d9-8ffb-00061bc2ad93">
     <topic>yamt -- Possible buffer overflow and directory transferal issue</topic>
     <affects>
