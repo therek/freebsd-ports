@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.676 2005/06/01 17:16:28 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.677 2005/06/03 02:09:22 trhodes Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -46,10 +46,10 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	  CVE CAN-2004-1302, several other issues have been
 	  found in audio/yamt, including buffer overflows
 	  and directory tranversals.</p>
-	</blockquote>
       </body>
     </description>
     <references>
+      <cvename>CAN-2004-1302</cvename>
     </references>
     <dates>
       <discovery>2005-01-20</discovery>
