@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/stunnel/pkg-deinstall,v 1.1 2002/09/20 09:29:10 roam Exp $
 # taken from net/cvsup-mirror
 
 PATH=/bin:/usr/sbin
@@ -13,7 +13,7 @@ ask() {
 
     question=$1
     default=$2
-    if [ -z "${PACKAGE_BUILDING}" ]; then
+    if [ -z "${PACKAGE_BUILDING}" -a -z "${BATCH}" ]; then
 	read -p "${question} [${default}]? " answer
     fi
     if [ x${answer} = x ]; then
