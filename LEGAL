@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.411 2005/05/25 07:37:33 jylefort Exp $
+# $FreeBSD: ports/LEGAL,v 1.412 2005/05/31 10:22:13 edwin Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -41,6 +41,9 @@ acroread/linux-5*.tar.gz print/acroread		Must fill out redistribution
 						form at
 						http://www.adobe.com/products/acrobat/distribute.html
 acroread/AdobeReader_*-7*.*.rpm print/acroread7	Must fill out redistribution
+						form at
+						http://www.adobe.com/products/acrobat/distribute.html
+acroread/AdbeRdr70_linux_jpn.tar.gz japanese/acroread7	Must fill out redistribution
 						form at
 						http://www.adobe.com/products/acrobat/distribute.html
 actx-*			games/actx		Contains commercial character
