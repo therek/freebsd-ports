@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.702 2005/06/03 13:43:11 vs Exp $
+# $FreeBSD: ports/MOVED,v 1.703 2005/06/05 19:51:22 mezz Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1512,3 +1512,4 @@ editors/gxedit||2005-06-03|project no longer exists
 misc/yaucg||2005-06-03|master site disappeared, script probably broken
 net/archie.el||2005-06-03|master site disappeared
 deskutils/menueditor|deskutils/smeg|2005-06-05|project renamed
+databases/jdbc-oracle816|databases/jdbc-oracle8i|2005-06-05|Obsolete version
