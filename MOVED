@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.701 2005/05/31 15:54:12 kwm Exp $
+# $FreeBSD: ports/MOVED,v 1.702 2005/06/03 13:43:11 vs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1511,3 +1511,4 @@ devel/idlefork||2005-06-03|has been integrated into Pyhton 2.3+
 editors/gxedit||2005-06-03|project no longer exists
 misc/yaucg||2005-06-03|master site disappeared, script probably broken
 net/archie.el||2005-06-03|master site disappeared
+deskutils/menueditor|deskutils/smeg|2005-06-05|project renamed
