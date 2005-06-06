@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/japanese/acroread/pkg-plist,v 1.1 2005/06/05 07:40:33 hrs Exp $
 bin/acroread
 %%ACRODIR%%/bin/acroread
 %%ACRODIR%%/Reader/help/JPN/README
@@ -434,3 +434,4 @@ bin/acroread
 @dirrm %%ACRODIR%%/Reader
 @dirrm %%ACRODIR%%/Browser/intellinux
 @dirrm %%ACRODIR%%/Browser
+@dirrm %%ACRODIR%%
