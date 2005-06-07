@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.414 2005/06/05 20:30:48 thierry Exp $
+# $FreeBSD: ports/LEGAL,v 1.415 2005/06/07 20:44:41 niels Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -494,7 +494,6 @@ rpm/i386/8.0/*		emulators/linux_base-8	Binaries under GNU GPL
 rtplib-*		devel/rtplib		Limited use license
 ruby/ruby_cast_256.zip	security/ruby-cast_256	Crypto; export-controlled
 runrev/linux.tgz	devel/linux-runrev	Do not sell for profit
-scilab-*		math/scilab		Do not sell for profit
 sdr-*			mbone/sdr		Crypto; export-controlled
 serialmail-*		mail/serialmail		No license -- see
 						http://cr.yp.to/softwarelaw.html
