@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.413 2005/06/05 07:43:13 hrs Exp $
+# $FreeBSD: ports/LEGAL,v 1.414 2005/06/05 20:30:48 thierry Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -73,6 +73,8 @@ bamg*			math/bamg		Contact author personally
 baudline_*		audio/baudline		No redistribution allowed
 BCWipe-*		security/bcwipe		Non-Commercial Distribution and
 						Use Only
+bdc*			security/bdc		License does not allow
+						redistribution
 bicom*			archivers/bicom		Contact author personally
 						regarding commercial use
 bk-*-x86-freebsd*	devel/bitkeeper		Redistribution is not permitted
