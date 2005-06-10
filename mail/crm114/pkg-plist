@@ -1,8 +1,9 @@
-@comment $FreeBSD: ports/mail/crm114/pkg-plist,v 1.1 2004/02/24 14:17:04 krion Exp $
+@comment $FreeBSD: ports/mail/crm114/pkg-plist,v 1.2 2004/03/01 21:11:38 pav Exp $
 bin/crm
 bin/cssdiff
 bin/cssmerge
 bin/cssutil
+bin/osbf-util
 %%PORTDOCS%%%%DOCSDIR%%/CRM114_Mailfilter_HOWTO.txt
 %%PORTDOCS%%%%DOCSDIR%%/FAQ.txt
 %%PORTDOCS%%%%DOCSDIR%%/INTRO.txt
@@ -27,6 +28,4 @@ bin/cssutil
 %%EXAMPLESDIR%%/blacklist.mfp
 %%EXAMPLESDIR%%/priolist.mfp
 %%EXAMPLESDIR%%/whitelist.mfp
-%%EXAMPLESDIR%%/spam.css
-%%EXAMPLESDIR%%/nonspam.css
 @dirrm %%EXAMPLESDIR%%
