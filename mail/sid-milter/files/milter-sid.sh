@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/sid-milter/files/milter-sid.sh,v 1.2 2005/05/22 21:37:49 dinoex Exp $
+# $FreeBSD: ports/mail/sid-milter/files/milter-sid.sh,v 1.3 2005/05/23 15:51:23 dinoex Exp $
 # 
 if ! test -x %%PREFIX%%/libexec/sid-filter
 then
@@ -9,8 +9,8 @@ fi
 sid_filter_args="-t -r 0"
 case "$1" in
 start)
-	cd /root
 	sh "${0}" wait
+	cd /var/crash
 	rm -f /var/run/sid-filter.pid /var/run/sid-filter
 	%%PREFIX%%/libexec/sid-filter -l -p local:/var/run/sid-filter \
 		-P /var/run/sid-filter.pid ${sid_filter_args}
