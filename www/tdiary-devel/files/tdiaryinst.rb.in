@@ -4,7 +4,7 @@
 # Date created:                        13 July 2003
 # Whom:                                KAMIYA Satosi  <mimoriso@gmail.com>
 #
-# $FreeBSD: ports/www/tdiary/files/tdiaryinst.rb.in,v 1.3 2004/03/01 17:01:10 pav Exp $
+# $FreeBSD$
 #
 
 require 'getoptlong'
@@ -14,7 +14,7 @@ require 'find'
 require 'tempfile'
 
 # 
-$OPT_TDIARYMASTER = "@@@@PREFIX@@@@/share/examples/tdiary"
+$OPT_TDIARYMASTER = "@@@@PREFIX@@@@/share/examples/@@@@TDIARY@@@@"
 $OPT_LANG         = '@@@@LANG@@@@'
 
 module FileUtils16
@@ -215,7 +215,7 @@ class TdiaryInstall
 
   def copyBaseFile
     FileUtils16.cp_r("#{@tdiarymaster}/doc", "#{@passwd.dir}/#{@httpdir}/#{@diarydir}", :preserve, *@fileutilOptions)
-    FileUtils16.cp_r("#{@tdiarymaster}/erb", "#{@passwd.dir}/#{@httpdir}/#{@diarydir}", :preserve, *@fileutilOptions)
+#   FileUtils16.cp_r("#{@tdiarymaster}/erb", "#{@passwd.dir}/#{@httpdir}/#{@diarydir}", :preserve, *@fileutilOptions)
     FileUtils16.cp_r("#{@tdiarymaster}/misc", "#{@passwd.dir}/#{@httpdir}/#{@diarydir}", :preserve, *@fileutilOptions)
     FileUtils16.cp_r("#{@tdiarymaster}/plugin", "#{@passwd.dir}/#{@httpdir}/#{@diarydir}", :preserve, *@fileutilOptions)
     FileUtils16.cp_r("#{@tdiarymaster}/skel", "#{@passwd.dir}/#{@httpdir}/#{@diarydir}", :preserve, *@fileutilOptions)
