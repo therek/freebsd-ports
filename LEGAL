@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.417 2005/06/10 09:08:31 trevor Exp $
+# $FreeBSD: ports/LEGAL,v 1.418 2005/06/11 23:12:26 trevor Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -391,6 +391,9 @@ macopix-*.tar.gz	games/macopix		Contains commercial character data
 MarathonEvil-*.tar.gz	games/marathon-evil	Bungie/Microsoft do not
 						allow charging for Marathon data
 						files
+marathon2.zip		games/marathon2-data	Bungie/Microsoft do not
+						allow charging for Marathon data
+						files.
 mathfonts-4.1/*		x11-fonts/mathfonts	No redistribution allowed
 mbrola-freebsd/*	audio/mbrola		No commercial, military use
 						voices cannot be sold
