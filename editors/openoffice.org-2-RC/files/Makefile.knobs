@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice-2.0-devel/files/Makefile.knobs,v 1.13 2005/04/29 12:34:08 maho Exp $
+# $FreeBSD: ports/editors/openoffice-2.0-devel/files/Makefile.knobs,v 1.14 2005/06/11 12:31:06 maho Exp $
 
 .if defined(WITHOUT_JAVA)
 CONFIGURE_ARGS+=	--without-java
@@ -105,8 +105,8 @@ pre-fetch:
 	@${ECHO}
 	@${ECHO} "To build OOo, you should have a lot"
 .if defined(WITH_DEBUG)
-	@${ECHO} "of free diskspace (~ 8GB)."
+	@${ECHO} "of free diskspace (~ 18GB)."
 .else
-	@${ECHO} "of free diskspace (~ 4GB)."
+	@${ECHO} "of free diskspace (~ 8.5GB)."
 .endif
 	@${ECHO} "If you want SDK and/or solver, please type make sdk and/or make solver"
