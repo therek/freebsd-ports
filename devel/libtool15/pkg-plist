@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/libtool15/pkg-plist,v 1.10 2004/02/15 06:03:23 ade Exp $
+@comment $FreeBSD: ports/devel/libtool15/pkg-plist,v 1.11 2004/10/14 20:48:17 ade Exp $
 bin/libtool%%BUILD_VERSION%%
 bin/libtoolize%%BUILD_VERSION%%
 libexec/libtool%%BUILD_VERSION%%/libtool
@@ -7,6 +7,7 @@ share/aclocal/libtool%%BUILD_VERSION%%.m4
 share/aclocal/ltdl%%BUILD_VERSION%%.m4
 share/libtool%%BUILD_VERSION%%/config.guess
 share/libtool%%BUILD_VERSION%%/config.sub
+share/libtool%%BUILD_VERSION%%/install-sh
 share/libtool%%BUILD_VERSION%%/libltdl/COPYING.LIB
 share/libtool%%BUILD_VERSION%%/libltdl/Makefile.am
 share/libtool%%BUILD_VERSION%%/libltdl/Makefile.in
