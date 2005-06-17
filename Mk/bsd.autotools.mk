@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.10 2005/06/16 17:29:44 ade Exp $
+# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.11 2005/06/16 21:52:56 ade Exp $
 #
 # Please view me with 4 column tabs!
 #
@@ -95,18 +95,6 @@ Autotools_Include_MAINTAINER=	ade@FreeBSD.org
 #	  Defaults to "aclocal.m4" if autoconf is in use, otherwise "configure"
 #
 #---------------------------------------------------------------------------
-
-#---------------------------------------------------------------------------
-# DEPRECATED ENTRY POINTS
-#---------------------------------------------------------------------------
-.for i in AUTOMAKE AUTOCONF AUTOHEADER LIBTOOL
-. if defined(USE_${i})
-BROKEN=	"USE_${i} deprecated: replace with USE_${i}_VER=..."
-. endif
-. if defined(WANT_${i})
-BROKEN=	"WANT_${i} deprecated: replace with WANT_${i}_VER=..."
-. endif
-.endfor
 
 #---------------------------------------------------------------------------
 # AUTOMAKE/ACLOCAL
