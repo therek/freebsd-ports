@@ -28,12 +28,13 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.695 2005/06/17 23:19:34 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.696 2005/06/18 14:32:18 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
   <vuln vid="63bd4bad-dffe-11d9-b875-0001020eed82">
-    <topic>gzip directory traversal and permission race vulnerabilities</topic>
+    <topic>gzip -- directory traversal and permission race
+      vulnerabilities</topic>
     <affects>
       <system>
 	<name>FreeBSD</name>
