@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice-2.0-devel/files/Makefile.knobs,v 1.14 2005/06/11 12:31:06 maho Exp $
+# $FreeBSD: ports/editors/openoffice-2.0-devel/files/Makefile.knobs,v 1.15 2005/06/17 09:40:37 maho Exp $
 
 .if defined(WITHOUT_JAVA)
 CONFIGURE_ARGS+=	--without-java
@@ -13,7 +13,7 @@ CONFIGURE_ARGS+=	--enable-kde QTDIR="${QT_PREFIX}"
 .endif
 
 .if defined(WITH_CUPS)
-LIB_DEPENDS=+		cups.2:${PORTSDIR}/print
+LIB_DEPENDS+=		cups.2:${PORTSDIR}/print/cups-base
 CONFIGURE_ARGS+=	--enable-cups=yes
 .else
 CONFIGURE_ARGS+=	--enable-cups=no
@@ -23,11 +23,6 @@ CONFIGURE_ARGS+=	--enable-cups=no
 CONFIGURE_ARGS+=	--disable-mozilla
 .else
 CONFIGURE_ARGS+=	--enable-build-mozilla
-.endif
-
-.if defined(WITH_CUPS)
-LIB_DEPENDS+=	cups.2:${PORTSDIR}/print/cups-base
-CONFIGURE_ARGS+=	--enable-cups
 .endif
 
 .if defined(ALL_LOCALIZED_LANGS)
