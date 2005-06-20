@@ -25,7 +25,7 @@
 # Greg Lewis
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.11 2005/01/21 10:27:52 phantom Exp $
+# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.12 2005/06/20 18:08:33 glewis Exp $
 #
 # MAINTAINER=java@FreeBSD.org
 
@@ -72,10 +72,12 @@ createJavaLinks () {
 # Sort the configuration file
 #
 sortConfiguration () {
+    # Ensure the configuration file exists
     if [ ! -f "${CONF}" ]; then
         return
     fi
 
+    # Ensure the configuration file has the correct permissions
     if [ ! -w "${CONF}" -o ! -r "${CONF}" ]; then
         echo "${IAM}: error: can't read/write ${CONF} configuration file!" >&2
         return
@@ -271,6 +273,12 @@ registerVM () {
        touch "${CONF}"
     fi
 
+    # Ensure the configuration file exists and has the correct permissions
+    if [ ! -f "${CONF}" -o ! -w "${CONF}" -o ! -r "${CONF}" ]; then
+        echo "${IAM}: error: can't read/write ${CONF} configuration file!" 1>&2
+        exit 1
+    fi
+
     # Check that the given VM can be found in the configuration file
     VM=`echo "${1}" | sed -E 's|[[:space:]]*#.*||' 2>/dev/null`
     REGISTERED=
@@ -331,6 +339,12 @@ unregisterVM () {
     if [ ! -e "${CONF}" ]; then
        echo "${IAM}: error: can't find ${CONF} configuration file!" >&2
        exit 1
+    fi
+
+    # Ensure the configuration file has the correct permissions
+    if [ ! -w "${CONF}" -o ! -r "${CONF}" ]; then
+        echo "${IAM}: error: can't read/write ${CONF} configuration file!" >&2
+        exit 1
     fi
 
     # Check that the given VM can be found in the configuration file
