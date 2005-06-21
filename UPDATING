@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050621:
+  AFFECTS: users of net/cacti
+  AUTHOR: sem@FreeBSD.org
+
+  Because of users need to keep their DB configuration but config.php
+  can't be saved on upgrating, I've moved DB settings in db-settings.php.
+  So, you need to change db-settings.php and do not touch config.php
+  anymore.
+
+
 20050618:
   AFFECTS: users of alternate linux_base ports
   AUTHOR: netchild@FreeBSD.org
@@ -2174,4 +2184,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.200 2005/06/11 12:17:11 netchild Exp $
+$FreeBSD: ports/UPDATING,v 1.201 2005/06/17 22:59:01 netchild Exp $
