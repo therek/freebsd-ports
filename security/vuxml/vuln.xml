@@ -28,10 +28,34 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.705 2005/06/20 20:18:18 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.706 2005/06/20 22:34:16 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="96948a6a-e239-11d9-83cf-0010dc5df42d">
+    <topic>cacti -- potential SQL injection and cross site scripting attacks</topic>
+    <affects>
+      <package>
+	<name>cacti</name>
+	<range><le>0.8.6d</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p>iDEFENSE security group disclosed potential SQL injection
+	  attacks from unchecked user input and two security holes
+	  regarding potential cross site scripting attacks</p>
+      </body>
+    </description>
+    <references>
+      <url>http://www.cacti.net/release_notes_0_8_6e.php</url>
+    </references>
+    <dates>
+      <discovery>2005-06-21</discovery>
+      <entry>2005-06-21</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="79217c9b-e1d9-11d9-b875-0001020eed82">
     <topic>opera -- XMLHttpRequest security bypass</topic>
     <affects>
