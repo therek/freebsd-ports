@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/erlang/Makefile.man,v 1.4 2004/05/28 14:41:45 olgeni Exp $
+# $FreeBSD: ports/lang/erlang/Makefile.man,v 1.5 2004/12/22 15:31:13 olgeni Exp $
 
 MAN1=	epmd.1 \
 	driver_entry.1 \
@@ -228,6 +228,7 @@ MAN3=	CosEventChannelAdmin.3 \
 	nteventlog.3 \
 	odbc.3 \
 	orber.3 \
+	orber_acl.3 \
 	orber_diagnostics.3 \
 	orber_ifr.3 \
 	orber_tc.3 \
