@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.512 2005/06/09 20:39:43 krion Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.513 2005/06/17 22:59:01 netchild Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1698,6 +1698,7 @@ BUILD_DEPENDS+=		${SITE_PERL}/Module/Build.pm:${PORTSDIR}/devel/p5-Module-Build
 ALL_TARGET?=
 PL_BUILD?=		Build
 CONFIGURE_ARGS+= \
+	create_packlist=0 \
 	install_path=lib="${PREFIX}/${SITE_PERL_REL}" \
 	install_path=arch="${PREFIX}/${SITE_PERL_REL}/${PERL_ARCH}" \
 	install_path=script="${PREFIX}/bin" \
