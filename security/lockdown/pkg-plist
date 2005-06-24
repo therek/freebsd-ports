@@ -1,3 +1,7 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/lockdown/pkg-plist,v 1.1 2004/02/29 23:22:12 sergei Exp $
 bin/lockdown
-etc/lockdown.conf.sample
+bin/editfile
+bin/editfstab
+bin/editkernel
+bin/editlogin
+bin/editttys
