@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050624:
+  AFFECTS: users of lang/perl5.8
+  AUTHOR: tobez@FreeBSD.org
+
+  lang/perl5.8 has been updated to 5.8.7.  You should update everything
+  depending on perl.  The easiest way to do that is to use
+  perl-after-upgrade script supplied with lang/perl5.8.  Please see
+  its manual page for details.
+
 20050622:
   AFFECTS: users of ftp/proftpd-*
   AUTHOR: flz@FreeBSD.org
@@ -2192,4 +2201,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.202 2005/06/21 13:26:54 sem Exp $
+$FreeBSD: ports/UPDATING,v 1.203 2005/06/22 18:54:28 flz Exp $
