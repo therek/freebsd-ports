@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/clamav/pkg-plist,v 1.22 2005/05/21 18:01:06 marcus Exp $
+@comment $FreeBSD: ports/security/clamav/pkg-plist,v 1.23 2005/06/22 10:49:00 jylefort Exp $
 %%CLAMAV-MILTER%%@unexec [ ! -f %%RUNDIR%%/clamav-milter.pid ] || %%RC_DIR%%/clamav-milter%%RC_SUFX%% stop || true
 @unexec [ ! -f %%RUNDIR%%/freshclam.pid ] || %%RC_DIR%%/clamav-freshclam%%RC_SUFX%% stop || true
 @unexec [ ! -f %%RUNDIR%%/clamd.pid ] || %%RC_DIR%%/clamav-clamd%%RC_SUFX%% stop || true
@@ -17,7 +17,6 @@ lib/libclamav.so.1
 lib/libclamav.so
 lib/libclamav.a
 libdata/pkgconfig/libclamav.pc
-@unexec rmdir %D/libdata/pkgconfig 2>/dev/null || true
 @unexec if cmp -s %D/etc/clamd.conf %D/etc/clamd.conf.default; then rm -f %D/etc/clamd.conf; fi
 etc/clamd.conf.default
 @exec [ -f %B/clamd.conf ] || cp %B/%f %B/clamd.conf
