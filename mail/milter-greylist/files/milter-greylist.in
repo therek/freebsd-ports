@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/milter-greylist/files/milter-greylist.sh,v 1.1 2004/05/27 21:12:08 pav Exp $
+# $FreeBSD: ports/mail/milter-greylist/files/milter-greylist.sh,v 1.2 2004/07/29 20:07:03 pav Exp $
 
 # PROVIDE: miltergreylist
 # REQUIRE: LOGIN
@@ -13,6 +13,14 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
+
+. %%RC_SUBR%%
+
+name="miltergreylist"
+rcvar=`set_rcvar`
+
+load_rc_config $name
+
 miltergreylist_enable=${miltergreylist_enable-"NO"}
 miltergreylist_runas=${miltergreylist_runas-"smmsp"}
 miltergreylist_pidfile=${miltergreylist_pidfile-"/var/run/milter-greylist.pid"}
@@ -21,12 +29,6 @@ miltergreylist_cfgfile=${miltergreylist_cfgfile-"%%PREFIX%%/etc/mail/greylist.co
 miltergreylist_flags=${miltergreylist_flags-"-P $miltergreylist_pidfile \
 -f $miltergreylist_cfgfile -p $miltergreylist_sockfile -u $miltergreylist_runas"}
 
-. %%RC_SUBR%%
-
-name="miltergreylist"
-rcvar=`set_rcvar`
 command="%%PREFIX%%/bin/milter-greylist"
-
-load_rc_config $name
 
 run_rc_command "$1"
