@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/pear-PEAR/pkg-install,v 1.2 2004/11/22 16:45:25 thierry Exp $
+# $FreeBSD: ports/devel/pear-PEAR/pkg-install,v 1.3 2004/12/21 22:14:02 edwin Exp $
 #
 # Register the package $1 in the port registry
 
-PREFIX=${PKG_PREFIX:-/usr/local}
+PREFIX=${PKG_PREFIX:=%%PREFIX%%}
 PEAR=${PREFIX}/bin/pear
 PEAR2=${PREFIX}/bin/pear2
 PKGREGDIR=${PREFIX}/share/pear/packages/$1
