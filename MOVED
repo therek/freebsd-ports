@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.708 2005/06/16 10:26:07 vanilla Exp $
+# $FreeBSD: ports/MOVED,v 1.709 2005/06/29 05:37:17 maho Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1561,3 +1561,4 @@ portuguese/openoffice-1.1-pt_BR||2005-06-29|localized version should be built vi
 portuguese/openoffice-1.1-pt_PT||2005-06-29|localized version should be built via knob
 russian/openoffice-1.0||2005-06-29|no longer maintained
 russian/openoffice-1.1||2005-06-29|localized version should be built via knob
+astro/gdesklets-weather||2005-07-03|does not work for a long time
