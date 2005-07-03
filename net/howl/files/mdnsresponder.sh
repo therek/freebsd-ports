@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/howl/files/mdnsresponder.sh,v 1.1 2005/01/30 04:03:36 marcus Exp $
 #
 # PROVIDE: mdnsresponder
 # REQUIRE: DAEMON
 # KEYWORD: FreeBSD
 #
-# Howl's mDNSResponder, a Zeroconf (Rendezvous) service advertisement daemon.
+# Howl's mDNSResponder, a Zeroconf (Bonjour) service advertisement daemon.
 #
 
 mdnsresponder_enable=${mdnsresponder_enable-"NO"}
