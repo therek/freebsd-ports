@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/security/amavisd-new/files/INSTALL.tmpl,v 1.5 2005/02/13 17:35:35 leeym Exp $
+# $FreeBSD$
 #
 
 USER=%%AMAVISUSER%%
