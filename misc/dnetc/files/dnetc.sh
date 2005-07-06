@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/dnetc/files/dnetc.sh,v 1.7 2004/11/15 21:54:24 pav Exp $
+# $FreeBSD: ports/misc/dnetc/files/dnetc.sh,v 1.8 2004/12/06 20:19:19 sem Exp $
 #
 # PROVIDE: dnetc
 # REQUIRE: LOGIN
@@ -21,6 +21,12 @@ required_files=${dir}/${name}.ini
 start_cmd="${name}_start"
 stop_cmd="${name}_stop"
 
+extra_commands="flush fetch update"
+
+flush_cmd="${name}_flush"
+fetch_cmd="${name}_fetch"
+update_cmd="${name}_update"
+
 dnetc_start()
 {
 	if ps -U${user} >/dev/null; then
@@ -39,6 +45,21 @@ dnetc_stop()
 	else
 		echo "${name} not running?"
 	fi
+}
+
+dnetc_flush()
+{
+	su -m ${user} -c "${dir}/${name} -flush" >/dev/null 2>&1
+}
+
+dnetc_fetch()
+{
+	su -m ${user} -c "${dir}/${name} -fetch" >/dev/null 2>&1
+}
+
+dnetc_update()
+{
+	su -m ${user} -c "${dir}/${name} -update" >/dev/null 2>&1
 }
 
 load_rc_config $name
