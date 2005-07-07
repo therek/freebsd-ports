@@ -2,7 +2,7 @@
 #
 #       pre-configure script for Elm port to FreeBSD
 #
-# $FreeBSD: ports/mail/elm+ME/scripts/pre-configure,v 1.34 2004/07/12 12:27:05 sem Exp $
+# $FreeBSD: ports/mail/elm+ME/scripts/pre-configure,v 1.35 2004/08/29 20:37:58 krion Exp $
 
 [ -r /usr/include/inttypes.h ] && has_inttypes=define || has_inttypes=undef
 
@@ -340,7 +340,7 @@ xenlf=''
 d_xenix='undef'
 d_bsd='define'
 locale='locale'
-have_codeset='undef'
+have_codeset='define'
 d_pgp='define'
 pgp='${LOCALBASE}/bin/pgp'
 pgp2_path='${LOCALBASE}/bin/pgp'
