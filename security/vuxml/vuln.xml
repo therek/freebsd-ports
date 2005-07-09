@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.727 2005/07/08 21:36:19 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.728 2005/07/09 19:57:12 remko Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -140,7 +140,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	<p>phpBB is vulnerable to lemote exploitation of an input
+	<p>phpBB is vulnerable to remote exploitation of an input
 	  validation vulnerability allows attackers to read the
 	  contents of arbitrary system files under the privileges
 	  of the webserver.  This also allows remote attackers to
