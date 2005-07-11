@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/mail/dspam/files/dspam.sh.in,v 1.1 2005/05/26 20:33:52 pav Exp $
 # formerly $ FreeBSD: ports/mail/dspam/files/dspam,v 1.1 2005/05/05 21:03:37 pav Exp $
 #
 
@@ -14,7 +14,7 @@
 # dspam_enable="YES"
 #
 
-. /etc/rc.subr
+. %%RC_SUBR%%
 
 name=dspam
 rcvar=`set_rcvar`
