@@ -1,9 +1,11 @@
-@comment $FreeBSD: ports/comms/scmxx/pkg-plist,v 1.5 2004/12/18 14:51:06 sem Exp $
+@comment $FreeBSD: ports/comms/scmxx/pkg-plist,v 1.6 2005/02/14 17:03:08 vs Exp $
 bin/scmxx
 share/locale/de/LC_MESSAGES/scmxx.mo
+share/locale/fr/LC_MESSAGES/scmxx.mo
 share/locale/it/LC_MESSAGES/scmxx.mo
 share/locale/ru/LC_MESSAGES/scmxx.mo
 %%PORTDOCS%%%%DOCSDIR%%/README
+%%PORTDOCS%%%%DOCSDIR%%/README_WIN32.txt
 %%PORTDOCS%%%%DOCSDIR%%/gsmcharset.txt
 %%PORTDOCS%%%%DOCSDIR%%/gsm0338.txt
 %%PORTDOCS%%%%DOCSDIR%%/doc_sources.txt
