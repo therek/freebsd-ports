@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.66 2005/05/22 21:44:14 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.67 2005/05/27 10:32:52 gerald Exp $
 bin/c++40
 bin/cpp40
 bin/fastjar40
@@ -34,5 +34,3 @@ include/mf-runtime.h
 %%LIBJAVA%%share/java/libgcj-%%GCC_VER%%.jar
 %%LIBJAVA%%@dirrm lib/security
 @comment Insert PLIST.lib here
-@comment -=[ begin PLIST.lib ]=-
-@comment -=[ end PLIST.lib ]=-
