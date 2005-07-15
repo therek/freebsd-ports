@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.729 2005/07/09 20:02:57 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.730 2005/07/13 03:04:17 kuriyama Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -6336,7 +6336,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    <affects>
      <package>
       <name>newsfetch</name>
-      <range><le>2.1.1_1</le></range>
+      <range><le>1.21_1</le></range>
     </package>
    </affects>
    <description>
@@ -18021,7 +18021,7 @@ misc.c:
     <affects>
       <package>
 	<name>mnogosearch</name>
-	<range><ge>3.2</ge></range>
+	<range><ge>3.2.*</ge><lt>3.2.15</lt></range>
       </package>
     </affects>
     <description>
