@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.64 2005/02/25 13:29:52 hq Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.65 2005/02/27 23:49:33 hq Exp $
 #
 
 .if !defined(Java_Include)
@@ -106,7 +106,7 @@ Java_Include_MAINTAINER=	glewis@FreeBSD.org hq@FreeBSD.org
 #
 # JAVA_CLASSES		Path to the archive that contains the JDK class files. On
 #					JDK 1.2 or later, this is ${JAVA_HOME}/jre/lib/rt.jar.
-#					Earlier JDK's use ${JAVA_HOME/lib/classes.zip.
+#					Earlier JDK's use ${JAVA_HOME}/lib/classes.zip.
 #
 # JAVASHAREDIR      The base directory for all shared Java resources.
 #
