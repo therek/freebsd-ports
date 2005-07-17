@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/ftp/wzdftpd/pkg-plist,v 1.9 2005/02/25 19:22:20 sem Exp $
+@comment $FreeBSD: ports/ftp/wzdftpd/pkg-plist,v 1.10 2005/05/26 20:41:48 novel Exp $
 bin/siteconfig
 bin/siteuptime
 bin/sitewho
@@ -62,6 +62,7 @@ include/wzdftpd/wzd_site_user.h
 include/wzdftpd/wzd_socket.h
 include/wzdftpd/wzd_string.h
 include/wzdftpd/wzd_structs.h
+include/wzdftpd/wzd_threads.h
 include/wzdftpd/wzd_tls.h
 include/wzdftpd/wzd_types.h
 include/wzdftpd/wzd_utf8.h
