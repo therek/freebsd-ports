@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.720 2005/07/19 02:57:24 linimon Exp $
+# $FreeBSD: ports/MOVED,v 1.721 2005/07/19 03:02:56 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1585,3 +1585,4 @@ devel/swarm||2005-07-18|failed to compile
 lang/gcc27|lang/gcc295|2005-07-18|long obsolete
 net/tramp-emacs20|net/tramp-emacs|2005-07-18|expired
 www/junkbuster||2005-07-18|security problems
+x11/eweather||2005-07-18|did not work with update wmweather
