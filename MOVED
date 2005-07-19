@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.718 2005/07/19 02:42:38 linimon Exp $
+# $FreeBSD: ports/MOVED,v 1.719 2005/07/19 02:52:31 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1583,3 +1583,4 @@ devel/p5-Config-Ini||2005-07-18|disappeared from CPAN
 devel/parrot||2005-07-18|obsolete and unmaintained
 devel/swarm||2005-07-18|failed to compile
 lang/gcc27|lang/gcc295|2005-07-18|long obsolete
+net/tramp-emacs20|net/tramp-emacs|2005-07-18|expired
