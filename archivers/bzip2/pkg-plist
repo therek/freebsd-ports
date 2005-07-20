@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/archivers/bzip2/pkg-plist,v 1.14 2002/02/22 13:21:22 dinoex Exp $
+@comment $FreeBSD: ports/archivers/bzip2/pkg-plist,v 1.15 2003/10/21 09:58:07 osa Exp $
 bin/bzip2
 bin/bunzip2
 bin/bzcat
@@ -14,15 +14,8 @@ lib/libbz2.a
 lib/libbz2.so
 lib/libbz2.so.1
 %%PORTDOCS%%%%DOCSDIR%%/manual.ps.bz2
-%%PORTDOCS%%%%DOCSDIR%%/manual.texi
-%%PORTDOCS%%%%DOCSDIR%%/manual_1.html
-%%PORTDOCS%%%%DOCSDIR%%/manual_2.html
-%%PORTDOCS%%%%DOCSDIR%%/manual_3.html
-%%PORTDOCS%%%%DOCSDIR%%/manual_4.html
-%%PORTDOCS%%%%DOCSDIR%%/manual_toc.html
+%%PORTDOCS%%%%DOCSDIR%%/manual.xml
 %%PORTDOCS%%%%DOCSDIR%%/manual.html
-%%PORTDOCS%%%%DOCSDIR%%/manual_abt.html
-%%PORTDOCS%%%%DOCSDIR%%/manual_ovr.html
 %%PORTDOCS%%%%DOCSDIR%%/manual.pdf
 %%PORTDOCS%%%%DOCSDIR%%/bzip2.txt
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
