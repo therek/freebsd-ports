@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.736 2005/07/20 19:43:05 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.737 2005/07/21 08:43:12 trhodes Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -81,12 +81,15 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </body>
     </description>
     <references>
-      <url>http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=212762</url>
+      <cvename>CAN-2005-2335</cvename>
       <freebsdpr>ports/83805</freebsdpr>
+      <url>http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=212762</url>
+      <url>http://fetchmail.berlios.de/fetchmail-SA-2005-01.txt</url>
     </references>
     <dates>
       <discovery>2005-07-20</discovery>
       <entry>2005-07-20</entry>
+      <modified>2005-06-21</modified>
     </dates>
   </vuln>
 
