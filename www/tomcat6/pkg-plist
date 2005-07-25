@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/jakarta-tomcat55/pkg-plist,v 1.14 2004/12/17 03:15:06 hq Exp $
+@comment $FreeBSD: ports/www/jakarta-tomcat55/pkg-plist,v 1.15 2005/06/13 14:08:34 hq Exp $
 @unexec if cmp -s %D/%%T%%/conf/Catalina/localhost/host-manager.xml %D/%%T%%/conf/Catalina/localhost/host-manager.xml.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/Catalina/localhost/host-manager.xml; else echo If permanently deleting this package, %D/%%T%%/conf/Catalina/localhost/host-manager.xml must be removed manually; fi
 @unexec if cmp -s %D/%%T%%/conf/Catalina/localhost/manager.xml %D/%%T%%/conf/Catalina/localhost/manager.xml.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/Catalina/localhost/manager.xml; else echo If permanently deleting this package, %D/%%T%%/conf/Catalina/localhost/manager.xml must be removed manually; fi
 @unexec if cmp -s %D/%%T%%/conf/catalina.policy %D/%%T%%/conf/catalina.policy.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/catalina.policy; else echo If permanently deleting this package, %D/%%T%%/conf/catalina.policy must be removed manually; fi
@@ -30,6 +30,7 @@ etc/rc.d/020.jakarta-tomcat55.sh
 %%T%%/bin/commons-daemon.jar
 %%T%%/bin/commons-logging-api.jar
 %%T%%/bin/digest.sh
+%%JAVA14%%%%T%%/bin/jmx.jar
 %%T%%/bin/jsvc.tar.gz
 %%T%%/bin/setclasspath.sh
 %%T%%/bin/shutdown.sh
@@ -38,6 +39,8 @@ etc/rc.d/020.jakarta-tomcat55.sh
 %%T%%/bin/tool-wrapper.sh
 %%T%%/bin/version.sh
 %%T%%/common/classes/logging.properties
+%%JAVA14%%%%T%%/common/endorsed/xercesImpl.jar
+%%JAVA14%%%%T%%/common/endorsed/xml-apis.jar
 %%T%%/common/i18n/tomcat-i18n-en.jar
 %%T%%/common/i18n/tomcat-i18n-es.jar
 %%T%%/common/i18n/tomcat-i18n-fr.jar
