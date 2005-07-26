@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.744 2005/07/23 09:30:01 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.745 2005/07/25 15:57:46 hrs Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -2207,8 +2207,11 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	<name>bnc</name>
 	<name>dante</name>
 	<name>rinetd</name>
-	<name>bld</name>
 	<range><ge>0</ge></range>
+      </package>
+      <package>
+	<name>bld</name>
+	<range><lt>0.3.3</lt></range>
       </package>
     </affects>
     <description>
