@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav/files/clamav-milter.sh,v 1.5 2005/01/12 17:57:58 yar Exp $
+# $FreeBSD: ports/security/clamav/files/clamav-milter.sh.in,v 1.1 2005/05/13 08:16:40 jylefort Exp $
 #
 
 # PROVIDE: clamav-milter
@@ -41,6 +41,6 @@ start_precmd()
 load_rc_config $name
 : ${clamav_milter_enable="NO"}
 : ${clamav_milter_socket="%%CLAMAV_MILTER_SOCKET%%"}
-: ${clamav_milter_flags="--postmaster-only --local --outgoing --max-children=50"}
+: ${clamav_milter_flags="--postmaster-only --local --outgoing --timeout=0 --max-children=50"}
 
 run_rc_command "$1"
