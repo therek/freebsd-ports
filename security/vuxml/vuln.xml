@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.750 2005/07/27 17:21:35 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.751 2005/07/28 04:22:14 remko Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -38,7 +38,10 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <package>
 	<name>apache</name>
 	<range><lt>2.0.54_1</lt></range>
-	<range><lt>2.1.6_1</lt></range>
+	<range>
+          <gt>2.1.0</gt>
+          <lt>2.1.6_1</lt>
+        </range>
       </package>
       <package>
 	<name>apache+ipv6</name>
