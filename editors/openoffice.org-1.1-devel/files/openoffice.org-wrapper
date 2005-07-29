@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/editors/openoffice-1.1/files/openoffice-wrapper,v 1.14 2004/08/07 08:39:51 maho Exp $
+# $FreeBSD: ports/editors/openoffice-1.1-devel/files/openoffice-wrapper,v 1.14 2005/04/25 12:32:33 maho Exp $
 
 oopath=%%PREFIX%%/%%INSTALLATION_BASEDIR%%/program/
 program=`echo $0 | sed -e 's|.*-%%RELEASE_NR%%-||'`
