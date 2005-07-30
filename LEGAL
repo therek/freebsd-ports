@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.421 2005/07/20 18:47:36 glewis Exp $
+# $FreeBSD: ports/LEGAL,v 1.422 2005/07/29 07:27:07 barner Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -59,7 +59,6 @@ adstudio-novm.tar.gz	databases/adstudio	Free for personal or educational
 						required for all other usages
 altivore.c		security/altivore	No redistribution allowed
 apache*-ssl		www/apache13-ssl	Crypto; export-controlled
-apache/mod_tidy-*	www/mod_tidy		No license
 apache2/mod_taf_thief.c	www/mod_traf_thief	No license
 apple_pascal_0.dsk.gz	emulators/p-interp	Redistribution rights for Apple
 						Pascal disk images are unclear
