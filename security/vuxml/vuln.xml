@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.753 2005/07/30 08:26:06 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.754 2005/07/30 09:13:14 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -111,7 +111,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   </vuln>
 
   <vuln vid="5d51d245-00ca-11da-bc08-0001020eed82">
-    <topic>ethereal -- multiple vulnerabilities</topic>
+    <topic>ethereal -- multiple protocol dissectors vulnerabilities</topic>
     <affects>
       <package>
 	<name>ethereal</name>
