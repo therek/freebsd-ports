@@ -1,4 +1,4 @@
-$FreeBSD: ports/mail/dspam-devel/files/UPDATING,v 1.7 2005/05/09 15:55:42 vanilla Exp $
+$FreeBSD: ports/mail/dspam-devel/files/UPDATING,v 1.8 2005/05/16 11:29:41 jylefort Exp $
 
 This file documents some of the problems you may encounter when
 upgrading dspam port.  I will try my best to minimize these disruptions,
@@ -11,6 +11,23 @@ This file concetrate on the FreeBSD / port specific changes and one should read
 also the UPGRADING enclosed in the dspam distribution. You can see it by doing
 in the port directory:
 make extract;  more `find . -type f -maxdepth 2 -name UPGRADING`
+
+###########################################################################
+# dspam-devel-3.5.2.20050725.0800
+#
+
+Please read carefully distributed docs like README, UPGRADING and CHANGES.
+Notable new features:
+ LDAP Verification
+ Unified Spam Alias / UID in Signature Support
+ Integrated Clam A/V Support
+ Markovian Discrimination (CRM114)
+ CRM Sparse Spectra Storage Driver (css_drv)
+
+- drop local patch to put X-DSPAM-User in all emails.
+- some performance changes in PGSQL schema
+- BUGFIX: SQLITE purge scrip for 3.x
+
 
 ###########################################################################
 # dspam-devel-3.5.0.20050512.1145
