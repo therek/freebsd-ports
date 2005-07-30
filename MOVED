@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.724 2005/07/28 19:46:33 brooks Exp $
+# $FreeBSD: ports/MOVED,v 1.725 2005/07/29 01:01:41 perky Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1588,3 +1588,4 @@ x11/eweather||2005-07-18|did not work with update wmweather
 sysutils/sge|sysutils/sge53|2005-07-28|SGE 6 is being imported and is incompatable with 5.3
 sysutils/sgeee|sysutils/sgeee53|2005-07-28|SGE 6 is being imported and is incompatable with 5.3
 lang/stackless_python||2005-07-29|outdated and unmaintained
+x11-wm/rox-pager||2005-07-30|libwnck incompatibility; no new version available
