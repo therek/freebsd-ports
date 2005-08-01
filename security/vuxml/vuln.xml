@@ -28,10 +28,38 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.765 2005/07/31 15:00:54 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.766 2005/07/31 23:39:50 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="debbb39c-fdb3-11d9-a30d-00b0d09acbfc">
+    <topic>nbsmtp -- format string vulnerability</topic>
+    <affects>
+      <package>
+        <name>nbsmtp</name>
+        <range><lt>0.99_1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p>When nbsmtp is executed in debug mode, server messages
+        will be printed to stdout and logged via syslog. Syslog is
+        used insecurely and user-supplied format characters are
+        directly fed to the syslog function, which results in a
+        format string vulnerability.</p>
+        <p>Under some circumstances, an SMTP server may be able to
+        abuse this vulnerability in order to alter the nbsmtp
+        process and execute malicious code.</p>
+      </body>
+    </description>
+    <references>
+      <url>http://people.freebsd.org/~niels/issues/nbsmtp-20050726.txt</url>
+    </references>
+    <dates>
+      <discovery>2005-07-25</discovery>
+      <entry>2005-08-01</entry>
+    </dates>
+  </vuln>
   <vuln vid="b1e8c810-01d0-11da-bc08-0001020eed82">
     <topic>sylpheed -- MIME-encoded file name buffer overflow
       vulnerability</topic>
