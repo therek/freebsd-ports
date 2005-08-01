@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/print/pslib/pkg-plist,v 1.3 2005/07/28 15:42:29 garga Exp $
 include/libps/pslib-mp.h
 include/libps/pslib.h
 include/libps/psversion.h
@@ -6,8 +6,7 @@ lib/libps.a
 lib/libps.so
 lib/libps.so.2
 libdata/pkgconfig/libps.pc
-%%GETTEXT%%share/locale/de/LC_MESSAGES/pslib.mo
-%%GETTEXT%%@unexec rmdir %D/share/locale/de/LC_MESSAGES 2>/dev/null || true
+%%NLS%%share/locale/de/LC_MESSAGES/pslib.mo
 %%DATADIR%%/draft.ps
 %%DATADIR%%/exectime.ps
 %%DATADIR%%/grid.ps
