@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.768 2005/08/01 18:38:11 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.769 2005/08/03 11:58:12 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -149,6 +149,15 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	    encrypted messages, decrypt them, and then provide a
 	    response to the submitter, then this does not affect you
 	    at all.</p>
+	</blockquote>
+	<p>Note that the <q>fix</q> in GnuPG does note completely
+	  eliminate the potential problem:</p>
+	<blockquote cite="http://lists.gnupg.org/pipermail/gnupg-announce/2005q1/000191.html">
+	  <p>These patches disable a portion of the OpenPGP protocol
+	    that the attack is exploiting.  This change should not be
+	    user visible.  With the patch in place, this attack will
+	    not work using a public-key encrypted message.  It will
+	    still work using a passphrase-encrypted message.</p>
 	</blockquote>
       </body>
     </description>
