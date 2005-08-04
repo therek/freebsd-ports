@@ -24,7 +24,7 @@ upgrades.
   1.) Delete installed packages which conflict with the updated KDE
       ports.
 
-        pkg_deinstall -f kdeadmin-\[0-9\]*
+        pkg_deinstall -f kdeadmin-\[0-9\]\*
 
   2.) Now update the remaining KDE ports.
 
@@ -2334,4 +2334,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.214 2005/07/29 02:18:38 brooks Exp $
+$FreeBSD: ports/UPDATING,v 1.215 2005/08/04 19:58:56 lofi Exp $
