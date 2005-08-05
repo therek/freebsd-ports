@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.772 2005/08/04 15:56:53 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.773 2005/08/05 10:21:39 remko Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -38,7 +38,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <system>
 	<name>FreeBSD</name>
 	<range><ge>5.4</ge><lt>5.4_6</lt></range>
-	<range><ge>5.3</ge><lt>5.3_20</lt></range>
+	<range><ge>5.*</ge><lt>5.3_20</lt></range>
       </system>
     </affects>
     <description>
@@ -74,7 +74,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <system>
 	<name>FreeBSD</name>
 	<range><ge>5.4</ge><lt>5.4_6</lt></range>
-	<range><ge>5.3</ge><lt>5.4_20</lt></range>
+	<range><ge>5.3</ge><lt>5.3_20</lt></range>
       </system>
     </affects>
     <description>
@@ -108,7 +108,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <system>
 	<name>FreeBSD</name>
 	<range><ge>5.4</ge><lt>5.4_5</lt></range>
-	<range><ge>5.3</ge><lt>5.4_19</lt></range>
+	<range><ge>5.*</ge><lt>5.3_19</lt></range>
       </system>
     </affects>
     <description>
