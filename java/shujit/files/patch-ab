@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/java/shujit/files/patch-ab,v 1.5 2001/09/10 15:44:31 sobomax Exp $
 
 --- GNUmakefile.in.orig	Mon Sep  3 15:45:14 2001
 +++ GNUmakefile.in	Mon Sep 10 14:54:24 2001
@@ -10,9 +10,9 @@ $FreeBSD$
 -COPTFLAGS = -O2
  CFLAGS_OPT =
  CFLAGS_DBG = -g -DDEBUG -DJCOV
--NOOPTCFLAGS = -pipe -fPIC ${CFLAGS_${VARIANT}} ${CFLAGS_COMMON} ${INCDIR}
+-NOOPTCFLAGS = @ac_cflags@ -pipe ${CFLAGS_${VARIANT}} ${CFLAGS_COMMON} ${INCDIR}
 -CFLAGS = ${COPTFLAGS} ${NOOPTCFLAGS}
-+NOOPTCFLAGS = -fPIC ${CFLAGS_${VARIANT}} ${CFLAGS_COMMON} ${INCDIR}
++NOOPTCFLAGS = @ac_cflags@ ${CFLAGS_${VARIANT}} ${CFLAGS_COMMON} ${INCDIR}
 +CFLAGS += ${COPTFLAGS} ${NOOPTCFLAGS}
  LIBS =
  

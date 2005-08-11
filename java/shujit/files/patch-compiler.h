@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/java/shujit/files/patch-compiler.h,v 1.4 2003/02/17 15:20:08 sobomax Exp $
+$FreeBSD: ports/java/shujit/files/patch-compiler.h,v 1.5 2003/07/08 08:48:57 des Exp $
 
 --- compiler.h	2003/02/16 00:04:39	1.1
 +++ compiler.h	2003/02/16 00:05:09
@@ -7,7 +7,7 @@ $FreeBSD: ports/java/shujit/files/patch-compiler.h,v 1.4 2003/02/17 15:20:08 sob
  
  // Additional type definition
  
--#if !(defined(_ILP32) || defined(_LP64) || defined(_SYS_INTTYPES_H_) /* for FreeBSD */)
+-#if !(defined(_ILP32) || defined(_LP64) || defined(_STDINT_H) || defined(_SYS_INTTYPES_H_) /* for FreeBSD */)
 +#if !(defined(_ILP32) || defined(_LP64) || defined(__FreeBSD__))
  #  ifndef _UINT16_T
  #    define _UINT16_T
