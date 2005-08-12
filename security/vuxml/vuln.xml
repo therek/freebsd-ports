@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.781 2005/08/12 11:26:44 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.782 2005/08/12 14:21:10 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -51,12 +51,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	<range><lt>1.6r3,1</lt></range>
       </package>
       <package>
-	<name>pl-gnugadu2</name>
-	<range><lt>2.2.8</lt></range>
-      </package>
-      <package>
 	<name>centericq</name>
-	<name>kadu</name>
 	<name>pl-gnugadu</name>
 	<range><gt>0</gt></range>
       </package>
