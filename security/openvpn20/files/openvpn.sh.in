@@ -7,7 +7,7 @@
 #
 # Made in Northrhine-Westphalia, Germany
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/openvpn/files/openvpn.sh.in,v 1.1 2005/08/19 18:48:34 garga Exp $
 # 
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -37,8 +37,8 @@
 #
 # # optional:
 # openvpn_flags=""	# openvpn command line flags
-# openvpn_config="%%PREFIX%%/etc/openvpn/openvpn.conf" 	# --config file
-# openvpn_dir="%%PREFIX%%/etc/openvpn"			# --cd directory
+# openvpn_configfile="%%PREFIX%%/etc/openvpn/openvpn.conf" 	# --config file
+# openvpn_dir="%%PREFIX%%/etc/openvpn"				# --cd directory
 #
 # You also need to set openvpn_configfile and openvpn_dir, if the configuration
 # file and directory where keys and certificates reside differ from the above
