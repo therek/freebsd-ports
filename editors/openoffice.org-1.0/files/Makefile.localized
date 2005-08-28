@@ -1,6 +1,6 @@
 # localized makefile
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: ports/editors/openoffice-1.0/files/Makefile.localized,v 1.1 2005/07/29 02:16:38 maho Exp $
 
 ################################################################
 # consult oo_1.0.3_src/config_office/set_soenv.in for
@@ -44,7 +44,6 @@ LANG_CONFIGURE_ARG=     DAN
 .if ${LOCALIZED_LANG} == "nl"
 LANG_PKGNAME=	nl
 LANG_EXT=	31
-L10NHELP=	helpcontent_${LANG_EXT}_unix.tgz
 LANG_CONFIGURE_ARG=	DTCH
 .endif
 ################################################################
