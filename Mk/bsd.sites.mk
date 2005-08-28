@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.297 2005/07/31 22:46:04 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.298 2005/08/02 07:26:30 delphij Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1535,7 +1535,6 @@ MASTER_SITE_XEMACS+= \
 MASTER_SITE_XFREE+= \
 	http://www.gtlib.cc.gatech.edu/pub/XFree86/%SUBDIR%/source/ \
 	ftp://ftp.xfree86.org/pub/XFree86/%SUBDIR%/source/ \
-	ftp://ftp.rge.com/pub/X/XFree86/%SUBDIR%/source/ \
 	ftp://archive.progeny.com/XFree86/%SUBDIR%/source/ \
 	ftp://ftp.mirrorcentral.com/pub/XFree86/%SUBDIR%/source/ \
 	ftp://ftp.dti.ad.jp/pub/X/XFree86/XFree86/%SUBDIR%/source/ \
