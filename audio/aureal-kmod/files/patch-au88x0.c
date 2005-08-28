@@ -1,8 +1,8 @@
 
-$FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.5 2004/08/04 21:15:37 sf Exp $
+$FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.6 2005/02/01 22:16:01 sf Exp $
 
 --- au88x0.c.orig	Fri May 10 10:32:55 2002
-+++ au88x0.c	Thu Aug  5 05:44:30 2004
++++ au88x0.c	Sun Aug  7 18:14:57 2005
 @@ -29,10 +29,16 @@
   */
  
@@ -20,7 +20,7 @@ $FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.5 2004/08/04 21:15:37
 +#endif
  #include <sys/queue.h>
  
- SND_DECLARE_FILE("$FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.5 2004/08/04 21:15:37 sf Exp $");
+ SND_DECLARE_FILE("$FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.6 2005/02/01 22:16:01 sf Exp $");
 @@ -573,7 +579,7 @@
  	ch->channel = c;
  	ch->buffer = b;
@@ -30,6 +30,24 @@ $FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.5 2004/08/04 21:15:37
  		printf("sndbuf_alloc failed\n");
  		return NULL;
  	}
+@@ -768,7 +774,7 @@
+ 	}
+ 
+ 	if (s) device_set_desc(dev, s);
+-	return s ? 0 : ENXIO;
++	return s ? BUS_PROBE_DEFAULT : ENXIO;
+ }
+ 
+ static int
+@@ -802,7 +808,7 @@
+ 	data = pci_read_config(dev, PCIR_COMMAND, 2);
+ 
+ 	for (i = 0; i < 3; i++) {
+-		au->regid[i] = PCIR_MAPS + i*4;
++		au->regid[i] = PCIR_BAR(i);
+ 		au->regtype[i] = SYS_RES_MEMORY;
+ 		au->reg[i] = bus_alloc_resource(dev, au->regtype[i], &au->regid[i], 0, ~0, 1, RF_ACTIVE);
+ 		if (!au->reg[i]) {
 @@ -852,7 +858,11 @@
  		/*highaddr*/BUS_SPACE_MAXADDR,
  		/*filter*/NULL, /*filterarg*/NULL,
