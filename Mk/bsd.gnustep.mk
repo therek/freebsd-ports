@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.17 2005/01/09 10:12:07 krion Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.18 2005/07/27 17:13:46 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -69,7 +69,7 @@ GNU_ARCH=	${MACHINE_ARCH}
 .endif
 
 SYSTEMDIR=	${PREFIX}/System
-SYSMAKEDIR=	${SYSTEMDIR}/Makefiles
+SYSMAKEDIR=	${SYSTEMDIR}/Library/Makefiles
 BUNDLEDIR=	${SYSTEMDIR}/Library/Bundles
 SYSLIBDIR=	${SYSTEMDIR}/Library/Libraries
 COMBOLIBDIR=	${SYSTEMDIR}/Library/Libraries
