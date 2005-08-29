@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.731 2005/08/18 01:09:25 kris Exp $
+# $FreeBSD: ports/MOVED,v 1.732 2005/08/29 01:29:56 maho Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1598,3 +1598,4 @@ editors/openoffice-1.0|editors/openoffice.org-1.0|2005-08-29|port should have a 
 editors/openoffice-1.1|editors/openoffice.org-1.1|2005-08-29|port should have a correct PORTNAME
 editors/openoffice-1.1-devel|editors/openoffice.org-1.1-devel|2005-08-29|port should have a correct PORTNAME
 editors/openoffice-2.0-devel|editors/openoffice.org-2.0-devel|2005-08-29|port should have a correct PORTNAME
+shells/zsh-devel|shells/zsh|2005-08-29|Development version of Zsh is no longer being released
