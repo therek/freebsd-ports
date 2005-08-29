@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/lighttpd/files/lighttpd.sh.tmpl,v 1.2 2004/08/12 02:50:27 vanilla Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: lighttpd
