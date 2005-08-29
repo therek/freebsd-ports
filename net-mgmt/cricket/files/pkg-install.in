@@ -1,6 +1,11 @@
 #!/bin/sh
-# $FreeBSD: ports/net-mgmt/cricket/pkg-install,v 1.1 2002/06/08 22:25:17 petef Exp $
+# $FreeBSD: ports/net-mgmt/cricket/pkg-install,v 1.2 2004/11/09 12:59:01 ijliao Exp $
 #
+
+GROUP=%%GROUP%%
+USER=%%USER%%
+UID=%%UID%%
+GID=%%GID%%
 
 if [ "$2" != "PRE-INSTALL" ]; then
 	exit 0
