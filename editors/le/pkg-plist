@@ -1,10 +1,5 @@
-@comment $FreeBSD: ports/editors/le/pkg-plist,v 1.10 2002/08/23 08:16:55 kevlo Exp $
+@comment $FreeBSD: ports/editors/le/pkg-plist,v 1.11 2005/05/03 08:59:28 krion Exp $
 bin/le
-%%PORTDOCS%%%%DOCSDIR%%/FEATURES
-%%PORTDOCS%%%%DOCSDIR%%/HISTORY
-%%PORTDOCS%%%%DOCSDIR%%/NEWS
-%%PORTDOCS%%%%DOCSDIR%%/README
-%%PORTDOCS%%%%DOCSDIR%%/TODO
 %%DATADIR%%/colors-black
 %%DATADIR%%/colors-blue
 %%DATADIR%%/colors-defbg
@@ -16,4 +11,3 @@ bin/le
 %%DATADIR%%/mainmenu-ru
 %%DATADIR%%/syntax
 @dirrm %%DATADIR%%
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
