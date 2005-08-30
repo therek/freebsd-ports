@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/balance/files/balance.sh,v 1.1 2003/11/22 20:49:09 eik Exp $
+# $FreeBSD: ports/net/balance/files/balance.sh,v 1.2 2005/02/20 23:41:49 pav Exp $
 #
 
 # PROVIDE: balance
