@@ -1,4 +1,6 @@
-@comment $FreeBSD: ports/devel/bglibs/pkg-plist,v 1.9 2004/11/18 17:31:02 sergei Exp $
+@comment $FreeBSD: ports/devel/bglibs/pkg-plist,v 1.10 2005/08/29 12:14:46 sergei Exp $
+bin/bg-installer
+bin/crc-gentab
 include/bglibs/adt/common.h
 include/bglibs/adt/ghash.h
 include/bglibs/adt/gqueue.h
