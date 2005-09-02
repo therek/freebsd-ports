@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050902:
+  AFFECTS: users of mail/postfix-current
+  AUTHOR: marcus@corp.grupos.com.br
+
+  Now mail/postfix-current use OPTIONS menu instead of 
+  POSTFIX_OPTIONS batch. Please run "make config" and
+  select your options in menu.
+
 20050828:
   AFFECTS: users of net/py-bittorrent-devel and net/py-bittorrent-core-devel
   AUTHOR: lioux@FreeBSD.org
@@ -2354,4 +2362,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.216 2005/08/04 20:55:25 lofi Exp $
+$FreeBSD: ports/UPDATING,v 1.217 2005/08/28 18:24:31 lioux Exp $
