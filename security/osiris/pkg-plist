@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/security/osiris/pkg-plist,v 1.6 2005/02/08 15:41:07 pav Exp $
+@comment $FreeBSD: ports/security/osiris/pkg-plist,v 1.7 2005/03/12 08:26:59 sem Exp $
 %%CLI%%sbin/osiris
+%%PRINTDB%%bin/printdb
 %%OSIRISD%%sbin/osirisd
 %%OSIRISMD%%sbin/osirismd
 %%OSIRISD%%etc/rc.d/osirisd.sh
