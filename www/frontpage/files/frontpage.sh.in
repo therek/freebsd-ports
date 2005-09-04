@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/frontpage/files/frontpage.sh.in,v 1.1 2005/02/09 20:11:11 pav Exp $
 
 # PROVIDE: frontpage
 # REQUIRE: DAEMON
@@ -22,7 +22,7 @@
 frontpage_key() {
 
 	CUR_UMASK=`umask`
-	skdir=${prefix}/frontpage/version%%FP_VER%%/apache-fp
+	skdir=%%PREFIX%%/frontpage/version%%FP_VER%%/apache-fp
 	PERL=%%PERL5%%
 
 	# Alternate way of generating the suidkey file with out PERL
