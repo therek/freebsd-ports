@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.300 2005/08/30 14:38:13 sem Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.301 2005/09/04 21:19:56 lofi Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1124,7 +1124,7 @@ MASTER_SITE_QMAIL+= \
 
 .if !defined(IGNORE_MASTER_SITE_QT)
 MASTER_SITE_QT+= \
-	ftp://sunsite.rediris.es/mirror/Qt/qt/source/%SUBDIR%/ \
+	ftp://sunsite.rediris.es/mirror/Qt/source/%SUBDIR%/ \
 	ftp://ftp.iasi.roedu.net/mirrors/ftp.trolltech.com/qt/sources/%SUBDIR%/ \
 	ftp://ftp.ntua.gr/pub/X11/Qt/qt/source/%SUBDIR%/ \
 	ftp://ftp.tu-chemnitz.de/pub/Qt/qt/source/%SUBDIR%/ \
