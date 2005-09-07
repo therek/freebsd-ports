@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050907:
+  AFFECTS: users of databases/metakit
+  AUTHOR: adamw@FreeBSD.org
+
+  The metakit build now enables python support by default. Everybody who
+  was happy with their python-less metakit should begin specifying
+  METAKIT_WITHOUT_PYTHON=yes on build.
+
 20050904:
   AFFECTS: users of games/pvpgn
   AUTHOR: mek@mek.uz.ua
@@ -2385,4 +2393,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.221 2005/09/04 15:19:07 krion Exp $
+$FreeBSD: ports/UPDATING,v 1.222 2005/09/04 15:24:58 krion Exp $
