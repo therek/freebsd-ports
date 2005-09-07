@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/runit/files/runsvdir.sh.in,v 1.2 2005/02/27 12:06:59 sergei Exp $
+# $FreeBSD: ports/sysutils/runit/files/runsvdir.sh.in,v 1.3 2005/07/22 05:28:53 sergei Exp $
 #
 
 # PROVIDE: /service
@@ -11,7 +11,7 @@
 # Add the following lines to /etc/rc.conf to enable `runsvdir':
 #
 #runsvdir_enable="YES"		(default: NO)
-#runsvdir_path="/service"	(default: /var/service)
+#runsvdir_path="/service"	(default: %%SERVICE_DIR%%)
 #
 
 . "/etc/rc.subr"
@@ -28,9 +28,9 @@ runsvdir_start()
 {
 	/bin/test -d ${runsvdir_path} || /bin/mkdir -p ${runsvdir_path}
 	/usr/bin/env -i \
-		PATH=/command:%%PREFIX%%/sbin:%%PREFIX%%/bin:/sbin:/bin:/usr/sbin:/usr/bin \
-		/usr/sbin/daemon \
-		${command} ${runsvdir_path}
+	PATH=/command:%%PREFIX%%/sbin:%%PREFIX%%/bin:/sbin:/bin:/usr/sbin:/usr/bin \
+	/usr/sbin/daemon \
+	${command} ${runsvdir_path}
 }
 
 runsvdir_post_stop()
@@ -41,6 +41,6 @@ runsvdir_post_stop()
 # read configuration and set defaults
 load_rc_config "$name"
 : ${runsvdir_enable="NO"}
-: ${runsvdir_path="/var/service"}
+: ${runsvdir_path="%%SERVICE_DIR%%"}
 
 run_rc_command "$1"
