@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.811 2005/09/04 15:16:52 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.812 2005/09/04 15:24:56 remko Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -845,7 +845,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </package>
       <package>
 	<name>cups-base</name>
-	<range><gt>0</gt></range>
+	<range><lt>1.1.23.0_5</lt></range>
       </package>
     </affects>
     <description>
@@ -869,7 +869,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <dates>
       <discovery>2005-08-09</discovery>
       <entry>2005-08-12</entry>
-      <modified>2005-08-16</modified>
+      <modified>2005-09-07</modified>
     </dates>
   </vuln>
 
