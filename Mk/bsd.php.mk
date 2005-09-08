@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.15 2005/04/04 09:20:19 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.16 2005/07/13 19:56:27 ale Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -168,12 +168,7 @@ PLIST_SUB+=	PHP_EXT_DIR=${PHP_EXT_DIR}
 .if defined(USE_PHPIZE) || defined(USE_PHPEXT)
 BUILD_DEPENDS+=	phpize:${PHP_PORT}
 GNU_CONFIGURE=	YES
-.if ${PHP_VER} == 4
 WANT_AUTOCONF_VER=	259
-.else
-WANT_AUTOMAKE_VER=	15
-WANT_AUTOCONF_VER=	253
-.endif
 CONFIGURE_ARGS+=--with-php-config=${LOCALBASE}/bin/php-config
 
 configure-message: phpize-message do-phpize
