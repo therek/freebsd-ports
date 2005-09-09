@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/cad/xcircuit/pkg-plist,v 1.16 2004/04/02 19:00:08 krion Exp $
+@comment $FreeBSD: ports/cad/xcircuit/pkg-plist,v 1.17 2005/06/27 02:46:59 ahze Exp $
 bin/xcircuit
 lib/X11/app-defaults/XCircuit
 lib/X11/xcircuit/analog.lps
@@ -105,7 +105,6 @@ lib/X11/xcircuit/xcstartup.tcl
 %%PORTDOCS%%%%EXAMPLESDIR%%/diffamp_test3.ps
 %%PORTDOCS%%%%EXAMPLESDIR%%/envelope.ps
 %%PORTDOCS%%%%EXAMPLESDIR%%/fourttest.ps
-%%PORTDOCS%%%%EXAMPLESDIR%%/logic.fspc
 %%PORTDOCS%%%%EXAMPLESDIR%%/logic.sim
 %%PORTDOCS%%%%EXAMPLESDIR%%/logic8.ps
 %%PORTDOCS%%%%EXAMPLESDIR%%/prelude.ps
