@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.304 2005/09/11 08:20:43 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.305 2005/09/11 13:44:25 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1467,10 +1467,8 @@ MASTER_SITE_VIM+= \
 MASTER_SITE_WINDOWMAKER+= \
 	ftp://ftp.windowmaker.org/pub/%SUBDIR%/ \
 	ftp://ftp.minet.net/pub/windowmaker/%SUBDIR%/ \
-	ftp://ftp.zcu.cz/pub/X11/windowmaker/%SUBDIR%/ \
 	ftp://ftp.informatik.uni-hamburg.de/pub/soft/X/contrib/window_managers/windowmaker/%SUBDIR%/ \
 	ftp://ftp.uvsq.fr/pub8/X11/window-managers/windowmaker/%SUBDIR%/ \
-	ftp://ftp.maisel.int-evry.fr/pub/windowmaker/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/X/WindowMaker/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/X11/windowmanagers/windowmaker/%SUBDIR%/
 .endif
