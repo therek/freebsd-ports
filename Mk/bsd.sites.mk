@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.303 2005/09/11 00:24:14 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.304 2005/09/11 08:20:43 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1533,11 +1533,9 @@ MASTER_SITE_XFREE+= \
 	http://www.gtlib.cc.gatech.edu/pub/XFree86/%SUBDIR%/source/ \
 	ftp://ftp.xfree86.org/pub/XFree86/%SUBDIR%/source/ \
 	ftp://archive.progeny.com/XFree86/%SUBDIR%/source/ \
-	ftp://ftp.mirrorcentral.com/pub/XFree86/%SUBDIR%/source/ \
 	ftp://ftp.dti.ad.jp/pub/X/XFree86/XFree86/%SUBDIR%/source/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,XFree86/&/source,} \
 	ftp://ftp.fit.vutbr.cz/pub/XFree86/%SUBDIR%/source/ \
-	ftp://ftp.free.fr/pub/XFree86/%SUBDIR%/source/ \
 	ftp://mir1.ovh.net/ftp.xfree86.org/%SUBDIR%/source/ \
 	ftp://ftp.lami.univ-evry.fr/XFree86/%SUBDIR%/source/ \
 	ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/%SUBDIR%/source/ \
