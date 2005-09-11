@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.305 2005/09/11 13:44:25 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.306 2005/09/11 19:31:03 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -490,7 +490,6 @@ MASTER_SITE_GCC+=	\
 	ftp://ftp.iij.ad.jp/pub/gcc/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/lang/gcc/%SUBDIR%/ \
 	ftp://ring.aist.go.jp/pub/GNU/gcc/%SUBDIR%/ \
-	ftp://ring.etl.go.jp/pub/lang/egcs/%SUBDIR%/ \
 	ftp://ring.crl.go.jp/pub/GNU/gcc/%SUBDIR%/ \
 	ftp://core.ring.gr.jp/pub/GNU/gcc/%SUBDIR%/ \
 	ftp://ftp.ring.gr.jp/pub/GNU/gcc/%SUBDIR%/ \
