@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050911:
+  AFFECTS: users of mail/libspf2, mail/postfix, mail/postfix21, mail/postfix-policyd-spf, mail/exim
+  AUTHOR: marcus@corp.grupos.com.br
+
+  Now version 1.0.4 of libspf2 has repo copied from mail/libspf2 to
+  mail/libspf2-10 and mail/libspf2 has updated to 1.2.5.
+  mail/exim depends on mail/libspf2 and mail/postfix, mail/postfix21
+  and mail/postfix-policyd-spf depends on mail/libspf2-10.
+
 20050907:
   AFFECTS: users of databases/metakit
   AUTHOR: adamw@FreeBSD.org
@@ -2393,4 +2402,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.222 2005/09/04 15:24:58 krion Exp $
+$FreeBSD: ports/UPDATING,v 1.223 2005/09/07 15:21:39 adamw Exp $
