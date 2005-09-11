@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.301 2005/09/04 21:19:56 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.302 2005/09/06 09:19:36 lofi Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1274,7 +1274,6 @@ MASTER_SITE_SUNSITE+=	\
 	ftp://ftp.nvg.ntnu.no/pub/mirrors/metalab.unc.edu/%SUBDIR%/ \
 	ftp://ftp.icm.edu.pl/pub/Linux/sunsite/%SUBDIR%/ \
 	ftp://ftp.cse.cuhk.edu.hk/pub4/Linux/%SUBDIR%/ \
-	ftp://ftp.kobe-u.ac.jp/pub/Linux/metalab.unc.edu/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/Linux/metalab.unc.edu/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/Linux/sunsite/%SUBDIR%/
 .endif
