@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/japanese/acroread/pkg-plist,v 1.1 2005/06/05 07:40:33 hrs Exp $
+@comment $FreeBSD: ports/japanese/acroread/pkg-plist,v 1.2 2005/06/06 08:17:10 hrs Exp $
 bin/acroread
 %%ACRODIR%%/bin/acroread
 %%ACRODIR%%/Reader/help/JPN/README
@@ -390,6 +390,7 @@ bin/acroread
 %%ACRODIR%%/Browser/intellinux/nppdf.so
 %%ACRODIR%%/Browser/install_browser_plugin
 %%ACRODIR%%/Browser/Browser_Plugin_HowTo.txt
+%%PLUGINDIR%%/nppdf.so
 @dirrm %%ACRODIR%%/bin
 @dirrm %%ACRODIR%%/Resource/Support
 @dirrm %%ACRODIR%%/Resource/Linguistics/Providers/Proximity
