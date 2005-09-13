@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/gnats4/pkg-plist,v 1.1 2003/09/20 13:16:46 des Exp $
+@comment $FreeBSD: ports/databases/gnats4/pkg-plist,v 1.2 2003/10/09 01:17:43 des Exp $
 bin/edit-pr
 bin/getclose
 bin/install-sid
@@ -18,6 +18,7 @@ etc/gnats/defaults/gnatsd.user_access
 etc/gnats/defaults/responsible
 etc/gnats/defaults/states
 etc/gnats/defaults/submitters
+etc/gnats/send-pr.conf
 @dirrm etc/gnats/defaults
 @unexec rmdir %D/etc/gnats 2>/dev/null || true
 %%SERVER%%libexec/gnats/at-pr
