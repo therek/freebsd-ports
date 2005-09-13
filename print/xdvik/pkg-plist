@@ -1,4 +1,5 @@
-@comment $FreeBSD: ports/print/xdvik/pkg-plist,v 1.7 2004/12/21 19:42:33 hrs Exp $
+@comment $FreeBSD: ports/print/xdvik/pkg-plist,v 1.8 2005/02/06 13:55:24 hrs Exp $
+bin/oxdvi
 bin/xdvi
 bin/xdvi-motif.bin
 bin/xdvizilla
