@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.749 2005/09/12 10:19:15 vs Exp $
+# $FreeBSD: ports/MOVED,v 1.750 2005/09/14 15:38:49 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1620,3 +1620,4 @@ multimedia/ldvd9to5|multimedia/ldvd|2005-09-10|project renamed
 japanese/mendexk-sjis|japanese/mendexk-euc|2005-09-11|obsolete
 lang/ghc6-doc|lang/ghc-doc|2005-09-12|relocated
 textproc/gauche-sxml|lang/gauche|2005-09-14|sxml now comes with gauche
+graphics/mgp-gallery||2005-09-15|disappeared from web
