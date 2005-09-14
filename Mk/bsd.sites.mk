@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.306 2005/09/11 19:31:03 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.307 2005/09/11 22:11:27 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -99,10 +99,7 @@ MASTER_SITE_APACHE_XML+=	\
 .if !defined(IGNORE_MASTER_SITE_COMP_SOURCES)
 MASTER_SITE_COMP_SOURCES+=	\
 	ftp://gatekeeper.dec.com/pub/usenet/comp.sources.%SUBDIR%/ \
-	ftp://ftp.kddlabs.co.jp/Unix/com.sources.%SUBDIR%/ \
-	ftp://ftp.uu.net/usenet/comp.sources.%SUBDIR%/ \
-	ftp://ftp.funet.fi/pub/archive/comp.sources.%SUBDIR%/ \
-	ftp://rtfm.mit.edu/pub/usenet/comp.sources.%SUBDIR%/
+	ftp://ftp.uu.net/usenet/comp.sources.%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_DEBIAN)
