@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.422 2005/07/29 07:27:07 barner Exp $
+# $FreeBSD: ports/LEGAL,v 1.423 2005/07/30 22:42:53 clement Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -649,3 +649,4 @@ zh-moettf/*		chinese/moettf		Contact Taiwan Ministry of
 NTU*.TTF		chinese/ntuttf		No commercial use
 ztelnet-*		net/ztelnet		zmodem code has restrictive
 						copyright
+armyops*-linux.run	games/linux-americasarmy Redistribution is limited
