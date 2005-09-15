@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.10 2005/07/06 15:04:57 kwm Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.11 2005/09/08 18:32:00 kwm Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -205,6 +205,7 @@ mplex_DEPENDS=	multimedia/gstreamer-plugins-mplex
 theora_DEPENDS=	multimedia/gstreamer-plugins-theora
 
 x264_DEPENDS=	multimedia/gstreamer-plugins-x264
+x264_PLIST=	libx264
 
 xvid_DEPENDS=	multimedia/gstreamer-plugins-xvid
 
