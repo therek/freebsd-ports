@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.515 2005/06/24 09:18:54 tobez Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.516 2005/08/28 18:47:56 ale Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1482,7 +1482,7 @@ LIB_DEPENDS+=		ldap-2.2.7:${PORTSDIR}/net/openldap22${_OPENLDAP_FLAVOUR}-client
 .elif ${WANT_OPENLDAP_VER} == 21
 LIB_DEPENDS+=		ldap.2:${PORTSDIR}/net/openldap21${_OPENLDAP_FLAVOUR}-client
 .elif ${WANT_OPENLDAP_VER} == 23
-LIB_DEPENDS+=		ldap-2.3.0:${PORTSDIR}/net/openldap23${_OPENLDAP_FLAVOUR}-client
+LIB_DEPENDS+=		ldap-2.3.1:${PORTSDIR}/net/openldap23${_OPENLDAP_FLAVOUR}-client
 .else
 BROKEN=				"unknown OpenLDAP version: ${WANT_OPENLDAP_VER}"
 .endif
