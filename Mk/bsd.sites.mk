@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.309 2005/09/17 03:07:49 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.310 2005/09/17 05:25:48 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -370,7 +370,7 @@ MASTER_SITE_FEDORA_LINUX+= \
 	ftp://ftp.rhd.ru/pub/fedora/linux/core/%SUBDIR%/ \
 	http://ftp.mrtech.ru/pub/mirror/fedora/linux/core/%SUBDIR%/ \
 	ftp://ftp.mrtech.ru/pub/mirror/fedora/linux/core/%SUBDIR%/ \
-	http://fedora.officepark.ru%SUBDIR%/ \
+	http://fedora.officepark.ru/%SUBDIR%/ \
 	ftp://fedora.officepark.ru/%SUBDIR%/ \
 	http://mirror.etf.bg.ac.yu/fedora/linux/core/%SUBDIR%/ \
 	ftp://mirror.etf.bg.ac.yu/fedora/linux/core/%SUBDIR%/ \
