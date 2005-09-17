@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.307 2005/09/11 22:11:27 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.308 2005/09/14 08:27:42 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1249,9 +1249,7 @@ MASTER_SITE_SOURCEWARE+= \
 	http://mirrors.rcn.net/pub/sourceware/%SUBDIR%/ \
 	ftp://mirrors.rcn.net/pub/sourceware/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/mirrors/sources.redhat.com/pub/%SUBDIR%/ \
-	ftp://ftp1.sinica.edu.tw/pub3/GNU/CYGNUS/%SUBDIR%/ \
-	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/sources.redhat.com/%SUBDIR%/ \
-	http://sourceware.urc.bl.ac.yu/%SUBDIR%/
+	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/sources.redhat.com/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_SUNSITE)
