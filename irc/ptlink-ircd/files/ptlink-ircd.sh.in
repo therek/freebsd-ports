@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/ptlink-ircd/files/ptlink-ircd.sh.in,v 1.1 2005/09/18 15:02:03 pav Exp $
 #
 
 # PROVIDE: ircd
@@ -9,17 +9,17 @@
 
 # Add the following line(s) to /etc/rc.conf:
 # ircd_enable (bool): Set to "NO" by default, set it to "YES" to enable ircd
-# ircd_user (str): Default to "%%USER%%"
+# ircd_user (str): Default to "ircd"
 
 ircd_enable=${ircd_enable-"NO"}
 ircd_user=${ircd_user-"ircd"}
 
-. /etc/rc.subr
+. %%RC_SUBR%%
 
 name="ircd"
 rcvar=`set_rcvar`
-pidfile="/usr/local/etc/ptlink-ircd/ircd.pid"
-command="/usr/local/bin/ircd"
+pidfile="%%PREFIX%%/etc/ptlink-ircd/ircd.pid"
+command="%%PREFIX%%/bin/ircd"
 
 load_rc_config "$name"
 run_rc_command "$1"
