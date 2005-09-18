@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/devhelp/files/devhelp.sh,v 1.1 2005/06/18 12:23:25 kwm Exp $
 #
 # PROVIDE: devhelp
 # REQUIRE: ldconfig
@@ -13,7 +13,7 @@ name=devhelp
 start_cmd=devhelp_start
 stop_cmd=:
 
-[ -z "$devhelp_libdir" ] && devhelp_libdir="%%X11BASE%%/lib/%%MOZILLA%%"
+[ -z "$devhelp_libdir" ] && devhelp_libdir="%%PREFIX%%/lib/%%MOZILLA%%"
 
 devhelp_start() {
     if [ -d "$devhelp_libdir" ]; then
