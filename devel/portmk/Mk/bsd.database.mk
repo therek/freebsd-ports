@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/portmk/Mk/bsd.database.mk,v 1.1 2005/09/18 20:34:11 clement Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -63,7 +63,7 @@ DEFAULT_MYSQL_VER?=	41
 MYSQL323_LIBVER=	10
 MYSQL40_LIBVER=		12
 MYSQL41_LIBVER=		14
-MYSQL50_LIBVER=		14
+MYSQL50_LIBVER=		15
 
 # Setting/finding MySQL version we want.
 .if exists(${LOCALBASE}/bin/mysql)
