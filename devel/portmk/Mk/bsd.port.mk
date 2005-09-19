@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/portmk/Mk/bsd.port.mk,v 1.2 2005/09/18 20:34:11 clement Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1343,7 +1343,7 @@ PERL=		${LOCALBASE}/bin/perl
 .include "${DEVELMKDIR}/bsd.tcl.mk"
 .endif
 
-.if defined(USE_APACHE)
+.if defined(USE_APACHE) || defined(APACHE_COMPAT)
 .include "${DEVELMKDIR}/bsd.apache.mk"
 .endif
 
@@ -1763,7 +1763,7 @@ RUN_DEPENDS+=	${PERL5}:${PORTSDIR}/lang/${PERL_PORT}
 .include "${DEVELMKDIR}/bsd.tcl.mk"
 .endif
 
-.if defined(USE_APACHE)
+.if defined(USE_APACHE) || defined(APACHE_COMPAT)
 .include "${DEVELMKDIR}/bsd.apache.mk"
 .endif
 
