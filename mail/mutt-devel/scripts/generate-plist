@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.33 2005/08/29 10:13:59 garga Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.34 2005/09/18 21:06:43 pav Exp $
 #
 # set -x
 
@@ -130,6 +130,9 @@ EOF
     echo "%%DOCSDIR%%/html/mimesupport.html" >> $tmp_first
     echo "%%DOCSDIR%%/html/miscellany.html" >> $tmp_first
     echo "%%DOCSDIR%%/html/reference.html" >> $tmp_first
+    if [ "$MUTT_COMPRESSED_FOLDERS" = "yes" ]; then
+      echo "%%DOCSDIR%%/html/compressed-folders.html" >> $tmp_first
+    fi
     echo "@dirrm %%DOCSDIR%%/html" >> $tmp_last
   fi
   cat >> $tmp_last <<EOF
