@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/devel/portmk/Mk/bsd.port.mk,v 1.2 2005/09/18 20:34:11 clement Exp $
+# $FreeBSD: ports/devel/portmk/Mk/bsd.port.mk,v 1.3 2005/09/19 08:57:43 clement Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1419,9 +1419,6 @@ SUB_LIST+=	PREFIX=${PREFIX} LOCALBASE=${LOCALBASE} X11BASE=${X11BASE}	\
 CFLAGS:=	${CFLAGS:C/${_CPUCFLAGS}//}
 .endif
 .endif
-.endif
-.if ${CFLAGS:M-O[23s]} != ""
-CFLAGS+= -fno-strict-aliasing
 .endif
 
 .if defined(NOPORTDOCS)
