@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.820 2005/09/19 16:12:06 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.821 2005/09/21 21:15:51 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -389,7 +389,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <topic>bind -- buffer overrun vulnerability</topic>
     <affects>
       <package>
-	<name>bind</name>
+	<name>bind84</name>
 	<range><ge>8.4.4</ge><lt>8.4.6</lt></range>
       </package>
     </affects>
@@ -410,6 +410,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <dates>
       <discovery>2005-01-25</discovery>
       <entry>2005-09-03</entry>
+      <modified>2005-09-21</modified>
     </dates>
   </vuln>
 
