@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/clamav/pkg-plist,v 1.23 2005/06/22 10:49:00 jylefort Exp $
+@comment $FreeBSD: ports/security/clamav/pkg-plist,v 1.24 2005/06/28 14:03:45 lawrance Exp $
 %%CLAMAV-MILTER%%@unexec [ ! -f %%RUNDIR%%/clamav-milter.pid ] || %%RC_DIR%%/clamav-milter%%RC_SUFX%% stop || true
 @unexec [ ! -f %%RUNDIR%%/freshclam.pid ] || %%RC_DIR%%/clamav-freshclam%%RC_SUFX%% stop || true
 @unexec [ ! -f %%RUNDIR%%/clamd.pid ] || %%RC_DIR%%/clamav-clamd%%RC_SUFX%% stop || true
@@ -23,8 +23,8 @@ etc/clamd.conf.default
 @unexec if cmp -s %D/etc/freshclam.conf %D/etc/freshclam.conf.default; then rm -f %D/etc/freshclam.conf; fi
 etc/freshclam.conf.default
 @exec [ -f %B/freshclam.conf ] || cp %B/%f %B/freshclam.conf
-@unexec [ ! -f %%DBDIR%%/daily.cvd ] || rm -f %%DBDIR%%/daily.cvd || true
-@unexec [ ! -f %%DBDIR%%/main.cvd ] || rm -f %%DBDIR%%/main.cvd || true
-@unexec rmdir %%DBDIR%%
+@unexec [ -s %%DBDIR%%/daily.cvd ] || rm -f %%DBDIR%%/daily.cvd || true
+@unexec [ -s %%DBDIR%%/main.cvd ] || rm -f %%DBDIR%%/main.cvd || true
+@unexec rmdir %%DBDIR%% 2>/dev/null || true
 @unexec rmdir %%LOGDIR%% 2>/dev/null || true
 @unexec rmdir %%RUNDIR%% 2>/dev/null || true
