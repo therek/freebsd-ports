@@ -28,12 +28,12 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.825 2005/09/21 23:03:56 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.826 2005/09/23 19:19:03 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
   <vuln vid="8f5dd74b-2c61-11da-a263-0001020eed82">
-    <topic>mozilla &amp; firefox -- multiple vulnerabilities</topic>
+    <topic>firefox &amp; mozilla -- multiple vulnerabilities</topic>
     <affects>
       <package>
 	<name>firefox</name>
@@ -50,6 +50,9 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </package>
       <package>
 	<name>linux-mozilla</name>
+	<range><lt>1.7.12</lt></range>
+      </package>
+      <package>
 	<name>linux-mozilla-devel</name>
 	<range><gt>0</gt></range>
       </package>
@@ -176,7 +179,8 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   </vuln>
 
   <vuln vid="2e28cefb-2aee-11da-a263-0001020eed82">
-    <topic>mozilla &amp; firefox -- command line URL shell command injection</topic>
+    <topic>firefox &amp; mozilla -- command line URL shell command
+      injection</topic>
     <affects>
       <package>
 	<name>firefox</name>
@@ -193,6 +197,9 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </package>
       <package>
 	<name>linux-mozilla</name>
+	<range><lt>1.7.12</lt></range>
+      </package>
+      <package>
 	<name>linux-mozilla-devel</name>
 	<range><gt>0</gt></range>
       </package>
@@ -410,6 +417,9 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </package>
       <package>
 	<name>linux-mozilla</name>
+	<range><lt>1.7.12</lt></range>
+      </package>
+      <package>
 	<name>linux-mozilla-devel</name>
 	<range><gt>0</gt></range>
       </package>
