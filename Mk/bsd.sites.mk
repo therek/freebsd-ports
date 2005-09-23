@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.310 2005/09/17 05:25:48 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.311 2005/09/17 21:34:03 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -449,7 +449,7 @@ MASTER_SITE_FESTIVAL_OGI+= \
 	ftp://speakeasy.rpmfind.net/linux/blinux/festival/mirror.ogi-synth_home/%SUBDIR%/\
 	ftp://ftp.mayn.de/pub/linux/BLinux/festival/mirror.ogi-synth_home/ \
 	ftp://ftp.tuwien.ac.at/opsys/linux/blinux/festival/mirror.ogi-synth_home/ \
-	ftp://cslu.cse.ogi.edu/pub/tts/
+	http://www.cslu.ogi.edu/tts/download/data/
 .endif
 
 #
