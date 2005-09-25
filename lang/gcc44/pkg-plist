@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc41/pkg-plist,v 1.72 2005/07/25 09:45:16 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc41/pkg-plist,v 1.73 2005/08/01 19:02:03 gerald Exp $
 bin/c++41
 bin/cpp41
 bin/g++41
@@ -32,6 +32,10 @@ include/ssp/unistd.h
 %%JAVA%%bin/%%GNU_HOST%%-gcj41
 %%JAVA%%bin/%%GNU_HOST%%-gcjh41
 %%JAVA%%include/ffi.h
+%%JAVA%%include/jawt.h
+%%JAVA%%include/jawt_md.h
+%%JAVA%%include/jni.h
+%%JAVA%%include/jni_md.h
 %%JAVA%%libdata/pkgconfig/libgcj.pc
 %%JAVA%%share/java/libgcj-%%GCC_VER%%.jar
 @comment Insert PLIST.lib here
