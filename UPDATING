@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050927:
+  AFFECTS: users of mail/dovecot
+  AUTHOR: robin@isometry.net
+
+  Dovecot has been upgraded to version 1.0a3 that breaks down
+  backward compatibility with previous versions of dovecot.
+  For information about upgrading existing dovecot installations
+  one must consult with http://wiki.dovecot.org/moin.cgi/UpgradingDovecot
+
 20050923:
   AFFECTS: users of www/b2evo
   AUTHOR: chinsan.tw@gmail.com
@@ -2409,4 +2418,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.224 2005/09/11 21:49:55 vsevolod Exp $
+$FreeBSD: ports/UPDATING,v 1.225 2005/09/23 20:24:08 pav Exp $
