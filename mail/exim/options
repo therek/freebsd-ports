@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/exim/options,v 1.4 2005/02/03 03:55:00 eik Exp $
+# $FreeBSD: ports/mail/exim/options,v 1.5 2005/03/02 21:50:48 krion Exp $
 #
 # Configurable options for mail/exim. Note that the options listed
 # here are the defaults, so if you want to change them you have to
@@ -52,6 +52,9 @@
 # use.  Valid values are auto, 323, 40, 41 and 50.
 # The use of `auto' is recommended to avoid conflicting with
 # other ports linking against MySQL client libraries.
+
+#WITHOUT_SQLITE
+# Link against libsqlite3 to support sqlite lookups.
 
 #WITH_CDB
 #WITH_DNSDB
@@ -191,6 +194,9 @@ WITHOUT_PGSQL?=yes
 WITH_POSTGRESQL_PORT?=auto
 .ifndef WITHOUT_CDB
 WITH_CDB?=yes
+.endif
+.ifndef WITH_SQLITE
+WITHOUT_SQLITE?=yes
 .endif
 .ifndef WITHOUT_DNSDB
 WITH_DNSDB?=yes
