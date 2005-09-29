@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.830 2005/09/28 22:54:43 vsevolod Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.831 2005/09/29 19:31:12 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -21529,6 +21529,15 @@ misc.c:
       </body>
     </description>
     <references>
+      <bid>14927</bid>
+      <bid>14928</bid>
+      <bid>14929</bid>
+      <bid>14930</bid>
+      <cvename>CAN-2005-3046</cvename>
+      <cvename>CAN-2005-3047</cvename>
+      <cvename>CAN-2005-3048</cvename>
+      <cvename>CAN-2005-3049</cvename>
+      <cvename>CAN-2005-3050</cvename>
       <url>http://www.phpmyfaq.de/advisory_2005-09-23.php</url>
     </references>
     <dates>
