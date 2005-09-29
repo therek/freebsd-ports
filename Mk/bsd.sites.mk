@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.314 2005/09/28 08:18:02 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.315 2005/09/29 01:03:38 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -907,7 +907,6 @@ MASTER_SITE_NETSCAPE+= \
 	ftp://ftp.nsysu.edu.tw/Netscape/%SUBDIR%/ \
 	ftp://ftp.uniroma2.it/%7bC/Netscape/%SUBDIR%/ \
 	ftp://ftp.ut.ee/pub/WWW/netscape/%SUBDIR%/ \
-	ftp://ftp.skynet.be/mirror/netscape/%SUBDIR%/ \
 	ftp://ftp.uni-bremen.de/pub/mirrors/ftp.netscape.com/pub/%SUBDIR%/ \
 	ftp://ftp.informatik.rwth-aachen.de/pub/mirror/ftp.netscape.com/pub/%SUBDIR%/
 .endif
