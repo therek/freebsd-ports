@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.318 2005/09/29 05:41:38 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.319 2005/09/29 06:35:35 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1233,8 +1233,6 @@ MASTER_SITE_SUSE+= 	\
 	ftp://distro.ibiblio.org/pub/linux/distributions/suse/suse/%SUBDIR%/ \
 	ftp://ftp.oregonstate.edu/pub/suse/%SUBDIR%/ \
 	http://suse.oregonstate.edu/%SUBDIR%/ \
-	ftp://ftp://ftp.cnnet.upr.edu/linux/suse/%SUBDIR%/ \
-	http://suse.cnnet.upr.edu/%SUBDIR%/ \
 	ftp://ftp.sunsite.utk.edu/pub/linux/suse/%SUBDIR%/ \
 	http://sunsite.utk.edu/ftp/pub/linux/suse/%SUBDIR%/ \
 	http://ops.tamu.edu/suse/%SUBDIR%/ \
@@ -1254,8 +1252,8 @@ MASTER_SITE_SUSE+= 	\
 	ftp://ftp.suse.cl/pub/suse/%SUBDIR%/ \
 	ftp://ftp.rdc.cl/pub/Unix/Linux/SuSe/%SUBDIR%/ \
 	ftp://ftp.suse.cl/pub/suse/%SUBDIR%/ \
-	ftp://ftp://ftp.sh.cvut.cz/SuSE/%SUBDIR%/ \
-	http://ftp.sh.cvut.cz/SuSE/%SUBDIR%/ \
+	ftp://ftp.sh.cvut.cz/MIRRORS/SuSE/%SUBDIR%/ \
+	http://ftp.sh.cvut.cz/MIRRORS/SuSE/%SUBDIR%/ \
 	ftp://ftp.linux.ee/pub/suse/suse/%SUBDIR%/ \
 	ftp://garbo.uwasa.fi/pub/mirrors/suse/%SUBDIR%/ \
 	http://fr2.rpmfind.net/linux/SUSE-LINUX/%SUBDIR%/ \
@@ -1328,7 +1326,7 @@ MASTER_SITE_SUSE+= 	\
 	ftp://sunsite.cnlab-switch.ch/mirror/SuSE/suse/%SUBDIR%/ \
 	ftp://ftp.isu.edu.tw/pub/Linux/SuSE/%SUBDIR%/ \
 	http://ftp.isu.edu.tw/pub/Linux/SuSE/%SUBDIR%/ \
-	ftp://ftp://ftp.mirrorservice.org/sites/ftp.suse.com/pub/%SUBDIR%/ \
+	ftp://ftp.mirrorservice.org/sites/ftp.suse.com/pub/%SUBDIR%/ \
 	http://www.mirrorservice.org/sites/ftp.suse.com/pub/%SUBDIR%/ \
 	ftp://ftp.plig.org/pub/suse/%SUBDIR%/ \
 	ftp://ftp.mirror.ac.uk/sites/ftp.suse.com/i386/%SUBDIR%/ \
