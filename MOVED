@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.756 2005/09/25 22:31:36 tmclaugh Exp $
+# $FreeBSD: ports/MOVED,v 1.757 2005/09/29 03:36:24 tmclaugh Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1629,3 +1629,4 @@ devel/libunrar|archivers/libunrar|2005-09-23|corrected category
 www/gecko-sharp|www/gecko-sharp10|2005-09-25|renamed to reflect API version
 x11-toolkits/gtk-sharp|x11-toolkits/gtk-sharp10|2005-09-28|renamed to reflect API version
 x11-toolkits/gtk-sharp-devel|x11-toolkits/gtk-sharp20|2005-09-28|renamed to reflect API version
+print/preview-latex|print/auctex|2005-09-30|integrated into print/auctex
