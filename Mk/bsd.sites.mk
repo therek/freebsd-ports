@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.321 2005/10/01 01:42:28 fenner Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.322 2005/10/01 05:41:25 fenner Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1342,8 +1342,7 @@ MASTER_SITE_THEMES+= \
 .if !defined(IGNORE_MASTER_SITE_VIM)
 MASTER_SITE_VIM+= \
 	ftp://ftp.vim.org/pub/vim/unix/  \
-	ftp://ftp.is.co.za/applications/editors/vim/unix/  \
-	ftp://ftp.mirrorservice.org/sites/ftp.vim.org/pub/vim/unix  \
+	ftp://ftp.mirrorservice.org/sites/ftp.vim.org/pub/vim/unix/ \
 	ftp://ftp.jp.vim.org/pub/vim/unix/
 .endif
 
