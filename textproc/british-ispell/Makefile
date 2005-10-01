@@ -2,10 +2,10 @@
 # Date created:                         10 February 2000
 # Whom:                                 Alexander Langer <alex@big.endian.de>
 #
-# $FreeBSD: ports/textproc/british-ispell/Makefile,v 1.4 2001/01/16 17:32:41 sobomax Exp $
+# $FreeBSD$
 #
 
-MAINTAINER=	alex@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 ISPELL_BRITISH=	yes
 PORTNAME=	british-ispell

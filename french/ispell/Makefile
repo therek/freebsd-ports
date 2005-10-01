@@ -2,10 +2,10 @@
 # Date created:                         10 February 2000
 # Whom:                                 Alexander Langer <alex@big.endian.de>
 #
-# $FreeBSD: ports/french/ispell/Makefile,v 1.5 2000/09/22 12:20:57 asami Exp $
+# $FreeBSD$
 #
 
-MAINTAINER=	alex@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 ISPELL_FR=	yes
 PORTVERSION=	1.4
