@@ -12,7 +12,15 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.322 2005/10/01 05:41:25 fenner Exp $
+# Note: because it is included for all invocations, please keep the size
+# of this file manageable.  If a distfile is unfetchable from the first
+# few dozen locations, it is unlikely to be fetchable from any past that,
+# and those fetch failures will simply waste time and bandwidth.  Please
+# pick a globally representative subset.
+#
+# Note: all entries should terminate with a slash.
+#
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.323 2005/10/01 20:38:50 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
