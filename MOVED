@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.759 2005/09/30 17:55:19 kris Exp $
+# $FreeBSD: ports/MOVED,v 1.760 2005/10/01 06:22:31 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1632,3 +1632,4 @@ x11-toolkits/gtk-sharp-devel|x11-toolkits/gtk-sharp20|2005-09-28|renamed to refl
 print/preview-latex|print/auctex|2005-09-30|integrated into print/auctex
 lang/pyperl||2005-09-30|New port added without a maintainer
 mail/exim-monitor||2005-10-01|obsolete
+devel/beagle|devel/open-beagle|2005-10-02|renamed to reflect project's name
