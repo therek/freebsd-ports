@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.328 2005/10/03 04:56:21 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.329 2005/10/03 05:11:27 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -196,7 +196,6 @@ MASTER_SITE_EXIM+=	\
 	ftp://sunsite.cnlab-switch.ch/mirror/exim/exim/%SUBDIR%/ \
 	ftp://ftp.mirrorservice.org/sites/ftp.csx.cam.ac.uk/pub/software/email/exim/%SUBDIR%/ \
 	ftp://ftp.demon.co.uk/pub/mirrors/exim/%SUBDIR%/ \
-	http://www.us.exim.org/ftp/exim/%SUBDIR%/ \
 	ftp://ftp.fsckit.net/pub/exim/exim/%SUBDIR%/
 .endif
 
