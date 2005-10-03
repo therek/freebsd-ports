@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/sympa5/pkg-install,v 1.1 2005/09/29 13:02:52 garga Exp $
 #
 
 if [ x"$2" = xPOST-INSTALL ]; then
@@ -70,4 +70,4 @@ if ! pw usershow "${USER}" 2>/dev/null 1>&2; then
 	fi
 fi
 
-Exit 0
+exit 0
