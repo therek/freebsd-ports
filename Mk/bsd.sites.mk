@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.333 2005/10/04 05:54:17 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.334 2005/10/04 06:07:31 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -688,7 +688,6 @@ MASTER_SITE_NETSCAPE+= \
 .if !defined(IGNORE_MASTER_SITE_OSSP)
 MASTER_SITE_OSSP+= \
 	ftp://ftp.ossp.org/pkg/%SUBDIR%/ \
-	http://public.planetmirror.com/pub/ossp/pkg/%SUBDIR%/ \
 	ftp://ftp.ntua.gr/pub/utils/ossp/%SUBDIR%/
 .endif
 
