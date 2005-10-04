@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/misc/phraze/pkg-plist,v 1.1 2003/04/28 11:10:20 naddy Exp $
 bin/phraze
-%%DATADIR%%/phraze.dict
+%%DATADIR%%/wordlist.phr
 @dirrm %%DATADIR%%
