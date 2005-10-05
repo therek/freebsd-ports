@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20051005:
+  AFFECTS: users of x11-wm/devilspie
+  AUTHOR: jylefort@FreeBSD.org
+
+  The configuration file format has changed. See
+  /usr/X11R6/share/doc/devilspie/README for more details.
+
 20051002:
   AFFECTS: users of x11-toolkits/py-wxPython26
 
@@ -2432,4 +2439,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.226 2005/09/27 08:10:29 vsevolod Exp $
+$FreeBSD: ports/UPDATING,v 1.227 2005/10/02 17:56:04 lioux Exp $
