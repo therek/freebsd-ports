@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.842 2005/10/02 20:10:41 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.843 2005/10/04 13:22:59 garga Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -51,7 +51,7 @@ Note:  Please add new entries to the beginning of this file.
 	    and that will cause a format string bug that will allow remote
 	    code execution. It will only happen when weex is first run or
 	    when its cache files are rebuilt with the -r option,
-	    though.</p>
+	    though. The vulnerability was found by Ulf Harnhammar.</p>
 	</blockquote>
       </body>
     </description>
