@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.763 2005/10/04 23:46:44 yar Exp $
+# $FreeBSD: ports/MOVED,v 1.764 2005/10/05 07:58:35 vs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1636,3 +1636,4 @@ devel/beagle|devel/open-beagle|2005-10-02|renamed to reflect project's name
 games/pmars-doc||2005-10-04|Obsolete, merged with games/pmars
 russian/bogofilter||2005-10-04|obsoleted by utf-8 support in mail/bogofilter
 graphics/hs-HOpenGL||2005-10-05|Obsolete, now part of lang/ghc
+dns/ddup||2005-10-06|Project no longer exists
