@@ -22,7 +22,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD: ports/emulators/rtc/files/rtc.c,v 1.15 2004/03/13 21:20:03 silby Exp $
+ * $FreeBSD: ports/emulators/rtc/files/rtc.c,v 1.16 2004/06/24 07:49:45 silby Exp $
  * $vmFreeBSD: vmware/vmnet-only/freebsd/vmnet.c,v 1.14 2000/01/23 22:29:50 vsilyaev Exp $
  */
 
@@ -268,9 +268,9 @@ rtc_ioctl(dev_t dev, u_long cmd, caddr_t arg, int mode, struct proc *p)
 			break;
 		}
 		sc->var.freq = freq;
-		if (sc->var.freq * 9 > hz * 8) {
+		if ((sc->var.freq > hz) && (hz < 1000)) {
 			sc->var.freq = hz;
-			printf("rtc: %d > kern.hz: Timing will be inaccurate, please increase hz.\n", sc->var.freq);
+			printf("rtc: %d > kern.hz: Timing will be inaccurate, please increase kern.hz.\n", sc->var.freq);
 		}
 		sleep = hz / sc->var.freq;
 		DLog(Linfo, "Set RTC freq %d", sc->var.freq);
