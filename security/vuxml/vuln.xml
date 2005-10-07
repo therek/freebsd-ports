@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.844 2005/10/05 15:55:08 ehaupt Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.845 2005/10/05 17:44:06 thierry Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -168,6 +168,10 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>cfengine</name>
+	<range><lt>2.1.6_1</lt></range>
+      </package>
+      <package>
+	<name>cfengine2</name>
 	<range><gt>0</gt></range>
       </package>
     </affects>
@@ -186,12 +190,14 @@ Note:  Please add new entries to the beginning of this file.
     </description>
     <references>
       <cvename>CAN-2005-2960</cvename>
+      <bid>14994</bid>
       <url>http://www.debian.org/security/2005/dsa-835</url>
       <url>http://www.debian.org/security/2005/dsa-836</url>
     </references>
     <dates>
       <discovery>2005-10-01</discovery>
       <entry>2005-10-01</entry>
+      <modified>2005-10-07</modified>
     </dates>
   </vuln>
 
