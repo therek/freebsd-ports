@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.765 2005/10/06 07:59:35 vs Exp $
+# $FreeBSD: ports/MOVED,v 1.766 2005/10/07 11:16:16 sem Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1638,3 +1638,4 @@ russian/bogofilter||2005-10-04|obsoleted by utf-8 support in mail/bogofilter
 graphics/hs-HOpenGL||2005-10-05|Obsolete, now part of lang/ghc
 dns/ddup||2005-10-06|Project no longer exists
 x11-themes/fluxbox-fluxmod||2005-10-07|Project has gone
+sysutils/rdiff-backup-devel|sysutils/rdiff-backup|2005-10-08|obsolete

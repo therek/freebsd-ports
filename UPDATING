@@ -6,6 +6,18 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20051008:
+  AFFECTS: users of sysutils/rdiff-backup, rdiff-backup-devel
+  AUTHOR: lawrance@FreeBSD.org
+
+  sysutils/rdiff-backup has been upgraded to version 1.0.1.  This
+  version is incompatible with the previous version.  Users of
+  rdiff-backup will need to redo their initial seed.
+
+  rdiff-backup-devel has been removed.  Users of rdiff-backup-devel
+  should now use rdiff-backup instead.  In this case there is no need 
+  to redo the initial seed.
+
 20051006:
   AFFECTS: users of net/smokeping
   AUTHOR: lth@FreeBSD.org
@@ -2448,4 +2460,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.228 2005/10/05 01:55:11 jylefort Exp $
+$FreeBSD: ports/UPDATING,v 1.229 2005/10/06 12:46:30 lth Exp $
