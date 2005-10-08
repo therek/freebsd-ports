@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/pks/pkg-deinstall,v 1.2 2005/09/09 14:00:10 lawrance Exp $
 
 PKGNAME=$1
 STAGE=$2
@@ -14,7 +14,7 @@ POST-DEINSTALL)
 If you won't be using ${PKGNAME} any longer, you may want to remove the
 following directories and files:
 
-        ${PREFIX}/etc/pksd.conf
+        %%PREFIX%%/etc/pksd.conf
 	/var/pks
 ===========================================================================
 EOF
