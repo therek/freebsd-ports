@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.338 2005/10/05 16:44:35 fenner Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.339 2005/10/07 05:19:01 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -886,7 +886,7 @@ MASTER_SITE_REDHAT_LINUX+= \
 	ftp://ftp.nluug.nl/site/ftp.redhat.com/redhat/linux/%SUBDIR%/ \
 	ftp://ftp.icm.edu.pl/pub/linux/redhat/linux/%SUBDIR%/ \
 	ftp://ftp.mirrorservice.org/sites/ftp.redhat.com/pub/redhat/linux/%SUBDIR%/ \
-	ftp://ftp.riken.go.jp/pub/Linux/redhat/releases/%SUBDIR%/ \
+	ftp://ftp.riken.go.jp/pub/Linux/redhat/linux/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/pub/Linux/packages/RedHat/redhat/linux/%SUBDIR%/
 .endif
 
