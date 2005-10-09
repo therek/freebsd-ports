@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20051009:
+  AFFECTS: users of games/py-balazar
+  AUTHOR: mnag@FreeBSD.org
+
+  games/py-balazar has been removed to add in games/balazar to
+  reflect right name.
+
 20051008:
   AFFECTS: users of sysutils/rdiff-backup, rdiff-backup-devel
   AUTHOR: lawrance@FreeBSD.org
@@ -2460,4 +2467,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.229 2005/10/06 12:46:30 lth Exp $
+$FreeBSD: ports/UPDATING,v 1.230 2005/10/08 07:09:48 lawrance Exp $
