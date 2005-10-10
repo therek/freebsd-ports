@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/freenet/files/freenet.sh,v 1.1 2005/10/10 06:18:31 lioux Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
 # PROVIDE: freenet
-# REQUIRE: NETWORKING
+# REQUIRE: LOGIN
 # KEYWORD: FreeBSD shutdown
 
 #

@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/i2p/files/i2p.sh,v 1.1 2005/10/10 06:59:09 lioux Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
 # PROVIDE: i2p
-# REQUIRE: NETWORKING
+# REQUIRE: LOGIN
 # KEYWORD: FreeBSD shutdown
 
 #
