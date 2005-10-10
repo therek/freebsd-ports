@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/proftpd/files/proftpd.sh.in,v 1.1 2005/06/22 18:48:39 flz Exp $
 #
 
 # PROVIDE: proftpd
@@ -36,6 +36,8 @@ stop_postcmd()
 
 proftpd_enable=${proftpd_enable:-"NO"}
 proftpd_flags=${proftpd_flags:-""}
+
+extra_commands="reload"
 
 load_rc_config $name
 run_rc_command "$1"
