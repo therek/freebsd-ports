@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.425 2005/09/25 17:17:56 arved Exp $
+# $FreeBSD: ports/LEGAL,v 1.426 2005/10/04 11:09:01 garga Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -581,6 +581,8 @@ tutorial.zip		java/java-tutorial	This software is under license
 						and export control
 ue*dev.zip		editors/uemacs		Resale allowed for media cost
 						only
+uDrawGraph-*		graphics/uDrawGraph	binary under GNU LGPL without
+						accompanying source
 upsmon*			sysutils/upsmon		Redistribute only with
 						original source code
 urchin*.tar.gz		www/urchin5		Commercial software, also comes
