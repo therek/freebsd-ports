@@ -2,14 +2,14 @@
 # Date created:                         10 February 2000
 # Whom:                                 Alexander Langer <alex@big.endian.de>
 #
-# $FreeBSD: ports/german/ispell-alt/Makefile,v 1.8 2001/08/14 20:05:49 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ispell
 CATEGORIES=	german
 PKGNAMESUFFIX=	-alt-19991219
 
-MAINTAINER=	alex@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 ISPELL_DEALT=	yes
 MASTERDIR=	${.CURDIR}/../../textproc/ispell
