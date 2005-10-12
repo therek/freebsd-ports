@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.849 2005/10/09 21:03:07 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.850 2005/10/12 00:01:03 mnag Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,7 +39,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>zope28</name>
-	<range><ge>2.6.0</ge><lt>2.8.1_2</lt></range>
+	<range><ge>2.6.0</ge><le>2.8.1_2</le></range>
       </package>
     </affects>
     <description>
