@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk15/files/patch-j2se::awt::Toolkit.java,v 1.1 2005/10/13 15:18:25 glewis Exp $
 
 --- ../../j2se/src/share/classes/java/awt/Toolkit.java	10 Jan 2005 07:40:41 -0000	1.2
 +++ ../../j2se/src/share/classes/java/awt/Toolkit.java	9 Oct 2005 04:11:13 -0000
