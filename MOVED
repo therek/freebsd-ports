@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.771 2005/10/10 17:54:06 mnag Exp $
+# $FreeBSD: ports/MOVED,v 1.772 2005/10/12 05:54:14 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1644,3 +1644,5 @@ multimedia/gpac-libm4systems|multimedia/gpac-libgpac|2005-10-09|Library renamed
 games/marbles|games/lmarbles|2005-10-10|renamed to reflect right name
 games/py-slune|games/slune|2005-10-10|renamed to reflect right name
 games/kxl|devel/kxl|2005-10-12|accurate category
+devel/libpreps-devel||2005-10-13|obsolete
+devel/libpreps|devel/prepstools|2005-10-13|project was renamed
