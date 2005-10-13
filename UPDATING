@@ -6,6 +6,17 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20051013:
+  AFFECTS: users of mail/qmrtg
+  AUTHOR: mij@bitchx.it
+
+  Version 2.x marks a new generation for qmrtg and is no longer compatible
+  with configuration files from old releases.
+
+  Upgrading to 2.x version *requires* qmrtg (and possibly mrtg)
+  configuration files to be adjusted manually starting from the .dist file
+  included.
+
 20051011:
   AFFECTS: users of www/amphetadesk
   AUTHOR: lioux@FreeBSD.org
@@ -2495,4 +2506,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.234 2005/10/11 22:15:29 lioux Exp $
+$FreeBSD: ports/UPDATING,v 1.235 2005/10/11 23:01:36 lioux Exp $
