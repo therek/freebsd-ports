@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/vsftpd/files/vsftpd.sh,v 1.1 2005/05/02 10:40:20 dinoex Exp $
 #
 
 # PROVIDE: vsftpd
