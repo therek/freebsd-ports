@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache2/pkg-plist,v 1.73 2004/12/12 11:48:55 clement Exp $
+@comment $FreeBSD: ports/www/apache2/pkg-plist,v 1.74 2004/12/17 17:52:20 clement Exp $
 @exec mkdir -p %D/etc/apache2 2> /dev/null
 @unexec if cmp -s %D/etc/apache2/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache2/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd-std.conf
@@ -269,7 +269,6 @@ share/apache2/build/special.mk
 %%ERROR%%www/error-dist/HTTP_INTERNAL_SERVER_ERROR.html.var
 %%ERROR%%www/error-dist/HTTP_LENGTH_REQUIRED.html.var
 %%ERROR%%www/error-dist/HTTP_METHOD_NOT_ALLOWED.html.var
-%%ERROR%%www/error-dist/HTTP_NOT_ACCEPTABLE.html.var
 %%ERROR%%www/error-dist/HTTP_NOT_FOUND.html.var
 %%ERROR%%www/error-dist/HTTP_NOT_IMPLEMENTED.html.var
 %%ERROR%%www/error-dist/HTTP_PRECONDITION_FAILED.html.var
