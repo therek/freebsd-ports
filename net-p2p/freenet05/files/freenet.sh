@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/freenet/files/freenet.sh,v 1.1 2005/10/10 06:18:31 lioux Exp $
+# $FreeBSD: ports/net/freenet/files/freenet.sh,v 1.2 2005/10/10 11:05:04 lioux Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
@@ -19,7 +19,7 @@
 
 name="freenet"
 rcvar=`set_rcvar`
-command="%%PREFIX%%/bin/${name}"
+command="%%PREFIX%%/sbin/${name}"
 extra_commands="configure"
 
 freenet_check_vars()
