@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/ipw-firmware/files/ipw.sh.in,v 1.2 2005/05/17 14:21:54 flz Exp $
+# $FreeBSD: ports/net/iwi-firmware/files/iwi.sh.in,v 1.1 2005/06/22 19:43:26 flz Exp $
 #
 
 # PROVIDE: %%DRIVERNAME%%
@@ -44,6 +44,7 @@ command="/usr/local/sbin/%%DRIVERNAME%%control"
 		eval _mode=\$_%%DRIVERNAME%%_file_${i}
 		echo -n " [${i}:${_mode:=bss}]"
 		${command} -i ${i} -d %%DATADIR%% -m ${_mode:=bss}
+		ifconfig ${i} up
 	done
 	echo "."
 }
