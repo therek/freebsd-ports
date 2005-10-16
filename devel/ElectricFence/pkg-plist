@@ -1,4 +1,0 @@
-@comment $FreeBSD: ports/devel/ElectricFence/pkg-plist,v 1.3 2000/11/22 00:17:08 obrien Exp $
-bin/ef.sh
-lib/libefence.a
-lib/libefence.so.0
