@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.772 2005/10/12 05:54:14 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.773 2005/10/13 21:59:38 flz Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1646,3 +1646,4 @@ games/py-slune|games/slune|2005-10-10|renamed to reflect right name
 games/kxl|devel/kxl|2005-10-12|accurate category
 devel/libpreps-devel||2005-10-13|obsolete
 devel/libpreps|devel/prepstools|2005-10-13|project was renamed
+games/q3-paks|games/quake3-data|2005-10-16|sync name with other data ports
