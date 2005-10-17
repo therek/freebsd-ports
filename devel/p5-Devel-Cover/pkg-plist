@@ -1,8 +1,9 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-Devel-Cover/pkg-plist,v 1.6 2005/05/17 12:35:31 mat Exp $
 bin/cover
 bin/gcov2perl
 %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/Annotation/Random.pm
+%%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/Annotation/Svk.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/Branch.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/Condition.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/Condition_and_2.pm
