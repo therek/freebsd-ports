@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache13/pkg-plist,v 1.57 2004/11/06 22:41:07 ache Exp $
+@comment $FreeBSD: ports/www/apache13/pkg-plist,v 1.58 2005/02/11 20:43:04 clement Exp $
 bin/checkgid
 bin/dbmmanage
 bin/htdigest
@@ -197,6 +197,7 @@ share/doc/apache/index.html.fr
 share/doc/apache/index.html.html
 share/doc/apache/index.html.ja.jis
 share/doc/apache/install-tpf.html
+share/doc/apache/install-ztpf.html
 share/doc/apache/install.html.en
 share/doc/apache/install.html.es
 share/doc/apache/install.html.fr
