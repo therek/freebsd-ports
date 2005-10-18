@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.856 2005/10/14 21:57:41 sem Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.857 2005/10/18 17:42:13 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -72,8 +72,9 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
-      <url>http://www.snort.org/pub-bin/snortnews.cgi#99</url>
       <certvu>175500</certvu>
+      <url>http://www.snort.org/pub-bin/snortnews.cgi#99</url>
+      <url>http://xforce.iss.net/xforce/alerts/id/207</url>
     </references>
     <dates>
       <discovery>2005-10-18</discovery>
