@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.783 2005/10/18 17:12:30 vs Exp $
+# $FreeBSD: ports/MOVED,v 1.784 2005/10/18 18:44:34 vs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1657,3 +1657,4 @@ devel/swig13-doc||2005-10-18|incorperated in devel/swig13
 palm/hdconv||2005-10-18|master site disappeared
 mail/stuphead||2005-10-18|master site disappeared
 japanese/libimg||2005-10-18|forbidden; no longer exists
+devel/korelib||2005-10-18|master site up but distfile not available, last release 2002
