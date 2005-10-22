@@ -1,5 +1,0 @@
-@comment $FreeBSD: ports/textproc/diffutils/pkg-plist,v 1.1 2001/09/17 06:27:56 will Exp $
-bin/gcmp
-bin/gdiff
-bin/gdiff3
-bin/gsdiff
