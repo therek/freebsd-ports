@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.18 2005/07/27 17:13:46 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.19 2005/08/28 09:15:29 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -14,6 +14,8 @@
 # WITH_GNUSTEP_LIBART=yes
 #	use libart as backend instead of xlib.
 #
+# WITH_GNUSTEP_CAIRO=yes
+#	use cairo as backend instead of xlib.
 #
 # Options for a port before include this file:
 # ============================================
@@ -61,6 +63,7 @@ GNUSTEP_GUI_PORT?=	x11-toolkits/gnustep-gui
 GNUSTEP_BACK_PORT?=	x11-toolkits/gnustep-back
 GNUSTEP_XDPS_PORT?=	x11-toolkits/gnustep-xdps
 GNUSTEP_ART_PORT?=	x11-toolkits/gnustep-art
+GNUSTEP_CAIRO_PORT?=	x11-toolkits/gnustep-cairo
 
 .if ${MACHINE_ARCH} == "i386"
 GNU_ARCH=	ix86
@@ -131,12 +134,12 @@ RUN_DEPENDS+=	${COMBOLIBDIR}/libgnustep-gui.so:${PORTSDIR}/${GNUSTEP_GUI_PORT}
 BACKSUFFIX?=	-010
 .if defined(WITH_GNUSTEP_XDPS)
 GNUSTEP_WITH_XDPS=yes
-.else
-.if defined(WITH_GNUSTEP_LIBART)
+.elif defined(WITH_GNUSTEP_LIBART)
 USE_GNUSTEP_LIBART=yes
+.elif defined(WITH_GNUSTEP_CAIRO)
+USE_GNUSTEP_CAIRO=yes
 .else
 USE_GNUSTEP_XLIB=yes
-.endif
 .endif
 .endif
 
@@ -171,6 +174,17 @@ RUN_DEPENDS+=	${BACKBUNDLEDIR}/libgnustep-art${BACKSUFFIX}:${PORTSDIR}/${GNUSTEP
 
 BACKBUNDLEDIR=	${BUNDLEDIR}/libgnustep-art${BACKSUFFIX}.bundle
 MAKE_FLAGS+=	GUI_BACKEND_LIB=art
+.endif
+
+# ---------------------------------------------------------------------------
+# Backend using cairo
+#
+.if defined(USE_GNUSTEP_CAIRO)
+BUILD_DEPENDS+=	${BACKBUNDLEDIR}/libgnustep-cairo${BACKSUFFIX}:${PORTSDIR}/${GNUSTEP_CAIRO_PORT}
+RUN_DEPENDS+=	${BACKBUNDLEDIR}/libgnustep-cairo${BACKSUFFIX}:${PORTSDIR}/${GNUSTEP_CAIRO_PORT}
+
+BACKBUNDLEDIR=	${BUNDLEDIR}/libgnustep-cairo${BACKSUFFIX}.bundle
+MAKE_FLAGS+=	GUI_BACKEND_LIB=cairo
 .endif
 
 # ---------------------------------------------------------------------------
