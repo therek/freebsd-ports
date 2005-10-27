@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/mldonkey/files/mlnet.sh,v 1.1 2005/06/24 07:39:10 pav Exp $
 
 # PROVIDE: mlnet
 # REQUIRE: LOGIN
@@ -36,9 +36,8 @@ mlnet_start() {
 		echo -n " mlnet"
 		su ${mlnet_user} -c "${command} \
 			${mlnet_flags} \
-			-daemon \
 			-http_port ${mlnet_http_port}" \
-			>>${mlnet_logfile} 2>&1
+			>>${mlnet_logfile} 2>&1 &
 	fi
 }
 
