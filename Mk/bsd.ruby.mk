@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.143 2005/02/05 04:59:24 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.144 2005/06/05 23:29:11 flz Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -139,6 +139,10 @@ RUBY?=			${LOCALBASE}/bin/${RUBY_NAME}
 RUBY_VERSION?=		1.8.2
 #RUBY_DISTVERSION?=	${RUBY_VERSION}
 #RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-yyyy.mm.dd.diff.bz2
+
+# Security patch
+RUBY_PATCHFILES?=	${RUBY_VERSION}-patch1.gz
+
 #RUBY_PORTVERSION?=	${RUBY_VERSION}
 RUBY_WRKSRC=		${WRKDIR}/ruby-${RUBY_VERSION}
 #MASTER_SITE_SUBDIR_RUBY=	snapshots
@@ -148,6 +152,10 @@ BROKEN=	"Ruby 1.7 is obsolete; set RUBY_VER to 1.8 instead."
 RUBY_VERSION?=		1.6.8
 RUBY_DISTVERSION?=	${RUBY_VERSION}-2004.07.28
 #RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-${RUBY_PORTVERSION}.diff.bz2
+
+# Security patch
+RUBY_PATCHFILES?=	${RUBY_VERSION}-patch1.gz
+
 RUBY_PORTVERSION?=	${RUBY_VERSION}.2004.07.28
 #RUBY_WRKSRC=		${WRKDIR}/ruby-${RUBY_VERSION}
 MASTER_SITE_SUBDIR_RUBY=	snapshots
