@@ -1,8 +1,7 @@
-@comment $FreeBSD: ports/editors/jed/pkg-plist,v 1.10 2005/05/15 20:01:54 jylefort Exp $
+@comment $FreeBSD: ports/editors/jed-devel/pkg-plist,v 1.1 2005/10/27 09:57:11 garga Exp $
 bin/jed
 bin/jed-script
-bin/rgrep
-%%NOXJED%%bin/xjed
+%%XJED%%bin/xjed
 lib/jed/bin/getmail
 lib/jed/lib/README
 lib/jed/lib/abbrev.sl
