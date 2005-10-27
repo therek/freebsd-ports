@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.340 2005/10/08 08:21:56 fenner Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.341 2005/10/25 19:37:52 fenner Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1161,7 +1161,6 @@ MASTER_SITE_XCONTRIB+=	\
 MASTER_SITE_XEMACS+= \
 	ftp://ftp.xemacs.org/pub/xemacs/%SUBDIR%/ \
 	ftp://ftp.at.xemacs.org/editors/xemacs/%SUBDIR%/ \
-	ftp://ftp.au.xemacs.org/pub/xemacs/%SUBDIR%/ \
 	ftp://ftp.be.xemacs.org/xemacs/%SUBDIR%/ \
 	ftp://ftp.br.xemacs.org/pub/xemacs/%SUBDIR%/ \
 	ftp://ftp.ca.xemacs.org/pub/Mirror/xemacs/%SUBDIR%/ \
@@ -1176,8 +1175,9 @@ MASTER_SITE_XEMACS+= \
 	ftp://ftp.no.xemacs.org/pub/xemacs/%SUBDIR%/ \
 	ftp://ftp.pl.xemacs.org/pub/unix/editors/xemacs/%SUBDIR%/ \
 	ftp://ftp.pt.xemacs.org/pub/xemacs/%SUBDIR%/ \
-	ftp://ftp.ru.xemacs.org/pub/xemacs/%SUBDIR%/ \
+	ftp://ftp.ru.xemacs.org/pub/emacs/xemacs/%SUBDIR%/ \
 	ftp://ftp.se.xemacs.org/pub/gnu/xemacs/%SUBDIR%/ \
+	ftp://ftp.tw.xemacs.org/Unix/Editors/XEmacs/%SUBDIR%/ \
 	ftp://ftp.uk.xemacs.org/sites/ftp.xemacs.org/pub/xemacs/%SUBDIR%/ \
 	ftp://ftp.us.xemacs.org/pub/xemacs/%SUBDIR%/ \
 	ftp://xemacs.xmundo.net/pub/mirrors/xemacs/%SUBDIR%/ \
