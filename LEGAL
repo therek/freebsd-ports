@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.427 2005/10/10 17:29:19 ehaupt Exp $
+# $FreeBSD: ports/LEGAL,v 1.428 2005/10/25 18:40:26 ehaupt Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -17,7 +17,6 @@ To do so will invite needless problems from the various parties involved.
 
 Since those connected to the net will also be able to use the ports framework
 to automatically fetch their own original sources and thus complete the puzzle,
-licq-jons-gtk-gui	ports/net/licq-jons-gtk-gui
 the hardship is not as severe as it might otherwise be.
 
 Such ports are listed below:
