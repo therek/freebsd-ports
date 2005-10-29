@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/gnump3d/pkg-plist,v 1.22 2005/04/05 20:56:02 pav Exp $
+@comment $FreeBSD: ports/audio/gnump3d/pkg-plist,v 1.23 2005/09/16 11:03:44 garga Exp $
 bin/gnump3d
 bin/gnump3d-index
 bin/gnump3d-top
@@ -21,8 +21,8 @@ etc/gnump3d/mime.types
 %%SITE_PERL%%/gnump3d/mp4info.pm
 %%SITE_PERL%%/gnump3d/ogginfo.pm
 %%SITE_PERL%%/gnump3d/oggtagreader.pm
-%%SITE_PERL%%/gnump3d/plugins/COPYING.pm
 %%SITE_PERL%%/gnump3d/plugins/bug.pm
+%%SITE_PERL%%/gnump3d/plugins/copying.pm
 %%SITE_PERL%%/gnump3d/plugins/info.pm
 %%SITE_PERL%%/gnump3d/plugins/now.pm
 %%SITE_PERL%%/gnump3d/plugins/playlist.pm
