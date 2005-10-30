@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache20/files/apache.sh,v 1.12 2005/06/01 17:47:53 clement Exp $
+# $FreeBSD: ports/www/apache20/files/apache.sh,v 1.13 2005/06/01 17:49:31 clement Exp $
 #
 
 # PROVIDE: apache2
@@ -67,7 +67,7 @@ if [ -n "${2}" ]; then
 		echo "$0: extra argument ignored"
 	fi
 else
-	if [ "x${apache2_profiles}" != "x" ]; then
+	if [ "x${apache2_profiles}" != "x" -a "x${1}" != "xrestart" ]; then
 	for profile in ${apache2_profiles}; do
 		echo "===> apache2 profile: ${profile}"
 		$0 $1 $profile
