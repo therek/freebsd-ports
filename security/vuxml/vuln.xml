@@ -28,12 +28,41 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.870 2005/10/31 09:04:22 barner Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.871 2005/10/31 18:02:10 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="f38c87a5-4a3e-11da-8ba2-0004614cc33d">
+    <topic>base -- PHP SQL Injection Vulnerability</topic>
+    <affects>
+     <package>
+	<name>base</name>
+	<range><lt>1.2.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>A Secunia Advisory reports:</p>
+	<blockquote cite="http://secunia.com/advisories/17314/">
+	  <p>Remco Verhoef has discovered a vulnerability in
+	    Basic Analysis and Security Engine (BASE), which
+	    can be exploited by malicious users to conduct SQL
+	    injection attacks.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <bid>15199</bid>
+      <url>http://secunia.com/advisories/17314/</url>
+    </references>
+    <dates>
+      <discovery>2005-10-25</discovery>
+      <entry>2005-10-31</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="baf74e0b-497a-11da-a4f4-0060084a00e5">
     <topic>fetchmail -- fetchmailconf local password exposure</topic>
     <affects>
