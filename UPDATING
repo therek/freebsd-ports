@@ -36,7 +36,7 @@ upgrades.
   directory since it stores its configuration information there.
 
 20051010:
-  AFFECTS: users of games/py-balazar
+  AFFECTS: users of games/py-slune
   AUTHOR: mnag@FreeBSD.org
 
   games/py-slune has been removed to add in games/slune to
@@ -2517,4 +2517,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.236 2005/10/13 12:17:09 garga Exp $
+$FreeBSD: ports/UPDATING,v 1.237 2005/10/13 13:56:25 garga Exp $
