@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2.0/files/Makefile.knobs,v 1.20 2005/08/29 01:06:12 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2.0/files/Makefile.knobs,v 1.21 2005/10/04 03:59:42 maho Exp $
 
 .if !defined(WITHOUT_JAVA) && !defined(WITH_GNUGCJ)
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home=${LOCALBASE}/ant
@@ -10,6 +10,10 @@ CONFIGURE_ARGS+=	--with-java=gij --with-ant-home=${LOCALBASE}/ant
 .endif
 .if defined(WITHOUT_JAVA)
 CONFIGURE_ARGS+=	--without-java
+.endif
+
+.if !defined(WITH_GPC)
+CONFIGURE_ARGS+=	--enable-libart 
 .endif
 
 .if defined(WITH_KDE)
@@ -113,6 +117,11 @@ pre-fetch:
 	@${ECHO}
 	@${ECHO} "You can compile OOo to use Qt/KDE vclplug with"
 	@${ECHO} "make -DWITH_KDE"
+.endif
+.if !defined(WITH_GPC)
+	@${ECHO}
+	@${ECHO} "You can compile OOo with gpc instead of libart by"
+	@${ECHO} "make -DWITH_GPC"
 .endif
 	@${ECHO}
 	@${ECHO} "NOTICE:"
