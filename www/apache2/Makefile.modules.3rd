@@ -1,6 +1,6 @@
 # Makefile.modules.3rd
 #
-# $FreeBSD: ports/www/apache2/Makefile.modules.3rd,v 1.19 2005/02/11 15:46:11 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.modules.3rd,v 1.20 2005/03/17 21:09:56 clement Exp $
 #
 # Author: Clement Laforet <clement@FreeBSD.org>
 # If you have questions, please contact me.
@@ -33,7 +33,7 @@ IGNORE=		"This module require apache2 and you have apache13 installed"
 .     endif
 .   endif
 .   ifdef(WITH_APACHE2)
-.error You have `WITH_APACHE2' variable defined either in environment or in make(1) argumentsm. but apache13 is installed Please undefine and try again.
+IGNORE= "You have `WITH_APACHE2' variable defined either in environment or in make(1) argumentsm. but apache13 is installed Please undefine and try again."
 .   endif
 .endif
 
