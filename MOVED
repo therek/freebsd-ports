@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.790 2005/10/30 22:09:42 linimon Exp $
+# $FreeBSD: ports/MOVED,v 1.791 2005/11/01 04:32:07 maho Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1716,3 +1716,4 @@ portuguese/ooodict-pt_BR||2005-11-01|localized version should be built via knob
 portuguese/ooodict-pt_PT||2005-11-01|localized version should be built via knob
 russian/ooodict-ru_RU||2005-11-01|localized version should be built via knob
 ukrainian/ooodict-uk_UA||2005-11-01|localized version should be built via knob
+net/libicq0|net/libicq|2005-11-01|leaf port removed
