@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/x11-fonts/mathfonts/pkg-plist,v 1.1 2005/03/06 22:38:41 thierry Exp $
 %%FONTSDIR%%/fonts.dir
 %%FONTSDIR%%/fonts.scale
 %%FONTSDIR%%/math1___.ttf
@@ -21,7 +21,5 @@
 %%FONTSDIR%%/math5b__.ttf
 %%FONTSDIR%%/math5m__.ttf
 %%FONTSDIR%%/math5mb_.ttf
-%%ACROREAD%%@exec ln -fs %%LOCALBASE%%/Acrobat5/Resource/Font/Symbol %D/%%FONTSDIR%%
-%%ACROREAD%%@unexec rm %D/%%FONTSDIR%%/Symbol
 @unexec rm %D/%%FONTSDIR%%/fonts.cache-1 2>/dev/null || true
 @dirrm %%FONTSDIR%%
