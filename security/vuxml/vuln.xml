@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.873 2005/11/01 08:44:36 sem Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.874 2005/11/01 09:33:40 sem Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -207,6 +207,10 @@ Note:  Please add new entries to the beginning of this file.
 	<range><lt>2.8.5_1</lt></range>
 	<range><gt>2.8.6*</gt><lt>2.8.6d14</lt></range>
       </package>
+      <package>
+	<name>lynx-ssl</name>
+	<range><lt>2.8.5_1</lt></range>
+      </package>
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
@@ -229,6 +233,7 @@ Note:  Please add new entries to the beginning of this file.
     </references> <dates>
       <discovery>2005-10-17</discovery>
       <entry>2005-10-30</entry>
+      <modified>2005-11-01</modified>
     </dates>
   </vuln>
 
