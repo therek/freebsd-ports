@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.875 2005/11/01 21:39:24 naddy Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.876 2005/11/01 22:49:20 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -146,7 +146,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
      <package>
 	<name>skype</name>
-	<range><lt>1.2.18</lt></range>
+	<range><lt>1.2.0.18</lt></range>
       </package>
     </affects>
     <description>
@@ -171,6 +171,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2005-10-25</discovery>
       <entry>2005-11-01</entry>
+      <modified>2005-11-02</modified>
     </dates>
   </vuln>
 
