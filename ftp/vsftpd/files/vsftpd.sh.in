@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/ftp/vsftpd/files/vsftpd.sh.in,v 1.2 2005/10/25 08:10:37 dinoex Exp $
+# $FreeBSD: ports/ftp/vsftpd/files/vsftpd.sh.in,v 1.3 2005/11/02 16:51:11 dinoex Exp $
 #
 
 # PROVIDE: vsftpd
@@ -36,6 +36,7 @@ vsftpd_check()
 		err 1 "vsftpd script need "listen=YES" on config file"
 	fi
 	if ! egrep -q -i -E "^background.*=.*YES$" ${required_files}
+	then
 		err 1 "vsftpd script need "background=YES" on config file"
 	fi
 }
