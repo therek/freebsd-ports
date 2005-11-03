@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.66 2005/07/15 11:32:31 hq Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.67 2005/10/04 15:55:45 glewis Exp $
 #
 
 .if !defined(Java_Include)
@@ -447,6 +447,11 @@ JAVA_PORT_OS_DESCRIPTION:=		${JAVA_PORT_OS:S/^/\${_JAVA_OS_/:S/$/}/}
 
 .		undef HAVE_JIKES
 
+# Enforce USE_JIKES=NO if not defined and using Java 1.5
+# XXX: This is a temporary fix to be removed when Jikes supports Java 1.5
+.		if ${JAVA_PORT_VERSION:C/^([0-9])\.([0-9])(.*)$/\1.\2/} == "1.5"
+USE_JIKES?=		NO
+.		endif
 # First test if USE_JIKES has a valid value
 .		if defined(USE_JIKES) && !(${USE_JIKES:U} == "YES") && !(${USE_JIKES:U} == "NO")
 check-makevars::
