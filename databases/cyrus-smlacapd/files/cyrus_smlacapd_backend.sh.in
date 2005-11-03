@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/cyrus-smlacapd/files/cyrus_smlacapd_backend.sh.in,v 1.1 2005/11/03 07:53:18 pav Exp $
 #
 
 # PROVIDE: cyrus_smlacapd_backend
@@ -13,7 +13,7 @@
 #
 prefix=%%PREFIX%%
 cyrus=${prefix}/cyrus
-. %%RC_SUBR$$
+. %%RC_SUBR%%
 
 name="cyrus_smlacapd_backend"
 rcvar=`set_rcvar`
