@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/vietnamese/vnterm/pkg-plist,v 1.4 2000/07/05 06:10:27 asami Exp $
+@comment $FreeBSD: ports/vietnamese/vnterm/pkg-plist,v 1.5 2001/02/10 23:56:37 obrien Exp $
 bin/vnterm
 bin/VNterm
 share/doc/vnterm/README
+lib/X11/app-defaults/VNTerm
 @dirrm share/doc/vnterm
