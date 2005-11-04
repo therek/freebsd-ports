@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.878 2005/11/04 21:23:28 thierry Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.879 2005/11/04 22:35:05 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -50,6 +50,10 @@ Note:  Please add new entries to the beginning of this file.
 	    all versions of PEAR can lead to the execution of
 	    arbitrary PHP code upon running the "pear" command
 	    or loading the Web/Gtk frontend.</p>
+	  <p>To be vulnerable, a user must explicitly install a
+	    publicly released malicious package using the PEAR
+	    installer, or explicitly install a package that depends on
+	    a malicious package.
 	</blockquote>
       </body>
     </description>
