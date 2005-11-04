@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/dns/powerdns/files/pdns.sh.in,v 1.2 2005/10/30 11:19:55 pav Exp $
 #
 
 # PROVIDE: pdns_server
@@ -8,7 +8,7 @@
 # KEYWORD: FreeBSD shutdown
 
 #
-# Add the following lines to /etc/rc.conf to enable dovecot:
+# Add the following lines to /etc/rc.conf to enable powerdns:
 #
 #pdns_enable="YES"
 #
