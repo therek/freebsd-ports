@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.97 2005/11/05 05:10:27 marcus Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.334 2005/10/23 16:37:47 marcus Exp $
 #
@@ -567,7 +567,7 @@ Gnome_Post_Include=		bsd.gnome.mk
 # backward compatibility with old ports that have not converted to the new
 # GNOME infrastructure.
 .if defined(USE_GTK)
-.warning The USE_GTK macro is deprecated. It should be replaced by USE_GNOME=gtk12.
+#.warning The USE_GTK macro is deprecated. It should be replaced by USE_GNOME=gtk12.
 USE_GNOME+=	gtk12
 .endif
 # End of obsolete macros
@@ -576,7 +576,7 @@ USE_GNOME+=	gtk12
 # Hack USE_GNOME to the modular infrastructure for port maintainers that
 # didn't do so themselves.  New ports should NOT set USE_GNOME=yes.
 . if ${USE_GNOME}=="yes"
-.warning The USE_GNOME=yes component is deprecated. It should be replaced by some combination of gnomeprefix, gnomehack, and gtkhtml
+#.warning The USE_GNOME=yes component is deprecated. It should be replaced by some combination of gnomeprefix, gnomehack, and gtkhtml
 USE_GNOME:=	${USE_GNOME:S/yes//}
 USE_GNOME+=	gnomeprefix gnomehack gtkhtml
 . endif
