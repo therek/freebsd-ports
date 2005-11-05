@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.794 2005/11/05 05:07:56 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.795 2005/11/05 05:51:56 mezz Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1722,3 +1722,4 @@ editors/gedit-plugins||2005-11-04|This component is unmaintained, and has succum
 www/pyphany||2005-11-04|Has been merged into epiphany
 editors/abiword-devel|editors/abiword|2005-11-04|Has been merged into abiword
 editors/abiword-plugins-devel|editors/abiword-plugins|2005-11-04|Has been merged into abiword-plugins
+net/trafshow4|net/trafshow|2005-11-05|obsolete version, use net/trafshow instead
