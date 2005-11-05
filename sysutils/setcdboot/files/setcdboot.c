@@ -28,7 +28,7 @@
  * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * $FreeBSD$
+ * $FreeBSD: ports/sysutils/setcdboot/files/setcdboot.c,v 1.1.1.1 2000/01/18 03:25:05 obrien Exp $
  */
 
 /*
@@ -61,6 +61,8 @@ struct ptable_ent {
 #define cdb2off(bno)	((bno) * ISO_DEFAULT_BLOCK_SIZE)
 
 /* XXX these should be in the system headers */
+#include <osreldate.h>
+#if __FreeBSD_version < 700003
 static __inline int
 isonum_722(u_char *p)
 {
@@ -72,6 +74,7 @@ isonum_732( u_char *p)
 {
 	return (*p << 24)|(p[1] << 16)|(p[2] << 8)|p[3];
 }
+#endif
 
 static int
 dirmatch(const char *path, struct iso_directory_record *dp)
