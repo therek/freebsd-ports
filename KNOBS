@@ -1,7 +1,7 @@
 #
 # KNOBS - A list of popular knobs and descriptions
 #
-# $FreeBSD$
+# $FreeBSD: ports/KNOBS,v 1.1 2005/11/05 06:59:55 ahze Exp $
 #
 # Rules to adding knobs:
 #
@@ -12,12 +12,12 @@
 #     When a port has a lib-prefix (ie: libquicktime, libxine)
 #      the lib-prefix should be stipped from the knob name.
 #      (ie: QUICKTIME, XINE).
-#     
+#
 #
 # Keep this list sorted in alphabetical order
 #
 # Knob name:		Knob Description:
-#  Length  |		|                   Length                   | 
+#  Length  |		|                   Length                   |
 
 A52			ATSC A/52 audio decoding (used in most dvds)
 ARTS			aRts support via the KDE sound daemon
