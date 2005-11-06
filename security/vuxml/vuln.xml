@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.879 2005/11/04 22:35:05 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.880 2005/11/04 22:49:33 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -53,7 +53,7 @@ Note:  Please add new entries to the beginning of this file.
 	  <p>To be vulnerable, a user must explicitly install a
 	    publicly released malicious package using the PEAR
 	    installer, or explicitly install a package that depends on
-	    a malicious package.
+	    a malicious package.</p>
 	</blockquote>
       </body>
     </description>
@@ -4494,7 +4494,7 @@ Note:  Please add new entries to the beginning of this file.
       <package>
 	<name>ruby</name>
 	<name>ruby_static</name>
-	<range><le>1.8.2_3</le></range>
+	<range><gt>1.8.*</gt><lt>1.8.2_3</lt></range>
       </package>
     </affects>
     <description>
@@ -4518,6 +4518,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2005-06-22</discovery>
       <entry>2005-06-23</entry>
+      <modified>2005-11-06</modified>
     </dates>
   </vuln>
 
