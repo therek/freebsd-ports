@@ -1,9 +1,8 @@
-@comment $FreeBSD: ports/devel/distcc/pkg-plist,v 1.13 2003/12/19 11:53:22 clement Exp $
+@comment $FreeBSD: ports/devel/distcc/pkg-plist,v 1.14 2004/07/28 18:32:05 pav Exp $
 bin/distcc
 bin/distccmon-text
 %%WITH_GNOME%%bin/distccmon-gnome
 sbin/distccd
-etc/rc.d/distccd.sh
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL
 %%PORTDOCS%%%%DOCSDIR%%/NEWS
