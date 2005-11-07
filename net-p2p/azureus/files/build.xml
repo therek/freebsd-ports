@@ -1,6 +1,6 @@
 <!-- Under a BSDL license. Copyright by Mario S F Ferreira <lioux@FreeBSD.org> 2005- -->
 <!-- Under a BSDL license. Copyright by jrandom 2005- -->
-<!-- $FreeBSD: ports/net/azureus/files/build.xml,v 1.2 2005/09/10 00:13:20 lioux Exp $ -->
+<!-- $FreeBSD: ports/net/azureus/files/build.xml,v 1.3 2005/11/02 04:18:35 lioux Exp $ -->
 <project basedir="." default="dist" name="azureus">
      <description>
 	Builds Azureus
@@ -19,7 +19,7 @@
 
    <target name="compile" depends="init" description="compile the source " >
      <!-- Compile the java code from ${src} into ${build} -->
-     <javac srcdir="." destdir="${build}" fork="yes" memoryMaximumSize="80m">
+     <javac srcdir="." destdir="${build}" fork="yes" memoryMaximumSize="64m">
        <include name="**/*.java"/>
        <exclude name="**/Win32*.java"/>
        <exclude name="**/swt/osx/**"/>
