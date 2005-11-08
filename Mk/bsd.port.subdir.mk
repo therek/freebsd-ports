@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.59 2005/02/07 11:17:50 krion Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.60 2005/02/28 21:09:04 krion Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -107,6 +107,7 @@ TARGETS+=	ignorelist
 TARGETS+=	makesum
 TARGETS+=	maintainer
 TARGETS+=	package
+TARGETS+=	package-recursive
 TARGETS+=	realinstall
 TARGETS+=	reinstall
 TARGETS+=	tags
@@ -365,6 +366,7 @@ search: ${PORTSDIR}/${INDEXFILE}
 	    -v xkeylim="$${xkeylim:-${PORTSEARCH_XKEYLIM}}" \
 	    -v display="$${display:-${PORTSEARCH_DISPLAY_FIELDS}}" \
 	'BEGIN { \
+            gsub(/\+/,"\\+",name); \
 	    if (substr(there, 1, length(top)) == top) \
 	      there = "${PORTSDIR}" substr(there, 1 + length(top)); \
 	    therelen = length(there); \
