@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/sysutils/cfengine2/pkg-plist,v 1.13 2005/10/07 06:58:31 sergei Exp $
 sbin/cfagent
 sbin/cfdoc
 sbin/cfenvd
@@ -10,7 +10,6 @@ sbin/cfkey
 sbin/cfrun
 sbin/cfservd
 sbin/cfshow
-sbin/vicf
 %%EXAMPLESDIR%%/cf.chflags.example
 %%EXAMPLESDIR%%/cf.freebsd.example
 %%EXAMPLESDIR%%/cf.ftp.example
