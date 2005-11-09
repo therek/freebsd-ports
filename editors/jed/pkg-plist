@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/jed/pkg-plist,v 1.10 2005/05/15 20:01:54 jylefort Exp $
+@comment $FreeBSD: ports/editors/jed/pkg-plist,v 1.11 2005/10/27 18:04:13 garga Exp $
 bin/jed
 bin/jed-script
 bin/rgrep
@@ -169,4 +169,5 @@ lib/jed/lib/yankpop.sl
 @dirrm lib/jed/lib/colors
 @dirrm lib/jed/lib/tm
 @dirrm lib/jed/lib
+@dirrm lib/jed/info
 @dirrm lib/jed
