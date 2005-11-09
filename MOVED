@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.801 2005/11/09 07:47:42 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.802 2005/11/09 08:21:01 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1924,3 +1924,7 @@ net/psi|net-im/psi|2005-11-09|Moved to a new net-im category
 net/py-jabber|net-im/py-jabber|2005-11-09|Moved to a new net-im category
 net/py-twistedWords|net-im/py-twistedWords|2005-11-09|Moved to a new net-im category
 net/p5-Net-Jabber|net-im/p5-Net-Jabber|2005-11-09|Moved to a new net-im category
+net/licq|net-im/licq|2005-11-09|Moved to a new net-im category
+net/licq-console|net-im/licq-console|2005-11-09|Moved to a new net-im category
+net/licq-osd|net-im/licq-osd|2005-11-09|Moved to a new net-im category
+net/licq-qt-gui|net-im/licq-qt-gui|2005-11-09|Moved to a new net-im category
