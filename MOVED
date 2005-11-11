@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.810 2005/11/11 22:48:42 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.811 2005/11/11 22:51:34 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1942,3 +1942,4 @@ mail/gdesklets-imapmail||2005-11-11|Deleted because of removed dependency
 deskutils/gdesklets-gnomebar||2005-11-11|Deleted because of removed dependency
 deskutils/gdesklets-sensor-psi_iconbutton||2005-11-11|Deleted; dead and unfetchable
 deskutils/gdesklets-sensor-psi_theme||2005-11-11|Deleted; dead and unfetchable
+deskutils/gdesklets-psi_themes||2005-11-11|Deleted; dead and unfetchable
