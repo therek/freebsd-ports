@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.805 2005/11/10 04:22:28 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.806 2005/11/10 23:28:05 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1935,3 +1935,4 @@ misc/gaim-bangexec|net-im/gaim-bangexec|2005-11-10|Moved to a new net-im categor
 misc/gaim-guifications|net-im/gaim-guifications|2005-11-10|Moved to a new net-im category
 misc/gaim-ignorance|net-im/gaim-ignorace|2005-11-10|Moved to a new net-im category
 net/eva|net-im/eva|2005-11-11|Moved to a new net-im category
+astro/gdesklets-goodweather-psi||2005-11-11|Deleted because of removed dependency
