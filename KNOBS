@@ -1,7 +1,7 @@
 #
 # KNOBS - A list of popular knobs and descriptions
 #
-# $FreeBSD: ports/KNOBS,v 1.1 2005/11/05 06:59:55 ahze Exp $
+# $FreeBSD: ports/KNOBS,v 1.2 2005/11/05 16:15:53 marcus Exp $
 #
 # Rules to adding knobs:
 #
@@ -89,3 +89,4 @@ X11			Support for X11
 X264			H.264/AVC (MPEG4 part 10) multimedia codec
 XINE			XINE multimedia support
 XVID			XVID multimedia mpeg4 codec support
+ZVBI			Adds support to access raw VBI capture devices
