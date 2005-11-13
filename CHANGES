@@ -28,7 +28,7 @@ The following changes were introduced:
 
   * Add bsd.tcl.mk
     It introduces USE_TCL/USE_TCL_BUILD knobs to support various
-    version of tcl (8.0 -> 8.4) 
+    version of tcl (8.0 -> 8.4)
 
   * Fix cosmetic bugs in security-check target
 
@@ -44,7 +44,7 @@ The following changes were introduced:
     It introduces DESKTOPDIR and DESKTOP_ENTRIES knobs
 
   * Add SHA256 support to "*checksum" targets
-  
+
   * Fix USE_PYTHON with OPTIONS
 
   * Force NO_LINT to MAKE_ENV to avoid library breaks
@@ -986,4 +986,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.46 2005/11/05 07:06:32 marcus Exp $
+$FreeBSD: ports/CHANGES,v 1.47 2005/11/08 09:02:51 clement Exp $
