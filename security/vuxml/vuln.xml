@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.887 2005/11/13 21:39:56 sem Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.888 2005/11/14 08:45:08 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -4866,11 +4866,13 @@ Note:  Please add new entries to the beginning of this file.
     </description>
     <references>
       <bid>13993</bid>
+      <cvename>CVE-2005-1993</cvename>
       <mlist msgid="200506201424.j5KEOhQI024645@xerxes.courtesan.com">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=111928183431376</mlist>
     </references>
     <dates>
       <discovery>2005-06-20</discovery>
       <entry>2005-06-20</entry>
+      <modified>2005-11-14</modified>
     </dates>
   </vuln>
 
