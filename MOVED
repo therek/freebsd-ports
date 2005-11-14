@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.812 2005/11/11 22:55:53 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.813 2005/11/12 18:52:17 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1945,3 +1945,5 @@ deskutils/gdesklets-sensor-psi_theme||2005-11-11|Deleted; dead and unfetchable
 deskutils/gdesklets-psi_themes||2005-11-11|Deleted; dead and unfetchable
 devel/libidn|dns/libidn|2005-11-12|Moved to a better category
 devel/p5-Net-LibIDN|dns/p5-Net-LibIDN|2005-11-12|Moved to a better category
+net/libnet|net/libnet10|2005-11-14|Moved
+net/libnet-devel/net/libnet|2005-11-14|Moved
