@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.813 2005/11/12 18:52:17 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.814 2005/11/14 17:07:00 sem Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1947,3 +1947,4 @@ devel/libidn|dns/libidn|2005-11-12|Moved to a better category
 devel/p5-Net-LibIDN|dns/p5-Net-LibIDN|2005-11-12|Moved to a better category
 net/libnet|net/libnet10|2005-11-14|Moved
 net/libnet-devel/net/libnet|2005-11-14|Moved
+graphics/libpixman||2005-11-14|Project merged into cairo
