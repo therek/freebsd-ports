@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.13 2005/07/01 17:04:53 ade Exp $
+# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.14 2005/07/02 05:02:24 marcus Exp $
 #
 # Please view me with 4 column tabs!
 #
@@ -75,6 +75,7 @@ USE_AUTOTOOLS_COMPAT+=	libtool:${WANT_LIBTOOL_VER}:env
 # Ensure that we're not mixing and matching old and new systems
 #
 .if ${USE_AUTOTOOLS_COMPAT}!=""
+.warning "Old autotools variables detected.  Replace with USE_AUTOTOOLS= ${USE_AUTOTOOLS_COMPAT}"
 . if defined(USE_AUTOTOOLS)
 BROKEN+=	"Mix and match of old and new autotools system prohibited"
 . else
