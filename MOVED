@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.816 2005/11/15 08:35:33 az Exp $
+# $FreeBSD: ports/MOVED,v 1.817 2005/11/15 11:35:43 barner Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1951,3 +1951,4 @@ graphics/libpixman||2005-11-14|Project merged into cairo
 security/hping|net/hping|2005-11-15|Moved to a better category
 lang/dis||2005-11-15|Master site has vanished
 lang/malbolge||2005-11-15|Master site has vanished
+x11-themes/kde-icons-crystalcurve||2005-11-15|Distfile vanished
