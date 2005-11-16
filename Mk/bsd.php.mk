@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.17 2005/09/08 08:34:40 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.18 2005/11/15 06:47:45 ade Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -49,6 +49,7 @@ PHP_EXT_DIR=	20020429
 PHP_EXT_DIR=	20041030
 .endif
 .if exists(${LOCALBASE}/include/apache2/httpd.h)
+APXS?=		${LOCALBASE}/sbin/apxs
 APACHE_MPM!=	${APXS} -q MPM_NAME
 .if ${APACHE_MPM} == "worker"
 PHP_EXT_DIR:=	${PHP_EXT_DIR}-zts
