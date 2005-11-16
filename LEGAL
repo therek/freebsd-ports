@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.430 2005/10/29 16:01:29 linimon Exp $
+# $FreeBSD: ports/LEGAL,v 1.431 2005/11/13 15:45:52 krion Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -584,6 +584,8 @@ ue*dev.zip		editors/uemacs		Resale allowed for media cost
 						only
 uDrawGraph-*		graphics/uDrawGraph	binary under GNU LGPL without
 						accompanying source
+uppaal.zip		devel/uppaal		Downloading requires completion
+						of a license agreement
 upsmon*			sysutils/upsmon		Redistribute only with
 						original source code
 urchin*.tar.gz		www/urchin5		Commercial software, also comes
