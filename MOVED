@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.820 2005/11/16 14:47:18 lawrance Exp $
+# $FreeBSD: ports/MOVED,v 1.821 2005/11/16 20:08:32 mnag Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1957,3 +1957,5 @@ net/gdesklets-sensor-psi_network||2005-11-16|Dead and unfetchable
 net/gdesklets-networkinfo||2005-11-16|Deleted because of removed dependency
 net/gdesklets-lt-network||2005-11-16|Deleted because of removed dependency
 deskutils/smeg|deskutils/alacarte|2005-11-16|Now project name is alacarte
+devel/bison1875||2005-11-16|No longer needed
+databases/postgresql-devel||2005-11-16|PostgreSQL 8.1 has landed
