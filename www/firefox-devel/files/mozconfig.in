@@ -1,5 +1,5 @@
 # .mozconfig.in -*-shell-script-*-
-# $FreeBSD$
+# $FreeBSD: ports/www/firefox-devel/files/mozconfig.in,v 1.35 2005/11/05 06:54:48 marcus Exp $
 #   $MCom: ports/www/firefox-devel/files/mozconfig.in,v 1.7 2005/10/09 19:40:40 marcus Exp $
 ######################################################################
 # standard opts from README
@@ -32,7 +32,7 @@ ac_add_options --x-libraries=@X11BASE@/lib
 ac_add_options --with-system-jpeg=@LOCALBASE@
 ac_add_options --with-system-zlib
 ac_add_options --with-system-png=@LOCALBASE@
-ac_add_options --without-system-nspr
+ac_add_options --with-system-nspr
 ac_add_options --with-gssapi=@KRB5_HOME@
 ######################################################################
 # set compile/link features
