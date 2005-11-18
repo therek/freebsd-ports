@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.823 2005/11/17 08:20:53 sem Exp $
+# $FreeBSD: ports/MOVED,v 1.824 2005/11/17 15:44:32 sem Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1966,3 +1966,4 @@ editors/semi113-xemacs21-mule||2005-11-17|Deleted from ports collection
 mail/mew-xemacs21-mule||2005-11-17|Deleted from ports collection
 mail/mew2-xemacs21-mule||2005-11-17|Deleted from ports collection
 mail/mew3-xemacs21-mule||2005-11-17|Deleted from ports collection
+security/racoon||2005-11-18|removed, successor is ipsec-tools
