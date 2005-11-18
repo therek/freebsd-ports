@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/smartmontools/files/smartd.sh,v 1.3 2004/07/15 14:26:07 nork Exp $
+# $FreeBSD: ports/sysutils/smartmontools/files/smartd.sh,v 1.4 2005/11/17 22:04:25 flz Exp $
 
 # PROVIDE: smartd
 # REQUIRE: DAEMON
@@ -25,7 +25,7 @@ command="%%PREFIX%%/sbin/smartd"
 load_rc_config $name
 
 : ${smartd_config="%%PREFIX%%/etc/smartd.conf"}
-: ${smartd_flags="--configfile=${smartd_config}"}
+: ${smartd_flags="-c ${smartd_config}"}
 
 pidfile="${smartd_pidfile}"
 required_files="${smartd_config}"
