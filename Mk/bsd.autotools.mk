@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.16 2005/11/15 06:58:03 ade Exp $
+# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.17 2005/11/18 23:21:49 ade Exp $
 #
 # Please view me with 4 column tabs!
 #
@@ -378,7 +378,7 @@ run-autotools-autoheader:
 # libtool port.  See above for default values of LIBTOOLFILES.
 
 .if !target(patch-autotools)
-patch-autotools:
+patch-autotools::
 . if defined(AUTOTOOL_libtool_inc)
 	@(cd ${PATCH_WRKSRC}; \
 	for file in ${LIBTOOLFILES}; do \
