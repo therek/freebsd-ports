@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/avahi/files/avahi-dnsconfd.sh,v 1.1 2005/11/19 04:34:52 marcus Exp $
 #
 # PROVIDE: avahi_dnsconfd
-# REQUIRE: DAEMON
+# REQUIRE: DAEMON dbus
 # KEYWORD: FreeBSD
 #
 # avahi-dnsconfd connects to a running avahi-daemon and runs  the script

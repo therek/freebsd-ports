@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/avahi/files/avahi-daemon.sh,v 1.1 2005/11/19 04:34:52 marcus Exp $
 #
 # PROVIDE: avahi_daemon
-# REQUIRE: DAEMON
+# REQUIRE: DAEMON dbus
 # KEYWORD: FreeBSD
 #
 # Avahi's mDNSResponder, a Zeroconf (Bonjour) service advertisement daemon.
