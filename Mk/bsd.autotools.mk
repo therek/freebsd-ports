@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.17 2005/11/18 23:21:49 ade Exp $
+# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.18 2005/11/19 06:02:16 ade Exp $
 #
 # Please view me with 4 column tabs!
 #
@@ -79,6 +79,16 @@ USE_AUTOTOOLS_COMPAT+=	libtool:${WANT_LIBTOOL_VER}:env
 BROKEN+=	"Mix and match of old and new autotools system prohibited"
 . else
 USE_AUTOTOOLS=	${USE_AUTOTOOLS_COMPAT}
+_AUTOTOOLS_PN=	${.CURDIR:C/${PORTSDIR}\///}
+pre-everything::
+	@${ECHO} "*** AUTOTOOLS WARNING for ${_AUTOTOOLS_PN}"
+	@${ECHO} This port is using old autotools constructs which wil be"
+	@${ECHO} "disappearing on 1st January 2006"
+	@${ECHO} ""
+	@${ECHO} "In most cases, this warning can be fixed by removing"
+	@${ECHO} "all the old constructs and replacing them with:"
+	@${ECHO} "  USE_AUTOTOOLS= ${USE_AUTOTOOLS_COMPAT}"
+	@${ECHO} ""
 . endif
 .endif
 
