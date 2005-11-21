@@ -8,7 +8,7 @@
 # * Checks if the 'www' user exists. If it does, then it displays
 #   a message.
 #
-# $FreeBSD: ports/www/cocoon/files/pkg-deinstall,v 1.1 2004/07/01 22:30:19 glewis Exp $
+# $FreeBSD: ports/www/cocoon/files/pkg-deinstall,v 1.2 2005/04/02 22:14:50 hq Exp $
 #
 # Borrowed from the jakarta-tomcat port
 #
@@ -43,11 +43,13 @@ if [ "$2" = "DEINSTALL" ]; then
         fi
     fi
 
-    echo -n ">> Removing log file (${LOG_FILE})..."
-    if rm ${LOG_FILE} > /dev/null 2> /dev/null ; then
-        echo " [ DONE ]"
-    else
-        echo " [ FAILED ]"
+    if [ -e ${LOG_FILE} ] ; then
+        echo -n ">> Removing log file (${LOG_FILE})..."
+        if rm ${LOG_FILE} > /dev/null 2> /dev/null ; then
+            echo " [ DONE ]"
+        else
+            echo " [ FAILED ]"
+        fi
     fi
 fi
 

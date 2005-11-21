@@ -4,7 +4,7 @@
 # Author:        Jean-Baptiste Quenot <jb.quenot@caraldi.com>
 # Purpose:       Control cocoon process
 # Date Created:  2004-05-04 11:14:05
-# Revision:      $FreeBSD: ports/www/cocoon/files/cocoonctl,v 1.1 2004/07/01 22:30:19 glewis Exp $
+# Revision:      $FreeBSD: ports/www/cocoon/files/cocoonctl,v 1.2 2005/04/02 22:14:50 hq Exp $
 ################################################################################
 # Copyright (c) 2004, Jean-Baptiste Quenot <jb.quenot@caraldi.com>
 # All rights reserved.
@@ -141,19 +141,20 @@ if __name__ == '__main__':
     APP_HOME = "%%APP_HOME%%"
     PID_FILE = "%%PID_FILE%%"
     COMMAND = "%%PREFIX%%/sbin/%%APP_NAME%%.sh"
+    os.environ["JAVA_OPTIONS"] = " ".join(sys.argv[1:-1])
     ARGS = [COMMAND, "servlet"]
 
-    if len(sys.argv) != 2:
+    if len(sys.argv) < 2:
         usage()
         sys.exit(1)
 
-    if sys.argv[1] == "start":
+    if sys.argv[-1] == "start":
         start()
 
-    elif sys.argv[1] == "stop":
+    elif sys.argv[-1] == "stop":
         stop()
 
-    elif sys.argv[1] == "restart":
+    elif sys.argv[-1] == "restart":
         stop()
         start()
 
