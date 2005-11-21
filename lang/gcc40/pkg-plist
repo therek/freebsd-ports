@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.68 2005/07/15 16:18:19 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.69 2005/07/29 18:55:07 gerald Exp $
 bin/c++40
 bin/cpp40
 bin/g++40
@@ -11,4 +11,5 @@ bin/%%GNU_HOST%%-gcc-%%GCC_VER%%
 bin/%%GNU_HOST%%-gcc40
 include/mf-runtime.h
 %%FORTRAN%%bin/gfortran40
+%%FORTRAN%%bin/%%GNU_HOST%%-gfortran40
 @comment Insert PLIST.lib here
