@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/p5-HTTP-Proxy/pkg-plist,v 1.4 2005/09/06 13:45:56 mat Exp $
 %%SITE_PERL%%/HTTP/Proxy.pm
 %%SITE_PERL%%/HTTP/Proxy/BodyFilter.pm
 %%SITE_PERL%%/HTTP/Proxy/BodyFilter/complete.pm
@@ -11,6 +11,7 @@
 %%SITE_PERL%%/HTTP/Proxy/Engine.pm
 %%SITE_PERL%%/HTTP/Proxy/Engine/Legacy.pm
 %%SITE_PERL%%/HTTP/Proxy/Engine/NoFork.pm
+%%SITE_PERL%%/HTTP/Proxy/Engine/ScoreBoard.pm
 %%SITE_PERL%%/HTTP/Proxy/HeaderFilter.pm
 %%SITE_PERL%%/HTTP/Proxy/HeaderFilter/simple.pm
 %%SITE_PERL%%/HTTP/Proxy/HeaderFilter/standard.pm
