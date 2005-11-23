@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/drweb/pkg-install,v 1.7 2004/11/24 18:14:11 sem Exp $
+# $FreeBSD: ports/security/drweb/pkg-install,v 1.8 2005/10/13 15:03:39 ehaupt Exp $
 #
 
 if [ "$2" != "POST-INSTALL" ]; then
@@ -52,4 +52,5 @@ echo ""
 chown -R ${USER}:${GROUP} ${DRWEB_PREFIX}
 chown -R ${USER}:${GROUP} ${DRWEB_VARPREFIX}
 chmod 0750 ${DRWEB_VARPREFIX}
+chown -R ${USER}:${GROUP} ${PREFIX}/etc/drweb
 exit 0
