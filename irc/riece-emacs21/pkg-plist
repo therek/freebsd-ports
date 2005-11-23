@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/irc/riece/pkg-plist,v 1.12 2005/09/04 07:25:39 lawrance Exp $
+@comment $FreeBSD: ports/irc/riece/pkg-plist,v 1.13 2005/10/04 23:33:09 edwin Exp $
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-000.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-000.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-200.el
@@ -21,6 +21,8 @@
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-biff.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-button.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-button.elc
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-cache.el
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-cache.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-channel.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-channel.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-coding.el
