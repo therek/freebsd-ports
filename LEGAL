@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.436 2005/11/23 02:53:44 jylefort Exp $
+# $FreeBSD: ports/LEGAL,v 1.437 2005/11/23 12:04:18 edwin Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -647,3 +647,5 @@ ztelnet-*		net/ztelnet		zmodem code has restrictive
 						copyright
 gngeo-*                 emulators/gngeo         The Neo-Geo BIOS
 						can not be redistributed
+twelf-*			lang/twelf		License is currently
+						indeterminate
