@@ -1,9 +1,10 @@
-@comment $FreeBSD: ports/security/libtasn1/pkg-plist,v 1.5 2004/08/06 22:42:49 sergei Exp $
+@comment $FreeBSD: ports/security/libtasn1/pkg-plist,v 1.6 2005/02/07 12:26:09 sergei Exp $
 bin/libtasn1-config
 include/libtasn1.h
 lib/libtasn1.a
 lib/libtasn1.so
 lib/libtasn1.so.2
+libdata/pkgconfig/libtasn1.pc
 share/aclocal/libtasn1.m4
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/NEWS
