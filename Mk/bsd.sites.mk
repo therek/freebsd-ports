@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.345 2005/11/25 22:34:34 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.346 2005/11/28 06:57:59 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -902,8 +902,9 @@ MASTER_SITE_REDHAT_LINUX+= \
 #
 .if !defined(IGNORE_MASTER_SITE_RINGSERVER)
 MASTER_SITE_RINGSERVER+=	\
-	ftp://www.dnsbalance.ring.gr.jp/pub/%SUBDIR%/ \
-	http://www.dnsbalance.ring.gr.jp/archives/%SUBDIR%/
+	http://ring.sakura.ad.jp/archives/%SUBDIR%/ \
+	http://ring.riken.jp/archives/%SUBDIR%/ \
+	http://ring.ip-kyoto.ad.jp/archives/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_RUBY)
