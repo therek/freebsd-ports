@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.894 2005/11/27 17:57:19 hrs Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.895 2005/11/28 15:37:03 mnag Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -228,7 +228,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>flyspray</name>
-	<range><le>0.9.8</le></range>
+	<range><lt>0.9.8</lt></range>
       </package>
     </affects>
     <description>
@@ -246,12 +246,14 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
+      <bid>15209</bid>
       <url>http://secunia.com/advisories/17316/</url>
       <url>http://lostmon.blogspot.com/2005/10/flyspray-bug-killer-multiple-variable.html</url>
     </references>
     <dates>
       <discovery>2005-10-26</discovery>
       <entry>2005-11-10</entry>
+      <modified>2005-11-29</modified>
     </dates>
   </vuln>
 
