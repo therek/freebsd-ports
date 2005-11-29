@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.30 2005/02/13 10:51:44 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.31 2005/10/19 12:41:32 andreas Exp $
 
 if [ "$BATCH" != "yes" ]; then
 
@@ -136,9 +136,6 @@ while [ "$1" ]; do
 		echo RUN_DEPENDS+=smbclient:${PORTSDIR}/net/samba
 		;;
 	\"BZIP2\")
-		if [ ! -x /usr/bin/bzip2 ]; then
-			echo RUN_DEPENDS+=bunzip2:${PORTSDIR}/archivers/bzip2
-		fi
 		;;
 	\"FREEZE\")
 		echo RUN_DEPENDS+=melt:${PORTSDIR}/archivers/freeze
