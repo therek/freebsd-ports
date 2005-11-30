@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc41/pkg-plist,v 1.74 2005/09/25 19:35:06 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc41/pkg-plist,v 1.75 2005/11/08 22:15:53 gerald Exp $
 bin/c++41
 bin/cpp41
 bin/g++41
@@ -16,6 +16,7 @@ include/ssp/stdio.h
 include/ssp/unistd.h
 @unexec rmdir %D/include/ssp 2>/dev/null || true
 %%FORTRAN%%bin/gfortran41
+%%FORTRAN%%bin/%%GNU_HOST%%-gfortran41
 %%JAVA%%bin/addr2name.awk41
 %%JAVA%%bin/fastjar41
 %%JAVA%%bin/gcj41
