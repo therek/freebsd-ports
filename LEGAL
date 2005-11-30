@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.439 2005/11/26 19:39:21 jylefort Exp $
+# $FreeBSD: ports/LEGAL,v 1.440 2005/11/26 19:43:30 jylefort Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -651,3 +651,6 @@ gngeo-*                 emulators/gngeo         The Neo-Geo BIOS
 						can not be redistributed
 twelf-*			lang/twelf		License is currently
 						indeterminate
+pfpro-*			finance/pfpro		Only available for customers
+						subscribed to the VeriSign
+						PayFlow Pro Service
