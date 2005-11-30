@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/drweb/pkg-install,v 1.8 2005/10/13 15:03:39 ehaupt Exp $
+# $FreeBSD: ports/security/drweb/pkg-install,v 1.9 2005/11/23 11:52:15 flz Exp $
 #
 
 if [ "$2" != "POST-INSTALL" ]; then
@@ -8,6 +8,7 @@ fi
 
 DRWEB_PREFIX="$3"
 DRWEB_VARPREFIX="$4"
+PREFIX="$5"
 USER=drweb
 GROUP=${USER}
 UID=426
