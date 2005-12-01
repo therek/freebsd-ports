@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.838 2005/11/29 22:55:38 ahze Exp $
+# $FreeBSD: ports/MOVED,v 1.839 2005/11/30 16:32:12 nobutaka Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1391,7 +1391,6 @@ korean/hlatex-wansung||2005-02-18|port was broken or obsolete
 korean/hlatex-psfonts-wansung||2005-02-18|port was broken or obsolete
 korean/nhppf||2005-02-18|port was broken or obsolete
 korean/mozilla-klp||2005-02-18|port was broken or obsolete
-lang/mlton||2005-02-18|port was broken or obsolete
 lang/ruby-ri||2005-02-18|port was broken or obsolete
 mail/aileron||2005-02-18|port was broken or obsolete
 mail/cyrus-imapd||2005-02-18|port was broken or obsolete
