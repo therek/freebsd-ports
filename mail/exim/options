@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/exim/options,v 1.5 2005/03/02 21:50:48 krion Exp $
+# $FreeBSD: ports/mail/exim/options,v 1.6 2005/09/28 10:12:53 krion Exp $
 #
 # Configurable options for mail/exim. Note that the options listed
 # here are the defaults, so if you want to change them you have to
@@ -131,6 +131,10 @@
 # srs_recipient       (string*)     SRS recipient
 # srs_status          (string*)     SRS status
 
+#WITHOUT_DOMAINKEYS
+# Enable Yahoo DomainKeys support.
+# DomainKeys support depends on exiscan.
+
 #WITHOUT_TCP_WRAPPERS
 # Link against libwrap to support /etc/hosts.allow access control.
 
@@ -261,6 +265,9 @@ WITHOUT_SPF?=yes
 .endif
 .ifndef WITH_SRS
 WITHOUT_SRS?=yes
+.endif
+.ifndef WITH_DOMAINKEYS
+WITHOUT_DOMAINKEYS?=yes
 .endif
 .ifndef WITH_TCP_WRAPPERS
 WITHOUT_TCP_WRAPPERS?=yes
