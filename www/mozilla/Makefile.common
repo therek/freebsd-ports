@@ -3,7 +3,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.1 2005/11/29 21:12:27 ahze Exp $
+# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.2 2005/12/02 03:39:43 adamw Exp $
 #    $MCom: ports/www/mozilla/Makefile.common,v 1.17 2005/11/29 08:40:08 ahze Exp $
 
 # This file contains some reusable components for mozilla ports. It's of
@@ -280,6 +280,9 @@ gecko-post-patch:
 		${WRKSRC}/widget/src/gtk2/nsSound.cpp
 	@${REINPLACE_CMD} -E -e 's|libcups\.so\.[0-9]+|libcups.so|g' \
 		${WRKSRC}/gfx/src/gtk/nsDeviceContextSpecG.cpp
+	@${REINPLACE_CMD} -e 's|/usr/local/netscape|${LOCALBASE}|g ; \
+		s|/usr/local/lib/netscape|${LOCALBASE}/lib|g' \
+		${WRKSRC}/xpcom/*/SpecialSystemDirectory.cpp
 	@if [ -n "`${PKG_INFO} -xI '^bind[0-9]*-base-[0-9]'`" ]; then \
 		${ECHO_CMD} "${PKGNAME}: bind installed with PORT_REPLACES_BASE_BIND causes build problems."; \
 		${FALSE}; \
