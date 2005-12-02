@@ -7,6 +7,14 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20051202:
+  AFFECTS: users of www/plone and cmf oriented zope modules
+  AUTHOR: filippo.natali@gmail.com
+
+  www/plone has been updated to the latest 2.1.1 version. Some
+  zope modules are unfortunately incompatible with this version
+  of plone.
+
+20051202:
   AFFECTS: users of security/racoon and security/ipsec-tools
   AUTHOR: lawrance@FreeBSD.org
 
@@ -2624,4 +2632,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.247 2005/12/01 15:47:26 garga Exp $
+$FreeBSD: ports/UPDATING,v 1.248 2005/12/02 11:32:37 lawrance Exp $
