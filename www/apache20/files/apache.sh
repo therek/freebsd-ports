@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache20/files/apache.sh,v 1.13 2005/06/01 17:49:31 clement Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: apache2
@@ -93,7 +93,7 @@ checkyesno apache2ssl_enable && \
 apache2_checkconfig()
 {
 	echo "Performing sanity check on apache2 configuration:"
-	${command} ${apache2_flags} -t
+	eval "${command} ${apache2_flags} -t"
 }
 
 apache2_precmd() 
