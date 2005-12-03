@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache13/pkg-plist,v 1.58 2005/02/11 20:43:04 clement Exp $
+@comment $FreeBSD: ports/www/apache13/pkg-plist,v 1.59 2005/10/18 19:20:27 ache Exp $
 bin/checkgid
 bin/dbmmanage
 bin/htdigest
@@ -18,7 +18,7 @@ etc/apache/mime.types-dist
 @unexec if cmp -s %D/etc/apache/srm.conf %D/etc/apache/srm.conf-dist; then rm -f %D/etc/apache/srm.conf; fi
 etc/apache/srm.conf-dist
 @exec [ -f %B/srm.conf ] || cp %B/%f %B/srm.conf
-etc/rc.d/apache.sh
+etc/rc.d/%%RC_SCRIPT%%
 include/apache/ap.h
 include/apache/ap_alloc.h
 include/apache/ap_compat.h
