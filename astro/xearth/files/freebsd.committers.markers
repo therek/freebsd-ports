@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.268 2005/12/02 03:44:09 kuriyama Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.269 2005/12/02 03:45:33 kuriyama Exp $
 #
 # FreeBSD Project Committers
 #
@@ -9,7 +9,7 @@
 # Style (sorted from east to west): sort -n -r -k 2
 # Lat,		Long,		"name"	opt			# location
 
--41.21,		174.89,		"thompsa"			# Wellington, New Zealand
+-41.2124,	174.8870,	"thompsa"			# Wellington, New Zealand
 -32.90,		151.70,		"lawrance"			# Newcastle, Australia
 -34.05,		151.15,		"edwin"				# Cronulla, Australia
 -33.55,		151.1,		"bde"				# Sydney, Australia.
