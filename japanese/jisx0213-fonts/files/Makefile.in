@@ -1,11 +1,12 @@
-# $FreeBSD: ports/japanese/jisx0213-fonts/files/Makefile.in,v 1.2 2002/01/24 14:36:24 sada Exp $
+# $FreeBSD: ports/japanese/jisx0213-fonts/files/Makefile.in,v 1.3 2002/11/17 16:39:50 yoichi Exp $
 
 GZIP_CMD?=	gzip
 MKBOLD_CMD?=	mkbold
 MKITALIC_CMD?=	mkitalic
 
-DIST_ALL=	K12-1.bdf K12-2.bdf K14-1.bdf K14-2.bdf \
-		jiskan16-2000-1.bdf jiskan16-2000-2.bdf \
+DIST_ALL=	K12-1.bdf K12-2.bdf \
+		K14-2004-1.bdf K14-2000-1.bdf K14-2000-2.bdf \
+		jiskan16-2004-1.bdf jiskan16-2000-1.bdf jiskan16-2000-2.bdf \
 		jiskan24-2000-1.bdf jiskan24-2000-2.bdf
 
 DIST_NOBOLD=	${DIST_ALL}
