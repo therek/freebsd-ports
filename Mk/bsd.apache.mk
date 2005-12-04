@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.2 2005/12/03 21:28:41 clement Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.3 2005/12/04 00:18:07 clement Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -294,7 +294,7 @@ AP_BUILDEXT=	la
 PLIST_SUB+=	APACHEMODDIR="libexec/apache2" \
 			APACHEINCLUDEDIR="include/apache2"
 APACHE_PORT=	www/apache${APACHE_VERSION}
-.elif ${APACHE_VERSION} >= "21"
+.elif ${APACHE_VERSION} >= 21
 AP_BUILDEXT=	la
 PLIST_SUB+=	APACHEMODDIR="libexec/apache${APACHE_VERSION}" \
 			APACHEINCLUDEDIR="include/apache${APACHE_VERSION}"
