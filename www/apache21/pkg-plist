@@ -1,5 +1,5 @@
-@comment $FreeBSD: ports/www/apache21/pkg-plist,v 1.66 2005/10/30 20:39:04 clement Exp $
-@exec mkdir -p %D/etc/apache21 2> /dev/null
+@comment $FreeBSD: ports/www/apache21/pkg-plist,v 1.67 2005/11/30 00:13:39 pav Exp $
+@exec mkdir -p %D/etc/apache21/extra 2> /dev/null
 @unexec if cmp -s %D/etc/apache21/httpd.conf %D/%%EXAMPLESDIR%%/httpd.conf; then rm -f %D/etc/apache21/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd.conf
 @exec [ -f %D/etc/apache21/httpd.conf ] || cp %D/%%EXAMPLESDIR%%/httpd.conf %D/etc/apache21/httpd.conf
