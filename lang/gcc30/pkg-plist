@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc30/pkg-plist,v 1.43 2001/09/23 08:12:10 sf Exp $
+@comment $FreeBSD: ports/lang/gcc30/pkg-plist,v 1.44 2002/04/26 17:22:13 obrien Exp $
 bin/cpp30
 bin/g++filt30
 bin/g++30
@@ -13,19 +13,7 @@ bin/gccbug-%%GCC_REV%%
 @comment -=[ begin PLIST.gcc-lib ]=-
 @comment -=[ end PLIST.gcc-lib ]=-
 @comment	unexec install-info --delete %D/info/c-tree.info %D/info/dir
-@unexec install-info --delete %D/info/cpp.info %D/info/dir
-@unexec install-info --delete %D/info/cppinternals.info %D/info/dir
-@unexec install-info --delete %D/info/g77.info %D/info/dir
-@unexec install-info --delete %D/info/gcc.info %D/info/dir
 @comment	info/c-tree.info
 @comment	info/c-tree.info-1
 @comment	info/c-tree.info-2
 @comment	info/c-tree.info-3
-info/cpp.info
-info/cppinternals.info
-info/g77.info
-info/gcc.info
-@exec install-info %D/info/cpp.info %D/info/dir
-@exec install-info %D/info/cppinternals.info %D/info/dir
-@exec install-info %D/info/g77.info %D/info/dir
-@exec install-info %D/info/gcc.info %D/info/dir
