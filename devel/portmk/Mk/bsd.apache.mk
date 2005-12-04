@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/portmk/Mk/bsd.apache.mk,v 1.2 2005/09/19 08:57:43 clement Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -33,7 +33,7 @@ AP_PORT_IS_MODULE=	YES
 #### for backward compatibility
 .elif ${USE_APACHE:L} == yes
 .   if defined(WITH_APACHE2)
-APACHE_PORT?=	www/apache2
+APACHE_PORT?=	www/apache20
 .   else
 APACHE_PORT?=	www/apache13
 .   endif
