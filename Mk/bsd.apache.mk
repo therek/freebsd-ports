@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.1 2005/11/08 09:02:51 clement Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.2 2005/12/03 21:28:41 clement Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -34,7 +34,7 @@ AP_PORT_IS_MODULE=	YES
 #### for backward compatibility
 .elif ${USE_APACHE:L} == yes
 .   if defined(WITH_APACHE2)
-APACHE_PORT?=	www/apache2
+APACHE_PORT?=	www/apache20
 .   else
 APACHE_PORT?=	www/apache13
 .   endif
@@ -293,9 +293,7 @@ IGNORE?=	PREFIX must be egal to APXS_PREFIX.
 AP_BUILDEXT=	la
 PLIST_SUB+=	APACHEMODDIR="libexec/apache2" \
 			APACHEINCLUDEDIR="include/apache2"
-# XXX We postpone www/apache2 => www/apache20 migration
-#APACHE_PORT=	www/apache${APACHE_VERSION}
-APACHE_PORT=	www/apache2
+APACHE_PORT=	www/apache${APACHE_VERSION}
 .elif ${APACHE_VERSION} >= "21"
 AP_BUILDEXT=	la
 PLIST_SUB+=	APACHEMODDIR="libexec/apache${APACHE_VERSION}" \
@@ -307,6 +305,7 @@ PLIST_SUB+=	APACHEMODDIR="libexec/apache" \
 			APACHEINCLUDEDIR="include/apache"
 APACHE_PORT?= www/apache13
 .endif
+
 .for VAR in ${OVERRIDABLE_VARS}
 .  if defined(AP${APACHE_VERSION}_${VAR})
 ${VAR} =${AP${APACHE_VERSION}_${VAR}}
