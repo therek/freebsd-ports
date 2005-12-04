@@ -3,7 +3,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.2 2005/12/02 03:39:43 adamw Exp $
+# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.3 2005/12/02 05:30:00 mezz Exp $
 #    $MCom: ports/www/mozilla/Makefile.common,v 1.17 2005/11/29 08:40:08 ahze Exp $
 
 # This file contains some reusable components for mozilla ports. It's of
@@ -14,6 +14,9 @@
 #
 #
 # Ports can use the following:
+#
+# GECKO_PLIST_PRE_FILES  List of files to add to the beginning of plist
+# GECKO_PLIST_PRE_DIRS
 #
 # MOZILLA_PLIST_DIRS	List of directories to descend into when
 #			installing and creating the plist
@@ -316,6 +319,12 @@ gecko-create-plist:
 		${FAKEDIR}/bin/${MOZILLA}-config
 	${RM} -f ${FAKEDIR}/bin/*.bak
 # Create the plist
+.for f in ${GECKO_PLIST_PRE_FILES}
+	${ECHO_CMD} ${f} >> ${PLIST}
+.endfor
+.for f in ${GECKO_PLIST_PRE_DIRS}
+	${ECHO_CMD} "@dirrm ${f}" >> ${PLIST}
+.endfor
 	${ECHO_CMD} "${BROWSER_PLUGINS_DIR}/.${MOZILLA}.keep" >> ${PLIST}
 	${ECHO_CMD} "@unexec ${RMDIR} %D/${BROWSER_PLUGINS_DIR} 2>/dev/null || ${TRUE}" >> ${PLIST}
 	${MKDIR} ${FAKEDIR}/libdata
