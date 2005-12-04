@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.1 2005/11/08 09:02:51 clement Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.2 2005/11/11 10:29:21 vsevolod Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -96,7 +96,7 @@ BROKEN=	MySQL versions mismatch: mysql${_MYSQL_VER}-client is installed and want
 .if defined(BROKEN_WITH_MYSQL)
 .	for VER in ${BROKEN_WITH_MYSQL}
 .		if (${MYSQL_VER} == "${VER}")
-IGNORE=		"Doesn't work with MySQL version : ${MYSQL_VER} (Doesn't support MySQL ${BROKEN_WITH_MYSQL})"
+IGNORE=		Doesn't work with MySQL version : ${MYSQL_VER} (Doesn't support MySQL ${BROKEN_WITH_MYSQL})
 .		endif
 .	endfor
 .endif # BROKEN_WITH_MYSQL
