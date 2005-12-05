@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/p5-DBIx-DBSchema/pkg-plist,v 1.4 2005/03/11 14:22:29 mat Exp $
+@comment $FreeBSD: ports/databases/p5-DBIx-DBSchema/pkg-plist,v 1.5 2005/08/30 11:19:57 mat Exp $
 %%SITE_PERL%%/DBIx/DBSchema.pm
 %%SITE_PERL%%/DBIx/DBSchema/ColGroup.pm
 %%SITE_PERL%%/DBIx/DBSchema/ColGroup/Index.pm
@@ -7,6 +7,7 @@
 %%SITE_PERL%%/DBIx/DBSchema/DBD.pm
 %%SITE_PERL%%/DBIx/DBSchema/DBD/Oracle.pm
 %%SITE_PERL%%/DBIx/DBSchema/DBD/Pg.pm
+%%SITE_PERL%%/DBIx/DBSchema/DBD/SQLite.pm
 %%SITE_PERL%%/DBIx/DBSchema/DBD/Sybase.pm
 %%SITE_PERL%%/DBIx/DBSchema/DBD/mysql.pm
 %%SITE_PERL%%/DBIx/DBSchema/Table.pm
