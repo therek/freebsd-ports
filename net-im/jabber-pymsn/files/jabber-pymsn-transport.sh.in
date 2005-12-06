@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop jabber-pymsn
-# $FreeBSD: ports/net/jabber-pymsn/files/jabberd.sh,v 1.5 2004/07/29 20:56:33 pav Exp $
+# $FreeBSD: ports/net-im/jabber-pymsn/files/jabber-pymsn-transport.sh.in,v 1.1 2005/03/19 00:27:52 flz Exp $
 
 # PROVIDE: jabber_pymsn
 # REQUIRE: DAEMON
@@ -18,7 +18,6 @@ jabber_pymsn_dir=${jabberd_pymsn_dir-"%%PREFIX%%/lib/jabber/pymsn"}
 jabber_pymsn_piddir=${jabberd_pymsn_piddir-"/var/jabberd/pid"}
 jabber_pymsn_enable=${jabberd_pymsn_enable-"NO"}
 
-
 . %%RC_SUBR%%
 
 name="jabber_pymsn"
@@ -26,8 +25,8 @@ rcvar=`set_rcvar`
 command_interpreter="%%PYTHON_CMD%%"
 command="${jabber_pymsn_dir}/main.py"
 command_args="&"
+jabber_pymsn_chdir=${jabber_pymsn_dir}
 
-#procname="${PYTHON} ${jabber_pymsn_dir}/main.py"
 pidfile="${jabber_pymsn_piddir}/pymsn.pid"
 
 load_rc_config $name
