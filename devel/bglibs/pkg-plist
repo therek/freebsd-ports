@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/bglibs/pkg-plist,v 1.10 2005/08/29 12:14:46 sergei Exp $
+@comment $FreeBSD: ports/devel/bglibs/pkg-plist,v 1.11 2005/08/30 08:39:29 sergei Exp $
 bin/bg-installer
 bin/crc-gentab
 include/bglibs/adt/common.h
@@ -17,6 +17,7 @@ include/bglibs/crc/crc32.h
 include/bglibs/crc/crc32c.h
 include/bglibs/crc/crc64.h
 include/bglibs/crc/gcrc.h
+include/bglibs/crypto/hmac.h
 include/bglibs/crypto/md5.h
 include/bglibs/crypto/sha1.h
 include/bglibs/crypto/sha256.h
