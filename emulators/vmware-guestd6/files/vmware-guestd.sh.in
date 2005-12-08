@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/emulators/vmware-guestd5/files/vmware-guestd.sh,v 1.6 2005/02/06 14:04:38 sobomax Exp $
+# $FreeBSD: ports/emulators/vmware-guestd5/files/vmware-guestd.sh,v 1.7 2005/11/26 09:19:58 matusita Exp $
 #
 
 # PROVIDE: vmware-guestd
@@ -20,7 +20,7 @@ vmware_guest_vmmemctl_start()
 	echo 'Loading vmmemctl kernel module.'
 	kldload ${PREFIX}/lib/vmware-tools/modules/vmmemctl.ko >/dev/null 2>&1
 }
-vmware_guest_vmmemctl_start()
+vmware_guest_vmxnet_start()
 {
 	echo 'Loading vmxnet kernel module.'
 	kldload ${PREFIX}/lib/vmware-tools/modules/vmxnet.ko >/dev/null 2>&1
