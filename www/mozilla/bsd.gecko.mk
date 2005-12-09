@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.1 2005/11/29 21:12:27 ahze Exp $
+# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.2 2005/11/30 23:47:44 ahze Exp $
 #    $MCom: ports/www/mozilla/bsd.gecko.mk,v 1.9 2005/11/29 20:30:06 adamw Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -42,7 +42,15 @@ Gecko_Pre_Include=			bsd.gecko.mk
 #  as a gecko backend unless WITH_GECKO=firefox or WITH_GECKO=seamonkey
 #  is defined by the user.
 #
-#  Your port should check the ${GECKO} variable to see which backend
+#  Example:
+#  USE_GECKO= mozilla firefox seamonkey
+#  .include <bsd.port.pre.mk>
+#  .include "${.CURDIR}/../../www/mozilla/bsd.gecko.mk"
+#  post-patch:
+#	@${REINPALCE_CMD} -e 's|mozilla-|${GECKO}-|' \
+#		${WRKSRC}/configure
+#
+#  If you want your port to check the ${GECKO} variable to see which backend
 #  has been chosen.
 #
 #  Example: 
