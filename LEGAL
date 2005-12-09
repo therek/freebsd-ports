@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.442 2005/12/01 10:51:47 barner Exp $
+# $FreeBSD: ports/LEGAL,v 1.443 2005/12/07 14:55:14 jylefort Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -636,6 +636,8 @@ xtr1.50e*		japanese/xtr		Need to obtain permission for
 						commercial redistribution
 xtris-*.tar.gz		games/xtris		Possible trademark infringement
 xwpl-*-freebsd.tar.gz	math/xwpl		Free for Non-Commercial Use Only
+xxe-*.tar.gz		editors/xxe		Redistribution forbidden by
+						license
 xzx-pro-*.tar.gz	emulators/xzx		Redistribution forbidden by
 						license
 yasou-fpw*		japanese/yasou-fpw	No commercial use, and no
