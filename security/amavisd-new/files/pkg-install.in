@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/amavisd-new/files/pkg-install.in,v 1.1 2005/07/06 08:47:09 flz Exp $
 #
 
 USER=%%AMAVISUSER%%
@@ -46,6 +46,8 @@ if [ "$2" = "PRE-INSTALL" ]; then
     echo "Created \"${DIR}/db\" directory."
     /usr/bin/install -o ${USER} -g ${GROUP} -m 750 -d ${DIR}/tmp
     echo "Created \"${DIR}/tmp\" directory."
+    /usr/bin/install -o ${USER} -g ${GROUP} -m 750 -d ${DIR}/var
+    echo "Created \"${DIR}/var\" directory."
     /usr/bin/install -o ${USER} -g ${GROUP} -m 750 -d ${QUARANTINE}
     echo "Created \"${QUARANTINE}\" directory."    
 fi
