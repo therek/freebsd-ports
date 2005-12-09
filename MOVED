@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.845 2005/12/07 13:13:31 tdb Exp $
+# $FreeBSD: ports/MOVED,v 1.846 2005/12/09 19:24:23 ale Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1994,3 +1994,9 @@ archivers/pear-Archive_Tar||2005-12-09|Obsolated by devel/pear port
 devel/pear-Console_Getopt||2005-12-09|Obsolated by devel/pear port
 devel/pear-XML_RPC||2005-12-09|Obsolated by devel/pear port
 devel/pear-PEAR|devel/pear|2005-12-09|New pear bootstrap code
+databases/php5-dbx||2005-12-09|Unsupported in PHP 5.1
+databases/php5-oracle||2005-12-09|Unsupported in PHP 5.1
+devel/php5-dio||2005-12-09|Unsupported in PHP 5.1
+devel/php5-mcve||2005-12-09|Unsupported in PHP 5.1
+net/php5-yp||2005-12-09|Unsupported in PHP 5.1
+www/php5-mnogosearch||2005-12-09|Unsupported in PHP 5.1
