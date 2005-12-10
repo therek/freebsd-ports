@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/fetchmail/pkg-plist,v 1.20 2004/04/28 17:26:35 eik Exp $
+@comment $FreeBSD: ports/mail/fetchmail/pkg-plist,v 1.21 2005/12/06 21:07:18 barner Exp $
 bin/fetchmail
 bin/fetchmailconf
 libexec/fetchmailconf.py
@@ -8,8 +8,9 @@ libexec/fetchmailconf.py
 %%PORTDOCS%%%%DOCSDIR%%/NOTES
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%NTLMDOCS%%%%DOCSDIR%%/README.NTLM
-%%PORTDOCS%%%%SSLDOCS%%%%DOCSDIR%%/README.SSL
+%%PORTDOCS%%%%DOCSDIR%%/README.SSL
 %%PORTDOCS%%%%DOCSDIR%%/design-notes.html
+%%PORTDOCS%%%%DOCSDIR%%/esrs-design-notes.html
 %%PORTDOCS%%%%DOCSDIR%%/fetchmail-FAQ.html
 %%PORTDOCS%%%%DOCSDIR%%/fetchmail-features.html
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
