@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.3 2005/12/09 03:00:30 mezz Exp $
+# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.4 2005/12/09 03:15:07 ahze Exp $
 #    $MCom: ports/www/mozilla/bsd.gecko.mk,v 1.9 2005/11/29 20:30:06 adamw Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -136,7 +136,7 @@ XPIDL_INCL?=			`${GECKO_CONFIG} --idlflags`
 BUILD_DEPENDS+=	${${GECKO}_PLIST}:${${GECKO}_DEPENDS}
 RUN_DEPENDS+=	${${GECKO}_PLIST}:${${GECKO}_DEPENDS}
 .else
-BROKEN="Incorrect use of USE_GECKO"
+BROKEN="Unable to find a supported gecko, please check USE_GECKO"
 .endif
 
 pre-everything:: _gecko-pre-everything
