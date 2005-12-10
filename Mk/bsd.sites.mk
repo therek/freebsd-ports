@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.346 2005/11/28 06:57:59 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.347 2005/11/28 08:40:24 nork Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -942,7 +942,7 @@ MASTER_SITE_SAMBA+= \
 
 .if !defined(IGNORE_MASTER_SITE_SAVANNAH)
 MASTER_SITE_SAVANNAH+= \
-	http://savannah.nongnu.org/download/%SUBDIR%/
+	http://download.savannah.nongnu.org/releases/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_SOURCEFORGE)
