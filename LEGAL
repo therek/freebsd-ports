@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.443 2005/12/07 14:55:14 jylefort Exp $
+# $FreeBSD: ports/LEGAL,v 1.444 2005/12/09 21:22:41 fenner Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -395,6 +395,7 @@ marathon2.zip		games/marathon2-data	Bungie/Microsoft do not
 						allow charging for Marathon data
 						files.
 mathfonts-4.1/*		x11-fonts/mathfonts	No redistribution allowed
+MB339-PAN.zip		games/flightgear-mb339-pan	Redistribution prohibited
 mbrola-freebsd/*	audio/mbrola		No commercial, military use
 						voices cannot be sold
 mew-*.tar.gz		mail/mew		ITAR export-controlled
