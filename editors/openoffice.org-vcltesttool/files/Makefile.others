@@ -1,6 +1,6 @@
 # Makefile for other stuffs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2.0-devel/files/Makefile.others,v 1.4 2005/11/17 21:08:27 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2.0-devel/files/Makefile.others,v 1.5 2005/11/19 09:19:13 maho Exp $
 
 #other stuffs which are not directly related to making ports
 #package-rename: rename package for uploading
@@ -21,7 +21,6 @@ package-canonical:
 
 sdk:
 	@${ECHO_MSG} "===>   Make SDK of OpenOffice.org"
-	#@cd ${WRKSRC} ; ${TCSH} -c 'source FreeBSDEnv.Set ; cd instsetoo_native/util; dmake sdkoo'
 	@${RM} -fr ${WRKDIR}/sdk_tmp
 	@${MKDIR} ${WRKDIR}/sdk_tmp
 	@cd ${WRKDIR}/sdk_tmp ; \
@@ -33,7 +32,6 @@ sdk:
 
 ure:
 	@${ECHO_MSG} "===>   Make Uno Runtime Environment of OpenOffice.org"
-	#@cd ${WRKSRC} ; ${TCSH} -c 'source FreeBSDEnv.Set ; cd instsetoo_native/util; dmake ure_en-US'
 	@${RM} -fr ${WRKDIR}/ure_tmp
 	@${MKDIR} ${WRKDIR}/ure_tmp
 	@cd ${WRKDIR}/ure_tmp ; \
