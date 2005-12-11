@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/japanese/FreeWnn-lib/files/pkg-install.in,v 1.1 2005/12/07 10:46:19 hrs Exp $
 # an installation script for Wnn4.2
 
 check_pw()
@@ -161,10 +161,10 @@ POST-INSTALL)
 	wnn_lang=zh_CN
 	mk_startup_script ${wnnname} ${wnnserver} ${wnn_socket}
 	
-	wnnserver2=${PKG_PREFIX}/bin/cWnn4/tserver
-	wnn_lang2=zh_TW
-	wnnname2=twnn
-	wnn_socket2=/tmp/td_sockV4
+	wnnserver=${PKG_PREFIX}/bin/cWnn4/tserver
+	wnn_lang=zh_TW
+	wnnname=twnn
+	wnn_socket=/tmp/td_sockV4
 	mk_startup_script ${wnnname} ${wnnserver} ${wnn_socket}
 	;;
       ko-FreeWnn-*)
