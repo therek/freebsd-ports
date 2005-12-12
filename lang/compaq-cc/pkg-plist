@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/compaq-cc/pkg-plist,v 1.5 2001/03/21 00:28:37 obrien Exp $
+@comment $FreeBSD: ports/lang/compaq-cc/pkg-plist,v 1.6 2004/03/07 07:28:48 glewis Exp $
 @comment ccc RPM
 usr/bin/ccc
 @comment Insert PLIST.docs here
@@ -7,8 +7,8 @@ usr/bin/ccc
 @comment Insert PLIST.alphalinux here
 @comment -=[ begin PLIST.alphalinux ]=-
 @comment -=[ end PLIST.alphalinux ]=-
-usr/man/man1/ccc.1
-usr/man/man8/protect_headers_setup.8
+usr/share/man/man1/ccc.1
+usr/share/man/man8/protect_headers_setup.8
 @comment Insert PLIST.alpha-freebsd here
 @comment -=[ begin PLIST.alpha-freebsd ]=-
 @comment -=[ end PLIST.alpha-freebsd ]=-
