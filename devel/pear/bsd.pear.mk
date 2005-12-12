@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.1 2005/12/09 18:58:03 ale Exp $
 
 # Common code for pear- ports.
 
@@ -6,6 +6,8 @@ MASTER_SITES=	http://pear.php.net/get/
 PKGNAMEPREFIX=	pear-
 EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	PEAR
+
+RUN_DEPENDS+=	pear:${PORTSDIR}/devel/pear
 
 USE_REINPLACE=	yes
 
