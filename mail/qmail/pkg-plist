@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/qmail/pkg-plist,v 1.7 2005/06/06 21:49:59 pav Exp $
+@comment $FreeBSD: ports/mail/qmail/pkg-plist,v 1.8 2005/07/04 18:02:00 novel Exp $
 %%RCDLINK%%@unexec rm -f %%LOCALBASE%%/etc/rc.d/qmail.sh
 %%LDAP%%bin/auth_imap
 %%LDAP%%bin/auth_pop
@@ -161,7 +161,6 @@ scripts/mkaliasdir
 %%PORTDOCS%%%%DOCSDIR%%/SECURITY
 %%PORTDOCS%%%%DOCSDIR%%/SENDMAIL
 %%SPAMCONTROL%%%%PORTDOCS%%%%DOCSDIR%%/SMTPREPLY.spamcontrol
-%%SMTP_AUTH_TLS%%%%PORTDOCS%%%%DOCSDIR%%/SMTP_AUTH+TLS.readme
 %%PORTDOCS%%%%DOCSDIR%%/SYSDEPS
 %%PORTDOCS%%%%DOCSDIR%%/TEST.deliver
 %%PORTDOCS%%%%DOCSDIR%%/TEST.receive
