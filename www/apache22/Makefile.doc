@@ -5,7 +5,7 @@
 #      - make options output
 #      - apache2 man/docs routines
 #
-# $FreeBSD: ports/www/apache22/Makefile.doc,v 1.6 2005/12/03 22:02:58 clement Exp $
+# $FreeBSD: ports/www/apache22/Makefile.doc,v 1.7 2005/12/04 10:57:19 clement Exp $
 #
 
 ## Available knobs:
@@ -28,6 +28,7 @@
 ##                                threadpool (testing purpose only)
 ##      WITH_HTTP_PORT:           default: 80
 ##      WITH_LDAP:                Enable LDAP support (mod_auth_ldap) (implies WITH_LDAP_MODULES)
+##      WITH_(MYSQL|PGSQL|SQLITE): Enable SQL backend *dbd
 ##      WITHOUT_V4MAPPED
 ##      WITH_IPV6_V6ONLY:         Don't allow IPv6 sockets to handle IPv4 
 ##                                connections
