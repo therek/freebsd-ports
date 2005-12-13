@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20051212:
+  AFFECTS: users of net/ntop
+  AUTHOR: wxs@csh.rit.edu
+
+  ntop now installs a rcNG script.  It also logs to syslog by default.
+  To enable ntop at boot time, set the following in rc.conf(5):
+
+  ntop_enable="YES"
+
 20051210:
   AFFECTS: users of net/mldonkey-devel
   AUTHOR: lioux@FreeBSD.org
@@ -2724,4 +2733,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.253 2005/12/10 22:51:45 barner Exp $
+$FreeBSD: ports/UPDATING,v 1.254 2005/12/11 00:18:02 lioux Exp $
