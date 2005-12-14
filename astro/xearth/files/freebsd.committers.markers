@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.271 2005/12/03 11:29:42 se Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.272 2005/12/08 18:02:00 ariff Exp $
 #
 # FreeBSD Project Committers
 #
@@ -186,7 +186,7 @@
  29.16,		-82.18,		"jedgar"			# Ocala, FL, USA
  42.28,		-83.75,		"rees"				# Ann Arbor, MI, USA
  39.1361,	-84.5030,	"cokane"			# Cincinnati, OH, USA
- 33.916643,	-84.651034,	"jhb"				# (CORE) Marietta, GA, USA
+ 33.916601,	-84.641075,	"jhb"				# (CORE) Marietta, GA, USA
  34.81095,	-86.70977,	"steve"				# Huntsville, AL, USA
  43.039,	-87.906,	"silby"				# Milwaukee, WI, USA
  43.19,		-89.38,		"jlemon"			# Madison, WI, USA
