@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.848 2005/12/12 15:17:23 garga Exp $
+# $FreeBSD: ports/MOVED,v 1.849 2005/12/15 01:34:36 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2013,3 +2013,4 @@ astro/p5-SETI-Stats||2005-12-15|SETI@home software migrated, port now obsolete
 astro/seti_applet||2005-12-15|SETI@home software migrated, port now obsolete
 astro/tkseti||2005-12-15|SETI@home software migrated, port now obsolete
 astro/gkrellmseti||2005-12-15|SETI@home software migrated, port now obsolete
+astro/squeuer||2005-12-15|SETI@home software migrated, port now obsolete
