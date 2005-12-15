@@ -1,3 +1,3 @@
-# $FreeBSD$
+# $FreeBSD: ports/lang/groovy/files/set-groovy_home.sed.in,v 1.1 2005/02/21 11:21:18 hq Exp $
 14i\
-GROOVY_HOME=%%DATADIR%%
+GROOVY_HOME="${GROOVY_HOME:-"%%DATADIR%%"}"
