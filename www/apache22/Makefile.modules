@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.9 2005/12/07 20:54:42 clement Exp $
+# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.10 2005/12/13 22:26:57 clement Exp $
 #
 
 # MPM section:
@@ -141,7 +141,10 @@ AUTH_MODULES+=		auth_basic auth_digest
 AUTHN_MODULES+=		authn_file authn_dbm authn_anon authn_default
 AUTHZ_MODULES=		authz_host authz_groupfile authz_user authz_dbm \
 			authz_owner authz_default
-CACHE_MODULES=		cache disk_cache file_cache mem_cache
+CACHE_MODULES=		cache disk_cache file_cache
+.if defined(WITH_THREADS)
+CACHE_MODULES+=		mem_cache
+.endif
 DAV_MODULES=		dav dav_fs
 EXPERIMENTAL_MODULES=	bucketeer case_filter case_filter_in ext_filter charset_lite \
 			log_forensic optional_hook_export optional_hook_import \
