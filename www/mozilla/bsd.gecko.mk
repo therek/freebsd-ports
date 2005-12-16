@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.4 2005/12/09 03:15:07 ahze Exp $
+# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.5 2005/12/10 20:46:50 ahze Exp $
 #    $MCom: ports/www/mozilla/bsd.gecko.mk,v 1.9 2005/11/29 20:30:06 adamw Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -68,8 +68,6 @@ _GECKO_ALL=	firefox nvu seamonkey sunbird
 .endif
 _GECKO_ALL+=	mozilla thunderbird
 
-_NEW_GCC_GECKO=	firefox seamonkey sunbird
-
 sunbird_PORTSDIR=	deskutils
 
 thunderbird_PORTSDIR=	mail
@@ -115,13 +113,6 @@ GECKO=	${gecko}
 GECKO_FALLTRHOUGH=	${TRUE}
 .  endif
 . endfor
-.endif
-
-# Use new gcc on new geckos
-.if defined(GECKO) && ${_GECKO_ALL:M${GECKO}}!=""
-. if ${_NEW_GCC_GECKO:M${GECKO}}!=""
-USE_GCC?=	3.4+
-. endif
 .endif
 
 # Generic defines
