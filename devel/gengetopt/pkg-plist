@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/gengetopt/pkg-plist,v 1.4 2002/12/18 11:46:07 edwin Exp $
+@comment $FreeBSD: ports/devel/gengetopt/pkg-plist,v 1.5 2004/03/10 09:41:59 krion Exp $
 bin/gengetopt
 %%PORTDOCS%%%%DOCSDIR%%/COPYING
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
@@ -7,8 +7,6 @@ bin/gengetopt
 %%PORTDOCS%%%%DOCSDIR%%/NEWS
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/THANKS
-%%PORTDOCS%%%%DOCSDIR%%/cmdline1.c.html
-%%PORTDOCS%%%%DOCSDIR%%/cmdline1.h.html
 %%PORTDOCS%%%%DOCSDIR%%/examples/cmdline1.c
 %%PORTDOCS%%%%DOCSDIR%%/examples/cmdline1.h
 %%PORTDOCS%%%%DOCSDIR%%/examples/cmdline2.c
@@ -18,9 +16,8 @@ bin/gengetopt
 %%PORTDOCS%%%%DOCSDIR%%/examples/sample1.ggo
 %%PORTDOCS%%%%DOCSDIR%%/examples/sample2.ggo
 %%PORTDOCS%%%%DOCSDIR%%/gengetopt.html
-%%PORTDOCS%%%%DOCSDIR%%/man_getopt.html
-%%PORTDOCS%%%%DOCSDIR%%/no_getopt_long.txt
-%%PORTDOCS%%%%DOCSDIR%%/old_changes.html
+%%PORTDOCS%%%%DOCSDIR%%/index.html
+%%PORTDOCS%%%%DOCSDIR%%/NEWSold
 %%DATADIR%%/getopt.c
 %%DATADIR%%/getopt1.c
 %%DATADIR%%/gnugetopt.h
