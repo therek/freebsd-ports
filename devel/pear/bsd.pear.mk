@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.1 2005/12/09 18:58:03 ale Exp $
+# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.2 2005/12/12 09:16:07 ale Exp $
 
 # Common code for pear- ports.
 
@@ -129,16 +129,12 @@ do-generate-plist:
 	if [ -n "${DOCS}" ]; then echo "%%PORTDOCS%%@dirrm ${LDOCSDIR}"; fi; \
 	if [ -n "${EXAMPLES}" ]; then echo "%%PORTDOCS%%@dirrm ${LEXAMPLESDIR}"; fi; \
 	echo "@dirrm ${LPKGREGDIR}"; \
-	echo "@unexec rmdir %D/${LINSTDIR} 2> /dev/null || true"; \
-	echo "@unexec rmdir %D/${LINSTDIR:H} 2> /dev/null || true"; \
-	echo "@unexec rmdir %D/${LPEARDIR}/.registry 2> /dev/null || true"; \
-	echo "@unexec rmdir %D/${LPEARDIR}/packages 2> /dev/null || true"; \
-	echo "@unexec rmdir %D/${LPEARDIR} 2> /dev/null || true"; \
+	if [ -n "${CATEGORY}" ]; then echo "@unexec rmdir %D/${LINSTDIR} 2> /dev/null || true"; fi; \
+	echo "@unexec rmdir %D/${LPKGREGDIR:H} 2> /dev/null || true"; \
 	echo "@unexec rmdir %D/${LDOCSDIR:H} 2> /dev/null || true"; \
 	echo "@unexec rmdir %D/${LEXAMPLESDIR:H} 2> /dev/null || true"; \
 	echo "@unexec rmdir %D/${LTESTSDIR:H} 2> /dev/null || true"; \
 	echo "@unexec rmdir %D/${LDATADIR:H} 2> /dev/null || true"; \
-	echo "@unexec rmdir %D/${LSCRIPTSDIR:H} 2> /dev/null || true"; \
 	echo "@unexec rmdir %D/${LSQLSDIR:H} 2> /dev/null || true") > ${PLIST}
 . endif
 
