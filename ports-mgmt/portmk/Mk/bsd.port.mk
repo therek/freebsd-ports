@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/devel/portmk/Mk/bsd.port.mk,v 1.6 2005/11/03 21:18:09 clement Exp $
+# $FreeBSD: ports/devel/portmk/Mk/bsd.port.mk,v 1.7 2005/12/15 23:59:09 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -4215,9 +4215,9 @@ checksum: fetch check-checksum-algorithms
 				fi; \
 			done; \
 			\
-			if [ $$ignored = "true" ]; then \
+			if ( [ $$ignored = "true" ]) ; then \
 				${ECHO_MSG} "=> No suitable checksum found for $$file."; \
-				OK="${FALSE}"; \
+				OK="false"; \
 			fi; \
 			\
 		done; \
