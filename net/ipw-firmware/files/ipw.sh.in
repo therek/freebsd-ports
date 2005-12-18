@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/ipw-firmware/files/ipw.sh.in,v 1.4 2005/10/15 13:18:20 flz Exp $
+# $FreeBSD: ports/net/ipw-firmware/files/ipw.sh.in,v 1.5 2005/12/11 18:00:33 flz Exp $
 #
 
 # PROVIDE: %%DRIVERNAME%%
@@ -25,7 +25,7 @@ load_rc_config "$name"
 : ${%%DRIVERNAME%%_enable="NO"}
 : ${%%DRIVERNAME%%_interfaces="%%DRIVERNAME%%0"}
 
-command="/usr/local/sbin/%%DRIVERNAME%%control"
+command="%%PREFIX%%/sbin/%%DRIVERNAME%%control"
 
 %%DRIVERNAME%%_start_cmd()
 {
