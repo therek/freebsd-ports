@@ -38,7 +38,7 @@ upgrades.
 
   If you use the command below, everything should be fine.
 
-  $ portupgrade -n -fr 'ocaml*' 'mldonkey-*devel*'
+  $ portupgrade -fr 'ocaml*' 'mldonkey-*devel*'
 
 20051210:
   AFFECTS: users of mail/fetchmail using SSL encryption
@@ -2744,4 +2744,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.256 2005/12/13 08:31:55 ale Exp $
+$FreeBSD: ports/UPDATING,v 1.257 2005/12/13 08:56:47 barner Exp $
