@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.5 2005/12/04 17:13:42 clement Exp $
+# $FreeBSD: ports/devel/portmk/Mk/bsd.apache.mk,v 1.5 2005/12/19 06:08:26 linimon Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -97,7 +97,7 @@ CONFIGURE_ARGS+=	--disable-authn-file --disable-authn-default \
 			--disable-autoindex --disable-asis --disable-cgid \
 			--disable-cgi --disable-negotiation --disable-dir \
 			--disable-imagemap --disable-actions --disable-userdir \
-			--disable-alias
+			--disable-alias --disable-filter
 .elif ${USE_APACHE} == common22
 CONFIGURE_ARGS+=	--disable-authn-file --disable-authn-default \
 			--disable-authz-host --disable-authz-groupfile \
@@ -108,7 +108,7 @@ CONFIGURE_ARGS+=	--disable-authn-file --disable-authn-default \
 			--disable-autoindex --disable-asis --disable-cgid \
 			--disable-cgi --disable-negotiation --disable-dir \
 			--disable-imagemap --disable-actions --disable-userdir \
-			--disable-alias
+			--disable-alias --disable-filter
 .endif
 
 .if defined(WITH_MODULES)
