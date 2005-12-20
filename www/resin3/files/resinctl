@@ -4,7 +4,7 @@
 # Author:        Jean-Baptiste Quenot <jb.quenot@caraldi.com>
 # Purpose:       Manage resin pid file and log files
 # Date Created:  2005-01-21 15:43:19
-# Revision:      $FreeBSD: ports/www/resin3/files/resinctl,v 1.1 2005/02/24 22:50:29 hq Exp $
+# Revision:      $FreeBSD: ports/www/resin3/files/resinctl,v 1.2 2005/04/20 14:47:35 hq Exp $
 ################################################################################
 # Copyright (c) 2004, Jean-Baptiste Quenot <jb.quenot@caraldi.com>
 # All rights reserved.
@@ -157,8 +157,7 @@ if __name__ == '__main__':
     COMMAND = "%%JAVA%%"
     ARGS = [COMMAND]
 
-    if os.environ.has_key('JAVA_OPTS'):
-        ARGS += os.environ['JAVA_OPTS'].split(" ")
+    ARGS += sys.argv[1:-1]
 
     ARGS += [
         "-Dresin.home=%%APP_HOME%%",
@@ -170,17 +169,17 @@ if __name__ == '__main__':
     os.environ['JAVA_HOME'] = "%%JAVA_HOME%%"
     os.environ['CLASSPATH'] = classpath()
 
-    if len(sys.argv) != 2:
+    if len(sys.argv) < 2:
         usage()
         sys.exit(1)
 
-    if sys.argv[1] == "start":
+    if sys.argv[-1] == "start":
         start()
 
-    elif sys.argv[1] == "stop":
+    elif sys.argv[-1] == "stop":
         stop()
 
-    elif sys.argv[1] == "restart":
+    elif sys.argv[-1] == "restart":
         stop()
         start()
 
