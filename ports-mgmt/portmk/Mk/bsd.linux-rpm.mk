@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/devel/portmk/Mk/bsd.linux-rpm.mk,v 1.1 2005/12/19 06:08:26 linimon Exp $
+# $FreeBSD: ports/devel/portmk/Mk/bsd.linux-rpm.mk,v 1.2 2005/12/20 01:51:49 linimon Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Linux_RPM_Pre_Include)
@@ -53,7 +53,7 @@ _LINUX_BASE_SUFFIX=		8
 _LINUX_BASE_SUFFIX=		debian
 .    else
 # other linux_base ports do not provide a pkg-plist file
-IGNORE=					"uses AUTOMATIC_PLIST with an unsupported USE_LINUX, \"${USE_LINUX}\". Supported values are \"yes\", \"8\" and \"debian\""
+IGNORE=					uses AUTOMATIC_PLIST with an unsupported USE_LINUX, \"${USE_LINUX}\". Supported values are \"yes\", \"8\" and \"debian\"
 .    endif
 
 PLIST?=					${WRKDIR}/.PLIST.linux-rpm
