@@ -5,7 +5,7 @@
 #
 # Created by: Mark Linimon <linimon@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/portmk/Mk/bsd.local.mk,v 1.1 2005/12/16 02:11:14 linimon Exp $
+# $FreeBSD: ports/devel/portmk/Mk/bsd.local.mk,v 1.2 2005/12/16 02:13:01 linimon Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Local_Pre_Include)
@@ -28,4 +28,6 @@ Local_Post_Include=	bsd.local.mk
 # time should live.
 #
 
+.include "${DEVELPORTSDIR}/Mk/bsd.portsmon.mk"
+ 
 .endif # defined(_POSTMKINCLUDED) && !defined(Local_Post_Include)
