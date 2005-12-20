@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.855 2005/12/16 22:06:53 sem Exp $
+# $FreeBSD: ports/MOVED,v 1.856 2005/12/16 22:47:26 sem Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -662,6 +662,7 @@ comms/bayonne||2003-11-07|port was broken for >3 months with no fix submitted
 emulators/xpinmame||2003-11-07|port was broken for >3 months with no fix submitted
 french/spip||2003-11-07|port was broken for >3 months with no fix submitted
 ftp/moxftp||2003-11-07|port was broken for >3 months with no fix submitted
+ftp/sftp||2005-12-20|Author no longer supports the software. Functionality is in OpenSSH.
 games/rollemup||2003-11-07|port was broken for >3 months with no fix submitted
 games/xpuyo||2003-11-07|port was broken for >3 months with no fix submitted
 graphics/imlib3d||2003-11-07|port was broken for >3 months with no fix submitted
