@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.858 2005/12/21 00:00:56 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.859 2005/12/22 10:59:11 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2041,3 +2041,4 @@ misc/xrmap|astro/xrmap|2005-12-17|Move to a more appropriate category
 devel/opentop||2005-12-17|Obsoleted. New versions are comercial
 x11-themes/metacity-theme-hacked-2||2005-12-22|Obsolete by x11-themes/gnome-art
 x11-themes/metacity-theme-iridium-rounded||2005-12-22|Obsolete by x11-themes/gnome-art
+converters/intel2gas|lang/intel2gas|2005-12-22|Duplicate port entry
