@@ -1,7 +1,7 @@
 #
 # KNOBS - A list of popular knobs and descriptions
 #
-# $FreeBSD: ports/KNOBS,v 1.3 2005/11/12 11:56:10 oliver Exp $
+# $FreeBSD: ports/KNOBS,v 1.4 2005/12/17 06:09:10 lawrance Exp $
 #
 # Rules to adding knobs:
 #
@@ -10,7 +10,7 @@
 #
 #  - Nameing knobs:
 #     When a port has a lib-prefix (ie: libquicktime, libxine)
-#      the lib-prefix should be stipped from the knob name.
+#      the lib-prefix should be stripped from the knob name.
 #      (ie: QUICKTIME, XINE).
 #
 #
