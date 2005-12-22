@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/webmin/files/webmin.sh.sample,v 1.5 2003/01/14 12:21:07 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/files/webmin.sh.sample,v 1.6 2004/06/19 20:57:32 olgeni Exp $
 #
 # PROVIDE: webmin
 # REQUIRE: LOGIN
@@ -10,8 +10,6 @@
 #
 # webmin_enable="YES"
 #
-
-webmin_enable="NO"
 
 . %%RC_SUBR%%
 
