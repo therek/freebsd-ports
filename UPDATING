@@ -697,8 +697,8 @@ upgrades.
 
   The PostgreSQL ports have been updated to latest versions. A
   security problem in the template database requires a simple SQL
-  command to be run on each database. because these problems are
-  really incorrect system catalog entries. Updating to a new release
+  command to be run on each database. Because these problems are
+  really incorrect system catalog entries, updating to a new release
   will NOT by itself solve the problems in an existing
   installation.
 
@@ -2744,4 +2744,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.257 2005/12/13 08:56:47 barner Exp $
+$FreeBSD: ports/UPDATING,v 1.258 2005/12/19 17:21:31 lioux Exp $
