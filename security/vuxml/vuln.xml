@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.910 2005/12/22 21:05:31 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.911 2005/12/22 21:07:15 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,7 +39,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>nbd-server</name>
-	<range><ge>0</ge></range>
+	<range><lt>2.8.2_1</lt></range>
       </package>
     </affects>
     <description>
