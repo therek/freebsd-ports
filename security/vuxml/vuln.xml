@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.912 2005/12/22 21:08:08 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.913 2005/12/22 21:25:07 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -46,7 +46,7 @@ Note:  Please add new entries to the beginning of this file.
       <body xmlns="http://www.w3.org/1999/xhtml">
 	<p>Kurt Fitzner reports a buffer overflow vulnerability
 	  within nbd.  This could potentially allow the execution
-	  of arbitrary code on the ndb server.</p>
+	  of arbitrary code on the nbd server.</p>
       </body>
     </description>
     <references>
@@ -56,6 +56,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2005-12-21</discovery>
       <entry>2005-12-22</entry>
+      <modified>2005-12-23</modified>
     </dates>
   </vuln>
 
