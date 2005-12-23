@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/ftp/wzdftpd/pkg-plist,v 1.10 2005/05/26 20:41:48 novel Exp $
+@comment $FreeBSD: ports/ftp/wzdftpd/pkg-plist,v 1.11 2005/07/17 17:42:02 novel Exp $
 bin/siteconfig
 bin/siteuptime
 bin/sitewho
@@ -14,7 +14,7 @@ etc/file_rules.txt
 etc/file_users.txt
 etc/file_vfs.txt
 etc/file_who.txt
-etc/file_groups.txt   
+etc/file_groups.txt
 include/wzdftpd/libwzd-auth/wzd_auth.h
 include/wzdftpd/libwzd-auth/wzd_crypt.h
 include/wzdftpd/libwzd-auth/wzd_md5.h
