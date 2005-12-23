@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.913 2005/12/22 21:25:07 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.914 2005/12/23 10:29:49 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -845,7 +845,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>phpSysInfo</name>
-	<range><gt>0</gt></range>
+	<range><lt>2.5.1</lt></range>
       </package>
     </affects>
     <description>
@@ -4381,7 +4381,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>phpSysInfo</name>
-	<range><gt>0</gt></range>
+	<range><lt>2.5.1</lt></range>
       </package>
     </affects>
     <description>
