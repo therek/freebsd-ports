@@ -1,12 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid/files/squid.sh,v 1.9 2004/09/02 06:44:14 sem Exp $
+# $FreeBSD: ports/www/squid/files/squid.sh,v 1.10 2004/10/13 09:43:48 sergei Exp $
 #
 # --begin rcng
 # PROVIDE: squid
-# REQUIRE: NETWORKING SERVERS
-# BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
 # 
 # Note:
 # Set "squid_enable=yes" in either /etc/rc.conf, /etc/rc.conf.local or
