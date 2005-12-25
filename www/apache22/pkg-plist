@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.71 2005/12/10 11:39:39 clement Exp $
+@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.72 2005/12/13 22:26:57 clement Exp $
 @exec mkdir -p %D/etc/apache22/extra 2> /dev/null
 @exec mkdir -p %D/etc/apache22/Includes 2> /dev/null || true
 @exec mkdir -p %D/etc/apache22/envvars.d 2> /dev/null || true
@@ -361,7 +361,6 @@ www/apache22/icons/folder.sec.gif
 www/apache22/icons/folder.sec.png
 www/apache22/icons/forward.gif
 www/apache22/icons/forward.png
-www/apache22/icons/freebsd.gif
 www/apache22/icons/generic.gif
 www/apache22/icons/generic.png
 www/apache22/icons/generic.red.gif
