@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/devel/portmk/Mk/bsd.port.mk,v 1.11 2005/12/19 06:08:26 linimon Exp $
+# $FreeBSD: ports/devel/portmk/Mk/bsd.port.mk,v 1.12 2005/12/20 02:30:51 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1571,6 +1571,10 @@ CONFIGURE_ENV+=	MAKE=${GMAKE}
 MAKE_ENV+=		CC="${CC}" CXX="${CXX}"
 .endif
 
+.if defined(USE_DOS2UNIX)
+USE_REINPLACE=	yes
+.endif
+
 .if defined(USE_LOCAL_MK)
 .if exists(${DEVELPORTSDIR}/Mk/bsd.local.mk)
 .include "${DEVELPORTSDIR}/Mk/bsd.local.mk"
@@ -1578,10 +1582,6 @@ MAKE_ENV+=		CC="${CC}" CXX="${CXX}"
 #.else
 #.include "${PORTSDIR}/Mk/bsd.local.mk"
 .endif
-.endif
-
-.if defined(USE_DOS2UNIX)
-USE_REINPLACE=	yes
 .endif
 
 .if defined(USE_GCC)
