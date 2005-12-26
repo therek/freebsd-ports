@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/masqmail-devel/files/masqmail.sh,v 1.1 2004/05/02 20:38:48 pav Exp $
 #
 
 # PROVIDE: mail
