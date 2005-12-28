@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/compat5x/files/compat5x.sh.in,v 1.1 2005/12/18 21:04:37 dougb Exp $
 #
 # PROVIDE: compat5x
-# REQUIRE: mountcritremote
+# REQUIRE: ldconfig
 #
 # Add the following to /etc/rc.conf[.local] to enable this service
 #
