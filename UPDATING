@@ -7,6 +7,21 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20051228:
+  AFFECTS: users of multimedia/tovid
+  AUTHOR: lioux@FreeBSD.org
+
+  tovid shell scripts relies heavily on bash(1) but the previous
+  port version tried to use sh(1). However, since there were too
+  many complications, the port now depends on shells/bash.
+
+  Due to this change, the configuration files need to be regenerated.
+  Please, erase all previous configuration files. The configuration
+  file samples will be generated on the 1st invocation of the
+  scripts.
+
+  $ rm ~/.tovid/*
+
+20051228:
   AFFECTS: users of shells/scponly
   AUTHOR: rushani@FreeBSD.org
 
@@ -2763,4 +2778,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.260 2005/12/25 17:24:50 vanilla Exp $
+$FreeBSD: ports/UPDATING,v 1.261 2005/12/27 21:27:09 edwin Exp $
