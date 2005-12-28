@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc42/pkg-plist,v 1.77 2005/12/11 22:49:57 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc42/pkg-plist,v 1.78 2005/12/21 21:14:08 gerald Exp $
 bin/c++%%SUFFIX%%
 bin/cpp%%SUFFIX%%
 bin/g++%%SUFFIX%%
@@ -14,9 +14,8 @@ include/ssp/ssp.h
 include/ssp/string.h
 include/ssp/stdio.h
 include/ssp/unistd.h
-@unexec rmdir %D/include/ssp 2>/dev/null || true
+@dirrm include/ssp
 info/gcc%%SUFFIX%%/dir
-@unexec rmdir %D/info/gcc%%SUFFIX%% 2>/dev/null || true
 %%FORTRAN%%bin/gfortran%%SUFFIX%%
 %%FORTRAN%%bin/%%GNU_HOST%%-gfortran%%SUFFIX%%
 %%JAVA%%bin/addr2name.awk%%SUFFIX%%
