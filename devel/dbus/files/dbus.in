@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/dbus/files/dbus.sh,v 1.3 2004/07/27 00:16:33 marcus Exp $
+# $FreeBSD: ports/devel/dbus/files/dbus.sh,v 1.4 2005/04/02 21:06:24 marcus Exp $
 #
 # PROVIDE: dbus
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 #
 # Add the following lines to /etc/rc.conf to enable the D-BUS messaging system:
 #
