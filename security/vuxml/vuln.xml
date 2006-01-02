@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.919 2006/01/01 09:03:31 hrs Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.920 2006/01/01 21:40:15 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -11033,7 +11033,7 @@ Note:  Please add new entries to the beginning of this file.
             <li>A Content-length header should only appear once in a
               valid request or response. Multiple Content-length
               headers, in conjunction with specially crafted requests,
-              may allow Squid's cache to be poisioned with bad content
+              may allow Squid's cache to be poisoned with bad content
               in certain situations.</li>
             <li>CR characters is only allowed as part of the CR NL
               line terminator, not alone. This to ensure that all
@@ -11055,7 +11055,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2005-01-24</discovery>
       <entry>2005-01-24</entry>
-      <modified>2005-02-07</modified>
+      <modified>2006-01-02</modified>
     </dates>
   </vuln>
 
