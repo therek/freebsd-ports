@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop racoon
-# $FreeBSD: ports/security/ipsec-tools/files/racoon.sh,v 1.1 2005/09/05 14:13:42 vsevolod Exp $
+# $FreeBSD: ports/security/ipsec-tools/files/racoon.sh.in,v 1.1 2005/12/02 11:28:06 lawrance Exp $
 
 # PROVIDE: racoon
 # REQUIRE: DAEMON
@@ -21,7 +21,7 @@ prefix=%%PREFIX%%
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-[ -z "$racoon_enable" ] && racoon_enable="YES"	# Enable racoon
+[ -z "$racoon_enable" ] && racoon_enable="NO"	# Disable by default
 #racoon_program="${prefix}/sbin/racoon"		# Location of racoon
 #racoon_flags=""				# Flags to racoon program
 
