@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/p5-Mail-SpamAssassin/files/spamd.sh,v 1.10 2005/05/06 20:05:57 sem Exp $
+# $FreeBSD: ports/mail/p5-Mail-SpamAssassin/files/spamd.sh,v 1.11 2005/05/10 13:00:22 sem Exp $
 #
 
 # PROVIDE: spamd
@@ -21,7 +21,15 @@
 name=spamd
 rcvar=`set_rcvar`
 
+load_rc_config $name
+
+# Set defaults
+: ${spamd_enable:="NO"}
+: ${spamd_flags="-c %%SQL_FLAG%% %%RUN_AS_USER%%"}
+
+pidfile=${spamd_pidfile:-"/var/run/spamd/spamd.pid"}
 command=%%PREFIX%%/bin/spamd
+command_args="-d -r ${pidfile}"
 required_dirs=%%PREFIX%%/share/spamassassin
 
 stop_postcmd=stop_postcmd
@@ -31,11 +39,4 @@ stop_postcmd()
   rm -f $pidfile
 }
 
-# set defaults
-
-spamd_enable=${spamd_enable:-"NO"}
-spamd_pidfile=${spamd_pidfile:-"/var/run/spamd/spamd.pid"}
-spamd_flags=${spamd_flags:-"-c -d %%SQL_FLAG%% -r ${spamd_pidfile} %%RUN_AS_USER%%"}
-
-load_rc_config $name
 run_rc_command "$1"
