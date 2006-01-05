@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-servers/XFree86-4-FontServer/files/xfs.sh,v 1.1 2005/01/18 22:09:14 lesi Exp $
 #
 
 # PROVIDE: xfs
-# REQUIRE: cleartmp
+# REQUIRE: cleartmp ldconfig
 # BEFORE:  LOGIN
 # KEYWORD: FreeBSD
 
