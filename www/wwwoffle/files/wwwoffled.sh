@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/wwwoffle/files/wwwoffled.sh,v 1.4 2004/05/04 10:44:05 sumikawa Exp $
+# $FreeBSD: ports/www/wwwoffle/files/wwwoffled.sh,v 1.5 2004/05/13 02:59:45 nork Exp $
 
 # PROVIDE: wwwoffled
 # REQUIRE: DAEMON
@@ -13,9 +13,9 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-wwwoffled_enable="NO"
-wwwoffled_flags=""
-wwwoffled_pidfile="/var/run/wwwoffled.pid"
+wwwoffled_enable=${wwwoffled_enable-"NO"}
+wwwoffled_flags=${wwwoffled_flags-""}
+wwwoffled_pidfile=${wwwoffled_pidfile-"/var/run/wwwoffled.pid"}
 wwwoffled_conffile="%%PREFIX%%/etc/wwwoffle.conf"
 
 . %%RC_SUBR%%
