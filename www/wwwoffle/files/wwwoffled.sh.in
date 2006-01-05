@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/wwwoffle/files/wwwoffled.sh,v 1.5 2004/05/13 02:59:45 nork Exp $
+# $FreeBSD: ports/www/wwwoffle/files/wwwoffled.sh,v 1.6 2006/01/05 00:37:23 edwin Exp $
 
 # PROVIDE: wwwoffled
 # REQUIRE: DAEMON
