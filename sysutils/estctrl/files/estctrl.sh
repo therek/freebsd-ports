@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/estctrl/files/estctrl.sh,v 1.2 2004/12/08 17:34:22 pav Exp $
+# $FreeBSD: ports/sysutils/estctrl/files/estctrl.sh,v 1.3 2004/12/08 20:27:03 pav Exp $
 #
 
 # PROVIDE: estctrl
@@ -14,7 +14,7 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-estctrl_enable="NO"
+estctrl_enable="${estctrl_enable-NO}"
 estctrl_speed_ac="adaptive"
 estctrl_speed_battery="adaptive"
 estctrl_speed_default="adaptive"

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/minisapserver/files/sapserver.sh,v 1.1 2004/05/25 09:17:51 krion Exp $
+# $FreeBSD: ports/multimedia/ffmpeg-devel/files/ffserver.sh,v 1.1 2004/12/05 18:12:41 lioux Exp $
 #
 
 # PROVIDE: ffserver
@@ -12,7 +12,7 @@
 #
 #ffserver_enable="YES"
 #
-ffserver_enable="NO"
+ffserver_enable="${ffserver_enable-NO}"
 
 . %%RC_SUBR%%
 

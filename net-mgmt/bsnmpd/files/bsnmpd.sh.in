@@ -1,11 +1,11 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/bsnmpd/files/bsnmpd.sh.in,v 1.1 2005/09/27 17:32:27 mnag Exp $
 #
 # PROVIDE: bsnmpd
 # REQUIRE: NETWORKING syslogd
 # KEYWORD: nojail
 
-bsnmpd_enable="NO"
+bsnmpd_enable="${bsnmpd_enable-NO}"
 
 . %%RC_SUBR%%
 

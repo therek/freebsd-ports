@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/est/files/est.sh,v 1.2 2004/09/02 04:14:21 edwin Exp $
 #
 
 # PROVIDE: est
@@ -15,7 +15,7 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-est_enable="NO"
+est_enable="${est_enable-NO}"
 est_verbose="NO"
 
 . %%RC_SUBR%%

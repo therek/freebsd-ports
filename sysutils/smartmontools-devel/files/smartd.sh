@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/smartmontools/files/smartd.sh,v 1.4 2005/11/17 22:04:25 flz Exp $
+# $FreeBSD: ports/sysutils/smartmontools/files/smartd.sh,v 1.5 2005/11/18 11:46:38 flz Exp $
 
 # PROVIDE: smartd
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-smartd_enable="NO"
+smartd_enable="${smartd_enable-NO}"
 smartd_pidfile="/var/run/smartd.pid"
 
 . %%RC_SUBR%%

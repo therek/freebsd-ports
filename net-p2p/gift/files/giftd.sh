@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gift/files/giftd.sh,v 1.1 2005/01/08 18:44:55 sem Exp $
 #
 
 # PROVIDE: giftd
@@ -14,7 +14,7 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 
-giftd_enable="NO"
+giftd_enable="${giftd_enable-NO}"
 giftd_flags="-d -q"
 giftd_user=""
 giftd_local_dir=""

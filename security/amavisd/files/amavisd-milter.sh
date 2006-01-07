@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/amavisd/files/amavisd-milter.sh,v 1.3 2004/05/30 11:33:25 pav Exp $
 #
 
 # PROVIDE: amavisd-milter
@@ -14,7 +14,7 @@ prefix=%%PREFIX%%
 #	/etc/rc.conf.local
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
-amavisd_milter_enable=no
+amavisd_milter_enable="${amavisd_milter_enable-NO}"
 amavisd_milter_flags="-D"
 amavisd_milter_user=%%AMAVISUSER%%
 #amavisd_milter_socket="inet:9999@127.0.0.1"

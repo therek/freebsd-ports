@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13/files/apache.sh,v 1.6 2004/05/07 20:20:24 ache Exp $
+# $FreeBSD: ports/www/apache13-modperl/files/apache.sh,v 1.1 2004/06/05 14:25:18 pav Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-apache_enable="NO"
+apache_enable="${apache_enable-NO}"
 apache_flags=""
 apache_pidfile="/var/run/httpd.pid"
 

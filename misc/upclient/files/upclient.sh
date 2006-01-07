@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/upclient/files/upclient.sh,v 1.5 2004/03/03 11:46:05 krion Exp $
+# $FreeBSD: ports/misc/upclient/files/upclient.sh,v 1.6 2004/03/04 08:35:28 krion Exp $
 #
 # PROVIDE: upclient
 # REQUIRE: DAEMON
@@ -30,7 +30,7 @@ upclient_precmd ()
 	:
 }
 
-upclient_enable=NO
+upclient_enable="${upclient_enable-NO}"
 upclient_flags=
 
 . %%RC_SUBR%%

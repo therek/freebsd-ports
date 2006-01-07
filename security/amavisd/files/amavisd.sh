@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/amavisd/files/amavisd.sh,v 1.4 2004/05/30 11:33:25 pav Exp $
 #
  
 # PROVIDE: amavisd
@@ -14,7 +14,7 @@ prefix=%%PREFIX%%
 #       /etc/rc.conf.local
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
-amavisd_enable=no
+amavisd_enable="${amavisd_enable-NO}"
 amavisd_flags=""
 amavisd_user=%%AMAVISUSER%%
 

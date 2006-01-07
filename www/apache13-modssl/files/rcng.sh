@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-modssl/files/rcng.sh,v 1.2 2004/05/03 16:27:45 nork Exp $
+# $FreeBSD: ports/www/apache13-modssl/files/rcng.sh,v 1.3 2004/05/14 05:30:53 dinoex Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-apache_enable="NO"
+apache_enable="${apache_enable-NO}"
 apache_flags="-DSSL"
 apache_pidfile="/var/run/httpd.pid"
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/mpd/files/mpd.sh,v 1.1 2003/11/22 20:51:05 archie Exp $
+# $FreeBSD: ports/net/mpd/files/mpd.sh,v 1.2 2005/02/14 21:46:57 archie Exp $
 #
 # PROVIDE: mpd
 # REQUIRE: NETWORKING
@@ -12,7 +12,7 @@
 #
 
 mpd_flags="-b"
-mpd_enable="NO"
+mpd_enable="${mpd_enable-NO}"
 
 . %%RC_SUBR%%
 

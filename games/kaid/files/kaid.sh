@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/kaid/files/kaid.sh,v 1.1 2005/04/02 15:25:49 green Exp $
 #
 
 # PROVIDE: kaid
@@ -12,7 +12,7 @@
 #
 # kaid_enable="YES"
 #
-kaid_enable="NO"
+kaid_enable="${kaid_enable-NO}"
 
 . /etc/rc.subr
 

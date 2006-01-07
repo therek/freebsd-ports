@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: $
+# $FreeBSD: ports/net/minisapserver/files/sapserver.sh,v 1.1 2004/05/25 09:17:51 krion Exp $
 #
 
 # PROVIDE: sapserver
@@ -12,7 +12,7 @@
 #
 #sapserver_enable="YES"
 #
-sapserver_enable="NO"
+sapserver_enable="${sapserver_enable-NO}"
 
 . %%RC_SUBR%%
 
