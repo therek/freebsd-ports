@@ -1,3 +1,4 @@
-$FreeBSD: ports/x11-wm/badwm/distinfo,v 1.1 2003/10/24 02:19:17 trevor Exp $
+$FreeBSD: ports/x11-wm/badwm/distinfo,v 1.2 2004/01/27 16:12:35 trevor Exp $
 MD5 (BadWM-0.06.tar.gz) = 6849f884a2fe60687adc19a624a58d39
 SIZE (BadWM-0.06.tar.gz) = 80220
+SHA256 (BadWM-0.06.tar.gz) = 31c1acbfbfc2edd35cbf3e723a426bf29305e0a8b59a46c9605ac3e61600b372

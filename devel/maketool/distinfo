@@ -1,3 +1,4 @@
-$FreeBSD: ports/devel/maketool/distinfo,v 1.4 2003/12/04 03:02:10 trevor Exp $
+$FreeBSD: ports/devel/maketool/distinfo,v 1.5 2004/01/27 16:12:31 trevor Exp $
 MD5 (maketool-0.8.4.tar.bz2) = 28b99001dba9c70fad92d37cd9f7dddd
 SIZE (maketool-0.8.4.tar.bz2) = 691069
+SHA256 (maketool-0.8.4.tar.bz2) = 735a565d7fb51a19e81c2c66f544daad00bd889240fe7dc4ca7588e4d479dfda
