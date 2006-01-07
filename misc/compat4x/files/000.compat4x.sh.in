@@ -1,25 +1,25 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/compat5x/files/compat5x.sh.in,v 1.1 2005/12/18 21:04:37 dougb Exp $
+# $FreeBSD$
 #
-# PROVIDE: compat5x
+# PROVIDE: compat4x
 # REQUIRE: ldconfig
 #
 # Add the following to /etc/rc.conf[.local] to enable this service
 #
-# compat5x_enable="YES"
+# compat4x_enable="YES"
 #
 
 . %%RC_SUBR%%
 
-name=compat5x
+name=compat4x
 rcvar=`set_rcvar`
 
 command=%%LDCONFIG%%
 command_args='-m %%PREFIX%%/lib/compat'
 %%AMD64%%
 %%AMD64%%start_postcmd=${name}_poststart
-%%AMD64%%compat5x_poststart () {
+%%AMD64%%compat4x_poststart () {
 %%AMD64%%	%%LDCONFIG%% -32 -m %%TARGET32_DIR%%
 %%AMD64%%}
 
