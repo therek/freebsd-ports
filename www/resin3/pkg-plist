@@ -1,6 +1,5 @@
-@comment $FreeBSD: ports/www/resin3/pkg-plist,v 1.9 2005/05/16 20:33:47 hq Exp $
+@comment $FreeBSD: ports/www/resin3/pkg-plist,v 1.11 2005/12/20 22:38:35 edwin Exp $
 %%APP_NAME%%/lib/aopalliance.jar
-%%APP_NAME%%/lib/default.xsl
 %%APP_NAME%%/lib/eclipse-compiler.jar
 %%APP_NAME%%/lib/ejb-20.jar
 %%APP_NAME%%/lib/ejb-30.jar
