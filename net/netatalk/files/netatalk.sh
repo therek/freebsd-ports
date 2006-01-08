@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/netatalk/files/netatalk.sh,v 1.2 2004/10/12 02:09:27 marcus Exp $
+# $FreeBSD: ports/net/netatalk/files/netatalk.sh,v 1.3 2006/01/08 20:01:37 marcus Exp $
 #
 # PROVIDE: atalkd papd afpd timelord
-# REQUIRE: NETWORKING SERVERS named %%SRVLOC%%
+# REQUIRE: DAEMON %%SRVLOC%%
 # KEYWORD: shutdown
 #
 # AppleTalk daemons. Make sure not to start atalkd in the background:
