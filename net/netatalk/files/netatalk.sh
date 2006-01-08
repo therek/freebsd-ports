@@ -1,8 +1,8 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/netatalk/files/netatalk.sh,v 1.3 2006/01/08 20:01:37 marcus Exp $
+# $FreeBSD: ports/net/netatalk/files/netatalk.sh,v 1.4 2006/01/08 20:04:23 marcus Exp $
 #
-# PROVIDE: atalkd papd afpd timelord
+# PROVIDE: atalkd papd cnid_metad afpd timelord
 # REQUIRE: DAEMON %%SRVLOC%%
 # KEYWORD: shutdown
 #
