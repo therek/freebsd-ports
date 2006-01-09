@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/samba3/files/samba.sh.sample,v 1.10 2005/04/17 16:10:50 pav Exp $
+# $FreeBSD: ports/net/samba3/files/samba.sh.sample,v 1.11 2005/09/11 19:42:34 vsevolod Exp $
 #
 
 # PROVIDE: nmbd smbd
 %%WINBIND%%# PROVIDE: winbindd
-# REQUIRE: NETWORKING SERVERS named %%CUPS%%
+# REQUIRE: NETWORKING SERVERS named ldconfig %%CUPS%%
 # BEFORE: DAEMON
 # KEYWORD: shutdown
 
@@ -65,9 +65,8 @@ nmbd_precmd() {
     # XXX: Never delete winbindd_idmap, winbindd_cache and group_mapping
     if [ -d "%%SAMBA_LOCKDIR%%" ]; then
 	echo "Starting SAMBA: removing stale tdbs :"
-	for file in connections.tdb locking.tdb messages.tdb \
-		    sessionid.tdb unexpected.tdb brlock.tdb \
-		    namelist.debug
+	for file in connections.tdb messages.tdb sessionid.tdb \
+		    unexpected.tdb brlock.tdb locking.tdb namelist.debug
 	do
 	    rm -vf "%%SAMBA_LOCKDIR%%/$file"
 	done
