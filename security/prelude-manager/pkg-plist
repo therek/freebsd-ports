@@ -1,9 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/prelude-manager/pkg-plist,v 1.4 2005/10/18 14:28:01 sergei Exp $
 bin/prelude-manager
 etc/prelude-manager/prelude-manager.conf-dist
 include/prelude-manager/prelude-manager.h
 lib/prelude-manager/filters/idmef-criteria.so
-lib/prelude-manager/reports/db.so
 lib/prelude-manager/reports/debug.so
 lib/prelude-manager/reports/relaying.so
 lib/prelude-manager/reports/textmod.so
