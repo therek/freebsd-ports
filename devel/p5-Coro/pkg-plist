@@ -1,10 +1,11 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-Coro/pkg-plist,v 1.4 2005/02/23 17:58:25 mat Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Coro/Event/Event.so
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Coro/Event/Event.bs
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Coro/State/State.so
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Coro/State/State.bs
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Coro/.packlist
 %%SITE_PERL%%/%%PERL_ARCH%%/Coro.pm
+%%SITE_PERL%%/%%PERL_ARCH%%/Coro/AIO.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Coro/Cont.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Coro/State.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Coro/Channel.pm
