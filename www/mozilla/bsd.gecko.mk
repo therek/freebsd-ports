@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.5 2005/12/10 20:46:50 ahze Exp $
+# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.6 2005/12/16 18:14:53 ahze Exp $
 #    $MCom: ports/www/mozilla/bsd.gecko.mk,v 1.9 2005/11/29 20:30:06 adamw Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -64,9 +64,9 @@ Gecko_Pre_Include=			bsd.gecko.mk
 #  .endif
 
 .if ${OSVERSION} >= 500000
-_GECKO_ALL=	firefox nvu seamonkey sunbird
+_GECKO_ALL=	firefox nvu seamonkey sunbird thunderbird
 .endif
-_GECKO_ALL+=	mozilla thunderbird
+_GECKO_ALL+=	mozilla
 
 sunbird_PORTSDIR=	deskutils
 
