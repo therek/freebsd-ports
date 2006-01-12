@@ -7,6 +7,15 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20060112:
+  AFFECTS: users of mail/postfix, mail/postfix1, mail/postfix21,
+		    mail/postfix-current
+  AUTHOR: mnag@FreeBSD.org
+
+  Now all postfix ports use rcNG script to startup. If you have any file 
+  in etc/rc.d directory linked to sbin/postfix, please remove.
+  Do not forget to add 'postfix_enable="YES"' in your rc.conf
+
+20060112:
   AFFECTS: users of security/gnutls and any port that depends on it
   AUTHOR: novel@FreeBSD.org
 
@@ -2923,4 +2932,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.271 2006/01/12 00:53:28 lioux Exp $
+$FreeBSD: ports/UPDATING,v 1.272 2006/01/12 14:33:27 novel Exp $
