@@ -1,5 +1,4 @@
-@comment $FreeBSD: ports/security/clamsmtp/pkg-plist,v 1.1 2004/07/30 00:35:57 vanilla Exp $
+@comment $FreeBSD: ports/security/clamsmtp/pkg-plist,v 1.2 2004/10/14 02:28:24 clsung Exp $
 @unexec [ ! -f %%CLAMAV_PID_DIR%%/clamsmtpd.pid ] || %%PREFIX%%/etc/rc.d/clamsmtpd.sh stop || true
 sbin/clamsmtpd
-etc/rc.d/clamsmtpd.sh
 etc/clamsmtpd.conf-sample
