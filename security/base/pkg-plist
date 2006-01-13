@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/base/pkg-plist,v 1.6 2005/10/12 19:31:37 sem Exp $
+@comment $FreeBSD: ports/security/base/pkg-plist,v 1.7 2005/10/31 19:49:01 sem Exp $
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/CHANGELOG
 %%PORTDOCS%%%%DOCSDIR%%/CREDITS
@@ -91,6 +91,7 @@ www/base/languages/russian.lang.php
 www/base/languages/simplified_chinese.lang.php
 www/base/languages/spanish.lang.php
 www/base/languages/swedish.lang.php
+www/base/languages/turkish.lang.php
 www/base/setup/base_conf_contents.php
 www/base/setup/index.php
 www/base/setup/setup1.php
