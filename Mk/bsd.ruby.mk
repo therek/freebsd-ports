@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.147 2005/11/14 09:46:15 sem Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.148 2006/01/14 13:25:42 pav Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -475,8 +475,5 @@ PLIST_SUB+=		RUBY_RD_HTML_FILES="@comment "
 .if !defined(NOPORTDOCS) && defined(USE_RUBY_RDTOOL)
 BUILD_DEPENDS+=		${DEPEND_RUBY_RDTOOL}
 .endif
-
-MASTER_SITE_BACKUP+=	\
-	ftp://ftp.iDaemons.org/pub/distfiles/${DIST_SUBDIR}/
 
 .endif
