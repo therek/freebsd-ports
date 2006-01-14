@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060114:
+  AFFECTS: users of www/apache13-ssl wit suexec enabled.
+  AUTHOR: clement@FreeBSD.org
+
+  The port has been converted to new apache framework, using bsd.apache.mk.
+  suexec knobs have changed to WITH_SUEXEC and SUEXEC_*. See Mk/bsd.apache.mk
+  for more details.
+
 20060113:
   AFFECTS: users of multimedia/qvamps
   AUTHOR: lioux@FreeBSD.org
@@ -2947,4 +2955,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.274 2006/01/12 19:15:30 lofi Exp $
+$FreeBSD: ports/UPDATING,v 1.275 2006/01/13 15:59:20 lioux Exp $
