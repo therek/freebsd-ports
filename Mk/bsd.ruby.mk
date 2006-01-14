@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.145 2005/10/27 19:40:24 sem Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.147 2005/11/14 09:46:15 sem Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -136,7 +136,7 @@ _RUBY_SITEDIR!=		${_RUBY_CONFIG} 'puts C["sitedir"]'
 RUBY?=			${LOCALBASE}/bin/${RUBY_NAME}
 
 .if defined(RUBY_VER) && ${RUBY_VER} == 1.8
-RUBY_VERSION?=		1.8.2
+RUBY_VERSION?=		1.8.4
 #RUBY_DISTVERSION?=	${RUBY_VERSION}
 #RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-yyyy.mm.dd.diff.bz2
 
