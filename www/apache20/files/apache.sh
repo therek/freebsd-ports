@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/apache20/files/apache.sh,v 1.15 2005/12/03 23:04:21 clement Exp $
 #
 
 # PROVIDE: apache2
 # REQUIRE: NETWORKING SERVERS
-# BEFORE: DAEMON
+# BEFORE: LOGIN
 # KEYWORD: FreeBSD shutdown
 
 #

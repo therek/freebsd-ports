@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.11 2005/12/15 21:38:38 clement Exp $
+# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.12 2005/12/17 15:51:16 clement Exp $
 #
 
 # MPM section:
@@ -111,19 +111,6 @@ CONFIGURE_ARGS+= --with-pgsql=${LOCALBASE}
 .if defined(WITH_SQLITE)
 USE_SQLITE=	YES
 CONFIGURE_ARGS+= --with-sqlite3=${LOCALBASE}
-.endif
-
-.if defined(WITH_THREADS)
-CONFIGURE_ARGS+=	--enable-threads
-.   if ${WITH_PTHREAD_LIBS} != "c_r" && ${OSVERSION} > 500023
-CONFIGURE_ENV+=		apr_cv_pthreads_lib=-l${WITH_PTHREAD_LIBS} \
-			apr_cv_pthreads_cflags=${WITH_PTHREAD_CFLAGS}
-.     if ${ARCH} == i386
-CONFIGURE_ARGS+=	--enable-nonportable-atomics
-.     endif
-.  else
-CFLAGS+=		-DFREEBSD_THREAD_HACK
-.   endif
 .endif
 
 .if !defined(WITHOUT_SSL)

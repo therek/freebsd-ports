@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache2/Makefile.modules,v 1.19 2004/11/13 18:23:33 clement Exp $
+# $FreeBSD: ports/www/apache20/Makefile.modules,v 1.20 2005/01/17 20:30:07 clement Exp $
 #
 
 # MPM section:
@@ -90,19 +90,6 @@ IGNORE=		"Unknown DBM"
 .   endif
 .else
 CONFIGURE_ARGS+=	--with-dbm=sdbm
-.endif
-
-.if defined(WITH_THREADS)
-CONFIGURE_ARGS+=	--enable-threads
-.   if ${WITH_PTHREAD_LIBS} != "c_r" && ${OSVERSION} > 500023
-CONFIGURE_ENV+=		apr_cv_pthreads_lib=-l${WITH_PTHREAD_LIBS} \
-			apr_cv_pthreads_cflags=${WITH_PTHREAD_CFLAGS}
-.     if ${ARCH} == i386
-CONFIGURE_ARGS+=	--enable-nonportable-atomics
-.     endif
-.  else
-CFLAGS+=		-DFREEBSD_THREAD_HACK
-.   endif
 .endif
 
 .if !defined(WITHOUT_SSL)

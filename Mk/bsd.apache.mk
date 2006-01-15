@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.6 2005/12/07 20:54:41 clement Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.7 2006/01/14 13:42:56 clement Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -337,6 +337,17 @@ AP_EXTRAS+=	-L ${AP_LIB}
 .endif
 
 .if defined(AP_PORT_IS_SERVER)
+.if !target(print-closest-mirrors)
+print-closest-mirrors:
+	@${ECHO_MSG} -n "Fetching list of nearest mirror: " >&2
+	@MIRRORS=`${FETCH_CMD} -T 30 -qo - http://www.apache.org/dyn/closer.cgi/httpd/ 2> /dev/null\
+	| ${GREP} /httpd/ | ${SED} 's/.*href="\(.*\)"><str.*/\1/g' | \
+	${HEAD} -7 | ${TAIL} -6` ; \
+	${ECHO_MSG} done >&2; if [ "x$$MIRRORS" != "x" ]; then \
+	${ECHO_MSG} -n "MASTER_SITE_APACHE_HTTPD?= ";\
+	${ECHO_MSG} $$MIRRORS; else \
+	${ECHO_MSG} "No mirrors found!">&2 ; fi
+.endif
 
 .if !target(show-categories)
 show-categories:

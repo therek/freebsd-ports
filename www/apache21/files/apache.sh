@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache21/files/apache.sh,v 1.7 2004/12/11 18:06:04 clement Exp $
+# $FreeBSD: ports/www/apache21/files/apache.sh,v 1.8 2005/01/11 13:45:05 clement Exp $
 #
 
 # PROVIDE: apache21
 # REQUIRE: NETWORKING SERVERS
-# BEFORE: DAEMON
+# BEFORE: LOGIN
 # KEYWORD: FreeBSD shutdown
 
 #
