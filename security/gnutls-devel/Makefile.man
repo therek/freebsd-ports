@@ -1,5 +1,5 @@
 # vi:ft=make
-# $FreeBSD: ports/security/gnutls-devel/Makefile.man,v 1.1 2005/11/28 10:07:51 novel Exp $
+# $FreeBSD: ports/security/gnutls-devel/Makefile.man,v 1.2 2005/12/22 18:38:02 novel Exp $
 
 INFO=	gnutls
 
@@ -123,6 +123,7 @@ MAN3=	gnutls_anon_set_server_params_function.3 \
 	gnutls_session_set_data.3 \
 	gnutls_session_get_client_random.3 \
 	gnutls_session_get_server_random.3 \
+	gnutls_session_get_master_secret.3 \
 	gnutls_srp_free_client_credentials.3 \
 	gnutls_srp_set_client_credentials.3 \
 	gnutls_srp_allocate_client_credentials.3 \
