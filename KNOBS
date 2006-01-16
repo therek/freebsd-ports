@@ -1,7 +1,7 @@
 #
 # KNOBS - A list of popular knobs and descriptions
 #
-# $FreeBSD: ports/KNOBS,v 1.5 2005/12/22 00:44:57 pav Exp $
+# $FreeBSD: ports/KNOBS,v 1.6 2006/01/01 20:14:14 adamw Exp $
 #
 # Rules to adding knobs:
 #
@@ -60,6 +60,7 @@ MAD			Mad MP3 audio decoder support
 MATROSKA		Matroska multimedia container support
 MMX			Adds support for x86 MMX optimizations
 MPEG4IP			MPEG4 multimedia support
+MUSEPACK		Musepack (MPC, musicpd, libmpcdec) support
 MYSQL			MySQL database support
 NAS			Adds support for NAS (Network Audio Sound)
 NCURSES			Adds ncurses console graphics support
