@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.445 2005/12/11 16:10:18 jylefort Exp $
+# $FreeBSD: ports/LEGAL,v 1.446 2005/12/29 00:47:08 edwin Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -662,3 +662,4 @@ pfpro-*			finance/pfpro		Only available for customers
 						PayFlow Pro Service
 simian-*                devel/simian            Have to agree to
 						license before download.
+xGate/*			japanese/xgate		Requested by Orangesoft Inc
