@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.875 2006/01/14 21:15:42 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.876 2006/01/15 20:12:43 lofi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2080,3 +2080,4 @@ games/gleyes||2006-01-14|Mastersite disappeared
 mail/yadda||2006-01-14|Mastersite disappeared
 misc/wmproxyper||2006-01-14|Mastersite disappeared
 net/4g8||2006-01-14|No longer developed; authors suggests ettercap instead
+x11-toolkits/freeglut|graphics/freeglut|2006-01-16|Move to category where libglut is
