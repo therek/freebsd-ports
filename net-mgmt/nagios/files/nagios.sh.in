@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/nagios/files/nagios.sh.in,v 1.1 2006/01/09 00:54:01 edwin Exp $
 #
 
 #
@@ -18,12 +18,14 @@ rcvar=`set_rcvar`
 
 command="%%PREFIX%%/bin/nagios"
 command_args="-d"
+extra_commands="reload"
 pidfile="%%NAGIOSDIR%%/nagios.lock"
 nagios_user="%%NAGIOSUSER%%"
 
 start_precmd="start_precmd"
 stop_postcmd="stop_postcmd"
 restart_precmd="nagios_checkconfig"
+sig_reload=HUP
 
 [ -z "${nagios_enable}" ]       && nagios_enable="NO"
 [ -z "${nagios_flags}" ]        && nagios_flags=""
