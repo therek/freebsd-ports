@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/cook/pkg-plist,v 1.6 2003/12/04 15:46:22 sergei Exp $
 bin/c_incl
 bin/cook
 bin/cook_bom
@@ -36,6 +36,7 @@ share/cook/g77
 share/cook/gcc
 share/cook/home
 share/cook/host_lists.pl
+share/cook/java
 share/cook/lex
 share/cook/library
 share/cook/print
