@@ -1,13 +1,13 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/ldconfig_compat/files/ldconfig_compat.sh.in,v 1.1 2006/01/08 12:38:49 flz Exp $
+# $FreeBSD: ports/misc/ldconfig_compat/files/ldconfig_compat.sh.in,v 1.2 2006/01/12 12:35:03 flz Exp $
 #
 
 # PROVIDE: ldconfig_compat
 # REQUIRE: mountcritremote ldconfig
 # BEFORE:  DAEMON
 
-. /etc/rc.subr
+. "%%RC_SUBR%%"
 
 name="ldconfig"
 ldconfig_command="/sbin/ldconfig"
