@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.21 2005/11/19 06:02:16 ade Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.22 2006/01/18 19:50:18 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -96,12 +96,12 @@ GNU_ARCH=	ix86
 GNU_ARCH=	${MACHINE_ARCH}
 .endif
 
-SYSTEMDIR=	${PREFIX}/System
+SYSTEMDIR=	${GNUSTEP_PREFIX}/System
 SYSMAKEDIR=	${SYSTEMDIR}/Library/Makefiles
 BUNDLEDIR=	${SYSTEMDIR}/Library/Bundles
 SYSLIBDIR=	${SYSTEMDIR}/Library/Libraries
 COMBOLIBDIR=	${SYSTEMDIR}/Library/Libraries
-LOCALLIBDIR=	${PREFIX}/Local/Library/Libraries
+LOCALLIBDIR=	${GNUSTEP_PREFIX}/Local/Library/Libraries
 .if defined(WITH_GNUSTEP_DEVEL)
 PKGNAMESUFFIX?=	-devel${PKGNAMESUFFIX2}
 PLIST_SUB+=	GNUSTEP_DEVEL=""
