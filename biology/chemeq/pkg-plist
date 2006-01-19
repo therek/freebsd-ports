@@ -1,0 +1,10 @@
+@comment $FreeBSD: ports/biology/chemeq/pkg-plist,v 1.3 2003/03/25 12:28:56 naddy Exp $
+bin/chemeq
+%%PORTDOCS%%%%DOCSDIR%%/README
+%%PORTDOCS%%%%EXAMPLESDIR%%/test.stuff
+%%PORTDOCS%%%%EXAMPLESDIR%%/chemreport
+%%PORTDOCS%%%%EXAMPLESDIR%%/chemreport.pl
+%%PORTDOCS%%%%EXAMPLESDIR%%/chemtest
+%%PORTDOCS%%%%EXAMPLESDIR%%/chemtest.pl
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
+%%PORTDOCS%%@dirrm %%EXAMPLESDIR%%
