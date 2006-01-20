@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/japanese/dvipsk/pkg-plist,v 1.13 2005/02/12 15:24:58 hrs Exp $
+@comment $FreeBSD: ports/japanese/dvipsk/pkg-plist,v 1.14 2005/12/30 14:28:36 hrs Exp $
 bin/afm2tfm
 bin/dvips
 bin/odvips
@@ -19,6 +19,5 @@ bin/udvips
 @exec %%UPDMAP_SYS_PTEX%% --enable Map=psfonts_jp.map
 @dirrm %%DVIPSDIR%%/base
 @dirrm %%DVIPSCONFIGDIR%%/config
-@dirrm %%DVIPSCONFIGDIR%%
 @dirrm %%DVIPSCONFIGDIR_DIST%%/config
 @unexec %%MKTEXLSR%%
