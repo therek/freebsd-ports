@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.518 2005/11/08 09:02:51 clement Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.519 2006/01/21 17:37:01 krion Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2023,8 +2023,6 @@ EXTRACT_CMD?=			${GZIP_CMD}
 # uses X
 .if ${X_WINDOW_SYSTEM:L} == xfree86-3
 MTREE_FILE=	/etc/mtree/BSD.x11.dist
-.elif ${X_WINDOW_SYSTEM:L} == xorg
-MTREE_FILE=	${PORTSDIR}/x11-servers/xorg-server/files/BSD.x11-xorg.dist
 .else
 MTREE_FILE=	/etc/mtree/BSD.x11-4.dist
 .endif
