@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.11 2005/09/08 18:32:00 kwm Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.12 2005/09/15 20:22:08 kwm Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -237,7 +237,7 @@ BUILD_DEPENDS+= ${_GST_LIB_BASE}/libgst${ext}.so:${PORTSDIR}/${${ext}_DEPENDS}
 RUN_DEPENDS+=   ${_GST_LIB_BASE}/libgst${ext}.so:${PORTSDIR}/${${ext}_DEPENDS}
 .  endif
 . else
-BROKEN=	"Unknown gstreamer-plugin -- ${ext}"
+BROKEN=	Unknown gstreamer-plugin -- ${ext}
 . endif
 .endfor
 

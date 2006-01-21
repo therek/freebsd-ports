@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.103 2006/01/09 21:28:42 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.104 2006/01/16 18:28:35 adamw Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.334 2005/10/23 16:37:47 marcus Exp $
 #
@@ -602,7 +602,7 @@ BROKEN+=the GNOME ${GNOME_DESKTOP_VERSION} desktop
 .         endif
 .      endif
 .  if ${_USE_GNOME_ALL:M${component}}==""
-BROKEN=	"Unknown component ${component}"
+BROKEN=	Unknown component ${component}
 .  endif
 _USE_GNOME+=	${${component}_USE_GNOME_IMPL} ${component}
 . endfor
@@ -628,7 +628,7 @@ ltverhack_PRE_PATCH=	${CP} -pf ${LTMAIN} ${WRKDIR}/gnome-ltmain.sh && \
 						done;
 .else
 .if ${USE_GNOME:Mltverhack}!=""
-BROKEN= "${PORTNAME} uses the ltverhack GNOME component but does not use libtool"
+BROKEN= ${PORTNAME} uses the ltverhack GNOME component but does not use libtool
 .endif
 .endif
 

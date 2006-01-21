@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.53 2005/11/05 15:55:24 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.54 2006/01/08 19:31:07 lofi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -68,7 +68,7 @@ LIB_DEPENDS+=	kimproxy:${PORTSDIR}/x11/kdelibs3
 USE_QT_VER=		3
 PREFIX=			${KDE_PREFIX}
 .else
-BROKEN=			"Unknown value in USE_KDELIBS_VER"
+BROKEN=			Unknown value in USE_KDELIBS_VER
 .endif # ${USE_KDELIBS_VER} == 3
 .endif # defined(USE_KDELIBS_VER)
 
@@ -122,7 +122,7 @@ CONFIGURE_ARGS+=--with-qt-includes=${QT_PREFIX}/include \
 CONFIGURE_ENV+=	MOC="${MOC}" CPPFLAGS="${CPPFLAGS} ${QTCPPFLAGS}" LIBS="${QTCFGLIBS}"
 .endif # !defined(QT_NONSTANDARD)
 .else
-BROKEN="Unsupported value of USE_QT_VER"
+BROKEN=Unsupported value of USE_QT_VER
 .endif # defined(USE_QT_VER)
 
 # End of USE_QT_VER section
