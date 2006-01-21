@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.519 2006/01/21 17:37:01 krion Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.520 2006/01/21 18:55:02 lesi Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3249,7 +3249,7 @@ patch-dos2unix:
 .endfor
 .endif
 .else
-	${DO_NADA}
+	@${DO_NADA}
 .endif
 .endif
 
