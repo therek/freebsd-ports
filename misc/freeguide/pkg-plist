@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/misc/freeguide/pkg-plist,v 1.1 2005/11/01 21:41:24 hq Exp $
+@comment $FreeBSD: ports/misc/freeguide/pkg-plist,v 1.2 2005/12/19 15:09:44 hq Exp $
 bin/freeguide
 share/applications/freeguide.desktop
 %%DOCSDIR%%/FAQ.html
@@ -26,6 +26,6 @@ share/applications/freeguide.desktop
 %%JAVASHAREDIR%%/pixmaps/freeguide/logo-72x72.png
 %%JAVASHAREDIR%%/pixmaps/freeguide/logo-96x96.png
 @dirrm %%JAVASHAREDIR%%/pixmaps/freeguide
-@unexec rmdir %D/%%JAVASHAREDIR%%/pixmaps 2>/dev/null || true
+@dirrmtry %%JAVASHAREDIR%%/pixmaps
 @dirrm %%DOCSDIR%%
-@unexec rmdir %D/share/applications 2>/dev/null || true
+@dirrmtry share/applications

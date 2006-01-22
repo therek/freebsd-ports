@@ -1,6 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/math/p5-Math-Currency/pkg-plist,v 1.5 2005/11/16 15:54:16 mat Exp $
 %%SITE_PERL%%/Math/Currency.pm
 %%SITE_PERL%%/Math/Currency/GBP.pm
 %%SITE_PERL%%/Math/Currency/JPY.pm
 @dirrm %%SITE_PERL%%/Math/Currency
-@unexec rmdir %D/%%SITE_PERL%%/Math 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/Math
