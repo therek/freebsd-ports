@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/devel/portmk/Mk/bsd.port.mk,v 1.15 2006/01/21 23:59:09 linimon Exp $
+# $FreeBSD: ports/devel/portmk/Mk/bsd.port.mk,v 1.16 2006/01/22 03:09:01 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -5100,8 +5100,8 @@ generate-plist:
 		${SED} ${PLIST_SUB:S/$/!g/:S/^/ -e s!%%/:S/=/%%!/} ${PLIST} >> ${TMPPLIST}; \
 	fi
 .for reinplace in ${PLIST_REINPLACE}
-.if defined(PLIST_REINPLACE_${reinplace})
-	@${SED} -e '${PLIST_REINPLACE_${reinplace:U}}' ${PLIST} >> ${TMPPLIST}
+.if defined(PLIST_REINPLACE_${reinplace:U})
+	@${SED} -i "" -e '${PLIST_REINPLACE_${reinplace:U}}' ${TMPPLIST}
 .endif
 .endfor
  
