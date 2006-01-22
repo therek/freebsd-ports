@@ -1,7 +1,7 @@
-@comment $FreeBSD: ports/chinese/hc/pkg-plist,v 1.3 2000/11/22 02:22:19 obrien Exp $
+@comment $FreeBSD: ports/chinese/hc/pkg-plist,v 1.4 2001/01/04 17:33:15 sf Exp $
 bin/hc
 bin/b2g
 bin/g2b
 share/chinese/hc.tab
 share/chinese/hc-supp.tab
-@unexec rmdir %D/share/chinese 2>/dev/null || true
+@dirrmtry share/chinese

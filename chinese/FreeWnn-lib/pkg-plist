@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/chinese/FreeWnn-lib/pkg-plist,v 1.11 2005/12/07 10:46:20 hrs Exp $
 include/cwnn/commonhd.h
 include/cwnn/cplib.h
 include/cwnn/jllib.h
@@ -115,4 +115,4 @@ lib/libcwnn.so.0
 @dirrm lib/wnn/zh_CN/rk_p
 @dirrm lib/wnn/zh_CN/rk
 @dirrm lib/wnn/zh_CN
-@unexec rmdir %D/lib/wnn 2> /dev/null || true
+@dirrmtry lib/wnn
