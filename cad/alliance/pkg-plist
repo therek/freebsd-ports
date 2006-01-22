@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/cad/alliance/pkg-plist,v 1.2 2005/09/10 22:04:52 hrs Exp $
 alliance/lib/libMph.la
 alliance/lib/libMph.a
 alliance/lib/libMpu.la
@@ -1768,5 +1768,5 @@ alliance/examples/alliance-examples/tuner/tuner_io.c
 @dirrm alliance/examples/alliance-examples/tuner
 @dirrm alliance/examples/alliance-examples
 @dirrm alliance/examples
-@unexec rmdir %D/alliance/etc > /dev/null 2>&1 || true
-@unexec rmdir %D/alliance > /dev/null 2>&1 || true
+@dirrmtry alliance/etc
+@dirrmtry alliance
