@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/databases/p5-Class-DBI-Loader/pkg-plist,v 1.2 2005/02/21 17:07:45 mat Exp $
 %%SITE_PERL%%/Class/DBI/Loader.pm
 %%SITE_PERL%%/Class/DBI/Loader/Generic.pm
 %%SITE_PERL%%/Class/DBI/Loader/Pg.pm
@@ -6,8 +6,8 @@
 %%SITE_PERL%%/Class/DBI/Loader/mysql.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/DBI/Loader/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/DBI/Loader
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/DBI 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/Class 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/DBI
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class
 @dirrm %%SITE_PERL%%/Class/DBI/Loader
-@unexec rmdir %D/%%SITE_PERL%%/Class/DBI 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/Class 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/Class/DBI
+@dirrmtry %%SITE_PERL%%/Class

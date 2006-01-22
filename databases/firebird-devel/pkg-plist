@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/firebird-devel/pkg-plist,v 1.7 2005/05/01 09:26:40 sem Exp $
+@comment $FreeBSD: ports/databases/firebird-devel/pkg-plist,v 1.8 2005/08/29 10:12:13 garga Exp $
 @unexec rm -f %%LOCALBASE%%/etc/rc.d/000.firebird.sh
 firebird/README
 firebird/UDF/fbudf.so
@@ -104,4 +104,4 @@ firebird/security2.fdb
 @dirrm firebird/include
 @dirrm firebird/intl
 @dirrm firebird/lib
-@unexec rmdir %D/firebird 2>/dev/null || true
+@dirrmtry firebird
