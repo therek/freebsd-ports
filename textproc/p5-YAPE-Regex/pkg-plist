@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/p5-YAPE-Regex/pkg-plist,v 1.2 2005/11/22 11:29:51 mat Exp $
+@comment $FreeBSD: ports/textproc/p5-YAPE-Regex/pkg-plist,v 1.3 2006/01/22 02:54:59 edwin Exp $
 %%SITE_PERL%%/YAPE/Regex.pm
 %%SITE_PERL%%/YAPE/Regex/Element.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/YAPE/Regex/.packlist
@@ -6,5 +6,5 @@
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/YAPE
 @dirrm %%SITE_PERL%%/YAPE/Regex
 @dirrmtry %%SITE_PERL%%/YAPE
-@unexec rmdir %D%%SITE_PERL%%/%%PERL_ARCH%%/auto/YAPE 2>/dev/null || true
-@unexec rmdir %D%%SITE_PERL%%/YAPE 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/YAPE
+@dirrmtry %%SITE_PERL%%/YAPE

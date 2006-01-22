@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/openldap22-server/pkg-plist.client,v 1.3 2004/03/31 22:33:09 eik Exp $
+@comment $FreeBSD: ports/net/openldap22-server/pkg-plist.client,v 1.4 2004/05/27 11:29:07 eik Exp $
 bin/ldapadd
 bin/ldapcompare
 bin/ldapdelete
@@ -10,7 +10,7 @@ bin/ldapwhoami
 @unexec if cmp -s %D/etc/openldap/ldap.conf %D/etc/openldap/ldap.conf.default; then rm -f %D/etc/openldap/ldap.conf; fi
 etc/openldap/ldap.conf.default
 @exec [ -f %B/ldap.conf ] || cp %B/%f %B/ldap.conf
-@unexec rmdir %D/etc/openldap 2>/dev/null || true
+@dirrmtry etc/openldap
 include/lber.h
 include/lber_types.h
 include/ldap.h

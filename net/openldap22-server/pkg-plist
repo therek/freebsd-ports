@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/openldap22-server/pkg-plist,v 1.27 2004/05/27 11:29:07 eik Exp $
+@comment $FreeBSD: ports/net/openldap22-server/pkg-plist,v 1.28 2004/08/15 18:18:45 eik Exp $
 @unexec %%RC_DIR%%/etc/rc.d/slapd%%RC_SUFX%% stop 2>&1 >/dev/null || true
 @unexec %%RC_DIR%%/etc/rc.d/slurpd%%RC_SUFX%% stop 2>&1 >/dev/null || true
 etc/openldap/schema/README
@@ -40,7 +40,7 @@ etc/openldap/slapd.conf.default
 %%BACK_SQL%%libexec/openldap/back_sql.so
 %%BACK_SQL%%libexec/openldap/back_sql-2.2.so
 %%BACK_SQL%%libexec/openldap/back_sql-2.2.so.7
-%%MODULES%%@unexec rmdir %D/libexec/openldap 2>/dev/null || true
+%%MODULES%%@dirrmtry libexec/openldap
 libexec/slapd
 libexec/slurpd
 @comment sbin/slapacl
