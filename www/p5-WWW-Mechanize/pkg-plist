@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/p5-WWW-Mechanize/pkg-plist,v 1.9 2005/02/25 16:52:06 mat Exp $
 bin/mech-dump
 %%SITE_PERL%%/WWW/Mechanize.pm
 %%SITE_PERL%%/WWW/Mechanize/Cookbook.pod
@@ -8,6 +8,6 @@ bin/mech-dump
 %%SITE_PERL%%/WWW/Mechanize/Link.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/Mechanize/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/Mechanize
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW
 @dirrm %%SITE_PERL%%/WWW/Mechanize
-@unexec rmdir %D/%%SITE_PERL%%/WWW 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/WWW

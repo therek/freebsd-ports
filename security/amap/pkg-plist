@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/amap/pkg-plist,v 1.6 2004/02/10 14:44:32 leeym Exp $
+@comment $FreeBSD: ports/security/amap/pkg-plist,v 1.7 2005/05/22 15:16:45 jylefort Exp $
 bin/amap
 bin/amap6
 bin/amapcrap
@@ -11,4 +11,4 @@ etc/amap/appdefs.trig.default
 %%AMAPINCDIR%%/amap-lib.h
 @dirrm %%AMAPLIBDIR%%
 @dirrm %%AMAPINCDIR%%
-@unexec rmdir %D/etc/amap 2>/dev/null || true
+@dirrmtry etc/amap

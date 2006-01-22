@@ -1,10 +1,10 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/p5-CGI-Minimal/pkg-plist,v 1.6 2005/09/14 15:14:53 mat Exp $
 %%SITE_PERL%%/CGI/Minimal.pm
 %%SITE_PERL%%/CGI/Minimal.pod
 %%SITE_PERL%%/CGI/Minimal/Misc.pm
 %%SITE_PERL%%/CGI/Minimal/Multipart.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/CGI/Minimal/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/CGI/Minimal
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/CGI 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/CGI
 @dirrm %%SITE_PERL%%/CGI/Minimal
-@unexec rmdir %D/%%SITE_PERL%%/CGI 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/CGI

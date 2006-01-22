@@ -1,8 +1,8 @@
-@comment $FreeBSD: ports/misc/gaim-ignorance/pkg-plist,v 1.1 2005/08/07 18:40:50 novel Exp $
+@comment $FreeBSD: ports/net-im/gaim-ignorance/pkg-plist,v 1.2 2005/10/24 09:26:40 jylefort Exp $
 lib/gaim/ignorance.so
 %%EXAMPLESDIR%%/ignorance
 @unexec if cmp -s %D/etc/gaim/ignorance.conf %D/etc/gaim/ignorance.conf.sample; then rm -f %D/etc/gaim/ignorance.conf;fi
 etc/gaim/ignorance.conf.sample
 @exec [ -f %B/ignorance.conf ] || cp %B/%f %B/ignorance.conf
 @dirrm %%EXAMPLESDIR%%
-@unexec rmdir %D/etc/gaim/ 2>/dev/null || true
+@dirrmtry etc/gaim/

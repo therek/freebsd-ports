@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net-mgmt/pfpro/pkg-plist,v 1.2 2005/10/29 01:07:46 hq Exp $
 bin/pfpro
 %%DOCSDIR%%/BUGS
 %%DOCSDIR%%/CHANGELOG
@@ -12,7 +12,7 @@ share/xml/pfpro/firewall.xsd
 share/xsl/pfpro/001to010.xsl
 share/xsl/pfpro/xml2pf.xsl
 @dirrm share/xsl/pfpro
-@unexec rmdir %D/share/xsl 2>/dev/null || true
+@dirrmtry share/xsl
 @dirrm share/xml/pfpro
 @dirrm %%EXAMPLESDIR%%
 @dirrm %%DOCSDIR%%

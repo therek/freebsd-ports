@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/p5-HTTP-Proxy/pkg-plist,v 1.4 2005/09/06 13:45:56 mat Exp $
+@comment $FreeBSD: ports/www/p5-HTTP-Proxy/pkg-plist,v 1.5 2005/11/22 12:05:17 mat Exp $
 %%SITE_PERL%%/HTTP/Proxy.pm
 %%SITE_PERL%%/HTTP/Proxy/BodyFilter.pm
 %%SITE_PERL%%/HTTP/Proxy/BodyFilter/complete.pm
@@ -19,4 +19,4 @@
 @dirrm %%SITE_PERL%%/HTTP/Proxy/Engine
 @dirrm %%SITE_PERL%%/HTTP/Proxy/BodyFilter
 @dirrm %%SITE_PERL%%/HTTP/Proxy
-@unexec rmdir %D/%%SITE_PERL%%/HTTP 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/HTTP

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/base/pkg-plist,v 1.7 2005/10/31 19:49:01 sem Exp $
+@comment $FreeBSD: ports/security/base/pkg-plist,v 1.8 2006/01/13 06:13:43 clsung Exp $
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/CHANGELOG
 %%PORTDOCS%%%%DOCSDIR%%/CREDITS
@@ -123,4 +123,4 @@ www/base/styles/acid_style.css
 @dirrm www/base/images
 @dirrm www/base/help
 @dirrm www/base/admin
-@unexec rmdir %D/www/base 2>/dev/null || true
+@dirrmtry www/base

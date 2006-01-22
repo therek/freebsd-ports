@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/jadetex/pkg-plist,v 1.6 2004/08/22 09:18:47 hrs Exp $
+@comment $FreeBSD: ports/print/jadetex/pkg-plist,v 1.7 2005/02/12 18:58:15 hrs Exp $
 @exec ln -sf %D/bin/etex %D/bin/jadetex
 @exec ln -sf %D/bin/pdfetex %D/bin/pdfjadetex
 @unexec rm -f %D/bin/jadetex
@@ -7,6 +7,6 @@ share/texmf/tex/jadetex/dsssl.def
 share/texmf/tex/jadetex/jadetex.ltx
 share/texmf/web2c/jadetex.fmt
 share/texmf/web2c/pdfjadetex.fmt
-@unexec rmdir %D/share/texmf/tex/jadetex 2> /dev/null || true
+@dirrmtry share/texmf/tex/jadetex
 @exec %D/bin/mktexlsr
 @unexec %D/bin/mktexlsr

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/snort/pkg-plist,v 1.20 2005/02/07 09:35:32 sergei Exp $
+@comment $FreeBSD: ports/security/snort/pkg-plist,v 1.21 2005/10/07 15:07:30 sergei Exp $
 bin/snort
 etc/snort/classification.config-sample
 etc/snort/gen-msg.map-sample
@@ -9,7 +9,7 @@ etc/snort/sid-msg.map-sample
 etc/snort/snort.conf-sample
 etc/snort/threshold.conf-sample
 etc/snort/unicode.map-sample
-@unexec rmdir %D/etc/snort 2>/dev/null || true
+@dirrmtry etc/snort
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/BUGS
 %%PORTDOCS%%%%DOCSDIR%%/CREDITS

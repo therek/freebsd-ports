@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/p5-File-Scan/pkg-plist,v 1.4 2003/09/28 12:17:51 naddy Exp $
+@comment $FreeBSD: ports/security/p5-File-Scan/pkg-plist,v 1.5 2003/10/24 12:03:40 ijliao Exp $
 %%SITE_PERL%%/File/Scan.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/File/Scan/.packlist
 %%PORTDOCS%%%%DOCSDIR%%/Changes
@@ -16,5 +16,5 @@
 %%PORTDOCS%%@dirrm %%DOCSDIR%%/docs
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/File/Scan
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/File 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/File 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/File
+@dirrmtry %%SITE_PERL%%/File

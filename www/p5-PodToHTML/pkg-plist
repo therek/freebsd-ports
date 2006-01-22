@@ -1,7 +1,7 @@
-@comment $FreeBSD: ports/www/p5-PodToHTML/pkg-plist,v 1.1 2004/03/10 20:22:08 naddy Exp $
+@comment $FreeBSD: ports/www/p5-PodToHTML/pkg-plist,v 1.2 2004/05/31 08:05:34 kris Exp $
 bin/podtohtml
 %%SITE_PERL%%/Pod/HTML_Elements.pm
 %%SITE_PERL%%/Pod/Links.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/PodToHTML/.packlist
-@unexec rmdir %D/%%SITE_PERL%%/Pod 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/PodToHTML 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/Pod
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/PodToHTML

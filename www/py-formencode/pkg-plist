@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/py-formencode/pkg-plist,v 1.1 2005/11/17 17:19:19 pav Exp $
+@comment $FreeBSD: ports/www/py-formencode/pkg-plist,v 1.2 2005/11/21 23:44:55 mnag Exp $
 %%PYTHON_SITELIBDIR%%/formencode/__init__.py
 %%PYTHON_SITELIBDIR%%/formencode/api.py
 %%PYTHON_SITELIBDIR%%/formencode/compound.py
@@ -72,8 +72,8 @@
 %%PORTDOCS%%%%EXAMPLESDIR%%/WebwareExamples/__init__.py
 %%PORTDOCS%%%%EXAMPLESDIR%%/WebwareExamples/index.py
 %%PORTDOCS%%%%EXAMPLESDIR%%/webware_example.ini
-@unexec rmdir %D/%%PORTDOCS%%%%EXAMPLESDIR%%/WebwareExamples 2>/dev/null || true
-@unexec rmdir %D/%%PORTDOCS%%%%EXAMPLESDIR%% 2>/dev/null || true
-@unexec rmdir %D/%%PYTHON_SITELIBDIR%%/formencode/util 2>/dev/null || true
-@unexec rmdir %D/%%PYTHON_SITELIBDIR%%/formencode/javascript 2>/dev/null || true
-@unexec rmdir %D/%%PYTHON_SITELIBDIR%%/formencode 2>/dev/null || true
+@dirrmtry %%PORTDOCS%%%%EXAMPLESDIR%%/WebwareExamples
+@dirrmtry %%PORTDOCS%%%%EXAMPLESDIR%%
+@dirrmtry %%PYTHON_SITELIBDIR%%/formencode/util
+@dirrmtry %%PYTHON_SITELIBDIR%%/formencode/javascript
+@dirrmtry %%PYTHON_SITELIBDIR%%/formencode

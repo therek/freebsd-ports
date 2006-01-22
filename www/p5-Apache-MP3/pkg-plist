@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/p5-Apache-MP3/pkg-plist,v 1.4 2003/06/05 08:52:46 erwin Exp $
+@comment $FreeBSD: ports/www/p5-Apache-MP3/pkg-plist,v 1.5 2003/10/24 12:04:34 ijliao Exp $
 %%SITE_PERL%%/Apache/MP3.pm
 %%SITE_PERL%%/Apache/MP3/L10N.pm
 %%SITE_PERL%%/Apache/MP3/L10N/Aliases.pm
@@ -55,8 +55,8 @@ share/Apache-MP3/playlist.gif
 share/Apache-MP3/right_arrow.gif
 share/Apache-MP3/sound.gif
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Apache/MP3
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/Apache 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Apache
 @dirrm %%SITE_PERL%%/Apache/MP3/L10N
 @dirrm %%SITE_PERL%%/Apache/MP3
-@unexec rmdir %D/%%SITE_PERL%%/Apache 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/Apache
 @dirrm share/Apache-MP3

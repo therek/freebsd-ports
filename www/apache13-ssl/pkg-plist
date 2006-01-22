@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache13-ssl/pkg-plist,v 1.25 2006/01/14 13:59:20 clement Exp $
+@comment $FreeBSD: ports/www/apache13-ssl/pkg-plist,v 1.26 2006/01/16 10:13:26 clement Exp $
 bin/checkgid
 bin/dbmmanage
 bin/htdigest
@@ -656,7 +656,7 @@ www/icons/world2.gif
 www/icons/world2.png
 @exec mkdir -p %D/www/proxy
 @unexec rm -f %D/etc/apache/httpsd.conf.bak 2> /dev/null || true
-@unexec rmdir %D/etc/apache 2> /dev/null || true
+@dirrmtry etc/apache
 @dirrm include/apache/xml
 @dirrm include/apache
 @dirrm libexec/apache

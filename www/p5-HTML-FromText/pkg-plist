@@ -1,7 +1,7 @@
-@comment $FreeBSD: ports/www/p5-HTML-FromText/pkg-plist,v 1.2 2003/10/24 12:04:46 ijliao Exp $
+@comment $FreeBSD: ports/www/p5-HTML-FromText/pkg-plist,v 1.3 2004/02/11 15:46:20 mat Exp $
 bin/text2html
 %%SITE_PERL%%/HTML/FromText.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTML/FromText/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTML/FromText
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/HTML 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/HTML 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTML
+@dirrmtry %%SITE_PERL%%/HTML

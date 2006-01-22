@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/textproc/p5-Text-VimColor/pkg-plist,v 1.1 2004/07/26 01:54:44 ijliao Exp $
 bin/text-vimcolor
 %%SITE_PERL%%/Text/VimColor.pm
 %%SITE_PERL%%/Text/VimColor/light.css
@@ -7,5 +7,5 @@ bin/text-vimcolor
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Text/VimColor/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Text/VimColor
 @dirrm %%SITE_PERL%%/Text/VimColor
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/Text 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/Text 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Text
+@dirrmtry %%SITE_PERL%%/Text

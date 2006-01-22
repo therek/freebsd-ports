@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-servers/Xfstt/pkg-plist,v 1.4 2003/02/16 13:55:09 naddy Exp $
+@comment $FreeBSD: ports/x11-servers/Xfstt/pkg-plist,v 1.5 2003/09/04 17:21:39 krion Exp $
 bin/xfstt
 etc/rc.d/xfstt.sh
 %%PORTDOCS%%%%DOCSDIR%%/CHANGES
@@ -8,4 +8,4 @@ etc/rc.d/xfstt.sh
 @exec mkdir -p %D/lib/X11/fonts/TrueType
 @unexec rm -f %D/lib/X11/fonts/TrueType/ttname.dir
 @unexec rm -f %D/lib/X11/fonts/TrueType/ttinfo.dir
-@unexec rmdir %D/lib/X11/fonts/TrueType 2>/dev/null || true
+@dirrmtry lib/X11/fonts/TrueType

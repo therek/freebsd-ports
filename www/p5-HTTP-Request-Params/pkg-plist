@@ -1,8 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/p5-HTTP-Request-Params/pkg-plist,v 1.1 2005/11/22 13:10:26 mat Exp $
 %%SITE_PERL%%/HTTP/Request/Params.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTTP/Request/Params/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTTP/Request/Params
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/HTTP/Request 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/HTTP 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/HTTP/Request 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/HTTP 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTTP/Request
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTTP
+@dirrmtry %%SITE_PERL%%/HTTP/Request
+@dirrmtry %%SITE_PERL%%/HTTP

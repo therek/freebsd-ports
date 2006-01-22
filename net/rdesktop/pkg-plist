@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/rdesktop/pkg-plist,v 1.5 2005/03/10 19:05:10 obrien Exp $
+@comment $FreeBSD: ports/net/rdesktop/pkg-plist,v 1.6 2005/05/16 09:30:10 obrien Exp $
 bin/rdesktop
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/TODO
@@ -46,5 +46,5 @@ bin/rdesktop
 %%DATADIR%%/keymaps/sv
 %%DATADIR%%/keymaps/th
 %%DATADIR%%/keymaps/tr
-@unexec rmdir %D/%%DATADIR%%/keymaps 2>/dev/null || true
-@unexec rmdir %D/%%DATADIR%% 2>/dev/null || true
+@dirrmtry %%DATADIR%%/keymaps
+@dirrmtry %%DATADIR%%
