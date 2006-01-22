@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-DateTime-Locale/pkg-plist,v 1.2 2005/02/28 15:42:10 mat Exp $
 %%SITE_PERL%%/DateTime/Locale.pm
 %%SITE_PERL%%/DateTime/Locale/Alias/ISO639_2.pm
 %%SITE_PERL%%/DateTime/Locale/Base.pm
@@ -304,4 +304,4 @@
 %%SITE_PERL%%/DateTime/LocaleCatalog.pm
 @dirrm %%SITE_PERL%%/DateTime/Locale/Alias
 @dirrm %%SITE_PERL%%/DateTime/Locale
-@unexec rmdir %D/%%SITE_PERL%%/DateTime 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/DateTime

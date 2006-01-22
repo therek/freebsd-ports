@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-DateTime-Format-MySQL/pkg-plist,v 1.2 2005/04/20 14:43:47 mat Exp $
 %%SITE_PERL%%/DateTime/Format/MySQL.pm
-@unexec rmdir %D/%%SITE_PERL%%/DateTime/Format 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/DateTime 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/DateTime/Format
+@dirrmtry %%SITE_PERL%%/DateTime

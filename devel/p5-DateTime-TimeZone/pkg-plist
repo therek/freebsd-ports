@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-DateTime-TimeZone/pkg-plist,v 1.9 2005/11/30 14:43:04 mat Exp $
+@comment $FreeBSD: ports/devel/p5-DateTime-TimeZone/pkg-plist,v 1.10 2005/12/30 16:22:03 mat Exp $
 %%SITE_PERL%%/DateTime/TimeZone.pm
 %%SITE_PERL%%/DateTime/TimeZone/Africa/Abidjan.pm
 %%SITE_PERL%%/DateTime/TimeZone/Africa/Accra.pm
@@ -398,4 +398,4 @@
 @dirrm %%SITE_PERL%%/DateTime/TimeZone/America
 @dirrm %%SITE_PERL%%/DateTime/TimeZone/Africa
 @dirrm %%SITE_PERL%%/DateTime/TimeZone
-@unexec rmdir %D/%%SITE_PERL%%/DateTime 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/DateTime

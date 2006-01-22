@@ -1,7 +1,7 @@
-@comment $FreeBSD: ports/devel/p5-Path-Class/pkg-plist,v 1.1 2004/07/25 14:17:53 vanilla Exp $
+@comment $FreeBSD: ports/devel/p5-Path-Class/pkg-plist,v 1.2 2005/04/07 11:57:25 mat Exp $
 %%SITE_PERL%%/Path/Class.pm
 %%SITE_PERL%%/Path/Class/Entity.pm
 %%SITE_PERL%%/Path/Class/Dir.pm
 %%SITE_PERL%%/Path/Class/File.pm
 @dirrm %%SITE_PERL%%/Path/Class
-@unexec rmdir %D/%%SITE_PERL%%/Path 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/Path

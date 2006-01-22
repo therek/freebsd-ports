@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-Devel-Cover/pkg-plist,v 1.6 2005/05/17 12:35:31 mat Exp $
+@comment $FreeBSD: ports/devel/p5-Devel-Cover/pkg-plist,v 1.7 2005/10/17 11:48:39 skv Exp $
 bin/cover
 bin/gcov2perl
 %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover.pm
@@ -35,9 +35,9 @@ bin/gcov2perl
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Devel/Cover/Cover.bs
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Devel/Cover/Cover.so
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Devel/Cover
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/Devel 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Devel
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/Report
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/DB
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/Annotation
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/Devel 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/Devel

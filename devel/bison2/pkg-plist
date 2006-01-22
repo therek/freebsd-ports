@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/bison2/pkg-plist,v 1.18 2005/11/17 00:17:54 ade Exp $
+@comment $FreeBSD: ports/devel/bison2/pkg-plist,v 1.19 2005/11/18 04:03:37 ade Exp $
 bin/bison
 bin/bison2
 bin/yacc
@@ -57,4 +57,4 @@ share/aclocal/bison-i18n.m4
 %%NLS%%@unexec rmdir %D/share/locale/rw 2>/dev/null || true
 @dirrm %%DATADIR%%/m4sugar
 @dirrm %%DATADIR%%
-@unexec rmdir %D/share/aclocal 2>/dev/null || true
+@dirrmtry share/aclocal

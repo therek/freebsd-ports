@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-Locale-Maketext-Lexicon/pkg-plist,v 1.8 2005/03/15 14:35:57 mat Exp $
 bin/xgettext.pl
 %%SITE_PERL%%/Locale/Maketext/Extract.pm
 %%SITE_PERL%%/Locale/Maketext/Extract/Run.pm
@@ -9,9 +9,9 @@ bin/xgettext.pl
 %%SITE_PERL%%/Locale/Maketext/Lexicon/Tie.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Locale/Maketext/Lexicon/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Locale/Maketext/Lexicon
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/Locale/Maketext 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/Locale 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Locale/Maketext
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Locale
 @dirrm %%SITE_PERL%%/Locale/Maketext/Lexicon
-@unexec rmdir %D/%%SITE_PERL%%/Locale/Maketext/Extract 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/Locale/Maketext 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/Locale 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/Locale/Maketext/Extract
+@dirrmtry %%SITE_PERL%%/Locale/Maketext
+@dirrmtry %%SITE_PERL%%/Locale

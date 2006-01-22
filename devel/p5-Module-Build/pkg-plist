@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-Module-Build/pkg-plist,v 1.8 2005/03/21 14:59:46 mat Exp $
 bin/config_data
 %%SITE_PERL%%/Module/Build.pm
 %%SITE_PERL%%/Module/Build/Base.pm
@@ -23,4 +23,4 @@ bin/config_data
 %%SITE_PERL%%/Module/Build/PodParser.pm
 @dirrm %%SITE_PERL%%/Module/Build/Platform
 @dirrm %%SITE_PERL%%/Module/Build
-@unexec rmdir %D/%%SITE_PERL%%/Module 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/Module

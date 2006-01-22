@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-Data-Dump-Streamer/pkg-plist,v 1.2 2005/05/24 12:00:14 mat Exp $
+@comment $FreeBSD: ports/devel/p5-Data-Dump-Streamer/pkg-plist,v 1.3 2005/08/30 11:24:43 mat Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/DDS.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Data/Dump/Streamer.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Data/Dump/Streamer/_/Printers.pm
@@ -6,9 +6,9 @@
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Data/Dump/Streamer/Streamer.bs
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Data/Dump/Streamer/Streamer.so
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Data/Dump/Streamer
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/Data/Dump 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/auto/Data 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Data/Dump
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Data
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/Data/Dump/Streamer/_
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/Data/Dump/Streamer
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/Data/Dump 2>/dev/null || true
-@unexec rmdir %D/%%SITE_PERL%%/%%PERL_ARCH%%/Data 2>/dev/null || true
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/Data/Dump
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/Data
