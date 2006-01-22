@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.104 2006/01/16 18:28:35 adamw Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.105 2006/01/21 17:37:01 krion Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.334 2005/10/23 16:37:47 marcus Exp $
 #
@@ -677,7 +677,6 @@ MTREE_FILE?=	${GNOME_MTREE}
 .endif
 
 .if defined(GNOME_PRE_PATCH)
-USE_REINPLACE=	yes
 
 pre-patch: gnome-pre-patch
 
