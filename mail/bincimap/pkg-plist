@@ -1,8 +1,8 @@
-@comment $FreeBSD: ports/mail/bincimap/pkg-plist,v 1.4 2004/08/30 16:29:27 sergei Exp $
+@comment $FreeBSD: ports/mail/bincimap/pkg-plist,v 1.5 2004/10/13 16:22:05 sergei Exp $
 bin/bincimapd
 bin/bincimap-up
 etc/bincimap/bincimap.conf.sample
-@unexec rmdir %D/etc/bincimap 2>/dev/null || true
+@dirrmtry etc/bincimap
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
 %%PORTDOCS%%%%DOCSDIR%%/README

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc28/pkg-plist,v 1.12 2005/02/12 13:19:46 das Exp $
+@comment $FreeBSD: ports/lang/gcc28/pkg-plist,v 1.13 2005/08/19 11:45:26 pav Exp $
 bin/g++28
 bin/gcov28
 bin/gcc28
@@ -37,6 +37,6 @@ lib/gcc-lib/%%GNUHOST%%/2.8.1/libobjc.a
 @dirrm lib/gcc-lib/%%GNUHOST%%/2.8.1/include
 @dirrm lib/gcc-lib/%%GNUHOST%%/2.8.1
 @dirrm lib/gcc-lib/%%GNUHOST%%
-@unexec rmdir %D/lib/gcc-lib 2>/dev/null || true
+@dirrmtry lib/gcc-lib
 @dirrm %%GNUHOST%%/include
 @dirrm %%GNUHOST%%

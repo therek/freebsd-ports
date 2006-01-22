@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/japanese/jadetex-ptex/pkg-plist,v 1.4 2004/10/30 10:47:46 hrs Exp $
+@comment $FreeBSD: ports/japanese/jadetex-ptex/pkg-plist,v 1.5 2005/02/10 17:52:30 hrs Exp $
 @exec ln -s -f %D/bin/ptex %D/bin/jadetex-ptex
 @unexec rm -f %D/bin/jadetex-ptex
 %%TEXMFLOCALDIR%%/ptex/jadetex/dsssl-ptex.def
@@ -8,4 +8,4 @@
 %%PORTDOCS%%@dirrm %%DOCSDIR%%%%PKGNAMESUFFIX%%
 @exec %%MKTEXLSR%%
 @unexec %%MKTEXLSR%%
-@unexec rmdir %D/%%TEXMFLOCALDIR%%/ptex/jadetex 2> /dev/null || true
+@dirrmtry %%TEXMFLOCALDIR%%/ptex/jadetex

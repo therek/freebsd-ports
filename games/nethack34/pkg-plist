@@ -1,11 +1,11 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/games/nethack34/pkg-plist,v 1.14 2003/06/05 20:06:30 naddy Exp $
 bin/%%HACKNAME%%
 %%HACKDIR%%/%%HACKNAME%%
 @exec mkdir %D/%%HACKDIR%%/save
 @exec chmod -R 775 %D/%%HACKDIR%%
 @exec chmod 2755 %D/%%HACKDIR%%/%%HACKNAME%%
 @exec chown games:games %D/%%HACKDIR%%/save
-@unexec rmdir %D/%%HACKDIR%%/save 2>/dev/null || true
+@dirrmtry %%HACKDIR%%/save
 %%HACKDIR%%/Arc-fila.lev
 %%HACKDIR%%/Arc-filb.lev
 %%HACKDIR%%/Arc-goal.lev

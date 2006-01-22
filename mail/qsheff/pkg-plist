@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/qsheff/pkg-plist,v 1.1 2005/07/20 13:39:35 garga Exp $
+@comment $FreeBSD: ports/mail/qsheff/pkg-plist,v 1.2 2005/08/19 10:04:31 garga Exp $
 bin/qsheff
 @unexec if cmp -s %D/etc/qsheff/qsheff.attach %D/etc/qsheff/qsheff.attach-default; then rm -f %D/etc/qsheff/qsheff.attach; fi
 etc/qsheff/qsheff.attach-default
@@ -18,7 +18,7 @@ etc/qsheff/uninstall-wrapper.sh
 %%DATADIR%%/sample-OK.msg
 %%DATADIR%%/sample-SPAM.msg
 %%DATADIR%%/sample-VIRUS.msg
-@unexec rmdir %D/etc/qsheff 2>/dev/null || true
+@dirrmtry etc/qsheff
 @dirrm %%DATADIR%%
 @unexec echo
 @unexec echo "Type '%%PREFIX%%/etc/qsheff/uninstall-wrapper.sh' to uninstall qSheff completely."
