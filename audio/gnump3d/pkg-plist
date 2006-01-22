@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/gnump3d/pkg-plist,v 1.24 2005/10/29 20:38:11 mnag Exp $
+@comment $FreeBSD: ports/audio/gnump3d/pkg-plist,v 1.25 2005/11/18 16:35:29 mnag Exp $
 bin/gnump3d
 bin/gnump3d-index
 bin/gnump3d-top
@@ -403,6 +403,6 @@ etc/gnump3d/mime.types
 @dirrm %%SITE_PERL%%/gnump3d/plugins
 @dirrm %%SITE_PERL%%/gnump3d/lang
 @dirrm %%SITE_PERL%%/gnump3d
-@unexec rmdir %D/etc/gnump3d 2>/dev/null || true
+@dirrmtry etc/gnump3d
 @unexec rmdir /var/log/gnump3d 2>/dev/null || true
 @exec mkdir -p /var/log/gnump3d
