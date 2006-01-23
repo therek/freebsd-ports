@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.61 2005/11/08 09:02:51 clement Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.62 2006/01/21 17:37:01 krion Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -406,12 +406,16 @@ _PORTSEARCH=	\
 	    fields["rdeps"] = 9;  names[9]  = "R-deps"; \
 	    fields["www"]   = 10; names[10] = "WWW"; \
 	    split(display, d, /,[ \t]*/); \
-	    for (i in d) { \
-	      disp[fields[d[i]]] = 1; \
-	    } \
 	    split(xdisplay, xd, /,[ \t]*/); \
-	    for (i in xd) { \
-	      delete disp[fields[xd[i]]]; \
+	    for (i in d) { \
+            toprint = 1;\
+	      for (j in xd) { \
+                if (d[i] == xd[j] ) { \
+                       toprint=0; \
+                       break;\
+                 }\
+	      } \
+      	    if (toprint == 1 ) disp[fields[d[i]]] = 1; \
 	    } \
 	  } \
 	  { \
