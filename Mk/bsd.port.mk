@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.521 2006/01/21 22:07:08 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.522 2006/01/22 04:28:39 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -4602,7 +4602,7 @@ ALL-DEPENDS-LIST= \
 				continue;				\
 			fi;						\
 			${ECHO_CMD} $$d;				\
-			if ! children=$$(${MAKE} -C $$d -V _DEPEND_DIRS); then\
+			if ! children=$$(cd $$d && ${MAKE} -V _DEPEND_DIRS); then\
 				${ECHO_MSG} "${PKGNAME}: \"$$d\" erroneous -- dependency list incomplete" >&2; \
 				continue;				\
 			fi;						\
