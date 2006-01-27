@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.889 2006/01/27 19:41:01 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.890 2006/01/27 21:16:02 mnag Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -18,7 +18,8 @@
 # be added at the tail.
 #
 # If previously removed port gets restored, make sure to delete the relevant
-# line.
+# line.  If a port is copied to a new location and the old location is kept
+# (e.g. upgraded to a later version), don't record it here.
 #
 # Port|Moved to|Date|Why
 net/ratoolset|net/irrtoolset|2002-11-16|software was renamed
