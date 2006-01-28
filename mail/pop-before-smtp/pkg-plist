@@ -1,6 +1,5 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/pop-before-smtp/pkg-plist,v 1.2 2005/07/08 21:40:48 pav Exp $
 etc/pop-before-smtp-conf.pl.sample
-etc/rc.d/pop-before-smtp.sh.sample
 sbin/pop-before-smtp
 %%PORTDOCS%%%%DOCSDIR%%/COPYING
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
