@@ -1,13 +1,13 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.54 2006/01/08 19:31:07 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.55 2006/01/21 17:37:01 krion Exp $
 #
 # Please view me with 4 column tabs!
 
 # Please make sure all changes to this file are past through the maintainer.
 # Do not commit them yourself (unless of course you're the Port's Wraith ;).
-KDE_MAINTAINER=		will@FreeBSD.org
+KDE_MAINTAINER=		kde@FreeBSD.org
 
 # This section contains the USE_ definitions.
 # XXX: Write HAVE_ definitions sometime.
