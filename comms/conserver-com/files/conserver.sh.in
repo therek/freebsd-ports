@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/comms/conserver-com/files/conserver.sh,v 1.1 2003/10/25 13:11:16 kuriyama Exp $
+# $FreeBSD: ports/comms/conserver-com/files/conserver.sh,v 1.2 2005/11/30 05:52:03 kuriyama Exp $
 #
 
 # PROVIDE: conserver
