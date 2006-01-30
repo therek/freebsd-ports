@@ -1,6 +1,6 @@
 FreeBSD TorrentFlux installation
 
-  $FreeBSD$
+  $FreeBSD: ports/net-p2p/torrentflux/files/install.txt.in,v 1.1 2005/10/20 18:37:55 eik Exp $
 
 These are the steps to install TorrentFlux with LightTPD, SQLite and eAccelerator.
 Some manual configuration is necessary, but it should be fairly easy to get the
@@ -19,7 +19,7 @@ port up and running.
    - this port is pulled in either ways, but you may want to avoid installing
      TCL as a build dependency
 
-4. install port net/torrentflux with WITH_TF_DATADIR=/your/download/directory
+4. install port net-p2p/torrentflux with WITH_TF_DATADIR=/your/download/directory
    - The directory must be writable by the 'www' user and reside on a
      partition with enough free space to accommodate all files you plan
      to download. It will be created if it doesn't exist.
