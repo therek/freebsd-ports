@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.71 2005/12/07 04:23:32 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.72 2006/01/23 21:14:05 pav Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -151,7 +151,7 @@ Python_Include_MAINTAINER=	perky@FreeBSD.org
 _PYTHON_PORTBRANCH=		2.4
 _PYTHON_ALLBRANCHES=	2.4 2.3 2.2 2.1 2.5 # preferred first
 _ZOPE_PORTBRANCH=		2.7
-_ZOPE_ALLBRANCHES=		2.7 2.8 3.1
+_ZOPE_ALLBRANCHES=		2.7 2.8 2.9 3.2
 
 
 # Determine version number of Zope to use
@@ -384,6 +384,9 @@ PYDISTUTILS_INSTALLARGS?=	-c -O1 --prefix=${PREFIX}
 .if ${ZOPE_VERSION} == "3.2"
 SZOPEBASEDIR?=			www/Zope3
 ZOPE_PORTSDIR=			${PORTSDIR}/www/zope3
+.elif ${ZOPE_VERSION} == "2.9"
+SZOPEBASEDIR?=			www/Zope29
+ZOPE_PORTSDIR=			${PORTSDIR}/www/zope29
 .elif ${ZOPE_VERSION} == "2.8"
 SZOPEBASEDIR?=			www/Zope28
 ZOPE_PORTSDIR=			${PORTSDIR}/www/zope28
@@ -393,7 +396,7 @@ ZOPE_PORTSDIR=			${PORTSDIR}/www/zope
 .else
 check-makevars::
 	@${ECHO} "Makefile error: bad value for ZOPE_VERSION: ${ZOPE_VERSION}."
-	@${ECHO} "Legal values are:	2.7 (default), 2.8, 3.2"
+	@${ECHO} "Legal values are:	2.7 (default), 2.8, 2.9, 3.2"
 	@${FALSE}
 .endif
 ZOPEBASEDIR?=			${PREFIX}/${SZOPEBASEDIR}
