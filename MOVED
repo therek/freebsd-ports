@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.891 2006/01/27 22:02:00 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.892 2006/01/30 21:35:20 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2156,3 +2156,4 @@ net/xnap|net-p2p/xnap|2006-01-30|Moved to new category
 misc/ed2k|net-p2p/ed2k|2006-01-30|Moved to new category
 misc/edonkey-tool-hash|net-p2p/edonkey-tool-hash|2006-01-30|Moved to new category
 misc/linux-edonkey-tool-recovermet|net-p2p/linux-edonkey-tool-recovermet|2006-01-30|Moved to new category
+math/netcdf|science/netcdf|2006-01-30|Moved to a better category
