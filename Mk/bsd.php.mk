@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.22 2006/01/16 12:08:19 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.23 2006/01/21 17:37:01 krion Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -254,7 +254,7 @@ _USE_PHP_ALL=	bcmath bz2 calendar ctype curl dba dbase \
 		exif fileinfo filepro fribidi ftp gd gettext gmp \
 		iconv imagick imap interbase ldap mbstring mcrypt \
 		mhash ming mssql mysql ncurses odbc \
-		openssl panda pcntl pcre pdf pgsql posix \
+		openssl panda pcntl pcre pdf pfpro pgsql posix \
 		pspell radius readline recode session shmop snmp \
 		sockets sybase_ct sysvmsg sysvsem sysvshm \
 		tokenizer wddx xml xmlrpc yaz zip zlib
@@ -308,6 +308,7 @@ panda_DEPENDS=	print/pecl-panda
 pcntl_DEPENDS=	devel/php${PHP_VER}-pcntl
 pcre_DEPENDS=	devel/php${PHP_VER}-pcre
 pdf_DEPENDS=	print/pecl-pdflib
+pfpro_DEPENDS=	finance/php${PHP_VER}-pfpro
 pgsql_DEPENDS=	databases/php${PHP_VER}-pgsql
 posix_DEPENDS=	sysutils/php${PHP_VER}-posix
 pspell_DEPENDS=	textproc/php${PHP_VER}-pspell
