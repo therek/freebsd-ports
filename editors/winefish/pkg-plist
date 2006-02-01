@@ -1,14 +1,14 @@
-@comment $FreeBSD: ports/editors/winefish/pkg-plist,v 1.1 2005/09/11 12:46:24 pav Exp $
+@comment $FreeBSD: ports/editors/winefish/pkg-plist,v 1.2 2006/01/29 15:48:47 pav Exp $
 bin/winefish
 share/gnome/application-registry/winefish.applications
 share/gnome/applications/winefish.desktop
 share/gnome/mime-info/winefish.mime
 share/gnome/mime-info/winefish.keys
-share/pixmaps/gnome-application-winefish-project.png
-share/pixmaps/winefish-icon.png
 share/locale/it/LC_MESSAGES/winefish.mo
 share/locale/vi/LC_MESSAGES/winefish.mo
 share/mime/packages/winefish.xml
+share/pixmaps/gnome-application-winefish-project.png
+share/pixmaps/winefish-icon.png
 %%DATADIR%%/autotext.default
 %%DATADIR%%/custom_menu.default
 %%DATADIR%%/encodings.default
