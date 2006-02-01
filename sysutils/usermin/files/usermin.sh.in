@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/usermin/files/usermin.sh.sample,v 1.3 2004/06/19 20:58:44 olgeni Exp $
+# $FreeBSD: ports/sysutils/usermin/files/usermin.sh.in,v 1.4 2006/01/07 06:29:56 dougb Exp $
 #
 # PROVIDE: usermin
 # REQUIRE: LOGIN
@@ -11,7 +11,7 @@
 # usermin_enable="YES"
 #
 
-usermin_enable="${usermin_enable-NO}"
+usermin_enable=${usermin_enable:-"NO"}
 
 . %%RC_SUBR%%
 
