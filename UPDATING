@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060201:
+  AFFECTS: users of x11/tilda
+  AUTHOR: barner@FreeBSD.org
+
+  The configuration file syntax has changed. Users of x11/tilda must 
+  delete their old ones and re-create them.
+
 20060131:
   AFFECTS: users of security/stunnel
   AUTHOR: roam@FreeBSD.org
@@ -3002,4 +3009,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.281 2006/01/30 20:12:32 cperciva Exp $
+$FreeBSD: ports/UPDATING,v 1.282 2006/01/31 09:11:38 roam Exp $
