@@ -1,10 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/comms/conserver-com/files/conserver.sh,v 1.2 2005/11/30 05:52:03 kuriyama Exp $
+# $FreeBSD: ports/comms/conserver-com/files/conserver.sh.in,v 1.1 2006/01/30 14:02:49 kuriyama Exp $
 #
 
 # PROVIDE: conserver
-# KEYWORD: FreeBSD
+# REQUIRE: DAEMON
+# KEYWORD: shutdown
 
 . %%RC_SUBR%%
 
