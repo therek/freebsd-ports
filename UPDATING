@@ -7,6 +7,12 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20060201:
+  AFFECTS: users of sysutils/xmbmon
+  AUTHOR: jylefort@FreeBSD.org
+
+  The tty program (mbmon) was moved into a separate port, sysutils/mbmon.
+
+20060201:
   AFFECTS: users of x11/tilda
   AUTHOR: barner@FreeBSD.org
 
@@ -3009,4 +3015,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.282 2006/01/31 09:11:38 roam Exp $
+$FreeBSD: ports/UPDATING,v 1.283 2006/02/01 12:02:47 barner Exp $
