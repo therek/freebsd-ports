@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.105 2006/01/21 17:37:01 krion Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.106 2006/01/22 20:35:15 pav Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.334 2005/10/23 16:37:47 marcus Exp $
 #
@@ -74,6 +74,7 @@ gnomehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "Makefile.in*" -type f | ${XARGS} $
 				 s|[(]datadir[)]/mime"|(prefix)/share/mime"|g ; \
 				 s|[(]datadir[)]/mime;|(prefix)/share/mime;|g ; \
 				 s|[(]datadir[)]/mime$$|(prefix)/share/mime|g ; \
+				 s|[(]datadir[)]/dbus-1|(prefix)/share/dbus-1|g ; \
 				 s|[(]libdir[)]/pkgconfig|(prefix)/libdata/pkgconfig|g ; \
 				 s|[$$][(]localstatedir[)]/scrollkeeper|${SCROLLKEEPER_DIR}|g ; \
 				 s|[(]datadir[)]/icons/hicolor|(prefix)/share/icons/hicolor|g ; \
