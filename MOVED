@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.894 2006/01/31 15:20:35 kuriyama Exp $
+# $FreeBSD: ports/MOVED,v 1.895 2006/02/01 10:06:28 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2159,3 +2159,4 @@ misc/linux-edonkey-tool-recovermet|net-p2p/linux-edonkey-tool-recovermet|2006-01
 math/netcdf|science/netcdf|2006-01-30|Moved to a better category
 japanese/mecab-razil|japanese/mecab|2006-02-01|Patched library is not required now
 japanese/firefox-ja_JP|japanese/firefox-ja|2006-02-01|Project renamed
+lang/m3gdb||2006-02-03|Remove expired port
