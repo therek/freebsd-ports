@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.896 2006/02/03 17:27:40 vs Exp $
+# $FreeBSD: ports/MOVED,v 1.897 2006/02/03 17:30:41 vs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2161,3 +2161,5 @@ japanese/mecab-razil|japanese/mecab|2006-02-01|Patched library is not required n
 japanese/firefox-ja_JP|japanese/firefox-ja|2006-02-01|Project renamed
 lang/m3gdb||2006-02-03|Remove expired port
 misc/tvguide||2006-02-03|Remove expired port
+japanese/gn-gnspool||2006-02-06|Remove expired port
+www/adzap2squirm||2006-02-06|Remove expired port
