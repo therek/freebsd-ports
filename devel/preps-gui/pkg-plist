@@ -1,7 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/preps-gui/pkg-plist,v 1.2 2005/10/13 21:59:39 flz Exp $
 bin/preps
 share/gnome/apps/Development/PRepS.desktop
 share/gnome/omf/preps/preps-C.omf
+share/pixmaps/preps.png
 %%DATADIR%%/preps_logo.xpm
 %%DATADIR%%/gnome/help/preps/C/legal.xml
 %%DATADIR%%/gnome/help/preps/C/preps.xml
@@ -25,6 +26,7 @@ share/gnome/omf/preps/preps-C.omf
 %%DATADIR%%/gnome/help/preps/C/figures/statedit.png
 %%DATADIR%%/gnome/help/preps/C/figures/useredit.png
 @dirrm share/gnome/omf/preps
+@dirrm share/pixmaps
 @dirrm %%DATADIR%%/gnome/help/preps/C/figures
 @dirrm %%DATADIR%%/gnome/help/preps/C
 @dirrm %%DATADIR%%/gnome/help/preps
