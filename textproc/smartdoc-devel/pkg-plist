@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/smartdoc-devel/pkg-plist,v 1.7 2005/04/06 23:35:41 hq Exp $
+@comment $FreeBSD: ports/textproc/smartdoc-devel/pkg-plist,v 1.8 2006/01/22 02:55:03 edwin Exp $
 bin/sdoc
 lib/xemacs/site-lisp/sdoc-helper.el
 lib/xemacs/site-lisp/sdoc-mode.el
@@ -19,3 +19,4 @@ share/xml/smartdoc/catalog
 @dirrm %%EXAMPLESDIR%%/html4
 @dirrm %%EXAMPLESDIR%%
 @dirrmtry lib/xemacs/site-lisp
+@dirrmtry lib/xemacs
