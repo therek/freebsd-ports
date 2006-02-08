@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/mrtg/files/mrtg_daemon.sh.in,v 1.1 2006/02/06 12:24:19 demon Exp $
 
 #
 # PROVIDE: mrtg_daemon
-# REQUIRE: DAEMON
+# REQUIRE: DAEMON bsnmpd snmpd
 # KEYWORD: FreeBSD
 
 .  %%RC_SUBR%%
