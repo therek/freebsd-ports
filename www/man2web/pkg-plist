@@ -1,4 +1,5 @@
-@comment $FreeBSD: ports/www/man2web/pkg-plist,v 1.1 2003/04/19 14:00:38 naddy Exp $
+@comment $FreeBSD: ports/www/man2web/pkg-plist,v 1.2 2003/04/28 17:58:17 naddy Exp $
 bin/man2web
 %%CGIDIR%%/man2web
 etc/man2web.conf.default
+@dirrmtry %%CGIDIR%%
