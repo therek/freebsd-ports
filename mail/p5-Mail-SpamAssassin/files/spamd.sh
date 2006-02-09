@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/p5-Mail-SpamAssassin/files/spamd.sh,v 1.11 2005/05/10 13:00:22 sem Exp $
+# $FreeBSD: ports/mail/p5-Mail-SpamAssassin/files/spamd.sh,v 1.12 2006/01/04 06:35:12 edwin Exp $
 #
 
 # PROVIDE: spamd
 # REQUIRE: LOGIN
 # BEFORE: mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable spamd:
