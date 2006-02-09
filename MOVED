@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.902 2006/02/08 11:14:50 vd Exp $
+# $FreeBSD: ports/MOVED,v 1.903 2006/02/08 11:55:08 vd Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2168,3 +2168,4 @@ www/jakarta-tomcat55|www/tomcat55|2006-02-07|Renamed (no longer a Jakarta projec
 comms/qtpcr||2006-02-08|Remove expired port
 www/amyc||2006-02-08|Remove expired port
 science/glens||2006-02-08|Remove expired port
+finance/emma||2006-02-09|Remove expired port
