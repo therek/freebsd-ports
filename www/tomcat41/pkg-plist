@@ -1,11 +1,10 @@
-@comment $FreeBSD: ports/www/jakarta-tomcat41/pkg-plist,v 1.24 2004/12/19 04:04:26 hq Exp $
+@comment $FreeBSD: ports/www/jakarta-tomcat41/pkg-plist,v 1.25 2006/02/07 08:50:08 lawrance Exp $
 @unexec if cmp -s %D/%%T%%/conf/server.xml %D/%%T%%/conf/server.xml.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/server.xml; else echo If permanently deleting this package, %D/%%T%%/conf/server.xml must be removed manually; fi
 @unexec if cmp -s %D/%%T%%/conf/jk2.properties %D/%%T%%/conf/jk2.properties.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/jk2.properties; else echo If permanently deleting this package, %D/%%T%%/conf/jk2.properties must be removed manually; fi
 @unexec if cmp -s %D/%%T%%/conf/server-noexamples.xml.config %D/%%T%%/conf/server-noexamples.xml.config.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/server-noexamples.xml.config; else echo If permanently deleting this package, %D/%%T%%/conf/server-noexamples.xml.config must be removed manually; fi
 @unexec if cmp -s %D/%%T%%/conf/catalina.policy %D/%%T%%/conf/catalina.policy.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/catalina.policy; else echo If permanently deleting this package, %D/%%T%%/conf/server.xml must be removed manually; fi
 @unexec if cmp -s %D/%%T%%/conf/tomcat-users.xml %D/%%T%%/conf/tomcat-users.xml.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/tomcat-users.xml; else echo If permanently deleting this package, %D/%%T%%/conf/tomcat-users.xml must be removed manually; fi
 @unexec if cmp -s %D/%%T%%/conf/web.xml %D/%%T%%/conf/web.xml.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/web.xml; else echo If permanently deleting this package, %D/%%T%%/conf/web.xml must be removed manually; fi
-bin/tomcat41ctl
 %%T%%/LICENSE
 %%T%%/README.txt
 %%T%%/RELEASE-NOTES-4.1.txt
