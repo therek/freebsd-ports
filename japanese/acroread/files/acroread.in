@@ -1,5 +1,4 @@
-#!/bin/sh
-# $FreeBSD$
-UNAME_s=Linux; export UNAME_s
+#!%%LINUXBASE%%/bin/sh
+# $FreeBSD: ports/japanese/acroread/files/acroread.in,v 1.1 2005/06/05 07:40:33 hrs Exp $
 : ${GTK_IM_MODULE:=xim}; export GTK_IM_MODULE
 exec %%INSTALLDIR%%/bin/acroread "$@"
