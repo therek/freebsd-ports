@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/gnatsweb4/pkg-plist,v 1.1 2003/10/28 09:46:47 des Exp $
+@comment $FreeBSD: ports/databases/gnatsweb4/pkg-plist,v 1.2 2006/01/22 00:26:45 edwin Exp $
 @unexec if cmp -s %D/etc/gnatsweb/gnatsweb-site.pl %D/etc/gnatsweb/gnatsweb-site.pl.default; then rm -f %D/etc/gnatsweb/gnatsweb-site.pl; fi
 etc/gnatsweb/gnatsweb-site.pl.default
 @exec [ -f %B/gnatsweb-site.pl ] || cp %B/%f %B/gnatsweb-site.pl
@@ -17,3 +17,4 @@ etc/gnatsweb/gnatsweb-site.pl.default
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%PORTDOCS%%%%EXAMPLESDIR%%/gnatsweb-site-example.pl
 %%PORTDOCS%%@dirrm %%EXAMPLESDIR%%
+@dirrmtry %%CGI_DIR%%
