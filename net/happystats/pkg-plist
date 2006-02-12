@@ -1,5 +1,5 @@
 
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/happystats/pkg-plist,v 1.1 2004/03/05 23:22:19 sergei Exp $
 bin/happystats
 www/cgi-bin/happystats.cgi
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
@@ -14,3 +14,4 @@ www/cgi-bin/happystats.cgi
 %%EXAMPLESDIR%%/happystats.postfix.xml
 %%EXAMPLESDIR%%/happystats.sendmail.xml
 @dirrm %%EXAMPLESDIR%%
+@dirrmtry www/cgi-bin
