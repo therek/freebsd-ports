@@ -1,14 +1,17 @@
-@comment $FreeBSD: ports/editors/winefish/pkg-plist,v 1.2 2006/01/29 15:48:47 pav Exp $
+@comment $FreeBSD: ports/editors/winefish/pkg-plist,v 1.3 2006/02/01 09:54:33 tdb Exp $
 bin/winefish
 share/gnome/application-registry/winefish.applications
 share/gnome/applications/winefish.desktop
+share/gnome/applications/winefish-project.desktop
 share/gnome/mime-info/winefish.mime
 share/gnome/mime-info/winefish.keys
+share/locale/fr/LC_MESSAGES/winefish.mo
 share/locale/it/LC_MESSAGES/winefish.mo
 share/locale/vi/LC_MESSAGES/winefish.mo
 share/mime/packages/winefish.xml
 share/pixmaps/gnome-application-winefish-project.png
 share/pixmaps/winefish-icon.png
+%%PORTDOCS%%%%DOCSDIR%%/winefish.html
 %%DATADIR%%/autotext.default
 %%DATADIR%%/custom_menu.default
 %%DATADIR%%/encodings.default
@@ -24,6 +27,7 @@ share/pixmaps/winefish-icon.png
 %%DATADIR%%/icon_xml.png
 %%DATADIR%%/winefish_splash.png
 %%DATADIR%%/words.default
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
 @dirrm %%DATADIR%%
 @exec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true
 @unexec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true
