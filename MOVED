@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.906 2006/02/10 14:42:03 vanilla Exp $
+# $FreeBSD: ports/MOVED,v 1.907 2006/02/14 16:50:47 vs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2177,3 +2177,4 @@ print/acroread||2006-02-09|Remove expired print/acroread and related ports
 print/acroread5-commfont||2006-02-09|Remove expired print/acroread and related ports
 chinese/pcmanfm|x11-fm/pcmanfm|2006-02-09|Move to new category
 www/gnuinfo||2006-02-14|Remove expired port
+x11/gyroscope||2006-02-14|Remove expired port
