@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.918 2006/02/15 11:30:15 garga Exp $
+# $FreeBSD: ports/MOVED,v 1.919 2006/02/15 11:43:36 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2189,3 +2189,4 @@ www/mdw||2006-02-14|Remove expired port
 x11-clocks/gdesklets-praytime||2006-02-14|Remove expired port
 www/p5-Bundle-Catalyst||2006-02-15|Replaced by www/p5-Task-Catalyst
 games/xgolgo||2006-02-15|Remove expired port
+games/virt||2006-02-15|Remove expired port
