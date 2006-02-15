@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/mrtg/files/mrtg_daemon.sh.in,v 1.1 2006/02/06 12:24:19 demon Exp $
+# $FreeBSD: ports/net-mgmt/mrtg/files/mrtg_daemon.sh.in,v 1.2 2006/02/08 12:12:54 demon Exp $
 
 #
 # PROVIDE: mrtg_daemon
@@ -22,9 +22,16 @@ load_rc_config $name
 
 : ${mrtg_daemon_flags="--pid-file $mrtg_daemon_pidfile --lock-file /var/run/mrtg/lockfile --confcache-file /var/run/mrtg/confcache --user $mrtg_daemon_user --group $mrtg_daemon_user --daemon $mrtg_daemon_config"}
 
+start_precmd="mrtg_daemon_precmd"
+
 command="%%PREFIX%%/bin/mrtg"
 command_interpreter="%%PERL%%"
 pidfile=${mrtg_daemon_pidfile}
+
+mrtg_daemon_precmd()
+{
+       rm -f /var/run/mrtg/lockfile /var/run/mrtg/confcache $mrtg_daemon_pidfile
+}
 
 run_rc_command "$1"
 
