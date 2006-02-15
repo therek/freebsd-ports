@@ -1,12 +1,12 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2.0/files/Makefile.knobs,v 1.22 2005/10/31 07:38:42 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2.0/files/Makefile.knobs,v 1.23 2005/12/23 04:14:28 maho Exp $
 
 .if !defined(WITHOUT_JAVA) && !defined(WITH_GNUGCJ)
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home=${LOCALBASE}/ant
 .endif
 .if !defined(WITHOUT_JAVA) && defined(WITH_GNUGCJ)
-CONFIGURE_ARGS+=	--with-java=gij --with-ant-home=${LOCALBASE}/ant
+CONFIGURE_ARGS+=	--with-jdk-home="${LOCALBASE}/gcc41" --with-java=gij --with-ant-home="${WRKDIR}/apache-ant-${ANT_VERSION}" --disable-qadevooo
 .endif
 .if defined(WITHOUT_JAVA)
 CONFIGURE_ARGS+=	--without-java
