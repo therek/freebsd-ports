@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/powerdns/files/pdns.sh.in,v 1.2 2005/10/30 11:19:55 pav Exp $
+# $FreeBSD: ports/dns/powerdns/files/pdns.in,v 1.2 2005/11/04 10:27:39 kwm Exp $
 #
 
 # PROVIDE: pdns_server
