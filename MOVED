@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.920 2006/02/15 12:08:48 vd Exp $
+# $FreeBSD: ports/MOVED,v 1.921 2006/02/16 11:26:36 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2195,3 +2195,8 @@ editors/bitmap-mule||2006-02-16|Remove expired port editors/custom-mule and all 
 editors/flim113-mule||2006-02-16|Remove expired port editors/custom-mule and all dependant ports
 editors/semi113-mule||2006-02-16|Remove expired port editors/custom-mule and all dependant ports
 editors/custom-mule||2006-02-16|Remove expired port editors/custom-mule and all dependant ports
+editors/apel-emacs19||2006-02-16|Remove expired port editors/custom-emacs and all dependant ports
+editors/flim113-emacs19||2006-02-16|Remove expired port editors/custom-emacs and all dependant ports
+editors/semi113-emacs19||2006-02-16|Remove expired port editors/custom-emacs and all dependant ports
+devel/pcl-cvs-emacs||2006-02-16|Remove expired port editors/custom-emacs and all dependant ports
+editors/custom-emacs||2006-02-16|Remove expired port editors/custom-emacs and all dependant ports
