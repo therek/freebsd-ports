@@ -28,12 +28,40 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.941 2006/02/15 12:53:20 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.942 2006/02/15 13:25:55 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="f6447303-9ec9-11da-b410-000e0c2e438a">
+    <topic>heartbeat -- insecure temporary file creation vulnerability</topic>
+    <affects>
+      <package>
+	<name>heartbeat</name>
+	<range><ge>0</ge></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Eric Romang reports a temporary file creation vulnerability
+	  within heartbeat.  The vulnerability is caused by hardcoded
+	  temporary file usage.  This can cause an attacker to create
+	  an arbitrary symlink causing the application to overwrite the
+	  symlinked file with the permissions of the user executing the
+	  application.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CAN-2005-2231</cvename>
+      <url>http://www.zataz.net/adviso/heartbeat-06272005.txt</url>
+    </references>
+    <dates>
+      <discovery>2005-07-12</discovery>
+      <entry>2006-02-16</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="432bf98d-9e25-11da-b410-000e0c2e438a">
     <topic>kpdf -- heap based buffer overflow</topic>
     <affects>
