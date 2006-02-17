@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/dspam/files/dspam.sh.in,v 1.4 2006/02/04 13:26:43 garga Exp $
+# $FreeBSD: ports/mail/dspam/files/dspam.sh.in,v 1.5 2006/02/10 17:06:24 garga Exp $
 # formerly $ FreeBSD: ports/mail/dspam/files/dspam,v 1.1 2005/05/05 21:03:37 pav Exp $
 # $Tecnik: ports/mail/dspam/files/dspam.sh.in,v 1.6 2006/02/09 19:14:29 itetcu Exp $
 #
