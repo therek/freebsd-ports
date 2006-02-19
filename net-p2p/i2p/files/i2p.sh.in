@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/i2p/files/i2p.sh,v 1.1 2005/10/10 06:59:09 lioux Exp $
+# $FreeBSD: ports/net-p2p/i2p/files/i2p.sh,v 1.2 2005/10/10 11:05:03 lioux Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
