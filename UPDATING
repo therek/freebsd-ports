@@ -6,7 +6,7 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
-20060620:
+20060220:
   AFFECTS: users of lang/perl5.8
   AUTHOR: tobez@FreeBSD.org
 
@@ -3079,4 +3079,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.288 2006/02/20 15:11:44 vanilla Exp $
+$FreeBSD: ports/UPDATING,v 1.289 2006/02/20 20:35:51 tobez Exp $
