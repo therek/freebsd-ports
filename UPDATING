@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060220:
+  AFFECTS: users of x11-wm/enlightenment
+  AUTHOR: vanilla@FreeBSD.org
+
+  enlightenment 0.16 change binary name from 'enlightenment' to 'e16'.
+  you should change it on your .xinit file.
+ 
 20060212:
   AFFECTS: users of mail/dcc-dccd
   AUTHOR: ehaupt@FreeBSD.org
@@ -3063,4 +3070,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.286 2006/02/07 08:50:06 lawrance Exp $
+$FreeBSD: ports/UPDATING,v 1.287 2006/02/11 14:43:04 lawrance Exp $
