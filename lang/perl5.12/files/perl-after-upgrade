@@ -6,7 +6,7 @@
 # this stuff is worth it, you can buy me a beer in return.   Anton Berezin
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/perl5.8/files/perl-after-upgrade,v 1.1 2005/06/24 09:17:06 tobez Exp $
 # $Id: perl-after-upgrade,v 1.11 2005/06/23 19:39:00 tobez Exp $
 #
 =pod
@@ -411,7 +411,7 @@ sub might_need_to_fix
 		return 1;
 	}
 	for ($pkg->lines) {
-		if (/^\@pkgdep\s+perl-($fuzzy_source)\S*\s*$/) {
+		if (/^\@pkgdep\s+perl-(threaded-)?($fuzzy_source)\S*\s*$/) {
 			return 1;
 		}
 	}
@@ -581,10 +581,10 @@ while (my $pkg = $db->next) {
 		}
 		if (/^\@cwd\s+(\S+)\s*$/) {
 			$prefix = $1;
-		} elsif (/^\@pkgdep\s+perl-($fuzzy_source)\S*\s*$/) {
-			if ($target ne $1) {
-				my $perlver = $1;
-				s|perl-\Q$perlver\E|perl-$target|;
+		} elsif (/^\@pkgdep\s+perl-(threaded-)?($fuzzy_source)\S*\s*$/) {
+			if ($target ne $2) {
+				my $perlver = $2;
+				s|perl-(threaded-)?\Q$perlver\E|perl-$target|;
 			}
 		}
 		my $old = $_;
