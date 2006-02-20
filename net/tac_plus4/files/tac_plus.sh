@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/tac_plus4/files/tac_plus.sh,v 1.2 2005/04/03 06:58:13 marcus Exp $
 #
 # PROVIDE: tac_plus
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 #
 # Add the following line to /etc/rc.conf to enable the TACACS+ daemon:
 #

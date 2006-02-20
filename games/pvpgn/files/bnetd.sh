@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/pvpgn/files/bnetd.sh,v 1.1 2005/01/20 13:46:41 pav Exp $
 #
 
 # PROVIDE: bnetd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable bnetd:

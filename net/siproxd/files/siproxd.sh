@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/siproxd/files/siproxd.sh,v 1.1 2004/10/15 15:47:27 pav Exp $
 #
 
 # PROVIDE: siproxd
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts

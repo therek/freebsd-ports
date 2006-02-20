@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/rsync/files/rsyncd.sh.in,v 1.1 2005/05/16 21:07:54 pav Exp $
 #
 
 # PROVIDE: %%NAME%%
 # REQUIRE: LOGIN
 # BEFORE:  securelevel
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Add the following line to /etc/rc.conf to enable `%%NAME%%':
 #

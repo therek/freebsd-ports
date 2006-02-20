@@ -1,10 +1,10 @@
 #!/bin/sh
-# $FreeBSD: ports/comms/ltmdm/files/ltmdm.sh,v 1.4 2004/11/01 15:46:00 osa Exp $
+# $FreeBSD: ports/comms/ltmdm/files/ltmdm.sh.in,v 1.1 2005/04/18 15:20:08 vs Exp $
 
 # PROVIDE: ltmdm
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these ltmdm_* variables in one of these files:
 #       /etc/rc.conf

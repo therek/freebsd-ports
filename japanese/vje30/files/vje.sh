@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/japanese/vje30/files/vje.sh,v 1.1 2000/07/05 17:05:28 knu Exp $
+# $FreeBSD: ports/japanese/vje30/files/vje.sh,v 1.2 2004/05/11 16:47:52 knu Exp $
 
 # PROVIDE: vjed
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 . %%RC_SUBR%%
 

@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/rskkserv/files/rskkserv.sh.in,v 1.1 2005/10/14 22:42:16 sem Exp $
 #
 # PROVIDE: rskkserv
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 prefix=%%PREFIX%%
 

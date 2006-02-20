@@ -1,10 +1,10 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/irrd/files/irrd.sh,v 1.1 2004/06/13 10:21:31 nork Exp $
 
 # PROVIDE: irrd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these irrd_* variables in one of these files:
 #	/etc/rc.conf

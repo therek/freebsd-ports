@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/binkd/files/binkd.sh.in,v 1.1 2005/11/10 15:08:42 fjoe Exp $
+# $FreeBSD: ports/net/binkd/files/binkd.sh.in,v 1.2 2005/11/15 20:14:58 fjoe Exp $
 #
 # PROVIDE: binkd 
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 # Define these binkd_* variables in one of these files:
 #       /etc/rc.conf

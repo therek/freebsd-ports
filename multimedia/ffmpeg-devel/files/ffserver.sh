@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/multimedia/ffmpeg-devel/files/ffserver.sh,v 1.1 2004/12/05 18:12:41 lioux Exp $
+# $FreeBSD: ports/multimedia/ffmpeg-devel/files/ffserver.sh,v 1.2 2006/01/07 06:29:52 dougb Exp $
 #
 
 # PROVIDE: ffserver
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable  ffserver:

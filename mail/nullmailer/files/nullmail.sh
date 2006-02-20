@@ -1,9 +1,8 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/nullmailer/files/nullmail.sh,v 1.5 2004/10/12 09:09:24 clive Exp $
+# $FreeBSD: ports/mail/nullmailer/files/nullmail.sh,v 1.6 2004/10/15 08:38:09 clive Exp $
 #
 # PROVIDE: nullmailer
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 #
 # Add the following line to /etc/rc.conf to enable nullmailer:
 #

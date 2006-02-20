@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/vtun/files/vtunclient.sh,v 1.1 2004/08/26 09:18:58 kuriyama Exp $
 #
 # PROVIDE: vtunclient
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 #
 # Add the following line to /etc/rc.conf to enable vtunclient:
 #

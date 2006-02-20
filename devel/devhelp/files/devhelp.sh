@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/devhelp/files/devhelp.sh,v 1.1 2005/06/18 12:23:25 kwm Exp $
+# $FreeBSD: ports/devel/devhelp/files/devhelp.sh,v 1.2 2005/09/18 13:55:49 kwm Exp $
 #
 # PROVIDE: devhelp
 # REQUIRE: ldconfig
-# KEYWORD: FreeBSD
 
 . /etc/rc.subr
 

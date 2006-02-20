@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/3dm/files/3dm2.sh.in,v 1.1 2005/11/11 01:29:39 mnag Exp $
 #
 
 # PROVIDE: 3dm2
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable 3dm2:

@@ -1,10 +1,10 @@
 #!/bin/sh
-# $FreeBSD: ports/net/vncreflector/files/vncreflector.sh.in,v 1.1 2005/01/20 10:35:48 brooks Exp $
+# $FreeBSD: ports/net/vncreflector/files/vncreflector.sh.in,v 1.2 2005/04/18 22:35:16 brooks Exp $
 
 # PROVIDE: vncreflector
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 _etcdir="%%PREFIX%%/etc/vncreflector"
 

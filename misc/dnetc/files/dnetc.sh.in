@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/dnetc/files/dnetc.sh.in,v 1.1 2006/01/09 10:30:35 tdb Exp $
 #
 # PROVIDE: dnetc
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable dnetc:

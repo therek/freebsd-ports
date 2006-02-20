@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/boinc-client/files/boinc.sh.in,v 1.1 2005/06/02 21:08:23 pav Exp $
+# $FreeBSD: ports/net/boinc-client/files/boinc.sh.in,v 1.2 2005/06/10 18:00:54 pav Exp $
 
 # PROVIDE: boinc
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 . %%RC_SUBR%%
 

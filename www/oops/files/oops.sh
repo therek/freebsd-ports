@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/oops/files/oops.sh,v 1.3 2005/02/05 18:33:40 pav Exp $
 #
 
 # PROVIDE: oops
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 
 . "%%RC_SUBR%%"
 

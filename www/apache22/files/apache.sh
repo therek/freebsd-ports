@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache22/files/apache.sh,v 1.12 2006/01/15 01:11:11 clement Exp $
+# $FreeBSD: ports/www/apache22/files/apache.sh,v 1.13 2006/01/23 11:37:04 clement Exp $
 #
 
 # PROVIDE: apache22
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable apache22:

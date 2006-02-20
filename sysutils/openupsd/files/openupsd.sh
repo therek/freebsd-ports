@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/openupsd/files/openupsd.sh,v 1.1 2004/08/17 09:25:37 pav Exp $
+# $FreeBSD: ports/sysutils/openupsd/files/openupsd.sh,v 1.2 2004/08/25 09:14:06 krion Exp $
 #
 # PROVIDE: openupsd
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 openupsd_enable=${openupsd_enable:-"NO"}
 

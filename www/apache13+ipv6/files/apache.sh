@@ -1,10 +1,10 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13+ipv6/files/apache.sh,v 1.4 2004/06/09 17:04:00 sumikawa Exp $
+# $FreeBSD: ports/www/apache13+ipv6/files/apache.sh,v 1.5 2004/11/05 18:21:25 sumikawa Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these apache_* variables in one of these files:
 #       /etc/rc.conf

@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/webmin/files/webmin.sh.in,v 1.7 2005/12/22 21:15:35 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/files/webmin.sh.in,v 1.8 2006/01/16 21:20:09 olgeni Exp $
 #
 # PROVIDE: webmin
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD
 #
 # Add the following line to /etc/rc.conf to enable webmin:
 #

@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # Start or stop vmpsd
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/openvmps/files/vmpsd.sh,v 1.1 2003/10/08 02:57:42 marcus Exp $
 
 # PROVIDE: vmpsd
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts

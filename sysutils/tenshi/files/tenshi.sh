@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/tenshi/files/tenshi.sh,v 1.1 2004/07/21 20:03:52 eik Exp $
 #
 
 # PROVIDE: tenshi
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Add the following lines to /etc/rc.conf to enable `tenshi':
 #

@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/irc/dancer-ircd/files/dancer-ircd.sh,v 1.2 2004/04/19 16:42:15 knu Exp $
+# $FreeBSD: ports/irc/dancer-ircd/files/dancer-ircd.sh,v 1.3 2004/08/09 02:34:27 knu Exp $
 #
 
 # PROVIDE: dancer-ircd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 . %%RC_SUBR%%
 

@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/moftpd/files/moftpd.sh,v 1.1 2004/06/11 21:42:16 clement Exp $
 #
 
 # PROVIDE: moftpd
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable moftpd:

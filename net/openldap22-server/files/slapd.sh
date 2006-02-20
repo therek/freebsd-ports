@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap22-server/files/slapd.sh,v 1.13 2003/08/30 11:50:41 edwin Exp $
+# $FreeBSD: ports/net/openldap22-server/files/slapd.sh,v 1.14 2004/08/15 18:18:46 eik Exp $
 #
 
 # PROVIDE: slapd
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: securelevel
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable slapd:

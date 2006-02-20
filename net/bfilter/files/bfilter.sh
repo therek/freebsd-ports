@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/bfilter/files/bfilter.sh,v 1.1 2004/08/27 19:21:34 krion Exp $
 #
 # PROVIDE: bfilter
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 #
 # Add the following line to /etc/rc.conf to enable bfilter:
 #

@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/games/kaid/files/kaid.sh,v 1.1 2005/04/02 15:25:49 green Exp $
+# $FreeBSD: ports/games/kaid/files/kaid.sh,v 1.2 2006/01/07 06:29:50 dougb Exp $
 #
 
 # PROVIDE: kaid
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable  kaid:

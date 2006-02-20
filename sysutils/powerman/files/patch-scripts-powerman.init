@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/sysutils/powerman/files/patch-scripts-powerman.init,v 1.1 2004/06/17 16:14:13 glewis Exp $
 
 --- scripts/powerman.init.orig	Thu Jun 10 08:16:04 2004
 +++ scripts/powerman.init	Thu Jun 10 08:28:08 2004
@@ -12,14 +12,14 @@ $FreeBSD$
 -# processname:	/usr/sbin/powermand
 -# config:	/etc/powerman/powerman.conf
 -##
-+# $FreeBSD$
++# $FreeBSD: ports/sysutils/powerman/files/patch-scripts-powerman.init,v 1.1 2004/06/17 16:14:13 glewis Exp $
  
 -# Source function library.
 -. /etc/rc.d/init.d/functions
 +# PROVIDE: powermand
 +# REQUIRE: DAEMON
 +# BEFORE: LOGIN
-+# KEYWORD: FreeBSD shutdown
++# KEYWORD: shutdown
 +
 +# Define these powermand_* variables in one of these files:
 +#	/etc/rc.conf

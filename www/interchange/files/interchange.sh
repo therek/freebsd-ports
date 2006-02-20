@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/interchange/files/interchange.sh,v 1.2 2005/09/21 12:19:06 sem Exp $
 #
 
 # PROVIDE: interchange
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable Interchange:

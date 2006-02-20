@@ -1,12 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/x11-servers/xorg-fontserver/files/xfs.sh,v 1.1 2005/01/23 19:50:40 lesi Exp $
+# $FreeBSD: ports/x11-servers/xorg-fontserver/files/xfs.sh,v 1.2 2006/01/05 17:08:06 lesi Exp $
 #
 
 # PROVIDE: xfs
 # REQUIRE: cleartmp ldconfig
 # BEFORE:  LOGIN
-# KEYWORD: FreeBSD
 
 # The following variables are provided to control startup of X font server in
 # rc configuration file (eg /etc/rc.conf):

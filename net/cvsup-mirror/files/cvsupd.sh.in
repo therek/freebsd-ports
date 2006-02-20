@@ -1,11 +1,11 @@
 #! /bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/cvsup-mirror/files/cvsupd.sh.in,v 1.1 2005/12/09 14:49:43 pav Exp $
 #
 
 # PROVIDE: cvsupd
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable cvsupd:

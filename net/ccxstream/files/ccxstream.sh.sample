@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ccxstream/files/ccxstream.sh.sample,v 1.1 2004/08/15 13:04:37 vanilla Exp $
 #
 
 # PROVIDE: ccxstream
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 
 # Define these ccxstream_* variables in one of these files:
 #       /etc/rc.conf

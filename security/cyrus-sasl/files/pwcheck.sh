@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/cyrus-sasl/files/pwcheck.sh,v 1.9 2003/08/27 04:38:36 marcus Exp $
+# $FreeBSD: ports/security/cyrus-sasl/files/pwcheck.sh,v 1.10 2004/03/05 19:33:57 clement Exp $
 #
 
 # PROVIDE: cyrus_pwcheck
 # REQUIRE: DAEMON
 # BEFORE: mail imap
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 
 prefix=%%PREFIX%%

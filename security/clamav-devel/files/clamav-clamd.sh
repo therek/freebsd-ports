@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav-devel/files/clamav-clamd.sh,v 1.5 2004/12/22 02:10:12 edwin Exp $
+# $FreeBSD: ports/security/clamav-devel/files/clamav-clamd.sh,v 1.6 2005/01/12 18:22:56 yar Exp $
 #
 
 # PROVIDE: clamd
 # REQUIRE: LOGIN
 # BEFORE: mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable clamd:

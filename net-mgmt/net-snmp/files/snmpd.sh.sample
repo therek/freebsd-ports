@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/net-snmp/files/snmpd.sh.sample,v 1.5 2004/03/10 13:40:41 kuriyama Exp $
+# $FreeBSD: ports/net-mgmt/net-snmp/files/snmpd.sh.sample,v 1.6 2004/07/27 00:08:07 kuriyama Exp $
 #
 # PROVIDE: snmpd
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 #
 # Add the following line to /etc/rc.conf to enable snmpd:
 #

@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/cyrus-sasl2-saslauthd/files/saslauthd.sh,v 1.6 2004/06/11 15:49:48 ume Exp $
+# $FreeBSD: ports/security/cyrus-sasl2-saslauthd/files/saslauthd.sh.in,v 1.1 2005/02/10 19:32:10 ume Exp $
 #
 
 # PROVIDE: saslauthd
 # REQUIRE: DAEMON
 # BEFORE: mail imap
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts

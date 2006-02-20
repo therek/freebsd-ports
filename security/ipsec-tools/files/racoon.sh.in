@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # Start or stop racoon
-# $FreeBSD: ports/security/ipsec-tools/files/racoon.sh.in,v 1.1 2005/12/02 11:28:06 lawrance Exp $
+# $FreeBSD: ports/security/ipsec-tools/files/racoon.sh.in,v 1.2 2006/01/04 20:48:49 edwin Exp $
 
 # PROVIDE: racoon
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts

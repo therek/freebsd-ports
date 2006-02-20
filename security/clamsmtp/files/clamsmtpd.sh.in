@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamsmtp/files/clamsmtpd.sh.in,v 1.1 2006/01/13 07:24:34 clsung Exp $
+# $FreeBSD: ports/security/clamsmtp/files/clamsmtpd.sh.in,v 1.2 2006/02/17 02:45:40 clsung Exp $
 #
 # PROVIDE: clamsmtpd
 # REQUIRE: DAEMON %%CLAMD%%
-# KEYWORD: FreeBSD
 #
 # Add the fellowing line to /etc/rc.conf.local or /etc/rc.conf
 # to enable clamsmtpd:

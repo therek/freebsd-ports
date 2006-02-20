@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/cyrus-sasl/files/saslauthd.sh,v 1.5 2004/03/05 19:33:57 clement Exp $
+# $FreeBSD: ports/security/cyrus-sasl/files/saslauthd.sh,v 1.6 2004/04/25 14:59:48 lofi Exp $
 #
 
 # PROVIDE: saslauthd1
 # REQUIRE: DAEMON
 # BEFORE: mail imap
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 
 prefix=%%PREFIX%%

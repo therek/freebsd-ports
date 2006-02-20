@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/up-imapproxy/files/imapproxyd.sh.in,v 1.1 2005/09/28 16:28:31 mnag Exp $
 #
 
 # PROVIDE: imapproxyd
 # REQUIRE: LOGIN
 # BEFORE: mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following line to /etc/rc.conf to enable imapproxyd:

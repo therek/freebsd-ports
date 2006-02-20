@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/estctrl/files/estctrl.sh,v 1.3 2004/12/08 20:27:03 pav Exp $
+# $FreeBSD: ports/sysutils/estctrl/files/estctrl.sh,v 1.4 2006/01/07 06:29:55 dougb Exp $
 #
 
 # PROVIDE: estctrl
 # REQUIRE: est
-# KEYWORD: FreeBSD
 
 # Define estctrl_* variables in one of these files:
 #	/etc/rc.conf

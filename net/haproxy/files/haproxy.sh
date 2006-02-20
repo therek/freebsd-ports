@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/haproxy/files/haproxy.sh,v 1.2 2004/06/08 10:31:00 clement Exp $
 #
 
 # PROVIDE: haproxy
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable haproxy:

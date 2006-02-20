@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/spreadlogd/files/spreadlogd.sh.in,v 1.1 2005/05/14 11:12:15 jylefort Exp $
 #
 
 # PROVIDE: spreadlogd
 # REQUIRE: spread
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable spread:

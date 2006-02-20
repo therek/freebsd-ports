@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/autocd/files/autocd.sh,v 1.1 2004/03/29 08:42:14 osa Exp $
 #
 
 # PROVIDE: autocd
 # REQUIRE:
 # BEFORE:
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable autocd:

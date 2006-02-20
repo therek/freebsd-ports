@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/cvsync/files/cvsyncd.sh,v 1.1 2004/05/11 12:13:26 hrs Exp $
+# $FreeBSD: ports/net/cvsync/files/cvsyncd.sh,v 1.2 2004/08/19 17:36:19 hrs Exp $
 #
 # PROVIDE: cvsyncd
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD
 #
 cvsyncd_enable=${cvsyncd_enable-"NO"}
 cvsyncd_pidfile=${cvsyncd_pidfile-"/var/run/cvsyncd.pid"}

@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # Start or stop scanlogd
-# $FreeBSD: ports/security/scanlogd/files/scanlogd.sh,v 1.1 2004/12/13 10:07:13 krion Exp $
+# $FreeBSD: ports/security/scanlogd/files/scanlogd.sh,v 1.2 2004/12/15 08:04:56 vs Exp $
 
 # PROVIDE: scanlogd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 
 prefix=%%PREFIX%%

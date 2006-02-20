@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/slony1/files/slon.sh.in,v 1.1 2005/06/24 11:22:43 lawrance Exp $
+# $FreeBSD: ports/databases/slony1/files/slon.sh.in,v 1.2 2005/07/08 15:16:53 pav Exp $
 #
 
 # PROVIDE: %%NAME%%
 # REQUIRE: postgresql
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Add the following line to /etc/rc.conf to enable `%%NAME%%':
 #

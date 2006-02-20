@@ -1,10 +1,10 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-modssl/files/rcng.sh,v 1.3 2004/05/14 05:30:53 dinoex Exp $
+# $FreeBSD: ports/www/apache13-modssl/files/rcng.sh,v 1.4 2006/01/07 06:29:57 dougb Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these apache_* variables in one of these files:
 #       /etc/rc.conf

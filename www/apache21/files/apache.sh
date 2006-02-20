@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache21/files/apache.sh,v 1.8 2005/01/11 13:45:05 clement Exp $
+# $FreeBSD: ports/www/apache21/files/apache.sh,v 1.9 2006/01/15 18:58:38 clement Exp $
 #
 
 # PROVIDE: apache21
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable apache21:

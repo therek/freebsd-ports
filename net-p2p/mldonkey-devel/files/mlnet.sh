@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-p2p/mldonkey-devel/files/mlnet.sh,v 1.1 2005/10/10 16:38:19 lioux Exp $
+# $FreeBSD: ports/net-p2p/mldonkey-devel/files/mlnet.sh,v 1.2 2006/02/15 23:23:07 lioux Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
 # PROVIDE: mlnet
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable mlnet:

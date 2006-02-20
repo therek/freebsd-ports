@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/netustad/files/netustad.sh,v 1.1 2004/08/05 05:28:13 sem Exp $
+# $FreeBSD: ports/net-mgmt/netustad/files/netustad.sh,v 1.2 2005/01/10 21:02:02 sem Exp $
 #
 # PROVIDE: netustad
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD
 #
 # Note:
 # If you are running an rcNG-System (i.e. FreeBSD 5 and later or after

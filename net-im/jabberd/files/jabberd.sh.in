@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # Start or stop jabberd
-# $FreeBSD$
+# $FreeBSD: ports/net-im/jabberd/files/jabberd.sh.in,v 1.1 2005/04/17 16:29:41 pav Exp $
 
 # PROVIDE: jabberd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 prefix=%%PREFIX%%
 

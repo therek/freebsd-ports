@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # Start or stop zope
-# $FreeBSD: ports/www/zope/files/zeo.sh,v 1.2 2005/02/18 16:52:17 pav Exp $
+# $FreeBSD: ports/www/zope/files/zeo.sh,v 1.3 2005/12/30 23:37:16 girgen Exp $
 
 # PROVIDE: zeo
 # REQUIRE: DAEMON
 # BEFORE: zope
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 prefix=%%PREFIX%%
 

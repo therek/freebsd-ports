@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav/files/clamav-milter.sh.in,v 1.1 2005/05/13 08:16:40 jylefort Exp $
+# $FreeBSD: ports/security/clamav/files/clamav-milter.sh.in,v 1.2 2005/07/27 17:22:05 sem Exp $
 #
 
 # PROVIDE: clamav-milter
 # REQUIRE: LOGIN clamd
 # BEFORE: mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable clamav-milter:

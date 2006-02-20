@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/assp/files/assp.sh.in,v 1.1 2005/05/28 09:56:27 jylefort Exp $
+# $FreeBSD: ports/mail/assp/files/assp.sh.in,v 1.2 2005/06/24 06:24:48 sem Exp $
 #
 
 # PROVIDE: assp
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 . %%RC_SUBR%%
 

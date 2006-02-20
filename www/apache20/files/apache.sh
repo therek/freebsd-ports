@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache20/files/apache.sh,v 1.15 2005/12/03 23:04:21 clement Exp $
+# $FreeBSD: ports/www/apache20/files/apache.sh,v 1.16 2006/01/15 18:58:37 clement Exp $
 #
 
 # PROVIDE: apache2
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable apache2:

@@ -1,9 +1,9 @@
 #!/bin/sh
-# $FreeBSD: ports/net/mldonkey/files/mlnet.sh,v 1.1 2005/06/24 07:39:10 pav Exp $
+# $FreeBSD: ports/net-p2p/mldonkey/files/mlnet.sh,v 1.2 2005/10/27 15:23:54 hq Exp $
 
 # PROVIDE: mlnet
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 mlnet_enable=${mlnet_enable:-"NO"}
 mlnet_http_port=${mlnet_http_port:-"4080"}

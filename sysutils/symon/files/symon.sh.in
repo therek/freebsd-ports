@@ -1,9 +1,8 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/symon/files/symon.sh.in,v 1.1 2005/04/26 14:32:53 vs Exp $
 
 # PROVIDE: symon
 # REQUIRE: NETWORKING SERVERS
-# KEYWORD: FreeBSD
 
 . %%RC_SUBR%%
 

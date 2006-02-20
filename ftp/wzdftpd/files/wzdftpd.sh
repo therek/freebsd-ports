@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # Start or stop wzdftpd
-# $FreeBSD: ports/ftp/wzdftpd/files/wzdftpd.sh,v 1.1 2004/06/22 19:18:41 pav Exp $
+# $FreeBSD: ports/ftp/wzdftpd/files/wzdftpd.sh,v 1.2 2004/12/13 10:03:32 krion Exp $
 
 # PROVIDE: wzdftpd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 
 prefix=%%PREFIX%%

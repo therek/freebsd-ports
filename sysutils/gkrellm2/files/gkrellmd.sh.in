@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # Start or stop gkrellmd
-# $FreeBSD: ports/sysutils/gkrellm2/files/gkrellmd.sh,v 1.8 2004/01/20 19:10:17 ume Exp $
+# $FreeBSD: ports/sysutils/gkrellm2/files/gkrellmd.sh.in,v 1.1 2005/02/10 19:22:50 ume Exp $
 
 # PROVIDE: gkrellmd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts

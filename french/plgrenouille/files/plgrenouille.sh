@@ -1,10 +1,9 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/french/plgrenouille/files/plgrenouille.sh,v 1.1 2002/11/13 17:30:05 naddy Exp $
+# $FreeBSD: ports/french/plgrenouille/files/plgrenouille.sh,v 1.2 2004/03/12 23:49:14 naddy Exp $
 #
 # PROVIDE: plgrenouille
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 #
 # Add the following line to /etc/rc.conf to enable upclient:
 #

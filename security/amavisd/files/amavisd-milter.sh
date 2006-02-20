@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/amavisd/files/amavisd-milter.sh,v 1.3 2004/05/30 11:33:25 pav Exp $
+# $FreeBSD: ports/security/amavisd/files/amavisd-milter.sh,v 1.4 2006/01/07 06:29:54 dougb Exp $
 #
 
 # PROVIDE: amavisd-milter
 # BEFORE: amavisd mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 prefix=%%PREFIX%%
 

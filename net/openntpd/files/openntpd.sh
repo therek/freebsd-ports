@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/openntpd/files/openntpd.sh,v 1.1 2004/07/11 17:18:24 naddy Exp $
 #
 
 # PROVIDE: openntpd
 # REQUIRE: DAEMON
 # BEFORE:  LOGIN
-# KEYWORD: FreeBSD nojail
+# KEYWORD: nojail
 
 . %%RC_SUBR%%
 

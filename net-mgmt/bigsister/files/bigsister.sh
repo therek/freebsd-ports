@@ -1,12 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/bigsister/files/bigsister.sh,v 1.1 2004/03/25 07:15:30 bms Exp $
 #
 
 # PROVIDE: bigsister
 # REQUIRE: DAEMON
 # BEFORE:  LOGIN
-# KEYWORD: FreeBSD
 
 . %%RC_SUBR%%
 

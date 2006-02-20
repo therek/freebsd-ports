@@ -1,11 +1,11 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/isc-dhcp3-server/files/isc-dhcpd.sh.sample,v 1.13 2005/04/07 13:47:27 sobomax Exp $
+# $FreeBSD: ports/net/isc-dhcp3-server/files/isc-dhcpd.sh.sample,v 1.14 2005/12/14 19:41:25 sem Exp $
 #
 # PROVIDE: dhcpd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 # Add the following line to /etc/rc.conf to enable dhcpd:
 #

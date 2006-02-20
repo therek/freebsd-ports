@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/pips800/files/ekpd.sh,v 1.2 2004/08/25 20:24:18 ume Exp $
 #
 
 # PROVIDE: ekpd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these ekpd_* variables in one of these files:
 #	/etc/rc.conf

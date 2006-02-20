@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/ipw-firmware/files/ipw.sh.in,v 1.5 2005/12/11 18:00:33 flz Exp $
+# $FreeBSD: ports/net/ipw-firmware/files/ipw.sh.in,v 1.6 2005/12/18 09:37:12 flz Exp $
 #
 
 # PROVIDE: %%DRIVERNAME%%
 # REQUIRE: mountcritlocal
 # BEFORE:  ipfilter
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Add the following line to /etc/rc.conf to enable `%%DRIVERNAME%%':
 #

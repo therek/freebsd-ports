@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/dspampd/files/dspampd.rc,v 1.1 2005/01/12 08:15:05 edwin Exp $
 #
 
 # PROVIDE: dspampd
 # REQUIRE: LOGIN %%CLAMAV%% %%DSPAM%%
 # BEFORE: mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf[.local] to enable dspampd:

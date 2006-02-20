@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/upclient/files/upclient.sh,v 1.6 2004/03/04 08:35:28 krion Exp $
+# $FreeBSD: ports/misc/upclient/files/upclient.sh,v 1.7 2006/01/07 06:29:51 dougb Exp $
 #
 # PROVIDE: upclient
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 #
 # Add the following line to /etc/rc.conf to enable upclient:
 #

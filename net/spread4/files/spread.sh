@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/spread/files/spread.sh,v 1.2 2003/12/29 06:21:20 edwin Exp $
 #
 
 # PROVIDE: spread
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable spread:

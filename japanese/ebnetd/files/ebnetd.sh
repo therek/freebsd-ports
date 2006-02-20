@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ebnetd/files/ebnetd.sh,v 1.1 2004/10/31 21:56:07 pav Exp $
 #
 
 # PROVIDE: ebnetd ndtpd ebhttpd
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable EBNETD servers:

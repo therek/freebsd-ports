@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/japanese/esecanna/files/esecanna.sh,v 1.5 2003/10/25 16:11:00 knu Exp $
+# $FreeBSD: ports/japanese/esecanna/files/esecanna.sh,v 1.6 2004/05/10 18:39:05 knu Exp $
 
 # PROVIDE: esecanna
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 . %%RC_SUBR%%
 

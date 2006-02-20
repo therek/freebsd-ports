@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/smtptrapd/files/smtptrapd.sh,v 1.1 2005/03/20 21:35:13 anders Exp $
+# $FreeBSD: ports/mail/smtptrapd/files/smtptrapd.sh.in,v 1.1 2005/05/17 16:35:32 anders Exp $
 #
 
 # PROVIDE: smtptrapd
 # REQUIRE: LOGIN
 # BEFORE: mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable smtptrapd:

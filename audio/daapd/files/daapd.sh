@@ -1,9 +1,9 @@
 #!/bin/sh
-# $FreeBSD: ports/audio/daapd/files/daapd.sh,v 1.3 2004/06/29 20:47:31 lth Exp $
+# $FreeBSD: ports/audio/daapd/files/daapd.sh,v 1.4 2004/07/27 07:31:52 lth Exp $
 
 # PROVIDE: daapd
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these daapd_* variables in one of these files:
 #       /etc/rc.conf

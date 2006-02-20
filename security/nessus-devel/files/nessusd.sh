@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # Start or stop nessusd
-# $FreeBSD: ports/security/nessus-devel/files/nessusd.sh,v 1.1 2004/05/02 18:25:52 pav Exp $
+# $FreeBSD: ports/security/nessus-devel/files/nessusd.sh,v 1.2 2004/08/13 14:15:25 vs Exp $
 
 # PROVIDE: nessusd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts

@@ -1,10 +1,10 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/drac/files/dracd.sh.in,v 1.1 2005/04/22 13:51:40 vs Exp $
+# $FreeBSD: ports/mail/drac/files/dracd.sh.in,v 1.2 2005/05/20 14:58:13 pav Exp $
 
 # PROVIDE: dracd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these dracd_* variables in one of these files:
 #       /etc/rc.conf

@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/ftp/proftpd/files/proftpd.sh.in,v 1.1 2005/06/22 18:48:39 flz Exp $
+# $FreeBSD: ports/ftp/proftpd/files/proftpd.sh.in,v 1.2 2005/10/10 05:38:26 mharo Exp $
 #
 
 # PROVIDE: proftpd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable proftpd:

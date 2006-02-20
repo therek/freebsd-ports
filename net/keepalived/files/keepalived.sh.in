@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/keepalived/files/keepalived.sh.in,v 1.1 2005/09/08 19:55:01 clement Exp $
 #
 
 # PROVIDE: keepalived
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable apache2:

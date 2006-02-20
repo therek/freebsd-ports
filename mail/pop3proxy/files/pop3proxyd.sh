@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/pop3proxy/files/pop3proxyd.sh,v 1.1 2004/05/11 17:09:06 mbr Exp $
 #
 
 # PROVIDE: pop3proxyd
 # REQUIRE: LOGIN
 # BEFORE: mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following line to /etc/rc.conf to enable pop3proxyd:

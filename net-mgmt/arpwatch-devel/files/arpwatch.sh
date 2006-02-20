@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/arpwatch-devel/files/arpwatch.sh,v 1.9 2004/07/09 16:50:00 krion Exp $
 #
 
 # PROVIDE: arpwatch
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable arpwatch:

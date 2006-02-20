@@ -1,12 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/dns/totd/files/totd.sh,v 1.2 2004/05/24 11:46:59 vs Exp $
 #
 
 # PROVIDE: totd
 # REQUIRE: SERVERS
 # BEFORE:  DAEMON
-# KEYWORD: FreeBSD
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts

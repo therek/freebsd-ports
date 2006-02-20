@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/arla/files/arla.sh.in,v 1.1 2005/05/05 18:57:30 oliver Exp $
 #
 
 # PROVIDE: arla
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD
 
 # Add the following line to /etc/rc.conf to enable `arla':
 #

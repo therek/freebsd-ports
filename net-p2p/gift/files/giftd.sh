@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/gift/files/giftd.sh,v 1.1 2005/01/08 18:44:55 sem Exp $
+# $FreeBSD: ports/net-p2p/gift/files/giftd.sh,v 1.2 2006/01/07 06:29:52 dougb Exp $
 #
 
 # PROVIDE: giftd
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these giftd_* variables in one of these files:
 #       /etc/rc.conf

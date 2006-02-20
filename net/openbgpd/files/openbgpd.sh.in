@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/openbgpd/files/openbgpd.sh.in,v 1.1 2005/05/17 14:46:42 flz Exp $
 #
 
 # PROVIDE: bgpd
 # REQUIRE: LOGIN abi
 # BEFORE:  securelevel
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Add the following line to /etc/rc.conf to enable `openbgpd':
 #

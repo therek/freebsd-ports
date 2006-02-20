@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/sixxs-heartbeatd/files/sixxs-heartbeatd.sh,v 1.1 2004/05/02 19:12:23 naddy Exp $
 #
 
 # PROVIDE: sixxs-heartbeatd
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD
 
 #
 # Add the following lines to /etc/rc.conf to enable sixxs-heartbeatd:

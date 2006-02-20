@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/distcache/files/dc_server.sh.in,v 1.1 2005/04/18 19:04:40 pav Exp $
 #
 
 # PROVIDE: %%NAME%%
 # REQUIRE: LOGIN
 # BEFORE:  securelevel
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Add the following line to /etc/rc.conf to enable `%%NAME%%':
 #

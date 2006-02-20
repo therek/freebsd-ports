@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/freenet/files/freenet.sh,v 1.2 2005/10/10 11:05:04 lioux Exp $
+# $FreeBSD: ports/net-p2p/freenet/files/freenet.sh,v 1.3 2005/10/15 17:05:29 lioux Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
 # PROVIDE: freenet
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable freenet:

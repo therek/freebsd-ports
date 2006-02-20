@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dante/files/sockd.sh.in,v 1.1 2006/02/14 21:18:16 sem Exp $
 #
 
 # PROVIDE: sockd
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable sockd:

@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/idled/files/idled.sh,v 1.3 2004/01/03 06:59:22 edwin Exp $
 #
 
 # PROVIDE: idled
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable idled:

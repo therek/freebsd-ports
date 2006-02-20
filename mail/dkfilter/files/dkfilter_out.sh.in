@@ -1,11 +1,11 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/dkfilter/files/dkfilter_out.sh.in,v 1.1 2005/11/12 20:18:42 mnag Exp $
+# $FreeBSD: ports/mail/dkfilter/files/dkfilter_out.sh.in,v 1.2 2006/01/25 11:41:46 garga Exp $
 #
 
 # PROVIDE: dkfilter_out
 # REQUIRE: LOGIN
 # BEFORE: mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable dkfilter.out:

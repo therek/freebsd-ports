@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/japanese/multiskkserv/files/multiskkserv.sh,v 1.1 2004/01/08 02:17:34 edwin Exp $
+# $FreeBSD: ports/japanese/multiskkserv/files/multiskkserv.sh,v 1.2 2004/08/13 15:01:40 arved Exp $
 #
 
 # PROVIDE: multiskkserv
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD
 
 #
 # Add the following lines to /etc/rc.conf to enable multiskkserv:

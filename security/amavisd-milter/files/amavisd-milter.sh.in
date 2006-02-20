@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/amavisd-milter/files/amavisd-milter.sh.in,v 1.3 2006/01/14 11:39:52 tdb Exp $
+# $FreeBSD: ports/security/amavisd-milter/files/amavisd-milter.sh.in,v 1.4 2006/02/17 16:38:48 garga Exp $
 #
 
 # PROVIDE: amavisd-milter
 # REQUIRE: amavisd
 # BEFORE: mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable amavisd-milter:

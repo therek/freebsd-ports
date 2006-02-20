@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/vpb-driver/files/vpb.sh.in,v 1.1 2005/11/11 10:06:14 lawrance Exp $
 #
 
 # PROVIDE: vpb-driver
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #	we load the vpb-driver after the network is fully loaded
 #       (for VOIP?)
 

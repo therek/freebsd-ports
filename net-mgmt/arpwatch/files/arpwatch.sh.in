@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/arpwatch/files/arpwatch.sh.in,v 1.1 2005/12/27 05:25:18 pav Exp $
+# $FreeBSD: ports/net-mgmt/arpwatch/files/arpwatch.sh.in,v 1.2 2005/12/29 15:48:38 pav Exp $
 #
 
 # PROVIDE: arpwatch
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD
 
 # Add the following lines to /etc/rc.conf to enable arpwatch:
 #

@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap22-server/files/slurpd.sh,v 1.7 2003/08/30 11:50:41 edwin Exp $
+# $FreeBSD: ports/net/openldap22-server/files/slurpd.sh,v 1.8 2004/08/15 18:18:46 eik Exp $
 #
 
 # PROVIDE: slurpd
 # REQUIRE: slapd
 # BEFORE:
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Add the following line to /etc/rc.conf to enable slurpd:
 #

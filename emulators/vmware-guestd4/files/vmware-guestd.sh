@@ -1,12 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/emulators/vmware-guestd4/files/vmware-guestd.sh,v 1.5 2004/03/21 03:12:42 matusita Exp $
+# $FreeBSD: ports/emulators/vmware-guestd4/files/vmware-guestd.sh,v 1.6 2005/02/06 14:04:38 sobomax Exp $
 #
 
 # PROVIDE: vmware-guestd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD
 
 PREFIX=%%PREFIX%%
 . %%RC_SUBR%%

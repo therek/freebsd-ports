@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/cyrus-smlacapd/files/cyrus_smlacapd_backend.sh.in,v 1.1 2005/11/03 07:53:18 pav Exp $
+# $FreeBSD: ports/databases/cyrus-smlacapd/files/cyrus_smlacapd_backend.sh.in,v 1.2 2005/11/03 12:17:24 pav Exp $
 #
 
 # PROVIDE: cyrus_smlacapd_backend
 # REQUIRE: DAEMON cyrus_pwcheck
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following line to /etc/rc.conf to enable cyrus_smlacapd_backend:

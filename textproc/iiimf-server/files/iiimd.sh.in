@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/textproc/iiimf-server/files/iiimd.sh.in,v 1.1 2005/05/24 12:37:49 daichi Exp $
 
 # PROVIDE: iiimd
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 prefix=%%PREFIX%%
 

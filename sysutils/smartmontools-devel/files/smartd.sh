@@ -1,10 +1,10 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/smartmontools/files/smartd.sh,v 1.5 2005/11/18 11:46:38 flz Exp $
+# $FreeBSD: ports/sysutils/smartmontools/files/smartd.sh,v 1.6 2006/01/07 06:29:55 dougb Exp $
 
 # PROVIDE: smartd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these smartd_* variables in one of these files:
 #	/etc/rc.conf

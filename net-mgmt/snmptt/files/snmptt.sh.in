@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/snmptt/files/snmptt.sh.in,v 1.1 2005/11/08 16:22:22 pav Exp $
 #
 
 # PROVIDE: snmptt
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD
 
 #
 # Add the following lines to /etc/rc.conf to enable snmptt:

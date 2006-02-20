@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/proxyper/files/proxyper.sh,v 1.4 2004/08/25 09:17:55 krion Exp $
+# $FreeBSD: ports/misc/proxyper/files/proxyper.sh,v 1.5 2004/12/02 11:40:28 vs Exp $
 #
 # PROVIDE: proxyper
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 proxyper_enable=${proxyper_enable:-"NO"}
 

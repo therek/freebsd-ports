@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/minisapserver/files/sapserver.sh,v 1.1 2004/05/25 09:17:51 krion Exp $
+# $FreeBSD: ports/net/minisapserver/files/sapserver.sh,v 1.2 2006/01/07 06:29:53 dougb Exp $
 #
 
 # PROVIDE: sapserver
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable sapserver:

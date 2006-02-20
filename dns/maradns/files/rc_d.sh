@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/maradns/files/rc_d.sh,v 1.1 2004/04/18 15:31:18 clement Exp $
+# $FreeBSD: ports/dns/maradns/files/rc_d.sh,v 1.2 2004/07/29 20:53:08 pav Exp $
 #
 
 # PROVIDE: %%SERVICE%%
 # REQUIRE: SERVERS
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts

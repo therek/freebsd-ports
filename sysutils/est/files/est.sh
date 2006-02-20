@@ -1,12 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/est/files/est.sh,v 1.2 2004/09/02 04:14:21 edwin Exp $
+# $FreeBSD: ports/sysutils/est/files/est.sh,v 1.3 2006/01/07 06:29:54 dougb Exp $
 #
 
 # PROVIDE: est
 # REQUIRE: abi
 # BEFORE: securelevel
-# KEYWORD: FreeBSD
 
 # Define est_* variables in one of these files:
 #	/etc/rc.conf

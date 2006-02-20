@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/exim/files/exim.sh,v 1.7 2004/06/07 10:53:11 eik Exp $
+# $FreeBSD: ports/mail/exim/files/exim.sh,v 1.8 2004/10/11 23:48:25 eik Exp $
 #
 
 # PROVIDE: mail
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #	we make mail start late, so that things like .forward's are not
 #	processed until the system is fully operational
 

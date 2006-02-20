@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-p2p/bnbt/files/bnbt.sh.in,v 1.1 2004/12/28 02:31:37 pav Exp $
 #
 
 # PROVIDE: bnbt
 # REQUIRE: LOGIN abi
 # BEFORE:  securelevel
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Add the following line to /etc/rc.conf to enable `bnbt':
 #

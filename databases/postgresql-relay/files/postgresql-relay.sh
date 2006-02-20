@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/postgresql-relay/files/postgresql-relay.sh,v 1.1 2004/12/13 05:49:53 edwin Exp $
 #
 
 # PROVIDE: postgresql-relay
 # REQUIRE: LOGIN
 # AFTER: postgresql
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable spamd:

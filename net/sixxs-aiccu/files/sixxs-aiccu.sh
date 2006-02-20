@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/sixxs-aiccu/files/sixxs-aiccu.sh,v 1.1 2005/03/14 17:47:08 vs Exp $
+# $FreeBSD: ports/net/sixxs-aiccu/files/sixxs-aiccu.sh,v 1.2 2005/04/17 14:59:47 novel Exp $
 #
 
 # PROVIDE: sixxs-aiccu
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD
 
 #
 # Add the following lines to /etc/rc.conf to enable sixxs-aiccu:

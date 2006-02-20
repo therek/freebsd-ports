@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/uptimec/files/uptimec.sh.in,v 1.1 2005/04/10 17:17:12 pav Exp $
 #
 
 # PROVIDE: uptimec
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Uptimec is enabled by default, if you have configuration file
 #

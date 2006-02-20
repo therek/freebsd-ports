@@ -1,12 +1,12 @@
 #!/bin/sh
 # Start or stop widentd
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/widentd/files/widentd.sh.in,v 1.1 2005/08/31 12:54:25 vs Exp $
 #
 # PROVIDE: widentd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD startup and shutdown
+# KEYWORD: shutdown
 #
 prefix=%%PREFIX%%
 

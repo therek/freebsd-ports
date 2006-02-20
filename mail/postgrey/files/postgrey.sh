@@ -1,11 +1,11 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/postgrey/files/postgrey.sh,v 1.3 2005/01/27 00:03:28 will Exp $
+# $FreeBSD: ports/mail/postgrey/files/postgrey.sh,v 1.4 2005/04/15 06:31:28 dd Exp $
 #
 
 # PROVIDE: postgrey
 # REQUIRE: LOGIN
 # BEFORE: mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable postgrey:

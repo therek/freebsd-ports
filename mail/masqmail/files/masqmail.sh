@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/masqmail-devel/files/masqmail.sh,v 1.1 2004/05/02 20:38:48 pav Exp $
+# $FreeBSD: ports/mail/masqmail/files/masqmail.sh,v 1.2 2005/12/26 11:43:54 anray Exp $
 #
 
 # PROVIDE: mail
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #	we make mail start late, so that things like .forward's are not
 #	processed until the system is fully operational
 

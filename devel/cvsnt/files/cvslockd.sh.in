@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/cvsnt/files/cvslockd.sh,v 1.1 2004/07/31 18:18:42 fjoe Exp $
+# $FreeBSD: ports/devel/cvsnt/files/cvslockd.sh.in,v 1.1 2005/04/19 19:03:52 fjoe Exp $
 #
 # PROVIDE: cvslockd
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 . %%RC_SUBR%%
 

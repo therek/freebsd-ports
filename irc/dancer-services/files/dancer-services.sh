@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/irc/dancer-services/files/dancer-services.sh,v 1.2 2003/04/19 23:10:16 knu Exp $
+# $FreeBSD: ports/irc/dancer-services/files/dancer-services.sh,v 1.3 2004/04/19 16:57:56 knu Exp $
 #
 
 # PROVIDE: dancer-services
-# KEYWORD: FreeBSD
 
 . %%RC_SUBR%%
 

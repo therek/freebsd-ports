@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/pips800/files/pips.sh,v 1.1 2004/08/25 20:24:18 ume Exp $
 #
 
 # PROVIDE: pips
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these pips_* variables in one of these files:
 #	/etc/rc.conf

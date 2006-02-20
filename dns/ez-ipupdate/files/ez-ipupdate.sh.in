@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/dns/ez-ipupdate/files/ez-ipupdate.sh.in,v 1.1 2005/11/17 18:55:18 pav Exp $
 #
 
 # PROVIDE: ez-ipupdate
 # REQUIRE:
 # BEFORE:
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Add the following line to /etc/rc.conf to enable ez-ipupdate:
 #

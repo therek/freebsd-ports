@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/distcc/files/distccd.sh.in,v 1.1 2005/11/06 00:07:20 mnag Exp $
 #
 
 # PROVIDE: distccd
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable distccd:

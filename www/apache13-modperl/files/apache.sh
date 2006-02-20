@@ -1,10 +1,10 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-modperl/files/apache.sh,v 1.1 2004/06/05 14:25:18 pav Exp $
+# $FreeBSD: ports/www/apache13-modperl/files/apache.sh,v 1.2 2006/01/07 06:29:56 dougb Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these apache_* variables in one of these files:
 #       /etc/rc.conf

@@ -1,10 +1,10 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13/files/apache.sh,v 1.8 2004/07/27 11:17:11 ache Exp $
+# $FreeBSD: ports/www/apache13/files/apache.sh,v 1.9 2004/08/29 11:07:42 ache Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Define these apache_* variables in one of these files:
 #       /etc/rc.conf

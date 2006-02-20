@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/boxbackup/files/bbackupd.sh.in,v 1.1 2005/12/14 13:40:07 lawrance Exp $
 #
 # PROVIDE: bbackupd
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following line to /etc/rc.conf to enable bbackupd:

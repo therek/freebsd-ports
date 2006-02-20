@@ -1,9 +1,9 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/fusefs-kmod/files/fuse.sh,v 1.1 2005/10/19 08:18:57 barner Exp $
 
 # PROVIDE: fusefs
 # REQUIRE: sysctl
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 [ -z "${fusefs_enable}" ]	&& fusefs_enable="NO"
 

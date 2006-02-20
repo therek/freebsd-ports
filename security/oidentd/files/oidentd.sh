@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/oidentd/files/oidentd.sh,v 1.1 2004/01/31 13:32:34 oliver Exp $
+# $FreeBSD: ports/security/oidentd/files/oidentd.sh,v 1.2 2004/10/15 17:44:18 oliver Exp $
 #
 
 # PROVIDE: oidentd
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable dovecot:

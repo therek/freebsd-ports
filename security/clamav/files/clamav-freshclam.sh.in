@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav/files/clamav-freshclam.sh,v 1.6 2005/01/12 17:57:58 yar Exp $
+# $FreeBSD: ports/security/clamav/files/clamav-freshclam.sh.in,v 1.1 2005/05/13 08:16:40 jylefort Exp $
 #
 
 # PROVIDE: freshclam
 # REQUIRE: LOGIN clamd
 # BEFORE: mail
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable the freshclam daemon:

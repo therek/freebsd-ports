@@ -1,12 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/lookupd/files/lookupd.sh,v 1.1 2004/07/24 17:27:36 eik Exp $
 #
 
 # PROVIDE: lookupd
 # REQUIRE: mountcritlocal
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD
 
 #
 # Add the following lines to /etc/rc.conf to enable lookupd:

@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/dns/dns_balance/files/dns_balance.sh.in,v 1.1 2005/11/17 19:13:22 pav Exp $
 #
 # PROVIDE: dns_balance
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 
 . %%RC_SUBR%%
 

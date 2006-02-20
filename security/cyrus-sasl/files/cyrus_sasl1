@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/cyrus-sasl/files/cyrus_sasl1,v 1.1 2003/02/26 11:25:55 edwin Exp $
 #
 
 # PROVIDE: sasl1
 # REQUIRE: DAEMON %%MYSQL_REQ%%
-# KEYWORD: FreeBSD
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts copy

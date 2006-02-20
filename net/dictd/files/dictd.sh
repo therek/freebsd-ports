@@ -1,9 +1,8 @@
 #!/bin/sh
-# $FreeBSD: ports/net/dictd/files/dictd.sh,v 1.4 2004/08/29 07:08:03 clive Exp $
+# $FreeBSD: ports/net/dictd/files/dictd.sh,v 1.5 2004/09/02 06:37:52 clive Exp $
 #
 # PROVIDE: dictd
 # REQUIRE: DAEMON
-# KEYWORD: FreeBSD
 #
 # Add the following line to /etc/rc.conf to enable dictd:
 #

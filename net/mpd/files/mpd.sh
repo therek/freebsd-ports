@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/mpd/files/mpd.sh,v 1.3 2006/01/07 06:29:53 dougb Exp $
+# $FreeBSD: ports/net/mpd/files/mpd.sh,v 1.4 2006/02/19 16:56:41 archie Exp $
 #
 # PROVIDE: mpd
 # REQUIRE: NETWORKING syslogd
-# KEYWORD: FreeBSD
 #
 # Add the following line to /etc/rc.conf to enable mpd:
 #

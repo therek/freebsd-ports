@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/dtcp/files/dtcpc.sh,v 1.2 2004/06/11 15:49:47 ume Exp $
+# $FreeBSD: ports/net/dtcp/files/dtcpc.sh.in,v 1.1 2005/02/10 19:12:56 ume Exp $
 #
 
 # PROVIDE: dtcpc
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts

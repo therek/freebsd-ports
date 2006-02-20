@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# @(#) $FreeBSD$
+# @(#) $FreeBSD: ports/sysutils/fvcool/scripts/fvcool.sh,v 1.1 2004/10/17 03:32:08 linimon Exp $
 
 # PROVIDE: %%PORTNAME%%
 # REQUIRE: LOGIN abi
 # BEFORE:  securelevel
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 # Add the following line to /etc/rc.conf to enable `%%PORTNAME%%':
 #
