@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.524 2006/01/28 02:11:05 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.525 2006/02/11 02:34:48 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1287,8 +1287,8 @@ LDCONFIG_PLIST_UNEXEC_CMD?=	${LDCONFIG} -R
 PKGCOMPATDIR?=		${LOCALBASE}/lib/compat/pkg
 
 .if ${OSVERSION} >= 500036
-PERL_VERSION?=	5.8.7
-PERL_VER?=	5.8.7
+PERL_VERSION?=	5.8.8
+PERL_VER?=	5.8.8
 .else
 .if ${OSVERSION} >= 500032
 PERL_VERSION?=	5.6.1
