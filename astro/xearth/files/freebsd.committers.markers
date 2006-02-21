@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.282 2006/01/19 18:17:34 vd Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.284 2006/02/17 21:36:35 emaste Exp $
 #
 # FreeBSD Project Committers
 #
@@ -236,7 +236,7 @@
  37.596,	-122.08,	"arun"				# Union City, CA, USA
  37.38,		-122.08,	"petef"				# Mountain View, CA, USA
  47.684091,	-122.128662,	"orion"				# Redmond, WA, USA
- 47.756,	-122.14,	"seanc"				# Shoreline, WA, USA
+ 37.37781,	-121.951980,	"seanc"				# Santa Clara, CA, USA
  47.382689,	-122.227021,	"garys"				# Kent, WA, USA
  37.81875,	-122.2466,	"kientzle"			# Oakland, CA, USA
  37.84,		-122.25,	"jmg"				# Oakland, CA, USA
