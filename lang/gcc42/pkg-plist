@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc42/pkg-plist,v 1.79 2005/12/28 14:31:05 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc42/pkg-plist,v 1.80 2006/01/27 01:55:53 gerald Exp $
 bin/c++%%SUFFIX%%
 bin/cpp%%SUFFIX%%
 bin/g++%%SUFFIX%%
@@ -15,10 +15,6 @@ include/ssp/string.h
 include/ssp/stdio.h
 include/ssp/unistd.h
 include/omp.h
-include/omp_lib.f90
-include/omp_lib.h
-%%FORTRAN%%include/omp_lib.mod
-%%FORTRAN%%include/omp_lib_kinds.mod
 @dirrm include/ssp
 info/gcc%%SUFFIX%%/dir
 %%FORTRAN%%bin/gfortran%%SUFFIX%%
