@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/print/adobe-cmaps/pkg-plist,v 1.4 2006/02/20 20:31:27 hrs Exp $
 %%CMAPDIR%%/ac15/CMap/Adobe-CNS1-0
 %%CMAPDIR%%/ac15/CMap/Adobe-CNS1-1
 %%CMAPDIR%%/ac15/CMap/Adobe-CNS1-2
@@ -201,3 +201,4 @@
 @dirrm %%CMAPDIR%%/ak12
 @dirrm %%CMAPDIR%%/rksj-cmaps
 @dirrmtry %%CMAPDIR%%
+@dirrmtry share/fonts
