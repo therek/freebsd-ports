@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.456 2006/02/18 09:53:44 jylefort Exp $
+# $FreeBSD: ports/LEGAL,v 1.457 2006/02/20 01:47:20 hq Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -670,3 +670,5 @@ pfpro-*			finance/pfpro		Only available for customers
 simian-*                devel/simian            Have to agree to
 						license before download.
 xGate/*			japanese/xgate		Requested by Orangesoft Inc
+tw_cli-*		sysutils/tw_cli		Redistribution forbidden by
+						license.
