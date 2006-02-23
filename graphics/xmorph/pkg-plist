@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/xmorph/pkg-plist,v 1.6 2004/03/16 14:07:06 krion Exp $
+@comment $FreeBSD: ports/graphics/xmorph/pkg-plist,v 1.7 2004/03/26 14:43:01 krion Exp $
 %%GNOME:%%bin/gtkmorph
 bin/morph
 bin/xmorph
@@ -15,6 +15,7 @@ include/xmorph/warp-gtk.h
 include/xmorph/warp.h
 include/xmorph/warp2.h
 lib/libmorph.a
+lib/libmorph.la
 lib/libmorph.so
 lib/libmorph.so.1
 %%PORTDOCS%%%%EXAMPLESDIR%%/AA/README

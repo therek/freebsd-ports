@@ -1,8 +1,9 @@
-@comment $FreeBSD: ports/converters/recode/pkg-plist,v 1.8 2002/04/17 07:16:33 demon Exp $
+@comment $FreeBSD: ports/converters/recode/pkg-plist,v 1.9 2003/08/13 07:23:29 demon Exp $
 bin/recode
 include/recode.h
 include/recodext.h
 lib/librecode.a
+lib/librecode.la
 lib/librecode.so
 lib/librecode.so.3
 share/locale/da/LC_MESSAGES/recode.mo

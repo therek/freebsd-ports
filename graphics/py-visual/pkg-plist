@@ -1,5 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/graphics/py-visual/pkg-plist,v 1.1 2005/07/17 16:36:41 pav Exp $
 bin/vpython
+%%PYTHON_SITELIBDIR%%/cvisualmodule.la
 %%PYTHON_SITELIBDIR%%/cvisualmodule.so
 %%PYTHON_SITELIBDIR%%/cvisualmodule.so.1
 %%PYTHON_SITELIBDIR%%/visual/__init__.py

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/gimp-print/pkg-plist,v 1.8 2004/07/17 18:46:26 krion Exp $
+@comment $FreeBSD: ports/print/gimp-print/pkg-plist,v 1.9 2006/01/22 06:28:48 edwin Exp $
 %%CUPS%%bin/cups-calibrate
 bin/escputil
 bin/gimpprint-config
@@ -6,6 +6,7 @@ bin/gimpprint-config
 %%CUPS%%etc/cups/command.types
 include/gimp-print/gimp-print.h
 lib/libgimpprint.a
+lib/libgimpprint.la
 lib/libgimpprint.so
 lib/libgimpprint.so.2
 %%CUPS%%libexec/cups/backend/canon

@@ -16,7 +16,7 @@
 # This code now mainly supports FreeBSD, but patches to update support for
 # OpenBSD and NetBSD will be accepted.
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.85 2006/02/14 03:20:13 marcus Exp $
 # $MCom: portlint/portlint.pl,v 1.110 2006/02/14 03:19:10 marcus Exp $
 #
 
@@ -666,14 +666,6 @@ sub checkplist {
 				"instead of from outdated bundled one if possible. ".
 				"See http://www.freebsd.org/cgi/query-pr.cgi?pr=ports/71531 ".
 				"for more details.");
-		}
-
-		if ($_ =~ /\.la$/ && $makevar{USE_AUTOTOOLS} =~ 'libtool' &&
-			!defined($makevar{USE_KDELIBS_VER})) {
-			&perror("WARN: $file [$.]: installing libtool archives, ".
-				"please use USE_AUTOTOOLS in Makefile if possible.  ".
-				"See http://www.FreeBSD.org/gnome/docs/porting.html ".
-				"for a way to completely eliminate .la files.");
 		}
 
 		if ($_ =~ /\%gconf.*\.xml/ || $_ =~ /gconf.*\.schemas?/) {

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/cad/gtkwave/pkg-plist,v 1.6 2004/08/10 07:44:23 vs Exp $
+@comment $FreeBSD: ports/cad/gtkwave/pkg-plist,v 1.7 2005/01/04 11:01:27 krion Exp $
 bin/gtkwave
 bin/vcd2lxt
 include/gtkwave/format/data.h
@@ -23,8 +23,8 @@ lib/gtkwave/reader_vcd.a
 lib/gtkwave/reader_vcd.la
 lib/gtkwave/reader_vcd.so
 lib/gtkwave/reader_vcd.so.0
-lib/gtkwave/libformat.la
 lib/gtkwave/libformat.a
+lib/gtkwave/libformat.la
 @dirrm lib/gtkwave
 %%PORTDOCS%%%%DOCSDIR%%/data_format.png
 %%PORTDOCS%%%%DOCSDIR%%/edit_menu.png

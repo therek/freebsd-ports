@@ -1,8 +1,9 @@
-@comment $FreeBSD: ports/databases/libdbi/pkg-plist,v 1.5 2003/11/18 04:04:12 seanc Exp $
+@comment $FreeBSD: ports/databases/libdbi/pkg-plist,v 1.6 2005/09/16 19:46:01 mnag Exp $
 include/dbi/dbd.h
 include/dbi/dbi-dev.h
 include/dbi/dbi.h
 lib/libdbi.a
+lib/libdbi.la
 lib/libdbi.so
 lib/libdbi.so.0
 %%PORTDOCS%%%%DOCSDIR%%/driver-guide.pdf

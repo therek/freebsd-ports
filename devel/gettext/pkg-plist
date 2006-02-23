@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/gettext/pkg-plist,v 1.36 2005/06/17 17:11:00 ade Exp $
+@comment $FreeBSD: ports/devel/gettext/pkg-plist,v 1.37 2006/01/22 05:52:13 edwin Exp $
 bin/autopoint
 bin/envsubst
 bin/gettext
@@ -25,17 +25,22 @@ include/gettext-po.h
 include/libintl.h
 @exec /bin/mkdir -p %D/lib/gettext
 lib/libasprintf.a
+lib/libasprintf.la
 lib/libasprintf.so
 lib/libasprintf.so.0
 lib/libgettextlib-%%VERSION%%.so
 lib/libgettextlib.a
+lib/libgettextlib.la
 lib/libgettextlib.so
 lib/libgettextpo.a
+lib/libgettextpo.la
 lib/libgettextpo.so
 lib/libgettextpo.so.1
+lib/libgettextsrc.la
 lib/libgettextsrc-%%VERSION%%.so
 lib/libgettextsrc.so
 lib/libintl.a
+lib/libintl.la
 lib/libintl.so
 lib/libintl.so.6
 libdata/gettext-tools/hostname

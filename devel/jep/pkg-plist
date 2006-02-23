@@ -1,5 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/jep/pkg-plist,v 1.1 2005/03/10 15:27:41 hq Exp $
 lib/libjep.a
+lib/libjep.la
 lib/libjep.so
 lib/libjep.so.1
 %%JAVAJARDIR%%/jep.jar

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/korean/FreeWnn-lib/pkg-plist,v 1.8 2005/12/07 10:46:20 hrs Exp $
+@comment $FreeBSD: ports/korean/FreeWnn-lib/pkg-plist,v 1.9 2006/01/22 02:17:48 edwin Exp $
 include/kwnn/commonhd.h
 include/kwnn/cplib.h
 include/kwnn/jllib.h
@@ -34,6 +34,7 @@ lib/wnn/ko_KR/wnnenvrc_R
 lib/wnn/ko_KR/wnnstat.msg
 lib/wnn/serverdefs
 lib/libkwnn.a
+lib/libkwnn.la
 lib/libkwnn.so
 lib/libkwnn.so.0
 @dirrm lib/wnn/ko_KR/rk

@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/gnutls/pkg-plist,v 1.13 2006/01/09 16:33:15 novel Exp $
 bin/certtool
 bin/gnutls-cli
 bin/gnutls-cli-debug
@@ -14,12 +14,15 @@ include/gnutls/openssl.h
 include/gnutls/pkcs12.h
 include/gnutls/x509.h
 lib/libgnutls-extra.a
+lib/libgnutls-extra.la
 lib/libgnutls-extra.so
 lib/libgnutls-extra.so.15
 lib/libgnutls-openssl.a
+lib/libgnutls-openssl.la
 lib/libgnutls-openssl.so
 lib/libgnutls-openssl.so.15
 lib/libgnutls.a
+lib/libgnutls.la
 lib/libgnutls.so
 lib/libgnutls.so.15
 libdata/pkgconfig/gnutls-extra.pc

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/xmlroff/pkg-plist,v 1.6 2006/01/22 02:55:05 edwin Exp $
+@comment $FreeBSD: ports/textproc/xmlroff/pkg-plist,v 1.7 2006/01/30 15:06:14 hrs Exp $
 bin/xmlroff
 include/libfo-0.3/area/fo-area.h
 include/libfo-0.3/datatype/fo-datatype.h
@@ -31,6 +31,7 @@ include/libfo-0.3/util/fo-hash-table.h
 include/libfo-0.3/util/fo-image.h
 include/libfo-0.3/util/fo-pixbuf.h
 lib/libfo-0.3.a
+lib/libfo-0.3.la
 lib/libfo-0.3.so
 lib/libfo-0.3.so.306
 libdata/pkgconfig/libfo-0.3.pc

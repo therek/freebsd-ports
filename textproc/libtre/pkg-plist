@@ -1,8 +1,9 @@
-@comment $FreeBSD: ports/textproc/libtre/pkg-plist,v 1.7 2004/07/23 07:58:58 krion Exp $
+@comment $FreeBSD: ports/textproc/libtre/pkg-plist,v 1.8 2004/10/26 15:30:45 krion Exp $
 bin/agrep
 include/tre/regex.h
 include/tre/tre-config.h
 lib/libtre.a
+lib/libtre.la
 lib/libtre.so
 lib/libtre.so.6
 libdata/pkgconfig/tre.pc

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/giblib/pkg-plist,v 1.4 2003/06/23 14:44:38 osa Exp $
+@comment $FreeBSD: ports/graphics/giblib/pkg-plist,v 1.5 2004/10/12 09:58:43 krion Exp $
 bin/giblib-config
 include/giblib/gib_btree.h
 include/giblib/gib_debug.h
@@ -12,6 +12,7 @@ include/giblib/gib_utils.h
 include/giblib/giblib.h
 include/giblib/giblib_config.h
 lib/libgiblib.a
+lib/libgiblib.la
 lib/libgiblib.so
 lib/libgiblib.so.1
 libdata/pkgconfig/giblib.pc

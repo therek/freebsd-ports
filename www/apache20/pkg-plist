@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.75 2005/10/14 13:54:09 clement Exp $
+@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.76 2006/01/22 02:57:25 edwin Exp $
 @exec mkdir -p %D/etc/apache2 2> /dev/null
 @unexec if cmp -s %D/etc/apache2/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache2/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd-std.conf
@@ -134,9 +134,11 @@ lib/apache2/apr.exp
 lib/apache2/aprutil.exp
 lib/apache2/apu-config
 lib/apache2/libapr-0.a
+lib/apache2/libapr-0.la
 lib/apache2/libapr-0.so
 lib/apache2/libapr-0.so.9
 lib/apache2/libaprutil-0.a
+lib/apache2/libaprutil-0.la
 lib/apache2/libaprutil-0.so
 lib/apache2/libaprutil-0.so.9
 libexec/apache2/httpd.exp

@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11-toolkits/gtk12/files/patch-gtk+.pc.in,v 1.1 2002/06/10 15:33:34 sobomax Exp $
 
 --- gtk+.pc.in	2002/06/10 15:32:34	1.1
 +++ gtk+.pc.in	2002/06/10 15:32:40
@@ -8,5 +8,5 @@ $FreeBSD$
  Version: @VERSION@
  Requires: gdk
 -Libs: -L${libdir} -lgtk
-+Libs: -L${libdir} -lgtk12
++Libs: -L${libdir} -lgtk-12
  Cflags: 
