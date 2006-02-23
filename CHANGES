@@ -22,9 +22,6 @@ The following changes affecting ports developers were introduced:
 
   * New USE_DOS2UNIX variable for converting DOS linefeeds to UNIX
 
-  * New variables PERL_RUN_DEPENDS and PERL_BUILD_DEPENDS which take
-    module:portdir tuples
-
   * Variables like BROKEN and FORBIDDEN should no longer be quoted
 
   * New NOFETCHFILES variable to prevent downloading from MASTER_SITES
@@ -1013,4 +1010,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.49 2006/01/21 21:07:14 pav Exp $
+$FreeBSD: ports/CHANGES,v 1.50 2006/01/27 13:17:11 danfe Exp $
