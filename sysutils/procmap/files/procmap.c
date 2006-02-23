@@ -31,11 +31,12 @@
  *
  * Reliably print the entire contents of the proc filesystem's "map" files.
  *
- * $FreeBSD$
+ * $FreeBSD: ports/sysutils/procmap/files/procmap.c,v 1.1 2000/04/23 22:26:00 jasone Exp $
  *
  ****************************************************************************/
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <fcntl.h>
 #include <errno.h>
 
@@ -48,7 +49,8 @@ main(int argc, char **argv)
 {
 	char	*buf;
 	char	path[MAXPATH] = "/proc/";
-	int	mfd, bytes, size = MINBUF;
+	int	mfd, bytes;
+	size_t	size = MINBUF;
 	
 	if (argc != 2) {
 		fprintf(stderr, "usage: procmap {<pid> | curproc}\n");
