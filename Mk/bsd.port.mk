@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.527 2006/02/23 08:28:14 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.528 2006/02/23 10:43:00 ade Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3302,7 +3302,7 @@ do-patch:
 
 .if !target(run-autotools)
 run-autotools:
-	${DO_NADA}
+	@${DO_NADA}
 .endif
 
 # Configure
