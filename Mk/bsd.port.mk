@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.526 2006/02/20 20:31:49 tobez Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.527 2006/02/23 08:28:14 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1816,10 +1816,9 @@ RUN_DEPENDS+=	${PERL5}:${PORTSDIR}/lang/${PERL_PORT}
 .include "${PORTSDIR}/Mk/bsd.apache.mk"
 .endif
 
-# XXX
-#.if defined(USE_AUTOTOOLS)
+.if defined(USE_AUTOTOOLS)
 .include "${PORTSDIR}/Mk/bsd.autotools.mk"
-#.endif
+.endif
 
 .if defined(WANT_GNOME) || defined(USE_GNOME) || defined(USE_GTK)
 .include "${PORTSDIR}/Mk/bsd.gnome.mk"
@@ -3301,11 +3300,10 @@ do-patch:
 	fi
 .endif
 
-# XXX - To be tested later
-#.if !target(run-autotools) && !defined(USE_AUTOTOOLS)
-#run-autotools:
-#	${DO_NADA}
-#.endif
+.if !target(run-autotools)
+run-autotools:
+	${DO_NADA}
+.endif
 
 # Configure
 
