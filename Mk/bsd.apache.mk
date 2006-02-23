@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.7 2006/01/14 13:42:56 clement Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.8 2006/01/15 18:58:37 clement Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -28,7 +28,7 @@ APACHE_SUPPORTED_VERSION=	13 20 21 22
 AP_PORT_IS_SERVER=	YES
 .elif ${USE_APACHE:L} == apr
 APR_DEPS=			YES
-.elif ${USE_APACHE:C/\.//:C/\+//:M[12][310]} != ""
+.elif ${USE_APACHE:C/\.//:C/\+//:M[12][3210]} != ""
 AP_PORT_IS_MODULE=	YES
 
 #### for backward compatibility
