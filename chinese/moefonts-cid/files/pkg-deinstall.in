@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/chinese/moefonts-cid/files/pkg-deinstall.in,v 1.1 2006/02/20 20:32:58 hrs Exp $
 
 GSVER=`gs --version`
 GSDIR=%%PREFIX%%/share/ghostscript
@@ -11,5 +11,6 @@ if [ "x$2" != "xDEINSTALL" ]; then
   exit 0
 fi
 
+cp ${FONTMAP} ${FONTMAPTMP}
 sed -e "/^\/MOE.*/d" ${FONTMAP} > ${FONTMAPTMP}
 mv -f ${FONTMAPTMP} ${FONTMAP}
