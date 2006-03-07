@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/mysql40-server/files/mysql-server.sh.in,v 1.1 2005/03/14 10:52:45 ale Exp $
+# $FreeBSD: ports/databases/mysql40-server/files/mysql-server.sh.in,v 1.2 2005/04/11 09:33:11 ale Exp $
 #
 
 # PROVIDE: mysql
-# REQUIRE: NETWORKING SERVERS
-# BEFORE: DAEMON
+# REQUIRE: LOGIN
 # KEYWORD: shutdown
 
 #
