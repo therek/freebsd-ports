@@ -1,19 +1,16 @@
-@comment $FreeBSD: ports/audio/libao/pkg-plist,v 1.15 2004/10/22 16:39:15 naddy Exp $
+@comment $FreeBSD: ports/audio/libao/pkg-plist,v 1.16 2006/02/23 10:34:33 ade Exp $
 include/ao/ao.h
 include/ao/os_types.h
 include/ao/plugin.h
 lib/libao.la
 lib/libao.so
 lib/libao.so.3
-%%ARTS%%lib/ao/plugins-2/libarts.a
 %%ARTS%%lib/ao/plugins-2/libarts.la
 %%ARTS%%lib/ao/plugins-2/libarts.so
 lib/ao/plugins-2/liboss.la
 lib/ao/plugins-2/liboss.so
-%%ESOUND%%lib/ao/plugins-2/libesd.a
 %%ESOUND%%lib/ao/plugins-2/libesd.la
 %%ESOUND%%lib/ao/plugins-2/libesd.so
-%%NAS%%lib/ao/plugins-2/libnas.a
 %%NAS%%lib/ao/plugins-2/libnas.la
 %%NAS%%lib/ao/plugins-2/libnas.so
 libdata/pkgconfig/ao.pc
