@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/xbms/pkg-plist,v 1.2 2003/10/08 20:39:57 naddy Exp $
 bin/xbms
+@unexec if cmp -s %D/etc/xbms.conf %D/etc/xbms.conf.sample; then rm -f %D/etc/xbms.conf; fi
 etc/xbms.conf.sample
-etc/rc.d/xbms.sh.sample
