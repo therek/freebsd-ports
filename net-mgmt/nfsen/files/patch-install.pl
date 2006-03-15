@@ -1,8 +1,14 @@
 
-$FreeBSD$
+$FreeBSD: ports/net-mgmt/nfsen/files/patch-install.pl,v 1.1 2005/09/09 13:48:43 lawrance Exp $
 
 --- install.pl.orig
 +++ install.pl
+@@ -1,4 +1,4 @@
+-#!/usr/bin/perl -I installer-items
++#!%%PERL%% -I %%PREFIX%%/libexec/nfsen
+ #
+ #
+ #  Copyright (c) 2004, SWITCH - Teleinformatikdienste fuer Lehre und Forschung
 @@ -56,33 +56,7 @@
  # Get Perl
  sub GetPerl {
