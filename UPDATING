@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060315:
+  AFFECTS: users of net-im/jabber
+  AUTHOR: garga@FreeBSD.org
+
+  After upgrade jabber-1.x to 1.4.4 you must to rewrite your
+  ${PREFIX}/etc/jabber.xml based on new ${PREFIX}/etc/jabber.xml.dist
+  installed by the port because it's not backward compatible.
+
 20060313:
   AFFECTS: users of multimedia/vcdimager and security/dirmngr
   AUTHOR: nork@FreeBSD.org
@@ -3192,4 +3200,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.294 2006/03/07 18:50:37 hrs Exp $
+$FreeBSD: ports/UPDATING,v 1.295 2006/03/13 03:14:18 nork Exp $
