@@ -1,6 +1,6 @@
 # localized makefile
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2.0-devel/files/Makefile.localized,v 1.9 2005/09/16 10:33:31 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2.0-devel/files/Makefile.localized,v 1.10 2005/12/11 01:02:18 maho Exp $
 ################################################################
 #See solenv/inc/postset.mk for details	
 ################################################################
@@ -99,6 +99,10 @@ LANG_PKGNAME=	${LOCALIZED_LANG}
 .endif
 ################################################################
 .if ${LOCALIZED_LANG} == "eu"
+LANG_PKGNAME=	${LOCALIZED_LANG}
+.endif
+################################################################
+.if ${LOCALIZED_LANG} == "fa"
 LANG_PKGNAME=	${LOCALIZED_LANG}
 .endif
 ################################################################
