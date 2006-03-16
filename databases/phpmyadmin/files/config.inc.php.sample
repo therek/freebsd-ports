@@ -1,10 +1,11 @@
 <?php
-/* $FreeBSD$
+/* $FreeBSD: ports/databases/phpmyadmin/files/config.inc.php.sample,v 1.1 2005/12/05 11:37:27 garga Exp $
  *
  * Skeleton configuration file -- this file is empty on a fresh
  * installaton of phpmyadmin.
  * 
  * Copy any settings you want to override from config.defaults.php
+ * or use scripts/setup.php to generate a basic configuration file.
  * 
  */
 
