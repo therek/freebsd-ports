@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.458 2006/02/22 17:47:56 mnag Exp $
+# $FreeBSD: ports/LEGAL,v 1.459 2006/02/22 18:42:09 garga Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -510,6 +510,7 @@ sharefonts-*		x11-fonts/sharefonts	Shareware.  Cannot be
 						authorization
 shorten-*		audio/shorten		May not be sold.  May not be
 						distributed if modified
+shoutcast-*		audio/shoutcast		No redistribution allowed
 sid-milter-*		mail/sid-milter		May incorporate intellectual
 						property, possible patent issues
 sim*.zip		emulators/sim		No commercial use
