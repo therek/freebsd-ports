@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/est/files/est.sh,v 1.3 2006/01/07 06:29:54 dougb Exp $
+# $FreeBSD: ports/sysutils/est/files/est.sh,v 1.4 2006/02/20 20:47:41 dougb Exp $
 #
 
 # PROVIDE: est
