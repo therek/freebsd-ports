@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.23 2006/01/19 18:57:05 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.24 2006/01/29 07:31:51 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -96,6 +96,11 @@ GNU_ARCH=	ix86
 GNU_ARCH=	${MACHINE_ARCH}
 .endif
 
+GNUSTEP_PREFIX?=	${LOCALBASE}/GNUstep
+.if defined(USE_GNUSTEP_PREFIX)
+PREFIX=		${GNUSTEP_PREFIX}
+NO_MTREE=	yes
+.endif
 SYSTEMDIR=	${GNUSTEP_PREFIX}/System
 SYSMAKEDIR=	${SYSTEMDIR}/Library/Makefiles
 BUNDLEDIR=	${SYSTEMDIR}/Library/Bundles
