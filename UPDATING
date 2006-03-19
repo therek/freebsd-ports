@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060319:
+  AFFECTS: users of graphics/py-exif
+  AUTHOR: lawrance@FreeBSD.org
+
+  The 'exiftool' utility from py-exif has been renamed to
+  'py-exiftool' in order to avoid a conflict with p5-Image-ExifTool.
+
 20060316:
   AFFECTS: users of textproc/docproj[-jadetex]
   AUTHOR: delphij@FreeBSD.org
@@ -3222,4 +3229,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.297 2006/03/15 20:30:52 thierry Exp $
+$FreeBSD: ports/UPDATING,v 1.298 2006/03/17 15:02:50 delphij Exp $
