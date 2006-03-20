@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.937 2006/03/18 18:00:11 garga Exp $
+# $FreeBSD: ports/MOVED,v 1.938 2006/03/20 08:16:55 vd Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2036,7 +2036,6 @@ biology/deft||2006-01-14|Mastersite disappeared
 biology/flip||2006-01-14|Mastersite disappeared
 chinese/MT||2006-01-14|Does not work with MT 3
 chinese/chinput2||2006-01-14|Mastersite disappeared
-chinese/ve||2006-01-14|Mastersite disappeared
 chinese/wangttf||2006-01-14|Mastersite disappeared
 comms/vpb2||2006-01-14|Mastersite disappeared
 deskutils/journal||2006-01-14|Mastersite disappeared
