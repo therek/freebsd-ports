@@ -3,7 +3,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.6 2006/03/15 11:43:57 ahze Exp $
 #    $MCom: ports/www/mozilla/Makefile.common,v 1.20 2006/03/09 00:45:43 ahze Exp $
 
 # This file contains some reusable components for mozilla ports. It's of
@@ -378,7 +378,7 @@ gecko-moz-pis-pre-install:
 post-install: gecko-post-install
 
 gecko-post-install:
-.if !defined(PAKCAGE_BUILDING)
+.if !defined(PACKAGE_BUILDING)
 	@if [ -e ${PKGINSTALL} ] ; then \
 		${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL; \
 	fi
