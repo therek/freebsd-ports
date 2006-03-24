@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/sysutils/boxbackup/pkg-install,v 1.1 2005/02/25 09:09:51 sem Exp $
+# $FreeBSD: ports/sysutils/boxbackup/pkg-install,v 1.2 2005/02/26 06:05:28 sem Exp $
 
 case $2 in
 PRE-INSTALL)
@@ -24,7 +24,7 @@ PRE-INSTALL)
 		echo "You already have a user \"${USER}\", so I will use it."
 	else
 		if pw useradd ${USER} -u ${UID} -g ${GROUP} -h - \
-			-d /nonexistent -c "BoxBackup Store Daemon"
+			-d /nonexistent -c "Box Backup Store Daemon"
 		then
 			echo "Added user \"${USER}\"."
 		else
