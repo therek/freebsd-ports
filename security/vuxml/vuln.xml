@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.978 2006/03/24 13:08:53 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.979 2006/03/24 17:10:23 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -38,7 +38,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>sendmail -- race condition vulnerability</topic>
     <affects>
       <package>
-        <name>sendmail</name>
+	<name>sendmail</name>
 	<range><gt>8.13</gt><lt>8.13.6</lt></range>
       </package>
       <system>
