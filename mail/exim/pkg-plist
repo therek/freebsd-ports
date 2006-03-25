@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/exim/pkg-plist,v 1.42 2005/03/02 21:50:48 krion Exp $
+@comment $FreeBSD: ports/mail/exim/pkg-plist,v 1.43 2006/01/22 05:52:24 edwin Exp $
 %%DAEMON%%@unexec [ ! -f /var/run/exim.pid ] || %%RC_DIR%%/exim%%RC_SUFX%% stop || true
 sbin/exim
 sbin/exim-%%EXIM_VERSION%%
@@ -56,4 +56,4 @@ etc/exim/configure.default
 @unexec rmdir %B 2>/dev/null || true
 %%DAEMON%%%%RCORDER%%@cwd /
 %%DAEMON%%etc/rc.d/exim%%RC_SUFX%%
-@unexec rmdir %%LOGDIR%% 2>/dev/null || true
+@dirrmtry %%LOGDIR%%
