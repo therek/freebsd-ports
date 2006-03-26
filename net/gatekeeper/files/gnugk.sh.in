@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gatekeeper/files/gnugk.sh.sample,v 1.1 2005/06/23 14:46:41 pav Exp $
 #
 # PROVIDE: gnugk
 # REQUIRE: NETWORKING SERVERS
