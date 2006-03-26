@@ -1,8 +1,6 @@
-@comment $FreeBSD: ports/devel/bison2/pkg-plist,v 1.21 2006/01/22 05:52:12 edwin Exp $
+@comment $FreeBSD: ports/devel/bison2/pkg-plist,v 1.22 2006/01/22 22:04:53 ade Exp $
 bin/bison
 bin/bison2
-bin/yacc
-lib/liby.a
 share/aclocal/bison-i18n.m4
 %%DATADIR%%/c.m4
 %%DATADIR%%/c++.m4
