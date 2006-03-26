@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc42/pkg-plist,v 1.81 2006/02/21 21:34:01 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc42/pkg-plist,v 1.82 2006/03/15 22:42:16 gerald Exp $
 bin/c++%%SUFFIX%%
 bin/cpp%%SUFFIX%%
 bin/g++%%SUFFIX%%
@@ -9,6 +9,7 @@ bin/%%GNU_HOST%%-c++%%SUFFIX%%
 bin/%%GNU_HOST%%-g++%%SUFFIX%%
 bin/%%GNU_HOST%%-gcc-%%GCC_VER%%
 bin/%%GNU_HOST%%-gcc%%SUFFIX%%
+etc/rc.d/gcc%%SUFFIX%%.sh
 include/omp.h
 info/gcc%%SUFFIX%%/dir
 %%FORTRAN%%bin/gfortran%%SUFFIX%%
