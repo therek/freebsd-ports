@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/isakmpd/files/isakmpd.sh.in,v 1.1 2006/03/26 11:14:02 simon Exp $
 #
 
 # PROVIDE: ike isakmpd
@@ -8,9 +8,7 @@
 # BEFORE:  DAEMON
 # KEYWORD: nojail
 
-isakmpd_enable="${isakmpd_enable:-NO}"
-
-. /etc/rc.subr
+. %%RC_SUBR%%
 
 name="isakmpd"
 rcvar=`set_rcvar`
@@ -18,4 +16,7 @@ command="%%PREFIX%%/sbin/${name}"
 extra_commands="reload"
 
 load_rc_config $name
+
+: ${isakmpd_enable="NO"}
+
 run_rc_command "$1"
