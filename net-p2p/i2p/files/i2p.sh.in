@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-p2p/i2p/files/i2p.sh.in,v 1.1 2006/02/19 08:24:29 lioux Exp $
+# $FreeBSD: ports/net-p2p/i2p/files/i2p.sh.in,v 1.2 2006/02/20 20:47:35 dougb Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
@@ -15,7 +15,7 @@
 #i2p_user=""
 #
 
-. /etc/rc.subr
+. %%RC_SUBR%%
 
 name="i2p"
 rcvar=`set_rcvar`
