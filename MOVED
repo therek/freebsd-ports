@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.941 2006/03/23 18:17:49 vd Exp $
+# $FreeBSD: ports/MOVED,v 1.942 2006/03/26 23:23:38 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2226,3 +2226,5 @@ sysutils/rubygem-switchtower|sysutils/rubygem-capistrano|2006-03-22|Project rena
 irc/dancer-ircd||2006-03-23|Has expired: mastersite disappeared, no longer maintained by author
 irc/dancer-services||2006-03-23|Has expired: mastersite disappeared, no longer maintained by author
 databases/libgda2|databases/libgda3|Port has renamed to accommodate legacy libgda2
+irc/scrollz-doc||2006-03-27|Has expired: Mastersite disappeared, no longer maintained by author
+japanese/cal.rb||2006-03-27|Has expired: mastersite disappeared, no longer maintained by author
