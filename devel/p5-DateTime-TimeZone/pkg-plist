@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-DateTime-TimeZone/pkg-plist,v 1.10 2005/12/30 16:22:03 mat Exp $
+@comment $FreeBSD: ports/devel/p5-DateTime-TimeZone/pkg-plist,v 1.11 2006/01/22 01:47:27 edwin Exp $
 %%SITE_PERL%%/DateTime/TimeZone.pm
 %%SITE_PERL%%/DateTime/TimeZone/Africa/Abidjan.pm
 %%SITE_PERL%%/DateTime/TimeZone/Africa/Accra.pm
@@ -112,7 +112,9 @@
 %%SITE_PERL%%/DateTime/TimeZone/America/Indiana/Indianapolis.pm
 %%SITE_PERL%%/DateTime/TimeZone/America/Indiana/Knox.pm
 %%SITE_PERL%%/DateTime/TimeZone/America/Indiana/Marengo.pm
+%%SITE_PERL%%/DateTime/TimeZone/America/Indiana/Petersburg.pm
 %%SITE_PERL%%/DateTime/TimeZone/America/Indiana/Vevay.pm
+%%SITE_PERL%%/DateTime/TimeZone/America/Indiana/Vincennes.pm
 %%SITE_PERL%%/DateTime/TimeZone/America/Inuvik.pm
 %%SITE_PERL%%/DateTime/TimeZone/America/Iqaluit.pm
 %%SITE_PERL%%/DateTime/TimeZone/America/Jamaica.pm
@@ -131,6 +133,7 @@
 %%SITE_PERL%%/DateTime/TimeZone/America/Merida.pm
 %%SITE_PERL%%/DateTime/TimeZone/America/Mexico_City.pm
 %%SITE_PERL%%/DateTime/TimeZone/America/Miquelon.pm
+%%SITE_PERL%%/DateTime/TimeZone/America/Moncton.pm
 %%SITE_PERL%%/DateTime/TimeZone/America/Monterrey.pm
 %%SITE_PERL%%/DateTime/TimeZone/America/Montevideo.pm
 %%SITE_PERL%%/DateTime/TimeZone/America/Montreal.pm
