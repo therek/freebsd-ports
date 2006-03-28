@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-Mail-Box/Makefile.man,v 1.1 2006/01/25 12:41:06 tobez Exp $
 
 MAN3+=	Mail::Box-Cookbook.3
 MAN3+=	Mail::Box-Index.3
@@ -20,6 +20,7 @@ MAN3+=	Mail::Box::Locker.3
 MAN3+=	Mail::Box::Locker::DotLock.3
 MAN3+=	Mail::Box::Locker::Flock.3
 MAN3+=	Mail::Box::Locker::Multi.3
+MAN3+=	Mail::Box::Locker::Mutt.3
 MAN3+=	Mail::Box::Locker::NFS.3
 MAN3+=	Mail::Box::Locker::POSIX.3
 MAN3+=	Mail::Box::MH.3
