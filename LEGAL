@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.459 2006/02/22 18:42:09 garga Exp $
+# $FreeBSD: ports/LEGAL,v 1.460 2006/03/18 18:20:58 garga Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -80,9 +80,9 @@ bicom*			archivers/bicom		Contact author personally
 bk-*-x86-freebsd*	devel/bitkeeper		Redistribution is not permitted
 blast-freebsd*		biology/blast		Must be downloaded from vendor site
 boodler-*		audio/boodler		Not for commercial use
-boodler-*		audio/boodler		No commercial use
 Browser*.tar.gz		net/ldapbrowser		No reply from author regarding
 						redistribution licensing
+bsp_upektfmess-*	security/bsp_upektfmess	License prohibits redistribution
 bugseeker2ee*		java/bugseeker		License does not allow
 						redistribution
 bzip-*			archivers/bzip		Some algorithms used may
