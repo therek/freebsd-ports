@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.108 2006/02/23 10:42:21 ade Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.109 2006/03/26 23:20:22 marcus Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.334 2005/10/23 16:37:47 marcus Exp $
 #
@@ -349,7 +349,7 @@ libgtkhtml_USE_GNOME_IMPL=libxslt gnomevfs2 gail
 
 gnomedesktop_LIB_DEPENDS=	gnome-desktop-2.2:${PORTSDIR}/x11/gnomedesktop
 gnomedesktop_DETECT=		${X11BASE}/libdata/pkgconfig/gnome-desktop-2.0.pc
-gnomedesktop_USE_GNOME_IMPL=	libgnomeui
+gnomedesktop_USE_GNOME_IMPL=	libgnomeui gnomedocutils
 gnomedesktop_GNOME_DESKTOP_VERSION=2
 
 libwnck_LIB_DEPENDS=	wnck-1.18:${PORTSDIR}/x11-toolkits/libwnck
