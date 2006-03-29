@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.460 2006/03/18 18:20:58 garga Exp $
+# $FreeBSD: ports/LEGAL,v 1.461 2006/03/28 17:09:24 sem Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -472,7 +472,6 @@ platon*			biology/platon		US$ 5000 for commercial users,
 						(free for academic)
 pmake-*.tar.Z		devel/pmake		Non-commercial use only
 polygraph-*-src.tgz	benchmarks/polygraph	Redistribution is not permitted by license
-polyml/polyml-*		lang/polyml		License agreement required before download
 poseidonCE-*		java/poseidon		Redistribution is not permitted
 ppsmall-*		archivers/ppunpack	No commercial redistribution
 prodosemu.*		emulators/prodosemu	Restrictive copyright on the ROM image
