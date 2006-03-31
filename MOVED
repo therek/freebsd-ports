@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.944 2006/03/29 20:45:17 ahze Exp $
+# $FreeBSD: ports/MOVED,v 1.945 2006/03/31 06:29:36 vd Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2229,3 +2229,4 @@ irc/scrollz-doc||2006-03-27|Has expired: Mastersite disappeared, no longer maint
 japanese/cal.rb||2006-03-27|Has expired: mastersite disappeared, no longer maintained by author
 mail/glacier||2006-03-31|Has expired: mastersite disappeared, no longer maintained by author
 math/xwpl||2006-03-31|Has expired: source not available and no recent binary
+databases/mantis||2006-03-31|Removed due to security problems
