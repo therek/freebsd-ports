@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/mozilla/pkg-install.in,v 1.8 2006/03/15 11:43:57 ahze Exp $
+# $FreeBSD: ports/www/mozilla/pkg-install.in,v 1.9 2006/03/29 18:29:45 ahze Exp $
 #    $MCom: ports/www/mozilla/pkg-install.in,v 1.12 2006/03/09 00:45:43 ahze Exp $
 #
 # Date created:			Mon Nov 29, 2003
@@ -23,7 +23,6 @@ rm -rf ${MOZDIR}/chrome/overlayinfo
 rm -f ${MOZDIR}/chrome/*.rdf
 mkdir -p ${MOZDIR}/chrome/overlayinfo
 rm -f ${MOZDIR}/component.reg
-rm -rf ${MOZDIR}/extensions
 
 cd ${MOZDIR} || exit 1
 if [ -f ${REGXPCOM} ]; then
