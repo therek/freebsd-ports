@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/upclient/files/upclient.sh,v 1.7 2006/01/07 06:29:51 dougb Exp $
+# $FreeBSD: ports/misc/upclient/files/upclient.sh,v 1.8 2006/02/20 20:47:17 dougb Exp $
 #
 # PROVIDE: upclient
 # REQUIRE: DAEMON
