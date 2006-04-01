@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/postgresql-relay/files/postgresql-relay.sh,v 1.1 2004/12/13 05:49:53 edwin Exp $
+# $FreeBSD: ports/databases/postgresql-relay/files/postgresql-relay.sh,v 1.2 2006/02/20 20:46:51 dougb Exp $
 #
 
 # PROVIDE: postgresql-relay
