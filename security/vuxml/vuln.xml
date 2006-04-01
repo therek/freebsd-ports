@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.983 2006/03/29 19:08:51 mnag Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.984 2006/03/30 06:53:30 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -2240,7 +2240,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>mantis</name>
-	<range><gt>0</gt></range>
+	<range><lt>1.0.0rc3</lt></range>
       </package>
     </affects>
     <description>
@@ -2271,7 +2271,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>mantis</name>
-	<range><gt>0</gt></range>
+	<range><lt>1.0.0rc4</lt></range>
       </package>
     </affects>
     <description>
