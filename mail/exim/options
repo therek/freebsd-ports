@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/exim/options,v 1.7 2005/12/02 10:06:31 skv Exp $
+# $FreeBSD: ports/mail/exim/options,v 1.8 2006/03/25 23:12:17 krion Exp $
 #
 # Configurable options for mail/exim. Note that the options listed
 # here are the defaults, so if you want to change them you have to
@@ -142,7 +142,7 @@
 # Link against libwrap to support /etc/hosts.allow access control.
 
 #WITHOUT_EXIMON
-# The eximon monitor, which requires X, will be made a dependency.  
+# The eximon monitor, which requires X, will be made a dependency.
 # Note that using EXIMON will cause XFree86 to be installed
 # if it is not present.
 
