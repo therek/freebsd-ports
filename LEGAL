@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.463 2006/03/31 06:29:36 vd Exp $
+# $FreeBSD: ports/LEGAL,v 1.464 2006/04/01 22:50:55 thierry Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -446,6 +446,8 @@ MRONWnn6.tgz		japanese/Wnn6		You should buy from Omron
 						Software Co., Ltd.
 oneko-*.tar.gz		games/oneko-sakura	Including derivatives from
 						CARDCAPTOR SAKURA
+onion-fec		net/onion-fec		Some uses of FEC
+						technology are patent encumbered
 openssl-*		security/openssl	Crypto; export/import-controlled
 opera-*			www/linux-opera		No redistribution, commercial
 						software
