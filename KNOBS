@@ -1,7 +1,7 @@
 #
 # KNOBS - A list of popular knobs and descriptions
 #
-# $FreeBSD: ports/KNOBS,v 1.7 2006/01/16 03:55:30 adamw Exp $
+# $FreeBSD: ports/KNOBS,v 1.8 2006/01/27 13:37:30 danfe Exp $
 #
 # Rules to adding knobs:
 #
@@ -23,6 +23,7 @@ A52			ATSC A/52 audio decoding (used in most DVDs)
 ARTS			aRts support via the KDE sound daemon
 APACHE2			Use www/apache2 port
 AVIFILE			Adds support for AVI multimedia
+BDB			Adds Berkeley DB Support
 CACA			Libcaca colored ASCII graphics
 CDDB			CDDB support
 CDPARANOIA		Support for cdparanoia CD extraction
