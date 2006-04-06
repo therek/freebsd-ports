@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.953 2006/04/05 19:39:17 thierry Exp $
+# $FreeBSD: ports/MOVED,v 1.954 2006/04/06 06:29:58 vd Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2235,3 +2235,4 @@ net-mgmt/nfdump-devel|net-mgmt/nfdump|2006-04-02|Development port no longer need
 devel/py-twistedXish|net-im/py-twistedWords|2006-04-05|Incorporated into net-im/py-twistedWords
 devel/upp602|devel/upp|2006-04-05|Was created in a bad directory
 mail/mulberry||2006-04-06|Has expired: mastersite disappeared, no longer maintained by author
+textproc/pyenchant|textproc/py-enchant|2006-04-06|Rename to consistency with other Python ports
