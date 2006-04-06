@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.357 2006/03/21 15:53:42 garga Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.358 2006/03/21 22:22:43 garga Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -456,6 +456,21 @@ MASTER_SITE_GNU_ALPHA+=	\
 	ftp://ftp.lublin.pl/mirror/alpha.gnu.org/gnu/%SUBDIR%/ \
 	ftp://ftp.ps.pl/mirrors/alpha.gnu.org/pub/gnu/%SUBDIR%/ \
 	http://public.planetmirror.com/pub/gnu-alpha/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_IDSOFTWARE)
+MASTER_SITE_IDSOFTWARE+=	\
+	ftp://ftp.chg.ru/.3/games/idgames/idstuff/%SUBDIR%/ \
+	ftp://ftp.fasta.fh-dortmund.de/mirror/idstuff/%SUBDIR%/ \
+	ftp://ftp.fu-berlin.de/pc/games/idgames/idstuff/%SUBDIR%/ \
+	http://www.gamers.org/pub/idgames/idstuff/%%SUBDIR%%/ \
+	ftp://ftp.games.skynet.be/spool1/games/ftp.idsoftware.com/%SUBDIR%/ \
+	ftp://ftp.mirror.nl/disk2/idsoftware/idstuff/%SUBDIR%/ \
+	ftp://ftp.nsu.ru/mirrors/ftp.idsoftware.com/idstuff/%SUBDIR%/ \
+	ftp://ftp.ntua.gr/pub/vendors/idgames/idstuff/%SUBDIR%/ \
+	ftp://ftp.omen.net.au/games/idstuff/%SUBDIR%/ \
+	ftp://ftp.sunsite.org.uk/sites/ftp.idsoftware.com/idstuff/%SUBDIR%/ \
+	ftp://ftp.idsoftware.com/idstuff/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_ISC)
