@@ -1,15 +1,9 @@
-@comment $FreeBSD: ports/security/clamav-devel/pkg-plist,v 1.31 2005/09/22 13:17:52 dinoex Exp $
-%%CLAMAV-MILTER%%@unexec [ ! -f %%RUNDIR%%/clamav-milter.pid ] || %%RC_DIR%%/clamav-milter%%RC_SUFX%% stop || true
-@unexec [ ! -f %%RUNDIR%%/freshclam.pid ] || %%RC_DIR%%/clamav-freshclam%%RC_SUFX%% stop || true
-@unexec [ ! -f %%RUNDIR%%/clamd.pid ] || %%RC_DIR%%/clamav-clamd%%RC_SUFX%% stop || true
+@comment $FreeBSD: ports/security/clamav-devel/pkg-plist,v 1.32 2006/02/23 10:38:53 ade Exp $
 bin/clamav-config
 bin/clamscan
 bin/clamdscan
 bin/freshclam
 bin/sigtool
-etc/rc.d/clamav-clamd%%RC_SUFX%%
-etc/rc.d/clamav-freshclam%%RC_SUFX%%
-%%CLAMAV-MILTER%%etc/rc.d/clamav-milter%%RC_SUFX%%
 %%CLAMAV-MILTER%%sbin/clamav-milter
 sbin/clamd
 include/clamav.h

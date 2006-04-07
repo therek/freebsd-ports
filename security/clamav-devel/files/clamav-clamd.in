@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav-devel/files/clamav-clamd.sh,v 1.6 2005/01/12 18:22:56 yar Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: clamd
