@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.68 2005/11/03 17:37:49 hq Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.69 2005/11/08 09:02:51 clement Exp $
 #
 
 .if !defined(Java_Include)
@@ -175,6 +175,8 @@ _JAVA_VENDOR_LIST=		freebsd bsdjava sun blackdown ibm
 
 # Set all meta-information about JDK ports:
 # port location, corresponding JAVA_HOME, JDK version, OS, vendor
+_JAVA_PORT_NATIVE_FREEBSD_JDK_1_5_INFO=		PORT=java/diablo-jdk15			HOME=${LOCALBASE}/diablo-jdk1.5.0 \
+											VERSION=1.5.0	OS=native	VENDOR=freebsd
 _JAVA_PORT_NATIVE_FREEBSD_JDK_1_3_INFO=		PORT=java/diablo-jdk13			HOME=${LOCALBASE}/diablo-jdk1.3.1 \
 											VERSION=1.3.1	OS=native	VENDOR=freebsd
 _JAVA_PORT_NATIVE_BSDJAVA_JDK_1_1_INFO=		PORT=java/jdk11					HOME=${LOCALBASE}/jdk1.1.8 \
@@ -218,12 +220,15 @@ _JAVA_OS_linux=		Linux
 # Enforce preferred Java ports according to OS
 .		if ${ARCH} == "amd64"
 _JAVA_PREFERRED_PORTS+=	JAVA_PORT_NATIVE_BSDJAVA_JDK_1_5
+.		elif ${OSVERSION} >= 500000
+_JAVA_PREFERRED_PORTS+=	JAVA_PORT_NATIVE_FREEBSD_JDK_1_5
 .		else
-_JAVA_PREFERRED_PORTS+=	JAVA_PORT_NATIVE_BSDJAVA_JDK_1_4
+_JAVA_PREFERRED_PORTS+=	JAVA_PORT_NATIVE_BSDJAVA_JDK_1_5
 .		endif
 
 # List all JDK ports
-__JAVA_PORTS_ALL=	JAVA_PORT_NATIVE_BSDJAVA_JDK_1_5 \
+__JAVA_PORTS_ALL=	JAVA_PORT_NATIVE_FREEBSD_JDK_1_5 \
+					JAVA_PORT_NATIVE_BSDJAVA_JDK_1_5 \
 					JAVA_PORT_NATIVE_BSDJAVA_JDK_1_4 \
 					JAVA_PORT_NATIVE_BSDJAVA_JDK_1_3 \
 					JAVA_PORT_NATIVE_FREEBSD_JDK_1_3 \
