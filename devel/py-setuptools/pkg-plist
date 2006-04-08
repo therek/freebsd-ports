@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/devel/py-setuptools/pkg-plist,v 1.2 2006/01/12 00:03:23 tdb Exp $
+@comment $FreeBSD: ports/devel/py-setuptools/pkg-plist,v 1.3 2006/02/18 06:44:24 kuriyama Exp $
 bin/easy_install
+bin/easy_install-%%PYVER%%
 bin/easy_install.py
 %%PYTHON_SITELIBDIR%%/easy-install.pth
 %%PYTHON_SITELIBDIR%%/setuptools.pth
