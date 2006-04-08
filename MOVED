@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.959 2006/04/07 13:02:58 tobez Exp $
+# $FreeBSD: ports/MOVED,v 1.960 2006/04/07 19:32:38 arved Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2242,3 +2242,6 @@ mail/rmoldmail||2006-04-07|Has expired: mastersite disappeared, no longer mainta
 mail/ruby-mime-types||2006-04-07|Has expired: mastersite disappeared, no longer maintained by author
 devel/wftk||2006-04-07|master site disappeared
 textproc/p5-JSON-Syck|textproc/p5-YAML-Syck|2006-04-07|The textproc/p5-YAML-Syck port now includes JSON functionality
+www/linux-flashplugin||2006-04-08|Removed due to license problem
+www/linux-flashplugin6||2006-04-08|Removed due to license problem
+www/linux-flashplugin7||2006-04-08|Removed due to license problem
