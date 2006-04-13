@@ -1,4 +1,5 @@
 @comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.27 2006/02/15 10:46:59 garga Exp $
+etc/MailScanner/country.domains.conf.sample
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
 etc/MailScanner/filetype.rules.conf.sample
