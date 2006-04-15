@@ -1,6 +1,8 @@
-@comment $FreeBSD: ports/textproc/dbacl/pkg-plist,v 1.2 2003/12/31 14:42:13 pav Exp $
+@comment $FreeBSD: ports/textproc/dbacl/pkg-plist,v 1.3 2004/07/22 01:32:20 ijliao Exp $
 bin/bayesol
 bin/dbacl
+bin/hmine
+bin/hypex
 bin/mailcross
 bin/mailfoot
 bin/mailinspect
