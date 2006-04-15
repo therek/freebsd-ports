@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/nagios/files/nagios.sh.in,v 1.1 2006/01/09 00:54:01 edwin Exp $
+# $FreeBSD: ports/net-mgmt/nagios/files/nagios.sh.in,v 1.2 2006/01/17 10:39:58 tdb Exp $
 #
 
 #
@@ -25,6 +25,7 @@ nagios_user="%%NAGIOSUSER%%"
 start_precmd="start_precmd"
 stop_postcmd="stop_postcmd"
 restart_precmd="nagios_checkconfig"
+reload_precmd="nagios_checkconfig"
 sig_reload=HUP
 
 [ -z "${nagios_enable}" ]       && nagios_enable="NO"
