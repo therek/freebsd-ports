@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1002 2006/04/10 19:11:14 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1003 2006/04/16 01:52:16 mnag Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -1847,7 +1847,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>heartbeat</name>
-	<range><ge>0</ge></range>
+	<range><lt>1.2.4</lt></range>
       </package>
     </affects>
     <description>
@@ -1867,6 +1867,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2005-07-12</discovery>
       <entry>2006-02-16</entry>
+      <modified>2006-04-16</modified>
     </dates>
   </vuln>
 
