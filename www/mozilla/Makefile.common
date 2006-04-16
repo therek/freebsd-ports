@@ -3,7 +3,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.10 2006/03/30 16:42:25 ahze Exp $
+# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.11 2006/04/16 16:06:54 ahze Exp $
 #    $MCom: ports/www/mozilla/Makefile.common,v 1.20 2006/03/09 00:45:43 ahze Exp $
 
 # This file contains some reusable components for mozilla ports. It's of
@@ -94,8 +94,9 @@ MOZILLA_PLIST_DIRS?=	bin include lib share/idl
 
 PKGINSTALL?=	${WRKDIR}/pkg-install
 PKGDEINSTALL?=	${WRKDIR}/pkg-deinstall
-PKGINSTALL_INC?=	${MASTERDIR}/pkg-install.in
-PKGDEINSTALL_INC?=	${MASTERDIR}/pkg-deinstall.in
+MASTER_MOZDIR?=	${.CURDIR}/../../www/mozilla
+PKGINSTALL_INC?=	${MASTER_MOZDIR}/pkg-install.in
+PKGDEINSTALL_INC?=	${MASTER_MOZDIR}/pkg-deinstall.in
 
 EXTRACT_AFTER_ARGS?=	| ${TAR} -xf - --exclude */CVS/*	\
 			--exclude */macbuild/*			\
