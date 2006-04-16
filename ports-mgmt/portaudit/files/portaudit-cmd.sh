@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit/files/portaudit-cmd.sh,v 1.11 2004/09/03 20:30:54 eik Exp $
+# $FreeBSD: ports/security/portaudit/files/portaudit-cmd.sh,v 1.12 2005/07/03 20:31:00 simon Exp $
 #
 
 portaudit_confs()
@@ -131,6 +131,7 @@ audit_installed()
 	local osversion=`sysctl -n kern.osreldate`
 
 	fixedre=`echo -n $portaudit_fixed | tr -c '[:alnum:]- \t\n' 'x' | tr -s ' \t\n' '|'`
+	installedre=`$pkg_info -aE | sed -e 's/-[^-]*$//g' | paste -s -d '|' -`
 
 	extract_auditfile | awk -F\| "$PRINTAFFECTED_AWK"'
 		BEGIN { vul=0; fixedre="'"$fixedre"'" }
@@ -143,6 +144,9 @@ audit_installed()
 					"To disable this check add the uuid to \`portaudit_fixed'"'"' in %%PREFIX%%/etc/portaudit.conf")
 			}
 			next
+		}
+		$1 ~ /^[^{}*?]*[<=>!]/ {
+			if ($1 !~ "^('"$installedre"')[<=>!]") next;
 		}
 		{
 			cmd="'"$pkg_info"' -E \"" $1 "\""
