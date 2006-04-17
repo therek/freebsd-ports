@@ -3,7 +3,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.11 2006/04/16 16:06:54 ahze Exp $
+# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.12 2006/04/16 16:13:50 ahze Exp $
 #    $MCom: ports/www/mozilla/Makefile.common,v 1.20 2006/03/09 00:45:43 ahze Exp $
 
 # This file contains some reusable components for mozilla ports. It's of
@@ -67,6 +67,7 @@ MAINTAINER?=	gnome@FreeBSD.org
 
 MOZILLA?=	${PORTNAME}
 MOZILLA_VER?=	${PORTVERSION}
+MOZILLA_BIN?=	${PORTNAME}-bin
 MOZ_RPATH?=	${MOZILLA}
 USE_GNOME+=	gtk20 libidl desktopfileutils
 USE_ICONV=	yes
@@ -236,6 +237,7 @@ MOZ_SED_ARGS+=	-e's|@CPPFLAGS@|${CPPFLAGS}|g'		\
 		-e 's|%%PERL%%|${PERL5}|g'		\
 		-e 's|%%KRB5_HOME%%|${KRB5_HOME}|g'	\
 		-e 's|%%MOZILLA%%|${MOZILLA}|g'		\
+		-e 's|%%MOZILLA_BIN%%|${MOZILLA_BIN}|g'	\
 		-e 's|%%MOZDIR%%|${PREFIX}/lib/${MOZILLA}|g'
 MOZCONFIG_SED?= ${SED} ${MOZ_SED_ARGS}
 

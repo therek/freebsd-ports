@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/mozilla/pkg-install.in,v 1.9 2006/03/29 18:29:45 ahze Exp $
+# $FreeBSD: ports/www/mozilla/pkg-install.in,v 1.10 2006/03/31 00:04:24 ahze Exp $
 #    $MCom: ports/www/mozilla/pkg-install.in,v 1.12 2006/03/09 00:45:43 ahze Exp $
 #
 # Date created:			Mon Nov 29, 2003
@@ -14,7 +14,7 @@ PATH=/bin:/usr/bin
 [ "x$2" != "xPOST-INSTALL" ] && exit 0
 
 MOZDIR=%%MOZDIR%%
-MOZBIN=${MOZDIR}/%%MOZILLA%%-bin
+MOZBIN=${MOZDIR}/%%MOZILLA_BIN%%
 REGXPCOM=${MOZDIR}/regxpcom
 REGCHROME=${MOZDIR}/regchrome
 
