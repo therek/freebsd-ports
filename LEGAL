@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.466 2006/04/06 15:29:52 glewis Exp $
+# $FreeBSD: ports/LEGAL,v 1.467 2006/04/08 01:20:33 hrs Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -664,8 +664,6 @@ zh-moettf/*		chinese/moettf		Contact Taiwan Ministry of
 NTU*.TTF		chinese/ntuttf		No commercial use
 ztelnet-*		net/ztelnet		zmodem code has restrictive
 						copyright
-gngeo-*                 emulators/gngeo         The Neo-Geo BIOS
-						can not be redistributed
 twelf-*			lang/twelf		License is currently
 						indeterminate
 pfpro-*			finance/pfpro		Only available for customers
