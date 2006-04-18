@@ -1,8 +1,11 @@
-@comment $FreeBSD: ports/x11/xloadimage/pkg-plist,v 1.8 2001/06/07 00:15:37 jmz Exp $
 bin/uufilter
 bin/xloadimage
 bin/xsetbg
 bin/xview
 etc/xloadimagerc
-share/examples/xloadimage/xloadimagerc
-@dirrm share/examples/xloadimage
+man/man1/uufilter.1.gz
+man/man1/xloadimage.1.gz
+man/man1/xsetbg.1.gz
+man/man1/xview.1.gz
+%%EXAMPLESDIR%%/xloadimagerc
+@dirrm %%EXAMPLESDIR%%
