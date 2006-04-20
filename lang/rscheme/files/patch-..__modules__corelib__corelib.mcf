@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/rscheme/files/patch-..::modules::corelib::corelib.mcf,v 1.2 2006/04/14 21:54:10 anray Exp $
 
 --- ../modules/corelib/corelib.mcf.orig	Wed Mar 24 22:38:27 2004
 +++ ../modules/corelib/corelib.mcf	Fri Apr 14 18:26:06 2006

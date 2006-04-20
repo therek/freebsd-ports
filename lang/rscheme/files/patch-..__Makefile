@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/lang/rscheme/files/patch-..::Makefile,v 1.1 2001/07/31 10:06:38 sobomax Exp $
+$FreeBSD: ports/lang/rscheme/files/patch-..::Makefile,v 1.2 2003/04/04 20:55:35 nork Exp $
 
 --- ../Makefile.orig	Thu Mar 18 17:40:45 1999
 +++ ../Makefile	Tue Jul 31 10:48:35 2001

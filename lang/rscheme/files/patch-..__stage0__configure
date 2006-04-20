@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/rscheme/files/patch-..::stage0::configure,v 1.2 2006/02/10 15:07:06 anray Exp $
 
 --- ../stage0/configure.orig	Mon Jun 13 17:00:47 2005
 +++ ../stage0/configure	Fri Feb 10 14:19:41 2006

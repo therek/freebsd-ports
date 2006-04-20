@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/rscheme/files/patch-..::handc::rshell::shell.c,v 1.1 2001/07/31 10:06:38 sobomax Exp $
 
 --- ../handc/rshell/shell.c	2001/07/31 08:24:33	1.1
 +++ ../handc/rshell/shell.c	2001/07/31 08:25:25

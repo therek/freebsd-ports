@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/rscheme/files/patch-..::stage0::corelib::string.c,v 1.1 2001/07/31 10:06:38 sobomax Exp $
 
 --- ../stage0/corelib/string.c	2001/07/31 07:20:17	1.1
 +++ ../stage0/corelib/string.c	2001/07/31 07:21:08

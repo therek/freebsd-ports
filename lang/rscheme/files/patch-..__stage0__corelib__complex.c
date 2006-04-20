@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/rscheme/files/patch-..::stage0::corelib::complex.c,v 1.1 2006/04/14 21:54:10 anray Exp $
 
 --- ../stage0/corelib/complex.c.orig	Fri Apr 14 18:22:39 2006
 +++ ../stage0/corelib/complex.c	Fri Apr 14 18:22:51 2006

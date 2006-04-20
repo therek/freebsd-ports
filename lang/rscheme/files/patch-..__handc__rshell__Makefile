@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/rscheme/files/patch-..::handc::rshell::Makefile,v 1.1 2001/07/31 10:06:38 sobomax Exp $
 
 --- ../handc/rshell/Makefile.orig	Thu Mar 18 17:43:41 1999
 +++ ../handc/rshell/Makefile	Tue Jul 31 12:04:08 2001

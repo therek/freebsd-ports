@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/rscheme/files/patch-..::handc::corelib::basemath.c,v 1.1 2006/02/10 15:07:06 anray Exp $
 
 --- ../handc/runtime/basemath.c	Fri Feb 10 14:51:07 2006
 +++ ../handc/runtime/basemath.c	Fri Feb 10 14:57:02 2006

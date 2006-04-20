@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/rscheme/files/patch-..::handc::runtime::smemory.c,v 1.1 2006/02/10 15:07:06 anray Exp $
 
 --- ../handc/runtime/smemory.c	Sat May 21 05:10:48 2005
 +++ ../handc/runtime/smemory.c	Fri Feb 10 14:41:56 2006
