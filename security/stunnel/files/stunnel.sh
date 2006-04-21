@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/stunnel/files/stunnel.sh,v 1.5 2005/05/12 11:36:41 roam Exp $
 #
 
 # PROVIDE: stunnel
@@ -17,7 +17,7 @@
 #				that stunnel will use during the automated
 #				start-up.
 # stunnel_pidfile (str):	Default "!!PREFIX!!/var/stunnel/stunnel.pid"
-#				Set it to the value of 'pidfile' in
+#				Set it to the value of 'pid' in
 #				the stunnel.conf file.
 #
 
