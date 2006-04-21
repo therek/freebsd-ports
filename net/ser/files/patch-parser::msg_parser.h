@@ -1,16 +1,8 @@
 
-$FreeBSD$
+$FreeBSD: ports/net/ser/files/patch-parser::msg_parser.h,v 1.1 2006/04/21 06:30:43 sobomax Exp $
 
 --- parser/msg_parser.h.orig
 +++ parser/msg_parser.h
-@@ -193,6 +193,7 @@
- 	struct hdr_field* accept_disposition;
- 	struct hdr_field* diversion;
- 	struct hdr_field* rpid;
-+	struct hdr_field* server;
- 
- 	char* eoh;        /* pointer to the end of header (if found) or null */
- 	char* unparsed;   /* here we stopped parsing*/
 @@ -287,7 +288,11 @@
  	
  	/* topmost Via is part of transaction key as well ! */
