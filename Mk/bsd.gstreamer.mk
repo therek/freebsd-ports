@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.12 2005/09/15 20:22:08 kwm Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.13 2006/01/21 17:37:01 krion Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -123,7 +123,7 @@ nas_PLIST=	libgstnassink
 
 ogg_DEPENDS=	audio/gstreamer-plugins-ogg
 
-polypaudio_DEPENDS=	audio/gstreamer-plugins-polypaudio
+polypaudio_DEPENDS=	audio/gstreamer-plugins-polyp
 polypaudio_PLIST=	libpolypaudio
 
 shout_DEPENDS=	audio/gstreamer-plugins-shout
