@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-wm/ratpoison/pkg-plist,v 1.6 2004/11/24 17:32:29 hq Exp $
+@comment $FreeBSD: ports/x11-wm/ratpoison/pkg-plist,v 1.7 2004/12/20 14:40:31 hq Exp $
 bin/ratpoison
 bin/rpws
 %%PORTDOCS%%%%DATADIR%%/allwindows.sh
@@ -8,6 +8,8 @@ bin/rpws
 %%PORTDOCS%%%%DATADIR%%/rpshowall.sh
 %%PORTDOCS%%%%DATADIR%%/rpws
 %%PORTDOCS%%%%DATADIR%%/split.sh
+%%PORTDOCS%%%%DATADIR%%/sloppy.c
+%%PORTDOCS%%%%DATADIR%%/unrat.c
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/COPYING
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
