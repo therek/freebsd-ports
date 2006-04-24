@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.967 2006/04/17 07:19:38 vd Exp $
+# $FreeBSD: ports/MOVED,v 1.968 2006/04/22 03:41:38 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2255,3 +2255,4 @@ security/nessus-libnasl-devel||2006-04-17|Has expired: Development version of ne
 security/nessus-libraries-devel||2006-04-17|Has expired: Development version of nessus is no longer available in sources
 security/nessus-plugins-devel||2006-04-17|Has expired: Development version of nessus is no longer available in sources
 audio/gstreamer-plugins-polypaudio|audio/gstreamer-plugins-polyp|2006-04-21|The port name has been changed to match its correct name
+devel/cvspadm||2006-04-24|Development ceased, please use devel/cvsdadm
