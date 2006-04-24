@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.970 2006/04/24 10:23:26 garga Exp $
+# $FreeBSD: ports/MOVED,v 1.971 2006/04/24 11:02:46 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2258,3 +2258,5 @@ audio/gstreamer-plugins-polypaudio|audio/gstreamer-plugins-polyp|2006-04-21|The 
 devel/cvspadm||2006-04-24|Development ceased, please use devel/cvsdadm
 editors/jed-devel||2006-04-24|No more development version for a while, please, use editors/jed
 sysutils/gdesklets-multitail||2006-04-24|Project is too long dead
+java/diablo-jdk13||2006-04-24|Removed due to security problems and no longer being distributed
+java/diablo-jre13||2006-04-24|Removed due to security problems and no longer being distributed
