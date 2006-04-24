@@ -1,10 +1,10 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2.0-devel/files/Makefile.knobs,v 1.26 2006/04/17 07:24:29 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2.0-devel/files/Makefile.knobs,v 1.27 2006/04/24 11:48:16 maho Exp $
 
 .if !defined(WITH_GNUGCJ)
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home=${LOCALBASE}/ant
-else
+.else
 CONFIGURE_ARGS+=	--with-jdk-home="${WRKDIR}/gnugcj" --with-java=gij --with-ant-home="${WRKDIR}/apache-ant-${ANT_VERSION}"
 .endif
 
