@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1015 2006/04/23 14:14:52 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1016 2006/04/23 21:46:34 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -6786,11 +6786,14 @@ Note:  Please add new entries to the beginning of this file.
 	<range><lt>1.2.3</lt></range>
       </package>
       <package>
+	<name>paraview</name>
+	<range><lt>2.4.3</lt></range>
+      </package>
+      <package>
 	<name>fractorama</name>
 	<name>iv</name>
 	<name>ja-iv</name>
 	<name>ja-libimg</name>
-	<name>paraview</name>
 	<range><gt>0</gt></range>
       </package>
     </affects>
@@ -14770,11 +14773,14 @@ Note:  Please add new entries to the beginning of this file.
 	<range><lt>1.2.3</lt></range>
       </package>
       <package>
+	<name>paraview</name>
+	<range><lt>2.4.3</lt></range>
+      </package>
+      <package>
 	<name>fractorama</name>
 	<name>iv</name>
 	<name>ja-iv</name>
 	<name>ja-libimg</name>
-	<name>paraview</name>
 	<range><gt>0</gt></range>
       </package>
     </affects>
@@ -15651,11 +15657,14 @@ http_access deny Gopher</pre>
 	<range><lt>1.2.3</lt></range>
       </package>
       <package>
+	<name>paraview</name>
+	<range><lt>2.4.3</lt></range>
+      </package>
+      <package>
 	<name>fractorama</name>
 	<name>iv</name>
 	<name>ja-iv</name>
 	<name>ja-libimg</name>
-	<name>paraview</name>
 	<range><gt>0</gt></range>
       </package>
     </affects>
@@ -19032,11 +19041,14 @@ http_access deny Gopher</pre>
 	<range><lt>1.2.3</lt></range>
       </package>
       <package>
+	<name>paraview</name>
+	<range><lt>2.4.3</lt></range>
+      </package>
+      <package>
 	<name>fractorama</name>
 	<name>iv</name>
 	<name>ja-iv</name>
 	<name>ja-libimg</name>
-	<name>paraview</name>
 	<range><gt>0</gt></range>
       </package>
     </affects>
@@ -19141,11 +19153,14 @@ http_access deny Gopher</pre>
 	<range><lt>1.2.3</lt></range>
       </package>
       <package>
+	<name>paraview</name>
+	<range><lt>2.4.3</lt></range>
+      </package>
+      <package>
 	<name>fractorama</name>
 	<name>iv</name>
 	<name>ja-iv</name>
 	<name>ja-libimg</name>
-	<name>paraview</name>
 	<range><gt>0</gt></range>
       </package>
     </affects>
