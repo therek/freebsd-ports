@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/security/clamav-devel/pkg-plist,v 1.32 2006/02/23 10:38:53 ade Exp $
+@comment $FreeBSD: ports/security/clamav-devel/pkg-plist,v 1.33 2006/04/07 10:10:20 garga Exp $
 bin/clamav-config
+bin/clamconf
 bin/clamscan
 bin/clamdscan
 bin/freshclam
