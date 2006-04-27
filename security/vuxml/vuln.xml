@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1021 2006/04/27 03:48:32 mnag Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1022 2006/04/27 04:30:53 mnag Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -509,6 +509,7 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
 	<name>seamonkey</name>
+	<name>linux-seamonkey</name>
 	<range><lt>1.0.1</lt></range>
       </package>
       <package>
@@ -609,7 +610,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2006-04-13</discovery>
       <entry>2006-04-16</entry>
-      <modified>2006-04-18</modified>
+      <modified>2006-04-27</modified>
     </dates>
   </vuln>
 
