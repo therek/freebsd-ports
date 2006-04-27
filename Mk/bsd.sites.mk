@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.361 2006/04/07 13:56:37 garga Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.362 2006/04/20 19:37:17 erwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -595,6 +595,27 @@ MASTER_SITE_KDE+=	\
 	http://ftp.chg.ru/pub/kde/%SUBDIR%/ \
 	http://www.mirrorservice.org/sites/ftp.kde.org/pub/kde/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/kde/&,}
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_MOZDEV)
+MASTER_SITE_MOZDEV+= \
+	http://ftp.scarlet.be/pub/mozdev/%SUBDIR%/ \
+	http://ftp.rz.tu-bs.de/pub/mirror/downloads.mozdev.org/%SUBDIR%/ \
+	http://mozdev.dns4.com/%SUBDIR%/ \
+	http://ftp.ntua.gr/pub/www/mozdev/%SUBDIR%/ \
+	http://ftp.heanet.ie/pub/mozdev/%SUBDIR%/ \
+	http://mozdev.oregonstate.edu/%SUBDIR%/ \
+	http://mozdev.xmundo.net/%SUBDIR%/ \
+	http://mirror.meisterwerk.net/rmozdev/%SUBDIR%/ \
+	http://ftp.ntua.gr/pub/www/mozdev/%SUBDIR%/ \
+	http://www.devlib.org/mozdev/%SUBDIR%/ \
+	http://mozdev.archive.hk/%SUBDIR%/ \
+	http://ftp.iasi.roedu.net/mirrors/mozdev.org/%SUBDIR%/ \
+	ftp://mozdev.secsup.org/pub/software/mozdev/%SUBDIR%/ \
+	ftp://ftp.heanet.ie/pub/mozdev/%SUBDIR%/ \
+	ftp://ftp.iasi.roedu.net/pub/mirrors/mozdev.org/%SUBDIR%/ \
+	http://mirrors.ibiblio.org/pub/mirrors/mozdev.org/%SUBDIR%/ \
+	http://ftp.osuosl.org/pub/mozdev/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_MOZILLA)
