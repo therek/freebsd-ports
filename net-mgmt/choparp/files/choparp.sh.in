@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/choparp/files/choparp.sh.in,v 1.1 2006/04/08 06:34:33 nork Exp $
 #
 # PROVIDE: choparp
 # REQUIRE: LOGIN
@@ -8,7 +8,7 @@
 choparp_enable=${choparp_enable-"NO"}
 choparp_iface=${choparp_iface-}
 choparp_macaddr=${choparp_macaddr-"auto"}
-choparp_network=${choparp_interface-}
+choparp_network=${choparp_network-}
 
 . %%RC_SUBR%%
 
