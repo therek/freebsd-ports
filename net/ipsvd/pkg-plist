@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/ipsvd/pkg-plist,v 1.3 2003/10/23 10:21:43 sergei Exp $
+@comment $FreeBSD: ports/net/ipsvd/pkg-plist,v 1.4 2004/06/04 21:41:24 sergei Exp $
 sbin/ipsvd-cdb
 sbin/tcpsvd
 sbin/udpsvd
@@ -13,6 +13,7 @@ sbin/udpsvd
 %%PORTDOCS%%%%DOCSDIR%%/ipsvd-instruct.5.html
 %%PORTDOCS%%%%DOCSDIR%%/ipsvd.7.html
 %%PORTDOCS%%%%DOCSDIR%%/sslio.8.html
+%%PORTDOCS%%%%DOCSDIR%%/sslsvd.8.html
 %%PORTDOCS%%%%DOCSDIR%%/tcpsvd.8.html
 %%PORTDOCS%%%%DOCSDIR%%/udpsvd.8.html
 %%PORTDOCS%%%%DOCSDIR%%/upgrade.html
