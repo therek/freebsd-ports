@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.528 2006/02/23 10:43:00 ade Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.529 2006/02/23 15:37:20 ade Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1379,7 +1379,7 @@ PERL=		${LOCALBASE}/bin/perl
 .include "${PORTSDIR}/Mk/bsd.gnome.mk"
 .endif
 
-.if defined(WANT_GSTREAMER) || defined(USE_GSTREAMER)
+.if defined(WANT_GSTREAMER) || defined(USE_GSTREAMER) || defined(USE_GSTREAMER80)
 .include "${PORTSDIR}/Mk/bsd.gstreamer.mk"
 .endif
 
@@ -1792,7 +1792,7 @@ RUN_DEPENDS+=	${PERL5}:${PORTSDIR}/lang/${PERL_PORT}
 .include "${PORTSDIR}/Mk/bsd.database.mk"
 .endif
 
-.if defined(WANT_GSTREAMER) || defined(USE_GSTREAMER)
+.if defined(WANT_GSTREAMER) || defined(USE_GSTREAMER) || defined(USE_GSTREAMER80)
 .include "${PORTSDIR}/Mk/bsd.gstreamer.mk"
 .endif
 
