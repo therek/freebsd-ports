@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.111 2006/04/30 00:58:13 marcus Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.370 2006/04/27 01:40:22 ahze Exp $
 #
@@ -113,7 +113,7 @@ gnomeprefix_CONFIGURE_ARGS=--localstatedir=${GNOME_LOCALSTATEDIR} \
 			   --with-gconf-source=${GCONF_CONFIG_SOURCE}
 gnomeprefix_USE_GNOME_IMPL=gnomehier
 
-gnometarget_CONFIGURE_TARGET=--build=${ARCH}-portbld-freebsd${OSREL}
+gnometarget_CONFIGURE_TARGET=--build=${MACHINE_ARCH}-portbld-freebsd${OSREL}
 
 ESD_CONFIG?=		${LOCALBASE}/bin/esd-config
 esound_LIB_DEPENDS=	esd.2:${PORTSDIR}/audio/esound
@@ -661,7 +661,8 @@ PATCH_DEPENDS+=	${${component}_PATCH_DEPENDS}
 FETCH_DEPENDS+=	${${component}_FETCH_DEPENDS}
 EXTRACT_DEPENDS+=${${component}_EXTRACT_DEPENDS}
 BUILD_DEPENDS+=	${${component}_BUILD_DEPENDS}
-#######################################################
+LIB_DEPENDS+=   ${${component}_LIB_DEPENDS}
+RUN_DEPENDS+=   ${${component}_RUN_DEPENDS}
 
 CONFIGURE_ARGS+=${${component}_CONFIGURE_ARGS}
 CONFIGURE_ENV+=	${${component}_CONFIGURE_ENV}
