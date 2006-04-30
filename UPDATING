@@ -15,8 +15,8 @@ upgrades.
   Instead, use the following simple recipe:
 
 pkgdb -Ff
-portupgrade -f howl -o net/avahi
-portupgrade -f xscreensaver-gnome -o x11/gnome-screensaver
+portupgrade -o net/avahi -f howl
+portupgrade -o x11/gnome-screensaver -f xscreensaver-gnome
 portupgrade -a
 
 20060425:
@@ -3412,4 +3412,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.312 2006/04/25 17:50:18 garga Exp $
+$FreeBSD: ports/UPDATING,v 1.313 2006/04/30 00:51:26 marcus Exp $
