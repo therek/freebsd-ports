@@ -2,7 +2,7 @@
 # Date created:		31 May 2002
 # Whom:			dinoex
 #
-# $FreeBSD: ports/Mk/bsd.openssl.mk,v 1.27 2005/11/08 08:44:33 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.openssl.mk,v 1.28 2005/11/11 21:58:51 dinoex Exp $
 #
 # Use of 'USE_OPENSSL=yes' includes this Makefile after bsd.ports.pre.mk
 #
@@ -52,6 +52,7 @@ WITH_OPENSSL_STABLE=yes
 	!defined(WITH_OPENSSL_BETA) && \
 	!defined(WITH_OPENSSL_PORT) && \
 	!defined(WITH_OPENSSL_STABLE) && \
+	!defined(OPENSSL_OVERWRITE_BASE) && \
 	!exists(${LOCALBASE}/lib/libcrypto.so) && \
 	exists(/usr/include/openssl/opensslv.h)
 WITH_OPENSSL_BASE=yes
