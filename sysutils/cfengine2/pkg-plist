@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/sysutils/cfengine2/pkg-plist,v 1.13 2005/10/07 06:58:31 sergei Exp $
+@comment $FreeBSD: ports/sysutils/cfengine2/pkg-plist,v 1.14 2005/11/08 16:37:09 sergei Exp $
 sbin/cfagent
+sbin/cfconvert
 sbin/cfdoc
 sbin/cfenvd
 sbin/cfenvgraph
