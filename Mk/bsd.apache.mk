@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.8 2006/01/15 18:58:37 clement Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.9 2006/02/23 20:46:10 clement Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -97,7 +97,10 @@ CONFIGURE_ARGS+=	--disable-authn-file --disable-authn-default \
 			--disable-autoindex --disable-asis --disable-cgid \
 			--disable-cgi --disable-negotiation --disable-dir \
 			--disable-imagemap --disable-actions --disable-userdir \
-			--disable-alias --disable-filter
+			--disable-alias --disable-filter \
+			--disable-proxy --disable-proxy-connect \
+			--disable-proxy-ftp --disable-proxy-http \
+			--disable-proxy-ajp --disable-proxy-balancer
 .elif ${USE_APACHE} == common22
 CONFIGURE_ARGS+=	--disable-authn-file --disable-authn-default \
 			--disable-authz-host --disable-authz-groupfile \
@@ -108,7 +111,10 @@ CONFIGURE_ARGS+=	--disable-authn-file --disable-authn-default \
 			--disable-autoindex --disable-asis --disable-cgid \
 			--disable-cgi --disable-negotiation --disable-dir \
 			--disable-imagemap --disable-actions --disable-userdir \
-			--disable-alias --disable-filter
+			--disable-alias --disable-filter \
+			--disable-proxy --disable-proxy-connect \
+			--disable-proxy-ftp --disable-proxy-http \
+			--disable-proxy-ajp --disable-proxy-balancer
 .endif
 
 .if defined(WITH_MODULES)
