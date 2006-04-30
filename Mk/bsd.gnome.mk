@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.111 2006/04/30 00:58:13 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.112 2006/04/30 04:41:46 marcus Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.370 2006/04/27 01:40:22 ahze Exp $
 #
@@ -661,8 +661,8 @@ PATCH_DEPENDS+=	${${component}_PATCH_DEPENDS}
 FETCH_DEPENDS+=	${${component}_FETCH_DEPENDS}
 EXTRACT_DEPENDS+=${${component}_EXTRACT_DEPENDS}
 BUILD_DEPENDS+=	${${component}_BUILD_DEPENDS}
-LIB_DEPENDS+=   ${${component}_LIB_DEPENDS}
-RUN_DEPENDS+=   ${${component}_RUN_DEPENDS}
+LIB_DEPENDS+=	${${component}_LIB_DEPENDS}
+RUN_DEPENDS+=	${${component}_RUN_DEPENDS}
 
 CONFIGURE_ARGS+=${${component}_CONFIGURE_ARGS}
 CONFIGURE_ENV+=	${${component}_CONFIGURE_ENV}
