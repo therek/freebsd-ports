@@ -1,13 +1,13 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.tcl.mk,v 1.1 2005/11/08 09:02:51 clement Exp $
+# $FreeBSD: ports/Mk/bsd.tcl.mk,v 1.2 2006/01/21 17:37:01 krion Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Tcl_Pre_Include)
 
 Tcl_Pre_Include=		bsd.tcl.mk
-Tcl_Include_MAINTAINER=	vsevolod@FreeBSD.org
+Tcl_Include_MAINTAINER=	ports@FreeBSD.org
 
 # USE_TCL:		Depend on tcl to run. In case of incompatible APIs of different 
 #				TCL versions the version can be specified directly. If version
@@ -33,15 +33,13 @@ Tcl_Include_MAINTAINER=	vsevolod@FreeBSD.org
 #
 # WISH:			Path to wish executable respecting tk version
 ##
-# PATCH_TCL_SCRIPTS: 	List of tcl scripts that need to be patched to replace tclsh
-#				calls to tclsh${TK_VER} calls. Note that this implies USE_REINPLACE
-#				as REINPLACE_CMD is used for patching. Also note that post-patch
-#				target is used.
+# PATCH_TCL_SCRIPTS: 	List of tcl scripts that need to be patched to replace
+# 				tclsh calls with tclsh${TK_VER} calls. Also note that
+# 				post-patch target is used.
 #
-# PATCH_TK_SCRIPTS: 	List of tcl scripts that need to be patched to replace wish
-#				calls to wish${TK_VER} calls. Note that this implies USE_REINPLACE
-#				as REINPLACE_CMD is used for patching. Also note that post-patch
-#				target is used.
+# PATCH_TK_SCRIPTS: 	List of tcl scripts that need to be patched to replace
+# 				wish calls with wish${TK_VER} calls. Also note that
+# 				post-patch target is used.
 
 .if defined(USE_TCL) || defined(USE_TCL_BUILD)
 
@@ -115,10 +113,6 @@ WISH=			${LOCALBASE}/bin/wish${TK_VER}
 IGNORE=		Unknown TK version specified: ${USE_TK}
 .endif
 .endif # defined(USE_TK)
-
-.if defined(PATCH_TCL_SCRIPTS) || defined (PATCH_TK_SCRIPTS)
-USE_REINPLACE=	yes
-.endif
 
 .endif # !defined(_POSTMKINCLUDED) && !defined(Tcl_Pre_Include)
 
