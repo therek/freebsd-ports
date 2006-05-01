@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.77 2006/02/23 10:39:34 ade Exp $
+@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.78 2006/05/01 09:24:55 clement Exp $
 @exec mkdir -p %D/etc/apache2 2> /dev/null
 @unexec if cmp -s %D/etc/apache2/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache2/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd-std.conf
@@ -208,6 +208,7 @@ sbin/htdbm
 sbin/htdigest
 sbin/htpasswd
 sbin/httpd
+sbin/httxt2dbm
 sbin/logresolve
 sbin/rotatelogs
 %%MOD_SUEXEC%%sbin/suexec
