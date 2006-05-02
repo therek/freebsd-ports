@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/maildrop/pkg-plist,v 1.7 2003/12/23 16:33:36 sergei Exp $
+@comment $FreeBSD: ports/mail/maildrop/pkg-plist,v 1.8 2005/02/21 11:31:54 sergei Exp $
 bin/deliverquota
 bin/lockmail
 bin/mailbot
@@ -7,6 +7,7 @@ bin/maildrop
 bin/makemime
 bin/reformail
 bin/reformime
+etc/quotawarnmsg.sample
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL.html
