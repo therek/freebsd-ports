@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-rpm.mk,v 1.2 2006/01/25 17:41:34 jylefort Exp $
+# $FreeBSD: ports/Mk/bsd.linux-rpm.mk,v 1.3 2006/04/30 22:00:42 netchild Exp $
 #
 
 # Variables:
@@ -82,7 +82,9 @@ PKGNAMEPREFIX?=			linux-
 # is not true.
 
 DISTFILES?=		${DISTNAME}${EXTRACT_SUFX}
+BIN_DISTFILES:=		${DISTFILES}
 SRC_DISTFILES?=		${DISTNAME}${SRC_SUFX}
+EXTRACT_ONLY?=		${BIN_DISTFILES}
 
 .  if defined(PACKAGE_BUILDING)
 DISTFILES+=		${SRC_DISTFILES}
