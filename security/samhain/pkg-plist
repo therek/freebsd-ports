@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/samhain/pkg-plist,v 1.5 2006/01/07 07:56:03 edwin Exp $
+@comment $FreeBSD: ports/security/samhain/pkg-plist,v 1.6 2006/04/09 02:40:09 lawrance Exp $
 %%YULE%%etc/yulerc.sample
 %%YULE%%sbin/yule_setpwd
 %%YULE%%sbin/yule
@@ -11,8 +11,7 @@
 %%SAMHAIN%%etc/samhainrc.sample
 %%SAMHAIN%%@unexec rmdir /var/lib/samhain 2>/dev/null || true
 %%SETPWD%%sbin/samhain_setpwd
-%%PORTDOCS%%%%DOCSDIR%%/MANUAL-2_0.ps
-%%PORTDOCS%%%%DOCSDIR%%/MANUAL-2_0.html.tar
+%%PORTDOCS%%%%DOCSDIR%%/MANUAL-2_2.pdf
 %%PORTDOCS%%%%DOCSDIR%%/HOWTO-client+server.html
 %%PORTDOCS%%%%DOCSDIR%%/HOWTO-client+server-troubleshooting.html
 %%PORTDOCS%%%%DOCSDIR%%/HOWTO-write-modules.html
