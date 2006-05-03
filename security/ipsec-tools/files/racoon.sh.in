@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop racoon
-# $FreeBSD: ports/security/ipsec-tools/files/racoon.sh.in,v 1.2 2006/01/04 20:48:49 edwin Exp $
+# $FreeBSD: ports/security/ipsec-tools/files/racoon.sh.in,v 1.3 2006/02/20 20:47:39 dougb Exp $
 
 # PROVIDE: racoon
 # REQUIRE: DAEMON
@@ -29,13 +29,17 @@ prefix=%%PREFIX%%
 
 name="racoon"
 rcvar=`set_rcvar`
-command="${prefix}/sbin/racoon"
-pidfile="/var/run/racoon.pid"
-required_files="${prefix}/etc/racoon/racoon.conf"
-stop_postcmd="racoon_poststop"
+command="${prefix}/sbin/${name}"
+pidfile="/var/run/${name}.pid"
+socketfile="%%STATEDIR%%/${name}.sock"
+required_files="${prefix}/etc/${name}/${name}.conf"
+required_dirs="%%STATEDIR%%"
+start_precmd="racoon_cleanup"
+stop_postcmd="racoon_cleanup"
 
-racoon_poststop() {
+racoon_cleanup() {
 	/bin/rm -f ${pidfile}
+	/bin/rm -f ${socketfile}
 }
 
 load_rc_config $name
