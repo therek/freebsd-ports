@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/ruby-gems/Makefile.common,v 1.3 2005/10/16 01:48:04 edwin Exp $
+# $FreeBSD: ports/devel/ruby-gems/Makefile.common,v 1.4 2006/04/12 09:42:24 pav Exp $
 # Ruby gem module common settings
 
 
@@ -9,8 +9,6 @@ PKGNAMEPREFIX=	rubygem-
 EXTRACT_SUFX=	.gem
 EXTRACT_ONLY=
 DIST_SUBDIR=	rubygem
-
-USE_REINPLACE=	yes
 
 NO_BUILD=	yes
 

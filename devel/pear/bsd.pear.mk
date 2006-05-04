@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.4 2005/12/25 18:31:58 ale Exp $
+# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.5 2006/01/22 05:52:05 edwin Exp $
 
 # Common code for pear- ports.
 
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	PEAR
 
 RUN_DEPENDS+=	pear:${PORTSDIR}/devel/pear
-
-USE_REINPLACE=	yes
 
 .if !defined(USE_PHPIZE)
 NO_BUILD=	yes
