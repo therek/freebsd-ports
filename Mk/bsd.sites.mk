@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.362 2006/04/20 19:37:17 erwin Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.363 2006/04/27 23:28:36 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -92,6 +92,11 @@ MASTER_SITE_APACHE_HTTPD+=	\
 .if !defined(IGNORE_MASTER_SITE_APACHE_JAKARTA)
 MASTER_SITE_APACHE_JAKARTA+=	\
 	${MASTER_SITE_APACHE:S,%SUBDIR%,jakarta/&,}
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_APACHE_TOMCAT)
+MASTER_SITE_APACHE_TOMCAT+=	\
+	${MASTER_SITE_APACHE:S,%SUBDIR%,tomcat/&,}
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_APACHE_XML)
