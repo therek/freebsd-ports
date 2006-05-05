@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/dspam/files/dspam.in,v 1.1 2006/02/17 16:50:32 garga Exp $
+# $FreeBSD: ports/mail/dspam/files/dspam.in,v 1.2 2006/05/01 14:55:04 pav Exp $
 # formerly $ FreeBSD: ports/mail/dspam/files/dspam,v 1.1 2005/05/05 21:03:37 pav Exp $
 #
 
@@ -21,6 +21,13 @@
 name="dspam"
 rcvar=${name}_enable
 
+load_rc_config $name
+
+#defaults
+: ${dspam_enable="NO"}
+: ${dspam_debug="NO"}
+: ${dspam_pidfile:-/var/run/dspam.pid}
+
 command=%%PREFIX%%/bin/${name}
 if checkyesno dspam_debug
 then
@@ -36,12 +43,5 @@ reload()
 {
  kill -HUP `cat $pidfile`
 }
-
-load_rc_config $name
-
-#defaults
-: ${dspam_enable="NO"}
-: ${dspam_debug="NO"}
-: ${dspam_pidfile:-/var/run/dspam.pid}
 
 run_rc_command "$1"
