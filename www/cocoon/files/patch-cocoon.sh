@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/www/cocoon/files/patch-cocoon.sh,v 1.1 2004/07/01 22:30:19 glewis Exp $
 
 --- cocoon.sh.orig	Thu Feb 12 09:48:55 2004
 +++ cocoon.sh	Tue May  4 14:44:24 2004
@@ -30,12 +30,3 @@ $FreeBSD$
    fi
  fi
  echo "$0: using $COCOON_WEBAPP_HOME as the webapp directory"
-@@ -111,7 +110,7 @@
- 
- # ----- Set Local Variables ( used to minimize cut/paste) ---------------------
- 
--JAVA="$JAVA_HOME/bin/java"
-+JAVA="exec $JAVA_HOME/bin/java"
- ENDORSED_LIBS="$COCOON_HOME/lib/endorsed"
- ENDORSED="-Djava.endorsed.dirs=$ENDORSED_LIBS"
- PARSER=-Dorg.xml.sax.parser=org.apache.xerces.parsers.SAXParser

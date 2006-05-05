@@ -3,7 +3,7 @@
 # Checks if the requested user and group exist. If they don't, then
 # an attempt is made to create both.
 #
-# $FreeBSD: ports/www/cocoon/files/pkg-install,v 1.1 2004/07/01 22:30:19 glewis Exp $
+# $FreeBSD$
 #
 # Borrowed from the jakarta-tomcat port
 #

@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/www/cocoon/files/cocoon.sh,v 1.2 2005/04/02 22:14:50 hq Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: %%APP_NAME%%

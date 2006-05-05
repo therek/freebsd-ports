@@ -4,7 +4,7 @@
 # Author:        Jean-Baptiste Quenot <jb.quenot@caraldi.com>
 # Purpose:       Control cocoon process
 # Date Created:  2004-05-04 11:14:05
-# Revision:      $FreeBSD: ports/www/cocoon/files/cocoonctl,v 1.2 2005/04/02 22:14:50 hq Exp $
+# Revision:      $FreeBSD$
 ################################################################################
 # Copyright (c) 2004, Jean-Baptiste Quenot <jb.quenot@caraldi.com>
 # All rights reserved.

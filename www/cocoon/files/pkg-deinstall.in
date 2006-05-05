@@ -8,7 +8,7 @@
 # * Checks if the 'www' user exists. If it does, then it displays
 #   a message.
 #
-# $FreeBSD: ports/www/cocoon/files/pkg-deinstall,v 1.2 2005/04/02 22:14:50 hq Exp $
+# $FreeBSD$
 #
 # Borrowed from the jakarta-tomcat port
 #
