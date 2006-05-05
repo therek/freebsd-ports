@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/mail/mailman/pkg-install,v 1.5 2003/01/23 12:48:59 wjv Exp $
+# $FreeBSD: ports/mail/mailman/pkg-install,v 1.6 2005/02/10 22:25:02 pav Exp $
 
 PATH=/bin:/usr/bin:/usr/sbin
 
@@ -50,6 +50,8 @@ POST-INSTALL)
   echo "---> Starting post-install script:"
 
   echo "---> Checking crontab(5) file for user \"%%USER%%\""
+
+  echo "%%USER%%" >> /var/cron/allow
 
   if /usr/bin/crontab -u "%%USER%%" -l >/tmp/mmctab$$ 2>&1 ; then
       if test -s /tmp/mmctab$$; then
