@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.27 2006/04/29 23:02:55 ahze Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.28 2006/05/01 18:28:52 ahze Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.40 2006/04/23 21:40:21 marcus Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -313,7 +313,7 @@ LIB_DEPENDS+=	speex.3:${PORTSDIR}/audio/speex
 
 # theora
 .if ${GST_PLUGIN}=="theora"
-LIB_DEPENDS+=	theora.1:${PORTSDIR}/multimedia/libtheora
+LIB_DEPENDS+=	theora.2:${PORTSDIR}/multimedia/libtheora
 DIST=	base
 .endif
 
