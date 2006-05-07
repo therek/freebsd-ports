@@ -4,7 +4,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD$
+# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.1 2006/05/07 22:27:07 ahze Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.1 2006/05/06 06:06:47 ahze Exp $
 #
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -186,9 +186,6 @@
 #
 # WITHOUT_GNOMEVFS
 #  GnomeVFS support
-#
-# WITHOUT_HAL=yes
-#  Disable HAL support
 #
 # WITH_OPENGL=yes
 #  Enable OpenGL visual plugin (not playback, play back is default with X11)
