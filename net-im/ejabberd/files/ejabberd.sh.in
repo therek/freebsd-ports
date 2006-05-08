@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD: ports/net-im/ejabberd/files/ejabberd.sh.in,v 1.2 2006/01/07 06:29:54 dougb Exp $
+# $FreeBSD: ports/net-im/ejabberd/files/ejabberd.sh.in,v 1.3 2006/04/25 17:48:48 garga Exp $
 
 # PROVIDE: ejabberd
 # REQUIRE: DAEMON
@@ -26,6 +26,7 @@ start_cmd="ejabberd_start"
 status_cmd="ejabberd_status"
 stop_cmd="ejabberd_stop"
 
+cd %%PREFIX%%		# Why is this needed!?
 
 # Include ejabberd defaults if available
 [ -f %%PREFIX%%/etc/ejabberd/ejabberd.defaults ] && . %%PREFIX%%/etc/ejabberd/ejabberd.defaults
