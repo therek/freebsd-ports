@@ -1,6 +1,6 @@
 # ----------------------------------------------------------------------
 # Post-installation instructions for the FreeBSD port/package of Mailman
-# $FreeBSD: ports/mail/mailman/files/FreeBSD-post-install-notes,v 1.3 2005/06/10 20:44:46 pav Exp $
+# $FreeBSD: ports/mail/mailman/files/FreeBSD-post-install-notes,v 1.4 2006/05/05 18:49:11 jmelo Exp $
 # ----------------------------------------------------------------------
 
 
@@ -21,9 +21,7 @@ VERY IMPORTANT NOTE
 The Mailman port has a number of build time options.  Getting the values of
 some of these right is CRUCIAL if you want your Mailman installation to work!
 
-To see a list of build time options, go to the Mailman port's directory
-(/usr/ports/mail/mailman by default) and perform a "make options".
-
+To see a list of build time options, edit your port Makefile.
 
 1) General post-installation instructions
 
