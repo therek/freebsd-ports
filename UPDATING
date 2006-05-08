@@ -112,7 +112,7 @@ portupgrade -a
   been created: net/ipw-firmware-kmod and net/iwi-firmware-kmod.
 
   You should not be able to install the wrong one since detection is
-  base on your FreeBSD version. Trying to install the wrong port will
+  based on your FreeBSD version. Trying to install the wrong port will
   result in an error message (port marked as IGNORE).
 
 20060413:
@@ -3477,4 +3477,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.320 2006/05/06 13:26:45 ale Exp $
+$FreeBSD: ports/UPDATING,v 1.321 2006/05/07 20:34:01 sem Exp $
