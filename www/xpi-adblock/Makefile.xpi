@@ -1,8 +1,8 @@
 # New ports collection makefile for:	xpi infrastructure
 # Date created:		28 March 2006
-# Whom:			Andrew Pantyukhin <infofarmer@gmail.com>
+# Whom:			Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.1 2006/04/16 16:24:07 thierry Exp $
+# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.2 2006/04/27 19:16:50 thierry Exp $
 #
 
 # This Makefile is an alpha-version of a new xpi infrastructure.
