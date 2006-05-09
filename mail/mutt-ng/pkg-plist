@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mutt-ng/pkg-plist,v 1.1 2005/06/19 10:55:27 krion Exp $
+@comment $FreeBSD: ports/mail/mutt-ng/pkg-plist,v 1.2 2005/08/01 09:40:31 vsevolod Exp $
 bin/muttng
 bin/muttng_dotlock
 bin/pgpewrapng
@@ -89,3 +89,4 @@ etc/muttng-mime.types
 %%NLS%%share/locale/zh_TW/LC_MESSAGES/muttng.mo
 @dirrm %%EXAMPLESDIR%%/iconv
 @dirrm %%EXAMPLESDIR%%
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
