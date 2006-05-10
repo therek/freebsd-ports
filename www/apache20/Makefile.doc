@@ -5,7 +5,7 @@
 #      - make options output
 #      - apache2 man/docs routines
 #
-# $FreeBSD: ports/www/apache20/Makefile.doc,v 1.17 2005/05/22 09:09:42 clement Exp $
+# $FreeBSD: ports/www/apache20/Makefile.doc,v 1.18 2005/10/14 13:54:09 clement Exp $
 #
 
 ## Available knobs:
@@ -73,12 +73,7 @@
 ##                                [cgi|errordocs|icons|wwwdata]
 ##
 ##  Optionnal patches:  
-#      WITH_EXPERIMENTAL_PATCHES Add performance patches (generally backported
-#                                from apr/httpd CVS)
-#
 ##      WITH_KQUEUE_SUPPORT       Add kqueue support to apr/httpd
-##      WITH_WINDOWSUPDATEFIX     Add a fix to use apache as proxy with 
-##                                Windows Update service.
 ##
 ## Available make targets:
 ##      show-options:             prints this message
