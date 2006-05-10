@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.16 2006/04/29 23:02:44 ahze Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.24 2006/04/25 14:45:31 ahze Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -246,7 +246,7 @@ ${ext}_NAME?=		${ext}
 BUILD_DEPENDS+=	${${ext}_GST80_PREFIX}${${ext}_NAME}${${ext}_GST80_SUFX}>=${${ext}_GST80_VERSION}:${PORTSDIR}/${${ext}_DEPENDS}${${ext}_GST80_SUFX}
 RUN_DEPENDS+=	${${ext}_GST80_PREFIX}${${ext}_NAME}${${ext}_GST80_SUFX}>=${${ext}_GST80_VERSION}:${PORTSDIR}/${${ext}_DEPENDS}${${ext}_GST80_SUFX}
 . else
-BROKEN=	"Unknown gstreamer-plugin -- ${ext}"
+BROKEN=	Unknown gstreamer-plugin -- ${ext}
 . endif
 .endfor
 .endif
@@ -256,7 +256,7 @@ BROKEN=	"Unknown gstreamer-plugin -- ${ext}"
 BUILD_DEPENDS+=	${${ext}_GST_PREFIX}${${ext}_NAME}>=${${ext}_GST_VERSION}:${PORTSDIR}/${${ext}_DEPENDS}
 RUN_DEPENDS+=	${${ext}_GST_PREFIX}${${ext}_NAME}>=${${ext}_GST_VERSION}:${PORTSDIR}/${${ext}_DEPENDS}
 . else
-BROKEN=	"Unknown gstreamer-plugin -- ${ext}"
+BROKEN=	Unknown gstreamer-plugin -- ${ext}
 . endif
 .endfor
 .endif
