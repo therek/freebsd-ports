@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.982 2006/05/06 13:26:45 ale Exp $
+# $FreeBSD: ports/MOVED,v 1.983 2006/05/08 12:15:48 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2297,3 +2297,4 @@ www/mod_php5|lang/php5|2006-05-06|Unification of php slave ports
 www/php4-cgi|lang/php4|2006-05-06|Unification of php slave ports
 www/php5-cgi|lang/php5|2006-05-06|Unification of php slave ports
 multimedia/gnonlin|multimedia/gstreamer-plugins-gnonlin|2006-05-08|Merge duplicite ports
+www/linux-mozilla-devel|www/linux-seamonkey-devel|2006-05-10|Mozilla-devel is now Seamonkey
