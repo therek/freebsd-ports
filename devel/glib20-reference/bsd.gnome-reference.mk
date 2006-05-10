@@ -1,15 +1,17 @@
-# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.1 2006/05/09 22:03:26 jylefort Exp $
+# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.2 2006/05/10 02:55:56 jylefort Exp $
 
 PARENTDIR?=	${.CURDIR:S|-reference$||}
 REFERENCE_PORT=	${PKGORIGIN:S|-reference$||}
 
 .include "${PARENTDIR}/Makefile"
 
-.if !defined(DISTNAME)
-DISTNAME:=	${PORTNAME}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}
-.endif
 .if !defined(DOCSDIR)
 DOCSDIR:=	${PREFIX}/share/doc/${PORTNAME}
+.endif
+.if defined(DISTNAME)
+DISTNAME:=	${DISTNAME}
+.else
+DISTNAME:=	${PORTNAME}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}
 .endif
 PORTNAME:=	${PORTNAME}-reference
 .if defined(LATEST_LINK)
