@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.9 2006/02/23 20:46:10 clement Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.10 2006/04/30 16:38:07 clement Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -302,21 +302,25 @@ IGNORE?=	PREFIX must be egal to APXS_PREFIX.
 AP_BUILDEXT=	la
 APACHEMODDIR=	libexec/apache2
 APACHEINCLUDEDIR=include/apache2
+APACHEETCDIR=	etc/apache2
 APACHE_PORT=	www/apache${APACHE_VERSION}
 .elif ${APACHE_VERSION} >= 21
 AP_BUILDEXT=	la
 APACHEMODDIR=	libexec/apache${APACHE_VERSION}
 APACHEINCLUDEDIR=include/apache${APACHE_VERSION}
+APACHEETCDIR=	etc/apache${APACHE_VERSION}
 APACHE_PORT=	www/apache${APACHE_VERSION}
 .else
 AP_BUILDEXT=	so
 APACHEMODDIR=	libexec/apache
 APACHEINCLUDEDIR=include/apache
+APACHEETCDIR=	etc/apache
 APACHE_PORT?= www/apache13
 .endif
 
 PLIST_SUB+=	APACHEMODDIR="${APACHEMODDIR}" \
-		APACHEINCLUDEDIR="${APACHEINCLUDEDIR}"
+		APACHEINCLUDEDIR="${APACHEINCLUDEDIR}" \
+		APACHEETCDIR="${APACHEETCDIR}"
 
 .for VAR in ${OVERRIDABLE_VARS}
 .  if defined(AP${APACHE_VERSION}_${VAR})
