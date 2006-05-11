@@ -1,8 +1,7 @@
-@comment $FreeBSD: ports/sysutils/smartmontools/pkg-plist,v 1.1 2003/10/24 07:45:38 sergei Exp $
+@comment $FreeBSD: ports/sysutils/smartmontools/pkg-plist,v 1.2 2004/04/28 18:27:52 nork Exp $
 @unexec /bin/echo "===>" Stopping smartd ...
 @unexec /usr/bin/killall smartd 2>/dev/null || true
 etc/smartd.conf.sample
-etc/rc.d/smartd.sh
 sbin/smartctl
 sbin/smartd
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/smartmontools/files/smartd.sh,v 1.6 2006/01/07 06:29:55 dougb Exp $
+# $FreeBSD$
 
 # PROVIDE: smartd
 # REQUIRE: DAEMON
