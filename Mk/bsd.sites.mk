@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.364 2006/05/05 10:40:04 delphij Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.365 2006/05/10 19:01:20 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -474,8 +474,7 @@ MASTER_SITE_IDSOFTWARE+=	\
 	ftp://ftp.chg.ru/.3/games/idgames/idstuff/%SUBDIR%/ \
 	ftp://ftp.fasta.fh-dortmund.de/mirror/idstuff/%SUBDIR%/ \
 	ftp://ftp.fu-berlin.de/pc/games/idgames/idstuff/%SUBDIR%/ \
-	http://www.gamers.org/pub/idgames/idstuff/%%SUBDIR%%/ \
-	ftp://ftp.games.skynet.be/spool1/games/ftp.idsoftware.com/%SUBDIR%/ \
+	http://www.gamers.org/pub/idgames/idstuff/%SUBDIR%/ \
 	ftp://ftp.mirror.nl/disk2/idsoftware/idstuff/%SUBDIR%/ \
 	ftp://ftp.nsu.ru/mirrors/ftp.idsoftware.com/idstuff/%SUBDIR%/ \
 	ftp://ftp.ntua.gr/pub/vendors/idgames/idstuff/%SUBDIR%/ \
