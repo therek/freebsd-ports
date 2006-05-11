@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.3 2006/05/10 16:21:23 jylefort Exp $
+# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.4 2006/05/10 17:08:24 jylefort Exp $
 
 PARENTDIR?=	${.CURDIR:S|-reference$||}
 REFERENCE_PORT=	${PKGORIGIN:S|-reference$||}
@@ -7,6 +7,9 @@ REFERENCE_PORT=	${PKGORIGIN:S|-reference$||}
 
 .if !defined(DOCSDIR)
 DOCSDIR:=	${PREFIX}/share/doc/${PORTNAME}
+.endif
+.if !defined(EXAMPLESDIR)
+EXAMPLESDIR:=	${PREFIX}/share/examples/${PORTNAME}
 .endif
 .if defined(DISTNAME)
 DISTNAME:=	${DISTNAME}
