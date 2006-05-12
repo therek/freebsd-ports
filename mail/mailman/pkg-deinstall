@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/mail/mailman/pkg-deinstall,v 1.9 2005/02/10 22:25:02 pav Exp $
+# $FreeBSD: ports/mail/mailman/pkg-deinstall,v 1.10 2006/05/05 18:49:10 jmelo Exp $
 
 PATH=/bin:/usr/bin:/usr/sbin
 
@@ -13,8 +13,10 @@ DEINSTALL)
       /usr/bin/diff - %%MAILMANDIR%%/cron/crontab.in >/dev/null 2>&1 ; then
       echo "---> Zeroing crontab for \"%%USER%%\""
       /usr/bin/crontab -u "%%USER%%" /dev/null
-      grep -v %%USER%% /var/cron/allow > /var/cron/allow.new
-      mv /var/cron/allow.new /var/cron/allow
+      if [ -e /var/cron/allow ]; then
+         grep -v %%USER%% /var/cron/allow > /var/cron/allow.new
+         mv /var/cron/allow.new /var/cron/allow
+      fi
   else
       echo "---> Crontab for \"%%USER%%\" not removed: please deinstall"
       echo "---> manually if you no-longer wish to use Mailman. eg:"
