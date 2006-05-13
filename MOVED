@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.984 2006/05/10 20:18:32 sat Exp $
+# $FreeBSD: ports/MOVED,v 1.985 2006/05/13 00:48:11 alepulver Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2299,3 +2299,4 @@ www/php5-cgi|lang/php5|2006-05-06|Unification of php slave ports
 multimedia/gnonlin|multimedia/gstreamer-plugins-gnonlin|2006-05-08|Merge duplicite ports
 www/linux-mozilla-devel|www/linux-seamonkey-devel|2006-05-10|Mozilla-devel is now Seamonkey
 games/rtcw-paks||2006-05-11|Not needed because games/rtcw asks for the files (only 3)
+deskutils/superkaramba|misc/kdeutils3|2006-05-13|superkaramba was integrated into the kdeutils3 port
