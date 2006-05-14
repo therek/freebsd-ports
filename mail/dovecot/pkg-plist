@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/dovecot/pkg-plist,v 1.16 2006/04/15 19:22:48 mnag Exp $
+@comment $FreeBSD: ports/mail/dovecot/pkg-plist,v 1.17 2006/05/06 12:20:29 olgeni Exp $
 etc/dovecot-example.conf
 lib/dovecot/imap/lib01_acl_plugin.so
 lib/dovecot/imap/lib01_convert_plugin.so
@@ -12,6 +12,7 @@ lib/dovecot/imap/lib02_imap_quota_plugin.so
 lib/dovecot/imap/lib02_trash_plugin.so
 @dirrm lib/dovecot/imap
 lib/dovecot/pop3/lib01_convert_plugin.so
+lib/dovecot/pop3/lib01_quota_plugin.so
 @dirrm lib/dovecot/pop3
 lib/dovecot/lda/lib01_acl_plugin.so
 lib/dovecot/lda/lib01_convert_plugin.so
