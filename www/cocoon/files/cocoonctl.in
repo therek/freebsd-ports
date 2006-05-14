@@ -4,7 +4,7 @@
 # Author:        Jean-Baptiste Quenot <jb.quenot@caraldi.com>
 # Purpose:       Control cocoon process
 # Date Created:  2004-05-04 11:14:05
-# Revision:      $FreeBSD$
+# Revision:      $FreeBSD: ports/www/cocoon/files/cocoonctl.in,v 1.1 2006/05/05 16:35:05 hq Exp $
 ################################################################################
 # Copyright (c) 2004, Jean-Baptiste Quenot <jb.quenot@caraldi.com>
 # All rights reserved.
@@ -140,7 +140,7 @@ if __name__ == '__main__':
     APP_NAME = "%%APP_NAME%%"
     APP_HOME = "%%APP_HOME%%"
     PID_FILE = "%%PID_FILE%%"
-    COMMAND = "%%PREFIX%%/sbin/%%APP_NAME%%.sh"
+    COMMAND = "%%APP_HOME%%/cocoon.sh"
     os.environ["JAVA_OPTIONS"] = " ".join(sys.argv[1:-1])
     ARGS = [COMMAND, "servlet"]
 
