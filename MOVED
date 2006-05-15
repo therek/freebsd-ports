@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.989 2006/05/15 19:00:33 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.990 2006/05/15 19:33:54 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2302,3 +2302,4 @@ games/rtcw-paks||2006-05-11|Not needed because games/rtcw asks for the files (on
 deskutils/superkaramba|misc/kdeutils3|2006-05-13|superkaramba was integrated into the kdeutils3 port
 security/uvscan-dat||2006-05-14|Has expired
 net/callgen|net/callgen323|2006-05-15|Moved to a better name
+math/vecfem||2006-05-15|removed deprecated port
