@@ -1,7 +1,7 @@
 #
 # KNOBS - A list of popular knobs and descriptions
 #
-# $FreeBSD: ports/KNOBS,v 1.9 2006/04/06 02:18:59 leeym Exp $
+# $FreeBSD: ports/KNOBS,v 1.10 2006/04/15 13:29:35 vs Exp $
 #
 # Rules to adding knobs:
 #
@@ -28,6 +28,7 @@ CACA			Libcaca colored ASCII graphics
 CDDB			CDDB support
 CDPARANOIA		Support for cdparanoia CD extraction
 CJK			Chinese, Japanese, and Korean language support
+CLIENT			Client component of a client/server package
 CUPS			Cups support (Common Unix Printing System)
 CURL			Curl URL transfer library support
 DBUS			Adds support for dbus
@@ -80,6 +81,7 @@ QUICKTIME 		Quicktime audio/video support
 RUBY			Adds Ruby language/module support
 SAMBA			Adds SAMBA support
 SDL			Adds support for SDL media library
+SERVER			Server component of a client/server package
 SLP			Adds SLP (Service Locator Protocol) support
 SNDFILE			Adds support for libsndfile
 SOX			Sox audio support
