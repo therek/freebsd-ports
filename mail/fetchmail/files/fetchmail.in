@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/fetchmail/files/fetchmail.in,v 1.1 2006/05/12 16:58:48 barner Exp $
 #
 
 # PROVIDE: fetchmail
@@ -52,7 +52,7 @@ name=fetchmail
 rcvar=`set_rcvar`
 
 command=%%PREFIX%%/bin/${name}
-pidfile=/var/run/${name}.pid
+pidfile=/var/run/fetchmail/${name}.pid
 extra_commands="awaken"
 awaken_cmd="fetchmail_awaken"
 
