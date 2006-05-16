@@ -3,7 +3,7 @@
 # This code mostly stolen from easy-import written by J^vrg Wunsch
 #
 # $Id: modulesupdate,v 1.8 2000/04/02 05:42:12 mharo Exp $
-# $FreeBSD: ports/Tools/scripts/modulesupdate,v 1.2 2003/02/28 19:49:31 peter Exp $
+# $FreeBSD: ports/Tools/scripts/modulesupdate,v 1.3 2003/03/02 17:29:12 will Exp $
 
 use strict;
 
@@ -39,27 +39,38 @@ sub lsmodules
 
     %rv = ();
 
-    open(CVS, "cvs -R co -c|") || die "cvs: $!";
+    print "Checking out the modules database...\n";
+    system("cvs -R co modules") && die "failed.\n";
+
+    my $start_read = 0;
+
+    open(CVS, "<modules/modules") || die "$!";
     while(<CVS>) {
-	chomp;
-	chomp;
-	($mname,$mpath) = split;
-	next if $mname eq "";
-	$rv{$mname} = $mpath;
+        if (/!!MERGE!!/g) {
+            $start_read = 1;
+        }
+
+        if ($start_read && /^[^ #]/) {
+	    chomp;
+	    chomp;
+	    ($mname,$mpath) = split;
+	    next if $mname eq "";
+	    $rv{$mname} = $mpath;
+        }
     }
     close(CVS);
 
     return %rv;
 }
 
+$tmpdir=`mktemp -d -t mu`;
+chomp $tmpdir;
+chdir $tmpdir or die "$tmpdir: $!";
+
 my %cvsmods = &lsmodules;
 my $modulename = shift;
 my $modulepath = shift;
 my $dont_do_it = "";
-
-$tmpdir=`mktemp -d -t mu`;
-chomp $tmpdir;
-chdir $tmpdir or die "$tmpdir: $!";
 
 if ($modulepath eq "") {
 	print "Error: Must specify both modulename and modulepath\n";
@@ -87,9 +98,6 @@ if ($mod eq "") {
     # we can insert it
     $cmd = "/^" . $mod . "[ \t]/\ni\n";
 }
-
-print "Checking out the modules database...\n";
-system("cvs -R co modules") && die "failed.\n";
 
 my $len = length($modulename);
 print "Inserting new module...\n";
