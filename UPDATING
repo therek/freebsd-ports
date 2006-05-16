@@ -6,6 +6,17 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060516:
+  AFFECTS: users of www/tinyproxy
+  AUTHOR: wxs@csh.rit.edu
+
+  tinyproxy now installs a rc.d script.  To enable tinyproxy at boot
+  time, set the following in rc.conf(5):
+      tinyproxy_enable="YES"
+  The confiration file for tinyproxy has been moved to
+  ${PREFIX}/etc/tinyproxy.conf.  Any old configuration files will need
+  to be migrated over to the new location.
+
 20060514:
   AFFECTS: users of sysutils/smartmontools, others
   AUTHOR:  jylefort@FreeBSD.org
@@ -3513,4 +3524,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.325 2006/05/13 09:31:28 lofi Exp $
+$FreeBSD: ports/UPDATING,v 1.326 2006/05/14 01:48:00 jylefort Exp $
