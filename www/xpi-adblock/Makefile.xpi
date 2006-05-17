@@ -5,7 +5,7 @@
 # Date created:		28 March 2006
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.4 2006/05/10 19:32:15 sat Exp $
+# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.5 2006/05/17 04:53:49 sat Exp $
 #
 
 # XPI_ID		- Extension id, might be in {12345-...} or dev@org format
@@ -80,6 +80,8 @@ do-install:
 	@${CP} -Rp ${WRKSRC}/ ${_TD_FULL}/
 	@if [ -d ${FILESDIR} -a -f ${FILESDIR}/chrome.manifest ] ; \
 		then ${CP} -p ${FILESDIR}/chrome.manifest ${_TD_FULL}/ ; fi
+	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${_TD_FULL}/
+	@${CHMOD} -R a+rX,go-w ${_TD_FULL}/
 	@for _app in ${XPI_APPS} ; { ${LN} -sf ${_TD_FULL} $$_app ${_Q} ; }
 
 relink:
