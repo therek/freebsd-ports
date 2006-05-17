@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.17 2006/05/10 21:11:21 ahze Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.18 2006/05/16 01:43:00 ahze Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.24 2006/04/25 14:45:31 ahze Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -65,7 +65,7 @@ _USE_GSTREAMER_ALL=	a52dec aalib bad cairo cdparanoia dts \
 			gnonlin good gsm ivorbis jpeg ladspa lame libcaca \
 			libmms libpng libvisual mad mpeg2dec \
 			musepack ogg pango sdl shout2 sidplay \
-			speex theora ugly vorbis wavpack
+			speex theora ugly vorbis wavpack xvid
 _USE_GSTREAMER80_ALL=	a52dec aalib artsd audiofile cairo cdaudio cdio cdparanoia \
 			dirac dts dv dvd esound faac faad ffmpeg flac \
 			gconf gdkpixbuf gnomevfs gsm hermes ivorbis jack jpeg \
