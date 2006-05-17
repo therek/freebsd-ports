@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.149 2006/01/14 15:46:10 pav Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.150 2006/01/21 17:37:01 krion Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -162,7 +162,7 @@ MASTER_SITE_SUBDIR_RUBY=	snapshots
 .endif
 #      defined(RUBY_VER) && ${RUBY_VER} == 1.8
 
-CONFIGURE_TARGET=	${ARCH}-portbld-freebsd${OSREL:C/\..*//}
+CONFIGURE_TARGET?=	${ARCH}-portbld-freebsd${OSREL:C/\..*//}
 
 RUBY_ARCH?=		${ARCH}-freebsd${OSREL:C/\..*//}
 RUBY_NAME?=		ruby${RUBY_SUFFIX}
