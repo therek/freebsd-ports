@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.4 2006/05/10 17:08:24 jylefort Exp $
+# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.5 2006/05/11 17:23:49 jylefort Exp $
 
 PARENTDIR?=	${.CURDIR:S|-reference$||}
 REFERENCE_PORT=	${PKGORIGIN:S|-reference$||}
@@ -26,7 +26,6 @@ LATEST_LINK:=	${LATEST_LINK}-reference
 
 COMMENT=	Programming reference for ${REFERENCE_PORT}
 
-DESCR=		${WRKDIR}/pkg-descr
 MD5_FILE=	${PARENTDIR}/distinfo
 
 REFERENCE_SRC?=	${WRKSRC}/docs/reference
@@ -39,9 +38,7 @@ do-build:
 	@${DO_NADA}
 .endif
 
-pre-install: gnome-reference-pre-install
-
-gnome-reference-pre-install:
+make-descr:
 	@${ECHO_CMD} "This port contains the programming reference for ${REFERENCE_PORT}." > ${DESCR}
 	@www=`${GREP} "^WWW:" ${PARENTDIR}/pkg-descr` || ${TRUE}; \
 	if [ -n "$$www" ]; then \
