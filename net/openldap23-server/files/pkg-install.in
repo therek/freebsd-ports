@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/openldap23-server/pkg-install,v 1.10 2005/05/05 00:53:44 edwin Exp $
 #
 
 CHOWN=/usr/sbin/chown

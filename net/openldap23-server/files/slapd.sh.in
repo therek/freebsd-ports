@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap23-server/files/slapd.sh,v 1.16 2005/05/05 00:53:44 edwin Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: slapd
