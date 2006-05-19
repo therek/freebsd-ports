@@ -1,8 +1,5 @@
-@comment $FreeBSD: ports/news/aub/pkg-plist,v 1.4 2000/11/22 00:17:09 obrien Exp $
 bin/aub
-share/doc/aub/COPYING
-share/doc/aub/Introducing_AUB
-share/doc/aub/README
-share/doc/aub/USAGE
-share/doc/aub/aubconf.example
-@dirrm share/doc/aub
+%%DOCSDIR%%/COPYING
+%%DOCSDIR%%/README
+%%DOCSDIR%%/aubconf.example
+@dirrm %%DOCSDIR%%
