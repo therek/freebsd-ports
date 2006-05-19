@@ -58,7 +58,7 @@ upgrades.
   and change sulci's configuration file in "vocabulary" directive, see
     /usr/local/share/examples/sulci/sulci.conf.example
 
-200605R0728:
+20060507:
   AFFECTS: users of net/isc-dhcp3-server with failover setup
   AUTHOR: Joerg.Pulz@frm2.tum.de
 
@@ -3533,4 +3533,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.327 2006/05/16 12:33:30 itetcu Exp $
+$FreeBSD: ports/UPDATING,v 1.328 2006/05/18 15:17:23 delphij Exp $
