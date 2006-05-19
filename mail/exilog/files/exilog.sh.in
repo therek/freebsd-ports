@@ -1,6 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/exilog/files/exilog.sh,v 1.2 2005/11/03 13:43:00 vsevolod Exp $
+# $FreeBSD: ports/mail/exilog/files/exilog.sh.in,v 1.1 2006/05/15 13:27:30 sem Exp $
+#
+# PROVIDE: exilog
+# REQUIRE: %%SERVER%%
+# KEYWORD: shutdown
 #
 # Add the following lines to /etc/rc.conf to enable exilog agent:
 #
