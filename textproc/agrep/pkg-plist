@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/textproc/agrep/pkg-plist,v 1.4 2000/11/22 00:17:09 obrien Exp $
 bin/agrep
 %%DOCSDIR%%/agrep.algorithms
 @dirrm %%DOCSDIR%%
