@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/teTeX-base/pkg-plist,v 1.33 2005/02/11 15:49:00 hrs Exp $
+@comment $FreeBSD: ports/print/teTeX-base/pkg-plist,v 1.34 2005/03/02 17:58:32 hrs Exp $
 bin/mktexpk
 bin/mktexmf
 bin/mktextfm
@@ -86,6 +86,7 @@ bin/texconfig-dialog
 bin/texconfig-sys
 bin/texdoc
 bin/texdoctk
+bin/texdoctk.real
 bin/texexec
 bin/texlinks
 bin/updmap
