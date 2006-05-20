@@ -1,10 +1,12 @@
-@comment $FreeBSD: ports/www/dillo/pkg-plist,v 1.4 2004/02/10 15:42:30 krion Exp $
+@comment $FreeBSD: ports/www/dillo/pkg-plist,v 1.3 2003/02/27 17:36:36 naddy Exp $
 bin/dillo
 bin/dpid
 bin/dpidc
 etc/dillorc.sample
 etc/dpidrc
 libexec/dillo/dpi/bookmarks/bookmarks.dpi
+libexec/dillo/dpi/cookies/cookies.dpi
+libexec/dillo/dpi/datauri/datauri.filter.dpi
 libexec/dillo/dpi/downloads/downloads.dpi
 libexec/dillo/dpi/file/file.dpi
 libexec/dillo/dpi/ftp/ftp.filter.dpi
@@ -15,6 +17,8 @@ libexec/dillo/dpi/https/https.filter.dpi
 @dirrm libexec/dillo/dpi/ftp
 @dirrm libexec/dillo/dpi/file
 @dirrm libexec/dillo/dpi/downloads
+@dirrm libexec/dillo/dpi/datauri
+@dirrm libexec/dillo/dpi/cookies
 @dirrm libexec/dillo/dpi/bookmarks
 @dirrm libexec/dillo/dpi
 @dirrm libexec/dillo
