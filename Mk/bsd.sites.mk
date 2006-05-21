@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.365 2006/05/10 19:01:20 sat Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.366 2006/05/11 18:52:35 alepulver Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -944,7 +944,6 @@ MASTER_SITE_REDHAT_LINUX+= \
 MASTER_SITE_RINGSERVER+=	\
 	http://ring.sakura.ad.jp/archives/%SUBDIR%/ \
 	http://ring.riken.jp/archives/%SUBDIR%/ \
-	http://ring.ip-kyoto.ad.jp/archives/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_RUBY)
@@ -1162,8 +1161,8 @@ MASTER_SITE_VIM+= \
 
 .if !defined(IGNORE_MASTER_SITE_WINDOWMAKER)
 MASTER_SITE_WINDOWMAKER+= \
-	ftp://ftp.windowmaker.org/pub/%SUBDIR%/ \
-	ftp://ftp.uvsq.fr/pub8/X11/window-managers/windowmaker/%SUBDIR%/ \
+	ftp://ftp.windowmaker.info/pub/%SUBDIR%/ \
+	ftp://ftp.uvsq.fr/pub/X11/window-managers/windowmaker/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/X/WindowMaker/%SUBDIR%/
 .endif
 
