@@ -2,7 +2,7 @@
 # Date created:				30 September 2005
 # Whom:					Javier Martin Rueda <jmrueda@diatel.upm.es>
 #
-# $FreeBSD: ports/www/moodle/Makefile,v 1.2 2005/10/28 06:05:46 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	moodle
@@ -48,6 +48,7 @@ pre-install:
 	@${FIND} -s -d ${WRKSRC} -type f | ${SED} "s?${WRKSRC}?${MOODLEDIR}?g" >${PLIST}
 	@${FIND} -s -d ${WRKSRC} -type d  | ${SED} "s?${WRKSRC}?@dirrm ${MOODLEDIR}?g" >> ${PLIST}
 	@${ECHO} @dirrm ${MOODLEDATADIR} >> ${PLIST}
+	@${ECHO} @dirrmtry www/data >> ${PLIST}
 
 do-install:
 	${INSTALL_DATA} -d ${PREFIX}/${MOODLEDIR}
