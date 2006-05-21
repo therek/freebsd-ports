@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/ogmrip/pkg-plist,v 1.7 2005/03/03 01:22:23 hq Exp $
+@comment $FreeBSD: ports/multimedia/ogmrip/pkg-plist,v 1.8 2005/07/03 10:38:10 hq Exp $
 bin/dvdcpy
 bin/ogmrip
 bin/srttool
@@ -21,6 +21,7 @@ include/ogmrip/ogmrip-video.h
 include/ogmrip/ogmrip-vobsub.h
 include/ogmrip/ogmrip-vorbis.h
 include/ogmrip/ogmrip-wav.h
+%%X264_SUPPORT%%include/ogmrip/ogmrip-x264.h
 include/ogmrip/ogmrip-xvid.h
 include/ogmrip/ogmrip.h
 include/ogmspawn/ogmsp-bin.h
