@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/japanese/ebnetd/pkg-plist,v 1.9 2004/10/31 21:56:07 pav Exp $
 etc/ebnetd.conf.sample
 etc/rc.d/ebnetd.sh
 libexec/ebhtstat
@@ -16,4 +16,4 @@ sbin/ndtpcheck
 sbin/ndtpcontrol
 sbin/ndtpd
 @exec /bin/mkdir -m 0755 -p /var/run/ebnetd
-@unexec rmdir /var/run/ebnetd
+@dirrmtry /var/run/ebnetd
