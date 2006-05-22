@@ -4,7 +4,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD$
+# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.3 2006/05/15 12:51:52 ahze Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.2 2006/05/15 02:46:26 ahze Exp $
 #
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -95,9 +95,6 @@
 #
 # WITH_CACA=yes
 #  Console Graphics Support (implies WITH_AALIB)
-#
-# WITH_DV=yes
-#  Digital video input
 #
 # WITH_FRIBIDI=yes
 #
@@ -290,7 +287,7 @@ pre-install:
 .endif
 .if !defined(WITHOUT_WXGTK)
 	${ECHO_CMD} "share/pixmaps/vlc.png" >> ${PLIST}
-	${ECHO_CMD} "share/applications/wxvlc.desktop" >> ${PLIST}
+	${ECHO_CMD} "share/applications/vlc.desktop" >> ${PLIST}
 .endif
 .if !defined(WITHOUT_WXGTK) || defined(WITH_SKINS)
 	${ECHO_CMD} "@unexec ${RMDIR} %D/share/applications 2>/dev/null || ${TRUE}" >> ${PLIST}
@@ -365,7 +362,7 @@ do-install:
 	${INSTALL_DATA} ${FAKEDIR}/share/vlc/vlc48x48.png ${PREFIX}/share/pixmaps/gvlc.png
 .endif
 .if !defined(WITHOUT_WXGTK)
-	${INSTALL_DATA} ${FILESDIR}/wxvlc.desktop ${PREFIX}/share/applications
+	${INSTALL_DATA} ${FILESDIR}/vlc.desktop ${PREFIX}/share/applications
 	${INSTALL_DATA} ${FAKEDIR}/share/vlc/vlc48x48.png ${PREFIX}/share/pixmaps/vlc.png
 .endif
 .endif
