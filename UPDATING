@@ -6,6 +6,12 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060524:
+  AFFECTS: users of java/jasmin
+  AUTHOR: hq@FreeBSD.org
+
+  The executable has been renamed to 'jasmin' (was 'jasmin.sh')
+
 2006-05-22:
   AFFECTS: users of astro/boinc-setiathome-enhanced,
            astro/boinc-setiathome-naparst, astro-boinc-setiathome
@@ -3548,4 +3554,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.329 2006/05/19 12:03:17 sem Exp $
+$FreeBSD: ports/UPDATING,v 1.330 2006/05/22 12:10:56 pav Exp $
