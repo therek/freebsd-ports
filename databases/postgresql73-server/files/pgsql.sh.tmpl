@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/databases/postgresql73-server/files/pgsql.sh.tmpl,v 1.17 2005/12/25 20:06:23 girgen Exp $
+# $FreeBSD: ports/databases/postgresql73-server/files/pgsql.sh.tmpl,v 1.18 2006/02/20 20:46:51 dougb Exp $
 #
 # PROVIDE: postgresql
 # REQUIRE: LOGIN
@@ -22,6 +22,7 @@
 prefix=%%PREFIX%%
 
 . %%RC_SUBR%%
+command=${prefix}/bin/pg_ctl
 
 load_rc_config postgresql
 
@@ -34,7 +35,6 @@ postgresql_class=${postgresql_class:-"default"}
 
 name=postgresql
 rcvar=`set_rcvar`
-command=${prefix}/bin/pg_ctl
 command_args="-D ${postgresql_data} ${postgresql_flags}"
 extra_commands="reload initdb"
 
