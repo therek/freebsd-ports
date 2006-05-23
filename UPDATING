@@ -12,7 +12,7 @@ upgrades.
 
   The executable has been renamed to 'jasmin' (was 'jasmin.sh')
 
-2006-05-22:
+20060522:
   AFFECTS: users of astro/boinc-setiathome-enhanced,
            astro/boinc-setiathome-naparst, astro-boinc-setiathome
   AUTHOR: r.c.ladan@gmail.com
@@ -3554,4 +3554,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.330 2006/05/22 12:10:56 pav Exp $
+$FreeBSD: ports/UPDATING,v 1.331 2006/05/23 23:28:18 hq Exp $
