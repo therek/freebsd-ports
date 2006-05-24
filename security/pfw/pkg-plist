@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/pfw/pkg-plist,v 1.4 2006/03/15 10:16:57 garga Exp $
+@comment $FreeBSD: ports/security/pfw/pkg-plist,v 1.5 2006/05/15 11:23:32 garga Exp $
 www/pfw/include.inc.php
 www/pfw/bin/commandwrapper.sh
 www/pfw/bin/packetfilter.sh
@@ -83,4 +83,3 @@ www/pfw/web/stylesheet/screen.css
 @dirrm www/pfw/web/stylesheet
 @dirrm www/pfw/web
 @dirrmtry www/pfw
-@dirrmtry www
