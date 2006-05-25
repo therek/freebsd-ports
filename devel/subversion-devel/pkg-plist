@@ -1,9 +1,10 @@
-@comment $FreeBSD: ports/devel/subversion/pkg-plist,v 1.32 2005/12/11 11:05:26 lev Exp $
+@comment $FreeBSD: ports/devel/subversion/pkg-plist,v 1.33 2006/02/23 10:36:17 ade Exp $
 bin/svn
 bin/svnadmin
 bin/svndumpfilter
 bin/svnlook
 bin/svnserve
+%%ASVN%%bin/asvn
 %%SVNSERVE_WRAPPER%%bin/svnserve.bin
 bin/svnversion
 include/subversion-1/mod_dav_svn.h
