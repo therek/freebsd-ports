@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/security/cyrus-sasl/pkg-install,v 1.11 2003/02/26 11:25:55 edwin Exp $
+#	$FreeBSD: ports/security/cyrus-sasl/pkg-install,v 1.12 2003/05/09 12:41:21 arved Exp $
 #
 # Created by: stb@FreeBSD.org for the cyrus imap server
 # Added to the cyrus-sasl port by hetzels@westbend.net
@@ -76,7 +76,7 @@ create_sasldb() {
 	if [ ! -f ${SASLDB_NAME} ]; then
 		echo "test" | ${PKG_PREFIX}/sbin/saslpasswd -p -c cyrus
 		if [ `${PKG_PREFIX}/sbin/sasldblistusers | wc -l` -eq 0 ] ; then
-                        echo "WARNING: Failed to create ${PKG_PREFIX}/etc/$SASLDB_NAME}"
+                        echo "WARNING: Failed to create ${SASLDB_NAME}"
                 else
 			${PKG_PREFIX}/sbin/saslpasswd -d cyrus
 			chown ${CYRUS_USER}:mail ${SASLDB_NAME}
