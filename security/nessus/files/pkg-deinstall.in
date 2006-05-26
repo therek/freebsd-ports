@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/nessus/scripts/pkg-deinstall,v 1.1 2004/11/09 18:29:03 sem Exp $
+# $FreeBSD$
 #
 
 ECHO_CMD=echo
