@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net-mgmt/airport/pkg-plist,v 1.10 2006/05/23 23:43:23 hq Exp $
 bin/airport
 bin/airport2
 bin/hostmon
@@ -9,6 +9,7 @@ bin/airmodem
 %%DATADIR%%/HostMonitor.jar
 %%DATADIR%%/LinkMonitor.jar
 %%DATADIR%%/AirportModemUtility.jar
+@dirrm %%DATADIR%%
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/COPYING
 %%PORTDOCS%%%%DOCSDIR%%/helpdocs/ReadMe.txt
