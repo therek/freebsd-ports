@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.120 2006/05/28 13:24:04 pav Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.121 2006/05/28 13:37:03 pav Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.370 2006/04/27 01:40:22 ahze Exp $
 #
@@ -401,7 +401,7 @@ gal2_LIB_DEPENDS=	gal-2.4.0:${PORTSDIR}/x11-toolkits/gal2
 gal2_DETECT=		${X11BASE}/libdata/pkgconfig/gal-2.4.pc
 gal2_USE_GNOME_IMPL=gnomeui libgnomeprintui
 
-gnomecontrolcenter2_LIB_DEPENDS=gnome-window-settings.1:${PORTSDIR}/sysutils/gnomecontrolcenter2
+gnomecontrolcenter2_LIB_DEPENDS=gnome-window-settings.1:${PORTSDIR}/sysutils/gnome-control-center
 gnomecontrolcenter2_DETECT=${X11BASE}/libdata/pkgconfig/gnome-window-settings-2.0.pc
 gnomecontrolcenter2_USE_GNOME_IMPL=desktopfileutils gnomedesktop gnomemenus metacity nautilus2 desktopfileutils
 
