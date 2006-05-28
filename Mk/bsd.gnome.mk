@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.116 2006/05/28 00:57:23 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.117 2006/05/28 02:53:19 mezz Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.370 2006/04/27 01:40:22 ahze Exp $
 #
@@ -422,8 +422,8 @@ gtksourceview_DETECT=	${X11BASE}/libdata/pkgconfig/gtksourceview-1.0.pc
 gtksourceview_USE_GNOME_IMPL=libgnome libgnomeprintui
 
 pkgconfig_DETECT=			${LOCALBASE}/bin/pkg-config
-pkgconfig_BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
-pkgconfig_RUN_DEPENDS=		pkg-config:${PORTSDIR}/devel/pkgconfig
+pkgconfig_BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkg-config
+pkgconfig_RUN_DEPENDS=		pkg-config:${PORTSDIR}/devel/pkg-config
 
 libgsf_LIB_DEPENDS=			gsf-1.114:${PORTSDIR}/devel/libgsf
 libgsf_DETECT=			${X11BASE}/libdata/pkgconfig/libgsf-1.pc
