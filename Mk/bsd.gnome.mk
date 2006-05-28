@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.117 2006/05/28 02:53:19 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.118 2006/05/28 05:47:28 mezz Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.370 2006/04/27 01:40:22 ahze Exp $
 #
@@ -188,8 +188,8 @@ oaf_DETECT=		${OAF_CONFIG}
 oaf_USE_GNOME_IMPL=	glib12 orbit libxml
 
 gnomemimedata_DETECT=	${X11BASE}/libdata/pkgconfig/gnome-mime-data-2.0.pc
-gnomemimedata_BUILD_DEPENDS=${gnomemimedata_DETECT}:${PORTSDIR}/misc/gnomemimedata
-gnomemimedata_RUN_DEPENDS=${gnomemimedata_DETECT}:${PORTSDIR}/misc/gnomemimedata
+gnomemimedata_BUILD_DEPENDS=${gnomemimedata_DETECT}:${PORTSDIR}/misc/gnome-mime-data
+gnomemimedata_RUN_DEPENDS=${gnomemimedata_DETECT}:${PORTSDIR}/misc/gnome-mime-data
 gnomemimedata_USE_GNOME_IMPL=gnomehier pkgconfig
 
 GCONF_CONFIG?=		${X11BASE}/bin/gconf-config
