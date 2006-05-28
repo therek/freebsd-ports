@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.118 2006/05/28 05:47:28 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.119 2006/05/28 12:41:44 pav Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.370 2006/04/27 01:40:22 ahze Exp $
 #
@@ -210,7 +210,7 @@ libcapplet_LIB_DEPENDS=	capplet.5:${PORTSDIR}/x11/libcapplet
 libcapplet_DETECT=	${X11BASE}/etc/cappletConf.sh
 libcapplet_USE_GNOME_IMPL=gnomelibs
 
-gnomeprint_LIB_DEPENDS=	gnomeprint.16:${PORTSDIR}/print/gnomeprint
+gnomeprint_LIB_DEPENDS=	gnomeprint.16:${PORTSDIR}/print/gnome-print
 gnomeprint_DETECT=	${X11BASE}/etc/printConf.sh
 gnomeprint_USE_GNOME_IMPL=gnomelibs gnomecanvas
 
