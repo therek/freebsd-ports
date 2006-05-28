@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.115 2006/05/09 22:21:29 jylefort Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.116 2006/05/28 00:57:23 mezz Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.370 2006/04/27 01:40:22 ahze Exp $
 #
@@ -226,7 +226,7 @@ libgda_DETECT=		${GDA_CONFIG}
 libgda_USE_GNOME_IMPL=	gconf bonobo
 
 GNOMEDB_CONFIG?=	${X11BASE}/bin/gnomedb-config
-gnomedb_LIB_DEPENDS=	gnomedb.0:${PORTSDIR}/databases/gnomedb
+gnomedb_LIB_DEPENDS=	gnomedb.0:${PORTSDIR}/databases/gnome-db
 gnomedb_CONFIGURE_ENV=	GNOMEDB_CONFIG="${GNOMEDB_CONFIG}"
 gnomedb_MAKE_ENV=	GNOMEDB_CONFIG="${GNOMEDB_CONFIG}"
 gnomedb_DETECT=		${GNOMEDB_CONFIG}

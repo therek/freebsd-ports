@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1009 2006/05/28 02:24:08 mezz Exp $
+# $FreeBSD: ports/MOVED,v 1.1010 2006/05/28 02:41:12 mezz Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2308,3 +2308,4 @@ devel/gnomecommon|devel/gnome-common|2006-05-27|Renamed to use real vendor packa
 archivers/fileroller|archivers/file-roller|2006-05-27|Renamed to use real vendor package name
 audio/gnomeaudio2|audio/gnome-audio|2006-05-27|Renamed to use real vendor package name
 audio/gnomemedia2|audio/gnome-media|2006-05-27|Renamed to use real vendor package name
+databases/gnomedb|databases/gnome-db|2006-05-27|Renamed to use real vendor package name
