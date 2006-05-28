@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.124 2006/05/28 16:11:37 pav Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.125 2006/05/28 19:27:46 mezz Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.370 2006/04/27 01:40:22 ahze Exp $
 #
@@ -170,7 +170,7 @@ imlib_DETECT=		${IMLIB_CONFIG}
 imlib_USE_GNOME_IMPL=	gtk12
 
 GNOME_CONFIG?=		${X11BASE}/bin/gnome-config
-gnomelibs_LIB_DEPENDS=	gnome.5:${PORTSDIR}/x11/gnomelibs
+gnomelibs_LIB_DEPENDS=	gnome.5:${PORTSDIR}/x11/gnome-libs
 gnomelibs_CONFIGURE_ENV=GNOME_CONFIG="${GNOME_CONFIG}"
 gnomelibs_MAKE_ENV=	GNOME_CONFIG="${GNOME_CONFIG}"
 gnomelibs_DETECT=	${GNOME_CONFIG}
