@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1000 2006/05/26 09:48:02 vd Exp $
+# $FreeBSD: ports/MOVED,v 1.1001 2006/05/27 17:51:09 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2299,3 +2299,4 @@ www/preferential-firefox|www/xpi-preferential|2006-05-25|Preferential is not lim
 x11/xfedor||2006-05-26|Has expired: old, old, old, unmaintained, no usable MASTER_SITES
 devel/p5-Encode|converters/p5-Encode|2006-05-27|Move to better category
 devel/p5-Encode-compat|converters/p5-Encode-compat|2006-05-27|Move to better category
+accessibility/gnomemag|accessibility/gnome-mag|2006-05-27|Renamed to use real vendor package name
