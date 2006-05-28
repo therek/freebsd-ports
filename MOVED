@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1034 2006/05/28 15:54:07 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1035 2006/05/28 15:59:40 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2336,3 +2336,6 @@ textproc/gnomespell|textproc/gnome-spell|2006-05-28|Renamed to use real vendor p
 textproc/gtkspell2|textproc/gtkspell|2006-05-28|Use unversioned name
 textproc/gtkspell2-reference|textproc/gtkspell-reference|2006-05-28|Use unversioned name
 x11/gnomeapplets2|x11/gnome-applets|2006-05-28|Renamed to use real vendor package name
+devel/gnomevfs|devel/gnome-vfs1|2006-05-28|Renamed to use real vendor package name
+devel/gnomevfs2|devel/gnome-vfs|2006-05-28|Renamed to use real vendor package name
+devel/gnomevfs2-reference|devel/gnome-vfs-reference|2006-05-28|Renamed to use real vendor package name
