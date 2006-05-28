@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.121 2006/05/28 13:37:03 pav Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.122 2006/05/28 15:30:01 pav Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.370 2006/04/27 01:40:22 ahze Exp $
 #
@@ -483,8 +483,8 @@ pygnomeextras_RUN_DEPENDS=	${pygnomeextras_DETECT}:${PORTSDIR}/x11-toolkits/py-g
 pygnomeextras_USE_GNOME_IMPL=pygnome2 libgtkhtml
 
 gnomedocutils_DETECT=	${X11BASE}/libdata/pkgconfig/gnome-doc-utils.pc
-gnomedocutils_BUILD_DEPENDS=${gnomedocutils_DETECT}:${PORTSDIR}/textproc/gnomedocutils
-gnomedocutils_RUN_DEPENDS=${gnomedocutils_DETECT}:${PORTSDIR}/textproc/gnomedocutils
+gnomedocutils_BUILD_DEPENDS=${gnomedocutils_DETECT}:${PORTSDIR}/textproc/gnome-doc-utils
+gnomedocutils_RUN_DEPENDS=${gnomedocutils_DETECT}:${PORTSDIR}/textproc/gnome-doc-utils
 gnomedocutils_USE_GNOME_IMPL=libxslt
 
 pygnomedesktop_DETECT=		${LOCALBASE}/libdata/pkgconfig/gnome-python-desktop-2.0.pc

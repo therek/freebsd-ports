@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1030 2006/05/28 15:30:01 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1031 2006/05/28 15:36:55 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2331,3 +2331,4 @@ sysutils/gnomecontrolcenter|sysutils/gnome-control-center1|2006-05-28|Renamed to
 sysutils/gnomecontrolcenter2|sysutils/gnome-control-center|2006-05-28|Renamed to use real vendor package name
 sysutils/gnomesystemmonitor|sysutils/gnome-system-monitor|2006-05-28|Renamed to use real vendor package name
 sysutils/gnomesystemtools|sysutils/gnome-system-tools|2006-05-28|Renamed to use real vendor package name
+textproc/gnomedocutils|textproc/gnome-doc-utils|2006-05-28|Renamed to use real vendor package name
