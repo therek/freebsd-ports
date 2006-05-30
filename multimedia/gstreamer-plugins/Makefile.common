@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.31 2006/05/16 11:22:36 ahze Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.32 2006/05/17 14:34:29 ahze Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.40 2006/04/23 21:40:21 marcus Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -299,9 +299,6 @@ PLIST_FILES=	${GST_LIB_DIR}/libgstpng.so \
 .if ${GST_PLUGIN}=="libvisual"
 LIB_DEPENDS+=	visual.0:${PORTSDIR}/graphics/libvisual
 DIST=	base
-.if ${OSVERSION} < 500000
-BROKEN=	Does not build on 4.x
-.endif
 .endif
 
 # mad
