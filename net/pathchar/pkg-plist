@@ -1,6 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/pathchar/pkg-plist,v 1.4 2000/11/22 00:26:02 obrien Exp $
 bin/pathchar
-share/doc/pathchar/README.pathchar
-share/doc/pathchar/pathcharnotes.html
-share/doc/pathchar/pathchar.mantxt
-@dirrm share/doc/pathchar
+%%PORTDOCS%%%%DOCSDIR%%/README.pathchar
+%%PORTDOCS%%%%DOCSDIR%%/pathcharnotes.html
+%%PORTDOCS%%%%DOCSDIR%%/pathchar.mantxt
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
