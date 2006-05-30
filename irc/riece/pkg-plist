@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/irc/riece/pkg-plist,v 1.14 2005/11/23 00:53:15 barner Exp $
+@comment $FreeBSD: ports/irc/riece/pkg-plist,v 1.15 2005/12/27 02:14:54 edwin Exp $
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-000.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-000.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-200.el
@@ -45,6 +45,8 @@
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-doctor.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-emacs.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-emacs.elc
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-epg.el
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-epg.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-eval-ruby.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-eval-ruby.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-eval.el
