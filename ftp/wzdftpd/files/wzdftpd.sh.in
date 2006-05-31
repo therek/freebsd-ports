@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop wzdftpd
-# $FreeBSD: ports/ftp/wzdftpd/files/wzdftpd.sh,v 1.2 2004/12/13 10:03:32 krion Exp $
+# $FreeBSD: ports/ftp/wzdftpd/files/wzdftpd.sh,v 1.3 2006/02/20 20:47:01 dougb Exp $
 
 # PROVIDE: wzdftpd
 # REQUIRE: DAEMON
