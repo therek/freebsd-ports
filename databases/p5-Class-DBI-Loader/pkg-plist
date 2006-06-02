@@ -1,10 +1,12 @@
-@comment $FreeBSD: ports/databases/p5-Class-DBI-Loader/pkg-plist,v 1.2 2005/02/21 17:07:45 mat Exp $
 %%SITE_PERL%%/Class/DBI/Loader.pm
 %%SITE_PERL%%/Class/DBI/Loader/Generic.pm
 %%SITE_PERL%%/Class/DBI/Loader/Pg.pm
 %%SITE_PERL%%/Class/DBI/Loader/SQLite.pm
 %%SITE_PERL%%/Class/DBI/Loader/mysql.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/DBI/Loader/.packlist
+%%PORTDOCS%%%%DOCSDIR%%/Changes
+%%PORTDOCS%%%%DOCSDIR%%/README
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/DBI/Loader
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/DBI
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class
