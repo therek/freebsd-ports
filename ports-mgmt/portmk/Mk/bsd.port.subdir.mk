@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/devel/portmk/Mk/bsd.port.subdir.mk,v 1.8 2006/01/28 07:41:18 linimon Exp $
+# $FreeBSD: ports/devel/portmk/Mk/bsd.port.subdir.mk,v 1.9 2006/03/20 09:53:04 linimon Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -33,7 +33,7 @@
 #	configure, deinstall,
 #	depend, depends, describe, extract, fetch, fetch-list, ignorelist,
 #	install, maintainer, makesum, package, readmes, realinstall, reinstall,
-#	status, tags
+#	tags
 #
 #	search:
 #		Search for ports using either 'make search key=<keyword>'
@@ -110,7 +110,6 @@ TARGETS+=	package
 TARGETS+=	package-recursive
 TARGETS+=	realinstall
 TARGETS+=	reinstall
-TARGETS+=	status
 TARGETS+=	tags
 
 .for __target in ${TARGETS}
