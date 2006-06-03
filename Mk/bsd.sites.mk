@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.368 2006/05/21 21:06:55 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.369 2006/05/29 20:26:02 alepulver Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1153,6 +1153,20 @@ MASTER_SITE_TEX_CTAN+=  \
 MASTER_SITE_THEMES+= \
 	http://download.freshmeat.net/themes/%SUBDIR%/ \
 	ftp://gd.tuwien.ac.at/opsys/linux/freshmeat/themes/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_TUCOWS)
+.for mirror in chariot ns-linux iinets easyhost bihnet pucpr cdli olivant otenet hellasonline pihk \
+	cyberec panservice fastweb mclink kasnet wananchi latvia uunetnl wish bit vianl introweb \
+	dekooi inspirenet pl-task clix simplesnet netvisao idilis rdstm atk saix mweb mundo-r gva \
+	dataphone ankara tulumba tr-net mintac epix theplanet wcn ukms blueyonder
+MASTER_SITE_TUCOWS+= \
+	http://${mirror}.linux.tucows.com/files/%SUBDIR%/
+.endfor
+MASTER_SITE_TUCOWS+= \
+	http://linuxberg.nexicom.net/files/%SUBDIR%/ \
+	http://linuxberg.xs4all.nl/files/%SUBDIR%/ \
+	http://linuxberg.ua.pt/files/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_VIM)
