@@ -1,12 +1,24 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/javavmwrapper/pkg-deinstall,v 1.1 2004/11/11 19:17:37 glewis Exp $
 
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin
 
 # Run this script at the pre-deinstall stage
 if [ "x${2}" != "xDEINSTALL" ]; then
     exit 0
+fi
+
+# The option configuration file
+OPTION_CONF="${PKG_PREFIX}/etc/javavm_opts.conf"
+
+# Remove the option configuration file if its identical to the
+# distributed version.
+if [ -f "${OPTION_CONF}" -a -f "${OPTION_CONF}.dist" ]; then
+	if [ `sed -e '/^#/d' -e '/^\s*$/d' "${OPTION_CONF}" | sort | md5` = \
+	     `sed -e '/^#/d' -e '/^\s*$/d' "${OPTION_CONF}.dist" | sort | md5` ]; then
+		rm -f "${OPTION_CONF}"
+	fi
 fi
 
 # The configuration file
