@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1056 2006/06/03 11:56:39 vanilla Exp $
+# $FreeBSD: ports/MOVED,v 1.1057 2006/06/03 14:02:21 vanilla Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2361,3 +2361,4 @@ korean/firefox-ko|www/firefox-i18n|2006-06-01|Single-locale firefox l10n ports a
 devel/p5-Class-Gomor-Hash|devel/p5-Class-Gomor|2006-06-01|p5-Class-Gomor-Hash is now packaged with p5-Class-Gomor
 x11-wm/libepplet||2006-06-03|Has expired
 x11/efancylauncher||2006-06-03|Has expired
+graphics/gimp-ufraw|graphics/ufraw|2006-06-04|UFRaw is a standalone app, GIMP plug-in is only a feature
