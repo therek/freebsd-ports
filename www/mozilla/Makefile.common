@@ -3,7 +3,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.14 2006/05/13 04:41:15 edwin Exp $
+# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.15 2006/05/30 03:46:46 ahze Exp $
 #    $MCom: ports/www/mozilla/Makefile.common,v 1.20 2006/03/09 00:45:43 ahze Exp $
 
 # This file contains some reusable components for mozilla ports. It's of
@@ -325,7 +325,8 @@ gecko-create-plist:
 	${MV} ${FAKEDIR}/bin/${MOZILLA:S/${MOZILLA_SUFX}//} ${FAKEDIR}/bin/${MOZILLA}
 	${MV} ${FAKEDIR}/bin/${MOZILLA:S/${MOZILLA_SUFX}//}-config ${FAKEDIR}/bin/${MOZILLA}-config
 .for pc in ${PKGCONFIG_FILES:S|${MOZILLA_SUFX}||}
-	${MV} -f ${FAKEDIR}/lib/pkgconfig/${pc}.pc ${FAKEDIR}/lib/pkgconfig/${pc:S/${MOZILLA:S,${MOZILLA_SUFX},,}/${MOZILLA}/}.pc
+	${SED} -e 's|Requires: ${MOZILLA:S/${MOZILLA_SUFX}//}|Requires: ${MOZILLA}|' \
+	${FAKEDIR}/lib/pkgconfig/${pc}.pc > ${FAKEDIR}/lib/pkgconfig/${pc:S/${MOZILLA:S,${MOZILLA_SUFX},,}/${MOZILLA}/}.pc
 .endfor
 	@${REINPLACE_CMD} -e 's|${MOZILLA}-bin|${MOZILLA:S/${MOZILLA_SUFX}//}|; \
 		s|$${progbase}-bin|${MOZILLA:S/${MOZILLA_SUFX}//}-bin|' \
