@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.11 2006/04/17 00:02:15 ahze Exp $
+# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.12 2006/04/17 00:20:12 ahze Exp $
 #    $MCom: ports/www/mozilla/bsd.gecko.mk,v 1.17 2006/03/10 12:42:50 ahze Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -35,12 +35,16 @@ Gecko_Pre_Include=			bsd.gecko.mk
 #
 # Ports should use the following:
 #
-# USE_GECKO= mozilla firefox seamonkey
+# USE_GECKO= mozilla firefox-devel firefox seamonkey
 #  The list of gecko backends that the port supports. Unless the user
 #  overrides it with WITH_GECKO, the first gecko listed in USE_GECKO
 #  will be the default. In the above example, www/mozilla will be used
 #  as a gecko backend unless WITH_GECKO=firefox or WITH_GECKO=seamonkey
 #  is defined by the user.
+#
+# USE_GECKO= firefox-devel<->firefox
+#  This will sed -e 's/firefox/firefox-devel/' on Makefile.in's and configure 
+#  if ${GECKO}=="firefox-devel"
 #
 #  Example:
 #  USE_GECKO= mozilla firefox seamonkey
@@ -53,7 +57,7 @@ Gecko_Pre_Include=			bsd.gecko.mk
 #  If you want your port to check the ${GECKO} variable to see which backend
 #  has been chosen.
 #
-#  Example: 
+#  Example:
 #  USE_GECKO= mozilla firefox seamonkey
 #  .include <bsd.port.pre.mk>
 #  .include "${.CURDIR}/../../www/mozilla/bsd.gecko.mk"
@@ -84,8 +88,11 @@ ${gecko}_PLIST?=	${X11BASE}/lib/${gecko}/libgtkembedmoz.so
 # Figure out which mozilla to use
 # Weed out bad options in USE_GECKO
 .for badgecko in ${USE_GECKO}
-. if ${_GECKO_ALL:M${badgecko}}!=""
-GOOD_USE_GECKO+=	${badgecko}
+. if ${_GECKO_ALL:M${badgecko:C/^([^<->]+).*/\1/}}!=""
+GOOD_USE_GECKO+=	${badgecko:C/^([^<->]+).*/\1/}
+. endif
+. if ${_GECKO_ALL:M${badgecko:C/^[^<->]+<->([^<->]+).*/\1/}}!="${badgecko:C/^([^<->]+).*/\1/}"
+${badgecko:C/^([^<->]+).*/\1/}_HACK=	s:${badgecko:C/^[^<->]+<->([^<->]+).*/\1/}:${badgecko:C/^([^<->]+).*/\1/}:g
 . endif
 .endfor
 
@@ -153,6 +160,14 @@ _gecko-pre-everything::
 	@${ECHO_CMD} "   ${gecko} "
 .endfor
 	@${ECHO_CMD} ""
+
+post-patch: gecko-post-patch
+
+gecko-post-patch:
+.if defined(${GECKO}_HACK)
+	${FIND} ${WRKSRC} -name "Makefile.in" -o -name "configure" | \
+		${XARGS} ${REINPLACE_CMD} -e ${${GECKO}_HACK}
+.endif
 
 #.endif # end it all
 .endif
