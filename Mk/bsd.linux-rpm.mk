@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-rpm.mk,v 1.5 2006/05/16 18:19:35 netchild Exp $
+# $FreeBSD: ports/Mk/bsd.linux-rpm.mk,v 1.6 2006/05/20 15:54:24 netchild Exp $
 #
 
 # Variables:
@@ -127,7 +127,7 @@ linux-rpm-generate-plist:
 	@cd ${WRKSRC} && \
 	${FIND} * ! -type d | ${SORT} > ${PLIST} && \
 	${FIND} * -type d | ${SORT} | ${SED} -e 's|^|@dirrm |' > ${PLIST}.dirs
-	@${GREP} '^@dirrm' ${PORTSDIR}/emulators/linux_base-${_LINUX_BASE_SUFFIX}/pkg-plist | ${SORT} > ${PLIST}.shared-dirs
+	@${GREP} '^@dirrm' ${PORTSDIR}/emulators/linux_base-${_LINUX_BASE_SUFFIX}/pkg-plist | ${SED} 's:^@dirrmtry:@dirrm:g' | ${SORT} > ${PLIST}.shared-dirs
 	@${COMM} -1 -3 ${PLIST}.shared-dirs ${PLIST}.dirs | ${SORT} -r >> ${PLIST}
 .    endif
 .  endif
