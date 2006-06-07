@@ -1,9 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/resin3/files/resin.sh.in,v 1.4 2005/02/24 22:50:29 hq Exp $
 #
 
 # PROVIDE: %%APP_NAME%%
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
 
 #
 # Add the following line to /etc/rc.conf to enable %%APP_NAME%%:
