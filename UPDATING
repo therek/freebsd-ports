@@ -34,7 +34,8 @@ upgrades.
   necessary to have the correct log on smtpd.
 
   After upgrade from 2.3.x you will need to set environment var SMTPAUTH to
-  enable auth, you canset it as "login" or "crammd5" to set which auth you want.
+  enable auth, you can set it as "login" or "crammd5" to set which auth you
+  want.
 
 20060528:
   AFFECTS: users of news/inn
@@ -3631,4 +3632,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.338 2006/05/29 20:33:41 lawrance Exp $
+$FreeBSD: ports/UPDATING,v 1.339 2006/06/05 19:23:51 lofi Exp $
