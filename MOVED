@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1064 2006/06/07 12:42:18 leeym Exp $
+# $FreeBSD: ports/MOVED,v 1.1065 2006/06/08 07:30:31 clsung Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1719,7 +1719,6 @@ games/xnibbles||2005-11-05|Port passed expiry date and was removed.
 games/xothello||2005-11-05|Port passed expiry date and was removed.
 games/xsol||2005-11-05|Port passed expiry date and was removed.
 graphics/diacanvas||2005-11-05|Port passed expiry date and was removed.
-graphics/fractorama||2005-11-05|Port passed expiry date and was removed.
 graphics/linux_mesa3||2005-11-05|Port passed expiry date and was removed.
 graphics/osgedit||2005-11-05|Port passed expiry date and was removed.
 graphics/py-imaging-handbook||2005-11-05|Port passed expiry date and was removed.
