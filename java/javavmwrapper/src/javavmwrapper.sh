@@ -25,7 +25,7 @@
 # Greg Lewis
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.16 2006/06/03 17:32:24 glewis Exp $
+# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.17 2006/06/04 03:52:19 glewis Exp $
 #
 # MAINTAINER=java@FreeBSD.org
 
@@ -42,6 +42,17 @@ _JAVAVM_MAKE=/usr/bin/make
 # Try to run a Java command.
 #
 tryJavaCommand () {
+    # If this is a test run, spit out the configuration and exit
+    if [ -n "${JAVAVM_DRYRUN}" ]; then
+	echo "JAVA_HOME=${JAVA_HOME}"
+	echo "JAVAVM_CONF=${_JAVAVM_CONF}"
+	echo "JAVAVM_OPTS_CONF=${_JAVAVM_OPTS_CONF}"
+	echo "JAVAVM_PROG=${1}"
+	echo "JAVAVM_OPTS=${_JAVAVM_OPTS}"
+	echo "JAVAVM_COMMAND=${@}"
+        exit 0
+    fi
+
     # Check for the command being executable and exec it if so.
     if [ -x "${1}" ]; then
         if [ -n "${_JAVAVM_SAVE_PATH}" ]; then
@@ -67,16 +78,16 @@ setJavaOptions () {
 
     # Possible environment variables are stackable
     if [ -n "${JAVA_HOME_PROG_OPTS}" ]; then
-        _JAVAVM_OPTS="${_JAVAVM_OPTS} ${JAVA_HOME_PROG_OPTS}"
+        _JAVAVM_OPTS="${JAVA_HOME_PROG_OPTS} ${_JAVAVM_OPTS}"
     fi
     if [ -n "${JAVA_HOME_OPTS}" ]; then
-        _JAVAVM_OPTS="${_JAVAVM_OPTS} ${JAVA_HOME_OPTS}"
+        _JAVAVM_OPTS="${JAVA_HOME_OPTS} ${_JAVAVM_OPTS}"
     fi
     if [ -n "${PROG_OPTS}" ]; then
-        _JAVAVM_OPTS="${_JAVAVM_OPTS} ${PROG_OPTS}"
+        _JAVAVM_OPTS="${PROG_OPTS} ${_JAVAVM_OPTS}"
     fi
     if [ -n "${JAVAVM_OPTS}" ]; then
-        _JAVAVM_OPTS="${_JAVAVM_OPTS} ${JAVAVM_OPTS}"
+        _JAVAVM_OPTS="${JAVAVM_OPTS} ${_JAVAVM_OPTS}"
     fi
 }
 
