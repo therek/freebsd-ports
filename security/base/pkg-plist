@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/base/pkg-plist,v 1.9 2006/01/22 02:50:19 edwin Exp $
+@comment $FreeBSD: ports/security/base/pkg-plist,v 1.10 2006/05/16 12:10:35 itetcu Exp $
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/CHANGELOG
 %%PORTDOCS%%%%DOCSDIR%%/CREDITS
@@ -94,6 +94,7 @@ www/base/languages/swedish.lang.php
 www/base/languages/turkish.lang.php
 www/base/setup/base_conf_contents.php
 www/base/setup/index.php
+www/base/setup/setup_db.inc.php
 www/base/setup/setup1.php
 www/base/setup/setup2.php
 www/base/setup/setup3.php
