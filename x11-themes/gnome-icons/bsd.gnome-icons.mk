@@ -2,7 +2,7 @@
 # Date created:				29 Feb 2004
 # Whom:					Tom McLaughlin <tmclaugh@sdf.lonestar.org>
 #
-# $FreeBSD: ports/x11-themes/gnome-icons/bsd.gnome-icons.mk,v 1.2 2004/08/11 22:01:56 pav Exp $
+# $FreeBSD: ports/x11-themes/gnome-icons/bsd.gnome-icons.mk,v 1.3 2005/11/08 12:49:48 jylefort Exp $
 #
 
 # Port logic gratuitously stolen from x11-themes/kde-icons-noia by
@@ -11,7 +11,6 @@
 PKGNAMEPREFIX=	gnome-icons-
 
 NO_BUILD=	yes
-USE_SIZE=	yes
 
 REASON=		Themes may contain artwork not done by the author. \
 		Keep FreeBSD safe if theme author violated copyrights.
