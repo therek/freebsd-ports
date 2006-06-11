@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060611:
+  AFFECTS: users of www/c-icap
+  AUTHOR: b3k@mail.ru
+
+  The format of file c-icap.magic has changed.  If you use your own
+  c-icap.magic file remember to convert it to the new format.  It can be done
+  using the convert_old_magic.pl script located in the contrib directory.
+
 20060605:
   AFFECTS: users of net/kdenetwork3
   AUTHOR: kde@FreeBSD.org
@@ -3632,4 +3640,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.339 2006/06/05 19:23:51 lofi Exp $
+$FreeBSD: ports/UPDATING,v 1.340 2006/06/07 12:16:42 garga Exp $
