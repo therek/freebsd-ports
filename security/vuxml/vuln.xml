@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1052 2006/06/11 12:55:21 nobutaka Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1053 2006/06/12 06:22:59 aaron Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -54,9 +54,9 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
-      <url>http://bugs.splitbrain.org/index.php?do=details&id=820</url>
-      <url>http://bugs.splitbrain.org/index.php?do=details&id=823</url>
-      <url>http://bugs.splitbrain.org/index.php?do=details&id=825</url>
+      <url>http://bugs.splitbrain.org/index.php?do=details&amp;id=820</url>
+      <url>http://bugs.splitbrain.org/index.php?do=details&amp;id=823</url>
+      <url>http://bugs.splitbrain.org/index.php?do=details&amp;id=825</url>
     </references>
     <dates>
       <discovery>2006-05-31</discovery>
