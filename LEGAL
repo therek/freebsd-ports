@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.479 2006/06/05 13:01:39 garga Exp $
+# $FreeBSD: ports/LEGAL,v 1.480 2006/06/13 15:14:27 flz Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -595,6 +595,7 @@ upsmon*			sysutils/upsmon		Redistribute only with
 						original source code
 urchin*.tar.gz		www/urchin5		Commercial software, also comes
 						bundled with Apache-SSL
+unreal.tournament*.run	games/linux-ut		Redistribution limited
 ut2004-lnx-*		games/linux-ut2004-demo	Redistribution limited
 uzap.tar.gz             editors/uzap		Restrictive copyright
 vbsd440e.tar.Z		security/vscan		Commercial software
