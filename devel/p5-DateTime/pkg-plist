@@ -1,6 +1,7 @@
-@comment $FreeBSD: ports/devel/p5-DateTime/pkg-plist,v 1.6 2005/02/28 15:52:28 mat Exp $
+@comment $FreeBSD: ports/devel/p5-DateTime/pkg-plist,v 1.7 2006/01/22 01:47:20 edwin Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/DateTime.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/DateTime/Duration.pm
+%%SITE_PERL%%/%%PERL_ARCH%%/DateTime/Helpers.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/DateTime/Infinite.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/DateTime/LeapSecond.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/DateTimePP.pm
