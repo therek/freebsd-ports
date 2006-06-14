@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.127 2006/05/28 20:05:18 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.128 2006/05/29 05:32:29 mezz Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.370 2006/04/27 01:40:22 ahze Exp $
 #
@@ -83,6 +83,7 @@ gnomehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "Makefile.in*" -type f | ${XARGS} $
 				 s|[(]libdir[)]/pkgconfig|(prefix)/libdata/pkgconfig|g ; \
 				 s|[$$][(]localstatedir[)]/scrollkeeper|${SCROLLKEEPER_DIR}|g ; \
 				 s|[(]datadir[)]/icons/hicolor|(prefix)/share/icons/hicolor|g ; \
+				 s|{datadir}/icons/hicolor|{prefix}/share/icons/hicolor|g ; \
 				 s|[(]libdir[)]/bonobo/servers|(prefix)/libdata/bonobo/servers|g' ; \
 			${FIND} ${WRKSRC} -name "configure" -type f | ${XARGS} ${REINPLACE_CMD} -e \
 				's|-lpthread|${PTHREAD_LIBS}|g ; \
