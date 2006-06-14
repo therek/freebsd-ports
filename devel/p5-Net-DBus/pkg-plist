@@ -1,8 +1,10 @@
-@comment $FreeBSD: ports/devel/p5-Net-DBus/pkg-plist,v 1.3 2006/01/22 01:48:01 edwin Exp $
+@comment $FreeBSD: ports/devel/p5-Net-DBus/pkg-plist,v 1.4 2006/02/16 10:43:26 novel Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/DBus/.packlist
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/DBus/DBus.bs
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/DBus/DBus.so
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus.pm
+%%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/ASyncReply.pm
+%%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/Annotation.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/RemoteObject.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/Service.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/Object.pm
@@ -19,6 +21,7 @@
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/Binding/Iterator.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/Binding/Message.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/Binding/Introspector.pm
+%%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/Binding/PendingCall.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/Binding/Server.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/Binding/Message/Signal.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/DBus/Binding/Message/MethodReturn.pm
