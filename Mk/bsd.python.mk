@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.75 2006/03/30 09:40:12 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.76 2006/06/03 17:38:18 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -224,9 +224,9 @@ _PYTHON_CMD=		${PYTHON_CMD}
 .else
 _PYTHON_CMD=		${LOCALBASE}/bin/python
 .endif
-_PYTHON_VERSION!=	${_PYTHON_CMD} -c \
+_PYTHON_VERSION!=	(${_PYTHON_CMD} -c \
 					'import sys; print sys.version[:3]' 2> /dev/null \
-					|| ${ECHO_CMD} ${_PYTHON_PORTBRANCH}
+					|| ${ECHO_CMD} ${_PYTHON_PORTBRANCH}) | ${TAIL} -1
 .endif	# defined(PYTHON_VERSION)
 
 .if !defined(USE_PYTHON)
@@ -284,11 +284,11 @@ _PYTHON_VERSION=	${_PYTHON_PORTBRANCH} # just to avoid version sanity checking.
 
 PYTHON_VERSION?=	python${_PYTHON_VERSION}
 PYTHON_CMD?=		${_PYTHON_CMD}
-PYTHONBASE!=		(${PYTHON_CMD} -c 'import sys; print sys.prefix') \
-						2> /dev/null || ${ECHO_CMD} ${LOCALBASE}
+PYTHONBASE!=		(${PYTHON_CMD} -c 'import sys; print sys.prefix' \
+						2> /dev/null || ${ECHO_CMD} ${LOCALBASE}) | ${TAIL} -1
 DEPENDS_ARGS+=		PYTHON_VERSION=${PYTHON_VERSION}
 _PYTHON_PORTVERSION!=	(${PYTHON_CMD} -c 'import string, sys; \
-							print string.split(sys.version)[0]') 2> /dev/null || ${TRUE}
+							print string.split(sys.version)[0]' 2> /dev/null || ${ECHO_CMD} ${_PYTHON_PORTBRANCH}) | ${TAIL} -1
 .if !defined(PYTHON_NO_DEPENDS) && !empty(_PYTHON_PORTVERSION)
 PYTHON_PORTVERSION=	${_PYTHON_PORTVERSION}
 .endif
