@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.10 2006/04/14 18:14:51 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.11 2006/04/25 19:56:16 pav Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -80,7 +80,7 @@ Database_Include_MAINTAINER=	ports@FreeBSD.org
 # SQLITE_VER		- Detected sqlite version.
 
 .if defined(USE_MYSQL)
-DEFAULT_MYSQL_VER?=	41
+DEFAULT_MYSQL_VER?=	50
 # MySQL client version currently supported.
 MYSQL323_LIBVER=	10
 MYSQL40_LIBVER=		12
