@@ -1,8 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/sysutils/rsnapshot/pkg-plist,v 1.1 2004/01/14 18:02:34 sergei Exp $
 bin/rsnapshot
+bin/rsnapshot-diff
 etc/rsnapshot.conf.default
-%%PORTDOCS%%%%DOCSDIR%%/AUTHORS
-%%PORTDOCS%%%%DOCSDIR%%/ChangeLog
-%%PORTDOCS%%%%DOCSDIR%%/README
-%%PORTDOCS%%%%DOCSDIR%%/TODO
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
