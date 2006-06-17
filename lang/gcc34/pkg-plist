@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc34/pkg-plist,v 1.67 2006/01/22 02:18:35 edwin Exp $
+@comment $FreeBSD: ports/lang/gcc34/pkg-plist,v 1.68 2006/03/26 18:08:14 gerald Exp $
 bin/c++%%SUFFIX%%
 bin/cpp%%SUFFIX%%
 bin/g++%%SUFFIX%%
@@ -10,7 +10,6 @@ bin/%%GNU_HOST%%-c++%%SUFFIX%%
 bin/%%GNU_HOST%%-g++%%SUFFIX%%
 bin/%%GNU_HOST%%-gcc-%%GCC_VER%%
 bin/%%GNU_HOST%%-gcc%%SUFFIX%%
-etc/rc.d/gcc%%SUFFIX%%.sh
 libexec/gcc/%%GNU_HOST%%/%%GCC_VER%%/cc1
 libexec/gcc/%%GNU_HOST%%/%%GCC_VER%%/cc1plus
 libexec/gcc/%%GNU_HOST%%/%%GCC_VER%%/f771
