@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1057 2006/06/16 22:38:16 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1058 2006/06/17 07:11:10 thierry Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -102,14 +102,15 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
-      <cvename>CVE-2006-2762</cvename>
       <bid>18175</bid>
+      <cvename>CVE-2006-2762</cvename>
       <url>http://www.securityfocus.com/archive/1/435379</url>
       <url>http://www.securityfocus.com/archive/1/436263</url>
     </references>
     <dates>
       <discovery>2006-05-30</discovery>
       <entry>2006-06-16</entry>
+      <modified>2006-06-17</modified>
     </dates>
   </vuln>
 
