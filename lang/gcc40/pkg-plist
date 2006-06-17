@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.73 2006/03/17 13:21:04 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.74 2006/03/26 05:16:42 dinoex Exp $
 bin/c++%%SUFFIX%%
 bin/cpp%%SUFFIX%%
 bin/g++%%SUFFIX%%
@@ -9,6 +9,5 @@ bin/%%GNU_HOST%%-c++%%SUFFIX%%
 bin/%%GNU_HOST%%-g++%%SUFFIX%%
 bin/%%GNU_HOST%%-gcc-%%GCC_VER%%
 bin/%%GNU_HOST%%-gcc%%SUFFIX%%
-etc/rc.d/gcc%%SUFFIX%%.sh
 info/gcc%%SUFFIX%%/dir
 @comment Insert PLIST.lib here
