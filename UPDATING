@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060616
+  AFFECTS users of all pfpro ports
+  AUTHOR: aaron@FreeBSD.org
+
+  The default certificate location has been changed to respect hier(7).  
+  The new default location is LOCALBASE/etc/pfpro/certs.
+
 20060616:
   AFFECTS users of emulation/linux_base-*
   AUTHOR: netchild@FreeBSD.org
@@ -3659,4 +3666,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.342 2006/06/12 15:46:43 erwin Exp $
+$FreeBSD: ports/UPDATING,v 1.343 2006/06/16 17:14:00 netchild Exp $
