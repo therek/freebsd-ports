@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1073 2006/06/20 15:54:23 erwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1074 2006/06/20 15:57:30 erwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2383,3 +2383,4 @@ lang/glibstdc++28||2006-06-18|Has expired: Use any variant of lang/gcc that is l
 graphics/magickwand|graphics/php-magickwand|2006-06-18|Already in the tree with the name graphics/php-magickwand
 devel/p5-Filesys-Statvfs_Df|sysutils/p5-Filesys-Statvfs|2006-06-19|Vendor split port into 2 separate modules: sysutils/p5-Filesys-Statvfs and sysutils/p5-Filesys-Df
 www/opera-devel|www/opera|2006-06-20|Merged into the stable port
+archivers/bsdtar|archivers/libarchive|2006-06-20|Merged into the libarchive port
