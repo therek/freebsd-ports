@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.10 2006/04/30 16:38:07 clement Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.11 2006/05/11 15:21:22 clement Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -294,7 +294,7 @@ APXS_PREFIX!=	${APXS} -q prefix 2> /dev/null || echo NULL
 IGNORE=	: Your apache does not support DSO modules
 .   endif
 .   if defined(AP_GENPLIST) && ${APXS_PREFIX} != ${PREFIX}
-IGNORE?=	PREFIX must be egal to APXS_PREFIX.
+IGNORE?=	PREFIX must be equal to APXS_PREFIX.
 .   endif
 .endif
 
