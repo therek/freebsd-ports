@@ -1,15 +1,15 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/misc/kde-xdg-env/files/xdg-env.sh.in,v 1.1 2005/04/17 11:32:36 lofi Exp $
 #
 # Submit missing XDG-file locations to kde@freebsd.org!
 
 export XDG_CONFIG_DIRS=\
 ${XDG_CONFIG_DIRS}:/etc/xdg:%%LOCALBASE%%/etc/xdg:%%X11BASE%%/etc/xdg:\
-%%LOCALBASE%%/etc/xdg/xfce4
+%%LOCALBASE%%/etc/xdg/xfce4:%%KDE_PREFIX%%/etc/xdg
 
 export XDG_DATA_DIRS=\
 ${XDG_DATA_DIRS}:/usr/share:%%LOCALBASE%%/share:\
-%%X11BASE%%/share:%%X11BASE%%/share/gnome
+%%X11BASE%%/share:%%X11BASE%%/share/gnome:%%KDE_PREFIX%%/share
 
 kbuildsycoca
