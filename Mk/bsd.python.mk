@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.77 2006/06/16 15:43:52 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.78 2006/06/23 03:09:16 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -288,7 +288,7 @@ PYTHONBASE!=		(${PYTHON_CMD} -c 'import sys; print sys.prefix' \
 						2> /dev/null || ${ECHO_CMD} ${LOCALBASE}) | ${TAIL} -1
 DEPENDS_ARGS+=		PYTHON_VERSION=${PYTHON_VERSION}
 _PYTHON_PORTVERSION!=	(${PYTHON_CMD} -c 'import string, sys; \
-							print string.split(sys.version)[0]' 2> /dev/null || ${ECHO_CMD} ${_PYTHON_PORTBRANCH}) | ${TAIL} -1
+							print string.split(sys.version)[0].replace("b",".b")' 2> /dev/null) | ${TAIL} -1
 .if !defined(PYTHON_NO_DEPENDS) && !empty(_PYTHON_PORTVERSION)
 PYTHON_PORTVERSION=	${_PYTHON_PORTVERSION}
 .endif
