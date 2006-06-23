@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060622
+  AFFECTS: users of www/dokuwiki
+  AUTHOR: miwi@freebsd.org
+  
+  The default install location has changed from 
+  ${PREFIX}/www/data/dokuwiki to ${PREFIX}/www/dokuwiki.  
+
 20060622:
   AFFECTS: users of databases/mysql-client
   AUTHOR: ale@FreeBSD.org
@@ -3683,4 +3690,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.345 2006/06/20 19:24:32 linimon Exp $
+$FreeBSD: ports/UPDATING,v 1.346 2006/06/22 09:07:09 ale Exp $
