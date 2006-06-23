@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.370 2006/06/03 14:46:35 sat Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.371 2006/06/07 17:45:45 dougb Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -698,31 +698,6 @@ MASTER_SITE_NETBSD+=	\
 	ftp://ftp.dti.ad.jp/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://ftp.iij.ad.jp/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://melanoma.cs.rmit.edu.au/pub/NetBSD/packages/distfiles/%SUBDIR%/
-.endif
-
-.if !defined(IGNORE_MASTER_SITE_NETSCAPE)
-MASTER_SITE_NETSCAPE+= \
-	ftp://ftp.ciril.fr/pub2/netscape/%SUBDIR%/ \
-	ftp://ftp.fu-berlin.de/unix/network/www/netscape/%SUBDIR%/ \
-	ftp://ftp.sunet.se/pub/www/Netscape/%SUBDIR%/ \
-	ftp://ftp.uit.no/pub/www/Netscape/%SUBDIR%/ \
-	ftp://ftp.uni-bielefeld.de/pub/netscape/%SUBDIR%/ \
-	ftp://ftp.uniovi.es/pub/netscape/%SUBDIR%/ \
-	ftp://sunsite.cnlab-switch.ch/mirror/netscape/%SUBDIR%/ \
-	ftp://ftp.mirrorservice.org/sites/ftp.netscape.com/pub/%SUBDIR%/ \
-	ftp://ftp.ntua.gr/pub/www/Netscape/%SUBDIR%/ \
-	ftp://sunsite.tut.fi/pub/Mirror/mirrorsite.netscape.com/pub/%SUBDIR%/ \
-	ftp://ftp.fh-wolfenbuettel.de/pub/www/netscape/%SUBDIR%/ \
-	ftp://ftp.cyf-kr.edu.pl/pub/mirror/netscape/%SUBDIR%/ \
-	ftp://ftp.rz.uni-karlsruhe.de/pub/mirror/ftp.netscape.com/pub/%SUBDIR%/ \
-	ftp://ftp.gftp.netscape.com/pub/%SUBDIR%/ \
-	ftp://ftpnscp.newaol.com/pub/%SUBDIR%/ \
-	ftp://ftp.hu-berlin.de/pub/www/netscape/%SUBDIR%/ \
-	ftp://ftp.nsysu.edu.tw/Netscape/%SUBDIR%/ \
-	ftp://ftp.uniroma2.it/%7bC/Netscape/%SUBDIR%/ \
-	ftp://ftp.ut.ee/pub/WWW/netscape/%SUBDIR%/ \
-	ftp://ftp.uni-bremen.de/pub/mirrors/ftp.netscape.com/pub/%SUBDIR%/ \
-	ftp://ftp.informatik.rwth-aachen.de/pub/mirror/ftp.netscape.com/pub/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_OSSP)
