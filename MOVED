@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1079 2006/06/21 21:23:14 itetcu Exp $
+# $FreeBSD: ports/MOVED,v 1.1080 2006/06/23 01:46:17 ahze Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2390,3 +2390,4 @@ net/fpc-inet||2006-06-21|Obsoleted after lang/fpc was updated to 2.0.2
 audio/ruby-snett|audio/snett|2006-06|Because it's a application, not a library
 audio/py-shellac|audio/shellac|2006-06|Because it's a application, not a library
 print/cups-lpr|print/cups-base|2006-06|Merged cups-lpr into cups-base
+audio/mpck|audio/checkmate|2006-06-24|project was renamed
