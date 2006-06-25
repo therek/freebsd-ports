@@ -7,6 +7,15 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20060624:
+  AFFECTS: users of audio/mt-daapd
+  AUTHOR: alex@foxybanana.com
+
+  The default database directory has been changed to /var/db/mt-daapd. The
+  default mp3 dir has been changed to ${PREFIX}/share/mt-daapd. Old 
+  configuration files will be maintained, if present, so no updating should 
+  be required.
+
+20060624:
   AFFECTS: users of net/py-bittorrent-devel and net/py-bittorrent-core-devel
   AUTHOR: lioux@FreeBSD.org
 
@@ -3703,4 +3712,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.348 2006/06/24 10:18:53 markus Exp $
+$FreeBSD: ports/UPDATING,v 1.349 2006/06/24 20:26:15 lioux Exp $
