@@ -1,6 +1,7 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/daapd/pkg-install,v 1.2 2003/10/28 10:06:50 sergei Exp $
+# $FreeBSD$
+# formerly $ FreeBSD: ports/audio/mt-daapd/pkg-install,v 1.1 2004/08/05 23:00:09 edwin Exp $
 #
 
 PATH=/bin:/usr/bin:/usr/sbin
