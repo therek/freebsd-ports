@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.533 2006/05/23 21:53:18 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.534 2006/06/16 04:53:43 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2991,6 +2991,12 @@ DEPENDS_TARGET=	install
 DEPENDS_TARGET+=	clean
 DEPENDS_ARGS+=	NOCLEANDEPENDS=yes
 .endif
+.else
+DEPENDS_ARGS+=	FORCE_PKG_REGISTER=yes
+.endif
+.if defined(DEPENDS)
+# pretty much guarantees overwrite of existing installation
+.MAKEFLAGS:	FORCE_PKG_REGISTER=yes
 .endif
 
 ################################################################
