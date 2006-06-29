@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/teTeX-base/pkg-plist,v 1.34 2005/03/02 17:58:32 hrs Exp $
+@comment $FreeBSD: ports/print/teTeX-base/pkg-plist,v 1.35 2006/05/20 16:40:54 hrs Exp $
 bin/mktexpk
 bin/mktexmf
 bin/mktextfm
@@ -203,7 +203,12 @@ lib/libkpathsea.a
 %%TEXMFDIR%%/texconfig/generic
 %%TEXMFDIR%%/texconfig/tcfmgr
 %%TEXMFDIR%%/texconfig/tcfmgr.map
+%%TEXMFCONFIGDIR%%/texconfig/tcfmgr.map
+@dirrm %%TEXMFCONFIGDIR%%/texconfig
 %%TEXMFDIR%%/release-tetex-src.txt
+%%UPDMAPDIR%%/updmap-sys.dist
+%%UPDMAPDIR%%/updmap.dist
+@dirrm %%UPDMAPDIR%%
 @exec %%MKTEXLSR%%
 @exec %%SETENV%% PATH=${PATH}:%D/bin TEXMFMAIN=%D/%%TEXMFDIR%% %%UPDMAP_SYS%%
 @unexec rm -f %D/%%TEXMFVARDIR%%/fonts/map/dvips/updmap/download35.map
