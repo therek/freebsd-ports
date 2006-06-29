@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/dimes/pkg-plist,v 1.1 2006/06/12 23:38:58 hq Exp $
 %%DATADIR%%/Classes/AgentLauncher$1.class
 %%DATADIR%%/Classes/AgentLauncher$2.class
 %%DATADIR%%/Classes/AgentLauncher.class
@@ -66,8 +66,6 @@
 %%DATADIR%%/Licences/lgpl.txt
 %%DATADIR%%/agent.sh
 %%DATADIR%%/colors.sh
-share/nls/POSIX
-share/nls/en_US.US-ASCII
 @dirrm %%DATADIR%%/Licences
 @dirrm %%DATADIR%%/Classes/JARs
 @dirrm %%DATADIR%%/Classes/Base/resources
