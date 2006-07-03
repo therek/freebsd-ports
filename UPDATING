@@ -7,6 +7,15 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20060703:
+  AFFECTS: users of audio/amarok
+  AUTHOR: mich@FreeBSD.org
+
+  A bunch of port options have been removed, so you should remove your
+  current options, before attempting to build the port.
+
+  - Enter the amarok port directory, and run `make rmconfig'
+
+20060703:
   AFFECTS: users of sysutils/portupgrade
   AUTHOR: sem@FreeBSD.org
 
@@ -3761,4 +3770,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.353 2006/07/02 15:38:17 mezz Exp $
+$FreeBSD: ports/UPDATING,v 1.354 2006/07/03 09:09:58 sem Exp $
