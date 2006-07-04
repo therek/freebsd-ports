@@ -22,7 +22,7 @@ upgrades.
   Because of portupgrade had a bug with detecting of Berkley DB version 2+,
   and a default database now set to use this version you can get portupgrade
   don't work with old databases. A quick fix is removing the databases:
-  `rm /var/pkg/pkgdb.db /usr/ports/INDEX*.db'. portupgrade will recreate
+  `rm /var/db/pkg/pkgdb.db /usr/ports/INDEX*.db'. portupgrade will recreate
   them automaticaly. It's absolutely no harm.
 
   If you don't want remove the databases you should detect what database
@@ -3770,4 +3770,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.354 2006/07/03 09:09:58 sem Exp $
+$FreeBSD: ports/UPDATING,v 1.355 2006/07/03 15:51:29 mich Exp $
