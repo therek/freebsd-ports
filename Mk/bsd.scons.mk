@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.scons.mk,v 1.1 2006/07/05 02:11:20 linimon Exp $
 #
 # bsd.scons.mk - Python-based SCons build system interface.
 # Author: Alexander Botero-Lowry <alex@foxybanana.com>
@@ -9,7 +9,7 @@
 # Please view me with 4 column tabs!
 
 # Please make sure all changes to this file are passed through the maintainer.
-SCONS_MAINTAINER=	alex@foxybanana.com> 
+SCONS_MAINTAINER=	alex@foxybanana.com
 
 #
 # SCONS_BIN is the location where the scons port installs the scons
