@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.128 2006/05/29 05:32:29 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.129 2006/06/14 02:51:02 marcus Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.370 2006/04/27 01:40:22 ahze Exp $
 #
@@ -613,18 +613,18 @@ ${component}_USE_GNOME_IMPL+=${${subcomponent}_USE_GNOME_IMPL}
 # Then use already expanded USE_GNOME_IMPL to expand USE_GNOME.
 # Also, check to see if each component has a desktop requirement.  If it does,
 # and if the user's chosen desktop is not of the same version, mark the
-# port as broken.
+# port as IGNORE.
 . for component in ${USE_GNOME}
 .      if defined(GNOME_DESKTOP_VERSION) && \
 	defined(${component}_GNOME_DESKTOP_VERSION)
 .         if ${GNOME_DESKTOP_VERSION}!=${${component}_GNOME_DESKTOP_VERSION}
-BROKEN=	${PORTNAME} wants to use the GNOME
-BROKEN+=${${component}_GNOME_DESKTOP_VERSION} desktop, but you wish to use
-BROKEN+=the GNOME ${GNOME_DESKTOP_VERSION} desktop
+IGNORE=	cannot install: ${PORTNAME} wants to use the GNOME
+IGNORE+=${${component}_GNOME_DESKTOP_VERSION} desktop, but you wish to use
+IGNORE+=the GNOME ${GNOME_DESKTOP_VERSION} desktop
 .         endif
 .      endif
 .  if ${_USE_GNOME_ALL:M${component}}==""
-BROKEN=	Unknown component ${component}
+IGNORE=	cannot install: unknown component ${component}
 .  endif
 _USE_GNOME+=	${${component}_USE_GNOME_IMPL} ${component}
 . endfor
@@ -647,7 +647,7 @@ ltverhack_PRE_PATCH=	${CP} -pf ${LTMAIN} ${WRKDIR}/gnome-ltmain.sh && \
 						done;
 .else
 .  if ${USE_GNOME:Mltverhack}!=""
-BROKEN=	${PORTNAME} uses the ltverhack GNOME component but does not use libtool
+IGNORE=	cannot install: ${PORTNAME} uses the ltverhack GNOME component but does not use libtool
 .  endif
 .endif
 

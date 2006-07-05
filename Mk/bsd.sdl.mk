@@ -29,7 +29,7 @@
 #
 
 #
-# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.8 2005/01/09 10:12:07 krion Exp $
+# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.9 2006/01/21 17:37:01 krion Exp $
 #
 
 SDL_Include_MAINTAINER=		edwin@FreeBSD.org
@@ -145,7 +145,7 @@ USE_SDL=	sdl
 _USE_SDL=
 .for component in ${USE_SDL}
 . if ${_USE_SDL_ALL:M${component}}==""
-BROKEN=	Unknown SDL component ${component}
+IGNORE=	cannot install: unknown SDL component ${component}
 . endif
 _USE_SDL+=	${_REQUIRES_${component}} ${component}
 .endfor
