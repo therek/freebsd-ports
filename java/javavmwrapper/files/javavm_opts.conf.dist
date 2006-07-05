@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/java/javavmwrapper/files/javavm_opts.conf.dist,v 1.3 2006/06/07 04:12:31 glewis Exp $
+# $FreeBSD: ports/java/javavmwrapper/files/javavm_opts.conf.dist,v 1.4 2006/06/07 20:26:21 glewis Exp $
 #
 # javavm_opts.conf.dist
 #
@@ -48,5 +48,3 @@
 # detail and should not be relied upon.
 #
 
-# This is required on SMP machines for Diablo JDK 1.5.0_06 build 0
-JAVAVM_OPTS_diablo_jdk1_5_0_java=-XX:+UseMembar
