@@ -30,7 +30,7 @@
 # Originally written by Vasil Dimov <vd@FreeBSD.org>
 # Others:
 #
-# $FreeBSD: ports/Tools/scripts/rmport,v 1.4 2006/05/02 09:16:10 vd Exp $
+# $FreeBSD: ports/Tools/scripts/rmport,v 1.5 2006/05/02 11:31:54 vd Exp $
 #
 # MAINTAINER=	vd@FreeBSD.org
 #
@@ -47,6 +47,13 @@ PCVS=${PCVS:-cvs -d pcvs.freebsd.org:/home/pcvs}
 log()
 {
 	echo "==> $*" >&2
+}
+
+escape()
+{
+	# escape characters that may appear in ports' names and
+	# break regular expressions
+	echo "${1}" |sed -E 's/(\+|\.)/\\\1/g'
 }
 
 pkgname()
@@ -193,7 +200,9 @@ edit_modules()
 
 	log "${cat}/${port}: removing from CVSROOT/modules"
 
-	${SED} -e "/^(ports_)?(..-)?${port}[[:space:]]+ports\/${cat}\/${port}\$/d" \
+	portesc=`escape ${port}`
+
+	${SED} -e "/^(ports_)?(..-)?${portesc}[[:space:]]+ports\/${cat}\/${portesc}\$/d" \
 		CVSROOT/modules
 }
 
@@ -219,7 +228,9 @@ edit_Makefile()
 
 	log "${cat}/${port}: removing from ${cat}/Makefile"
 
-	${SED} -e "/^[[:space:]]*SUBDIR[[:space:]]*\+=[[:space:]]*${port}([[:space:]]+#.*)?$/d" \
+	portesc=`escape ${port}`
+
+	${SED} -e "/^[[:space:]]*SUBDIR[[:space:]]*\+=[[:space:]]*${portesc}([[:space:]]+#.*)?$/d" \
 		ports/${cat}/Makefile
 }
 
