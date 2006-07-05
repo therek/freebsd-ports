@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1085 2006/06/29 00:17:24 jylefort Exp $
+# $FreeBSD: ports/MOVED,v 1.1086 2006/07/04 14:04:27 vd Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2402,3 +2402,4 @@ net/opengk||2006-07-04|Has expired: Latest version is from 2003-02-03. Use net/g
 security/p5-Crypt-OpenPGP||2006-07-04|Has expired: Crypt-OpenPGP was abandoned in 2002, use security/gnupg instead
 textproc/sed_inplace||2006-07-04|Has expired: This port is not required anymore
 textproc/xml4j||2006-07-04|Has expired: it has been replaced by textproc/xerces-j 8 years ago
+www/sitemapgen|www/google-sitemapgen|2006-07-05|Duplicate port
