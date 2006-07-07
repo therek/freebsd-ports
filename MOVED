@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1087 2006/07/05 20:43:28 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1088 2006/07/06 19:21:00 novel Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2404,3 +2404,4 @@ textproc/sed_inplace||2006-07-04|Has expired: This port is not required anymore
 textproc/xml4j||2006-07-04|Has expired: it has been replaced by textproc/xerces-j 8 years ago
 www/sitemapgen|www/google-sitemapgen|2006-07-05|Duplicate port
 security/gnutls-devel||2006-07-06|Development version is not active so far
+www/otrs|devel/otrs|2006-07-07|Duplicate port
