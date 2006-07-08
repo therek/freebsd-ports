@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1088 2006/07/06 19:21:00 novel Exp $
+# $FreeBSD: ports/MOVED,v 1.1089 2006/07/07 11:17:11 skv Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2405,3 +2405,4 @@ textproc/xml4j||2006-07-04|Has expired: it has been replaced by textproc/xerces-
 www/sitemapgen|www/google-sitemapgen|2006-07-05|Duplicate port
 security/gnutls-devel||2006-07-06|Development version is not active so far
 www/otrs|devel/otrs|2006-07-07|Duplicate port
+math/UFsparse|math/ufsparse|2006-07-09|port name should not have capital letters
