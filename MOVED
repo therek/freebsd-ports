@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1090 2006/07/08 23:48:56 maho Exp $
+# $FreeBSD: ports/MOVED,v 1.1091 2006/07/09 17:45:26 rafan Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2409,3 +2409,4 @@ math/UFsparse|math/ufsparse|2006-07-09|port name should not have capital letters
 sysutils/lineak_defaultplugin|sysutils/lineak-defaultplugin|2006-07-09|port name changed to match upstream
 sysutils/lineak_kdeplugins|sysutils/lineak-kdeplugins|2006-07-09|port name changed to match upstream
 sysutils/lineak_xosdplugin|sysutils/lineak-xosdplugin|2006-07-09|port name changed to match upstream
+japanese/phpgroupware||2006-04-10|removed at mainter request (because broken and vulnerabilities)
