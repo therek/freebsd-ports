@@ -1,8 +1,8 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/math/octave/files/octave,v 1.1 2003/07/23 23:41:24 maho Exp $
+# $FreeBSD: ports/math/octave/files/octave.in,v 1.1 2005/05/26 17:32:40 jylefort Exp $
 
-OCTAVE_EXEC=%%PREFIX%%/bin/octave-%%OCTAVE_VERSION%%
+OCTAVE_EXEC=%%PREFIX%%/libexec/octave/%%OCTAVE_VERSION%%/octave-%%OCTAVE_VERSION%%
 LD_LIBRARY_PATH=%%PREFIX%%/lib/octave-%%OCTAVE_VERSION%%; export LD_LIBRARY_PATH
 
 exec $OCTAVE_EXEC "$@"
