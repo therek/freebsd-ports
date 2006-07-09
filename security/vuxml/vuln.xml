@@ -28,12 +28,38 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1067 2006/07/05 17:30:40 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1068 2006/07/05 17:45:15 thierry Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="b0d61f73-0e11-11db-a47b-000c2957fdf1">
+    <topic>trac -- reStructuredText breach of privacy and denial of service vulnerability </topic>
+    <affects>
+      <package>
+	<name>trac</name>
+	<name>ja-trac</name>
+	<range><lt>0.9.6</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>ChangeLog reports:</p>
+	<blockquote cite="http://trac.edgewall.org/wiki/ChangeLog">
+	  <p>Version 0.9.6 fixes reStructuredText breach of privacy and denial of service vulnerability found by Felix Wiemann.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <url>http://projects.edgewall.com/trac/wiki/ChangeLog</url>
+    </references>
+    <dates>
+      <discovery>2006-07-06</discovery>
+      <entry>2006-07-07</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="e94cb43d-0c4a-11db-9016-0050bf27ba24">
     <topic>horde -- various problems in dereferrer</topic>
     <affects>
