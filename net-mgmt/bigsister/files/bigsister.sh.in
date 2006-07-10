@@ -1,12 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/bigsister/files/bigsister.sh.in,v 1.1 2006/04/02 14:26:46 pav Exp $
 #
 
 # PROVIDE: bigsister
 # REQUIRE: DAEMON
 # BEFORE:  LOGIN
-# KEYWORD: FreeBSD
 #
 # Add the following to /etc/rc.conf to enable this service
 #

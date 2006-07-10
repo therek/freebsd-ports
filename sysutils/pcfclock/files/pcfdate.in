@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/pcfclock/files/pcfdate.in,v 1.1 2006/05/01 05:45:47 mnag Exp $
 #
 # PROVIDE: pcfdate
 # BEFORE:  SERVERS
-# KEYWORD: FreeBSD
 #
 # Define these pcfdate_* variables in one of these files:
 #	/etc/rc.conf

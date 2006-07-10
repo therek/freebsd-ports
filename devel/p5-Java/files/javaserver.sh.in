@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/p5-Java/files/javaserver.sh.in$
+# $FreeBSD: ports/devel/p5-Java/files/javaserver.sh.in,v 1.1 2006/06/02 23:40:27 aaron Exp $
 #
 
 # PROVIDE: javaserver
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable javaserver:

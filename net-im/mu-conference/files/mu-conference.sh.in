@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # Start or stop jabber's mu-conference
-# $FreeBSD$
+# $FreeBSD: ports/net-im/mu-conference/files/mu-conference.sh.in,v 1.1 2006/05/16 14:45:23 itetcu Exp $
 
 # PROVIDE: mu_conference
 # REQUIRE: DAEMON jabberd
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 #
 # Define these mu_conference_* variables in one of these files:
 #       /etc/rc.conf
