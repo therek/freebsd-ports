@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/squid/files/squid.sh.in,v 1.1 2006/03/18 17:11:13 pav Exp $
 #
 # --begin rcng
 # PROVIDE: squid
@@ -43,6 +43,7 @@ squid_stop() {
 # --end rcold
 # --begin rcng
 squid_stop() {
+	echo "Stopping ${name}."
 	${command} -k shutdown
 	run_rc_command poll
 }
