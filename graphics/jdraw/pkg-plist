@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/graphics/jdraw/pkg-plist,v 1.1 2006/07/06 17:47:02 itetcu Exp $
 bin/jdraw
-%%JAVASHAREDIR%%/jdraw/jdraw_v1.1.4.jar
+%%JAVASHAREDIR%%/jdraw/jdraw_v1.1.5.jar
 @dirrm %%JAVASHAREDIR%%/jdraw
