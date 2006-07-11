@@ -1,4 +1,5 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/pnews/pkg-plist,v 1.1 2006/07/11 21:33:58 rafan Exp $
+www/data/pnews/.htaccess
 www/data/pnews/auth.php
 www/data/pnews/auth/ftp.inc.php
 www/data/pnews/auth/ftps.inc.php
