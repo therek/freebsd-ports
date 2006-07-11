@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1073 2006/07/10 22:38:50 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1074 2006/07/10 22:59:36 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -177,7 +177,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>mambo</name>
-	<range><gt>0</gt></range>
+	<range><lt>4.5.4</lt></range>
       </package>
     </affects>
     <description>
