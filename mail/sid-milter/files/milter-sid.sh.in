@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/sid-milter/files/milter-sid.sh.in,v 1.1 2006/01/17 07:27:38 dinoex Exp $
 #
 
 # PROVIDE: miltersid
@@ -13,7 +13,7 @@
 #	/etc/rc.conf.local
 #	/etc/rc.conf.d/miltersid
 #
-# DO NOT CHdANGE THESE DEFAULT VALUES HERE
+# DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
 miltersid_enable=${miltersid_enable:-"NO"}
 miltersid_socket=${miltersid_socket:-"local:/var/run/sid-filter"}
