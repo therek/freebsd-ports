@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/irc/ptlink-ircd/files/ptlink-ircd.sh.in,v 1.1 2005/09/18 15:02:03 pav Exp $
+# $FreeBSD: ports/irc/ptlink-ircd/files/ptlink-ircd.sh.in,v 1.2 2005/09/18 15:05:18 pav Exp $
 #
 
 # PROVIDE: ircd
@@ -18,7 +18,7 @@ ircd_user=${ircd_user-"ircd"}
 
 name="ircd"
 rcvar=`set_rcvar`
-pidfile="%%PREFIX%%/etc/ptlink-ircd/ircd.pid"
+pidfile="/var/run/ircd.pid"
 command="%%PREFIX%%/bin/ircd"
 
 load_rc_config "$name"
