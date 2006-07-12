@@ -1,13 +1,13 @@
 #!/bin/sh
-# $FreeBSD: ports/graphics/jdraw/files/jdraw.in,v 1.2 2006/07/11 20:23:11 itetcu Exp $
+# $FreeBSD: ports/graphics/jdraw/files/jdraw.in,v 1.3 2006/07/11 20:25:12 itetcu Exp $
+
 if [ -z "${JAVA_VERSION}" ]; then
 	JAVA_VERSION="%%JAVA_VERSION%%"
 fi
 
 if [ "${JAVA_VERSION}" \> "1.4" ]; then
->>>>>>> 1.2
-	LOOK_AND_FEEL="%%PLASTIC3D%%"
-else
+ 	LOOK_AND_FEEL="%%PLASTIC3D%%"
+ else
 	LOOK_AND_FEEL=
 fi
 
