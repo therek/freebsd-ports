@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/medusa/pkg-plist,v 1.1 2006/05/02 07:36:47 clsung Exp $
+@comment $FreeBSD: ports/security/medusa/pkg-plist,v 1.2 2006/05/03 01:11:07 clsung Exp $
 bin/medusa
 lib/medusa/modules/telnet.mod
 lib/medusa/modules/smbnt.mod
@@ -14,5 +14,14 @@ lib/medusa/modules/rsh.mod
 lib/medusa/modules/rexec.mod
 lib/medusa/modules/wrapper.mod
 lib/medusa/modules/rlogin.mod
+lib/medusa/modules/ncp.mod
+lib/medusa/modules/vnc.mod
+lib/medusa/modules/postgres.mod
+lib/medusa/modules/cvs.mod
+lib/medusa/modules/vmauthd.mod
+lib/medusa/modules/snmp.mod
+lib/medusa/modules/smtp-vrfy.mod
+lib/medusa/modules/smtp-auth.mod
+lib/medusa/modules/svn.mod
 @dirrm lib/medusa/modules
 @dirrm lib/medusa
