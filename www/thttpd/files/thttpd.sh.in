@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/thttpd/files/thttpd.sh.in,v 1.1 2005/05/30 20:32:57 anders Exp $
+# $FreeBSD: ports/www/thttpd/files/thttpd.sh.in,v 1.2 2006/02/20 20:47:49 dougb Exp $
 #
 
 # PROVIDE: thttpd
-# REQUIRE: NETWORKING SERVERS
-# BEFORE: DAEMON
+# REQUIRE: DAEMON
 # KEYWORD: shutdown
 
 #
