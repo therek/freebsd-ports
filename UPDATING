@@ -7,6 +7,18 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20060714:
+  AFFECTS: users of security/krb5
+  AUTHOR: cy@FreeBSD.org
+
+  As of MIT KRB5 1.5, Kerberos no longer supports static linking nor
+  do the static libraries build. The reason for this is that KRB5 1.5
+  implements plugins to implement functions. GSS-API is now implemented
+  as a function. As such, the MIT Kerberos team has yet to implement
+  plugins using static libraries. Users requiring static libraries or
+  statically linked binaries are advised not to upgrade to this release
+  until MIT provides a solution for statically linked binaries.
+
+20060714:
   AFFECTS: users of www/mediawiki
   AUTHOR: clsung@FreeBSD.org
 
@@ -3823,4 +3835,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.361 2006/07/13 12:03:50 garga Exp $
+$FreeBSD: ports/UPDATING,v 1.362 2006/07/14 07:16:25 clsung Exp $
