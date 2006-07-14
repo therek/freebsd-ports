@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060714:
+  AFFECTS: users of www/mediawiki
+  AUTHOR: clsung@FreeBSD.org
+
+  www/mediawiki version is 1.7 now. 1.6 version was preserved on
+  www/mediawiki16 port.
+
 20060713:
   AFFECTS: users of x11-fonts/terminus-font
   AUTHOR: garga@FreeBSD.org
@@ -3816,4 +3823,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.360 2006/07/12 00:16:31 kuriyama Exp $
+$FreeBSD: ports/UPDATING,v 1.361 2006/07/13 12:03:50 garga Exp $
