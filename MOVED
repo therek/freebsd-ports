@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1093 2006/07/11 17:52:45 lbr Exp $
+# $FreeBSD: ports/MOVED,v 1.1094 2006/07/12 14:15:55 rafan Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2411,3 +2411,5 @@ sysutils/lineak_xosdplugin|sysutils/lineak-xosdplugin|2006-07-09|port name chang
 japanese/phpgroupware||2006-04-10|removed at mainter request (because broken and vulnerabilities)
 www/p5-Catalyst|www/p5-Catalyst-Runtime|2006-07-10|follow CPAN split of package
 textproc/p5-JSON-Syck|textproc/p5-YAML-Syck|2006-07-12|The textproc/p5-YAML-Syck port now includes JSON functionality
+sysutils/ledit||2006-07-14|Has expired: Does not build
+x11/settitle||2006-07-14|Has expired: Download unavailable anymore
