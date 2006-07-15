@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/dkfilter/files/dkfilter_out.sh.in,v 1.2 2006/01/25 11:41:46 garga Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: dkfilter_out
