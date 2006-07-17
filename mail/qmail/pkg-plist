@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/qmail/pkg-plist,v 1.10 2006/03/24 13:31:52 garga Exp $
+@comment $FreeBSD: ports/mail/qmail/pkg-plist,v 1.11 2006/05/29 13:32:05 garga Exp $
 %%RCDLINK%%@unexec rm -f %%LOCALBASE%%/etc/rc.d/qmail.sh
 %%LDAP%%bin/auth_imap
 %%LDAP%%bin/auth_pop
@@ -27,6 +27,7 @@ bin/qbiff
 %%SPAMCONTROL%%bin/qmail-badmimetypes
 %%LDAP%%bin/qmail-cdb
 bin/qmail-clean
+%%DK%%bin/qmail-dk
 %%LDAP%%bin/qmail-forward
 bin/qmail-getpw
 %%LDAP%%bin/qmail-group
