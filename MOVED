@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1097 2006/07/16 04:00:28 rafan Exp $
+# $FreeBSD: ports/MOVED,v 1.1098 2006/07/17 07:44:18 vd Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2417,3 +2417,7 @@ net-im/simicq|net-im/sim-im|2006-07-15|renamed
 cad/gschem|cad/geda-gschem|2006-07-16|renamed
 cad/gnetlist|cad/geda-netlist|2006-07-16|renamed
 misc/matrix-kmod||2006-07-17|Has expired: Unfetchable
+net/ethereal|net/wireshark|2006-07-17|Project name has changed
+net/ethereal-lite|net/wireshark-lite|2006-07-17|Project name has changed
+net/tethereal|net/tshark|2006-07-17|Project name has changed
+net/tethereal-lite|net/tshark-lite|2006-07-17|Project name has changed
