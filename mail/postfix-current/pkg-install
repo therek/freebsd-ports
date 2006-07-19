@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/mail/postfix-current/pkg-install,v 1.19 2005/04/05 09:56:41 krion Exp $
+#	$FreeBSD: ports/mail/postfix-current/pkg-install,v 1.20 2005/08/30 17:30:41 garga Exp $
 #
 
 # If the POSTFIX_DEFAULT_MTA environment variable is set to YES, it
-# will make the port/package use defaults which makes postfix replaces
+# will make the port/package use defaults which make postfix replace
 # sendmail as much as possible.
 
 PKG_PREFIX=${PKG_PREFIX:=/usr/local}
