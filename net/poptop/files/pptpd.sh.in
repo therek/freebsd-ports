@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/poptop/files/pptpd.sh.in,v 1.1 2005/11/28 12:44:11 lawrance Exp $
+# $FreeBSD: ports/net/poptop/files/pptpd.sh.in,v 1.2 2006/02/20 20:47:28 dougb Exp $
 #
 # PROVIDE: pptpd
 # REQUIRE: DAEMON
@@ -20,7 +20,7 @@ rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/${name}
 pidfile=/var/run/${name}.pid
-sig_stop=-KILL
+sig_stop=KILL
 
 load_rc_config ${name}
 run_rc_command "$1"
