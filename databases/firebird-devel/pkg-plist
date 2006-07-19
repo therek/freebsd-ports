@@ -1,5 +1,4 @@
-@comment $FreeBSD: ports/databases/firebird-devel/pkg-plist,v 1.8 2005/08/29 10:12:13 garga Exp $
-@unexec rm -f %%LOCALBASE%%/etc/rc.d/000.firebird.sh
+@comment $FreeBSD: ports/databases/firebird-devel/pkg-plist,v 1.9 2006/01/22 01:28:54 edwin Exp $
 firebird/README
 firebird/UDF/fbudf.so
 firebird/UDF/fbudf.sql
