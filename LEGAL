@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.480 2006/06/13 15:14:27 flz Exp $
+# $FreeBSD: ports/LEGAL,v 1.481 2006/06/13 18:16:15 alepulver Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -386,6 +386,7 @@ l0phtcrack/*		security/l0phtcrack	Parts are under GPL, so
 						binaries should not be
 						distributed.  Contains crypto
 						from OpenSSL
+lpac-*			audio/lpac		No commercial use
 lsh*			security/lsh		Crypto; export-controlled
 l_cc_p*_*.*.*.tar.gz	lang/icc		No redistribution allowed
 l_cc_p*_*.*.*.tar	lang/icc7		No redistribution allowed
