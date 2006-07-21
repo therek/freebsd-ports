@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.374 2006/07/06 23:56:12 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.375 2006/07/21 16:03:38 jmelo Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -999,7 +999,6 @@ MASTER_SITE_SUNSITE+=	\
 	ftp://ftp.physics.auth.gr/pub/mirrors/ibiblio/Linux/%SUBDIR%/ \
 	ftp://ftp.edisontel.com/pub/Sunsite_Mirror/%SUBDIR%/ \
 	ftp://ftp.nluug.nl/pub/metalab/%SUBDIR%/ \
-	ftp://ftp.lip6.fr/pub/linux/sunsite/%SUBDIR%/ \
 	ftp://ftp.nvg.ntnu.no/pub/mirrors/metalab.unc.edu/%SUBDIR%/ \
 	ftp://ftp.icm.edu.pl/pub/Linux/sunsite/%SUBDIR%/ \
 	ftp://ftp.cse.cuhk.edu.hk/pub4/Linux/%SUBDIR%/ \
