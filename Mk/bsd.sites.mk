@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.380 2006/07/21 17:44:46 cperciva Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.381 2006/07/21 18:43:36 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -285,8 +285,8 @@ MASTER_SITE_FEDORA_LINUX+= \
 .if !defined(IGNORE_MASTER_SITE_FESTIVAL)
 MASTER_SITE_FESTIVAL+= \
 	http://www.festvox.org/packed/festival/%SUBDIR%/ \
-	http://www.speech.cs.cmu.edu/festival/cstr/festival/%SUBDIR%/ \
-	ftp://ftp.tuwien.ac.at/opsys/linux/blinux/festival/mirror.festival_home/%SUBDIR%/
+	http://www.cstr.ed.ac.uk/downloads/festival/%SUBDIR%/ \
+	http://stuff.mit.edu/afs/sipb/project/speech-tools/src/festival/festvox.org/packed/festival/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_FESTIVAL_OGI)
