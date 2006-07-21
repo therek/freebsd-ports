@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.378 2006/07/21 16:29:48 jmelo Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.379 2006/07/21 16:39:31 jmelo Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1162,7 +1162,7 @@ MASTER_SITE_XCONTRIB+=	\
 	ftp://sunsite.tus.ac.jp/pub/archives/X11/contrib/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/opengroup/contrib/&,} \
 	ftp://ftp.mirrorservice.org/sites/ftp.x.org/contrib/%SUBDIR%/ \
-	ftp://sunsite.org.uk/sites/ftp.x.org/contrib/%SUBDIR%/ \
+	ftp://sunsite.org.uk/sites/ftp.x.org/contrib/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_XEMACS)
