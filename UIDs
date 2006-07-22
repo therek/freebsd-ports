@@ -1,4 +1,4 @@
-$FreeBSD: ports/UIDs,v 1.2 2006/07/22 06:43:58 krion Exp $
+$FreeBSD: ports/UIDs,v 1.3 2006/07/22 09:52:51 miwi Exp $
 # Please keep this file sorted by UID!
 bind:*:53:53:Bind Sandbox:/:/sbin/nologin
 majordom:*:54:54:Majordomo Pseudo User:/usr/local/majordomo:/nonexistent
@@ -69,6 +69,7 @@ dspam:*:202:202:Dspam:/nonexistent:/sbin/nologin
 shoutcast:*:210:210:Shoutcast sandbox:/nonexistent:/bin/sh
 _tor:*:256:256:Tor anonymising router:/var/db/tor:/bin/sh
 _dns-proxy-tor:*:257:257:dns-proxy-tor user:/nonexistent:/sbin/nologin
+_trans-proxy-tor:*:258:258:dns-proxy-tor user:/nonexistent:/sbin/nologin
 smxs:*:260:260:Sendmail X SMTPS:/nonexistent:/sbin/nologin
 smxq:*:261:261:Sendmail X QMGR:/nonexistent:/sbin/nologin
 smxc:*:262:262:Sendmail X SMTPC:/nonexistent:/sbin/nologin
