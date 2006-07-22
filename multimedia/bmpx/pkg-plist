@@ -1,5 +1,4 @@
-@comment $FreeBSD$
-bin/bmp2
+@comment $FreeBSD: ports/multimedia/bmpx/pkg-plist,v 1.7 2006/07/15 13:59:01 novel Exp $
 bin/bmp-enqueue-files-2.0
 bin/bmp-enqueue-uris-2.0
 bin/bmp-play-files-2.0
