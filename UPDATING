@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060722:
+  AFFECTS: users of games/phpua-*
+  AUTHOR: miwi@FreeBSD.org
+
+  The default install location has changed from
+  ${PREFIX}/www/data/phpua-* to ${PREFIX}/www/phpua-*.
+
 20060719:
   AFFECTS: users of mail/postfix
   AUTHOR: mnag@FreeBSD.org
@@ -3886,4 +3893,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.366 2006/07/19 18:28:54 netchild Exp $
+$FreeBSD: ports/UPDATING,v 1.367 2006/07/19 19:21:34 mnag Exp $
