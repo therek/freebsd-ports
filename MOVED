@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1099 2006/07/18 05:05:37 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.1100 2006/07/22 23:24:11 alepulver Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2422,3 +2422,4 @@ net/ethereal-lite|net/wireshark-lite|2006-07-17|Project name has changed
 net/tethereal|net/tshark|2006-07-17|Project name has changed
 net/tethereal-lite|net/tshark-lite|2006-07-17|Project name has changed
 games/quake3-q3base|games/q3base|2006-07-22|the "quake3-" prefix is used by modifications and the like, not engines
+lang/fpc-demo||2006-07-24|Removed because it's not necessary anymore
