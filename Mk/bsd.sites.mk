@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.383 2006/07/21 20:43:41 jmelo Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.384 2006/07/21 20:50:32 jmelo Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -47,7 +47,7 @@ MASTER_SITE_PORTS_JP+=	\
 .if !defined(IGNORE_MASTER_SITE_AFTERSTEP)
 MASTER_SITE_AFTERSTEP+=	\
 	ftp://ftp.afterstep.org/%SUBDIR%/ \
-	ftp://ftp.kddlabs.co.jp/X11/window_manager/AfterStep/%SUBDIR%/ \
+	ftp://ftp.kddlabs.co.jp/X11/AfterStep/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/X/AfterStep/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/X11/windowmanagers/afterstep/%SUBDIR%/
 .endif
