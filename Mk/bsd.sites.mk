@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.384 2006/07/21 20:50:32 jmelo Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.385 2006/07/24 14:53:33 jmelo Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -428,7 +428,6 @@ MASTER_SITE_GNU+=	\
 	ftp://ftp.informatik.hu-berlin.de/pub/gnu/%SUBDIR%/ \
 	ftp://ftp.informatik.rwth-aachen.de/pub/mirror/ftp.gnu.org/pub/gnu/%SUBDIR%/ \
 	ftp://ftp.rediris.es/sites/ftp.gnu.org/ftp/gnu/%SUBDIR%/ \
-	ftp://ftp.lip6.fr/pub/gnu/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/gnu/%SUBDIR%/
 .endif
 
