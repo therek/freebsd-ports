@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.385 2006/07/24 14:53:33 jmelo Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.386 2006/07/24 16:22:26 jmelo Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -57,7 +57,7 @@ MASTER_SITE_APACHE+=	\
 	http://www.apache.org/dist/%SUBDIR%/ \
 	http://archive.apache.org/dist/%SUBDIR%/ \
 	ftp://ftp.planetmirror.com/pub/apache/dist/%SUBDIR%/ \
-	ftp://ftp.pop-mg.com.br/pub/apache/dist/%SUBDIR%/ \
+	ftp://ftp.pop-mg.com.br/data/apache/dist/%SUBDIR%/ \
 	ftp://ftp.gin.cz/pub/mirrors/www.apache.org/dist/%SUBDIR%/ \
 	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.apache.org/dist/%SUBDIR%/ \
 	ftp://ftp.apache.de/mirrors/dev.apache.org/dist/%SUBDIR%/ \
@@ -76,7 +76,6 @@ MASTER_SITE_APACHE+=	\
 	ftp://ftp.chg.ru/pub/WWW/apache/dist/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/www/servers/apache/dist/%SUBDIR%/ \
 	ftp://ftp.flirble.org/pub/web/apache/dist/%SUBDIR%/ \
-	ftp://ftp.gbnet.net/pub/apache/dist/%SUBDIR%/ \
 	ftp://mirrors.rmplc.co.uk/pub/apache/%SUBDIR%/ \
 	ftp://apache.secsup.org/pub/apache/dist/%SUBDIR%/ \
 	ftp://ftp.ccs.neu.edu/net/mirrors/Apache/dist/%SUBDIR%/ \
