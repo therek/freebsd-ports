@@ -1,4 +1,5 @@
-@comment $FreeBSD: ports/www/dillo-i18n/pkg-plist,v 1.6 2005/12/29 12:06:38 edwin Exp $
+@comment $FreeBSD: ports/www/dillo-i18n/pkg-plist,v 1.7 2006/05/20 20:36:53 mnag Exp $
+bin/bm-update
 bin/dillo
 bin/dillocfg
 bin/dpid
