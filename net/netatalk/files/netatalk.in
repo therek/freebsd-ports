@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/netatalk/files/netatalk.sh,v 1.4 2006/01/08 20:04:23 marcus Exp $
+# $FreeBSD: ports/net/netatalk/files/netatalk.sh,v 1.5 2006/01/08 21:50:27 marcus Exp $
 #
 # PROVIDE: atalkd papd cnid_metad afpd timelord
 # REQUIRE: DAEMON %%SRVLOC%%
