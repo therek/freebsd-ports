@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/pfw/pkg-plist,v 1.5 2006/05/15 11:23:32 garga Exp $
+@comment $FreeBSD: ports/security/pfw/pkg-plist,v 1.6 2006/05/24 10:36:30 garga Exp $
 www/pfw/include.inc.php
 www/pfw/bin/commandwrapper.sh
 www/pfw/bin/packetfilter.sh
@@ -16,6 +16,7 @@ www/pfw/lib/packetfilter/scrub.class.php
 www/pfw/lib/packetfilter/table.class.php
 www/pfw/test/packetfilter/unit/FilterTest.php
 www/pfw/test/packetfilter/unit/NatTest.php
+www/pfw/test/packetfilter/unit/OptionsTest.php
 www/pfw/web/global_config/index.php
 www/pfw/web/global_config/pfhosts.php
 www/pfw/web/global_config/pfhostsedit.php
