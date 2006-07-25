@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/graphics/p5-Imager/Makefile.man,v 1.1 2006/03/30 15:20:32 tobez Exp $
 MAN3+=	Imager.3
 MAN3+=	Imager::API.3
 MAN3+=	Imager::APIRef.3
@@ -12,6 +12,7 @@ MAN3+=	Imager::Engines.3
 MAN3+=	Imager::Expr.3
 MAN3+=	Imager::Expr::Assem.3
 MAN3+=	Imager::ExtUtils.3
+MAN3+=	Imager::File::ICO.3
 MAN3+=	Imager::Files.3
 MAN3+=	Imager::Fill.3
 MAN3+=	Imager::Filter::Flines.3
@@ -25,6 +26,7 @@ MAN3+=	Imager::Font::Type1.3
 MAN3+=	Imager::Font::Win32.3
 MAN3+=	Imager::Font::Wrap.3
 MAN3+=	Imager::Fountain.3
+MAN3+=	Imager::Handy.3
 MAN3+=	Imager::ImageTypes.3
 MAN3+=	Imager::Inline.3
 MAN3+=	Imager::Matrix2d.3
