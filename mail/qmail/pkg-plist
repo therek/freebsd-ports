@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/qmail/pkg-plist,v 1.12 2006/07/17 22:35:49 garga Exp $
+@comment $FreeBSD: ports/mail/qmail/pkg-plist,v 1.13 2006/07/18 18:52:18 garga Exp $
 %%RCDLINK%%@unexec rm -f %%LOCALBASE%%/etc/rc.d/qmail.sh
 %%LDAP%%bin/auth_imap
 %%LDAP%%bin/auth_pop
@@ -58,6 +58,7 @@ bin/qmail-smtpd
 bin/qmail-start
 bin/qmail-tcpok
 bin/qmail-tcpto
+%%EXTTODO%%bin/qmail-todo
 %%LDAP%%%%EXTERNAL_TODO%%bin/qmail-todo
 %%LDAP%%bin/qmail-verify
 bin/qreceipt
