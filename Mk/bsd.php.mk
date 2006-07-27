@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.30 2006/06/16 04:53:43 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.31 2006/07/05 02:18:08 linimon Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -169,6 +169,7 @@ do-install:
 		@${INSTALL_DATA} ${WRKSRC}/${header}/*.h \
 			${PREFIX}/include/php/ext/${PHP_MODNAME}/${header}
 .	endfor
+	@${RM} -f ${PREFIX}/include/php/ext/${PHP_MODNAME}/config.h
 	@${GREP} "#define \(COMPILE\|HAVE\|USE\)_" ${WRKSRC}/config.h \
 		> ${PREFIX}/include/php/ext/${PHP_MODNAME}/config.h
 	@${ECHO_CMD} \#include \"ext/${PHP_MODNAME}/config.h\" \
