@@ -1,4 +1,4 @@
-$FreeBSD: ports/UIDs,v 1.7 2006/07/26 12:27:09 lth Exp $
+$FreeBSD: ports/UIDs,v 1.8 2006/07/29 02:01:35 rafan Exp $
 # Please keep this file sorted by UID!
 bind:*:53:53:Bind Sandbox:/:/sbin/nologin
 majordom:*:54:54:Majordomo Pseudo User:/usr/local/majordomo:/nonexistent
@@ -78,6 +78,7 @@ smxc:*:262:262:Sendmail X SMTPC:/nonexistent:/sbin/nologin
 smxm:*:263:263:Sendmail X misc:/nonexistent:/sbin/nologin
 smx:*:264:264:Sendmail X other:/nonexistent:/sbin/nologin
 mrtg:*:279:279:MRTG daemon:/nonexistent:/sbin/nologin
+dkfilter:*:325:325:DK Filter Owner:/nonexistent:/sbin/nologin
 ldap:*:389:389:OpenLDAP Server:/nonexistent:/sbin/nologin
 drweb:*:426:426:Dr.Web Mail Scanner:/nonexistent:/sbin/nologin
 courier:*:465:465:Courier Mail Server:/nonexistent:/sbin/nologin
