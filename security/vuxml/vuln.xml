@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1089 2006/07/29 17:41:12 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1090 2006/07/29 20:40:55 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -41,6 +41,7 @@ Note:  Please add new entries to the beginning of this file.
         <name>ruby</name>
         <name>ruby_static</name>
         <range><gt>1.6.*</gt><lt>1.8.*</lt></range>
+	<range><gt>1.8.*</gt></range>
       </package>
     </affects>
     <description>
