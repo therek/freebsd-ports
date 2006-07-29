@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.483 2006/07/21 23:13:13 sat Exp $
+# $FreeBSD: ports/LEGAL,v 1.484 2006/07/29 17:48:50 tmclaugh Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -454,8 +454,7 @@ onion-fec		net/onion-fec		Some uses of FEC
 openssl-*		security/openssl	Crypto; export/import-controlled
 opera-*			www/linux-opera		No redistribution, commercial
 						software
-optimfrog-*		audio/optimfrog		No commercial use, no distribution
-						of a modified package
+optimfrog-*		audio/optimfrog		No commercial use
 oracle/*		databases/jdbc-oracle*	This software is under license
 						and export controls
 otojiro*.txt		japanese/otojiro-fpw	The original dictionary is not free
