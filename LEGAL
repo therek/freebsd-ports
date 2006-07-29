@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.482 2006/07/21 22:52:06 sat Exp $
+# $FreeBSD: ports/LEGAL,v 1.483 2006/07/21 23:13:13 sat Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -66,6 +66,7 @@ armyops*-linux.run	games/linux-americasarmy Redistribution is limited
 asWedit-*		www/aswedit		Commercial software
 atari800/*		emulators/atari800	xf25 contains copyright ROMs
 						and cannot be distributed
+autopano-sift		graphics/autopano-sift	May be covered by patents
 antivir-milter-*	security/antivir-milter	No redistribution allowed
 bamg*			math/bamg		Contact author personally
 						regarding commercial use
