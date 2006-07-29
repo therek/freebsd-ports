@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.5 2006/07/25 12:13:41 fjoe Exp $
+$FreeBSD: ports/GIDs,v 1.6 2006/07/26 12:27:09 lth Exp $
 # Please keep this file sorted by GID!
 bind:*:53:
 rdfdb:*:55:
@@ -70,6 +70,7 @@ ldap:*:389:
 drweb:*:426:
 courier:*:465:
 _bbstored:*:505:
+dkimproxy:*:525:
 ejabberd:*:544:
 qtss:*:554:
 ircdru:*:555:
