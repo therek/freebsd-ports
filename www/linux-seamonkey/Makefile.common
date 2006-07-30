@@ -2,11 +2,11 @@
 # Date created:		1 May 2006
 # Whom:			Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/linux-seamonkey/Makefile.common,v 1.2 2006/05/10 19:24:28 sat Exp $
+# $FreeBSD: ports/www/linux-seamonkey/Makefile.common,v 1.3 2006/07/28 21:35:46 sat Exp $
 #
 
 CATEGORIES+=	linux
-MASTER_SITES?=	${MASTER_SITE_MOZILLA}
+MASTER_SITES?=	MOZILLA
 MASTER_SITE_SUBDIR?=	${PORTNAME}/releases/${PORTVERSION}
 PKGNAMEPREFIX?=		linux-
 
