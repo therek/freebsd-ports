@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/comms/scmxx/pkg-plist,v 1.9 2006/01/22 01:27:29 edwin Exp $
+@comment $FreeBSD: ports/comms/scmxx/pkg-plist,v 1.10 2006/04/29 20:15:15 mnag Exp $
 bin/adr2vcf
 bin/apoconv
 bin/scmxx
@@ -20,10 +20,6 @@ share/locale/ru/LC_MESSAGES/scmxx.mo
 %%EXAMPLESDIR%%/vCalendar.vcs
 %%EXAMPLESDIR%%/vCard.vcf
 @dirrm %%EXAMPLESDIR%%
-@dirrmtry share/locale/de/LC_MESSAGES
-@dirrmtry share/locale/fr/LC_MESSAGES
-@dirrmtry share/locale/it/LC_MESSAGES
-@dirrmtry share/locale/ru/LC_MESSAGES
 @dirrmtry man/de/man1
 @dirrmtry man/de/
 @dirrmtry man/ru/man1
