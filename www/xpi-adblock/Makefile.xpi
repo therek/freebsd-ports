@@ -5,7 +5,7 @@
 # Date created:		28 March 2006
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.10 2006/06/27 08:05:07 sat Exp $
+# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.11 2006/07/27 14:53:32 sat Exp $
 #
 
 # XPI_ID		- Extension id, might be in {12345-...} or dev@org format
@@ -65,15 +65,10 @@
 # xpi ports do not depend on their master applications. You can install an
 # extension before the app and run relink when the app is present.
 
-.if !defined(IGNORE_MASTER_SITE_CSME)
-MASTER_SITE_CSME+= \
-	http://bsd1.csme.ru/myports/ \
-	http://bsd2.csme.ru/myports/ \
-	http://bsd3.csme.ru/myports/
-.endif
-
+.ifndef MASTER_SITES
 MASTER_SITES?=	${MASTER_SITE_MOZILLA}
 MASTER_SITE_SUBDIR?=	extensions/${XPI_DISTNAME}
+.endif
 PKGNAMEPREFIX?=	xpi-
 EXTRACT_SUFX?=	.xpi
 DISTNAME?=		${XPI_DISTNAME}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}
@@ -167,9 +162,9 @@ do-install:
 		then ${CP} -p ${FILESDIR}/chrome.manifest ${_TD_FULL}/ ; fi
 	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${_TD_FULL}/
 	@${CHMOD} -R a+rX,go-w ${_TD_FULL}/
-	@for _dir in ${XPI_LINKFARMS} ; { ${LN} -sf ${_TD_FULL} $$_dir ${_Q} ; }
+	@for _dir in ${XPI_LINKFARMS} ; { ${LN} -sf ${_TD_FULL} $$_dir/ ${_Q} ; }
 	@${ECHO_CMD} '@exec ${INSTALL} -d ${XPI_SLDIRS_ALL:S,^${PREFIX},%D,}' ${_A}
-	@${ECHO_CMD} '@exec for _dir in ${XPI_LINKFARMS} ; { ${LN} -sf ${_TD_FULL} $$_dir ${_Q}; }' ${_A}
+	@${ECHO_CMD} '@exec for _dir in ${XPI_LINKFARMS} ; { ${LN} -sf ${_TD_FULL} $$_dir/ ${_Q}; }' ${_A}
 	@${ECHO_CMD} '@unexec for _dir in ${XPI_LINKFARMS} ; { ${RM} -f $$_dir/${XPI_ID} ; }' ${_A}
 	@${ECHO_CMD} '@unexec rmdir ${XPI_DIRS_TRY:S,^,%D/,} ${_Q}' ${_A}
 .endif

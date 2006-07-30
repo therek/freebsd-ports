@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.390 2006/07/25 16:11:37 jmelo Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.391 2006/07/30 00:49:43 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -113,6 +113,13 @@ MASTER_SITE_BERLIOS+=	\
 MASTER_SITE_COMP_SOURCES+=	\
 	ftp://gatekeeper.dec.com/pub/usenet/comp.sources.%SUBDIR%/ \
 	ftp://ftp.uu.net/usenet/comp.sources.%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_CSME)
+MASTER_SITE_CSME+=	\
+	http://bsd1.csme.ru/%SUBDIR%/ \
+	http://bsd2.csme.ru/%SUBDIR%/ \
+	http://bsd3.csme.ru/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_DEBIAN)
@@ -1224,6 +1231,7 @@ MASTER_SITES_ABBREVS=	CPAN:PERL_CPAN SF:SOURCEFORGE SFE:SOURCEFORGE_EXTENDED
 MASTER_SITES_SUBDIRS=	\
 			APACHE_JAKARTA:${PORTNAME:S,-,/,}/source \
 			BERLIOS:${PORTNAME:L} \
+			CSME:myports \
 			DEBIAN:pool/main/${PORTNAME:C/^((lib)?.).*$/\1/}/${PORTNAME} \
 			GCC:releases/${DISTNAME} \
 			GNOME:sources/${PORTNAME}/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/} \
