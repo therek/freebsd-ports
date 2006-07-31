@@ -6,6 +6,17 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20060731:
+  AFFECTS: users of graphics/GraphicsMagick
+  AUTHOR: mat@FreeBSD.org
+
+  In order to fix a symbol collision between GraphicsMagick and libtidy,
+  GraphicsMagick has been updated so that all its symbols are now prefixed with
+  'Gm'. Consequently, all dependencies should be upgraded when you perform this
+  upgrade with this command :
+
+  portupgrade -rf graphics/GraphicsMagick
+
 20060729:
   AFFECTS: users of net/nss_ldap
   AUTHOR: tmclaugh@sdf.lonestar.org
@@ -3930,4 +3941,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.372 2006/07/29 20:47:45 tmclaugh Exp $
+$FreeBSD: ports/UPDATING,v 1.373 2006/07/31 13:20:54 netchild Exp $
