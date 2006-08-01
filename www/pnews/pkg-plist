@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/pnews/pkg-plist,v 1.1 2006/07/11 21:33:58 rafan Exp $
+@comment $FreeBSD: ports/www/pnews/pkg-plist,v 1.2 2006/07/11 21:44:13 rafan Exp $
 www/data/pnews/.htaccess
 www/data/pnews/auth.php
 www/data/pnews/auth/ftp.inc.php
@@ -74,4 +74,3 @@ www/data/pnews/xpost.php
 @dirrmtry www/data/pnews/language
 @dirrmtry www/data/pnews
 @dirrmtry www/data
-@dirrmtry www
