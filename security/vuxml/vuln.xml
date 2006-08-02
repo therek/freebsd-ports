@@ -28,12 +28,39 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1095 2006/07/30 14:07:14 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1096 2006/08/02 01:40:25 kuriyama Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="c905298c-2274-11db-896e-000ae42e9b93">
+    <topic>drupal -- XSS vulnerability</topic>
+    <affects>
+      <package>
+	<name>drupal</name>
+	<range><lt>4.6.9</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Drupal project reports:</p>
+	<blockquote cite="http://drupal.org/files/sa-2006-011/advisory.txt">
+	  <p>A malicious user can execute a cross site scripting attack
+	    by enticing someone to visit a Drupal site via a specially
+	    crafted link..</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <url>http://drupal.org/files/sa-2006-011/advisory.txt</url>
+    </references>
+    <dates>
+      <discovery>2006-08-FIXME</discovery>
+      <entry>2006-08-02</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="ed529baa-21c6-11db-b625-02e081235dab">
     <topic>gnupg -- 2 more possible memory allocation attacks</topic>
     <affects>
