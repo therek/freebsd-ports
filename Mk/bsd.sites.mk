@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.391 2006/07/30 00:49:43 sat Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.392 2006/07/30 22:22:50 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -923,6 +923,15 @@ MASTER_SITE_RUBY+= \
 	ftp://ftp.kr.FreeBSD.org/pub/ruby/%SUBDIR%/ \
 	http://mirrors.sunsite.dk/ruby/%SUBDIR%/ \
 	ftp://ftp.iDaemons.org/pub/mirror/ftp.ruby-lang.org/ruby/%SUBDIR%/
+.endif
+
+# See http://rubyforge.org/credits/
+.if !defined(IGNORE_MASTER_SITE_RUBYFORGE)
+MASTER_SITE_RUBYFORGE+= \
+	http://rubyforge.rubyuser.de/%SUBDIR%/ \
+	http://rubyforge.iasi.roedu.net/files/%SUBDIR%/ \
+	http://rubyforge.halostatue.info/%SUBDIR%/ \
+	http://files.rubyforge.vm.bytemark.co.uk/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_SAMBA)
