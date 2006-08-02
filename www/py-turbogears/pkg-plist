@@ -1,7 +1,8 @@
-@comment $FreeBSD: ports/www/py-turbogears/pkg-plist,v 1.1 2006/01/15 02:32:42 pav Exp $
+@comment $FreeBSD: ports/www/py-turbogears/pkg-plist,v 1.2 2006/02/13 12:12:25 lawrance Exp $
 bin/tg-admin
 %%PYTHON_SITELIBDIR%%/TurboGears-%%PORTVERSION%%-%%EGGEXT%%/EGG-INFO/PKG-INFO
 %%PYTHON_SITELIBDIR%%/TurboGears-%%PORTVERSION%%-%%EGGEXT%%/EGG-INFO/SOURCES.txt
+%%PYTHON_SITELIBDIR%%/TurboGears-%%PORTVERSION%%-%%EGGEXT%%/EGG-INFO/dependency_links.txt
 %%PYTHON_SITELIBDIR%%/TurboGears-%%PORTVERSION%%-%%EGGEXT%%/EGG-INFO/entry_points.txt
 %%PYTHON_SITELIBDIR%%/TurboGears-%%PORTVERSION%%-%%EGGEXT%%/EGG-INFO/not-zip-safe
 %%PYTHON_SITELIBDIR%%/TurboGears-%%PORTVERSION%%-%%EGGEXT%%/EGG-INFO/top_level.txt
