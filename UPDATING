@@ -50,7 +50,7 @@ upgrades.
   now works.  Please be aware of this when updating if you have it in your
   config and are using GSSAPI when use_sasl is enabled.  Using GSSAPI with a
   misconfigured krb5_ccname combined with one of the 'hard' bind_policy
-  options can effectivly lockout users.
+  options can effectively lockout users.
 
 20060728:
   AFFECTS: users of polish/ekg and polish/ibgadu
@@ -3966,4 +3966,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.376 2006/08/01 15:52:13 clsung Exp $
+$FreeBSD: ports/UPDATING,v 1.377 2006/08/03 00:38:32 mezz Exp $
