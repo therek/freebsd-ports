@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/icecast2/files/icecast2.sh.in,v 1.2 2005/06/22 20:08:28 lofi Exp $
+# $FreeBSD: ports/audio/icecast2/files/icecast2.sh.in,v 1.3 2006/02/20 20:46:48 dougb Exp $
 #
 
 # PROVIDE: icecast2
@@ -23,12 +23,12 @@ name="icecast"
 rcvar=`set_rcvar`
 
 command="%%PREFIX%%/bin/icecast"
-command_args="1>/dev/null"
+command_args="-b 1>/dev/null"
 required_files="%%PREFIX%%/etc/$name.xml"
 
 # read configuration and set defaults
 load_rc_config "$name"
 : ${icecast_enable="NO"}
-: ${icecast_flags="-c ${required_files} -b"}
+: ${icecast_flags="-c ${required_files}"}
 
 run_rc_command "$1"
