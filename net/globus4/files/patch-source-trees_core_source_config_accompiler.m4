@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/net/globus4/files/patch-source-trees_core_source_config_accompiler.m4,v 1.1 2006/02/11 00:18:18 brooks Exp $
 
 --- source-trees/core/source/config/accompiler.m4.orig
 +++ source-trees/core/source/config/accompiler.m4
@@ -13,7 +13,7 @@ $FreeBSD$
 +	echo "freebsd: $host"
 +        if test "$lac_cv_build_64bit" = "yes"; then
 +		case ${host} in
-+		i386-*|ppc-*)
++		i386-*|powerpc-*)
 +			AC_MSG_ERROR(64 bits not supported on this platform)
 +			exit 1
 +			;;
