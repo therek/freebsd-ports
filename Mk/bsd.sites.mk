@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.392 2006/07/30 22:22:50 sat Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.393 2006/08/02 12:16:46 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -644,6 +644,11 @@ MASTER_SITE_MOZILLA+= \
 	ftp://ftp.kaist.ac.kr/pub/mozilla/%SUBDIR%/ \
 	ftp://mozilla.mirror.pacific.net.au/mozilla/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/WWW/mozilla/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_MOZILLA_EXTENDED)
+MASTER_SITE_MOZILLA_EXTENDED+=	http://releases.mozilla.org/pub/mozilla.org/%SUBDIR%/ \
+				${MASTER_SITE_MOZILLA}
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_MYSQL)
