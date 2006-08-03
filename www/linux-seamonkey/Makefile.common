@@ -2,12 +2,14 @@
 # Date created:		1 May 2006
 # Whom:			Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/linux-seamonkey/Makefile.common,v 1.4 2006/07/30 22:46:03 sat Exp $
+# $FreeBSD: ports/www/linux-seamonkey/Makefile.common,v 1.5 2006/08/03 08:18:18 sat Exp $
 #
 
 CATEGORIES+=	linux
-MASTER_SITES?=	MOZILLA_EXTENDED
+.ifndef	MASTER_SITES
+MASTER_SITES=	MOZILLA_EXTENDED
 MASTER_SITE_SUBDIR?=	${PORTNAME}/releases/${PORTVERSION}
+.endif
 PKGNAMEPREFIX?=		linux-
 
 RUN_DEPENDS?=	${LINUXBASE}/usr/lib/libgtk-x11-2.0.so.0:${PORTSDIR}/x11-toolkits/linux-gtk2 \
