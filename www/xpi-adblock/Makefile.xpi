@@ -5,7 +5,7 @@
 # Date created:		28 March 2006
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.11 2006/07/27 14:53:32 sat Exp $
+# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.12 2006/07/30 22:22:50 sat Exp $
 #
 
 # XPI_ID		- Extension id, might be in {12345-...} or dev@org format
@@ -66,7 +66,7 @@
 # extension before the app and run relink when the app is present.
 
 .ifndef MASTER_SITES
-MASTER_SITES?=	${MASTER_SITE_MOZILLA}
+MASTER_SITES?=	MOZILLA_EXTENDED
 MASTER_SITE_SUBDIR?=	extensions/${XPI_DISTNAME}
 .endif
 PKGNAMEPREFIX?=	xpi-
