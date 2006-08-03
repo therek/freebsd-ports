@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/Makefile.man,v 1.12 2006/07/19 01:45:16 leeym Exp $
+# $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/Makefile.man,v 1.13 2006/07/25 03:38:06 clsung Exp $
 
 MAN1+=	meta.1
 
@@ -86,7 +86,6 @@ MAN3+=	Acme::MetaSyntactic::swords.3
 MAN3+=	Acme::MetaSyntactic::teletubbies.3
 MAN3+=	Acme::MetaSyntactic::tld.3
 MAN3+=	Acme::MetaSyntactic::tmnt.3
-MAN3+=	Acme::MetaSyntactic::toto.3
 MAN3+=	Acme::MetaSyntactic::tour_de_france.3
 MAN3+=	Acme::MetaSyntactic::trigan.3
 MAN3+=	Acme::MetaSyntactic::unicode.3
