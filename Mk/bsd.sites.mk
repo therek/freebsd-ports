@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.393 2006/08/02 12:16:46 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.394 2006/08/03 01:18:42 ahze Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -647,8 +647,9 @@ MASTER_SITE_MOZILLA+= \
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_MOZILLA_EXTENDED)
-MASTER_SITE_MOZILLA_EXTENDED+=	http://releases.mozilla.org/pub/mozilla.org/%SUBDIR%/ \
-				${MASTER_SITE_MOZILLA}
+MASTER_SITE_MOZILLA_EXTENDED+=	\
+	http://releases.mozilla.org/pub/mozilla.org/%SUBDIR%/ \
+	${MASTER_SITE_MOZILLA}
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_MYSQL)
