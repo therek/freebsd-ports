@@ -1,8 +1,6 @@
-@comment $FreeBSD: ports/security/tor/pkg-plist,v 1.6 2005/07/29 11:05:21 garga Exp $
 bin/tor
 bin/tor-resolve
 bin/torify
-etc/rc.d/tor.sh.sample
-etc/tor/torrc.sample
 etc/tor/tor-tsocks.conf.sample
-@dirrmtry etc/tor
+etc/tor/torrc.sample
+@dirrm etc/tor
