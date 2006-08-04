@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.scons.mk,v 1.4 2006/07/13 22:10:39 alepulver Exp $
+# $FreeBSD: ports/Mk/bsd.scons.mk,v 1.5 2006/07/24 22:49:32 itetcu Exp $
 #
 # bsd.scons.mk - Python-based SCons build system interface.
 # Author: Alexander Botero-Lowry <alex@foxybanana.com>
@@ -57,7 +57,7 @@ CPPPATH?=	${LOCALBASE}/include ${X11BASE}/include
 SCONS_ENV?=	CCFLAGS="${CCFLAGS}" CXXFLAGS="${CXXFLAGS}" \
 		LINKFLAGS="${LINKFLAGS}" PKGCONFIGDIR="${PKGCONFIGDIR}"  \
 		CPPPATH="${CPPPATH}" LIBPATH="${LIBPATH}" PREFIX="${PREFIX}" \
-		CC="${CC}" CXX="${CXX}"
+		DESTDIR="${DESTDIR}" CC="${CC}" CXX="${CXX}"
 SCONS_ARGS?=
 SCONS_BUILDENV?=
 SCONS_TARGET?=

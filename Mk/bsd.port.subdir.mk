@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.63 2006/01/23 23:54:22 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.64 2006/01/28 02:11:05 linimon Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -48,10 +48,10 @@ STRIP?=	-s
 
 .if !defined(NOPRECIOUSMAKEVARS)
 .if !defined(ARCH)
-ARCH!=	/usr/bin/uname -p
+ARCH!=	${DESTDIR}/usr/bin/uname -p
 .endif
 .if !defined(OSREL)
-OSREL!=	/usr/bin/uname -r | sed -e 's/[-(].*//'
+OSREL!=	${DESTDIR}/usr/bin/uname -r | sed -e 's/[-(].*//'
 .endif
 .if !defined(OSVERSION)
 .if exists(/sbin/sysctl)
@@ -61,23 +61,23 @@ OSVERSION!= /usr/sbin/sysctl -n kern.osreldate
 .endif
 .endif
 .if !defined(PORTOBJFORMAT)
-PORTOBJFORMAT!= test -x /usr/bin/objformat && /usr/bin/objformat || echo aout
+PORTOBJFORMAT!= test -x ${DESTDIR}/usr/bin/objformat && ${DESTDIR}/usr/bin/objformat || echo aout
 .endif
 .endif
 
-ID?=	/usr/bin/id
+ID?=	${DESTDIR}/usr/bin/id
 UID!=	${ID} -u
-LOCALBASE?=	${DESTDIR}/usr/local
+LOCALBASE?=	${DESTDIR}${LOCALBASE_REL}
 .if exists(${LOCALBASE}/sbin/pkg_info)
 PKG_INFO?=	${LOCALBASE}/sbin/pkg_info
 .else
-PKG_INFO?=	/usr/sbin/pkg_info
+PKG_INFO?=	${DESTDIR}/usr/sbin/pkg_info
 .endif
-SED?=		/usr/bin/sed
+SED?=		${DESTDIR}/usr/bin/sed
 PKGINSTALLVER!=	${PKG_INFO} -P 2>/dev/null | ${SED} -e 's/.*: //'
 
 .if !defined(OPSYS)
-OPSYS!=	/usr/bin/uname -s
+OPSYS!=	${DESTDIR}/usr/bin/uname -s
 .endif
 
 ECHO_MSG?=	echo

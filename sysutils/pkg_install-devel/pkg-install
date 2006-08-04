@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/pkg_install-devel/pkg-install,v 1.1 2004/01/26 00:07:11 eik Exp $
+# $FreeBSD: ports/sysutils/pkg_install-devel/pkg-install,v 1.2 2004/01/27 17:36:08 eik Exp $
 #
 
 PAX=/bin/pax
@@ -13,9 +13,9 @@ TOOLS="add check create delete info sign update version"
 
 PREFIX=${PKG_PREFIX:-/usr/local}
 if [ "${PREFIX}" = "/usr" ]; then
-  MANPREFIX="${PREFIX}/share"
+  MANPREFIX="${TARGETDIR}/share"
 else
-  MANPREFIX="${PREFIX}"
+  MANPREFIX="${TARGETDIR}"
 fi
 
 case $2 in

@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.151 2006/05/17 03:18:15 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.152 2006/07/05 02:18:09 linimon Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -113,7 +113,7 @@ RUBY_DEFAULT_VER?=	1.8
 RUBY_VER?=		${RUBY_DEFAULT_VER}
 
 .if defined(RUBY)
-.if !exists(${RUBY})
+.if !exists(${DESTDIR}${RUBY})
 IGNORE=	cannot install: you set the variable RUBY to "${RUBY}", but it does not seem to exist.  Please specify an already installed ruby executable.
 .endif
 
@@ -122,7 +122,7 @@ _RUBY_TEST!=		${RUBY} -e 'begin; require "rbconfig"; rescue LoadError; puts "err
 IGNORE=	cannot install: you set the variable RUBY to "${RUBY}", but it failed to include rbconfig.  Please specify a properly installed ruby executable.
 .endif
 
-_RUBY_CONFIG=		${RUBY} -r rbconfig -e 'C = Config::CONFIG' -e
+_RUBY_CONFIG=		${DESTDIR}${RUBY} -r rbconfig -e 'C = Config::CONFIG' -e
 
 RUBY_VERSION!=		${_RUBY_CONFIG} 'puts VERSION'
 RUBY_SUFFIX?=		# empty
