@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/graphics/mapyrus/pkg-plist,v 1.1 2006/04/28 03:16:02 ijliao Exp $
 bin/mapyrus
 %%PORTDOCS%%%%DOCSDIR%%/mapyrus.pdf
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/aust_cities.dat
@@ -23,6 +23,7 @@ bin/mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/scalebar.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/stations.dat
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/streets.EE
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/svg1.js
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/symbols.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/turtle1.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/turtle2.mapyrus
@@ -100,6 +101,7 @@ bin/mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialscalebar1.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialshadow1.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialsinkhole.mapyrus
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialsvg1.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialtable1.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialtable2.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialtrans1.mapyrus
