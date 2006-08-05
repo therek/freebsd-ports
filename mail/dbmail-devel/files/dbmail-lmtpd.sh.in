@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/dbmail/files/dbmail-lmtpd.sh,v 1.1 2004/11/10 09:21:45 seanc Exp $
 #
 
 # PROVIDE: dbmail-lmtpd

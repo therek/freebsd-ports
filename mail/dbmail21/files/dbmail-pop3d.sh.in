@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/dbmail/files/dbmail-pop3d.sh,v 1.1 2004/11/10 09:21:45 seanc Exp $
 #
 
 # PROVIDE: dbmail-pop3d
@@ -8,7 +8,7 @@
 # KEYWORD: shutdown
 
 #
-# Add the following lines to /etc/rc.conf to enable dbmail-pop3d:
+# Add the following lines to /etc/rc.conf to enable dbmail-pop3d: 
 #
 #dbmail_pop3d_enable="YES"
 #
