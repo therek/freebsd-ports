@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.75 2006/02/23 10:39:35 ade Exp $
+@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.76 2006/05/01 09:07:27 clement Exp $
 @exec mkdir -p %D/etc/apache22/extra 2> /dev/null
 @exec mkdir -p %D/etc/apache22/Includes 2> /dev/null || true
 @exec mkdir -p %D/etc/apache22/envvars.d 2> /dev/null || true
@@ -178,6 +178,7 @@ libexec/apache22/httpd.exp
 %%MOD_ASIS%%libexec/apache22/mod_asis.so
 %%MOD_AUTH_BASIC%%libexec/apache22/mod_auth_basic.so
 %%MOD_AUTH_DIGEST%%libexec/apache22/mod_auth_digest.so
+%%MOD_AUTHN_ALIAS%%libexec/apache22/mod_authn_alias.so
 %%MOD_AUTHN_ANON%%libexec/apache22/mod_authn_anon.so
 %%MOD_AUTHN_DBD%%libexec/apache22/mod_authn_dbd.so
 %%MOD_AUTHN_DBM%%libexec/apache22/mod_authn_dbm.so
