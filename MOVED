@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1108 2006/08/04 14:57:47 acm Exp $
+# $FreeBSD: ports/MOVED,v 1.1109 2006/08/06 05:02:17 vanilla Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2430,4 +2430,4 @@ mail/dspampd||2006-08-01|Has expired: Buggy with recent perl versions, not devel
 net/svnc||2006-08-01|Has expired: mastersite gone, depends on unfetchable, antique version of vnc
 devel/p5-IPC-Mmap-SimpleShare||2006-08-01|Has expired
 devel/p5-Readonly-XS|devel/p5-Readonly|2006-08-02|p5-Readonly installs XS automatically
-chinese/arnettf||2006-08-06|Has expired
+chinese/arnettf||2006-08-06|Renamed to chinese/CJKUnifonts
