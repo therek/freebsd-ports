@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/anomy-sanitizer/pkg-plist,v 1.1 2003/12/11 17:25:34 sergei Exp $
 bin/sanitizer.pl
 bin/simplify.pl
 etc/sanitizer.cfg.sample
@@ -7,6 +7,7 @@ etc/sanitizer.cfg.sample
 %%SITE_PERL%%/Anomy/MIMEStream.pm
 %%SITE_PERL%%/Anomy/Sanitizer.pm
 %%SITE_PERL%%/Anomy/Sanitizer/FProt.pm
+%%SITE_PERL%%/Anomy/Sanitizer/FileTypes.pm
 %%SITE_PERL%%/Anomy/Sanitizer/MacroScanner.pm
 %%SITE_PERL%%/Anomy/Sanitizer/Scoring.pm
 @dirrm %%SITE_PERL%%/Anomy/Sanitizer/
