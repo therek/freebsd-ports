@@ -3,7 +3,7 @@
 #       python setup.py install
 #
 
-__version__ = "$FreeBSD$"
+__version__ = "$FreeBSD: ports/databases/py-sqlite3/files/setup.py,v 1.1 2006/06/23 03:54:01 perky Exp $"
 
 try:
     import distutils
@@ -12,6 +12,9 @@ try:
     from distutils.core import setup, Extension
 except:
     raise SystemExit, "Distutils problem"
+
+install.sub_commands = filter(lambda (cmd, avl): 'egg' not in cmd,
+                              install.sub_commands)
 
 prefix = sysconfig.PREFIX
 inc_dirs = [prefix + "/include", "Modules/_sqlite"]
