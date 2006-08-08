@@ -1,11 +1,10 @@
 #!/bin/sh -
 #
-# $FreeBSD: ports/sysutils/bsdstats/files/300.statistics,v 1.4 2006/08/08 04:06:55 scrappy Exp $
+# $FreeBSD: ports/sysutils/bsdstats/files/300.statistics,v 1.5 2006/08/08 04:30:38 scrappy Exp $
 #
 
 # If there is a global system configuration file, suck it in.
 #
-monthly_statistics_mailto="scrappy@hub.org,root"
 if [ -r /etc/defaults/periodic.conf ]
 then
     . /etc/defaults/periodic.conf
