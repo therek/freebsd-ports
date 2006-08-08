@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1098 2006/08/08 14:03:32 mnag Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1099 2006/08/08 14:46:36 garga Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -69,6 +69,7 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
+      <cvename>CVE-2006-4018</cvename>
       <url>http://www.clamav.net/security/0.88.4.html</url>
     </references>
     <dates>
