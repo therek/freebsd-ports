@@ -1,9 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/couriergraph/files/couriergraph.sh.in,v 1.1 2005/12/28 20:51:51 edwin Exp $
+# $FreeBSD: ports/mail/couriergraph/files/couriergraph.sh.in,v 1.2 2006/02/20 20:47:08 dougb Exp $
 #
 # PROVIDE: couriergraph
 # REQUIRE: DAEMON
+# BEFORE: mail
 #
 # Add the following line to /etc/rc.conf to enable mailgraph:
 #
