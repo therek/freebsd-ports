@@ -1,8 +1,11 @@
-@comment $FreeBSD: ports/www/resin3/pkg-plist,v 1.13 2006/04/03 15:06:06 vd Exp $
+@comment $FreeBSD: ports/www/resin3/pkg-plist,v 1.11 2005/12/20 22:38:35 edwin Exp $
+%%APP_NAME%%/lib/activation.jar
 %%APP_NAME%%/lib/aopalliance.jar
 %%APP_NAME%%/lib/ejb-20.jar
 %%APP_NAME%%/lib/ejb-30.jar
-%%APP_NAME%%/lib/j2eedeploy.jar
+%%APP_NAME%%/lib/j2ee-deploy-10.jar
+%%APP_NAME%%/lib/j2ee-management-10.jar
+%%APP_NAME%%/lib/javamail-14.jar
 %%APP_NAME%%/lib/jca-15.jar
 %%APP_NAME%%/lib/jms-11.jar
 %%APP_NAME%%/lib/jmx-12.jar
