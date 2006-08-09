@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/runit/pkg-plist,v 1.6 2005/08/29 12:21:12 sergei Exp $
+@comment $FreeBSD: ports/sysutils/runit/pkg-plist,v 1.7 2006/04/29 20:57:25 sergei Exp $
 etc/runit/1.sample
 etc/runit/2.sample
 etc/runit/3.sample
@@ -31,13 +31,9 @@ sbin/utmpset
 %%PORTDOCS%%%%DOCSDIR%%/runscripts.html
 %%PORTDOCS%%%%DOCSDIR%%/runsv.8.html
 %%PORTDOCS%%%%DOCSDIR%%/runsvchdir.8.html
-%%PORTDOCS%%%%DOCSDIR%%/runsvctrl.8.html
 %%PORTDOCS%%%%DOCSDIR%%/runsvdir.8.html
-%%PORTDOCS%%%%DOCSDIR%%/runsvstat.8.html
 %%PORTDOCS%%%%DOCSDIR%%/sv.8.html
 %%PORTDOCS%%%%DOCSDIR%%/svlogd.8.html
-%%PORTDOCS%%%%DOCSDIR%%/svwaitdown.8.html
-%%PORTDOCS%%%%DOCSDIR%%/svwaitup.8.html
 %%PORTDOCS%%%%DOCSDIR%%/upgrade.html
 %%PORTDOCS%%%%DOCSDIR%%/usedietlibc.html
 %%PORTDOCS%%%%DOCSDIR%%/useinit.html
