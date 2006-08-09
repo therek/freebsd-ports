@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/t-prot/pkg-plist,v 1.4 2005/08/29 12:22:01 sergei Exp $
+@comment $FreeBSD: ports/mail/t-prot/pkg-plist,v 1.5 2005/10/05 04:26:25 sergei Exp $
 bin/t-prot
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
 %%PORTDOCS%%%%DOCSDIR%%/README
@@ -9,6 +9,7 @@ bin/t-prot
 %%EXAMPLESDIR%%/filter_innd.pl
 %%EXAMPLESDIR%%/muttrc.t-prot
 %%EXAMPLESDIR%%/t-prot-r1.238-gpg126.diff
-%%EXAMPLESDIR%%/t-prot-r1.243-mutt157.diff
+%%EXAMPLESDIR%%/t-prot-r1.246-mutt1511.diff
 %%EXAMPLESDIR%%/t-prot.sl
+%%EXAMPLESDIR%%/t-prot.sl-slang2.diff
 @dirrm %%EXAMPLESDIR%%
