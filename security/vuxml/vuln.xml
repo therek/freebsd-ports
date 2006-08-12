@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1102 2006/08/12 17:10:25 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1103 2006/08/12 18:36:37 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,8 +39,11 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>ja-squirrelmail</name>
-	<name>squirrelmail</name>
 	<range><ge>1.4.0</ge><lt>1.4.8,2</lt></range>
+      </package>
+      <package>
+	<name>squirrelmail</name>
+	<range><ge>1.4.0</ge><lt>1.4.8</lt></range>
       </package>
     </affects>
     <description>
