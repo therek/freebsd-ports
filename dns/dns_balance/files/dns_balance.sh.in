@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/dns_balance/files/dns_balance.sh.in,v 1.1 2005/11/17 19:13:22 pav Exp $
+# $FreeBSD: ports/dns/dns_balance/files/dns_balance.sh.in,v 1.2 2006/02/20 20:46:56 dougb Exp $
 #
 # PROVIDE: dns_balance
 # REQUIRE: DAEMON
@@ -11,12 +11,14 @@ name=dns_balance
 rcvar=`set_rcvar`
 
 load_rc_config ${name}
-
 : ${dns_balance_enable="NO"}
-: ${dns_balance_pidfile="/var/run/dns_balance.pid"}
-: ${dns_balance_flags="-l /var/log/dns_balance.log -p ${dns_balance_pidfile}"}
+: ${dns_balance_logfile="/var/log/${name}.log"}
+: ${dns_balance_pidfile="/var/log/${name}.pid"}
+: ${dns_balance_flags=""}
 
-command="env ROOT=%%PREFIX%%/lib/dns_balance %%PREFIX%%/sbin/dns_balance"
+command="%%PREFIX%%/sbin/${name}"
+command_args="-l ${dns_balance_logfile} -p ${dns_balance_pidfile}"
+command_interpreter=%%RUBY%%
 pidfile=${dns_balance_pidfile}
 
 run_rc_command "$1"
