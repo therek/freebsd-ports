@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/devel/gdb6/files/patch-gdb_ppcfbsd-tdep.h,v 1.1 2006/08/02 23:34:54 sobomax Exp $
 
 --- /dev/null
 +++ gdb/ppcfbsd-tdep.h

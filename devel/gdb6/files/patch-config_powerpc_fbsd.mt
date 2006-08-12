@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/devel/gdb6/files/patch-gdb_config_powerpc_fbsd.mt,v 1.1 2006/08/02 23:34:54 sobomax Exp $
 
 --- /dev/null
 +++ gdb/config/powerpc/fbsd.mt

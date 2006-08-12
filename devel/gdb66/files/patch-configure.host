@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/devel/gdb6/files/patch-gdb_configure.host,v 1.1 2006/08/02 23:34:54 sobomax Exp $
 
 --- gdb/configure.host
 +++ gdb/configure.host

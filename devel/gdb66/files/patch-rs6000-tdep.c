@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/devel/gdb6/files/patch-gdb_rs6000-tdep.c,v 1.1 2006/08/02 23:34:54 sobomax Exp $
 
 --- gdb/rs6000-tdep.c
 +++ gdb/rs6000-tdep.c
