@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/DarwinStreamingServer/files/streamingadminserver.sh.in,v 1.1 2006/08/13 00:22:50 nork Exp $
 #
 # PROVIDE: streamingadminserver
 # REQUIRE: login
@@ -12,6 +12,7 @@ streamingadminserver_enable=${streamingadminserver_enable-"NO"}
 name=streamingadminserver
 rcvar=`set_rcvar`
 command=%%PREFIX%%/sbin/${name}.pl
+command_interpreter=%%PERL%%
 
 load_rc_config ${name}
 
