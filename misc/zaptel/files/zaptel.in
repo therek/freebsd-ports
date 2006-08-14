@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/zaptel/files/zaptel.in,v 1.1 2006/08/14 18:13:25 sobomax Exp $
 #
 # PROVIDE: zaptel
 # REQUIRE: NETWORKING
@@ -30,8 +30,9 @@ zaptel_start()
 	echo -n " ${name}"
 	for kmod in ${kmod_load}
 	do
-		kldload ${kmod_dir}/${kmod}
+		kldload ${kmod_dir}/${kmod} || exit 1
 	done
+	%%PREFIX%%/bin/ztcfg
 }
 
 zaptel_stop()
