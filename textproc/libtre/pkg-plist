@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/libtre/pkg-plist,v 1.8 2004/10/26 15:30:45 krion Exp $
+@comment $FreeBSD: ports/textproc/libtre/pkg-plist,v 1.9 2006/02/23 10:39:23 ade Exp $
 bin/agrep
 include/tre/regex.h
 include/tre/tre-config.h
@@ -12,3 +12,5 @@ libdata/pkgconfig/tre.pc
 %%PORTDOCS%%%%DOCSDIR%%/tre-syntax.html
 @dirrm include/tre
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
+%%NLS%%@dirrmtry share/locale/fi/LC_MESSAGES
+%%NLS%%@dirrmtry share/locale/fi
