@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/rt36/pkg-plist,v 1.15 2006/04/16 07:18:49 lawrance Exp $
+@comment $FreeBSD: ports/www/rt36/pkg-plist,v 1.16 2006/07/13 22:24:13 tdb Exp $
 @unexec if cmp -s %%RT_PATH%%/etc/RT_SiteConfig.pm %%RT_PATH%%/etc/RT_SiteConfig.pm-dist; then rm -f %%RT_PATH%%/etc/RT_SiteConfig.pm; fi
 %%RTPLIST%%/etc/RT_SiteConfig.pm-dist
 @exec [ -f %%RT_PATH%%/etc/RT_SiteConfig.pm ] || cp -p %%RT_PATH%%/etc/RT_SiteConfig.pm-dist %%RT_PATH%%/etc/RT_SiteConfig.pm
@@ -241,9 +241,11 @@
 %%RTPLIST%%/lib/t/regression/22search_tix_by_watcher.t
 %%RTPLIST%%/lib/t/regression/23-batch-upload-csv.t
 %%RTPLIST%%/lib/t/regression/23cfsort.t
+%%RTPLIST%%/lib/t/regression/23-web_attachments.t
 %%RTPLIST%%/lib/t/regression/24pawsort.t
 %%RTPLIST%%/lib/t/regression/25scrip_order.t
 %%RTPLIST%%/lib/t/regression/26command_line.t
+%%RTPLIST%%/lib/t/regression/27verp.t
 %%RTPLIST%%/lib/t/regression/mime_tests
 %%RTPLIST%%/lib/t/setup_regression.t
 %%RTPLIST%%/sbin/rt-dump-database
@@ -428,7 +430,6 @@
 %%RTPLIST%%/share/html/Helpers/CalPopup.html
 %%RTPLIST%%/share/html/NoAuth/Logout.html
 %%RTPLIST%%/share/html/NoAuth/Reminder.html
-%%RTPLIST%%/share/html/NoAuth/ahah.js
 %%RTPLIST%%/share/html/NoAuth/css/3.4-compat/body.css
 %%RTPLIST%%/share/html/NoAuth/css/3.4-compat/footer.css
 %%RTPLIST%%/share/html/NoAuth/css/3.4-compat/forms.css
