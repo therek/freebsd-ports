@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/axis/pkg-plist,v 1.5 2006/08/13 16:42:15 hq Exp $
 %%JAVAJARDIR%%/axis.jar
 %%JAVAJARDIR%%/jaxrpc.jar
 %%JAVAJARDIR%%/saaj.jar
@@ -2313,7 +2313,6 @@
 @dirrm %%WEBAPPS%%/axis/WEB-INF/classes/samples/addr
 @dirrm %%WEBAPPS%%/axis/WEB-INF/classes/samples
 @dirrm %%WEBAPPS%%/axis/WEB-INF/classes
-@dirrm %%WEBAPPS%%/axis/WEB-INF/attachments
 @dirrm %%WEBAPPS%%/axis/WEB-INF
 @dirrm %%WEBAPPS%%/axis
 %%PORTDOCS%%@dirrm %%EXAMPLESDIR%%/xbeans
