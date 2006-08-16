@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/Makefile.man,v 1.14 2006/08/03 00:44:38 clsung Exp $
+# $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/Makefile.man,v 1.15 2006/08/06 22:59:58 clsung Exp $
 
 MAN1+=	meta.1
 
@@ -79,7 +79,9 @@ MAN3+=  Acme::MetaSyntactic::scooby_doo.3
 MAN3+=	Acme::MetaSyntactic::services.3
 MAN3+=	Acme::MetaSyntactic::shadok.3
 MAN3+=	Acme::MetaSyntactic::simpsons.3
+MAN3+=	Acme::MetaSyntactic::sins.3
 MAN3+=	Acme::MetaSyntactic::smtp.3
+MAN3+=	Acme::MetaSyntactic::space_missions.3
 MAN3+=	Acme::MetaSyntactic::sql.3
 MAN3+=	Acme::MetaSyntactic::stars.3
 MAN3+=	Acme::MetaSyntactic::swords.3
