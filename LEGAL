@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.489 2006/08/02 19:40:34 acm Exp $
+# $FreeBSD: ports/LEGAL,v 1.490 2006/08/03 01:17:28 acm Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -685,3 +685,4 @@ simian-*                devel/simian            Have to agree to
 xGate/*			japanese/xgate		Requested by Orangesoft Inc
 tw_cli-*		sysutils/tw_cli		Redistribution forbidden by
 						license.
+lha-1.14i-ac*		archivers/lha-ac	No Redistribution
