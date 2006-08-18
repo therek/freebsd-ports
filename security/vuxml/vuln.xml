@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1114 2006/08/15 21:26:36 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1115 2006/08/17 22:54:47 shaun Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -40,6 +40,10 @@ Note:  Please add new entries to the beginning of this file.
       <package>
         <name>horde</name>
         <range><le>3.1.2</le></range>
+      </package>
+      <package>
+        <name>imp</name>
+        <range><le>4.1.2</le></range>
       </package>
     </affects>
     <description>
@@ -66,6 +70,8 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
+      <bid>19557</bid>
+      <bid>19544</bid>
       <url>http://secunia.com/advisories/21500/</url>
       <url>http://lists.horde.org/archives/announce/2006/000292.html</url>
     </references>
