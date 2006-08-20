@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/arpwatch/files/arpwatch.sh.in,v 1.2 2005/12/29 15:48:38 pav Exp $
+# $FreeBSD: ports/net-mgmt/arpwatch/files/arpwatch.sh.in,v 1.3 2006/02/20 20:47:32 dougb Exp $
 #
 
 # PROVIDE: arpwatch
@@ -63,7 +63,7 @@ case ${arpwatch_interfaces} in
     ;;
 
     *)
-	 if [ "$1" = "start" ]; then
+	 if [ "$1" = "start" -o "$1" = "faststart" ]; then
  	     for interface in ${arpwatch_interfaces}; do
 		 eval options=\$arpwatch_${interface}_options
 		 command_args="-i ${interface} ${options} -f arp.${interface}.dat"
