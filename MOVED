@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1116 2006/08/17 09:24:26 roam Exp $
+# $FreeBSD: ports/MOVED,v 1.1117 2006/08/18 01:43:49 maho Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2444,3 +2444,4 @@ security/linux-krb5-libs||2006-08-13|Integrated with emulators/linux_base-fc4
 sysutils/linux-e2fsprogs||2006-08-13|Integrated with emulators/linux_base-fc4
 net/magictun||2006-08-17|Abandoned
 lang/gcc41-withgcjawt|lang/gcc41-withgcjawt|2006-08-18|finished repocopy
+net/lam7|net/lam|2006-08-21|Replace lam-6 which was deprecated
