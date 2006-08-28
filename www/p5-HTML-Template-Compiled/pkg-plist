@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/p5-HTML-Template-Compiled/pkg-plist,v 1.8 2006/07/14 05:08:22 clsung Exp $
+@comment $FreeBSD: ports/www/p5-HTML-Template-Compiled/pkg-plist,v 1.9 2006/08/22 09:04:42 rafan Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTML/Template/Compiled/.packlist
 %%SITE_PERL%%/HTML/Template/Compiled.pm
 %%SITE_PERL%%/HTML/Template/Compiled/Classic.pm
@@ -11,6 +11,7 @@
 %%SITE_PERL%%/HTML/Template/Compiled/Lazy.pm
 %%SITE_PERL%%/HTML/Template/Compiled/Parser.pm
 %%SITE_PERL%%/HTML/Template/Compiled/Plugin/DHTML.pm
+%%SITE_PERL%%/HTML/Template/Compiled/Plugin/XMLEscape.pm
 %%SITE_PERL%%/HTML/Template/Compiled/Reference.pod
 %%SITE_PERL%%/HTML/Template/Compiled/Utils.pm
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTML/Template/Compiled
