@@ -1,5 +1,5 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/multimedia/snd-music-duplicates/files/snd-music-duplicates.sh.in,v 1.1 2006/08/22 09:21:04 rafan Exp $
 
-JAVA_VERSION="%%JAVA_VERSION%%" "%%LOCALBASE%%/bin/java" -classpath "%%DATADIR%%/%%JARNAME%%" tigor.srdmusicduplicates.Application "$@"
+exec "%%LOCALBASE%%/bin/java" -classpath "%%DATADIR%%/%%JARNAME%%" tigor.srdmusicduplicates.Application "$@"
