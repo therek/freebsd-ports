@@ -8,6 +8,13 @@ upgrades.
 
 
 
+20060830:
+  AFFECTS: users of textproc/p5-Senna
+  AUTHOR: kuriyama@FreeBSD.org
+
+  This version (0.50) of p5-Senna module breaks some compatibilities
+  with the previous versions.
+
 20060828:
   AFFECTS: users of devel/gpc
   AUTHOR: mi+mx@aldan.algebra.com
@@ -4048,4 +4055,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.385 2006/08/28 19:35:35 alepulver Exp $
+$FreeBSD: ports/UPDATING,v 1.386 2006/08/28 20:04:46 alepulver Exp $
