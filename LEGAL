@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.490 2006/08/03 01:17:28 acm Exp $
+# $FreeBSD: ports/LEGAL,v 1.491 2006/08/17 05:02:45 dinoex Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -67,7 +67,6 @@ asWedit-*		www/aswedit		Commercial software
 atari800/*		emulators/atari800	xf25 contains copyright ROMs
 						and cannot be distributed
 autopano-sift		graphics/autopano-sift	May be covered by patents
-antivir-milter-*	security/antivir-milter	No redistribution allowed
 bamg*			math/bamg		Contact author personally
 						regarding commercial use
 baudline_*		audio/baudline		No redistribution allowed
