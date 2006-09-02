@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.33 2006/07/02 12:47:58 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.34 2006/07/09 16:34:49 andreas Exp $
 
 if [ "$BATCH" != "yes" ]; then
 
@@ -136,7 +136,7 @@ while [ "$1" ]; do
 		echo RUN_DEPENDS+=pap:${PORTSDIR}/net/netatalk
 		;;
 	\"SAMBA\")
-		echo RUN_DEPENDS+=smbclient:${PORTSDIR}/net/samba
+		echo RUN_DEPENDS+=smbclient:${PORTSDIR}/net/samba3
 		;;
 	\"BZIP2\")
 		;;
