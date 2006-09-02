@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1119 2006/08/30 12:32:07 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1120 2006/08/30 18:14:23 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -11785,7 +11785,8 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
 	<name>jabber</name>
-	<range><ge>0</ge></range>
+	<range><lt>1.4.3.1</lt></range>
+	<range><eq>1.4.4</eq></range>
       </package>
       <package>
 	<name>bnc</name>
