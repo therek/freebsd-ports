@@ -8,6 +8,13 @@ upgrades.
 
 
 
+20060902:
+  AFFECTS: users of net-p2p/linuxdcpp
+  AUTHOR: mezz@FreeBSD.org
+
+  The name of binary, datadir and docsdir have been renamed from ldcpp to
+  linuxdcpp by the linuxdcpp developer.
+
 20060831:
   AFFECTS: users of x11-wm/fluxbox-devel
   AUTHOR: mezz@FreeBSD.org
@@ -4078,4 +4085,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.388 2006/08/31 22:39:02 alepulver Exp $
+$FreeBSD: ports/UPDATING,v 1.389 2006/09/01 01:57:05 mezz Exp $
