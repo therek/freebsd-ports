@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/multimedia/tunapie/files/patch-src-TunerFrame1.py,v 1.2 2006/07/12 19:44:58 itetcu Exp $
 --- src/TunerFrame1.py	Sun Jul  2 20:16:55 2006
 +++ src/TunerFrame1.py.port	Tue Jul  4 15:07:01 2006
 @@ -422,10 +422,10 @@
@@ -10,7 +10,7 @@ $FreeBSD$
 -        self.term='/usr/bin/x-terminal-emulator'
 -        self.ripper='/usr/bin/streamripper -t -u winamp2 -o never'
 +        self.mediaplayer='%%X11BASE%%/bin/xmms'
-+        self.videoplayer='%%X11BASE%%/bin/xine'
++        self.videoplayer='%%VIDEOPLAYER%%'
 +        self.term='%%X11BASE%%/bin/xterm'
 +        self.ripper='%%LOCALBASE%%/bin/streamripper -t -u winamp2 -o never'
          self.rdir=self.home+'/.tunapie/streamripper'

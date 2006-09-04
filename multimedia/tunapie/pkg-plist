@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/tunapie/pkg-plist,v 1.1 2006/06/07 06:36:51 clsung Exp $
+@comment $FreeBSD: ports/multimedia/tunapie/pkg-plist,v 1.2 2006/07/12 19:44:57 itetcu Exp $
 bin/tunapie
 %%DATADIR%%/AboutTuner.py
 %%DATADIR%%/AboutTuner.pyc
@@ -23,4 +23,6 @@ bin/tunapie
 %%DATADIR%%/tuneradult.pyc
 %%DATADIR%%/tunersafe.py
 %%DATADIR%%/tunersafe.pyc
+%%DESKTOPDIR%%/tunapie.desktop
 @dirrm %%DATADIR%%
+@dirrmtry share/applications
