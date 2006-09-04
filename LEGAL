@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.491 2006/08/17 05:02:45 dinoex Exp $
+# $FreeBSD: ports/LEGAL,v 1.492 2006/09/02 22:20:13 kris Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -165,7 +165,7 @@ dnews_*			news/dnews		Only free for schools and
 						We currently ask for permission
 						to put a package on the CD-ROM
 dns.tar.Z		dns/h2n			Never get an approval yet
-doom3-linux-*		games/linux-doom3-demo	Redistribution limited
+doom3-linux-*		games/linux-doom3*	Redistribution limited
 doomsrc.zip		games/doom		requested by id Software
 dr_freebsd_*.zip	sysutils/megarc		Must be downloaded manually
 drweb-qmail-*.tar.gz	security/drweb-qmail	Non-commercial or evaluation use
