@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# @(#) $FreeBSD: ports/sysutils/fvcool/scripts/fvcool.sh,v 1.1 2004/10/17 03:32:08 linimon Exp $
+# @(#) $FreeBSD: ports/sysutils/fvcool/scripts/fvcool.sh,v 1.2 2006/02/20 20:47:42 dougb Exp $
 
 # PROVIDE: %%PORTNAME%%
 # REQUIRE: LOGIN abi
