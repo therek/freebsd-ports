@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/teamspeak_server/files/teamspeak-server.in,v 1.1 2006/04/14 18:10:37 mnag Exp $
 #
 # PROVIDE: teamspeak
-# REQUIRE: NETWORKING
+# REQUIRE: DAEMON
 # KEYWORD: shutdown
 #
 # Add the following lines to /etc/rc.conf.local or /etc/rc.conf
