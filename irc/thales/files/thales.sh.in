@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/thales/files/thales.sh.in,v 1.1 2005/11/29 22:44:49 flz Exp $
 #
 
 # PROVIDE: thales
@@ -19,7 +19,7 @@
 name="thales"
 rcvar=`set_rcvar`
 
-command="%%PREFIX%%/bin/thales"
+command="%%PREFIX%%/sbin/thales"
 
 [ -z "$thales_enable" ]	&& thales_enable="NO"
 
