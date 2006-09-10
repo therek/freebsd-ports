@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.27 2006/04/04 19:22:25 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.28 2006/08/31 05:37:04 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -63,6 +63,12 @@
 # USE_GNUSTEP_INSTALL=yes
 #	call install target with GNUstep.sh sourced in the current shell
 #
+# USE_GNUSTEP_SYSTEM_LIBS=	Renaissance:x11-toolkits/renaissance
+#	depends on a shared lib in System directrory
+#
+# USE_GNUSTEP_LOCAL_LIBS=	pantomime:mail/pantomime
+#	depends on a shared lib in Local directrory
+#
 
 # ---------------------------------------------------------------------------
 .if !defined(_POSTMKINCLUDED)
@@ -78,6 +84,13 @@ RUN_DEPENDS+=	${TARGLIB}/libobjc.so:${PORTSDIR}/${GNUSTEP_GCC_PORT}
 BUILD_DEPENDS+=	${COMBOLIBDIR}/libobjc.so:${PORTSDIR}/${GNUSTEP_OBJC_PORT}
 RUN_DEPENDS+=	${COMBOLIBDIR}/libobjc.so:${PORTSDIR}/${GNUSTEP_OBJC_PORT}
 .endif
+.endif
+
+.if defined(USE_GNUSTEP_BUILD)
+BUILD_DEPENDS+=	${SYSMAKEDIR}/GNUstep.sh:${PORTSDIR}/${GNUSTEP_MAKE_PORT}
+.endif
+.if defined(USE_GNUSTEP_INSTALL)
+RUN_DEPENDS+=	${SYSMAKEDIR}/GNUstep.sh:${PORTSDIR}/${GNUSTEP_MAKE_PORT}
 .endif
 
 GNUSTEP_MAKE_PORT?=	devel/gnustep-make
@@ -234,6 +247,27 @@ MAKE_FLAGS+=	GUI_BACKEND_LIB=cairo
 .endif
 
 # ---------------------------------------------------------------------------
+# source system liibs
+#
+.if defined(USE_GNUSTEP_SYSTEM_LIBS)
+.for _GNUSTEP_DEP in ${USE_GNUSTEP_SYSTEM_LIBS}
+BUILD_DEPENDS+=	${COMBOLIBDIR}/lib${_GNUSTEP_DEP:C/:.*//}.so:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
+RUN_DEPENDS+=	${COMBOLIBDIR}/lib${_GNUSTEP_DEP:C/:.*//}.so:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
+.endfor
+.endif
+
+# ---------------------------------------------------------------------------
+# source local liibs
+#
+:C/[.][0-9]*$//1
+.if defined(USE_GNUSTEP_LOCAL_LIBS)
+.for _GNUSTEP_DEP in ${USE_GNUSTEP_LOCAL_LIBS}
+BUILD_DEPENDS+=	${LOCALLIBDIR}/lib${_GNUSTEP_DEP:C/:.*//}.so:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
+RUN_DEPENDS+=	${LOCALLIBDIR}/lib${_GNUSTEP_DEP:C/:.*//}.so:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
+.endfor
+.endif
+
+# ---------------------------------------------------------------------------
 # source GNUstep.sh
 #
 .if defined(USE_GNUSTEP_CONFIGURE)
@@ -260,8 +294,6 @@ do-configure:
 # source GNUstep.sh
 #
 .if defined(USE_GNUSTEP_BUILD)
-BUILD_DEPENDS+=	${SYSMAKEDIR}/GNUstep.sh:${PORTSDIR}/${GNUSTEP_MAKE_PORT}
-
 do-build:
 	@(cd ${WRKSRC}; . ${SYSMAKEDIR}/GNUstep.sh; \
 		${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${ALL_TARGET})
@@ -272,8 +304,6 @@ do-build:
 # source GNUstep.sh
 #
 .if defined(USE_GNUSTEP_INSTALL)
-RUN_DEPENDS+=	${SYSMAKEDIR}/GNUstep.sh:${PORTSDIR}/${GNUSTEP_MAKE_PORT}
-
 do-install:
 	@(cd ${WRKSRC}; . ${SYSMAKEDIR}/GNUstep.sh; \
 		${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${INSTALL_TARGET})
