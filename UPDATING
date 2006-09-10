@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20061010:
+  AFFECTS: users of net-mgmt/zabbix
+  AUTHOR: sem@FreeBSD.org
+
+  Users who start zabbix server should note that server name was changed
+  from zabbix_suckerd to zabbix_server and a variable in /etc/rc.conf
+  should be changed accordingly.
 
 20060904:
   AFFECTS: users of net/samba3
@@ -4125,4 +4132,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.391 2006/09/03 14:13:02 nobutaka Exp $
+$FreeBSD: ports/UPDATING,v 1.392 2006/09/04 19:03:46 garga Exp $
