@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/Makefile.man,v 1.17 2006/08/29 01:53:58 clsung Exp $
+# $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/Makefile.man,v 1.18 2006/09/06 09:10:34 leeym Exp $
 
 MAN1+=	meta.1
 
@@ -95,6 +95,7 @@ MAN3+=	Acme::MetaSyntactic::trigan.3
 MAN3+=	Acme::MetaSyntactic::unicode.3
 MAN3+=	Acme::MetaSyntactic::us_presidents.3
 MAN3+=	Acme::MetaSyntactic::userfriendly.3
+MAN3+=	Acme::MetaSyntactic::vcs.3
 MAN3+=	Acme::MetaSyntactic::viclones.3
 MAN3+=	Acme::MetaSyntactic::weekdays.3
 MAN3+=	Acme::MetaSyntactic::yapc.3

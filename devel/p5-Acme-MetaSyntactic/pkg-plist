@@ -1,8 +1,9 @@
-@comment $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/pkg-plist,v 1.17 2006/08/29 01:53:58 clsung Exp $
+@comment $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/pkg-plist,v 1.18 2006/09/06 09:10:34 leeym Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Acme/MetaSyntactic/.packlist
 %%SITE_PERL%%/Acme/MetaSyntactic/yapc.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/weekdays.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/viclones.pm
+%%SITE_PERL%%/Acme/MetaSyntactic/vcs.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/userfriendly.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/us_presidents.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/unicode.pm
