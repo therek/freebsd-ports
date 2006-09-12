@@ -1,10 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/lanbrowsing/files/lisa.sh,v 1.13 2006/06/05 19:24:19 lofi Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: lisa
 # REQUIRE: LOGIN
+# KEYWORD: FreeBSD
 
 lisa_enable="NO"
 lisa_conffile="%%PREFIX%%/etc/lisarc"
