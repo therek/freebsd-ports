@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.396 2006/08/09 11:45:43 sat Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.397 2006/09/03 15:23:03 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -981,7 +981,7 @@ MASTER_SITE_SOURCEFORGE_EXTENDED+= \
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_SOURCEFORGE_JP)
-.for mirror in keihanna
+.for mirror in keihanna osdn qgpop
 MASTER_SITE_SOURCEFORGE_JP+= \
 	http://${mirror}.dl.sourceforge.jp/%SUBDIR%/
 .endfor
