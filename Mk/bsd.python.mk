@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.80 2006/08/04 06:37:05 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.81 2006/08/04 12:34:41 erwin Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -298,7 +298,7 @@ PYTHON_PORTVERSION=	${_PYTHON_PORTVERSION}
 
 # Python-2.5
 .if ${PYTHON_VERSION} == "python2.5"
-PYTHON_PORTVERSION?=2.5.b3
+PYTHON_PORTVERSION?=2.5.c2
 PYTHON_PORTSDIR=	${PORTSDIR}/lang/python-devel
 PYTHON_REL=			250
 PYTHON_SUFFIX=		25
@@ -355,8 +355,8 @@ check-makevars::
 .if defined(PYTHON_REL) && ${PYTHON_REL} == 250
 PYTHON_MASTER_SITES=		${MASTER_SITE_PYTHON}
 PYTHON_MASTER_SITE_SUBDIR=	ftp/python/2.5
-PYTHON_DISTFILE=			Python-${PYTHON_PORTVERSION:S/5.b/5b/}.tgz
-PYTHON_WRKSRC=				${WRKDIR}/Python-${PYTHON_PORTVERSION:S/5.b/5b/}
+PYTHON_DISTFILE=			Python-${PYTHON_PORTVERSION:S/5.c/5c/}.tgz
+PYTHON_WRKSRC=				${WRKDIR}/Python-${PYTHON_PORTVERSION:S/5.c/5c/}
 .else
 PYTHON_MASTER_SITES=		${MASTER_SITE_PYTHON}
 PYTHON_MASTER_SITE_SUBDIR=	ftp/python/${PYTHON_PORTVERSION}
