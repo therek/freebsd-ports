@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache20/Makefile.modules,v 1.20 2005/01/17 20:30:07 clement Exp $
+# $FreeBSD: ports/www/apache20/Makefile.modules,v 1.21 2006/01/15 18:58:37 clement Exp $
 #
 
 # MPM section:
@@ -82,6 +82,10 @@ CONFIGURE_ARGS+=	--with-dbm=db42 \
 LIB_DEPENDS+=		db-4.3:${PORTSDIR}/databases/db43
 CONFIGURE_ARGS+=	--with-dbm=db43 \
 			--with-berkeley-db=${LOCALBASE}/include:${LOCALBASE}/lib/db43
+.       elif ${WITH_BERKELEYDB} == "db44"
+LIB_DEPENDS+=		db-4.4:${PORTSDIR}/databases/db44
+CONFIGURE_ARGS+=	--with-dbm=db44 \
+			--with-berkeley-db=${LOCALBASE}/include:${LOCALBASE}/lib/db44
 .       else
 IGNORE=		"Unknown Berkeley DB version"
 .       endif
