@@ -2,7 +2,7 @@
 # Date created:				29 Feb 2004
 # Whom:					Tom McLaughlin <tmclaugh@sdf.lonestar.org>
 #
-# $FreeBSD: ports/x11-themes/gnome-icons/bsd.gnome-icons.mk,v 1.3 2005/11/08 12:49:48 jylefort Exp $
+# $FreeBSD: ports/x11-themes/gnome-icons/bsd.gnome-icons.mk,v 1.4 2006/06/11 15:29:00 erwin Exp $
 #
 
 # Port logic gratuitously stolen from x11-themes/kde-icons-noia by
@@ -16,23 +16,13 @@ REASON=		Themes may contain artwork not done by the author. \
 		Keep FreeBSD safe if theme author violated copyrights.
 
 USE_X_PREFIX=	yes
-PLIST=		${WRKDIR}/plist
 
 WANT_GNOME=	yes
 INSTALLS_ICONS=	yes
 
-pre-install:
-	@${RM} -rf ${PLIST}
+do-install: icon-do-install
 
-	@cd ${WRKDIR} && ${FIND} * ! -type d | ${SORT} >> ${PLIST}; \
-	${SED} -i "" -e "s:^:share/icons/:" ${PLIST}; \
-	${FIND} * -type d ! -empty | ${SORT} -r | \
-		${SED} -e "s:^:@dirrm share/icons/:" | \
-		${GREP} / >> ${PLIST}; \
-	${ECHO} "@unexec /bin/rmdir %D/share/icons 2> /dev/null || \
-		/usr/bin/true" >> ${PLIST}
-
-do-install:
+icon-do-install:
 	cd ${WRKDIR} && ${FIND} * -type d ! -empty \
 		-exec ${MKDIR} -m 0755 \
 		${PREFIX}/share/icons/"{}" \;
