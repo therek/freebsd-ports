@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1137 2006/09/13 22:07:27 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1138 2006/09/14 11:03:34 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -51,6 +51,8 @@ Note:  Please add new entries to the beginning of this file.
 	  movie can possibly execute remote code via the users browser.
 	  The vulnerabilities can also lead to a Denial of Service
 	  (application crash).</p>
+	<p>Users who have QuickTime as a browser plugin might be
+	  directly affected by the remote code execution.</p>
       </body>
     </description>
     <references>
