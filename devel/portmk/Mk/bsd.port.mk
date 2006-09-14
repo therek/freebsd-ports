@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/devel/portmk/Mk/bsd.port.mk,v 1.35 2006/07/19 00:02:52 linimon Exp $
+# $FreeBSD: ports/devel/portmk/Mk/bsd.port.mk,v 1.36 2006/08/17 07:11:34 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1304,6 +1304,7 @@ DISTNAME?=	${PORTNAME}-${DISTVERSIONPREFIX}${DISTVERSION:C/:(.)/\1/g}${DISTVERSI
 # tree we are and thus can't go relative.  They can, of course, be overridden
 # by individual Makefiles or local system make configuration.
 PORTSDIR?=		/usr/ports
+DEVELPORTSDIR?=	${PORTSDIR}/devel/portmk
 LOCALBASE?=		/usr/local
 X11BASE?=		/usr/X11R6
 LINUXBASE?=		/compat/linux
