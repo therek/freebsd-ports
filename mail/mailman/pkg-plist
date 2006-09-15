@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailman/pkg-plist,v 1.32 2006/05/05 18:49:10 jmelo Exp $
+@comment $FreeBSD: ports/mail/mailman/pkg-plist,v 1.33 2006/09/04 14:12:16 jmelo Exp $
 @unexec if cmp -s %D/%%MMDIR%%/Mailman/mm_cfg.py %D/%%MMDIR%%/Mailman/mm_cfg.py.dist; then rm -f %D/%%MMDIR%%/Mailman/mm_cfg.py; fi
 @unexec rm -f %D/%%MMDIR%%/Mailman/mm_cfg.pyc
 @exec mkdir -p %D/%%MMDIR%%/archives
@@ -1049,6 +1049,7 @@
 %%MMDIR%%/templates/fr/archliststart.html
 %%MMDIR%%/templates/fr/archtoc.html
 %%MMDIR%%/templates/fr/archtocentry.html
+%%MMDIR%%/templates/fr/archtocnombox.html
 %%MMDIR%%/templates/fr/article.html
 %%MMDIR%%/templates/fr/bounce.txt
 %%MMDIR%%/templates/fr/checkdbs.txt
