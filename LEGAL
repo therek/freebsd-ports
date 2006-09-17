@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.495 2006/09/08 19:24:11 acm Exp $
+# $FreeBSD: ports/LEGAL,v 1.496 2006/09/11 18:06:11 vd Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -599,7 +599,7 @@ ue*dev.zip		editors/uemacs		Resale allowed for media cost
 						only
 uDrawGraph-*		graphics/uDrawGraph	binary under GNU LGPL without
 						accompanying source
-uppaal.zip		devel/uppaal		Downloading requires completion
+uppaal-*.zip		devel/uppaal		Downloading requires completion
 						of a license agreement
 upsmon*			sysutils/upsmon		Redistribute only with
 						original source code
