@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/pkg-plist,v 1.18 2006/09/06 09:10:34 leeym Exp $
+@comment $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/pkg-plist,v 1.19 2006/09/11 03:34:12 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Acme/MetaSyntactic/.packlist
 %%SITE_PERL%%/Acme/MetaSyntactic/yapc.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/weekdays.pm
@@ -57,6 +57,7 @@
 %%SITE_PERL%%/Acme/MetaSyntactic/loremipsum.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/jerkcity.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/jamesbond.pm
+%%SITE_PERL%%/Acme/MetaSyntactic/invasions.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/hhgg.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/haddock.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/groo.pm
