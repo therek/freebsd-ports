@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.541 2006/09/15 06:57:07 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.542 2006/09/20 04:02:09 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3091,7 +3091,7 @@ IGNORE=	is marked as broken: ${BROKEN}
 IGNORE=	is forbidden: ${FORBIDDEN}
 .endif
 
-.if (defined(MANUAL_PACKAGE_BUILD) && defined(PACKAGE_BUILDING) && !defined(PARALLEL_PACKAGE_BUILD))
+.if (defined(MANUAL_PACKAGE_BUILD) && defined(PACKAGE_BUILDING))
 IGNORE=	has to be built manually: ${MANUAL_PACKAGE_BUILD}
 clean:
 	@${IGNORECMD}
