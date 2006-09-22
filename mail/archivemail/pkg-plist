@@ -1,9 +1,11 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/archivemail/pkg-plist,v 1.3 2004/04/11 21:53:02 sergei Exp $
 bin/archivemail
 %%PORTDOCS%%%%DOCSDIR%%/CHANGELOG
 %%PORTDOCS%%%%DOCSDIR%%/FAQ
+%%PORTDOCS%%%%DOCSDIR%%/Makefile
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/TODO
+%%PORTDOCS%%%%DOCSDIR%%/archivemail.sgml
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%EXAMPLESDIR%%/archivemail_all
 %%EXAMPLESDIR%%/test_archivemail.py
