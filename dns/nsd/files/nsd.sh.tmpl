@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/nsd/files/nsd.sh.tmpl,v 1.1 2004/05/29 12:23:56 pav Exp $
+# $FreeBSD: ports/dns/nsd/files/nsd.sh.tmpl,v 1.2 2004/11/04 13:09:07 clive Exp $
 #
 # PROVIDE: nsd
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@ rcvar=`set_rcvar`
 
 prefix=%%PREFIX%%
 
-required_files=%%NSDDIR%%/nsd.zones
+required_files=%%NSDDIR%%/nsd.conf
 
 command=/usr/local/sbin/${name}
 pidfile=/var/run/${name}.pid
