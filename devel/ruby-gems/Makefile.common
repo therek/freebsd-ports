@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/ruby-gems/Makefile.common,v 1.4 2006/04/12 09:42:24 pav Exp $
+# $FreeBSD: ports/devel/ruby-gems/Makefile.common,v 1.5 2006/05/04 21:41:06 edwin Exp $
 # Ruby gem module common settings
 
 
@@ -18,7 +18,7 @@ GEMS_DIR=	${GEMS_BASE_DIR}/gems
 DOC_DIR=	${GEMS_BASE_DIR}/doc
 CACHE_DIR=	${GEMS_BASE_DIR}/cache
 SPEC_DIR=	${GEMS_BASE_DIR}/specifications
-GEM_NAME=	${PORTNAME}-${PORTVERSION}
+GEM_NAME?=	${PORTNAME}-${PORTVERSION}
 GEM_LIB_DIR=	${GEMS_DIR}/${GEM_NAME}
 GEM_DOC_DIR=	${DOC_DIR}/${GEM_NAME}
 GEM_SPEC=	${SPEC_DIR}/${GEM_NAME}.gemspec
