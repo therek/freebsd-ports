@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/comms/kermit/files/patch-ck__crp.c,v 1.1 2003/03/04 15:03:42 naddy Exp $
 
 --- ck_crp.c.orig	Tue Jun 25 17:53:02 2002
 +++ ck_crp.c	Tue Mar  4 15:14:45 2003
@@ -12,3 +12,14 @@ $FreeBSD$
      return(rc);
  }
  
+@@ -467,8 +467,8 @@
+  * These function pointers point to the current routines
+  * for encrypting and decrypting data.
+  */
+-static VOID     (*encrypt_output) P((unsigned char *, int));
+-static int      (*decrypt_input) P((int));
++VOID     (*encrypt_output) P((unsigned char *, int));
++int      (*decrypt_input) P((int));
+ 
+ #ifdef DEBUG
+ static int encrypt_debug_mode = 1;
