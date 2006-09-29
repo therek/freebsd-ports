@@ -1,6 +1,6 @@
 #!/bin/sh -
 #
-# $FreeBSD: ports/sysutils/bsdstats/files/300.statistics,v 1.25 2006/09/29 02:24:55 scrappy Exp $
+# $FreeBSD: ports/sysutils/bsdstats/files/300.statistics,v 1.26 2006/09/29 18:58:20 scrappy Exp $
 #
 
 # If there is a global system configuration file, suck it in.
@@ -35,7 +35,7 @@ IFS="
 "
 
 random () {
-  jot -r 1 0 300
+  jot -r 1 0 900
 }
 
 send_devices () {
