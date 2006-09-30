@@ -10,6 +10,22 @@ in the release notes.
 
 All ports committers are allowed to commit to this file.
 
+20060930:
+AUTHOR: portmgr@FreeBSD.org
+The following functional changes were made to bsd.port.mk:
+
+  * The bsd.port.mk pre and post includes have been split into 3 pieces
+    instead of 2, to allow OPTIONS to be able to influence dependencies.
+    This is still experimental and not yet enabled by any port.  This adds
+    the file 'bsd.port.options.mk'.
+
+  * bsd.gcc.mk has been updated to understand gfortran.
+
+  * emulators/linux_base is now removed.  linux_base-fc4 has been the default
+    for some time.
+
+  * The USE_FIREBIRD macro was added to bsd.database.mk.
+
 20060914:
 AUTHOR: portmgr@FreeBSD.org
 The following functional changes were made to bsd.port.mk:
@@ -1203,4 +1219,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.59 2006/09/03 15:23:03 sat Exp $
+$FreeBSD: ports/CHANGES,v 1.60 2006/09/15 06:57:07 linimon Exp $
