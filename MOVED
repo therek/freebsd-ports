@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1139 2006/09/23 10:17:49 hrs Exp $
+# $FreeBSD: ports/MOVED,v 1.1140 2006/09/30 14:00:46 sat Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2470,3 +2470,4 @@ audio/wmtune||2006-09-21|Has expired: mastersite disappeared, no longer maintain
 palm/pilot-link-devel||2006-09-22|no longer needed, removed
 japanese/dvi2ps|japanese/dvipsk|2006-09-23|Removed because no longer supported and dvipsk has enough compatibility
 sysutils/xsearch|sysutils/searchmonkey|2006-09-30|The project has been renamed
+textproc/p5-XML-LibXML-XPathContext|textproc/p5-XML-LibXML|2006-09-30|merged
