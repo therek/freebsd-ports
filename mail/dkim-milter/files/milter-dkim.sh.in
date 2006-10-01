@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dkim-milter/files/milter-dkim.sh.in,v 1.3 2006/05/01 15:05:44 pav Exp $
+# $FreeBSD: ports/mail/dkim-milter/files/milter-dkim.sh.in,v 1.4 2006/09/24 17:01:15 pav Exp $
 #
 
 # PROVIDE: milter-dkim
@@ -76,7 +76,7 @@ else
 	if [ "x$1" != "xrestart" ]; then
 	    for profile in ${milterdkim_profiles}; do
 		echo "===> milterdkim profile: ${profile}"
-		$0 $1 ${profile}
+		%%RC_SCRIPT%% $1 ${profile}
 		retcode="$?"
 		if [ "0${retcode}" -ne 0 ]; then
 		    failed="${profile} (${retcode}) ${failed:-}"
