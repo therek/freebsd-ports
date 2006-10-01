@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dk-milter/files/milter-dk.sh.in,v 1.4 2006/07/12 08:09:13 delphij Exp $
+# $FreeBSD: ports/mail/dk-milter/files/milter-dk.sh.in,v 1.5 2006/09/25 17:44:40 pav Exp $
 #
 
 # PROVIDE: milter-dk
@@ -75,7 +75,7 @@ else
 	if [ "x$1" != "xrestart" ]; then
 	    for profile in ${milterdk_profiles}; do
 		echo "===> milterdk profile: ${profile}"
-		$0 $1 ${profile}
+		%%RC_SCRIPT%% $1 ${profile}
 		retcode="$?"
 		if [ "0${retcode}" -ne 0 ]; then
 		    failed="${profile} (${retcode}) ${failed:-}"
