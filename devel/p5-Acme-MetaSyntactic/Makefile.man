@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/Makefile.man,v 1.20 2006/09/19 03:46:26 clsung Exp $
+# $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/Makefile.man,v 1.21 2006/09/27 01:28:29 clsung Exp $
 
 MAN1+=	meta.1
 
@@ -52,6 +52,7 @@ MAN3+=	Acme::MetaSyntactic::magic8ball.3
 MAN3+=	Acme::MetaSyntactic::magicroundabout.3
 MAN3+=	Acme::MetaSyntactic::metro.3
 MAN3+=	Acme::MetaSyntactic::monty_spam.3
+MAN3+=	Acme::MetaSyntactic::nis.3
 MAN3+=	Acme::MetaSyntactic::norse_mythology.3
 MAN3+=	Acme::MetaSyntactic::octothorpe.3
 MAN3+=	Acme::MetaSyntactic::olympics.3

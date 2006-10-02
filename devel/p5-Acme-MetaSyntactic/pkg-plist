@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/pkg-plist,v 1.20 2006/09/19 03:46:26 clsung Exp $
+@comment $FreeBSD: ports/devel/p5-Acme-MetaSyntactic/pkg-plist,v 1.21 2006/09/27 01:28:29 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Acme/MetaSyntactic/.packlist
 %%SITE_PERL%%/Acme/MetaSyntactic/Alias.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/List.pm
@@ -49,6 +49,7 @@
 %%SITE_PERL%%/Acme/MetaSyntactic/magicroundabout.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/metro.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/monty_spam.pm
+%%SITE_PERL%%/Acme/MetaSyntactic/nis.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/norse_mythology.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/octothorpe.pm
 %%SITE_PERL%%/Acme/MetaSyntactic/olympics.pm
