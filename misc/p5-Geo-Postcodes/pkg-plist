@@ -1,6 +1,7 @@
-@comment $FreeBSD: ports/misc/p5-Geo-Postcodes/pkg-plist,v 1.1 2006/07/19 08:00:52 clsung Exp $
+@comment $FreeBSD: ports/misc/p5-Geo-Postcodes/pkg-plist,v 1.2 2006/09/25 14:12:41 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Geo/Postcodes/.packlist
 %%SITE_PERL%%/Geo/Postcodes.pm
+%%SITE_PERL%%/Geo/Postcodes/Ajax.pod
 %%SITE_PERL%%/Geo/Postcodes/Selection.pod
 %%SITE_PERL%%/Geo/Postcodes/Subclass.pod
 %%SITE_PERL%%/Geo/Postcodes/Tutorial.pod
