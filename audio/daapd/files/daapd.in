@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/audio/daapd/files/daapd.sh,v 1.4 2004/07/27 07:31:52 lth Exp $
+# $FreeBSD$
 
 # PROVIDE: daapd
 # REQUIRE: DAEMON
