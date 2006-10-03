@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/gorilla/pkg-plist,v 1.1 2006/03/20 19:20:10 pav Exp $
+@comment $FreeBSD: ports/security/gorilla/pkg-plist,v 1.2 2006/08/23 11:41:37 rafan Exp $
 bin/gorilla
 lib/gorilla/gorilla.tcl
 lib/gorilla/isaac.tcl
@@ -22,6 +22,9 @@ lib/gorilla/pwsafe/pwsafe.tcl
 lib/gorilla/pwsafe/pwtest.tcl
 lib/gorilla/pwsafe/pwsafe-v2.tcl
 lib/gorilla/pwsafe/pwsafe-v3.tcl
+lib/gorilla/sha1/LICENSE.txt
+lib/gorilla/sha1/pkgIndex.tcl
+lib/gorilla/sha1/sha256.tcl
 lib/gorilla/twofish/twofish.tcl
 lib/gorilla/twofish/twotest.tcl
 lib/gorilla/twofish/pkgIndex.tcl
@@ -30,4 +33,5 @@ lib/gorilla/twofish/LICENSE.txt
 @dirrm lib/gorilla/pics
 @dirrm lib/gorilla/twofish
 @dirrm lib/gorilla/pwsafe
+@dirrm lib/gorilla/sha1
 @dirrm lib/gorilla
