@@ -1,7 +1,7 @@
 #
 # KNOBS - A list of popular knobs and descriptions
 #
-# $FreeBSD: ports/KNOBS,v 1.15 2006/09/04 11:10:04 sat Exp $
+# $FreeBSD: ports/KNOBS,v 1.16 2006/09/18 15:53:50 skv Exp $
 #
 # Rules to adding knobs:
 #
@@ -50,6 +50,7 @@ GNOME			Adds GNOME support
 GNUTLS			Adds GnuTLS support
 GSASL			Adds GSASL support
 GSM			GSM audio codec support
+GSSAPI			GSSAPI (Kerberos) support
 GSTREAMER		Gstreamer multimedia support
 GTK1			Adds Gtk+1 support
 GTK2			Adds Gtk+2 support
