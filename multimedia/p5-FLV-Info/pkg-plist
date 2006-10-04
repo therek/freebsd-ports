@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/p5-FLV-Info/pkg-plist,v 1.3 2006/07/23 06:12:25 clsung Exp $
+@comment $FreeBSD: ports/multimedia/p5-FLV-Info/pkg-plist,v 1.4 2006/07/26 01:53:36 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/FLV/Info/.packlist
 %%SITE_PERL%%/FLV/AMFReader.pm
 %%SITE_PERL%%/FLV/AMFWriter.pm
@@ -16,6 +16,7 @@
 %%SITE_PERL%%/FLV/ToSWF.pm
 %%SITE_PERL%%/FLV/VideoTag.pm
 bin/flv2mp3
+bin/flv2flv
 bin/flv2swf
 bin/flvinfo
 bin/swf2flv
