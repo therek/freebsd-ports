@@ -1,6 +1,6 @@
 #!/bin/sh -
 #
-# $FreeBSD: ports/sysutils/bsdstats/files/300.statistics,v 1.31 2006/10/03 01:33:11 scrappy Exp $
+# $FreeBSD: ports/sysutils/bsdstats/files/300.statistics,v 1.32 2006/10/04 04:46:01 scrappy Exp $
 #
 
 # If there is a global system configuration file, suck it in.
@@ -23,7 +23,7 @@ oldmask=$(umask)
 umask 066
 
 version="4.7"
-checkin_server=${monthly_statistics_checkin_server:-"bsdstats.org"}
+checkin_server=${monthly_statistics_checkin_server:-"rpt.bsdstats.org"}
 bsdstats_log=${monthly_statistics_logfile:-"/var/log/bsdstats"}
 id_token_file='/var/db/bsdstats'
 
