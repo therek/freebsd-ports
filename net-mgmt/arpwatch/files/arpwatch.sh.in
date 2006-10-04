@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/arpwatch/files/arpwatch.sh.in,v 1.5 2006/08/28 16:30:05 pav Exp $
+# $FreeBSD: ports/net-mgmt/arpwatch/files/arpwatch.sh.in,v 1.6 2006/09/21 09:27:14 johans Exp $
 #
 
 # PROVIDE: arpwatch
@@ -67,6 +67,7 @@ case ${arpwatch_interfaces} in
  	     for interface in ${arpwatch_interfaces}; do
 		 eval options=\$arpwatch_${interface}_options
 		 command_args="-i ${interface} ${options} -f arp.${interface}.dat"
+		 pidfile="/var/run/arpwatch-${interface}.pid"
 		 run_rc_command "$1"
 	     done
 	     ;;
