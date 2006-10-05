@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1171 2006/10/05 14:47:59 sat Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1172 2006/10/05 16:30:52 sat Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,6 +39,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>tin</name>
+	<name>zh-tin</name>
 	<range><lt>1.8.2</lt></range>
       </package>
     </affects>
