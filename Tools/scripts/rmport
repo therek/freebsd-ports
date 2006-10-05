@@ -30,7 +30,7 @@
 # Originally written by Vasil Dimov <vd@FreeBSD.org>
 # Others:
 #
-# $FreeBSD: ports/Tools/scripts/rmport,v 1.7 2006/09/12 08:35:16 vd Exp $
+# $FreeBSD: ports/Tools/scripts/rmport,v 1.8 2006/09/14 09:13:39 vd Exp $
 #
 # MAINTAINER=	vd@FreeBSD.org
 #
@@ -144,7 +144,7 @@ check_dep()
 		fi
 
 		# check if some Makefiles mention the port to be deleted
-		portdir_grep="^[^#].*/`basename ${catport}`([[:space:]]+|$)"
+		portdir_grep="^[^#].*/`basename ${catport}`([[:space:]]|/|$)"
 		r="`find ${PORTSDIR} -mindepth 2 -maxdepth 3 \( -name "Makefile*" -or -path "*Mk/*.mk" \) \
 			|xargs grep -EH "${portdir_grep}" \
 			|grep -vE "^(${rmcatports})" || :`"
