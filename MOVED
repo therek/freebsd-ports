@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1146 2006/10/03 14:28:09 girgen Exp $
+# $FreeBSD: ports/MOVED,v 1.1147 2006/10/05 07:18:08 vd Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2482,3 +2482,4 @@ net/openh323-112||2006-10-02|Has expired
 devel/pwlib152||2006-10-02|Has expired
 net/coda5_server||2006-10-05|Has expired: no longer available from mastersite
 net/coda5_client||2006-10-05|Has expired: no longer available from mastersite
+net/coda5_doc||2006-10-05|Has expired: coda5 removed
