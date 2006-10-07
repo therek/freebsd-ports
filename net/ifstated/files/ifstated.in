@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/ifstated/files/ifstated.sh,v 1.1 2004/11/21 03:08:36 pav Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: ifstated
