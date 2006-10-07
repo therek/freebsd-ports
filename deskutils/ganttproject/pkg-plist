@@ -1,7 +1,8 @@
-@comment $FreeBSD: ports/deskutils/ganttproject/pkg-plist,v 1.1 2006/04/03 15:02:43 hq Exp $
+@comment $FreeBSD: ports/deskutils/ganttproject/pkg-plist,v 1.2 2006/06/19 09:41:43 hq Exp $
 bin/ganttproject
 %%DATADIR%%/eclipsito.jar
 %%DATADIR%%/ganttproject-eclipsito-config.xml
+%%DATADIR%%/HouseBuildingSample.gan
 %%DATADIR%%/plugins/net.sourceforge.ganttproject_2.0.0/data/resources/calendar/i18n_de.calendar
 %%DATADIR%%/plugins/net.sourceforge.ganttproject_2.0.0/data/resources/calendar/i18n_en_canada.calendar
 %%DATADIR%%/plugins/net.sourceforge.ganttproject_2.0.0/data/resources/calendar/i18n_en_england.calendar
