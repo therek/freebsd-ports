@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1180 2006/10/07 09:24:29 sat Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1181 2006/10/07 15:22:55 sat Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -258,11 +258,6 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>mono</name>
-	<range><ge>0</ge></range>
-      </package>
-      <package>
-	<name>mono-devel</name>
-	<name>mono-svn</name>
 	<range><ge>0</ge></range>
       </package>
     </affects>
