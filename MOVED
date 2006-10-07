@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1153 2006/10/07 10:44:28 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1154 2006/10/07 11:14:53 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2197,7 +2197,6 @@ security/hpn-ssh|security/openssh-portable|2006-03-15|Now an option in security/
 audio/musicbrainz||2006-03-15|Remove expired port
 graphics/quickpics||2006-03-15|Remove expired port
 graphics/threeDS||2006-03-15|Remove expired port
-graphics/vid||2006-03-15|Remove expired port
 graphics/smoke||2006-03-15|Remove expired port
 misc/globus2||2006-03-15|Remove expired port
 sysutils/prune||2006-03-15|Remove expired port
