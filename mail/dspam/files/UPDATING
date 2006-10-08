@@ -1,5 +1,5 @@
 # $Tecnik: ports/mail/dspam/files/UPDATING,v 1.16 2006/06/07 23:45:21 itetcu Exp $
-# $FreeBSD: ports/mail/dspam/files/UPDATING,v 1.25 2006/06/05 09:35:19 itetcu Exp $
+# $FreeBSD: ports/mail/dspam/files/UPDATING,v 1.26 2006/06/07 23:44:38 itetcu Exp $
 #
 # for each PKGNAME or user option change an entry should be added in this file
 # each entry 
@@ -23,6 +23,11 @@ make extract;  more `find . -type f -maxdepth 2 -name UPGRADING`
 Bugfixes:
 - PostgreSQL fails to connect (always)
 - LDAP client will not build due to header missing from makefile
+
+Port changes:
+- added Cyrus's 2.3 deliver as LDA OPTION (on 2006-10-08) [1]
+
+[1] ports/103910 by Steffen Rick <srick@srick.org>
 
 
 ###########################################################################
