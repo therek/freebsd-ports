@@ -1,12 +1,12 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11-toolkits/gtkada/files/patch-docs::gtkada_ug::Makefile.in,v 1.1 2001/08/15 09:56:11 sobomax Exp $
 
 --- docs/gtkada_ug/Makefile.in	2001/08/15 09:24:24	1.1
 +++ docs/gtkada_ug/Makefile.in	2001/08/15 09:24:35
 @@ -1,5 +1,5 @@
  prefix = @prefix@
 -docdir = $(prefix)/doc/GtkAda/gtkada_ug
-+docdir = $(prefix)/share/doc/GtkAda/gtkada_ug
++docdir = $(prefix)/share/doc/gtkada/gtkada_ug
  
  MKDIR = mkdir -p
  INSTALL = @INSTALL@
