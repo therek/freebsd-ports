@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1185 2006/10/08 07:17:50 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1186 2006/10/08 07:44:15 sat Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -298,6 +298,10 @@ Note:  Please add new entries to the beginning of this file.
 	<range><ge>0</ge></range>
       </package>
       <package>
+	<name>php-suhosin</name>
+	<range><lt>0.9.6</lt></range>
+      </package>
+      <package>
 	<name>php4-cli</name>
 	<name>php5-cli</name>
 	<name>php4-cgi</name>
@@ -348,7 +352,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2006-10-02</discovery>
       <entry>2006-10-05</entry>
-      <modified>2006-10-05</modified>
+      <modified>2006-10-08</modified>
     </dates>
   </vuln>
 
