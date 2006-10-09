@@ -10,6 +10,9 @@ upgrades.
   AFFECTS: users of any ports using Python
   AUTHOR: perky@FreeBSD.org
 
+  When you upgrade lang/python, you need to use this command:
+    portupgrade -o lang/python25 python-2.4.x  (your current version)
+
   After upgrading of lang/python, you must rebuild all its consumer
   ports to make them get ready to Python 2.5.
 
@@ -4214,4 +4217,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.401 2006/10/09 14:27:26 perky Exp $
+$FreeBSD: ports/UPDATING,v 1.402 2006/10/09 15:12:06 rafan Exp $
