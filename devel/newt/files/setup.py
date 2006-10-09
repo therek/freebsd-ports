@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/newt/files/setup.py,v 1.1 2002/03/17 12:09:03 ijliao Exp $
+# $FreeBSD: ports/devel/newt/files/setup.py,v 1.2 2002/05/04 17:27:55 pat Exp $
 import os
 from distutils.core import setup, Extension
 
@@ -10,7 +10,7 @@ setup ( name = 'newt',
 	description = 'Python interface to Newt module',
 	py_modules = ['snack'],
 	ext_modules = [ Extension(
-       		name='_snack',
+		name='_snack',
 		sources=['snackmodule.c'],
 		include_dirs=['.', LOCALBASE+'/include', PREFIX+'/include'],
 		library_dirs=['.', LOCALBASE+'/lib', PREFIX+'/lib'],
