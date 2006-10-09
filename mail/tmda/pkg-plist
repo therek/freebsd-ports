@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/tmda/pkg-plist,v 1.35 2004/02/16 22:09:47 sergei Exp $
+@comment $FreeBSD: ports/mail/tmda/pkg-plist,v 1.36 2006/09/22 09:11:26 sergei Exp $
 bin/tmda-address
 bin/tmda-check-address
 bin/tmda-filter
@@ -89,6 +89,7 @@ bin/tmda-sendmail
 @dirrm %%PYTHON_SITELIBDIR%%/TMDA
 %%PORTDOCS%%%%DOCSDIR%%/CODENAMES
 %%PORTDOCS%%%%DOCSDIR%%/CRYPTO
+%%PORTDOCS%%%%DOCSDIR%%/NEWS
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/THANKS
 %%PORTDOCS%%%%DOCSDIR%%/UPGRADE
