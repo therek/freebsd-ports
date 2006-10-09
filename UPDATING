@@ -6,7 +6,7 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
-20041202:
+20061009:
   AFFECTS: users of any ports using Python
   AUTHOR: perky@FreeBSD.org
 
@@ -4214,4 +4214,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.400 2006/10/07 12:34:00 rafan Exp $
+$FreeBSD: ports/UPDATING,v 1.401 2006/10/09 14:27:26 perky Exp $
