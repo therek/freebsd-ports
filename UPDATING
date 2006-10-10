@@ -7,6 +7,16 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20061010:
+  AFFECTS: user of sysutils/flexbackup
+  AUTHOR: Marcus von Appen <mva@sysfault.org>
+
+  The port now respects PREFIX:
+   Before:
+   /etc/flexbackup.conf for PREFIX=whatever, WITH_PREFIX_CONF unset
+   Now:
+   PREFIX/etc/flexbackup.conf for PREFIX=whatever
+
+20061010:
   AFFECTS: users of audio/gtkpod
   AUTHOR: danfe@FreeBSD.org
 
@@ -4230,4 +4240,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.406 2006/10/10 11:21:22 danfe Exp $
+$FreeBSD: ports/UPDATING,v 1.407 2006/10/10 11:36:24 danfe Exp $
