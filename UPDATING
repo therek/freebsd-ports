@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20061010:
+  AFFECTS: users of audio/gtkpod
+  AUTHOR: danfe@FreeBSD.org
+
+  WITH_AAC knob has been remamed to WITH_MPEG4IP since it now covers
+  not only AAC, but H.264 support as well.
+
 20061009:
   AFFECTS: users of ports using ODBC (databases/libiodbc or databases/unixODBC)
   AUTHOR: ganael.laplanche@martymac.com
@@ -4223,4 +4230,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.404 2006/10/09 15:51:27 perky Exp $
+$FreeBSD: ports/UPDATING,v 1.405 2006/10/09 18:52:27 alepulver Exp $
