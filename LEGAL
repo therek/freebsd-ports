@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.505 2006/10/06 00:27:31 alepulver Exp $
+# $FreeBSD: ports/LEGAL,v 1.506 2006/10/09 23:00:09 shaun Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -662,8 +662,6 @@ yasou-fpw*		japanese/yasou-fpw	No commercial use, and no
 						except media and/or shipping
 						cost
 zangband/*		japanese/zangband	Possible copyright infringement
-ZendOptimizer-*.tar.gz	devel/ZendOptimizer	Redistribution of pre-compiled
-						binaries is not permitted
 zh-moettf/*		chinese/moettf		Contact Taiwan Ministry of
 						Education for commercial use
 NTU*.TTF		chinese/ntuttf		No commercial use
