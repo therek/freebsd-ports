@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1187 2006/10/08 16:41:50 sat Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1188 2006/10/09 15:45:02 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -471,7 +471,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>cscope</name>
-	<range><le>15.6</le></range>
+	<range><lt>15.6</lt></range>
       </package>
     </affects>
     <description>
@@ -504,7 +504,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2006-08-20</discovery>
       <entry>2006-10-02</entry>
-      <modified>2006-10-06</modified>
+      <modified>2006-10-11</modified>
     </dates>
   </vuln>
 
