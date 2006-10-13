@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.83 2006/10/08 14:53:49 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.84 2006/10/09 14:27:26 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -159,8 +159,8 @@ Python_Include_MAINTAINER=	python@FreeBSD.org
 #					  specific version of zope.
 #
 
-_PYTHON_PORTBRANCH=		2.5
-_PYTHON_ALLBRANCHES=	2.5 2.4 2.3 2.2 2.1 # preferred first
+_PYTHON_PORTBRANCH=		2.4
+_PYTHON_ALLBRANCHES=	2.4 2.5 2.3 2.2 2.1 # preferred first
 _ZOPE_PORTBRANCH=		2.7
 _ZOPE_ALLBRANCHES=		2.7 2.8 2.9 3.2
 
@@ -358,8 +358,8 @@ check-makevars::
 	@${ECHO} "  python2.1"
 	@${ECHO} "  python2.2"
 	@${ECHO} "  python2.3"
-	@${ECHO} "  python2.4"
-	@${ECHO} "  python2.5 (default)"
+	@${ECHO} "  python2.4 (default)"
+	@${ECHO} "  python2.5"
 	@${FALSE}
 .endif
 
