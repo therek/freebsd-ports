@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/plugger/pkg-install,v 1.2 2004/07/09 14:01:30 vs Exp $
+# $FreeBSD$
 
 [ $# != 2 ] && exit 1
 PKGNAME=$1

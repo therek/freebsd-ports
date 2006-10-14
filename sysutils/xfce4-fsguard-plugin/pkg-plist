@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/xfce4-fsguard-plugin/pkg-plist,v 1.2 2006/01/22 02:52:19 edwin Exp $
+@comment $FreeBSD$
 lib/xfce4/panel-plugins/libfsguard.a
 lib/xfce4/panel-plugins/libfsguard.la
 lib/xfce4/panel-plugins/libfsguard.so

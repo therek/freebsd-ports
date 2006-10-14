@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-themes/notif2/pkg-plist,v 1.2 2004/04/16 23:52:51 kris Exp $
+@comment $FreeBSD$
 lib/gtk/themes/engines/libnotif2.a
 lib/gtk/themes/engines/libnotif2.la
 lib/gtk/themes/engines/libnotif2.so

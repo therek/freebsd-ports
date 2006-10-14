@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/databases/gnomedb/files/patch-configure,v 1.8 2002/05/01 20:23:00 sobomax Exp $
+$FreeBSD$
 
 --- configure.orig	Mon Apr 15 15:30:28 2002
 +++ configure	Wed May  1 11:51:50 2002

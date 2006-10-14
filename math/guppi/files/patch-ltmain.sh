@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/math/guppi/files/patch-ltmain.sh,v 1.2 2001/10/31 08:20:43 sobomax Exp $
+$FreeBSD$
 
 --- ltmain.sh	2001/08/27 09:51:26	1.1
 +++ ltmain.sh	2001/08/27 09:51:42

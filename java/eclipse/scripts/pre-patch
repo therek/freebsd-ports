@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/java/eclipse-devel/scripts/pre-patch,v 1.2 2005/05/29 03:41:42 nork Exp $
+# $FreeBSD$
 
 copy_file()
 {

@@ -1,4 +1,4 @@
-$FreeBSD: ports/java/jdk15/files/patch-vm::os_bsd.cpp,v 1.2 2005/03/21 05:48:04 glewis Exp $
+$FreeBSD$
 
 --- ../../hotspot/src/os/bsd/vm/os_bsd.cpp.orig	Tue Jan 27 17:54:28 2004
 +++ ../../hotspot/src/os/bsd/vm/os_bsd.cpp	Tue Jan 27 17:55:21 2004

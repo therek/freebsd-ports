@@ -4,13 +4,13 @@
 #
 # See: http://www.eclipse.org
 #
-# $FreeBSD: ports/java/eclipse/files/eclipse.in,v 1.5 2005/10/09 14:54:21 nork Exp $
+# $FreeBSD$
 #
 
 DEFAULT_JAVA_HOME=%%PREFIX%%
 ECLIPSE_HOME=%%ECLIPSE_HOME%%
 DEFAULT_JAVA_CMD=java
-export MOZILLA_FIVE_HOME=%%X11BASE%%/lib/%%BROWSER%%
+export MOZILLA_FIVE_HOME=%%LOCALBASE%%/lib/%%BROWSER%%
 export LD_LIBRARY_PATH=$MOZILLA_FIVE_HOME:$LD_LIBRARY_PATH
 
 

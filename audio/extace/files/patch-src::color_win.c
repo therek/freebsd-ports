@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/audio/extace/files/patch-src::color_win.c,v 1.1 2002/08/30 13:54:17 sobomax Exp $
+$FreeBSD$
 
 --- src/color_win.c.orig	Wed Feb 26 01:22:19 2003
 +++ src/color_win.c	Fri May 23 18:26:18 2003

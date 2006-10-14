@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-wm/icewm/pkg-plist,v 1.45 2006/09/11 21:58:58 miwi Exp $
+@comment $FreeBSD$
 bin/icehelp
 bin/icesh
 bin/icesound

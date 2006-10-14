@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net-im/gaim-ignorance/pkg-plist,v 1.3 2006/01/22 02:46:35 edwin Exp $
+@comment $FreeBSD$
 lib/gaim/ignorance.la
 lib/gaim/ignorance.so
 %%EXAMPLESDIR%%/ignorance

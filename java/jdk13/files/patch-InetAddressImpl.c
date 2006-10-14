@@ -1,4 +1,4 @@
-$FreeBSD: ports/java/jdk13/files/patch-InetAddressImpl.c,v 1.3 2006/06/16 17:14:03 glewis Exp $
+$FreeBSD$
 
 --- ../src/solaris/native/java/net/InetAddressImpl.c.orig	Wed Jul 19 01:28:19 2006
 +++ ../src/solaris/native/java/net/InetAddressImpl.c	Wed Jul 19 10:59:54 2006

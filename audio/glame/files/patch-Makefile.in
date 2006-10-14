@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/audio/glame/files/patch-Makefile.in,v 1.2 2003/07/01 12:34:21 sobomax Exp $
+$FreeBSD$
 
 --- Makefile.in.orig	Fri Oct 29 03:53:30 2004
 +++ Makefile.in	Fri Oct 29 21:29:55 2004
