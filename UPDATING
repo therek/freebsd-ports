@@ -13,7 +13,7 @@ upgrades.
   GNOME has been updated to 2.16 and all GNOME components have been
   moved from X11BASE to LOCALBASE, to upgrade your GNOME desktop and
   applications you will need either sysutils/portupgrade or
-  sysutils/portmanager.
+  sysutils/portmaster.
 
  Portupgrade users:
   pkgdb -Ff
@@ -4285,4 +4285,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.409 2006/10/10 21:16:21 joerg Exp $
+$FreeBSD: ports/UPDATING,v 1.410 2006/10/14 09:36:08 ahze Exp $
