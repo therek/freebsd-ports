@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1163 2006/10/12 00:44:14 maho Exp $
+# $FreeBSD: ports/MOVED,v 1.1164 2006/10/14 08:48:23 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1306,7 +1306,6 @@ print/pxfonts||2004-12-19|already included in the teTeX distribution
 print/txfonts||2004-12-19|already included in the teTeX distribution
 databases/sqlite|databases/sqlite2|2004-12-23|port renamed
 print/acroread5|print/acroread|2004-12-23|last Acrobat Reader port remaining
-graphics/gimp-devel|graphics/gimp|2004-12-24|GIMP 2.2 is now stable
 x11-toolkits/xtermcontrol|x11/xtermcontrol|2004-12-25|new category
 multimedia/gstreamer-player||2004-12-26|Unmaintained by developers
 www/horde2|www/horde|2004-12-26|Resurrect www/horde
