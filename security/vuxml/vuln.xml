@@ -28,12 +28,40 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1188 2006/10/09 15:45:02 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1189 2006/10/11 08:32:04 erwin Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="5c9a2769-5ade-11db-a5ae-00508d6a62df">
+    <topic>google-earth -- heap overflow in the KML engine</topic>
+    <affects>
+      <package>
+	<name>google-earth</name>
+	<range><ge>0</ge></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>JAAScois reports:</p>
+	<p>While processing KML/KMZ data Google Earth fails to verify
+	  its size prior to copying it into a fixed-sized buffer.
+	  This can be exploited as a buffer-overflow vulnerability to
+	  cause the application to crash and/or to execute arbitrary
+	  code.</p>
+      </body>
+    </description>
+    <references>
+      <bid>20464</bid>
+      <url>http://www.jaascois.com/exploits/18602024/</url>
+    </references>
+    <dates>
+      <discovery>2006-10-10</discovery>
+      <entry>2006-10-14</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="72f21372-55e4-11db-a5ae-00508d6a62df">
     <topic>torrentflux -- User-Agent XSS Vulnerability</topic>
     <affects>
