@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.133 2006/10/14 08:35:00 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.134 2006/10/14 09:34:03 marcus Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.401 2006/08/05 05:25:55 marcus Exp $
 #
@@ -743,7 +743,7 @@ gnome-pre-su-install:
 	@${MTREE_CMD} ${MTREE_ARGS:S/${MTREE_FILE}/${GNOME_MTREE_FILE}/} ${TARGETDIR}/ >/dev/null
 .endif
 .if defined(GCONF_SCHEMAS)
-	@${MKDIR} ${TARGETDIR}${PREFIX}/etc/gconf/gconf.xml.defaults/
+	@${MKDIR} ${TARGETDIR}/etc/gconf/gconf.xml.defaults/
 .else
 	@${DO_NADA}
 .endif
