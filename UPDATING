@@ -15,7 +15,7 @@ upgrades.
   upgrade your GNOME desktop or/and other applications you will need
   to use either sysutils/portupgrade or sysutils/portmaster. To use
   portmaster, make sure you have least 1.9 version to have the
-  upgrade success.
+  upgrade succeed.
 
  Portupgrade users:
   pkgdb -Ff
@@ -4286,4 +4286,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.413 2006/10/16 21:50:17 mezz Exp $
+$FreeBSD: ports/UPDATING,v 1.414 2006/10/18 20:57:20 mezz Exp $
