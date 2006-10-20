@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1165 2006/10/14 09:13:52 ahze Exp $
+# $FreeBSD: ports/MOVED,v 1.1166 2006/10/16 00:18:35 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -290,7 +290,6 @@ graphics/p5-Gimp||2003-05-05|port depended on the broken PDL port which was remo
 japanese/ee||2003-05-05|port was broken with no sign of a fix
 japanese/kdevelop||2003-05-05|port was broken with no sign of a fix
 korean/byeoroo||2003-05-05|port was broken with no sign of a fix
-lang/gpc||2003-05-05|port was broken with no sign of a fix
 misc/cassowary||2003-05-05|port was broken with no sign of a fix
 net/coda_client||2003-05-05|port was broken with no sign of a fix
 net/coda_server||2003-05-05|port was broken with no sign of a fix
