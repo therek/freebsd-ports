@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1203 2006/10/20 08:13:06 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1204 2006/10/20 22:32:30 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -239,7 +239,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>nvidia-driver</name>
-	<range><gt>1.0.8762</gt><lt>1.0.8776</lt></range>
+	<range><ge>1.0.8762</ge><lt>1.0.8776</lt></range>
       </package>
     </affects>
     <description>
