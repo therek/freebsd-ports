@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/festival+OGI/pkg-plist,v 1.4 2005/03/22 08:49:21 flz Exp $
+@comment $FreeBSD: ports/audio/festival+OGI/pkg-plist,v 1.5 2005/11/05 02:50:44 edwin Exp $
 @comment $NetBSD: PLIST,v 1.1 2001/11/01 00:15:49 zuntum Exp $
 share/festival/lib/ogi_effect.scm
 share/festival/lib/ogi_enhance.scm
@@ -128,3 +128,4 @@ share/festival/examples/durmeanstd
 @dirrm share/festival/lib/dicts
 @dirrm share/festival/lib
 @dirrm share/festival/examples
+@dirrm share/festival
