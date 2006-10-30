@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1210 2006/10/29 13:50:01 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1211 2006/10/29 19:07:08 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -74,7 +74,7 @@ Note:  Please add new entries to the beginning of this file.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	<p>Dmitri Lenev reports reports a privilege escalation in
+	<p>Dmitri Lenev reports a privilege escalation in
 	  MySQL.  MySQL evaluates arguments of suid routines in the
 	  security context of the routine's definer instead of the
 	  routine's caller, which allows remote and local
