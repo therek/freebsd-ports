@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.134 2006/10/14 09:34:03 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.135 2006/10/15 03:42:39 marcus Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.401 2006/08/05 05:25:55 marcus Exp $
 #
@@ -726,6 +726,12 @@ PLIST_SUB+=	GNOMEDESKTOP:="@comment " NOGNOMEDESKTOP:=""
 .      endif
 .    endif
 .  endif
+.endif
+
+.if defined(USE_GNOME_SUBR)
+GNOME_SUBR=		${LOCALBASE}/etc/gnome.subr
+RUN_DEPENDS+=	${GNOME_SUBR}:${PORTSDIR}/sysutils/gnome_subr
+SUB_LIST+=		GNOME_SUBR=${GNOME_SUBR}
 .endif
 
 .if ${MAINTAINER}=="gnome@FreeBSD.org"
