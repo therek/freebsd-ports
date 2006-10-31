@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/hal/files/hald.in,v 1.1 2006/10/14 08:35:47 marcus Exp $
+# $FreeBSD: ports/sysutils/hal/files/hald.in,v 1.2 2006/10/29 04:08:41 marcus Exp $
 #
 # PROVIDE: hald
 # REQUIRE: DAEMON usbd dbus polkitd
@@ -10,10 +10,11 @@
 # hald_enable="YES"
 #
 
-hald_enable=${hald_enable-"NO"}
-hald_flags=${hald_flags-""}
-
 . %%RC_SUBR%%
+. %%GNOME_SUBR%%
+
+hald_enable=${hald_enable-${gnome_enable}}
+hald_flags=${hald_flags-""}
 
 name=hald
 rcvar=`set_rcvar`
