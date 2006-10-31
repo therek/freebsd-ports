@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.506 2006/10/09 23:00:09 shaun Exp $
+# $FreeBSD: ports/LEGAL,v 1.507 2006/10/10 06:01:49 ale Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -378,8 +378,6 @@ libidea-*		security/libidea	Crypto; export-controlled
 libots-*.alpha.rpm	lang/compaq-cc		Distribution not allowed
 libSDLx11.so.tar.gz	multimedia/mtv		No redistribution
 LimeWireOther.zip	net-p2p/limewire	No redistribution allowed
-linunace*		archivers/linux-unace	Distribution is permitted within the
-						original package only
 Linux-ACU-Driver-v*	sysutils/linux-acu	Redistribution not allowed
 rpm/i386/fedora/4/gtk2-* x11-toolkits/linux-gtk2 LGPL binary, no source
 linuxq3ademo-*		games/linux-quake3-demo	Restrictive license by Loki Software
