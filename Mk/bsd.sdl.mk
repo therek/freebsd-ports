@@ -29,7 +29,7 @@
 #
 
 #
-# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.10 2006/07/05 02:18:09 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.11 2006/09/20 11:20:32 stas Exp $
 #
 
 SDL_Include_MAINTAINER=		edwin@FreeBSD.org
@@ -37,7 +37,7 @@ SDL_Include_MAINTAINER=		edwin@FreeBSD.org
 #
 # These are the current supported SDL modules
 #
-_USE_SDL_ALL=	gfx gui image mixer mm net sdl sound ttf
+_USE_SDL_ALL=	gfx gui image mixer mm net pango sdl sound ttf
 
 #
 # Variables used to determine what is needed:
@@ -73,6 +73,11 @@ _REQUIRES_mm=	sdl
 _VERSION_net=	0
 _SUBDIR_net=	net
 _REQUIRES_net=	sdl
+
+_VERSION_pango=	2
+_SUBDIR_pango=	x11-toolkits
+_LIB_pango=		SDL_Pango
+_REQUIRES_pango=sdl
 
 _VERSION_sdl=	11
 _SUBDIR_sdl=	devel
