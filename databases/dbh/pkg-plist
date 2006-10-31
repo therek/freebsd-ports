@@ -1,10 +1,9 @@
-@comment $FreeBSD: ports/databases/dbh/pkg-plist,v 1.5 2004/04/06 07:50:31 ijliao Exp $
+@comment $FreeBSD: ports/databases/dbh/pkg-plist,v 1.6 2006/02/23 10:35:01 ade Exp $
 include/dbh.h
 include/dbh_config.h
 include/dbh_functions.h
-lib/libdbh-1.0.so
-lib/libdbh-1.0.so.1
+lib/libdbh-4.5.so
+lib/libdbh-4.5.so.4
 lib/libdbh.a
-lib/libdbh.la
 lib/libdbh.so
-libdata/pkgconfig/dbh-1.0.pc
+libdata/pkgconfig/dbh.pc
