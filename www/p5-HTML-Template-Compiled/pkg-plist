@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/p5-HTML-Template-Compiled/pkg-plist,v 1.11 2006/09/20 06:05:58 clsung Exp $
+@comment $FreeBSD: ports/www/p5-HTML-Template-Compiled/pkg-plist,v 1.12 2006/10/04 08:28:24 rafan Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTML/Template/Compiled/.packlist
 %%SITE_PERL%%/HTML/Template/Compiled.pm
 %%SITE_PERL%%/HTML/Template/Compiled/Classic.pm
@@ -6,6 +6,7 @@
 %%SITE_PERL%%/HTML/Template/Compiled/Expression.pm
 %%SITE_PERL%%/HTML/Template/Compiled/Expression/Expressions.pm
 %%SITE_PERL%%/HTML/Template/Compiled/Filter.pm
+%%SITE_PERL%%/HTML/Template/Compiled/Formatter.pm
 %%SITE_PERL%%/HTML/Template/Compiled/Lazy.pm
 %%SITE_PERL%%/HTML/Template/Compiled/Parser.pm
 %%SITE_PERL%%/HTML/Template/Compiled/Plugin/DHTML.pm
