@@ -1,4 +1,6 @@
-# $FreeBSD$
+# $FreeBSD: ports/news/inn/Makefile.layout,v 1.1 2006/10/31 02:35:51 shaun Exp $
+
+INN_LAYOUT?=		old
 
 .if !empty(INN_LAYOUT:L:Mnew)
 #-----------------------------------------------------------------------
