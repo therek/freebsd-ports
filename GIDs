@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.10 2006/08/28 17:50:18 pav Exp $
+$FreeBSD: ports/GIDs,v 1.11 2006/08/28 20:15:56 pav Exp $
 # Please keep this file sorted by GID!
 bind:*:53:
 rdfdb:*:55:
@@ -67,6 +67,7 @@ smxq:*:261:
 smxc:*:262:
 smxm:*:263:
 smx:*:264:
+haclient:*:275:
 mrtg:*:279:
 dkfilter:*:325:
 ldap:*:389:
