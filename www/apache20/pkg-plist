@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.78 2006/05/01 09:24:55 clement Exp $
+@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.79 2006/05/01 16:54:40 clement Exp $
 @exec mkdir -p %D/etc/apache2 2> /dev/null
 @unexec if cmp -s %D/etc/apache2/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache2/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd-std.conf
@@ -12,7 +12,6 @@
 @unexec if cmp -s %D/etc/apache2/ssl.conf %D/%%EXAMPLESDIR%%/ssl-std.conf; then rm -f %D/etc/apache2/ssl.conf; fi
 %%EXAMPLESDIR%%/ssl-std.conf
 @exec [ -f %D/etc/apache2/ssl.conf ] || cp %D/%%EXAMPLESDIR%%/ssl-std.conf %D/etc/apache2/ssl.conf
-etc/rc.d/000.apache2libs.sh
 etc/rc.d/apache2.sh
 include/apache2/ap_compat.h
 include/apache2/ap_config.h
