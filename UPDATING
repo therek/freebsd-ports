@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20061102
+  AFFECTS: users of mail/fetchmail
+  AUTHOR: barner@FreeBSD.org
+
+  - Along with the update to fetchmail 6.3.5, support for the POP2
+    protocol has been removed from the port's default configuration.
+    If needed, POP2 can be enabled with the port's option interface.
+
+  - New feature: GSSAPI support.
+
 20061101:
   AFFECTS: Users of mail/dovecot
   AUTHOR: shaun@FreeBSD.org
@@ -4323,4 +4333,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.417 2006/10/31 22:04:07 thierry Exp $
+$FreeBSD: ports/UPDATING,v 1.418 2006/11/01 19:23:29 shaun Exp $
