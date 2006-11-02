@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/xorp/files/xorp.rc.sample,v 1.1 2006/09/22 12:16:47 bms Exp $
+# $FreeBSD: ports/net/xorp/files/xorp.in,v 1.1 2006/10/05 17:01:12 bms Exp $
 #
 # A sample XORP startup script.
 #
@@ -28,9 +28,10 @@ load_rc_config $name
 : ${xorp_rtrmgr_pidfile="/var/run/xorp_rtrmgr.pid"}
 
 required_files=${xorp_config_boot}
-command=%%PREFIX%%/rtrmgr/xorp_rtrmgr
+command=%%PREFIX%%/bin/xorp_rtrmgr
 command_args="-b ${xorp_config_boot}"
 pidfile=${xorp_rtrmgr_pidfile}
 sig_stop=INT
 
-run_rc_command "$1"
+# XXX: This is not the correct fix.
+run_rc_command "$1" 2>&1 &
