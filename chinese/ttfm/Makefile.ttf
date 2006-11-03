@@ -2,7 +2,7 @@
 # Date created:		17 Feb 2005
 # Whom:			leeym
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/ttfm/Makefile.ttf,v 1.1 2005/02/19 13:51:49 leeym Exp $
 #
 # The variable(s) for installing TrueType fonts.
 # TTF		- Name(s) of font file(s) installed in FONTSDIR. Mandatory.
@@ -26,7 +26,7 @@ _TTF_MODULES=	xttfm
 .endif
 
 .if defined(WITH_GS)
-RUN_DEPENDS+=	${LOCALBASE}/share/ghostscript/Resource/ai0/CMap/Identity-H:${PORTSDIR}/print/adobe-cmaps
+RUN_DEPENDS+=	${LOCALBASE}/share/fonts/adobe-cmaps/ai0/CMap/Identity-H:${PORTSDIR}/print/adobe-cmaps
 _TTF_MODULES+=	gscjk
 .endif
 
