@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1214 2006/11/01 13:15:16 lev Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1215 2006/11/02 06:33:00 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -11299,9 +11299,11 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
 	<name>p5-Crypt-OpenPGP</name>
-	<name>pgp</name>
-	<name>pgpin</name>
 	<range><gt>0</gt></range>
+      </package>
+      <package>
+	<name>pgp</name>
+	<range><ge>3.0</ge></range>
       </package>
     </affects>
     <description>
