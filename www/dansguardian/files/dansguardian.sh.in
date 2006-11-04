@@ -1,9 +1,8 @@
 #!/bin/sh
-# $FreeBSD: ports/www/dansguardian/files/dansguardian.sh.in,v 1.1 2006/04/08 12:57:43 pav Exp $
+# $FreeBSD: ports/www/dansguardian/files/dansguardian.sh.in,v 1.2 2006/07/10 18:32:32 dougb Exp $
 
 # PROVIDE: dansguardian
 # REQUIRE: NETWORKING SERVERS squid
-# BEFORE:  DAEMON
 # KEYWORD: shutdown
 
 # Define these dansguardian_* variables in one of these files:
