@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/isc-dhcp3-server/files/isc-dhcpd.in,v 1.1 2006/08/25 12:02:58 sem Exp $
 #
 # PROVIDE: dhcpd
 # REQUIRE: DAEMON
@@ -718,5 +718,12 @@ stop_postcmd=${name}_postcmd
 install_cmd=dhcpd_install
 uninstall_cmd=dhcpd_uninstall
 extra_commands="install uninstall"
+
+# Override /etc/rc.subr JID determiniation, because it doesn't
+# work when we launch dhcpd in a jail.
+if checkyesno dhcpd_jail_enable ; then
+	read pid junk < $pidfile 2>/dev/null
+	[ -n "$pid" ] && JID=`ps -o jid= -p $pid`
+fi
 
 run_rc_command "$1"
