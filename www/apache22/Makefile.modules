@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.17 2006/08/12 09:05:18 clement Exp $
+# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.18 2006/09/13 12:29:33 mr Exp $
 #
 
 # MPM section:
@@ -20,9 +20,11 @@ PKGNAMESUFFIX=	-${SLAVE_PORT_MPM}
 .else
 .   if ${WITH_MPM} != "prefork"
 PKGNAMESUFFIX=		-${WITH_MPM:L}
+.   if ${WITH_MPM} != "itk"
 WITH_THREADS=		yes
 WITH_THREADS_MODULES=	yes
 WITHOUT_MODULES+=	cgi
+.   endif
 .      if ${WITH_MPM:L} == "worker"
 PLIST_SUB+=	PREFORK="@comment " WORKER="" THREADPOOL="@comment " EVENT="@comment "
 .      elif  ${WITH_MPM:L} == "perchild"
@@ -31,6 +33,8 @@ PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="@comment " EVENT=
 PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="" EVENT="@comment "
 .      elif  ${WITH_MPM:L} == "event"
 PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="@comment " EVENT=""
+.      elif  ${WITH_MPM:L} == "itk"
+PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="@comment " EVENT="@comment "
 .      else
 IGNORE=		"Unknown MPM: ${WITH_MPM}"
 .      endif
