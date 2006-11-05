@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1173 2006/11/01 13:25:55 ahze Exp $
+# $FreeBSD: ports/MOVED,v 1.1174 2006/11/01 15:36:54 leeym Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2514,3 +2514,4 @@ devel/ac-archive|devel/autoconf-archive|2006-11-01|Replace broken ac-archive wit
 www/firefox-devel|www/firefox|2006-11-01|Firefox 2.0 is now stable
 graphics/php4-imlib2|graphics/pecl-imlib2|2006-11-01|Follow PECL ports naming conversion
 graphics/php5-imlib2|graphics/pecl-imlib2|2006-11-01|Follow PECL ports naming conversion
+chinese/xcin25|chinese/xcin|2006-11-05|Reflect its real portname
