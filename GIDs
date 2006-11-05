@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.13 2006/11/01 20:22:48 marcus Exp $
+$FreeBSD: ports/GIDs,v 1.14 2006/11/04 00:30:02 rafan Exp $
 # Please keep this file sorted by GID!
 bind:*:53:
 rdfdb:*:55:
@@ -84,6 +84,7 @@ messagebus:*:556:
 realtime:*:557:
 avahi:*:558:
 tacacs:*:559:
+_xsi:*:600:
 bnetd:*:700:
 bopm:*:717:
 openxpki:*:777:

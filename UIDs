@@ -1,4 +1,4 @@
-$FreeBSD: ports/UIDs,v 1.15 2006/11/01 20:06:03 alepulver Exp $
+$FreeBSD: ports/UIDs,v 1.16 2006/11/04 00:30:02 rafan Exp $
 # Please keep this file sorted by UID!
 bind:*:53:53:Bind Sandbox:/:/sbin/nologin
 majordom:*:54:54:Majordomo Pseudo User:/usr/local/majordomo:/nonexistent
@@ -95,6 +95,7 @@ ircdru:*:555:555:Russian hybrid IRC server:/nonexistent:/bin/sh
 messagebus:*:556:556:D-BUS Daemon User:/nonexistent:/sbin/nologin
 avahi:*:558:558:Avahi Daemon User:/nonexistent:/sbin/nologin
 tacacs:*:559:559:TACACS+ Daemon User:/nonexistent:/sbin/nologin
+_xsi:*:600:600:XMLSysInfo User:/nonexistent:/sbin/nologin
 bnetd:*:700:700:Bnetd user:/nonexistent:/sbin/nologin
 bopm:*:717:717:Blitzed Open Proxy Monitor:/nonexistent:/bin/sh
 openxpki:*:777:777:OpenXPKI Owner:/nonexistent:/usr/sbin/nologin
