@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/sqlgrey/files/pkg-install.in,v 1.1 2005/02/18 11:39:31 mat Exp $
 
 PATH=/bin:/usr/bin:/usr/sbin
 
@@ -29,16 +29,16 @@ case $2 in
 	else
 	    echo "---> Adding user \"%%USER%%\""
 	    /usr/sbin/pw useradd "%%USER%%" -g "%%GROUP%%" -h - \
-	    -d "%%DATADIR%%" -s "/sbin/nologin" -c "Postgrey Owner" || exit 1
+	    -d "%%DATADIR%%" -s "/sbin/nologin" -c "Sqlgrey Owner" || exit 1
 	fi
 
 	# Create home directory if required
 	if [ -d "%%DATADIR%%" ]; then
-	    echo "---> Using existing Postgrey database directory (%%DATADIR%%)"
-	    echo "     (There may be existing active postgrey databases - this installation"
+	    echo "---> Using existing Sqlgrey database directory (%%DATADIR%%)"
+	    echo "     (There may be existing active sqlgrey databases - this installation"
 	    echo "     will attempt to preserve them.)"
 	    else
-	echo "---> Creating Postgrey database directory (%%DATADIR%%)"
+	echo "---> Creating Sqlgrey database directory (%%DATADIR%%)"
 	    (umask 002 && /bin/mkdir -p "%%DATADIR%%") || exit 1
 	    /usr/sbin/chown -R "%%USER%%:%%GROUP%%" "%%DATADIR%%" || exit 1
 	    /bin/chmod g+s "%%DATADIR%%" || exit 1
