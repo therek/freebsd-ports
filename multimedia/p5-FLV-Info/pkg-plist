@@ -1,11 +1,10 @@
-@comment $FreeBSD: ports/multimedia/p5-FLV-Info/pkg-plist,v 1.4 2006/07/26 01:53:36 clsung Exp $
+@comment $FreeBSD: ports/multimedia/p5-FLV-Info/pkg-plist,v 1.5 2006/10/04 00:51:09 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/FLV/Info/.packlist
 %%SITE_PERL%%/FLV/AMFReader.pm
 %%SITE_PERL%%/FLV/AMFWriter.pm
 %%SITE_PERL%%/FLV/AudioTag.pm
 %%SITE_PERL%%/FLV/Base.pm
 %%SITE_PERL%%/FLV/Body.pm
-%%SITE_PERL%%/FLV/Constants.pm
 %%SITE_PERL%%/FLV/File.pm
 %%SITE_PERL%%/FLV/FromSWF.pm
 %%SITE_PERL%%/FLV/Header.pm
@@ -14,6 +13,7 @@
 %%SITE_PERL%%/FLV/Tag.pm
 %%SITE_PERL%%/FLV/ToMP3.pm
 %%SITE_PERL%%/FLV/ToSWF.pm
+%%SITE_PERL%%/FLV/Util.pm
 %%SITE_PERL%%/FLV/VideoTag.pm
 bin/flv2mp3
 bin/flv2flv
