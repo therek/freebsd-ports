@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.32 2006/07/27 06:21:15 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.33 2006/09/11 21:10:07 ale Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -43,7 +43,7 @@ PHP_VER?=	${DEFAULT_PHP_VER}
 .if ${PHP_VER} == 4
 PHP_EXT_DIR=	20020429
 .else
-PHP_EXT_DIR=	20050922
+PHP_EXT_DIR=	20060613
 .endif
 
 HTTPD?=		${LOCALBASE}/sbin/httpd
@@ -228,7 +228,7 @@ php-ini:
 .if ${USE_PHP:L} != "yes"
 # non-version specific components
 _USE_PHP_ALL=	bcmath bz2 calendar ctype curl dba dbase \
-		exif fileinfo filepro fribidi ftp gd gettext gmp \
+		exif fileinfo fribidi ftp gd gettext gmp \
 		hash iconv imap interbase ldap mbstring mcrypt \
 		mhash ming mssql mysql ncurses odbc \
 		openssl panda pcntl pcre pdf pgsql posix \
@@ -236,7 +236,7 @@ _USE_PHP_ALL=	bcmath bz2 calendar ctype curl dba dbase \
 		sockets sybase_ct sysvmsg sysvsem sysvshm \
 		tokenizer wddx xml xmlrpc yaz zip zlib
 # version specific components
-_USE_PHP_VER4=	${_USE_PHP_ALL} crack dbx dio domxml mcal mcve \
+_USE_PHP_VER4=	${_USE_PHP_ALL} crack dbx dio domxml filepro mcal mcve \
 		mnogosearch oracle overload pfpro xslt yp
 _USE_PHP_VER5=	${_USE_PHP_ALL} dom mysqli pdo simplexml soap sqlite \
 		tidy xmlreader xmlwriter xsl
