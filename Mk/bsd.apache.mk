@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.11 2006/05/11 15:21:22 clement Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.12 2006/06/20 04:58:12 linimon Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -179,7 +179,7 @@ CONFIGURE_ARGS+=	--${SUEXEC_CONFARGS}-bin="${PREFIX}/sbin/suexec"
 .endif
 
 .   if defined(WITH_SUEXEC_UMASK)
-CONFIGURE_ARGS+=		--${SUEXEC_CONFARGS}-umask=${WITH_SUEXEC_UMASK}
+CONFIGURE_ARGS+=		--${SUEXEC_CONFARGS}-umask=${SUEXEC_UMASK}
 .   endif
 .endif
 
