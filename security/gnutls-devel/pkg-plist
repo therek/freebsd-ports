@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/gnutls-devel/pkg-plist,v 1.15 2006/08/27 19:47:30 novel Exp $
+@comment $FreeBSD: ports/security/gnutls-devel/pkg-plist,v 1.16 2006/10/08 13:46:32 novel Exp $
 bin/certtool
 bin/gnutls-cli
 bin/gnutls-cli-debug
@@ -58,6 +58,5 @@ share/aclocal/libgnutls.m4
 %%NLS%%share/locale/en@quot/LC_MESSAGES/gnutls.mo
 %%NLS%%share/locale/pl/LC_MESSAGES/gnutls.mo
 %%NLS%%share/locale/sv/LC_MESSAGES/gnutls.mo
-@dirrm %%DATADIR%%
 @dirrm %%EXAMPLESDIR%%
 @dirrm include/gnutls
