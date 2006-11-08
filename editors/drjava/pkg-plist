@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/drjava/pkg-plist,v 1.1 2006/07/01 07:46:46 itetcu Exp $
+@comment $FreeBSD: ports/editors/drjava/pkg-plist,v 1.2 2006/09/23 16:03:19 rafan Exp $
 bin/drjava
-%%JAVASHAREDIR%%/drjava/drjava-stable-20060918-1737.jar
-@dirrm %%JAVASHAREDIR%%/drjava
+%%DATADIR%%/%%DRJAVAJAR%%
+@dirrm %%DATADIR%%
