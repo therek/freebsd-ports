@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/databases/postgresql74-server/files/pgsql.sh.tmpl,v 1.19 2006/02/20 20:46:52 dougb Exp $
+# $FreeBSD: ports/databases/postgresql80-server/files/pgsql.sh.tmpl,v 1.22 2006/05/23 21:18:58 girgen Exp $
 #
 # PROVIDE: postgresql
 # REQUIRE: LOGIN

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/databases/postgresql81-server/files/pgsql.sh.tmpl,v 1.21 2006/02/20 20:46:53 dougb Exp $
+# $FreeBSD: ports/databases/postgresql73-server/files/pgsql.sh.tmpl,v 1.19 2006/05/23 21:18:57 girgen Exp $
 #
 # PROVIDE: postgresql
 # REQUIRE: LOGIN
@@ -20,9 +20,9 @@
 # For postmaster startup options, edit ${postgresql_data}/postgresql.conf
 
 prefix=%%PREFIX%%
-command=${prefix}/bin/pg_ctl
 
 . %%RC_SUBR%%
+command=${prefix}/bin/pg_ctl
 
 load_rc_config postgresql
 
