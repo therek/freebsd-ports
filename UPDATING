@@ -6,6 +6,12 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20061109
+  AFFECTS: users of milter-bogom, dk-milter, dkim-milter
+  AUTHOR: ache@freebsd.org
+
+  All 3 milters change their default user to "mailnull".
+
 20061108
   AFFECTS: Users of databases/postgresql*-server
   AUTHOR: Palle Girgensohn <girgen@FreeBSD.org>
@@ -4394,4 +4400,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.422 2006/11/07 02:51:43 alepulver Exp $
+$FreeBSD: ports/UPDATING,v 1.423 2006/11/08 17:07:50 girgen Exp $
