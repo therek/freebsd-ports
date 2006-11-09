@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.1 2006/09/15 06:57:07 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.2 2006/10/05 18:17:25 alepulver Exp $
 #
 # bsd.lua.mk - Support for Lua based ports.
 #
@@ -75,9 +75,9 @@
 # LUA_SUBDIR	- The directory under bin/share/lib where Lua is installed.
 # LUA_INCDIR	- The directory where Lua and tolua header files are installed.
 # LUA_LIBDIR	- The directory where Lua and tolua libraries are installed.
-# LUA_MODLIBDIR	- The directory where Lua modules (.lua) are installed.
+# LUA_MODLIBDIR	- The directory where Lua module libraries (.so) are installed.
 # LUA_MODSHAREDIR
-#				- The directory where Lua module libraries (.so) are installed.
+#				- The directory where Lua modules (.lua) are installed.
 # LUA_PKGNAMEPREFIX
 #				- The package name prefix used by Lua modules.
 #
