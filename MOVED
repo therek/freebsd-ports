@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1179 2006/11/09 08:55:13 vd Exp $
+# $FreeBSD: ports/MOVED,v 1.1180 2006/11/09 09:14:15 kuriyama Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2535,3 +2535,4 @@ x11/offix-execute||2006-11-09|Has expired: development ceased in 1996
 x11-fm/offix-files||2006-11-09|Has expired: development ceased in 1996
 x11-wm/icepref||2006-11-09|Has expired: is for IceWM version 1.04 (6 years old)
 databases/p5-Catalyst-Model-CDBI-Plain|www/p5-Catalyst-Model-CDBI-Plain|2006-11-09|Moved to correct category
+net-p2p/linux-overnet-core||2006-11-10|No longer downloadable
