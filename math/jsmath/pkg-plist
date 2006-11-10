@@ -1,5 +1,4 @@
-@comment $FreeBSD: ports/math/jsmath/pkg-plist,v 1.2 2006/08/01 19:53:16 itetcu Exp $
-%%WWWDIR%%/COPYING.txt
+@comment $FreeBSD: ports/math/jsmath/pkg-plist,v 1.3 2006/09/30 10:56:36 miwi Exp $
 %%WWWDIR%%/blank.gif
 %%WWWDIR%%/extensions/AMSsymbols.js
 %%WWWDIR%%/extensions/HTML.js
