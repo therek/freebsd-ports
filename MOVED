@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1181 2006/11/10 21:05:02 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1182 2006/11/12 06:17:50 maho Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2538,3 +2538,4 @@ databases/p5-Catalyst-Model-CDBI-Plain|www/p5-Catalyst-Model-CDBI-Plain|2006-11-
 net-p2p/linux-overnet-core||2006-11-10|No longer downloadable
 editors/openoffice.org-2.0|editors/openoffice.org-2|2006-11-12|Better version number handling
 editors/openoffice.org-2.0-devel|editors/openoffice.org-2-devel|2006-11-12|Better version number handling
+devel/ply|devel/py-ply|2006-11-12|Rename to consistency with other Python ports
