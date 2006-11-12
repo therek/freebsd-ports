@@ -1,6 +1,6 @@
 # localized makefile
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2.0-devel/files/Makefile.localized,v 1.11 2006/03/15 06:25:45 maho Exp $
+# $FreeBSD: $
 ################################################################
 #See solenv/inc/postset.mk for details	
 ################################################################

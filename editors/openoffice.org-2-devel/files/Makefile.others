@@ -1,6 +1,6 @@
 # Makefile for other stuffs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2.0-devel/files/Makefile.others,v 1.7 2006/05/27 21:59:56 maho Exp $
+# $FreeBSD: $
 
 #other stuffs which are not directly related to making ports
 #package-rename: rename package for uploading
