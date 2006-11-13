@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/tunapie/pkg-plist,v 1.4 2006/10/05 09:30:06 miwi Exp $
+@comment $FreeBSD: ports/multimedia/tunapie/pkg-plist,v 1.5 2006/10/21 09:57:46 miwi Exp $
 bin/tunapie
 @unexec if cmp -s %D/etc/tunapie.config %D/etc/tunapie.config.default; then rm -f %D/etc/tunapie.config; fi
 etc/tunapie.config.default
@@ -24,4 +24,4 @@ etc/tunapie.config.default
 %%DATADIR%%/tuner.pyc
 %%DESKTOPDIR%%/tunapie.desktop
 @dirrm %%DATADIR%%
-@dirrmtry share/applications
+@dirrmtry %%DESKTOPDIR%%
