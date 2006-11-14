@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1220 2006/11/11 15:56:04 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1221 2006/11/14 08:35:07 ehaupt Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -4412,7 +4412,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>awstats</name>
-	<range><lt>6.6,1</lt></range>
+	<range><lt>6.5_2,1</lt></range>
       </package>
     </affects>
     <description>
@@ -4446,7 +4446,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2006-05-03</discovery>
       <entry>2006-05-05</entry>
-      <modified>2006-06-07</modified>
+      <modified>2006-11-15</modified>
     </dates>
   </vuln>
 
