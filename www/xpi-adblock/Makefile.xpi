@@ -5,7 +5,7 @@
 # Date created:		28 March 2006
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.12 2006/07/30 22:22:50 sat Exp $
+# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.13 2006/08/03 08:18:19 sat Exp $
 #
 
 # XPI_ID		- Extension id, might be in {12345-...} or dev@org format
@@ -200,3 +200,10 @@ xpi-plist:	extract
 		then ${ECHO_CMD} %%XPI_XPIDIR%%/chrome.manifest >> ${PLIST} ; fi
 	@${FIND} -ds ${WRKSRC} -type d -not -name ${DISTNAME} | \
 		${SED} -e "s,^${WRKSRC},@dirrm %%XPI_XPIDIR%%," >> ${PLIST}
+
+xpi-pre-chrome:
+	@${CHMOD} g+w ${_TD_FULL}
+	@${RM} -f ${_TD_FULL}/chrome.manifest
+
+xpi-post-chrome:
+	@${CP} -f ${_TD_FULL}/chrome.manifest ${FILESDIR}/
