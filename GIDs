@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.15 2006/11/05 17:07:03 alepulver Exp $
+$FreeBSD: ports/GIDs,v 1.16 2006/11/11 16:36:23 ahze Exp $
 # Please keep this file sorted by GID!
 bind:*:53:
 rdfdb:*:55:
@@ -47,6 +47,7 @@ dhis:*:114:
 _symon:*:115:
 smokeping:*:117:
 ircproxyd:*:118:
+fetchmail:*:124
 postfix:*:125:
 maildrop:*:126:
 vchat:*:128:
