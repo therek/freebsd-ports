@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.36 2006/10/14 08:35:34 marcus Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.63 2006/09/29 23:22:28 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -62,6 +62,11 @@ UGLY_GST_ALL_PLUGINS+= \
 		mad \
 		mpeg2dec \
 		sidplay
+
+.for i in ${BASE_GST_ALL_PLUGINS} ${BAD_GST_ALL_PLUGINS} ${UGLY_GST_ALL_PLUGINS}
+gst_${i}_GCONF_SCHEMAS?=	# Empty
+gst_${i}_USE_SDL?=		# Empty
+.endfor
 
 CONFIG_GST_PLUGINS=	gnome_vfs
 GST_ALL_PLUGINS=	${BASE_GST_ALL_PLUGINS} ${BAD_GST_ALL_PLUGINS} \
