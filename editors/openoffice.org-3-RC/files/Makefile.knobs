@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2.0/files/Makefile.knobs,v 1.35 2006/10/10 02:32:28 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.knobs,v 1.36 2006/11/12 04:56:06 maho Exp $
 
 .if !defined(WITH_GNUGCJ)
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
@@ -85,15 +85,15 @@ pre-fetch:
 	@${ECHO} "You can compile OOo without gnome VFS support with"
 	@${ECHO} "make -DWITHOUT_GNOMEVFS"
 .endif
-#.if !defined(WITH_TTF_BYTECODE_ENABLED)
-#	@${ECHO}
-#	@${ECHO} "You may get better quality of glyphs"
-#	@${ECHO} "at small bitmap sizes if you have"
-#	@${ECHO} "licensed the Apple patents"
-#	@${ECHO} "US05155805 US05159668 and US05325479, with"
-#	@${ECHO} "make -DWITH_TTF_BYTECODE_ENABLED"
-#	@${ECHO} "See http://www.freetype.org/patents.html for details"
-#.endif
+.if !defined(WITH_TTF_BYTECODE_ENABLED)
+	@${ECHO}
+	@${ECHO} "You may get better quality of glyphs"
+	@${ECHO} "at small bitmap sizes if you have"
+	@${ECHO} "licensed the Apple patents"
+	@${ECHO} "US05155805 US05159668 and US05325479, with"
+	@${ECHO} "make -DWITH_TTF_BYTECODE_ENABLED"
+	@${ECHO} "See http://www.freetype.org/patents.html for details"
+.endif
 .if !defined(LOCALIZED_LANG)
 	@${ECHO}
 	@${ECHO} "You can select the language for OOo by making it with:"
