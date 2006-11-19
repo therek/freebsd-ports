@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/powerdns/files/configure.powerdns,v 1.8 2005/07/28 22:37:50 pav Exp $
+# $FreeBSD: ports/dns/powerdns/files/configure.powerdns,v 1.9 2005/11/04 10:27:39 kwm Exp $
 #
 if [ -f ${WRKDIRPREFIX}${CURDIR2}/Makefile.inc ]; then
 	exit
@@ -16,7 +16,7 @@ PostgreSQL	"PostgreSQL driver" ON \
 MySQL		"MySQL driver" OFF \
 OpenLDAP	"OpenLDAP backend" OFF \
 SQLite		"SQLite backend" OFF \
-Recursor	"Build Recursor" OFF \
+Recursor	"Build Recursor (DEPRECATED)" OFF \
 2> /tmp/checklist.tmp.$$
 
         retval=$?
