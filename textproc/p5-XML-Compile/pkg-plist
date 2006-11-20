@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/p5-XML-Compile/pkg-plist,v 1.1 2006/09/26 08:59:45 clsung Exp $
+@comment $FreeBSD: ports/textproc/p5-XML-Compile/pkg-plist,v 1.2 2006/10/01 03:16:49 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/XML/Compile/.packlist
 %%SITE_PERL%%/XML/Compile.pm
 %%SITE_PERL%%/XML/Compile.pod
@@ -6,8 +6,6 @@
 %%SITE_PERL%%/XML/Compile/Schema.pod
 %%SITE_PERL%%/XML/Compile/Schema/BuiltInFacets.pm
 %%SITE_PERL%%/XML/Compile/Schema/BuiltInFacets.pod
-%%SITE_PERL%%/XML/Compile/Schema/BuiltInStructs.pm
-%%SITE_PERL%%/XML/Compile/Schema/BuiltInStructs.pod
 %%SITE_PERL%%/XML/Compile/Schema/BuiltInTypes.pm
 %%SITE_PERL%%/XML/Compile/Schema/BuiltInTypes.pod
 %%SITE_PERL%%/XML/Compile/Schema/Instance.pm
@@ -16,10 +14,14 @@
 %%SITE_PERL%%/XML/Compile/Schema/NameSpaces.pod
 %%SITE_PERL%%/XML/Compile/Schema/Specs.pm
 %%SITE_PERL%%/XML/Compile/Schema/Specs.pod
+%%SITE_PERL%%/XML/Compile/Schema/Template.pm
+%%SITE_PERL%%/XML/Compile/Schema/Template.pod
 %%SITE_PERL%%/XML/Compile/Schema/Translate.pm
 %%SITE_PERL%%/XML/Compile/Schema/Translate.pod
 %%SITE_PERL%%/XML/Compile/Schema/XmlReader.pm
 %%SITE_PERL%%/XML/Compile/Schema/XmlReader.pod
+%%SITE_PERL%%/XML/Compile/Schema/XmlTemplate.pm
+%%SITE_PERL%%/XML/Compile/Schema/XmlTemplate.pod
 %%SITE_PERL%%/XML/Compile/Schema/XmlWriter.pm
 %%SITE_PERL%%/XML/Compile/Schema/XmlWriter.pod
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/XML/Compile
