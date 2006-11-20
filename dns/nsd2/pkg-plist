@@ -1,4 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/dns/nsd2/pkg-plist,v 1.1 2006/10/31 17:27:32 alepulver Exp $
+etc/rc.d/nsd.sh
+etc/nsd/nsdc.conf.sample
 etc/nsd/nsd.zones.sample
 sbin/nsd
 sbin/zonec
