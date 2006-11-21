@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20061121:
+  AFFECTS: users of www/hastymail
+  AUTHOR: miwi@FreeBSD.org
+
+  The default install location has changed from
+  ${PREFIX}/www/data/hastymail to ${PREFIX}/www/hastymail.
+
 20061109
   AFFECTS: users of milter-bogom, dk-milter, dkim-milter
   AUTHOR: ache@freebsd.org
@@ -4400,4 +4407,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.423 2006/11/08 17:07:50 girgen Exp $
+$FreeBSD: ports/UPDATING,v 1.424 2006/11/09 13:37:21 ache Exp $
