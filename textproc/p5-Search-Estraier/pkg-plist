@@ -1,6 +1,13 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/textproc/p5-Search-Estraier/pkg-plist,v 1.1 2006/07/11 15:11:14 rafan Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Search/Estraier/.packlist
 %%SITE_PERL%%/Search/Estraier.pm
+bin/cpanest
+bin/dbi-indexer.pl
+bin/est-spider
+bin/estcp-mt.pl
+bin/estcp.pl
+bin/example_indexer.pl
+bin/example_searcher.pl
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Search/Estraier
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Search
 @dirrmtry %%SITE_PERL%%/Search
