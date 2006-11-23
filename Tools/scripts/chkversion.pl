@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/Tools/scripts/chkversion.pl,v 1.14 2006/11/23 11:59:04 erwin Exp $
+# $FreeBSD: ports/Tools/scripts/chkversion.pl,v 1.15 2006/11/23 12:16:59 erwin Exp $
 #
 # MAINTAINER=   erwin@FreeBSD.org
 #
@@ -66,6 +66,7 @@
 
 require 5.005;
 use strict;
+use POSIX;
 use File::Find;
 use Cwd 'abs_path';
 
@@ -103,7 +104,7 @@ $portsdir = abs_path($portsdir);
 my $versionfile = "$versiondir/VERSIONS";
 my $useindex    = !-w $versiondir;
 
-my $starttime = localtime();
+my $starttime = strftime("%a %b %e %G %k:%M:%S %Z",localtime);
 
 sub readfrom {
     my $dir = shift;
