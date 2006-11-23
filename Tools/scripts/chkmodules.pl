@@ -28,9 +28,9 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/Tools/scripts/chkmodules.pl,v 1.3 2004/05/14 21:07:39 eik Exp $
+# $FreeBSD: ports/Tools/scripts/chkmodules.pl,v 1.4 2005/01/09 10:21:17 krion Exp $
 #
-# MAINTAINER=	eik@FreeBSD.org
+# MAINTAINER=	erwin@FreeBSD.org
 #
 # CVSROOT-ports/modules auditing script, based on a shell script by
 # Clement Laforet.

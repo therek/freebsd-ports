@@ -28,9 +28,9 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/Tools/scripts/chkversion.pl,v 1.13 2004/06/04 22:23:03 eik Exp $
+# $FreeBSD: ports/Tools/scripts/chkversion.pl,v 1.14 2006/11/23 11:59:04 erwin Exp $
 #
-# MAINTAINER=   eik@FreeBSD.org
+# MAINTAINER=   erwin@FreeBSD.org
 #
 # PORTVERSION and PKGORIGIN auditing script
 #
