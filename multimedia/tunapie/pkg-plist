@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/tunapie/pkg-plist,v 1.5 2006/10/21 09:57:46 miwi Exp $
+@comment $FreeBSD: ports/multimedia/tunapie/pkg-plist,v 1.6 2006/11/13 01:14:12 miwi Exp $
 bin/tunapie
 @unexec if cmp -s %D/etc/tunapie.config %D/etc/tunapie.config.default; then rm -f %D/etc/tunapie.config; fi
 etc/tunapie.config.default
@@ -19,7 +19,8 @@ etc/tunapie.config.default
 %%DATADIR%%/TunerInfoDialog.pyc
 %%DATADIR%%/TunerPrefs.py
 %%DATADIR%%/TunerPrefs.pyc
-%%DATADIR%%/tplogo.jpg
+%%DATADIR%%/pygame.ico
+%%DATADIR%%/tplogo.ico
 %%DATADIR%%/tuner.py
 %%DATADIR%%/tuner.pyc
 %%DESKTOPDIR%%/tunapie.desktop
