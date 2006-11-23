@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/p5-DBI/pkg-plist,v 1.29 2006/01/22 01:29:03 edwin Exp $
+@comment $FreeBSD: ports/databases/p5-DBI/pkg-plist,v 1.30 2006/08/14 18:34:26 mat Exp $
 bin/dbiprof
 bin/dbiproxy
 %%SITE_PERL%%/%%PERL_ARCH%%/Bundle/DBI.pm
@@ -28,6 +28,7 @@ bin/dbiproxy
 %%SITE_PERL%%/%%PERL_ARCH%%/DBI/SQL/Nano.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/DBI/W32ODBC.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Roadmap.pod
+%%SITE_PERL%%/%%PERL_ARCH%%/TASKS.pod
 %%SITE_PERL%%/%%PERL_ARCH%%/Win32/DBIODBC.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/DBI/.packlist
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/DBI/DBI.bs
