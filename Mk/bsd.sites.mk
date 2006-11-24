@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.400 2006/10/07 17:47:05 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.401 2006/11/05 12:27:42 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1120,7 +1120,8 @@ MASTER_SITE_TEX_CTAN+=  \
 	ftp://ctan.tug.org/tex-archive/%SUBDIR%/ \
 	ftp://ftp.dante.de/tex-archive/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,text/CTAN/&,} \
-	ftp://ftp.chg.ru/pub/TeX/CTAN/%SUBDIR%/
+	ftp://ftp.chg.ru/pub/TeX/CTAN/%SUBDIR%/ \
+	ftp://mirror.macomnet.net/pub/CTAN/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_THEMES)
