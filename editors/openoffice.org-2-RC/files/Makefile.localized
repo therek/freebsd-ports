@@ -1,6 +1,6 @@
 # localized makefile
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2.0/files/Makefile.localized,v 1.12 2006/03/15 06:18:10 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.localized,v 1.13 2006/06/28 05:02:06 daichi Exp $
 ################################################################
 #See solenv/inc/postset.mk for details	
 ################################################################
@@ -12,6 +12,11 @@ LANG_PKGNAME=	${LOCALIZED_LANG}
 .if ${LOCALIZED_LANG} == "ar"
 CATEGORIES+=	arabic
 LANG_PKGNAME=	${LOCALIZED_LANG}
+.endif
+################################################################
+.if ${LOCALIZED_LANG} == "as-IN"
+LANG_PKGNAME=	as
+LANG_SUFFIX=	IN
 .endif
 ################################################################
 .if ${LOCALIZED_LANG} == "be-BY"
@@ -170,6 +175,10 @@ CATEGORIES+=     korean
 LANG_PKGNAME=	${LOCALIZED_LANG}
 .endif
 ################################################################
+.if ${LOCALIZED_LANG} == "ku"
+LANG_PKGNAME=	${LOCALIZED_LANG}
+.endif
+################################################################
 .if ${LOCALIZED_LANG} == "lo"
 LANG_PKGNAME=	${LOCALIZED_LANG}
 .endif
@@ -188,6 +197,16 @@ LANG_PKGNAME=	${LOCALIZED_LANG}
 ################################################################
 .if ${LOCALIZED_LANG} == "ms"
 LANG_PKGNAME=	${LOCALIZED_LANG}
+.endif
+################################################################
+.if ${LOCALIZED_LANG} == "ml-IN"
+LANG_PKGNAME=	ml
+LANG_SUFFIX=	IN
+.endif
+################################################################
+.if ${LOCALIZED_LANG} == "mr-IN"
+LANG_PKGNAME=	mr
+LANG_SUFFIX=	IN
 .endif
 ################################################################
 .if ${LOCALIZED_LANG} == "ne"
@@ -212,6 +231,11 @@ LANG_PKGNAME=	${LOCALIZED_LANG}
 ################################################################
 .if ${LOCALIZED_LANG} == "ns"
 LANG_PKGNAME=	${LOCALIZED_LANG}
+.endif
+################################################################
+.if ${LOCALIZED_LANG} == "or-IN"
+LANG_PKGNAME=	or
+LANG_SUFFIX=	IN
 .endif
 ################################################################
 .if ${LOCALIZED_LANG} == "pa-IN"
@@ -295,6 +319,16 @@ LANG_PKGNAME=	ta
 LANG_SUFFIX=	IN
 .endif
 ################################################################
+.if ${LOCALIZED_LANG} == "te-IN"
+LANG_PKGNAME=	te
+LANG_SUFFIX=	IN
+.endif
+################################################################
+.if ${LOCALIZED_LANG} == "ti-IN"
+LANG_PKGNAME=	ti
+LANG_SUFFIX=	IN
+.endif
+################################################################
 .if ${LOCALIZED_LANG} == "th"
 LANG_PKGNAME=	${LOCALIZED_LANG}
 .endif
@@ -308,6 +342,19 @@ LANG_PKGNAME=	${LOCALIZED_LANG}
 .endif
 ################################################################
 .if ${LOCALIZED_LANG} == "ts"
+LANG_PKGNAME=	${LOCALIZED_LANG}
+.endif
+################################################################
+.if ${LOCALIZED_LANG} == "tg"
+LANG_PKGNAME=	${LOCALIZED_LANG}
+.endif
+################################################################
+.if ${LOCALIZED_LANG} == "ur-IN"
+LANG_PKGNAME=	ur
+LANG_SUFFIX=	IN
+.endif
+################################################################
+.if ${LOCALIZED_LANG} == "uk"
 LANG_PKGNAME=	${LOCALIZED_LANG}
 .endif
 ################################################################
