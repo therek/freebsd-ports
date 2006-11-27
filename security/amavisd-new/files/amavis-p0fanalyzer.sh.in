@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/amavisd-new/files/amavis-p0fanalyzer.sh.in,v 1.2 2006/09/25 16:22:33 erwin Exp $
+# $FreeBSD: ports/security/amavisd-new/files/amavis-p0fanalyzer.sh.in,v 1.3 2006/10/01 17:48:40 erwin Exp $
 
 # PROVIDE: amavis_p0fanalyzer
 # REQUIRE: DAEMON
@@ -22,10 +22,10 @@ stop_cmd=p0fanalyzer_stop
 
 p0fanalyzer_start() {
 	echo "Starting p0f-analyzer." && \
-	  /usr/sbin/daemon -p ${amavis_p0fanalyzer_pidfile1} \
-	  %%PREFIX%%/bin/p0f "${amavis_p0f_daemon_flags}" \
+	  %%DAEMON%% ${amavis_p0fanalyzer_pidfile1} \
+	  %%PREFIX%%/bin/p0f ${amavis_p0f_daemon_flags} \
 	  -l "${amavis_p0fanalyzer_p0f_filter}" 2>&1 | \
-	  /usr/sbin/daemon -p ${amavis_p0fanalyzer_pidfile2} \
+	  %%DAEMON%% ${amavis_p0fanalyzer_pidfile2} \
 	  %%PREFIX%%/sbin/p0f-analyzer.pl ${amavis_p0fanalyzer_flags}
 }
 
