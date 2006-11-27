@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/libprelude/pkg-plist,v 1.15 2006/05/05 11:21:57 garga Exp $
+@comment $FreeBSD: ports/security/libprelude/pkg-plist,v 1.16 2006/07/19 15:04:25 rafan Exp $
 bin/libprelude-config
 bin/prelude-adduser
 etc/prelude/default/client.conf-dist
@@ -52,7 +52,7 @@ include/libprelude/prelude.h
 include/libprelude/variable.h
 lib/libprelude.la
 lib/libprelude.so
-lib/libprelude.so.9
+lib/libprelude.so.10
 %%WITH_PERL%%%%SITE_PERL%%/%%PERL_ARCH%%/Prelude.pm
 %%WITH_PERL%%%%SITE_PERL%%/%%PERL_ARCH%%/auto/Prelude/.packlist
 %%WITH_PERL%%%%SITE_PERL%%/%%PERL_ARCH%%/auto/Prelude/Prelude.bs
