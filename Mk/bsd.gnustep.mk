@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.35 2006/11/19 20:52:08 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.36 2006/11/20 03:47:08 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -134,11 +134,26 @@ GNU_ARCH=	ix86
 GNU_ARCH=	${MACHINE_ARCH}
 .endif
 
+.if !defined(USE_MAKEFILE)
+USE_GMAKE=	yes
+MAKEFILE=	GNUmakefile
+.endif
+
+.if defined(ADDITIONAL_OBJCFLAGS)
+MAKE_ENV+=	ADDITIONAL_OBJCFLAGS="${ADDITIONAL_OBJCFLAGS}"
+.endif
+.if defined(ADDITIONAL_LDFLAGS)
+MAKE_ENV+=	ADDITIONAL_LDFLAGS="${ADDITIONAL_LDFLAGS}"
+.endif
+
 GNUSTEP_PREFIX?=	${LOCALBASE}/GNUstep
+DEFAULT_LIBVERSION?=	0.0.1
+
 .if defined(USE_GNUSTEP_PREFIX)
 PREFIX=		${GNUSTEP_PREFIX}
 NO_MTREE=	yes
 .endif
+
 SYSTEMDIR=	${GNUSTEP_PREFIX}/System
 SYSMAKEDIR=	${SYSTEMDIR}/Library/Makefiles
 SYSBUNDLEDIR=	${SYSTEMDIR}/Library/Bundles
@@ -146,15 +161,14 @@ SYSLIBDIR=	${SYSTEMDIR}/Library/Libraries
 COMBOLIBDIR=	${SYSTEMDIR}/Library/Libraries
 LOCALLIBDIR=	${GNUSTEP_PREFIX}/Local/Library/Libraries
 LOCALBUNDLEDIR=	${GNUSTEP_PREFIX}/Local/Library/Bundles
+
 .if defined(WITH_GNUSTEP_DEVEL)
 PKGNAMESUFFIX?=	-devel${PKGNAMESUFFIX2}
 PLIST_SUB+=	GNUSTEP_DEVEL=""
 PLIST_SUB+=	GNUSTEP_STABLE="@comment "
-DEFAULT_LIBVERSION?=	0.0.1
 .else
 PLIST_SUB+=	GNUSTEP_DEVEL="@comment "
 PLIST_SUB+=	GNUSTEP_STABLE=""
-DEFAULT_LIBVERSION?=	0.0.1
 .endif
 
 PLIST_SUB+=	GNU_ARCH=${GNU_ARCH} VERSION=${PORTVERSION}
@@ -424,6 +438,17 @@ do-install:
 TARGLIB!=	(cd ${PORTSDIR}/${GNUSTEP_GCC_PORT} && make -V TARGLIB)
 .endif
 
+.endif
+
+# ---------------------------------------------------------------------------
+# run ldconfig for installed shlibs
+#
+.if defined(USE_GNUSTEP_LDCONFIG)
+.for i in ${USE_GNUSTEP_LDCONFIG}
+LDCONFIG_DIRS+=	${i}
+.endfor
+INSTALLS_SHLIB=		yes
+NO_FILTER_SHLIBS=	yes
 .endif
 
 # eof
