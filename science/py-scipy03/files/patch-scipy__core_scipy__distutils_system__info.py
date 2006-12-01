@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/science/py-scipy03/files/patch-scipy__core_scipy__distutils_system__info.py,v 1.1 2005/05/18 15:44:50 vs Exp $
 
 --- scipy_core/scipy_distutils/system_info.py.orig
 +++ scipy_core/scipy_distutils/system_info.py

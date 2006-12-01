@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/science/py-scipy03/files/patch-scipy__core_scipy__base_fastumathmodule.c,v 1.1 2005/05/18 15:44:50 vs Exp $
 
 --- scipy_core/scipy_base/fastumathmodule.c.orig
 +++ scipy_core/scipy_base/fastumathmodule.c
