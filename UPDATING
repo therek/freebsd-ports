@@ -24,7 +24,7 @@ upgrades.
     - Do a "slapadd < backup.ldif" to restore the data
 
   Alternatively, if you want to keep the current BDB version (4.3),
-  please define WITH_BDB=43 when building the server.
+  please define WITH_BDB_VER=43 when building the server.
 
 20061121:
   AFFECTS: users of www/hastymail
@@ -4427,4 +4427,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.426 2006/11/30 08:45:46 delphij Exp $
+$FreeBSD: ports/UPDATING,v 1.427 2006/11/30 19:40:02 delphij Exp $
