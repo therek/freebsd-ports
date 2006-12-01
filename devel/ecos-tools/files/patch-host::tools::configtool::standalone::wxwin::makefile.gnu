@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/devel/ecos-tools/files/patch-host::tools::configtool::standalone::wxwin::makefile.gnu,v 1.1 2003/11/17 12:29:06 tg Exp $
 
 --- ../ecos/host/tools/configtool/standalone/wxwin/makefile.gnu.orig	Wed May 14 14:20:15 2003
 +++ ../ecos/host/tools/configtool/standalone/wxwin/makefile.gnu	Mon Nov 17 11:44:38 2003
@@ -36,8 +36,8 @@ $FreeBSD$
    PROGRAM=configtool
 -  CPPFLAGS=`$(WXDIR)/bin/wx-config --cppflags`
 -  LDFLAGS=`$(WXDIR)/bin/wx-config --libs`
-+  CPPFLAGS=`$(WXDIR)/bin/$(WX_CONFIG) --cppflags`
-+  LDFLAGS=`$(WXDIR)/bin/$(WX_CONFIG) --libs`
++  CPPFLAGS=`$(WX_CONFIG) --cppflags`
++  LDFLAGS=`$(WX_CONFIG) --libs`
    EXTRAOBJECTS=
  endif
  

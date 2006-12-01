@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.7 2006/10/31 02:34:09 ahze Exp $
+# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/11/30 12:55:02 ahze Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -22,13 +22,7 @@
 #  Skins can be found at http://www.videolan.org/vlc/download-skins.html
 #
 # WITHOUT_WXGTK=yes
-#  WxWindows/Gtk 2.x Interface
-#  This is the default and most supported
-#  x11 interface
-#
-# WITH_WXGTK_VER=[2.4|2.6]
-#  Choose a WxGTK version you want to use.
-#  Defaults to 26
+#  WxWidgets Interface
 #
 # Audio Knobs:
 #
