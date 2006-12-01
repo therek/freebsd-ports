@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1189 2006/11/24 22:23:36 erwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1190 2006/11/26 03:14:00 vanilla Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2549,3 +2549,4 @@ print/pecl-panda||2006-11-22|Has expired: Project is dead and does not work
 mail/dbmail-devel|mail/dbmail21|2006-11-23|Renamed
 net/ripetools|net/ripe-whois|2006-11-24|Has expired: project no longer exists
 devel/sge||2006-11-26|Removed
+mail/pantomime-ssl|mail/pantomime|2006-12-01|Removed
