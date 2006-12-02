@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1230 2006/12/02 11:41:49 stas Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1231 2006/12/02 15:09:58 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -45,9 +45,8 @@ Note:  Please add new entries to the beginning of this file.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	  <p>tDiary was vulnerable to an unspecified Cross-Site 
-	     Scripting vulnerability</p>
-	</blockquote>
+	<p>tDiary was vulnerable to an unspecified Cross-Site
+	  Scripting vulnerability</p>
       </body>
     </description>
     <references>
