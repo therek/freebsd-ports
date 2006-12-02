@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.401 2006/11/05 12:27:42 sat Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.402 2006/11/24 19:24:51 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -458,6 +458,11 @@ MASTER_SITE_GNUSTEP+= \
 	ftp://ftp.planetmirror.com/pub/gnustep/gnustep/%SUBDIR%/ \
 	ftp://ftp.gnustep.org/pub/gnustep/%SUBDIR%/ \
 	ftp://ftp.easynet.nl/mirror/GNUstep/pub/gnustep/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_GNUSTEP_CH)
+MASTER_SITE_GNUSTEP_CH+= \
+	http://io.debian.net/~tar/ports/distfiles/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_GNU_ALPHA)
