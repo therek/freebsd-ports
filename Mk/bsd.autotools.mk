@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.23 2006/02/23 10:43:34 ade Exp $
+# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.24 2006/07/05 02:18:08 linimon Exp $
 #
 # Please view me with 4 column tabs!
 #
@@ -51,7 +51,7 @@ Autotools_Include_MAINTAINER=	ade@FreeBSD.org
 #	- Extra arguments passed to automake during configure step
 #
 # ACLOCAL_ARGS=...
-#   - Arguments passed to aclocal during configure step
+#	- Arguments passed to aclocal during configure step
 #
 # AUTOCONF_ARGS=...
 #	- Extra arguments passed to autoconf during configure step
