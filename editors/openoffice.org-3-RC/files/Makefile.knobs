@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.knobs,v 1.37 2006/11/19 01:51:45 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.knobs,v 1.38 2006/11/25 03:19:21 maho Exp $
 
 .if !defined(WITH_GNUGCJ)
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
@@ -132,11 +132,6 @@ pre-fetch:
 	@${ECHO}
 	@${ECHO} "You can compile OOo with evolution2 support by"
 	@${ECHO} "make -DWITH_EVOLUTION2"
-.endif
-.if !defined(WITH_MENU)
-	@${ECHO}
-	@${ECHO} "You can install OOo with menu items by"
-	@${ECHO} "make -DWITH_MENU"
 .endif
 	@${ECHO}
 	@${ECHO} "NOTICE:"
