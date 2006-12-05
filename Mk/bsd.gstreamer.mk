@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.23 2006/10/14 08:35:00 marcus Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.38 2006/10/10 20:22:01 mezz Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -220,6 +220,10 @@ mpeg2dec_DEPENDS=	multimedia/gstreamer-plugins-mpeg2dec
 mpeg2enc_DEPENDS=	multimedia/gstreamer-plugins-mpeg2enc
 
 mplex_DEPENDS=	multimedia/gstreamer-plugins-mplex
+
+# XXX: This is a quick solution for ports with USE_GSTREAMER=python
+#      but without USE_PYTHON.
+PYTHON_PKGNAMEPREFIX?=	py*-
 
 python_DEPENDS=	multimedia/py-gstreamer
 python_NAME=	gstreamer
