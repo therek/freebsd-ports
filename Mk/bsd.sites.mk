@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.402 2006/11/24 19:24:51 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.403 2006/12/02 21:57:05 dinoex Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -163,6 +163,17 @@ MASTER_SITE_DEBIAN_NON_US+=	\
 .if !defined(IGNORE_MASTER_SITE_DEBIAN_POOL)
 MASTER_SITE_DEBIAN_POOL+=	\
 	${MASTER_SITE_DEBIAN:C|(/%SUBDIR%/)|/pool/main/${PORTNAME:C/^(.).*$/\1/}/${PORTNAME}/|}
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_EASYSW)
+MASTER_SITE_EASYSW+=	\
+	http://ftp.easysw.com/pub/%SUBDIR%/ \
+	ftp://ftp.easysw.com/pub/%SUBDIR%/ \
+	ftp://ftp2.easysw.com/pub/%SUBDIR%/ \
+	ftp://ftp3.easysw.com/pub/%SUBDIR%/ \
+	http://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/%SUBDIR%/ \
+	ftp://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/%SUBDIR%/ \
+	ftp://ftp.rz.tu-bs.de/pub/mirror/ftp.easysw.com/ftp/pub/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_ECLIPSE)
