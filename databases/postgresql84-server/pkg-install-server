@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/databases/postgresql7/pkg-install,v 1.10 2004/06/28 21:48:56 vanilla Exp $
+# $FreeBSD$
 
 PATH=/bin:/usr/sbin
 PGUSER=pgsql
