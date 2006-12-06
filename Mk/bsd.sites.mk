@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.403 2006/12/02 21:57:05 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.404 2006/12/06 09:26:25 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -717,6 +717,17 @@ MASTER_SITE_NETBSD+=	\
 	ftp://ftp.dti.ad.jp/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://ftp.iij.ad.jp/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://melanoma.cs.rmit.edu.au/pub/NetBSD/packages/distfiles/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_NVIDIA)
+MASTER_SITE_NVIDIA+=	\
+	http://jp.download.nvidia.com/%SUBDIR%/ \
+	http://us.download.nvidia.com/%SUBDIR%/ \
+	http://tw.download.nvidia.com/%SUBDIR%/ \
+	http://download.nvidia.com/%SUBDIR%/ \
+	http://download1.nvidia.com/%SUBDIR%/ \
+	ftp://download.nvidia.com/%SUBDIR%/ \
+	ftp://download1.nvidia.com/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_OSSP)
