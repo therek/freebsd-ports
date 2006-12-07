@@ -3,7 +3,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.18 2006/11/01 13:20:10 ahze Exp $
 #    $MCom: ports-stable/www/mozilla/Makefile.common,v 1.1 2006/10/18 17:29:07 ahze Exp $
 
 # This file contains some reusable components for mozilla ports. It's of
@@ -134,6 +134,7 @@ optimized_cflags_OPTION=	"Enable some additional optimizations" off
 .for option in ${USE_GECKO_OPTIONS:L}
 .if ${_USE_GECKO_OPTIONS_ALL:M${option}}!=""
 OPTIONS+=	${option:U} ${${option}_OPTION}
+_${option}=	${TRUE}
 .endif
 .endfor
 
@@ -208,7 +209,7 @@ MOZ_OPTIONS+=	--disable-debug				\
 		--enable-strip
 .endif
 
-.if defined(WITH_JAVA)
+.if defined(WITH_JAVA) && defined(_WITH_JAVA)
 USE_JAVA=	yes
 JAVA_VERSION+=	1.4+
 JAVA_OS+=	native
