@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.86 2006/11/30 13:51:28 pav Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.87 2006/12/08 04:57:49 alexbl Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -103,6 +103,12 @@ Python_Include_MAINTAINER=	python@FreeBSD.org
 #
 # PYXML				- Dependency line for the XML extension. As of Python-2.0,
 #					  this extension is in the base distribution.
+#
+# PYEXPAT			- Dependency line for the Expat XML Parser. As of Python-2.3.2,
+#					  this module is in the base distribution.
+#
+# PYCTYPES			- Dependency line for the ctypes package. As of Python-2.5,
+#					  this module is in the base distribution.
 #
 # USE_PYTHON_PREFIX	- Says that the port installs in ${PYTHONBASE}.
 #
@@ -427,6 +433,12 @@ PYXML=			${PYTHON_SITELIBDIR}/_xmlplus/__init__.py:${PORTSDIR}/textproc/py-xml
 PYEXPAT=		${PYTHON_SITELIBDIR}/pyexpat.so:${PORTSDIR}/textproc/py-expat
 .else
 PYEXPAT=		${PYTHON_LIBDIR}/lib-dynload/pyexpat.so:${PYTHON_PORTSDIR}
+.endif
+
+.if defined(PYTHON_REL) && ${PYTHON_REL} < 250
+PYCTYPES=		${PYTHON_SITELIBDIR}/ctypes/__init__.py:${PORTSDIR}/devel/py-ctypes
+.else
+PYCTYPES=		${PYTHON_LIBDIR}/ctypes/__init__py:${PYTHON_PORTSDIR}
 .endif
 
 # dependencies
