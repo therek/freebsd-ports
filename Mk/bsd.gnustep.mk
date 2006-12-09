@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.36 2006/11/20 03:47:08 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.37 2006/11/30 06:55:29 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -139,11 +139,20 @@ USE_GMAKE=	yes
 MAKEFILE=	GNUmakefile
 .endif
 
+.if defined(ADDITIONAL_CPPFLAGS)
+MAKE_ENV+=	ADDITIONAL_CPPFLAGS="${ADDITIONAL_CPPFLAGS}"
+.endif
 .if defined(ADDITIONAL_OBJCFLAGS)
 MAKE_ENV+=	ADDITIONAL_OBJCFLAGS="${ADDITIONAL_OBJCFLAGS}"
 .endif
+.if defined(ADDITIONAL_INCLUDE_DIRS)
+MAKE_ENV+=	ADDITIONAL_INCLUDE_DIRS="${ADDITIONAL_INCLUDE_DIRS}"
+.endif
 .if defined(ADDITIONAL_LDFLAGS)
 MAKE_ENV+=	ADDITIONAL_LDFLAGS="${ADDITIONAL_LDFLAGS}"
+.endif
+.if defined(ADDITIONAL_LIB_DIRS)
+MAKE_ENV+=	ADDITIONAL_LIB_DIRS="${ADDITIONAL_LIB_DIRS}"
 .endif
 
 GNUSTEP_PREFIX?=	${LOCALBASE}/GNUstep
