@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.313 2006/11/07 14:21:38 laszlof Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.314 2006/11/29 23:29:51 lx Exp $
 #
 # FreeBSD Project Committers
 #
@@ -106,6 +106,7 @@
  45.27,		9.17,		"olgeni"			# Milano, Italy
  45.488328,	9.164711,	"ale"		align=left	# Milano, Italy
  52.05,		8.9,		"lkoeller"			# Lemgo, Germany
+ 45.667		8.867,		"nivit"		align=left	# Fagnano Olona, Italy
  50.1025,	8.6841,		"tomsoft"			# Frankfurt, Hessen, Germany
  47.367,	8.550,		"ehaupt"			# Zurich, Switzerland
  47.1666,	8.5166,		"dhartmei"			# Zug, Switzerland
