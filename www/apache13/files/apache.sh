@@ -1,9 +1,8 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13/files/apache.sh,v 1.10 2006/02/20 20:47:46 dougb Exp $
+# $FreeBSD: ports/www/apache13/files/apache.sh,v 1.11 2006/08/10 11:51:42 ache Exp $
 
 # PROVIDE: apache
-# REQUIRE: DAEMON
-# BEFORE: LOGIN
+# REQUIRE: LOGIN cleanvar
 # KEYWORD: shutdown
 
 # Define these apache_* variables in one of these files:
