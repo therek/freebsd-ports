@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/databases/virtuoso/files/virtuoso.sh.in,v 1.1 2006/12/09 13:05:29 fjoe Exp $
 #
 # PROVIDE: virtuoso
 # REQUIRE: LOGIN
@@ -42,8 +42,6 @@ stop_cmd="virtuoso_command stop"
 restart_cmd="virtuoso_command restart"
 reload_cmd="virtuoso_command reload"
 status_cmd="virtuoso_command status"
-
-initdb_cmd="virtuoso_initdb"
 
 virtuoso_command()
 {
