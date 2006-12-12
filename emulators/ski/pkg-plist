@@ -1,9 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/emulators/ski/pkg-plist,v 1.1 2001/10/16 01:06:02 obrien Exp $
 bin/ski
 bin/bski
 bin/bskinc
 bin/xski
-examples/ski/ia64.cmd
 ../X11R6/lib/X11/app-defaults/XSki
 share/doc/ski/HOWTO-ski-networking
 share/doc/ski/README
@@ -11,3 +10,6 @@ share/doc/ski/Makefile
 share/doc/ski/hello
 share/doc/ski/hello.c
 share/doc/ski/ski-manual.pdf
+share/examples/ski/ia64.cmd
+@dirrm share/examples/ski
+@dirrm share/doc/ski
