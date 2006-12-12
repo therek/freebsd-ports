@@ -1,6 +1,0 @@
-@comment $FreeBSD: ports/print/latex-xcolor/pkg-plist,v 1.2 2004/08/19 17:44:24 hrs Exp $
-%%CLASSDIR%%/xcolor.dtx
-%%CLASSDIR%%/xcolor.ins
-%%CLASSDIR%%/xcolor.sty
-@exec %%MKTEXLSR%%
-@unexec %%MKTEXLSR%%
