@@ -1,6 +1,7 @@
-# $FreeBSD: ports/lang/erlang/Makefile.lib,v 1.18 2006/09/07 11:59:56 olgeni Exp $
+# $FreeBSD: ports/lang/erlang/Makefile.lib,v 1.19 2006/11/25 16:47:07 olgeni Exp $
 
 ERTS_VSN=	5.5.2
+TOOLS_VSN=	2.5.2
 OTP_LIBS=	appmon-2.1.6 \
 		asn1-1.4.4.11 \
 		compiler-4.4.2 \
