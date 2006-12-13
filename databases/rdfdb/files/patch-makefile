@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/databases/rdfdb/files/patch-makefile,v 1.1 2002/06/09 00:35:39 petef Exp $
 
 --- makefile.orig	Sun Aug 20 15:48:46 2000
 +++ makefile	Sat Jun  8 20:25:04 2002
@@ -8,8 +8,8 @@ $FreeBSD$
 -LIBS     = -ldb -lpthread
 -CPPFLAGS = $(INCLUDES) -L  /usr/local/BerkeleyDB.3.1/lib/
 +CC ?= gcc -g 
-+INCLUDES = -I /usr/local/include/db3 -I expat/xmltok -I expat/xmlparse
-+LIBS     = -ldb3 %%PTHREAD_LIBS%%
++INCLUDES = -I %%BDB_INCLUDE_DIR%% -I expat/xmltok -I expat/xmlparse
++LIBS     = -l%%BDB_LIB_NAME%% %%PTHREAD_LIBS%%
 +CPPFLAGS += ${CFLAGS} $(INCLUDES) -L  /usr/local/lib
  
  OBJS =  utils/hash.o \
