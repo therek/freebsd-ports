@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.87 2006/12/08 04:57:49 alexbl Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.88 2006/12/08 21:50:19 alexbl Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -108,6 +108,9 @@ Python_Include_MAINTAINER=	python@FreeBSD.org
 #					  this module is in the base distribution.
 #
 # PYCTYPES			- Dependency line for the ctypes package. As of Python-2.5,
+#					  this module is in the base distribution.
+#
+# PYHASHLIB			- Dependency line for the hashlib package. As of Python-2.5,
 #					  this module is in the base distribution.
 #
 # USE_PYTHON_PREFIX	- Says that the port installs in ${PYTHONBASE}.
@@ -439,6 +442,12 @@ PYEXPAT=		${PYTHON_LIBDIR}/lib-dynload/pyexpat.so:${PYTHON_PORTSDIR}
 PYCTYPES=		${PYTHON_SITELIBDIR}/ctypes/__init__.py:${PORTSDIR}/devel/py-ctypes
 .else
 PYCTYPES=		${PYTHON_LIBDIR}/ctypes/__init__py:${PYTHON_PORTSDIR}
+.endif
+
+.if defined(PYTHON_REL) && ${PYTHON_REL} < 250
+PYHASHLIB=		${PYTHON_SITELIBDIR}/hashlib.py:${PORTSDIR}/security/py-hashlib
+.else
+PYHASHLIB=		${PYTHON_LIBDIR}/hashlib.py:${PYTHON_PORTSDIR}
 .endif
 
 # dependencies
