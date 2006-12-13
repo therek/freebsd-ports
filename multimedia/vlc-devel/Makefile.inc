@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.9 2006/12/01 07:38:58 pav Exp $
+# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.10 2006/12/10 16:11:22 ahze Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -329,7 +329,7 @@ pre-install: build
 	cd ${FAKEDIR}/mozilla && ${FIND} -s * | \
 		${SED} -e 's|^|lib/browser_plugins/|' >> ${PLIST}
 .endif
-.for locale in my oc ps tet tl
+.for locale in co fur my oc ps tet tl
 	${ECHO_CMD} "@unexec ${RMDIR} %D/share/locale/${locale}/LC_MESSAGES 2>/dev/null || ${TRUE}" >> ${PLIST}
 	${ECHO_CMD} "@unexec ${RMDIR} %D/share/locale/${locale} 2>/dev/null || ${TRUE}" >> ${PLIST}
 .endfor
