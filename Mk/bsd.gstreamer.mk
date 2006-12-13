@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.24 2006/12/05 18:02:43 sat Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.25 2006/12/12 17:15:51 vd Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.38 2006/10/10 20:22:01 mezz Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -192,8 +192,6 @@ swfdec_DEPENDS=	graphics/gstreamer-plugins-swfdec
 bad_DEPENDS=	multimedia/gstreamer-plugins-bad
 
 bz2_DEPENDS=	multimedia/gstreamer-plugins-bz2
-
-dirac_DEPENDS=	multimedia/gstreamer-plugins-dirac
 
 ffmpeg_DEPENDS=	multimedia/gstreamer-ffmpeg
 ffmpeg_GST80_SUFX=	80
