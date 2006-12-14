@@ -1,9 +1,8 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13+ipv6/files/apache.sh,v 1.5 2004/11/05 18:21:25 sumikawa Exp $
+# $FreeBSD: ports/www/apache13+ipv6/files/apache.sh,v 1.6 2006/02/20 20:47:46 dougb Exp $
 
 # PROVIDE: apache
-# REQUIRE: DAEMON
-# BEFORE: LOGIN
+# REQUIRE: LOGIN cleanvar
 # KEYWORD: shutdown
 
 # Define these apache_* variables in one of these files:
@@ -26,7 +25,7 @@ command="%%PREFIX%%/sbin/httpd"
 load_rc_config $name
 
 pidfile="${apache_pidfile}"
-
-start_cmd="echo \"Starting ${name}.\"; /usr/bin/limits -U www ${command} ${apache_flags} ${command_args}"
+start_precmd="`/usr/bin/limits -e -U www`"
+start_postcmd="`/usr/bin/limits -e -C daemon`"
 
 run_rc_command "$1"
