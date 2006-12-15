@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1212 2006/12/15 00:01:13 mezz Exp $
+# $FreeBSD: ports/MOVED,v 1.1213 2006/12/15 01:42:15 lioux Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2619,3 +2619,4 @@ sysutils/kdar||2006-12-14|Has expired: Does not compile with dar-2.3.0
 net-im/ymessenger||2006-12-14|Has expired: is a dynamically linked binary linked to old version of gtkhtml no longer in ports
 audio/ac3dec||2006-12-14|Dead outside FreeBSD and replaced by liba52
 net-p2p/mldonkey-sancho||2006-12-14|Removed due to developer's request
+net/gmdns||2006-12-14|Dead, unmaintain and nothing use it
