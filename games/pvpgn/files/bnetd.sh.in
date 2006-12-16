@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/games/pvpgn/files/bnetd.sh,v 1.1 2005/01/20 13:46:41 pav Exp $
+# $FreeBSD: ports/games/pvpgn/files/bnetd.sh,v 1.2 2006/02/20 20:47:02 dougb Exp $
 #
 
 # PROVIDE: bnetd
@@ -11,7 +11,7 @@
 #
 # Add the following lines to /etc/rc.conf to enable bnetd:
 #
-#bnetd_enable="YES"
+# bnetd_enable="YES"
 #
 # See bnetd(1) for flags
 #
