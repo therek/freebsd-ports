@@ -1,4 +1,4 @@
-$FreeBSD: ports/UIDs,v 1.22 2006/11/16 08:58:31 alexbl Exp $
+$FreeBSD: ports/UIDs,v 1.23 2006/12/01 09:39:59 pav Exp $
 # Please keep this file sorted by UID!
 bind:*:53:53:Bind Sandbox:/:/sbin/nologin
 majordom:*:54:54:Majordomo Pseudo User:/usr/local/majordomo:/nonexistent
@@ -68,6 +68,7 @@ sfs:*:171:171:Self-Certifying File System:/nonexistent:/sbin/nologin
 agk:*:172:172:AquaGateKeeper:/nonexistent:/nonexistent
 polipo:*:173:173:polipo web cache:/nonexistent:/sbin/nologin
 moinmoin:*:192:192:MoinMoin User:/nonexistent:/sbin/nologin
+cups:*193:193:Cups Owner:/nonexistent:/sbin/nologin
 sympa:*:200:200:Sympa Owner:/nonexistent:/sbin/nologin
 privoxy:*:201:201:Privoxy proxy user:/nonexistent:/sbin/nologin
 dspam:*:202:202:Dspam:/nonexistent:/sbin/nologin
