@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.37 2006/11/30 06:55:29 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.38 2006/12/09 21:37:26 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -139,6 +139,12 @@ USE_GMAKE=	yes
 MAKEFILE=	GNUmakefile
 .endif
 
+.if defined(ADDITIONAL_FLAGS)
+MAKE_ENV+=	ADDITIONAL_FLAGS="${ADDITIONAL_FLAGS}"
+.endif
+.if defined(ADDITIONAL_CFLAGS)
+MAKE_ENV+=	ADDITIONAL_CFLAGS="${ADDITIONAL_CFLAGS}"
+.endif
 .if defined(ADDITIONAL_CPPFLAGS)
 MAKE_ENV+=	ADDITIONAL_CPPFLAGS="${ADDITIONAL_CPPFLAGS}"
 .endif
@@ -361,6 +367,7 @@ RUN_DEPENDS+=	${LOCALBUNDLEDIR}/${_GNUSTEP_DEP:C/:.*//}.themeEngine/${_GNUSTEP_D
 #
 .if defined(USE_GNUSTEP_SYSTEM_APPS)
 .for _GNUSTEP_DEP in ${USE_GNUSTEP_SYSTEM_APPS}
+BUILD_DEPENDS+=	${SYSTEMDIR}/Applications/${_GNUSTEP_DEP:C/:.*//}.app/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
 RUN_DEPENDS+=	${SYSTEMDIR}/Applications/${_GNUSTEP_DEP:C/:.*//}.app/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
 .endfor
 .endif
@@ -370,6 +377,7 @@ RUN_DEPENDS+=	${SYSTEMDIR}/Applications/${_GNUSTEP_DEP:C/:.*//}.app/${_GNUSTEP_D
 #
 .if defined(USE_GNUSTEP_LOCAL_APPS)
 .for _GNUSTEP_DEP in ${USE_GNUSTEP_LOCAL_APPS}
+BUILD_DEPENDS+=	${GNUSTEP_PREFIX}/Local/Applications/${_GNUSTEP_DEP:C/:.*//}.app/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
 RUN_DEPENDS+=	${GNUSTEP_PREFIX}/Local/Applications/${_GNUSTEP_DEP:C/:.*//}.app/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
 .endfor
 .endif
@@ -379,6 +387,7 @@ RUN_DEPENDS+=	${GNUSTEP_PREFIX}/Local/Applications/${_GNUSTEP_DEP:C/:.*//}.app/$
 #
 .if defined(USE_GNUSTEP_LOCAL_TOOLS)
 .for _GNUSTEP_DEP in ${USE_GNUSTEP_LOCAL_TOOLS}
+BUILD_DEPENDS+=	${GNUSTEP_PREFIX}/Local/Tools/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
 RUN_DEPENDS+=	${GNUSTEP_PREFIX}/Local/Tools/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
 .endfor
 .endif
