@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/flow-tools/files/flow_capture.in,v 1.1 2006/11/08 01:06:16 stas Exp $
+# $FreeBSD: ports/net-mgmt/flow-tools/files/flow_capture.in,v 1.2 2006/11/22 15:44:55 stas Exp $
 #
 
 # PROVIDE: flow_capture
@@ -11,7 +11,7 @@
 # Add the following line to /etc/rc.conf to enable flow-capture:
 # flow_capture_enable (bool):	Set it to "YES" to enable flow-capture daemon.
 #				Set to "NO" by default.
-# flow_tools_datadir (str):	Base flow data directory.
+# flow_capture_datadir (str):	Base flow data directory.
 #				Default is "/var/db/flows"
 # flow_capture_localip (str):	IP address to bind to
 #				Default to "0.0.0.0"
