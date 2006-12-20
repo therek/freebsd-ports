@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/p5-XML-Compile/pkg-plist,v 1.2 2006/10/01 03:16:49 clsung Exp $
+@comment $FreeBSD: ports/textproc/p5-XML-Compile/pkg-plist,v 1.3 2006/11/20 20:00:02 miwi Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/XML/Compile/.packlist
 %%SITE_PERL%%/XML/Compile.pm
 %%SITE_PERL%%/XML/Compile.pod
@@ -20,8 +20,6 @@
 %%SITE_PERL%%/XML/Compile/Schema/Translate.pod
 %%SITE_PERL%%/XML/Compile/Schema/XmlReader.pm
 %%SITE_PERL%%/XML/Compile/Schema/XmlReader.pod
-%%SITE_PERL%%/XML/Compile/Schema/XmlTemplate.pm
-%%SITE_PERL%%/XML/Compile/Schema/XmlTemplate.pod
 %%SITE_PERL%%/XML/Compile/Schema/XmlWriter.pm
 %%SITE_PERL%%/XML/Compile/Schema/XmlWriter.pod
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/XML/Compile
