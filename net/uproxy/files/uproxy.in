@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/uproxy/files/uproxy.in,v 1.1 2006/11/08 19:33:45 miwi Exp $
 #
 #
 # PROVIDE: uproxy
@@ -23,7 +23,7 @@ load_rc_config $name
 
 : ${uproxy_enable="NO"}
 
-command="/usr/local/sbin/${name}"
+command="%%PREFIX%%/sbin/${name}"
 start_cmd="uproxy_startcmd"
 
 uproxy_startcmd()
