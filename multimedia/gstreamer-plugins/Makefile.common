@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.37 2006/11/18 18:47:34 mezz Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.38 2006/12/22 22:11:46 ahze Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.63 2006/09/29 23:22:28 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -133,6 +133,10 @@ gst_bz2_DIST=		bad
 
 # cairo
 gst_cairo_LIB_DEPENDS+=	cairo.2:${PORTSDIR}/graphics/cairo
+
+# cdaudio
+gst_cdaudio_LIB_DEPENDS+=cdaudio.1:${PORTSDIR}/audio/libcdaudio
+gst_cdaudio_DIST=	bad
 
 # cdparanoia
 gst_cdparanoia_LIB_DEPENDS+=	cdda_interface.0:${PORTSDIR}/audio/cdparanoia

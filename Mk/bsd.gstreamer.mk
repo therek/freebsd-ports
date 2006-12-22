@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.25 2006/12/12 17:15:51 vd Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.26 2006/12/13 07:39:01 vd Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.38 2006/10/10 20:22:01 mezz Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -60,7 +60,7 @@ GST80_SHLIB_VERSION=	1
 #
 # These are the current supported gstreamer-plugins modules
 #
-_USE_GSTREAMER_ALL=	a52dec aalib annodex bad bz2 cairo cdparanoia dts \
+_USE_GSTREAMER_ALL=	a52dec aalib annodex bad bz2 cairo cdaudio cdparanoia dts \
 			dv dvd esound faac faad ffmpeg flac gconf gnomevfs \
 			gnonlin good gsm hal ivorbis jpeg ladspa lame libcaca \
 			libmms libpng libvisual mad mpeg2dec \
