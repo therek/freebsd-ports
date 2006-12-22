@@ -1,10 +1,18 @@
-@comment $FreeBSD: ports/security/libprelude/pkg-plist,v 1.17 2006/11/27 01:16:41 clsung Exp $
+@comment $FreeBSD: ports/security/libprelude/pkg-plist,v 1.18 2006/12/21 19:14:35 miwi Exp $
 bin/libprelude-config
 bin/prelude-adduser
+@unexec if cmp -s %D/etc/prelude/default/client.conf %D/etc/prelude/default/client.conf-dist; then rm -f %D/etc/prelude/default/client.conf; fi
 etc/prelude/default/client.conf-dist
+@exec if [ ! -f %D/etc/prelude/default/client.conf ] ; then cp -p %D/%F %B/client.conf; fi
+@unexec if cmp -s %D/etc/prelude/default/global.conf %D/etc/prelude/default/global.conf-dist; then rm -f %D/etc/prelude/default/global.conf; fi
 etc/prelude/default/global.conf-dist
+@exec if [ ! -f %D/etc/prelude/default/global.conf ] ; then cp -p %D/%F %B/global.conf; fi
+@unexec if cmp -s %D/etc/prelude/default/idmef-client.conf %D/etc/prelude/default/idmef-client.conf-dist; then rm -f %D/etc/prelude/default/idmef-client.conf; fi
 etc/prelude/default/idmef-client.conf-dist
+@exec if [ ! -f %D/etc/prelude/default/idmef-client.conf ] ; then cp -p %D/%F %B/idmef-client.conf; fi
+@unexec if cmp -s %D/etc/prelude/default/tls.conf %D/etc/prelude/default/tls.conf-dist; then rm -f %D/etc/prelude/default/tls.conf; fi
 etc/prelude/default/tls.conf-dist
+@exec if [ ! -f %D/etc/prelude/default/tls.conf ] ; then cp -p %D/%F %B/tls.conf; fi
 include/libprelude/common.h
 include/libprelude/daemonize.h
 include/libprelude/idmef-additional-data.h
