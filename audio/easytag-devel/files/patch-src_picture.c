@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/audio/easytag-devel/files/patch-src_picture.c,v 1.2 2006/10/14 08:52:29 marcus Exp $
 
 --- src/picture.c.orig
 +++ src/picture.c
@@ -14,7 +14,7 @@ $FreeBSD$
 @@ -1046,7 +1047,7 @@
      size = st.st_size;
      buffer = g_malloc(size);
-     
+ 
 -    FILE *fd = fopen(filename, "rb");
 +    fd = fopen(filename, "rb");
      if (!fd)
