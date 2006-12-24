@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1222 2006/12/23 05:28:30 clsung Exp $
+# $FreeBSD: ports/MOVED,v 1.1223 2006/12/23 18:44:09 ahze Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2616,4 +2616,6 @@ net-p2p/mldonkey-sancho||2006-12-14|Removed due to developer's request
 net/gmdns||2006-12-14|Dead, unmaintain and nothing use it
 devel/stlport-icc||2006-12-20|Has expired: does not work with stlport 4.6.2
 security/gnupg-devel|security/gnupg|2006-12-21|gnupg-devel has been released as Gnupg 2.0
+devel/javasvn|devel/svnkit|2006-12-23|JavaSVN has been renamed to SVNKit
+deskutils/etoile|deskutils/etoile-dictionaryreader|2006-12-25|renamed to etoile-dictionaryreader
 devel/javasvn|devel/svnkit|2006-12-23|JavaSVN has been renamed to SVNKit
