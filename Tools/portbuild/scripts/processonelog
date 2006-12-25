@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/Tools/portbuild/scripts/processonelog,v 1.12 2006/09/14 05:30:04 kris Exp $
+# $FreeBSD: ports/Tools/portbuild/scripts/processonelog,v 1.13 2006/12/03 17:59:09 dinoex Exp $
 #
 # Read a single errorlogfile and output a line of the format
 #    $filename|$portname|$affected|$logsize|$dir|$maintainer|\
@@ -275,7 +275,7 @@ elif bzgrep -q "shminit failed: Permission denied" $1; then
 # types of errors, and thus need to be evaluated after all the specific
 # cases.
 
-elif bzgrep -qE '(gmake:.*Error [12]|tar: Error exit delayed from previous errors)' $1; then
+elif bzgrep -q 'tar: Error exit delayed from previous errors' $1; then
     reason="install_error"; tag="install"
 elif bzgrep -q "Cannot stat: " $1; then
   reason="configure_error"; tag="configure"
