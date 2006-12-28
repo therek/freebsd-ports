@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.404 2006/12/06 09:26:25 sat Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.405 2006/12/06 14:37:53 acm Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1305,7 +1305,8 @@ MASTER_SITE_XORG+= \
 
 # Macro magic
 
-MASTER_SITES_ABBREVS=	CPAN:PERL_CPAN SF:SOURCEFORGE SFE:SOURCEFORGE_EXTENDED
+MASTER_SITES_ABBREVS=	CPAN:PERL_CPAN SF:SOURCEFORGE SFE:SOURCEFORGE_EXTENDED \
+			RF:RUBYFORGE
 MASTER_SITES_SUBDIRS=	\
 			APACHE_JAKARTA:${PORTNAME:S,-,/,}/source \
 			BERLIOS:${PORTNAME:L} \
@@ -1321,7 +1322,8 @@ MASTER_SITES_SUBDIRS=	\
 			RUBY_GNOME:${RUBY_GNOME_MASTER_SITE_SUBDIR} \
 			SAVANNAH:${PORTNAME:L} \
 			SOURCEFORGE:${PORTNAME:L} \
-			SOURCEFORGE_EXTENDED:${PORTNAME:L}
+			SOURCEFORGE_EXTENDED:${PORTNAME:L} \
+			RUBYFORGE:${PORTNAME:L}
 
 .if defined(MASTER_SITES) && ${MASTER_SITES:N*\:/*}
 
