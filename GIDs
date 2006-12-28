@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.19 2006/12/01 09:39:59 pav Exp $
+$FreeBSD: ports/GIDs,v 1.20 2006/12/18 13:35:24 dinoex Exp $
 # Please keep this file sorted by GID!
 bind:*:53:
 rdfdb:*:55:
@@ -59,7 +59,7 @@ sfs:*:171:
 agk:*:172:
 polipo:*:173:
 moinmoin:*:192:
-cups:*193:
+cups:*:193:
 sympa:*:200:
 dspam:*:202:
 bs:*:220:
