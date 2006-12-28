@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-wm/icewm/pkg-plist,v 1.47 2006/10/14 08:54:05 marcus Exp $
+@comment $FreeBSD: ports/x11-wm/icewm/pkg-plist,v 1.48 2006/12/21 18:39:57 alepulver Exp $
 bin/icehelp
 bin/icesh
 bin/icesound
@@ -81,7 +81,7 @@ bin/icewmtray
 %%DATADIR%%/taskbar/collapse.xpm
 %%DATADIR%%/taskbar/desktop.xpm
 %%DATADIR%%/taskbar/expand.xpm
-%%DATADIR%%/taskbar/icewm.xpm
+%%DATADIR%%/taskbar/icewm-logo.xpm
 %%DATADIR%%/taskbar/start.xpm
 %%DATADIR%%/taskbar/windows.xpm
 %%DATADIR%%/themes/Infadel2/Ergonomic.theme
@@ -126,7 +126,7 @@ bin/icewmtray
 %%DATADIR%%/themes/Infadel2/rollupA.xpm
 %%DATADIR%%/themes/Infadel2/rollupI.xpm
 %%DATADIR%%/themes/Infadel2/snap.pcf
-%%DATADIR%%/themes/Infadel2/taskbar/icewm.xpm
+%%DATADIR%%/themes/Infadel2/taskbar/icewm-logo.xpm
 %%DATADIR%%/themes/Infadel2/taskbar/start.xpm
 %%DATADIR%%/themes/Infadel2/taskbar/windows.xpm
 %%DATADIR%%/themes/Infadel2/titleAB.xpm
