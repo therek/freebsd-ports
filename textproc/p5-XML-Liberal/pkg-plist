@@ -1,9 +1,10 @@
-@comment $FreeBSD: ports/textproc/p5-XML-Liberal/pkg-plist,v 1.1 2006/07/11 05:15:55 rafan Exp $
+@comment $FreeBSD: ports/textproc/p5-XML-Liberal/pkg-plist,v 1.2 2006/08/28 08:37:14 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/XML/Liberal/.packlist
 %%SITE_PERL%%/XML/Liberal.pm
 %%SITE_PERL%%/XML/Liberal/LibXML.pm
 %%SITE_PERL%%/XML/Liberal/Remedy.pm
 %%SITE_PERL%%/XML/Liberal/Remedy/ControlCode.pm
+%%SITE_PERL%%/XML/Liberal/Remedy/Declaration.pm
 %%SITE_PERL%%/XML/Liberal/Remedy/EntityRef.pm
 %%SITE_PERL%%/XML/Liberal/Remedy/HTMLEntity.pm
 %%SITE_PERL%%/XML/Liberal/Remedy/InvalidEncoding.pm
