@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/twiki/files/pkg-install.in,v 1.1 2005/09/29 21:10:28 mnag Exp $
+# $FreeBSD: ports/www/twiki/files/pkg-install.in,v 1.2 2006/03/20 23:02:56 pav Exp $
 #
 
 TWIKIDIR=%%TWIKIDIR%%
@@ -29,10 +29,7 @@ case $2 in
 		done
 		find ${TWIKIDIR}/data -type f -name \*.bak | xargs rm
 
-		chown ${WWWUSER}:${WWWGROUP} `find ${TWIKIDIR}/data -type f`
-		chown ${WWWUSER}:${WWWGROUP} `find ${TWIKIDIR}/data -type d`
-		chown ${WWWUSER}:${WWWGROUP} `find ${TWIKIDIR}/pub -type f`
-		chown ${WWWUSER}:${WWWGROUP} `find ${TWIKIDIR}/pub -type d`
+		chown -R ${WWWUSER}:${WWWGROUP} ${TWIKIDIR}
 
 		chmod 755 ${TWIKIDIR}/bin/*
 		chmod 664 `find ${TWIKIDIR}/data -type f`
