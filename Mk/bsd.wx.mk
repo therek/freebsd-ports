@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.wx.mk,v 1.5 2006/12/31 04:34:27 alepulver Exp $
+# $FreeBSD: ports/Mk/bsd.wx.mk,v 1.6 2006/12/31 14:27:31 pav Exp $
 #
 # bsd.wx.mk - Support for WxWidgets based ports.
 #
@@ -307,7 +307,7 @@ HAVE_WX:=				${_HAVE_WX}
 # Used for autodetection of installed versions.
 
 .if defined(_WX_Need_Version)
-_WX_VER_INSTALLED:=		${_HAVE_WX}
+_WX_VER_INSTALLED:=		${_HAVE_WX:Mwx-*:S/wx-//}
 .endif
 
 #
