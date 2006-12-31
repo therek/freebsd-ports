@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/textproc/p5-Text-Hatena/pkg-plist,v 1.1 2006/07/11 10:25:27 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Text/Hatena/.packlist
 %%SITE_PERL%%/Text/Hatena.pm
 %%SITE_PERL%%/Text/Hatena/AutoLink.pm
@@ -33,6 +33,7 @@
 %%SITE_PERL%%/Text/Hatena/DlNode.pm
 %%SITE_PERL%%/Text/Hatena/FootnoteNode.pm
 %%SITE_PERL%%/Text/Hatena/H3Node.pm
+%%SITE_PERL%%/Text/Hatena/H3anchorNode.pm
 %%SITE_PERL%%/Text/Hatena/H4Node.pm
 %%SITE_PERL%%/Text/Hatena/H5Node.pm
 %%SITE_PERL%%/Text/Hatena/HTMLFilter.pm
