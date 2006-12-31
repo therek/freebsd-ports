@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.6 2006/12/05 22:51:11 philip Exp $
+# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.7 2006/12/31 04:44:25 alepulver Exp $
 #
 # bsd.lua.mk - Support for Lua based ports.
 #
@@ -257,7 +257,7 @@ HAVE_LUA:=				${_HAVE_LUA}
 # Used for autodetection of installed versions.
 
 .if defined(_WX_Need_Version)
-_LUA_VER_INSTALLED:=	${_HAVE_LUA}
+_LUA_VER_INSTALLED:=	${_HAVE_LUA:Mlua-*:S/lua-//}
 .endif
 
 #
