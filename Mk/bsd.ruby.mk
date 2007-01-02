@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.155 2007/01/02 16:23:41 stas Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.156 2007/01/02 19:43:02 stas Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -181,7 +181,7 @@ RUBY_RELVERSION=	1.8.5
 RUBY_PATCHLEVEL=	12
 RUBY_VERSION?=		${RUBY_RELVERSION}.${RUBY_PATCHLEVEL}
 RUBY_DISTVERSION?=	${RUBY_RELVERSION}-p${RUBY_PATCHLEVEL}
-RUBY_PORTREVISION=	0
+RUBY_PORTREVISION=	1
 #RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-yyyy.mm.dd.diff.bz2
 
 # Security patch
