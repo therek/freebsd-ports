@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/bounce/files/bounce.in,v 1.1 2006/11/10 00:44:59 clsung Exp $
 #
 #
 # PROVIDE: bounce
@@ -23,7 +23,7 @@ load_rc_config $name
 
 : ${bounce_enable="NO"}
 
-command="/usr/local/sbin/${name}"
+command="%%PREFIX%%/sbin/${name}"
 start_cmd="bounce_startcmd"
 
 bounce_startcmd()
