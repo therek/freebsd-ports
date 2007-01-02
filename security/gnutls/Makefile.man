@@ -1,5 +1,5 @@
 # vi:ft=make
-# $FreeBSD: ports/security/gnutls/Makefile.man,v 1.1 2006/01/09 16:33:15 novel Exp $
+# $FreeBSD: ports/security/gnutls/Makefile.man,v 1.2 2006/07/06 17:40:10 novel Exp $
 
 INFO=	gnutls
 
@@ -285,6 +285,8 @@ MAN3=	\
 	gnutls_strerror.3 \
 	gnutls_transport_get_ptr.3 \
 	gnutls_transport_get_ptr2.3 \
+	gnutls_transport_set_errno.3 \
+	gnutls_transport_set_global_errno.3 \
 	gnutls_transport_set_lowat.3 \
 	gnutls_transport_set_ptr.3 \
 	gnutls_transport_set_ptr2.3 \
