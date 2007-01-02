@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.39 2006/12/18 16:07:46 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.40 2006/12/31 13:42:50 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -184,14 +184,14 @@ GNUSTEP_SYSTEM_BUNDLES=		${GNUSTEP_SYSTEM_ROOT}/Library/Bundles
 GNUSTEP_SYSTEM_LIBRARIES=	${GNUSTEP_SYSTEM_ROOT}/Library/Libraries
 GNUSTEP_SYSTEM_APPS=		${GNUSTEP_SYSTEM_ROOT}/Applications
 GNUSTEP_SYSTEM_TOOLS=		${GNUSTEP_SYSTEM_ROOT}/Tools
-GNUSTEP_SYSTEM_SERVICES=	${GNUSTEP_SYSTEM_ROOT}/Services
+GNUSTEP_SYSTEM_SERVICES=	${GNUSTEP_SYSTEM_ROOT}/Library/Services
 
 GNUSTEP_LOCAL_ROOT=	${GNUSTEP_PREFIX}/Local
 GNUSTEP_LOCAL_BUNDLES=		${GNUSTEP_LOCAL_ROOT}/Library/Bundles
 GNUSTEP_LOCAL_LIBRARIES=	${GNUSTEP_LOCAL_ROOT}/Library/Libraries
 GNUSTEP_LOCAL_APPS=		${GNUSTEP_LOCAL_ROOT}/Applications
 GNUSTEP_LOCAL_TOOLS=		${GNUSTEP_LOCAL_ROOT}/Tools
-GNUSTEP_LOCAL_SERVICES=		${GNUSTEP_LOCAL_ROOT}/Services
+GNUSTEP_LOCAL_SERVICES=		${GNUSTEP_LOCAL_ROOT}/Library/Services
 
 # Obsolete, for compatibility only
 SYSTEMDIR=	${GNUSTEP_SYSTEM_ROOT}
