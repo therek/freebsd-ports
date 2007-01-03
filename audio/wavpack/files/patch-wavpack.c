@@ -1,8 +1,8 @@
 
-$FreeBSD$
+$FreeBSD: ports/audio/wavpack/files/patch-wavpack.c,v 1.1 2006/04/17 11:06:55 vs Exp $
 
---- wavpack.c.orig
-+++ wavpack.c
+--- cli/wavpack.c.orig
++++ cli/wavpack.c
 @@ -1604,6 +1604,7 @@
      MultiByteToWideChar (CP_ACP, 0, string, -1, temp, max_chars + 1);
      WideCharToUTF8 (temp, (uchar *) string, len);
