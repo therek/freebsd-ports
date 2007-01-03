@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.42 2006/12/22 23:31:33 ahze Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.43 2006/12/23 18:44:10 ahze Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.63 2006/09/29 23:22:28 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -337,7 +337,7 @@ gst_xvid_LIB_DEPENDS+=	xvidcore.4:${PORTSDIR}/multimedia/xvid
 gst_xvid_DIST=	bad
 
 # wavpack
-gst_wavpack_LIB_DEPENDS+=	wavpack.0:${PORTSDIR}/audio/wavpack
+gst_wavpack_LIB_DEPENDS+=	wavpack.1:${PORTSDIR}/audio/wavpack
 gst_wavpack_DIST=	bad
 
 .endif # NO_GSTREAMER_COMMON
