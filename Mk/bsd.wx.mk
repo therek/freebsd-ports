@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.wx.mk,v 1.8 2007/01/01 01:04:07 alepulver Exp $
+# $FreeBSD: ports/Mk/bsd.wx.mk,v 1.9 2007/01/01 16:39:29 alepulver Exp $
 #
 # bsd.wx.mk - Support for wxWidgets based ports.
 #
@@ -261,6 +261,7 @@ _WX_PYSUFX=				-ansi
 
 # Fill _HAVE_WX with the installed components.
 
+.	undef _HAVE_WX
 .	for __WANT_WX in ${_WANT_WX}
 # Check if _WANT_WX contains more than one word.
 .		if defined(_HAVE_WX)
