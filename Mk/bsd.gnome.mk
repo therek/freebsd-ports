@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.136 2006/10/31 09:11:23 jylefort Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.137 2006/12/10 19:34:42 marcus Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.401 2006/08/05 05:25:55 marcus Exp $
 #
@@ -66,8 +66,9 @@ _USE_GNOME_ALL+= atk atspi desktopfileutils eel2 evolutiondataserver \
 		libxml2 libxslt libzvt linc metacity nautilus2 nautiluscdburner \
 		orbit2 pango pygnome2 pygnomeextras pygtk2 vte pygnomedesktop
 
+GNOME_MAKEFILEIN?=	Makefile.in
 SCROLLKEEPER_DIR=	/var/db/scrollkeeper
-gnomehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "Makefile.in*" -type f | ${XARGS} ${REINPLACE_CMD} -e \
+gnomehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "${GNOME_MAKEFILEIN}*" -type f | ${XARGS} ${REINPLACE_CMD} -e \
 				's|[(]GNOME_datadir[)]/gnome/|(datadir)/|g ; \
 				 s|[(]GNOME_datadir[)]/locale|(prefix)/share/locale|g ; \
 				 s|[(]datadir[)]/locale|(prefix)/share/locale|g ; \
@@ -114,7 +115,8 @@ gnomeprefix_CONFIGURE_ARGS=--localstatedir=${DESTDIR}${GNOME_LOCALSTATEDIR} \
 			   --with-html-dir=${DESTDIR}${GNOME_HTML_DIR} \
 			   --with-help-dir=${TARGETDIR}/share/gnome/help \
 			   --disable-gtk-doc \
-			   --with-gconf-source=${GCONF_CONFIG_SOURCE}
+			   --with-gconf-source=${GCONF_CONFIG_SOURCE} \
+			   --mandir=${PREFIX}/man
 gnomeprefix_USE_GNOME_IMPL=gnomehier
 .if !defined(WITHOUT_HACK)
 gnomeprefix_PREFIX=${LOCALBASE}
