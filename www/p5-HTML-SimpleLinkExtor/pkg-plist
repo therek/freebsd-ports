@@ -1,4 +1,5 @@
-@comment $FreeBSD: ports/www/p5-HTML-SimpleLinkExtor/pkg-plist,v 1.3 2005/03/14 13:53:30 mat Exp $
+@comment $FreeBSD: ports/www/p5-HTML-SimpleLinkExtor/pkg-plist,v 1.4 2006/01/22 02:57:57 edwin Exp $
+bin/linktractor
 %%SITE_PERL%%/HTML/SimpleLinkExtor.pm
 %%SITE_PERL%%/auto/HTML/SimpleLinkExtor/autosplit.ix
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTML/SimpleLinkExtor/.packlist
