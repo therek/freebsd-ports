@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1241 2007/01/05 17:55:16 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1242 2007/01/05 18:03:13 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2663,3 +2663,8 @@ www/rt3-elixus||2007-01-05|Has expired: Broken due the new mod_perl2 API
 comms/vpb-driver||2007-01-05|Has expired: leaves files behind on deinstall
 irc/xchat-ecl-plugin||2007-01-05|Has expired: Does not build
 french/gnome-verbiste||2007-01-05|Has expired: does not install
+devel/kasm||2007-01-05|Has expired: Buggy and unmaintained, use devel/hptools instead
+devel/py-getargs||2007-01-05|Has expired: distfile and homepage disappeared
+devel/pyumlgraph||2007-01-05|Has expired: distfile and homepage disappeared
+editors/beaver||2007-01-05|Has expired: distfile disappeared from homepage
+editors/dte||2007-01-05|Has expired: distfile and homepage disappeared
