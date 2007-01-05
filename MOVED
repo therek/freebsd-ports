@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1244 2007/01/05 18:42:49 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1245 2007/01/05 19:02:58 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2678,3 +2678,8 @@ net/mrt||2007-01-05|Has expired: distfile and homepage disappeared
 net/tund||2007-01-05|Has expired: distfile disappeared and has no homepage
 net/xbms||2007-01-05|Has expired: distfile and homepage disappeared
 print/bibcard||2007-01-05|Has expired: distfile and homepage disappeared
+misc/afbackup||2007-01-05|Has expired: Uses unregistered uid that conflicts with other ports
+misc/afbackup-client||2007-01-05|Has expired: Uses unregistered uid that conflicts with other ports
+misc/afbackup-server||2007-01-05|Has expired: Uses unregistered uid that conflicts with other ports
+lang/forth||2007-01-05|Has expired: obsoleted by lang/pfe; use of this port is pretty much senseless
+ftp/jmirror||2007-01-05|Has expired: distfile disappeared and has no homepage
