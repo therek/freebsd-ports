@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.8 2006/12/31 17:51:22 alepulver Exp $
+# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.9 2007/01/01 01:10:42 alepulver Exp $
 #
 # bsd.lua.mk - Support for Lua based ports.
 #
@@ -219,6 +219,7 @@ _WANT_LUA=				yes
 .endif
 
 .if defined(_WANT_LUA)
+.	undef _HAVE_LUA
 .	for __WANT_LUA in ${_WANT_LUA}
 # Check if _WANT_LUA contains more than one word.
 .		if defined(_HAVE_LUA)
