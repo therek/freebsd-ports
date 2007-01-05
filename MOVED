@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1245 2007/01/05 19:02:58 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1246 2007/01/05 19:28:33 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2683,3 +2683,8 @@ misc/afbackup-client||2007-01-05|Has expired: Uses unregistered uid that conflic
 misc/afbackup-server||2007-01-05|Has expired: Uses unregistered uid that conflicts with other ports
 lang/forth||2007-01-05|Has expired: obsoleted by lang/pfe; use of this port is pretty much senseless
 ftp/jmirror||2007-01-05|Has expired: distfile disappeared and has no homepage
+devel/libformat||2007-01-05|Has expired: distfile and homepage disappeared
+editors/ooodict-all||2007-01-05|Has expired: Size mismatch
+mail/distribute||2007-01-05|Has expired: Does not install
+net-im/gaim-rss-reader||2007-01-05|Has expired: Requires update to work with Gaim 0.82.1
+sysutils/slay||2007-01-05|Has expired: Author doesn't see it as needed anymore
