@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/p5-Imager/pkg-plist,v 1.8 2006/03/30 14:52:27 tobez Exp $
+@comment $FreeBSD: ports/graphics/p5-Imager/pkg-plist,v 1.9 2006/07/25 09:59:08 lbr Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/API.pod
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/APIRef.pod
@@ -34,6 +34,7 @@
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/Inline.pod
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/Matrix2d.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/Regops.pm
+%%SITE_PERL%%/%%PERL_ARCH%%/Imager/Test.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/Transform.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/Transformations.pod
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/Tutorial.pod

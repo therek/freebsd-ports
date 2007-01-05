@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/p5-Imager/Makefile.man,v 1.1 2006/03/30 15:20:32 tobez Exp $
+# $FreeBSD: ports/graphics/p5-Imager/Makefile.man,v 1.2 2006/07/25 09:59:08 lbr Exp $
 MAN3+=	Imager.3
 MAN3+=	Imager::API.3
 MAN3+=	Imager::APIRef.3
@@ -31,6 +31,7 @@ MAN3+=	Imager::ImageTypes.3
 MAN3+=	Imager::Inline.3
 MAN3+=	Imager::Matrix2d.3
 MAN3+=	Imager::Regops.3
+MAN3+=	Imager::Test.3
 MAN3+=	Imager::Transform.3
 MAN3+=	Imager::Transformations.3
 MAN3+=	Imager::Tutorial.3
