@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1237 2007/01/05 16:34:26 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1238 2007/01/05 16:54:25 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2654,3 +2654,6 @@ print/ec-fonts-mftraced||2007-01-05|Has expired: Installs files before 'make ins
 print/yatex-xemacs-mule||2007-01-05|Has expired: hangs during build
 security/gnu-crypto||2007-01-05|Has expired: Does not compile
 www/linux-beonex||2007-01-05|Has expired: Security issues. From http://www.beonex.com/ 'The currently available Beonex Communicator 0.8 builds have several known security bugs'
+misc/instant-workstation||2007-01-05|Has expired: Incomplete pkg-plist
+lang/yap||2007-01-05|Has expired: Does not compile
+lang/tensile||2007-01-05|Has expired: "Coredump during build on FreeBSD >= 6.x"
