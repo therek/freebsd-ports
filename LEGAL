@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.514 2006/12/13 16:22:32 olgeni Exp $
+# $FreeBSD: ports/LEGAL,v 1.515 2006/12/22 09:11:42 miwi Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -437,7 +437,6 @@ netbeans4-*		java/netbeans4		Restrictive copyright
 NetComponents-*		java/netcomponents	No redistribution except as part
 						of a substantially different product
 netshow_linux.gz	multimedia/netshow	Commercial software
-nfbtr*			textproc/nfbtrans	Unclear copyright status
 nntpcache-*		news/nntpcache		Commercial or government use
 						requires license
 nsc2ke.*		math/nsc2ke		No resale, contact author for
