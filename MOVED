@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1247 2007/01/05 20:06:25 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1248 2007/01/05 20:26:23 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2690,3 +2690,4 @@ net-im/gaim-rss-reader||2007-01-05|Has expired: Requires update to work with Gai
 sysutils/slay||2007-01-05|Has expired: Author doesn't see it as needed anymore
 www/emp||2007-01-05|Has expired: project is shutting down
 textproc/nfbtrans||2007-01-05|Has expired: Unfetchable
+comms/ecu||2007-01-05|Has expired: is unfetchable and project homepage disappeared
