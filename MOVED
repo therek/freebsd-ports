@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1236 2007/01/05 16:15:22 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1237 2007/01/05 16:34:26 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2649,3 +2649,8 @@ misc/gnomesword||2007-01-05|Has expired: Configure fails
 graphics/opendx-samples||2007-01-05|Has expired: Changes permissions on installed file usr/local/dx/java/server/nets
 graphics/panorama||2007-01-05|Has expired: segfaults on startup (GUI only, render binary still works)
 graphics/qtutils||2007-01-05|Has expired: Does not build
+net-p2p/gnome-btdownload||2007-01-05|Has expired: does not run with BitTorrent 4.x yet
+print/ec-fonts-mftraced||2007-01-05|Has expired: Installs files before 'make install'
+print/yatex-xemacs-mule||2007-01-05|Has expired: hangs during build
+security/gnu-crypto||2007-01-05|Has expired: Does not compile
+www/linux-beonex||2007-01-05|Has expired: Security issues. From http://www.beonex.com/ 'The currently available Beonex Communicator 0.8 builds have several known security bugs'
