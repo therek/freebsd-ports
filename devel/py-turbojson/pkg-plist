@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/py-turbojson/pkg-plist,v 1.1 2007/01/07 10:13:56 nivit Exp $
 %%PYTHON_SITELIBDIR%%/%%PYTURBOJSON_EGG%%/EGG-INFO/PKG-INFO
 %%PYTHON_SITELIBDIR%%/%%PYTURBOJSON_EGG%%/EGG-INFO/SOURCES.txt
 %%PYTHON_SITELIBDIR%%/%%PYTURBOJSON_EGG%%/EGG-INFO/dependency_links.txt
