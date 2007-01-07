@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/py-turbokid/pkg-plist,v 1.1 2007/01/07 10:19:37 nivit Exp $
 %%PYTHON_SITELIBDIR%%/%%PYTURBOKID_EGG%%/EGG-INFO/PKG-INFO
 %%PYTHON_SITELIBDIR%%/%%PYTURBOKID_EGG%%/EGG-INFO/SOURCES.txt
 %%PYTHON_SITELIBDIR%%/%%PYTURBOKID_EGG%%/EGG-INFO/entry_points.txt
