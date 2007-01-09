@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/drupal/bsd.drupal.mk,v 1.1 2006/02/22 00:40:20 brooks Exp $
+# $FreeBSD: ports/www/drupal/bsd.drupal.mk,v 1.2 2007/01/05 21:32:19 brooks Exp $
 #
 
 DRUPAL_BASE?=	www/drupal
@@ -55,19 +55,19 @@ PLIST_DIRS+=	%%DOCSDIR%%
 do-install:
 .if defined(MODULE_CONF_DIRS)
 	@${MKDIR} ${MODULE_CONF_DIRS:C|^|${PREFIX}/${DRUPAL_MODDIR}/|}
-	${CHOWN} ${WWWOWN}:${WWWGRP} ${MODULE_CONF_DIRS:C|^|${PREFIX}/${DRUPAL_MODDIR}/|}
+	@${CHOWN} ${WWWOWN}:${WWWGRP} ${MODULE_CONF_DIRS:C|^|${PREFIX}/${DRUPAL_MODDIR}/|}
 .endif
 .if defined(MODULE_DIRS)
 	@${MKDIR} ${MODULE_DIRS:C|^|${PREFIX}/${DRUPAL_MODDIR}/|}
-	${CHOWN} ${WWWOWN}:${WWWGRP} ${MODULE_DIRS:C|^|${PREFIX}/${DRUPAL_MODDIR}/|}
+	@${CHOWN} ${WWWOWN}:${WWWGRP} ${MODULE_DIRS:C|^|${PREFIX}/${DRUPAL_MODDIR}/|}
 .endif
 .for f in ${MODULE_FILES}
 	@${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/${DRUPAL_MODDIR}/${f}
-	${CHOWN} ${WWWOWN}:${WWWGRP} ${PREFIX}/${DRUPAL_MODDIR}/${f}
+	@${CHOWN} ${WWWOWN}:${WWWGRP} ${PREFIX}/${DRUPAL_MODDIR}/${f}
 .endfor
 .for f in ${MODULE_CONF_FILES}
 	@${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/${DRUPAL_MODDIR}/${f}-dist
-	${CHOWN} ${WWWOWN}:${WWWGRP} ${PREFIX}/${DRUPAL_MODDIR}/${f}-dist
+	@${CHOWN} ${WWWOWN}:${WWWGRP} ${PREFIX}/${DRUPAL_MODDIR}/${f}-dist
 .endfor
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${DOCSDIR} ${DOC_DIRS:C|^|${DOCSDIR}/|}
