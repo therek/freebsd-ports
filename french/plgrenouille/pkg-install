@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/french/plgrenouille/pkg-install,v 1.1 2002/11/13 17:30:05 naddy Exp $
+# $FreeBSD: ports/french/plgrenouille/pkg-install,v 1.2 2003/06/12 11:57:32 naddy Exp $
 #
 # Configure plgrenouille.
 #
@@ -23,11 +23,6 @@ POST-INSTALL)
 	[ -n "${BATCH}" ] && exit 0
 	[ -f ${PKG_PREFIX}/etc/rc.d/plgrenouille.sh ] &&
 	sh ${PKG_PREFIX}/etc/rc.d/plgrenouille.sh configure
-	;;
-DEINSTALL)
-	if [ -f ${PKG_PREFIX}/etc/rc.d/plgrenouille.sh ]; then
-		sh ${PKG_PREFIX}/etc/rc.d/plgrenouille.sh stop
-	fi
 	;;
 POST-DEINSTALL)
 	if [ -d ${SPOOL_DIR} ]; then
