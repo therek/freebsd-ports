@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.19 2006/11/05 10:49:17 clement Exp $
+# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.20 2007/01/13 12:13:11 clement Exp $
 #
 
 # MPM section:
@@ -109,16 +109,22 @@ CFLAGS+=	-I${LOCALBASE}/include/mysql -DHAVE_MYSQL_H
 LDFLAGS+=	-L${LOCALBASE}/lib/mysql
 CONFIGURE_ENV+=	LIBS="${LIBS}"
 WITH_THREADS=	YES
+.else
+CONFIGURE_ARGS+= --without-mysql
 .endif
 
 .if defined(WITH_PGSQL)
 USE_PGSQL=	YES
 CONFIGURE_ARGS+= --with-pgsql=${LOCALBASE}
+.else
+CONFIGURE_ARGS+= --without-pgsql
 .endif
 
 .if defined(WITH_SQLITE)
 USE_SQLITE=	YES
 CONFIGURE_ARGS+= --with-sqlite3=${LOCALBASE}
+.else
+CONFIGURE_ARGS+= --without-sqlite3
 .endif
 
 .if !defined(WITHOUT_SSL)
