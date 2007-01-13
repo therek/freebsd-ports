@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1251 2007/01/08 12:21:58 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1252 2007/01/12 12:06:07 itetcu Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2696,3 +2696,4 @@ multimedia/mtv||2007-01-05|Has expired: No new releases in the past 5 years
 mail/py-email2||2007-01-08|Has expired: Only usable python versions schedualed to expire
 net/ruby-radius||2007-01-08|Has expired: distfile disappeared from homepage
 devel/versuch|net/versuch|2007-01-12|Removed duplicate port
+german/tvbrowser|misc/tvbrowser|2007-01-13|move to misc/tvbrowser
