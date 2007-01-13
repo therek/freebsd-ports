@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache22/files/apache.sh,v 1.14 2006/02/20 20:47:47 dougb Exp $
+# $FreeBSD: ports/www/apache22/files/apache22.sh.in,v 1.1 2006/09/24 16:16:40 clement Exp $
 #
 
 # PROVIDE: apache22
-# REQUIRE: NETWORKING SERVERS
-# BEFORE: DAEMON
+# REQUIRE: LOGIN cleanvar
 # KEYWORD: shutdown
 
 #
