@@ -1,11 +1,10 @@
-@comment $FreeBSD: ports/games/nethack34/pkg-plist,v 1.14 2003/06/05 20:06:30 naddy Exp $
+@comment $FreeBSD: ports/games/nethack34/pkg-plist,v 1.15 2006/01/22 02:11:07 edwin Exp $
 bin/%%HACKNAME%%
 %%HACKDIR%%/%%HACKNAME%%
 @exec mkdir %D/%%HACKDIR%%/save
 @exec chmod -R 775 %D/%%HACKDIR%%
 @exec chmod 2755 %D/%%HACKDIR%%/%%HACKNAME%%
 @exec chown games:games %D/%%HACKDIR%%/save
-@dirrmtry %%HACKDIR%%/save
 %%HACKDIR%%/Arc-fila.lev
 %%HACKDIR%%/Arc-filb.lev
 %%HACKDIR%%/Arc-goal.lev
@@ -144,6 +143,7 @@ bin/%%HACKNAME%%
 @exec touch %D/%%HACKDIR%%/logfile && chmod 664 %D/%%HACKDIR%%/logfile
 @unexec [ -s %D/%%HACKDIR%%/record ] || rm -f %D/%%HACKDIR%%/record
 @exec touch %D/%%HACKDIR%%/record && chmod 664 %D/%%HACKDIR%%/record
-@dirrm %%HACKDIR%%
+@unexec rmdir %D/%%HACKDIR%%/save >/dev/null 2>&1 || echo 'Nethack directory (%D/%%HACKDIR%%/) not removed due to existing save games. If you are permanently removing this port, you should do a ``rm -rf %D/%%HACKDIR%%``.' | fmt
+@dirrmtry %%HACKDIR%%
 %%PORTDOCS%%%%HACKDOCSDIR%%/Guidebook.txt
 %%PORTDOCS%%@dirrm %%HACKDOCSDIR%%
