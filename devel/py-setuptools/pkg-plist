@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/py-setuptools/pkg-plist,v 1.6 2006/09/23 23:06:40 acm Exp $
+@comment $FreeBSD: ports/devel/py-setuptools/pkg-plist,v 1.7 2006/11/07 14:48:36 acm Exp $
 bin/easy_install
 bin/easy_install-%%PYVER%%
 %%PYTHON_SITELIBDIR%%/easy-install.pth
@@ -115,7 +115,6 @@ bin/easy_install-%%PYVER%%
 %%PORTDOCS%%%%DOCSDIR%%/api_tests.txt
 %%PORTDOCS%%%%DOCSDIR%%/pkg_resources.txt
 %%PORTDOCS%%%%DOCSDIR%%/setuptools.txt
-%%PYTHON_OLD%%@dirrm %%PYTHON_SITELIBDIR%%/setuptools-%%VERSION%%-py%%PYVER%%.egg/EGG-INFO/scripts
 %%PYTHON_OLD%%@dirrm %%PYTHON_SITELIBDIR%%/setuptools-%%VERSION%%-py%%PYVER%%.egg/EGG-INFO
 %%PYTHON_OLD%%@dirrm %%PYTHON_SITELIBDIR%%/setuptools-%%VERSION%%-py%%PYVER%%.egg/setuptools/command
 %%PYTHON_OLD%%@dirrm %%PYTHON_SITELIBDIR%%/setuptools-%%VERSION%%-py%%PYVER%%.egg/setuptools/tests
