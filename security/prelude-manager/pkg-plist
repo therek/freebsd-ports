@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/prelude-manager/pkg-plist,v 1.9 2006/06/16 16:28:28 pav Exp $
+@comment $FreeBSD: ports/security/prelude-manager/pkg-plist,v 1.10 2006/12/21 19:14:23 miwi Exp $
 bin/prelude-manager
 @unexec if cmp -s %D/etc/prelude-manager/prelude-manager.conf %D/etc/prelude-manager/prelude-manager.conf-dist; then rm -f %D/etc/prelude-manager/prelude-manager.conf; fi
 etc/prelude-manager/prelude-manager.conf-dist
@@ -8,8 +8,8 @@ lib/prelude-manager/filters/idmef-criteria.la
 lib/prelude-manager/filters/idmef-criteria.so
 lib/prelude-manager/decodes/normalize.so
 lib/prelude-manager/decodes/normalize.la
-%%WITH_DB%%lib/prelude-manager/reports/db.la
-%%WITH_DB%%lib/prelude-manager/reports/db.so
+%%WITH_PRELUDEDB%%lib/prelude-manager/reports/db.la
+%%WITH_PRELUDEDB%%lib/prelude-manager/reports/db.so
 lib/prelude-manager/reports/debug.la
 lib/prelude-manager/reports/debug.so
 lib/prelude-manager/reports/relaying.la
