@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.21 2006/12/28 04:23:45 shaun Exp $
+$FreeBSD: ports/GIDs,v 1.22 2007/01/14 03:55:39 grog Exp $
 # Please keep this file sorted by GID!
 bind:*:53:
 rdfdb:*:55:
@@ -64,6 +64,7 @@ cups:*:193:
 sympa:*:200:
 dspam:*:202:
 bs:*:220:
+fcron:*:247:
 _tor:*:256:
 _dns-proxy-tor:*:257:
 _trans-proxy-tor:*:258:
