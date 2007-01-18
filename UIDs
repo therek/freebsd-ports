@@ -1,4 +1,4 @@
-$FreeBSD: ports/UIDs,v 1.26 2007/01/14 03:55:40 grog Exp $
+$FreeBSD: ports/UIDs,v 1.27 2007/01/17 07:29:32 rafan Exp $
 # Please keep this file sorted by UID!
 bind:*:53:53:Bind Sandbox:/:/sbin/nologin
 majordom:*:54:54:Majordomo Pseudo User:/usr/local/majordomo:/nonexistent
@@ -58,6 +58,7 @@ hplip:*:116:116:HPLIP Server:/nonexistent:/sbin/nologin
 smokeping:*:117:117:SmokePing Daemon:/nonexistent:/sbin/nologin
 ircproxyd:*:118:118:Night Light IRC Proxy:/nonexistent:/sbin/nologin
 mythtv:*:119:119:MythTV pseudo-user:/home/mythtv:/bin/sh
+pdns_recursor:*:120:120:pdns_recursor pseudo-user:/nonexistent:/sbin/nologin
 fetchmail:*:124:124:Fetchmail mail-retrieval daemon:/nonexistent:/sbin/nologin
 postfix:*:125:125:Postfix Mail System:/var/spool/postfix:/sbin/nologin
 vchat:*:128:128:VChat Conferencing System:/nonexistent:/sbin/nologin
