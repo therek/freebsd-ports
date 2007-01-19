@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/chinese/vflib/pkg-plist,v 1.2 2006/08/15 15:08:39 miwi Exp $
 %%DATADIR%%/%%VFLIB_VERSION%%/COPYING
 %%DATADIR%%/%%VFLIB_VERSION%%/COPYING.LIB
 %%DATADIR%%/%%VFLIB_VERSION%%/QA-english.tex
@@ -7,7 +7,6 @@
 %%DATADIR%%/%%VFLIB_VERSION%%/man.dvi
 %%DATADIR%%/%%VFLIB_VERSION%%/man.ps
 %%DATADIR%%/%%VFLIB_VERSION%%/vfontcap
-%%DATADIR%%/%%VFLIB_VERSION%%/vfontcap.ORG
 %%DATADIR%%/%%VFLIB_VERSION%%/vfontcap.bdf
 %%DATADIR%%/%%VFLIB_VERSION%%/vfontcap.comp2
 %%DATADIR%%/%%VFLIB_VERSION%%/vfontcap.mgp
