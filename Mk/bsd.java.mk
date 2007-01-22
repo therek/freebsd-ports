@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.72 2006/09/14 19:54:46 glewis Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.73 2006/10/07 20:40:07 hq Exp $
 #
 
 .if !defined(Java_Include)
@@ -203,6 +203,8 @@ _JAVA_PORT_LINUX_SUN_JDK_1_3_INFO=			PORT=java/linux-sun-jdk13		HOME=${LOCALBASE
 											VERSION=1.3.1	OS=linux	VENDOR=sun
 _JAVA_PORT_LINUX_SUN_JDK_1_4_INFO=			PORT=java/linux-sun-jdk14		HOME=${LOCALBASE}/linux-sun-jdk1.4.2 \
 											VERSION=1.4.2	OS=linux	VENDOR=sun
+_JAVA_PORT_LINUX_SUN_JDK_1_5_INFO=			PORT=java/linux-sun-jdk15		HOME=${LOCALBASE}/linux-sun-jdk1.5.0 \
+											VERSION=1.5.0	OS=linux	VENDOR=sun
 
 # Verbose description for each VENDOR
 _JAVA_VENDOR_freebsd=		"FreeBSD Foundation"
@@ -230,7 +232,8 @@ __JAVA_PORTS_ALL=	JAVA_PORT_NATIVE_FREEBSD_JDK_1_5 \
 					JAVA_PORT_NATIVE_BSDJAVA_JDK_1_3 \
 					JAVA_PORT_NATIVE_BSDJAVA_JDK_1_2 \
 					JAVA_PORT_NATIVE_BSDJAVA_JDK_1_1 \
-					JAVA_PORT_LINUX_SUN_JDK_1_4	\
+					JAVA_PORT_LINUX_SUN_JDK_1_5 \
+					JAVA_PORT_LINUX_SUN_JDK_1_4 \
 					JAVA_PORT_LINUX_SUN_JDK_1_3 \
 					JAVA_PORT_LINUX_SUN_JDK_1_2 \
 					JAVA_PORT_LINUX_BLACKDOWN_JDK_1_4 \
