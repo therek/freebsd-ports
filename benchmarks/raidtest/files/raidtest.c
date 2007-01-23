@@ -25,7 +25,7 @@
  */
 
 #include <sys/cdefs.h>
-__FBSDID("$FreeBSD: ports/benchmarks/raidtest/files/raidtest.c,v 1.2 2004/12/08 19:40:33 pjd Exp $");
+__FBSDID("$FreeBSD: ports/benchmarks/raidtest/files/raidtest.c,v 1.3 2004/12/29 01:57:28 obrien Exp $");
 
 #include <sys/param.h>
 #include <sys/types.h>
@@ -254,11 +254,11 @@ test_start(int fd, struct ioreq *iorqs, uintmax_t nreqs)
 }
 
 static void
-show_stats(long secs, uintmax_t nbytes, uintmax_t nreqs)
+show_stats(double secs, uintmax_t nbytes, uintmax_t nreqs)
 {
 
-	printf("Bytes per second: %ju\n", nbytes / secs);
-	printf("Requests per second: %ju\n", nreqs / secs);
+	printf("Bytes per second: %ju\n", (uintmax_t)(nbytes / secs));
+	printf("Requests per second: %ju\n", (uintmax_t)(nreqs / secs));
 }
 
 static void
@@ -266,7 +266,7 @@ raidtest_test(int argc, char *argv[])
 {
 	uintmax_t i, nbytes, nreqs, nrreqs, nwreqs, reqs_per_proc, nstart;
 	const char *dev, *file = NULL;
-	struct timeval tstart, tend;
+	struct timeval tstart, tend, tdiff;
 	struct ioreq *iorqs;
 	unsigned nprocs;
 	struct stat sb;
@@ -404,7 +404,9 @@ raidtest_test(int argc, char *argv[])
 		wait(&status);
 	}
 	gettimeofday(&tend, NULL);
-	show_stats(tend.tv_sec - tstart.tv_sec, nbytes, nreqs);
+	timersub(&tend, &tstart, &tdiff);
+	show_stats(tdiff.tv_sec + (double)tdiff.tv_usec / 1000000,
+		   nbytes, nreqs);
 }
 
 int
