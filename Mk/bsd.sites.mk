@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.407 2007/01/03 16:39:19 hrs Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.408 2007/01/16 09:03:14 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1259,6 +1259,15 @@ MASTER_SITE_XEMACS+= \
 	ftp://xemacs.xmundo.net/pub/mirrors/xemacs/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/unix/editor/xemacs/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,text/xemacs/&,}
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_XFCE)
+MASTER_SITES_XFCE+= \
+	http://mocha.xfce.org/archive/%SUBDIR%/src/ \
+	http://www.us.xfce.org/archive/%SUBDIR%/src/ \
+	http://www.de.xfce.org/archive/%SUBDIR%/src/ \
+	http://www.ca-us.xfce.org/archive/%SUBDIR%/src/ \
+	http://www.p0llux.be/xfce/%SUBDIR%/src/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_XFREE)
