@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.30 2006/12/22 23:35:43 ahze Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.31 2006/12/23 18:44:09 ahze Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.38 2006/10/10 20:22:01 mezz Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -73,7 +73,7 @@ _USE_GSTREAMER80_ALL=	a52dec aalib artsd audiofile cairo cdaudio cdio cdparanoia
 			libpng libvisual mad mikmod mpeg2dec mpeg2enc mplex \
 			musepack musicbrainz nas sdl shout shout2 sidplay \
 			smoothwave sndfile speex theora ogg pango polyp \
-			python swfdec vorbis wavpack x264 xvid
+			python swfdec vorbis x264 xvid
 # other plugins
 OTHER_GSTREAMER_PLUGINS+=	core yes
 OTHER_GSTREAMER80_PLUGINS+=	${OTHER_GSTREAMER_PLUGINS}
