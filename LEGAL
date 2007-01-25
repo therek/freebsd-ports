@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.517 2007/01/05 21:08:53 miwi Exp $
+# $FreeBSD: ports/LEGAL,v 1.518 2007/01/21 00:50:37 kris Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -148,7 +148,6 @@ diablo-caffe-freebsd*-*-* java/diablo-jdk15	License does not allow distribution
 						with fee
 diablo-latte-freebsd*-*-* java/diablo-jre15	License does not allow distribution
 						with fee
-dist10.tar.gz		audio/mp3encode		Condition is not clear
 divx4linux-*.tgz	multimedia/linux-divx4linux4 Unsure of licensing issues
 divx4linux-*.tar.gz	multimedia/linux-divx4linux Unsure of licensing issues
 djbdns*			dns/djbdns		No license -- see
