@@ -6,6 +6,18 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070127:
+  AFFECTS: users of mail/dovecot
+  AUTHOR: robin@isometry.net
+
+  Since dovecot-1.0.r15, the port has reserved UID/GID 143.
+  If you are upgrading from an earlier version, please allow the uninstall
+  script to remove the dovecot user and group or remove them manually prior
+  to reinstalling the new version.
+  If your prefer to maintain your existing user/group, you may override this
+  change with the DOVECOT_UID/DOVECOT_GID environment variables at
+  installation time.
+
 20070115:
   AFFECTS: users of www/lightsquid
   AUTHOR: clsung@FreeBSD.org
@@ -4639,4 +4651,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.448 2007/01/11 20:37:34 az Exp $
+$FreeBSD: ports/UPDATING,v 1.449 2007/01/15 01:22:15 clsung Exp $
