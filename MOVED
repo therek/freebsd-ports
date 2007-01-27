@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1268 2007/01/26 11:43:37 vd Exp $
+# $FreeBSD: ports/MOVED,v 1.1269 2007/01/27 00:09:59 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2737,3 +2737,5 @@ emulators/vx68k||2007-01-26|Has expired: distfile disappeared from homepage
 emulators/libvm68k||2007-01-26|Has expired: distfile disappeared from homepage
 textproc/ruby-text-format||2007-01-26|Has expired: distfile and homepage disappeared
 www/flashplugin||2007-01-27|Obsolete, broken
+lang/python21||2007-01-26|Has expired: Version branch long since retired
+lang/python22||2007-01-26|Has expired: Version branch long since retired
