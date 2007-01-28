@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/comms/atslog/files/atslogd.in,v 1.1 2006/12/27 15:14:32 miwi Exp $
+# $FreeBSD: ports/comms/atslog/files/atslogd.in,v 1.2 2007/01/11 16:33:29 miwi Exp $
 #
 # PROVIDE: atslogd
 # REQUIRE: mysql postgresql
@@ -27,6 +27,8 @@ extra_commands="reload writedb rotate alltodb cleardb"
 start_cmd="atslogd_command start"
 stop_cmd="atslogd_command stop"
 reload_cmd="atslogd_command reload"
+restart_cmd="atslogd_command restart"
+status_cmd="atslogd_command status"
 writedb_cmd="atslogd_command writedb"
 rotate_cmd="atslogd_command rotate"
 alltodb_cmd="atslogd_command alltodb"
