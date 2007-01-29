@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/irc/riece/pkg-plist,v 1.15 2005/12/27 02:14:54 edwin Exp $
+@comment $FreeBSD: ports/irc/riece/pkg-plist,v 1.16 2006/05/30 06:42:57 clsung Exp $
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-000.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-000.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-200.el
@@ -89,6 +89,10 @@
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-log.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-lsdb.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-lsdb.elc
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-mcat-japanese.el
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-mcat-japanese.elc
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-mcat.el
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-mcat.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-menu.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-menu.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-message.el
@@ -103,6 +107,8 @@
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-naming.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-options.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-options.elc
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-package-info.el
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-package-info.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-rdcc.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-rdcc.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-ruby.el
