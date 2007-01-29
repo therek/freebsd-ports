@@ -18,10 +18,10 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.9 2006/09/30 19:25:45 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.10 2007/01/06 09:46:09 gerald Exp $
 #
 
-GCC_Include_MAINTAINER=		portmgr@FreeBSD.org
+GCC_Include_MAINTAINER=		gerald@FreeBSD.org
 
 #
 # All GCC versions supported by the ports framework.
