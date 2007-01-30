@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.408 2007/01/16 09:03:14 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.409 2007/01/23 15:57:50 oliver Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -31,8 +31,8 @@ MASTER_SITE_LOCAL+= \
 	ftp://ftp.uk.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
 	ftp://ftp.ru.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
 	ftp://ftp.jp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
-	ftp://ftp.tw.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
-#	ftp://ftp.cn.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
+	ftp://ftp.tw.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
+	ftp://ftp.cn.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
 
 MASTER_SITE_PORTS_JP+=	\
 	ftp://ports.jp.FreeBSD.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/%SUBDIR%/ \
