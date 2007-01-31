@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1271 2007/01/28 13:50:33 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1272 2007/01/29 13:03:03 vd Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2741,3 +2741,4 @@ lang/python21||2007-01-26|Has expired: Version branch long since retired
 lang/python22||2007-01-26|Has expired: Version branch long since retired
 audio/lopster|net-p2p/lopster|2007-01-28|Moved to better category
 net/p5-Spread||2007-01-29|Has expired: Spread comes with its own Perl library
+lang/glade-gpl||2007-01-31|Removed
