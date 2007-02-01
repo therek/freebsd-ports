@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/misc/ytree/files/patch-aa,v 1.7 2006/01/07 10:35:53 olgeni Exp $
 
 --- Makefile.orig
 +++ Makefile
@@ -30,7 +30,7 @@ $FreeBSD$
 -#CFLAGS      = -DCOLOR_SUPPORT -DNCURSES
 -#LIBS        = -lncurses -lmytinfo -lcompat
 +CFLAGS      = -DCOLOR_SUPPORT -DNCURSES
-+LIBS        = -lreadline -lncurses -lmytinfo -lcompat
++LIBS        = -lreadline -lncurses -lcompat
  
  ###########################
  # MAC OS X
