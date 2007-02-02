@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/devel/portmk/Mk/bsd.port.subdir.mk,v 1.10 2006/06/02 02:49:32 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.66 2007/01/30 04:29:04 kris Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -61,7 +61,7 @@ OSVERSION!= /usr/sbin/sysctl -n kern.osreldate
 .endif
 .endif
 .if !defined(PORTOBJFORMAT)
-PORTOBJFORMAT!= test -x ${DESTDIR}/usr/bin/objformat && ${DESTDIR}/usr/bin/objformat || echo aout
+PORTOBJFORMAT?=	elf
 .endif
 .endif
 
