@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070102:
+  AFFECTS: users of sysutils/portupgrade
+  AUTHOR: sem@FreeBSD.org
+
+  If you have a problem with upgrading the tools from version 2.2.1 and less,
+  remove the package with pkg_delete portupgrade\* command and reinstall it
+  from scratch. Remove /usr/ports/INDEX*.db and run portsdb -u.
+
 20070130:
   AFFECTS: users of dns/powerdns
   AUTHOR: tremere@cainites.net
@@ -4657,4 +4665,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.450 2007/01/26 20:52:14 vanilla Exp $
+$FreeBSD: ports/UPDATING,v 1.451 2007/01/30 21:06:43 pav Exp $
