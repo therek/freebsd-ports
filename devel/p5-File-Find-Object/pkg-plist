@@ -1,10 +1,6 @@
-@comment $FreeBSD: ports/devel/p5-File-Find-Object/pkg-plist,v 1.1 2006/07/15 02:08:26 rafan Exp $
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/File/Find/Object/.packlist
+@comment $FreeBSD: ports/devel/p5-File-Find-Object/pkg-plist,v 1.2 2006/09/06 07:29:18 leeym Exp $
 %%SITE_PERL%%/File/Find/Object.pm
 %%SITE_PERL%%/File/Find/Object/Base.pm
-@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/File/Find/Object
-@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/File/Find
-@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/File
 @dirrmtry %%SITE_PERL%%/File/Find/Object
 @dirrmtry %%SITE_PERL%%/File/Find
 @dirrmtry %%SITE_PERL%%/File
