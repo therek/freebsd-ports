@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/p5-Bigtop/pkg-plist,v 1.1 2006/10/02 15:36:16 clsung Exp $
+@comment $FreeBSD: ports/www/p5-Bigtop/pkg-plist,v 1.2 2006/11/10 03:08:49 clsung Exp $
 %%SITE_PERL%%/Bigtop.pm
 %%SITE_PERL%%/Bigtop/Backend/CGI.pm
 %%SITE_PERL%%/Bigtop/Backend/CGI/Gantry.pm
@@ -35,6 +35,7 @@
 %%SITE_PERL%%/Bigtop/Parser.pm
 %%SITE_PERL%%/Bigtop/ScriptHelp.pm
 %%SITE_PERL%%/Bigtop/TentMaker.pm
+%%SITE_PERL%%/Bigtop/TentMakerPath.pm
 bin/bigtop
 bin/tentmaker
 @dirrmtry %%SITE_PERL%%/Bigtop/Docs
