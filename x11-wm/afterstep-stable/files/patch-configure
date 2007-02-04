@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/x11-wm/afterstep-stable/files/patch-configure,v 1.4 2006/08/01 18:27:53 glewis Exp $
 
 --- configure	Sat Jun 24 21:55:24 2006
 +++ configure.orig	Sat Jun 24 21:54:41 2006
@@ -11,15 +11,6 @@ $FreeBSD$
  cat >>confdefs.h <<\_ACEOF
  #define MODULE_REUSE_LOADED_FONT 1
  _ACEOF
-@@ -5830,7 +5830,7 @@
- 
- have_shmimage=no
- 
--if test "x$CYGWIN" == "xyes"; then
-+if test "x$CYGWIN" = "xyes"; then
- 	enable_shmimage=no
- fi
- 
 @@ -7955,7 +7955,7 @@
  fi
  
