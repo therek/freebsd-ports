@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.25 2007/01/28 00:31:47 pav Exp $
+$FreeBSD: ports/GIDs,v 1.26 2007/01/30 23:13:56 pav Exp $
 # Please keep this file sorted by GID!
 bind:*:53:
 rdfdb:*:55:
@@ -11,6 +11,7 @@ xten:*:67:
 dialer:*:68:
 network:*:69:
 pgsql:*:70:
+ircd:*:72:
 simscan:*:74:
 audit:*:77:
 virtuoso:*:79:
