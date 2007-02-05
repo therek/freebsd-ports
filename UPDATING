@@ -6,6 +6,17 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070205:
+  AFFECTS: everybody
+  AUTHOR: pav@FreeBSD.org
+
+  New ports category was created - /usr/ports/ports-mgmt
+
+  Most significant port moved to this new category is portupgrade.
+  So don't be alarmed, it was not deleted. You can find it now in
+
+  /usr/ports/ports-mgmt/portupgrade
+
 20070202:
   AFFECTS: users of www/aolserver
   AUTHOR: martin@matuska.org
@@ -4688,4 +4699,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.452 2007/02/02 07:37:32 sem Exp $
+$FreeBSD: ports/UPDATING,v 1.453 2007/02/02 14:50:16 gabor Exp $
