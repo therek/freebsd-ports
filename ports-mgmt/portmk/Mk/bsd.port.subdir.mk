@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.66 2007/01/30 04:29:04 kris Exp $
+# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.subdir.mk,v 1.12 2007/02/02 21:29:09 linimon Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -59,9 +59,6 @@ OSVERSION!= /sbin/sysctl -n kern.osreldate
 .else
 OSVERSION!= /usr/sbin/sysctl -n kern.osreldate
 .endif
-.endif
-.if !defined(PORTOBJFORMAT)
-PORTOBJFORMAT?=	elf
 .endif
 .endif
 
@@ -322,7 +319,6 @@ README.html:
 	OPSYS="${OPSYS:S/"/"'"'"/g:S/\$/\$\$/g:S/\\/\\\\/g}" \
 	OSREL="${OSREL:S/"/"'"'"/g:S/\$/\$\$/g:S/\\/\\\\/g}" \
 	OSVERSION="${OSVERSION:S/"/"'"'"/g:S/\$/\$\$/g:S/\\/\\\\/g}" \
-	PORTOBJFORMAT="${PORTOBJFORMAT:S/"/"'"'"/g:S/\$/\$\$/g:S/\\/\\\\/g}" \
 	UID="${UID:S/"/"'"'"/g:S/\$/\$\$/g:S/\\/\\\\/g}" \
 	PKGINSTALLVER="${PKGINSTALLVER:S/"/"'"'"/g:S/\$/\$\$/g:S/\\/\\\\/g}"
 .endif
