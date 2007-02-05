@@ -7,6 +7,16 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20070205:
+  AFFECTS: prospective users of devel/qt4
+  AUTHOR: kde@FreeBSD.org
+
+  The qt4 ports and associated infrastructure introduce a few new 
+  Makefile variables and porting concepts (compared to qt33). 
+
+  For details and examples, see
+  http://mail.kde.org/pipermail/kde-freebsd/2007-February/000239.html
+
+20070205:
   AFFECTS: everybody
   AUTHOR: pav@FreeBSD.org
 
@@ -4707,4 +4717,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.455 2007/02/05 02:15:45 linimon Exp $
+$FreeBSD: ports/UPDATING,v 1.456 2007/02/05 02:28:43 pav Exp $
