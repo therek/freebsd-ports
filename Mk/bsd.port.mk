@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.549 2007/02/05 01:08:21 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.550 2007/02/05 20:48:59 lofi Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2289,8 +2289,8 @@ PORTDIRNAME?=	${_PORTDIRNAME}
 PKGORIGIN?=		${PKGCATEGORY}/${PORTDIRNAME}
 
 
-.if (${OSVERSION} < 491101 && ${PKGORIGIN} != "ports-mgmt/pkg_install") || exists(${LOCALBASE}/sbin/pkg_info)
-.if ${OSVERSION} < 491101 && ${PKGORIGIN} != "ports-mgmt/pkg_install"
+.if ((${OSVERSION} < 504105 || (${OSVERSION} >= 600000 && ${OSVERSION} < 600103) || (${OSVERSION} >= 700000 && ${OSVERSION} < 700012)) && ${PKGORIGIN} != "ports-mgmt/pkg_install") || exists(${LOCALBASE}/sbin/pkg_info)
+.if (${OSVERSION} < 504105 || (${OSVERSION} >= 600000 && ${OSVERSION} < 600103) || (${OSVERSION} >= 700000 && ${OSVERSION} < 700012)) && ${PKGORIGIN} != "ports-mgmt/pkg_install"
 EXTRACT_DEPENDS+=	${LOCALBASE}/sbin/pkg_info:${PORTSDIR}/ports-mgmt/pkg_install
 .endif
 .if !defined(DESTDIR)
