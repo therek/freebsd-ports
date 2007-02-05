@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1275 2007/02/04 22:54:16 thierry Exp $
+# $FreeBSD: ports/MOVED,v 1.1276 2007/02/05 01:08:20 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2795,3 +2795,4 @@ sysutils/psearch|ports-mgmt/psearch|2007-02-05|Moved to a new category
 sysutils/p5-FreeBSD-Portindex|ports-mgmt/p5-FreeBSD-Portindex|2007-02-05|Moved to a new category
 sysutils/qtpkg|ports-mgmt/qtpkg|2007-02-05|Moved to a new category
 textproc/p5-FreeBSD-Ports|ports-mgmt/p5-FreeBSD-Ports|2007-02-05|Moved to a new category
+sysutils/pkg_replace|ports-mgmt/pkg_replace|2007-02-05|Moved to a new category
