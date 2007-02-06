@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1278 2007/02/05 20:52:38 tmclaugh Exp $
+# $FreeBSD: ports/MOVED,v 1.1279 2007/02/05 20:58:54 tmclaugh Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2798,3 +2798,4 @@ textproc/p5-FreeBSD-Ports|ports-mgmt/p5-FreeBSD-Ports|2007-02-05|Moved to a new 
 sysutils/pkg_replace|ports-mgmt/pkg_replace|2007-02-05|Moved to a new category
 archivers/py-bzip2||2007-02-05|Included with all current python versions in ports tree
 devel/py-logging||2007-02-05|Included with all current python versions in ports tree
+misc/qt4-codecs-tw|chinese/qt4-codecs-tw|2007-02-06|Accidentally added to wrong category
