@@ -1,5 +1,5 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/jftp/files/jftp.sh.in,v 1.1 2005/02/01 20:26:22 hq Exp $
 
-"%%LOCALBASE%%/bin/java" -jar "%%DATADIR%%/jftp.jar"
+exec "%%LOCALBASE%%/bin/java" -jar "%%DATADIR%%/jftp.jar"
