@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1282 2007/02/07 16:08:57 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1283 2007/02/07 16:57:00 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2803,3 +2803,7 @@ irc/xchat-systray-plugin||2007-02-07|Has expired: Functionality is now included 
 chinese/oicq||2007-02-07|Has expired: Does not work with newer OICQ protocol
 net/nicmond||2007-02-07|Has expired: Disappeared from the internet
 www/caudium10||2007-02-07|Has expired: Please use www/caudium12
+net/openldap22-client||2007-02-07|Removed: OpenLDAP 2.2.x is no longer supported by developers
+net/openldap22-sasl-client||2007-02-07|Removed: OpenLDAP 2.2.x is no longer supported by developers
+net/openldap22-sasl-server||2007-02-07|Removed: OpenLDAP 2.2.x is no longer supported by developers
+net/openldap22-server||2007-02-07|Removed: OpenLDAP 2.2.x is no longer supported by developers
