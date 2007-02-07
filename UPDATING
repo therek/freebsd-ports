@@ -6,6 +6,19 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070207:
+  AFFECTS: users of www/squid*
+  AUTHOR: tmseck@netcologne.de
+
+  The www/squid port has been updated to 2.6.  If you are updating from Squid
+  2.5, please read the Squid release notes at
+  http://www.squid-cache.org/Versions/v2/2.6/squid-2.6.STABLE9-RELEASENOTES.html
+  and see whether you need to adapt your squid.conf to the changes described
+  there.
+
+  Squid 2.5 will be available as www/squid25 for next few months.  But note
+  it's no longer being maintained by the Squid developers.
+
 20070206:
   AFFECTS: users of emulators/qemu
   AUTHOR: nox@FreeBSD.org
@@ -4732,4 +4745,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.459 2007/02/06 23:12:30 nox Exp $
+$FreeBSD: ports/UPDATING,v 1.460 2007/02/06 23:29:31 miwi Exp $
