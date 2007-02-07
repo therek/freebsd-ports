@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.519 2007/01/25 10:40:17 vd Exp $
+# $FreeBSD: ports/LEGAL,v 1.520 2007/02/06 20:49:07 nox Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -583,6 +583,7 @@ epson/ttf30.exe		japanese/epson-ttfonts	Cannot be redistributed,
 						Japanese version of Windows
 						and EPSON printer specified
 						by EULA	
+tonicpoint-*		graphics/tonicpoint-viewer	Free for non-profit
 tuc-*			converters/tuc		Author does not allow
 						CD-ROM distribution
 tutorial.zip		java/java-tutorial	This software is under license
