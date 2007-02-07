@@ -1,5 +1,5 @@
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/xfce4/bsd.xfce.mk,v 1.6 2007/02/06 20:39:07 oliver Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Xfce_Pre_Include)
@@ -39,9 +39,9 @@ wm_RUN_DEPENDS=			xfwm4:${PORTSDIR}/x11-wm/xfce4-wm
 
 xfdev_RUN_DEPENDS=		xfce4-dev-tools:${PORTSDIR}/devel/xfce4-dev-tools
 
-.endif
+#.endif
 
-.if defined(_POSTMKINCLUDED) && !defined(Xfce_Post_Include)
+#.if defined(_POSTMKINCLUDED) && !defined(Xfce_Post_Include)
 
 Xfce_Post_Include=		bsd.xfce.mk
 
