@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.64 2006/12/19 21:19:11 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.66 2007/02/06 10:37:11 lofi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -195,7 +195,7 @@ qtconfig_DEPENDS=	devel/qtconfig
 qtestlib_DEPENDS=	devel/qt4-qtestlib
 qvfb_DEPENDS=		devel/qt4-qvfb
 rcc_DEPENDS=		devel/qt4-rcc
-svg_DEPENDS=		graphics/q4-svg
+svg_DEPENDS=		graphics/qt4-svg
 uic_DEPENDS=		devel/qt4-uic
 uic3_DEPENDS=		devel/qt4-uic3
 xml_DEPENDS=		textproc/qt4-xml
