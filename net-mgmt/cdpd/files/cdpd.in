@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/cdpd/files/cdpd.in,v 1.1 2007/02/06 14:25:41 sem Exp $
 #
 
 # PROVIDE: cdpd
@@ -30,7 +30,7 @@ command=%%PREFIX%%/sbin/$name
 # set defaults
 
 cdpd_enable=${cdpd_enable:-"NO"}
-cdpr_flags=${cdpd_flags:-"-a"}
+cdpd_flags=${cdpd_flags:-"-a"}
 
 load_rc_config $name
 run_rc_command "$1"
