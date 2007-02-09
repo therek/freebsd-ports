@@ -1,8 +1,8 @@
 #
-# $FreeBSD: ports/x11-wm/xfce4/bsd.xfce.mk,v 1.6 2007/02/06 20:39:07 oliver Exp $
+# $FreeBSD: ports/x11-wm/xfce4/bsd.xfce.mk,v 1.7 2007/02/07 15:29:18 oliver Exp $
 #
 
-.if !defined(_POSTMKINCLUDED) && !defined(Xfce_Pre_Include)
+#.if !defined(_POSTMKINCLUDED) && !defined(Xfce_Pre_Include)
 
 Xfce_Pre_Include=		bsd.xfce.mk
 Xfce_Include_MAINTAINER=	oliver@FreeBSD.org
@@ -58,4 +58,4 @@ IGNORE=	cannot install: Unknown component ${component}
 . endif
 .endfor
 
-.endif
+#.endif
