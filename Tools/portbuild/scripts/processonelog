@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/Tools/portbuild/scripts/processonelog,v 1.15 2007/02/09 04:50:10 linimon Exp $
+# $FreeBSD: ports/Tools/portbuild/scripts/processonelog,v 1.16 2007/02/09 20:55:43 linimon Exp $
 #
 # Read a single errorlogfile and output a line of the format
 #    $filename|$portname|$affected|$logsize|$dir|$maintainer|\
@@ -127,10 +127,6 @@ elif bzgrep -q "initializer element is not constant" $1; then
   reason="stdio"; tag="stdio"
 elif bzgrep -q "structure has no member named" $1; then
   reason="struct_changes"; tag="struct"
-elif bzgrep -qE "bin.apxs:(.)(not found|No such file or directory)" $1; then
-  reason="apxs"; tag="apxs"
-elif bzgrep -qE "failed to exec .*bin/apxs" $1; then
-  reason="apxs"; tag="apxs"
 elif bzgrep -q ".s: Assembler messages:" $1; then
   reason="arch"; tag="arch"
 elif bzgrep -qE "Cannot (determine .* target|find the byte order) for this architecture" $1; then
