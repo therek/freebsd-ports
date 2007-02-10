@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.31 2006/08/11 20:10:29 pav Exp $
+@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.32 2007/01/16 21:13:02 nivit Exp $
 etc/MailScanner/country.domains.conf.sample
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
@@ -22,6 +22,8 @@ lib/MailScanner/MailScanner/CustomFunctions/MyExample.pm
 lib/MailScanner/MailScanner/CustomFunctions/DavidHooton.pm
 lib/MailScanner/MailScanner/CustomFunctions/ZMRouterDirHash.pm
 lib/MailScanner/MailScanner/CustomFunctions/SpamWhitelist.pm
+lib/MailScanner/MailScanner/CustomFunctions/LastSpam.pm
+lib/MailScanner/MailScanner/CustomFunctions/Ruleset-from-Function.pm
 lib/MailScanner/MailScanner/Exim.pm
 lib/MailScanner/MailScanner/EximDiskStore.pm
 lib/MailScanner/MailScanner/GenericSpam.pm
@@ -513,6 +515,7 @@ sbin/MailScanner
 %%DATADIR%%/reports/sk/sender.size.report.txt.sample
 %%DATADIR%%/reports/sk/stored.size.message.txt.sample
 %%PORTDOCS%%%%DOCSDIR%%/README.FreeBSD.port
+%%PORTDOCS%%%%DOCSDIR%%/CHANGES.port
 %%PORTDOCS%%%%DOCSDIR%%/Sophos.install.freebsd
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL.FreeBSD
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL.OpenBSD
