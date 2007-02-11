@@ -12,7 +12,8 @@ upgrades.
 
   The media kioslave now mounts cdrom/dvd volumes with local charset
   conversion (mount_cd9660 -C <charset>), which requires the cd9660_iconv
-  kernel module to be available (will be autoloaded on demand).
+  kernel module to be available for volumes with ISO 9660 filesystems and
+  the udf and udf_iconv kernel modules for UDF filesystems.
 
 20070209:
   AFFECTS: users of x11/nvidia-driver
@@ -4772,4 +4773,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.464 2007/02/08 18:20:24 danfe Exp $
+$FreeBSD: ports/UPDATING,v 1.465 2007/02/10 03:38:01 lofi Exp $
