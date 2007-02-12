@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc43/pkg-plist,v 1.92 2006/11/05 14:31:04 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc43/pkg-plist,v 1.93 2007/02/06 13:06:00 gerald Exp $
 bin/c++%%SUFFIX%%
 bin/cpp%%SUFFIX%%
 bin/g++%%SUFFIX%%
@@ -17,10 +17,17 @@ info/gcc%%SUFFIX%%/dir
 %%JAVA%%bin/gcj%%SUFFIX%%
 %%JAVA%%bin/gcj-dbtool%%SUFFIX%%
 %%JAVA%%bin/gij%%SUFFIX%%
+%%JAVA%%bin/gjar%%SUFFIX%%
 %%JAVA%%bin/gjarsigner%%SUFFIX%%
+%%JAVA%%bin/gjavah%%SUFFIX%%
 %%JAVA%%bin/gkeytool%%SUFFIX%%
+%%JAVA%%bin/gnative2ascii%%SUFFIX%%
+%%JAVA%%bin/gorbd%%SUFFIX%%
 %%JAVA%%bin/grmic%%SUFFIX%%
+%%JAVA%%bin/grmid%%SUFFIX%%
 %%JAVA%%bin/grmiregistry%%SUFFIX%%
+%%JAVA%%bin/gserialver%%SUFFIX%%
+%%JAVA%%bin/gtnameserv%%SUFFIX%%
 %%JAVA%%bin/jv-convert%%SUFFIX%%
 %%JAVA%%bin/jcf-dump%%SUFFIX%%
 %%JAVA%%bin/%%GNU_HOST%%-gcj%%SUFFIX%%
