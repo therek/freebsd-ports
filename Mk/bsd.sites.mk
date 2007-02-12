@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.410 2007/01/30 20:35:49 rafan Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.411 2007/02/05 20:56:12 lofi Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -483,6 +483,19 @@ MASTER_SITE_GNU_ALPHA+=	\
 	ftp://ftp.lublin.pl/mirror/alpha.gnu.org/gnu/%SUBDIR%/ \
 	ftp://ftp.ps.pl/mirrors/alpha.gnu.org/pub/gnu/%SUBDIR%/ \
 	http://public.planetmirror.com/pub/gnu-alpha/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_HORDE)
+MASTER_SITE_HORDE+=	\
+	http://ftp.horde.org/pub/%SUBDIR%/ \
+	http://ftp.at.horde.org/mirror/horde/%SUBDIR%/ \
+	ftp://ftp.horde.org/pub/%SUBDIR%/ \
+	ftp://ftp.at.horde.org/mirror/horde/%SUBDIR%/ \
+	ftp://ftp.it.horde.org/horde/pub/%SUBDIR%/ \
+	ftp://ftp.planetmirror.com/pub/horde/%SUBDIR%/ \
+	ftp://ftp.es.horde.org/pub/%SUBDIR%/ \
+	ftp://ftp.nl.horde.org/mirror/horde-ftp/pub/%SUBDIR%/ \
+	http://downloads.planetmirror.com/pub/horde/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_IDSOFTWARE)
@@ -1317,6 +1330,7 @@ MASTER_SITES_SUBDIRS=	\
 			DEBIAN:pool/main/${PORTNAME:C/^((lib)?.).*$/\1/}/${PORTNAME} \
 			GCC:releases/${DISTNAME} \
 			GNOME:sources/${PORTNAME}/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/} \
+			HORDE:${PORTNAME} \
 			MOZDEV:${PORTNAME:L} \
 			PERL_CPAN:${PORTNAME:C/-.*//} \
 			PNET:${PNET_MASTER_SITE_SUBDIR} \
