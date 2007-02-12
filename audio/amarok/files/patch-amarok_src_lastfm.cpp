@@ -1,9 +1,9 @@
 
-$FreeBSD$
+$FreeBSD: ports/audio/amarok/files/patch-amarok_src_lastfm.cpp,v 1.1 2006/08/02 12:09:59 mich Exp $
 
 --- amarok/src/lastfm.cpp.orig
 +++ amarok/src/lastfm.cpp
-@@ -729,7 +729,7 @@
+@@ -905,7 +905,7 @@
  
      QCString md5pass = KMD5( KMD5( m_password.utf8() ).hexDigest() + currentTime ).hexDigest();
  
