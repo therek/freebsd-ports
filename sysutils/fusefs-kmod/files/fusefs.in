@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/fusefs-kmod/files/fusefs.in,v 1.1 2006/04/05 02:53:39 mnag Exp $
 #
 # PROVIDE: fusefs
 # REQUIRE: sysctl
@@ -12,6 +12,9 @@
 # fusefs_enable (bool):		Set to NO by default.
 #				Set it to YES to enable fusefs.
 #
+# and the following line to /etc/sysctl.conf:
+#
+# kern.module_path=/boot/kernel:/boot/modules:%%PREFIX%%/modules
 
 . %%RC_SUBR%%
 
