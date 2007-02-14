@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/Tools/portbuild/scripts/processonelog,v 1.20 2007/02/10 09:19:24 linimon Exp $
+# $FreeBSD: ports/Tools/portbuild/scripts/processonelog,v 1.22 2007/02/14 04:16:30 linimon Exp $
 #
 # Read a single errorlogfile and output a line of the format
 #    $filename|$portname|$affected|$logsize|$dir|$maintainer|\
@@ -55,7 +55,7 @@ elif bzgrep -q "Couldn't fetch it - please try" $1; then
   reason="fetch"; tag="fetch"
 elif bzgrep -q "Error: shared library \".*\" does not exist" $1; then
   reason="LIB_DEPENDS"; tag="libdepends"
-elif bzgrep -qE "\.(c|cc|ccx|cpp|h|y)[1-9:]+ .+\.h: No such file" $1; then
+elif bzgrep -qE "\.(c|cc|cxx|cpp|h|y)[1-9:]+ .+\.h: No such file" $1; then
   if bzgrep -qE "(X11/.*|Xosdefs)\.h: No such file" $1; then
 	if bzgrep -q "XFree86-.*\.tgz" $1; then
 	  reason="missing_header"; tag="header"
