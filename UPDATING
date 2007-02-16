@@ -7,6 +7,18 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20070215:
+  AFFECTS: users of security/clamav
+  AUTHOR: garga@FreeBSD.org
+
+  Since version 0.90, clamd.conf and clamav.conf have changed their syntax.
+  All parameters can now be turned on/off using a boolean value (0,1) or
+  (on,off) or (true,false), the old crude hack of "DisableDefaultScanOptions"
+  is no longer required.
+
+  Please, check ${PREFIX}/etc/(clamd|freshclam).conf.default and make needed
+  changes on your conf files.
+
+20070215:
   AFFECTS: users of www/py-turbogears
   AUTHOR: nivit@FreeBSD.org
 
@@ -4787,4 +4799,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.466 2007/02/11 00:17:08 lofi Exp $
+$FreeBSD: ports/UPDATING,v 1.467 2007/02/15 20:46:15 nivit Exp $
