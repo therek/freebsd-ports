@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/py-Breve/pkg-plist,v 1.1 2007/02/16 08:59:16 nivit Exp $
 @unexec %%EASY_INSTALL_CMD%% -q -N -m -S %D/%%PYTHON_SITELIBDIR%% %%PORTNAME%%==%%PORTVERSION%%
 %%PYTHON_SITELIBDIR%%/%%PYBREVE_EGG%%
 @exec %%EASY_INSTALL_CMD%% -q -N -S %D/%%PYTHON_SITELIBDIR%% %%PORTNAME%%==%%PORTVERSION%%
