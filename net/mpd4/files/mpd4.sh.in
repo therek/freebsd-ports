@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/mpd4/files/mpd4.sh.in,v 1.1 2006/10/31 20:37:56 sem Exp $
 #
 
 # PROVIDE: mpd
@@ -38,7 +38,7 @@ case "${mpd_flags}" in
         exit 1
         ;;
 *)
-        command_args="${mpd_flags} -p ${pidfile}"
+        command_args="-p ${pidfile} ${mpd_flags}"
         ;;
 esac
 
