@@ -1,5 +1,6 @@
-$FreeBSD: ports/GIDs,v 1.26 2007/01/30 23:13:56 pav Exp $
+$FreeBSD: ports/GIDs,v 1.27 2007/02/05 17:06:02 koitsu Exp $
 # Please keep this file sorted by GID!
+smmsp:*:25:
 bind:*:53:
 rdfdb:*:55:
 spamd:*:58:
