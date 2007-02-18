@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.37 2007/02/09 08:29:33 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.38 2007/02/16 08:53:33 ale Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -177,8 +177,6 @@ do-install:
 	@${MKDIR} ${PREFIX}/etc/php
 	@${ECHO_CMD} extension=${PHP_MODNAME}.so \
 		>> ${PREFIX}/etc/php/extensions.ini
-	@${SORT} -ruo ${PREFIX}/etc/php/extensions.ini \
-		${PREFIX}/etc/php/extensions.ini
 
 add-plist-info: add-plist-phpext
 add-plist-phpext:
@@ -201,8 +199,6 @@ add-plist-phpext:
 	@${ECHO_CMD} "@exec mkdir -p %D/etc/php" \
 		>> ${TMPPLIST}
 	@${ECHO_CMD} "@exec echo extension=${PHP_MODNAME}.so >> %D/etc/php/extensions.ini" \
-		>> ${TMPPLIST}
-	@${ECHO_CMD} "@exec sort -ruo %D/etc/php/extensions.ini %D/etc/php/extensions.ini" \
 		>> ${TMPPLIST}
 	@${ECHO_CMD} "@unexec cp %D/etc/php/extensions.ini %D/etc/php/extensions.ini.orig" \
 		>> ${TMPPLIST}
