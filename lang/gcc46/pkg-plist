@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc43/pkg-plist,v 1.93 2007/02/06 13:06:00 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc43/pkg-plist,v 1.94 2007/02/12 00:59:48 gerald Exp $
 bin/c++%%SUFFIX%%
 bin/cpp%%SUFFIX%%
 bin/g++%%SUFFIX%%
@@ -14,6 +14,7 @@ bin/%%GNU_HOST%%-gfortran%%SUFFIX%%
 info/gcc%%SUFFIX%%/dir
 %%JAVA%%bin/addr2name.awk%%SUFFIX%%
 %%JAVA%%bin/gappletviewer%%SUFFIX%%
+%%JAVA%%bin/gc-analyze%%SUFFIX%%
 %%JAVA%%bin/gcj%%SUFFIX%%
 %%JAVA%%bin/gcj-dbtool%%SUFFIX%%
 %%JAVA%%bin/gij%%SUFFIX%%
