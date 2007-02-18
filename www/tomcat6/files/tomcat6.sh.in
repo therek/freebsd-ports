@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/tomcat55/files/tomcat55.sh.in,v 1.4 2006/02/20 20:47:50 dougb Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: tomcat%%TOMCAT_VERSION%%
