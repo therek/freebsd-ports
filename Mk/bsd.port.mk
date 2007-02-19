@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.550 2007/02/05 20:48:59 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.551 2007/02/05 22:57:20 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1646,7 +1646,7 @@ CFLAGS:=	${CFLAGS:C/${_CPUCFLAGS}//}
 STRIP=	#none
 STRIP_CMD=	#none
 DEBUG_FLAGS?=	-g
-CFLAGS:=		${CFLAGS:N-O*:N-f*} ${DEBUG_FLAGS}
+CFLAGS:=		${CFLAGS:N-O*:N-fno-strict*} ${DEBUG_FLAGS}
 .endif
 
 .if defined(NOPORTDOCS)
