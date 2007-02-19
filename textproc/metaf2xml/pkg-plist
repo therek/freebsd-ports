@@ -1,8 +1,13 @@
-@comment $FreeBSD: ports/textproc/metaf2xml/pkg-plist,v 1.1 2006/08/11 06:52:58 clsung Exp $
+@comment $FreeBSD: ports/textproc/metaf2xml/pkg-plist,v 1.2 2006/10/31 09:10:34 clsung Exp $
 %%DATADIR%%/metaf-fullhtml.xsl
 %%DATADIR%%/metaf-html.xsl
 %%DATADIR%%/metaf-lang.xsl
+%%DATADIR%%/metaf-sum-html.xsl
+%%DATADIR%%/metaf-sum-text.xsl
+%%DATADIR%%/metaf-sum-ui.xsl
+%%DATADIR%%/metaf-sum.xsl
 %%DATADIR%%/metaf-text.xsl
+%%DATADIR%%/metaf-ui.xsl
 %%DATADIR%%/metaf.xsl
 %%SITE_PERL%%/metaf2xml/FGFS.pm
 %%SITE_PERL%%/metaf2xml/XML.pm
@@ -11,6 +16,9 @@ bin/metaf2xml.pl
 www/metaf2xml/cgi-bin/metaf.pl
 www/metaf2xml/htdocs/metaf-fullhtml.xsl
 www/metaf2xml/htdocs/metaf-lang.xsl
+www/metaf2xml/htdocs/metaf-sum-ui.xsl
+www/metaf2xml/htdocs/metaf-sum.xsl
+www/metaf2xml/htdocs/metaf-ui.xsl
 www/metaf2xml/htdocs/metaf.xsl
 @dirrmtry %%DATADIR%%
 @dirrmtry %%SITE_PERL%%/metaf2xml
