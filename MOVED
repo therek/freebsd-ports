@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1300 2007/02/18 19:20:53 gabor Exp $
+# $FreeBSD: ports/MOVED,v 1.1301 2007/02/18 19:48:39 gabor Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2837,3 +2837,4 @@ math/vtk43||2007-02-18|Has expired: Please use vtk 4.4 or 5.x.
 textproc/ruby-htmlcompact||2007-02-18|Has expired: distfile and homepage disappeared
 textproc/ruby-rwv2||2007-02-18|Has expired: distfile disappeared and has no homepage
 net/happystats||2007-02-18|Has expired: Disappeared from the internet
+www/drupal-pubcookie||2007-02-19|Has expired: No maintainer
