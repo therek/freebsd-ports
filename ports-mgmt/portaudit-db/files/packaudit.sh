@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit-db/files/packaudit.sh,v 1.6 2004/06/25 12:39:35 eik Exp $
+# $FreeBSD: ports/ports-mgmt/portaudit-db/files/packaudit.sh,v 1.7 2004/08/13 17:51:46 eik Exp $
 #
 
 AWK=/usr/bin/awk
@@ -46,7 +46,7 @@ XSLTPROC=%%LOCALBASE%%/bin/xsltproc
 
 PORTSDIR="${PORTSDIR:-%%PORTSDIR%%}"
 VUXMLDIR="${VUXMLDIR:-$PORTSDIR/security/vuxml}"
-PORTAUDITDBDIR="${PORTAUDITDBDIR:-$PORTSDIR/security/portaudit-db}"
+PORTAUDITDBDIR="${PORTAUDITDBDIR:-$PORTSDIR/ports-mgmt/portaudit-db}"
 
 DATABASEDIR="${DATABASEDIR:-%%DATABASEDIR%%}"
 
