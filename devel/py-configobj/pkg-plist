@@ -1,7 +1,7 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/py-configobj/pkg-plist,v 1.1 2006/11/18 23:50:50 miwi Exp $
 %%PYTHON_SITELIBDIR%%/configobj.py
-%%PYTHON_SITELIBDIR%%/validate.py
 %%PYTHON_SITELIBDIR%%/configobj.pyc
-%%PYTHON_SITELIBDIR%%/validate.pyc
 %%PYTHON_SITELIBDIR%%/configobj.pyo
+%%PYTHON_SITELIBDIR%%/validate.py
+%%PYTHON_SITELIBDIR%%/validate.pyc
 %%PYTHON_SITELIBDIR%%/validate.pyo
