@@ -1,5 +1,5 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/proguard/files/proguard-gui.sh.in,v 1.1 2005/04/27 20:05:12 hq Exp $
 
-"%%LOCALBASE%%/bin/java" -jar "%%DATADIR%%/lib/proguardgui.jar" "$@"
+exec "%%LOCALBASE%%/bin/java" -jar "%%DATADIR%%/lib/proguardgui.jar" "$@"
