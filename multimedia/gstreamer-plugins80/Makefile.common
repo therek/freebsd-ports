@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.39 2006/12/13 07:39:01 vd Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.40 2007/01/03 02:31:51 mezz Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.35 2006/10/07 19:23:51 ahze Exp $
 GST_ALL_PLUGINS= \
 		a52dec \
@@ -479,7 +479,7 @@ USE_GNOME+=	gtk20
 
 # speex
 .if ${GST_PLUGIN}=="speex"
-LIB_DEPENDS+=	speex.3:${PORTSDIR}/audio/speex
+LIB_DEPENDS+=	speex.1:${PORTSDIR}/audio/speex
 .endif
 
 # swfdec
