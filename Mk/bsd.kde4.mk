@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.66 2007/02/06 10:37:11 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.67 2007/02/08 17:17:35 rafan Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -195,6 +195,7 @@ qtconfig_DEPENDS=	devel/qtconfig
 qtestlib_DEPENDS=	devel/qt4-qtestlib
 qvfb_DEPENDS=		devel/qt4-qvfb
 rcc_DEPENDS=		devel/qt4-rcc
+sql_DEPENDS=		databases/qt4-sql
 svg_DEPENDS=		graphics/qt4-svg
 uic_DEPENDS=		devel/qt4-uic
 uic3_DEPENDS=		devel/qt4-uic3
@@ -213,8 +214,8 @@ IGNORE= cannot install: unknown Qt4 component -- ${ext}
 .endif
 .endfor
 .else
-BUILD_DEPENDS=		qt4>=${QT4_VERSION}:${PORTSDIR}/devel/qt4
-RUN_DEPENDS=		qt4>=${QT4_VERSION}:${PORTSDIR}/devel/qt4
+BUILD_DEPENDS+=		qt4>=${QT4_VERSION}:${PORTSDIR}/devel/qt4
+RUN_DEPENDS+=		qt4>=${QT4_VERSION}:${PORTSDIR}/devel/qt4
 .endif
 
 .else
