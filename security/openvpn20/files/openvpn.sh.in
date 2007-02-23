@@ -7,7 +7,7 @@
 #
 # Made in Northrhine-Westphalia, Germany
 #
-# $FreeBSD: ports/security/openvpn/files/openvpn.sh.in,v 1.4 2006/02/20 20:47:39 dougb Exp $
+# $FreeBSD: ports/security/openvpn/files/openvpn.sh.in,v 1.5 2007/02/23 08:38:53 vd Exp $
 # 
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -63,7 +63,7 @@
 
 . %%RC_SUBR%%
 
-name=`basename ${0}`
+name=$(basename "$0")
 rcvar=`set_rcvar`
 
 prefix="%%PREFIX%%"
