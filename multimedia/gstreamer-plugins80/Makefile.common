@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.40 2007/01/03 02:31:51 mezz Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.41 2007/02/23 22:51:12 mezz Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.35 2006/10/07 19:23:51 ahze Exp $
 GST_ALL_PLUGINS= \
 		a52dec \
@@ -257,7 +257,7 @@ LIB_DEPENDS+=	visual.0:${PORTSDIR}/graphics/libvisual
 
 # musepack
 .if ${GST_PLUGIN}=="musepack"
-LIB_DEPENDS+=	mpcdec.4:${PORTSDIR}/audio/libmpcdec
+LIB_DEPENDS+=	mpcdec.5:${PORTSDIR}/audio/libmpcdec
 .endif
 
 # hermes

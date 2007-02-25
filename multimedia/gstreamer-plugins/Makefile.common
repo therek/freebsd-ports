@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.45 2007/02/23 22:51:12 mezz Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.46 2007/02/25 18:50:38 ahze Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.63 2006/09/29 23:22:28 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -268,7 +268,7 @@ gst_mpeg2dec_LIB_DEPENDS+=	mpeg2.0:${PORTSDIR}/multimedia/libmpeg2
 gst_mpeg2dec_DIST=	ugly
 
 # musepack
-gst_musepack_LIB_DEPENDS+=	mpcdec.4:${PORTSDIR}/audio/libmpcdec
+gst_musepack_LIB_DEPENDS+=	mpcdec.5:${PORTSDIR}/audio/libmpcdec
 gst_musepack_DIST=	bad
 
 # musicbrainz
