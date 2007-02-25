@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1275 2007/02/24 18:30:40 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1276 2007/02/24 18:50:57 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -45,6 +45,10 @@ Note:  Please add new entries to the beginning of this file.
       <package>
 	<name>linux-firefox</name>
 	<range><lt>1.5.0.10</lt></range>
+      </package>
+      <package>
+        <name>lightning</name>
+        <range><lt>0.3.1</lt></range>
       </package>
       <package>
 	<name>seamonkey</name>
