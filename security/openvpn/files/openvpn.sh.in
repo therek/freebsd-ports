@@ -7,7 +7,7 @@
 #
 # Made in Northrhine-Westphalia, Germany
 #
-# $FreeBSD: ports/security/openvpn/files/openvpn.sh.in,v 1.5 2007/02/23 08:38:53 vd Exp $
+# $FreeBSD: ports/security/openvpn/files/openvpn.sh.in,v 1.6 2007/02/23 11:41:46 vd Exp $
 # 
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -63,7 +63,17 @@
 
 . %%RC_SUBR%%
 
-name=$(basename "$0")
+case "$0" in
+	/etc/rc*)
+	# during boot (shutdown) $0 is /etc/rc (/etc/rc.shutdown),
+	# so get the name of the script from $_file
+	name=$(basename "$_file")
+	;;
+	*)
+	name=$(basename "$0")
+	;;
+esac
+
 rcvar=`set_rcvar`
 
 prefix="%%PREFIX%%"
