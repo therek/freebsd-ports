@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1306 2007/02/23 22:50:13 mezz Exp $
+# $FreeBSD: ports/MOVED,v 1.1307 2007/02/25 01:36:21 sat Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2841,3 +2841,5 @@ lang/tcc||2007-02-19|Has expired: is unusable; tcc -run works, but little else
 www/p5-HTML||2007-02-23|Has expired: project no longer exists
 audio/speex-devel|audio/speex|2007-02-23|Merged into audio/speex
 www/horde|www/horde-base|2007-02-24|Port renamed for consistency
+www/phpip|net-mgmt/phpip|2007-02-26|move to net-mgmt/phpip
+
