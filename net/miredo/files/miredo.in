@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/miredo/files/miredo.in,v 1.1 2006/08/13 19:39:24 miwi Exp $
 #
 
 # PROVIDE: miredo
 # REQUIRE: NETWORKING
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable miredo:

@@ -1,10 +1,9 @@
 #!/bin/sh
-# $FreeBSD: ports/security/amavisd-new/files/amavis-p0fanalyzer.sh.in,v 1.3 2006/10/01 17:48:40 erwin Exp $
+# $FreeBSD: ports/security/amavisd-new/files/amavis-p0fanalyzer.sh.in,v 1.4 2006/11/27 12:55:21 erwin Exp $
 
 # PROVIDE: amavis_p0fanalyzer
 # REQUIRE: DAEMON
 # BEFORE: amavisd
-# KEYWORD: FreeBSD
 
 amavis_p0fanalyzer_enable="${amavis_p0fanalyzer_enable-NO}"
 amavis_p0fanalyzer_p0f_filter="${amavis_p0fanalyzer_p0f_filter-"tcp dst port 25"}"
