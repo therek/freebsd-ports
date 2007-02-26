@@ -1,8 +1,9 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/libuninum/pkg-plist,v 1.1 2007/01/07 14:38:30 clsung Exp $
 bin/numconv
 include/uninum/uninum.h
 include/uninum/nsdefs.h
-lib/libuninum.so.2
+include/uninum/unicode.h
+lib/libuninum.so.4
 lib/libuninum.so
 lib/libuninum.a
 @dirrmtry include/uninum
