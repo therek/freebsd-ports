@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/base/pkg-plist,v 1.10 2006/05/16 12:10:35 itetcu Exp $
+@comment $FreeBSD: ports/security/base/pkg-plist,v 1.11 2006/06/09 05:54:26 clsung Exp $
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/CHANGELOG
 %%PORTDOCS%%%%DOCSDIR%%/CREDITS
@@ -22,6 +22,7 @@ www/base/base_graph_form.php
 www/base/base_graph_main.php
 www/base/base_hdr1.php
 www/base/base_hdr2.php
+www/base/base_logout.php
 www/base/base_main.php
 www/base/base_maintenance.php
 www/base/base_payload.php
