@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/vtun/files/vtunclient.sh,v 1.1 2004/08/26 09:18:58 kuriyama Exp $
+# $FreeBSD$
 #
 # PROVIDE: vtunclient
 # REQUIRE: DAEMON

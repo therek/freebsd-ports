@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/vtun/files/vtund.sh,v 1.1 2004/08/26 09:18:58 kuriyama Exp $
+# $FreeBSD$
 #
 # PROVIDE: vtund
 # REQUIRE: DAEMON
