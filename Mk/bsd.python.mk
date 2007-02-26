@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.93 2007/01/27 05:47:57 tmclaugh Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.94 2007/02/14 06:07:28 delphij Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -385,6 +385,9 @@ PYSETUP?=				setup.py
 PYDISTUTILS_CONFIGUREARGS?=
 PYDISTUTILS_BUILDARGS?=
 PYDISTUTILS_INSTALLARGS?=	-c -O1 --prefix=${PREFIX}
+
+# Fix for programs that build python from a GNU auto* enviornment
+CONFIGURE_ENV+=	PYTHON="${PYTHON_CMD}"
 
 # Zope-related variables
 .if defined(USE_ZOPE)
