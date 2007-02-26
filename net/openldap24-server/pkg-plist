@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/openldap24-server/pkg-plist,v 1.37 2006/05/26 15:26:26 delphij Exp $
+@comment $FreeBSD: ports/net/openldap24-server/pkg-plist,v 1.38 2007/02/21 05:40:11 delphij Exp $
 @unexec %%RC_DIR%%/etc/rc.d/slapd%%RC_SUFX%% stop 2>&1 >/dev/null || true
 %%SLURPD%%@unexec %%RC_DIR%%/etc/rc.d/slurpd%%RC_SUFX%% stop 2>&1 >/dev/null || true
 etc/openldap/schema/README
@@ -76,9 +76,11 @@ sbin/slapdn
 sbin/slapindex
 sbin/slappasswd
 sbin/slaptest
+@cwd /
 @exec mkdir -p %%LDAP_RUN_DIR%%
 @dirrmtry %%LDAP_RUN_DIR%%
 @exec mkdir -p %%DATABASEDIR%%
 @dirrmtry %%DATABASEDIR%%
 %%SLURPD%%@exec mkdir -p %%SLURPDIR%%
 %%SLURPD%%@dirrmtry %%SLURPDIR%%
+@cwd %%PREFIX%%
