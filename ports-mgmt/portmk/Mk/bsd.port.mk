@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.45 2007/02/21 06:29:44 linimon Exp $
+# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.46 2007/02/28 22:47:05 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2035,7 +2035,11 @@ RUN_DEPENDS+=	${PERL5}:${PORTSDIR}/lang/${PERL_PORT}
 .endif
 
 .if defined(USE_PHP)
+.if exists(${DEVELPORTSDIR}/Mk/bsd.php.mk)
+.include "${DEVELPORTSDIR}/Mk/bsd.php.mk"
+.else
 .include "${PORTSDIR}/Mk/bsd.php.mk"
+.endif
 .endif
 
 .if defined(USE_PYTHON)
