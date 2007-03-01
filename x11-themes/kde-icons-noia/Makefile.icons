@@ -2,7 +2,7 @@
 # Date created:		Thu Feb 19 23:17:56 UTC 2004
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-themes/kde-icons-noia/Makefile.icons,v 1.12 2006/08/29 23:16:01 lioux Exp $
+# $FreeBSD: ports/x11-themes/kde-icons-noia/Makefile.icons,v 1.13 2006/09/03 02:38:21 kris Exp $
 #
 
 CATEGORIES?=	x11-themes kde
@@ -26,6 +26,7 @@ RESTRICTED?=    It may contain iconic, visual, graphical or other\
 INDEX_FILES=	index.desktop index.theme
 
 # do not create some dirs
+PLIST_DIR_PATTERN=	-v ^\.$$
 PLIST_DIR_PATTERN_EXTRA?=	^\./
 
 # do not install some files
@@ -47,6 +48,7 @@ post-patch:
 annotate-install:
 # annotate dirs
 	@cd ${WRKSRC} ; ${FIND} . -type d ! -empty \
+		| ${GREP} -E ${PLIST_DIR_PATTERN} \
 		| ${GREP} -E ${PLIST_DIR_PATTERN_EXTRA} \
 		| ${SORT} -r \
 		> ${WRKDIR}/dirs.list
