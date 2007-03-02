@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1308 2007/02/26 19:19:51 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1309 2007/02/28 12:18:07 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2843,4 +2843,3 @@ audio/speex-devel|audio/speex|2007-02-23|Merged into audio/speex
 www/horde|www/horde-base|2007-02-24|Port renamed for consistency
 www/phpip|net-mgmt/phpip|2007-02-26|move to net-mgmt/phpip
 www/aolserver-openacs-pg||2007-02-28|Not longer needed.
-
