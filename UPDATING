@@ -21,6 +21,11 @@ upgrades.
     'print/ghostscript-afpl' => 'print/ghostscript-gnu',
   }
 
+  Note also, portupgrade knows nothing how to handle ports with different
+  suffixes (E.g. -nox11). So you should define explicitly variables 
+  (E.g. WITHOUT_X11=yes) for the ports in /etc/make.conf or pkgtools.conf
+  (MAKE_ARGS section) files.
+
 20070227:
   AFFECTS: users of net-im/jabber*
   AUTHOR: martin@matuska.org
@@ -4859,4 +4864,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.472 2007/02/27 13:13:15 miwi Exp $
+$FreeBSD: ports/UPDATING,v 1.473 2007/03/01 09:09:01 sem Exp $
