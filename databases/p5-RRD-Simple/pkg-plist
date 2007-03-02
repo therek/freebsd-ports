@@ -1,5 +1,5 @@
-@comment $FreeBSD: ports/net/p5-RRD-Simple/pkg-plist,v 1.1 2006/08/05 10:53:21 miwi Exp $
+@comment $FreeBSD: ports/net/p5-RRD-Simple/pkg-plist,v 1.2 2007/02/12 12:26:57 rafan Exp $
 %%SITE_PERL%%/RRD/Simple.pm
-%%SITE_PERL%%/RRD/Simple/Examples.pm
+%%SITE_PERL%%/RRD/Simple/Examples.pod
 @dirrmtry %%SITE_PERL%%/RRD/Simple
 @dirrmtry %%SITE_PERL%%/RRD
