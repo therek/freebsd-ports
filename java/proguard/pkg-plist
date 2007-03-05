@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/java/proguard/pkg-plist,v 1.4 2005/04/27 20:05:11 hq Exp $
+@comment $FreeBSD: ports/java/proguard/pkg-plist,v 1.5 2007/02/21 13:27:06 rafan Exp $
 bin/proguard
 bin/proguard-gui
 %%DATADIR%%/docs/FAQ.html
@@ -54,7 +54,6 @@ bin/proguard-gui
 %%DATADIR%%/docs/testimonials.html
 %%DATADIR%%/docs/title.gif
 %%DATADIR%%/docs/title.html
-%%DATADIR%%/docs/vtitle.gif
 %%DATADIR%%/examples/ant/applets.xml
 %%DATADIR%%/examples/ant/applications1.xml
 %%DATADIR%%/examples/ant/applications2.xml
