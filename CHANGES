@@ -10,6 +10,17 @@ in the release notes.
 
 All ports committers are allowed to commit to this file.
 
+20070306:
+AUTHOR: portmgr@FreeBSD.org
+The following changes were made to the ports infrastructure:
+
+  * The remainging vestiges of FreeBSD 4.X support were removed.  Any
+    remaining users of 4.X should have stayed with the RELENG_4_EOL tag.
+
+  * It is now possible to include USE_PHP after bsd.port.pre.mk.
+
+  * 'make search' should now work with non-default ${PORTSDIR}.
+
 20070130:
 AUTHOR: portmgr@FreeBSD.org
 The following changes were made to the ports infrastructure:
@@ -1272,4 +1283,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.64 2007/01/31 13:35:20 pav Exp $
+$FreeBSD: ports/CHANGES,v 1.65 2007/01/31 14:07:23 pav Exp $

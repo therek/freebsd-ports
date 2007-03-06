@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070205:
+  AFFECTS: all users of FreeBSD 4.X
+  AUTHOR: portmgr@FreeBSD.org
+
+  The remnants of FreeBSD 4.X support have been removed from bsd.port.mk.
+  Any remaining users should _not_ get this or any subsequent updates.
+
 20070301:
   AFFECTS: users of ports-mgmt/portupgrade*
   AUTHOR: sem@FreeBSD.org
@@ -4864,4 +4871,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.473 2007/03/01 09:09:01 sem Exp $
+$FreeBSD: ports/UPDATING,v 1.474 2007/03/02 07:37:20 sem Exp $

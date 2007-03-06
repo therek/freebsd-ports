@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.38 2007/02/16 08:53:33 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.39 2007/02/18 19:56:53 ale Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -31,7 +31,11 @@
 # Don't specify any WANT_PHP_* knob if your port will work with every PHP SAPI.
 #
 
+.if !defined(_PHPMKINCLUDED)
+
 PHP_Include_MAINTAINER=	ale@FreeBSD.org
+
+_PHPMKINCLUDED=	yes
 
 .if exists(${LOCALBASE}/etc/php.conf)
 .include "${LOCALBASE}/etc/php.conf"
@@ -224,8 +228,10 @@ php-ini:
 	@${ECHO_CMD} "****************************************************************************"
 .endif
 
+.endif
+
 # Extensions
-.if ${USE_PHP:L} != "yes"
+.if defined(_POSTMKINCLUDED) && ${USE_PHP:L} != "yes"
 # non-version specific components
 _USE_PHP_ALL=	bcmath bz2 calendar ctype curl dba dbase \
 		exif fileinfo fribidi ftp gd gettext gmp \
