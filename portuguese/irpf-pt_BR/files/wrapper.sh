@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Under a BSDL license. Copyright by Mario S F Ferreira <lioux@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: ports/portuguese/irpf-pt_BR/files/wrapper.sh,v 1.1 2007/03/06 03:20:02 lioux Exp $
 
 export JAVA_VERSION
 
@@ -40,7 +40,18 @@ prepare_home_dir () {
 
 start_irpf () {
   cd ${HOME_DIR} &&
-	exec ${JAVAVM} -jar ./${JAR_FILE} "${@}"
+	${JAVAVM} -jar ./${JAR_FILE} "${@}"
+}
+
+clean_home_dir () {
+  # remove the jar files
+  for jar in ${JAR_FILES}
+  do
+	if [ -f ${HOME_DIR}/${jar} ]
+	then
+		rm -f ${HOME_DIR}/${jar} 2>/dev/null
+	fi
+  done
 }
 
 # always verify that home dir staging area is pristine
@@ -51,5 +62,5 @@ configure_java_classpath
 
 start_irpf
 
-# we should never get this far
-exit 1
+# remove jars
+clean_home_dir
