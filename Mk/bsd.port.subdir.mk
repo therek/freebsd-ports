@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.66 2007/01/30 04:29:04 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.67 2007/02/04 20:23:37 kris Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -416,6 +416,8 @@ _PORTSEARCH=	\
 	    } \
 	  } \
 	  { \
+	    if (match($$2, "^/usr/ports/[^/]*/[^/]*$$") > 0) \
+	      sub("^/usr/ports", "${PORTSDIR}", $$2); \
 	    if (substr($$2, 1, therelen) != there) \
 	      next; \
 	    for (i in parms) \
