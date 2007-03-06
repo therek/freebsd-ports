@@ -1,7 +1,8 @@
-@comment $FreeBSD: ports/mail/dovecot/pkg-plist,v 1.22 2007/01/07 23:50:55 pav Exp $
+@comment $FreeBSD: ports/mail/dovecot/pkg-plist,v 1.23 2007/01/26 13:18:59 vanilla Exp $
 @unexec if cmp -s %D/etc/dovecot-example.conf %D/etc/dovecot.conf; then rm -f %D/etc/dovecot.conf; fi
 etc/dovecot-example.conf
 @exec if [ ! -f %D/etc/dovecot.conf ] ; then cp -p %D/%F %B/dovecot.conf; fi
+@dirrmtry include/dovecot
 lib/dovecot/imap/lib01_acl_plugin.so
 lib/dovecot/imap/lib02_lazy_expunge_plugin.so
 lib/dovecot/imap/lib10_quota_plugin.so
