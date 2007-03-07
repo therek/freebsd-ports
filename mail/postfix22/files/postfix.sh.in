@@ -1,8 +1,8 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/postfix/files/postfix.sh.in,v 1.2 2006/01/12 20:38:03 mnag Exp $
+# $FreeBSD: ports/mail/postfix22/files/postfix.sh.in,v 1.3 2006/01/16 21:47:47 mnag Exp $
 #
-# PROVIDE: postfix
+# PROVIDE: postfix mail
 # REQUIRE: %%REQUIRE%%
 # KEYWORD: shutdown
 #
