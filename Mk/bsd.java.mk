@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.75 2007/01/31 14:07:24 pav Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.76 2007/03/06 06:21:46 linimon Exp $
 #
 
 .if !defined(Java_Include)
