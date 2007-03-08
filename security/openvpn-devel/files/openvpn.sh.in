@@ -7,7 +7,7 @@
 # with multi-instance contribution from Denis Shaposhnikov, Gleb Kozyrev
 # and Vasil Dimov
 #
-# $FreeBSD: ports/security/openvpn-devel/files/openvpn.sh.in,v 1.4 2006/02/20 20:47:39 dougb Exp $
+# $FreeBSD: ports/security/openvpn-devel/files/openvpn.sh.in,v 1.5 2007/03/06 13:00:02 rafan Exp $
 # 
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -25,7 +25,6 @@
 
 # PROVIDE: openvpn
 # REQUIRE: DAEMON
-# BEFORE:
 # KEYWORD: shutdown
 
 # -----------------------------------------------------------------------------
