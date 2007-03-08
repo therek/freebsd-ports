@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.322 2007/03/07 15:59:27 gshapiro Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.323 2007/03/08 03:12:23 murray Exp $
 #
 # FreeBSD Project Committers
 #
@@ -227,7 +227,7 @@
  42.29,		-122.89,	"ade"				# Medford, OR, USA
  49.27705,	-122.91385,	"cperciva"			# Burnaby, BC, Canada
  49.204533,	-122.919931,	"sobomax"			# New Westminster, BC, Canada
+ 49.3283,	-122.9968,	"brian"		align=left	# North Vancouver, Canada
  44.04, 	-123.06,	"anholt"			# Eugene, OR, USA
  48.3898,	-123.4875,	"cy"				# Victoria, BC, Canada
  40.0,		-123.5,		"jkh"				# Miranda, CA, USA
- 49.17,		-123.7,		"brian"		align=left	# Vancouver, Canada
