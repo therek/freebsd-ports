@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.31 2006/12/23 18:44:09 ahze Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.32 2007/01/25 16:22:42 mezz Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.38 2006/10/10 20:22:01 mezz Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -69,7 +69,7 @@ _USE_GSTREAMER_ALL=	a52dec aalib annodex bad bz2 cairo cdaudio cdparanoia dts \
 _USE_GSTREAMER80_ALL=	a52dec aalib artsd audiofile cairo cdaudio cdio cdparanoia \
 			dts dv dvd esound faac faad ffmpeg flac \
 			gconf gdkpixbuf gnomevfs gsm hermes ivorbis jack jpeg \
-			jpeg-mmx ladspa lame libcaca libfame libmms libmng \
+			ladspa lame libcaca libfame libmms libmng \
 			libpng libvisual mad mikmod mpeg2dec mpeg2enc mplex \
 			musepack musicbrainz nas sdl shout shout2 sidplay \
 			smoothwave sndfile speex theora ogg pango polyp \
@@ -177,8 +177,6 @@ gdkpixbuf_DEPENDS=	graphics/gstreamer-plugins-gdkpixbuf
 hermes_DEPENDS=	graphics/gstreamer-plugins-hermes
 
 jpeg_DEPENDS=	graphics/gstreamer-plugins-jpeg
-
-jpeg-mmx_DEPENDS=	graphics/gstreamer-plugins-jpeg-mmx
 
 libcaca_DEPENDS=	graphics/gstreamer-plugins-libcaca
 
