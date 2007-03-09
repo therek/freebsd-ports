@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/ruby-gems/Makefile.common,v 1.6 2006/09/23 08:15:26 ijliao Exp $
+# $FreeBSD: ports/devel/ruby-gems/Makefile.common,v 1.7 2006/11/29 03:42:09 clsung Exp $
 # Ruby gem module common settings
 
 
@@ -41,5 +41,13 @@ PLIST_SUB+=	PORTVERSION="${PORTVERSION}" \
 
 RUBYGEMBIN=	${LOCALBASE}/bin/gem
 
+.if defined(DISTFILES)
+GEMFILES=	${DISTFILES:C/:[^:]+$//}
+.else
+GEMFILES=	${DISTNAME}${EXTRACT_SUFX}
+.endif
+
 do-install:
-	${RUBYGEMBIN} install --no-ri --install-dir ${PREFIX}/lib/ruby/gems/${REV} ${DISTDIR}/${DIST_SUBDIR}/${DISTNAME}${EXTRACT_SUFX}
+.for _D in ${GEMFILES}
+	${RUBYGEMBIN} install --no-ri --install-dir ${PREFIX}/lib/ruby/gems/${REV} ${DISTDIR}/${DIST_SUBDIR}/${_D}
+.endfor
