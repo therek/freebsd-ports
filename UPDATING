@@ -29,7 +29,7 @@ upgrades.
   }
 
   Note also, portupgrade knows nothing how to handle ports with different
-  suffixes (E.g. -nox11). So you should define explicitly variables 
+  suffixes (E.g. -nox11). So you should define explicitly variables
   (E.g. WITHOUT_X11=yes) for the ports in /etc/make.conf or pkgtools.conf
   (MAKE_ARGS section) files.
 
@@ -4871,4 +4871,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.474 2007/03/02 07:37:20 sem Exp $
+$FreeBSD: ports/UPDATING,v 1.475 2007/03/06 06:21:46 linimon Exp $
