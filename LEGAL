@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.525 2007/03/09 10:19:51 miwi Exp $
+# $FreeBSD: ports/LEGAL,v 1.526 2007/03/09 10:21:20 miwi Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -281,10 +281,6 @@ hptools-src*		devel/hptools		Not made or distributed for resale
 httprint_freebsd_*.zip	security/httprint	No cost for personal, education and non-commercial use
 HyperSpec-*.tar.gz	devel/clisp-hyperspec	Commercial redistribution
 						prohibited
-IBMJava2-SDK-131.tgz	java/linux-ibm-jdk13	Redistribution of repackaged
-						binaries not permitted
-IBMJava2-SDK-*		java/linux-ibm-jdk14	Redistribution of repackaged
-						binaries not permitted
 ICON-AquaFusion.*	x11-themes/gnome-icons-aqua-fusion Author rights unclear
 ICON-CoolGorilla.*	x11-themes/gnome-icons-cool-gorilla Author rights unclear
 CrystalSVGforGnomeIcons* x11-themes/gnome-icons-crystal Author rights unclear
