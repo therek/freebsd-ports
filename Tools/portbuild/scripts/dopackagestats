@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/Tools/portbuild/scripts/dopackagestats,v 1.14 2006/11/25 15:51:02 linimon Exp $
+# $FreeBSD: ports/Tools/portbuild/scripts/dopackagestats,v 1.15 2007/02/07 08:00:20 linimon Exp $
 #
 # create HTML showing numbers of packages vs errors.  Run this in a directory
 # accessible to the web server.
@@ -61,7 +61,12 @@ write_row () {
     fi
     # work around the fact that 5-exp is really 6-exp-prime
     if [ ! -f $indexfile ]; then
-      indexfile=$directory/ports/`cd $directory/ports&&ls INDEX* | head -1`
+      if [ -d $directory/ports ]; then
+          indexfile=$directory/ports/`cd $directory/ports&&ls INDEX* | head -1`
+        else
+          # work around the fact that 4 is EOL and thus has no ports/ directory
+         indexfile=$directory/logs/`cd $directory/logs&&ls INDEX* | head -1`
+        fi
     fi
 
     # column: date of CVS checkout
