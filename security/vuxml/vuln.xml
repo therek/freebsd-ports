@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1289 2007/03/09 15:48:35 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1290 2007/03/09 15:52:31 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -75,6 +75,10 @@ Note:  Please add new entries to the beginning of this file.
       <package>
 	<name>trac</name>
 	<range><lt>0.10.3</lt></range>
+      </package>
+      <package>
+	<name>ja-trac</name>
+	<range><lt>0.10.3_1</lt></range>
       </package>
     </affects>
     <description>
