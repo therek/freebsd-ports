@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.412 2007/02/12 23:23:31 sat Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.413 2007/03/07 12:46:20 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -410,6 +410,16 @@ MASTER_SITE_GENTOO+=	\
 	ftp://ftp.planetmirror.com/pub/gentoo/%SUBDIR%/ \
 	ftp://ftp.ecc.u-tokyo.ac.jp/GENTOO/%SUBDIR%/ \
 	ftp://gentoo.kems.net/pub/mirrors/gentoo/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_GET_E)
+MASTER_SITE_GET_E+=	\
+	http://www0.get-e.org/%SUBDIR%/_files/ \
+	http://www1.get-e.org/%SUBDIR%/_files/ \
+	http://www2.get-e.org/%SUBDIR%/_files/ \
+	http://www3.get-e.org/%SUBDIR%/_files/ \
+	http://www4.get-e.org/%SUBDIR%/_files/ \
+	http://www5.get-e.org/%SUBDIR%/_files/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_GNOME)
