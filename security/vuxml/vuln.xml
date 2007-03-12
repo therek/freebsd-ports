@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1291 2007/03/10 02:19:12 kuriyama Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1292 2007/03/12 01:11:44 markus Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -692,7 +692,7 @@ Note:  Please add new entries to the beginning of this file.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	<p>Multiple vulnerabilities has been found in PHP, including:
+	<p>Multiple vulnerabilities have been found in PHP, including:
 	  buffer overflows, stack overflows, format string, and
 	  information disclosure vulnerabilities.</p>
 	<p>The session extension contained <code>safe_mode</code> and
