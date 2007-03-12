@@ -6,7 +6,7 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
-200704-12:
+20070312:
   AFFECTS: all users of net/py-libdnet
   AUTHOR: tmclaugh@FreeBSD.org
 
@@ -4889,4 +4889,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.477 2007/03/11 09:00:48 stas Exp $
+$FreeBSD: ports/UPDATING,v 1.478 2007/03/12 17:51:52 tmclaugh Exp $
