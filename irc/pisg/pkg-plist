@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/irc/pisg/pkg-plist,v 1.16 2004/12/20 16:44:35 mich Exp $
+@comment $FreeBSD: ports/irc/pisg/pkg-plist,v 1.17 2006/09/11 12:41:52 mich Exp $
 bin/pisg
 etc/pisg/pisg.cfg.sample
 %%SITE_PERL%%/Pisg.pm
@@ -45,6 +45,7 @@ etc/pisg/pisg.cfg.sample
 %%SITE_PERL%%/Pisg/Parser/Format/rbot.pm
 %%SITE_PERL%%/Pisg/Parser/Format/lulubot.pm
 %%SITE_PERL%%/Pisg/Parser/Format/miau.pm
+%%SITE_PERL%%/Pisg/Parser/Format/IRCAP.pm
 %%SITE_PERL%%/Pisg/Parser/Logfile.pm
 %%DATADIR%%/layout/justgrey.css
 %%DATADIR%%/layout/darkgalaxy.css
