@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.350 2007/03/11 13:01:24 stas Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.351 2007/03/12 09:43:55 max Exp $
 #
 # FreeBSD Project Committers
 #
@@ -53,6 +53,7 @@
  55.768764,	37.588938,	"sergei"			# Moscow, Russia
  55.7203,	37.4314,	"sat"				# Moscow, Russia
  44.95,		34.1,		"phantom,ru"			# Simferopol, Ukraine
+ 50.430417,	30.488262	"kib"				# Kiev, Ukraine
  46.28,		30.44,		"anray"				# Odessa, Ukraine
 -25.80974,	28.27731,	"jhay"				# Pretoria, South Africa
  44.420,	26.1371,	"itetcu"			# Bucharest, Romania
