@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/lanbrowsing/files/lisa.sh,v 1.16 2006/12/19 21:19:46 lofi Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: lisa

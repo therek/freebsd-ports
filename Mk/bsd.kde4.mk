@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.67 2007/02/08 17:17:35 rafan Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.68 2007/02/23 16:53:13 lofi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -104,7 +104,7 @@ CONFIGURE_ENV+=	MOC="${MOC}" CPPFLAGS="${CPPFLAGS} ${QTCPPFLAGS}" LIBS="${QTCFGL
 
 # Yeah, it's namespace pollution, but this is really the best place for this
 # stuff. Arts does NOT use it anymore.
-KDE_VERSION=		3.5.5
+KDE_VERSION=		3.5.6
 KDE_ORIGVER=	${KDE_VERSION}
 KDE_PREFIX?=	${LOCALBASE}
 
