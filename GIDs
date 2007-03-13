@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.28 2007/02/17 09:57:35 dinoex Exp $
+$FreeBSD: ports/GIDs,v 1.29 2007/03/09 02:31:37 delphij Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -54,6 +54,7 @@ pdns:*:120
 fetchmail:*:124
 postfix:*:125:
 maildrop:*:126:
+nav:*:127:
 vchat:*:128:
 _bgpd:*:130:
 _ospfd:*:131:
