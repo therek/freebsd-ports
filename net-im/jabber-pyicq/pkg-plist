@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/net-im/jabber-pyicq/pkg-plist,v 1.3 2006/03/02 20:57:22 garga Exp $
+@comment $FreeBSD: ports/net-im/jabber-pyicq/pkg-plist,v 1.4 2006/10/01 11:56:59 garga Exp $
 @unexec if cmp -s %D/%%EXAMPLESDIR%%/etc/jabber-pyicq.xml %D/etc/jabber-pyicq.xml; then rm -f %D/etc/jabber-pyicq.xml; fi
+%%EXAMPLESDIR%%/db-setup.mysql
 %%EXAMPLESDIR%%/etc/jabber-pyicq.xml
 @exec [ -f %D/etc/jabber-pyicq.xml ] || cp %B/%f %D/etc/jabber-pyicq.xml
 lib/jabber/pyicq/PyICQt.py
