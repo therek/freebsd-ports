@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1293 2007/03/12 01:16:27 markus Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1294 2007/03/12 08:39:18 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -59,12 +59,14 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
+      <cvename>CVE-2007-1384</cvename>
+      <cvename>CVE-2007-1385</cvename>
       <url>http://ktorrent.org/forum/viewtopic.php?t=1401</url>
     </references>
     <dates>
       <discovery>2007-03-09</discovery>
       <entry>2007-03-11</entry>
-      <modified>2007-03-12</modified>
+      <modified>2007-03-14</modified>
     </dates>
   </vuln>
 
