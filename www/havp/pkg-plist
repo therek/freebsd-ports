@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/havp/pkg-plist,v 1.1 2006/06/18 04:54:26 novel Exp $
 sbin/havp
 @unexec if cmp -s %D/etc/havp/havp.config %D/etc/havp/havp.config.default; then rm -f %D/etc/havp/havp.config; fi
 etc/havp/havp.config.default
@@ -121,6 +121,6 @@ etc/havp/havp.config.default
 @dirrm %%EXAMPLESDIR%%/templates
 %%EXAMPLESDIR%%/whitelist.sample
 @dirrm %%EXAMPLESDIR%%
-@unexec rmdir %%LOG_DIR%% 2>/dev/null || true
-@unexec rmdir %%TMP_DIR%% 2>/dev/null || true
-@unexec rmdir %%RUN_DIR%% 2>/dev/null || true
+@dirrmtry %%LOG_DIR%%
+@dirrmtry %%TMP_DIR%%
+@dirrmtry %%RUN_DIR%%
