@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1298 2007/03/16 07:35:42 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1299 2007/03/16 11:48:32 lth Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,7 +39,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>sql-ledger</name>
-	<range><lt>sql-ledger-2.6.26</lt></range>
+	<range><lt>2.6.26</lt></range>
       </package>
     </affects>
     <description>
