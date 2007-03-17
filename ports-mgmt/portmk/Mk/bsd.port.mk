@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.46 2007/02/28 22:47:05 linimon Exp $
+# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.48 2007/03/09 09:00:46 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1596,7 +1596,7 @@ PERL=		${LOCALBASE}/bin/perl
 .endif
 .endif
 
-.if defined(USE_OCAML)
+.if defined(USE_XFCE)
 .if exists(${DEVELPORTSDIR}/Mk/bsd.xfce.mk)
 .include "${DEVELPORTSDIR}/Mk/bsd.xfce.mk"
 .else
@@ -2131,7 +2131,7 @@ RUN_DEPENDS+=	${PERL5}:${PORTSDIR}/lang/${PERL_PORT}
 .endif
 .endif
 
-.if defined(USE_OCAML)
+.if defined(USE_XFCE)
 .if exists(${DEVELPORTSDIR}/Mk/bsd.xfce.mk)
 .include "${DEVELPORTSDIR}/Mk/bsd.xfce.mk"
 .else
