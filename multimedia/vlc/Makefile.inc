@@ -4,7 +4,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.3 2006/11/30 12:54:25 ahze Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.4 2006/12/01 07:38:57 pav Exp $
 #    $MCom: ports/multimedia/vlc/Makefile.inc,v 1.3 2006/09/30 18:15:02 ahze Exp $
 #
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -288,7 +288,8 @@ pre-install:
 .endif
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} \
 		${MAKEFILE} ${MAKE_ARGS} ${INSTALL_TARGET} prefix=${FAKEDIR}
-	${RM} -f ${FAKEDIR}/share/locale/locale.alias
+	${RM} -f ${FAKEDIR}/share/locale/locale.alias \
+		 ${FAKEDIR}/lib/charset.alias
 	cd ${FAKEDIR}/bin && ${FIND} -s * | \
 		${SED} -e 's|^|bin/|' >> ${PLIST}
 	cd ${FAKEDIR}/include && ${FIND} -s * -type f -o -type l | \
