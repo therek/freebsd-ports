@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.78 2006/09/24 16:16:39 clement Exp $
+@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.79 2007/01/13 12:13:11 clement Exp $
 @exec mkdir -p %D/etc/apache22/extra 2> /dev/null
 @exec mkdir -p %D/etc/apache22/Includes 2> /dev/null || true
 @exec mkdir -p %D/etc/apache22/envvars.d 2> /dev/null || true
@@ -543,4 +543,4 @@ www/apache22/icons/world2.png
 @unexec rm -f %D/etc/apache22/httpd.conf.bak 2> /dev/null || true
 @dirrmtry etc/apache22/envvars.d
 @dirrmtry etc/apache22/extra
-@unexec rmdir %D/etc/apache22 2> /dev/null || echo "===> If you plan to do not reinstall apache22, you can safely remove %D/etc/apache22."
+@dirrmtry etc/apache22
