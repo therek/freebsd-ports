@@ -1,6 +1,3 @@
-
-$FreeBSD: ports/security/nss/files/patch-cmd::platlibs.mk,v 1.2 2005/07/31 00:06:49 marcus Exp $
-
 --- cmd/platlibs.mk	Wed Apr  6 17:35:41 2005
 +++ cmd/platlibs.mk	Wed Jul 27 22:22:59 2005
 @@ -72,5 +72,4 @@

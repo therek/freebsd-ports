@@ -1,8 +1,8 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.17 2006/10/14 08:35:23 marcus Exp $
-#    $MCom: ports-stable/www/mozilla/bsd.gecko.mk,v 1.3 2006/10/24 17:48:39 ahze Exp $
+# $FreeBSD$
+#    $MCom: ports/www/mozilla/bsd.gecko.mk,v 1.30 2006/12/09 15:32:06 ahze Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 

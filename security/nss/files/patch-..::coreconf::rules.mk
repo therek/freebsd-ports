@@ -1,6 +1,3 @@
-
-$FreeBSD: ports/security/nss/files/patch-..::coreconf::rules.mk,v 1.2 2002/08/08 19:05:41 sobomax Exp $
-
 --- ../coreconf/rules.mk.orig	Thu Apr  3 16:48:00 2003
 +++ ../coreconf/rules.mk	Fri Apr 11 01:01:50 2003
 @@ -110,6 +110,7 @@
