@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1322 2007/03/16 21:33:25 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1323 2007/03/17 20:54:57 gabor Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2871,3 +2871,4 @@ chinese/big5fs||2007-03-14|Has expired: Use mount_cd9660(8), mount_msdosfs(8), o
 chinese/gbfs||2007-03-14|Has expired: Use mount_cd9660(8), mount_msdosfs(8), or mount_ntfs(8) instead
 audio/anthem||2007-03-16|Has expired: this software is not developed any more
 www/jakarta-tomcat41|www/tomcat41|2007-03-17|Renamed (no longer a Jakarta project)
+multimedia/totem-gstreamer|multimedia/totem|2007-03-19|multimedia/totem now uses gstreamer by default
