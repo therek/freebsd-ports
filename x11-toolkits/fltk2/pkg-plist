@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/fltk2/pkg-plist,v 1.4 2006/10/08 20:17:52 miwi Exp $
+@comment $FreeBSD: ports/x11-toolkits/fltk2/pkg-plist,v 1.5 2007/01/15 20:07:42 miwi Exp $
 bin/fltk2-config
 bin/fluid2
 include/fltk/compat/FL/Enumerations.H
@@ -64,6 +64,7 @@ include/fltk/compat/FL/x.H
 @dirrm include/fltk/compat
 include/fltk/Adjuster.h
 include/fltk/AlignGroup.h
+include/fltk/AnsiWidget.h
 include/fltk/BarGroup.h
 include/fltk/Box.h
 include/fltk/Browser.h
