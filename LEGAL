@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.528 2007/03/13 00:29:55 maho Exp $
+# $FreeBSD: ports/LEGAL,v 1.529 2007/03/13 00:45:31 maho Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -431,6 +431,7 @@ mysqlman.tar.gz		databases/mysqlman	Not redistributable, license
 ncftpd-*		ftp/ncftpd		30 day evaluation license
 netbeans3-*		java/netbeans3		Restrictive copyright
 netbeans4-*		java/netbeans4		Restrictive copyright
+netbeans5-*		java/netbeans5		Restrictive copyright
 NetComponents-*		java/netcomponents	No redistribution except as part
 						of a substantially different product
 netshow_linux.gz	multimedia/netshow	Commercial software
