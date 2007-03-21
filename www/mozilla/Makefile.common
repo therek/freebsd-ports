@@ -3,7 +3,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.24 2007/03/19 05:13:49 marcus Exp $
 #    $MCom: ports/www/mozilla/Makefile.common,v 1.45 2007/02/06 00:05:55 ahze Exp $
 
 # This file contains some reusable components for mozilla ports. It's of
@@ -282,7 +282,7 @@ gecko-post-patch:
 	@${REINPLACE_CMD} -e 's|%%MOZILLA%%|${MOZILLA}|g' \
 		${WRKSRC}/config/autoconf.mk.in
 	@${REINPLACE_CMD} -e 's|-pthread|${PTHREAD_LIBS}|g ; \
-		s|echo aout|echo elf|g' \
+		s|echo aout|echo elf|g ; s|/usr/X11R6|${X11BASE}|g' \
 		${WRKSRC}/security/coreconf/FreeBSD.mk \
 		${WRKSRC}/js/src/Makefile.in
 	@if [ -d ${WRKSRC}/directory/c-sdk ]; then \
