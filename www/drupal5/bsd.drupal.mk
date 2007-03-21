@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/drupal/bsd.drupal.mk,v 1.2 2007/01/05 21:32:19 brooks Exp $
+# $FreeBSD: ports/www/drupal5/bsd.drupal.mk,v 1.3 2007/01/09 03:15:19 brooks Exp $
 #
 
 DRUPAL_BASE?=	www/drupal
