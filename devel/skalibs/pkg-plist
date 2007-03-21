@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/skalibs/pkg-plist,v 1.6 2004/04/09 18:35:57 sergei Exp $
+@comment $FreeBSD: ports/devel/skalibs/pkg-plist,v 1.7 2004/06/10 21:01:41 sergei Exp $
 include/skalibs/alloc.h
 include/skalibs/allreadwrite.h
 include/skalibs/avlnode.h
@@ -16,6 +16,9 @@ include/skalibs/cdb_make.h
 include/skalibs/datastruct.h
 include/skalibs/direntry.h
 include/skalibs/diuint.h
+include/skalibs/diuint32.h
+include/skalibs/diuint32alloc.h
+include/skalibs/diuint32bunch.h
 include/skalibs/diuintalloc.h
 include/skalibs/diuintbunch.h
 include/skalibs/djbunix.h
