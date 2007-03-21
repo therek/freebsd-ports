@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.49 2007/03/08 13:09:00 ahze Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.50 2007/03/18 19:03:45 mezz Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.63 2006/09/29 23:22:28 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -321,7 +321,7 @@ gst_spc_DIST=		bad
 gst_speex_LIB_DEPENDS+=	speex.1:${PORTSDIR}/audio/speex
 
 # swfdec
-gst_swfdec_LIB_DEPENDS+=swfdec-0.3.0:${PORTSDIR}/graphics/swfdec
+gst_swfdec_LIB_DEPENDS+=swfdec-0.4.1:${PORTSDIR}/graphics/swfdec
 gst_swfdec_DIST=	bad
 # theora
 gst_theora_LIB_DEPENDS+=	theora.2:${PORTSDIR}/multimedia/libtheora

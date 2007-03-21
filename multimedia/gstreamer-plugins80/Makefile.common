@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.42 2007/02/25 20:05:26 ahze Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.43 2007/03/08 14:20:03 ahze Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.35 2006/10/07 19:23:51 ahze Exp $
 GST_ALL_PLUGINS= \
 		a52dec \
@@ -472,7 +472,7 @@ LIB_DEPENDS+=	speex.1:${PORTSDIR}/audio/speex
 
 # swfdec
 .if ${GST_PLUGIN}=="swfdec"
-LIB_DEPENDS+=	swfdec-0.3.0:${PORTSDIR}/graphics/swfdec
+LIB_DEPENDS+=	swfdec-0.4.1:${PORTSDIR}/graphics/swfdec
 .endif
 
 # vorbis
