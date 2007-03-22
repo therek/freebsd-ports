@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/p5-Net-Amazon/Makefile.man,v 1.1 2007/02/05 02:07:11 clsung Exp $
+# $FreeBSD: ports/net/p5-Net-Amazon/Makefile.man,v 1.2 2007/02/19 10:41:40 clsung Exp $
 
 MAN3+=	Net::Amazon.3 
 MAN3+=	Net::Amazon::Attribute::Review.3
@@ -17,6 +17,7 @@ MAN3+=	Net::Amazon::Request::Artist.3
 MAN3+=	Net::Amazon::Request::Author.3
 MAN3+=	Net::Amazon::Request::Blended.3
 MAN3+=	Net::Amazon::Request::BrowseNode.3
+MAN3+=	Net::Amazon::Request::Director.3
 MAN3+=	Net::Amazon::Request::EAN.3
 MAN3+=	Net::Amazon::Request::Exchange.3
 MAN3+=	Net::Amazon::Request::ISBN.3
@@ -29,6 +30,7 @@ MAN3+=	Net::Amazon::Request::Seller.3
 MAN3+=	Net::Amazon::Request::Similar.3
 MAN3+=	Net::Amazon::Request::Sort.3
 MAN3+=	Net::Amazon::Request::TextStream.3
+MAN3+=	Net::Amazon::Request::Title.3
 MAN3+=	Net::Amazon::Request::UPC.3
 MAN3+=	Net::Amazon::Request::Wishlist.3
 MAN3+=	Net::Amazon::Response.3
