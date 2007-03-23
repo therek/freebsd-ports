@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/exim/pkg-plist,v 1.43 2006/01/22 05:52:24 edwin Exp $
+@comment $FreeBSD: ports/mail/exim/pkg-plist,v 1.44 2006/03/25 23:12:17 krion Exp $
 %%DAEMON%%@unexec [ ! -f /var/run/exim.pid ] || %%RC_DIR%%/exim%%RC_SUFX%% stop || true
 sbin/exim
 sbin/exim-%%EXIM_VERSION%%
@@ -19,7 +19,6 @@ sbin/exiwhat
 %%EXIMON%%sbin/eximon
 %%EXIMON%%sbin/eximon.bin
 %%PORTDOCS%%%%DOCSDIR%%/ACKNOWLEDGMENTS
-%%PORTDOCS%%%%DOCSDIR%%/FAQ
 %%PORTDOCS%%%%DOCSDIR%%/NOTICE
 %%PORTDOCS%%%%DOCSDIR%%/README.UPDATING
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
