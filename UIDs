@@ -1,4 +1,4 @@
-$FreeBSD: ports/UIDs,v 1.33 2007/03/09 02:31:37 delphij Exp $
+$FreeBSD: ports/UIDs,v 1.34 2007/03/13 12:52:10 des Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53:Bind Sandbox:/:/sbin/nologin
@@ -107,6 +107,7 @@ messagebus:*:556:556:D-BUS Daemon User:/nonexistent:/sbin/nologin
 avahi:*:558:558:Avahi Daemon User:/nonexistent:/sbin/nologin
 tacacs:*:559:559:TACACS+ Daemon User:/nonexistent:/sbin/nologin
 distcc:*:561:561:Distcc user:/nonexistent:/sbin/nologin
+polkit:*:562:562:PolicyKit User:/nonexistent:/sbin/nologin
 _xsi:*:600:600:XMLSysInfo User:/nonexistent:/sbin/nologin
 bnetd:*:700:700:Bnetd user:/nonexistent:/sbin/nologin
 bopm:*:717:717:Blitzed Open Proxy Monitor:/nonexistent:/bin/sh

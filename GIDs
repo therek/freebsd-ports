@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.30 2007/03/13 12:52:10 des Exp $
+$FreeBSD: ports/GIDs,v 1.31 2007/03/24 02:31:38 pav Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -98,6 +98,7 @@ realtime:*:557:
 avahi:*:558:
 tacacs:*:559:
 distcc:*:561:
+polkit:*:562:
 _xsi:*:600:
 bnetd:*:700:
 bopm:*:717:
