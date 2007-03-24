@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.413 2007/03/07 12:46:20 sat Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.414 2007/03/11 22:13:19 stas Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -550,7 +550,6 @@ MASTER_SITE_ISC+=	\
 
 .if !defined(IGNORE_MASTER_SITE_KDE)
 MASTER_SITE_KDE+=	\
-	ftp://ftp.scarlet.be/pub/kde/%SUBDIR%/ \
 	http://ftp.scarlet.be/pub/kde/%SUBDIR%/ \
 	http://mirrors.isc.org/pub/kde/%SUBDIR%/ \
 	ftp://ftp.gtlib.cc.gatech.edu/pub/kde/%SUBDIR%/ \
