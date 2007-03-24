@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.24 2006/07/05 02:18:08 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.25 2006/12/04 01:07:25 ade Exp $
 #
 # Please view me with 4 column tabs!
 #
@@ -64,7 +64,8 @@ Autotools_Include_MAINTAINER=	ade@FreeBSD.org
 #
 # LIBTOOLFILES=<list-of-files>
 #	- A list of files to patch during libtool pre-configuration
-#	  Defaults to "aclocal.m4" if autoconf is in use, otherwise "configure"
+#	  Defaults to "aclocal.m4" if autoconf is in use, otherwise
+#	  ${CONFIGURE_SCRIPT} (usually "configure")
 #
 #---------------------------------------------------------------------------
 
@@ -210,7 +211,7 @@ LIBTOOLFLAGS?=		# default to empty
 . if defined(AUTOTOOL_autoconf)
 LIBTOOLFILES?=		aclocal.m4
 . else
-LIBTOOLFILES?=		configure
+LIBTOOLFILES?=		${CONFIGURE_SCRIPT}
 . endif
 
 .endif
