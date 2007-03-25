@@ -62,7 +62,7 @@ upgrades.
   AFFECTS: all users of net/py-libdnet
   AUTHOR: tmclaugh@FreeBSD.org
 
-  The py-libdnet port has been seperated out as a slave port to libdnet and
+  The py-libdnet port has been separated out as a slave port to libdnet and
   is now dependent on libdnet.  py-libdnet now only installs the libdnet
   python modules.  Since files previously owned by py-libdnet are now owned
   by its dependency, in order to upgrade correctly, py-libdnet must be
@@ -87,7 +87,7 @@ upgrades.
   AFFECTS: users of ports-mgmt/portupgrade*
   AUTHOR: sem@FreeBSD.org
 
-  Because of a bug in previous version, it's recomended you fill ALT_PKGDEP
+  Because of a bug in previous version, it's recommended you fill ALT_PKGDEP
   section in pkgtools.conf file for portupgrade be aware of alternative
   dependencies you use, and run pkgdb -L to restore dependencies that was
   lost.
@@ -4941,4 +4941,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.482 2007/03/19 19:19:28 mezz Exp $
+$FreeBSD: ports/UPDATING,v 1.483 2007/03/19 19:32:11 mezz Exp $
