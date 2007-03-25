@@ -1,10 +1,10 @@
-@comment $FreeBSD: ports/net-p2p/moodriver/pkg-plist,v 1.1 2006/07/25 20:19:14 novel Exp $
+@comment $FreeBSD: ports/net-p2p/moodriver/pkg-plist,v 1.2 2006/07/28 18:08:02 novel Exp $
 bin/moo
 include/moodriver/moo/driver.hh
 include/moodriver/moo/mucipher.h
 include/moodriver/moo/types.hh
-lib/libmoodriver.so.0
 lib/libmoodriver.so
+lib/libmoodriver.so.1
 lib/libmoodriver.la
 libdata/pkgconfig/moodriver.pc
 @dirrm include/moodriver/moo
