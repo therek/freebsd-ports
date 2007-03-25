@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/japanese/ipa-ttfonts/pkg-plist,v 1.5 2007/01/03 03:06:36 hrs Exp $
+@comment $FreeBSD: ports/japanese/ipa-ttfonts/pkg-plist,v 1.6 2007/01/18 03:28:38 hrs Exp $
 @cwd %%LOCALBASE%%
 %%DATADIR%%/ppd/OPVP-HP-Color_LaserJet_5500.ppd
 %%DATADIR%%/ppd/OPVP-HP-Color_LaserJet_4600.ppd
@@ -83,7 +83,8 @@
 @dirrmtry %%LOCAL_FONTSDIR%%/TrueType
 @dirrmtry %%LOCAL_FONTSDIR%%
 @cwd %%X11BASE%%
-etc/fonts/conf.d/2.ipa-ttfonts.conf
+etc/fonts/conf.d/20-unhint-ipattfonts.conf
+etc/fonts/conf.d/62-fonts-ipattfonts.conf
 %%X_FONTSDIR%%/TrueType/ipag.ttf
 %%X_FONTSDIR%%/TrueType/ipagp.ttf
 %%X_FONTSDIR%%/TrueType/ipagui.ttf

@@ -1,7 +1,7 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/ipa-ttfonts/files/pkg-install.in,v 1.1 2004/08/20 17:12:21 hrs Exp $
+# $FreeBSD: ports/japanese/ipa-ttfonts/files/pkg-install.in,v 1.2 2007/01/03 03:06:36 hrs Exp $
 
-X_FONTSDIR=%%X_FONTSDIR%%
+X_FONTSDIR=%%X_FONTSDIR%%/TrueType
 
 catfontsdir ()
 {
