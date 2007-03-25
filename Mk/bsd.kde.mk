@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.68 2007/02/23 16:53:13 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.69 2007/03/13 19:10:09 lofi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -158,7 +158,7 @@ CONFIGURE_ENV+=	MOC="${MOC}" UIC="${UIC}" CPPFLAGS="${CPPFLAGS} ${QTCPPFLAGS}" L
 MAKE_ENV+=	QMAKESPEC="${QMAKESPEC}"
 .endif # !defined(QT_NONSTANDARD)
 
-QT4_VERSION=	4.2.2
+QT4_VERSION=	4.2.3
 
 _QT_COMPONENTS_ALL=	accessible assistant codecs-cn codecs-jp codecs-kr \
 			codecs-tw corelib designer doc gui iconengines \
