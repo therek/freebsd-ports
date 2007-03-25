@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/totd/files/totd.sh,v 1.2 2004/05/24 11:46:59 vs Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: totd
