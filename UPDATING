@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070325:
+  AFFECTS: users of www/drupal and drupal-*
+  AUTHOR: rafan@FreeBSD.org
+
+  All 4.x drupal ports are renamed to have a drupal4 prefix. As a result,
+  default install location is changed from PREFIX/www/drupal to
+  PREFIX/www/drupal4. Take some precautions when upgrading.
+
 20070319:
   AFFECTS: users of x11-wm/fluxbox and x11-wm/fluxbox-devel
   AUTHOR: mezz@FreeBSD.org
@@ -4941,4 +4949,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.483 2007/03/19 19:32:11 mezz Exp $
+$FreeBSD: ports/UPDATING,v 1.484 2007/03/25 10:30:20 blackend Exp $
