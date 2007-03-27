@@ -1,7 +1,7 @@
-$FreeBSD: ports/devel/ecos-tools/files/patch-host::tools::configtool::standalone::wxwin::makefile.gnu,v 1.1 2003/11/17 12:29:06 tg Exp $
+$FreeBSD: ports/devel/ecos-tools/files/patch-host::tools::configtool::standalone::wxwin::makefile.gnu,v 1.2 2006/12/01 07:38:54 pav Exp $
 
 --- ../ecos/host/tools/configtool/standalone/wxwin/makefile.gnu.orig	Wed May 14 14:20:15 2003
-+++ ../ecos/host/tools/configtool/standalone/wxwin/makefile.gnu	Mon Nov 17 11:44:38 2003
++++ ../ecos/host/tools/configtool/standalone/wxwin/makefile.gnu	Tue Mar 27 20:06:32 2007
 @@ -6,23 +6,20 @@
  #   cd emptydir
  #   make -f /path/to/this/makefile WXDIR=/path/to/wx/installation INSTALLDIR=/path/to/ecos/tools [ ECOSSRCDIR=/path/to/ecos/tools/src ] [ TCLDIR=/path/to/tcl/installation ] [ DEBUG=1 ]
@@ -41,3 +41,12 @@ $FreeBSD: ports/devel/ecos-tools/files/patch-host::tools::configtool::standalone
    EXTRAOBJECTS=
  endif
  
+@@ -98,7 +95,7 @@
+  $(CTBUILDDIR)/TestResource.o
+ 
+ # Compilers
+-CC          = c++
++CC          = $(CXX)
+ RESCOMP     = windres
+ 
+ .SUFFIXES: .o .cpp .cxx
