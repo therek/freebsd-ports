@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/audio/pd/files/patch-src_m_conf.c,v 1.1 2003/11/12 00:55:19 trevor Exp $
 
 --- src/m_conf.c.orig	Fri Mar 21 04:46:29 2003
 +++ src/m_conf.c	Tue Nov 11 22:42:47 2003
@@ -11,7 +11,7 @@ $FreeBSD$
  void x_misc_setup(void);
  void x_net_setup(void);
  void x_qlist_setup(void);
-@@ -78,7 +78,7 @@ void conf_init(void)
+@@ -79,7 +79,7 @@ void conf_init(void)
      x_connective_setup();
      x_time_setup();
      x_arithmetic_setup();
