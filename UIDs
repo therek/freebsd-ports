@@ -1,4 +1,4 @@
-$FreeBSD: ports/UIDs,v 1.34 2007/03/13 12:52:10 des Exp $
+$FreeBSD: ports/UIDs,v 1.35 2007/03/24 05:10:35 marcus Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53:Bind Sandbox:/:/sbin/nologin
@@ -112,4 +112,5 @@ _xsi:*:600:600:XMLSysInfo User:/nonexistent:/sbin/nologin
 bnetd:*:700:700:Bnetd user:/nonexistent:/sbin/nologin
 bopm:*:717:717:Blitzed Open Proxy Monitor:/nonexistent:/bin/sh
 openxpki:*:777:777:OpenXPKI Owner:/nonexistent:/usr/sbin/nologin
+netdisco:*:840:840:netdisco daemon:/nonexistent:/usr/sbin/nologin
 bacula:*:910:910:Bacula Daemon:/var/db/bacula:/sbin/nologin

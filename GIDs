@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.31 2007/03/24 02:31:38 pav Exp $
+$FreeBSD: ports/GIDs,v 1.32 2007/03/24 05:10:35 marcus Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -103,4 +103,5 @@ _xsi:*:600:
 bnetd:*:700:
 bopm:*:717:
 openxpki:*:777:
+netdisco:*:840:
 bacula:*:910:
