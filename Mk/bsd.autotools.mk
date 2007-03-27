@@ -1,14 +1,14 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.25 2006/12/04 01:07:25 ade Exp $
+# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.26 2007/03/24 14:02:06 pav Exp $
 #
 # Please view me with 4 column tabs!
 #
 # Please make sure all changes to this file are passed either through
 # the maintainer, or portmgr@FreeBSD.org
 
-Autotools_Include_MAINTAINER=	ade@FreeBSD.org
+Autotools_Include_MAINTAINER=	jylefort@FreeBSD.org
 
 #---------------------------------------------------------------------------
 # IMPORTANT!  READ ME!  YES, THAT MEANS YOU!
