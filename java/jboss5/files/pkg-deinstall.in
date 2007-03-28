@@ -5,7 +5,7 @@
 # * Checks if the JBoss PID file exists. If it does, it kills the
 #   JBoss process and removes the PID file.
 #
-# $FreeBSD: ports/java/jboss3/pkg-deinstall,v 1.1 2002/04/26 21:54:15 znerd Exp $
+# $FreeBSD$
 #
 
 # Make sure we're in the right stage of the process
