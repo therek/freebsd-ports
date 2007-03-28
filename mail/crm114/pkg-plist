@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/crm114/pkg-plist,v 1.4 2006/04/29 13:30:25 lawrance Exp $
+@comment $FreeBSD: ports/mail/crm114/pkg-plist,v 1.5 2007/01/12 23:53:43 gabor Exp $
 bin/crm
 bin/cssdiff
 bin/cssmerge
@@ -25,6 +25,7 @@ bin/osbf-util
 %%EXAMPLESDIR%%/mailreaver.crm
 %%EXAMPLESDIR%%/maillib.crm
 %%EXAMPLESDIR%%/mailtrainer.crm
+%%EXAMPLESDIR%%/shuffle.crm
 %%EXAMPLESDIR%%/matchtest.crm
 %%EXAMPLESDIR%%/overalterisolatedtest.crm
 %%EXAMPLESDIR%%/windowtest.crm
