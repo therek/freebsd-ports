@@ -100,10 +100,13 @@ upgrades.
 
   As a result of the upgrade to gettext-0.16.1, the shared library version
   of libintl has changed, so you will need to rebuild all ports that
-  depend on gettext (ie: most of them, sorry).
+  depend on gettext (ie: most of them, sorry):
 
-  portupgrade -rf gettext
-  portmaster -r gettext
+    portupgrade -rf gettext
+
+  or
+
+    portmaster -r gettext
 
   In addition, if you have multimedia/vlc installed, you should deinstall
   it *before* either of the above commands, and reinstall it manually
@@ -5009,4 +5012,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.488 2007/03/27 13:09:37 mezz Exp $
+$FreeBSD: ports/UPDATING,v 1.489 2007/03/27 20:11:15 bsam Exp $
