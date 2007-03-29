@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailfront/pkg-plist,v 1.8 2006/09/21 10:25:16 sergei Exp $
+@comment $FreeBSD: ports/mail/mailfront/pkg-plist,v 1.9 2007/03/21 16:30:17 sergei Exp $
 bin/imapfront-auth
 bin/mailfront
 bin/pop3front-auth
@@ -29,6 +29,7 @@ libexec/mailfront/protocol-qmqp.so
 libexec/mailfront/protocol-qmtp.so
 libexec/mailfront/protocol-smtp.so
 @dirrmtry libexec/mailfront
+@dirrm include/mailfront
 %%PORTDOCS%%%%DOCSDIR%%/NEWS
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/TODO
