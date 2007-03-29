@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1335 2007/03/28 18:54:13 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1336 2007/03/29 10:38:32 rafan Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2893,3 +2893,4 @@ japanese/gnome||2007-03-28|Has expired: Broken on all supported versions of Free
 japanese/gnomelibs||2007-03-28|Has expired: Broken on all supported versions of FreeBSD
 x11-toolkits/ruby-fox|x11-toolkits/ruby-fox10|2007-03-29|rename for supporting multiple fox version
 x11-toolkits/ruby-fox-devel|x11-toolkits/ruby-fox12|2007-03-29|rename for supporting multiple fox version
+lang/tcl81-thread||2007-03-29|Remove an ancient, unused tcl version
