@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.79 2006/05/01 16:54:40 clement Exp $
+@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.80 2006/11/01 15:47:50 clement Exp $
 @exec mkdir -p %D/etc/apache2 2> /dev/null
 @unexec if cmp -s %D/etc/apache2/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache2/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd-std.conf
@@ -164,6 +164,7 @@ libexec/apache2/httpd.exp
 %%MOD_DEFLATE%%libexec/apache2/mod_deflate.so
 %%MOD_DIR%%libexec/apache2/mod_dir.so
 %%MOD_DISK_CACHE%%libexec/apache2/mod_disk_cache.so
+%%MOD_DUMPIO%%libexec/apache2/mod_dumpio.so
 %%MOD_ENV%%libexec/apache2/mod_env.so
 %%MOD_EXPIRES%%libexec/apache2/mod_expires.so
 %%MOD_EXT_FILTER%%libexec/apache2/mod_ext_filter.so
