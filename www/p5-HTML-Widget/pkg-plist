@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/p5-HTML-Widget/pkg-plist,v 1.9 2006/10/01 12:55:30 lbr Exp $                                                             
+@comment $FreeBSD: ports/www/p5-HTML-Widget/pkg-plist,v 1.10 2007/03/06 21:31:39 lbr Exp $                                                             
 %%SITE_PERL%%/HTML/Widget.pm
 %%SITE_PERL%%/HTML/Widget/Accessor.pm
 %%SITE_PERL%%/HTML/Widget/BlockContainer.pm
@@ -7,7 +7,7 @@
 %%SITE_PERL%%/HTML/Widget/Constraint/All.pm
 %%SITE_PERL%%/HTML/Widget/Constraint/AllOrNone.pm
 %%SITE_PERL%%/HTML/Widget/Constraint/Any.pm
-%%SITE_PERL%%/HTML/Widget/Constraint/Boll.pm
+%%SITE_PERL%%/HTML/Widget/Constraint/Bool.pm
 %%SITE_PERL%%/HTML/Widget/Constraint/Callback.pm
 %%SITE_PERL%%/HTML/Widget/Constraint/CallbackOnce.pm
 %%SITE_PERL%%/HTML/Widget/Constraint/Date.pm
