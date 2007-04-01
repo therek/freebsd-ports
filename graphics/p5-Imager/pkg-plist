@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/p5-Imager/pkg-plist,v 1.9 2006/07/25 09:59:08 lbr Exp $
+@comment $FreeBSD: ports/graphics/p5-Imager/pkg-plist,v 1.10 2007/01/05 18:17:34 lbr Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/API.pod
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/APIRef.pod
@@ -53,12 +53,14 @@
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/imexttypes.h
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/imio.h
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/imperl.h
+%%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/imrender.h
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/iolayer.h
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/iolayert.h
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/log.h
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/plug.h
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/ppport.h
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/regmach.h
+%%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/rendert.h
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/include/stackmach.h
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/interface.pod
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/regmach.pod
