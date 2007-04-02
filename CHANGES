@@ -10,6 +10,22 @@ in the release notes.
 
 All ports committers are allowed to commit to this file.
 
+20070403:
+AUTHOR: portmgr@FreeBSD.org
+The following changes were made to the ports infrastructure:
+
+  * The default dependency of USE_GHOSTSCRIPT has been changed from
+    ghostscript-gnu to ghostscript-gpl.  The WITH_GHOSTSCRIPT_GPL variable is
+    now no-op.  New WITH_GHOSTSCRIPT_GNU variable was added.
+
+  * bsd.tcl.mk was overhauled.  Most importantly, the semantics of USE_TCL* and
+    USE_TK* variables was changed.  USE_TCL and USE_TK now implies both build
+    and run dependencies, USE_TCL_RUN and USE_TK_BUILD variables were
+    introduced. Existing ports in the tree were modified.
+
+  * Unused category tcl81 was removed, and new categories tcl and tk were
+    added.
+
 20070324:
 AUTHOR: portmgr@FreeBSD.org
 The following changes were made to the ports infrastructure:
@@ -1304,4 +1320,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.66 2007/03/06 06:21:46 linimon Exp $
+$FreeBSD: ports/CHANGES,v 1.67 2007/03/24 14:02:05 pav Exp $
