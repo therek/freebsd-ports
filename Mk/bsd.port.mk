@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.561 2007/04/02 22:44:52 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.562 2007/04/02 22:55:29 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -355,12 +355,13 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  Some installations may wish to override the default
 #				  to specify a version without X11 and/or localized
 #				  versions for their nationality.
-# WITH_GHOSTSCRIPT_GPL
-#				- If set, this port uses the GPL version of the ghostscript
-#				  software instead of the GNU version, which is used otherwise.
+#				  Default: print/ghostscript-gpl
 # WITH_GHOSTSCRIPT_AFPL
 #				- If set, this port uses the AFPL version of the ghostscript
-#				  software instead of the GNU version, which is used otherwise.
+#				  software instead of the GPL version, which is used otherwise.
+# WITH_GHOSTSCRIPT_GNU
+#				- If set, this port uses the GNU version of the ghostscript
+#				  software instead of the GPL version, which is used otherwise.
 ##
 # USE_BISON		- If set, this port uses bison for building.
 ##
@@ -2031,20 +2032,20 @@ CONFIGURE_ARGS+=--x-libraries=${X11BASE}/lib --x-includes=${X11BASE}/include
 # Set the default for the installation of Postscript(TM)-
 # compatible functionality.
 .if !defined(WITHOUT_X11)
-.if defined(WITH_GHOSTSCRIPT_AFPL)
-GHOSTSCRIPT_PORT?=	print/ghostscript-afpl
-.elif defined(WITH_GHOSTSCRIPT_GPL)
-GHOSTSCRIPT_PORT?=	print/ghostscript-gpl
-.else
+.if defined(WITH_GHOSTSCRIPT_GNU)
 GHOSTSCRIPT_PORT?=	print/ghostscript-gnu
+.elif defined(WITH_GHOSTSCRIPT_AFPL)
+GHOSTSCRIPT_PORT?=	print/ghostscript-afpl
+.else
+GHOSTSCRIPT_PORT?=	print/ghostscript-gpl
 .endif
 .else
-.if defined(WITH_GHOSTSCRIPT_AFPL)
-GHOSTSCRIPT_PORT?=	print/ghostscript-afpl-nox11
-.elif defined(WITH_GHOSTSCRIPT_GPL)
-GHOSTSCRIPT_PORT?=	print/ghostscript-gpl-nox11
-.else
+.if defined(WITH_GHOSTSCRIPT_GNU)
 GHOSTSCRIPT_PORT?=	print/ghostscript-gnu-nox11
+.elif defined(WITH_GHOSTSCRIPT_AFPL)
+GHOSTSCRIPT_PORT?=	print/ghostscript-afpl-nox11
+.else
+GHOSTSCRIPT_PORT?=	print/ghostscript-gpl-nox11
 .endif
 .endif
 
