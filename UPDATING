@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070402:
+  AFFECTS: users of devel/cvstrac
+  AUTHOR: nkoch@demig.de
+
+  cvstrac is changed to use SQLite 3, users should backup their database
+  then restore after upgrading. For example,
+
+  mv cvstrac.db cvstrac_2.db
+  sqlite cvstrac_2.db .dump | sqlite3 cvstrac.db
+
 20070327:
   AFFECTS: users of emulators/linux_base-fc6
   AUTHOR: bsam@FreeBSD.org
@@ -5001,4 +5011,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.490 2007/03/28 20:16:53 pav Exp $
+$FreeBSD: ports/UPDATING,v 1.491 2007/03/29 19:34:17 mezz Exp $
