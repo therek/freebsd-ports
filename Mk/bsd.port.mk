@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.560 2007/04/02 22:42:38 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.561 2007/04/02 22:44:52 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1504,7 +1504,7 @@ PERL=		${LOCALBASE}/bin/perl
 .include "${PORTSDIR}/Mk/bsd.ocaml.mk"
 .endif
 
-.if defined(USE_TCL) || defined(USE_TCL_BUILD) || defined(USE_TK) || defined(USE_TK_BUILD)
+.if defined(USE_TCL) || defined(USE_TCL_BUILD) || defined(USE_TCL_RUN) || defined(USE_TCL_WRAPPER) || defined(USE_TK) || defined(USE_TK_BUILD) || defined(USE_TK_RUN) || defined(USE_TK_WRAPPER)
 .include "${PORTSDIR}/Mk/bsd.tcl.mk"
 .endif
 
