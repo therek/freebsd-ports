@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.414 2007/03/11 22:13:19 stas Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.415 2007/03/24 18:50:20 lofi Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -968,11 +968,11 @@ MASTER_SITE_RINGSERVER+=	\
 
 .if !defined(IGNORE_MASTER_SITE_RUBY)
 MASTER_SITE_RUBY+= \
-	ftp://ftp.iij.ad.jp/pub/lang/ruby/%SUBDIR%/ \
+	ftp://ftp.SpringDaemons.com/pub/ruby/ruby/%SUBDIR%/ \
+	ftp://ftp.ruby-lang.org/pub/ruby/%SUBDIR%/ \
 	http://www.ibiblio.org/pub/languages/ruby/%SUBDIR%/ \
 	ftp://xyz.lcs.mit.edu/pub/ruby/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,lang/ruby/&,} \
-	ftp://ftp.ruby-lang.org/pub/ruby/%SUBDIR%/ \
 	ftp://ftp.fu-berlin.de/unix/languages/ruby/%SUBDIR%/ \
 	ftp://ftp.easynet.be/ruby/ruby/%SUBDIR%/ \
 	ftp://ftp.ntua.gr/pub/lang/ruby/%SUBDIR%/ \
