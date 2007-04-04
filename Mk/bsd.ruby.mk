@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.158 2007/02/13 10:33:46 stas Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.159 2007/04/03 21:57:47 stas Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -74,6 +74,8 @@ Ruby_Include_MAINTAINER=	stas@FreeBSD.org
 #			  suffix in the form of `xyz'.
 # RUBY_PORTVERSION	- PORTVERSION for the standard ruby ports (ruby,
 #			  ruby-gdbm, etc.).
+# RUBY_PORTREVISION	- PORTREVISION for the standard ruby ports.
+# RUBY_PORTEPOCH	- PORTEPOCH for the standard ruby ports.
 # RUBY_DISTNAME		- DISTNAME for the standard ruby ports, i.e. the
 #			  basename of the ruby distribution tarball.
 # RUBY_DISTVERSION	- The version number part of RUBY_DISTNAME.
@@ -161,6 +163,7 @@ RUBY?=			${LOCALBASE}/bin/${RUBY_NAME}
 .if defined(RUBY_VER) && ${RUBY_VER} == 1.8
 RUBY_RELVERSION=	1.8.6
 RUBY_PORTREVISION=	0
+RUBY_PORTEPOCH=		1
 RUBY_PATCHLEVEL=	0
 
 .if ${RUBY_PATCHLEVEL} == 0
