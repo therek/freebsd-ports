@@ -6,6 +6,41 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070404:
+  AFFECTS: users of graphics/gimp and graphics/gimp-devel
+  AUTHOR: ahze@FreeBSD.org
+
+  The gimp[-devel] port is now a meta-port so users will need to upgrade via
+  one of the following examples
+
+  portmaster users:
+   (gimp)
+  portmaster -o graphics/gimp-app gimp
+  portmaster -u graphics/gimp
+   (gimp-devel)
+  portmaster -o graphics/gimp-app-devel gimp-devel
+  portmaster -u graphics/gimp-devel
+
+  portupgrade users:
+   (gimp)
+  portupgrade -o graphics/gimp-app gimp
+  portupgrade -u graphics/gimp
+
+20070404:
+  AFFECTS: users of print/gutenprint
+  AUTHOR: ahze@FreeBSD.org
+
+  The gutenprint port is now a meta-port so users will need to upgrade via
+  one of the following examples
+
+  portmaster users:
+  portmaster -o print/gutenprint-base gutenprint
+  portmaster -u print/gutenprint
+
+  portupgrade users:
+  portupgrade -o print/gutenprint-base gutenprint
+  portupgrade -u print/gutenprint
+  
 20070402:
   AFFECTS: users of devel/cvstrac
   AUTHOR: nkoch@demig.de
@@ -5011,4 +5046,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.491 2007/03/29 19:34:17 mezz Exp $
+$FreeBSD: ports/UPDATING,v 1.492 2007/04/02 16:48:58 rafan Exp $
