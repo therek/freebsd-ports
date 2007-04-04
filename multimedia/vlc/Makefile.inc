@@ -4,7 +4,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.4 2006/12/01 07:38:57 pav Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.5 2007/03/17 22:40:22 ade Exp $
 #    $MCom: ports/multimedia/vlc/Makefile.inc,v 1.3 2006/09/30 18:15:02 ahze Exp $
 #
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -254,8 +254,11 @@ post-patch:
 	@${REINPLACE_CMD} -e 's/-lpthread/${PTHREAD_LIBS}/' \
 		-e 's/-lc_r/${PTHREAD_LIBS}/' \
 		-e 's|-mcpu=pentiumpro||' \
-		-e 's|postproc/postprocess.h|ffmpeg/postproc/postprocess.h|' \
 		${WRKSRC}/configure
+.if ${FFMPEG:L}=="old"
+	@${REINPLACE_CMD} -e 's|postproc/postprocess.h|ffmpeg/postproc/postprocess.h|' \
+			${WRKSRC}/configure
+.endif
 # cdrom/dvd support
 	@${REINPLACE_CMD} -e 's|/dev/cdrom|${DEFAULT_CDROM_DEVICE}|; \
 		s|/dev/dvd|${DEFAULT_DVD_DEVICE}|' \
