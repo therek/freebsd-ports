@@ -6,6 +6,19 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070405:
+  AFFECTS: users of print/ghostscript-*
+  AUTHOR: rafan@FreeBSD.org
+
+  The default ghostscript port is changed from ghostscript-gnu to
+  ghostscript-gpl. To upgrade
+
+  portupgrade -o print/ghostscript-gpl ghostscript-gnu
+  portmaster -o print/ghostscript-gpl ghostscript-gnu
+
+  If you want to use the ghostscript-gnu as default, put
+  WITH_GHOSTSCRIPT_GNU=yes in your make.conf.
+
 20070404:
   AFFECTS: users of graphics/gimp and graphics/gimp-devel
   AUTHOR: ahze@FreeBSD.org
@@ -5049,4 +5062,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.493 2007/04/04 15:32:04 ahze Exp $
+$FreeBSD: ports/UPDATING,v 1.494 2007/04/04 16:11:52 ahze Exp $
