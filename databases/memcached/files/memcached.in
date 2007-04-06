@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/memcached/files/memcached.in,v 1.1 2006/02/02 14:30:46 mnag Exp $
+# $FreeBSD: ports/databases/memcached/files/memcached.in,v 1.2 2006/02/21 19:37:31 seanc Exp $
 #
 # PROVIDE: memcached
 # REQUIRE: DAEMON
@@ -27,5 +27,7 @@ load_rc_config ${name}
 
 command=%%PREFIX%%/bin/memcached
 command_args="-d -u ${memcached_user}"
+
+unset memcached_user
 
 run_rc_command "$1"
