@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.563 2007/04/02 23:00:50 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.564 2007/04/05 13:52:44 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3303,8 +3303,8 @@ check-vulnerable:
 .endif
 
 # set alg to any of SIZE, MD5, SHA256 (or any other checksum algorithm):
-DISTINFO_DATA?=	DIR=${DIST_SUBDIR}; ${AWK} -v alg=$$alg \
-    -v file=$${DIR:+$$DIR/}$${file}	\
+DISTINFO_DATA?=	if [ \( -n "${DISABLE_SIZE}" -a -n "${NO_CHECKSUM}" \) -o ! -f "${MD5_FILE}" ]; then exit; fi; \
+	DIR=${DIST_SUBDIR}; ${AWK} -v alg=$$alg -v file=$${DIR:+$$DIR/}$${file}	\
 		'$$1 == alg && $$2 == "(" file ")" {print $$4}' ${MD5_FILE}
 
 # Fetch
