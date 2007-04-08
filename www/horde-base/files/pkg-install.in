@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/horde/files/pkg-install.in,v 1.2 2005/11/13 20:30:47 thierry Exp $
+# $FreeBSD: ports/www/horde-base/files/pkg-install.in,v 1.3 2006/04/15 16:18:18 scrappy Exp $
 #
 # Copied from databases/phpmyadmin.
 # Used if WITH_SUPHP has been defined.
@@ -9,7 +9,7 @@ PATH=/usr/sbin:/usr/bin:/bin ; export PATH
 
 WITH_SUPHP=%%WITH_SUPHP%%
 
-hordedir=%%HORDEDIR%%
+hordedir=%%HORDIR%%
 hordeusr=%%HORDEADMUSR%%
 hordegrp=%%HORDEGRP%%
 
@@ -104,9 +104,9 @@ case $2 in
         if [ -z "${PACKAGE_BUILDING}" ]; then
             # Copy over sample config files unless they already exist
 
-            for cf in `ls %%HORDEDIR%%/config/*.dist | sed -e 's/\.dist//g'`; do
-                if [ ! -f $cf ]; then
-                    cp -p $cf.dist $cf
+            for cf in %%HORDIR%%/config/*.dist; do
+                if [ ! -f ${cf%.dist} ]; then
+                    cp -p $cf ${cf%.dist}
                 fi
             done
         fi
