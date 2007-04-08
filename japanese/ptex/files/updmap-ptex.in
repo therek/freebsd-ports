@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/ptex-tetex/files/updmap-ptex.in,v 1.2 2005/07/30 12:12:51 hrs Exp $
+# $FreeBSD$
 
 WEB2C="\$TEXMF/web2c{/ptex,}"; export WEB2C
 TEXPSHEADERS="\$TEXMF/{dvips{/ptex,},fonts/{enc,type1,type3}}//"; export TEXPSHEADERS
