@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.knobs,v 1.39 2006/12/04 03:44:12 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.knobs,v 1.40 2007/01/07 12:45:06 maho Exp $
 
 .if !defined(WITH_GNUGCJ)
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
@@ -35,6 +35,13 @@ USE_GNOME+=		gnomevfs2
 CONFIGURE_ARGS+=	--enable-evolution2=yes
 .else
 USE_GNOME+=		glib20
+.endif
+
+.if defined(WITH_SYSTEM_FREETYPE)
+LIB_DEPENDS+=		freetype.9:${PORTSDIR}/print/freetype2
+CONFIGURE_ARGS+=	--with-system-freetype=yes
+.else
+CONFIGURE_ARGS+=	--with-system-freetype=no
 .endif
 
 .if defined(ALL_LOCALIZED_LANGS)
@@ -85,6 +92,10 @@ pre-fetch:
 	@${ECHO} "You can compile OOo without gnome VFS support with"
 	@${ECHO} "make -DWITHOUT_GNOMEVFS"
 .endif
+.if !defined(WITH_SYSTEM_FREETYPE)
+	@${ECHO}
+	@${ECHO} "You can compile OOo with freetype2 from ports with"
+	@${ECHO} "make -DWITH_SYSTEM_FREETYPE"
 .if !defined(WITH_TTF_BYTECODE_ENABLED)
 	@${ECHO}
 	@${ECHO} "You may get better quality of glyphs"
@@ -93,6 +104,7 @@ pre-fetch:
 	@${ECHO} "US05155805 US05159668 and US05325479, with"
 	@${ECHO} "make -DWITH_TTF_BYTECODE_ENABLED"
 	@${ECHO} "See http://www.freetype.org/patents.html for details"
+.endif
 .endif
 .if !defined(LOCALIZED_LANG)
 	@${ECHO}
