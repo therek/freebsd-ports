@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.33 2007/03/27 23:45:19 shaun Exp $
+$FreeBSD: ports/GIDs,v 1.34 2007/03/31 12:53:57 laszlof Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -52,6 +52,7 @@ smokeping:*:117:
 ircproxyd:*:118:
 mythtv:*:119:
 pdns:*:120
+_ntp:*:123:
 fetchmail:*:124
 postfix:*:125:
 maildrop:*:126:
