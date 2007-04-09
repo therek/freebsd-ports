@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1340 2007/04/08 14:14:04 hrs Exp $
+# $FreeBSD: ports/MOVED,v 1.1341 2007/04/09 09:39:49 arved Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2901,3 +2901,4 @@ lang/gfortran|lang/gcc42|2007-04-06|Superseded by and equivalent to gcc42
 japanese/ptex-tetex|japanese/ptex|2007-04-08|Merged into japanese/ptex
 japanese/ptex-base|japanese/ptex|2007-04-08|Merged into japanese/ptex
 games/kgeography|misc/kdeedu3|2007-04-09|Merged into kdeedu
+games/bos|games/boswars|2007-04-09|Project name changed
