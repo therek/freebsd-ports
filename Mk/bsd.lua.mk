@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.10 2007/01/05 02:56:47 alepulver Exp $
+# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.11 2007/04/09 17:23:20 alepulver Exp $
 #
 # bsd.lua.mk - Support for Lua based ports.
 #
@@ -164,9 +164,9 @@ _LUA_PORT_socket_5.0=	net/luasocket
 _LUA_PORT_lua_5.1=		lang/lua
 _LUA_DEPTYPE_lua_5.1=	build
 
-_LUA_PORT_filename_5.1= devel/lua-filename
-_LUA_PORT_gettext_5.1=  devel/lua-gettext
-_LUA_PORT_posix_5.1=    devel/lua-posix
+_LUA_PORT_filename_5.1=	devel/lua-filename
+_LUA_PORT_gettext_5.1=	devel/lua-gettext
+_LUA_PORT_posix_5.1=	devel/lua-posix
 _LUA_PORT_pty_5.1=		devel/lua-pty
 
 .	for comp in ${_LUA_COMPS_ALL}
