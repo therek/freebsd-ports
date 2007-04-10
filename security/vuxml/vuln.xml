@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1308 2007/04/08 19:58:35 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1309 2007/04/09 20:05:50 barner Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -13681,11 +13681,12 @@ Note:  Please add new entries to the beginning of this file.
       <cvename>CVE-2005-0366</cvename>
       <url>http://eprint.iacr.org/2005/033</url>
       <url>http://lists.gnupg.org/pipermail/gnupg-announce/2005q1/000191.html</url>
+      <url>http://www.pgp.com/newsroom/ctocorner/openpgp.html</url>
     </references>
     <dates>
       <discovery>2005-02-08</discovery>
       <entry>2005-07-31</entry>
-      <modified>2005-08-03</modified>
+      <modified>2007-04-10</modified>
     </dates>
   </vuln>
 
