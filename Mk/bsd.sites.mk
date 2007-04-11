@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.415 2007/03/24 18:50:20 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.416 2007/04/03 21:58:35 stas Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -114,6 +114,11 @@ MASTER_SITE_CENKES+=	\
 	http://bsd.cenkes.org/%SUBDIR%/ \
 	http://bsd2.cenkes.org/%SUBDIR%/ \
 	http://bsd3.cenkes.org/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_CHEESESHOP)
+MASTER_SITE_CHEESESHOP+=	\
+	http://cheeseshop.python.org/packages/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_COMP_SOURCES)
@@ -1340,6 +1345,7 @@ MASTER_SITES_SUBDIRS=	\
 			APACHE_JAKARTA:${PORTNAME:S,-,/,}/source \
 			BERLIOS:${PORTNAME:L} \
 			CENKES:myports \
+			CHEESESHOP:source/${DISTNAME:C/(.).*/\1/}/${DISTNAME:C/(.*)-[0-9].*/\1/} \
 			CSME:myports \
 			DEBIAN:pool/main/${PORTNAME:C/^((lib)?.).*$/\1/}/${PORTNAME} \
 			GCC:releases/${DISTNAME} \
