@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.11 2007/04/09 17:23:20 alepulver Exp $
+# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.12 2007/04/09 17:24:21 alepulver Exp $
 #
 # bsd.lua.mk - Support for Lua based ports.
 #
@@ -187,7 +187,9 @@ _LUA_DEPTYPE_${comp}_${ver}=lib
 .			elif !defined(_LUA_FILE_${comp}_${ver})
 _LUA_FILE_${comp}_${ver}=	${LOCALBASE}/share/lua/${ver}/${comp}.lua
 .			endif
+.			if !defined(_LUA_DEPTYPE_${comp}_${ver})
 _LUA_DEPTYPE_${comp}_${ver}=run
+.			endif
 .		endfor
 .	endfor
 .endif
