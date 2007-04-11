@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1346 2007/04/10 17:40:42 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1347 2007/04/10 17:59:09 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2935,3 +2935,4 @@ www/mod_zap||2007-04-10|Has expired: Incomplete pkg-plist
 www/sahana2||2007-04-10|Has expired: Conflicting dependencies: php4 vs php5
 www/urchin5||2007-04-10|Has expired: Does not install
 databases/cyrus-smlacapd||2007-04-10|Has expired: this software is obsolete
+databases/mysql-administrator||2007-04-11|Removed
