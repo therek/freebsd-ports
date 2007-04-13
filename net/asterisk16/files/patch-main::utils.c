@@ -1,8 +1,8 @@
 
-$FreeBSD$
+$FreeBSD: ports/net/asterisk/files/patch-utils.c,v 1.1 2007/01/29 18:49:10 sobomax Exp $
 
---- utils.c
-+++ utils.c
+--- main/utils.c
++++ main/utils.c
 @@ -58,7 +58,7 @@
  static char base64[64];
  static char b2a[256];
