@@ -107,7 +107,7 @@ upgrades.
   1. Remove the current linux base port.
   2. Add to your /etc/make.conf "OVERRIDE_LINUX_BASE_PORT=fc6".
   3. Make sure no linux application is running.
-  4. Set apropriate sysctl (compat.linux.osrelease=2.6.16).
+  4. Set appropriate sysctl (compat.linux.osrelease=2.6.16).
   5. Install emulation/linux_base-fc6.
   5a. Those who use linux ports with automatic plist building should
       apply the following patch:
@@ -5088,4 +5088,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.497 2007/04/08 14:14:04 hrs Exp $
+$FreeBSD: ports/UPDATING,v 1.498 2007/04/12 12:00:26 rafan Exp $
