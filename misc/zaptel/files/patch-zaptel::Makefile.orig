@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/misc/zaptel/files/patch-zaptel::Makefile,v 1.6 2006/07/06 05:53:36 sobomax Exp $
 
 --- zaptel/Makefile
 +++ zaptel/Makefile
