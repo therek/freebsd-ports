@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/cherokee/files/cherokee.sh.in,v 1.1 2006/03/20 21:51:35 pav Exp $
+# $FreeBSD: ports/www/cherokee-devel/files/cherokee.sh.in,v 1.2 2006/07/19 18:55:37 rafan Exp $
 #
 # PROVIDE: cherokee
 # REQUIRE: %%REQUIRE%%
