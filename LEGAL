@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.533 2007/04/10 17:55:06 miwi Exp $
+# $FreeBSD: ports/LEGAL,v 1.534 2007/04/13 15:52:55 miwi Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -675,3 +675,4 @@ tw_cli-*		sysutils/tw_cli		Redistribution forbidden by
 lha-1.14i-ac*		archivers/lha-ac	No Redistribution
 GotoBLAS*		math/gotoblas		No Redistribution
 gamess.*/gamess*	science/gamess		No Redistribution
+vst_sdk2_3.zip		audio/ardour		Redistribution of the VST PlugIns SDK is not allowed
