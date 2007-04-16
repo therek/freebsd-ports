@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/pgpool/files/pgpool.in,v 1.1 2006/04/14 18:40:59 mnag Exp $
+# $FreeBSD$
 #        
 # PROVIDE: pgpool
 # REQUIRE: LOGIN
