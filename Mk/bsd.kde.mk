@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.70 2007/03/25 04:07:55 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.71 2007/04/12 12:33:34 lofi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -140,8 +140,8 @@ CONFIGURE_ENV+=	MOC="${MOC}" CPPFLAGS="${CPPFLAGS} ${QTCPPFLAGS}" LIBS="${QTCFGL
 
 # Qt 4.x common stuff
 QT_PREFIX?=	${LOCALBASE}
-MOC?=		${QT_PREFIX}/bin/moc4
-UIC?=		${QT_PREFIX}/bin/uic4
+MOC?=		${QT_PREFIX}/bin/moc-qt4
+UIC?=		${QT_PREFIX}/bin/uic-qt4
 QMAKE?=		${QT_PREFIX}/bin/qmake-qt4
 QMAKESPEC?=	${QT_PREFIX}/share/qt4/mkspecs/freebsd-g++
 
