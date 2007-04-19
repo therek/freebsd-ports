@@ -2,7 +2,7 @@
 # Date created:		1 May 2006
 # Whom:			Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/linux-seamonkey/Makefile.common,v 1.7 2006/08/03 13:33:43 sat Exp $
+# $FreeBSD: ports/www/linux-seamonkey/Makefile.common,v 1.8 2006/11/10 10:39:49 sat Exp $
 #
 
 CATEGORIES+=	linux
@@ -38,6 +38,9 @@ DESKTOP_SUFFIX?=	(Linux)
 
 _A=	>> ${TMPPLIST}
 _Q=	2>/dev/null || true
+
+post-extract:
+	@${RM} -rf ${WRKSRC}/updates
 
 .if ${CATEGORIES:Mwww}
 post-patch:
