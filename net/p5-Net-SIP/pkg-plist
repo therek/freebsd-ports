@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/p5-Net-SIP/pkg-plist,v 1.1 2007/03/02 07:09:36 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/SIP/.packlist
 %%SITE_PERL%%/Net/SIP.pm
 %%SITE_PERL%%/Net/SIP.pod
@@ -42,6 +42,10 @@
 %%SITE_PERL%%/Net/SIP/StatelessProxy.pod
 %%SITE_PERL%%/Net/SIP/Util.pm
 %%SITE_PERL%%/Net/SIP/Util.pod
+%%SITE_PERL%%/Net/SIP/Authorize.pod
+%%SITE_PERL%%/Net/SIP/ReceiveChain.pod
+%%SITE_PERL%%/Net/SIP/ReceiveChain.pm
+%%SITE_PERL%%/Net/SIP/Authorize.pm
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/SIP
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net
 @dirrm %%SITE_PERL%%/Net/SIP/Dispatcher
