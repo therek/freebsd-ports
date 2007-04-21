@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.36 2007/04/10 19:32:35 stas Exp $
+$FreeBSD: ports/GIDs,v 1.37 2007/04/11 13:27:34 miwi Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -92,6 +92,7 @@ tiarra:*:398:
 drweb:*:426:
 courier:*:465:
 _bbstored:*:505:
+nullmail:*:522:
 dkimproxy:*:525:
 ejabberd:*:544:
 qtss:*:554:
