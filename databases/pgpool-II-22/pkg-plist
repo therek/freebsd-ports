@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/pgpool/pkg-plist,v 1.2 2007/02/11 03:35:13 nork Exp $
+@comment $FreeBSD: ports/databases/pgpool-II/pkg-plist,v 1.3 2007/04/16 03:42:16 kuriyama Exp $
 bin/pcp_attach_node
 bin/pcp_detach_node
 bin/pcp_node_count
@@ -15,5 +15,7 @@ include/pcp.h
 include/pool_type.h
 lib/libpcp.a
 lib/libpcp.la
-lib/libpcp.so.0.0
+lib/libpcp.so
+lib/libpcp.so.0
 %%DATADIR%%/system_db.sql
+@dirrm %%DATADIR%%
