@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/msyslog/files/msyslogd.sh.in,v 1.1 2005/09/15 12:01:48 sem Exp $
+# $FreeBSD: ports/sysutils/msyslog/files/msyslogd.sh.in,v 1.2 2006/09/16 19:39:45 az Exp $
 #
 
 # PROVIDE: syslogd
@@ -23,7 +23,7 @@ rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/syslogd
 pidfile=/var/run/syslog.pid
-required_files=%%PREFIX%%/etc/syslogd.conf
+required_files=%%PREFIX%%/etc/syslog.conf
 
 start_precmd=start_precmd
 stop_postcmd=stop_postcmd
