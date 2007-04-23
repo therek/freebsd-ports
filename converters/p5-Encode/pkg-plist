@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/converters/p5-Encode/pkg-plist,v 1.5 2007/04/23 02:13:21 rafan Exp $
+@comment $FreeBSD: ports/converters/p5-Encode/pkg-plist,v 1.6 2007/04/23 02:14:23 rafan Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Encode/.packlist
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Encode/Byte/Byte.bs
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Encode/Byte/Byte.so
@@ -31,6 +31,7 @@
 %%SITE_PERL%%/%%PERL_ARCH%%/Encode/EBCDIC.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Encode/Encoder.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Encode/Encoding.pm
+%%SITE_PERL%%/%%PERL_ARCH%%/Encode/GSM0338.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Encode/Guess.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Encode/JP.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Encode/JP/H2Z.pm
