@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1352 2007/04/16 12:03:09 mm Exp $
+# $FreeBSD: ports/MOVED,v 1.1353 2007/04/21 15:59:37 dinoex Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2941,3 +2941,5 @@ devel/crossgo32-djgpp2-pdcurses||2007-04-14|Removed, Archaic port
 www/xsm|www/extsm|2007-04-16|was moved to resolve conflict with x11/xsm import
 lang/tk-wrapper|x11-toolkits/tk-wrapper|2007-04-16|Moved to correct category
 lang/gcc-objc|lang/gcc41|2007-04-21|Has expired, obsolete
+cad/geda-projectmanager||2007-04-23|Has expired: project dead
+audio/xmpeg3||2007-04-23|Has expired: does not work
