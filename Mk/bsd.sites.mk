@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.416 2007/04/03 21:58:35 stas Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.417 2007/04/11 07:42:33 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -467,7 +467,6 @@ MASTER_SITE_GNU+=	\
 
 .if !defined(IGNORE_MASTER_SITE_GNUPG)
 MASTER_SITE_GNUPG+= 	\
-	http://ftp.sunsite.dk/pub/security/gcrypt/%SUBDIR%/ \
 	http://ftp.linux.it/pub/mirrors/gnupg/%SUBDIR%/ \
 	ftp://ftp.demon.nl/pub/mirrors/gnupg/%SUBDIR%/ \
 	ftp://sunsite.dk/pub/security/gcrypt/%SUBDIR%/ \
