@@ -28,14 +28,14 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1317 2007/04/23 14:12:10 tobez Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1318 2007/04/25 17:04:36 erwin Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
   <vuln vid="ef2ffb03-f2b0-11db-ad25-0010b5a0a860">
-    <topic> mod_perl -- remote DOS in PATH_INFO parsing</topic>
+    <topic>mod_perl -- remote DoS in PATH_INFO parsing</topic>
     <affects>
       <package>
 	<name>mod_perl</name>
@@ -44,7 +44,7 @@ Note:  Please add new entries to the beginning of this file.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-    <p>CVE repots:</p>
+    <p>CVE reports:</p>
     <blockquote cite="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1349">
       <p>PerlRun.pm in Apache mod_perl 1.29 and earlier, and RegistryCooker.pm in
         mod_perl 2.x, does not properly escape PATH_INFO before use in a regular 
@@ -55,7 +55,7 @@ Note:  Please add new entries to the beginning of this file.
     </description>
     <references>
       <cvename>CVE-2007-1349</cvename>
-      <url>URL:http://secunia.com/advisories/24839</url>
+      <url>http://secunia.com/advisories/24839</url>
     </references>
     <dates>
       <discovery>2007-03-29</discovery>
