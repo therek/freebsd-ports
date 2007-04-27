@@ -4,7 +4,7 @@
 # This file is used to tune build time options.
 # Please refer FEATURES file distributed with the source for details.
 #
-# $FreeBSD: ports/mail/dkim-milter/Makefile.features,v 1.1 2007/04/18 06:27:20 clsung Exp $
+# $FreeBSD: ports/mail/dkim-milter/Makefile.features,v 1.2 2007/04/21 15:23:17 miwi Exp $
 #
 
 .if defined(WITH_ALLMAN_SSP_02) && !defined(WITHOUT_ALLMAN_SSP_02)
@@ -26,6 +26,11 @@
 .if defined(WITH_FLUSH_HEADERS) && !defined(WITHOUT_FLUSH_HEADERS)
 	@${REINPLACE_CMD} -e '/-D_FFR_FLUSH_HEADERS/s|^dnl ||' \
 		${WRKSRC}/dkim-filter/Makefile.m4
+.endif
+
+.if defined(WITH_HASH_BUFFERING) && !defined(WITHOUT_HASH_BUFFERING)
+	@${REINPLACE_CMD} -e '/-D_FFR_HASH_BUFFERING/s|^dnl ||' \
+		${WRKSRC}/libdkim/Makefile.m4
 .endif
 
 .if defined(WITH_LOG_SSL_ERRORS) && !defined(WITHOUT_LOG_SSL_ERRORS)
@@ -88,6 +93,12 @@
 .if defined(WITH_SET_REPLY) && !defined(WITHOUT_SET_REPLY)
 	@${REINPLACE_CMD} -e '/-D_FFR_SET_REPLY/s|^dnl ||' \
 		${WRKSRC}/dkim-filter/Makefile.m4
+.endif
+
+.if defined(WITH_STATS) && !defined(WITHOUT_STATS)
+	@${REINPLACE_CMD} -e '/-D_FFR_STATS/s|^dnl ||' \
+		${WRKSRC}/dkim-filter/Makefile.m4 \
+		${WRKSRC}/libdkim/Makefile.m4
 .endif
 
 .if defined(WITH_VBR) && !defined(WITHOUT_VBR)
