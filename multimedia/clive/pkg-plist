@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/clive/pkg-plist,v 1.1 2007/02/12 11:57:30 nivit Exp $
+@comment $FreeBSD: ports/multimedia/clive/pkg-plist,v 1.2 2007/03/09 20:15:53 nivit Exp $
 bin/clive
 %%PYTHON_SITELIBDIR%%/clive/__init__.py
 %%PYTHON_SITELIBDIR%%/clive/__init__.pyc
@@ -6,6 +6,9 @@ bin/clive
 %%PYTHON_SITELIBDIR%%/clive/cli.py
 %%PYTHON_SITELIBDIR%%/clive/cli.pyc
 %%PYTHON_SITELIBDIR%%/clive/cli.pyo
+%%PYTHON_SITELIBDIR%%/clive/login.py
+%%PYTHON_SITELIBDIR%%/clive/login.pyc
+%%PYTHON_SITELIBDIR%%/clive/login.pyo
 %%PYTHON_SITELIBDIR%%/clive/net.py
 %%PYTHON_SITELIBDIR%%/clive/net.pyc
 %%PYTHON_SITELIBDIR%%/clive/net.pyo
