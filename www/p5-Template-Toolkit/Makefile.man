@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-Template-Toolkit/Makefile.man,v 1.1 2006/05/29 12:24:01 tobez Exp $
 MAN1+=	tpage.1
 MAN1+=	ttree.1
 
@@ -44,7 +44,6 @@ MAN3+=	Template::Plugin::Format.3
 MAN3+=	Template::Plugin::HTML.3
 MAN3+=	Template::Plugin::Image.3
 MAN3+=	Template::Plugin::Iterator.3
-MAN3+=	Template::Plugin::Math.3
 MAN3+=	Template::Plugin::Pod.3
 MAN3+=	Template::Plugin::Procedural.3
 MAN3+=	Template::Plugin::String.3
