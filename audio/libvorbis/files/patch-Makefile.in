@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/audio/libvorbis/files/patch-Makefile.in,v 1.4 2005/12/03 22:13:25 naddy Exp $
+$FreeBSD: ports/audio/libvorbis/files/patch-Makefile.in,v 1.5 2007/04/30 17:47:42 mezz Exp $
 
 --- Makefile.in.orig	Sun Apr 29 22:42:17 2007
 +++ Makefile.in	Sun Apr 29 22:42:36 2007
@@ -9,6 +9,6 @@ $FreeBSD: ports/audio/libvorbis/files/patch-Makefile.in,v 1.4 2005/12/03 22:13:2
  AUTOMAKE_OPTIONS = foreign dist-zip
 -SUBDIRS = lib include doc examples vq
 +SUBDIRS = lib include $(DOC) examples vq
- m4datadir = $(datadir)/aclocal
+ m4datadir = $(prefix)/share/aclocal
  m4data_DATA = vorbis.m4
- pkgconfigdir = $(libdir)/pkgconfig
+ pkgconfigdir = $(prefix)/libdata/pkgconfig
