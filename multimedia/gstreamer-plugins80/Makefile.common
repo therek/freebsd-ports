@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.44 2007/03/21 10:11:40 pav Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.45 2007/04/29 19:15:54 mezz Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins80/Makefile.common,v 1.35 2006/10/07 19:23:51 ahze Exp $
 GST_ALL_PLUGINS= \
 		a52dec \
@@ -165,8 +165,7 @@ LIB_DEPENDS+=	cdda_interface.0:${PORTSDIR}/audio/cdparanoia
 
 # dts
 .if ${GST_PLUGIN}=="dts"
-BUILD_DEPENDS+=	${LOCALBASE}/lib/libdts_pic.a:${PORTSDIR}/multimedia/libdts
-RUN_DEPENDS+=	${LOCALBASE}/lib/libdts_pic.a:${PORTSDIR}/multimedia/libdts
+LIB_DEPENDS+=	dca.0:${PORTSDIR}/multimedia/libdca
 GST_PLIST_SUFFIX=	dec
 .endif
 
