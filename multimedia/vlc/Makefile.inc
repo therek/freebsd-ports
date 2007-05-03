@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.7 2007/04/30 16:02:28 ahze Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.8 2007/05/01 21:56:22 ahze Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -260,7 +260,7 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/lib/win32|${LOCALBASE}/lib/win32|' \
 		${WRKSRC}/loader/module.c
 .endif
-	@${REINPLACE_CMD} -e 's|dts|dca|g' ${WRKSRC}/configure
+	@${REINPLACE_CMD} -e 's|dts_free|dca_free|g' ${WRKSRC}/configure
 
 pre-configure:
 .if !exists(${LOCALBASE}/libdata/pkgconfig/libavcodec.pc) && exists(${LOCALBASE}/lib/libavformat.a)
