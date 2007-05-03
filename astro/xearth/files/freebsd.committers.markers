@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.361 2007/04/25 12:00:17 nemoliu Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.362 2007/04/27 18:21:34 araujo Exp $
 #
 # FreeBSD Project Committers
 #
@@ -27,7 +27,7 @@
  35.36,		139.31,		"                     ,daichi"	# Kawasaki, Kanagawa, Japan
  35.37200,	139.28240,	"sanpei"			# Inagi, Tokyo, Japan
 -35.13899,	138.77295,	"grog"				# Echunga, SA Australia
--34.53,		138.35,		"markp"	align=left		# Adelaide, SA Australia
+-34.53,		138.35,		"markp,benjsc"	align=left	# Adelaide, SA Australia
  34.60,		135.51,		"yoichi"			# Osaka, Osaka, Japan
  35.0,		135.47,		"maho"				# Kyoto, Kyoto, Japan
  34.47,		135.26,		"matusita"			# Ikeda, Osaka, Japan
