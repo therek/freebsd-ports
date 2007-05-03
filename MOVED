@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1361 2007/05/01 20:07:39 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1362 2007/05/02 23:38:24 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2949,3 +2949,6 @@ graphics/gstreamer-plugins-libcaca80||2007-04-29|Obsoleted, use 0.10.x version i
 devel/make||2007-04-29|Port was only useful on FreeBSD 4.x
 multimedia/libdts|multimedia/libdca|2007-05-01|Project renamed
 dns/dnscap||2007-05-03|Removed on authors request until it has reached stability
+net-im/libgaim|net-im/libpurple|2007-05-03|Project renamed
+net-im/gaim-devel|net-im/pidgin|2007-05-03|Project renamed
+net-im/gaim-consoleui-devel|net-im/finch|2007-05-03|Project renamed
