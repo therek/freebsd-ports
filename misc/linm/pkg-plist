@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/misc/linm/pkg-plist,v 1.1 2006/01/24 03:28:14 cjh Exp $
 bin/linm
 bin/linm.csh
 bin/linm.sh
@@ -27,5 +27,3 @@ lib/liblinmpluginsftp.so.0
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%NLS%%share/locale/ko/LC_MESSAGES/linm_euckr.mo
 %%NLS%%share/locale/ko/LC_MESSAGES/linm_utf8.mo
-%%NLS%%@dirrmtry share/locale/ko/LC_MESSAGES
-%%NLS%%@dirrmtry share/locale/ko

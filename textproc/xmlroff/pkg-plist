@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/xmlroff/pkg-plist,v 1.8 2006/02/23 10:39:34 ade Exp $
+@comment $FreeBSD: ports/textproc/xmlroff/pkg-plist,v 1.9 2006/06/03 18:24:15 hrs Exp $
 bin/xmlroff
 include/libfo-0.3/area/fo-area.h
 include/libfo-0.3/datatype/fo-datatype.h
@@ -365,7 +365,6 @@ share/xml/libfo-0.3.9/catalog.xml
 share/xml/libfo-0.3.9/libfo-compat.xsl
 share/xml/libfo-0.3.9/xmlroff.fo
 @dirrm share/xml/libfo-0.3.9
-@dirrmtry share/xml
 @dirrm %%DOCSDIR%%
 @dirrm include/libfo-0.3/util
 @dirrm include/libfo-0.3/property

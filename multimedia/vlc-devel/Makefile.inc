@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD$
+# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.13 2007/05/01 21:54:21 ahze Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -307,7 +307,6 @@ pre-install: build
 		&& ${FIND} -d * -type d | \
 		${SED} -e 's|^|@dirrm share/${dir}/|' >> ${PLIST}
 .endfor
-		${ECHO_CMD} "@dirrmtry share/pixmaps" >> ${PLIST}
 .if !defined(NOPORTDOCS)
 	cd ${FAKEDIR}/share/doc && ${FIND} -s * -type f -o -type l | \
 		${SED} -e 's|^|share/doc/|' >> ${PLIST} \

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/arm-elf-binutils/pkg-plist,v 1.5 2005/08/11 12:03:14 barner Exp $
+@comment $FreeBSD: ports/devel/arm-elf-binutils/pkg-plist,v 1.6 2006/02/26 00:10:27 kris Exp $
 arm-elf/bin/addr2line
 arm-elf/bin/ar
 arm-elf/bin/as
@@ -65,10 +65,6 @@ share/locale/tr/LC_MESSAGES/ld.mo
 share/locale/tr/LC_MESSAGES/opcodes.mo
 share/locale/zh_CN/LC_MESSAGES/bfd.mo
 share/locale/zh_CN/LC_MESSAGES/binutils.mo
-@dirrmtry share/locale/ro/LC_MESSAGES
-@dirrmtry share/locale/ro
-@dirrmtry share/locale/zh_CN/LC_MESSAGES
-@dirrmtry share/locale/zh_CN
 @dirrm arm-elf/bin
 @dirrm arm-elf/lib/ldscripts
 @dirrm arm-elf/lib

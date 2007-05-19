@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/math/galculator/pkg-plist,v 1.8 2006/01/22 02:26:14 edwin Exp $
+@comment $FreeBSD: ports/math/galculator/pkg-plist,v 1.9 2006/08/07 16:46:11 naddy Exp $
 bin/galculator
 share/applications/galculator.desktop
 %%DATADIR%%/glade/about.glade
@@ -20,7 +20,3 @@ share/locale/ro/LC_MESSAGES/galculator.mo
 @dirrm %%DATADIR%%/glade
 @dirrm %%DATADIR%%
 @dirrmtry share/applications
-@dirrmtry share/locale/pl/LC_MESSAGES
-@dirrmtry share/locale/pl
-@dirrmtry share/locale/ro/LC_MESSAGES
-@dirrmtry share/locale/ro

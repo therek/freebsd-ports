@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/xca/pkg-plist,v 1.4 2006/01/22 02:50:55 edwin Exp $
+@comment $FreeBSD: ports/security/xca/pkg-plist,v 1.5 2006/01/22 06:28:50 edwin Exp $
 bin/xca
 share/applications/xca.desktop
 share/pixmaps/xca.xpm
@@ -36,5 +36,4 @@ share/xca/xca-8.html
 share/xca/xca-9.html
 share/xca/xca.html
 @dirrm share/xca
-@dirrmtry share/pixmaps
 @dirrmtry share/applications

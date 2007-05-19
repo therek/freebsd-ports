@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/games/xqf/pkg-plist,v 1.11 2006/01/22 02:11:14 edwin Exp $
+@comment $FreeBSD: ports/games/xqf/pkg-plist,v 1.12 2007/02/06 20:04:55 rafan Exp $
 bin/xqf
 @exec mkdir -p %D/lib/xqf
 %%PORTDOCS%%%%DOCSDIR%%/xqfdocs.html
@@ -138,4 +138,3 @@ share/pixmaps/xqf_48x48_2.png
 @dirrm %%DATADIR%%
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 @dirrmtry share/applications
-@dirrmtry share/pixmaps

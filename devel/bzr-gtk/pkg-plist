@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/bzr-gtk/pkg-plist,v 1.1 2007/03/18 11:51:16 miwi Exp $
+@comment $FreeBSD: ports/devel/bzr-gtk/pkg-plist,v 1.2 2007/04/10 18:20:00 lwhsu Exp $
 bin/olive-gtk
 %%PYTHON_SITELIBDIR%%/olive/__init__.py
 %%PYTHON_SITELIBDIR%%/olive/add.py
@@ -186,7 +186,6 @@ share/applications/olive-gtk.desktop
 share/pixmaps/olive-gtk.png
 @dirrm share/olive/icons
 @dirrm share/olive
-@dirrmtry share/pixmaps
 @dirrmtry share/applications
 @dirrm %%PYTHON_SITELIBDIR%%/olive
 @dirrm %%PYTHON_SITELIBDIR%%/bzrlib/plugins/gtk/viz

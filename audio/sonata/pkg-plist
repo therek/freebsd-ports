@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/sonata/pkg-plist,v 1.1 2007/01/22 22:32:38 nivit Exp $
+@comment $FreeBSD: ports/audio/sonata/pkg-plist,v 1.2 2007/02/15 17:08:54 nivit Exp $
 bin/sonata
 %%PYTHON_SITELIBDIR%%/mmkeys.so
 %%PYTHON_SITELIBDIR%%/mpdclient3.py
@@ -25,4 +25,3 @@ share/pixmaps/sonatacd.png
 share/pixmaps/sonatacd_large.png
 @dirrmtry share/applications
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
-@dirrmtry share/pixmaps

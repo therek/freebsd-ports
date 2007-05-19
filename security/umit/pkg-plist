@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/umit/pkg-plist,v 1.1 2007/04/20 18:05:55 novel Exp $
 bin/umit
 bin/uninstall_umit
 config/umit/options.xml
@@ -198,4 +198,3 @@ share/pixmaps/umit/win_32.png
 share/pixmaps/umit/win_75.png
 share/pixmaps/umit/wizard_logo.png
 @dirrmtry share/pixmaps/umit
-@dirrmtry share/pixmaps
