@@ -19,7 +19,7 @@ upgrades.
 
   It is recommended that you run the xorg 7.2 upgrade inside a script(1)
   session.  This way, if something goes wrong, you will have hopefully
-  have saved enough information for the developers to debug the problem.
+  saved enough information for the developers to debug the problem.
   Make sure you choose a filesystem with lots of space for the script
   output.
 
@@ -5240,4 +5240,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.503 2007/05/20 04:31:28 marcus Exp $
+$FreeBSD: ports/UPDATING,v 1.504 2007/05/20 04:39:19 marcus Exp $
