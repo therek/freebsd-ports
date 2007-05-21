@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.565 2007/04/07 12:51:47 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.566 2007/05/19 19:57:27 flz Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2091,7 +2091,12 @@ USE_SUBMAKE=	yes
 .	if defined(USE_LINUX)
 RUN_DEPENDS+=	${LINUXBASE}/usr/X11R6/lib/libXrender.so.1:${PORTSDIR}/x11/linux-xorg-libs
 .	else
+.      if ${X_WINDOW_SYSTEM:L} == xorg
+BUILD_DEPENDS+=	${X11BASE}/libdata/xorg/libraries:${X_LIBRARIES_PORT}
+RUN_DEPENDS+=	${X11BASE}/libdata/xorg/libraries:${X_LIBRARIES_PORT}
+.      else
 LIB_DEPENDS+=	X11.6:${X_LIBRARIES_PORT}
+.      endif
 .	endif
 # Add explicit X options to avoid problems with false positives in configure
 .if defined(GNU_CONFIGURE)
