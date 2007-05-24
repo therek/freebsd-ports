@@ -1,8 +1,9 @@
 #!/usr/bin/perl
-# $FreeBSD$
+# $FreeBSD: ports/Tools/make_readmes,v 1.5 2005/03/13 08:49:38 krion Exp $
 
 $PORTSDIR="/usr/ports";
-$README=`cat ${PORTSDIR}/Templates/README.port`;
+$TEMPLATES=$ENV{TEMPLATES} || "${PORTSDIR}/Templates";
+$README=`cat ${TEMPLATES}/README.port`;
 
 while(<>) {
 	split '\|';
