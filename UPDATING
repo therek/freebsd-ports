@@ -83,7 +83,7 @@ upgrades.
   "map acl inherit".
 
 20070519:
-  AFFECTS: users of x11/xorg
+  AFFECTS: users of Xorg
   AUTHOR: kris@FreeBSD.org
 
   Welcome, fearless user!  You are about to embark upon a mystical
@@ -112,7 +112,16 @@ upgrades.
   # portupgrade -f -o ports-mgmt/portupgrade-devel portupgrade
   # rm -f /usr/ports/INDEX*.db /var/db/pkg/pkgdb.db
   # pkgdb -fu
+
+  If you have changed your ports environment in /etc/make.conf,
+  /usr/local/etc/pkgtools.conf or similar you need to rebuild INDEX:
+
   # cd /usr/ports && make index
+
+  If you have not changed your ports environment you can save some
+  time and just fetch the latest INDEX:
+
+  # cd /usr/ports && make fetchindex
 
   It is necessary to set the XORG_UPGRADE environment variable while
   updating from xorg 6.9 to 7.2.  Once the upgrade is complete this
@@ -5316,4 +5325,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.505 2007/05/21 15:50:26 flz Exp $
+$FreeBSD: ports/UPDATING,v 1.506 2007/05/24 07:58:27 krion Exp $
