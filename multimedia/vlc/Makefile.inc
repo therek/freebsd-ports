@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.9 2007/05/03 12:46:12 ahze Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.10 2007/05/19 20:18:03 flz Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -41,7 +41,7 @@
 #
 # WITH_FAAC=yes
 #  Faac audio encoder (mp4/aac) Support
-#  ** Only enable this if you compiled multimedia/ffmpeg-devel with WITH_FAAC knob **
+#  ** Only enable this if you compiled multimedia/ffmpeg with WITH_FAAC knob **
 #
 # WITH_FAAD=yes
 #  Faad audio decoder (mp4/aac) Support
@@ -261,17 +261,6 @@ post-patch:
 		${WRKSRC}/loader/module.c
 .endif
 	@${REINPLACE_CMD} -e 's|dts_free|dca_free|g' ${WRKSRC}/configure
-
-pre-configure:
-.if !exists(${LOCALBASE}/libdata/pkgconfig/libavcodec.pc) && exists(${LOCALBASE}/lib/libavformat.a)
-	@${ECHO_CMD} ""
-	@${ECHO_CMD} "ERROR: ${PKGNAME} requires a newer version of FFMpeg"
-	@${ECHO_CMD} "please deinstall multimedia/ffmpeg before continuing"
-	@${ECHO_CMD} "the build."
-	@${ECHO_CMD} ""
-	@${FALSE}
-.endif
-
 
 pre-build:
 	@${REINPLACE_CMD} -e 's|/intl/libintl.a|${WRKSRC}/intl/libintl.a|' \
