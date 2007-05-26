@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070526:
+  AFFECTS: users of devel/perforce
+  AUTHOR: lth@FreeBSD.org
+
+  Perforce has been updated to version 2006.2. Even though upgrading
+  should be fairly straightforward, it is still highly recommended
+  to follow the upgrading instructions in the release notes:
+
+    http://www.perforce.com/perforce/doc.062/user/relnotes.txt
+
 20070525:
   AFFECTS: users of textproc/{senna,p5-Senna}
   AUTHOR: kuriyama@FreeBSD.org
@@ -5333,4 +5343,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.507 2007/05/24 21:25:49 erwin Exp $
+$FreeBSD: ports/UPDATING,v 1.508 2007/05/26 12:29:44 kuriyama Exp $
