@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/ccxstream/files/ccxstream.sh.sample,v 1.1 2004/08/15 13:04:37 vanilla Exp $
+# $FreeBSD: ports/net/ccxstream/files/ccxstream.sh.sample,v 1.2 2006/02/20 20:47:20 dougb Exp $
 #
 
 # PROVIDE: ccxstream
@@ -31,7 +31,7 @@
 name="ccxstream"
 rcvar=`set_rcvar`
 
-command="%%PREFIX%%/bin/ccxstream"
+command="%%PREFIX%%/sbin/ccxstream"
 
 load_rc_config "$name"
 : ${ccxstream_enable="NO"}
