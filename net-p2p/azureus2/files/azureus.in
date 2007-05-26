@@ -1,13 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-p2p/azureus/files/azureus,v 1.8 2006/01/04 11:35:28 lioux Exp $
-
-export JAVA_VERSION
-export JAVA_OS
+# $FreeBSD: ports/net-p2p/azureus/files/azureus,v 1.9 2007/01/04 20:00:05 erwin Exp $
 
 # java
-JAVA_VERSION="%%JAVA_VERSION%%"
-JAVA_OS="%%JAVA_OS%%"
+export JAVA_VERSION="%%JAVA_VERSION%%"
+export JAVA_OS="%%JAVA_OS%%"
 
 ECLIPSE_BASE=%%LOCALBASE%%/eclipse
 ECLIPSE_SWT_JAR=%%SWTJAR%%
