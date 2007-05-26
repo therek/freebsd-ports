@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070525:
+  AFFECTS: users of textproc/{senna,p5-Senna}
+  AUTHOR: kuriyama@FreeBSD.org
+
+  Index format (binary) and some of APIs are changed.  At least you
+  need to rebuild all indexes, and maybe need to change your code (if
+  you use senna API) to follow up to new API.
+
 20070514:
   AFFECTS: users of net/samba3, japanese/samba3
   AUTHOR: timur@gnu.org
@@ -5325,4 +5333,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.506 2007/05/24 07:58:27 krion Exp $
+$FreeBSD: ports/UPDATING,v 1.507 2007/05/24 21:25:49 erwin Exp $
