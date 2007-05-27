@@ -1,7 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/sysutils/p5-Schedule-Load/pkg-plist,v 1.5 2006/07/31 13:37:08 skv Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Schedule/Load/.packlist
 bin/rschedule
 bin/slchoosed
+bin/slchoosed_watchd
 bin/slpolice
 bin/slreportd
 bin/slrsh
