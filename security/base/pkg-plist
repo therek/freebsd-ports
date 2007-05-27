@@ -1,9 +1,12 @@
-@comment $FreeBSD: ports/security/base/pkg-plist,v 1.11 2006/06/09 05:54:26 clsung Exp $
+@comment $FreeBSD: ports/security/base/pkg-plist,v 1.12 2007/02/26 21:26:34 miwi Exp $
 %%PORTDOCS%%%%DOCSDIR%%/README
+%%PORTDOCS%%%%DOCSDIR%%/README.mssql
 %%PORTDOCS%%%%DOCSDIR%%/CHANGELOG
 %%PORTDOCS%%%%DOCSDIR%%/CREDITS
 %%PORTDOCS%%%%DOCSDIR%%/TODO
 %%PORTDOCS%%%%DOCSDIR%%/UPGRADE
+%%PORTDOCS%%%%DOCSDIR%%/GPL
+%%PORTDOCS%%%%DOCSDIR%%/base_faq.rtf
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 www/base/admin/base_roleadmin.php
 www/base/admin/base_useradmin.php
