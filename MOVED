@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1367 2007/05/27 09:56:18 oliver Exp $
+# $FreeBSD: ports/MOVED,v 1.1368 2007/05/28 14:20:47 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2963,3 +2963,5 @@ multimedia/ffmpeg-devel|multimedia/ffmpeg|2007-05-25|Merged multimedia/ffmpeg-de
 devel/wfut||2007-05-27|Obsolete
 net-im/gaim-hotkeys|net-im/pidgin-hotkeys|2007-05-28|Project renamed
 
+devel/ruby-inline||2007-05-28|Has expired: New versions only available in rubygems. Use devel/rubygem-inline instead.
+devel/tkref||2007-05-28|Has expired: is seriously outdated, take a look at http://www.tcl.tk/doc/ for TCL/TK documentation
