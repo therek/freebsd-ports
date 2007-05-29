@@ -2,11 +2,11 @@
 # Date created:		30 July 2004
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/net/dhcp6/Makefile,v 1.9 2006/09/02 09:59:15 suz Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dhcp6
-PORTVERSION=	20061016
+PORTVERSION=	20070507
 #PORTREVISION=	0
 CATEGORIES=	net ipv6
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
