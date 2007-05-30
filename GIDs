@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.39 2007/04/21 15:50:18 miwi Exp $
+$FreeBSD: ports/GIDs,v 1.40 2007/04/29 23:40:23 marcus Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -85,6 +85,7 @@ smxm:*:263:
 smx:*:264:
 haclient:*:275:
 mrtg:*:279:
+prelude:*:281:
 _sphinx:*:312:
 dkfilter:*:325:
 wildfire:*:340:

@@ -1,4 +1,4 @@
-$FreeBSD: ports/UIDs,v 1.43 2007/04/21 15:50:18 miwi Exp $
+$FreeBSD: ports/UIDs,v 1.44 2007/04/29 23:40:23 marcus Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53:Bind Sandbox:/:/sbin/nologin
@@ -95,6 +95,7 @@ smxm:*:263:263:Sendmail X misc:/nonexistent:/usr/sbin/nologin
 smx:*:264:264:Sendmail X other:/nonexistent:/usr/sbin/nologin
 hacluster:*:275:275:Heartbeat cluster user:/nonexistent:/sbin/nologin
 mrtg:*:279:279:MRTG daemon:/nonexistent:/sbin/nologin
+prelude:*:281:281:Prelude user:/nonexistent:/sbin/nologin
 _sphinx:*:312:312::0:0:Sphinxsearch Owner:/nonexistent:/sbin/nologin
 dkfilter:*:325:325:DK Filter Owner:/nonexistent:/sbin/nologin
 wildfire:*:340:340::0:0:Wildfire Daemon:/nonexistent:/sbin/nologin
