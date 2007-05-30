@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/p5-Bigtop/pkg-plist,v 1.5 2007/02/16 00:18:30 clsung Exp $
+@comment $FreeBSD: ports/www/p5-Bigtop/pkg-plist,v 1.6 2007/04/03 05:56:04 clsung Exp $
 %%SITE_PERL%%/Bigtop.pm
 %%SITE_PERL%%/Bigtop/Backend/CGI.pm
 %%SITE_PERL%%/Bigtop/Backend/CGI/Gantry.pm
@@ -21,11 +21,10 @@
 %%SITE_PERL%%/Bigtop/Deparser.pm
 %%SITE_PERL%%/Bigtop/Docs/About.pod
 %%SITE_PERL%%/Bigtop/Docs/AutoBackends.pod
-%%SITE_PERL%%/Bigtop/Docs/AutoKeywords.pod
 %%SITE_PERL%%/Bigtop/Docs/Cookbook.pod
-%%SITE_PERL%%/Bigtop/Docs/Keywords.pod
+%%SITE_PERL%%/Bigtop/Docs/FullKeywords.pod
 %%SITE_PERL%%/Bigtop/Docs/Modules.pod
-%%SITE_PERL%%/Bigtop/Docs/QuickRef.pod
+%%SITE_PERL%%/Bigtop/Docs/QuickKeywords.pod
 %%SITE_PERL%%/Bigtop/Docs/QuickStart.pod
 %%SITE_PERL%%/Bigtop/Docs/Syntax.pod
 %%SITE_PERL%%/Bigtop/Docs/TOC.pod
