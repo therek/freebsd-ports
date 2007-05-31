@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/exim/options,v 1.8 2006/03/25 23:12:17 krion Exp $
+# $FreeBSD: ports/mail/exim/options,v 1.9 2006/04/04 22:27:36 krion Exp $
 #
 # Configurable options for mail/exim. Note that the options listed
 # here are the defaults, so if you want to change them you have to
@@ -70,6 +70,7 @@
 #WITH_PAM
 #WITH_AUTH_CRAM_MD5
 #WITH_AUTH_PLAINTEXT
+#WITH_AUTH_DOVECOT
 #WITH_AUTH_SPA
 # Built-in support for the PAM, RFC 2195, RFC 2595 and
 # Microsoft "Secure Password Authentication" authentication mechanisms,
@@ -228,6 +229,9 @@ WITH_AUTH_CRAM_MD5?=yes
 .endif
 .ifndef WITHOUT_AUTH_PLAINTEXT
 WITH_AUTH_PLAINTEXT?=yes
+.endif
+.ifndef WITHOUT_AUTH_DOVECOT
+WITH_AUTH_DOVECOT?=yes
 .endif
 .ifndef WITHOUT_AUTH_SPA
 WITH_AUTH_SPA?=yes
