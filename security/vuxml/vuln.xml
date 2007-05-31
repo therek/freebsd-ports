@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1331 2007/05/23 16:29:27 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1332 2007/05/25 00:37:57 marcus Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -67,6 +67,10 @@ Note:  Please add new entries to the beginning of this file.
   <vuln vid="8e01ab5b-0949-11dc-8163-000e0c2e438a">
     <topic>FreeBSD -- heap overflow in file(1)</topic>
     <affects>
+      <package>
+        <name>file</name>
+        <range><lt>4.21</lt></range>
+      </package>
       <system>
 	<name>FreeBSD</name>
 	<range><gt>6.2</gt><lt>6.2_5</lt></range>
@@ -101,6 +105,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2007-05-23</discovery>
       <entry>2007-05-23</entry>
+      <modified>2007-05-31</modified>
     </dates>
   </vuln>
 
