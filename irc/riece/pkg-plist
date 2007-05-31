@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/irc/riece/pkg-plist,v 1.16 2006/05/30 06:42:57 clsung Exp $
+@comment $FreeBSD: ports/irc/riece/pkg-plist,v 1.17 2007/01/29 11:17:39 anray Exp $
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-000.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-000.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-200.el
@@ -123,6 +123,8 @@
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-skk-kakutei.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-toolbar.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-toolbar.elc
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-twitter.el
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-twitter.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-unread.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-unread.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-url.el
