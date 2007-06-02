@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.34 2007/04/29 19:15:52 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.35 2007/06/01 20:43:27 ahze Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.38 2006/10/10 20:22:01 mezz Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -69,6 +69,7 @@ core_DEPENDS=	multimedia/gstreamer-plugins-core
 
 yes_DEPENDS=	multimedia/gstreamer-plugins
 yes_NAME=	gstreamer-plugins
+yes_GST_PREFIX=	# empty
 
 cdio_DEPENDS=	sysutils/gstreamer-plugins-cdio
 
