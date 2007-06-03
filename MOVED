@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1374 2007/06/01 20:43:26 ahze Exp $
+# $FreeBSD: ports/MOVED,v 1.1375 2007/06/02 15:37:54 gabor Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3044,3 +3044,4 @@ devel/agenda-static-libs||2007-06-02|Has expired: Agenda VR3 is dead for long ti
 devel/mipsel-linux-binutils||2007-06-02|Has expired: This is Agenda VR3-specific port, and Agenda VR3 is dead for long time.
 devel/mipsel-linux-gcc||2007-06-02|Has expired: This is Agenda VR3-specific port, and Agenda VR3 is dead for long time.
 devel/mipsel-linux-kernel-headers||2007-06-02|Has expired: This is Agenda VR3-specific port, and Agenda VR3 is dead for long time.
+net/mrtg-ping-probe|net-mgmt/mrtg-ping-probe|2007-06-03|related ports mrtg was moved to net-mgmt from net
