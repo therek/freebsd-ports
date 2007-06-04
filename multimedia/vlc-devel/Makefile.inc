@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.15 2007/05/25 17:08:35 ahze Exp $
+# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.16 2007/05/28 22:00:12 ahze Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -275,7 +275,7 @@ pre-install: build
 	${ECHO_CMD} "share/pixmaps/wxvlc.png" >> ${PLIST}
 	${ECHO_CMD} "share/applications/wxvlc.desktop" >> ${PLIST}
 .endif
-.if !defined(WITHOUT_WXGTK) || defined(WITH_SKINS)
+.if !defined(WITHOUT_WXGTK) || defined(WITH_SKINS) || !defined(WITHOUT_QT)
 	${ECHO_CMD} "@unexec ${RMDIR} %D/share/applications 2>/dev/null || ${TRUE}" >> ${PLIST}
 .endif
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} \
