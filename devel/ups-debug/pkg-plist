@@ -1,7 +1,0 @@
-@comment $FreeBSD: ports/devel/ups-debug/pkg-plist,v 1.6 2000/11/22 00:57:33 obrien Exp $
-bin/ups
-lib/X11/app-defaults/Ups
-%%PORTDOCS%%share/doc/ups/CHANGES
-%%PORTDOCS%%share/doc/ups/FAQ
-%%PORTDOCS%%share/doc/ups/README
-%%PORTDOCS%%@dirrm share/doc/ups
