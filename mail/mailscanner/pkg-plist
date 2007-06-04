@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.32 2007/01/16 21:13:02 nivit Exp $
+@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.33 2007/02/10 12:56:36 miwi Exp $
 etc/MailScanner/country.domains.conf.sample
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
@@ -63,12 +63,16 @@ libexec/MailScanner/update_virus_scanners.cron
 libexec/MailScanner/sa-update.cron
 libexec/MailScanner/antivir-autoupdate.sample
 libexec/MailScanner/antivir-wrapper.sample
+libexec/MailScanner/avast-wrapper.sample
+libexec/MailScanner/avastd-wrapper.sample
+libexec/MailScanner/avast-autoupdate.sample
 libexec/MailScanner/avg-autoupdate.sample
 libexec/MailScanner/avg-wrapper.sample
 libexec/MailScanner/bitdefender-autoupdate.sample
 libexec/MailScanner/bitdefender-wrapper.sample
 libexec/MailScanner/clamav-autoupdate.sample
 libexec/MailScanner/clamav-wrapper.sample
+libexec/MailScanner/clamd-wrapper.sample
 libexec/MailScanner/command-wrapper.sample
 libexec/MailScanner/css-autoupdate.sample
 libexec/MailScanner/css-wrapper.sample
