@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.33 2007/02/10 12:56:36 miwi Exp $
+@comment $FreeBSD: ports/mail/mailscanner-devel/pkg-plist,v 1.18 2007/05/30 06:50:20 miwi Exp $
 etc/MailScanner/country.domains.conf.sample
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
@@ -519,7 +519,6 @@ sbin/MailScanner
 %%DATADIR%%/reports/sk/sender.size.report.txt.sample
 %%DATADIR%%/reports/sk/stored.size.message.txt.sample
 %%PORTDOCS%%%%DOCSDIR%%/README.FreeBSD.port
-%%PORTDOCS%%%%DOCSDIR%%/CHANGES.port
 %%PORTDOCS%%%%DOCSDIR%%/Sophos.install.freebsd
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL.FreeBSD
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL.OpenBSD
