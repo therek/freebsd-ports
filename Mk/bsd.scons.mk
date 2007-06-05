@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.scons.mk,v 1.7 2006/09/13 03:21:31 alexbl Exp $
+# $FreeBSD: ports/Mk/bsd.scons.mk,v 1.8 2006/09/15 08:06:12 linimon Exp $
 #
 # bsd.scons.mk - Python-based SCons build system interface.
 # Author: Alexander Botero-Lowry <alexbl@FreeBSD.org>
@@ -75,14 +75,14 @@ BUILD_DEPENDS+=	${SCONS_BIN}:${SCONS_PORT}
 
 .if !target(do-build)
 do-build:
-	@cd ${WRKSRC} && \
+	@cd ${BUILD_WRKSRC} && \
 	${SETENV} ${SCONS_BUILDENV} ${SCONS_BIN} ${SCONS_ENV} ${SCONS_ARGS} \
 	${SCONS_TARGET}
 .endif
 
 .if !target(do-install)
 do-install:
-	@cd ${WRKSRC} && ${SETENV} ${SCONS_BUILDENV} ${SCONS_BIN} ${SCONS_ENV} \
-	${SCONS_ARGS} ${SCONS_INSTALL_TARGET}
+	@cd ${INSTALL_WRKSRC} && ${SETENV} ${SCONS_BUILDENV} ${SCONS_BIN} \
+	${SCONS_ENV} ${SCONS_ARGS} ${SCONS_INSTALL_TARGET}
 .endif
 
