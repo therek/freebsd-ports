@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.76 2007/03/06 06:21:46 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.77 2007/03/07 07:44:36 linimon Exp $
 #
 
 .if !defined(Java_Include)
@@ -187,8 +187,6 @@ _JAVA_PORT_NATIVE_BSDJAVA_JDK_1_5_INFO=		PORT=java/jdk15					HOME=${LOCALBASE}/j
 											VERSION=1.5.0	OS=native	VENDOR=bsdjava
 _JAVA_PORT_LINUX_BLACKDOWN_JDK_1_2_INFO=	PORT=java/linux-blackdown-jdk12	HOME=${LOCALBASE}/linux-blackdown-jdk1.2.2 \
 											VERSION=1.2.2	OS=linux	VENDOR=blackdown
-_JAVA_PORT_LINUX_BLACKDOWN_JDK_1_3_INFO=	PORT=java/linux-blackdown-jdk13	HOME=${LOCALBASE}/linux-blackdown-jdk1.3.1 \
-											VERSION=1.3.1	OS=linux	VENDOR=blackdown
 _JAVA_PORT_LINUX_BLACKDOWN_JDK_1_4_INFO=	PORT=java/linux-blackdown-jdk14	HOME=${LOCALBASE}/linux-blackdown-jdk1.4.2 \
 											VERSION=1.4.2	OS=linux	VENDOR=blackdown
 _JAVA_PORT_LINUX_SUN_JDK_1_2_INFO=			PORT=java/linux-sun-jdk12		HOME=${LOCALBASE}/linux-sun-jdk1.2.2 \
@@ -230,7 +228,6 @@ __JAVA_PORTS_ALL=	JAVA_PORT_NATIVE_FREEBSD_JDK_1_5 \
 					JAVA_PORT_LINUX_SUN_JDK_1_3 \
 					JAVA_PORT_LINUX_SUN_JDK_1_2 \
 					JAVA_PORT_LINUX_BLACKDOWN_JDK_1_4 \
-					JAVA_PORT_LINUX_BLACKDOWN_JDK_1_3 \
 					JAVA_PORT_LINUX_BLACKDOWN_JDK_1_2
 _JAVA_PORTS_ALL=	${JAVA_PREFERRED_PORTS} \
 					${_JAVA_PREFERRED_PORTS} \
