@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.36 2007/06/02 21:02:10 ahze Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.37 2007/06/07 14:04:24 ahze Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.38 2006/10/10 20:22:01 mezz Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -111,6 +111,8 @@ lame_DEPENDS=	audio/gstreamer-plugins-lame
 mad_DEPENDS=	audio/gstreamer-plugins-mad
 
 mikmod_DEPENDS=	audio/gstreamer-plugins-mikmod
+
+mp3_DEPENDS=	audio/gstreamer-plugins-mp3
 
 musepack_DEPENDS=	audio/gstreamer-plugins-musepack
 
