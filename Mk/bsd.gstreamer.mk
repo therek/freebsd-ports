@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.35 2007/06/01 20:43:27 ahze Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.36 2007/06/02 21:02:10 ahze Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.38 2006/10/10 20:22:01 mezz Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -53,15 +53,15 @@ GST_SHLIB_VERSION=	1
 #
 # These are the current supported gstreamer-plugins modules
 #
-_USE_GSTREAMER_ALL=	a52dec aalib annodex bad bz2 cairo cdaudio cdparanoia dts \
+_USE_GSTREAMER10_ALL=	a52dec aalib annodex bad bz2 cairo cdaudio cdparanoia dts \
 			dv dvd esound faac faad ffmpeg flac gconf gnomevfs \
 			gnonlin good gsm hal ivorbis jack jpeg ladspa lame \
-			libcaca libmms libpng libvisual mad mpeg2enc mpeg2dec \
+			libcaca libmms libpng libvisual mp3 mpeg2enc mpeg2dec \
 			musepack neon ogg pango pulse python sdl shout2 sidplay \
 			spc speex swfdec theora ugly vorbis wavpack xvid
 
 # other plugins
-OTHER_GSTREAMER_PLUGINS+=	core yes
+OTHER_GSTREAMER_PLUGINS+=	core yes ${_USE_GSTREAMER10_ALL} fluendo-mp3 mad
 
 _USE_GSTREAMER_ALL+=	${OTHER_GSTREAMER_PLUGINS}
 
@@ -93,6 +93,8 @@ faac_DEPENDS=	audio/gstreamer-plugins-faac
 faad_DEPENDS=	audio/gstreamer-plugins-faad
 
 flac_DEPENDS=	audio/gstreamer-plugins-flac
+
+fluendo-mp3_DEPENDS=	audio/gstreamer-plugins-fluendo-mp3
 
 gsm_DEPENDS=	audio/gstreamer-plugins-gsm
 
