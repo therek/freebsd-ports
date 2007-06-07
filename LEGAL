@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.540 2007/06/04 21:39:46 miwi Exp $
+# $FreeBSD: ports/LEGAL,v 1.541 2007/06/07 06:17:17 miwi Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -380,7 +380,8 @@ ladder.tar		games/ladder		Possible copyright problems?
 lame*			audio/lame		May be patented
 lgrind/*		print/lgrind		Contains non-free code written by
 						Van Jacobson
-libamrnb*		audio/libamrnb		No redistribution allowed
+libamrnb		audio/libamrnb		No redistribution allowed
+libamrwb		audio/libamrwb		No redistribution allowed
 libdvdcss-*.tar.bz2	multimedia/libdvdcss	CSS code may violate the DMCA
 libidea-*		security/libidea	Crypto; export-controlled
 libots-*.alpha.rpm	lang/compaq-cc		Distribution not allowed
