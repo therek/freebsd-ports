@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1339 2007/06/06 09:29:58 gabor Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1340 2007/06/07 08:42:02 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,7 +39,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>mplayer</name>
-	<range><lt>0.99.10_8</lt></range>
+	<range><lt>0.99.10_9</lt></range>
       </package>
     </affects>
     <description>
