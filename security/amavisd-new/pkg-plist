@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/amavisd-new/pkg-plist,v 1.20 2006/09/10 14:05:50 erwin Exp $
+@comment $FreeBSD: ports/security/amavisd-new/pkg-plist,v 1.21 2007/05/01 18:31:56 gabor Exp $
 @unexec if cmp -s %%PREFIX%%/etc/amavisd-custom.conf %%PREFIX%%/etc/amavisd-custom.conf-dist; then rm %%PREFIX%%/etc/amavisd-custom.conf; fi
 %%PORTDOCS%%%%DOCSDIR%%/AAAREADME.first
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL
@@ -79,3 +79,4 @@ sbin/amavisd
 sbin/amavisd-agent
 sbin/amavisd-nanny
 sbin/amavisd-release
+sbin/amavisd-requeue
