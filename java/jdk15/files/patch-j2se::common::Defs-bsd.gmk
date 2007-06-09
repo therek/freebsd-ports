@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk15/files/patch-j2se::common::Defs-bsd.gmk,v 1.5 2007/03/06 04:34:38 glewis Exp $
 
 --- ../../j2se/make/common/Defs-bsd.gmk.orig	Sun Mar  4 21:27:49 2007
 +++ ../../j2se/make/common/Defs-bsd.gmk	Sun Mar  4 21:29:16 2007
@@ -20,17 +20,3 @@ $FreeBSD$
  override OPENWIN_LIB             = $(OPENWIN_HOME)/lib
  override OTHER_M4FLAGS           = -DGNU_ASSEMBLER
  override SUN_CMM_SUBDIR          =
-@@ -463,10 +463,10 @@
- # Motif settings
- #
- # XXX: OpenBSD confirm static motif still causes issues - truk
--ifeq ($(TRUE_PLATFORM), OpenBSD)
--STATIC_MOTIF=false
--else
-+ifeq ($(TRUE_PLATFORM), NetBSD)
- STATIC_MOTIF=true
-+else
-+STATIC_MOTIF=false
- endif
- LIBM=-lm
- 
