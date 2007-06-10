@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1386 2007/06/06 14:13:51 naddy Exp $
+# $FreeBSD: ports/MOVED,v 1.1387 2007/06/09 11:59:40 hrs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3065,3 +3065,4 @@ multimedia/snd-music-duplicates||2007-06-05|Has expired: Development has been ce
 audio/freebirth||2007-06-05|Has expired: Doesn't work on FreeBSD 5.0 and higher
 net/sixxs-heartbeatd||2007-06-05|obsolete, use net/sixxs-aiccu instead
 graphics/tgif-nls|graphics/tgif|2007-06-09|graphics/tgif now supports NLS by default
+x11-wm/ion-3ds|x11-wm/ion-3|2007-06-10|Upstream project became -rc, soon to become release
