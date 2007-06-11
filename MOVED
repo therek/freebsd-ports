@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1388 2007/06/10 10:05:15 philip Exp $
+# $FreeBSD: ports/MOVED,v 1.1389 2007/06/10 13:36:10 dinoex Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3067,3 +3067,4 @@ net/sixxs-heartbeatd||2007-06-05|obsolete, use net/sixxs-aiccu instead
 graphics/tgif-nls|graphics/tgif|2007-06-09|graphics/tgif now supports NLS by default
 x11-wm/ion-3ds|x11-wm/ion-3|2007-06-10|Upstream project became -rc, soon to become release
 mail/smx|mail/meta1|2007-06-10|Project renamed
+devel/py-clientcookie||2007-06-10|Module rolled into www/py-mechanize by author
