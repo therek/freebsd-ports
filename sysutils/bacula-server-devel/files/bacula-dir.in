@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/bacula-server-devel/files/bacula-dir.sh.in,v 1.2 2006/04/07 16:34:48 garga Exp $
+# $FreeBSD$
 #
 # PROVIDE: utility
 # REQUIRE: DAEMON %%REQ_MYSQL%% %%REQ_PGSQL%%
