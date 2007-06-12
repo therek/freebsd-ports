@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+2007-05-12:
+ AFFECTS: userd of security/sshguard
+ AUTHOR: itetcu@FreeBSD.org
+
+ The port has been splitted in 3, if you use it with ipfw please:
+ # portupgrade -o security/sshguard-ipfw sshguard\*
+ or if you use it with pf:
+ # portupgrade -o security/sshguard-pf sshguard\*
+
 20070526:
   AFFECTS: users of devel/perforce
   AUTHOR: lth@FreeBSD.org
@@ -5344,4 +5353,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.510 2007/06/06 20:34:53 sem Exp $
+$FreeBSD: ports/UPDATING,v 1.511 2007/06/06 21:53:07 sem Exp $
