@@ -6,7 +6,7 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
-2007-05-12:
+20070612:
  AFFECTS: userd of security/sshguard
  AUTHOR: itetcu@FreeBSD.org
 
@@ -5353,4 +5353,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.511 2007/06/06 21:53:07 sem Exp $
+$FreeBSD: ports/UPDATING,v 1.512 2007/06/12 20:20:52 itetcu Exp $
