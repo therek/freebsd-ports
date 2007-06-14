@@ -1,9 +1,13 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-Hash-Case/pkg-plist,v 1.1 2006/08/15 15:38:55 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Hash/Case/.packlist
 %%SITE_PERL%%/Hash/Case.pm
+%%SITE_PERL%%/Hash/Case.pod
 %%SITE_PERL%%/Hash/Case/Lower.pm
+%%SITE_PERL%%/Hash/Case/Lower.pod
 %%SITE_PERL%%/Hash/Case/Preserve.pm
+%%SITE_PERL%%/Hash/Case/Preserve.pod
 %%SITE_PERL%%/Hash/Case/Upper.pm
+%%SITE_PERL%%/Hash/Case/Upper.pod
 %%SITE_PERL%%/Hash/Makefile.PL
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Hash/Case
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Hash
