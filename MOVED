@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1390 2007/06/11 01:29:42 tmclaugh Exp $
+# $FreeBSD: ports/MOVED,v 1.1391 2007/06/11 07:41:07 vs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3071,3 +3071,4 @@ devel/py-clientcookie||2007-06-10|Module rolled into www/py-mechanize by author
 lang/ghc5||2007-07-11|Outdated software, removed on upstream's request
 lang/ghc5-doc||2007-07-11|Outdated software, removed on upstream's request
 devel/hs-popenhs||2007-07-11|Remove software depending on outdated lang/ghc5
+databases/p5-DBD-Pg-13||2007-06-14|Has expired: Use databases/p5-DBD-Pg instead
