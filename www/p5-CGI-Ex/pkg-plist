@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/p5-CGI-Ex/pkg-plist,v 1.2 2007/05/01 04:00:10 clsung Exp $
+@comment $FreeBSD: ports/www/p5-CGI-Ex/pkg-plist,v 1.3 2007/05/29 07:39:04 clsung Exp $
 %%EXAMPLESDIR%%/app/cgi_ex_1.cgi
 %%EXAMPLESDIR%%/app/cgi_ex_2.cgi
 %%EXAMPLESDIR%%/benchmark/bench_auth.pl
@@ -38,9 +38,6 @@
 %%SITE_PERL%%/CGI/Ex/Fill.pm
 %%SITE_PERL%%/CGI/Ex/JSONDump.pm
 %%SITE_PERL%%/CGI/Ex/Template.pm
-%%SITE_PERL%%/CGI/Ex/Template.pod
-%%SITE_PERL%%/CGI/Ex/Template/Extra.pm
-%%SITE_PERL%%/CGI/Ex/Template/HTE.pm
 %%SITE_PERL%%/CGI/Ex/Validate.pm
 %%SITE_PERL%%/CGI/Ex/md5.js
 %%SITE_PERL%%/CGI/Ex/sha1.js
