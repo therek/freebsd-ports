@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1391 2007/06/11 07:41:07 vs Exp $
+# $FreeBSD: ports/MOVED,v 1.1392 2007/06/14 19:46:50 erwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3072,3 +3072,4 @@ lang/ghc5||2007-07-11|Outdated software, removed on upstream's request
 lang/ghc5-doc||2007-07-11|Outdated software, removed on upstream's request
 devel/hs-popenhs||2007-07-11|Remove software depending on outdated lang/ghc5
 databases/p5-DBD-Pg-13||2007-06-14|Has expired: Use databases/p5-DBD-Pg instead
+multimedia/audacious-docklet|multimedia/audacious-plugins||2007-06-15|Functionality folded into plugins package
