@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.27 2007/03/27 00:34:04 jylefort Exp $
+# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.28 2007/03/27 01:23:56 linimon Exp $
 #
 # Please view me with 4 column tabs!
 #
@@ -260,6 +260,8 @@ ${item:U}_ENV+=	${AUTOTOOLS_VARS}
 # the order of autotools running.
 
 .if !target(run-autotools)
+.ORDER: run-autotools run-autotools-aclocal patch-autotools run-autotools-autoheader run-autotools-autoconf run-autotools-automake
+
 run-autotools:: run-autotools-aclocal patch-autotools run-autotools-autoheader \
 		run-autotools-autoconf run-autotools-automake
 .endif
