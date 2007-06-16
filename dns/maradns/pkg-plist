@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/dns/maradns/pkg-plist,v 1.20 2006/01/22 01:49:24 edwin Exp $
+@comment $FreeBSD: ports/dns/maradns/pkg-plist,v 1.21 2006/12/14 13:45:02 miwi Exp $
 bin/askmara
 bin/duende
 bin/getzone
@@ -7,6 +7,8 @@ etc/mararc.sample
 etc/rc.d/maradns.sh
 etc/rc.d/zoneserver.sh
 etc/maradns/example_csv2
+@exec mkdir -p %D/etc/maradns/logger
+@dirrmtry etc/maradns/logger
 @dirrmtry etc/maradns
 sbin/maradns
 sbin/zoneserver

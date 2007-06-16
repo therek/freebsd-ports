@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/maradns/files/rc_d.sh,v 1.2 2004/07/29 20:53:08 pav Exp $
+# $FreeBSD: ports/dns/maradns/files/rc_d.sh,v 1.3 2006/02/20 20:46:57 dougb Exp $
 #
 
 # PROVIDE: %%SERVICE%%
@@ -28,11 +28,11 @@ prefix=%%PREFIX%%
 
 name="%%SERVICE%%"
 rcvar=`set_rcvar`
-command="${prefix}/sbin/${name}"
-command_args="| /usr/bin/logger -p daemon.notice -t %%SERVICE%% &"
+command="${prefix}/bin/duende"
+pidfile="/var/run/${name}.pid"
 
 load_rc_config $name
 
-flags="${%%SERVICE%%_flags}"
+flags="${prefix}/sbin/${name} ${%%SERVICE%%_flags}"
 
 run_rc_command "$1"
