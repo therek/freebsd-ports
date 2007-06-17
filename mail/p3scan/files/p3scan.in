@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/p3scan/files/p3scan.sh.in,v 1.1 2006/11/01 01:36:24 edwin Exp $
 #
 # PROVIDE: p3scan
 # REQUIRE: DAEMON
