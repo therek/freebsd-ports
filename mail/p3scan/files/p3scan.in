@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/p3scan/files/p3scan.sh.in,v 1.1 2006/11/01 01:36:24 edwin Exp $
+# $FreeBSD: ports/mail/p3scan/files/p3scan.in,v 1.1 2007/06/17 07:22:20 edwin Exp $
 #
 # PROVIDE: p3scan
 # REQUIRE: DAEMON
@@ -22,7 +22,7 @@ required_files=%%PREFIX%%/etc/p3scan/p3scan.conf
 # set defaults
 
 p3scan_enable=${p3scan_enable:-"NO"}
-p3scan_config=${p3scan_config:-"%%PREFIX%%/local/etc/p3scan/p3scan.conf"}
+p3scan_config=${p3scan_config:-"%%PREFIX%%/etc/p3scan/p3scan.conf"}
 
 load_rc_config $name
 run_rc_command "$1"
