@@ -1,8 +1,25 @@
 
-$FreeBSD$
+$FreeBSD: ports/games/rockdodger/files/patch-main.c,v 1.1 2004/12/02 15:18:44 naddy Exp $
 
 --- main.c.orig
 +++ main.c
+@@ -206,7 +206,6 @@
+ struct bangdots bdot[MAX_BANG_DOTS], *bdotptr=bdot;
+ struct spacedot sdot[MAX_SPACE_DOTS];
+ 
+-struct greeble greeb[MAX_GREEBLES];
+ struct greeble {
+     int active;
+     float x,y; // When landed, these represent an offset from the host rock
+@@ -214,6 +213,8 @@
+     int landed;
+     int boredom; // Goes up while landed
+ };
++
++struct greeble greeb[MAX_GREEBLES];
+ // }}}
+ 
+ void init_greeblies() {
 @@ -459,7 +459,7 @@
      else {
  	char s[1024];
