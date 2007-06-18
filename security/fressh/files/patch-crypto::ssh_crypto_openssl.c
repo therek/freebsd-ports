@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/security/fressh/files/patch-crypto::ssh_crypto_openssl.c,v 1.2 2006/08/10 20:33:38 simon Exp $
+$FreeBSD: ports/security/fressh/files/patch-crypto::ssh_crypto_openssl.c,v 1.3 2007/06/18 20:37:33 danfe Exp $
 
 --- crypto/ssh_crypto_openssl.c.orig
 +++ crypto/ssh_crypto_openssl.c
