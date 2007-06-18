@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/security/fressh/files/patch-crypto::ssh_crypto_openssl.c,v 1.2 2006/08/10 20:33:38 simon Exp $
 
 --- crypto/ssh_crypto_openssl.c.orig
 +++ crypto/ssh_crypto_openssl.c
@@ -13,4 +13,13 @@ $FreeBSD$
 +#include <openssl/sha.h>
  
  #include <openssl/opensslv.h>
+ 
+@@ -183,7 +183,7 @@
+ 	new_bn = BN_bin2bn(data, bytes, &((*num)->num));
+ 	if (new_bn == NULL)
+ 		return (-1);
+-	(BIGNUM *) * num = new_bn;
++	*num = (BIGNUM *) new_bn;
+ 	return (0);
+ }
  
