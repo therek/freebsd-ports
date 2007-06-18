@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.10 2007/05/19 20:18:03 flz Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.11 2007/05/25 17:08:35 ahze Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -270,17 +270,16 @@ pre-install: build
 	${RM} -rf ${PLIST} ${FAKEDIR}
 	${MKDIR} ${FAKEDIR}
 	${TOUCH} -f ${PLIST}
+	${ECHO_CMD} "share/applications/vlc.desktop" >> ${PLIST}
 .if defined(WITH_SKINS) && !defined(WITHOUT_SKINS)
 	${ECHO_CMD} "share/pixmaps/gvlc.png" >> ${PLIST}
 	${ECHO_CMD} "share/applications/svlc.desktop" >> ${PLIST}
 .endif
 .if !defined(WITHOUT_WXGTK)
 	${ECHO_CMD} "share/pixmaps/vlc.png" >> ${PLIST}
-	${ECHO_CMD} "share/applications/vlc.desktop" >> ${PLIST}
+	${ECHO_CMD} "share/applications/wxvlc.desktop" >> ${PLIST}
 .endif
-.if !defined(WITHOUT_WXGTK) || defined(WITH_SKINS)
 	${ECHO_CMD} "@unexec ${RMDIR} %D/share/applications 2>/dev/null || ${TRUE}" >> ${PLIST}
-.endif
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} \
 		${MAKEFILE} ${MAKE_ARGS} ${INSTALL_TARGET} prefix=${FAKEDIR}
 	${RM} -f ${FAKEDIR}/share/locale/locale.alias
@@ -352,7 +351,7 @@ do-install:
 	${INSTALL_DATA} ${FAKEDIR}/share/vlc/vlc48x48.png ${PREFIX}/share/pixmaps/gvlc.png
 .endif
 .if !defined(WITHOUT_WXGTK)
-	${INSTALL_DATA} ${FILESDIR}/vlc.desktop ${PREFIX}/share/applications
+	${INSTALL_DATA} ${FILESDIR}/wxvlc.desktop ${PREFIX}/share/applications
 	${INSTALL_DATA} ${FAKEDIR}/share/vlc/vlc48x48.png ${PREFIX}/share/pixmaps/vlc.png
 .endif
 .endif
