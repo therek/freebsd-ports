@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1394 2007/06/18 11:09:45 sem Exp $
+# $FreeBSD: ports/MOVED,v 1.1395 2007/06/18 15:31:38 sat Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3075,3 +3075,4 @@ databases/p5-DBD-Pg-13||2007-06-14|Has expired: Use databases/p5-DBD-Pg instead
 multimedia/audacious-docklet|multimedia/audacious-plugins|2007-06-15|Functionality folded into plugins package
 net/cacti|net-mgmt/cacti|2007-06-18|Move to net-mgmt category
 net/zabbix-agent|net-mgmt/zabbix-agent|2007-06-18|Move to net-mgmt category
+graphics/gpdf|graphics/evince|2007-06-19|Obsolete port
