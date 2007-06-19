@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/p5-DBI/pkg-plist,v 1.32 2007/02/24 11:10:00 tobez Exp $
+@comment $FreeBSD: ports/databases/p5-DBI/pkg-plist,v 1.33 2007/05/27 11:13:17 skv Exp $
 bin/dbilogstrip
 bin/dbiprof
 bin/dbiproxy
@@ -57,6 +57,8 @@ bin/dbiproxy
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/DBI/dbi_sql.h
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/DBI/dbipport.h
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/DBI/dbivport.h
+%%SITE_PERL%%/%%PERL_ARCH%%/auto/DBI/dbixs_rev.h
+%%SITE_PERL%%/%%PERL_ARCH%%/dbixs_rev.pl
 %%SITE_PERL%%/%%PERL_ARCH%%/goferperf.pl
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/DBI
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/Win32
