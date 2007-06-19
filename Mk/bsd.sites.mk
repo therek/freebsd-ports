@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.419 2007/04/28 00:11:47 shaun Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.420 2007/06/16 12:47:49 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1016,6 +1016,13 @@ MASTER_SITE_QT+= \
 	ftp://ftp.planetmirror.com.au/pub/trolltech/qt/source/%SUBDIR%/ \
 	ftp://ftp.fu-berlin.de/unix/X11/gui/Qt/source/%SUBDIR%/ \
 	ftp://ftp.trolltech.com/qt/source/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_RAR)
+.for mirror in 2 3 4 5 6 7 8 9
+MASTER_SITE_RAR+= \
+	http://files${mirror}.rarlab.com/rar/%SUBDIR%/
+.endfor
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_REDHAT_LINUX)
