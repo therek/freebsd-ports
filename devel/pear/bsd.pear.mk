@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.5 2006/01/22 05:52:05 edwin Exp $
+# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.6 2006/05/04 21:40:59 edwin Exp $
 
 # Common code for pear- ports.
 
@@ -110,7 +110,7 @@ do-generate-plist:
 	for file in ${EXAMPLES}; do echo "%%PORTDOCS%%${LEXAMPLESDIR}/$${file}"; done; \
 	echo "${LPKGREGDIR}/package.xml"; \
 	for d in ${FILES} ${FILES:H}; do echo $${d}; done | ${DIRFILTER} | \
-	    while read dir; do echo "@dirrm ${LINSTDIR}/$${dir}"; done; \
+	    while read dir; do echo "@dirrmtry ${LINSTDIR}/$${dir}"; done; \
 	for d in ${TESTS}; do echo $${d}; done | ${DIRFILTER} | \
 	    while read dir; do echo "@dirrm ${LTESTSDIR}/$${dir}"; done; \
 	for d in ${DATA}; do echo $${d}; done | ${DIRFILTER} | \
