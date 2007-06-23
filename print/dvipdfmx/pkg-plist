@@ -1,11 +1,10 @@
-@comment $FreeBSD: ports/print/dvipdfmx/pkg-plist,v 1.11 2006/02/20 20:39:52 hrs Exp $
+@comment $FreeBSD: ports/print/dvipdfmx/pkg-plist,v 1.12 2006/05/20 18:09:07 matusita Exp $
 bin/dvipdfmx
 %%FONTMAPDIR%%/cid-x.map
-%%DVIPDFMDIR%%/config/dvipdfmx.cfg
-%%DVIPDFMDIR%%/CMap/EUC-UCS2
-%%DVIPDFMDIR%%/CMap/UniKSCms-UCS2-H
-%%DVIPDFMDIR%%/CMap/UniKSCms-UCS2-V
-@dirrm %%DVIPDFMDIR%%/CMap
+%%DVIPDFMDIR%%/dvipdfmx.cfg
+%%DVIPDFMDIR%%/EUC-UCS2
+%%DVIPDFMDIR%%/UniKSCms-UCS2-H
+%%DVIPDFMDIR%%/UniKSCms-UCS2-V
 %%FONTMAPDIR%%/glyphlist.txt
 %%FONTCMAPDIR%%/adobe-cmaps
 %%FONTCMAPDIR%%/CMap
