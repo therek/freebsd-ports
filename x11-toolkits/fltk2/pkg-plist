@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/fltk2/pkg-plist,v 1.5 2007/01/15 20:07:42 miwi Exp $
+@comment $FreeBSD: ports/x11-toolkits/fltk2/pkg-plist,v 1.6 2007/03/19 03:48:18 rafan Exp $
 bin/fltk2-config
 bin/fluid2
 include/fltk/compat/FL/Enumerations.H
@@ -193,4 +193,5 @@ include/fltk/xpmImage.h
 @dirrm include/fltk
 lib/libfltk2.a
 lib/libfltk2_gl.a
+lib/libfltk2_glut.a
 lib/libfltk2_images.a
