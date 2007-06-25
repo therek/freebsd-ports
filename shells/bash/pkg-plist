@@ -1,8 +1,9 @@
-@comment $FreeBSD: ports/shells/bash/pkg-plist,v 1.19 2004/07/30 22:01:13 eik Exp $
+@comment $FreeBSD: ports/shells/bash/pkg-plist,v 1.20 2007/01/02 22:47:18 stas Exp $
 bin/bash
 bin/bashbug
 %%NLS%%share/locale/en@boldquot/LC_MESSAGES/bash.mo
 %%NLS%%share/locale/en@quot/LC_MESSAGES/bash.mo
+%%NLS%%share/locale/ru/LC_MESSAGES/bash.mo
 %%HELP%%%%DATADIR%%/alias
 %%HELP%%%%DATADIR%%/arith
 %%HELP%%%%DATADIR%%/arith_for
