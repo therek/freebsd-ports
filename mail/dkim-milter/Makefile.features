@@ -4,12 +4,8 @@
 # This file is used to tune build time options.
 # Please refer FEATURES file distributed with the source for details.
 #
-# $FreeBSD: ports/mail/dkim-milter/Makefile.features,v 1.3 2007/04/27 07:38:41 clsung Exp $
+# $FreeBSD: ports/mail/dkim-milter/Makefile.features,v 1.4 2007/05/25 22:11:33 miwi Exp $
 #
-
-.if defined(WITH_ALLMAN_SSP_02) && !defined(WITHOUT_ALLMAN_SSP_02)
-SITE_SUB+=	-e '/-D_FFR_ALLMAN_SSP_02/s|^dnl ||'
-.endif
 
 .if defined(WITH_ANTICIPATE_SENDMAIL_MUNGE) && !defined(WITHOUT_ANTICIPATE_SENDMAIL_MUNGE)
 SITE_SUB+=	-e '/-D_FFR_ANTICIPATE_SENDMAIL_MUNGE/s|^dnl ||'
