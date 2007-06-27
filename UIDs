@@ -1,4 +1,4 @@
-$FreeBSD: ports/UIDs,v 1.46 2007/06/10 13:33:05 dinoex Exp $
+$FreeBSD: ports/UIDs,v 1.47 2007/06/22 15:10:34 sat Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53:Bind Sandbox:/:/sbin/nologin
@@ -85,6 +85,7 @@ privoxy:*:201:201:Privoxy proxy user:/nonexistent:/sbin/nologin
 dspam:*:202:202:Dspam:/nonexistent:/sbin/nologin
 shoutcast:*:210:210:Shoutcast sandbox:/nonexistent:/bin/sh
 bs:*:220:220:Big Sister:/usr/local/bigsister:/bin/sh
+postgrey:*:225:225:Postgrey Owner:/nonexistent:/sbin/nologin
 fcron:*:247:247:fcron pseudo-user:/nonexistent:/sbin/nologin
 _tor:*:256:256:Tor anonymising router:/var/db/tor:/bin/sh
 _dns-proxy-tor:*:257:257:dns-proxy-tor user:/nonexistent:/sbin/nologin
