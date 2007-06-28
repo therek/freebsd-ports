@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.140 2007/03/19 05:19:11 marcus Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.414 2007/03/13 01:24:54 marcus Exp $
 #
@@ -689,9 +689,9 @@ ltverhack_PRE_PATCH+=	for file in gnome-ltmain.sh gnome-libtool; do \
 
 # Then traverse through all components, check which of them
 # exist in ${_USE_GNOME} and set variables accordingly
+.ifdef _USE_GNOME
 . for component in ${_USE_GNOME_ALL}
-_COMP_TEST=	${_USE_GNOME:M${component}}
-.  if ${_COMP_TEST:S/${component}//}!=${_COMP_TEST:S/  / /g}
+.  if ${_USE_GNOME:M${component}}!=""
 PATCH_DEPENDS+=	${${component}_PATCH_DEPENDS}
 FETCH_DEPENDS+=	${${component}_FETCH_DEPENDS}
 EXTRACT_DEPENDS+=${${component}_EXTRACT_DEPENDS}
@@ -725,6 +725,7 @@ GNOME_PRE_PATCH+=	; ${${component}_PRE_PATCH}
 
 .  endif
 . endfor
+.endif
 .endif
 
 .if defined(GNOME_PRE_PATCH)
