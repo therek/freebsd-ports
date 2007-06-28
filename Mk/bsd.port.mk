@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.568 2007/05/25 00:09:37 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.569 2007/06/16 19:07:42 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -5380,23 +5380,20 @@ PACKAGE-DEPENDS-LIST?= \
 
 ACTUAL-PACKAGE-DEPENDS?= \
 	if [ "${_LIB_RUN_DEPENDS}" != "  " ]; then \
-		for pkgname in ${PKG_DBDIR}/*; do \
+		origins=$$(for pkgname in ${PKG_DBDIR}/*; do \
 			if [ -e $$pkgname/+CONTENTS ]; then \
-				a=$${pkgname\#\#*/}; \
-				b=`${SED} -n -e "s/@comment ORIGIN://p" $$pkgname/+CONTENTS`; \
-				if [ ! -z $$b ]; then \
-					origins="$$origins $$a $$b"; \
-				fi; \
+				${ECHO_CMD} $${pkgname\#\#*/}; \
+				${SED} -n -e "s/@comment ORIGIN://p" $$pkgname/+CONTENTS; \
 			fi; \
-		done; \
+		done); \
 		for dir in ${_LIB_RUN_DEPENDS:C,[^:]*:([^:]*):?.*,\1,}; do \
 			tmp=$${dir%/*}; \
 			dir=$${tmp\#\#*/}/$${dir\#\#*/}; \
 			set -- $$origins; \
-			while [ $$\# != 0 ]; do \
-				if [ $$dir = $$2 ]; then \
+			while [ $$\# -gt 1 ]; do \
+				if [ "$$dir" = "$$2" ]; then \
 					${ECHO_CMD} $$1:$$dir; \
-					if [ -e ${PKG_DBDIR}/$$1/+CONTENTS ]; then \
+					if [ -e ${PKG_DBDIR}/$$1/+CONTENTS -a -z "${EXPLICIT_PACKAGE_DEPENDS}" ]; then \
 						packagelist="$$packagelist ${PKG_DBDIR}/$$1/+CONTENTS"; \
 					fi; \
 					break; \
