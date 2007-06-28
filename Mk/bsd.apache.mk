@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.12 2006/06/20 04:58:12 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.13 2006/11/07 09:11:53 clement Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -393,7 +393,7 @@ ap-gen-plist:
 .if defined(AP_GENPLIST)
 .   if !exists(${PLIST})
 	@${ECHO} "===>  Generating apache plist"
-	@${ECHO} "@unexec %D/sbin/apxs -e -A -n %%AP_NAME%% %D/%%APACHEMODDIR%%/%%AP_MODULE%%" > ${PLIST}
+	@${ECHO} "@unexec ${SED} -i '' '/LoadModule %%AP_NAME%%_module/d' %D/%%APACHEETCDIR%%/httpd.conf" >> ${PLIST}
 	@${ECHO} "%%APACHEMODDIR%%/%%AP_MODULE%%" >> ${PLIST}
 	@${ECHO} "@exec %D/sbin/apxs -e -A -n %%AP_NAME%% %D/%F" >> ${PLIST}
 	@${ECHO} "@unexec echo \"Don't forget to remove all ${MODULENAME}-related directives in your httpd.conf\"">> ${PLIST}
