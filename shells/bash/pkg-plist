@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/shells/bash/pkg-plist,v 1.21 2007/06/25 23:37:33 pav Exp $
+@comment $FreeBSD: ports/shells/bash/pkg-plist,v 1.22 2007/06/28 22:43:42 obrien Exp $
 bin/bash
+bin/rbash
 bin/bashbug
 %%NLS%%share/locale/en@boldquot/LC_MESSAGES/bash.mo
 %%NLS%%share/locale/en@quot/LC_MESSAGES/bash.mo
