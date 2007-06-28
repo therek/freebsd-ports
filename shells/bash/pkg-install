@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/shells/bash/pkg-install,v 1.2 2004/10/14 13:24:20 eik Exp $
+# $FreeBSD: ports/shells/bash/pkg-install,v 1.3 2007/06/28 23:25:16 obrien Exp $
 #
 
 BASH="${PKG_PREFIX-/usr/local}/bin/bash"
@@ -11,14 +11,14 @@ case $2 in
 POST-INSTALL)
   if [ -d "${SHELLS%/*}" ] && ! grep -qs "^$BASH\$" "$SHELLS"; then
     if [ `id -u` -eq 0 ]; then
-      echo "$BASH" >> "$SHELLS"
+      echo "$BASH" | /usr/bin/sed -e 's|//|/|g' >> "$SHELLS"
     else
       echo "Not root, please add $BASH to $SHELLS manually"
     fi
   fi
   if [ -d "${SHELLS%/*}" ] && ! grep -qs "^$RBASH\$" "$SHELLS"; then
     if [ `id -u` -eq 0 ]; then
-      echo "$RBASH" >> "$SHELLS"
+      echo "$RBASH" | /usr/bin/sed -e 's|//|/|g' >> "$SHELLS"
     else
       echo "Not root, please add $RBASH to $SHELLS manually"
     fi

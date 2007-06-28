@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/shells/bash/pkg-deinstall,v 1.2 2004/10/14 13:24:20 eik Exp $
+# $FreeBSD: ports/shells/bash/pkg-deinstall,v 1.3 2007/06/28 23:25:16 obrien Exp $
 #
 
 BASH="${PKG_PREFIX-/usr/local}/bin/bash"
@@ -12,7 +12,7 @@ DEINSTALL)
   if grep -qs "^$BASH\$" "$SHELLS"; then
     if [ `id -u` -eq 0 ]; then
       TMPSHELLS=`mktemp -t shells`
-      grep -v "^$BASH\$" "$SHELLS" > "$TMPSHELLS"
+      grep -v "^$(echo "$BASH" | /usr/bin/sed -e 's|//|/|g')\$" "$SHELLS" > "$TMPSHELLS"
       cat "$TMPSHELLS" > "$SHELLS"
       rm "$TMPSHELLS"
     else
@@ -22,7 +22,7 @@ DEINSTALL)
   if grep -qs "^$RBASH\$" "$SHELLS"; then
     if [ `id -u` -eq 0 ]; then
       TMPSHELLS=`mktemp -t shells`
-      grep -v "^$RBASH\$" "$SHELLS" > "$TMPSHELLS"
+      grep -v "^$(echo "$RBASH" | /usr/bin/sed -e 's|//|/|g')\$" "$SHELLS" > "$TMPSHELLS"
       cat "$TMPSHELLS" > "$SHELLS"
       rm "$TMPSHELLS"
     else
