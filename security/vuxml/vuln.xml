@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1359 2007/06/29 09:24:06 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1360 2007/06/29 09:42:05 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -38,7 +38,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>vlc -- format string vulnerability and integer overflow</topic>
     <affects>
       <package>
-	<name>vcl</name>
+	<name>vlc</name>
 	<range><lt>0.8.6c</lt></range>
       </package>
     </affects>
