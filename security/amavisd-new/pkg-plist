@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/amavisd-new/pkg-plist,v 1.21 2007/05/01 18:31:56 gabor Exp $
+@comment $FreeBSD: ports/security/amavisd-new/pkg-plist,v 1.22 2007/06/09 11:13:44 gabor Exp $
 @unexec if cmp -s %%PREFIX%%/etc/amavisd-custom.conf %%PREFIX%%/etc/amavisd-custom.conf-dist; then rm %%PREFIX%%/etc/amavisd-custom.conf; fi
 %%PORTDOCS%%%%DOCSDIR%%/AAAREADME.first
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL
@@ -22,7 +22,6 @@
 %%PORTDOCS%%%%DOCSDIR%%/README.performance
 %%PORTDOCS%%%%DOCSDIR%%/README.policy-on-notifications
 %%PORTDOCS%%%%DOCSDIR%%/README.postfix
-%%PORTDOCS%%%%DOCSDIR%%/README.postfix.old
 %%PORTDOCS%%%%DOCSDIR%%/README.postfix.html
 %%PORTDOCS%%%%DOCSDIR%%/README.protocol
 %%PORTDOCS%%%%DOCSDIR%%/README.sendmail
