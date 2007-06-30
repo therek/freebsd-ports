@@ -2,7 +2,7 @@
 
 /* * Last edited: Sep 17 14:39 1991 (mallet) */
 /*
- * $FreeBSD$
+ * $FreeBSD: ports/mail/xpbiff/files/LocPixmap.c,v 1.2 1999/08/30 12:06:30 peter Exp $
  *
  * Copyright 1991 Lionel Mallet
  *
@@ -45,6 +45,8 @@
  * LocatePixmapFile - read a pixmap file using the normal defaults
  */
 
+static char **split_path_string();
+
 Pixmap LocatePixmapFile (screen, name, srcname, srcnamelen,
 			    widthp, heightp, mask)
     Screen *screen;
@@ -63,7 +65,6 @@ Pixmap LocatePixmapFile (screen, name, srcname, srcnamelen,
     unsigned int width, height;
     int xhot, yhot;
     int i;
-    static char **split_path_string();
 
 
     /*
