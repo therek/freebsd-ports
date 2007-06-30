@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1398 2007/06/22 08:06:08 beech Exp $
+# $FreeBSD: ports/MOVED,v 1.1399 2007/06/25 14:36:31 barner Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2634,7 +2634,6 @@ www/mediawiki15||2007-01-05|Removed: No longer supported, please upgrade your wi
 ftp/gwget||2007-01-05|Has expired: fails to install
 multimedia/bsdav||2007-01-05|Has expired: does not work. We need to import bktv patches from OpenBSD to make it work
 multimedia/pitivi||2007-01-05|Has expired: Installs files during "make all"
-misc/gnomesword||2007-01-05|Has expired: Configure fails
 graphics/opendx-samples||2007-01-05|Has expired: Changes permissions on installed file usr/local/dx/java/server/nets
 graphics/panorama||2007-01-05|Has expired: segfaults on startup (GUI only, render binary still works)
 graphics/qtutils||2007-01-05|Has expired: Does not build
