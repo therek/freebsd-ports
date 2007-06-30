@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/shells/bash/pkg-plist,v 1.22 2007/06/28 22:43:42 obrien Exp $
+@comment $FreeBSD: ports/shells/bash/pkg-plist,v 1.23 2007/06/28 23:25:16 obrien Exp $
 bin/bash
 bin/rbash
 bin/bashbug
@@ -82,5 +82,3 @@ bin/bashbug
 %%NLS%%@dirrmtry share/locale/en@boldquot
 %%NLS%%@dirrmtry share/locale/en@quot/LC_MESSAGES
 %%NLS%%@dirrmtry share/locale/en@quot
-%%NLS%%@dirrmtry share/locale/ru/LC_MESSAGES
-%%NLS%%@dirrmtry share/locale/ru
