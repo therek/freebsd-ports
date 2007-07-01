@@ -10,6 +10,13 @@ in the release notes.
 
 All ports committers are allowed to commit to this file.
 
+20070701:
+AUTHOR: portmgr@FreeBSD.org
+The following change was made to the ports infrastructure:
+
+  * Virtual category 'kld' was added.  If the port installs kernel loadable
+    modules, it should be included in this category.
+
 20070524:
 AUTHOR: portmgr@FreeBSD.org
 The following changes were made to the ports infrastructure:
@@ -1351,4 +1358,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.71 2007/06/03 01:01:35 linimon Exp $
+$FreeBSD: ports/CHANGES,v 1.72 2007/06/19 05:56:21 danfe Exp $
