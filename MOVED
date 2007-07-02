@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1400 2007/06/30 19:52:38 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1401 2007/07/02 09:41:23 ale Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3082,3 +3082,4 @@ mail/mimp|mail/horde-mimp|2007-06-21|Port renamed for consistency
 mail/turba|mail/horde-turba|2007-06-21|Port renamed for consistency
 security/jeta|security/horde-jeta|2007-06-21|Port renamed for consistency
 graphics/digikamimageplugins|graphics/digikam|2007-07-02|Projects merged
+ftp/lukemftp|ftp/tnftp|2007-07-02|Vendor name change
