@@ -5,7 +5,7 @@
 # Date created:		28 March 2006
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.15 2007/03/30 07:23:11 sat Exp $
+# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.16 2007/04/22 20:12:10 sat Exp $
 #
 
 # XPI_ID		- Extension id, might be in {12345-...} or dev@org format
@@ -56,9 +56,9 @@
 #
 # Gecko 1.8 xpi engine tries to detect various compatibility issues all by itself.
 # Thus, xpi's are installed into ${LOCALBASE}/lib/xpi/${XPI_ID} by default and
-# links are made to all apps which have the engine (firefox, thunderbird and flock
-# at the moment). relink and relink-all targets can be invoked to refarm the links
-# of a single extensions or all installed extensions accordingly.
+# links are made to all apps which have the engine (firefox, thunderbird, sunbird
+# and flock at the moment). relink and relink-all targets can be invoked to refarm
+# the links of a single extensions or all installed extensions accordingly.
 #
 # In case an xpi does not have chrome.manifest, it should be generated manually by
 # a maintainer and placed in files, where it will be noticed. 
@@ -84,11 +84,12 @@ USE_ZIP=	yes
 EXTRACT_AFTER_ARGS=	-d ${WRKSRC}
 
 XPI_DISTNAME?=	${PORTNAME}
-XPI_APPS_ALL_WC=	*firefox* *thunderbird* *flock*
-# *nvu* *sunbird*
+XPI_APPS_ALL_WC=	*firefox* *thunderbird* *flock* *sunbird*
+# *nvu*
 XPI_APPS_ALL=	firefox firefox-devel linux-firefox linux-firefox-devel \
-				thunderbird linux-thunderbird flock linux-flock
-# nvu linux-nvu sunbird linux-sunbird
+				thunderbird linux-thunderbird flock linux-flock \
+				sunbird linux-sunbird
+# nvu linux-nvu 
 # Other apps: mango
 
 # === Let's process WITH_XPI into WITH_XPI_APPS
