@@ -1,4 +1,4 @@
-#$FreeBSD: ports/audio/timidity++/Makefile.interface,v 1.1 2007/03/22 16:59:22 rafan Exp $
+#$FreeBSD: ports/audio/timidity++/Makefile.interface,v 1.2 2007/07/03 09:32:54 pav Exp $
 
 # Shared by timidity++ interface ports
 
@@ -103,9 +103,6 @@ USE_XLIB=	yes
 DOCFILES=	README.xaw
 DOCLANG=	C ja_JP.eucJP
 
-.if ${OSVERSION} >= 700042
-BROKEN=		Does not compile with GCC 4.2
-.endif
 .endif
 
 .if ${INTERFACE} == "xskin"
