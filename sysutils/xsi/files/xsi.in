@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/xsi/files/xsi.in,v 1.1 2006/11/05 16:59:44 alepulver Exp $
+# $FreeBSD: ports/sysutils/xsi/files/xsi.in,v 1.2 2006/11/10 03:32:57 tmclaugh Exp $
 #
 # PROVIDE: xsi
 # REQUIRE: NETWORKING
@@ -20,6 +20,6 @@ xsi_flags=${xsi_flags-""}
 name=xsi
 rcvar=`set_rcvar`
 
-command=%%PREFIX%%/bin/${name} ${xsi_flags}
+command=%%PREFIX%%/bin/${name}
 load_rc_config ${name}
 run_rc_command "$1"
