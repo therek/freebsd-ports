@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1407 2007/07/04 17:01:30 ahze Exp $
+# $FreeBSD: ports/MOVED,v 1.1408 2007/07/04 19:12:10 mezz Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3091,3 +3091,4 @@ multimedia/libdivxencore||2007-07-04|Obsolete port
 multimedia/libdivxdecore||2007-07-04|Obsolete port
 multimedia/libdivxdecore-devel||2007-07-04|Obsolete port
 multimedia/handbrake-gtk2||2007-07-04|Obsolete, getting old to keep unsupport version around
+audio/amarokFS||2007-07-04|Removed
