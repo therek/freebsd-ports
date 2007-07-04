@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.55 2007/06/19 14:09:10 ahze Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.56 2007/06/28 11:58:21 ahze Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.63 2006/09/29 23:22:28 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -215,6 +215,7 @@ gst_gsm_LIB_DEPENDS+=	gsm.1:${PORTSDIR}/audio/gsm
 gst_gsm_DIST=	bad
 
 # ivorbis
+gst_ivorbis_USE_GSTREAMER+=	vorbis
 gst_ivorbis_LIB_DEPENDS+=	vorbisidec.1:${PORTSDIR}/audio/libtremor
 gst_ivorbis_DIST=	bad
 
