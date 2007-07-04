@@ -1,9 +1,10 @@
-@comment $FreeBSD: ports/devel/libslang2/pkg-plist,v 1.6 2006/01/22 01:46:55 edwin Exp $
+@comment $FreeBSD: ports/devel/libslang2/pkg-plist,v 1.7 2006/11/10 18:55:05 garga Exp $
 bin/slsh
 etc/slsh.rc
 include/slang.h
 include/slcurses.h
 lib/libslang.a
+lib/libslang.so.2.0.7
 lib/libslang.so.2
 lib/libslang.so
 lib/slang/v2/modules/fcntl-module.so
