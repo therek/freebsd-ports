@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.56 2007/06/28 11:58:21 ahze Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.57 2007/07/04 19:37:17 mezz Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.63 2006/09/29 23:22:28 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -268,7 +268,7 @@ gst_mad_LIB_DEPENDS+=	mad.2:${PORTSDIR}/audio/libmad \
 gst_mad_DIST=	ugly
 
 # mpeg2enc
-gst_mpeg2enc_LIB_DEPENDS+=	mjpegutils-1.9.0:${PORTSDIR}/multimedia/mjpegtools
+gst_mpeg2enc_LIB_DEPENDS+=	mjpegutils-1.9.1:${PORTSDIR}/multimedia/mjpegtools
 gst_mpeg2enc_DIST=	bad
 
 # mpeg2dec
