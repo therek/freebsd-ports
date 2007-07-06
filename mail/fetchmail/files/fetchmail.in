@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/fetchmail/files/fetchmail.in,v 1.5 2006/08/30 11:56:13 barner Exp $
+# $FreeBSD: ports/mail/fetchmail/files/fetchmail.in,v 1.6 2007/05/31 20:08:45 barner Exp $
 #
 
 # PROVIDE: fetchmail
 # REQUIRE: mail
-# BEFORE: LOGIN
 # KEYWORD: shutdown
 
 #
