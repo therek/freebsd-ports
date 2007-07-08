@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1415 2007/07/08 00:56:54 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1416 2007/07/08 00:57:28 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3097,3 +3097,4 @@ sysutils/cd-write||2007-07-06|Obsolete port
 net/rubygems-rrdtool|databases/rubygems-rrdtool|2007-07-08|Chase move of databases/rrdtool
 net/rrdman|databases/rrdman|2007-07-08|Chase move of databases/rrdtool
 net/py-rrdpipe|databases/py-rrdpipe|2007-07-08|Chase move of databases/rrdtool
+net/php5-rrdtool|databases/php5-rrdtool|2007-07-08|Chase move of databases/rrdtool
