@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1411 2007/07/06 11:39:26 jmz Exp $
+# $FreeBSD: ports/MOVED,v 1.1412 2007/07/06 12:53:32 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3094,3 +3094,4 @@ multimedia/handbrake-gtk2||2007-07-04|Obsolete, getting old to keep unsupport ve
 audio/amarokFS||2007-07-04|Removed
 net/rrdtool|databases/rrdtool|2007-07-05|Move to better category
 sysutils/cd-write||2007-07-06|Obsolete port
+net/rubygems-rrdtool|databases/rubygems-rrdtool|2007-07-08|Chase move of databases/rrdtool
