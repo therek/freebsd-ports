@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1363 2007/07/06 10:34:25 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1364 2007/07/07 08:27:53 sat Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -74,7 +74,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>typespeed</name>
-	<range><le>4.1.0</le></range>
+	<range><le>0.4.1</le></range>
       </package>
     </affects>
     <description>
@@ -95,6 +95,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2005-02-16</discovery>
       <entry>2007-07-03</entry>
+      <modified>2007-07-09</modified>
     </dates>
   </vuln>
 
