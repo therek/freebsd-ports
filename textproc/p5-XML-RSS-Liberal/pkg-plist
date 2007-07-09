@@ -1,8 +1,6 @@
-@comment $FreeBSD: ports/textproc/p5-XML-RSS-Liberal/pkg-plist,v 1.1 2006/07/11 05:26:06 rafan Exp $
+@comment $FreeBSD: ports/textproc/p5-XML-RSS-Liberal/pkg-plist,v 1.2 2007/02/05 05:13:03 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/XML/RSS/Liberal/.packlist
 %%SITE_PERL%%/XML/RSS/Liberal.pm
-%%SITE_PERL%%/XML/RSS/Liberal/Parser.pm
-@dirrmtry %%SITE_PERL%%/XML/RSS/Liberal
 @dirrmtry %%SITE_PERL%%/XML/RSS
 @dirrmtry %%SITE_PERL%%/XML
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/XML/RSS/Liberal
