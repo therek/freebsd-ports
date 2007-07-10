@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1418 2007/07/09 02:01:26 clsung Exp $
+# $FreeBSD: ports/MOVED,v 1.1419 2007/07/09 03:09:39 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2487,11 +2487,7 @@ x11-themes/e17-theme-blokkie||2006-11-01|Has expired: doesn't work with recent e
 x11-themes/e17-theme-blue_default||2006-11-01|Has expired: doesn't work with recent e17
 x11-themes/e17-theme-carbon||2006-11-01|Has expired: doesn't work with recent e17
 x11-themes/e17-theme-detour||2006-11-01|Has expired: doesn't work with recent e17
-x11-themes/e17-theme-gant||2006-11-01|Has expired: doesn't work with recent e17
-x11-themes/e17-theme-japan2007||2006-11-01|Has expired: doesn't work with recent e17
-x11-themes/e17-theme-milky||2006-11-01|Has expired: doesn't work with recent e17
 x11-themes/e17-theme-neptun||2006-11-01|Has expired: doesn't work with recent e17
-x11-themes/e17-theme-simply_white||2006-11-01|Has expired: doesn't work with recent e17
 x11-themes/e17-theme-winter||2006-11-01|Has expired: doesn't work with recent e17
 x11-themes/e17-theme-mclaren||2006-11-01|Has expired: doesn't work with recent e17
 x11-themes/e17-theme-grey||2006-11-01|Has expired: doesn't work with recent e17
