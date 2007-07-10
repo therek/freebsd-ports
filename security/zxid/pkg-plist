@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/zxid/pkg-plist,v 1.1 2007/07/09 02:24:04 clsung Exp $
 bin/zxid
 include/zxid/errmac.h
 include/zxid/saml2.h
@@ -57,5 +57,6 @@ include/zxid/zxidconf.h
 include/zxid/zxidvers.h
 include/zxid/zxwsc.h
 lib/libzxid.a
+lib/libzxid.so.0
 lib/libzxid.so.0.0
 @dirrmtry include/zxid
