@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.572 2007/06/28 16:06:02 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.573 2007/06/29 14:09:39 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1769,7 +1769,7 @@ BUILD_DEPENDS+=		gmake:${PORTSDIR}/devel/gmake
 CONFIGURE_ENV+=	MAKE=${GMAKE}
 .endif
 
-.if defined(USE_GCC)
+.if defined(USE_GCC) || defined(USE_FORTRAN)
 .include "${PORTSDIR}/Mk/bsd.gcc.mk"
 .endif
 

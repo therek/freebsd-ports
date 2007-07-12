@@ -10,6 +10,14 @@ in the release notes.
 
 All ports committers are allowed to commit to this file.
 
+20070712:
+AUTHOR: maho@FreeBSD.org
+
+  * Add knob USE_FORTRAN for ports which uses FORTRAN. All ports uses
+    FORTRAN compiler should use this knob. Usages are: USE_FORTRAN=yes
+    (default;gfortran42), USE_FROTRAN=ifc (Intel FORTRAN compiler)
+    and USE_FORTRAN=g77 (/usr/bin/f77 or g77-34).
+
 20070701:
 AUTHOR: portmgr@FreeBSD.org
 The following change was made to the ports infrastructure:
@@ -1358,4 +1366,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.72 2007/06/19 05:56:21 danfe Exp $
+$FreeBSD: ports/CHANGES,v 1.73 2007/07/01 15:09:37 pav Exp $
