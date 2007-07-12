@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.422 2007/06/26 11:39:12 edwin Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.423 2007/07/04 10:24:01 lofi Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1413,6 +1413,7 @@ MASTER_SITE_XORG+= \
 	ftp://ftp.mirrorservice.org/sites/ftp.x.org/pub/%SUBDIR%/ \
 	ftp://sunsite.uio.no/pub/X11/%SUBDIR%/ \
 	http://xorg.freedesktop.org/%SUBDIR%/ \
+	http://xorg.freedesktop.org/releases/%SUBDIR%/ \
 	ftp://ftp.x.org/pub/%SUBDIR%/
 .endif
 
