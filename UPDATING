@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070713:
+  AFFECTS: users of audio/pulseaudio
+  AUTHOR: gnome@FreeBSD.org
+
+  The realtime group (default GID of 557) has been renamed pulse-rt to keep
+  in sync with the pulseaudio distribution.  If you are upgrading from a
+  previous version of pulseaudio, you will need to modify /etc/group and
+  change the name of the group with ID 557 to ``pulse-rt''.
+
 20070706:
   AFFECTS: users of www/gallery
   AUTHOR: freebsd-ports@varju.ca
@@ -5400,4 +5409,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.521 2007/07/06 05:34:30 lwhsu Exp $
+$FreeBSD: ports/UPDATING,v 1.522 2007/07/13 06:38:32 marcus Exp $
