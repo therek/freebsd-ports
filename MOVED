@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1422 2007/07/10 21:37:23 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1423 2007/07/11 12:04:41 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3100,3 +3100,4 @@ www/lynx-ssl|www/lynx|2007-07-10|SSL enabled by default in www/lynx
 net-p2p/py-bittorrent-devel|net-p2p/py-bittorent|2007-07-10|Non-devel port have newer version
 net-p2p/py-bittorrent-core-devel|net-p2p/py-bittorent-core|2007-07-10|Non-devel port have newer version
 devel/libslang2-devel||2007-07-11|Non-devel port have newer version
+graphics/hpoj||2007-07-14|Expired: project discontinued, please switch to print/hplip
