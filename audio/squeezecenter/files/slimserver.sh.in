@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/slimserver/files/slimserver.sh.in,v 1.6 2006/02/20 20:46:49 dougb Exp $
+# $FreeBSD: ports/audio/slimserver/files/slimserver.sh.in,v 1.7 2007/01/19 00:19:07 brooks Exp $
 #
 
 # PROVIDE: slimserver
@@ -28,8 +28,8 @@ statedir=%%SLIMDBDIR%%
 cachedir=${statedir}/cache
 playlistdir=${statedir}/playlists
 conffile=${statedir}/slimserver.conf
-u=slimserv
-g=slimserv
+u=%%SLIMUSER%%
+g=%%SLIMGROUP%%
 command_args="--daemon --prefsfile=${conffile} --logfile=${logfile} --user=${u} --group=${g} --pidfile=${pidfile}"
 
 slimserver_start_precmd()

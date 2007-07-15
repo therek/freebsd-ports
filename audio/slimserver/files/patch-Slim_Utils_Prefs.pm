@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/audio/slimserver/files/patch-Slim_Utils_Prefs.pm,v 1.5 2006/10/05 02:56:56 brooks Exp $
+$FreeBSD: ports/audio/slimserver/files/patch-Slim_Utils_Prefs.pm,v 1.6 2007/06/07 23:38:12 brooks Exp $
 
 --- Slim/Utils/Prefs.pm.orig
 +++ Slim/Utils/Prefs.pm
@@ -9,7 +9,7 @@ $FreeBSD: ports/audio/slimserver/files/patch-Slim_Utils_Prefs.pm,v 1.5 2006/10/0
  
 +	} elsif (Slim::Utils::OSDetect::OS() eq 'unix') {
 +
-+		$path = "/var/db/slimserver/playlists";
++		$path = "%%SLIMDBDIR%%/playlists";
 +
  	} else {
  
@@ -19,7 +19,7 @@ $FreeBSD: ports/audio/slimserver/files/patch-Slim_Utils_Prefs.pm,v 1.5 2006/10/0
  	} elsif ($os eq 'unix') {
  
 -		$CacheDir = catdir($ENV{'HOME'},'Cache');
-+		$CacheDir = "/var/db/slimserver/cache";
++		$CacheDir = "%%SLIMDBDIR%%/cache";
  
  	} elsif ($os eq 'win' && Slim::Utils::OSDetect::details->{'osName'} =~ /Vista/) {
  
@@ -28,7 +28,7 @@ $FreeBSD: ports/audio/slimserver/files/patch-Slim_Utils_Prefs.pm,v 1.5 2006/10/0
  		}
  	} else {
 -	 	$prefsPath = $ENV{'HOME'};
-+	 	$prefsPath = "/var/db/slimserver";
++	 	$prefsPath = "%%SLIMDBDIR%%";
  	}
  	
  	$::d_prefs && msg("The default prefs directory is $prefsPath\n");
