@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-im/jabber/files/jabber.in,v 1.1 2007/02/27 13:13:26 miwi Exp $
 #
 # PROVIDE: jabber
 # REQUIRE: LOGIN
@@ -27,8 +27,7 @@ required_files=%%JABBER_ETCDIR%%/jabber.xml
 : ${jabber_group="%%JABBER_GROUP%%"}
 
 command=%%PREFIX%%/bin/jabberd14
-command_args="${jabberd_flags}"
-pidfile=${jabberd_pidfile}
+pidfile=${jabber_pidfile}
 extra_commands="reload"
 
 run_rc_command "$1"
