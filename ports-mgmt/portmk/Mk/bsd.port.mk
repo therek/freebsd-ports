@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.54 2007/04/26 06:44:51 linimon Exp $
+# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.55 2007/07/18 18:21:32 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1428,6 +1428,7 @@ ETCDIR?=		${TARGETDIR}/etc/${PORTNAME}
 .include "${DEVELPORTSDIR}/Mk/bsd.linux-rpm.mk"
 .else
 .include "${PORTSDIR}/Mk/bsd.linux-rpm.mk"
+.endif
 .endif
 
 .if ${OSVERSION} >= 502123
