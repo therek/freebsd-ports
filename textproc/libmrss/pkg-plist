@@ -1,7 +1,7 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/textproc/libmrss/pkg-plist,v 1.1 2007/01/02 08:42:42 clsung Exp $
 include/mrss.h
 lib/libmrss.a
 lib/libmrss.la
 lib/libmrss.so
-lib/libmrss.so.0
+lib/libmrss.so.18
 libdata/pkgconfig/mrss.pc
