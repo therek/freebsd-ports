@@ -1,16 +1,20 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-IO-Async/pkg-plist,v 1.1 2007/06/14 01:57:12 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/IO/Async/.packlist
 %%SITE_PERL%%/IO/Async.pod
 %%SITE_PERL%%/IO/Async/Buffer.pm
 %%SITE_PERL%%/IO/Async/ChildManager.pm
+%%SITE_PERL%%/IO/Async/DetachedCode.pm
+%%SITE_PERL%%/IO/Async/DetachedCode/FlatMarshaller.pm
+%%SITE_PERL%%/IO/Async/DetachedCode/StorableMarshaller.pm
 %%SITE_PERL%%/IO/Async/Notifier.pm
 %%SITE_PERL%%/IO/Async/Set.pm
 %%SITE_PERL%%/IO/Async/Set/GMainLoop.pm
 %%SITE_PERL%%/IO/Async/Set/IO_Poll.pm
 %%SITE_PERL%%/IO/Async/Set/Select.pm
 %%SITE_PERL%%/IO/Async/SignalProxy.pm
-@dirrmtry %%SITE_PERL%%/mach/auto/IO/Async
-@dirrmtry %%SITE_PERL%%/mach/auto/IO
 @dirrmtry %%SITE_PERL%%/IO/Async/Set
+@dirrmtry %%SITE_PERL%%/IO/Async/DetachedCode
 @dirrmtry %%SITE_PERL%%/IO/Async
 @dirrmtry %%SITE_PERL%%/IO
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/IO/Async
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/IO
