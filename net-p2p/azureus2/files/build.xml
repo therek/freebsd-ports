@@ -1,6 +1,6 @@
 <!-- Under a BSDL license. Copyright by Mario S F Ferreira <lioux@FreeBSD.org> 2005- -->
 <!-- Under a BSDL license. Copyright by jrandom 2005- -->
-<!-- $FreeBSD: ports/net-p2p/azureus/files/build.xml,v 1.5 2005/11/07 01:43:00 lioux Exp $ -->
+<!-- $FreeBSD: ports/net-p2p/azureus2/files/build.xml,v 1.6 2006/02/19 08:44:52 lioux Exp $ -->
 <project basedir="." default="dist" name="azureus">
      <description>
 	Builds Azureus
