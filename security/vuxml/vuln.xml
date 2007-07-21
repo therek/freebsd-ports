@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1369 2007/07/19 22:27:33 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1370 2007/07/21 14:10:50 delphij Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -38,7 +38,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>lighttpd -- multiple vulnerabilities</topic>
     <affects>
       <package>
-	<name></name>
+	<name>lighttpd</name>
 	<range><lt>1.4.15_1</lt></range>
       </package>
     </affects>
