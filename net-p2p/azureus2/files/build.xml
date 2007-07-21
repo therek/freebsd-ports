@@ -1,6 +1,6 @@
 <!-- Under a BSDL license. Copyright by Mario S F Ferreira <lioux@FreeBSD.org> 2005- -->
 <!-- Under a BSDL license. Copyright by jrandom 2005- -->
-<!-- $FreeBSD: ports/net-p2p/azureus2/files/build.xml,v 1.6 2006/02/19 08:44:52 lioux Exp $ -->
+<!-- $FreeBSD: ports/net-p2p/azureus2/files/build.xml,v 1.7 2007/07/20 09:24:58 rafan Exp $ -->
 <project basedir="." default="dist" name="azureus">
      <description>
 	Builds Azureus
@@ -39,7 +39,7 @@
        <fileset dir="." includes="**/*.ico **/*.wav" />
      </copy>
      <!-- Put everything in ${build} into the azureus.jar file -->
-     <jar jarfile="${dist}/lib/azureus.jar" basedir="${build}"/>
+     <jar jarfile="${dist}/lib/azureus2.jar" basedir="${build}"/>
    </target>
 
    <target name="clean" description="clean up" >

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-p2p/azureus2/files/azureus.in,v 1.1 2007/05/26 00:56:11 alepulver Exp $
+# $FreeBSD$
 
 # java
 export JAVA_VERSION="%%JAVA_VERSION%%"
