@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/Tools/portbuild/scripts/dopackagestats,v 1.16 2007/03/09 02:43:55 linimon Exp $
+# $FreeBSD: ports/Tools/portbuild/scripts/dopackagestats,v 1.17 2007/03/23 05:49:49 linimon Exp $
 #
 # create HTML showing numbers of packages vs errors.  Run this in a directory
 # accessible to the web server.
@@ -228,7 +228,8 @@ write_header
 # display all the mainstream builds first
 for arch in ${SUPPORTED_ARCHS}; do
 
-  builds=`ls ${ROOT_DIRECTORY}/${arch} | grep '^[1-9]$' | sort`
+  # drop 4 as obsolete
+  builds=`ls ${ROOT_DIRECTORY}/${arch} | grep '^[5-9]$' | sort`
   if [ ! -z "$builds" ]; then
     write_table_begin
 
