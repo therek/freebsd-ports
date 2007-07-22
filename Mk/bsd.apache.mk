@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.14 2007/06/28 15:50:53 pav Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.15 2007/07/22 10:48:42 clement Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -20,7 +20,7 @@
 # is defined, APACHE_PORT will be set to www/apache20
 #
 
-.if !defined(_POSTMKINCLUDED) && !defined(Apache_Pre_Include)
+#.if !defined(_POSTMKINCLUDED) && !defined(Apache_Pre_Include)
 
 Apache_Pre_Include=		bsd.apache.mk
 
@@ -353,8 +353,8 @@ AP_EXTRAS+=	-L ${AP_LIB}
 
 .endif
 
-.endif #!defined(_POSTMKINCLUDED) && !defined(Apache_Pre_Include)
-.if defined(_POSTMKINCLUDED) && !defined(Apache_Post_Include)
+#.endif #!defined(_POSTMKINCLUDED) && !defined(Apache_Pre_Include)
+#.if defined(_POSTMKINCLUDED) && !defined(Apache_Post_Include)
 Apache_Post_Include=                    bsd.apache.mk
 
 .if defined(AP_PORT_IS_SERVER)
@@ -425,4 +425,4 @@ do-install:
 .endif
 .endif
 .endif
-.endif          # defined(_POSTMKINCLUDED) && !defined(Apache_Post_Include)
+#.endif          # defined(_POSTMKINCLUDED) && !defined(Apache_Post_Include)
