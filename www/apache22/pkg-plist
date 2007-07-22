@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.79 2007/01/13 12:13:11 clement Exp $
+@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.80 2007/03/17 16:03:23 clement Exp $
 @exec mkdir -p %D/etc/apache22/extra 2> /dev/null
 @exec mkdir -p %D/etc/apache22/Includes 2> /dev/null || true
 @exec mkdir -p %D/etc/apache22/envvars.d 2> /dev/null || true
@@ -258,6 +258,7 @@ sbin/httpd
 sbin/httxt2dbm
 sbin/logresolve
 sbin/rotatelogs
+sbin/split-logfile
 %%MOD_SUEXEC%%sbin/suexec
 %%APR_PORTS%%build-1/apr_rules.mk
 %%APR_PORTS%%build-1/libtool
