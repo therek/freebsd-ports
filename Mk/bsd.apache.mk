@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.13 2006/11/07 09:11:53 clement Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.14 2007/06/28 15:50:53 pav Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -15,8 +15,15 @@
 #		<version>: 1.3/13/2.0/20/2.1/2.2/1.3+/2.0+/2.1+/2.2+
 #		common*: common13, common20, common21 and common22
 #
+# Note: Setting USE_APACHE to "yes" is deprecated. It will set 
+# APACHE_PORT to www/apache13 and if WITH_APACHE2 (deprecated too)
+# is defined, APACHE_PORT will be set to www/apache20
 #
-#
+
+.if !defined(_POSTMKINCLUDED) && !defined(Apache_Pre_Include)
+
+Apache_Pre_Include=		bsd.apache.mk
+
 .if defined(APACHE_COMPAT)
 USE_APACHE=yes
 .endif
@@ -303,13 +310,13 @@ AP_BUILDEXT=	la
 APACHEMODDIR=	libexec/apache2
 APACHEINCLUDEDIR=include/apache2
 APACHEETCDIR=	etc/apache2
-APACHE_PORT=	www/apache${APACHE_VERSION}
+APACHE_PORT?=	www/apache${APACHE_VERSION}
 .elif ${APACHE_VERSION} >= 21
 AP_BUILDEXT=	la
 APACHEMODDIR=	libexec/apache${APACHE_VERSION}
 APACHEINCLUDEDIR=include/apache${APACHE_VERSION}
 APACHEETCDIR=	etc/apache${APACHE_VERSION}
-APACHE_PORT=	www/apache${APACHE_VERSION}
+APACHE_PORT?=	www/apache${APACHE_VERSION}
 .else
 AP_BUILDEXT=	so
 APACHEMODDIR=	libexec/apache
@@ -345,6 +352,10 @@ AP_EXTRAS+=	-L ${AP_LIB}
 .endif
 
 .endif
+
+.endif #!defined(_POSTMKINCLUDED) && !defined(Apache_Pre_Include)
+.if defined(_POSTMKINCLUDED) && !defined(Apache_Post_Include)
+Apache_Post_Include=                    bsd.apache.mk
 
 .if defined(AP_PORT_IS_SERVER)
 .if !target(print-closest-mirrors)
@@ -412,7 +423,6 @@ do-build: ap-gen-plist
 do-install:
 	@${APXS} -i -A -n ${SHORTMODNAME} ${WRKSRC}/${MODULENAME}.${AP_BUILDEXT}
 .endif
-
 .endif
-
 .endif
+.endif          # defined(_POSTMKINCLUDED) && !defined(Apache_Post_Include)
