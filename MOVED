@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1428 2007/07/21 23:22:17 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1429 2007/07/23 02:11:21 rafan Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3104,3 +3104,5 @@ net/jffnms|net-mgmt/jffnms|2007-07-14|move to net-mgmt/jffnms
 java/linux-blackdown-jdk13||2007-07-22|Expired: unfixed security vulnerability
 devel/rx||2007-07-22|Expired: has been decommissioned and is no longer developed
 security/metasploit-devel|security/metasploit|2007-07-23|move to security/metasploit
+x11/nvidia-driver-7184|x11/nvidia-driver-71xx|2007-07-23|moved to x11/nvidia-driver-71xx
+x11/nvidia-driver-9631|x11/nvidia-driver-96xx|2007-07-23|moved to x11/nvidia-driver-96xx
