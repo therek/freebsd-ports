@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.366 2007/06/25 05:18:37 scf Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.367 2007/07/17 18:25:21 laszlof Exp $
 #
 # FreeBSD Project Committers
 #
@@ -43,7 +43,7 @@
  22.1957,	113.549		"vs"				# Macau, Macau SAR
  3.167,		101.700,	"ariff"				# Kuala Lumpur, Malaysia
  55.033,	82.917,		"danfe,fjoe"			# Novosibirsk, Russia
- 12.58,		77.35,		"jkoshy"			# Bangalore, India
+ 13.6325,	78.4552,	"jkoshy"			# Rishi Valley, India
  43.219564,	76.851597,	"bp"				# Almaty, Kazakhstan
  51.33,		46.00,		"novel"				# Saratov, Russia
  48.805,	44.586,		"den"				# Volgograd, Russia
