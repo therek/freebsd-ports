@@ -1,13 +1,10 @@
-@comment $FreeBSD: ports/www/p5-WWW-Myspace/pkg-plist,v 1.2 2006/12/02 16:12:03 leeym Exp $
+@comment $FreeBSD: ports/www/p5-WWW-Myspace/pkg-plist,v 1.3 2006/12/21 05:57:48 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/Myspace/.packlist
 %%SITE_PERL%%/WWW/Myspace.pm
 %%SITE_PERL%%/WWW/Myspace/Comment.pm
-%%SITE_PERL%%/WWW/Myspace/Data.pm
-%%SITE_PERL%%/WWW/Myspace/FriendAdder.pm
 %%SITE_PERL%%/WWW/Myspace/FriendChanges.pm
 %%SITE_PERL%%/WWW/Myspace/Message.pm
 %%SITE_PERL%%/WWW/Myspace/MyBase.pm
-bin/add_friends
 bin/approve_friends
 bin/comment_myspace
 bin/message_group
