@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.140 2007/03/19 05:19:11 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.141 2007/06/28 16:02:48 pav Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.414 2007/03/13 01:24:54 marcus Exp $
 #
@@ -116,8 +116,7 @@ gnomeprefix_CONFIGURE_ARGS=--localstatedir=${DESTDIR}${GNOME_LOCALSTATEDIR} \
 			   --with-html-dir=${DESTDIR}${GNOME_HTML_DIR} \
 			   --with-help-dir=${TARGETDIR}/share/gnome/help \
 			   --disable-gtk-doc \
-			   --with-gconf-source=${GCONF_CONFIG_SOURCE} \
-			   --mandir=${PREFIX}/man
+			   --with-gconf-source=${GCONF_CONFIG_SOURCE}
 gnomeprefix_USE_GNOME_IMPL=gnomehier
 .if !defined(WITHOUT_HACK)
 gnomeprefix_PREFIX=${LOCALBASE}

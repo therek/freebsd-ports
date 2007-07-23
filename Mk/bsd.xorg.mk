@@ -13,7 +13,7 @@
 #
 # !!! Here be dragons !!! (yeah, here as well...)
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.xorg.mk,v 1.1 2007/05/19 19:57:27 flz Exp $
 #
 
 XORG_Include_MAINTAINER=		x11@FreeBSD.org
@@ -41,8 +41,6 @@ DIST_SUBDIR=	xorg/${XORG_CAT}
 
 MASTER_SITES?=	${MASTER_SITE_XORG}
 MASTER_SITE_SUBDIR?=	individual/${XORG_CAT}
-
-CONFIGURE_ARGS+=	--mandir="${PREFIX}/man/"
 
 . if ${XORG_CAT} == "app"
 USE_GNOME+=	pkgconfig
