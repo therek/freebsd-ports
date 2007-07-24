@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/nrpe2/files/nrpe2.sh.in,v 1.1 2005/05/26 19:26:04 pav Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: nrpe2
