@@ -10,6 +10,12 @@ in the release notes.
 
 All ports committers are allowed to commit to this file.
 
+20070723:
+AUTHOR: rafan@FreeBSD.org
+
+  * The default CONFIGURE_ARGS when GNU_CONFIGURE is set now contains
+    --mandir and --infodir if configure script supports them.
+
 20070712:
 AUTHOR: maho@FreeBSD.org
 
@@ -1366,4 +1372,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.73 2007/07/01 15:09:37 pav Exp $
+$FreeBSD: ports/CHANGES,v 1.74 2007/07/12 01:57:09 maho Exp $
