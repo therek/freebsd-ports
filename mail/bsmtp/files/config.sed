@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/bsmtp/files/config.sed,v 1.3 2001/11/15 23:03:46 naddy Exp $
+# $FreeBSD: ports/mail/bsmtp/files/config.sed,v 1.4 2002/02/23 16:25:24 naddy Exp $
 s,@CC@,%%CC%%,
 s,@INSTALL@,/usr/bin/install,
 s,@SH@,/bin/sh,
@@ -20,9 +20,9 @@ s,@DAEMONUID@,66,
 s,@INPROTO@,BSMTP,
 s,@LOCALHOSTNAME@,`hostname`,
 s,@DOMAINSUFFIX@,none,
-s,@SENDMAILVERS@,8.11,
+s,@SENDMAILVERS@,8.13,
 s,@INSTALLMAILER@,true,
-s,@MAILERVERSION@,8.11,
+s,@MAILERVERSION@,8.13,
 s,@FLOCK@,true,
 s,@LOCKDEFINE@,-DUSE_FLOCK,
 s,@BATCHER@,batcher.new,
