@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# Start or stop jabberd
-# $FreeBSD: ports/net-im/jabberd/files/jabberd.sh.in,v 1.1 2005/04/17 16:29:41 pav Exp $
+# $FreeBSD$
 
 # PROVIDE: jabberd
 # REQUIRE: DAEMON
@@ -16,9 +15,9 @@ prefix=%%PREFIX%%
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-jabberd_chdir=${jabberd_chdir-"/var/jabberd/pid"}
+jabberd_chdir=${jabberd_chdir-"%%JABBER_RUNDIR%%/pid"}
 jabberd_enable=${jabberd_enable-"NO"}
-jabberd_user=${jabberd_user-"jabber"}
+jabberd_user=${jabberd_user-"%%JABBER_USER%%"}
 
 . %%RC_SUBR%%
 
