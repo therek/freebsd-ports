@@ -1,6 +1,6 @@
-#!/bin/sh
+#!%%SH%%
 #
-# $FreeBSD: ports/net-p2p/mldonkey/files/mlnet.in,v 1.1 2006/09/28 23:11:52 lioux Exp $
+# $FreeBSD: ports/net-p2p/mldonkey/files/mlnet.in,v 1.2 2006/12/15 01:59:01 lioux Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
@@ -59,10 +59,11 @@ start_cmd()
 	${mlnet_flags} \
 	>> ${mlnet_logfile} 2>&1 &"
   else
-    su -l ${mlnet_user} -c "${command} \
+    su -l ${mlnet_user} -c "%%SH%% -c \
+	\"${command} \
 	${mlnet_logcommand} \
 	${mlnet_flags} \
-	>> ${mlnet_logfile} 2>&1 &"
+	>> ${mlnet_logfile} 2>&1 &\""
   fi
 }
 
