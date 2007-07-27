@@ -31,7 +31,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.12 2007/05/19 22:06:14 pav Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.13 2007/07/12 01:57:10 maho Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -96,7 +96,7 @@ FC:=	f77
 .  endif
 . endif
 
-MAKE_ENV+=	 F77="${F77}" FC="${FC}"
+MAKE_ENV+=	 F77="${F77}" FC="${FC}" FFLAGS="${FFLAGS}"
 .endif
 
 .if defined(USE_GCC)
@@ -195,7 +195,7 @@ CXX:=			g++${V}
 BUILD_DEPENDS+=	${_GCC_PORT_DEPENDS}:${PORTSDIR}/lang/${_GCC_BUILD_DEPENDS}
 .endif
 
-MAKE_ENV+=	CC="${CC}" CXX="${CXX}"
+MAKE_ENV+=	CC="${CC}" CXX="${CXX}" CFLAGS="${CFLAGS}"
 
 test-gcc:
 	@echo USE_GCC=${USE_GCC}
@@ -204,7 +204,7 @@ test-gcc:
 .else
 	@echo Port cannot use later versions.
 .endif
-	@echo WITH_FORTRAN=${WITH_FORTRAN}
+	@echo USE_FORTRAN=${USE_FORTRAN}
 .for v in ${GCCVERSIONS}
 	@echo -n "GCC version: ${_GCCVERSION_${v}_V} "
 .if defined(_GCC_FOUND${v})
@@ -214,5 +214,7 @@ test-gcc:
 #	@echo ${v} - ${_GCC_FOUND${v}} - ${_GCCVERSION_${v}_L} to ${_GCCVERSION_${v}_R} - ${_GCCVERSION_${v}_V}
 .endfor
 	@echo Using GCC version ${_USE_GCC}
-	@echo CC:${CC} - CXX:${CXX} - F77:${F77} - FC:${FC} - BUILD_DEPENDS:${BUILD_DEPENDS}
+	@echo CC=${CC} - CXX=${CXX} - CFLAGS=${CFLAGS}
+	@echo F77=${F77} - FC=${FC} - FFLAGS=${FFLAGS}
+	@echo BUILD_DEPENDS=${BUILD_DEPENDS}
 .endif
