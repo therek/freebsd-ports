@@ -1,9 +1,9 @@
 #!/bin/sh
-#$FreeBSD$
+#$FreeBSD: ports/www/sams/files/setup.sh,v 1.1 2006/12/29 20:18:35 miwi Exp $
 #SAMS database setup script
 TMP=./tmp
 
-. ${TMP}/config.cashe
+. ${TMP}/config.cache
 
   CONFIGFILEPATH="${CONFIG_FILE}"
   if [ ! -f ${CONFIG_FILE} -a -f ${CONFIG_FILE}.sample ]; then
