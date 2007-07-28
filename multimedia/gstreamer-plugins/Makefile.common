@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.58 2007/07/04 19:42:04 mezz Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.59 2007/07/05 20:31:48 mezz Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.63 2006/09/29 23:22:28 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -343,7 +343,7 @@ gst_theora_DIST=	base
 
 # vorbis
 gst_vorbis_USE_GSTREAMER+=	ogg
-gst_vorbis_LIB_DEPENDS+=	vorbis.3:${PORTSDIR}/audio/libvorbis
+gst_vorbis_LIB_DEPENDS+=	vorbis.4:${PORTSDIR}/audio/libvorbis
 gst_vorbis_EXTRA_LIBS+=	-lgsttag-${VERSION} -lgstaudio-${VERSION}
 gst_vorbis_DIST=	base
 
