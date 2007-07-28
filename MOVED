@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1433 2007/07/28 06:33:42 ade Exp $
+# $FreeBSD: ports/MOVED,v 1.1434 2007/07/28 07:10:54 rafan Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3109,3 +3109,5 @@ german/de-py-qt4-eric4|german/eric4|2007-07-25|Moved to german/eric4
 russian/ru-py-qt4-eric4|russian/eric4|2007-07-25|Moved to russian/eric4
 devel/py-qt4-eric4|devel/eric4|2007-07-25|Moved to devel/eric4
 science/liblr|science/liblinear|2007-07-28|Project renamed
+games/freeciv-gtk|games/freeciv|2007-07-28|Dropped gtk1 support
+games/freeciv-gtk2|games/freeciv|2007-07-28|Gtk2 is supported by default now
