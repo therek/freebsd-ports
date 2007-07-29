@@ -2,7 +2,7 @@
 #
 # %%APP_TITLE%% startup script.
 #
-# $FreeBSD: ports/java/jboss3/files/startup.sh,v 1.1 2004/06/21 16:42:59 vanilla Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: %%APP_SHORTNAME%%

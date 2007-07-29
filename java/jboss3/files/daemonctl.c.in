@@ -7,7 +7,7 @@
  *	Original by Ernst de Haan <znerd@freebsd.org>
  *	www/jakarta-tomcat4/files/daemonctl.c
  *
- * $FreeBSD: ports/java/jboss3/files/daemonctl.c,v 1.1 2004/06/21 16:42:59 vanilla Exp $
+ * $FreeBSD$
  */
 
 #include <assert.h>
