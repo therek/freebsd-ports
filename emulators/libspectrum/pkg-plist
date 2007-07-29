@@ -1,9 +1,9 @@
-@comment $FreeBSD: ports/emulators/libspectrum/pkg-plist,v 1.2 2005/05/21 13:46:38 jylefort Exp $
+@comment $FreeBSD: ports/emulators/libspectrum/pkg-plist,v 1.3 2006/02/23 10:36:27 ade Exp $
 include/libspectrum.h
 lib/libspectrum.a
 lib/libspectrum.la
 lib/libspectrum.so
-lib/libspectrum.so.4
+lib/libspectrum.so.5
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
 %%PORTDOCS%%%%DOCSDIR%%/README
