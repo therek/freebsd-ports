@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.95 2007/02/26 07:32:02 alexbl Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.96 2007/07/30 09:40:56 alexbl Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -182,11 +182,11 @@ Python_Include_MAINTAINER=	python@FreeBSD.org
 # PYEASYINSTALL_CMD - Full file path to easy_install command.
 #					  default: ${LOCALBASE}/bin/easy_install-${PYTHON_VER}
 #
-# PYEASYINSTALL_INSTALL_ARGS
+# PYEASYINSTALL_INSTALLARGS
 #					- Arguments to easy_install command for egg installation.
 #					  default: -q -N -S ${PYTHON_SITELIBDIR} ${PYDISTUTILS_PKGNAME}==${PYDISTUTILS_PKGVERSION}
 #
-# PYEASYINSTALL_UNINSTALL_ARGS
+# PYEASYINSTALL_UNINSTALLARGS
 #					- Arguments to easy_install command for egg uninstallation.
 #					  default: -q -m -S ${PYTHON_SITELIBDIR} ${PYDISTUTILS_PKGNAME}==${PYDISTUTILS_PKGVERSION}
 #
