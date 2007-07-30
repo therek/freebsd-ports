@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.96 2007/07/30 09:40:56 alexbl Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.97 2007/07/30 12:02:44 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -174,7 +174,7 @@ Python_Include_MAINTAINER=	python@FreeBSD.org
 #					- Canonical directory name for easy_install egg packages.
 #					  default: ${PYDISTUTILS_PKGNAME:C/[^A-Za-z0-9.]+/_/g}-${PYDISTUTILS_PKGVERSION:C/[^A-Za-z0-9.]+/_/g}-${PYTHON_VERSION:S/thon//}${PYEASYINSTALL_OSARCH}.egg
 #
-# PYEASYINSATLL_OSARCH
+# PYEASYINSTALL_OSARCH
 #					- Platform identifier for easy_install.
 #					  default: -${OPSYS:L}-${_OSRELEASE}-${ARCH}
 #							   if PYEASYINSTALL_ARCHDEP is defined.
