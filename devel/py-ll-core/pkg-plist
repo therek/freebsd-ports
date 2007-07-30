@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/py-ll-core/pkg-plist,v 1.4 2007/02/05 08:39:46 ijliao Exp $
+@comment $FreeBSD: ports/devel/py-ll-core/pkg-plist,v 1.5 2007/04/09 01:31:09 lwhsu Exp $
 bin/ucp.py
 %%PYTHON_SITELIBDIR%%/ll/__init__.py
 %%PYTHON_SITELIBDIR%%/ll/__init__.pyc
@@ -27,6 +27,8 @@ bin/ucp.py
 %%PYTHON_SITELIBDIR%%/ll/scripts/__init__.pyc
 %%PYTHON_SITELIBDIR%%/ll/scripts/__init__.pyo
 %%PYTHON_SITELIBDIR%%/ll/scripts/ucp.py
+%%PYTHON_SITELIBDIR%%/ll/scripts/ucp.pyc
+%%PYTHON_SITELIBDIR%%/ll/scripts/ucp.pyo
 %%PYTHON_SITELIBDIR%%/ll/sisyphus.py
 %%PYTHON_SITELIBDIR%%/ll/sisyphus.pyc
 %%PYTHON_SITELIBDIR%%/ll/sisyphus.pyo

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/misc/py-yolk/pkg-plist,v 1.1 2007/03/12 10:07:59 nivit Exp $
+@comment $FreeBSD: ports/misc/py-yolk/pkg-plist,v 1.2 2007/04/28 08:35:42 nivit Exp $
 bin/yolk
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/plugins/README
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/plugins/yolk_pkg_manager/README
@@ -11,6 +11,4 @@ bin/yolk
 %%PORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/plugins/yolk_portage
 %%PORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/plugins
 %%PORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%
-@unexec %%EASY_INSTALL_CMD%% -q -x -m -N -S %D/%%PYTHON_SITELIBDIR%% %%PYYOLK_EGG_VER%%
-%%PYTHON_SITELIBDIR%%/%%PYYOLK_EGG%%
-@exec %%EASY_INSTALL_CMD%% -x -N -S %D/%%PYTHON_SITELIBDIR%% %%PYYOLK_EGG_VER%%
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%
