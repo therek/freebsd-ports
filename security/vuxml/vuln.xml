@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1383 2007/07/31 09:49:44 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1384 2007/07/31 11:30:03 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -93,7 +93,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>tcpdump -- remote integer underflow vulnerability</topic>
     <affects>
       <package>
-	<name></name>
+	<name>tcpdump</name>
 	<range><lt>3.9.6</lt></range>
       </package>
     </affects>
