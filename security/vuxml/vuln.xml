@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1381 2007/07/29 18:28:31 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1382 2007/07/31 07:50:55 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -140,7 +140,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>phpsysinfo -- url Cross-Site Scripting</topic>
     <affects>
       <package>
-	<name>phpSysinfo</name>
+	<name>phpSysInfo</name>
 	<range><lt>2.5.3</lt></range>
       </package>
     </affects>
