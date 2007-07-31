@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1386 2007/07/31 13:33:33 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1387 2007/07/31 14:43:22 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -594,7 +594,7 @@ Note:  Please add new entries to the beginning of this file.
       <package>
 	<name>seamonkey</name>
 	<name>linux-seamonkey</name>
-	<range><gt>0</gt></range>
+	<range><lt>1.1.3</lt></range>
       </package>
       <package>
 	<name>linux-firefox-devel</name>
@@ -650,6 +650,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2007-07-17</discovery>
       <entry>2007-07-19</entry>
+      <modified>2007-07-31</modified>    
     </dates>
   </vuln>
 
