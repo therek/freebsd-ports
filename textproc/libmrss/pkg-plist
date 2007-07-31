@@ -1,7 +1,10 @@
-@comment $FreeBSD: ports/textproc/libmrss/pkg-plist,v 1.1 2007/01/02 08:42:42 clsung Exp $
+@comment $FreeBSD: ports/textproc/libmrss/pkg-plist,v 1.2 2007/07/18 03:02:21 clsung Exp $
 include/mrss.h
 lib/libmrss.a
 lib/libmrss.la
 lib/libmrss.so
 lib/libmrss.so.18
 libdata/pkgconfig/mrss.pc
+%%PHPMRSS%%lib/php/%%PHP_EXT_DIR%%/mrss.so
+%%PHPMRSS%%@dirrmtry lib/php/%%PHP_EXT_DIR%%
+%%PHPMRSS%%@dirrmtry lib/php
