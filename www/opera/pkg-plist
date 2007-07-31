@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/opera/pkg-plist,v 1.28 2007/01/26 16:21:30 pav Exp $
+@comment $FreeBSD: ports/www/opera/pkg-plist,v 1.29 2007/04/11 20:17:27 miwi Exp $
 bin/opera
 %%DOCSDIR%%/LICENSE
 %%DATADIR%%/bin/missingsyms.so
@@ -111,10 +111,13 @@ share/icons/hicolor/48x48/apps/opera.png
 share/icons/locolor/16x16/apps/opera.png
 share/icons/locolor/22x22/apps/opera.png
 share/icons/locolor/32x32/apps/opera.png
-@dirrmtry share/icons/hicolor/22x22/apps
-@dirrmtry share/icons/hicolor/22x22
 @dirrmtry share/icons/hicolor/48x48/apps
 @dirrmtry share/icons/hicolor/48x48
+@dirrmtry share/icons/hicolor/32x32/apps
+@dirrmtry share/icons/hicolor/32x32
+@dirrmtry share/icons/hicolor/22x22/apps
+@dirrmtry share/icons/hicolor/22x22
+@dirrmtry share/icons/hicolor
 @dirrmtry share/icons/locolor/32x32/apps
 @dirrmtry share/icons/locolor/32x32
 @dirrmtry share/icons/locolor/22x22/apps
@@ -122,3 +125,4 @@ share/icons/locolor/32x32/apps/opera.png
 @dirrmtry share/icons/locolor/16x16/apps
 @dirrmtry share/icons/locolor/16x16
 @dirrmtry share/icons/locolor
+@dirrmtry share/icons
