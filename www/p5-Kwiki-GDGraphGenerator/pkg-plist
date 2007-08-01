@@ -1,5 +1,0 @@
-@comment $FreeBSD: ports/www/p5-Kwiki-GDGraphGenerator/pkg-plist,v 1.1 2004/08/31 09:44:19 clsung Exp $
-%%SITE_PERL%%/Kwiki/GDGraphGenerator.pm
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/Kwiki/GDGraphGenerator/.packlist
-@dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Kwiki/GDGraphGenerator
-@dirrmtry %%SITE_PERL%%/Kwiki
