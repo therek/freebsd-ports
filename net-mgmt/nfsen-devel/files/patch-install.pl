@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/net-mgmt/nfsen/files/patch-install.pl,v 1.2 2006/03/15 13:35:54 mnag Exp $
+$FreeBSD: ports/net-mgmt/nfsen-devel/files/patch-install.pl,v 1.3 2006/04/25 18:22:23 pav Exp $
 
 --- install.pl.orig
 +++ install.pl
@@ -9,7 +9,7 @@ $FreeBSD: ports/net-mgmt/nfsen/files/patch-install.pl,v 1.2 2006/03/15 13:35:54 
  #
  #
  #  Copyright (c) 2004, SWITCH - Teleinformatikdienste fuer Lehre und Forschung
-@@ -81,33 +81,7 @@
+@@ -83,33 +83,7 @@
  # Get Perl
  sub GetPerl {
  
@@ -43,4 +43,22 @@ $FreeBSD: ports/net-mgmt/nfsen/files/patch-install.pl,v 1.2 2006/03/15 13:35:54 
 +	return "%%PERL%%";
  
  } # End of GetPerl
+ 
+@@ -620,7 +594,7 @@
+ 	exit 1;
+ }
+ 
+-my $hints = NfSen::LoadHints();
++my $hints = NfSen::LoadHints_startup();
+ if ( $$$hints{'version'} == -1 ) {
+ 	# initial NfSen install or upgrade from old version without hints
+ 	$$$hints{'version'} 		= $nfsen_version;
+@@ -725,7 +699,7 @@
+ 
+ 
+ Nfsources::Reconfig();
+-NfSen::StoreHints();
++NfSen::StoreHints_startup();
+ chown $nfsen_uid, $www_gid, "$NfConf::PROFILESTATDIR/hints" || die "Can't chown hints db: $!\n";
+ print "Setup done.\n\n";
  
