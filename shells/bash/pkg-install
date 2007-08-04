@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/shells/bash/pkg-install,v 1.4 2007/06/28 23:33:44 obrien Exp $
+# $FreeBSD: ports/shells/bash/pkg-install,v 1.5 2007/06/29 01:06:38 obrien Exp $
 #
 
 BASH="$(echo ${PKG_PREFIX-/usr/local}/bin/bash | /usr/bin/sed -e 's|//|/|g')"
 RBASH="$(echo ${PKG_PREFIX-/usr/local}/bin/rbash | /usr/bin/sed -e 's|//|/|g')"
-SHELLS="${PKG_DESTDIR-}/etc/shells"
+SHELLS="/etc/shells"
 
 case $2 in
 POST-INSTALL)

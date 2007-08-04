@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/mksh/pkg-install,v 1.1 2006/07/22 10:55:20 miwi Exp $
 #
 
 MKSH="${PKG_PREFIX-/usr/local}/bin/mksh"
-SHELLS="${PKG_DESTDIR-}/etc/shells"
+SHELLS="/etc/shells"
 
 case $2 in
 POST-INSTALL)
