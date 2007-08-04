@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.97 2007/07/30 12:02:44 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.98 2007/07/30 17:52:58 pav Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -508,7 +508,7 @@ check-makevars::
 	@${ECHO} "Legal values are:	2.7 (default), 2.8, 2.9, 2.10, 3.2"
 	@${FALSE}
 .endif
-ZOPEBASEDIR?=			${TARGETDIR}/${SZOPEBASEDIR}
+ZOPEBASEDIR?=			${PREFIX}/${SZOPEBASEDIR}
 ZOPEPRODUCTDIR?=		Products
 .endif
 

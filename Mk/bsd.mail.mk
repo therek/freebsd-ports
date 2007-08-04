@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.mail.mk,v 1.1 2006/01/21 17:37:01 krion Exp $
+# $FreeBSD: ports/Mk/bsd.mail.mk,v 1.2 2006/08/04 12:34:41 erwin Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -51,9 +51,9 @@ IGNORE=	Invalid QMAIL_SLAVEPORT value. Only one can be set, valid values are: ${
 .endif
 
 .if defined(QMAIL_SLAVEPORT)
-QMAIL_DEPENDS=	${DESTDIR}${QMAIL_PREFIX}/bin/qmail-send:${PORTSDIR}/mail/qmail-${QMAIL_SLAVEPORT:L}
+QMAIL_DEPENDS=	${QMAIL_PREFIX}/bin/qmail-send:${PORTSDIR}/mail/qmail-${QMAIL_SLAVEPORT:L}
 .else
-QMAIL_DEPENDS=	${DESTDIR}${QMAIL_PREFIX}/bin/qmail-send:${PORTSDIR}/mail/qmail
+QMAIL_DEPENDS=	${QMAIL_PREFIX}/bin/qmail-send:${PORTSDIR}/mail/qmail
 .endif
 
 .if defined(USE_QMAIL) || defined(USE_QMAIL_RUN)
