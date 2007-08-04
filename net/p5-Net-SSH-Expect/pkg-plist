@@ -1,5 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/p5-Net-SSH-Expect/pkg-plist,v 1.1 2007/06/30 10:39:30 vanilla Exp $
 %%SITE_PERL%%/Net/SSH/Expect.pm
+%%SITE_PERL%%/Net/SSH/Expect.pod
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/SSH/Expect/.packlist
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/SSH/Expect
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/SSH
