@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/haproxy/files/haproxy.sh,v 1.3 2006/02/20 20:47:23 dougb Exp $
+# $FreeBSD: 
 #
 
 # PROVIDE: haproxy
