@@ -1,4 +1,4 @@
-$FreeBSD: ports/java/jdk15/files/patch-j2se::nio::genCharsetProvider.sh,v 1.2 2006/10/14 08:54:34 marcus Exp $
+$FreeBSD: ports/java/jdk16/files/patch-j2se::nio::genCharsetProvider.sh,v 1.3 2007/06/09 05:14:56 glewis Exp $
 
 --- ../../j2se/make/java/nio/genCharsetProvider.sh	8 Nov 2004 22:27:03 -0000	1.1.1.1
 +++ ../../j2se/make/java/nio/genCharsetProvider.sh	24 Mar 2005 16:14:52 -0000

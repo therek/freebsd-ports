@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk16/files/patch-j2se::awt::fontpath.c,v 1.1 2006/12/11 17:10:52 glewis Exp $
 
 --- ../../j2se/src/solaris/native/sun/awt/fontpath.c.orig	Sun Dec 10 21:57:02 2006
 +++ ../../j2se/src/solaris/native/sun/awt/fontpath.c	Sun Dec 10 21:58:43 2006

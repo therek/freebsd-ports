@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk16/files/patch-j2se::font::Makefile,v 1.1 2006/12/11 17:10:52 glewis Exp $
 
 --- ../../j2se/make/sun/font/Makefile.orig	Sun Dec 10 21:51:17 2006
 +++ ../../j2se/make/sun/font/Makefile	Sun Dec 10 21:51:50 2006

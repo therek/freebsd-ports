@@ -1,4 +1,4 @@
-$FreeBSD: ports/java/jdk15/files/patch-j2se::common::Defs-bsd.gmk,v 1.5 2007/03/06 04:34:38 glewis Exp $
+$FreeBSD: ports/java/jdk16/files/patch-j2se::common::Defs-bsd.gmk,v 1.6 2007/06/09 05:14:56 glewis Exp $
 
 --- ../../j2se/make/common/Defs-bsd.gmk.orig	Sun Mar  4 21:27:49 2007
 +++ ../../j2se/make/common/Defs-bsd.gmk	Sun Mar  4 21:29:16 2007

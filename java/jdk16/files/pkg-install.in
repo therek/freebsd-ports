@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/java/jdk15/files/pkg-install.in,v 1.7 2006/10/14 08:54:34 marcus Exp $
+# $FreeBSD: ports/java/jdk16/files/pkg-install.in,v 1.8 2007/06/09 05:14:56 glewis Exp $
 
 # System preference location
 JRE_HOME=%%JRE_HOME%%

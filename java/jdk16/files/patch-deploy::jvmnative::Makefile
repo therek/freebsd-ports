@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk16/files/patch-deploy::jvmnative::Makefile,v 1.1 2006/12/11 17:10:52 glewis Exp $
 
 --- ../../deploy/make/plugin/jvmnative/Makefile.orig	Sun Dec 10 21:45:33 2006
 +++ ../../deploy/make/plugin/jvmnative/Makefile	Sun Dec 10 21:45:54 2006

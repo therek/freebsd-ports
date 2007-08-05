@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk16/files/patch-deploy::nscore::Makefile,v 1.1 2006/12/11 17:10:52 glewis Exp $
 
 --- ../../deploy/make/plugin/nscore/unix/Makefile.orig	Sun Dec 10 21:46:45 2006
 +++ ../../deploy/make/plugin/nscore/unix/Makefile	Sun Dec 10 21:47:26 2006

@@ -1,4 +1,4 @@
-$FreeBSD: ports/java/jdk15/files/patch-j2se::ttHints::HintScan.c,v 1.1 2007/07/31 07:22:49 glewis Exp $
+$FreeBSD: ports/java/jdk16/files/patch-j2se::ttHints::HintScan.c,v 1.2 2007/07/31 15:52:31 glewis Exp $
 
 --- ../../j2se/src/share/native/sun/font/t2k/ttHints/HintScan.c	6 Mar 2007 16:53:10 -0000	1.1.1.2
 +++ ../../j2se/src/share/native/sun/font/t2k/ttHints/HintScan.c	31 Jul 2007 04:07:56 -0000

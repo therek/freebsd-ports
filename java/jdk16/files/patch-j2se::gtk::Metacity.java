@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk16/files/patch-j2se::gtk::Metacity.java,v 1.1 2006/12/11 17:10:52 glewis Exp $
 
 --- ../../j2se/src/share/classes/com/sun/java/swing/plaf/gtk/Metacity.java.orig	Sun Dec 10 21:55:26 2006
 +++ ../../j2se/src/share/classes/com/sun/java/swing/plaf/gtk/Metacity.java	Sun Dec 10 21:55:56 2006
