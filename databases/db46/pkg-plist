@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/databases/db46/pkg-plist,v 1.31 2007/07/31 09:18:11 clsung Exp $
 bin/berkeley_db_svc-4.5
 bin/db45/berkeley_db_svc
 bin/db45/db_archive
