@@ -3,7 +3,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.27 2007/07/02 17:31:26 ahze Exp $
+# $FreeBSD: ports/www/mozilla/Makefile.common,v 1.28 2007/07/20 12:14:51 ahze Exp $
 #    $MCom: ports/www/mozilla/Makefile.common,v 1.45 2007/02/06 00:05:55 ahze Exp $
 
 # This file contains some reusable components for mozilla ports. It's of
@@ -243,7 +243,7 @@ MOZ_SED_ARGS+=	-e's|@CPPFLAGS@|${CPPFLAGS}|g'		\
 		-e 's|%%MOZDIR%%|${PREFIX}/lib/${MOZILLA}|g'
 MOZCONFIG_SED?= ${SED} ${MOZ_SED_ARGS}
 
-.if ${OSVERSION} >= 700000 || exists(/usr/lib/libbz2_p.a)
+.if ${ARCH}=="i386" && (${OSVERSION} >= 700000 || exists(/usr/lib/libbz2_p.a))
 LIB_BZ2=	-lbz2_p
 .else
 LIB_BZ2=	-lbz2
