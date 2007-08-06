@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/audio/mma/files/patch-cp-install,v 1.1 2007/03/11 09:51:34 nivit Exp $
 --- cp-install	Wed Mar  7 22:17:56 2007
 +++ cp-install.port	Sat Mar 10 21:47:41 2007
 @@ -42,7 +42,7 @@
@@ -51,7 +51,7 @@ $FreeBSD$
 +###########################################
 +######## Copy examples
 +
-+if not os.getenv('WITHOUT_EXAMPLES'):
++if not os.getenv('NOPORTEXAMPLES'):
 +    examplesdir = '%%EXAMPLESDIR%%'
 +    print "Copying example files to", examplesdir
 +    shutil.copytree( "egs", examplesdir)
