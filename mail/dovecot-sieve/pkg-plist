@@ -1,10 +1,9 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/dovecot-sieve/pkg-plist,v 1.1 2007/01/09 21:10:41 miwi Exp $
 lib/dovecot/lda/lib90_cmusieve_plugin.a
 lib/dovecot/lda/lib90_cmusieve_plugin.la
 lib/dovecot/lda/lib90_cmusieve_plugin.so
-libdata/ldconfig/dovecot-sieve
 libexec/dovecot/sievec
 libexec/dovecot/sieved
-@dirrm libexec/dovecot
-@dirrm lib/dovecot/lda
-@dirrm lib/dovecot
+@dirrmtry libexec/dovecot
+@dirrmtry lib/dovecot/lda
+@dirrmtry lib/dovecot
