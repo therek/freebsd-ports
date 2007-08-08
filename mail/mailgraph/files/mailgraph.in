@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mailgraph/files/mailgraph.sh.in,v 1.1 2005/12/20 12:20:47 vanilla Exp $
+# $FreeBSD: ports/mail/mailgraph/files/mailgraph.sh.in,v 1.2 2006/02/20 20:47:11 dougb Exp $
 #
 # PROVIDE: mailgraph
 # REQUIRE: DAEMON
