@@ -4,7 +4,7 @@
 # This file is used to tune build time options.
 # Please refer FEATURES file distributed with the source for details.
 #
-# $FreeBSD: ports/mail/dkim-milter/Makefile.features,v 1.5 2007/06/27 07:52:56 miwi Exp $
+# $FreeBSD: ports/mail/dkim-milter/Makefile.features,v 1.6 2007/08/02 17:23:37 miwi Exp $
 #
 
 .if defined(WITH_ANTICIPATE_SENDMAIL_MUNGE) && !defined(WITHOUT_ANTICIPATE_SENDMAIL_MUNGE)
@@ -17,6 +17,10 @@ SITE_SUB+=	-e '/-D_FFR_CAPTURE_UNKNOWN_ERRORS/s|^dnl ||'
 
 .if defined(WITH_DIFFHEADERS) && !defined(WITHOUT_DIFFHEADERS)
 SITE_SUB+=	-e '/-D_FFR_DIFFHEADERS/s|^dnl ||'
+.endif
+
+.if defined(WITH_DNS_UPGRADE) && !defined(WITHOUT_DNS_UPGRADE)
+SITE_SUB+=	-e '/-D_FFR_DNS_UPGRADE/s|^dnl ||'
 .endif
 
 .if defined(WITH_KEY_REUSE) && !defined(WITHOUT_KEY_REUSE)
