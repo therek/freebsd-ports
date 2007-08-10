@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.367 2007/07/17 18:25:21 laszlof Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.368 2007/07/23 19:23:12 jkoshy Exp $
 #
 # FreeBSD Project Committers
 #
@@ -248,4 +248,4 @@
  44.04, 	-123.06,	"anholt"			# Eugene, OR, USA
  48.3898,	-123.4875,	"cy"				# Victoria, BC, Canada
  40.0,		-123.5,		"jkh"				# Miranda, CA, USA
- 61.215833,	-149.8825,	"beech"				# Anchorage, AK, USA
+ 61.214020,	-149.881220,	"beech"				# Anchorage, AK, USA
