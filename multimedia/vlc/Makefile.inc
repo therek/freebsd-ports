@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.11 2007/05/25 17:08:35 ahze Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.12 2007/06/18 00:23:02 ahze Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -224,6 +224,18 @@
 # NOPORTDOCS=yes
 #  Do not install Vlc's Documents
 #
+
+pre-everything::
+.if exists(${LOCALBASE}/lib/libswscale.so)
+	@${ECHO_CMD}
+	@${ECHO_CMD} 'VLC cannot find ffmpeg if it has been built with the software scaler,'
+	@${ECHO_CMD} 'be sure to not define WITH_SWSCALER to build it.'
+	@${ECHO_CMD}
+.endif
+
+post-extract:
+# remove badly formatted pre-generated messages catalogs
+	${FIND} ${WRKSRC} -name "*.gmo" -delete
 
 post-patch:
 # Subtitle default font
