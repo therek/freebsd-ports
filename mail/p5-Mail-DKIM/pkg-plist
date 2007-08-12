@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/p5-Mail-DKIM/pkg-plist,v 1.4 2007/05/29 01:50:06 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Mail/DKIM/.packlist
 %%SITE_PERL%%/Mail/DKIM.pm
 %%SITE_PERL%%/Mail/DKIM/Algorithm/Base.pm
@@ -14,7 +14,9 @@
 %%SITE_PERL%%/Mail/DKIM/Canonicalization/relaxed.pm
 %%SITE_PERL%%/Mail/DKIM/Canonicalization/simple.pm
 %%SITE_PERL%%/Mail/DKIM/Common.pm
+%%SITE_PERL%%/Mail/DKIM/DNS.pm
 %%SITE_PERL%%/Mail/DKIM/DkSignature.pm
+%%SITE_PERL%%/Mail/DKIM/DkimPolicy.pm
 %%SITE_PERL%%/Mail/DKIM/Key.pm
 %%SITE_PERL%%/Mail/DKIM/KeyValueList.pm
 %%SITE_PERL%%/Mail/DKIM/MessageParser.pm
