@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/shells/perlsh/pkg-plist,v 1.13 2005/05/04 05:47:17 clsung Exp $
+@comment $FreeBSD: ports/shells/psh/pkg-plist,v 1.14 2007/08/08 13:12:41 garga Exp $
 bin/psh
 %%DATADIR%%/complete/debian
 %%DATADIR%%/complete/perl
