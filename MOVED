@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1454 2007/08/11 18:58:31 leeym Exp $
+# $FreeBSD: ports/MOVED,v 1.1455 2007/08/13 13:40:59 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3152,3 +3152,4 @@ net/py-rrdtool_lgpl|databases/py-rrdtool_lgpl|2007-08-11|Moved to a more appropr
 games/gpuzzle|games/jigsaw|2007-08-11|Project renamed
 devel/upnp104||2007-08-12|Removed
 shells/perlsh|shells/psh|2007-08-13|Renamed to reflect correct project's name
+mail/qmHandle|mail/qmhandle|2007-08-13|Renamed to reflect correct project's name
