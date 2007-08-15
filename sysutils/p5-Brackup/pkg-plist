@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/sysutils/p5-Brackup/pkg-plist,v 1.1 2007/06/07 09:11:13 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Brackup/.packlist
 %%SITE_PERL%%/Brackup.pm
 %%SITE_PERL%%/Brackup/Backup.pm
@@ -14,6 +14,7 @@
 %%SITE_PERL%%/Brackup/GPGProcess.pm
 %%SITE_PERL%%/Brackup/InventoryDatabase.pm
 %%SITE_PERL%%/Brackup/Manual/Overview.pod
+%%SITE_PERL%%/Brackup/Metafile.pm
 %%SITE_PERL%%/Brackup/PositionedChunk.pm
 %%SITE_PERL%%/Brackup/Restore.pm
 %%SITE_PERL%%/Brackup/Root.pm
