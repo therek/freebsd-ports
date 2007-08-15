@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.423 2007/07/04 10:24:01 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.424 2007/07/12 22:50:04 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1287,12 +1287,11 @@ MASTER_SITE_VIM+= \
 	ftp://ftp9.us.vim.org/pub/vim/unix/ \
 	ftp://ftp.ca.vim.org/pub/vim/unix/ \
 	ftp://ftp.nl.vim.org/pub/vim/unix/ \
-	ftp://ftp.de.vim.org/pub/vim/unix/ \
+	ftp://ftp.de.vim.org/unix/ \
 	ftp://ftp3.de.vim.org/pub/vim/unix/ \
 	ftp://ftp.uk.vim.org/pub/vim/unix/ \
 	ftp://ftp.ie.vim.org/pub/vim/unix/ \
 	ftp://ftp.at.vim.org/pub/vim/unix/ \
-	ftp://ftp.se.vim.org/pub/vim/unix/ \
 	ftp://ftp.pt.vim.org/pub/vim/unix/ \
 	ftp://ftp.is.vim.org/pub/vim/unix/ \
 	ftp://ftp.il.vim.org/pub/vim/unix/ \
