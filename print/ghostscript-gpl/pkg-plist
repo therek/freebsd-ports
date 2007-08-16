@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/ghostscript-gpl/pkg-plist,v 1.41 2007/03/27 19:59:20 rafan Exp $
+@comment $FreeBSD: ports/print/ghostscript-gpl/pkg-plist,v 1.42 2007/06/03 05:02:50 hrs Exp $
 bin/bdftops
 bin/dumphint
 bin/dvipdf
@@ -350,7 +350,6 @@ bin/wftopfa
 %%DATADIR%%/%%GS_VERSION%%/doc/Issues.htm
 %%DATADIR%%/%%GS_VERSION%%/doc/Language.htm
 %%DATADIR%%/%%GS_VERSION%%/doc/Lib.htm
-%%DATADIR%%/%%GS_VERSION%%/doc/Maintain.htm
 %%DATADIR%%/%%GS_VERSION%%/doc/Make.htm
 %%DATADIR%%/%%GS_VERSION%%/doc/News.htm
 %%DATADIR%%/%%GS_VERSION%%/doc/Projects.htm
