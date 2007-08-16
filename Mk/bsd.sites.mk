@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.424 2007/07/12 22:50:04 edwin Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.425 2007/08/15 16:54:14 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1429,6 +1429,7 @@ MASTER_SITES_SUBDIRS=	\
 			DEBIAN:pool/main/${PORTNAME:C/^((lib)?.).*$/\1/}/${PORTNAME} \
 			GCC:releases/${DISTNAME} \
 			GNOME:sources/${PORTNAME}/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/} \
+			GNU:${PORTNAME} \
 			HORDE:${PORTNAME} \
 			MOZDEV:${PORTNAME:L} \
 			PERL_CPAN:${PORTNAME:C/-.*//} \
