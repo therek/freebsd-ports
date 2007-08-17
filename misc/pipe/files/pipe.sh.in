@@ -1,5 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/pipe/files/pipe.sh.in,v 1.1 2005/04/06 23:59:53 hq Exp $
 
+cd %%DATADIR%%
 JAVA_VERSION="%%JAVA_VERSION%%" "%%LOCALBASE%%/bin/java" -cp "%%DATADIR%%" RunGui
