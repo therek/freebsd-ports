@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.59 2007/07/05 20:31:48 mezz Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.60 2007/07/28 12:27:26 miwi Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.63 2006/09/29 23:22:28 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -155,6 +155,7 @@ gst_dts_LIB_DEPENDS+=	dca.0:${PORTSDIR}/multimedia/libdca
 gst_dts_PLIST_FILES=	${GST_LIB_DIR}/libgstdtsdec.a \
 		${GST_LIB_DIR}/libgstdtsdec.la \
 		${GST_LIB_DIR}/libgstdtsdec.so
+gst_dts_EXTRA_LIBS+=	-ldca
 gst_dts_DIST=	bad
 
 # dv
