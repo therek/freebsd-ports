@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1461 2007/08/19 08:53:53 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1462 2007/08/19 09:08:35 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3180,3 +3180,13 @@ japanese/migemo-emacs20||2007-08-19|Has expired: emacs20 and related ports are o
 japanese/lookup-emacs20||2007-08-19|Has expired: emacs20 and related ports are obsolete; please use a more recent version
 japanese/emacs20-emcws||2007-08-19|Has expired: editors/emacs20 is also deprecated
 japanese/ddskk-emacs20||2007-08-19|Has expired: emacs20 and related ports are obsolete; please use a more recent version
+irc/riece-emacs20||2007-08-19|Has expired: emacs20 and related ports are obsolete; please use a more recent version
+news/gnus-emacs20||2007-08-19|Has expired: emacs20 and related ports are obsolete; please use a more recent version
+editors/tamago-emacs20||2007-08-19|Has expired: emacs20 and related ports are obsolete; please use a more recent version
+editors/psgml-mule||2007-08-19|Has expired: emacs19 and related ports are obsolete; please use a more recent version
+editors/psgml-emacs20||2007-08-19|Has expired: emacs20 and related ports are obsolete; please use a more recent version
+editors/psgml-emacs19||2007-08-19|Has expired: emacs19 is obsolete; please use a more recent version
+editors/leim20||2007-08-19|Has expired: emacs20 and related ports are obsolete; please use a more recent version
+editors/iiimecf||2007-08-19|Has expired: emacs20 and related ports are obsolete; please use a more recent version
+editors/gnuserv-emacs20||2007-08-19|Has expired: emacs20 and related ports are obsolete; please use a more recent version
+devel/semantic-emacs20||2007-08-19|Has expired: emacs20 and related ports are obsolete; please use a more recent version
