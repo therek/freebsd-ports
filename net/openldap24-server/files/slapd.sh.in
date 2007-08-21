@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap24-server/files/slapd.sh.in,v 1.1 2006/05/26 02:44:25 delphij Exp $
+# $FreeBSD: ports/net/openldap24-server/files/slapd.sh.in,v 1.2 2007/05/28 06:04:24 delphij Exp $
 #
 
 # PROVIDE: slapd
@@ -49,6 +49,7 @@ start_precmd()
   *)
     chown "$slapd_owner" "%%LDAP_RUN_DIR%%"
     chown -RL "$slapd_owner" "%%DATABASEDIR%%"
+    chmod 700 "%%DATABASEDIR%%"
     chown "$slapd_owner" "%%PREFIX%%/etc/openldap/slapd.conf"
 
     slapd_ownername="${slapd_owner%:*}"
