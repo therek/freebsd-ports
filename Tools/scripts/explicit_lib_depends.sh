@@ -26,7 +26,7 @@
 # SUCH DAMAGE.
 #
 
-# $FreeBSD$
+# $FreeBSD: ports/Tools/scripts/explicit_lib_depends.sh,v 1.1 2007/08/24 14:29:42 netchild Exp $
 
 #
 # The purpose of this script is to give the real dependency list of a
@@ -100,7 +100,7 @@ for i in $@; do
 			}
 		}
 
-		/^bin\// {
+		/^s*bin\// {
 			printf "%s/%s\n", CWD, $1;
 		}
 
