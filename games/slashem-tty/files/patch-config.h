@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/games/slashem-tty/files/patch-config.h,v 1.2 2007/08/19 08:37:32 glewis Exp $
 
 --- include/config.h.orig	Sat Dec 30 05:08:31 2006
 +++ include/config.h	Fri Aug 17 23:09:31 2007
@@ -33,7 +33,7 @@ $FreeBSD$
  #    define HACKDIR "nethackdir"      /* nethack directory */
  #  else
 -#    define HACKDIR "."
-+#    define HACKDIR "%%PREFIX%%/share/slashem"	/* nethack directory */
++#    define HACKDIR "%%DATADIR%%"	/* nethack directory */
  #  endif
  # endif
  

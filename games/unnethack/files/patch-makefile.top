@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/games/slashem-tty/files/patch-makefile.top,v 1.2 2007/08/19 08:37:32 glewis Exp $
 
 --- sys/unix/Makefile.top.orig	Sat Dec 30 05:08:31 2006
 +++ sys/unix/Makefile.top	Sun Aug 19 01:18:58 2007
@@ -32,7 +32,7 @@ $FreeBSD$
  
  # Defs. for non file areas support.
 -GAMEDIR  = $(PREFIX)/local/slashemdir
-+GAMEDIR  = $(PREFIX)/share/${GAME}
++GAMEDIR  = $(DATADIR)
  VARDIR = $(GAMEDIR)
  FILE_AREA_VAR = $(VARDIR)
  FILE_AREA_SAVE = $(VARDIR)/save
