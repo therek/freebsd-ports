@@ -26,7 +26,7 @@
 # SUCH DAMAGE.
 #
 
-# $FreeBSD: ports/Tools/scripts/explicit_lib_depends.sh,v 1.1 2007/08/24 14:29:42 netchild Exp $
+# $FreeBSD: ports/Tools/scripts/explicit_lib_depends.sh,v 1.2 2007/08/24 15:30:31 netchild Exp $
 
 #
 # The purpose of this script is to give the real dependency list of a
@@ -92,6 +92,9 @@ for i in $@; do
 		fi
 	fi
 
+	myorigin=$(awk -F : '/@comment ORIGIN:/ {print $2}' \
+		${current_port}/+CONTENTS)
+
 	awk '
 		/^@cwd / {
 			CWD=$2;
@@ -109,7 +112,7 @@ for i in $@; do
 		}
 	' < ${current_port}/+CONTENTS | \
 		xargs ${PORTSDIR}/Tools/scripts/neededlibs.sh | \
-		xargs ${PORTSDIR}/Tools/scripts/resolveportsfromlibs.sh ${bases}
-
+		xargs ${PORTSDIR}/Tools/scripts/resolveportsfromlibs.sh ${bases} | \
+		egrep -v "${myorigin}\$"
  
 done | sort -u
