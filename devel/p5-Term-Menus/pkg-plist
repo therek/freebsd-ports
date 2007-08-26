@@ -1,5 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-Term-Menus/pkg-plist,v 1.1 2006/08/01 12:38:49 clsung Exp $
 %%SITE_PERL%%/Term/Menus.pm
-%%SITE_PERL%%/Term/Menus/ConfigData.pm
 @dirrmtry %%SITE_PERL%%/Term/Menus
 @dirrmtry %%SITE_PERL%%/Term
