@@ -26,7 +26,7 @@
 # SUCH DAMAGE.
 #
 
-# $FreeBSD: ports/Tools/scripts/resolveportsfromlibs.sh,v 1.1 2007/08/12 12:49:23 netchild Exp $
+# $FreeBSD: ports/Tools/scripts/resolveportsfromlibs.sh,v 1.2 2007/08/24 14:29:03 netchild Exp $
 
 #
 # The purpose of this script is to find the installed port which contains
@@ -123,7 +123,11 @@ for i in $@; do
 		result="USE_GNOME+=${GNOME}"
 	fi
 
+	# USE_xxx exceptions, sorting key is the USE_xxx name
 	case ${origin} in
+	print/freetype2)
+		result="USE_FREETYPE=yes"
+		;;
 	devel/gettext)
 		result="USE_GETTEXT=yes"
 		;;
@@ -133,7 +137,7 @@ for i in $@; do
 	esac
 
 	if [ -z "${result}" ]; then
-		result="${lib}:${origin}"
+		result="${lib}:\${PORTSDIR}/${origin}"
 	fi
 
 	echo ${result}
