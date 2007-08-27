@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/ncurses-devel/Makefile.man,v 1.3 2007/04/16 04:19:43 rafan Exp $
 
 MANCOMPRESSED=	yes
 
@@ -9,7 +9,6 @@ MAN1=	\
 	clear.1 \
 	infocmp.1m \
 	infotocap.1m \
-	tack.1 \
 	tic.1m \
 	toe.1m \
 	tput.1 \
