@@ -12,7 +12,8 @@ upgrades.
 
   To follow the standards this port has received a small reworking.
 
-  WORDPRESSMU (that defaulted to PREFIX/www/data/wordpress-mu) is depreciated, use WWWDIR (default to PREFIX/www/wordpress-mu).
+  WORDPRESSMU (that defaulted to PREFIX/www/data/wordpress-mu) is deprecated,
+  use WWWDIR (defaults to PREFIX/www/wordpress-mu).
 
 20070828:
   AFFECTS: users of databases/mysql51-client
@@ -5536,4 +5537,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.535 2007/08/28 09:33:40 ale Exp $
+$FreeBSD: ports/UPDATING,v 1.536 2007/08/28 11:56:32 araujo Exp $
