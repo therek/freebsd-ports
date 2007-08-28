@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1405 2007/08/27 19:44:03 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1406 2007/08/27 19:52:30 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -44,7 +44,7 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
         <name>sylpheed2</name>
-	<range><lt>2.4.4</lt></range>
+	<range><lt>2.4.4_1</lt></range>
       </package>
     </affects>
     <description>
@@ -68,6 +68,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2007-08-24</discovery>
       <entry>2007-08-27</entry>
+      <modified>2007-08-28</modified>    
     </dates>
   </vuln>
 
