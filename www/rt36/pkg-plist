@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/rt36/pkg-plist,v 1.17 2006/08/15 16:42:15 rafan Exp $
+@comment $FreeBSD: ports/www/rt36/pkg-plist,v 1.18 2006/12/22 17:07:38 bsam Exp $
 @unexec if cmp -s %%RT_PATH%%/etc/RT_SiteConfig.pm %%RT_PATH%%/etc/RT_SiteConfig.pm-dist; then rm -f %%RT_PATH%%/etc/RT_SiteConfig.pm; fi
 %%RTPLIST%%/etc/RT_SiteConfig.pm-dist
 @exec [ -f %%RT_PATH%%/etc/RT_SiteConfig.pm ] || cp -p %%RT_PATH%%/etc/RT_SiteConfig.pm-dist %%RT_PATH%%/etc/RT_SiteConfig.pm
@@ -105,6 +105,8 @@
 %%RTPLIST%%/lib/RT/I18N/pl.po
 %%RTPLIST%%/lib/RT/I18N/pt_br.po
 %%RTPLIST%%/lib/RT/I18N/ru.po
+%%RTPLIST%%/lib/RT/I18N/sv.po
+%%RTPLIST%%/lib/RT/I18N/tr.po
 %%RTPLIST%%/lib/RT/I18N/zh_cn.po
 %%RTPLIST%%/lib/RT/I18N/zh_tw.po
 %%RTPLIST%%/lib/RT/Interface/CLI.pm
@@ -512,6 +514,7 @@
 %%RTPLIST%%/share/html/REST/1.0/Forms/ticket/links
 %%RTPLIST%%/share/html/REST/1.0/Forms/ticket/merge
 %%RTPLIST%%/share/html/REST/1.0/Forms/ticket/take
+%%RTPLIST%%/share/html/REST/1.0/Forms/transaction/default
 %%RTPLIST%%/share/html/REST/1.0/Forms/user/default
 %%RTPLIST%%/share/html/REST/1.0/Forms/user/ns
 %%RTPLIST%%/share/html/REST/1.0/NoAuth/mail-gateway
@@ -655,6 +658,7 @@
 @dirrm %%RTPLIST%%/share/html/REST/1.0/search
 @dirrm %%RTPLIST%%/share/html/REST/1.0/NoAuth
 @dirrm %%RTPLIST%%/share/html/REST/1.0/Forms/user
+@dirrm %%RTPLIST%%/share/html/REST/1.0/Forms/transaction
 @dirrm %%RTPLIST%%/share/html/REST/1.0/Forms/ticket
 @dirrm %%RTPLIST%%/share/html/REST/1.0/Forms/queue
 @dirrm %%RTPLIST%%/share/html/REST/1.0/Forms
