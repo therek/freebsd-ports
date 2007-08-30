@@ -26,7 +26,7 @@
 # SUCH DAMAGE.
 #
 
-# $FreeBSD: ports/Tools/scripts/explicit_lib_depends.sh,v 1.2 2007/08/24 15:30:31 netchild Exp $
+# $FreeBSD: ports/Tools/scripts/explicit_lib_depends.sh,v 1.3 2007/08/26 15:03:55 netchild Exp $
 
 #
 # The purpose of this script is to give the real dependency list of a
@@ -90,6 +90,11 @@ for i in $@; do
 		if [ -d "${PKG_DBDIR}/${i}" ]; then
 			current_port="${PKG_DBDIR}/${i}"
 		fi
+	fi
+
+	if [ ! -f ${current_port}/+CONTENTS ]; then
+		echo $i is not a valid port
+		continue
 	fi
 
 	myorigin=$(awk -F : '/@comment ORIGIN:/ {print $2}' \
