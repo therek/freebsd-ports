@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1465 2007/08/22 06:23:03 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1466 2007/08/23 19:06:32 sat Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3192,3 +3192,4 @@ editors/gnuserv-emacs20|editors/gnuserv|2007-08-19|Has expired: emacs20 and rela
 devel/semantic-emacs20|devel/semantic|2007-08-19|Has expired: emacs20 and related ports are obsolete; please use a more recent version
 net/ddc||2007-08-22|Usability expired
 games/groundhog||2007-08-22|Game is not worth keeping
+x11-toolkits/pmw|x11-toolkits/py-Pmw|2007-09-02|Port renamed for consistency
