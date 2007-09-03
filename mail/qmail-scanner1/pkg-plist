@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/qmail-scanner/pkg-plist,v 1.6 2006/01/21 17:37:10 krion Exp $
+@comment $FreeBSD: ports/mail/qmail-scanner1/pkg-plist,v 1.7 2006/01/22 02:20:03 edwin Exp $
 bin/qmail-scanner-queue.pl
 bin/qs2mrtg.pl
 share/examples/qs2mrtg/mrtg-qmail-scanner.cfg
