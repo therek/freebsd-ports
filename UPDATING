@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20070903:
+  AFFECTS: users of net/whois, net/gwhois
+  AUTHOR:  nivo+kw+ports.bfa274@is-root.com
+
+  To avoid a conflicting binary name issue, net/whois has renamed its
+  files to mwhois.  Please use mwhois if you want to use Marco d'Itri's
+  whois client from now on.
+
 20070828:
   AFFECTS: users of www/wordpress-mu
   AUTHOR:  araujo@FreeBSD.org
@@ -5537,4 +5545,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.536 2007/08/28 11:56:32 araujo Exp $
+$FreeBSD: ports/UPDATING,v 1.537 2007/08/28 15:58:37 sat Exp $
