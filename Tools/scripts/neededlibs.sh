@@ -26,7 +26,7 @@
 # SUCH DAMAGE.
 #
 
-# $FreeBSD$
+# $FreeBSD: ports/Tools/scripts/neededlibs.sh,v 1.1 2007/08/12 12:49:23 netchild Exp $
 
 
 #
@@ -48,7 +48,7 @@ for i in "$@"; do
 	kind=$(file -bi "$i")
 
 	case "${kind}" in
-	application/x-executable*)
+	application/x-executable*|application/x-sharedlib*)
 		# ok, fall through
 		;;
 	*)
