@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2/files/Makefile.knobs,v 1.42 2007/04/09 16:14:27 jkim Exp $
+# $FreeBSD: ports/editors/openoffice.org-2/files/Makefile.knobs,v 1.43 2007/09/04 06:18:58 maho Exp $
 
 .if !defined(WITH_GNUGCJ)
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
@@ -159,6 +159,6 @@ pre-fetch:
 .elif ${LOCALIZED_LANG} == "all"
 	@${ECHO} "of free diskspace (~ 35GB) and memory (~ 2GB)."
 .else
-	@${ECHO} "of free diskspace (~ 10GB) and memory (~ 2GB)."
+	@${ECHO} "of free diskspace (~ 11GB) and memory (~ 2GB)."
 .endif
 	@${ECHO} "If you want SDK and/or solver, please type make sdk and/or make solver"
