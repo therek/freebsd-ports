@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/openldap24-server/files/pkg-deinstall.in,v 1.1 2006/05/26 02:44:25 delphij Exp $
 #
 
 ECHO_CMD=echo
@@ -18,16 +18,10 @@ POST-DEINSTALL)
     ${ECHO_CMD} "  rm -Rf %%DATABASEDIR%%"
     ${ECHO_CMD}
   fi
-  if [ -d %%SLURPDIR%% ]; then
-    ${ECHO_CMD} "- to remove the OpenLDAP replication directory:"
-    ${ECHO_CMD} "  rm -Rf %%SLURPDIR%%"
-    ${ECHO_CMD}
-  fi
   ${ECHO_CMD} "- to remove the OpenLDAP user:"
   ${ECHO_CMD} "  pw userdel ldap"
   ${ECHO_CMD}
-  ${ECHO_CMD} "If you are upgrading, don't forget to restart"
-  ${ECHO_CMD} "slapd and slurpd."
+  ${ECHO_CMD} "If you are upgrading, don't forget to restart slapd."
   ${ECHO_CMD}
   ;;
 esac
