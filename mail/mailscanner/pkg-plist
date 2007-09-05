@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.34 2007/06/04 09:59:58 miwi Exp $
+@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.35 2007/07/04 15:04:03 miwi Exp $
 etc/MailScanner/country.domains.conf.sample
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
@@ -17,6 +17,7 @@ lib/MailScanner/MailScanner/BinHex.pm
 lib/MailScanner/MailScanner/Config.pm
 lib/MailScanner/MailScanner/ConfigDefs.pl
 lib/MailScanner/MailScanner/CustomConfig.pm
+lib/MailScanner/MailScanner/CustomFunctions/CustomAction.pm
 lib/MailScanner/MailScanner/CustomFunctions/GenericSpamScanner.pm
 lib/MailScanner/MailScanner/CustomFunctions/MyExample.pm
 lib/MailScanner/MailScanner/CustomFunctions/DavidHooton.pm
