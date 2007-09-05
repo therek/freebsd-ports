@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/games/sampsvr/files/sampd.in,v 1.3 2007/06/25 07:38:58 rafan Exp $
+# $FreeBSD: ports/games/sampsvr/files/sampd.in,v 1.4 2007/07/26 22:31:50 miwi Exp $
 #
 # PROVIDE: sampd
 # REQUIRE: NETWORKING
@@ -20,7 +20,7 @@ load_rc_config $name
 : ${sampd_enable="NO"}
 : ${sampd_chdir="%%SAMPDIR%%"}
 
-command="%%SAMPDIR%%/samp02svr"
+command="%%SAMPDIR%%/samp022svr"
 command_args="> /dev/null &"
 required_files="%%PREFIX%%/etc/sampsvr.cfg"
 start_precmd="sampd_prestart"
