@@ -2,7 +2,7 @@
 # Date created: 1 July 2007
 # Whom: John Hixson <john@divinix.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/mtpfs/Makefile.bak,v 1.1 2007/09/08 05:10:39 edwin Exp $
 #
 
 PORTNAME=	mtpfs
