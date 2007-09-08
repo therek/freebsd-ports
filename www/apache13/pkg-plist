@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache13/pkg-plist,v 1.61 2005/12/05 08:29:57 ache Exp $
+@comment $FreeBSD: ports/www/apache13/pkg-plist,v 1.62 2006/01/26 04:39:20 kris Exp $
 bin/checkgid
 bin/dbmmanage
 bin/htdigest
@@ -440,6 +440,7 @@ www/cgi-bin-dist/printenv
 www/cgi-bin-dist/test-cgi
 @exec chmod a-w %D/www/cgi-bin-dist
 www/icons/README
+www/icons/README.html
 www/icons/a.gif
 www/icons/a.png
 www/icons/alert.black.gif
@@ -564,7 +565,6 @@ www/icons/screw2.gif
 www/icons/screw2.png
 www/icons/script.gif
 www/icons/script.png
-www/icons/small/README.txt
 www/icons/small/back.gif
 www/icons/small/back.png
 www/icons/small/binary.gif
