@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.1 2007/09/08 00:16:26 linimon Exp $
 #
 # bsd.perl.mk - Support for Perl-based ports.
 #
@@ -223,8 +223,8 @@ Perl_Post_Include=		bsd.perl.mk
 
 .if defined(PERL_CONFIGURE)
 .if !target(do-configure)
+# XXX MCL had to duplicate the first block; implies more refactoring needed
 do-configure:
-	# XXX MCL had to duplicate this block; implies more refactoring needed
 	@if [ -f ${SCRIPTDIR}/configure ]; then \
 		cd ${.CURDIR} && ${SETENV} ${SCRIPTS_ENV} ${SH} \
 		  ${SCRIPTDIR}/configure; \
