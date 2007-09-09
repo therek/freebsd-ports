@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.59 2007/08/10 23:32:08 linimon Exp $
+# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.60 2007/09/08 18:01:07 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1478,13 +1478,13 @@ PLIST_SUB+=		PERL_VERSION=${PERL_VERSION} \
 .endif
 .endif
 
-.if defined(USE_PERL5) || defined(USE_PERL5_BUILD) || defined(USE_PERL5_RUN) || defined(PERL_CONFIGURE) || defined(PERL_MODBUILD)
+#.if defined(USE_PERL5) || defined(USE_PERL5_BUILD) || defined(USE_PERL5_RUN) || defined(PERL_CONFIGURE) || defined(PERL_MODBUILD)
 .if exists(${DEVELPORTSDIR}/Mk/bsd.perl.mk)
 .include "${DEVELPORTSDIR}/Mk/bsd.perl.mk"
 .else
 .include "${PORTSDIR}/Mk/bsd.perl.mk"
 .endif
-.endif
+#.endif
 
 .if defined(USE_PHP)
 .if exists(${DEVELPORTSDIR}/Mk/bsd.php.mk)
@@ -2124,13 +2124,13 @@ BUILD_DEPENDS+=	bison:${PORTSDIR}/devel/bison
 .endif
 .endif
 
-.if defined(USE_PERL5) || defined(USE_PERL5_BUILD) || defined(USE_PERL5_RUN) || defined(PERL_CONFIGURE) || defined(PERL_MODBUILD)
+#.if defined(USE_PERL5) || defined(USE_PERL5_BUILD) || defined(USE_PERL5_RUN) || defined(PERL_CONFIGURE) || defined(PERL_MODBUILD)
 .if exists(${DEVELPORTSDIR}/Mk/bsd.perl.mk)
 .include "${DEVELPORTSDIR}/Mk/bsd.perl.mk"
 .else
 .include "${PORTSDIR}/Mk/bsd.perl.mk"
 .endif
-.endif
+#.endif
 
 .if defined(USE_PHP)
 .if exists(${DEVELPORTSDIR}/Mk/bsd.php.mk)
