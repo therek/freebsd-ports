@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1471 2007/09/07 03:53:54 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.1472 2007/09/08 05:19:22 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3213,3 +3213,6 @@ net-im/meanwhile-gaim|net-im/pidgin|2007-09-06|Incorporated into net-im/pidgin
 security/gaim-encryption|security/pidgin-encryption|2007-09-06|Project renamed
 security/gaim-otr|security/pidgin-otr|2007-09-06|Project renamed
 sysutils/linux-procfs|sysutils/linux-procps|2007-09-08|Bad typo
+devel/configgen||2007-09-10|No longer required with new autotools system
+devel/gnu-autoconf||2007-09-10|No longer required with new autotools system
+devel/gnu-automake||2007-09-10|No longer required with new autotools system
