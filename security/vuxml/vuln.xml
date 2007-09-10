@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1412 2007/09/05 11:26:31 remko Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1413 2007/09/10 13:37:24 mnag Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -469,10 +469,6 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
         <name>gpdf</name>
-	<range><gt>0</gt></range>
-      </package>
-      <package>
-        <name>evince</name>
 	<range><gt>0</gt></range>
       </package>
       <package>
