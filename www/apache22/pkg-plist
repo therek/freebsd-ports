@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.81 2007/07/22 11:03:36 clement Exp $
+@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.82 2007/09/09 14:55:16 clement Exp $
 @exec mkdir -p %D/etc/apache22/extra 2> /dev/null
 @exec mkdir -p %D/etc/apache22/Includes 2> /dev/null || true
 @exec mkdir -p %D/etc/apache22/envvars.d 2> /dev/null || true
@@ -123,7 +123,6 @@ include/apache22/ap_release.h
 %%EVENT%%include/apache22/pod.h
 %%EVENT%%include/apache22/fdqueue.h
 %%WORKER%%include/apache22/fdqueue.h
-%%THREADPOOL%%include/apache22/pod.h
 include/apache22/http_config.h
 include/apache22/http_connection.h
 include/apache22/http_core.h
