@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.583 2007/09/13 19:44:45 flz Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.584 2007/09/13 22:10:33 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1940,12 +1940,6 @@ PLIST_SUB+=		PERL_VERSION=${PERL_VERSION} \
 
 .if defined(USE_LOCAL_MK)
 .include "${PORTSDIR}/Mk/bsd.local.mk"
-.endif
-
-.if defined(USE_XORG) || defined(XORG_CAT)
-. if ${X_WINDOW_SYSTEM} == "xorg"
-.include "${PORTSDIR}/Mk/bsd.xorg.mk"
-. endif
 .endif
 
 .if defined(USE_MYSQL) || defined(WANT_MYSQL_VER) || \
