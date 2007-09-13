@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.581 2007/09/08 00:16:26 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.582 2007/09/09 01:02:15 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1938,6 +1938,12 @@ BUILD_DEPENDS+=	bison:${PORTSDIR}/devel/bison
 
 .if defined(USE_LOCAL_MK)
 .include "${PORTSDIR}/Mk/bsd.local.mk"
+.endif
+
+.if defined(USE_XORG) || defined(XORG_CAT)
+. if ${X_WINDOW_SYSTEM} == "xorg"
+.include "${PORTSDIR}/Mk/bsd.xorg.mk"
+. endif
 .endif
 
 .if defined(USE_MYSQL) || defined(WANT_MYSQL_VER) || \
