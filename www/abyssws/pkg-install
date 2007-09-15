@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/www/abyssws/pkg-install,v 1.1 2007/09/06 12:00:07 edwin Exp $
 
 PATH=/bin:/usr/sbin
 WSHOME=${PKG_PREFIX}/lib/abyssws
@@ -38,12 +38,22 @@ PRE-INSTALL)
 		mkdir -p ${WSHOME}
 		chown ${USER}:${GROUP} ${WSHOME}
 	fi
+
+	if [ -r ${WSHOME}/htdocs/index.html ] ; then
+	       mv ${WSHOME}/htdocs/index.html ${WSHOME}/htdocs/index.html.bak
+	fi
+
 	;;
 
 POST-INSTALL)
 	chown -R ${USER}:${GROUP} ${WSHOME}
 	chmod -R u+w,o-rx ${WSHOME}
 	chmod u+s ${WSHOME}/abyssws
+	
+	if [ -r ${WSHOME}/htdocs/index.html.bak ] ; then
+	       mv ${WSHOME}/htdocs/index.html.bak ${WSHOME}/htdocs/index.html
+	fi
+
 	;;
 
 
