@@ -26,7 +26,7 @@
 # SUCH DAMAGE.
 #
 
-# $FreeBSD: ports/Tools/scripts/resolveportsfromlibs.sh,v 1.5 2007/09/04 19:32:36 netchild Exp $
+# $FreeBSD: ports/Tools/scripts/resolveportsfromlibs.sh,v 1.6 2007/09/08 16:23:13 gerald Exp $
 
 #
 # The purpose of this script is to find the installed port which contains
@@ -137,9 +137,9 @@ for i in $@; do
 	if [ ${origin} = unknown ]; then
 		if [ -f ${lib_pathname} ]; then
 			port=$(pkg_which "${lib_pathname}")
-			if [ -f /var/db/pkg/$port/+CONTENTS ]; then
+			if [ -f $PKG_DBDIR/$port/+CONTENTS ]; then
 				origin=$(grep "@comment ORIGIN:" \
-					/var/db/pkg/$port/+CONTENTS \
+					$PKG_DBDIR/$port/+CONTENTS \
 					| sed -e 's/@comment ORIGIN://')
 			else
 				result="${lib} ($i) not found, unknown origin"
