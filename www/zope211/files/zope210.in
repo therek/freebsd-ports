@@ -2,7 +2,7 @@
 #
 # Startup script for Zope server.
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/zope210/files/zope210.sh.in,v 1.1 2006/11/30 13:52:22 pav Exp $
 #
 
 # PROVIDE: zope210

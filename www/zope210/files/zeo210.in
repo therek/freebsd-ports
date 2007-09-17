@@ -2,7 +2,7 @@
 #
 # Startup script for Zeo server.
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/zope210/files/zeo210.sh.in,v 1.1 2006/11/30 13:52:22 pav Exp $
 #
 
 # PROVIDE: zeo210
