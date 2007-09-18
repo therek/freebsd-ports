@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache20/files/apache2.sh.in,v 1.1 2007/09/09 14:48:34 clement Exp $
+# $FreeBSD: ports/www/apache20/files/apache2.sh.in,v 1.2 2007/09/10 14:48:36 clement Exp $
 #
 
 # PROVIDE: apache2
@@ -98,6 +98,11 @@ apache2_requirepidfile()
 
 apache2_checkconfig()
 {
+	if test -f %%PREFIX%%/sbin/envvars
+	then
+		. %%PREFIX%%/sbin/envvars
+	fi
+
 	echo "Performing sanity check on apache2 configuration:"
 	eval ${command} ${apache2_flags} -t
 }
@@ -113,18 +118,12 @@ apache2_precmd()
 {
 	apache2_checkconfig
 
-	if test -f %%PREFIX%%/sbin/envvars
-	then
-		. %%PREFIX%%/sbin/envvars
-	fi
-
 	if checkyesno apache2limits_enable
 	then
 		eval `/usr/bin/limits ${apache2limits_args}` 2>/dev/null
 	else
 		return 0
         fi
-
 }
 
 extra_commands="reload graceful configtest"
