@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.546 2007/09/10 15:24:46 acm Exp $
+# $FreeBSD: ports/LEGAL,v 1.547 2007/09/14 12:25:43 miwi Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -279,8 +279,6 @@ GTL-*			misc/gtl		Non-commercial use only,
 						license forbids redistribution
 hcfmdm/*		comms/hcfmdm		No redistribution allowed
 himeno/*		benchmarks/himenobench	Uncertain to distribute sources and binaries
-hjb3_0-linux.sfx	www/hotjava		Licensed for individual
-						non-commercial use only
 HyperSpec-*		devel/clisp-hyperspec	Commercial redistribution prohibited
 homard-*		french/homard		Only free for use in conjunction with
 						french/aster.  For any other purpose,
