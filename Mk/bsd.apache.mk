@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.16 2007/07/22 12:43:00 clement Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.17 2007/09/09 14:36:42 clement Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -407,14 +407,14 @@ show-modules:
 
 .if !target(make-options-list)
 make-options-list:
-	@${ECHO_CMD} OPTIONS= \\;
+	@${ECHO_CMD} OPTIONS+= \\;
 	@for module in ${AVAILABLE_MODULES} ; do \
 	if ${ECHO_CMD} ${APACHE_MODULES} | ${GREP} -wq $${module} 2> /dev/null ; \
 	then \
-		${PRINTF} "\t `${ECHO_CMD} $${module} | ${TR} '[:lower:]' '[:upper:]'` \"mod_$${module}\" ON \\"; \
+		${PRINTF} "\t `${ECHO_CMD} $${module} | ${TR} '[:lower:]' '[:upper:]'` \"Enable mod_$${module}\" ON \\"; \
 		${ECHO_CMD}; \
 	else \
-		${PRINTF} "\t `${ECHO_CMD} $${module} | ${TR} '[:lower:]' '[:upper:]'` \"mod_$${module}\" OFF \\";\
+		${PRINTF} "\t `${ECHO_CMD} $${module} | ${TR} '[:lower:]' '[:upper:]'` \"Enable mod_$${module}\" OFF \\";\
 		${ECHO_CMD}; \
 	fi;\
 	done; \
