@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/libslang2/pkg-plist,v 1.9 2007/07/05 19:21:20 garga Exp $
+@comment $FreeBSD: ports/devel/libslang2/pkg-plist,v 1.10 2007/09/12 14:16:42 garga Exp $
 bin/slsh
 etc/slsh.rc
 include/slang.h
@@ -84,6 +84,7 @@ lib/slang/v2/modules/varray-module.so
 %%DATADIR%%/structfuns.sl
 %%DATADIR%%/termios.sl
 %%DATADIR%%/varray.sl
+@exec mkdir -p %D/%%DATADIR%%/local-packages
 @dirrmtry lib/slang/v2/modules
 @dirrmtry lib/slang/v2
 @dirrmtry lib/slang
