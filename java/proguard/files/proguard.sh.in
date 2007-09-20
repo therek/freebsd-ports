@@ -1,5 +1,5 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/java/proguard/files/proguard.sh.in,v 1.1 2005/04/27 20:05:12 hq Exp $
+# $FreeBSD: ports/java/proguard/files/proguard.sh.in,v 1.2 2007/02/21 13:27:06 rafan Exp $
 
-exec "%%LOCALBASE%%/bin/java" -jar "%%DATADIR%%/lib/proguard.jar" "$@"
+exec "%%LOCALBASE%%/bin/java" -jar "%%DATADIR%%/proguard.jar" "$@"
