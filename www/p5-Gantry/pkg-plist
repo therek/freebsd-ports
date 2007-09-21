@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/p5-Gantry/pkg-plist,v 1.4 2007/05/30 01:48:55 clsung Exp $
+@comment $FreeBSD: ports/www/p5-Gantry/pkg-plist,v 1.5 2007/09/12 05:53:46 clsung Exp $
 %%WWWDIR%%/control_wrapper.tt
 %%WWWDIR%%/data.tt
 %%WWWDIR%%/default.tt
@@ -143,6 +143,7 @@
 %%SITE_PERL%%/Gantry/Utils/AuthCDBI.pm
 %%SITE_PERL%%/Gantry/Utils/CDBI.pm
 %%SITE_PERL%%/Gantry/Utils/CRUDHelp.pm
+%%SITE_PERL%%/Gantry/Utils/Crypt.pm
 %%SITE_PERL%%/Gantry/Utils/DB.pm
 %%SITE_PERL%%/Gantry/Utils/DBConnHelper.pm
 %%SITE_PERL%%/Gantry/Utils/DBConnHelper/MP13.pm
