@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1481 2007/09/18 16:06:41 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1482 2007/09/18 17:23:56 johans Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3241,3 +3241,4 @@ net/ng_netflow||2007-09-18|Has expired: already in base in all supported version
 java/jdk12-doc||2007-09-18|Has expired: Obsolete version of jdk
 japanese/netypesv||2007-09-18|Has expired: Depends on obsolete version of jdk
 net-im/micq|net-im/climm|2007-09-18|Project renamed
+graphics/blender-devel|graphics/blender|2007-09-21|Not needed since binary version is gone
