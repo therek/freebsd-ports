@@ -1,5 +1,5 @@
 #!%%LINUXBASE%%/bin/sh
-# $FreeBSD: ports/print/acroreadwrapper/files/acroread.in,v 1.2 2006/02/22 06:58:02 hrs Exp $
+# $FreeBSD: ports/print/acroreadwrapper/files/acroread.in,v 1.3 2007/06/09 12:44:02 hrs Exp $
 
 ADOBE_LANG=`echo "${ADOBE_LANG}" | tr a-z A-Z`
 
@@ -73,10 +73,13 @@ esac
 
 UNAME_s=Linux; export UNAME_s
 if [ -x %%PREFIX%%/%%ACROBASE%%/${ADOBE_LANG}/bin/acroread ]; then
-	exec %%PREFIX%%/%%ACROBASE%%/${ADOBE_LANG}/bin/acroread "$@"
-elif [ -x %%PREFIX%%/%%ACROBASE%%/ENU/bin/acroread ]; then
-	exec %%PREFIX%%/%%ACROBASE%%/ENU/bin/acroread "$@"
+	exec %%LINUXSH%% %%PREFIX%%/%%ACROBASE%%/${ADOBE_LANG}/bin/acroread "$@"
 else
-	echo "!fatal: acroread binary not found."
-	exit 1
+	echo "?warning: localized acroread (${ADOBE_LANG}) not found." 1>&2
+	if [ -x %%PREFIX%%/%%ACROBASE%%/ENU/bin/acroread ]; then
+		echo "Trying to invoke English version..." 1>&2
+		exec %%LINUXSH%% %%PREFIX%%/%%ACROBASE%%/ENU/bin/acroread "$@"
+	fi
 fi
+echo "!fatal: No acroread binary found.  Check \$LANG or \$ADOBE_LANG, and installed acroread packages." 1>&2
+exit 1
