@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.549 2007/09/18 16:06:41 miwi Exp $
+# $FreeBSD: ports/LEGAL,v 1.550 2007/09/23 06:45:39 edwin Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -256,7 +256,6 @@ gentoo-linux/stage1-*	emulators/linux_base-gentoo-stage1 Binaries
 						licensed under GNU GPL without
 						accompanying source
 gGo-*.tar.gz		games/ggo		Redistribution is restricted
-ghostscript/*		print/ghostscript-afpl	Can only be distributed for free
 gibi-*			french/gibi		Only free for use in conjunction with
 						french/aster.  For any other purpose,
 						you have to acquire a license
