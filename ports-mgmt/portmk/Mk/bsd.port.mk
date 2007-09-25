@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.61 2007/09/09 03:02:06 linimon Exp $
+# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.62 2007/09/17 06:32:27 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -358,9 +358,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  to specify a version without X11 and/or localized
 #				  versions for their nationality.
 #				  Default: print/ghostscript-gpl
-# WITH_GHOSTSCRIPT_AFPL
-#				- If set, this port uses the AFPL version of the ghostscript
-#				  software instead of the GPL version, which is used otherwise.
 # WITH_GHOSTSCRIPT_GNU
 #				- If set, this port uses the GNU version of the ghostscript
 #				  software instead of the GPL version, which is used otherwise.
@@ -2235,16 +2232,12 @@ CONFIGURE_ARGS+=--x-libraries=${X11BASE}/lib --x-includes=${X11BASE}/include
 .if !defined(WITHOUT_X11)
 .if defined(WITH_GHOSTSCRIPT_GNU)
 GHOSTSCRIPT_PORT?=	print/ghostscript-gnu
-.elif defined(WITH_GHOSTSCRIPT_AFPL)
-GHOSTSCRIPT_PORT?=	print/ghostscript-afpl
 .else
 GHOSTSCRIPT_PORT?=	print/ghostscript-gpl
 .endif
 .else
 .if defined(WITH_GHOSTSCRIPT_GNU)
 GHOSTSCRIPT_PORT?=	print/ghostscript-gnu-nox11
-.elif defined(WITH_GHOSTSCRIPT_AFPL)
-GHOSTSCRIPT_PORT?=	print/ghostscript-afpl-nox11
 .else
 GHOSTSCRIPT_PORT?=	print/ghostscript-gpl-nox11
 .endif
