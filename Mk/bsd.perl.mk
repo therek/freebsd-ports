@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.5 2007/09/26 00:15:26 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.6 2007/09/26 00:36:44 linimon Exp $
 #
 # bsd.perl.mk - Support for Perl-based ports.
 #
@@ -213,7 +213,7 @@ USE_PERL5=	yes
 # Disable AutoInstall from attempting to install from CPAN directly in
 # the case of missing dependencies.  This causes the build to loop on
 # the build cluster asking for interactive input.
-CONFIGURE_ENV+= "PERL_EXTUTILS_AUTOINSTALL=--skipdeps"
+CONFIGURE_ENV+= PERL_EXTUTILS_AUTOINSTALL="--skipdeps"
 .if defined(BATCH) && !defined(IS_INTERACTIVE)
 CONFIGURE_ENV+=	PERL_MM_USE_DEFAULT="YES"
 .endif # defined(BATCH) && !defined(IS_INTERACTIVE)
