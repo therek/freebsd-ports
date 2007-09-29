@@ -1,5 +1,4 @@
-@comment $FreeBSD$
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/IO-YAML/.packlist
+@comment $FreeBSD: ports/devel/p5-IO-YAML/pkg-plist,v 1.1 2006/08/22 05:57:22 clsung Exp $
 %%SITE_PERL%%/IO/YAML.pm
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/IO-YAML
 @dirrmtry %%SITE_PERL%%/IO
