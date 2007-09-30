@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.585 2007/09/13 23:29:48 flz Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.586 2007/09/24 08:39:17 rafan Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -4774,6 +4774,10 @@ ${deptype:L}-depends:
 .if !defined(NO_DEPENDS)
 	@for i in `${ECHO_CMD} "${${deptype}_DEPENDS}"`; do \
 		prog=`${ECHO_CMD} $$i | ${SED} -e 's/:.*//'`; \
+		if [ -z "$$prog" ]; then \
+			${ECHO_MSG} "Error: there is an empty port dependency in ${deptype}_DEPENDS."; \
+			break; \
+		fi; \
 		dir=`${ECHO_CMD} $$i | ${SED} -e 's/[^:]*://'`; \
 		if ${EXPR} "$$dir" : '.*:' > /dev/null; then \
 			target=`${ECHO_CMD} $$dir | ${SED} -e 's/.*://'`; \
