@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13/files/apache.sh,v 1.11 2006/08/10 11:51:42 ache Exp $
+# $FreeBSD$
 
 # PROVIDE: apache
 # REQUIRE: LOGIN cleanvar
