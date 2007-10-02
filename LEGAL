@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.551 2007/09/24 08:39:17 rafan Exp $
+# $FreeBSD: ports/LEGAL,v 1.552 2007/10/01 12:37:23 tabthorpe Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -620,6 +620,7 @@ webglimpse-*.src.tar.gz	www/webglimpse		Depends on glimpse
 wgetpro*		ftp/wgetpro		U.S. Patent 6,041,345
 win32/*			multimedia/win32-codecs	Licensing status of the
 						codecs is unknown
+Win4BSD-*		emulators/win4bsd	Redistribution is not allowed
 xchada01.lzh		games/xchadance		Contains commercial character
 						data
 xds-[0-9]*		lang/xds		Redistribution is forbidden
