@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openntpd/files/openntpd.sh,v 1.1 2004/07/11 17:18:24 naddy Exp $
+# $FreeBSD: ports/net/openntpd/files/openntpd.sh,v 1.2 2006/02/20 20:47:28 dougb Exp $
 #
 
 # PROVIDE: openntpd

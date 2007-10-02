@@ -1,5 +1,4 @@
-@comment $FreeBSD: ports/net/openntpd/pkg-plist,v 1.1 2004/07/11 17:18:23 naddy Exp $
-etc/rc.d/openntpd.sh
+@comment $FreeBSD: ports/net/openntpd/pkg-plist,v 1.2 2004/08/14 17:06:01 krion Exp $
 sbin/ntpd
 @unexec if cmp -s %D/etc/ntpd.conf %D/%%EXAMPLESDIR%%/ntpd.conf; then rm -f %D/etc/ntpd.conf; fi
 %%EXAMPLESDIR%%/ntpd.conf
