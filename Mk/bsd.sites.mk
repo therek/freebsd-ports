@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.428 2007/09/03 13:40:00 lbr Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.429 2007/09/10 20:44:33 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -242,8 +242,6 @@ MASTER_SITE_FEDORA_LINUX+= \
 	ftp://rpmfind.net/linux/fedora/core/%SUBDIR%/ \
 	ftp://ftp.gtlib.cc.gatech.edu/pub/fedora.redhat/linux/core/%SUBDIR%/ \
 	ftp://fedora.mirrors.tds.net/pub/fedora-core/%SUBDIR%/ \
-	http://ftp.ale.org/pub/fedora/linux/core/%SUBDIR%/ \
-	ftp://ftp.ale.org/mirrors/fedora/linux/core/%SUBDIR%/ \
 	http://ftp.ndlug.nd.edu/pub/fedora/linux/core/%SUBDIR%/ \
 	ftp://ftp.ndlug.nd.edu/pub/fedora/linux/core/%SUBDIR%/ \
 	ftp://ftp.belnet.be/linux/fedora/linux/core/%SUBDIR%/ \
@@ -1137,7 +1135,6 @@ MASTER_SITE_SUSE+= 	\
 	http://mirrors.usc.edu/pub/linux/distributions/suse/%SUBDIR%/ \
 	ftp://ftp-linux.cc.gatech.edu/pub/suse/suse/%SUBDIR%/ \
 	http://mirror.usu.edu/mirrors/suse/%SUBDIR%/ \
-	http://ftp.ale.org/pub/suse/%SUBDIR%/ \
 	ftp://mirror.mcs.anl.gov/pub/suse/%SUBDIR%/ \
 	ftp://chuck.ucs.indiana.edu/linux/suse/suse/%SUBDIR%/ \
 	ftp://distro.ibiblio.org/pub/linux/distributions/suse/suse/%SUBDIR%/ \
