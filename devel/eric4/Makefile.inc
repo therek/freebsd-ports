@@ -1,15 +1,15 @@
 # This is a set of Makefile macros which allow to build the core and
-# localized language packages for devel/eric4. Look at russian/eric4 
-# for an example.
+# localized language packages for devel/eric4:
+# french/eric4, german/eric4, russian/eric4
 #
 # Date created:				23 Apr 2007
 # Whom:					Boris Samorodov <bsam@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/eric4/Makefile.inc,v 1.1 2007/07/25 22:56:51 bsam Exp $
 #
 
 PORTNAME=	eric4
-PORTVERSION=	4.0.1
+PORTVERSION=	4.0.2
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	eric-ide
 DISTNAME?=	${PORTNAME}-i18n-${I18N_LANG}-${PORTVERSION}
@@ -25,7 +25,6 @@ INSTALL_CMD?=	install-i18n.py
 
 USE_PYTHON=	2.4+
 NO_BUILD=	yes
-#DOCSDIR=	${TARGETDIR}/share/doc/py-qt4-${PORTNAME}
 PLIST_FILES?=	%%PYTHON_SITELIBDIR%%/${PORTNAME}/${PORTNAME}_${I18N_LANG}.qm
 
 do-install:
