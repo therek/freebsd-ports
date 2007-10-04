@@ -2,7 +2,7 @@
 # Date created:		26 Aug 2004
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.29 2007/09/30 04:47:22 linimon Exp $
+# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.30 2007/10/04 02:22:25 edwin Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
@@ -127,7 +127,6 @@ LIB_DEPENDS+=	cups.2:${PORTSDIR}/print/cups-base
 USE_ICONV=	yes
 .endif
 LDFLAGS+=	${PTHREAD_LIBS}
-.endif
 CPPFLAGS+=	${PTHREAD_CFLAGS}
 .endif
 CONFIGURE_ENV+=	CFLAGS="${CFLAGS}" CPPFLAGS="${CPPFLAGS}" LDFLAGS="${LDFLAGS}"
