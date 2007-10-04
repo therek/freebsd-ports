@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/mail/postfix/pkg-install,v 1.23 2006/07/19 12:59:10 mnag Exp $
+#	$FreeBSD: ports/mail/postfix/pkg-install,v 1.24 2007/10/03 23:34:15 edwin Exp $
 #
 
 # If the POSTFIX_DEFAULT_MTA environment variable is set to YES, it
@@ -163,5 +163,4 @@ if [ x"$2" = xPOST-INSTALL -a -z "${PACKAGE_BUILDING}" ]; then
 		echo "mailq	${PKG_PREFIX}/sbin/sendmail"	>>	/etc/mail/mailer.conf
 		echo "newaliases	${PKG_PREFIX}/sbin/sendmail"	>>	/etc/mail/mailer.conf
 	fi
-fi
 fi
