@@ -1,12 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gateway6/files/gateway6.sh.in,v 1.1 2007/09/07 23:29:56 edwin Exp $
 #
 
 #
 # PROVIDE: gateway6
 # REQUIRE: FILESYSTEMS netif
-# BEFORE: ip6addrctl
 # KEYWORD: shutdown
 #
 
