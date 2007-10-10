@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.99 2007/08/04 11:37:24 gabor Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.100 2007/10/07 13:50:15 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -435,7 +435,9 @@ PYDISTUTILS_INSTALLARGS?=		-O 1 -N -S ${PYTHON_SITELIBDIR} \
 								-d ${PYEASYINSTALL_SITELIBDIR} \
 								-s ${PYEASYINSTALL_BINDIR} \
 								${WRKSRC}/dist/${PYEASYINSTALL_EGG}
+.if ${PREFIX} != ${LOCALBASE}
 MAKE_ENV+=						PYTHONPATH=${PYEASYINSTALL_SITELIBDIR}
+.endif
 
 .if defined(PYEASYINSTALL_ARCHDEP)
 _OSRELEASE!=					${UNAME} -r
