@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1437 2007/10/08 12:05:08 flz Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1438 2007/10/09 07:18:11 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -212,13 +212,7 @@ Note:  Please add new entries to the beginning of this file.
       <package>
 	<name>mediawiki</name>
 	<range><gt>1.10.0</gt><lt>1.10.2</lt></range>
-      </package>
-      <package>
-	<name>mediawiki19</name>
 	<range><gt>1.9.0</gt><lt>1.9.4</lt></range>
-      </package>
-      <package>
-	<name>mediawiki18</name>
 	<range><gt>1.8.0</gt><lt>1.8.5</lt></range>
       </package>
     </affects>
@@ -243,7 +237,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2007-09-10</discovery>
       <entry>2007-09-21</entry>
-      <modified>2007-10-02</modified>
+      <modified>2007-10-10</modified>
     </dates>
   </vuln>
 
