@@ -1,5 +1,5 @@
 # Common stuff for Licq-based ports
-# $FreeBSD: ports/net-im/licq/Makefile.inc,v 1.20 2006/06/13 14:41:47 dinoex Exp $
+# $FreeBSD: ports/net-im/licq/Makefile.inc,v 1.21 2006/10/31 05:27:09 dinoex Exp $
 
 PKGNAMEPREFIX=		licq-
 LICQ_VER=		1.3.4
@@ -21,8 +21,6 @@ USE_GMAKE=		yes
 USE_BZIP2=		yes
 WRKSRC?=		${WRKDIR}/${DISTNAME}/plugins/${PORTNAME}
 PLIST_SUB+=		LICQ_DEVEL="@comment "
-.if ${OSVERSION} > 500030
 CXXFLAGS+=		-Wno-deprecated
 CONFIGURE_ENV+=		CXXFLAGS="${CXXFLAGS}"
 MAKE_ENV+=		CXXFLAGS="${CXXFLAGS}"
-.endif
