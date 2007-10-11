@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.553 2007/10/02 19:14:47 alepulver Exp $
+# $FreeBSD: ports/LEGAL,v 1.554 2007/10/05 20:23:11 acm Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -99,7 +99,6 @@ citrix_ica-*		net/citrix_ica		License prohibits redistribution
 cfs-*			security/cfs		Crypto; export-controlled
 code2000-*/CODE2000.ZIP	x11-fonts/code2000	Only unmodified original
 						package can be distributed
-collections*.zip	java/collections	See the license
 contool-*		sysutils/contool	Do not incorporate the source
 						code into a product which is
 						subsequently sold
