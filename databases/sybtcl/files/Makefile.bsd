@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/databases/sybtcl/files/Makefile.bsd,v 1.1 2004/03/30 00:02:10 mi Exp $
 
 .PATH:	${.CURDIR}/generic
 
@@ -7,6 +7,7 @@ LOCALBASE?=	/usr/local
 PREFIX?=	${LOCALBASE}
 TCL_VER?=	8.4
 TCL_DVER=	${TCL_VER:S/.//}
+WARNS?=	2
 
 CFLAGS+=	-I${LOCALBASE}/include -I${LOCALBASE}/include/tcl${TCL_VER}
 LDADD=		-L${LOCALBASE}/lib -lsybdb # -ltcl${TCL_DVER}
