@@ -4,15 +4,15 @@
 #
 # See: http://www.eclipse.org
 #
-# $FreeBSD: ports/java/eclipse/files/eclipse.in,v 1.2 2004/11/22 16:17:22 nork Exp $
+# $FreeBSD: ports/java/eclipse/files/eclipse.in,v 1.9 2007/01/03 18:13:55 tmclaugh Exp $
 #
-
-DEFAULT_JAVA_HOME=%%JAVA_HOME%%
+JAVA_HOME=/usr/local/jdk1.6.0
+DEFAULT_JAVA_HOME=%%PREFIX%%
 ECLIPSE_HOME=%%ECLIPSE_HOME%%
 DEFAULT_JAVA_CMD=java
-MOZILLA_FIVE_HOME=%%X11BASE%%/lib/%%BROWSER%%
-LD_LIBRARY_PATH=$MOZILLA_FIVE_HOME:$LD_LIBRARY_PATH
-
+MOZILLA_FIVE_HOME=%%LOCALBASE%%/lib/%%BROWSER%%
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MOZILLA_FIVE_HOME
+export MOZILLA_FIVE_HOME LD_LIBRARY_PATH
 
 #-----------------------------------------------------------------------------
 # Determine configuration settings
@@ -46,4 +46,4 @@ if [ ! -x "${ECLIPSE_HOME}/eclipse" ]; then
 	exit 1
 fi
 
-PATH=${JAVA_HOME}/bin:$PATH exec "${ECLIPSE_HOME}/eclipse" $@
+JAVA_VERSION="%%JAVA_VERSION%%" JAVA_OS="%%JAVA_OS%%" PATH=${JAVA_HOME}/bin:${PATH} exec "${ECLIPSE_HOME}/eclipse" $@
