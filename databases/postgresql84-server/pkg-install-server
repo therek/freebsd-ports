@@ -1,12 +1,14 @@
 #! /bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/databases/postgresql83-server/pkg-install-server,v 1.2 2006/12/06 16:48:57 girgen Exp $
 
 PATH=/bin:/usr/sbin
 PGUSER=pgsql
 DB_DIR=${PKG_PREFIX}/${PGUSER}
 
 backupwarning() { echo "
+
+  == BETA QUALITY, DON'T FOR PRODUCTION USE ==
 
   =========== BACKUP YOUR DATA! =============
   As always, backup your data before
