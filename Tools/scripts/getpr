@@ -2,7 +2,7 @@
 #
 # MAINTAINER= mharo@FreeBSD.org
 #
-# $FreeBSD: ports/Tools/scripts/getpr,v 1.4 2004/07/28 07:17:29 krion Exp $
+# $FreeBSD: ports/Tools/scripts/getpr,v 1.5 2005/01/09 10:21:17 krion Exp $
 #
 
 use strict;
@@ -30,7 +30,7 @@ if ($user ne "") {
 
 open(D, "> $pr") or die "$pr: $!";
 open(PATCH, "> pr-patch") or die "pr-patch: $!";
-open(PR, " ${ssh} ${user}freefall.freebsd.org query-pr.real -F $pr | ") or die $!;
+open(PR, " ${ssh} ${user}freefall.freebsd.org query-pr -F $pr | ") or die $!;
 
 my $fix = "";
 my $infix = 0;
