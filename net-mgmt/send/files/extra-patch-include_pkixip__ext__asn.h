@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/net-mgmt/send/files/patch-include_pkixip__ext__asn.h,v 1.1 2007/09/23 06:39:06 edwin Exp $
 
 --- include/pkixip_ext_asn.h.orig
 +++ include/pkixip_ext_asn.h
