@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/opera/pkg-plist,v 1.29 2007/04/11 20:17:27 miwi Exp $
+@comment $FreeBSD: ports/www/opera/pkg-plist,v 1.30 2007/07/31 02:36:50 rafan Exp $
 bin/opera
 %%DOCSDIR%%/LICENSE
 %%DATADIR%%/bin/missingsyms.so
