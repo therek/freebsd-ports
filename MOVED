@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1501 2007/10/16 21:12:31 beech Exp $
+# $FreeBSD: ports/MOVED,v 1.1502 2007/10/17 10:12:24 ade Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3317,3 +3317,4 @@ security/p5-Digest-SHA2||2007-10-16|Has expired: Has numerious known bugs, depre
 devel/p5-Devel-Peek||2007-10-16|Has expired: depends on antique versions of perl
 net/skype-devel||2007-10-16|No longer needed: Please update to net/skype
 devel/bison2|devel/bison|2007-10-17|Bison 1.x to 2.x conversion
+games/actioncube|games/assaultcube|2007-10-19|Project name changed
