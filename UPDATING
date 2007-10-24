@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20071024:
+  AFFECTS: users of databases/mysql-connector-java
+  AUTHOR: miwi@FreeBSD.org
+
+  databases/mysql-connector-java version is 5.1.5 now. 5.0.8 version was
+  preserved on databases/mysql-connector-java50 port.
+
 20071009:
   AFFECTS: users of mail/vpopmail
   AUTHOR: roam@FreeBSD.org
@@ -5785,4 +5792,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.558 2007/10/10 18:56:49 miwi Exp $
+$FreeBSD: ports/UPDATING,v 1.559 2007/10/20 10:41:09 rafan Exp $
