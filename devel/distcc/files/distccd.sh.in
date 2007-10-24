@@ -1,7 +1,7 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/distcc/files/distccd.sh.in,v 1.1 2005/11/06 00:07:20 mnag Exp $
-#
+# $FreeBSD$
+#    $MCom: ports/devel/distcc/files/distccd.sh.in,v 1.1 2007/05/19 17:43:14 ahze Exp $
 
 # PROVIDE: distccd
 # REQUIRE: NETWORKING

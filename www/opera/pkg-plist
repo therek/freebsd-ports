@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/opera/pkg-plist,v 1.30 2007/07/31 02:36:50 rafan Exp $
+@comment $FreeBSD$
 bin/opera
 %%DOCSDIR%%/LICENSE
 %%DATADIR%%/bin/missingsyms.so
@@ -87,7 +87,7 @@ bin/opera
 %%SYMHACK%%%%DATADIR%%/symhack.so
 
 %%GNOME%%share/gnome/apps/Internet/opera.desktop
-%%GNOME%%share/gnome/pixmaps/opera.xpm
+%%GNOME%%share/pixmaps/opera.xpm
 @dirrm %%DATADIR%%/styles/user
 @dirrm %%DATADIR%%/styles/images
 @dirrm %%DATADIR%%/styles

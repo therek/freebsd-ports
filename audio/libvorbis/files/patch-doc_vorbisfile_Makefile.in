@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/audio/libvorbis/files/patch-doc_vorbisfile_Makefile.in,v 1.2 2004/10/12 14:55:16 naddy Exp $
+$FreeBSD$
 
 --- doc/vorbisfile/Makefile.in.bak	2007-07-25 16:46:35.000000000 +0000
 +++ doc/vorbisfile/Makefile.in	2007-07-26 21:53:26.000000000 +0000

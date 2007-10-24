@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/desktop-file-utils/files/pkg-deinstall.in,v 1.2 2005/01/13 07:09:24 marcus Exp $
+# $FreeBSD$
 #
 # Remove leftover mimeinfo.cache files.
 

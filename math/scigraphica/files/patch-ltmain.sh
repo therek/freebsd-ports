@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/math/scigraphica/files/patch-ltmain.sh,v 1.1 2001/12/05 10:55:53 sobomax Exp $
+$FreeBSD$
 
 --- ltmain.sh	2001/08/27 09:51:26	1.1
 +++ ltmain.sh	2001/08/27 09:51:42

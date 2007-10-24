@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/libogg/pkg-plist,v 1.14 2005/05/16 12:20:07 pav Exp $
+@comment $FreeBSD$
 include/ogg/config_types.h
 include/ogg/ogg.h
 include/ogg/os_types.h

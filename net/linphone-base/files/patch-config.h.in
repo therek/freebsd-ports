@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/net/linphone/files/patch-config.h.in,v 1.1 2003/02/28 16:27:12 sobomax Exp $
+$FreeBSD$
 
 --- config.h.in	2003/02/27 23:47:19	1.1
 +++ config.h.in	2003/02/27 23:47:35
