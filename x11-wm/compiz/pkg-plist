@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-wm/compiz/pkg-plist,v 1.1 2007/05/19 20:32:31 flz Exp $
+@comment $FreeBSD: ports/x11-wm/compiz/pkg-plist,v 1.2 2007/08/22 15:55:03 flz Exp $
 bin/compiz
 %%GTK%%bin/gtk-window-decorator
 include/compiz/compiz.h
@@ -129,6 +129,8 @@ libdata/pkgconfig/libdecoration.pc
 %%DATADIR%%/schemas.xslt
 %%GNOME%%@cwd %%WINDOWSETTINGSDATADIR%%
 %%GNOME%%share/gnome/wm-properties/compiz.desktop
+%%GNOME%%share/gnome-control-center/keybindings/50-compiz-desktop-key.xml
+%%GNOME%%share/gnome-control-center/keybindings/50-compiz-key.xml
 %%GNOME%%@cwd %%WINDOWSETTINGSLIBDIR%%
 %%GNOME%%window-manager-settings/libcompiz.so
 %%GNOME%%window-manager-settings/libcompiz.la
