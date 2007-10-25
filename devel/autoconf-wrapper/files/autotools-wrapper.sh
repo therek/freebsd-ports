@@ -25,7 +25,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/autoconf-wrapper/files/autotools-wrapper.sh,v 1.1 2007/07/28 06:33:43 ade Exp $
 #
 
 bindir=%%PREFIX%%/bin
@@ -63,7 +63,7 @@ fi
 # is present both as "toolABC" and as "tool-A.BC".  We take no special
 # measures to handle this case.
 #
-find ${bindir} -name "${tool}*[0-9]" | sed -E \
+find ${bindir}/ -name "${tool}*[0-9]" | sed -E \
     -e "s@^.*/${tool}-([0-9])\\.([0-9]+)\$@\1 \2 -\1.\2@" \
     -e "s@^.*/${tool}([0-9])([0-9]+)\$@\1 \2 \1\2@" | \
     sort -n -k1 | sort -n -s -k2 | {
