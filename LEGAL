@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.555 2007/10/11 19:35:06 vd Exp $
+# $FreeBSD: ports/LEGAL,v 1.556 2007/10/24 19:49:20 garga Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -356,6 +356,10 @@ jre*i_ELF.*.tar.gz	java/jre		License does not allow distribution
 						with fee
 jre118_v3-glibc-*	java/linux-blackdown-jre11 License does not allow
 						distribution with fee
+jre-1_5*-linux-*.bin	java/linux-sun-jre15	License does not allow distribution
+						with fee
+jre-6*-linux-*.bin	java/linux-sun-jre16	License does not allow distribution
+						with fee
 jsdk20-solaris2-sparc*	java/jsdk		No commercial use
 jude-community-*.zip	devel/jude-community	License restrictions
 kaffe-*			java/kaffe		Restrictive copyright
