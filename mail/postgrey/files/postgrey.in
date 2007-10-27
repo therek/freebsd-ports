@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/mail/postgrey/files/postgrey.in,v 1.1 2006/09/01 11:03:48 leeym Exp $
 #
 
 # PROVIDE: postgrey
@@ -36,7 +36,7 @@ stop_postcmd()
 postgrey_enable=${postgrey_enable:-"NO"}
 postgrey_pidfile=${postgrey_pidfile:-"/var/run/postgrey.pid"}
 postgrey_flags=${postgrey_flags:-"--pidfile=${postgrey_pidfile} \
-	--inet=10023 -d --user=postgrey --group=postgrey --dbdir=/var/db/postgrey"}
+	--inet=10023 -d --user=%%USER%% --group=%%GROUP%% --dbdir=/var/db/postgrey"}
 
 pidfile="${postgrey_pidfile}"
 
