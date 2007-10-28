@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/cad/alliance/pkg-plist,v 1.3 2006/01/22 05:52:07 edwin Exp $
+@comment $FreeBSD: ports/cad/alliance/pkg-plist,v 1.4 2007/01/02 22:46:37 hrs Exp $
 alliance/lib/libMph.la
 alliance/lib/libMph.a
 alliance/lib/libMpu.la
@@ -664,6 +664,18 @@ alliance/cells/romlib/rom_dec_selmux67.ap
 alliance/cells/romlib/rom_dec_selmux67_ts.ap
 alliance/cells/romlib/rom_dec_selmux67_ts.vbe
 alliance/cells/romlib/rom_dec_selmux67.vbe
+alliance/cells/romlib/rom_dec_line01_64.ap
+alliance/cells/romlib/rom_dec_line01_64.vbe
+alliance/cells/romlib/rom_dec_line23_64.ap
+alliance/cells/romlib/rom_dec_line23_64.vbe
+alliance/cells/romlib/rom_dec_line45_64.ap
+alliance/cells/romlib/rom_dec_line45_64.vbe
+alliance/cells/romlib/rom_dec_line67_64.ap
+alliance/cells/romlib/rom_dec_line67_64.vbe
+alliance/cells/romlib/rom_dec_nop2.ap
+alliance/cells/romlib/rom_dec_nop2.vbe
+alliance/cells/romlib/rom_dec_nop3.ap
+alliance/cells/romlib/rom_dec_nop3.vbe
 alliance/cells/sxlib/a2_x2.al
 alliance/cells/sxlib/a2_x4.al
 alliance/cells/sxlib/a3_x2.al
