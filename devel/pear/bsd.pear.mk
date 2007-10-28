@@ -1,8 +1,8 @@
-# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.6 2006/05/04 21:40:59 edwin Exp $
+# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.7 2007/06/20 05:43:16 ale Exp $
 
 # Common code for pear- ports.
 
-MASTER_SITES=	http://pear.php.net/get/
+MASTER_SITES?=	http://pear.php.net/get/
 PKGNAMEPREFIX=	pear-
 EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	PEAR
@@ -48,8 +48,8 @@ PLIST_SUB=	PEARDIR=${LPEARDIR} PKGREGDIR=${LPKGREGDIR} \
 		TESTSDIR=${LTESTSDIR} INSTDIR=${LINSTDIR} SQLSDIR=${LSQLSDIR} \
 		SCRIPTFILESDIR=${LCRIPTSDIR}
 
-PKGINSTALL=	${PORTSDIR}/devel/pear/pear-install
-PKGDEINSTALL=	${PORTSDIR}/devel/pear/pear-deinstall
+PKGINSTALL?=	${PORTSDIR}/devel/pear/pear-install
+PKGDEINSTALL?=	${PORTSDIR}/devel/pear/pear-deinstall
 
 FILES?=
 DATA?=
