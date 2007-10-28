@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk16/files/patch-deploy-common-Defs-bsd.gmk,v 1.1 2007/08/05 20:39:48 glewis Exp $
 
 --- ../../deploy/make/common/Defs-bsd.gmk.orig	Sun Jul 29 23:03:29 2007
 +++ ../../deploy/make/common/Defs-bsd.gmk	Sun Jul 29 23:03:29 2007
@@ -13,17 +13,3 @@ $FreeBSD$
  ifneq ($(OS_VENDOR), NetBSD)
  LIBS           = -L$(X11DIR)/lib -lX11 -L$(LOCALDIR)/lib -liconv
  else
-@@ -43,11 +43,11 @@
- 	$(BSD_INCLUDES) -D_ALLBSD_SOURCE
- 
- ifeq ($(OS_VENDOR), FreeBSD)
--LINK_FLAGS_COMMON = -pthread
-+LINK_FLAGS_COMMON = ${PTHREAD_LIBS}
- endif
- 
- ifeq ($(OS_VENDOR), OpenBSD)
--LINK_FLAGS_COMMON = -pthread
-+LINK_FLAGS_COMMON = ${PTHREAD_LIBS}
- endif
- 
- C_FLAGS_OPT =
