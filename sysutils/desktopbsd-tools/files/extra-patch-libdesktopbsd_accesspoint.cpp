@@ -41,7 +41,7 @@ Index: libdesktopbsd/accesspoint.cpp
 + * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 + * SUCH DAMAGE.
 + *
-+ * $FreeBSD: src/sbin/ifconfig/ifieee80211.c,v 1.18.2.15 2007/03/10 00:48:28 sam Exp $
++ * $FreeBSD: ports/sysutils/desktopbsd-tools/files/patch-libdesktopbsd_accesspoint.cpp,v 1.1 2007/09/07 20:02:13 lme Exp $
 + */
  
 +/*-
