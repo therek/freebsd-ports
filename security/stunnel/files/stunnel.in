@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/stunnel/files/stunnel.sh,v 1.5 2005/05/12 11:36:41 roam Exp $
+# $FreeBSD: ports/security/stunnel/files/stunnel.sh,v 1.6 2006/04/21 10:51:49 roam Exp $
 #
 
 # PROVIDE: stunnel
@@ -27,7 +27,7 @@ name="stunnel"
 rcvar=`set_rcvar`
 stunnel_config="!!PREFIX!!/etc/stunnel/${name}.conf"
 stunnel_pidfile="/var/run/${name}.pid"
-command="!!PREFIX!!/sbin/stunnel"
+command="!!PREFIX!!/bin/stunnel"
 
 [ -z "$stunnel_enable" ]		&& stunnel_enable="NO"
 
