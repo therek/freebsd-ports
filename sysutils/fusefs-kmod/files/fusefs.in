@@ -1,9 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/fusefs-kmod/files/fusefs.in,v 1.2 2007/02/14 17:05:06 pav Exp $
+# $FreeBSD: ports/sysutils/fusefs-kmod/files/fusefs.in,v 1.3 2007/02/15 09:31:28 pav Exp $
 #
 # PROVIDE: fusefs
 # REQUIRE: sysctl
+# BEFORE: mountlate
 # KEYWORD: shutdown
 #
 # Add the following lines to /etc/rc.conf.local or /etc/rc.conf
