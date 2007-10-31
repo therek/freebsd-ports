@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Local version: 1.192
-# $FreeBSD: ports/ports-mgmt/portmaster/files/portmaster.sh.in,v 1.23 2007/10/21 05:33:07 dougb Exp $
+# Local version: 1.193
+# $FreeBSD: ports/ports-mgmt/portmaster/files/portmaster.sh.in,v 1.24 2007/10/30 07:18:50 dougb Exp $
 
 # Copyright (c) 2005-2007 Douglas Barton, All rights reserved
 # Please see detailed copyright below
@@ -866,7 +866,7 @@ delete_all_distfiles () {
 		if [ -n "$do_delete" ]; then
 			delete_stale_distfiles
 			rm -f $distfiles
-			find ${distdir}/ -type d -empty -delete
+			find $distdir -type d -empty -delete
 		fi
 	fi
 }
@@ -1083,7 +1083,7 @@ if [ -n "$LIST" -o -n "$LIST_PLUS" ]; then
 		echo "	===>>> $num_updates have new versions available"
 	elif [ "$num_updates" -eq 1 ]; then
 		echo "	===>>> 1 has a new version available"
-	else
+	elif [ -n "$LIST_PLUS" ]; then
 		echo "	===>>> There are no new versions available"
 	fi
 
@@ -1766,6 +1766,9 @@ if [ -n "$upg_port" ]; then
 		fi
 	fi
 fi
+
+# In case we went elsewhere to create a backup package
+cd $pd/$portdir
 
 # Do the install here in case a run dependency has a build dependency on us.
 # Defining NO_DEPENDS ensures that we will control the installation of the
