@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1454 2007/10/28 22:22:45 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1455 2007/10/31 12:44:03 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -2766,8 +2766,11 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>mod_jk</name>
-	<name>mod_jk-ap2</name>
 	<range><lt>1.2.23,1</lt></range>
+      </package>
+      <package>
+	<name>mod_jk-ap2</name>
+	<range><lt>1.2.23</lt></range>
       </package>
     </affects>
     <description>
