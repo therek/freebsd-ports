@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1457 2007/10/31 17:21:15 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1458 2007/10/31 21:48:26 delphij Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -40,6 +40,7 @@ Note:  Please add new entries to the beginning of this file.
       <package>
 	<name>openldap-server</name>
 	<range><lt>2.3.39</lt></range>
+	<range><gt>2.4.0</gt><lt>2.4.6</lt></range>
       </package>
     </affects>
     <description>
@@ -60,6 +61,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2007-10-29</discovery>
       <entry>2007-10-30</entry>
+      <modified>2007-10-31</modified>
     </dates>
   </vuln>
 
