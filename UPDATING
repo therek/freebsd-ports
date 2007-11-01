@@ -28,16 +28,14 @@ upgrades.
 
   After that, new nvidia-driver will install cleanly.
 
-20071030:
-  AFFECTS: users of net/skype
+20071101:
+  AFFECTS: users of net/skype-devel
   AUTHOR: beech@FreeBSD.org
 
-  The skype port has been upgraded to version 1.4.0.118. This requires a sysctl
-  change to run. After upgrading, please do: "sysctl compat.linux.osrelease=2.6"
-  from a terminal. Also add: "compat.linux.osrelease=2.6" to your
-  /etc/sysctl.conf  to make this change at boot time. Also, net/skype-devel has
-  been removed from the ports tree. All skype users are encouraged to update to
-  the latest version.
+  The skype-devel port has been upgraded to version 1.4.0.118. This requires a sysctl
+  change to run. After upgrading, please do: "sysctl compat.linux.osrelease=2.4.20"
+  from a terminal. Also add: "compat.linux.osrelease=2.4.20" to your
+  /etc/sysctl.conf  to make this change at boot time.
 
 20071030:
   AFFECTS: users of sysutils/daemontools
@@ -5874,4 +5872,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.566 2007/10/30 20:49:04 beech Exp $
+$FreeBSD: ports/UPDATING,v 1.567 2007/10/31 23:51:39 danfe Exp $
