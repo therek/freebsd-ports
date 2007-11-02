@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.66 2007/10/03 23:54:00 linimon Exp $
+# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.67 2007/10/17 10:12:55 ade Exp $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
 #	This file is in the public domain.
@@ -2042,21 +2042,21 @@ RUN_DEPENDS+=	${_GL_${_component}_RUN_DEPENDS}
 .endif
 
 .if defined(USE_BISON)
-_BISON_DEPENDS= bison:${PORTSDIR}/devel/bison
+_BISON_DEPENDS=	bison:${PORTSDIR}/devel/bison
 
 # XXX: backwards compatibility
 . if ${USE_BISON:L} == "yes"
-BUILD_DEPENDS+= ${_BISON_DEPENDS}
+USE_BISON=	build
 pre-everything::
 	@${ECHO_MSG} "WARNING: USE_BISON=yes deprecated, use build/run/both"
 . endif
 
 . if ${USE_BISON:L} == "build"
-BUILD_DEPENDS+=	${_BISON_DEPENDS}
+BUILD_DEPENDS+= ${_BISON_DEPENDS}
 . elif ${USE_BISON:L} == "run"
 RUN_DEPENDS+=	${_BISON_DEPENDS}
 . elif ${USE_BISON:L} == "both"
-BUILD_DEPENDS+=	${_BISON_DEPENDS}
+BUILD_DEPENDS+= ${_BISON_DEPENDS}
 RUN_DEPENDS+=	${_BISON_DEPENDS}
 . else
 IGNORE=	uses unknown USE_BISON construct
