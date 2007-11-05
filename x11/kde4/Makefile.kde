@@ -7,7 +7,7 @@
 # DON'T INCLUDE THIS FILE FROM YOUR PORT. THIS FILE SHOULD BE CONSIDERED OFF-
 # LIMITS FOR ANY MAINTAINER != kde@freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/kde3/Makefile.kde,v 1.48 2007/10/29 23:48:14 lofi Exp $
 
 CONFIGURE_ARGS?=
 
@@ -49,7 +49,7 @@ CONFIGURE_ARGS+=--enable-final
 CONFIGURE_ARGS+=--disable-debug
 .else
 CONFIGURE_ARGS+=--enable-debug=full
-STRIP=''
+STRIP= # empty
 .endif # defined(PARALLEL_PACKAGE_BUILD) || !defined(WANT_KDE_DEBUG)
 .endif # !defined(_NO_KDE_NDEBUG)
 
