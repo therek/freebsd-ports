@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1464 2007/11/05 21:12:07 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1465 2007/11/06 09:58:50 beech Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,7 +39,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>perdition</name>
-	<range><lt>1.17</lt></range>
+	<range><lt>1.17.1</lt></range>
       </package>
     </affects>
     <description>
