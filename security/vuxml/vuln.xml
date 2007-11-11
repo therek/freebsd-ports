@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1472 2007/11/09 19:05:50 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1473 2007/11/11 15:52:23 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -286,7 +286,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>gftp</name>
-	<range><lt>2.10.18_6</lt></range>
+	<range><lt>2.0.18_6</lt></range>
       </package>
     </affects>
     <description>
@@ -311,6 +311,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2007-11-01</discovery>
       <entry>2007-11-05</entry>
+      <modified>2007-11-11</modified>
     </dates>
   </vuln>
 
