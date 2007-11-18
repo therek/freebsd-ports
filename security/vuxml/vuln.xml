@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1485 2007/11/16 19:53:06 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1486 2007/11/17 07:07:41 delphij Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -7398,7 +7398,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>postnuke</name>
-	<range><lt>0.800</lt></range>
+	<range><lt>0.763</lt></range>
       </package>
     </affects>
     <description>
@@ -7423,7 +7423,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2006-09-29</discovery>
       <entry>2006-10-03</entry>
-      <modified>2006-10-15</modified>
+      <modified>2007-11-17</modified>
     </dates>
   </vuln>
 
