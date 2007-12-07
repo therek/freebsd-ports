@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1501 2007/12/05 07:26:59 linimon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1502 2007/12/05 07:49:40 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -86,11 +86,12 @@ Note:  Please add new entries to the beginning of this file.
     </description>
     <references>
       <bid>26687</bid>
+      <cvename>CVE-2007-6239</cvename>
     </references>
     <dates>
       <discovery>2007-11-28</discovery>
       <entry>2007-12-04</entry>
-      <modified>2007-12-04</modified>
+      <modified>2007-12-07</modified>
     </dates>
   </vuln>
 
