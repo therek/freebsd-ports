@@ -1,7 +1,7 @@
 #
 # KNOBS - A list of popular knobs and descriptions
 #
-# $FreeBSD: ports/KNOBS,v 1.20 2006/12/01 01:03:01 pav Exp $
+# $FreeBSD: ports/KNOBS,v 1.21 2007/09/03 07:09:40 sat Exp $
 #
 # Rules to adding knobs:
 #
@@ -103,6 +103,7 @@ STATIC			Build statically linked executables
 THEORA			Theora video codec support
 TREMOR			Tremor (integer-only Vorbis) audio support
 UNIXODBC		Use UNIXODBC as the ODBC driver
+USB			Add devel/libusb support for USB devices
 VORBIS			OGG/Vorbis audio support
 WX			wxWindows support
 X11			Support for X11
