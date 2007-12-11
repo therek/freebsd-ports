@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap24-server/files/slapd.sh.in,v 1.3 2007/08/21 09:23:42 delphij Exp $
+# $FreeBSD: ports/net/openldap24-server/files/slapd.sh.in,v 1.4 2007/12/11 20:53:26 delphij Exp $
 #
 
 # PROVIDE: slapd
@@ -43,8 +43,8 @@ start_precmd()
 {
   local slapd_ownername slapd_groupname
 
-  case x"$slapd_owner" in
-  x""|x[Nn][Oo][Nn][Ee]|x[Dd][Ee][Ff][Aa][Uu][Ll][Tt])
+  case "$slapd_owner" in
+  ""|[Nn][Oo][Nn][Ee]|[Dd][Ee][Ff][Aa][Uu][Ll][Tt])
     ;;
   *)
     chown "$slapd_owner" "%%LDAP_RUN_DIR%%"
