@@ -1,10 +1,10 @@
-@comment $FreeBSD: ports/security/samhain/pkg-plist,v 1.8 2006/09/06 07:03:13 rafan Exp $
+@comment $FreeBSD: ports/security/samhain/pkg-plist,v 1.9 2006/11/05 10:11:08 rafan Exp $
 %%YULE%%etc/yulerc.sample
 %%YULE%%sbin/yule_setpwd
 %%YULE%%sbin/yule
 %%YULE%%sbin/yulectl
 %%YULE%%etc/rc.d/yule.sh
-%%YULE%%@unexec echo "To delete the yule user permanently, use 'pw userdel ${USER}'"
+%%YULE%%@unexec echo "To delete the yule user permanently, use 'pw userdel yule'"
 %%YULE%%@unexec rmdir /var/lib/yule 2>/dev/null || true
 %%SAMHAIN%%sbin/samhain
 %%SAMHAIN%%etc/rc.d/samhain.sh
