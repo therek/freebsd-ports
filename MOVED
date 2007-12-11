@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1512 2007/11/03 23:36:39 gerald Exp $
+# $FreeBSD: ports/MOVED,v 1.1513 2007/12/03 09:43:40 dougb Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3329,3 +3329,4 @@ chinese/bind8||2007-12-03|EOL: Use dns/bind94 instead
 dns/bind8||2007-12-03|EOL: Use dns/bind94 instead
 dns/bind84||2007-12-03|EOL: Use dns/bind94 instead
 mail/smc-milter||2007-12-03|Relies on BIND 8, which is EOL
+net-p2p/xmule||2007-12-11|It is no longer developed
