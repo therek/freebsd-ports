@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.377 2007/10/24 15:19:07 obrien Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.378 2007/10/24 15:27:01 oliver Exp $
 #
 # FreeBSD Project Committers
 #
@@ -94,6 +94,7 @@
  57.2,		10.2,		"sos"				# Klokkerholm, Denmark
  56.14,		10.184,		"lbr"				# Aarhus, Denmark
  56.09105,	10.12423,	"erwin"				# Aarhus, Denmark
+ 56.156,	10.201,		"brix"				# Aarhus, Denmark
  53.56,		10.02,		"cracauer"			# Hamburg, Germany
  53.64,		9.84,		"hm"		align=left	# Rellingen, Germany
  54.917,		9.783,		"xride"				# Soenderborg, Denmark
