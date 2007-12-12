@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Local version: 1.193
-# $FreeBSD: ports/ports-mgmt/portmaster/files/portmaster.sh.in,v 1.24 2007/10/30 07:18:50 dougb Exp $
+# $FreeBSD: ports/ports-mgmt/portmaster/files/portmaster.sh.in,v 1.25 2007/10/31 08:57:03 dougb Exp $
 
 # Copyright (c) 2005-2007 Douglas Barton, All rights reserved
 # Please see detailed copyright below
@@ -486,6 +486,9 @@ check_for_updates () {
 		case "$2" in
 		list)	if [ -z "$newportdir" ]; then
 				echo "	===>>> New version available: $port_ver"
+				if [ -e "$pdb/$1/+IGNOREME" ]; then
+				echo "	===>>> +IGNOREME file is present for $1"
+				fi
 				num_updates=$(( $num_updates + 1 ))
 			else
 				unset newportdir
@@ -1496,7 +1499,7 @@ for state in FORBIDDEN BROKEN IGNORE; do
 	state_set=`make -V $state`
 	if [ -n "$state_set" ]; then
 		echo "===>>> This port is marked $state:"
-		echo "===>>> $state_set"
+		printf "===>>> $state_set"
 		echo "===>>> If you are sure you can build it, remove the"
 		echo "       $state line in the Makefile and try again."
 		safe_exit 1
@@ -1546,7 +1549,7 @@ dofetch () {
 	if [ -n "$TESTINT" ]; then
 		echo ''
 		echo "===>>> Warning: $portdir is interactive, and will likely"
-		echo "       reqire attenton during the build"
+		echo "       require attention during the build"
 		echo ''
 		echo -n "===>>> Press the [Enter] or [Return] key to continue "
 		read DISCARD
