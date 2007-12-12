@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.556 2007/10/24 19:49:20 garga Exp $
+# $FreeBSD: ports/LEGAL,v 1.557 2007/10/26 21:07:02 jkim Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -477,8 +477,6 @@ hcwPVRP2.sys		multimedia/pvrxxx	Driver is part of the CD-ROM
 						distribution coming with the
 						TV card
 qkmj95p5-freebsd	games/qkmj		Do not sell for profit
-qmail*			mail/qmail-*		Restricted binary distribution
-						of modified versions
 qtools-*		mail/qtools		Possibly restricted binary
 						distribution of modified
 						versions
