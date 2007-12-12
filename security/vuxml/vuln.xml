@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1508 2007/12/12 08:11:07 beech Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1509 2007/12/12 08:32:33 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -44,7 +44,7 @@ Note:  Please add new entries to the beginning of this file.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	<p>A Secunia reports:</p>
+	<p>Secunia reports:</p>
 	<blockquote cite="http://secunia.com/advisories/27014/">
 	  <p>Format string vulnerability in the SMBDirList function in dirlist.c
 	    in SmbFTPD 0.96 allows remote attackers to execute arbitrary code via
