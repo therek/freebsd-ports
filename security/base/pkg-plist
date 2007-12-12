@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/base/pkg-plist,v 1.12 2007/02/26 21:26:34 miwi Exp $
+@comment $FreeBSD: ports/security/base/pkg-plist,v 1.13 2007/05/27 10:00:07 miwi Exp $
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/README.mssql
 %%PORTDOCS%%%%DOCSDIR%%/CHANGELOG
@@ -73,8 +73,6 @@ www/base/includes/base_state_criteria.inc.php
 www/base/includes/base_state_query.inc.php
 www/base/includes/base_template.php
 www/base/includes/base_user.inc.php
-www/base/includes/fpdf_class.php
-www/base/includes/fpdf_fonts.php
 www/base/index.php
 www/base/languages/czech.lang.php
 www/base/languages/chinese.lang.php
