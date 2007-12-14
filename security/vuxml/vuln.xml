@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1513 2007/12/13 00:36:54 nox Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1514 2007/12/14 00:17:01 sat Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -58,13 +58,14 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
-      <url>http://www.securityfocus.com/archive/1/484429</url>
       <bid>26666</bid>
       <cvename>CVE-2007-6227</cvename>
+      <url>http://www.securityfocus.com/archive/1/484429</url>
     </references>
     <dates>
       <discovery>2007-11-30</discovery>
       <entry>2007-12-12</entry>
+      <modified>2007-12-14</modified>
     </dates>
   </vuln>
 
