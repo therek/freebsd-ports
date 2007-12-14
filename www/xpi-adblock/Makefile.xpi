@@ -5,7 +5,7 @@
 # Date created:		28 March 2006
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.16 2007/04/22 20:12:10 sat Exp $
+# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.17 2007/07/03 08:10:43 sat Exp $
 #
 
 # XPI_ID		- Extension id, might be in {12345-...} or dev@org format
@@ -84,12 +84,14 @@ USE_ZIP=	yes
 EXTRACT_AFTER_ARGS=	-d ${WRKSRC}
 
 XPI_DISTNAME?=	${PORTNAME}
-XPI_APPS_ALL_WC=	*firefox* *thunderbird* *flock* *sunbird*
+XPI_APPS_ALL_WC=	*firefox* *thunderbird* *flock* *sunbird* \
+					*netscape-navigator* *netscape-messenger*
 # *nvu*
 XPI_APPS_ALL=	firefox firefox-devel linux-firefox linux-firefox-devel \
 				thunderbird linux-thunderbird flock linux-flock \
+				linux-netscape-navigator linux-netscape-messenger \
 				sunbird linux-sunbird
-# nvu linux-nvu 
+# nvu linux-nvu kompozer linux-kompozer
 # Other apps: mango
 
 # === Let's process WITH_XPI into WITH_XPI_APPS
