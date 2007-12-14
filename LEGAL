@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.558 2007/12/12 11:34:22 garga Exp $
+# $FreeBSD: ports/LEGAL,v 1.559 2007/12/14 18:32:14 sat Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -422,6 +422,7 @@ mypaedia-*		japanese/mypaedia-fpw	The original dictionary is not free
 mysqlman.tar.gz		databases/mysqlman	Not redistributable, license
 						agreement required
 ncftpd-*		ftp/ncftpd		30 day evaluation license
+NeroDigitalAudio.zip	audio/linux-nerodigitalaudio	Redistribution forbidden
 netbeans3-*		java/netbeans3		Restrictive copyright
 netbeans4-*		java/netbeans4		Restrictive copyright
 netbeans5-*		java/netbeans5		Restrictive copyright
