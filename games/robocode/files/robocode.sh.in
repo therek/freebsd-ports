@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/robocode/files/robocode.sh.in,v 1.1 2005/04/05 12:30:44 hq Exp $
 
 cd "%%DATADIR%%"
-JAVA_VERSION="%%JAVA_VERSION%%" "%%LOCALBASE%%/bin/java" -jar robocode.jar "$@"
+JAVA_VERSION="%%JAVA_VERSION%%" "%%LOCALBASE%%/bin/java" -jar libs/robocode.jar "$@"
