@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/amphetadesk/files/amphetadesk.sh,v 1.1 2005/10/11 22:10:24 lioux Exp $
+# $FreeBSD: ports/www/amphetadesk/files/amphetadesk.in,v 1.2 2006/02/20 20:47:45 dougb Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
@@ -16,7 +16,7 @@
 #amphetadesk_pidfile=""
 #
 
-. /etc/rc.subr
+. %%RC_SUBR%%
 
 name="amphetadesk"
 rcvar=`set_rcvar`
