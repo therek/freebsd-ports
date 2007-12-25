@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/ruby-gems/Makefile.common,v 1.9 2007/04/27 06:22:32 clsung Exp $
+# $FreeBSD: ports/devel/ruby-gems/Makefile.common,v 1.10 2007/12/25 06:48:15 clsung Exp $
 # Ruby gem module common settings
 
 
@@ -39,7 +39,7 @@ PLIST_SUB+=	PORTVERSION="${PORTVERSION}" \
 		GEM_CACHE="${GEM_CACHE}" \
 		EXTRACT_SUFX="${EXTRACT_SUFX}"
 
-RUBYGEMBIN=	${LOCALBASE}/bin/gem
+RUBYGEMBIN=	${LOCALBASE}/bin/gem18
 
 .if defined(DISTFILES)
 GEMFILES=	${DISTFILES:C/:[^:]+$//}
