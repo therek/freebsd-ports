@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/p5-Template-Alloy/pkg-plist,v 1.1 2007/06/22 11:43:38 mat Exp $
 %%SITE_PERL%%/Template/Alloy.pm
 %%SITE_PERL%%/Template/Alloy.pod
 %%SITE_PERL%%/Template/Alloy/Compile.pm
@@ -9,6 +9,7 @@
 %%SITE_PERL%%/Template/Alloy/Operator.pm
 %%SITE_PERL%%/Template/Alloy/Parse.pm
 %%SITE_PERL%%/Template/Alloy/Play.pm
+%%SITE_PERL%%/Template/Alloy/Stream.pm
 %%SITE_PERL%%/Template/Alloy/TT.pm
 %%SITE_PERL%%/Template/Alloy/Tmpl.pm
 %%SITE_PERL%%/Template/Alloy/VMethod.pm
