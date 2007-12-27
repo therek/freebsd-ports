@@ -1,7 +1,7 @@
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/linux-megacli/files/README-status-mfi-raid.txt,v 1.1 2007/03/09 13:15:02 rafan Exp $
 
 The output of periodic/daily/407.status-mfi-raid uses several
-abbreviations. This documents maps the abbreviations to the
+abbreviations. This document maps the abbreviations to the
 names MegaCli uses, which were just too long for summary mails.
 
 Section 'Physical Drive Information:'
