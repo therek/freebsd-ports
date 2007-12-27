@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit/files/portaudit-cmd.sh,v 1.12 2005/07/03 20:31:00 simon Exp $
+# $FreeBSD: ports/ports-mgmt/portaudit/files/portaudit-cmd.sh,v 1.13 2006/04/16 13:32:28 simon Exp $
 #
 
 portaudit_confs()
@@ -389,6 +389,10 @@ if $opt_version; then
 fi
 
 if $opt_fetch; then
+	if $opt_quiet ; then
+		portaudit_fetch_cmd="${portaudit_fetch_cmd} -q"
+	fi
+
 	if ! fetch_auditfile; then
 		echo "portaudit: Download failed." >&2
 		exit 2
