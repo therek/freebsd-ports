@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1523 2007/12/25 08:14:29 beech Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1524 2007/12/29 19:49:43 simon Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -249,12 +249,17 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
+      <cvename>CVE-2007-6520</cvename>
+      <cvename>CVE-2007-6521</cvename>
+      <cvename>CVE-2007-6522</cvename>
+      <cvename>CVE-2007-6524</cvename>
       <url>http://www.opera.com/docs/changelogs/freebsd/925/</url>
       <url>http://www.opera.com/support/search/view/875/</url>
     </references>
     <dates>
       <discovery>2007-12-19</discovery>
       <entry>2007-12-19</entry>
+      <modified>2007-12-29</modified>
     </dates>
   </vuln>
 
