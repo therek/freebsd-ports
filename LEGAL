@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.561 2007/12/19 17:20:32 pav Exp $
+# $FreeBSD: ports/LEGAL,v 1.562 2007/12/24 17:01:12 alepulver Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -624,6 +624,7 @@ VMware-workstation-*	emulators/vmware3	Not sure if we can redistribute this
 VTK-*			math/vtk		Portions contain patented algorithms
 						and may require a license for
 						commercial use
+vrml2pov-src*		graphics/vrml2pov	Redistribution is not allowed
 waeijiro-fpw-*		japanese/waeijiro-fpw	The original dictionary is not free
 warsow/*		games/linux-warsow	Redistribution is limited, art
 						is copyrighted
