@@ -1,10 +1,9 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net-im/jabberd/files/jabberd.in,v 1.1 2007/07/26 20:00:52 mm Exp $
 
 # PROVIDE: jabberd
-# REQUIRE: DAEMON
-# BEFORE: LOGIN
+# REQUIRE: %%REQUIRE%%
 # KEYWORD: shutdown
 #
 prefix=%%PREFIX%%
