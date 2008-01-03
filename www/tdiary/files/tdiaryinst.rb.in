@@ -4,7 +4,7 @@
 # Date created:                        13 July 2003
 # Whom:                                KAMIYA Satosi  <mimoriso@gmail.com>
 #
-# $FreeBSD: ports/www/tdiary/files/tdiaryinst.rb.in,v 1.6 2005/09/15 20:42:56 pav Exp $
+# $FreeBSD: ports/www/tdiary/files/tdiaryinst.rb.in,v 1.7 2006/01/29 15:41:09 pav Exp $
 #
 
 require 'getoptlong'
@@ -218,7 +218,6 @@ class TdiaryInstall
 
   def copyBaseFile
     FileUtils16.cp_r("#{@tdiarymaster}/doc", "#{@passwd.dir}/#{@httpdir}/#{@diarydir}", :preserve, *@fileutilOptions)
-    FileUtils16.cp_r("#{@tdiarymaster}/erb", "#{@passwd.dir}/#{@httpdir}/#{@diarydir}", :preserve, *@fileutilOptions)
     FileUtils16.cp_r("#{@tdiarymaster}/misc", "#{@passwd.dir}/#{@httpdir}/#{@diarydir}", :preserve, *@fileutilOptions)
     FileUtils16.cp_r("#{@tdiarymaster}/plugin", "#{@passwd.dir}/#{@httpdir}/#{@diarydir}", :preserve, *@fileutilOptions)
     FileUtils16.cp_r("#{@tdiarymaster}/skel", "#{@passwd.dir}/#{@httpdir}/#{@diarydir}", :preserve, *@fileutilOptions)
