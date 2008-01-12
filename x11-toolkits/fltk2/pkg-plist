@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/fltk2/pkg-plist,v 1.7 2007/06/24 20:35:47 miwi Exp $
+@comment $FreeBSD: ports/x11-toolkits/fltk2/pkg-plist,v 1.8 2007/08/28 21:17:47 miwi Exp $
 bin/fltk2-config
 bin/fluid2
 include/fltk/compat/FL/Enumerations.H
@@ -30,6 +30,7 @@ include/fltk/compat/FL/Fl_Menu_Button.H
 include/fltk/compat/FL/Fl_Menu_Item.H
 include/fltk/compat/FL/Fl_Output.H
 include/fltk/compat/FL/Fl_Overlay_Window.H
+include/fltk/compat/FL/Fl_Pack.H
 include/fltk/compat/FL/Fl_Pixmap.H
 include/fltk/compat/FL/Fl_Return_Button.H
 include/fltk/compat/FL/Fl_Roller.H
