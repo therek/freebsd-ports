@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.432 2007/10/15 20:22:46 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.433 2007/10/25 22:53:24 sat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -118,7 +118,7 @@ MASTER_SITE_CENKES+=	\
 
 .if !defined(IGNORE_MASTER_SITE_CHEESESHOP)
 MASTER_SITE_CHEESESHOP+=	\
-	http://cheeseshop.python.org/packages/%SUBDIR%/
+	http://pypi.python.org/packages/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_COMP_SOURCES)
