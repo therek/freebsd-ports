@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/mingw32-binutils/pkg-plist,v 1.12 2004/04/10 16:07:04 trevor Exp $
+@comment $FreeBSD: ports/devel/mingw32-binutils/pkg-plist,v 1.13 2007/07/28 17:48:00 lev Exp $
 %%BINUTILS_TARG%%/bin/addr2line
 %%BINUTILS_TARG%%/bin/ar
 %%BINUTILS_TARG%%/bin/as
@@ -44,4 +44,3 @@ bin/%%BINUTILS_TARG%%-windres
 @dirrm %%BINUTILS_TARG%%/lib/ldscripts
 @dirrm %%BINUTILS_TARG%%/lib
 @dirrmtry %%BINUTILS_TARG%%
-
