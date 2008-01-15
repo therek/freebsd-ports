@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1537 2008/01/15 18:52:15 tabthorpe Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1538 2008/01/15 20:15:52 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -38,7 +38,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>geeklog xss vulnerability</topic>
     <affects>
       <package>
-	<name>geeklog xss vulnerability</name>
+	<name>geeklog</name>
 	<range><lt>1.4.1</lt></range>
       </package>
     </affects>
