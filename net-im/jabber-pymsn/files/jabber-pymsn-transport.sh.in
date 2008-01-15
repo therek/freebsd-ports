@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-im/jabber-pymsn/files/jabber-pymsn-transport.sh.in,v 1.7 2006/04/26 11:42:13 garga Exp $
+# $FreeBSD: ports/net-im/jabber-pymsn/files/jabber-pymsn-transport.sh.in,v 1.8 2007/03/14 19:47:09 garga Exp $
 #
 # PROVIDE: jabber_pymsn
 # REQUIRE: DAEMON %%JABBER_REQUIRE%%
-# BEFORE: LOGIN
 # KEYWORD: shutdown
 #
 # Define these jabber_pymsn_* variables in one of these files:
