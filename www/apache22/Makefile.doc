@@ -5,7 +5,7 @@
 #      - make options output
 #      - apache22 man/docs routines
 #
-# $FreeBSD: ports/www/apache22/Makefile.doc,v 1.9 2006/05/10 19:47:15 clement Exp $
+# $FreeBSD: ports/www/apache22/Makefile.doc,v 1.10 2006/11/05 10:49:17 clement Exp $
 #
 
 ## Available knobs:
@@ -38,8 +38,8 @@
 ##      WITH_DBM:                 Choose your DBM: bdb (Berkeley DB), gdbm or
 ##                                ndbm (default)
 ##          WITH_BERKELEYDB:      Choose your BerkeleyDB version: db2, db3,
-##                                db4, db41, db42, db43, db44 or FreeBSD 
-##                                (1.85, default)
+##                                db4, db41, db42, db43, db44, db45, db46 
+##                                or FreeBSD (1.85, default)
 ##      WITH_STATIC_SUPPORT:      Build statically linked support binaries
 ##      WITH_STATIC_APACHE:       Build a static version of httpd (implies 
 ##                                WITH_STATIC_MODULES)
