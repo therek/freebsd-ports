@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/git/files/git-daemon.in,v 1.1 2008/01/16 23:29:11 flz Exp $
 #
 
 # PROVIDE: git_daemon
