@@ -4,7 +4,7 @@
 #
 # See: http://www.eclipse.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/eclipse/files/eclipse.in,v 1.9 2007/01/03 18:13:55 tmclaugh Exp $
 #
 
 DEFAULT_JAVA_HOME=%%PREFIX%%
@@ -46,4 +46,4 @@ if [ ! -x "${ECLIPSE_HOME}/eclipse" ]; then
 	exit 1
 fi
 
-JAVA_VERSION="%%JAVA_VERSION%%" JAVA_OS="%%JAVA_OS%%" PATH=${JAVA_HOME}/bin:${PATH} exec "${ECLIPSE_HOME}/eclipse" $@
+JAVA_VERSION="%%JAVA_VERSION%%" JAVA_OS="%%JAVA_OS%%" %%JAVA_VENDOR_SPECIFICATION%% PATH=${JAVA_HOME}/bin:${PATH} exec "${ECLIPSE_HOME}/eclipse" $@
