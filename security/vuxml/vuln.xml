@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1542 2008/01/20 01:21:48 beech Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1543 2008/01/20 01:35:00 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -22084,7 +22084,7 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
 	<name>freeradius-devel</name>
-	<range><gt>0</gt></range>
+	<range><le>1.0.2</le></range>
       </package>
     </affects>
     <description>
