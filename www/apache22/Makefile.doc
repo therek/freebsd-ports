@@ -5,7 +5,7 @@
 #      - make options output
 #      - apache22 man/docs routines
 #
-# $FreeBSD: ports/www/apache22/Makefile.doc,v 1.11 2008/01/16 09:33:45 mm Exp $
+# $FreeBSD: ports/www/apache22/Makefile.doc,v 1.12 2008/01/20 11:29:31 clement Exp $
 #
 
 ## Available knobs:
@@ -42,7 +42,7 @@
 ##      WITH_THREADS:             Enable threads support
 ##      WITH_DBM:                 Choose your DBM: bdb (Berkeley DB), gdbm or
 ##                                ndbm (default)
-##          WITH_BDB:             Define to select bdb via bsd.databases.mk
+##          WITH_BDB:             Define to select bdb via bsd.database.mk
 ##                                desired version may be set with
 ##                                WITH_BDB_VER or APACHE22_WITH_BDB_VER
 ##          WITH_BDB_BASE:        Define to use bdb from base (1.85)
