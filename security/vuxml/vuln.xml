@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1546 2008/01/22 21:38:40 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1547 2008/01/22 22:01:46 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -61,7 +61,7 @@ Note:  Please add new entries to the beginning of this file.
       <url>http://www.gentoo.org/security/en/glsa/glsa-200801-06.xml</url>
     </references>
     <dates>
-      <discovery>2008-01-FIXME</discovery>
+      <discovery>2008-01-09</discovery>
       <entry>2008-01-22</entry>
     </dates>
   </vuln>
