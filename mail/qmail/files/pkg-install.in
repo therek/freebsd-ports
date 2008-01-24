@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/qmail/files/pkg-install.in,v 1.5 2008/01/21 17:49:27 garga Exp $
 #
 
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin
 
 PREFIX=${PKG_PREFIX:-%%PREFIX%%}
-UID=`id -u ${USER}`
+UID=`id -u`
 
 addGroup() {
 	NGROUP=$1
