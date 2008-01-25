@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/perdition/files/perdition.imap4.in,v 1.1 2007/12/11 22:15:36 delphij Exp $
 #
 # PROVIDE: perdition_imap4
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 #
 
 perdition_imap4_enable=${perdition_imap4_enable-"NO"}
-perdition_imap4_flags=${perditon_imap4_flags-""}
+perdition_imap4_flags=${perdition_imap4_flags-""}
 
 . %%RC_SUBR%%
 

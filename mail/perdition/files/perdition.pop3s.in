@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/perdition/files/perdition.pop3s.in,v 1.1 2007/12/11 22:15:36 delphij Exp $
 #
 # PROVIDE: perdition_pop3s
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 #
 
 perdition_pop3s_enable=${perdition_pop3s_enable-"NO"}
-perdition_pop3s_flags=${perditon_pop3s_flags-""}
+perdition_pop3s_flags=${perdition_pop3s_flags-""}
 
 . %%RC_SUBR%%
 
