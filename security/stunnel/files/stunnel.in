@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/stunnel/files/stunnel.sh,v 1.7 2007/10/29 16:45:19 roam Exp $
+# $FreeBSD: ports/security/stunnel/files/stunnel.in,v 1.8 2008/01/24 00:36:42 roam Exp $
 #
 
 # PROVIDE: stunnel
