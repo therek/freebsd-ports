@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.49 2008/01/20 23:04:50 kuriyama Exp $
+$FreeBSD: ports/GIDs,v 1.50 2008/01/23 22:49:02 db Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -89,6 +89,7 @@ meta1m:*:263:
 meta1:*:264:
 haclient:*:275:
 mrtg:*:279:
+hobbit:*:280:
 prelude:*:281:
 _sphinx:*:312:
 dkfilter:*:325:
