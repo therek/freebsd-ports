@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.25 2008/01/16 09:33:45 mm Exp $
+# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.26 2008/01/20 11:29:31 clement Exp $
 #
 
 .if !defined(Module_inc)
@@ -82,7 +82,7 @@ WITH_DBM=bdb
 .   endif
 .endif
 
-.if defined(WITH_BERKELEYDB)
+.if defined(WITH_BERKELEYDB) && !defined(WITH_BDB_VER)
 .   if ${WITH_BERKELEYDB} == "FreeBSD"
        WITH_BDB_BASE=YES
 .   else
