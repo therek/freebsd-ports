@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/databases/firebird-server/files/pkg-install.in,v 1.2 2005/05/21 08:01:24 sem Exp $
+# $FreeBSD: ports/databases/firebird2-server/files/pkg-install.in,v 1.3 2005/07/27 15:38:05 skv Exp $
 
 PATH=/bin:/usr/bin:/usr/sbin
 
@@ -64,7 +64,7 @@ do
 done
 
 touch firebird.log
-chown firebird:firebird firebird.log
+chown firebird:firebird firebird.log security2.fdb
 
 ;;
 
