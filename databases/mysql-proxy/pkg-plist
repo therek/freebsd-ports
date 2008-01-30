@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/mysql-proxy/pkg-plist,v 1.1 2007/07/09 01:42:00 clsung Exp $
+@comment $FreeBSD: ports/databases/mysql-proxy/pkg-plist,v 1.2 2007/10/04 06:26:55 clsung Exp $
 %%DATADIR%%/active-queries.lua
 %%DATADIR%%/analyze-query.lua
 %%DATADIR%%/auditing.lua
@@ -13,10 +13,14 @@
 %%EXAMPLESDIR%%/tutorial-basic.lua
 %%EXAMPLESDIR%%/tutorial-constants.lua
 %%EXAMPLESDIR%%/tutorial-inject.lua
+%%EXAMPLESDIR%%/tutorial-keepalive.lua
+%%EXAMPLESDIR%%/tutorial-load-multi.lua
 %%EXAMPLESDIR%%/tutorial-packets.lua
 %%EXAMPLESDIR%%/tutorial-query-time.lua
+%%EXAMPLESDIR%%/tutorial-resultset.lua
 %%EXAMPLESDIR%%/tutorial-rewrite.lua
 %%EXAMPLESDIR%%/tutorial-states.lua
+%%EXAMPLESDIR%%/tutorial-tokenize.lua
 %%EXAMPLESDIR%%/tutorial-warnings.lua
 sbin/mysql-proxy
 @dirrmtry %%EXAMPLESDIR%%
