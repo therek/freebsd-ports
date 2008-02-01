@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/hobbit-server/files/hobbit-server.sh.in,v 1.1 2008/01/28 16:01:17 dinoex Exp $
 #
 
 # PROVIDE: hobbit_server
@@ -14,7 +14,7 @@ rcvar=`set_rcvar`
 load_rc_config "$name"
 : ${hobbit_server_enable:="NO"}
 
-command="su -m %%BBUSER%% -c '%%PREFIX%%/www/hobbit/server/hobbit.sh"
+command="su -m %%BBUSER%% -c '%%PREFIX%%/www/hobbit/server/hobbit.sh'"
 start_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/hobbit/server/hobbit.sh start'"
 stop_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/hobbit/server/hobbit.sh stop'"
 status_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/hobbit/server/hobbit.sh status'"
