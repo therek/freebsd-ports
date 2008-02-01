@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080201:
+   AFFECTS: users of www/ziproxy
+   AUTHOR: pankov_p@mail.ru
+
+   The configuration file was moved from /usr/local/etc to 
+   /usr/local/etc/ziproxy.
+
 20080126:
    AFFECTS: users of net-p2p/deluge
    AUTHOR: mezz@FreeBSD.org
@@ -6025,4 +6032,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.579 2008/01/25 11:31:31 araujo Exp $
+$FreeBSD: ports/UPDATING,v 1.580 2008/01/26 16:44:43 mezz Exp $
