@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/xshttpd/files/xshttpd.sh.in,v 1.1 2005/09/15 23:04:31 pav Exp $
 #
 
 # PROVIDE: xshttpd
@@ -25,5 +25,7 @@ load_rc_config $name
 
 pidfile="/var/run/httpd.pid"
 command="%%PREFIX%%/bin/httpd"
+stop_cmd="%%PREFIX%%/bin/httpdc kill"
+restart_cmd="%%PREFIX%%/bin/httpdc restart"
 
 run_rc_command "$1"
