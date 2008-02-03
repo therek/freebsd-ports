@@ -22,7 +22,7 @@ upgrades.
    Install paths have changed. Please do the following prior to upgrade:
 	cd /usr/local/www
 	mv punbb punbb.old
-	cp -r punbb.old/upload punbb
+	cp -R punbb.old/upload punbb
 
    It is now safe to update as usual.
 
@@ -6061,4 +6061,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.582 2008/02/02 23:20:50 beech Exp $
+$FreeBSD: ports/UPDATING,v 1.583 2008/02/03 08:31:22 johans Exp $
