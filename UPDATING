@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080208:
+  AFFECTS: users of ports-mgmt/portupgrade
+  AUTHOR: sem@FreeBSD.org
+
+  As was claimed in an enrty 20070301 bellow in the file. You should fill
+  ALT_DEPENDS section of pkgtools.conf for portupgrade works correctly
+  with your alternative dependencies. Now it's an obligatory requirement.
+
+  It's was done as a compromise between speed and compexity.
+
 20080203:
   AFFECTS: users of www/xshttpd
   AUTHOR: johans@FreeBSD.org
@@ -6061,4 +6071,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.583 2008/02/03 08:31:22 johans Exp $
+$FreeBSD: ports/UPDATING,v 1.584 2008/02/03 20:46:04 sat Exp $
