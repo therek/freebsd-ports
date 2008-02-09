@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/emulators/fuse/pkg-plist,v 1.3 2005/10/11 16:32:56 barner Exp $
+@comment $FreeBSD: ports/emulators/fuse/pkg-plist,v 1.4 2007/07/29 16:34:42 pav Exp $
 bin/fuse
 %%DATADIR%%/128-0.rom
 %%DATADIR%%/128-1.rom
@@ -11,7 +11,7 @@ bin/fuse
 %%DATADIR%%/48.rom
 %%DATADIR%%/cassette.bmp
 %%DATADIR%%/disk_plus3.szx
-%%DATADIR%%/fuse.font
+%%DATADIR%%/gluck.rom
 %%DATADIR%%/if1-1.rom
 %%DATADIR%%/if1-2.rom
 %%DATADIR%%/keyboard.scr
@@ -27,6 +27,7 @@ bin/fuse
 %%DATADIR%%/plus3e-1.rom
 %%DATADIR%%/plus3e-2.rom
 %%DATADIR%%/plus3e-3.rom
+%%DATADIR%%/plusd.rom
 %%DATADIR%%/se-0.rom
 %%DATADIR%%/se-1.rom
 %%DATADIR%%/tape_128.szx
