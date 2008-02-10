@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1534 2008/01/27 20:24:57 clement Exp $
+# $FreeBSD: ports/MOVED,v 1.1535 2008/01/29 14:33:10 danfe Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3360,3 +3360,4 @@ database/mysqltoolkit|database/maatkit|2008-01-21|project was renamed
 games/sturmbahnfahrer|games/stormbaancoureur|2008-01-27|project was renamed
 net/cactid|net-mgmt/cacti-spine|2008-01-27|project was renamed
 x11-wm/wmii-devel|x11-wm/wmii|2008-01-29|Development version no longer necessary
+devel/wxGlade-devel||2008-02-11|Has expired: has been the same version as wxGlade for a long time; use it instead
