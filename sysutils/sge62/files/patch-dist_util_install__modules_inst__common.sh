@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/sysutils/sge61/files/patch-dist_util_install__modules_inst__common.sh,v 1.2 2007/02/05 17:33:22 brooks Exp $
+$FreeBSD: ports/sysutils/sge61/files/patch-dist_util_install__modules_inst__common.sh,v 1.3 2008/02/12 20:55:46 brooks Exp $
 
 --- dist/util/install_modules/inst_common.sh.orig
 +++ dist/util/install_modules/inst_common.sh

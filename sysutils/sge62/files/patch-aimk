@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/sysutils/sge61/files/patch-aimk,v 1.5 2007/02/05 17:33:22 brooks Exp $
+$FreeBSD: ports/sysutils/sge61/files/patch-aimk,v 1.6 2008/02/12 20:55:46 brooks Exp $
 
 --- aimk.orig
 +++ aimk
