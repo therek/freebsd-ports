@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/sysutils/sge60/files/patch-daemons_execd_execd__signal__queue.c,v 1.1 2007/09/04 18:00:07 brooks Exp $
 
 --- daemons/execd/execd_signal_queue.c.orig
 +++ daemons/execd/execd_signal_queue.c

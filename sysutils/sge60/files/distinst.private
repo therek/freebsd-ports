@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/sge/files/distinst.private,v 1.1 2005/07/29 02:13:32 brooks Exp $
+# $FreeBSD: ports/sysutils/sge60/files/distinst.private,v 1.2 2007/01/09 08:26:10 brooks Exp $
 OPENSSLBASE=%%OPENSSLBASE%%
 BERKELEYDBBASE=%%LOCALBASE%%
 BDB_LIB_SUFFIX="-4.2"

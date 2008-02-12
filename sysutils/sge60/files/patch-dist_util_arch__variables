@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/sysutils/sge60/files/patch-dist_util_arch__variables,v 1.2 2005/07/29 02:13:32 brooks Exp $
 
 --- dist/util/arch_variables.orig
 +++ dist/util/arch_variables
