@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/sysutils/sge61/files/patch-dist_pvm_src_aimk,v 1.2 2005/07/29 02:13:32 brooks Exp $
 
 --- dist/pvm/src/aimk.orig
 +++ dist/pvm/src/aimk
