@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1557 2008/02/12 08:48:24 brix Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1558 2008/02/12 13:30:47 sem Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -271,7 +271,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>claws-mail</name>
-	<range><gt>3.0.2</gt></range>
+	<range><lt>3.1.0</lt></range>
       </package>
     </affects>
     <description>
@@ -294,6 +294,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2007-12-03</discovery>
       <entry>2008-01-22</entry>
+      <modified>2008-02-12</modified>
     </dates>
   </vuln>
 
