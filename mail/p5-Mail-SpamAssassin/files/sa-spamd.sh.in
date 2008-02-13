@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/p5-Mail-SpamAssassin/files/spamd.sh,v 1.13 2006/02/09 07:38:20 sem Exp $
+# $FreeBSD: ports/mail/p5-Mail-SpamAssassin/files/sa-spamd.sh.in,v 1.1 2006/03/20 13:03:33 garga Exp $
 #
 
 # PROVIDE: spamd
@@ -21,6 +21,7 @@
 name=spamd
 rcvar=`set_rcvar`
 
+extra_commands="reload"
 load_rc_config $name
 
 # Set defaults
