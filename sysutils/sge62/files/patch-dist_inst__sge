@@ -1,18 +1,9 @@
 
-$FreeBSD: ports/sysutils/sge61/files/patch-dist_inst__sge,v 1.3 2008/02/12 20:55:46 brooks Exp $
+$FreeBSD$
 
 --- dist/inst_sge.orig
 +++ dist/inst_sge
-@@ -270,7 +270,7 @@
-    GetCell
-    GetQmasterSpoolDir $euid
-    SetCellDependentVariables
--   SetPermissions
-+#   SetPermissions
-    SelectHostNameResolving
-    SetProductMode
-    MakeDirsMaster
-@@ -344,7 +344,7 @@
+@@ -441,7 +441,7 @@
   GetQmasterSpoolDir $euid
   SetCellDependentVariables
   WindowsSupport
