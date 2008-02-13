@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1560 2008/02/13 15:31:59 oliver Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1561 2008/02/13 16:37:31 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -240,7 +240,7 @@ Note:  Please add new entries to the beginning of this file.
       <package>
 	<name>xfce4-panel</name>
 	<name>libxfce4gui</name>
-	<range><gt>4.4.1_1</gt><lt>4.4.2</lt></range>
+	<range><lt>4.4.2</lt></range>
       </package>
     </affects>
     <description>
