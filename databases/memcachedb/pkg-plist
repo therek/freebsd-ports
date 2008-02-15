@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/memcachedb/pkg-plist,v 1.1 2007/09/27 03:02:34 clsung Exp $
+@comment $FreeBSD: ports/databases/memcachedb/pkg-plist,v 1.2 2008/02/10 19:42:52 beech Exp $
 @stopdaemon memcachedb
-sbin/memcachedb
-@dirrmtry %%MCDBDIR%%
+bin/memcachedb
+@dirrmtry /var/db/memcachedb
