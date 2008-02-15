@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/libpreludedb/pkg-plist,v 1.10 2006/08/14 09:11:31 clsung Exp $
+@comment $FreeBSD: ports/security/libpreludedb/pkg-plist,v 1.11 2007/10/05 01:46:14 clsung Exp $
 bin/preludedb-admin
 bin/libpreludedb-config
 include/libpreludedb/preludedb-path-selection.h
@@ -35,6 +35,7 @@ share/aclocal/libpreludedb.m4
 %%DATADIR%%/classic/mysql-update-14-4.sql
 %%DATADIR%%/classic/mysql-update-14-5.sql
 %%DATADIR%%/classic/mysql-update-14-6.sql
+%%DATADIR%%/classic/mysql-update-14-7.sql
 %%DATADIR%%/classic/mysql.sql
 %%DATADIR%%/classic/mysql2pgsql.sh
 %%DATADIR%%/classic/mysql2sqlite.sh
@@ -44,10 +45,12 @@ share/aclocal/libpreludedb.m4
 %%DATADIR%%/classic/pgsql-update-14-4.sql
 %%DATADIR%%/classic/pgsql-update-14-5.sql
 %%DATADIR%%/classic/pgsql-update-14-6.sql
+%%DATADIR%%/classic/pgsql-update-14-7.sql
 %%DATADIR%%/classic/pgsql.sql
 %%DATADIR%%/classic/sqlite-update-14-4.sql
 %%DATADIR%%/classic/sqlite-update-14-5.sql
 %%DATADIR%%/classic/sqlite-update-14-6.sql
+%%DATADIR%%/classic/sqlite-update-14-7.sql
 %%DATADIR%%/classic/sqlite.sql
 %%PORTDOCS%%%%DOCSDIR%%/ch01.html
 %%PORTDOCS%%%%DOCSDIR%%/home.png
