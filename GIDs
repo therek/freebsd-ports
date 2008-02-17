@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.50 2008/01/23 22:49:02 db Exp $
+$FreeBSD: ports/GIDs,v 1.51 2008/01/28 10:53:56 dinoex Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -51,11 +51,11 @@ _symon:*:115:
 smokeping:*:117:
 ircproxyd:*:118:
 mythtv:*:119:
-pdns:*:120
+pdns:*:120:
 otrs:*:121:
 zabbix:*:122:
 _ntp:*:123:
-fetchmail:*:124
+fetchmail:*:124:
 postfix:*:125:
 maildrop:*:126:
 nav:*:127:
