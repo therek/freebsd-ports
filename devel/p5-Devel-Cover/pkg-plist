@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-Devel-Cover/pkg-plist,v 1.9 2006/08/07 13:13:50 mat Exp $
+@comment $FreeBSD: ports/devel/p5-Devel-Cover/pkg-plist,v 1.10 2007/01/04 13:39:40 mat Exp $
 bin/cover
 bin/cpancover
 bin/gcov2perl
@@ -33,6 +33,7 @@ bin/gcov2perl
 %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/Time.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/Truth_Table.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/Tutorial.pod
+%%SITE_PERL%%/%%PERL_ARCH%%/Devel/Cover/Web.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Devel/Cover/.packlist
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Devel/Cover/Cover.bs
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Devel/Cover/Cover.so
