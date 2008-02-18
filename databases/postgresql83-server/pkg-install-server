@@ -1,12 +1,10 @@
 #! /bin/sh
 
-# $FreeBSD: ports/databases/postgresql83-server/pkg-install-server,v 1.5 2008/01/07 13:51:56 girgen Exp $
+# $FreeBSD: ports/databases/postgresql83-server/pkg-install-server,v 1.6 2008/01/22 14:08:48 girgen Exp $
 
 PATH=/bin:/usr/bin:/usr/sbin
 
 backupwarning() { echo "
-
-  == BETA QUALITY, NOT FOR PRODUCTION USE! ==
 
   =========== BACKUP YOUR DATA! =============
   As always, backup your data before
