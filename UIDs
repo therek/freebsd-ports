@@ -1,4 +1,4 @@
-$FreeBSD: ports/UIDs,v 1.58 2008/01/28 10:53:56 dinoex Exp $
+$FreeBSD: ports/UIDs,v 1.59 2008/02/17 13:08:54 miwi Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53:Bind Sandbox:/:/usr/sbin/nologin
@@ -71,6 +71,7 @@ vchat:*:128:128:VChat Conferencing System:/nonexistent:/usr/sbin/nologin
 _bgpd:*:130:130:BGP Daemon:/var/empty:/usr/sbin/nologin
 _ospfd:*:131:131:OSPF Daemon:/var/empty:/usr/sbin/nologin
 _spamd:*:132:132:Spam Daemon:/var/empty:/usr/sbin/nologin
+cricket:*:141:80:Cricket Monitoring User:/nonexistent:/usr/sbin/nologin
 dovecot:*:143:143:Dovecot User:/var/empty:/usr/sbin/nologin
 rbldns:*:153:153:rbldnsd pseudo-user:/nonexistent:/usr/sbin/nologin
 sfs:*:171:171:Self-Certifying File System:/nonexistent:/usr/sbin/nologin
