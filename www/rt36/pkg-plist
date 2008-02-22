@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/rt36/pkg-plist,v 1.18 2006/12/22 17:07:38 bsam Exp $
+@comment $FreeBSD: ports/www/rt36/pkg-plist,v 1.19 2007/08/29 15:34:46 delphij Exp $
 @unexec if cmp -s %%RT_PATH%%/etc/RT_SiteConfig.pm %%RT_PATH%%/etc/RT_SiteConfig.pm-dist; then rm -f %%RT_PATH%%/etc/RT_SiteConfig.pm; fi
 %%RTPLIST%%/etc/RT_SiteConfig.pm-dist
 @exec [ -f %%RT_PATH%%/etc/RT_SiteConfig.pm ] || cp -p %%RT_PATH%%/etc/RT_SiteConfig.pm-dist %%RT_PATH%%/etc/RT_SiteConfig.pm
@@ -372,6 +372,7 @@
 %%RTPLIST%%/share/html/Elements/EditCustomFieldText
 %%RTPLIST%%/share/html/Elements/EditCustomFieldWikitext
 %%RTPLIST%%/share/html/Elements/EditLinks
+%%RTPLIST%%/share/html/Elements/EmailInput
 %%RTPLIST%%/share/html/Elements/Error
 %%RTPLIST%%/share/html/Elements/Footer
 %%RTPLIST%%/share/html/Elements/GotoTicket
@@ -438,6 +439,7 @@
 %%RTPLIST%%/share/html/Elements/TitleBoxStart
 %%RTPLIST%%/share/html/Elements/ValidateCustomFields
 %%RTPLIST%%/share/html/Helpers/CalPopup.html
+%%RTPLIST%%/share/html/Helpers/EmailAutocomplete
 %%RTPLIST%%/share/html/NoAuth/Logout.html
 %%RTPLIST%%/share/html/NoAuth/Reminder.html
 %%RTPLIST%%/share/html/NoAuth/css/3.4-compat/body.css
@@ -467,6 +469,7 @@
 %%RTPLIST%%/share/html/NoAuth/css/3.5-default/titlebox.css
 %%RTPLIST%%/share/html/NoAuth/css/3.5-default/transactions.css
 %%RTPLIST%%/share/html/NoAuth/css/autohandler
+%%RTPLIST%%/share/html/NoAuth/css/dhandler
 %%RTPLIST%%/share/html/NoAuth/css/print.css
 %%RTPLIST%%/share/html/NoAuth/images/autohandler
 %%RTPLIST%%/share/html/NoAuth/images/bplogo.gif
@@ -486,6 +489,7 @@
 %%RTPLIST%%/share/html/NoAuth/images/css/ctr.gif
 %%RTPLIST%%/share/html/NoAuth/images/css/dark-arrow-up.png
 %%RTPLIST%%/share/html/NoAuth/images/css/dark-arrow.png
+%%RTPLIST%%/share/html/NoAuth/images/css/fieldbg-autocomplete.gif
 %%RTPLIST%%/share/html/NoAuth/images/css/light-arrow-up.png
 %%RTPLIST%%/share/html/NoAuth/images/css/light-arrow.png
 %%RTPLIST%%/share/html/NoAuth/images/css/rolldown-arrow.gif
@@ -498,6 +502,10 @@
 %%RTPLIST%%/share/html/NoAuth/js/class.js
 %%RTPLIST%%/share/html/NoAuth/js/combobox.js
 %%RTPLIST%%/share/html/NoAuth/js/list.js
+%%RTPLIST%%/share/html/NoAuth/js/scriptaculous/controls.js
+%%RTPLIST%%/share/html/NoAuth/js/scriptaculous/effects.js
+%%RTPLIST%%/share/html/NoAuth/js/scriptaculous/prototype.js
+%%RTPLIST%%/share/html/NoAuth/js/scriptaculous/scriptaculous.js
 %%RTPLIST%%/share/html/NoAuth/js/titlebox-state.js
 %%RTPLIST%%/share/html/NoAuth/js/util.js
 %%RTPLIST%%/share/html/Prefs/Elements/Tabs
@@ -594,6 +602,7 @@
 %%RTPLIST%%/share/html/Ticket/Elements/ShowMessageHeaders
 %%RTPLIST%%/share/html/Ticket/Elements/ShowMessageStanza
 %%RTPLIST%%/share/html/Ticket/Elements/ShowPeople
+%%RTPLIST%%/share/html/Ticket/Elements/ShowQueue
 %%RTPLIST%%/share/html/Ticket/Elements/ShowRequestor
 %%RTPLIST%%/share/html/Ticket/Elements/ShowSummary
 %%RTPLIST%%/share/html/Ticket/Elements/ShowTime
@@ -666,6 +675,7 @@
 @dirrm %%RTPLIST%%/share/html/REST
 @dirrm %%RTPLIST%%/share/html/Prefs/Elements
 @dirrm %%RTPLIST%%/share/html/Prefs
+@dirrm %%RTPLIST%%/share/html/NoAuth/js/scriptaculous
 @dirrm %%RTPLIST%%/share/html/NoAuth/js
 @dirrm %%RTPLIST%%/share/html/NoAuth/images/css
 @dirrm %%RTPLIST%%/share/html/NoAuth/images
@@ -722,4 +732,4 @@
 @dirrm %%RTPLIST%%/lib
 @dirrmtry %%RTPLIST%%/etc
 @dirrm %%RTPLIST%%/bin
-@dirrm %%RTPLIST%%
+@dirrmtry %%RTPLIST%%
