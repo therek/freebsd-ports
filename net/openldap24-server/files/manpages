@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/net/openldap24-server/files/manpages,v 1.17 2007/02/21 05:40:11 delphij Exp $
+# $FreeBSD: ports/net/openldap24-server/files/manpages,v 1.18 2007/09/05 06:37:13 delphij Exp $
 #
 
 MAN1+=	ldapcompare.1 \
@@ -206,6 +206,7 @@ MAN5+=	ldap.conf.5 \
 	slapd-perl.5 \
 	slapd-relay.5 \
 	slapd-shell.5 \
+	slapd-sock.5 \
 	slapd-sql.5 \
 	slapd.access.5 \
 	slapd.backends.5 \
