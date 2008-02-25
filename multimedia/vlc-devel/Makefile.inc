@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.16 2007/05/28 22:00:12 ahze Exp $
+# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.17 2007/06/04 12:32:00 ahze Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -233,7 +233,7 @@ post-patch:
 # mozilla plugin
 	@${REINPLACE_CMD} -e 's|$$(libdir)/mozilla/plugins|${FAKEDIR}/mozilla|; \
 		s|$$(libdir)/mozilla/components|${FAKEDIR}/mozilla|' \
-			${WRKSRC}/mozilla/Makefile.in
+			${WRKSRC}/projects/mozilla/Makefile.in
 # skins2 interface, no lrint on < 504000
 .if ${OSVERSION} < 504000
 	@${REINPLACE_CMD} -e 's|lrint|rint|' \
@@ -248,7 +248,7 @@ post-patch:
 	@${REINPLACE_CMD} -e 's/-lpthread/${PTHREAD_LIBS}/' \
 		-e 's/-lc_r/${PTHREAD_LIBS}/' \
 		-e 's|-mcpu=pentiumpro||; s|-ldl||' \
-		${WRKSRC}/configure
+		${WRKSRC}/configure ${WRKSRC}/libs/loader/Makefile.in
 # cdrom/dvd support
 	@${REINPLACE_CMD} -e 's|/dev/cdrom|${DEFAULT_CDROM_DEVICE}|; \
 		s|/dev/dvd|${DEFAULT_DVD_DEVICE}|' \
