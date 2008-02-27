@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.435 2008/02/01 08:05:09 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.436 2008/02/07 16:13:41 shaun Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -81,6 +81,16 @@ MASTER_SITE_APACHE+=	\
 	ftp://ftp.ccs.neu.edu/net/mirrors/Apache/dist/%SUBDIR%/ \
 	ftp://ftp.tux.org/pub/net/apache/dist/%SUBDIR%/ \
 	ftp://ftp.saix.net/pub/apache/dist/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_APACHE_COMMONS_BINARIES)
+MASTER_SITE_APACHE_COMMONS_BINARIES+=	\
+	${MASTER_SITE_APACHE:S,%SUBDIR%,commons/&/binaries,}
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_APACHE_COMMONS_SOURCE)
+MASTER_SITE_APACHE_COMMONS_SOURCE+=	\
+	${MASTER_SITE_APACHE:S,%SUBDIR%,commons/&/source,}
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_APACHE_HTTPD)
