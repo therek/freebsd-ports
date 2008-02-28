@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.568 2008/02/27 18:31:18 ehaupt Exp $
+# $FreeBSD: ports/LEGAL,v 1.569 2008/02/27 23:52:01 miwi Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -354,8 +354,6 @@ jpgraph-1.*		graphics/jpgraph	Not for commercial use
 jpgraph-2.*		graphics/jpgraph2	Not for commercial use
 jre*i_ELF.*.tar.gz	java/jre		License does not allow distribution
 						with fee
-jre118_v3-glibc-*	java/linux-blackdown-jre11 License does not allow
-						distribution with fee
 jre-1_5*-linux-*.bin	java/linux-sun-jre15	License does not allow distribution
 						with fee
 jre-6*-linux-*.bin	java/linux-sun-jre16	License does not allow distribution
