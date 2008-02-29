@@ -1,5 +1,5 @@
-# $FreeBSD: ports/print/ghostscript-gpl/Makefile.inc,v 1.22 2007/08/03 21:46:53 mm Exp $
+# $FreeBSD: ports/print/ghostscript-gpl/Makefile.inc,v 1.23 2007/08/16 15:20:29 rafan Exp $
 
-GS_VERSION=	8.60
+GS_VERSION=	8.61
 GS_REVISION=	0
 GS_EPOCH=	0

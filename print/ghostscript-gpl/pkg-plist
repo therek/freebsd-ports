@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/ghostscript-gpl/pkg-plist,v 1.42 2007/06/03 05:02:50 hrs Exp $
+@comment $FreeBSD: ports/print/ghostscript-gpl/pkg-plist,v 1.43 2007/08/16 15:20:29 rafan Exp $
 bin/bdftops
 bin/dumphint
 bin/dvipdf
@@ -295,11 +295,19 @@ bin/wftopfa
 %%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJIS-UTF32-V
 %%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJIS-UTF8-H
 %%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJIS-UTF8-V
+%%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJIS2004-UTF16-H
+%%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJIS2004-UTF16-V
+%%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJIS2004-UTF32-H
+%%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJIS2004-UTF32-V
+%%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJIS2004-UTF8-H
+%%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJIS2004-UTF8-V
 %%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJISPro-UCS2-HW-V
 %%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJISPro-UCS2-V
 %%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJISPro-UTF8-V
 %%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJISX0213-UTF32-H
 %%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJISX0213-UTF32-V
+%%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJISX02132004-UTF32-H
+%%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniJISX02132004-UTF32-V
 %%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniKS-UCS2-H
 %%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniKS-UCS2-V
 %%DATADIR%%/%%GS_VERSION%%/Resource/CMap/UniKS-UTF16-H
@@ -557,6 +565,7 @@ bin/wftopfa
 %%DATADIR%%/%%GS_VERSION%%/lib/pcharstr.ps
 %%DATADIR%%/%%GS_VERSION%%/lib/pdf2dsc.ps
 %%DATADIR%%/%%GS_VERSION%%/lib/pdf_base.ps
+%%DATADIR%%/%%GS_VERSION%%/lib/pdf_cslayer.ps
 %%DATADIR%%/%%GS_VERSION%%/lib/pdf_draw.ps
 %%DATADIR%%/%%GS_VERSION%%/lib/pdf_font.ps
 %%DATADIR%%/%%GS_VERSION%%/lib/pdf_main.ps
