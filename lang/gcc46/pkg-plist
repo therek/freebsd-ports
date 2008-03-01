@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc43/pkg-plist,v 1.96 2007/03/12 16:45:56 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc44/pkg-plist,v 1.97 2008/03/01 15:28:39 gerald Exp $
 bin/c++%%SUFFIX%%
 bin/cpp%%SUFFIX%%
 bin/g++%%SUFFIX%%
@@ -33,7 +33,7 @@ info/gcc%%SUFFIX%%/dir
 %%JAVA%%bin/jv-convert%%SUFFIX%%
 %%JAVA%%bin/jcf-dump%%SUFFIX%%
 %%JAVA%%bin/%%GNU_HOST%%-gcj%%SUFFIX%%
-%%JAVA%%libdata/pkgconfig/libgcj-4.3.pc
+%%JAVA%%libdata/pkgconfig/libgcj-4.4.pc
 %%JAVA%%share/java/libgcj-%%GCC_VER%%.jar
 %%JAVA%%share/java/libgcj-tools-%%GCC_VER%%.jar
 @comment Insert PLIST.lib here
