@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/mail/postfix/pkg-install,v 1.24 2007/10/03 23:34:15 edwin Exp $
+#	$FreeBSD: ports/mail/postfix/pkg-install,v 1.25 2007/10/04 22:57:58 edwin Exp $
 #
 
 # If the POSTFIX_DEFAULT_MTA environment variable is set to YES, it
@@ -121,6 +121,7 @@ if [ x"$2" = xPOST-INSTALL ]; then
 
 	/bin/sh ${PKG_PREFIX}/etc/postfix/post-install tempdir=/tmp \
 	config_directory=${PKG_PREFIX}/etc/postfix \
+	data_directory=/var/db/postfix \
 	daemon_directory=${PKG_PREFIX}/libexec/postfix \
 	command_directory=${PKG_PREFIX}/sbin \
 	queue_directory=/var/spool/postfix \
