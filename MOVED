@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1546 2008/02/28 07:50:41 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1547 2008/02/28 12:08:18 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3397,3 +3397,4 @@ devel/php-dbg||2008-02-28|Has expired: does not work with php5 and does not comp
 graphics/jgv||2008-02-28|Has expired: development stalled for years, outdated, unmaintained
 editors/muggy||2008-02-28|Has expired: development stalled for years, unmaintained
 x11-fm/binder||2008-02-28|Has expired: development stalled for years, outdated, unmaintained
+x11-toolkits/guile-gnome||2008-03-02|Software is obsolete
