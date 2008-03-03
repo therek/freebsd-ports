@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/mediatomb/pkg-plist,v 1.1 2007/04/17 18:33:48 miwi Exp $
+@comment $FreeBSD: ports/net/mediatomb/pkg-plist,v 1.2 2007/07/15 15:05:15 miwi Exp $
 bin/mediatomb
 %%DATADIR%%/js/import.js
 %%DATADIR%%/js/playlists.js
@@ -74,7 +74,7 @@ bin/mediatomb
 %%DATADIR%%/web/js/items.js
 %%DATADIR%%/web/js/md5.js
 %%DATADIR%%/web/js/nanotree.js
-%%DATADIR%%/web/js/pngbehavior.htc
+%%DATADIR%%/web/js/iepngfix.htc
 %%DATADIR%%/web/js/prototype.js
 %%DATADIR%%/web/js/tasks.js
 %%DATADIR%%/web/js/tools.js
