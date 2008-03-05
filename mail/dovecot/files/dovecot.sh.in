@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dovecot/files/dovecot.sh.in,v 1.1 2005/10/20 20:55:00 pav Exp $
+# $FreeBSD: ports/mail/dovecot/files/dovecot.sh.in,v 1.2 2006/02/20 20:47:10 dougb Exp $
 #
 
 # PROVIDE: dovecot
-# REQUIRE: LOGIN
+# REQUIRE: LOGIN ntpdate
 # KEYWORD: shutdown
 
 #
