@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.437 2008/02/27 15:10:50 ehaupt Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.438 2008/03/04 22:20:54 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -593,6 +593,11 @@ MASTER_SITE_GNU_ALPHA+=	\
 	ftp://ftp.funet.fi/pub/mirrors/alpha.gnu.org/gnu/%SUBDIR%/ \
 	ftp://ftp.lublin.pl/mirror/alpha.gnu.org/gnu/%SUBDIR%/ \
 	ftp://ftp.ps.pl/mirrors/alpha.gnu.org/pub/gnu/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_GOOGLE_CODE)
+MASTER_SITE_GOOGLE_CODE+= \
+	http://${PORTNAME}.googlecode.com/files/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_HORDE)
