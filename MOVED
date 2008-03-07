@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1551 2008/03/07 15:29:10 flz Exp $
+# $FreeBSD: ports/MOVED,v 1.1552 2008/03/07 16:56:13 flz Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3411,3 +3411,21 @@ x11/xextensions||2008-03-07|Port has been outdated since X.org 7.2 merge
 x11/printext|x11/printproto|2008-03-07|Port has been outdated since X.org 7.2 merge
 x11/libXxf86||2008-03-07|Port has been outdated since X.org 7.2 merge
 x11/xf86ext||2008-03-07|Port has been outdated since X.org 7.2 merge
+devel/imake-4||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+graphics/xfree86-dri||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11-fonts/XFree86-4-font100dpi||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11-fonts/XFree86-4-font75dpi||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11-fonts/XFree86-4-fontCyrillic||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11-fonts/XFree86-4-fontDefaultBitmaps||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11-fonts/XFree86-4-fontEncodings||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11-fonts/XFree86-4-fontScalable||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11-servers/XFree86-4-FontServer||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11-servers/XFree86-4-NestServer||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11-servers/XFree86-4-PrintServer||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11-servers/XFree86-4-Server||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11-servers/XFree86-4-VirtualFramebufferServer||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11/XFree86-4||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11/XFree86-4-clients||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11/XFree86-4-documents||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11/XFree86-4-libraries||2008-03-07|XFree86-4 is no longer supported on FreeBSD
+x11/XFree86-4-manuals||2008-03-07|XFree86-4 is no longer supported on FreeBSD
