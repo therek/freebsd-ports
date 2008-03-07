@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.51 2008/01/28 10:53:56 dinoex Exp $
+$FreeBSD: ports/GIDs,v 1.52 2008/02/17 14:33:19 miwi Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -95,6 +95,7 @@ _sphinx:*:312:
 dkfilter:*:325:
 wildfire:*:340:
 stunnel:*:341:
+openfire:*:342:
 _iodined:*:353:
 ldap:*:389:
 tiarra:*:398:
