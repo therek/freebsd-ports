@@ -1,5 +1,4 @@
-@comment $FreeBSD$
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/Archive/Any/.packlist
+@comment $FreeBSD: ports/archivers/p5-Archive-Any/pkg-plist,v 1.1 2006/10/03 13:38:21 clsung Exp $
 %%SITE_PERL%%/Archive/Any.pm
 %%SITE_PERL%%/Archive/Any/Plugin.pm
 %%SITE_PERL%%/Archive/Any/Plugin/Tar.pm
