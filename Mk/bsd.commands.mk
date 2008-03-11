@@ -5,7 +5,7 @@
 #
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.commands.mk,v 1.1 2007/08/04 11:37:23 gabor Exp $
 #
 # DO NOT COMMIT CHANGES TO THIS FILE BY YOURSELF, EVEN IF YOU DID NOT GET
 # A RESPONSE FROM THE MAINTAINER(S) WITHIN A REASONABLE TIMEFRAME! ALL
@@ -83,6 +83,7 @@ TR?=		LANG=C /usr/bin/tr
 TRUE?=		true				# Shell builtin
 UMOUNT?=	/sbin/umount
 UNAME?=		/usr/bin/uname
+UNMAKESELF_CMD?=	${LOCALBASE}/bin/unmakeself
 UNZIP_CMD?=	${LOCALBASE}/bin/unzip
 WHICH?=		/usr/bin/which
 XARGS?=		/usr/bin/xargs
