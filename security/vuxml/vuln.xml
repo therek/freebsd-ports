@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1579 2008/03/11 23:09:30 nox Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1580 2008/03/11 23:25:38 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -61,7 +61,7 @@ Note:  Please add new entries to the beginning of this file.
     <references>
       <cvename>CVE-2008-0928</cvename>
       <url>http://secunia.com/advisories/29172</url>
-      <url>http://secunia.com/advisories/29172</url>
+      <url>http://secunia.com/advisories/29081</url>
       <mlist msgid="18362.62578.44273.779731@mariner.uk.xensource.com">http://lists.debian.org/debian-security/2008/02/msg00064.html</mlist>
     </references>
     <dates>
