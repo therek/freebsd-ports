@@ -10,6 +10,14 @@ in the release notes.
 
 All ports committers are allowed to commit to this file.
 
+20080312:
+AUTHOR: pav@FreeBSD.org
+
+  * USE_XPM no longer implies USE_XLIB.
+
+  * USE_LDCONFIG can now be used to Linux binary ports that install shared
+    libraries instead of INSTALLS_SHLIB.
+
 20070908:
 AUTHOR:	gabor@FreeBSD.org, linimon@FreeBSD.org
 
@@ -1417,4 +1425,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.78 2007/09/09 00:30:31 linimon Exp $
+$FreeBSD: ports/CHANGES,v 1.79 2007/09/20 09:29:24 danfe Exp $
