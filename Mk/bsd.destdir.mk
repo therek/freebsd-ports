@@ -5,7 +5,7 @@
 #
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.destdir.mk,v 1.1 2007/08/04 11:37:23 gabor Exp $
 #
 # Please make sure all changes to this file are passed through the maintainer.
 
@@ -76,7 +76,7 @@ DEBUG_MSG=	${TRUE}
 .endif
 
 DESTDIR_ENV_LIST?=
-DESTDIR_ENV=	CHROOTED=yes
+DESTDIR_ENV=	CHROOTED=yes PATH=${PATH} TERM=${TERM}
 .for _var in ${DESTDIR_ENV_LIST:NDESTDIR:NCHROOTED:NPORTSDIR}
 DESTDIR_ENV+=	${_var}="${${_var}}"
 .endfor
