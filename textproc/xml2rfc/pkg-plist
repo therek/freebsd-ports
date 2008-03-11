@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/xml2rfc/pkg-plist,v 1.7 2005/04/06 22:11:47 fenner Exp $
+@comment $FreeBSD: ports/textproc/xml2rfc/pkg-plist,v 1.8 2005/08/29 15:22:07 vs Exp $
 bin/xml2html
 bin/xml2nroff
 bin/xml2rfc
@@ -15,7 +15,6 @@ bin/xml2txt
 %%PORTDOCS%%%%DOCSDIR%%/rfc2629.dtd
 %%PORTDOCS%%%%DOCSDIR%%/rfc2629.html
 %%PORTDOCS%%%%DOCSDIR%%/rfc2629.rnc
-%%PORTDOCS%%%%DOCSDIR%%/rfc2629.txt
 %%PORTDOCS%%%%DOCSDIR%%/rfc2629.xml
 %%PORTDOCS%%%%DOCSDIR%%/rfc2629.xsd
 %%PORTDOCS%%%%DOCSDIR%%/sample.html
