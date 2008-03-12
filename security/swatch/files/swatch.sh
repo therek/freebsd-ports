@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/swatch/files/swatch.sh,v 1.1 2004/11/17 01:42:53 kuriyama Exp $
+# $FreeBSD: ports/security/swatch/files/swatch.sh,v 1.2 2006/07/19 16:18:41 dougb Exp $
 #
 # PROVIDE: swatch
 # REQUIRE: DAEMON
@@ -23,6 +23,7 @@ name=swatch
 rcvar=`set_rcvar`
 
 command=%%PREFIX%%/bin/swatch
+procname=%%PREFIX%%/bin/perl
 
 load_rc_config ${name}
 
