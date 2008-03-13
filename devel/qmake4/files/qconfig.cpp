@@ -1,5 +1,5 @@
 /*
- * $FreeBSD: ports/devel/qmake4/files/qconfig.cpp,v 1.5 2007/08/02 22:37:34 lofi Exp $
+ * $FreeBSD$
  * Hand-crafted...
  * The default prefix (/ usr / local) is dynamicly replaced
  * at configure time.
