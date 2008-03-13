@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.438 2008/03/04 22:20:54 edwin Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.439 2008/03/06 21:32:03 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -596,8 +596,13 @@ MASTER_SITE_GNU_ALPHA+=	\
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_GOOGLE_CODE)
+.if defined(PROJECTHOST)
+MASTER_SITE_GOOGLE_CODE+= \
+	http://${PROJECTHOST}.googlecode.com/files/
+.else
 MASTER_SITE_GOOGLE_CODE+= \
 	http://${PORTNAME}.googlecode.com/files/
+.endif
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_HORDE)
