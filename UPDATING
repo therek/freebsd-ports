@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080313:
+  AFFECTS: users of mail/ezmlm-web
+  AUTHOR: hans@nordhaug.priv.no
+
+  The layout of ezmlm-web 3.2 is changed, please read the documents and
+  the manual page of ezmlm-web.cgi.
+
 20080312:
   AFFECTS: users of x11-wm/enlightenment-devel, x11/ecore and grephics/evas
   AUTHOR: stas@FreeBSD.org
@@ -6150,4 +6157,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.593 2008/03/05 23:59:00 ehaupt Exp $
+$FreeBSD: ports/UPDATING,v 1.594 2008/03/12 10:56:27 stas Exp $
