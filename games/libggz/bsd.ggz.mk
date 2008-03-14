@@ -1,8 +1,8 @@
-# $FreeBSD$
+# $FreeBSD: ports/games/libggz/bsd.ggz.mk,v 1.1 2007/04/07 15:49:49 rafan Exp $
 
 # common settings
 
-GGZ_VERSION=	0.0.14
+GGZ_VERSION=	0.0.14.1
 
 MASTER_SITES=	\
 	http://mirrors.dotsrc.org/ggzgamingzone/ggz/%SUBDIR%/ \
