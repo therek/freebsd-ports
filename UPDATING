@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080314:
+  AFFECTS: users of security/nmapfe
+  AUTHOR: miwi@FreeBSD.org
+
+    nmapfe has been renamed to zenmap upstream. The port has also been
+    renamed. If you haven't already installed nmapfe, you need to:
+
+    portupgrade -o security/zenmap nmapfe\*
+
 20080313:
   AFFECTS: users of mail/ezmlm-web
   AUTHOR: hans@nordhaug.priv.no
@@ -6157,4 +6166,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.594 2008/03/12 10:56:27 stas Exp $
+$FreeBSD: ports/UPDATING,v 1.595 2008/03/13 03:34:15 rafan Exp $
