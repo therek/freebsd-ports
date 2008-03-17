@@ -2,7 +2,7 @@
 # Date created:		08 Nov 2006
 # Whom:			dinoex
 #
-# $FreeBSD: ports/mail/sendmail/bsd.milter.mk,v 1.1 2006/11/18 06:27:25 dinoex Exp $
+# $FreeBSD: ports/mail/sendmail/bsd.milter.mk,v 1.2 2007/02/02 20:17:17 dinoex Exp $
 #
 # a port shall includes this file after bsd.ports.pre.mk
 # .include "${PORTSDIR}/${PKGCATEGORY}/sendmail/bsd.milter.mk"
@@ -67,10 +67,12 @@ MILTERINC=	-I${MILTERBASE}/include
 MILTERRPATH=	${MILTERBASE}/lib
 MILTERLIB=	-L${MILTERBASE}/lib -rpath=${MILTERRPATH}
 
+.if !defined(WITHOUT_MILTER_CFLAGS)
 .if defined(CFLAGS)
 CFLAGS+=${MILTERINC}
 .else
 CFLAGS=${MILTERINC}
+.endif
 .endif
 
 
@@ -90,10 +92,12 @@ MILTERRPATH=	${DESTDIR}/usr/lib:${LOCALBASE}/lib
 MILTERLIB=	-rpath=${MILTERRPATH}
 .endif
 
+.if !defined(WITHOUT_MILTER_LDFLAGS)
 .if defined(LDFLAGS)
 LDFLAGS+=${MILTERLIB}
 .else
 LDFLAGS=${MILTERLIB}
+.endif
 .endif
 
 CONFIGURE_ENV+=	LDFLAGS="${LDFLAGS}"
