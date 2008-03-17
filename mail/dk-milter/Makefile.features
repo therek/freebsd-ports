@@ -4,7 +4,7 @@
 # This file is used to tune build time options.
 # Please refer FEATURES file distributed with the source for details.
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/dk-milter/Makefile.features,v 1.1 2007/06/02 14:46:40 dinoex Exp $
 #
 
 .if defined(WITH_ANTICIPATE_SENDMAIL_MUNGE) && !defined(WITHOUT_ANTICIPATE_SENDMAIL_MUNGE)
@@ -13,10 +13,6 @@ SITE_SUB+=	-e '/-D_FFR_ANTICIPATE_SENDMAIL_MUNGE/s|^dnl ||'
 
 .if defined(WITH_FLUSH_HEADERS) && !defined(WITHOUT_FLUSH_HEADERS)
 SITE_SUB+=	-e '/-D_FFR_FLUSH_HEADERS/s|^dnl ||'
-.endif
-
-.if defined(WITH_MULTIPLE_KEYS) && !defined(WITHOUT_MULTIPLE_KEYS)
-SITE_SUB+=	-e '/-D_FFR_MULTIPLE_KEYS/s|^dnl ||'
 .endif
 
 .if defined(WITH_REQUIRED_HEADERS) && !defined(WITHOUT_REQUIRED_HEADERS)
