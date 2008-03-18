@@ -7,6 +7,13 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20080318:
+  AFFECTS: users of audio/gnump3d
+  AUTHOR:  jadawin@FreeBSD.org
+
+  The layout of gnump3d 3.0 is changed, please read the documents and the
+  manual pages of gnump3d.
+
+20080318:
   AFFECTS: users of net/skype net/skype_devel
   AUTHOR: beech@FreeBSD.org
 
@@ -6193,4 +6200,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.599 2008/03/16 09:20:35 rafan Exp $
+$FreeBSD: ports/UPDATING,v 1.600 2008/03/18 08:46:41 beech Exp $
