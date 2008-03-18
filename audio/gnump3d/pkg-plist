@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/gnump3d/pkg-plist,v 1.26 2006/01/22 00:15:02 edwin Exp $
+@comment $FreeBSD: ports/audio/gnump3d/pkg-plist,v 1.27 2008/03/18 09:30:27 jadawin Exp $
 bin/gnump3d
 bin/gnump3d-index
 bin/gnump3d-top
