@@ -17,6 +17,7 @@ upgrades.
   AFFECTS: users of net/skype net/skype_devel
   AUTHOR: beech@FreeBSD.org
 
+  For FreeBSD versions 7.0 and above:
   It is now recommended (and will be required in future versions) to
   update to linux_base-fc6. Please do the following:
 
@@ -28,6 +29,11 @@ upgrades.
   6. Install emulation/linux_base-fc6
   4  Remount linprocfs (mount /compat/linux/proc)
   5. Add compat.linux.osrelease=2.6.16 to etc/sysctl.conf
+
+  For FreeBSD versions 5.x and 6.x:
+  Please use the legacy version net/skype12
+
+	portupgrade -o net/skype12 net/skype
 
 20080316:
   AFFECTS: users of net/iscsi-target
@@ -6200,4 +6206,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.600 2008/03/18 08:46:41 beech Exp $
+$FreeBSD: ports/UPDATING,v 1.601 2008/03/18 09:31:28 jadawin Exp $
