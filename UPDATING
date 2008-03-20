@@ -26,7 +26,7 @@ upgrades.
   3. Uninstall your current linux_base port
   4. Unload linux kernel module (kldunload linux.ko)
   5. Set appropriate sysctl (sysctl compat.linux.osrelease=2.6.16)
-  6. Install emulation/linux_base-fc6
+  6. Install emulators/linux_base-fc6
   4  Remount linprocfs (mount /compat/linux/proc)
   5. Add compat.linux.osrelease=2.6.16 to etc/sysctl.conf
 
@@ -6206,4 +6206,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.601 2008/03/18 09:31:28 jadawin Exp $
+$FreeBSD: ports/UPDATING,v 1.602 2008/03/18 19:52:50 beech Exp $
