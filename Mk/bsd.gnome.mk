@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.145 2008/03/24 03:49:19 marcus Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.447 2008/03/12 03:42:31 marcus Exp $
 #
@@ -712,6 +712,9 @@ FETCH_DEPENDS+=	${${component}_FETCH_DEPENDS}
 EXTRACT_DEPENDS+=${${component}_EXTRACT_DEPENDS}
 BUILD_DEPENDS+=	${${component}_BUILD_DEPENDS}
 #######################################################
+
+LIB_DEPENDS+=	${${component}_LIB_DEPENDS}
+RUN_DEPENDS+=	${${component}_RUN_DEPENDS}
 
 .if !defined(WITHOUT_HACK)
 .if defined(${component}_PREFIX)
