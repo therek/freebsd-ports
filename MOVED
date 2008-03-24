@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1562 2008/03/18 09:29:47 johans Exp $
+# $FreeBSD: ports/MOVED,v 1.1563 2008/03/21 16:27:29 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3440,3 +3440,5 @@ mail/claws-mail-maildir||2008-03-21|Has expired: no longer supported by develope
 x11/e17-module-devian||2008-03-21|Has expired: abandoned by developer
 x11/e17-module-engage||2008-03-21|Has expired: abandoned by developer
 x11/e17-module-eveil||2008-03-21|Has expired: abandoned by developer
+sysutils/hal-device-manager|sysutils/gnome-device-manager|2008-03-23|hal-device-manager has been retired
+security/gnome-keyring-manager|security/seahorse|2008-03-23|functionality has been rolled into seahorse

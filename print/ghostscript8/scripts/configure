@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/print/ghostscript-gpl/scripts/configure,v 1.42 2007/06/03 05:02:53 hrs Exp $
+# $FreeBSD$
 
 # configure - gs driver preconfiguration, manual driver selection
 # by Andreas Klemm <andreas@FreeBSD.org>
