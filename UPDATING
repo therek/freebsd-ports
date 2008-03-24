@@ -39,6 +39,10 @@ upgrades.
        gnome-keyring-manager\*
     # portmaster -a
 
+  Be sure to read in our known issues and solutions:
+
+    http://www.freebsd.org/gnome/docs/faq222.html#q4
+
 20080318:
   AFFECTS: users of audio/gnump3d
   AUTHOR:  jadawin@FreeBSD.org
@@ -6239,4 +6243,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.603 2008/03/20 12:11:56 lioux Exp $
+$FreeBSD: ports/UPDATING,v 1.604 2008/03/24 03:49:21 marcus Exp $
