@@ -1,11 +1,11 @@
 
-$FreeBSD$
+$FreeBSD: ports/sysutils/hpacucli/files/patch-hpacucli,v 1.1 2008/03/18 22:27:13 brooks Exp $
 
 --- hpacucli.orig
 +++ hpacucli
 @@ -1,3 +1,4 @@
 -`touch /var/run/CPQACU_MUTEX`
-+$!/bin/sh
++#!/bin/sh
 +touch /var/run/CPQACU_MUTEX
  export ACUXE_LOCK_FILES_DIR=/var/run/
  /usr/local/libexec/.hpacucli $*
