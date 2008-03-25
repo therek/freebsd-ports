@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/cherokee/files/cherokee.sh.in,v 1.2 2006/07/19 18:55:37 rafan Exp $
+# $FreeBSD: ports/www/cherokee-devel/files/cherokee.sh.in,v 1.4 2007/04/26 19:40:00 sat Exp $
 #
 # PROVIDE: cherokee
 # REQUIRE: DAEMON
