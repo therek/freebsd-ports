@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.5 2006/05/11 17:23:49 jylefort Exp $
+# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.6 2006/05/17 20:56:52 ahze Exp $
 
 PARENTDIR?=	${.CURDIR:S|-reference$||}
 REFERENCE_PORT=	${PKGORIGIN:S|-reference$||}
@@ -19,7 +19,7 @@ DISTNAME:=	${PORTNAME}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}
 .if defined(MASTER_SITE_SUBDIR)
 MASTER_SITE_SUBDIR:=	${MASTER_SITE_SUBDIR}
 .endif
-PORTNAME:=	${PORTNAME}-reference
+PKGNAMESUFFIX:=	${PKGNAMESUFFIX}-reference
 .if defined(LATEST_LINK)
 LATEST_LINK:=	${LATEST_LINK}-reference
 .endif
