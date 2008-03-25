@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/oidentd/files/oidentd.sh,v 1.2 2004/10/15 17:44:18 oliver Exp $
+# $FreeBSD: ports/security/oidentd/files/oidentd.sh,v 1.3 2006/02/20 20:47:39 dougb Exp $
 #
 
 # PROVIDE: oidentd
