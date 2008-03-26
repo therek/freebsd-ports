@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080326:
+  AFFECTS: users of emulators/linux_base-f8
+  AUTHOR: bsam@FreeBSD.org
+
+  The new port is used just like emulators/linux_base-fc6. Please,
+  read carefully record 20070327 about emulators/linux_base-fc6.
+
 20080323:
   AFFECTS: Gstreamer users
   AUTHOR: multimedia@FreeBSD.org
@@ -6243,4 +6250,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.604 2008/03/24 03:49:21 marcus Exp $
+$FreeBSD: ports/UPDATING,v 1.605 2008/03/24 16:38:25 mezz Exp $
