@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/ports-mgmt/bpkg/files/bpkg.sh.in,v 1.10 2007/12/27 22:51:27 miwi Exp $
+# $FreeBSD: ports/ports-mgmt/bpkg/files/bpkg.sh.in,v 1.11 2008/03/03 16:41:38 bsam Exp $
 
 #  Copyright (c) 2007 Andy Kosela <andy.kosela@gmail.com>
 #  All rights reserved.
@@ -701,9 +701,8 @@ pkg_backup() {
 
 	pkg_install=`pkg_info -xoQ $pkg | cut -d: -f1 | awk '{ORS=" " ; print}'`
 	echo "Creating backup package(s) "$pkg_install"in /usr/obj/"
-	for e in `pkg_info -xoq $pkg`; do
-		cd /usr/obj/ && pkg_create -xb $e
-	done
+	e=`pkg_info -xoQ $pkg | cut -d: -f1`
+	cd /usr/obj/ && pkg_create -xb $e 1>/dev/null 2>&1
 	echo "Done."
 	exit 0
 }	
