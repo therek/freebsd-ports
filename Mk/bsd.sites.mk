@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.439 2008/03/06 21:32:03 edwin Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.440 2008/03/13 11:21:27 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -135,6 +135,13 @@ MASTER_SITE_CHEESESHOP+=	\
 MASTER_SITE_COMP_SOURCES+=	\
 	ftp://gatekeeper.dec.com/pub/usenet/comp.sources.%SUBDIR%/ \
 	ftp://ftp.uu.net/usenet/comp.sources.%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_CRITICAL)
+MASTER_SITE_CRITICAL+=	\
+	http://critical.ch/distfiles/%SUBDIR%/ \
+	http://energy.critical.ch/distfiles/%SUBDIR%/ \
+	http://sauerkraut.critical.ch/distfiles/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_CSME)
