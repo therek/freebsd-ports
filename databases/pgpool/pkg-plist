@@ -1,4 +1,6 @@
-@comment $FreeBSD: ports/databases/pgpool/pkg-plist,v 1.1 2005/11/03 12:42:48 mnag Exp $
+@comment $FreeBSD: ports/databases/pgpool/pkg-plist,v 1.2 2007/02/11 03:35:13 nork Exp $
 bin/pgpool
 etc/pgpool.conf.sample
 etc/pool_hba.conf.sample
+share/pgpool/pgpool.pam
+@dirrm share/pgpool
