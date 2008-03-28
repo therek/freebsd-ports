@@ -1,6 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-rpm-build-perl/pkg-plist,v 1.2 2006/08/15 16:40:31 rafan Exp $
 bin/perl.prov
+bin/perl.prov.files
 bin/perl.req
+bin/perl.req.files
 %%SITE_PERL%%/B/PerlReq.pm
 %%SITE_PERL%%/PerlReq/Utils.pm
 %%SITE_PERL%%/fake.pm
