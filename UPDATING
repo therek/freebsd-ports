@@ -17,7 +17,7 @@ upgrades.
   AFFECTS: users of www/phpadsnew
   AUTHOR: beech@FreeBSD.org
 
-  Phpadsnew has been replaced with www/openx. 
+  Phpadsnew has been replaced with www/openx.
   To upgrade please do the following:
 
   1. Install www/openx
@@ -6274,4 +6274,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.608 2008/03/29 19:50:39 beech Exp $
+$FreeBSD: ports/UPDATING,v 1.609 2008/03/30 00:18:07 miwi Exp $
