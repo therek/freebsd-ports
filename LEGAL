@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.573 2008/03/19 13:34:00 jadawin Exp $
+# $FreeBSD: ports/LEGAL,v 1.574 2008/03/19 13:49:36 jadawin Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -739,3 +739,4 @@ send-*			net-mgmt/send		Not redistributable, license
 rapid-*			math/rapid		No commercial use
 dtiquery-*		science/dtiquery	License agreement is required
 clustalw-*		biology/clustalw	No commercial use
+nttcp-*			benchmark/nttcp		No commercial use
