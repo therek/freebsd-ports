@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/qmail/files/pkg-install.in,v 1.5 2008/01/21 17:49:27 garga Exp $
+# $FreeBSD: ports/mail/qmail/files/pkg-install.in,v 1.6 2008/01/24 16:33:20 garga Exp $
 #
 
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin
@@ -72,7 +72,9 @@ elif [ "$2" = "POST-INSTALL" ]; then
 
 	%%RCDLINK%%ln -s ${PREFIX}/rc %%LOCALBASE%%/etc/rc.d/qmail.sh
 
-	if ! touch ${PREFIX}/alias/.qmail-{postmaster,root,mailer-daemon}; then
+	if ! touch ${PREFIX}/alias/.qmail-postmaster \
+		   ${PREFIX}/alias/.qmail-root \
+		   ${PREFIX}/alias/.qmail-mailer-daemon; then
 		echo "Failed to create files :"
 		echo "  ${PREFIX}/alias/.qmail-postmaster"
 		echo "  ${PREFIX}/alias/.qmail-root"
