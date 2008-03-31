@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.441 2008/03/27 16:43:21 ehaupt Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.442 2008/03/31 14:58:22 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -539,8 +539,6 @@ MASTER_SITE_GNOME+=	\
 	ftp://ftp.cse.buffalo.edu/pub/Gnome/%SUBDIR%/ \
 	http://ftp.unina.it/pub/linux/GNOME/%SUBDIR%/ \
 	http://www.gtlib.cc.gatech.edu/pub/gnome/%SUBDIR%/ \
-	http://archive.progeny.com/GNOME/%SUBDIR%/ \
-	http://www.zentek-international.com/mirrors/gnome/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/X/gnome/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/gnome/&,} \
 	ftp://ftp.kddlabs.co.jp/pub/GNOME/%SUBDIR%/ \
@@ -1476,7 +1474,6 @@ MASTER_SITE_XFCE+= \
 MASTER_SITE_XFREE+= \
 	http://www.gtlib.cc.gatech.edu/pub/XFree86/%SUBDIR%/source/ \
 	ftp://ftp.xfree86.org/pub/XFree86/%SUBDIR%/source/ \
-	ftp://archive.progeny.com/XFree86/%SUBDIR%/source/ \
 	ftp://ftp.dti.ad.jp/pub/X/XFree86/XFree86/%SUBDIR%/source/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,XFree86/&/source,} \
 	ftp://ftp.fit.vutbr.cz/pub/XFree86/%SUBDIR%/source/ \
