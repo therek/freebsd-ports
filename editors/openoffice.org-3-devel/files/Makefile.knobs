@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.46 2007/12/15 10:11:14 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.47 2008/03/30 00:00:51 maho Exp $
 
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
 
@@ -49,11 +49,7 @@ CONFIGURE_ARGS+=	--with-lang=${LOCALIZED_LANG}
 .endif
 
 .if defined(WITH_DEBUG)
-.if ${WITH_DEBUG} == 2
-CONFIGURE_ARGS+=	--enable-debug
-.else
-CONFIGURE_ARGS+=	--enable-symbols
-.endif
+CONFIGURE_ARGS+=	--enable-debug --enable-symbols=TRUE --enable-dbgutil
 .endif
 
 pre-fetch:
@@ -75,10 +71,8 @@ pre-fetch:
 	@${ECHO} "OPTIONS:"
 .if !defined(WITH_DEBUG)
 	@${ECHO}
-	@${ECHO} "You can compile OOo with debug symbols with WITH_DEBUG=1"
-	@${ECHO}
-	@${ECHO} "If you set WITH_DEBUG=2, you add internal"
-	@${ECHO} "OOo debug support."
+	@${ECHO} "You can compile OOo with debug symbols/supports with"
+	@${ECHO} "make -DWITH_DEBUG"
 .endif
 .if !defined(WITHOUT_MOZILLA)
 	@${ECHO}
