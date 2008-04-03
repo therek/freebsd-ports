@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.knobs,v 1.48 2008/04/03 07:34:49 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.knobs,v 1.49 2008/04/03 07:38:41 maho Exp $
 
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
 
@@ -8,6 +8,13 @@ CONFIGURE_ARGS+=	--with-vba-package-format="builtin"
 
 .if defined(WITH_KDE)
 CONFIGURE_ARGS+=	--enable-kde QTDIR="${QT_PREFIX}"
+.endif
+
+.if defined(WITHOUT_CUPS)
+CONFIGURE_ARGS+=	--enable-cups=no
+.else
+LIB_DEPENDS+=		cups.2:${PORTSDIR}/print/cups-base
+CONFIGURE_ARGS+=	--enable-cups=yes
 .endif
 
 .if defined(WITHOUT_MOZILLA)
@@ -90,6 +97,11 @@ pre-fetch:
 	@${ECHO} "make -DWITH_TTF_BYTECODE_ENABLED"
 	@${ECHO} "See http://www.freetype.org/patents.html for details"
 .endif
+.endif
+.if !defined(WITHOUT_CUPS)
+	@${ECHO}
+	@${ECHO} "You can compile OOo without CUPS support with"
+	@${ECHO} "make -DWITHOUT_CUPS"
 .endif
 .if !defined(WITH_KDE)
 	@${ECHO}
