@@ -1,4 +1,4 @@
-$FreeBSD: ports/audio/mma/files/patch-cp-install,v 1.1 2007/03/11 09:51:34 nivit Exp $
+$FreeBSD: ports/audio/mma/files/patch-cp-install,v 1.2 2007/08/06 13:43:58 nivit Exp $
 --- cp-install	Wed Mar  7 22:17:56 2007
 +++ cp-install.port	Sat Mar 10 21:47:41 2007
 @@ -42,7 +42,7 @@
@@ -42,7 +42,7 @@ $FreeBSD: ports/audio/mma/files/patch-cp-install,v 1.1 2007/03/11 09:51:34 nivit
  ######## Copy the html docs
  
 -print "Copying HTML documentation to", dest
-+if not os.getenv('NOPORTDOCS'):
++if not os.environ.has_key('NOPORTDOCS'):
 +    docsdir = '%%DOCSDIR%%'
 +    print "Copying HTML documentation to", docsdir
 +    shutil.copytree( "docs", docsdir)
