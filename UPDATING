@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080403:
+  AFFECTS: users of emulators/qemu and emulators/qemu-devel
+  AUTHOR: nox@FreeBSD.org
+
+  The default configuration location (qemu-ifup script etc.) has been
+  changed from /etc to ${PREFIX}/etc (usually /usr/local/etc).  Move your
+  files accordingly.
+
 20080330:
   AFFECTS: users of www/mediawiki
   AUTHOR: miwi@FreeBSD.org
@@ -6274,4 +6282,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.609 2008/03/30 00:18:07 miwi Exp $
+$FreeBSD: ports/UPDATING,v 1.610 2008/03/30 00:20:48 miwi Exp $
