@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 # generate full build shell script for OpenOffice.org
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2-devel/files/generate.pl,v 1.9 2006/11/12 22:11:34 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2-devel/files/generate.pl,v 1.10 2008/04/03 08:02:08 maho Exp $
 
 print "#!/bin/csh\n";
 print "make deinstall clean\n";
@@ -12,6 +12,7 @@ print "bzip2 log.en\n";
 print "make deinstall clean\n";
 
 print "/usr/bin/time -h make ALL_LOCALIZED_LANGS=yes >& log.all\n";
+print "bzip2 log.all\n";
 
 open ( FILE,  "< Makefile.localized") ;
 while(<FILE>){
