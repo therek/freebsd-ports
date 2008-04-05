@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.24 2008/04/05 14:55:43 mnag Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.25 2008/04/05 15:58:47 mnag Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -391,7 +391,7 @@ IGNORE=	${_IGNORE_MSG}
 
 .if ${USE_SQLITE:L} == "yes"
 _SQLITE_VER=	3
-.endfi
+.endif
 
 # USE_SQLITE is specified incorrectly, so mark this as IGNORE
 .if ${_SQLITE_VER} == "3"
