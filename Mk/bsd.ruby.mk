@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.166 2008/04/06 08:58:02 stas Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.167 2008/04/06 09:25:26 stas Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -167,7 +167,7 @@ RUBY?=			${LOCALBASE}/bin/${RUBY_NAME}
 # Ruby 1.8
 #
 RUBY_RELVERSION=	1.8.6
-RUBY_PORTREVISION=	1
+RUBY_PORTREVISION=	2
 RUBY_PORTEPOCH=		1
 RUBY_PATCHLEVEL=	111
 
