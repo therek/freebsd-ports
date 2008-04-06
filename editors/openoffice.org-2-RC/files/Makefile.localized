@@ -1,6 +1,6 @@
 # localized makefile
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.localized,v 1.15 2007/01/07 12:45:06 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.localized,v 1.16 2008/04/03 07:38:41 maho Exp $
 ################################################################
 #See solenv/inc/postset.mk for details	
 ################################################################
@@ -397,7 +397,7 @@ BUILD_DEPENDS+=	${PREFIX}/share/fonts/TrueType/bsmi00lp.ttf:${PORTSDIR}/chinese/
 LANG_PKGNAME=	${LOCALIZED_LANG}
 .endif
 ################################################################
-.if ${LOCALIZED_LANG} == "all"
+.if ${LOCALIZED_LANG} == "alllangs"
 ALL_LOCALIZED_LANGS=yes
 PKGNAMESUFFIX=	-alllangs
 .endif

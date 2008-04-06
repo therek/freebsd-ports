@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.knobs,v 1.49 2008/04/03 07:38:41 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2-RC/files/Makefile.knobs,v 1.50 2008/04/03 21:30:51 maho Exp $
 
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
 
@@ -118,10 +118,10 @@ pre-fetch:
 	@${ECHO} "You can compile OOo with evolution2 support by"
 	@${ECHO} "make -DWITH_EVOLUTION2"
 .endif
-.if ${LOCALIZED_LANG} != "all"
+.if ${LOCALIZED_LANG} != "alllangs"
 	@${ECHO}
 	@${ECHO} "You can compile OOo with full localized language support by"
-	@${ECHO} "make LOCALIZED_LANG=all"
+	@${ECHO} "make LOCALIZED_LANG=alllangs"
 .endif
 	@${ECHO}
 	@${ECHO} "You can select the language for OOo by making it with:"
@@ -141,7 +141,7 @@ pre-fetch:
 	@${ECHO} "To build OOo, you should have a lot"
 .if defined(WITH_DEBUG)
 	@${ECHO} "of free diskspace (~ 18GB) and memory (~ 2GB)."
-.elif ${LOCALIZED_LANG} == "all"
+.elif ${LOCALIZED_LANG} == "alllangs"
 	@${ECHO} "of free diskspace (~ 35GB) and memory (~ 2GB)."
 .else
 	@${ECHO} "of free diskspace (~ 11GB) and memory (~ 2GB)."
