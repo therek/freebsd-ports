@@ -19,7 +19,7 @@ upgrades.
   portmaster -u sysutils/tracker
 
   portupgrade users:
-  portupgrade -o sysutils/tracker-client tacker
+  portupgrade -o sysutils/tracker-client tracker
   portupgrade -u sysutils/tracker
 
 20080405:
@@ -6312,4 +6312,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.612 2008/04/05 14:56:15 mnag Exp $
+$FreeBSD: ports/UPDATING,v 1.613 2008/04/05 17:02:15 ahze Exp $
