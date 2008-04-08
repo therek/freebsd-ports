@@ -141,7 +141,7 @@ upgrades.
   5. Install emulators/linux_base-fc6
   6  Remount linprocfs (mount /compat/linux/proc)
   7. Add compat.linux.osrelease=2.6.16 to etc/sysctl.conf
-  8. Add OVERRIDE_LINUX_BASE_PORT=f6 to /etc/make.conf
+  8. Add OVERRIDE_LINUX_BASE_PORT=fc6 to /etc/make.conf
 
   Note: These instructions also apply to linux_base-f8, please use the same
   osrelease.
@@ -6322,4 +6322,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.614 2008/04/07 04:46:23 lioux Exp $
+$FreeBSD: ports/UPDATING,v 1.615 2008/04/08 03:41:23 araujo Exp $
