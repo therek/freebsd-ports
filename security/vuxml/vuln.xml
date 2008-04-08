@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1587 2008/04/06 08:50:37 rafan Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1588 2008/04/06 11:47:54 rafan Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -167,6 +167,12 @@ Note:  Please add new entries to the beginning of this file.
 	<range><lt>1.1.9</lt></range>
       </package>
       <package>
+	<name>flock</name>
+	<name>linux-flock</name>
+	<range><lt>1.1.1</lt></range>
+      </package>
+      <package>
+	<name>linux-firefox-devel</name>
 	<name>linux-seamonkey-devel</name>
 	<range><gt>0</gt></range>
       </package>
@@ -215,6 +221,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2008-03-26</discovery>
       <entry>2008-03-30</entry>
+      <modified>2008-04-08</modified>
     </dates>
   </vuln>
 
