@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/mail/dovecot/pkg-install,v 1.9 2006/12/01 09:39:34 pav Exp $
+#	$FreeBSD: ports/mail/dovecot/pkg-install,v 1.10 2007/01/07 23:50:55 pav Exp $
 #
 # ex:ts=4
 
@@ -85,7 +85,7 @@ create_account() {
 case $2 in
 
 PRE-INSTALL)
-	create_account Dovecot dovecot:${DOVECOT_UID:-143} dovecot:${DOVECOT_GID:-143} "Dovecot User" /var/empty /sbin/nologin
+	create_account Dovecot dovecot:${DOVECOT_UID:-143} dovecot:${DOVECOT_GID:-143} "Dovecot User" /var/empty /usr/sbin/nologin
 	;;
 
 POST-INSTALL)
