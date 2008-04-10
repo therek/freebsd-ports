@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.442 2008/03/31 14:58:22 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.443 2008/03/31 15:00:38 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1511,7 +1511,7 @@ MASTER_SITE_XORG+= \
 # Macro magic
 
 MASTER_SITES_ABBREVS=	CPAN:PERL_CPAN SF:SOURCEFORGE SFE:SOURCEFORGE_EXTENDED \
-			RF:RUBYFORGE
+			SFJP:SOURCEFORGE_JP RF:RUBYFORGE
 MASTER_SITES_SUBDIRS=	\
 			APACHE_JAKARTA:${PORTNAME:S,-,/,}/source \
 			BERLIOS:${PORTNAME:L} \
