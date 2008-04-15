@@ -131,7 +131,7 @@ upgrades.
   AUTHOR: beech@FreeBSD.org
 
   For FreeBSD versions 7.0 and above:
-  It is now recommended (and will be required in future versions) to
+  It is recommended (and is now required for skype-devel) to
   update to linux_base-fc6. Please do the following:
 
   1. Make sure there are no running linux applications.
@@ -6322,4 +6322,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.615 2008/04/08 03:41:23 araujo Exp $
+$FreeBSD: ports/UPDATING,v 1.616 2008/04/08 20:55:52 beech Exp $
