@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.443 2008/03/31 15:00:38 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.444 2008/04/10 20:32:51 miwi Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -479,7 +479,6 @@ MASTER_SITE_GENTOO+=	\
 	http://mirrors.sec.informatik.tu-darmstadt.de/gentoo/%SUBDIR%/ \
 	http://ftp.uni-erlangen.de/pub/mirrors/gentoo/%SUBDIR%/ \
 	http://darkstar.ist.utl.pt/gentoo/%SUBDIR%/ \
-	http://ftp.caliu.info/pub/gentoo/%SUBDIR%/ \
 	http://gentoo.inode.at/%SUBDIR%/ \
 	http://ftp.rhnet.is/pub/gentoo/%SUBDIR%/ \
 	http://gentoo.mirror.sdv.fr/%SUBDIR%/ \
@@ -506,7 +505,6 @@ MASTER_SITE_GENTOO+=	\
 	ftp://linux.rz.ruhr-uni-bochum.de/gentoo-mirror/%SUBDIR%/ \
 	ftp://ftp.uni-erlangen.de/pub/mirrors/gentoo/%SUBDIR%/ \
 	ftp://darkstar.ist.utl.pt/pub/gentoo/%SUBDIR%/ \
-	ftp://ftp.caliu.info/pub/gentoo/%SUBDIR%/ \
 	ftp://gentoo.inode.at/source/%SUBDIR%/ \
 	ftp://ftp.rhnet.is/pub/gentoo/%SUBDIR%/ \
 	ftp://files.gentoo.gr/%SUBDIR%/ \
