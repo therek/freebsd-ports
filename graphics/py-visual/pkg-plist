@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/py-visual/pkg-plist,v 1.4 2007/02/28 12:39:39 nivit Exp $
+@comment $FreeBSD: ports/graphics/py-visual/pkg-plist,v 1.5 2007/03/09 17:15:05 nivit Exp $
 bin/vpython
 %%PYTHON_SITELIBDIR%%/cvisualmodule.la
 %%PYTHON_SITELIBDIR%%/cvisualmodule.so
@@ -87,6 +87,7 @@ bin/vpython
 %%PORTDOCS%%%%DOCSDIR%%/visual/texture-opacity-lighting.html
 %%PORTDOCS%%%%DOCSDIR%%/visual/vector.html
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/Tk-Visual.py
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/boxlighttest.py
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bounce.py
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bounce2.py
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/colorsliders.py
@@ -109,6 +110,7 @@ bin/vpython
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/labels.py
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/lathe.py
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/lorenz.py
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/mandelbrot.py
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/orbit.py
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/planar.py
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/randombox.py
