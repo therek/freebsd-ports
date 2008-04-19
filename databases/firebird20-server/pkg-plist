@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/firebird2-server/pkg-plist,v 1.17 2006/11/13 19:57:45 skv Exp $
+@comment $FreeBSD: ports/databases/firebird2-server/pkg-plist,v 1.18 2008/04/19 01:15:56 edwin Exp $
 bin/fb_inet_server
 bin/fb_lock_mgr
 bin/fb_lock_print
@@ -27,7 +27,7 @@ libexec/firebird/udf/ib_udf2.sql
 %%LOCALSTATEDIR%%/security2.fdb.sample
 @exec [ -f %D/%%LOCALSTATEDIR%%/security2.fdb ] || cp %D/%F %D/%%LOCALSTATEDIR%%/security2.fdb
 %%LOCALSTATEDIR%%/help/help.fdb
-@rmtry %%LOCALSTATEDIR%%/firebird.log
+@unexec [ -s %D/%%LOCALSTATEDIR%%/firebird.log ] || rm -f %D/%%LOCALSTATEDIR%%/firebird.log
 @rmtry %%LOCALSTATEDIR%%/isc_event1.`hostname`
 @rmtry %%LOCALSTATEDIR%%/isc_init1.`hostname`
 @rmtry %%LOCALSTATEDIR%%/isc_lock1.`hostname`
