@@ -5,7 +5,7 @@
 # Date created:		28 March 2006
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.17 2007/07/03 08:10:43 sat Exp $
+# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.18 2007/12/14 19:16:16 sat Exp $
 #
 
 # XPI_ID		- Extension id, might be in {12345-...} or dev@org format
@@ -132,8 +132,7 @@ USE_XPI=	${WITH_XPI_APPS}
 USE_XPI=	${XPI_APPS_ALL_WC}
 .endif
 
-XPI_APPS?=	${USE_XPI:S.^.${LOCALBASE}/lib/.:S.$./extensions.} \
-			${USE_XPI:S.^.${X11BASE}/lib/.:S.$./extensions.}
+XPI_APPS?=	${USE_XPI:S.^.${LOCALBASE}/lib/.:S.$./extensions.}
 XPI_SLDIRS_ALL=	${XPI_APPS_ALL:S.^.${XPI_SLDIR}/.}
 XPI_SLDIRS=		${USE_XPI:S.^.${XPI_SLDIR}/.}
 XPI_LINKFARMS=	${XPI_APPS} ${XPI_SLDIRS}

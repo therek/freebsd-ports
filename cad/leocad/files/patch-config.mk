@@ -1,4 +1,4 @@
-$FreeBSD: ports/cad/leocad/files/patch-config.mk,v 1.1 2002/03/03 00:40:21 petef Exp $
+$FreeBSD: ports/cad/leocad/files/patch-config.mk,v 1.2 2006/12/01 00:25:00 kris Exp $
 
 --- config.mk.orig	Mon Sep 18 21:06:37 2000
 +++ config.mk	Sat Mar  2 19:21:24 2002
@@ -22,7 +22,7 @@ $FreeBSD: ports/cad/leocad/files/patch-config.mk,v 1.1 2002/03/03 00:40:21 petef
  OS 	   := -DLC_LINUX
  OSDIR 	   := linux
 -PREFIX     := /usr/local
-+PREFIX     := %%X11BASE%%
++PREFIX     := %%LOCALBASE%%
  GTK_CONFIG := gtk12-config
 -CPPFLAGS   += -L/usr/local/lib
 +CPPFLAGS   += ${CFLAGS} -L%%LOCALBASE%%/lib -I%%LOCALBASE%%/include %%PTHREAD_CFLAGS%%

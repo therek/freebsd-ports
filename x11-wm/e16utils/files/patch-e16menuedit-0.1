@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/x11-wm/e16utils/files/patch-e16menuedit-0.1,v 1.4 2006/10/04 21:23:07 alepulver Exp $
+$FreeBSD: ports/x11-wm/e16utils/files/patch-e16menuedit-0.1,v 1.5 2008/01/21 13:00:37 miwi Exp $
 
 --- Makefile.orig	Mon Apr 17 05:40:03 2000
 +++ Makefile	Sat Aug  3 02:33:28 2002
@@ -8,7 +8,7 @@ $FreeBSD: ports/x11-wm/e16utils/files/patch-e16menuedit-0.1,v 1.4 2006/10/04 21:
  
  LIB_DIRS = \
 -    -L/usr/local/lib -L/usr/X11R6/lib -L/usr/X11/lib -L/usr/dt/lib
-+    -L${LOCALBASE}/lib -L${X11BASE}/lib
++    -L${LOCALBASE}/lib
  LIBS     = \
 -    `gtk-config --libs` -lgdbm -lgdk_imlib
 -CFLAGS   = \

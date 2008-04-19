@@ -1,4 +1,4 @@
-$FreeBSD: ports/java/jdk16/files/patch-deploy-common-Defs-bsd.gmk,v 1.1 2007/08/05 20:39:48 glewis Exp $
+$FreeBSD: ports/java/jdk16/files/patch-deploy-common-Defs-bsd.gmk,v 1.2 2007/10/28 20:47:42 glewis Exp $
 
 --- ../../deploy/make/common/Defs-bsd.gmk.orig	Sun Jul 29 23:03:29 2007
 +++ ../../deploy/make/common/Defs-bsd.gmk	Sun Jul 29 23:03:29 2007
@@ -8,7 +8,7 @@ $FreeBSD: ports/java/jdk16/files/patch-deploy-common-Defs-bsd.gmk,v 1.1 2007/08/
  PATH_SEP       = /
 -X11DIR         = /usr/X11R6
 -LOCALDIR       = /usr/local
-+X11DIR         = ${X11BASE}
++X11DIR         = ${LOCALBASE}
 +LOCALDIR       = ${LOCALBASE}
  ifneq ($(OS_VENDOR), NetBSD)
  LIBS           = -L$(X11DIR)/lib -lX11 -L$(LOCALDIR)/lib -liconv

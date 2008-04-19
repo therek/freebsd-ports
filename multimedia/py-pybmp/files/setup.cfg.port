@@ -1,6 +1,6 @@
 #
-# $FreeBSD$
+# $FreeBSD: ports/multimedia/py-pybmp/files/setup.cfg.port,v 1.1 2006/06/07 19:30:25 pav Exp $
 #
 [build_ext]
-include-dirs=%%X11BASE%%/include
-library-dirs=%%X11BASE%%/lib
+include-dirs=%%LOCALBASE%%/include
+library-dirs=%%LOCALBASE%%/lib

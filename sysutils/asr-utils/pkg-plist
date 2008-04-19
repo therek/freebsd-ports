@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/asr-utils/pkg-plist,v 1.3 2005/06/07 09:12:44 erwin Exp $
+@comment $FreeBSD: ports/sysutils/asr-utils/pkg-plist,v 1.4 2005/07/28 18:01:21 erwin Exp $
 %%X11%%bin/dptmgr
 %%X11%%bin/dptscom
 bin/raidutil
@@ -17,5 +17,4 @@ dpt/dptcom
 dpt/dptcom.chk
 dpt/dptsig
 @dirrm dpt
-%%LIBXM%%@cwd %%X11BASE%%
 %%LIBXM%%lib/libXm.so.1

@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/games/wmfortune/files/patch-Makefile,v 1.1 2002/05/30 22:53:34 petef Exp $
 
 --- Makefile.orig	Thu May 16 10:51:45 2002
 +++ Makefile	Thu May 16 10:53:56 2002
@@ -8,8 +8,8 @@ $FreeBSD$
 -############################
 +CC ?= gcc
 +CFLAGS += -c -Wall
-+INCDIR = -I${X11BASE}/include -I/usr/local/include
-+LIBDIR = -L${X11BASE}/lib
++INCDIR = -I${LOCALBASE}/include -I/usr/local/include
++LIBDIR = -L${LOCALBASE}/lib
 +LIBS   = -lXpm -lXext -lX11
 +OBJS =  wmfortune.o dockapp.o
  

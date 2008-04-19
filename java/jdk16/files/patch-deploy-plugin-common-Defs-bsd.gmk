@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk16/files/patch-deploy-plugin-common-Defs-bsd.gmk,v 1.1 2007/08/05 20:39:48 glewis Exp $
 
 --- ../../deploy/make/plugin/common/Defs-bsd.gmk.orig	Sun Jul 29 23:03:29 2007
 +++ ../../deploy/make/plugin/common/Defs-bsd.gmk	Sun Jul 29 23:03:29 2007
@@ -7,4 +7,4 @@ $FreeBSD$
  PLUGIN_PLATFORM_SRC := $(DEPLOY_TOPDIR)/src/plugin/solaris
  
 -OTHER_LDFLAGS = -L/usr/X11R6/lib
-+OTHER_LDFLAGS = -L${X11BASE}/lib
++OTHER_LDFLAGS = -L${LOCALBASE}/lib

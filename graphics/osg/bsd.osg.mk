@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/graphics/osg/bsd.osg.mk,v 1.2 2006/12/03 10:44:49 jylefort Exp $
 
 MASTER_SITES=	http://www.openscenegraph.org/downloads/snapshots/
 DISTNAME=	OSG_OP_OT-1.2
@@ -27,7 +27,7 @@ post-patch: osg-post-patch
 osg-post-patch:
 	@${REINPLACE_CMD} -Ee 's|-O2|${CXXFLAGS}|; \
 		s|(-I\|-L\|-rpath )/usr/local|\1${LOCALBASE}|; \
-		s|(-I\|-L\|-rpath )/usr/X11R6|\1${X11BASE}|' \
+		s|(-I\|-L\|-rpath )/usr/X11R6|\1${LOCALBASE}|' \
 		${WRKSRC}/Make/makedefs
 	@${REINPLACE_CMD} -e 's|DOF=$$(OPTF)|DOF="$$(OPTF)"|' \
 		${WRKSRC}/Make/makerules

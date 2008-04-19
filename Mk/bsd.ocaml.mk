@@ -1,7 +1,7 @@
 # ex:ts=4
 #
 # $MBSDlabs: portmk/bsd.ocaml.mk,v 1.18 2006/08/06 18:47:23 stas Exp $
-# $FreeBSD: ports/lang/ocaml/bsd.ocaml.mk,v 1.3 2006/08/07 06:55:27 itetcu Exp $
+# $FreeBSD: ports/Mk/bsd.ocaml.mk,v 1.1 2007/03/14 04:05:25 linimon Exp $
 #
 # bsd.ocaml.mk - Support for the Objective Caml language packages
 #
@@ -177,7 +177,7 @@ ocaml-wash:
 #
 .if !target(add-plist-post)
 add-plist-post:
-. if (${PREFIX} != ${LOCALBASE} && ${PREFIX} != ${X11BASE} && \
+. if (${PREFIX} != ${LOCALBASE} && \
 	${PREFIX} != ${LINUXBASE} && ${PREFIX} != "/usr")
 	@${ECHO_CMD} "@unexec rmdir %D 2> /dev/null || true" >> ${TMPPLIST}
 . else

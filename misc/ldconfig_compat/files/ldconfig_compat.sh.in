@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/ldconfig_compat/files/ldconfig_compat.sh.in,v 1.3 2006/01/18 09:42:02 flz Exp $
+# $FreeBSD: ports/misc/ldconfig_compat/files/ldconfig_compat.sh.in,v 1.4 2006/06/26 14:38:56 flz Exp $
 #
 
 # PROVIDE: ldconfig_compat
@@ -15,8 +15,8 @@ start_cmd="ldconfig_start"
 stop_cmd=":"
 
 load_rc_config $name
-: ${ldconfig_local_dirs="%%PREFIX%%/%%LDCONFIG_DIR%% %%X11BASE%%/%%LDCONFIG_DIR%%"}
-: ${ldconfig_local32_dirs="%%PREFIX%%/%%LDCONFIG32_DIR%% %%X11BASE%%/%%LDCONFIG32_DIR%%"}
+: ${ldconfig_local_dirs="%%PREFIX%%/%%LDCONFIG_DIR%% %%LOCALBASE%%/%%LDCONFIG_DIR%%"}
+: ${ldconfig_local32_dirs="%%PREFIX%%/%%LDCONFIG32_DIR%% %%LOCALBASE%%/%%LDCONFIG32_DIR%%"}
 
 ldconfig_start()
 {

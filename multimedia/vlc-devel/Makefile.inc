@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.17 2007/06/04 12:32:00 ahze Exp $
+# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.18 2008/02/25 01:09:45 ahze Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -218,7 +218,7 @@
 #  Disable ALL streaming plugins.
 #
 # WITH_VLC_DEFAULT_FONT=/path/to/font
-#  default: ${X11BASE}/lib/X11/fonts/bitstream-vera/Vera.ttf
+#  default: ${LOCALBASE}/lib/X11/fonts/bitstream-vera/Vera.ttf
 #  This option lets you change the default font for subtitles
 #
 # NOPORTDOCS=yes

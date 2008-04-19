@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/x11-wm/wmanager/files/patch-aa,v 1.6 2003/11/03 21:14:21 krion Exp $
+$FreeBSD: ports/x11-wm/wmanager/files/patch-aa,v 1.7 2003/11/06 23:30:08 anholt Exp $
 
 --- Makefile.orig	Mon Nov 15 00:29:24 1999
 +++ Makefile	Sat Oct 26 06:02:46 2002
@@ -11,8 +11,8 @@ $FreeBSD: ports/x11-wm/wmanager/files/patch-aa,v 1.6 2003/11/03 21:14:21 krion E
 +bindir	= $(PREFIX)/bin
 +incdir	= ./inc
 +srcdir	= ./src
-+fltkinc	= $(X11BASE)/include
-+x11lib	= $(X11BASE)/lib
++fltkinc	= $(LOCALBASE)/include
++x11lib	= $(LOCALBASE)/lib
  
  # compiler settings
 -CXX       = g++ 

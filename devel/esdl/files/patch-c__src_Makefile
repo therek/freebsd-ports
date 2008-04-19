@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/devel/esdl/files/patch-c__src_Makefile,v 1.6 2005/12/02 23:25:49 olgeni Exp $
 
 --- c_src/Makefile.orig
 +++ c_src/Makefile
@@ -8,7 +8,7 @@ $FreeBSD$
  else
  
 -  OGLDIR  = /usr
-+  OGLDIR  = ${X11BASE}
++  OGLDIR  = ${LOCALBASE}
  
  # Uncomment these if your opengl header is located in another directory than
  # the usual $(OGLDIR)/include/GL/gl.h

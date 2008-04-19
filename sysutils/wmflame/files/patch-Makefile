@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/sysutils/wmflame/files/patch-Makefile,v 1.1 2002/05/31 12:47:07 petef Exp $
 
 --- Makefile.orig	Tue Jun 15 17:11:20 1999
 +++ Makefile	Thu May 16 11:38:12 2002
@@ -9,8 +9,8 @@ $FreeBSD$
 -OBJS	=	wmflame.o ../wmgeneral/wmgeneral.o 
 +CC ?= gcc
 +CFLAGS += -c -Wall
-+INCDIR = -I${X11BASE}/include
-+LIBDIR = -L${X11BASE}/lib
++INCDIR = -I${LOCALBASE}/include
++LIBDIR = -L${LOCALBASE}/lib
 +LIBS   = -lXpm -lXext -lX11
 +OBJS =  wmflame.o ../wmgeneral/wmgeneral.o
  

@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk16/files/patch-j2se-font-Makefile,v 1.1 2007/08/05 20:39:48 glewis Exp $
 
 --- ../../j2se/make/sun/font/Makefile.orig	Sun Jul 29 23:03:29 2007
 +++ ../../j2se/make/sun/font/Makefile	Sun Jul 29 23:03:29 2007
@@ -7,7 +7,7 @@ $FreeBSD$
  # setup the list of libraries to link in...
  ifeq ($(PLATFORM), bsd)
 -OTHER_INCLUDES += -I/usr/X11R6/include
-+OTHER_INCLUDES += -I${X11BASE}/include
++OTHER_INCLUDES += -I${LOCALBASE}/include
  OTHER_LDLIBS  += -lawt $(LIBM) $(LIBCXX)
  else
  ifeq ($(PLATFORM), linux)

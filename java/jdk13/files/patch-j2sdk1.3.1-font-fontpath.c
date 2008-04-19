@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk13/files/patch-j2sdk1.3.1-font-fontpath.c,v 1.1 2006/12/08 19:39:45 glewis Exp $
 
 --- ../src/solaris/native/sun/awt/font/fontpath.c.orig	Fri Dec  8 10:52:19 2006
 +++ ../src/solaris/native/sun/awt/font/fontpath.c	Fri Dec  8 10:54:02 2006
@@ -7,7 +7,7 @@ $FreeBSD$
  {
  #ifndef __solaris__
 -   char *ptr   = "/usr/X11R6/lib/X11/fonts/Type1:/usr/X11R6/lib/X11/fonts/TrueType:/usr/X11R6/lib/X11/fonts/tt";
-+   char *ptr   = "%%X11BASE%%/lib/X11/fonts/Type1:%%X11BASE%%/lib/X11/fonts/TrueType:%%X11BASE%%/lib/X11/fonts/tt";
++   char *ptr   = "%%LOCALBASE%%/lib/X11/fonts/Type1:%%LOCALBASE%%/lib/X11/fonts/TrueType:%%LOCALBASE%%/lib/X11/fonts/tt";
  #else
      char *ptr   = getSolarisFontLocations((int) (noType1==JNI_TRUE));
  #endif

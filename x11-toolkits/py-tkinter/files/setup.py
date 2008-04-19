@@ -3,7 +3,7 @@
 #       python setup.py install
 #
 
-__version__ = "$FreeBSD: ports/x11-toolkits/py-tkinter/files/setup.py,v 1.1 2001/03/01 12:24:24 tg Exp $"
+__version__ = "$FreeBSD: ports/x11-toolkits/py-tkinter/files/setup.py,v 1.2 2003/08/03 19:09:00 perky Exp $"
 
 import os, string
 
@@ -18,7 +18,7 @@ except:
 tkversion = "8.4"
 prefix = sysconfig.PREFIX
 # Python 1.5 doesn't have os.getenv()?
-x11base = os.environ['X11BASE'] or '/usr/X11R6'
+x11base = os.environ['LOCALBASE'] or '/usr/X11R6'
 inc_dirs = [prefix + "/include",
             prefix + "/include/tcl" + tkversion,
             prefix + "/include/tk" + tkversion,

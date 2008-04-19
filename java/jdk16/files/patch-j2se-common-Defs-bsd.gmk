@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk16/files/patch-j2se-common-Defs-bsd.gmk,v 1.1 2007/08/05 20:39:48 glewis Exp $
 
 --- ../../j2se/make/common/Defs-bsd.gmk.orig	Sun Jul 29 23:03:29 2007
 +++ ../../j2se/make/common/Defs-bsd.gmk	Sun Jul 29 23:03:29 2007
@@ -7,7 +7,7 @@ $FreeBSD$
  override MOOT_PRIORITIES         = true
  override NO_INTERRUPTIBLE_IO     = false
 -override OPENWIN_HOME            = /usr/X11R6
-+override OPENWIN_HOME            = ${X11BASE}
++override OPENWIN_HOME            = ${LOCALBASE}
  override OPENWIN_LIB             = $(OPENWIN_HOME)/lib
  override OTHER_M4FLAGS           = -D__GLIBC__ -DGNU_ASSEMBLER
  override SUN_CMM_SUBDIR          =

@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/mail/gkrellmmailwatch/files/patch-aa,v 1.6 2002/08/21 19:28:05 naddy Exp $
 
 --- Makefile.orig	Fri Oct 26 11:05:13 2001
 +++ Makefile	Tue Aug 13 18:25:57 2002
@@ -8,7 +8,7 @@ $FreeBSD$
  GTK_LIB = `$(GTK_CONFIG) --libs`
  
 -GKRELLM_INCLUDE= -I/usr/local/include
-+GKRELLM_INCLUDE= -I${X11BASE}/include/gkrellm
++GKRELLM_INCLUDE= -I${LOCALBASE}/include/gkrellm
  
  IMLIB_INCLUDE = `$(IMLIB_CONFIG) --cflags-gdk`
  IMLIB_LIB = `$(IMLIB_CONFIG) --libs-gdk`

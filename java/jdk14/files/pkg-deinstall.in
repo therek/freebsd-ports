@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/java/jdk14/files/pkg-deinstall.in,v 1.1 2005/11/25 03:39:42 glewis Exp $
 
 # Set up a standard path
 PATH=/usr/bin:/bin
@@ -12,7 +12,7 @@ fi
 # Remove the plugin
 
 # Plugin location variables
-BROWSERPLUGINDIR="%%X11BASE%%/lib/browser_plugins"
+BROWSERPLUGINDIR="%%LOCALBASE%%/lib/browser_plugins"
 JAVAPLUGINDIR="%%JRE_HOME%%/plugin/%%ARCH%%/ns610"
 PLUGIN=libjavaplugin_oji.so
 

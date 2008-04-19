@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk14/files/patch-j2se::awt::fontpath.c,v 1.1 2006/12/08 22:36:16 glewis Exp $
 
 --- ../../j2se/src/solaris/native/sun/awt/fontpath.c.orig	Fri Dec  8 11:59:25 2006
 +++ ../../j2se/src/solaris/native/sun/awt/fontpath.c	Fri Dec  8 12:00:06 2006
@@ -10,10 +10,10 @@ $FreeBSD$
 -          "/usr/X11R6/lib/X11/fonts/TrueType:"
 -          "/usr/X11R6/lib/X11/fonts/tt:"
 -          "/usr/share/fonts/ja/TrueType";
-+    ptr = "%%X11BASE%%/lib/X11/fonts/Type1:"
-+          "%%X11BASE%%/lib/X11/fonts/TrueType:"
-+          "%%X11BASE%%/lib/X11/fonts/tt:"
-+          "%%X11BASE%%/fonts/ja/TrueType";
++    ptr = "%%LOCALBASE%%/lib/X11/fonts/Type1:"
++          "%%LOCALBASE%%/lib/X11/fonts/TrueType:"
++          "%%LOCALBASE%%/lib/X11/fonts/tt:"
++          "%%LOCALBASE%%/fonts/ja/TrueType";
  #elif defined( HEADLESS )
      ptr = getSolarisFontLocations(env, (int) (noType1==JNI_TRUE));
  #elif SCAN_FONT_DIRS

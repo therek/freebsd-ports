@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/x11-fonts/xmbdfed/files/patch-aa,v 1.10 2004/03/18 18:11:03 naddy Exp $
+$FreeBSD: ports/x11-fonts/xmbdfed/files/patch-aa,v 1.11 2004/11/15 05:19:30 sf Exp $
 
 --- Makefile.orig	Tue Feb 17 16:24:06 2004
 +++ Makefile	Thu Mar 18 18:47:04 2004
@@ -64,8 +64,8 @@ $FreeBSD: ports/x11-fonts/xmbdfed/files/patch-aa,v 1.10 2004/03/18 18:11:03 nadd
  #LIBS = -L/usr/Motif-1.2/lib32 -lXm \
  #       -L/usr/lib/X11 -lXmu -lXt -lXext -lX11 -lSM -lICE $(FTYPE_LIBS)
  
-+INCS = -I${X11BASE}/include ${FTYPE_INCS}
-+LIBS = -L${X11BASE}/lib ${MOTIFLIB} \
++INCS = -I${LOCALBASE}/include ${FTYPE_INCS}
++LIBS = -L${LOCALBASE}/lib ${MOTIFLIB} \
 +       -lXpm -lXmu -lXt -lX11 -lSM -lICE -lXext ${FTYPE_LIBS}
 +
  all: xmbdfed

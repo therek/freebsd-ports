@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk16/files/patch-j2se-gtk-Metacity.java,v 1.1 2007/08/05 20:39:48 glewis Exp $
 
 --- ../../j2se/src/share/classes/com/sun/java/swing/plaf/gtk/Metacity.java.orig	Sun Jul 29 23:03:30 2007
 +++ ../../j2se/src/share/classes/com/sun/java/swing/plaf/gtk/Metacity.java	Sun Jul 29 23:03:30 2007
@@ -10,8 +10,8 @@ $FreeBSD$
 -		    "/usr/X11R6/share/gnome/themes",
 -		    "/usr/local/share/themes",
 -		    "/usr/local/share/gnome/themes",
-+		    "%%X11BASE%%/share/themes",
-+		    "%%X11BASE%%/share/gnome/themes",
++		    "%%LOCALBASE%%/share/themes",
++		    "%%LOCALBASE%%/share/gnome/themes",
 +		    "%%LOCALBASE%%/share/themes",
 +		    "%%LOCALBASE%%/share/gnome/themes",
  		    "/usr/share/themes",

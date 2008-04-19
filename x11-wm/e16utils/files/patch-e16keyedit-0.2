@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/x11-wm/e16utils/files/patch-e16keyedit-0.2,v 1.2 2002/06/18 19:53:32 glewis Exp $
+$FreeBSD: ports/x11-wm/e16utils/files/patch-e16keyedit-0.2,v 1.3 2002/08/22 08:26:24 kevlo Exp $
 
 --- Makefile.orig	Fri Mar 24 04:04:16 2000
 +++ Makefile	Sat Aug  3 02:32:20 2002
@@ -8,7 +8,7 @@ $FreeBSD: ports/x11-wm/e16utils/files/patch-e16keyedit-0.2,v 1.2 2002/06/18 19:5
  
  LIB_DIRS = \
 -    -L/usr/local/lib -L/usr/X11R6/lib -L/usr/X11/lib -L/usr/dt/lib
-+    -L${LOCALBASE}/lib -L${X11BASE}/lib
++    -L${LOCALBASE}/lib
  LIBS     = \
 -    `gtk-config --libs` -lgdbm -lgdk_imlib
 -CFLAGS   = \

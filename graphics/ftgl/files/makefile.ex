@@ -1,14 +1,14 @@
 # Make sure, that you have graphics/libglut installed
 # in order to build example program
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/ftgl/files/makefile.ex,v 1.2 2004/06/20 07:13:50 krion Exp $
 
 CC=		%%CC%%
 CXX=		%%CXX%%
 RM=		%%RM%%
-CFLAGS=		%%CFLAGS%% -I. -I%%X11BASE%%/include -I%%PREFIX%%/include/FTGL
-CXXFLAGS=	%%CXXFLAGS%% -I. -I%%X11BASE%%/include -I%%PREFIX%%/include/FTGL
-LDFLAGS=	-L%%X11BASE%%/lib -L%%PREFIX%%/lib -lglut -lftgl
+CFLAGS=		%%CFLAGS%% -I. -I%%LOCALBASE%%/include -I%%PREFIX%%/include/FTGL
+CXXFLAGS=	%%CXXFLAGS%% -I. -I%%LOCALBASE%%/include -I%%PREFIX%%/include/FTGL
+LDFLAGS=	-L%%LOCALBASE%%/lib -L%%LOCALBASE%%/lib -lglut -lftgl
 
 FREETYPE_CFLAGS!=%%LOCALBASE%%/bin/freetype-config --cflags
 FREETYPE_LFLAGS!=%%LOCALBASE%%/bin/freetype-config --libs
