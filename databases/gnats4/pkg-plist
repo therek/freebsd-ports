@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/gnats4/pkg-plist,v 1.3 2005/09/13 23:03:39 pav Exp $
+@comment $FreeBSD: ports/databases/gnats4/pkg-plist,v 1.4 2006/01/22 01:28:54 edwin Exp $
 bin/edit-pr
 bin/getclose
 bin/install-sid
@@ -40,7 +40,7 @@ libexec/gnats/pr-edit
 @dirrm libexec/gnats
 @exec mkdir -p %%GNATSDBDIR%%
 @exec chown gnats %%GNATSDBDIR%%
-@unexec rmdir %%GNATSDBDIR%% 2>/dev/null || true
+@dirrmtry %%GNATSDBDIR%%
 %%PORTDOCS%%%%DOCSDIR%%/NEWS
 %%PORTDOCS%%%%DOCSDIR%%/UPGRADING
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
