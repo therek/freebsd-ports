@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1574 2008/04/17 21:36:26 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1575 2008/04/20 22:38:22 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3452,3 +3452,4 @@ x11-toolkits/tkstep80||2008-04-09|Has expired: development stalled for years, ou
 devel/p5-Tie-Watch|x11-toolkits/p5-Tk|2008-04-14|bundled with p5-Tk
 games/teewars|games/teeworls|2008-04-17|Project renamed
 multimedia/exportvideo||2008-04-21|Add-on for soon to be removed nuppelvideo port
+multimedia/nuppelvideo||2008-04-21|Unmaintained upstream for years.  The nuppelvideo format is now supported by mencoder
