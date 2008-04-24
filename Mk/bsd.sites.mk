@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.444 2008/04/10 20:32:51 miwi Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.445 2008/04/16 21:58:03 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -383,8 +383,6 @@ MASTER_SITE_FEDORA_LINUX+= \
 	ftp://ftp.port80.se/fedora/core/%SUBDIR%/ \
 	http://ftp.upjs.sk/pub/fedora/linux/core/%SUBDIR%/ \
 	ftp://ftp.upjs.sk/pub/fedora/linux/core/%SUBDIR%/ \
-	http://ftp.mirror.tw/pub/fedora/linux/core/%SUBDIR%/ \
-	ftp://ftp.mirror.tw/pub/fedora/linux/core/%SUBDIR%/ \
 	ftp://ftp.tlk-l.net/pub/mirrors/fedora.redhat.com/linux/core/%SUBDIR%/ \
 	http://limestone.uoregon.edu/ftp/fedora/%SUBDIR%/ \
 	ftp://limestone.uoregon.edu/fedora/%SUBDIR%/ \
