@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1605 2008/04/25 12:20:53 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1606 2008/04/25 12:29:16 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -54,7 +54,7 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
-      <cvename>CVE-2008-04-21</cvename>
+      <cvename>CVE-2008-1845</cvename>
       <url>http://secunia.com/advisories/29803/</url>
       <url>http://www.mirbsd.org/mksh.htm#clog</url>
     </references>
