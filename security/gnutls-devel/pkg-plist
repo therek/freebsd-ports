@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/gnutls-devel/pkg-plist,v 1.24 2007/08/17 16:41:51 novel Exp $
+@comment $FreeBSD: ports/security/gnutls-devel/pkg-plist,v 1.25 2008/03/10 20:13:58 novel Exp $
 bin/certtool
 bin/gnutls-cli
 bin/gnutls-cli-debug
@@ -20,6 +20,7 @@ info/gnutls-logo.png
 info/gnutls-objects.png
 info/gnutls-x509.png
 include/gnutls/compat.h
+include/gnutls/crypto.h
 include/gnutls/extra.h
 include/gnutls/gnutls.h
 include/gnutls/openpgp.h
