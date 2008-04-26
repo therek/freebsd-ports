@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2-devel/files/Makefile.knobs,v 1.51 2008/04/06 05:11:19 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2-devel/files/Makefile.knobs,v 1.52 2008/04/09 23:25:30 maho Exp $
 
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
 
@@ -54,6 +54,13 @@ CONFIGURE_ARGS+=	--enable-debug --enable-symbols=TRUE --enable-dbgutil
 CONFIGURE_ARGS+=	--enable-symbols=SMALL
 .endif
 
+.if defined(WITH_SYSTEM_ICU)
+LIB_DEPENDS+=		icule:${PORTSDIR}/devel/icu
+CONFIGURE_ARGS+=	--with-system-icu=yes
+.else
+CONFIGURE_ARGS+=	--with-system-icu=no
+.endif
+
 pre-fetch:
 .if (${OSVERSION} < 503001 && ${OSVERSION} >= 500000) || (${OSVERSION} < 492000)
 	@${ECHO}
@@ -85,6 +92,11 @@ pre-fetch:
 	@${ECHO}
 	@${ECHO} "You can compile OOo without gnome VFS support with"
 	@${ECHO} "make -DWITHOUT_GNOMEVFS"
+.endif
+.if !defined(WITH_SYSTEM_ICU)
+	@${ECHO}
+	@${ECHO} "You can compile OOo with devel/icu from ports with"
+	@${ECHO} "make -DWITH_SYSTEM_ICU"
 .endif
 .if !defined(WITH_SYSTEM_FREETYPE)
 	@${ECHO}
