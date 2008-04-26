@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1609 2008/04/25 19:03:04 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1610 2008/04/26 22:43:53 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,11 +39,11 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>gnupg</name>
-	<range><gt>0</gt></range>
+	<range><lt>2.0.9</lt></range>
       </package>
       <package>
         <name>gnupg1</name>
-	<range><gt>0</gt></range>
+	<range><lt>1.4.9</lt></range>
       </package>
     </affects>
     <description>
