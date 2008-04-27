@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/dns/opendd/files/opendd.in,v 1.1 2006/11/15 21:23:52 miwi Exp $
 #
 # PROVIDE: opendd
 # REQUIRE: NETWORKING
@@ -21,7 +21,7 @@ load_rc_config $name
 : ${opendd_pidfile="/var/run/opendd.pid"}
 
 command="%%PREFIX%%/sbin/opendd"
-required_files="%%PREFIX%%/etc/opendd/opendd.conf"
+required_files="%%ETCDIR%%/opendd.conf"
 pidfile="/var/run/opendd.pid"
 start_precmd="opendd_check"
 
