@@ -16,7 +16,7 @@ upgrades.
 
 	mv /usr/local/www/data/phpGedView /usr/local/www
 
-  You will also need to adjust the paths in your browser to reflect the new
+  You will also need to adjust the paths in your web server to reflect the new
   location.
 
 20080416:
@@ -6351,4 +6351,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.620 2008/04/27 04:12:47 edwin Exp $
+$FreeBSD: ports/UPDATING,v 1.621 2008/04/27 05:01:38 beech Exp $
