@@ -25,7 +25,7 @@
 # Greg Lewis
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.18 2006/06/08 17:58:15 glewis Exp $
+# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.19 2006/06/12 16:57:29 glewis Exp $
 #
 # MAINTAINER=java@FreeBSD.org
 
@@ -514,19 +514,22 @@ setJavaHome() {
         for version in ${JAVA_VERSION}; do
             case "${version}" in
                 1.1+)
-                    _JAVAVM_VERSION="${_JAVAVM_VERSION} 1.1 1.2 1.3 1.4 1.5"
+                    _JAVAVM_VERSION="${_JAVAVM_VERSION} 1.1 1.2 1.3 1.4 1.5 1.6"
                     ;;
                 1.2+)
-                    _JAVAVM_VERSION="${_JAVAVM_VERSION} 1.2 1.3 1.4 1.5"
+                    _JAVAVM_VERSION="${_JAVAVM_VERSION} 1.2 1.3 1.4 1.5 1.6"
                     ;;
                 1.3+)
-                    _JAVAVM_VERSION="${_JAVAVM_VERSION} 1.3 1.4 1.5"
+                    _JAVAVM_VERSION="${_JAVAVM_VERSION} 1.3 1.4 1.5 1.6"
                     ;;
                 1.4+)
-                    _JAVAVM_VERSION="${_JAVAVM_VERSION} 1.4 1.5"
+                    _JAVAVM_VERSION="${_JAVAVM_VERSION} 1.4 1.5 1.6"
                     ;;
                 1.5+)
-                    _JAVAVM_VERSION="${_JAVAVM_VERSION} 1.5"
+                    _JAVAVM_VERSION="${_JAVAVM_VERSION} 1.5 1.6"
+                    ;;
+                1.6+)
+                    _JAVAVM_VERSION="${_JAVAVM_VERSION} 1.6"
                     ;;
                 *)
                     _JAVAVM_VERSION="${_JAVAVM_VERSION} ${version}"
@@ -581,10 +584,10 @@ setJavaHome() {
             _JAVAVM_VENDOR=
             case "${_JAVAVM_VM}" in
                 diablo*)
-                    _JAVAVM_VENDOR=bsdjava
+                    _JAVAVM_VENDOR=freebsd
                     ;;
                 j*)
-                    _JAVAVM_VENDOR=freebsd
+                    _JAVAVM_VENDOR=bsdjava
                     ;;
                 linux-blackdown*)
                     _JAVAVM_VENDOR=blackdown
