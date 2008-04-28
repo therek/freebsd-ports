@@ -29,7 +29,7 @@
 #
 
 #
-# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.12 2006/10/31 21:37:05 edwin Exp $
+# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.13 2008/03/13 13:52:27 miwi Exp $
 #
 
 SDL_Include_MAINTAINER=		edwin@FreeBSD.org
@@ -37,7 +37,7 @@ SDL_Include_MAINTAINER=		edwin@FreeBSD.org
 #
 # These are the current supported SDL modules
 #
-_USE_SDL_ALL=	gfx gui image mixer mm net pango sdl sound ttf
+_USE_SDL_ALL=	console gfx gui image mixer mm net pango sdl sound ttf
 
 #
 # Variables used to determine what is needed:
@@ -47,6 +47,11 @@ _USE_SDL_ALL=	gfx gui image mixer mm net pango sdl sound ttf
 # _LIB_xxx		name of the shared lib, default SDL_xxx
 # _REQUIRES_xxx	also needs these SDL libraries
 #
+
+_VERSION_console=	0
+_SUBDIR_console=	devel
+_LIB_console=		SDL_console-2.1
+_REQUIRES_console=	sdl
 
 _VERSION_gfx=	0
 _SUBDIR_gfx=	graphics
