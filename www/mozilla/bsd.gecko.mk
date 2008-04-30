@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.20 2007/10/04 23:08:40 edwin Exp $
+# $FreeBSD: ports/www/mozilla/bsd.gecko.mk,v 1.21 2008/03/13 12:20:34 pav Exp $
 #    $MCom: ports/www/mozilla/bsd.gecko.mk,v 1.30 2006/12/09 15:32:06 ahze Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -68,7 +68,7 @@ Gecko_Pre_Include=			bsd.gecko.mk
 #  .endif
 
 .if (${ARCH}!="sparc64" || ${OSVERSION} >= 601101) && ${ARCH}!="ia64"
-_GECKO_ALL=	firefox nvu seamonkey thunderbird xulrunner flock firefox15
+_GECKO_ALL=	firefox nvu seamonkey thunderbird xulrunner flock
 .endif
 _GECKO_ALL+=	mozilla
 
