@@ -4,7 +4,7 @@
 # Date created:		17 April 2008
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/twiki/bsd.twiki.mk,v 1.1 2008/04/22 08:36:40 sat Exp $
 #
 
 #
@@ -77,7 +77,7 @@ make-port:
 	echo "# New ports collection makefile for:	$$pnam" > Makefile &&\
 	date '+# Date created:%t%t%e %B %Y' >> Makefile &&\
 	echo '#' >> Makefile &&\
-	echo '# $$FreeBSD$$' >> Makefile &&\
+	echo '# $$''FreeBSD$$' >> Makefile &&\
 	echo '#' >> Makefile &&\
 	echo >> Makefile &&\
 	echo "PORTNAME=	$$nnam" >> Makefile &&\
