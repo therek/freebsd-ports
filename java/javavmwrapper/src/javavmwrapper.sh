@@ -25,7 +25,7 @@
 # Greg Lewis
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.19 2006/06/12 16:57:29 glewis Exp $
+# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.20 2008/04/28 15:44:18 jkim Exp $
 #
 # MAINTAINER=java@FreeBSD.org
 
@@ -452,8 +452,13 @@ manualpageVM () {
     # Run man(1)
     MANPATH="${JAVA_HOME}/man:${MANPATH}"
     export MANPATH
-    setJavaOptions man "`basename ${JAVA_HOME}`"
-    exec man -S 1 ${_JAVAVM_OPTS} ${1}
+    if [ "${LANG}" = "ja_JP.eucJP" -a -x "${_JAVAVM_PREFIX}/bin/jman" ]; then
+	setJavaOptions jman "`basename ${JAVA_HOME}`"
+	exec ${_JAVAVM_PREFIX}/bin/jman -S 1 ${_JAVAVM_OPTS} ${1}
+    else
+	setJavaOptions man "`basename ${JAVA_HOME}`"
+	exec man -S 1 ${_JAVAVM_OPTS} ${1}
+    fi
 }
 
 #
