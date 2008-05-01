@@ -1,4 +1,4 @@
-$FreeBSD: ports/GIDs,v 1.56 2008/04/03 10:03:19 mm Exp $
+$FreeBSD: ports/GIDs,v 1.57 2008/04/11 14:10:24 pav Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -65,6 +65,7 @@ _bgpd:*:130:
 _ospfd:*:131:
 _spamd:*:132:
 freeradius:*:133:
+undernet:*:134:
 dovecot:*:143:
 rbldns:*:153:
 sfs:*:171:
