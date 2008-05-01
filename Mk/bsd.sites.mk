@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.445 2008/04/16 21:58:03 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.446 2008/04/24 04:27:34 vanilla Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1194,7 +1194,7 @@ MASTER_SITE_SAVANNAH+= \
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_SOURCEFORGE)
-.for mirror in heanet nchc kent easynews ufpr umn
+.for mirror in nchc kent easynews ufpr umn heanet
 MASTER_SITE_SOURCEFORGE+= \
 	http://${mirror}.dl.sourceforge.net/sourceforge/%SUBDIR%/
 .endfor
