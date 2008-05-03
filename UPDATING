@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080503:
+  AFFECTS: users of net/skype-devel
+  AUTHOR: beech@FreeBSD.org
+
+  Skype-devel has been moved to update net/skype. If you are running
+  skype-devel, please do the following:
+
+	portupgrade -o net/skype net/skype-devel
+
+
 20080426:
   AFFECTS: users of www/phpgedview
   AUTHOR: beech@FreeBSD.org
@@ -6351,4 +6361,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.621 2008/04/27 05:01:38 beech Exp $
+$FreeBSD: ports/UPDATING,v 1.622 2008/04/27 05:05:19 beech Exp $
