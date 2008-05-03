@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1618 2008/05/02 19:56:07 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1619 2008/05/02 20:22:09 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -884,7 +884,7 @@ Note:  Please add new entries to the beginning of this file.
       <package>
 	<name>thunderbird</name>
 	<name>linux-thunderbird</name>
-	<range><gt>0</gt></range>
+	<range><lt>2.0.0.14</lt></range>
       </package>
     </affects>
     <description>
@@ -926,7 +926,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2008-03-26</discovery>
       <entry>2008-03-30</entry>
-      <modified>2008-04-08</modified>
+      <modified>2008-05-03</modified>
     </dates>
   </vuln>
 
