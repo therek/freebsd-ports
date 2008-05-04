@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dovecot/files/dovecot.sh.in,v 1.3 2008/03/05 23:58:09 ehaupt Exp $
+# $FreeBSD: ports/mail/dovecot-devel/files/dovecot.sh.in,v 1.4 2008/04/22 15:32:49 ehaupt Exp $
 #
 
 # PROVIDE: dovecot

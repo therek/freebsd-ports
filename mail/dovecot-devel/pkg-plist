@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/dovecot/pkg-plist,v 1.25 2007/03/24 14:46:31 pav Exp $
+@comment $FreeBSD: ports/mail/dovecot-devel/pkg-plist,v 1.26 2007/03/28 20:59:38 miwi Exp $
 @unexec if cmp -s %D/etc/dovecot-example.conf %D/etc/dovecot.conf; then rm -f %D/etc/dovecot.conf; fi
 etc/dovecot-example.conf
 @exec if [ ! -f %D/etc/dovecot.conf ] ; then cp -p %D/%F %B/dovecot.conf; fi

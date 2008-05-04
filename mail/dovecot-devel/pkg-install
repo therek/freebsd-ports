@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/mail/dovecot/pkg-install,v 1.10 2007/01/07 23:50:55 pav Exp $
+#	$FreeBSD: ports/mail/dovecot-devel/pkg-install,v 1.11 2008/04/10 09:45:22 rafan Exp $
 #
 # ex:ts=4
 
