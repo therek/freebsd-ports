@@ -31,7 +31,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.14 2007/07/27 21:40:10 pav Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.15 2007/11/05 19:26:16 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -40,7 +40,7 @@ GCC_Include_MAINTAINER=		gerald@FreeBSD.org
 # All GCC versions supported by the ports framework.
 # Please keep them in ascending order.
 #
-GCCVERSIONS=	020702 020801 029500 030200 030301 030402 040100 040200
+GCCVERSIONS=	020702 020801 029500 030200 030301 030402 040100 040200 040300
 
 #
 # Versions of GCC shipped.
@@ -57,6 +57,7 @@ GCCVERSION_030301=	501103 502126 3.3
 GCCVERSION_030402=	502126 700042 3.4
 GCCVERSION_040100=	999999 999999 4.1
 GCCVERSION_040200=	700042 999999 4.2
+GCCVERSION_040300=	999999 999999 4.3
 
 #
 # No configurable parts below this.
