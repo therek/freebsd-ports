@@ -1,5 +1,6 @@
-$FreeBSD: ports/Tools/scripts/README,v 1.18 2007/08/12 12:49:23 netchild Exp $
+$FreeBSD: ports/Tools/scripts/README,v 1.19 2007/08/26 15:02:24 netchild Exp $
 
+ardiff	- compare two archives easily
 addport	- replacement for easy-import
 bump_revision.pl - Small script to bump the PORTREVISION variable of ports
                    which are depending on a port with a changed shared lib
