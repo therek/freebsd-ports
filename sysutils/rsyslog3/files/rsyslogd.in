@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/rsyslog3/files/rsyslogd.in,v 1.3 2008/05/04 05:05:23 sat Exp $
+# $FreeBSD: ports/sysutils/rsyslog3/files/rsyslogd.in,v 1.4 2008/05/06 15:24:59 sat Exp $
 #
 
 # PROVIDE: rsyslogd
@@ -20,7 +20,6 @@ pidfile="${rsyslogd_pidfile}"
 command_args="-i ${pidfile} -f ${rsyslogd_config}"
 required_files="${rsyslogd_config}"
 start_precmd="rsyslogd_precmd"
-stop_precmd="stop_precmd"
 extra_commands="reload"
 
 sockfile="/var/run/rsyslogd.sockets"
