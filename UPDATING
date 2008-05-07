@@ -6,7 +6,7 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
-2008056:
+20080506:
   AFFECTS: users of net-mgmt/collectd
   AUTHOR: daniel@roe.ch
 
@@ -6374,4 +6374,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.623 2008/05/03 23:44:23 beech Exp $
+$FreeBSD: ports/UPDATING,v 1.624 2008/05/06 10:48:14 itetcu Exp $
