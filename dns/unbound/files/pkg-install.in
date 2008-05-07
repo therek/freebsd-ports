@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/dns/unbound/files/pkg-install.in,v 1.1 2008/04/29 07:35:14 sem Exp $
 #
 
 PW=/usr/sbin/pw
@@ -37,9 +37,10 @@ PRE-INSTALL)
 			exit 1
 		fi
 	fi
+	;;
 
-	[ -d /var/run/unbound ] || mkdir -p /var/run/unbound
-	chown "${USER}" /var/run/unbound
+POST-INSTALL)
+	chown "${USER}" $PREFIX/etc/unbound
 	;;
 *)
 ;;
