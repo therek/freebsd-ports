@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1620 2008/05/03 09:06:41 sat Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1621 2008/05/08 07:27:05 brix Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -47,13 +47,13 @@ Note:  Please add new entries to the beginning of this file.
 	<p>Secunia reports:</p>
 	<blockquote cite="http://secunia.com/advisories/29915">
 	  <p>A vulnerability has been reported in swfdec, which can be
-      exploited by malicious people to disclose sensitive
-      information.</p>
-		<p>The vulnerability is caused due to swfdec not properly
-      restricting untrusted sandboxes from reading local files, which
-      can be exploited to disclose the content of arbitrary local
-      files by e.g. tricking a user into visiting a malicious
-      website.</p>
+    	    exploited by malicious people to disclose sensitive
+    	    information.</p>
+	  <p>The vulnerability is caused due to swfdec not properly
+	    restricting untrusted sandboxes from reading local files,
+	    which can be exploited to disclose the content of arbitrary
+	    local files by e.g. tricking a user into visiting a malicious
+	    website.</p>
 	</blockquote>
       </body>
     </description>
