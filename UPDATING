@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080508:
+  AFFECTS: users of databases/ptop
+  AUTHOR: beech@FreeBSD.org
+
+  The authors have changed the name of this utility to pg_top. To avoid
+  conflicts with another port in the tree with the same name we have retained
+  'ptop' as the portname. Also note, the binary has also changed to pg_top.
+  Please start the utility with that name after updating.
+
 20080507:
   AFFECTS: perl interface users of audio/gramofile
   AUTHOR: rafan@FreeBSD.org
@@ -6382,4 +6391,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.625 2008/05/07 09:22:05 rafan Exp $
+$FreeBSD: ports/UPDATING,v 1.626 2008/05/07 09:24:13 rafan Exp $
