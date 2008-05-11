@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1590 2008/05/06 23:25:45 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1591 2008/05/07 22:57:52 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3472,3 +3472,4 @@ security/drupal4-ldap_integration||2008-04-30|Removed due to being broken and cl
 www/neon|www/neon26|2008-05-05|Moved to be able to integrate www/neon26
 ports-mgmt/instant-tinderbox||2008-05-07|No longer functional in the current infrastructure
 x11-toolkits/gtkdatabox|x11-toolkits/gtkdatabox2|2008-05-08|This old version has been superseeded by x11-toolkits/gtkdatabox2
+devel/swigruby||2008-05-11|Has expired: use devel/swig13 instead, last release was 8 years ago
