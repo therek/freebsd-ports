@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.68 2008/04/24 23:31:41 ahze Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.69 2008/05/05 14:08:44 miwi Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.68 2008/03/21 04:14:19 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -228,6 +228,7 @@ gst_gdk_pixbuf_PLIST_FILES=	${GST_LIB_DIR}/libgstgdkpixbuf.a \
 				${GST_LIB_DIR}/libgstgdkpixbuf.so
 # gio
 gst_gio_USE_GNOME+=	glib20
+gst_gio_CONFIGURE_ARGS+=--enable-experimental
 gst_gio_DIST=	base
 
 # gnomevfs
