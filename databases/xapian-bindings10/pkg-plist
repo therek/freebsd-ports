@@ -1,18 +1,18 @@
-@comment $FreeBSD: ports/databases/xapian-bindings/pkg-plist,v 1.1 2007/05/30 08:45:32 clsung Exp $
+@comment $FreeBSD: ports/databases/xapian-bindings/pkg-plist,v 1.2 2007/08/15 08:37:27 clsung Exp $
 %%BINDING_PHP%%%%DATADIR%%/php5/xapian.php
-%%BINDING_PHP%%%%PORTDOCS%%%%DOCSDIR%%/php/bindings.html
 %%BINDING_PHP%%%%PORTDOCS%%%%DOCSDIR%%/php/examples/simpleexpand.php4
 %%BINDING_PHP%%%%PORTDOCS%%%%DOCSDIR%%/php/examples/simpleexpand.php5
 %%BINDING_PHP%%%%PORTDOCS%%%%DOCSDIR%%/php/examples/simpleindex.php4
 %%BINDING_PHP%%%%PORTDOCS%%%%DOCSDIR%%/php/examples/simpleindex.php5
 %%BINDING_PHP%%%%PORTDOCS%%%%DOCSDIR%%/php/examples/simplesearch.php4
 %%BINDING_PHP%%%%PORTDOCS%%%%DOCSDIR%%/php/examples/simplesearch.php5
+%%BINDING_PHP%%%%PORTDOCS%%%%DOCSDIR%%/php/index.html
 %%BINDING_PHP%%lib/php/%%PHP_EXT_DIR%%/xapian.so
-%%BINDING_PYTHON%%%%PORTDOCS%%%%DOCSDIR%%/python/bindings.html
 %%BINDING_PYTHON%%%%PORTDOCS%%%%DOCSDIR%%/python/examples/simpleexpand.py
 %%BINDING_PYTHON%%%%PORTDOCS%%%%DOCSDIR%%/python/examples/simpleindex.py
 %%BINDING_PYTHON%%%%PORTDOCS%%%%DOCSDIR%%/python/examples/simplematchdecider.py
 %%BINDING_PYTHON%%%%PORTDOCS%%%%DOCSDIR%%/python/examples/simplesearch.py
+%%BINDING_PYTHON%%%%PORTDOCS%%%%DOCSDIR%%/python/index.html
 %%BINDING_PYTHON%%%%PYTHON_SITELIBDIR%%/_xapian.so
 %%BINDING_PYTHON%%%%PYTHON_SITELIBDIR%%/xapian.py
 %%BINDING_PYTHON%%%%PYTHON_SITELIBDIR%%/xapian.pyc
