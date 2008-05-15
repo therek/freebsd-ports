@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/clive/pkg-plist,v 1.9 2008/04/09 22:37:46 nivit Exp $
+@comment $FreeBSD: ports/multimedia/clive/pkg-plist,v 1.10 2008/04/21 22:20:08 nivit Exp $
 bin/clive
 %%PYTHON_SITELIBDIR%%/clive/__init__.py
 %%PYTHON_SITELIBDIR%%/clive/__init__.pyc
@@ -27,15 +27,15 @@ bin/clive
 %%PYTHON_SITELIBDIR%%/clive/main.py
 %%PYTHON_SITELIBDIR%%/clive/main.pyc
 %%PYTHON_SITELIBDIR%%/clive/main.pyo
-%%PYTHON_SITELIBDIR%%/clive/newt/__init__.py
-%%PYTHON_SITELIBDIR%%/clive/newt/__init__.pyc
-%%PYTHON_SITELIBDIR%%/clive/newt/__init__.pyo
-%%OPTRSSATOM%%%%PYTHON_SITELIBDIR%%/clive/newt/_snackmodule.a
-%%OPTRSSATOM%%%%PYTHON_SITELIBDIR%%/clive/newt/_snackmodule.la
-%%OPTRSSATOM%%%%PYTHON_SITELIBDIR%%/clive/newt/_snackmodule.so
-%%PYTHON_SITELIBDIR%%/clive/newt/snack.py
-%%PYTHON_SITELIBDIR%%/clive/newt/snack.pyc
-%%PYTHON_SITELIBDIR%%/clive/newt/snack.pyo
+%%OPTNEWT%%%%PYTHON_SITELIBDIR%%/clive/newt/__init__.py
+%%OPTNEWT%%%%PYTHON_SITELIBDIR%%/clive/newt/__init__.pyc
+%%OPTNEWT%%%%PYTHON_SITELIBDIR%%/clive/newt/__init__.pyo
+%%OPTNEWT%%%%PYTHON_SITELIBDIR%%/clive/newt/_snackmodule.a
+%%OPTNEWT%%%%PYTHON_SITELIBDIR%%/clive/newt/_snackmodule.la
+%%OPTNEWT%%%%PYTHON_SITELIBDIR%%/clive/newt/_snackmodule.so
+%%OPTNEWT%%%%PYTHON_SITELIBDIR%%/clive/newt/snack.py
+%%OPTNEWT%%%%PYTHON_SITELIBDIR%%/clive/newt/snack.pyc
+%%OPTNEWT%%%%PYTHON_SITELIBDIR%%/clive/newt/snack.pyo
 %%PYTHON_SITELIBDIR%%/clive/nomad.py
 %%PYTHON_SITELIBDIR%%/clive/nomad.pyc
 %%PYTHON_SITELIBDIR%%/clive/nomad.pyo
