@@ -1,6 +1,7 @@
-@comment $FreeBSD: ports/japanese/sazanami-ttf/pkg-plist,v 1.5 2008/04/19 17:51:11 miwi Exp $
+@comment $FreeBSD: ports/japanese/sazanami-ttf/pkg-plist,v 1.6 2008/05/12 17:19:55 hrs Exp $
 %%DATADIR%%/sazanami-mincho.ttf
 %%DATADIR%%/sazanami-gothic.ttf
+@dirrm %%DATADIR%%
 %%LOCAL_FONTSDIR%%/TrueType/sazanami-mincho.ttf
 %%LOCAL_FONTSDIR%%/TrueType/sazanami-gothic.ttf
 @dirrmtry %%LOCAL_FONTSDIR%%/TrueType
