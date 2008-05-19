@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080519:
+  AFFECTS: users of irc/bitlbee
+  AUTHOR: brix@FreeBSD.org
+
+  The default installation is now configured for running bitlbee as
+  user 'bitlbee'.  Make sure any existing configuration files are
+  readable by that user.
+
 20080517:
   AFFECTS: users of multimedia/smplayer-*
   AUTHOR: miwi@FreeBSD.org
@@ -6437,4 +6445,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.631 2008/05/17 19:17:42 miwi Exp $
+$FreeBSD: ports/UPDATING,v 1.632 2008/05/19 04:55:27 miwi Exp $
