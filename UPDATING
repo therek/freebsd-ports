@@ -7,6 +7,14 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20080519:
+  AFFECTS: users of www/nginx and www/nginx-devel
+  AUTHOR: osa@FreeBSD.org
+
+  Nginx version lines have been changed: 0.5 -> 0.6 for stable and
+  0.6 -> 0.7 for development version.  Make sure your configuration
+  files are compatible with the new viersion.
+
+20080519:
   AFFECTS: users of irc/bitlbee
   AUTHOR: brix@FreeBSD.org
 
@@ -6445,4 +6453,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.632 2008/05/19 04:55:27 miwi Exp $
+$FreeBSD: ports/UPDATING,v 1.633 2008/05/19 16:10:46 brix Exp $
