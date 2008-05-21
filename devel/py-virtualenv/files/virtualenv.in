@@ -1,8 +1,9 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/devel/py-virtualenv/files/virtualenv.in,v 1.1 2008/01/09 10:13:01 nivit Exp $
 
 if [ "$1" = "" ]; then
     echo "usage: $0 ENVIRONMENT_NAME"
 else
-    exec env NEWPYTHONENV="$1" %%PREFIX%%/bin/bash --init-file %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/support-files/virtualenv.bash
+    POSPARMS="$@"
+    exec env VIRTUALENVARGS="${POSPARMS}" %%PREFIX%%/bin/bash --init-file %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/support-files/virtualenv.bash
 fi
