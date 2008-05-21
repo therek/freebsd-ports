@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1596 2008/05/17 19:17:42 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1597 2008/05/19 23:21:30 lwhsu Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3478,3 +3478,4 @@ x11-servers/xorg-printserver||2008-05-15|Has expired, software is obsolete
 www/mod_evasive20|www/mod_evasive|2008-05-17|No reason to have the 20 in the name, so remove it.
 multimedia/smplayer-qt4||2008-05-17|Functionality is now included in smplayer.
 devel/php-Net_Gearman|devel/pear-Net_Gearman|2008-05-19|Now it is a pear module
+devel/swig11||2008-05-21|Has expired: use devel/swig13 instead, last release of 1.1 was 8 years ago
