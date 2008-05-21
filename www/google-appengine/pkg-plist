@@ -1,12 +1,12 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/google-appengine/pkg-plist,v 1.1 2008/04/09 22:18:25 nivit Exp $
 bin/appcfg.py
 bin/dev_appserver.py
 %%PORTDOCS%%%%DOCSDIR%%/LICENSE
 %%PORTDOCS%%%%DOCSDIR%%/README
-%%DATADIR%%/VERSION
-%%DATADIR%%/appcfg.py
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/demos/guestbook/app.yaml
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/demos/guestbook/guestbook.py
+%%DATADIR%%/VERSION
+%%DATADIR%%/appcfg.py
 %%DATADIR%%/dev_appserver.py
 %%DATADIR%%/google/__init__.py
 %%DATADIR%%/google/appengine/__init__.py
