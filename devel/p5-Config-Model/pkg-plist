@@ -1,5 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-Config-Model/pkg-plist,v 1.3 2007/07/29 10:09:58 miwi Exp $
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/Config-Model/.packlist
+@comment $FreeBSD: ports/devel/p5-Config-Model/pkg-plist,v 1.4 2008/03/20 22:58:07 miwi Exp $
 %%SITE_PERL%%/Config/Model.pm
 %%SITE_PERL%%/Config/Model/AnyId.pm
 %%SITE_PERL%%/Config/Model/AnyThing.pm
