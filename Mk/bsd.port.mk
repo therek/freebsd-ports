@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.591 2008/03/11 23:45:04 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.592 2008/04/14 16:46:41 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2005,6 +2005,10 @@ PLIST_SUB+=		PERL_VERSION=${PERL_VERSION} \
 
 .if defined(USE_XFCE)
 .include "${PORTSDIR}/Mk/bsd.xfce.mk"
+.endif
+
+.if defined(USE_CMAKE)
+.include "${PORTSDIR}/Mk/bsd.cmake.mk"
 .endif
 
 .if exists(${PORTSDIR}/../Makefile.inc)
