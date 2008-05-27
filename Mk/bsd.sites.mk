@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.448 2008/05/26 20:02:17 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.449 2008/05/26 22:35:07 mezz Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -533,7 +533,6 @@ MASTER_SITE_GNOME+=	\
 	ftp://ftp.cse.buffalo.edu/pub/Gnome/%SUBDIR%/ \
 	http://ftp.unina.it/pub/linux/GNOME/%SUBDIR%/ \
 	http://www.gtlib.cc.gatech.edu/pub/gnome/%SUBDIR%/ \
-	http://rpmfind.net/linux/gnome.org/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/X/gnome/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/gnome/&,} \
 	ftp://ftp.kddlabs.co.jp/pub/GNOME/%SUBDIR%/ \
