@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/drupal5/bsd.drupal.mk,v 1.6 2007/03/27 13:38:47 miwi Exp $
+# $FreeBSD: ports/www/drupal6/bsd.drupal.mk,v 1.7 2007/08/21 08:33:35 miwi Exp $
 #
 
 # Make sure we cannot define both DRUPAL4_MODULE and DRUPAL5_MODULE
