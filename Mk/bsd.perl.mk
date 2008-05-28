@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.6 2007/09/26 00:36:44 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.7 2007/09/29 03:46:06 linimon Exp $
 #
 # bsd.perl.mk - Support for Perl-based ports.
 #
@@ -25,7 +25,7 @@
 #				  to determine if the version of perl is high enough,
 #				  whether a particular dependency is needed, etc.
 # PERL_ARCH		- Directory name of architecture dependent libraries
-#				  (value: ${ARCH}-freebsd).
+#				  (value: mach).
 # PERL_PORT		- Name of the perl port that is installed
 #				  (value: perl5)
 # SITE_PERL		- Directory name where site specific perl packages go.
