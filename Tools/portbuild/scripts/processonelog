@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/Tools/portbuild/scripts/processonelog,v 1.24 2007/07/02 10:22:47 linimon Exp $
+# $FreeBSD: ports/Tools/portbuild/scripts/processonelog,v 1.25 2007/09/13 02:30:08 linimon Exp $
 #
 # Read a single errorlogfile and output a line of the format
 #    $filename|$portname|$affected|$logsize|$dir|$maintainer|\
@@ -16,6 +16,8 @@ indexdir=$(realpath $indexdir)
 errordir=$(realpath $errordir)
 indexfilename=$indexdir/INDEX
 
+HEADER_LINES=7
+
 portname=$(basename $filename .log.bz2)
 if [ "${portname}" = "${filename}" ]; then
     cat=cat
@@ -26,10 +28,10 @@ portname=$(basename $portname .log)
 
 affected=$(($(grep -cF $portname < $indexfilename) -1))
 logsize=$(/bin/ls -sk $errordir/$filename | awk '{print $1}')
-dir=$(${cat} $errordir/$filename | head -6 | grep '^port directory:' | awk '{print $3}' | \
+dir=$(${cat} $errordir/$filename | head -$HEADER_LINES | grep '^port directory:' | awk '{print $3}' | \
 		sed -e 's,^/[^/]*/[^/]*/,,')
-maintainer=$(${cat} $errordir/$filename | head -6 | grep '^maintained by' | awk '{print $3}')
-datetime=$(${cat} $errordir/$filename | head -6 | grep '^build started at' | \
+maintainer=$(${cat} $errordir/$filename | head -$HEADER_LINES | grep '^maintained by' | awk '{print $3}')
+datetime=$(${cat} $errordir/$filename | head -$HEADER_LINES | grep '^build started at' | \
 		sed -e 's/build started at ...//' | tr ' ' '_' )
 
 # now try to classify the type of error found in the file.
