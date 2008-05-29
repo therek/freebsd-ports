@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-fonts/webfonts/pkg-plist,v 1.6 2007/02/02 17:06:23 pav Exp $
+@comment $FreeBSD: ports/x11-fonts/webfonts/pkg-plist,v 1.7 2008/04/19 17:55:12 miwi Exp $
 %%FONTSDIR%%/andalemo.ttf
 %%FONTSDIR%%/arial.ttf
 %%FONTSDIR%%/arialbd.ttf
@@ -34,7 +34,5 @@
 %%FONTSDIR%%/verdanai.ttf
 %%FONTSDIR%%/verdanaz.ttf
 %%FONTSDIR%%/webdings.ttf
-%%DOCSDIR%%/LICENSE
-@dirrm %%DOCSDIR%%
 @dirrm %%FONTSDIR%%
 @exec %%LOCALBASE%%/bin/fc-cache -f -v %%FONTSDIR%% || /usr/bin/true
