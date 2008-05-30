@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1629 2008/05/28 22:26:47 wxs Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1630 2008/05/30 11:59:51 tabthorpe Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,7 +39,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>linux-flashplugin</name>
-	<range><ge>9.0r115</ge><lt>9.0r124</lt></range>
+	<range><lt>9.0r124</lt></range>
       </package>
     </affects>
     <description>
