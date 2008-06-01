@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/ghostscript-gpl/pkg-plist,v 1.47 2008/05/05 13:16:25 hrs Exp $
+@comment $FreeBSD: ports/print/ghostscript8/pkg-plist,v 1.48 2008/05/05 16:06:33 hrs Exp $
 bin/bdftops
 bin/dumphint
 bin/dvipdf

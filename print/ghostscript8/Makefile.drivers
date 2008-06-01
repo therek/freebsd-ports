@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/ghostscript-gpl/Makefile.drivers,v 1.1 2008/05/05 13:16:25 hrs Exp $
+# $FreeBSD: ports/print/ghostscript8/Makefile.drivers,v 1.2 2008/05/08 18:54:22 hrs Exp $
 
 .if !defined(WITHOUT_X11)
 OPTIONS_X11_DEFAULT=	on

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/ghostscript-gnu-commfont/pkg-plist,v 1.5 2006/02/20 20:36:00 hrs Exp $
+@comment $FreeBSD: ports/print/ghostscript7-commfont/pkg-plist,v 1.6 2007/04/28 13:03:15 hrs Exp $
 %%GS_RESDIR%%/CIDFont/FutoGoB101-Bold
 %%GS_RESDIR%%/CIDFont/FutoMinA101-Bold
 %%GS_RESDIR%%/CIDFont/GothicBBB-Medium
