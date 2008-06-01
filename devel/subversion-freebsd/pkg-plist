@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/subversion/pkg-plist,v 1.36 2006/09/12 12:46:30 lev Exp $
+@comment $FreeBSD: ports/devel/subversion-freebsd/pkg-plist,v 1.37 2008/01/29 12:17:05 lev Exp $
 bin/svn
 bin/svnadmin
 bin/svndumpfilter
