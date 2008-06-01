@@ -6,6 +6,20 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080601:
+  AFFECTS: users of www/ikiwiki
+  AUTHOR: brix@FreeBSD.org
+
+  If password based logins is enabled in ikiwiki, those passwords were
+  stored in cleartext in the userdb.  To guard against exposing users'
+  passwords, ikiwiki 2.48 and later use strong (blowfish) hashes for
+  storing passwords.
+
+  To hash existing passwords, update to ikiwiki-2.48 and run the
+  following command for each of your ikiwiki src dirs:
+
+  ikiwiki-transition hashpassword /path/to/your/wiki/srcdir
+
 20080524:
   AFFECTS: users of net-im/jabberd
   AUTHOR: mm@FreeBSD.org
@@ -6464,4 +6478,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.634 2008/05/20 09:57:45 osa Exp $
+$FreeBSD: ports/UPDATING,v 1.635 2008/05/24 00:05:24 mm Exp $
