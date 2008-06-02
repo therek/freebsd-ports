@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1604 2008/05/31 07:26:47 hrs Exp $
+# $FreeBSD: ports/MOVED,v 1.1605 2008/06/01 14:24:41 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3488,3 +3488,4 @@ multimedia/xfce4-xmms-controller-plugin||2008-05-30|Has expired: Project is dead
 www/pear-HTTP_Session||2008-05-30|Has expired: Use www/pear-HTTP_Session2 instead
 security/bioapitool||2008-05-30|Has expired: All functionallity of this tools has been merged with pam_bsdbioapi
 japanese/motoya-ttfonts||2008-05-31|Removed because of extremely restrictive license
+devel/libffi-devel||2008-06-02|Has expired: Use devel/libffi instead
