@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.449 2008/05/26 22:35:07 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.450 2008/05/27 00:36:03 mezz Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -460,6 +460,7 @@ MASTER_SITE_GCC+=	\
 
 .if !defined(IGNORE_MASTER_SITE_GENTOO)
 MASTER_SITE_GENTOO+=	\
+	http://ftp.roedu.net/pub/mirrors/gentoo.org/%SUBDIR%/ \
 	http://distro.ibiblio.org/pub/linux/distributions/gentoo/%SUBDIR%/ \
 	http://csociety-ftp.ecn.purdue.edu/pub/gentoo/%SUBDIR%/ \
 	http://gentoo.mirrors.pair.com/%SUBDIR%/ \
