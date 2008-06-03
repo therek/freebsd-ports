@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/freenet6/files/freenet6.sh.in,v 1.6 2006/02/20 20:47:23 dougb Exp $
+# $FreeBSD: ports/net/freenet6/files/freenet6.sh.in,v 1.7 2007/09/06 01:15:38 edwin Exp $
 #
 
 #
 # PROVIDE: freenet6
-# REQUIRE: NETWORKING netif
+# REQUIRE: NETWORKING netif named
 # BEFORE: ip6addrctl
 # KEYWORD: shutdown
 #
