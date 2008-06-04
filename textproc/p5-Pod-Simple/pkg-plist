@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/p5-Pod-Simple/pkg-plist,v 1.4 2005/11/22 10:29:16 mat Exp $
+@comment $FreeBSD: ports/textproc/p5-Pod-Simple/pkg-plist,v 1.5 2006/01/22 02:54:28 edwin Exp $
 %%SITE_PERL%%/Pod/Simple.pm
 %%SITE_PERL%%/Pod/Simple.pod
 %%SITE_PERL%%/Pod/Simple/BlackBox.pm
@@ -27,6 +27,7 @@
 %%SITE_PERL%%/Pod/Simple/Transcode.pm
 %%SITE_PERL%%/Pod/Simple/TranscodeDumb.pm
 %%SITE_PERL%%/Pod/Simple/TranscodeSmart.pm
+%%SITE_PERL%%/Pod/Simple/XHTML.pm
 %%SITE_PERL%%/Pod/Simple/XMLOutStream.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Pod/Simple/.packlist
 %%SITE_PERL%%/perlpod.pod
