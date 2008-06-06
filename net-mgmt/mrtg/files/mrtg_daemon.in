@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/mrtg/files/mrtg_daemon.sh.in,v 1.5 2006/04/23 17:39:52 oliver Exp $
+# $FreeBSD$
 
 #
 # PROVIDE: mrtg_daemon
 # REQUIRE: DAEMON bsnmpd snmpd
 
-.  %%RC_SUBR%%
+. %%RC_SUBR%%
 
 
 name="mrtg_daemon"
@@ -31,7 +31,7 @@ pidfile=${mrtg_daemon_pidfile}
 mrtg_daemon_precmd()
 {
        rm -f /var/run/mrtg/lockfile /var/run/mrtg/confcache $mrtg_daemon_pidfile
+       export LANG=C
 }
 
 run_rc_command "$1"
-
