@@ -54,7 +54,6 @@ upgrades.
 
   ikiwiki-transition hashpassword /path/to/your/wiki/srcdir
 
->>>>>>> 1.638
 20080524:
   AFFECTS: users of net-im/jabberd
   AUTHOR: mm@FreeBSD.org
@@ -6513,4 +6512,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.638 2008/06/06 02:36:17 ade Exp $
+$FreeBSD: ports/UPDATING,v 1.639 2008/06/06 02:47:22 lippe Exp $
