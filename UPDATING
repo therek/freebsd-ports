@@ -23,7 +23,7 @@ upgrades.
   depend on gettext:
   
   # portupgrade -rf gettext
-  # portmaster -r gettext
+  # portmaster -r gettext\*
 
   Given the scope and sheer number of dependent ports, it may be more
   advisable to simply blow away all existing install ports (after
@@ -6512,4 +6512,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.639 2008/06/06 02:47:22 lippe Exp $
+$FreeBSD: ports/UPDATING,v 1.640 2008/06/06 20:23:07 miwi Exp $
