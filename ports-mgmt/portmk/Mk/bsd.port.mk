@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.71 2008/04/11 23:39:17 linimon Exp $
+# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.72 2008/04/20 01:05:55 linimon Exp $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
 #	This file is in the public domain.
@@ -2196,6 +2196,14 @@ PLIST_SUB+=		PERL_VERSION=${PERL_VERSION} \
 .include "${DEVELPORTSDIR}/Mk/bsd.xfce.mk"
 .else
 .include "${PORTSDIR}/Mk/bsd.xfce.mk"
+.endif
+.endif
+
+.if defined(USE_CMAKE)
+.if exists(${DEVELPORTSDIR}/Mk/bsd.cmake.mk)
+.include "${DEVELPORTSDIR}/Mk/bsd.cmake.mk"
+.else
+.include "${PORTSDIR}/Mk/bsd.cmake.mk"
 .endif
 .endif
 
