@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1633 2008/05/31 10:17:02 brix Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1634 2008/06/01 21:04:34 brix Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -5510,9 +5510,6 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>xpdf</name>
-	<name>zh-xpdf</name>
-	<name>ja-xpdf</name>
-	<name>ko-xpdf</name>
 	<range><lt>3.02_2</lt></range>
       </package>
       <package>
