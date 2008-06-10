@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/sysutils/sge62/files/patch-scripts_distinst,v 1.9 2008/02/13 15:39:06 brooks Exp $
 
 --- scripts/distinst.orig
 +++ scripts/distinst

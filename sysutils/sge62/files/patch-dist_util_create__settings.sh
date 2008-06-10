@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/sysutils/sge62/files/patch-dist_util_create__settings.sh,v 1.1 2008/04/11 20:31:49 brooks Exp $
 
 --- dist/util/create_settings.sh.orig
 +++ dist/util/create_settings.sh
