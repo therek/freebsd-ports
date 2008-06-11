@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/sge62/files/sge.sh.in,v 1.5 2008/02/15 00:09:33 brooks Exp $
+# $FreeBSD: ports/sysutils/sge61/files/sge.sh.in,v 1.5 2008/02/15 00:09:33 brooks Exp $
 
 # PROVIDE: sge
 # REQUIRE: DAEMON
