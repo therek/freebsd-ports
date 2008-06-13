@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.59 2008/05/19 16:06:38 brix Exp $
+# $FreeBSD: ports/GIDs,v 1.60 2008/05/19 23:01:48 flz Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -91,6 +91,7 @@ meta1c:*:262:
 meta1m:*:263:
 meta1:*:264:
 haclient:*:275:
+frontbase:*:276:
 mrtg:*:279:
 hobbit:*:280:
 prelude:*:281:
