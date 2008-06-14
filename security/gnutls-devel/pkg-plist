@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/gnutls-devel/pkg-plist,v 1.26 2008/04/25 17:46:45 novel Exp $
+@comment $FreeBSD: ports/security/gnutls-devel/pkg-plist,v 1.27 2008/05/03 15:54:02 novel Exp $
 bin/certtool
 bin/gnutls-cli
 bin/gnutls-cli-debug
@@ -50,6 +50,7 @@ share/aclocal/libgnutls-extra.m4
 share/aclocal/libgnutls.m4
 %%EXAMPLESDIR%%/ex-alert.c
 %%EXAMPLESDIR%%/ex-cert-select.c
+%%EXAMPLESDIR%%/ex-client-psk.c
 %%EXAMPLESDIR%%/ex-client-resume.c
 %%EXAMPLESDIR%%/ex-client-srp.c
 %%EXAMPLESDIR%%/ex-client-tlsia.c
@@ -61,6 +62,7 @@ share/aclocal/libgnutls.m4
 %%EXAMPLESDIR%%/ex-serv-anon.c
 %%EXAMPLESDIR%%/ex-serv-export.c
 %%EXAMPLESDIR%%/ex-serv-pgp.c
+%%EXAMPLESDIR%%/ex-serv-psk.c
 %%EXAMPLESDIR%%/ex-serv-srp.c
 %%EXAMPLESDIR%%/ex-serv1.c
 %%EXAMPLESDIR%%/ex-session-info.c
