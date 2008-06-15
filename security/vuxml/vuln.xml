@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1637 2008/06/14 05:30:17 tabthorpe Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1638 2008/06/15 12:26:18 flz Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -96,12 +96,13 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
-      <cvename>2008-1937</cvename>
+      <cvename>CVE-2008-1937</cvename>
       <url>http://hg.moinmo.in/moin/1.6/rev/f405012e67af</url>
     </references>
     <dates>
       <discovery>2008-04-20</discovery>
       <entry>2008-06-14</entry>
+      <modified>2008-06-15</modified>
     </dates>
   </vuln>
 
