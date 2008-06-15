@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/comms/conserver/files/conserver.sh,v 1.4 2001/09/08 04:08:06 obrien Exp $
+# $FreeBSD: ports/comms/conserver/files/conserver.sh.in,v 1.5 2008/06/10 19:28:06 cy Exp $
 
 # PROVIDE: conserver
 # REQUIRE: DAEMON
