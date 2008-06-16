@@ -4,7 +4,7 @@
 # Date created:		17 April 2008
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/twiki/bsd.twiki.mk,v 1.1 2008/04/22 08:36:40 sat Exp $
+# $FreeBSD: ports/www/twiki/bsd.twiki.mk,v 1.2 2008/04/30 17:18:07 sat Exp $
 #
 
 #
@@ -89,7 +89,7 @@ make-port:
 	echo '.include <bsd.port.mk>' >> Makefile &&\
 	wrksrc=`make -V WRKSRC` &&\
 	make make-dist &&\
-	mv work/*bz2 ${_DISTDIR}/ &&\
+	mv `make -V WRKDIR`/*bz2 ${_DISTDIR}/ &&\
 	make makesum create-plist &&\
 	page="$$wrksrc/data/TWiki/$$nnam.txt" &&\
 	if [ -e $$page ]; then \
