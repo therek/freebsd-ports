@@ -4,15 +4,11 @@
 # This file is used to tune build time options.
 # Please refer FEATURES file distributed with the source for details.
 #
-# $FreeBSD: ports/mail/dkim-milter/Makefile.features,v 1.9 2007/12/14 17:05:24 miwi Exp $
+# $FreeBSD: ports/mail/dkim-milter/Makefile.features,v 1.10 2008/03/07 13:26:39 miwi Exp $
 #
 
 .if defined(WITH_ANTICIPATE_SENDMAIL_MUNGE) && !defined(WITHOUT_ANTICIPATE_SENDMAIL_MUNGE)
 SITE_SUB+=	-e '/-D_FFR_ANTICIPATE_SENDMAIL_MUNGE/s|^dnl ||'
-.endif
-
-.if defined(WITH_AUTHSERV_JOBID) && !defined(WITHOUT_AUTHSERV_JOBID)
-SITE_SUB+=	-e '/-D_FFR_AUTHSERV_JOBID/s|^dnl ||'
 .endif
 
 .if defined(WITH_BODYLENGTH_DB) && !defined(WITHOUT_BODYLENGTH_DB)
