@@ -18,7 +18,7 @@ upgrades.
   AFFECTS: users of mail/dkim-milter
   AUTHOR: Hirohisa Yamaguchi <umq@ueo.co.jp>
 
-  Most of the command line options are now can be set in configure files.
+  Most of the command line options can now be set in configure files.
   So the default values (such as milterdkim_socket) are changed to blank.
   Upgrading users should check the values both in rc.conf and 
   dkim-filter.conf.
@@ -6564,4 +6564,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.645 2008/06/17 01:50:04 lippe Exp $
+$FreeBSD: ports/UPDATING,v 1.646 2008/06/17 13:20:34 wxs Exp $
