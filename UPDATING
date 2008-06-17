@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080617:
+  AFFECTS: users of editors/nvi-devel
+  AUTHOR: Wesley Shields <wxs@FreeBSD.org>
+
+  editors/nvi-devel has been changed to install nvi, nex, and nview as
+  to not conflict with editors/2bsd-vi.  Please note the new names if
+  you use this port.
+
 20080616:
   AFFECTS: users of mail/dkim-milter
   AUTHOR: Hirohisa Yamaguchi <umq@ueo.co.jp>
@@ -6556,4 +6564,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.644 2008/06/13 04:00:57 mezz Exp $
+$FreeBSD: ports/UPDATING,v 1.645 2008/06/17 01:50:04 lippe Exp $
