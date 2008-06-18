@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.450 2008/05/27 00:36:03 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.451 2008/06/02 07:42:56 itetcu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1184,9 +1184,9 @@ MASTER_SITE_SAMBA+= \
 # List:		http://dl.sv.gnu.org/releases/00_MIRRORS.html
 .if !defined(IGNORE_MASTER_SITE_SAVANNAH)
 MASTER_SITE_SAVANNAH+= \
-	http://download.savannah.nongnu.org/releases/%SUBDIR%/ \
-	http://www.de-mirrors.de/nongnu/%SUBDIR%/ \
+	http://download.savannah.gnu.org/releases/%SUBDIR%/ \
 	http://ftp.cc.uoc.gr/mirrors/nongnu.org/%SUBDIR%/ \
+	http://www.very-clever.com/download/nongnu/%SUBDIR%/ \
 	http://ftp.twaren.net/Unix/NonGNU/%SUBDIR%/ \
 	ftp://ftp.cc.uoc.gr/mirrors/nongnu.org/%SUBDIR%/ \
 	ftp://ftp.twaren.net/Unix/NonGNU/%SUBDIR%/
