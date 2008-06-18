@@ -1,11 +1,11 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/print/texinfo/pkg-install,v 1.1 2005/05/30 23:23:28 lioux Exp $
 
 [ $# != 2 ] && exit 1
 PKGNAME=$1
 ACTION=$2
 
-PATH="${PKG_PREFIX}/bin:/usr/local/bin:/usr/bin:${PATH}"
+PATH="${PKG_PREFIX}/bin:${LOCALBASE}/bin:/usr/bin:${PATH}"
 
 SETENV=env
 TEXHASH=texhash
