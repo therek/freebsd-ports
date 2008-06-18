@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1620 2008/06/18 22:55:08 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1621 2008/06/18 22:57:33 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3501,3 +3501,4 @@ math/sc|||2008-06-18|Has expired: distfile disappeared
 math/umfpack|||2008-06-18|Has expired: Outdated subset of math/suitesparse
 net/apache-soap|||2008-06-18|Has expired: Development has been ceased, superseded by www/axis.
 net/archie|||2008-06-18|Has expired: No servers active anymore
+net/xarchie|||2008-06-18|Has expired: No servers active anymore
