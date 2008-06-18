@@ -1,6 +1,5 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/comms/conserver/pkg-plist,v 1.5 2000/11/23 12:03:35 obrien Exp $
 bin/console
 etc/conserver.cf.eg
-etc/rc.d/conserver.sh
 sbin/autologin
 sbin/conserver
