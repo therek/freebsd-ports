@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1614 2008/06/18 22:26:26 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1615 2008/06/18 22:31:18 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3497,3 +3497,4 @@ emulators/linux-winetools|||2008-06-18|Has expired: very old, discontinued, and 
 games/linux-x-plane||2008-06-18|Relies on expired, unfetchable installer port
 games/linux-x-plane-net-installer|||2008-06-18|Has expired: unfetchable
 japanese/lynx|||2008-06-18|Has expired: Leaves behind config file on deinstall
+japanese/vje30|||2008-06-18|Has expired: depends on forbidden port misc/compat3x
