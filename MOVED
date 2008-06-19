@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1627 2008/06/18 23:27:38 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1628 2008/06/19 10:15:36 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3508,3 +3508,4 @@ net-mgmt/nsc|||2008-06-18|Has expired: Project abandoned
 security/amavisd|||2008-06-18|Has expired: depends on misc/compat3x, which has security problems; old version
 games/linux-goodway|||2008-06-18|A tool for a port that was removed
 graphics/gtkcairo|||2008-06-19|Unused, unfetchable, obsolete
+net/openospfd-devel|||2008-06-19|Has expired: no longer maintained
