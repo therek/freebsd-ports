@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1630 2008/06/19 15:35:39 flz Exp $
+# $FreeBSD: ports/MOVED,v 1.1631 2008/06/22 20:11:06 amdmi3 Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3511,3 +3511,5 @@ graphics/gtkcairo|||2008-06-19|Unused, unfetchable, obsolete
 net/openospfd-devel|||2008-06-19|Has expired: no longer maintained
 x11-servers/xorg-server-snap|x11-servers/xorg-server|2008-06-19|Has expired: no longer maintained
 devel/dumb|audio/dumb|2008-06-23|Moved to better category audio
+archivers/dynamite|archivers/libdynamite|2008-06-22|Moved to archivers/libdynamite.
+archivers/orange|archivers/liborange|2008-06-22|Moved to archivers/liborange.
