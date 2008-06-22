@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1631 2008/06/22 20:11:06 amdmi3 Exp $
+# $FreeBSD: ports/MOVED,v 1.1632 2008/06/22 23:04:15 lioux Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3513,3 +3513,4 @@ x11-servers/xorg-server-snap|x11-servers/xorg-server|2008-06-19|Has expired: no 
 devel/dumb|audio/dumb|2008-06-23|Moved to better category audio
 archivers/dynamite|archivers/libdynamite|2008-06-22|Moved to archivers/libdynamite.
 archivers/orange|archivers/liborange|2008-06-22|Moved to archivers/liborange.
+security/barnyard-sguil6|security/barnyard-sguil|2008-06-22|Moved to security/barnyard-sguil
