@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/snort/pkg-plist,v 1.28 2008/04/08 02:22:49 clsung Exp $
+@comment $FreeBSD: ports/security/snort/pkg-plist,v 1.29 2008/04/09 09:57:59 clsung Exp $
 bin/snort
 @unexec if cmp  -s %D/etc/snort/classification.config-sample %D/etc/snort/classification.config; then rm -f %D/etc/snort/classification.config; fi
 etc/snort/classification.config-sample
@@ -118,6 +118,7 @@ etc/snort/unicode.map-sample
 %%PORTDOCS%%%%DOCSDIR%%/README.database
 %%PORTDOCS%%%%DOCSDIR%%/README.dcerpc
 %%PORTDOCS%%%%DOCSDIR%%/README.decode
+%%PORTDOCS%%%%DOCSDIR%%/README.decoder_preproc_rules
 %%PORTDOCS%%%%DOCSDIR%%/README.dns
 %%PORTDOCS%%%%DOCSDIR%%/README.event_queue
 %%PORTDOCS%%%%DOCSDIR%%/README.flow
