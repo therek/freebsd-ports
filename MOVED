@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1634 2008/06/23 00:45:15 lippe Exp $
+# $FreeBSD: ports/MOVED,v 1.1635 2008/06/23 02:06:08 araujo Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3516,3 +3516,4 @@ archivers/orange|archivers/liborange|2008-06-22|Moved to archivers/liborange.
 security/barnyard-sguil6|security/barnyard-sguil|2008-06-22|Moved to security/barnyard-sguil
 java/bsh|lang/bsh|2008-06-22|Moved to lang/bsh
 www/mod_security2|www/mod_security21|2008-06-22|Moved to www/mod_security2.
+security/gnutls-devel||2008-06-23|Removed
