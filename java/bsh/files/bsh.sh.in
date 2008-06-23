@@ -1,5 +1,0 @@
-#!/bin/sh
-#
-# $FreeBSD: ports/java/bsh/files/bsh.sh.in,v 1.1 2005/02/03 01:53:24 hq Exp $
-
-JAVA_VERSION=1.2+ "%%LOCALBASE%%/bin/java" -jar "%%JAVAJARDIR%%/bsh.jar" "$@"
