@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/php-Auth_OpenID2/pkg-plist,v 1.1 2007/06/14 02:41:41 clsung Exp $
 %%EXAMPLESDIR%%/README
 %%EXAMPLESDIR%%/consumer/common.php
 %%EXAMPLESDIR%%/consumer/finish_auth.php
