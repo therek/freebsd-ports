@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/sonata/pkg-plist,v 1.8 2008/04/05 16:38:49 nivit Exp $
+@comment $FreeBSD: ports/audio/sonata/pkg-plist,v 1.9 2008/05/21 16:02:32 nivit Exp $
 bin/sonata
 %%PYTHON_SITELIBDIR%%/mmkeys.so
 %%PYTHON_SITELIBDIR%%/sonata/__init__.py
@@ -43,6 +43,7 @@ share/locale/pl/LC_MESSAGES/sonata.mo
 share/locale/pt_BR/LC_MESSAGES/sonata.mo
 share/locale/ru/LC_MESSAGES/sonata.mo
 share/locale/sv/LC_MESSAGES/sonata.mo
+share/locale/tr/LC_MESSAGES/sonata.mo
 share/locale/uk/LC_MESSAGES/sonata.mo
 share/locale/zh_CN/LC_MESSAGES/sonata.mo
 share/pixmaps/sonata-album.png
