@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.593 2008/05/27 22:12:02 miwi Exp $
+# $FreeBSD$
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -443,6 +443,9 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  Implies the inclusion of bsd.gnustep.mk.
 #				  (Also see that file for more information on
 #				  USE_GNUSTEP_*).
+##
+# USE_GECKO		- If set, this port uses the Gecko/Mozilla product.
+#				  See bsd.gecko.mk for more details.
 ##
 # USE_GNOME		- A list of the Gnome dependencies the port has (e.g.,
 #				  glib12, gtk12).  Implies that the port needs Gnome.
@@ -1497,6 +1500,10 @@ PERL=		${LOCALBASE}/bin/perl
 .include "${PORTSDIR}/Mk/bsd.qt.mk"
 .endif
 
+.if defined(WANT_GECKO) || defined(USE_GECKO)
+.include "${PORTSDIR}/Mk/bsd.gecko.mk"
+.endif
+
 .if defined(WANT_GNOME) || defined(USE_GNOME) || defined(USE_GTK)
 .include "${PORTSDIR}/Mk/bsd.gnome.mk"
 .endif
@@ -2004,6 +2011,10 @@ PLIST_SUB+=		PERL_VERSION=${PERL_VERSION} \
 
 .if defined(USE_AUTOTOOLS)
 .include "${PORTSDIR}/Mk/bsd.autotools.mk"
+.endif
+
+.if defined(WANT_GECKO) || defined(USE_GECKO)
+.include "${PORTSDIR}/Mk/bsd.gecko.mk"
 .endif
 
 .if defined(WANT_GNOME) || defined(USE_GNOME) || defined(USE_GTK)
