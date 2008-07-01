@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/p5-Catalyst-Model-LDAP/pkg-plist,v 1.1 2008/06/30 11:35:09 az Exp $
 %%SITE_PERL%%/Catalyst/Helper/Model/LDAP.pm
 %%SITE_PERL%%/Catalyst/Model/LDAP.pm
 %%SITE_PERL%%/Catalyst/Model/LDAP/Connection.pm
@@ -9,4 +9,7 @@
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Catalyst/Model
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Catalyst
 @dirrmtry %%SITE_PERL%%/Catalyst/Model/LDAP
+@dirrmtry %%SITE_PERL%%/Catalyst/Model
+@dirrmtry %%SITE_PERL%%/Catalyst/Helper/Model
+@dirrmtry %%SITE_PERL%%/Catalyst/Helper
 @dirrmtry %%SITE_PERL%%/Catalyst
