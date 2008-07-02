@@ -6,6 +6,31 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080701
+  AFFECTS: users of devel/subversion*
+  AUTHOR: Lev Serebryakov <lev@FreeBSD.org>
+
+  subversion now uses neon-0.28.x (www/neon28) port, and automatic
+  portupgrade will fail because neon26 will conflict with installed
+  neon26.
+  You should upgrade neon library tohgether with subversion with
+
+  # portupgrade -o www/neon28 neon subversion
+
+  command.
+
+  Also, if you use special subversion port with bindings, you
+  should upgrade your port to clean subversion port with
+
+  # portupgrade -o devel/subversion subversion-\*
+
+  and install needed bindings (p5-subversion, py-subversion and/or
+  ruby-subversion) after that.
+
+  If you use subversion with bindings, installed from devel/subversion
+  with custom options, don't forget to install separate bindings ports
+  after subversion upgrade.
+
 20080630:
   AFFECTS: users of graphics/poppler* and future users of firefox3
   AUTHOR: FreeBSD GNOME Team <gnome@FreeBSD.org>
@@ -6637,4 +6662,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.654 2008/06/30 20:20:47 mezz Exp $
+$FreeBSD: ports/UPDATING,v 1.655 2008/07/01 04:11:06 marcus Exp $

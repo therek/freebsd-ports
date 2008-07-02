@@ -2,13 +2,14 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.1 2008/06/30 10:00:04 lev Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.2 2008/06/30 12:39:14 lev Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.5.0
+PORTREVISION?=	1
 CATEGORIES+=	devel
 MASTER_SITES=	http://subversion.tigris.org/downloads/:main \
-		http://svnbook.red-bean.com/nightly/en/:book
+		http://svnbook.red-bean.com/en/1.4/:book
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}:main
 DIST_SUBDIR=	subversion
 EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
@@ -22,7 +23,11 @@ WANT_PERL=	yes
 .include <bsd.port.pre.mk>
 
 .if defined(SVN_BUILD_BINDINGS)
+.if defined(WITH_FREEBSD_SUBVERSION)
+LIB_DEPENDS+=	svn_client-1:${PORTSDIR}/devel/subversion-freebsd
+.else
 LIB_DEPENDS+=	svn_client-1:${PORTSDIR}/devel/subversion
+.endif
 EXTRA_PATCHES+=	${PATCHDIR}/bindings-patch-subversion--bindings--swig--perl--native--Makefile.PL.in
 .endif
 
