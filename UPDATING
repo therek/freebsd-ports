@@ -7,6 +7,26 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20080702:
+  AFFECTS: users of irc/ratbox-services
+  AUTHOR: Beech Rintoul <beech@FreeBSD.org>
+
+  Configuration file and database changes have been made between the
+  1.1.x series and the current release version of ratbox-services.
+
+  It is highly recommended that services be stopped, and the proper
+  upgrade procedure be followed as described in
+  '/usr/local/share/doc/ratbox-services/', before restarting
+  ratbox-services using the new release version.
+
+  Please remember to backup the database before attempting an
+  upgrade, an incorrectly upgraded database may be rendered unusable.
+
+  The ratbox-services-1.2.x branch implements multi-language support.
+  However, an inconsistency in the language indexing may result in
+  errors. It is therefore recommended that the English default be
+  used until the next version release.
+
+20080702:
   AFFECTS: users of mail/nocc
   AUTHOR: Alex Dupre <ale@FreeBSD.org>
 
@@ -6673,4 +6693,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.657 2008/07/02 06:11:28 ale Exp $
+$FreeBSD: ports/UPDATING,v 1.658 2008/07/02 17:53:05 mezz Exp $
