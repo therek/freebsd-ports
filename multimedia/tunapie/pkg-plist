@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/tunapie/pkg-plist,v 1.9 2006/12/23 23:28:06 nivit Exp $
+@comment $FreeBSD: ports/multimedia/tunapie/pkg-plist,v 1.10 2007/12/26 21:18:03 nivit Exp $
 bin/tunapie
 @unexec if cmp -s %D/etc/tunapie.config %D/etc/tunapie.config.default; then rm -f %D/etc/tunapie.config; fi
 etc/tunapie.config.default
@@ -6,6 +6,8 @@ etc/tunapie.config.default
 share/pixmaps/tplogo.xpm
 %%DATADIR%%/AboutTuner.py
 %%DATADIR%%/AboutTuner.pyc
+%%DATADIR%%/AddStream.py
+%%DATADIR%%/AddStream.pyc
 %%DATADIR%%/RecordQueue.py
 %%DATADIR%%/RecordQueue.pyc
 %%DATADIR%%/RecordTime.py
