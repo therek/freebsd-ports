@@ -4,10 +4,21 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.1 2008/06/30 20:16:17 mezz Exp $
 #   $MCom: ports-stable/Mk/bsd.gecko.mk,v 1.8 2008/06/20 22:17:41 mezz Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
+
+# ======================= USERS =================================
+# To specify which gecko-based backend you prefer, use something like:
+#
+# WITH_GECKO=	firefox3
+#
+# The valid backends are:
+# firefox firefox3 flock nvu seamonkey thunderbird xulrunner
+#
+# See below for more details.
+# ======================= /USERS ================================
 
 # bsd.gecko.mk abstracts the selection of gecko-based backends. It allows users
 # and porters to support any available gecko backend without needing to build
