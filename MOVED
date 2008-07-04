@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1639 2008/06/30 20:27:07 gahr Exp $
+# $FreeBSD: ports/MOVED,v 1.1640 2008/07/02 02:54:23 maho Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3525,3 +3525,5 @@ misc/goblin|math/goblin|2008-06-30|repo move to a better category
 editors/openoffice.org-1.0||2008-07-02|Removed
 editors/openoffice.org-1.1||2008-07-02|Removed
 editors/openoffice.org-1.1-devel||2008-07-02|Removed
+deskutils/gdeskcal||2008-07-03|Disappeared from master site
+deskutils/gdeskcal-skins||2008-07-03|Disappeared from master site
