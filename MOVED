@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1643 2008/07/05 00:14:19 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1644 2008/07/05 00:42:29 beech Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3530,3 +3530,4 @@ deskutils/gdeskcal-skins||2008-07-03|Disappeared from master site
 deskutils/gnome-menu-editor||2008-07-03|Disappeared from master site and take over by alacarte
 textproc/dictum-emacs22||2008-07-05|Assimilated into textproc/dictum
 www/drupal5-gsitemap|www/drupal5-xmlsitemap|2008-07-04|Rename after vendor name change
+sysutils/gnu-unifont|x11-fonts/gun-unifont|2008-07-05|Category change
