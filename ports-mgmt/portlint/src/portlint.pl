@@ -16,7 +16,7 @@
 # This code now mainly supports FreeBSD, but patches to update support for
 # OpenBSD and NetBSD will be accepted.
 #
-# $FreeBSD$
+# $FreeBSD: ports/ports-mgmt/portlint/src/portlint.pl,v 1.99 2008/07/05 06:02:28 marcus Exp $
 # $MCom: portlint/portlint.pl,v 1.155 2008/07/05 06:01:38 marcus Exp $
 #
 
