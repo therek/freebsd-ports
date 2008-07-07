@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/archivers/rpm5/files/patch-macros.in,v 1.1 2005/02/18 17:50:01 glewis Exp $
 
 --- macros.in.orig	Tue Feb 15 16:35:27 2005
 +++ macros.in	Tue Feb 15 16:36:14 2005

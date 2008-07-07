@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/archivers/rpm5/files/patch-configure,v 1.4 2006/09/12 16:06:24 glewis Exp $
 
 --- configure.orig	Thu Feb 14 02:03:27 2002
 +++ configure	Tue Sep 12 10:54:53 2006
