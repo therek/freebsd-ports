@@ -41,7 +41,7 @@ upgrades.
   AFFECTS: users of misc/shared-mime-info
   AUTHOR: FreeBSD GNOME Team <gnome@FreeBSD.org>
 
-  The misc/shared-mime-info has bee updated to 0.40. The Mime Types caches
+  The misc/shared-mime-info has been updated to 0.40. The Mime Types caches
   have been changed a bit. If you have created any custom MIME types. You
   will need to run update-mime-database to update your local Mime Types
   caches.
@@ -6743,4 +6743,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.663 2008/07/08 18:56:00 nox Exp $
+$FreeBSD: ports/UPDATING,v 1.664 2008/07/09 19:09:59 brix Exp $
