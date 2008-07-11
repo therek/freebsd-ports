@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.44 2007/12/27 06:52:45 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.45 2008/01/21 07:19:24 ale Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -234,7 +234,7 @@ php-ini:
 # Extensions
 .if defined(_POSTMKINCLUDED) && ${USE_PHP:L} != "yes"
 # non-version specific components
-_USE_PHP_ALL=	bcmath bitset bz2 calendar ctype curl dba dbase \
+_USE_PHP_ALL=	apc bcmath bitset bz2 calendar ctype curl dba dbase \
 		exif fileinfo fribidi ftp gd gettext gmp \
 		hash iconv imap interbase json ldap mbstring mcrypt \
 		memcache mhash mssql mysql ncurses odbc \
@@ -249,6 +249,7 @@ _USE_PHP_VER5=	${_USE_PHP_ALL} dom filter ming mysqli oci8 pdo \
 		pdo_mysql pdo_sqlite \
 		simplexml soap spl sqlite tidy xmlreader xmlwriter xsl
 
+apc_DEPENDS=	www/pecl-APC
 bcmath_DEPENDS=	math/php${PHP_VER}-bcmath
 bitset_DEPENDS=	math/pecl-bitset
 bz2_DEPENDS=	archivers/php${PHP_VER}-bz2
