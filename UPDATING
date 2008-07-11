@@ -138,8 +138,8 @@ upgrades.
   AUTHOR: Anders Troback <freebsd@troback.com>
 
   Before you upgrade from 2.x to 3.x you need to export your existing 
-  databases to a generic format like gedcom. After the upgrade you can
-  import them into the new version.
+  databases to a GRAMPS XML file. After the upgrade you can import
+  them into the new version.
 
 20080624:
   AFFECTS: users of irc/ircd-ratbox-devel
@@ -6743,4 +6743,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.664 2008/07/09 19:09:59 brix Exp $
+$FreeBSD: ports/UPDATING,v 1.665 2008/07/10 02:41:11 beech Exp $
