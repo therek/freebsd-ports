@@ -91,7 +91,7 @@ upgrades.
   subversion now uses neon-0.28.x (www/neon28) port, and automatic
   portupgrade will fail because neon26 will conflict with installed
   neon26.
-  You should upgrade neon library tohgether with subversion with
+  You should upgrade neon library together with subversion with
 
   # portupgrade -o www/neon28 neon subversion
 
@@ -311,7 +311,7 @@ upgrades.
 
   Nginx version lines have been changed: 0.5 -> 0.6 for stable and
   0.6 -> 0.7 for development version.  Make sure your configuration
-  files are compatible with the new viersion.
+  files are compatible with the new version.
 
 20080519:
   AFFECTS: users of irc/bitlbee
@@ -6752,4 +6752,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.666 2008/07/11 15:15:34 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.667 2008/07/11 19:12:32 beech Exp $
