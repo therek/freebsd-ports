@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1648 2008/07/11 13:02:53 knu Exp $
+# $FreeBSD: ports/MOVED,v 1.1649 2008/07/14 00:26:38 beech Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
