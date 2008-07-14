@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080712:
+  AFFECTS: users of databases/rrdtool
+  AUTHOR: rafan@FreeBSD.org
+
+  If you use language bindings, like the Perl's RRDs, please upgrade
+  this port *twice* in order to get the library dependency right.
+
 20080711:
   AFFECTS: users of x11-toolkits/gtkdatabox2
   AUTHOR: Beech Rintoul <beech@FreeBSD.org>
@@ -6752,4 +6759,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.667 2008/07/11 19:12:32 beech Exp $
+$FreeBSD: ports/UPDATING,v 1.668 2008/07/14 08:15:11 blackend Exp $
