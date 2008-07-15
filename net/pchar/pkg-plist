@@ -1,6 +1,6 @@
-@comment $FreeBSD: ports/net/pchar/pkg/PLIST,v 1.1.1.1 1999/11/04 08:33:27 obrien Exp $
+@comment $FreeBSD: ports/net/pchar/pkg-plist,v 1.2 2000/06/21 15:34:47 sobomax Exp $
 sbin/pchar
-share/doc/pchar/CHANGES
-share/doc/pchar/FAQ
-share/doc/pchar/README
-@dirrm share/doc/pchar
+%%PORTDOCS%%%%DOCSDIR%%/CHANGES
+%%PORTDOCS%%%%DOCSDIR%%/FAQ
+%%PORTDOCS%%%%DOCSDIR%%/README
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
