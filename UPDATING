@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080717:
+   AFFECTS: Users of devel/anjuta
+   Author: gnome@FreeBSD.org
+
+   Anjuta's neon dependency has been switched from neon26 to neon28.  The
+   two are incompatible, so you will need to do the following to upgrade:
+
+   portupgrade -o www/neon28 neon26
+   portupgrade anjuta
+
 20080714:
   AFFECTS: Users of www/squid
   Author: Thomas-Martin Seck <tmseck@web.de>
@@ -6784,4 +6794,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.671 2008/07/14 19:20:35 beech Exp $
+$FreeBSD: ports/UPDATING,v 1.672 2008/07/16 21:28:42 simon Exp $
