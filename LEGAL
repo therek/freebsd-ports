@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.577 2008/04/05 20:30:55 thierry Exp $
+# $FreeBSD: ports/LEGAL,v 1.578 2008/04/20 15:20:43 thierry Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -186,6 +186,7 @@ emc2*			math/emc2		Contact author personally
 						regarding commercial use
 et-linux-*		games/linux-enemyterritory Redistribution limited
 etf_*			games/linux-enemyterritory-fortress Redistribution limited
+etqw			games/linux-etqw-server Redistribution limited
 ezmlm-*			mail/ezmlm		No license -- see
 						http://cr.yp.to/softwarelaw.html
 ezmlm-*			mail/ezmlm-idx		No license -- see
