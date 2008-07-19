@@ -6,6 +6,17 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080719:
+  AFFECTS: users of x11-fm/gprename
+  AUTHOR: Martin Tournoij <carpetsmoker@rwxrwxrwx.net>
+
+  GPRename configuration files now live ~/.config/gprename instead of ~/, to
+  upgrade use:
+
+  % mkdir -p ~/.config/gprename
+  % mv ~/.gprename ~/.config/gprename/gprename
+  % mv ~/.gprename_log ~/.config/gprename/gprename_log
+
 20080717:
   AFFECTS: Users of devel/anjuta
   Author: gnome@FreeBSD.org
@@ -6794,4 +6805,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.673 2008/07/17 18:25:01 marcus Exp $
+$FreeBSD: ports/UPDATING,v 1.674 2008/07/17 22:51:19 timur Exp $
