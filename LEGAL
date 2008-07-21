@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.581 2008/07/19 16:24:00 miwi Exp $
+# $FreeBSD: ports/LEGAL,v 1.582 2008/07/19 16:35:05 miwi Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -277,6 +277,7 @@ goPod-*			misc/*gopod		Unclear legal status in EU
 grande-KXL-*.tar.gz	games/grande		Possible copyright infringement
 graphviz-*		graphics/graphviz	Needs license before fetching
 groupoffice-com-*	www/groupoffice		Free for personal use only
+gsview*			print/gsview		Can only be distributed for free
 GTL-*			misc/gtl		Non-commercial use only,
 						license forbids redistribution
 hcfmdm/*		comms/hcfmdm		No redistribution allowed
