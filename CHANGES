@@ -10,6 +10,13 @@ in the release notes.
 
 All ports committers are allowed to commit to this file.
 
+20080721:
+AUTHOR: pav@FreeBSD.org
+
+  * Default OpenLDAP version was changed from 2.3 to 2.4.
+
+  * USE_GTK and USE_XPM variables are no longer recognized.
+
 20080523:
 AUTHOR: flz@FreeBSD.org
 
@@ -1445,4 +1452,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.81 2008/04/14 16:51:40 pav Exp $
+$FreeBSD: ports/CHANGES,v 1.82 2008/06/10 10:03:29 flz Exp $
