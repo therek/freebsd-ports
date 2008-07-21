@@ -13,7 +13,7 @@ upgrades.
   Please note that there has been a major update of this port (From
   vesion 2.x to 5.x) and that the name of the binaries and configuration
   files has changed from "tpsc" to "gw6c". The configuration files
-  have to be opied from ${PREFIX}/share/examples/freenet6 to
+  have to be copied from ${PREFIX}/share/examples/freenet6 to
   ${PREFIX}/etc again.
 
 20080719:
@@ -6815,4 +6815,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.675 2008/07/19 14:08:55 rafan Exp $
+$FreeBSD: ports/UPDATING,v 1.676 2008/07/20 14:05:31 edwin Exp $
