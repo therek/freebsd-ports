@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.ldap.mk,v 1.1 2008/07/21 22:29:22 pav Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Ldap_Post_Include)
@@ -34,7 +34,7 @@ Database_Include_MAINTAINER=	ports@FreeBSD.org
 #				- Detected OpenLDAP version.
 
 .if defined(USE_OPENLDAP)
-DEFAULT_OPENLPAP_VER?=	24
+DEFAULT_OPENLDAP_VER?=	24
 # OpenLDAP client versions currently supported
 OPENLDAP23_LIBVER=	2.3.2
 OPENLDAP24_LIBVER=	2.4.3
