@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.1 2008/06/30 20:16:17 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.2 2008/07/04 08:14:21 adamw Exp $
 #   $MCom: ports-stable/Mk/bsd.gecko.mk,v 1.8 2008/06/20 22:17:41 mezz Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -79,12 +79,7 @@ Gecko_Pre_Include=			bsd.gecko.mk
 #		${WRKSRC}/configure
 #  .endif
 
-.if ${OSVERSION} >= 500000
-.if (${ARCH}!="sparc64" || ${OSVERSION} >= 601101) && ${ARCH}!="ia64"
-_GECKO_ALL=	firefox nvu seamonkey thunderbird xulrunner flock firefox3
-.endif
-.endif
-_GECKO_ALL+=	mozilla
+_GECKO_ALL=	firefox nvu seamonkey thunderbird xulrunner flock firefox3 mozilla
 
 thunderbird_PORTSDIR=	mail
 
