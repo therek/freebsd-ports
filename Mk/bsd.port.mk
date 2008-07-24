@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.597 2008/07/20 03:35:42 delphij Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.598 2008/07/21 22:29:22 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1579,6 +1579,10 @@ PLIST_REINPLACE+=	dirrmtry stopdaemon rmtry
 PLIST_REINPLACE_DIRRMTRY=s!^@dirrmtry \(.*\)!@unexec rmdir %D/\1 2>/dev/null || true!
 PLIST_REINPLACE_RMTRY=s!^@rmtry \(.*\)!@unexec rm -f %D/\1 2>/dev/null || true!
 PLIST_REINPLACE_STOPDAEMON=s!^@stopdaemon \(.*\)!@unexec %D/etc/rc.d/\1${RC_SUBR_SUFFIX} forcestop 2>/dev/null || true!
+
+# kludge to strip trailing whitespace from CFLAGS;
+# sub-configure will not # survive double space
+CFLAGS:=	${CFLAGS:C/ $//}
 
 .if defined(WITHOUT_CPU_CFLAGS)
 .if defined(_CPUCFLAGS)
