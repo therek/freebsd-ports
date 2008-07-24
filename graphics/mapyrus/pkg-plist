@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/mapyrus/pkg-plist,v 1.3 2006/11/27 13:24:29 miwi Exp $
+@comment $FreeBSD: ports/graphics/mapyrus/pkg-plist,v 1.4 2008/03/31 22:15:39 nivit Exp $
 bin/mapyrus
 %%PORTDOCS%%%%DOCSDIR%%/mapyrus.pdf
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/aust_cities.dat
@@ -44,6 +44,7 @@ bin/mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialdatasets6.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialdatasets7.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialdatasets8.mapyrus
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialdatasets9.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialeps1.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialexisting1.mapyrus
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tutorialfirst1.mapyrus
