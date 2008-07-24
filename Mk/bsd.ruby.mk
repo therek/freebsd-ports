@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.169 2008/06/21 10:34:53 stas Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.170 2008/06/25 23:00:27 stas Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -423,7 +423,7 @@ GEMFILES=	${DISTNAME}${EXTRACT_SUFX}
 
 do-install:
 .for _D in ${GEMFILES}
-	${SETENV} ${GEM_ENV} ${RUBYGEMBIN} install --no-update-sources --no-ri --install-dir ${PREFIX}/lib/ruby/gems/${RUBY_VER} ${DISTDIR}/${DIST_SUBDIR}/${_D} -- --build-args ${CONFIGURE_ARGS}
+	${SETENV} ${GEM_ENV} ${RUBYGEMBIN} install -l --no-update-sources --no-ri --install-dir ${PREFIX}/lib/ruby/gems/${RUBY_VER} ${DISTDIR}/${DIST_SUBDIR}/${_D} -- --build-args ${CONFIGURE_ARGS}
 .endfor
 
 .endif # USE_RUBYGEMS
