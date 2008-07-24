@@ -31,7 +31,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.16 2008/05/05 23:26:30 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.17 2008/06/28 16:52:40 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -195,8 +195,6 @@ CXX:=			g++${V}
 .if defined(_GCC_BUILD_DEPENDS)
 BUILD_DEPENDS+=	${_GCC_PORT_DEPENDS}:${PORTSDIR}/lang/${_GCC_BUILD_DEPENDS}
 .endif
-
-MAKE_ENV+=	CC="${CC}" CXX="${CXX}" CFLAGS="${CFLAGS}"
 
 .endif
 # defined(USE_GCC)

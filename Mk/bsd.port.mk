@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.598 2008/07/21 22:29:22 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.599 2008/07/24 21:55:47 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2091,8 +2091,9 @@ MAKE_FLAGS?=	-f
 MAKEFILE?=		Makefile
 MAKE_ENV+=		PREFIX=${PREFIX} \
 			LOCALBASE=${LOCALBASE} X11BASE=${X11BASE} \
-			MOTIFLIB="${MOTIFLIB}" LIBDIR="${LIBDIR}" CFLAGS="${CFLAGS}" \
-			CXXFLAGS="${CXXFLAGS}" MANPREFIX="${MANPREFIX}"
+			MOTIFLIB="${MOTIFLIB}" LIBDIR="${LIBDIR}" \
+			CC="${CC}" CFLAGS="${CFLAGS}" CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" \
+			MANPREFIX="${MANPREFIX}"
 
 # Add -fno-strict-aliasing to CFLAGS with optimization level -O2 or higher.
 # gcc 4.x enable strict aliasing optimization with -O2 which is known to break
