@@ -7,6 +7,17 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20080725:
+  AFFECTS: users of x11-fm/nautilus and misc/shared-mime-info
+  Author: gnome@FreeBSD.org
+
+  In order to properly update x11-fm/nautilus and
+  misc/shared-mime-info, do the following using portupgrade:
+
+# pkg_deinstall -fO nautilus
+# portupgrade shared-mime-info
+# portinstall -O nautilus
+
+20080725:
   AFFECTS: users of www/ojs2
   Author: Greg Larkin <glarkin@FreeBSD.org>
 
@@ -6839,4 +6850,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.680 2008/07/23 15:06:23 danfe Exp $
+$FreeBSD: ports/UPDATING,v 1.681 2008/07/25 18:59:15 glarkin Exp $
