@@ -8,7 +8,7 @@ upgrades.
 
 20080727:
   AFFECTS: users of www/firefox3
-  Author: gnome@FreeBSD.org
+  AUTHOR: gnome@FreeBSD.org
 
   Update to 3.0.1_1,1; it no longer seek for plugins in lib/browser_plugins,
   because a few plugins that built with Firefox 2 can causes Firefox 3
@@ -6871,4 +6871,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.684 2008/07/27 20:10:00 danfe Exp $
+$FreeBSD: ports/UPDATING,v 1.685 2008/07/27 20:21:30 mezz Exp $
