@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/x11/gdm/files/gdm.in,v 1.7 2008/03/24 03:50:24 marcus Exp $
+# $FreeBSD: ports/x11/gdm/files/gdm.in,v 1.8 2008/03/26 03:14:12 marcus Exp $
 #    $MCom: ports/x11/gdm/files/gdm.in,v 1.28 2008/03/11 04:21:47 mezz Exp $
 
 # PROVIDE: gdm
@@ -14,6 +14,7 @@
 . %%GNOME_SUBR%%
 
 gdm_enable=${gdm_enable-${gnome_enable}}
+gdm_preserve_base_pam_conf=${gdm_preserve_base_pam_conf-NO}
 
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin:%%LOCALBASE%%/bin:%%LOCALBASE%%/sbin
 
@@ -30,6 +31,12 @@ gdm_start()
 	return 0
     fi
     echo "Starting ${name}."
+
+    # make sure there is no pam configuration for gdm service in base system
+    if ! checkyesno gdm_preserve_base_pam_conf && [ -f /etc/pam.d/gdm ]; then
+	cp -p /etc/pam.d/gdm /etc/pam.d/gdm_disabled
+    	rm -f /etc/pam.d/gdm
+    fi
 
     ( iter=0
     while ! ps -axoargs | grep "^/usr/libexec/getty " | grep -qv grep >/dev/null 2>&1; do
