@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-Test-Parser/pkg-plist,v 1.2 2006/09/09 17:48:26 rafan Exp $
+@comment $FreeBSD: ports/devel/p5-Test-Parser/pkg-plist,v 1.3 2007/02/06 06:28:06 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Test/Parser/.packlist
 %%SITE_PERL%%/Test/Metadata.pm
 %%SITE_PERL%%/Test/Parser.pm
@@ -7,6 +7,7 @@
 %%SITE_PERL%%/Test/Parser/Dbt5.pm
 %%SITE_PERL%%/Test/Parser/Iostat.pm
 %%SITE_PERL%%/Test/Parser/KernelBuild.pm
+%%SITE_PERL%%/Test/Parser/Mpstat.pm
 %%SITE_PERL%%/Test/Parser/Oprofile.pm
 %%SITE_PERL%%/Test/Parser/PgOptions.pm
 %%SITE_PERL%%/Test/Parser/Readprofile.pm
