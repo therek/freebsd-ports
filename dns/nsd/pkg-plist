@@ -1,11 +1,11 @@
-@comment $FreeBSD: ports/dns/nsd/pkg-plist,v 1.4 2005/02/07 21:51:13 edwin Exp $
-etc/rc.d/nsd.sh
 etc/nsd/nsd.conf.sample
 sbin/nsd
-sbin/zonec
-sbin/nsdc
-sbin/nsd-notify
 sbin/nsd-checkconf
+sbin/nsd-notify
 sbin/nsd-patch
 sbin/nsd-xfer
+sbin/nsdc
+sbin/zonec
 @dirrm etc/nsd
+@cwd /
+@dirrm var/db/nsd
