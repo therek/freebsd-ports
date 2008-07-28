@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.452 2008/06/18 19:47:22 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.453 2008/06/23 12:18:35 tdb Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -785,7 +785,6 @@ MASTER_SITE_MOZILLA_EXTENDED+=	\
 
 .if !defined(IGNORE_MASTER_SITE_MYSQL)
 MASTER_SITE_MYSQL+=	\
-	ftp://ftp.easynet.be/mysql/Downloads/%SUBDIR%/ \
 	ftp://ftp.fi.muni.cz/pub/mysql/Downloads/%SUBDIR%/ \
 	http://mysql.mirrors.cybercity.dk/Downloads/%SUBDIR%/ \
 	ftp://ftp.fh-wolfenbuettel.de/pub/database/mysql/Downloads/%SUBDIR%/ \
@@ -807,6 +806,7 @@ MASTER_SITE_MYSQL+=	\
 	ftp://mysql.bannerlandia.com.ar/mirrors/mysql/Downloads/%SUBDIR%/ \
 	ftp://ftp.linorg.usp.br/mysql/Downloads/%SUBDIR%/ \
 	ftp://ftp.cbn.net.id/mirror/mysql/Downloads/%SUBDIR%/ \
+	ftp://ftp.easynet.be/mysql/Downloads/%SUBDIR%/ \
 	http://download.softagency.net/MySQL/Downloads/%SUBDIR%/
 .endif
 
