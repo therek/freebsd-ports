@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/nsd/files/nsd.sh.tmpl,v 1.3 2006/09/23 08:07:48 rafan Exp $
+# $FreeBSD: ports/dns/nsd/files/nsd.in,v 1.1 2008/07/28 22:25:55 pgollucci Exp $
 #
 # PROVIDE: nsd
 # REQUIRE: DAEMON
@@ -15,17 +15,14 @@
 name=nsd
 rcvar=`set_rcvar`
 
-prefix=%%PREFIX%%
-
 required_files=%%PREFIX%%/etc/nsd/nsd.conf
 
-command=/usr/local/sbin/${name}
+command=%%PREFIX%%/sbin/${name}
 pidfile=/var/run/${name}.pid
 
 load_rc_config ${name}
 
-nsd_enable=${nsd_enable:-"NO"}
-nsd_flags=${nsd_flags:-""}
+nsd_enable=${nsd_enable-"NO"}
 
 run_rc_command "$1"
 
