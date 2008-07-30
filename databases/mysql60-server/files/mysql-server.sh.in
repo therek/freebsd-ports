@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/mysql60-server/files/mysql-server.sh.in,v 1.7 2008/07/26 08:33:37 ale Exp $
 #
 
 # PROVIDE: mysql
@@ -36,7 +36,7 @@ mysql_user="mysql"
 mysql_limits_args="-e -U ${mysql_user}"
 pidfile="${mysql_dbdir}/`/bin/hostname`.pid"
 command="%%PREFIX%%/bin/mysqld_safe"
-command_args="--defaults-extra-file=${mysql_dbdir}/my.cnf --user=${mysql_user} --datadir=${mysql_dbdir} --pid-file=${pidfile} ${mysql_args} > /dev/null &"
+command_args="--defaults-extra-file=${mysql_dbdir}/my.cnf --user=${mysql_user} --datadir=${mysql_dbdir} --pid-file=${pidfile} ${mysql_args} > /dev/null 2>&1 &"
 procname="%%PREFIX%%/libexec/mysqld"
 start_precmd="${name}_prestart"
 start_postcmd="${name}_poststart"
