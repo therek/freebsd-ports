@@ -1,10 +1,11 @@
-@comment $FreeBSD: ports/editors/morla/pkg-plist,v 1.1 2006/04/10 17:49:08 jylefort Exp $
+@comment $FreeBSD: ports/editors/morla/pkg-plist,v 1.2 2007/08/24 13:20:02 nivit Exp $
 bin/morla
 include/morla-module.h
 lib/morla/index.xml
 lib/morla/libmorla_test.a
 lib/morla/libmorla_test.la
 lib/morla/libmorla_test.so
+libdata/ldconfig/morla
 share/locale/it/LC_MESSAGES/morla.mo
 %%DATADIR%%/bootsplash.png
 %%DATADIR%%/icons/128_BN.png
