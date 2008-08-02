@@ -3,16 +3,13 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.14 2007/12/29 13:36:07 pav Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.15 2008/04/19 17:52:38 miwi Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
 # the WITHOUT_ will always over ride the WITH_.
 #
 # Interface Knobs:
-#
-# WITH_CORBA
-#  Enable a Corba interface via orbit2
 #
 # WITH_NCURSES=yes
 #  Ncurses (console) interface
@@ -50,10 +47,6 @@
 #  Flac Support
 #
 
-# WITHOUT_LAME=yes
-#  Mp3 encoder Support
-#   ** NOT DEFINED if PACKAGE_BUILDING is defined **
-#
 # WITHOUT_A52=yes
 #  liba52 audio support
 #
