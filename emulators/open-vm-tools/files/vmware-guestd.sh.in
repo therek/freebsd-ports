@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/emulators/open-vm-tools/files/vmware-guestd.sh.in,v 1.1 2008/03/28 13:30:31 mbr Exp $
+# $FreeBSD: ports/emulators/open-vm-tools/files/vmware-guestd.sh.in,v 1.2 2008/05/15 17:24:29 mbr Exp $
 #
 
 # PROVIDE: vmware-guestd
@@ -11,7 +11,7 @@ PREFIX=%%PREFIX%%
 . %%RC_SUBR%%
 
 # Global
-checkvm_cmd="${PREFIX}/sbin/vmware-checkvm > /dev/null"
+checkvm_cmd="${PREFIX}/bin/vmware-checkvm > /dev/null"
 
 # VMware guest daemon
 name="vmware_guestd"
