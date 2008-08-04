@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1659 2008/07/27 13:54:40 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1660 2008/07/27 14:12:59 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3541,3 +3541,9 @@ devel/legoctl|devel/roboctl|2008-07-26|Port was renamed
 games/ssamtse|games/linux-ssamtse|2008-07-26|Upgraded to Linux version of the game
 palm/synce-rra|synce-librra|2008-07-27|Port was renamed
 palm/synce-dccm|synce-vdccm|2008-07-27|Port was renamed
+arabic/php_doc||2008-08-04|Manual in this language was removed
+chinese/php_doc-hk||2008-08-04|Manual in this language was removed
+chinese/php_doc-tw||2008-08-04|Manual in this language was removed
+chinese/php_doc-zh||2008-08-04|Manual in this language was removed
+hungarian/php_doc||2008-08-04|Manual in this language was removed
+korean/php_doc||2008-08-04|Manual in this language was removed
