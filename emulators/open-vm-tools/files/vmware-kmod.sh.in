@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/open-vm-tools/files/vmware-kmod.sh.in,v 1.1 2008/05/15 17:24:29 mbr Exp $
 #
 
 # PROVIDE: vmware-kmod
@@ -11,7 +11,7 @@ PREFIX=%%PREFIX%%
 . %%RC_SUBR%%
 
 # Global
-checkvm_cmd="${PREFIX}/sbin/vmware-checkvm > /dev/null"
+checkvm_cmd="${PREFIX}/bin/vmware-checkvm > /dev/null"
 
 # Functions
 vmware_guest_vmmemctl_start()
