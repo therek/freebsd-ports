@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.2 2008/07/04 08:14:21 adamw Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.3 2008/07/22 09:21:16 pav Exp $
 #   $MCom: ports-stable/Mk/bsd.gecko.mk,v 1.8 2008/06/20 22:17:41 mezz Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -12,10 +12,10 @@
 # ======================= USERS =================================
 # To specify which gecko-based backend you prefer, use something like:
 #
-# WITH_GECKO=	firefox3
+# WITH_GECKO=	firefox
 #
 # The valid backends are:
-# firefox firefox3 flock nvu seamonkey thunderbird xulrunner
+# firefox flock nvu seamonkey thunderbird xulrunner
 #
 # See below for more details.
 # ======================= /USERS ================================
@@ -79,7 +79,7 @@ Gecko_Pre_Include=			bsd.gecko.mk
 #		${WRKSRC}/configure
 #  .endif
 
-_GECKO_ALL=	firefox nvu seamonkey thunderbird xulrunner flock firefox3 mozilla
+_GECKO_ALL=	firefox nvu seamonkey thunderbird xulrunner flock mozilla
 
 thunderbird_PORTSDIR=	mail
 
