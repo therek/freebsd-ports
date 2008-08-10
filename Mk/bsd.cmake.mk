@@ -20,7 +20,7 @@
 #					Default: ${PREFIX}
 #
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.cmake.mk,v 1.1 2008/05/27 22:12:02 miwi Exp $
 
 CMAKE_MAINTAINER=  kde@FreeBSD.org
 
@@ -78,7 +78,7 @@ CMAKE_BUILD_TYPE=DEBUG
 #
 # Force makefile verbosity if needed
 #
-.if defined(CMAKE_VERBOSE)
+.if defined(CMAKE_VERBOSE) || defined(BATCH)
 CMAKE_ARGS+=	-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
 .endif
 
