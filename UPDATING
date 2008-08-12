@@ -7,6 +7,14 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20080812:
+  AFFECTS: users of mail/spamdyke
+  AUTHOR: mm@FreeBSD.org
+
+  The spamdyke port has been updated to 4.0.2.  The new version is not
+  backwards compatible with previous versions.  Please examine the
+  new configuration file for the changes.
+
+20080812:
   AFFECTS: users of databases/pgbouncer
   AUTHOR: mm@FreeBSD.org
 
@@ -6988,4 +6996,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.696 2008/08/11 20:09:15 mm Exp $
+$FreeBSD: ports/UPDATING,v 1.697 2008/08/11 21:20:13 danfe Exp $
