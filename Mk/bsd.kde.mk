@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.75 2007/10/29 23:47:21 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.76 2008/04/19 17:46:02 miwi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -34,11 +34,11 @@ MASTER_SITE_KDE_kde=	${kmaster:S@%SUBDIR%/@${ksub}/@g}
 # USE_KDEBASE_VER section
 .if defined(USE_KDEBASE_VER)
 .if ${USE_KDEBASE_VER} == CVS
-LIB_DEPENDS+=	kfontinst:${PORTSDIR}/x11/kdebase
+LIB_DEPENDS+=	kfontinst.0:${PORTSDIR}/x11/kdebase
 USE_KDELIBS_VER=CVS
 .elif ${USE_KDEBASE_VER} == 3
 # kdebase 3.x common stuff
-LIB_DEPENDS+=	kfontinst:${PORTSDIR}/x11/kdebase3
+LIB_DEPENDS+=	kfontinst.0:${PORTSDIR}/x11/kdebase3
 USE_KDELIBS_VER=3
 .endif # ${USE_KDEBASE_VER} == 3
 .endif # defined(USE_KDEBASE_VER)
@@ -64,12 +64,12 @@ CONFIGURE_ARGS+=--build=${MACHINE_ARCH}-portbld-freebsd${OSREL} \
 .endif
 
 .if ${USE_KDELIBS_VER} == CVS
-LIB_DEPENDS+=	kimproxy:${PORTSDIR}/x11/kdelibs
+LIB_DEPENDS+=	kimproxy.0:${PORTSDIR}/x11/kdelibs
 USE_QT_VER=		CVS
 PREFIX=			${KDE_CVS_PREFIX}
 .elif ${USE_KDELIBS_VER} == 3
 # kdelibs 3.x common stuff
-LIB_DEPENDS+=	kimproxy:${PORTSDIR}/x11/kdelibs3
+LIB_DEPENDS+=	kimproxy.0:${PORTSDIR}/x11/kdelibs3
 USE_QT_VER=		3
 PREFIX=			${KDE_PREFIX}
 .else
