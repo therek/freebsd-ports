@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/nano/pkg-plist,v 1.17 2007/01/14 18:26:40 naddy Exp $
+@comment $FreeBSD: ports/editors/nano/pkg-plist,v 1.18 2008/01/15 17:01:38 naddy Exp $
 bin/nano
 bin/rnano
 %%NLS%%share/locale/bg/LC_MESSAGES/nano.mo
@@ -51,6 +51,6 @@ share/nano/tex.nanorc
 @dirrm %%EXAMPLESDIR%%
 %%NLS%%@dirrmtry share/locale/rw/LC_MESSAGES
 %%NLS%%@dirrmtry share/locale/rw
-@dirrmtry man/fr/man5
-@dirrmtry man/fr/man1
-@dirrmtry man/fr
+%%NLS%%@dirrmtry man/fr/man5
+%%NLS%%@dirrmtry man/fr/man1
+%%NLS%%@dirrmtry man/fr
