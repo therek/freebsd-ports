@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1662 2008/08/15 16:26:00 skv Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1663 2008/08/15 19:31:02 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -51,9 +51,9 @@ Note:  Please add new entries to the beginning of this file.
 	  <p>When importing bugs using importxml.pl, the --attach_path
 	    option can be specified, pointing to the directory where
 	    attachments to import are stored. If the XML file being
-	    read by importxml.pl contains a malicious
+	    read by importxml.pl contains a malicious</p>
 	    <pre>../relative_path/to/local_file</pre>
-	    node, the script follows this relative path and attaches the
+	    <p>node, the script follows this relative path and attaches the
 	    local file pointed by it to the bug, making the file public.
 	    The security fix makes sure the relative path is always
 	    ignored.</p>
