@@ -1,12 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/assp/files/periodic-assp.sh.in,v 1.1 2005/05/28 09:56:27 jylefort Exp $
+# $FreeBSD: ports/mail/assp/files/periodic-assp.sh.in,v 1.2 2005/12/09 09:04:29 pav Exp $
 #
 # Update ASSP Spam and ClamAV databases
 
 cd %%ASSP_HOME%%
-
-[ -f nightly.log ] && mv nightly.log nightly.log.old
 
 if [ ! -f %%PREFIX%%/lib/assp/rebuildspamdb.pl ]
 then
@@ -14,9 +12,8 @@ then
 	rc_spamdb=2
 else
 	echo ""
-	echo "Running ASSP rebuildspamdb.pl (output to nightly.log)"
-	echo "Running ASSP rebuildspamdb.pl:" >>nightly.log
-	%%PERL%% %%PREFIX%%/lib/assp/rebuildspamdb.pl >>nightly.log && rc_spamdb=0 || rc_spamdb=3
+	echo "Running ASSP rebuildspamdb.pl:"
+	%%PERL%% %%PREFIX%%/lib/assp/rebuildspamdb.pl && rc_spamdb=0 || rc_spamdb=3
 fi
 
 if [ ! -f %%PREFIX%%/lib/assp/freshclam.sh ]
