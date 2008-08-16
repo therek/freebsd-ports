@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1661 2008/08/04 04:04:49 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1662 2008/08/10 01:17:11 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3546,3 +3546,4 @@ chinese/php_doc-tw||2008-08-04|Manual in this language was removed
 chinese/php_doc-zh||2008-08-04|Manual in this language was removed
 hungarian/php_doc||2008-08-04|Manual in this language was removed
 korean/php_doc||2008-08-04|Manual in this language was removed
+mbone/rtpmon||2008-08-16|Abandoned upstream and needs gcc32 which is going to be removed
