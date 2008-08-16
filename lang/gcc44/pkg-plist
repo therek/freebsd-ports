@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc44/pkg-plist,v 1.98 2008/03/01 20:14:48 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc44/pkg-plist,v 1.99 2008/07/12 17:34:24 gerald Exp $
 bin/c++%%SUFFIX%%
 bin/cpp%%SUFFIX%%
 bin/g++%%SUFFIX%%
@@ -40,4 +40,5 @@ info/gcc%%SUFFIX%%/dir
 %%JAVA%%share/java/libgcj-tools-%%GCC_VER%%.jar
 %%JAVA%%share/python/aotcompile.py
 %%JAVA%%share/python/classfile.py
+%%JAVA%%@dirrmtry share/python
 @comment Insert PLIST.lib here
