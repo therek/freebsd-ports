@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/x11/gdm/files/gdm.in,v 1.8 2008/03/26 03:14:12 marcus Exp $
+# $FreeBSD: ports/x11/gdm/files/gdm.in,v 1.9 2008/07/27 20:18:54 marcus Exp $
 #    $MCom: ports/x11/gdm/files/gdm.in,v 1.28 2008/03/11 04:21:47 mezz Exp $
 
 # PROVIDE: gdm
@@ -46,7 +46,7 @@ gdm_start()
 	sleep 1
 	iter=$(expr ${iter} + 1)
     done
-    ${command} ) &
+    ${command} ${gdm_flags} ) &
 }
 
 load_rc_config ${name}
