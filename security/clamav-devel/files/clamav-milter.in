@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav-devel/files/clamav-milter.in,v 1.6 2008/07/08 16:17:40 garga Exp $
+# $FreeBSD: ports/security/clamav-devel/files/clamav-milter.in,v 1.7 2008/07/14 11:21:50 garga Exp $
 #
 
 # PROVIDE: clamav-milter
@@ -81,7 +81,7 @@ start_postcmd()
 		done
 		echo
 		if [ $i -eq 0 ]; then
-			echo "There is no clamav-milter socket (${clamav_clamd_socket})!"
+			echo "There is no clamav-milter socket (${clamav_milter_socket})!"
 			exit 1
 		fi
 		/bin/chmod ${clamav_milter_socket_mode} ${clamav_milter_socket}
