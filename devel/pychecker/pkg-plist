@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/pychecker/pkg-plist,v 1.9 2005/04/15 08:18:18 sobomax Exp $
+@comment $FreeBSD: ports/devel/pychecker/pkg-plist,v 1.10 2005/04/25 12:10:42 sergei Exp $
 bin/pychecker
 %%PYTHON_SITELIBDIR%%/pychecker/CodeChecks.py
 %%PYTHON_SITELIBDIR%%/pychecker/CodeChecks.pyc
@@ -33,6 +33,9 @@ bin/pychecker
 %%PYTHON_SITELIBDIR%%/pychecker/options.py
 %%PYTHON_SITELIBDIR%%/pychecker/options.pyc
 %%PYTHON_SITELIBDIR%%/pychecker/options.pyo
+%%PYTHON_SITELIBDIR%%/pychecker/pcmodules.py
+%%PYTHON_SITELIBDIR%%/pychecker/pcmodules.pyc
+%%PYTHON_SITELIBDIR%%/pychecker/pcmodules.pyo
 %%PYTHON_SITELIBDIR%%/pychecker/printer.py
 %%PYTHON_SITELIBDIR%%/pychecker/printer.pyc
 %%PYTHON_SITELIBDIR%%/pychecker/printer.pyo
