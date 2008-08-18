@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/pnp/files/pkg-deinstall.in,v 1.1 2008/08/17 06:49:35 edwin Exp $
 #
 
 PNP_RRDS=%%PNP_RRDS%%
@@ -13,6 +13,9 @@ dirs () {
 	local notempty
 
 	for i in "$PNP_RRDS" "$PNP_SPOOL" "$PNP_STATE"; do
+		if ! [ -d "$i" ]; then
+			continue
+		fi
 		if ! rmdir "$i" > /dev/null 2>&1; then
 			notempty="$notempty $i"
 		fi
