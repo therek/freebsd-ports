@@ -7,7 +7,7 @@
 # DON'T INCLUDE THIS FILE FROM YOUR PORT. THIS FILE SHOULD BE CONSIDERED OFF-
 # LIMITS FOR ANY MAINTAINER != kde@freebsd.org
 #
-# $FreeBSD: ports/x11/kde3/Makefile.kde,v 1.48 2007/10/29 23:48:14 lofi Exp $
+# $FreeBSD$
 
 CONFIGURE_ARGS?=
 
