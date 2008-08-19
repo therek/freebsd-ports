@@ -804,7 +804,14 @@ upgrades.
 
   In order to update to glib 2.16 or higher, you must first update the
   glib20 port on its own or you will get a failure trying to install
-  devel/gio-fam-backend saying it cannot find -lgio-2.0.
+  devel/gio-fam-backend saying it cannot find -lgio-2.0. Portmaster users
+  can do:
+ 
+	portmaster glib-2\*
+
+  or, if you're using portupgrade:
+
+	portupgrade glib-2\*
 
 20080318:
   AFFECTS: users of audio/gnump3d
@@ -7037,4 +7044,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.702 2008/08/16 19:34:10 danfe Exp $
+$FreeBSD: ports/UPDATING,v 1.703 2008/08/19 13:46:21 mezz Exp $
