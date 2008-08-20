@@ -6,6 +6,17 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080820:
+  AFFECTS: users of net/rabbitmq
+  AUTHOR: pneumann@gmail.com
+
+  The database schema has changed in this version of RabbitMQ. If you
+  attempt to start RabbitMQ-1.4.0 over top of a previous installation,
+  it will fail, citing "schema_integrity_check_failed". To correct this,
+  delete your mnesia directory (/var/db/rabbitmq/mnesia) and restart
+  the server. Note that this will destroy all your durable exchanges and
+  queues, and all your persisted messages!
+
 20080816:
   AFFECTS: users of mail/assp
   AUTHOR: J.R. Oldroyd <fbsd@opal.com>
@@ -7044,4 +7055,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.703 2008/08/19 13:46:21 mezz Exp $
+$FreeBSD: ports/UPDATING,v 1.704 2008/08/19 13:48:37 mezz Exp $
