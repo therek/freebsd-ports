@@ -2,7 +2,7 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.6 2008/07/22 12:04:37 lev Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.7 2008/07/26 13:56:14 lev Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.5.1
@@ -16,7 +16,6 @@ EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
 
 USE_BZIP2=	yes
 USE_AUTOTOOLS=	libtool:15
-CONFIGURE_TARGET=	--build=${MACHINE_ARCH}-portbld-freebsd${OSREL}
 CONFIGURE_ARGS=		--with-ssl
 WANT_PERL=	yes
 

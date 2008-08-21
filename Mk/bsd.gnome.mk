@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.148 2008/06/30 20:16:17 mezz Exp $
 #	$NetBSD: $
 #     $MCom: ports-stable/Mk/bsd.gnome.mk,v 1.8 2008/06/16 21:35:56 mezz Exp $
 #
@@ -106,8 +106,6 @@ gnomeprefix_USE_GNOME_IMPL=gnomehier
 .if !defined(WITHOUT_HACK)
 gnomeprefix_PREFIX=${LOCALBASE}
 .endif
-
-gnometarget_CONFIGURE_TARGET=--build=${MACHINE_ARCH}-portbld-freebsd${OSREL}
 
 ESD_CONFIG?=		${LOCALBASE}/bin/esd-config
 esound_LIB_DEPENDS=	esd.2:${PORTSDIR}/audio/esound
