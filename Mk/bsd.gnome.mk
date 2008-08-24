@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.149 2008/08/21 06:16:11 rafan Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.150 2008/08/24 16:55:54 marcus Exp $
 #	$NetBSD: $
 #     $MCom: ports-stable/Mk/bsd.gnome.mk,v 1.8 2008/06/16 21:35:56 mezz Exp $
 #
@@ -709,6 +709,7 @@ ltasneededhack_PRE_PATCH=	if [ -f ${WRKDIR}/gnome-libtool ]; then \
 .ifdef _USE_GNOME
 . if ${USE_GNOME:Mltverhack*}!= "" || ${USE_GNOME:Mltasneededhack}!= ""
 GNOME_PRE_PATCH+=	${lthacks_PRE_PATCH}
+CONFIGURE_ENV+=		${lthacks_CONFIGURE_ENV}
 . endif
 . for component in ${_USE_GNOME_ALL}
 .  if ${_USE_GNOME:M${component}}!=""
