@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1672 2008/08/21 02:32:38 mnag Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1673 2008/08/25 22:12:33 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -420,7 +420,7 @@ Note:  Please add new entries to the beginning of this file.
       <body xmlns="http://www.w3.org/1999/xhtml">
 	<p>James Yonan reports:</p>
 	<blockquote cite="http://openvpn.net/index.php/documentation/change-log/changelog-21.html">
-	  <p>Security Fix &ndash; affects non-Windows OpenVPN clients running
+	  <p>Security Fix &#x2013; affects non-Windows OpenVPN clients running
 	    OpenVPN 2.1-beta14 through 2.1-rc8 (OpenVPN 2.0.x clients are NOT
 	    vulnerable nor are any versions of the OpenVPN server
 	    vulnerable).</p>
