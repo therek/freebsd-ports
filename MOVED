@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1678 2008/08/24 21:16:48 beech Exp $
+# $FreeBSD: ports/MOVED,v 1.1679 2008/08/26 14:46:52 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3582,3 +3582,5 @@ irc/iip||2008-08-24|Abanndonware, long since deprecated
 www/mediawiki19||2008-08-26|Expired, use www/mediawiki instead
 www/mediawiki110||2008-08-26|Expired, use www/mediawiki instead
 www/mediawiki111||2008-08-26|Expired, use www/mediawiki instead
+graphics/openproducer||2008-08-27|Now included in graphics/osg
+devel/openthreads||2008-08-27|Now included in graphics/osg
