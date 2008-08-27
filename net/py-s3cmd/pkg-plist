@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/py-s3cmd/pkg-plist,v 1.1 2007/06/07 10:08:02 clsung Exp $
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL
 %%PORTDOCS%%%%DOCSDIR%%/NEWS
 %%PORTDOCS%%%%DOCSDIR%%/README
@@ -8,6 +8,9 @@
 %%PYTHON_SITELIBDIR%%/S3/Config.py
 %%PYTHON_SITELIBDIR%%/S3/Config.pyc
 %%PYTHON_SITELIBDIR%%/S3/Config.pyo
+%%PYTHON_SITELIBDIR%%/S3/Exceptions.py
+%%PYTHON_SITELIBDIR%%/S3/Exceptions.pyc
+%%PYTHON_SITELIBDIR%%/S3/Exceptions.pyo
 %%PYTHON_SITELIBDIR%%/S3/PkgInfo.py
 %%PYTHON_SITELIBDIR%%/S3/PkgInfo.pyc
 %%PYTHON_SITELIBDIR%%/S3/PkgInfo.pyo
@@ -17,6 +20,9 @@
 %%PYTHON_SITELIBDIR%%/S3/S3Uri.py
 %%PYTHON_SITELIBDIR%%/S3/S3Uri.pyc
 %%PYTHON_SITELIBDIR%%/S3/S3Uri.pyo
+%%PYTHON_SITELIBDIR%%/S3/SimpleDB.py
+%%PYTHON_SITELIBDIR%%/S3/SimpleDB.pyc
+%%PYTHON_SITELIBDIR%%/S3/SimpleDB.pyo
 %%PYTHON_SITELIBDIR%%/S3/SortedDict.py
 %%PYTHON_SITELIBDIR%%/S3/SortedDict.pyc
 %%PYTHON_SITELIBDIR%%/S3/SortedDict.pyo
