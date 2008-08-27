@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/textproc/p5-Lingua-StopWords/pkg-plist,v 1.5 2006/08/20 18:45:51 mat Exp $
 %%SITE_PERL%%/Lingua/StopWords.pm
 %%SITE_PERL%%/Lingua/StopWords/DA.pm
 %%SITE_PERL%%/Lingua/StopWords/DE.pm
@@ -6,6 +6,7 @@
 %%SITE_PERL%%/Lingua/StopWords/ES.pm
 %%SITE_PERL%%/Lingua/StopWords/FI.pm
 %%SITE_PERL%%/Lingua/StopWords/FR.pm
+%%SITE_PERL%%/Lingua/StopWords/HU.pm
 %%SITE_PERL%%/Lingua/StopWords/IT.pm
 %%SITE_PERL%%/Lingua/StopWords/NL.pm
 %%SITE_PERL%%/Lingua/StopWords/NO.pm
