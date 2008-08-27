@@ -2,11 +2,11 @@
 # Date created:				11 Oct 2004
 # Whom:					osa
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/nginx-devel/Makefile,v 1.158 2008/08/18 14:54:11 osa Exp $
 #
 
 PORTNAME=	nginx
-PORTVERSION=	0.7.11
+PORTVERSION=	0.7.13
 CATEGORIES=	www
 MASTER_SITES=	http://sysoev.ru/nginx/
 MASTER_SITES+=	${MASTER_SITE_LOCAL}
