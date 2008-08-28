@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/nagios/files/pkg-install.in,v 1.1 2006/01/09 00:54:01 edwin Exp $
+# $FreeBSD: ports/net-mgmt/nagios2/files/pkg-install.in,v 1.2 2007/04/07 14:25:48 rafan Exp $
 #
 
 NAGIOSDIR=%%NAGIOSDIR%%
