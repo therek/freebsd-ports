@@ -33,6 +33,14 @@ upgrades.
   Just remember to edit configuration file after upgrade.
 
 20080820:
+  AFFECTS: users of www/p5-Apache-DBI
+  AUTHOR: pgollucci@FreeBSD.org
+
+  www/p5-Apache-DBI has been forked into a MASTER and SLAVE
+  setup www/p5-Apache-DBI-mp1 and www/p5-Apache-DBI-mp2
+  so as to work with www/rt38 among possibly other ports.
+  
+20080820:
   AFFECTS: users of net/rabbitmq
   AUTHOR: pneumann@gmail.com
 
@@ -7081,4 +7089,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.708 2008/08/27 22:08:02 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.709 2008/08/28 04:56:49 pgollucci Exp $
