@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.82 2007/09/09 14:48:33 clement Exp $
+@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.83 2008/08/31 18:58:45 clement Exp $
 @exec mkdir -p %D/etc/apache2 2> /dev/null
 @unexec if cmp -s %D/etc/apache2/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache2/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd-std.conf
@@ -532,4 +532,4 @@ share/apache2/build/special.mk
 @dirrmtry etc/apache2/Includes
 @dirrmtry etc/apache2/envvars.d
 @unexec rm -f %D/etc/apache2/httpd.conf.bak 2> /dev/null || true
-@unexec rmdir %D/etc/apache2 2> /dev/null || echo "===> If you plan to do not reinstall apache2, you can safely remove %D/etc/apache2."
+@unexec rmdir %D/etc/apache2 2> /dev/null || echo "===> If you do not plan to reinstall apache2, you can safely remove %D/etc/apache2."
