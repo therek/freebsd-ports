@@ -1,4 +1,5 @@
-@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.87 2008/06/23 21:11:14 clement Exp $
+@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.88 2008/08/31 16:51:37 clement Exp $
+%%APR_PORTS%%@exec mkdir -p %D/lib/apr-util-1
 @exec mkdir -p %D/etc/apache22/extra 2> /dev/null
 @exec mkdir -p %D/etc/apache22/Includes 2> /dev/null || true
 @exec mkdir -p %D/etc/apache22/envvars.d 2> /dev/null || true
@@ -533,7 +534,7 @@ www/apache22/icons/world2.png
 @dirrmtry www/apache22/cgi-bin
 @dirrm %%EXAMPLESDIR%%/extra
 @dirrm %%EXAMPLESDIR%%
-@dirrm %%DOCSDIR%%
+@dirrmtry %%DOCSDIR%%
 @dirrm share/apache22/build
 @dirrm share/apache22
 %%APR_PORTS%%@dirrm include/apr-1
