@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/chinese/wenju/pkg-plist,v 1.9 2006/10/14 08:53:49 marcus Exp $
 bin/tim-config
 bin/wrap
 lib/gtk-2.0/%%GTK2_VERSION%%/immodules/im-tim.a
@@ -7,6 +7,7 @@ lib/gtk-2.0/%%GTK2_VERSION%%/immodules/im-tim.so
 %%NLS%%share/locale/zh_CN/LC_MESSAGES/wenju.mo
 %%DATADIR%%/bxm.tim
 %%DATADIR%%/cj.tim
+%%DATADIR%%/cj5-s.tim
 %%DATADIR%%/erbi.tim
 %%DATADIR%%/liu.tim
 %%DATADIR%%/phone.tim
