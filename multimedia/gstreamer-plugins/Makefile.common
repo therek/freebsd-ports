@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.71 2008/06/20 15:41:52 tabthorpe Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.72 2008/08/10 19:50:51 ahze Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.68 2008/03/21 04:14:19 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -49,7 +49,6 @@ GOOD_GST_ALL_PLUGINS+= \
 		aalib \
 		annodex \
 		cairo \
-		cdio \
 		dv \
 		esd \
 		flac \
@@ -72,6 +71,7 @@ GOOD_GST_ALL_PLUGINS+= \
 UGLY_GST_ALL_PLUGINS+= \
 		a52dec \
 		amrnb \
+		cdio \
 		dvdnav \
 		dvdread \
 		lame \
