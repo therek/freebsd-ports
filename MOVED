@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1684 2008/08/30 12:12:13 chinsan Exp $
+# $FreeBSD: ports/MOVED,v 1.1685 2008/08/31 04:23:48 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3587,3 +3587,4 @@ www/cherokee-devel||2008-08-27|Removed, use www/cherokee instead
 irc/tirc||2008-08-28|Has expired: Project is dead
 x11-toolkits/gtkdatabox2||2008-08-29|Removed, use x11-toolkits/gtkdatabox instead
 chinese/BBMan||2008-0830|Removed, abandonware by upstream maintainer
+games/q3base||2008-09-01|Project gone, website defaced
