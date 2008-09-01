@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/cherokee/files/cherokee.sh.in,v 1.5 2008/08/28 02:29:53 beech Exp $
+# $FreeBSD: ports/www/cherokee/files/cherokee.sh.in,v 1.6 2008/08/29 17:43:09 beech Exp $
 #
 # PROVIDE: cherokee
 # REQUIRE: DAEMON
@@ -25,7 +25,7 @@ load_rc_config $name
 : ${cherokee_conf="%%PREFIX%%/etc/cherokee/cherokee.conf"}
 
 command=%%PREFIX%%/sbin/cherokee
-command_args="-C ${cherokee_conf}"
+command_args="-C ${cherokee_conf} -d"
 pidfile=/var/run/cherokee.pid
 required_files=${cherokee_conf}
 stop_postcmd=stop_postcmd
