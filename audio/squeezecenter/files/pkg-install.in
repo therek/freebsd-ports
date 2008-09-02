@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/audio/squeezecenter/files/pkg-install.in,v 1.6 2008/04/30 23:18:04 brooks Exp $
+# $FreeBSD: ports/audio/squeezecenter/files/pkg-install.in,v 1.7 2008/06/24 16:10:23 brooks Exp $
 
 name=%%PORTNAME%%
 u=%%SLIMUSER%%
@@ -10,7 +10,6 @@ shell=/sbin/nologin
 comment="Slim Devices SlimServer/SqueezeCenter pseudo-user"
 slimdir="%%PREFIX%%/%%SLIMDIR%%"
 statedir=%%SLIMDBDIR%%
-cachedir=${statedir}/cache
 conffile=${statedir}/${name}.conf
 playlistdir=${statedir}/playlists
 pidfile=/var/run/${name}/${name}.pid
