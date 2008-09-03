@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.28 2008/09/02 12:26:37 clement Exp $
+# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.29 2008/09/03 13:19:24 clement Exp $
 #
 
 .if !defined(Module_inc)
@@ -123,7 +123,7 @@ WITH_THREADS=	YES
 PLIST_SUB+=	MYSQL=""
 .else
 CONFIGURE_ARGS+= --without-mysql
-PLIST_SUB+=	MYSQL="@comment"
+PLIST_SUB+=	MYSQL="@comment "
 .endif
 
 .if defined(WITH_PGSQL)
@@ -133,7 +133,7 @@ CONFIGURE_ENV+=	ac_cv_path_PGSQL_CONFIG=""
 PLIST_SUB+=	PGSQL=""
 .else
 CONFIGURE_ARGS+= --without-pgsql
-PLIST_SUB+=	PGSQL="@comment"
+PLIST_SUB+=	PGSQL="@comment "
 .endif
 
 .if defined(WITH_SQLITE)
@@ -142,7 +142,7 @@ CONFIGURE_ARGS+= --with-sqlite3=${LOCALBASE}
 PLIST_SUB+=	SQLITE3=""
 .else
 CONFIGURE_ARGS+= --without-sqlite3
-PLIST_SUB+=	SQLITE3="@comment"
+PLIST_SUB+=	SQLITE3="@comment "
 .endif
 
 .if !defined(WITHOUT_SSL)
