@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/nagios/files/nagios.sh.in,v 1.3 2006/04/15 16:13:47 pav Exp $
+# $FreeBSD: ports/net-mgmt/nagios/files/nagios.sh.in,v 1.4 2006/05/06 23:37:02 mnag Exp $
 #
 
 # PROVIDE: nagios
