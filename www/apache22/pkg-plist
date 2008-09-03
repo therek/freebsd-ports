@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.88 2008/08/31 16:51:37 clement Exp $
+@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.89 2008/08/31 23:00:27 clement Exp $
 %%APR_PORTS%%@exec mkdir -p %D/lib/apr-util-1
 @exec mkdir -p %D/etc/apache22/extra 2> /dev/null
 @exec mkdir -p %D/etc/apache22/Includes 2> /dev/null || true
@@ -174,6 +174,18 @@ include/apache22/util_xml.h
 %%APR_PORTS%%lib/libaprutil-1.la
 %%APR_PORTS%%lib/libaprutil-1.so
 %%APR_PORTS%%lib/libaprutil-1.so.3
+%%APR_PORTS%%%%MYSQL%%lib/apr-util-1/apr_dbd_mysql-1.so
+%%APR_PORTS%%%%MYSQL%%lib/apr-util-1/apr_dbd_mysql.so
+%%APR_PORTS%%%%MYSQL%%lib/apr-util-1/apr_dbd_mysql.la
+%%APR_PORTS%%%%MYSQL%%lib/apr-util-1/apr_dbd_mysql.a
+%%APR_PORTS%%%%PGSQL%%lib/apr-util-1/apr_dbd_pgsql-1.so
+%%APR_PORTS%%%%PGSQL%%lib/apr-util-1/apr_dbd_pgsql.so
+%%APR_PORTS%%%%PGSQL%%lib/apr-util-1/apr_dbd_pgsql.la
+%%APR_PORTS%%%%PGSQL%%lib/apr-util-1/apr_dbd_pgsql.a
+%%APR_PORTS%%%%SQLITE3%%lib/apr-util-1/apr_dbd_sqlite3-1.so
+%%APR_PORTS%%%%SQLITE3%%lib/apr-util-1/apr_dbd_sqlite3.so
+%%APR_PORTS%%%%SQLITE3%%lib/apr-util-1/apr_dbd_sqlite3.la
+%%APR_PORTS%%%%SQLITE3%%lib/apr-util-1/apr_dbd_sqlite3.a
 libexec/apache22/httpd.exp
 %%MOD_ACTIONS%%libexec/apache22/mod_actions.so
 %%MOD_ALIAS%%libexec/apache22/mod_alias.so
