@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.455 2008/08/25 02:38:14 chinsan Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.456 2008/09/04 20:36:47 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -655,8 +655,6 @@ MASTER_SITE_ISC+=	\
 
 .if !defined(IGNORE_MASTER_SITE_KDE)
 MASTER_SITE_KDE+=	\
-	ftp://ftp.kde.org/pub/kde/%SUBDIR%/ \
-	http://ftp.scarlet.be/pub/kde/%SUBDIR%/ \
 	http://mirrors.isc.org/pub/kde/%SUBDIR%/ \
 	ftp://ftp.gtlib.cc.gatech.edu/pub/kde/%SUBDIR%/ \
 	ftp://ftp.informatik.hu-berlin.de/pub/Mirrors/ftp.kde.org/%SUBDIR%/ \
@@ -684,6 +682,8 @@ MASTER_SITE_KDE+=	\
 	http://sunsite.icm.edu.pl/pub/unix/kde/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/kde/%SUBDIR%/ \
 	http://ftp.sunet.se/pub/kde/%SUBDIR%/ \
+	ftp://ftp.kde.org/pub/kde/%SUBDIR%/ \
+	http://ftp.scarlet.be/pub/kde/%SUBDIR%/ \
 	ftp://ftp.unina.it/pub/Linux/kde/%SUBDIR%/ \
 	http://ftp.unina.it/pub/Linux/kde/%SUBDIR%/ \
 	ftp://ftp.belnet.be/packages/kde/%SUBDIR%/ \
