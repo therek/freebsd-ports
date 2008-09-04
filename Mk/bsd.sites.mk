@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.454 2008/07/28 20:45:20 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.455 2008/08/25 02:38:14 chinsan Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -971,13 +971,12 @@ MASTER_SITE_PERL_CPAN+=	\
 #
 # For the full list, see the following:
 #
-#	http://www.postgresql.org/mirrors-ftp.html
+#	http://wwwmaster.postgresql.org/download/mirrors-ftp
 #
 # Before update mirror list please consult with fenner's distfiles survey.
 #
 .if !defined(IGNORE_MASTER_SITE_PGSQL)
 MASTER_SITE_PGSQL+= \
-	ftp://ftp8.us.postgresql.org/postgresql/%SUBDIR%/ \
 	ftp://ftp9.us.postgresql.org/pub/mirrors/postgresql/%SUBDIR%/ \
 	ftp://ftp10.us.postgresql.org/pub/postgresql/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,misc/db/postgresql/&,} \
