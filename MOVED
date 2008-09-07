@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1690 2008/09/05 19:41:43 hrs Exp $
+# $FreeBSD: ports/MOVED,v 1.1691 2008/09/06 04:59:46 hrs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3613,3 +3613,4 @@ print/it-acroread|print/it-acroread8|2008-09-06|Removed because of security vuln
 print/nl-acroread|print/nl-acroread8|2008-09-06|Removed because of security vulnerability
 print/no-acroread|print/no-acroread8|2008-09-06|Removed because of security vulnerability
 print/sv-acroread|print/sv-acroread8|2008-09-06|Removed because of security vulnerability
+net/py-zsi-devel|net/py-zsi-devel|2008-09-07|Removed in favor of py-zsi
