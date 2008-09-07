@@ -2,10 +2,10 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.7 2008/07/26 13:56:14 lev Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.8 2008/08/21 06:16:51 rafan Exp $
 
 PORTNAME=	subversion
-PORTVERSION=	1.5.1
+PORTVERSION=	1.5.2
 PORTREVISION?=	0
 CATEGORIES+=	devel
 MASTER_SITES=	http://subversion.tigris.org/downloads/:main \
