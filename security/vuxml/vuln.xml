@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1679 2008/09/08 22:33:54 brd Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1680 2008/09/10 10:53:02 stas Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -98,8 +98,11 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>wordpress</name>
-	<name>wordpress-mu</name>
 	<name>de-wordpress</name>
+	<range><lt>2.6.2</lt></range>
+      </package>
+      <package>
+	<name>wordpress-mu</name>
 	<name>zh-wordpress</name>
 	<range><gt>0</gt></range>
       </package>
