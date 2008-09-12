@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1684 2008/09/12 04:31:17 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1685 2008/09/12 09:12:18 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -54,7 +54,7 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
-      <bid>307110</bid>
+      <bid>30710</bid>
       <cvename>CVE-2008-3746</cvename>
       <url>http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=476571</url>
       <url>http://lists.manyfish.co.uk/pipermail/neon/2008-August/000040.html</url>
