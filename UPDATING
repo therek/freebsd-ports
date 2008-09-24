@@ -17,6 +17,11 @@ upgrades.
 
 	ScoreboardFile	/var/run/proftpd/proftpd.scoreboard
 
+  Also of note: The third party modules, mod_codeconv, mod_comb
+  and mod_sql_tds are not compatible with this release and have
+  been removed. They will be re-added when the respective authors
+  provide updated versions.
+
 20080909:
   AFFECTS: users of security/logcheck
   AUTHOR: glarkin@FreeBSD.org
@@ -7221,4 +7226,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.717 2008/09/11 00:30:08 glarkin Exp $
+$FreeBSD: ports/UPDATING,v 1.718 2008/09/24 21:15:32 beech Exp $
