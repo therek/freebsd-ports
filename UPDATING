@@ -6,6 +6,17 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20080924:
+  AFFECTS: users of ftp/proftpd
+  AUTHOR: beech@FreeBSD.org
+
+  proftpd now stores its .delay and .scoreboard files in
+  /var/run/proftpd instead of /var/run. If you are updating
+  an existing installation, adjust the following in
+  /usr/local/etc/proftpd.conf:
+
+	ScoreboardFile	/var/run/proftpd/proftpd.scoreboard
+
 20080909:
   AFFECTS: users of security/logcheck
   AUTHOR: glarkin@FreeBSD.org
@@ -7210,4 +7221,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.716 2008/09/07 21:48:44 miwi Exp $
+$FreeBSD: ports/UPDATING,v 1.717 2008/09/11 00:30:08 glarkin Exp $
