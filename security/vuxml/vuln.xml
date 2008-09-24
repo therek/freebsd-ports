@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1697 2008/09/24 12:09:44 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1698 2008/09/24 12:39:42 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,11 +39,11 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>firefox</name>
-	<range><lt>2.0.17,1</lt></range>
+	<range><lt>2.0.0.17,1</lt></range>
       </package>
       <package>
         <name>linux-firefox</name>
-	<range><lt>2.0.17</lt></range>
+	<range><lt>2.0.0.17</lt></range>
       </package>
       <package>
         <name>firefox3</name>
