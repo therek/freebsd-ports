@@ -25,7 +25,7 @@
  */
 
 #include <sys/cdefs.h>
-__FBSDID("$FreeBSD: ports/benchmarks/raidtest/files/raidtest.c,v 1.3 2004/12/29 01:57:28 obrien Exp $");
+__FBSDID("$FreeBSD: ports/benchmarks/raidtest/files/raidtest.c,v 1.4 2007/01/23 10:26:06 vd Exp $");
 
 #include <sys/param.h>
 #include <sys/types.h>
@@ -322,7 +322,7 @@ raidtest_test(int argc, char *argv[])
 		err(EXIT_FAILURE, "Cannot stat '%s' file", file);
 	if ((sb.st_size % sizeof(struct iorec)) != 0)
 		err(EXIT_FAILURE, "Invalid size of '%s' file", file);
-	fdd = open(dev, O_RDWR | O_DIRECT);
+	fdd = open(dev, (rdonly ? O_RDONLY : O_RDWR) | O_DIRECT);
 	if (fdd < 0)
 		err(EXIT_FAILURE, "Cannot open '%s' device", file);
 	procs = malloc(sizeof(pid_t) * nprocs);
