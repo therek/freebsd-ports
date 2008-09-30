@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1693 2008/09/07 21:52:30 tdb Exp $
+# $FreeBSD: ports/MOVED,v 1.1694 2008/09/25 12:04:27 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3037,7 +3037,6 @@ net/tspc2||2007-06-04|Has expired: development is discontinued
 net-p2p/freenet||2007-06-04|Has expired: Does not work with existing Freenet network
 net-p2p/libfreenet||2007-06-04|Has expired: Does not work with existing Freenet network
 net-p2p/microdc||2007-06-04|Has expired: microdc is no longer in development. Consider using net-p2p/microdc2 instead
-security/op||2007-06-04|Has expired: no longer available from any mastersite
 shells/bash2||2007-06-04|Has expired: Old, unmaintained version, use shells/bash instead
 sysutils/xperfmon||2007-06-04|Has expired: irrelevant for supported FreeBSD releases
 textproc/ruby-html-parser||2007-06-04|Has expired: distfile and homepage disappeared
