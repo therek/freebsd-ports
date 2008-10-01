@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1708 2008/09/30 20:13:07 stas Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1709 2008/09/30 20:46:02 stas Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -75,7 +75,7 @@ Note:  Please add new entries to the beginning of this file.
 	<name>mplayer-gtk2</name>
 	<name>mplayer-gtk-esound</name>
 	<name>mplayer-gtk2-esound</name>
-	<range><gt>0</gt></range>
+	<range><lt>0.99.11_7</lt></range>
       </package>
     </affects>
     <description>
@@ -99,6 +99,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2008-09-30</discovery>
       <entry>2008-10-01</entry>
+      <modified>2008-10-02</modified>
     </dates>
   </vuln>
 
