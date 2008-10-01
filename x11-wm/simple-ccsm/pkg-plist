@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/x11-wm/simple-ccsm/pkg-plist,v 1.1 2008/10/01 12:59:37 rnoland Exp $
 bin/simple-ccsm
 share/locale/ca/LC_MESSAGES/simple-ccsm.mo
 share/locale/de/LC_MESSAGES/simple-ccsm.mo
@@ -37,4 +37,5 @@ share/icons/hicolor/22x22/apps/simple-ccsm.png
 @dirrmtry share/simple-ccsm/profiles
 @dirrmtry share/simple-ccsm/images
 @dirrmtry share/simple-ccsm
+@dirrmtry share/applications
 
