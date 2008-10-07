@@ -1,9 +1,9 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/milter-greylist/files/milter-greylist.sh,v 1.4 2006/12/10 05:10:38 ache Exp $
+# $FreeBSD: ports/mail/milter-greylist/files/milter-greylist.in,v 1.5 2008/07/26 10:41:17 ache Exp $
 
 # PROVIDE: miltergreylist
 # REQUIRE: LOGIN
-# BEFORE: sendmail
+# BEFORE:  mail
 # KEYWORD: milter-greylist
 
 # Define these miltergreylist_* variables in one of these files:
