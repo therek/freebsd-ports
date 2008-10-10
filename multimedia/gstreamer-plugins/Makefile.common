@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.72 2008/08/10 19:50:51 ahze Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.73 2008/09/01 19:21:48 ahze Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.68 2008/03/21 04:14:19 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -160,7 +160,8 @@ gst_cdparanoia_EXTRA_LIBS+=	-lgstcdda-${VERSION}
 gst_cdparanoia_DIST=	base
 
 # cdio
-gst_cdio_LIB_DEPENDS+=	cdio.7:${PORTSDIR}/sysutils/libcdio
+gst_cdio_LIB_DEPENDS+=	cdio.8:${PORTSDIR}/sysutils/libcdio
+gst_cdio_DIST=		ugly
 
 # dts
 gst_dts_LIB_DEPENDS+=	dca.0:${PORTSDIR}/multimedia/libdca
@@ -318,7 +319,11 @@ gst_nas_PLIST_FILES=	${GST_LIB_DIR}/libgstnassink.a \
 		${GST_LIB_DIR}/libgstnassink.so
 
 # neon
+.if exists(${LOCALBASE}/lib/libneon.so.26)
 gst_neon_LIB_DEPENDS+=	neon.26:${PORTSDIR}/www/neon26
+.else
+gst_neon_LIB_DEPENDS+=	neon.28:${PORTSDIR}/www/neon28
+.endif
 gst_neon_CONFIGURE_ENV+=	NEON_CFLAGS="-I${LOCALBASE}/include/neon"
 gst_neon_PLIST_FILES=	${GST_LIB_DIR}/libgstneonhttpsrc.a \
 			${GST_LIB_DIR}/libgstneonhttpsrc.la \
