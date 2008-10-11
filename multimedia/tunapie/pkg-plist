@@ -1,8 +1,9 @@
-@comment $FreeBSD: ports/multimedia/tunapie/pkg-plist,v 1.10 2007/12/26 21:18:03 nivit Exp $
+@comment $FreeBSD: ports/multimedia/tunapie/pkg-plist,v 1.11 2008/07/03 13:10:47 nivit Exp $
 bin/tunapie
 @unexec if cmp -s %D/etc/tunapie.config %D/etc/tunapie.config.default; then rm -f %D/etc/tunapie.config; fi
 etc/tunapie.config.default
 @exec [ -f %B/tunapie.config ] || cp %B/%f %B/tunapie.config
+%%DESKTOPDIR%%/tunapie.desktop
 share/pixmaps/tplogo.xpm
 %%DATADIR%%/AboutTuner.py
 %%DATADIR%%/AboutTuner.pyc
@@ -34,7 +35,5 @@ share/pixmaps/tplogo.xpm
 %%DATADIR%%/tuner.py
 %%DATADIR%%/tuner.pyc
 %%DATADIR%%/tv.png
-%%DESKTOPDIR%%/tunapie.desktop
 @dirrm %%DATADIR%%/pixmaps
 @dirrm %%DATADIR%%
-@dirrmtry %%DESKTOPDIR%%
