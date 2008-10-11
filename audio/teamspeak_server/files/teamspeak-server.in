@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/teamspeak_server/files/teamspeak-server.in,v 1.1 2006/04/14 18:10:37 mnag Exp $
+# $FreeBSD: ports/audio/teamspeak_server/files/teamspeak-server.in,v 1.2 2006/09/06 20:40:18 dougb Exp $
 #
 # PROVIDE: teamspeak
 # REQUIRE: DAEMON
@@ -14,6 +14,9 @@
 #
 
 . %%RC_SUBR%%
+
+# Set some defaults
+teamspeak_user=${teamspeak_user:-"teamspeak"}
 
 name=teamspeak
 rcvar=${name}_enable
