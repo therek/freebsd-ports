@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1715 2008/10/10 22:40:00 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1716 2008/10/12 16:37:10 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -84,7 +84,7 @@ Note:  Please add new entries to the beginning of this file.
       <url>http://secunia.com/advisories/32198/</url>
     </references>
     <dates>
-      <discovery>2008-10-8</discovery>
+      <discovery>2008-10-08</discovery>
       <entry>2008-10-12</entry>
     </dates>
   </vuln>
