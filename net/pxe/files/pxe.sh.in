@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/pxe/files/pxe.sh.in,v 1.1 2007/06/03 20:41:10 anders Exp $
 #
 
 # PROVIDE: pxe
@@ -20,7 +20,7 @@ rcvar=`set_rcvar`
 command="%%PREFIX%%/sbin/pxe"
 required_files=%%PREFIX%%/etc/pxe.conf
 command_args="-c ${required_files}"
-pidfile=/var/pxe/${name}.pid
+pidfile=/var/run/${name}.pid
 
 # set defaults
 pxe_enable=${pxe_enable:-"NO"}
