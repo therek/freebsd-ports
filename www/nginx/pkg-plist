@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/nginx/pkg-plist,v 1.10 2007/08/16 08:43:06 osa Exp $
+@comment $FreeBSD: ports/www/nginx/pkg-plist,v 1.11 2007/09/19 08:48:24 osa Exp $
 %%ETCDIR%%/fastcgi_params
 %%ETCDIR%%/koi-utf
 %%ETCDIR%%/koi-win
@@ -21,4 +21,4 @@
 sbin/nginx
 @exec [ -d %%NGINX_TMPDIR%% ] || mkdir -p %%NGINX_TMPDIR%%
 @exec chown %%WWWOWN%%:%%WWWGRP%% %%NGINX_TMPDIR%%
-@unexec rm -fr %%NGINX_TMPDIR%%
+@unexec if [ -z ${UPGRADE_PORT} ] ; then rm -fr %%NGINX_TMPDIR%%; fi
