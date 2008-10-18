@@ -1,10 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD:$
+# $FreeBSD: ports/lang/clojure/files/clojure.in,v 1.2 2008/07/06 15:56:59 ijliao Exp $
 
-if [ -z "$@" ]
+if [ -z "$1" ]
 then
     JAVA_VERSION="1.5+" "%%LOCALBASE%%/bin/java" -cp "%%JAVAJARDIR%%/clojure.jar" clojure.lang.Repl
 else
-    JAVA_VERSION="1.5+" "%%LOCALBASE%%/bin/java" -cp "%%JAVAJARDIR%%/clojure.jar" clojure.lang.Script "$@"
+    SCRIPT="$1"
+    shift 1
+    JAVA_VERSION="1.5+" "%%LOCALBASE%%/bin/java" -cp "%%JAVAJARDIR%%/clojure.jar" clojure.lang.Script "$SCRIPT" -- "$@"
 fi
