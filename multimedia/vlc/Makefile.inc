@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.16 2008/08/02 08:29:14 vs Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.17 2008/08/14 22:08:02 marcus Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -186,10 +186,6 @@
 #
 # WITH_SSL=yes
 #  Enable TLS/SSL Support for web (httpd) interface
-#
-# WITHOUT_SLP=yes
-#  Disable SLP service discovery support
-#  * recommended if you want to stream media
 #
 # WITH_OPTIMIZED_CFLAGS=yes
 #  Compile with -O2 -ffast-math -fomit-frame-pointer
