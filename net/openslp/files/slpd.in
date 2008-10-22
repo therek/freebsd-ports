@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openslp/files/slpd.sh.sample,v 1.4 2004/07/26 20:12:57 marcus Exp $
+# $FreeBSD: ports/net/openslp/files/slpd.in,v 1.5 2006/01/08 20:03:43 marcus Exp $
 #
 # PROVIDE: slpd
 # REQUIRE: DAEMON
