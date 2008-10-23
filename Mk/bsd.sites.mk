@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.458 2008/09/13 20:49:07 kwm Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.459 2008/10/23 15:04:33 gabor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -249,6 +249,7 @@ MASTER_SITE_EXIM+=	\
 
 .if !defined(IGNORE_MASTER_SITE_FEDORA_LINUX)
 MASTER_SITE_FEDORA_LINUX+= \
+	http://archives.fedoraproject.org/pub/archive/fedora/linux/core/%SUBDIR%/ \
 	http://mirrors.kernel.org/fedora/core/%SUBDIR%/ \
 	ftp://mirrors.kernel.org/fedora/core/%SUBDIR%/ \
 	http://mirror.web-ster.com/fedora/core/%SUBDIR%/ \
