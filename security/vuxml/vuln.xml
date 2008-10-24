@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1725 2008/10/22 20:55:59 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1726 2008/10/22 21:02:50 stas Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -87,7 +87,7 @@ Note:  Please add new entries to the beginning of this file.
 	  <p>A new xine-lib version is now available. This release contains
 	    some security fixes, notably a DoS via corrupted Ogg files
 	    (CVE-2008-3231), some related fixes, and fixes for a few possible
-	    buffer overflows. </p>
+	    buffer overflows.</p>
 	</blockquote>
       </body>
     </description>
