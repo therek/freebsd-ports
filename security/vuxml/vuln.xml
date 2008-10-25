@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1728 2008/10/24 19:13:15 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1729 2008/10/25 18:51:13 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -61,7 +61,7 @@ Note:  Please add new entries to the beginning of this file.
 	    code in a query and at the same time causing it to fail by
 	    submitting invalid data, an XSS hole can be exploited.</p>
 	  <p>There is an XSS problem in the task history attached to
-	    comments, since the application fails to sanitize the the
+	    comments, since the application fails to sanitize the
 	    old_value and new_value database fields for changed task
 	    summaries.</p>
 	</blockquote>
