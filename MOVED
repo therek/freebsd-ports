@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1700 2008/10/15 21:15:49 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1701 2008/10/26 19:35:07 hrs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3621,3 +3621,4 @@ net/isc-dhcp3-server|net/isc-dhcp30-server|2008-10-13|Swap to multiple versions
 net/isc-dhcp3-relay|net/isc-dhcp30-relay|2008-10-13|Swap to multiple versions
 net/isc-dhcp3-client|net/isc-dhcp30-client|2008-10-13|Swap to multiple versions
 japanese/sj3|japanese/sj3-server|2008-10-26|Renamed for -server/-lib separation
+japanese/Canna|japanese/canna-server|2008-10-26|Renamed for -server/-lib separation
