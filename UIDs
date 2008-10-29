@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.74 2008/09/08 20:09:59 glarkin Exp $
+# $FreeBSD: ports/UIDs,v 1.75 2008/09/11 00:30:08 glarkin Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53::0:0:Bind Sandbox:/:/usr/sbin/nologin
@@ -74,6 +74,7 @@ _ospfd:*:131:131::0:0:OSPF Daemon:/var/empty:/usr/sbin/nologin
 _spamd:*:132:132::0:0:Spam Daemon:/var/empty:/usr/sbin/nologin
 freeradius:*:133:133::0:0:FreeRADIUS Daemon:/nonexistent:/usr/sbin/nologin
 undernet:*:134:134::0:0:Undernet ircu Daemon:/nonexistant:/usr/sbin/nologin
+rabbitmq:*:135:135::0:0:RabbitMQ:/var/db/rabbitmq:/usr/sbin/nologin
 cricket:*:141:80::0:0:Cricket Monitoring User:/usr/local/cricket:/usr/sbin/nologin
 dovecot:*:143:143::0:0:Dovecot User:/var/empty:/usr/sbin/nologin
 rbldns:*:153:153::0:0:rbldnsd pseudo-user:/nonexistent:/usr/sbin/nologin
