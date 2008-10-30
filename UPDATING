@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20081026:
+  AFFECTS: users of www/asterisk-gui
+  AUTHOR: pneumann@gmail.com
+
+  The upgrade to version 2.0 will modify your asterisk dialplan when login
+  to the page. Hardware autodetection will not work, pending update of
+  misc/zaptel.
+
 20081028:
   AFFECTS: users of www/codeigniter
   AUTHOR: glarkin@FreeBSD.org
@@ -7288,4 +7296,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.722 2008/10/26 20:34:35 hrs Exp $
+$FreeBSD: ports/UPDATING,v 1.723 2008/10/28 18:21:10 glarkin Exp $
