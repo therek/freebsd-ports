@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1735 2008/10/29 06:16:26 mezz Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1736 2008/10/31 23:52:28 delphij Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -63,10 +63,12 @@ Note:  Please add new entries to the beginning of this file.
     </description>
     <references>
       <bid>21928</bid>
+      <url>http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-9</url>
     </references>
     <dates>
       <discovery>2008-10-30</discovery>
       <entry>2008-10-31</entry>
+      <modified>2008-10-31</modified>
     </dates>
   </vuln>
 
