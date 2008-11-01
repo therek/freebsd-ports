@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/erlang/files/patch-lib_gs_src_tool__utils.erl,v 1.3 2005/03/07 13:45:23 olgeni Exp $
 
 --- lib/gs/src/tool_utils.erl.orig
 +++ lib/gs/src/tool_utils.erl
@@ -8,7 +8,7 @@ $FreeBSD$
  -export([notify/2, confirm/2, confirm_yesno/2, request/2]).
  
 +%% Browser executable list (openURL command line protocol required)
-+-define(BROWSERS, ["netscape", "mozilla", "MozillaFirebird", "opera"]).
++-define(BROWSERS, ["netscape", "mozilla", "MozillaFirebird", "opera", "firefox", "seamonkey"]).
 +
  %%----------------------------------------------------------------------
  %% open_help(GS, File)
