@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/skalibs/pkg-plist,v 1.7 2004/06/10 21:01:41 sergei Exp $
+@comment $FreeBSD: ports/devel/skalibs/pkg-plist,v 1.8 2007/03/21 16:48:58 sergei Exp $
 include/skalibs/alloc.h
 include/skalibs/allreadwrite.h
 include/skalibs/avlnode.h
@@ -95,6 +95,7 @@ lib/skalibs/libwebipc.a
 %%PORTDOCS%%%%DOCSDIR%%/libstddjb.html
 %%PORTDOCS%%%%DOCSDIR%%/libttymodes.html
 %%PORTDOCS%%%%DOCSDIR%%/libwebipc.html
+%%PORTDOCS%%%%DOCSDIR%%/selfpipe.html
 %%PORTDOCS%%%%DOCSDIR%%/upgrade.html
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 @dirrm include/skalibs
