@@ -1,7 +1,7 @@
-XCOMM $FreeBSD$
+XCOMM $FreeBSD: ports/japanese/kinput2/files/Kinput2.conf.in,v 1.1 2008/10/26 20:00:22 hrs Exp $
 
 CCDEF_DIR = $(LIBDIR)/ccdef
 
-#include "Kinput2_im.conf"
-
 TRANSPORTDEFS = 
+
+#include "Kinput2_im.conf"
