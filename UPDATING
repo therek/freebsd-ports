@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20081102:
+  AFFECTS: users of devel/git
+  AUTHOR: wxs@FreeBSD.org
+
+  The location of git-shell has changed to
+  ${PREFIX}/libexec/git-core/git-shell.  Please remove the old entry from
+  /etc/shells.
+
 20081030:
   AFFECTS: users of japanese/FreeWnn-server
   AUTHOR: hrs@FreeBSD.org
@@ -7306,4 +7314,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.724 2008/10/30 00:34:44 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.725 2008/10/30 07:43:17 hrs Exp $
