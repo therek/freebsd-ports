@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/erlang/Makefile.man,v 1.15 2008/06/14 23:39:41 olgeni Exp $
+# $FreeBSD: ports/lang/erlang/Makefile.man,v 1.16 2008/09/05 19:35:41 olgeni Exp $
 
 MAN1=	epmd.1 \
 	erl.1 \
@@ -177,6 +177,7 @@ MAN3=	CosEventChannelAdmin.3 \
 	et_viewer.3 \
 	etop.3 \
 	ets.3 \
+	eunit.3 \
 	file.3 \
 	file_sorter.3 \
 	filelib.3 \
@@ -274,6 +275,7 @@ MAN3=	CosEventChannelAdmin.3 \
 	prettypr.3 \
 	proc_lib.3 \
 	proplists.3 \
+	public_key.3 \
 	qlc.3 \
 	queue.3 \
 	random.3 \
