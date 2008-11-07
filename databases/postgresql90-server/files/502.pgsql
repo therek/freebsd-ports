@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/postgresql83-server/files/502.pgsql,v 1.8 2006/12/06 16:48:57 girgen Exp $
+# $FreeBSD: ports/databases/postgresql83-server/files/502.pgsql,v 1.9 2008/06/12 23:46:07 girgen Exp $
 #
 # Maintenance shell script to vacuum and backup database
 # Put this in /usr/local/etc/periodic/daily, and it will be run 
@@ -17,9 +17,6 @@
 #
 # daily_pgsql_backup_enable="YES" # do backup
 # daily_pgsql_vacuum_enable="YES" # do vacuum
-
-daily_pgsql_vacuum_enable="YES"
-daily_pgsql_backup_enable="NO"
 
 daily_pgsql_vacuum_args="-z"
 daily_pgsql_pgdump_args="-b -F c"
@@ -48,11 +45,11 @@ case "$daily_pgsql_backup_enable" in
 	# but this might not be where you want the backups...
 	if [ ! -d ${backupdir} ] ; then 
 	    echo Creating ${backupdir}
-	    mkdir ${backupdir}; chmod 700 ${backupdir}; chown pgsql ${backupdir}
+	    mkdir -m 700 ${backupdir}; chown pgsql ${backupdir}
 	fi
 
 	echo
-	echo "PostgreSQL maintenance"
+	echo "PostgreSQL backups"
 
 	# Protect the data
 	umask 077
@@ -83,7 +80,7 @@ case "$daily_pgsql_vacuum_enable" in
     [Yy][Ee][Ss])
 
 	echo
-	echo "vacuuming..."
+	echo "PostgreSQL vacuum"
 	su -l pgsql -c "vacuumdb -a -q ${daily_pgsql_vacuum_args}"
 	if [ $? -gt 0 ]
 	then
