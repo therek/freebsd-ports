@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/xapian-core/pkg-plist,v 1.12 2008/01/29 10:24:15 miwi Exp $
+@comment $FreeBSD: ports/databases/xapian-core/pkg-plist,v 1.13 2008/07/27 03:08:10 rafan Exp $
 bin/quartzcheck
 bin/quartzcompact
 bin/quartzdump
@@ -37,7 +37,7 @@ include/xapian.h
 lib/libxapian.a
 lib/libxapian.la
 lib/libxapian.so
-lib/libxapian.so.20
+lib/libxapian.so.21
 share/aclocal/xapian.m4
 %%PORTDOCS%%%%DOCSDIR%%/admin_notes.html
 %%PORTDOCS%%%%DOCSDIR%%/apidoc.pdf
