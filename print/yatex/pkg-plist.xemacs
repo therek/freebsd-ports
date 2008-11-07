@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/print/yatex/pkg-plist.xemacs,v 1.10 2008/10/05 02:46:11 hrs Exp $
 lib/xemacs/site-packages/lisp/yatex/comment.el
 lib/xemacs/site-packages/lisp/yatex/yahtml.el
 lib/xemacs/site-packages/lisp/yatex/yatex.el
@@ -21,7 +21,6 @@ lib/xemacs/site-packages/info/yahtmle.info
 lib/xemacs/site-packages/info/yatexe.info
 lib/xemacs/site-lisp/YATEXHLP.eng
 @dirrm lib/xemacs/site-packages/lisp/yatex
-@dirrmtry lib/xemacs/site-lisp
 @dirrmtry lib/xemacs/site-packages/lisp
 @dirrmtry lib/xemacs/site-packages/info
 @dirrmtry lib/xemacs/site-packages/pkginfo
