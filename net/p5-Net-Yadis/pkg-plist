@@ -1,6 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/p5-Net-Yadis/pkg-plist,v 1.1 2006/12/19 08:55:45 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/Yadis/.packlist
 %%SITE_PERL%%/Net/Yadis.pm
 %%SITE_PERL%%/Net/Yadis/HTMLParse.pm
 @dirrmtry %%SITE_PERL%%/Net/Yadis
+@dirrmtry %%SITE_PERL%%/Net
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/Yadis
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net
