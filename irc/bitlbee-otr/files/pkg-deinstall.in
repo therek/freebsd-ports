@@ -1,6 +1,6 @@
 #!/bin/sh -
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/bitlbee/files/pkg-deinstall.in,v 1.1 2008/05/19 16:10:14 brix Exp $
 #
 
 BITLBEEUSER=%%BITLBEEUSER%%
