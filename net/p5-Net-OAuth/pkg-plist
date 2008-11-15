@@ -1,8 +1,8 @@
-@comment $FreeBSD$
-%%SITE_PERL%%/Net/OAuth
+@comment $FreeBSD: ports/net/p5-Net-OAuth/pkg-plist,v 1.2 2008/06/03 16:00:43 mat Exp $
 %%SITE_PERL%%/Net/OAuth.pm
 %%SITE_PERL%%/Net/OAuth/AccessTokenRequest.pm
 %%SITE_PERL%%/Net/OAuth/AccessTokenResponse.pm
+%%SITE_PERL%%/Net/OAuth/ConsumerRequest.pm
 %%SITE_PERL%%/Net/OAuth/Message.pm
 %%SITE_PERL%%/Net/OAuth/ProtectedResourceRequest.pm
 %%SITE_PERL%%/Net/OAuth/Request.pm
