@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1750 2008/11/15 17:04:28 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1751 2008/11/16 09:59:35 stas Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -89,7 +89,7 @@ Note:  Please add new entries to the beginning of this file.
 	    your agents you should updated immediately to prevent
 	    potential denial of service attacks.</p>
 	</blockquote>
-	  <p>Description at cve.mitre.org additionally clarifies:</p>
+	<p>Description at cve.mitre.org additionally clarifies:</p>
 	<blockquote cite="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4309">
 	  <p>Integer overflow in the netsnmp_create_subtree_cache
 	    function in agent/snmp_agent.c in net-snmp 5.4 before
