@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1708 2008/11/06 17:45:24 cy Exp $
+# $FreeBSD: ports/MOVED,v 1.1709 2008/11/07 18:08:58 hrs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3662,3 +3662,4 @@ japanese/jvim3-wnn7|japanese/jvim3|2008-10-28|Integrated into japanese/jvim3
 security/libfwbuilder2|security/libfwbuilder|2008-11-05|replaced by libfwbuilder 3.0
 security/fwbuilder2|security/fwbuilder|2008-11-05|replaced by fwbuilder 3.0
 japanese/magicpoint|misc/magicpoint|2008-11-07|Integrated into misc/magicpoint
+x11-drivers/xf86-input-wacom|x11-drivers/input-wacom|2008-11-18|Port was renamed
