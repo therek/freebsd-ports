@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/nsd/files/nsd.in,v 1.1 2008/07/28 22:25:55 pgollucci Exp $
+# $FreeBSD: ports/dns/nsd/files/nsd.in,v 1.2 2008/07/29 17:23:02 pgollucci Exp $
 #
 # PROVIDE: nsd
 # REQUIRE: DAEMON
@@ -23,6 +23,17 @@ pidfile=/var/run/${name}.pid
 load_rc_config ${name}
 
 nsd_enable=${nsd_enable-"NO"}
+
+stop_cmd="nsd_stop"
+
+nsd_stop()
+{
+	echo "Merging nsd zone transfer changes to zone files."
+	%%PREFIX%%/sbin/nsdc patch
+
+	echo "Stopping nsd."
+	%%PREFIX%%/sbin/nsdc stop
+}
 
 run_rc_command "$1"
 
