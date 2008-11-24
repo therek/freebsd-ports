@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.29 2008/06/09 06:01:41 vanilla Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.30 2008/07/26 08:38:53 ale Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -435,13 +435,15 @@ USE_FIREBIRD=	${WITH_FIREBIRD_VER}
 .endif
 
 .if ${USE_FIREBIRD:L} == "yes"
-FIREBIRD_VER=	2
+FIREBIRD_VER=	20
 .else
 FIREBIRD_VER=	${USE_FIREBIRD}
 .endif
 
 .if ${FIREBIRD_VER} == "2"
-LIB_DEPENDS+=	fbclient.2:${PORTSDIR}/databases/firebird2-client
+LIB_DEPENDS+=	fbclient.2.0:${PORTSDIR}/databases/firebird20-client
+.if ${FIREBIRD_VER} == "20"
+LIB_DEPENDS+=	fbclient.2.0:${PORTSDIR}/databases/firebird20-client
 .elif ${FIREBIRD_VER} == "1"
 LIB_DEPENDS+=	fbclient.1:${PORTSDIR}/databases/firebird-client
 .else
