@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1710 2008/11/18 14:10:16 pgj Exp $
+# $FreeBSD: ports/MOVED,v 1.1711 2008/11/24 06:22:34 skv Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3665,3 +3665,5 @@ japanese/magicpoint|misc/magicpoint|2008-11-07|Integrated into misc/magicpoint
 x11-drivers/xf86-input-wacom|x11-drivers/input-wacom|2008-11-18|Port was renamed
 databases/firebird2-client|databases/firebird20-client|2008-11-24|Renamed
 databases/firebird2-server|databases/firebird20-server|2008-11-24|Renamed
+emulators/linux_base-gentoo-stage2||2008-11-24|Removed
+emulators/linux_dist-gentoo-stage2||2008-11-24|Removed
