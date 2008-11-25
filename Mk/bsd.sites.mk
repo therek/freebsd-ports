@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.460 2008/10/23 19:04:57 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.461 2008/11/25 16:09:00 chinsan Exp $
 #
 
 # Where to put distfiles that don't have any other master site
