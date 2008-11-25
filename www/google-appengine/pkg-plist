@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/google-appengine/pkg-plist,v 1.4 2008/10/02 20:08:52 nivit Exp $
+@comment $FreeBSD: ports/www/google-appengine/pkg-plist,v 1.5 2008/10/10 09:11:19 nivit Exp $
 bin/appcfg.py
 bin/dev_appserver.py
 %%PORTDOCS%%%%DOCSDIR%%/LICENSE
@@ -184,6 +184,7 @@ bin/dev_appserver.py
 %%DATADIR%%/google/appengine/__init__.py
 %%DATADIR%%/google/appengine/api/__init__.py
 %%DATADIR%%/google/appengine/api/api_base_pb.py
+%%DATADIR%%/google/appengine/api/apiproxy_stub.py
 %%DATADIR%%/google/appengine/api/apiproxy_stub_map.py
 %%DATADIR%%/google/appengine/api/app_logging.py
 %%DATADIR%%/google/appengine/api/appinfo.py
