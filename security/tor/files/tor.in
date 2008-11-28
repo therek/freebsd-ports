@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/tor/files/tor.in,v 1.4 2008/03/20 23:31:05 miwi Exp $
+# $FreeBSD: ports/security/tor/files/tor.in,v 1.5 2008/11/25 18:12:51 miwi Exp $
 #
 # PROVIDE: tor
 # REQUIRE: NETWORKING SERVERS USR
@@ -37,7 +37,7 @@ required_files=${tor_conf}
 required_dirs=${tor_datadir}
 pidfile=${tor_pidfile}
 command="%%PREFIX%%/bin/${name}"
-command_args="-f ${tor_conf} --PidFile ${tor_pidfile} --RunAsDaemon 1 --DataDirectory ${tor_datadir} --User ${tor_user} --Log notice\ file\ ${tor_logfile}"
+command_args="-f ${tor_conf} --PidFile ${tor_pidfile} --RunAsDaemon 1 --DataDirectory ${tor_datadir} --Log notice\ file\ ${tor_logfile}"
 extra_commands="log"
 log_cmd="${name}_log"
 
