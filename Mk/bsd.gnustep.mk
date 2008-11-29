@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.51 2008/08/12 09:26:51 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.52 2008/11/17 03:55:22 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -86,6 +86,9 @@
 #
 # USE_GNUSTEP_LOCAL_THEMES+=	WildMenus:x11-themes/etoile-wildmenus
 #	depends on Themes installed in Local directrory
+#
+# USE_GNUSTEP_LOCAL_MENULETS+=	PowerMenulet:sysutils/etoile-powermenulet
+#	depends on Menulets installed in Local directrory
 #
 # USE_GNUSTEP_SYSTEM_APPS+=	ProjectCenter:devel/projectcenter.app
 #	depends on Application installed in System directrory
@@ -369,8 +372,8 @@ RUN_DEPENDS+=	${GNUSTEP_LOCAL_LIBRARIES}/lib${_GNUSTEP_DEP:C/:.*//}.so:${PORTSDI
 #
 .if defined(USE_GNUSTEP_LOCAL_BUNDLES)
 .for _GNUSTEP_DEP in ${USE_GNUSTEP_LOCAL_BUNDLES}
-BUILD_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.bundle/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
-RUN_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.bundle/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
+BUILD_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.bundle/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://:C;.*/;;}
+RUN_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.bundle/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://:C;.*/;;}
 .endfor
 .endif
 
@@ -381,6 +384,16 @@ RUN_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.bundle/${_GNUSTEP
 .for _GNUSTEP_DEP in ${USE_GNUSTEP_LOCAL_THEMES}
 BUILD_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.themeEngine/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
 RUN_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.themeEngine/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
+.endfor
+.endif
+
+# ---------------------------------------------------------------------------
+# source local menulets
+#
+.if defined(USE_GNUSTEP_LOCAL_MENULETS)
+.for _GNUSTEP_DEP in ${USE_GNUSTEP_LOCAL_MENULETS}
+BUILD_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.menulet/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
+RUN_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.menulet/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
 .endfor
 .endif
 
