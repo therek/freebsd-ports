@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.52 2008/11/17 03:55:22 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.53 2008/11/29 20:32:02 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -372,8 +372,8 @@ RUN_DEPENDS+=	${GNUSTEP_LOCAL_LIBRARIES}/lib${_GNUSTEP_DEP:C/:.*//}.so:${PORTSDI
 #
 .if defined(USE_GNUSTEP_LOCAL_BUNDLES)
 .for _GNUSTEP_DEP in ${USE_GNUSTEP_LOCAL_BUNDLES}
-BUILD_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.bundle/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://:C;.*/;;}
-RUN_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.bundle/${_GNUSTEP_DEP:C/:.*//}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://:C;.*/;;}
+BUILD_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.bundle/${_GNUSTEP_DEP:C/:.*//:C;.*/;;}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
+RUN_DEPENDS+=	${GNUSTEP_LOCAL_BUNDLES}/${_GNUSTEP_DEP:C/:.*//}.bundle/${_GNUSTEP_DEP:C/:.*//:C;.*/;;}:${PORTSDIR}/${_GNUSTEP_DEP:C/.*://}
 .endfor
 .endif
 
