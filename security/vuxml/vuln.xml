@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1768 2008/11/29 15:15:33 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1769 2008/11/29 16:16:01 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -73,7 +73,7 @@ Note:  Please add new entries to the beginning of this file.
       <url>http://www.openoffice.org/security/cves/CVE-2008-2238.html</url>
     </references>
     <dates>
-      <discovery>2008-11-FIXME</discovery>
+      <discovery>2008-10-29</discovery>
       <entry>2008-11-29</entry>
     </dates>
   </vuln>
