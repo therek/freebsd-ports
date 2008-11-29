@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.7 2007/09/29 03:46:06 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.8 2008/05/28 12:38:27 lth Exp $
 #
 # bsd.perl.mk - Support for Perl-based ports.
 #
@@ -73,7 +73,7 @@
 #				  port.  The version requirement can be specified
 #				  here, as well.
 #
-# WANT_PERL5	- Set this is your port conditionally depends on Perl.
+# WANT_PERL		- Set this if your port conditionally depends on Perl.
 #				  This MUST appear before the inclusion of bsd.port.pre.mk.
 
 .if !defined(_POSTMKINCLUDED) && !defined(Perl_Pre_Include)
