@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1770 2008/11/29 16:24:41 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1771 2008/12/04 19:37:34 tabthorpe Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -45,12 +45,10 @@ Note:  Please add new entries to the beginning of this file.
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
 	<p>Squirrelmail team reports:</p>
-	<blockquote
-	cite="http://sourceforge.net/project/shownotes.php?release_id=644750&amp;group_id=311">
+	<blockquote cite="http://sourceforge.net/project/shownotes.php?release_id=644750&amp;group_id=311">
 	  <p>An issue was fixed that allowed an attacker to send specially-
-	  crafted hyperlinks in a message that could execute cross-site
-	  scripting (XSS) when the user viewed the message in SquirrelMail.
-	  </p>
+	    crafted hyperlinks in a message that could execute cross-site
+	    scripting (XSS) when the user viewed the message in SquirrelMail.</p>
 	</blockquote>
       </body>
     </description>
