@@ -1,6 +1,6 @@
-# $FreeBSD: ports/mail/squirrelmail/bsd.squirrelmail.mk,v 1.1 2008/06/03 13:41:29 tabthorpe Exp $
+# $FreeBSD: ports/mail/squirrelmail/bsd.squirrelmail.mk,v 1.3 2008/09/02 18:22:12 tabthorpe Exp $
 #
-# $GKHeader: squirrelmail/bsd.squirrelmail.mk,v 1.17 2008/09/02 18:18:29 tabthorpe Exp $
+# $Id: bsd.squirrelmail.mk 23 2008-12-03 16:17:48Z tabthorpe $
 #
 # Common code for squirrelmail plugins.
 #
