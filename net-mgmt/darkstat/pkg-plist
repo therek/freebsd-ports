@@ -1,7 +1,0 @@
-@comment $FreeBSD: ports/net-mgmt/darkstat/pkg-plist,v 1.6 2003/11/07 17:23:40 sergei Exp $
-sbin/darkstat
-%%PORTDOCS%%%%DOCSDIR%%/AUTHORS
-%%PORTDOCS%%%%DOCSDIR%%/INSTALL
-%%PORTDOCS%%%%DOCSDIR%%/README
-%%PORTDOCS%%%%DOCSDIR%%/THANKS
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
