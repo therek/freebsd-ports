@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.46 2008/07/11 10:57:15 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.47 2008/08/20 00:56:23 ade Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -49,6 +49,7 @@ PHP_VER?=	${DEFAULT_PHP_VER}
 PHP_EXT_DIR=	20020429
 .else
 PHP_EXT_DIR=	20060613
+PHP_EXT_INC=	pcre
 .endif
 
 HTTPD?=		${LOCALBASE}/sbin/httpd
