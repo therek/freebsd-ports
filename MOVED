@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1714 2008/12/05 03:49:51 beech Exp $
+# $FreeBSD: ports/MOVED,v 1.1715 2008/12/05 06:16:34 beech Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3668,3 +3668,4 @@ databases/firebird2-server|databases/firebird20-server|2008-11-24|Renamed
 emulators/linux_base-gentoo-stage2||2008-11-24|Removed
 emulators/linux_dist-gentoo-stage2||2008-11-24|Removed
 mail/libspf-alt||2008-12-03|Removed
+devel/php5-pcre|lang/php5|2008-12-07|Integrated in base php
