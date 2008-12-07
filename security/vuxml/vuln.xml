@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1781 2008/12/07 12:13:14 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1782 2008/12/07 18:11:30 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -134,7 +134,7 @@ Note:  Please add new entries to the beginning of this file.
 	<p>Debian reports:</p>
 	<blockquote
 	cite="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=496403">
-	  <p>axspool in mgetty 1.1.36 allows local users to overwrite
+	  <p>Faxspool in mgetty 1.1.36 allows local users to overwrite
 	    arbitrary files via a symlink attack on a /tmp/faxsp.####
 	    temporary file.</p>
 	</blockquote>
