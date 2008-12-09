@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1718 2008/12/07 19:49:35 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1719 2008/12/07 20:36:40 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3694,3 +3694,4 @@ sysutils/sjog||2008-12-07|Has expired: Has been broken for more than 6 months
 textproc/Ebnf2ps||2008-12-07|Has expired: Has been broken for more than 6 months
 www/roxen||2008-12-07|Has expired: Has been broken for more than 6 months
 x11-fm/evidence||2008-12-07|Has expired: Has been broken for more than 6 months
+www/yui||2008-12-09|Already exists as www/yahoo-ui
