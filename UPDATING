@@ -29,7 +29,7 @@ upgrades.
    portmaster pecl\*
 
   If you build your INDEX locally and you tried to build it after the php
-  update commit, you need to rebuild it:
+  update commit, you need to rebuild it _after_ you updated land/php5:
    cd /usr/ports && make index
   or (if you use ports-mgmt/p5-FreeBSD-Portindex):
    cd /usr/ports && cache-init && portindex -o `make -V INDEXFILE`
@@ -7396,4 +7396,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.732 2008/12/07 21:02:29 pav Exp $
+$FreeBSD: ports/UPDATING,v 1.733 2008/12/08 11:12:14 itetcu Exp $
