@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.106 2008/10/13 08:22:58 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.107 2008/12/04 11:21:21 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -102,9 +102,8 @@ Python_Include_MAINTAINER=	python@FreeBSD.org
 # PYDISTUTILS		- Dependency line for the distutils extension. As of
 #					  Python-2.0, the distutils are in the base distribution.
 #
-# PYNUMERIC			- Dependency line for the numeric extension. Py-Numeric-17
-#					  is the last release that works with Python versions older
-#					  than 1.6.
+# PYNUMERIC			- Dependency line for the numeric extension.
+#
 # PYNUMPY			- Dependency line for the new numeric extension.
 #                     py-numpy, Py-Numeric is deprecated.
 #
