@@ -4,7 +4,7 @@
 # Date created:		17 April 2008
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/twiki/bsd.twiki.mk,v 1.5 2008/09/07 00:27:38 glarkin Exp $
+# $FreeBSD: ports/www/twiki/bsd.twiki.mk,v 1.6 2008/10/20 02:10:47 glarkin Exp $
 #
 
 #
@@ -55,11 +55,11 @@ do-install:
 	@cd ${WRKSRC}/ && ${COPYTREE_SHARE} . ${TWDIR}/
 	@${SETENV} ${SCRIPTS_ENV} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
-make-twdep:
-	@echo "TWDEP=`cat ${WRKSRC}/lib/TWiki/*/${PORTNAME}/DEPENDENCIES |\
+make-twdep: extract
+	@echo "TWDEP=`grep -v ^# ${WRKSRC}/lib/TWiki/*/${PORTNAME}/DEPENDENCIES |\
 		grep -v ',cpan,'|cut -f1-2 -d, | ${SED} -e 's|.*::||;s|,||g' |\
 		tr '\n' ' ' | sed 's| $$||'`"
-	@echo "RUN_DEPENDS=`cat ${WRKSRC}/lib/TWiki/*/${PORTNAME}/DEPENDENCIES |\
+	@echo "RUN_DEPENDS=`grep -v ^# ${WRKSRC}/lib/TWiki/*/${PORTNAME}/DEPENDENCIES |\
 		grep ',cpan,' | cut -f1-2 -d, | ${SED} -e 's|::|-|' | while read a; do\
 			n=p5-$${a%%,*}; v=$${a##*,}; \
 			o=\`echo ${PORTSDIR}/*/$$n\`; : $${o:=${PORTSDIR}/X/$$n}; \
