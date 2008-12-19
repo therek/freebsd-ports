@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1731 2008/12/19 20:50:41 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.1732 2008/12/19 21:01:47 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3713,3 +3713,4 @@ audio/ruby-xmms2-ecore||2008-12-19|Has expired: Has been broken for more than 6 
 databases/p5-DBD-PgSPI||2008-12-19|Has expired: Has been broken for more than 6 months
 databases/mysql-query-browser||2008-12-19|Has expired: Has been broken for more than 6 months
 games/clanbomber||2008-12-19|Has expired: Has been broken for more than 6 months
+graphics/gstreamer-plugins-swfdec||2008-12-19|Has expired: Has been broken for more than 6 months
