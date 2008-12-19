@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.464 2008/12/01 19:43:04 ehaupt Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.465 2008/12/01 19:45:30 ehaupt Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -648,6 +648,11 @@ MASTER_SITE_ISC+=	\
 	ftp://ftp.nominum.com/pub/isc/%SUBDIR%/ \
 	ftp://ftp.ripe.net/mirrors/sites/ftp.isc.org/isc/%SUBDIR%/ \
 	ftp://ftp.ntua.gr/pub/net/isc/isc/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_KENAI)
+MASTER_SITE_KENAI+=	\
+	http://projectkenai.com/downloads/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_KDE)
