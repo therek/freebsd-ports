@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/lang/clojure/files/clojure.in,v 1.2 2008/07/06 15:56:59 ijliao Exp $
+# $FreeBSD$
 
 if [ -z "$1" ]
 then
