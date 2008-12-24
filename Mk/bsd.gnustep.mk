@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.53 2008/11/29 20:32:02 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.54 2008/11/29 21:41:47 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -268,7 +268,7 @@ RUN_DEPENDS+=	${GNUSTEP_SYSTEM_LIBRARIES}/libgnustep-gui.so:${PORTSDIR}/${GNUSTE
 # using any backend
 #
 .if defined(USE_GNUSTEP_BACK)
-BACKSUFFIX?=	-014
+BACKSUFFIX?=	-016
 .if defined(WITH_GNUSTEP_XDPS)
 GNUSTEP_WITH_XDPS=yes
 .elif defined(WITH_GNUSTEP_LIBART)
