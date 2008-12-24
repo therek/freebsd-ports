@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/tokyocabinet/pkg-plist,v 1.6 2008/08/22 18:42:47 pgollucci Exp $
+@comment $FreeBSD: ports/databases/tokyocabinet/pkg-plist,v 1.7 2008/08/28 04:07:57 pgollucci Exp $
 bin/tcamgr
 bin/tcatest
 bin/tcbmgr
@@ -20,7 +20,7 @@ include/tchdb.h
 include/tcutil.h
 lib/libtokyocabinet.a
 lib/libtokyocabinet.so
-lib/libtokyocabinet.so.4
-lib/libtokyocabinet.so.4.5.0
+lib/libtokyocabinet.so.7
+lib/libtokyocabinet.so.7.2.0
 libdata/pkgconfig/tokyocabinet.pc
 libexec/tcawmgr.cgi
