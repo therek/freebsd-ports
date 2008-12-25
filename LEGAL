@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.586 2008/11/04 23:14:20 wxs Exp $
+# $FreeBSD: ports/LEGAL,v 1.587 2008/12/07 19:49:35 miwi Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -570,6 +570,7 @@ so-7-ga-bin-linux-en.*	editors/staroffice70	Must be bought and downloaded
 						directly from Sun via WWW
 						interface
 socks5-*		net/socks5		No commercial use
+sof-*-cdrom-x86.run	games/linux-sof		Redistribution is limited
 SpaceAryarya-KXL-*	games/spacearyarya	Possible copyright infringement
 speedmgmt*		net/pppoa		Not for redistribution -- see
 						http://www.alcatel.com/consumer-
