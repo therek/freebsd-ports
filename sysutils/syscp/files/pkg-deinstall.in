@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/syscp/files/pkg-deinstall.in,v 1.1 2008/02/06 18:47:42 beech Exp $
 #
 
 if [ "$2" = DEINSTALL ]; then
 	echo "==============================================================================="
 	echo "If you are permanently removing this port, run:"
 	echo ""
-	echo "rm -rf /usr/local/www/syscp"
+	echo "rm -rf %%WWWDIR%%"
 	echo "==============================================================================="
 fi
