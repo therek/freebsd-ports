@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/perforce/files/perforce.sh.in,v 1.6 2005/01/18 15:43:36 lth Exp $
+# $FreeBSD: ports/devel/perforce/files/perforce.sh.in,v 1.7 2005/02/20 14:54:00 lth Exp $
 
 p4d=@PREFIX@/sbin/p4d
 p4ftpd=@PREFIX@/sbin/p4ftpd
@@ -12,6 +12,7 @@ start)
     [ -f @PREFIX@/etc/perforce.conf ] && . @PREFIX@/etc/perforce.conf
     if [ -x $p4d -a x$PERFORCE_START = xyes ]; then
 	echo -n ' p4d'
+	umask 027
 	su -fm $PERFORCE_USER -c "$p4d -r $PERFORCE_ROOT $PERFORCE_OPTIONS"
     fi
     if [ -x $p4ftpd -a x$PERFORCE_FTPD_START = xyes ]; then
