@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-Data-ParseBinary/pkg-plist,v 1.1 2008/12/29 06:57:43 az Exp $
 %%SITE_PERL%%/Data/ParseBinary/Data/Cap.pm
 %%SITE_PERL%%/Data/ParseBinary/Executable/ELF32.pm
 %%SITE_PERL%%/Data/ParseBinary/Executable/PE32.pm
@@ -19,6 +19,7 @@
 %%SITE_PERL%%/Data/ParseBinary.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Data/ParseBinary/.packlist
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Data/ParseBinary
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Data
 @dirrmtry %%SITE_PERL%%/Data/ParseBinary/Stream
 @dirrmtry %%SITE_PERL%%/Data/ParseBinary/Graphics
 @dirrmtry %%SITE_PERL%%/Data/ParseBinary/FileSystem
