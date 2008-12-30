@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net-im/jabber-pyicq/pkg-plist,v 1.4 2006/10/01 11:56:59 garga Exp $
+@comment $FreeBSD: ports/net-im/jabber-pyicq/pkg-plist,v 1.5 2007/03/14 19:43:40 garga Exp $
 @unexec if cmp -s %D/%%EXAMPLESDIR%%/etc/jabber-pyicq.xml %D/etc/jabber-pyicq.xml; then rm -f %D/etc/jabber-pyicq.xml; fi
 %%EXAMPLESDIR%%/db-setup.mysql
 %%EXAMPLESDIR%%/etc/jabber-pyicq.xml
@@ -35,6 +35,9 @@ lib/jabber/pyicq/src/legacy/icqt.py
 lib/jabber/pyicq/src/legacy/services/__init__.py
 lib/jabber/pyicq/src/legacy/services/ConfirmAccount.py
 lib/jabber/pyicq/src/legacy/services/EmailLookup.py
+lib/jabber/pyicq/src/legacy/services/Help.py
+lib/jabber/pyicq/src/legacy/services/SetXStatus.py
+lib/jabber/pyicq/src/legacy/services/Settings.py
 lib/jabber/pyicq/src/main.py
 lib/jabber/pyicq/src/pubsub.py
 lib/jabber/pyicq/src/register.py
@@ -51,6 +54,7 @@ lib/jabber/pyicq/src/services/SearchFactory.py
 lib/jabber/pyicq/src/services/Statistics.py
 lib/jabber/pyicq/src/services/VCardFactory.py
 lib/jabber/pyicq/src/services/VersionTeller.py
+lib/jabber/pyicq/src/services/XMPPPing.py
 lib/jabber/pyicq/src/session.py
 lib/jabber/pyicq/src/svninfo.py
 lib/jabber/pyicq/src/tlib/__init__.py
@@ -62,6 +66,7 @@ lib/jabber/pyicq/src/tlib/oscar.py
 lib/jabber/pyicq/src/tlib/scheduler.py
 lib/jabber/pyicq/src/tlib/socks5.py
 lib/jabber/pyicq/src/tlib/sockserror.py
+lib/jabber/pyicq/src/twistd.py
 lib/jabber/pyicq/src/twistfix/__init__.py
 lib/jabber/pyicq/src/twistfix/README
 lib/jabber/pyicq/src/twistfix/version.py
