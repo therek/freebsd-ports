@@ -1,4 +1,4 @@
-/* $FreeBSD: ports/lang/pcc/files/ccconfig.h,v 1.2 2007/09/18 14:31:01 obrien Exp $ */
+/* $FreeBSD: ports/lang/pcc/files/ccconfig.h,v 1.3 2007/12/14 17:36:00 obrien Exp $ */
 /*	$Id: ccconfig.h,v 1.2 2004/12/02 21:32:25 ragge Exp $	*/
 
 /*
@@ -34,7 +34,7 @@
  */
 
 /* common cpp predefines */
-#define CPPADD	{ "-D__FreeBSD__", "-D__ELF__", "-D__unix__=1", "-D__unix=1", "-D__STDC__=1", NULL, }
+#define CPPADD	{ "-D__FreeBSD__=%%OSVERMAJOR%%", "-D__ELF__", "-D__unix__=1", "-D__unix=1", "-D__STDC__=1", NULL, }
 #define DYNLINKER { "-dynamic-linker", "/libexec/ld-elf.so.1", NULL }
 #define CRT0FILE "/usr/lib/crt1.o"
 #define STARTFILES { "/usr/lib/crti.o", "/usr/lib/crtbegin.o", NULL }
