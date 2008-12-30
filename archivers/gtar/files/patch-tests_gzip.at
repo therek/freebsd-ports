@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/archivers/gtar/files/extra-patch-tests_gzip.at,v 1.1 2008/01/16 02:09:33 naddy Exp $
 
 --- tests/gzip.at.orig
 +++ tests/gzip.at
