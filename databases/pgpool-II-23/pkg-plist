@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/pgpool-II/pkg-plist,v 1.7 2008/03/07 01:58:14 kuriyama Exp $
+@comment $FreeBSD: ports/databases/pgpool-II/pkg-plist,v 1.8 2008/03/09 19:01:52 pav Exp $
 bin/pcp_attach_node
 bin/pcp_detach_node
 bin/pcp_node_count
@@ -21,9 +21,13 @@ lib/libpcp.so
 lib/libpcp.so.0
 %%DATADIR%%/dist_def_pgbench.sql
 %%DATADIR%%/pgpool.pam
+%%DATADIR%%/replicate_def_pgbench.sql
 %%DATADIR%%/system_db.sql
 %%EXAMPLESDIR%%/pgpool_recovery
 %%EXAMPLESDIR%%/pgpool_recovery_pitr
 %%EXAMPLESDIR%%/pgpool_remote_start
+share/postgresql/contrib/pgpool-recovery.sql
+lib/postgresql/pgpool-recovery.so
+@dirrmtry share/postgresql/contrib
 @dirrm %%EXAMPLESDIR%%
 @dirrm %%DATADIR%%
