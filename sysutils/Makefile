@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/Makefile,v 1.1054 2008/12/28 12:57:40 miwi Exp $
 #
 
     COMMENT = System utilities
@@ -692,6 +692,7 @@
     SUBDIR += su2
     SUBDIR += swapd
     SUBDIR += symlinks
+    SUBDIR += symlinux
     SUBDIR += symon
     SUBDIR += synergy
     SUBDIR += syscp
