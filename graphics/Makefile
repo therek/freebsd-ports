@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/graphics/Makefile,v 1.1208 2008/12/26 22:08:19 miwi Exp $
 #
 
     COMMENT = Graphics tools and libraries
@@ -744,6 +744,7 @@
     SUBDIR += sage
     SUBDIR += sam2p
     SUBDIR += sane-backends
+    SUBDIR += sane-epkowa
     SUBDIR += sane-frontends
     SUBDIR += scale2x
     SUBDIR += sced
