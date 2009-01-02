@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/devel/perforce/pkg-install,v 1.2 2004/10/12 17:10:35 nork Exp $
+# $FreeBSD: ports/devel/perforce/pkg-install,v 1.3 2008/12/29 14:38:38 lth Exp $
 
 PATH=/bin:/usr/sbin
 
@@ -9,7 +9,7 @@ PERFORCE_UID=${PERFORCE_UID:-94}
 PERFORCE_GROUP=${PERFORCE_GROUP:-p4admin}
 PERFORCE_GID=${PERFORCE_GID:-94}
 PERFORCE_HOME=${PERFORCE_HOME:-$PKG_PREFIX/perforce}
-PERFORCE_LOGS=${PERFORCE_LOGS:-$PERFORCE_HOME/log}
+PERFORCE_LOGS=${PERFORCE_LOGS:-$PERFORCE_HOME/logs}
 PERFORCE_ROOT=${PERFORCE_ROOT:-$PERFORCE_HOME/root}
 
 case $2 in
