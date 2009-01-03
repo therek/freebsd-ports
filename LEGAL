@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.587 2008/12/07 19:49:35 miwi Exp $
+# $FreeBSD: ports/LEGAL,v 1.588 2008/12/25 20:31:47 miwi Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -743,3 +743,5 @@ rapid-*			math/rapid		No commercial use
 dtiquery-*		science/dtiquery	License agreement is required
 clustalw-*		biology/clustalw	No commercial use
 nttcp-*			benchmark/nttcp		No commercial use
+TW-*.ttf		chinese/CNS11643-font	No redistribution or
+						commercial use is allowed
