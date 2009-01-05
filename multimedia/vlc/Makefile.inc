@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.17 2008/08/14 22:08:02 marcus Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.18 2008/10/22 00:50:48 marcus Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -227,11 +227,6 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|$$(libdir)/mozilla/plugins|${FAKEDIR}/mozilla|; \
 		s|$$(libdir)/mozilla/components|${FAKEDIR}/mozilla|' \
 			${WRKSRC}/mozilla/Makefile.in
-# skins2 interface, no lrint on < 504000
-.if ${OSVERSION} < 504000
-	@${REINPLACE_CMD} -e 's|lrint|rint|' \
-		${WRKSRC}/modules/gui/skins2/controls/ctrl_list.cpp
-.endif
 # s/Linux/FreeBSD/
 	@${REINPLACE_CMD} -e 's|Linux|FreeBSD|' \
 		${WRKSRC}/po/*

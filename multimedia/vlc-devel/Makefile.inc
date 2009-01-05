@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.19 2008/04/19 17:52:39 miwi Exp $
+# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.20 2008/07/09 20:59:07 gahr Exp $
 #    $MCom: ports/multimedia/vlc-devel/Makefile.inc,v 1.8 2006/10/01 18:16:43 ahze Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -221,11 +221,6 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|$$(libdir)/mozilla/plugins|${FAKEDIR}/mozilla|; \
 		s|$$(libdir)/mozilla/components|${FAKEDIR}/mozilla|' \
 			${WRKSRC}/projects/mozilla/Makefile.in
-# skins2 interface, no lrint on < 504000
-.if ${OSVERSION} < 504000
-	@${REINPLACE_CMD} -e 's|lrint|rint|' \
-		${WRKSRC}/modules/gui/skins2/controls/ctrl_list.cpp
-.endif
 # cdrom/dvd support
 	@${REINPLACE_CMD} -e 's|/dev/cdrom|${DEFAULT_CDROM_DEVICE}|; \
 		s|/dev/dvd|${DEFAULT_DVD_DEVICE}|' \
