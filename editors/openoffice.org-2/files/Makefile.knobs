@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2/files/Makefile.knobs,v 1.52 2008/04/09 23:25:29 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2/files/Makefile.knobs,v 1.53 2008/04/26 08:01:12 maho Exp $
 
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
 
@@ -62,21 +62,6 @@ CONFIGURE_ARGS+=	--with-system-icu=no
 .endif
 
 pre-fetch:
-.if (${OSVERSION} < 503001 && ${OSVERSION} >= 500000) || (${OSVERSION} < 492000)
-	@${ECHO}
-	@${ECHO} "WARNING"
-	@${ECHO} "Your rtld seems to be old."
-	@${ECHO} "Please remake your rtld by:"
-	@${ECHO} "[1] if you use 4-series:"
-	@${ECHO} "# fetch http://people.freebsd.org/~maho/ooo/patch-rtld.c-releng4"
-	@${ECHO} "# cd /usr/src/libexec/rtld-elf ; patch < patch-rtld.c-releng4"
-	@${ECHO} "# make ; make depend ; make install"
-	@${ECHO} "[2] if you use 5-series:"
-	@${ECHO} "# fetch http://people.freebsd.org/~maho/ooo/patch-rtld.c-releng5"
-	@${ECHO} "# cd /usr/src/libexec/rtld-elf ; patch < patch-rtld.c-releng5"
-	@${ECHO} "# make ; make depend ; make install"
-	@${ECHO} "AT YOUR OWN RISK!"
-.endif
 	@${ECHO} "OPTIONS:"
 .if !defined(WITH_DEBUG)
 	@${ECHO}
