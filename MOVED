@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1740 2008/12/30 13:52:57 dinoex Exp $
+# $FreeBSD: ports/MOVED,v 1.1741 2008/12/31 08:34:37 dinoex Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3723,3 +3723,4 @@ japanese/msdosfs||2008-12-28|Removed: only for 5.x
 korean/msdosfs||2008-12-28|Removed: only for 5.x
 security/openssl-stable|security/openssl|2008-12-30|Removed: only for 6.0
 dns/bind9-dlz|dns/bind94|2008-12-31|DLZ patches are now in bind 9.4 distribution
+x11-drivers/xf86-video-i810|x11-drivers/xf86-video-intel|2009-01-05|Replaced by the xf86-video-intel driver
