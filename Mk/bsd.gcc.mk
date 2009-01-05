@@ -31,7 +31,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.20 2008/08/17 06:57:17 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.21 2009/01/05 14:53:23 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -94,7 +94,8 @@ FC:=	f77
 .  endif
 . endif
 
-MAKE_ENV+=	 F77="${F77}" FC="${FC}" FFLAGS="${FFLAGS}"
+CONFIGURE_ENV+=	F77="${F77}" FC="${FC}" FFLAGS="${FFLAGS}"
+MAKE_ENV+=		F77="${F77}" FC="${FC}" FFLAGS="${FFLAGS}"
 .endif
 
 
