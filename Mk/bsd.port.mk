@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.603 2008/08/25 01:29:01 rafan Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.604 2008/09/05 19:41:43 hrs Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -399,10 +399,10 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # USE_OPENSSL	- If set, this port relies on the OpenSSL package.
 ##
 # USE_OPENLDAP	- If set, this port uses the OpenLDAP libraries.
-#				  Implies: WANT_OPENLDAP_VER?=23
+#				  Implies: WANT_OPENLDAP_VER?=24
 # WANT_OPENLDAP_VER
 #				- Legal values are: 23, 24
-#				  If set to an unkown value, the port is marked BROKEN.
+#				  If set to an unknown value, the port is marked BROKEN.
 # WANT_OPENLDAP_SASL
 #				- If set, the system should use OpenLDAP libraries
 #				  with SASL support.
