@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/tcl80/files/Makefile.lib,v 1.5 2003/08/04 13:21:24 ru Exp $
+# $FreeBSD: ports/lang/tcl80/files/Makefile.lib,v 1.6 2005/02/12 13:19:47 das Exp $
 
 NOPROFILE=	yes
 LIB=		tcl80
@@ -13,11 +13,6 @@ CFLAGS+=	-I. -I./../generic \
 		-DTCL_LIBRARY=\"${TCL_LIBRARY}\" \
 		-DTCL_PACKAGE_PATH="\"${PREFIX}/lib\"" \
 		-DNO_UNION_WAIT
-
-.if ${OSVERSION} < 600011
-CFLAGS+=	-DNEED_MATHERR=1
-.endif
-
 
 GENERIC_DIR=	../generic
 UNIX_DIR=	.
