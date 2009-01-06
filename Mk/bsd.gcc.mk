@@ -30,7 +30,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.22 2009/01/05 20:25:52 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.23 2009/01/05 22:26:07 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -69,6 +69,7 @@ GCCVERSION_040300=	999999 999999 4.3
 # gfortran43 from lang/gcc43 is the default for now.
 . if ${USE_FORTRAN} == yes
 BUILD_DEPENDS+=	gfortran43:${PORTSDIR}/lang/gcc43
+RUN_DEPENDS+=	gortran43:${PORTSDIR}/lang/gcc43
 FC:=	gfortran43
 F77:=	gfortran43
 . endif
@@ -76,6 +77,7 @@ F77:=	gfortran43
 # Intel Fortran compiler from lang/ifc.
 . if ${USE_FORTRAN} == ifort
 BUILD_DEPENDS+=	${LOCALBASE}/intel_fc_80/bin/ifort:${PORTSDIR}/lang/ifc
+RUN_DEPENDS+=	${LOCALBASE}/intel_fc_80/bin/ifort:${PORTSDIR}/lang/ifc
 FC:=	${LOCALBASE}/intel_fc_80/bin/ifort
 F77:=	${LOCALBASE}/intel_fc_80/bin/ifort
 . endif
@@ -85,6 +87,7 @@ F77:=	${LOCALBASE}/intel_fc_80/bin/ifort
 . if ${USE_FORTRAN} == g77
 .  if (${OSVERSION} > 700000)
 BUILD_DEPENDS+=	g77-34:${PORTSDIR}/lang/gcc34
+RUN_DEPENDS+=	g77-34:${PORTSDIR}/lang/gcc34
 FC:=	g77-34
 F77:=	g77-34
 .else
