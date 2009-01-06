@@ -30,7 +30,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.23 2009/01/05 22:26:07 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.24 2009/01/06 03:48:55 maho Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -69,7 +69,7 @@ GCCVERSION_040300=	999999 999999 4.3
 # gfortran43 from lang/gcc43 is the default for now.
 . if ${USE_FORTRAN} == yes
 BUILD_DEPENDS+=	gfortran43:${PORTSDIR}/lang/gcc43
-RUN_DEPENDS+=	gortran43:${PORTSDIR}/lang/gcc43
+RUN_DEPENDS+=	gfortran43:${PORTSDIR}/lang/gcc43
 FC:=	gfortran43
 F77:=	gfortran43
 . endif
