@@ -1,4 +1,0 @@
-@comment $FreeBSD: ports/net/nvnet/pkg-plist,v 1.2 2004/04/10 16:07:06 trevor Exp $
-@comment We just copy the file in the kernel module dir.
-@cwd /
-%%KMODDIR%%/if_nv.ko
