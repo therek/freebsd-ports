@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net-mgmt/p5-NetAddr-IP/pkg-plist,v 1.4 2008/10/17 12:28:17 tobez Exp $
+@comment $FreeBSD: ports/net-mgmt/p5-NetAddr-IP/pkg-plist,v 1.5 2008/11/26 10:47:01 tobez Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/NetAddr/IP.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/NetAddr/IP/Lite.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/NetAddr/IP/Util.pm
@@ -42,7 +42,6 @@
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/NetAddr/IP/UtilPP/simple_pack.al
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/NetAddr/IP/UtilPP/slowadd128.al
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/NetAddr/IP/UtilPP/sub128.al
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/NetAddr/IP/UtilPP/threads.al
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/NetAddr/IP/_compV6.al
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/NetAddr/IP/_compact_v6.al
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/NetAddr/IP/_splitplan.al
