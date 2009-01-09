@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.1208 2008/12/26 22:08:19 miwi Exp $
+# $FreeBSD$
 #
 
     COMMENT = Graphics tools and libraries
@@ -661,6 +661,7 @@
     SUBDIR += py-exif
     SUBDIR += py-exiv2
     SUBDIR += py-freeimagepy
+    SUBDIR += py-gchartwrapper
     SUBDIR += py-gd
     SUBDIR += py-gdchart
     SUBDIR += py-gdchart2
