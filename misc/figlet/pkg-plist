@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/misc/figlet/pkg-plist,v 1.5 2005/10/16 03:43:45 obrien Exp $
+@comment $FreeBSD: ports/misc/figlet/pkg-plist,v 1.6 2008/06/06 16:07:30 obrien Exp $
 bin/figlet
 bin/chkfont
 bin/figlist
@@ -60,6 +60,6 @@ share/figlet/upper.flc
 share/figlet/ushebrew.flc
 share/figlet/uskata.flc
 share/figlet/utf8.flc
+@dirrm share/figlet
 %%PORTDOCS%%%%DOCSDIR%%/figfont.txt
-%%PORTDOCS%%@dirrm share/figlet
 %%PORTDOCS%%@dirrm share/doc/figlet
