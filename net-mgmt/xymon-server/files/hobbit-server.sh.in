@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/hobbit-server/files/hobbit-server.sh.in,v 1.1 2008/01/28 16:01:17 dinoex Exp $
+# $FreeBSD: ports/net-mgmt/xymon-server/files/hobbit-server.sh.in,v 1.2 2008/02/01 19:30:33 dinoex Exp $
 #
 
 # PROVIDE: hobbit_server
@@ -14,12 +14,12 @@ rcvar=`set_rcvar`
 load_rc_config "$name"
 : ${hobbit_server_enable:="NO"}
 
-command="su -m %%BBUSER%% -c '%%PREFIX%%/www/hobbit/server/hobbit.sh'"
-start_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/hobbit/server/hobbit.sh start'"
-stop_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/hobbit/server/hobbit.sh stop'"
-status_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/hobbit/server/hobbit.sh status'"
-reload_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/hobbit/server/hobbit.sh reload'"
-restart_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/hobbit/server/hobbit.sh restart'"
+command="su -m %%BBUSER%% -c '%%PREFIX%%/www/xymon/server/hobbit.sh'"
+start_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/xymon/server/hobbit.sh start'"
+stop_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/xymon/server/hobbit.sh stop'"
+status_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/xymon/server/hobbit.sh status'"
+reload_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/xymon/server/hobbit.sh reload'"
+restart_cmd="su -m %%BBUSER%% -c '%%PREFIX%%/www/xymon/server/hobbit.sh restart'"
 pidfile="/var/log/hobbit/hobbitd.pid"
 
 run_rc_command "$1"
