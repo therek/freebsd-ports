@@ -28,14 +28,14 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1810 2009/01/11 13:15:53 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1811 2009/01/11 14:29:50 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
   <vuln vid="a6713190-dfea-11dd-a765-0030843d3802">
-    <topic>imap-uw -- local buffer overflow Vulnerabilities</topic>
+    <topic>imap-uw -- local buffer overflow vulnerabilities</topic>
     <affects>
       <package>
 	<name>imap-uw</name>
