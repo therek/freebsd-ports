@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.octave.mk,v 1.1 2008/09/08 00:23:03 maho Exp $
 #
 # bsd.octave.mk - Octave related macro
 # Common code to install octave-forge packages.
@@ -19,8 +19,6 @@ RUN_DEPENDS+=	octave:${PORTSDIR}/math/octave
 RUN_DEPENDS+=	${LOCALBASE}/share/octave/tarballs:${PORTSDIR}/math/octave-forge-base
 LIB_DEPENDS+=	pcre:${PORTSDIR}/devel/pcre
 USE_FORTRAN=	yes
-# hack to get fortran installed with octave
-RUN_DEPENDS+=	${BUILD_DEPENDS:M*fortran*} ${BUILD_DEPENDS:M*f77*} ${BUILD_DEPENDS:M*g77*}
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
