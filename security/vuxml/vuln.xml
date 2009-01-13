@@ -28,12 +28,44 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1818 2009/01/11 19:58:49 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1819 2009/01/12 12:27:39 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="bc6a7e79-e111-11dd-afcd-00e0815b8da8">
+    <topic>cgiwrap  -- XSS Vulnerability</topic>
+    <affects>
+      <package>
+	<name>cgiwrap</name>
+	<range><lt>4.0_2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Secunia reports:</p>
+	<blockquote cite="">
+	  <p>A vulnerability has been reported in CGIWrap, which can be
+	    exploited by malicious people to conduct cross-site scripting
+	    attacks.</p>
+	  <p>The vulnerability is caused due to the application generating
+	    error messages without specifying a charset. This can be exploited
+	    to execute arbitrary HTML and script code in a user's browser
+	    session in context of an affected site.</p>
+	  <p>Successful exploitation may require that the victim uses Internet Explorer or a browser based on Internet Explorer components.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2008-2852</cvename>
+    </references>
+    <dates>
+      <discovery>2008-06-19</discovery>
+      <entry>2009-01-13</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="d4a358d3-e09a-11dd-a765-0030843d3802">
     <topic>nagios -- web interface privilege escalation vulnerability</topic>
     <affects>
