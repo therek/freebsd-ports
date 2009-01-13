@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1819 2009/01/12 12:27:39 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1820 2009/01/13 03:19:19 wxs Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -45,7 +45,7 @@ Note:  Please add new entries to the beginning of this file.
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
 	<p>Secunia reports:</p>
-	<blockquote cite="">
+	<blockquote cite="http://secunia.com/advisories/30765">
 	  <p>A vulnerability has been reported in CGIWrap, which can be
 	    exploited by malicious people to conduct cross-site scripting
 	    attacks.</p>
@@ -53,7 +53,8 @@ Note:  Please add new entries to the beginning of this file.
 	    error messages without specifying a charset. This can be exploited
 	    to execute arbitrary HTML and script code in a user's browser
 	    session in context of an affected site.</p>
-	  <p>Successful exploitation may require that the victim uses Internet Explorer or a browser based on Internet Explorer components.</p>
+	  <p>Successful exploitation may require that the victim uses Internet
+	    Explorer or a browser based on Internet Explorer components.</p>
 	</blockquote>
       </body>
     </description>
