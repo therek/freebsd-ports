@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1758 2009/01/11 21:14:29 dinoex Exp $
+# $FreeBSD: ports/MOVED,v 1.1759 2009/01/13 18:17:29 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3744,3 +3744,4 @@ devel/cogito||2009-01-11|Broken and abandoned by upstream
 net-mgmt/hobbit-client|net-mgmt/xymon-client|2009-01-11|Renamed
 net-mgmt/hobbit-server|net-mgmt/xymon-server|2009-01-11|Renamed
 science/gchempaint|science/gchemutils|2009-01-13|gchempaint was integrated into gchemutils
+net/fpc-libasync|devel/fpc-fcl-async|2009-01-13|This unit was renamed
