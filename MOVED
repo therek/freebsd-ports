@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1761 2009/01/14 06:27:18 acm Exp $
+# $FreeBSD: ports/MOVED,v 1.1762 2009/01/14 06:30:20 acm Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3747,3 +3747,4 @@ science/gchempaint|science/gchemutils|2009-01-13|gchempaint was integrated into 
 net/fpc-libasync|devel/fpc-fcl-async|2009-01-13|This unit was renamed
 x11-toolkits/forms|x11-toolkits/xforms|2009-01-13|This unit was renamed
 x11-toolkits/gtk|x11-toolkits/gtk1|2009-01-13|This unit was renamed
+x11-toolkits/gnome|x11-toolkits/gnome1|2009-01-13|This unit was renamed
