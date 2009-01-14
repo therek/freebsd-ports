@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1765 2009/01/14 06:41:43 acm Exp $
+# $FreeBSD: ports/MOVED,v 1.1766 2009/01/14 06:45:25 acm Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3751,3 +3751,4 @@ x11-toolkits/gnome|x11-toolkits/gnome1|2009-01-13|This unit was renamed
 devel/fpc-gconf||2008-01-13|This is now part of fpc-gnome1
 x11-toolkits/fpc-zvt||2008-01-13|This is now part of fpc-gnome1
 net/fpc-netdb||2008-01-13|This is now part of fpc-fcl-net
+textproc/p5-Text-CSV_PP||2009-01-14|Has expired: textproc/Text-CSV_PP was merged into textproc/p5-Text-CSV
