@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/math/wxMaxima/pkg-plist,v 1.5 2008/10/05 09:16:53 nivit Exp $
+@comment $FreeBSD: ports/math/wxMaxima/pkg-plist,v 1.6 2008/12/08 17:06:00 nivit Exp $
 bin/wxmaxima
 share/locale/de/LC_MESSAGES/wxMaxima.mo
 share/locale/es/LC_MESSAGES/wxMaxima.mo
@@ -11,7 +11,6 @@ share/locale/ru/LC_MESSAGES/wxMaxima.mo
 share/locale/uk/LC_MESSAGES/wxMaxima.mo
 %%DATADIR%%/COPYING
 %%DATADIR%%/README
-%%DATADIR%%/tips.txt
 %%DATADIR%%/wxmathml.lisp
 %%DATADIR%%/wxmaxima.png
 @dirrm %%DATADIR%%
