@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/spread4/pkg-deinstall,v 1.1 2005/10/28 18:30:58 ehaupt Exp $
 
 if [ "$2" != "POST-DEINSTALL" ]; then
 	exit 0
