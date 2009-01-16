@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1822 2009/01/13 12:22:21 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1823 2009/01/15 23:00:51 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -114,7 +114,7 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
         <name>nagios2</name>
-	<range><gt>0</gt></range>
+	<range><lt>2.12_2</lt></range>
       </package>
     </affects>
     <description>
@@ -137,6 +137,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2008-11-06</discovery>
       <entry>2009-01-12</entry>
+      <modified>2009-01-15</modified>
     </dates>
   </vuln>
 
