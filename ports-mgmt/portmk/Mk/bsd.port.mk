@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.79 2009/01/11 17:48:33 linimon Exp $
+# $FreeBSD: ports/ports-mgmt/portmk/Mk/bsd.port.mk,v 1.80 2009/01/12 01:34:11 linimon Exp $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
 #	This file is in the public domain.
@@ -1423,8 +1423,8 @@ PKGCOMPATDIR?=		${LOCALBASE}/lib/compat/pkg
 # to set one of the conditionals that force the inclusion of bsd.perl.mk
 .if !defined(_PERL_REFACTORING_COMPLETE)
 
-PERL_VERSION?=	5.8.8
-PERL_VER?=	5.8.8
+PERL_VERSION?=	5.8.9
+PERL_VER?=	5.8.9
 
 .if !defined(PERL_LEVEL) && defined(PERL_VERSION)
 perl_major=		${PERL_VERSION:C|^([1-9]+).*|\1|}
