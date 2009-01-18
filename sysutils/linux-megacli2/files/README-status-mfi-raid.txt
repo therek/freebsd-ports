@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/linux-megacli/files/README-status-mfi-raid.txt,v 1.1 2007/03/09 13:15:02 rafan Exp $
+# $FreeBSD: ports/sysutils/linux-megacli2/files/README-status-mfi-raid.txt,v 1.2 2007/12/27 00:15:48 bsam Exp $
 
 The output of periodic/daily/407.status-mfi-raid uses several
 abbreviations. This document maps the abbreviations to the

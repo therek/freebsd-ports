@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: src/etc/rc.d/abi,v 1.4.2.4 2007/03/10 14:04:01 yar Exp $
+# $FreeBSD: ports/sysutils/linux-megacli2/files/mfi_tty_log.in,v 1.1 2008/10/13 17:22:20 stefan Exp $
 #
 
 # PROVIDE: mfi_tty_log
