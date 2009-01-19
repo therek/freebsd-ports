@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/comms/anyremote/pkg-plist,v 1.1 2008/11/09 16:51:31 miwi Exp $
+@comment $FreeBSD: ports/comms/anyremote/pkg-plist,v 1.2 2008/12/14 20:27:57 miwi Exp $
 bin/anyremote
 %%DATADIR%%/cfg-data/Server-mode/kuickshow.cfg
 %%DATADIR%%/cfg-data/Server-mode/comix.cfg
@@ -80,7 +80,13 @@ bin/anyremote
 %%DATADIR%%/cfg-data/Server-mode/okular.cfg
 %%DATADIR%%/cfg-data/Server-mode/wmctrl.cfg
 %%DATADIR%%/cfg-data/Server-mode/xbmc.cfg
+%%DATADIR%%/cfg-data/Server-mode/alsaplayer.cfg
+%%DATADIR%%/cfg-data/Server-mode/digikam.cfg
+%%DATADIR%%/cfg-data/Server-mode/digikam2.cfg
+%%DATADIR%%/cfg-data/Server-mode/gpicview.cfg
+%%DATADIR%%/cfg-data/Server-mode/xmultimedia.cfg
 %%DATADIR%%/cfg-data/Utils/gradient.png
+%%DATADIR%%/cfg-data/Utils/message.sh
 %%DATADIR%%/cfg-data/Utils/all-in-1.py
 %%DATADIR%%/cfg-data/Utils/xmms_is_playing
 %%DATADIR%%/cfg-data/Bemused-emulation/exaile.cfg
