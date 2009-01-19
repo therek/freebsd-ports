@@ -6,6 +6,19 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090119:
+  AFFECTS: users of mail/claws-mail, mail/claws-mail-smime
+  AUTHOR: netchild@FreeBSD.org
+
+  The claws-mail port includes the S/MIME plugin itself now, it is not
+  distributed as a separate plugin anymore. It can be enabled with the
+  GPGME option in the port (disabled by default). If you use the S/MIME
+  plugin, you should remove the mail/claws-mail-smime port before
+  enabling GPGME and updating the mail/claws-mail port. People which
+  already updated mail/claws-mail with GPGME enabled and a non-working
+  S/MIME plugin need to deinstall mail/claws-mail-smime and reinstall
+  mail/claws-mail.
+
 20090118:
   AFFECTS: users of net-p2p/deluge
   AUTHOR: mezz@FreeBSD.org
@@ -7595,4 +7608,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.757 2009/01/18 20:26:03 brix Exp $
+$FreeBSD: ports/UPDATING,v 1.758 2009/01/19 04:18:07 mezz Exp $
