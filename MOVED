@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1771 2009/01/18 19:43:52 pgollucci Exp $
+# $FreeBSD: ports/MOVED,v 1.1772 2009/01/19 00:18:10 gerald Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3755,3 +3755,4 @@ games/fgfs-base|games/flightgear-data|2009-01-15|Renamed
 lang/gcc41|lang/gcc42|2009-01-17|Abandoned upstream, superseded by gcc42 and, preferrably, gcc43
 devel/apr-svn|devel/apr|2009-01-18|Only needed for FreeBSD 5.2 and below for threading
 math/elmer-mathlibs||2009-01-18|Removed
+textproc/py-wbxml|||2009-01-19|Expired: No longer supported by developers
