@@ -1,9 +1,9 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.55 2008/12/05 09:49:31 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.56 2009/01/05 19:43:56 pav Exp $
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.55 2008/12/05 09:49:31 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.56 2009/01/05 19:43:56 pav Exp $
 
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
 
@@ -22,7 +22,6 @@ CONFIGURE_ARGS+=	--enable-cups=yes
 
 .if defined(WITHOUT_MOZILLA)
 CONFIGURE_ARGS+=	--disable-mozilla
-BROKEN=	see i96889 for details, wait until DEV300_m38
 .else
 CONFIGURE_ARGS+=	--enable-build-mozilla
 .endif
