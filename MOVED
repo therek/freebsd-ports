@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1774 2009/01/19 19:49:49 netchild Exp $
+# $FreeBSD: ports/MOVED,v 1.1775 2009/01/19 23:01:21 acm Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3758,3 +3758,5 @@ math/elmer-mathlibs||2009-01-18|Removed
 textproc/py-wbxml|||2009-01-19|Expired: No longer supported by developers
 mail/claws-mail-smime|mail/claws-mail|2009-01-19|The SMIME plugin is included in the main port via the GPGME option now
 www/fpc-httpd||2009-01-19|Splitted to www/fpc-httpd13 www/fpc-httpd20 and www/fpc-httpd22
+multimedia/vlc-devel||2009-01-19|Removed - merged into multimedia/vlc
+
