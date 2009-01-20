@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/resin3/pkg-plist,v 1.19 2008/01/15 01:09:30 vanilla Exp $
+@comment $FreeBSD: ports/www/resin3/pkg-plist,v 1.20 2008/03/28 02:06:53 vanilla Exp $
 %%APP_NAME%%/lib/activation.jar
 %%APP_NAME%%/lib/ejb-15.jar
 %%APP_NAME%%/lib/hessian.jar
@@ -7,6 +7,7 @@
 %%APP_NAME%%/lib/jaxrpc-15.jar
 %%APP_NAME%%/lib/jaxws-api.jar
 %%APP_NAME%%/lib/jca-15.jar
+%%APP_NAME%%/lib/jsf-12.jar
 %%APP_NAME%%/lib/jms-11.jar
 %%APP_NAME%%/lib/jpa-15.jar
 %%APP_NAME%%/lib/jsdk-15.jar
