@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090121:
+  AFFECTS: users of devel/linux-glib2, emulation/linux_base-f4
+  AUTHOR: bsam@FreeBSD.org
+
+  Glib2 now is incorporated to emulation/linux_base-fc4 (it has always
+  been a part of more recent linux base ports). All users should deinstall
+  devel/linux-glib2 and then deinstall/reinstall emulation/linux_base-f4.
+
 20090119:
   AFFECTS: users of mail/claws-mail, mail/claws-mail-smime
   AUTHOR: netchild@FreeBSD.org
@@ -7608,4 +7616,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.758 2009/01/19 04:18:07 mezz Exp $
+$FreeBSD: ports/UPDATING,v 1.759 2009/01/19 19:49:49 netchild Exp $
