@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.5 2009/01/10 02:45:37 mezz Exp $
 #   $MCom: ports-stable/Mk/bsd.gecko.mk,v 1.12 2008/08/07 04:42:34 mezz Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -395,6 +395,7 @@ MOZ_OPTIONS+=	--with-system-zlib=/usr		\
 		--disable-pedantic		\
 		--disable-bidi			\
 		--disable-xterm-updates		\
+		--disable-xprint		\
 		--enable-xinerama
 MOZ_MK_OPTIONS+=	XP_UNIX=1		\
 			PERL=${PERL}
