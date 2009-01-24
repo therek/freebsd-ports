@@ -14,7 +14,7 @@ upgrades.
   no longer needed and will generate warnings when X is started.
   RgbPath will cause X to fail to start, remove it from your config.
 
-  Server 1.5.3 also really wants to configure it's input devices
+  Server 1.5.3 also really wants to configure its input devices
   via hald.  This is causing some issues with moused and
   /dev/sysmouse.  There are a couple of options for how to deal
   with it.
@@ -7653,4 +7653,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.762 2009/01/23 22:53:50 rnoland Exp $
+$FreeBSD: ports/UPDATING,v 1.763 2009/01/24 00:26:55 mezz Exp $
