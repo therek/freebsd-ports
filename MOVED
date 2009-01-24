@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1781 2009/01/23 16:27:14 flz Exp $
+# $FreeBSD: ports/MOVED,v 1.1782 2009/01/23 20:41:36 flz Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3768,3 +3768,4 @@ devel/linux-glib2||2009-01-21|Removed since the port is incorporated into all li
 x11/xorg-protos||2009-01-23|Not really necessary
 x11-drivers/synaptics|x11-drivers/xf86-input-synaptics|2009-01-23|Now an official X.org driver
 net/mpich|net/mpich2|2009-01-23|Broken and superseded by mpich2
+lang/gcc28|lang/gcc42|2009-01-24|Abandoned upstream, superseded by gcc42 and, preferrably, gcc43
