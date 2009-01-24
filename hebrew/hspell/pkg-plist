@@ -1,12 +1,11 @@
-@comment $FreeBSD: ports/hebrew/hspell/pkg-plist,v 1.3 2003/08/06 17:09:58 leeym Exp $
 bin/hspell
 bin/hspell-i
 bin/multispell
-lib/libhspell.a
 include/hspell.h
 include/linginfo.h
+lib/libhspell.a
 %%DATADIR%%/hebrew.wgz
+%%DATADIR%%/hebrew.wgz.hints
 %%DATADIR%%/hebrew.wgz.prefixes
 %%DATADIR%%/hebrew.wgz.sizes
-%%DATADIR%%/hebrew.wgz.hints
 @dirrm %%DATADIR%%
