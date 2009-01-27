@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.75 2009/01/01 13:13:07 kwm Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.76 2009/01/27 23:07:51 kwm Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.68 2008/03/21 04:14:19 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -15,11 +15,16 @@ BASE_GST_ALL_PLUGINS= \
 BAD_GST_ALL_PLUGINS+= \
 		alsa \
 		amrwb \
+		apexsink \
 		bz2 \
 		cdaudio \
+		celt \
+		dc1394 \
 		directfb \
+		dirac \
 		divx \
 		dts \
+		dvb \
 		faac \
 		faad \
 		gsm \
@@ -35,15 +40,24 @@ BAD_GST_ALL_PLUGINS+= \
 		nas \
 		neon \
 		ofa \
+		oss4 \
+		qtwrapper \
 		resindvd \
 		sdl \
+		sf \
 		sndfile \
 		soundtouch \
 		spc \
 		swfdec \
+		theoraexpdec \
 		timidity \
+		twolame \
+		vcdsrc \
+		wildmidi \
+		wininet \
 		x264 \
 		xvid
+
 # good
 GOOD_GST_ALL_PLUGINS+= \
 		aalib \
@@ -97,6 +111,7 @@ CONFIGURE_ARGS+=	--enable-${GST_PLUGIN}
 CONFIGURE_ARGS+=--disable-tests \
 		--disable-examples \
 		--disable-1394 \
+		--disable-acm \
 		--disable-amrnb \
 		--disable-alsa \
 		--disable-http \
