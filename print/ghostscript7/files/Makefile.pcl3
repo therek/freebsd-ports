@@ -1,8 +1,8 @@
-# $FreeBSD$
+# $FreeBSD: ports/print/ghostscript7/files/Makefile.pcl3,v 1.1 2008/06/20 18:07:49 hrs Exp $
 # additional driver for HP PCL3 printers, by Martin Lottermoser
 # http://home.vrweb.de/martin.lottermoser/pcl3.html
 
-MASTER_SITES+=	http://home.vrweb.de/~martin.lottermoser/pcl3dist/:pcl3
+MASTER_SITES+=	http://home.vrweb.de/~martin.lottermoser/pcl3/dist/:pcl3
 DISTFILES+=	pcl3-3.3.tar.gz:pcl3
 EXTRADEVMKFILE+=	${WRKSRC}/pcl3/src/contrib.mak-7.00.add
 PORTDOCS+=	pcl3

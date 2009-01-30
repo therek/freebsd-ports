@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/print/ghostscript7/files/Makefile.gprint,v 1.1 2008/06/20 18:07:49 hrs Exp $
 # Gimp-Print - very high quality driver for Epson, HPs,...
 # http://gimp-print.sourceforge.net/
 #
@@ -9,7 +9,7 @@
 #
 # For that reason, integration of stp driver is disabled by default.
 
-MASTER_SITES+=		${MASTER_SITE_SOURCEFORGE:S/$/:gprint/} \
+MASTER_SITES+=		${MASTER_SITE_SOURCEFORGE:S/%SUBDIR%/gimp-print/:S/$/:gprint/} \
 MASTER_SITE_SUBDIR=	gimp-print/:gprint
 DISTFILES+=		gimp-print-4.2.7.tar.gz:gprint
 EXTRADEVMKFILE+=	${FILESDIR}/stp.contrib.mak
