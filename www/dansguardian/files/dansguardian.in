@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/dansguardian/files/dansguardian.sh.in,v 1.2 2006/07/10 18:32:32 dougb Exp $
+# $FreeBSD: ports/www/dansguardian-devel/files/dansguardian.in,v 1.1 2008/03/27 16:10:19 pav Exp $
 
 # PROVIDE: dansguardian
 # REQUIRE: NETWORKING SERVERS squid
@@ -11,7 +11,6 @@
 #       /etc/rc.conf.d/dansguardian
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
-#
 dansguardian_enable=${dansguardian_enable:-"NO"}
 dansguardian_flags=${dansguardian_flags:-""}
 dansguardian_pidfile=${dansguardian_pidfile:-"/var/run/dansguardian.pid"}
@@ -19,12 +18,11 @@ dansguardian_pidfile=${dansguardian_pidfile:-"/var/run/dansguardian.pid"}
 . %%RC_SUBR%%
 
 name="dansguardian"
-rcvar=`set_rcvar`
-command="%%PREFIX%%/sbin/dansguardian"
+rcvar=${name}_enable
+command="%%PREFIX%%/sbin/${name}"
 
-load_rc_config ${name}
+load_rc_config $name
 
 pidfile="${dansguardian_pidfile}"
 
-run_rc_command "${1}"
-
+run_rc_command "$1"
