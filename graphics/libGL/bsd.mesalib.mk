@@ -14,7 +14,7 @@
 #    - graphics/libGLw
 #    - graphics/dri
 #
-# $FreeBSD: ports/graphics/libGL/bsd.mesalib.mk,v 1.6 2009/01/23 16:27:37 flz Exp $
+# $FreeBSD: ports/graphics/libGL/bsd.mesalib.mk,v 1.7 2009/01/24 18:13:00 rnoland Exp $
 #
 
 MESAVERSION=	7.3
@@ -22,7 +22,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.fu-berlin.de/pub/unix/X11/graphics/Mesa/
 MASTER_SITE_SUBDIR=	mesa3d
 DISTFILES=	MesaLib-${MESAVERSION}${EXTRACT_SUFX}
-MAINTAINER=	x11@FreeBSD.org
+MAINTAINER?=	x11@FreeBSD.org
 
 USE_BZIP2=	yes
 USE_GMAKE=	yes
