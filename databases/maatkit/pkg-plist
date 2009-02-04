@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/databases/maatkit/pkg-plist,v 1.9 2009/01/29 17:04:28 lwhsu Exp $
 %%SITE_PERL%%/maatkit.pm
 %%SITE_PERL%%/maatkitdsn.pm
 bin/mk-archiver
@@ -8,10 +8,10 @@ bin/mk-deadlock-logger
 bin/mk-duplicate-key-checker
 bin/mk-find
 bin/mk-heartbeat
-bin/mk-log-parser
 bin/mk-parallel-dump
 bin/mk-parallel-restore
 bin/mk-profile-compact
+bin/mk-query-digest
 bin/mk-query-profiler
 bin/mk-show-grants
 bin/mk-slave-delay
