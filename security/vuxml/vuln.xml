@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1840 2009/01/30 09:55:01 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1841 2009/02/03 21:42:52 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -1041,7 +1041,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>php5-gd</name>
-	<range><gt>0</gt></range>
+	<range><le>5.2.8</le></range>
       </package>
     </affects>
     <description>
@@ -1064,6 +1064,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2008-12-24</discovery>
       <entry>2009-01-05</entry>
+      <modified>2009-02-04</modified>
     </dates>
   </vuln>
 
