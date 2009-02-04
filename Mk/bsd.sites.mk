@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.468 2009/01/29 13:48:52 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.469 2009/01/29 13:53:29 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1132,7 +1132,6 @@ MASTER_SITE_RUBY+= \
 # See http://rubyforge.org/credits/
 .if !defined(IGNORE_MASTER_SITE_RUBYFORGE)
 MASTER_SITE_RUBYFORGE+= \
-	http://rubyforge.rubyuser.de/%SUBDIR%/ \
 	http://rubyforge.iasi.roedu.net/files/%SUBDIR%/ \
 	http://files.rubyforge.mmmultiworks.com/%SUBDIR%/ \
 	http://files.rubyforge.vm.bytemark.co.uk/%SUBDIR%/
