@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1842 2009/02/04 06:47:06 ale Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1843 2009/02/04 13:47:09 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -43,7 +43,7 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
         <name>drupal6</name>
-	<range><lt>drupal6.9</lt></range>
+	<range><lt>6.9</lt></range>
       </package>
     </affects>
     <description>
@@ -124,7 +124,7 @@ Note:  Please add new entries to the beginning of this file.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	<p>secunia reports:</p>
+	<p>Secunia reports:</p>
 	<blockquote cite="http://secunia.com/advisories/33593/">
 	  <p>Input passed to multiple parameters in action/AttachFile.py is not
 	    properly sanitised before being returned to the user. This can be
