@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1843 2009/02/04 13:47:09 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1844 2009/02/04 13:53:49 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -38,7 +38,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>drupal -- multiple vulnerabilities</topic>
     <affects>
       <package>
-	<name>drual5</name>
+	<name>drupal5</name>
 	<range><lt>5.15</lt></range>
       </package>
       <package>
