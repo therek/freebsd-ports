@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1789 2009/02/03 09:24:00 mm Exp $
+# $FreeBSD: ports/MOVED,v 1.1790 2009/02/03 22:38:10 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3806,3 +3806,4 @@ net/gacxtool||2009-02-03|Has expired: depends on expired, broken port
 devel/py-coro||2009-02-03|Has expired: has been broken for more than 6 months
 chinese/stardict2-dict-zh_TW||2009-02-03|Has expired: has been broken for more than 6 months
 x11-themes/gtk-industrial-theme||2009-02-03|Has expired: has been broken for more than 6 months
+sysutils/srmt||2009-02-07|Moved into archivers/star
