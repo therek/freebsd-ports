@@ -10,6 +10,14 @@ in the release notes.
 
 All ports committers are allowed to commit to this file.
 
+20090207:
+AUTHOR: pgollucci@FreeBSD.org
+
+  * devel/libslang dropped in favor of devel/libslang2
+  
+  * WITH_SLANG2 has been removed.  WITH_SLANG now implies
+    devel/libslang2.
+
 20080905:
 AUTHOR: hrs@FreeBSD.org
 
@@ -1481,4 +1489,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.86 2008/09/05 19:41:43 hrs Exp $
+$FreeBSD: ports/CHANGES,v 1.87 2008/09/07 21:49:30 miwi Exp $
