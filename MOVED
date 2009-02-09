@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1792 2009/02/08 03:14:08 pgollucci Exp $
+# $FreeBSD: ports/MOVED,v 1.1793 2009/02/08 12:35:15 pgj Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3807,3 +3807,4 @@ chinese/stardict2-dict-zh_TW||2009-02-03|Has expired: has been broken for more t
 x11-themes/gtk-industrial-theme||2009-02-03|Has expired: has been broken for more than 6 months
 sysutils/srmt||2009-02-07|Moved into archivers/star
 devel/libslang|devel/libslang2|2009-02-07|Abandoned upstream, replaced by devel/libslang2
+graphics/processing-devel|graphics/processing|2009-02-09|Retire, as non-devel port was updated to newer version
