@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.38 2007/04/11 20:11:51 miwi Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.39 2007/12/13 01:26:10 miwi Exp $
 #
 # set -x
 
@@ -69,7 +69,6 @@ if [ "$MUTT_PORTDOCS" = "yes" ]; then
 %%DOCSDIR%%/ABOUT-NLS
 %%DOCSDIR%%/COPYRIGHT
 %%DOCSDIR%%/ChangeLog
-%%DOCSDIR%%/ChangeLog.old
 %%DOCSDIR%%/GPL
 %%DOCSDIR%%/INSTALL
 %%DOCSDIR%%/NEWS
