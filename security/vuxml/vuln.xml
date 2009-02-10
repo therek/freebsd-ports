@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1853 2009/02/09 15:31:02 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1854 2009/02/09 17:55:33 stas Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -170,12 +170,14 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
+      <cvename>CVE-2009-0478</cvename>
       <url>http://www.squid-cache.org/Advisories/SQUID-2009_1.txt</url>
       <url>http://secunia.com/advisories/33731/</url>
     </references>
     <dates>
       <discovery>2009-02-04</discovery>
       <entry>2009-02-09</entry>
+      <modified>2009-02-10</modified>
     </dates>
   </vuln>
 
