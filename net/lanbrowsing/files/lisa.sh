@@ -1,11 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/lanbrowsing/files/lisa.sh,v 1.22 2008/08/29 11:30:00 miwi Exp $
 #
 
 # PROVIDE: lisa
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD
 
 lisa_enable="NO"
 lisa_conffile="%%PREFIX%%/etc/lisarc"
