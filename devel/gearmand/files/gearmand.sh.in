@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/gearmand/files/gearmand.sh.in,v 1.1 2009/01/29 06:58:29 lwhsu Exp $
+# $FreeBSD: ports/devel/gearmand/files/gearmand.sh.in,v 1.2 2009/01/30 05:18:43 rafan Exp $
 #
 
 # PROVIDE: gearmand
@@ -13,11 +13,9 @@ command="%%PREFIX%%/bin/gearmand"
 
 load_rc_config "$name"
 : ${gearmand_enable="NO"}
-: ${gearmand_flags="-p 4730 -v"}
+: ${gearmand_flags="-d -v"}
 : ${gearmand_group="daemon"}
 : ${gearmand_user="daemon"}
-
-command_args="&"
 
 run_rc_command "$1"
 
