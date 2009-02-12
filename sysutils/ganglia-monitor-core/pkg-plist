@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/ganglia-monitor-core/pkg-plist,v 1.10 2009/01/30 03:56:34 brooks Exp $
+@comment $FreeBSD: ports/sysutils/ganglia-monitor-core/pkg-plist,v 1.11 2009/02/12 18:11:31 brooks Exp $
 bin/ganglia-config
 bin/gstat
 bin/gmetric
@@ -13,9 +13,11 @@ include/gm_metric.h
 include/gm_msg.h
 include/gm_protocol.h
 include/gm_value.h
+lib/libganglia-3.1.1.so
 lib/libganglia-3.1.1.so.0
 lib/libganglia.a
 lib/libganglia.la
+lib/libganglia.so
 lib/ganglia/modcpu.so
 lib/ganglia/moddisk.so
 lib/ganglia/modload.so
@@ -28,5 +30,6 @@ lib/ganglia/modsys.so
 %%GMETAD%%sbin/gmetad
 %%GMETAD%%sbin/gmetasnap
 sbin/gmond
+@dirrm lib/ganglia
 @dirrmtry var/db/ganglia/rrds
 @dirrmtry var/db/ganglia
