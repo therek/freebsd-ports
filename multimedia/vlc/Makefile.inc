@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc-devel/Makefile.inc,v 1.22 2009/01/10 02:45:40 mezz Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.21 2009/01/20 01:50:28 beech Exp $
 #   $MCom: ports-stable/multimedia/vlc-devel/Makefile.inc,v 1.4 2009/01/09 23:41:21 mezz Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -260,6 +260,10 @@ pre-install: build
 		${SED} -e 's|^|lib/|' >> ${PLIST} \
 		&& ${FIND} -d * -type d | \
 		${SED} -e 's|^|@dirrm lib/|' >> ${PLIST}
+	cd ${FAKEDIR}/libdata && ${FIND} -s * -type f -o -type l| \
+		${SED} -e 's|^|libdata/|' >> ${PLIST} \
+		&& ${FIND} -d * -type d | \
+		${SED} -e 's|^|@dirrm libdata/|' >> ${PLIST}
 .for dir in vlc
 	cd ${FAKEDIR}/share/${dir} && ${FIND} -s * -type f -o -type l | \
 		${SED} -e 's|^|share/${dir}/|' >> ${PLIST} \
@@ -296,6 +300,8 @@ do-install:
 		${CPIO} -vpdm -L -R ${LIBOWN}:${LIBGRP} ${PREFIX}/include
 	cd ${FAKEDIR}/lib && ${FIND} . | \
 		${CPIO} -vpdm -L -R ${LIBOWN}:${LIBGRP} ${PREFIX}/lib
+	cd ${FAKEDIR}/libdata && ${FIND} . | \
+		${CPIO} -vpdm -L -R ${LIBOWN}:${LIBGRP} ${PREFIX}/libdata
 	cd ${FAKEDIR}/share && ${FIND} . | \
 		${CPIO} -vpdm -L -R ${SHAREOWN} ${PREFIX}/share
 .if defined(WITH_VLC_MOZILLA_PLUGIN) && !defined(WITHOUT_VLC_MOZILLA_PLUGIN)
