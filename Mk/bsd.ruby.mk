@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.176 2009/02/12 14:24:56 stas Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.177 2009/02/13 22:48:51 stas Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -62,6 +62,9 @@ Ruby_Include_MAINTAINER=	stas@FreeBSD.org
 #			  documents from. If this is defined and not empty,
 #			  USE_RUBY_RDTOOL is implied and RUBY_RD_HTML_FILES is
 #			  defined.
+# USE_RUBYGEMS		- Says that the port uses rubygems packaging system.
+# RUBYGEM_AUTOPLIST	- Generate packing list for rubygems based port
+#			  automatically.
 #
 #
 # [variables that each port should not (re)define]
