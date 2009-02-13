@@ -24,7 +24,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 # 
-# $FreeBSD$
+# $FreeBSD: ports/mail/dma/files/dma.rb,v 1.1 2009/02/12 00:41:34 wxs Exp $
 
 # Wrapper around dma(8) which implements the missing -t sendmail option.
 # WARNING: The address parsing is very incomplete and might break.
@@ -35,7 +35,8 @@ dma = $0.gsub(/.rb$/, '')
 
 if ARGV.delete "-t"
 	msg = STDIN.read
-	head, cr, body = msg.split(/(?<=\n)(\r?)\n/, 2)
+	head, cr, body = msg.split(/\n(\r?)\n/, 2)
+	head = head + "\n"
 	tmphead = head.gsub(/\n\s+/m, ' ')
 	rcpts = []
 	tmphead.gsub(/^(?:to|cc|bcc):\s.*$/i) do |match|
