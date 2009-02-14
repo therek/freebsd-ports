@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1797 2009/02/14 21:47:55 cy Exp $
+# $FreeBSD: ports/MOVED,v 1.1798 2009/02/14 23:39:32 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3816,5 +3816,5 @@ www/ocaml-wdialog||2009-02-13|Has expired: has been broken for more than 6 month
 news/sabnzbd||2009-02-13|Has expired: no longer developed, use news/sabnzbdplus instead
 devel/erlslang||2009-02-14|Broken with libslang2; no upstream development
 net/ntp-rc|net/ntp|2009-02-14|NTP is no longer in release candidate status. Use net/ntp instead.
-mail/py-pyclamd|security/py-pyclamd|2000-27-14|Category change
+mail/py-pyclamd|security/py-pyclamd|2009-27-14|Category change
 
