@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/samba3/files/samba.in,v 1.6 2007/06/05 10:55:06 tdb Exp $
+# $FreeBSD: ports/net/samba32/files/samba.in,v 1.1 2008/10/12 01:37:46 timur Exp $
 #
 
 # PROVIDE: nmbd smbd
