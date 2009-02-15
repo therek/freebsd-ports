@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/Tools/scripts/update-patches,v 1.3 2002/05/25 15:15:41 trevor Exp $
+# $FreeBSD: ports/Tools/scripts/update-patches,v 1.4 2005/01/09 10:21:17 krion Exp $
 # $OpenBSD: update-patches,v 1.3 2000/06/09 17:08:37 espie Exp $
 # Copyright (c) 2000
 # Marc Espie.  All rights reserved.
@@ -47,7 +47,7 @@ do
 		# found it, splice before diff part with diff
 		esc=`echo $file | sed -e 's,/,\\\\/,g'`
 		{ sed -e "/^--- $esc.orig/,\$ d" <$i
-		    (cd $PATCH_WRKSRC && diff ${DIFF_ARGS} -u $file.orig $file) } >$i.new
+		    (cd $PATCH_WRKSRC && diff -p ${DIFF_ARGS} -u $file.orig $file) } >$i.new
 		# did it change ? mark it as changed
 		if diff ${DIFF_ARGS} -u --ignore-matching-lines="^--- $file.orig	.*" \
 		    --ignore-matching-lines="^+++ $file	.*" $i $i.new 1>&2
