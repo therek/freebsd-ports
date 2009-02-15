@@ -4,7 +4,7 @@
 #
 # See: http://www.eclipse.org
 #
-# $FreeBSD: ports/java/eclipse-devel/files/eclipse.in,v 1.5 2008/05/10 03:51:41 glewis Exp $
+# $FreeBSD$
 #
 DEFAULT_JAVA_HOME=%%PREFIX%%
 ECLIPSE_HOME=%%ECLIPSE_HOME%%
