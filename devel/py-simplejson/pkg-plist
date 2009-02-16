@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/py-simplejson/pkg-plist,v 1.6 2008/09/24 14:41:58 miwi Exp $
+@comment $FreeBSD: ports/devel/py-simplejson/pkg-plist,v 1.7 2008/10/09 03:06:45 clsung Exp $
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%
 %%PORTDOCS%%%%DOCSDIR%%/_sources/index.txt
 %%PORTDOCS%%%%DOCSDIR%%/_static/contents.png
@@ -20,6 +20,6 @@
 %%PORTDOCS%%%%DOCSDIR%%/index.html
 %%PORTDOCS%%%%DOCSDIR%%/search.html
 %%PORTDOCS%%%%DOCSDIR%%/searchindex.json
-%%PORTDOCS%%@dirrm %%DOCSDIR%%/_sources
 %%PORTDOCS%%@dirrm %%DOCSDIR%%/_static
+%%PORTDOCS%%@dirrm %%DOCSDIR%%/_sources
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
