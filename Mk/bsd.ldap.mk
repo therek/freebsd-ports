@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.ldap.mk,v 1.2 2008/07/22 01:59:22 delphij Exp $
+# $FreeBSD: ports/Mk/bsd.ldap.mk,v 1.3 2009/01/05 05:49:34 delphij Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Ldap_Post_Include)
@@ -37,7 +37,7 @@ Database_Include_MAINTAINER=	ports@FreeBSD.org
 DEFAULT_OPENLDAP_VER?=	24
 # OpenLDAP client versions currently supported
 OPENLDAP23_LIBVER=	2.3.2
-OPENLDAP24_LIBVER=	2.4.5
+OPENLDAP24_LIBVER=	2.4.6
 
 .if exists(${LOCALBASE}/bin/ldapwhoami)
 _OPENLDAP_VER!=	${LOCALBASE}/bin/ldapwhoami -VV 2>&1 | ${GREP} ldapwhoami | ${SED} -E 's/.*OpenLDAP: ldapwhoami (2)\.(3|4).*/\1\2/'
