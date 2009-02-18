@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/prelude-lml/pkg-plist,v 1.12 2008/02/15 11:18:15 miwi Exp $
+@comment $FreeBSD: ports/security/prelude-lml/pkg-plist,v 1.13 2008/05/13 14:51:42 miwi Exp $
 bin/prelude-lml
 @unexec if cmp -s %D/etc/prelude-lml/plugins.rules %D/etc/prelude-lml/plugins.rules-dist; then rm -f %D/etc/prelude-lml/plugins.rules; fi
 etc/prelude-lml/plugins.rules-dist
@@ -58,6 +58,7 @@ etc/prelude-lml/ruleset/sonicwall.rules
 etc/prelude-lml/ruleset/spamassassin.rules
 etc/prelude-lml/ruleset/squid.rules
 etc/prelude-lml/ruleset/ssh.rules
+etc/prelude-lml/ruleset/su.rules
 etc/prelude-lml/ruleset/sudo.rules
 etc/prelude-lml/ruleset/suhosin.rules
 etc/prelude-lml/ruleset/tripwire.rules
