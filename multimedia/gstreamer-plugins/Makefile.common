@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.80 2009/01/29 09:41:07 kwm Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.81 2009/02/20 15:26:41 kwm Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.68 2008/03/21 04:14:19 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -224,7 +224,7 @@ gst_faac_DIST=	bad
 
 # faad
 gst_faad_USE_GSTREAMER+=	bad
-gst_faad_LIB_DEPENDS+=	faad.0:${PORTSDIR}/audio/faad
+gst_faad_LIB_DEPENDS+=	faad.1:${PORTSDIR}/audio/faad
 gst_faad_PLIST_FILES=	${GST_LIB_DIR}/libgstfaad.la \
 		${GST_LIB_DIR}/libgstfaad.so
 gst_faad_DIST=	bad
