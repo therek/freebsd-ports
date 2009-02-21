@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.469 2009/01/29 13:53:29 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.470 2009/02/04 22:27:33 kuriyama Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1109,7 +1109,7 @@ MASTER_SITE_REDHAT_LINUX+= \
 .if !defined(IGNORE_MASTER_SITE_RINGSERVER)
 MASTER_SITE_RINGSERVER+=	\
 	http://ring.nict.go.jp/archives/%SUBDIR%/ \
-	http://ring.sakura.ad.jp/archives/%SUBDIR%/ \
+	http://ring.k-opti.com/archives/%SUBDIR%/ \
 	http://ring.riken.jp/archives/%SUBDIR%/
 .endif
 
