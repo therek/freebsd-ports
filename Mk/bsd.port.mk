@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.609 2009/01/23 16:27:14 flz Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.610 2009/02/01 19:43:09 skv Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2788,7 +2788,7 @@ check-categories:
 
 VALID_CATEGORIES+= accessibility afterstep arabic archivers astro audio \
 	benchmarks biology cad chinese comms converters databases \
-	deskutils devel dns editors elisp emulators finance french ftp \
+	deskutils devel docs dns editors elisp emulators finance french ftp \
 	games geography german gnome gnustep graphics hamradio haskell hebrew hungarian \
 	ipv6 irc japanese java kde kld korean lang linux lisp \
 	mail math mbone misc multimedia net net-im net-mgmt net-p2p news \
