@@ -6,6 +6,17 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090223:
+  AFFECTS: users of Tcl/Tk
+  AUTHOR: mm@FreeBSD.org
+
+  The default version of Tcl/Tk has been changed from 8.4 to 8.5.
+
+  To restore old behavior and prefer using Tcl 8.4 with supported ports set
+  WITH_TCL_VER=84 in /etc/make.conf. This has no effect on ports that have
+  USE_TCL=yes or USE_TK=yes. They stick to the new default version and have
+  to be updated by their maintainers to support other versions than default.
+
 20090218:
   AFFECTS: users of www/zend-framework
   AUTHOR: glarkin@FreeBSD.org
@@ -7742,4 +7753,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.778 2009/02/17 02:54:36 delphij Exp $
+$FreeBSD: ports/UPDATING,v 1.779 2009/02/18 18:06:36 glarkin Exp $
