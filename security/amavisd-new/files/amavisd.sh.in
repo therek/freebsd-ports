@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/amavisd-new/files/amavisd.sh.in,v 1.5 2008/09/22 09:30:48 gabor Exp $
+# $FreeBSD: ports/security/amavisd-new/files/amavisd.sh.in,v 1.6 2009/02/23 11:53:09 gabor Exp $
 #
 
 # PROVIDE: amavisd
@@ -47,6 +47,13 @@ stop_postcmd=stop_postcmd
 stop_postcmd()
 {
   rm -f $pidfile
+}
+
+reload_cmd=${name}_reload
+
+amavisd_reload()
+{
+  ${command} reload
 }
 
 # set defaults
