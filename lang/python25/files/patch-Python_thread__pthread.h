@@ -1,8 +1,8 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/python25/files/patch-Python_thread__pthread.h,v 1.1 2009/02/27 01:25:31 sobomax Exp $
 
---- ../Python/thread_pthread.h
-+++ ../Python/thread_pthread.h
+--- Python/thread_pthread.h
++++ Python/thread_pthread.h
 @@ -149,6 +149,7 @@
  {
  	pthread_t th;
