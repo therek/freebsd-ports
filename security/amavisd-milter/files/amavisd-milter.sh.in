@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/amavisd-milter/files/amavisd-milter.sh.in,v 1.4 2006/02/17 16:38:48 garga Exp $
+# $FreeBSD: ports/security/amavisd-milter/files/amavisd-milter.sh.in,v 1.5 2006/02/20 20:47:36 dougb Exp $
 #
 
 # PROVIDE: amavisd-milter
@@ -23,7 +23,7 @@ load_rc_config $name
 
 # Set defaults
 : ${amavisd_milter_enable:="NO"}
-: ${amavisd_milter_flags="-w %%AMAVISDIR%%/tmp"}
+: ${amavisd_milter_flags=""}
 : ${amavisd_milter_user="%%AMAVISUSER%%"}
 
 pidfile="${amavisd_milter_pidfile:-%%AMAVISDIR%%/amavisd-milter.pid}"
