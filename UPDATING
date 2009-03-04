@@ -7,6 +7,14 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20080304:
+  AFFECTS: users of comms/py-gammu
+  AUTHOR: bsam@FreeBSD.org
+
+  The port comms/py-gammu was incorporated into comms/gammu since
+  1.23.0. Delete comms/py-gammu first and then deinstall/reinstall
+  comms/gammu with option WITH_PYTHON_GAMMU=YES.
+
+20080304:
   AFFECTS: users of x11-wm/xfce4
   AUTHOR: oliver@FreeBSD.org
 
@@ -7781,4 +7789,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.780 2009/02/23 14:46:22 mm Exp $
+$FreeBSD: ports/UPDATING,v 1.781 2009/03/04 19:07:20 oliver Exp $
