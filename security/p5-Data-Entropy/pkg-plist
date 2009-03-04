@@ -1,5 +1,4 @@
-@comment $FreeBSD$
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/Data/Entropy/.packlist
+@comment $FreeBSD: ports/security/p5-Data-Entropy/pkg-plist,v 1.1 2006/07/20 01:21:50 clsung Exp $
 %%SITE_PERL%%/Data/Entropy.pm
 %%SITE_PERL%%/Data/Entropy/Algorithms.pm
 %%SITE_PERL%%/Data/Entropy/RawSource/CryptCounter.pm
