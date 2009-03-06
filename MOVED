@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1808 2009/03/02 16:51:51 oliver Exp $
+# $FreeBSD: ports/MOVED,v 1.1809 2009/03/04 21:07:39 bsam Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3830,3 +3830,4 @@ sysutils/xfce4-mcs-manager||2009-03-02|got obsolete by xfce 4.6 update
 sysutils/xfce4-mcs-plugins||2009-03-02|got obsolete by xfce 4.6 update
 x11-themes/xfce4-icon-theme||2009-03-02|got obsolete by xfce 4.6 update
 comms/py-gammu||2009-03-04|incorporated into comms/gammu
+devel/p5-Getopt-Mixed||2009-03-03|Use Getopt::Long
