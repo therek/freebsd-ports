@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.48 2008/12/07 13:26:01 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.49 2008/12/11 09:08:24 ale Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -49,7 +49,6 @@ PHP_VER?=	${DEFAULT_PHP_VER}
 PHP_EXT_DIR=	20020429
 .else
 PHP_EXT_DIR=	20060613
-PHP_EXT_INC=	pcre
 .endif
 
 HTTPD?=		${LOCALBASE}/sbin/httpd
@@ -162,7 +161,9 @@ do-phpize:
 	@(cd ${WRKSRC}; ${SETENV} ${SCRIPTS_ENV} ${PHPBASE}/bin/phpize)
 .endif
 
-.if defined(USE_PHPEXT)
+.endif
+
+.if defined(_POSTMKINCLUDED) && defined(USE_PHPEXT)
 PHP_MODNAME?=	${PORTNAME}
 PHP_HEADER_DIRS?=	""
 
@@ -228,8 +229,6 @@ php-ini:
 	@${ECHO_CMD} "extension=${PHP_MODNAME}.so"
 	@${ECHO_CMD} ""
 	@${ECHO_CMD} "****************************************************************************"
-.endif
-
 .endif
 
 # Extensions
