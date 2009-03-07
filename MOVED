@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1815 2009/03/07 03:10:29 gerald Exp $
+# $FreeBSD: ports/MOVED,v 1.1816 2009/03/07 13:09:28 gerald Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3837,3 +3837,5 @@ audio/quelcom||2009-03-07|Abandoned upstream, requires obsolete version of GCC
 math/cxsc||2009-03-07|Abandoned upstream, requires obsolete version of GCC
 devel/prcs||2009-03-07|Abandoned upstream, requires obsolete version of GCC
 devel/tvision||2009-03-07|Abandoned upstream, requires obsolete version of GCC
+textproc/latte||2009-03-07|Abandoned upstream, requires obsolete version of GCC
+textproc/nicetext||2009-03-07|Abandoned upstream, requires obsolete version of GCC
