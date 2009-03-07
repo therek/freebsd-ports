@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1813 2009/03/06 21:41:09 wxs Exp $
+# $FreeBSD: ports/MOVED,v 1.1814 2009/03/07 03:05:42 gerald Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3834,3 +3834,4 @@ devel/p5-Getopt-Mixed||2009-03-06|Use Getopt::Long
 x11-toolkits/scx||2009-03-06|Abandoned upstream
 x11-toolkits/xg||2009-03-06|Abandoned upstream
 audio/quelcom||2009-03-07|Abandoned upstream, requires obsolete version of GCC
+math/cxsc||2009-03-07|Abandoned upstream, requires obsolete version of GCC
