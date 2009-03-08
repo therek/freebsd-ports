@@ -6,6 +6,19 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090308:
+  AFFECTS: users of emulators/qemu
+  AUTHOR: nox@FreeBSD.org
+
+  The port has been updated to 0.10.0, which now uses the newer
+  (incompatible) kqemu-kmod-devel port that now also works for the
+  32 bit "qemu" executable on amd64.  If you upgrade emulators/qemu
+  with the KQEMU knob on, you have to
+
+	# pkg_delete kqemu-kmod-1\*
+
+  the old kqemu version first if it is installed.
+
 20090304:
   AFFECTS: users of comms/py-gammu
   AUTHOR: bsam@FreeBSD.org
@@ -7789,4 +7802,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.782 2009/03/04 21:07:39 bsam Exp $
+$FreeBSD: ports/UPDATING,v 1.783 2009/03/05 05:45:02 oliver Exp $
