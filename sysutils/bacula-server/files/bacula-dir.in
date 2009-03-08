@@ -1,8 +1,8 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/bacula-server-devel/files/bacula-dir.sh.in,v 1.3 2006/09/09 20:17:39 itetcu Exp $
+# $FreeBSD: ports/sysutils/bacula-server/files/bacula-dir.in,v 1.2 2007/01/04 23:22:30 itetcu Exp $
 #
-# PROVIDE: utility
+# PROVIDE: bacula_dir
 # REQUIRE: DAEMON %%REQ_MYSQL%% %%REQ_PGSQL%%
 # KEYWORD: shutdown
 #
@@ -22,10 +22,10 @@ command=%%PREFIX%%/sbin/bacula-dir
 
 load_rc_config $name
 
-pidfile="${bacula_dir_pidfile}"
-
 : ${bacula_dir_enable="NO"}
 : ${bacula_dir_flags=" -u bacula -g bacula -v -c %%PREFIX%%/etc/bacula-dir.conf"}
 : ${bacula_dir_pidfile="/var/run/bacula-dir.9101.pid"}
+
+pidfile="${bacula_dir_pidfile}"
 
 run_rc_command "$1"
