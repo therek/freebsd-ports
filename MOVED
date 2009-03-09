@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1820 2009/03/09 08:45:36 stas Exp $
+# $FreeBSD: ports/MOVED,v 1.1821 2009/03/09 08:57:56 stas Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3841,3 +3841,4 @@ textproc/nicetext||2009-03-07|Abandoned upstream, requires obsolete version of G
 multimedia/libspiff|multimedia/libxspf|2009-03-08|Project renamed
 graphics/libgdgeda||2009-03-09|Has expired: is not required anymore
 japanese/ruby-tk||2009-03-09|Has expired: uses old Tk, not required with newer versions
+www/p5-Cookie-XS|p5-CGI-Cookie-XS|2009-03-09|Renamed
