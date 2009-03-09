@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090309:
+  AFFECTS: users of multimedia/phonon
+  AUTHOR: kde@FreeBSD.org
+
+  multimedia/phonon port has been split into phonon itself, phonon-xine
+  and phono-gstreamer backends. After updating phonon port you have
+  to install at least one backend. phonon-xine backend is recommended
+  for KDE.
+
 20090308:
   AFFECTS: users of emulators/qemu
   AUTHOR: nox@FreeBSD.org
@@ -7802,4 +7811,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.783 2009/03/05 05:45:02 oliver Exp $
+$FreeBSD: ports/UPDATING,v 1.784 2009/03/08 17:17:00 nox Exp $

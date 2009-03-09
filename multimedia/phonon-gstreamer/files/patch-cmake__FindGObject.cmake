@@ -1,5 +1,5 @@
---- ../cmake/FindGObject.cmake.orig	2008-11-24 20:11:55.000000000 +0300
-+++ ../cmake/FindGObject.cmake	2008-12-11 14:36:14.000000000 +0300
+--- ./cmake/FindGObject.cmake.orig	2008-11-24 20:11:55.000000000 +0300
++++ ./cmake/FindGObject.cmake	2009-02-21 01:19:39.000000000 +0300
 @@ -23,14 +23,16 @@
     # in the FIND_PATH() and FIND_LIBRARY() calls
     PKG_CHECK_MODULES(PKG_GOBJECT2 REQUIRED gobject-2.0)
