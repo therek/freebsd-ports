@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/p5-WebService-Simple/pkg-plist,v 1.1 2008/05/24 17:14:01 miwi Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/WebService/Simple/.packlist
 %%SITE_PERL%%/WebService/Simple.pm
 %%SITE_PERL%%/WebService/Simple/Parser.pm
@@ -7,6 +7,7 @@
 %%SITE_PERL%%/WebService/Simple/Parser/XML/Lite.pm
 %%SITE_PERL%%/WebService/Simple/Parser/XML/LibXML.pm
 %%SITE_PERL%%/WebService/Simple/Parser/XML/Simple.pm
+%%SITE_PERL%%/WebService/Simple/Parser/XML/Feed.pm
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/WebService/Simple
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/WebService
 @dirrmtry %%SITE_PERL%%/WebService/Simple/Parser/XML
