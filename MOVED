@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1825 2009/03/09 22:46:46 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1826 2009/03/13 16:06:08 obrien Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3853,3 +3853,4 @@ www/rubygem-actionwebservice||2009-03-09|Has expired: from rails 2.0 www/rubygem
 x11-toolkits/inti-gconf||2009-03-09|Has expired: not maintain by upstream for more than five years and no port depend on this
 x11-toolkits/inti-gl||2009-03-09|Has expired: not maintain by upstream for more than five years and no port depend on this
 x11-toolkits/inti-sourceview||2009-03-09|Has expired: not maintain by upstream for more than five years and no port depend on this
+misc/git|misc/gnuit|2009-03-14|Renamed
