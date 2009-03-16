@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1884 2009/03/16 18:49:33 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1885 2009/03/16 19:25:06 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -72,7 +72,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>roundcube -- webmail script insertion and php code injection</topic>
     <affects>
       <package>
-	<name></name>
+	<name>roundcube</name>
 	<range><lt>0.2.1</lt></range>
       </package>
     </affects>
