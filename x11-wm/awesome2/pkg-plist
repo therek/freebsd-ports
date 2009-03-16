@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/x11-wm/awesome2/pkg-plist,v 1.4 2009/03/14 13:36:57 miwi Exp $
 bin/awesome
 bin/awesome-client
 bin/awsetbg
