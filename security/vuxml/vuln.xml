@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1887 2009/03/16 19:50:10 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1888 2009/03/16 20:37:17 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -73,7 +73,7 @@ Note:  Please add new entries to the beginning of this file.
       <url>http://gstreamer.freedesktop.org/releases/gst-plugins-good/0.10.12.html</url>
     </references>
     <dates>
-      <discovery>2009-03-FIXME</discovery>
+      <discovery>2009-01-22</discovery>
       <entry>2009-03-16</entry>
     </dates>
   </vuln>
