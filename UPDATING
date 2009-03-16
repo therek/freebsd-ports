@@ -7,6 +7,14 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20090316:
+  AFFECTS: users of net-im/ejabberd
+  AUTHOR: skylord@linkline.ru
+
+  ejabberd's UID and GID have changed (PR ports/105122). Users are advised
+  to check all configuration files and data in /var/spool/ejabberd to
+  ensure everything has the correct owner/group.
+
+20090316:
   AFFECTS: users of sysutils/lire
   AUTHOR: edwin@FreeBSD.org
 
@@ -7860,4 +7868,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.787 2009/03/10 21:08:50 glarkin Exp $
+$FreeBSD: ports/UPDATING,v 1.788 2009/03/16 00:21:24 edwin Exp $
