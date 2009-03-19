@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.1 2009/03/19 17:28:30 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -34,13 +34,13 @@ Linux_APPS_Pre_Include=			bsd.linux-apps.mk
 
 Linux_APPS_Post_Include=	bsd.linux-apps.mk
 
-.  if (${LINUX_OSRELEASE} == "2.6.16") && (${USE_LINUX} == "f8")
-LINUX_DIST_SUFFIX=	-f8
-WEB_AUTH=			kompozer
-.  else
+# .  if (${LINUX_OSRELEASE} == "2.6.16") && (${USE_LINUX} == "f8")
+# LINUX_DIST_SUFFIX=	-f8
+# WEB_AUTH=			kompozer
+# .  else
 LINUX_DIST_SUFFIX=
 WEB_AUTH=			nvu
-.  endif
+# .  endif
 
 # Non-version specific components
 _LINUX_APPS_ALL=	allegro alsalib arts aspell atk cairo curl esound expat fontconfig \
