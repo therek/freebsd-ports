@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/josm/files/josm.sh.in,v 1.1 2009/02/24 20:56:43 stas Exp $
 
 JAVA="%%LOCALBASE%%/bin/java"
 JARPATH="%%JAVALIBDIR%%"
 export JAVA_VERSION="%%JAVA_VERSION%%"
 
-exec "${JAVA}" -jar "${JARPATH}/%%JARNAME%%" "$@"
+exec "${JAVA}" -Xmx256m -jar "${JARPATH}/%%JARNAME%%" "$@"
