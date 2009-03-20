@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/p5-FLV-Info/pkg-plist,v 1.7 2008/10/06 15:57:05 leeym Exp $
+@comment $FreeBSD: ports/multimedia/p5-FLV-Info/pkg-plist,v 1.8 2008/10/17 23:14:05 leeym Exp $
 bin/flv2flv
 bin/flv2mp3
 bin/flv2swf
@@ -15,6 +15,7 @@ bin/swf2flv
 %%SITE_PERL%%/FLV/Header.pm
 %%SITE_PERL%%/FLV/Info.pm
 %%SITE_PERL%%/FLV/MetaTag.pm
+%%SITE_PERL%%/FLV/Splice.pm
 %%SITE_PERL%%/FLV/Tag.pm
 %%SITE_PERL%%/FLV/ToMP3.pm
 %%SITE_PERL%%/FLV/ToSWF.pm
