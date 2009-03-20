@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1892 2009/03/18 16:18:57 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1893 2009/03/20 21:13:46 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -684,12 +684,16 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
+      <cvename>CVE-2009-0936</cvename>
+      <cvename>CVE-2009-0937</cvename>
+      <cvename>CVE-2009-0938</cvename>
       <url>http://secunia.com/advisories/33880/</url>
       <url>http://archives.seul.org/or/announce/Feb-2009/msg00000.html</url>
     </references>
     <dates>
       <discovery>2009-02-10</discovery>
       <entry>2009-02-13</entry>
+      <modified>2009-03-20</modified>
     </dates>
   </vuln>
 
