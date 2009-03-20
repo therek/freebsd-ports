@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1893 2009/03/20 21:13:46 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1894 2009/03/20 21:59:31 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -714,7 +714,7 @@ Note:  Please add new entries to the beginning of this file.
       <package>
 	<name>seamonkey</name>
 	<name>linux-seamonkey</name>
-	<range><lt>1.1.14_1</lt></range>
+	<range><lt>1.1.15</lt></range>
       </package>
       <package>
 	<name>thunderbird</name>
