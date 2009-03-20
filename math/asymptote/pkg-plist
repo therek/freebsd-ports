@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/math/asymptote/pkg-plist,v 1.32 2009/02/26 16:05:07 nivit Exp $
+@comment $FreeBSD: ports/math/asymptote/pkg-plist,v 1.33 2009/02/27 13:42:40 nivit Exp $
 bin/asy
 bin/xasy
 %%DATADIR%%/CAD.asy
@@ -186,7 +186,10 @@ bin/xasy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/fermi.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/filegraph.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/filegraph.dat
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/filesurface.asy
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/filesurface.dat
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/fillcontour.asy
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/fin.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/fjortoft.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/floor.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/flow.asy
