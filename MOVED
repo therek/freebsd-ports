@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1830 2009/03/19 20:32:08 mva Exp $
+# $FreeBSD: ports/MOVED,v 1.1831 2009/03/20 23:52:11 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3858,3 +3858,4 @@ lang/gcc33|lang/gcc43|2009-03-14|Abandoned upstream, superseded by later version
 sysutils/libisoburn|sysutils/xorriso|2009-03-16|Project was Renamed
 games/PySolFC|games/pysolfc|2009-03-19|port renamed
 net-im/ruby-xmpp4r|net-im/rubygem-xmpp4r|2009-03-21|Renamed
+audio/rhythmbox-devel|audio/rhythmbox|2009-03-21|main port updated to latest stable version
