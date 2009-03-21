@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.5 2009/01/10 02:45:37 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.6 2009/01/23 16:27:14 flz Exp $
 #   $MCom: ports-stable/Mk/bsd.gecko.mk,v 1.12 2008/08/07 04:42:34 mezz Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -272,7 +272,7 @@ GENERIC_MOZCONFIG?=	${.CURDIR}/../../www/mozilla/files/mozconfig-generic.in
 PORT_MOZCONFIG?=	${FILESDIR}/mozconfig.in
 MOZCONFIG?=		${WRKSRC}/.mozconfig
 MOZILLA_PLIST_DIRS?=	bin include lib share/idl
-GECKO_PTHREAD_LIBS!=${CC} -dumpspecs | ${GREP} -m 1 pthread | ${SED} -e 's|^.*%{\!pg: %{pthread:|| ; s|}.*$$||' || ${TRUE}
+GECKO_PTHREAD_LIBS!=${CC} -dumpspecs | ${GREP} -m 1 pthread: | ${SED} -e 's|^.*%{\!pg: %{pthread:|| ; s|}.*$$||' || ${TRUE}
 PKGINSTALL?=	${WRKDIR}/pkg-install
 PKGDEINSTALL?=	${WRKDIR}/pkg-deinstall
 MASTER_MOZDIR?=	${PORTSDIR}/www/mozilla
