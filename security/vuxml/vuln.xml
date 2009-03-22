@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1897 2009/03/22 18:24:25 pav Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1898 2009/03/22 19:24:02 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -53,12 +53,9 @@ Note:  Please add new entries to the beginning of this file.
 	  cite="http://www.wireshark.org/security/wnpa-sec-2009-01.html">
 	  <p>On non-Windows systems Wireshark could crash if the HOME
 	    environment variable contained sprintf-style string formatting
-	    characters.
-	    Wireshark could crash while reading a malformed NetScreen snoop
-	    file.
-	    Wireshark could crash while reading a Tektronix K12 text capture
-	    file.
-	  </p>
+	    characters. Wireshark could crash while reading a malformed
+	    NetScreen snoop file. Wireshark could crash while reading a
+	    Tektronix K12 text capture file.</p>
 	</blockquote>
       </body>
     </description>
