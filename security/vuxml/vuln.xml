@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1896 2009/03/22 17:10:57 marcus Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1897 2009/03/22 18:24:25 pav Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -13836,7 +13836,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2007-01-16</discovery>
       <entry>2007-04-05</entry>
-      <modified>2007-06-06</modified>
+      <modified>2009-03-22</modified>
     </dates>
   </vuln>
 
