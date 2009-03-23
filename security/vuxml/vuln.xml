@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1900 2009/03/23 14:09:31 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1901 2009/03/23 14:17:46 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -49,7 +49,7 @@ Note:  Please add new entries to the beginning of this file.
 	  <p>Tobias Klein has reported some vulnerabilities in Amarok, which
 	    potentially can be exploited by malicious people to compromise a
 	    user's system.</p>
-	  <p>wo integer overflow errors exist within the
+	  <p>Two integer overflow errors exist within the
 	    "Audible::Tag::readTag()" function in
 	    src/metadata/audible/audibletag.cpp. These can be exploited to cause
 	    heap-based buffer overflows via specially crafted Audible Audio
