@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1903 2009/03/23 15:08:29 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1904 2009/03/23 15:28:08 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -5212,7 +5212,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>rubygem-rails</name>
-	<range><gt>0</gt></range>
+	<range><lt>2.2.2</lt></range>
       </package>
     </affects>
     <description>
@@ -5231,6 +5231,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2008-09-08</discovery>
       <entry>2008-09-10</entry>
+      <modified>2009-03-23</modified>
     </dates>
   </vuln>
 
