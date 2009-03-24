@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.110 2009/02/16 23:32:00 miwi Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.111 2009/03/09 22:52:20 miwi Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -268,11 +268,7 @@ _ZOPE_VERSION=	${_ZOPE_PORTBRANCH} # just to avoid version sanity checking.
 
 ZOPE_VERSION?=	${_ZOPE_VERSION}
 
-.if ${ZOPE_VERSION} == "2.7"
-PYTHON_VERSION=         python2.3
-.else
 PYTHON_VERSION=         python2.4
-.endif
 .endif	# defined(USE_ZOPE)
 
 
