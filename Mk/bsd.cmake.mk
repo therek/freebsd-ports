@@ -21,7 +21,7 @@
 #					Default: ${PREFIX}
 #
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.cmake.mk,v 1.4 2009/02/08 20:23:20 miwi Exp $
 
 CMAKE_MAINTAINER=  kde@FreeBSD.org
 
@@ -48,7 +48,8 @@ CMAKE_ARGS+=	-DCMAKE_C_COMPILER:STRING="${CC}" \
 				-DCMAKE_C_FLAGS:STRING="${CFLAGS}" \
 				-DCMAKE_CXX_FLAGS:STRING="${CXXFLAGS}" \
 				-DCMAKE_INSTALL_PREFIX:PATH="${CMAKE_INSTALL_PREFIX}" \
-				-DCMAKE_BUILD_TYPE:STRING="${CMAKE_BUILD_TYPE}"
+				-DCMAKE_BUILD_TYPE:STRING="${CMAKE_BUILD_TYPE}" \
+				-DTHREADS_HAVE_PTHREAD_ARG:BOOL=YES
 
 #
 # Default build type and sourcedir
@@ -73,7 +74,7 @@ CMAKE_ARGS+=	-DCMAKE_THREAD_LIBS:STRING="${PTHREAD_LIBS}" \
 # Strip binaries
 #
 .if !defined(WITH_DEBUG)
-CMAKE_ARGS+=	-DCMAKE_INSTALL_DO_STRIP:BOOL=ON
+INSTALL_TARGET?=	install/strip
 .endif
 
 #
