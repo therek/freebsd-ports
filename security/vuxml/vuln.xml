@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1905 2009/03/23 15:43:25 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1906 2009/03/25 07:41:42 delphij Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -288,7 +288,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>roundcube</name>
-	<range><lt>0.2.1</lt></range>
+	<range><lt>0.2.1,1</lt></range>
       </package>
     </affects>
     <description>
@@ -321,6 +321,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2009-01-21</discovery>
       <entry>2009-03-16</entry>
+      <modified>2009-03-26</modified>
     </dates>
   </vuln>
 
