@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/lang/perl5.8/files/use.perl,v 1.11 2005/06/24 09:17:06 tobez Exp $
+# $FreeBSD: ports/lang/perl5.10/files/use.perl,v 1.12 2009/03/05 17:56:24 skv Exp $
 
 this=`echo -n $0 | /usr/bin/sed -e 's!^.*/!!'`
 PERL_VERSION="%%PERL_VERSION%%"
@@ -17,41 +17,20 @@ else
     	osreldate=${OSVERSION}
 fi
 
-if [ "x$this" = "xuse.perl" ]; then
-	PKG_PREFIX="%%PREFIX%%"
-	if [ "$1" = "port" ] ; then
-		need_remove_links=yes
-		need_create_links=yes
-		need_cleanup_make_conf=yes
-		need_cleanup_manpath=yes
-		need_spam_make_conf=yes
-		need_spam_manpath=yes
-	elif [ "$1" = "system" ] ; then
-		need_remove_links=yes
-		need_cleanup_make_conf=yes
-		need_cleanup_manpath=yes
-	else
-		echo "Usage:
-	${0##*/} port       -> /usr/bin/perl is the perl5 port
-	${0##*/} system     -> /usr/bin/perl is the system perl"
-		exit 2;
-	fi
+if [ "$2" = "POST-INSTALL" ] ; then
+	need_remove_links=yes
+	need_create_links=yes
+	need_cleanup_make_conf=yes
+	need_cleanup_manpath=yes
+	need_spam_make_conf=yes
+	need_spam_manpath=yes
+	need_post_install=yes
+elif [ "$2" = "POST-DEINSTALL" ] ; then
+	need_remove_links=yes
+	need_cleanup_make_conf=yes
+	need_cleanup_manpath=yes
 else
-	if [ "$2" = "POST-INSTALL" ] ; then
-		need_remove_links=yes
-		need_create_links=yes
-		need_cleanup_make_conf=yes
-		need_cleanup_manpath=yes
-		need_spam_make_conf=yes
-		need_spam_manpath=yes
-		need_post_install=yes
-	elif [ "$2" = "POST-DEINSTALL" ] ; then
-		need_remove_links=yes
-		need_cleanup_make_conf=yes
-		need_cleanup_manpath=yes
-	else
-		exit 0;
-	fi
+	exit 0;
 fi
 
 special_link_list="
