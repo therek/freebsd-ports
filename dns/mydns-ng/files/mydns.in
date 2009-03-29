@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/mydns-ng/files/mydns.sh.in,v 1.2 2006/03/07 16:27:27 ale Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: mydns
