@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/print/acroread9/files/pkg-deinstall.in,v 1.1 2009/03/28 18:11:43 hrs Exp $
 
 if [ "$2" != "POST-DEINSTALL" \
 	-o -d %%PREFIX%%/%%ACROBASE%% ]; then
@@ -7,6 +7,8 @@ if [ "$2" != "POST-DEINSTALL" \
 fi
 
 cat <<EOT | while read F; do rm -f %%PREFIX%%/$F; done
+share/applications/AdobeReader.desktop
+share/applications/defaults.list.new
 share/icons/hicolor/.xdg-icon-resource-dummy
 share/icons/hicolor/128x128/apps/AdobeReader9.png
 share/icons/hicolor/128x128/apps/adobe.pdf.png

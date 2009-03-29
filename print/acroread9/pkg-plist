@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/print/acroread9/pkg-plist,v 1.1 2009/03/28 18:11:43 hrs Exp $
 %%ACRODIR%%/Adobe/Reader9/Browser/HowTo/ENU/Browser_Plugin_HowTo.txt
 %%LANG_NONENU%%%%ACRODIR%%/Adobe/Reader9/Browser/HowTo/%%ADOBE_LANG%%/Browser_Plugin_HowTo.txt
 %%ACRODIR%%/Adobe/Reader9/Browser/install_browser_plugin
@@ -502,5 +502,7 @@
 @dirrm %%ACRODIR%%/Adobe/Reader9
 @dirrm %%ACRODIR%%/Adobe
 @dirrm %%ACRODIR%%
+@exec /bin/mkdir -p %D/share/desktop-directories
+@dirrmtry share/desktop-directories
 @dirrmtry %%ACROBASE%%
 @dirrmtry %%ADOBEBASE%%
