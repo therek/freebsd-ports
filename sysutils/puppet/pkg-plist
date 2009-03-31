@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/puppet/pkg-plist,v 1.4 2007/05/27 11:31:25 miwi Exp $
+@comment $FreeBSD: ports/sysutils/puppet/pkg-plist,v 1.5 2008/07/24 19:19:49 beech Exp $
 bin/filebucket
 bin/puppetd
 bin/puppetca
@@ -8,7 +8,8 @@ bin/puppetrun
 bin/puppetmasterd
 bin/ralsh
 etc/puppet/puppet.conf-dist
+@exec mkdir -p %D/etc/puppet/ssl
+@exec mkdir -p %D/etc/puppet/manifests
 @dirrmtry etc/puppet/ssl
 @dirrmtry etc/puppet/manifests
 @dirrmtry etc/puppet
-@dirrmtry /var/run/puppet
