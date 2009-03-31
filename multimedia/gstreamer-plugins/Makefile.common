@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.82 2009/02/21 15:51:13 miwi Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.83 2009/02/22 13:36:38 kwm Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.68 2008/03/21 04:14:19 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -444,7 +444,7 @@ gst_vorbis_PLIST_FILES=	${GST_LIB_DIR}/libgstvorbis.la \
 gst_vorbis_DIST=	base
 
 # x264
-gst_x264_LIB_DEPENDS+=	x264.50:${PORTSDIR}/multimedia/x264			
+gst_x264_LIB_DEPENDS+=	x264.65:${PORTSDIR}/multimedia/x264
 gst_x264_PLIST_FILES=	${GST_LIB_DIR}/libgstx264.la \
 		${GST_LIB_DIR}/libgstx264.so
 gst_x264_DIST=	bad
