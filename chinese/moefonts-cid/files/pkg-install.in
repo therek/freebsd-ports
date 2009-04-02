@@ -1,9 +1,9 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/chinese/moefonts-cid/files/pkg-install.in,v 1.1 2006/02/20 20:32:58 hrs Exp $
 
 GSVER=`gs --version`
 GSDIR=%%PREFIX%%/share/ghostscript
-FONTMAP=${GSDIR}/${GSVER}/lib/Fontmap.GS
+FONTMAP=${GSDIR}/${GSVER}/Resource/Init/Fontmap.GS
 
 # Run just once.
 if [ "x$2" != "xPOST-INSTALL" ]; then
