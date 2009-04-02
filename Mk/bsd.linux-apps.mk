@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.2 2009/03/19 19:53:42 pav Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.3 2009/04/01 15:25:27 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -341,6 +341,25 @@ webauth_PORT=		${PORTSDIR}/www/linux-${WEB_AUTH}
 webauth_DEPENDS=	gtk2 atk pango fontconfig
 
 # End component definition section
+
+# Let's check if components from USE_LINUX_APPS exist at _LINUX_APPS_ALL
+.  for component in ${USE_LINUX_APPS}
+.    if ${_LINUX_APPS_ALL:M${component}}==""
+IGNORE=	bsd.linux-apps.mk test failed: Invalid component USE_LINUX_APPS=${component}
+.    endif
+.  endfor
+
+# Let's check if components from USE_LINUX_APPS have corresponding <app>_DETECT
+# i.e. if a corresponding <app>_FILE defined for given LINUX_DIST_SUFFIX
+.  for component in ${USE_LINUX_APPS}
+.    if ${${component}_DETECT}==""
+.      if defined(${component}${LINUX_DIST_SUFFIX:S/-/_/}_FILE)
+IGNORE=	bsd.linux-apps.mk test failed: The component ${component} is empty for LINUX_DIST_SUFFIX=${LINUX_DIST_SUFFIX} (the corresponding variable ${component}${LINUX_DIST_SUFFIX:S/-/_/}_FILE is empty)
+.      else
+IGNORE=	bsd.linux-apps.mk test failed: The component ${component} is not defined for LINUX_DIST_SUFFIX=${LINUX_DIST_SUFFIX} (the corresponding variable ${component}${LINUX_DIST_SUFFIX:S/-/_/}_FILE is not defined)
+.      endif
+.    endif
+.  endfor
 
 # Recursively expand all dependencies for each app at _LINUX_APPS_ALL
 .  for component in ${_LINUX_APPS_ALL}
