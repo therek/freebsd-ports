@@ -7,7 +7,7 @@
 #
 # !!! Here be dragons !!! (yeah, here as well...)
 #
-# $FreeBSD: ports/Mk/bsd.xorg.mk,v 1.8 2008/10/23 11:21:30 flz Exp $
+# $FreeBSD: ports/Mk/bsd.xorg.mk,v 1.9 2009/01/23 16:27:14 flz Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Xorg_Pre_Include)
@@ -53,7 +53,7 @@ CONFIGURE_ENV+=	DRIVER_MAN_SUFFIX=4x DRIVER_MAN_DIR='$$(mandir)/man4'
 .  if ${PORTNAME:M*input*}x != x
 USE_XORG+=	inputproto
 .  elif ${PORTNAME:M*video*}x != x
-USE_XORG+=	fontsproto renderproto
+USE_XORG+=	fontsproto renderproto xi
 .  else
 IGNORE=		doesn't contain either "driver" or "input"
 .  endif
