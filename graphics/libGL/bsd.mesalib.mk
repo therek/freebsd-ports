@@ -14,10 +14,10 @@
 #    - graphics/libGLw
 #    - graphics/dri
 #
-# $FreeBSD: ports/graphics/libGL/bsd.mesalib.mk,v 1.7 2009/01/24 18:13:00 rnoland Exp $
+# $FreeBSD: ports/graphics/libGL/bsd.mesalib.mk,v 1.8 2009/02/02 09:09:05 linimon Exp $
 #
 
-MESAVERSION=	7.3
+MESAVERSION=	7.4
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.fu-berlin.de/pub/unix/X11/graphics/Mesa/
 MASTER_SITE_SUBDIR=	mesa3d
