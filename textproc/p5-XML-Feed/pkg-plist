@@ -1,6 +1,7 @@
-@comment $FreeBSD: ports/textproc/p5-XML-Feed/pkg-plist,v 1.5 2008/10/19 14:02:44 leeym Exp $
+@comment $FreeBSD: ports/textproc/p5-XML-Feed/pkg-plist,v 1.6 2008/11/14 09:29:10 leeym Exp $
 %%SITE_PERL%%/XML/Feed.pm
 %%SITE_PERL%%/XML/Feed/Content.pm
+%%SITE_PERL%%/XML/Feed/Enclosure.pm
 %%SITE_PERL%%/XML/Feed/Entry.pm
 %%SITE_PERL%%/XML/Feed/Format/Atom.pm
 %%SITE_PERL%%/XML/Feed/Format/RSS.pm
