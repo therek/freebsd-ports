@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.7 2009/04/06 16:03:00 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.8 2009/04/06 18:58:13 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -329,7 +329,7 @@ scimlibs_DEPENDS=	gtk2
 
 # no sqlite3_FILE
 sqlite3_f8_FILE=	${LINUXBASE}/usr/lib/libsqlite3.so.0
-sqlite3_DETECT=		${sqlite3{LINUX_DIST_SUFFIX:S/-/_/}_FILE}
+sqlite3_DETECT=		${sqlite3${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 sqlite3_PORT=		${PORTSDIR}/databases/linux${LINUX_DIST_SUFFIX}-sqlite3
 
 # no tcl84_FILE
