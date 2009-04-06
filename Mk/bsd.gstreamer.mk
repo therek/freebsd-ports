@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.40 2008/03/24 03:49:19 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.41 2008/12/19 21:07:38 pav Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.43 2008/03/21 04:14:18 ahze Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -133,7 +133,6 @@ ogg_DEPENDS=	audio/gstreamer-plugins-ogg
 polyp_DEPENDS=	audio/gstreamer-plugins-polyp
 
 pulse_DEPENDS=	audio/gstreamer-plugins-pulse
-pulse_GST_VERSION=	0.9.3
 
 shout_DEPENDS=	audio/gstreamer-plugins-shout
 

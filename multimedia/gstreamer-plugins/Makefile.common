@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.85 2009/04/05 12:23:23 kwm Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.86 2009/04/05 13:16:28 kwm Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.68 2008/03/21 04:14:19 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -73,6 +73,7 @@ GOOD_GST_ALL_PLUGINS+= \
 		ladspa \
 		libcaca \
 		libpng \
+		pulse \
 		raw1394 \
 		shout2 \
 		soup \
@@ -390,6 +391,12 @@ gst_pango_USE_GNOME+=	pango
 gst_pango_PLIST_FILES=	${GST_LIB_DIR}/libgstpango.la \
 		${GST_LIB_DIR}/libgstpango.so
 gst_pango_DIST=	base
+
+# pulse
+gst_pulse_LIB_DEPENDS=	pulse.0:${PORTSDIR}/audio/pulseaudio
+gst_pulse_PLIST_FILES=	${GST_LIB_DIR}/libgstpulse.la \
+		${GST_LIB_DIR}/libgstpulse.so
+gst_pulse_DIST=	good
 
 # sdl
 gst_sdl_USE_SDL+=	sdl
