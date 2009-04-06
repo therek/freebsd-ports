@@ -1,9 +1,10 @@
 #
-# $FreeBSD: ports/net/openldap24-server/files/manpages,v 1.19 2008/02/24 03:11:56 linimon Exp $
+# $FreeBSD: ports/net/openldap24-server/files/manpages,v 1.20 2009/01/05 05:49:35 delphij Exp $
 #
 
 MAN1+=	ldapcompare.1 \
 	ldapdelete.1 \
+	ldapexop.1 \
 	ldapmodify.1 \
 	ldapmodrdn.1 \
 	ldappasswd.1 \
