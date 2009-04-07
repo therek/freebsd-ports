@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.80 2009/03/16 08:45:58 delphij Exp $
+# $FreeBSD: ports/UIDs,v 1.81 2009/03/17 15:10:39 rafan Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53::0:0:Bind Sandbox:/:/usr/sbin/nologin
@@ -149,3 +149,4 @@ _relayd:*:913:913::0:0:Relay Daemon:/var/empty:/usr/sbin/nologin
 bitlbee:*:914:914::0:0:Bitlbee pseudo-user:/nonexistent:/sbin/nologin
 logcheck:*:915:915::0:0:Logcheck system account:/var/lib/logcheck:/usr/local/bin/bash
 _prayer:*:917:917:daemon:0:0:Prayer Account:/nonexistent:/sbin/nologin
+nefu:*:918:918::0:0:Nefu daemon:/var/db/nefu:/sbin/nologin

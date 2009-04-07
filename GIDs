@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.69 2009/03/16 08:45:58 delphij Exp $
+# $FreeBSD: ports/GIDs,v 1.70 2009/03/17 15:10:39 rafan Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -139,3 +139,4 @@ bitlbee:*:914:
 logcheck:*:915:
 ssmtp:*:916:
 prayer:*:917:
+nefu:*:918:
