@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc45/pkg-plist,v 1.101 2009/02/14 19:37:27 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc45/pkg-plist,v 1.102 2009/04/05 19:23:00 gerald Exp $
 bin/c++%%SUFFIX%%
 bin/cpp%%SUFFIX%%
 bin/g++%%SUFFIX%%
@@ -34,7 +34,7 @@ info/gcc%%SUFFIX%%/dir
 %%JAVA%%bin/jcf-dump%%SUFFIX%%
 %%JAVA%%bin/rebuild-gcj-db%%SUFFIX%%
 %%JAVA%%bin/%%GNU_HOST%%-gcj%%SUFFIX%%
-%%JAVA%%libdata/pkgconfig/libgcj-4.4.pc
+%%JAVA%%libdata/pkgconfig/libgcj-4.5.pc
 %%JAVA%%share/java/libgcj-%%GCC_VER%%.jar
 %%JAVA%%share/java/libgcj-tools-%%GCC_VER%%.jar
 %%JAVA%%share/python/aotcompile.py
