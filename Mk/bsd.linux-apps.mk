@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.10 2009/04/06 21:47:10 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.11 2009/04/07 16:13:53 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -207,7 +207,7 @@ libglu_PORT=		${PORTSDIR}/graphics/linux${LINUX_DIST_SUFFIX}-libGLU
 # no libidn_FILE
 libidn_f8_FILE=		${LINUXBASE}/usr/lib/libidn.so.11
 libidn_DETECT=		${libidn${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
-libidn_PORT=		${PORTSDIR}/dns/linux${LINUX_DIST_SUFFIX}-libid
+libidn_PORT=		${PORTSDIR}/dns/linux${LINUX_DIST_SUFFIX}-libidn
 
 libmng_FILE=		${LINUXBASE}/usr/lib/libmng.so.1.0.0
 libmng_f8_FILE=		${libmng_FILE}
