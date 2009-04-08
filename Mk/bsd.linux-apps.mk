@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.12 2009/04/07 19:15:10 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.13 2009/04/08 06:26:31 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -425,7 +425,9 @@ _USE_LINUX_APPS+=${${component}_DEPENDS} ${component}
 # Set dependencies for _USE_LINUX_APPS which exists at _LINUX_APPS_ALL
 .  for component in ${_LINUX_APPS_ALL}
 .    if ${_USE_LINUX_APPS:M${component}}!=""
+.      if defined(${component}${LINUX_DIST_SUFFIX:S/-/_/}_FILE)
 RUN_DEPENDS+=   ${${component}_DETECT}:${${component}_PORT}
+.      endif
 .    endif
 .  endfor
 .endif
