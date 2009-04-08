@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.11 2009/04/07 16:13:53 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.12 2009/04/07 19:15:10 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -66,7 +66,7 @@ _LINUX_APPS_ALL+=
 # 2.6.16 components
 _LINUX_26_APPS=		libidn nspr nss openssl sqlite3 tcl84 tk84
 
-_LINUX_APPS_ALL+=	_LINUX_26_APPS
+_LINUX_APPS_ALL+=	${_LINUX_26_APPS}
 
 # Let's check if components from USE_LINUX_APPS exist at _LINUX_26_APPS for LINUX_DIST_SUFFIX:=""
 .  if ${LINUX_DIST_SUFFIX}==""
