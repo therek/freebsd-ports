@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/google-appengine/pkg-plist,v 1.7 2009/01/17 12:31:08 nivit Exp $
+@comment $FreeBSD: ports/www/google-appengine/pkg-plist,v 1.8 2009/02/16 17:36:33 nivit Exp $
 bin/appcfg.py
 bin/dev_appserver.py
 %%PORTDOCS%%%%DOCSDIR%%/LICENSE
@@ -254,8 +254,10 @@ bin/dev_appserver.py
 %%DATADIR%%/google/appengine/ext/__init__.py
 %%DATADIR%%/google/appengine/ext/admin/__init__.py
 %%DATADIR%%/google/appengine/ext/admin/templates/base.html
+%%DATADIR%%/google/appengine/ext/admin/templates/cron.html
 %%DATADIR%%/google/appengine/ext/admin/templates/css/ae.css
 %%DATADIR%%/google/appengine/ext/admin/templates/css/base.css
+%%DATADIR%%/google/appengine/ext/admin/templates/css/cron.css
 %%DATADIR%%/google/appengine/ext/admin/templates/css/datastore.css
 %%DATADIR%%/google/appengine/ext/admin/templates/css/form.css
 %%DATADIR%%/google/appengine/ext/admin/templates/css/memcache.css
