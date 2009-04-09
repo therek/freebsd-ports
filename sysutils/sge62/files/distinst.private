@@ -1,5 +1,7 @@
-# $FreeBSD: ports/sysutils/sge61/files/distinst.private,v 1.5 2008/02/13 15:39:06 brooks Exp $
+# $FreeBSD: ports/sysutils/sge62/files/distinst.private,v 1.7 2008/06/11 16:51:05 brooks Exp $
 OPENSSLBASE=%%OPENSSLBASE%%
 BERKELEYDBBASE=%%LOCALBASE%%
 BDB_LIB_SUFFIX="-4.2"
 DRMAAJ05BASE=%%WRKDIR%%/lib
+
+instguiinst=false
