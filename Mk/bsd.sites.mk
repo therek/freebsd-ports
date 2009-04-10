@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.472 2009/03/06 08:57:32 joerg Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.473 2009/04/10 08:11:19 itetcu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -212,7 +212,7 @@ MASTER_SITE_ECLIPSE+= \
 	http://mirrors.ibiblio.org/pub/mirrors/eclipse/eclipse/downloads/drops/%SUBDIR%/ \
 	http://www.eclipse.ps.pl/downloads/drops/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,misc/eclipse/downloads/drops/&,} \
-	ftp://sunsite.cnlab-switch.ch/mirror/eclipse/eclipse/downloads/drops/%SUBDIR%/
+	ftp://sunsite.cnlab-switch.ch/mirror/eclipse/eclipse/downloads/drops/%SUBDIR%/ \
 	http://download.eclipse.org/eclipse/downloads/drops/%SUBDIR%/ \
 	ftp://download.eclipse.org/%SUBDIR%/
 .endif
