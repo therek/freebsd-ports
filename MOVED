@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1843 2009/04/04 18:13:49 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1844 2009/04/08 06:55:26 rnoland Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3907,3 +3907,5 @@ x11-themes/camaelon-nesedah||2009-04-04|Has expired: now included in camaelon
 x11-wm/compiz-fusion-plugins-main|x11-wm/compiz-plugins-main|2009-04-08|Dropping the fusion name
 x11-wm/compiz-fusion-plugins-extra|x11-wm/compiz-plugins-extra|2009-04-08|Dropping the fusion name
 x11-wm/compiz-fusion-plugins-unsupported|x11-wm/compiz-plugins-unsupported|2009-04-08|Dropping the fusion name
+devel/gnome-build||2009-04-10|This port has been merged into anjuta and is now obsolete
+sysutils/gnome-volume-manager||2009-04-10|This port has been obsoleted by Nautilus
