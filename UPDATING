@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090410:
+  AFFECTS: users of www/trac-email2trac
+  AUTHOR: brooks@FreeBSD.org
+
+  bin/email2trac.py and bin/delete_spam.py are now installed without the
+  .py extension to make the suid run_email2trac work and match the online
+  documentation.  If you were using them in scripts or alias entries, you
+  will need to update paths accordingly.
+
 20090401:
   AFFECTS: users of linux Fedora 8 infrastructure ports
   AUTHOR: bsam@FreeBSD.org
@@ -7948,4 +7957,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.795 2009/04/01 15:29:24 bsam Exp $
+$FreeBSD: ports/UPDATING,v 1.796 2009/04/02 10:11:46 bsam Exp $
