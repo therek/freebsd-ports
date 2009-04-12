@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.9 2009/04/10 05:55:44 marcus Exp $
 #   $MCom: ports/Mk/bsd.gecko.mk,v 1.10 2009/04/04 19:54:48 marcus Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -32,7 +32,7 @@
 .if !defined(Gecko_Pre_Include)
 # Please make sure all changes to this file are passed through the maintainer.
 # Do not commit them yourself (unless of course you're the Port's Wraith ;).
-Gecko_Include_MAINTAINER=		gnome@FreeBSD.org
+Gecko_Include_MAINTAINER=		miwi@FreeBSD.org
 Gecko_Pre_Include=			bsd.gecko.mk
 
 # Users should use the following syntax:
