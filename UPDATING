@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090412:
+  AFFECTS: users of sysutils/bacula-server
+  AUTHOR: wxs@FreeBSD.org
+
+  sysutils/bacula-server now uses a new catalog format.  If upgrading
+  from the old version please use the update_bacula_tables script
+  provided with the port before restarting bacula.
+
 20090410:
   AFFECTS: users of www/trac-email2trac
   AUTHOR: brooks@FreeBSD.org
@@ -7957,4 +7965,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.796 2009/04/02 10:11:46 bsam Exp $
+$FreeBSD: ports/UPDATING,v 1.797 2009/04/10 15:14:09 brooks Exp $
