@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.9 2009/04/10 05:55:44 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.10 2009/04/12 19:27:11 miwi Exp $
 #   $MCom: ports/Mk/bsd.gecko.mk,v 1.10 2009/04/04 19:54:48 marcus Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -244,7 +244,7 @@ Gecko_Pre_Include=	bsd.gecko.mk
 # 						CONFIGURE_ARGS instead
 #
 
-MAINTAINER?=	gnome@FreeBSD.org
+MAINTAINER?=	miwi@FreeBSD.org
 
 MOZILLA?=	${PORTNAME}
 MOZILLA_VER?=	${PORTVERSION}
