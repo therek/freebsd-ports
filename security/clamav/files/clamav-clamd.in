@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav/files/clamav-clamd.in,v 1.4 2008/06/17 11:20:03 garga Exp $
+# $FreeBSD: ports/security/clamav/files/clamav-clamd.in,v 1.5 2009/03/27 11:52:22 garga Exp $
 #
 
 # PROVIDE: clamd
@@ -39,6 +39,14 @@ clamav_clamd_precmd() {
 		echo "Missing %%DBDIR%%/clamav/*.cvd or *.cld files.  You must run freshclam first"
 		exit 1
 	fi
+}
+
+extra_commands="reload"
+reload_cmd=clamd_reload
+
+clamd_reload()
+{
+  %%PREFIX%%/bin/clamdscan --reload
 }
 
 run_rc_command "$1"
