@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/freeradius2/files/pkg-install.in,v 1.2 2008/07/28 13:14:17 mm Exp $
+# $FreeBSD: ports/net/freeradius2/files/pkg-install.in,v 1.3 2009/04/09 23:54:04 amdmi3 Exp $
 
 PATH=/usr/sbin:/usr/bin:/bin ; export PATH
 
@@ -152,13 +152,21 @@ case $2 in
 	        echo -n 's:^(libdir[[:space:]=]+)(.*[[:space:]:]+)?' ; \
 	        echo -n $( echo ${radius_libdir} | \
 	            sed -Ee 's:^(.*)-[[:digit:].]+$:\1:' ) ; \
-	        echo -n '(-[[:digit:].]+)?([[:space:]:]+.*)?$' ; \ 
+	        echo -n '(-[[:digit:].]+)?([[:space:]:]+.*)?$' ; \
 		echo -n ':\1\2'${radius_libdir}'\4:' \
 	    ) ${radius_raddb}/radiusd.conf; then
 	    echo "Failed to update libdir in ${radius_raddb}/radius.conf"
 	    exit 1
 	fi
-	rm ${radius_raddb}/radiusd.conf.update-libdir-original
+
+	if [ -f ${radius_raddb}/radiusd.conf.update-libdir-original ]; then
+		if ! rm ${radius_raddb}/radiusd.conf.update-libdir-original; then
+			echo -n 'Failed to delete backup file '
+			echo "${radius_raddb}/radiusd.conf.update-libdir-original."
+			exit 1
+		fi
+	fi
+
         ;;
 esac
 
