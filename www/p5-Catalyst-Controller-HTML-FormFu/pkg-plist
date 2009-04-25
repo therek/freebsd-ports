@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/p5-Catalyst-Controller-HTML-FormFu/pkg-plist,v 1.1 2007/12/25 09:09:22 az Exp $
+@comment $FreeBSD: ports/www/p5-Catalyst-Controller-HTML-FormFu/pkg-plist,v 1.2 2008/07/23 10:54:58 az Exp $
 %%SITE_PERL%%/Catalyst/Controller/HTML/FormFu/Action/Form.pm
 %%SITE_PERL%%/Catalyst/Controller/HTML/FormFu/Action/MultiFormMethod.pm
 %%SITE_PERL%%/Catalyst/Controller/HTML/FormFu/Action/MultiForm.pm
@@ -6,6 +6,9 @@
 %%SITE_PERL%%/Catalyst/Controller/HTML/FormFu/Action/FormMethod.pm
 %%SITE_PERL%%/Catalyst/Controller/HTML/FormFu/Action/FormConfig.pm
 %%SITE_PERL%%/Catalyst/Controller/HTML/FormFu.pm
+%%SITE_PERL%%/HTML/FormFu/Constraint/RequestToken.pm
+%%SITE_PERL%%/HTML/FormFu/Element/RequestToken.pm
+%%SITE_PERL%%/HTML/FormFu/Plugin/RequestToken.pm
 %%SITE_PERL%%/Catalyst/Helper/HTML/FormFu.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Catalyst/Controller/HTML/FormFu/.packlist
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Catalyst/Controller/HTML/FormFu
@@ -19,3 +22,8 @@
 @dirrmtry %%SITE_PERL%%/Catalyst/Controller/HTML
 @dirrmtry %%SITE_PERL%%/Catalyst/Controller
 @dirrmtry %%SITE_PERL%%/Catalyst
+@dirrmtry %%SITE_PERL%%/HTML/FormFu/Constraint
+@dirrmtry %%SITE_PERL%%/HTML/FormFu/Plugin
+@dirrmtry %%SITE_PERL%%/HTML/FormFu/Element
+@dirrmtry %%SITE_PERL%%/HTML/FormFu/
+@dirrmtry %%SITE_PERL%%/HTML/
