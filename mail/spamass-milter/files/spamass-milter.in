@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/spamass-milter/files/spamass-milter.in,v 1.4 2008/07/16 12:53:13 tabthorpe Exp $
+# $FreeBSD: ports/mail/spamass-milter/files/spamass-milter.in,v 1.5 2008/07/16 17:16:04 tabthorpe Exp $
 #
 
 # PROVIDE: spamass-milter
@@ -29,9 +29,9 @@ stop_postcmd=stop_postcmd
 
 start_postcmd()
 {
+  sleep 1
   if test -f /var/run/sendmail.pid
   then
-	sleep 1
 	kill -HUP `head -1 /var/run/sendmail.pid`
   fi
 
