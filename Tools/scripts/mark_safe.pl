@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.1 2009/04/22 00:33:44 pgollucci Exp $
+# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.2 2009/04/29 21:08:53 pgollucci Exp $
 #
 # MAINTAINER=   pgollucci@FreeBSD.org
 
@@ -26,7 +26,7 @@ local $SIG{__DIE__}  = \&Carp::confess;
 local $SIG{__WARN__} = \&Carp::cluck;
 
 ### version
-our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.1 2009/04/22 00:33:44 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
+our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.2 2009/04/29 21:08:53 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
 
 ### globals
 # cmdline options (standard) with defaults
@@ -121,6 +121,8 @@ sub mark {
     open my $mk, '<', $mfile or die "Can't open [$mfile] b/c [$!]";
     my @lines = <$mk>;
     close $mk or die "Can't close [$mfile] b/c [$!]";
+    
+    next if grep { /MAKE_JOBS_(?:UN)?SAFE/ } @lines;
 
     my $i_depends = 0;
     my $i_comment = 0;
@@ -157,7 +159,7 @@ sub ports_get {
   my @ports = ();
 
   if ($Ports) {
-    @ports = @ARGV;
+    @ports = map { "$PORTSDIR/$_" } @ARGV;
   }
   else {
     my $index = "$PORTSDIR/$Index";
