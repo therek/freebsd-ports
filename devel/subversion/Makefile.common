@@ -2,11 +2,11 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.17 2009/04/03 18:39:28 lev Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.18 2009/04/06 17:06:34 lev Exp $
 
 PORTNAME=	subversion
-PORTVERSION=	1.6.0
-PORTREVISION?=	2
+PORTVERSION=	1.6.1
+PORTREVISION?=	0
 CATEGORIES+=	devel
 MASTER_SITES=	http://subversion.tigris.org/downloads/:main \
 		http://svnbook.red-bean.com/en/1.5/:book
@@ -143,6 +143,13 @@ CFLAGS+=	-fpic -DPIC
 CONFIGURE_ARGS+=--enable-maintainer-mode \
 		--enable-debug
 CFLAGS+=	-g
+.endif
+
+.if defined(WITH_STATIC)
+CONFIGURE_ARGS+=--enable-all-static
+PLIST_SUB+=	DYNAMIC_ENABLED="@comment "
+.else
+PLIST_SUB+=	DYNAMIC_ENABLED=""
 .endif
 
 post-extract:
