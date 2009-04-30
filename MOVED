@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1856 2009/04/29 02:05:02 pgollucci Exp $
+# $FreeBSD: ports/MOVED,v 1.1857 2009/04/30 11:41:23 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3943,3 +3943,4 @@ games/chromium|games/chromium-bsu|2009-04-26|Renamed
 russian/xneur|deskutils/xneur|2009-04-27|Better category: supports many languages
 audio/rubygem-mp3info|rubygem-ruby-mp3info|2009-04-28|Updated to match GEM name, use rubygem-ruby-mp3info instead
 sysutils/linux-megacli2|sysutils/linux-megacli|2009-04-30|Folded into unversioned port directory
+net/vnstati||2009-04-30|Removed
