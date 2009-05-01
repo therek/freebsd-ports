@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/base/pkg-plist,v 1.14 2007/12/12 18:42:01 miwi Exp $
+@comment $FreeBSD: ports/security/base/pkg-plist,v 1.15 2008/04/27 08:13:49 rafan Exp $
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/README.mssql
 %%PORTDOCS%%%%DOCSDIR%%/CHANGELOG
@@ -25,6 +25,7 @@ www/base/base_graph_form.php
 www/base/base_graph_main.php
 www/base/base_hdr1.php
 www/base/base_hdr2.php
+www/base/base_local_rules.php
 www/base/base_logout.php
 www/base/base_main.php
 www/base/base_maintenance.php
