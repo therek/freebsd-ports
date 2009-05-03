@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1860 2009/04/30 17:41:50 dhn Exp $
+# $FreeBSD: ports/MOVED,v 1.1861 2009/05/01 16:19:42 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3953,3 +3953,4 @@ sysutils/bbsmount||2009-05-01|Has expired: unmaintained, does not work with curr
 sysutils/puppet-devel||2009-05-01|Has expired: Use sysutils/puppet instead
 sysutils/tua||2009-05-01|Has expired: unmaintained, does not work with current versions of GCC, needs gcc295 which has been failing to build for months
 x11/qrash||2009-05-01|Has expired: unmaintained, does not work with current versions of GCC, needs gcc295 which has been failing to build for months
+textproc/sp||2009-05-03|Has expired: unmaintained, does not work with current versions of GCC, needs gcc295 which has been failing to build for months
