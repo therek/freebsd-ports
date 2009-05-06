@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.xfce.mk,v 1.4 2008/10/30 17:14:34 oliver Exp $
+# $FreeBSD: ports/Mk/bsd.xfce.mk,v 1.5 2009/03/02 16:51:51 oliver Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Xfce_Pre_Include)
@@ -15,7 +15,7 @@ Xfce_Include_MAINTAINER=	oliver@FreeBSD.org
 _USE_XFCE_ALL=			configenv libexo libgui libmenu libutil panel \
 				thunar wm xfconf xfdev
 
-MASTER_SITE_SUBDIR?=		xfce-4.6.0
+MASTER_SITE_SUBDIR?=		xfce-4.6.1
 
 configenv_CONFIGURE_ENV=	CPPFLAGS="${CPPFLAGS} -I${LOCALBASE}/include -L${LOCALBASE}/lib"
 
