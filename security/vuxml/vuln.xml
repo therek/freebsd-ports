@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1924 2009/05/07 07:40:39 dinoex Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1925 2009/05/07 07:57:03 dinoex Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -147,10 +147,12 @@ Note:  Please add new entries to the beginning of this file.
     <references>
       <bid>34656</bid>
       <mlist msgid="Pine.LNX.4.64.0904301931590.24373@nacho.alt.net">http://lists.quagga.net/pipermail/quagga-dev/2009-April/006541.html</mlist>
+      <cvename>CVE-2009-1572</cvename>
     </references>
     <dates>
       <discovery>2009-05-04</discovery>
       <entry>2009-05-06</entry>
+      <modified>2009-05-07</modified>
     </dates>
   </vuln>
 
