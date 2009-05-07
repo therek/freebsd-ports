@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1864 2009/05/04 23:31:04 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1865 2009/05/05 09:51:17 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3956,3 +3956,4 @@ x11/qrash||2009-05-01|Has expired: unmaintained, does not work with current vers
 textproc/sp||2009-05-03|Has expired: unmaintained, does not work with current versions of GCC, needs gcc295 which has been failing to build for months
 net-mgmt/nrpe||2009-05-04|Has expired: Obsolete version, consider migration to net-mgmt/nrpe2
 www/phpsurveyor|www/limesurvey|2009-05-05|Project was renamed
+devel/oskit||2009-05-07|Has expired: does not work with current versions of GCC, needs gcc295 which has been failing to build for months, no active maintainer
