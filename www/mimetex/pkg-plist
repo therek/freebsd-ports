@@ -1,6 +1,7 @@
-@comment $FreeBSD: ports/www/mimetex/pkg-plist,v 1.2 2006/08/01 16:10:04 clsung Exp $
+@comment $FreeBSD: ports/www/mimetex/pkg-plist,v 1.3 2007/10/26 08:20:21 pav Exp $
 %%PORTDOCS%%%%DOCSDIR%%/mimetex.html
 %%PORTDOCS%%www/data/mimetex/index.html
 www/cgi-bin/mimetex.cgi
+@dirrmtry www/cgi-bin
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%PORTDOCS%%@dirrm www/data/mimetex
