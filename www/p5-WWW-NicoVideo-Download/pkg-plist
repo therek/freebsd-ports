@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/p5-WWW-NicoVideo-Download/pkg-plist,v 1.1 2009/03/12 16:45:48 miwi Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/NicoVideo/Download/.packlist
 %%SITE_PERL%%/WWW/NicoVideo/Download.pm
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/NicoVideo/Download
