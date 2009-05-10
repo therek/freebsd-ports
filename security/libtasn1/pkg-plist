@@ -1,8 +1,7 @@
-@comment $FreeBSD: ports/security/libtasn1/pkg-plist,v 1.10 2006/05/12 02:59:47 novel Exp $
+@comment $FreeBSD: ports/security/libtasn1/pkg-plist,v 1.11 2009/01/18 17:02:03 novel Exp $
 bin/asn1Parser
 bin/asn1Coding
 bin/asn1Decoding
-bin/libtasn1-config
 include/libtasn1.h
 lib/libtasn1.a
 lib/libtasn1.la
