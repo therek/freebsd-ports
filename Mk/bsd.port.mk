@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.616 2009/03/28 20:45:06 skv Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.617 2009/04/09 22:40:20 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2816,6 +2816,19 @@ maintainer:
 
 .if !target(check-makefile)
 check-makefile::
+.if !exists(/usr/share/mk/bsd.port.options.mk)
+	@${ECHO_CMD} "!!! Detected system without bsd.port.options.mk (probably old FreeBSD version)"
+	@${ECHO_CMD} "!!! Dropping bsd.port.options.mk into /usr/share/mk"
+	-@${ECHO_CMD} "USEOPTIONSMK=   yes" > /usr/share/mk/bsd.port.options.mk 2>/dev/null
+	-@${ECHO_CMD} "INOPTIONSMK=    yes" >> /usr/share/mk/bsd.port.options.mk 2>/dev/null
+	-@${ECHO_CMD} ".include <bsd.port.mk>" >> /usr/share/mk/bsd.port.options.mk 2>/dev/null
+	-@${ECHO_CMD} ".undef INOPTIONSMK" >> /usr/share/mk/bsd.port.options.mk 2>/dev/null
+.if exists(/usr/share/mk/bsd.port.options.mk)
+	@${ECHO_CMD} "!!! Done"
+.else
+	@${ECHO_CMD} "!!! Failed"
+.endif
+.endif
 	@${DO_NADA}
 .endif
 
