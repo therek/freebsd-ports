@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.16 2009/04/10 14:43:59 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.17 2009/05/08 19:29:03 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -266,9 +266,8 @@ mikmod_f8_FILE=		${mikmod_FILE}
 mikmod_DETECT=		${mikmod${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 mikmod_PORT=		${PORTSDIR}/audio/linux${LINUX_DIST_SUFFIX}-mikmod
 
-# didn't find an openmotif distro for Fedora 8, so use the same version for now
 openmotif_FILE=		${LINUXBASE}/usr/X11R6/lib/libXm.so.3.0.3
-openmotif_f8_FILE=	${openmotif_FILE}
+openmotif_f8_FILE=	${LINUXBASE}/usr/lib/libXm.so.4.0.2
 openmotif_DETECT=	${openmotif${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 openmotif_PORT=		${PORTSDIR}/x11-toolkits/linux${LINUX_DIST_SUFFIX}-openmotif
 openmotif_DEPENDS=	xorglibs
