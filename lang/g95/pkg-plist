@@ -1,6 +1,0 @@
-@comment $FreeBSD: ports/lang/g95/pkg-plist,v 1.5 2007/01/30 01:03:17 maho Exp $
-bin/g95
-bin/f95
-%%PORTDOCS%%%%DOCSDIR%%/INSTALL
-%%PORTDOCS%%%%DOCSDIR%%/G95Manual.pdf
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
