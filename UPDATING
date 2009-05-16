@@ -11,7 +11,7 @@ upgrades.
   AUTHOR: dinoex@FreeBSD.org
 
   print/cups has been splitten in mutiple ports. If upgrading
-  from 1.9.10 abd below you must remove the installed version first.
+  from 1.9.10 and below you must remove the installed version first.
 
 20090412:
   AFFECTS: users of sysutils/bacula-server
@@ -7972,4 +7972,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.798 2009/04/13 02:39:29 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.799 2009/05/16 09:34:33 dinoex Exp $
