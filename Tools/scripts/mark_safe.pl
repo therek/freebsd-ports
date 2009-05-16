@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.2 2009/04/29 21:08:53 pgollucci Exp $
+# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.3 2009/04/29 21:16:43 pgollucci Exp $
 #
 # MAINTAINER=   pgollucci@FreeBSD.org
 
@@ -26,7 +26,7 @@ local $SIG{__DIE__}  = \&Carp::confess;
 local $SIG{__WARN__} = \&Carp::cluck;
 
 ### version
-our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.2 2009/04/29 21:08:53 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
+our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.3 2009/04/29 21:16:43 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
 
 ### globals
 # cmdline options (standard) with defaults
@@ -176,6 +176,8 @@ sub ports_get {
     }
     close $fh or die "Can't close [$index] b/c [$!]";
   }
+
+  @ports = grep { !/^rubygem-// } @ports;
 
   return \@ports;
 }
