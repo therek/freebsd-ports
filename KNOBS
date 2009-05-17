@@ -1,7 +1,7 @@
 #
 # KNOBS - A list of popular knobs and their descriptions
 #
-# $FreeBSD: ports/KNOBS,v 1.31 2009/02/27 10:54:45 lioux Exp $
+# $FreeBSD: ports/KNOBS,v 1.32 2009/03/06 02:01:27 lioux Exp $
 #
 # Rules for adding knobs:
 #
@@ -19,7 +19,7 @@
 #  Length  |		|                   Length                   |
 
 A52			ATSC A/52 audio decoding (used in most DVDs)
-APACHE2			Use www/apache2 port
+APACHE          Include support for APACHE_PORT
 ARTS			aRts support via the KDE sound daemon
 ASPELL			Use textproc/aspell for spell checking
 AVIFILE			Adds support for AVI multimedia
