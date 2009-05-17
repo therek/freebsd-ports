@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.3 2009/04/29 21:16:43 pgollucci Exp $
+# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.4 2009/05/16 01:51:40 pgollucci Exp $
 #
 # MAINTAINER=   pgollucci@FreeBSD.org
 
@@ -26,7 +26,7 @@ local $SIG{__DIE__}  = \&Carp::confess;
 local $SIG{__WARN__} = \&Carp::cluck;
 
 ### version
-our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.3 2009/04/29 21:16:43 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
+our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.4 2009/05/16 01:51:40 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
 
 ### globals
 # cmdline options (standard) with defaults
@@ -122,7 +122,7 @@ sub mark {
     my @lines = <$mk>;
     close $mk or die "Can't close [$mfile] b/c [$!]";
     
-    next if grep { /MAKE_JOBS_(?:UN)?SAFE/ } @lines;
+    next if grep { /MAKE_JOBS_(?:UN)?SAFE|NO_BUILD/ } @lines;
 
     my $i_depends = 0;
     my $i_comment = 0;
@@ -138,7 +138,7 @@ sub mark {
 
     my $loc = $i_depends    > 0 ? $i_depends :
               $i_comment    > 0 ? $i_comment :
-              $i_maintainer > 0 ? $i_maintainer : die "Can't find location to insert";
+              $i_maintainer > 0 ? $i_maintainer : print "Can't find location to insert", next;
 
     my @newlines = @lines[0..$loc];
     push @newlines, "\n", "MAKE_JOBS_" . ($Safe ? "SAFE" : "UNSAFE")  . "=  yes\n";
@@ -177,7 +177,7 @@ sub ports_get {
     close $fh or die "Can't close [$index] b/c [$!]";
   }
 
-  @ports = grep { !/^rubygem-// } @ports;
+  @ports = grep { !/rubygem-/ } @ports;
 
   return \@ports;
 }
