@@ -14,7 +14,7 @@
 #    - graphics/libGLw
 #    - graphics/dri
 #
-# $FreeBSD: ports/graphics/libGL/bsd.mesalib.mk,v 1.10 2009/05/07 19:37:06 rnoland Exp $
+# $FreeBSD: ports/graphics/libGL/bsd.mesalib.mk,v 1.11 2009/05/15 13:15:27 rnoland Exp $
 #
 
 MESAVERSION=	7.4.2
@@ -28,6 +28,7 @@ USE_BZIP2=	yes
 USE_GMAKE=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
+MAKE_JOBS_SAFE=	yes
 
 CONFIGURE_ENV=	CPPFLAGS=-I${LOCALBASE}/include \
 		LDFLAGS=-L${LOCALBASE}/lib
