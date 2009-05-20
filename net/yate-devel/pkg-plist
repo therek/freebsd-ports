@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/yate-devel/pkg-plist,v 1.2 2007/12/11 19:36:00 pav Exp $
+@comment $FreeBSD: ports/net/yate-devel/pkg-plist,v 1.3 2008/03/14 16:00:07 pav Exp $
 %%WITH_X11%%bin/yate-gtk2
 @unexec if cmp -s %D/etc/yate/accfile.conf.sample %D/etc/yate/accfile.conf; then rm -f %D/etc/yate/accfile.conf; fi
 etc/yate/accfile.conf.sample
@@ -176,6 +176,7 @@ share/doc/yate/COPYING
 share/doc/yate/ChangeLog
 share/doc/yate/README
 share/doc/yate/README.too
+@dirrm share/doc/yate
 @dirrmtry etc/yate
 @dirrm include/yate
 %%WITH_X11%%@dirrmtry lib/menu
