@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/gearmand/pkg-plist,v 1.1 2009/01/29 06:58:29 lwhsu Exp $
+@comment $FreeBSD: ports/devel/gearmand/pkg-plist,v 1.2 2009/05/01 08:39:56 miwi Exp $
 bin/gearman
 include/libgearman/client.h
 include/libgearman/con.h
@@ -23,7 +23,7 @@ include/libgearman/worker.h
 lib/libgearman.a
 lib/libgearman.la
 lib/libgearman.so
-lib/libgearman.so.0
+lib/libgearman.so.1
 libdata/pkgconfig/gearmand.pc
 sbin/gearmand
 @dirrmtry libdata/pkgconfig
