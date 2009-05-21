@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.599 2009/05/19 05:31:07 lwhsu Exp $
+# $FreeBSD: ports/LEGAL,v 1.600 2009/05/20 11:49:12 pgollucci Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -485,7 +485,7 @@ ovt-*			science/ovt		Registration is needed to
 p-interp-*.tar.gz	emulators/p-interp	Redistribution rights for
 						Apple Pascal disk images are
 						unclear
-p4v.tgz			devel/p4v		Binary redistribution
+perforce/p4v-*		devel/p4v		Binary redistribution
 						restrictions in effect
 palmos-sdk-*-1.tar.gz	palm/palmos-sdk		License agreement is required
 pam_authsrv-*		security/pam_authsrv	No form of redistribution is
