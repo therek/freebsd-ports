@@ -1,7 +1,7 @@
 /* ptimeout: executes command but kills it after a specified timeout
  * usage: ptimeout timeout command args ...
  *
- * $FreeBSD$
+ * $FreeBSD: ports/Tools/portbuild/scripts/ptimeout.c,v 1.1 2002/11/03 04:49:39 kris Exp $
  */
 
 #include <sys/param.h>
@@ -47,7 +47,7 @@ main(int argc, char *argv[])
 		    /*printf("exited child is %d, status is %d\n", child, status);*/
 		    if (pid1 = child) {
 			/*printf("killing process %d\n", pid2);*/
-			kill(pid2, SIGTERM);
+			kill(pid2, SIGKILL);
 		    } else {
 			/*printf("killing process %d\n", pid1);*/
 			kill(pid1, SIGTERM);
