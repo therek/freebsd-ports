@@ -22,7 +22,7 @@
 .\" OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 .\" SUCH DAMAGE.
 .\"
-.\" $FreeBSD: ports/java/javavmwrapper/src/javavm.1,v 1.8 2006/06/08 17:58:15 glewis Exp $
+.\" $FreeBSD: ports/java/javavmwrapper/src/javavm.1,v 1.9 2006/09/20 15:33:52 glewis Exp $
 .\"
 .Dd February 24, 2005
 .Os
@@ -99,10 +99,11 @@ A space delimited list of Java VM vendors.
 The selected Java VM must have been released by one of the vendors in the list.
 .Pp
 Currently allowed vendors are
+.Ql blackdown ,
 .Ql bsdjava ,
 .Ql freebsd ,
-.Ql blackdown ,
-.Ql ibm
+.Ql ibm ,
+.Ql openjdk
 and
 .Ql sun .
 .It Ev JAVA_VERSION
