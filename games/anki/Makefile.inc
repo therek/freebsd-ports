@@ -1,7 +1,7 @@
-# $FreeBSD$
+# $FreeBSD: ports/games/anki/Makefile.inc,v 1.1 2009/05/01 22:21:07 miwi Exp $
 
 PORTNAME=	anki
-PORTVERSION=	0.9.9.7.7
+PORTVERSION=	0.9.9.7.9b
 CATEGORIES=	games
 MASTER_SITES=	http://ichi2.net/anki/download/files/
 EXTRACT_SUFX=	.tgz
