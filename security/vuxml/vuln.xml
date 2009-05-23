@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1948 2009/05/22 16:34:03 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1949 2009/05/23 04:37:10 cy Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -61,7 +61,7 @@ Note:  Please add new entries to the beginning of this file.
        <entry>2009-05-20</entry>
      </dates>
    </vuln>
-<vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+
   <vuln vid="5ed2f96b-33b7-4863-8c6b-540d22344424">
     <topic>imap-uw -- University of Washington IMAP c-client Remote Format String Vulnerability</topic>
     <affects>
