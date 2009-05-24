@@ -1,9 +1,9 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.57 2009/01/19 05:39:05 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.58 2009/04/23 07:55:31 maho Exp $
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.57 2009/01/19 05:39:05 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.58 2009/04/23 07:55:31 maho Exp $
 
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
 
@@ -39,7 +39,6 @@ USE_GNOME+=		glib20
 .endif
 
 LIB_DEPENDS+=		freetype.9:${PORTSDIR}/print/freetype2
-CONFIGURE_ARGS+=	--with-system-freetype=yes
 
 .if defined(ALL_LOCALIZED_LANGS)
 CONFIGURE_ARGS+=	--with-lang=ALL
