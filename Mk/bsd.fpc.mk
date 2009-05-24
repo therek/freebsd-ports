@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.fpc.mk,v 1.7 2009/05/04 15:23:08 acm Exp $
+# $FreeBSD: ports/Mk/bsd.fpc.mk,v 1.8 2009/05/22 21:57:33 acm Exp $
 #
 # bsd.fpc.mk - Support for FreePascal based ports.
 #
@@ -40,7 +40,7 @@ IGNORE=	incompatible fpc ${FPC_CURRENT_VER} compiler, please install ${FPC_VER} 
 .	endif
 .endif
 
-BUILD_DEPENDS=		ppc386:${PORTSDIR}/lang/fpc
+BUILD_DEPENDS+=		ppc386:${PORTSDIR}/lang/fpc
 
 BUILDNAME=		${ARCH}-freebsd
 UNITSDIR=		${LOCALBASE}/lib/fpc/${FPC_VER}/units/${BUILDNAME}
