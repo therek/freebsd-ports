@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/tokyotyrant/pkg-plist,v 1.3 2009/04/10 07:17:12 lwhsu Exp $
+@comment $FreeBSD: ports/databases/tokyotyrant/pkg-plist,v 1.4 2009/05/17 09:54:20 lwhsu Exp $
 %%DATADIR%%/COPYING
 %%DATADIR%%/ChangeLog
 %%DATADIR%%/THANKS
@@ -18,9 +18,10 @@ include/ttutil.h
 lib/libtokyotyrant.a
 lib/libtokyotyrant.so
 lib/libtokyotyrant.so.3
-lib/libtokyotyrant.so.3.9.0
+lib/libtokyotyrant.so.3.10.0
 lib/ttskeldir.so
 lib/ttskelmock.so
+lib/ttskelnull.so
 lib/ttskelproxy.so
 libdata/pkgconfig/tokyotyrant.pc
 sbin/ttservctl
