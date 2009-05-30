@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1952 2009/05/30 19:07:01 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1953 2009/05/30 19:16:34 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -52,6 +52,9 @@ Note:  Please add new entries to the beginning of this file.
 	  <p>A boundary error exists within the "voc_read_header()" function in
 	    src/voc.c. This can be exploited to cause a heap-based buffer overflow
 	    via a specially crafted VOC file.</p>
+	  <p>A boundary error exists within the "aiff_read_header()" function in
+	    src/aiff.c. This can be exploited to cause a heap-based buffer overflow
+	    via a specially crafted AIFF file.</p>
 	</blockquote>
       </body>
     </description>
