@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/rhino/files/rhinosh.in,v 1.1 2008/01/27 23:10:45 nivit Exp $
 #
 # Rhino shell
-JAVA_VERSION="%%JAVA_VERSION%%" "%%LOCALBASE%%/bin/java" -cp "%%RHINOJAR%%" org.mozilla.javascript.tools.shell.Main $@
+JAVA_VERSION="%%JAVA_VERSION%%" "%%LOCALBASE%%/bin/java" -cp "%%RHINOJAR%%%%JLINEJAR%%" org.mozilla.javascript.tools.shell.Main $@
