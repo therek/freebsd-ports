@@ -1,4 +1,4 @@
-% $FreeBSD: ports/japanese/xdvik-vflib/files/vfontmap.freetype,v 1.1 2004/03/01 03:29:30 nork Exp $
+% $FreeBSD: ports/japanese/xdvik/files/vfontmap.freetype,v 1.2 2004/06/18 15:53:47 hrs Exp $
 %
 % Sample "vfontmap" (--with-vflib=vf2ft)
 %
@@ -8,7 +8,7 @@
 %    "tfm name2" "{,unicode,adobejapan,cidv}"
 
 %%%CIDFONTDIR%%/HiraMinPro-W3.otf
-%%TTFMINCHO%%
+%%MINCHO%%
 	min
 	tmin
 	nmin
@@ -16,7 +16,7 @@
 	jis-v
 	dm
 %%%CIDFONTDIR%%/HiraKakuPro-W6.otf
-%%TTFGOTHIC%%
+%%GOTHIC%%
 	goth
 	tgoth
 	ngoth
