@@ -1,7 +1,7 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/umefont/files/pkg-install.in,v 1.2 2008/05/31 07:23:00 hrs Exp $
+# $FreeBSD: ports/japanese/font-ume/files/pkg-install.in,v 1.3 2008/10/26 20:47:01 hrs Exp $
 
-X_FONTSDIR=%%X_FONTSDIR%%/TrueType
+X_FONTSDIR=%%X_FONTSDIR%%/TTF
 
 catfontsdir ()
 {
