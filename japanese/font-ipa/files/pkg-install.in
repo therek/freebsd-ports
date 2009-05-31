@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/font-ipa/files/pkg-install.in,v 1.5 2008/05/31 07:22:09 hrs Exp $
+# $FreeBSD: ports/japanese/font-ipa/files/pkg-install.in,v 1.6 2009/05/31 09:15:41 hrs Exp $
 
 X_FONTSDIR=%%X_FONTSDIR%%/OTF
 
@@ -90,5 +90,8 @@ DEINSTALL)
 	nfonts < fonts.dir.tmp > fonts.dir
 	cat fonts.dir.tmp >> fonts.dir
 	rm -f fonts.dir.tmp
+	if [ -r fonts.dir -a `wc -l < fonts.dir` = 1 ]; then
+		rm -f fonts.dir
+	fi
 	;;
 esac

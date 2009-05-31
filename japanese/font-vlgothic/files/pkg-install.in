@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/font-vlgothic/files/pkg-install.in,v 1.2 2008/05/31 07:39:02 hrs Exp $
+# $FreeBSD: ports/japanese/font-vlgothic/files/pkg-install.in,v 1.3 2009/05/31 09:15:43 hrs Exp $
 
 X_FONTSDIR=%%X_FONTSDIR%%/TTF
 
@@ -85,5 +85,8 @@ DEINSTALL)
 	nfonts < fonts.dir.tmp > fonts.dir
 	cat fonts.dir.tmp >> fonts.dir
 	rm -f fonts.dir.tmp
+	if [ -r fonts.dir -a `wc -l < fonts.dir` = 1 ]; then
+		rm -f fonts.dir
+	fi
 	;;
 esac

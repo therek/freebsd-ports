@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/font-ume/files/pkg-install.in,v 1.3 2008/10/26 20:47:01 hrs Exp $
+# $FreeBSD: ports/japanese/font-ume/files/pkg-install.in,v 1.4 2009/05/31 09:15:43 hrs Exp $
 
 X_FONTSDIR=%%X_FONTSDIR%%/TTF
 
@@ -97,5 +97,8 @@ DEINSTALL)
 	exec < fonts.dir; rm -f fonts.dir
 	(echo "${_num}"; cat) > fonts.dir
 	chmod 0444 fonts.dir
+	if [ -r fonts.dir -a `wc -l < fonts.dir` = 1 ]; then
+		rm -f fonts.dir
+	fi
 	;;
 esac
