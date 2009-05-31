@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/japanese/sazanami-ttf/pkg-plist,v 1.6 2008/05/12 17:19:55 hrs Exp $
+@comment $FreeBSD: ports/japanese/font-sazanami/pkg-plist,v 1.7 2008/05/17 14:19:05 hrs Exp $
 %%DATADIR%%/sazanami-mincho.ttf
 %%DATADIR%%/sazanami-gothic.ttf
 @dirrm %%DATADIR%%

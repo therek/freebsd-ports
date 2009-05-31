@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/japanese/kochi-ttfonts/pkg-plist,v 1.6 2008/05/12 17:18:47 hrs Exp $
+@comment $FreeBSD: ports/japanese/font-kochi/pkg-plist,v 1.7 2008/05/17 14:16:14 hrs Exp $
 %%DATADIR%%/kochi-mincho-subst.ttf
 %%DATADIR%%/kochi-gothic-subst.ttf
 @dirrm %%DATADIR%%

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/japanese/ipa-ttfonts/pkg-plist,v 1.9 2008/04/19 17:50:59 miwi Exp $
+@comment $FreeBSD: ports/japanese/font-ipa/pkg-plist,v 1.10 2008/05/11 18:17:06 hrs Exp $
 %%DATADIR%%/ppd/OPVP-HP-Color_LaserJet_5500.ppd
 %%DATADIR%%/ppd/OPVP-HP-Color_LaserJet_4600.ppd
 %%DATADIR%%/ppd/Makefile.in
