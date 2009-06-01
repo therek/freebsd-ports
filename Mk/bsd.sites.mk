@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.473 2009/04/10 08:11:19 itetcu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.474 2009/04/10 08:18:57 itetcu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1470,6 +1470,18 @@ MASTER_SITE_XORG+= \
 	http://xorg.freedesktop.org/%SUBDIR%/ \
 	http://xorg.freedesktop.org/releases/%SUBDIR%/ \
 	ftp://ftp.x.org/pub/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_KERNEL_ORG)
+MASTER_SITE_KERNEL_ORG+= \
+	http://kernel.org/pub/%SUBDIR%/ \
+	http://www.us.kernel.org/pub/%SUBDIR%/ \
+	http://www.uk.kernel.org/pub/%SUBDIR%/ \
+	http://www.no.kernel.org/pub/%SUBDIR%/ \
+	http://www.de.kernel.org/pub/%SUBDIR%/ \
+	http://www.it.kernel.org/pub/%SUBDIR%/ \
+	http://www.ru.kernel.org/pub/%SUBDIR%/ \
+	http://www.au.kernel.org/pub/%SUBDIR%/
 .endif
 
 # Macro magic
