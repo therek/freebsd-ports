@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/devel/viewvc/files/viewvc.in,v 1.1 2008/08/19 21:59:24 pgollucci Exp $
 #
 # PROVIDE: viewvc
 # REQUIRE: LOGIN
@@ -36,7 +36,7 @@ rcvar=${name}_enable
 command="%%PREFIX%%/viewvc/bin/standalone.py"
 
 # we need this, since our script interpreter is python
-command_interpreter="%%PREFIX%%/bin/%%PYTHON_VERSION%%"
+command_interpreter="%%PYTHON_CMD%%"
 
 # extra required arguments
 command_args="2>/dev/null 1>/dev/null &"
