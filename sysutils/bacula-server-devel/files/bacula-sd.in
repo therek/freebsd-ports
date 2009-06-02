@@ -1,8 +1,8 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/bacula-server-devel/files/bacula-sd.in,v 1.1 2007/06/11 05:53:03 miwi Exp $
+# $FreeBSD: ports/sysutils/bacula-server-devel/files/bacula-sd.in,v 1.2 2009/06/01 17:04:44 wxs Exp $
 #
-# PROVIDE: bacula_dir
+# PROVIDE: bacula_sd
 # REQUIRE: DAEMON
 # KEYWORD: shutdown
 #
