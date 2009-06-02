@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/exim/options,v 1.10 2007/05/31 06:48:14 krion Exp $
+# $FreeBSD: ports/mail/exim/options,v 1.11 2008/10/04 16:04:22 skv Exp $
 #
 # Configurable options for mail/exim. Note that the options listed
 # here are the defaults, so if you want to change them you have to
@@ -171,6 +171,9 @@
 
 #WITH_ICONV
 # Link with libiconv to enable header charset conversion
+
+#WITH_XCLIENT
+# Enable XCLIENT command in exim: http://www.postfix.org/XCLIENT_README.html
 
 ## AUTOMATICALLY GENERATED FILE - DO NOT CHANGE ANYTHING BELOW THIS LINE ##
 # use `make config' to edit the local configuration
