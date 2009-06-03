@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/Tools/portbuild/scripts/dopackagestats,v 1.21 2008/09/17 18:01:07 linimon Exp $
+# $FreeBSD: ports/Tools/portbuild/scripts/dopackagestats,v 1.22 2008/09/18 06:01:57 linimon Exp $
 #
 # create HTML showing numbers of packages vs errors.  Run this in a directory
 # accessible to the web server.
@@ -249,7 +249,7 @@ write_row () {
 
     echo "<td align='right' bgcolor='$cellcolor'>" >> ${TMPFILE}
     if [ $have_duds ]; then
-      echo "<a href='http://pointyhat.freebsd.org/errorlogs/$arch-$build-latest/duds'>" >> ${TMPFILE}
+      echo "<a href='http://pointyhat.freebsd.org/errorlogs/$arch-$build-latest/duds.verbose'>" >> ${TMPFILE}
       echo "$n_duds</a>" >> ${TMPFILE}
     else
       echo "&nbsp;" >> ${TMPFILE}
