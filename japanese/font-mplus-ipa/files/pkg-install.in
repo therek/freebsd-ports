@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/font-mplus-ipa/files/pkg-install.in,v 1.7 2009/05/31 12:23:01 hrs Exp $
+# $FreeBSD: ports/japanese/font-mplus-ipa/files/pkg-install.in,v 1.8 2009/06/03 07:03:01 hrs Exp $
 
 X_FONTSDIR=%%X_FONTSDIR%%/TTF
 
@@ -90,5 +90,6 @@ POST-DEINSTALL)
 	if [ -r fonts.dir -a `wc -l < fonts.dir` = 1 ]; then
 		rm -f fonts.dir
 	fi
+	rmdir ${X_FONTSDIR} > /dev/null 2>&1 || true
 	;;
 esac
