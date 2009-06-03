@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/font-ipa/files/pkg-install.in,v 1.6 2009/05/31 09:15:41 hrs Exp $
+# $FreeBSD: ports/japanese/font-ipa/files/pkg-install.in,v 1.7 2009/05/31 12:23:01 hrs Exp $
 
 X_FONTSDIR=%%X_FONTSDIR%%/OTF
 
@@ -57,7 +57,7 @@ make_xlfd()
 
 addentries ()
 {
-	for ENC in iso8859-1 iso10646-1 jisx0201.1976-0 jisx0208.1983-0 jisx0208.1990-0
+	for ENC in iso8859-1 iso10646-1 jisx0201.1976-0 jisx0208.1983-0 jisx0208.1990-0 jisx0208.1997-0 jisx0213.2004-1
 	do
 		make_xlfd $ENC ipag.otf ipa IPAGothic c
 		make_xlfd $ENC ipag.otf ipa gothic c
@@ -84,7 +84,7 @@ POST-INSTALL)
 	cat fonts.dir.tmp >> fonts.dir
 	rm -f fonts.dir.tmp
 	;;
-DEINSTALL)
+POST-DEINSTALL)
 	cd ${X_FONTSDIR}
 	catfontsdir < fonts.dir > fonts.dir.tmp
 	nfonts < fonts.dir.tmp > fonts.dir
