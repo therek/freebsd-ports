@@ -1,4 +1,4 @@
-$FreeBSD: ports/databases/rdfdb/files/patch-makefile,v 1.1 2002/06/09 00:35:39 petef Exp $
+$FreeBSD: ports/databases/rdfdb/files/patch-makefile,v 1.2 2006/12/13 09:32:38 leeym Exp $
 
 --- makefile.orig	Sun Aug 20 15:48:46 2000
 +++ makefile	Sat Jun  8 20:25:04 2002
@@ -10,7 +10,7 @@ $FreeBSD: ports/databases/rdfdb/files/patch-makefile,v 1.1 2002/06/09 00:35:39 p
 +CC ?= gcc -g 
 +INCLUDES = -I %%BDB_INCLUDE_DIR%% -I expat/xmltok -I expat/xmlparse
 +LIBS     = -l%%BDB_LIB_NAME%% %%PTHREAD_LIBS%%
-+CPPFLAGS += ${CFLAGS} $(INCLUDES) -L  /usr/local/lib
++CPPFLAGS += ${CFLAGS} $(INCLUDES) -L  %%LOCALBASE%%/lib
  
  OBJS =  utils/hash.o \
  	utils/utils.o \
