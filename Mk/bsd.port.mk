@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.619 2009/05/22 21:57:33 acm Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.620 2009/06/03 21:50:50 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -330,8 +330,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # PERL_VERSION	- Full version of perl5 (see below for current value).
 # PERL_LEVEL	- Perl version as an integer of the form MNNNPP, where
 #				  M is major version, N is minor version, and P is
-#				  the patch level. E.g., PERL_VERSION=5.6.1 would give
-#				  a PERL_LEVEL of 500601. This can be used in comparisons
+#				  the patch level. E.g., PERL_VERSION=5.8.1 would give
+#				  a PERL_LEVEL of 500801. This can be used in comparisons
 #				  to determine if the version of perl is high enough,
 #				  whether a particular dependency is needed, etc.
 # PERL_ARCH		- Directory name of architecture dependent libraries
@@ -1452,10 +1452,8 @@ PERL_ARCH?=		mach
 
 .if   ${PERL_LEVEL} >= 501000
 PERL_PORT?=	perl5.10
-.elif ${PERL_LEVEL} >= 500800
-PERL_PORT?=	perl5.8
 .else
-PERL_PORT?=	perl5.6
+PERL_PORT?=	perl5.8
 .endif
 
 SITE_PERL_REL?=	lib/perl5/site_perl/${PERL_VERSION}
