@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/py-cgkit/pkg-plist,v 1.4 2006/05/10 19:16:06 vs Exp $
+@comment $FreeBSD: ports/graphics/py-cgkit/pkg-plist,v 1.5 2007/03/06 01:04:59 clsung Exp $
 bin/convert3d.py
 bin/info3d.py
 bin/postbake.py
@@ -165,8 +165,6 @@ bin/viewer.py
 %%PYTHON_SITELIBDIR%%/cgkit/expression.pyc
 %%PYTHON_SITELIBDIR%%/cgkit/expression.pyo
 %%PYTHON_SITELIBDIR%%/cgkit/flockofbirds.py
-%%PYTHON_SITELIBDIR%%/cgkit/flockofbirds.pyc
-%%PYTHON_SITELIBDIR%%/cgkit/flockofbirds.pyo
 %%PYTHON_SITELIBDIR%%/cgkit/fob.py
 %%PYTHON_SITELIBDIR%%/cgkit/fob.pyc
 %%PYTHON_SITELIBDIR%%/cgkit/fob.pyo
