@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/emulators/open-vm-tools/files/vmware-guestd.sh.in,v 1.3 2008/08/03 14:39:11 mbr Exp $
+# $FreeBSD: ports/emulators/open-vm-tools/files/vmware-guestd.sh.in,v 1.4 2008/10/22 12:45:41 timur Exp $
 #
 
 # PROVIDE: vmware-guestd
@@ -19,8 +19,8 @@ start_precmd="${checkvm_cmd}"
 unset start_cmd
 stop_precmd="${checkvm_cmd}"
 unset stop_cmd
-command="%%PREFIX%%/sbin/vmware-guestd"
-command_args="--halt-command '/sbin/shutdown -p now' >/dev/null 2>&1"
+command="%%PREFIX%%/bin/vmtoolsd"
+command_args="-c %%PREFIX%%/share/vmware-tools/tools.conf -p %%PREFIX%%/lib/open-vm-tools/plugins/vmsvc"
 pidfile="/var/run/${name}.pid"
 
 load_rc_config $name
