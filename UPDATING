@@ -33,7 +33,7 @@ upgrades.
   # cd /usr/ports/lang/python && make upgrade-site-packages
 
   This Makefile target requires ports-mgmt/portupgrade to be installed.
-  For portmaster users, please setting PORTUPGRADE_CMD to portmaster.
+  For portmaster users, please set PORTUPGRADE_CMD to portmaster.
 
 20090606:
   AFFECTS: users of java/eclipse
@@ -8105,4 +8105,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.809 2009/06/06 20:59:22 glewis Exp $
+$FreeBSD: ports/UPDATING,v 1.810 2009/06/08 22:30:44 miwi Exp $
