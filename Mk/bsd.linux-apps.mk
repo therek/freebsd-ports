@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.19 2009/06/01 17:26:07 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.20 2009/06/07 20:22:07 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -139,7 +139,7 @@ dri_f10_FILE=		${LINUXBASE}/usr/lib/libGL.so.1.2
 dri_DETECT=		${dri${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 .  if ${LINUX_DIST_SUFFIX} == ""
 dri_PORT=		${PORTSDIR}/graphics/linux_dri
-.  elif ${LINUX_DIST_SUFFIX} == "f8"
+.  elif ${LINUX_DIST_SUFFIX} == "-f8"
 dri_PORT=		${PORTSDIR}/graphics/linux${LINUX_DIST_SUFFIX}-dri
 .  else
 dri_PORT=		${PORTSDIR}/graphics/linux-dri74
