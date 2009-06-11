@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/tokyotyrant/files/ttserver.in,v 1.1 2009/03/27 21:34:43 lwhsu Exp $
 #
 #
 # PROVIDE: ttserver
@@ -11,6 +11,8 @@
 
 name="ttserver"
 rcvar=`set_rcvar`
+
+: ${ttserver_enable:="NO"}
 
 command="%%PREFIX%%/bin/${name}"
 pidfile="/var/run/ttserver.pid"
