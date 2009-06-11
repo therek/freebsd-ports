@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.80 2008/08/29 11:29:41 miwi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -117,11 +117,6 @@ QTCPPFLAGS+=	-I${LOCALBASE}/include -I${PREFIX}/include \
 				-I${QT_PREFIX}/include -D_GETOPT_H
 QTCFGLIBS+=		-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg \
 				-L${QT_PREFIX}/lib
-.if defined(PACKAGE_BUILDING)
-TMPDIR?=	/tmp
-MAKE_ENV+=	TMPDIR="${TMPDIR}"
-CONFIGURE_ENV+=	TMPDIR="${TMPDIR}"
-.endif
 
 .if !defined(QT_NONSTANDARD)
 CONFIGURE_ARGS+=--with-qt-includes=${QT_PREFIX}/include \
