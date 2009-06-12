@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.30 2008/09/03 19:08:17 clement Exp $
+# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.31 2009/06/12 00:33:29 pgollucci Exp $
 #
 
 .if !defined(Module_inc)
@@ -104,7 +104,7 @@ CONFIGURE_ARGS+=	--with-dbm=db185 \
 .	else
 USE_BDB=		yes
 CONFIGURE_ARGS+=	--with-dbm=db${BDB_VER:S/40/4/} \
-			--with-berkeley-db=${BDB_INCLUDE_DIR}:${BDB_LIB_DIR}
+			--with-berkeley-db=${LOCALBASE}
 .       endif
 .   else
 IGNORE=		"Unknown DBM"
