@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.20 2009/06/07 20:22:07 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.21 2009/06/09 08:33:21 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -374,7 +374,11 @@ sdlimage_f8_FILE=	${LINUXBASE}/usr/lib/libSDL_image-1.2.so.0.1.5
 sdlimage_f10_FILE=	${LINUXBASE}/usr/lib/libSDL_image-1.2.so.0.1.5
 sdlimage_DETECT=	${sdlimage${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 sdlimage_PORT=		${PORTSDIR}/graphics/linux${LINUX_DIST_SUFFIX}-sdl_image
+.  if ${LINUX_DIST_SUFFIX} == ""
 sdlimage_DEPENDS=	sdl12
+.  else
+sdlimage_DEPENDS=	jpeg png sdl12 tiff
+.  endif
 
 sdlmixer_FILE=		${LINUXBASE}/usr/lib/libSDL_mixer-1.2.so.0.2.4
 sdlmixer_f8_FILE=	${LINUXBASE}/usr/lib/libSDL_mixer-1.2.so.0.2.6
