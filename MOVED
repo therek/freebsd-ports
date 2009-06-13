@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1882 2009/06/13 15:18:37 erwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1883 2009/06/13 15:24:17 erwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3985,3 +3985,4 @@ devel/avr-gcc-devel|devel/avr-gcc|2009-06-11|AVR-GCC 4.3.x becomes the default v
 japanese/slirc||2009-06-13|Removed
 www/tdiary-devel||2009-06-13|Has expired: has been forbidden for more than 6 months
 chinese/wordpress||2009-06-13|Removed due to security vulnerabilities
+www/amaya||2009-06-13|Removed due to security vulnerabilities
