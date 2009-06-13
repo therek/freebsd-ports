@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1923 2009/06/13 20:23:48 erwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1924 2009/06/13 20:26:54 erwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4039,3 +4039,4 @@ www/p5-HTML-Embperl||2009-06-13|Removed
 www/thttpd-st||2009-06-13|Removed
 www/toofpy||2009-06-13|Removed
 x11-drivers/xf86-video-vga||2009-06-13|Removed
+x11-themes/nimbus||2009-06-13|Removed
