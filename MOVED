@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1910 2009/06/13 19:41:05 erwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1911 2009/06/13 19:45:14 erwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4026,3 +4026,4 @@ mail/silkymail||2009-06-13|Removed
 multimedia/dirac-reference||2009-06-13|Removed
 multimedia/smilutils||2009-06-13|Removed
 net-im/icqnd||2009-06-13|Removed
+net-im/ocaml-jabbr||2009-06-13|Removed
