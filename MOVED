@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1893 2009/06/13 18:58:30 erwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1894 2009/06/13 18:59:50 erwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4009,3 +4009,4 @@ x11-toolkits/p5-GtkXmHTML||2009-06-13|Has expired: depends on a broken, expired 
 x11-toolkits/wxmozilla||2009-06-13|Has expired: has been broken for more than 6 months
 audio/gnomad2||2009-06-13|Removed
 audio/p5-Audio-TagLib||2009-06-13|Removed
+audio/sineshaper||2009-06-13|Removed
