@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1890 2009/06/13 16:18:18 erwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1891 2009/06/13 16:33:31 erwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4006,3 +4006,4 @@ www/mnogosearch31||2009-06-13|Has expired: Use www/mnogosearch instead, this ver
 www/php4-mnogosearch||2009-06-13|Removed
 www/winhelpcgi||2009-06-13|Has expired
 x11-toolkits/p5-GtkXmHTML||2009-06-13|Has expired: depends on a broken, expired port
+x11-toolkits/wxmozilla||2009-06-13|Has expired: has been broken for more than 6 months
