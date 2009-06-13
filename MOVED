@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1901 2009/06/13 19:18:47 erwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1902 2009/06/13 19:21:14 erwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4017,3 +4017,4 @@ deskutils/kio_locate||2009-06-13|Removed
 deskutils/mical||2009-06-13|Removed
 devel/p5-VCP||2009-06-13|Removed
 devel/ruby-p4||2009-06-13|Removed
+devel/tcl-trf||2009-06-13|Removed
