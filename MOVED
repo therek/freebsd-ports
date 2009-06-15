@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1926 2009/06/13 20:31:01 erwin Exp $
+# $FreeBSD: ports/MOVED,v 1.1927 2009/06/15 10:26:48 beat Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4042,3 +4042,4 @@ x11-drivers/xf86-video-vga||2009-06-13|Removed
 x11-themes/nimbus||2009-06-13|Removed
 x11-toolkits/py-pyxfce||2009-06-13|Removed
 multimedia/mlt++|multimedia/mlt|2009-06-15|Project reorganization
+x11-wm/enlightenment-devel|x11-wm/enlightenment|2009-06-15|Relocated
