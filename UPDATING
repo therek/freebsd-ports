@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090615:
+  AFFECTS: users of multimedia/mlt++
+  AUTHOR: beat@FreeBSD.org
+
+  The port multimedia/mlt++ was incorporated into multimedia/mlt since
+  0.4.2. Delete multimedia/mlt++ first and then install/update
+  multimedia/mlt.
+
 20090613:
   AFFECTS: users of www/hudson
   AUTHOR: hq@FreeBSD.org
@@ -8138,4 +8146,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.814 2009/06/12 00:33:29 pgollucci Exp $
+$FreeBSD: ports/UPDATING,v 1.815 2009/06/13 22:40:27 hq Exp $
