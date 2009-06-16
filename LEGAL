@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.602 2009/05/21 20:07:38 beat Exp $
+# $FreeBSD: ports/LEGAL,v 1.603 2009/06/13 15:47:05 erwin Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -215,7 +215,6 @@ ttf-sil-gentium_*	x11-fonts/gentium	License forbids commercial
 fp-freebsd-ws-*		security/f-prot		Free for personal use only
 freefem++-*		math/freefem++		No resale, not for commercial
 						usage
-framework-*		security/metasploit	May not be re-sold
 freefonts-*		x11-fonts/freefonts	Some of the fonts are
 						shareware.  Some are freeware.
 						Permission must be obtained
