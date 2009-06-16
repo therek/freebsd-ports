@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/shells/zsh/pkg-plist,v 1.45 2009/05/17 05:12:36 ume Exp $
+@comment $FreeBSD: ports/shells/zsh/pkg-plist,v 1.46 2009/06/04 09:33:39 des Exp $
 bin/zsh
 @exec echo "Updating /etc/shells"; cp /etc/shells /etc/shells.bak; (grep -v %D/%F /etc/shells.bak; echo %D/%F) >/etc/shells; rm -f /etc/shells.bak
 @unexec echo "Updating /etc/shells"; cp /etc/shells /etc/shells.bak; (grep -v %D/%F /etc/shells.bak) >/etc/shells; rm -f /etc/shells.bak
@@ -79,12 +79,15 @@ bin/zsh-%%ZSH_VER%%
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_cvsup
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_fetch
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_freebsd-update
+%%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_fstat
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_kld
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_pfctl
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_portaudit
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_portlint
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_portsnap
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_powerd
+%%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_procstat
+%%DATADIR%%/%%ZSH_VER%%/functions/Completion/BSD/_sockstat
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/Base.zwc
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/Base/_all_labels
 %%DATADIR%%/%%ZSH_VER%%/functions/Completion/Base/_all_matches
