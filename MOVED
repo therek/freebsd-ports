@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1931 2009/06/15 20:19:57 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1932 2009/06/15 20:30:17 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4053,3 +4053,4 @@ graphics/juno-2||2009-06-15|Removed
 net/p5-ZConf-Mail|mail/p5-ZConf-Mail|2009-06-15|Moved to mail/p5-ZConf-Mail
 net/p5-ZConf-BGSet|deskutils/p5-ZConf-BGSet|2009-06-15|Moved to deskutils/p5-ZConf-BGSet
 
+www/postnuke||2009-06-16|Removed
