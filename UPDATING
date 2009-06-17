@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090617:
+  AFFECTS: users of math/fftw3 math/fftw3-long math/fftw3-float
+  AUTHOR:  db@FreeBSD.org
+
+  The Fortran option has removed from fftw3 and moved into slave ports, 
+  math/fftw3-fortran math/fftw3-long-fortran and math/fftw3-float-fortran.
+
 20090615:
   AFFECTS: users of x11-wm/enlightenment and x11-wm/enlightenment-devel
   AUTHOR: gahr@FreeBSD.org
@@ -8162,4 +8169,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.817 2009/06/15 11:53:19 gahr Exp $
+$FreeBSD: ports/UPDATING,v 1.818 2009/06/16 20:29:32 dougb Exp $
