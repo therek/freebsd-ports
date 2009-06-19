@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/misc/freebsd-doc-fr/pkg-plist.html-split,v 1.3 2009/06/19 13:33:37 blackend Exp $
 %%DOCSDIR%%/%%DOCLANG%%/articles/committers-guide/conventions.html
 %%DOCSDIR%%/%%DOCLANG%%/articles/committers-guide/cvs.operations.html
 %%DOCSDIR%%/%%DOCLANG%%/articles/committers-guide/developer.relations.html
@@ -589,6 +589,7 @@
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/geom.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/getting-started.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/history.html
+%%DOCSDIR%%/%%DOCLANG%%/books/handbook/handbook.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/index.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/install-advanced.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/install-choosing.html
