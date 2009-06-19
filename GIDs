@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.72 2009/06/17 14:10:59 wxs Exp $
+# $FreeBSD: ports/GIDs,v 1.73 2009/06/17 20:52:53 beat Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -142,3 +142,4 @@ prayer:*:917:
 nefu:*:918:
 couchdb:*:919:
 vboxusers:*:920:
+transmission:*:921:
