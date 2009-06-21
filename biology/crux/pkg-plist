@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/biology/crux/pkg-plist,v 1.1 2009/06/08 23:49:59 jasone Exp $
+@comment $FreeBSD: ports/biology/crux/pkg-plist,v 1.2 2009/06/10 01:25:02 jasone Exp $
 bin/crux
 bin/redpoint
 bin/MrRogers
@@ -55,8 +55,6 @@ bin/MrRogers
 share/Crux/lib/libCx.so
 share/Crux/parsers/Fasta.log
 share/Crux/parsers/Fasta.pickle
-share/Crux/parsers/Newick.log
-share/Crux/parsers/Newick.pickle
 @dirrm %%PYTHON_SITELIBDIR%%/Crux/DistMatrix
 @dirrm %%PYTHON_SITELIBDIR%%/Crux/include/Crux/DistMatrix
 @dirrm %%PYTHON_SITELIBDIR%%/Crux/include/Crux/Mc3
