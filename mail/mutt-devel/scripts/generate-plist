@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.39 2007/12/13 01:26:10 miwi Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.40 2009/02/09 16:58:46 miwi Exp $
 #
 # set -x
 
@@ -134,6 +134,7 @@ EOF
     echo "%%DOCSDIR%%/html/miscellany.html" >> $tmp_first
     echo "%%DOCSDIR%%/html/optionalfeatures.html" >> $tmp_first
     echo "%%DOCSDIR%%/html/reference.html" >> $tmp_first
+    echo "%%DOCSDIR%%/html/security.html" >> $tmp_first
     echo "%%DOCSDIR%%/html/tuning.html" >> $tmp_first
     if [ "$MUTT_COMPRESSED_FOLDERS" = "yes" ]; then
       echo "%%DOCSDIR%%/html/compressed-folders.html" >> $tmp_first
