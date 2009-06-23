@@ -7,7 +7,7 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20090620:
-  AFFECTS: gstreamer-plugins-bad gstreamer-plugins-good gstreamer-plugins-bad
+  AFFECTS: gstreamer-plugins-bad gstreamer-plugins-good gstreamer-plugins-ugly
   AUTHOR: kwm@FreeBSD.org
 
   Due to the move of several plugins from gstreamer-plugins-bad to 
@@ -8214,4 +8214,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.823 2009/06/23 16:00:00 kwm Exp $
+$FreeBSD: ports/UPDATING,v 1.824 2009/06/23 19:09:54 kwm Exp $
