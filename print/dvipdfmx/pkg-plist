@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/dvipdfmx/pkg-plist,v 1.14 2008/06/10 13:26:05 matusita Exp $
+@comment $FreeBSD: ports/print/dvipdfmx/pkg-plist,v 1.15 2008/06/11 16:02:53 matusita Exp $
 bin/dvipdfmx
 bin/ebb-dvipdfmx
 bin/extractbb
@@ -10,5 +10,7 @@ bin/extractbb
 %%GLYPHMAPDIR%%/pdfglyphlist.txt
 @dirrmtry %%GLYPHMAPDIR%%
 %%FONTCMAPDIR%%/adobe-cmaps
+%%FONTCMAPDIR%%/dvipdfmx/EUC-UCS2
+@dirrm %%FONTCMAPDIR%%/dvipdfmx
 @exec %%MKTEXLSR%% %D/%%TEXMFDIR%%
 @unexec %%MKTEXLSR%% %D/%%TEXMFDIR%%
