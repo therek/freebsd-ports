@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090624:
+  AFFECTS: users of mail/crm114
+  AUTHOR: glebius@cell.glebius.int.ru
+
+  The new version of crm uses a new format for css files. Old files should
+  be rebuilt or started from scratch. If not done, crm114 will lose any
+  mail processed via it.
+
 20090620:
   AFFECTS: gstreamer-plugins-bad gstreamer-plugins-good gstreamer-plugins-ugly
   AUTHOR: kwm@FreeBSD.org
@@ -8214,4 +8222,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.824 2009/06/23 19:09:54 kwm Exp $
+$FreeBSD: ports/UPDATING,v 1.825 2009/06/23 19:33:09 kwm Exp $
