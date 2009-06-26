@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.21 2009/06/09 08:33:21 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.22 2009/06/12 18:03:43 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -48,8 +48,12 @@ LINUX_DIST_SUFFIX=	-f10
 .    else
 IGNORE=		valid values for OVERRIDE_LINUX_NONBASE_PORTS are \"f8\", \"f10\"
 .    endif
-.  else
+.  elif ${OSVERSION} < 800076
+# default for OSVERSION < 800076
 LINUX_DIST_SUFFIX=
+.  else
+# default for OSVERSION >= 800076
+LINUX_DIST_SUFFIX=	-f10
 .  endif
 
 # I'm not sure if kompozer is better for linux-f8 ports, so use nvu
