@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/misc/freebsd-doc-hu/pkg-plist.html-split,v 1.4 2009/06/19 13:33:37 blackend Exp $
+@comment $FreeBSD$
 %%DOCSDIR%%/%%DOCLANG%%/articles/compiz-fusion/TRADEMARKS.html
 %%DOCSDIR%%/%%DOCLANG%%/articles/compiz-fusion/compiz-fusion.html
 %%DOCSDIR%%/%%DOCLANG%%/articles/compiz-fusion/compiz-troubleshooting.html
@@ -443,4 +443,4 @@
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/x-xdm.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/x11-wm.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/x11.html
-%%DOCSDIR%%/%%DOCLANG%%/books/handbook/x45273.html
+%%DOCSDIR%%/%%DOCLANG%%/books/handbook/x45271.html
