@@ -2,7 +2,7 @@
 #
 # Show status of LSI Logic's MegaRAID SAS RAID controllers.
 #
-# $FreeBSD: ports/sysutils/linux-megacli/files/407.status-mfi-raid.in,v 1.5 2008/10/13 17:22:20 stefan Exp $
+# $FreeBSD: ports/sysutils/linux-megacli/files/407.status-mfi-raid.in,v 1.6 2009/04/30 11:39:08 pav Exp $
 #
 
 # If there is a global system configuration file, suck it in.
@@ -68,7 +68,7 @@ for ctrl in `jot ${ADPCOUNT} ${ADPMINIDX} ${ADPMAXIDX}`; do
 			E=-1; S=-1; D=-1; s=-1; mec=-1; oec=-1; pfc=-1; lpfeqn=-1;
 			state="";
 		}
-		/^Enclosure (Number:/ { E=$3; }
+		/^Enclosure Number:/ { E=$3; }
 		/^Enclosure Device ID:/ { E=$4; }
 		/^Slot Number:/ { S=$3; }
 		/^Device Id:/ { D=$3; }
