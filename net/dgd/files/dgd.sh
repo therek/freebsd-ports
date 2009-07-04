@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/dgd/files/dgd.sh,v 1.1 2003/08/29 18:30:08 glewis Exp $
 
 DGD_CONF=%%PREFIX%%/etc/dgd/kernel.dgd
 DGD_USER=mud
@@ -11,7 +11,7 @@ case "$1" in
 	start)
 		if [ -x "${DGD}" ]; then
 			su ${DGD_USER} -c "${DGD} ${DGD_CONF}" >> "${DGD_LOG}" 2>&1 &
-			echo $(($!+1)) > "${DGD_PID}"
+			echo $(($!+2)) > "${DGD_PID}"
 			echo -n ' dgd'
 		fi
 		;;
