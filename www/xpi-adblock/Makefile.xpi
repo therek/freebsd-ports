@@ -5,7 +5,7 @@
 # Date created:		28 March 2006
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.19 2008/04/19 17:54:14 miwi Exp $
+# $FreeBSD: ports/www/xpi-adblock/Makefile.xpi,v 1.20 2009/01/03 05:09:07 chinsan Exp $
 #
 
 # XPI_ID		- Extension id, might be in {12345-...} or dev@org format
@@ -87,7 +87,7 @@ XPI_DISTNAME?=	${PORTNAME}
 XPI_APPS_ALL_WC=	*firefox* *thunderbird* *flock* *sunbird* \
 					*netscape-navigator* *netscape-messenger*
 # *nvu*
-XPI_APPS_ALL=	firefox firefox-devel firefox3 \
+XPI_APPS_ALL=	firefox firefox-devel firefox3 firefox35\
 		linux-firefox linux-firefox-devel flock linux-flock \
 		thunderbird linux-thunderbird \
 		linux-netscape-navigator linux-netscape-messenger \
