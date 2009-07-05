@@ -1,4 +1,4 @@
-$FreeBSD: ports/graphics/jasper/files/patch-src-libjasper-include-jasper-jas_types.h,v 1.4 2003/01/20 10:35:47 sobomax Exp $
+$FreeBSD: ports/graphics/jasper/files/patch-src-libjasper-include-jasper-jas_types.h,v 1.5 2003/12/17 17:20:30 mi Exp $
 
 --- src/libjasper/include/jasper/jas_types.h	Sat Oct  4 12:57:58 2003
 +++ src/libjasper/include/jasper/jas_types.h	Wed Dec 17 10:29:46 2003
