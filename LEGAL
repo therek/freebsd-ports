@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.603 2009/06/13 15:47:05 erwin Exp $
+# $FreeBSD: ports/LEGAL,v 1.604 2009/06/16 14:08:17 wxs Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -741,3 +741,4 @@ TW-*.ttf		chinese/CNS11643-font	No redistribution or
 festlex-ogi		audio/festlex-ogi	No commercial use
 apache2/mod_h264_streaming-*	www/mod_h264_streaming	No commercial use
 pcsv*i3fb.tar.gz	lang/petite-chez	Must acknowledge license
+tarsnap-*		sysutils/tarsnap	Redistribution restricted
