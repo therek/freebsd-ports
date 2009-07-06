@@ -1,8 +1,9 @@
 /* convert old LPmud .o files to new DGD .o format */
-/* $FreeBSD$ */
+/* $FreeBSD: ports/net/dgd-lpmud/files/oconv.c,v 1.2 2003/08/29 18:33:36 glewis Exp $ */
 # include <ctype.h>
-# include <string.h>
 # include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
 
 int array, arrbuf[1000];
 char buffer[60000];	/* large enough? */
