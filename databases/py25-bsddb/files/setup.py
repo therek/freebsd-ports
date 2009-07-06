@@ -3,7 +3,7 @@
 #       python setup.py install
 #
 
-__version__ = "$FreeBSD: ports/databases/py-gdbm/files/setup.py,v 1.1 2001/03/01 12:24:19 tg Exp $"
+__version__ = "$FreeBSD: ports/databases/py25-bsddb/files/setup.py,v 1.1 2003/07/31 20:03:51 perky Exp $"
 
 import os
 try:
