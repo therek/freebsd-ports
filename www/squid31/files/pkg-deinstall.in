@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid26/files/pkg-deinstall.in,v 1.2 2006/07/09 15:20:10 sem Exp $
+# $FreeBSD: ports/www/squid31/files/pkg-deinstall.in,v 1.3 2007/02/07 08:42:29 pav Exp $
 #
 
 PATH=/bin:/usr/bin:/usr/sbin
@@ -8,7 +8,7 @@ PATH=/bin:/usr/bin:/usr/sbin
 case $2 in
 DEINSTALL)
 	cd ${PKG_PREFIX}/etc/squid || exit 1
-	for f in cachemgr.conf mime.conf msntauth.conf squid.conf; do
+	for f in cachemgr.conf errorpage.css mime.conf msntauth.conf squid.conf; do
 		cmp -s -z ${f} ${f}.default && rm ${f}
 	done
 	;;

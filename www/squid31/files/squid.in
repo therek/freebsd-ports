@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid30/files/squid.in,v 1.2 2007/03/07 22:47:15 miwi Exp $
+# $FreeBSD: ports/www/squid31/files/squid.in,v 1.3 2007/06/24 20:28:32 miwi Exp $
 #
 # PROVIDE: squid
 # REQUIRE: LOGIN
@@ -37,10 +37,9 @@ stop_cmd="squid_stop"
 
 load_rc_config ${name}
 
-squid_chdir=${squid_chdir:-"%%PREFIX%%/squid/logs"}
+squid_chdir=${squid_chdir:-"%%PREFIX%%/squid"}
 squid_enable=${squid_enable:-"NO"}
-squid_flags=${squid_flags-"-D"}
-squid_pidfile=${squid_pidfile:-"%%PREFIX%%/squid/logs/squid.pid"}
+squid_pidfile=${squid_pidfile:-"%%PREFIX%%/squid/squid.pid"}
 squid_user=${squid_user:-%%SQUID_UID%%}
 default_config=%%PREFIX%%/etc/squid/squid.conf
 
