@@ -1,7 +1,7 @@
-# $FreeBSD: ports/games/anki/Makefile.inc,v 1.3 2009/06/18 12:24:22 miwi Exp $
+# $FreeBSD: ports/games/anki/Makefile.inc,v 1.4 2009/06/26 14:53:24 miwi Exp $
 
 PORTNAME=	anki
-PORTVERSION=	0.9.9.8.3
+PORTVERSION=	0.9.9.8.4
 CATEGORIES=	games
 MASTER_SITES=	http://ichi2.net/anki/download/files/
 EXTRACT_SUFX=	.tgz
@@ -36,8 +36,7 @@ BUILD_DEPENDS=	${PYNUMPY} \
 		py*-game>=0:${PORTSDIR}/devel/py-game \
 		py*-simplejson>=0:${PORTSDIR}/devel/py-simplejson \
 		py*-matplotlib>=0.90.0:${PORTSDIR}/math/py-matplotlib
-RUN_DEPENDS:=	${BUILD_DEPENDS} \
-		kakasi:${PORTSDIR}/japanese/kakasi
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PLIST=		${PKGDIR}/pkg-plist.py-anki
 WRKSRC=		${WRKDIR}/${DISTNAME}/lib${PORTNAME}
