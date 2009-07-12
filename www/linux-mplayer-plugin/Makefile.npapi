@@ -5,7 +5,7 @@
 # Date created:		27 June 2006
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD: ports/www/linux-mplayer-plugin/Makefile.npapi,v 1.3 2006/08/03 13:50:16 sat Exp $
+# $FreeBSD: ports/www/linux-mplayer-plugin/Makefile.npapi,v 1.4 2007/12/14 19:16:17 sat Exp $
 #
 
 # NPAPI_ID		- Extension id, might be in {12345-...} or dev@org format
@@ -67,7 +67,7 @@ NPAPI_APPS_ALL_WC_LINUX=	${NPAPI_APPS_ALL_WC:S/^*/linux-/}
 NPAPI_APPS_ALL_WC_NATIVE=	${NPAPI_APPS_ALL_WC:S/^*//}
 NPAPI_APPS_ALL=	firefox firefox-devel linux-firefox linux-firefox-devel \
 				flock flock-devel linux-flock linux-flock-devel \
-				mozilla mozilla-devel linux-mozilla  \
+				mozilla mozilla-devel linux-mozilla firefox3 firefox35  \
 				linux-netscape-messenger linux-netscape-navigator \
 				nvu linux-nvu \
 				opera opera-devel linux-opera linux-opera-devel \
