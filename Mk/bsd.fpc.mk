@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.fpc.mk,v 1.8 2009/05/22 21:57:33 acm Exp $
+# $FreeBSD: ports/Mk/bsd.fpc.mk,v 1.9 2009/05/24 06:12:44 acm Exp $
 #
 # bsd.fpc.mk - Support for FreePascal based ports.
 #
@@ -47,6 +47,7 @@ UNITSDIR=		${LOCALBASE}/lib/fpc/${FPC_VER}/units/${BUILDNAME}
 
 fpc-check-install:
 check-makevars::
+.if defined(UNITPREFIX) && defined(PKGNAMESUFFIX)
 	@${ECHO_CMD} "#################################################################"
 	@${ECHO_CMD} ""
 	@${ECHO_CMD} " The following freepascal unit will be installed in your system: "
@@ -54,6 +55,7 @@ check-makevars::
 	@${ECHO_CMD} " * ${UNITPREFIX}${PKGNAMESUFFIX:S/-//}			       "
 	@${ECHO_CMD} ""
 	@${ECHO_CMD} "#################################################################"
+.endif
 
 _FPC_ALL_UNITS=	aspell bfd cairo chm fcl-async fcl-base fcl-db fcl-fpcunit fcl-image \
 		fcl-json fcl-net fcl-passrc fcl-process fcl-registry fcl-web fcl-xml fftw \
