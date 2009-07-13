@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/syslog-ng2/files/syslog-ng.sh.in,v 1.3 2007/03/22 16:30:16 pav Exp $
+# $FreeBSD: ports/sysutils/syslog-ng3/files/syslog-ng.sh.in,v 1.4 2007/07/28 22:28:08 pav Exp $
 #
 
 # PROVIDE: syslogd
