@@ -2,7 +2,7 @@
 # Date created:         30 Nov 2008
 # Whom:                 Koji Yokota <yokota@res.otaru-uc.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/firefox35-i18n/Makefile.option,v 1.1 2009/03/22 18:06:24 pav Exp $
 #
 OPTIONS=        LANG_AF "Africaans"             off \
                 LANG_SQ "Albanian"              off \

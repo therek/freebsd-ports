@@ -2,7 +2,7 @@
 # Date created:         30 Nov 2008
 # Whom:                 Koji Yokota <yokota@res.otaru-uc.ac.jp>
 #
-# $FreeBSD: ports/www/firefox3-i18n/Makefile.lang,v 1.1 2009/03/22 18:06:24 pav Exp $
+# $FreeBSD: ports/www/firefox35-i18n/Makefile.lang,v 1.2 2009/04/26 23:44:31 miwi Exp $
 #
 # Currently, the following 61 languages are supported.
 #
