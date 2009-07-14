@@ -1,16 +1,18 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/flowd/files/flowd.in,v 1.1 2009/07/13 16:22:56 wxs Exp $
 #
 # PROVIDE: flowd
 # REQUIRE: DAEMON
 #
-# Add the following lines to /etc/rc.conf to run ipcad:
+# Add the following lines to /etc/rc.conf to run flowd:
 #
 # flowd_enable (bool):           Set it to "YES" to enable flowd.
 #                                Default is "NO".
 # flowd_conf (file):             Local config file.
 #                                Default is "%%PREFIX%%/etc/flowd.conf".
+# flowd_flags (string):          Flags to pass to flowd.
+#                                Default is empty.
 #
 
 . %%RC_SUBR%%
@@ -21,7 +23,6 @@ load_rc_config ${name}
 
 : ${flowd_enable="NO"}
 : ${flowd_conf="%%PREFIX%%/etc/flowd.conf"}
-: ${flowd_flags=""}
 
 required_files="${flowd_conf}"
 command="%%PREFIX%%/sbin/flowd"
