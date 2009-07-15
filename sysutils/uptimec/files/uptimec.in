@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/uptimec/files/uptimec.sh.in,v 1.1 2005/04/10 17:17:12 pav Exp $
+# $FreeBSD: ports/sysutils/uptimec/files/uptimec.sh.in,v 1.2 2006/02/20 20:47:44 dougb Exp $
 #
 
 # PROVIDE: uptimec
