@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/howl/files/mdnsresponder.sh,v 1.2 2005/07/03 06:24:36 marcus Exp $
+# $FreeBSD: ports/net/howl/files/mdnsresponder.sh,v 1.3 2006/02/20 20:47:24 dougb Exp $
 #
 # PROVIDE: mdnsresponder
 # REQUIRE: DAEMON
