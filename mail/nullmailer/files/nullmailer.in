@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/nullmailer/files/nullmail.sh,v 1.6 2004/10/15 08:38:09 clive Exp $
+# $FreeBSD: ports/mail/nullmailer/files/nullmail.sh,v 1.7 2006/02/20 20:47:13 dougb Exp $
 #
 # PROVIDE: nullmailer
 # REQUIRE: DAEMON
