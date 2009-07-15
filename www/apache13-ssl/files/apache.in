@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache13-ssl/files/apache.in,v 1.1 2008/07/13 04:37:41 itetcu Exp $
+# $FreeBSD: ports/www/apache13-ssl/files/apache.in,v 1.2 2008/07/13 18:19:16 itetcu Exp $
 # renamed from ports/www/apache13-ssl/files/apache.sh,v 1.2 2006/02/20 20:47:46 dougb Exp
 #
 
@@ -36,7 +36,6 @@ required_files=%%PREFIX%%/etc/apache/httpsd.conf
 load_rc_config $name
 
 [ -z "$apache_enable" ]       && apache_enable="NO"
-[ -z "$apache_flags" ]        && apache_flags=""
 [ -z "$apachelimits_enable" ] && apachelimits_enable="NO"
 [ -z "$apachelimits_args" ]   && apachelimits_args="-e -C daemon"
 

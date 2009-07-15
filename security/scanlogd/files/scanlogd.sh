@@ -1,25 +1,24 @@
 #!/bin/sh
 
 # Start or stop scanlogd
-# $FreeBSD: ports/security/scanlogd/files/scanlogd.sh,v 1.2 2004/12/15 08:04:56 vs Exp $
+# $FreeBSD: ports/security/scanlogd/files/scanlogd.sh,v 1.3 2006/02/20 20:47:40 dougb Exp $
 
 # PROVIDE: scanlogd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
 # KEYWORD: shutdown
-#
 
-prefix=%%PREFIX%%
+# Add the following lines to /etc/rc.conf to enable scanlogd:
+# scanlogd_enable="YES"
+# scanlogd_flags="<set as needed>"
 
 scanlogd_enable=${scanlogd_enable:-"NO"}	# Enable scanlogd
-scanlogd_program="${prefix}/bin/scanlogd"	# Location of scanlogd
-scanlogd_flags=${scanlogd_flags:-""}		# Flags to scanlogd
 
 . %%RC_SUBR%%
 
 name="scanlogd"
 rcvar=`set_rcvar`
-command="${prefix}/bin/${name}"
+command="%%PREFIX%%/bin/${name}"
 required_files=""
 
 load_rc_config $name

@@ -1,27 +1,26 @@
 #!/bin/sh
 
 # Start or stop apolicyd
-# $FreeBSD$
+# $FreeBSD: ports/mail/py-apolicy/files/apolicyd.in,v 1.1 2008/11/29 21:02:39 miwi Exp $
 
 # PROVIDE: apolicyd
 # REQUIRE: TWISTD
 # KEYWORD: shutdown
-#
-prefix=%%PREFIX%%
+
 
 # Define these apolicyd_* variables in one of these files:
 #       /etc/rc.conf
 #       /etc/rc.conf.local
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
-#
+
 
 . %%RC_SUBR%%
 
 name="apolicyd"
 rcvar=`set_rcvar`
 
-command="%%LOCALBASE%%/bin/twistd"
+command="%%PREFIX%%/bin/twistd"
 pidfile="/var/run/apolicyd.pid"
 logfile="/var/log/apolicyd.log"
 

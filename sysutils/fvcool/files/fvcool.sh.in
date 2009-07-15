@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# @(#) $FreeBSD: ports/sysutils/fvcool/scripts/fvcool.sh,v 1.2 2006/02/20 20:47:42 dougb Exp $
+# @(#) $FreeBSD: ports/sysutils/fvcool/files/fvcool.sh.in,v 1.1 2006/09/05 07:20:39 barner Exp $
 
 # PROVIDE: %%PORTNAME%%
 # REQUIRE: LOGIN abi
@@ -9,11 +9,11 @@
 
 # Add the following line to /etc/rc.conf to enable `%%PORTNAME%%':
 #
-#%%PORTNAME%%_enable="YES"
+# %%PORTNAME%%_enable="YES"
 #
 # Other rc.conf variables:
 #
-#  %%PORTNAME%%_flags    Set to "-v" for verbose mode.
+# %%PORTNAME%%_flags    Set to "-v" for verbose mode.
 #
 
 . %%RC_SUBR%%
@@ -43,6 +43,5 @@ status_cmd()
 
 load_rc_config "$name"
 : ${%%PORTNAME%%_enable="NO"}
-: ${%%PORTNAME%%_flags=""}
 
 run_rc_command "$1"

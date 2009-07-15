@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/darkstat/files/darkstat.in,v 1.1 2007/10/05 21:53:35 miwi Exp $
+# $FreeBSD: ports/net-mgmt/darkstat/files/darkstat.in,v 1.2 2008/06/10 03:32:15 rafan Exp $
 #
 
 # PROVIDE: darkstat
@@ -42,7 +42,6 @@ load_rc_config $name
 : ${darkstat_dir="/var/run/darkstat"}
 : ${darkstat_pidname="darkstat.pid"}
 : ${darkstat_dropuser="nobody"}
-: ${darkstat_flags=""}
 pidfile="${darkstat_dir}/${darkstat_pidname}"
 
 darkstat_prestart()

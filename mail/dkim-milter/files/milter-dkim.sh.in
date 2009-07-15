@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dkim-milter/files/milter-dkim.sh.in,v 1.16 2009/02/05 08:40:44 stefan Exp $
+# $FreeBSD: ports/mail/dkim-milter/files/milter-dkim.sh.in,v 1.17 2009/02/07 15:56:03 stefan Exp $
 #
 
 # PROVIDE: milter-dkim
@@ -59,7 +59,6 @@ load_rc_config $name
 : ${milterdkim_alg=""}
 # Options other than above can be set with $milterdkim_flags.
 # see dkim-milter documentation for detail.
-: ${milterdkim_flags=""}
 
 if [ -n "$2" ]; then
     profile="$2"

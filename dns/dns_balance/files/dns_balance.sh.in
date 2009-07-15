@@ -1,9 +1,13 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/dns_balance/files/dns_balance.sh.in,v 1.2 2006/02/20 20:46:56 dougb Exp $
+# $FreeBSD: ports/dns/dns_balance/files/dns_balance.sh.in,v 1.3 2006/08/12 03:56:54 rafan Exp $
 #
 # PROVIDE: dns_balance
 # REQUIRE: DAEMON
+
+# Add the following line to /etc/rc.conf to enable dns_balance
+# dns_balance_enable="YES"
+# dns_balance_flags="<set as needed>"
 
 . %%RC_SUBR%%
 
@@ -14,7 +18,6 @@ load_rc_config ${name}
 : ${dns_balance_enable="NO"}
 : ${dns_balance_logfile="/var/log/${name}.log"}
 : ${dns_balance_pidfile="/var/log/${name}.pid"}
-: ${dns_balance_flags=""}
 
 command="%%PREFIX%%/sbin/${name}"
 command_args="-l ${dns_balance_logfile} -p ${dns_balance_pidfile}"

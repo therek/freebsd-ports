@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/distcache-devel/files/dc_server.sh.in,v 1.1 2005/04/18 19:05:57 pav Exp $
+# $FreeBSD: ports/security/distcache-devel/files/dc_server.sh.in,v 1.2 2006/02/20 20:47:38 dougb Exp $
 #
 
 # PROVIDE: %%NAME%%
@@ -10,7 +10,8 @@
 
 # Add the following line to /etc/rc.conf to enable `%%NAME%%':
 #
-#%%NAME%%_enable="YES"
+# %%NAME%%_enable="YES"
+# %%NAME%%_flags="<set as needed>"
 #
 # See %%NAME%%(1)
 #
@@ -27,6 +28,5 @@ pidfile="/var/run/$name.pid"
 # read configuration and set defaults
 load_rc_config "$name"
 : ${%%NAME%%_enable="NO"}
-: ${%%NAME%%_flags=""}
 
 run_rc_command "$1"

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/ftp/moftpd/files/moftpd.sh,v 1.2 2006/02/20 20:47:00 dougb Exp $
+# $FreeBSD: ports/ftp/moftpd/files/moftpd.in,v 1.1 2008/12/26 04:32:41 pgollucci Exp $
 #
 
 # PROVIDE: moftpd
@@ -31,7 +31,6 @@ required_files=%%PREFIX%%/etc/moftpd.conf
 load_rc_config $name
 
 [ -z "$moftpd_enable" ]       && moftpd_enable="NO"
-[ -z "$moftpd_flags" ]        && moftpd_flags=""
 [ -z "$moftpdlimits_enable" ] && moftpdlimits_enable="NO"
 [ -z "$moftpdlimits_args" ]   && moftpdlimits_args="-e -C daemon"
 

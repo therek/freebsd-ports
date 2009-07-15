@@ -2,7 +2,7 @@
 #
 # macroscope - start Macroscope daemon
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/macroscope/files/macroscope.in,v 1.2 2008/07/08 07:14:22 beech Exp $
 # 
 # PROVIDE: macroscope
 # REQUIRE: DAEMON
@@ -19,8 +19,6 @@
 
 name="macroscope"
 rcvar=$(set_rcvar)
-
-prefix="%%PREFIX%%"
 
 start_precmd()
 {

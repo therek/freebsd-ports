@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache20/files/apache2.sh.in,v 1.2 2007/09/10 14:48:36 clement Exp $
+# $FreeBSD: ports/www/apache20/files/apache2.sh.in,v 1.3 2007/09/18 19:18:09 clement Exp $
 #
 
 # PROVIDE: apache2
@@ -42,8 +42,6 @@ required_files=%%PREFIX%%/etc/apache2/httpd.conf
 
 [ -z "$apache2_enable" ]       && apache2_enable="NO"
 [ -z "${apache2ssl_enable}" ]  && apache2ssl_enable="NO"
-[ -z "$apache2_profiles" ]     && apache2_profiles=""
-[ -z "$apache2_flags" ]        && apache2_flags=""
 [ -z "$apache2limits_enable" ] && apache2limits_enable="NO"
 [ -z "$apache2limits_args" ]   && apache2limits_args="-e -C daemon"
 

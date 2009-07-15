@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net-mgmt/smokeping/files/smokeping.in,v 1.1 2006/12/12 12:47:43 lth Exp $
+# $FreeBSD: ports/net-mgmt/smokeping/files/smokeping.in,v 1.2 2008/08/31 19:58:39 lth Exp $
 
 # PROVIDE: smokeping
 # REQUIRE: sshd
@@ -12,8 +12,9 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
+# smokeping_flags="<set as needed>"
+
 smokeping_enable=${smokeping_enable-"NO"}
-smokeping_flags=${smokeping_flags-""}
 smokeping_pidfile=${smokeping_pidfile-"%%PREFIX%%/var/smokeping/smokeping.pid"}
 smokeping_logfile=${smokeping_logfile-"/var/log/smokeping.log"}
 smokeping_user=${smokeping_user-"%%USER%%"}

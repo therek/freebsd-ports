@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/pnp/files/npcd.sh.in,v 1.1 2008/08/17 06:49:35 edwin Exp $
 #
 
 # PROVIDE: npcd
@@ -26,7 +26,6 @@ command_args="-d"
 pidfile=/var/run/${name}.pid
 
 : ${npcd_enable="NO"}
-: ${npcd_flags=""}
 : ${npcd_configfile:="%%PREFIX%%/etc/pnp/npcd.cfg"}
 
 load_rc_config "${name}"

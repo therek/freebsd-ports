@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/apache13/files/apache.in,v 1.1 2007/10/01 04:00:08 ache Exp $
 
 # PROVIDE: apache
 # REQUIRE: LOGIN cleanvar
@@ -12,8 +12,10 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
+# apache_enable="YES"
+# apache_flags="<set as needed>" 
+
 apache_enable=${apache_enable-"NO"}
-apache_flags=${apache_flags-""}
 apache_pidfile=${apache_pidfile-"/var/run/httpd.pid"}
 
 . %%RC_SUBR%%

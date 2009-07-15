@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/snmptt/files/snmptt.sh.in,v 1.1 2005/11/08 16:22:22 pav Exp $
+# $FreeBSD: ports/net-mgmt/snmptt/files/snmptt.sh.in,v 1.2 2006/02/20 20:47:34 dougb Exp $
 #
 
 # PROVIDE: snmptt
@@ -9,7 +9,8 @@
 #
 # Add the following lines to /etc/rc.conf to enable snmptt:
 #
-#snmptt_enable="YES"
+# snmptt_enable="YES"
+# snmptt_flags="<set as needed>"
 #
 # See snmptt documentation for flags.
 #
@@ -31,7 +32,6 @@ required_files=%%PREFIX%%/etc/snmp/${name}.ini
 # set defaults
 
 snmptt_enable=${snmptt_enable:-"NO"}
-snmptt_flags=${snmptt_flags:-""}
 
 stop_postcmd=stop_postcmd
 

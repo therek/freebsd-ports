@@ -1,12 +1,10 @@
 #!/bin/sh
 
-# $FreeBSD: ports/textproc/iiimf-server/files/iiimd.sh.in,v 1.1 2005/05/24 12:37:49 daichi Exp $
+# $FreeBSD: ports/textproc/iiimf-server/files/iiimd.sh.in,v 1.2 2006/02/20 20:47:45 dougb Exp $
 
 # PROVIDE: iiimd
 # REQUIRE: DAEMON
 # KEYWORD: shutdown
-
-prefix=%%PREFIX%%
 
 iiimd_enable=${iiimd_enable:-"NO"}
 
@@ -14,7 +12,7 @@ iiimd_enable=${iiimd_enable:-"NO"}
 
 name="iiimd"
 rcvar=`set_rcvar`
-command="${prefix}/bin/iiimd"
+command="%%PREFIX%%/bin/iiimd"
 
 load_rc_config $name
 command_args="> /dev/null 2>&1 &"

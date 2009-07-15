@@ -1,14 +1,12 @@
 #!/bin/sh
 
 # Start or stop zope
-# $FreeBSD: ports/www/zope/files/zeo.sh,v 1.3 2005/12/30 23:37:16 girgen Exp $
+# $FreeBSD: ports/www/zope/files/zeo.sh,v 1.4 2006/02/20 20:47:50 dougb Exp $
 
 # PROVIDE: zeo
 # REQUIRE: DAEMON
 # BEFORE: zope
 # KEYWORD: shutdown
-#
-prefix=%%PREFIX%%
 
 # Define these zope_* variables in one of these files:
 #       /etc/rc.conf

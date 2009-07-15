@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap23-server/files/slapd.sh.in,v 1.3 2007/08/21 09:17:25 delphij Exp $
+# $FreeBSD: ports/net/openldap23-server/files/slapd.sh.in,v 1.4 2007/12/11 20:56:10 delphij Exp $
 #
 
 # PROVIDE: slapd
@@ -97,11 +97,8 @@ load_rc_config $name
 if [ -n "${slapd_args+set}" ]; then
   warn "slapd_args is deprecated, use slapd_flags"
   : ${slapd_flags="$slapd_args"}
-else
-  : ${slapd_flags=""}
 fi
 : ${slapd_owner="ldap:ldap"}
-: ${slapd_sockets=""}
 : ${slapd_sockets_mode="666"}
 
 run_rc_command "$1"

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/nginx-devel/files/nginx.sh.in,v 1.7 2008/07/30 15:21:16 osa Exp $
+# $FreeBSD: ports/www/nginx-devel/files/nginx.sh.in,v 1.8 2009/07/02 10:31:13 osa Exp $
 
 # PROVIDE: nginx
 # REQUIRE: LOGIN cleanvar
@@ -37,8 +37,6 @@ pidfile="${_pidprefix}.pid"
 required_files=%%PREFIX%%/etc/nginx/nginx.conf
 
 [ -z "$nginx_enable" ]		&& nginx_enable="NO"
-[ -z "$nginx_profiles" ]	&& nginx_profiles=""
-[ -z "$nginx_flags" ]		&& nginx_flags=""
 [ -z "$nginxlimits_enable" ]	&& nginxlimits_enable="NO"
 [ -z "$nginxlimits_args" ]	&& nginxlimits_args="-e -U %%WWWOWN%%"
 

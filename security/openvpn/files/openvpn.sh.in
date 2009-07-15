@@ -7,7 +7,7 @@
 # with multi-instance contribution from Denis Shaposhnikov, Gleb Kozyrev
 # and Vasil Dimov
 #
-# $FreeBSD: ports/security/openvpn/files/openvpn.sh.in,v 1.9 2007/03/08 07:16:33 dougb Exp $
+# $FreeBSD: ports/security/openvpn/files/openvpn.sh.in,v 1.10 2008/02/20 01:15:28 rafan Exp $
 # 
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -75,8 +75,6 @@ esac
 
 rcvar=$(set_rcvar)
 
-prefix="%%PREFIX%%"
-
 openvpn_precmd()
 {
 	for i in $interfaces ; do
@@ -118,8 +116,8 @@ load_rc_config ${name}
 eval ": \${${name}_enable:=\"NO\"}"
 eval ": \${${name}_flags:=\"\"}"
 eval ": \${${name}_if:=\"\"}"
-eval ": \${${name}_configfile:=\"${prefix}/etc/openvpn/${name}.conf\"}"
-eval ": \${${name}_dir:=\"${prefix}/etc/openvpn\"}"
+eval ": \${${name}_configfile:=\"%%PREFIX%%/etc/openvpn/${name}.conf\"}"
+eval ": \${${name}_dir:=\"%%PREFIX%%/etc/openvpn\"}"
 
 configfile="$(eval echo \${${name}_configfile})"
 dir="$(eval echo \${${name}_dir})"

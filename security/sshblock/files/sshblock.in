@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/sshblock/files/sshblock.in,v 1.1 2006/12/03 22:25:18 anders Exp $
+# $FreeBSD: ports/security/sshblock/files/sshblock.in,v 1.2 2009/05/19 08:16:42 anders Exp $
 #
 # PROVIDE: sshblock
 # REQUIRE: DAEMON
@@ -22,6 +22,5 @@ command="%%PREFIX%%/sbin/sshblock"
 
 load_rc_config $name
 : ${sshblock_enable="NO"}
-: ${sshblock_flags=""}
 
 run_rc_command "$1"

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/oidentd/files/oidentd.in,v 1.1 2008/03/25 16:43:13 oliver Exp $
+# $FreeBSD: ports/security/oidentd/files/oidentd.in,v 1.2 2008/06/30 20:17:39 oliver Exp $
 #
 
 # PROVIDE: oidentd
@@ -10,7 +10,8 @@
 #
 # Add the following lines to /etc/rc.conf to enable oidentd:
 #
-#oidentd_enable="YES"
+# oidentd_enable="YES"
+# oidentd_flags="<set as needed>"
 #
 # See oidentd(8) for flags.
 #
@@ -26,7 +27,6 @@ command=%%PREFIX%%/sbin/${name}
 
 oidentd_enable=${oidentd_enable:-"NO"}
 oidentd_conf=${oidentd_conf:-"%%PREFIX%%/etc/${name}.conf"}
-oidentd_flags=${oidentd_flags:-""}
 
 oidentd_precmd ()
 {

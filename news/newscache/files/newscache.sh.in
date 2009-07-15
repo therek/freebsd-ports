@@ -1,16 +1,16 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/news/newscache/files/newscache.sh.in,v 1.2 2006/02/20 20:47:36 dougb Exp $
+# $FreeBSD: ports/news/newscache/files/newscache.sh.in,v 1.3 2006/07/19 16:18:41 dougb Exp $
 #
 # PROVIDE: newscache
 # REQUIRE: DAEMON
 #
-# Add the following line to /etc/rc.conf to enable newscache:
+# Add the following lines to /etc/rc.conf to enable newscache:
 #
 # newscache_enable="YES"
-#
+# newscache_flags="<set as needed>"
+
 newscache_enable=${newscache_enable-"NO"}
-newscache_flags=${newscache_flags-""}
 
 . %%RC_SUBR%%
 

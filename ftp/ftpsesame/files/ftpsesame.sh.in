@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/ftpsesame/files/ftpsesame.sh.in,v 1.1 2006/05/01 08:05:56 sem Exp $
 #
 
 # PROVIDE: ftpsesame
@@ -39,8 +39,6 @@ stop_postcmd()
 
 # set defaults
 ftpsesame_enable=${ftpsesame_enable:-"NO"}
-ftpsesame_interface=${ftpsesame_interface-""}
-ftpsesame_flags=${ftpsesame_flags-""}
 
 load_rc_config $name
 command_args=${ftpsesame_interface:+"-i ${ftpsesame_interface}"}

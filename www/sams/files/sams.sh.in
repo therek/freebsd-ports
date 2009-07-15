@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/sams/files/sams.sh.in,v 1.1 2006/12/29 20:18:35 miwi Exp $
 
 # PROVIDE: sams
 # REQUIRE: LOGIN cleanvar
@@ -12,8 +12,10 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
+# sams_enable="YES"
+# sams_flags="<set as needed>"
+
 sams_enable=${sams_enable-"NO"}
-sams_flags=${sams_flags-""}
 sams_pidfile=${sams_pidfile-"/var/run/samsdaemon.pid"}
 
 . %%RC_SUBR%%

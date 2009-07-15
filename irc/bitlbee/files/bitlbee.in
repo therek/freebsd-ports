@@ -1,10 +1,14 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/irc/bitlbee/files/bitlbee.in,v 1.1 2008/01/08 20:51:45 brix Exp $
+# $FreeBSD: ports/irc/bitlbee/files/bitlbee.in,v 1.2 2008/05/19 16:10:14 brix Exp $
 #
 # PROVIDE: bitlbee
 # REQUIRE: DAEMON
 # KEYWORD: shutdown
+
+# Add the following lines to /etc/rc.conf to enable bitlbee:
+# bitlbee_enable="YES"
+# bitlbee_flags="<set as needed>"
 
 . %%RC_SUBR%%
 
@@ -16,7 +20,6 @@ load_rc_config $name
 : ${bitlbee_enable="NO"}
 : ${bitlbee_user="%%BITLBEEUSER%%"}
 : ${bitlbee_config="%%PREFIX%%/etc/bitlbee/bitlbee.conf"}
-: ${bitlbee_flags=""}
 
 required_files="${bitlbee_config}"
 command="%%PREFIX%%/sbin/bitlbee"

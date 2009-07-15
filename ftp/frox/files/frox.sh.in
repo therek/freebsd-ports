@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/ftp/frox/files/frox.sh,v 1.3 2004/01/19 08:16:22 krion Exp $
+# $FreeBSD: ports/ftp/frox/files/frox.sh.in,v 1.1 2006/02/07 12:50:29 sem Exp $
 #
 
 # PROVIDE: frox
@@ -10,7 +10,8 @@
 #
 # Add the following lines to /etc/rc.conf to enable frox:
 #
-#frox_enable="YES"
+# frox_enable="YES"
+# frox_flags="<set as needed>"
 #
 # See frox(8) for flags
 #
@@ -34,7 +35,6 @@ stop_postcmd()
 # set defaults
 
 frox_enable=${frox_enable:-"NO"}
-frox_flags=${frox_flags:-""}
 
 load_rc_config $name
 run_rc_command "$1"

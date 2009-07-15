@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/powerman/files/powerman.sh.in,v 1.1 2009/02/16 13:25:42 jadawin Exp $
 
 # PROVIDE: powermand
 # REQUIRE: NETWORKING
@@ -13,8 +13,10 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
+# powermand_enable="YES"
+# powermand_flags="<set as needed>"
+
 powermand_enable=${powermand_enable:-"NO"}
-powermand_flags=${powermand_flags:-""}
 
 . %%RC_SUBR%%
 

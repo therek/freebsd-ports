@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/ipacctd/files/ipacctd.sh.in,v 1.1 2005/02/21 17:22:38 skv Exp $
 #
 
 # PROVIDE:	ipacctd
@@ -113,7 +113,5 @@ status_cmd()
 load_rc_config $name
 
 : ${ipacctd_enable="NO"}
-: ${ipacctd_rules=""}
-: ${ipacctd_flags=""}
 
 run_rc_command "$1"

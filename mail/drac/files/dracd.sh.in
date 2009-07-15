@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/drac/files/dracd.sh.in,v 1.5 2006/03/23 15:53:09 flz Exp $
+# $FreeBSD: ports/mail/drac/files/dracd.sh.in,v 1.6 2006/11/22 01:23:30 koitsu Exp $
 #
 # PROVIDE: dracd
 # REQUIRE: DAEMON
@@ -22,7 +22,6 @@ command="%%PREFIX%%/sbin/rpc.dracd"
 load_rc_config $name
 
 : ${dracd_enable="NO"}
-: ${dracd_flags=""}
 
 required_files="%%PREFIX%%/etc/dracd.allow"
 

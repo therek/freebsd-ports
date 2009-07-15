@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/wizd/files/wizd.sh.in,v 1.1 2008/08/14 21:10:10 amdmi3 Exp $
 #
 # PROVIDE: wizd
 # REQUIRE: LOGIN cleanvar
@@ -25,6 +25,5 @@ required_files="%%PREFIX%%/etc/$name.conf"
 load_rc_config $name
 
 : ${wizd_enable="NO"}
-: ${wizd_flags=""}
 
 run_rc_command "$1"

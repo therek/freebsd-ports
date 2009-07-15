@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/msyslog/files/msyslogd.sh.in,v 1.2 2006/09/16 19:39:45 az Exp $
+# $FreeBSD: ports/sysutils/msyslog/files/msyslogd.sh.in,v 1.3 2007/04/22 09:22:13 az Exp $
 #
 
 # PROVIDE: syslogd
@@ -47,6 +47,5 @@ stop_postcmd()
 # read settings, set default values
 load_rc_config $name
 : ${msyslogd_enable="NO"}
-: ${msyslogd_flags=""}
 
 run_rc_command "$1"

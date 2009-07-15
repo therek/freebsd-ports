@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/usermin/files/usermin.sh.in,v 1.5 2006/02/01 21:27:09 olgeni Exp $
+# $FreeBSD: ports/sysutils/usermin/files/usermin.sh.in,v 1.6 2006/02/20 20:47:45 dougb Exp $
 #
 # PROVIDE: usermin
 # REQUIRE: LOGIN
@@ -17,11 +17,10 @@ usermin_enable=${usermin_enable:-"NO"}
 name=usermin
 rcvar=`set_rcvar`
 
-prefix=%%PREFIX%%
 procname=%%PERL5%%
 pidfile=/var/log/usermin/miniserv.pid
-required_dirs=${prefix}/etc/usermin
-command=${prefix}/etc/usermin/start
+required_dirs=%%PREFIX%%/etc/usermin
+command=%%PREFIX%%/etc/usermin/start
 
 load_rc_config ${name}
 run_rc_command "$1"

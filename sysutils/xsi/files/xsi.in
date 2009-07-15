@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/xsi/files/xsi.in,v 1.2 2006/11/10 03:32:57 tmclaugh Exp $
+# $FreeBSD: ports/sysutils/xsi/files/xsi.in,v 1.3 2007/07/03 04:01:53 tmclaugh Exp $
 #
 # PROVIDE: xsi
 # REQUIRE: NETWORKING
@@ -13,7 +13,6 @@
 #
 
 xsi_enable=${xsi_enable-"NO"}
-xsi_flags=${xsi_flags-""}
 
 . %%RC_SUBR%%
 

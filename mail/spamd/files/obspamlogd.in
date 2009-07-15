@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/spamd/files/obspamlogd.in,v 1.1 2007/06/06 16:38:53 miwi Exp $
 #
 
 # PROVIDE: obspamlogd
@@ -19,7 +19,6 @@
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
 obspamlogd_enable=${obspamlogd_enable:-"NO"}
-obspamlogd_flags=${obspamlogd_flags:-""}
 
 . %%RC_SUBR%%
 

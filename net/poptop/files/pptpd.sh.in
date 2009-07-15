@@ -1,17 +1,16 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/poptop/files/pptpd.sh.in,v 1.2 2006/02/20 20:47:28 dougb Exp $
+# $FreeBSD: ports/net/poptop/files/pptpd.sh.in,v 1.3 2006/07/19 16:18:40 dougb Exp $
 #
 # PROVIDE: pptpd
 # REQUIRE: DAEMON
 #
-# Add the following line to /etc/rc.conf to enable pptpd:
+# Add the following lines to /etc/rc.conf to enable pptpd:
 #
 # pptpd_enable="YES"
-#
+# pptpd_flags="<set as needed>"
 
 pptpd_enable=${pptpd_enable-"NO"}
-pptpd_flags=${pptpd_flags-""}
 
 . %%RC_SUBR%%
 

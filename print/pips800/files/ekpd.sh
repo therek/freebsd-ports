@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/print/pips800/files/ekpd.sh,v 1.2 2004/08/25 20:24:18 ume Exp $
+# $FreeBSD: ports/print/pips800/files/ekpd.sh,v 1.3 2006/02/20 20:47:36 dougb Exp $
 #
 
 # PROVIDE: ekpd
@@ -15,8 +15,8 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-ekpd_enable=${ekpd_enable:-"NO"}		# Enable ekpd
-ekpd_flags=${ekpd_flags:-""}			# Flags to ekpd program
+# ekpd_enable="YES"
+# ekpd_flags=""			# Flags to ekpd program
 
 . %%RC_SUBR%%
 
@@ -35,4 +35,5 @@ ekpd_prestart() {
 }
 
 load_rc_config $name
+ekpd_enable=${ekpd_enable:-"NO"}
 run_rc_command "$1"

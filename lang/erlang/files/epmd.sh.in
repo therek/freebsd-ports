@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/epmd/files/epmd.sh.in,v 1.9 2006/02/20 20:47:45 dougb Exp $
+# $FreeBSD: ports/lang/erlang/files/epmd.sh.in,v 1.1 2007/06/14 12:35:24 olgeni Exp $
 #
 # PROVIDE: epmd
 # REQUIRE: LOGIN
@@ -17,10 +17,9 @@ epmd_enable=${epmd_enable:-"NO"}
 name=epmd
 rcvar=`set_rcvar`
 
-prefix=%%PREFIX%%
-procname=${prefix}/bin/epmd
-start_cmd="${prefix}/bin/epmd -daemon"
-stop_cmd="${prefix}/bin/epmd -kill >/dev/null"
+procname=%%PREFIX%%/bin/epmd
+start_cmd="%%PREFIX%%/bin/epmd -daemon"
+stop_cmd="%%PREFIX%%/bin/epmd -kill >/dev/null"
 
 load_rc_config ${name}
 run_rc_command "$1"

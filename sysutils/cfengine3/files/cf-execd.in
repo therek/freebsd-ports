@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/cfengine/files/cf-execd.in,v 1.1 2007/06/15 18:18:57 sergei Exp $
+# $FreeBSD: ports/sysutils/cfengine3/files/cf-execd.in,v 1.1 2009/02/10 21:37:55 bsam Exp $
 #
 # PROVIDE: cf-execd
 # REQUIRE: SERVERS
@@ -25,6 +25,5 @@ command="%%PREFIX%%/sbin/${name}"
 load_rc_config $name
 
 : ${cf-execd_enable="NO"}
-: ${cf-execd_flags=""}
 
 run_rc_command "$1"

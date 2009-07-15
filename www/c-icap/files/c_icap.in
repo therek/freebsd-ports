@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/c-icap/files/c_icap.sh.in,v 1.2 2006/06/11 08:33:03 pav Exp $
+# $FreeBSD: ports/www/c-icap/files/c_icap.in,v 1.1 2006/08/03 10:11:32 rafan Exp $
 #
 
 # PROVIDE: c-icap
@@ -11,6 +11,7 @@
 # Add the following lines to /etc/rc.conf to enable c-icap:
 #
 # c_icap_enable="YES"
+# c_icap_flags="<set as needed>"
 #
 # See '%%PREFIX%%/bin/c-icap --help' for flags
 #
@@ -30,6 +31,5 @@ stop_postcmd="rm -f $pidfile"
 # read settings, set default values
 load_rc_config "$name"
 : ${c_icap_enable="NO"}
-: ${c_icap_flags=""}
 
 run_rc_command "$1"

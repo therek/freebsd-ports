@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/openlldp/files/lldpd.in,v 1.1 2007/06/27 13:54:23 mm Exp $
 #
 # PROVIDE: lldpd
 # REQUIRE: NETWORKING
@@ -27,7 +27,6 @@ command_args=">/dev/null 2>/dev/null &"
 # set defaults
 
 lldpd_enable=${lldpd_enable:-"NO"}
-lldpd_flags=${lldpd_flags:-""}
 
 load_rc_config $name
 run_rc_command "$1"

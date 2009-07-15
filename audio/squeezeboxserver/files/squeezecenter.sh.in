@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/squeezecenter/files/squeezecenter.sh.in,v 1.12 2008/08/11 16:57:00 brooks Exp $
+# $FreeBSD: ports/audio/squeezecenter/files/squeezecenter.sh.in,v 1.13 2008/09/02 19:51:04 brooks Exp $
 #
 
 # PROVIDE: %%PORTNAME%%
@@ -10,7 +10,8 @@
 #
 # Add the following lines to /etc/rc.conf to enable %%PORTNAME%%:
 #
-#%%PORTNAME%%_enable="YES"
+# %%PORTNAME%%_enable="YES"
+# %%PORTNAME%%_flags="<set as needed>"
 #
 
 . %%RC_SUBR%%
@@ -72,6 +73,5 @@ command_args="--daemon --prefsfile=${conffile} --pidfile=${pidfile}"
 load_rc_config ${name}
 
 %%PORTNAME%%_enable=${%%PORTNAME%%_enable:-"NO"}
-%%PORTNAME%%_flags=${%%PORTNAME%%_flags:-""}
 
 run_rc_command "$1"
