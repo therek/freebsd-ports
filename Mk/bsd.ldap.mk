@@ -1,21 +1,19 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.ldap.mk,v 1.3 2009/01/05 05:49:34 delphij Exp $
+# $FreeBSD: ports/Mk/bsd.ldap.mk,v 1.4 2009/02/17 02:54:37 delphij Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Ldap_Post_Include)
 
-Ldap_Post_Include=				bsd.ldap.mk
-Database_Include_MAINTAINER=	ports@FreeBSD.org
+Ldap_Post_Include=			bsd.ldap.mk
+Database_Include_MAINTAINER=		ports@FreeBSD.org
 
-# This file contains some routines to interact with different databases, such
-# as mysql, postgresql and berkley DB. For including this file define macro
-# USE_[LDAP], for example USE_OPENLDAP. Defining macro like USE_[LDAP]_VER or
-# WANT_[LDAP]_VER will include this file too.
+# For including this file define macro USE_OPENLDAP. Defining macro like
+# USE_OPENLDAP_VER or WANT_OPENLDAP_VER will include this file too.
 #
 ##
-# USE_OPENLDAP	- Add OpenLDAP client dependency.
+# USE_OPENLDAP			- Add OpenLDAP client dependency.
 #				  If no version is given (by the maintainer via the port or
 #				  by the user via defined variable), try to find the
 #				  currently installed version.  Fall back to default if
