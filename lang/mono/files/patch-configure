@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/lang/mono/files/patch-configure,v 1.14 2009/06/22 07:55:47 flz Exp $
 
 --- configure.orig
 +++ configure
@@ -8,7 +8,7 @@ $FreeBSD$
  			libmono_ldflags="$PTHREAD_LIBS"
  		fi
 -		CPPFLAGS="$CPPFLAGS -DPLATFORM_BSD"
-+ 		CPPFLAGS="$CPPFLAGS -DPLATFORM_BSD -DPLATFORM_BSD6 -D_GNU_SOURCE -D_REENTRANT -DUSE_MMAP -DUSE_MUNMAP"
++ 		CPPFLAGS="$CPPFLAGS -DPLATFORM_BSD -DPLATFORM_BSD6 -D_REENTRANT -DUSE_MMAP -DUSE_MUNMAP"
 + 		libmono_cflags="$libmono_cflags -D_REENTRANT"
  		need_link_unlink=yes
  
