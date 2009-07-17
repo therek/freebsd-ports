@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop vmpsd
-# $FreeBSD: ports/net-mgmt/openvmps/files/vmpsd.sh,v 1.2 2006/02/20 20:47:34 dougb Exp $
+# $FreeBSD: ports/net-mgmt/openvmps/files/vmpsd.sh,v 1.3 2009/07/15 16:55:59 dougb Exp $
 
 # PROVIDE: vmpsd
 # REQUIRE: DAEMON
