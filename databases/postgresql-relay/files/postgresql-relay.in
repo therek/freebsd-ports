@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/postgresql-relay/files/postgresql-relay.sh,v 1.2 2006/02/20 20:46:51 dougb Exp $
+# $FreeBSD: ports/databases/postgresql-relay/files/postgresql-relay.sh.in,v 1.1 2006/04/01 11:57:25 edwin Exp $
 #
 
 # PROVIDE: postgresql-relay
@@ -24,9 +24,8 @@ rcvar=`set_rcvar`
 command=%%PREFIX%%/bin/postgresql-relay
 required_files=%%PREFIX%%/etc/postgresql-relay.conf
 
-# set defaults
+load_rc_config $name
 
 postgresqlrelay_enable=${postgresqlrelay_enable:-"NO"}
 
-load_rc_config $name
 run_rc_command "$1"
