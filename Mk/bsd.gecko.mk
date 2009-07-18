@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.12 2009/05/04 19:23:41 miwi Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.13 2009/07/11 06:41:55 beat Exp $
 #   $MCom: ports/Mk/bsd.gecko.mk,v 1.10 2009/04/04 19:54:48 marcus Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
@@ -320,7 +320,7 @@ cairo_EXTRACT_AFTER_ARGS=	--exclude mozilla/gfx/cairo
 
 dbm_EXTRACT_AFTER_ARGS=		--exclude mozilla/dbm
 
-jpeg_LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
+jpeg_LIB_DEPENDS=	jpeg.10:${PORTSDIR}/graphics/jpeg
 jpeg_MOZ_OPTIONS=	--with-system-jpeg=${LOCALBASE}
 jpeg_EXTRACT_AFTER_ARGS=	--exclude mozilla/jpeg
 
