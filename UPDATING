@@ -7,7 +7,7 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20090719:
-  AFFECTS: users of www/jpeg
+  AFFECTS: users of graphics/jpeg
   AUTHOR: dinoex@FreeBSD.org
 
   jpeg has been updated to 7.0.
@@ -8280,4 +8280,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.829 2009/07/04 11:55:47 olgeni Exp $
+$FreeBSD: ports/UPDATING,v 1.830 2009/07/19 08:03:13 dinoex Exp $
