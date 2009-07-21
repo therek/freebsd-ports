@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/security/shibboleth2-sp/files/patch-shib-target_shib-handlers.cpp,v 1.1 2007/08/03 23:21:25 pav Exp $
 
 --- shib-target/shib-handlers.cpp.orig
 +++ shib-target/shib-handlers.cpp

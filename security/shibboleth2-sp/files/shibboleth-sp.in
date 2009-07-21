@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/shibboleth2-sp/files/shibboleth-sp.in,v 1.1 2007/08/03 23:21:25 pav Exp $
 #
 # PROVIDE: shibboleth_sp
 # REQUIRE: DAEMON

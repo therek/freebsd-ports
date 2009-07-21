@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/shibboleth2-sp/pkg-plist,v 1.1 2007/08/03 23:21:25 pav Exp $
 bin/test-client
 bin/shibtest
 bin/posttest
