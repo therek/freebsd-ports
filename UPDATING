@@ -23,15 +23,19 @@ upgrades.
   AUTHOR: dinoex@FreeBSD.org
 
   jpeg has been updated to 7.0.
-  Quick instructions:
-  	pkg_delete -r jpeg-6b_7
   Please rebuild all ports that depends on it.
+
+  If you use portmaster please use:
+	portmaster -r jpeg*
+  If you use portupgrade please use:
+	portupgrade -fr graphics/jpeg
 
 20090704:
   AFFECTS: users of www/yaws
   AUTHOR: olgeni@FreeBSD.org
 
-  The default configuration file path was changed to ${LOCALBASE}/etc/yaws in version 1.83.
+  The default configuration file path was changed to ${LOCALBASE}/etc/yaws
+  in version 1.83.
 
   Please remember to update your configuration before upgrading.
 
@@ -8292,4 +8296,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.833 2009/07/20 16:04:57 dougb Exp $
+$FreeBSD: ports/UPDATING,v 1.834 2009/07/20 16:24:38 dougb Exp $
