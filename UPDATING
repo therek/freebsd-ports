@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090724:
+  AFFECTS: users of www/rubygem-rails
+  AUTHOR: pgollucci@FreeBSD.org
+
+  Rails has been updated to 2.3.3. As always make sure you check the changes
+     http://weblog.rubyonrails.org/
+
 20090720:
   AFFECTS: users of net/openldap24-{client,server}
   AUTHOR: delphij@FreeBSD.org
@@ -8296,4 +8303,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.834 2009/07/20 16:24:38 dougb Exp $
+$FreeBSD: ports/UPDATING,v 1.835 2009/07/23 18:01:02 wxs Exp $
