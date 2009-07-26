@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/proxyper/files/proxyper.sh,v 1.5 2004/12/02 11:40:28 vs Exp $
+# $FreeBSD$
 #
 # PROVIDE: proxyper
 # REQUIRE: LOGIN
