@@ -33,7 +33,9 @@ upgrades.
   Please rebuild all ports that depends on it.
 
   If you use portmaster please use:
-	portmaster -r jpeg*
+	portmaster -r jpeg-
+	Or if you would prefer a more gradual approach:
+	portmaster -w jpeg- (Check the man page for more information)
   If you use portupgrade please use:
 	portupgrade -fr graphics/jpeg
 
@@ -8303,4 +8305,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.835 2009/07/23 18:01:02 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.836 2009/07/24 22:43:50 pgollucci Exp $
