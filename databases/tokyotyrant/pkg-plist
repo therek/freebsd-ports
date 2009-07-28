@@ -1,9 +1,10 @@
-@comment $FreeBSD: ports/databases/tokyotyrant/pkg-plist,v 1.5 2009/05/27 02:17:20 lwhsu Exp $
+@comment $FreeBSD: ports/databases/tokyotyrant/pkg-plist,v 1.6 2009/07/09 09:05:02 miwi Exp $
 %%DATADIR%%/COPYING
 %%DATADIR%%/ChangeLog
 %%DATADIR%%/THANKS
 %%DATADIR%%/doc/index.html
 %%DATADIR%%/ext/mapreduce.lua
+%%DATADIR%%/ext/queue.lua
 %%DATADIR%%/ext/senatus.lua
 %%DATADIR%%/ext/usherette.lua
 bin/tcrmgr
@@ -18,7 +19,7 @@ include/ttutil.h
 lib/libtokyotyrant.a
 lib/libtokyotyrant.so
 lib/libtokyotyrant.so.3
-lib/libtokyotyrant.so.3.11.0
+lib/libtokyotyrant.so.3.16.0
 lib/ttskeldir.so
 lib/ttskelmock.so
 lib/ttskelnull.so
