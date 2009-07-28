@@ -1,6 +1,10 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/editors/gambas2-ide/pkg-plist,v 1.1 2009/05/11 00:32:05 acm Exp $
 bin/gambas2
 bin/gambas2-database-manager.gambas
 bin/gambas2.gambas
 bin/gbs2.gambas
 bin/gbs2
+%%DATADIR%%/icons/application-x-gambasscript.png
+%%DATADIR%%/icons/application-x-gambasserverpage.png
+@dirrmtry %%DATADIR%%/icons
+@dirrmtry %%DATADIR%%
