@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-im/prosody/files/pkg-install.in,v 1.1 2009/07/14 06:30:55 pgollucci Exp $
 #
 
 PW=/usr/sbin/pw
-UID=1789
+UID=242
 GID=$UID
 USER="prosody"
 GROUP="prosody"
