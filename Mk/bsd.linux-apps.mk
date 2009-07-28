@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.24 2009/07/03 20:58:54 nox Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.25 2009/07/28 08:59:53 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -150,12 +150,14 @@ cyrus-sasl2_PORT=	${PORTSDIR}/security/linux${LINUX_DIST_SUFFIX}-cyrus-sasl2
 # no dbusglib_f8_FILE
 dbusglib_f10_FILE=	${LINUXBASE}/usr/lib/libdbus-glib-1.so.2
 dbusglib_DETECT=	${dbusglib${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
+dbusglib_PORT=		${PORTSDIR}/devel/linux${LINUX_DIST_SUFFIX}-dbus-glib
 dbusglib_DEPENDS=	dbuslibs expat
 
 # no dbuslibs_FILE
 # no dbuslibs_f8_FILE
 dbuslibs_f10_FILE=	${LINUXBASE}/lib/libdbus-1.so.3
 dbuslibs_DETECT=	${dbuslibs${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
+dbuslibs_PORT=		${PORTSDIR}/devel/linux${LINUX_DIST_SUFFIX}-dbus-libs
 
 dri_FILE=		${LINUXBASE}/usr/X11R6/lib/libGL.so.1
 dri_f8_FILE=		${LINUXBASE}/usr/lib/libGL.so.1
