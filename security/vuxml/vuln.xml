@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1986 2009/07/27 19:39:34 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1987 2009/07/29 16:00:52 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -49,7 +49,7 @@ Note:  Please add new entries to the beginning of this file.
 	  <p>A security issue has been reported in Mono, which can be
 	    exploited by malicious people to conduct spoofing attacks.</p>
 	  <p>The security issue is caused due to an error when processing
-	    certain XML signatures.
+	    certain XML signatures.</p>
 	</blockquote>
       </body>
     </description>
