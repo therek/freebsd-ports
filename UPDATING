@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090729:
+  AFFECTS: users of sysutils/heartbeat
+  AUTHOR: ports@encarnate.com
+
+  Heartbeat has been upgraded to the 2.1.4 release.  Older configurations
+  based on version 1 should still work.  Read more about the new features
+  and possible configuration changes at the following urls:
+     http://clusterlabs.org/wiki/Documentation (Configuration 0.6 Explained)
+     http://www.linux-ha.org/GettingStartedRevisedV2
+
 20090724:
   AFFECTS: users of www/rubygem-rails
   AUTHOR: pgollucci@FreeBSD.org
@@ -8305,4 +8315,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.836 2009/07/24 22:43:50 pgollucci Exp $
+$FreeBSD: ports/UPDATING,v 1.837 2009/07/27 22:48:12 dougb Exp $
