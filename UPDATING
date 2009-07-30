@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090730:
+  AFFECTS: users of www/tomcat6
+  AUTHOR: ale@FreeBSD.org
+
+  Tomcat has been updated to 6.0.20 release and the installation
+  directory is changed from apache-tomcat6.0 to apache-tomcat-6.0.
+  Backup your configuration files before updating Tomcat, since
+  the previous port will delete them on deinstall.
+
 20090729:
   AFFECTS: users of sysutils/heartbeat
   AUTHOR: ports@encarnate.com
@@ -8315,4 +8324,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.837 2009/07/27 22:48:12 dougb Exp $
+$FreeBSD: ports/UPDATING,v 1.838 2009/07/29 09:13:31 bsam Exp $
