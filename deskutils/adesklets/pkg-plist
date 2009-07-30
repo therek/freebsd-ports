@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/deskutils/adesklets/pkg-plist,v 1.4 2006/02/02 13:22:12 novel Exp $
+@comment $FreeBSD: ports/deskutils/adesklets/pkg-plist,v 1.5 2006/04/03 16:17:49 novel Exp $
 bin/adesklets
 bin/adesklets_checkin
 bin/adesklets_installer
@@ -10,7 +10,7 @@ bin/adesklets_submit
 %%PERL%%%%SITE_PERL%%/adesklets.pm
 %%PERL%%%%SITE_PERL%%/updateproto.pl
 %%PERL%%%%SITE_PERL%%/%%PERL_ARCH%%/auto/adesklets/.packlist
-%%PERL%%lib/perl5/%%PERL_VER%%/mach/perllocal.pod
+%%PERL%%lib/perl5/%%PERL_VER%%/%%PERL_ARCH%%/perllocal.pod
 %%PERL%%lib/perl5/%%PERL_VER%%/man/man3/adesklets.3
 %%PYTHON_SITELIBDIR%%/posix_signal.so
 %%PYTHON_SITELIBDIR%%/adesklets/__init__.py

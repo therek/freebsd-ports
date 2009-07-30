@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-Class-Component/pkg-plist,v 1.1 2008/04/14 01:29:04 clsung Exp $
+@comment $FreeBSD: ports/devel/p5-Class-Component/pkg-plist,v 1.2 2008/05/22 12:33:28 jadawin Exp $
 %%SITE_PERL%%/Class/Component/Attribute/Hook.pm
 %%SITE_PERL%%/Class/Component/Attribute/Method.pm
 %%SITE_PERL%%/Class/Component/Component/Autocall/SingletonMethod.pm
@@ -16,8 +16,8 @@
 %%SITE_PERL%%/Class/Component/Attribute.pm
 %%SITE_PERL%%/Class/Component/Plugin.pm
 %%SITE_PERL%%/Class/Component.pm
-%%SITE_PERL%%/mach/auto/Class/Component/.packlist
-@dirrmtry %%SITE_PERL%%/mach/auto/Class/Component
+%%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/Component/.packlist
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/Component
 @dirrmtry %%SITE_PERL%%/Class/Component/Component/Plaggerize
 @dirrmtry %%SITE_PERL%%/Class/Component/Component/Autocall
 @dirrmtry %%SITE_PERL%%/Class/Component/Component

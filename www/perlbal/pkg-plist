@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/perlbal/pkg-plist,v 1.9 2008/04/14 04:04:59 clsung Exp $
+@comment $FreeBSD: ports/www/perlbal/pkg-plist,v 1.10 2009/06/26 11:51:46 jadawin Exp $
 %%PORTDOCS%%%%DOCSDIR%%/config-guide.txt
 %%PORTDOCS%%%%DOCSDIR%%/hacking/classes.txt
 %%PORTDOCS%%%%DOCSDIR%%/hacking/hooks.txt
@@ -43,9 +43,9 @@
 %%SITE_PERL%%/Perlbal/Test/WebServer.pm
 %%SITE_PERL%%/Perlbal/UploadListener.pm
 %%SITE_PERL%%/Perlbal/Util.pm
-%%SITE_PERL%%/mach/auto/Perlbal/.packlist
+%%SITE_PERL%%/%%PERL_ARCH%%/auto/Perlbal/.packlist
 bin/perlbal
-@dirrm %%SITE_PERL%%/mach/auto/Perlbal
+@dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Perlbal
 @dirrm %%SITE_PERL%%/Perlbal/Test
 @dirrm %%SITE_PERL%%/Perlbal/Plugin
 @dirrm %%SITE_PERL%%/Perlbal
