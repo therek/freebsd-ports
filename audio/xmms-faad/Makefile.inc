@@ -1,7 +1,8 @@
-# $FreeBSD$
+# $FreeBSD: ports/audio/xmms-faad/Makefile.inc,v 1.1 2009/02/21 19:55:46 beech Exp $
 
 PORTNAME=	faad2
 PORTVERSION=	2.7
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	SFE/faac
 
