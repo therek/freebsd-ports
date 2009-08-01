@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1988 2009/07/29 16:17:17 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.1989 2009/08/01 14:13:24 wxs Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -1581,13 +1581,13 @@ Note:  Please add new entries to the beginning of this file.
   <vuln vid="fbc8413f-2f7a-11de-9a3f-001b77d09812">
     <topic>FreeBSD -- remotely exploitable crash in OpenSSL</topic>
     <affects>
-      <package>
+      <system>
         <name>FreeBSD</name>
         <range><ge>6.3</ge><lt>6.3_10</lt></range>
         <range><ge>6.4</ge><lt>6.4_4</lt></range>
         <range><ge>7.0</ge><lt>7.0_12</lt></range>
         <range><ge>7.1</ge><lt>7.1_5</lt></range>
-      </package>
+      </system>
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
