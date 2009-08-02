@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.29 2007/06/16 19:03:50 pav Exp $
+# $FreeBSD$
 #
 # Please view me with 4 column tabs!
 #
@@ -175,10 +175,10 @@ BUILD_DEPENDS+=		${AUTOCONF_DEPENDS}
 #---------------------------------------------------------------------------
 
 # Convenience function to save people having to depend directly on
-# devel/libltdl15
+# devel/libltdl22
 #
 .if defined(AUTOTOOL_libltdl)
-LIB_DEPENDS+=	ltdl.4:${PORTSDIR}/devel/libltdl15
+LIB_DEPENDS+=	ltdl.7:${PORTSDIR}/devel/libltdl22
 .endif
 
 .if defined(AUTOTOOL_libtool)
@@ -202,7 +202,7 @@ LIBTOOLIZE=			${LOCALBASE}/bin/libtoolize
 LIBTOOL_LIBEXECDIR=	${LOCALBASE}/libexec/libtool
 LIBTOOL_SHAREDIR=	${LOCALBASE}/share/libtool
 LIBTOOL_M4=			${LOCALBASE}/share/aclocal/libtool.m4
-LTMAIN=				${LIBTOOL_SHAREDIR}/ltmain.sh
+LTMAIN=				${LIBTOOL_SHAREDIR}/config/ltmain.sh
 LIBTOOL_VARS=		LIBTOOL=${LIBTOOL} LIBTOOLIZE=${LIBTOOLIZE} LIBTOOL_M4=${LIBTOOL_M4}
 
 LIBTOOL_DEPENDS=	${LIBTOOL}:${PORTSDIR}/devel/libtool${LIBTOOL_VERSION}

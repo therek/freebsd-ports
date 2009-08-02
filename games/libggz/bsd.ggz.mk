@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/libggz/bsd.ggz.mk,v 1.1 2007/04/07 15:49:49 rafan Exp $
+# $FreeBSD$
 
 # common settings
 

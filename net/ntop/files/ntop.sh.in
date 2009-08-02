@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/ntop/files/ntop.sh.in,v 1.1 2005/12/12 07:03:16 lawrance Exp $
+# $FreeBSD$
 #
 # PROVIDE: ntop
 # REQUIRE: DAEMON

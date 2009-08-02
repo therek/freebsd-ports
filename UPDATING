@@ -6,6 +6,22 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20090802:
+  AFFECTS: users of devel/libtool15 and devel/libltdl15
+  AUTHOR: mezz@FreeBSD.org
+
+  The devel/libtool15 and devel/libltdl15 have been moved to libtool22 and
+  libltdl22 then updated to 2.2.6a. You will need to run portmaster or
+  portupgrade:
+
+  portmaster -o devel/libtool22 libtool-1.5\*
+  portmaster -o devel/libltdl22 libltdl-1.5\*
+
+  Same way as for portupgrade by replace from 'portmaster' to 'portupgrade'.
+  After that, you will need to rebuild all ports that depend on libltdl, since
+  all ports' PORTREVISION has been bump so you can run with '-a' of either
+  portmaster or portupgrade.
+
 20090801:
   AFFECTS: users of x11-drivers/xf86-video-nouveau
   AUTHOR: rnoland@FreeBSD.org
@@ -8341,4 +8357,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.840 2009/08/01 17:53:04 rnoland Exp $
+$FreeBSD: ports/UPDATING,v 1.841 2009/08/02 09:14:51 danfe Exp $

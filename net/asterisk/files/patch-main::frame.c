@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/net/asterisk/files/patch-frame.c,v 1.1 2006/01/27 00:15:33 sobomax Exp $
+$FreeBSD$
 
 --- main/frame.c.orig	Wed Jan 25 13:22:43 2006
 +++ main/frame.c	Wed Jan 25 13:21:25 2006

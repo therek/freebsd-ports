@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache22/files/apache22.in,v 1.2 2009/06/12 00:37:51 pgollucci Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: apache22

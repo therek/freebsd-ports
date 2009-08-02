@@ -1,6 +1,6 @@
 # Makefile.modules.3rd
 #
-# $FreeBSD: ports/www/apache20/Makefile.modules.3rd,v 1.21 2005/12/03 23:04:21 clement Exp $
+# $FreeBSD$
 #
 # Author: Clement Laforet <clement@FreeBSD.org>
 # If you have questions, please contact me.

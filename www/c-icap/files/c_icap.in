@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/c-icap/files/c_icap.in,v 1.1 2006/08/03 10:11:32 rafan Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: c-icap

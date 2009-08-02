@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/firebird2-server/pkg-plist,v 1.18 2008/04/19 01:15:56 edwin Exp $
+@comment $FreeBSD$
 bin/fb_inet_server
 bin/fb_lock_mgr
 bin/fb_lock_print

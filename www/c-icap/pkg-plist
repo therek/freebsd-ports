@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/c-icap/pkg-plist,v 1.4 2006/08/03 10:11:32 rafan Exp $
+@comment $FreeBSD$
 bin/c-icap
 bin/icap-client
 bin/icap-stretch
@@ -48,7 +48,6 @@ lib/c_icap/srv_url_check.a
 lib/c_icap/srv_url_check.so
 lib/c_icap/srv_url_check.la
 @dirrm lib/c_icap
-lib/libicapapi.a
 lib/libicapapi.la
 lib/libicapapi.so.0
 lib/libicapapi.so

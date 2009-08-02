@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/net/asterisk/files/ilbc_enable.diff,v 1.1 2008/06/10 08:30:35 sobomax Exp $
+$FreeBSD$
 
 --- menuselect-tree
 +++ menuselect-tree

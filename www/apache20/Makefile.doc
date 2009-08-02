@@ -5,7 +5,7 @@
 #      - make options output
 #      - apache2 man/docs routines
 #
-# $FreeBSD: ports/www/apache20/Makefile.doc,v 1.19 2006/05/10 19:50:26 clement Exp $
+# $FreeBSD$
 #
 
 ## Available knobs:

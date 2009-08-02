@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/c-icap/files/pkg-install.in,v 1.4 2006/08/03 10:11:32 rafan Exp $
+# $FreeBSD$
 
 DEST_DIR=${PKG_DESTDIR:-}
 

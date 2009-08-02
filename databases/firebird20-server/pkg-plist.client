@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/firebird20-server/pkg-plist.client,v 1.7 2006/09/18 15:20:03 skv Exp $
+@comment $FreeBSD$
 bin/gpre
 bin/isql
 bin/qli

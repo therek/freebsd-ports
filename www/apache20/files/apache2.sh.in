@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache20/files/apache2.sh.in,v 1.3 2007/09/18 19:18:09 clement Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: apache2

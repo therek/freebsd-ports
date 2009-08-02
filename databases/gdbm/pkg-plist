@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/gdbm/pkg-plist,v 1.10 2004/10/13 00:36:54 leeym Exp $
+@comment $FreeBSD$
 include/gdbm.h
 %%GDBM_COMPAT%%include/dbm.h
 %%GDBM_COMPAT%%include/ndbm.h

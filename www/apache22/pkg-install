@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache2/pkg-install,v 1.4 2004/04/07 14:27:47 clement Exp $
+# $FreeBSD$
 #
 
 if [ "$2" != "PRE-INSTALL" ]; then
