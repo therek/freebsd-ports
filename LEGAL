@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.607 2009/07/16 15:01:40 wxs Exp $
+# $FreeBSD: ports/LEGAL,v 1.608 2009/07/19 18:27:18 shaun Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -581,6 +581,8 @@ svm_light.tar.gz	science/svmlight	The software must not be
 swing1_1_1*		java/jfc		Do not distribute without
 						value-added application
 systemc-2*.tgz		cad/systemc		License agreement required
+systemsim-cell-*	emulators/linux-systemsimcell	Redistribution of pre-compiled
+						binaries is not permitted
 scv-1.0p2-sysc*		cad/scv			License agreement required
 tcetest_*		games/linux-enemyterritory-tce	Redistribution limited
 texcm-ttf-20010117/*	x11-fonts/texcm-ttf	Cannot be sold or distributed
