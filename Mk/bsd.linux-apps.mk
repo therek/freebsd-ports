@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.25 2009/07/28 08:59:53 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.26 2009/07/28 14:52:23 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -510,7 +510,7 @@ IGNORE=	bsd.linux-apps.mk test failed: Invalid component USE_LINUX_APPS=${compon
 .      if defined(${component}${LINUX_DIST_SUFFIX:S/-/_/}_FILE)
 IGNORE=	bsd.linux-apps.mk test failed: The component ${component} is empty for LINUX_DIST_SUFFIX=${LINUX_DIST_SUFFIX} (the corresponding variable ${component}${LINUX_DIST_SUFFIX:S/-/_/}_FILE is empty)
 .      else
-IGNORE=	bsd.linux-apps.mk test failed: The component ${component} is not defined for LINUX_DIST_SUFFIX=${LINUX_DIST_SUFFIX} (the corresponding variable ${component}${LINUX_DIST_SUFFIX:S/-/_/}_FILE is not defined)
+IGNORE=	bsd.linux-apps.mk test failed: The component ${component} is not defined for LINUX_DIST_SUFFIX=${LINUX_DIST_SUFFIX} (the corresponding variable ${component}${LINUX_DIST_SUFFIX:S/-/_/}_FILE is not defined). This usually means that the current port should be used with non default linux base and/or infrastructure port(s)
 .      endif
 .    endif
 .  endfor
