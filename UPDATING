@@ -17,8 +17,8 @@ upgrades.
   Portmaster:
   -----------
 
-  portmaster -o devel/libtool22 libtool-1.5\*
-  portmaster -o devel/libltdl22 libltdl-1.5\*
+  portmaster -o devel/libtool22 devel/libtool15
+  portmaster -o devel/libltdl22 devel/libltdl15
 
   Portupgrade:
   ------------
@@ -8365,4 +8365,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.843 2009/08/02 19:47:26 marcus Exp $
+$FreeBSD: ports/UPDATING,v 1.844 2009/08/03 12:42:32 naddy Exp $
