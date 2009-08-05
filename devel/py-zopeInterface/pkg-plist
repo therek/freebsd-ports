@@ -1,12 +1,11 @@
-@comment $FreeBSD: ports/devel/py-zopeInterface/pkg-plist,v 1.7 2008/12/01 23:02:07 pav Exp $
+@comment $FreeBSD: ports/devel/py-zopeInterface/pkg-plist,v 1.8 2008/12/19 14:31:29 pav Exp $
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/__init__.py
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/__init__.pyc
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/__init__.pyo
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/interface/DEPENDENCIES.cfg
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/interface/PUBLICATION.cfg
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/interface/README.ru.txt
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/interface/README.txt
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/interface/SETUP.cfg
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/interface/index.txt
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/interface/verify.txt
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/interface/__init__.py
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/interface/__init__.pyc
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/interface/__init__.pyo
