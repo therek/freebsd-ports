@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/ruby-gems/pkg-plist,v 1.18 2009/02/13 20:08:13 stas Exp $
+@comment $FreeBSD: ports/devel/ruby-gems/pkg-plist,v 1.19 2009/06/12 05:42:09 pgollucci Exp $
 bin/gem
 bin/gem18
 bin/update_rubygems18
@@ -78,7 +78,6 @@ lib/ruby/gems/%%RUBY_VER%%/specifications/sources-0.0.2.gemspec
 %%RUBY_SITELIBDIR%%/rubygems/remote_fetcher.rb
 %%RUBY_SITELIBDIR%%/rubygems/require_paths_builder.rb
 %%RUBY_SITELIBDIR%%/rubygems/requirement.rb
-%%RUBY_SITELIBDIR%%/rubygems/rubygems_version.rb
 %%RUBY_SITELIBDIR%%/rubygems/security.rb
 %%RUBY_SITELIBDIR%%/rubygems/server.rb
 %%RUBY_SITELIBDIR%%/rubygems/source_index.rb
