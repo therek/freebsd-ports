@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/courier/files/courier.sh.in,v 1.3 2008/12/19 12:42:03 stefan Exp $
+# $FreeBSD: ports/mail/courier/files/courier.sh.in,v 1.4 2009/07/15 16:55:45 dougb Exp $
 #
 # Adapted for FreeBSD from courier.sysvinit
 #
@@ -11,6 +11,10 @@
 # REQUIRE: LOGIN courier_authdaemond
 # BEFORE:  securelevel
 # KEYWORD: shutdown
+#
+# NOTE for FreeBSD 5.0+:
+# If you want this script to start with the base rc scripts
+# move courier.sh to /etc/rc.d/courier
 
 prefix="%%PREFIX%%"
 exec_prefix="${prefix}"

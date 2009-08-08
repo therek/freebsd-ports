@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/courier/files/pkg-install.in,v 1.1 2005/07/16 22:52:35 pav Exp $
+# $FreeBSD: ports/mail/courier/files/pkg-install.in,v 1.2 2009/01/05 21:05:45 pav Exp $
 #
 
 PKG_PREFIX=${PKG_PREFIX:=/usr/local}
@@ -39,7 +39,7 @@ yesno() {
 
 replace() {
     local orig repl
-    
+
     orig=$1
     repl=$2
     if [ -e ${orig} ]; then
