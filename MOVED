@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1958 2009/08/02 19:32:04 mezz Exp $
+# $FreeBSD: ports/MOVED,v 1.1959 2009/08/03 03:44:23 tabthorpe Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4132,3 +4132,4 @@ devel/libtool15|devel/libtool22|2009-08-02|Update to libtool22
 devel/libltdl15|devel/libltdl22|2009-08-02|Update to libltdl22
 editors/koffice-i18n-sr@Latn|editors/koffice-i18n-sr_Latn|2009-08-02|Use editors/koffice-i18n-sr_Latn
 misc/kde3-i18n-sr@Latn|misc/kde3-i18n-sr_Latn|2009-08-02|Use misc/kde3-i18n-sr_Latn
+lang/tinycobol||2009-08-08|Has expired: no longer being developed; consider using lang/open-cobol instead
