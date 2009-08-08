@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/assp/files/assp.sh.in,v 1.3 2006/02/20 20:47:06 dougb Exp $
+# $FreeBSD: ports/mail/assp/files/assp.in,v 1.1 2006/07/18 03:08:23 rafan Exp $
 #
 
 # PROVIDE: assp
@@ -18,6 +18,6 @@ pidfile=%%ASSP_HOME%%/pid
 
 load_rc_config $name
 : ${assp_enable="NO"}
-: ${assp_flags="%%ASSP_HOME%%"}
+: ${assp_args="%%ASSP_HOME%%"}
 
 run_rc_command "$1"
