@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.414 2009/05/30 14:16:05 avl Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.415 2009/07/20 15:18:38 yzlin Exp $
 #
 # FreeBSD Project Committers
 #
@@ -31,6 +31,7 @@
  34.60,		135.51,		"yoichi"			# Osaka, Osaka, Japan
  35.0,		135.47,		"maho"				# Kyoto, Kyoto, Japan
  34.47,		135.26,		"matusita"			# Ikeda, Osaka, Japan
+ 48.24138,	135.07563,	"fluffy"			# Khabarovsk, Russia
  50.260369,	127.554703,	"avl"				# Blagoveshchensk, Russia
  37.56,		126.98,		"cjh,yongari"			# Seoul, South Korea
  37.56587,	126.93098,	"perky"				# Seoul, South Korea
