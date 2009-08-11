@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/irc/irssi-scripts/pkg-plist,v 1.4 2009/05/14 09:11:04 jadawin Exp $
+@comment $FreeBSD: ports/irc/irssi-scripts/pkg-plist,v 1.5 2009/05/27 08:45:09 jadawin Exp $
 share/irssi/scripts/8-ball.pl
 share/irssi/scripts/UNIBG-autoident.pl
 share/irssi/scripts/accent.pl
@@ -143,7 +143,6 @@ share/irssi/scripts/ignoreoc.pl
 share/irssi/scripts/il.pl
 share/irssi/scripts/imdb.pl
 share/irssi/scripts/invitejoin.pl
-share/irssi/scripts/ipkb.pl
 share/irssi/scripts/ipupdate.pl
 share/irssi/scripts/irccomplete.pl
 share/irssi/scripts/ircgallery.pl
