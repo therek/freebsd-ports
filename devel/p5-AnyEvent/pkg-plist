@@ -1,11 +1,14 @@
-@comment $FreeBSD: ports/devel/p5-AnyEvent/pkg-plist,v 1.5 2008/11/11 02:02:13 clsung Exp $
+@comment $FreeBSD: ports/devel/p5-AnyEvent/pkg-plist,v 1.6 2009/07/29 02:11:31 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/AnyEvent/.packlist
+%%SITE_PERL%%/AE.pm
 %%SITE_PERL%%/AnyEvent.pm
+%%SITE_PERL%%/AnyEvent/Debug.pm
 %%SITE_PERL%%/AnyEvent/DNS.pm
 %%SITE_PERL%%/AnyEvent/Handle.pm
 %%SITE_PERL%%/AnyEvent/Impl/EV.pm
 %%SITE_PERL%%/AnyEvent/Impl/Event.pm
 %%SITE_PERL%%/AnyEvent/Impl/EventLib.pm
+%%SITE_PERL%%/AnyEvent/Impl/Irssi.pm
 %%SITE_PERL%%/AnyEvent/Impl/Glib.pm
 %%SITE_PERL%%/AnyEvent/Impl/POE.pm
 %%SITE_PERL%%/AnyEvent/Impl/Perl.pm
