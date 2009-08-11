@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2004 2009/08/07 20:06:23 skreuzer Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2005 2009/08/07 21:24:48 skreuzer Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,7 +39,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>joomla15</name>
-	<range><lt>1.5.15</lt></range>
+	<range><lt>1.5.14</lt></range>
       </package>
     </affects>
     <description>
@@ -59,7 +59,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2009-07-22</discovery>
       <entry>2009-08-07</entry>
-      <modified>2009-08-07</modified>
+      <modified>2009-08-11</modified>
     </dates>
   </vuln>
 
