@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2007 2009/08/11 14:54:15 amdmi3 Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2008 2009/08/12 14:57:25 skreuzer Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -44,6 +44,10 @@ Note:  Please add new entries to the beginning of this file.
       <package>
 	<name>de-wordpress</name>
 	<range><lt>2.8.4</lt></range>
+      </package>
+      <package>
+	<name>wordpress-mu</name>
+	<range><lt>2.8.4a</lt></range>
       </package>
     </affects>
     <description>
@@ -65,6 +69,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2009-08-10</discovery>
       <entry>2009-08-12</entry>
+      <modified>2009-08-13</modified>
     </dates>
   </vuln>
 
@@ -73,7 +78,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>fetchmail</name>
-	<range><le>6.3.10</le></range>
+	<range><lt>6.3.11</lt></range>
       </package>
     </affects>
     <description>
@@ -101,6 +106,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2009-08-06</discovery>
       <entry>2009-08-11</entry>
+      <modified>2009-08-13</modified>
     </dates>
   </vuln>
 
