@@ -10,6 +10,17 @@ in the release notes and/or placed into UPDATING.
 
 All ports committers are allowed to commit to this file.
 
+20090812:
+AUTHOR: portmgr@FreeBSD.org
+  * sourceforge.net has changed their URL layout to be more
+    flexible for their users.  A new bsd.sites.mk macro SFP
+    has been added for projects that moved from
+    http://${mirror}/sourceforge/%SUBDIR%/
+    to
+    http://${mirror}/project/%SUBDIR%/
+    Note that %SUBDIR% is now highly individual for each
+    project and might need changing as well.
+
 20090521:
 AUTHOR: portmgr@FreeBSD.org
 
@@ -1507,4 +1518,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.90 2009/05/17 07:53:18 pgollucci Exp $
+$FreeBSD: ports/CHANGES,v 1.91 2009/05/21 15:10:37 pav Exp $
