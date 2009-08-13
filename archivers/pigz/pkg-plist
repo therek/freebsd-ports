@@ -1,4 +1,5 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/archivers/pigz/pkg-plist,v 1.1 2009/02/08 10:36:49 lwhsu Exp $
 bin/pigz
 bin/pigzn
 bin/pigzt
+bin/unpigz
