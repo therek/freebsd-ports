@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.scons.mk,v 1.11 2009/05/15 12:01:39 pav Exp $
+# $FreeBSD: ports/Mk/bsd.scons.mk,v 1.12 2009/08/02 08:08:14 linimon Exp $
 #
 # bsd.scons.mk - Python-based SCons build system interface.
 # Author: Alexander Botero-Lowry <alexbl@FreeBSD.org>
@@ -45,11 +45,11 @@ CPPPATH?=	${LOCALBASE}/include
 # same for any scons port to scons. Things like CCFLAGS, and LINKFLAGS
 # go here.
 #
-# SCONS_ARG is where you pass port specific scons flags to the scons
-# enviornment.
+# SCONS_ARGS is where you pass port specific scons flags to the scons
+# environment.
 #
 # SCONS_BUILDENV is where you pass variables you want to be in the
-# System Enviornment instead of the SCons Enviornment.
+# System Environment instead of the SCons Environment.
 #
 # SCONS_TARGET is the same as MAKE_TARGET it is passed as the last
 # argument to scons.
