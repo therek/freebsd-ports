@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+200908015:
+  AFFECTS: users of mail/dovecot
+  AUTHOR: wxs@FreeBSD.org
+
+  Dovecot has been updated to 1.2.3. The configuration file has
+  changed significantly. Please see http://wiki.dovecot.org/Upgrading/1.2
+  for details of what this means.
+
 20090804:
   AFFECTS: users of multimedia/phonon*, x11/kdebase4*, deskutils/kdepim4
   AUTHOR: kde@FreeBSD.org
@@ -8389,4 +8397,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.847 2009/08/09 16:23:44 makc Exp $
+$FreeBSD: ports/UPDATING,v 1.848 2009/08/10 22:41:23 danfe Exp $
