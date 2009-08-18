@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/devel/p5-Data-ParseBinary/pkg-plist,v 1.1 2008/12/29 06:57:43 az Exp $
+@comment $FreeBSD: ports/devel/p5-Data-ParseBinary/pkg-plist,v 1.2 2008/12/29 07:03:03 az Exp $
 %%SITE_PERL%%/Data/ParseBinary/Data/Cap.pm
+%%SITE_PERL%%/Data/ParseBinary/Data/Netflow.pm
 %%SITE_PERL%%/Data/ParseBinary/Executable/ELF32.pm
 %%SITE_PERL%%/Data/ParseBinary/Executable/PE32.pm
 %%SITE_PERL%%/Data/ParseBinary/FileSystem/MBR.pm
