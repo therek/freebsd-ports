@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.90 2009/08/16 12:03:41 erwin Exp $
+# $FreeBSD: ports/UIDs,v 1.91 2009/08/17 13:27:19 sem Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53::0:0:Bind Sandbox:/:/usr/sbin/nologin
@@ -84,6 +84,7 @@ agk:*:172:172::0:0:AquaGateKeeper:/nonexistent:/nonexistent
 polipo:*:173:173::0:0:polipo web cache:/nonexistent:/usr/sbin/nologin
 flowtools:*:174:174::0:0:Flow-tools collector pseudo-user:/nonexistent:/usr/sbin/nologin
 nagios:*:181:181::0:0:Nagios pseudo-user:/var/spool/nagios:/usr/sbin/nologin
+noc:*:182:182:NOC pseudo-user:/usr/local/noc:/bin/sh
 moinmoin:*:192:192::0:0:MoinMoin User:/nonexistent:/usr/sbin/nologin
 cups:*:193:193::0:0:Cups Owner:/nonexistent:/usr/sbin/nologin
 sympa:*:200:200::0:0:Sympa Owner:/nonexistent:/usr/sbin/nologin
