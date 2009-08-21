@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-IO-Async/pkg-plist,v 1.6 2008/08/27 03:50:01 clsung Exp $
+@comment $FreeBSD: ports/devel/p5-IO-Async/pkg-plist,v 1.7 2009/05/28 04:12:20 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/IO/Async/.packlist
 %%SITE_PERL%%/IO/Async.pm
 %%SITE_PERL%%/IO/Async/ChildManager.pm
@@ -12,6 +12,7 @@
 %%SITE_PERL%%/IO/Async/Listener.pm
 %%SITE_PERL%%/IO/Async/Loop.pm
 %%SITE_PERL%%/IO/Async/Loop/IO_Poll.pm
+%%SITE_PERL%%/IO/Async/Loop/Poll.pm
 %%SITE_PERL%%/IO/Async/Loop/Select.pm
 %%SITE_PERL%%/IO/Async/MergePoint.pm
 %%SITE_PERL%%/IO/Async/Notifier.pm
