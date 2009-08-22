@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.479 2009/08/12 19:46:41 erwin Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.480 2009/08/18 18:36:47 miwi Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1172,13 +1172,6 @@ MASTER_SITE_SAVANNAH+= \
 .if !defined(IGNORE_MASTER_SITE_SOURCEFORGE)
 .for mirror in garr superb-east nchc kent easynews ufpr mesh heanet
 MASTER_SITE_SOURCEFORGE+= \
-	http://${mirror}.dl.sourceforge.net/sourceforge/%SUBDIR%/
-.endfor
-.endif
-
-.if !defined(IGNORE_MASTER_SITE_SOURCEFORGE_PROJECT)
-.for mirror in garr superb-east nchc kent easynews ufpr mesh heanet
-MASTER_SITE_SOURCEFORGE_PROJECT+= \
 	http://${mirror}.dl.sourceforge.net/project/%SUBDIR%/
 .endfor
 .endif
@@ -1190,8 +1183,8 @@ MASTER_SITE_SOURCEFORGE_PROJECT+= \
 MASTER_SITE_SOURCEFORGE_EXTENDED+= \
 	http://${mirror}.dl.sourceforge.net/sourceforge/%SUBDIR%/
 .endfor
-MASTER_SITE_SOURCEFORGE_EXTENDED+= \
-	${MASTER_SITE_SOURCEFORGE}
+#MASTER_SITE_SOURCEFORGE_EXTENDED+= \
+#	${MASTER_SITE_SOURCEFORGE}
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_SOURCEFORGE_JP)
@@ -1498,7 +1491,7 @@ MASTER_SITE_KERNEL_ORG+= \
 
 # Macro magic
 
-MASTER_SITES_ABBREVS=	CPAN:PERL_CPAN SF:SOURCEFORGE SFP:SOURCEFORGE_PROJECT SFE:SOURCEFORGE_EXTENDED \
+MASTER_SITES_ABBREVS=	CPAN:PERL_CPAN SF:SOURCEFORGE SFE:SOURCEFORGE_EXTENDED \
 			SFJP:SOURCEFORGE_JP RF:RUBYFORGE
 MASTER_SITES_SUBDIRS=	\
 			APACHE_JAKARTA:${PORTNAME:S,-,/,}/source \
@@ -1518,8 +1511,7 @@ MASTER_SITES_SUBDIRS=	\
 			RUBY_DBI:${RUBY_DBI_MASTER_SITE_SUBDIR} \
 			RUBY_GNOME:${RUBY_GNOME_MASTER_SITE_SUBDIR} \
 			SAVANNAH:${PORTNAME:L} \
-			SOURCEFORGE:${PORTNAME:L} \
-			SOURCEFORGE_PROJECT:${PORTNAME:L} \
+			SOURCEFORGE:${PORTNAME:L}/${PORTNAME:L}/${PORTVERSION} \
 			SOURCEFORGE_EXTENDED:${PORTNAME:L} \
 			RUBYFORGE:${PORTNAME:L}
 
