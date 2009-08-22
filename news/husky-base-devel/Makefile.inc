@@ -1,11 +1,9 @@
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/husky-base-devel/Makefile.inc,v 1.1 2005/10/26 15:43:45 garga Exp $
 #
 
 PKGNAMEPREFIX=	husky-
 PKGNAMESUFFIX=	-devel
-MASTER_SITES?=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=	husky
 DIST_SUBDIR=	husky
 
 WRKSRC?=	${WRKDIR}/${PORTNAME}

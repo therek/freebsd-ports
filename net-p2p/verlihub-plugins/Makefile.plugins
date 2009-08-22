@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net-p2p/verlihub-plugins/Makefile.plugins,v 1.2 2007/07/09 08:19:58 rafan Exp $
+# $FreeBSD: ports/net-p2p/verlihub-plugins/Makefile.plugins,v 1.3 2007/07/14 14:59:22 rafan Exp $
 
 # common bits for verlihub plugins
 
@@ -6,8 +6,7 @@
 PLUGIN_NAME?=	${PORTNAME}
 
 PKGNAMEPREFIX=	verlihub-plugins-
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=	verlihub
+MASTER_SITES=	SF/verlihub/OldFiles
 DISTNAME=	${PLUGIN_NAME}
 
 COMMENT?=	${PLUGIN_DESC} plugin for the VerliHub - a Direct Connect protocol server
