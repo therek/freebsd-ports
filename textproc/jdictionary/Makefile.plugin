@@ -2,11 +2,9 @@
 # Date created:				15.12.2004
 # Whom:					hq@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/jdictionary/Makefile.plugin,v 1.1 2004/12/19 03:34:55 hq Exp $
 #
 
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=	jdictionary
 EXTRACT_SUFX=	#
 
 MAINTAINER?=	janos.mohacsi@bsd.hu
