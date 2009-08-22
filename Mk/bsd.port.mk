@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.624 2009/06/26 17:03:48 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.625 2009/08/03 15:36:58 miwi Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2416,7 +2416,7 @@ _PATCH_SITES_DEFAULT?=
 # Organize _{MASTER,PATCH}_SITES_{DEFAULT,[^/:]+} according to grouping
 # rules (:something)
 .for _S in ${MASTER_SITES}
-_S_TEMP=	${_S:S/^${_S:C@/:[^/:]+$@/@}//:S/^://}
+_S_TEMP=	${_S:S/^${_S:C@/?:[^/:]+$@/@}//:S/^://}
 .	if !empty(_S_TEMP)
 .		for _group in ${_S_TEMP:S/,/ /g}
 _G_TEMP=	${_group}
