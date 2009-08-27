@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1971 2009/08/23 19:46:33 gerald Exp $
+# $FreeBSD: ports/MOVED,v 1.1972 2009/08/23 19:55:07 gerald Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4146,3 +4146,4 @@ lang/gcc42-withgcjawt|lang/gcc42|2009-08-19|Not needed any longer, still an opti
 math/octave-forge-windows||2009-08-23|Abandoned upstream
 math/freefem++||2009-08-23|Has expired: unmaintained and consistently unportable
 math/it++||2009-08-23|Has expired: unmaintained and consistently unportable
+graphics/rubygem-rmagick||2009-08-27|Duplicate of graphics/ruby-rmagick
