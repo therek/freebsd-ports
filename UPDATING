@@ -5,6 +5,14 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20090828:
+  AFFECTS: users of mail/dovecot and mail/dovecot-sieve
+  AUTHOR: yds@CoolRat.org
+
+  dovecot-sieve has been updated to a new implementation compatible with
+  dovecot 1.2.x. For details of what this means please see:
+  http://wiki.dovecot.org/LDA/Sieve/Dovecot#Migration_from_CMUSieve
+
 20090827:
   AFFECTS: users of www/mediawiki
   AUTHOR: miwi@FreeBSD.org
@@ -8423,4 +8431,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.851 2009/08/18 05:49:01 novel Exp $
+$FreeBSD: ports/UPDATING,v 1.852 2009/08/27 08:55:14 miwi Exp $
