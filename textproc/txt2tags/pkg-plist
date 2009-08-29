@@ -1,10 +1,4 @@
-@comment $FreeBSD: ports/textproc/txt2tags/pkg-plist,v 1.4 2006/12/27 01:32:52 rafan Exp $
 bin/txt2tags
-%%PORTDOCS%%%%DOCSDIR%%/ChangeLog
-%%PORTDOCS%%%%DOCSDIR%%/README
-%%PORTDOCS%%%%DOCSDIR%%/TODO
-%%PORTDOCS%%%%DOCSDIR%%/userguide.pdf
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%EXAMPLESDIR%%/css/color.css
 %%EXAMPLESDIR%%/css/color.html
 %%EXAMPLESDIR%%/css/modern.css
