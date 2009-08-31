@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.481 2009/08/22 00:11:04 amdmi3 Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.482 2009/08/24 05:25:17 knu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -741,6 +741,13 @@ MASTER_SITE_KDE+=	\
 	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.kde.org/pub/kde/%SUBDIR%/ \
 	http://ftp.gwdg.de/pub/x11/kde/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/kde/&,}
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_LOGILAB)
+MASTER_SITE_LOGILAB+=	\
+	http://ftp.logilab.org/pub/%SUBDIR%/ \
+	ftp://ftp.logilab.org/pub/%SUBDIR%/ \
+	ftp://ftp.logilab.fr/pub/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_MOZDEV)
@@ -1503,6 +1510,7 @@ MASTER_SITES_SUBDIRS=	\
 			GNOME:sources/${PORTNAME}/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/} \
 			GNU:${PORTNAME} \
 			HORDE:${PORTNAME} \
+			LOGILAB:${PORTNAME} \
 			MOZDEV:${PORTNAME:L} \
 			PERL_CPAN:${PORTNAME:C/-.*//} \
 			PNET:${PNET_MASTER_SITE_SUBDIR} \
