@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.29 2009/08/03 21:53:13 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.30 2009/08/31 11:46:57 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -63,7 +63,7 @@ WEB_AUTH=			nvu
 _LINUX_APPS_ALL=	allegro alsalib arts aspell atk cairo curl dri esound expat fontconfig \
 					freealut gdkpixbuf gtk gtk2 hicontheme imlib jpeg libaudiofile \
 					libg2c libglade libglade2 libglu libmng libogg libsigcpp20 libtheora \
-					libvorbis libxml libxml2 mikmod openal openmotif openssl pango png png10 qt33 \
+					libvorbis libxml libxml2 mikmod naslibs openal openmotif openssl pango png png10 qt33 \
 					scimgtk scimlibs sdl12 sdlimage sdlmixer tiff xorglibs ucl ungif upx webauth
 
 # 2.4.2 components
@@ -333,6 +333,13 @@ mikmod_f8_FILE=		${mikmod_FILE}
 mikmod_f10_FILE=	${LINUXBASE}/usr/lib/libmikmod.so.3.0.0
 mikmod_DETECT=		${mikmod${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 mikmod_PORT=		${PORTSDIR}/audio/linux${LINUX_DIST_SUFFIX}-mikmod
+
+naslibs_FILE=		${LINUXBASE}/usr/lib/libaudio.so.2
+naslibs_f8_FILE=	${naslibs_FILE}
+naslibs_f10_FILE=	${naslibs_FILE}
+naslibs_DETECT=		${naslibs${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
+naslibs_PORT=		${PORTSDIR}/audio/linux${LINUX_DIST_SUFFIX}-nas-libs
+naslibs_DEPENDS=	xorglibs
 
 # no openldap_FILE, openldap_f8_FILE
 openldap_f10_FILE=	${LINUXBASE}/usr/lib/libldap-2.4.so.2.2.0
