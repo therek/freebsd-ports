@@ -21,9 +21,9 @@
 #					Default: ${PREFIX}
 #
 #
-# $FreeBSD: ports/Mk/bsd.cmake.mk,v 1.4 2009/02/08 20:23:20 miwi Exp $
+# $FreeBSD$
 
-CMAKE_MAINTAINER=  kde@FreeBSD.org
+CMAKE_MAINTAINER=	kde@FreeBSD.org
 
 #
 # CMAKE_BIN is the location where the cmake port installs the cmake
