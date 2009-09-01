@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1972 2009/08/23 19:55:07 gerald Exp $
+# $FreeBSD: ports/MOVED,v 1.1973 2009/08/27 12:17:03 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3539,7 +3539,7 @@ chinese/php_doc-hk||2008-08-04|Manual in this language was removed
 chinese/php_doc-tw||2008-08-04|Manual in this language was removed
 chinese/php_doc-zh||2008-08-04|Manual in this language was removed
 hungarian/php_doc||2008-08-04|Manual in this language was removed
-korean/php_doc||2008-08-04|Manual in this language was removed
+korean/php_doc|korean/php_doc|2008-08-04|Manual in this language was (temporary) removed
 mbone/rtpmon||2008-08-16|Abandoned upstream and needs gcc32 which is going to be removed
 games/ssc||2008-08-16|Abandoned upstream and needs gcc32 which is going to be removed
 mail/mutt-ng||2008-08-18|Has expired: Abandonware by upstream maintainers. Use mail/mutt-devel
