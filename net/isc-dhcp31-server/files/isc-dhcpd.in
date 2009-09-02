@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/isc-dhcp31-server/files/isc-dhcpd.in,v 1.6 2009/07/27 23:30:43 jpaetzel Exp $
+# $FreeBSD: ports/net/isc-dhcp31-server/files/isc-dhcpd.in,v 1.7 2009/07/30 00:16:51 jpaetzel Exp $
 #
 # PROVIDE: dhcpd
 # REQUIRE: DAEMON
@@ -706,9 +706,8 @@ dhcpd_checkconfig ()
         setup_flags
 	rc_flags_mod="$rc_flags"
         # Eliminate '-q' flag if it is present
-	echo $rc_flags
 	case "$rc_flags" in
-	*-q*)	rc_flags_mod=`echo "$(rc_flags)" | sed -Ee 's/(^-q | -q | -q$)'//` ;;
+	*-q*)	rc_flags_mod=`echo "${rc_flags}" | sed -Ee 's/(^-q | -q | -q$)//'` ;;
 	esac
         if ! ${command} -t -q ${rc_flags_mod}; then
                 err 1 "`${command} -t ${rc_flags_mod}` Configuration file sanity check failed"
