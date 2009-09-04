@@ -1,9 +1,9 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.60 2009/06/25 08:41:17 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.61 2009/07/25 02:22:27 maho Exp $
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.60 2009/06/25 08:41:17 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.61 2009/07/25 02:22:27 maho Exp $
 
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
 
@@ -88,11 +88,6 @@ pre-fetch:
 	@${ECHO}
 	@${ECHO} "You can compile OOo to use Qt/KDE vclplug with"
 	@${ECHO} "make -DWITH_KDE"
-.endif
-.if !defined(WITH_GPC)
-	@${ECHO}
-	@${ECHO} "You can compile OOo with gpc instead of libart by"
-	@${ECHO} "make -DWITH_GPC"
 .endif
 .if !defined(WITH_EVOLUTION2)
 	@${ECHO}
