@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2018 2009/09/04 05:59:39 itetcu Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2019 2009/09/04 07:12:23 jadawin Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -48,7 +48,6 @@ Note:  Please add new entries to the beginning of this file.
          <p>Opera reports several security issues related to the user
          interface:</p>
          <blockquote cite="http://www.opera.com/docs/changelogs/freebsd/1000/">
-           <p>
              <ul>
                <li>Issue where sites using revoked intermediate certificates might be shown as secure</li>
                <li>Issue where the collapsed address bar didn't show the current domain</li>
@@ -56,7 +55,6 @@ Note:  Please add new entries to the beginning of this file.
                <li>Some IDNA characters not correctly displaying in the address bar</li>
                <li>Issue where Opera accepts nulls and invalid wild-cards in certificates</li>
              </ul>
-           </p>
          </blockquote>
        </body>
      </description>
