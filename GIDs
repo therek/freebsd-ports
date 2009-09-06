@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.78 2009/08/16 12:03:41 erwin Exp $
+# $FreeBSD: ports/GIDs,v 1.79 2009/08/18 10:48:34 bsam Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -121,6 +121,7 @@ messagebus:*:556:
 pulse-rt:*:557:
 avahi:*:558:
 tacacs:*:559:
+haldaemon:*:560:
 distcc:*:561:
 polkit:*:562:
 pulse:*:563:
