@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/net/openldap24-server/files/manpages,v 1.21 2009/04/06 01:59:57 delphij Exp $
+# $FreeBSD: ports/net/openldap24-server/files/manpages,v 1.22 2009/07/20 08:13:12 delphij Exp $
 #
 
 MAN1+=	ldapcompare.1 \
@@ -231,6 +231,7 @@ MAN5+=	ldap.conf.5 \
 	slapo-retcode.5 \
 	slapo-rwm.5 \
 	slapo-syncprov.5 \
+	slapo-sssvlv.5 \
 	slapo-translucent.5 \
 	slapo-unique.5 \
 	slapo-valsort.5 
