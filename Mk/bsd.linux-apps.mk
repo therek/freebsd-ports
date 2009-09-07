@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.30 2009/08/31 11:46:57 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.31 2009/09/01 11:41:42 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -388,7 +388,7 @@ pango_DEPENDS=		cairo expat fontconfig xorglibs
 
 png_FILE=			${LINUXBASE}/usr/lib/libpng.so.3.1.2.8
 png_f8_FILE=		${LINUXBASE}/usr/lib/libpng.so.3.22.0
-png_f10_FILE=		${LINUXBASE}/usr/lib/libpng.so.3.35.0
+png_f10_FILE=		${LINUXBASE}/usr/lib/libpng.so.3.37.0
 png_DETECT=			${png${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 png_PORT=			${PORTSDIR}/graphics/linux${LINUX_DIST_SUFFIX}-png
 
