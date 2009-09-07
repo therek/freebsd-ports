@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap24-server/files/slapd.sh.in,v 1.9 2009/07/15 16:55:52 dougb Exp $
+# $FreeBSD: ports/net/openldap24-server/files/slapd.sh.in,v 1.10 2009/09/07 09:46:19 delphij Exp $
 #
 
 # PROVIDE: slapd
@@ -63,7 +63,7 @@ if checkyesno slapd_cn_config; then
 else
   required_dirs="%%LDAP_RUN_DIR%%"
   required_files="%%PREFIX%%/etc/openldap/slapd.conf"
-  DATABASEDIR=`awk '$1 == "directory" { print $2 }' "%%PREFIX%%etc/openldap/slapd.conf" 2>&1 /dev/null`
+  DATABASEDIR=`awk '$1 == "directory" { print $2 }' "%%PREFIX%%/etc/openldap/slapd.conf" 2>&1 /dev/null`
 fi
 
 start_precmd=start_precmd
