@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1977 2009/09/05 15:55:53 dhn Exp $
+# $FreeBSD: ports/MOVED,v 1.1978 2009/09/08 12:45:21 danfe Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4158,3 +4158,4 @@ audio/slimserver-sqlplaylist|audio/squeezecenter-sqlplaylist|2009-09-04|SlimServ
 audio/slimserver-superdatetime|audio/squeezecenter-superdatetime|2009-09-4|SlimServer has been superseded by SqueezeCenter
 audio/slimserver-trackstat|audio/squeezecenter-trackstat|2009-09-4|SlimServer has been superseded by SqueezeCenter
 www/conkeror|www/xpi-conkeror|2009-09-05|Please use www/xpi-conkeror
+www/nvu|www/kompozer|2009-09-10|Abandoned upstream since 2005
