@@ -28,11 +28,38 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2022 2009/09/04 08:18:06 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2023 2009/09/08 23:24:30 wxs Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
+
+  <vuln vid="012b495c-9d51-11de-8d20-001bd3385381">
+    <topic>cyrus-imapd -- Potential buffer overflow in Sieve</topic>
+    <affects>
+      <package>
+	<name>cyrus-imapd</name>
+	<range><gt>2.2.0</gt><lt>2.2.13_6</lt></range>
+	<range><gt>2.3.0</gt><lt>2.3.14_2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Cyrus IMAP Server ChangeLog states:</p>
+	<blockquote cite="http://cyrusimap.web.cmu.edu/imapd/changes.html">
+	  <p>Fixed CERT VU#336053 - Potential buffer overflow in Sieve.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <url>http://www.kb.cert.org/vuls/id/336053</url>
+      <url>http://www.debian.org/security/2009/dsa-1881</url>
+    </references>
+    <dates>
+      <discovery>2009-09-02</discovery>
+      <entry>2005-09-09</entry>
+    </dates>
+  </vuln>
 
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
   <vuln vid="24aa9970-9ccd-11de-af10-000c29a67389">
