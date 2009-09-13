@@ -5,6 +5,13 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20090912:
+  AFFECTS: users of ports that have set USE_FORTRAN=yes
+  AUTHOR: gerald@FreeBSD.org
+
+  Ports that are built using the Fortran frontend of GCC (aka gfortran)
+  will now use lang/gcc44 as the default compiler.
+
 20090911:
   AFFECTS: users of lang/perl5.10
   AUTHOR: skv@FreeBSD.org
@@ -8473,4 +8480,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.856 2009/09/10 17:12:18 pgollucci Exp $
+$FreeBSD: ports/UPDATING,v 1.857 2009/09/11 11:23:30 skv Exp $
