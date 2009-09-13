@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/irc/bitlbee/files/bitlbee.in,v 1.2 2008/05/19 16:10:14 brix Exp $
+# $FreeBSD: ports/irc/bitlbee/files/bitlbee.in,v 1.3 2009/07/15 16:55:43 dougb Exp $
 #
 # PROVIDE: bitlbee
 # REQUIRE: DAEMON
@@ -28,7 +28,7 @@ start_cmd="bitlbee_start"
 bitlbee_start()
 {
 	echo "Starting ${name}."
-	su -m ${bitlbee_user} -c "${command} -D -c ${bitlbee_config} ${bitlbee_flags}"
+	${command} -D -u ${bitlbee_user} -c ${bitlbee_config} ${bitlbee_flags}
 }
 
 run_rc_command "$1"
