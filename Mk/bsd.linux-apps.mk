@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.31 2009/09/01 11:41:42 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.32 2009/09/07 20:08:36 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -266,8 +266,9 @@ libglade2_f10_FILE=	${LINUXBASE}/usr/lib/libglade-2.0.so.0.0.7
 libglade2_DETECT=	${libglade2${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 libglade2_PORT=		${PORTSDIR}/devel/linux${LINUX_DIST_SUFFIX}-libglade2
 
-libglu_FILE=		${LINUXBASE}/usr/X11R6/lib/libGLU.so.1.3
-libglu_f8_FILE=		${LINUXBASE}/usr/lib/libGLU.so.1.3.070002
+libglu_FILE=		${LINUXBASE}/usr/X11R6/lib/libGLU.so.1
+libglu_f8_FILE=		${LINUXBASE}/usr/lib/libGLU.so.1
+libglu_f10_FILE=	${LINUXBASE}/usr/lib/libGLU.so.1
 libglu_DETECT=		${libglu${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 libglu_PORT=		${PORTSDIR}/graphics/linux${LINUX_DIST_SUFFIX}-libGLU
 
