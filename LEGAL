@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.608 2009/07/19 18:27:18 shaun Exp $
+# $FreeBSD: ports/LEGAL,v 1.609 2009/08/03 19:17:33 bsam Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -733,3 +733,4 @@ festlex-ogi		audio/festlex-ogi	No commercial use
 apache2/mod_h264_streaming-*	www/mod_h264_streaming	No commercial use
 pcsv*i3fb.tar.gz	lang/petite-chez	Must acknowledge license
 tarsnap-*		sysutils/tarsnap	Redistribution restricted
+linuxsampler-*		audio/linuxsampler	Commercial use is prohibited
