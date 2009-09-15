@@ -1,7 +1,7 @@
 #
 # KNOBS -- A list of popular knobs and their descriptions
 #
-# $FreeBSD: ports/KNOBS,v 1.33 2009/05/17 07:49:09 pgollucci Exp $
+# $FreeBSD: ports/KNOBS,v 1.34 2009/08/16 11:17:09 danfe Exp $
 #
 # Rules for adding knobs:
 #
@@ -83,6 +83,7 @@ NCURSES			Adds ncurses console graphics support
 NHC98			Prefer/use nhc98 Haskell compiler
 NIS			Support for NIS/YP
 NLS			Native Language Support via gettext utilities
+NVIDIA_GL		Use libGL provided by NVidia binary drivers
 OGG			OGG multimedia container format
 OPENAL			Adds OpenAL support
 OPENGL			Adds OpenGL support
