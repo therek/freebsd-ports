@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# $FreeBSD: ports/Tools/scripts/bump_revision.pl,v 1.3 2008/07/06 02:00:52 edwin Exp $
+# $FreeBSD: ports/Tools/scripts/bump_revision.pl,v 1.4 2009/01/07 21:33:17 gerald Exp $
 
 #
 # MAINTAINER=	edwin@freebsd.org
@@ -46,7 +46,7 @@ sub bumpMakefile {
 
 	foreach my $line (@lines) {
 	    last if ($line =~ /^MAINTAINER/);
-	    $revision += $1 if ($line =~ /PORTREVISION??=[ \t]*(\d+)$/);
+	    $revision += $1 if ($line =~ /PORTREVISION\??=[ \t]*(\d+)$/);
 	}
 
 	my $printedrev = 0;
