@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.423 2009/09/15 13:41:32 tota Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.424 2009/09/15 14:11:32 nwhitehorn Exp $
 #
 # FreeBSD Project Committers
 #
@@ -54,6 +54,7 @@
  48.805,	44.586,		"den"				# Volgograd, Russia
  55.740978,	37.830851,	"sem"				# Moscow, Russia
  55.795636,	37.691646,	"marck"				# Moscow, Russia
+ 55.869236,	37.680909,	"amdmi3"			# Moscow, Russia
  55.709525,	37.654288,	"glebius"			# Moscow, Russia
  55.783753,	37.631789,	"osa"				# Moscow, Russia
  55.8,		37.6,		"ache,bsam,demon,maxim,rik,skv,stas,vsevolod,yar"	# Moscow, Russia
