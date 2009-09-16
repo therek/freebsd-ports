@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1982 2009/09/12 03:13:29 tota Exp $
+# $FreeBSD: ports/MOVED,v 1.1983 2009/09/13 18:40:40 gerald Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4161,3 +4161,4 @@ www/nvu|www/kompozer|2009-09-10|Abandoned upstream since 2005
 multimedia/phonon-gstreamer|multimedia/qt4-phonon-gst|2009-09-11|Superseded by multimedia/qt4-phonon-gst
 multimedia/phonon|multimedia/qt4-phonon|2009-09-11|Superseded by multimedia/qt4-phonon
 editors/bed||2009-09-13|Removed: marked IGNORE for more than two years, unmaintained
+devel/eric||2009-09-16|Removed: obsoleted by devel/eric4
