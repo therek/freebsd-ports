@@ -12,7 +12,7 @@ you update your ports collection, before attempting any port upgrades.
 
   The default Gecko provider has been changed from www/firefox to
   www/libxul.  Firefox 2.x is now forbidden for security reasons, and
-  libxul is the new, stable Geck provider.  Libxul uses the same Gecko
+  libxul is the new, stable Gecko provider.  Libxul uses the same Gecko
   engine as Firefox 3.0.x.
 
   Some ports may fail to upgrade or run when both www/firefox and libxul
@@ -8514,4 +8514,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.860 2009/09/15 13:26:32 pav Exp $
+$FreeBSD: ports/UPDATING,v 1.861 2009/09/17 18:25:00 marcus Exp $
