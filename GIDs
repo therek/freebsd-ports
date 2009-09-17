@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.80 2009/09/06 21:16:04 flz Exp $
+# $FreeBSD: ports/GIDs,v 1.81 2009/09/15 21:09:55 nivit Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -68,6 +68,7 @@ freeradius:*:133:
 undernet:*:134:
 rabbitmq:*:135:
 dhcpd:*:136:
+ladvd:*:142:
 dovecot:*:143:
 rbldns:*:153:
 sfs:*:171:
