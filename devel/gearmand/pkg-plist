@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/gearmand/pkg-plist,v 1.4 2009/07/01 08:58:20 miwi Exp $
+@comment $FreeBSD: ports/devel/gearmand/pkg-plist,v 1.5 2009/07/04 23:21:05 miwi Exp $
 bin/gearman
 include/libgearman/client.h
 include/libgearman/conf.h
@@ -12,6 +12,8 @@ include/libgearman/gearmand_thread.h
 include/libgearman/job.h
 include/libgearman/packet.h
 include/libgearman/protocol_http.h
+%%PG%%include/libgearman/queue_libpq.h
+%%SQLITE%%include/libgearman/queue_libsqlite3.h
 include/libgearman/server.h
 include/libgearman/server_client.h
 include/libgearman/server_con.h
