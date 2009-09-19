@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/noc/files/noc.sh.in,v 1.1 2009/08/18 09:07:12 bsam Exp $
 #
 
 # PROVIDE: noc
@@ -29,6 +29,8 @@ load_rc_config $name
 : ${noc_enable="NO"}
 : ${noc_config="%%NOCDIR%%/etc/noc-launcher.conf"}
 : ${noc_flags="-c ${noc_config}"}
+
+export PATH=$PATH:%%PYTHONBASE%%/bin
 
 noc_chdir=%%NOCDIR%%
 command=%%NOCDIR%%/scripts/noc-launcher.py
