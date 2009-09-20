@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/spamd/files/obspamd.in,v 1.4 2009/07/23 12:52:44 wxs Exp $
+# $FreeBSD: ports/mail/spamd/files/obspamd.in,v 1.5 2009/09/17 12:41:07 pav Exp $
 #
 
 # PROVIDE: obspamd
@@ -56,7 +56,7 @@ obspamd_postcmd()
 	if [ -x %%PREFIX%%/sbin/spamd-setup ]; then
 		if [ -r %%PREFIX%%/etc/spamd/spamd.conf ]; then
 			echo "${obspamd_flags}" | egrep "(^\-b| \-b)" 2>&1 > /dev/null
-			if [ $? ]; then
+			if [ $? -eq 0 ]; then
 				%%PREFIX%%/sbin/spamd-setup -bD
 			else
 				%%PREFIX%%/sbin/spamd-setup -D
