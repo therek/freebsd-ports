@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1985 2009/09/16 12:59:00 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.1986 2009/09/21 14:27:36 naddy Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4165,4 +4165,5 @@ devel/eric||2009-09-16|Removed: obsoleted by devel/eric4
 devel/p5-Algorithm-MDiff||2009-09-16|Has expired: the module was removed from CPAN
 devel/p5-Data-Postponed||2009-09-16|Has expired: the module was removed from CPAN
 net/asterisk12-addons||2009-09-16|Has expired: does not build
+archivers/lzmautils|archivers/xz|2009-09-21|Project was renamed
 archivers/lzmautils-devel|archivers/xz|2009-09-21|Project was renamed
