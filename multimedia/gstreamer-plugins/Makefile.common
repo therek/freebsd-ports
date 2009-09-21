@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.89 2009/07/06 21:25:54 naddy Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.90 2009/07/18 11:11:12 dinoex Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.68 2008/03/21 04:14:19 ahze Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -206,7 +206,8 @@ gst_dv_PLIST_FILES=	${GST_LIB_DIR}/libgstdv.la \
 
 # dvd
 gst_dvd_EXTRA_LIBS+=	-ldvdnav
-gst_dvd_LIB_DEPENDS+=	dvdnav.4:${PORTSDIR}/multimedia/libdvdnav
+gst_dvd_LIB_DEPENDS+=	dvdnav.4:${PORTSDIR}/multimedia/libdvdnav \
+			dvdread.4:${PORTSDIR}/multimedia/libdvdread
 gst_dvd_GST_PLUGIN_DIR=	ext/dvdnav \
 		ext/dvdread
 gst_dvd_PLIST_FILES=	${GST_LIB_DIR}/libgstdvdnav.la \
