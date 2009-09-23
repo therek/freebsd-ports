@@ -30,7 +30,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.31 2009/07/12 22:35:13 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.32 2009/09/12 18:07:51 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -225,7 +225,8 @@ test-gcc:
 .endfor
 	@echo Using GCC version ${_USE_GCC}
 .endif
-	@echo CC=${CC} - CXX=${CXX} - CFLAGS=${CFLAGS}
-	@echo F77=${F77} - FC=${FC} - FFLAGS=${FFLAGS}
+	@echo CC=${CC} - CXX=${CXX} - CFLAGS=\"${CFLAGS}\"
+	@echo F77=${F77} - FC=${FC} - FFLAGS=\"${FFLAGS}\"
+	@echo LDFLAGS=\"${LDFLAGS}\"
 	@echo BUILD_DEPENDS=${BUILD_DEPENDS}
 	@echo RUN_DEPENDS=${RUN_DEPENDS}
