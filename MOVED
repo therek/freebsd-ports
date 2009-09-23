@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1987 2009/09/21 16:38:48 naddy Exp $
+# $FreeBSD: ports/MOVED,v 1.1988 2009/09/22 07:54:41 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4168,3 +4168,4 @@ net/asterisk12-addons||2009-09-16|Has expired: does not build
 archivers/lzmautils|archivers/xz|2009-09-21|Project was renamed
 archivers/lzmautils-devel|archivers/xz|2009-09-21|Project was renamed
 audio/audacious-mac||2009-09-21|does not work with audacious 2 and audacious-plugins already delivers a demac plugin
+systutils/uptimec||2009-09-23|Project is gone since 2007
