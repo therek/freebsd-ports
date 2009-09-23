@@ -1,4 +1,4 @@
-/* $FreeBSD: ports/lang/pcc/files/ccconfig.h,v 1.3 2007/12/14 17:36:00 obrien Exp $ */
+/* $FreeBSD: ports/lang/pcc/files/ccconfig.h,v 1.4 2008/12/30 03:29:35 obrien Exp $ */
 /*	$Id: ccconfig.h,v 1.2 2004/12/02 21:32:25 ragge Exp $	*/
 
 /*
@@ -41,8 +41,13 @@
 #define	ENDFILES { "/usr/lib/crtend.o", "/usr/lib/crtn.o", NULL }
 #define STARTLABEL "_start"
 
+/*
+ * XXX multitargets ?
+ */
 #if defined(mach_i386) || defined(mach_x86)
 #define	CPPMDADD { "-D__i386__", "-D__i386", NULL, }
+#elif defined(mach_amd64)
+#define CPPMDADD { "-D__x86_64__", NULL, }
 #else
 #error defines for arch missing
 #endif
