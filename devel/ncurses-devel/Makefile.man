@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/ncurses-devel/Makefile.man,v 1.7 2008/11/18 07:23:28 rafan Exp $
+# $FreeBSD: ports/devel/ncurses-devel/Makefile.man,v 1.8 2008/12/20 17:01:40 rafan Exp $
 
 MANCOMPRESSED=	yes
 
@@ -317,7 +317,9 @@ MLINKS+=\
 	curs_opaque.3x is_leaveok.3x \
 	curs_opaque.3x is_nodelay.3x \
 	curs_opaque.3x is_notimeout.3x \
+	curs_opaque.3x is_pad.3x \
 	curs_opaque.3x is_scrollok.3x \
+	curs_opaque.3x is_subwin.3x \
 	curs_opaque.3x is_syncok.3x \
 	curs_opaque.3x is_timeout.3x \
 	curs_opaque.3x wgetparent.3x \
