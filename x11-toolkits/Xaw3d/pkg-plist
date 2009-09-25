@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/Xaw3d/pkg-plist,v 1.14 2004/09/03 20:43:04 nork Exp $
+@comment $FreeBSD: ports/x11-toolkits/Xaw3d/pkg-plist,v 1.15 2005/08/29 05:10:53 lesi Exp $
 lib/libXaw3d.a
 lib/libXaw3d.so
 lib/libXaw3d.so.%%XAWVER%%
@@ -80,6 +80,6 @@ include/X11/Xaw3d/ViewportP.h
 include/X11/Xaw3d/Xaw3dP.h
 include/X11/Xaw3d/XawImP.h
 include/X11/Xaw3d/XawInit.h
-share/doc/Xaw3d/README.XAW3D
+%%PORTDOCS%%share/doc/Xaw3d/README.XAW3D
 @dirrm include/X11/Xaw3d
-@dirrm share/doc/Xaw3d
+%%PORTDOCS%%@dirrm share/doc/Xaw3d
