@@ -5,6 +5,23 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20090921
+  AFFECTS: users of archivers/lzmautils, archivers/lzmautils-devel
+  AUTHOR: Christian Weisgerber <naddy@FreeBSD.org>
+
+  The XZ Utils distribution has superseded LZMA Utils, so the xz
+  port has been added and the lzmautils ports have been removed.
+  To perform the move, run one of the following commands:
+
+  If using portupgrade:
+  # portupgrade -o archivers/xz lzmautils\*
+
+  If using portmaster:
+  # portmaster -o archivers/xz archivers/lzmautils
+  or
+  # portmaster -o archivers/xz archivers/lzmautils-devel
+  as applicable.
+
 20090919:
   AFFECTS: users of mail/postfix-postfwd
   AUTHOR: Sahil Tandon <sahil@tandon.net>
@@ -8522,4 +8539,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.862 2009/09/17 20:59:36 kwm Exp $
+$FreeBSD: ports/UPDATING,v 1.863 2009/09/19 17:00:07 miwi Exp $
