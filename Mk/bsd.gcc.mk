@@ -30,7 +30,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.32 2009/09/12 18:07:51 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.33 2009/09/23 21:13:07 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -72,6 +72,8 @@ FC:=	gfortran44
 F77:=	gfortran44
 CC:=	gcc44
 CXX:=	g++44
+CFLAGS+=	-Wl,-rpath=${PREFIX}/lib/gcc44
+LDFLAGS+=	-Wl,-rpath=${PREFIX}/lib/gcc44
 
 # Intel Fortran compiler from lang/ifc.
 . elif ${USE_FORTRAN} == ifort
