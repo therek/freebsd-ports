@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/py-netaddr/pkg-plist,v 1.2 2009/04/11 11:44:21 miwi Exp $
+@comment $FreeBSD: ports/net/py-netaddr/pkg-plist,v 1.3 2009/08/27 18:06:56 yzlin Exp $
 bin/netaddr
 %%PYTHON_SITELIBDIR%%/netaddr/__init__.py
 %%PYTHON_SITELIBDIR%%/netaddr/__init__.pyc
@@ -34,6 +34,9 @@ bin/netaddr
 %%PYTHON_SITELIBDIR%%/netaddr/ip/ipv4-address-space
 %%PYTHON_SITELIBDIR%%/netaddr/ip/ipv6-address-space
 %%PYTHON_SITELIBDIR%%/netaddr/ip/multicast-addresses
+%%PYTHON_SITELIBDIR%%/netaddr/ip/nmap.py
+%%PYTHON_SITELIBDIR%%/netaddr/ip/nmap.pyc
+%%PYTHON_SITELIBDIR%%/netaddr/ip/nmap.pyo
 %%PYTHON_SITELIBDIR%%/netaddr/ip/rfc1924.py
 %%PYTHON_SITELIBDIR%%/netaddr/ip/rfc1924.pyc
 %%PYTHON_SITELIBDIR%%/netaddr/ip/rfc1924.pyo
@@ -72,6 +75,7 @@ bin/netaddr
 %%PYTHON_SITELIBDIR%%/netaddr/tests/ip/ipglob.txt
 %%PYTHON_SITELIBDIR%%/netaddr/tests/ip/matches.txt
 %%PYTHON_SITELIBDIR%%/netaddr/tests/ip/multicast.txt
+%%PYTHON_SITELIBDIR%%/netaddr/tests/ip/nmap.txt
 %%PYTHON_SITELIBDIR%%/netaddr/tests/ip/rfc1924.txt
 %%PYTHON_SITELIBDIR%%/netaddr/tests/ip/sets.txt
 %%PYTHON_SITELIBDIR%%/netaddr/tests/ip/socket_fallback.txt
