@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1990 2009/09/23 19:44:02 glarkin Exp $
+# $FreeBSD: ports/MOVED,v 1.1991 2009/09/24 20:56:23 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4179,3 +4179,4 @@ audio/gmpc-serverstats||2009-09-24|Unmaintained upstream
 audio/gmpc-favorites||2009-09-24|Unmaintained upstream
 audio/gmpc-autoplaylist||2009-09-24|Unmaintained upstream
 audio/gmpc-stopbutton||2009-09-24|Unmaintained upstream
+mail/wanderlust-devel||2009-09-28|Port addition canceled
