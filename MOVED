@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1994 2009/09/30 18:22:13 dhn Exp $
+# $FreeBSD: ports/MOVED,v 1.1995 2009/10/02 18:54:32 dougb Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2617,7 +2617,6 @@ multimedia/ruby-gst||2007-01-01|No longer include in the tarball
 audio/autools||2007-01-05|Has expired: is unfetchable and the project homepage disappeared
 www/mediawiki13||2007-01-05|Removed: No longer supported, please upgrade your wiki installation
 www/mediawiki15||2007-01-05|Removed: No longer supported, please upgrade your wiki installation
-ftp/gwget||2007-01-05|Has expired: fails to install
 multimedia/bsdav||2007-01-05|Has expired: does not work. We need to import bktv patches from OpenBSD to make it work
 multimedia/pitivi||2007-01-05|Has expired: Installs files during "make all"
 graphics/opendx-samples||2007-01-05|Has expired: Changes permissions on installed file usr/local/dx/java/server/nets
