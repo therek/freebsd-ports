@@ -30,7 +30,7 @@
 # Originally written by Vasil Dimov <vd@FreeBSD.org>
 # Others:
 #
-# $FreeBSD: ports/Tools/scripts/rmport,v 1.18 2007/03/28 20:39:18 vd Exp $
+# $FreeBSD: ports/Tools/scripts/rmport,v 1.19 2008/06/19 22:09:01 erwin Exp $
 #
 # MAINTAINER=	vd@FreeBSD.org
 #
@@ -400,7 +400,7 @@ diff()
 commit()
 {
 	log "running cvs update"
-	${PCVS} up ports 2>&1 |${PAGER:-less}
+	${PCVS} -fnq up ports 2>&1 |${PAGER:-less}
 
 	answer=`ask "do you want to commit?"`
 
@@ -528,7 +528,7 @@ done
 # the diff afterwards
 answer=y
 while [ "${answer}" = "y" ] ; do
-	diffout=`diff`
+	diffout=diff
 
 	# EDITOR instead of PAGER because vim has nice syntax highlighting ;-)
 	${EDITOR} ${diffout}
