@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.609 2009/08/03 19:17:33 bsam Exp $
+# $FreeBSD: ports/LEGAL,v 1.610 2009/09/14 17:57:28 trasz Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -734,3 +734,4 @@ apache2/mod_h264_streaming-*	www/mod_h264_streaming	No commercial use
 pcsv*i3fb.tar.gz	lang/petite-chez	Must acknowledge license
 tarsnap-*		sysutils/tarsnap	Redistribution restricted
 linuxsampler-*		audio/linuxsampler	Commercial use is prohibited
+WowzaMediaServerPro	net/wowzamediaserverpro	Redistribution not allowed
