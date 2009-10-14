@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/audio/squeezecenter/files/pkg-install.in,v 1.7 2008/06/24 16:10:23 brooks Exp $
+# $FreeBSD: ports/audio/squeezeboxserver/files/pkg-install.in,v 1.8 2008/09/02 19:51:04 brooks Exp $
 
 name=%%PORTNAME%%
 u=%%SLIMUSER%%

@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/audio/squeezeboxserver/files/patch-Slim_Networking_mDNS.pm,v 1.2 2008/04/02 17:30:27 brooks Exp $
 
 --- Slim/Networking/mDNS.pm.orig
 +++ Slim/Networking/mDNS.pm
