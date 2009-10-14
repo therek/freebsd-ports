@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1999 2009/10/08 12:49:03 tabthorpe Exp $
+# $FreeBSD: ports/MOVED,v 1.2000 2009/10/12 13:43:37 nobutaka Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4184,3 +4184,4 @@ x11/electricsheep||2009-10-02|No source tarball, Unix code unmaintained
 sysutils/fusefs-gphotofs||2009-10-05|Removed
 x11/kxgenerator||2009-10-07|Has expired: Project abandoned, master site disappeared
 hebrew/geresh||2009-10-08|No longer maintained upstream
+misc/tmux||2009-10-14|Moved to sysutils category
