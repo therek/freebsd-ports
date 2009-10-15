@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/net-mgmt/flowd/pkg-install,v 1.1 2005/01/26 05:13:28 kevlo Exp $
+#	$FreeBSD: ports/net-mgmt/flowd/pkg-install,v 1.2 2005/06/04 00:43:20 pav Exp $
 #
 # Based on cyrus-sasl2 port
 #
@@ -20,9 +20,15 @@ create_user() {
 		shell=/nonexistent
 	fi
 	uhome="/var/empty"
+	if [ -z "${FLOWD_UID}" ]; then
+		uid=`${PW} usernext`;
+		uid=${uid%%:*}
+	else
+		uid=${FLOWD_UID}
+	fi
 
 	if ! ${PW} show user ${USER} -q >/dev/null; then
-		if ! ${PW} add user ${USER} -g ${GROUP} -d "${uhome}" \
+		if ! ${PW} add user ${USER} -u ${uid} -g ${GROUP} -d "${uhome}" \
 				-c "flowd privilege separation user" -s "${shell}" -p "*" \
 				; then
 			e=$?
@@ -31,7 +37,7 @@ create_user() {
 		fi
 		echo "*** Added user \`${USER}' (id ${uid})"
 	else
-		echo "*** You already have user \`${USER}'."
+		echo "*** You already have user \`${USER} (id `id -u ${USER}`)'."
 	fi
 }
 
