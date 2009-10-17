@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/bglibs/pkg-plist,v 1.14 2006/08/09 11:53:16 sergei Exp $
+@comment $FreeBSD: ports/devel/bglibs/pkg-plist,v 1.15 2008/08/10 21:16:01 miwi Exp $
 bin/bg-installer
 bin/cli-generate
 bin/crc-gentab
@@ -38,6 +38,7 @@ include/bglibs/iobuf/iobuf.h
 include/bglibs/iobuf/obuf.h
 include/bglibs/misc/misc.h
 include/bglibs/misc/ucspi.h
+include/bglibs/msg/debug.h
 include/bglibs/msg/msg.h
 include/bglibs/msg/wrap.h
 include/bglibs/net/ipv4.h
