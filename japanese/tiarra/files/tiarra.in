@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/tiarra/files/tiarra.in,v 1.1 2006/07/29 07:17:33 ume Exp $
 #
 
 # PROVIDE: tiarra
@@ -19,11 +19,13 @@ tiarra_chdir=${tiarra_chdir:-"${prefix}/${name}"}
 . %%RC_SUBR%%
 
 rcvar=`set_rcvar`
+
+load_rc_config $name
+
 command="${tiarra_chdir}/${name}"
 command_interpreter="/usr/bin/perl"
 required_dirs="${tiarra_chdir}"
 required_files="${tiarra_chdir}/${name}.conf"
 extra_commands="reload"
 
-load_rc_config $name
 run_rc_command "$1"
