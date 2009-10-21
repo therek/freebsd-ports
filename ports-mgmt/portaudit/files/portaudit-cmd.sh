@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/ports-mgmt/portaudit/files/portaudit-cmd.sh,v 1.14 2007/12/27 09:54:23 simon Exp $
+# $FreeBSD: ports/ports-mgmt/portaudit/files/portaudit-cmd.sh,v 1.15 2009/06/21 15:45:18 simon Exp $
 #
 
 portaudit_confs()
@@ -264,7 +264,7 @@ audit_cwd()
 		return 2
 	fi
 
-	PKGNAME=`make -VPKGNAME 2>/dev/null || true"`
+	PKGNAME=`make -VPKGNAME 2>/dev/null || true`
 
 	if [ -z "$PKGNAME" ]; then
 		echo "portaudit: Can't determine the package name" >&2
