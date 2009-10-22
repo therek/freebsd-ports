@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2048 2009/10/20 11:03:35 araujo Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2049 2009/10/22 23:01:53 delphij Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -67,12 +67,14 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
+      <cvename>CVE-2009-3700</cvename>
       <url>http://www.squidguard.org/Downloads/Patches/1.4/Readme.Patch-20091015</url>
       <url>http://www.squidguard.org/Downloads/Patches/1.4/Readme.Patch-20091019</url>
     </references>
     <dates>
       <discovery>2009-10-15</discovery>
       <entry>2009-10-22</entry>
+      <modified>2009-10-22</modified>
     </dates>
   </vuln>
 
