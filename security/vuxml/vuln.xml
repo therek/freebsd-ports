@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2050 2009/10/22 23:04:37 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2051 2009/10/25 14:23:33 stas Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -63,7 +63,7 @@ Note:  Please add new entries to the beginning of this file.
       <url>http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=380347</url>
     </references>
     <dates>
-      <discovery>29-07-2006</discovery>
+      <discovery>2006-07-29</discovery>
       <entry>2009-10-25</entry>
     </dates>
   </vuln>
