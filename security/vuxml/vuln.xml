@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2052 2009/10/25 14:53:33 gabor Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2053 2009/10/28 15:22:37 beat Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -830,8 +830,15 @@ Note:  Please add new entries to the beginning of this file.
      <affects>
        <package>
          <name>opera</name>
-         <name>linux-opera</name>
          <range><lt>10.00.20090830</lt></range>
+       </package>
+       <package>
+         <name>opera-devel</name>
+         <range><le>10.00.b3_1,1</le></range>
+       </package>
+       <package>
+         <name>linux-opera</name>
+         <range><lt>10.00</lt></range>
        </package>
      </affects>
      <description>
@@ -858,7 +865,7 @@ Note:  Please add new entries to the beginning of this file.
      <dates>
        <discovery>2009-09-01</discovery>
        <entry>2009-09-04</entry>
-       <modified>2009-09-04</modified>
+       <modified>2009-10-29</modified>
      </dates>
    </vuln>
 
