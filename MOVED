@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2008 2009/10/29 08:37:15 clsung Exp $
+# $FreeBSD: ports/MOVED,v 1.2009 2009/10/29 09:12:52 clsung Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4191,3 +4191,4 @@ archivers/zlib||2009-10-19|Removed
 graphics/libwpcg||2009-10-25|Unmaintained upstream, depends on an old version of GCC, lacks a maintainer, and not used by anything else
 databases/ruby-dbd_msql||2009-10-29|Has expired: no longer under development
 databases/ruby-dbd_proxy||2009-10-29|Has expired: no longer under development
+databases/ruby-dbd_interbase||2009-10-29|Has expired: no longer under development
