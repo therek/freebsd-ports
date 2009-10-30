@@ -2,7 +2,7 @@
 # Date created:		08 Nov 2006
 # Whom:			dinoex
 #
-# $FreeBSD: ports/mail/sendmail/bsd.milter.mk,v 1.2 2007/02/02 20:17:17 dinoex Exp $
+# $FreeBSD: ports/mail/sendmail/bsd.milter.mk,v 1.3 2008/03/17 15:13:32 dinoex Exp $
 #
 # a port shall includes this file after bsd.ports.pre.mk
 # .include "${PORTSDIR}/${PKGCATEGORY}/sendmail/bsd.milter.mk"
@@ -45,7 +45,7 @@ Milter_Include_MAINTAINER=	dinoex@FreeBSD.org
 	!defined(WITH_SENDMAIL_PORT)
 .if	exists(${LOCALBASE}/lib/libmilter.a) || \
 	!exists(/usr/lib/libmilter.a)
-WITH_SENDMAIL_PORTS=yes
+WITH_SENDMAIL_PORT=yes
 .else
 WITH_SENDMAIL_BASE=yes
 .endif
