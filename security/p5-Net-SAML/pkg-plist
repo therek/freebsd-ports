@@ -1,5 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/p5-Net-SAML/pkg-plist,v 1.1 2008/04/07 07:37:14 pav Exp $
 %%EXAMPLESDIR%%/zxid.pl
+%%EXAMPLESDIR%%/zxidhlo.pl
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/SAML.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Net/SAML.pod
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/SAML/.packlist
