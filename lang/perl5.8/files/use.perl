@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/lang/perl5.8/files/use.perl,v 1.11 2005/06/24 09:17:06 tobez Exp $
+# $FreeBSD: ports/lang/perl5.8/files/use.perl,v 1.12 2009/03/05 17:56:24 skv Exp $
 
 this=`echo -n $0 | /usr/bin/sed -e 's!^.*/!!'`
 PERL_VERSION="%%PERL_VERSION%%"
@@ -20,14 +20,14 @@ fi
 if [ "x$this" = "xuse.perl" ]; then
 	PKG_PREFIX="%%PREFIX%%"
 	if [ "$1" = "port" ] ; then
-		need_remove_links=yes
-		need_create_links=yes
+		need_remove_links=%%LINK_USRBIN%%
+		need_create_links=%%LINK_USRBIN%%
 		need_cleanup_make_conf=yes
 		need_cleanup_manpath=yes
 		need_spam_make_conf=yes
 		need_spam_manpath=yes
 	elif [ "$1" = "system" ] ; then
-		need_remove_links=yes
+		need_remove_links=%%LINK_USRBIN%%
 		need_cleanup_make_conf=yes
 		need_cleanup_manpath=yes
 	else
