@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/getmail/pkg-plist,v 1.10 2005/11/08 22:25:15 mnag Exp $
+@comment $FreeBSD: ports/mail/getmail/pkg-plist,v 1.11 2009/06/12 12:40:18 wxs Exp $
 bin/getmail
 bin/getmail_fetch
 bin/getmail_maildir
@@ -43,20 +43,5 @@ bin/getmail_mbox
 %%PYTHON_SITELIBDIR%%/getmailcore/utilities.pyc
 %%PYTHON_SITELIBDIR%%/getmailcore/utilities.pyo
 @dirrm %%PYTHON_SITELIBDIR%%/getmailcore
-%%PORTDOCS%%%%DOCSDIR%%/BUGS
-%%PORTDOCS%%%%DOCSDIR%%/CHANGELOG
-%%PORTDOCS%%%%DOCSDIR%%/README
-%%PORTDOCS%%%%DOCSDIR%%/THANKS
-%%PORTDOCS%%%%DOCSDIR%%/TODO
-%%PORTDOCS%%%%DOCSDIR%%/configuration.html
-%%PORTDOCS%%%%DOCSDIR%%/configuration.txt
-%%PORTDOCS%%%%DOCSDIR%%/documentation.html
-%%PORTDOCS%%%%DOCSDIR%%/documentation.txt
-%%PORTDOCS%%%%DOCSDIR%%/faq.html
-%%PORTDOCS%%%%DOCSDIR%%/faq.txt
-%%PORTDOCS%%%%DOCSDIR%%/getmaildocs.css
-%%PORTDOCS%%%%DOCSDIR%%/troubleshooting.html
-%%PORTDOCS%%%%DOCSDIR%%/troubleshooting.txt
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%EXAMPLESDIR%%/getmailrc-examples
 @dirrm %%EXAMPLESDIR%%
