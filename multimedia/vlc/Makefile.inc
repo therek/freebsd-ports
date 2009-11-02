@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.22 2009/02/12 08:49:57 beech Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.23 2009/07/09 03:20:03 pgollucci Exp $
 #   $MCom: ports-stable/multimedia/vlc-devel/Makefile.inc,v 1.4 2009/01/09 23:41:21 mezz Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -257,10 +257,12 @@ pre-install: build
 		${SED} -e 's|^|lib/|' >> ${PLIST} \
 		&& ${FIND} -d * -type d | \
 		${SED} -e 's|^|@dirrm lib/|' >> ${PLIST}
+.if !defined(WITHOUT_X11)
 	cd ${FAKEDIR}/libdata && ${FIND} -s * -type f -o -type l| \
 		${SED} -e 's|^|libdata/|' >> ${PLIST} \
 		&& ${FIND} -d * -type d | \
 		${SED} -e 's|^|@dirrmtry libdata/|' >> ${PLIST}
+.endif
 .for dir in vlc
 	cd ${FAKEDIR}/share/${dir} && ${FIND} -s * -type f -o -type l | \
 		${SED} -e 's|^|share/${dir}/|' >> ${PLIST} \
@@ -285,7 +287,7 @@ pre-install: build
 		${SED} -e 's|^|%%WEBPLUGINS_DIR%%/|' >> ${PLIST}
 	${ECHO_CMD} "@dirrmtry %%WEBPLUGINS_DIR%%" >> ${PLIST}
 .endif
-.for locale in ckb co fur km my oc ps tet tl
+.for locale in ckb co fur kk km my oc ps tet tl
 	${ECHO_CMD} "@unexec ${RMDIR} %D/share/locale/${locale}/LC_MESSAGES 2>/dev/null || ${TRUE}" >> ${PLIST}
 	${ECHO_CMD} "@unexec ${RMDIR} %D/share/locale/${locale} 2>/dev/null || ${TRUE}" >> ${PLIST}
 .endfor
@@ -297,8 +299,10 @@ do-install:
 		${CPIO} -vpdm -L -R ${LIBOWN}:${LIBGRP} ${PREFIX}/include
 	cd ${FAKEDIR}/lib && ${FIND} . | \
 		${CPIO} -vpdm -L -R ${LIBOWN}:${LIBGRP} ${PREFIX}/lib
+.if !defined(WITHOUT_X11)
 	cd ${FAKEDIR}/libdata && ${FIND} . | \
 		${CPIO} -vpdm -L -R ${LIBOWN}:${LIBGRP} ${PREFIX}/libdata
+.endif
 	cd ${FAKEDIR}/share && ${FIND} . | \
 		${CPIO} -vpdm -L -R ${SHAREOWN} ${PREFIX}/share
 .if defined(WITH_VLC_MOZILLA_PLUGIN) && !defined(WITHOUT_VLC_MOZILLA_PLUGIN)
