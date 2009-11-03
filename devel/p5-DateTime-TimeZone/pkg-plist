@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-DateTime-TimeZone/pkg-plist,v 1.22 2009/02/12 15:56:06 mat Exp $
+@comment $FreeBSD: ports/devel/p5-DateTime-TimeZone/pkg-plist,v 1.23 2009/08/17 14:20:49 tobez Exp $
 %%SITE_PERL%%/DateTime/TimeZone.pm
 %%SITE_PERL%%/DateTime/TimeZone/Africa/Abidjan.pm
 %%SITE_PERL%%/DateTime/TimeZone/Africa/Accra.pm
@@ -242,6 +242,7 @@
 %%SITE_PERL%%/DateTime/TimeZone/Asia/Manila.pm
 %%SITE_PERL%%/DateTime/TimeZone/Asia/Muscat.pm
 %%SITE_PERL%%/DateTime/TimeZone/Asia/Nicosia.pm
+%%SITE_PERL%%/DateTime/TimeZone/Asia/Novokuznetsk.pm
 %%SITE_PERL%%/DateTime/TimeZone/Asia/Novosibirsk.pm
 %%SITE_PERL%%/DateTime/TimeZone/Asia/Omsk.pm
 %%SITE_PERL%%/DateTime/TimeZone/Asia/Oral.pm
