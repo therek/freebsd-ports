@@ -2,11 +2,11 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.24 2009/08/25 11:53:26 lev Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.25 2009/10/24 11:34:10 lev Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.6.6
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES+=	devel
 MASTER_SITES=	http://subversion.tigris.org/downloads/:main \
 		http://svnbook.red-bean.com/en/1.5/:book
@@ -30,7 +30,8 @@ OPTIONS=
 
 CONFIGURE_ARGS+=	--without-swig
 
-LIB_DEPENDS+=	sqlite3.8:${PORTSDIR}/databases/sqlite3
+LIB_DEPENDS+=		sqlite3.8:${PORTSDIR}/databases/sqlite3
+CONFIGURE_ARGS+=	--with-sqlite=${LOCALBASE}
 
 # Default is "on"
 .if !defined(WITHOUT_NEON)
