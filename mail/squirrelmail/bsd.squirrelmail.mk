@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/squirrelmail/bsd.squirrelmail.mk,v 1.4 2008/12/05 04:10:32 tabthorpe Exp $
+# $FreeBSD: ports/mail/squirrelmail/bsd.squirrelmail.mk,v 1.5 2009/02/11 18:51:14 itetcu Exp $
 #
 # $Id: bsd.squirrelmail.mk 23 2008-12-03 16:17:48Z tabthorpe $
 #
@@ -27,7 +27,6 @@ RUN_DEPENDS+=	${SQUIRRELDIR}/plugins/compatibility:${PORTSDIR}/mail/squirrelmail
 
 NO_BUILD=		yes
 NO_WRKSUBDIR=		yes
-USE_PERL5_BUILD=	yes
 USE_PHP=		yes
 WANT_PHP_WEB=		yes
 
