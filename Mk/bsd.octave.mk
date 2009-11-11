@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.octave.mk,v 1.5 2009/08/22 00:11:04 amdmi3 Exp $
+# $FreeBSD: ports/Mk/bsd.octave.mk,v 1.6 2009/08/23 16:49:00 dhn Exp $
 #
 # bsd.octave.mk - Octave related macro
 # Common code to install octave-forge packages.
@@ -33,7 +33,7 @@ do-install:
 	${MKDIR} ${TARBALLS_DIR}
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}.tar.gz ${TARBALLS_DIR}/.
 	${RM} -f ${TARBALLS_DIR}/${OCTAVE_PKGNAME}.tar.gz
-	PATH=${PREFIX}/bin:/usr/bin octave -H -q --no-site-file --eval "pkg('install','${TARBALLS_DIR}/${DISTNAME}.tar.gz')"
+	PATH=${PREFIX}/bin:/usr/bin:/bin octave -H -q --no-site-file --eval "pkg('install','${TARBALLS_DIR}/${DISTNAME}.tar.gz')"
 	${LN} -s ${DISTNAME}.tar.gz ${TARBALLS_DIR}/${OCTAVE_PKGNAME}.tar.gz
 
 post-install:
