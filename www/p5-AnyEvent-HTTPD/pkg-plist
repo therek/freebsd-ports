@@ -1,7 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/p5-AnyEvent-HTTPD/pkg-plist,v 1.1 2009/07/28 17:10:48 miwi Exp $
 %%SITE_PERL%%/AnyEvent/HTTPD/HTTPConnection.pm
 %%SITE_PERL%%/AnyEvent/HTTPD/HTTPServer.pm
 %%SITE_PERL%%/AnyEvent/HTTPD/Request.pm
+%%SITE_PERL%%/AnyEvent/HTTPD/Util.pm
 %%SITE_PERL%%/AnyEvent/HTTPD.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/AnyEvent/HTTPD/.packlist
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/AnyEvent/HTTPD
