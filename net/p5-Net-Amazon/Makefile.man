@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/p5-Net-Amazon/Makefile.man,v 1.4 2008/01/05 04:24:51 clsung Exp $
+# $FreeBSD: ports/net/p5-Net-Amazon/Makefile.man,v 1.5 2009/10/28 02:04:49 clsung Exp $
 
 MAN3+=	Net::Amazon.3 
 MAN3+=	Net::Amazon::Attribute::Review.3
@@ -335,7 +335,6 @@ MAN3+=	Net::Amazon::Validate::ItemSearch::us::HomeGarden.3
 MAN3+=	Net::Amazon::Validate::ItemSearch::us::Industrial.3
 MAN3+=	Net::Amazon::Validate::ItemSearch::us::ItemPage.3
 MAN3+=	Net::Amazon::Validate::ItemSearch::us::Jewelry.3
-MAN3+=	Net::Amazon::Validate::ItemSearch::us::Keyword.3
 MAN3+=	Net::Amazon::Validate::ItemSearch::us::Keywords.3
 MAN3+=	Net::Amazon::Validate::ItemSearch::us::KindleStore.3
 MAN3+=	Net::Amazon::Validate::ItemSearch::us::Kitchen.3
