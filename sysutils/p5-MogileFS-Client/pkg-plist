@@ -1,8 +1,9 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/sysutils/p5-MogileFS-Client/pkg-plist,v 1.1 2007/04/27 10:10:16 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/MogileFS/Client/.packlist
 %%SITE_PERL%%/MogileFS/Admin.pm
 %%SITE_PERL%%/MogileFS/Backend.pm
 %%SITE_PERL%%/MogileFS/Client.pm
+%%SITE_PERL%%/MogileFS/ClientHTTPFile.pm
 %%SITE_PERL%%/MogileFS/NewHTTPFile.pm
 @dirrmtry %%SITE_PERL%%/MogileFS
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/MogileFS/Client
