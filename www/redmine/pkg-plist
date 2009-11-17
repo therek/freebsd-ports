@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/redmine/pkg-plist,v 1.1 2009/05/23 14:09:24 miwi Exp $
+@comment $FreeBSD: ports/www/redmine/pkg-plist,v 1.2 2009/09/18 22:52:34 miwi Exp $
 %%WWWDIR%%/Rakefile
 %%WWWDIR%%/app/apis/sys_api.rb
 %%WWWDIR%%/app/controllers/account_controller.rb
@@ -605,6 +605,7 @@
 %%WWWDIR%%/lib/tasks/email.rake
 %%WWWDIR%%/lib/tasks/extract_fixtures.rake
 %%WWWDIR%%/lib/tasks/fetch_changesets.rake
+%%WWWDIR%%/lib/tasks/initializers.rake
 %%WWWDIR%%/lib/tasks/load_default_data.rake
 %%WWWDIR%%/lib/tasks/migrate_from_mantis.rake
 %%WWWDIR%%/lib/tasks/migrate_from_trac.rake
