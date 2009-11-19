@@ -1,15 +1,13 @@
-@comment $FreeBSD: ports/lang/gcc43/pkg-plist,v 1.96 2007/03/12 16:45:56 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc43/pkg-plist,v 1.97 2009/11/19 00:32:46 gerald Exp $
 bin/c++%%SUFFIX%%
 bin/cpp%%SUFFIX%%
 bin/g++%%SUFFIX%%
 bin/gcc%%SUFFIX%%
 bin/gccbug%%SUFFIX%%
 bin/gcov%%SUFFIX%%
-bin/gfortran%%SUFFIX%%
 bin/%%GNU_HOST%%-c++%%SUFFIX%%
 bin/%%GNU_HOST%%-g++%%SUFFIX%%
 bin/%%GNU_HOST%%-gcc-%%GCC_VER%%
 bin/%%GNU_HOST%%-gcc%%SUFFIX%%
-bin/%%GNU_HOST%%-gfortran%%SUFFIX%%
 info/gcc%%SUFFIX%%/dir
 @comment Insert PLIST.lib here
