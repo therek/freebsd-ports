@@ -5,6 +5,19 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20091120:
+  AFFECTS: users of security/f-prot
+  AUTHOR: Tim Bishop <tdb@FreeBSD.org>
+
+  The main f-prot command is now named fpscan. Virus definitions are
+  updated using the fpupdate command. fpupdate will automatically run
+  from periodic every day. To disable set the following option in
+  /etc/periodic.conf:
+
+  fpupdate_enable="NO"
+
+  The f-prot port now only works on i386.
+
 20091118:
   AFFECTS: users of java/jboss5
   AUTHOR: Jonathan Chen <jonc@chen.org.nz>
@@ -8607,4 +8620,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.868 2009/11/17 23:08:23 miwi Exp $
+$FreeBSD: ports/UPDATING,v 1.869 2009/11/18 22:12:07 hq Exp $

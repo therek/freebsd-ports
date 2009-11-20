@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2020 2009/11/19 07:01:32 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.2021 2009/11/19 07:04:54 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4207,3 +4207,4 @@ sysutils/rsyslog-mysql||2009-11-19|Has expired: Use sysutils/rsyslog3 or sysutil
 sysutils/rsyslog-pgsql||2009-11-19|Has expired: Use sysutils/rsyslog3 or sysutils/rsyslog4 instead
 misc/kde4-l10n-ta||2009-11-19|Has expired: unfetchable and unmaintained upstream
 misc/kde4-l10n-eo||2009-11-19|Has expired: unfetchable and unmaintained upstream
+security/f-prot-sig||2009-11-20|No longer needed with security/f-prot update
