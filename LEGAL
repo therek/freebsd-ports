@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.611 2009/10/11 12:37:34 miwi Exp $
+# $FreeBSD: ports/LEGAL,v 1.612 2009/11/22 22:19:24 ehaupt Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -735,4 +735,3 @@ pcsv*i3fb.tar.gz	lang/petite-chez	Must acknowledge license
 tarsnap-*		sysutils/tarsnap	Redistribution restricted
 linuxsampler-*		audio/linuxsampler	Commercial use is prohibited
 WowzaMediaServerPro	net/wowzamediaserverpro	Redistribution not allowed
-wifimgr-*		net-mgmt/wifimgr	Includes copyrighted icons
