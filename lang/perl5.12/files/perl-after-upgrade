@@ -6,7 +6,7 @@
 # this stuff is worth it, you can buy me a beer in return.   Anton Berezin
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/lang/perl5.10/files/perl-after-upgrade,v 1.4 2009/03/28 20:45:09 skv Exp $
+# $FreeBSD: ports/lang/perl5.10/files/perl-after-upgrade,v 1.5 2009/09/11 11:23:31 skv Exp $
 # $Id: perl-after-upgrade,v 1.11 2005/06/23 19:39:00 tobez Exp $
 #
 =pod
@@ -530,9 +530,7 @@ while (my $pkg = $db->next) {
 				$modified++ if $new_md5;
 			}
 			my $to = $from;
-			if ($to =~ s|/perl5/$PERL_VERSION_REGEX/|/perl5/$PERL_VERSION/|g 
-			||  $to =~ s|/perl5/site_perl/$PERL_VERSION_REGEX/|/perl5/site_perl/$PERL_VERSION/|g
-			) {
+			if ($to =~ s|(/perl5/(?:site_perl/)?)$PERL_VERSION_REGEX|$1$PERL_VERSION|g) {
 				if ($to ne $from) {
 					my $dir = $to;
 					$dir =~ s|/[^/]+$||;
@@ -563,7 +561,7 @@ while (my $pkg = $db->next) {
 			}
 		}
 		my $old = $_;
-		if (s|/perl5/$PERL_VERSION_REGEX/|/perl5/$PERL_VERSION/|g || s|/perl5/site_perl/$PERL_VERSION_REGEX/|/perl5/site_perl/$PERL_VERSION/|g) {
+		if (s|(/perl5/(?:site_perl/)?)$PERL_VERSION_REGEX|$1$PERL_VERSION|g) {
 			if ($old ne $_) {
 				$adjusted++;
 				print STDERR "- adjust: $_\n" if $debug;
