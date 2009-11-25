@@ -10,14 +10,14 @@
 #                         re-generate sorted options list to cut-and-paste them
 #                         into `options' file.
 #
-# $FreeBSD: ports/mail/exim/Makefile.options,v 1.1 2009/10/21 19:59:14 krion Exp $
+# $FreeBSD: ports/mail/exim/Makefile.options,v 1.2 2009/11/15 18:18:19 krion Exp $
 
 AUTH_CRAM_MD5	= "Enable CRAM-MD5 authentication mechanisms"
 AUTH_DOVECOT	= "Enable Dovecot authentication mechanisms"
 AUTH_PLAINTEXT	= "Enalbe plaintext authentication"
 AUTH_SPA	= "Enable Secure Password Authentication"
 CDB		= "Enable CDB-style lookups"
-DAEMON		= "Don't install scripts to run as a daemon"
+DAEMON		= "Install scripts to run as a daemon"
 DNSDB		= "Enable DNS-style lookups"
 DSEARCH		= "Enable directory-list lookups"
 EMBEDDED_PERL	= "Enable embedded Perl interpreter"
