@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2028 2009/11/26 21:26:14 glewis Exp $
+# $FreeBSD: ports/MOVED,v 1.2029 2009/11/27 01:04:48 sylvio Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4220,3 +4220,4 @@ devel/tclxml-libxml2|devel/tclxml|2009-11-26|port now do part of devel/tclxml
 devel/tclxml-expat|devel/tclxml|2009-11-26|port now do part of devel/tclxml
 www/tcldom|devel/tclxml|2009-11-26|port now do part of devel/tclxml
 www/tcldom-libxml2|devel/tclxml|2009-11-26|port now do part of devel/tclxml
+lang/erlang-doc||2009-11-27|Documentation now part of lang/erlang package
