@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2072 2009/11/26 14:51:00 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2073 2009/11/28 21:03:00 kwm Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -40,7 +40,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>libtool</name>
-	<range><lt>2.2.6a</lt></range>
+	<range><lt>2.2.6b</lt></range>
       </package>
     </affects>
     <description>
