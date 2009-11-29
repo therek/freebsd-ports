@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/cad/alliance/pkg-plist,v 1.4 2007/01/02 22:46:37 hrs Exp $
+@comment $FreeBSD: ports/cad/alliance/pkg-plist,v 1.5 2007/10/28 02:51:37 hrs Exp $
 alliance/lib/libMph.la
 alliance/lib/libMph.a
 alliance/lib/libMpu.la
@@ -177,14 +177,13 @@ alliance/etc/spimodel.cfg
 alliance/etc/cmos.rds
 alliance/etc/prol.elp
 alliance/etc/attila.conf
-alliance/etc/alc_env.csh
-alliance/etc/alc_env.sh
 alliance/etc/cmos.dreal
 alliance/etc/cmos.graal
 alliance/etc/sxlib.scapin
 alliance/etc/se_defaults.mac
 alliance/etc/cmos.lef
 alliance/etc/xfsm.par
+alliance/etc/xgra.par
 alliance/etc/xpat.par
 alliance/etc/xsch.par
 alliance/etc/xvpn.par
@@ -234,6 +233,7 @@ alliance/bin/syf
 alliance/bin/vasy
 alliance/bin/x2y
 alliance/bin/xfsm
+alliance/bin/xgra
 alliance/bin/xpat
 alliance/bin/xsch
 alliance/bin/xvpn
