@@ -1,10 +1,10 @@
 # Date created:			  Sun Oct 26, 2003
 # Whom:				  Thierry Thomas (<thierry@pompo.net>)
 #
-# $FreeBSD: ports/www/mozex/Makefile.xpi,v 1.7 2006/10/14 08:53:34 marcus Exp $
+# $FreeBSD: ports/www/mozex/Makefile.xpi,v 1.8 2009/11/27 09:08:23 beat Exp $
 #
 
-USE_GECKO=	libxul
+USE_GECKO=	seamonkey
 .include "${.CURDIR}/../../Mk/bsd.gecko.mk"
 
 EXTRACT_SUFX=   .xpi
