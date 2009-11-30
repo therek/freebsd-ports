@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
 20091120:
+  AFFECTS: users of mail/postfixadmin
+  AUTHOR: Terry Sposato (tabmow@freenode.net)
+
+  Due to a bug in the previous postfixadmin port, existing users
+  need to backup their config.inc.php before they upgrade to
+  postfixadmin-2.3 or later and put it in place after the upgrade
+  is complete.
+
+20091120:
   AFFECTS: users of security/f-prot
   AUTHOR: Tim Bishop <tdb@FreeBSD.org>
 
@@ -8620,4 +8629,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.870 2009/11/20 15:21:01 tdb Exp $
+$FreeBSD: ports/UPDATING,v 1.871 2009/11/24 16:22:56 yzlin Exp $
