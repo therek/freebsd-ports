@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-wm/compiz-plugins-unsupported/pkg-plist,v 1.4 2009/04/08 05:49:38 rnoland Exp $
+@comment $FreeBSD: ports/x11-wm/compiz-plugins-unsupported/pkg-plist,v 1.5 2009/04/08 06:55:29 rnoland Exp $
 include/compiz/compiz-elements.h
 lib/compiz/libatlantis.so
 lib/compiz/libatlantis.la
@@ -57,7 +57,16 @@ share/compiz/fakeargb.xml
 share/compiz/mswitch.xml
 share/compiz/snow.xml
 share/compiz/tile.xml
+share/compiz/autumn1.png
+share/compiz/autumn2.png
+share/compiz/bubbles1.png
+share/compiz/bubbles2.png
+share/compiz/fireflies1.svg
+share/compiz/fireflies2.svg
+share/compiz/snow1.png
+share/compiz/snow2.png
 share/compiz/snowflake.png
+share/compiz/stars1.png
 @dirrmtry share/locale/pl_PL/LC_MESSAGES
 @dirrmtry share/locale/pl_PL
 @dirrmtry include/compiz
