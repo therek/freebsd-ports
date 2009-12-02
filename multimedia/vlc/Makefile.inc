@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.23 2009/07/09 03:20:03 pgollucci Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.24 2009/11/02 22:51:27 thierry Exp $
 #   $MCom: ports-stable/multimedia/vlc-devel/Makefile.inc,v 1.4 2009/01/09 23:41:21 mezz Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -159,12 +159,12 @@
 # WITH_DVDREAD=yes
 #  Enable Regular DVD support (non-menu)
 #
-# WITH_GECKO= [firefox|mozilla|seamonkey|nvu]
+# WITH_GECKO= libxul
 # WITH_VLC_MOZILLA_PLUGIN= yes
 #  Enable A mozilla plugin for VLC
 #  See http://www.videolan.org/doc/vlc-user-guide/en/ch07.html#id2529837
 #  for more info on using this plugin.
-#   defaults to www/mozilla
+#   defaults to www/firefox/Makefile.webplugins
 #
 #  NOTE: The www/mplayer-plugin is much more complete.
 #
