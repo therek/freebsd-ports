@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.14 2009/07/18 11:10:10 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.15 2009/11/28 10:38:01 beat Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -14,7 +14,7 @@
 # WITH_GECKO=	firefox
 #
 # The valid backends are:
-# firefox flock nvu seamonkey thunderbird xulrunner
+# firefox flock seamonkey thunderbird
 #
 # See below for more details.
 # ======================= /USERS ================================
@@ -78,7 +78,7 @@ Gecko_Pre_Include=			bsd.gecko.mk
 #		${MOZSRC}/configure
 #  .endif
 
-_GECKO_ALL=	firefox nvu seamonkey thunderbird xulrunner flock mozilla \
+_GECKO_ALL=	firefox seamonkey thunderbird flock mozilla \
 		libxul
 
 thunderbird_PORTSDIR=	mail
