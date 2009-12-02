@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2036 2009/11/30 14:14:27 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.2037 2009/12/01 00:09:01 tdb Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4236,3 +4236,4 @@ audio/squeezecenter|audio/squeezeboxserver|2009-11-30|Has expired: Replaced by a
 www/mod_auth_mysql41_ap2||2009-11-30|Has expired: distfile no longer fetchable
 x11-toolkits/gtkscintilla||2009-11-30|Has expired: no longer under development, last release in 2002
 x11-toolkits/py-gtkscintilla||2009-11-30|Has expired: no longer under development, last release in 2002
+www/xulrunner|www/libxul|2009-12-02|Superseded by www/libxul
