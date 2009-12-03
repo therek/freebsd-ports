@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.57 2009/11/28 21:49:45 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.58 2009/12/03 06:19:02 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -24,9 +24,15 @@
 #	use system compiler (does not work on all architectures).
 #
 # GNUSTEP_WITH_GCC34=yes
-#	use gcc 3.4.x with objective C shared libraries (default).
+#	use gcc 3.4.x with objective C shared libraries.
 #
 # GNUSTEP_WITH_GCC42=yes
+#	use gcc 4.2.x with objective C shared libraries (default).
+#
+# GNUSTEP_WITH_GCC43=yes
+#	use gcc 4.2.x with objective C shared libraries.
+#
+# GNUSTEP_WITH_GCC44=yes
 #	use gcc 4.2.x with objective C shared libraries.
 #
 #
@@ -211,8 +217,8 @@ PLIST_SUB+=	LIBVERSION=${DEFAULT_LIBVERSION}
 PLIST_SUB+=	MAJORLIBVERSION=${DEFAULT_LIBVERSION:C/([0-9]).*/\1/1}
 
 .if !defined(GNUSTEP_WITH_BASE_GCC)
-.if !defined(GNUSTEP_WITH_GCC32) && !defined(GNUSTEP_WITH_GCC33) && !defined(GNUSTEP_WITH_GCC34)
-.if !defined(GNUSTEP_WITH_GCC40) && !defined(GNUSTEP_WITH_GCC41) && !defined(GNUSTEP_WITH_GCC42)
+.if !defined(GNUSTEP_WITH_GCC34)
+.if !defined(GNUSTEP_WITH_GCC42) && !defined(GNUSTEP_WITH_GCC43) && !defined(GNUSTEP_WITH_GCC44)
 GNUSTEP_WITH_GCC42=	yes
 .endif
 .endif
@@ -222,7 +228,12 @@ GCCSUFFIX=34
 .endif
 .if defined(GNUSTEP_WITH_GCC42)
 GCCSUFFIX=42
-BROKEN=		objc support in gcc42 was removed
+.endif
+.if defined(GNUSTEP_WITH_GCC43)
+GCCSUFFIX=43
+.endif
+.if defined(GNUSTEP_WITH_GCC44)
+GCCSUFFIX=44
 .endif
 CC=		gcc${GCCSUFFIX}
 CXX=		g++${GCCSUFFIX}
