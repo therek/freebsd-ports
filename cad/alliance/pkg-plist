@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/cad/alliance/pkg-plist,v 1.5 2007/10/28 02:51:37 hrs Exp $
+@comment $FreeBSD: ports/cad/alliance/pkg-plist,v 1.6 2009/11/29 17:34:58 hrs Exp $
 alliance/lib/libMph.la
 alliance/lib/libMph.a
 alliance/lib/libMpu.la
@@ -187,6 +187,8 @@ alliance/etc/xgra.par
 alliance/etc/xpat.par
 alliance/etc/xsch.par
 alliance/etc/xvpn.par
+alliance/etc/profile.d/alc_env.csh
+alliance/etc/profile.d/alc_env.sh
 alliance/bin/x2vy
 alliance/bin/druc
 alliance/bin/alcbanner
@@ -1809,5 +1811,6 @@ alliance/examples/alliance-examples/tuner/tuner_io.c
 @dirrm alliance/examples/alliance-examples/tuner
 @dirrm alliance/examples/alliance-examples
 @dirrm alliance/examples
+@dirrmtry alliance/etc/profile.d
 @dirrmtry alliance/etc
 @dirrmtry alliance
