@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/mod_wsgi3/pkg-plist,v 1.1 2008/06/20 23:12:20 miwi Exp $
 @unexec /usr/bin/sed -i '' '/LoadModule %%AP_NAME%%_module/d' %D/%%APACHEETCDIR%%/httpd.conf
 %%APACHEMODDIR%%/%%AP_MODULE%%
 @exec %D/sbin/apxs -e -a -n %%AP_NAME%% %D/%F
