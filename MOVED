@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2045 2009/12/08 09:25:36 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.2046 2009/12/08 09:34:43 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4217,3 +4217,5 @@ net-mgmt/net-snmp-tkmib||2009-12-08|Depends on expired port p5-SNMP
 net-mgmt/p5-SNMP||2009-12-08|Expired
 www/jakarta-tomcat4||2009-12-08|Has expired: www/jakarta-tomcat5 is recommended instead for new installations
 x11-toolkits/p5-Gnome||2009-12-08|Has expired: Has been broken for more than 6 months
+editors/abiword-extras|editors/abiword|2009-12-08|This subport has been included in the main port.
+editors/abiword-plugins|editors/abiword|2009-12-08|This subport has been included in the main port.
