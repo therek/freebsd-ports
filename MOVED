@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2043 2009/12/08 09:06:53 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.2044 2009/12/08 09:08:23 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4215,3 +4215,4 @@ security/pear-Crypt_HMAC||2009-12-07|Please use security/pear-Crypt_HMAC2
 mail/dovecot-devel|mail/dovecot|2009-12-08|Non-devel version is newer
 net-mgmt/net-snmp-tkmib||2009-12-08|Depends on expired port p5-SNMP
 net-mgmt/p5-SNMP||2009-12-08|Expired
+www/jakarta-tomcat4||2009-12-08|Has expired: www/jakarta-tomcat5 is recommended instead for new installations
