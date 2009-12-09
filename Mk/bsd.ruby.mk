@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.189 2009/10/12 15:28:22 stas Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.190 2009/10/24 10:52:07 stas Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -198,9 +198,9 @@ RUBY19=			"@comment "
 # Ruby 1.9
 #
 RUBY_RELVERSION=	1.9.1
-RUBY_PORTREVISION=	2
+RUBY_PORTREVISION=	0
 RUBY_PORTEPOCH=		1
-RUBY_PATCHLEVEL=	243
+RUBY_PATCHLEVEL=	376
 
 RUBY_VERSION?=		${RUBY_RELVERSION}.${RUBY_PATCHLEVEL}
 RUBY_DISTVERSION?=	${RUBY_RELVERSION}-p${RUBY_PATCHLEVEL}
