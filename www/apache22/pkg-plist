@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.92 2009/08/02 19:35:56 mezz Exp $
 %%APR_PORTS%%@exec mkdir -p %D/lib/apr-util-1
 @exec mkdir -p %D/etc/apache22/extra 2> /dev/null
 @exec mkdir -p %D/etc/apache22/Includes 2> /dev/null || true
@@ -253,6 +253,7 @@ libexec/apache22/httpd.exp
 %%MOD_PROXY_CONNECT%%libexec/apache22/mod_proxy_connect.so
 %%MOD_PROXY_FTP%%libexec/apache22/mod_proxy_ftp.so
 %%MOD_PROXY_HTTP%%libexec/apache22/mod_proxy_http.so
+%%MOD_PROXY_SCGI%%libexec/apache22/mod_proxy_scgi.so
 %%MOD_REWRITE%%libexec/apache22/mod_rewrite.so
 %%MOD_SETENVIF%%libexec/apache22/mod_setenvif.so
 %%MOD_SPELING%%libexec/apache22/mod_speling.so
