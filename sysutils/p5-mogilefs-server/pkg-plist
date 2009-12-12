@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/p5-mogilefs-server/pkg-plist,v 1.4 2009/06/24 05:14:19 clsung Exp $
+@comment $FreeBSD: ports/sysutils/p5-mogilefs-server/pkg-plist,v 1.5 2009/11/16 07:36:39 clsung Exp $
 %%PORTDOCS%%%%DOCSDIR%%/fsck-notes.txt
 %%PORTDOCS%%%%DOCSDIR%%/memcache-support.txt
 %%PORTDOCS%%%%DOCSDIR%%/pluggable-replication-policies.txt
@@ -46,7 +46,6 @@
 %%SITE_PERL%%/MogileFS/Worker/Replicate.pm
 %%SITE_PERL%%/Mogstored/ChildProcess.pm
 %%SITE_PERL%%/Mogstored/ChildProcess/DiskUsage.pm
-%%SITE_PERL%%/Mogstored/ChildProcess/FIDSizes.pm
 %%SITE_PERL%%/Mogstored/ChildProcess/IOStat.pm
 %%SITE_PERL%%/Mogstored/FIDStatter.pm
 %%SITE_PERL%%/Mogstored/HTTPServer.pm
@@ -57,20 +56,6 @@
 %%SITE_PERL%%/Mogstored/SideChannelClient.pm
 %%SITE_PERL%%/Mogstored/SideChannelListener.pm
 %%SITE_PERL%%/mogdeps/Danga/Socket.pm
-%%SITE_PERL%%/mogdeps/Gearman/Client.pm
-%%SITE_PERL%%/mogdeps/Gearman/Client/Async.pm
-%%SITE_PERL%%/mogdeps/Gearman/Client/Async/Connection.pm
-%%SITE_PERL%%/mogdeps/Gearman/JobStatus.pm
-%%SITE_PERL%%/mogdeps/Gearman/Objects.pm
-%%SITE_PERL%%/mogdeps/Gearman/ResponseParser.pm
-%%SITE_PERL%%/mogdeps/Gearman/ResponseParser/Taskset.pm
-%%SITE_PERL%%/mogdeps/Gearman/Server.pm
-%%SITE_PERL%%/mogdeps/Gearman/Server/Client.pm
-%%SITE_PERL%%/mogdeps/Gearman/Server/Job.pm
-%%SITE_PERL%%/mogdeps/Gearman/Task.pm
-%%SITE_PERL%%/mogdeps/Gearman/Taskset.pm
-%%SITE_PERL%%/mogdeps/Gearman/Util.pm
-%%SITE_PERL%%/mogdeps/Gearman/Worker.pm
 %%SITE_PERL%%/mogdeps/Net/Netmask.pm
 %%SITE_PERL%%/mogdeps/Perlbal.pm
 %%SITE_PERL%%/mogdeps/Perlbal/AIO.pm
