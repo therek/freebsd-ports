@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2082 2009/12/11 15:27:17 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2083 2009/12/12 10:58:58 wen Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -74,7 +74,6 @@ Note:  Please add new entries to the beginning of this file.
     </dates>
   </vuln>
 
-<vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
   <vuln vid="fcbf56dd-e667-11de-920a-00248c9b4be7">
     <topic>piwik -- php code execution</topic>
     <affects>
