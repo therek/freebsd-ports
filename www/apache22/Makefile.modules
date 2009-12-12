@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.33 2009/08/02 19:35:56 mezz Exp $
+# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.34 2009/12/10 08:09:45 pgollucci Exp $
 #
 
 .if !defined(Module_inc)
@@ -80,6 +80,9 @@ PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " EVENT="@comment "
 .if !defined(WITH_DBM)
 .   if defined(WITH_BDB) || defined(WITH_BDB_BASE) || defined(WITH_BERKELEYDB)
 WITH_DBM=bdb
+PLIST_SUB+=	BDB=""
+.   else
+PLIST_SUB+=	BDB="@comment "
 .   endif
 .endif
 

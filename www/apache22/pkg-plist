@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.92 2009/08/02 19:35:56 mezz Exp $
+@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.93 2009/12/10 08:09:45 pgollucci Exp $
 %%APR_PORTS%%@exec mkdir -p %D/lib/apr-util-1
 @exec mkdir -p %D/etc/apache22/extra 2> /dev/null
 @exec mkdir -p %D/etc/apache22/Includes 2> /dev/null || true
@@ -187,6 +187,10 @@ include/apache22/util_xml.h
 %%APR_PORTS%%%%SQLITE3%%lib/apr-util-1/apr_dbd_sqlite3.so
 %%APR_PORTS%%%%SQLITE3%%lib/apr-util-1/apr_dbd_sqlite3.la
 %%APR_PORTS%%%%SQLITE3%%lib/apr-util-1/apr_dbd_sqlite3.a
+%%APR_PORTS%%%%BDB%%lib/apr-util-1/apr_dbm_db-1.so
+%%APR_PORTS%%%%BDB%%lib/apr-util-1/apr_dbm_db.so
+%%APR_PORTS%%%%BDB%%lib/apr-util-1/apr_dbm_db.la
+%%APR_PORTS%%%%BDB%%lib/apr-util-1/apr_dbm_db.a
 %%APR_PORTS%%%%MOD_LDAP%%lib/apr-util-1/apr_ldap-1.so
 %%APR_PORTS%%%%MOD_LDAP%%lib/apr-util-1/apr_ldap.so
 %%APR_PORTS%%%%MOD_LDAP%%lib/apr-util-1/apr_ldap.la
