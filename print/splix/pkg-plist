@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/splix/pkg-plist,v 1.2 2007/12/14 16:44:13 pav Exp $
+@comment $FreeBSD: ports/print/splix/pkg-plist,v 1.3 2009/08/08 06:08:08 miwi Exp $
 libexec/cups/filter/rastertoqpdl
 libexec/cups/filter/pstoqpdl
 share/cups/model/dell/1100.ppd
@@ -49,3 +49,4 @@ share/cups/model/xerox/wc3119.ppd
 @dirrm share/cups/model/dell
 @dirrm share/cups/model/samsung
 @dirrm share/cups/model/xerox
+@dirrmtry share/cups/model
