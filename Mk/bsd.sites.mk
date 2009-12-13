@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.487 2009/12/13 11:20:06 itetcu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.488 2009/12/13 11:30:48 itetcu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -382,16 +382,11 @@ MASTER_SITE_FEDORA_LINUX+= \
 	ftp://ftp.tlk-l.net/pub/mirrors/fedora.redhat.com/linux/core/%SUBDIR%/ \
 	http://limestone.uoregon.edu/ftp/fedora/%SUBDIR%/ \
 	ftp://limestone.uoregon.edu/fedora/%SUBDIR%/ \
-	http://mirrors.tiatera.com/fedora/core/%SUBDIR%/ \
-	ftp://mirrors.tiatera.com/fedora/core/%SUBDIR%/ \
 	ftp://fedora.bu.edu/core/%SUBDIR%/ \
 	http://mirror.anl.gov/pub/fedora-linux-core/%SUBDIR%/ \
 	ftp://mirror.anl.gov/pub/fedora-linux-core/%SUBDIR%/ \
 	ftp://ftp.cse.buffalo.edu/pub/Linux/fedora/linux/core/%SUBDIR%/ \
-	http://coblitz.planet-lab.org/pub/fedora/linux/core/%SUBDIR%/ \
 	ftp://ftp.software.umn.edu/linux/fedora/core/%SUBDIR%/ \
-	http://fedora.omnispring.com/core/%SUBDIR%/ \
-	ftp://fedora.omnispring.com/core/%SUBDIR%/ \
 	ftp://ftp.applios.net/pub/fedora/linux/core/%SUBDIR%/ \
 	http://fedora.mirror.facebook.com/linux/core/%SUBDIR%/ \
 	http://mirror.steadfast.net/fedora/core/%SUBDIR%/ \
