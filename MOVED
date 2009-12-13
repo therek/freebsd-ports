@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2047 2009/12/08 11:13:39 kwm Exp $
+# $FreeBSD: ports/MOVED,v 1.2048 2009/12/10 13:22:20 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4220,3 +4220,4 @@ x11-toolkits/p5-Gnome||2009-12-08|Has expired: Has been broken for more than 6 m
 editors/abiword-extras|editors/abiword|2009-12-08|This subport has been included in the main port.
 editors/abiword-plugins|editors/abiword|2009-12-08|This subport has been included in the main port.
 www/jakarta-tomcat5||2009-12-10|Has expired: Old version, consider using www/tomcat55 or www/tomcat6 instead
+net-mgmt/zabbix|net-mgmt/zabbix-server|2009-12-13|port was split into three components
