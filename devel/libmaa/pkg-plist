@@ -1,7 +1,7 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/libmaa/pkg-plist,v 1.1 2008/01/26 05:39:50 chinsan Exp $
 include/maa.h
 lib/libmaa.la
-lib/libmaa.so.1
+lib/libmaa.so.2
 lib/libmaa.so
 lib/libmaa.a
 %%PORTDOCS%%%%DOCSDIR%%/COPYING.LIB
