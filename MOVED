@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2052 2009/12/14 16:29:16 garga Exp $
+# $FreeBSD: ports/MOVED,v 1.2053 2009/12/15 09:28:38 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4225,3 +4225,4 @@ net/grdc|net/remmina|2009-12-14|Project was renamed
 net/grdc-applet|net/remmina-applet|2009-12-14|Project was renamed
 security/pfw||2009-12-14|Project is no longer maintainer
 ftp/pftpx||2009-12-15|Broken by libevent update and the project is dead
+x11-toolkits/evilvte|x11/evilvte|2009-12-15|Moved to x11 category
