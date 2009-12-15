@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/jed/pkg-plist,v 1.12 2005/11/09 08:56:40 garga Exp $
+@comment $FreeBSD: ports/editors/jed/pkg-plist,v 1.13 2006/04/03 13:18:04 garga Exp $
 bin/jed
 bin/jed-script
 %%XJED%%bin/xjed
@@ -124,6 +124,7 @@ lib/jed/lib/occur.sl
 lib/jed/lib/os.sl
 lib/jed/lib/paste.sl
 lib/jed/lib/perl.sl
+lib/jed/lib/perlxtra.sl
 lib/jed/lib/php.sl
 lib/jed/lib/pipe.sl
 lib/jed/lib/popups.sl
@@ -162,6 +163,7 @@ lib/jed/lib/textmode.sl
 lib/jed/lib/tiasm.sl
 lib/jed/lib/tmisc.sl
 lib/jed/lib/tmmode.sl
+lib/jed/lib/tmpfile.sl
 lib/jed/lib/tpascal.sl
 lib/jed/lib/untab.sl
 lib/jed/lib/util.sl
