@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/pear-Doctrine2/files/pear-install.in,v 1.1 2009/09/28 20:12:44 glarkin Exp $
 #
 # Register the package $1 in the port registry and optionally add a
 # non-standard channel.

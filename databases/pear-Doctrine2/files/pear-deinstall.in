@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/pear-Doctrine2/files/pear-deinstall.in,v 1.1 2009/09/28 20:12:44 glarkin Exp $
 #
 # Remove package declaration from PEAR's registry and optionally delete
 # a non-standard channel.
