@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/clamav-devel/pkg-plist,v 1.43 2009/02/26 12:50:39 garga Exp $
+@comment $FreeBSD: ports/security/clamav-devel/pkg-plist,v 1.44 2009/07/22 16:35:50 garga Exp $
 bin/clamav-config
 bin/clambc
 bin/clamconf
@@ -11,15 +11,12 @@ bin/sigtool
 sbin/clamd
 include/clamav.h
 include/clamav-config.h
-lib/libclamav.a
 lib/libclamav.la
 lib/libclamav.so
 lib/libclamav.so.6
-%%UNRAR%%lib/libclamunrar.a
 %%UNRAR%%lib/libclamunrar.la
 %%UNRAR%%lib/libclamunrar.so
 %%UNRAR%%lib/libclamunrar.so.6
-%%UNRAR%%lib/libclamunrar_iface.a
 %%UNRAR%%lib/libclamunrar_iface.la
 %%UNRAR%%lib/libclamunrar_iface.so
 %%UNRAR%%lib/libclamunrar_iface.so.6
