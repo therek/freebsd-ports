@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/games/bsdgames/pkg-plist,v 1.4 2009/11/21 22:00:33 miwi Exp $
 bin/adventure
 bin/arithmetic
 bin/atc
@@ -114,6 +114,7 @@ phantasia/motd
 phantasia/scoreboard
 @dirrmtry phantasia
 @exec chmod 0775 %D/phantasia
+@comment atc_score
 battlestar.log
 cfscores
 criblog
