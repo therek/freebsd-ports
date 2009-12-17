@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.438 2009/11/27 23:56:06 stas Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.439 2009/12/09 21:58:51 gavin Exp $
 #
 # FreeBSD Project Committers
 #
@@ -304,6 +304,7 @@
  37.76,		-122.42,	"lx"				# San Francisco, CA, USA
  37.80,		-122.43,	"njl"				# Downtown San Francisco, CA, USA
  37.77,		-122.44,	"archie"			# Haight, San Francisco, CA, USA
+ 37.460421,	-122.155141,	"mjacob"			# Menlo Park, CA, USA
  37.05,		-122.52,	"np"				# Cupertino, CA, USA
  45.5,		-122.6,		"dg"				# near Portland, OR, USA
  47.643,	-122.614,	"glewis"			# Bremerton, WA, USA
