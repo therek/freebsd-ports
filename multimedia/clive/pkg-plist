@@ -1,7 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/multimedia/clive/pkg-plist,v 1.20 2009/08/02 16:24:50 nivit Exp $
 bin/clive
 %%SITE_PERL%%/clive/Host/Vimeo.pm
-%%SITE_PERL%%/clive/Host/Redtube.pm
 %%SITE_PERL%%/clive/Host/Evisor.pm
 %%SITE_PERL%%/clive/Host/Liveleak.pm
 %%SITE_PERL%%/clive/Host/Dailymotion.pm
