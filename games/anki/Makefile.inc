@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/anki/Makefile.inc,v 1.5 2009/07/09 09:05:30 miwi Exp $
+# $FreeBSD: ports/games/anki/Makefile.inc,v 1.6 2009/07/28 07:00:19 miwi Exp $
 
 PORTNAME=	anki
 PORTVERSION=	0.9.9.8.5
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 USE_PYTHON=	yes
 USE_GETTEXT=	yes
 USE_PYDISTUTILS=	easy_install
-
-.include <bsd.port.pre.mk>
 
 .if !defined(PKGNAMEPREFIX)
 BUILD_DEPENDS=	${PYNUMPY} \
@@ -47,4 +45,4 @@ post-patch:
 	@${REINPLACE_CMD} -e '/req/d' ${WRKSRC}/setup.py
 .endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
