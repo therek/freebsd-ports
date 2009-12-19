@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.25 2009/12/02 11:13:58 miwi Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.26 2009/12/19 22:08:17 makc Exp $
 #   $MCom: ports-stable/multimedia/vlc-devel/Makefile.inc,v 1.4 2009/01/09 23:41:21 mezz Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
