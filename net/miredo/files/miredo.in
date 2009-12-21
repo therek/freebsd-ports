@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/miredo/files/miredo.in,v 1.1 2006/08/13 19:39:24 miwi Exp $
+# $FreeBSD: ports/net/miredo/files/miredo.in,v 1.2 2007/02/26 23:02:03 dougb Exp $
 #
 
 # PROVIDE: miredo
@@ -20,7 +20,7 @@ name=miredo
 rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/${name}
-required_files=%%PREFIX%%/etc/miredo.conf
+required_files=%%PREFIX%%/etc/miredo/miredo.conf
 
 load_rc_config ${name}
 run_rc_command "$1"
