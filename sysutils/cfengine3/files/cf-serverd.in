@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/cfengine3/files/cf-serverd.in,v 1.1 2009/02/10 21:37:55 bsam Exp $
+# $FreeBSD: ports/sysutils/cfengine3/files/cf-serverd.in,v 1.2 2009/07/15 16:56:04 dougb Exp $
 #
 # PROVIDE: cf-serverd
 # REQUIRE: SERVERS
@@ -17,13 +17,13 @@
 
 . %%RC_SUBR%%
 
-name="cf-serverd"
+name="cf_serverd"
 rcvar=${name}_enable
 
 command="%%PREFIX%%/sbin/${name}"
 
 load_rc_config $name
 
-: ${cf-serverd_enable="NO"}
+: ${cf_serverd_enable="NO"}
 
 run_rc_command "$1"
