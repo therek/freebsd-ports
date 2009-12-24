@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/phpldapadmin/files/pkg-deinstall.in,v 1.1 2005/12/11 23:51:12 lawrance Exp $
+# $FreeBSD: ports/net/phpldapadmin/files/pkg-deinstall.in,v 1.2 2008/03/09 04:45:38 rafan Exp $
 #
 
 case $2 in
@@ -8,7 +8,7 @@ case $2 in
     cat <<EOMSG
 The phpldapadmin-suphp port has been deleted.
 If you are not upgrading and don't intend to use
-phpLDAPadmin any more then you may wish to delete
+phpldapadmin any more then you may wish to delete
 the %%PLA_USR%% account, which can be done with
 the following command:
 
