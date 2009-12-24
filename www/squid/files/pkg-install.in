@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid26/files/pkg-install.in,v 1.3 2006/11/04 23:18:03 miwi Exp $
+# $FreeBSD: ports/www/squid/files/pkg-install.in,v 1.3 2007/02/07 08:42:29 pav Exp $
 #
 
 PATH=/bin:/usr/bin:/usr/sbin
@@ -60,7 +60,7 @@ PRE-INSTALL)
 	if [ ! -d ${squid_confdir} ]; then
 		echo "Creating ${squid_confdir}..."
 		install -d -o root -g ${squid_group} \
-		    -m 0750 ${squid_confdir}
+		    -m 0755 ${squid_confdir}
 	fi
 	;;
 POST-INSTALL)
