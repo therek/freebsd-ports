@@ -48,7 +48,7 @@ AUTHOR: pgollucci@FreeBSD.org
 
   * USE_APACHE=yes is dead!
 
-  * WITH_APACHE2 is dead!
+  * WITH_APACHE2, WITH_APACHE20, WITH_APACHE22 are dead
 
     You should set USE_APACHE=13|20|22+.  WITH_APACHE option can
     be used to conditional include support for ANY version of
@@ -1530,4 +1530,4 @@ POSSIBILITY OF SUCH DAMAGE.
 Contact portmgr@FreeBSD.org if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.93 2009/09/06 22:44:31 flz Exp $
+$FreeBSD: ports/CHANGES,v 1.94 2009/09/15 11:03:30 erwin Exp $
