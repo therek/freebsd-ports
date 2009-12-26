@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/games/xsoldier/pkg-plist,v 1.4 2005/10/22 20:19:48 naddy Exp $
 bin/xsoldier
 share/examples/xsoldier/xsoldier.scores
 @exec cp %D/share/examples/xsoldier/xsoldier.scores %%SCOREFILE%% && chgrp games %%SCOREFILE%% && chmod 664 %%SCOREFILE%%
@@ -32,6 +32,7 @@ share/xsoldier/PlayerShot3.xpm
 share/xsoldier/Star1.xpm
 share/xsoldier/Star2.xpm
 share/xsoldier/Title.xpm
+share/xsoldier/font.xpm
 share/xsoldier/font1.xpm
 share/xsoldier/font2.xpm
 share/xsoldier/font3.xpm
