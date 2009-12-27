@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/databases/tokyocabinet/pkg-plist,v 1.9 2008/12/27 18:03:09 pgollucci Exp $
+@comment $FreeBSD: ports/databases/tokyocabinet/pkg-plist,v 1.10 2009/01/26 18:03:16 pgollucci Exp $
 bin/tcamgr
+bin/tcamttest
 bin/tcatest
 bin/tcbmgr
 bin/tcbmttest
@@ -10,12 +11,12 @@ bin/tcftest
 bin/tchmgr
 bin/tchmttest
 bin/tchtest
-bin/tcucodec
-bin/tcumttest
-bin/tcutest
 bin/tctmgr
 bin/tctmttest
 bin/tcttest
+bin/tcucodec
+bin/tcumttest
+bin/tcutest
 include/tcadb.h
 include/tcbdb.h
 include/tcfdb.h
