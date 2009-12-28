@@ -1,14 +1,15 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.31 2009/08/02 19:32:04 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.32 2009/08/19 02:26:27 mezz Exp $
 #
 # Please view me with 4 column tabs!
 #
-# Please make sure all changes to this file are passed either through
-# the maintainer, or portmgr@FreeBSD.org
+# Note: before committing to this file, contact portmgr to arrange for an
+# experimental ports run.  Untested commits may be backed out at portmgr's
+# discretion.
 
-Autotools_Include_MAINTAINER=	ade@FreeBSD.org
+Autotools_Include_MAINTAINER=	autotools@FreeBSD.org
 
 #---------------------------------------------------------------------------
 # Entry point into the autotools system
