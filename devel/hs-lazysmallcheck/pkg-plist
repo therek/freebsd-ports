@@ -1,12 +1,10 @@
-@comment $FreeBSD: ports/devel/hs-lazysmallcheck-ghc/pkg-plist,v 1.1 2009/03/14 15:19:34 pgj Exp $
+@comment $FreeBSD: ports/devel/hs-lazysmallcheck-ghc/pkg-plist,v 1.2 2009/09/02 15:38:37 pgj Exp $
 %%LAZYSMALLCHECK_LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HSlazysmallcheck-%%LAZYSMALLCHECK_VERSION%%.o
 %%LAZYSMALLCHECK_LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Test/LazySmallCheck.hi
-%%LAZYSMALLCHECK_LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Test/LazySmallCheck/Generic.hi
 %%LAZYSMALLCHECK_LIBDIR_REL%%/ghc-%%GHC_VERSION%%/libHSlazysmallcheck-%%LAZYSMALLCHECK_VERSION%%.a
 %%LAZYSMALLCHECK_LIBDIR_REL%%/register.sh
 %%NOPORTDOCS%%%%DOCSDIR%%/LICENSE
 %%NOPORTDOCS%%@dirrmtry %%DOCSDIR%%
-@dirrm %%LAZYSMALLCHECK_LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Test/LazySmallCheck
 @dirrm %%LAZYSMALLCHECK_LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Test
 @dirrm %%LAZYSMALLCHECK_LIBDIR_REL%%/ghc-%%GHC_VERSION%%
 @dirrm %%LAZYSMALLCHECK_LIBDIR_REL%%
