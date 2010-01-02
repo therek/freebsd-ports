@@ -30,7 +30,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.34 2009/09/26 01:02:01 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.35 2009/10/10 11:45:30 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -186,7 +186,7 @@ _USE_GCC:=${_GCC_FOUND}
 
 #
 # Determine if the installed OS already has this GCCVERSION, and if not
-# then set BUILD_DEPENDS, CC, and CXX.
+# then set proper dependencies, CC, and CXX.
 #
 .for v in ${GCCVERSIONS}
 . if ${_USE_GCC} == ${_GCCVERSION_${v}_V}
@@ -203,6 +203,9 @@ CXX:=			g++${V}
 
 .if defined(_GCC_BUILD_DEPENDS)
 BUILD_DEPENDS+=	${_GCC_PORT_DEPENDS}:${PORTSDIR}/lang/${_GCC_BUILD_DEPENDS}
+. if ${_USE_GCC} != 3.4
+RUN_DEPENDS+=	${_GCC_PORT_DEPENDS}:${PORTSDIR}/lang/${_GCC_BUILD_DEPENDS}
+. endif
 .endif
 
 .endif
