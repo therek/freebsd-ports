@@ -1509,7 +1509,7 @@ listed here, and it only starts on January 29, 2004.
 
 Copyright information:
 
-Copyright 2004-2009 FreeBSD Foundation All Rights Reserved.
+Copyright 2004-2010 FreeBSD Foundation All Rights Reserved.
 
 Redistribution, publication, translation and use, with or without
 modification, in full or in part, in any form or format of this
@@ -1530,4 +1530,4 @@ POSSIBILITY OF SUCH DAMAGE.
 Contact portmgr@FreeBSD.org if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.94 2009/09/15 11:03:30 erwin Exp $
+$FreeBSD: ports/CHANGES,v 1.95 2009/12/25 18:27:35 pgollucci Exp $
