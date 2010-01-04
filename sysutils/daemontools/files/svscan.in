@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/daemontools/files/svscan.sh.sample,v 1.13 2006/02/20 20:47:41 dougb Exp $
+# $FreeBSD: ports/sysutils/daemontools/files/svscan.sh.sample,v 1.14 2007/10/30 10:49:16 roam Exp $
 #
 
 # PROVIDE: svscan
