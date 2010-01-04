@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.39 2009/11/30 14:33:56 skreuzer Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.40 2009/11/30 16:20:34 skreuzer Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -112,6 +112,7 @@ MYSQL41_LIBVER=		14
 MYSQL50_LIBVER=		15
 MYSQL51_LIBVER=		16
 MYSQL54_LIBVER=		16
+MYSQL55_LIBVER=		16
 MYSQL60_LIBVER=		16
 
 # Setting/finding MySQL version we want.
