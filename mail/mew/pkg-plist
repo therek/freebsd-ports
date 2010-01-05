@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mew/pkg-plist,v 1.10 2008/06/23 18:53:31 anray Exp $
+@comment $FreeBSD: ports/mail/mew/pkg-plist,v 1.11 2009/01/10 20:25:15 anray Exp $
 bin/cmew
 bin/incm
 bin/mew-pinentry
@@ -19,6 +19,7 @@ bin/smew
 %%PORTDOCS%%%%DOCSDIR%%/00changes.5.1
 %%PORTDOCS%%%%DOCSDIR%%/00changes.5.2
 %%PORTDOCS%%%%DOCSDIR%%/00changes.6.1
+%%PORTDOCS%%%%DOCSDIR%%/00changes.6.2
 %%PORTDOCS%%%%DOCSDIR%%/00copyright
 %%PORTDOCS%%%%DOCSDIR%%/00copyright.jis
 %%PORTDOCS%%%%DOCSDIR%%/00diff
