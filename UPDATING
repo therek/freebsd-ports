@@ -5,6 +5,20 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20100106:
+  AFFECTS: users of devel/websvn
+  AUTHOR: miwi@FreeBSD.org
+
+  The default install directory for websvn has changed from
+  ${PREFIX}/www/data/websvn to ${PREFIX}/www/websvn.
+
+  If you are updating from a previous version, to preserve your settings
+  and data, please do the following:
+
+    mv /usr/local/www/data/websvn /usr/local/www
+
+  Then update as usual.
+
 20091227:
   AFFECTS: users of sysutils/grok
   AUTHOR: Wesley Shields <wxs@FreeBSD.org>
@@ -8692,4 +8706,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.877 2009/12/26 22:32:14 pgollucci Exp $
+$FreeBSD: ports/UPDATING,v 1.878 2009/12/27 14:27:53 wxs Exp $
