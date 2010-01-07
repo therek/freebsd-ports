@@ -5,6 +5,14 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20100107:
+  AFFECTS: users of security/openvpn*
+  AUTHOR: mandree@FreeBSD.org
+
+  security/openvpn has been moved to security/openvpn20 and upgraded to 2.0.9.
+  security/openvpn has been upgraded to 2.1.1, and security/openvpn-devel has
+  been removed.
+
 20100106:
   AFFECTS: users of devel/websvn
   AUTHOR: miwi@FreeBSD.org
@@ -8706,4 +8714,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.878 2009/12/27 14:27:53 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.879 2010/01/06 21:58:05 miwi Exp $
