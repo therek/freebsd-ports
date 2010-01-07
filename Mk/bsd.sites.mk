@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.490 2009/12/13 22:19:25 itetcu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.491 2009/12/14 16:20:02 garga Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1184,7 +1184,11 @@ MASTER_SITE_SOURCEFORGE_JP+= \
 .if !defined(IGNORE_MASTER_SITE_SOURCEWARE)
 MASTER_SITE_SOURCEWARE+= \
 	ftp://ftp.funet.fi/pub/mirrors/sources.redhat.com/pub/%SUBDIR%/ \
-	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/sources.redhat.com/%SUBDIR%/
+	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/sources.redhat.com/%SUBDIR%/ \
+	http://mirrors.kernel.org/sources.redhat.com/%SUBDIR%/ \
+	http://gd.tuwien.ac.at/gnu/sourceware/%SUBDIR%/ \
+	http://sources-redhat.mirrors.airband.net/%SUBDIR%/ \
+	http://ftp.cs.pu.edu.tw/Linux/sourceware/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_SUNSITE)
