@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.631 2009/12/18 14:28:46 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.632 2009/12/29 10:25:49 miwi Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1693,7 +1693,7 @@ MANCOMPRESSED?=	no
 
 .if defined(PATCHFILES)
 .if ${PATCHFILES:M*.zip}x != x
-PATCH_DEPENDS+=		unzip:${PORTSDIR}/archivers/unzip
+PATCH_DEPENDS+=		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 .endif
 .endif
 
@@ -1726,7 +1726,7 @@ LIB32DIR=	lib
 PLIST_SUB+=	LIB32DIR=${LIB32DIR}
 
 .if defined(USE_ZIP)
-EXTRACT_DEPENDS+=	unzip:${PORTSDIR}/archivers/unzip
+EXTRACT_DEPENDS+=	${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 .endif
 .if defined(USE_MAKESELF)
 EXTRACT_DEPENDS+=	unmakeself:${PORTSDIR}/archivers/unmakeself
