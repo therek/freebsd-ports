@@ -1,0 +1,30 @@
+# $FreeBSD: ports/devel/newt/files/setup.py,v 1.3 2006/10/09 12:11:00 perky Exp $
+import os
+from distutils.core import setup, Extension
+
+setup ( name = 'newt',
+	version = '%%VERSION%%',
+	description = 'Python interface to Newt module',
+	py_modules = ['snack'],
+	ext_modules = [ Extension(
+		name='_snack',
+		sources=['snackmodule.c'],
+		include_dirs=['.', '%%LOCALBASE%%'+'/include', '%%PREFIX%%'+'/include'],
+		library_dirs=['.', '%%LOCALBASE%%'+'/lib', '%%PREFIX%%'+'/lib'],
+		libraries=['newt', 'popt', 'slang', 'ncurses']
+	)])
+# $FreeBSD: ports/devel/newt/files/setup.py,v 1.3 2006/10/09 12:11:00 perky Exp $
+import os
+from distutils.core import setup, Extension
+
+setup ( name = 'newt',
+	version = '%%VERSION%%',
+	description = 'Python interface to Newt module',
+	py_modules = ['snack'],
+	ext_modules = [ Extension(
+		name='_snack',
+		sources=['snackmodule.c'],
+		include_dirs=['.', '%%LOCALBASE%%'+'/include', '%%PREFIX%%'+'/include'],
+		library_dirs=['.', '%%LOCALBASE%%'+'/lib', '%%PREFIX%%'+'/lib'],
+		libraries=['newt', 'popt', 'slang', 'ncurses']
+	)])
