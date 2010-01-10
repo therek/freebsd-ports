@@ -1,6 +1,6 @@
 # Makefile for other stuffs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.others,v 1.10 2008/04/06 05:11:20 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.others,v 1.11 2009/10/18 04:46:09 maho Exp $
 
 #other stuffs which are not directly related to making ports
 #package-rename: rename package for uploading
@@ -48,9 +48,9 @@ solver:
 languagepack:
 	@${ECHO_MSG} "===>   Make languagepack of OpenOffice.org"
 .if defined (ALL_LOCALIZED_LANGS)
-	@cd ${WRKSRC} ; ${TCSH} -c 'source ${FREEBSD_ENV_SET} ; cd instsetoo_native/util ; dmake ooolanguagepack'
+	@cd ${WRKSRC} ; ${BASH} -c 'source ${FREEBSD_ENV_SET} ; cd instsetoo_native/util ; dmake ooolanguagepack'
 .else
-	@cd ${WRKSRC} ; ${TCSH} -c 'source ${FREEBSD_ENV_SET} ; cd instsetoo_native/util ; dmake ooolanguagepack_${LOCALIZED_LANG}'
+	@cd ${WRKSRC} ; ${BASH} -c 'source ${FREEBSD_ENV_SET} ; cd instsetoo_native/util ; dmake ooolanguagepack_${LOCALIZED_LANG}'
 .endif
 
 .if !defined (ALL_LOCALIZED_LANGS)
