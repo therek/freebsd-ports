@@ -5,11 +5,11 @@
 # Date created:				23 Apr 2007
 # Whom:					Boris Samorodov <bsam@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/eric4/Makefile.inc,v 1.27 2009/10/13 07:12:42 bsam Exp $
+# $FreeBSD: ports/devel/eric4/Makefile.inc,v 1.28 2009/11/14 14:26:52 bsam Exp $
 #
 
 PORTNAME=	eric4
-PORTVERSION=	4.3.9
+PORTVERSION=	4.4.0
 MASTER_SITES=	SF/eric-ide/${PORTNAME}/stable/${PORTVERSION}
 DISTNAME?=	${PORTNAME}-i18n-${I18N_LANG}-${PORTVERSION}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
