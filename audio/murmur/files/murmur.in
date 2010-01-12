@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/murmur/files/murmur.in,v 1.1 2009/08/27 20:22:13 miwi Exp $
 #
 # PROVIDE: murmur
 # REQUIRE: DAEMON
@@ -21,7 +21,7 @@ murmur_user=${murmur_user:-"murmur"}
 name=murmur
 rcvar=${name}_enable
 
-command="%%PREFIX%%/bin/murmurd"
+command="%%PREFIX%%/sbin/murmurd"
 command_args="-ini %%PREFIX%%/etc/murmur.ini"
 pidfile="/var/run/murmur/murmur.pid"
 
