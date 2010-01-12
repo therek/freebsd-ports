@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2070 2010/01/11 15:16:14 ale Exp $
+# $FreeBSD: ports/MOVED,v 1.2071 2010/01/11 15:20:38 ale Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4253,3 +4253,4 @@ databases/mysql60-server||2010-01-10|Has expired: no longer under development
 databases/mysql60-scripts||2010-01-10|Has expired: no longer under development
 databases/p5-DBD-mysql60||2010-01-10|Has expired: no longer under development
 mail/enigmail||2010-01-10|Has expired: stop support for mozilla, use a slave port instead
+devel/cl-asdf-sbcl||2010-01-12|lang/sbcl has a bundled asdf version
