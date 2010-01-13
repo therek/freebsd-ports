@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/kroc/pkg-plist,v 1.10 2009/11/11 14:41:07 tdb Exp $
+@comment $FreeBSD: ports/lang/kroc/pkg-plist,v 1.11 2009/12/09 09:45:32 tdb Exp $
 bin/cdxview
 bin/ilibr
 bin/kmakef
@@ -151,6 +151,7 @@ lib/kroc/examples/course/sort_pump
 lib/kroc/examples/course/test_utils
 lib/kroc/examples/game/game
 lib/kroc/examples/graphics3d/butterflies
+lib/kroc/examples/graphics3d/g3dboard
 lib/kroc/examples/graphics3d/g3dchess
 lib/kroc/examples/graphics3d/g3dcog2
 lib/kroc/examples/graphics3d/g3dcogs
