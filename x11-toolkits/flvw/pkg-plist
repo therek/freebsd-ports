@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/flvw/pkg-plist,v 1.2 2001/11/06 11:07:55 petef Exp $
+@comment $FreeBSD: ports/x11-toolkits/flvw/pkg-plist,v 1.3 2004/03/12 20:11:02 naddy Exp $
 %%INCSDIR%%/Flv_CStyle.H
 @exec ln -fs %f %B/Flv_CStyle.h
 @unexec rm -f %B/Flv_CStyle.h
@@ -41,4 +41,4 @@ lib/libflvw.so.1
 %%PORTDOCS%%%%DOCSDIR%%/stylebasics.html
 %%PORTDOCS%%%%DOCSDIR%%/widget_features.html
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
-@unexec rmdir %%INCSDIR%% 2> /dev/null || :
+@dirrmtry %%INCSDIR%%
