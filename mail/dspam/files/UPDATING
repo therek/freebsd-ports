@@ -1,5 +1,5 @@
 # $Tecnik: ports/mail/dspam/files/UPDATING,v 1.16 2006/06/07 23:45:21 itetcu Exp $
-# $FreeBSD: ports/mail/dspam/files/UPDATING,v 1.27 2006/10/08 07:41:42 itetcu Exp $
+# $FreeBSD: ports/mail/dspam/files/UPDATING,v 1.28 2006/11/12 15:56:58 itetcu Exp $
 #
 # for each PKGNAME or user option change an entry should be added in this file
 # each entry 
@@ -15,6 +15,19 @@ This file concetrate on the FreeBSD / port specific changes and one should read
 also the UPGRADING enclosed in the dspam distribution. You can see it by doing
 in the port directory:
 make extract;  more `find . -type f -maxdepth 2 -name UPGRADING`
+
+###########################################################################
+# dspam-3.9.0
+#
+
+Port changes:
+- LDAP option --> EXTERNAL_LOOKUP (following upstream changes)
+- CGI option --> WebUI (following upstream changes)
+- CGI_PATH var --> WWWDIR (defaulting to PREFIX/www/dspam)
+
+Lots of changes, see UPGRADING file in the tarball. At very least you need
+to adjust your dspam.conf and your database.
+
 
 ###########################################################################
 # dspam-3.6.8_1
