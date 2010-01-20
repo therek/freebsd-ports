@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/cl-asdf/bsd.cl-asdf.mk,v 1.2 2010/01/16 22:19:27 olgeni Exp $
+# $FreeBSD: ports/devel/cl-asdf/bsd.cl-asdf.mk,v 1.3 2010/01/20 12:40:08 olgeni Exp $
 #
 # bsd.cl-asdf.mk - Common Lisp related macros
 #
@@ -94,7 +94,7 @@ do-build:
 
 .if defined(USE_CLISP)
 	@FBSD_ASDF_COMPILE_PORT=t PORTNAME=${PORTNAME} WRKSRC=${WRKSRC}/ \
-		${CLISP} -q -ansi -norc \
+		${CLISP} -ansi -norc \
 		-i ${LOCALBASE}/etc/asdf-init \
 		-x "(asdf:oos 'asdf:compile-op :${MODULE})"
 	@${FIND} ${WRKSRC} -name "*.lib" | ${XARGS} ${RM}
