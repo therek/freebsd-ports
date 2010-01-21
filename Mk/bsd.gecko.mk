@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.16 2009/12/02 13:03:42 beat Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.17 2010/01/17 19:29:06 marcel Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -561,7 +561,7 @@ gecko-pre-install:
 .if !defined(NOGECKO_PLIST)
 	@${RM} -rf ${FAKEDIR} ${PLIST} ${PLISTD} ${PLISTF}
 	@${TOUCH} -f ${PLIST} ${PLISTD} ${PLISTF}
-	@cd ${MOZSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} \
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} \
 		${MAKEFILE} ${MAKE_ARGS} prefix=${FAKEDIR} ${INSTALL_TARGET}
 .if defined(MOZILLA_SUFX) && ${MOZILLA_SUFX}!="none"
 	${MV} ${FAKEDIR}/bin/${MOZILLA:S/${MOZILLA_SUFX}//} ${FAKEDIR}/bin/${MOZILLA}
