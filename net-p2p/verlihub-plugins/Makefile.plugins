@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net-p2p/verlihub-plugins/Makefile.plugins,v 1.5 2009/11/19 07:56:10 wen Exp $
+# $FreeBSD: ports/net-p2p/verlihub-plugins/Makefile.plugins,v 1.6 2010/01/20 21:58:36 pav Exp $
 
 # common bits for verlihub plugins
 
@@ -16,7 +16,7 @@ RUN_DEPENDS+=	${LOCALBASE}/bin/verlihub:${PORTSDIR}/net-p2p/verlihub
 
 USE_GCC=	4.2+
 GNU_CONFIGURE=	yes
-USE_GCC=	4.2+
+CFLAGS+=	-fPIC
 
 PLIST_FILES+=	lib/lib${PLUGIN_NAME}_pi.a \
 		lib/lib${PLUGIN_NAME}_pi.la \
