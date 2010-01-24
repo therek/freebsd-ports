@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/ifgraph/pkg-deinstall,v 1.1 2003/12/08 20:51:56 krion Exp $
 #
 
 PATH=/bin:/usr/bin:/usr/sbin
