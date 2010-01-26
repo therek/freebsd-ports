@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/dovecot/pkg-plist,v 1.30 2009/08/14 21:30:42 wxs Exp $
+@comment $FreeBSD: ports/mail/dovecot/pkg-plist,v 1.31 2009/12/10 15:30:08 wxs Exp $
 @dirrmtry include/dovecot
 lib/dovecot/imap/lib01_acl_plugin.so
 lib/dovecot/imap/lib02_imap_acl_plugin.so
@@ -94,7 +94,7 @@ lib/dovecot/lib21_fts_squat_plugin.so
 libexec/dovecot/authtest
 libexec/dovecot/checkpassword-reply
 libexec/dovecot/convert-tool
-%%LDA%%libexec/dovecot/deliver
+libexec/dovecot/deliver
 libexec/dovecot/dict
 libexec/dovecot/dovecot-auth
 libexec/dovecot/expire-tool
