@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-Algorithm-Evolutionary/pkg-plist,v 1.8 2009/07/28 14:30:50 tobez Exp $
+@comment $FreeBSD: ports/devel/p5-Algorithm-Evolutionary/pkg-plist,v 1.9 2009/09/13 16:45:59 tobez Exp $
 bin/canonical-genetic-algorithm.pl
 bin/rectangle-coverage.pl
 bin/tide_bitstring.pl
@@ -31,6 +31,7 @@ bin/tide_float.pl
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/Base.pm
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/Bitflip.pm
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/CX.pm
+%%SITE_PERL%%/Algorithm/Evolutionary/Op/Canonical_GA_NN.pm
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/CanonicalGA.pm
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/ChangeLengthMutation.pm
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/Convergence_Terminator.pm
@@ -62,6 +63,7 @@ bin/tide_float.pl
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/Selector.pm
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/SimulatedAnnealing.pm
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/Storing.pm
+%%SITE_PERL%%/Algorithm/Evolutionary/Op/String_Mutation.pm
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/StringRand.pm
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/TournamentSelect.pm
 %%SITE_PERL%%/Algorithm/Evolutionary/Op/TreeMutation.pm
