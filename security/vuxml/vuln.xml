@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2102 2010/01/21 19:52:23 beat Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2103 2010/01/28 21:15:20 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -43,7 +43,7 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
         <name>ircd-ratbox-devel</name>
-	<range><lt>3.0.5</lt></range>
+	<range><lt>3.0.6</lt></range>
       </package>
     </affects>
     <description>
