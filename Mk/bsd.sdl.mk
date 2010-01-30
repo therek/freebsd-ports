@@ -29,7 +29,7 @@
 #
 
 #
-# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.14 2008/04/28 23:20:54 edwin Exp $
+# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.15 2009/08/02 08:35:30 mva Exp $
 #
 
 SDL_Include_MAINTAINER=		edwin@FreeBSD.org
@@ -61,12 +61,12 @@ _VERSION_gui=	0
 _SUBDIR_gui=	x11-toolkits
 _REQUIRES_gui=	sdl image ttf
 
-_VERSION_image=	1
+_VERSION_image=	8
 _SUBDIR_image=	graphics
 _LIB_image=	SDL_image-1.2
 _REQUIRES_image=sdl
 
-_VERSION_mixer=	2
+_VERSION_mixer=	10
 _SUBDIR_mixer=	audio
 _LIB_mixer=	SDL_mixer-1.2
 _REQUIRES_mixer=sdl
