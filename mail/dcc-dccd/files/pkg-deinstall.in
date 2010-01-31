@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/mail/dcc-dccd/pkg-deinstall,v 1.1 2004/11/21 02:35:45 pav Exp $
 
 if [ "$2" != "POST-DEINSTALL" ]; then
 	exit 0

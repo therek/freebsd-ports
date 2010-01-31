@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/dcc-dccd/pkg-install,v 1.1 2004/11/21 02:35:45 pav Exp $
+# $FreeBSD: ports/mail/dcc-dccd/pkg-install,v 1.2 2009/06/15 19:10:40 dhn Exp $
 
 PREFIX=${PKG_PREFIX:-%%PREFIX%%}
 
