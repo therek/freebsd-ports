@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2084 2010/01/28 01:59:02 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.2085 2010/01/31 13:51:47 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4309,4 +4309,5 @@ x11-fm/velocity||2010-01-28|Has expired: has been broken for 7 months
 x11-drivers/xf86-video-nsc||2010-01-28|Has expired: has been broken for 5 months
 www/rubygem-merb||2010-01-28|Has expired: has been broken for 5 months
 security/shibboleth-sp||2010-01-28|Has expired: has been broken for 3 months
-www/pecl-pecl_http|www/pecl-http|2010-02-31|duplicate ports
+www/pecl-pecl_http|www/pecl-http|2010-01-31|duplicate ports
+chinese/stardict2-dict-zh_CN||2010-01-31|Please use chinese/stardict-dict-zh_CN
