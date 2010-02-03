@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2107 2010/02/02 09:44:10 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2108 2010/02/02 22:42:45 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -127,7 +127,7 @@ Note:  Please add new entries to the beginning of this file.
       <cvename>CVE-2010-0300</cvename>
       <url>http://www.debian.org/security/2010/dsa-1980</url>
       <url>http://lists.ratbox.org/pipermail/ircd-ratbox/2010-January/000890.html</url>
-      <url>http://lists.ratbox.org/pipermail/ircd-ratbox/2010-January/000891.html></url>
+      <url>http://lists.ratbox.org/pipermail/ircd-ratbox/2010-January/000891.html</url>
     </references>
     <dates>
       <discovery>2010-01-25</discovery>
