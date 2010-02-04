@@ -1,7 +1,7 @@
 #!/bin/sh
 # This script is in the public domain.  Original author: Garrett Wollman
 #
-# $FreeBSD: ports/sysutils/smartmontools/files/smart.in,v 1.4 2009/05/29 12:13:26 miwi Exp $
+# $FreeBSD: ports/sysutils/smartmontools/files/smart.in,v 1.5 2009/06/03 18:12:30 wxs Exp $
 #
 
 if [ -r /etc/defaults/periodic.conf ]; then
@@ -41,7 +41,7 @@ case "${daily_status_smart_enable}" in
 				echo 
 				echo "Checking health of ${device}:"
 				echo
-				${smartctl} ${daily_status_smartctl_flags} ${device} > "${tmpfile}"
+				${smartctl} ${daily_status_smartctl_flags} /dev/${device} > "${tmpfile}"
 				status=$?
 				if [ $((status & 3)) -ne 0 ]; then
 					rc=2
