@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2087 2010/02/02 23:31:35 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.2088 2010/02/04 02:24:04 pgollucci Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4319,3 +4319,4 @@ math/octave-forge-parallel||2010-02-02|Has expired: has been broken for 3 months
 math/octave-forge-triangular||2010-02-02|Has expired: has been broken for 3 months
 math/octave-forge-vrml||2010-02-02|Has expired: has been broken for 3 months
 sysutils/lugtools|sysutils/p5-Plugtools|2010-02-04|Superceeded by sysutils/p5-Plugtools
+irc/conspire||2010-02-04|Upstream development abandoned
