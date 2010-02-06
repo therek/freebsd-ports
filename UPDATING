@@ -5,6 +5,15 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20100206:
+  AFFECTS: users of net/samba4-devel
+  AUTHOR: timur@FreeBSD.org
+
+  Default configuration file was moved to ${LOCALBASE}/etc/smb4.conf to
+  avoid conflicts with the installed net/samba3?. Also, userland utils
+  are not installed by default, which should also help with the parallel
+  setup of Samba3 and Samba4.
+
 20100205:
   AFFECTS: users of qt 3 and kde 3
   AUTHOR: itetcu@FreeBSD.org
@@ -8836,4 +8845,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.891 2010/02/06 11:16:25 itetcu Exp $
+$FreeBSD: ports/UPDATING,v 1.892 2010/02/06 12:32:01 itetcu Exp $
