@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/maradns/files/maradns.in,v 1.1 2009/07/15 06:58:30 pgollucci Exp $
+# $FreeBSD: ports/dns/maradns/files/maradns.in,v 1.2 2009/10/07 09:51:28 miwi Exp $
 #
 
 # PROVIDE: maradns
@@ -17,7 +17,7 @@
 name="maradns"
 rcvar=`set_rcvar`
 command="%%PREFIX%%/bin/duende"
-command_args="maradns -f ${maradns_conf}"
+command_args="%%PREFIX%%/sbin/maradns -f ${maradns_conf}"
 pidfile="/var/run/${name}.pid"
 
 load_rc_config $name
