@@ -2,7 +2,7 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.26 2009/11/04 19:47:35 lev Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.27 2010/02/10 14:47:58 skv Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.6.9
@@ -42,6 +42,7 @@ NEON_VER!=	${LOCALBASE}/bin/neon-config --version | \
 NEON_VER=      29
 .endif
 LIB_DEPENDS+=	neon.${NEON_VER}:${PORTSDIR}/www/neon${NEON_VER}
+PLIST_SUB+=		NEON=""
 .else
 CONFIGURE_ARGS+=	--without-neon
 PLIST_SUB+=		NEON="@comment "
