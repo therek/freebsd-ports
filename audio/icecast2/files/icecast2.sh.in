@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/icecast2/files/icecast2.sh.in,v 1.3 2006/02/20 20:46:48 dougb Exp $
+# $FreeBSD: ports/audio/icecast2/files/icecast2.sh.in,v 1.4 2006/08/03 20:39:08 erwin Exp $
 #
 
 # PROVIDE: icecast2
 # REQUIRE: DAEMON
-# BEFORE:  login
+# BEFORE:  LOGIN
 # KEYWORD: shutdown
 
 # Add the following line to /etc/rc.conf to enable `icecast2'. This requires
