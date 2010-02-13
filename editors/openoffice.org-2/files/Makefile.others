@@ -1,6 +1,6 @@
 # Makefile for other stuffs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-2.0/files/Makefile.others,v 1.4 2005/12/23 04:14:28 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-2/files/Makefile.others,v 1.5 2006/05/29 00:26:55 maho Exp $
 
 #other stuffs which are not directly related to making ports
 #package-rename: rename package for uploading
@@ -11,7 +11,7 @@
 
 package-rename:
 	@${ECHO_MSG} "===>   Rename package for OpenOffice.org mirror upload";
-	@${MV} ${PKGFILE} \
+	@${LN} ${PKGFILE} \
 		${WRKDIR}/../${PACKAGE_BASENAME}_install_${LOCALIZED_LANG}${PKG_SUFX}
 
 package-canonical:
