@@ -1,12 +1,17 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.61 2009/07/25 02:22:27 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.62 2009/09/04 23:58:20 maho Exp $
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.61 2009/07/25 02:22:27 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.62 2009/09/04 23:58:20 maho Exp $
 
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
 
+.if defined(WITH_KDE4)
+CONFIGURE_ARGS+=	--enable-kde4 QT4DIR="${QT_PREFIX}" QT4LIB="${QT_LIBDIR}" QT4INC="${QT_INCDIR}" KDE4DIR="${KDE4_PREFIX}"
+QT_COMPONENTS+=		moc
+.endif
+ 
 .if defined(WITH_KDE)
 CONFIGURE_ARGS+=	--enable-kde QTDIR="${QT_PREFIX}"
 .endif
@@ -29,7 +34,6 @@ CONFIGURE_ARGS+=	--disable-gconf --disable-gnome-vfs
 .else
 USE_GNOME+=		gconf2 gnomevfs2
 .endif
-
 .if defined(WITH_EVOLUTION2)
 CONFIGURE_ARGS+=	--enable-evolution2=yes
 .else
@@ -88,6 +92,11 @@ pre-fetch:
 	@${ECHO}
 	@${ECHO} "You can compile OOo to use Qt/KDE vclplug with"
 	@${ECHO} "make -DWITH_KDE"
+.endif
+.if !defined(WITH_KDE4)
+	@${ECHO}
+	@${ECHO} "You can compile OOo to use Qt/KDE4 vclplug with"
+	@${ECHO} "make -DWITH_KDE4"
 .endif
 .if !defined(WITH_EVOLUTION2)
 	@${ECHO}
