@@ -36,7 +36,7 @@ you update your ports collection, before attempting any port upgrades.
   break any drivers.
 
   for AMD Radeon HD 2xxx/3xxx/4xxx users
-  If you use AMD Radeon HD [234]xxx series, please define WITHOUT_NOVEAU
+  If you use AMD Radeon HD [234]xxx series, please define WITHOUT_NOUVEAU
   global macro.  You can use OpenGL Hardware Accelerator feature on
   these series.
 
@@ -8880,4 +8880,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.894 2010/02/07 11:51:05 nork Exp $
+$FreeBSD: ports/UPDATING,v 1.895 2010/02/07 21:48:42 beat Exp $
