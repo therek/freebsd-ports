@@ -30,7 +30,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.37 2010/01/02 12:05:30 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.38 2010/01/02 13:51:33 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -192,8 +192,8 @@ _GCC_PORT_DEPENDS:=	gcc${V}
 CC:=			gcc${V}
 CXX:=			g++${V}
 .   if ${_USE_GCC} != 3.4
-CFLAGS+=		-Wl,-rpath=${PREFIX}/lib/${_GCC_BUILD_DEPENDS}
-LDFLAGS+=		-Wl,-rpath=${PREFIX}/lib/${_GCC_BUILD_DEPENDS}
+CFLAGS+=		-Wl,-rpath=${LOCALBASE}/lib/${_GCC_BUILD_DEPENDS}
+LDFLAGS+=		-Wl,-rpath=${LOCALBASE}/lib/${_GCC_BUILD_DEPENDS}
 .   endif
 .  endif
 . endif
