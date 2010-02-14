@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/devel/git/files/git_daemon.in,v 1.1 2008/01/17 10:25:04 flz Exp $
+# $FreeBSD: ports/devel/git/files/git_daemon.in,v 1.2 2008/08/27 22:05:12 wxs Exp $
 #
 
 # PROVIDE: git_daemon
@@ -21,7 +21,7 @@ load_rc_config $name
 
 : ${git_daemon_enable:=NO}
 : ${git_daemon_directory:=%%PREFIX%%/git}
-: ${git_daemon_flags:="--syslog"}
+: ${git_daemon_flags:="--syslog --reuseaddr"}
 
 command="%%PREFIX%%/libexec/git-core/git-daemon"
 command_args="${git_daemon_directory} &"
