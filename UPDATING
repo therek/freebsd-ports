@@ -5,7 +5,7 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
-20100116:
+20100216:
   AFFECTS: users of sysutils/bacula-server, sysutils/bacula-client
   AUTHOR: dvl@freebsd.org
 
@@ -8912,4 +8912,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.898 2010/02/16 13:25:21 danfe Exp $
+$FreeBSD: ports/UPDATING,v 1.899 2010/02/16 19:19:54 lme Exp $
