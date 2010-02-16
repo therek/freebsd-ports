@@ -5,6 +5,24 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20100116:
+  AFFECTS: users of sysutils/bacula-server, sysutils/bacula-client
+  AUTHOR: dvl@freebsd.org
+
+  Bacula 5.x uses new shared objects which conflict
+  with the shared objects from previous versions.
+  You should delete all existing Bacula packages
+  from your system before compiling Bacula 5.x
+  otherwise you'll encounter compile errors.
+
+      /usr/local/etc/rd.c/bacula-dir stop
+      /usr/local/etc/rd.c/bacula-sd  stop
+      /usr/local/etc/rd.c/bacula-fd  stop
+      pkg_delete 'bacula-*'
+
+  After upgrading, remember to run the database upgrade script
+  supplied with the port.
+
 20100214:
   AFFECTS: users of japanese/roundcube
   AUTHOR: nork@FreeBSD.org
@@ -8894,4 +8912,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.897 2010/02/14 14:01:31 nork Exp $
+$FreeBSD: ports/UPDATING,v 1.898 2010/02/16 13:25:21 danfe Exp $
