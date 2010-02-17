@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/kroc/pkg-plist,v 1.11 2009/12/09 09:45:32 tdb Exp $
+@comment $FreeBSD: ports/lang/kroc/pkg-plist,v 1.12 2010/01/13 15:56:22 tdb Exp $
 bin/cdxview
 bin/ilibr
 bin/kmakef
@@ -331,6 +331,7 @@ share/kroc/doc/api/graphics3d.html
 share/kroc/doc/api/hostio.html
 share/kroc/doc/api/hostsp.html
 share/kroc/doc/api/index.html
+share/kroc/doc/api/ioport.html
 share/kroc/doc/api/maths.html
 share/kroc/doc/api/occGL.html
 share/kroc/doc/api/occSDL.html
@@ -339,6 +340,7 @@ share/kroc/doc/api/occade.html
 share/kroc/doc/api/occamdoc.css
 share/kroc/doc/api/occplayer.html
 share/kroc/doc/api/overwriting-buffer.html
+share/kroc/doc/api/pioneer.html
 share/kroc/doc/api/player.html
 share/kroc/doc/api/pony.html
 share/kroc/doc/api/proc.html
