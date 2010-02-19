@@ -150,7 +150,8 @@ you update your ports collection, before attempting any port upgrades.
 
   If you use portmaster:
 
-	portmaster -or audio/openal audio/openal-soft
+	portmaster -o audio/openal-soft audio/openal
+	portmaster -r audio/openal-soft
 
   If you use portupgrade:
 
@@ -8909,4 +8910,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.900 2010/02/16 19:31:59 lme Exp $
+$FreeBSD: ports/UPDATING,v 1.901 2010/02/17 10:41:50 danfe Exp $
