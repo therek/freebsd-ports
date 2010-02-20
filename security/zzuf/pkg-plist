@@ -1,4 +1,5 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/zzuf/pkg-plist,v 1.1 2007/03/06 05:36:34 clsung Exp $
+bin/zzcat
 bin/zzuf
 lib/zzuf/libzzuf.so
 lib/zzuf/libzzuf.a
