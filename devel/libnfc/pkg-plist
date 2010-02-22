@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/libnfc/pkg-plist,v 1.1 2010/02/01 21:18:04 romain Exp $
 bin/nfc-anticol
 bin/nfc-emulate
 bin/nfc-list
@@ -17,4 +17,6 @@ lib/libnfc.la
 lib/libnfc.so
 lib/libnfc.so.0
 libdata/pkgconfig/libnfc.pc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/pn53x.conf
+%%PORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%
 @dirrm include/nfc
