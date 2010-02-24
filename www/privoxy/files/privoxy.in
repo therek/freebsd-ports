@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/privoxy/files/privoxy.in,v 1.3 2009/02/23 23:05:31 miwi Exp $
+# $FreeBSD: ports/www/privoxy/files/privoxy.in,v 1.4 2009/07/15 16:56:10 dougb Exp $
 #
 #
 # PROVIDE: privoxy
@@ -30,6 +30,7 @@ load_rc_config ${name}
 
 : ${privoxy_enable="NO"}
 : ${privoxy_config="%%PREFIX%%/etc/privoxy/config"}
+: ${privoxy_logdir="/var/log/privoxy"}
 : ${privoxy_user="privoxy"}
 : ${privoxy_pidfile="/var/run/privoxy/privoxy.pid"}
 
@@ -44,6 +45,12 @@ config_file_check () {
         echo ${actionfile} not found. Copying the example file.
         cp %%PREFIX%%/share/examples/privoxy/match-all.action ${actionfile}
         chown ${privoxy_user}:${privoxy_user} ${actionfile}
+    fi
+    if [ ! -e ${privoxy_logdir} ]; then
+        echo ${privoxy_logdir} not found. Creating ...
+        mkdir ${privoxy_logdir}
+        chown ${privoxy_user}:${privoxy_user} ${privoxy_logdir}
+        chmod 0750 ${privoxy_logdir}
     fi
 }
 
