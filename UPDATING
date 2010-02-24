@@ -28,9 +28,9 @@ you update your ports collection, before attempting any port upgrades.
   from your system before compiling Bacula 5.x, otherwise you'll encounter
   compilation errors.
 
-	/usr/local/etc/rd.c/bacula-dir stop
-	/usr/local/etc/rd.c/bacula-sd stop
-	/usr/local/etc/rd.c/bacula-fd stop
+	/usr/local/etc/rc.d/bacula-dir stop
+	/usr/local/etc/rc.d/bacula-sd stop
+	/usr/local/etc/rc.d/bacula-fd stop
 	pkg_delete 'bacula-*'
 
   After upgrading, remember to run the database upgrade script supplied
@@ -8924,4 +8924,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.902 2010/02/19 04:10:58 dougb Exp $
+$FreeBSD: ports/UPDATING,v 1.903 2010/02/22 00:53:07 dougb Exp $
