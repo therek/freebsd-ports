@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/tomcat55/pkg-plist,v 1.23 2008/06/21 10:42:59 miwi Exp $
+@comment $FreeBSD: ports/www/tomcat55/pkg-plist,v 1.24 2008/10/26 11:26:11 stefan Exp $
 @unexec if cmp -s %D/%%T%%/conf/Catalina/localhost/host-manager.xml %D/%%T%%/conf/Catalina/localhost/host-manager.xml.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/Catalina/localhost/host-manager.xml; else echo If permanently deleting this package, %D/%%T%%/conf/Catalina/localhost/host-manager.xml must be removed manually; fi
 @unexec if cmp -s %D/%%T%%/conf/Catalina/localhost/manager.xml %D/%%T%%/conf/Catalina/localhost/manager.xml.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/Catalina/localhost/manager.xml; else echo If permanently deleting this package, %D/%%T%%/conf/Catalina/localhost/manager.xml must be removed manually; fi
 @unexec if cmp -s %D/%%T%%/conf/catalina.policy %D/%%T%%/conf/catalina.policy.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/catalina.policy; else echo If permanently deleting this package, %D/%%T%%/conf/catalina.policy must be removed manually; fi
@@ -1022,5 +1022,8 @@
 @dirrm %%T%%/common/endorsed
 @dirrm %%T%%/common/classes
 @dirrm %%T%%/common
+@dirrm %%T%%/bin/procrun/ia64
+@dirrm %%T%%/bin/procrun/amd64
+@dirrm %%T%%/bin/procrun
 @dirrm %%T%%/bin
 @dirrm %%T%%
