@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2101 2010/02/25 12:47:28 sem Exp $
+# $FreeBSD: ports/MOVED,v 1.2102 2010/02/26 01:22:28 wen Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4328,3 +4328,4 @@ sysutils/munin-main|sysutils/munin-master|2010-02-22|Reorganized upstream
 multimedia/tsMuxeR|multimedia/linux-tsmuxer|2010-02-24|Port was given a better name
 japanese/stardict2-dict-ja||2010-02-25|Please use japanese/stardict-dict-ja
 net/mpd||2010-02-25|Has expired: obsoleted, unsupported port. Use net/mpd4, net/mpd5 instead
+textproc/xmlada-gcc||2010-02-27|Has expired: broken and practically unmaintained
