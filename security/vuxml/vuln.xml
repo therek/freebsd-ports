@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2120 2010/02/18 10:02:50 beat Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2121 2010/02/26 21:20:05 nox Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -104,6 +104,10 @@ Note:  Please add new entries to the beginning of this file.
 	<name>seamonkey</name>
 	<range><gt>2.0.*</gt><lt>2.0.3</lt></range>
       </package>
+      <package>
+	<name>thunderbird</name>
+	<range><ge>3.0</ge><lt>3.0.2</lt></range>
+      </package>
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
@@ -132,6 +136,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2010-02-17</discovery>
       <entry>2010-02-18</entry>
+      <modified>2010-02-28</modified>
     </dates>
   </vuln>
 
