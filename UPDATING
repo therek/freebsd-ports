@@ -169,7 +169,7 @@ you update your ports collection, before attempting any port upgrades.
 
   If you use portupgrade:
 
-	portupgrade -or audio/openal audio/openal-soft
+	portupgrade -ro audio/openal audio/openal-soft
 
   If you want to stick with audio/openal, please specify the following ports
   make flag within /etc/make.conf (or an appropriate configuration file for
@@ -8924,4 +8924,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.903 2010/02/22 00:53:07 dougb Exp $
+$FreeBSD: ports/UPDATING,v 1.904 2010/02/24 02:28:14 wxs Exp $
