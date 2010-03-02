@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/font-ipa/files/pkg-install.in,v 1.9 2009/06/03 07:34:51 hrs Exp $
+# $FreeBSD: ports/japanese/font-ipa/files/pkg-install.in,v 1.10 2010/02/19 15:29:56 hrs Exp $
 
 X_FONTSDIR=%%X_FONTSDIR%%/OTF
 
@@ -9,7 +9,7 @@ catfontsdir ()
     do
       case "${_IN}" in
       *-ipa-IPAUI*|*-ipa-[MU]*)	echo ${_IN} ;;
-      *-ipa-[Mm]incho-*|*-ipa-[Gg]othic-*|*-ipa-IPA*|[0-9]*|"") ;;
+      *-ipa-[Mm]incho-*|*-ipa-[Gg]othic-*|*-ipa-IPA[PMmGg]*|[0-9]*|"") ;;
       *)       echo ${_IN} ;;
       esac
     done
