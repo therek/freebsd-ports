@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/dahdi/files/dahdi.in,v 1.1 2010/03/03 12:45:47 fjoe Exp $
 #
 # PROVIDE: dahdi
 # REQUIRE: NETWORKING
@@ -39,8 +39,9 @@ dahdi_start()
 {
 	echo -n " ${name}"
 
+	kldconfig -mf ${kmod_dir}
 	for m in ${dahdi_modules}; do
-		kldload ${kmod_dir}/$m.ko || exit 1
+		kldload $m || exit 1
 	done
 	%%PREFIX%%/sbin/dahdi_cfg
 }
