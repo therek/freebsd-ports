@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/japanese/font-takao/files/pkg-install.in,v 1.1 2010/02/19 18:19:58 hrs Exp $
 
 X_FONTSDIR=%%X_FONTSDIR%%/OTF
 
@@ -61,9 +61,11 @@ addentries ()
 		make_xlfd $ENC TakaoGothic.otf ipa TakaoGothic c
 		make_xlfd $ENC TakaoPGothic.otf ipa TakaoPGothic p
 		make_xlfd $ENC TakaoPGothic.otf ipa TakaoGothic p
+		make_xlfd $ENC TakaoExGothic.otf ipa TakaoExGothic p
 		make_xlfd $ENC TakaoMincho.otf ipa TakaoMincho c
 		make_xlfd $ENC TakaoPMincho.otf ipa TakaoPMincho p
 		make_xlfd $ENC TakaoPMincho.otf ipa TakaoMincho p
+		make_xlfd $ENC TakaoExMincho.otf ipa TakaoExMincho p
 	done
 }
 
