@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/smartmontools/pkg-plist,v 1.4 2007/01/06 20:13:10 pav Exp $
+@comment $FreeBSD: ports/sysutils/smartmontools/pkg-plist,v 1.5 2008/12/19 13:14:28 pav Exp $
 @unexec /bin/echo "===>" Stopping smartd ...
 @unexec /usr/bin/killall smartd 2>/dev/null || true
 etc/periodic/daily/smart
@@ -19,6 +19,8 @@ sbin/smartd
 %%DOCSDIR%%/examplescripts/Example4
 %%DOCSDIR%%/examplescripts/README
 %%DOCSDIR%%/smartd.conf
+%%DATADIR%%/drivedb.h
+@dirrm %%DATADIR%%
 @dirrm %%DOCSDIR%%/examplescripts
 @dirrm %%DOCSDIR%%
 @dirrmtry etc/periodic/daily
