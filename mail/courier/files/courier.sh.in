@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/courier/files/courier.sh.in,v 1.4 2009/07/15 16:55:45 dougb Exp $
+# $FreeBSD: ports/mail/courier/files/courier.sh.in,v 1.5 2009/08/08 11:18:45 rafan Exp $
 #
 # Adapted for FreeBSD from courier.sysvinit
 #
@@ -246,19 +246,18 @@ courier_start()
 			;;
 		esac
 	fi
-	echo "."
 
 	LISTS=""
 	if [ -f ${sysconfdir}/webmlmrc ]; then 
 		. ${sysconfdir}/webmlmrc
-		if [ -n "$LISTS" ];then
-			if [ -x ${bindir}/webmlmd \
-			  -a -x ${bindir}/webmlmd.rc ]; then
-				echo -n " webmlmd"
-				${bindir}/webmlmd.rc start ${sysconfdir}/webmlmrc
-			fi
+		if [ -n "$LISTS" \
+		  -a -x ${bindir}/webmlmd \
+		  -a -x ${bindir}/webmlmd.rc ]; then
+			echo -n " webmlmd"
+			${bindir}/webmlmd.rc start ${sysconfdir}/webmlmrc
 		fi
 	fi
+	echo "."
 }
 
 courier_stop()

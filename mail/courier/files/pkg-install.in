@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/courier/files/pkg-install.in,v 1.2 2009/01/05 21:05:45 pav Exp $
+# $FreeBSD: ports/mail/courier/files/pkg-install.in,v 1.3 2009/08/08 11:18:45 rafan Exp $
 #
 
 PKG_PREFIX=${PKG_PREFIX:=/usr/local}
@@ -52,16 +52,16 @@ replace() {
 }
 
 if [ ":$2" = ":POST-INSTALL" ]; then
-        if yesno "Would you like to activate Courier in /etc/mail/mailer.conf" n; then
-            mv -f /etc/mail/mailer.conf /etc/mail/mailer.conf.old
-            echo "#"						>  /etc/mail/mailer.conf
-            echo -n "# Execute the Courier sendmail program"	>> /etc/mail/mailer.conf
-            echo ", named ${PKG_PREFIX}/bin/sendmail"		>> /etc/mail/mailer.conf
-            echo "#"						>> /etc/mail/mailer.conf
-            echo "sendmail	${PKG_PREFIX}/bin/sendmail"	>> /etc/mail/mailer.conf
-            echo "send-mail	${PKG_PREFIX}/bin/sendmail"	>> /etc/mail/mailer.conf
-            echo "mailq		${PKG_PREFIX}/bin/mailq"	>> /etc/mail/mailer.conf
-            echo "newaliases	${PKG_PREFIX}/sbin/makealiases"	>> /etc/mail/mailer.conf
-            echo "Done."
-        fi
+    if yesno "Would you like to activate Courier in /etc/mail/mailer.conf" n; then
+        mv -f /etc/mail/mailer.conf /etc/mail/mailer.conf.old
+        echo "#"						>  /etc/mail/mailer.conf
+        echo -n "# Execute the Courier sendmail program"	>> /etc/mail/mailer.conf
+        echo ", named ${PKG_PREFIX}/bin/sendmail"		>> /etc/mail/mailer.conf
+        echo "#"						>> /etc/mail/mailer.conf
+        echo "sendmail	${PKG_PREFIX}/bin/sendmail"	>> /etc/mail/mailer.conf
+        echo "send-mail	${PKG_PREFIX}/bin/sendmail"	>> /etc/mail/mailer.conf
+        echo "mailq		${PKG_PREFIX}/bin/mailq"	>> /etc/mail/mailer.conf
+        echo "newaliases	${PKG_PREFIX}/sbin/makealiases"	>> /etc/mail/mailer.conf
+        echo "Done."
+    fi
 fi
