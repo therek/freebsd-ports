@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/emulators/virtualbox-ose-additions/pkg-plist,v 1.1 2010/01/13 08:10:34 beat Exp $
+@comment $FreeBSD: ports/emulators/virtualbox-ose-additions/pkg-plist,v 1.2 2010/01/24 23:20:41 beat Exp $
 %%X11%%sbin/VBoxClient
 sbin/VBoxControl
 sbin/VBoxService
@@ -12,5 +12,5 @@ sbin/VBoxService
 %%X11%%@dirrmtry lib
 @cwd /
 %%KMODDIR%%/vboxguest.ko
-@exec /usr/sbin/kldxref %%KMODDIR%%
-@unexec /usr/sbin/kldxref %%KMODDIR%%
+@exec /usr/sbin/kldxref /%%KMODDIR%%
+@unexec /usr/sbin/kldxref /%%KMODDIR%%
