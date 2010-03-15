@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.491 2009/12/14 16:20:02 garga Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.492 2010/01/07 04:49:40 pgollucci Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -127,7 +127,14 @@ MASTER_SITE_CENKES+=	\
 
 .if !defined(IGNORE_MASTER_SITE_CHEESESHOP)
 MASTER_SITE_CHEESESHOP+=	\
-	http://pypi.python.org/packages/%SUBDIR%/
+	http://pypi.python.org/packages/%SUBDIR%/ \
+	http://pypi.d9t.de/${DISTNAME:S/${DISTVERSION}//:S/-//} \
+	http://pypi.inqbus.de/${DISTNAME:S/${DISTVERSION}//:S/-//} \
+	http://pypi.it.uwosh.edu/${DISTNAME:S/${DISTVERSION}//:S/-//} \
+	http://pypi.netsight.co.uk/${DISTNAME:S/${DISTVERSION}//:S/-//} \
+	http://pypi.python.jp/${DISTNAME:S/${DISTVERSION}//:S/-//} \
+	http://pypi.websushi.org/${DISTNAME:S/${DISTVERSION}//:S/-//} \
+	http://pypi.zopyx.com/${DISTNAME:S/${DISTVERSION}//:S/-//}
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_COMP_SOURCES)
