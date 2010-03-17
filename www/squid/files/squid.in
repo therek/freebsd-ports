@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid/files/squid.in,v 1.4 2009/11/21 15:19:56 miwi Exp $
+# $FreeBSD: ports/www/squid/files/squid.in,v 1.5 2009/12/24 02:58:32 wen Exp $
 #
 # PROVIDE: squid
 # REQUIRE: LOGIN
@@ -32,7 +32,7 @@
 # squid_pidfile:
 #		The name (including the full path) of the Squid
 #		master process' PID file.
-#		Default: %%PREFIX%%/squid/squid.pid.
+#		Default: %%PREFIX%%/logs/squid/squid.pid.
 #		You only need to change this if you changed the
 #		corresponding entry in your Squid configuration.
 #
