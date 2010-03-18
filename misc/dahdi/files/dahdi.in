@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/dahdi/files/dahdi.in,v 1.1 2010/03/03 12:45:47 fjoe Exp $
+# $FreeBSD: ports/misc/dahdi/files/dahdi.in,v 1.2 2010/03/06 05:11:59 fjoe Exp $
 #
 # PROVIDE: dahdi
 # REQUIRE: NETWORKING
@@ -23,12 +23,15 @@
 . %%RC_SUBR%%
 
 name="dahdi"
+rcvar=`set_rcvar`
+
 start_cmd="dahdi_start"
 stop_cmd="dahdi_stop"
 load_rc_config $name
+: ${dahdi_enable="NO"}
+: ${dahdi_modules="dahdi"}
 
 kmod_dir=%%PREFIX%%/lib/dahdi
-dahdi_modules=${dahdi_modules:-dahdi}
 # reverse list
 dahdi_modules_unload=""
 for m in ${dahdi_modules}; do
