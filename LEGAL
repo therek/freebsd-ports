@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.615 2010/02/12 14:43:04 miwi Exp $
+# $FreeBSD: ports/LEGAL,v 1.616 2010/03/13 12:11:09 itetcu Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -743,3 +743,7 @@ rsmb-*			net/rsmb		Must register for account
 						to license before downloading,
 						and no redistribution allowed
 yEd*			graphics/yed		Must acknowledge license
+thundercache		www/thundercache	Shareware license for 50 threads.
+						Requires license key to run more
+						than 50 threads, which can be
+						obtained from their website.
