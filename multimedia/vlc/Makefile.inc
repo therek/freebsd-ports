@@ -3,7 +3,7 @@
 # enabled by default, if it starts with WITH_ it is disabled by default
 # and will be autodetected to enable
 #
-# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.26 2009/12/19 22:08:17 makc Exp $
+# $FreeBSD: ports/multimedia/vlc/Makefile.inc,v 1.27 2009/12/19 22:14:01 makc Exp $
 #   $MCom: ports-stable/multimedia/vlc-devel/Makefile.inc,v 1.4 2009/01/09 23:41:21 mezz Exp $
 #      $Id: Makefile.inc 6 2006-09-27 14:05:34Z buhnux $
 # If you define for example WITH_FAAD and WITHOUT_FAAD
@@ -202,6 +202,8 @@
 #
 
 post-patch:
+	@${REINPLACE_CMD} -e 's|__u32|uint32_t|g' \
+		${WRKSRC}/modules/access/v4l2.c
 # Do not assume LOCALBASE is /usr/local
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' ${WRKSRC}/configure
 # Subtitle default font
