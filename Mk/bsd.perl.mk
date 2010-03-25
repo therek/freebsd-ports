@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.14 2009/06/08 14:56:31 skv Exp $
+# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.15 2010/02/05 21:18:15 skv Exp $
 #
 # bsd.perl.mk - Support for Perl-based ports.
 #
@@ -49,7 +49,7 @@
 # 	USE_PERL5=	yes	# port requires any version of Perl5 to build.
 # 	USE_PERL5=	5.8.0+	# port requires at least Perl 5.8.0 to build.
 #	USE_PERL5=	5.8.2	# port is only usable with Perl 5.8.2.
-#	USE_PERL5=	5.8.6-	# port is only usbale with Perl 5.8.6 or prior.
+#	USE_PERL5=	5.8.6-	# port is only usable with Perl 5.8.6 or prior.
 #
 # This line along with a properly set USE_PERL5 will give the user a reason,
 # why the specific ports cannot be installed into the given environment.
