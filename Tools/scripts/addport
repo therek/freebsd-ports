@@ -32,7 +32,7 @@
 #
 # Id: addport,v 1.2 2000/04/02 06:21:13 will Exp (original shell script)
 # Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp (perl conversion)
-# $FreeBSD: ports/Tools/scripts/addport,v 1.53 2008/06/19 22:09:01 erwin Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.54 2008/10/21 21:32:08 sobomax Exp $
 #
 # MAINTAINER=	garga@FreeBSD.org
 #
@@ -226,7 +226,7 @@ foreach my $thisdir (@dirs) {
 		}
 	}
 	chomp(my $cvs_category = $category);
-	$cvs_category =~ s/-/_/g if ($cvs_category !~ /ports-mgmt/);
+	$cvs_category =~ s/-/_/g;
 
 	# Do commitfile checking but only if the user did not request automatic filling.
 	if (!$autofill) {
