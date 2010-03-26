@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.97 2010/02/05 11:41:49 dinoex Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.98 2010/02/13 08:45:22 miwi Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.76 2009/11/17 19:08:45 kwm Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -121,6 +121,7 @@ CONFIGURE_ARGS+=--disable-tests \
 		--disable-acm \
 		--disable-amrnb \
 		--disable-alsa \
+		--disable-dvb \
 		--disable-http \
 		--enable-cdrom \
 		--disable-gconf \
