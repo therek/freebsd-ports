@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.493 2010/03/15 13:01:18 gahr Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.494 2010/03/16 12:45:55 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -128,13 +128,13 @@ MASTER_SITE_CENKES+=	\
 .if !defined(IGNORE_MASTER_SITE_CHEESESHOP)
 MASTER_SITE_CHEESESHOP+=	\
 	http://pypi.python.org/packages/%SUBDIR%/ \
-	http://pypi.d9t.de/${DISTNAME:S/${DISTVERSION}//:S/-//} \
-	http://pypi.inqbus.de/${DISTNAME:S/${DISTVERSION}//:S/-//} \
-	http://pypi.it.uwosh.edu/${DISTNAME:S/${DISTVERSION}//:S/-//} \
-	http://pypi.netsight.co.uk/${DISTNAME:S/${DISTVERSION}//:S/-//} \
-	http://pypi.python.jp/${DISTNAME:S/${DISTVERSION}//:S/-//} \
-	http://pypi.websushi.org/${DISTNAME:S/${DISTVERSION}//:S/-//} \
-	http://pypi.zopyx.com/${DISTNAME:S/${DISTVERSION}//:S/-//}
+	http://pypi.d9t.de/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
+	http://pypi.inqbus.de/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
+	http://pypi.it.uwosh.edu/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
+	http://pypi.netsight.co.uk/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
+	http://pypi.python.jp/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
+	http://pypi.websushi.org/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
+	http://pypi.zopyx.com/${DISTNAME:S/${DISTVERSION}//:S/-//}/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_COMP_SOURCES)
