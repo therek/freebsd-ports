@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/idled/files/idled.in,v 1.1 2009/07/15 05:09:46 pgollucci Exp $
+# $FreeBSD: ports/sysutils/idled/files/idled.in,v 1.2 2009/07/15 16:56:06 dougb Exp $
 #
 
 # PROVIDE: idled
@@ -17,7 +17,7 @@
 # See idled(8) for flags
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=idled
 rcvar=`set_rcvar`

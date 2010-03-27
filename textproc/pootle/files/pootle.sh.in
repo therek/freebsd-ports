@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/pootle/files/pootle.sh.in,v 1.1 2009/12/31 11:53:33 skv Exp $
 #
 # PROVIDE: pootle
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 #				Default is "nobody".
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=pootle
 rcvar=${name}_enable

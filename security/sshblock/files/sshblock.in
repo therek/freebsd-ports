@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/sshblock/files/sshblock.in,v 1.2 2009/05/19 08:16:42 anders Exp $
+# $FreeBSD: ports/security/sshblock/files/sshblock.in,v 1.3 2009/07/15 16:56:04 dougb Exp $
 #
 # PROVIDE: sshblock
 # REQUIRE: DAEMON
@@ -12,7 +12,7 @@
 # sshblock_flags (string):	Set sshblock flags (optional)
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="sshblock"
 rcvar=`set_rcvar`

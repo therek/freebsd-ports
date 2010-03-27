@@ -1,11 +1,11 @@
 #! /bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/irc/ircd-ru/files/ircd.in,v 1.1 2006/12/30 19:49:40 miwi Exp $
 #
 # PROVIDE: ircd
 # REQUIRE: LOGIN syslogd
 # KEYWORD: shutdown
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="ircd"
 rcvar=${name}_enable

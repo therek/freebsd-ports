@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/nut/files/nut_upsmon.sh.in,v 1.1 2006/03/29 12:03:54 pav Exp $
 #
 
 # PROVIDE: nut_upsmon
@@ -18,7 +18,7 @@
 nut_upsmon_enable=${nut_upsmon_enable-"NO"}
 nut_upsmon_prefix=${nut_upsmon_prefix-"%%PREFIX%%"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="nut_upsmon"
 rcvar=`set_rcvar`

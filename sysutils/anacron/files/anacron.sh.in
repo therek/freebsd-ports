@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/anacron/files/anacron.sh.in,v 1.1 2005/06/16 15:51:38 jylefort Exp $
 #
 
 # PROVIDE: anacron
@@ -12,7 +12,7 @@
 # anacron_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="anacron"
 rcvar=`set_rcvar`

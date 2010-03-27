@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/tac_plus4/files/tac_plus.in,v 1.1 2006/10/31 02:42:33 marcus Exp $
+# $FreeBSD: ports/net/tac_plus4/files/tac_plus.in,v 1.2 2009/07/09 02:47:31 marcus Exp $
 #
 # PROVIDE: tac_plus
 # REQUIRE: DAEMON
@@ -18,7 +18,7 @@
 #    Allows you to specify a different config file for
 #    the tac_plus daemon
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=tac_plus
 rcvar=`set_rcvar`

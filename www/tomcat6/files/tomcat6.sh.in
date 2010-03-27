@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/tomcat6/files/tomcat6.sh.in,v 1.5 2009/07/29 17:13:50 ale Exp $
+# $FreeBSD: ports/www/tomcat6/files/tomcat6.sh.in,v 1.6 2010/03/01 15:36:47 ale Exp $
 #
 
 # PROVIDE: tomcat%%TOMCAT_VERSION%%
@@ -69,7 +69,7 @@ tomcat%%TOMCAT_VERSION%%_stdout_log="${tomcat%%TOMCAT_VERSION%%_stdout_log:-"%%S
 tomcat%%TOMCAT_VERSION%%_stderr_log="${tomcat%%TOMCAT_VERSION%%_stderr_log:-"%%STDERR_LOG%%"}"
 tomcat%%TOMCAT_VERSION%%_stop_timeout="${tomcat%%TOMCAT_VERSION%%_stop_timeout:-"10"}"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="tomcat%%TOMCAT_VERSION%%"
 rcvar=`set_rcvar`

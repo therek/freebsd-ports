@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/webobjects/files/JavaMonitor.sh.in,v 1.1 2008/06/13 06:12:59 edwin Exp $
 # PROVIDE: JavaMonitor
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
@@ -20,7 +20,7 @@ JavaMonitor_pidfile="${JavaMonitor_pidfile:-/var/run/webobjects/${name}.pid}"
 JavaMonitor_logfile="${JavaMonitor_logfile:-/var/log/webobjects/${name}.log}"
 NEXT_ROOT="${NEXT_ROOT-%%PREFIX%%/%%NEXT_ROOT%%}"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 rcvar=`set_rcvar`
 
 load_rc_config "$name"

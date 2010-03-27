@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/cvsup-mirror/files/cvsupd.sh.in,v 1.2 2006/02/20 20:47:21 dougb Exp $
+# $FreeBSD: ports/net/cvsup-mirror/files/cvsupd.sh.in,v 1.3 2008/03/13 21:31:02 wxs Exp $
 #
 
 # PROVIDE: cvsupd
@@ -27,7 +27,7 @@
 # Note that answering the questions during the install will setup
 # %%PREFIX%%/etc/cvsup/config.sh for you.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="cvsupd"
 rcvar=`set_rcvar`

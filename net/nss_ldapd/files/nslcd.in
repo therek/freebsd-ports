@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/nss_ldapd/files/nslcd.in,v 1.1 2009/08/14 01:46:44 timur Exp $
+# $FreeBSD: ports/net/nss_ldapd/files/nslcd.in,v 1.2 2009/08/24 22:44:16 timur Exp $
 #
 # PROVIDE: nslcd
 # REQUIRE: DAEMON ldconfig resolv
@@ -12,7 +12,7 @@
 
 nslcd_enable=${nslcd_enable-"NO"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=nslcd
 rcvar=$(set_rcvar)

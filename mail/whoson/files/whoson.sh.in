@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/whoson/files/whoson.sh.in,v 1.1 2006/05/13 21:39:05 sem Exp $
 #
 
 # PROVIDE: whoson
@@ -13,7 +13,7 @@
 #whosond="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=whosond
 rcvar=`set_rcvar`

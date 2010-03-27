@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-p2p/transmission-cli/files/transmission.in,v 1.1 2009/06/19 17:07:25 mezz Exp $
+# $FreeBSD: ports/net-p2p/transmission-cli/files/transmission.in,v 1.2 2009/06/19 21:29:15 mezz Exp $
 #
 # PROVIDE: transmission
 # REQUIRE: DAEMON 
@@ -22,7 +22,7 @@
 #			     as root.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="transmission"
 rcvar=${name}_enable

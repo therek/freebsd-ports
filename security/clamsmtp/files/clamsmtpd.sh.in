@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamsmtp/files/clamsmtpd.sh.in,v 1.5 2006/02/21 09:41:06 clsung Exp $
+# $FreeBSD: ports/security/clamsmtp/files/clamsmtpd.sh.in,v 1.6 2006/07/19 16:18:41 dougb Exp $
 #
 # PROVIDE: clamsmtpd
 # REQUIRE: DAEMON %%CLAMD%%
@@ -14,7 +14,7 @@
 #				Default is "%%PREFIX%%/etc/clamsmtpd.conf"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="clamsmtpd"
 rcvar=${name}_enable

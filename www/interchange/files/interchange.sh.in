@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/interchange/files/interchange.sh.in,v 1.1 2007/02/02 16:46:22 nivit Exp $
 #
 
 # PROVIDE: interchange
@@ -18,7 +18,7 @@
 #                                 to interchange (default empty).
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="interchange"
 rcvar=`set_rcvar`

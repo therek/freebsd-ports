@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/nsd2/files/nsd.sh.in,v 1.1 2006/10/31 17:27:32 alepulver Exp $
+# $FreeBSD: ports/dns/nsd2/files/nsd.sh.in,v 1.2 2009/07/15 16:55:41 dougb Exp $
 #
 # PROVIDE: nsd
 # REQUIRE: DAEMON
@@ -11,7 +11,7 @@
 # nsd_flags="<set as needed>"
 
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=nsd
 rcvar=`set_rcvar`

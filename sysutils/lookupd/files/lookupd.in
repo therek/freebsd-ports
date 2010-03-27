@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/lookupd/files/lookupd.in,v 1.1 2006/10/07 15:12:28 pav Exp $
+# $FreeBSD: ports/sysutils/lookupd/files/lookupd.in,v 1.2 2009/07/15 16:56:06 dougb Exp $
 #
 
 # PROVIDE: lookupd
@@ -15,7 +15,7 @@
 #
 # See lookupd(8) for flags
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=lookupd
 rcvar=`set_rcvar`

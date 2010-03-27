@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/avis/files/avisd.in,v 1.1 2008/02/01 07:47:27 vanilla Exp $
 #
 
 # PROVIDE: avisd
@@ -21,7 +21,7 @@
 #              by default
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="avisd"
 rcvar=`set_rcvar`

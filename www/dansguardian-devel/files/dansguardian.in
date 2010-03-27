@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/dansguardian-devel/files/dansguardian.in,v 1.1 2008/03/27 16:10:19 pav Exp $
+# $FreeBSD: ports/www/dansguardian-devel/files/dansguardian.in,v 1.2 2009/07/15 16:56:09 dougb Exp $
 
 # PROVIDE: dansguardian
 # REQUIRE: NETWORKING SERVERS squid
@@ -18,7 +18,7 @@
 dansguardian_enable=${dansguardian_enable:-"NO"}
 dansguardian_pidfile=${dansguardian_pidfile:-"/var/run/dansguardian.pid"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="dansguardian"
 rcvar=${name}_enable

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop cyrus-imapd
-# $FreeBSD: ports/mail/cyrus-imapd23/files/imapd.sh.in,v 1.2 2006/02/20 20:47:09 dougb Exp $
+# $FreeBSD: ports/mail/cyrus-imapd23/files/imapd.sh.in,v 1.3 2009/07/15 16:55:45 dougb Exp $
 
 # PROVIDE: cyrus_imapd
 # REQUIRE: DAEMON
@@ -19,7 +19,7 @@
 #cyrus_imapd_program="%%PREFIX%%/cyrus/bin/master"	# Location of imapd
 [ -z "$cyrus_imapd_flags" ] && cyrus_imapd_flags="-d" # Flags to imapd program
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="cyrus_imapd"
 rcvar=`set_rcvar`

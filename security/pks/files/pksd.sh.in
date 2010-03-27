@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/pks/files/pksd.sh.in,v 1.1 2005/09/09 14:00:10 lawrance Exp $
 #
 #
 # PROVIDE: pksd
 # REQUIRE: DAEMON
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="pksd"
 rcvar=`set_rcvar`

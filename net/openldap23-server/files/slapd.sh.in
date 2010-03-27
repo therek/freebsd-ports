@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap23-server/files/slapd.sh.in,v 1.4 2007/12/11 20:56:10 delphij Exp $
+# $FreeBSD: ports/net/openldap23-server/files/slapd.sh.in,v 1.5 2009/07/15 16:55:52 dougb Exp $
 #
 
 # PROVIDE: slapd
@@ -24,7 +24,7 @@
 #slapd_owner="DEFAULT"
 #
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="slapd"
 rcvar=`set_rcvar`

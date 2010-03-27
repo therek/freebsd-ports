@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/samba4-devel/files/samba4.in,v 1.1 2009/07/12 19:40:37 timur Exp $
 #
 
 # PROVIDE: samba4
@@ -17,7 +17,7 @@
 #samba4_config="%%SAMBA_CONFDIR%%/%%SAMBA_CONFIG%%"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="samba4"
 rcvar=$(set_rcvar)

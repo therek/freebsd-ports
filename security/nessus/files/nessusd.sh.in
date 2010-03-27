@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop nessusd
-# $FreeBSD: ports/security/nessus/files/nessusd.sh.in,v 1.2 2007/03/06 18:22:21 miwi Exp $
+# $FreeBSD: ports/security/nessus/files/nessusd.sh.in,v 1.3 2009/07/15 16:56:02 dougb Exp $
 
 # PROVIDE: nessusd
 # REQUIRE: DAEMON
@@ -19,7 +19,7 @@
 #nessusd_program="%%PREFIX%%/sbin/nessusd"	# Location of nessusd
 nessusd_flags="-D"				# Flags to nessusd program
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="nessusd"
 rcvar=`set_rcvar`

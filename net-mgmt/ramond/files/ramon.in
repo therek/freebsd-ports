@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/ramond/files/ramon.in,v 1.1 2010/01/27 13:04:35 miwi Exp $
 #
 # PROVIDE: ramon
 # REQUIRE: DAEMON NETWORKING
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ramon"
 rcvar=`set_rcvar`

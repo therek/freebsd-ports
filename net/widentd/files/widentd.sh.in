@@ -1,7 +1,7 @@
 #!/bin/sh
 # Start or stop widentd
 #
-# $FreeBSD: ports/net/widentd/files/widentd.sh.in,v 1.2 2006/02/20 20:47:31 dougb Exp $
+# $FreeBSD: ports/net/widentd/files/widentd.sh.in,v 1.3 2009/07/15 16:55:55 dougb Exp $
 #
 # PROVIDE: widentd
 # REQUIRE: DAEMON
@@ -26,7 +26,7 @@
 #
 widentd_enable=${widentd_enable-"NO"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="widentd"
 rcvar=`set_rcvar`

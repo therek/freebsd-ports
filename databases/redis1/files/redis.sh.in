@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/redis/files/redis.sh.in,v 1.1 2009/07/27 16:53:25 skv Exp $
 #
 
 # PROVIDE: redis
@@ -13,7 +13,7 @@
 #redis_enable="YES"
 #
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="redis"
 rcvar=`set_rcvar`

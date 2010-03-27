@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/milter-manager/files/milter-manager.in,v 1.1 2009/09/16 11:35:33 pav Exp $
 #
 
 # PROVIDE: milter-manager
@@ -30,7 +30,7 @@
 #                                 Sockets must be different from each other.
 # miltermanager_flags (str):      Flags passed to start command.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="miltermanager"
 rcvar=`set_rcvar`

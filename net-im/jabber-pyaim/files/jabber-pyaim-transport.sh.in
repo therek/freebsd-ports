@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-im/jabber-pyaim/files/jabber-pyaim-transport.sh.in,v 1.1 2006/07/05 15:28:07 garga Exp $
+# $FreeBSD: ports/net-im/jabber-pyaim/files/jabber-pyaim-transport.sh.in,v 1.2 2009/10/13 15:59:59 bland Exp $
 #
 # PROVIDE: jabber_pyaim
 # REQUIRE: DAEMON %%JABBER_REQUIRE%%
@@ -11,7 +11,7 @@
 #       /etc/rc.conf.local
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="jabber_pyaim"
 rcvar=`set_rcvar`

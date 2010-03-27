@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/netxms/files/nxagentd.in,v 1.2 2007/12/13 23:34:22 pav Exp $
 #
 # PROVIDE: nxagentd
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@
 #                               Set it to "YES" to enable nxagentd.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="nxagentd"
 nxagentd_user="netxms"

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dk-milter/files/milter-dk.sh.in,v 1.7 2006/10/31 00:27:08 ache Exp $
+# $FreeBSD: ports/mail/dk-milter/files/milter-dk.sh.in,v 1.8 2006/11/07 20:20:10 ache Exp $
 #
 
 # PROVIDE: milter-dk
@@ -29,7 +29,7 @@
 #                             Sockets must be different from each other.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="milterdk"
 rcvar=`set_rcvar`

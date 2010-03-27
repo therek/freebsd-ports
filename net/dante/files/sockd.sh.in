@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/dante/files/sockd.sh.in,v 1.1 2006/02/14 21:18:16 sem Exp $
+# $FreeBSD: ports/net/dante/files/sockd.sh.in,v 1.2 2006/02/20 20:47:21 dougb Exp $
 #
 
 # PROVIDE: sockd
@@ -13,7 +13,7 @@
 #sockd_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=sockd
 rcvar=`set_rcvar`

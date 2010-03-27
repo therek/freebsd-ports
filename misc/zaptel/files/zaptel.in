@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/zaptel/files/zaptel.in,v 1.6 2008/12/09 07:57:16 sobomax Exp $
+# $FreeBSD: ports/misc/zaptel/files/zaptel.in,v 1.7 2009/09/16 18:56:11 sobomax Exp $
 #
 # PROVIDE: zaptel
 # REQUIRE: NETWORKING
@@ -14,7 +14,7 @@
 #                               Set it to YES to enable zaptel.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 kmod_dir=%%PREFIX%%/lib/zaptel
 

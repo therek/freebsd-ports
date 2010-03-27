@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/webobjects/files/wotaskd.sh.in,v 1.1 2008/06/13 06:12:59 edwin Exp $
 # PROVIDE: wotaskd
 # REQUIRE: NETWORKING SERVERS
 # BEFORE: DAEMON
@@ -19,7 +19,7 @@ wotaskd_pidfile="${wotaskd_pidfile:-/var/run/webobjects/${name}.pid}"
 wotaskd_logfile="${wotaskd_logfile:-/var/log/webobjects/${name}.log}"
 NEXT_ROOT="${NEXT_ROOT-%%PREFIX%%/%%NEXT_ROOT%%}"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 rcvar=`set_rcvar`
 
 load_rc_config "$name"

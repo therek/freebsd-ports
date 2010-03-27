@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13+ipv6/files/apache.in,v 1.1 2007/10/26 07:08:59 sumikawa Exp $
+# $FreeBSD: ports/www/apache13+ipv6/files/apache.in,v 1.2 2009/07/15 16:56:07 dougb Exp $
 
 # PROVIDE: apache
 # REQUIRE: LOGIN cleanvar
@@ -18,7 +18,7 @@
 apache_enable=${apache_enable-"NO"}
 apache_pidfile=${apache_pidfile-"/var/run/httpd.pid"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="apache"
 rcvar=`set_rcvar`

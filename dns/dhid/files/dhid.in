@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/dns/dhid/files/dhid.in,v 1.1 2006/05/18 07:02:46 ume Exp $
 #
 
 # PROVIDE: dhid
@@ -14,7 +14,7 @@
 # dhid_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="dhid"
 rcvar=`set_rcvar`

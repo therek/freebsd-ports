@@ -2,7 +2,7 @@
 #
 # Startup script for frickin PPTP proxy.
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/frickin/files/frickin.sh.in,v 1.1 2006/12/03 22:13:07 miwi Exp $
 #
 
 # REQUIRE: DAEMON
@@ -21,7 +21,7 @@
 frickin_enable=${frickin_enable-"NO"}
 frickin_conf=${frickin_conf-""}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 
 name="frickin"

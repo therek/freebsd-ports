@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/security/sguil-server/files/sguild.sh.in,v 1.4 2008/05/03 13:22:16 araujo Exp $
+# $FreeBSD: ports/security/sguil-server/files/sguild.sh.in,v 1.5 2008/05/21 14:42:51 araujo Exp $
 
 # PROVIDE: sguild
 # REQUIRE: DAEMON
@@ -30,7 +30,7 @@
 # Note: this value MUST be set in /etc/rc.conf if you do not accept the default
 # user created by the pkg-install script
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 load_rc_config sguild
 # set some defaults

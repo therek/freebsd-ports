@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/mDNSResponder/files/mdnsd.sh.in,v 1.4 2006/01/07 06:29:53 dougb Exp $
+# $FreeBSD: ports/net/mDNSResponder/files/mdnsd.sh.in,v 1.5 2006/02/20 20:47:26 dougb Exp $
 
 # PROVIDE: mdnsd
 # REQUIRE: DAEMON
@@ -7,7 +7,7 @@
 
 mdnsd_enable="${mdnsd_enable-NO}"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=mdnsd
 rcvar=`set_rcvar`

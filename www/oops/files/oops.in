@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/oops/files/oops.in,v 1.1 2008/06/29 09:53:47 itetcu Exp $
 #
 
 # PROVIDE: oops
 # REQUIRE: DAEMON
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="oops"
 rcvar=`set_rcvar`

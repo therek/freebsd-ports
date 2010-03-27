@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/boinc-client/files/boinc.sh.in,v 1.4 2006/03/15 10:44:46 pav Exp $
+# $FreeBSD: ports/net/boinc-client/files/boinc.sh.in,v 1.5 2008/12/23 13:59:18 pav Exp $
 
 # PROVIDE: boinc
 # REQUIRE: LOGIN
 # KEYWORD: shutdown
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="boinc"
 rcvar=`set_rcvar`

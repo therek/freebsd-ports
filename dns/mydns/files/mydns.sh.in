@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/mydns/files/mydns.sh.in,v 1.1 2005/03/08 16:27:45 ale Exp $
+# $FreeBSD: ports/dns/mydns/files/mydns.sh.in,v 1.2 2006/03/07 16:27:27 ale Exp $
 #
 
 # PROVIDE: mydns
@@ -13,7 +13,7 @@
 #			Set it to "YES" to enable MyDNS.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="mydns"
 rcvar=`set_rcvar`

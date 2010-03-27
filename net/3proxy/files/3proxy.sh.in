@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/3proxy/files/3proxy.sh.in,v 1.1 2005/10/28 07:16:04 osa Exp $
 
 # PROVIDE: threeproxy
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 threeproxy_enable=${threeproxy_enable-"NO"}
 threeproxy_flags=${threeproxy_flags-"%%PREFIX%%/etc/3proxy.cfg"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="threeproxy"
 rcvar=`set_rcvar`

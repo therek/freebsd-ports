@@ -2,7 +2,7 @@
 #
 # Startup script for Zeo server.
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/zope29/files/zeo29.sh.in,v 1.1 2006/01/28 10:07:29 pav Exp $
 #
 
 # PROVIDE: zeo29
@@ -21,7 +21,7 @@
 #   List of dirs with Zeo's instances ("" by default).
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="zeo29"
 rcvar=`set_rcvar`

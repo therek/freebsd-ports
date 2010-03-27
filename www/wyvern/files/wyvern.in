@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/wyvern/files/wyvern.in,v 1.1 2007/07/15 22:43:33 pav Exp $
+# $FreeBSD: ports/www/wyvern/files/wyvern.in,v 1.2 2007/07/16 18:56:30 pav Exp $
 #
 
 # PROVIDE: wyvern
@@ -17,7 +17,7 @@
 #
 wyvern_enable=${wyvern_enable:-"NO"}	# Enable wyvern
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="wyvern"
 rcvar=`set_rcvar`

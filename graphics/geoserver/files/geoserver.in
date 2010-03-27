@@ -1,6 +1,6 @@
 #!/bin/sh
 # 
-# $FreeBSD$
+# $FreeBSD: ports/graphics/geoserver/files/geoserver.in,v 1.1 2009/03/15 20:53:17 miwi Exp $
 #
 # PROVIDE: geoserver
 # REQUIRE: NETWORKING
@@ -11,7 +11,7 @@
 #				Set it to "YES" to enable geoserver.
 
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="geoserver"
 rcvar=${name}_enable

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/vtun/files/vtund.in,v 1.1 2007/02/26 11:03:15 miwi Exp $
 #
 # PROVIDE: vtund
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@
 vtund_enable=${vtund_enable:-"NO"}
 vtund_flags=${vtund_flags:-"-s"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=vtund
 rcvar=`set_rcvar`

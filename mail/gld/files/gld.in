@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/gld/files/gld.in,v 1.1 2006/01/14 17:08:46 pav Exp $
 # was: $ FreeBSD: ports/mail/gld/files/gld.sh.tmpl,v 1.2 2004/09/01 08:06:24 vs Exp $
 #
 
@@ -15,7 +15,7 @@
 # gld_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=gld
 rcvar=`set_rcvar`

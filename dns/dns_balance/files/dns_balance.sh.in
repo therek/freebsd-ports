@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/dns_balance/files/dns_balance.sh.in,v 1.3 2006/08/12 03:56:54 rafan Exp $
+# $FreeBSD: ports/dns/dns_balance/files/dns_balance.sh.in,v 1.4 2009/07/15 16:55:41 dougb Exp $
 #
 # PROVIDE: dns_balance
 # REQUIRE: DAEMON
@@ -9,7 +9,7 @@
 # dns_balance_enable="YES"
 # dns_balance_flags="<set as needed>"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=dns_balance
 rcvar=`set_rcvar`

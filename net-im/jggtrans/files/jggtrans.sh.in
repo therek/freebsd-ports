@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net-im/jggtrans/files/jggtrans.sh.in,v 1.2 2007/02/26 23:02:03 dougb Exp $
 #
 # PROVIDE: jggtrans
 # REQUIRE: DAEMON %%JABBER_USER%%
@@ -10,7 +10,7 @@
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 # SET THEM IN THE /etc/rc.conf 
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="jggtrans"
 rcvar=`set_rcvar`

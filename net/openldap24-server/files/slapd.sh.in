@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap24-server/files/slapd.sh.in,v 1.10 2009/09/07 09:46:19 delphij Exp $
+# $FreeBSD: ports/net/openldap24-server/files/slapd.sh.in,v 1.11 2009/09/07 22:27:13 delphij Exp $
 #
 
 # PROVIDE: slapd
@@ -34,7 +34,7 @@
 #slapd_krb5_ktname="/path/to/ldap.keytab"
 #
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="slapd"
 rcvar=`set_rcvar`

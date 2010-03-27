@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/ftp/proftpd/files/proftpd.sh.in,v 1.4 2009/07/15 16:55:42 dougb Exp $
+# $FreeBSD: ports/ftp/proftpd/files/proftpd.in,v 1.1 2010/01/04 04:34:07 pgollucci Exp $
 #
 
 # PROVIDE: proftpd
@@ -17,7 +17,7 @@
 # See proftpd(8) for flags
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=proftpd
 rcvar=`set_rcvar`

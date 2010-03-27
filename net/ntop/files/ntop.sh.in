@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ntop/files/ntop.sh.in,v 1.3 2009/08/02 19:35:02 mezz Exp $
 #
 # PROVIDE: ntop
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 #				Default is "-d --use-syslog=daemon". see ntop(8).
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=ntop
 rcvar=${name}_enable

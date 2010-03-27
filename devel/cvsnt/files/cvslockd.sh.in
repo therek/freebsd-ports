@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/cvsnt/files/cvslockd.sh.in,v 1.1 2005/04/19 19:03:52 fjoe Exp $
+# $FreeBSD: ports/devel/cvsnt/files/cvslockd.sh.in,v 1.2 2006/02/20 20:46:54 dougb Exp $
 #
 # PROVIDE: cvslockd
 # REQUIRE: LOGIN
 # KEYWORD: shutdown
 #
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 [ -z "$cvslockd_enable" ] && cvslockd_enable="NO"
 

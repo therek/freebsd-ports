@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/openssh-portable/files/openssh.in,v 1.2 2006/02/21 19:28:37 mnag Exp $
+# $FreeBSD: ports/security/openssh-portable/files/openssh.in,v 1.3 2009/09/18 14:05:52 pav Exp $
 #
 # PROVIDE: openssh
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 #				Default is "/var/run/sshd.pid".
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="openssh"
 rcvar=${name}_enable

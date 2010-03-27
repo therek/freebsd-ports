@@ -1,13 +1,13 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/tokyotyrant/files/ttserver.in,v 1.1 2009/03/27 21:34:43 lwhsu Exp $
+# $FreeBSD: ports/databases/tokyotyrant/files/ttserver.in,v 1.2 2009/06/11 21:48:13 pgollucci Exp $
 #
 #
 # PROVIDE: ttserver
 # REQUIRE: DAEMON
 # KEYWORD: shutdown
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ttserver"
 rcvar=`set_rcvar`

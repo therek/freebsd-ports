@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-im/jabber-pymsn/files/jabber-pymsn-transport.sh.in,v 1.8 2007/03/14 19:47:09 garga Exp $
+# $FreeBSD: ports/net-im/jabber-pymsn/files/jabber-pymsn-transport.sh.in,v 1.9 2008/01/15 13:13:30 garga Exp $
 #
 # PROVIDE: jabber_pymsn
 # REQUIRE: DAEMON %%JABBER_REQUIRE%%
@@ -11,7 +11,7 @@
 #       /etc/rc.conf.local
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="jabber_pymsn"
 rcvar=`set_rcvar`

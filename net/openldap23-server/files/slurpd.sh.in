@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap23-server/files/slurpd.sh.in,v 1.1 2006/05/18 15:03:48 delphij Exp $
+# $FreeBSD: ports/net/openldap23-server/files/slurpd.sh.in,v 1.2 2009/07/15 16:55:52 dougb Exp $
 #
 
 # PROVIDE: slurpd
@@ -16,7 +16,7 @@
 # See slurpd(8) for more flags
 #
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="slurpd"
 rcvar=`set_rcvar`

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/ipcad/files/ipcad.in,v 1.1 2006/02/20 02:48:34 mnag Exp $
+# $FreeBSD: ports/net-mgmt/ipcad/files/ipcad.in,v 1.2 2009/07/15 16:55:57 dougb Exp $
 #
 # PROVIDE: ipcad
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@
 #				Default is "%%PREFIX%%/etc/ipcad.conf".
 # ipcad_flags="<set as needed>"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ipcad"
 rcvar=${name}_enable

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/masqmail/files/masqmail.sh,v 1.3 2006/02/20 20:47:12 dougb Exp $
+# $FreeBSD: ports/mail/masqmail/files/masqmail.in,v 1.1 2008/07/18 21:03:58 anray Exp $
 #
 
 # PROVIDE: mail
@@ -17,7 +17,7 @@
 # See masqmail(8) for flags
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=masqmail
 rcvar=`set_rcvar`

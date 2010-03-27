@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/smtpd/files/smtpd.in,v 1.1 2006/02/19 23:07:01 mnag Exp $
 #
 # PROVIDE: smtpd
 # REQUIRE: DAEMON
@@ -11,7 +11,7 @@
 #				Default is "NO".
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="smtpd"
 rcvar=${name}_enable

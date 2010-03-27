@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/bacula-server-devel/files/bacula-fd.in,v 1.2 2009/06/01 17:04:44 wxs Exp $
+# $FreeBSD: ports/sysutils/bacula-server-devel/files/bacula-fd.in,v 1.3 2009/06/02 17:08:53 wxs Exp $
 #
 # PROVIDE: bacula_fd
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 # bacula_fd_flags (params):  Set params used to start bacula_fd.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="bacula_fd"
 rcvar=${name}_enable

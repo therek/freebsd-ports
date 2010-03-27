@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/sendfile/files/sendfiled.in,v 1.1 2008/03/11 01:41:13 beech Exp $
+# $FreeBSD: ports/net/sendfile/files/sendfiled.in,v 1.2 2009/07/15 16:55:54 dougb Exp $
 #
 
 # PROVIDE: sendfiled
@@ -15,7 +15,7 @@
 #
 # See sendfiled(8) for sendfiled_flags
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="sendfiled"
 rcvar=`set_rcvar`

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/gatekeeper/files/gnugk.sh.sample,v 1.1 2005/06/23 14:46:41 pav Exp $
+# $FreeBSD: ports/net/gatekeeper/files/gnugk.sh.in,v 1.1 2006/03/26 15:35:21 sem Exp $
 #
 # PROVIDE: gnugk
 # REQUIRE: NETWORKING SERVERS
@@ -17,7 +17,7 @@
 # gnugk_pidfile="path to the pidfile to use"	(def: /var/run/gnugk/gnugk.pid)
 # gnugk_flags="additional flags you need"	(def: -t)
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="gnugk"
 rcvar=`set_rcvar`

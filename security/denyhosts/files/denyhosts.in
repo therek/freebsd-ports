@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/denyhosts/files/denyhosts.in,v 1.1 2006/05/19 23:47:45 mnag Exp $
+# $FreeBSD: ports/security/denyhosts/files/denyhosts.in,v 1.2 2010/02/01 17:43:23 pgollucci Exp $
 #
 # PROVIDE: denyhosts
 # REQUIRE: DAEMON
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="denyhosts"
 rcvar=${name}_enable

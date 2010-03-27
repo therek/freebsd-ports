@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openslp/files/slpd.in,v 1.5 2006/01/08 20:03:43 marcus Exp $
+# $FreeBSD: ports/net/openslp/files/slpd.in,v 1.6 2008/10/22 00:46:05 marcus Exp $
 #
 # PROVIDE: slpd
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 slpd_enable=${slpd_enable-"NO"}
 slpd_flags=${slpd_flags-"-p /var/run/slpd.pid"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=slpd
 rcvar=`set_rcvar`

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/beanstalkd/files/beanstalkd.in,v 1.1 2008/04/11 12:55:52 vsevolod Exp $
 #
 # PROVIDE: beanstalkd
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 #				Default is "nobody".
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="beanstalkd"
 rcvar=${name}_enable

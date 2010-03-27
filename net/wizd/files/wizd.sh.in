@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/wizd/files/wizd.sh.in,v 1.1 2008/08/14 21:10:10 amdmi3 Exp $
+# $FreeBSD: ports/net/wizd/files/wizd.sh.in,v 1.2 2009/07/15 16:55:55 dougb Exp $
 #
 # PROVIDE: wizd
 # REQUIRE: LOGIN cleanvar
@@ -13,7 +13,7 @@
 #				Default is "".
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="wizd"
 rcvar=${name}_enable

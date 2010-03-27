@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/afbinit/files/afbinit.sh.in,v 1.1 2006/02/20 20:10:14 marius Exp $
 #
 
 # PROVIDE: afbinit
@@ -17,7 +17,7 @@
 # afbinit="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="afbinit"
 rcvar=${name}_enable

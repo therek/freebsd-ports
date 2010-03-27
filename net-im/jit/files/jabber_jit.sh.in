@@ -2,7 +2,7 @@
 #
 # Startup script for JIT ICQ transport.
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-im/jit/files/jabber_jit.sh.in,v 1.1 2006/03/26 20:24:00 pav Exp $
 #
 
 # PROVIDE: jabber_jit
@@ -17,7 +17,7 @@
 #   Enable the transport ("YES") or not ("NO", the default).
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="jabber_jit"
 rcvar=`set_rcvar`

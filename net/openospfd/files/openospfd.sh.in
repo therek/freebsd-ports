@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openospfd/files/openospfd.sh.in,v 1.1 2006/03/20 10:41:04 flz Exp $
+# $FreeBSD: ports/net/openospfd/files/openospfd.sh.in,v 1.2 2009/07/15 16:55:52 dougb Exp $
 #
 
 # PROVIDE: ospfd
@@ -15,7 +15,7 @@
 #
 # See ospfd(8) for openospfd_flags
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="openospfd"
 rcvar=`set_rcvar`

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/vtun/files/vtunclient.in,v 1.1 2007/02/26 11:03:15 miwi Exp $
+# $FreeBSD: ports/net/vtun/files/vtunclient.in,v 1.2 2009/07/15 16:55:55 dougb Exp $
 #
 # PROVIDE: vtunclient
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@
 
 vtunclient_enable=${vtunclient_enable:-"NO"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=vtunclient
 rcvar=`set_rcvar`

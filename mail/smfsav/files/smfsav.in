@@ -6,14 +6,14 @@
 
 # Written for FreeBSD.
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/smfsav/files/smfsav.in,v 1.1 2008/02/17 21:16:46 pav Exp $
 #
 # Copy this file into /usr/local/etc/rc.d as /usr/local/etc/rc.d/smfsav
 # Add this line to /etc/rc.conf:
 #
 # smfsav_enable="YES"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="smfsav"
 rcvar=`set_rcvar`

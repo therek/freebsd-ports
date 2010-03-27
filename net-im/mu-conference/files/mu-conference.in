@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-im/mu-conference/files/mu-conference.in,v 1.1 2007/07/26 11:31:26 mm Exp $
+# $FreeBSD: ports/net-im/mu-conference/files/mu-conference.in,v 1.2 2008/04/30 14:03:30 mm Exp $
 
 # PROVIDE: mu_conference
 # REQUIRE: %%JABBER_REQUIRE%%
@@ -19,7 +19,7 @@
 #   Enable ("YES") or disable ("NO", the default) this startup script.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="mu_conference"
 rcvar=`set_rcvar`

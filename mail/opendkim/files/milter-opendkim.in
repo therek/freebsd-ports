@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/opendkim/files/milter-opendkim.in,v 1.1 2009/09/21 12:25:21 pav Exp $
 #
 
 # PROVIDE: milter-opendkim
@@ -31,7 +31,7 @@
 # milteropendkim_alg (str):       Algorithm to use when signing
 # milteropendkim_flags (str):     Flags passed to start command.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="milteropendkim"
 rcvar=`set_rcvar`

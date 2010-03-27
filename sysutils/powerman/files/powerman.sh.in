@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/powerman/files/powerman.sh.in,v 1.1 2009/02/16 13:25:42 jadawin Exp $
+# $FreeBSD: ports/sysutils/powerman/files/powerman.sh.in,v 1.2 2009/07/15 16:56:06 dougb Exp $
 
 # PROVIDE: powermand
 # REQUIRE: NETWORKING
@@ -18,7 +18,7 @@
 
 powermand_enable=${powermand_enable:-"NO"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="powermand"
 rcvar=`set_rcvar`

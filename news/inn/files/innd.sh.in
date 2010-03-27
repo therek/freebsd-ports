@@ -4,10 +4,10 @@
 # REQUIRE: DAEMON
 # KEYWORD: shutdown
 #
-# $FreeBSD: ports/news/inn/files/innd.sh.in,v 1.1 2006/05/07 21:16:16 pav Exp $
+# $FreeBSD: ports/news/inn/files/innd.sh.in,v 1.2 2006/10/31 02:35:51 shaun Exp $
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=innd
 

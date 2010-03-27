@@ -1,12 +1,12 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/japanese/skkserv/files/skkserv.sh.in,v 1.1 2008/11/01 15:16:49 hrs Exp $
 #
 # PROVIDE: skkserv
 # REQUIRE: LOGIN
 # KEYWORD: shutdown
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=skkserv
 rcvar=`set_rcvar`

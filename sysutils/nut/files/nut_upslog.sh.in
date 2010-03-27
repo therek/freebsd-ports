@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/nut/files/nut_upslog.sh.in,v 1.1 2006/03/29 12:03:54 pav Exp $
 #
 
 # PROVIDE: nut_upslog
@@ -21,7 +21,7 @@ nut_upslog_logfile=${nut_upslog_logfile-"/var/log/ups.log"}
 nut_upslog_interval=${nut_upslog_interval-"300"}
 nut_upslog_ups=${nut_upslog_ups-"myups@localhost"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="nut_upslog"
 rcvar=`set_rcvar`

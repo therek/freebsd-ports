@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/mediatomb/files/mediatomb.sh.in,v 1.2 2007/07/15 15:05:15 miwi Exp $
+# $FreeBSD: ports/net/mediatomb/files/mediatomb.sh.in,v 1.3 2009/07/15 16:55:51 dougb Exp $
 
 # PROVIDE: mediatomb
 # REQUIRE: DEAMON
@@ -13,7 +13,7 @@
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 mediatomb_enable=${mediatomb_enable-"NO"}
 # mediatomb_flags="<set as needed>"

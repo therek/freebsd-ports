@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Gearman-Server/files/gearmand.in,v 1.1 2007/09/08 08:17:15 clsung Exp $
 #
 
 # PROVIDE: %%NAME%%
@@ -10,7 +10,7 @@
 #
 #%%NAME%%_enable="YES"
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="%%NAME%%"
 rcvar=`set_rcvar`

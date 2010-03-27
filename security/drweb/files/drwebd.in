@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/drweb/files/drwebd.sh.in,v 1.1 2007/08/30 15:02:47 sem Exp $
+# $FreeBSD: ports/security/drweb/files/drwebd.in,v 1.1 2009/02/04 10:26:35 pgollucci Exp $
 
 # PROVIDE: drwebd
 # REQUIRE: DAEMON
 # BEFORE: mail
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="drwebd"
 rcvar=`set_rcvar`

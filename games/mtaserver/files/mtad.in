@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/games/mtaserver/files/mtad.in,v 1.1 2006/12/06 16:07:52 rafan Exp $
+# $FreeBSD: ports/games/mtaserver/files/mtad.in,v 1.2 2006/12/17 06:39:59 rafan Exp $
 #
 # PROVIDE: mtad
 # REQUIRE: NETWORKING
@@ -10,7 +10,7 @@
 # mtad_enable (bool):		Set to "NO" by default.
 #                               Set it to "YES" to enable mtad.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="mtad"
 rcvar=${name}_enable

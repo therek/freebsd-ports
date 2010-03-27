@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/postfix25/files/postfix.sh.in,v 1.8 2009/09/30 12:50:04 miwi Exp $
 #
 # PROVIDE: postfix mail
 # REQUIRE: %%REQUIRE%%
@@ -18,7 +18,7 @@
 #				Default is "".
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="postfix"
 rcvar=${name}_enable

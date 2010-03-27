@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/perdition/files/perdition.in,v 1.1 2007/12/11 22:15:36 delphij Exp $
+# $FreeBSD: ports/mail/perdition/files/perdition.in,v 1.2 2009/07/15 16:55:48 dougb Exp $
 #
 # PROVIDE: perdition
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 
 perdition_enable=${perdition_enable-"NO"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="perdition"
 rcvar=`set_rcvar`

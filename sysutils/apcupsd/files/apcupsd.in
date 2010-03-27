@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/apcupsd/files/apcupsd.in,v 1.2 2006/04/24 03:26:54 mnag Exp $
+# $FreeBSD: ports/sysutils/apcupsd/files/apcupsd.in,v 1.3 2007/10/21 10:39:39 itetcu Exp $
 #
 # PROVIDE: apcupsd
 # REQUIRE: SERVERS
@@ -15,7 +15,7 @@
 #				to apcupsd (default empty).
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="apcupsd"
 rcvar=${name}_enable

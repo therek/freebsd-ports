@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dbeacon/files/dbeacon.in,v 1.1 2009/07/28 18:49:41 amdmi3 Exp $
 #
 # PROVIDE: dbeacon
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 dbeacon_enable=${dbeacon_enable-"NO"}
 dbeacon_flags=${dbeacon_flags-""}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="dbeacon"
 rcvar=`set_rcvar`

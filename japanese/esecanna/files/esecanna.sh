@@ -1,13 +1,13 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/japanese/esecanna/files/esecanna.sh,v 1.6 2004/05/10 18:39:05 knu Exp $
+# $FreeBSD: ports/japanese/esecanna/files/esecanna.sh,v 1.7 2006/02/20 20:47:05 dougb Exp $
 
 # PROVIDE: esecanna
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
 # KEYWORD: shutdown
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=esecanna
 rcvar=`set_rcvar`

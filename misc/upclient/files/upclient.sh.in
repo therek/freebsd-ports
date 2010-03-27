@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/upclient/files/upclient.sh.in,v 1.1 2006/04/01 13:19:40 edwin Exp $
+# $FreeBSD: ports/misc/upclient/files/upclient.sh.in,v 1.2 2009/07/15 16:55:50 dougb Exp $
 #
 # PROVIDE: upclient
 # REQUIRE: DAEMON
@@ -31,7 +31,7 @@ upclient_precmd ()
 
 upclient_enable="${upclient_enable-NO}"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=upclient
 rcvar=$(set_rcvar)

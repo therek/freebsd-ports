@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/quaqut/files/quaqut.in,v 1.1 2006/11/07 13:47:12 miwi Exp $
 #
 # PROVIDE: quaqut
 # REQUIRE: NETWORKING
@@ -15,7 +15,7 @@
 #				It must be a number between 10 and 9999.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="quaqut"
 rcvar=${name}_enable

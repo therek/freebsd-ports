@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/boxbackup/files/bbackupd.sh.in,v 1.1 2005/12/14 13:40:07 lawrance Exp $
+# $FreeBSD: ports/sysutils/boxbackup/files/bbackupd.sh.in,v 1.2 2006/02/20 20:47:41 dougb Exp $
 #
 # PROVIDE: bbackupd
 # REQUIRE: NETWORKING
@@ -16,7 +16,7 @@
 : ${bbackupd_flags:="%%PREFIX%%/etc/box/bbackupd.conf"}
 : ${bbackupd_pidfile:="/var/run/bbackupd.pid"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="bbackupd"
 rcvar=`set_rcvar`

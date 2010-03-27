@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/rsync/files/rsyncd.sh.in,v 1.2 2006/02/20 20:47:29 dougb Exp $
+# $FreeBSD: ports/net/rsync/files/rsyncd.sh.in,v 1.3 2009/07/15 16:55:54 dougb Exp $
 #
 
 # PROVIDE: %%NAME%%
@@ -16,7 +16,7 @@
 # See rsync(1) for %%NAME%%_flags
 #
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="%%NAME%%"
 rcvar=`set_rcvar`

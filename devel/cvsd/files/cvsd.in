@@ -1,11 +1,11 @@
 #!/bin/sh
-# $FreeBSD: ports/devel/cvsd/files/cvsd.in,v 1.1 2006/06/08 16:59:41 dougb Exp $
+# $FreeBSD: ports/devel/cvsd/files/cvsd.in,v 1.2 2007/02/26 22:49:34 miwi Exp $
 #
 # PROVIDE: cvsd
 # REQUIRE: LOGIN syslogd
 # KEYWORD: nojail shutdown
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="cvsd"
 rcvar=${name}_enable

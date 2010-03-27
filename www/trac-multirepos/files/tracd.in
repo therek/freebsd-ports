@@ -2,7 +2,7 @@
 #
 # tracd startup
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/trac-multirepos/files/tracd.in,v 1.1 2009/05/16 22:35:20 miwi Exp $
 
 # PROVIDE: tracd
 # REQUIRE: LOGIN
@@ -27,7 +27,7 @@
 # 				command. Empty by default.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="tracd"
 rcvar="${name}_enable"

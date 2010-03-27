@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/rabl_server/files/rabl_server.sh.in,v 1.1 2005/11/09 17:38:12 pav Exp $
+# $FreeBSD: ports/mail/rabl_server/files/rabl_server.sh.in,v 1.2 2005/12/11 23:58:09 lawrance Exp $
 # $Tecnik: ports/mail/rabl_server/files/rabl_server.sh.in,v 1.4 2005/12/09 19:55:53 itetcu Exp $
 #
 
@@ -17,7 +17,7 @@
 # rabl_server_user - user to run as (default: bind)
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=rabl_server
 rcvar=`set_rcvar`

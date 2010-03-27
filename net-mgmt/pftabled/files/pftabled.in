@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/pftabled/files/pftabled.in,v 1.1 2006/11/23 12:02:29 miwi Exp $
+# $FreeBSD: ports/net-mgmt/pftabled/files/pftabled.in,v 1.2 2009/02/19 20:20:43 miwi Exp $
 #
 # PROVIDE: pftabled
 # REQUIRE: NETWORKING SERVERS
@@ -14,7 +14,7 @@
 # 				Consult with the man page for more info.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="pftabled"
 rcvar=${name}_enable

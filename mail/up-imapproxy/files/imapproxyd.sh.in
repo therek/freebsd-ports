@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/up-imapproxy/files/imapproxyd.sh.in,v 1.3 2006/04/15 08:37:18 mbr Exp $
+# $FreeBSD: ports/mail/up-imapproxy/files/imapproxyd.sh.in,v 1.4 2007/07/21 03:59:50 mbr Exp $
 #
 # PROVIDE: imapproxyd
 # REQUIRE: DAEMON courier_imap_imapd courier_imap_imapd_ssl cyrus_imapd inetd
@@ -14,7 +14,7 @@
 # imapproxyd_conf (file):	Set location of conf file.
 #				Default is "%%PREFIX%%/etc/imapproxyd.conf"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=imapproxyd
 rcvar=${name}_enable

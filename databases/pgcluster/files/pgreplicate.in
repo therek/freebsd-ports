@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/pgcluster/files/pgreplicate.in,v 1.1 2007/07/16 10:53:48 rafan Exp $
+# $FreeBSD: ports/databases/pgcluster/files/pgreplicate.in,v 1.2 2007/07/26 16:05:04 rafan Exp $
 #
 # PROVIDE: pgreplicate
 # REQUIRE: DAEMON
@@ -11,7 +11,7 @@
 # pgreplicate_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="pgreplicate"
 rcvar=`set_rcvar`

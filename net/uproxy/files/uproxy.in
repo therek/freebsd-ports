@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/uproxy/files/uproxy.in,v 1.1 2006/11/08 19:33:45 miwi Exp $
+# $FreeBSD: ports/net/uproxy/files/uproxy.in,v 1.2 2006/12/21 22:13:28 miwi Exp $
 #
 #
 # PROVIDE: uproxy
@@ -14,7 +14,7 @@
 # uproxy_connectionname_options (str):	Commandline for each uproxy connection.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="uproxy"
 rcvar=${name}_enable

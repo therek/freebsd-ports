@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/dbus/files/dbus.in,v 1.14 2009/11/28 20:05:31 marcus Exp $
 #
 # PROVIDE: dbus
 # REQUIRE: DAEMON
@@ -10,7 +10,7 @@
 # dbus_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 . %%GNOME_SUBR%%
 
 dbus_enable=${dbus_enable-${gnome_enable}}

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/memcached/files/memcached.in,v 1.2 2006/02/21 19:37:31 seanc Exp $
+# $FreeBSD: ports/databases/memcached/files/memcached.in,v 1.3 2007/04/06 18:27:29 mnag Exp $
 #
 # PROVIDE: memcached
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 #				Default is "nobody".
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="memcached"
 rcvar=${name}_enable

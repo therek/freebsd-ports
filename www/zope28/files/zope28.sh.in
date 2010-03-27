@@ -2,7 +2,7 @@
 #
 # Startup script for Zope server.
 #
-# $FreeBSD: ports/www/zope28/files/zope28.sh.in,v 1.1 2005/09/21 22:20:35 vsevolod Exp $
+# $FreeBSD: ports/www/zope28/files/zope28.sh.in,v 1.2 2006/01/05 23:39:09 pav Exp $
 #
 
 # PROVIDE: zope28
@@ -20,7 +20,7 @@
 #   List of dirs with Zope's instances ("" by default).
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="zope28"
 rcvar=`set_rcvar`

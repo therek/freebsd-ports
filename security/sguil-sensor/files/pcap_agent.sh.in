@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/security/sguil-sensor/files/pcap_agent.sh.in,v 1.1 2008/05/20 19:02:07 araujo Exp $
 
 # PROVIDE: pcap_agent
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 # pcap_agent_flags (str):       Default: -D
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 load_rc_config pcap_agent
 

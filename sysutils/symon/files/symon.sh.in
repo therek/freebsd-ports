@@ -1,10 +1,10 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/symon/files/symon.sh.in,v 1.1 2005/04/26 14:32:53 vs Exp $
+# $FreeBSD: ports/sysutils/symon/files/symon.sh.in,v 1.2 2006/02/20 20:47:44 dougb Exp $
 
 # PROVIDE: symon
 # REQUIRE: NETWORKING SERVERS
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="symon"
 rcvar=`set_rcvar`

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/ipa/files/ipa.in,v 1.1 2006/04/12 18:11:36 jmelo Exp $
 #
 
 # If some IPA module requires some services, then they should
@@ -18,7 +18,7 @@
 # ipa_enable (boolean)		Set to "YES" to enable ipa
 #				(default is "NO")
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ipa"
 rcvar=${name}_enable

@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/perlbal/files/perlbal.in,v 1.1 2009/06/29 09:20:25 jadawin Exp $
 #
 
 # PROVIDE: perlbal
 # REQUIRE: DAEMON
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="perlbal"
 command="%%PREFIX%%/bin/perlbal"

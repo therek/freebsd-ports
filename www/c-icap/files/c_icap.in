@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/c-icap/files/c_icap.in,v 1.3 2009/08/02 19:35:57 mezz Exp $
 #
 
 # PROVIDE: c-icap
@@ -16,7 +16,7 @@
 # See '%%PREFIX%%/bin/c-icap --help' for flags
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="c_icap"
 rcvar=`set_rcvar`

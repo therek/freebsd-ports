@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/ipacctd/files/ipacctd.sh.in,v 1.1 2005/02/21 17:22:38 skv Exp $
+# $FreeBSD: ports/net-mgmt/ipacctd/files/ipacctd.sh.in,v 1.2 2009/07/15 16:55:57 dougb Exp $
 #
 
 # PROVIDE:	ipacctd
@@ -28,7 +28,7 @@
 #ipacctd_rule_xl0_flags="-p 666"
 #ipacctd_rule_xl0_pid="/var/run/ipacctd.xl0"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ipacctd"
 rcvar=`set_rcvar`

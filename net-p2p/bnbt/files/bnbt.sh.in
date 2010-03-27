@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-p2p/bnbt/files/bnbt.sh.in,v 1.2 2006/02/20 20:47:35 dougb Exp $
+# $FreeBSD: ports/net-p2p/bnbt/files/bnbt.sh.in,v 1.3 2009/07/15 16:56:00 dougb Exp $
 #
 
 # PROVIDE: bnbt
@@ -16,7 +16,7 @@
 # See bnbt(1) for bnbt_flags
 #
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="bnbt"
 rcvar=`set_rcvar`

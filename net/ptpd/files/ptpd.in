@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ptpd/files/ptpd.in,v 1.1 2008/11/13 22:17:28 naddy Exp $
 #
 # PROVIDE: ptpd
 # REQUIRE: NETWORKING DAEMON
@@ -11,7 +11,7 @@
 # ptpd_enable (bool):	Set to "NO" by default
 #			Set it to "YES" to enable ptpd
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ptpd"
 rcvar=`set_rcvar`

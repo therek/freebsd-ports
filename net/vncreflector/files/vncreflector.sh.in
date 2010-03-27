@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/vncreflector/files/vncreflector.sh.in,v 1.2 2005/04/18 22:35:16 brooks Exp $
+# $FreeBSD: ports/net/vncreflector/files/vncreflector.sh.in,v 1.3 2006/02/20 20:47:31 dougb Exp $
 
 # PROVIDE: vncreflector
 # REQUIRE: DAEMON
@@ -27,7 +27,7 @@ vncreflector_activefile=${vncreflector_logfile-"/var/log/vncreflector.log"}
 vncreflector_addr=${vncreflector_addr-""}
 #vncreflector_addr_5999=
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="vncreflector"
 rcvar=`set_rcvar`

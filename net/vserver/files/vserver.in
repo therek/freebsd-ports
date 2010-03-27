@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/vserver/files/vserver.in,v 1.2 2007/02/26 23:02:03 dougb Exp $
 #
 # FreeBSD boot time start up script for vserver(8).
 #
@@ -21,7 +21,7 @@
 # See vserver(8) for a detailed description of vserver commandline qualifiers.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=vserver
 rcvar=`set_rcvar`

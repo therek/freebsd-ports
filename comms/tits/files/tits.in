@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/comms/tits/files/tits.in,v 1.1 2007/04/09 15:43:28 des Exp $
 
 # PROVIDE: tits
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 tits_enable="${tits_enable-NO}"
 #tits_pidfile="/var/run/tits.pid"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="tits"
 rcvar=`set_rcvar`

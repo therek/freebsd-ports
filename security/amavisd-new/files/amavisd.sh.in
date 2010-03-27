@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/amavisd-new/files/amavisd.sh.in,v 1.7 2009/02/24 15:36:43 gabor Exp $
+# $FreeBSD: ports/security/amavisd-new/files/amavisd.sh.in,v 1.8 2009/04/05 17:49:19 gabor Exp $
 #
 
 # PROVIDE: amavisd
@@ -14,7 +14,7 @@
 #amavisd_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=amavisd
 rcvar=`set_rcvar`

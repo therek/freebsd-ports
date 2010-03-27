@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/net-mgmt/netmond/files/netmond.sh.in,v 1.2 2007/01/15 14:55:36 miwi Exp $
+# $FreeBSD: ports/net-mgmt/netmond/files/netmond.sh.in,v 1.3 2007/02/26 23:02:03 dougb Exp $
 
 # PROVIDE: netmond
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@
 #	/etc/rc.conf.d/netmond
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="netmond"
 rcvar=`set_rcvar`

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/batv-milter/files/milter-batv.sh.in,v 1.1 2009/06/15 06:53:02 miwi Exp $
+# $FreeBSD: ports/mail/batv-milter/files/milter-batv.sh.in,v 1.2 2009/07/15 16:55:45 dougb Exp $
 #
 
 # PROVIDE: milter-batv
@@ -30,7 +30,7 @@
 # milterbatv_key (str):       Path to the private key file to sign with.
 # milterbatv_flags (str):     Flags passed to start command.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="milterbatv"
 rcvar=`set_rcvar`

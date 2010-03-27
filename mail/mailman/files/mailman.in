@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mailman/files/mailman.in,v 1.1 2006/05/05 18:49:11 jmelo Exp $
+# $FreeBSD: ports/mail/mailman/files/mailman.in,v 1.2 2006/06/06 14:28:03 jmelo Exp $
 #
 # PROVIDE: mailman
 # REQUIRE: LOGIN
@@ -10,7 +10,7 @@
 # mailman_enable (bool):        Set it to "YES" to enable mailman.
 #                               Default is "NO".
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="mailman"
 rcvar=${name}_enable

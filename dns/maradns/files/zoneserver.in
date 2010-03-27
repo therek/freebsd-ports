@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/maradns/files/zoneserver.in,v 1.2 2009/10/07 09:51:28 miwi Exp $
+# $FreeBSD: ports/dns/maradns/files/zoneserver.in,v 1.3 2010/02/08 15:08:44 miwi Exp $
 #
 
 # PROVIDE: zoneserver
@@ -9,7 +9,7 @@
 # KEYWORD: shutdown
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 : ${zoneserver_enable="NO"}
 : ${maradns_conf="%%PREFIX%%/etc/mararc"}

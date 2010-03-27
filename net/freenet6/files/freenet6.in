@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/freenet6/files/freenet6.in,v 1.1 2008/07/20 14:02:42 edwin Exp $
+# $FreeBSD: ports/net/freenet6/files/freenet6.in,v 1.2 2010/02/12 13:19:27 pav Exp $
 #
 
 #
@@ -19,7 +19,7 @@
 # freenet6_flags="-f %%PREFIX%%/etc/gw6c.conf"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=freenet6
 rcvar=`set_rcvar`

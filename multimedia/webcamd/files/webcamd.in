@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/multimedia/webcamd/files/webcamd.in,v 1.1 2010/01/16 20:51:23 kwm Exp $
 #
 # PROVIDE: webcamd
 # REQUIRE: DAEMON
@@ -11,7 +11,7 @@
 
 webcamd_enable=${webcamd_enable-"NO"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=webcamd
 rcvar=`set_rcvar`

@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/xrdp/files/xrdp.in,v 1.2 2007/09/10 04:12:37 alepulver Exp $
+# $FreeBSD: ports/net/xrdp/files/xrdp.in,v 1.3 2010/02/16 15:12:20 pav Exp $
 #
 # REQUIRE: DAEMON
 # PROVIDE: xrdp sesman
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="xrdp"
 rcvar=`set_rcvar`

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/cnupm/files/cnupm.sh.in,v 1.1 2005/06/22 15:40:51 lawrance Exp $
+# $FreeBSD: ports/net/cnupm/files/cnupm.sh.in,v 1.2 2009/07/15 16:55:50 dougb Exp $
 #
 
 #
@@ -13,7 +13,7 @@
 # See cnupm(8) for flags
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=cnupm
 rcvar=`set_rcvar`

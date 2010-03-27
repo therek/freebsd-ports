@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/dns/bindgraph/files/bindgraph.in,v 1.1 2007/12/13 06:55:32 rafan Exp $
 #
 # PROVIDE: bindgraph
 # REQUIRE: DAEMON
@@ -10,7 +10,7 @@
 # bindgraph_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="bindgraph"
 rcvar=`set_rcvar`

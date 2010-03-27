@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/missey/files/mps.sh.in,v 1.1 2006/07/06 06:12:21 delphij Exp $
 #
 
 # PROVIDE: mps
@@ -12,7 +12,7 @@
 #			Set it to "YES" to enable Missey POP3 Server.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="mps"
 rcvar=`set_rcvar`

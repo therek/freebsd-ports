@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/gpsd/files/gpsd.in,v 1.1 2007/09/01 20:48:37 araujo Exp $
 #
 
 # PROVIDE: gpsd
@@ -21,7 +21,7 @@
 #                       Example: "/dev/cuaU0" for a USB serial GPS.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=gpsd
 rcvar=`set_rcvar`

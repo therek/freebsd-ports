@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# @(#) $FreeBSD: ports/sysutils/fvcool/files/fvcool.sh.in,v 1.1 2006/09/05 07:20:39 barner Exp $
+# @(#) $FreeBSD: ports/sysutils/fvcool/files/fvcool.sh.in,v 1.2 2009/07/15 16:56:05 dougb Exp $
 
 # PROVIDE: %%PORTNAME%%
 # REQUIRE: LOGIN abi
@@ -16,7 +16,7 @@
 # %%PORTNAME%%_flags    Set to "-v" for verbose mode.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="%%PORTNAME%%"
 rcvar=`set_rcvar`

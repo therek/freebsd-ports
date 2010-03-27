@@ -23,7 +23,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: ports/www/transproxy/files/tproxy.in,v 1.1 2008/02/03 16:24:34 sem Exp $
+# $FreeBSD: ports/www/transproxy/files/tproxy.in,v 1.2 2008/02/04 21:35:47 sem Exp $
 #
 
 #
@@ -51,7 +51,7 @@
 # Run `tproxy --help' for tproxy_flags.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="tproxy"
 rcvar=`set_rcvar`

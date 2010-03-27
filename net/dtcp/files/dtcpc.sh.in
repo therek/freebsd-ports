@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/dtcp/files/dtcpc.sh.in,v 1.2 2006/02/20 20:47:22 dougb Exp $
+# $FreeBSD: ports/net/dtcp/files/dtcpc.sh.in,v 1.3 2009/07/15 16:55:50 dougb Exp $
 #
 
 # PROVIDE: dtcpc
@@ -21,7 +21,7 @@ dtcpc_server=${dtcpc_server:-""}		# DTCP server name
 dtcpc_username=${dtcpc_username:-""}		# DTCP user name
 dtcpc_flags=${dtcpc_flags:-"-t network -Dl"}	# Flags to dtcpc program
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="dtcpc"
 rcvar=`set_rcvar`

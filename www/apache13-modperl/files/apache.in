@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-modperl/files/apache.in,v 1.1 2007/03/14 20:21:31 pav Exp $
+# $FreeBSD: ports/www/apache13-modperl/files/apache.in,v 1.2 2009/07/15 16:56:08 dougb Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
@@ -19,7 +19,7 @@
 apache_enable="${apache_enable-NO}"
 apache_pidfile="${apache_pidfile='/var/run/httpd.pid'}"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="apache"
 rcvar=`set_rcvar`

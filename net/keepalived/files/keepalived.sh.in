@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/keepalived/files/keepalived.sh.in,v 1.1 2005/09/08 19:55:01 clement Exp $
+# $FreeBSD: ports/net/keepalived/files/keepalived.sh.in,v 1.2 2006/02/20 20:47:26 dougb Exp $
 #
 
 # PROVIDE: keepalived
@@ -14,7 +14,7 @@
 #                             Set it to "YES" to enable keepalived
 # apache2_profiles (string):  Undefined by default. Define here your profiles.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="keepalived"
 rcvar=`set_rcvar`

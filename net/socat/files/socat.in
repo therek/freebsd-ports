@@ -2,7 +2,7 @@
 #
 # Author: Emanuel Haupt <ehaupt@FreeBSD.org>
 #
-# $FreeBSD: ports/net/socat/files/socat.in,v 1.1 2009/01/15 16:26:30 ehaupt Exp $
+# $FreeBSD: ports/net/socat/files/socat.in,v 1.2 2009/07/15 16:55:54 dougb Exp $
 #
 
 # PROVIDE: socat
@@ -13,7 +13,7 @@
 # socat_enable="YES"
 # socat_flags="<set as needed>"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="socat"
 rcvar=${name}_enable

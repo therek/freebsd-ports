@@ -1,12 +1,12 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/devel/linux-js/files/linux_js.sh.in,v 1.1 2006/03/21 16:03:50 jylefort Exp $
 
 # PROVIDE: linux_js
 # KEYWORD: shutdown
 
 linux_js_enable=${linux_js_enable-"NO"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="linux_js"
 rcvar=`set_rcvar`

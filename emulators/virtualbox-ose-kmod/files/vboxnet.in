@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/virtualbox-ose-kmod/files/vboxnet.in,v 1.2 2010/03/15 20:54:35 miwi Exp $
 #
 
 # PROVIDE:	vboxnet
@@ -15,7 +15,7 @@
 # vboxnet_enable (bool):   Set to NO by default.
 #               Set it to YES to load network related kernel modules on startup
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="vboxnet"
 rcvar=${name}_enable

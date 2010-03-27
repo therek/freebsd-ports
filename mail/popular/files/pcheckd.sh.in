@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/popular/files/pcheckd.sh.in,v 1.1 2005/08/30 14:09:24 pav Exp $
+# $FreeBSD: ports/mail/popular/files/pcheckd.sh.in,v 1.2 2007/03/27 22:17:11 pav Exp $
 #
 
 # PROVIDE: pcheckd
@@ -12,7 +12,7 @@
 # pcheckd_enable="YES"   # enable pcheckd
 # pcheckd_user="pop"   # user for pcheckd
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="pcheckd"
 rcvar=`set_rcvar`

@@ -5,7 +5,7 @@
 # (C) Copyright 2007 by Lapo Luchini
 # (loosely based on ports/security/openvpn/files/openvpn.sh.in 1.9 by Matthias Andree)
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/hamachi/files/hamachi.sh.in,v 1.1 2007/09/07 07:47:07 edwin Exp $
 # 
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -29,7 +29,7 @@
 
 # Note that we deliberately refrain from unloading drivers.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="hamachi"
 rcvar=`set_rcvar`

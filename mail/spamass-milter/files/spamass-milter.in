@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/spamass-milter/files/spamass-milter.in,v 1.5 2008/07/16 17:16:04 tabthorpe Exp $
+# $FreeBSD: ports/mail/spamass-milter/files/spamass-milter.in,v 1.6 2009/04/26 03:34:38 tabthorpe Exp $
 #
 
 # PROVIDE: spamass-milter
@@ -16,7 +16,7 @@
 # See spamass-milter(8) for flags.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=spamass_milter
 rcvar=`set_rcvar`

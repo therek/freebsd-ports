@@ -4,7 +4,7 @@
 # Time-stamp:	<2006-03-17 15:29:06 ericx>
 # Description:	start/stop script for pop-before-smtp daemon
 #
-# $FreeBSD: ports/mail/pop-before-smtp/files/pop-before-smtp.sh.in,v 1.1 2006/01/28 20:44:40 pav Exp $
+# $FreeBSD: ports/mail/pop-before-smtp/files/pop-before-smtp.sh.in,v 1.2 2006/03/21 20:23:15 mnag Exp $
 
 # PROVIDE: pop-before-smtp
 # REQUIRE: DAEMON
@@ -33,7 +33,7 @@
 #				  Default: /var/run/pop-before-smtp.pid
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 # sh interprets dash chars as the numeric minus operator...
 name="pop_before_smtp"

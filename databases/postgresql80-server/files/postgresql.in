@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/databases/postgresql80-server/files/postgresql.in,v 1.2 2007/01/09 16:29:35 girgen Exp $
+# $FreeBSD: ports/databases/postgresql80-server/files/postgresql.in,v 1.3 2009/07/15 16:55:39 dougb Exp $
 #
 # PROVIDE: postgresql
 # REQUIRE: LOGIN
@@ -25,7 +25,7 @@
 
 command=%%PREFIX%%/bin/pg_ctl
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 load_rc_config postgresql
 

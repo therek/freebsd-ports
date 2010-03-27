@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav-devel/files/clamav-milter.in,v 1.10 2009/02/18 11:41:57 garga Exp $
+# $FreeBSD: ports/security/clamav-devel/files/clamav-milter.in,v 1.11 2010/01/22 11:13:09 garga Exp $
 #
 
 # PROVIDE: clamav-milter
@@ -16,7 +16,7 @@
 # See clamav-milter(1) for flags
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=clamav_milter
 rcvar=`set_rcvar`

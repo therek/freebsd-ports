@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/xshttpd/files/xshttpd.sh.in,v 1.1 2005/09/15 23:04:31 pav Exp $
+# $FreeBSD: ports/www/xshttpd/files/xshttpd.sh.in,v 1.2 2008/02/03 08:24:41 johans Exp $
 #
 
 # PROVIDE: xshttpd
@@ -14,7 +14,7 @@
 #				Set it to "YES" to enable XS-HTTPD.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="xshttpd"
 rcvar=`set_rcvar`

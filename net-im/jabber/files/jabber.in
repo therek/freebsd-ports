@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-im/jabber/files/jabber.in,v 1.1 2007/02/27 13:13:26 miwi Exp $
+# $FreeBSD: ports/net-im/jabber/files/jabber.in,v 1.2 2007/07/18 06:09:10 mm Exp $
 #
 # PROVIDE: jabber
 # REQUIRE: LOGIN
@@ -11,7 +11,7 @@
 # jabber_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="jabber"
 rcvar=`set_rcvar`

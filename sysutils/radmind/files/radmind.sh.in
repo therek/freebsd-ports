@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/radmind/files/radmind.sh.in,v 1.1 2005/12/20 23:40:56 pav Exp $
+# $FreeBSD: ports/sysutils/radmind/files/radmind.sh.in,v 1.2 2006/02/20 20:47:43 dougb Exp $
 #
 
 # PROVIDE: radmind
@@ -19,7 +19,7 @@
 # See radmind(8) for flags
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=radmind
 rcvar=`set_rcvar`

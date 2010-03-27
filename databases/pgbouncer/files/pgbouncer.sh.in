@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/pgbouncer/files/pgbouncer.sh.in,v 1.2 2008/08/11 20:09:15 mm Exp $
+# $FreeBSD: ports/databases/pgbouncer/files/pgbouncer.sh.in,v 1.3 2009/07/15 16:55:39 dougb Exp $
 #
 
 # PROVIDE: pgbouncer
@@ -14,7 +14,7 @@
 # pgbouncer_flags="<set as needed>"
 #
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="pgbouncer"
 rcvar=`set_rcvar`

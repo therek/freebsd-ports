@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/devel/viewvc/files/viewvc.in,v 1.1 2008/08/19 21:59:24 pgollucci Exp $
+# $FreeBSD: ports/devel/viewvc/files/viewvc.in,v 1.2 2009/06/01 01:30:26 pgollucci Exp $
 #
 # PROVIDE: viewvc
 # REQUIRE: LOGIN
@@ -28,7 +28,7 @@
 # from 7467 to 49152
 # see http://viewvc.tigris.org/issues/show_bug.cgi?id=234
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="viewvc"
 rcvar=${name}_enable

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/ovs/files/ovs.sh.in,v 1.1 2007/09/02 01:37:38 rafan Exp $
+# $FreeBSD: ports/mail/ovs/files/ovs.sh.in,v 1.2 2007/12/03 02:24:19 rafan Exp $
 #
 # PROVIDE: ovs
 # REQUIRE: DAEMON
@@ -10,7 +10,7 @@
 # ovs_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ovs"
 rcvar=`set_rcvar`

@@ -2,7 +2,7 @@
 #
 # eXist startup script.
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/exist/files/eXist.in,v 1.1 2007/09/29 05:50:46 alepulver Exp $
 #
 
 # PROVIDE: eXist
@@ -14,7 +14,7 @@
 # eXist_flags (str):		Set to "-server" by default.
 #				Extra JVM flags.
 #
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="eXist"
 rcvar=`set_rcvar`

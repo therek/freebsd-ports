@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/mail/dspam-devel/files/dspam-devel.in,v 1.2 2006/05/13 13:16:08 itetcu Exp $
 #
 
 # PROVIDE: dspam
@@ -15,7 +15,7 @@
 # you can also set the pid file via dspam_pidfile
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="dspam"
 rcvar=${name}_enable

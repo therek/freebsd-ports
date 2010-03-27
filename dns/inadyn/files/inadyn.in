@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/dns/inadyn/files/inadyn.in,v 1.1 2008/12/21 10:24:54 rafan Exp $
 #
 # PROVIDE: inadyn
 # REQUIRE: NETWORKING
@@ -20,7 +20,7 @@
 # Don't forget to include --background in either method!
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="inadyn"
 rcvar=`set_rcvar`

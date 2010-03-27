@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/irc/ngircd/files/ngircd.in,v 1.1 2006/02/13 16:56:11 mnag Exp $
+# $FreeBSD: ports/irc/ngircd/files/ngircd.in,v 1.2 2009/07/15 16:55:44 dougb Exp $
 #
 # PROVIDE: ngircd
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 #				Default is empty "".
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ngircd"
 rcvar=`set_rcvar`

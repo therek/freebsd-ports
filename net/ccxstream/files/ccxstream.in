@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/ccxstream/files/ccxstream.sh.sample,v 1.2 2006/02/20 20:47:20 dougb Exp $
+# $FreeBSD: ports/net/ccxstream/files/ccxstream.in,v 1.1 2007/05/26 11:58:32 lioux Exp $
 #
 
 # PROVIDE: ccxstream
@@ -26,7 +26,7 @@
 # Don't worry about the "-f" (background) and "-F <pidfile>" arguments;
 # this script takes care of them for you.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ccxstream"
 rcvar=`set_rcvar`

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/sqlgrey/files/sqlgrey.sh.in,v 1.3 2005/11/23 17:22:15 mat Exp $
+# $FreeBSD: ports/mail/sqlgrey/files/sqlgrey.sh.in,v 1.4 2006/01/26 08:30:23 dougb Exp $
 #
 
 # PROVIDE: sqlgrey
@@ -15,7 +15,7 @@
 # See man sqlgrey for flags or the config file.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=sqlgrey
 rcvar=`set_rcvar`

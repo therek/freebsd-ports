@@ -1,11 +1,11 @@
 #!/bin/sh
-# $FreeBSD: ports/irc/ircservices/files/ircservices.in,v 1.1 2006/06/26 13:28:49 mat Exp $
+# $FreeBSD: ports/irc/ircservices/files/ircservices.in,v 1.2 2009/08/31 13:50:55 wxs Exp $
 #
 # PROVIDE: ircservices
 # REQUIRE: LOGIN
 # KEYWORDS: nojail shutdown
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=ircservices
 rcvar=${name}_enable

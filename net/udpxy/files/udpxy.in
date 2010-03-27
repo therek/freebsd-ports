@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/udpxy/files/udpxy.in,v 1.1 2010/01/06 21:45:08 mi Exp $
+# $FreeBSD: ports/net/udpxy/files/udpxy.in,v 1.2 2010/03/17 07:42:04 miwi Exp $
 #
 
 # PROVIDE: udpxy
@@ -18,7 +18,7 @@
 # udpxy_flags (str):    Set to "-S" by default.
 #                       Extra flags passed to start command.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="udpxy"
 rcvar=$(set_rcvar)

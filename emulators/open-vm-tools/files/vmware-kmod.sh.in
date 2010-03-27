@@ -1,13 +1,13 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/emulators/open-vm-tools/files/vmware-kmod.sh.in,v 1.5 2009/01/05 19:43:58 pav Exp $
+# $FreeBSD: ports/emulators/open-vm-tools/files/vmware-kmod.sh.in,v 1.6 2009/03/25 18:18:11 mbr Exp $
 #
 
 # PROVIDE: vmware-kmod
 # REQUIRE: FILESYSTEMS
 # BEFORE: netif
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 # Global
 checkvm_cmd="%%PREFIX%%/bin/vmware-checkvm > /dev/null"

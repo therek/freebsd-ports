@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/www6to4/files/www6to4.in,v 1.1 2007/05/03 08:28:13 miwi Exp $
 #
 # PROVIDE: www6to4
 # REQUIRE: DAEMON
@@ -9,7 +9,7 @@
 # www6to4_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=www6to4
 rcvar=`set_rcvar`

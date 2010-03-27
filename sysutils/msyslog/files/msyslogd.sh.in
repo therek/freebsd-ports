@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/msyslog/files/msyslogd.sh.in,v 1.3 2007/04/22 09:22:13 az Exp $
+# $FreeBSD: ports/sysutils/msyslog/files/msyslogd.sh.in,v 1.4 2009/07/15 16:56:06 dougb Exp $
 #
 
 # PROVIDE: syslogd
@@ -16,7 +16,7 @@
 # msyslogd_flags=""
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=msyslogd
 rcvar=`set_rcvar`

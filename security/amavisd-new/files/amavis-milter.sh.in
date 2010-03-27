@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/amavisd-new/files/amavis-milter.sh.in,v 1.1 2005/07/06 08:47:09 flz Exp $
+# $FreeBSD: ports/security/amavisd-new/files/amavis-milter.sh.in,v 1.2 2006/02/20 20:47:36 dougb Exp $
 #
 
 # PROVIDE: amavis_milter
@@ -14,7 +14,7 @@
 #amavis_milter_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=amavis_milter
 rcvar=`set_rcvar`

@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/fossology/files/fossology.in,v 1.1 2009/07/24 06:30:56 alepulver Exp $
+# $FreeBSD: ports/devel/fossology/files/fossology.in,v 1.2 2009/07/30 15:47:03 alepulver Exp $
 #
 # REQUIRE: DAEMON postgresql
 # PROVIDE: fossology
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="fossology"
 rcvar=`set_rcvar`

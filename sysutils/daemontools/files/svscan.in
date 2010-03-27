@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/daemontools/files/svscan.in,v 1.2 2010/01/05 06:24:31 dougb Exp $
+# $FreeBSD: ports/sysutils/daemontools/files/svscan.in,v 1.3 2010/01/06 11:07:54 roam Exp $
 #
 
 # PROVIDE: svscan
@@ -58,7 +58,7 @@
 #ulimit -s ${MINSEGMENT}
 #ulimit -u ${MAXCHILD}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="svscan"
 rcvar=`set_rcvar`

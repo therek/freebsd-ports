@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/nagios2/files/nagios.in,v 1.1 2008/09/03 00:30:56 pgollucci Exp $
+# $FreeBSD: ports/net-mgmt/nagios2/files/nagios.in,v 1.2 2009/07/15 16:55:58 dougb Exp $
 #
 
 # PROVIDE: nagios
@@ -16,7 +16,7 @@
 # nagios_configfile (str): Set to "%%PREFIX%%/etc/nagios/nagios.cfg" by default.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="nagios"
 rcvar=`set_rcvar`

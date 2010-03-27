@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/lanbrowsing/files/lisa.sh,v 1.22 2008/08/29 11:30:00 miwi Exp $
+# $FreeBSD: ports/net/lanbrowsing/files/lisa.sh,v 1.23 2009/02/11 19:18:09 dougb Exp $
 #
 
 # PROVIDE: lisa
@@ -9,7 +9,7 @@
 lisa_enable="NO"
 lisa_conffile="%%PREFIX%%/etc/lisarc"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="lisa"
 rcvar=`set_rcvar`

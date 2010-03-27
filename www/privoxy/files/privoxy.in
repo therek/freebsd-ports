@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/privoxy/files/privoxy.in,v 1.4 2009/07/15 16:56:10 dougb Exp $
+# $FreeBSD: ports/www/privoxy/files/privoxy.in,v 1.5 2010/02/24 01:36:26 wen Exp $
 #
 #
 # PROVIDE: privoxy
@@ -22,7 +22,7 @@
 # Usage:
 # %%PREFIX%%/etc/rc.d/privoxy [fast|force|one](start|stop|restart|rcvar|status|poll)
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="privoxy"
 rcvar=${name}_enable

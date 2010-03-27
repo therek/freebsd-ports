@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/cherokee/files/cherokee.sh.in,v 1.6 2008/08/29 17:43:09 beech Exp $
+# $FreeBSD: ports/www/cherokee/files/cherokee.sh.in,v 1.7 2008/09/01 18:27:20 beech Exp $
 #
 # PROVIDE: cherokee
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 #				Default is "%%PREFIX%%/etc/cherokee/cherokee.conf".
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="cherokee"
 rcvar=`set_rcvar`

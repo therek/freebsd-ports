@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/print/pips800/files/ekpd.sh,v 1.3 2006/02/20 20:47:36 dougb Exp $
+# $FreeBSD: ports/print/pips800/files/ekpd.sh,v 1.4 2009/07/15 16:56:00 dougb Exp $
 #
 
 # PROVIDE: ekpd
@@ -18,7 +18,7 @@
 # ekpd_enable="YES"
 # ekpd_flags=""			# Flags to ekpd program
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ekpd"
 rcvar=`set_rcvar`

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/relayd/files/relayd.in,v 1.1 2008/01/20 21:38:26 kuriyama Exp $
+# $FreeBSD: ports/net/relayd/files/relayd.in,v 1.2 2009/07/15 16:55:53 dougb Exp $
 #
 # PROVIDE: relayd
 # REQUIRE: LOGIN
@@ -10,7 +10,7 @@
 # relayd_enable="YES"
 # relayd_flags="<set as needed>"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=relayd
 rcvar=${name}_enable

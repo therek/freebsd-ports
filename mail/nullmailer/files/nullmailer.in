@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/nullmailer/files/nullmail.sh,v 1.7 2006/02/20 20:47:13 dougb Exp $
+# $FreeBSD: ports/mail/nullmailer/files/nullmailer.in,v 1.1 2009/07/15 05:33:14 pgollucci Exp $
 #
 # PROVIDE: nullmailer
 # REQUIRE: DAEMON
@@ -9,7 +9,7 @@
 # nullmailer_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=nullmailer
 rcvar=`set_rcvar`

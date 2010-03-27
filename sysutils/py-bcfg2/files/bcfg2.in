@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/py-bcfg2/files/bcfg2.in,v 1.1 2008/01/12 14:46:13 bsam Exp $
 #
 # PROVIDE: bcfg2
 # REQUIRE: LOGIN
@@ -12,7 +12,7 @@
 # bcfg2_flags (str):    Flags passed to bcfg2 on startup.
 #                       Default is "".
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="bcfg2"
 rcvar=${name}_enable

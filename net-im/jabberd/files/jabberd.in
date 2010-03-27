@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/net-im/jabberd/files/jabberd.in,v 1.4 2009/07/15 16:55:56 dougb Exp $
+# $FreeBSD: ports/net-im/jabberd/files/jabberd.in,v 1.5 2009/09/11 03:38:03 bland Exp $
 
 # PROVIDE: jabberd
 # REQUIRE: %%REQUIRE%%
@@ -17,7 +17,7 @@ jabberd_chdir=${jabberd_chdir-"%%JABBER_RUNDIR%%/pid"}
 jabberd_enable=${jabberd_enable-"NO"}
 jabberd_user=${jabberd_user-"%%JABBER_USER%%"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="jabberd"
 rcvar=`set_rcvar`

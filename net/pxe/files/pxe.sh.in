@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/pxe/files/pxe.sh.in,v 1.1 2007/06/03 20:41:10 anders Exp $
+# $FreeBSD: ports/net/pxe/files/pxe.sh.in,v 1.2 2008/10/15 13:45:19 anders Exp $
 #
 
 # PROVIDE: pxe
@@ -12,7 +12,7 @@
 #
 # pxe_enable="YES"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=pxe
 rcvar=`set_rcvar`

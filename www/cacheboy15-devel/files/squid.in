@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid/files/squid.in,v 1.3 2007/08/14 02:32:11 delphij Exp $
+# $FreeBSD: ports/www/cacheboy15-devel/files/squid.in,v 1.1 2008/04/18 06:29:39 adrian Exp $
 #
 # PROVIDE: squid
 # REQUIRE: LOGIN
@@ -24,7 +24,7 @@ squid_stop() {
 	run_rc_command poll
 }
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=squid
 rcvar=${name}_enable

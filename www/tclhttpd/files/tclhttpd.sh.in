@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/tclhttpd/files/tclhttpd.sh.in,v 1.1 2006/02/11 14:43:10 lawrance Exp $
+# $FreeBSD: ports/www/tclhttpd/files/tclhttpd.sh.in,v 1.2 2009/07/15 16:56:10 dougb Exp $
 #
 # PROVIDE: tclhttpd
 # REQUIRE: NETWORKING SERVERS
@@ -20,7 +20,7 @@
 # tclhttpd_stderr_log (str):	Set to the location for the tclhttpd
 #				process log (standard error)
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="tclhttpd"
 rcvar=`set_rcvar`

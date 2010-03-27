@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/ftp/frox/files/frox.sh.in,v 1.1 2006/02/07 12:50:29 sem Exp $
+# $FreeBSD: ports/ftp/frox/files/frox.sh.in,v 1.2 2009/07/15 16:55:42 dougb Exp $
 #
 
 # PROVIDE: frox
@@ -16,7 +16,7 @@
 # See frox(8) for flags
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=frox
 rcvar=`set_rcvar`

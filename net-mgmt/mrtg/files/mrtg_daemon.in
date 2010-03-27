@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/mrtg/files/mrtg_daemon.in,v 1.1 2008/06/06 02:57:04 lippe Exp $
 
 #
 # PROVIDE: mrtg_daemon
 # REQUIRE: DAEMON bsnmpd snmpd
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 
 name="mrtg_daemon"

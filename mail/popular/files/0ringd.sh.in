@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/popular/files/0ringd.sh.in,v 1.1 2005/08/30 14:09:24 pav Exp $
 #
 
 # PROVIDE: ringd
@@ -12,7 +12,7 @@
 # ringd_enable="YES"       # enable ringd
 # ringd_socket_user="pop"  # user to own /var/run sockets
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ringd"
 rcvar=`set_rcvar`

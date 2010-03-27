@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dkim-milter/files/milter-dkim.sh.in,v 1.17 2009/02/07 15:56:03 stefan Exp $
+# $FreeBSD: ports/mail/dkim-milter/files/milter-dkim.sh.in,v 1.18 2009/07/15 16:55:47 dougb Exp $
 #
 
 # PROVIDE: milter-dkim
@@ -31,7 +31,7 @@
 # milterdkim_alg (str):       Algorithm to use when signing
 # milterdkim_flags (str):     Flags passed to start command.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="milterdkim"
 rcvar=`set_rcvar`

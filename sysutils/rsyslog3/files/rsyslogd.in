@@ -1,13 +1,13 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/rsyslog3/files/rsyslogd.in,v 1.4 2008/05/06 15:24:59 sat Exp $
+# $FreeBSD: ports/sysutils/rsyslog3/files/rsyslogd.in,v 1.5 2008/05/06 18:20:56 sat Exp $
 #
 
 # PROVIDE: rsyslogd
 # REQUIRE: mountcritremote cleanvar newsyslog ldconfig
 # BEFORE:  SERVERS
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=rsyslogd
 rcvar=`set_rcvar`

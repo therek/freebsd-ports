@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/games/sampsvr/files/sampd.in,v 1.5 2007/09/05 15:02:50 rafan Exp $
+# $FreeBSD: ports/games/sampsvr/files/sampd.in,v 1.6 2008/12/02 06:58:14 beech Exp $
 #
 # PROVIDE: sampd
 # REQUIRE: NETWORKING
@@ -10,7 +10,7 @@
 # sampd_enable (bool):		Set to "NO" by default.
 #                               Set it to "YES" to enable sampd.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="sampd"
 rcvar=${name}_enable

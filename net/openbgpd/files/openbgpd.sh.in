@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openbgpd/files/openbgpd.sh.in,v 1.2 2006/02/20 20:47:27 dougb Exp $
+# $FreeBSD: ports/net/openbgpd/files/openbgpd.sh.in,v 1.3 2009/07/15 16:55:52 dougb Exp $
 #
 
 # PROVIDE: bgpd
@@ -15,7 +15,7 @@
 #
 # See bgpd(8) for openbgpd_flags
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="openbgpd"
 rcvar=`set_rcvar`

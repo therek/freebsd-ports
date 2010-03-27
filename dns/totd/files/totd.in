@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/totd/files/totd.in,v 1.1 2007/03/25 21:21:39 pav Exp $
+# $FreeBSD: ports/dns/totd/files/totd.in,v 1.2 2009/07/15 16:55:41 dougb Exp $
 #
 
 # PROVIDE: totd
@@ -17,7 +17,7 @@
 totd_enable=${totd_enable:-"NO"}		# Enable totd
 # totd_flags="<set as needed>"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="totd"
 rcvar=`set_rcvar`

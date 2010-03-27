@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dbmail/files/dbmail-lmtpd.sh.in,v 1.1 2005/07/18 16:04:16 pav Exp $
+# $FreeBSD: ports/mail/dbmail/files/dbmail-lmtpd.sh.in,v 1.2 2009/07/15 16:55:46 dougb Exp $
 #
 
 # PROVIDE: dbmail-lmtpd
@@ -16,7 +16,7 @@
 # See dbmail-lmtpd(8) for flags
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=dbmail_lmtpd
 rcvar=`set_rcvar`

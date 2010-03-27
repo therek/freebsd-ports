@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/spreadlogd/files/spreadlogd.sh.in,v 1.2 2006/02/20 20:47:49 dougb Exp $
+# $FreeBSD: ports/www/spreadlogd/files/spreadlogd.sh.in,v 1.3 2009/07/15 16:56:10 dougb Exp $
 #
 
 # PROVIDE: spreadlogd
@@ -13,7 +13,7 @@
 # spreadlogd_enable="YES"
 # spreadlogd_flags="<set as needed>"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=spreadlogd
 rcvar=`set_rcvar`

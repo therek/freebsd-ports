@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/proxyper/files/proxyper.in,v 1.1 2009/07/26 11:25:14 tdb Exp $
 #
 # PROVIDE: proxyper
 # REQUIRE: LOGIN
@@ -11,7 +11,7 @@ proxyper_enable=${proxyper_enable:-"NO"}
 dir="%%BINDIR%%"
 user="nobody"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="proxyper"
 rcvar=`set_rcvar`

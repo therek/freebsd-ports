@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/anyterm/files/anytermd.in,v 1.1 2009/11/21 10:18:54 miwi Exp $
 #
 
 # PROVIDE: anytermd
@@ -19,7 +19,7 @@
 # anytermd_name (str):		Set to "anyterm" by default.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=anytermd
 rcvar=`set_rcvar`

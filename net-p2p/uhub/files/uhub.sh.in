@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: $
+# $FreeBSD: ports/net-p2p/uhub/files/uhub.sh.in,v 1.1 2009/11/11 16:43:59 amdmi3 Exp $
 #
 # PROVIDE: uhub
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@
 #			Default is "/var/run/uhub.pid".
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="uhub"
 rcvar=`set_rcvar`

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/postgrey/files/postgrey.in,v 1.2 2007/10/27 11:49:41 beech Exp $
+# $FreeBSD: ports/mail/postgrey/files/postgrey.in,v 1.3 2010/01/18 00:14:21 pgollucci Exp $
 #
 
 # PROVIDE: postgrey
@@ -15,7 +15,7 @@
 # See perldoc postgrey for flags
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=postgrey
 rcvar=`set_rcvar`

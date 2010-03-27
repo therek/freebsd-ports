@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/hudson/files/hudson.sh.in,v 1.1 2009/06/13 22:39:04 hq Exp $
 #
 
 # PROVIDE: hudson
@@ -41,7 +41,7 @@
 
 hudson_log_file=/var/log/hudson.log
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="hudson"
 rcvar=`set_rcvar`

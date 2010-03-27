@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net-mgmt/smokeping/files/smokeping.in,v 1.3 2009/07/15 16:55:59 dougb Exp $
+# $FreeBSD: ports/net-mgmt/smokeping/files/smokeping.in,v 1.4 2010/02/16 14:33:17 lth Exp $
 
 # PROVIDE: smokeping
 # REQUIRE: sshd
@@ -20,7 +20,7 @@ smokeping_logfile=${smokeping_logfile-"/var/log/smokeping.log"}
 smokeping_user=${smokeping_user-"%%USERS%%"}
 smokeping_group=${smokeping_group-"%%GROUPS%%"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="smokeping"
 rcvar=`set_rcvar`

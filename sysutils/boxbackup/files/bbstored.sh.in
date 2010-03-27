@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/boxbackup/files/bbstored.sh.in,v 1.1 2005/12/14 13:40:07 lawrance Exp $
+# $FreeBSD: ports/sysutils/boxbackup/files/bbstored.sh.in,v 1.2 2006/02/20 20:47:41 dougb Exp $
 #
 # PROVIDE: bbstored
 # REQUIRE: NETWORKING
@@ -16,7 +16,7 @@
 : ${bbstored_flags:="%%PREFIX%%/etc/box/bbstored.conf"}
 : ${bbstored_pidfile:="/var/run/bbstored.pid"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="bbstored"
 rcvar=`set_rcvar`

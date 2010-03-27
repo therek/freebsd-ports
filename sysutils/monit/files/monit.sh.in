@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/monit/files/monit.sh.in,v 1.2 2010/03/16 02:09:44 wen Exp $
+# $FreeBSD: ports/sysutils/monit/files/monit.sh.in,v 1.3 2010/03/17 02:46:53 dougb Exp $
 #
 
 # PROVIDE: monit
@@ -15,7 +15,7 @@
 # monit_flags (str):          Flags passed to monit on startup.
 #                             Default is "".
 #
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="monit"
 rcvar=`set_rcvar`

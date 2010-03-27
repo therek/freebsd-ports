@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/samba3/files/samba.in,v 1.5 2007/02/07 08:40:44 sem Exp $
+# $FreeBSD: ports/net/samba3/files/samba.in,v 1.6 2007/06/05 10:55:06 tdb Exp $
 #
 
 # PROVIDE: nmbd smbd
@@ -24,7 +24,7 @@
 #samba_config="%%SAMBA_CONFDIR%%/%%SAMBA_CONFIG%%"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="samba"
 rcvar=$(set_rcvar)

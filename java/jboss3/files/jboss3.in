@@ -2,7 +2,7 @@
 #
 # %%APP_TITLE%% startup script.
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/jboss3/files/jboss3.in,v 1.1 2007/07/29 20:16:14 pav Exp $
 #
 
 # PROVIDE: %%APP_SHORTNAME%%
@@ -16,7 +16,7 @@
 # %%APP_SHORTNAME%%_config (str):		Set to "" by default
 #				JBoss server config, eg {all|default|minimal|standard}
 #
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="%%APP_SHORTNAME%%"
 rcvar=`set_rcvar`

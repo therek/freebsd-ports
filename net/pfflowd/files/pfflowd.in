@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/pfflowd/files/pfflowd.in,v 1.1 2008/05/26 09:51:09 rafan Exp $
 #
 
 # PROVIDE: pfflowd
@@ -14,7 +14,7 @@
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=pfflowd
 rcvar=`set_rcvar`

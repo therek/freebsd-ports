@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/squeezecenter/files/squeezecenter.sh.in,v 1.13 2008/09/02 19:51:04 brooks Exp $
+# $FreeBSD: ports/audio/squeezeboxserver/files/squeezeboxserver.sh.in,v 1.2 2009/10/14 22:33:31 brooks Exp $
 #
 
 # PROVIDE: %%PORTNAME%%
@@ -13,7 +13,7 @@
 #%%PORTNAME%%_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=%%PORTNAME%%
 start_precmd="%%PORTNAME%%_start_precmd"

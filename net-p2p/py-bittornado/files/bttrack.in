@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-p2p/py-bittornado/files/bttrack.in,v 1.1 2009/07/13 15:56:23 lwhsu Exp $
 #
 # PROVIDE: bttrack
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 # 
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=bttrack
 rcvar=`set_rcvar`

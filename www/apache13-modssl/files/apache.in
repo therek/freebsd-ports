@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/apache13-modssl/files/apache.in,v 1.1 2009/10/20 18:02:29 dinoex Exp $
 #
 
 # PROVIDE: apache
@@ -25,7 +25,7 @@
 #                             module on start up and load if not loaded.
 # apache_fib (str):	      Set an altered default network view for apache
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="apache"
 rcvar=`set_rcvar`

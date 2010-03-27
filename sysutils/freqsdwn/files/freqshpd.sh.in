@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/freqsdwn/files/freqshpd.sh.in,v 1.1 2006/02/04 15:13:37 nork Exp $
 #
 # PROVIDE: freqshpd
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 #
 freqshpd_enable=${freqshpd_enable-"NO"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=freqshpd
 rcvar=`set_rcvar`

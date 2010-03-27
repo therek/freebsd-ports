@@ -4,12 +4,12 @@
 # REQUIRE: DAEMON
 # KEYWORD: shutdown
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/hydra/files/hydra.sh.in,v 1.1 2006/04/25 20:05:38 pav Exp $
 #
 
 hydra_enable=${hydra_enable-"NO"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 load_rc_config hydra
 

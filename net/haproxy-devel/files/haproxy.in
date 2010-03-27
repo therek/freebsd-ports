@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/haproxy-devel/files/haproxy.in,v 1.2 2008/01/21 07:54:44 delphij Exp $
 #
 
 # PROVIDE: haproxy
@@ -20,7 +20,7 @@
 # haproxylimits_args (str):   Default to "-e -C daemon"
 #                             Arguments of pre-start limits run.
 #
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="haproxy"
 rcvar=`set_rcvar`

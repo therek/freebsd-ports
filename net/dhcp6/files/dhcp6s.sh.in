@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/dhcp6/files/dhcp6s.sh.in,v 1.1 2006/06/24 05:57:26 suz Exp $
+# $FreeBSD: ports/net/dhcp6/files/dhcp6s.sh.in,v 1.2 2009/07/15 16:55:50 dougb Exp $
 #
 
 # PROVIDE: dhcp6s
@@ -21,7 +21,7 @@
 # dhcp6s_flags (additional arguments):	Not defined by default.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="dhcp6s"
 rcvar=${name}_enable

@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD: ports/net-im/ejabberd/files/ejabberd.in,v 1.3 2009/03/16 08:38:32 delphij Exp $
+# $FreeBSD: ports/net-im/ejabberd/files/ejabberd.in,v 1.4 2010/02/05 18:48:47 uqs Exp $
 
 # PROVIDE: ejabberd
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 ejabberd_enable=${ejabberd_enable-"NO"}
 ejabberd_node=${ejabberd_node-"ejabberd@localhost"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="ejabberd"
 rcvar=`set_rcvar`

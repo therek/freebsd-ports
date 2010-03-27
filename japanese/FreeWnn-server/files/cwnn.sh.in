@@ -1,12 +1,12 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/FreeWnn-server/files/cwnn.sh.in,v 1.1 2008/11/01 14:45:15 hrs Exp $
+# $FreeBSD: ports/japanese/FreeWnn-server/files/cwnn.sh.in,v 1.2 2010/01/02 14:47:19 hrs Exp $
 #
 # PROVIDE: cwnn
 # REQUIRE: LOGIN
 # KEYWORD: shutdown
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=cwnn
 rcvar=`set_rcvar`

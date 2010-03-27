@@ -1,14 +1,14 @@
 #!/bin/sh
 #
 # $NetBSD: mrouted,v 1.6 2002/03/22 04:33:59 thorpej Exp $
-# $FreeBSD: src/etc/rc.d/mrouted,v 1.9 2005/01/16 03:12:03 obrien Exp $
+# $FreeBSD: ports/net/mrouted/files/mrouted.in,v 1.1 2006/09/28 21:29:10 bms Exp $
 #
 
 # PROVIDE: mrouted
 # REQUIRE: netif routing cleanvar
 # KEYWORD: nojail
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="mrouted"
 rcvar=`set_rcvar`

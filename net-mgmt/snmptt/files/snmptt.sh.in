@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/snmptt/files/snmptt.sh.in,v 1.2 2006/02/20 20:47:34 dougb Exp $
+# $FreeBSD: ports/net-mgmt/snmptt/files/snmptt.sh.in,v 1.3 2009/07/15 16:56:00 dougb Exp $
 #
 
 # PROVIDE: snmptt
@@ -15,7 +15,7 @@
 # See snmptt documentation for flags.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=snmptt
 rcvar=`set_rcvar`

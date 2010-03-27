@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/p5-Mail-SpamAssassin/files/sa-spamd.sh.in,v 1.1 2006/03/20 13:03:33 garga Exp $
+# $FreeBSD: ports/mail/p5-Mail-SpamAssassin/files/sa-spamd.sh.in,v 1.2 2008/02/13 04:13:43 beech Exp $
 #
 
 # PROVIDE: spamd
@@ -16,7 +16,7 @@
 # See spamd(8) for flags
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=spamd
 rcvar=`set_rcvar`

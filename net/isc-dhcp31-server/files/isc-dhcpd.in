@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/isc-dhcp31-server/files/isc-dhcpd.in,v 1.7 2009/07/30 00:16:51 jpaetzel Exp $
+# $FreeBSD: ports/net/isc-dhcp31-server/files/isc-dhcpd.in,v 1.8 2009/09/02 13:47:05 jpaetzel Exp $
 #
 # PROVIDE: dhcpd
 # REQUIRE: DAEMON
@@ -12,7 +12,7 @@
 # dhcpd_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=dhcpd
 paranoia=%%PARANOIA%%				# compiled in paranoia?

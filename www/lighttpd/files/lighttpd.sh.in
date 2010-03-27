@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/lighttpd/files/lighttpd.sh.in,v 1.4 2007/03/26 03:31:58 mnag Exp $
+# $FreeBSD: ports/www/lighttpd/files/lighttpd.sh.in,v 1.5 2008/09/07 14:48:53 mnag Exp $
 #
 # PROVIDE: lighttpd
 # REQUIRE: %%REQUIRE%%
@@ -16,7 +16,7 @@
 #				Default is "/var/run/lighttpd.pid".
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="lighttpd"
 rcvar=`set_rcvar`

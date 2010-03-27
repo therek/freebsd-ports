@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/bounce/files/bounce.in,v 1.1 2006/11/10 00:44:59 clsung Exp $
+# $FreeBSD: ports/net/bounce/files/bounce.in,v 1.2 2007/01/02 09:07:17 miwi Exp $
 #
 #
 # PROVIDE: bounce
@@ -14,7 +14,7 @@
 # bounce_connectionname_options (str):	Commandline for each bounce connection.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="bounce"
 rcvar=${name}_enable

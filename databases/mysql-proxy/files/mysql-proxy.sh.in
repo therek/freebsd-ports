@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/mysql-proxy/files/mysql-proxy.sh.in,v 1.2 2009/07/09 02:49:52 clsung Exp $
+# $FreeBSD: ports/databases/mysql-proxy/files/mysql-proxy.sh.in,v 1.3 2009/10/27 12:31:22 clsung Exp $
 #
 
 # PROVIDE: mysql-proxy
@@ -27,7 +27,7 @@
 #			--proxy-lua-script=<file> - filename of the lua script
 #			--no-proxy - don't start proxy-server
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="mysql_proxy"
 rcvar=`set_rcvar`

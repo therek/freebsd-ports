@@ -1,13 +1,13 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/metalog/files/metalog.in,v 1.1 2007/07/14 15:57:01 sat Exp $
 #
 
 # PROVIDE: metalog
 # REQUIRE: mountcritremote cleanvar newsyslog ldconfig
 # BEFORE:  SERVERS
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=metalog
 rcvar=`set_rcvar`

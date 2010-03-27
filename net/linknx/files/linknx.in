@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/linknx/files/linknx.in,v 1.1 2008/11/08 20:07:06 miwi Exp $
 #
 
 # PROVIDE: linknx
@@ -20,7 +20,7 @@
 #
 
 
-. "%%RC_SUBR%%"
+. /etc/rc.subr
 
 name="linknx"
 rcvar=`set_rcvar`

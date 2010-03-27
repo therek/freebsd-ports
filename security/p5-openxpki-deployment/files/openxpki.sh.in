@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/p5-openxpki-deployment/files/openxpki.sh.in,v 1.2 2007/02/03 09:49:52 miwi Exp $
+# $FreeBSD: ports/security/p5-openxpki-deployment/files/openxpki.sh.in,v 1.3 2009/07/15 16:56:03 dougb Exp $
 
 # PROVIDE: openxpki
 # REQUIRE: DAEMON
@@ -20,7 +20,7 @@ case "$1" in
     *start) command_args="start";;
 esac
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="openxpki"
 rcvar=`set_rcvar`

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/milter-greylist/files/milter-greylist.in,v 1.5 2008/07/26 10:41:17 ache Exp $
+# $FreeBSD: ports/mail/milter-greylist/files/milter-greylist.in,v 1.6 2008/10/07 20:26:23 ache Exp $
 
 # PROVIDE: miltergreylist
 # REQUIRE: LOGIN
@@ -14,7 +14,7 @@
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="miltergreylist"
 rcvar=`set_rcvar`

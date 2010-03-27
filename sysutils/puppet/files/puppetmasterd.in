@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/puppet/files/puppetmasterd.in,v 1.4 2008/07/24 19:19:49 beech Exp $
+# $FreeBSD: ports/sysutils/puppet/files/puppetmasterd.in,v 1.5 2010/01/09 10:55:54 garga Exp $
 #
 # PROVIDE: puppetmasterd
 # REQUIRE: NETWORK
@@ -12,7 +12,7 @@
 # puppetmasterd_flags:		Set to "--pidfile ${puppetmasterd_pid}" by default
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="puppetmasterd"
 rcvar=`set_rcvar`

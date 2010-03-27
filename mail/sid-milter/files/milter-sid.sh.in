@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/sid-milter/files/milter-sid.sh.in,v 1.3 2006/07/11 05:17:07 dinoex Exp $
+# $FreeBSD: ports/mail/sid-milter/files/milter-sid.sh.in,v 1.4 2007/10/21 08:39:59 dinoex Exp $
 #
 
 # PROVIDE: miltersid
@@ -13,7 +13,7 @@
 #	/etc/rc.conf.d/miltersid
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="miltersid"
 rcvar=`set_rcvar`

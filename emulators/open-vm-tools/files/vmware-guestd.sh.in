@@ -1,13 +1,13 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/emulators/open-vm-tools/files/vmware-guestd.sh.in,v 1.4 2008/10/22 12:45:41 timur Exp $
+# $FreeBSD: ports/emulators/open-vm-tools/files/vmware-guestd.sh.in,v 1.5 2009/06/08 23:24:44 mbr Exp $
 #
 
 # PROVIDE: vmware-guestd
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 # Global
 checkvm_cmd="%%PREFIX%%/bin/vmware-checkvm > /dev/null"

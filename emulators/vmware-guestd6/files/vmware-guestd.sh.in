@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/emulators/vmware-guestd5/files/vmware-guestd.sh,v 1.8 2005/12/08 05:13:43 matusita Exp $
+# $FreeBSD: ports/emulators/vmware-guestd6/files/vmware-guestd.sh.in,v 1.9 2006/02/20 20:46:58 dougb Exp $
 #
 
 # PROVIDE: vmware-guestd
@@ -8,7 +8,7 @@
 # BEFORE: LOGIN
 
 PREFIX=%%PREFIX%%
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 # Global
 checkvm_cmd="${PREFIX}/sbin/vmware-checkvm > /dev/null"

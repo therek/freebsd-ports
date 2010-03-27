@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/opendd/files/opendd.in,v 1.1 2006/11/15 21:23:52 miwi Exp $
+# $FreeBSD: ports/dns/opendd/files/opendd.in,v 1.2 2008/04/27 05:21:19 rafan Exp $
 #
 # PROVIDE: opendd
 # REQUIRE: NETWORKING
@@ -10,7 +10,7 @@
 # opendd_enable (bool):		Set to "NO" by default.
 #                               Set it to "YES" to enable opendd.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="opendd"
 rcvar=${name}_enable

@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/isc-dhcp31-server/files/isc-dhcrelay.in,v 1.1 2006/08/25 12:02:58 sem Exp $
+# $FreeBSD: ports/net/isc-dhcp31-server/files/isc-dhcrelay.in,v 1.2 2009/07/15 16:55:51 dougb Exp $
 #
 # PROVIDE: dhcrelay
 # REQUIRE: DAEMON
@@ -44,7 +44,7 @@ dhcrelay_precmd ()
 	rc_flags="${rc_flags} ${ifaces} ${dhcrelay_servers}"
 }
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=dhcrelay
 rcvar=${name}_enable

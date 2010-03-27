@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/jetty/files/jetty.in,v 1.1 2007/03/16 12:14:58 miwi Exp $
 #
 
 # PROVIDE: %%APP_NAME%%
@@ -13,7 +13,7 @@
 # %%APP_NAME%%_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=%%APP_NAME%%
 rcvar=`set_rcvar`

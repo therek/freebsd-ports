@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/openupsd/files/openupsd.sh,v 1.3 2006/02/20 20:47:43 dougb Exp $
+# $FreeBSD: ports/sysutils/openupsd/files/openupsd.in,v 1.1 2009/07/26 11:25:57 tdb Exp $
 #
 # PROVIDE: openupsd
 # REQUIRE: LOGIN
@@ -8,7 +8,7 @@
 
 openupsd_enable=${openupsd_enable:-"NO"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="openupsd"
 rcvar=`set_rcvar`

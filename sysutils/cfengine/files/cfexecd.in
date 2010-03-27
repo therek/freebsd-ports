@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/cfengine/files/cfexecd.in,v 1.1 2007/06/15 18:18:57 sergei Exp $
+# $FreeBSD: ports/sysutils/cfengine/files/cfexecd.in,v 1.2 2009/07/15 16:56:04 dougb Exp $
 #
 # PROVIDE: cfexecd
 # REQUIRE: SERVERS
@@ -15,7 +15,7 @@
 #                               to cfexecd (default empty).
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="cfexecd"
 rcvar=${name}_enable

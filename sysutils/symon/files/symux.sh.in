@@ -1,10 +1,10 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/symon/files/symux.sh.in,v 1.1 2005/04/26 14:32:53 vs Exp $
+# $FreeBSD: ports/sysutils/symon/files/symux.sh.in,v 1.2 2006/02/20 20:47:44 dougb Exp $
 
 # PROVIDE: symux
 # REQUIRE: NETWORKING SERVERS
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="symux"
 rcvar=`set_rcvar`

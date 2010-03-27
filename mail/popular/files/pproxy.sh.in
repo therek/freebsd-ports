@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/popular/files/pproxy.sh.in,v 1.1 2005/08/30 14:09:24 pav Exp $
 #
 
 # PROVIDE: pproxy
@@ -12,7 +12,7 @@
 # pproxy_enable="YES"   # enable pproxy
 # pproxy_user="pop"     # user to pproxy
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="pproxy"
 rcvar=`set_rcvar`

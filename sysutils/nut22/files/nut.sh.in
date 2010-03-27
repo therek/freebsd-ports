@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/nut22/files/nut.sh.in,v 1.2 2009/09/21 09:11:59 pav Exp $
 #
 
 # PROVIDE: nut
@@ -18,7 +18,7 @@
 nut_enable=${nut_enable-"NO"}
 nut_prefix=${nut_prefix-"%%PREFIX%%"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="nut"
 rcvar=`set_rcvar`

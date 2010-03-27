@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/darkstat/files/darkstat.in,v 1.2 2008/06/10 03:32:15 rafan Exp $
+# $FreeBSD: ports/net-mgmt/darkstat/files/darkstat.in,v 1.3 2009/07/15 16:55:56 dougb Exp $
 #
 
 # PROVIDE: darkstat
@@ -29,7 +29,7 @@
 #
 # Please refer to the darkstat(1) manual page for full documentation.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=darkstat
 rcvar=`set_rcvar`

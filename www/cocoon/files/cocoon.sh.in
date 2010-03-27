@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/www/cocoon/files/cocoon.sh.in,v 1.1 2006/05/05 16:35:05 hq Exp $
+# $FreeBSD: ports/www/cocoon/files/cocoon.sh.in,v 1.2 2007/01/23 10:21:34 sat Exp $
 #
 
 # PROVIDE: %%APP_NAME%%
@@ -13,7 +13,7 @@
 # %%APP_NAME%%_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=%%APP_NAME%%
 rcvar=`set_rcvar`

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/howl/files/mdnsresponder.in,v 1.1 2009/07/15 05:21:42 pgollucci Exp $
+# $FreeBSD: ports/net/howl/files/mdnsresponder.in,v 1.2 2009/07/15 16:39:21 dougb Exp $
 #
 # PROVIDE: mdnsresponder
 # REQUIRE: DAEMON
@@ -11,7 +11,7 @@
 # mdnsresponder_enable="YES"
 # mdnsresponder_flags="<set as needed>"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=mdnsresponder
 rcvar=`set_rcvar`

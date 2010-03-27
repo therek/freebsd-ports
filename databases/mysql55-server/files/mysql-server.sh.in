@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/mysql55-server/files/mysql-server.sh.in,v 1.6 2008/07/30 06:11:16 ale Exp $
+# $FreeBSD: ports/databases/mysql55-server/files/mysql-server.sh.in,v 1.7 2010/01/04 10:05:52 ale Exp $
 #
 
 # PROVIDE: mysql
@@ -20,7 +20,7 @@
 #			to mysqld_safe (default empty).
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="mysql"
 rcvar=`set_rcvar`

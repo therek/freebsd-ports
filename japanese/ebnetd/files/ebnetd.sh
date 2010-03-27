@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/japanese/ebnetd/files/ebnetd.sh,v 1.1 2004/10/31 21:56:07 pav Exp $
+# $FreeBSD: ports/japanese/ebnetd/files/ebnetd.sh,v 1.2 2006/02/20 20:47:04 dougb Exp $
 #
 
 # PROVIDE: ebnetd ndtpd ebhttpd
@@ -23,7 +23,7 @@
 # ebhttpd_flags (str):   Set to "" by default.
 #                        Extra flags passed to start ebhttpd.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 # ebnetd
 name=ebnetd

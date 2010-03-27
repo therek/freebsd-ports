@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/openct/files/openct.in,v 1.1 2006/06/12 16:53:46 ale Exp $
+# $FreeBSD: ports/security/openct/files/openct.in,v 1.2 2008/08/27 21:15:18 ale Exp $
 #
 
 # PROVIDE: openct
@@ -14,7 +14,7 @@
 #			Set it to "YES" to enable OpenCT.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="openct"
 rcvar=`set_rcvar`

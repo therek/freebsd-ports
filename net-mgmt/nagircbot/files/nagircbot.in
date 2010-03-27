@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/nagircbot/files/nagircbot.in,v 1.1 2007/07/06 07:15:08 lwhsu Exp $
+# $FreeBSD: ports/net-mgmt/nagircbot/files/nagircbot.in,v 1.2 2009/07/15 16:55:58 dougb Exp $
 #
 # PROVIDE: nagircbot
 # REQUIRE: NETWORKING
@@ -14,7 +14,7 @@
 # You must configure at least some flags to make it connect to a server. See -h.
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=nagircbot
 rcvar=`set_rcvar`

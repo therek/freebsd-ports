@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/arpwatch/files/arpwatch.sh.in,v 1.7 2006/10/04 00:58:55 clsung Exp $
+# $FreeBSD: ports/net-mgmt/arpwatch/files/arpwatch.sh.in,v 1.8 2010/02/02 05:14:29 tabthorpe Exp $
 #
 
 # PROVIDE: arpwatch
@@ -13,7 +13,7 @@
 arpwatch_enable=${arpwatch_enable:-"NO"}
 arpwatch_dir=${arpwatch_dir:-"%%PREFIX%%/arpwatch/"}
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=arpwatch
 rcvar=`set_rcvar`

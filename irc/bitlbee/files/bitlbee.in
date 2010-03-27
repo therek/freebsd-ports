@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/irc/bitlbee/files/bitlbee.in,v 1.4 2009/09/13 10:35:23 brix Exp $
+# $FreeBSD: ports/irc/bitlbee/files/bitlbee.in,v 1.5 2009/09/21 18:29:16 brix Exp $
 #
 # PROVIDE: bitlbee
 # REQUIRE: LOGIN
@@ -10,7 +10,7 @@
 # bitlbee_enable="YES"
 # bitlbee_flags="<set as needed>"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="bitlbee"
 rcvar=`set_rcvar`

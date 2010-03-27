@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/quoted/files/quoted.in,v 1.2 2009/07/27 23:12:00 dougb Exp $
 #
 # PROVIDE: quoted
 # REQUIRE: LOGIN
@@ -11,7 +11,7 @@ quoted_enable=${quoted_enable:-"NO"}
 
 user="nobody"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="quoted"
 rcvar=`set_rcvar`

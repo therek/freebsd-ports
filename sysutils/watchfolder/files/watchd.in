@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/watchfolder/files/watchd.in,v 1.1 2009/04/01 17:47:22 ehaupt Exp $
 #
 # PROVIDE: watchd
 # REQUIRE: DAEMON
@@ -11,7 +11,7 @@
 # watchd_enable (bool):		Set to "NO" by default.
 #                               Set it to "YES" to enable watchd.
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="watchd"
 rcvar=${name}_enable
