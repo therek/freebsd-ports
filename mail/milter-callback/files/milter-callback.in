@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/milter-callback/files/milter-callback.in,v 1.1 2010/02/11 14:15:33 ehaupt Exp $
 #
 
 # PROVIDE: milter-callback
@@ -13,7 +13,7 @@
 # miltercallback_enable="YES"
 #
 
-. "/etc/rc.subr"
+. /etc/rc.subr
 
 name="miltercallback"
 rcvar=`set_rcvar`
