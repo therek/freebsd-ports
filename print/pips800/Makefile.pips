@@ -2,7 +2,7 @@
 # Date created:		26 Aug 2004
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.32 2008/06/06 14:33:38 edwin Exp $
+# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.33 2008/08/20 00:57:11 ade Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
@@ -191,7 +191,6 @@ ${_P}="@comment "
 .endif
 .endfor
 RC_SCRIPTS_SUB=	PREFIX=${PREFIX} \
-		RC_SUBR=${RC_SUBR} \
 		PRT_MODEL=${PRT_MODEL}
 WITH_EKPD?=	yes
 .endif
