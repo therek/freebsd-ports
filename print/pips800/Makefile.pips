@@ -2,7 +2,7 @@
 # Date created:		26 Aug 2004
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.33 2008/08/20 00:57:11 ade Exp $
+# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.34 2010/03/27 05:21:35 dougb Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
@@ -57,7 +57,7 @@ MASTER_SITE_SUBDIR=	${PRT_MODEL:L}${SUBDIR_SUFFIX}
 
 MAINTAINER=	ume@FreeBSD.org
 
-LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.6:${PORTSDIR}/graphics/png
 RUN_DEPENDS=	pstops:${PORTSDIR}/print/psutils-${PAPERSIZE} \
 		${LOCALBASE}/lib/pluginwrapper/pips.so:${PORTSDIR}/www/linuxpluginwrapper
 

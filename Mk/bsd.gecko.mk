@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.18 2010/01/21 20:26:16 beat Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.19 2010/02/05 11:33:44 dinoex Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -334,7 +334,7 @@ nss_CPPFLAGS+=		-I${LOCALBASE}/include/nss -I${LOCALBASE}/include/nss/nss
 nss_LDFLAGS+=		-L${LOCALBASE}/lib/nss -Wl,-rpath,${PREFIX}/lib/${MOZ_RPATH}
 
 
-png_LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
+png_LIB_DEPENDS=	png.6:${PORTSDIR}/graphics/png
 png_MOZ_OPTIONS=	--with-system-png=${LOCALBASE}
 
 xft_LIB_DEPENDS=	Xft.2:${PORTSDIR}/x11-fonts/libXft
