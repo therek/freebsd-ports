@@ -1,5 +1,4 @@
-@comment $FreeBSD: ports/misc/upclient/pkg-plist,v 1.6 2003/02/14 00:16:51 naddy Exp $
-etc/rc.d/upclient.sh
+@comment $FreeBSD: ports/misc/upclient/pkg-plist,v 1.7 2004/03/03 11:46:05 krion Exp $
 @unexec if cmp -s %D/etc/upclient.conf %D/etc/upclient.conf.sample; then rm -f %D/etc/upclient.conf; fi
 etc/upclient.conf.sample
 @exec [ -f %D/etc/upclient.conf ] || cp -p %D/etc/upclient.conf.sample %D/etc/upclient.conf
