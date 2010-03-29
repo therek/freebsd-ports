@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2111 2010/03/27 12:13:48 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.2112 2010/03/27 16:10:15 ehaupt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4348,3 +4348,4 @@ x11-drivers/xf86-input-spaceorb||2010-03-27|Unmaintained upstream. Notify x11 Ma
 x11-drivers/xf86-input-summa||2010-03-27|Unmaintained upstream. Notify x11 Maintainers if you have this device.
 x11-drivers/xf86-input-tek4957||2010-03-27|Unmaintained upstream. Notify x11 Maintainers if you have this device.
 audio/ym2wav|audio/stymulator|2010-03-27|ym2wav is now part of stymulator
+www/trac-webadmin|2010-03-30|Incorporated to www/trac
