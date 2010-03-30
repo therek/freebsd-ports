@@ -566,7 +566,7 @@ made to allow '.' in usernames).</dd>
 <dt><img alt="(transient)" src="/errorlogs/images/green-ball.gif"><a name=
 "cluster">cluster</a></dt>
 
-<dd>There was some kind of error on the build cluster. It is not your
+<dd>There was some kind of transient error on the build cluster. It is not your
 fault.</dd>
 
 <dt><img alt="(uncommon)" src="/errorlogs/images/purple-ball.gif"><a name=
@@ -801,6 +801,12 @@ Communication code.</dd>
 <dd>There is a linker error which is caused by failing to find one of
 the thread libraries.</dd>
 
+<dt><img alt="(transient)" src="/errorlogs/images/green-ball.gif"><a name=
+"truncated_distfile">truncated_distfile</a></dt>
+
+<dd>A package node encountered an error during pkg_add. It is not your
+fault.  Linimon is trying to figure out this problem.</dd>
+
 <dt><img alt="(uncommon)" src="/errorlogs/images/purple-ball.gif"><a name=
 "usexlib">USE_XLIB</a></dt>
 
@@ -963,7 +969,7 @@ longer sufficient in XFree86-4.</dd>
 | Maintained by <a href="mailto:portmgr@FreeBSD.org">portmgr@FreeBSD.org</a>
 | Last modified 
 <br>
-$FreeBSD: ports/Tools/portbuild/errorlogs/index.shtml,v 1.7 2010/02/05 18:09:52 linimon Exp $
+$FreeBSD: ports/Tools/portbuild/errorlogs/index.shtml,v 1.8 2010/02/19 16:27:24 linimon Exp $
 </center>
 </body></html>
 </html>
