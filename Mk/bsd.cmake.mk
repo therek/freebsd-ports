@@ -11,7 +11,7 @@
 #					compiling/linking
 #					Default: not set
 # CMAKE_BUILD_TYPE	- Type of build (cmake predefined build types),
-#					affects on CFALGS and thus should not be set.
+#					affects on CFLAGS and thus should not be set.
 #					Default: none (which respects CFLAGS)
 # CMAKE_VERBOSE		- Verbose build
 #					Default: not set
@@ -23,7 +23,7 @@
 #					Default: ${PREFIX}
 #
 #
-# $FreeBSD: ports/Mk/bsd.cmake.mk,v 1.6 2009/09/01 22:19:25 tabthorpe Exp $
+# $FreeBSD: ports/Mk/bsd.cmake.mk,v 1.7 2010/03/03 07:48:30 gahr Exp $
 
 CMAKE_MAINTAINER=	kde@FreeBSD.org
 
