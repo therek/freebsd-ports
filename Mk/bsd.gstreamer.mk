@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.41 2008/12/19 21:07:38 pav Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.42 2009/04/06 10:46:56 kwm Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.43 2008/03/21 04:14:18 ahze Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -55,7 +55,7 @@ GST_SHLIB_VERSION=	1
 #
 _USE_GSTREAMER10_ALL=	a52dec aalib annodex bz2 cairo cdaudio cdparanoia dts \
 			dv dvd esound faac faad ffmpeg flac gconf gio gnomevfs \
-			gnonlin gsm hal ivorbis jack jpeg ladspa lame \
+			gnonlin gsm hal jack jpeg ladspa lame \
 			libcaca libmms libpng libvisual mm mp3 mpeg2enc mpeg2dec \
 			musepack nas neon ogg pango pulse python sdl shout2 sidplay \
 			sndfile spc soundtouch soup speex taglib \
@@ -98,8 +98,6 @@ flac_DEPENDS=	audio/gstreamer-plugins-flac
 fluendo-mp3_DEPENDS=	audio/gstreamer-plugins-fluendo-mp3
 
 gsm_DEPENDS=	audio/gstreamer-plugins-gsm
-
-ivorbis_DEPENDS=	audio/gstreamer-plugins-ivorbis
 
 hal_DEPENDS=	sysutils/gstreamer-plugins-hal
 
