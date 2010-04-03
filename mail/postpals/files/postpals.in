@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/mail/postpals/files/postpals.in,v 1.1 2010/04/03 09:43:50 itetcu Exp $
+# $FreeBSD: ports/mail/postpals/files/postpals.in,v 1.2 2010/04/03 14:43:05 itetcu Exp $
 #
 # PROVIDE: postpals
 # REQUIRE: LOGIN cleanvar
@@ -13,7 +13,7 @@
 # postpals_enable="YES"
 #
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name=postpals
 rcvar=`set_rcvar`
