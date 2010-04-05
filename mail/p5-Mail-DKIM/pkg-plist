@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/p5-Mail-DKIM/pkg-plist,v 1.5 2007/08/12 11:01:00 rafan Exp $
+@comment $FreeBSD: ports/mail/p5-Mail-DKIM/pkg-plist,v 1.6 2009/05/30 23:22:30 gabor Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Mail/DKIM/.packlist
 %%SITE_PERL%%/Mail/DKIM.pm
 %%SITE_PERL%%/Mail/DKIM/Algorithm/Base.pm
@@ -30,6 +30,7 @@
 %%SITE_PERL%%/Mail/DKIM/SignerPolicy.pm
 %%SITE_PERL%%/Mail/DKIM/TextWrap.pm
 %%SITE_PERL%%/Mail/DKIM/Verifier.pm
+%%SITE_PERL%%/Mail/sample_mime_lite.pl
 bin/dkimsign.pl
 bin/dkimverify.pl
 @dirrm %%SITE_PERL%%/Mail/DKIM/Canonicalization
