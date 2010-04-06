@@ -2,7 +2,7 @@
 # Date created:         30 Nov 2008
 # Whom:                 Koji Yokota <yokota@res.otaru-uc.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/firefox-i18n/Makefile.lang,v 1.1 2010/02/08 17:43:32 beat Exp $
 #
 # Currently, the following 74 languages are supported.
 #
@@ -209,11 +209,11 @@ FIREFOX_I18N+=  sr
 .ifndef WITHOUT_LANG_SV
 FIREFOX_I18N+=  sv-SE
 .endif
-.ifndef WITHOUT_LANG_TL
-FIREFOX_I18N+=  tl
-.endif
 .ifndef WITHOUT_LANG_TA
 FIREFOX_I18N+=  ta
+.endif
+.ifndef WITHOUT_LANG_LK
+FIREFOX_I18N+=  ta-LK
 .endif
 .ifndef WITHOUT_LANG_TE
 FIREFOX_I18N+=  te

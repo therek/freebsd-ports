@@ -2,7 +2,7 @@
 # Date created:         30 Nov 2008
 # Whom:                 Koji Yokota <yokota@res.otaru-uc.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/firefox-i18n/Makefile.option,v 1.1 2010/02/08 17:43:32 beat Exp $
 #
 OPTIONS=        LANG_AF "Africaans"             off \
                 LANG_SQ "Albanian"              off \
@@ -71,7 +71,7 @@ OPTIONS=        LANG_AF "Africaans"             off \
                 LANG_SV "Swedish"               off \
                 LANG_TW "Taiwanese"             off \
                 LANG_TA "Tamil"                 off \
-                LANG_TL "Tamil (Sri Lanka)"     off \
+                LANG_LK "Tamil (Sri Lanka)"     off \
                 LANG_TE "Telugu"                on \
                 LANG_TH "Thai"                  off \
                 LANG_TR "Turkish"               off \
