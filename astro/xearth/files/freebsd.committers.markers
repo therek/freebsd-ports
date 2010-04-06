@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.442 2010/01/26 20:42:18 avilla Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.443 2010/04/01 07:47:59 decke Exp $
 #
 # FreeBSD Project Committers
 #
@@ -143,6 +143,7 @@
  45.32,		8.42,		"avilla"			# Vercelli, Italy
  49.48,		8.42,		"naddy"				# Ludwigshafen, Germany
  47.25,		8.37,		"beat"				# Duebendorf, Switzerland
+ 40.5701089,	8.32383334,	"jacula"	align=below	# Alghero, Italy
  47.23,		8.32,		"andre"				# Zurich, Switzerland
  51.68,		7.8,		"dhn"				# Hamm, Germany
  51.533,	7.683,		"stefan"			# Unna, Germany
