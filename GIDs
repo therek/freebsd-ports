@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.88 2010/02/24 20:18:50 des Exp $
+# $FreeBSD: ports/GIDs,v 1.89 2010/03/13 12:14:43 itetcu Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -155,3 +155,4 @@ transmission:*:921:
 mongodb:*:922:
 liquidsoap:*:923:
 postpals:*:924:
+mfs:*:925:
