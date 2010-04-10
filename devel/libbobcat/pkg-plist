@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/libbobcat/pkg-plist,v 1.2 2009/03/11 09:17:57 pgj Exp $
+@comment $FreeBSD: ports/devel/libbobcat/pkg-plist,v 1.3 2009/11/17 12:36:41 pgj Exp $
 bin/bobcatlcgen
 include/bobcat/a2x
 include/bobcat/align
@@ -16,12 +16,14 @@ include/bobcat/decryptbuf
 include/bobcat/digestbuf
 include/bobcat/encryptbuf
 include/bobcat/errno
+include/bobcat/fnwrap
 include/bobcat/fnwrap1
 include/bobcat/fnwrap1c
 include/bobcat/fnwrap2
 include/bobcat/fnwrap2c
 include/bobcat/foreach
 include/bobcat/fork
+include/bobcat/fswap
 include/bobcat/gethostent
 include/bobcat/glob
 include/bobcat/hash
