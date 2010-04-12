@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/japanese/canna-server/pkg-plist,v 1.29 2008/10/26 19:48:19 hrs Exp $
+@comment $FreeBSD: ports/japanese/canna-server/pkg-plist,v 1.30 2010/03/02 14:55:06 hrs Exp $
 bin/addwords
 bin/canlisp
 bin/cannacheck
@@ -47,6 +47,8 @@ bin/wtoc
 %%DATADIR%%/dic/canna/suffix.ctd
 sbin/cannaserver
 sbin/cannakill
+%%METAFILE%%
+@exec %%MTREE_CMD%% -qU -f %D/%%METAFILE%% -p %D/%%DATADIR%%/dic > /dev/null 2>&1
 @dirrmtry %%DATADIR%%/dic/canna
 @dirrmtry %%DATADIR%%/dic/user/user
 @dirrmtry %%DATADIR%%/dic/user
