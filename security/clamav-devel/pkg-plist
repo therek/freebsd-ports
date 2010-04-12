@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/clamav-devel/pkg-plist,v 1.45 2009/12/16 15:18:55 garga Exp $
+@comment $FreeBSD: ports/security/clamav-devel/pkg-plist,v 1.46 2010/03/12 20:51:34 garga Exp $
 bin/clamav-config
 bin/clambc
 bin/clamconf
@@ -31,6 +31,7 @@ etc/freshclam.conf.default
 @exec [ -f %B/freshclam.conf ] || cp %B/%f %B/freshclam.conf
 @unexec [ -s %%DBDIR%%/daily.cvd ] || rm -f %%DBDIR%%/daily.cvd || true
 @unexec [ -s %%DBDIR%%/main.cvd ] || rm -f %%DBDIR%%/main.cvd || true
+@cwd /
 @dirrmtry %%DBDIR%%
 @dirrmtry %%LOGDIR%%
 @dirrmtry %%RUNDIR%%
