@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2137 2010/04/14 21:46:52 avilla Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2138 2010/04/15 20:53:03 wxs Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -62,7 +62,7 @@ Note:  Please add new entries to the beginning of this file.
     <references>
       <url>http://www.sudo.ws/pipermail/sudo-announce/2010-April/000093.html</url>
       <url>http://www.sudo.ws/sudo/alerts/sudoedit_escalate2.html</url>
-      <cvename>CVE-2010-0426</cvename>
+      <cvename>CVE-2010-1163</cvename>
     </references>
     <dates>
       <discovery>2010-04-09</discovery>
