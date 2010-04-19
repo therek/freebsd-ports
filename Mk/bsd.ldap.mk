@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.ldap.mk,v 1.5 2009/07/16 23:18:22 timur Exp $
+# $FreeBSD: ports/Mk/bsd.ldap.mk,v 1.6 2009/07/20 08:13:11 delphij Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Ldap_Post_Include)
@@ -64,10 +64,14 @@ IGNORE=	cannot install: OpenLDAP versions mismatch: openldap${_OPENLDAP_VER}-cli
 
 CFLAGS+=	-DLDAP_DEPRECATED
 
+_OPENLDAP_CLIENT_PKG!=	${PKG_INFO} -Ex openldap.\*-client || ${TRUE}
+_OPENLDAP_FLAVOUR=	${_OPENLDAP_CLIENT_PKG:C/openldap//:C/-client-.*//}
+
 .if defined(WANT_OPENLDAP_SASL)
+.if !empty(_OPENLDAP_CLIENT_PKG) && empty(_OPENLDAP_FLAVOUR)
+IGNORE= cannot install: SASL support requested and ${_OPENLDAP_CLIENT_PKG} is installed
+.endif
 _OPENLDAP_FLAVOUR=	-sasl
-.else
-_OPENLDAP_FLAVOUR=
 .endif
 
 # And now we are checking if we can use it
