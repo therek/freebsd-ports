@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/node/pkg-plist,v 1.1 2010/04/12 07:26:45 vanilla Exp $
+@comment $FreeBSD: ports/www/node/pkg-plist,v 1.2 2010/04/20 03:44:01 vanilla Exp $
 bin/node-repl
 bin/node-waf
 bin/node
@@ -83,4 +83,4 @@ lib/node/wafadmin/Tools/xlcxx.py
 @dirrmtry lib/node/wafadmin
 @dirrmtry lib/node/libraries
 @dirrmtry lib/node
-@dirrmtry include/node
+@dirrm include/node
