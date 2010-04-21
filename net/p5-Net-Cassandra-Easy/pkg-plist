@@ -1,6 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/p5-Net-Cassandra-Easy/pkg-plist,v 1.1 2010/04/08 00:22:46 sylvio Exp $
+bin/cassidy.pl
 %%SITE_PERL%%/Net/Cassandra/Easy.pm
 %%SITE_PERL%%/Net/Cassandra/cassidy.pl
+%%SITE_PERL%%/Net/Cassandra/genthrift.pl
 %%SITE_PERL%%/Net/GenCassandra/Cassandra.pm
 %%SITE_PERL%%/Net/GenCassandra/Constants.pm
 %%SITE_PERL%%/Net/GenCassandra/Types.pm
