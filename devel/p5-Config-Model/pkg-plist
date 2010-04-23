@@ -1,7 +1,8 @@
-@comment $FreeBSD: ports/devel/p5-Config-Model/pkg-plist,v 1.6 2010/03/01 10:56:15 tobez Exp $
+@comment $FreeBSD: ports/devel/p5-Config-Model/pkg-plist,v 1.7 2010/03/28 17:53:52 tobez Exp $
 bin/config-edit
 bin/config-edit-popcon
 %%SITE_PERL%%/Config/Model.pm
+%%SITE_PERL%%/Config/Model/Annotation.pm
 %%SITE_PERL%%/Config/Model/AnyId.pm
 %%SITE_PERL%%/Config/Model/AnyThing.pm
 %%SITE_PERL%%/Config/Model/AutoRead.pm
