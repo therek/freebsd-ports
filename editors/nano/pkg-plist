@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/nano/pkg-plist,v 1.19 2008/08/14 19:50:27 naddy Exp $
+@comment $FreeBSD: ports/editors/nano/pkg-plist,v 1.20 2009/12/01 16:47:20 naddy Exp $
 bin/nano
 bin/rnano
 %%NLS%%%%PORTDOCS%%%%DOCSDIR%%/fr/nano.1.html
@@ -38,9 +38,10 @@ bin/rnano
 %%NLS%%share/locale/zh_CN/LC_MESSAGES/nano.mo
 %%NLS%%share/locale/zh_TW/LC_MESSAGES/nano.mo
 %%EXAMPLESDIR%%/nanorc.sample
-share/nano/awk.nanorc
 share/nano/asm.nanorc
+share/nano/awk.nanorc
 share/nano/c.nanorc
+share/nano/cmake.nanorc
 share/nano/css.nanorc
 share/nano/debian.nanorc
 share/nano/fortran.nanorc
