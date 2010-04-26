@@ -12,7 +12,11 @@ you update your ports collection, before attempting any port upgrades.
   The default gmp version in FreeBSD is now 5.0.x. The port directory changed
   from math/libgmp4 to math/gmp. An entry has been added in MOVED and all
   depending ports have been bumped, so the update should be handled
-  correctly by common ports management tools, like portmaster and portupgrade.
+  correctly by common ports management tools like portupgrade.
+
+  Portmaster users, do the following before upgrading ports that depend on gmp:
+
+        portmaster -o math/gmp math/libgmp4
 
 20100409:
   AFFECTS: users of lang/php5
@@ -8995,4 +8999,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.915 2010/04/09 09:34:38 ale Exp $
+$FreeBSD: ports/UPDATING,v 1.916 2010/04/19 10:43:18 ale Exp $
