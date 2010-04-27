@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.41 2009/10/11 22:32:16 lippe Exp $
+@comment $FreeBSD: ports/mail/mailscanner-devel/pkg-plist,v 1.20 2010/04/27 00:12:15 pgollucci Exp $
 etc/MailScanner/archives.filename.rules.conf.sample
 etc/MailScanner/archives.filetype.rules.conf.sample
 etc/MailScanner/country.domains.conf.sample
@@ -67,6 +67,8 @@ lib/MailScanner/MailScanner/ZMailer.pm
 libexec/MailScanner/analyse_SpamAssassin_cache
 libexec/MailScanner/clean.SA.cache
 libexec/MailScanner/clean.quarantine
+libexec/MailScanner/mcafee6-wrapper.sample
+libexec/MailScanner/mcafee6-autoupdate.sample
 libexec/MailScanner/mailscanner_create_locks
 libexec/MailScanner/processing_messages_alert
 libexec/MailScanner/Quick.Peek
