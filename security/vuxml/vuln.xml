@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2146 2010/04/24 21:14:57 niels Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2147 2010/04/27 05:46:00 niels Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -692,7 +692,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>kdebase</name>
-	<range><lt>4.*</lt></range>
+	<range><le>3.5.10_6</le></range>
       </package>
       <package>
 	<name>kdebase-workspace</name>
