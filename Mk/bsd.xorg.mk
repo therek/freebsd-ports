@@ -7,7 +7,7 @@
 #
 # !!! Here be dragons !!! (yeah, here as well...)
 #
-# $FreeBSD: ports/Mk/bsd.xorg.mk,v 1.10 2009/04/04 04:03:54 rnoland Exp $
+# $FreeBSD: ports/Mk/bsd.xorg.mk,v 1.11 2009/04/25 19:49:16 rnoland Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Xorg_Pre_Include)
@@ -64,6 +64,7 @@ IGNORE=		is for sparc64 only
 
 . if ${XORG_CAT} == "font"
 FONTDIR?=	${PORTNAME:C/.*-//g:S/type/Type/:S/ttf/TTF/:S/speedo/Speedo/}
+CONFIGURE_ENV+=	FONTROOTDIR=${PREFIX}/lib/X11/fonts
 NEED_MKFONTFOO=	yes
 
 .  if ${PORTNAME:M*type1*}x != x
