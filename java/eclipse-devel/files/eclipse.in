@@ -4,14 +4,12 @@
 #
 # See: http://www.eclipse.org
 #
-# $FreeBSD: ports/java/eclipse-devel/files/eclipse.in,v 1.3 2007/10/24 07:05:48 glewis Exp $
+# $FreeBSD$
 #
-DEFAULT_JAVA_HOME=%%PREFIX%%
+DEFAULT_JAVA_HOME=%%JAVA_HOME%%
 ECLIPSE_HOME=%%ECLIPSE_HOME%%
 DEFAULT_JAVA_CMD=java
-MOZILLA_FIVE_HOME=%%LOCALBASE%%/lib/%%BROWSER%%
-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MOZILLA_FIVE_HOME
-export MOZILLA_FIVE_HOME LD_LIBRARY_PATH
+export GRE_HOME=%%LOCALBASE%%/lib/%%BROWSER%%
 
 #-----------------------------------------------------------------------------
 # Determine configuration settings
