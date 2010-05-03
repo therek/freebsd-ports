@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/ports-mgmt/portaudit/files/portaudit-cmd.sh,v 1.15 2009/06/21 15:45:18 simon Exp $
+# $FreeBSD: ports/ports-mgmt/portaudit/files/portaudit-cmd.sh,v 1.16 2009/10/21 08:30:57 remko Exp $
 #
 
 portaudit_confs()
@@ -334,6 +334,9 @@ fetch_auditfile()
 
 	return $rc
 }
+
+# Search base system utilities first
+export PATH=/sbin:/bin:/usr/sbin:/usr/bin:${PATH}
 
 portaudit_confs
 
