@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/math/asymptote/pkg-plist,v 1.39 2009/12/16 10:32:55 nivit Exp $
+@comment $FreeBSD: ports/math/asymptote/pkg-plist,v 1.40 2010/01/02 13:13:56 nivit Exp $
 bin/asy
 bin/xasy
 %%PORTDOCS%%info/asymptote/Bode.png
@@ -249,6 +249,7 @@ bin/xasy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/centroidfg.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/cheese.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/circles.asy
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/clockarray.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/coag.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/colons.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/colorplanes.asy
@@ -477,6 +478,7 @@ bin/xasy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/venn.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/venn3.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/vertexshading.asy
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/washer.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/washermethod.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/wedge.asy
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/westnile.asy
