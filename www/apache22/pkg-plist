@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.94 2009/12/12 13:44:13 kuriyama Exp $
+@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.95 2010/05/05 21:43:29 pgollucci Exp $
 %%APR_PORTS%%@exec mkdir -p %D/lib/apr-util-1
 @exec mkdir -p %D/etc/apache22/extra 2> /dev/null
 @exec mkdir -p %D/etc/apache22/Includes 2> /dev/null || true
@@ -273,6 +273,7 @@ sbin/ab
 sbin/apachectl
 sbin/apxs
 sbin/checkgid
+%%MOD_LOG_FORENSIC%%sbin/check_forensic
 sbin/dbmmanage
 sbin/envvars
 sbin/htcacheclean
