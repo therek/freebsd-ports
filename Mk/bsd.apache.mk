@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.19 2007/09/19 21:03:59 clement Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.20 2009/12/14 00:16:25 pgollucci Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -59,7 +59,7 @@ IGNORE=		${_ERROR_MSG} Illegal use of USE_APACHE
 .if defined(AP_PORT_IS_SERVER)
 # For slave ports:
 .if defined(SLAVE_DESIGNED_FOR) && ${PORTVERSION} != ${SLAVE_DESIGNED_FOR}
-IGNORE=	Sorry, ${SLAVENAME} and ${PORTNAME} versions are out of sync
+IGNORE=	Sorry, ${SLAVENAME} and ${PORTNAME} versions are out of sync ${PORTVERSION} != ${SLAVE_DESIGNED_FOR}
 .endif
 
 .if defined(SLAVE_PORT_MODULES)
