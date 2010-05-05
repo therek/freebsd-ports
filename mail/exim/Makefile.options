@@ -10,7 +10,7 @@
 #                         re-generate sorted options list to cut-and-paste them
 #                         into `options' file.
 #
-# $FreeBSD: ports/mail/exim/Makefile.options,v 1.2 2009/11/15 18:18:19 krion Exp $
+# $FreeBSD: ports/mail/exim/Makefile.options,v 1.3 2009/11/25 12:29:30 krion Exp $
 
 AUTH_CRAM_MD5	= "Enable CRAM-MD5 authentication mechanisms"
 AUTH_DOVECOT	= "Enable Dovecot authentication mechanisms"
@@ -49,6 +49,7 @@ PGSQL		= "Link against libpq"
 READLINE	= "Enable readline(3) library"
 SASLAUTHD	= "Enable use of Cyrus SASL auth daemon"
 SA_EXIM		= "SA-Exim support"
+SO_1024		= "Build with Spamooborona-1024 local scan"
 SPF		= "Enable Sender Policy Framework checking"
 SQLITE		= "Enable SQLite lookups"
 SRS		= "Enable Sender Rewriting Scheme"
@@ -96,6 +97,7 @@ DISABLED_OPTIONS+=	\
 		READLINE \
 		SASLAUTHD \
 		SA_EXIM \
+		SO_1024 \
 		SPF \
 		SQLITE \
 		SRS \
