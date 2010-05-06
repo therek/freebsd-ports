@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/tomcat55/files/tomcat55.sh.in,v 1.7 2007/09/30 22:04:02 alepulver Exp $
+# $FreeBSD: ports/www/tomcat55/files/tomcat55.sh.in,v 1.8 2010/03/27 00:15:19 dougb Exp $
 #
 
 # PROVIDE: tomcat%%TOMCAT_VERSION%%
@@ -109,7 +109,7 @@ log_args=">> ${tomcat%%TOMCAT_VERSION%%_stdout_log} \
 if [ -f $pidfile ]; then
   read rc_pid junk < $pidfile
   if [ ! -z "$rc_pid" ]; then
-    procname=`ps -o ucomm= -p $rc_pid`
+    procname=`ps -o command= -p $rc_pid | cut -f 1 -d ' '`
   fi
 fi
 if [ -z "$procname" ]; then
