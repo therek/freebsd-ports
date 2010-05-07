@@ -1,6 +1,6 @@
-@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.86 2009/08/02 19:35:56 mezz Exp $
+@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.87 2010/05/07 01:29:47 pgollucci Exp $
 @exec mkdir -p %D/etc/apache2 2> /dev/null
-@unexec if cmp -s %D/etc/apache2/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache2/httpd.conf; fi
+@unexec if cmp %D/etc/apache2/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache2/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd-std.conf
 @exec [ -f %D/etc/apache2/httpd.conf ] || cp %D/%%EXAMPLESDIR%%/httpd-std.conf %D/etc/apache2/httpd.conf
 @unexec if cmp -s %D/etc/apache2/magic %D/%%EXAMPLESDIR%%/magic-dist; then rm -f %D/etc/apache2/magic; fi
