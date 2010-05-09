@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/gaupol/pkg-plist,v 1.4 2009/02/11 17:45:50 nivit Exp $
+@comment $FreeBSD: ports/multimedia/gaupol/pkg-plist,v 1.5 2009/10/20 09:40:14 miwi Exp $
 bin/gaupol
 %%PYTHON_SITELIBDIR%%/gaupol/__init__.py
 %%PYTHON_SITELIBDIR%%/gaupol/__init__.pyc
@@ -549,7 +549,9 @@ share/icons/hicolor/24x24/apps/gaupol.png
 share/icons/hicolor/32x32/apps/gaupol.png
 share/icons/hicolor/scalable/apps/gaupol.svg
 share/locale/ca/LC_MESSAGES/gaupol.mo
+share/locale/de/LC_MESSAGES/gaupol.mo
 share/locale/es/LC_MESSAGES/gaupol.mo
+share/locale/hu/LC_MESSAGES/gaupol.mo
 share/locale/pl/LC_MESSAGES/gaupol.mo
 share/locale/sv/LC_MESSAGES/gaupol.mo
 @dirrmtry share/icons/hicolor/scalable/apps
