@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/udpxy/files/udpxy.in,v 1.2 2010/03/17 07:42:04 miwi Exp $
+# $FreeBSD: ports/net/udpxy/files/udpxy.in,v 1.3 2010/03/27 00:14:08 dougb Exp $
 #
 
 # PROVIDE: udpxy
@@ -23,12 +23,14 @@
 name="udpxy"
 rcvar=$(set_rcvar)
 
+load_rc_config ${name}
+
 udpxy_enable=${udpxy_enable-"NO"}
 udpxy_port=${udpxy_port-"4022"}
 udpxy_flags=${udpxy_flags-"-S"}
+
 command="%%PREFIX%%/sbin/${name}"
 pidfile="/var/run/${name}${udpxy_port}.pid"
-command_args="-p ${udpxy_port} ${udpxy_flags}"
+udpxy_flags="-p ${udpxy_port} ${udpxy_flags}"
 
-load_rc_config $name
 run_rc_command "$1"
