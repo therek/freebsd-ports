@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/perforce/files/perforce.sh.in,v 1.7 2005/02/20 14:54:00 lth Exp $
+# $FreeBSD: ports/devel/p4ftpd/files/perforce.sh.in,v 1.8 2008/12/29 14:38:38 lth Exp $
 
 p4d=@PREFIX@/sbin/p4d
 p4ftpd=@PREFIX@/sbin/p4ftpd
