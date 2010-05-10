@@ -1,14 +1,12 @@
-@comment $FreeBSD: ports/www/node/pkg-plist,v 1.2 2010/04/20 03:44:01 vanilla Exp $
+@comment $FreeBSD: ports/www/node/pkg-plist,v 1.3 2010/04/20 03:45:52 vanilla Exp $
 bin/node-repl
 bin/node-waf
 bin/node
 include/node/config.h
 include/node/eio.h
 include/node/ev.h
-include/node/evcom.h
 include/node/node.h
 include/node/node_events.h
-include/node/node_net.h
 include/node/node_object_wrap.h
 include/node/node_version.h
 include/node/v8.h
