@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.159 2010/05/10 21:17:51 kwm Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.490 2010/03/14 18:13:44 marcus Exp $
 #
@@ -440,11 +440,11 @@ pkgconfig_RUN_DEPENDS=		pkg-config:${PORTSDIR}/devel/pkg-config
 
 libgsf_LIB_DEPENDS=			gsf-1.114:${PORTSDIR}/devel/libgsf
 libgsf_DETECT=			${LOCALBASE}/libdata/pkgconfig/libgsf-1.pc
-libgsf_USE_GNOME_IMPL=		gconf2 glib20 libxml2
+libgsf_USE_GNOME_IMPL=		glib20 libxml2
 
 libgsf_gnome_LIB_DEPENDS=	gsf-gnome-1.114:${PORTSDIR}/devel/libgsf-gnome
 libgsf_gnome_DETECT=		${LOCALBASE}/libdata/pkgconfig/libgsf-gnome-1.pc
-libgsf_gnome_USE_GNOME_IMPL=	libgsf gnomevfs2
+libgsf_gnome_USE_GNOME_IMPL=	gconf2 libgsf gnomevfs2
 
 pygtk2_DETECT=			${LOCALBASE}/libdata/pkgconfig/pygtk-2.0.pc
 pygtk2_BUILD_DEPENDS=	${pygtk2_DETECT}:${PORTSDIR}/x11-toolkits/py-gtk2
