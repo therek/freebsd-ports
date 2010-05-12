@@ -1,6 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/hs-c2hs/pkg-plist,v 1.9 2009/09/02 15:38:33 pgj Exp $
 bin/c2hs
-%%DATADIR%%/C2HS.hs
 %%NOPORTDOCS%%%%DOCSDIR%%/COPYING
 %%NOPORTDOCS%%@dirrmtry %%DOCSDIR%%
-@dirrm %%DATADIR%%
