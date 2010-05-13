@@ -25,7 +25,7 @@
 # Greg Lewis
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.22 2009/05/22 05:40:17 glewis Exp $
+# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.23 2010/01/17 22:41:10 glewis Exp $
 #
 # MAINTAINER=java@FreeBSD.org
 
@@ -479,16 +479,16 @@ manualpageVM () {
 #
 setJavaHome() {
     # Use JAVA_HOME if it's set, unless its set to %%PREFIX%%
-    if [ -n "${JAVA_HOME}" -a \
-         "`realpath "${JAVA_HOME}"`" != "`realpath "${_JAVAVM_PREFIX}"`" ]; then
-        if [ -n "${JAVA_HOME}" -a -f "${JAVA_HOME}/bin/${_JAVAVM_PROG}" ]; then
-            _JAVAVM_PROG_PATH="${JAVA_HOME}/bin"
-            return 0
-        elif [ -n "${JAVA_HOME}" -a \
-               -f "${JAVA_HOME}/jre/bin/${_JAVAVM_PROG}" ]; then
-            _JAVAVM_PROG_PATH="${JAVA_HOME}/jre/bin"
-            return 0
-        fi
+    if [ -n "${JAVA_HOME}" ]; then
+        if [ "`realpath "${JAVA_HOME}"`" != "`realpath "${_JAVAVM_PREFIX}"`" ]; then
+	    if [ -f "${JAVA_HOME}/bin/${_JAVAVM_PROG}" ]; then
+		_JAVAVM_PROG_PATH="${JAVA_HOME}/bin"
+		return 0
+	    elif [ -f "${JAVA_HOME}/jre/bin/${_JAVAVM_PROG}" ]; then
+		_JAVAVM_PROG_PATH="${JAVA_HOME}/jre/bin"
+		return 0
+	    fi
+	fi
     fi
 
     unset JAVA_HOME
