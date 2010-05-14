@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde4.mk,v 1.92 2010/02/06 21:52:09 miwi Exp $
+# $FreeBSD: ports/Mk/bsd.kde4.mk,v 1.93 2010/05/11 14:20:35 fluffy Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Kde_Pre_Include)
@@ -56,6 +56,8 @@ KDE4_VERSION=		4.4.3
 KDE4_BRANCH?=		stable
 KOFFICE2_VERSION=	2.1.2
 KOFFICE2_BRANCH?=	stable
+KDEVELOP_VERSION=	4.0.0
+KDEVELOP_BRANCH?=	stable
 
 #
 # KDE4 is installed into its own prefix to not conflict with KDE3
