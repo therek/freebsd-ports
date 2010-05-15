@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.1 2010/05/12 16:33:50 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.2 2010/05/15 18:56:33 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -45,6 +45,7 @@ GLURaw_port=			x11-toolkits/hs-GLURaw-ghc
 GLUT_port=			x11-toolkits/hs-glut-ghc
 haddock_port=			devel/hs-haddock	# executable
 happy_port=			devel/hs-happy		# executable
+hashed-storage_port=		devel/hs-hashed-storage
 haskeline_port=			devel/hs-haskeline
 haskell-src-exts_port=		devel/hs-haskell-src-exts
 HaXml_port=			textproc/hs-haxml	# executable
