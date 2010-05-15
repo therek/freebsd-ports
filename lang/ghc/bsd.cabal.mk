@@ -1,5 +1,5 @@
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/ghc/bsd.cabal.mk,v 1.1 2010/05/12 16:33:50 pgj Exp $
 #
 # bsd.cabal.mk -- Support for ports based on Haskell Cabal.
 #
@@ -42,7 +42,7 @@ EXAMPLESDIR=	${PREFIX}/share/examples/${DISTNAME}
 
 LIBDIR_REL=	lib/${DISTNAME}
 
-PLIST_SUB=	GHC_VERSION=${GHC_VERSION} \
+PLIST_SUB+=	GHC_VERSION=${GHC_VERSION} \
 		PORTNAME=${PORTNAME} \
 		PORTVERSION=${PORTVERSION} \
 		LIBDIR_REL=${LIBDIR_REL}
