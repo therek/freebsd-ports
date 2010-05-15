@@ -1,5 +1,5 @@
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.1 2010/05/12 16:33:50 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -27,6 +27,7 @@ checkers_port=			devel/hs-checkers
 convertible_port=		devel/hs-convertible
 cpphs_port=			devel/hs-cpphs		# executable
 criterion_port=			benchmarks/hs-criterion
+dataenc_port=			converters/hs-dataenc
 datetime_port=			devel/hs-datetime
 DeepArrow_port=			devel/hs-DeepArrow
 deepseq_port=			devel/hs-deepseq
