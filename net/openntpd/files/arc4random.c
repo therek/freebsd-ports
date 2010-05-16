@@ -13,8 +13,12 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
- * $FreeBSD$
+ * $FreeBSD: ports/net/openntpd/files/arc4random.c,v 1.1 2009/08/03 13:58:59 naddy Exp $
  */
+
+#include <sys/param.h>
+
+#if __FreeBSD_version < 800041
 
 #include <sys/types.h>
 #include <limits.h>
@@ -66,3 +70,5 @@ arc4random_uniform(u_int32_t upper_bound)
 
 	return r % upper_bound;
 }
+
+#endif	/* __FreeBSD_version */
