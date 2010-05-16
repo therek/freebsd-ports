@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.8 2010/05/15 22:10:48 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.9 2010/05/15 22:14:30 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -65,6 +65,7 @@ hxt_port=			textproc/hs-hxt
 json_port=			converters/hs-json
 language-c_port=		devel/hs-language-c-ghc
 lazysmallcheck_port=		devel/hs-lazysmallcheck-ghc
+libmpd_port=			audio/hs-libmpd
 MemoTrie_port=			devel/hs-MemoTrie
 mime_port=			mail/hs-mime
 MissingH_port=			devel/hs-MissingH
