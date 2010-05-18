@@ -17,7 +17,7 @@ you update your ports collection, before attempting any port upgrades.
   Please manually delete apache-2.\* if installed _before_ updating using either
   portmaster or portupgrade.  
 
-    # pkg_deinstall -f apache-2.\*
+    # pkg_delete -f apache-2.\*
 
   If you use portmaster:
 
@@ -9154,4 +9154,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.928 2010/05/18 04:37:03 pgollucci Exp $
+$FreeBSD: ports/UPDATING,v 1.929 2010/05/18 05:41:58 pgollucci Exp $
