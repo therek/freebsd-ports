@@ -2,7 +2,7 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.30 2010/05/05 21:47:48 pgollucci Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.31 2010/05/05 21:52:10 pgollucci Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.6.11
@@ -100,7 +100,7 @@ APU_CONFIG=	apu-config
 .endif
 APR_PORT=	${APACHE_PORT}
 .else
-APR_PORT=	devel/apr
+APR_PORT=	devel/apr1
 LIB_DEPENDS+=	apr-1:${PORTSDIR}/${APR_PORT}
 APR_APU_DIR=	${LOCALBASE}/bin
 APR_CONFIG=	apr-1-config
