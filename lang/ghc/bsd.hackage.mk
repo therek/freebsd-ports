@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.9 2010/05/15 22:14:30 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.10 2010/05/16 18:05:28 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -79,6 +79,7 @@ OpenAL_port=			audio/hs-OpenAL
 OpenGL_port=			x11-toolkits/hs-opengl-ghc
 OpenGLRaw_port=			x11-toolkits/hs-OpenGLRaw-ghc
 pandoc_port=			textproc/pandoc		# executable
+pcap_port=			net/hs-pcap
 pcre-light_port=		devel/hs-pcre-light-ghc	# lib_depends
 polyparse_port=			textproc/hs-polyparse-ghc
 porte_port=			ports-mgmt/porte	# executable
