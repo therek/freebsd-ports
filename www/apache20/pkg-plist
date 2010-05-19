@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.88 2010/05/07 21:48:57 pgollucci Exp $
+@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.89 2010/05/18 04:49:52 pgollucci Exp $
 @exec mkdir -p %D/etc/apache2 2> /dev/null
 @unexec if cmp %D/etc/apache2/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache2/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd-std.conf
@@ -444,7 +444,6 @@ share/apache2/build/special.mk
 @dirrm share/apache2/build
 @dirrm share/apache2
 @dirrmtry libexec/apache2
-@dirrm lib/apache2
 @dirrm include/apache2
 @exec mkdir -p %D/etc/apache2/Includes 2> /dev/null || true
 @exec mkdir -p %D/etc/apache2/envvars.d 2> /dev/null || true
