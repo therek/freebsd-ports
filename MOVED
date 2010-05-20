@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2141 2010/05/20 15:43:35 girgen Exp $
+# $FreeBSD: ports/MOVED,v 1.2142 2010/05/20 21:13:13 johans Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4400,3 +4400,4 @@ devel/apr|devel/apr1|2010-05-18|Renamed to devel/apr1
 science/pyNN|science/pynn|2010-05-19|Rename to science/pynn
 databases/postgresql-contrib|databases/postgresql82-contrib|2010-05-20|Use databases/postgresqlNN-contrib, select version to match your postgresql server
 lang/yorick-doc||2010-05-20|Has expired: up-to-date docs are included in the lang/yorick port
+devel/perforce|devel/p4|2010-05-20|Split into multiple ports
