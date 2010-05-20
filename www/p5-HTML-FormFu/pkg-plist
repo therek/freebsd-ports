@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/p5-HTML-FormFu/pkg-plist,v 1.9 2009/07/07 05:30:07 az Exp $
+@comment $FreeBSD: ports/www/p5-HTML-FormFu/pkg-plist,v 1.10 2010/01/08 08:06:47 az Exp $
 bin/html_formfu_deploy.pl
 bin/html_formfu_dumpconf.pl
 man/man1/html_formfu_dumpconf.pl.1
@@ -100,6 +100,7 @@ man/man1/html_formfu_deploy.pl.1
 %%SITE_PERL%%/HTML/FormFu/Filter/FormatNumber.pm
 %%SITE_PERL%%/HTML/FormFu/Filter/Split.pm
 %%SITE_PERL%%/HTML/FormFu/Filter/CompoundJoin.pm
+%%SITE_PERL%%/HTML/FormFu/I18N/bg.pm
 %%SITE_PERL%%/HTML/FormFu/I18N/pt_pt.pm
 %%SITE_PERL%%/HTML/FormFu/I18N/pt_br.pm
 %%SITE_PERL%%/HTML/FormFu/I18N/de.pm
