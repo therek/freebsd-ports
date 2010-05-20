@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.35 2009/12/12 13:44:13 kuriyama Exp $
+# $FreeBSD: ports/www/apache22/Makefile.modules,v 1.36 2010/05/18 04:57:10 pgollucci Exp $
 #
 
 .if !defined(Module_inc)
@@ -30,7 +30,7 @@ MISC_MODULES+=		actions alias asis autoindex cern_meta \
 			cgi charset_lite dbd deflate dir dumpio env expires \
 			headers imagemap include info log_config logio mime \
 			mime_magic negotiation rewrite setenvif speling status \
-			unique_id userdir usertrack vhost_alias filter version
+			unique_id userdir usertrack vhost_alias filter version reqtimeout
 PROXY_MODULES=		proxy proxy_connect proxy_ftp proxy_http proxy_ajp proxy_balancer proxy_scgi
 SSL_MODULES=		ssl
 SUEXEC_MODULES=		suexec

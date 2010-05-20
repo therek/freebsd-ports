@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.21 2010/05/05 22:26:30 pgollucci Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.22 2010/05/19 23:01:04 pgollucci Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -82,7 +82,7 @@ CONFIGURE_ARGS+=	--disable-authn-file --disable-authn-default \
 			--disable-proxy --disable-proxy-connect \
 			--disable-proxy-ftp --disable-proxy-http \
 			--disable-proxy-ajp --disable-proxy-balancer \
-			--disable-proxy-scgi
+			--disable-proxy-scgi --disable-reqtimeout
 .endif
 
 .if defined(OPTIONS) && !(make(make-options-list))

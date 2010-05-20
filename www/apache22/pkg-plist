@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.97 2010/05/07 21:46:21 pgollucci Exp $
+@comment $FreeBSD: ports/www/apache22/pkg-plist,v 1.98 2010/05/18 04:53:40 pgollucci Exp $
 @exec mkdir -p %D/etc/apache22/extra 2> /dev/null
 @exec mkdir -p %D/etc/apache22/Includes 2> /dev/null || true
 @exec mkdir -p %D/etc/apache22/envvars.d 2> /dev/null || true
@@ -159,6 +159,7 @@ libexec/apache22/httpd.exp
 %%MOD_PROXY_HTTP%%libexec/apache22/mod_proxy_http.so
 %%MOD_PROXY_SCGI%%libexec/apache22/mod_proxy_scgi.so
 %%MOD_REWRITE%%libexec/apache22/mod_rewrite.so
+%%MOD_REQTIMEOUT%%libexec/apache22/mod_reqtimeout.so
 %%MOD_SETENVIF%%libexec/apache22/mod_setenvif.so
 %%MOD_SPELING%%libexec/apache22/mod_speling.so
 %%MOD_SSL%%libexec/apache22/mod_ssl.so
