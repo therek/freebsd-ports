@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-wm/awesome/pkg-plist,v 1.7 2009/10/20 19:55:59 garga Exp $
+@comment $FreeBSD: ports/x11-wm/awesome/pkg-plist,v 1.8 2010/01/07 10:18:16 garga Exp $
 bin/awesome
 bin/awesome-client
 bin/awsetbg
@@ -54,7 +54,9 @@ etc/xdg/awesome/rc.lua
 %%DATADIR%%/lib/awful/widget/textclock.lua
 %%DATADIR%%/lib/beautiful.lua
 %%DATADIR%%/lib/naughty.lua
+%%DATADIR%%/themes/default/README
 %%DATADIR%%/themes/default/background.png
+%%DATADIR%%/themes/default/background_white.png
 %%DATADIR%%/themes/default/layouts/dwindle.png
 %%DATADIR%%/themes/default/layouts/dwindlew.png
 %%DATADIR%%/themes/default/layouts/fairh.png
@@ -175,4 +177,13 @@ share/xsessions/awesome.desktop
 @dirrm %%DATADIR%%
 @dirrmtry etc/xdg/awesome
 @dirrmtry etc/xdg
+@dirrmtry man/de/man1
+@dirrmtry man/de/man5
+@dirrmtry man/de
+@dirrmtry man/es/man1
+@dirrmtry man/es/man5
+@dirrmtry man/es
+@dirrmtry man/fr/man1
+@dirrmtry man/fr/man5
+@dirrmtry man/fr
 @dirrmtry share/xsessions
