@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.12 2010/05/20 15:22:30 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.13 2010/05/21 21:44:44 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -15,6 +15,7 @@ alex_port=			devel/hs-alex		# executable
 Agda_port=			math/hs-Agda		# executable
 Agda-executable_port=		math/hs-Agda-executable	# executable
 ALUT_port=			audio/hs-ALUT
+ansi-terminal_port=		devel/hs-ansi-terminal
 arrows_port=			devel/hs-arrows
 binary_port=			devel/hs-binary-ghc
 bio_port=			science/hs-bio
