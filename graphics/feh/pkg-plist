@@ -1,7 +1,7 @@
-@comment $FreeBSD: ports/graphics/feh/pkg-plist,v 1.6 2003/01/02 07:09:34 adamw Exp $
-bin/cam
+@comment $FreeBSD: ports/graphics/feh/pkg-plist,v 1.7 2004/10/12 10:01:08 krion Exp $
 bin/feh
-bin/gen_cam_menu.sh
+bin/feh-cam
+bin/gen-cam-menu
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
 %%PORTDOCS%%%%DOCSDIR%%/README
@@ -13,7 +13,6 @@ bin/gen_cam_menu.sh
 %%DATADIR%%/images/menubg_aluminium.png
 %%DATADIR%%/images/menubg_aqua.png
 %%DATADIR%%/images/menubg_black.png
-%%DATADIR%%/images/menubg_britney.png
 %%DATADIR%%/images/menubg_brushed.png
 %%DATADIR%%/images/menubg_chrome.png
 %%DATADIR%%/images/menubg_default.png
