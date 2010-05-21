@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.16 2010/05/21 21:57:42 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.17 2010/05/21 22:00:20 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -105,6 +105,7 @@ Tensor_port=			devel/hs-Tensor
 terminfo_port=			devel/hs-terminfo
 test-framework_port=		devel/hs-test-framework
 test-framework-hunit_port=	devel/hs-test-framework-hunit
+test-framework-quickcheck2_port=	devel/hs-test-framework-quickcheck2
 testpack_port=			devel/hs-testpack
 texmath_port=			textproc/hs-texmath	# executable
 transformers_port=		devel/hs-transformers
