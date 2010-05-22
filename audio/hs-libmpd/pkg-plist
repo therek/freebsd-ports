@@ -1,5 +1,4 @@
-@comment $FreeBSD$
-%%MAYBE_TEST%%bin/test
+@comment $FreeBSD: ports/audio/hs-libmpd/pkg-plist,v 1.1 2010/05/16 18:05:27 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Network/MPD.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Network/MPD/Commands.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Network/MPD/Commands/Arg.hi
