@@ -1,5 +1,4 @@
-@comment $FreeBSD$
-%%MAYBE_TESTS%%bin/test-framework-tests
+@comment $FreeBSD: ports/devel/hs-test-framework/pkg-plist,v 1.1 2010/05/21 21:57:42 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Test/Framework.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Test/Framework/Core.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Test/Framework/Improving.hi
