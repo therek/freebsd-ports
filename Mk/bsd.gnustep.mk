@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.59 2009/12/03 13:50:43 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.60 2010/04/02 03:30:05 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -107,7 +107,6 @@
 
 GNUstep_Include_MAINTAINER=	dinoex@FreeBSD.org
 
-BUILD_DEPENDS+=	${LOCALBASE}/lib/libcallback.a:${PORTSDIR}/devel/ffcall
 .if !defined(GNUSTEP_WITHOUT_LIBOBJC)
 .if !defined(GNUSTEP_WITH_BASE_GCC)
 BUILD_DEPENDS+=	${TARGLIB}/libobjc.so:${PORTSDIR}/${GNUSTEP_GCC_PORT}
@@ -254,7 +253,11 @@ RUN_DEPENDS+=	${GNUSTEP_SYSTEM_LIBRARIES}/libgnustep-gui.so:${PORTSDIR}/${GNUSTE
 # using any backend
 #
 .if defined(USE_GNUSTEP_BACK)
+.if defined(WITH_GNUSTEP_DEVEL)
+BACKSUFFIX?=	-019
+.else
 BACKSUFFIX?=	-017
+.endif
 .if defined(WITH_GNUSTEP_XDPS)
 GNUSTEP_WITH_XDPS=yes
 .elif defined(WITH_GNUSTEP_LIBART)
