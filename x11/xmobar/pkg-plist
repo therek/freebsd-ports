@@ -1,4 +1,0 @@
-@comment $FreeBSD: ports/x11/xmobar/pkg-plist,v 1.3 2009/09/02 15:38:44 pgj Exp $
-bin/xmobar
-%%NOPORTDOCS%%%%DOCSDIR%%/LICENSE
-%%NOPORTDOCS%%@dirrmtry %%DOCSDIR%%
