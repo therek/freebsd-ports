@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/hs-polyparse-ghc/pkg-plist,v 1.3 2009/12/30 13:37:22 pgj Exp $
+@comment $FreeBSD: ports/textproc/hs-polyparse/pkg-plist,v 1.4 2010/05/12 16:33:54 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Parse.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Parse/ByteString.hi

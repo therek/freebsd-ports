@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-wm/xmonad/pkg-plist,v 1.7 2010/01/13 14:11:33 pgj Exp $
+@comment $FreeBSD: ports/x11-wm/hs-xmonad/pkg-plist,v 1.8 2010/05/12 16:33:59 pgj Exp $
 bin/xmonad
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/XMonad.hi

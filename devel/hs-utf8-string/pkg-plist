@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/hs-utf8-string-ghc/pkg-plist,v 1.4 2009/09/02 15:38:39 pgj Exp $
+@comment $FreeBSD: ports/devel/hs-utf8-string/pkg-plist,v 1.5 2010/05/12 16:33:48 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Codec/Binary/UTF8/Generic.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Codec/Binary/UTF8/String.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Data/ByteString/Lazy/UTF8.hi

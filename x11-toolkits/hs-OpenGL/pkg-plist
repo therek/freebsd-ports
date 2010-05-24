@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/hs-opengl-ghc/pkg-plist,v 1.4 2010/01/05 19:52:41 pgj Exp $
+@comment $FreeBSD: ports/x11-toolkits/hs-OpenGL/pkg-plist,v 1.5 2010/05/12 16:33:58 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/Rendering/OpenGL.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/Rendering/OpenGL/GL.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/Rendering/OpenGL/GL/Antialiasing.hi

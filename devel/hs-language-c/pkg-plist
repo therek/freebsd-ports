@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/hs-language-c-ghc/pkg-plist,v 1.2 2009/09/02 15:38:37 pgj Exp $
+@comment $FreeBSD: ports/devel/hs-language-c/pkg-plist,v 1.3 2010/05/12 16:33:45 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Language/C.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Language/C/Analysis.hi

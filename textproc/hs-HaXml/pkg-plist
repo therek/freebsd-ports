@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/hs-haxml/pkg-plist,v 1.18 2010/05/12 16:33:54 pgj Exp $
+@comment $FreeBSD: ports/textproc/hs-HaXml/pkg-plist,v 1.19 2010/05/15 19:25:49 pgj Exp $
 bin/Canonicalise
 bin/CanonicaliseLazy
 bin/DtdToHaskell

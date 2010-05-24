@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11/hs-x11-ghc/pkg-plist,v 1.6 2009/11/29 12:50:51 pgj Exp $
+@comment $FreeBSD: ports/x11/hs-X11/pkg-plist,v 1.7 2010/05/12 16:33:57 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/X11.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/X11/ExtraTypes.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/X11/ExtraTypes/AP.hi

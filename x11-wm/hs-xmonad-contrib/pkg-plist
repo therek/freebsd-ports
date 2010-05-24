@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-wm/xmonad-contrib/pkg-plist,v 1.7 2009/11/29 12:59:52 pgj Exp $
+@comment $FreeBSD: ports/x11-wm/hs-xmonad-contrib/pkg-plist,v 1.8 2010/05/12 16:33:59 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/XMonad/Actions/CycleWindows.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/XMonad/Actions/FloatSnap.hi

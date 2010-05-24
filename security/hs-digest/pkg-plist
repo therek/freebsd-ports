@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/hs-digest-ghc/pkg-plist,v 1.3 2009/09/02 15:38:42 pgj Exp $
+@comment $FreeBSD: ports/security/hs-digest/pkg-plist,v 1.4 2010/05/12 16:33:53 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Data/Digest/Adler32.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Data/Digest/CRC32.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o

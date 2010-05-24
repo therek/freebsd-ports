@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/hs-binary-ghc/pkg-plist,v 1.4 2009/09/02 15:38:33 pgj Exp $
+@comment $FreeBSD: ports/devel/hs-binary/pkg-plist,v 1.5 2010/05/12 16:33:40 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Data/Binary.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Data/Binary/Builder.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Data/Binary/Get.hi

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/hs-HGL-ghc/pkg-plist,v 1.3 2009/09/02 15:38:40 pgj Exp $
+@comment $FreeBSD: ports/graphics/hs-HGL/pkg-plist,v 1.4 2010/05/12 16:33:49 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/HGL.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/HGL/Core.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/HGL/Draw.hi

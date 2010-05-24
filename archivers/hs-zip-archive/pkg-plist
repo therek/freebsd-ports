@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/archivers/hs-zip-archive-ghc/pkg-plist,v 1.4 2010/05/12 16:33:36 pgj Exp $
+@comment $FreeBSD: ports/archivers/hs-zip-archive/pkg-plist,v 1.5 2010/05/15 18:50:51 pgj Exp $
 %%MAYBE_EXECUTABLE%%bin/Zip
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Codec/Archive/Zip.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o

@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/hs-GLURaw-ghc/pkg-plist,v 1.1 2010/01/05 19:42:32 pgj Exp $
+@comment $FreeBSD: ports/x11-toolkits/hs-GLURaw/pkg-plist,v 1.2 2010/05/12 16:33:58 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/Rendering/GLU/Raw.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/Rendering/GLU/Raw/APIEntry.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/Rendering/GLU/Raw/Callbacks.hi

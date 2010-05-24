@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/hs-glut-ghc/pkg-plist,v 1.5 2010/01/05 19:55:23 pgj Exp $
+@comment $FreeBSD: ports/x11-toolkits/hs-GLUT/pkg-plist,v 1.6 2010/05/12 16:33:58 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/UI/GLUT.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/UI/GLUT/Begin.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Graphics/UI/GLUT/Callbacks.hi

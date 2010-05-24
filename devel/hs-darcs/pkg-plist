@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/hs-darcs/pkg-plist,v 1.25 2010/05/15 19:27:51 pgj Exp $
 bin/darcs
 %%MAYBE_TEST%%bin/unit
 %%MAYBE_TYPE_WITNESSES%%bin/witnesses

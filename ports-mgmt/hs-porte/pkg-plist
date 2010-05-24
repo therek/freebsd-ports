@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/ports-mgmt/porte/pkg-plist,v 1.3 2009/09/02 15:38:41 pgj Exp $
+@comment $FreeBSD: ports/ports-mgmt/hs-porte/pkg-plist,v 1.4 2010/05/12 16:33:52 pgj Exp $
 bin/porte
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Porte/Ports.hi

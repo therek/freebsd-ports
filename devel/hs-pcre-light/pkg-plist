@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/hs-pcre-light-ghc/pkg-plist,v 1.4 2010/05/12 16:33:45 pgj Exp $
+@comment $FreeBSD: ports/devel/hs-pcre-light/pkg-plist,v 1.5 2010/05/15 19:08:14 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Regex/PCRE/Light.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Regex/PCRE/Light/Base.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Regex/PCRE/Light/Char8.hi
