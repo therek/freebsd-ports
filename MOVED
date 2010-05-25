@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2146 2010/05/24 21:52:28 pgj Exp $
+# $FreeBSD: ports/MOVED,v 1.2147 2010/05/24 21:57:56 pgollucci Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4427,3 +4427,4 @@ x11-toolkits/hs-glut-ghc|x11-toolkits/hs-GLUT|2010-05-24|Renamed: Brought in syn
 x11-wm/xmonad|x11-wm/hs-xmonad|2010-05-24|Renamed: It has become a Cabal transcript.
 x11-wm/xmonad-contrib|hs-xmonad-contrib|2010-05-24|Renamed: It has become a Cabal transcript.
 devel/ruby-game|devel/rubygem-rubygame|2010-05-24|Use devel/rubygem-rubygame instead
+devel/py-ro||2010-05-25|Use devel/py-pyro instead
