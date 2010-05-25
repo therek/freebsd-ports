@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/print/ghostscript8/files/Makefile.drivers_post,v 1.1 2010/05/24 20:08:46 hrs Exp $
 # pre/postprocessing driver variables
 
 # define defaults which depend on WITHOUT_*/WITH_*
@@ -52,6 +52,25 @@ post-extract: post-extract-epag
 # pcl3 specific
 .if !defined(WITHOUT_GS_pcl3)
 .include "${FILESDIR}/Makefile.pcl3"
+.endif
+
+# cups specific
+CUPS_DEVS= cups
+.undef _CUPS_DEVS
+
+.for D in ${CUPS_DEVS}
+.if defined(WITHOUT_CUPS)
+.undef WITH_GS_${D}
+.elif defined(WITH_GS_${D})
+_CUPS_DEVS+= ${D}
+.endif
+.endfor
+
+.if defined(_CUPS_DEVS)
+LIB_DEPENDS+=	cupsimage.2:${PORTSDIR}/print/cups-image
+CONFIGURE_ARGS+=	--enable-cups
+.else
+CONFIGURE_ARGS+=	--disable-cups
 .endif
 
 # vgalib specific
