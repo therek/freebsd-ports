@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.23 2010/05/20 21:43:47 pgollucci Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.24 2010/05/25 20:17:26 pgollucci Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -302,7 +302,7 @@ ${VAR} =${AP${APACHE_VERSION}_${VAR}}
 .  endif
 .endfor
 
-APACHE_PKGNAMEPREFIX=	$ap${APACHE_VERSION}-
+APACHE_PKGNAMEPREFIX=	ap${APACHE_VERSION}-
 .if defined(AP_FAST_BUILD)
 PKGNAMEPREFIX?=	${APACHE_PKGNAMEPREFIX}
 .endif
