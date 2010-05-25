@@ -2,7 +2,7 @@
 # ex:ts=4
 #
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.74 2008/03/12 00:13:06 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.75 2008/07/19 17:59:41 kris Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -517,8 +517,10 @@ _PORTSEARCH=	\
 	     } \
 	    { \
 		oldname = $$1;  newname = $$2; \
+		if (oldname ~ /^\#/) next; \
 		sub(".*\/", "", oldname);  newname = sub(".*\/", "", newname); \
-	        if (((icase ? tolower(oldname) : oldname) ~ name) || ((icase ? tolower(newname) : newname) ~ name)) { \
+	        if (((icase ? tolower(oldname) : oldname) ~ name) || \
+		  ((icase ? tolower(newname) : newname) ~ name)) { \
 	    	    for (i = 1; i <= 4; i++) { \
 	    		printf("%s:\t%s\n", names[i], $$i); \
 	    	    } \
