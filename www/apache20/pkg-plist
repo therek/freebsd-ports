@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.89 2010/05/18 04:49:52 pgollucci Exp $
+@comment $FreeBSD: ports/www/apache20/pkg-plist,v 1.90 2010/05/19 19:38:16 pgollucci Exp $
 @exec mkdir -p %D/etc/apache2 2> /dev/null
 @unexec if cmp %D/etc/apache2/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache2/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd-std.conf
@@ -21,6 +21,7 @@ include/apache2/ap_mmn.h
 include/apache2/ap_mpm.h
 include/apache2/ap_provider.h
 include/apache2/ap_regkey.h
+include/apache2/ap_regex.h
 include/apache2/ap_release.h
 %%WORKER%%include/apache2/fdqueue.h
 %%THREADPOOL%%include/apache2/pod.h
