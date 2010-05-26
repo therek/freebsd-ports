@@ -10,6 +10,15 @@ in the release notes and/or placed into UPDATING.
 
 All ports committers are allowed to commit to this file.
 
+20100524:
+AUTHOR: alepulver@FreeBSD.org
+
+  * The license support files (bsd.licenses.mk and bsd.licenses.db.mk) from
+    GSoc 2008/2009 have been committed. A new PH entry will be available
+    soon, but for the moment look at:
+    http://wiki.freebsd.org/PortsLicenseInfrastructure
+    Or, alternatively, the comments at the beginning of the mentioned files.
+
 20090906:
 AUTHOR: flz@FreeBSD.org
 
@@ -1530,4 +1539,4 @@ POSSIBILITY OF SUCH DAMAGE.
 Contact portmgr@FreeBSD.org if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.96 2010/01/02 16:28:46 erwin Exp $
+$FreeBSD: ports/CHANGES,v 1.97 2010/05/25 21:18:31 pgollucci Exp $
