@@ -1,4 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/p5-Net-OAuth-Simple/pkg-plist,v 1.1 2009/04/02 14:35:47 skreuzer Exp $
 %%SITE_PERL%%/Net/OAuth/Simple.pm
+%%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/OAuth/Simple/.packlist
 @dirrmtry %%SITE_PERL%%/Net/OAuth
 @dirrmtry %%SITE_PERL%%/Net
+@dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/OAuth/Simple
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/OAuth
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net
