@@ -1,7 +1,7 @@
-@comment $FreeBSD: ports/www/mod_layout/pkg-plist,v 1.7 2009/05/17 09:28:51 pgollucci Exp $
+@comment $FreeBSD: ports/www/mod_layout/pkg-plist,v 1.8 2010/05/27 21:19:14 pgollucci Exp $
 %%APACHEMODDIR%%/mod_layout.so
-@exec %D/sbin/apxs -e -a -n layout %D/%f
-@unexec %D/sbin/apxs -e -A -n layout %D/%f
+@exec %D/sbin/apxs -e -a -n %%AP_NAME%% %D/%f
+@unexec %D/sbin/apxs -e -A -n %%AP_NAME%% %D/%f
 @unexec echo "===>  If you do not plan on reinstalling mod_layout, you must manually remove"; echo "===>  references to it in httpd.conf."
 %%PORTDOCS%%%%DOCSDIR%%/faq.html
 %%PORTDOCS%%%%DOCSDIR%%/directives/Layout.html
