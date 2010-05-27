@@ -2,7 +2,7 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.31 2010/05/05 21:52:10 pgollucci Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.32 2010/05/18 04:20:37 pgollucci Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.6.11
@@ -159,6 +159,13 @@ CONFIGURE_ARGS+=--enable-all-static
 PLIST_SUB+=	DYNAMIC_ENABLED="@comment "
 .else
 PLIST_SUB+=	DYNAMIC_ENABLED=""
+.endif
+
+.if defined(WITH_GNOME_KEYRING)
+LIB_DEPENDS+=	gnome-keyring.0:${PORTSDIR}/security/gnome-keyring
+CONFIGURE_ARGS+=--with-gnome-keyring
+.else
+CONFIGURE_ARGS+=--without-gnome-keyring
 .endif
 
 post-extract:
