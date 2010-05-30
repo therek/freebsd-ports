@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.60 2010/04/02 03:30:05 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.61 2010/05/23 21:03:45 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -537,11 +537,8 @@ TARGLIB!=	(cd ${PORTSDIR}/${GNUSTEP_GCC_PORT} && make -V TARGLIB)
 #
 .if defined(USE_GNUSTEP_LDCONFIG)
 .for i in ${USE_GNUSTEP_LDCONFIG}
-# don't remove INSTALLS_SHLIB, see ports/123042
-#USE_LDCONFIG+=	${i}
-LDCONFIG_DIRS+=	${i}
+USE_LDCONFIG+=	${i}
 .endfor
-INSTALLS_SHLIB=	yes
 .endif
 
 # eof
