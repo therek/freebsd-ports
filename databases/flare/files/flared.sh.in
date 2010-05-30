@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/flare/files/flared.sh.in,v 1.1 2010/05/30 04:41:49 nork Exp $
 #
 # PROVIDE: flared
 # REQUIRE: LOGIN flarei
@@ -15,6 +15,8 @@ flared_flags="--daemonize"
 name=flared
 rcvar=`set_rcvar`
 command=%%PREFIX%%/bin/${name}
+
+extra_commands="reload"
 
 load_rc_config ${name}
 
