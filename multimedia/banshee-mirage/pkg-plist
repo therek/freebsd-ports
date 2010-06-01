@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/multimedia/banshee-mirage/pkg-plist,v 1.1 2009/08/09 18:38:17 flz Exp $
 lib/libmirageaudio.so
 lib/libmirageaudio.la
 lib/libmirageaudio.a
@@ -6,6 +6,6 @@ lib/banshee-1/Extensions/Mirage.dll
 lib/banshee-1/Extensions/Mirage.dll.mdb
 lib/banshee-1/Extensions/Banshee.Mirage.dll
 lib/banshee-1/Extensions/Banshee.Mirage.dll.mdb
-share/locale/de/LC_MESSAGES/mirage.mo
-share/locale/it/LC_MESSAGES/mirage.mo
+share/locale/de/LC_MESSAGES/banshee-mirage.mo
+share/locale/it/LC_MESSAGES/banshee-mirage.mo
 @dirrmtry lib/banshee-1/Extensions
