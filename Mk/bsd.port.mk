@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.638 2010/05/12 19:57:57 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.639 2010/05/25 00:25:02 alepulver Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -5533,11 +5533,11 @@ package-recursive: package
 
 # Show missing dependiencies
 missing:
-	@for dir in $$(${ALL-DEPENDS-LIST}); do \
-		THISORIGIN=$${dir##${PORTSDIR}/}; \
-		installed=$$(${PKG_INFO} -qO $${THISORIGIN}); \
-		if [ -z "$$installed" ]; then \
-			${ECHO_CMD} $$THISORIGIN; \
+	@_origins=$$(${PKG_INFO} -aoq); \
+	for dir in $$(${ALL-DEPENDS-LIST}); do \
+		_origin=$${dir##${PORTSDIR}/}; \
+		if ! $$(${ECHO_CMD} $${_origins} | ${GREP} -q $${_origin}); then \
+			${ECHO_CMD} $${_origin}; \
 		fi; \
 	done
 
