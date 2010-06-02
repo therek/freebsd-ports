@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2152 2010/05/31 21:25:13 linimon Exp $
+# $FreeBSD: ports/MOVED,v 1.2153 2010/06/01 02:13:07 dougb Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4429,3 +4429,4 @@ x11-wm/xmonad-contrib|hs-xmonad-contrib|2010-05-24|Renamed: It has become a Caba
 devel/ruby-game|devel/rubygem-rubygame|2010-05-24|Use devel/rubygem-rubygame instead
 devel/py-ro||2010-05-25|Use devel/py-pyro instead
 devel/runawk|lang/runawk|2010-05-31|Port duplicate with lang/runawk
+misc/ipod-sharp|audio/ipod-sharp|2010-06-02|Fix category
