@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.639 2010/05/25 00:25:02 alepulver Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.640 2010/06/02 11:40:48 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1750,7 +1750,7 @@ CONFIGURE_ENV+=	MAKE=${GMAKE}
 .if defined(USE_OPENAL)
 _OPENAL_ALL=	al si soft alut
 _OPENAL_LIBS=	si soft
-# Default choie.
+# Default choice.
 _DEFAULT_OPENAL=	soft
 
 _OPENAL_SOFT=	openal.1:${PORTSDIR}/audio/openal-soft
