@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.110 2010/05/10 15:33:29 rene Exp $
+# $FreeBSD: ports/UIDs,v 1.111 2010/05/14 13:23:00 pav Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53::0:0:Bind Sandbox:/:/usr/sbin/nologin
@@ -107,7 +107,7 @@ meta1s:*:260:260::0:0:MeTA1 SMTPS:/nonexistent:/usr/sbin/nologin
 meta1q:*:261:261::0:0:MeTA1 QMGR:/nonexistent:/usr/sbin/nologin
 meta1c:*:262:262::0:0:MeTA1 SMTPC:/nonexistent:/usr/sbin/nologin
 meta1m:*:263:263::0:0:MeTA1 misc:/nonexistent:/usr/sbin/nologin
-meta1:*:264:264::0:0: X other:/nonexistent:/usr/sbin/nologin
+meta1:*:264:264::0:0:MeTA1 other:/nonexistent:/usr/sbin/nologin
 hacluster:*:275:275::0:0:Heartbeat cluster user:/nonexistent:/usr/sbin/nologin
 frontbase:*:276:276::0:0:FrontBase Daemon:/usr/local/FrontBase/Databases:/bin/sh
 mrtg:*:279:279::0:0:MRTG daemon:/nonexistent:/usr/sbin/nologin
