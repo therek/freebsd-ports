@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.105 2010/04/21 12:56:45 mm Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.106 2010/04/21 20:17:56 kwm Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.81 2010/03/16 19:33:10 mezz Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -377,7 +377,7 @@ gst_neon_PLIST_FILES=	${GST_LIB_DIR}/libgstneonhttpsrc.la \
 gst_neon_DIST=		bad
 
 # ogg
-gst_ogg_LIB_DEPENDS+=	ogg.6:${PORTSDIR}/audio/libogg
+gst_ogg_LIB_DEPENDS+=	ogg.7:${PORTSDIR}/audio/libogg
 gst_ogg_EXTRA_LIBS+=	-lgstriff-${VERSION}
 gst_ogg_PLIST_FILES=	${GST_LIB_DIR}/libgstogg.la \
 		${GST_LIB_DIR}/libgstogg.so
