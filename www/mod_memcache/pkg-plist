@@ -1,4 +1,4 @@
-@comment $FreeBSD$
-%%APACHEMODDIR%%/mod_memcache.so
+@comment $FreeBSD: ports/www/mod_memcache/pkg-plist,v 1.1 2009/01/10 15:02:48 miwi Exp $
+%%APACHEMODDIR%%/%%AP_MODULE%%
 %%APACHEMODDIR%%/mod_memcache_example.so
 @dirrmtry %%APACHEMODDIR%%
