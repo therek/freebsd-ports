@@ -12,7 +12,10 @@
 # the version.  Note that the Fortran compiler is specified with the
 # USE_FORTRAN knob.
 #
-# For example:
+# As of 2010-06-06, USE_GCC=4.3 is deprecated and USE_GCC=4.3+ is
+# transparently rewritten to USE_GCC=4.4+.
+#
+# Examples:
 #   USE_GCC=	4.2+		# port requires GCC 4.2 or later.
 #   USE_GCC=	4.5			# port requires GCC 4.5.
 #
@@ -30,7 +33,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.40 2010/05/02 14:44:59 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.41 2010/05/02 17:39:06 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -113,6 +116,11 @@ MAKE_ENV+=		F77="${F77}" FC="${FC}" FFLAGS="${FFLAGS}"
 
 
 .if defined(USE_GCC)
+
+# USE_GCC=4.3 is deprecated...
+.if ${USE_GCC} == 4.3+
+USE_GCC:=4.4+
+.endif
 
 # See if we can use a later version
 _USE_GCC:=	${USE_GCC:S/+//}
