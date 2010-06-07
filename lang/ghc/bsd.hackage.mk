@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.22 2010/06/07 03:44:28 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.23 2010/06/07 03:47:52 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -78,6 +78,7 @@ mmap_port=			devel/hs-mmap
 MonadCatchIO-mtl_port=		devel/hs-MonadCatchIO-mtl
 mueval_port=			devel/hs-mueval		# executable
 mwc-random_port=		math/hs-mwc-random
+network-bytestring_port=	net/hs-network-bytestring
 ObjectName_port=		devel/hs-ObjectName
 oeis_port=			www/hs-oeis
 OpenAL_port=			audio/hs-OpenAL
