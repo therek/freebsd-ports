@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/vorbis-tools/pkg-plist,v 1.8 2005/07/05 13:38:19 naddy Exp $
+@comment $FreeBSD: ports/audio/vorbis-tools/pkg-plist,v 1.9 2010/06/06 20:37:32 naddy Exp $
 bin/ogg123
 bin/oggdec
 bin/oggenc
@@ -23,6 +23,4 @@ share/examples/vorbis-tools/ogg123rc
 %%NLS%%share/locale/sv/LC_MESSAGES/vorbis-tools.mo
 %%NLS%%share/locale/uk/LC_MESSAGES/vorbis-tools.mo
 %%NLS%%share/locale/vi/LC_MESSAGES/vorbis-tools.mo
-%%NLS%%@dirrmtry share/locale/en_GB/LC_MESSAGES
-%%NLS%%@dirrmtry share/locale/en_GB
 @dirrm share/examples/vorbis-tools
