@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.24 2010/05/25 20:17:26 pgollucci Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.25 2010/05/25 20:59:42 pgollucci Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -251,7 +251,9 @@ AP_CUR_VERSION!=	${ECHO_CMD} ${APACHE_PORT} | ${SED} -ne 's,.*/apache\([0-9]*\).
 .if defined(AP_CUR_VERSION)
 VERSION_CHECK!=		eval `${ECHO_CMD} "[ ${AP_VERSION} -eq ${AP_CUR_VERSION} ]" | ${SED} -e 's/- -eq/ -ge/ ; s/+ -eq/ -le/' ` ; ${ECHO_CMD} $${?}
 .   if ${VERSION_CHECK} == 1
+.if !defined(AP_IGNORE_VERSION_CHECK)
 IGNORE=		${_ERROR_MSG} apache${AP_CUR_VERSION} is installed (or APACHE_PORT is defined) and port requires ${USE_APACHE}
+.endif
 .   endif
 APACHE_VERSION=	${AP_CUR_VERSION}
 .else
