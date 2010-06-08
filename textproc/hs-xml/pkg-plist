@@ -1,11 +1,12 @@
-@comment $FreeBSD: ports/textproc/hs-xml/pkg-plist,v 1.1 2010/01/12 22:16:04 pgj Exp $
-%%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
+@comment $FreeBSD: ports/textproc/hs-xml/pkg-plist,v 1.2 2010/05/12 16:33:55 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/XML/Light.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/XML/Light/Cursor.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/XML/Light/Input.hi
+%%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/XML/Light/Lexer.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/XML/Light/Output.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/XML/Light/Proc.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/XML/Light/Types.hi
+%%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/libHS%%PORTNAME%%-%%PORTVERSION%%.a
 %%LIBDIR_REL%%/register.sh
 %%NOPORTDOCS%%%%DOCSDIR%%/LICENSE
