@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.619 2010/05/25 21:13:09 pgollucci Exp $
+# $FreeBSD: ports/LEGAL,v 1.620 2010/05/27 06:22:30 wen Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -239,9 +239,6 @@ ftree-*			misc/ftree		Cannot distribute commercially
 fwtk/*			security/fwtk		No redistribution allowed
 XFrisk-*		games/xfrisk		Copyright/trademark violation?
 gap/*			math/gap		Do not sell for profit
-gentoo-linux/stage1-*	emulators/linux_base-gentoo-stage1 Binaries
-						licensed under GNU GPL without
-						accompanying source
 gibi-*			french/gibi		Only free for use in
 						conjunction with french/aster.
 						For any other purpose,
