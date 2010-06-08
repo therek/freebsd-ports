@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/math/hs-statistics/pkg-plist,v 1.1 2010/01/04 10:07:01 pgj Exp $
+@comment $FreeBSD: ports/math/hs-statistics/pkg-plist,v 1.2 2010/05/12 16:33:52 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Statistics/Autocorrelation.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Statistics/Constants.hi
@@ -15,7 +15,6 @@
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Statistics/KernelDensity.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Statistics/Math.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Statistics/Quantile.hi
-%%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Statistics/RandomVariate.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Statistics/Resampling.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Statistics/Resampling/Bootstrap.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Statistics/Sample.hi
