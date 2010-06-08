@@ -1,9 +1,9 @@
-@comment $FreeBSD: ports/www/hs-scgi/pkg-plist,v 1.1 2010/01/12 22:03:14 pgj Exp $
-%%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
+@comment $FreeBSD: ports/www/hs-scgi/pkg-plist,v 1.2 2010/05/12 16:33:57 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Network/SCGI.hi
+%%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/libHS%%PORTNAME%%-%%PORTVERSION%%.a
 %%LIBDIR_REL%%/register.sh
-%%NOPORTDOCS%%%%DOCSDIR%%/COPYING
+%%NOPORTDOCS%%%%DOCSDIR%%/LICENSE
 %%NOPORTDOCS%%@dirrmtry %%DOCSDIR%%
 @dirrm %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Network
 @dirrm %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%
