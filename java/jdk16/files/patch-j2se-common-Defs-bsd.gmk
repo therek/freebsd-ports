@@ -1,4 +1,4 @@
-$FreeBSD: ports/java/jdk16/files/patch-j2se-common-Defs-bsd.gmk,v 1.3 2010/02/05 05:22:31 glewis Exp $
+$FreeBSD: ports/java/jdk16/files/patch-j2se-common-Defs-bsd.gmk,v 1.4 2010/02/07 22:17:06 glewis Exp $
 
 --- ../../j2se/make/common/Defs-bsd.gmk.orig	Sun Jul 29 23:03:29 2007
 +++ ../../j2se/make/common/Defs-bsd.gmk	Sun Jul 29 23:03:29 2007
@@ -7,7 +7,7 @@ $FreeBSD: ports/java/jdk16/files/patch-j2se-common-Defs-bsd.gmk,v 1.3 2010/02/05
  override HAVE_SIGIGNORE          = true
  endif
 +ifeq ($(OS_VENDOR),FreeBSD)
-+OS_RELDATE := $(shell sysctl kern.osreldate | cut -d' ' -f2)
++OS_RELDATE := %%OSVERSION%%
 +HAS_SIGIGNORE := $(shell if [ $(OS_RELDATE) -ge 800502 -a $(OS_RELDATE) -lt 900000 -o $(OS_RELDATE) -ge 900003 ]; then echo "1"; fi)
 +ifeq ($(HAS_SIGIGNORE),1)
 +override HAVE_SIGIGNORE          = true
