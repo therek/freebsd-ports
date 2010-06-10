@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/p5-Imager/pkg-plist,v 1.12 2007/08/31 06:56:06 lbr Exp $
+@comment $FreeBSD: ports/graphics/p5-Imager/pkg-plist,v 1.13 2008/07/05 08:13:33 lbr Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Imager/.packlist
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Imager/CountColor/CountColor.bs
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Imager/CountColor/CountColor.so
@@ -46,6 +46,7 @@
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/Font/Wrap.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/Fountain.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/Handy.pod
+%%SITE_PERL%%/%%PERL_ARCH%%/Imager/IO.pod
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/ImageTypes.pod
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/Inline.pod
 %%SITE_PERL%%/%%PERL_ARCH%%/Imager/LargeSamples.pod
