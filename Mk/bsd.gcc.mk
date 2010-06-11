@@ -6,11 +6,11 @@
 # Created by: Edwin Groothuis <edwin@freebsd.org>
 #
 # For port developers:
-# If your port needs a specific version of GCC, you can easily specify
-# that with the "USE_GCC=" statement. If you need a certain minimal version,
-# but don't care if about the upperversion, just the + sign behind
-# the version.  Note that the Fortran compiler is specified with the
-# USE_FORTRAN knob.
+# If your port needs a specific (minimum) version of GCC, you can easily
+# specify that with a "USE_GCC=" statement.  Unless absolutely necessary
+# do so by specifying "USE_GCC=X.Y+" which requests at least GCC version
+# X.Y.  To request a specific version omit the trailing + sign.  Use of
+# a Fortran compiler is declared by the USE_FORTRAN knob, not USE_GCC.
 #
 # As of 2010-06-06, USE_GCC=4.3 is deprecated and USE_GCC=4.3+ is
 # transparently rewritten to USE_GCC=4.4+.
@@ -33,7 +33,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.41 2010/05/02 17:39:06 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.43 2010/06/06 19:15:03 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
