@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.61 2010/05/23 21:03:45 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.62 2010/05/30 18:14:19 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -223,6 +223,9 @@ GNUSTEP_WITH_GCC34=	yes
 
 .if defined(GNUSTEP_WITH_GCC34)
 GCCSUFFIX=34
+.if ${ARCH} == sparc64
+BROKEN=	gcc34 does not build the required libobjc
+.endif
 .endif
 .if defined(GNUSTEP_WITH_GCC42)
 GCCSUFFIX=42
