@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2162 2010/06/03 00:10:56 wxs Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2163 2010/06/12 16:44:33 dinoex Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -44,10 +44,6 @@ Note:  Please add new entries to the beginning of this file.
       <package>
         <name>linux-tiff</name>
         <range><lt>3.9.3</lt></range>
-      </package>
-      <package>
-	<name></name>
-	<range><lt></lt></range>
       </package>
     </affects>
     <description>
