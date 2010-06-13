@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/textproc/p5-FormValidator-Lite/pkg-plist,v 1.1 2009/03/11 16:43:37 miwi Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/FormValidator/Lite/.packlist
 %%SITE_PERL%%/FormValidator/Lite/Constraint/File.pm
 %%SITE_PERL%%/FormValidator/Lite/Constraint/Japanese.pm
@@ -6,6 +6,7 @@
 %%SITE_PERL%%/FormValidator/Lite/Constraint/Email.pm
 %%SITE_PERL%%/FormValidator/Lite/Constraint/URL.pm
 %%SITE_PERL%%/FormValidator/Lite/Constraint/Date.pm
+%%SITE_PERL%%/FormValidator/Lite/Constraint/Time.pm
 %%SITE_PERL%%/FormValidator/Lite/Messages/en.pm
 %%SITE_PERL%%/FormValidator/Lite/Messages/ja.pm
 %%SITE_PERL%%/FormValidator/Lite/Upload/CGI.pm
