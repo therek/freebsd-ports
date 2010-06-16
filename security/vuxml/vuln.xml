@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2167 2010/06/16 09:31:34 dinoex Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2168 2010/06/16 12:13:30 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -1118,7 +1118,7 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
-      <cvename>CVS-2010-1163</cvename>
+      <cvename>CVE-2010-1163</cvename>
       <url>http://www.sudo.ws/pipermail/sudo-announce/2010-April/000093.html</url>
       <url>http://www.sudo.ws/sudo/alerts/sudoedit_escalate2.html</url>
     </references>
