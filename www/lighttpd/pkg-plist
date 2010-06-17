@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/lighttpd/pkg-plist,v 1.16 2007/09/10 13:36:49 mnag Exp $
+@comment $FreeBSD: ports/www/lighttpd/pkg-plist,v 1.17 2009/04/25 04:17:03 mnag Exp $
 @unexec if cmp -s %D/etc/lighttpd.conf %D/etc/lighttpd.conf.sample; then rm -f %D/etc/lighttpd.conf; fi
 etc/lighttpd.conf.sample
 @exec [ -f %B/lighttpd.conf ] || cp %B/%f %B/lighttpd.conf
@@ -44,6 +44,9 @@ lib/lighttpd/mod_fastcgi.so
 lib/lighttpd/mod_flv_streaming.a
 lib/lighttpd/mod_flv_streaming.la
 lib/lighttpd/mod_flv_streaming.so
+%%H264%%lib/lighttpd/mod_h264_streaming.a
+%%H264%%lib/lighttpd/mod_h264_streaming.la
+%%H264%%lib/lighttpd/mod_h264_streaming.so
 lib/lighttpd/mod_indexfile.a
 lib/lighttpd/mod_indexfile.la
 lib/lighttpd/mod_indexfile.so
