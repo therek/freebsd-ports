@@ -1,7 +1,8 @@
-@comment $FreeBSD: ports/www/nginx-devel/pkg-plist,v 1.11 2007/09/03 12:19:26 osa Exp $
+@comment $FreeBSD: ports/www/nginx-devel/pkg-plist,v 1.12 2008/07/22 05:55:18 osa Exp $
 %%ETCDIR%%/fastcgi_params
 %%ETCDIR%%/koi-utf
 %%ETCDIR%%/koi-win
+%%ETCDIR%%/uwsgi_params
 %%ETCDIR%%/win-utf
 @unexec if cmp -s %D/%%ETCDIR%%/mime.types-dist %D/%%ETCDIR%%/mime.types; then rm -f %D/%%ETCDIR%%/mime.types; fi
 %%ETCDIR%%/mime.types-dist
