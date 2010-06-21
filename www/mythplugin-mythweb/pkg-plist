@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/mythplugin-mythweb/pkg-plist,v 1.1 2010/01/04 15:06:59 miwi Exp $
 %%WWWDIR%%/INSTALL
 %%WWWDIR%%/LICENSE
 %%WWWDIR%%/README
