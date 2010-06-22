@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.licenses.db.mk,v 1.3 2010/06/10 17:04:18 avilla Exp $
+# $FreeBSD: ports/Mk/bsd.licenses.db.mk,v 1.4 2010/06/16 20:33:35 kwm Exp $
 #
 # bsd.licenses.db.mk - License database for bsd.licenses.mk
 #
@@ -33,8 +33,7 @@
 # _LICENSE_LIST_GROUPS	- List of defined license groups
 #
 
-_LICENSE_LIST=			ASL BSD BSL CDDL GFDL GPLv2 GPLv3 LGPL20 LGPL21 LGPL3 MIT MPL
-_LICENSE_LIST_GROUPS=	FSF GPL OSI
+_LICENSE_LIST=			ASL BSD BSL CDDL EPL GFDL GPLv2 GPLv3 LGPL20 LGPL21 LGPL3 MIT MPL
 
 # List of groups (only names must be present)
 
@@ -70,6 +69,9 @@ _LICENSE_GROUPS_BSL=	FSF OSI
 
 _LICENSE_NAME_CDDL=		Common Development and Distribution License
 _LICENSE_GROUPS_CDDL=	FSF OSI
+
+_LICENSE_NAME_EPL=		Eclipse Public License
+_LICENSE_GROUPS_EPL=	FSF OSI
 
 _LICENSE_NAME_GFDL=		GNU Free Documentation License
 _LICENSE_GROUPS_GFDL=	FSF
