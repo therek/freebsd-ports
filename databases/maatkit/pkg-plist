@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/maatkit/pkg-plist,v 1.13 2009/10/13 15:46:30 skreuzer Exp $
+@comment $FreeBSD: ports/databases/maatkit/pkg-plist,v 1.14 2010/02/25 23:37:35 skreuzer Exp $
 %%SITE_PERL%%/maatkit.pod
 bin/mk-archiver
 bin/mk-checksum-filter
@@ -8,9 +8,11 @@ bin/mk-error-log
 bin/mk-fifo-split
 bin/mk-find
 bin/mk-heartbeat
+bin/mk-index-usage
 bin/mk-kill
 bin/mk-loadavg
 bin/mk-log-player
+bin/mk-merge-mqd-results
 bin/mk-parallel-dump
 bin/mk-parallel-restore
 bin/mk-profile-compact
