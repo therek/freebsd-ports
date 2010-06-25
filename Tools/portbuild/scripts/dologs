@@ -1,15 +1,18 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/Tools/portbuild/scripts/dologs,v 1.22 2009/08/24 01:57:30 linimon Exp $
 
 arch=$1
 versions="latest full"
 
 pb=/var/portbuild
 
+. ${pb}/conf/server.conf
 . ${pb}/${arch}/portbuild.conf
 
 home=${pb}/errorlogs
 scripts=${pb}/scripts
+
+branches=`cd ${pb}/${arch} && ls -d [1-9]* 2> /dev/null`
 
 for version in ${versions}; do
   for branch in ${branches}; do
