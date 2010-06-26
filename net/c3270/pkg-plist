@@ -1,7 +1,6 @@
-@comment $FreeBSD: ports/net/c3270/pkg-plist,v 1.1 2005/04/23 18:09:09 novel Exp $
+@comment $FreeBSD: ports/net/c3270/pkg-plist,v 1.2 2006/01/22 02:45:48 edwin Exp $
 bin/c3270
 bin/x3270if
-bin/pr3287
 etc/x3270/ibm_hosts
 %%DBCS%%etc/x3270/icudt28l_ibm-1027_P100-1995.cnv
 %%DBCS%%etc/x3270/icudt28l_ibm-300_P110-1997.cnv
