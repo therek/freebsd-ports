@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2175 2010/06/28 00:46:12 wen Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2176 2010/06/28 16:18:53 dinoex Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -62,12 +62,14 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
+      <bid>41174</bid>
       <cvename>CVE-2010-1205</cvename>
       <url>http://www.libpng.org/pub/png/libpng.html</url>
     </references>
     <dates>
       <discovery>2010-03-30</discovery>
       <entry>2010-06-28</entry>
+      <modified>2010-06-28</modified>
     </dates>
   </vuln>
 
