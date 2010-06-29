@@ -3,7 +3,7 @@
 # Checks if the '%%USER%%' user and '%%GROUP%%' group exist. If they don't, then
 # an attempt is made to create both.
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/tomcat55/files/pkg-install.in,v 1.1 2006/02/07 08:50:09 lawrance Exp $
 #
 
 # Make sure we're called during the 'make install' process
@@ -12,7 +12,7 @@ if [ "$2" != "PRE-INSTALL" ]; then
 fi
 
 # Set some constants
-UID=80
+UID=%%UID%%
 GID=${UID}
 USER=%%USER%%
 GROUP=%%GROUP%%
