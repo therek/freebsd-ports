@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/deskutils/tomboy/pkg-plist,v 1.18 2009/11/09 16:47:32 flz Exp $
+@comment $FreeBSD: ports/deskutils/tomboy/pkg-plist,v 1.19 2010/06/01 12:41:22 romain Exp $
 bin/tomboy
 bin/tomboy-panel
 lib/tomboy/Tomboy.exe
@@ -582,5 +582,5 @@ share/omf/tomboy/tomboy-zh_CN.omf
 @dirrm share/gnome/help/tomboy/C/figures
 @dirrm share/gnome/help/tomboy/C
 @dirrm share/gnome/help/tomboy
-@dirrm lib/tomboy/addins
-@dirrm lib/tomboy
+@dirrmtry lib/tomboy/addins
+@dirrmtry lib/tomboy
