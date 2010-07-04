@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/devel/git/files/git_daemon.in,v 1.4 2010/03/27 00:12:52 dougb Exp $
+# $FreeBSD: ports/devel/git/files/git_daemon.in,v 1.5 2010/04/21 01:24:05 wxs Exp $
 #
 
 # PROVIDE: git_daemon
@@ -25,5 +25,7 @@ load_rc_config $name
 
 command="%%PREFIX%%/libexec/git-core/git-daemon"
 command_args="${git_daemon_directory}"
+
+PATH="${PATH}:%%PREFIX%%/libexec/git-core"
 
 run_rc_command "$1"
