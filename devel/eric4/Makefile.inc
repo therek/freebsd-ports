@@ -5,7 +5,7 @@
 # Date created:				23 Apr 2007
 # Whom:					Boris Samorodov <bsam@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/eric4/Makefile.inc,v 1.33 2010/06/12 15:10:50 bsam Exp $
+# $FreeBSD: ports/devel/eric4/Makefile.inc,v 1.34 2010/07/05 06:56:18 bsam Exp $
 #
 
 PORTNAME=	eric4
@@ -18,7 +18,6 @@ MAINTAINER?=	bsam@FreeBSD.org
 COMMENT=	Full featured Python and Ruby editor and IDE based on Qt4
 
 LICENSE=	GPLv3
-LICENSE_FILE=	${WRKSRC}/LICENSE.GPL3
 
 RUN_DEPENDS?=	${PREFIX}/bin/eric4:${PORTSDIR}/devel/eric4
 
