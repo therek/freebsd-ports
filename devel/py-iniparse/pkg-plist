@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/py-iniparse/pkg-plist,v 1.1 2009/03/16 21:50:13 miwi Exp $
 %%PYTHON_SITELIBDIR%%/iniparse/__init__.py
 %%PYTHON_SITELIBDIR%%/iniparse/__init__.pyc
 %%PYTHON_SITELIBDIR%%/iniparse/__init__.pyo
@@ -11,4 +11,7 @@
 %%PYTHON_SITELIBDIR%%/iniparse/ini.py
 %%PYTHON_SITELIBDIR%%/iniparse/ini.pyc
 %%PYTHON_SITELIBDIR%%/iniparse/ini.pyo
+%%PYTHON_SITELIBDIR%%/iniparse/utils.py
+%%PYTHON_SITELIBDIR%%/iniparse/utils.pyc
+%%PYTHON_SITELIBDIR%%/iniparse/utils.pyo
 @dirrm %%PYTHON_SITELIBDIR%%/iniparse
