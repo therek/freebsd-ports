@@ -1,5 +1,5 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/proguard/files/retrace.sh.in,v 1.1 2007/09/20 12:57:27 ale Exp $
 
-exec "%%LOCALBASE%%/bin/java" -jar "%%DATADIR%%/retrace.jar" "$@"
+exec "%%LOCALBASE%%/bin/java" -Xmx256m  -jar "%%DATADIR%%/retrace.jar" "$@"
