@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2169 2010/06/27 13:06:07 beat Exp $
+# $FreeBSD: ports/MOVED,v 1.2170 2010/07/01 22:54:19 araujo Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4447,3 +4447,4 @@ www/firefox3-i18n|www/firefox35-i18n|2010-06-23|Upstream support dropped
 security/krb4||2010-06-26|security vulnerability and isn't more developed
 www/linux-mozilla|www/linux-seamonkey|2010-06-27|Security vulnerabilities and abandoned upstream since 2006
 security/audit||2010-07-01|development has been discontinued
+net/nss_ldapd|net/nss-pam-ldapd|2010-07-16|Project was renamed
