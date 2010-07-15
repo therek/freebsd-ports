@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.641 2010/06/03 11:41:52 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.642 2010/06/04 08:09:17 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1474,7 +1474,9 @@ PERL_LEVEL=0
 
 PERL_ARCH?=		mach
 
-.if   ${PERL_LEVEL} >= 501000
+.if    ${PERL_LEVEL} >= 501200
+PERL_PORT?=	perl5.12
+.elif  ${PERL_LEVEL} >= 501000
 PERL_PORT?=	perl5.10
 .else
 PERL_PORT?=	perl5.8

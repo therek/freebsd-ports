@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.15 2010/02/05 21:18:15 skv Exp $
+# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.16 2010/03/25 20:25:51 pgollucci Exp $
 #
 # bsd.perl.mk - Support for Perl-based ports.
 #
@@ -99,7 +99,9 @@ PERL_LEVEL=		0
 
 PERL_ARCH?=		mach
 
-.if   ${PERL_LEVEL} >= 501000
+.if    ${PERL_LEVEL} >= 501200
+PERL_PORT?=	perl5.12
+.elif  ${PERL_LEVEL} >= 501000
 PERL_PORT?=	perl5.10
 .else # ${PERL_LEVEL} < 501000
 PERL_PORT?=	perl5.8
@@ -149,7 +151,7 @@ masked_PERL_LEVEL=	${PERL_LEVEL}
 
 .if ${want_perl_sign} == "+"
 .if ${USE_PERL5_LEVEL} > ${masked_PERL_LEVEL}
-USE_PERL5_REASON?=	requires Perl ${want_perl_ver} or later, install lang/perl5.8 or lang/perl5.10 and try again
+USE_PERL5_REASON?=	requires Perl ${want_perl_ver} or later, install lang/perl5.8 or lang/perl5.10 or lang/perl5.12 and try again
 IGNORE=	${USE_PERL5_REASON}
 .endif # ${USE_PERL5_LEVEL} > ${masked_PERL_LEVEL}
 .elif ${want_perl_sign} == ""
