@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/nss_ldapd/files/nslcd.in,v 1.2 2009/08/24 22:44:16 timur Exp $
+# $FreeBSD: ports/net/nss_ldapd/files/nslcd.in,v 1.3 2010/03/27 00:13:50 dougb Exp $
 #
 # PROVIDE: nslcd
 # REQUIRE: DAEMON ldconfig resolv
