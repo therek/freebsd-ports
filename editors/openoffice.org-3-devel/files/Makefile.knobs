@@ -1,9 +1,9 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.65 2010/02/19 09:43:21 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.66 2010/02/19 12:16:53 maho Exp $
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.65 2010/02/19 09:43:21 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3-devel/files/Makefile.knobs,v 1.66 2010/02/19 12:16:53 maho Exp $
 
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
 
@@ -11,7 +11,7 @@ CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/sh
 CONFIGURE_ARGS+=	--enable-kde4 QT4DIR="${QT_PREFIX}" QT4LIB="${QT_LIBDIR}" QT4INC="${QT_INCDIR}" KDE4DIR="${KDE4_PREFIX}"
 QT_COMPONENTS+=		moc_build
 .endif
- 
+
 .if defined(WITH_KDE)
 CONFIGURE_ARGS+=	--enable-kde QTDIR="${QT_PREFIX}"
 .endif
