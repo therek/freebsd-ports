@@ -23,7 +23,12 @@ you update your ports collection, before attempting any port upgrades.
 	portupgrade -fr perl
 
   Portmaster users:
-	env DISABLE_CONFLICTS=1 portmaster -o lang/perl5.12 lang/perl5.10
+	portmaster -o lang/perl5.12 lang/perl5.10
+
+	Conservative:
+	portmaster p5-
+
+	Comprehensive (but perhaps overkill):
 	portmaster -r perl-
 
   Note: If the "perl-" glob matches  more than one port you will need to
@@ -9425,4 +9430,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.945 2010/06/26 08:33:06 daichi Exp $
+$FreeBSD: ports/UPDATING,v 1.946 2010/07/15 14:48:50 skv Exp $
