@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2184 2010/07/18 22:44:04 kwm Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2185 2010/07/18 23:28:32 kwm Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -38,7 +38,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>vte -- Classic terminal title set+query attack</topic>
     <affects>
       <package>
-	<name></name>
+	<name>vte</name>
 	<range><lt>0.24.3</lt></range>
       </package>
     </affects>
