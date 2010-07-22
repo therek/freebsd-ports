@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/opendkim/files/milter-opendkim.in,v 1.1 2009/09/21 12:25:21 pav Exp $
+# $FreeBSD: ports/mail/opendkim/files/milter-opendkim.in,v 1.2 2010/03/27 00:13:18 dougb Exp $
 #
 
 # PROVIDE: milter-opendkim
@@ -36,11 +36,13 @@
 name="milteropendkim"
 rcvar=`set_rcvar`
 
+extra_commands="reload"
 start_precmd="dkim_prepcmd"
 stop_postcmd="dkim_postcmd"
 command="%%PREFIX%%/sbin/opendkim"
 _piddir="/var/run/milteropendkim"
 pidfile="${_piddir}/pid"
+sig_reload="USR1"
 
 load_rc_config $name
 
