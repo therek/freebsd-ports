@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2179 2010/07/21 17:30:36 tabthorpe Exp $
+# $FreeBSD: ports/MOVED,v 1.2180 2010/07/25 11:24:15 wxs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4460,3 +4460,4 @@ science/qelectrotech|cad/qelectrotech|2010-07-21|Fix category
 mail/squirrelmail-compatibility-plugin1|mail/squirrelmail-compatibility-plugin|2010-07-21|Has expired: use mail/squirrelmail-compatibility-plugin
 mail/squirrelmail-newuser_wiz-plugin|mail/squirrelmail-askuserinfo-plugin|2010-07-21|Has expired: use mail/squirrelmail-askuserinfo-plugin
 textproc/mini-xml|textproc/mxml|2010-07-25|Duplicate port
+net/gir-repository-avahi|net/avahi-app|2010-07-25|Handled by net/avahi-app now
