@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.56 2010/04/11 07:53:17 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.57 2010/04/23 16:48:53 dinoex Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -102,7 +102,7 @@ check-makevars::
 		@${ECHO_CMD} "or WANT_PHP_MOD. Use only one of them."
 		@${FALSE}
 .	else
-.	if defined(PHP_VERSION) && ${PHP_SAPI:Mcgi} == "" && ${PHP_SAPI:Mmod} == ""
+.	if defined(PHP_VERSION) && ${PHP_SAPI:Mcgi} == "" && ${PHP_SAPI:Mfpm} == "" && ${PHP_SAPI:Mmod} == ""
 check-makevars::
 		@${ECHO_CMD} "This port requires the Apache Module or the CGI version of PHP, but you have"
 		@${ECHO_CMD} "already installed a PHP port without them."
@@ -112,7 +112,7 @@ check-makevars::
 .else
 
 .if defined(WANT_PHP_CGI)
-.	if defined(PHP_VERSION) && ${PHP_SAPI:Mcgi} == ""
+.	if defined(PHP_VERSION) && ${PHP_SAPI:Mcgi} == "" && ${PHP_SAPI:Mfpm} == ""
 check-makevars::
 		@${ECHO_CMD} "This port requires the CGI version of PHP, but you have already"
 		@${ECHO_CMD} "installed a PHP port without CGI."
