@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/devel/viewvc/files/viewvc.in,v 1.3 2010/03/27 00:12:53 dougb Exp $
+# $FreeBSD: ports/devel/viewvc/files/viewvc.in,v 1.4 2010/07/07 18:03:21 glarkin Exp $
 #
 # PROVIDE: viewvc
 # REQUIRE: LOGIN
@@ -61,7 +61,7 @@ viewvc_precmd()
 viewvc_start() {
     echo "Starting viewvc."
     %%TOUCH%% ${pidfile} && %%CHOWN%% ${viewvc_user} ${pidfile}
-    /usr/sbin/daemon -cf -p ${pidfile} -u ${viewvc_user} -c ${standalone} ${viewvc_flags}
+    /usr/sbin/daemon -cf -p ${pidfile} -u ${viewvc_user} ${standalone} ${viewvc_flags}
 }
 
 viewvc_cleanup() {
