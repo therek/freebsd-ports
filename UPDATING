@@ -5,6 +5,17 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20090727:
+  AFFECTS: users of security/libgcrypt
+  AUTHOR: wxs@FreeBSD.org
+
+  libgcrypt has been upgraded to 1.4.6 which has a shared library version
+  bump.  You need to reinstall all ports that depend on it.  Use something
+  like this:
+
+	portupgrade -rf libgcrypt
+	portmaster -r libgcrypt
+
 20100722:
   AFFECTS: users of net/rabbitmq
   AUTHOR: Phillip <pneumann@gmail.com>
@@ -9440,4 +9451,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.947 2010/07/16 17:32:05 dougb Exp $
+$FreeBSD: ports/UPDATING,v 1.948 2010/07/22 13:33:44 wxs Exp $
