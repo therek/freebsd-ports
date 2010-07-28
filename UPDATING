@@ -5,7 +5,7 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
-20090728:
+20100728:
   AFFECTS: users of textproc/nltk
   AUTHOR: clsung@FreeBSD.org
 
@@ -21,7 +21,7 @@ you update your ports collection, before attempting any port upgrades.
     # make install clean
 
 
-20090727:
+20100727:
   AFFECTS: users of security/libgcrypt
   AUTHOR: wxs@FreeBSD.org
 
@@ -9467,4 +9467,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.949 2010/07/27 11:43:01 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.950 2010/07/28 07:19:25 clsung Exp $
