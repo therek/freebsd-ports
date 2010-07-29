@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.19 2010/02/05 11:33:44 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.20 2010/03/28 06:30:26 dinoex Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -498,10 +498,12 @@ gecko-post-patch:
 	@${ECHO_CMD} "export ${var}" >> ${MOZCONFIG}
 .endfor
 .endif # .if !defined(NOMOZCONFIG)
+.if exists(${MOZSRC}/build/unix/mozilla-config.in)
 	@${REINPLACE_CMD} -e  's/%{idldir}/%idldir%/g ; \
 		s|"%FULL_NSPR_CFLAGS%"|`nspr-config --cflags`|g ; \
 		s|"%FULL_NSPR_LIBS%"|`nspr-config --libs`|g' \
 			${MOZSRC}/build/unix/mozilla-config.in
+.endif
 	@${REINPLACE_CMD} -e 's|<iconv.h>|\"${LOCALBASE}/include/iconv.h\"|g' \
 		${WRKSRC}/configure \
 		${MOZSRC}/intl/uconv/native/nsNativeUConvService.cpp \
