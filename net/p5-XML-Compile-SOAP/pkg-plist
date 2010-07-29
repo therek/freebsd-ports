@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/p5-XML-Compile-SOAP/pkg-plist,v 1.4 2009/03/04 06:48:42 clsung Exp $
+@comment $FreeBSD: ports/net/p5-XML-Compile-SOAP/pkg-plist,v 1.5 2009/06/17 08:28:14 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/XML/Compile/SOAP/.packlist
 %%SITE_PERL%%/XML/Compile/Operation.pm
 %%SITE_PERL%%/XML/Compile/Operation.pod
@@ -6,6 +6,8 @@
 %%SITE_PERL%%/XML/Compile/SOAP.pod
 %%SITE_PERL%%/XML/Compile/SOAP/Client.pm
 %%SITE_PERL%%/XML/Compile/SOAP/Client.pod
+%%SITE_PERL%%/XML/Compile/SOAP/Extension.pm
+%%SITE_PERL%%/XML/Compile/SOAP/Extension.pod
 %%SITE_PERL%%/XML/Compile/SOAP/Server.pm
 %%SITE_PERL%%/XML/Compile/SOAP/Server.pod
 %%SITE_PERL%%/XML/Compile/SOAP/Trace.pm
