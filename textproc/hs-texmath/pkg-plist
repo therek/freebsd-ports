@@ -1,6 +1,6 @@
-@comment $FreeBSD: ports/textproc/hs-texmath/pkg-plist,v 1.1 2010/01/12 22:22:11 pgj Exp $
-bin/testTeXMathML
-bin/texmath-cgi
+@comment $FreeBSD: ports/textproc/hs-texmath/pkg-plist,v 1.2 2010/05/12 16:33:55 pgj Exp $
+%%MAYBE_TEST%%bin/testTeXMathML
+%%MAYBE_CGI%%bin/texmath-cgi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/TeXMath.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/TeXMath/MathMLWriter.hi
