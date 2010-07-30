@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/hs-highlighting-kate/pkg-plist,v 1.7 2010/05/15 19:24:50 pgj Exp $
+@comment $FreeBSD: ports/textproc/hs-highlighting-kate/pkg-plist,v 1.8 2010/05/24 20:24:03 pgj Exp $
 %%MAYBE_EXECUTABLE%%bin/Highlight
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Paths_highlighting_kate.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Highlighting/Kate.hi
@@ -42,6 +42,7 @@
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Highlighting/Kate/Syntax/Nasm.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Highlighting/Kate/Syntax/Objectivec.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Highlighting/Kate/Syntax/Ocaml.hi
+%%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Highlighting/Kate/Syntax/Octave.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Highlighting/Kate/Syntax/Pascal.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Highlighting/Kate/Syntax/Perl.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/Highlighting/Kate/Syntax/Php.hi
