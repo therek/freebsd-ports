@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/postfix-current/files/postfix.sh.in,v 1.7 2009/07/15 16:55:48 dougb Exp $
+# $FreeBSD: ports/mail/postfix-current/files/postfix.sh.in,v 1.8 2010/03/27 00:13:21 dougb Exp $
 #
 # PROVIDE: postfix mail
 # REQUIRE: %%REQUIRE%%
@@ -25,9 +25,9 @@ rcvar=${name}_enable
 
 load_rc_config $name
 
-: ${postfix_enable="NO"}
-: ${postfix_pidfile="/var/spool/postfix/pid/master.pid"}
-: ${postfix_procname="%%PREFIX%%/libexec/postfix/master"}
+: ${postfix_enable:="NO"}
+: ${postfix_pidfile:="/var/spool/postfix/pid/master.pid"}
+: ${postfix_procname:="%%PREFIX%%/libexec/postfix/master"}
 
 start_cmd=${name}_start
 stop_cmd=${name}_stop
