@@ -1,9 +1,10 @@
-@comment $FreeBSD: ports/devel/hs-FileManip/pkg-plist,v 1.1 2010/01/12 22:09:04 pgj Exp $
-%%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
+@comment $FreeBSD: ports/devel/hs-FileManip/pkg-plist,v 1.2 2010/05/12 16:33:38 pgj Exp $
+%%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/System/FilePath/Error.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/System/FilePath/Find.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/System/FilePath/Glob.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/System/FilePath/GlobPattern.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/System/FilePath/Manip.hi
+%%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/libHS%%PORTNAME%%-%%PORTVERSION%%.a
 %%LIBDIR_REL%%/register.sh
 %%NOPORTDOCS%%%%DOCSDIR%%/LICENSE
