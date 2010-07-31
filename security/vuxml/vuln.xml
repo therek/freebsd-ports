@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2190 2010/07/26 01:42:20 kuriyama Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2191 2010/07/29 23:03:53 gabor Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -74,7 +74,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>apache</name>
-	<range><lt>2.2.16</lt></range>
+	<range><ge>2.2.0</ge><lt>2.2.16</lt></range>
       </package>
     </affects>
     <description>
