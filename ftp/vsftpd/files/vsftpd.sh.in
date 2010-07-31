@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/ftp/vsftpd/files/vsftpd.sh.in,v 1.9 2009/07/15 16:55:43 dougb Exp $
+# $FreeBSD: ports/ftp/vsftpd/files/vsftpd.sh.in,v 1.10 2010/03/27 00:13:02 dougb Exp $
 #
 
 # PROVIDE: vsftpd
@@ -31,6 +31,7 @@ load_rc_config "$name"
 command="%%PREFIX%%/libexec/$name"
 required_files="%%PREFIX%%/etc/$name.conf"
 start_precmd="vsftpd_check"
+extra_commands="reload"
 
 vsftpd_check()
 {
