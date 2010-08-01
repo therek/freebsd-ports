@@ -28,7 +28,7 @@ you update your ports collection, before attempting any port upgrades.
   Portupgrade user:
 	env DISABLE_CONFLICTS=1 portupgrade -o www/neon29 -f neon28-\*
 	pkgdb -Ff
-	portupgrade -rf www/neon29-\*
+	portupgrade -rf neon29-\*
 
 20100728:
   AFFECTS: users of textproc/nltk
@@ -9491,4 +9491,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.953 2010/07/30 22:14:45 mezz Exp $
+$FreeBSD: ports/UPDATING,v 1.954 2010/07/31 10:52:05 ehaupt Exp $
