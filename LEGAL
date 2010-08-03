@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.621 2010/06/08 07:18:59 gabor Exp $
+# $FreeBSD: ports/LEGAL,v 1.622 2010/08/03 10:26:56 osa Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -36,8 +36,6 @@ ventrilo_srv-*		audio/ventrilo-server	May not be redistributed.
 116518-*		german/staroffice70	Must be bought and downloaded
 						directly from Sun via WWW
 						interface
-5400s_fbsd_cli_v10.zip	sysutils/aaccli		May not be redistributed in
-						binary form
 aacplusenc-*		audio/aacplusenc	Unclear legal status
 ac3dlx*			graphics/linux-ac3d	Commercial license, no
 						distribution
