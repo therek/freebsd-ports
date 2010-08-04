@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/puppet/pkg-plist,v 1.6 2009/03/31 14:00:15 wxs Exp $
+@comment $FreeBSD$
 bin/filebucket
 bin/pi
 bin/puppet
@@ -10,8 +10,4 @@ sbin/puppetmasterd
 sbin/puppetqd
 sbin/puppetrun
 etc/puppet/puppet.conf-dist
-@exec mkdir -p %D/etc/puppet/ssl
-@exec mkdir -p %D/etc/puppet/manifests
-@dirrmtry etc/puppet/ssl
-@dirrmtry etc/puppet/manifests
 @dirrmtry etc/puppet
