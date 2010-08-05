@@ -1,8 +1,10 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/textproc/p5-Validator-Custom/pkg-plist,v 1.1 2010/07/02 20:29:18 sylvio Exp $
 %%SITE_PERL%%/Validator/Custom.pm
 %%SITE_PERL%%/Validator/Custom/Result.pm
+%%SITE_PERL%%/Validator/Custom/Basic/Constraints.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Validator/Custom/.packlist
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Validator/Custom
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Validator
+@dirrmtry %%SITE_PERL%%/Validator/Custom/Basic
 @dirrmtry %%SITE_PERL%%/Validator/Custom
 @dirrmtry %%SITE_PERL%%/Validator
