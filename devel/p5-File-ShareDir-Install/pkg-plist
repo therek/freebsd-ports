@@ -1,7 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-File-ShareDir-Install/pkg-plist,v 1.1 2010/08/05 15:48:51 az Exp $
 %%SITE_PERL%%/File/ShareDir/Install.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/File/ShareDir/Install/.packlist
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/File/ShareDir/Install
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/File/ShareDir
+@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/File
 @dirrmtry %%SITE_PERL%%/File/ShareDir
 @dirrmtry %%SITE_PERL%%/File
