@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/offlineimap/pkg-plist,v 1.6 2003/07/22 08:41:57 arved Exp $
+@comment $FreeBSD: ports/mail/offlineimap/pkg-plist,v 1.7 2008/07/27 19:12:24 arved Exp $
 bin/offlineimap
 %%PYTHON_SITELIBDIR%%/offlineimap/folder/__init__.py
 %%PYTHON_SITELIBDIR%%/offlineimap/folder/__init__.pyc
@@ -109,7 +109,6 @@ bin/offlineimap
 %%PORTDOCS%%%%DOCSDIR%%/COPYING
 %%PORTDOCS%%%%DOCSDIR%%/COPYRIGHT
 %%PORTDOCS%%%%DOCSDIR%%/FAQ.html
-%%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/UPGRADING
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%EXAMPLESDIR%%/offlineimap.conf
