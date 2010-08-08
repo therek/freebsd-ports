@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2190 2010/08/08 12:38:24 olgeni Exp $
+# $FreeBSD: ports/MOVED,v 1.2191 2010/08/08 12:57:15 makc Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4472,4 +4472,4 @@ mail/lightning|deskutils/lightning|2010-08-03|Upstream development discontinued
 devel/py_otp_interface|devel/py-interface|2010-08-06|Duplicate py-interface port has better distutils handling
 www/mplayer-plugin|www/gecko-mediaplayer|2010-08-08|Upstream support dropped
 lang/plt-scheme|lang/racket|2010-08-08|Upstream development discontinued
-emulators/sdlmame|emulators/mame|2010-08-08|SDL port has been integrated into mainstream
+emulators/sdlmess|emulators/mess|2010-08-08|SDL port has been integrated into mainstream
