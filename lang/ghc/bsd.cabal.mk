@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.cabal.mk,v 1.2 2010/05/15 18:45:32 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.cabal.mk,v 1.3 2010/07/30 08:48:26 pgj Exp $
 #
 # bsd.cabal.mk -- Support for ports based on Haskell Cabal.
 #
@@ -9,8 +9,10 @@
 # Maintained by: haskell@FreeBSD.org
 #
 
-MASTER_SITES?=	http://hackage.haskell.org/packages/archive/${PORTNAME}/${PORTVERSION}/
 PKGNAMEPREFIX?=	hs-
+
+MASTER_SITES?=	http://hackage.haskell.org/packages/archive/${PORTNAME}/${PORTVERSION}/
+DIST_SUBDIR?=	cabal
 
 .if !defined(DOCUMENTATION) && \
     (${PORTNAME} == haddock || ${PORTNAME} == ghc-paths || ${PORTNAME} == hscolour)
