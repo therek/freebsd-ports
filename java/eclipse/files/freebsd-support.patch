@@ -1,4 +1,4 @@
-$FreeBSD: ports/java/eclipse-devel/files/freebsd-support.patch,v 1.1 2010/05/01 17:27:59 glewis Exp $
+$FreeBSD: ports/java/eclipse/files/freebsd-support.patch,v 1.1 2010/07/10 19:34:26 glewis Exp $
 
 --- build.orig/eclipse-3.5.2-src/features/org.eclipse.equinox.executable/library/gtk/build.sh	2009-12-23 15:12:32.845944760 -0500
 +++ build/eclipse-3.5.2-src/features/org.eclipse.equinox.executable/library/gtk/build.sh	2009-12-23 15:14:12.389807302 -0500
@@ -2847,8 +2847,8 @@ $FreeBSD: ports/java/eclipse-devel/files/freebsd-support.patch,v 1.1 2010/05/01 
  if [ -z "${MOZILLA_INCLUDES}" -a -z "${MOZILLA_LIBS}" ]; then
 -	if [ x`pkg-config --exists mozilla-xpcom && echo YES` = "xYES" ]; then
 +	if [ x`pkg-config --exists libxul && echo YES` = "xYES" ]; then
-+		XULRUNNER_INCLUDES=`pkg-config --cflags libxul-unstable`
-+		XULRUNNER_LIBS="`pkg-config --libs libxul-unstable` -lxpcomglue"
++		XULRUNNER_INCLUDES=`pkg-config --cflags libxul`
++		XULRUNNER_LIBS="`pkg-config --libs libxul` -lxpcomglue"
 +		export XULRUNNER_INCLUDES
 +		export XULRUNNER_LIBS
 +		MAKE_MOZILLA="make_xulrunner make_xpcominit"
