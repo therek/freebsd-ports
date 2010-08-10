@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/nano/pkg-plist,v 1.20 2009/12/01 16:47:20 naddy Exp $
+@comment $FreeBSD: ports/editors/nano/pkg-plist,v 1.21 2010/04/26 17:45:24 tabthorpe Exp $
 bin/nano
 bin/rnano
 %%NLS%%%%PORTDOCS%%%%DOCSDIR%%/fr/nano.1.html
@@ -51,6 +51,7 @@ share/nano/html.nanorc
 share/nano/java.nanorc
 share/nano/makefile.nanorc
 share/nano/man.nanorc
+share/nano/mgp.nanorc
 share/nano/mutt.nanorc
 share/nano/nanorc.nanorc
 share/nano/objc.nanorc
