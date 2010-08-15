@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/databases/redis-devel/files/pkg-install.in,v 1.1 2009/07/27 16:53:25 skv Exp $
 
 PATH=/bin:/usr/bin:/usr/sbin
 
