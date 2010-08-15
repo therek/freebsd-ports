@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2199 2010/08/14 20:51:52 jsa Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2200 2010/08/14 22:43:51 gabor Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -1482,8 +1482,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>krb5</name>
-	<range><ge>1.7</ge></range>
-	<range><lt>1.8.2</lt></range>
+	<range><ge>1.7</ge><lt>1.8.2</lt></range>
       </package>
     </affects>
     <description>
