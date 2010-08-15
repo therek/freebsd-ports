@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.118 2010/02/02 22:00:24 miwi Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.119 2010/05/12 12:13:06 wen Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -214,7 +214,7 @@ Python_Include_MAINTAINER=	python@FreeBSD.org
 #
 
 _PYTHON_PORTBRANCH=		2.6
-_PYTHON_ALLBRANCHES=	2.6 2.5 2.4 3.1 # preferred first
+_PYTHON_ALLBRANCHES=		2.6 2.5 2.4 2.7 3.1 # preferred first
 _ZOPE_PORTBRANCH=		2.7
 _ZOPE_ALLBRANCHES=		2.7 2.8 2.9 2.10 3.2
 
@@ -377,6 +377,14 @@ PYTHON_REL=			312
 PYTHON_SUFFIX=		31
 PYTHON_VER=			3.1
 
+# Python-2.7
+.elif ${PYTHON_VERSION} == "python2.7"
+PYTHON_PORTVERSION?=2.7
+PYTHON_PORTSDIR=	${PORTSDIR}/lang/python27
+PYTHON_REL=			270
+PYTHON_SUFFIX=		27
+PYTHON_VER=			2.7
+
 # Python-2.6
 .elif ${PYTHON_VERSION} == "python2.6"
 PYTHON_PORTVERSION?=2.6.5
@@ -418,6 +426,7 @@ check-makevars::
 	@${ECHO} "  python2.4"
 	@${ECHO} "  python2.5"
 	@${ECHO} "  python2.6 (default)"
+	@${ECHO} "  python2.7"
 	@${ECHO} "  python3.1"
 	@${FALSE}
 .endif
