@@ -5,6 +5,16 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20100815:
+  AFFECTS: users of databases/redis and databases/redis-devel
+  AUTHOR: osa@FreeBSD.org
+
+  The redis configuration file, redis.conf, have been changed, some options
+  removed in newer versions (>=2.0).  In some cases, redis-server with 
+  older configuration might does not run at startup.
+
+  If you run into startup problems, re-edit configuration file.
+
 20100813:
   AFFECTS: www/opera
   AUTHOR: dinoex@
@@ -9510,4 +9520,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.956 2010/08/11 21:00:13 makc Exp $
+$FreeBSD: ports/UPDATING,v 1.957 2010/08/13 12:21:56 dinoex Exp $
