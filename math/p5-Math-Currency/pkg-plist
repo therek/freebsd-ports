@@ -1,6 +1,7 @@
-@comment $FreeBSD: ports/math/p5-Math-Currency/pkg-plist,v 1.5 2005/11/16 15:54:16 mat Exp $
+@comment $FreeBSD: ports/math/p5-Math-Currency/pkg-plist,v 1.6 2006/01/22 02:26:18 edwin Exp $
 %%SITE_PERL%%/Math/Currency.pm
-%%SITE_PERL%%/Math/Currency/GBP.pm
-%%SITE_PERL%%/Math/Currency/JPY.pm
+%%SITE_PERL%%/Math/Currency/de_DE.pm
+%%SITE_PERL%%/Math/Currency/en_GB.pm
+%%SITE_PERL%%/Math/Currency/ja_JP.pm
 @dirrm %%SITE_PERL%%/Math/Currency
 @dirrmtry %%SITE_PERL%%/Math
