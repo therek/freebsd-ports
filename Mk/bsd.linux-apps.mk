@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.32 2009/09/07 20:08:36 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.33 2009/09/14 10:09:31 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -70,8 +70,8 @@ _LINUX_APPS_ALL=	allegro alsalib arts aspell atk cairo curl dri esound expat fon
 _LINUX_APPS_ALL+=
 
 # 2.6.16 components
-_LINUX_26_APPS=		blt cyrus-sasl2 dbusglib dbuslibs libidn libssh2 nspr nss openldap \
-			sqlite3 tcl84 tk84
+_LINUX_26_APPS=		blt cyrus-sasl2 dbusglib dbuslibs libidn libssh2 nspr nss openal-soft \
+			openldap sqlite3 tcl84 tk84
 
 _LINUX_APPS_ALL+=	${_LINUX_26_APPS}
 
@@ -373,6 +373,12 @@ openal_f10_FILE=	${LINUXBASE}/usr/lib/libopenal.so.0.0.0
 openal_DETECT=		${openal${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 openal_PORT=		${PORTSDIR}/audio/linux${LINUX_DIST_SUFFIX}-openal
 openal_DEPENDS=		alsalib arts esound libaudiofile libvorbis sdl12
+
+# no openal-soft_FILE, openal-soft_f8_FILE
+openal-soft_f10_FILE=	${LINUXBASE}/usr/lib/libopenal.so.1.8.466
+openal-soft_DETECT=	${openal-soft${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
+openal-soft_PORT=	${PORTSDIR}/audio/linux${LINUX_DIST_SUFFIX}-openal-soft
+openal-soft_DEPENDS=	alsalib arts esound
 
 openssl_FILE=		${LINUXBASE}/lib/libssl.so.0.9.7f
 openssl_f8_FILE=	${LINUXBASE}/lib/libssl.so.0.9.8b
