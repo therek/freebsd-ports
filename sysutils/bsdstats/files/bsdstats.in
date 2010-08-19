@@ -1,6 +1,6 @@
 #!/bin/sh 
 #
-# $FreeBSD:$
+# $FreeBSD: ports/sysutils/bsdstats/files/bsdstats.in,v 1.1 2007/04/28 23:54:03 scrappy Exp $
 #
 
 # PROVIDE: bsdstats
