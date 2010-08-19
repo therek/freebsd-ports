@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2200 2010/08/17 06:54:32 kwm Exp $
+# $FreeBSD: ports/MOVED,v 1.2201 2010/08/17 13:04:26 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4483,3 +4483,4 @@ multimedia/kaffeine-devel|multimedia/kaffeine|2010-08-14|New non-development ver
 www/peacock||2010-08-17|Has runtime errors, upstream development discontinued
 www/gtkhtml38||2010-08-17|Removed, because there are no more users of this library
 security/isolate||2010-08-17|Security vulnerability
+www/wordpress-mu|www/wordpress|2010-08-19|Multiuser support was incorporate in the upstream version
