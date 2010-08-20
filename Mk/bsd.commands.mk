@@ -5,7 +5,7 @@
 #
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.commands.mk,v 1.4 2009/08/03 15:36:58 miwi Exp $
+# $FreeBSD: ports/Mk/bsd.commands.mk,v 1.5 2010/06/04 08:09:17 pav Exp $
 #
 # DO NOT COMMIT CHANGES TO THIS FILE BY YOURSELF, EVEN IF YOU DID NOT GET
 # A RESPONSE FROM THE MAINTAINER(S) WITHIN A REASONABLE TIMEFRAME! ALL
@@ -93,10 +93,11 @@ XARGS?=		/usr/bin/xargs
 XMKMF?=		${LOCALBASE}/bin/xmkmf -a
 YACC?=		/usr/bin/yacc
 
+XZ?=	-Mmax
 .if exists(/usr/bin/xz)
-XZ_CMD?=	/usr/bin/xz
+XZ_CMD?=	/usr/bin/xz ${XZ}
 .else
-XZ_CMD?=	${LOCALBASE}/bin/xz
+XZ_CMD?=	${LOCALBASE}/bin/xz ${XZ}
 .endif
 
 .if exists(/sbin/md5)

@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.licenses.mk,v 1.1 2010/05/25 00:25:01 alepulver Exp $
+# $FreeBSD: ports/Mk/bsd.licenses.mk,v 1.2 2010/05/26 02:20:27 alepulver Exp $
 #
 # bsd.licenses.mk - License auditing framework.
 #
@@ -42,6 +42,7 @@
 # Variables provided to the ports system and users in general, to modify the
 # behavior of the framework
 #
+# DISABLE_LICENSES			- Disable license auditing framework completely.
 # NO_LICENSES_INSTALL		- Do not install catalog, report and licenses.
 # NO_LICENSES_DIALOGS		- Disable interactive menus for asking licenses.
 
@@ -119,7 +120,7 @@
 
 .if defined(_POSTMKINCLUDED) && !defined(BEFOREPORTMK)
 
-.if defined(LICENSE)
+.if defined(LICENSE) && !defined(DISABLE_LICENSES)
 
 # Include known licenses from database
 
@@ -720,7 +721,6 @@ ${_LICENSE_COOKIE}:
 .if !defined(NO_LICENSES_INSTALL)
 PLIST_FILES+=	${_LICENSE_DIR_REL}/${_LICENSE_CATALOG:T} \
 				${_LICENSE_DIR_REL}/${_LICENSE_REPORT:T}
-PLIST_DIRS+=	${_LICENSE_DIR_REL}
 
 .if ${_LICENSE_COMB} == "single"
 PLIST_FILES+=	${_LICENSE_DIR_REL}/${_LICENSE_FILE:T}
@@ -744,6 +744,8 @@ install-license:
 .	endfor
 .endif
 # XXX @dirrmtry entry must be here (no way to do with PLIST_* vars)
+	@${ECHO_CMD} "@cwd ${PREFIX}" >> ${TMPPLIST}
+	@${ECHO_CMD} "@dirrm ${_LICENSE_DIR_REL}" >> ${TMPPLIST}
 	@${ECHO_CMD} "@unexec rmdir %D/share/licenses 2>/dev/null || true" >> ${TMPPLIST}
 
 .else
@@ -752,16 +754,10 @@ install-license:
 
 .endif
 
-.else	# !LICENSE
+.elif !defined(DISABLE_LICENSES)	# !LICENSE
 
 check-license:
 	@${ECHO_MSG} "===>  License check disabled, port has not defined LICENSE"
-
-ask-license:
-	@${DO_NADA}
-
-install-license:
-	@${DO_NADA}
 
 .endif	# LICENSE
 
