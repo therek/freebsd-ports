@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/tomcat55/pkg-plist,v 1.24 2008/10/26 11:26:11 stefan Exp $
+@comment $FreeBSD: ports/www/tomcat55/pkg-plist,v 1.25 2010/02/26 01:18:54 wen Exp $
 @unexec if cmp -s %D/%%T%%/conf/Catalina/localhost/host-manager.xml %D/%%T%%/conf/Catalina/localhost/host-manager.xml.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/Catalina/localhost/host-manager.xml; else echo If permanently deleting this package, %D/%%T%%/conf/Catalina/localhost/host-manager.xml must be removed manually; fi
 @unexec if cmp -s %D/%%T%%/conf/Catalina/localhost/manager.xml %D/%%T%%/conf/Catalina/localhost/manager.xml.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/Catalina/localhost/manager.xml; else echo If permanently deleting this package, %D/%%T%%/conf/Catalina/localhost/manager.xml must be removed manually; fi
 @unexec if cmp -s %D/%%T%%/conf/catalina.policy %D/%%T%%/conf/catalina.policy.%%CONF_EXT%%; then rm -f %D/%%T%%/conf/catalina.policy; else echo If permanently deleting this package, %D/%%T%%/conf/catalina.policy must be removed manually; fi
@@ -17,12 +17,11 @@
 %%T%%/bin/catalina-tasks.xml
 %%T%%/bin/catalina.sh
 %%T%%/bin/commons-daemon.jar
+%%T%%/bin/commons-daemon-native.tar.gz
 %%T%%/bin/commons-logging-api-1.1.1.jar
 %%T%%/bin/digest.sh
 %%JAVA14%%%%T%%/bin/jmx.jar
-%%T%%/bin/jkstatus-tasks.xml
 %%T%%/bin/jmxaccessor-tasks.xml
-%%T%%/bin/jsvc.tar.gz
 %%T%%/bin/setclasspath.sh
 %%T%%/bin/shutdown.sh
 %%T%%/bin/startup.sh
@@ -74,7 +73,6 @@
 %%T%%/server/lib/tomcat-apr.jar
 %%T%%/server/lib/tomcat-coyote.jar
 %%T%%/server/lib/tomcat-http.jar
-%%T%%/server/lib/tomcat-jkstatus-ant.jar
 %%T%%/server/lib/tomcat-util.jar
 %%T%%/server/webapps/host-manager/WEB-INF/lib/catalina-host-manager.jar
 %%T%%/server/webapps/host-manager/WEB-INF/web.xml
@@ -843,12 +841,12 @@
 %%T%%/webapps/webdav/tomcat.gif
 @exec mkdir %D/%%T%%/work || true
 @exec mkdir %D/%%T%%/webapps/balancer/images || true
-@exec mkdir %D/%%T%%/temp || true
 @exec mkdir %D/%%T%%/shared || true
 @exec mkdir %D/%%T%%/shared/lib || true
 @exec mkdir %D/%%T%%/shared/classes || true
 @exec mkdir %D/%%T%%/server/classes || true
-@exec mkdir %D/%%T%%/common/endorsed ||true
+@exec mkdir %D/%%T%%/common/endorsed || true
+@exec mkdir %D/%%T%%/common/classes || true
 @exec chown -R %%WWWOWN%%:%%WWWGRP%% %D/%%T%%/conf %D/%%T%%/logs %D/%%T%%/temp %D/%%T%%/work
 @dirrm %%T%%/work
 @dirrm %%T%%/webapps/webdav/WEB-INF
@@ -1022,8 +1020,5 @@
 @dirrm %%T%%/common/endorsed
 @dirrm %%T%%/common/classes
 @dirrm %%T%%/common
-@dirrm %%T%%/bin/procrun/ia64
-@dirrm %%T%%/bin/procrun/amd64
-@dirrm %%T%%/bin/procrun
 @dirrm %%T%%/bin
 @dirrm %%T%%
