@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2202 2010/08/19 23:08:47 araujo Exp $
+# $FreeBSD: ports/MOVED,v 1.2203 2010/08/21 14:17:05 lwhsu Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4485,3 +4485,4 @@ www/gtkhtml38||2010-08-17|Removed, because there are no more users of this libra
 security/isolate||2010-08-17|Security vulnerability
 www/wordpress-mu|www/wordpress|2010-08-19|Multiuser support was incorporate in the upstream version
 archivers/py-tarfile||2010-08-21|Has expired: all development activity in this port has been merged into mainline python after 2.4
+www/rssdler|www/py-rssdler|2010-08-21|Rename to consistency with other Python ports
