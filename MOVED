@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2209 2010/08/23 11:55:12 gahr Exp $
+# $FreeBSD: ports/MOVED,v 1.2210 2010/08/23 12:00:38 gahr Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4492,3 +4492,4 @@ www/woadaptor-cgi||2010-08-23|Broken for 6+ months, unmaintained
 x11-toolkits/ruby-fox12||2010-08-23|Removed
 x11-toolkits/fxscintilla-fox12||2010-08-23|Removed
 x11-toolkits/fox12||2010-08-23|Has expired: Unsupported, please use x11-toolkits/fox14 or x11-toolkits/fox16 instead.
+editors/mondrian||2010-08-23|Removed
