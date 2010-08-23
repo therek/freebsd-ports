@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2209 2010/08/22 12:30:06 kwm Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2210 2010/08/22 17:19:50 danfe Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -95,11 +95,11 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>phpMyAdmin</name>
-	<range><lt>3.3.5</lt></range>
+	<range><lt>3.3.5.1</lt></range>
       </package>
       <package>
         <name>phpMyAdmin211</name>
-	<range><lt>2.11.10</lt></range>
+	<range><lt>2.11.10.1</lt></range>
       </package>
     </affects>
     <description>
