@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.456 2010/06/18 04:24:10 brian Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.457 2010/07/16 00:44:08 jsa Exp $
 #
 # FreeBSD Project Committers
 #
@@ -232,6 +232,7 @@
  45.3991,	-75.6942,	"jake"				# Ottawa, ON, Canada
  42.26785,	-76.28954,	"pat"				# Ithaca, NY, USA
  39.046,	-76.442,	"patrick"			# Annapolis, MD, USA
+ 44.229844,	-76.48019,	"adamw"				# Kingston, ON, Canada
  38.836899,	-77.113810,	"pgollucci"			# Old Town, VA, USA
  38.882,	-77.171,	"trhodes"			# Falls Church, VA, USA
  39.128555,	-77.203029,	"   ,green"			# Gaithersburg, MD, USA
