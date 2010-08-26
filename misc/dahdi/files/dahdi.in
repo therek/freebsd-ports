@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/dahdi/files/dahdi.in,v 1.3 2010/03/18 13:57:26 fjoe Exp $
+# $FreeBSD: ports/misc/dahdi/files/dahdi.in,v 1.4 2010/03/27 00:13:27 dougb Exp $
 #
 # PROVIDE: dahdi
 # REQUIRE: NETWORKING
@@ -12,7 +12,18 @@
 #
 # dahdi_enable (bool):			YES/NO (default: NO)
 # dahdi_modules (list of strings):	dahdi modules to load at boot (default: dahdi)
-#	Valid modules are: dahdi, wct4xxp, wcb4xxp
+#
+# Valid modules are:
+# - dahdi
+# - dahdi_transcode
+# - wcb4xxp
+# - wcfxo
+# - wct4xxp
+# - wctc4xxp
+# - wctdm
+# - wctdm24xxp
+# - wcte11xp
+# - wcte12xp
 #
 # Example:
 #
