@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/py-eventlet/pkg-plist,v 1.1 2010/08/22 03:41:56 lwhsu Exp $
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/EGG-INFO/PKG-INFO
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/EGG-INFO/SOURCES.txt
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/EGG-INFO/dependency_links.txt
@@ -68,6 +68,9 @@
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/green/__init__.py
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/green/__init__.pyc
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/green/__init__.pyo
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/green/_socket_nodns.py
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/green/_socket_nodns.pyc
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/green/_socket_nodns.pyo
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/green/asynchat.py
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/green/asynchat.pyc
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/green/asynchat.pyo
@@ -173,6 +176,9 @@
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/support/__init__.py
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/support/__init__.pyc
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/support/__init__.pyo
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/support/greendns.py
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/support/greendns.pyc
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/support/greendns.pyo
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/support/greenlets.py
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/support/greenlets.pyc
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/eventlet/support/greenlets.pyo
