@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.20 2010/03/28 06:30:26 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.21 2010/07/29 11:37:03 beat Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -505,9 +505,19 @@ gecko-post-patch:
 			${MOZSRC}/build/unix/mozilla-config.in
 .endif
 	@${REINPLACE_CMD} -e 's|<iconv.h>|\"${LOCALBASE}/include/iconv.h\"|g' \
-		${WRKSRC}/configure \
-		${MOZSRC}/intl/uconv/native/nsNativeUConvService.cpp \
-		${MOZSRC}/xpcom/io/nsNativeCharsetUtils.cpp
+		${WRKSRC}/configure
+.for subdir in config/system_wrappers nsprpub/config/system_wrappers js/src/config/system_wrappers_js
+	@${MKDIR} ${MOZSRC}/${subdir}
+	@${ECHO_CMD} "#pragma GCC system_header" >> ${MOZSRC}/${subdir}/iconv.h
+	@${ECHO_CMD} "#pragma GCC visibility push(default)" >> ${MOZSRC}/${subdir}/iconv.h
+	@${ECHO_CMD} "#include \"${LOCALBASE}/include/iconv.h\"" >> ${MOZSRC}/${subdir}/iconv.h
+	@${ECHO_CMD} "#pragma GCC visibility pop" >> ${MOZSRC}/${subdir}/iconv.h
+.endfor
+.for subdir in "" nsprpub js/src
+	@if [ -f ${MOZSRC}/${subdir}/config/system-headers ] ; then \
+		${ECHO_CMD} "fenv.h" >> ${MOZSRC}/${subdir}/config/system-headers ; \
+	fi
+.endfor
 	@${REINPLACE_CMD} -e 's|%%MOZILLA%%|${MOZILLA}|g' \
 		${WRKSRC}/config/autoconf.mk.in
 	@${REINPLACE_CMD} -e 's|-pthread|${PTHREAD_LIBS}|g ; \
