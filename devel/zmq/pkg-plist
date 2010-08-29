@@ -1,9 +1,10 @@
-@comment $FreeBSD: ports/devel/zmq/pkg-plist,v 1.1 2008/07/29 06:09:53 vanilla Exp $
+@comment $FreeBSD: ports/devel/zmq/pkg-plist,v 1.2 2010/06/05 08:16:36 lwhsu Exp $
 bin/zmq_forwarder
 bin/zmq_queue
 bin/zmq_streamer
 include/zmq.h
 include/zmq.hpp
+include/zmq_utils.h
 lib/libzmq.a
 lib/libzmq.la
 lib/libzmq.so
