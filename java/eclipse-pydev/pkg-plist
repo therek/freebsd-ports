@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/java/eclipse-pydev/pkg-plist,v 1.2 2010/05/02 20:58:20 nivit Exp $
+@comment $FreeBSD: ports/java/eclipse-pydev/pkg-plist,v 1.3 2010/07/25 07:33:33 nivit Exp $
 lib/eclipse/features/org.python.pydev.feature_%%PORTVERSION%%/LICENSE.txt
 lib/eclipse/features/org.python.pydev.feature_%%PORTVERSION%%/META-INF/APTANA.DSA
 lib/eclipse/features/org.python.pydev.feature_%%PORTVERSION%%/META-INF/APTANA.SF
@@ -603,7 +603,6 @@ lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/PySrc/_pydev_log.py
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/PySrc/_pydev_xmlrpclib.py
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/PySrc/_pydevd_re.py
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/PySrc/_tipper_common.py
-lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/PySrc/debug.py
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/PySrc/importsTipper.py
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/PySrc/interpreterInfo.py
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/PySrc/jyimportsTipper.py
@@ -698,6 +697,8 @@ lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/python_refactor.png
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/python_run.png
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/python_unit.png
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/refresh_nav.gif
+lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/relaunch.png
+lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/relaunch1.png
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/remove.gif
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/remove_nature.png
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/sample.gif
@@ -711,6 +712,7 @@ lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/tabs_active.png
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/tabs_inactive.png
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/template.gif
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/terminate.gif
+lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/terminate_all.gif
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/icons/toggle_tabs.png
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/plugin.properties
 lib/eclipse/plugins/org.python.pydev_%%PORTVERSION%%/plugin.xml
