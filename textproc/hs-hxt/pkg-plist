@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/textproc/hs-hxt/pkg-plist,v 1.1 2010/05/15 22:10:48 pgj Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Control/Arrow/ArrowIO.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Control/Arrow/ArrowIf.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Control/Arrow/ArrowList.hi
@@ -93,7 +93,7 @@
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/HS%%PORTNAME%%-%%PORTVERSION%%.o
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/libHS%%PORTNAME%%-%%PORTVERSION%%.a
 %%LIBDIR_REL%%/register.sh
-%%NOPORTDOCS%%%%DOCSDIR%%/LICENCE
+%%NOPORTDOCS%%%%DOCSDIR%%/LICENSE
 %%NOPORTDOCS%%@dirrmtry %%DOCSDIR%%
 @dirrm %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/XML/HXT/RelaxNG/XmlSchema
 @dirrm %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/Text/XML/HXT/RelaxNG/Unicode
