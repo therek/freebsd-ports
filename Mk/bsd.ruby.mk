@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.195 2010/04/28 23:59:55 stas Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.196 2010/08/18 03:46:00 stas Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -137,6 +137,7 @@ Ruby_Include_MAINTAINER=	stas@FreeBSD.org
 #
 
 RUBY_DEFAULT_VER?=	1.8
+RAKE_VER=	0.8.7
 
 RUBY_VER?=		${RUBY_DEFAULT_VER}
 
@@ -534,12 +535,12 @@ RUN_DEPENDS+=		${DEPEND_RUBY_ICONV}
 .endif
 
 .if defined(USE_RAKE)
-. if ${RUBY_VER} == 1.8
 BUILD_DEPENDS+=		${LOCALBASE}/bin/rake:${PORTSDIR}/devel/rubygem-rake
-RAKE_BIN=	 ${LOCALBASE}/bin/rake
-. else
-RAKE_BIN=	 ${LOCALBASE}/bin/${RUBY_VER:S/.//}
-. endif
+.if ${RUBY_VER} == 1.8
+RAKE_BIN=	${LOCALBASE}/bin/rake
+.else
+RAKE_BIN=	${GEM_LIB_DIR}/bin/rake${RUBY_VER:S/.//}
+.endif
 .endif
 
 .if defined(USE_RUBY_AMSTD)
