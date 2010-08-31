@@ -1,6 +1,7 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/p5-App-Options/pkg-plist,v 1.1 2006/08/22 08:02:15 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/App-Options/.packlist
 %%SITE_PERL%%/App/Options.pm
 bin/prefix
+bin/prefixadmin
 @dirrmtry %%SITE_PERL%%/App
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/App-Options
