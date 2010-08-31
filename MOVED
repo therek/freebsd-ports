@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2233 2010/08/31 17:43:14 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2234 2010/08/31 17:49:29 rene Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4509,7 +4509,6 @@ www/linux-seamonkey-devel||2010-08-30|Older than stable port and unmaintained
 chinese/gcin-devel||2010-08-31|Older than stable port, broken and unmaintained
 graphics/xfractint-devel||2010-08-31|Older than stable port and unmaintained
 misc/kcd-devel||2010-08-31|Older than stable port and unmaintained
-net/Sockets-devel||2010-08-31|Older than stable port and unmaintained
 sysutils/logtool-devel||2010-08-31|Older than stable port and unmaintained
 textproc/smartdoc-devel||2010-08-31|Older than stable port and unmaintained
 comms/spandsp-devel5||2010-08-31|Older than stable port and unmaintained
