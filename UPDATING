@@ -5,6 +5,18 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20100902:
+  AFFECTS: users of KDE4
+  AUTHOR: kde@FreeBSD.org
+
+  KDE SC ports has been updated to 4.5.1. A number of files were moved
+  between packages, manual intervention into update procedure is required:
+
+  # pkg_delete -f kdehier4\* kdelibs-4\* kdebase-4\* kdebase-runtime-4\* kdebase-workspace-4\*
+  # rm -rf /usr/local/kde4/share/PolicyKit/policy
+  # cd /usr/ports/misc/kdehier4 && make install clean
+  # portmaster -a
+
 20100901:
   AFFECTS: users of www/rubygem-rails
   AUTHOR: pgollucci@FreeBSD.org
@@ -9546,4 +9558,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.960 2010/08/27 18:39:54 mm Exp $
+$FreeBSD: ports/UPDATING,v 1.961 2010/09/02 03:20:41 pgollucci Exp $
