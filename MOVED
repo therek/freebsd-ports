@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2234 2010/08/31 17:49:29 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2235 2010/08/31 23:13:14 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4515,3 +4515,4 @@ comms/spandsp-devel5||2010-08-31|Older than stable port and unmaintained
 french/pluxml-devel||2010-08-31|Stable was removed 2 years ago, doesn't make sense to keep -devel
 graphics/lphoto||2010-08-31|Has expired: broken
 mail/ngmp||2010-08-31|Has expired: does not compile and no longer supported by upstream
+multimedia/libdvdnav-mplayer||2010-09-02|Removed in favour of updated multimedia/libdvdnav
