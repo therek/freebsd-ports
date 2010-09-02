@@ -2,7 +2,7 @@
 # Date created:		2008-08-19
 # Whom:			Max Brazhnikov <makc@issp.ac.ru>
 #
-# $FreeBSD: ports/devel/kdebindings4/files/Makefile.kdebindings,v 1.6 2010/02/06 21:52:11 miwi Exp $
+# $FreeBSD$
 #
 
 MASTER_SITES=	${MASTER_SITE_KDE}
@@ -10,6 +10,7 @@ MASTER_SITE_SUBDIR=	${KDE4_BRANCH}/${PORTVERSION}/src
 PKGNAMEPREFIX?=	${${BINDLANG}_PKGNAMEPREFIX}
 PKGNAMESUFFIX?=	${${BINDLANG}_PKGNAMESUFFIX}
 DIST_SUBDIR=	KDE
+UNIQUENAME?=	${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}
 
 COMMENT?=	${${BINDLANG}_COMMENT}
 
