@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/xpaint/pkg-plist,v 1.8 2004/08/28 06:32:20 krion Exp $
+@comment $FreeBSD: ports/graphics/xpaint/pkg-plist,v 1.9 2010/07/16 03:31:49 miwi Exp $
 bin/imgmerge
 bin/pdfconcat
 bin/xpaint
@@ -90,6 +90,7 @@ lib/X11/app-defaults/XPaint_fr
 %%DATADIR%%/include/XPaint.ad.h
 %%DATADIR%%/include/Xpaint.h
 %%DATADIR%%/include/Xpaint3d.h
+%%DATADIR%%/include/bitmap.h
 %%DATADIR%%/include/color.h
 %%DATADIR%%/include/crc32.h
 %%DATADIR%%/include/graphic.h
