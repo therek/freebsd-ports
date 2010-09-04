@@ -12,8 +12,6 @@
 # X.Y.  To request a specific version omit the trailing + sign.  Use of
 # a Fortran compiler is declared by the USE_FORTRAN knob, not USE_GCC.
 #
-# As of 2010-06-06, USE_GCC=4.3+ is transparently rewritten to USE_GCC=4.4+.
-#
 # Examples:
 #   USE_GCC=	4.2+		# port requires GCC 4.2 or later.
 #   USE_GCC=	4.5			# port requires GCC 4.5.
@@ -32,7 +30,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.44 2010/06/11 21:06:18 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.45 2010/08/07 10:56:01 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -114,10 +112,6 @@ MAKE_ENV+=		F77="${F77}" FC="${FC}" FFLAGS="${FFLAGS}"
 
 
 .if defined(USE_GCC)
-
-.if ${USE_GCC} == "4.3+"
-USE_GCC=4.4+
-.endif
 
 # See if we can use a later version
 _USE_GCC:=	${USE_GCC:S/+//}
