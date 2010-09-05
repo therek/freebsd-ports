@@ -5,6 +5,12 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20100904
+  AFFECTS: net/netcat
+  AUTHOR: pgollucci@FreeBSD.org
+
+  Rename nc to netcat to prevent /usr/bin/nc shadowing /usr/local/bin/nc
+
 20100902:
   AFFECTS: users of KDE4
   AUTHOR: kde@FreeBSD.org
@@ -9550,4 +9556,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.962 2010/09/02 21:08:09 makc Exp $
+$FreeBSD: ports/UPDATING,v 1.963 2010/09/05 01:06:38 dougb Exp $
