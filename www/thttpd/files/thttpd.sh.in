@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/thttpd/files/thttpd.sh.in,v 1.3 2006/07/13 07:38:49 obrien Exp $
+# $FreeBSD: ports/www/thttpd/files/thttpd.sh.in,v 1.4 2010/03/27 00:15:18 dougb Exp $
 #
 
 # PROVIDE: thttpd
@@ -19,7 +19,6 @@ name=thttpd
 rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/thttpd
-required_files=%%PREFIX%%/etc/thttpd.conf
 
 thttpd_enable=${thttpd_enable:-"NO"}
 thttpd_flags=${thttpd_flags:-"-C %%PREFIX%%/etc/thttpd.conf"}
