@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.461 2010/08/24 21:14:06 ade Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.462 2010/08/31 06:55:35 dim Exp $
 #
 # FreeBSD Project Committers
 #
@@ -237,6 +237,7 @@
  38.836899,	-77.113810,	"pgollucci"			# Old Town, VA, USA
  38.882,	-77.171,	"trhodes"			# Falls Church, VA, USA
  39.128555,	-77.203029,	"   ,green"			# Gaithersburg, MD, USA
+ 35.653138,	-78.843137,	"swills"			# Holly Springs, NC, USA
  35.798,	-78.781,	"wxs"				# Cary, NC, USA
  35.791,	-78.781,	"marcus"			# Cary, NC, USA
  35.8072,	-78.7994,	"gallatin"			# Cary, NC, USA
