@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.43 2010/03/31 10:33:45 kwm Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.44 2010/03/31 10:40:26 kwm Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.43 2008/03/21 04:14:18 ahze Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -53,13 +53,13 @@ GST_SHLIB_VERSION=	1
 #
 # These are the current supported gstreamer-plugins modules
 #
-_USE_GSTREAMER10_ALL=	a52dec aalib annodex bz2 cairo cdaudio cdparanoia dts \
+_USE_GSTREAMER10_ALL=	a52dec aalib amrnb amrwbdec annodex bz2 cairo cdaudio cdparanoia dts \
 			dv dvd esound faac faad ffmpeg flac gconf gio gnomevfs \
 			gnonlin gsm hal jack jpeg ladspa lame \
 			libcaca libmms libpng libvisual mm mp3 mpeg2enc mpeg2dec \
 			musepack nas neon ogg pango pulse python sdl shout2 sidplay \
 			sndfile spc soundtouch soup speex taglib \
-			theora v4l2 vorbis wavpack x264 xvid
+			theora twolame v4l2 vorbis wavpack x264 xvid
 
 # other plugins
 OTHER_GSTREAMER_PLUGINS+=bad good ugly core yes ${_USE_GSTREAMER10_ALL} fluendo-mp3 mad
@@ -78,6 +78,10 @@ gconf_DEPENDS=	devel/gstreamer-plugins-gconf
 
 # Audio Plugins Section
 a52dec_DEPENDS=	audio/gstreamer-plugins-a52dec
+
+amrnb_DEPENDS=	audio/gstreamer-plugins-amrnb
+
+amrwbdec_DEPENDS=	audio/gstreamer-plugins-amrwbdec
 
 artsd_DEPENDS=	audio/gstreamer-plugins-artsd
 
@@ -149,6 +153,8 @@ spc_DEPENDS=	audio/gstreamer-plugins-spc
 speex_DEPENDS=	audio/gstreamer-plugins-speex
 
 taglib_DEPENDS=	audio/gstreamer-plugins-taglib
+
+twolame_DEPENDS=	audio/gstreamer-plugins-twolame
 
 vorbis_DEPENDS=	audio/gstreamer-plugins-vorbis
 
