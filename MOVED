@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2239 2010/09/07 13:57:06 garga Exp $
+# $FreeBSD: ports/MOVED,v 1.2240 2010/09/07 15:55:29 pgollucci Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4531,3 +4531,6 @@ portuguese/staroffice52||2010-09-04|Distfile(s) no longer available
 sysutils/linux-acu||2010-09-04|Distfile(s) no longer available
 lang/ficl-devel|lang/ficl|2010-09-07|Moved to lang/ficl since it's a stable version
 games/abridge||2010-09-07|Broken, abandoned upstream
+deskutils/linux-sunbird|deskutils/lightning|2010-09-07|Upstream development discontinued
+deskutils/sunbird|deskutils/lightning|2010-09-07|Upstream development discontinued
+deskutils/sunbird-i18n||2010-09-07|Upstream development discontinued
