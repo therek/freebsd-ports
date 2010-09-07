@@ -1,14 +1,15 @@
-@comment $FreeBSD: ports/devel/libnfc/pkg-plist,v 1.1 2010/02/01 21:18:04 romain Exp $
+@comment $FreeBSD: ports/devel/libnfc/pkg-plist,v 1.2 2010/02/22 13:23:59 romain Exp $
 bin/nfc-anticol
 bin/nfc-emulate
 bin/nfc-list
 bin/nfc-mfclassic
 bin/nfc-mfultralight
+bin/nfc-poll
 bin/nfc-relay
+bin/nfc-sam
 bin/nfcip-initiator
 bin/nfcip-target
-include/nfc/mifaretag.h
-include/nfc/mifareultag.h
+bin/pn53x-diagnose
 include/nfc/nfc-messages.h
 include/nfc/nfc-types.h
 include/nfc/nfc.h
