@@ -5,6 +5,15 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20100907
+  AFFECTS: sysutils/pecl-fileinfo
+  AUTHOR: ale@FreeBSD.org
+
+  If you are using php 5.3 (lang/php5) and fileinfo extension, you
+  should switch to sysutils/php5-fileinfo port:
+
+	portmaster -o sysutils/php5-fileinfo sysutils/pecl-fileinfo
+
 20100904
   AFFECTS: net/netcat
   AUTHOR: pgollucci@FreeBSD.org
@@ -9556,4 +9565,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.963 2010/09/05 01:06:38 dougb Exp $
+$FreeBSD: ports/UPDATING,v 1.964 2010/09/05 02:30:18 pgollucci Exp $
