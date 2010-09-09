@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/p5-Net-FreshBooks-API/pkg-plist,v 1.1 2010/01/04 22:56:48 miwi Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/FreshBooks/API/.packlist
 %%SITE_PERL%%/Net/FreshBooks/API.pm
 %%SITE_PERL%%/Net/FreshBooks/API/Base.pm
@@ -7,6 +7,7 @@
 %%SITE_PERL%%/Net/FreshBooks/API/InvoiceLine.pm
 %%SITE_PERL%%/Net/FreshBooks/API/Iterator.pm
 %%SITE_PERL%%/Net/FreshBooks/API/Links.pm
+%%SITE_PERL%%/Net/FreshBooks/API/OAuth.pm
 %%SITE_PERL%%/Net/FreshBooks/API/Payment.pm
 %%SITE_PERL%%/Net/FreshBooks/API/Recurring.pm
 @dirrmtry %%SITE_PERL%%/Net/FreshBooks/API
