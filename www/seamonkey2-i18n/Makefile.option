@@ -2,7 +2,7 @@
 # Date created:         30 Nov 2008
 # Whom:                 Koji Yokota <yokota@res.otaru-uc.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/seamonkey2-i18n/Makefile.option,v 1.1 2009/12/14 12:31:01 beat Exp $
 #
 
 OPTIONS=		LANG_BE "Byelorussian"          off \
@@ -14,6 +14,7 @@ OPTIONS=		LANG_BE "Byelorussian"          off \
 				LANG_DE "German"                on \
 				LANG_FR "French"                on \
 				LANG_HU "Hungarian"             off \
+				LANG_IT "Italian"               on \
 				LANG_LT "Lithuanian"            off \
 				LANG_NB "Norwegian"             off \
 				LANG_PL "Polish"                off \
