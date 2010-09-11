@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/p5-WWW-Curl/pkg-plist,v 1.4 2009/02/07 12:52:02 nivit Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/WWW/Curl.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/WWW/Curl/Easy.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/WWW/Curl/Form.pm
@@ -7,10 +7,6 @@
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/Curl/.packlist
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/Curl/Curl.bs
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/Curl/Curl.so
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/Curl/Easy/autosplit.ix
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/Curl/Share/autosplit.ix
-@dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/Curl/Easy
-@dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/Curl/Share
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW/Curl
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/WWW
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/WWW/Curl
