@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
 20100912
+  AFFECTS: ftp/curl
+  AUTHOR: roam@FreeBSD.org
+
+  With version 7.21.1, the cURL port is built with stricter compiler
+  checking by default (the -Werror flag is passed to the C compiler,
+  making it treat any warnings as fatal errors).  If you experience
+  problems building cURL, re-run "make config" in the ftp/curl
+  directory and disable the WERROR knob.
+
+20100912
   AFFECTS: www/tdiary-devel, japanese/tdiary-devel
   AUTHOR: tota@FreeBSD.org
 
@@ -9591,4 +9601,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.965 2010/09/07 14:30:02 ale Exp $
+$FreeBSD: ports/UPDATING,v 1.966 2010/09/12 06:26:30 tota Exp $
