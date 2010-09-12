@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/idled/files/idled.in,v 1.2 2009/07/15 16:56:06 dougb Exp $
+# $FreeBSD: ports/sysutils/doinkd/files/doinkd.in,v 1.3 2010/03/27 00:14:56 dougb Exp $
 #
 
 # PROVIDE: idled
