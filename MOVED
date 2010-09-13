@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2246 2010/09/11 12:32:24 wxs Exp $
+# $FreeBSD: ports/MOVED,v 1.2247 2010/09/12 03:08:43 tota Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4557,3 +4557,4 @@ print/cupsddk||2010-09-09|Now part of print/cups-base
 databases/mongodb-devel||2010-09-11|Older than databases/mongodb
 japanese/tdiary-devel||2010-09-12|Removed
 www/tdiary-devel||2010-09-12|Removed
+multimedia/playd2|multimedia/playd|2010-09-13|Has expired: Use multimedia/playd instead
