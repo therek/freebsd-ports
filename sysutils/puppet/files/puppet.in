@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/puppet/files/puppet.in,v 1.1 2010/08/04 17:06:24 lwhsu Exp $
 #
 
 # PROVIDE: puppet
@@ -20,7 +20,7 @@ load_rc_config "$name"
 
 : ${puppet_enable="NO"}
 : ${puppet_rundir="%%PUPPET_RUNDIR%%"}
-: ${puppet_flags=""}
+: ${puppet_flags="--rundir=${puppet_rundir}"}
 
 command_interpreter="%%PREFIX%%/bin/ruby18"
 command="%%PREFIX%%/bin/puppet"
