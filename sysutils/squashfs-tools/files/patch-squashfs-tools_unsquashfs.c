@@ -1,7 +1,7 @@
-$FreeBSD$
+$FreeBSD: ports/sysutils/squashfs-tools/files/patch-squashfs-tools_unsquashfs.c,v 1.1 2010/05/05 18:19:43 rene Exp $
 
---- squashfs-tools/unsquashfs.c.orig	2009-04-05 23:23:06.000000000 +0200
-+++ squashfs-tools/unsquashfs.c	2010-04-29 17:48:22.000000000 +0200
+--- unsquashfs.c	2009-04-05 23:23:06.000000000 +0200
++++ unsquashfs.c	2010-04-29 17:48:22.000000000 +0200
 @@ -26,6 +26,10 @@
  #include "squashfs_compat.h"
  #include "read_fs.h"
