@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2222 2010/09/15 15:37:24 decke Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2223 2010/09/17 19:31:59 delphij Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -76,7 +76,7 @@ Note:  Please add new entries to the beginning of this file.
       <url>http://xforce.iss.net/xforce/xfdb/61729</url>
     </references>
     <dates>
-      <discovery>2010-09-FIXME</discovery>
+      <discovery>2010-09-13</discovery>
       <entry>2010-09-17</entry>
     </dates>
   </vuln>
