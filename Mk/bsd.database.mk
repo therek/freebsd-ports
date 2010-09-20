@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.44 2010/04/26 13:42:05 mandree Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.45 2010/06/18 13:14:09 ale Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -174,6 +174,7 @@ PGSQL81_LIBVER=		4
 PGSQL82_LIBVER=		5
 PGSQL83_LIBVER=		5
 PGSQL84_LIBVER=		5
+PGSQL90_LIBVER=		5
 
 # Setting/finding PostgreSQL version we want.
 .if exists(${LOCALBASE}/bin/pg_config)
