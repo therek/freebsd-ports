@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.111 2010/09/06 21:10:50 kwm Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.112 2010/09/13 16:05:49 kwm Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.81 2010/03/16 19:33:10 mezz Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -391,7 +391,7 @@ gst_mpeg2dec_PLIST_FILES=	${GST_LIB_DIR}/libgstmpeg2dec.la \
 gst_mpeg2dec_DIST=	ugly
 
 # musepack
-gst_musepack_LIB_DEPENDS+=	mpcdec.5:${PORTSDIR}/audio/libmpcdec
+gst_musepack_LIB_DEPENDS+=	mpcdec.7:${PORTSDIR}/audio/musepack
 gst_musepack_PLIST_FILES=	${GST_LIB_DIR}/libgstmusepack.la \
 		${GST_LIB_DIR}/libgstmusepack.so
 gst_musepack_DIST=	bad
