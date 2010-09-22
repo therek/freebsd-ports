@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.6 2010/09/22 18:56:44 pgollucci Exp $
+# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.7 2010/09/22 18:58:18 pgollucci Exp $
 #
 # MAINTAINER=   pgollucci@FreeBSD.org
 # all committers make commit to this file without approval
@@ -27,7 +27,7 @@ local $SIG{__DIE__}  = \&Carp::confess;
 local $SIG{__WARN__} = \&Carp::cluck;
 
 ### version
-our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.6 2010/09/22 18:56:44 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
+our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.7 2010/09/22 18:58:18 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
 
 ### globals
 # cmdline options (standard) with defaults
@@ -142,7 +142,7 @@ sub mark {
               $i_maintainer > 0 ? $i_maintainer : print "Can't find location to insert", next;
 
     my @newlines = @lines[0..$loc];
-    push @newlines, "\n", "MAKE_JOBS_" . ($Safe ? "SAFE" : "UNSAFE")  . "=  yes\n";
+    push @newlines, "\n", "MAKE_JOBS_" . ($Safe ? "SAFE" : "UNSAFE")  . "=\tyes\n";
     push @newlines, @lines[$loc+1..$#lines];
 
     open my $mk_o, '>', $mfile or die "Can't open [$mfile] b/c [$!]";
