@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.5 2009/05/17 11:12:24 pgollucci Exp $
+# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.6 2010/09/22 18:56:44 pgollucci Exp $
 #
 # MAINTAINER=   pgollucci@FreeBSD.org
 # all committers make commit to this file without approval
@@ -27,7 +27,7 @@ local $SIG{__DIE__}  = \&Carp::confess;
 local $SIG{__WARN__} = \&Carp::cluck;
 
 ### version
-our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.5 2009/05/17 11:12:24 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
+our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.6 2010/09/22 18:56:44 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
 
 ### globals
 # cmdline options (standard) with defaults
@@ -41,7 +41,7 @@ my $NoExec    = 0;
 my $Maintainer = "$ENV{USER}\@FreeBSD.org";
 my $Ports = 0;
 my $Safe = 1;
-my $Index = 'INDEX-8';
+my $Index = 'INDEX-9';
 
 # internals
 my $PORTSDIR = $ENV{PORTSDIR} || '/usr/ports';
