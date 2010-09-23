@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.103 2010/09/08 15:27:32 amdmi3 Exp $
+# $FreeBSD: ports/GIDs,v 1.104 2010/09/22 05:21:28 pgollucci Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -106,6 +106,7 @@ frontbase:*:276:
 mrtg:*:279:
 hobbit:*:280:
 prelude:*:281:
+backuppc:*:300:
 _sphinx:*:312:
 dkfilter:*:325:
 wildfire:*:340:
