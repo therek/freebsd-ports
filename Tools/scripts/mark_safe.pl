@@ -1,9 +1,9 @@
 #!/usr/bin/perl -w
 
-# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.7 2010/09/22 18:58:18 pgollucci Exp $
+# $FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.8 2010/09/22 19:02:47 pgollucci Exp $
 #
 # MAINTAINER=   pgollucci@FreeBSD.org
-# all committers make commit to this file without approval
+# all committers may commit to this file without approval
 
 ## core
 use strict;
@@ -27,7 +27,7 @@ local $SIG{__DIE__}  = \&Carp::confess;
 local $SIG{__WARN__} = \&Carp::cluck;
 
 ### version
-our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.7 2010/09/22 18:58:18 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
+our $VERSION = do { my @r = (q$FreeBSD: ports/Tools/scripts/mark_safe.pl,v 1.8 2010/09/22 19:02:47 pgollucci Exp $ =~ /\d+/g); sprintf "%d." . "%02d" x $#r, @r };
 
 ### globals
 # cmdline options (standard) with defaults
