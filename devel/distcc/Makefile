@@ -8,9 +8,9 @@
 
 PORTNAME=	distcc
 PORTVERSION=	3.1
-PORTREVISION=	2
+PORTREVISION=	1
 CATEGORIES=	devel
-MASTER_SITES=	GOOGLE_CODE
+MASTER_SITES=	${MASTER_SITE_GOOGLE_CODE}
 
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Distribute compilation of C(++) code acrosss machines on a network
@@ -51,9 +51,8 @@ CONFIGURE_ARGS+=	--enable-rfc2553
 .if defined(WITH_COMPILER_LINKS)
 CCLINKDIR?=		libexec/distcc
 PLIST_DIRS=		${CCLINKDIR}
-GNU_COMPILERS=		34 42 43 44 45 46 -ooo
+GNU_COMPILERS=		34 42 43 44 -ooo
 DISTCC_COMPILERS=	cc c++ gcc g++ ${GNU_COMPILERS:S|^|gcc|} ${GNU_COMPILERS:S|^|g++|}
-DISTCC_COMPILERS+=	clang clang++ llvm-gcc llvm-c++ llvm-g++
 .if ${ARCH} == "i386"
 DISTCC_COMPILERS+=	icc icpc
 .endif
@@ -77,7 +76,7 @@ PLIST_SUB+=		WITH_GNOME=""
 PLIST_SUB+=		WITH_GNOME="@comment "
 .endif
 
-MAN1=		distcc.1 distccd.1
+MAN1=		distcc.1 distccd.1 distccmon-text.1
 DOC_FILES=	AUTHORS INSTALL NEWS README \
 		doc/protocol-1.txt doc/status-1.txt \
 		doc/protocol-2.txt doc/reporting-bugs.txt
