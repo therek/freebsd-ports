@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/www/p5-Catalyst-Plugin-AtomServer/pkg-plist,v 1.1 2008/08/22 14:28:39 lonerr Exp $
 %%SITE_PERL%%/Catalyst/Plugin/AtomServer.pm
 %%SITE_PERL%%/Catalyst/Plugin/Authentication/Credential/Atom.pm
 %%SITE_PERL%%/Catalyst/View/Atom/XML.pm

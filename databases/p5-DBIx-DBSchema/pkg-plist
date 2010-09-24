@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/databases/p5-DBIx-DBSchema/pkg-plist,v 1.7 2006/01/22 01:29:04 edwin Exp $
 %%SITE_PERL%%/DBIx/DBSchema.pm
 %%SITE_PERL%%/DBIx/DBSchema/ColGroup.pm
 %%SITE_PERL%%/DBIx/DBSchema/ColGroup/Index.pm

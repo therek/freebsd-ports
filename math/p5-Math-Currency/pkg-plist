@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/math/p5-Math-Currency/pkg-plist,v 1.6 2006/01/22 02:26:18 edwin Exp $
 %%SITE_PERL%%/Math/Currency.pm
 %%SITE_PERL%%/Math/Currency/de_DE.pm
 %%SITE_PERL%%/Math/Currency/en_GB.pm

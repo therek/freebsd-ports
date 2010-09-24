@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/astro/p5-Astro-SpaceTrack/pkg-plist,v 1.2 2007/12/25 22:52:49 gabor Exp $
 bin/SpaceTrack
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Astro/SpaceTrack/.packlist
 %%SITE_PERL%%/Astro/SpaceTrack.pm

@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-File-Find-Object/pkg-plist,v 1.4 2008/10/23 19:42:14 leeym Exp $
 %%SITE_PERL%%/File/Find/Object.pm
 %%SITE_PERL%%/File/Find/Object/Base.pm
 %%SITE_PERL%%/File/Find/Object/PathComp.pm

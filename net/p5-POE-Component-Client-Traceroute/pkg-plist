@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/net/p5-POE-Component-Client-Traceroute/pkg-plist,v 1.1 2006/08/10 02:04:43 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/POE/Component/Client/Traceroute/.packlist
 %%SITE_PERL%%/POE/Component/Client/Traceroute.pm
 %%PORTDOCS%%%%EXAMPLESDIR%%/poe-traceroute.pl

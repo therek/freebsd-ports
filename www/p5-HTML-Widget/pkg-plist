@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/www/p5-HTML-Widget/pkg-plist,v 1.10 2007/03/06 21:31:39 lbr Exp $                                                             
 %%SITE_PERL%%/HTML/Widget.pm
 %%SITE_PERL%%/HTML/Widget/Accessor.pm
 %%SITE_PERL%%/HTML/Widget/BlockContainer.pm

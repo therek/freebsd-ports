@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-Class-Measure/pkg-plist,v 1.1 2006/11/02 06:22:48 clsung Exp $
 %%SITE_PERL%%/Class/Measure.pm
 %%SITE_PERL%%/Class/Measure/Length.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/Measure/.packlist

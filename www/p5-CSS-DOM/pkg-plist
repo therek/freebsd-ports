@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/www/p5-CSS-DOM/pkg-plist,v 1.3 2009/08/18 08:50:23 tobez Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/CSS/DOM/.packlist
 %%SITE_PERL%%/CSS/DOM.pm
 %%SITE_PERL%%/CSS/DOM/Array.pm

@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-DateTime-Event-ICal/pkg-plist,v 1.2 2005/11/14 16:12:12 mat Exp $
 %%SITE_PERL%%/DateTime/Event/ICal.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/DateTime/Event/ICal/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/DateTime/Event/ICal

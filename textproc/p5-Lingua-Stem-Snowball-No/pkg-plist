@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/textproc/p5-Lingua-Stem-Snowball-No/pkg-plist,v 1.3 2007/06/20 14:04:25 mat Exp $
 bin/stemmer-no.pl
 %%SITE_PERL%%/Lingua/Stem/Snowball/No.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Lingua/Stem/Snowball/No/.packlist

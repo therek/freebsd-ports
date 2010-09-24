@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/www/p5-Catalyst-Plugin-Log-Dispatch/pkg-plist,v 1.1 2008/07/02 17:36:35 lonerr Exp $
 %%SITE_PERL%%/Catalyst/Plugin/Log/Dispatch.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Catalyst/Plugin/Log/Dispatch/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Catalyst/Plugin/Log/Dispatch

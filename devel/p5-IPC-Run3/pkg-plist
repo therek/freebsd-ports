@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-IPC-Run3/pkg-plist,v 1.3 2006/01/22 01:47:51 edwin Exp $
 %%SITE_PERL%%/IPC/Run3.pm
 %%SITE_PERL%%/IPC/Run3/ProfArrayBuffer.pm
 %%SITE_PERL%%/IPC/Run3/ProfLogReader.pm

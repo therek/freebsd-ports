@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/textproc/p5-XML-FeedPP/pkg-plist,v 1.2 2008/05/30 07:58:43 lonerr Exp $
 %%SITE_PERL%%/XML/FeedPP.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/XML-FeedPP/.packlist
 @dirrm    %%SITE_PERL%%/%%PERL_ARCH%%/auto/XML-FeedPP

@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/benchmarks/p5-Benchmark-Stopwatch/pkg-plist,v 1.1 2006/09/30 08:08:28 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Benchmark/Stopwatch/.packlist
 %%SITE_PERL%%/Benchmark/Stopwatch.pm
 %%SITE_PERL%%/Benchmark/example.pl

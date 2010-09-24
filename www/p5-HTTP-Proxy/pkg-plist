@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/www/p5-HTTP-Proxy/pkg-plist,v 1.6 2006/01/22 02:58:02 edwin Exp $
 %%SITE_PERL%%/HTTP/Proxy.pm
 %%SITE_PERL%%/HTTP/Proxy/BodyFilter.pm
 %%SITE_PERL%%/HTTP/Proxy/BodyFilter/complete.pm

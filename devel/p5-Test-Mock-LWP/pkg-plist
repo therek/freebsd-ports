@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-Test-Mock-LWP/pkg-plist,v 1.1 2009/03/14 13:37:53 miwi Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Test/Mock/LWP/.packlist
 %%SITE_PERL%%/Test/Mock/HTTP/Request.pm
 %%SITE_PERL%%/Test/Mock/HTTP/Response.pm

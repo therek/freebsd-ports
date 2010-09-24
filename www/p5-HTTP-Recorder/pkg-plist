@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/www/p5-HTTP-Recorder/pkg-plist,v 1.2 2005/11/22 13:14:30 mat Exp $
 %%SITE_PERL%%/HTTP/Recorder.pm
 %%SITE_PERL%%/HTTP/Recorder/Logger.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/HTTP/Recorder/.packlist

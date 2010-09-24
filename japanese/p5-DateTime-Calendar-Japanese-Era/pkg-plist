@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/japanese/p5-DateTime-Calendar-Japanese-Era/pkg-plist,v 1.2 2008/06/13 20:20:25 okazaki Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/DateTime/Calendar/Japanese/Era/.packlist
 %%SITE_PERL%%/auto/share/module/DateTime-Calendar-Japanese-Era/eras.yaml
 %%SITE_PERL%%/auto/share/module/DateTime-Calendar-Japanese-Era/south-eras.yaml

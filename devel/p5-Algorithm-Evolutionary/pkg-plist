@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-Algorithm-Evolutionary/pkg-plist,v 1.10 2010/01/27 11:44:15 wen Exp $
 bin/canonical-genetic-algorithm.pl
 bin/rectangle-coverage.pl
 bin/tide_bitstring.pl

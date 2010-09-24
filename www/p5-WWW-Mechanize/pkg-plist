@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/www/p5-WWW-Mechanize/pkg-plist,v 1.9 2005/02/25 16:52:06 mat Exp $
 bin/mech-dump
 %%SITE_PERL%%/WWW/Mechanize.pm
 %%SITE_PERL%%/WWW/Mechanize/Cookbook.pod

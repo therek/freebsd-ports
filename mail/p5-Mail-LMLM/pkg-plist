@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/mail/p5-Mail-LMLM/pkg-plist,v 1.1 2007/03/21 08:07:07 clsung Exp $
 %%DATADIR%%/COPYING
 %%EXAMPLESDIR%%/Iglu/Iglu/LMLM/Types/Hamakor.pm
 %%EXAMPLESDIR%%/Iglu/Iglu/LMLM/Types/Iglu.pm

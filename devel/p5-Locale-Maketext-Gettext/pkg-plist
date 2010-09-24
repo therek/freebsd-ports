@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-Locale-Maketext-Gettext/pkg-plist,v 1.3 2005/05/17 15:22:20 mat Exp $
 bin/maketext
 %%SITE_PERL%%/Locale/Maketext/Gettext.pm
 %%SITE_PERL%%/Locale/Maketext/Gettext/Functions.pm

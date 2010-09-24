@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/net/p5-IO-Socket-Multicast/pkg-plist,v 1.5 2006/08/22 09:37:59 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/IO/Socket/Multicast.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/IO/Socket/Multicast/.packlist
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/IO/Socket/Multicast/Multicast.bs

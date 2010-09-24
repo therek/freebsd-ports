@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/www/p5-CGI-Ex/pkg-plist,v 1.7 2008/03/31 11:57:42 mat Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/CGI/Ex/.packlist
 %%SITE_PERL%%/CGI/Ex.pm
 %%SITE_PERL%%/CGI/Ex/App.pm

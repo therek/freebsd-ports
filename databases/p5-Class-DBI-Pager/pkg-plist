@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/databases/p5-Class-DBI-Pager/pkg-plist,v 1.2 2005/11/15 10:02:25 mat Exp $
 %%SITE_PERL%%/Class/DBI/Pager.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/DBI/Pager/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/DBI/Pager

@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/net/p5-Net-OpenID-Consumer/pkg-plist,v 1.1 2007/05/29 01:55:38 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/OpenID/Consumer/.packlist
 %%SITE_PERL%%/Net/OpenID/Association.pm
 %%SITE_PERL%%/Net/OpenID/ClaimedIdentity.pm

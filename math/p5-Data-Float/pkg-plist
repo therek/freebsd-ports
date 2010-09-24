@@ -1,3 +1,2 @@
-@comment $FreeBSD: ports/math/p5-Data-Float/pkg-plist,v 1.1 2006/08/08 06:54:26 clsung Exp $
 %%SITE_PERL%%/Data/Float.pm
 @dirrmtry %%SITE_PERL%%/Data

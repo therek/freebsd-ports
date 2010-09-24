@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-Class-AlzaboWrapper/pkg-plist,v 1.2 2005/11/16 14:40:42 mat Exp $
 %%SITE_PERL%%/Class/AlzaboWrapper.pm
 %%SITE_PERL%%/Class/AlzaboWrapper/Cursor.pm
 @dirrm %%SITE_PERL%%/Class/AlzaboWrapper

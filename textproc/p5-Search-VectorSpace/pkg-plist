@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/textproc/p5-Search-VectorSpace/pkg-plist,v 1.1 2005/07/18 11:37:53 erwin Exp $
 %%SITE_PERL%%/Search/VectorSpace.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Search/VectorSpace/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Search/VectorSpace

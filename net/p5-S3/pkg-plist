@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/net/p5-S3/pkg-plist,v 1.1 2007/05/04 02:31:45 clsung Exp $
 %%SITE_PERL%%/S3.pm
 %%SITE_PERL%%/S3/AWSAuthConnection.pm
 %%SITE_PERL%%/S3/GetResponse.pm

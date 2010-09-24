@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/databases/p5-RRD-Simple/pkg-plist,v 1.3 2007/03/02 08:12:52 rafan Exp $
 %%SITE_PERL%%/RRD/Simple.pm
 %%SITE_PERL%%/RRD/Simple/Examples.pod
 @dirrmtry %%SITE_PERL%%/RRD/Simple

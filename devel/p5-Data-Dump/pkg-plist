@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-Data-Dump/pkg-plist,v 1.4 2009/02/12 15:59:10 mat Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Data/Dump/.packlist
 %%SITE_PERL%%/Data/Dump.pm
 %%SITE_PERL%%/Data/Dump/FilterContext.pm

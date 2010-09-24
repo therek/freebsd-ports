@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-DateTime-Set/pkg-plist,v 1.4 2005/02/21 16:58:37 mat Exp $
 %%SITE_PERL%%/DateTime/Set.pm
 %%SITE_PERL%%/DateTime/Span.pm
 %%SITE_PERL%%/DateTime/SpanSet.pm

@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/dns/p5-Net-DNS-TestNS/pkg-plist,v 1.1 2010/06/27 01:21:47 wen Exp $
 %%SITE_PERL%%/Net/DNS/TestNS.pm
 %%SITE_PERL%%/Net/DNS/TestNS/DTD.pm
 %%SITE_PERL%%/Net/DNS/TestNS/Nameserver.pm

@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/www/p5-PHP-Session/pkg-plist,v 1.4 2005/05/18 11:33:50 mat Exp $
 %%SITE_PERL%%/PHP/Session.pm
 %%SITE_PERL%%/PHP/Session/Serializer/PHP.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/PHP/Session/.packlist

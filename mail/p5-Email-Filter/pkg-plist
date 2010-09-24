@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/mail/p5-Email-Filter/pkg-plist,v 1.1 2003/12/13 00:42:15 sergei Exp $
 %%SITE_PERL%%/Email/Filter.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Email/Filter/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Email/Filter

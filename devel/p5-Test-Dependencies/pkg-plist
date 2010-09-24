@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-Test-Dependencies/pkg-plist,v 1.2 2006/07/20 03:39:39 clsung Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Test/Dependencies/.packlist
 %%SITE_PERL%%/Test/Dependencies.pm
 %%SITE_PERL%%/Test/Dependencies/Heavy.pm

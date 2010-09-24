@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/textproc/p5-PerlPoint-Package/pkg-plist,v 1.6 2006/01/22 02:54:26 edwin Exp $
 bin/perlpoint
 bin/pp2sdf
 %%SITE_PERL%%/PerlPoint/Anchors.pm

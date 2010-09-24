@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-Locale-Maketext-Lexicon/pkg-plist,v 1.9 2006/01/22 01:47:54 edwin Exp $
 bin/xgettext.pl
 %%SITE_PERL%%/Locale/Maketext/Extract.pm
 %%SITE_PERL%%/Locale/Maketext/Extract/Plugin/Base.pm

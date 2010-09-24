@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/converters/p5-Convert-BinHex/pkg-plist,v 1.1 2004/03/24 20:03:54 vanilla Exp $
 %%SITE_PERL%%/Convert/BinHex.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Convert/BinHex/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Convert/BinHex

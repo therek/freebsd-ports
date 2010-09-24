@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/textproc/p5-FormValidator-Lite/pkg-plist,v 1.1 2009/03/11 16:43:37 miwi Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/FormValidator/Lite/.packlist
 %%SITE_PERL%%/FormValidator/Lite/Constraint/File.pm
 %%SITE_PERL%%/FormValidator/Lite/Constraint/Japanese.pm

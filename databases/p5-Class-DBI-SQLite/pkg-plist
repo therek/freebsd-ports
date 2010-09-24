@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/databases/p5-Class-DBI-SQLite/pkg-plist,v 1.2 2005/03/18 16:18:01 mat Exp $
 %%SITE_PERL%%/Class/DBI/SQLite.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/DBI/SQLite/.packlist
 @dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Class/DBI/SQLite

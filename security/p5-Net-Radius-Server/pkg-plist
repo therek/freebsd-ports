@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/security/p5-Net-Radius-Server/pkg-plist,v 1.1 2009/09/17 15:55:53 pav Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Net/Radius/Server/.packlist
 %%SITE_PERL%%/Net/Radius/Server.pm
 %%SITE_PERL%%/Net/Radius/Server/Base.pm

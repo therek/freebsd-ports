@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/databases/p5-DBD-Pg/pkg-plist,v 1.9 2006/01/22 01:29:02 edwin Exp $
 %%SITE_PERL%%/%%PERL_ARCH%%/Bundle/DBD/Pg.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/DBD/Pg.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/DBD/Pg/.packlist

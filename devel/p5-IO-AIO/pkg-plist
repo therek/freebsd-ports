@@ -1,4 +1,3 @@
-@comment $FreeBSD: ports/devel/p5-IO-AIO/pkg-plist,v 1.2 2007/02/03 03:04:57 clsung Exp $
 bin/treescan
 %%SITE_PERL%%/%%PERL_ARCH%%/IO/AIO.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/IO/AIO/.packlist
