@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/p5-Algorithm-Evolutionary/pkg-plist,v 1.9 2009/09/13 16:45:59 tobez Exp $
+@comment $FreeBSD: ports/devel/p5-Algorithm-Evolutionary/pkg-plist,v 1.10 2010/01/27 11:44:15 wen Exp $
 bin/canonical-genetic-algorithm.pl
 bin/rectangle-coverage.pl
 bin/tide_bitstring.pl
@@ -81,4 +81,3 @@ bin/tide_float.pl
 @dirrmtry %%SITE_PERL%%/Algorithm
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Algorithm/Evolutionary
 @dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto/Algorithm
-@dirrmtry %%SITE_PERL%%/%%PERL_ARCH%%/auto
