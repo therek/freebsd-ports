@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2263 2010/09/22 04:44:36 pgollucci Exp $
+# $FreeBSD: ports/MOVED,v 1.2264 2010/09/23 00:40:48 ade Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4597,3 +4597,4 @@ audio/linux-nerodigitalaudio|audio/linux-neroaaccodec|2010-09-22|Project was ren
 devel/automake16||2010-09-22|Outdated, no longer required by any port
 devel/automake17||2010-09-22|Outdated, was not being used by any port
 devel/automake18||2010-09-22|Outdated, ports (2) migrated to automake19
+devel/automake15||2010-09-23|Outdated, ports migrated to automake19
