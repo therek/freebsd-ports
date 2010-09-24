@@ -5,6 +5,15 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20100924:
+  AFFECTS: users of x11/nvidia-driver
+  AUTHOR: makc@FreeBSD.org
+
+  nvidia-driver does not install vdpau library and headers anymore, they
+  are now provided by multimedia/libvdpau port. To avoid conflict, please
+  rebuild nvidia-driver port before upgrading your ports and before
+  installing multimedia/libvdpau.
+
 20100921:
   AFFECTS: users of p5-Compress-Zlib, p5-IO-Compress-*
   AUTHOR: mm@FreeBSD.org
@@ -9666,4 +9675,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.973 2010/09/20 09:52:19 roam Exp $
+$FreeBSD: ports/UPDATING,v 1.974 2010/09/21 08:46:15 mm Exp $
