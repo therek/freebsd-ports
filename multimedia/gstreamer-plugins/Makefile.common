@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.112 2010/09/13 16:05:49 kwm Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.113 2010/09/21 16:49:16 makc Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.81 2010/03/16 19:33:10 mezz Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -527,7 +527,7 @@ gst_gst_v4l2_GST_PLUGIN_DIR=sys/v4l2
 gst_gst_v4l2_DIST=	good
 
 # vdpau
-gst_vdpau_LIB_DEPENDS+=	vdpau.1:${PORTSDIR}/x11/nvidia-driver
+gst_vdpau_LIB_DEPENDS+=	vdpau.1:${PORTSDIR}/multimedia/libvdpau
 gst_vdpau_GST_PLUGIN_DIR=sys/vdpau
 gst_vdpau_PLIST_FILES=	${GST_INC_DIR}/gst/vdpau/gstvdp.h \
 			${GST_INC_DIR}/gst/vdpau/gstvdpbuffer.h \
