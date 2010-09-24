@@ -19,7 +19,7 @@
 # If your port needs a Fortran compiler, please specify that with the
 # USE_FORTRAN= knob.  Here is the list of options for that knob:
 #
-#   USE_FORTRAN=	yes		# use gfortran44 (lang/gcc44)
+#   USE_FORTRAN=	yes		# use gfortran45 (lang/gcc45)
 #   USE_FORTRAN=	g77		# use g77-34 (lang/gcc34; FreeBSD>=7)
 #							# or system f77 (/usr/bin/f77; FreeBSD<=6)
 #   USE_FORTRAN=	ifort	# use the Intel compiler (lang/ifc)
@@ -30,7 +30,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.45 2010/08/07 10:56:01 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.46 2010/09/04 17:08:27 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -74,9 +74,9 @@ _GCCVERSION_${v}_V=	${j}
 
 # The default case, with a current lang/gcc port.
 . if ${USE_FORTRAN} == yes
-_USE_GCC:=	4.4
-FC:=	gfortran44
-F77:=	gfortran44
+_USE_GCC:=	4.5
+FC:=	gfortran45
+F77:=	gfortran45
 
 # Intel Fortran compiler from lang/ifc.
 . elif ${USE_FORTRAN} == ifort
