@@ -1,10 +1,10 @@
-# $FreeBSD: ports/games/anki/Makefile.inc,v 1.7 2009/12/19 22:34:08 makc Exp $
+# $FreeBSD: ports/games/anki/Makefile.inc,v 1.8 2010/05/31 01:58:54 ade Exp $
 
 PORTNAME=	anki
-PORTVERSION=	0.9.9.8.5
-PORTREVISION=	1
+PORTVERSION=	1.0.1
+PORTREVISION?=	0
 CATEGORIES=	games
-MASTER_SITES=	http://ichi2.net/anki/download/files/
+MASTER_SITES=	${MASTER_SITE_GOOGLE_CODE}
 EXTRACT_SUFX=	.tgz
 
 USE_PYTHON=	yes
@@ -28,6 +28,12 @@ QT_COMPONENTS=	corelib gui
 PYDISTUTILS_PKGNAME=	ankiqt
 
 PORT_VERBS=	ankiqt
+DESKTOP_ENTRIES=	"${PORTNAME}" \
+		"${COMMENT}" \
+		"" \
+		"anki" \
+		"Education;Languages;Qt;" \
+		false
 .else
 BUILD_DEPENDS=	${PYNUMPY} \
 		py*-pysqlite>=0:${PORTSDIR}/databases/py-pysqlite23 \
