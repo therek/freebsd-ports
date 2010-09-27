@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.113 2010/09/21 16:49:16 makc Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.114 2010/09/24 19:10:02 makc Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.81 2010/03/16 19:33:10 mezz Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -543,9 +543,10 @@ gst_vdpau_PLIST_FILES=	${GST_INC_DIR}/gst/vdpau/gstvdp.h \
 			${GST_INC_DIR}/gst/vdpau/gstvdpvideosrcpad.h \
 			${GST_LIB_DIR}/libgstvdpau.la \
 			${GST_LIB_DIR}/libgstvdpau.so \
-			lib/libgstvdp-0.10.la \
-			lib/libgstvdp-0.10.so \
-			lib/libgstvdp-0.10.so.0
+			lib/libgstvdp-${VERSION}.la \
+			lib/libgstvdp-${VERSION}.so \
+			lib/libgstvdp-${VERSION}.so.0
+gst_vdpau_PLIST_DIRS=	${GST_INC_DIR}/gst/vdpau
 gst_vdpau_DIST=		bad
 
 # vorbis
