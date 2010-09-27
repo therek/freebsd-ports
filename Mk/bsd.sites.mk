@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.501 2010/09/19 16:01:10 lwhsu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.502 2010/09/20 13:46:46 girgen Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -120,7 +120,6 @@ MASTER_SITE_BERLIOS+=	\
 
 .if !defined(IGNORE_MASTER_SITE_CENKES)
 MASTER_SITE_CENKES+=	\
-	http://bsd.cenkes.org/%SUBDIR%/ \
 	http://bsd2.cenkes.org/%SUBDIR%/ \
 	http://bsd3.cenkes.org/%SUBDIR%/
 .endif
