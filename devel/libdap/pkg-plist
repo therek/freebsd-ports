@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/libdap/pkg-plist,v 1.4 2010/06/19 19:09:41 sylvio Exp $
 bin/dap-config
 bin/dap-config-pkgconfig
 bin/getdap
@@ -84,7 +84,7 @@ include/libdap/xdr-datatypes.h
 lib/libdap.a
 lib/libdap.la
 lib/libdap.so
-lib/libdap.so.12
+lib/libdap.so.13
 lib/libdapclient.a
 lib/libdapclient.la
 lib/libdapclient.so
