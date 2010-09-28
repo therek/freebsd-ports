@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.licenses.mk,v 1.2 2010/05/26 02:20:27 alepulver Exp $
+# $FreeBSD: ports/Mk/bsd.licenses.mk,v 1.3 2010/08/20 12:15:02 pav Exp $
 #
 # bsd.licenses.mk - License auditing framework.
 #
@@ -723,11 +723,11 @@ PLIST_FILES+=	${_LICENSE_DIR_REL}/${_LICENSE_CATALOG:T} \
 				${_LICENSE_DIR_REL}/${_LICENSE_REPORT:T}
 
 .if ${_LICENSE_COMB} == "single"
-PLIST_FILES+=	${_LICENSE_DIR_REL}/${_LICENSE_FILE:T}
+PLIST_FILES+=	${_LICENSE_DIR_REL}/${_LICENSE}
 .else
 .	for lic in ${_LICENSE}
 .		if defined(_LICENSE_FILE_${lic})
-PLIST_FILES+=	${_LICENSE_DIR_REL}/${_LICENSE_FILE_${lic}:T}
+PLIST_FILES+=	${_LICENSE_DIR_REL}/${lic}
 .		endif
 .	endfor
 .endif
@@ -737,10 +737,10 @@ install-license:
 	@${INSTALL_DATA} ${_LICENSE_CATALOG_TMP} ${_LICENSE_CATALOG}
 	@${INSTALL_DATA} ${_LICENSE_REPORT_TMP} ${_LICENSE_REPORT}
 .if ${_LICENSE_COMB} == "single"
-	@${INSTALL_DATA} ${_LICENSE_FILE} ${_LICENSE_DIR}
+	@${INSTALL_DATA} ${_LICENSE_FILE} ${_LICENSE_DIR}/${_LICENSE}
 .else
 .	for lic in ${_LICENSE}
-	@${INSTALL_DATA} ${_LICENSE_FILE_${lic}} ${_LICENSE_DIR}
+	@${INSTALL_DATA} ${_LICENSE_FILE_${lic}} ${_LICENSE_DIR}/${lic}
 .	endfor
 .endif
 # XXX @dirrmtry entry must be here (no way to do with PLIST_* vars)
