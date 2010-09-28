@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/phpvirtualbox/pkg-plist,v 1.1 2010/07/27 08:23:28 decke Exp $
 @unexec if cmp -s %D/%%WWWDIR%%/config.php.sample %D/%%WWWDIR%%/config.php; then rm -f %D/%%WWWDIR%%/config.php; fi
 %%WWWDIR%%/config.php.sample
 @exec if [ ! -f %D/%%WWWDIR%%/config.php ]; then cp -p %D/%%WWWDIR%%/config.php.sample %D/%%WWWDIR%%/config.php; fi
@@ -481,7 +481,9 @@
 %%WWWDIR%%/js/phpvirtualbox.js
 %%WWWDIR%%/js/utils.js
 %%WWWDIR%%/js/vboxweb.js
+%%WWWDIR%%/languages/de_de.php
 %%WWWDIR%%/languages/en_us.php
+%%WWWDIR%%/languages/fr_fr.php
 %%WWWDIR%%/lib/ajax.php
 %%WWWDIR%%/lib/cache.php
 %%WWWDIR%%/lib/jqueryFileTree.php
