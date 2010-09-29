@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/doinkd/files/doinkd.in,v 1.6 2010/09/29 04:33:24 cy Exp $
+# $FreeBSD: ports/sysutils/doinkd/files/doinkd.in,v 1.7 2010/09/29 04:35:17 cy Exp $
 #
 
 # PROVIDE: idled
@@ -23,7 +23,7 @@ name=doinkd
 rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/doinkd
-required_files=%%PREFIX%%/etc/doinkd.cf
+required_files=%%PREFIX%%/etc/doinkd/doinkd.cf
 
 # set defaults
 
