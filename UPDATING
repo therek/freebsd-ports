@@ -5,6 +5,17 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20100929:
+  AFFECTS: users of sysutils/zfsnap
+  AUTHOR: Aldis Berjoza <aldis@bsdroot.lv>
+
+  Since timestamp format changed you need to use -o option with -d
+  option in order to be able to delete old snapshots. Note however that
+  you don't need -o when creating new snapshots, unless you want to keep
+  using the old timestamp format.
+
+  See http://wiki.bsdroot.lv/zfsnap for more info.
+
 20100927:
   AFFECTS: users of mail/postfix-current
   AUTHOR: ohauer@FreeBSD.org
@@ -9698,4 +9709,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.975 2010/09/24 19:13:09 makc Exp $
+$FreeBSD: ports/UPDATING,v 1.976 2010/09/27 21:47:28 ohauer Exp $
