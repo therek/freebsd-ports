@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/japanese/font-ipaex/pkg-plist,v 1.1 2010/03/02 04:58:08 hrs Exp $
 %%DATADIR%%/ipaexg.otf
 %%DATADIR%%/ipaexm.otf
 @dirrm %%DATADIR%%
@@ -8,10 +8,8 @@
 @dirrmtry %%LOCAL_FONTSDIR%%
 etc/fonts/conf.avail/20-unhint-ipaex.conf
 etc/fonts/conf.avail/62-fonts-ipaex.conf
-@exec ln -s -f ../conf.avail/20-unhint-ipaex.conf %D/etc/fonts/conf.d/20-unhint-ipaex.conf
-@exec ln -s -f ../conf.avail/62-fonts-ipaex.conf %D/etc/fonts/conf.d/62-fonts-ipaex.conf
-@unexec rm -f %D/etc/fonts/conf.d/20-unhint-ipaex.conf
-@unexec rm -f %D/etc/fonts/conf.d/62-fonts-ipaex.conf
+etc/fonts/conf.d/20-unhint-ipaex.conf
+etc/fonts/conf.d/62-fonts-ipaex.conf
 %%X_FONTSDIR%%/OTF/ipaexg.otf
 %%X_FONTSDIR%%/OTF/ipaexm.otf
 @exec %%LOCALBASE%%/bin/fc-cache -s -f -v %D/%%X_FONTSDIR%%/OTF || true
