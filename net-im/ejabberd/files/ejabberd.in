@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD: ports/net-im/ejabberd/files/ejabberd.in,v 1.4 2010/02/05 18:48:47 uqs Exp $
+# $FreeBSD: ports/net-im/ejabberd/files/ejabberd.in,v 1.5 2010/03/27 00:14:13 dougb Exp $
 
 # PROVIDE: ejabberd
 # REQUIRE: DAEMON
@@ -49,7 +49,7 @@ ejabberd_checkstatus()
 
 ejabberd_start()
 {
-    check_startmsgs && echo "Starting $name."
+    echo "Starting $name."
     su $EJABBERDUSER -c "$EJABBERDCTL --node $ejabberd_node start"
 }
 
