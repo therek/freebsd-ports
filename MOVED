@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2267 2010/09/28 11:46:33 garga Exp $
+# $FreeBSD: ports/MOVED,v 1.2268 2010/10/01 13:45:45 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4608,3 +4608,5 @@ net-p2p/mutella||2010-10-01|Has expired: No longer under active development
 www/xpi-hit-a-hint||2010-10-01|Has expired: Development has been ceased and not compatible with Firefox > 2.
 www/xpi-preferential||2010-10-01|Has expired: Development has been ceased and not compatible with Firefox > 2.
 www/xpi-statusbarclock||2010-10-01|Has expired: Development has been ceased and not compatible with Firefox > 2.
+devel/cego-base|devel/lfc|2010-10-02|Project was renamed
+devel/cego-xml|devel/lfcxml|2010-10-02|Project was renamed
