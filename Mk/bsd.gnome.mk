@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.159 2010/05/10 21:17:51 kwm Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.160 2010/05/11 08:38:08 kwm Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.490 2010/03/14 18:13:44 marcus Exp $
 #
@@ -708,6 +708,11 @@ ltasneededhack_PRE_PATCH=	if [ -f ${WRKDIR}/gnome-libtool ]; then \
 									/^archive_expsym_cmds=/s/-shared/-shared -Wl,--as-needed/' \
 									${WRKDIR}/gnome-libtool; \
 							fi
+
+# Set USE_CSTD for all ports that depend on glib12
+.if defined(_USE_GNOME) && !empty(_USE_GNOME:Mglib12)
+USE_CSTD=	gnu89
+.endif
 
 # Then traverse through all components, check which of them
 # exist in ${_USE_GNOME} and set variables accordingly
