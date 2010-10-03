@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/cad/pcb/pkg-plist,v 1.22 2010/05/20 20:50:03 hrs Exp $
+@comment $FreeBSD: ports/cad/pcb/pkg-plist,v 1.23 2010/09/30 19:02:30 hrs Exp $
 bin/MergePCBPS
 bin/Merge_dimPCBPS
 bin/pcb
@@ -50,6 +50,9 @@ share/mimelnk/application/x-pcb-layout.desktop
 share/mimelnk/application/x-pcb-netlist.desktop
 @dirrmtry share/mimelnk/application
 @dirrmtry share/mimelnk
+share/gEDA/scheme/gnet-pcbfwd.scm
+@dirrmtry share/gEDA/scheme
+@dirrmtry share/gEDA
 %%DATADIR%%/default_font
 %%DATADIR%%/gpcb-menu.res
 %%DATADIR%%/pcb-menu.res
