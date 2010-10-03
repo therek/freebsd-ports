@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.105 2010/09/23 03:44:32 pgollucci Exp $
+# $FreeBSD: ports/GIDs,v 1.106 2010/10/03 07:42:20 bf Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -140,6 +140,7 @@ pulse-access:*:564:
 _xsi:*:600:
 freeswitch:*:610:
 monkeysphere:*:641:
+aox:*:666:
 bnetd:*:700:
 bopm:*:717:
 openxpki:*:777:
