@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2269 2010/10/01 23:14:11 makc Exp $
+# $FreeBSD: ports/MOVED,v 1.2270 2010/10/02 07:17:50 decke Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4611,3 +4611,4 @@ www/xpi-statusbarclock||2010-10-01|Has expired: Development has been ceased and 
 devel/cego-base|devel/lfc|2010-10-02|Project was renamed
 devel/cego-xml|devel/lfcxml|2010-10-02|Project was renamed
 www/p5-WWW-Pastebin-RafbNet-Create||2010-10-02|http://rafb.net service is dead
+devel/maven||2010-10-03|Has expired: Development has been ceased, superseded by devel/maven2.
