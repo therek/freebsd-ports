@@ -5,6 +5,16 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20101003:
+  AFFECTS: users of net-mgmt/kismet
+  AUTHOR: bf@FreeBSD.org
+
+  This update includes major changes in how Kismet works and is configured.
+  Clients, servers, drones, and configuration files must be updated to work
+  with the new version.  Map support has not yet been added.
+
+  See the kismet README for details.
+
 20100929:
   AFFECTS: users of sysutils/zfsnap
   AUTHOR: Aldis Berjoza <aldis@bsdroot.lv>
@@ -9709,4 +9719,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.976 2010/09/27 21:47:28 ohauer Exp $
+$FreeBSD: ports/UPDATING,v 1.977 2010/09/29 13:13:38 decke Exp $
