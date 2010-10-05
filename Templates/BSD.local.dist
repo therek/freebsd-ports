@@ -1,4 +1,4 @@
-# $FreeBSD: src/etc/mtree/BSD.local.dist,v 1.125 2006/11/12 12:02:34 ache Exp $
+# $FreeBSD: ports/Templates/BSD.local.dist,v 1.1 2007/05/19 21:55:00 flz Exp $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -8,6 +8,8 @@
     bin
     ..
     etc
+        man.d
+        ..
         pam.d
         ..
         rc.d
