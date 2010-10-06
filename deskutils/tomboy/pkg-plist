@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/deskutils/tomboy/pkg-plist,v 1.20 2010/06/30 12:55:09 romain Exp $
+@comment $FreeBSD: ports/deskutils/tomboy/pkg-plist,v 1.21 2010/09/30 17:58:41 romain Exp $
 bin/tomboy
+%%APPLET%%bin/tomboy-panel
 lib/tomboy/Tomboy.exe
 lib/tomboy/Tomboy.exe.config
 lib/tomboy/Tomboy.exe.mdb
@@ -36,6 +37,7 @@ lib/tomboy/addins/WebSyncServiceAddin.dll
 lib/tomboy/addins/WebSyncServiceAddin.dll.mdb
 lib/tomboy/libtomboy.la
 lib/tomboy/libtomboy.so
+%%APPLET%%libdata/bonobo/servers/GNOME_TomboyApplet.server
 libdata/pkgconfig/tomboy-addins.pc
 share/applications/tomboy.desktop
 share/dbus-1/services/org.gnome.Tomboy.service
@@ -1004,5 +1006,7 @@ share/mime/packages/tomboy.xml
 @dirrm share/gnome/help/tomboy/C/figures
 @dirrm share/gnome/help/tomboy/C
 @dirrm share/gnome/help/tomboy
+%%APPLET%%@dirrmtry libdata/bonobo/servers
+%%APPLET%%@dirrmtry libdata/bonobo
 @dirrmtry lib/tomboy/addins
 @dirrmtry lib/tomboy
