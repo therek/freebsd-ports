@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/games/inform7/files/i7.sh.in,v 1.1 2010/10/06 05:16:46 az Exp $
 
 #
 #  Copyright (c) 2010 Andy Kosela <akosela@andykosela.com>
@@ -34,7 +34,7 @@ rules=%%DATADIR%%/Extensions
 main()
 {
 	mkdir -p $pkg.inform/Build $pkg.inform/Source $pkg.inform/Index
-	cp $pkg.ni $pkg.inform/Source
+	cp $pkg.ni $pkg.inform/Source/story.ni
 	$ni --release --rules $rules --extension=$zsuf --package $pkg.inform
 	mv "$pkg.inform/Build/Debug log.txt" debug.log
 	if [ -s $pkg.inform/Build/auto.inf ]; then
