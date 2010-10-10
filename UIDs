@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.121 2010/09/23 03:44:32 pgollucci Exp $
+# $FreeBSD: ports/UIDs,v 1.122 2010/10/03 13:24:46 ashish Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53::0:0:Bind Sandbox:/:/usr/sbin/nologin
@@ -123,6 +123,7 @@ _pma:*:336:80::0:0:phpMyAdmin Owner:/nonexistent:/usr/sbin/nologin
 wildfire:*:340:340::0:0:Wildfire Daemon:/nonexistent:/usr/sbin/nologin
 stunnel:*:341:341::0:0:Stunnel Daemon:/nonexistent:/usr/sbin/nologin
 openfire:*:342:342::0:0:Openfire IM Daemon:/nonexistent:/usr/sbin/nologin
+_sabnzbd:*:350:350::0:0:sabnzb Daemon:/nonexistent:/usr/sbin/nologin
 _iodined:*:353:353::0:0:Iodine Daemon:/nonexistent:/usr/sbin/nologin
 httptunnel:*:361:361::0:0:httptunnel Daemon:/nonexistent:/usr/sbin/nologin
 ldap:*:389:389::0:0:OpenLDAP Server:/nonexistent:/usr/sbin/nologin

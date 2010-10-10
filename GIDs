@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.106 2010/10/03 07:42:20 bf Exp $
+# $FreeBSD: ports/GIDs,v 1.107 2010/10/03 13:24:46 ashish Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -113,6 +113,7 @@ dkfilter:*:325:
 wildfire:*:340:
 stunnel:*:341:
 openfire:*:342:
+_sabnzbd:*:350:
 _iodined:*:353:
 httptunnel:*:361:
 ldap:*:389:
