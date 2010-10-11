@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.199 2010/09/15 18:33:53 ade Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.200 2010/09/20 01:28:35 stas Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -198,17 +198,20 @@ RUBY19=			"@comment "
 #
 # Ruby 1.9
 #
-RUBY_RELVERSION=	1.9.1
-RUBY_PORTREVISION=	1
+RUBY_RELVERSION=	1.9.2
+RUBY_PORTREVISION=	0
 RUBY_PORTEPOCH=		1
-RUBY_PATCHLEVEL=	430
+RUBY_PATCHLEVEL=	0
 
 RUBY_VERSION?=		${RUBY_RELVERSION}.${RUBY_PATCHLEVEL}
 RUBY_DISTVERSION?=	${RUBY_RELVERSION}-p${RUBY_PATCHLEVEL}
 
 RUBY_WRKSRC=		${WRKDIR}/ruby-${RUBY_DISTVERSION}
 
-RUBY_CONFIGURE_ARGS+=	--with-rubyhdrdir="${PREFIX}/include/ruby-1.9/"
+RUBY_CONFIGURE_ARGS+=	--with-rubyhdrdir="${PREFIX}/include/ruby-1.9/" \
+			--with-rubylibprefix="${PREFIX}/lib/ruby" \
+			--docdir="${RUBY_DOCDIR}" \
+			--with-soname=ruby19
 
 #
 # PLIST_SUB helpers
