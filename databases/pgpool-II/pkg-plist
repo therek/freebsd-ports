@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/pgpool-II/pkg-plist,v 1.9 2008/12/31 15:10:49 kuriyama Exp $
+@comment $FreeBSD: ports/databases/pgpool-II/pkg-plist,v 1.10 2009/12/20 14:23:38 kuriyama Exp $
 bin/pcp_attach_node
 bin/pcp_detach_node
 bin/pcp_node_count
@@ -14,6 +14,7 @@ etc/pcp.conf.sample
 etc/pgpool.conf.sample
 etc/pgpool.conf.sample-master-slave
 etc/pgpool.conf.sample-replication
+etc/pgpool.conf.sample-stream
 etc/pool_hba.conf.sample
 include/pcp.h
 include/pool_type.h
