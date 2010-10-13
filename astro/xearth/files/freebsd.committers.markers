@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.469 2010/09/30 03:26:36 miwi Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.470 2010/09/30 17:56:14 romain Exp $
 #
 # FreeBSD Project Committers
 #
@@ -203,6 +203,7 @@
  53.955666,	-1.072605,	"gavin"				# York, United Kingdom
  52.635,	-1.135,		"hmp"				# Leicester, East Midlands, UK
  48.10927,	-1.61104,	"jadawin"			# Cesson-Sevigne, France
+ 57.114807,	-2.179896,	"brucec"			# Aberdeen, United Kingdom
  42.8474,	-2.66976,	"carvay"			# Araba, Vitoria-Gasteiz, Spain
  51.49,		-3.16,		"ceri"				# Cardiff, UK
  53.20,		-6.15,		"dwmalone"	align=left	# Dublin, Ireland
