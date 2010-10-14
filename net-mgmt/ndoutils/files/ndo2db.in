@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/ndoutils/files/ndo2db.in,v 1.2 2008/12/25 14:42:24 pgollucci Exp $
+# $FreeBSD: ports/net-mgmt/ndoutils/files/ndo2db.in,v 1.3 2010/03/27 00:14:23 dougb Exp $
 #
 # PROVIDE: ndo2db
 # REQUIRE: DAEMON nagios
@@ -22,7 +22,9 @@ rcvar=${name}_enable
 
 command="%%PREFIX%%/bin/ndo2db-3x"
 required_files="${ndo2db_configfile}"
-command_args="-c ${ndo2db_configfile}"
 
 load_rc_config $name
+
+command_args="-c ${ndo2db_configfile}"
+
 run_rc_command "$1"
