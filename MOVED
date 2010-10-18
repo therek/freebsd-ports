@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2281 2010/10/16 11:44:42 ade Exp $
+# $FreeBSD: ports/MOVED,v 1.2282 2010/10/18 10:31:53 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4640,3 +4640,4 @@ devel/autoconf267|devel/autoconf268|2010-10-16|Bump
 net/samba3||2010-10-18|Has expired: Unsupported by the upstream. Please, consider to upgrade.
 net/samba32||2010-10-18|Has expired: Unsupported by the upstream. Please, consider to upgrade.
 net/samba33||2010-10-18|Has expired: Unsupported by the upstream. Please, consider to upgrade.
+japanese/samba3||2010-10-18|Has expired: Unsupported by the upstream. Please, consider to upgrade.
