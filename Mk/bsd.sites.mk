@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.507 2010/10/12 17:07:00 ehaupt Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.508 2010/10/13 18:45:17 ehaupt Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1007,13 +1007,9 @@ MASTER_SITE_QMAIL+= \
 	http://qmail.mirrors.summersault.com/%SUBDIR%/ \
 	http://qmail.cdsinet.net/%SUBDIR%/ \
 	http://qmail.glasswings.com.au/%SUBDIR%/ \
-	http://qmail.cbn.net.id/%SUBDIR%/ \
-	http://qmail.manic.co.kr/%SUBDIR%/ \
 	http://qmail.psshee.com/%SUBDIR%/ \
-	http://mirrors.kangaroot.net/qmail/%SUBDIR%/ \
 	http://mirrors.sunsite.dk/qmailwww/%SUBDIR%/ \
 	http://www.agria.hu/qmail/%SUBDIR%/ \
-	http://qmail.hu/%SUBDIR%/ \
 	http://qmail.rhnet.is/%SUBDIR%/ \
 	http://mirrors.dataloss.nl/www.qmail.org/%SUBDIR%/ \
 	http://www.math.ntnu.no/mirror/www.qmail.org/%SUBDIR%/ \
@@ -1022,8 +1018,6 @@ MASTER_SITE_QMAIL+= \
 	http://qmail.omnis.ch/%SUBDIR%/ \
 	http://qmail.asylog.net/%SUBDIR%/ \
 	http://qmail.blueyonder.co.uk/%SUBDIR%/ \
-	http://qmail.usp.br/%SUBDIR%/ \
-	http://madhaus.utcs.utoronto.ca/qmail/%SUBDIR%/ \
 	http://www.qmail.org/%SUBDIR%/
 .endif
 
