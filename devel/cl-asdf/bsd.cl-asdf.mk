@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/cl-asdf/bsd.cl-asdf.mk,v 1.3 2010/01/20 12:40:08 olgeni Exp $
+# $FreeBSD: ports/devel/cl-asdf/bsd.cl-asdf.mk,v 1.4 2010/01/20 17:30:37 olgeni Exp $
 #
 # bsd.cl-asdf.mk - Common Lisp related macros
 #
@@ -116,7 +116,7 @@ post-install:
 	@cd ${WRKSRC} && ${FIND} * -type f \
 		| ${SORT} \
 		| ${AWK} '{ print "${CL_LIBDIR_REL}/${PORTNAME}/${FASL_DIR_REL}/" $$1 }' \
-		> ${TMPPLIST}
+		>> ${TMPPLIST}
 	@cd ${WRKSRC} && ${FIND} * -type d \
 		| ${SORT} -r \
 		| ${AWK} '{ print "@dirrm ${CL_LIBDIR_REL}/${PORTNAME}/${FASL_DIR_REL}/" $$1 }' \
