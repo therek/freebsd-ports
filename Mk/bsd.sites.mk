@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.511 2010/10/20 03:15:28 pgollucci Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.512 2010/10/21 15:24:24 ehaupt Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1412,7 +1412,6 @@ MASTER_SITE_XORG+= \
 MASTER_SITE_KERNEL_ORG+= \
 	http://kernel.org/pub/%SUBDIR%/ \
 	http://www.us.kernel.org/pub/%SUBDIR%/ \
-	http://www.uk.kernel.org/pub/%SUBDIR%/ \
 	http://www.no.kernel.org/pub/%SUBDIR%/ \
 	http://www.de.kernel.org/pub/%SUBDIR%/ \
 	http://www.it.kernel.org/pub/%SUBDIR%/ \
