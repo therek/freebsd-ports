@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.513 2010/10/22 16:57:31 wxs Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.514 2010/10/23 20:23:01 thierry Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -612,10 +612,8 @@ MASTER_SITE_ISC+=	\
 	ftp://ftp.dti.ad.jp/pub/net/isc/%SUBDIR%/ \
 	ftp://ftp.u-aizu.ac.jp/pub/net/isc/%SUBDIR%/ \
 	ftp://ftp.task.gda.pl/mirror/ftp.isc.org/isc/%SUBDIR%/ \
-	ftp://ftp.chl.chalmers.se/pub/isc/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/network/isc/%SUBDIR%/ \
 	ftp://ftp.mirrorservice.org/sites/ftp.isc.org/isc/%SUBDIR%/ \
-	ftp://ftp.epix.net/pub/isc/%SUBDIR%/ \
 	ftp://ftp.nominum.com/pub/isc/%SUBDIR%/ \
 	ftp://ftp.ripe.net/mirrors/sites/ftp.isc.org/isc/%SUBDIR%/ \
 	ftp://ftp.ntua.gr/pub/net/isc/isc/%SUBDIR%/ \
