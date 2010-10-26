@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/tomcat7/files/tomcat7.in,v 1.1 2010/08/24 13:26:49 ale Exp $
 #
 
 # PROVIDE: tomcat7
@@ -136,19 +136,27 @@ tomcat_stop() {
 tomcat_status() {
 	rc_pid=$(tomcat_check_pidfile $pidfile)
 
-	if [ -z "$rc_pid" ]; then
-		[ -n "$rc_fast" ] && return 0
-		echo "${name} not running? (check $pidfile)."
+	if [ -n "$rc_pid" ]; then
+		echo "${name} is running as pid $rc_pid."
+	else
+		echo "${name} is not running."
 		return 1
 	fi
 }
 
 tomcat_poll() {
+	rc_pid=$(tomcat_check_pidfile $pidfile)
+
+	_prefix=
 	while (true) ; do
-		rc_pid=$(tomcat_check_pidfile $pidfile)
 		[ -z "$rc_pid" ] && break
+		echo -n ${_prefix:-"Waiting for PIDS: "}$rc_pid
+		_prefix=", "
 		sleep 2
 	done
+	if [ -n "$_prefix" ]; then
+	echo "."
+	fi
 }
 
 tomcat_check_pidfile() {
