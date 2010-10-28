@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/nusoap/pkg-plist,v 1.1 2007/09/17 01:37:28 clsung Exp $
 %%DATADIR%%/changelog
 %%DATADIR%%/class.nusoap_base.php
 %%DATADIR%%/class.soap_fault.php
@@ -26,6 +26,7 @@
 %%EXAMPLESDIR%%/wsdlclient12.php
 %%EXAMPLESDIR%%/wsdlclient13.php
 %%EXAMPLESDIR%%/wsdlclient14.php
+%%EXAMPLESDIR%%/wsdlclient15.php
 %%EXAMPLESDIR%%/wsdlclient2.php
 %%EXAMPLESDIR%%/wsdlclient3.php
 %%EXAMPLESDIR%%/wsdlclient3b.php
