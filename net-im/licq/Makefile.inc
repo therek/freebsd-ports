@@ -1,5 +1,5 @@
 # Common stuff for Licq-based ports
-# $FreeBSD: ports/net-im/licq/Makefile.inc,v 1.26 2009/08/22 00:31:52 amdmi3 Exp $
+# $FreeBSD: ports/net-im/licq/Makefile.inc,v 1.27 2010/05/21 11:24:04 dinoex Exp $
 
 PKGNAMEPREFIX=		licq-
 LICQ_VER=		1.3.9
@@ -13,7 +13,7 @@ MASTER_SITES=		SF/licq/licq/${LICQ_VER}
 DISTNAME=		${PKGNAMEPREFIX}${LICQ_VER}
 DISTFILES=		${DISTNAME}.tar.bz2
 GNU_CONFIGURE=		yes
-MD5_FILE?=		${PORTSDIR}/${LICQ_PORT}/distinfo
+DISTINFO_FILE?=		${PORTSDIR}/${LICQ_PORT}/distinfo
 USE_GMAKE=		yes
 USE_BZIP2=		yes
 WRKSRC?=		${WRKDIR}/${DISTNAME}/plugins/${PORTNAME}

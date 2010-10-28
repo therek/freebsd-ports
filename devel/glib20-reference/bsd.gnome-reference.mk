@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.7 2008/03/25 14:52:40 ahze Exp $
+# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.8 2008/05/29 22:11:58 marcus Exp $
 
 PARENTDIR?=	${.CURDIR:S|-reference$||}
 REFERENCE_PORT=	${PKGORIGIN:S|-reference$||}
@@ -26,7 +26,7 @@ LATEST_LINK:=	${LATEST_LINK}-reference
 
 COMMENT=	Programming reference for ${REFERENCE_PORT}
 
-MD5_FILE=	${PARENTDIR}/distinfo
+DISTINFO_FILE=	${PARENTDIR}/distinfo
 
 REFERENCE_SRC?=	${WRKSRC}/docs/reference
 BOOKS?=		.

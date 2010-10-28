@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.qt.mk,v 1.17 2010/05/11 10:09:45 fluffy Exp $
+# $FreeBSD: ports/Mk/bsd.qt.mk,v 1.18 2010/06/09 19:41:19 makc Exp $
 #
 # Variables:
 # QT_NONSTANDARD	- Suppress modification of configure and make environment.
@@ -31,7 +31,7 @@ MAKE_ENV+=	QMAKESPEC="${QMAKESPEC}"
 .endif # !defined(QT_NONSTANDARD)
 
 .if defined(QT_DIST)
-MD5_FILE=	${PORTSDIR}/devel/qt4/distinfo
+DISTINFO_FILE=	${PORTSDIR}/devel/qt4/distinfo
 MASTER_SITES=	${MASTER_SITE_QT}
 DISTNAME=	qt-everywhere-opensource-src-${QT4_VERSION}
 DIST_SUBDIR=	KDE

@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/games/gnushogi/Makefile.common,v 1.1 2004/03/19 19:23:34 krion Exp $
+# $FreeBSD: ports/games/gnushogi/Makefile.common,v 1.2 2004/03/20 06:15:47 krion Exp $
 #
 
 GNUSHOGI_PORTNAME=	gnushogi
@@ -8,4 +8,4 @@ GNUSHOGI_MASTER_SITES=	${MASTER_SITE_GNU}
 GNUSHOGI_MASTER_SITE_SUBDIR=	${GNUSHOGI_PORTNAME}
 GNUSHOGI_DISTNAME=	${GNUSHOGI_PORTNAME}-${GNUSHOGI_PORTVERSION}
 
-MD5_FILE=	${.CURDIR}/../../games/gnushogi/distinfo
+DISTINFO_FILE=	${.CURDIR}/../../games/gnushogi/distinfo

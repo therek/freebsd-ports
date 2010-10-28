@@ -1,7 +1,7 @@
 # Date created:			  Tue Sep 14, 2010
 # Whom:				  Thierry Thomas (<thierry@pompo.net>)
 #
-# $FreeBSD$
+# $FreeBSD: ports/french/aster/bsd.aster.mk,v 1.1 2010/09/16 21:23:10 thierry Exp $
 #
 # Common variables used by ports related to Code_Aster
 
@@ -9,7 +9,7 @@ DISTVERSIONPREFIX=	full-src-
 DISTVERSIONSUFFIX=	.noarch
 MASTER_SITES=	http://www.code-aster.org/V2/UPLOAD/DOC/Telechargement/
 DISTNAME=	aster-${DISTVERSIONPREFIX}${ASTER_DISTVERSION}${DISTVERSIONSUFFIX}
-MD5_FILE=	${.CURDIR}/../../french/aster/distinfo
+DISTINFO_FILE=	${.CURDIR}/../../french/aster/distinfo
 
 ASTER_VER=	10.2.0
 ASTER_DISTVERSION=	${ASTER_VER}-2

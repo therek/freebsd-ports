@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/ruby-gnome2/Makefile.common,v 1.34 2010/09/11 13:02:39 swills Exp $
+# $FreeBSD: ports/x11/ruby-gnome2/Makefile.common,v 1.35 2010/10/12 03:23:26 swills Exp $
 
 RUBY_GNOME_VERSION=		0.90.2
 #RUBY_GNOME_SNAPSHOTDATE=	20061130
@@ -23,7 +23,7 @@ RUBY_GNOME_WRKSRC=	${WRKDIR}/${RUBY_GNOME_DISTNAME}
 .endif
 
 RUBY_GNOME_PORTDIR=	${PORTSDIR}/x11/ruby-gnome2
-MD5_FILE=		${RUBY_GNOME_PORTDIR}/distinfo
+DISTINFO_FILE=		${RUBY_GNOME_PORTDIR}/distinfo
 
 general-patch:
 	@${FIND} ${WRKDIR} -name mkmf-gnome2.rb | ${XARGS} ${REINPLACE_CMD} -e \
