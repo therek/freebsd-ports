@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dovecot/files/dovecot.sh.in,v 1.12 2009/01/18 03:41:05 beech Exp $
+# $FreeBSD: ports/mail/dovecot/files/dovecot.sh.in,v 1.13 2010/03/27 00:13:14 dougb Exp $
 #
 
 # PROVIDE: dovecot
@@ -26,6 +26,7 @@ command="%%PREFIX%%/sbin/${name}"
 start_precmd="start_precmd"
 stop_postcmd="stop_postcmd"
 restart_cmd="restart_cmd"
+extra_commands="reload"
 
 start_precmd()
 {	# Ensure runtime directories exist with correct permissions
