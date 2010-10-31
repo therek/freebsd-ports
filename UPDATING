@@ -23,7 +23,7 @@ you update your ports collection, before attempting any port upgrades.
   upgrade to version 3.1 or later.  The best method to do this will be
   to use the port, rather than portmaster itself:
 
-  # pkg_delete -f portmaster*
+  # pkg_delete -f portmaster\*
   # cd /usr/ports/ports-mgmt/portmaster && make clean && make install clean
 
 20101026:
@@ -9780,4 +9780,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.983 2010/10/30 04:49:08 dougb Exp $
+$FreeBSD: ports/UPDATING,v 1.984 2010/10/30 14:38:39 johans Exp $
