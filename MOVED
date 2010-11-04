@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2289 2010/10/27 16:34:03 garga Exp $
+# $FreeBSD: ports/MOVED,v 1.2290 2010/11/01 06:20:15 kevlo Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4648,3 +4648,7 @@ www/firefox3-devel|www/firefox|2010-10-24|Upstream development focuses on Firefo
 editors/vim5||2010-10-26|Has expired: Outdated, superceded by editors/vim7 and has security issues
 sysutils/sfdisk||2010-10-27|Has expired: All supported freebsd versions now have sade, sfdisk 0.2 is outdated
 sysutils/synergy-plus|sysutils/synergy|2010-11-01|Synergy+ and Synergy have merged
+ftp/kwebget||2010-11-04|Has expired: Development has ceased.
+multimedia/clive-utils||2010-11-04|Has expired: development has ceased; use multimedia/umph instead
+ports-mgmt/barry||2010-11-04|Has expired: Development has ceased.
+www/wb0||2010-11-04|Has expired: Development has ceased.
