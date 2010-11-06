@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/archivers/gzip/pkg-plist,v 1.5 2007/06/05 15:48:56 gabor Exp $
+@comment $FreeBSD: ports/archivers/gzip/pkg-plist,v 1.6 2010/02/05 21:55:09 gabor Exp $
 bin/gunzip
 bin/gzexe
 bin/gzip
@@ -23,4 +23,3 @@ bin/znew
 %%PORTDOCS%%%%DOCSDIR%%/THANKS
 %%PORTDOCS%%%%DOCSDIR%%/TODO
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
-
