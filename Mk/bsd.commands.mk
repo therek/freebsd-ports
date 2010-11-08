@@ -5,7 +5,7 @@
 #
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.commands.mk,v 1.5 2010/06/04 08:09:17 pav Exp $
+# $FreeBSD: ports/Mk/bsd.commands.mk,v 1.6 2010/08/20 12:15:02 pav Exp $
 #
 # DO NOT COMMIT CHANGES TO THIS FILE BY YOURSELF, EVEN IF YOU DID NOT GET
 # A RESPONSE FROM THE MAINTAINER(S) WITHIN A REASONABLE TIMEFRAME! ALL
@@ -78,6 +78,8 @@ SETENV?=	/usr/bin/env
 SH?=		/bin/sh
 SORT?=		/usr/bin/sort
 STRIP_CMD?=	/usr/bin/strip
+# Command to run commands as privileged user
+# Example: "/usr/local/bin/sudo sh -c" to use "sudo" instead of "su"
 SU_CMD?=	/usr/bin/su root -c
 SYSCTL?=	/sbin/sysctl
 TAIL?=		/usr/bin/tail
