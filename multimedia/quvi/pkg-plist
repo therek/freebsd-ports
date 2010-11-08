@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/quvi/pkg-plist,v 1.2 2010/08/01 17:23:40 makc Exp $
+@comment $FreeBSD: ports/multimedia/quvi/pkg-plist,v 1.3 2010/10/16 14:48:17 sunpoet Exp $
 bin/quvi
 include/quvi/quvi.h
 lib/libquvi.a
@@ -15,11 +15,13 @@ libdata/pkgconfig/libquvi.pc
 %%DATADIR%%/lua/util/content_type.lua
 %%DATADIR%%/lua/website/README
 %%DATADIR%%/lua/website/academicearth.lua
+%%DATADIR%%/lua/website/bloomberg.lua
 %%DATADIR%%/lua/website/break.lua
 %%DATADIR%%/lua/website/buzzhumor.lua
 %%DATADIR%%/lua/website/cctv.lua
 %%DATADIR%%/lua/website/charlierose.lua
 %%DATADIR%%/lua/website/clipfish.lua
+%%DATADIR%%/lua/website/collegehumor.lua
 %%DATADIR%%/lua/website/dailymotion.lua
 %%DATADIR%%/lua/website/evisor.lua
 %%DATADIR%%/lua/website/funnyhub.lua
