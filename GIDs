@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.112 2010/11/07 12:37:41 fjoe Exp $
+# $FreeBSD: ports/GIDs,v 1.113 2010/11/07 17:46:58 fjoe Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -119,6 +119,7 @@ _iodined:*:353:
 httptunnel:*:361:
 ldap:*:389:
 tiarra:*:398:
+uhub:*:411:
 drweb:*:426:
 callweaver:*:444:
 courier:*:465:
