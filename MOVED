@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2292 2010/11/07 07:52:24 stas Exp $
+# $FreeBSD: ports/MOVED,v 1.2293 2010/11/08 10:08:44 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4676,3 +4676,4 @@ misc/compat3x||2010-11-08|Has expired: "Only FreeBSD 6.4+ are supported in ports
 misc/bidwatcher||2010-11-08|Has expired: Obsoleted by JBidwatcher and changes at http://ebay.com
 security/vscan||2010-11-08|Has expired: Depends of misc/compat3x, that is deprecated and set to be removed
 www/ssserver||2010-11-08|Has expired: Depends of misc/compat3x, that is deprecated and set to be removed
+graphics/qtpfsgui|graphics/luminance|2010-11-12|Project has been renamed
