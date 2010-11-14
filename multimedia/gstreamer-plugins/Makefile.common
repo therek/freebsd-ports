@@ -1,4 +1,4 @@
-# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.115 2010/09/27 09:06:23 pav Exp $
+# $FreeBSD: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.116 2010/10/11 13:51:28 mm Exp $
 #    $MCom: ports/multimedia/gstreamer-plugins/Makefile.common,v 1.81 2010/03/16 19:33:10 mezz Exp $
 # base
 BASE_GST_ALL_PLUGINS= \
@@ -146,6 +146,7 @@ CONFIGURE_ARGS+=--disable-tests \
 		--disable-sunaudio \
 		--disable-wildmidi \
 		--disable-xine \
+		--disable-ivorbis \
 		--enable-x \
 		--enable-xshm \
 		--enable-xvideo
