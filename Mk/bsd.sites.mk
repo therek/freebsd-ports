@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.516 2010/10/26 01:08:51 wxs Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.517 2010/11/01 19:05:42 beat Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -497,7 +497,6 @@ MASTER_SITE_GET_E+=	\
 .if !defined(IGNORE_MASTER_SITE_GNOME)
 MASTER_SITE_GNOME+=	\
 	ftp://ftp.belnet.be/mirror/ftp.gnome.org/%SUBDIR%/ \
-	ftp://ftp.no.gnome.org/pub/GNOME/%SUBDIR%/ \
 	ftp://ftp.dit.upm.es/linux/gnome/%SUBDIR%/ \
 	http://ftp.acc.umu.se/pub/GNOME/%SUBDIR%/ \
 	ftp://ftp.cse.buffalo.edu/pub/Gnome/%SUBDIR%/ \
