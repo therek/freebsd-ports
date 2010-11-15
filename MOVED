@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2293 2010/11/08 10:08:44 garga Exp $
+# $FreeBSD: ports/MOVED,v 1.2294 2010/11/12 12:28:24 makc Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4258,7 +4258,6 @@ devel/agide||2010-01-18|Has expired: has been broken for 6 months
 devel/asis||2010-01-18|Has expired: has been broken for 3 months
 devel/callgrind||2010-01-18|Has expired: Included in devel/valgrind
 devel/florist||2010-01-18|Has expired: has been broken for 3 months
-editors/xml2rfc-xxe||2010-01-18|Has expired: has been broken for 4 months
 graphics/gephex||2010-01-18|Has expired: has been broken for 3 months
 graphics/irit||2010-01-18|Has expired: has been broken for 3 months
 graphics/pixieplus||2010-01-18|Has expired: has been broken for 6 months
