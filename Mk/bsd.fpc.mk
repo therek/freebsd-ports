@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.fpc.mk,v 1.10 2009/07/13 19:29:53 acm Exp $
+# $FreeBSD: ports/Mk/bsd.fpc.mk,v 1.11 2010/08/16 17:45:15 acm Exp $
 #
 # bsd.fpc.mk - Support for FreePascal based ports.
 #
@@ -30,7 +30,7 @@ _FPCMKINCLUDED=	yes
 FPC_Include_MAINTAINER=	acm@FreeBSD.org
 FPC_Pre_Include=	bsd.fpc.mk
 
-DEFAULT_FPC_VER=	2.4.0
+DEFAULT_FPC_VER=	2.4.2
 FPC_VER=		${DEFAULT_FPC_VER}
 FPC_ARCH=		${ARCH:S/amd64/x86_64/}
 
