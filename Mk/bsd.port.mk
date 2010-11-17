@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.653 2010/10/29 12:41:29 erwin Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.654 2010/11/08 16:07:03 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -6035,7 +6035,7 @@ config:
 		elif [ ! -z "$${withoutval}" ]; then \
 			val=off; \
 		else \
-			val=$$3; \
+			val=$${defaultval}; \
 		fi; \
 		DEFOPTIONS="$${DEFOPTIONS} $$1 \"$$2\" $${val}"; \
 		shift 3; \
@@ -6140,7 +6140,7 @@ showconfig:
 		elif [ ! -z "$${withoutval}" ]; then \
 			val=off; \
 		else \
-			val="$$3 (default)"; \
+			val="$${defaultval} (default)"; \
 		fi; \
 		${ECHO_MSG} "     $$1=$${val} \"$$2\""; \
 		shift 3; \
