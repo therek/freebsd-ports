@@ -1,9 +1,9 @@
 
-$FreeBSD: ports/editors/emacs-devel/files/patch-configure,v 1.1 2010/07/28 12:23:02 ashish Exp $
+$FreeBSD$
 
 --- configure.orig
 +++ configure
-@@ -6041,170 +6041,6 @@
+@@ -6055,170 +6055,6 @@
    LIBSOUND=
  fi
  
