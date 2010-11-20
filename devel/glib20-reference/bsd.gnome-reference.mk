@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.8 2008/05/29 22:11:58 marcus Exp $
+# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.9 2010/10/28 21:00:09 erwin Exp $
 
 PARENTDIR?=	${.CURDIR:S|-reference$||}
 REFERENCE_PORT=	${PKGORIGIN:S|-reference$||}
@@ -48,7 +48,6 @@ make-descr:
 
 .if !target(do-install)
 do-install:
-.  if !defined(NOPORTDOCS)
 .    for d in ${BOOKS}
 	if [ -d ${REFERENCE_SRC}/${d}/html ]; then \
 		${MKDIR} ${DOCSDIR}/${d}; \
@@ -57,7 +56,6 @@ do-install:
 		${FIND} * -type f -exec ${INSTALL_DATA} "{}" "${DOCSDIR}/${d}/{}" \; ; \
 	fi
 .    endfor
-.  endif
 .endif
 
 .include <bsd.port.mk>
