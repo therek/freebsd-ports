@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.161 2010/10/02 20:56:00 kwm Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.162 2010/11/20 15:36:22 kwm Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.512 2010/10/26 09:02:45 kwm Exp $
 #
@@ -89,6 +89,9 @@ _USE_GNOME_ALL+= atk atspi desktopfileutils eel2 evolutiondataserver gal2 gdkpix
 		librsvg2 libwnck libxml2 libxslt libzvt linc metacity nautilus2 \
 		nautiluscdburner orbit2 pango pygnome2 pygnomedesktop pygnomeextras \
 		pygtk2 pygtksourceview vte
+
+# GNOME 3 components
+_USE_GNOME_ALL+= dconf
 
 GNOME_MAKEFILEIN?=	Makefile.in
 SCROLLKEEPER_DIR=	/var/db/rarian
@@ -280,6 +283,10 @@ glib20_USE_GNOME_IMPL=	_glib20
 atk_LIB_DEPENDS=	atk-1.0.0:${PORTSDIR}/accessibility/atk
 atk_DETECT=		${LOCALBASE}/libdata/pkgconfig/atk.pc
 atk_USE_GNOME_IMPL=	glib20
+
+dconf_LIB_DEPENDS=	dconf.0:${PORTSDIR}/devel/dconf
+dconf_DETECT=		${LOCALBASE}/libdata/pkgconfig/dconf.pc
+dconf_USE_GNOME_IMPL=	glib20
 
 pango_LIB_DEPENDS=	pango-1.0.0:${PORTSDIR}/x11-toolkits/pango
 pango_DETECT=		${LOCALBASE}/libdata/pkgconfig/pango.pc
