@@ -21,7 +21,7 @@ you update your ports collection, before attempting any port upgrades.
   Portupgrade users:
 
     # pkgdb -fF
-    # pkg_deinstall -f0 gtkmm-2.20\* gtk-2.20\*
+    # pkg_deinstall -fO gtkmm-2.20\* gtk-2.20\*
     # portupgrade -aOW
 
 20101118:
@@ -9857,4 +9857,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.990 2010/11/18 03:39:12 ashish Exp $
+$FreeBSD: ports/UPDATING,v 1.991 2010/11/20 15:36:22 kwm Exp $
