@@ -1,9 +1,13 @@
-# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.9 2010/10/28 21:00:09 erwin Exp $
+# $FreeBSD: ports/devel/glib20-reference/bsd.gnome-reference.mk,v 1.10 2010/11/20 15:36:33 kwm Exp $
 
 PARENTDIR?=	${.CURDIR:S|-reference$||}
 REFERENCE_PORT=	${PKGORIGIN:S|-reference$||}
 
 .include "${PARENTDIR}/Makefile"
+
+.if defined(NOPORTDOCS)
+IGNORE=		This port installs documents, but you have selected NOPORTDOCS
+.endif
 
 .if !defined(DOCSDIR)
 DOCSDIR:=	${PREFIX}/share/doc/${PORTNAME}
