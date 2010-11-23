@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2250 2010/11/17 11:09:34 dinoex Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2251 2010/11/23 16:38:51 remko Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -66,7 +66,7 @@ Note:  Please add new entries to the beginning of this file.
       <url>http://www.zerodayinitiative.com/advisories/ZDI-10-229/</url>
     </references>
     <dates>
-      <discovery>2010-11-FIXME</discovery>
+      <discovery>2010-11-02</discovery>
       <entry>2010-11-23</entry>
     </dates>
   </vuln>
