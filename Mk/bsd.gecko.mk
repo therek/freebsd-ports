@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.21 2010/07/29 11:37:03 beat Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.22 2010/08/29 15:16:20 beat Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -418,14 +418,16 @@ MOZ_OPTIONS+=	--enable-gnomevfs
 MOZ_OPTIONS+=	--disable-gnomevfs
 .endif
 
+.if !defined(STRIP) || ${STRIP} == ""
+MOZ_OPTIONS+=	--disable-strip --disable-install-strip
+.endif
+
 .if defined(WITH_DEBUG)
-MOZ_OPTIONS+=	--enable-debug				\
-		--disable-strip
+MOZ_OPTIONS+=	--enable-debug
 WITH_LOGGING=	yes
 .else
 MOZ_OPTIONS+=	--disable-debug				\
-		--enable-optimize=${WITH_OPTIMIZE}	\
-		--enable-strip
+		--enable-optimize=${WITH_OPTIMIZE}
 .endif
 
 .if defined(WITH_JAVA) && defined(_WITH_JAVA)
@@ -516,6 +518,7 @@ gecko-post-patch:
 .for subdir in "" nsprpub js/src
 	@if [ -f ${MOZSRC}/${subdir}/config/system-headers ] ; then \
 		${ECHO_CMD} "fenv.h" >> ${MOZSRC}/${subdir}/config/system-headers ; \
+		${ECHO_CMD} "pthread_np.h" >> ${MOZSRC}/${subdir}/config/system-headers ; \
 	fi
 .endfor
 	@${REINPLACE_CMD} -e 's|%%MOZILLA%%|${MOZILLA}|g' \
