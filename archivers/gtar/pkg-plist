@@ -1,7 +1,8 @@
-@comment $FreeBSD: ports/archivers/gtar/pkg-plist,v 1.17 2007/06/13 15:04:22 naddy Exp $
+@comment $FreeBSD: ports/archivers/gtar/pkg-plist,v 1.18 2008/04/21 16:03:49 naddy Exp $
 bin/gtar
 libexec/grmt
 %%NLS%%share/locale/bg/LC_MESSAGES/tar.mo
+%%NLS%%share/locale/ca/LC_MESSAGES/tar.mo
 %%NLS%%share/locale/cs/LC_MESSAGES/tar.mo
 %%NLS%%share/locale/da/LC_MESSAGES/tar.mo
 %%NLS%%share/locale/de/LC_MESSAGES/tar.mo
