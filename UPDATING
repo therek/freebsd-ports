@@ -5,6 +5,18 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20101124:
+  AFFECTS: users of www/py-flexget
+  AUTHOR: lioux@FreeBSD.org
+
+  metainfo_series is no longer a builtin. This should only affect
+  you if you aren't using one of the series plugins (series,
+  all_series, thetvdb_favorites, or series_premiere.) If you need
+  to enable metainfo_series manually for a feed it can be done like
+  so:
+
+    metainfo_series: yes
+
 20101120:
   AFFECTS: users of x11-toolkits/gtk20 and x11-toolkits/gtkmm24
   AUTHOR: FreeBSD GNOME Team <gnome@FreeBSD.org>
@@ -9857,4 +9869,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.991 2010/11/20 15:36:22 kwm Exp $
+$FreeBSD: ports/UPDATING,v 1.992 2010/11/21 10:07:54 kwm Exp $
