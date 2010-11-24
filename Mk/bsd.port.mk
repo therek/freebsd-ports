@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.654 2010/11/08 16:07:03 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.655 2010/11/17 21:06:43 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3411,9 +3411,9 @@ build: configure
 .endif
 
 # Disable install
-.if defined(NO_INSTALL) && !target(install)
-install: build
-	@${TOUCH} ${TOUCH_FLAGS} ${INSTALL_COOKIE}
+.if defined(NO_INSTALL) && !target(do-install)
+do-install:
+	@${DO_NADA}
 .endif
 
 # Disable package
@@ -3883,20 +3883,7 @@ do-package: ${TMPPLIST}
 		fi; \
 	fi
 	@__softMAKEFLAGS='${__softMAKEFLAGS:S/'/'\''/g}'; \
-	_LATE_PKG_ARGS=""; \
-	if [ -f ${PKGINSTALL} ]; then \
-		_LATE_PKG_ARGS="$${_LATE_PKG_ARGS} -i ${PKGINSTALL}"; \
-	fi; \
-	if [ -f ${PKGDEINSTALL} ]; then \
-		_LATE_PKG_ARGS="$${_LATE_PKG_ARGS} -k ${PKGDEINSTALL}"; \
-	fi; \
-	if [ -f ${PKGREQ} ]; then \
-		_LATE_PKG_ARGS="$${_LATE_PKG_ARGS} -r ${PKGREQ}"; \
-	fi; \
-	if [ -f ${PKGMESSAGE} ]; then \
-		_LATE_PKG_ARGS="$${_LATE_PKG_ARGS} -D ${PKGMESSAGE}"; \
-	fi; \
-	if ${PKG_CMD} ${PKG_ARGS} ${PKGFILE}; then \
+	if ${PKG_CMD} -b ${PKGNAME} ${PKGFILE}; then \
 		if [ -d ${PACKAGES} ]; then \
 			cd ${.CURDIR} && eval ${MAKE} $${__softMAKEFLAGS} package-links; \
 		fi; \
