@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2295 2010/11/15 07:51:40 dougb Exp $
+# $FreeBSD: ports/MOVED,v 1.2296 2010/11/20 15:36:22 kwm Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4682,3 +4682,4 @@ devel/gir-repository-libsoup|devel/libsoup|2010-11-20|merged into libsoup
 x11-toolkits/gir-repository-gtksourceview2|x11-toolkits/gtksourceview2|2010-11-20|merged into gtksourceview2
 security/gir-repository-gnome-keyring||2010-11-20|Not buildable
 devel/gir-repository-dbus|devel/gobject-introspection|2010-11-20|merged into gobject-introspection
+devel/gdb6|devel/gdb66|2010-11-24|Directory renamed
