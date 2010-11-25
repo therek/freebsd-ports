@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/nsd/files/nsd.in,v 1.6 2010/03/27 00:12:56 dougb Exp $
+# $FreeBSD: ports/dns/nsd/files/nsd.in,v 1.7 2010/11/24 15:44:15 bapt Exp $
 #
 # PROVIDE: nsd
 # REQUIRE: DAEMON
@@ -20,6 +20,7 @@ required_files=%%PREFIX%%/etc/nsd/nsd.conf
 command=%%PREFIX%%/sbin/nsdc
 command_args="start"
 pidfile=`%%PREFIX%%/sbin/nsd-checkconf -o pidfile %%PREFIX%%/etc/nsd/nsd.conf`
+procname=%%PREFIX%%/sbin/${name}
 
 load_rc_config ${name}
 
