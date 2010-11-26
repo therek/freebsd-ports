@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2298 2010/11/26 14:47:06 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.2299 2010/11/26 17:38:20 nobutaka Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4686,3 +4686,4 @@ devel/gdb6|devel/gdb66|2010-11-24|Directory renamed
 net-p2p/eiskaltdc|net-p2p/eiskaltdcpp-qt|2010-11-26|GUI ports separated
 japanese/uim-canna|textproc/uim|2010-11-26|integrated into textproc/uim
 japanese/uim-prime|textproc/uim|2010-11-26|integrated into textproc/uim
+www/google_shortcuts|www/xpi-google_shortcuts|2010-11-26|Use www/xpi-google_shortcuts instead
