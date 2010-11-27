@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.126 2010/11/07 12:27:54 fjoe Exp $
+# $FreeBSD: ports/UIDs,v 1.127 2010/11/11 10:31:35 stefan Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53::0:0:Bind Sandbox:/:/usr/sbin/nologin
@@ -83,6 +83,7 @@ amanda:*:140:140::0:0:Amanda Daemon:/nonexistent:/usr/sbin/nologin
 cricket:*:141:80::0:0:Cricket Monitoring User:/usr/local/cricket:/usr/sbin/nologin
 ladvd:*:142:142::0:0:Ladvd User:/var/empty:/usr/sbin/nologin
 dovecot:*:143:143::0:0:Dovecot User:/var/empty:/usr/sbin/nologin
+dovenull:*:144:144::0:0:Dovecot login User:/var/empty:/usr/sbin/nologin
 rbldns:*:153:153::0:0:rbldnsd pseudo-user:/nonexistent:/usr/sbin/nologin
 sfs:*:171:171::0:0:Self-Certifying File System:/nonexistent:/usr/sbin/nologin
 agk:*:172:172::0:0:AquaGateKeeper:/nonexistent:/nonexistent
