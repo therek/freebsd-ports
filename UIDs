@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.127 2010/11/11 10:31:35 stefan Exp $
+# $FreeBSD: ports/UIDs,v 1.128 2010/11/27 05:53:35 glewis Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53::0:0:Bind Sandbox:/:/usr/sbin/nologin
@@ -135,6 +135,7 @@ drweb:*:426:426::0:0:Dr.Web Mail Scanner:/nonexistent:/usr/sbin/nologin
 callweaver:*:444:444::0:0:Callweaver account:/var/lib/callweaver:/usr/sbin/nologin
 courier:*:465:465::0:0:Courier Mail Server:/nonexistent:/usr/sbin/nologin
 _bbstored:*:505:505::0:0:BoxBackup Store Daemon:/nonexistent:/bin/sh
+radmind:*:506:506::0:0:radmind User:/var/radmind:/usr/sbin/nologin
 nullmail:*:522:522::0:0:Nullmailer Mail System:/var/spool/nullmailer:/bin/sh
 dkimproxy:*:525:525::0:0:DKIM Proxy Owner:/nonexistent:/usr/sbin/nologin
 pgbouncer:*:534:534::0:0:Pgbouncer Daemon:/nonexistent:/usr/sbin/nologin
