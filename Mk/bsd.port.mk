@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.655 2010/11/17 21:06:43 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.656 2010/11/24 23:04:02 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -6320,7 +6320,7 @@ install-desktop-entries:
 		${ECHO_CMD} "@cwd ${DESKTOPDIR}" >> ${TMPPLIST}; \
 	fi; \
 	while [ $$# -gt 6 ]; do \
-		filename="$$4.desktop"; \
+		filename="`${ECHO_CMD} "$$4" | ${TR} -cd [:alnum:]`.desktop"; \
 		pathname="${DESKTOPDIR}/$$filename"; \
 		categories="$$5"; \
 		if [ -z "$$categories" ]; then \
