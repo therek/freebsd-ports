@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/misc/freebsd-doc-en/pkg-plist.html-split,v 1.12 2010/06/06 09:28:49 blackend Exp $
+@comment $FreeBSD$
 %%DOCSDIR%%/%%DOCLANG%%/articles/5-roadmap/TRADEMARKS.html
 %%DOCSDIR%%/%%DOCLANG%%/articles/5-roadmap/future.html
 %%DOCSDIR%%/%%DOCLANG%%/articles/5-roadmap/goals.html
@@ -1066,7 +1066,6 @@
 %%DOCSDIR%%/%%DOCLANG%%/books/porters-handbook/dads-rerolling-distfiles.html
 %%DOCSDIR%%/%%DOCLANG%%/books/porters-handbook/dads-sh-exec.html
 %%DOCSDIR%%/%%DOCLANG%%/books/porters-handbook/dads-sysctl.html
-%%DOCSDIR%%/%%DOCLANG%%/books/porters-handbook/dads-workarounds.html
 %%DOCSDIR%%/%%DOCLANG%%/books/porters-handbook/distfile-survey.html
 %%DOCSDIR%%/%%DOCLANG%%/books/porters-handbook/freebsd-versions.html
 %%DOCSDIR%%/%%DOCLANG%%/books/porters-handbook/index.html
