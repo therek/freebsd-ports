@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.630 2010/11/08 10:08:44 garga Exp $
+# $FreeBSD: ports/LEGAL,v 1.631 2010/11/24 14:40:08 ale Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -711,3 +711,5 @@ taetgen-*		math/tetgen		Academic or personal use only
 giac-*			math/giacxcas		The french documentation is for non commercial only use
 libaacplus-*		audio/libaacplus	Unclear legal status
 26410-800.zip		audio/libaacplus	Unclear legal status
+dmd-*			lang/dmd		No redistribution of non
+						validated binaries
