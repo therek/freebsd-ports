@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/Tools/portbuild/scripts/buildenv,v 1.33 2010/06/30 14:43:12 linimon Exp $
 #
 # Set up the build variables which are used by a given build.  Some
 #    of the code here is common to both clients and server; some is
@@ -71,6 +71,9 @@ buildenv () {
     branch=$3
     builddir=$4
 
+    # Don't pick up host OPTIONS
+    export PORT_DBDIR=/nonexistent
+
     buildenv.common ${pb} ${arch} ${branch} ${builddir}
 
     # override things destined for bsd.port.mk
@@ -104,9 +107,6 @@ buildenv.client() {
     builddir=$4
 
     buildenv.common ${pb} ${arch} ${branch} ${builddir}
-
-    # Don't pick up host OPTIONS
-    export PORT_DBDIR=/nonexistent
 
     # manually override results of uname(1)
     export UNAME_m=${ARCH}
