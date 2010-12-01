@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/Tools/portbuild/scripts/pdispatch,v 1.34 2010/06/25 23:27:16 linimon Exp $
 
 #
 # pdispatch <arch> <branch> <buildid> <host> <command> <package.tbz> [<args> ...]
@@ -18,6 +18,7 @@ shift 5
 pbab=${pb}/${arch}/${branch}
 
 . ${pb}/conf/server.conf
+. ${pb}/conf/common.conf
 . ${pb}/${arch}/portbuild.conf
 . ${pb}/scripts/buildenv
 
