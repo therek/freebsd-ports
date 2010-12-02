@@ -5,6 +5,13 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20101202:
+  AFFECTS: users of www/wordpress
+  AUTHOR: sunpoet@FreeBSD.org
+
+  WordPress is now installed to WWWDIR (defaults to PREFIX/wordpress)
+  instead of WORDPRESS (defaults to PREFIX/www/data/wordpress).
+
 20101129:
   AFFECTS: users of sysutils/radmind
   AUTHOR: ohauer@FreeBSD.org
@@ -9924,4 +9931,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.996 2010/11/28 19:35:56 fjoe Exp $
+$FreeBSD: ports/UPDATING,v 1.997 2010/11/28 23:54:37 ohauer Exp $
