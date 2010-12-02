@@ -1,5 +1,5 @@
 /*
- * $FreeBSD$
+ * $FreeBSD: ports/devel/qmake4/files/qconfig.cpp,v 1.10 2010/01/21 21:13:10 makc Exp $
  * Hand-crafted...
  * The default prefix (/ usr / local) is dynamicly replaced
  * at configure time.
@@ -15,6 +15,7 @@ static const char qt_configure_installation          [12+11]    = "qt_instdate=T
 #define QT_CONFIGURE_LIBRARIES_PATH "/usr/local/lib/qt4";
 #define QT_CONFIGURE_BINARIES_PATH "/usr/local/bin";
 #define QT_CONFIGURE_PLUGINS_PATH "/usr/local/lib/qt4/plugins";
+#define QT_CONFIGURE_IMPORTS_PATH "/usr/local/lib/qt4/imports";
 #define QT_CONFIGURE_DATA_PATH "/usr/local/share/qt4";
 #define QT_CONFIGURE_TRANSLATIONS_PATH "/usr/local/share/qt4/translations";
 #define QT_CONFIGURE_SETTINGS_PATH "/usr/local/etc/xdg";
