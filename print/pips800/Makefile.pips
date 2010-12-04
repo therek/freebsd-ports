@@ -2,7 +2,7 @@
 # Date created:		26 Aug 2004
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.38 2010/10/16 11:52:32 ade Exp $
+# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.39 2010/10/28 21:00:17 erwin Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
@@ -122,7 +122,7 @@ EXTRA_PATCHES+=	${FILESDIR}/extra-patch-2.6.2-common \
     ${PRTYPE} != -spr800
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-2.6.2-ekpstm::main.c
 .endif
-USE_AUTOTOOLS=	autoconf:268
+USE_AUTOTOOLS=	autoconf
 LIB_DEPENDS+=	cups.2:${PORTSDIR}/print/cups-base
 USE_ICONV=	yes
 .endif

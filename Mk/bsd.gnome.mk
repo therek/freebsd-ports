@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.162 2010/11/20 15:36:22 kwm Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.163 2010/11/20 17:41:26 kwm Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.512 2010/10/26 09:02:45 kwm Exp $
 #
@@ -690,7 +690,7 @@ PLIST_SUB+=			GTK2_VERSION="${GTK2_VERSION}" \
 # Then handle the ltverhack component (it has to be done here, because
 # we rely on some bsd.autotools.mk variables, and bsd.autotools.mk is
 # included in the post-makefile section).
-.if defined(AUTOTOOL_libtool)
+.if defined(_AUTOTOOL_libtool)
 lthacks_CONFIGURE_ENV=		ac_cv_path_DOLT_BASH=
 lthacks_PRE_PATCH=		${CP} -pf ${LTMAIN} ${WRKDIR}/gnome-ltmain.sh && \
 						${CP} -pf ${LIBTOOL} ${WRKDIR}/gnome-libtool && \

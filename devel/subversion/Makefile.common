@@ -2,7 +2,7 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.39 2010/10/13 12:44:01 lev Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.40 2010/11/24 22:51:09 lev Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.6.15
@@ -23,7 +23,7 @@ PATCHFILES+=		svn_hacks_1.4.diff
 
 MAKE_JOBS_SAFE=	yes
 USE_BZIP2=	yes
-USE_AUTOTOOLS=	libtool:22
+USE_AUTOTOOLS=	libtool
 
 CONFIGURE_ARGS=	--with-ssl
 

@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.658 2010/11/30 21:36:42 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.659 2010/12/01 08:32:50 miwi Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3748,6 +3748,11 @@ do-patch:
 	fi
 .endif
 
+.if !target(patch-autotools)
+patch-autotools:
+	@${DO_NADA}
+.endif
+
 .if !target(run-autotools)
 run-autotools:
 	@${DO_NADA}
@@ -4412,7 +4417,7 @@ _EXTRACT_SEQ=	check-build-conflicts extract-message checksum extract-depends \
 				post-extract post-extract-script
 _PATCH_DEP=		extract
 _PATCH_SEQ=		ask-license patch-message patch-depends patch-dos2unix pre-patch \
-				pre-patch-script do-patch post-patch post-patch-script
+				pre-patch-script do-patch patch-autotools post-patch post-patch-script
 _CONFIGURE_DEP=	patch
 _CONFIGURE_SEQ=	build-depends lib-depends configure-message \
 				pre-configure pre-configure-script \
