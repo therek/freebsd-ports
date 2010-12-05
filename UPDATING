@@ -22,6 +22,23 @@ you update your ports collection, before attempting any port upgrades.
   sqlite database file.
 
 20101204:
+  AFFECTS: users of audio/libmpcdec
+  AUTHOR: lioux@FreeBSD.org
+
+  audio/libmpcdec has been removed in favor of audio/musepack; which
+  has a higher shared library version. You will have to rebuild all
+  ports that depend on audio/libmpcdec. Do this:
+  
+  Portmaster users:
+	# portmaster -o audio/musepack audio/libmpcdec
+	# portmaster -r musepack-
+  
+  Portupgrade user:
+	# env DISABLE_CONFLICTS=1 portupgrade -o audio/libmpcdec -f libmpcdec-\*
+	# pkgdb -Ff
+	# portupgrade -rf musepack-\*
+
+20101204:
   AFFECTS: autotools
   AUTHOR: autotools@FreeBSD.org
 
@@ -9973,4 +9990,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.1001 2010/12/04 07:30:13 ade Exp $
+$FreeBSD: ports/UPDATING,v 1.1002 2010/12/05 09:20:00 lioux Exp $
