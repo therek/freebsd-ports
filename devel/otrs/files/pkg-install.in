@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/devel/otrs/files/pkg-install.in,v 1.2 2007/04/11 13:25:11 miwi Exp $
+# $FreeBSD: ports/devel/otrs/files/pkg-install.in,v 1.3 2009/08/18 20:10:00 skv Exp $
 
 PATH=/bin:/usr/bin:/usr/sbin
 
@@ -35,7 +35,7 @@ PRE-INSTALL)
 ;;
 
 POST-INSTALL)
-	${PKG_PREFIX}/otrs/bin/SetPermissions.pl \
+	${PKG_PREFIX}/otrs/bin/otrs.SetPermissions.pl \
 		--web-user=${WWWOWN} --web-group=${WWWGRP} \
 		--otrs-user=${OTRS_USER} --otrs-group=${OTRS_GROUP} \
 		--admin-user=root --admin-group=wheel \
