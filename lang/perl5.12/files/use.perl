@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/lang/perl5.12/files/use.perl,v 1.16 2010/09/16 15:57:09 skv Exp $
+# $FreeBSD: ports/lang/perl5.12/files/use.perl,v 1.17 2010/11/05 05:41:37 gordon Exp $
 
 this=`echo -n $0 | /usr/bin/sed -e 's!^.*/!!'`
 PERL_VERSION="%%PERL_VERSION%%"
@@ -21,14 +21,18 @@ if [ "$2" = "POST-INSTALL" ] ; then
 	need_remove_links=%%LINK_USRBIN%%
 	need_create_links=%%LINK_USRBIN%%
 	need_cleanup_make_conf=yes
-	need_cleanup_manpath=yes
 	need_spam_make_conf=yes
-	need_spam_manpath=yes
 	need_post_install=yes
+	if [ "${osreldate}" -lt 900022 ]; then
+		need_cleanup_manpath=yes
+		need_spam_manpath=yes
+	fi
 elif [ "$2" = "POST-DEINSTALL" ] ; then
 	need_remove_links=%%LINK_USRBIN%%
 	need_cleanup_make_conf=yes
-	need_cleanup_manpath=yes
+	if [ "${osreldate}" -lt 900022 ]; then
+		need_cleanup_manpath=yes
+	fi
 else
 	exit 0;
 fi
