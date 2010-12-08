@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.36 2010/08/07 10:58:59 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.37 2010/12/04 07:26:18 ade Exp $
 #
 # Please view me with 4 column tabs!
 #
@@ -140,7 +140,7 @@ GNU_CONFIGURE=				yes
 .if defined(_AUTOTOOL_automake)
 AUTOMAKE_VERSION=	1.11
 AUTOMAKE_APIVER=	1.11.1
-AUTOMAKE_PORT=		devel/automake111
+AUTOMAKE_PORT=		devel/automake
 
 . if ${_AUTOTOOL_automake} == "yes"
 _AUTOTOOL_rule_automake=	yes
@@ -199,7 +199,7 @@ GNU_CONFIGURE?=				yes
 
 .if defined(_AUTOTOOL_autoconf)
 AUTOCONF_VERSION=	2.68
-AUTOCONF_PORT=		devel/autoconf268
+AUTOCONF_PORT=		devel/autoconf
 
 . if ${_AUTOTOOL_autoconf} == "yes"
 _AUTOTOOL_rule_autoconf=	yes
@@ -253,7 +253,7 @@ BUILD_DEPENDS+=		${AUTOCONF_DEPENDS}
 #---------------------------------------------------------------------------
 
 .if defined(_AUTOTOOL_libltdl)
-LIB_DEPENDS+=		ltdl.7:${PORTSDIR}/devel/libltdl22
+LIB_DEPENDS+=		ltdl.7:${PORTSDIR}/devel/libltdl
 .endif
 
 #---------------------------------------------------------------------------
@@ -262,7 +262,7 @@ LIB_DEPENDS+=		ltdl.7:${PORTSDIR}/devel/libltdl22
 
 .if defined(_AUTOTOOL_libtool) || defined(_AUTOTOOL_libtoolize)
 LIBTOOL_VERSION=	2.2.10
-LIBTOOL_PORT=		devel/libtool22
+LIBTOOL_PORT=		devel/libtool
 
 . if defined(_AUTOTOOL_libtool) && ${_AUTOTOOL_libtool} == "yes"
 _AUTOTOOL_rule_libtool=		yes
