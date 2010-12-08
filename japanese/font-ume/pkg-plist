@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/japanese/font-ume/pkg-plist,v 1.4 2009/12/27 07:45:59 hrs Exp $
+@comment $FreeBSD: ports/japanese/font-ume/pkg-plist,v 1.5 2009/12/27 13:51:24 hrs Exp $
 %%DATADIR%%/ume-pgc4.ttf
 %%DATADIR%%/ume-pgc5.ttf
 %%DATADIR%%/ume-pgo4.ttf
@@ -40,10 +40,8 @@
 @dirrmtry %%LOCAL_FONTSDIR%%
 etc/fonts/conf.avail/20-unhint-ume.conf
 etc/fonts/conf.avail/62-fonts-ume.conf
-@exec ln -s -f ../conf.avail/20-unhint-ume.conf %D/etc/fonts/conf.d/20-unhint-ume.conf
-@exec ln -s -f ../conf.avail/62-fonts-ume.conf %D/etc/fonts/conf.d/62-fonts-ume.conf
-@unexec rm -f %D/etc/fonts/conf.d/20-unhint-ume.conf
-@unexec rm -f %D/etc/fonts/conf.d/62-fonts-ume.conf
+etc/fonts/conf.d/20-unhint-ume.conf
+etc/fonts/conf.d/62-fonts-ume.conf
 %%X_FONTSDIR%%/TTF/ume-pgc4.ttf
 %%X_FONTSDIR%%/TTF/ume-pgc5.ttf
 %%X_FONTSDIR%%/TTF/ume-pgo4.ttf
