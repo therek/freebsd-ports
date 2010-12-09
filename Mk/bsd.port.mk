@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.659 2010/12/01 08:32:50 miwi Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.660 2010/12/04 07:30:13 ade Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -839,7 +839,7 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # FETCH_BINARY	- Path to ftp/http fetch command if not in $PATH.
 #				  Default: "/usr/bin/fetch"
 # FETCH_ARGS	- Arguments to ftp/http fetch command.
-#				  Default: "-ApRr"
+#				  Default: "-AFpr"
 # FETCH_CMD		- ftp/http fetch command.
 #				  Default: ${FETCH_BINARY} ${FETCH_ARGS}
 # FETCH_BEFORE_ARGS
@@ -2311,7 +2311,7 @@ PTHREAD_LIBS?=		-pthread
 
 .if exists(/usr/bin/fetch)
 FETCH_BINARY?=	/usr/bin/fetch
-FETCH_ARGS?=	-ApRr
+FETCH_ARGS?=	-AFpr
 FETCH_REGET?=	1
 .if !defined(DISABLE_SIZE)
 FETCH_BEFORE_ARGS+=	$${CKSIZE:+-S $$CKSIZE}
