@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2310 2010/12/08 19:58:43 ade Exp $
+# $FreeBSD: ports/MOVED,v 1.2311 2010/12/08 21:35:43 ade Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4705,3 +4705,4 @@ devel/autoconf268|devel/autoconf|2010-12-08|Autotools cleanup
 devel/automake111|devel/automake|2010-12-08|Autotools cleanup
 devel/libtool22|devel/libtool|2010-12-08|Autotools cleanup
 devel/libltdl22|devel/libltdl|2010-12-08|Autotools cleanup
+devel/rubygem-image_science|graphics/rubygem-image_science|2010-12-11|Moved category
