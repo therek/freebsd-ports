@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/puppet/pkg-plist,v 1.8 2010/08/04 17:06:24 lwhsu Exp $
+@comment $FreeBSD: ports/sysutils/puppet/pkg-plist,v 1.9 2010/12/10 23:07:24 pgollucci Exp $
 bin/filebucket
 bin/pi
 bin/puppet
@@ -9,6 +9,5 @@ sbin/puppetd
 sbin/puppetmasterd
 sbin/puppetqd
 sbin/puppetrun
-etc/puppet/puppet.conf-dist
-etc/puppet/auth.conf
-@dirrmtry etc/puppet
+%%ETCDIR%%/puppet.conf-dist
+@dirrmtry %%ETCDIR%%
