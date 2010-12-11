@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.520 2010/12/11 20:39:30 pgollucci Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.521 2010/12/11 20:41:16 pgollucci Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -901,7 +901,6 @@ MASTER_SITE_PERL_CPAN+=	\
 	ftp://ftp.sunet.se/pub/lang/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://mirror.hiwaay.net/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.mirrorservice.org/sites/ftp.funet.fi/pub/languages/perl/CPAN/modules/by-module/%SUBDIR%/ \
-	ftp://ftp.isu.net.sa/pub/CPAN/modules/by-module/%SUBDIR%/ \
 	http://at.cpan.org/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.auckland.ac.nz/pub/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	http://backpan.cpan.org/modules/by-module/%SUBDIR%/ \
@@ -1202,7 +1201,6 @@ MASTER_SITE_SUSE+= 	\
 	ftp://ftp.icm.edu.pl/packages/linux-suse/%SUBDIR%/ \
 	http://ftp.iasi.roedu.net/pub/mirrors/ftp.suse.com/pub/suse/%SUBDIR%/ \
 	http://ftp.idilis.ro/mirrors/ftp.suse.com/pub/suse/%SUBDIR%/ \
-	http://ftp.isu.net.sa/pub/mirrors/ftp.suse.com/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/Linux/distributions/suse/suse/%SUBDIR%/ \
 	ftp://ftp.solnet.ch/mirror/SuSE/%SUBDIR%/ \
 	ftp://sunsite.cnlab-switch.ch/mirror/SuSE/suse/%SUBDIR%/ \
