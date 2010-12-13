@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2319 2010/12/13 08:49:24 acm Exp $
+# $FreeBSD: ports/MOVED,v 1.2320 2010/12/13 08:50:40 acm Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4714,3 +4714,4 @@ emulators/mupen64plus-rice|emulators/mupen64plus-video-rice|2010-12-13|Port was 
 emulators/mupen64plus-dummyaudio||2010-12-13|Port was removed, now it is obsolete
 emulators/mupen64plus-dummyvideo||2010-12-13|Port was removed, now it is obsolete
 emulators/mupen64plus-glide||2010-12-13|Port was removed, now it is obsolete
+emulators/mupen64plus-gln64||2010-12-13|Port was removed, now it is obsolete
