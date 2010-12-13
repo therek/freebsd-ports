@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2313 2010/12/13 08:42:19 acm Exp $
+# $FreeBSD: ports/MOVED,v 1.2314 2010/12/13 08:43:24 acm Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4708,4 +4708,4 @@ devel/libltdl22|devel/libltdl|2010-12-08|Autotools cleanup
 devel/rubygem-image_science|graphics/rubygem-image_science|2010-12-11|Moved category
 emulators/mupen64plus-base|emulators/mupen64plus-core|2010-12-13|Port was renamed
 emulators/mupen64plus-sdlaudio|emulators/mupen64plus-audio-sdl|2010-12-13|Port was renamed
-
+emulators/mupen64plus-sdlinput|emulators/mupen64plus-input-sdl|2010-12-13|Port was renamed
