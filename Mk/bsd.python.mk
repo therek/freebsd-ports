@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.122 2010/09/12 09:07:43 wen Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.123 2010/11/29 06:29:13 wen Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -371,9 +371,9 @@ PYTHON_PORTVERSION=	${PYTHON_DEFAULT_PORTVERSION}
 
 # Python-3.1
 .if ${PYTHON_VERSION} == "python3.1"
-PYTHON_PORTVERSION?=3.1.2
+PYTHON_PORTVERSION?=3.1.3
 PYTHON_PORTSDIR=	${PORTSDIR}/lang/python31
-PYTHON_REL=			312
+PYTHON_REL=			313
 PYTHON_SUFFIX=		31
 PYTHON_VER=			3.1
 
