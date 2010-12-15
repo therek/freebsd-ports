@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/gaeutilities/pkg-plist,v 1.1 2009/08/18 13:03:50 nivit Exp $
+@comment $FreeBSD: ports/www/gaeutilities/pkg-plist,v 1.2 2009/10/13 08:41:00 nivit Exp $
 %%PYTHON_SITELIBDIR%%/appengine_utilities/__init__.py
 %%PYTHON_SITELIBDIR%%/appengine_utilities/__init__.pyc
 %%PYTHON_SITELIBDIR%%/appengine_utilities/__init__.pyo
@@ -43,7 +43,6 @@
 %%PYTHON_SITELIBDIR%%/appengine_utilities/interface/templates/404.html
 %%PYTHON_SITELIBDIR%%/appengine_utilities/interface/templates/base.html
 %%PYTHON_SITELIBDIR%%/appengine_utilities/interface/templates/scheduler_form.html
-%%PYTHON_SITELIBDIR%%/appengine_utilities/paginator.pyc
 %%PYTHON_SITELIBDIR%%/appengine_utilities/rotmodel.py
 %%PYTHON_SITELIBDIR%%/appengine_utilities/rotmodel.pyc
 %%PYTHON_SITELIBDIR%%/appengine_utilities/rotmodel.pyo
