@@ -5,6 +5,21 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20101216:
+  AFFECTS: users of databases/akonadi
+  AUTHOR: avilla@FreeBSD.org
+
+  With SQLite 3 installed, Akonadi used to build its plugin and
+  install it in a wrong place, without it being listed in plist. To
+  remove the orphaned file, run the following commands PRIOR TO the
+  Akonadi upgrade:
+
+  # cd /usr/ports/databases/akonadi
+  # rm `make -V KDE4_PREFIX`/`make -V QT_PLUGINDIR_REL`/sqldrivers/libqsqlite3.so
+  # rmdir `make -V KDE4_PREFIX`/`make -V QT_PLUGINDIR_REL`/sqldrivers \
+    `make -V KDE4_PREFIX`/`make -V QT_PLUGINDIR_REL` \
+    `make -V KDE4_PREFIX`/`make -V QT_LIBDIR_REL`
+
 20101214:
   AFFECTS: users of devel/icu
   AUTHOR: bapt@FreeBSD.org
@@ -10050,4 +10065,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.1008 2010/12/12 06:03:43 tota Exp $
+$FreeBSD: ports/UPDATING,v 1.1009 2010/12/15 11:37:46 bapt Exp $
