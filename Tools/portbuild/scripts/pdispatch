@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/Tools/portbuild/scripts/pdispatch,v 1.35 2010/12/01 02:27:35 linimon Exp $
+# $FreeBSD: ports/Tools/portbuild/scripts/pdispatch,v 1.36 2010/12/16 07:34:58 linimon Exp $
 
 #
 # pdispatch <arch> <branch> <buildid> <host> <command> <package.tbz> [<args> ...]
@@ -177,7 +177,7 @@ else
     ${scp_cmd} ${client_user}@${host}:${chroot}/tmp/${pkgname}.log ${log}
     result=$?
     if [ $result -ne 0 ]; then
-	(echo ${chroot}@${host}; echo "huh? ${client_user}"; ${ssh_cmd} -a -n ${client_user}@${host} ls -laR ${chroot}/tmp) | mail -s "${pkgname} logfile not found" ${mailto}
+	(echo ${chroot}@${host}; ${ssh_cmd} -a -n ${client_user}@${host} ls -laR ${chroot}/tmp) | mail -s "${pkgname} logfile not found" ${mailto}
     else
 	if ! grep -q "even though it is marked BROKEN" ${log}; then
 	    buildlogdir=$(realpath ${builddir}/logs/)
