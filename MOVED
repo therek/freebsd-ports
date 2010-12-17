@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2324 2010/12/15 19:29:46 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2325 2010/12/16 07:28:44 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4721,3 +4721,4 @@ emulators/mupen64plus-input||2010-12-13|Port was removed, now it is obsolete
 misc/zaptel||2010-12-14|Superseded by misc/dahdi
 japanese/mozilla-jlp||2010-12-15|Has expired: Depends on obsolete port www/mozilla
 devel/icu2|devel/icu|2010-12-16|Removed: now obsolete and unused please use newer devel/icu instead
+devel/icu4|devel/icu|2010-12-17|Removed: devel/icu is now following 4.x version
