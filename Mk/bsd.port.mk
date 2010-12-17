@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.660 2010/12/04 07:30:13 ade Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.661 2010/12/09 20:33:02 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -608,6 +608,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  Default: ${MASTERDIR}/files
 # PKGDIR		- A directory containing any package creation files.
 #				  Default: ${MASTERDIR}
+# SRC_BASE		- The root of the src tree.  (Some ports require this to get
+#				  kernel sources).  Default: /usr/src
 # UID_FILES		- A list of files containing information about registered UIDs.
 # 				  Note that files have decreasing priority.
 # GID_FILES		- A list of files containing information about registered GIDs.
@@ -1157,6 +1159,7 @@ LINUXBASE?=		/compat/linux
 DISTDIR?=		${PORTSDIR}/distfiles
 _DISTDIR?=		${DISTDIR}/${DIST_SUBDIR}
 INDEXDIR?=		${PORTSDIR}
+SRC_BASE?=		/usr/src
 
 .include "${PORTSDIR}/Mk/bsd.commands.mk"
 
@@ -3437,8 +3440,6 @@ describe:
 
 # Pre-everything
 
-# XXX MCL suggests deprecating this in favor of something
-# less likely to be abused by overloading
 pre-everything::
 	@${DO_NADA}
 
