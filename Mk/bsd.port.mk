@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.662 2010/12/17 03:21:19 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.663 2010/12/17 03:25:12 linimon Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1553,7 +1553,7 @@ PERL=		${LOCALBASE}/bin/perl
 .include "${PORTSDIR}/Mk/bsd.qt.mk"
 .endif
 
-.if defined(WANT_GECKO) || defined(USE_GECKO)
+.if defined(WANT_GECKO) || defined(USE_GECKO) || defined(USE_FIREFOX) || defined(USE_FIREFOX_BUILD) || defined(USE_SEAMONKEY) || defined(USE_SEAMONKEY_BUILD) || defined(USE_THUNDERBIRD) || defined(USE_THUNDERBIRD_BUILD)
 .include "${PORTSDIR}/Mk/bsd.gecko.mk"
 .endif
 
