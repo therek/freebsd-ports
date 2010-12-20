@@ -2,7 +2,7 @@
 # ex:ts=4
 #
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.75 2008/07/19 17:59:41 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.76 2010/05/25 15:18:06 pav Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -377,9 +377,9 @@ README.html:
 	PYTHON_DEFAULT_VERSION="${PYTHON_DEFAULT_VERSION}" \
 	PYTHON_DEFAULT_PORTVERSION="${PYTHON_DEFAULT_PORTVERSION}" \
 	PYTHONBASE="${PYTHONBASE}" \
-	_JAVA_VERSION_LIST_REGEXP="${_JAVA_VERSION_LIST_REGEXP}" \
-	_JAVA_VENDOR_LIST_REGEXP="${_JAVA_VENDOR_LIST_REGEXP}" \
-	_JAVA_OS_LIST_REGEXP="${_JAVA_OS_LIST_REGEXP}" \
+	_JAVA_VERSION_LIST_REGEXP="${_JAVA_VERSION_LIST_REGEXP:Q}" \
+	_JAVA_VENDOR_LIST_REGEXP="${_JAVA_VENDOR_LIST_REGEXP:Q}" \
+	_JAVA_OS_LIST_REGEXP="${_JAVA_OS_LIST_REGEXP:Q}" \
 	_JAVA_PORTS_INSTALLED="${_JAVA_PORTS_INSTALLED}"
 .endif
 
