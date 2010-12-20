@@ -1,8 +1,8 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/java/java-checkstyle/files/checkstyle.sh.in,v 1.1 2006/02/15 13:41:03 hq Exp $
+# $FreeBSD: ports/java/java-checkstyle/files/checkstyle.sh.in,v 1.2 2006/03/22 18:33:29 hq Exp $
 
 JAVA_VERSION="%%JAVA_VERSION%%" \
 	exec "%%LOCALBASE%%/bin/java" \
-	-cp "%%JAVAJARDIR%%/checkstyle.jar:%%JAVAJARDIR%%/checkstyle-optional.jar" \
+	-cp "%%JAVAJARDIR%%/checkstyle.jar" \
 	com.puppycrawl.tools.checkstyle.Main "$@"
