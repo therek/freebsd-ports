@@ -1,13 +1,13 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/databases/firebird20-server/pkg-plist,v 1.20 2009/08/02 19:32:40 mezz Exp $
 bin/fb_inet_server
 bin/fb_lock_mgr
 bin/fb_lock_print
+bin/fbstat
 bin/gbak
 bin/gdef
 bin/gds_drop
 bin/gfix
 bin/gsec
-bin/gstat
 bin/nbackup
 libexec/firebird/intl/fbintl
 libexec/firebird/intl/fbintl.conf
