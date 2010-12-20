@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.46 2010/09/20 13:46:46 girgen Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.47 2010/09/21 12:20:26 mandree Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -474,7 +474,7 @@ USE_FIREBIRD=	${WITH_FIREBIRD_VER}
 .endif
 
 .if ${USE_FIREBIRD:L} == "yes"
-FIREBIRD_VER=	20
+FIREBIRD_VER=	25
 .else
 FIREBIRD_VER=	${USE_FIREBIRD}
 .endif
@@ -483,6 +483,10 @@ FIREBIRD_VER=	${USE_FIREBIRD}
 LIB_DEPENDS+=	fbclient.2:${PORTSDIR}/databases/firebird20-client
 .elif ${FIREBIRD_VER} == "20"
 LIB_DEPENDS+=	fbclient.2:${PORTSDIR}/databases/firebird20-client
+.elif ${FIREBIRD_VER} == "21"
+LIB_DEPENDS+=	fbclient.2:${PORTSDIR}/databases/firebird21-client
+.elif ${FIREBIRD_VER} == "25"
+LIB_DEPENDS+=	fbclient.2:${PORTSDIR}/databases/firebird25-client
 .else
 IGNORE=		cannot install: unknown Firebird version: ${FIREBIRD_VER}
 .endif
