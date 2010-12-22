@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.118 2010/12/14 06:11:03 mi Exp $
+# $FreeBSD: ports/GIDs,v 1.119 2010/12/20 19:08:03 ohauer Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -180,5 +180,6 @@ nslcd:*:928:
 activemq:*:929:
 ifgraph:*:930:
 asterisk:*:931:
+torrus:*:932:www
 sancp:*:932:
 dlna:*:933:
