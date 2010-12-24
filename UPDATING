@@ -89,7 +89,7 @@ you update your ports collection, before attempting any port upgrades.
   AFFECTS: users of multimedia/avidemux2
   AUTHOR: nox@FreeBSD.org
 
-  The port has been updated to 2.5.4 which now installs plugins seperately
+  The port has been updated to 2.5.4 which now installs plugins separately
   and I had to make a slave port for them, multimedia/avidemux2-plugins.
   So you'll now have to install that port too for the app to become useful.
 
@@ -10095,4 +10095,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.1011 2010/12/16 16:05:15 glarkin Exp $
+$FreeBSD: ports/UPDATING,v 1.1012 2010/12/20 19:08:03 ohauer Exp $
