@@ -1,16 +1,17 @@
+bin/msql2mysql
 bin/mysql
 bin/mysql_config
-bin/mysql_upgrade
+bin/mysql_find_rows
+bin/mysql_waitpid
+bin/mysqlaccess
+bin/mysqlaccess.conf
 bin/mysqladmin
 bin/mysqlbinlog
-bin/mysqlbug
 bin/mysqlcheck
 bin/mysqldump
 bin/mysqlimport
 bin/mysqlshow
 bin/mysqlslap
-bin/mysqltest
-include/mysql/client_plugin.h
 include/mysql/decimal.h
 include/mysql/errmsg.h
 include/mysql/keycache.h
@@ -30,6 +31,23 @@ include/mysql/my_no_pthread.h
 include/mysql/my_pthread.h
 include/mysql/my_sys.h
 include/mysql/my_xml.h
+include/mysql/mysql/client_plugin.h
+include/mysql/mysql/innodb_priv.h
+include/mysql/mysql/plugin.h
+include/mysql/mysql/plugin_audit.h
+include/mysql/mysql/plugin_auth.h
+include/mysql/mysql/plugin_auth_common.h
+include/mysql/mysql/plugin_ftparser.h
+include/mysql/mysql/psi/mysql_file.h
+include/mysql/mysql/psi/mysql_thread.h
+include/mysql/mysql/psi/psi.h
+include/mysql/mysql/psi/psi_abi_v1.h
+include/mysql/mysql/psi/psi_abi_v2.h
+include/mysql/mysql/service_my_snprintf.h
+include/mysql/mysql/service_thd_alloc.h
+include/mysql/mysql/service_thd_wait.h
+include/mysql/mysql/service_thread_scheduler.h
+include/mysql/mysql/services.h
 include/mysql/mysql.h
 include/mysql/mysql_com.h
 include/mysql/mysql_embed.h
@@ -37,37 +55,20 @@ include/mysql/mysql_time.h
 include/mysql/mysql_version.h
 include/mysql/mysqld_ername.h
 include/mysql/mysqld_error.h
-include/mysql/plugin_audit.h
-include/mysql/plugin_auth_common.h
-include/mysql/plugin_auth.h
-include/mysql/plugin_ftparser.h
-include/mysql/plugin.h
-include/mysql/probes_mysql.h
-include/mysql/probes_mysql_nodtrace.h
-include/mysql/psi/mysql_file.h
-include/mysql/psi/mysql_thread.h
-include/mysql/psi/psi.h
-include/mysql/services.h
-include/mysql/service_my_snprintf.h
-include/mysql/service_thd_alloc.h
-include/mysql/service_thd_wait.h
-include/mysql/service_thread_scheduler.h
 include/mysql/sql_common.h
 include/mysql/sql_state.h
 include/mysql/sslopt-case.h
 include/mysql/sslopt-longopts.h
 include/mysql/sslopt-vars.h
 include/mysql/typelib.h
-lib/mysql/libmysqlclient.a
-lib/mysql/libmysqlclient.la
-lib/mysql/libmysqlclient.so
-lib/mysql/libmysqlclient.so.16
-lib/mysql/libmysqlclient_r.a
-lib/mysql/libmysqlclient_r.la
-lib/mysql/libmysqlclient_r.so
-lib/mysql/libmysqlclient_r.so.16
+lib/libmysqlclient.a
+lib/libmysqlclient.so
+lib/libmysqlclient.so.16
+lib/libmysqlclient_r.a
+lib/libmysqlclient_r.so
+lib/libmysqlclient_r.so.16
+lib/libmysqlservices.a
 share/aclocal/mysql.m4
-@dirrm include/mysql/psi
+@dirrm include/mysql/mysql/psi
+@dirrm include/mysql/mysql
 @dirrm include/mysql
-@dirrm lib/mysql
-@dirrmtry %%DATADIR%%
