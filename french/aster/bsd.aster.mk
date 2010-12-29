@@ -1,7 +1,7 @@
 # Date created:			  Tue Sep 14, 2010
 # Whom:				  Thierry Thomas (<thierry@pompo.net>)
 #
-# $FreeBSD: ports/french/aster/bsd.aster.mk,v 1.1 2010/09/16 21:23:10 thierry Exp $
+# $FreeBSD: ports/french/aster/bsd.aster.mk,v 1.2 2010/10/28 21:00:11 erwin Exp $
 #
 # Common variables used by ports related to Code_Aster
 
@@ -11,8 +11,8 @@ MASTER_SITES=	http://www.code-aster.org/V2/UPLOAD/DOC/Telechargement/
 DISTNAME=	aster-${DISTVERSIONPREFIX}${ASTER_DISTVERSION}${DISTVERSIONSUFFIX}
 DISTINFO_FILE=	${.CURDIR}/../../french/aster/distinfo
 
-ASTER_VER=	10.2.0
-ASTER_DISTVERSION=	${ASTER_VER}-2
+ASTER_VER=	10.3.0
+ASTER_DISTVERSION=	${ASTER_VER}-3
 EXTRACT_WRKSRC=	${WRKDIR}/aster-${DISTVERSIONPREFIX}${ASTER_VER}/SRC
 
 .if ${PORTNAME} == metis-edf
