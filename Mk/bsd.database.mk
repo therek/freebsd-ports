@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.47 2010/09/21 12:20:26 mandree Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.48 2010/12/20 22:15:02 acm Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -155,7 +155,7 @@ IGNORE=		cannot install: does not work with MySQL version ${MYSQL_VER} (MySQL ${
 .if (${USE_MYSQL} == "server" || ${USE_MYSQL} == "embedded")
 RUN_DEPENDS+=	${LOCALBASE}/libexec/mysqld:${PORTSDIR}/databases/mysql${MYSQL_VER}-server
 .if (${USE_MYSQL} == "embedded")
-BUILD_DEPENDS+=	${LOCALBASE}/lib/mysql/libmysqld.a:${PORTSDIR}/databases/mysql${MYSQL_VER}-server
+BUILD_DEPENDS+=	${LOCALBASE}/libexec/mysqld:${PORTSDIR}/databases/mysql${MYSQL_VER}-server
 .endif
 .else
 LIB_DEPENDS+=	mysqlclient.${MYSQL${MYSQL_VER}_LIBVER}:${PORTSDIR}/databases/mysql${MYSQL_VER}-client
