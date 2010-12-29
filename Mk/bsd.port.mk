@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.664 2010/12/18 11:15:33 beat Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.665 2010/12/22 20:05:40 ade Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2501,9 +2501,6 @@ PKG_ARGS+=		-o ${PKGORIGIN}
 .endif
 .if defined(CONFLICTS) && !defined(DISABLE_CONFLICTS)
 PKG_ARGS+=		-C "${CONFLICTS}"
-.endif
-.if defined(CONFLICTS_BUILD) && !defined(DISABLE_CONFLICTS)
-PKG_ARGS+=		-C "${CONFLICTS_BUILD}"
 .endif
 .if defined(CONFLICTS_INSTALL) && !defined(DISABLE_CONFLICTS)
 PKG_ARGS+=		-C "${CONFLICTS_INSTALL}"
