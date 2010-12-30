@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
 20101230:
+  AFFECTS: users of databases/postgresql??-(server|client)
+  AUTHOR: ohauer@FreeBSD.org
+
+  PostgreSQL version 8.4 is now the default. To upgrade from a version
+  lower than 8.4, follow the instructions on the PostgreSQL.org website.
+  http://www.postgresql.org/docs/8.4/interactive/install-upgrading.html
+
+20101230:
   AFFECTS: users of net-mgmt/pnp
   AUTHOR: rea@FreeBSD.org
 
@@ -10124,4 +10132,4 @@ have to modify your ~/.procmailrc files. Please read upgrading.html in
   2) Update all p5-* modules:
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.1015 2010/12/27 15:02:37 ale Exp $
+$FreeBSD: ports/UPDATING,v 1.1016 2010/12/30 17:25:46 rea Exp $
