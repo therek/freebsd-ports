@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.49 2010/12/29 08:19:33 ale Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.50 2010/12/30 19:30:53 ohauer Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -39,10 +39,10 @@ Database_Include_MAINTAINER=	ports@FreeBSD.org
 #				  If no version is given (by the maintainer via the port or
 #				  by the user via defined variable), try to find the
 #				  currently installed version.  Fall back to default if
-#				  necessary (PostgreSQL-8.2 = 82).
+#				  necessary (PostgreSQL-8.4 = 84).
 # DEFAULT_PGSQL_VER
 #				- PostgreSQL default version.  Can be overridden within a
-#				  port.  Default: 82.
+#				  port.  Default: 84.
 # WANT_PGSQL_VER
 #				- Maintainer can set an arbitrary version of PostgreSQL to
 #				  always build this port with (overrides WITH_PGSQL_VER).
