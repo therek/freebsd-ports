@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2328 2010/12/27 15:02:37 ale Exp $
+# $FreeBSD: ports/MOVED,v 1.2329 2010/12/31 17:35:08 rene Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4735,7 +4735,7 @@ graphics/paintlib||2010-12-31|Has expired: does not compile with new tiff and no
 graphics/g3dviewer||2010-12-31|Has expired: does not build with gcc 4.2, upstream disapeared
 lang/scriba||2010-12-31|Has expired: Does not compile with gcc 4.2+, looks like abandonware
 math/rascal||2010-12-31|Has expired: Broken on every arch since 2008, looks like an abandonware
-net-mgmt/nrg||2010-12-31|Has expired: Project has vanished. Use cacti instead.
+net-mgmt/nrg|net-mgmt/cacti|2010-12-31|Has expired: Project has vanished. Use cacti instead.
 security/hostsentry||2010-12-31|Has expired: Project is dead.
 sysutils/kcube||2010-12-31|Has expired: Project has vanished
 www/cybercalendar||2010-12-31|Has expired: has been unmaintained since 2001 and is unusable with dates after 2010 (see ports/150974)
