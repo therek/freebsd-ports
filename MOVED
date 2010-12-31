@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2329 2010/12/31 17:35:08 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2330 2010/12/31 17:38:21 rene Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -4742,3 +4742,4 @@ www/cybercalendar||2010-12-31|Has expired: has been unmaintained since 2001 and 
 www/flock||2010-12-31|Has expired: Flock 3 moves from Firefox to Chromium
 www/linux-flock||2010-12-31|Has expired: Flock 3 moves from Firefox to Chromium
 x11-clocks/xtu||2010-12-31|Has expired: Looks like abandonware
+java/tya||2010-12-31|Has expired: looks like abandonware and does not compile wth gcc4.2
