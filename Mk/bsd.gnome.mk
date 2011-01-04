@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.164 2010/12/04 07:30:13 ade Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.165 2011/01/04 03:32:15 mezz Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.512 2010/10/26 09:02:45 kwm Exp $
 #
@@ -73,7 +73,7 @@ _USE_GNOME_ALL= esound intlhack intltool ltasneededhack lthack ltverhack \
 		gnometarget pkgconfig
 
 # GNOME 1 components
-_USE_GNOME_ALL+= bonobo gal gconf gdkpixbuf glib12 glibwww \
+_USE_GNOME_ALL+= bonobo gal gconf gdkpixbuf glib12 \
 		gnomecanvas gnomedb gnomelibs gnomeprint gnomevfs gtk12 \
 		libgda libghttp libglade libxml imlib oaf orbit pygtk
 
@@ -248,10 +248,6 @@ libglade_USE_GNOME_IMPL=gnomedb
 gal_LIB_DEPENDS=	gal.23:${PORTSDIR}/x11-toolkits/gal
 gal_DETECT=		${LOCALBASE}/etc/galConf.sh
 gal_USE_GNOME_IMPL=	libglade
-
-glibwww_LIB_DEPENDS=	glibwww.1:${PORTSDIR}/www/glibwww
-glibwww_DETECT=		${LOCALBASE}/etc/glibwwwConf.sh
-glibwww_USE_GNOME_IMPL=	gnomelibs
 
 pygtk_DETECT=			${LOCALBASE}/bin/pygtk-codegen-1.2
 pygtk_BUILD_DEPENDS=	${pygtk_DETECT}:${PORTSDIR}/x11-toolkits/py-gtk
