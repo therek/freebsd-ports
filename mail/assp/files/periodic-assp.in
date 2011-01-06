@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/assp/files/periodic-assp.sh.in,v 1.5 2010/03/27 00:13:10 dougb Exp $
+# $FreeBSD: ports/mail/assp/files/periodic-assp.in,v 1.1 2010/12/12 01:09:48 pgollucci Exp $
 #
 # Run ASSP's nightly housekeeping script, rebuildspamdb.pl
 # Delete old ASSP log files
@@ -15,7 +15,7 @@ else
 	echo ""
 	echo "Running ASSP rebuildspamdb.pl:"
 	%%PERL%% %%DATADIR%%/rebuildspamdb.pl && rc_spamdb=0 || rc_spamdb=3
-	chown -R assp:assp %%DATADIR%%
+	chown -R %%ASSP_USER%%:%%ASSP_GROUP%% %%ASSP_HOME%%
 fi
 
 . /etc/rc.subr
