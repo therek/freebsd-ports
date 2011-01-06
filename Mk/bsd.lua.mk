@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.19 2008/08/25 20:20:50 alepulver Exp $
+# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.20 2010/08/26 11:00:36 philip Exp $
 #
 # bsd.lua.mk - Support for Lua based ports.
 #
@@ -157,7 +157,7 @@ _LUA_VERS_ALL=			4.0 5.0 5.1
 _LUA_PLIST_ALL=			LUA_VER LUA_VER_SH LUA_VER_STR LUA_PREFIX LUA_SUBDIR
 _LUA_PLIST_DIR_ALL=		LUA_BINDIR LUA_INCDIR LUA_LIBDIR \
 						LUA_MODLIBDIR LUA_MODSHAREDIR
-_LUA_VERS_LISTS=		WANT_LUA_VER WITH_LUA_VER _LUA_VER_INSTALLED
+_LUA_VERS_LISTS=		_LUA_VER_INSTALLED WANT_LUA_VER WITH_LUA_VER
 
 #
 # Variables used to determine what is needed.
