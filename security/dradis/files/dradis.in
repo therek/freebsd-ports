@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/dradis/files/dradis.in,v 1.1 2010/08/12 20:51:33 ohauer Exp $
 #
 # PROVIDE: dradis
 # REQUIRE: LOGIN
@@ -34,12 +34,14 @@ initdb_cmd="dradis_initdb"
 
 dradis_initdb()
 {
-    cd %%INSTDIR%%/server && %%PREFIX%%/bin/rake dradis:reset
+    cd %%INSTDIR%%/server &&
+    env RAILS_ENV=production %%PREFIX%%/bin/rake dradis:reset
 }
 
 dradis_start()
 {
-    %%RUBY_CMD%% %%INSTDIR%%/server/script/server -d -b ${dradis_bindip} -p ${dradis_port}
+    cd %%INSTDIR%%/server  &&
+    env RAILS_ENV=production %%RUBY_CMD%% script/rails server -d -b ${dradis_bindip} -p ${dradis_port}
 }
 
 load_rc_config $name
