@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/zenphoto/files/pkg-deinstall.in,v 1.1 2007/12/29 15:03:42 tabthorpe Exp $
 #
 
 PATH=/bin:/usr/bin:/usr/sbin
@@ -8,5 +8,5 @@ if [ "$2" != "POST-DEINSTALL" ]; then
     exit 0
 fi
 if [ -d %%WWWDIR%% ]; then
-        echo "===> You may delete '%%WWWDIR%%' if you want to really delete your blog."
+        echo "===> You may delete '%%WWWDIR%%' if you want to really delete your gallery."
 fi
