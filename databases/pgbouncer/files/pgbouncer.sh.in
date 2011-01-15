@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/pgbouncer/files/pgbouncer.sh.in,v 1.3 2009/07/15 16:55:39 dougb Exp $
+# $FreeBSD: ports/databases/pgbouncer/files/pgbouncer.sh.in,v 1.4 2010/03/27 00:12:48 dougb Exp $
 #
 
 # PROVIDE: pgbouncer
@@ -10,26 +10,28 @@
 
 # Add the following lines to /etc/rc.conf to enable pgbouncer:
 #
-# pgbouncer_enable="YES"
-# pgbouncer_flags="<set as needed>"
-#
+# pgbouncer_enable (bool):      Set to "YES" to enable pgbouncer
+#                               Default is "NO".
+# pgbouncer_conf (path):        Set full path to configuration file.
+#                               Default is "%%PREFIX%%/etc/pgbouncer.ini".
+# pgbouncer_flags (string):     Additional flags passed to pgbouncer.
+#                               Default is "".
 
 . /etc/rc.subr
 
 name="pgbouncer"
 rcvar=`set_rcvar`
 
+load_rc_config "$name"
+: ${pgbouncer_enable="NO"}
+: ${pgbouncer_user="pgbouncer"}
+: ${pgbouncer_conf="%%PREFIX%%/etc/$name.ini"}
+
 extra_commands="reload"
 
 command="%%PREFIX%%/bin/pgbouncer"
-config_file="%%PREFIX%%/etc/$name.ini"
-command_args="-d ${config_file}"
 pidfile="%%PGBOUNCER_RUNDIR%%/$name.pid"
-required_files="${config_file}"
-
-# read configuration and set defaults
-load_rc_config "$name"
-: ${pgbouncer_enable="NO"}
-: ${pgbouncer_user="%%PGBOUNCER_USER%%"}
+required_files="${pgbouncer_conf}"
+command_args="-d ${pgbouncer_conf}"
 
 run_rc_command "$1"
