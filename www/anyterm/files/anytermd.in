@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/anyterm/files/anytermd.in,v 1.1 2009/11/21 10:18:54 miwi Exp $
+# $FreeBSD: ports/www/anyterm/files/anytermd.in,v 1.2 2010/03/27 00:15:08 dougb Exp $
 #
 
 # PROVIDE: anytermd
@@ -16,7 +16,7 @@
 # anytermd_flags (str):     Set to "-c /usr/bin/login -u nobody --local-only"
 #                           by default. See anytermd(1) for flags.
 #
-# anytermd_name (str):		Set to "anyterm" by default.
+# anytermd_name (str):      Set to "anyterm" by default.
 #
 
 . /etc/rc.subr
