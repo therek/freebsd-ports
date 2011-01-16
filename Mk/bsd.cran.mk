@@ -1,7 +1,7 @@
 # Date created:		2009-01-25
 # Whom:			Wen Heping <wenheping@gmail.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.cran.mk,v 1.4 2010/09/26 07:59:13 tota Exp $
 #
 
 CRAN_Include_MAINTAINER=	wen@FreeBSD.org
@@ -9,6 +9,14 @@ CRAN_Include_MAINTAINER=	wen@FreeBSD.org
 .if defined(USE_R_MOD)
 MASTER_CRAN_SITES+=	http://mirrors.geoexpat.com/cran/src/contrib/ \
 			http://cran.rakanu.com/src/contrib/ \
+			http://cran.ms.unimelb.edu.au/src/contrib/ \
+			http://mirror.its.dal.ca/cran/src/contrib/ \
+			http://mirrors.dotsrc.org/cran/src/contrib/ \
+			http://cran.univ-lyon1.fr/src/contrib/ \
+			http://ftp5.gwdg.de/pub/misc/cran/src/contrib/ \
+			http://cran.stat.unipd.it/src/contrib/ \
+			http://cran.md.tsukuba.ac.jp/src/contrib/ \
+			http://mirrors.ibiblio.org/pub/mirrors/CRAN/src/contrib/ \
 			http://cran.cnr.berkeley.edu/src/contrib/
 .endif
 
