@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2281 2011/01/19 08:46:28 flo Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2282 2011/01/19 09:19:48 flo Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -47,7 +47,7 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
 	<name>asterisk18</name>
-	<range><gt>1.8.*</gt><lt>1.8.2.1</lt></range>
+	<range><gt>1.8.*</gt><lt>1.8.2.2</lt></range>
       </package>
     </affects>
     <description>
