@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2283 2011/01/21 01:23:43 flo Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2284 2011/01/23 13:41:34 rene Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -1165,7 +1165,7 @@ Note:  Please add new entries to the beginning of this file.
 	    [66560] High Stale pointer with CSS + canvas. Credit to Sergey
 	      Glazunov.<br/>
 	    [66748] High Stale pointer with CSS + cursors. Credit to Jan
-	      Tosovsk&yacute;.<br/>
+	      Tosovsk.<br/>
 	    [67100] High Use after free in PDF page handling. Credit to Google
 	      Chrome Security Team (Chris Evans).<br/>
 	    [67208] High Stack corruption after PDF out-of-memory condition.
