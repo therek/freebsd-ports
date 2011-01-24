@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.632 2010/11/29 10:28:37 bapt Exp $
+# $FreeBSD: ports/LEGAL,v 1.633 2010/12/31 17:38:21 rene Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -88,8 +88,6 @@ ccc-*.alpha.rpm		lang/compaq-cc		Distribution not allowed
 citrix_ica-*		net/citrix_ica		License prohibits redistribution
 cli_freebsd*		sysutils/arcconf	May not be redistributed
 cfs-*			security/cfs		Crypto; export-controlled
-code2000-*/CODE2000.ZIP	x11-fonts/code2000	Only unmodified original
-						package can be distributed
 contool-*		sysutils/contool	Do not incorporate the source
 						code into a product which is
 						subsequently sold
