@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2341 2011/01/13 09:21:02 makc Exp $
+# $FreeBSD: ports/MOVED,v 1.2342 2011/01/15 04:17:49 fjoe Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1522,3 +1522,4 @@ x11-toolkits/py-gnome||2011-01-03|Removed due to x11/libcapplet broke
 www/glibwww||2011-01-04|Removed due to no port depend on it
 math/octave-forge-spanish|math/octave-forge-es|2011-01-13|Replaced by math/octave-forge-es
 cvsnt||2011-01-15|Removed: abandoned upstream
+net-p2p/qbittorrent-23||2011-01-24|Old, no longer updated. Try net-p2p/qbittorrent-26
