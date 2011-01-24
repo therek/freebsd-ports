@@ -599,6 +599,12 @@ already been <a href="#pkgadd">added from a package</a>.</dd>
 from packages</a>. It is the fault of the package being added, not
 this port.</dd>
 
+<dt><img alt="(uncommon)" src="/errorlogs/images/purple-ball.gif"><a name=
+"dirent">dirent</a></dt>
+
+<dd>The port has not caught up with the change to <code>scandir(3)</code>
+as committed in FreeBSD version 800501.</dd>
+
 <dt><img alt="(transient)" src="/errorlogs/images/green-ball.gif"><a name=
 "df">disk full</a></dt>
 
@@ -965,7 +971,7 @@ longer sufficient in XFree86-4.</dd>
 | Maintained by <a href="mailto:portmgr@FreeBSD.org">portmgr@FreeBSD.org</a>
 | Last modified 
 <br>
-$FreeBSD: ports/Tools/portbuild/errorlogs/index.shtml,v 1.9 2010/03/30 21:14:16 linimon Exp $
+$FreeBSD: ports/Tools/portbuild/errorlogs/index.shtml,v 1.10 2010/10/07 13:13:35 linimon Exp $
 </center>
 </body></html>
 </html>
