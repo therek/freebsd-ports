@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/boxbackup/files/bbackupd.sh.in,v 1.2 2006/02/20 20:47:41 dougb Exp $
+# $FreeBSD: ports/sysutils/boxbackup-devel/files/bbackupd.sh.in,v 1.3 2010/03/27 00:14:53 dougb Exp $
 #
 # PROVIDE: bbackupd
 # REQUIRE: NETWORKING
