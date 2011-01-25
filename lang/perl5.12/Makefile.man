@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/perl5.12/Makefile.man,v 1.9 2010/07/15 14:48:51 skv Exp $
+# $FreeBSD: ports/lang/perl5.12/Makefile.man,v 1.10 2010/09/15 16:21:30 skv Exp $
 
 MAN1+=	a2p.1
 MAN1+=	c2ph.1
@@ -29,6 +29,7 @@ MAN1+=	perl5115delta.1
 MAN1+=	perl5120delta.1
 MAN1+=	perl5121delta.1
 MAN1+=	perl5122delta.1
+MAN1+=	perl5123delta.1
 MAN1+=	perl561delta.1
 MAN1+=	perl56delta.1
 MAN1+=	perl570delta.1

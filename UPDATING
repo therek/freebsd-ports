@@ -5,6 +5,18 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20110125:
+  AFFECTS: users of lang/perl5.12
+  AUTHOR: skv@FreeBSD.org
+
+  lang/perl5.12 has been updated to 5.12.3.  You should update everything
+  that depends on perl.  The easiest way to do that is to use
+  "perl-after-upgrade" script supplied with lang/perl5.12.
+  Please see its manual page for details.
+
+  If you want to switch to lang/perl5.12 from lang/perl5.{8,10} please
+  follow instructions in the entry 20100715 in this file.
+
 20110124:
   AFFECTS: users of mail/postfix
   AUTHOR: sahil@FreeBSD.org
@@ -4245,4 +4257,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1023 2011/01/14 13:36:46 decke Exp $
+$FreeBSD: ports/UPDATING,v 1.1024 2011/01/24 23:38:42 sahil Exp $
