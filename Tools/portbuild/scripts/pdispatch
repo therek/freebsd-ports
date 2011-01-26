@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/Tools/portbuild/scripts/pdispatch,v 1.38 2011/01/23 03:06:44 linimon Exp $
+# $FreeBSD: ports/Tools/portbuild/scripts/pdispatch,v 1.39 2011/01/24 01:58:21 linimon Exp $
 
 #
 # pdispatch <arch> <branch> <buildid> <host> <command> <package.tbz> [<args> ...]
@@ -199,5 +199,5 @@ if grep -q "^build of .*ended at" ${builddir}/logs/${pkgname}.log; then
     exit ${error}
 else
     echo "Build of ${pkgname} in ${host}:/${chroot} failed uncleanly"
-    exit 254
+    exit 255
 fi
