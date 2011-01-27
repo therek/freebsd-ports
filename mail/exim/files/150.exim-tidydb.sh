@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/exim/files/150.exim-tidydb.sh,v 1.1 2003/09/10 13:49:09 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/files/150.exim-tidydb.sh,v 1.2 2004/10/11 23:48:25 eik Exp $
 #
 # Exim hints database maintenance
 # 
@@ -25,7 +25,10 @@ case "$exim_tidydb_enable" in
 	for db in "$exim_dbdir"/db/*.lockfile; do
 	    [ "$db" = "$exim_dbdir/db/*.lockfile" ] && continue
 	    echo
-	    "$exim_tidydb" "$exim_dbdir" `basename "$db" .lockfile`
+	    db_name=`basename "$db" .lockfile`
+	    if [ -e "${exim_dbdir}/db/${db_name}" ]; then
+	        "$exim_tidydb" "$exim_dbdir" "$db_name"
+	    fi
 	done
 	rc=1;;
 
