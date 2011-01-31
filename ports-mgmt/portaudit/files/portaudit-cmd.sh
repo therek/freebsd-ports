@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/ports-mgmt/portaudit/files/portaudit-cmd.sh,v 1.16 2009/10/21 08:30:57 remko Exp $
+# $FreeBSD: ports/ports-mgmt/portaudit/files/portaudit-cmd.sh,v 1.17 2010/05/03 21:02:20 delphij Exp $
 #
 
 portaudit_confs()
@@ -440,7 +440,7 @@ elif $opt_verbose; then
 			print "Type of problem: " $3 "."
 			split($2, ref, / /)
 			for (r in ref)
-				print "Reference: <" ref[r] ">"
+				print "Reference: " ref[r]
 			if (note)
 				print "Note: " note
 			print ""
@@ -454,7 +454,7 @@ else
 			print "Type of problem: " $3 "."
 			split($2, ref, / /)
 			for (r in ref)
-				print "Reference: <" ref[r] ">"
+				print "Reference: " ref[r]
 			if (note)
 				print "Note: " note
 			print ""
