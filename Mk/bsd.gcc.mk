@@ -30,7 +30,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.48 2010/09/28 02:48:29 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.49 2010/10/17 11:24:50 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -201,6 +201,11 @@ LDFLAGS+=		-Wl,-rpath=${LOCALBASE}/lib/${_GCC_BUILD_DEPENDS}
 BUILD_DEPENDS+=	${_GCC_PORT_DEPENDS}:${PORTSDIR}/lang/${_GCC_BUILD_DEPENDS}
 . if ${_USE_GCC} != 3.4
 RUN_DEPENDS+=	${_GCC_PORT_DEPENDS}:${PORTSDIR}/lang/${_GCC_BUILD_DEPENDS}
+.  if ${_USE_GCC} != 4.2
+# Later GCC ports already depend on binutils; make sure whatever we
+# build leverages this as well.
+USE_BINUTILS=	yes
+.  endif
 . endif
 .endif
 .endif # defined(_USE_GCC)
