@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2291 2011/01/31 14:02:34 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2292 2011/02/02 15:45:11 kwm Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -46,7 +46,7 @@ Note:  Please add new entries to the beginning of this file.
       <body xmlns="http://www.w3.org/1999/xhtml">
 	<p>VLC team reports:</p>
 	<blockquote cite="http://www.videolan.org/security/sa1102.html">
-	  <p>When parsing an invalid MKV (Matroska or WebM) file, input 
+	  <p>When parsing an invalid MKV (Matroska or WebM) file, input
              validation are insufficient.</p>
 	</blockquote>
       </body>
