@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2345 2011/01/29 23:28:34 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2346 2011/02/01 16:35:53 garga Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1529,3 +1529,4 @@ audio/ecawave||2011-02-01|Has expired: has been broken for over one year
 mail/spamass-rules_du_jour||2011-02-01|Has expired: Use sa-update instead
 x11/accessx||2011-02-01|Has expired: Project abandoned, mastersite disappeared
 x11/kde3-apireference||2011-02-01|Has expired: outdated and obsolete
+misc/py-distutils||2011-02-02|Included in current python versions
