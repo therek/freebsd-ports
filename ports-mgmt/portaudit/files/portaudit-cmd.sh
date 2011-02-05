@@ -28,24 +28,28 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/ports-mgmt/portaudit/files/portaudit-cmd.sh,v 1.17 2010/05/03 21:02:20 delphij Exp $
+# $FreeBSD: ports/ports-mgmt/portaudit/files/portaudit-cmd.sh,v 1.18 2011/01/31 20:17:04 uqs Exp $
 #
 
 portaudit_confs()
 {
-	: ${portaudit_dir="%%DATABASEDIR%%"}
-	: ${portaudit_filename="auditfile.tbz"}
-
-	: ${portaudit_fetch_env=""}
-	: ${portaudit_fetch_cmd="fetch -1mp"}
-
-	: ${portaudit_sites="http://portaudit.FreeBSD.org/"}
-
-	: ${portaudit_fixed=""}
-
 	if [ -r %%PREFIX%%/etc/portaudit.conf ]; then
 		. %%PREFIX%%/etc/portaudit.conf
 	fi
+
+	if [ -r "${0%/*}/portaudit.conf" ]; then
+		. ${0%/*}/portaudit.conf
+	fi
+
+	: ${portaudit_dir:="%%DATABASEDIR%%"}
+	: ${portaudit_filename:="auditfile.tbz"}
+
+	: ${portaudit_fetch_env=""}
+	: ${portaudit_fetch_cmd:="fetch -1mp"}
+
+	: ${portaudit_sites:="http://portaudit.FreeBSD.org/"}
+
+	: ${portaudit_fixed=""}
 }
 
 extract_auditfile()
