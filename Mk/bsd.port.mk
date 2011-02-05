@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.665 2010/12/22 20:05:40 ade Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.666 2010/12/29 07:14:56 miwi Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3495,7 +3495,7 @@ check-vulnerable:
 		vlist=`${_EXTRACT_AUDITFILE} | ${GREP} "${PORTNAME}" | \
 			${AWK} -F\| ' /^[^#]/ { \
 				if (!system("${PKG_VERSION} -T \"${PKGNAME}\" \"" $$1 "\"")) \
-					print "=> " $$3 ".\n   Reference: <" $$2 ">" \
+					print "=> " $$3 ".\n   Reference: " $$2 \
 			} \
 		'`; \
 		if [ -n "$$vlist" ]; then \
