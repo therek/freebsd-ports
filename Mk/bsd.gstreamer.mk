@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.47 2010/09/13 16:05:49 kwm Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.48 2010/11/15 16:38:24 kwm Exp $
 #    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.43 2008/03/21 04:14:18 ahze Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -64,7 +64,7 @@ _USE_GSTREAMER10_ALL=	a52dec aalib amrnb amrwbdec annodex bz2 cairo \
 			vp8 wavpack x264 xvid
 
 # other plugins
-OTHER_GSTREAMER_PLUGINS+=bad good ugly core yes ${_USE_GSTREAMER10_ALL} fluendo-mp3 mad
+OTHER_GSTREAMER_PLUGINS+=bad good ugly core yes ${_USE_GSTREAMER10_ALL} fluendo-mp3 mad qt4
 
 _USE_GSTREAMER_ALL+=	${OTHER_GSTREAMER_PLUGINS}
 
@@ -223,6 +223,9 @@ mpeg2dec_DEPENDS=	multimedia/gstreamer-plugins-mpeg2dec
 mpeg2enc_DEPENDS=	multimedia/gstreamer-plugins-mpeg2enc
 
 mplex_DEPENDS=	multimedia/gstreamer-plugins-mplex
+
+qt4_DEPENDS=	multimedia/gstreamer-qt4
+qt4_GST_PREFIX=	gstreamer-
 
 v4l2_DEPENDS=	multimedia/gstreamer-plugins-v4l2
 
