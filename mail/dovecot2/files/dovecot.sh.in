@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dovecot/files/dovecot.sh.in,v 1.13 2010/03/27 00:13:14 dougb Exp $
+# $FreeBSD: ports/mail/dovecot2/files/dovecot.sh.in,v 1.1 2010/11/27 05:53:35 glewis Exp $
 #
 
 # PROVIDE: dovecot
@@ -20,7 +20,7 @@ rcvar=`set_rcvar`
 # read configuration and set defaults
 load_rc_config ${name}
 : ${dovecot_enable:="NO"}
-: ${dovecot_config:="%%PREFIX%%/etc/dovecot/${name}.conf"}
+: ${dovecot_config:="%%ETCDIR%%/${name}.conf"}
 
 command="%%PREFIX%%/sbin/${name}"
 start_precmd="start_precmd"
