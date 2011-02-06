@@ -1,10 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/cfengine3/files/cf-execd.in,v 1.4 2010/03/27 00:14:54 dougb Exp $
+# $FreeBSD: ports/sysutils/cfengine3/files/cf-execd.in,v 1.5 2010/07/20 22:27:20 cy Exp $
 #
 # PROVIDE: cf-execd
-# REQUIRE: SERVERS
-# BEFORE:  DAEMON
+# REQUIRE: LOGIN
 # KEYWORD: shutdown
 #
 # Add the following line to /etc/rc.conf[.local] to enable cf-execd(8)
