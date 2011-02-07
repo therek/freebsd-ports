@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/py-boto/pkg-plist,v 1.9 2010/01/01 18:24:20 lwhsu Exp $
+@comment $FreeBSD: ports/devel/py-boto-devel/pkg-plist,v 1.10 2010/01/05 07:06:52 wen Exp $
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/EGG-INFO/PKG-INFO
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/EGG-INFO/SOURCES.txt
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/EGG-INFO/dependency_links.txt
