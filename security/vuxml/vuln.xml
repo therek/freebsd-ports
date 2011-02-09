@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2295 2011/02/09 04:53:12 miwi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2296 2011/02/09 05:23:00 miwi Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -204,7 +204,7 @@ Note:  Please add new entries to the beginning of this file.
   </vuln>
 
   <vuln vid="c8c927e5-2891-11e0-8f26-00151735203a">
-    <topic>bugzilla -- multiple seriuos vulnerabilities</topic>
+    <topic>bugzilla -- multiple serious vulnerabilities</topic>
     <affects>
       <package>
 	<name>bugzilla</name>
