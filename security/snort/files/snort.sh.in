@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/snort/files/snort.sh.in,v 1.4 2009/10/29 01:27:53 clsung Exp $
+# $FreeBSD: ports/security/snort/files/snort.sh.in,v 1.5 2010/03/27 00:14:48 dougb Exp $
 
 # PROVIDE: snort
 # REQUIRE: DAEMON
@@ -27,6 +27,7 @@
 
 name="snort"
 rcvar=`set_rcvar`
+extra_commands=reload
 
 command="%%PREFIX%%/bin/snort"
 
