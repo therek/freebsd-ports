@@ -1,6 +1,6 @@
 # Makefile for other stuffs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice.org-3/files/Makefile.others,v 1.10 2011/02/10 01:19:21 maho Exp $
+# $FreeBSD: ports/editors/openoffice.org-3/files/Makefile.others,v 1.11 2011/02/10 01:32:13 maho Exp $
 
 #other stuffs which are not directly related to making ports
 #package-rename: rename package for uploading
@@ -28,7 +28,7 @@ sdk:
 	@cd ${WRKDIR}/sdk_tmp/opt/openoffice* ; \
 		${MKDIR} ../${INSTALLATION_BASEDIR}_sdk ; \
 		${MV} * ../${INSTALLATION_BASEDIR}_sdk ; cd .. ; \
-		${TAR} cfj ${WRKDIR}/../OOo-SDK_${PACKAGE_BASENAME}_en-US.tbz ${INSTALLATION_BASEDIR}_sdk
+		${TAR} cfj ${WRKDIR}/../OOo-SDK_${PACKAGE_BASENAME}_install_en-US.tbz ${INSTALLATION_BASEDIR}_sdk
 
 ure:
 	@${ECHO_MSG} "===>   Make Uno Runtime Environment of OpenOffice.org"
@@ -39,7 +39,7 @@ ure:
 	@cd ${WRKDIR}/ure_tmp/opt/openoffice* ; \
 		${MKDIR} ../${INSTALLATION_BASEDIR} ; \
 		${MV} * ../${INSTALLATION_BASEDIR} ; cd .. ; \
-		${TAR} cfj ${WRKDIR}/../OOo-URE_${PACKAGE_BASENAME}_en-US.tbz ${INSTALLATION_BASEDIR}
+		${TAR} cfj ${WRKDIR}/../OOo-URE_${PACKAGE_BASENAME}_install_en-US.tbz ${INSTALLATION_BASEDIR}
 
 solver:
 	@${ECHO_MSG} "===>   Make Solver of OpenOffice.org"
