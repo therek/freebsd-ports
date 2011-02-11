@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/snort/pkg-plist,v 1.34 2010/07/09 12:57:30 clsung Exp $
+@comment $FreeBSD: ports/security/snort/pkg-plist,v 1.35 2011/02/09 06:50:03 clsung Exp $
 bin/snort
 bin/u2boat
 bin/u2spewfoo
@@ -161,6 +161,7 @@ etc/snort/preproc_rules/sensitive-data.rules-sample
 %%PORTDOCS%%%%DOCSDIR%%/README.thresholding
 %%PORTDOCS%%%%DOCSDIR%%/README.u2boat
 %%PORTDOCS%%%%DOCSDIR%%/README.variables
+%%PORTDOCS%%%%DOCSDIR%%/README.rzb_saac
 %%PORTDOCS%%%%DOCSDIR%%/RELEASE.NOTES
 %%PORTDOCS%%%%DOCSDIR%%/TODO
 %%PORTDOCS%%%%DOCSDIR%%/USAGE
