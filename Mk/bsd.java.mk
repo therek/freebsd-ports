@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.85 2009/05/22 04:11:20 glewis Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.86 2010/01/15 06:07:42 glewis Exp $
 #
 
 .if !defined(Java_Include)
@@ -32,7 +32,8 @@ Java_Include_MAINTAINER=	glewis@FreeBSD.org hq@FreeBSD.org
 #					for the port. (allowed values: native linux)
 #
 # JAVA_VENDOR		List of space-separated suitable JDK port vendors for the
-#					port. (allowed values: freebsd bsdjava sun blackdown)
+#					port. (allowed values: freebsd bsdjava sun blackdown
+#					openjdk)
 #
 # JAVA_BUILD		When set, it means that the selected JDK port should be
 #					added to build dependencies for the port.
