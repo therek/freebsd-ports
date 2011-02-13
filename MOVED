@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2349 2011/02/04 21:03:11 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2350 2011/02/11 19:38:08 rene Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1536,3 +1536,4 @@ lang/dylan||2011-02-04|Has expired: does not build
 multimedia/jahshaka||2011-02-04|Has expired: Does not compile on supported versions of FreeBSD
 audio/libjackasyn|audio/jack|2011-02-11|Has expired: development has ceased; try audio/jack instead
 audio/xmms-jackasyn|audio/xmms-jack|2011-02-11|Has expired: development has ceased; try audio/xmms-jack instead
+lang/p5-SQL-Tokenizer|textproc/p5-SQL-Tokenizer|2011-02-13|Moved to a more appropriate category
