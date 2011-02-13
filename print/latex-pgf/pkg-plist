@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/latex-pgf/pkg-plist,v 1.8 2008/06/29 12:29:07 hrs Exp $
+@comment $FreeBSD: ports/print/latex-pgf/pkg-plist,v 1.9 2011/02/10 14:31:56 hrs Exp $
 %%CLASSDIR%%/context/third/pgf/basiclayer/t-pgf.tex
 %%CLASSDIR%%/context/third/pgf/basiclayer/t-pgfbim.tex
 %%CLASSDIR%%/context/third/pgf/basiclayer/t-pgfbla.tex
@@ -261,7 +261,6 @@
 @dirrm %%CLASSDIR%%/latex/pgf/doc
 @dirrm %%CLASSDIR%%/latex/pgf/compatibility
 @dirrm %%CLASSDIR%%/latex/pgf/basiclayer
-@dirrm %%CLASSDIR%%/latex/pgf
 @dirrm %%CLASSDIR%%/generic/pgf/utilities
 @dirrm %%CLASSDIR%%/generic/pgf/systemlayer
 @dirrm %%CLASSDIR%%/generic/pgf/rendering
