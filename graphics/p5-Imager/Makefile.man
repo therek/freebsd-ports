@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/p5-Imager/Makefile.man,v 1.6 2010/06/10 01:34:39 pgollucci Exp $
+# $FreeBSD: ports/graphics/p5-Imager/Makefile.man,v 1.7 2010/10/29 12:42:09 bapt Exp $
 MAN3+=	Imager.3
 MAN3+=	Imager::API.3
 MAN3+=	Imager::APIRef.3
@@ -27,6 +27,7 @@ MAN3+=	Imager::Font.3
 MAN3+=	Imager::Font::BBox.3
 MAN3+=	Imager::Font::FreeType2.3
 MAN3+=	Imager::Font::FT2.3
+MAN3+=	Imager::Font::T1.3
 MAN3+=	Imager::Font::Truetype.3
 MAN3+=	Imager::Font::Type1.3
 MAN3+=	Imager::Font::Wrap.3
