@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.667 2011/02/05 15:55:58 erwin Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.668 2011/02/07 13:50:13 erwin Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -5561,8 +5561,13 @@ ACTUAL-PACKAGE-DEPENDS?= \
 			fi; \
 		done); \
 		for dir in ${_LIB_RUN_DEPENDS:C,[^:]*:([^:]*):?.*,\1,}; do \
-			tmp=$${dir%/*}; \
-			dir=$${tmp\#\#*/}/$${dir\#\#*/}; \
+			tmp=$${dir\#${PORTSDIR}/}; \
+			if [ "$$tmp" = "$$dir" ]; then \
+				tmp=$${dir%/*}; \
+				dir=$${tmp\#\#*/}/$${dir\#\#*/}; \
+			else \
+				dir=$$tmp; \
+			fi; \
 			set -- $$origins; \
 			while [ $$\# -gt 1 ]; do \
 				if [ ! -d "${PORTSDIR}/$$2" ]; then \
