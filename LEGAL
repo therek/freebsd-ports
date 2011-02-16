@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.634 2011/01/24 20:03:07 thierry Exp $
+# $FreeBSD: ports/LEGAL,v 1.635 2011/02/03 12:10:02 arved Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -325,7 +325,6 @@ jai-*-lib-linux-i586.*	java/jai		Redistribution is not permitted
 jai_imageio-*-lib-linux-* java/jai-imageio	Redistribution is not permitted
 java3d-sdk-*-linux-i386* java/java3d		License does not allow
 						distribution
-javamail-*.zip		java/javamail		See the license
 javax_comm-*-solsparc.*	comms/java-commapi	No commercial use
 jbootstrap-*.tar.gz	java/jbootstrap		Redistribution of pre-compiled
 						binaries is not permitted
