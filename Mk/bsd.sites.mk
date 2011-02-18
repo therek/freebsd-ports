@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.523 2011/01/27 21:23:32 rea Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.524 2011/02/01 07:46:52 oliver Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1406,8 +1406,6 @@ MASTER_SITE_XFREE+= \
 
 .if !defined(IGNORE_MASTER_SITE_XORG)
 MASTER_SITE_XORG+= \
-	ftp://ftp.gwdg.de/pub/x11/x.org/pub/%SUBDIR%/ \
-	ftp://ftp.cica.es/pub/X/pub/%SUBDIR%/ \
 	ftp://ftp.cs.cuhk.edu.hk/pub/X11/%SUBDIR%/ \
 	ftp://ftp.unicamp.br/pub/X11/releases/%SUBDIR%/ \
 	ftp://ftp.ntua.gr/pub/X11/X.org/%SUBDIR%/ \
