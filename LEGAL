@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.635 2011/02/03 12:10:02 arved Exp $
+# $FreeBSD: ports/LEGAL,v 1.636 2011/02/16 11:07:50 ale Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -662,8 +662,6 @@ zangband/*		japanese/zangband	Possible copyright infringement
 zh-moettf/*		chinese/moettf		Contact Taiwan Ministry of
 						Education for commercial use
 NTU*.TTF		chinese/ntuttf		No commercial use
-ztelnet-*		net/ztelnet		zmodem code has restrictive
-						copyright
 twelf-*			lang/twelf		License is currently
 						indeterminate
 pfpro*			finance/pfpro		Only available for customers
