@@ -1,6 +1,6 @@
-@comment $FreeBSD: ports/www/mimetex/pkg-plist,v 1.4 2009/05/08 15:25:54 pgollucci Exp $
-%%PORTDOCS%%%%DOCSDIR%%/mimetex.html
-%%PORTDOCS%%www/data/mimetex/index.html
-www/cgi-bin/mimetex.cgi
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
-%%PORTDOCS%%@dirrm www/data/mimetex
+@comment $FreeBSD: ports/www/mimetex/pkg-plist,v 1.5 2009/05/08 15:31:24 pgollucci Exp $
+%%PORTDOCS%%%%WWW_DIR%%/index.html
+%%CGI_BIN%%/mimetex.cgi
+@dirrm %%CGI_BIN%%
+%%PORTDOCS%%@dirrm %%WWW_DIR%%
+%%PORTDOCS%%@dirrm %%WWWDIR%%
