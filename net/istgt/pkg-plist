@@ -1,9 +1,0 @@
-@comment $FreeBSD: ports/net/istgt/pkg-plist,v 1.1 2009/03/11 00:01:31 lwhsu Exp $
-bin/istgt
-bin/istgtcontrol
-etc/rc.d/istgt
-etc/istgt/istgt.conf.sample
-etc/istgt/istgt.large.conf.sample
-etc/istgt/auth.conf.sample
-etc/istgt/istgtcontrol.conf.sample
-@dirrm etc/istgt
