@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.122 2011/01/05 17:04:18 ohauer Exp $
+# $FreeBSD: ports/GIDs,v 1.123 2011/02/02 11:25:22 miwi Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -84,6 +84,7 @@ twms:*:175:
 rt:*:180:
 nagios:*:181:
 noc:*:182:
+icinga:*:183:
 moinmoin:*:192:
 cups:*:193:
 saned:*:194:
