@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2352 2011/02/14 13:32:33 jpaetzel Exp $
+# $FreeBSD: ports/MOVED,v 1.2353 2011/02/21 22:17:14 rene Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1542,3 +1542,4 @@ devel/root||2011-02-21|Has expired: Port does not build on supported versions of
 net/ztelnet||2011-02-21|Has expired: unfetchable
 print/kaspaliste||2011-02-21|Has expired: yes
 sysutils/perf||2011-02-21|Has expired: Does not build on supported versions of FreeBSD
+databases/redis1||2011-02-24|Removed
