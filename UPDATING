@@ -43,7 +43,7 @@ you update your ports collection, before attempting any port upgrades.
 
   Postfix 2.8 introduces minor incompatibilities with previous versions.
   Alias expansion, dns lookups, TLS support, milters and other features
-  are affected.  To avoid surprises, carefully review the RELEASE_NOTES. 
+  are affected.  To avoid surprises, carefully review the RELEASE_NOTES.
 
   If you upgrade from Postfix 2.6 or earlier, you must execute "postfix
   stop" and "postfix start" before you can use the postscreen(8) daemon.
@@ -4277,4 +4277,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1026 2011/02/09 13:22:23 tota Exp $
+$FreeBSD: ports/UPDATING,v 1.1027 2011/02/24 21:50:08 delphij Exp $
