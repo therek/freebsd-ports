@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2356 2011/02/25 07:50:32 osa Exp $
+# $FreeBSD: ports/MOVED,v 1.2357 2011/02/25 09:50:39 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1550,3 +1550,4 @@ textproc/py-expat||2011-02-25|Removed, part of python since python25
 devel/py-ctypes||2011-02-25|Removed, part of python since python25
 security/py-hashlib||2011-02-25|Removed, part of python since python25
 www/py-hashlib||2011-02-25|Removed, part of python since python25
+x11/gstreamer-plugins-vdpau|multimedia/gstreamer-plugins-vdpau|2011-02-25|Move to the multimedia category
