@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/apache-ant/pkg-plist,v 1.26 2009/03/09 22:45:31 gahr Exp $
+@comment $FreeBSD: ports/devel/apache-ant/pkg-plist,v 1.27 2010/11/29 16:09:33 sunpoet Exp $
 bin/ant
 %%DATADIR%%/bin/antRun
 %%DATADIR%%/etc/ant-bootstrap.jar
@@ -49,12 +49,12 @@ bin/ant
 %%DATADIR%%/lib/ant-jsch.pom
 %%DATADIR%%/lib/ant-junit.jar
 %%DATADIR%%/lib/ant-junit.pom
+%%DATADIR%%/lib/ant-junit4.jar
+%%DATADIR%%/lib/ant-junit4.pom
 %%DATADIR%%/lib/ant-launcher.jar
 %%DATADIR%%/lib/ant-launcher.pom
 %%DATADIR%%/lib/ant-netrexx.jar
 %%DATADIR%%/lib/ant-netrexx.pom
-%%DATADIR%%/lib/ant-nodeps.jar
-%%DATADIR%%/lib/ant-nodeps.pom
 %%DATADIR%%/lib/ant-parent.pom
 %%DATADIR%%/lib/ant-swing.jar
 %%DATADIR%%/lib/ant-swing.pom
