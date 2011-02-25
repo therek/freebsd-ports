@@ -15,7 +15,7 @@
 #    - graphics/libglut
 #    - graphics/dri
 #
-# $FreeBSD: ports/graphics/libGL/bsd.mesalib.mk,v 1.15 2009/08/22 00:22:54 amdmi3 Exp $
+# $FreeBSD: ports/graphics/libGL/bsd.mesalib.mk,v 1.16 2010/02/07 11:51:05 nork Exp $
 #
 
 MESAVERSION=	${MESABASEVERSION}${MESASUBVERSION:C/^(.)/.\1/}
@@ -29,6 +29,7 @@ PLIST_SUB+=		MESALIB76= MESALIB74="@comment "
 MESABASEVERSION=	7.4.4
 MESASUBVERSION=
 PLIST_SUB+=		MESALIB74= MESALIB76="@comment "
+EXTRA_PATCHES+=		${PATCHDIR}/mesalib74-configure
 .endif
 
 MASTER_SITES?=	ftp://ftp.freedesktop.org/pub/mesa/${MESABASEVERSION}/:mesa,glut,demos
@@ -51,7 +52,7 @@ ALL_TARGET=		default
 #MAKE_ARGS=		SHELL=${SH}
 #CFLAGS+=		-DUSE_XSHM -DHZ=100
 
-#FILESDIR=		${.CURDIR}/../../graphics/libGL/files
+PATCHDIR=		${.CURDIR}/../../graphics/libGL/files
 WRKSRC=			${WRKDIR}/Mesa-${MESABASEVERSION}
 
 .if !defined(ARCH)

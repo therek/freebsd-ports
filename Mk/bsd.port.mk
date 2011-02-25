@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.671 2011/02/25 10:55:08 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.672 2011/02/25 11:00:59 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1995,7 +1995,10 @@ X_FONTS_TYPE1_PORT=	${PORTSDIR}/x11-fonts/xorg-fonts-type1
 X_FONTS_ALIAS_PORT=	${PORTSDIR}/x11-fonts/font-alias
 
 .if defined(USE_IMAKE)
-BUILD_DEPENDS+=			imake:${X_IMAKE_PORT}
+CONFIGURE_ENV+=		IMAKECPP="${CPP}"
+MAKE_ENV+=		IMAKECPP="${CPP}"
+MAKE_FLAGS?=		CC="${CC}" CXX="${CXX}"
+BUILD_DEPENDS+=		imake:${X_IMAKE_PORT}
 .endif
 
 .if defined(USE_DISPLAY) && !defined(DISPLAY)
