@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.33 2009/09/14 10:09:31 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.34 2010/08/19 20:09:05 mva Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -48,7 +48,7 @@ LINUX_DIST_SUFFIX=	-f10
 .    else
 IGNORE=		valid values for OVERRIDE_LINUX_NONBASE_PORTS are \"f8\", \"f10\"
 .    endif
-.  elif ${OSVERSION} < 800076
+.  elif ${OSVERSION} < 800076 || ${LINUX_OSRELEASE} == "2.4.2"
 # default for OSVERSION < 800076
 LINUX_DIST_SUFFIX=
 .  else
