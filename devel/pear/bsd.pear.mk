@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.9 2008/11/28 15:32:30 tabthorpe Exp $
+# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.10 2010/12/29 07:02:48 miwi Exp $
 
 # Common code for pear- ports.
 
@@ -14,6 +14,12 @@ EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	PEAR
 
 RUN_DEPENDS+=	pear:${PORTSDIR}/devel/pear
+
+.if defined(PEAR_CATSRC)
+PEARWRKSRC?=    ${WRKSRC}/${CATEGORY}
+.else
+PEARWRKSRC?=    ${WRKSRC}
+.endif
 
 .if !defined(USE_PHPIZE)
 NO_BUILD=	yes
@@ -171,7 +177,7 @@ do-install-files: do-install-files-msg
 	@${MKDIR} ${INSTDIR}/${dir}
 . endfor
 . for file in ${FILES}
-	@${INSTALL_DATA} ${WRKSRC}/${file} ${INSTDIR}/${file}
+	@${INSTALL_DATA} ${PEARWRKSRC}/${file} ${INSTDIR}/${file}
 . endfor
 
 do-install-docs: do-install-docs-msg
