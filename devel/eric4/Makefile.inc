@@ -5,11 +5,12 @@
 # Date created:				23 Apr 2007
 # Whom:					Boris Samorodov <bsam@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/eric4/Makefile.inc,v 1.40 2011/01/03 15:12:45 bsam Exp $
+# $FreeBSD: ports/devel/eric4/Makefile.inc,v 1.41 2011/02/07 15:17:28 bsam Exp $
 #
 
 PORTNAME=	eric4
 PORTVERSION=	4.4.12
+PORTREVISION=	1
 MASTER_SITES=	SF/eric-ide/${PORTNAME}/stable/${PORTVERSION}
 DISTNAME?=	${PORTNAME}-i18n-${I18N_LANG}-${PORTVERSION}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
@@ -24,7 +25,7 @@ RUN_DEPENDS?=	${PREFIX}/bin/eric4:${PORTSDIR}/devel/eric4
 I18N_LANG?=	ru
 INSTALL_CMD?=	install-i18n.py
 
-USE_PYTHON=	2.4+
+USE_PYTHON=	2.5+
 NO_BUILD=	yes
 PLIST_FILES?=	%%PYTHON_SITELIBDIR%%/${PORTNAME}/${PORTNAME}_${I18N_LANG}.qm
 
