@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/murmur/files/murmur.in,v 1.2 2010/01/12 18:26:26 amdmi3 Exp $
+# $FreeBSD: ports/audio/murmur/files/murmur.in,v 1.3 2010/03/27 00:12:42 dougb Exp $
 #
 # PROVIDE: murmur
 # REQUIRE: DAEMON
@@ -11,12 +11,16 @@
 #
 # murmur_enable (bool):		Set to NO by default.
 #				Set it to YES to enable murmur.
+# murmur_flags (str):		Set to "" by default.
+#				Extra flags passed to start command.
 #
 
 . /etc/rc.subr
 
 # Set some defaults
-murmur_user=${murmur_user:-"murmur"}
+: ${murmur_enable="NO"}
+: ${murmur_user="murmur"}
+: ${murmur_flags=""}
 
 name=murmur
 rcvar=${name}_enable
@@ -26,7 +30,5 @@ command_args="-ini %%PREFIX%%/etc/murmur.ini"
 pidfile="/var/run/murmur/murmur.pid"
 
 load_rc_config $name
-
-: ${murmur_enable="NO"}
 
 run_rc_command "$1"

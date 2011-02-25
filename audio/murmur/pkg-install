@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/audio/murmur/pkg-install,v 1.1 2009/08/27 20:22:13 miwi Exp $
 
 PATH=/bin:/usr/sbin
 USER=murmur
@@ -36,27 +36,5 @@ case $2 in
 		mkdir -m 750 ${LOGDIR} ${DBDIR} ${RUNDIR} 2> /dev/null
 		chown -R ${USER}:${GROUP} ${LOGDIR} ${DBDIR} ${RUNDIR}
 
-		;;
-
-	POST-DEINSTALL)
-		if pw group show ${GROUP} 2> /dev/null; then
-			if pw group del ${GROUP}; then
-				echo "Removed group \"${GROUP}\"."
-			else
-				echo "Removing group \"${GROUP}\" failed..."
-				exit 1
-			fi
-		fi
-
-		if pw user show ${USER} 2> /dev/null; then
-			if pw userdel ${USER}; then
-				echo "Removed user \"${USER}\"."
-			else
-				echo "Removing user \"${USER}\" failed..."
-				exit 1
-			fi
-		fi
-
-		rm -Rf ${PIDDIR}
 		;;
 esac
