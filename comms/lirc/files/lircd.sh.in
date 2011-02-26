@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/comms/lirc/files/lircd.sh.in,v 1.2 2009/07/15 16:55:38 dougb Exp $
+# $FreeBSD: ports/comms/lirc/files/lircd.sh.in,v 1.3 2010/03/27 00:12:44 dougb Exp $
 #
 # PROVIDE: lircd
 # REQUIRE: DAEMON
@@ -20,7 +20,7 @@ load_rc_config ${name}
 : ${lircd_device="/dev/lirc0"}
 
 procname=%%PREFIX%%/sbin/lircd
-pidfile=/var/run/lircd.pid
+pidfile=/var/run/lirc/lircd.pid
 lircd_config="%%PREFIX%%/etc/lircd.conf"
 required_files=${lircd_config}
 command="%%PREFIX%%/sbin/lircd"
