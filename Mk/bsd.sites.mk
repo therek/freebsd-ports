@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.525 2011/02/18 10:44:04 beat Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.526 2011/02/24 13:38:41 chinsan Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -925,9 +925,10 @@ MASTER_SITE_PERL_CPAN+=	\
 	ftp://ftp.mirrorservice.org/sites/ftp.funet.fi/pub/languages/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	http://at.cpan.org/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.auckland.ac.nz/pub/perl/CPAN/modules/by-module/%SUBDIR%/ \
-	http://backpan.cpan.org/modules/by-module/%SUBDIR%/ \
+	http://backpan.perl.org/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/languages/perl/CPAN/modules/by-module/%SUBDIR%/ \
-	http://cpan.nctu.edu.tw/modules/by-module/%SUBDIR%/
+	http://cpan.nctu.edu.tw/modules/by-module/%SUBDIR%/ \
+	http://backpan.cpan.org/modules/by-module/%SUBDIR%/
 .endif
 
 #
