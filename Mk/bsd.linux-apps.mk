@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.34 2010/08/19 20:09:05 mva Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.35 2011/02/25 11:00:59 pav Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -388,7 +388,7 @@ openssl_PORT=		${PORTSDIR}/security/linux${LINUX_DIST_SUFFIX}-openssl
 
 pango_FILE=			${LINUXBASE}/usr/lib/libpango-1.0.so.0.1001.1
 pango_f8_FILE=		${LINUXBASE}/usr/lib/libpango-1.0.so.0.1800.4
-pango_f10_FILE=		${LINUXBASE}/usr/lib/libpango-1.0.so.0.2203.0
+pango_f10_FILE=		${LINUXBASE}/usr/lib/libpango-1.0.so.0.2800.3
 pango_DETECT=		${pango${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 pango_PORT=			${PORTSDIR}/x11-toolkits/linux${LINUX_DIST_SUFFIX}-pango
 pango_DEPENDS=		cairo expat fontconfig xorglibs
