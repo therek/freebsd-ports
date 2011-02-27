@@ -830,6 +830,12 @@ probably looking for an <tt>a.out</tt> object (e.g.,
 <tt>crt0.o</tt>).</dd>
 
 <dt><img alt="(uncommon)" src="/errorlogs/images/purple-ball.gif"><a name=
+"elf">f77</a></dt>
+
+<dd><tt>gcc</td> in base no longer includes the <tt>Fortran</tt> compiler
+by default.</dd>
+
+<dt><img alt="(uncommon)" src="/errorlogs/images/purple-ball.gif"><a name=
 "ffs_conflict">ffs conflict</a></dt>
 
 <dd>Both <tt>/usr/include/machine/cpufunc.h</tt> and
@@ -911,6 +917,11 @@ of <tt>${REINPLACE_COMMAND}</tt> but having left
 <dd>Your port requires the <tt>STL</tt> library but cannot find it.</dd>
 
 <dt><img alt="(uncommon)" src="/errorlogs/images/purple-ball.gif"><a name=
+"wait">uname</a></dt>
+
+<dd>For a short period of time, gcc was not handling uname properly.</dd>
+
+<dt><img alt="(uncommon)" src="/errorlogs/images/purple-ball.gif"><a name=
 "values.h">values.h</a></dt>
 
 <dd><tt>values.h</tt> has been moved.</dd>
@@ -944,7 +955,7 @@ longer sufficient in XFree86-4.</dd>
 | Maintained by <a href="mailto:portmgr@FreeBSD.org">portmgr@FreeBSD.org</a>
 | Last modified 
 <br>
-$FreeBSD: ports/Tools/portbuild/errorlogs/index.shtml,v 1.13 2011/02/24 22:28:22 linimon Exp $
+$FreeBSD: ports/Tools/portbuild/errorlogs/index.shtml,v 1.14 2011/02/27 06:01:20 linimon Exp $
 </center>
 </body></html>
 </html>
