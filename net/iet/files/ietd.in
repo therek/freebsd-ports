@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/iet/files/ietd.in,v 1.2 2011/02/27 07:01:17 delphij Exp $
 #
 # PROVIDE: ietd
 # REQUIRE: LOGIN
@@ -12,7 +12,7 @@ name="ietd"
 rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/${name}
-required_modules="iet"
+required_modules="%%PREFIX%%/modules/iet.ko:iet"
 stop_precmd="ietd_prestop"
 
 load_rc_config $name
