@@ -7,7 +7,7 @@
 #
 # !!! Here be dragons !!! (yeah, here as well...)
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.xorg.mk,v 1.13 2011/02/25 16:52:05 miwi Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Xorg_Pre_Include)
@@ -56,9 +56,6 @@ USE_XORG+=	inputproto
 USE_XORG+=	fontsproto renderproto
 .  else
 IGNORE=		doesn't contain either "driver" or "input"
-.  endif
-.  if ${PORTNAME:M*-sun*}x != x && ${ARCH} != sparc64
-IGNORE=		is for sparc64 only
 .  endif
 . endif
 
