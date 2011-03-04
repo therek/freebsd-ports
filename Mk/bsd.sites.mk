@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.530 2011/03/03 11:24:42 ehaupt Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.531 2011/03/04 01:24:05 sunpoet Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -134,6 +134,7 @@ MASTER_SITE_CRITICAL+=	\
 	http://critical.ch/distfiles/%SUBDIR%/ \
 	http://energy.critical.ch/distfiles/%SUBDIR%/ \
 	http://snow.critical.ch/distfiles/%SUBDIR%/ \
+	http://sauerkraut.critical.ch/distfiles/%SUBDIR%/ \
 	http://www.bluestop.org/distfiles/%SUBDIR%/ \
 	http://fneu.fr/distfiles/%SUBDIR%/
 .endif
