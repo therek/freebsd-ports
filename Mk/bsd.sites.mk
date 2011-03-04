@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.529 2011/03/03 09:45:05 ehaupt Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.530 2011/03/03 11:24:42 ehaupt Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -943,7 +943,7 @@ _PERL_CPAN_ID = ${MASTER_SITE_SUBDIR:C/^CPAN:(.)(.)(.*)$/\1\/\1\2\/\1\2\3/}
 
 .if !empty(_PERL_CPAN_ID) && ${_PERL_CPAN_FLAG:L} == "cpan"
     _PERL_CPAN_SORT= authors/id/${_PERL_CPAN_ID}
-    MASTER_SITE_PERL_CPAN=${MASTER_SITE_PERL_CPAN_BY:S/%CPANSORT%/${_PERL_CPAN_SORT}/:S/%SUBDIR%//}
+    MASTER_SITE_PERL_CPAN=${MASTER_SITE_PERL_CPAN_BY:S/%CPANSORT%/${_PERL_CPAN_SORT}/:S/%SUBDIR%\///}
 .else
     MASTER_SITE_PERL_CPAN=${MASTER_SITE_PERL_CPAN_BY:S/%CPANSORT%/${_PERL_CPAN_SORT}/}
 .endif
