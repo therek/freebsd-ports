@@ -729,7 +729,7 @@ fault.  Linimon is trying to figure out this problem.</dd>
 <dd>This port needs to catch up with the <tt>utmp_x.h</tt> changes in src.</dd>
 
 <dt><img alt="(uncommon)" src="/errorlogs/images/purple-ball.gif"><a name=
-"wrkdir">WRKDIR</a></dt>
+"wrkdir">WRKDIR</a><a name="WRKDIR"></a></dt>
 
 <dd>The port is attempting to change something outside
 <tt>${WRKDIR}</tt>. See <a href=
@@ -972,7 +972,7 @@ longer sufficient in XFree86-4.</dd>
 | Maintained by <a href="mailto:portmgr@FreeBSD.org">portmgr@FreeBSD.org</a>
 | Last modified 
 <br>
-$FreeBSD: ports/Tools/portbuild/errorlogs/index.shtml,v 1.15 2011/02/27 06:16:01 linimon Exp $
+$FreeBSD: ports/Tools/portbuild/errorlogs/index.shtml,v 1.16 2011/02/27 06:55:38 linimon Exp $
 </center>
 </body></html>
 </html>
