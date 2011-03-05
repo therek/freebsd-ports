@@ -2,10 +2,10 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.40 2010/11/24 22:51:09 lev Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.41 2010/12/04 07:31:28 ade Exp $
 
 PORTNAME=	subversion
-PORTVERSION=	1.6.15
+PORTVERSION=	1.6.16
 PORTREVISION?=	0
 CATEGORIES+=	devel
 MASTER_SITES=	http://subversion.tigris.org/downloads/:main \
@@ -81,6 +81,7 @@ PLIST_SUB+=	MOD_DONTDOTHAT=""
 PLIST_SUB+=	MOD_DONTDOTHAT="@comment "
 .endif
 .else
+CONFIGURE_ARGS+=	--with-apxs=no
 PLIST_SUB+=	MOD_DAV_SVN="@comment "
 PLIST_SUB+=	MOD_DONTDOTHAT="@comment "
 SUB_LIST+=	MOD_DAV_SVN_INSTALL="NO"
