@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/rubygem-chef/files/chef_client.in,v 1.1 2011/01/18 12:00:11 wen Exp $
 #
 
 # PROVIDE: chef_client
@@ -12,7 +12,7 @@
 #
 #  chef_client_enable="YES"
 
-. %%RC_SUBR%%
+. /etc/rc.subr
 
 name="chef_client"
 rcvar=`set_rcvar`
