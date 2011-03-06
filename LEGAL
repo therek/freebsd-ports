@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.637 2011/02/21 22:17:14 rene Exp $
+# $FreeBSD: ports/LEGAL,v 1.638 2011/02/24 22:10:51 rene Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -492,7 +492,7 @@ savage/Samuraiwars*	games/linux-savage-samuraiwars	Freeware, but license
 						terms are unclear
 savage/SFE*		games/linux-savage	Freeware, but license terms
 						are unclear
-sdr-*			mbone/sdr		Crypto; export-controlled
+sdr-*			net/sdr			Crypto; export-controlled
 seatools_cli.tar	sysutils/seatools	Distfile should be loaded by
 						hand
 serialmail-*		mail/serialmail		No license -- see
