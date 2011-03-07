@@ -1,11 +1,11 @@
-@comment $FreeBSD: ports/databases/libdbi/pkg-plist,v 1.8 2007/04/23 08:05:17 clsung Exp $
+@comment $FreeBSD: ports/databases/libdbi/pkg-plist,v 1.9 2008/02/12 02:21:19 clsung Exp $
 include/dbi/dbd.h
 include/dbi/dbi-dev.h
 include/dbi/dbi.h
 lib/libdbi.a
 lib/libdbi.la
 lib/libdbi.so
-lib/libdbi.so.0
+lib/libdbi.so.1
 %%PORTDOCS%%%%DOCSDIR%%/driver-guide.pdf
 %%PORTDOCS%%%%DOCSDIR%%/driver-guide/contact.html
 %%PORTDOCS%%%%DOCSDIR%%/driver-guide/copying-fdl.html
@@ -48,7 +48,6 @@ lib/libdbi.so.0
 %%PORTDOCS%%%%DOCSDIR%%/programmers-guide/terminology.html
 %%PORTDOCS%%%%DOCSDIR%%/programmers-guide/x267.html
 %%PORTDOCS%%%%DOCSDIR%%/programmers-guide/x276.html
-%%PORTDOCS%%%%DOCSDIR%%/programmers-guide/x278.html
 %%PORTDOCS%%@dirrm %%DOCSDIR%%/programmers-guide
 %%PORTDOCS%%@dirrm %%DOCSDIR%%/driver-guide
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
