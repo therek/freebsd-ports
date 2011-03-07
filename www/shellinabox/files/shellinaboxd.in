@@ -1,11 +1,11 @@
 #!/bin/sh
 
-# $FreeBSD: ports/www/shellinabox/files/shellinaboxd.in,v 1.2 2010/08/16 00:04:03 ed Exp $
+# $FreeBSD: ports/www/shellinabox/files/shellinaboxd.in,v 1.3 2010/10/13 12:50:07 sunpoet Exp $
 #
 # Shell in a Box Daemon startup script
 #
 # PROVIDE: shellinaboxd
-# REQUIRE: login
+# REQUIRE: LOGIN
 # KEYWORD: shutdown
 
 #
