@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.672 2011/02/25 11:00:59 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.673 2011/02/25 16:52:05 miwi Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2276,8 +2276,9 @@ MAKEFILE?=		Makefile
 MAKE_ENV+=		PREFIX=${PREFIX} \
 			LOCALBASE=${LOCALBASE} X11BASE=${X11BASE} \
 			MOTIFLIB="${MOTIFLIB}" LIBDIR="${LIBDIR}" \
-			CC="${CC}" CPP="${CPP}" CXX="${CXX}" \
-			CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}" \
+			CC="${CC}" CFLAGS="${CFLAGS}" \
+			CPP="${CPP}" CPPFLAGS="${CPPFLAGS}" \
+			CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" \
 			MANPREFIX="${MANPREFIX}"
 
 # Add -fno-strict-aliasing to CFLAGS with optimization level -O2 or higher.
@@ -3777,7 +3778,7 @@ do-configure:
 	@(cd ${CONFIGURE_WRKSRC} && \
 	    ${SET_LATE_CONFIGURE_ARGS} \
 		if ! ${SETENV} CC="${CC}" CPP="${CPP}" CXX="${CXX}" \
-	    CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}" \
+	    CFLAGS="${CFLAGS}" CPPFLAGS="${CPPFLAGS}" CXXFLAGS="${CXXFLAGS}" \
 	    INSTALL="/usr/bin/install -c ${_BINOWNGRP}" \
 	    INSTALL_DATA="${INSTALL_DATA}" \
 	    INSTALL_LIB="${INSTALL_LIB}" \
