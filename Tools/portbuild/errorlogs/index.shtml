@@ -590,6 +590,12 @@ See <a href="http://wiki.freebsd.org/gcc4">the wiki page</a>
 for further information.</dd>
 
 <dt><img alt="(common)" src="/errorlogs/images/blue-ball.gif"><a name=
+"gmake">gmake</a></dt>
+
+<dd>Your code does not run with the latest, incompatible, gmake version
+(3.82.)</dd>
+
+<dt><img alt="(common)" src="/errorlogs/images/blue-ball.gif"><a name=
 "install">install error</a></dt>
 
 <dd>There was an error during installation.</dd>
@@ -972,7 +978,7 @@ longer sufficient in XFree86-4.</dd>
 | Maintained by <a href="mailto:portmgr@FreeBSD.org">portmgr@FreeBSD.org</a>
 | Last modified 
 <br>
-$FreeBSD: ports/Tools/portbuild/errorlogs/index.shtml,v 1.16 2011/02/27 06:55:38 linimon Exp $
+$FreeBSD: ports/Tools/portbuild/errorlogs/index.shtml,v 1.17 2011/03/04 06:11:51 linimon Exp $
 </center>
 </body></html>
 </html>
