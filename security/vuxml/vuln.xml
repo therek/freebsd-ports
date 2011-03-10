@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2320 2011/03/07 21:31:26 decke Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2321 2011/03/10 14:31:36 wxs Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -58,7 +58,7 @@ Note:  Please add new entries to the beginning of this file.
       <url>http://mail.python.org/pipermail/mailman-announce/2011-February/000157.html</url>
     </references>
     <dates>
-      <discovery>2011-03-FIXME</discovery>
+      <discovery>2011-02-13</discovery>
       <entry>2011-03-10</entry>
     </dates>
   </vuln>
