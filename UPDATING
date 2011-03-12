@@ -104,6 +104,12 @@ you update your ports collection, before attempting any port upgrades.
   or
 	# portmaster -r net/openldap24-client
 
+20110224:
+  AFFECTS: Nobody
+  AUTHOR: wxs@FreeBSD.org
+
+  FreeBSD 8.2 and 7.4 released.
+
 20110209:
   AFFECTS: users of www/testlink
   AUTHOR: tota@FreeBSD.org
@@ -4370,4 +4376,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1036 2011/03/04 16:08:23 miwi Exp $
+$FreeBSD: ports/UPDATING,v 1.1037 2011/03/04 16:20:14 miwi Exp $
