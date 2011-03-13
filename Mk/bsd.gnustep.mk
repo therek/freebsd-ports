@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.62 2010/05/30 18:14:19 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.63 2010/06/11 09:12:37 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -188,12 +188,6 @@ GNUSTEP_LOCAL_LIBRARIES=	${GNUSTEP_LOCAL_ROOT}/Library/Libraries
 GNUSTEP_LOCAL_APPS=		${GNUSTEP_LOCAL_ROOT}/Applications
 GNUSTEP_LOCAL_TOOLS=		${GNUSTEP_LOCAL_ROOT}/Tools
 GNUSTEP_LOCAL_SERVICES=		${GNUSTEP_LOCAL_ROOT}/Library/Services
-
-# Obsolete, for compatibility only
-SYSTEMDIR=	${GNUSTEP_SYSTEM_ROOT}
-SYSMAKEDIR=	${GNUSTEP_MAKEFILES}
-SYSLIBDIR=	${GNUSTEP_SYSTEM_LIBRARIES}
-LOCALLIBDIR=	${GNUSTEP_LOCAL_LIBRARIES}
 
 .if defined(WITH_GNUSTEP_DEVEL)
 PKGNAMESUFFIX?=	-devel${PKGNAMESUFFIX2}
