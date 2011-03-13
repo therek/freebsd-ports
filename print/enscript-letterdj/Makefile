@@ -2,10 +2,14 @@
 # Date created:			24 Jul, 1997
 # Whom:				kline
 #
-# $FreeBSD: ports/print/enscript-letterdj/Makefile,v 1.2 1999/08/31 01:44:44 peter Exp $
+# $FreeBSD$
 #
 
+CONFLICTS=	enscript-a4-* enscript-letter-*
+
 PAPERSIZE=	letterdj
+PS=		Letterdj
+
 MASTERDIR=	${.CURDIR}/../enscript-letter
 
 .include "${MASTERDIR}/Makefile"
