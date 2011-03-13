@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/cfengine3/files/cf-execd.in,v 1.5 2010/07/20 22:27:20 cy Exp $
+# $FreeBSD: ports/sysutils/cfengine3/files/cf-execd.in,v 1.6 2011/02/06 02:46:17 cy Exp $
 #
 # PROVIDE: cf-execd
 # REQUIRE: LOGIN
@@ -8,18 +8,18 @@
 #
 # Add the following line to /etc/rc.conf[.local] to enable cf-execd(8)
 #
-# cf-execd_enable (bool):        Set to "NO" by default.
+# cf_execd_enable (bool):        Set to "NO" by default.
 #                               Set it to "YES" to enable cf-execd.
-# cf-execd_flags (str):          Custom additional arguments to be passed
+# cf_execd_flags (str):          Custom additional arguments to be passed
 #                               to cf-execd (default empty).
 #
 
 . /etc/rc.subr
 
-name="cf-execd"
+name="cf_execd"
 rcvar=${name}_enable
 
-command="%%PREFIX%%/sbin/${name}"
+command="%%PREFIX%%/sbin/cf-execd"
 
 load_rc_config $name
 
