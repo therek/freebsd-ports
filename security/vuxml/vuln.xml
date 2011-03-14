@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2322 2011/03/10 15:01:11 wxs Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2323 2011/03/14 16:04:07 kwm Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -64,7 +64,7 @@ Note:  Please add new entries to the beginning of this file.
      <url>http://avahi.org/milestone/Avahi 0.6.29</url>
     </references>
     <dates>
-      <discovery>2011-03-FIXME</discovery>
+      <discovery>2011-03-09</discovery>
       <entry>2011-03-13</entry>
     </dates>
   </vuln>
