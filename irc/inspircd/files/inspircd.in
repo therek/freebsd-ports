@@ -1,9 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/irc/inspircd/files/inspircd.sh.in,v 1.1 2008/05/19 07:01:38 beech Exp $
+# $FreeBSD: ports/irc/inspircd/files/inspircd.sh.in,v 1.2 2009/07/15 16:55:44 dougb Exp $
 #
 # PROVIDE: %%PORTNAME%%
-# REQUIRE: LOGIN
+# REQUIRE: DAEMON
+# BEFORE: LOGIN
 # KEYWORD: shutdown
 
 #
