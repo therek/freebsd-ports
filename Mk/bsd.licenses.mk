@@ -1,7 +1,10 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.licenses.mk,v 1.5 2011/01/07 01:29:45 glarkin Exp $
+# $FreeBSD: ports/Mk/bsd.licenses.mk,v 1.6 2011/02/07 13:48:49 erwin Exp $
+
+Licenses_Include_MAINTAINER=         portmgr@FreeBSD.org
+
 #
 # bsd.licenses.mk - License auditing framework.
 #

@@ -1,7 +1,10 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.licenses.db.mk,v 1.9 2010/12/10 19:09:20 glarkin Exp $
+# $FreeBSD: ports/Mk/bsd.licenses.db.mk,v 1.10 2011/01/05 00:31:02 wen Exp $
+
+Licenses_db_Include_MAINTAINER=         portmgr@FreeBSD.org
+
 #
 # bsd.licenses.db.mk - License database for bsd.licenses.mk
 #
