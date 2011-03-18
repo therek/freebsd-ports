@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2371 2011/03/17 16:19:04 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.2372 2011/03/17 16:20:43 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1582,3 +1582,4 @@ devel/py-unit||2011-03-17|unmaintained and obsolete, include in python distribut
 lang/gnat-gcc42||2011-03-17|Removed unmaintained and obsolete
 lang/gnat-gcc43||2011-03-17|Removed unmaintained and obsolete
 lang/gnat-gcc44||2011-03-17|Removed unmaintained and obsolete
+games/wormux-devel||2011-03-17|Project was renamed
