@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc46/pkg-plist,v 1.111 2010/12/26 20:55:59 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc47/pkg-plist,v 1.112 2011/02/22 18:56:53 gerald Exp $
 bin/%%GNU_HOST%%-c++%%SUFFIX%%
 bin/%%GNU_HOST%%-g++%%SUFFIX%%
 bin/%%GNU_HOST%%-gcc%%SUFFIX%%
