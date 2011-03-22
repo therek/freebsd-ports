@@ -5,7 +5,7 @@
 # Date created:		27 June 2006
 # Whom:				Andrew Pantyukhin <infofarmer@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/firefox36/Makefile.webplugins,v 1.1 2009/01/10 02:45:41 mezz Exp $
 #   $MCom: ports-stable/www/firefox/Makefile.webplugins,v 1.14 2008/11/12 17:55:09 mezz Exp $
 #
 
