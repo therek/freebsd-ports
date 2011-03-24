@@ -25,6 +25,8 @@ you update your ports collection, before attempting any port upgrades.
   backup your ~/.mozilla directory prior to the first launch of Firefox
   4.0.
 
+  The startup script has been renamed from firefox3 to firefox.
+
 20110319:
   AFFECTS: users of databases/mysql55-client
   AUTHOR: ale@FreeBSD.org
@@ -4462,4 +4464,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1044 2011/03/19 13:13:46 ale Exp $
+$FreeBSD: ports/UPDATING,v 1.1045 2011/03/22 15:27:22 beat Exp $
