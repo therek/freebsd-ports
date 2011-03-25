@@ -1,20 +1,19 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/kdebase4-workspace/files/kdm.in,v 1.16 2010/02/06 21:52:28 miwi Exp $
 
-# some defs
+# Some definitions.
 GENKDMCONF=%%PREFIX%%/bin/genkdmconf
 KDMCONFDIR=%%PREFIX%%/share/config/kdm
 
-#Configure kdm if needed
+# Configure KDM if needed.
 if [ ! -r ${KDMCONFDIR}/kdmrc ]; then
-	echo "Generating KDM configuration";
+	echo "Generating KDM configuration.";
 	${GENKDMCONF} --no-old --in ${KDMCONFDIR};
 else
-	echo "Updating KDM configuration";
+	echo "Updating KDM configuration.";
 	${GENKDMCONF} --in ${KDMCONFDIR};
-
 fi
 
-#run kdm
+# Run KDM.
 exec "%%PREFIX%%/bin/kdm-bin" "$@"

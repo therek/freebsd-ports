@@ -2,7 +2,7 @@
 # Date created:		2008-08-19
 # Whom:			Max Brazhnikov <makc@issp.ac.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/kdebindings4/files/Makefile.kdebindings,v 1.8 2010/09/02 21:06:10 makc Exp $
 #
 
 MASTER_SITES=	${MASTER_SITE_KDE}
@@ -24,10 +24,11 @@ BUILD_WRKSRC?=	${WRKSRC}/${BINDLANG}/${BINDMODULE}
 INSTALL_WRKSRC?=${BUILD_WRKSRC}
 
 # Available languages
-_BINDLANG_ALL=	csharp java php python ruby smoke
+_BINDLANG_ALL=	csharp java perl php python ruby smoke
 
 # csharp_COMMENT=	C\# bindings for Qt/KDE: ${BINDMODULE} module
 # java_COMMENT=	Java bindings for Qt/KDE: ${BINDMODULE} module
+# perl_COMMENT=	Perl bindings for Qt/KDE: ${BINDMODULE} module
 # php_COMMENT=	PHP bindings for Qt/KDE: ${BINDMODULE} module
 python_COMMENT=	Python bindings for Qt/KDE: ${BINDMODULE} module
 ruby_COMMENT=	Ruby bindings for Qt/KDE: ${BINDMODULE} module
