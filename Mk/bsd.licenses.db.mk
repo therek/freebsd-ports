@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.licenses.db.mk,v 1.12 2011/03/24 00:28:10 tabthorpe Exp $
+# $FreeBSD: ports/Mk/bsd.licenses.db.mk,v 1.13 2011/03/25 20:41:18 pav Exp $
 
 Licenses_db_Include_MAINTAINER=         portmgr@FreeBSD.org
 
@@ -38,7 +38,7 @@ Licenses_db_Include_MAINTAINER=         portmgr@FreeBSD.org
 
 _LICENSE_LIST= 	ART10 ART20 ASL BSD BSL CDDL EPL GFDL GPLv1 GPLv2 GPLv3 ISCL \
 		LGPL20 LGPL21 LGPL3 LPPL10 LPPL11 LPPL12 LPPL13 LPPL13a \
-		LPPL13b LPPL13c MIT MPL
+		LPPL13b LPPL13c MIT MPL OWL PHP202 PHP30 PHP301 PSFL
 
 # List of groups (only names must be present)
 
