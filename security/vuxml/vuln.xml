@@ -28,12 +28,69 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2331 2011/03/24 00:56:30 beat Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2333 2011/03/25 11:09:07 ale Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="fe853666-56ce-11e0-9668-001fd0d616cf">
+    <topic>php -- ZipArchive segfault with FL_UNCHANGED on empty archive</topic>
+    <affects>
+      <package>
+	<name>php5-zip</name>
+	<range><lt>5.3.6</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>US-CERT/NIST reports:</p>
+	<blockquote cite="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0421">
+	  <p>The _zip_name_locate function in zip_name_locate.c in the Zip extension
+	    in PHP before 5.3.6 does not properly handle a ZIPARCHIVE::FL_UNCHANGED
+	    argument, which might allow context-dependent attackers to cause a
+	    denial of service (application crash) via an empty ZIP archive that is
+	    processed with a (1) locateName or (2) statName operation.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2011-0421</cvename>
+    </references>
+    <dates>
+      <discovery>2011-03-20</discovery>
+      <entry>2011-03-25</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="cc3bfec6-56cd-11e0-9668-001fd0d616cf">
+    <topic>php -- crash on crafted tag in exif</topic>
+    <affects>
+      <package>
+	<name>php5-exif</name>
+	<range><lt>5.3.6</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>US-CERT/NIST reports:</p>
+	<blockquote cite="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-0708">
+	  <p>exif.c in the Exif extension in PHP before 5.3.6 on 64-bit platforms
+	    performs an incorrect cast, which allows remote attackers to cause a
+	    denial of service (application crash) via an image with a crafted
+	    Image File Directory (IFD) that triggers a buffer over-read.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2011-0708</cvename>
+    </references>
+    <dates>
+      <discovery>2011-03-20</discovery>
+      <entry>2011-03-25</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="501ee07a-5640-11e0-985a-001b2134ef46">
     <topic>linux-flashplugin -- remote code execution vulnerability</topic>
     <affects>
@@ -2413,13 +2470,27 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>chromium</name>
-	<range><lt>10.0.648.133</lt></range>
+	<range><lt>10.0.648.204</lt></range>
       </package>
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
 	<p>Google Chrome Releases reports:</p>
 	<blockquote cite="http://googlechromereleases.blogspot.com/search/label/Stable%20updates">
+	  <p>Fixed in 10.0.648.204:<br/>
+	    [72517] High CVE-2011-1291: Buffer error in base string handling.
+	      Credit to Alex Turpin.<br/>
+	    [73216] High CVE-2011-1292: Use-after-free in the frame loader.
+	      Credit to Slawomir Blazek.<br/>
+	    [73595] High CVE-2011-1293: Use-after-free in HTMLCollection.
+	      Credit to Sergey Glazunov.<br/>
+	    [74562] High CVE-2011-1294: Stale pointer in CSS handling.
+	      Credit to Sergey Glazunov.<br/>
+	    [74991] High CVE-2011-1295: DOM tree corruption with broken node
+	      parentage. Credit to Sergey Glazunov.<br/>
+	    [75170] High CVE-2011-1296: Stale pointer in SVG text handling.
+	      Credit to Sergey Glazunov.</p>
+
 	  <p>Fixed in 10.0.648.133:<br/>
 	    [75712] High Memory corruption in style handling.
 	      Credit to Vincenzo Iozzo, Ralf Philipp Weinmann and Willem
@@ -2674,11 +2745,17 @@ Note:  Please add new entries to the beginning of this file.
     <references>
       <url>http://googlechromereleases.blogspot.com/search/label/Stable%20updates</url>
       <cvename>CVE-2011-1290</cvename>
+      <cvename>CVE-2011-1291</cvename>
+      <cvename>CVE-2011-1292</cvename>
+      <cvename>CVE-2011-1293</cvename>
+      <cvename>CVE-2011-1294</cvename>
+      <cvename>CVE-2011-1295</cvename>
+      <cvename>CVE-2011-1296</cvename>
     </references>
     <dates>
       <discovery>2010-10-19</discovery>
       <entry>2010-12-07</entry>
-      <modified>2011-03-13</modified>
+      <modified>2011-03-26</modified>
     </dates>
   </vuln>
 
