@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.126 2011/03/07 11:59:07 lwhsu Exp $
+# $FreeBSD: ports/GIDs,v 1.127 2011/03/09 02:31:18 bf Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -189,3 +189,4 @@ torrus:*:934:www
 erlyvideo:*:935:
 crtmpserver:*:936:
 get_iplayer:*:937:
+vdr:*:938:
