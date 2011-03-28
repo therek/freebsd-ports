@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.142 2011/03/26 19:10:38 nox Exp $
+# $FreeBSD: ports/UIDs,v 1.143 2011/03/28 16:54:45 ehaupt Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53::0:0:Bind Sandbox:/:/usr/sbin/nologin
