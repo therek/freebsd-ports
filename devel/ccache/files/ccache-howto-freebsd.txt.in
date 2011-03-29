@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/devel/ccache/files/ccache-howto-freebsd.txt.in,v 1.13 2010/11/17 18:41:35 ehaupt Exp $
+# $FreeBSD: ports/devel/ccache/files/ccache-howto-freebsd.txt.in,v 1.14 2011/02/28 13:39:53 ehaupt Exp $
 #
 
 To use ccache add the following to /etc/make.conf.
@@ -46,10 +46,8 @@ reset PATH=$CCACHE_PATH and try again.
 
 --
 
-Ccache has installed links for the following compilers
-%%CCACHE_COMPILERS%%
-in %%PREFIX%%/%%CCLINKDIR%%
-and %%PREFIX%%/%%CCLINKDIR%%/world
+Make sure you run 'ccache-update-links' after you install/uninstall
+additional compiers in order to create/remove compiler links.
 
 Clang will return a lot of 'unused argument' warnings: they are harmless.
 Just add this to /etc/make.conf if you want to hide them:
