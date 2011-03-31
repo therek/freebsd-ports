@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.675 2011/03/18 01:43:49 miwi Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.676 2011/03/19 21:30:34 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2512,7 +2512,9 @@ ALL_TARGET?=		all
 INSTALL_TARGET?=	install
 
 # Integrate with the license auditing framework
+.if !defined (DISABLE_LICENSES)
 .include "${PORTSDIR}/Mk/bsd.licenses.mk"
+.endif
 
 # Popular master sites
 .include "${PORTSDIR}/Mk/bsd.sites.mk"
