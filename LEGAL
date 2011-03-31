@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.640 2011/03/18 16:13:59 sunpoet Exp $
+# $FreeBSD: ports/LEGAL,v 1.641 2011/03/19 05:10:45 sunpoet Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -389,9 +389,6 @@ mysqlman.tar.gz		databases/mysqlman	Not redistributable, license
 						agreement required
 ncftpd-*		ftp/ncftpd		30 day evaluation license
 NeroDigitalAudio.zip	audio/linux-neroaaccodec Redistribution forbidden
-netbeans3-*		java/netbeans3		Restrictive copyright
-netbeans4-*		java/netbeans4		Restrictive copyright
-netbeans5-*		java/netbeans5		Restrictive copyright
 NetComponents-*		java/netcomponents	No redistribution except as
 						part of a substantially
 						different product
