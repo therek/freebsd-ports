@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.130 2011/03/28 16:59:47 ehaupt Exp $
+# $FreeBSD: ports/GIDs,v 1.131 2011/04/02 06:00:41 dinoex Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -191,3 +191,4 @@ crtmpserver:*:936:
 get_iplayer:*:937:
 vdr:*:938:
 noip:*:939:
+_tcpproxy:*:940:
