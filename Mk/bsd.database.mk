@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.54 2011/03/19 13:13:46 ale Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.55 2011/03/21 20:41:48 mandree Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -176,10 +176,6 @@ IGNORE=		cannot install: unknown MySQL version: ${MYSQL_VER}
 
 .if defined(USE_PGSQL)
 DEFAULT_PGSQL_VER?=	84
-PGSQL73_LIBVER=		3
-PGSQL74_LIBVER=		3
-PGSQL80_LIBVER=		4
-PGSQL81_LIBVER=		4
 PGSQL82_LIBVER=		5
 PGSQL83_LIBVER=		5
 PGSQL84_LIBVER=		5
