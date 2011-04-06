@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/ruby-gems/pkg-plist,v 1.23 2010/05/26 06:32:18 pgollucci Exp $
+@comment $FreeBSD: ports/devel/ruby-gems/pkg-plist,v 1.24 2011/02/21 04:02:51 clsung Exp $
 bin/gem
 bin/gem18
 bin/update_rubygems18
@@ -46,6 +46,7 @@ lib/ruby/gems/%%RUBY_VER%%/specifications/sources-0.0.2.gemspec
 %%RUBY_SITELIBDIR%%/rubygems/dependency.rb
 %%RUBY_SITELIBDIR%%/rubygems/dependency_installer.rb
 %%RUBY_SITELIBDIR%%/rubygems/dependency_list.rb
+%%RUBY_SITELIBDIR%%/rubygems/deprecate.rb
 %%RUBY_SITELIBDIR%%/rubygems/doc_manager.rb
 %%RUBY_SITELIBDIR%%/rubygems/errors.rb
 %%RUBY_SITELIBDIR%%/rubygems/exceptions.rb
