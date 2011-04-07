@@ -1,20 +1,2 @@
-@comment $FreeBSD: ports/www/py-webob/pkg-plist,v 1.3 2010/09/15 11:47:23 nivit Exp $
+@comment $FreeBSD: ports/www/py-webob/pkg-plist,v 1.4 2011/02/20 21:25:57 nivit Exp $
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%
-%%PORTDOCS%%%%DOCSDIR%%/comment-example.txt
-%%PORTDOCS%%%%DOCSDIR%%/conf.py
-%%PORTDOCS%%%%DOCSDIR%%/differences.txt
-%%PORTDOCS%%%%DOCSDIR%%/do-it-yourself.txt
-%%PORTDOCS%%%%DOCSDIR%%/file-example.txt
-%%PORTDOCS%%%%DOCSDIR%%/index.txt
-%%PORTDOCS%%%%DOCSDIR%%/jsonrpc-example-code/test_jsonrpc.txt
-%%PORTDOCS%%%%DOCSDIR%%/jsonrpc-example.txt
-%%PORTDOCS%%%%DOCSDIR%%/license.txt
-%%PORTDOCS%%%%DOCSDIR%%/modules/dec.txt
-%%PORTDOCS%%%%DOCSDIR%%/modules/webob.txt
-%%PORTDOCS%%%%DOCSDIR%%/news.txt
-%%PORTDOCS%%%%DOCSDIR%%/reference.txt
-%%PORTDOCS%%%%DOCSDIR%%/test-file.txt
-%%PORTDOCS%%%%DOCSDIR%%/wiki-example.txt
-%%PORTDOCS%%@dirrm %%DOCSDIR%%/modules
-%%PORTDOCS%%@dirrm %%DOCSDIR%%/jsonrpc-example-code
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
