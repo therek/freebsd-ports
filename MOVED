@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2386 2011/04/04 17:43:36 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2387 2011/04/04 18:06:53 rene Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1675,3 +1675,4 @@ databases/postgresql74-contrib||2011-04-04|Removed
 databases/postgresql80-client||2011-04-04|Removed
 databases/postgresql80-contrib||2011-04-04|Removed
 databases/postgresql81-client||2011-04-04|Removed
+graphics/linux_dri-devel|graphics/linux_dri|2011-04-07|Retire: is older than non-devel port
