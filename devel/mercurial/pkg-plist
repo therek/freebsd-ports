@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/mercurial/pkg-plist,v 1.39 2010/11/05 08:49:28 roberto Exp $
+@comment $FreeBSD: ports/devel/mercurial/pkg-plist,v 1.40 2011/03/11 15:15:48 roberto Exp $
 bin/hg
 %%PYTHON_SITELIBDIR%%/hgext/__init__.py
 %%PYTHON_SITELIBDIR%%/hgext/__init__.pyc
@@ -465,6 +465,7 @@ bin/hg
 %%PYTHON_SITELIBDIR%%/mercurial/templates/monoblue/shortlog.tmpl
 %%PYTHON_SITELIBDIR%%/mercurial/templates/monoblue/summary.tmpl
 %%PYTHON_SITELIBDIR%%/mercurial/templates/monoblue/tags.tmpl
+%%PYTHON_SITELIBDIR%%/mercurial/templates/paper/bookmarks.tmpl
 %%PYTHON_SITELIBDIR%%/mercurial/templates/paper/branches.tmpl
 %%PYTHON_SITELIBDIR%%/mercurial/templates/paper/changeset.tmpl
 %%PYTHON_SITELIBDIR%%/mercurial/templates/paper/error.tmpl
