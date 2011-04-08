@@ -528,7 +528,6 @@
     SUBDIR += linux-tiff
     SUBDIR += linux-ungif
     SUBDIR += linux_dri
-    SUBDIR += linux_dri-devel
     SUBDIR += linux_glide
     SUBDIR += lodju
     SUBDIR += long-exposure-tools
@@ -892,6 +891,7 @@
     SUBDIR += showimg
     SUBDIR += silgraphite
     SUBDIR += simage
+    SUBDIR += simpleviewer
     SUBDIR += sk1libs
     SUBDIR += skanlite
     SUBDIR += skencil
