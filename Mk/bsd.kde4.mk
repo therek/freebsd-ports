@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde4.mk,v 1.113 2011/04/07 12:03:34 avilla Exp $
+# $FreeBSD$
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Kde_Pre_Include)
@@ -136,13 +136,10 @@ WITH_DEBUG=yes
 .endif
 
 .if defined(WITH_DEBUG)
-CMAKE_BUILD_TYPE=	debug
-.else
-CMAKE_BUILD_TYPE=	release
+CMAKE_BUILD_TYPE=	DebugFull
 .endif
 
-PLIST_SUB+=	KDE4_VERSION="${KDE4_VERSION}" \
-		KDE4_BUILD_TYPE="${CMAKE_BUILD_TYPE}"
+PLIST_SUB+=	KDE4_VERSION="${KDE4_VERSION}"
 
 USE_LDCONFIG=	yes
 
