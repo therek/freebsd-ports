@@ -2,11 +2,11 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.42 2011/03/05 12:10:31 lev Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.43 2011/04/01 15:19:58 avilla Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.6.16
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES+=	devel
 MASTER_SITES=	http://subversion.tigris.org/downloads/:main \
 		http://svnbook.red-bean.com/en/1.5/:book
@@ -169,7 +169,7 @@ PLIST_SUB+=	GNOME_KEYRING="@comment "
 .endif
 
 .if defined(WITH_KDE_KWALLET)
-USE_KDE4=	kdelibs
+USE_KDE4=	kdelibs runtime
 CONFIGURE_ARGS+=--with-kwallet=${KDE4_PREFIX}
 PLIST_SUB+=	KDE_KWALLET=""
 .else
