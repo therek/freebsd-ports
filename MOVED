@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2391 2011/04/12 09:03:46 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2392 2011/04/12 18:10:32 rene Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1689,3 +1689,4 @@ net-p2p/torrentvolve||2011-04-12|Has expired: development has ceased, and last r
 sysutils/gag||2011-04-12|Has expired: no point in having it as a port, can be downloaded from the website and burned
 lang/gpc|lang/fpc|2011-04-12|Has expired: development has ceased; use lang/fpc instead
 security/mypasswordsafe|security/gorilla|2011-04-12|Has expired: development has ceased; try security/gorilla instead
+database/db2||2011-04-12|Deprecated; use newer databases/db5* instead.
