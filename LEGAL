@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.642 2011/03/31 06:41:39 bapt Exp $
+# $FreeBSD: ports/LEGAL,v 1.643 2011/04/04 17:12:22 rene Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -514,7 +514,6 @@ scv-1.0p2-sysc*		cad/scv			License agreement required
 tcetest_*		games/linux-enemyterritory-tce	Redistribution limited
 texcm-ttf-20010117/*	x11-fonts/texcm-ttf	Cannot be sold or distributed
 						with any commercial product
-thisTest.jar		devel/thistest		No redistribution of binaries
 timidity-*		audio/timidity		Uses copyrighted patches
 tinker*			biology/tinker		Distribution is prohibited
 tkman-2.*		misc/tkman		Do not sell for profit
