@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2339 2011/04/09 01:41:36 wxs Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2340 2011/04/10 21:39:37 wxs Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -42,7 +42,7 @@ Note:  Please add new entries to the beginning of this file.
 	<range><lt>3.1.ESV_1,1</lt></range>
       </package>
       <package>
-	<name>isc-dhpc41-client</name>
+	<name>isc-dhcp41-client</name>
 	<range><lt>4.1.e,2</lt></range>
       </package>
     </affects>
