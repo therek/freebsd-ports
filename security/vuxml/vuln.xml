@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2341 2011/04/12 15:36:44 erwin Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2342 2011/04/12 17:52:28 skv Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -887,7 +887,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>mupdf</name>
-	<range><gt>0</gt></range>
+	<range><lt>0.8</lt></range>
       </package>
     </affects>
     <description>
