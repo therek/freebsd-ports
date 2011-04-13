@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.kde4.mk,v 1.115 2011/04/10 08:46:04 makc Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Kde_Pre_Include)
@@ -58,7 +58,7 @@ KDE4_VERSION=		4.6.2
 KDE4_BRANCH?=		stable
 KDEPIM4_VERSION=	4.4.10
 KDEPIM4_BRANCH?=	stable
-KOFFICE2_VERSION=	2.3.1
+KOFFICE2_VERSION=	2.3.2
 KOFFICE2_BRANCH?=	stable
 KDEVELOP_VERSION=	4.2.2
 KDEVELOP_BRANCH?=	stable
