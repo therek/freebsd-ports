@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/xmms-faad/Makefile.inc,v 1.1 2009/02/21 19:55:46 beech Exp $
+# $FreeBSD: ports/audio/xmms-faad/Makefile.inc,v 1.2 2009/07/31 13:49:15 dinoex Exp $
 
 PORTNAME=	faad2
 PORTVERSION=	2.7
@@ -43,6 +43,7 @@ do-build:
 		${EXTRA_LDFLAGS}
 
 do-install:
+	@${MKDIR} ${PLUGINS_DIR}
 	cd ${WRKSRC}; ${INSTALL_DATA} libmp4.so ${PLUGINS_DIR}
 
 .include <bsd.port.post.mk>
