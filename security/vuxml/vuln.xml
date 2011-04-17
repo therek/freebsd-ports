@@ -28,12 +28,38 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2348 2011/04/17 10:59:04 flo Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2349 2011/04/17 18:32:15 nox Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="6a4bfe75-692a-11e0-bce7-001eecdd401a">
+    <topic>vlc -- Heap corruption in MP4 demultiplexer</topic>
+    <affects>
+      <package>
+	<name>vlc</name>
+	<range><ge>1.0.0</ge><lt>1.1.9</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>VideoLAN project reports:</p>
+	<blockquote cite="http://www.videolan.org/security/sa1103.html">
+	  <p>When parsing some MP4 (MPEG-4 Part 14) files, insufficient
+            buffer size might lead to corruption of the heap.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+       <url>http://www.videolan.org/security/sa1103.html</url>
+    </references>
+    <dates>
+      <discovery>2011-04-07</discovery>
+      <entry>2011-04-17</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="32b05547-6913-11e0-bdc4-001b2134ef46">
     <topic>linux-flashplugin -- remote code execution vulnerability</topic>
     <affects>
