@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.131 2011/04/02 06:00:41 dinoex Exp $
+# $FreeBSD: ports/GIDs,v 1.132 2011/04/03 11:22:59 dhn Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -75,6 +75,7 @@ amanda:*:140:operator
 ladvd:*:142:
 dovecot:*:143:
 dovenull:*:144:
+webcamd:*:145:
 rbldns:*:153:
 sfs:*:171:
 agk:*:172:
