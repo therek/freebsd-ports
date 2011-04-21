@@ -1,10 +1,8 @@
-@comment $FreeBSD: ports/databases/dbh/pkg-plist,v 1.7 2006/10/31 05:37:31 ijliao Exp $
+@comment $FreeBSD: ports/databases/dbh/pkg-plist,v 1.8 2010/08/21 00:28:52 sahil Exp $
 include/dbh/dbh.h
-lib/libdbh-2.so
-lib/libdbh-2.so.1
-lib/libdbh.a
-lib/libdbh.so
-libdata/pkgconfig/dbh.pc
+lib/libdbh2.so
+lib/libdbh2.so.0
+libdata/pkgconfig/dbh2.pc
 %%GTKDOC%%share/gtk-doc/html/dbh/DBH.html
 %%GTKDOC%%share/gtk-doc/html/dbh/Makefile.am
 %%GTKDOC%%share/gtk-doc/html/dbh/calc.png
