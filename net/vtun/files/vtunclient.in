@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/vtun/files/vtunclient.in,v 1.4 2010/04/16 03:09:19 kuriyama Exp $
+# $FreeBSD: ports/net/vtun/files/vtunclient.in,v 1.5 2010/04/16 08:57:43 kuriyama Exp $
 #
 # PROVIDE: vtunclient
 # REQUIRE: DAEMON
@@ -49,6 +49,7 @@ else
 	for _client in ${vtunclient_list}; do
 		eval vtunclient_flags=\$vtunclient_${_client}_flags
 		eval pidfile=\$vtunclient_${_client}_pidfile
+		vtunclient_flags="-z $pidfile $vtunclient_flags"
 		run_rc_command "$cmd"
 	done
 fi
