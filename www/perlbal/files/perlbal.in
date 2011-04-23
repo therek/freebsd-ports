@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/perlbal/files/perlbal.in,v 1.2 2010/03/27 00:15:16 dougb Exp $
+# $FreeBSD: ports/www/perlbal/files/perlbal.in,v 1.3 2011/04/23 07:32:55 bapt Exp $
 #
 
 # PROVIDE: perlbal
-# REQUIRE: DAEMON
+# REQUIRE: LOGIN
 # KEYWORK: shutdown
 
 . /etc/rc.subr
@@ -13,9 +13,13 @@ name="perlbal"
 command="%%PREFIX%%/bin/perlbal"
 
 load_rc_config "$name"
+
 : ${perlbal_enable="NO"}
 : ${perlbal_configuration="%%PREFIX%%/etc/perlbal/perlbal.conf"}
-: ${perlbal_flags="--config $perlbal_configuration --daemon"}
+
+required_files="$perlbal_configuration"
+
+command_args="--config $required_files --daemon"
 
 run_rc_command "$1"
 
