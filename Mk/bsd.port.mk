@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.677 2011/03/31 03:37:14 tabthorpe Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.678 2011/04/11 08:34:14 bapt Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1536,7 +1536,7 @@ PERL=		${LOCALBASE}/bin/perl
 .include "${PORTSDIR}/Mk/bsd.tcl.mk"
 .endif
 
-.if defined(USE_APACHE)
+.if defined(USE_APACHE) || defined(USE_APACHE_BUILD) || defined(USE_APACHE_RUN)
 .include "${PORTSDIR}/Mk/bsd.apache.mk"
 .endif
 
@@ -2135,7 +2135,7 @@ PLIST_SUB+=		PERL_VERSION=${PERL_VERSION} \
 .include "${PORTSDIR}/Mk/bsd.wx.mk"
 .endif
 
-.if defined(USE_APACHE) || defined(APACHE_COMPAT)
+.if defined(USE_APACHE) || defined(USE_APACHE_BUILD) || defined(USE_APACHE_RUN)
 .include "${PORTSDIR}/Mk/bsd.apache.mk"
 .endif
 
