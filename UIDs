@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.147 2011/04/21 09:06:26 kwm Exp $
+# $FreeBSD: ports/UIDs,v 1.148 2011/04/23 13:46:33 lwhsu Exp $
 # Please keep this file sorted by UID!
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
 bind:*:53:53::0:0:Bind Sandbox:/:/usr/sbin/nologin
@@ -201,3 +201,4 @@ get_iplayer:*:937:937::0:0:get_iplayer user:/nonexistent:/sbin/nologin
 vdr:*:938:938::0:0:vdr user:/nonexistent:/usr/sbin/nologin
 noip:*:939:939::0:0:noip user:/nonexistent:/usr/sbin/nologin
 _tcpproxy:*:940:940::0:0:tcpproxy user:/nonexistent:/usr/sbin/nologin
+cego:*:941:941::0:0:cego user:/usr/local/cego:/usr/sbin/nologin
