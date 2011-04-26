@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.37 2011/04/14 14:26:16 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.38 2011/04/18 13:07:21 netchild Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -68,7 +68,7 @@ _LINUX_APPS_ALL+=
 
 # 2.6.16 components
 _LINUX_26_APPS=		blt cyrus-sasl2 dbusglib dbuslibs libidn libssh2 libv4l nspr nss openal-soft \
-			openldap sqlite3 tcl84 tk84
+			openldap pulseaudio-libs sqlite3 tcl84 tk84
 
 _LINUX_APPS_ALL+=	${_LINUX_26_APPS}
 
@@ -360,6 +360,11 @@ png10_FILE=			${LINUXBASE}/usr/lib/libpng.so.2.1.0.18
 png10_f10_FILE=		${LINUXBASE}/usr/lib/libpng.so.2.1.0.43
 png10_DETECT=		${png10${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 png10_PORT=			${PORTSDIR}/graphics/linux${LINUX_DIST_SUFFIX}-png10
+
+# no_pulseaudio-libs_FILE
+pulseaudio-libs_f10_FILE=	${LINUXBASE}/usr/lib/libpulse.so.0
+pulseaudio-libs_DETECT=		${pulseaudio-libs${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
+pulseaudio-libs_PORT=		${PORTSDIR}/audio/linux${LINUX_DIST_SUFFIX}-pulseaudio-libs
 
 qt33_FILE=			${LINUXBASE}/usr/lib/qt-3.3/lib/libqt-mt.so.3.3.4
 qt33_f10_FILE=		${LINUXBASE}/usr/lib/qt-3.3/lib/libqt-mt.so.3.3.8
