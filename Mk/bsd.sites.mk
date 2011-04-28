@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.535 2011/03/31 10:20:34 bf Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.536 2011/04/20 07:45:18 ehaupt Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -915,18 +915,16 @@ MASTER_SITE_OSSP+= \
 
 .if !defined(IGNORE_MASTER_SITE_PACKETSTORM)
 MASTER_SITE_PACKETSTORM+= \
-	http://packetstormsecurity.nl/%SUBDIR%/ \
-	http://packetstorm.linuxsecurity.com/%SUBDIR%/ \
-	http://packetstorm.setnine.com/%SUBDIR%/ \
+	http://dl.packetstormsecurity.net/%SUBDIR%/ \
 	http://packetstorm.austin2600.net/%SUBDIR%/ \
-	http://packetstorm.foofus.com/%SUBDIR%/ \
 	http://packetstorm.codar.com.br/%SUBDIR%/ \
-	http://packetstorm.rlz.cl/%SUBDIR%/ \
-	http://packetstorm.wowhacker.com/%SUBDIR%/ \
-	http://packetstorm.offensive-security.com/%SUBDIR%/ \
+	http://packetstorm.crazydog.pt/%SUBDIR%/ \
 	http://packetstorm.igor.onlinedirect.bg/%SUBDIR%/ \
+	http://packetstorm.interhost.co.il/%SUBDIR%/ \
+	http://packetstorm.foofus.com/%SUBDIR%/ \
+	http://packetstorm.linuxsecurity.com/%SUBDIR%/ \
 	http://packetstorm.unixteacher.org/%SUBDIR%/ \
-	http://packetstorm.orion-hosting.co.uk/%SUBDIR%/
+	http://packetstorm.wowhacker.com/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_PERL_CPAN)
