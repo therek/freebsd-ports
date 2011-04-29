@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2400 2011/04/19 04:17:54 dinoex Exp $
+# $FreeBSD: ports/MOVED,v 1.2401 2011/04/22 06:06:55 dinoex Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1747,3 +1747,6 @@ x11/metisse||2011-04-18|Has expired: has been broken for over a half year
 security/newpki-client||2011-04-18|Removed
 lang/gnustep-objc|lang/gnustep-libobjc|2011-04-19|Replaced with libobjc
 graphics/netpbm-devel|graphics/netpbm|2011-04-22|updated to default
+ports-mgmt/portmk||2011-04-29|Has expired: has not been kept up to date for > 6 months
+ports-mgmt/portsman||2011-04-29|Has expired: hardwires an ancient version of INDEX
+mail/kiltdown||2011-04-29|Has expired: upstream seems dead since 2001
