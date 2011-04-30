@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/redmine/pkg-plist,v 1.14 2011/01/14 13:36:46 decke Exp $
+@comment $FreeBSD: ports/www/redmine/pkg-plist,v 1.15 2011/01/31 10:24:12 decke Exp $
 %%WWWDIR%%/README.rdoc
 %%WWWDIR%%/Rakefile
 %%WWWDIR%%/app/controllers/account_controller.rb
@@ -675,7 +675,6 @@
 %%WWWDIR%%/doc/README_FOR_APP
 %%WWWDIR%%/doc/RUNNING_TESTS
 %%WWWDIR%%/doc/UPGRADING
-%%WWWDIR%%/doc/git.rdoc
 %%WWWDIR%%/extra/mail_handler/rdm-mailhandler.rb
 %%WWWDIR%%/extra/sample_plugin/README
 %%WWWDIR%%/extra/sample_plugin/app/controllers/example_controller.rb
