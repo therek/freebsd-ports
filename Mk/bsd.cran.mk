@@ -1,7 +1,7 @@
 # Date created:		2009-01-25
 # Whom:			Wen Heping <wenheping@gmail.com>
 #
-# $FreeBSD: ports/Mk/bsd.cran.mk,v 1.4 2010/09/26 07:59:13 tota Exp $
+# $FreeBSD: ports/Mk/bsd.cran.mk,v 1.5 2011/01/16 06:24:26 wen Exp $
 #
 
 CRAN_Include_MAINTAINER=	wen@FreeBSD.org
@@ -42,8 +42,8 @@ do-install:
 .if defined(USE_R_MOD) && defined(R_MOD_AUTOPLIST)
 .if !target(post-install-script)
 post-install-script:
-	@${FIND} -ds ${PREFIX}/${R_MOD_DIR} -type f -print | ${SED} -E -e \
-		's,^${PREFIX}/?,,' > ${TMPPLIST}
+	@${FIND} -ds ${PREFIX}/${R_MOD_DIR} \( -type f -or -type l \) -print | \
+		${SED} -E -e 's,^${PREFIX}/?,,' >> ${TMPPLIST}
 	@${FIND} -ds ${PREFIX}/${R_MOD_DIR} -type d -print | ${SED} -E -e \
 		's,^${PREFIX}/?,@dirrm ,' >> ${TMPPLIST}
 .endif
