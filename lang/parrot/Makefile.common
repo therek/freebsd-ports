@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/parrot/Makefile.common,v 1.14 2011/02/16 18:37:37 skv Exp $
+# $FreeBSD: ports/lang/parrot/Makefile.common,v 1.15 2011/03/19 22:02:44 skv Exp $
 
-PARROT_VERSION=		3.2.0
+PARROT_VERSION=		3.3.0
 
