@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2405 2011/05/01 16:06:49 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2406 2011/05/01 17:15:52 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1774,3 +1774,7 @@ x11-themes/notif2||2011-05-01|Has expired: Upstream disapear and distfile is no 
 x11-themes/whistlerk||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 x11-themes/xenophilia||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 x11-themes/xenostep||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-fm/cfm||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-fm/gnome-commander||2011-05-01|Has expired: Gnome1 is deprecated, consider using gnome-commander2
+x11-fm/jaffm||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-fm/workplace||2011-05-01|Has expired: Upstream disapear and distfile is no more available
