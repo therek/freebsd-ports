@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2403 2011/04/30 03:14:33 des Exp $
+# $FreeBSD: ports/MOVED,v 1.2404 2011/05/01 15:11:13 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1754,3 +1754,8 @@ devel/pinstall||2011-04-30|Removed
 x11-wm/kappdock||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 x11-wm/olvwm||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 x11-wm/wmg||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-toolkits/gtkglarea--||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-toolkits/php-gtk||2011-05-01|Has expired: Abandoned upstream
+x11-toolkits/py-gtkextra||2011-05-01|Has expired: Abandoned upstream
+x11-toolkits/slingshot||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-toolkits/viewkit||2011-05-01|Has expired: Upstream disapear and distfile is no more available
