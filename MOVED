@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2404 2011/05/01 15:11:13 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2405 2011/05/01 16:06:49 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1759,3 +1759,18 @@ x11-toolkits/php-gtk||2011-05-01|Has expired: Abandoned upstream
 x11-toolkits/py-gtkextra||2011-05-01|Has expired: Abandoned upstream
 x11-toolkits/slingshot||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 x11-toolkits/viewkit||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/buffy||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/clean-theme-gtk||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/colorstep||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/engradient||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/flux-art||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/gtk-Mac2-theme||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/gtk-flat-theme||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/gtkbe||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/gtkstep||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/gtkstep-pastel||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/icegradient||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/notif2||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/whistlerk||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/xenophilia||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-themes/xenostep||2011-05-01|Has expired: Upstream disapear and distfile is no more available
