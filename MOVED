@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2402 2011/04/29 23:43:58 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2403 2011/04/30 03:14:33 des Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1751,3 +1751,6 @@ ports-mgmt/portmk||2011-04-29|Has expired: has not been kept up to date for > 6 
 ports-mgmt/portsman||2011-04-29|Has expired: hardwires an ancient version of INDEX
 mail/kiltdown||2011-04-29|Has expired: upstream seems dead since 2001
 devel/pinstall||2011-04-30|Removed
+x11-wm/kappdock||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-wm/olvwm||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+x11-wm/wmg||2011-05-01|Has expired: Upstream disapear and distfile is no more available
