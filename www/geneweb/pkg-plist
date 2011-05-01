@@ -1,8 +1,9 @@
-@comment $FreeBSD: ports/www/geneweb/pkg-plist,v 1.1 2005/09/13 12:36:50 garga Exp $
+@comment $FreeBSD: ports/www/geneweb/pkg-plist,v 1.2 2009/01/19 17:52:56 nox Exp $
 bin/consang
 bin/ged2gwb
 bin/gwb2ged
 bin/gwc
+bin/gwc1
 bin/gwc2
 bin/gwd
 bin/gwu
