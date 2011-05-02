@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.678 2011/04/11 08:34:14 bapt Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.679 2011/04/24 15:37:53 ohauer Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1971,7 +1971,7 @@ LIB_DEPENDS+=		Xm:${PORTSDIR}/x11-toolkits/lesstif
 NO_OPENMOTIF=		yes
 .endif
 .if !defined(NO_OPENMOTIF)
-LIB_DEPENDS+=		Xm.3:${PORTSDIR}/x11-toolkits/open-motif
+LIB_DEPENDS+=		Xm.4:${PORTSDIR}/x11-toolkits/open-motif
 .endif
 .endif
 
