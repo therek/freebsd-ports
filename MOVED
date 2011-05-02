@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2430 2011/05/02 08:56:32 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2431 2011/05/02 09:11:31 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2073,3 +2073,8 @@ ftp/moftpd||2011-05-02|Has expired: Upstream disapear and distfile is no more av
 ftp/wu-ftpd||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 ftp/xrmftp||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 ftp/yale-tftpd||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+emulators/basiliskII||2011-05-02|Has expired: Distfile is no more available official website has older distfiles
+emulators/tkhfs||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+emulators/twin||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+emulators/vgb||2011-05-02|Has expired: Distfile is no more available (lastest binaries provided by upstream are for 5.x)
+emulators/vpce||2011-05-02|Has expired: Upstream disapear and distfile is no more available
