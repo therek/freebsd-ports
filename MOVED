@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2424 2011/05/02 06:52:09 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2425 2011/05/02 07:13:22 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2003,3 +2003,9 @@ misc/translator||2011-05-02|Has expired: Upstream disapear and distfile is no mo
 misc/videotext||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 misc/wmweather||2011-05-02|Has expired: Distfile is no longer available, try misc/wmweather+
 misc/wmx10||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+math/fudgit||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+math/kaskade||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+math/qscanplot||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+math/rpc||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+math/ss||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+math/wmcalc||2011-05-02|Has expired: Upstream disapear and distfile is no more available
