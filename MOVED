@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2420 2011/05/02 06:01:28 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2421 2011/05/02 06:05:48 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1933,3 +1933,6 @@ net-mgmt/knowlan||2011-05-02|Has expired: Upstream disapear and distfile is no m
 net-mgmt/p5-Altoids||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net-mgmt/pktstat||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net-mgmt/scotty3||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+net-im/aim||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+net-im/jit||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+net-im/kf||2011-05-02|Has expired: Upstream disapear and distfile is no more available
