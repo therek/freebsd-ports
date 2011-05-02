@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/Tools/scripts/chkversion.pl,v 1.16 2006/11/23 14:04:52 erwin Exp $
+# $FreeBSD: ports/Tools/scripts/chkversion.pl,v 1.17 2007/02/01 03:28:03 kris Exp $
 #
 # MAINTAINER=   erwin@FreeBSD.org
 #
@@ -39,7 +39,7 @@
 # from a (non-root) cron job.
 #
 # If you just call it with no preparation, it will compare all port versions
-# with their INDEX entries and complain if they have gone backwards. You need
+# with their INDEX entries and complain if they have gone backwards.
 # You need an old INDEX for this, of course. An up-to-date INDEX will accomplish
 # nothing.
 #
