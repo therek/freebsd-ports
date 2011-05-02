@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/sysutils/sge61/files/patch-aimk,v 1.8 2008/02/13 15:39:06 brooks Exp $
+$FreeBSD: ports/sysutils/sge61/files/patch-aimk,v 1.9 2008/04/19 17:53:48 miwi Exp $
 
 --- aimk.orig
 +++ aimk
@@ -24,7 +24,7 @@ $FreeBSD: ports/sysutils/sge61/files/patch-aimk,v 1.8 2008/02/13 15:39:06 brooks
     set DEPEND_FLAGS = "$CFLAGS $XMTINCD"
     set PTHRDSFLAGS = "-D_REENTRANT -D__USE_REENTRANT"
 -   set CFLAGS   = "$OFLAG -Wall -DFREEBSD -D$BUILDARCH -DGETHOSTBYNAME_M -DGETHOSTBYADDR_M $DEBUG_FLAG $CFLAGS -I/usr/X11R6/include"
-+   set CFLAGS   = "$OFLAG -Wall -DFREEBSD -D$BUILDARCH -DGETHOSTBYNAME_M -DGETHOSTBYADDR_M $DEBUG_FLAG $CFLAGS -I${LOCALBASE}/include"
++   set CFLAGS   = "$OFLAG -Wall -DFREEBSD -D$BUILDARCH -DGETHOSTBYNAME_M -DGETHOSTBYADDR_M $DEBUG_FLAG $CFLAGS -I${LOCALBASE}/include -I${LOCALBASE}/include/freetype2"
     set NOERR_CFLAG = "-Wno-error"
     set LFLAGS   = "$DEBUG_FLAG $LFLAGS -export-dynamic"
     set LIBS     = "$LIBS -lkvm"
