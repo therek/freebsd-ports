@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2415 2011/05/01 22:23:42 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2416 2011/05/02 05:34:13 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1913,3 +1913,7 @@ palm/jfconv||2011-05-01|Has expired: Upstream disapear and distfile is no more a
 palm/palmpower||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 palm/sitescooper||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 palm/uppc-kmod||2011-05-01|Has expired: Upstream disapear and distfile is no more available
+news/leafnode+||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+news/pyne||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+news/slurp||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+news/unpost||2011-05-02|Has expired: Upstream disapear and distfile is no more available
