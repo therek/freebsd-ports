@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.648 2011/05/02 06:39:01 bapt Exp $
+# $FreeBSD: ports/LEGAL,v 1.649 2011/05/02 06:52:09 bapt Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -232,8 +232,6 @@ grande-KXL-*.tar.gz	games/grande		Possible copyright infringement
 graphviz-*		graphics/graphviz	Needs license before fetching
 groupoffice-com-*	www/groupoffice		Free for personal use only
 gsview*			print/gsview		Can only be distributed for free
-GTL-*			misc/gtl		Non-commercial use only,
-						license forbids redistribution
 himeno/*		benchmarks/himenobench	Uncertain to distribute sources
 						and binaries
 HyperSpec-*		devel/clisp-hyperspec	Commercial redistribution
