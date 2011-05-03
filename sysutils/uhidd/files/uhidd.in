@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/uhidd/files/uhidd.in,v 1.1 2009/09/19 20:20:28 miwi Exp $
+# $FreeBSD: ports/sysutils/uhidd/files/uhidd.in,v 1.2 2010/03/27 00:15:06 dougb Exp $
 #
 
 # PROVIDE: uhidd
@@ -23,6 +23,8 @@ required_modules="uvhid vkbd"
 pidprefix="/var/run/uhidd"
 
 load_rc_config $name
+
+: ${uhidd_enable="NO"}
 
 if [ -n "$2" ]; then
 	pidfile="${pidprefix}.`basename $2`.pid"
