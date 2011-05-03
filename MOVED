@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2440 2011/05/02 21:49:42 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2441 2011/05/02 22:04:37 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2153,3 +2153,4 @@ games/grande||2011-05-02|Removed, Upstream disapear and distfile is no more avai
 games/spacearyarya||2011-05-02|Removed, Upstream disapear and distfile is no more available
 ftp/ftptool||2011-05-02|Removed, depend on this expired editors/textedit
 editors/textedit||2011-05-02|Has expired: Upstream disapear and distfile is no more available
+security/libfwbuilder||2011-05-02|libfwbuilder merged into fwbuilder
