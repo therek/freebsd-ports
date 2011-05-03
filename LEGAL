@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.653 2011/05/02 11:57:01 bapt Exp $
+# $FreeBSD: ports/LEGAL,v 1.654 2011/05/02 21:49:42 bapt Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -489,6 +489,7 @@ systemsim-cell-*	emulators/linux-systemsimcell	Redistribution of pre-compiled
 						binaries is not permitted
 scv-1.0p2-sysc*		cad/scv			License agreement required
 tcetest_*		games/linux-enemyterritory-tce	Redistribution limited
+teamspeak*		audio/teamspeak3_server	No redistribution
 texcm-ttf-20010117/*	x11-fonts/texcm-ttf	Cannot be sold or distributed
 						with any commercial product
 timidity-*		audio/timidity		Uses copyrighted patches
