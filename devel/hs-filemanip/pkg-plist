@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/hs-filemanip/pkg-plist,v 1.3 2010/07/30 08:49:50 pgj Exp $
+@comment $FreeBSD: ports/devel/hs-filemanip/pkg-plist,v 1.4 2011/05/02 05:31:13 ashish Exp $
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/System/FilePath/Error.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/System/FilePath/Find.hi
 %%LIBDIR_REL%%/ghc-%%GHC_VERSION%%/System/FilePath/Glob.hi
