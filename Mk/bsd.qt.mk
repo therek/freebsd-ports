@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.qt.mk,v 1.20 2010/12/02 19:47:01 makc Exp $
+# $FreeBSD: ports/Mk/bsd.qt.mk,v 1.21 2011/03/25 09:54:14 avilla Exp $
 #
 # Variables:
 # QT_NONSTANDARD	- Suppress modification of configure and make environment.
@@ -65,7 +65,8 @@ PLIST_SUB+=	SHLIB_VER=${QT4_VERSION:C/-.*//} \
 		SHLIB_SHVER=${QT4_VERSION:R}
 
 .if defined(PACKAGE_BUILDING)
-CONFIGURE_ARGS+=-no-mmx -no-3dnow -no-sse -no-sse2
+CONFIGURE_ARGS+=-no-mmx -no-3dnow -no-sse -no-sse2 -no-sse3 \
+		-no-ssse3 -no-sse4.1 -no-sse4.2
 .endif #defined(PACKAGE_BUILDING)
 
 # .if defined(PORTNAME) && ${PORTNAME} != "xmlpatterns"
