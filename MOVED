@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2445 2011/05/03 14:24:04 glarkin Exp $
+# $FreeBSD: ports/MOVED,v 1.2446 2011/05/03 14:42:02 glarkin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2009,7 +2009,6 @@ math/qscanplot||2011-05-02|Has expired: Upstream disapear and distfile is no mor
 math/rpc||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 math/ss||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 math/wmcalc||2011-05-02|Has expired: Upstream disapear and distfile is no more available
-mail/biabam||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 mail/crashecho||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 mail/drbl||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 mail/glbiff||2011-05-02|Has expired: Upstream disapear and distfile is no more available
