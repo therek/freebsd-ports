@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.qt.mk,v 1.21 2011/03/25 09:54:14 avilla Exp $
+# $FreeBSD: ports/Mk/bsd.qt.mk,v 1.22 2011/05/03 20:33:53 makc Exp $
 #
 # Variables:
 # QT_NONSTANDARD	- Suppress modification of configure and make environment.
@@ -137,11 +137,7 @@ QMAKESPEC?=	${QT_PREFIX}/share/qt4/mkspecs/freebsd-${QMAKE_COMPILER}
 QMAKESPEC?=	${QT_PREFIX}/share/qt4/mkspecs/freebsd-${QMAKE_BASE_COMPILER}
 .endif
 
-.if ${OSVERSION} < 700042 && ${ARCH} == "amd64"
-QTCPPFLAGS?=	-fno-gcse
-.else
 QTCPPFLAGS?=
-.endif
 QTCGFLIBS?=
 
 .endif # !defined(_POSTMKINCLUDED) && !defined(Qt_Pre_Include)

@@ -2,7 +2,7 @@
 # ex:ts=4
 #
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.76 2010/05/25 15:18:06 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.77 2010/12/20 12:23:52 erwin Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -49,11 +49,6 @@ README=			${TEMPLATES}/README.category
 .endif
 MOVEDDIR?=		${PORTSDIR}
 MOVEDFILE?=		MOVED
-
-# XXX Are these needed here?  DESCR was set wrong for a few years
-MASTERDIR?=     ${.CURDIR}
-PKGDIR?=		${MASTERDIR}
-DESCR?=			${PKGDIR}/pkg-descr
 
 .include "${PORTSDIR}/Mk/bsd.commands.mk"
 

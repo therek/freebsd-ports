@@ -30,7 +30,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.49 2010/10/17 11:24:50 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.50 2011/02/01 01:41:19 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -87,17 +87,9 @@ F77:=	${LOCALBASE}/intel_fc_80/bin/ifort
 # In some case we want to use g77 from lang/gcc34 (FreeBSD>=7) or f77
 # (FreeBSD<=6).
 . elif ${USE_FORTRAN} == g77
-.  if (${OSVERSION} > 700042)
 _USE_GCC:=	3.4
 FC:=	g77-34
 F77:=	g77-34
-.  else
-F77:=	f77
-FC:=	f77
-CC:=	gcc
-CXX:=	g++
-.  endif
-
 . else
 IGNORE=	specifies unknown value "${USE_FORTRAN}" for USE_FORTRAN
 . endif
