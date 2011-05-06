@@ -25,7 +25,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/etcupdate/src/etcupdate.sh,v 1.2 2010/08/04 15:55:58 jhb Exp $
 
 # This is a tool to manage updating files that are not updated as part
 # of 'make installworld' such as files in /etc.  Unlike other tools,
@@ -57,7 +57,6 @@
 # TODO:
 # - automatable conflict resolution
 # - a 'revert' command to make a file "stock"
-# - invoke /etc/rc.d/motd if /etc/motd changes?
 
 usage()
 {
@@ -194,7 +193,7 @@ build_tree()
 		(cd $SRCDIR; \
 	    MAKEOBJDIRPREFIX=$1/usr/obj $make _obj SUBDIR_OVERRIDE=etc &&
 	    MAKEOBJDIRPREFIX=$1/usr/obj $make everything SUBDIR_OVERRIDE=etc &&
-	    MAKEOBJDIRPREFIX=$1/usr/obj $make DESTDIR=$1 distribution) >&3 2>&1
+	    MAKEOBJDIRPREFIX=$1/usr/obj $make DESTDIR=$1 distribution) \
 		    >&3 2>&1 || return 1
 	else
 		(cd $SRCDIR; $make DESTDIR=$1 distribution) >&3 2>&1 || return 1
@@ -555,6 +554,17 @@ post_install_file()
 			if [ -z "$dryrun" ]; then
 				pwd_mkdb -p -d $DESTDIR/etc ${DESTDIR}$1 \
 				    >&3 2>&1
+			fi
+			;;
+		/etc/motd)
+			# /etc/rc.d/motd hardcodes the /etc/motd path.
+			# Don't warn about non-empty DESTDIR's since this
+			# change is only cosmetic anyway.
+			if [ -z "$DESTDIR" ]; then
+				log "sh /etc/rc.d/motd start"
+				if [ -z "$dryrun" ]; then
+					sh /etc/rc.d/motd start >&3 2>&1
+				fi
 			fi
 			;;
 	esac
