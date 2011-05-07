@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.qt.mk,v 1.22 2011/05/03 20:33:53 makc Exp $
+# $FreeBSD: ports/Mk/bsd.qt.mk,v 1.23 2011/05/04 22:33:13 flz Exp $
 #
 # Variables:
 # QT_NONSTANDARD	- Suppress modification of configure and make environment.
@@ -146,7 +146,7 @@ QTCGFLIBS?=
 # QT4 version
 # Don't forget to update ${PORTSDIR}/devel/qt4/files/patch-configure !
 #
-QT4_VERSION?=		4.7.2
+QT4_VERSION?=		4.7.3
 
 _QT_COMPONENTS_ALL=	accessible assistant assistant-adp assistantclient \
 			clucene codecs-cn codecs-jp codecs-kr codecs-tw corelib \
