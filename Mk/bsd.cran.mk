@@ -1,7 +1,7 @@
 # Date created:		2009-01-25
 # Whom:			Wen Heping <wenheping@gmail.com>
 #
-# $FreeBSD: ports/Mk/bsd.cran.mk,v 1.5 2011/01/16 06:24:26 wen Exp $
+# $FreeBSD: ports/Mk/bsd.cran.mk,v 1.6 2011/04/30 07:16:53 bf Exp $
 #
 
 CRAN_Include_MAINTAINER=	wen@FreeBSD.org
@@ -29,6 +29,7 @@ RUN_DEPENDS+=	${LOCALBASE}/bin/R:${PORTSDIR}/math/R
 
 R_MOD_DIR?=	lib/R/library/${PORTNAME}
 PLIST_SUB+=	R_MOD_DIR=${R_MOD_DIR}
+WRKSRC?=	${WRKDIR}/${PORTNAME}
 
 NO_BUILD=	yes
 R_COMMAND=	${LOCALBASE}/bin/R
