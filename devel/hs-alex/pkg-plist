@@ -1,4 +1,16 @@
-@comment $FreeBSD: ports/devel/hs-alex/pkg-plist,v 1.8 2009/09/02 15:38:33 pgj Exp $
-bin/alex
-%%NOPORTDOCS%%%%DOCSDIR%%/LICENSE
-%%NOPORTDOCS%%@dirrmtry %%DOCSDIR%%
+@comment $FreeBSD: ports/devel/hs-alex/pkg-plist,v 1.9 2010/05/12 16:33:40 pgj Exp $
+%%DATADIR%%/AlexTemplate
+%%DATADIR%%/AlexTemplate-debug
+%%DATADIR%%/AlexTemplate-ghc
+%%DATADIR%%/AlexTemplate-ghc-debug
+%%DATADIR%%/AlexWrapper-basic
+%%DATADIR%%/AlexWrapper-basic-bytestring
+%%DATADIR%%/AlexWrapper-gscan
+%%DATADIR%%/AlexWrapper-monad
+%%DATADIR%%/AlexWrapper-monad-bytestring
+%%DATADIR%%/AlexWrapper-monadUserState
+%%DATADIR%%/AlexWrapper-monadUserState-bytestring
+%%DATADIR%%/AlexWrapper-posn
+%%DATADIR%%/AlexWrapper-posn-bytestring
+%%DATADIR%%/AlexWrapper-strict-bytestring
+@dirrmtry %%DATADIR%%

@@ -5,6 +5,19 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20110509:
+  AFFECTS: users of lang/ghc and */hs-*
+  AUTHOR: ashish@FreeBSD.org
+
+  GHC has been updated to version 7.0.3 and other Haskell ports are also
+  updated to their Haskell Platform versions or latest versions.
+
+  To update all affected ports:
+
+  # portmaster -r lang/ghc
+  or
+  # portupgrade -r lang/ghc
+
 20110506:
   AFFECTS: users of lang/perl*
   AUTHOR: skv@FreeBSD.org
@@ -4594,4 +4607,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1057 2011/05/03 14:52:02 glarkin Exp $
+$FreeBSD: ports/UPDATING,v 1.1058 2011/05/06 06:20:12 skv Exp $
