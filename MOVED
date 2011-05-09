@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2448 2011/05/03 21:09:08 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2449 2011/05/09 05:28:28 ashish Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2169,8 +2169,8 @@ devel/hs-FileManip|devel/hs-filemanip|2011-05-08|Renamed: Cabal package has been
 devel/lhs2TeX|textproc/hs-lhs2tex|2011-05-08|Renamed: It has become a Cabal transcript.
 devel/bnfc|devel/hs-BNFC|2011-05-08|Renamed: It has become a Cabal transcript.
 graphics/hs-hgl||2011-05-08|deleted: overriden by graphics/hs-HGL
-x11-toolkits/hs-GLURaw|2011-05-08|Removed: It has become obsoleted by Haskell Platform.
-x11-toolkits/hs-OpenGLRaw|2011-05-08|Removed: It has become obsoleted by Haskell Platform.
-net/hs-network-bytestring|2011-05-08|Removed: It is deprecated by net/hs-network.
-devel/hs-uvector|2011-05-08|Removed: It is deprecated by devel/hs-vector.
-devel/hs-uvector-algorithms|2011-05-08|Removed: It is deprecated by devel/hs-vector-algorithms.
+x11-toolkits/hs-GLURaw||2011-05-08|Removed: It has become obsoleted by Haskell Platform.
+x11-toolkits/hs-OpenGLRaw||2011-05-08|Removed: It has become obsoleted by Haskell Platform.
+net/hs-network-bytestring||2011-05-08|Removed: It is deprecated by net/hs-network.
+devel/hs-uvector||2011-05-08|Removed: It is deprecated by devel/hs-vector.
+devel/hs-uvector-algorithms||2011-05-08|Removed: It is deprecated by devel/hs-vector-algorithms.
