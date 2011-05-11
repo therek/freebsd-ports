@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/noc/files/pkg-deinstall.in,v 1.1 2009/08/18 09:07:12 bsam Exp $
 #
 
 NOCDIR=%%NOCDIR%%
