@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.cabal.mk,v 1.4 2010/08/08 08:49:30 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.cabal.mk,v 1.5 2011/05/09 05:28:46 ashish Exp $
 #
 # bsd.cabal.mk -- Support for ports based on Haskell Cabal.
 #
@@ -131,6 +131,10 @@ USE_CABAL+=	${PORTNAME}==${PKGVERSION}
 __u_h_r_package=	${cabal_package:C/[<=>].*$//g}
 __u_h_r_port=		${${__u_h_r_package}_port}
 __u_h_r_name=		${__u_h_r_port:C/.*\///g}
+
+.if empty(__u_h_r_port)
+IGNORE?=	dependency fails: ${cabal_package:C/[<=>].*$//g} is not known as a port
+.endif
 
 .if ${__u_h_r_package} == ${cabal_package}
 __u_h_r_version:=	>=0
