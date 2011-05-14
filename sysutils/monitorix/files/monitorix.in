@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/monitorix/files/monitorix.in,v 1.2 2011/03/28 02:45:01 wen Exp $
+# $FreeBSD: ports/sysutils/monitorix/files/monitorix.in,v 1.3 2011/03/29 02:40:12 wen Exp $
 #
 # PROVIDE: monitorix
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 monitorix_enable=${monitorix_enable:-"NO"}
 
