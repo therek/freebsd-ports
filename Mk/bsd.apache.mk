@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.27 2011/03/31 14:23:32 ohauer Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.28 2011/04/24 15:37:53 ohauer Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -9,6 +9,20 @@
 #
 # Please view me with 4 column tabs!
 
+# =========================================================================
+# Parameter APACHE_PORT (user controlled):
+#
+# The parameter APACHE_PORT can be used in /etc/make.conf to
+# overwrite the default apache port.
+#
+# This parameter should never be used in the Makefile of a port!
+#
+# Example entry in /etc/make.conf:
+#  APACHE_PORT=	www/apache22
+#
+# To get a list of "possible" valid values execute the command:
+#  $> egrep 'apache[12]' ports/www/Makefile | awk '{print "www/" $3}'
+#
 # =========================================================================
 #
 # This script will be included if one of the following parameter
