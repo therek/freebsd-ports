@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/trafd/files/trafd.in,v 1.1 2010/03/27 00:42:06 dougb Exp $
 #
 # PROVIDE: trafd
 # REQUIRE: netif routing
@@ -10,9 +10,9 @@
 #
 # trafd_enable="YES"
 # trafd_ifaces="fxp0 fxp1 fxp2"
-# trafd_flags=""
 # trafd_log="/var/log/traffic.log"
 #
+# trafd_flags	(Set as needed)
 
 . /etc/rc.subr
 

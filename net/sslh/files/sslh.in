@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/sslh/files/sslh.in,v 1.1 2010/08/12 18:31:18 bapt Exp $
 #
 # sslh startup script
 #
@@ -21,7 +21,7 @@
 # sslh_sshtimeout="2"
 # sslh_listening="0.0.0.0:8443"	
 # sslh_uid="nobody"
-# sslh_flags=""
+# sslh_flags
 
 sslh_setfib() {
 	sysctl net.fibs >/dev/null 2>&1 || return 0

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/p5-openxpki-deployment/files/openxpki.sh.in,v 1.4 2010/03/27 00:14:46 dougb Exp $
+# $FreeBSD: ports/security/p5-openxpki-deployment/files/openxpki.sh.in,v 1.5 2010/08/18 12:47:08 bapt Exp $
 
 # PROVIDE: openxpki
 # REQUIRE: LOGIN
@@ -13,8 +13,9 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
+# openxpki_flags	(Set as needed)
+
 openxpki_enable="${openxpki_enable-NO}"
-# openxpki_flags=""
 openxpki_pidfile="%%PREFIX%%/var/openxpki/openxpki.pid"
 
 case "$1" in 

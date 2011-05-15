@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/mail/spamilter/files/spamilter.sh.in,v 1.1 2009/01/16 19:54:13 dinoex Exp $
+# $FreeBSD: ports/mail/spamilter/files/spamilter.sh.in,v 1.2 2009/07/15 16:55:49 dougb Exp $
 
 # Start or stop spamilter
 
@@ -17,8 +17,9 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
+# spamilter_flags Flags to spamilter
+
 spamilter_enable=${spamilter_enable:-"NO"}      # Enable spamilter-milter
-# spamilter_flags="" # Flags to spamilter
 
 . /etc/rc.subr
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/scribe/files/scribe.in,v 1.1 2010/08/02 20:55:31 lwhsu Exp $
+# $FreeBSD: ports/net/scribe/files/scribe.in,v 1.2 2011/05/13 13:53:55 glarkin Exp $
 #
 
 # PROVIDE: scribe
@@ -18,7 +18,6 @@ stop_postcmd=scribe_cleanup
 
 load_rc_config "$name"
 : ${scribe_enable="NO"}
-: ${scribe_flags=""}
 
 scribe_start()
 {

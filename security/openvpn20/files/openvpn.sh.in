@@ -7,7 +7,7 @@
 # with multi-instance contribution from Denis Shaposhnikov, Gleb Kozyrev
 # and Vasil Dimov
 #
-# $FreeBSD: ports/security/openvpn20/files/openvpn.sh.in,v 1.13 2010/03/27 00:14:46 dougb Exp $
+# $FreeBSD: ports/security/openvpn20/files/openvpn.sh.in,v 1.14 2011/01/08 10:07:00 mandree Exp $
 # 
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -44,10 +44,10 @@
 # /etc/rc.conf, /etc/rc.conf.local or /etc/rc.conf.d/NAME
 #
 # NAME_enable="NO"	# set to YES to enable openvpn
-# NAME_if=""		# driver(s) to load, set to "tun", "tap" or "tun tap"
+# NAME_if=		# driver(s) to load, set to "tun", "tap" or "tun tap"
 #
 # # optional:
-# NAME_flags=""				# additional command line arguments
+# NAME_flags=				# additional command line arguments
 # NAME_configfile="%%PREFIX%%/etc/openvpn/NAME.conf"	# --config file
 # NAME_dir="%%PREFIX%%/etc/openvpn"	# --cd directory
 #

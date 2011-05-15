@@ -1,6 +1,6 @@
 #!/bin/sh 
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/cego/files/cego.in,v 1.1 2011/04/24 09:54:22 bapt Exp $
 #
 
 # PROVIDE: cego
@@ -27,7 +27,6 @@ command="%%PREFIX%%/bin/cego"
 : ${cego_enable="NO"}
 : ${cego_conf="%%PREFIX%%/cego"}
 : ${cego_root="%%PREFIX%%/cego"}
-: ${cego_tablespc=""}
 : ${cego_user="%%USER%%"}
 
 flags="--mode=daemon"

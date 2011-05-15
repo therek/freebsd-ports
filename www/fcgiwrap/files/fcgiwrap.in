@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/www/fcgiwrap/files/fcgiwrap.in,v 1.4 2010/11/29 11:47:07 bapt Exp $
+# $FreeBSD: ports/www/fcgiwrap/files/fcgiwrap.in,v 1.5 2010/12/01 07:13:56 bapt Exp $
 #
 # fcgiwrap startup script
 #
@@ -19,7 +19,7 @@
 # this could also be:
 # - tcp:[ipv4_addr]:port (for ipv4)
 # - tcp6:[ipv6_addr]:port (for ipv6)
-# fcgiwrap_flags=""
+# fcgiwrap_flags=
 # Use fcgiwrap_user to run fcgiwrap as user
 
 fcgiwrap_setfib() {

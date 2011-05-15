@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/mail/milter-regex/files/milterregex.sh.in,v 1.2 2007/02/26 23:02:02 dougb Exp $
+# $FreeBSD: ports/mail/milter-regex/files/milterregex.sh.in,v 1.3 2009/07/15 16:55:47 dougb Exp $
 
 # Start or stop milterregex
 
@@ -18,8 +18,9 @@ spooldir=%%SPOOLDIR%%
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
+# milterregex_flags Flags to milter-regex program
+
 [ -z "$milterregex_enable" ] && milterregex_enable="NO"	# Enable milter-regex
-# milterregex_flags="" # Flags to milter-regex program
 
 . /etc/rc.subr
 

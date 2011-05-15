@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/batv-milter/files/milter-batv.sh.in,v 1.2 2009/07/15 16:55:45 dougb Exp $
+# $FreeBSD: ports/mail/batv-milter/files/milter-batv.sh.in,v 1.3 2010/03/27 00:13:10 dougb Exp $
 #
 
 # PROVIDE: milter-batv
@@ -48,13 +48,8 @@ load_rc_config $name
 #
 : ${milterbatv_enable="NO"}
 : ${milterbatv_uid="mailnull"}
-: ${milterbatv_profiles=""}
 : ${milterbatv_cfgfile="%%PREFIX%%/etc/mail/batv-filter.conf"}
 
-: ${milterbatv_socket=""}
-: ${milterbatv_domain=""}
-: ${milterbatv_allowlist=""}
-: ${milterbatv_key=""}
 # Options other than above can be set with $milterbatv_flags.
 # see batv-milter documentation for detail.
 

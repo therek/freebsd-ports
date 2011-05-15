@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/amphetadesk/files/amphetadesk.in,v 1.3 2007/12/25 19:52:37 lioux Exp $
+# $FreeBSD: ports/www/amphetadesk/files/amphetadesk.in,v 1.4 2010/03/27 00:15:08 dougb Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
@@ -12,8 +12,8 @@
 # Add the following lines to /etc/rc.conf to enable amphetadesk:
 #
 #amphetadesk_enable="YES"
-#amphetadesk_user=""
-#amphetadesk_pidfile=""
+#amphetadesk_user=
+#amphetadesk_pidfile=
 #
 
 . /etc/rc.subr
@@ -25,7 +25,6 @@ procname="%%PERL%%"
 
 load_rc_config "${name}"
 : ${amphetadesk_enable="NO"}
-: ${amphetadesk_user=""}
 
 if [ -n "${amphetadesk_user}" ]; then
   eval realpath ~${amphetadesk_user} >/dev/null 2>&1 &&

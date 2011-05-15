@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/mysql-proxy/files/mysql-proxy.sh.in,v 1.4 2010/03/27 00:12:46 dougb Exp $
+# $FreeBSD: ports/databases/mysql-proxy/files/mysql-proxy.in,v 1.1 2010/12/12 04:33:28 swills Exp $
 #
 
 # PROVIDE: mysql-proxy
@@ -39,7 +39,7 @@ load_rc_config $name
 : ${mysql_proxy_address=":4040"}
 : ${mysql_proxy_backend_addresses="127.0.0.1:3306"}
 : ${mysql_proxy_pid_file="/var/run/mysql-proxy.pid"}
-proxy_backend_addresses=""
+
 for addr in ${mysql_proxy_backend_addresses}; do
 	proxy_backend_addresses="${proxy_backend_addresses} --proxy-backend-addresses=${addr}"
 done

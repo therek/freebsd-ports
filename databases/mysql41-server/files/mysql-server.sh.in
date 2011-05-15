@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/mysql41-server/files/mysql-server.sh.in,v 1.5 2008/07/30 06:11:16 ale Exp $
+# $FreeBSD: ports/databases/mysql41-server/files/mysql-server.sh.in,v 1.6 2010/03/27 00:12:47 dougb Exp $
 #
 
 # PROVIDE: mysql
@@ -30,7 +30,6 @@ load_rc_config $name
 : ${mysql_enable="NO"}
 : ${mysql_limits="NO"}
 : ${mysql_dbdir="/var/db/mysql"}
-: ${mysql_args=""}
 
 mysql_user="mysql"
 mysql_limits_args="-e -U ${mysql_user}"

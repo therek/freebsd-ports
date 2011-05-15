@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/textproc/pootle/files/pootle.sh.in,v 1.2 2010/03/27 00:15:08 dougb Exp $
+# $FreeBSD: ports/textproc/pootle/files/pootle.sh.in,v 1.3 2010/06/28 17:43:08 mm Exp $
 #
 # PROVIDE: pootle
 # REQUIRE: DAEMON
@@ -33,7 +33,6 @@ load_rc_config $name
 : ${pootle_enable="NO"}
 : ${pootle_user="%%POOTLEUSER%%"}
 : ${pootle_logdir="%%POOTLELOGDIR%%"}
-: ${pootle_flags=""}
 
 if [ -n "${pootle_logdir}" ]; then
 	pootle_stdout="${pootle_logdir}/access.log"

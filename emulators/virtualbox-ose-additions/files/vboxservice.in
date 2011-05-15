@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/emulators/virtualbox-ose-additions/files/vboxservice.in,v 1.1 2011/01/31 23:06:45 decke Exp $
 
 # PROVIDE: vboxservice
 # REQUIRE: DAEMON vboxguest
@@ -21,6 +21,5 @@ command="%%PREFIX%%/sbin/VBoxService"
 load_rc_config $name
 
 : ${vboxservice_enable="NO"}
-: ${vboxservice_flags=""}
 
 run_rc_command "$1"

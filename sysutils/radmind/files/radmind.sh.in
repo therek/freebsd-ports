@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/radmind/files/radmind.sh.in,v 1.3 2010/03/27 00:15:03 dougb Exp $
+# $FreeBSD: ports/sysutils/radmind/files/radmind.sh.in,v 1.4 2010/11/28 23:50:54 ohauer Exp $
 #
 
 # PROVIDE: radmind
@@ -26,7 +26,6 @@ name=radmind
 rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/radmind
-command_args=""
 required_files=%%RADMIND_BASE_DIR%%/config
 
 # set defaults

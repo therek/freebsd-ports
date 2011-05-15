@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-p2p/i2p/files/i2p.sh.in,v 1.3 2006/03/27 20:44:32 lioux Exp $
+# $FreeBSD: ports/net-p2p/i2p/files/i2p.sh.in,v 1.4 2010/03/27 00:14:30 dougb Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
@@ -11,9 +11,8 @@
 #
 # Add the following lines to /etc/rc.conf to enable i2p:
 #
-#i2p_enable="YES"
-#i2p_user=""
-#
+# i2p_enable="YES"
+# i2p_user
 
 . /etc/rc.subr
 

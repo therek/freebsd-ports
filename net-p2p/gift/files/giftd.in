@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-p2p/gift/files/giftd.in,v 1.1 2009/12/17 23:23:52 pgollucci Exp $
+# $FreeBSD: ports/net-p2p/gift/files/giftd.in,v 1.2 2010/03/27 00:14:30 dougb Exp $
 #
 
 # PROVIDE: giftd
@@ -16,8 +16,8 @@
 
 giftd_enable="${giftd_enable-NO}"
 giftd_flags="-d -q"
-# giftd_user=""
-# giftd_local_dir=""
+# giftd_user
+# giftd_local_dir
 
 . /etc/rc.subr
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-p2p/mldonkey/files/kill_mldonkey,v 1.2 2005/06/24 07:39:10 pav Exp $
 
 # Copyright (c) 2003
 # Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
@@ -34,7 +34,7 @@
 # like this:
 #
 #MLNETUSER="admin"
-#MLNETPASS=""
+#MLNETPASS="pass"
 #MLNETHOST="127.0.0.1"
 #MLNETPORT="4080"
 

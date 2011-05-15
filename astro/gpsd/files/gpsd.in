@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/astro/gpsd/files/gpsd.in,v 1.2 2010/03/27 00:12:40 dougb Exp $
+# $FreeBSD: ports/astro/gpsd/files/gpsd.in,v 1.3 2010/05/28 00:52:25 wen Exp $
 #
 
 # PROVIDE: gpsd
@@ -56,8 +56,6 @@ load_rc_config $name
 
 # Set defaults
 : ${gpsd_enable:="NO"}
-: ${gpsd_flags:=""}
-: ${gpsd_devices:=""}
 : ${gpxlogger_enable:="NO"}
 : ${gpxlogger_flags:="-i 600"}
 : ${gpxlogger_logdir:="/var/log"}

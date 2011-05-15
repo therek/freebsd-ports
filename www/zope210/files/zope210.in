@@ -2,7 +2,7 @@
 #
 # Startup script for Zope server.
 #
-# $FreeBSD: ports/www/zope210/files/zope210.in,v 1.2 2007/09/17 17:45:29 araujo Exp $
+# $FreeBSD: ports/www/zope210/files/zope210.in,v 1.3 2010/03/27 00:15:22 dougb Exp $
 #
 
 # PROVIDE: zope210
@@ -56,7 +56,6 @@ restart_cmd="zope210_restart"
 load_rc_config $name
 
 : ${zope210_enable="NO"}
-: ${zope210_instances=""}
 
 cmd="$1"
 [ $# -gt 0 ] && shift

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/lvwimax/files/lvwimax.in,v 1.1 2010/11/30 07:25:00 bsam Exp $
 #
 # PROVIDE: lvwimax
 # REQUIRE: DAEMON
@@ -24,7 +24,6 @@ lvwimax_enable=${lvwimax_enable-"NO"}
 lvwimax_mac_address=${lvwimax_mac_address-"00:00:00:00:00:00"}
 
 command=%%PREFIX%%/sbin/${name}
-command_args=""
 
 start_precmd="lvwimax_prestart"
 start_postcmd="lvwimax_poststart"

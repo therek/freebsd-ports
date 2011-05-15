@@ -2,7 +2,7 @@
 #
 # %%APP_TITLE%% startup script.
 #
-# $FreeBSD: ports/java/jboss3/files/jboss3.in,v 1.1 2007/07/29 20:16:14 pav Exp $
+# $FreeBSD: ports/java/jboss3/files/jboss3.in,v 1.2 2010/03/27 00:13:09 dougb Exp $
 #
 
 # PROVIDE: %%APP_SHORTNAME%%
@@ -28,7 +28,6 @@ procname="%%JAVA%%"
 
 [ -z "$%%APP_SHORTNAME%%_enable" ]	&& %%APP_SHORTNAME%%_enable="NO"
 [ -z "$%%APP_SHORTNAME%%_flags" ]	&& %%APP_SHORTNAME%%_flags="-server"
-[ -z "$%%APP_SHORTNAME%%_config" ]	&& %%APP_SHORTNAME%%_config=""
 
 %%APP_SHORTNAME%%_start ()
 {

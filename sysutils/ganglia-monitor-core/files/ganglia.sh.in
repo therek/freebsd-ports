@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/ganglia-monitor-core/files/ganglia.sh.in,v 1.6 2009/07/15 16:56:05 dougb Exp $
+# $FreeBSD: ports/sysutils/ganglia-monitor-core/files/ganglia.sh.in,v 1.7 2010/03/27 00:14:55 dougb Exp $
 
 # PROVIDE: ganglia
 # REQUIRE: DAEMON
@@ -18,7 +18,7 @@ gmetasnap_enable="${gmetasnap_enable-NO}"
 gmetasnap_rrddir="/var/db/ganglia/rrds"
 gmetasnap_snapdir="/var/db/ganglia/snaps"
 gmetasnap_snapname="snap"
-# gmetasnap_flags=""
+# gmetasnap_flags=
 gmetasnap_command="%%PREFIX%%/sbin/gmetasnap"
 
 ### gmond ###

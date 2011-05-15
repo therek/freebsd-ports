@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p4web/files/p4web.sh.in,v 1.1 2010/05/10 15:04:57 rene Exp $
 #
 
 # PROVIDE: p4web
@@ -38,7 +38,6 @@ load_rc_config $name
 : ${p4web_listen="8080"}
 : ${p4web_port="perforce:1666"}
 : ${p4web_log="%%P4LOG%%"}
-: ${p4web_args=""}
 
 case ${p4web_mode} in
 viewer-auth)

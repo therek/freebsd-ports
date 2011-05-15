@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/msyslog/files/msyslogd.sh.in,v 1.4 2009/07/15 16:56:06 dougb Exp $
+# $FreeBSD: ports/sysutils/msyslog/files/msyslogd.sh.in,v 1.5 2010/03/27 00:14:58 dougb Exp $
 #
 
 # PROVIDE: syslogd
@@ -13,7 +13,7 @@
 #
 # Yes, here you can pass arguments to daemon
 #
-# msyslogd_flags=""
+# msyslogd_flags=
 #
 
 . /etc/rc.subr

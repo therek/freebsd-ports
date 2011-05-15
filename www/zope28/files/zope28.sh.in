@@ -2,7 +2,7 @@
 #
 # Startup script for Zope server.
 #
-# $FreeBSD: ports/www/zope28/files/zope28.sh.in,v 1.2 2006/01/05 23:39:09 pav Exp $
+# $FreeBSD: ports/www/zope28/files/zope28.sh.in,v 1.3 2010/03/27 00:15:22 dougb Exp $
 #
 
 # PROVIDE: zope28
@@ -56,7 +56,6 @@ restart_cmd="zope28_restart"
 load_rc_config $name
 
 : ${zope28_enable="NO"}
-: ${zope28_instances=""}
 
 cmd="$1"
 [ $# -gt 0 ] && shift

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/slony1/files/slon.sh.in,v 1.4 2007/09/08 12:22:49 edwin Exp $
+# $FreeBSD: ports/databases/slony1/files/slon.sh.in,v 1.5 2009/03/22 13:28:24 olgeni Exp $
 # Modified by Brian A. Seklecki <bseklecki@collaborativefusion.com>
 #                               <lavalamp@spiritual-machines.org>
 # $Id$ 
@@ -24,7 +24,6 @@ procname="%%PREFIX%%/bin/slon"
 
 # From global rc.conf(5); if unset, set them here
 [ -z "$slon_enable" ]   && slon_enable="NO"
-[ -z "$slon_profiles" ] && slon_profiles=""
 
 configfile_path="%%PREFIX%%/etc/${name}.conf"
 command_args="-f ${configfile_path}"

@@ -2,7 +2,7 @@
 #
 # Startup script for Zope server.
 #
-# $FreeBSD: ports/www/zope211/files/zope211.in,v 1.1 2009/03/30 19:08:58 pav Exp $
+# $FreeBSD: ports/www/zope211/files/zope211.in,v 1.2 2010/03/27 00:15:22 dougb Exp $
 #
 # PROVIDE: zope211
 # REQUIRE: DAEMON
@@ -55,7 +55,6 @@ restart_cmd="zope211_restart"
 load_rc_config $name
 
 : ${zope211_enable="NO"}
-: ${zope211_instances=""}
 
 cmd="$1"
 [ $# -gt 0 ] && shift

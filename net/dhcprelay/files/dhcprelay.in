@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/dhcprelay/files/dhcprelay.in,v 1.2 2009/07/20 18:49:57 dougb Exp $
+# $FreeBSD: ports/net/dhcprelay/files/dhcprelay.in,v 1.3 2010/03/27 00:13:41 dougb Exp $
 #
 # PROVIDE: dhcprelay
 # REQUIRE: DAEMON
@@ -9,8 +9,8 @@
 #
 # dhcprelay_enable="YES"
 #
-# dhcprelay_server=""	# dhcprelay server(s)
-# dhcprelay_ifaces=""	# ethernet interface(s)
+# dhcprelay_server	dhcprelay server(s)
+# dhcprelay_ifaces	ethernet interface(s)
 
 . /etc/rc.subr
 

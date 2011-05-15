@@ -2,7 +2,7 @@
 #
 # Startup script for Zeo server.
 #
-# $FreeBSD: ports/www/zope3/files/zeo3.sh.in,v 1.1 2006/01/23 21:11:16 pav Exp $
+# $FreeBSD: ports/www/zope3/files/zeo3.sh.in,v 1.2 2010/03/27 00:15:23 dougb Exp $
 #
 
 # PROVIDE: zeo3
@@ -56,7 +56,6 @@ restart_cmd="zeo3_restart"
 load_rc_config $name
 
 : ${zeo3_enable="NO"}
-: ${zeo3_instances=""}
 
 cmd="$1"
 [ $# -gt 0 ] && shift

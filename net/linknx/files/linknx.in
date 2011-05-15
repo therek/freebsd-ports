@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/linknx/files/linknx.in,v 1.1 2008/11/08 20:07:06 miwi Exp $
+# $FreeBSD: ports/net/linknx/files/linknx.in,v 1.2 2010/03/27 00:13:47 dougb Exp $
 #
 
 # PROVIDE: linknx
@@ -29,7 +29,6 @@ start_precmd="linknx_precmd"
 
 : ${linknx_enable:="NO"}
 : ${linknx_console:="/var/log/linknx.log"}
-: ${linknx_config:=""}
 : ${linknx_pidfile:="/var/run/linknx.pid"}
 : ${linknx_flags:="--pid-file=${linknx_pidfile}"}
 
