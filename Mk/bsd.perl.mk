@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.17 2010/07/15 14:48:50 skv Exp $
+# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.18 2011/05/06 06:20:12 skv Exp $
 #
 # bsd.perl.mk - Support for Perl-based ports.
 #
@@ -99,7 +99,9 @@ PERL_LEVEL=		0
 
 PERL_ARCH?=		mach
 
-.if    ${PERL_LEVEL} >= 501200
+.if    ${PERL_LEVEL} >= 501400
+PERL_PORT?=	perl5.14
+.elif  ${PERL_LEVEL} >= 501200
 PERL_PORT?=	perl5.12
 .elif  ${PERL_LEVEL} >= 501000
 PERL_PORT?=	perl5.10
