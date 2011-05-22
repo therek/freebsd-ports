@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/emulators/virtualbox-ose-kmod-legacy/pkg-plist,v 1.12 2010/03/15 20:54:34 miwi Exp $
 @cwd /
 %%KMODDIR%%/vboxdrv.ko
 %%KMODDIR%%/vboxnetadp.ko
