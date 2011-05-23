@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.29 2011/05/10 02:09:04 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.30 2011/05/14 16:34:09 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -22,6 +22,7 @@ binary_port=			devel/hs-binary
 bio_port=			science/hs-bio
 blaze-builder_port=		devel/hs-blaze-builder
 blaze-builder-enumerator_port=	devel/hs-blaze-builder-enumerator
+BNFC_port=			devel/hs-BNFC		# executable
 Boolean_port=			devel/hs-Boolean
 brainfuck_port=			lang/hs-brainfuck	# executable
 bsd-sysctl_port=		devel/hs-bsd-sysctl
