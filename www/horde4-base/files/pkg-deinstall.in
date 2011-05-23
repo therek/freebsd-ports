@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/horde-base/files/pkg-deinstall.in,v 1.2 2006/04/15 16:18:18 scrappy Exp $
+# $FreeBSD: ports/www/horde-base/files/pkg-deinstall.in,v 1.3 2007/04/08 23:42:25 sat Exp $
 #
 
 PATH=/usr/sbin:/usr/bin:/bin ; export PATH
