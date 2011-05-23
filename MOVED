@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2460 2011/05/16 09:03:08 jadawin Exp $
+# $FreeBSD: ports/MOVED,v 1.2461 2011/05/22 21:34:30 mandree Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1937,7 +1937,6 @@ net-mgmt/scotty3||2011-05-02|Has expired: Upstream disapear and distfile is no m
 net-im/aim||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net-im/jit||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net-im/kf||2011-05-02|Has expired: Upstream disapear and distfile is no more available
-net/44bsd-rdist||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net/bbsnet||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net/bing||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net/brutecopy||2011-05-02|Has expired: Upstream disapear and distfile is no more available
@@ -1962,7 +1961,6 @@ net/sambasentinel||2011-05-02|Has expired: Upstream disapear and distfile is no 
 net/scand||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net/tacshell||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net/telserv||2011-05-02|Has expired: Upstream disapear and distfile is no more available
-net/tridiavnc||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net/tvark||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net/warppipe||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 net/wistumbler2||2011-05-02|Has expired: Upstream disapear and distfile is no more available
