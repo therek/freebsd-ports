@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.57 2011/04/12 21:57:14 mandree Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.58 2011/05/23 12:09:05 mandree Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -260,7 +260,7 @@ _DB_41P=	41 ${_DB_42P}
 _DB_42P=	42 ${_DB_43P}
 _DB_43P=	43 ${_DB_44P}
 _DB_44P=	44 ${_DB_45P}
-_DB_45P=	45 ${_DB_46P}
+_DB_45P=	${_DB_46P}
 _DB_46P=	46 ${_DB_47P}
 _DB_47P=	47 ${_DB_48P}
 _DB_48P=	48 ${_DB_51P}
