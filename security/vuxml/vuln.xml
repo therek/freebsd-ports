@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2368 2011/05/24 16:05:57 brooks Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2369 2011/05/24 22:59:52 ohauer Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -129,8 +129,8 @@ Note:  Please add new entries to the beginning of this file.
     <topic>Apache APR -- DoS vulnerabilities</topic>
     <affects>
       <package>
-	<name>apr-*</name>
-	<range><gt>1.4.0.1.3.0</gt><lt>1.4.5.1.3.12</lt></range>
+	<name>apr1</name>
+	<range><lt>1.4.5.1.3.12</lt></range>
       </package>
     </affects>
     <description>
@@ -315,8 +315,8 @@ Note:  Please add new entries to the beginning of this file.
     <topic>Apache APR -- DoS vulnerabilities</topic>
     <affects>
       <package>
-	<name>apr-*</name>
-	<range><gt>1.4.0.1.3.0</gt><lt>1.4.4.1.3.11</lt></range>
+	<name>apr1</name>
+	<range><lt>1.4.4.1.3.11</lt></range>
       </package>
     </affects>
     <description>
@@ -4833,9 +4833,12 @@ Note:  Please add new entries to the beginning of this file.
     <topic>apr -- multiple vunerabilities</topic>
     <affects>
       <package>
-	<name>apr-*</name>
-	<range><gt>1.4.0.1.3.0</gt><lt>1.4.2.1.3.10</lt></range>
-	<range><gt>0.9.0.9.0</gt><lt>0.9.19.0.9.19</lt></range>
+	<name>apr1</name>
+	<range><lt>1.4.2.1.3.10</lt></range>
+      </package>
+      <package>
+	<name>apr0</name>
+	<range><lt>0.9.19.0.9.19</lt></range>
       </package>
     </affects>
     <description>
