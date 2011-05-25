@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/archivers/lrzip/pkg-plist,v 1.1 2011/04/12 03:02:36 miwi Exp $
 %%DOCSDIR%%/AUTHORS
 %%DOCSDIR%%/BUGS
 %%DOCSDIR%%/COPYING
@@ -20,6 +20,7 @@
 %%DOCSDIR%%/lzma/lzma.txt
 %%DOCSDIR%%/magic.header.txt
 bin/lrunzip
+bin/lrzcat
 bin/lrzip
 bin/lrztar
 bin/lrzuntar
