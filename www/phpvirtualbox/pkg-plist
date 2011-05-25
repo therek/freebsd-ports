@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/phpvirtualbox/pkg-plist,v 1.2 2010/09/28 12:57:09 decke Exp $
+@comment $FreeBSD: ports/www/phpvirtualbox/pkg-plist,v 1.3 2011/05/22 14:11:13 decke Exp $
 @unexec if cmp -s %D/%%WWWDIR%%/config.php-example %D/%%WWWDIR%%/config.php; then rm -f %D/%%WWWDIR%%/config.php; fi
 %%WWWDIR%%/config.php-example
 @exec if [ ! -f %D/%%WWWDIR%%/config.php ]; then cp -p %D/%%WWWDIR%%/config.php-example %D/%%WWWDIR%%/config.php; fi
@@ -403,6 +403,8 @@
 %%WWWDIR%%/languages/pt_br.php
 %%WWWDIR%%/languages/ru_ru.php
 %%WWWDIR%%/lib/ajax.php
+%%WWWDIR%%/lib/auth/Builtin.php
+%%WWWDIR%%/lib/auth/WebAuth.php
 %%WWWDIR%%/lib/cache.php
 %%WWWDIR%%/lib/config.php
 %%WWWDIR%%/lib/jqueryFileTree.php
@@ -457,6 +459,7 @@
 %%WWWDIR%%/screen.php
 @dirrm %%WWWDIR%%/rdpweb
 @dirrm %%WWWDIR%%/panes
+@dirrm %%WWWDIR%%/lib/auth
 @dirrm %%WWWDIR%%/lib
 @dirrm %%WWWDIR%%/languages
 @dirrm %%WWWDIR%%/js
