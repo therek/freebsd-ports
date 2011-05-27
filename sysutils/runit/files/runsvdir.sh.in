@@ -1,10 +1,8 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/runit/files/runsvdir.sh.in,v 1.5 2006/04/29 20:57:25 sergei Exp $
+# $FreeBSD: ports/sysutils/runit/files/runsvdir.sh.in,v 1.6 2010/03/27 04:30:05 dougb Exp $
 #
-
 # PROVIDE: /service
-# REQUIRE: 
 # BEFORE:  SERVERS
 # KEYWORD: shutdown
 
