@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/mariadb/files/mysql-server.in,v 1.1 2010/11/17 16:57:21 sunpoet Exp $
+# $FreeBSD: ports/databases/mariadb-server/files/mysql-server.in,v 1.2 2011/05/15 02:49:05 dougb Exp $
 #
 
 # PROVIDE: mysql
