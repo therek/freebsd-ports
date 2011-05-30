@@ -15,7 +15,7 @@ you update your ports collection, before attempting any port upgrades.
 
   Similar to m17n, both engines now search engine-neutral locations,
   ${LOCALBASE}/share/kmfl/ and ~/.kmfl/. Users have to move their local
-  keyboard files from ~/.scim/kmfl/ to ~/kmfl/.
+  keyboard files from ~/.scim/kmfl/ to ~/.kmfl/.
 
 20110523:
   AFFECTS: users of www/mod_perl2
@@ -4752,4 +4752,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1067 2011/05/22 22:30:47 ohauer Exp $
+$FreeBSD: ports/UPDATING,v 1.1068 2011/05/29 13:28:21 wxs Exp $
