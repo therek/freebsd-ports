@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2467 2011/06/01 21:55:08 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2468 2011/06/01 21:58:45 rene Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2207,3 +2207,4 @@ www/py-django11||2011-06-01|Has expired: Unsupported (no longer receive security
 x11-toolkits/rep-gtk||2011-06-01|Has expired: missing rep-config from librep port broke the build.
 games/tnl||2011-06-01|Has expired: Upstream development has ceased, it doesn't work with newer CEGUI and is generally broken
 net/vnc2swf|deskutils/vnc2flv|2011-06-01|Has expired: Development is now superseded by deskutils/vnc2flv
+lang/libobjc2||2011-06-02|Redundant with lang/gnustep-libobjc
