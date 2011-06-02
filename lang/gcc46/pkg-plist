@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc46/pkg-plist,v 1.111 2010/12/26 20:55:59 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc46/pkg-plist,v 1.112 2011/02/22 18:56:53 gerald Exp $
 bin/%%GNU_HOST%%-c++%%SUFFIX%%
 bin/%%GNU_HOST%%-g++%%SUFFIX%%
 bin/%%GNU_HOST%%-gcc%%SUFFIX%%
@@ -44,6 +44,7 @@ share/gcc-%%GCC_VER%%/python/libstdcxx/v6/printers.py
 %%JAVA%%bin/jv-convert%%SUFFIX%%
 %%JAVA%%bin/rebuild-gcj-db%%SUFFIX%%
 %%JAVA%%libdata/pkgconfig/libgcj-4.6.pc
+%%JAVA%%share/java/ecj.jar
 %%JAVA%%share/java/libgcj-%%GCC_VER%%.jar
 %%JAVA%%share/java/libgcj-tools-%%GCC_VER%%.jar
 @comment Insert PLIST.lib here
