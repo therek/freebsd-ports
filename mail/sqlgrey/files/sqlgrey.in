@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/sqlgrey/files/sqlgrey.sh.in,v 1.4 2006/01/26 08:30:23 dougb Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: sqlgrey
