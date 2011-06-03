@@ -1,9 +1,10 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/isc-dhcp41-server/files/isc-dhcrelay.in,v 1.1 2010/05/06 20:24:01 wxs Exp $
+# $FreeBSD: ports/net/isc-dhcp41-server/files/isc-dhcrelay.in,v 1.2 2011/06/03 12:31:24 wxs Exp $
 #
 # PROVIDE: dhcrelay
 # REQUIRE: DAEMON
+# KEYWORD: shutdown
 #
 # Add the following line to /etc/rc.conf to enable dhcrelay:
 #
