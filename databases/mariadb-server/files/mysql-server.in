@@ -1,12 +1,10 @@
 #!/bin/sh
-#
-# $FreeBSD: ports/databases/mariadb-server/files/mysql-server.in,v 1.2 2011/05/15 02:49:05 dougb Exp $
-#
 
+# $FreeBSD$
+#
 # PROVIDE: mysql
 # REQUIRE: LOGIN
 # KEYWORD: shutdown
-
 #
 # Add the following line to /etc/rc.conf to enable mysql:
 # mysql_enable (bool):	Set to "NO" by default.
@@ -18,7 +16,6 @@
 #			Base database directory.
 # mysql_args (str):	Custom additional arguments to be passed
 #			to mysqld_safe (default empty).
-#
 
 . /etc/rc.subr
 
