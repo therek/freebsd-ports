@@ -5,6 +5,19 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20110605:
+  AFFECTS: users of sysutils/zfsnap
+  AUTHOR: Aldis Berjoza <aldis@bsdroot.lv>
+
+  There is an issue with zpool v28 (currently only on 9-CURRENT, or
+  8-STABLE systems that have been manually patched) that affects
+  zfSnap. If you are using v28 make sure to use the -zpool28fix flag
+  with zfsnap to work around the problem.
+
+  For more information please see:
+
+  http://wiki.bsdroot.lv/zfsnap#zpool_v28_zfs_destroy_-r_bug
+
 20110602:
   AFFECTS: users of net/freeradius
   AUTHOR: Sevan Janiyan <venture37@geeklan.co.uk>
@@ -4763,4 +4776,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1069 2011/05/30 10:55:12 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.1070 2011/06/03 00:49:45 wxs Exp $
