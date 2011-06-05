@@ -6,6 +6,17 @@ You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
 20110605:
+  AFFECTS: users of security/gnutls and any port that depends on it
+  AUTHOR: novel@FreeBSD.org
+
+  gnutls has been updated to 2.12.6.1 and all shared libraries' versions have
+  been bumped. So you need to rebuild all applications that depend on
+  gnutls. Do something like:
+
+	portupgrade -rf gnutls
+	portmaster -r gnutls
+
+20110605:
   AFFECTS: users of sysutils/zfsnap
   AUTHOR: Aldis Berjoza <aldis@bsdroot.lv>
 
@@ -4776,4 +4787,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1070 2011/06/03 00:49:45 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.1071 2011/06/05 12:46:30 tdb Exp $
