@@ -1,5 +1,5 @@
-@comment $FreeBSD$
-bin/jconsole
+@comment $FreeBSD: ports/lang/linux-j/pkg-plist,v 1.5 2005/05/14 16:42:55 hq Exp $
+bin/j-jconsole
 bin/jw
 lib/j/j.jar
 lib/j/jconsole

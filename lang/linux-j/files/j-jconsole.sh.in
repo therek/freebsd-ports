@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/lang/linux-j/files/jconsole.sh.in,v 1.1 2005/05/14 16:42:55 hq Exp $
 
 JPATHj%%PORTVERSION%%=%%PREFIX%%/lib/j
 export JPATHj%%PORTVERSION%%
