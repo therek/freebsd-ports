@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.59 2011/05/23 16:49:21 mandree Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.60 2011/05/27 23:46:53 mandree Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -141,8 +141,8 @@ IGNORE=		cannot install: MySQL versions mismatch: mysql${_MYSQL_VER}-client is i
 .endif
 
 .if (${MYSQL_VER} == "52")
-_MYSQL_CLIENT=	databases/mariadb
-_MYSQL_SERVER=	databases/mariadb
+_MYSQL_CLIENT=	databases/mariadb-client
+_MYSQL_SERVER=	databases/mariadb-server
 .else
 _MYSQL_CLIENT=	databases/mysql${MYSQL_VER}-client
 _MYSQL_SERVER=	databases/mysql${MYSQL_VER}-server
