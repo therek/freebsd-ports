@@ -239,7 +239,7 @@ you update your ports collection, before attempting any port upgrades.
   switch to lang/perl5.12 please follow instructions in the entry 20100715
   in this file.
 
-20110503
+20110503:
   AFFECTS: users of www/codeigniter and www/codeigniter-devel
   AUTHOR: glarkin@FreeBSD.org
 
@@ -262,7 +262,7 @@ you update your ports collection, before attempting any port upgrades.
   or
   # portupgrade -o www/codeigniter www/codeigniter-devel
 
-20110427
+20110427:
   AFFECTS: users of mail/ezmlm-idx
   AUTHOR: glarkin@FreeBSD.org
 
@@ -4818,4 +4818,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1073 2011/06/07 07:11:24 dougb Exp $
+$FreeBSD: ports/UPDATING,v 1.1074 2011/06/07 09:13:13 az Exp $
