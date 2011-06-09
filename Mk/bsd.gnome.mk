@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.167 2011/02/10 15:06:02 kwm Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.168 2011/02/12 19:33:34 kwm Exp $
 #	$NetBSD: $
 #     $MCom: ports/Mk/bsd.gnome.mk,v 1.512 2010/10/26 09:02:45 kwm Exp $
 #
@@ -389,8 +389,8 @@ eel2_LIB_DEPENDS=	eel-2.2:${PORTSDIR}/x11-toolkits/eel
 eel2_DETECT=		${LOCALBASE}/libdata/pkgconfig/eel-2.0.pc
 eel2_USE_GNOME_IMPL=	gnomedesktop
 
-gnomepanel_LIB_DEPENDS=	panel-applet-2.0:${PORTSDIR}/x11/gnome-panel
-gnomepanel_DETECT=	${LOCALBASE}/libdata/pkgconfig/libpanelapplet-2.0.pc
+gnomepanel_LIB_DEPENDS=	panel-applet-3.0:${PORTSDIR}/x11/gnome-panel
+gnomepanel_DETECT=	${LOCALBASE}/libdata/pkgconfig/libpanelapplet-3.0.pc
 gnomepanel_USE_GNOME_IMPL=gnomedesktop libwnck gnomemenus gnomedocutils librsvg2
 gnomepanel_GNOME_DESKTOP_VERSION=2
 
