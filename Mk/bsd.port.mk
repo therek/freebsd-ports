@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.684 2011/06/06 05:53:51 bapt Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.685 2011/06/07 14:22:23 hrs Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -4858,7 +4858,7 @@ fetch-url-list-int:
 			fi ; \
 			for site in `eval $$SORTED_MASTER_SITES_CMD_TMP ${_RANDOMIZE_SITES}`; do \
 				DIR=${DIST_SUBDIR}; \
-				CKSIZE=`${AWK} "/^SIZE \($${DIR:+$$DIR/}$$file\)"'{print $$4}' ${DISTINFO_FILE}`; \
+				CKSIZE=`${AWK} "/^SIZE \($${DIR:+$$DIR/}$$file\)/"'{print $$4}' ${DISTINFO_FILE}`; \
 				case $${file} in \
 				*/*)	args="-o $${file} $${site}$${file}";; \
 				*)		args=$${site}$${file};; \
@@ -4889,7 +4889,7 @@ fetch-url-list-int:
 			fi ; \
 			for site in `eval $$SORTED_PATCH_SITES_CMD_TMP ${_RANDOMIZE_SITES}`; do \
 				DIR=${DIST_SUBDIR}; \
-				CKSIZE=`${AWK} "/^SIZE \($${DIR:+$$DIR/}$$file\)"'{print $$4}' ${DISTINFO_FILE}`; \
+				CKSIZE=`${AWK} "/^SIZE \($${DIR:+$$DIR/}$$file\)/"'{print $$4}' ${DISTINFO_FILE}`; \
 				case $${file} in \
 				*/*)	args="-o $${file} $${site}$${file}";; \
 				*)		args=$${site}$${file};; \
