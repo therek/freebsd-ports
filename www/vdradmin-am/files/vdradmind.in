@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/vdradmin-am/files/vdradmind.in,v 1.1 2011/03/26 19:23:46 nox Exp $
 #
 # PROVIDE: vdradmind
 # REQUIRE: LOGIN
@@ -17,6 +17,7 @@ rcvar=`set_rcvar`
 
 command="%%PREFIX%%/bin/vdradmind"
 pidfile="/var/run/vdradmin_am/${name}.pid"
+command_args="-p ${pidfile}"
 
 load_rc_config ${name}
 : ${vdradmind_enable="NO"}
