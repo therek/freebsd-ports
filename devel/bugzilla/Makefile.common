@@ -1,8 +1,8 @@
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/bugzilla/Makefile.common,v 1.1 2010/12/12 05:56:19 tota Exp $
 #
 
-CONFLICTS=	bugzilla-2.*
+CONFLICTS=	bugzilla-3.*
 
 PORTSCOUT=	limitw:1,even
 
