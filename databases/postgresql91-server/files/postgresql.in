@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/databases/postgresql90-server/files/postgresql.in,v 1.4 2010/03/27 00:12:50 dougb Exp $
+# $FreeBSD: ports/databases/postgresql91-server/files/postgresql.in,v 1.5 2011/04/18 23:34:27 girgen Exp $
 #
 # PROVIDE: postgresql
 # REQUIRE: LOGIN
@@ -10,7 +10,7 @@
 #
 #  postgresql_enable="YES"
 #  # optional
-#  postgresql_data="%%PREFIX%%/pgsql/data"
+#  postgresql_data="%%PREFIX%%/%%PG_USER%%/data"
 #  postgresql_flags="-w -s -m fast"
 #  postgresql_initdb_flags="--encoding=utf-8 --lc-collate=C"
 #  postgresql_class="default"
