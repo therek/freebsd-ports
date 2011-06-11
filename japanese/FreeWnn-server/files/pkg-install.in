@@ -1,21 +1,7 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/FreeWnn-server/files/pkg-install.in,v 1.2 2008/11/01 14:45:15 hrs Exp $
+# $FreeBSD: ports/japanese/FreeWnn-server/files/pkg-install.in,v 1.3 2010/01/02 14:47:20 hrs Exp $
 
 case $2 in
-PRE-INSTALL)
-	if id -u wnn > /dev/null 2>&1; then
-		echo "INFO: wnn user already exists.  FreeWnn will use it."
-	else
-		echo "INFO: Creating 'wnn' user..."
-		if pw useradd wnn -u 69 -g 7 -h - -d /nonexistent \
-			-s /nonexistent -c Wnn; then
-			echo "INFO: Created."
-		else
-			echo "ERROR: wnn user cannot create."
-			exit 1
-		fi
-	fi
-	;;
 POST-INSTALL)
 	case $1 in
 	ja-FreeWnn-*)
