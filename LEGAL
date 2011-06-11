@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.656 2011/05/09 13:01:53 tota Exp $
+# $FreeBSD: ports/LEGAL,v 1.657 2011/06/01 21:55:08 rene Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -23,6 +23,9 @@ Such ports are listed below:
 
 Dist			Port			Why
 ------------------------------------------------------------------------------
+TrueCrypt*		security/truecrypt	May not be redistributed.
+						Crypto; export-controlled.
+						Must accept license to download.
 ventrilo_srv-*		audio/ventrilo-server	May not be redistributed.
 						Crypto; export-controlled.
 						For personal use only.
