@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/games/ldmud/files/ldmud.sh.in,v 1.1 2011/06/11 10:29:42 johans Exp $
 #
 # PROVIDE: ldmud
 # REQUIRE: LOGIN
