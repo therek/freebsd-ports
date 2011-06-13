@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.141 2011/06/11 17:01:51 glewis Exp $
+# $FreeBSD: ports/GIDs,v 1.142 2011/06/12 13:11:46 crees Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -209,3 +209,4 @@ gnokii:*:947:
 dnrd:*:948:
 dbxml:*:949:
 conquest:*:950:
+nobody:*:65534:

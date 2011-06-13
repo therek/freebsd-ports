@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mailman/files/mailman.in,v 1.2 2006/06/06 14:28:03 jmelo Exp $
+# $FreeBSD: ports/mail/mailman/files/mailman.in,v 1.3 2010/03/27 00:13:16 dougb Exp $
 #
 # PROVIDE: mailman
 # REQUIRE: LOGIN
@@ -30,7 +30,9 @@ mailman_start() {
 }
 
 mailman_stop() {
-	%%MAILMANDIR%%/bin/mailmanctl -q stop
+	[ -f $pidfile ] \
+	  && %%MAILMANDIR%%/bin/mailmanctl -q stop \
+	  || echo ${name} not running? (check ${pidfile})
 }
 
 run_rc_command "$1"
