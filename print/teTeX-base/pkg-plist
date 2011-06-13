@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/teTeX-base/pkg-plist,v 1.36 2006/06/29 18:46:37 hrs Exp $
+@comment $FreeBSD: ports/print/teTeX-base/pkg-plist,v 1.37 2009/12/16 08:59:02 hrs Exp $
 bin/mktexpk
 bin/mktexmf
 bin/mktextfm
@@ -121,8 +121,6 @@ bin/pdftex
 bin/pdflatex
 bin/lambda
 bin/lamed
-bin/texi2dvi
-bin/texi2pdf
 include/kpathsea/absolute.h
 include/kpathsea/c-auto.h
 include/kpathsea/c-ctype.h
