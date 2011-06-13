@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2480 2011/06/09 16:17:36 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2481 2011/06/10 14:05:58 danfe Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2217,3 +2217,4 @@ www/ruby-asp||2011-06-09|Removed, depends on expired port, seems abandonware its
 lang/njs||2011-06-09|Has expired: Upstream disapear and distfile is no more available
 editors/wily||2011-06-09|Removed, depends on an expired port
 x11-fonts/Xg||2011-06-09|Has expired: Upstream disapear and distfile is no more available
+irc/bitlbee-otr||2011-06-13|Removed, overridden by irc/bitlbee
