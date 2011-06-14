@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde4.mk,v 1.117 2011/04/22 23:37:20 avilla Exp $
+# $FreeBSD: ports/Mk/bsd.kde4.mk,v 1.118 2011/05/16 19:26:28 makc Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Kde_Pre_Include)
@@ -54,7 +54,7 @@ Kde_Include_MAINTAINER=	kde@FreeBSD.org
 #		but this could be changed in a future.
 #
 
-KDE4_VERSION=		4.6.3
+KDE4_VERSION=		4.6.4
 KDE4_BRANCH?=		stable
 KDEPIM4_VERSION=	4.4.11.1
 KDEPIM4_BRANCH?=	stable
