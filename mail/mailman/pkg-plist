@@ -1,5 +1,4 @@
-@comment $FreeBSD: ports/mail/mailman/pkg-plist,v 1.40 2010/10/17 00:40:14 wxs Exp $
-@stopdaemon mailman
+@comment $FreeBSD$
 @unexec if cmp -s %D/%%MMDIR%%/Mailman/mm_cfg.py %D/%%MMDIR%%/Mailman/mm_cfg.py.dist; then rm -f %D/%%MMDIR%%/Mailman/mm_cfg.py; fi
 @unexec rm -f %D/%%MMDIR%%/Mailman/mm_cfg.pyc
 @exec mkdir -p %D/%%MMDIR%%/archives
