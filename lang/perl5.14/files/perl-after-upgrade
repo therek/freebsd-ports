@@ -6,7 +6,7 @@
 # this stuff is worth it, you can buy me a beer in return.   Anton Berezin
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/lang/perl5.12/files/perl-after-upgrade,v 1.6 2009/11/23 15:58:01 skv Exp $
+# $FreeBSD: ports/lang/perl5.14/files/perl-after-upgrade,v 1.7 2010/09/16 15:57:09 skv Exp $
 # $Id: perl-after-upgrade,v 1.11 2005/06/23 19:39:00 tobez Exp $
 #
 =pod
@@ -264,7 +264,7 @@ while (@ARGV) {
 our $PERL_VERSION = '%%PERL_VERSION%%';
 our $PERL_PKGNAME = '%%PKGNAME%%';
 
-our $PERL_VERSION_REGEX = qr/5\.12\.\d+/;
+our $PERL_VERSION_REGEX = qr/5\.14\.\d+/;
 print STDERR "- Fuzzy source re: <$PERL_VERSION_REGEX>\n" if $debug;
 
 our @errors;
