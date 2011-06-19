@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2486 2011/06/15 15:22:36 hrs Exp $
+# $FreeBSD: ports/MOVED,v 1.2487 2011/06/19 11:13:35 makc Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2220,3 +2220,4 @@ deskutils/mcatalog||2011-06-13|Removed, upstream disapear and distfile is no mor
 mail/evolution-sharp||2011-06-13|Has expired: has been broken for over a year
 print/cmpsfont|print/font-amsfonts|2011-06-15|Renamed
 print/amspsfnt|print/font-amsfonts|2011-06-15|Renamed
+irc/ezbounce-devel|irc/ezbounce|2011-06-19|main port updated to latest available version
