@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/isc-dhcp41-server/files/isc-dhcrelay.in,v 1.2 2011/06/03 12:31:24 wxs Exp $
+# $FreeBSD: ports/net/isc-dhcp41-server/files/isc-dhcrelay.in,v 1.3 2011/06/03 21:37:42 wxs Exp $
 #
 # PROVIDE: dhcrelay
 # REQUIRE: DAEMON
@@ -13,6 +13,7 @@
 
 # override these variables in /etc/rc.conf
 dhcrelay_enable=${dhcrelay_enable:-"NO"}
+dhcrelay6_enable=${dhcrelay6_enable:-"NO"}
 # dhcrelay_flags=""			# command option(s)
 # dhcrelay_servers=""			# dhcrelay server(s)
 # dhcrelay_ifaces=""			# ethernet interface(s)
