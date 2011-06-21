@@ -11,7 +11,7 @@ you update your ports collection, before attempting any port upgrades.
 
   A bug, introduced by local patch to pam_winbind.so, that made it coredump
   was spotted by Martin Minkus. It is fixed in the 3.5.9 version of the port.
-  So, if pam_winbind.so strated to work for you - send him kudos.
+  So, if pam_winbind.so started to work for you - send him kudos.
 
 20110619:
   AFFECTS: users of irc/ezbounce and irc/ezbounce-devel
@@ -4897,4 +4897,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1083 2011/06/20 18:07:19 crees Exp $
+$FreeBSD: ports/UPDATING,v 1.1084 2011/06/21 02:12:47 wxs Exp $
