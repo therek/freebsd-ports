@@ -5,6 +5,18 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20110623:
+  AFFECTS: users of databases/py-sqlalchemy
+  AUTHOR: nivit@FreeBSD.org
+
+  The version 0.6 of SQLAlchemy has been moved to databases/py-sqlalchemy06,
+  while the port databases/py-sqlalchemy now holds the series 0.7.X.
+  To update the installed port run the command
+
+  # portmaster -o databases/py-sqlalchemy06 databases/py-sqlalchemy
+  or
+  # portupgrade -o databases/py-sqlalchemy06 databases/py-sqlalchemy
+
 20110620:
   AFFECTS: users of net/samba35
   AUTHOR: timur@FreeBSD.org
@@ -4897,4 +4909,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1084 2011/06/21 02:12:47 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.1085 2011/06/21 03:43:21 sahil Exp $
