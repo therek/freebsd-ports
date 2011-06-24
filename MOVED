@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2491 2011/06/20 22:29:25 makc Exp $
+# $FreeBSD: ports/MOVED,v 1.2492 2011/06/23 07:18:23 danfe Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2222,3 +2222,4 @@ print/amspsfnt|print/font-amsfonts|2011-06-15|Renamed
 irc/ezbounce-devel|irc/ezbounce|2011-06-19|main port updated to latest available version
 graphics/povray|graphics/povray36|2011-06-21|Renamed
 x11/widgetfactory|x11-themes/thewidgetfactory|2011-06-23|Duplicate ports merged
+deskutils/opengoo|deskutils/fengoffice|2011-06-24|It was renamed to deskutils/fengoffice
