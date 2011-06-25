@@ -129,7 +129,6 @@
     SUBDIR += evolution
     SUBDIR += evolution-exchange
     SUBDIR += evolution-mapi
-    SUBDIR += evolution-sharp
     SUBDIR += exact
     SUBDIR += exilog
     SUBDIR += exim
@@ -334,6 +333,7 @@
     SUBDIR += p5-Data-Validate-Email
     SUBDIR += p5-Email-Abstract
     SUBDIR += p5-Email-Address
+    SUBDIR += p5-Email-AddressParser
     SUBDIR += p5-Email-Date
     SUBDIR += p5-Email-Date-Format
     SUBDIR += p5-Email-Delete
