@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/anki/Makefile.inc,v 1.8 2010/05/31 01:58:54 ade Exp $
+# $FreeBSD: ports/games/anki/Makefile.inc,v 1.9 2010/09/25 19:24:26 makc Exp $
 
 PORTNAME=	anki
 PORTVERSION=	1.0.1
@@ -37,7 +37,7 @@ DESKTOP_ENTRIES=	"${PORTNAME}" \
 .else
 BUILD_DEPENDS=	${PYNUMPY} \
 		py*-pysqlite>=0:${PORTSDIR}/databases/py-pysqlite23 \
-		py*-sqlalchemy>=0:${PORTSDIR}/databases/py-sqlalchemy \
+		py*-sqlalchemy06>=0:${PORTSDIR}/databases/py-sqlalchemy06 \
 		py*-game>=0:${PORTSDIR}/devel/py-game \
 		py*-simplejson>=0:${PORTSDIR}/devel/py-simplejson \
 		py*-matplotlib>=0.90.0:${PORTSDIR}/math/py-matplotlib
