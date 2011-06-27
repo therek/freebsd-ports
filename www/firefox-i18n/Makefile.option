@@ -2,17 +2,19 @@
 # Date created:         30 Nov 2008
 # Whom:                 Koji Yokota <yokota@res.otaru-uc.ac.jp>
 #
-# $FreeBSD: ports/www/firefox-i18n/Makefile.option,v 1.3 2011/03/22 15:25:37 beat Exp $
+# $FreeBSD: ports/www/firefox-i18n/Makefile.option,v 1.4 2011/06/21 21:12:31 flo Exp $
 #
 OPTIONS=        LANG_AF  "Africaans"              off \
                 LANG_AK  "Akan"                   off \
                 LANG_SQ  "Albanian"               off \
                 LANG_AR  "Arabic"                 on \
                 LANG_AM  "Armenian"               off \
+                LANG_AST "Asturian"               off \
                 LANG_EU  "Basque"                 off \
                 LANG_BN  "Bengali"                on \
                 LANG_BB  "Bengali (Bangladesh)"   off \
                 LANG_BS  "Bosnian"                off \
+                LANG_BR  "Breton"                 off \
                 LANG_BG  "Bulgarian"              off \
                 LANG_BE  "Byelorussian"           off \
                 LANG_CA  "Catalan"                off \
