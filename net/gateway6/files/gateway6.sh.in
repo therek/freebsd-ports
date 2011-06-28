@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/gateway6/files/gateway6.sh.in,v 1.4 2009/11/20 21:14:24 miwi Exp $
+# $FreeBSD: ports/net/gateway6/files/gateway6.sh.in,v 1.5 2010/03/27 00:13:43 dougb Exp $
 #
 
 #
 # PROVIDE: gateway6
-# REQUIRE: FILESYSTEMS netif
+# REQUIRE: FILESYSTEMS NETWORKING
 # KEYWORD: shutdown
 #
 
