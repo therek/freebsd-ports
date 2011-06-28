@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.27 2011/03/22 15:26:35 beat Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.28 2011/06/21 21:12:30 flo Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -638,6 +638,7 @@ MOZ_OPTIONS+=	--enable-necko-protocols=${MOZ_PROTOCOLS}
 MOZ_OPTIONS+=	--with-system-zlib=/usr		\
 		--with-gssapi=${KRB5_HOME}	\
 		--disable-auto-deps		\
+		--disable-debug-symbols		\
 		--enable-chrome-format=jar	\
 		--disable-cpp-exceptions	\
 		--disable-cpp-rtti		\
@@ -673,6 +674,8 @@ MOZ_OPTIONS+=	--disable-gnomevfs
 
 .if !defined(STRIP) || ${STRIP} == ""
 MOZ_OPTIONS+=	--disable-strip --disable-install-strip
+.else
+MOZ_OPTIONS+=	--enable-strip --enable-install-strip
 .endif
 
 .if defined(WITH_DEBUG)
