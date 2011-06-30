@@ -5,7 +5,7 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
-20110629:
+20110630:
   AFFECTS: users of math/octave-forge* and benchmarks/octave-forge-benchmark
   AUTHOR: stephen@FreeBSD.org
 
@@ -4980,4 +4980,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1091 2011/06/30 18:19:47 flo Exp $
+$FreeBSD: ports/UPDATING,v 1.1092 2011/06/30 21:03:43 stephen Exp $
