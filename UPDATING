@@ -5,6 +5,15 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20110630:
+  AFFECTS: users of x11/wbar
+  AUTHOR: nivit@FreeBSD.org
+
+  x11/wbar has been updated to 2.2.2. Before launching the program, please
+  backup your configuration file (~/.wbar), and then use the command wbar-config
+  to set your preferences and change the path of the old icons (in particular
+  the Bar image).
+
 20110629:
   AFFECTS: users of graphics/opencv
   AUTHOR: mm@FreeBSD.org
@@ -4939,4 +4948,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1088 2011/06/27 02:45:03 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.1089 2011/06/29 20:08:49 mm Exp $
