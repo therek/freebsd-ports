@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.octave.mk,v 1.11 2011/03/17 17:14:09 miwi Exp $
+# $FreeBSD: ports/Mk/bsd.octave.mk,v 1.12 2011/06/28 04:51:50 stephen Exp $
 #
 # bsd.octave.mk - Octave related macro
 # Common code to install octave-forge packages.
@@ -18,11 +18,10 @@ bsd_octave_mk_MAINTAINER=	stephen@FreeBSD.org
 
 BUILD_DEPENDS+=	octave:${PORTSDIR}/math/octave
 RUN_DEPENDS+=	octave:${PORTSDIR}/math/octave \
-		gmake:${PORTSDIR}/devel/gmake
-RUN_DEPENDS+=	${LOCALBASE}/share/octave/tarballs:${PORTSDIR}/math/octave-forge-base
+		${LOCALBASE}/libexec/octave/load-octave-pkg:${PORTSDIR}/math/octave-forge-base
 LIB_DEPENDS+=	pcre:${PORTSDIR}/devel/pcre
-USE_FORTRAN=	yes
 
+USE_FORTRAN=	yes
 USE_GMAKE=	yes
 
 DIST_SUBDIR=	octave-forge
@@ -31,16 +30,17 @@ TARBALLS_DIR=	${LOCALBASE}/share/octave/tarballs
 
 MAKE_ENV+=	PACKAGE=${WRKDIR}/${DISTNAME}.tar.gz
 
+LOAD_OCTAVE_PKG_CMD=	${LOCALBASE}/libexec/octave/load-octave-pkg
+
 do-install:
 	${MKDIR} ${TARBALLS_DIR}
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}.tar.gz ${TARBALLS_DIR}/.
-	${RM} -f ${TARBALLS_DIR}/${OCTAVE_PKGNAME}.tar.gz
-	PATH=${PREFIX}/bin:/usr/bin:/bin octave -H -q --no-site-file --eval "pkg('install','${TARBALLS_DIR}/${DISTNAME}.tar.gz')"
 	${LN} -s ${DISTNAME}.tar.gz ${TARBALLS_DIR}/${OCTAVE_PKGNAME}.tar.gz
+	${LOAD_OCTAVE_PKG_CMD}
 
 post-install:
 	@${ECHO_CMD} "share/octave/tarballs/${DISTNAME}.tar.gz" >> ${TMPPLIST}
-	@${ECHO_CMD} "@exec octave -H -q --no-site-file --eval \"pkg('install','${LOCALBASE}/share/octave/tarballs/${DISTNAME}.tar.gz')\" > /dev/null" >> ${TMPPLIST}
 	@${ECHO_CMD} "share/octave/tarballs/${OCTAVE_PKGNAME}.tar.gz" >> ${TMPPLIST}
-	@${ECHO_CMD} "@unexec octave -H -q --no-site-file --eval \"pkg('uninstall','${OCTAVE_PKGNAME}')\" > /dev/null" >> ${TMPPLIST}
+	@${ECHO_CMD} "@exec if [ -x ${LOAD_OCTAVE_PKG_CMD} ]; then ${LOAD_OCTAVE_PKG_CMD}; fi" >> ${TMPPLIST}
+	@${ECHO_CMD} "@unexec if [ -x ${LOAD_OCTAVE_PKG_CMD} ]; then ${LOAD_OCTAVE_PKG_CMD}; fi" >> ${TMPPLIST}
 	@if [ -e ${.CURDIR}/pkg-message ]; then ${CAT} ${.CURDIR}/pkg-message; fi
