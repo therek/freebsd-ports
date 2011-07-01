@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.qt.mk,v 1.24 2011/05/07 09:09:44 avilla Exp $
+# $FreeBSD: ports/Mk/bsd.qt.mk,v 1.25 2011/07/01 16:07:54 avilla Exp $
 #
 # Variables:
 # QT_NONSTANDARD	- Suppress modification of configure and make environment.
@@ -112,7 +112,7 @@ QMAKEFLAGS+=	QMAKE_CC="${CC}" QMAKE_CXX="${CXX}" \
 #
 # Translate `c++` to its real name and select the appropriate mkspec.
 #
-QMAKE_BASE_COMPILER!=	cc --version 2> /dev/null | awk 'NR == 1 { gsub(/[()]/, "", $2); print $2 }'
+QMAKE_BASE_COMPILER!=	cc --version | head -1 | sed -E 's/.+\(([^)]+)\).+/\1/' | cut -d " " -f 1
 .if ${QMAKE_BASE_COMPILER:L} == "gcc"
 QMAKE_BASE_COMPILER=	g++
 .endif
