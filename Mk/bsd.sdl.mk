@@ -29,7 +29,7 @@
 #
 
 #
-# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.16 2010/01/30 09:42:39 mva Exp $
+# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.17 2010/08/11 06:57:22 mva Exp $
 #
 
 SDL_Include_MAINTAINER=		edwin@FreeBSD.org
@@ -53,7 +53,7 @@ _SUBDIR_console=	devel
 _LIB_console=		SDL_console-2.1
 _REQUIRES_console=	sdl
 
-_VERSION_gfx=	18
+_VERSION_gfx=	22
 _SUBDIR_gfx=	graphics
 _REQUIRES_gfx=	sdl
 
