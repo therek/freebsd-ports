@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/milter-manager/files/milter-manager.in,v 1.2 2010/03/27 00:13:17 dougb Exp $
+# $FreeBSD: ports/mail/milter-manager/files/milter-manager.in,v 1.3 2011/05/15 02:49:08 dougb Exp $
 #
 
 # PROVIDE: milter-manager
@@ -83,7 +83,7 @@ if [ -n "$2" ]; then
 	    command_args="${command_args} --socket-group-name ${miltermanager_socket_gid}"
 	fi
 	if [ -n "${miltermanager_socket}" ] ; then
-	    command_args="${command_args} --spec ${miltermanager_socket}"
+	    command_args="${command_args} --connection-spec ${miltermanager_socket}"
 	fi
 	command_args="${command_args} --daemon"
     else
@@ -122,7 +122,7 @@ else
 	    command_args="${command_args} --socket-group-name ${miltermanager_socket_gid}"
 	fi
 	if [ -n "${miltermanager_socket}" ] ; then
-	    command_args="${command_args} --spec ${miltermanager_socket}"
+	    command_args="${command_args} --connection-spec ${miltermanager_socket}"
 	fi
 	if checkyesno miltermanager_debug ; then
 	    command_args="${command_args} --verbose"
