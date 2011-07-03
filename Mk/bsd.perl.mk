@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.18 2011/05/06 06:20:12 skv Exp $
+# $FreeBSD: ports/Mk/bsd.perl.mk,v 1.19 2011/05/17 19:30:02 skv Exp $
 #
 # bsd.perl.mk - Support for Perl-based ports.
 #
@@ -84,7 +84,7 @@ PERL_Include_MAINTAINER=	perl@FreeBSD.org
 # to set one of the conditionals that force the inclusion of bsd.perl.mk
 .if defined(_PERL_REFACTORING_COMPLETE)
 
-PERL_VERSION?=	5.12.3
+PERL_VERSION?=	5.12.4
 
 .if !defined(PERL_LEVEL) && defined(PERL_VERSION)
 perl_major=		${PERL_VERSION:C|\..*||}
