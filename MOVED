@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2500 2011/07/02 13:45:41 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.2501 2011/07/02 16:01:03 rene Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2253,3 +2253,4 @@ devel/libevocosm||2011-07-02|Has expired: Looks like and abandonware
 devel/acovea||2011-07-02|Has expired: Looks like abandonware.
 devel/acovea-gtk||2011-07-02|Has expired: Looks like abandonware.
 sysutils/service-config||2011-07-02|Has expired: "mastersite disappeared"
+print/lyx-devel||2011-07-03|print/lyx has been updated to a newer version, use it instead
