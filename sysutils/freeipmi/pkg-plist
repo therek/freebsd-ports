@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/freeipmi/pkg-plist,v 1.12 2011/02/05 15:47:22 sunpoet Exp $
+@comment $FreeBSD: ports/sysutils/freeipmi/pkg-plist,v 1.13 2011/04/26 10:30:56 sunpoet Exp $
 %%CONF_DIR%%/freeipmi.conf.sample
 %%CONF_DIR%%/freeipmi_interpret_sel.conf
 %%CONF_DIR%%/freeipmi_interpret_sensor.conf
@@ -172,6 +172,10 @@ lib/libipmimonitoring.a
 lib/libipmimonitoring.la
 lib/libipmimonitoring.so
 lib/libipmimonitoring.so.5
+libdata/pkgconfig/libfreeipmi.pc
+libdata/pkgconfig/libipmiconsole.pc
+libdata/pkgconfig/libipmidetect.pc
+libdata/pkgconfig/libipmimonitoring.pc
 sbin/bmc-config
 sbin/bmc-device
 sbin/bmc-info
