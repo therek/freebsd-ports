@@ -5,6 +5,13 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20110703:
+  AFFECTS: users of print/lyx and print/lyx-devel
+  AUTHOR: makc@FreeBSD.org
+
+  print/lyx has been updated to 2.0. print/lyx16 has been added to portstree
+  for those who prefers to stick with the last stable in lyx-1.6.x series.
+
 20110630:
   AFFECTS: users of math/octave-forge* and benchmarks/octave-forge-benchmark
   AUTHOR: stephen@FreeBSD.org
@@ -4992,4 +4999,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1093 2011/06/30 21:53:46 stephen Exp $
+$FreeBSD: ports/UPDATING,v 1.1094 2011/07/03 15:51:18 erwin Exp $
