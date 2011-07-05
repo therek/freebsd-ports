@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/textproc/saxon-devel/files/saxon.sh.in,v 1.1 2004/12/21 15:43:14 hq Exp $
+# $FreeBSD: ports/textproc/saxon-he/files/saxon.sh.in,v 1.2 2006/03/22 10:46:17 hq Exp $
 
 IAM="`basename "$0"`"
 
