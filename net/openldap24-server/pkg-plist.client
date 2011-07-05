@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/openldap24-server/pkg-plist.client,v 1.19 2009/07/20 08:13:11 delphij Exp $
+@comment $FreeBSD: ports/net/openldap24-server/pkg-plist.client,v 1.20 2011/02/24 21:50:08 delphij Exp $
 bin/ldapadd
 bin/ldapcompare
 bin/ldapdelete
@@ -20,6 +20,7 @@ include/ldap_cdefs.h
 include/ldap_features.h
 include/ldap_schema.h
 include/ldap_utf8.h
+include/ldif.h
 include/slapi-plugin.h
 lib/liblber-2.4.so
 lib/liblber-2.4.so.%%SHLIB_MAJOR%%
