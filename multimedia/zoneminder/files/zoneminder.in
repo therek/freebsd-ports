@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/multimedia/zoneminder/files/zm.in,v 1.2 2011/07/05 21:53:40 bsam Exp $
+# $FreeBSD$
 #
 # PROVIDE: zoneminder
 # REQUIRE: mysql apache
