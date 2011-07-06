@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.12 2011/06/22 08:53:29 mm Exp $
+# $FreeBSD: ports/devel/pear/bsd.pear.mk,v 1.13 2011/07/06 16:29:58 mm Exp $
 
 # Common code for pear- ports.
 
@@ -190,10 +190,10 @@ do-autogenerate-plist:
 	${AWK} '{ print $$2 }' | ${SED} -e "s|${PREFIX}/||g"`; \
 	for f in $${FILES}; do ${ECHO_CMD} $${f} >> ${TMPPLIST}; done; \
 	for d in $${FILES}; do ${ECHO_CMD} $${d}; done | ${DIRFILTER} | \
-	    while read dir; do ${ECHO_CMD} "@unexec rmdir $${dir} 2>/dev/null || true" >> ${TMPPLIST}; \
+	    while read dir; do ${ECHO_CMD} "@unexec rmdir %D/$${dir} 2>/dev/null || true" >> ${TMPPLIST}; \
 	    done;
 	@${ECHO_CMD} "@dirrm ${LPKGREGDIR}" >> ${TMPPLIST}
-	@${ECHO_CMD} "@unexec rmdir ${LPKGREGDIR:H} 2>/dev/null || true" >> ${TMPPLIST}
+	@${ECHO_CMD} "@unexec rmdir %D/${LPKGREGDIR:H} 2>/dev/null || true" >> ${TMPPLIST}
 
 . if defined(PEAR_AUTOINSTALL)
 pre-install:	pear-pre-install do-generate-deinstall-script
