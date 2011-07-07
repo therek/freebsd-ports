@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2504 2011/07/07 21:46:34 beech Exp $
+# $FreeBSD: ports/MOVED,v 1.2505 2011/07/07 21:49:54 beech Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2257,3 +2257,4 @@ print/lyx-devel||2011-07-03|print/lyx has been updated to a newer version, use i
 archivers/lzo|archivers/lzo2|2011-07-07|Use lzo2 instead.
 www/horde4-browser||2011-07-07|Removed
 www/horde4-template||2011-07-07|Removed
+deskutils/horde4-itip||2011-07-07|Removed
