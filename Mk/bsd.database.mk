@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.61 2011/06/07 14:36:57 ale Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.62 2011/07/01 08:09:24 girgen Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -261,7 +261,7 @@ _DB_43P=	43 ${_DB_44P}
 _DB_44P=	44 ${_DB_46P}
 _DB_46P=	46 ${_DB_47P}
 _DB_47P=	47 ${_DB_48P}
-_DB_48P=	48 ${_DB_51P}
+_DB_48P=	48
 _DB_51P=	51
 
 # Override the global WITH_BDB_VER with the
