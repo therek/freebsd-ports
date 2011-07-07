@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-channel-horde/bsd.horde.mk,v 1.1 2011/07/07 17:34:12 mm Exp $
 
 MASTER_SITES?=	http://pear.horde.org/get/
 
@@ -56,8 +56,8 @@ horde-Horde_Log-DEPEND=		${PEARDIR}/Horde/Log.php:${PORTSDIR}/sysutils/pear-Hord
 horde-Horde_LoginTasks-DEPEND=	${PEARDIR}/Horde/LoginTasks.php:${PORTSDIR}/devel/pear-Horde_LoginTasks
 horde-Horde_Mail-DEPEND=	${PEARDIR}/Horde/Mail.php:${PORTSDIR}/mail/pear-Horde_Mail
 horde-Horde_Memcache-DEPEND=	${PEARDIR}/Horde/Memcache.php:${PORTSDIR}/databases/pear-Horde_Memcache
-horde-Horde_Mime-DEPEND=	${PEARDIR}/Horde/Mime.php:${PORTSDIR}/devel/pear-Horde_Mime
-horde-Horde_Mime_Viewer-DEPEND=	${PEARDIR}/Horde/Mime/Viewer.php:${PORTSDIR}/devel/pear-Horde_Mime_Viewer
+horde-Horde_Mime-DEPEND=	${PEARDIR}/Horde/Mime.php:${PORTSDIR}/mail/pear-Horde_Mime
+horde-Horde_Mime_Viewer-DEPEND=	${PEARDIR}/Horde/Mime/Viewer.php:${PORTSDIR}/mail/pear-Horde_Mime_Viewer
 horde-Horde_Nls-DEPEND=		${PEARDIR}/Horde/Nls.php:${PORTSDIR}/devel/pear-Horde_Nls
 horde-Horde_Notification-DEPEND=	${PEARDIR}/Horde/Notification.php:${PORTSDIR}/devel/pear-Horde_Notification
 horde-Horde_Oauth-DEPEND=	${PEARDIR}/Horde/Oauth/Consumer.php:${PORTSDIR}/security/pear-Horde_Oauth
