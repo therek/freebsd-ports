@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear-channel-horde/bsd.horde.mk,v 1.2 2011/07/07 19:06:30 mm Exp $
+# $FreeBSD: ports/devel/pear-channel-horde/bsd.horde.mk,v 1.3 2011/07/07 20:36:46 mm Exp $
 
 MASTER_SITES?=	http://pear.horde.org/get/
 
@@ -90,7 +90,7 @@ horde-Horde_Text_Flowed-DEPEND=	${PEARDIR}/Horde/Text/Flowed.php:${PORTSDIR}/tex
 horde-Horde_Token-DEPEND=	${PEARDIR}/Horde/Token.php:${PORTSDIR}/devel/pear-Horde_Token
 horde-Horde_Translation-DEPEND=	${PEARDIR}/Horde/Translation.php:${PORTSDIR}/devel/pear-Horde_Translation
 horde-Horde_Tree-DEPEND=	${PEARDIR}/Horde/Tree.php:${PORTSDIR}/devel/pear-Horde_Tree
-horde-Horde_Vfs-DEPEND=		${PEARDIR}/Horde/Vfs.php:${PORTSDIR}/devel/pear-Horde_Vfs
+horde-Horde_Vfs-DEPEND=		${PEARDIR}/Horde/Vfs.php:${PORTSDIR}/sysutils/pear-Horde_Vfs
 horde-Horde_View-DEPEND=	${PEARDIR}/Horde/View.php:${PORTSDIR}/devel/pear-Horde_View
 horde-Horde_Xml_Element-DEPEND=	${PEARDIR}/Horde/Xml/Element.php:${PORTSDIR}/textproc/pear-Horde_Xml_Element
 horde-Horde_Xml_Wbxml-DEPEND=	${PEARDIR}/Horde/Xml/Wbxml.php:${PORTSDIR}/textproc/pear-Horde_Xml_Wbxml
