@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/isc-dhcp41-server/files/isc-dhcpd.in,v 1.2 2010/07/12 01:54:25 wxs Exp $
+# $FreeBSD: ports/net/isc-dhcp41-server/files/isc-dhcpd.in,v 1.3 2011/02/14 02:21:27 wxs Exp $
 #
 # PROVIDE: dhcpd
 # REQUIRE: DAEMON
@@ -432,7 +432,7 @@ setup_flags ()
 	if eval "[ -n \"\${${name}_pidfile}\" ]"; then
 		eval "rc_flags=\"\${rc_flags} -pf \${${name}_pidfile}\""
 	fi
-	if eval "[ -n \"\${dhcpd_withuser}\" ]"; then
+	if eval "[ -n \"\${${name}_withuser}\" ]"; then
 		eval "rc_flags=\"\${rc_flags} -user \${${name}_withuser}\""
 	fi
 	if eval "[ -n \"\${${name}_withgroup}\" ]"; then
