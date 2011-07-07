@@ -1,5 +1,5 @@
+@comment $FreeBSD: ports/devel/py-distribute/files/pkg-install.in,v 1.1 2011/03/08 18:37:18 nivit Exp $
 #!/bin/sh
-# $FreeBSD$
 
 EASYINSTALL_PTH=%%EASYINSTALL_PTH%%
 
