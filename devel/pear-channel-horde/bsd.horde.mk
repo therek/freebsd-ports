@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear-channel-horde/bsd.horde.mk,v 1.1 2011/07/07 17:34:12 mm Exp $
+# $FreeBSD: ports/devel/pear-channel-horde/bsd.horde.mk,v 1.2 2011/07/07 19:06:30 mm Exp $
 
 MASTER_SITES?=	http://pear.horde.org/get/
 
@@ -71,6 +71,7 @@ horde-Horde_Routes-DEPEND=	${PEARDIR}/Horde/Routes/Route.php:${PORTSDIR}/www/pea
 horde-Horde_Secret-DEPEND=	${PEARDIR}/Horde/Secret.php:${PORTSDIR}/security/pear-Horde_Secret
 horde-Horde_Serialize-DEPEND=	${PEARDIR}/Horde/Serialize.php:${PORTSDIR}/devel/pear-Horde_Serialize
 horde-Horde_SessionHandler-DEPEND=	${PEARDIR}/Horde/SessionHandler.php:${PORTSDIR}/www/pear-Horde_SessionHandler
+horde-Horde_Scribe-DEPEND=	${PEARDIR}/Horde/Scribe.php:${PORTSDIR}/net/pear-Horde_Scribe
 horde-Horde_Share-DEPEND=	${PEARDIR}/Horde/Share/Base.php:${PORTSDIR}/security/pear-Horde_Share
 horde-Horde_SpellChecker-DEPEND=	${PEARDIR}/Horde/SpellChecker.php:${PORTSDIR}/textproc/pear-Horde_SpellChecker
 horde-Horde_Stream_Filter-DEPEND=	${PEARDIR}/Horde/Stream/Filter/Crc32.php:${PORTSDIR}/devel/pear-Horde_Stream_Filter
