@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/vagalume/pkg-plist,v 1.3 2009/12/14 22:31:09 pav Exp $
+@comment $FreeBSD: ports/audio/vagalume/pkg-plist,v 1.4 2011/01/10 12:39:56 decke Exp $
 bin/vagalume
 %%DBUS%%bin/vagalumectl
 share/applications/vagalume.desktop
@@ -16,6 +16,7 @@ share/pixmaps/vagalume.xpm
 %%DATADIR%%/icons/hicolor/scalable/apps/media-playback-stop.svg
 %%DATADIR%%/icons/hicolor/scalable/apps/media-skip-forward.svg
 %%DATADIR%%/icons/hicolor/scalable/apps/process-stop.svg
+%%NLS%%share/locale/ca/LC_MESSAGES/vagalume.mo
 %%NLS%%share/locale/de/LC_MESSAGES/vagalume.mo
 %%NLS%%share/locale/es/LC_MESSAGES/vagalume.mo
 %%NLS%%share/locale/fi/LC_MESSAGES/vagalume.mo
