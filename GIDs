@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.146 2011/07/05 16:40:02 crees Exp $
+# $FreeBSD: ports/GIDs,v 1.147 2011/07/07 18:14:36 crees Exp $
 # Please keep this file sorted by GID!
 smmsp:*:25:
 bind:*:53:
@@ -79,6 +79,7 @@ dovenull:*:144:
 webcamd:*:145:
 ventrilo:*:146:
 rbldns:*:153:
+trircd:*:154:
 sfs:*:171:
 agk:*:172:
 polipo:*:173:
