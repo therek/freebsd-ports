@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2509 2011/07/07 22:07:18 beech Exp $
+# $FreeBSD: ports/MOVED,v 1.2510 2011/07/08 10:27:20 danfe Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2272,3 +2272,4 @@ devel/horde4-streamwrapper||2011-07-07|Removed
 graphics/horde4-image||2011-07-07|Removed
 security/horde4-auth||2011-07-07|Removed
 x11-wm/boxtools|x11-wm/blackbox|2011-07-08|Ports merged together
+audio/ruby-ogginfo||2011-07-09|Replaced with audio/rubygem-ogginfo
