@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/fetchmail/pkg-plist,v 1.28 2009/07/15 23:02:51 amdmi3 Exp $
+@comment $FreeBSD: ports/mail/fetchmail/pkg-plist,v 1.29 2009/11/04 10:47:33 miwi Exp $
 bin/fetchmail
 bin/fetchmailconf
 libexec/fetchmailconf.py
@@ -36,6 +36,7 @@ libexec/fetchmailconf.py
 %%NLS%%share/locale/tr/LC_MESSAGES/fetchmail.mo
 %%NLS%%share/locale/vi/LC_MESSAGES/fetchmail.mo
 %%NLS%%share/locale/zh_CN/LC_MESSAGES/fetchmail.mo
+@exec /usr/bin/install -d -m 755 -o fetchmail -g fetchmail /var/run/fetchmail
 @unexec if cmp -s %D/etc/fetchmailrc.sample %D/etc/fetchmailrc; then rm -f %D/etc/fetchmailrc; fi
 etc/fetchmailrc.sample
 @exec if [ ! -f %D/etc/fetchmailrc ] ; then cp -p %D/%F %B/fetchmailrc; fi
