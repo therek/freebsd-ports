@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear-channel-horde/bsd.horde.mk,v 1.3 2011/07/07 20:36:46 mm Exp $
+# $FreeBSD: ports/devel/pear-channel-horde/bsd.horde.mk,v 1.4 2011/07/07 21:01:52 mm Exp $
 
 MASTER_SITES?=	http://pear.horde.org/get/
 
@@ -47,7 +47,7 @@ horde-Horde_Imsp-DEPEND=	${PEARDIR}/Horde/Imsp.php:${PORTSDIR}/databases/pear-Ho
 horde-Horde_Itip-DEPEND=	${PEARDIR}/Horde/Itip.php:${PORTSDIR}/devel/pear-Horde_Itip
 horde-Horde_Injector-DEPEND=	${PEARDIR}/Horde/Injector.php:${PORTSDIR}/devel/pear-Horde_Injector
 horde-Horde_Kolab_Format-DEPEND=	${PEARDIR}/Horde/Kolab/Format.php:${PORTSDIR}/textproc/pear-Horde_Kolab_Format
-horde-Horde_Kolab_Server-DEPEND=	${PEARDIR}/Horde/Kolab/Server.php:${PORTSDIR}/net/pear-Horde_Kolab_Server
+horde-Horde_Kolab_Server-DEPEND=	${PEARDIR}/Horde/Kolab/Server/Factory.php:${PORTSDIR}/net/pear-Horde_Kolab_Server
 horde-Horde_Kolab_Session-DEPEND=	${PEARDIR}/Horde/Kolab/Session.php:${PORTSDIR}/net/pear-Horde_Kolab_Session
 horde-Horde_Kolab_Storage-DEPEND=	${PEARDIR}/Horde/Kolab/Storage.php:${PORTSDIR}/mail/pear-Horde_Kolab_Storage
 horde-Horde_Ldap-DEPEND=	${PEARDIR}/Horde/Ldap.php:${PORTSDIR}/net/pear-Horde_Ldap
