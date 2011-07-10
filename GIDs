@@ -1,5 +1,6 @@
-# $FreeBSD: ports/GIDs,v 1.147 2011/07/07 18:14:36 crees Exp $
+# $FreeBSD: ports/GIDs,v 1.148 2011/07/09 09:28:03 crees Exp $
 # Please keep this file sorted by GID!
+mail:*:6:postfix,clamav
 smmsp:*:25:
 bind:*:53:
 rdfdb:*:55:
