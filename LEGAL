@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.661 2011/07/02 13:45:41 miwi Exp $
+# $FreeBSD: ports/LEGAL,v 1.662 2011/07/02 16:01:03 rene Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -23,6 +23,8 @@ Such ports are listed below:
 
 Dist			Port			Why
 ------------------------------------------------------------------------------
+VMware-vSphere-Perl*	net/vmware-vsphere-cli	May not be redistributed.
+						Must accept license to download.
 TrueCrypt*		security/truecrypt	May not be redistributed.
 						Crypto; export-controlled.
 						Must accept license to download.
