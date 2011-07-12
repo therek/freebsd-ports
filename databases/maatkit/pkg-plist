@@ -1,7 +1,8 @@
-@comment $FreeBSD: ports/databases/maatkit/pkg-plist,v 1.15 2010/06/23 23:20:29 skreuzer Exp $
+@comment $FreeBSD: ports/databases/maatkit/pkg-plist,v 1.16 2010/08/23 20:28:44 skreuzer Exp $
 %%SITE_PERL%%/maatkit.pod
 bin/mk-archiver
 bin/mk-checksum-filter
+bin/mk-config-diff
 bin/mk-deadlock-logger
 bin/mk-duplicate-key-checker
 bin/mk-error-log
@@ -28,6 +29,8 @@ bin/mk-slave-prefetch
 bin/mk-slave-restart
 bin/mk-table-checksum
 bin/mk-table-sync
+bin/mk-table-usage
+bin/mk-tcp-model
 bin/mk-upgrade
 bin/mk-visual-explain
 bin/mk-variable-advisor
