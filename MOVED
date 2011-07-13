@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2512 2011/07/10 00:49:05 swills Exp $
+# $FreeBSD: ports/MOVED,v 1.2513 2011/07/11 11:49:37 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2276,3 +2276,5 @@ audio/ruby-ogginfo||2011-07-09|Replaced with audio/rubygem-ogginfo
 audio/ruby-shout||2011-07-10|Replaced with audio/rubygem-shout
 textproc/xpp3||2011-07-11|Removed depends on an expired ports
 textproc/xmlpull||2011-07-11|Has expired: Upstream disapear and distfile is no more available
+java/shujit||2011-07-13|Has expired: ancient version of Java
+net-im/skype12||2011-07-13|Has expired: very old version
