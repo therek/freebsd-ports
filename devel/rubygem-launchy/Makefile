@@ -5,12 +5,11 @@
 # $FreeBSD$
 
 PORTNAME=	launchy
-PORTVERSION=	0.3.3
-PORTREVISION=	1
+PORTVERSION=	0.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	rpsfa@rit.edu
+MAINTAINER=	zi@FreeBSD.org
 COMMENT=	A helper class for launching cross-platform applications
 
 RUN_DEPENDS=	rubygem-configuration>=0.0.5:${PORTSDIR}/devel/rubygem-configuration
