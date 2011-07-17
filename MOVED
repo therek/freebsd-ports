@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2516 2011/07/14 22:27:58 beech Exp $
+# $FreeBSD: ports/MOVED,v 1.2517 2011/07/17 14:27:53 jlaffaye Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2056,8 +2056,6 @@ graphics/xmms-goom||2011-05-02|Has expired: Upstream disapear and distfile is no
 graphics/xmms-infinity||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 ftp/axyftp||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 ftp/emacs-wget||2011-05-02|Has expired: Upstream disapear and distfile is no more available
-ftp/llnlxdir||2011-05-02|Has expired: Upstream disapear and distfile is no more available
-ftp/llnlxftp||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 ftp/mirror||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 ftp/moftpd||2011-05-02|Has expired: Upstream disapear and distfile is no more available
 ftp/wu-ftpd||2011-05-02|Has expired: Upstream disapear and distfile is no more available
