@@ -1,6 +1,8 @@
 #
-# $FreeBSD: ports/devel/bugzilla/Makefile.common,v 1.1 2010/12/12 05:56:19 tota Exp $
+# $FreeBSD: ports/devel/bugzilla/Makefile.common,v 1.2 2011/06/11 04:25:06 tota Exp $
 #
+
+DIST_SUBDIR=	${PORTNAME}
 
 CONFLICTS=	bugzilla-3.*
 
