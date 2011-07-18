@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2518 2011/07/17 20:33:48 cy Exp $
+# $FreeBSD: ports/MOVED,v 1.2519 2011/07/18 07:04:00 cy Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2279,3 +2279,4 @@ net-p2p/tvrss||2011-7-14|tvrss site does not exist anymore
 www/horde4-meta||2011-07-14|Removed
 graphics/crystalentitylayer||2011-07-17|Removed
 graphics/crystalspace||2011-07-17|Has expired: has been broken for a year
+hungarian/hunspell|textproc/hunspell|2011-07-18|moved to textproc as it is language independent
