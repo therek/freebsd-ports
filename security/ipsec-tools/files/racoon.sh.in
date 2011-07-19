@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop racoon
-# $FreeBSD: ports/security/ipsec-tools/files/racoon.sh.in,v 1.6 2009/07/15 16:56:02 dougb Exp $
+# $FreeBSD: ports/security/ipsec-tools/files/racoon.sh.in,v 1.7 2010/03/27 00:14:44 dougb Exp $
 
 # PROVIDE: racoon
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@
 #
 [ -z "$racoon_enable" ] && racoon_enable="NO"	# Disable by default
 #racoon_flags=""				# Flags to racoon program
-racoon_create_dirs=NO				# Create $required_dirs (for
+racoon_create_dirs=${racoon_create_dirs:-NO}	# Create $required_dirs (for
 						#  /var mfs)?
 
 . /etc/rc.subr
@@ -38,7 +38,7 @@ racoon_cleanup() {
 }
 
 load_rc_config $name
-if [ "$1" = start ] && checkyesno "${name}_create_dirs"; then
+if [ "$1" = start -o "$1" = faststart ] && checkyesno "${name}_create_dirs"; then
 	/bin/mkdir -p $required_dirs
 fi
 run_rc_command "$1"
