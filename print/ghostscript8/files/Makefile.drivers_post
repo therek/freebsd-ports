@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/ghostscript8/files/Makefile.drivers_post,v 1.5 2010/12/15 18:49:17 dinoex Exp $
+# $FreeBSD: ports/print/ghostscript8/files/Makefile.drivers_post,v 1.6 2011/06/20 18:57:14 hrs Exp $
 # pre/postprocessing driver variables
 
 # define defaults which depend on WITHOUT_*/WITH_*
@@ -119,7 +119,7 @@ CONFIGURE_ARGS+=--with-x \
 		--x-libraries=${X11BASE}/lib
 CONFLICTS_INSTALL+=	ghostscript8-nox11-[0-9]*
 .if defined(WITH_GTK)
-USE_GNOME=	atk gdkpixbuf glib20 gtk20
+USE_GNOME=	atk gdkpixbuf2 glib20 gtk20
 CONFIGURE_ARGS+=--enable-gtk
 .else
 CONFIGURE_ARGS+=--disable-gtk
