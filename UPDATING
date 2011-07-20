@@ -1094,7 +1094,7 @@ you update your ports collection, before attempting any port upgrades.
   else -- Bad Things[tm] are likely to happen otherwise.
 
 20101202:
-  AFFECTS: users of multmidia/gstreamer-plugins
+  AFFECTS: users of multimedia/gstreamer-plugins
   AUTHOR: multimedia@FreeBSD.org
 
   If during the upgrade of gstreamer-plugins the following error happens:
@@ -5070,4 +5070,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1104 2011/07/12 13:37:48 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.1105 2011/07/18 16:21:25 jlaffaye Exp $
