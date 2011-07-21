@@ -2,7 +2,7 @@
 # ex:ts=4
 #
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.77 2010/12/20 12:23:52 erwin Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.78 2011/05/04 22:33:13 flz Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -70,8 +70,8 @@ ARCH!=	${UNAME} -p
 .if !defined(OSVERSION)
 .if exists(/usr/include/sys/param.h)
 OSVERSION!=	${AWK} '/^\#define[[:blank:]]__FreeBSD_version/ {print $$3}' < /usr/include/sys/param.h
-.elif exists(/usr/src/sys/sys/param.h)
-OSVERSION!=	${AWK} '/^\#define[[:blank:]]__FreeBSD_version/ {print $$3}' < /usr/src/sys/sys/param.h
+.elif exists(${SRC_BASE}/sys/sys/param.h)
+OSVERSION!=	${AWK} '/^\#define[[:blank:]]__FreeBSD_version/ {print $$3}' < ${SRC_BASE}/sys/sys/param.h
 .else
 OSVERSION!=	${SYSCTL} -n kern.osreldate
 .endif
@@ -144,7 +144,7 @@ PKGINSTALLVER!=	${PKG_INFO} -P 2>/dev/null | ${SED} -e 's/.*: //'
 .endif
 
 INDEXDIR?=	${PORTSDIR}
-INDEXFILE?=	INDEX-${OSVERSION:C/([0-9]).*/\1/}
+INDEXFILE?=	INDEX-${OSVERSION:C/([0-9]*)[0-9]{5}/\1/}
 
 # local customization of the ports tree
 .if exists(${.CURDIR}/Makefile.local)

@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.687 2011/07/03 15:51:18 erwin Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.688 2011/07/15 08:26:30 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1217,8 +1217,8 @@ OSREL!=	${UNAME} -r | ${SED} -e 's/[-(].*//'
 .if !defined(OSVERSION)
 .if exists(/usr/include/sys/param.h)
 OSVERSION!=	${AWK} '/^\#define[[:blank:]]__FreeBSD_version/ {print $$3}' < /usr/include/sys/param.h
-.elif exists(/usr/src/sys/sys/param.h)
-OSVERSION!=	${AWK} '/^\#define[[:blank:]]__FreeBSD_version/ {print $$3}' < /usr/src/sys/sys/param.h
+.elif exists(${SRC_BASE}/sys/sys/param.h)
+OSVERSION!=	${AWK} '/^\#define[[:blank:]]__FreeBSD_version/ {print $$3}' < ${SRC_BASE}/sys/sys/param.h
 .else
 OSVERSION!=	${SYSCTL} -n kern.osreldate
 .endif
@@ -1381,7 +1381,7 @@ PKGVERSION=	${PORTVERSION:C/[-_,]/./g}${_SUF1}${_SUF2}
 PKGNAME=	${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}-${PKGVERSION}
 DISTNAME?=	${PORTNAME}-${DISTVERSIONPREFIX}${DISTVERSION:C/:(.)/\1/g}${DISTVERSIONSUFFIX}
 
-INDEXFILE?=		INDEX-${OSVERSION:C/([0-9]).*/\1/}
+INDEXFILE?=		INDEX-${OSVERSION:C/([0-9]*)[0-9]{5}/\1/}
 
 DOCSDIR?=		${PREFIX}/share/doc/${PORTNAME}
 EXAMPLESDIR?=		${PREFIX}/share/examples/${PORTNAME}
@@ -4088,7 +4088,7 @@ install-mtree:
 	@if [ ${UID} = 0 ]; then \
 		if [ ! -f ${MTREE_FILE} ]; then \
 			${ECHO_MSG} "Error: mtree file \"${MTREE_FILE}\" is missing."; \
-			${ECHO_MSG} "Copy it from a suitable location (e.g., /usr/src/etc/mtree) and try again."; \
+			${ECHO_MSG} "Copy it from a suitable location (e.g., ${SRC_BASE}/etc/mtree) and try again."; \
 			exit 1; \
 		else \
 			${MTREE_CMD} ${MTREE_ARGS} ${PREFIX}/ >/dev/null; \
