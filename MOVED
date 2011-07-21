@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2522 2011/07/19 05:03:18 cy Exp $
+# $FreeBSD: ports/MOVED,v 1.2523 2011/07/20 04:44:24 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2280,3 +2280,5 @@ graphics/crystalentitylayer||2011-07-17|Removed
 graphics/crystalspace||2011-07-17|Has expired: has been broken for a year
 hungarian/hunspell|textproc/hunspell|2011-07-18|moved to textproc as it is language independent
 mail/qmail-vida||2011-07-18|Has expired: UID collisions, IGNOREd for four years with no-one caring
+java/jdk13|java/jdk15|2011-07-21|Has expired: ancient version of Java
+java/linux-sun-jdk13|java/linux-sun-jdk15|2011-07-21|Has expired: ancient version of Java
