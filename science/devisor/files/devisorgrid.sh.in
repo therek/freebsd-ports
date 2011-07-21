@@ -1,5 +1,5 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/science/devisor/files/devisorgrid.sh.in,v 1.1 2005/01/21 19:03:52 hq Exp $
 
-JAVA_VERSION="1.4+" %%LOCALBASE%%/bin/java -Ddevisorgrid.home="%%DATADIR%%" -cp "%%DATADIR%%" devisorgrid "$@"
+JAVA_VERSION="%%JAVA_VERSION%%" %%LOCALBASE%%/bin/java -Ddevisorgrid.home="%%DATADIR%%" -cp "%%DATADIR%%" devisorgrid "$@"

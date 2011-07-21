@@ -1,5 +1,5 @@
 #! /bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/jxm/files/jxm.sh.in,v 1.1 2005/01/28 23:21:33 hq Exp $
 
-JAVA_VERSION="1.4+" JAVA_OS="native" "%%LOCALBASE%%/bin/java" -jar "%%JAVAJARDIR%%/jxm.jar" "$@"
+JAVA_VERSION="%%JAVA_VERSION%%" JAVA_OS="native" "%%LOCALBASE%%/bin/java" -jar "%%JAVAJARDIR%%/jxm.jar" "$@"

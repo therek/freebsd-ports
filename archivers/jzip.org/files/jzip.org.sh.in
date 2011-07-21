@@ -1,5 +1,5 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/jzip.org/files/jzip.org.sh.in,v 1.1 2005/01/28 22:56:54 hq Exp $
 
-JAVA_VERSION=1.2+ "%%LOCALBASE%%/bin/java" -jar "%%JAVAJARDIR%%/jzip.org.jar" "$@"
+JAVA_VERSION="%%JAVA_VERSION%%" "%%LOCALBASE%%/bin/java" -jar "%%JAVAJARDIR%%/jzip.org.jar" "$@"

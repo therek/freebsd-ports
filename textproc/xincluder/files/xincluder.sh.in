@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/xincluder/files/xincluder.sh.in,v 1.1 2005/02/06 02:22:00 hq Exp $
 
 IAM=`basename "$0"`
 
@@ -12,4 +12,4 @@ case "${IAM}" in
 	*) echo "ERROR!" ; false ;;
 esac
 
-JAVA_VERSION="1.2+" "%%LOCALBASE%%/bin/java" -cp "`"%%LOCALBASE%%/bin/classpath"`" "com.elharo.xml.xinclude.${MAIN_CLASS}" "$@"
+JAVA_VERSION="%%JAVA_VERSION%%" "%%LOCALBASE%%/bin/java" -cp "`"%%LOCALBASE%%/bin/classpath"`" "com.elharo.xml.xinclude.${MAIN_CLASS}" "$@"

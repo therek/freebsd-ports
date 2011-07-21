@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.29 2011/06/28 16:34:23 flo Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.30 2011/06/30 18:19:47 flo Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -688,7 +688,7 @@ MOZ_OPTIONS+=	--disable-debug				\
 
 .if defined(WITH_JAVA) && defined(_WITH_JAVA)
 USE_JAVA=	yes
-JAVA_VERSION+=	1.4+
+JAVA_VERSION+=	1.5+
 JAVA_OS+=	native
 CONFIGURE_ENV+=	JAVA_HOME="${JAVA_HOME}"
 MOZ_OPTIONS+=	--enable-javaxpcom
