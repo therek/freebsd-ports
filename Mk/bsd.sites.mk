@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.538 2011/06/26 03:40:14 pgollucci Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.539 2011/07/07 02:31:49 swills Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -845,7 +845,6 @@ MASTER_SITE_NETLIB+=	\
 	http://netlib.amss.ac.cn/%SUBDIR%/ \
 	http://netlib.caspur.it/%SUBDIR%/ \
 	http://netlib.ccp14.ac.uk/%SUBDIR%/ \
-	http://netlib.enseeiht.fr/%SUBDIR%/ \
 	http://netlib.linux-mirror.org/%SUBDIR%/ \
 	http://phase.hpcc.jp/mirrors/netlib/%SUBDIR%/
 .endif
