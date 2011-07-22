@@ -1,7 +1,7 @@
 #!/bin/sh
 # This script is in the public domain.  Original author: Garrett Wollman
 #
-# $FreeBSD: ports/sysutils/smartmontools/files/smart.in,v 1.9 2010/05/10 06:17:23 miwi Exp $
+# $FreeBSD: ports/sysutils/smartmontools/files/smart.in,v 1.10 2011/07/04 09:09:39 romain Exp $
 #
 
 if [ -r /etc/defaults/periodic.conf ]; then
@@ -35,6 +35,8 @@ trap "rm -f ${tmpfile}" 0 1 3 15
 rc=0
 case "${daily_status_smart_enable}" in
 	[Yy][Ee][Ss])
+		echo
+		echo 'SMART status:'
 		cd /dev
 		for device in ${daily_status_smart_devices}; do
 			device="${device#/dev/}"
