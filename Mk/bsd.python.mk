@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.134 2011/07/14 04:13:24 sunpoet Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.135 2011/07/22 15:12:07 lwhsu Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -202,7 +202,7 @@ Python_Include_MAINTAINER=	python@FreeBSD.org
 #
 
 _PYTHON_PORTBRANCH=		2.7
-_PYTHON_ALLBRANCHES=		2.7 2.6 2.5 2.4 3.1 3.2# preferred first
+_PYTHON_ALLBRANCHES=		2.7 2.6 2.5 2.4 3.2 3.1	# preferred first
 _ZOPE_PORTBRANCH=		2.7
 _ZOPE_ALLBRANCHES=		2.7 2.8 2.9 2.10 3.2
 
