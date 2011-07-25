@@ -2,7 +2,7 @@
 #
 #       pre-configure script for Elm port to FreeBSD
 #
-# $FreeBSD: ports/mail/elm+ME/scripts/pre-configure,v 1.37 2006/04/07 13:06:54 johans Exp $
+# $FreeBSD: ports/mail/elm+ME/scripts/pre-configure,v 1.38 2011/06/21 11:51:36 johans Exp $
 
 [ -r /usr/include/inttypes.h ] && has_inttypes=define || has_inttypes=undef
 cpp /usr/include/wchar.h | grep mbrlen && has_wchar=define || has_wchar=undef
@@ -321,7 +321,7 @@ nopic=''
 shared_extra=''
 cppflags=''
 ldflags='-s'
-cc='cc'
+cc='${CC}'
 libs=''
 nametype='bsd'
 d_passnames='define'
