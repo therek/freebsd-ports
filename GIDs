@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.149 2011/07/10 16:13:11 ohauer Exp $
+# $FreeBSD: ports/GIDs,v 1.150 2011/07/21 16:51:48 crees Exp $
 # Please keep this file sorted by GID!
 mail:*:6:postfix,clamav
 smmsp:*:25:
@@ -96,6 +96,7 @@ saned:*:194:
 sympa:*:200:
 dspam:*:202:
 yate:*:204:
+gnugk:*:205:
 shoutcast:*:210:
 git:*:211:
 hg:*:212:
