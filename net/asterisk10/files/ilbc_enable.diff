@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/net/asterisk/files/ilbc_enable.diff,v 1.5 2010/11/28 19:33:57 fjoe Exp $
+$FreeBSD: ports/net/asterisk10/files/ilbc_enable.diff,v 1.6 2011/07/21 23:01:21 flo Exp $
 
 diff -druN codecs/ilbc.orig/FrameClassify.c codecs/ilbc/FrameClassify.c
 --- codecs/ilbc.orig/FrameClassify.c	1969-12-31 16:00:00.000000000 -0800

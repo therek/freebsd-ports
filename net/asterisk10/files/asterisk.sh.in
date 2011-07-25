@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/asterisk10/files/asterisk.sh.in,v 1.11 2011/01/04 14:17:02 flo Exp $
 #
 
 # PROVIDE: asterisk
