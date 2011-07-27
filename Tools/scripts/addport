@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 #
 # addport - perl script that adds new ports to the
 # FreeBSD Ports Collection.  Replaces easy-import.
@@ -32,7 +32,7 @@
 #
 # Id: addport,v 1.2 2000/04/02 06:21:13 will Exp (original shell script)
 # Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp (perl conversion)
-# $FreeBSD: ports/Tools/scripts/addport,v 1.55 2010/03/25 15:44:17 dinoex Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.56 2010/06/06 09:30:54 romain Exp $
 #
 # MAINTAINER=	garga@FreeBSD.org
 #
