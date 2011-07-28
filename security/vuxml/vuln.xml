@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2400 2011/07/26 01:12:25 zi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2401 2011/07/26 02:12:47 swills Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -38,7 +38,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>phpmyadmin -- multiple vulnerabilities</topic>
     <affects>
       <package>
-	<name>phpmyadmin</name>
+	<name>phpMyAdmin</name>
 	<range><lt>3.4.3.2</lt></range>
       </package>
     </affects>
@@ -77,6 +77,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2011-07-23</discovery>
       <entry>2011-07-24</entry>
+      <modified>2011-07-28</modified>
     </dates>
   </vuln>
 
@@ -209,7 +210,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>phpmyadmin -- multiple vulnerabilities</topic>
     <affects>
       <package>
-	<name>phpmyadmin</name>
+	<name>phpMyAdmin</name>
 	<range><lt>3.4.3.1</lt></range>
       </package>
     </affects>
@@ -252,6 +253,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2011-07-02</discovery>
       <entry>2011-07-03</entry>
+      <modified>2011-07-28</modified>
     </dates>
   </vuln>
 
