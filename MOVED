@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2532 2011/07/28 17:21:35 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2533 2011/07/28 22:17:22 zi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2293,3 +2293,8 @@ math/librandlib|math/randlib|2011-07-28|move to a location that matches the name
 science/bblimage|science/pyvox|2011-07-28|track the upstream name change
 net-im/gnome-jabber|net-im/empathy|2011-07-28|Has expired: No longer maintain by upstream since 2005, use net-im/empathy instead
 misc/logsurfer|misc/logsurfer+|2011-07-25|Renamed
+devel/gir-repository||2011-07-30|Removed
+devel/gir-repository-libnotify||2010-07-30|Removed
+graphics/gir-repository-goocanvas||2010-07-30|Removed
+graphics/gir-repository-poppler||2010-07-30|Removed
+x11-toolkits/gir-repository-vte||2010-07-30|Removed
