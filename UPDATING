@@ -35,7 +35,7 @@ you update your ports collection, before attempting any port upgrades.
   AFFECTS: users of x11-toolkits/gtk20
   AUTHOR: gnome@FreeBSD.org
 
-  The gtk-update-icon-cache utility has been slipt out of the gtk20 port.
+  The gtk-update-icon-cache utility has been split out of the gtk20 port.
   Use the following instructions to update your system.
 
   # pkg_delete -f gtk-2.\*
@@ -5140,4 +5140,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1113 2011/07/31 15:07:02 jlaffaye Exp $
+$FreeBSD: ports/UPDATING,v 1.1114 2011/07/31 18:42:29 marcus Exp $
