@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2534 2011/07/30 09:07:44 kwm Exp $
+# $FreeBSD: ports/MOVED,v 1.2535 2011/07/30 10:31:40 rene Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2299,3 +2299,4 @@ graphics/gir-repository-goocanvas||2010-07-30|Removed
 graphics/gir-repository-poppler||2010-07-30|Removed
 x11-toolkits/gir-repository-vte||2010-07-30|Removed
 mail/rubygem-smtp_tls||2011-07-30|Has expired: no supported version of FreeBSD have < 1.8.7.p72
+textproc/pl-hunspell|polish/hunspell|2011-07-31|Move to a better place via repocopy
