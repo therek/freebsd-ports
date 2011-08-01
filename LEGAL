@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.666 2011/08/01 04:29:36 bapt Exp $
+# $FreeBSD: ports/LEGAL,v 1.667 2011/08/01 05:24:39 bapt Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -313,7 +313,6 @@ libamrnb		audio/libamrnb		No redistribution allowed
 libamrwb		audio/libamrwb		No redistribution allowed
 libdvdcss-*.tar.bz2	multimedia/libdvdcss	CSS code may violate the DMCA
 ecw_jpeg_2000_*.zip	graphics/libecwj2	Must be downloaded manually from Ermapper site
-libidea-*		security/libidea	Crypto; export-controlled
 libots-*.alpha.rpm	lang/compaq-cc		Distribution not allowed
 Linux_MegaCli_*		sysutils/linux-megacli	Redistribution not allowed
 *_FreeBSD_MegaCLI.zip	sysutils/megacli	Reproduction or redistribution
