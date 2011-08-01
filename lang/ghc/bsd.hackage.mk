@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.34 2011/07/10 21:33:00 ashish Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.35 2011/08/01 13:38:44 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -80,6 +80,7 @@ hint_port=			devel/hs-hint
 hoogle_port=			devel/hs-hoogle		# executable
 hostname_port=			net/hs-hostname
 hs-bibutils_port=		textproc/hs-hs-bibutils
+hS3_port=			www/hs-hS3		# executable
 hscolour_port=			print/hs-hscolour	# executable
 hslogger_port=			devel/hs-hslogger
 html_port=			textproc/hs-html
