@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2544 2011/08/01 20:14:00 dinoex Exp $
+# $FreeBSD: ports/MOVED,v 1.2545 2011/08/02 06:31:26 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2446,3 +2446,5 @@ japanese/gsuica||2011-08-02|Has expired: Upcoming ruby-gnome removes dependencie
 science/gave||2011-08-02|Has expired: Upcoming ruby-gnome removes dependencies
 x11-themes/gnome-art||2011-08-02|Has expired: Upcoming ruby-gnome removes dependencies
 x11-themes/gnome-splashscreen-manager||2011-08-02|Has expired: Upcoming ruby-gnome removes dependencies
+devel/simian||2011-08-02|Removed BROKEN for more than 6 month
+databases/mysql-gui-tools||2011-08-02|Removed BROKEN for more than 6 month

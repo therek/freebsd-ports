@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.667 2011/08/01 05:24:39 bapt Exp $
+# $FreeBSD: ports/LEGAL,v 1.668 2011/08/01 05:51:55 bapt Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -572,8 +572,6 @@ twelf-*			lang/twelf		License is currently
 pfpro*			finance/pfpro		Only available for customers
 						subscribed to the VeriSign
 						PayFlow Pro Service
-simian-*		devel/simian		Have to agree to license
-						before download
 xGate/*			japanese/xgate		Requested by Orangesoft Inc.
 tw_cli-*		sysutils/tw_cli		Redistribution forbidden by
 						license
