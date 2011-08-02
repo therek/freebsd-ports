@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2547 2011/08/02 09:32:59 flo Exp $
+# $FreeBSD: ports/MOVED,v 1.2548 2011/08/02 20:30:47 cy Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1781,7 +1781,6 @@ x11-clocks/wmtz||2011-05-01|Has expired: Upstream disapear and distfile is no mo
 x11-clocks/xmms-alarm||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 x11/buttonbox||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 x11/cnslock||2011-05-01|Has expired: Upstream disapear and distfile is no more available
-x11/gcursor||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 x11/gnome-launch-box||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 x11/gtk-themepreview||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 x11/gxset||2011-05-01|Has expired: Upstream disapear and distfile is no more available
