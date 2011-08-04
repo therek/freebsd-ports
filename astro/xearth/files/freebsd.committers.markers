@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.480 2011/06/30 20:00:34 flo Exp $
+# $FreeBSD: ports/astro/xearth/files/freebsd.committers.markers,v 1.481 2011/07/04 21:16:49 beech Exp $
 #
 # FreeBSD Project Committers
 #
@@ -126,7 +126,7 @@
  55.66283,	12.596603,	"erwin"				# Copenhagen, Denmark
  55.66192,	12.5695,	"lbr"				# Copenhagen, Denmark
  53.56,		10.02,		"cracauer"			# Hamburg, Germany
- 54.9870,	9.9789,		"xride"				# Fynshav, Denmark
+ 54.8994,	9.5468,		"xride"				# Rinkenaes, Denmark
  53.64,		9.84,		"hm"		align=left	# Rellingen, Germany
  49.00,		9.5,		"schweikh"			# Weinstadt, Germany
  51.20,		9.20,		"dinoex"			# Habichtswald, Germany
