@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.541 2011/07/28 14:14:41 ehaupt Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.542 2011/08/05 21:36:50 dougb Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -570,7 +570,7 @@ MASTER_SITE_GNUPG+= 	\
 .if !defined(IGNORE_MASTER_SITE_GNUSTEP)
 MASTER_SITE_GNUSTEP+= \
 	ftp://ftp.gnustep.org/pub/gnustep/%SUBDIR%/ \
-	ftp://ftp.easynet.nl/mirror/GNUstep/pub/gnustep/%SUBDIR%/
+	http://ftp.gnustep.org/pub/gnustep/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_GNUSTEP_CH)
