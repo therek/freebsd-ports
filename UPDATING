@@ -6,6 +6,16 @@ You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
 20110808:
+  AFFECTS: users of net-mgmt/zenoss
+  AUTHOR: pphillips@experts-exchange.com
+
+  Some functionality of zenoss requires a valid shell.  The FreeBSD port until
+  now was installing a user account without a shell.  To fix your existing
+  installation, please run the following command as root:
+
+  # pw usermod zenoss -s /bin/sh -d /usr/local/zenoss
+
+20110808:
   AFFECTS: users of dns/powerdns
   AUTHOR: tremere@cainites.net
 
@@ -5167,4 +5177,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1116 2011/08/08 11:21:51 gabor Exp $
+$FreeBSD: ports/UPDATING,v 1.1117 2011/08/08 12:41:08 pav Exp $
