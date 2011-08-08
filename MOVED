@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2556 2011/08/08 10:19:40 linimon Exp $
+# $FreeBSD: ports/MOVED,v 1.2557 2011/08/08 14:08:09 sunpoet Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1831,7 +1831,6 @@ sysutils/deleted||2011-05-01|Has expired: Upstream disapear and distfile is no m
 sysutils/dolly+||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 sysutils/durep||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 sysutils/dvdtape||2011-05-01|Has expired: Upstream disapear and distfile is no more available
-sysutils/flock||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 sysutils/fontedit||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 sysutils/ftrace||2011-05-01|Has expired: Upstream disapear and distfile is no more available
 sysutils/gfslicer||2011-05-01|Has expired: Upstream disapear and distfile is no more available
