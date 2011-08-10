@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.669 2011/08/02 09:01:38 bapt Exp $
+# $FreeBSD: ports/LEGAL,v 1.670 2011/08/03 06:49:45 bapt Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -142,7 +142,6 @@ dns.*.tar.Z		dns/h2n			Never get an approval yet
 doom3-linux-*		games/linux-doom3*	Redistribution limited
 doomsrc.zip		games/doom		Requested by id Software
 dr_freebsd_*.zip	sysutils/megarc		Must be downloaded manually
-drweb-qmail-*.tar.gz	security/drweb-qmail	Non-commercial or evaluation use
 dsnake-*		games/dsnake		License prohibits any reselling
 eagle-lin-*.run		cad/linux-eagle5	Usage permitted for
 						non-commercial purposes only
