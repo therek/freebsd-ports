@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.37 2011/08/13 18:08:39 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.38 2011/08/13 18:36:10 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -18,6 +18,7 @@ ALUT_port=			audio/hs-ALUT
 ansi-terminal_port=		devel/hs-ansi-terminal
 ansi-wl-pprint_port=		devel/hs-ansi-wl-pprint
 arrows_port=			devel/hs-arrows
+attoparsec_port=		textproc/hs-attoparsec
 binary_port=			devel/hs-binary
 bio_port=			science/hs-bio
 blaze-builder_port=		devel/hs-blaze-builder
