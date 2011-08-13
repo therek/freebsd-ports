@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.41 2011/08/13 19:37:58 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.42 2011/08/13 19:41:48 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -30,6 +30,7 @@ BNFC_port=			devel/hs-BNFC		# executable
 Boolean_port=			devel/hs-Boolean
 brainfuck_port=			lang/hs-brainfuck	# executable
 bsd-sysctl_port=		devel/hs-bsd-sysctl
+bytestring-nums_port=		devel/hs-bytestring-nums	# executable
 c2hs_port=			devel/hs-c2hs		# executable
 cabal-install_port=		devel/hs-cabal-install	# executable
 cairo_port=			graphics/hs-cairo
