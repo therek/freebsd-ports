@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.44 2011/08/13 20:36:01 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.45 2011/08/13 20:44:40 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -54,6 +54,7 @@ DeepArrow_port=			devel/hs-DeepArrow
 deepseq_port=			devel/hs-deepseq
 Diff_port=			textproc/hs-Diff
 digest_port=			security/hs-digest
+directory-tree_port=		devel/hs-directory-tree
 dlist_port=			devel/hs-dlist
 enumerator_port=		devel/hs-enumerator
 erf_port=			math/hs-erf
