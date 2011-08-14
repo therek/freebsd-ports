@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.68 2011/08/14 17:49:44 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.69 2011/08/14 17:52:20 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -11,6 +11,7 @@
 
 # KEEP THE LIST ALPHABETICALLY SORTED!
 
+aeson_port=			converters/hs-aeson
 Agda_port=			math/hs-Agda		# executable
 Agda-executable_port=		math/hs-Agda-executable	# executable
 alex_port=			devel/hs-alex		# executable
