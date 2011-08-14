@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.63 2011/08/14 11:45:37 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.64 2011/08/14 11:49:42 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -37,7 +37,6 @@ cereal_port=			devel/hs-cereal
 cairo_port=			graphics/hs-cairo
 case-insensitive_port=		textproc/hs-case-insensitive
 categories_port=		math/hs-categories
-category-extras_port=		math/hs-category-extras # BROKEN
 cgi_port=			www/hs-cgi
 checkers_port=			devel/hs-checkers
 citeproc-hs_port=		textproc/hs-citeproc-hs
