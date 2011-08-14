@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.52 2011/08/13 23:28:55 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.53 2011/08/14 01:27:45 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -146,6 +146,7 @@ regex-posix_port=		textproc/hs-regex-posix
 safe_port=			devel/hs-safe
 scgi_port=			www/hs-scgi
 sendfile_port=			net/hs-sendfile
+semigroups_port=		math/hs-semigroups
 SHA_port=			security/hs-SHA
 show_port=			devel/hs-show
 simple-sendfile_port=		net/hs-simple-sendfile
