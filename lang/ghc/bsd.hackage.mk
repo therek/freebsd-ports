@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.60 2011/08/14 11:32:23 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.61 2011/08/14 11:36:29 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -43,6 +43,7 @@ checkers_port=			devel/hs-checkers
 citeproc-hs_port=		textproc/hs-citeproc-hs
 cmdargs_port=			devel/hs-cmdargs
 comonad_port=			math/hs-comonad
+comonad-transformers_port=	math/hs-comonad-transformers
 contravariant_port=		math/hs-contravariant
 convertible_port=		devel/hs-convertible
 cpphs_port=			devel/hs-cpphs		# executable
