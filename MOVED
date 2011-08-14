@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2560 2011/08/10 16:18:30 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2561 2011/08/14 12:04:33 pgj Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2505,3 +2505,4 @@ security/drweb-postfix||2011-08-10|Has expired: fails to fetch (website rearrang
 security/drweb-qmail||2011-08-10|Has expired: fails to fetch (website rearranged)
 security/drweb-sendmail||2011-08-10|Has expired: fails to fetch (website rearranged)
 math/hs-category-extras||2011-08-14|Removed: this package is obsolete.
+lang/p5-POE-Component-Hailo||2011-08-14|Removed
