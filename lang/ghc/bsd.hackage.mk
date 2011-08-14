@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.53 2011/08/14 01:27:45 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.54 2011/08/14 11:16:30 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -187,6 +187,7 @@ uulib_port=			devel/hs-uulib
 vector_port=			devel/hs-vector
 vector-algorithms_port=		devel/hs-vector-algorithms
 vector-space_port=		math/hs-vector-space
+void_port=			devel/hs-void
 vte_port=			x11-toolkits/hs-vte
 wai_port=			www/hs-wai
 warp_port=			www/hs-warp
