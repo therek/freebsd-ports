@@ -1749,6 +1749,7 @@
     SUBDIR += squirm
     SUBDIR += squishdot
     SUBDIR += srg
+    SUBDIR += subsonic
     SUBDIR += suphp
     SUBDIR += surf
     SUBDIR += surfraw
@@ -1950,7 +1951,6 @@
     SUBDIR += wgetpaste
     SUBDIR += wikicalc
     SUBDIR += wikindx
-    SUBDIR += wiliki
     SUBDIR += wml
     SUBDIR += woof
     SUBDIR += wordpress
