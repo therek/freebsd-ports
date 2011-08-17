@@ -36,7 +36,6 @@
     SUBDIR += etoile-etoilemenus
     SUBDIR += etoile-iconkit
     SUBDIR += etoile-wildmenus
-    SUBDIR += fluxbox-sid-pack
     SUBDIR += fluxbox-tenr-styles-pack
     SUBDIR += fvwm-themes
     SUBDIR += geramik
@@ -47,6 +46,7 @@
     SUBDIR += gnome-icons-crystal
     SUBDIR += gnome-icons-dropline-neu
     SUBDIR += gnome-icons-dropline-nou
+    SUBDIR += gnome-icons-elementary
     SUBDIR += gnome-icons-gentoo-test
     SUBDIR += gnome-icons-gion
     SUBDIR += gnome-icons-iris
