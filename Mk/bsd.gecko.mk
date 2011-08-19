@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.35 2011/08/16 18:36:09 flo Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.36 2011/08/18 10:05:44 ale Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -898,6 +898,13 @@ gecko-do-install:
 	${TAR} cf - -C${FAKEDIR}/${dir} -s'|${FAKEDIR}|${PREFIX}|s' . | \
 		${TAR} xof - -C${PREFIX}/${dir}
 .endfor
+.if (${OSVERSION} < 800081 )
+	# XXX: make sure bsdtar(1) corrected symlinks
+	${FIND} ${FAKEDIR} -type l -exec \
+		${ECHO} stat -f \'${LN} -hfs \"%Y\" \"%N\"\' {} + | \
+		${SED} s'|${FAKEDIR}|${PREFIX}|g' | ${SH} | \
+		${SED} -n s'|${FAKEDIR}|${PREFIX}|p' | ${SH} -x
+.endif
 .for pcfile in ${MOZ_PKGCONFIG_FILES}
 	${INSTALL_DATA} ${FAKEDIR}/libdata/pkgconfig/${pcfile}.pc \
 		${PREFIX}/libdata/pkgconfig/${pcfile}.pc
