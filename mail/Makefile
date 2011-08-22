@@ -621,7 +621,6 @@
     SUBDIR += sastatd
     SUBDIR += scam-backscatter
     SUBDIR += sccmilter
-    SUBDIR += scmail
     SUBDIR += sendmail
     SUBDIR += sendmail-ldap
     SUBDIR += sendmail-sasl
@@ -707,7 +706,6 @@
     SUBDIR += svnmailer
     SUBDIR += swaks
     SUBDIR += sylpheed
-    SUBDIR += sylpheed3
     SUBDIR += sympa
     SUBDIR += sympa5
     SUBDIR += synonym
