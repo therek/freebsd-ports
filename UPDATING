@@ -13,7 +13,8 @@ you update your ports collection, before attempting any port upgrades.
   depends on it.
 
   If you use portmaster:
-  # portmaster -fr ruby-1.8
+  # portmaster -o lang/ruby19 lang/ruby18
+  # portmaster -R -r ruby-1.9
 
   If you use portupgrade:
   # portupgrade -fr lang/ruby18
@@ -5233,4 +5234,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1126 2011/08/22 23:19:37 stas Exp $
+$FreeBSD: ports/UPDATING,v 1.1127 2011/08/22 23:28:13 stas Exp $
