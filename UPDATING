@@ -13,7 +13,7 @@ you update your ports collection, before attempting any port upgrades.
   depends on it.
 
   If you use portmaster:
-  # portmaster -r ruby18
+  # portmaster -fr ruby18
 
   If you use portupgrade:
   # portupgrade -fr lang/ruby18
@@ -24,7 +24,7 @@ you update your ports collection, before attempting any port upgrades.
   #
   # Keep ruby 1.8 as default version.
   #
-  RUBY_VER=1.8
+  RUBY_DEFAULT_VER=1.8
 
 20110822:
   AFFECTS: users of graphics/opencv
@@ -5233,4 +5233,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1124 2011/08/22 21:14:17 mm Exp $
+$FreeBSD: ports/UPDATING,v 1.1125 2011/08/22 22:37:09 stas Exp $
