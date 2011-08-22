@@ -6,6 +6,27 @@ You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
 20110822:
+  AFFECTS: users of lang/ruby
+  AUTHOR: stas@FreeBSD.org
+
+  The default ruby version has been updated to 1.9. Please rebuild all ports that
+  depends on it.
+
+  If you use portmaster:
+  # portmaster -r ruby18
+
+  If you use portupgrade:
+  # portupgrade -fr lang/ruby18
+
+  If you wish to keep the 1.8 version as default, add the following lines
+  to your /etc/make.conf file:
+
+  #
+  # Keep ruby 1.8 as default version.
+  #
+  RUBY_VER=1.8
+
+20110822:
   AFFECTS: users of graphics/opencv
   AUTHOR: mm@FreeBSD.org
 
@@ -5212,4 +5233,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1123 2011/08/20 17:21:38 ohauer Exp $
+$FreeBSD: ports/UPDATING,v 1.1124 2011/08/22 21:14:17 mm Exp $
