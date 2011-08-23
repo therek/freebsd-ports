@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.207 2011/08/21 04:03:36 swills Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.208 2011/08/22 23:11:15 stas Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -267,11 +267,7 @@ RUBY_MODNAME?=		${PORTNAME}
 
 # Commands
 RUBY_RD2?=		${LOCALBASE}/bin/rd2
-.if ${RUBY_VER} == 1.8
-RUBY_RDOC?=		${LOCALBASE}/bin/rdoc
-.else
 RUBY_RDOC?=		${LOCALBASE}/bin/rdoc${RUBY_VER:S/.//}
-.endif
 
 # Ports
 RUBY_BASE_PORT?=	lang/ruby${RUBY_VER:S/.//}
@@ -390,8 +386,10 @@ RUBY_FLAGS+=	-d
 #
 .if defined(USE_RUBYGEMS)
 
+. if ${RUBY_VER} == 1.8
 BUILD_DEPENDS+=	${RUBYGEMBIN}:${PORTSDIR}/devel/ruby-gems
 RUN_DEPENDS+=	${RUBYGEMBIN}:${PORTSDIR}/devel/ruby-gems
+. endif
 
 PKGNAMEPREFIX?=	rubygem-
 EXTRACT_SUFX=	.gem

@@ -1,7 +1,7 @@
-@comment $FreeBSD: ports/devel/ruby-gems/pkg-plist,v 1.25 2011/04/06 07:23:00 clsung Exp $
+@comment $FreeBSD: ports/devel/ruby-gems/pkg-plist,v 1.26 2011/08/21 04:03:36 swills Exp $
 bin/gem
-bin/gem%%RUBY_SUFFIX%%
-bin/update_rubygems%%RUBY_SUFFIX%%
+bin/gem18
+bin/update_rubygems18
 lib/ruby/gems/%%RUBY_VER%%/cache/sources-0.0.2.gem
 lib/ruby/gems/%%RUBY_VER%%/gems/sources-0.0.2/lib/sources.rb
 lib/ruby/gems/%%RUBY_VER%%/specifications/sources-0.0.2.gemspec
