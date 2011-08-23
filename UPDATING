@@ -18,11 +18,15 @@ you update your ports collection, before attempting any port upgrades.
 
   If you use portupgrade:
   # portupgrade -f lang/ruby18
+  # portupgrade -f lang/ruby19 # if you have it installed
   # portupgrade -f ports-mgmt/portupgrade
   # portupgrade -x ruby-1.8.\* -fr lang/ruby18
 
+  After these steps are complete, you can pkg_delete ruby 1.8 if you
+  no longer need it.
+
   If you wish to keep the 1.8 version as default, add the following lines
-  to your /etc/make.conf file:
+  to your /etc/make.conf file, and rebuild lang/ruby18 after that.
 
   #
   # Keep ruby 1.8 as default version.
@@ -5236,4 +5240,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1128 2011/08/22 23:42:15 stas Exp $
+$FreeBSD: ports/UPDATING,v 1.1129 2011/08/23 03:45:56 stas Exp $
