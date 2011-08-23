@@ -17,7 +17,9 @@ you update your ports collection, before attempting any port upgrades.
   # portmaster -R -r ruby-1.9
 
   If you use portupgrade:
-  # portupgrade -fr lang/ruby18
+  # portupgrade -f lang/ruby18
+  # portupgrade -f ports-mgmt/portupgrade
+  # portupgrade -x ruby-1.8.\* -fr lang/ruby18
 
   If you wish to keep the 1.8 version as default, add the following lines
   to your /etc/make.conf file:
@@ -5234,4 +5236,4 @@ you update your ports collection, before attempting any port upgrades.
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1127 2011/08/22 23:28:13 stas Exp $
+$FreeBSD: ports/UPDATING,v 1.1128 2011/08/22 23:42:15 stas Exp $
