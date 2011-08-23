@@ -28,12 +28,39 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2415 2011/08/19 18:42:12 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2416 2011/08/20 00:43:48 delphij Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="3f1df2f9-cd22-11e0-9bb2-00215c6a37bb">
+    <topic>php -- crypt() returns only the salt for MD5</topic>
+    <affects>
+      <package>
+	<name>php5</name>
+	<range><lt>5.3.7_2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>PHP development team reports:</p>
+	<blockquote cite="https://bugs.php.net/bug.php?id=55439">
+	  <p>If crypt() is executed with MD5 salts, the return
+	    value conists of the salt only.  DES and BLOWFISH
+	    salts work as expected.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <url>https://bugs.php.net/bug.php?id=55439</url>
+    </references>
+    <dates>
+      <discovery>2011-08-17</discovery>
+      <entry>2011-08-23</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="057bf770-cac4-11e0-aea3-00215c6a37bb">
     <topic>php -- multiple vulnerabilities</topic>
     <affects>
