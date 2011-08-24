@@ -28,12 +28,37 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2417 2011/08/23 00:58:34 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2418 2011/08/23 17:02:34 rene Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="75e26236-ce9e-11e0-b26a-00215c6a37bb">
+    <topic>phpmyadmin -- multiple XSS vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>phpMyAdmin</name>
+	<range><lt>3.4.4</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The phpMyAdmin development team reports:</p>
+	<blockquote cite="http://www.phpmyadmin.net/home_page/security/PMASA-2011-13.php">
+	  <p>Multiple XSS in the Tracking feature.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2011-3181</cvename>
+    </references>
+    <dates>
+      <discovery>2011-08-244</discovery>
+      <entry>2011-08-24</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="3f1df2f9-cd22-11e0-9bb2-00215c6a37bb">
     <topic>php -- crypt() returns only the salt for MD5</topic>
     <affects>
