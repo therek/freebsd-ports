@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/hiawatha/files/hiawatha.in,v 1.2 2010/03/27 00:15:13 dougb Exp $
+# $FreeBSD: ports/www/hiawatha/files/hiawatha.in,v 1.3 2011/08/23 20:03:35 glarkin Exp $
 #
 
 # PROVIDE: hiawatha
@@ -19,10 +19,9 @@ rcvar=`set_rcvar`
 load_rc_config $name
 
 : ${hiawatha_enable="NO"}
-: ${hiawatha_pidfile="/var/run/hiawatha.pid"}
 
 command="%%PREFIX%%/sbin/${name}"
-pidfile=${hiawatha_pidfile}
+pidfile=${hiawatha_pidfile="/var/run/hiawatha.pid"}
 
 stop_postcmd="${name}_stop_postcmd"
 
