@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.208 2011/08/22 23:11:15 stas Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.209 2011/08/23 03:47:28 swills Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -136,7 +136,7 @@ Ruby_Include_MAINTAINER=	stas@FreeBSD.org
 # RUBY_ELISPDIR		- Installation path for emacs lisp files.
 #
 
-RUBY_DEFAULT_VER?=	1.9
+RUBY_DEFAULT_VER?=	1.8
 RAKE_VER=	0.9.2
 
 RUBY_VER?=		${RUBY_DEFAULT_VER}
@@ -171,7 +171,7 @@ RUBY?=			${LOCALBASE}/bin/${RUBY_NAME}
 # Ruby 1.8
 #
 RUBY_RELVERSION=	1.8.7
-RUBY_PORTREVISION=	1
+RUBY_PORTREVISION=	2
 RUBY_PORTEPOCH=		1
 RUBY_PATCHLEVEL=	352
 
@@ -199,7 +199,7 @@ RUBY19=			"@comment "
 # Ruby 1.9
 #
 RUBY_RELVERSION=	1.9.2
-RUBY_PORTREVISION=	0
+RUBY_PORTREVISION=	1
 RUBY_PORTEPOCH=		1
 RUBY_PATCHLEVEL=	290
 
