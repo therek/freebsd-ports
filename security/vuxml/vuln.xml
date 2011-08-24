@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2418 2011/08/23 17:02:34 rene Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2419 2011/08/24 22:20:14 delphij Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -54,7 +54,7 @@ Note:  Please add new entries to the beginning of this file.
       <cvename>CVE-2011-3181</cvename>
     </references>
     <dates>
-      <discovery>2011-08-244</discovery>
+      <discovery>2011-08-24</discovery>
       <entry>2011-08-24</entry>
     </dates>
   </vuln>
