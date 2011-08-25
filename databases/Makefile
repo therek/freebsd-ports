@@ -43,7 +43,7 @@
     SUBDIR += db47
     SUBDIR += db48
     SUBDIR += db4o-mono
-    SUBDIR += db51
+    SUBDIR += db5
     SUBDIR += dbXML
     SUBDIR += dbconnect
     SUBDIR += dbf
@@ -92,7 +92,6 @@
     SUBDIR += gambas2-gb-db-postgresql
     SUBDIR += gambas2-gb-db-sqlite2
     SUBDIR += gambas2-gb-db-sqlite3
-    SUBDIR += gauche-gdbm
     SUBDIR += gbib
     SUBDIR += gdbm
     SUBDIR += gdl2
