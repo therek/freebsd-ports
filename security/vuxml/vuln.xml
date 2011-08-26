@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2420 2011/08/24 22:43:04 bapt Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2421 2011/08/26 18:10:39 delphij Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,7 +39,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>stunnel</name>
-	<range><lt>4.42</lt></range>
+	<range><ge>4.40</ge><lt>4.42</lt></range>
       </package>
     </affects>
     <description>
