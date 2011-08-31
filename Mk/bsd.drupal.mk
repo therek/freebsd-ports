@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.drupal.mk,v 1.11 2011/08/11 13:29:30 crees Exp $
+# $FreeBSD: ports/Mk/bsd.drupal.mk,v 1.12 2011/08/30 06:40:30 bapt Exp $
 #
 # bsd.drupal.mk - Support for Drupal ports and modules.
 #
@@ -52,6 +52,7 @@ DRUPAL_MODTYPE=	themes
 DRUPAL_BASE?=   www/drupal7
 .elif ${DRUPAL_VERSION} == "6"
 DRUPAL_BASE?=   www/drupal6
+.else
 BROKEN=		Unknown DRUPAL_VERSION (${DRUPAL_VERSION})
 .endif
 
