@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid30/files/squid.in,v 1.6 2010/03/27 00:15:17 dougb Exp $
+# $FreeBSD: ports/www/squid30/files/squid.in,v 1.7 2010/05/02 10:53:14 miwi Exp $
 #
 # PROVIDE: squid
 # REQUIRE: LOGIN
@@ -89,5 +89,9 @@ required_dirs=${squid_chdir}
 # squid(8) crash.
 
 required_files=${squid_conf}
+
+# Now make sure that we invoke squid with "-f ${squid_conf}":
+
+command_args="-f ${squid_conf}"
 
 run_rc_command "$1"
