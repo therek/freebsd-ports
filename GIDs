@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.153 2011/08/14 16:46:14 crees Exp $
+# $FreeBSD: ports/GIDs,v 1.154 2011/08/23 20:00:52 crees Exp $
 # Please keep this file sorted by GID!
 operator:*:5:
 mail:*:6:postfix,clamav
@@ -218,4 +218,5 @@ gnokii:*:947:
 dnrd:*:948:
 zenoss:*:949:
 conquest:*:950:
+openerpd:*:951:
 nobody:*:65534:
