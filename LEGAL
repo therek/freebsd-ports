@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.670 2011/08/03 06:49:45 bapt Exp $
+# $FreeBSD: ports/LEGAL,v 1.671 2011/08/10 16:18:30 bapt Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -176,7 +176,6 @@ fasta3*			biology/fasta3		May not be sold or incorporated
 						into a commercial product
 festival/festlex_OALD*	audio/festlex-oald	No commercial use
 festival/OGIlexicon-*	audio/festlex-ogi	No commercial use
-festival/voice_aec_di-*	audio/festvox-aec	No commercial use
 fmsx*/*			emulators/fmsx		Unclear legal status of
 						distributed ROMs
 foiltex*		textproc/foiltex	Redistribution on a
