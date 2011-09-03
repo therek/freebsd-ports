@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2428 2011/09/03 12:49:12 flo Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2429 2011/09/03 15:43:38 mandree Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -39,7 +39,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
         <name>nss</name>
-	<range><le>3.12.11</le></range>
+	<range><lt>3.12.11</lt></range>
       </package>
       <package>
         <name>ca_root_nss</name>
