@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2579 2011/09/01 06:47:39 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2580 2011/09/01 07:03:42 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2579,7 +2579,8 @@ devel/ruby-rbtree||2011-09-01|Has expired: No Master Site
 dns/host||2011-09-01|Has expired: No more public distfiles
 emulators/linux-padjoy||2011-09-01|Has expired: No more public distfiles
 emulators/mame-extras||2011-09-01|Has expired: No more public distfiles
-emulators/snespp||2011-09-01|Has expired: BROKEN for more than 6 month
+emulators/snespp||2011-09-01|Has expired: BROKEN for more than 6 months
 emulators/xgs||2011-09-01|Has expired: No more public distfiles
 ftp/gproftpd||2011-09-01|Has expired: No more public distfiles
 ftp/muddleftpd||2011-09-01|Has expired: No more public distfiles
+comms/hcidump||2011-09-03|Has expired: No more public distfiles
