@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2429 2011/09/03 15:43:38 mandree Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2430 2011/09/03 16:18:19 mandree Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -25933,15 +25933,10 @@ Note:  Please add new entries to the beginning of this file.
     <topic>tcl/tk -- buffer overflow in ReadImage function</topic>
     <affects>
       <package>
-	<name>tcl</name>
-	<name>tcl-threads</name>
-	<range><lt>8.4.16</lt></range>
-	<range><gt>8.4.*,1</gt><lt>8.4.16,1</lt></range>
-      </package>
-      <package>
 	<name>tk</name>
 	<name>tk-threads</name>
-	<range><lt>8.4.16</lt></range>
+	<range><gt>8.2.*</gt><lt>8.2.3_11</lt></range>
+	<range><gt>8.3.*</gt><lt>8.3.5_10</lt></range>
 	<range><gt>8.4.*,2</gt><lt>8.4.16,2</lt></range>
       </package>
     </affects>
