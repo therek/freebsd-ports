@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/alias-fonts/pkg-deinstall,v 1.3 2002/04/09 09:05:22 sada Exp $
+# $FreeBSD: ports/japanese/alias-fonts/pkg-deinstall,v 1.4 2011/08/15 07:03:55 tota Exp $
 
 dir="${PKG_PREFIX}/lib/X11/fonts/local";
 to="$dir/fonts.alias";
@@ -16,9 +16,8 @@ IFS="
 while read line; do
   trimmed=${line# *}
   case $trimmed in
-    !*|"") echo $line;;
-    -alias-*) echo $line;;
-    *) ;;
+    -alias-*) ;;
+    *) echo $line;;
   esac
 done < $from > $to
 
