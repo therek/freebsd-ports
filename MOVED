@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2583 2011/09/03 09:38:42 dougb Exp $
+# $FreeBSD: ports/MOVED,v 1.2584 2011/09/03 14:56:35 crees Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2593,3 +2593,4 @@ www/p5-Catalyst-Plugin-Cache-Store-FastMmap||2011-09-03|Deprecated, not depended
 p5-HTTP-MobileAttribute||2011-09-03|Use www/p5-HTTP-MobileAgent instead
 irc/ptlink-ircd||2011-09-03|Has expired: No upstream source, no distfile and no maintainer
 irc/ptlink-services||2011-09-03|Has expired: No upstream source, no distfile and no maintainer
+www/mediawiki115||2011-09-03|unsupported upstream
