@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2431 2011/09/03 16:28:49 dinoex Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2432 2011/09/04 04:09:42 dinoex Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -3288,11 +3288,11 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>plone</name>
-	<range><ge>2.5</ge></range>
+	<range><ge>2.5</ge><lt>3</lt></range>
       </package>
       <package>
 	<name>plone3</name>
-	<range><ge>3</ge></range>
+	<range><ge>3</ge><le>3.3</le></range>
       </package>
     </affects>
     <description>
