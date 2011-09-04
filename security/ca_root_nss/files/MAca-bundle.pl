@@ -7,7 +7,7 @@
 use strict;
 use MIME::Base64;
 
-my $VERSION = '$FreeBSD$';
+my $VERSION = '$FreeBSD: ports/security/ca_root_nss/files/MAca-bundle.pl,v 1.1 2011/09/04 13:08:49 mandree Exp $';
 
 #   configuration
 print <<EOH;
@@ -18,7 +18,9 @@ print <<EOH;
 ##  Authorities (CA). These were automatically extracted from Mozilla's
 ##  root CA list (the file `certdata.txt').
 ##
-##  Extracted from nss-%%NSS_VERSION%% with MAca-bundle.pl $VERSION
+##  Extracted from nss-%%VERSION_NSS%%
+##  with $VERSION
+##
 EOH
 my $debug = 1;
 
@@ -145,7 +147,7 @@ foreach my $it (keys %trusts) {
     }
 }
 
-print "##  Untrusted certificates omitted from output: $untrusted\n\n";
+print "##  Untrusted certificates omitted from this bundle: $untrusted\n\n";
 
 my $certcount = 0;
 foreach my $it (keys %certs) {
