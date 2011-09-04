@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.137 2011/08/03 01:14:21 sunpoet Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.138 2011/09/04 17:31:01 sunpoet Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -594,7 +594,6 @@ PLIST_SUB+=		PYTHON_INCLUDEDIR=${PYTHONPREFIX_INCLUDEDIR:S;${PREFIX}/;;} \
 				PYTHON_LIBDIR=${PYTHONPREFIX_LIBDIR:S;${PREFIX}/;;} \
 				PYTHON_PLATFORM=${PYTHON_PLATFORM} \
 				PYTHON_SITELIBDIR=${PYTHONPREFIX_SITELIBDIR:S;${PREFIX}/;;} \
-				PYTHON_VER=${PYTHON_VER} \
 				PYTHON_VERSION=${PYTHON_VERSION}
 
 # Zope specific substitutions
