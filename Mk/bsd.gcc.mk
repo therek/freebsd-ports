@@ -29,7 +29,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.52 2011/07/19 21:16:39 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.53 2011/07/31 22:40:39 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -137,7 +137,7 @@ IGNORE=		Couldn't find your current GCCVERSION (OSVERSION=${OSVERSION})
 
 #
 # If the GCC package defined in USE_GCC does not exist, but a later
-# version is allowed (for example 3.4+), see if there is a later.
+# version is allowed (for example 4.2+), see if there is a later.
 # First check if the base installed version is good enough, otherwise
 # get the first available version.
 #
