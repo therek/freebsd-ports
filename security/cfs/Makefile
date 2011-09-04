@@ -7,12 +7,16 @@
 
 PORTNAME=	cfs
 PORTVERSION=	1.4.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	security
 MASTER_SITES=	http://www.crypto.com/software/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	A cryptographic file system implemented as a user-space NFS server
+
+IGNORE=		has confirmed failure on advisory locks, PR open 2/y no solution
+DEPRECATED=	Broken for two years, ports/137378, unmaintained
+EXPIRATION_DATE=2011-11-04
 
 ALL_TARGET=	cfs
 MAN1=		cattach.1 cdetach.1 cmkdir.1 cpasswd.1 cfssh.1
