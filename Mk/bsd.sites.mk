@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.544 2011/08/22 15:14:15 crees Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.545 2011/09/04 17:31:01 sunpoet Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1028,7 +1028,6 @@ MASTER_SITE_PYTHON+= \
 	http://www.cwi.nl/www.python.org/%SUBDIR%/ \
 	http://gnu.kookel.org/ftp/www.python.org/%SUBDIR%/ \
 	http://python.holywar.net/%SUBDIR%/ \
-	http://python.cdpa.nsysu.edu.tw/%SUBDIR%/ \
 	ftp://ftp.mirrorservice.org/sites/ftp.python.org/pub/www.python.org/%SUBDIR%/ \
 	http://mirrors.ccs.neu.edu/Python/pub/www.python.org/%SUBDIR%/
 .endif
