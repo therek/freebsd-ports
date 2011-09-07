@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.673 2011/09/01 07:03:42 bapt Exp $
+# $FreeBSD: ports/LEGAL,v 1.674 2011/09/07 09:30:11 bapt Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -532,7 +532,6 @@ xchada01.lzh		games/xchadance		Contains commercial character
 xds-[0-9]*		lang/xds		Redistribution is forbidden
 xds-c-*			lang/xds-c		Redistribution is forbidden
 xephem-*		astro/xephem		Personal use only
-xev*.tar.gz		games/xbat		Possible copyright infringement
 XFrisk-*.tar.gz		games/xfrisk		Possible trademark infringement
 xgobi.sh.gz		math/xgobi		Restrictive copyright (do not
 						sell for profit)
