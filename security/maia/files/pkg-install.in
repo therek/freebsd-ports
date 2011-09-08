@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/maia/files/pkg-install.in,v 1.1 2008/01/20 06:38:05 beech Exp $
+# $FreeBSD: ports/security/maia/files/pkg-install.in,v 1.2 2011/08/29 15:57:19 crees Exp $
 #
 
 USER=%%MAIAUSER%%
@@ -9,7 +9,6 @@ DIR=%%MAIADIR%%
 QUARANTINE=%%MAIAQUARANTINE%%
 
 if [ "$2" = "PRE-INSTALL" ]; then
-
     /usr/bin/install -o ${USER} -g ${GROUP} -m 750 -d ${DIR}
     echo "Created \"${DIR}\" directory."
     /usr/bin/install -o ${USER} -g ${GROUP} -m 750 -d ${DIR}/db
