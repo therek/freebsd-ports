@@ -5,6 +5,14 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20110909:
+  AFFECTS: users of net/p5-SOAP-Lite
+  AUTHOR: az@FreeBSD.org
+
+  SOAP::Transport::TCP is not a part of net/p5-SOAP-Lite 
+  distribution since version 0.714. If you need SOAP::Transport::TCP 
+  you should install net/p5-SOAP-Transport-TCP manually.
+
 20110901:
   AFFECTS: users of databases/db51
   AUTHOR: mandree@FreeBSD.org
@@ -5327,4 +5335,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1138 2011/09/01 16:42:47 mandree Exp $
+$FreeBSD: ports/UPDATING,v 1.1139 2011/09/04 16:08:46 crees Exp $
