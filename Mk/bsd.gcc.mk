@@ -29,7 +29,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.53 2011/07/31 22:40:39 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.54 2011/09/04 16:56:11 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -41,12 +41,12 @@ GCCVERSIONS=	030402 040200 040400 040500 040600 040700
 # The first field if the OSVERSION in which it appeared in the base.
 # The second field is the OSVERSION in which it disappeared from the base.
 # The third field is the version as USE_GCC would use.
-GCCVERSION_030402=	502126 700042 3.4
-GCCVERSION_040200=	700042 999999 4.2
-GCCVERSION_040400=	999999 999999 4.4
-GCCVERSION_040500=	999999 999999 4.5
-GCCVERSION_040600=	999999 999999 4.6
-GCCVERSION_040700=	999999 999999 4.7
+GCCVERSION_030402=	502126  700042 3.4
+GCCVERSION_040200=	700042 9999999 4.2
+GCCVERSION_040400=	     0       0 4.4
+GCCVERSION_040500=	     0       0 4.5
+GCCVERSION_040600=	     0       0 4.6
+GCCVERSION_040700=	     0       0 4.7
 
 #
 # No configurable parts below this.
