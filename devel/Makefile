@@ -807,6 +807,7 @@
     SUBDIR += libevent
     SUBDIR += libevent2
     SUBDIR += libexecinfo
+    SUBDIR += libexplain
     SUBDIR += libffi
     SUBDIR += libfirm
     SUBDIR += libfreefare
@@ -3640,6 +3641,7 @@
     SUBDIR += z80ex
     SUBDIR += zeroinstall-injector
     SUBDIR += zmq
+    SUBDIR += zmq-devel
     SUBDIR += ztcl
     SUBDIR += zthread
     SUBDIR += zziplib
