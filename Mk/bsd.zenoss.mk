@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.zenoss.mk,v 1.1 2011/09/01 16:08:01 crees Exp $
 #
 # bsd.zenoss.mk - Support for Zenoss ports and Zenpacks.
 #
@@ -15,7 +15,6 @@ BUILD_DEPENDS+=	zenoss>=3.1.0:${PORTSDIR}/net-mgmt/zenoss
 RUN_DEPENDS+=	zenoss>=3.1.0:${PORTSDIR}/net-mgmt/zenoss
 
 FETCH_ARGS?=	-o - > ${DISTDIR}/${DISTFILES}
-USE_ZIP?=		yes
 
 PKGNAMEPREFIX:=	zenpack-${ZPACKGROUP}-
 
