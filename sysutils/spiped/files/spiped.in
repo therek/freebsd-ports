@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/spiped/files/spiped.in,v 1.1 2011/08/21 11:32:16 crees Exp $
 #
 # PROVIDE: spiped
 # REQUIRE: LOGIN
@@ -50,7 +50,7 @@ spiped_start()
 			echo Invalid value for spiped_pipe_${P}_mode: $MODE
 			continue
 		esac
-		${command} $MODEFLAG -s $SOURCE -t $TARGET -k $KEY -p $PIDFILE
+		${command} -D $MODEFLAG -s $SOURCE -t $TARGET -k $KEY -p $PIDFILE
 	done
 }
 
