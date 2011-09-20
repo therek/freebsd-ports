@@ -53,6 +53,7 @@
     SUBDIR += aws
     SUBDIR += awstats
     SUBDIR += axis
+    SUBDIR += axis2
     SUBDIR += b2evolution
     SUBDIR += bacula-web
     SUBDIR += bannerfilter
@@ -74,6 +75,7 @@
     SUBDIR += cadaver
     SUBDIR += cakephp11
     SUBDIR += cakephp12
+    SUBDIR += cakephp13
     SUBDIR += calamaris
     SUBDIR += castget
     SUBDIR += caudium14
