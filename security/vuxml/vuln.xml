@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2449 2011/09/21 11:35:28 zi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2450 2011/09/22 20:47:10 nox Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -7217,7 +7217,8 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>horde-imp</name>
-	<range><lt>4.3.8,1</lt></range>
+	<range><gt>4.2,1</gt><lt>4.3.8,1</lt></range>
+	<range><lt>4.3.8</lt></range>
       </package>
     </affects>
     <description>
@@ -7238,6 +7239,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2010-09-28</discovery>
       <entry>2010-09-28</entry>
+      <modified>2011-09-23</modified>
     </dates>
   </vuln>
 
