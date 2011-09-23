@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/py-zope.proxy/pkg-plist,v 1.3 2010/10/20 13:54:13 jadawin Exp $
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/__init__.py
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/__init__.pyc
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/zope/proxy/decorator.py
