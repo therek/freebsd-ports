@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.database.mk,v 1.63 2011/07/07 01:15:22 mandree Exp $
+# $FreeBSD: ports/Mk/bsd.database.mk,v 1.64 2011/08/25 23:17:17 mandree Exp $
 #
 
 .if defined(_POSTMKINCLUDED) && !defined(Database_Post_Include)
@@ -225,7 +225,6 @@ IGNORE=		cannot install: unknown PostgreSQL version: ${PGSQL_VER}
 .endif # Check for correct version
 CPPFLAGS+=		-I${LOCALBASE}/include
 LDFLAGS+=		-L${LOCALBASE}/lib
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}" LDFLAGS="${LDFLAGS}"
 .endif # USE_PGSQL
 
 

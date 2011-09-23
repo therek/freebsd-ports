@@ -18,8 +18,6 @@ COMMENT?=		A free SMB and CIFS client and server for UNIX
 
 CONFLICTS?=
 
-BROKEN=		does not configure
-
 SAMBA_PORTNAME=		samba4
 SAMBA_VERSION=		4.0.0.a11
 SAMBA_DISTNAME=		${SAMBA_PORTNAME:S|4$||}-${SAMBA_VERSION:S|.p|pre|:S|.r|rc|:S|.t|tp|:S|.a|alpha|}
@@ -45,7 +43,6 @@ USE_AUTOTOOLS=		autoconf autoheader
 # Flags
 CPPFLAGS+=		-I${LOCALBASE}/include
 LDFLAGS+=		-L${LOCALBASE}/lib
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}" LDFLAGS="${LDFLAGS}"
 # Directories
 VARDIR=			/var
 SAMBA_LOGDIR=		${VARDIR}/log/${PORTNAME}
