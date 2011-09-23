@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.licenses.db.mk,v 1.13 2011/03/25 20:41:18 pav Exp $
+# $FreeBSD: ports/Mk/bsd.licenses.db.mk,v 1.14 2011/03/25 20:52:48 pav Exp $
 
 Licenses_db_Include_MAINTAINER=         portmgr@FreeBSD.org
 
@@ -38,7 +38,7 @@ Licenses_db_Include_MAINTAINER=         portmgr@FreeBSD.org
 
 _LICENSE_LIST= 	ART10 ART20 ASL BSD BSL CDDL EPL GFDL GPLv1 GPLv2 GPLv3 ISCL \
 		LGPL20 LGPL21 LGPL3 LPPL10 LPPL11 LPPL12 LPPL13 LPPL13a \
-		LPPL13b LPPL13c MIT MPL OWL PHP202 PHP30 PHP301 PSFL
+		LPPL13b LPPL13c MIT MPL OWL PHP202 PHP30 PHP301 PSFL ZPL21
 
 # List of groups (only names must be present)
 
@@ -156,6 +156,9 @@ _LICENSE_GROUPS_PHP301=	FSF OSI
 
 _LICENSE_NAME_PSFL=	Python Software Foundation License
 _LICENSE_GROUPS_PSFL=	FSF GPL OSI
+
+_LICENSE_NAME_ZPL21=	Zope Public License version 2.1
+_LICENSE_GROUPS_ZPL21=	GPL OSI
 
 # Set default permissions if not defined
 
