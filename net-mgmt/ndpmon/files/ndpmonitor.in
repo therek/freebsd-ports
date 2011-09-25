@@ -1,9 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/ndpmon/files/ndpmonitor.in,v 1.4 2011/08/27 18:30:50 ohauer Exp $
+# $FreeBSD: ports/net-mgmt/ndpmon/files/ndpmonitor.in,v 1.5 2011/09/25 16:47:03 zi Exp $
 #
 # PROVIDE: ndpmonitor
-# REQUIRE: DAEMON NETWORKING
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
 #
 
 . /etc/rc.subr
