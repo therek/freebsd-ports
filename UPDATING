@@ -5,6 +5,14 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20110925:
+  AFFECTS: users of net/openldap*
+  AUTHOR: ume@FreeBSD.org
+
+  The security/cyrus-sasl2 was updated to 2.1.25.  If the SASL option
+  is enabled (disabled by default), net/openldap* must be recompiled
+  after upgarding cyrus-sasl2.
+
 20110921:
   AFFECTS: users of devel/maven2 and devel/maven3
   AUTHOR: hq@FreeBSD.org
@@ -5379,4 +5387,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1143 2011/09/17 19:59:21 lme Exp $
+$FreeBSD: ports/UPDATING,v 1.1144 2011/09/21 07:05:46 hq Exp $
