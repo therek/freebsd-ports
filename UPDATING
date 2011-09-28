@@ -6,6 +6,19 @@ You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
 20110928:
+  AFFECTS: users of 10-current
+  AUTHOR: eadler@FreeBSD.org
+
+  There are known issues installing ports on FreeBSD 10+ due to
+  bogus assumptions by various build scripts. This will not be fixed
+  until 9-RELEASE is released.
+
+  There are two workarounds:
+
+  1) Set UNAME_r=9.9-CURRENT in your environment 
+  2) Set REVISION="9.9" in  ${SRCDIR}/sys/conf/newvers.sh
+
+20110928:
   AFFECTS: users of www/nginx-devel
   AUTHOR: osa@FreeBSD.ORG
 
@@ -5402,4 +5415,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1146 2011/09/25 15:05:17 lwhsu Exp $
+$FreeBSD: ports/UPDATING,v 1.1147 2011/09/28 17:27:10 osa Exp $
