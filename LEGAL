@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.675 2011/09/07 10:10:01 bapt Exp $
+# $FreeBSD: ports/LEGAL,v 1.676 2011/09/30 09:12:30 dougb Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -601,3 +601,5 @@ libaacplus-*		audio/libaacplus	Unclear legal status
 dmd-*			lang/dmd		No redistribution of non
 						validated binaries
 madfufw-*		audio/madfufw		No redistribution of firmware files
+dgen-sdl-*		emulators/dgen-sdl	No commercial use, modifications
+						to MZ80 not distributable
