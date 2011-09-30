@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2451 2011/09/23 20:02:19 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2452 2011/09/28 15:58:02 beat Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -3618,15 +3618,15 @@ Note:  Please add new entries to the beginning of this file.
     <topic>tomcat -- Cross-site scripting vulnerability</topic>
     <affects>
       <package>
-	<name>tomcat55</name>
+	<name>tomcat</name>
 	<range><gt>5.5.0</gt><lt>5.5.32</lt></range>
       </package>
       <package>
-      	<name>tomcat6</name>
+      	<name>tomcat</name>
 	<range><gt>6.0.0</gt><lt>6.0.30</lt></range>
       </package>
       <package>
-        <name>tomcat7</name>
+        <name>tomcat</name>
         <range><gt>7.0.0</gt><lt>7.0.6</lt></range>
       </package>
     </affects>
@@ -3650,6 +3650,7 @@ Note:  Please add new entries to the beginning of this file.
     <dates>
       <discovery>2010-11-12</discovery>
       <entry>2011-02-15</entry>
+      <modified>2011-09-30</modified>
     </dates>
   </vuln>
 
