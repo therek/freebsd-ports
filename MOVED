@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2611 2011/10/01 09:49:16 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2612 2011/10/03 04:51:34 stephen Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2718,4 +2718,3 @@ www/zope-plonelanguagetool||2011-09-30|Depends on www/plone, which is FORBIDDEN
 www/zope-simpleblog||2011-09-30|Depends on www/plone, which is FORBIDDEN
 dns/nsd2||2011-09-30|EOL since 2007, unsupported. Use dns/nsd instead.
 audio/orpheus|audio/cmus|2011-10-01|Has expired: Contains problem with autotools, security CVE-2005-3863. Use audio/cmus instead
-math/qhull|math/qhull5|2011-10-02|Preserve legacy API.
