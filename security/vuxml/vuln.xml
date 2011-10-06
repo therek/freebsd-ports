@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2454 2011/10/04 18:24:47 rene Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2455 2011/10/05 20:44:30 delphij Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -16583,7 +16583,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
         <name>pyblosxom</name>
-        <range><ge>0</ge></range>
+        <range><lt>1.5.r3</lt></range>
       </package>
     </affects>
     <description>
