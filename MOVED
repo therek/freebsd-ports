@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2618 2011/10/05 21:47:48 rakuco Exp $
+# $FreeBSD: ports/MOVED,v 1.2619 2011/10/05 23:19:27 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2708,7 +2708,6 @@ www/p5-RTx-RightsMatrix||2011-09-30|Only works with www/rt36, which is FORBIDDEN
 www/p5-RTx-Shredder||2011-09-30|Only works with www/rt36, which is FORBIDDEN
 www/p5-RTx-Statistics||2011-09-30|Only works with www/rt36, which is FORBIDDEN
 www/plone||2011-09-30|Vulnerable since 2011-02-10
-www/pyblosxom||2011-09-30|Vulnerable since 2009-02-11
 www/rt36||2011-09-30|Vulnerable since 2009-12-09
 www/zope-archetypes||2011-09-30|Depends on www/plone, which is FORBIDDEN
 www/zope-calendaring||2011-09-30|Depends on www/plone, which is FORBIDDEN
