@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2455 2011/10/05 20:44:30 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2456 2011/10/06 00:25:57 jlaffaye Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -13264,7 +13264,7 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
 	<name>gnutls-devel</name>
-	<range><gt>0</gt></range>
+	<range><lt>2.9.0</lt></range>
       </package>
     </affects>
     <description>
