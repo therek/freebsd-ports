@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/rt40/pkg-deinstall,v 1.1 2008/12/27 03:38:24 pgollucci Exp $
 #
 
 if [ "$2" != "POST-DEINSTALL" ]; then
