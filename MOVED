@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2619 2011/10/05 23:19:27 bapt Exp $
+# $FreeBSD: ports/MOVED,v 1.2620 2011/10/06 00:25:01 jlaffaye Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2723,3 +2723,4 @@ security/cfs||2011-10-04|Has expired: Locks don't work, ports/137378, unmaintain
 devel/p5-Scalar-Util-Clone||2011-10-05|Disappear from CPAN
 print/lyx14||2011-10-05|Has expired: last release in 2007, use print/lyx16 or print/lyx instead
 multimedia/enjoympeg||2011-10-05|Has expired: Look like an abandonware, no more public distfiles
+devel/py-zopeevent|devel/py-zope.event|2011-10-08|Removed: please use devel/py-zope.event instead
