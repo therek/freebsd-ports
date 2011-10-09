@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2622 2011/10/09 02:47:35 dougb Exp $
+# $FreeBSD: ports/MOVED,v 1.2623 2011/10/09 04:23:18 dougb Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2770,3 +2770,4 @@ security/execwrap||2011-10-08|No more public distfiles
 audio/p5-MusicBrainz-TRM||2011-10-08|Disappeared from CPAN
 mail/p5-Mail-QuoteWrap||2011-10-08|Disappeared from CPAN
 www/p5-Catalyst-Plugin-FormCanary||2011-10-08|Disappeared from CPAN
+security/snort_inline||2011-10-09|Does not build properly, no longer supported upstream
