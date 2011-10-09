@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2621 2011/10/08 01:57:40 wen Exp $
+# $FreeBSD: ports/MOVED,v 1.2622 2011/10/09 02:47:35 dougb Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2767,3 +2767,6 @@ science/pyvox||2011-10-08|No more public distfiles
 security/p5-Email-Obfuscate||2011-10-08|No more public distfiles
 security/libparanoia||2011-10-08|No more public distfiles
 security/execwrap||2011-10-08|No more public distfiles
+audio/p5-MusicBrainz-TRM||2011-10-08|Disappeared from CPAN
+mail/p5-Mail-QuoteWrap||2011-10-08|Disappeared from CPAN
+www/p5-Catalyst-Plugin-FormCanary||2011-10-08|Disappeared from CPAN
