@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/syslog-ng3/files/syslog-ng.sh.in,v 1.6 2010/03/27 00:15:06 dougb Exp $
+# $FreeBSD$
 #
 
 # PROVIDE: syslogd
