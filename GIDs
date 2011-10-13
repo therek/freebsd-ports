@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.155 2011/09/01 17:50:06 beech Exp $
+# $FreeBSD: ports/GIDs,v 1.156 2011/09/28 09:48:43 bapt Exp $
 # Please keep this file sorted by GID!
 operator:*:5:
 mail:*:6:postfix,clamav
@@ -220,4 +220,5 @@ dnrd:*:948:
 zenoss:*:949:
 conquest:*:950:
 openerpd:*:951:
+bitten-slave:*:952:
 nobody:*:65534:

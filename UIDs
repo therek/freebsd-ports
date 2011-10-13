@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.175 2011/09/04 16:08:46 crees Exp $
+# $FreeBSD: ports/UIDs,v 1.176 2011/09/28 09:48:43 bapt Exp $
 # Please keep this file sorted by UID!
 operator:*:2:5::0:0:System &:/:/usr/sbin/nologin
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
@@ -223,4 +223,5 @@ sybase:*:946:946::0:0:& user:/usr/local/sybase-ase:/usr/sbin/nologin
 dnrd:*:948:948::0:0:& user:/nonexistent:/usr/sbin/nologin
 zenoss:*:949:949::0:0:& user:/usr/local/zenoss:/bin/sh
 openerpd:*:951:951::0:0:Openerpd user:/nonexistent:/sbin/nologin
+bitten-slave:*:952:952:daemon:0:0:Bitten slave user:/var/lib/bitten-slave:/sbin/nologin
 nobody:*:65534:65534::0:0:Unprivileged user:/nonexistent:/usr/sbin/nologin
