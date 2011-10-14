@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2630 2011/10/14 22:30:34 dougb Exp $
+# $FreeBSD: ports/MOVED,v 1.2631 2011/10/14 23:00:43 dougb Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2813,3 +2813,5 @@ www/serendipity-devel||2011-10-14|Vulnerable since 2008-04-25
 www/ziproxy||2011-10-14|Vulnerable since 2010-06-15
 www/asterisk-gui||2011-10-14|Depends on net/asterisk14, which is FORBIDDEN
 x11-toolkits/linux-pango||2011-10-14|Vulnerable since 2009-05-13
+databases/dbmetrix||2011-10-14|Depends on databases/mysql323-client, which is FORBIDDEN
+databases/xmysqladmin||2011-10-14|Depends on databases/mysql323-client, which is FORBIDDEN
