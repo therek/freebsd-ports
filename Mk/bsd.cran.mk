@@ -1,13 +1,13 @@
 # Date created:		2009-01-25
 # Whom:			Wen Heping <wenheping@gmail.com>
 #
-# $FreeBSD: ports/Mk/bsd.cran.mk,v 1.7 2011/05/08 05:06:25 bf Exp $
+# $FreeBSD: ports/Mk/bsd.cran.mk,v 1.8 2011/09/29 06:58:39 wen Exp $
 #
 
 CRAN_Include_MAINTAINER=	wen@FreeBSD.org
 
 .if defined(USE_R_MOD)
-MASTER_CRAN_SITES+=	http://ftp.ctex.org/mirrors/CRAN/ \
+MASTER_CRAN_SITES+=	http://ftp.ctex.org/mirrors/CRAN/src/contrib/ \
 			http://cran.rakanu.com/src/contrib/ \
 			http://cran.ms.unimelb.edu.au/src/contrib/ \
 			http://mirror.its.dal.ca/cran/src/contrib/ \
