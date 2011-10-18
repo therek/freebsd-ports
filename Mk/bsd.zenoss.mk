@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.zenoss.mk,v 1.1 2011/09/01 16:08:01 crees Exp $
+# $FreeBSD: ports/Mk/bsd.zenoss.mk,v 1.2 2011/09/16 18:44:08 crees Exp $
 #
 # bsd.zenoss.mk - Support for Zenoss ports and Zenpacks.
 #
@@ -45,7 +45,8 @@ PYSETUP=		./setup.py
 MAKE_ENV+=		ZENHOME=${ZENHOME} \
 				INSTANCE_HOME=${ZENHOME} \
 				PYTHONPATH=${ZENHOME}/lib/python \
-				PATH=${ZENHOME}/bin:${PATH}
+				PATH=${ZENHOME}/bin:${PATH} \
+				PYTHONDONTWRITEBYTECODE=yes
 
 .if !defined(UID)
 UID!=		/usr/bin/id -u
