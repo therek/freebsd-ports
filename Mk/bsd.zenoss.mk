@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.zenoss.mk,v 1.2 2011/09/16 18:44:08 crees Exp $
+# $FreeBSD: ports/Mk/bsd.zenoss.mk,v 1.3 2011/10/18 18:58:48 crees Exp $
 #
 # bsd.zenoss.mk - Support for Zenoss ports and Zenpacks.
 #
@@ -22,6 +22,7 @@ PKGNAMEPREFIX:=	zenpack-${ZPACKGROUP}-
 IGNORE=			will not work with undefined ZPACKGROUP (ex: core,community,etc)
 .endif
 ZENHOME=		${LOCALBASE}/zenoss
+ZENHOME_REL=		${ZENHOME:S,${LOCALBASE}/,,}
 ZPACKHOME=		${LOCALBASE}/zenoss/ZenPack
 ZPACKPREFIX?=	ZenPacks.zenoss.
 ZPACK?=	${ZPACKPREFIX}${PORTNAME}-${PORTVERSION}-${PYTHON_VERSION:S/thon//}.egg
