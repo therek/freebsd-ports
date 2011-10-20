@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2639 2011/10/19 16:00:42 beat Exp $
+# $FreeBSD: ports/MOVED,v 1.2640 2011/10/19 17:34:23 dinoex Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2824,3 +2824,4 @@ deskutils/lightning-thunderbird|mail/thunderbird|2011-10-19|Superseded by LIGHTN
 mail/enigmail-seamonkey2|mail/enigmail-seamonkey|2011-10-19|Depends on outdated and vulnerable SeaMonkey 2.0
 www/seamonkey2-i18n|www/seamonkey-i18n|2011-10-19|Depends on outdated and vulnerable SeaMonkey 2.0
 www/seamonkey2|www/seamonkey|2011-10-19|Upstream support dropped and multiple vulnerabilities
+security/py-arm||2011-10-20|Removed
