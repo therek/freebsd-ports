@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2642 2011/10/20 21:06:10 cs Exp $
+# $FreeBSD: ports/MOVED,v 1.2643 2011/10/22 14:56:46 crees Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2826,3 +2826,4 @@ www/seamonkey2-i18n|www/seamonkey-i18n|2011-10-19|Depends on outdated and vulner
 www/seamonkey2|www/seamonkey|2011-10-19|Upstream support dropped and multiple vulnerabilities
 security/py-arm||2011-10-20|Renamed to security/arm
 devel/boost-pyste||2011-10-22|Has expired: Still requires GCC 3.4 (strictly) and gccxml which is deprecated (and has been broken for a while)
+devel/gccxml||2011-10-22|Has expired: Unmaintained upstream, still requires GCC 3.4 (strictly), just used by boost-pyste which is of archeological interest only itself
