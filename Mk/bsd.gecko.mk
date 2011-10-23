@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.42 2011/09/28 03:14:22 beat Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.43 2011/10/19 16:00:43 beat Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -659,11 +659,12 @@ MOZ_MK_OPTIONS+=	XP_UNIX=1		\
 			PERL=${PERL}
 
 .if defined(WITH_OPTIMIZED_CFLAGS)
+MOZ_OPTIONS+=	--enable-optimize=${WITH_OPTIMIZE}
 CFLAGS:=	${CFLAGS} -O2 -fno-strict-aliasing ${EXTRA_CFLAGS}
 WITH_OPTIMIZE?=	-O2
 .else
+MOZ_OPTIONS+=	--disable-optimize
 CFLAGS:=	${CFLAGS} ${EXTRA_CFLAGS}
-WITH_OPTIMIZE?=
 .endif
 
 .if defined(WITH_SMB)
@@ -683,8 +684,7 @@ MOZ_OPTIONS+=	--enable-strip --enable-install-strip
 MOZ_OPTIONS+=	--enable-debug
 WITH_LOGGING=	yes
 .else
-MOZ_OPTIONS+=	--disable-debug				\
-		--enable-optimize=${WITH_OPTIMIZE}
+MOZ_OPTIONS+=	--disable-debug
 .endif
 
 .if defined(WITH_JAVA) && defined(_WITH_JAVA)
