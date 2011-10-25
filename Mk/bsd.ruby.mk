@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.211 2011/09/13 01:43:10 swills Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.212 2011/09/13 08:03:32 stas Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -133,7 +133,6 @@ Ruby_Include_MAINTAINER=	stas@FreeBSD.org
 #
 
 RUBY_DEFAULT_VER?=	1.8
-RAKE_VER=	0.9.2
 
 RUBY_VER?=		${RUBY_DEFAULT_VER}
 
