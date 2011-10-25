@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2646 2011/10/23 14:27:40 rene Exp $
+# $FreeBSD: ports/MOVED,v 1.2647 2011/10/24 18:21:36 lme Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2830,3 +2830,4 @@ devel/gccxml||2011-10-22|Has expired: Unmaintained upstream, still requires GCC 
 java/java-tutorial||2011-10-23|Has expired: disappeared from vendor a long time ago
 lang/smarteiffel||2011-10-23|Has expired: Dead upstream, broken on amd64 with gcc>4
 sysutils/syslog-ng1||2011-10-24|Has expired: Suggested by syslog-ng upline, no longer supported
+www/tomcat41||2011-10-24|No more upstream support
