@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2647 2011/10/24 18:21:36 lme Exp $
+# $FreeBSD: ports/MOVED,v 1.2648 2011/10/25 05:38:11 dougb Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2831,3 +2831,4 @@ java/java-tutorial||2011-10-23|Has expired: disappeared from vendor a long time 
 lang/smarteiffel||2011-10-23|Has expired: Dead upstream, broken on amd64 with gcc>4
 sysutils/syslog-ng1||2011-10-24|Has expired: Suggested by syslog-ng upline, no longer supported
 www/tomcat41||2011-10-24|No more upstream support
+graphics/gnash-devel||2011-10-24|Outdated, use graphics/gnash instead
