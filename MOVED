@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2649 2011/10/25 05:46:50 dougb Exp $
+# $FreeBSD: ports/MOVED,v 1.2650 2011/10/25 09:25:27 acm Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2833,3 +2833,4 @@ sysutils/syslog-ng1||2011-10-24|Has expired: Suggested by syslog-ng upline, no l
 www/tomcat41||2011-10-24|No more upstream support
 graphics/gnash-devel||2011-10-24|Outdated, use graphics/gnash instead
 net-p2p/transmisson-remote-gui||2011-10-25|Renamed to net-p2p/transmission-remote-gui
+x11-wm/fvwm2-devel||2011-10-25|Has expired: No longer supported by fvwm.org
