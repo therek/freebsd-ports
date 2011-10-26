@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.548 2011/09/17 17:48:02 crees Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.549 2011/10/03 12:51:00 ehaupt Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -902,7 +902,6 @@ MASTER_SITE_OSSP+= \
 .if !defined(IGNORE_MASTER_SITE_PACKETSTORM)
 MASTER_SITE_PACKETSTORM+= \
 	http://dl.packetstormsecurity.net/%SUBDIR%/ \
-	http://packetstorm.austin2600.net/%SUBDIR%/ \
 	http://packetstorm.codar.com.br/%SUBDIR%/ \
 	http://packetstorm.crazydog.pt/%SUBDIR%/ \
 	http://packetstorm.igor.onlinedirect.bg/%SUBDIR%/ \
