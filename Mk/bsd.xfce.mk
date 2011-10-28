@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.xfce.mk,v 1.10 2011/10/23 19:28:31 rene Exp $
+# $FreeBSD: ports/Mk/bsd.xfce.mk,v 1.11 2011/10/28 15:10:25 miwi Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Xfce_Pre_Include)
@@ -37,8 +37,8 @@ libutil_RUN_DEPENDS=		libxfce4util>=4.8.2:${PORTSDIR}/x11/libxfce4util
 panel_BUILD_DEPENDS=		xfce4-panel>=4.8.6:${PORTSDIR}/x11-wm/xfce4-panel
 panel_RUN_DEPENDS=		xfce4-panel>=4.8.6:${PORTSDIR}/x11-wm/xfce4-panel
 
-thunar_BUILD_DEPENDS=		Thunar>=1.2.2:${PORTSDIR}/x11-fm/thunar
-thunar_RUN_DEPENDS=		Thunar>=1.2.2:${PORTSDIR}/x11-fm/thunar
+thunar_BUILD_DEPENDS=		Thunar>=1.2.3:${PORTSDIR}/x11-fm/thunar
+thunar_RUN_DEPENDS=		Thunar>=1.2.3:${PORTSDIR}/x11-fm/thunar
 
 thunarvfs_BUILD_DEPENDS=	thunar-vfs>=1.2.0:${PORTSDIR}/x11-fm/thunar-vfs
 thunarvfs_RUN_DEPENDS=		thunar-vfs>=1.2.0:${PORTSDIR}/x11-fm/thunar-vfs
