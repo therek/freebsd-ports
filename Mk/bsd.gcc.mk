@@ -29,7 +29,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.59 2011/10/30 01:34:38 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.60 2011/10/30 15:51:09 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -160,12 +160,13 @@ _GCC_MIN2:=	true
 _GCC_FOUND:=	${_GCCVERSION_${v}_V}
 .  endif
 . endfor
-.endif
-.if defined(_GCC_FOUND)
+
+. if defined(_GCC_FOUND)
 _USE_GCC:=	${_GCC_FOUND}
-.elif ${_USE_GCC} < ${GCC_DEFAULT_VERSION}
+. elif ${_USE_GCC} < ${GCC_DEFAULT_VERSION}
 _USE_GCC:=	${GCC_DEFAULT_VERSION}
-.endif
+. endif
+.endif # defined(_GCC_ORLATER)
 
 .endif # defined(USE_GCC)
 
