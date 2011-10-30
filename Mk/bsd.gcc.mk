@@ -29,7 +29,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.57 2011/10/08 07:37:53 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.58 2011/10/08 08:17:16 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -47,6 +47,9 @@ GCCVERSION_040400=	     0       0 4.4
 GCCVERSION_040500=	     0       0 4.5
 GCCVERSION_040600=	     0       0 4.6
 GCCVERSION_040700=	     0       0 4.7
+
+GCC_DEFAULT_VERSION=	4.6
+GCC_DEFAULT_V=	${GCC_DEFAULT_VERSION:S/.//}
 
 #
 # No configurable parts below this.
@@ -73,9 +76,9 @@ _GCCVERSION_${v}_V=	${j}
 
 # The default case, with a current lang/gcc port.
 . if ${USE_FORTRAN} == yes
-_USE_GCC:=	4.6
-FC:=	gfortran46
-F77:=	gfortran46
+_USE_GCC:=	${GCC_DEFAULT_VERSION}
+FC:=	gfortran${GCC_DEFAULT_V}
+F77:=	gfortran${GCC_DEFAULT_V}
 
 # Intel Fortran compiler from lang/ifc.
 . elif ${USE_FORTRAN} == ifort
@@ -160,7 +163,9 @@ _GCC_FOUND:=	${_GCCVERSION_${v}_V}
 . endfor
 .endif
 .if defined(_GCC_FOUND)
-_USE_GCC:=${_GCC_FOUND}
+_USE_GCC:=	${_GCC_FOUND}
+.elif ${_USE_GCC} < ${GCC_DEFAULT_VERSION}
+_USE_GCC:=	${GCC_DEFAULT_VERSION}
 .endif
 
 .endif # defined(USE_GCC)
