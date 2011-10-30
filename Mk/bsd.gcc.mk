@@ -14,7 +14,7 @@
 #
 # Examples:
 #   USE_GCC=	4.2+		# port requires GCC 4.2 or later.
-#   USE_GCC=	4.5			# port requires GCC 4.5.
+#   USE_GCC=	4.7			# port requires GCC 4.7.
 #
 # If your port needs a Fortran compiler, please specify that with the
 # USE_FORTRAN= knob.  Here is the list of options for that knob:
@@ -29,7 +29,7 @@
 # If you are wondering what your port exactly does, use "make test-gcc"
 # to see some debugging.
 #
-# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.58 2011/10/08 08:17:16 gerald Exp $
+# $FreeBSD: ports/Mk/bsd.gcc.mk,v 1.59 2011/10/30 01:34:38 gerald Exp $
 #
 
 GCC_Include_MAINTAINER=		gerald@FreeBSD.org
@@ -51,8 +51,7 @@ GCCVERSION_040700=	     0       0 4.7
 GCC_DEFAULT_VERSION=	4.6
 GCC_DEFAULT_V=	${GCC_DEFAULT_VERSION:S/.//}
 
-#
-# No configurable parts below this.
+# No configurable parts below this. ####################################
 #
 
 # Extract the fields from GCCVERSION_...
