@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2654 2011/10/28 01:41:58 swills Exp $
+# $FreeBSD: ports/MOVED,v 1.2655 2011/10/29 16:14:11 crees Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2841,3 +2841,4 @@ devel/py-reverse||2011-10-27|Has expired: Now part of pylint
 devel/py-vmaps||2011-10-27|Has expired: Author recommends using math/py-numpy instead
 devel/rubygem-rack-protection||2011-10-28|Removed
 graphics/tumbler|deskutils/xfce4-tumbler|2011-10-29|Duplicate
+graphics/poppler-gtk|graphics/poppler-glib|2011-10-31|Move to match library name
