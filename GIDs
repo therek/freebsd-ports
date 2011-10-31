@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.158 2011/10/17 00:03:05 avilla Exp $
+# $FreeBSD: ports/GIDs,v 1.159 2011/10/22 14:39:04 thierry Exp $
 # Please keep this file sorted by GID!
 operator:*:5:
 mail:*:6:postfix,clamav
@@ -140,6 +140,7 @@ ldap:*:389:
 tiarra:*:398:
 uhub:*:411:
 drweb:*:426:
+quasselcore:*:442:
 callweaver:*:444:
 courier:*:465:
 _bbstored:*:505:

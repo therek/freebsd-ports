@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.179 2011/10/22 14:39:04 thierry Exp $
+# $FreeBSD: ports/UIDs,v 1.180 2011/10/28 21:37:10 crees Exp $
 # Please keep this file sorted by UID!
 operator:*:2:5::0:0:System &:/:/usr/sbin/nologin
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
@@ -147,6 +147,7 @@ ldap:*:389:389::0:0:OpenLDAP Server:/nonexistent:/usr/sbin/nologin
 tiarra:*:398:398::0:0:Tiarra IRC Proxy:/nonexistent:/usr/sbin/nologin
 uhub:*:411:411::0:0:uHub ADC Daemon:/nonexistent:/usr/sbin/nologin
 drweb:*:426:426::0:0:Dr.Web Mail Scanner:/nonexistent:/usr/sbin/nologin
+quasselcore:*:442:442::0:0:Quassel IRC User:/nonexistent:/usr/sbin/nologin
 callweaver:*:444:444::0:0:Callweaver account:/var/lib/callweaver:/usr/sbin/nologin
 courier:*:465:465::0:0:Courier Mail Server:/nonexistent:/usr/sbin/nologin
 _bbstored:*:505:505::0:0:Box Backup Store Daemon:/nonexistent:/usr/sbin/nologin
