@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.680 2011/10/14 22:30:34 dougb Exp $
+# $FreeBSD: ports/LEGAL,v 1.681 2011/10/23 14:20:33 rene Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -347,8 +347,6 @@ msql-*			databases/msql		Not free for commercial
 MT-*			www/MT			No redistribution
 mypaedia-*		japanese/mypaedia-fpw	The original dictionary is not
 						free
-mysqlman.tar.gz		databases/mysqlman	Not redistributable, license
-						agreement required
 ncftpd-*		ftp/ncftpd		30 day evaluation license
 NeroDigitalAudio.zip	audio/linux-neroaaccodec Redistribution forbidden
 NetComponents-*		java/netcomponents	No redistribution except as
