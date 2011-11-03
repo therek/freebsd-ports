@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2478 2011/11/01 17:44:15 kwm Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2479 2011/11/01 18:00:56 bapt Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -38,7 +38,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>freetype -- Some type 1 fonts handling vulnerabilities </topic>
     <affects>
       <package>
-	<name>freetype</name>
+	<name>freetype2</name>
 	<range><lt>2.4.7</lt></range>
       </package>
     </affects>
@@ -46,7 +46,7 @@ Note:  Please add new entries to the beginning of this file.
       <body xmlns="http://www.w3.org/1999/xhtml">
 	<p>The FreeType project reports:</p>
 	<blockquote cite="http://sourceforge.net/projects/freetype/files/freetype2/2.4.7/README/view">
-	  <p>.</p>
+	  <p>A couple of vulnerabilities in handling Type 1 fonts.</p>
 	</blockquote>
       </body>
     </description>
