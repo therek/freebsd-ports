@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.31 2011/08/20 18:58:52 ohauer Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.32 2011/11/06 21:55:53 ohauer Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -42,10 +42,6 @@
 #  USE_APACHE= -22      # specify [max] version, no [min] version
 #
 # Note:
-#  - Values can be specified with and without "." (dot) between major
-#    and minor version numbers. For example 22 is equal to 2.2
-#    Preferred is to define the value without "."
-#
 #  - If "+" is specified and no apache is installed, then
 #    ${DEFAULT_APACHE_VERSION} will be used.
 #
