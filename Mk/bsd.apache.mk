@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.30 2011/08/20 17:21:38 ohauer Exp $
+# $FreeBSD: ports/Mk/bsd.apache.mk,v 1.31 2011/08/20 18:58:52 ohauer Exp $
 #
 # bsd.apache.mk - Apache related macros.
 # Author: Clement Laforet <clement@FreeBSD.org>
@@ -97,9 +97,9 @@ _ERROR_MSG=	: Error from bsd.apache.mk.
 .if defined(USE_APACHE) && !empty(USE_APACHE)
 .	if ${USE_APACHE:Mcommon*} != ""
 AP_PORT_IS_SERVER=	YES
-.	elif ${USE_APACHE:C/\.//g:C/\-//:S/^13//:S/^20//:S/^22//:C/\+$//} == ""
+.	elif ${USE_APACHE:C/\-//:S/^13//:S/^20//:S/^22//:C/\+$//} == ""
 AP_PORT_IS_MODULE=	YES
-.		if ${USE_APACHE:C/\.//g:C/\-//:S/^13//:S/^20//:S/^22//} == "+"
+.		if ${USE_APACHE:C/\-//:S/^13//:S/^20//:S/^22//} == "+"
 AP_PLUS=	yes
 .		endif
 .	else
@@ -440,7 +440,7 @@ AP_EXTRAS+=	-L ${AP_LIB}
 Apache_Post_Include=	bsd.apache.mk
 
 .if defined(USE_APACHE_RUN) && !empty(USE_APACHE_RUN)
-.	if ${USE_APACHE_RUN:C/\.//g:C/\-//:S/^13//:S/^20//:S/^22//:C/\+$//} != ""
+.	if ${USE_APACHE_RUN:C/\-//:S/^13//:S/^20//:S/^22//:C/\+$//} != ""
 IGNORE=	${_ERROR_MSG} Illegal use of USE_APACHE_RUN ( ${USE_APACHE_RUN} )
 .	endif
 .elif defined(USE_APACHE_RUN)
@@ -448,7 +448,7 @@ IGNORE=	${_ERROR_MSG} Illegal use of USE_APACHE_RUN ( no valid version specified
 .endif
 
 .if defined(USE_APACHE_BUILD) && !empty(USE_APACHE_BUILD)
-.	if ${USE_APACHE_BUILD:C/\.//g:C/\-//:S/^13//:S/^20//:S/^22//:C/\+$//} != ""
+.	if ${USE_APACHE_BUILD:C/\-//:S/^13//:S/^20//:S/^22//:C/\+$//} != ""
 IGNORE=	${_ERROR_MSG} Illegal use of USE_APACHE_BUILD ( ${USE_APACHE_BUILD} )
 .	endif
 .elif defined(USE_APACHE_BUILD)
