@@ -2,7 +2,7 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/subversion16/Makefile.common,v 1.49 2011/10/16 14:31:47 lev Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.6.17
@@ -91,7 +91,7 @@ SVNUSER?=	svn
 .endif
 
 .if defined(WITH_APACHE)
-USE_APACHE=   2.0+
+USE_APACHE=   20+
 .include "${PORTSDIR}/Mk/bsd.apache.mk"
 .if ${APACHE_VERSION} > 20
 LIB_DEPENDS+= apr-1:${PORTSDIR}/devel/apr1
