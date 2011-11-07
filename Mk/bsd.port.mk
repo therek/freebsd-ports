@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.696 2011/09/23 22:20:46 amdmi3 Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.697 2011/10/27 09:46:25 erwin Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -5312,7 +5312,7 @@ FETCH_LIST?=	for i in $$deps; do \
 .if !target(fetch-required)
 fetch-required: fetch
 .if defined(NO_DEPENDS)
-	@${ECHO_MSG} "===> NO_DEPENDS is set, not fetching any distfiles for ${PKG_NAME}"
+	@${ECHO_MSG} "===> NO_DEPENDS is set, not fetching any other distfiles for ${PKGNAME}"
 .else
 	@${ECHO_MSG} "===> Fetching all required distfiles for ${PKGNAME} and dependencies"
 .for deptype in EXTRACT PATCH FETCH BUILD RUN
