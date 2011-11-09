@@ -2,7 +2,7 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.52 2011/10/30 04:22:51 wxs Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.53 2011/10/30 10:45:28 lev Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.7.1
@@ -15,7 +15,6 @@ DIST_SUBDIR=	subversion17
 MASTER_SITE_SUBDIR=subversion/:main
 
 MAKE_JOBS_SAFE=	yes
-WITH_FBSD10_FIX=	yes
 USE_BZIP2=	yes
 USE_AUTOTOOLS=	libtool
 USE_KDE4=	# Used below if KWallet support is enabled
