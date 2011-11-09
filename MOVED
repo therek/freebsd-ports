@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2667 2011/11/07 17:40:20 sunpoet Exp $
+# $FreeBSD: ports/MOVED,v 1.2668 2011/11/09 13:14:00 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3005,3 +3005,5 @@ devel/soup||2011-11-09|Has expired: Unmaintain, use devel/libsoup
 graphics/clutter-qt||2011-11-09|Has expired: upstream distfile and doesn't build, and doesn't seem to be developed anymore
 graphics/p5-clutter||2011-11-09|Has expired: upstream distfile disappeard, and doesn't seem to be developed anymore
 graphics/librsvg||2011-11-09|Has expired: unmaintained and not used anymore
+www/p5-Catalyst-Log-Log4perl||2011-11-09|Has expired: Use Log::Log4perl::Catalyst (devel/p5-Log-Log4perl) instead.
+lang/open-cobol-devel||2011-11-09|Has expired: No activity since 2007
