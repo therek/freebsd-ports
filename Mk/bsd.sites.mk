@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.549 2011/10/03 12:51:00 ehaupt Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.550 2011/10/26 14:34:02 cs Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1161,6 +1161,38 @@ MASTER_SITE_SOURCEWARE+= \
 	http://sources-redhat.mirrors.airband.net/%SUBDIR%/ \
 	http://ftp.cs.pu.edu.tw/Linux/sourceware/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/mirrors/sources.redhat.com/pub/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_SUDO)
+MASTER_SITE_SUDO+=	\
+	http://www.sudo.ws/sudo/dist/ \
+	http://ftp.arcane-networks.fr/pub/mirrors/sudo/ \
+	http://sudo.p8ra.de/sudo/dist/ \
+	http://sudo.cybermirror.org/ \
+	http://sudo-ftp.basemirror.de/ \
+	http://core.ring.gr.jp/archives/misc/sudo/ \
+	http://www.ring.gr.jp/archives/misc/sudo/ \
+	http://ftp.twaren.net/Unix/Security/Sudo/ \
+	ftp://ftp.sudo.ws/pub/sudo/ \
+	ftp://plier.ucar.edu/pub/sudo/ \
+	ftp://obsd.isc.org/pub/sudo/ \
+	ftp://ftp.uwsg.indiana.edu/pub/security/sudo/ \
+	ftp://ftp.tuwien.ac.at/utils/admin-tools/sudo/ \
+	ftp://sunsite.ualberta.ca/pub/Mirror/sudo/ \
+	ftp://ftp.csc.cuhk.edu.hk/pub/packages/unix-tools/sudo/ \
+	ftp://zoot.tele.dk/pub/sudo/ \
+	ftp://ftp.in2p3.fr/pub/sudo/ \
+	ftp://ftp.arcane-networks.fr/pub/mirrors/sudo/ \
+	ftp://ftp.usbm.de/pub/sudo/ \
+	ftp://ftp.cs.tu-berlin.de/pub/misc/sudo/ \
+	ftp://ftp.informatik.uni-hamburg.de/pub/os/unix/utils/sudo/ \
+	ftp://ftp.st.ryukoku.ac.jp/pub/security/tool/sudo/ \
+	ftp://ftp.cin.nihon-u.ac.jp/pub/misc/sudo/ \
+	ftp://core.ring.gr.jp/pub/misc/sudo/ \
+	ftp://ftp.ring.gr.jp/pub/misc/sudo/ \
+	ftp://sunsite.icm.edu.pl/packages/sudo/ \
+	ftp://mirror.cdmon.com/pub/sudo/ \
+	ftp://ftp.twaren.net/Unix/Security/Sudo/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_SUNSITE)
