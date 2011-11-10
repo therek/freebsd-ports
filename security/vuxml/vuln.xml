@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2483 2011/11/08 17:48:37 beat Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2484 2011/11/10 02:27:53 novel Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -149,7 +149,7 @@ Note:  Please add new entries to the beginning of this file.
   </vuln>
 
   <vuln vid="54075e39-04ac-11e1-a94e-bcaec565249c">
-    <topic>freetype -- Some type 1 fonts handling vulnerabilities </topic>
+    <topic>freetype -- Some type 1 fonts handling vulnerabilities</topic>
     <affects>
       <package>
 	<name>freetype2</name>
@@ -188,7 +188,7 @@ Note:  Please add new entries to the beginning of this file.
 	<p>Cacti Group reports:</p>
 	<blockquote cite="http://www.cacti.net/release_notes_0_8_7h.php">
 	  <p>SQL injection issue with user login, and cross-site scripting
-             issues.</p>
+            issues.</p>
 	</blockquote>
       </body>
     </description>
@@ -500,8 +500,8 @@ Note:  Please add new entries to the beginning of this file.
         <p>The OpenTTD Team reports:</p>
 	<blockquote cite="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3341">
           <p>Multiple off-by-one errors in order_cmd.cpp in OpenTTD before
-          1.1.3 allow remote attackers to cause a denial of service (daemon crash)
-          or possibly execute arbitrary code via a crafted CMD_INSERT_ORDER command.</p>
+            1.1.3 allow remote attackers to cause a denial of service (daemon crash)
+            or possibly execute arbitrary code via a crafted CMD_INSERT_ORDER command.</p>
         </blockquote>
       </body>
     </description>
@@ -1164,7 +1164,7 @@ Note:  Please add new entries to the beginning of this file.
 	<p>Apache HTTP server project reports:</p>
 	<blockquote cite="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192">
 	  <p>A denial of service vulnerability has been found in the way the
-	  multiple overlapping ranges are handled by Apache HTTPD server.</p>
+	    multiple overlapping ranges are handled by Apache HTTPD server.</p>
 	</blockquote>
       </body>
     </description>
