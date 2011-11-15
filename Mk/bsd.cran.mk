@@ -1,7 +1,7 @@
 # Date created:		2009-01-25
 # Whom:			Wen Heping <wenheping@gmail.com>
 #
-# $FreeBSD: ports/Mk/bsd.cran.mk,v 1.8 2011/09/29 06:58:39 wen Exp $
+# $FreeBSD: ports/Mk/bsd.cran.mk,v 1.9 2011/10/15 13:37:26 tota Exp $
 #
 
 CRAN_Include_MAINTAINER=	wen@FreeBSD.org
@@ -25,6 +25,8 @@ MASTER_SITES?=	${MASTER_CRAN_SITES}
 .if defined(USE_R_MOD)
 BUILD_DEPENDS+=	${LOCALBASE}/bin/R:${PORTSDIR}/math/R
 RUN_DEPENDS+=	${LOCALBASE}/bin/R:${PORTSDIR}/math/R
+
+PKGNAMEPREFIX?=	R-cran-
 .endif
 
 R_MOD_DIR?=	lib/R/library/${PORTNAME}
