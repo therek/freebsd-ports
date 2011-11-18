@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2498 2011/11/16 23:59:34 dougb Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2499 2011/11/17 10:08:18 rene Exp $
 
 Note:  Please add new entries to the beginning of this file.
 
@@ -53,7 +53,7 @@ Note:  Please add new entries to the beginning of this file.
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
 	<p>The Internet Systems Consortium reports:</p>
-	<blockquote cite="https://www.isc.org/software/bind/advisories/cve-2011-tbd">
+	<blockquote cite="https://www.isc.org/software/bind/advisories/cve-2011-4313">
 	  <p>Organizations across the Internet reported crashes interrupting service
 	     on BIND 9 nameservers performing recursive queries. Affected servers
 	     crashed after logging an error in query.c with the following message:
@@ -71,7 +71,7 @@ Note:  Please add new entries to the beginning of this file.
     <references>
 	<cvename>CVE-2011-4313</cvename>
 	<url>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4313</url>
-	<url>https://www.isc.org/software/bind/advisories/cve-2011-tbd</url>
+	<url>https://www.isc.org/software/bind/advisories/cve-2011-4313</url>
     </references>
     <dates>
       <discovery>2011-11-16</discovery>
