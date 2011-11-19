@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2674 2011/11/16 18:02:26 crees Exp $
+# $FreeBSD: ports/MOVED,v 1.2675 2011/11/19 14:03:58 danfe Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1743,7 +1743,6 @@ www/bricolage||2011-04-18|Has expired: has been broken for a half year
 x11-toolkits/gauche-gtk||2011-04-18|Has expired: has been broken for a year
 x11-toolkits/php-gtk2||2011-04-18|Has expired: has been broken for over a half year
 x11-toolkits/p5-Tcl-Tk||2011-04-18|Has expired: has been broken for 2 year
-x11/metisse||2011-04-18|Has expired: has been broken for over a half year
 security/newpki-client||2011-04-18|Removed
 lang/gnustep-objc|lang/gnustep-libobjc|2011-04-19|Replaced with libobjc
 graphics/netpbm-devel|graphics/netpbm|2011-04-22|updated to default
