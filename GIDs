@@ -1,6 +1,6 @@
-# $FreeBSD: ports/GIDs,v 1.159 2011/10/22 14:39:04 thierry Exp $
+# $FreeBSD: ports/GIDs,v 1.160 2011/10/31 14:24:04 makc Exp $
 # Please keep this file sorted by GID!
-operator:*:5:
+operator:*:5:amanda
 mail:*:6:postfix,clamav
 smmsp:*:25:
 bind:*:53:
