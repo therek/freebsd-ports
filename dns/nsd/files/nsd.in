@@ -1,9 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/nsd/files/nsd.in,v 1.7 2010/11/24 15:44:15 bapt Exp $
+# $FreeBSD: ports/dns/nsd/files/nsd.in,v 1.8 2010/11/25 16:04:00 bapt Exp $
 #
 # PROVIDE: nsd
 # REQUIRE: DAEMON
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
 #
 # Add the following line to /etc/rc.conf to enable nsd:
 #
