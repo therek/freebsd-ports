@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2684 2011/11/28 12:05:46 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.2685 2011/11/28 16:18:16 sunpoet Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2853,8 +2853,6 @@ korean/hlatex||2011-10-31|No more public distfiles
 mail/jboss-mailservices||2011-10-31|Depends on java/jboss4, which is DEPRECATED
 misc/p5-Geography-NationalGrid-TW||2011-10-31|Depends on misc/p5-Geography-NationalGrid, which is DEPRECATED
 misc/p5-Geography-NationalGrid||2011-10-31|Disappeared from CPAN
-multimedia/fxtv||2011-10-31|Depends on multimedia/mplex, which is DEPRECATED
-multimedia/mplex||2011-10-31|Upstream disappeared and distfile is no longer available
 net/py-timeoutsocket||2011-10-31|Upstream disappeared and distfile is no longer available
 textproc/p5-XML-LibRSVG||2011-10-31|Unmaintained and not used anymore
 textproc/javacc||2011-10-31|No more public distfiles
