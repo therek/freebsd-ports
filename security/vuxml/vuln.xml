@@ -28,7 +28,16 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2502 2011/11/18 22:38:17 cs Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2503 2011/11/19 15:13:48 dinoex Exp $
+
+
+QUICK GUIDE TO ADDING A NEW ENTRY
+
+1. run `make newentry' to add a template to the top of the document
+2. fill in the template
+3. use `make validate' to verify syntax correctness (you might need to install
+   textproc/libxml2 for parser, and this port for catalogs)
+4. profit!
 
 Note:  Please add new entries to the beginning of this file.
 
