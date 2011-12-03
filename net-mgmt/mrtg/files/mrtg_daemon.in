@@ -1,10 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/mrtg/files/mrtg_daemon.in,v 1.1 2008/06/06 02:57:04 lippe Exp $
+# $FreeBSD: ports/net-mgmt/mrtg/files/mrtg_daemon.in,v 1.2 2010/03/27 00:14:21 dougb Exp $
 
 #
 # PROVIDE: mrtg_daemon
 # REQUIRE: DAEMON bsnmpd snmpd
+# KEYWORD: shutdown
 
 . /etc/rc.subr
 
