@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2690 2011/12/01 07:49:57 mm Exp $
+# $FreeBSD: ports/MOVED,v 1.2691 2011/12/02 19:56:39 swills Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2914,7 +2914,6 @@ editors/richtext||2011-11-01|Does not compile
 games/vultures-claw||2011-11-01|Does not fetch
 games/bomb||2011-11-01|Does not fetch
 games/lgeneral-data||2011-11-01|Bad plist
-games/linux-enemyterritory-jaymod||2011-11-01|Does not fetch
 games/xphotohunter||2011-11-01|Does not fetch
 graphics/gimpshop||2011-11-01|Fails to patch
 graphics/lightspark-devel||2011-11-01|Does not compile
