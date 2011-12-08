@@ -1,9 +1,10 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/czmq/pkg-plist,v 1.1 2011/05/30 20:09:08 wxs Exp $
 bin/czmq_selftest
 include/czmq.h
 include/czmq_prelude.h
 include/zclock.h
 include/zctx.h
+include/zfile.h
 include/zframe.h
 include/zhash.h
 include/zlist.h
