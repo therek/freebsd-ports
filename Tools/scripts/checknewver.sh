@@ -12,7 +12,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/checknewver.sh,v 1.4 2000/08/02 07:13:11 sobomax Exp $
+# $FreeBSD: ports/Tools/scripts/checknewver.sh,v 1.5 2003/12/17 10:28:32 demon Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org
 
@@ -70,7 +70,7 @@ PV_PATR=`echo ${PORTVERSION} | sed 's=\.=\\\\.=g'`
 for DISTNAME in ${DISTFILES}; do
   DF_PATR=`echo ${DISTNAME} | sed "s=${PV_PATR}=.*=" | \
     sed 's=\.=\\\\.=g ; s=\\\.\*=.*='`
-  DF_CHECK=`echo ${DISTNAME} | sed 's=\.=\\\\.=g`
+  DF_CHECK=`echo ${DISTNAME} | sed 's=\.=\\\\.=g'`
   if [ x"${DF_PATR}" = x"${DF_CHECK}" ]; then
     display_warn "Couldn't construct searching pattern - ${DISTNAME} ignored."
   else
@@ -80,7 +80,7 @@ for DISTNAME in ${DISTFILES}; do
 done
 
 if [ x"${F_DISTFILES}" = x"" ]; then
-  display_warn "Nothing to check - exitting."
+  display_warn "Nothing to check - exiting."
   exit 0
 fi
 
@@ -102,7 +102,7 @@ done
 
 if [ x"${NEW}" != x"" ]; then
   display_msg ""
-  display_msg "Hmm, is seems that there is newest version(s) at:"
+  display_msg "Hmm, is seems that there is a newer version(s) at:"
   echo "${NEW}" | xargs -n1 echo
   display_msg ""
 fi
