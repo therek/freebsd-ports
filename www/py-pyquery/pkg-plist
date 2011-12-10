@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/py-pyquery/pkg-plist,v 1.1 2009/01/27 16:54:43 nivit Exp $
+@comment $FreeBSD: ports/www/py-pyquery/pkg-plist,v 1.2 2010/07/24 12:52:42 nivit Exp $
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/EGG-INFO/PKG-INFO
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/EGG-INFO/SOURCES.txt
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/EGG-INFO/dependency_links.txt
@@ -21,6 +21,7 @@
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/pyquery/rules.py
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/pyquery/rules.pyc
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/pyquery/rules.pyo
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/pyquery/test.html
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/pyquery/test.py
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/pyquery/test.pyc
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/pyquery/test.pyo
