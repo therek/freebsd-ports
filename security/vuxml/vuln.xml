@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2508 2011/12/09 01:52:42 zi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2509 2011/12/12 19:57:18 mandree Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -83,7 +83,7 @@ Note:  Please add new entries to the beginning of this file.
     <topic>asterisk -- Multiple Vulnerabilities</topic>
     <affects>
       <package>
-	<name>asterisk</name>
+	<name>asterisk18</name>
 	<range><lt>1.8.7.2</lt></range>
       </package>
       <package>
