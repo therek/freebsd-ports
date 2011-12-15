@@ -1,7 +1,7 @@
 # ex:ts=4
 #
 # $MBSDlabs: portmk/bsd.ocaml.mk,v 1.18 2006/08/06 18:47:23 stas Exp $
-# $FreeBSD: ports/Mk/bsd.ocaml.mk,v 1.2 2008/04/19 17:46:02 miwi Exp $
+# $FreeBSD: ports/Mk/bsd.ocaml.mk,v 1.3 2008/05/19 07:05:35 stas Exp $
 #
 # bsd.ocaml.mk - Support for the Objective Caml language packages
 #
@@ -34,7 +34,7 @@
 
 .if !defined(OCAML_include)
 
-OCAML_MAINTAINER=	stas@FreeBSD.org
+OCAML_MAINTAINER=	ports@FreeBSD.org
 OCAML_include=		bsd.ocaml.mk
 
 #

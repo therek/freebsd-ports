@@ -1,6 +1,6 @@
 #
 # $MBSDlabs: portmk/bsd.efl.mk,v 1.17 2006/10/02 14:57:48 stas Exp $
-# $FreeBSD: ports/Mk/bsd.efl.mk,v 1.4 2010/12/14 07:30:31 stas Exp $
+# $FreeBSD: ports/Mk/bsd.efl.mk,v 1.5 2011/09/23 22:20:46 amdmi3 Exp $
 #
 # bsd.efl.mk - Support for Enlightenment Foundation Libraries (EFL)
 #
@@ -34,7 +34,7 @@
 # Feel free to send any comments and suggestion to maintainer.
 #
 
-EFL_Include_MAINTAINER=	stas@FreeBSD.org
+EFL_Include_MAINTAINER=	ports@FreeBSD.org
 
 #
 # Define all supported libraries

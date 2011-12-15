@@ -3,13 +3,13 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.213 2011/10/25 21:06:55 swills Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.214 2011/11/21 20:59:09 swills Exp $
 #
 
 .if !defined(Ruby_Include)
 
 Ruby_Include=			bsd.ruby.mk
-Ruby_Include_MAINTAINER=	stas@FreeBSD.org
+Ruby_Include_MAINTAINER=	ruby@FreeBSD.org
 
 #
 # [variables that a user may define]
