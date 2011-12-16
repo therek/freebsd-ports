@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2701 2011/12/12 12:10:01 rm Exp $
+# $FreeBSD: ports/MOVED,v 1.2702 2011/12/16 23:00:03 pgollucci Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2141,7 +2141,6 @@ audio/cantus||2011-05-03|Has expired: Upstream disappeared and distfile is no lo
 audio/xaylet||2011-05-03|Has expired: Upstream disappeared and distfile is no longer available
 science/oases||2011-05-03|Has expired: Upstream disappeared and distfile is no longer available
 shells/pash||2011-05-03|Has expired: Upstream disappeared and distfile is no longer available
-www/codeigniter|www/codeigniter17|2011-05-03|Renamed to track deprecated branch
 www/codeigniter-devel||2011-05-03|Removed
 devel/common_msgs|devel/ros-common_msgs|2011-05-03|Renamed
 math/geometry|math/ros-geometry|2011-05-03|Renamed
