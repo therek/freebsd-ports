@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2702 2011/12/16 23:00:03 pgollucci Exp $
+# $FreeBSD: ports/MOVED,v 1.2703 2011/12/16 23:02:45 pgollucci Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1160,7 +1160,6 @@ sysutils/aaccli||2010-08-03|Has expired: see sysutils/arcconf instead, no longer
 mail/moztraybiff|mail/mail-notification|2010-08-03|Depends on obsolete Thunderbird 2.0
 deskutils/lightning-xpi|deskutils/lightning|2010-08-03|Depends on obsolete Thunderbird 2.0
 sysutils/zfSnap|sysutils/zfsnap|2010-08-03|Change name to lower case
-mail/lightning|deskutils/lightning|2010-08-03|Upstream development discontinued
 mail/lightning|deskutils/lightning|2010-08-03|Upstream development discontinued
 devel/py_otp_interface|devel/py-interface|2010-08-06|Duplicate py-interface port has better distutils handling
 www/mplayer-plugin|www/gecko-mediaplayer|2010-08-08|Upstream support dropped
@@ -2986,7 +2985,6 @@ lang/open-cobol-devel||2011-11-09|Has expired: No activity since 2007
 databases/py-axiom||2011-11-11|Has expired: Distfile is missing, runtime broken; use databases/py-sqlobject instead
 sysutils/duplicity-devel||2011-11-12|Much older than current version, use sysutils/duplicity instead
 security/libfwbuilder-devel||2011-11-14|libfwbuilder-devel merged into fwbuilder-devel
-russian/apache13||2011-11-15|Has expired: no active development and known security vulnerabilities
 russian/apache13||2011-11-15|Has expired: no active development and known security vulnerabilities
 devel/tortoisehg1|devel/tortoisehg2|2011-11-22|Has expired: does not work with current devel/mercurial, use tortoisehg2
 mail/zms||2011-11-22|Has expired: No longer under development, since 2009.
