@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/claws-mail-fancy/pkg-plist,v 1.2 2010/01/21 23:22:03 miwi Exp $
+@comment $FreeBSD: ports/mail/claws-mail-fancy/pkg-plist,v 1.3 2011/08/29 17:15:07 pawel Exp $
 lib/claws-mail/plugins/fancy.so
 lib/claws-mail/plugins/fancy.la
 lib/claws-mail/plugins/fancy.a
@@ -8,7 +8,7 @@ lib/claws-mail/plugins/fancy.a
 %%NLS%%share/locale/fi/LC_MESSAGES/fancy.mo
 %%NLS%%share/locale/fr/LC_MESSAGES/fancy.mo
 %%NLS%%share/locale/hu/LC_MESSAGES/fancy.mo
-%%NLS%%share/locale/id/LC_MESSAGES/fancy.mo
+%%NLS%%share/locale/id_ID/LC_MESSAGES/fancy.mo
 %%NLS%%share/locale/it/LC_MESSAGES/fancy.mo
 %%NLS%%share/locale/ja/LC_MESSAGES/fancy.mo
 %%NLS%%share/locale/lt/LC_MESSAGES/fancy.mo
@@ -16,3 +16,5 @@ lib/claws-mail/plugins/fancy.a
 %%NLS%%share/locale/ru/LC_MESSAGES/fancy.mo
 %%NLS%%share/locale/nl/LC_MESSAGES/fancy.mo
 %%NLS%%share/locale/sk/LC_MESSAGES/fancy.mo
+%%NLS%%@dirrmtry share/locale/id_ID/LC_MESSAGES
+%%NLS%%@dirrmtry share/locale/id_ID
