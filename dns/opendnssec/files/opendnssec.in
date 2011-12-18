@@ -1,9 +1,10 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/dns/opendnssec/files/opendnssec.in,v 1.2 2011/09/25 07:17:15 dougb Exp $
 #
 # PROVIDE: opendnssec
 # REQUIRE: LOGIN
+# REQUIRE: DAEMON
 # KEYWORD: shutdown
 #
 # Add the following line to /etc/rc.conf to enable opendnssec:
