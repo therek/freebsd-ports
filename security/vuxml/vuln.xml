@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2515 2011/12/14 04:07:06 zi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2516 2011/12/18 13:07:02 zi Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -52,10 +52,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>typo3</name>
-	<range><lt>4.6.2</lt></range>
-      </package>
-      <package>
-	<name>typo345</name>
+	<range><ge>4.6</ge><lt>4.6.2</lt></range>
 	<range><lt>4.5.9</lt></range>
       </package>
     </affects>
