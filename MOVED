@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2703 2011/12/16 23:02:45 pgollucci Exp $
+# $FreeBSD: ports/MOVED,v 1.2704 2011/12/16 23:05:39 pgollucci Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2395,7 +2395,6 @@ multimedia/subconv||2011-08-01|Has expired: Looks like abandonware, no more publ
 net/callgen323||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
 net/lyntin||2011-08-01|Has expired: No longer under active development
 net/py-rt||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
-net/rwhoisd||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
 net/traffic||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
 net-im/gnomeicu||2011-08-01|Has expired: No longer maintained upstream, use net-im/empathy instead
 net-mgmt/trafd||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
