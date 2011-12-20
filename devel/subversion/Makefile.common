@@ -2,7 +2,7 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.54 2011/11/09 15:25:32 miwi Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.55 2011/12/05 21:15:36 lev Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.7.2
@@ -116,7 +116,7 @@ PLIST_SUB+=     SVNAUTHZ_VALIDATE="@comment "
 .endif
 
 .if defined(WITH_SERF)
-LIB_DEPENDS+=	serf-0.0:${PORTSDIR}/www/serf
+LIB_DEPENDS+=	serf-1:${PORTSDIR}/www/serf
 CONFIGURE_ARGS+=--with-serf=${LOCALBASE}
 PLIST_SUB+=	SERF=""
 .else
