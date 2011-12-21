@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2519 2011/12/19 13:15:50 sem Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2520 2011/12/21 07:48:50 beat Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -88,11 +88,11 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
-	<cvename>2011-3658</cvename>
-	<cvename>2011-3660</cvename>
-	<cvename>2011-3661</cvename>
-	<cvename>2011-3663</cvename>
-	<cvename>2011-3665</cvename>
+	<cvename>CVE-2011-3658</cvename>
+	<cvename>CVE-2011-3660</cvename>
+	<cvename>CVE-2011-3661</cvename>
+	<cvename>CVE-2011-3663</cvename>
+	<cvename>CVE-2011-3665</cvename>
 	<url>http://www.mozilla.org/security/announce/2011/mfsa2011-53.html</url>
 	<url>http://www.mozilla.org/security/announce/2011/mfsa2011-54.html</url>
 	<url>http://www.mozilla.org/security/announce/2011/mfsa2011-55.html</url>
