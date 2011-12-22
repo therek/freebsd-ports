@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.48 2011/12/21 08:02:57 beat Exp $
+# $FreeBSD: ports/Mk/bsd.gecko.mk,v 1.49 2011/12/21 08:10:16 beat Exp $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -203,9 +203,9 @@ Gecko_Pre_Include=			bsd.gecko.mk
 #                         version is given by the maintainer via the port 
 #                         or by the user via defined variable try to find 
 #                         the highest stable installed version.
-#                         Available values: yes 80+ 31+ 80 31
+#                         Available values: yes 90+ 31+ 90 31
 #                         NOTE:
-#                         default value 80 is used in case of USE_THUNDERBIRD=yes
+#                         default value 90 is used in case of USE_THUNDERBIRD=yes
 #
 # USE_THUNDERBIRD_BUILD   Add buildtime dependency on Thunderbird.
 #                         Available values: see USE_THUNDERBIRD
@@ -364,13 +364,13 @@ USE_THUNDERBIRD:=			${USE_THUNDERBIRD_BUILD}
 _THUNDERBIRD_BUILD_DEPENDS=		yes
 .endif
 
-_THUNDERBIRD_DEFAULT_VERSION=	80
-_THUNDERBIRD_VERSIONS=			80 31
-_THUNDERBIRD_RANGE_VERSIONS=	80+ 31+
+_THUNDERBIRD_DEFAULT_VERSION=	90
+_THUNDERBIRD_VERSIONS=			90 31
+_THUNDERBIRD_RANGE_VERSIONS=	90+ 31+
 
 # For specifying [31, 30, ..]+
 _THUNDERBIRD_31P=	31 ${_THUNDERBIRD_31P}
-_THUNDERBIRD_80P=	80
+_THUNDERBIRD_90P=	90
 
 # Set the default Thunderbird version and check if USE_THUNDERBIRD=yes was given
 .if ${USE_THUNDERBIRD} == "yes"
@@ -414,7 +414,7 @@ IGNORE=			cannot install: unknown Thunderbird version: thunderbird-${USE_THUNDER
 .endif
 
 # Dependence lines for different Thunderbird versions
-80_DEPENDS=		${LOCALBASE}/lib/thunderbird/thunderbird:${PORTSDIR}/mail/thunderbird
+90_DEPENDS=		${LOCALBASE}/lib/thunderbird/thunderbird:${PORTSDIR}/mail/thunderbird
 31_DEPENDS=		${LOCALBASE}/lib/thunderbird3/thunderbird:${PORTSDIR}/mail/thunderbird3
 
 # Add dependencies
