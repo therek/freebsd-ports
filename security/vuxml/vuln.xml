@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2525 2011/12/26 21:51:02 cy Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2526 2011/12/26 22:42:26 wxs Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -582,7 +582,7 @@ Note:  Please add new entries to the beginning of this file.
   </vuln>
 
   <vuln vid="90cc1494-10ac-11e1-b3ec-0024e830109b">
-    <topic> BIND -- Remote DOS</topic>
+    <topic>BIND -- Remote DOS</topic>
     <affects>
      <package>
 	<name>bind96</name>
