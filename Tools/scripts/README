@@ -1,4 +1,4 @@
-$FreeBSD: ports/Tools/scripts/README,v 1.21 2009/05/17 11:40:16 pgollucci Exp $
+$FreeBSD: ports/Tools/scripts/README,v 1.22 2010/01/29 14:52:45 kuriyama Exp $
 
 ardiff	- compare two archives easily
 addport	- replacement for easy-import
@@ -161,7 +161,7 @@ portsearch - A utility for searching the ports tree.
 		      fields. This option behaves differently to the other op-
 		      tions, see the EXAMPLES section
 
-	   -f file    Use the index file file instead of /usr/ports/INDEX
+	   -f file    Use the index file instead of /usr/ports/INDEX
 
      All searches are case-insensitive
 

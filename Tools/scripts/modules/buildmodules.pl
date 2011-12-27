@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 #
-# $FreeBSD$
+# $FreeBSD: ports/Tools/scripts/modules/buildmodules.pl,v 1.1 2008/07/08 21:03:42 edwin Exp $
 #
 
 #
@@ -130,7 +130,7 @@ my %src_mods = ();
 # If a duplicate is found with CVSROOT-src/modules, rename the modname
 # to "ports_" + modname.
 #
-# If a duplicate modname is is found, copy the original to DIR + modname
+# If a duplicate modname is found, copy the original to DIR + modname
 # and continue for these modnames (and any future ones) as DIR + modname.
 #
 my %mods = ();
