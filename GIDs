@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.160 2011/10/31 14:24:04 makc Exp $
+# $FreeBSD: ports/GIDs,v 1.161 2011/11/19 07:05:21 kuriyama Exp $
 # Please keep this file sorted by GID!
 operator:*:5:amanda
 mail:*:6:postfix,clamav
@@ -164,6 +164,7 @@ polkit:*:562:
 pulse:*:563:
 pulse-access:*:564:
 assp:*:587:
+avahi-autoipd:*:588:
 _xsi:*:600:
 _tss:*:601:_tss
 _pkcs11:*:602:_pkcs11
