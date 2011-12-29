@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.553 2011/12/09 19:01:50 sunpoet Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.554 2011/12/20 05:00:01 jgh Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1415,10 +1415,12 @@ MASTER_SITE_XFCE+= \
 	http://mirror.perldude.de/archive.xfce.org/%SUBDIR%/ \
 	http://archive.be.xfce.org/%SUBDIR%/ \
 	http://archive.be2.xfce.org/%SUBDIR%/ \
-	http://xfce.ozgurkuru.net/%SUBDIR%/ \
 	http://archive.se.xfce.org/%SUBDIR%/ \
-	http://archive.in-us.xfce.org/%SUBDIR%/ \
-	http://mirrors.tummy.com/pub/archive.xfce.org/%SUBDIR%/
+	http://archive.al-us.xfce.org/%SUBDIR%/ \
+	http://mirrors.tummy.com/pub/archive.xfce.org/%SUBDIR%/ \
+	http://mirror.yongbok.net/X11/xfce-mirror/%SUBDIR%/ \
+	http://xfce.ognisco.com/%SUBDIR%/ \
+	http://mirror.sinn3r.org/xfce/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_XORG)
