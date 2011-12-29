@@ -1,7 +1,7 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/audio/umurmur/pkg-plist,v 1.1 2011/06/26 07:17:00 miwi Exp $
 @stopdaemon umurmur
 @unexec if cmp -s %D/etc/umurmur/umurmur.conf.sample %D/etc/umurmur/umurmur.conf; then rm -f %D/etc/umurmur/umurmur.conf; fi
 etc/umurmur/umurmur.conf.sample
 @exec if [ ! -f %D/etc/umurmur/umurmur.conf ] ; then cp -p %D/%F %B/umurmur/umurmur.conf; fi
-sbin/umurmurd
+bin/umurmurd
 @dirrmtry etc/umurmur
