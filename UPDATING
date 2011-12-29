@@ -5,13 +5,13 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
-20111223:
+20111229:
   AFFECTS: users of ftp/proftpd{-devel,-mysql}
-  AUTHOR: delphij@FreeBSD.org
+  AUTHORS: delphij@FreeBSD.org,mm@FreeBSD.org
 
   Due to the nature of the way FreeBSD-SA-11:07.chroot is implemented,
   users have to update to latest -STABLE, -CURRENT, or supported
-  security branch before building these ports.
+  security branch to use the chroot functionality in these ports.
 
   Please see the security advisory for more details.
 
@@ -5752,4 +5752,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1177 2011/12/23 20:45:45 delphij Exp $
+$FreeBSD: ports/UPDATING,v 1.1178 2011/12/27 03:32:25 eadler Exp $
