@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/umurmur/files/umurmur.in,v 1.1 2011/06/26 07:17:01 miwi Exp $
+# $FreeBSD: ports/audio/umurmur/files/umurmur.in,v 1.2 2011/12/29 22:02:54 pawel Exp $
 #
 # PROVIDE: umurmur
-# REQUIRE: DAEMON
+# REQUIRE: LOGIN
 # KEYWORD: shutdown
 #
 # Add the following lines to /etc/rc.conf.local or /etc/rc.conf
@@ -19,11 +19,6 @@
 
 . /etc/rc.subr
 
-# Set some defaults
-: ${umurmur_enable="NO"}
-: ${umurmur_user="umurmur"}
-: ${umurmur_flags=""}
-
 name=umurmur
 rcvar=${name}_enable
 
@@ -34,5 +29,9 @@ command="%%PREFIX%%/bin/umurmurd"
 command_args="-p ${pidfile}"
 
 load_rc_config $name
+
+# Set some defaults
+: ${umurmur_enable="NO"}
+: ${umurmur_user="umurmur"}
 
 run_rc_command "$1"
