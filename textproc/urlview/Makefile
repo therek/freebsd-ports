@@ -11,10 +11,13 @@ PORTVERSION=	0.9
 PORTREVISION=	7
 CATEGORIES=	textproc www
 MASTER_SITES=	ftp://ftp.mutt.org/mutt/contrib/ \
-		ftp://ftp.sunsite.auc.dk/pub/mail/mutt/contrib/ \
-		ftp://ftp.cs.tu-berlin.de/pub/net/mail/mutt/contrib/
+		ftp://ftp.cs.tu-berlin.de/pub/net/mail/mutt/contrib/ \
+		ftp://ftp.fu-berlin.de/pub/unix/mail/mutt/contrib/ \
+		ftp://ftp.gbnet.net/pub/mutt-international/contrib/ \
+		ftp://ftp.gwdg.de/pub/unix/mail/mutt/international/contrib/ \
+		http://seis.bris.ac.uk/~mexas/
 
-MAINTAINER=	mexas@bristol.ac.uk
+MAINTAINER=	mexas@bris.ac.uk
 COMMENT=	URL extractor/launcher
 
 GNU_CONFIGURE=	yes
