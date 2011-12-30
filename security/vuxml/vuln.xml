@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2531 2011/12/29 13:04:23 crees Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2532 2011/12/29 14:26:25 remko Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -118,7 +118,7 @@ Note:  Please add new entries to the beginning of this file.
 	<blockquote cite="http://security.FreeBSD.org/advisories/FreeBSD-SA-11:08.telnetd.asc">
 	  <p>When an encryption key is supplied via the TELNET protocol,
 	     its length is not validated before the key is copied into a
-	     fixed-size buffer.</p>
+	     fixed-size buffer. Also see MITKRB5-SA-2011-008.</p>
 	</blockquote>
       </body>
     </description>
