@@ -5,6 +5,19 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20111231:
+  AFFECTS: users of lang/newlisp
+  AUTHOR: olgeni@FreeBSD.org
+
+  In lang/newlisp, the MYSQL5 and MYSQL51 options have been unified into
+  MYSQL, which will pick the correct MySQL version using the standard
+  MySQL selection logic. MySQL users will have to run "make config" and
+  select the MYSQL option.
+
+  Tinderbox users will have to update their options files with the new
+  MYSQL option, and possibly change their Tinderbox environment to select
+  a specific MySQL version.
+
 20111229:
   AFFECTS: users of ftp/proftpd{-devel,-mysql}
   AUTHORS: delphij@FreeBSD.org,mm@FreeBSD.org
@@ -5752,4 +5765,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1178 2011/12/27 03:32:25 eadler Exp $
+$FreeBSD: ports/UPDATING,v 1.1179 2011/12/29 21:02:21 mm Exp $
