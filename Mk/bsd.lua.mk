@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.20 2010/08/26 11:00:36 philip Exp $
+# $FreeBSD: ports/Mk/bsd.lua.mk,v 1.21 2011/01/06 18:45:31 alepulver Exp $
 #
 # bsd.lua.mk - Support for Lua based ports.
 #
@@ -130,7 +130,7 @@
 # The lua modules install in a separate directory, so there is no problem.
 #
 
-LUA_Include_MAINTAINER=	alepulver@FreeBSD.org
+LUA_Include_MAINTAINER=	lua@FreeBSD.org
 
 #
 # Global definitions.
