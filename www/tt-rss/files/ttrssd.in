@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/tt-rss/files/ttrssd.in,v 1.1 2010/09/23 02:40:02 pgollucci Exp $
 #
 
 # PROVIDE: ttrssd
@@ -43,7 +43,7 @@ ttrssd_start() {
 ttrssd_stop() {
 	[ -f $pidfile ] || (echo "$name not running?"; exit 1)
 	echo "Stopping $long_name"
-	kill `ps | grep $phpupd | grep -v grep | awk '{print $1}'`
+	kill `ps x | grep $phpupd | grep -v grep | awk '{print $1}'`
 	rm -f $pidfile
 }
 
