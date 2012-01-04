@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2719 2012/01/01 20:15:53 ohauer Exp $
+# $FreeBSD: ports/MOVED,v 1.2720 2012/01/04 18:03:01 johans Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3148,5 +3148,5 @@ www/p5-libapreq-static||2012-01-01|Has expired: Depends on expired www/apache13
 www/web-traceroute||2012-01-01|Has expired: Depends on expired www/apache13
 www/wget4web||2012-01-01|Has expired: Depends on expired www/apache13
 www/p5-Apache-Test||2012-01-01|Has expired: Depends on expired www/apache13
-www/net-im/jwchat||2012-01-01|Has expired: Depends on expired www/apache13
-editors/ged||2012-01-04|Removed: used ed from base instead
+net-im/jwchat||2012-01-01|Has expired: Depends on expired www/apache13
+editors/ged||2012-01-04|Removed: Use ed from base instead
