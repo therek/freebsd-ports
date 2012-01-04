@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/ddclient/files/ddclient.in,v 1.2 2010/03/27 00:12:53 dougb Exp $
+# $FreeBSD: ports/dns/ddclient/files/ddclient.in,v 1.3 2012/01/04 01:47:21 zi Exp $
 #
 # PROVIDE: ddclient
 # REQUIRE: LOGIN
@@ -25,6 +25,5 @@ required_files="%%PREFIX%%/etc/${name}.conf"
 load_rc_config ${name}
 
 : ${ddclient_enable="NO"}
-: ${ddclient_flags=""}
 
 run_rc_command "$1"
