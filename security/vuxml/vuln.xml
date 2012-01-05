@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2534 2012/01/03 23:50:36 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2535 2012/01/05 17:29:25 ohauer Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -107,7 +107,6 @@ Note:  Please add new entries to the beginning of this file.
     </dates>
   </vuln>
 
-<vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
   <vuln vid="810df820-3664-11e1-8fe3-00215c6a37bb">
     <topic>wordpress -- cross site scripting vulnerability</topic>
     <affects>
