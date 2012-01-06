@@ -5,6 +5,13 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20120104:
+  AFFECTS: users of devel/thrift, py-thrift, php5-thrift, p5-thrift
+  AUTHOR: scheidell@FreeBSD.org
+
+  Users upgrading thrift from 0.6.1, please take note: library structure
+  and versions have changed, and are not compatible with 0.7.0+
+
 20111231:
   AFFECTS: users of lang/newlisp
   AUTHOR: olgeni@FreeBSD.org
@@ -5759,4 +5766,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1180 2011/12/31 21:22:43 olgeni Exp $
+$FreeBSD: ports/UPDATING,v 1.1181 2012/01/04 01:57:21 sahil Exp $
