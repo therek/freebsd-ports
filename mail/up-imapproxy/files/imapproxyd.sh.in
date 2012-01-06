@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/up-imapproxy/files/imapproxyd.sh.in,v 1.4 2007/07/21 03:59:50 mbr Exp $
+# $FreeBSD: ports/mail/up-imapproxy/files/imapproxyd.sh.in,v 1.5 2010/03/27 00:13:26 dougb Exp $
 #
 # PROVIDE: imapproxyd
-# REQUIRE: DAEMON courier_imap_imapd courier_imap_imapd_ssl cyrus_imapd inetd
+# REQUIRE: DAEMON courier_imap_imapd courier_imap_imapd_ssl cyrus_imapd inetd %%DOVECOT%%
 # KEYWORD: shutdown
 
 #
