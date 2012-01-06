@@ -1,8 +1,10 @@
-@comment $FreeBSD: ports/devel/py-setuptools/pkg-plist,v 1.10 2007/09/01 22:12:58 pav Exp $
+@comment $FreeBSD: ports/devel/py-setuptools/pkg-plist,v 1.11 2007/11/20 09:10:41 pav Exp $
 bin/easy_install
 bin/easy_install-%%PYVER%%
-%%PYTHON_SITELIBDIR%%/easy-install.pth
 %%PYTHON_SITELIBDIR%%/setuptools.pth
+@unexec if cmp -s %B/easy-install.pth %B/easy-install.pth.dist; then rm %B/easy-install.pth; fi
+%%PYTHON_SITELIBDIR%%/easy-install.pth.dist
+@exec [ ! -f %B/easy-install.pth ]; then cp %B/%f %B/easy-install.pth; fi
 %%PYTHON_SITELIBDIR%%/site.py
 %%PYTHON_SITELIBDIR%%/site.pyc
 %%PYTHON_SITELIBDIR%%/site.pyo
