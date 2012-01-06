@@ -1,9 +1,14 @@
-@comment $FreeBSD: ports/japanese/platex-jsclasses/pkg-plist,v 1.1 2004/05/11 21:27:58 hrs Exp $
+@comment $FreeBSD: ports/japanese/platex-jsclasses/pkg-plist,v 1.2 2006/04/02 09:40:49 hrs Exp $
 %%CLASSDIR%%/jsarticle.cls
 %%CLASSDIR%%/jsbook.cls
 %%CLASSDIR%%/jsclasses.dtx
 %%CLASSDIR%%/jsclasses.ins
 %%CLASSDIR%%/jspf.cls
+%%CLASSDIR%%/jsverb.dtx
+%%CLASSDIR%%/jsverb.ins
+%%CLASSDIR%%/jsverb.sty
+%%CLASSDIR%%/kiyou.cls
+%%CLASSDIR%%/minijs.sty
 %%CLASSDIR%%/morisawa.dtx
 %%CLASSDIR%%/morisawa.ins
 %%CLASSDIR%%/morisawa.sty
