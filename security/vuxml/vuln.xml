@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2536 2012/01/05 18:52:27 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2537 2012/01/06 18:35:42 rene Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -62,7 +62,7 @@ Note:  Please add new entries to the beginning of this file.
 	  <p>[106672] High CVE-2011-3921: Use-after-free in animation frames.
 	      Credit to Boris Zbarsky of Mozilla.<br/>
 	    [107128] High CVE-2011-3919: Heap-buffer-overflow in libxml. Credit
-	      to J&uuml;ri Aedla.<br/>
+	      to Juri Aedla.<br/>
 	    [108006] High CVE-2011-3922: Stack-buffer-overflow in glyph
 	      handling. Credit to Google Chrome Security Team (Cris Neckar).</p>
 	</blockquote>
