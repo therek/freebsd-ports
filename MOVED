@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2729 2012/01/08 17:49:02 eadler Exp $
+# $FreeBSD: ports/MOVED,v 1.2730 2012/01/08 21:53:15 eadler Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3193,3 +3193,4 @@ x11-drivers/xf86-input-citron||2012-01-07|Removed
 x11-drivers/xf86-input-fpit||2012-01-07|Removed
 multimedia/avifile||2012-01-08|Has expired: Broken for an extended period, superseded by other multimedia players
 devel/bonobo-conf||2012-01-08|Has expired: No more supported upstream, not depend on anymore.
+www/typo343||2012-01-08|Has expired: Support will end in the near future, see http://typo3.org/download/packages/ for details
