@@ -4,7 +4,7 @@
 # This file is used to tune build time options.
 # Please refer FEATURES file distributed with the source for details.
 #
-# $FreeBSD: ports/mail/opendkim/Makefile.features,v 1.4 2011/04/27 10:12:21 bapt Exp $
+# $FreeBSD: ports/mail/opendkim/Makefile.features,v 1.5 2011/07/02 11:55:27 swills Exp $
 #
 
 .if defined(WITH_ADSP_LISTS) && !defined(WITHOUT_ADSP_LISTS)
@@ -16,6 +16,7 @@ CONFIGURE_ARGS+=	--enable-allsymbols
 .endif
 
 .if defined(WITH_ATPS) && !defined(WITHOUT_ATPS)
+WITH_XTAGS=		yes
 CONFIGURE_ARGS+=	--enable-atps
 .endif
 

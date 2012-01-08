@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/opendkim/pkg-plist,v 1.5 2011/04/27 10:12:21 bapt Exp $
+@comment $FreeBSD: ports/mail/opendkim/pkg-plist,v 1.6 2011/07/02 11:55:27 swills Exp $
 %%LUA%%bin/miltertest
 bin/opendkim-genkey
 bin/opendkim-genzone
@@ -18,7 +18,7 @@ lib/libopendkim.so
 lib/libopendkim.so.5
 %%ARLIB%%libdata/pkgconfig/ar.pc
 libdata/pkgconfig/opendkim.pc
-sbin/opendkim
+%%FILTER%%sbin/opendkim
 @dirrm include/opendkim
 %%ARLIB%%@dirrm include/ar
 @dirrmtry etc/mail
