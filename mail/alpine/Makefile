@@ -16,7 +16,7 @@ DIST_SUBDIR=	alpine-${PORTVERSION}
 MAINTAINER=	dougb@FreeBSD.org
 COMMENT?=	Mail and news client descended from Pine
 
-LICENSE=	ASL
+LICENSE=	AL2
 
 OPTIONS+=	THREADS "Compile with thread support" on \
 		MOUSE "Enable mouse support for xterm" on \
@@ -47,6 +47,8 @@ CONFIGURE_ARGS+=--with-system-pinerc=${PREFIX}/etc/alpine.conf \
 		--enable-background-post --without-krb5 --without-tcl
 .endif
 CONFIGURE_ARGS+=--with-debug-level=2
+
+CONFIGURE_ENV+=	CC=${CC} CXX=${CXX}
 
 USE_OPENSSL=	yes
 
