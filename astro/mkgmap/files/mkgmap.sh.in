@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/astro/prune/files/prune.sh.in,v 1.1 2009/06/25 13:43:32 amdmi3 Exp $
+# $FreeBSD: ports/astro/mkgmap/files/mkgmap.sh.in,v 1.1 2010/05/19 12:06:51 amdmi3 Exp $
 
 JAVA="%%LOCALBASE%%/bin/java"
 JARPATH="%%JAVALIBDIR%%"
 export JAVA_VERSION="%%JAVA_VERSION%%"
 
-exec "${JAVA}" -Xmx1024m -jar "${JARPATH}/mkgmap.jar" "$@"
+exec "${JAVA}" -jar "${JARPATH}/mkgmap.jar" "$@"
