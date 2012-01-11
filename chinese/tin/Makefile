@@ -6,22 +6,21 @@
 # $FreeBSD$
 #
 
-PORTREVISION=	3
+# Don't reset PORTREVISION and keep bumping it even if PORTVERSION is changed.
+PORTREVISION=	4
 CATEGORIES=	chinese
 
-MAINTAINER=	leeym@FreeBSD.org
-
-BROKEN=		does not patch
+MAINTAINER=	ports@FreeBSD.org
 
 EXTRA_PATCHES=	${.CURDIR}/files/patch-attrib.c \
 		${.CURDIR}/files/patch-cook.c \
 		${.CURDIR}/files/patch-mail.c \
-		${.CURDIR}/files/patch-init.c \
-		${.CURDIR}/files/patch-tin_defaults
+		${.CURDIR}/files/patch-init.c
 
 MASTERDIR=	${.CURDIR}/../../news/tin
 
-WITH_TIN_SCREEN=termcap
-CONFIGURE_ARGS=	--disable-locale
+post-patch: post-patch-zh
+post-patch-zh:
+	${REINPLACE_CMD} -e 's,iso-8859-1,Big5,g' ${WRKSRC}/doc/tin.defaults
 
 .include "${MASTERDIR}/Makefile"

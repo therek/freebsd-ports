@@ -2,7 +2,7 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.55 2011/12/05 21:15:36 lev Exp $
+# $FreeBSD: ports/devel/subversion/Makefile.common,v 1.56 2011/12/20 22:37:52 pgollucci Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	1.7.2
@@ -19,7 +19,7 @@ USE_BZIP2=	yes
 USE_AUTOTOOLS=	libtool
 USE_KDE4=	# Used below if KWallet support is enabled
 
-LICENSE=	ASL
+LICENSE=	AL2
 
 CONFLICTS_INSTALL+=	${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}-1.6.[0-9]*
 

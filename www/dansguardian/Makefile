@@ -20,7 +20,7 @@ LIB_DEPENDS+=	pcre.0:${PORTSDIR}/devel/pcre
 USE_RC_SUBR=	dansguardian
 USE_GNOME=	pkgconfig
 
-CONFLICTS=	dansguardian-2.[6789]*
+CONFLICTS=	dansguardian-2.12.*
 LATEST_LINK=	dansguardian
 
 GNU_CONFIGURE=	yes
@@ -50,7 +50,7 @@ RESTRICTED=	Redistribution and commercial download is restricted.  Check ${DG_UR
 .include <bsd.port.pre.mk>
 
 .if !defined(WITHOUT_APACHE)
-USE_APACHE=	13+
+USE_APACHE=	20+
 .endif
 
 .if !defined(WITHOUT_TRICKLE)

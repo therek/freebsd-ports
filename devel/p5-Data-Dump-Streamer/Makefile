@@ -20,9 +20,10 @@ RUN_DEPENDS=	p5-Algorithm-Diff>=0:${PORTSDIR}/devel/p5-Algorithm-Diff \
 		p5-PadWalker>=0.99:${PORTSDIR}/devel/p5-PadWalker
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
+CONFIGURE_ARGS=	DDS
 PERL_MODBUILD=	yes
 
-MAN3=		Data::Dump::Streamer.3
+MAN3=		Data::Dump::Streamer.3 DDS.3
 
 .include <bsd.port.pre.mk>
 

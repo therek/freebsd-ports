@@ -49,6 +49,7 @@
     SUBDIR += calcoo
     SUBDIR += calctool
     SUBDIR += cantor
+    SUBDIR += cblas
     SUBDIR += ccmath
     SUBDIR += cgal
     SUBDIR += chaco
@@ -60,6 +61,7 @@
     SUBDIR += concorde
     SUBDIR += convertall
     SUBDIR += coq
+    SUBDIR += crlibm
     SUBDIR += cvc3
     SUBDIR += dcdflib
     SUBDIR += diehard
@@ -169,6 +171,7 @@
     SUBDIR += kash3
     SUBDIR += kbruch
     SUBDIR += kig
+    SUBDIR += kktdirect
     SUBDIR += kmplot
     SUBDIR += koctave
     SUBDIR += kseg
@@ -184,6 +187,7 @@
     SUBDIR += levmar
     SUBDIR += libR
     SUBDIR += libRmath
+    SUBDIR += libflame
     SUBDIR += libjbigi
     SUBDIR += liblbfgs
     SUBDIR += libmath++
@@ -561,6 +565,7 @@
     SUBDIR += snns
     SUBDIR += solitaire
     SUBDIR += spar
+    SUBDIR += spblas
     SUBDIR += speedcrunch
     SUBDIR += spooles
     SUBDIR += spooles-mpich
@@ -600,6 +605,7 @@
     SUBDIR += wingz3
     SUBDIR += wxMaxima
     SUBDIR += x12arima
+    SUBDIR += xblas
     SUBDIR += xgfe
     SUBDIR += xgobi
     SUBDIR += xgraph

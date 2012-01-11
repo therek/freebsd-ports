@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	xml-security
-PORTVERSION=	1.4.5
+PORTVERSION=	1.4.6
 CATEGORIES=	security java
 MASTER_SITES=	${MASTER_SITE_APACHE}
 MASTER_SITE_SUBDIR=	santuario/java-library
@@ -20,7 +20,7 @@ BUILD_DEPENDS=	${JAVALIBDIR}/commons-logging.jar:${PORTSDIR}/java/jakarta-common
 RUN_DEPENDS=	${JAVALIBDIR}/commons-logging.jar:${PORTSDIR}/java/jakarta-commons-logging \
 		${JAVALIBDIR}/xalan.jar:${PORTSDIR}/textproc/xalan-j
 
-LICENSE=	ASL
+LICENSE=	AL2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_ZIP=	yes

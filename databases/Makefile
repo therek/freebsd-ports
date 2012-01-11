@@ -196,6 +196,7 @@
     SUBDIR += mydbf2mysql
     SUBDIR += mydumper
     SUBDIR += mylibrary
+    SUBDIR += mysac
     SUBDIR += mysql++1
     SUBDIR += mysql++3
     SUBDIR += mysql-connector-c++
@@ -251,8 +252,6 @@
     SUBDIR += p5-AnyEvent-CouchDB
     SUBDIR += p5-AnyEvent-DBD-Pg
     SUBDIR += p5-AnyEvent-Redis
-    SUBDIR += p5-ApacheDBILogConfig
-    SUBDIR += p5-ApacheDBILogger
     SUBDIR += p5-AsciiDB-TagFile
     SUBDIR += p5-BDB
     SUBDIR += p5-BSON
@@ -373,6 +372,7 @@
     SUBDIR += p5-DBIx-NoSQL
     SUBDIR += p5-DBIx-Password
     SUBDIR += p5-DBIx-Perlish
+    SUBDIR += p5-DBIx-QueryLog
     SUBDIR += p5-DBIx-Recordset
     SUBDIR += p5-DBIx-RetryOverDisconnects
     SUBDIR += p5-DBIx-SQLEngine
@@ -485,7 +485,6 @@
     SUBDIR += pear-DB_Table
     SUBDIR += pear-DB_ldap
     SUBDIR += pear-DB_ldap2
-    SUBDIR += pear-Doctrine
     SUBDIR += pear-Doctrine12
     SUBDIR += pear-Horde_Db
     SUBDIR += pear-Horde_Imsp
@@ -564,6 +563,7 @@
     SUBDIR += php5-mysqli
     SUBDIR += php5-odbc
     SUBDIR += php5-pdo
+    SUBDIR += php5-pdo_cassandra
     SUBDIR += php5-pdo_dblib
     SUBDIR += php5-pdo_firebird
     SUBDIR += php5-pdo_mysql
@@ -648,6 +648,7 @@
     SUBDIR += py-cdb
     SUBDIR += py-cmemcache
     SUBDIR += py-couchdb
+    SUBDIR += py-cql
     SUBDIR += py-dbf
     SUBDIR += py-dbutils
     SUBDIR += py-firebirdsql
@@ -804,6 +805,7 @@
     SUBDIR += squirrel-sql
     SUBDIR += sybtcl
     SUBDIR += tablelog
+    SUBDIR += tarantool
     SUBDIR += tcl-Mysql
     SUBDIR += tdb
     SUBDIR += tinycdb

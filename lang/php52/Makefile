@@ -7,7 +7,7 @@
 
 PORTNAME=	php52
 PORTVERSION=	5.2.17
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES?=	lang devel www
 MASTER_SITES=	${MASTER_SITE_PHP}
 MASTER_SITE_SUBDIR=	distributions
@@ -138,13 +138,9 @@ CONFIGURE_ARGS+=--disable-cgi
 
 .if defined(WITH_APACHE)
 PHP_SAPI+=	mod
-USE_APACHE=	13+
+USE_APACHE=	20+
 .include "${PORTSDIR}/Mk/bsd.apache.mk"
-.if ${APACHE_VERSION} > 13
 CONFIGURE_ARGS+=--with-apxs2=${APXS}
-.else
-CONFIGURE_ARGS+=--with-apxs=${APXS}
-.endif
 PKGMESSAGE=	${PKGDIR}/pkg-message.mod
 MODULENAME=	libphp5
 SHORTMODNAME=	php5
@@ -191,7 +187,7 @@ CONFIGURE_ARGS+=--disable-ipv6
 .endif
 
 .if defined(WITH_BACKPORTS)
-PATCHFILES+=	php52-backports-security-20111030.patch
+PATCHFILES+=	php52-backports-security-20120103.patch
 PATCH_SITES+=	http://php52-backports.googlecode.com/files/
 .else
 FORBIDDEN=	Vulnerable since 2011-01-13, http://portaudit.freebsd.org/3761df02-0f9c-11e0-becc-0022156e8794.html

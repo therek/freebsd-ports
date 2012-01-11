@@ -112,7 +112,6 @@
     SUBDIR += boehm-gc-redirect
     SUBDIR += boehm-gc-threaded
     SUBDIR += bonobo
-    SUBDIR += bonobo-conf
     SUBDIR += boost-all
     SUBDIR += boost-docs
     SUBDIR += boost-jam
@@ -208,6 +207,7 @@
     SUBDIR += clint
     SUBDIR += clisp-hyperspec
     SUBDIR += cmake
+    SUBDIR += cmake-fedora
     SUBDIR += cmake-gui
     SUBDIR += cmph
     SUBDIR += cmunge
@@ -495,7 +495,6 @@
     SUBDIR += gmake
     SUBDIR += gnatpython
     SUBDIR += gnome-common
-    SUBDIR += gnome-crash
     SUBDIR += gnome-js-common
     SUBDIR += gnome-vfs
     SUBDIR += gnome-vfs-monikers
@@ -1009,6 +1008,7 @@
     SUBDIR += luabind
     SUBDIR += luafilesystem
     SUBDIR += luajava
+    SUBDIR += luajit
     SUBDIR += lwp
     SUBDIR += lxr
     SUBDIR += m17n-db
@@ -1097,6 +1097,7 @@
     SUBDIR += nini
     SUBDIR += ninja
     SUBDIR += ninja-ide
+    SUBDIR += node-thrift
     SUBDIR += notify-sharp
     SUBDIR += noweb
     SUBDIR += nspr
@@ -2894,6 +2895,7 @@
     SUBDIR += php5-gettext
     SUBDIR += php5-ice
     SUBDIR += php5-json
+    SUBDIR += php5-msgpack
     SUBDIR += php5-pcntl
     SUBDIR += php5-phing
     SUBDIR += php5-pinba
@@ -2993,6 +2995,9 @@
     SUBDIR += py-MultiMapping
     SUBDIR += py-PEAK-Rules
     SUBDIR += py-Persistence
+    SUBDIR += py-Products.ATContentTypes
+    SUBDIR += py-Products.ATReferenceBrowserWidget
+    SUBDIR += py-Products.Archetypes
     SUBDIR += py-Products.BTreeFolder2
     SUBDIR += py-Products.CMFActionIcons
     SUBDIR += py-Products.CMFCalendar
@@ -3002,6 +3007,7 @@
     SUBDIR += py-Products.CMFDynamicViewFTI
     SUBDIR += py-Products.CMFEditions
     SUBDIR += py-Products.CMFFormController
+    SUBDIR += py-Products.CMFPlacefulWorkflow
     SUBDIR += py-Products.CMFQuickInstallerTool
     SUBDIR += py-Products.CMFTestCase
     SUBDIR += py-Products.CMFUid
@@ -3011,9 +3017,15 @@
     SUBDIR += py-Products.ExternalMethod
     SUBDIR += py-Products.GenericSetup
     SUBDIR += py-Products.MIMETools
+    SUBDIR += py-Products.Marshall
     SUBDIR += py-Products.MimetypesRegistry
     SUBDIR += py-Products.OFSP
+    SUBDIR += py-Products.PasswordResetTool
+    SUBDIR += py-Products.PlacelessTranslationService
+    SUBDIR += py-Products.PloneLanguageTool
+    SUBDIR += py-Products.PloneTestCase
     SUBDIR += py-Products.PluginRegistry
+    SUBDIR += py-Products.PortalTransforms
     SUBDIR += py-Products.PythonScripts
     SUBDIR += py-Products.ResourceRegistries
     SUBDIR += py-Products.StandardCacheManagers
@@ -3036,6 +3048,10 @@
     SUBDIR += py-anyjson
     SUBDIR += py-apipkg
     SUBDIR += py-application
+    SUBDIR += py-archetypes.kss
+    SUBDIR += py-archetypes.querywidget
+    SUBDIR += py-archetypes.referencebrowserwidget
+    SUBDIR += py-archetypes.schemaextender
     SUBDIR += py-argparse
     SUBDIR += py-asn1
     SUBDIR += py-asn1-modules
@@ -3058,6 +3074,8 @@
     SUBDIR += py-cmdln
     SUBDIR += py-cog
     SUBDIR += py-coil
+    SUBDIR += py-collective.monkeypatcher
+    SUBDIR += py-collective.z3cform.datetimewidget
     SUBDIR += py-configobj
     SUBDIR += py-construct
     SUBDIR += py-coverage
@@ -3075,6 +3093,7 @@
     SUBDIR += py-demjson
     SUBDIR += py-dexml
     SUBDIR += py-dialog
+    SUBDIR += py-diazo
     SUBDIR += py-distorm
     SUBDIR += py-distribute
     SUBDIR += py-distutils-extra
@@ -3083,6 +3102,7 @@
     SUBDIR += py-elementtree
     SUBDIR += py-epsilon
     SUBDIR += py-event
+    SUBDIR += py-experimental.cssselect
     SUBDIR += py-extended_threading
     SUBDIR += py-extremes
     SUBDIR += py-ez_xml
@@ -3090,6 +3110,7 @@
     SUBDIR += py-fabric
     SUBDIR += py-fam
     SUBDIR += py-fileutils
+    SUBDIR += py-five.customerize
     SUBDIR += py-five.formlib
     SUBDIR += py-five.globalrequest
     SUBDIR += py-five.localsitemanager
@@ -3193,6 +3214,7 @@
     SUBDIR += py-ptrace
     SUBDIR += py-pudb
     SUBDIR += py-px
+    SUBDIR += py-py_static_check
     SUBDIR += py-pycalendar
     SUBDIR += py-pycallgraph
     SUBDIR += py-pycerberus
@@ -3515,7 +3537,6 @@
     SUBDIR += ruby-subversion
     SUBDIR += ruby-sysvipc
     SUBDIR += ruby-term-ansicolor
-    SUBDIR += ruby-thrift
     SUBDIR += ruby-tzfile
     SUBDIR += ruby-wirble
     SUBDIR += rubygem-abstract
@@ -3686,6 +3707,7 @@
     SUBDIR += rubygem-templater
     SUBDIR += rubygem-test
     SUBDIR += rubygem-test-unit
+    SUBDIR += rubygem-thrift
     SUBDIR += rubygem-thor
     SUBDIR += rubygem-tilt
     SUBDIR += rubygem-tins

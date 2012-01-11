@@ -17,7 +17,7 @@ PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
 MAINTAINER=	douglas@douglasthrift.net
 COMMENT=	Python WSGI adapter module for Apache
 
-LICENSE=	ASL
+LICENSE=	AL2
 
 MAKE_JOBS_SAFE=	yes
 
@@ -26,7 +26,7 @@ CONFLICTS=	${PKGNAMEPREFIX}mod_wsgi-2.* mod_wsgi-2.*
 
 PROJECTHOST=	modwsgi
 
-USE_APACHE=	13+
+USE_APACHE=	20+
 USE_PYTHON=	2.5+
 
 GNU_CONFIGURE=	yes

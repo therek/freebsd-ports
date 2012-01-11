@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-Mail-SpamAssassin/files/pkg-install.in,v 1.1 2011/12/31 14:17:03 scheidell Exp $
 #
 
 USER=%%USER%%
 GROUP=%%GROUP%%
-INSTALL=%%INSTALL%%
+INSTALL="%%INSTALL%%"
 PREFIX=%%PREFIX%%
 
 if [ "$2" = "PRE-INSTALL" ];then exit; fi

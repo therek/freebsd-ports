@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	spamdyke
-PORTVERSION=	4.2.0
+PORTVERSION=	4.2.1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.spamdyke.org/releases/
 EXTRACT_SUFX=	.tgz
@@ -28,8 +28,9 @@ OPTIONS=	TLS "Enable TLS support" On \
 		DEBUG_EXCESSIVE "Enable excessive debugging output" Off
 
 .include <bsd.port.pre.mk>
-.if ${OSVERSION} <= 700042
-BROKEN=	this port causes gcc to segfault
+
+.if ${CC:T:Mclang} == "clang"
+IGNORE=	uses nested functions, not supported by clang
 .endif
 
 .if defined(WITHOUT_TLS)

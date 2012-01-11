@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# $FreeBSD: ports/sysutils/volman/files/volmand.in,v 1.1 2012/01/07 04:59:41 eadler Exp $
+#
+# PROVIDE: volmand
+# REQUIRE: LOGIN
+# KEYWORD: shutdown nojail
+
+. /etc/rc.subr
+
+name="volmand"
+rcvar=`set_rcvar`
+
+load_rc_config $name
+
+: ${volmand_enable:="NO"}
+
+command="%%PREFIX%%/sbin/volmand"
+pidfile="/var/run/volmand.pid"
+
+run_rc_command "$1"

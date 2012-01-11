@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/multimedia/ptx-kmod/files/ptx.sh.in,v 1.1 2011/07/03 16:47:58 hrs Exp $
 
 # PROVIDE: ptx
 # REQUIRE: LOGIN abi
@@ -18,8 +18,7 @@ ptx_start()
 }
 ptx_stop()
 {
-# XXX: unloading is still unstable
-#	/sbin/kldunload ptx
+	/sbin/kldunload ptx
 }
 
 : ${ptx_enable="YES"}

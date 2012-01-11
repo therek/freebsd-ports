@@ -93,7 +93,6 @@
     SUBDIR += create-cert
     SUBDIR += cryptlib
     SUBDIR += cryptopp
-    SUBDIR += cryptplug
     SUBDIR += cryptstring
     SUBDIR += cvm
     SUBDIR += cyrus-sasl2
@@ -168,7 +167,6 @@
     SUBDIR += gpasman
     SUBDIR += gpass
     SUBDIR += gpgme
-    SUBDIR += gpgme03
     SUBDIR += gringotts
     SUBDIR += gsasl
     SUBDIR += gsfv
@@ -688,9 +686,11 @@
     SUBDIR += pxytest
     SUBDIR += py-AccessControl
     SUBDIR += py-PF
+    SUBDIR += py-Products.PlonePAS
     SUBDIR += py-Products.PluggableAuthService
     SUBDIR += py-RestrictedPython
     SUBDIR += py-bcrypt
+    SUBDIR += py-borg.localrole
     SUBDIR += py-cerealizer
     SUBDIR += py-clamav
     SUBDIR += py-crack
