@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/scribe/files/scribe.in,v 1.3 2011/05/15 02:49:11 dougb Exp $
+# $FreeBSD: ports/net/scribe/files/scribe.in,v 1.4 2011/05/19 01:32:18 glarkin Exp $
 #
 
 # PROVIDE: scribe
@@ -20,7 +20,7 @@ stop_postcmd=scribe_cleanup
 scribe_start()
 {
     echo "Starting ${name}."
-    /usr/sbin/daemon -cf -p ${pidfile} ${command} ${scribe_flags}
+    /usr/sbin/daemon -cf -p ${pidfile} ${command} ${scribe_flags} 2>>/var/log/scribe.log
 }
 
 scribe_cleanup() {
