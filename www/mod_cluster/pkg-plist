@@ -1,0 +1,4 @@
+%%APACHEMODDIR%%/mod_advertise.so
+%%APACHEMODDIR%%/mod_manager.so
+%%APACHEMODDIR%%/mod_proxy_cluster.so
+%%APACHEMODDIR%%/mod_slotmem.so
