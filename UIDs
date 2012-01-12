@@ -1,4 +1,4 @@
-# $FreeBSD: ports/UIDs,v 1.181 2011/10/31 14:24:04 makc Exp $
+# $FreeBSD: ports/UIDs,v 1.182 2011/11/19 07:05:21 kuriyama Exp $
 # Please keep this file sorted by UID!
 operator:*:2:5::0:0:System &:/:/usr/sbin/nologin
 smmsp:*:25:25::0:0:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin
@@ -102,6 +102,7 @@ moinmoin:*:192:192::0:0:MoinMoin User:/nonexistent:/usr/sbin/nologin
 cups:*:193:193::0:0:Cups Owner:/nonexistent:/usr/sbin/nologin
 saned:*:194:194::0:0:SANE Scanner Daemon:/nonexistent:/bin/sh
 radns:*:195:195::0:0:radns user:/nonexistent:/sbin/nologin
+mcserver:*:199:199::0:0:Minecraft Server:/nonexistent:/bin/sh
 sympa:*:200:200::0:0:Sympa Owner:/nonexistent:/usr/sbin/nologin
 privoxy:*:201:201::0:0:Privoxy proxy user:/nonexistent:/usr/sbin/nologin
 dspam:*:202:202::0:0:Dspam:/nonexistent:/usr/sbin/nologin
