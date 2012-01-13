@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2741 2012/01/12 13:32:13 scheidell Exp $
+# $FreeBSD: ports/MOVED,v 1.2742 2012/01/12 18:38:04 bapt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3206,3 +3206,4 @@ x11-themes/gtk-qn-x11-theme||2012-01-08|Has expired: No more public distfiles
 x11-themes/gtk-zenith-theme||2012-01-08|Has expired: No more public distfiles
 devel/py-py_static_check|devel/py_static_check|2012-01-12|Rename for consistency
 graphics/stl2pov|graphics/py-stl|2012-01-08|New port graphics/py-stl deprecates graphics/stl2pov
+databases/phpmyadmin211||2012-01-13|Has expired: No longer supported by the phpMyAdmin project
