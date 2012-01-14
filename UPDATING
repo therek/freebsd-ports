@@ -21,7 +21,7 @@ you update your ports collection, before attempting any port upgrades.
   AFFECTS: ports using Apache Software License 2.0
   AUTHOR: tabthorpe@FreeBSD.org
 
-  The correct acronym for Apache Sofware License 2.0 is really AL2.
+  The correct acronym for Apache Software License 2.0 is really AL2.
 
 20120109:
   AFFECTS: users of graphics/inkscape:
@@ -5804,4 +5804,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1188 2012/01/14 01:23:45 wxs Exp $
+$FreeBSD: ports/UPDATING,v 1.1189 2012/01/14 04:47:41 miwi Exp $
