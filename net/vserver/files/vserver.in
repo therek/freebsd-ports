@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/net/vserver/files/vserver.in,v 1.2 2007/02/26 23:02:03 dougb Exp $
+# $FreeBSD: ports/net/vserver/files/vserver.in,v 1.3 2010/03/27 00:14:09 dougb Exp $
 #
 # FreeBSD boot time start up script for vserver(8).
 #
@@ -24,7 +24,7 @@
 . /etc/rc.subr
 
 name=vserver
-rcvar=`set_rcvar`
+rcvar=vserver_enable
 
 command=%%PREFIX%%/sbin/vserver
 required_files=%%PREFIX%%/etc/vchat/user.db

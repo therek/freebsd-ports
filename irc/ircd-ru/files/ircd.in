@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD: ports/irc/ircd-ru/files/ircd.in,v 1.1 2006/12/30 19:49:40 miwi Exp $
+# $FreeBSD: ports/irc/ircd-ru/files/ircd.in,v 1.2 2010/03/27 00:13:05 dougb Exp $
 #
 # PROVIDE: ircd
 # REQUIRE: LOGIN syslogd
@@ -8,7 +8,7 @@
 . /etc/rc.subr
 
 name="ircd"
-rcvar=${name}_enable
+rcvar=ircd_enable
 
 command="%%PREFIX%%/sbin/$name"
 required_files="%%PREFIX%%/etc/ircd-ru/ircd.conf %%PREFIX%%/etc/ircd-ru/ircd.motd %%PREFIX%%/etc/ircd-ru/ircd.smotd"

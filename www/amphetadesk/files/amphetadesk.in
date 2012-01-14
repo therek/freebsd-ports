@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/amphetadesk/files/amphetadesk.in,v 1.4 2010/03/27 00:15:08 dougb Exp $
+# $FreeBSD: ports/www/amphetadesk/files/amphetadesk.in,v 1.5 2011/05/15 02:49:15 dougb Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="amphetadesk"
-rcvar=`set_rcvar`
+rcvar=amphetadesk_enable
 command="%%PREFIX%%/bin/AmphetaDesk"
 procname="%%PERL%%"
 

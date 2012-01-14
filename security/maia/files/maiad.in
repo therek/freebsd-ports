@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/maia/files/maiad.in,v 1.1 2011/08/29 15:57:19 crees Exp $
 #
 # PROVIDE: maiad
 # REQUIRE: LOGIN
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="maiad"
-rcvar=${name}_enable
+rcvar=maiad_enable
 
 load_rc_config $name
 

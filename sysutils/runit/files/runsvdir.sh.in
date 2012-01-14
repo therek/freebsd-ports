@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/runit/files/runsvdir.sh.in,v 1.6 2010/03/27 04:30:05 dougb Exp $
+# $FreeBSD: ports/sysutils/runit/files/runsvdir.sh.in,v 1.7 2011/05/27 15:26:01 bsam Exp $
 #
 # PROVIDE: /service
 # BEFORE:  SERVERS
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="runsvdir"
-rcvar=`set_rcvar`
+rcvar=runsvdir_enable
 
 command="%%PREFIX%%/sbin/runsvdir"
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/sams/files/sams.sh.in,v 1.3 2010/01/18 02:00:54 pgollucci Exp $
+# $FreeBSD: ports/www/sams/files/sams.sh.in,v 1.4 2010/03/27 00:15:17 dougb Exp $
 
 # PROVIDE: sams
 # REQUIRE: LOGIN cleanvar mysql
@@ -21,7 +21,7 @@ sams_pidfile=${sams_pidfile-"/var/run/samsdaemon.pid"}
 . /etc/rc.subr
 
 name="sams"
-rcvar=`set_rcvar`
+rcvar=sams_enable
 command="%%PREFIX%%/bin/samsdaemon"
 
 load_rc_config $name

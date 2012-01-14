@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/www/redmine/files/redmine.in,v 1.3 2010/03/16 02:02:52 dougb Exp $
+# $FreeBSD: ports/www/redmine/files/redmine.in,v 1.4 2011/03/08 20:53:04 decke Exp $
 
 # PROVIDE: redmine
 # REQUIRE: LOGIN
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="redmine"
-rcvar=`set_rcvar`
+rcvar=redmine_enable
 command=%%RUBY_NAME%%
 
 pidfile="%%WWWDIR%%/tmp/pids/thin.pid"

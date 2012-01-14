@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/cdpd/files/cdpd.in,v 1.2 2007/02/08 08:08:30 sem Exp $
+# $FreeBSD: ports/net-mgmt/cdpd/files/cdpd.in,v 1.3 2010/03/27 00:14:17 dougb Exp $
 #
 
 # PROVIDE: cdpd
@@ -23,7 +23,7 @@
 . /etc/rc.subr
 
 name=cdpd
-rcvar=`set_rcvar`
+rcvar=cdpd_enable
 
 command=%%PREFIX%%/sbin/$name
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/games/kaid/files/kaid.sh,v 1.2 2006/01/07 06:29:50 dougb Exp $
+# $FreeBSD: ports/games/kaid/files/kaid.sh,v 1.3 2006/02/20 20:47:02 dougb Exp $
 #
 
 # PROVIDE: kaid
@@ -17,7 +17,7 @@ kaid_enable="${kaid_enable-NO}"
 . /etc/rc.subr
 
 name=kaid
-rcvar=`set_rcvar`
+rcvar=kaid_enable
 
 command=/usr/local/sbin/${name}
 command_args=-d

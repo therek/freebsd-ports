@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache20/files/apache2.sh.in,v 1.7 2010/03/28 04:44:54 dougb Exp $
+# $FreeBSD: ports/www/apache20/files/apache2.in,v 1.1 2010/05/13 01:13:19 pgollucci Exp $
 #
 
 # PROVIDE: apache2
@@ -27,7 +27,7 @@
 . /etc/rc.subr
 
 name="apache2"
-rcvar=`set_rcvar`
+rcvar=apache2_enable
 
 start_precmd="apache2_precmd"
 restart_precmd="apache2_checkconfig"

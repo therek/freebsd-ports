@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/bigbluebutton/files/openoffice.in,v 1.1 2011/01/09 22:10:41 jpaetzel Exp $
+# $FreeBSD: ports/www/bigbluebutton/files/openoffice.in,v 1.2 2011/01/15 12:10:57 wen Exp $
 #
 
 # PROVIDE: openoffice
@@ -28,7 +28,7 @@
 . /etc/rc.subr
 
 name="openoffice"
-rcvar=${name}_enable
+rcvar=openoffice_enable
 load_rc_config $name
 
 : ${openoffice_enable:=NO}

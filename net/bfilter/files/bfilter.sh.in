@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/bfilter/files/bfilter.sh.in,v 1.2 2006/07/19 16:04:34 dougb Exp $
+# $FreeBSD: ports/net/bfilter/files/bfilter.sh.in,v 1.3 2010/03/27 00:13:36 dougb Exp $
 #
 # PROVIDE: bfilter
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@
 . /etc/rc.subr
 
 name=bfilter
-rcvar=`set_rcvar`
+rcvar=bfilter_enable
 
 command=%%PREFIX%%/bin/${name}
 sig_stop=KILL

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/x11-fonts/xfs/files/xfs.in,v 1.4 2010/05/01 11:41:02 miwi Exp $
+# $FreeBSD: ports/x11-fonts/xfs/files/xfs.in,v 1.5 2010/05/09 09:07:33 miwi Exp $
 #
 
 # PROVIDE: xfs
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="xfs"
-rcvar=`set_rcvar`
+rcvar=xfs_enable
 
 # Set defaults
 [ -z "$xfs_enable" ] && xfs_enable="NO"

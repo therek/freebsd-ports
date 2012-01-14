@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/security/trousers/files/tcsd.in,v 1.1 2010/11/07 12:05:27 nork Exp $
+# $FreeBSD: ports/security/trousers/files/tcsd.in,v 1.2 2010/12/13 18:33:55 nork Exp $
 #
 # PROVIDE: tcsd
 # REQUIRE: SERVER tpmd
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=tcsd
-rcvar=`set_rcvar`
+rcvar=tcsd_enable
 command="%%PREFIX%%/sbin/${name}"
 required_files="%%PREFIX%%/etc/${name}.conf"
 

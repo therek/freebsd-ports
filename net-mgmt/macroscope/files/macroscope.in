@@ -2,7 +2,7 @@
 #
 # macroscope - start Macroscope daemon
 #
-# $FreeBSD: ports/net-mgmt/macroscope/files/macroscope.in,v 1.4 2010/03/27 00:14:21 dougb Exp $
+# $FreeBSD: ports/net-mgmt/macroscope/files/macroscope.in,v 1.5 2011/05/15 02:49:12 dougb Exp $
 # 
 # PROVIDE: macroscope
 # REQUIRE: DAEMON
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="macroscope"
-rcvar=$(set_rcvar)
+rcvar=macroscope_enable
 
 start_precmd()
 {

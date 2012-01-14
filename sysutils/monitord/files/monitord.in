@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/monitord/files/monitord.in,v 1.1 2007/06/07 10:33:51 sat Exp $
+# $FreeBSD: ports/sysutils/monitord/files/monitord.in,v 1.2 2010/03/27 00:14:58 dougb Exp $
 #
 # PROVIDE: monitord
 # REQUIRE: LOGIN
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="monitord"
-rcvar=`set_rcvar`
+rcvar=monitord_enable
 
 load_rc_config $name
 : ${monitord_enable="NO"}

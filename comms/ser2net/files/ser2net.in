@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/comms/ser2net/files/ser2net.in,v 1.2 2009/07/15 16:55:39 dougb Exp $
+# $FreeBSD: ports/comms/ser2net/files/ser2net.in,v 1.3 2010/03/27 00:12:44 dougb Exp $
 #
 
 # PROVIDE: ser2net
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="ser2net"
-rcvar=`set_rcvar`
+rcvar=ser2net_enable
 command="%%PREFIX%%/sbin/ser2net"
 
 load_rc_config $name

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/thttpd/files/thttpd.sh.in,v 1.4 2010/03/27 00:15:18 dougb Exp $
+# $FreeBSD: ports/www/thttpd/files/thttpd.sh.in,v 1.5 2010/09/05 21:12:18 pgollucci Exp $
 #
 
 # PROVIDE: thttpd
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=thttpd
-rcvar=`set_rcvar`
+rcvar=thttpd_enable
 
 command=%%PREFIX%%/sbin/thttpd
 

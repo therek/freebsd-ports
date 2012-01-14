@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/torque/files/pbs_sched.sh.in,v 1.3 2011/05/15 02:49:15 dougb Exp $
 #
 # PROVIDE: pbs_sched
 # REQUIRE: pbs_server
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="pbs_sched"
-rcvar=${name}_enable
+rcvar=pbs_sched_enable
 
 pidfile=/var/spool/torque/sched_priv/sched.lock
 command=%%PREFIX%%/sbin/${name}

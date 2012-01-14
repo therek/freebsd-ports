@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/silc-server/files/silcd.in,v 1.1 2008/03/18 01:06:46 wxs Exp $
+# $FreeBSD: ports/net/silc-server/files/silcd.in,v 1.2 2010/03/27 00:14:04 dougb Exp $
 #
 # PROVIDE: silcd
 # REQUIRE: NETWORKING
@@ -15,7 +15,7 @@ silcd_enable=${silcd_enable-"NO"}
 . /etc/rc.subr
 
 name=silcd
-rcvar=`set_rcvar`
+rcvar=silcd_enable
 
 command=%%PREFIX%%/sbin/${name}
 pidfile=/var/run/${name}.pid

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/x11/slim/files/slim.sh.in,v 1.5 2011/01/08 08:05:29 dougb Exp $
+# $FreeBSD: ports/x11/slim/files/slim.sh.in,v 1.6 2011/05/01 18:46:39 dougb Exp $
 #
 # PROVIDE: slim
 # REQUIRE: LOGIN
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="slim"
-rcvar=`set_rcvar`
+rcvar=slim_enable
 
 start_precmd=${name}_rmfile
 stop_precmd=${name}_prestop

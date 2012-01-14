@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/emulators/vmware-guestd6/files/vmware-guestd.sh.in,v 1.9 2006/02/20 20:46:58 dougb Exp $
+# $FreeBSD: ports/emulators/vmware-guestd6/files/vmware-guestd.sh.in,v 1.10 2010/03/27 00:12:59 dougb Exp $
 #
 
 # PROVIDE: vmware-guestd
@@ -27,7 +27,7 @@ vmware_guest_vmxnet_start()
 
 # VMware kernel module: vmmemctl
 name="vmware_guest_vmmemctl"
-rcvar=`set_rcvar`
+rcvar=vmware_guest_vmmemctl_enable
 start_precmd="${checkvm_cmd}"
 start_cmd="vmware_guest_vmmemctl_start"
 stop_precmd="${checkvm_cmd}"
@@ -40,7 +40,7 @@ run_rc_command "$1"
 
 # VMware kernel module: vmxnet
 name="vmware_guest_vmxnet"
-rcvar=`set_rcvar`
+rcvar=vmware_guest_vmxnet_enable
 start_precmd="${checkvm_cmd}"
 start_cmd="vmware_guest_vmxnet_start"
 stop_precmd="${checkvm_cmd}"
@@ -52,7 +52,7 @@ run_rc_command "$1"
 
 # VMware guest daemon
 name="vmware_guestd"
-rcvar=`set_rcvar`
+rcvar=vmware_guestd_enable
 start_precmd="${checkvm_cmd}"
 unset start_cmd
 stop_precmd="${checkvm_cmd}"

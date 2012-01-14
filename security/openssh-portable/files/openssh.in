@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/openssh-portable/files/openssh.in,v 1.4 2010/03/27 00:14:45 dougb Exp $
+# $FreeBSD: ports/security/openssh-portable/files/openssh.in,v 1.5 2011/10/21 16:18:56 flo Exp $
 #
 # PROVIDE: openssh
 # REQUIRE: DAEMON
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="openssh"
-rcvar=${name}_enable
+rcvar=openssh_enable
 
 load_rc_config ${name}
 

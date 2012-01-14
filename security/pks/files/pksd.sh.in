@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/pks/files/pksd.sh.in,v 1.1 2005/09/09 14:00:10 lawrance Exp $
+# $FreeBSD: ports/security/pks/files/pksd.sh.in,v 1.2 2010/03/27 00:14:46 dougb Exp $
 #
 #
 # PROVIDE: pksd
@@ -9,7 +9,7 @@
 . /etc/rc.subr
 
 name="pksd"
-rcvar=`set_rcvar`
+rcvar=pksd_enable
 command="%%PREFIX%%/sbin/pksd"
 command_args="%%PREFIX%%/etc/${name}.conf &"
 required_files="%%PREFIX%%/etc/${name}.conf"

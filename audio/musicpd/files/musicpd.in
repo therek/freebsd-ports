@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/audio/musicpd/files/musicpd.in,v 1.8 2011/06/17 13:59:53 crees Exp $
+# $FreeBSD: ports/audio/musicpd/files/musicpd.in,v 1.9 2011/12/27 09:30:18 crees Exp $
 #
 # PROVIDE: musicpd
 # REQUIRE: mixer LOGIN avahi_daemon oss
@@ -13,7 +13,7 @@
 . /etc/rc.subr
 
 name=musicpd
-rcvar=`set_rcvar`
+rcvar=musicpd_enable
 start_precmd="${name}_getpidfile"
 stop_precmd="${name}_getpidfile"
 

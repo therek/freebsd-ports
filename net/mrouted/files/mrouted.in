@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # $NetBSD: mrouted,v 1.6 2002/03/22 04:33:59 thorpej Exp $
-# $FreeBSD: ports/net/mrouted/files/mrouted.in,v 1.1 2006/09/28 21:29:10 bms Exp $
+# $FreeBSD: ports/net/mrouted/files/mrouted.in,v 1.2 2010/03/27 00:13:49 dougb Exp $
 #
 
 # PROVIDE: mrouted
@@ -11,7 +11,7 @@
 . /etc/rc.subr
 
 name="mrouted"
-rcvar=`set_rcvar`
+rcvar=mrouted_enable
 command=%%PREFIX%%/sbin/${name}
 pidfile="/var/run/${name}.pid"
 required_files=%%PREFIX%%/etc/${name}.conf

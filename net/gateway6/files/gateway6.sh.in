@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/gateway6/files/gateway6.sh.in,v 1.5 2010/03/27 00:13:43 dougb Exp $
+# $FreeBSD: ports/net/gateway6/files/gateway6.sh.in,v 1.6 2011/06/28 04:52:12 kevlo Exp $
 #
 
 #
@@ -23,7 +23,7 @@
 . /etc/rc.subr
 
 name="gateway6"
-rcvar=`set_rcvar`
+rcvar=gateway6_enable
 
 command=%%PREFIX%%/bin/gw6c
 required_files=%%PREFIX%%/etc/gw6c.conf

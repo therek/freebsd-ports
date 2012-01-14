@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/miredo/files/miredo_server.in,v 1.2 2007/02/26 23:02:03 dougb Exp $
+# $FreeBSD: ports/net/miredo/files/miredo_server.in,v 1.3 2009/12/21 12:32:59 sumikawa Exp $
 #
 
 # PROVIDE: miredo_server
@@ -17,7 +17,7 @@ miredo_server_enable="${miredo_server_enable-NO}"
 . /etc/rc.subr
 
 name=miredo_server
-rcvar=`set_rcvar`
+rcvar=miredo_server_enable
 
 command=%%PREFIX%%/sbin/${name}
 required_files=%%PREFIX%%/etc/miredo/miredo-server.conf

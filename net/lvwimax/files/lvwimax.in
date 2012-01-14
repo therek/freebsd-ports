@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/lvwimax/files/lvwimax.in,v 1.1 2010/11/30 07:25:00 bsam Exp $
+# $FreeBSD: ports/net/lvwimax/files/lvwimax.in,v 1.2 2011/05/15 02:49:10 dougb Exp $
 #
 # PROVIDE: lvwimax
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@ lvwimax_tap_dev="tap0"
 . /etc/rc.subr
 
 name=lvwimax
-rcvar=${name}_enable
+rcvar=lvwimax_enable
 
 load_rc_config $name
 

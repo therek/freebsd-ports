@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/bacula2-server/files/bacula-dir.in,v 1.1 2009/06/15 18:17:17 wxs Exp $
+# $FreeBSD: ports/sysutils/bacula2-server/files/bacula-dir.in,v 1.2 2010/03/27 00:14:53 dougb Exp $
 #
 # PROVIDE: bacula_dir
 # REQUIRE: DAEMON %%REQ_MYSQL%% %%REQ_PGSQL%%
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name="bacula_dir"
-rcvar=${name}_enable
+rcvar=bacula_dir_enable
 command=%%PREFIX%%/sbin/bacula-dir
 
 load_rc_config $name

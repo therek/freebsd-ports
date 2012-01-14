@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/tor-devel/files/tor.in,v 1.9 2008/12/22 21:05:11 miwi Exp $
+# $FreeBSD: ports/security/tor-devel/files/tor.in,v 1.10 2010/03/27 00:14:50 dougb Exp $
 #
 # PROVIDE: tor
 # REQUIRE: NETWORKING SERVERS USR
@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name="tor"
-rcvar=${name}_enable
+rcvar=tor_enable
 
 load_rc_config ${name}
 

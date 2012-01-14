@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/diskcheckd/files/diskcheckd.in,v 1.2 2011/08/31 11:40:26 crees Exp $
 #
 # PROVIDE: diskcheckd
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="diskcheckd"
-rcvar=`set_rcvar`
+rcvar=diskcheckd_enable
 command=%%PREFIX%%/sbin/diskcheckd
 
 load_rc_config $name

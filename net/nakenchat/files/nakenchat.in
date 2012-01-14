@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/nakenchat/files/nakenchat.in,v 1.3 2006/04/03 04:33:22 mnag Exp $
+# $FreeBSD: ports/net/nakenchat/files/nakenchat.in,v 1.1 2008/11/23 19:25:12 wxs Exp $
 #
 # PROVIDE: nakenchat
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="nakenchat"
-rcvar=${name}_enable
+rcvar=nakenchat_enable
 
 load_rc_config $name
 

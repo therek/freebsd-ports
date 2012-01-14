@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/spamd/files/obspamlogd.in,v 1.4 2010/03/27 00:13:25 dougb Exp $
+# $FreeBSD: ports/mail/spamd/files/obspamlogd.in,v 1.5 2010/06/30 10:35:05 stefan Exp $
 #
 
 # PROVIDE: obspamlogd
@@ -24,7 +24,7 @@ obspamlogd_enable=${obspamlogd_enable:-"NO"}
 . /etc/rc.subr
 
 name="obspamlogd"
-rcvar=`set_rcvar`
+rcvar=obspamlogd_enable
 
 command="%%PREFIX%%/libexec/spamlogd"
 start_precmd="obspamlogd_precmd"

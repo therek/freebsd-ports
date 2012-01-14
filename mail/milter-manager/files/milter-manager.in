@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/milter-manager/files/milter-manager.in,v 1.3 2011/05/15 02:49:08 dougb Exp $
+# $FreeBSD: ports/mail/milter-manager/files/milter-manager.in,v 1.4 2011/07/02 12:03:41 swills Exp $
 #
 
 # PROVIDE: milter-manager
@@ -33,7 +33,7 @@
 . /etc/rc.subr
 
 name="miltermanager"
-rcvar=`set_rcvar`
+rcvar=miltermanager_enable
 
 extra_commands="reload"
 start_precmd="manager_precmd"

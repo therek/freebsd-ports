@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop policyd2
-# $FreeBSD: ports/mail/policyd2/files/policyd2.sh.in,v 1.2 2010/03/27 00:13:19 dougb Exp $
+# $FreeBSD: ports/mail/policyd2/files/policyd2.sh.in,v 1.3 2011/05/11 01:18:51 sahil Exp $
 
 # PROVIDE: policyd2
 # KEYWORD: shutdown
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="policyd2"
-rcvar=`set_rcvar`
+rcvar=policyd2_enable
 
 command="%%LOCALBASE%%/bin/cbpolicyd"
 command_interpreter="/usr/bin/perl"

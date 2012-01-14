@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/sysutils/spiped/files/spiped.in,v 1.1 2011/08/21 11:32:16 crees Exp $
+# $FreeBSD: ports/sysutils/spiped/files/spiped.in,v 1.2 2011/09/17 06:51:09 cperciva Exp $
 #
 # PROVIDE: spiped
 # REQUIRE: LOGIN
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="spiped"
-rcvar=${name}_enable
+rcvar=spiped_enable
 
 load_rc_config $name
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/multimedia/mythtv/files/mythbackend.in,v 1.5 2010/03/27 00:13:31 dougb Exp $
+# $FreeBSD: ports/multimedia/mythtv/files/mythbackend.in,v 1.6 2011/05/15 02:49:09 dougb Exp $
 
 # PROVIDE: mythbackend
 # REQUIRE: DAEMON
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="mythbackend"
-rcvar=`set_rcvar`
+rcvar=mythbackend_enable
 command="%%PREFIX%%/bin/${name}"
 
 load_rc_config $name

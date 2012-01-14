@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/irc/files/ircd.sh.in,v 1.1 2008/06/21 08:13:25 johans Exp $
 #
 
 # PROVIDE: ircd
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name="ircd"
-rcvar=`set_rcvar`
+rcvar=ircd_enable
 
 load_rc_config $name
 

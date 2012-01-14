@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/print/pips800/files/pips.sh,v 1.2 2006/02/20 20:47:36 dougb Exp $
+# $FreeBSD: ports/print/pips800/files/pips.sh,v 1.3 2010/03/27 00:14:37 dougb Exp $
 #
 
 # PROVIDE: pips
@@ -20,7 +20,7 @@ pips_enable=${pips_enable:-"YES"}		# Enable pips
 . /etc/rc.subr
 
 name="pips"
-rcvar=`set_rcvar`
+rcvar=pips_enable
 start_cmd="/sbin/ldconfig -m %%PREFIX%%/lib/pips"
 stop_cmd=":"
 

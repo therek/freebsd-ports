@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/radiusd-cistron/files/radiusd-cistron.in,v 1.1 2010/01/24 15:14:04 dinoex Exp $
 #
 # PROVIDE: radiusd-cistron
 # REQUIRE: LOGIN
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="radiusd"
-rcvar=${name}_enable
+rcvar=radiusd_enable
 
 command=%%PREFIX%%/sbin/${name}
 pidfile=/var/run/${name}.pid

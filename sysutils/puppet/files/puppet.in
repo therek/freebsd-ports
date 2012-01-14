@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/puppet/files/puppet.in,v 1.1 2010/08/04 17:06:24 lwhsu Exp $
+# $FreeBSD: ports/sysutils/puppet/files/puppet.in,v 1.2 2010/09/14 02:23:56 pgollucci Exp $
 #
 
 # PROVIDE: puppet
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="puppet"
-rcvar=`set_rcvar`
+rcvar=puppet_enable
 
 load_rc_config "$name"
 

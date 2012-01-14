@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/sane-backends/files/saned.in,v 1.1 2010/02/07 20:34:20 bms Exp $
 #
 # PROVIDE: saned
 # REQUIRE: netif routing mountcritlocal
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="saned"
-rcvar=`set_rcvar`
+rcvar=saned_enable
 command="%%PREFIX%%/sbin/${name}"
 
 start_precmd=${name}_prestart

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/asusoled/files/oled_clock.sh.in,v 1.1 2008/09/23 21:19:03 jkim Exp $
 #
 # PROVIDE: oled_clock
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@ oled_clock_flags=${oled_clock_flags-"-R -i -w -P 1"}
 . /etc/rc.subr
 
 name=oled_clock
-rcvar=`set_rcvar`
+rcvar=oled_clock_enable
 
 start_cmd=oled_clock_start
 stop_cmd=oled_clock_stop

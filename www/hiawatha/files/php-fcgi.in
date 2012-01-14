@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/hiawatha/files/php-fcgi.in,v 1.1 2011/08/23 20:03:35 glarkin Exp $
+# $FreeBSD: ports/www/hiawatha/files/php-fcgi.in,v 1.2 2011/08/24 17:18:10 glarkin Exp $
 #
 
 # PROVIDE: php_fcgi
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="php_fcgi"
-rcvar=`set_rcvar`
+rcvar=php_fcgi_enable
 
 load_rc_config $name
 

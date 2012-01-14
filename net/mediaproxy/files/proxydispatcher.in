@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/mediaproxy/files/proxydispatcher.in,v 1.1 2011/08/09 21:31:06 dougb Exp $
 #
 # PROVIDE: proxydispatcher
 # REQUIRE: mediaproxy
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="proxydispatcher"
-rcvar="${name}_enable"
+rcvar=proxydispatcher_enable
 
 load_rc_config $name
 

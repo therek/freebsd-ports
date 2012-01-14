@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/splatd/files/splatd.sh.in,v 1.1 2006/06/23 08:51:02 pav Exp $
+# $FreeBSD: ports/net/splatd/files/splatd.sh.in,v 1.2 2010/03/27 00:14:05 dougb Exp $
 #
 
 # PROVIDE: splatd 
@@ -11,7 +11,7 @@
 . /etc/rc.subr
 
 name=splatd
-rcvar=`set_rcvar`
+rcvar=splatd_enable
 
 command=%%PREFIX%%/sbin/splatd
 command_interpreter="%%PYTHON_CMD%%"

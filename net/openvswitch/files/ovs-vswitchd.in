@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/openvswitch/files/ovs-vswitchd.in,v 1.1 2011/12/01 20:08:27 trasz Exp $
 #
 
 # PROVIDE: ovs_vswitchd
@@ -9,7 +9,7 @@
 . /etc/rc.subr
 
 name="ovs_vswitchd"
-rcvar=${name}_enable
+rcvar=ovs_vswitchd_enable
 
 command="%%PREFIX%%/sbin/ovs-vswitchd"
 pidfile="%%PREFIX%%/var/run/ovs-vswitchd.pid"

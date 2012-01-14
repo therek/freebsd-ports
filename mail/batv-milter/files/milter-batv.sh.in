@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/batv-milter/files/milter-batv.sh.in,v 1.3 2010/03/27 00:13:10 dougb Exp $
+# $FreeBSD: ports/mail/batv-milter/files/milter-batv.sh.in,v 1.4 2011/05/15 02:49:07 dougb Exp $
 #
 
 # PROVIDE: milter-batv
@@ -33,7 +33,7 @@
 . /etc/rc.subr
 
 name="milterbatv"
-rcvar=`set_rcvar`
+rcvar=milterbatv_enable
 
 start_precmd="batv_prepcmd"
 stop_postcmd="batv_postcmd"

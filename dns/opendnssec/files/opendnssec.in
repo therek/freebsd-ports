@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/dns/opendnssec/files/opendnssec.in,v 1.2 2011/09/25 07:17:15 dougb Exp $
+# $FreeBSD: ports/dns/opendnssec/files/opendnssec.in,v 1.3 2011/12/18 08:54:22 miwi Exp $
 #
 # PROVIDE: opendnssec
 # REQUIRE: LOGIN
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name=opendnssec
-rcvar=`set_rcvar`
+rcvar=opendnssec_enable
 
 load_rc_config $name
 

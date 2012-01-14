@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/dns/adsuck/files/adsuck.in,v 1.1 2011/05/07 15:13:53 bapt Exp $
 #
 # PROVIDE: adsuck
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="adsuck"
-rcvar=${name}_enable
+rcvar=adsuck_enable
 
 command=%%PREFIX%%/sbin/${name}
 extra_commands="reload"

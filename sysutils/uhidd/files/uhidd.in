@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/uhidd/files/uhidd.in,v 1.2 2010/03/27 00:15:06 dougb Exp $
+# $FreeBSD: ports/sysutils/uhidd/files/uhidd.in,v 1.3 2011/05/03 15:20:02 glarkin Exp $
 #
 
 # PROVIDE: uhidd
@@ -16,7 +16,7 @@
 #	uhidd stop		# stop all uhidd instances.
 
 name="uhidd"
-rcvar=`set_rcvar`
+rcvar=uhidd_enable
 command="%%PREFIX%%/sbin/${name}"
 start_cmd="uhidd_start"
 required_modules="uvhid vkbd"

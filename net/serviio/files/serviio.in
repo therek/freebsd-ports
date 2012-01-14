@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/serviio/files/serviio.in,v 1.1 2011/02/28 00:13:58 mi Exp $
 #
 # PROVIDE: serviio
 # REQUIRE: LOGIN
@@ -13,7 +13,7 @@
 . /etc/rc.subr
 
 name=serviio
-rcvar=`set_rcvar`
+rcvar=serviio_enable
 command=%%PREFIX%%/sbin/serviiod
 
 load_rc_config $name

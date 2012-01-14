@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/distcache/files/dc_server.sh.in,v 1.3 2009/07/15 16:56:01 dougb Exp $
+# $FreeBSD: ports/security/distcache/files/dc_server.sh.in,v 1.4 2010/03/27 00:14:42 dougb Exp $
 #
 
 # PROVIDE: %%NAME%%
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="%%NAME%%"
-rcvar=`set_rcvar`
+rcvar=%%NAME%%_enable
 
 command="%%PREFIX%%/bin/dc_server"
 command_args="-daemon -listen IP:9001 -user nobody -pidfile /var/run/$name.pid"

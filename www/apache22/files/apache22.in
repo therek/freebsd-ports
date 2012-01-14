@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache22/files/apache22.in,v 1.9 2010/10/14 20:20:06 pgollucci Exp $
+# $FreeBSD: ports/www/apache22/files/apache22.in,v 1.10 2010/10/21 18:00:15 pgollucci Exp $
 #
 
 # PROVIDE: apache22
@@ -28,7 +28,7 @@
 . /etc/rc.subr
 
 name="apache22"
-rcvar=`set_rcvar`
+rcvar=apache22_enable
 
 start_precmd="apache22_prestart"
 restart_precmd="apache22_checkconfig"

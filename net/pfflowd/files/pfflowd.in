@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/pfflowd/files/pfflowd.in,v 1.1 2008/05/26 09:51:09 rafan Exp $
+# $FreeBSD: ports/net/pfflowd/files/pfflowd.in,v 1.2 2010/03/27 00:13:53 dougb Exp $
 #
 
 # PROVIDE: pfflowd
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name=pfflowd
-rcvar=`set_rcvar`
+rcvar=pfflowd_enable
 
 load_rc_config $name
 

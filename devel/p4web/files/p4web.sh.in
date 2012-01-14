@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/p4web/files/p4web.sh.in,v 1.1 2010/05/10 15:04:57 rene Exp $
+# $FreeBSD: ports/devel/p4web/files/p4web.sh.in,v 1.2 2011/05/15 02:49:06 dougb Exp $
 #
 
 # PROVIDE: p4web
@@ -29,7 +29,7 @@
 . /etc/rc.subr
 
 name="p4web"
-rcvar=`set_rcvar`
+rcvar=p4web_enable
 
 load_rc_config $name
 

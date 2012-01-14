@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/security/ipsec-tools/files/racoon.sh.in,v 1.9 2011/07/21 05:14:57 dougb Exp $
 #
 # PROVIDE: racoon
 # REQUIRE: LOGIN
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="racoon"
-rcvar=`set_rcvar`
+rcvar=racoon_enable
 
 load_rc_config $name
 

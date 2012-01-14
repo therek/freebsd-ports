@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/courier/files/courier.sh.in,v 1.6 2010/03/13 00:51:31 wxs Exp $
+# $FreeBSD: ports/mail/courier/files/courier.sh.in,v 1.7 2010/03/27 00:13:10 dougb Exp $
 #
 # Adapted for FreeBSD from courier.sysvinit
 #
@@ -36,7 +36,7 @@ courier_enable=${courier_enable:-"NO"}	# Run Courier-MTA (YES/NO).
 . /etc/rc.subr
 
 name="courier"
-rcvar=`set_rcvar`
+rcvar=courier_enable
 
 start_precmd="${name}_prestart"
 start_cmd="${name}_start"

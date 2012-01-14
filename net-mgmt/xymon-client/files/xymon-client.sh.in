@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/xymon-client/files/xymon-client.sh.in,v 1.1 2011/04/02 14:26:29 dinoex Exp $
+# $FreeBSD: ports/net-mgmt/xymon-client/files/xymon-client.sh.in,v 1.2 2011/05/15 02:49:12 dougb Exp $
 #
 
 # PROVIDE: xymon_client
@@ -9,7 +9,7 @@
 . /etc/rc.subr
 
 name="xymon_client"
-rcvar=`set_rcvar`
+rcvar=xymon_client_enable
 
 load_rc_config "$name"
 : ${xymon_client_enable:="NO"}

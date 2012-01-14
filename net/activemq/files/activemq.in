@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/activemq/files/activemq.in,v 1.2 2010/11/18 13:57:12 pav Exp $
 #
 
 # PROVIDE: activemq
@@ -30,7 +30,7 @@
 . /etc/rc.subr
 
 name="activemq"
-rcvar=${name}_enable
+rcvar=activemq_enable
 load_rc_config $name
 
 # Set defaults

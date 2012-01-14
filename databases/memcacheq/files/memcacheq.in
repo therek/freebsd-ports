@@ -1,6 +1,6 @@
 #!/bin/sh
 # 
-# $FreeBSD$
+# $FreeBSD: ports/databases/memcacheq/files/memcacheq.in,v 1.2 2011/07/17 01:20:08 swills Exp $
 #
 
 # PROVIDE: memcacheq
@@ -21,7 +21,7 @@
 . /etc/rc.subr
 
 name="memcacheq"
-rcvar=${name}_enable
+rcvar=memcacheq_enable
 sig_stop=KILL
 
 load_rc_config ${name}

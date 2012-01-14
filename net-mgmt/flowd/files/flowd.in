@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/flowd/files/flowd.in,v 1.2 2009/07/14 12:59:10 wxs Exp $
+# $FreeBSD: ports/net-mgmt/flowd/files/flowd.in,v 1.3 2010/03/27 00:14:19 dougb Exp $
 #
 # PROVIDE: flowd
 # REQUIRE: DAEMON
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="flowd"
-rcvar=${name}_enable
+rcvar=flowd_enable
 load_rc_config ${name}
 
 : ${flowd_enable="NO"}

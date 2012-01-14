@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/sysutils/py-supervisor/files/supervisord.in,v 1.1 2010/04/03 17:37:19 lwhsu Exp $
+# $FreeBSD: ports/sysutils/py-supervisor/files/supervisord.in,v 1.2 2012/01/10 11:07:57 rm Exp $
 #
 # PROVIDE: supervisord
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="supervisord"
-rcvar=`set_rcvar`
+rcvar=supervisord_enable
 
 command="%%PREFIX%%/bin/${name}"
 command_interpreter="%%PYTHON_CMD%%"

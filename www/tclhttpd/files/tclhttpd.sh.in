@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/tclhttpd/files/tclhttpd.sh.in,v 1.2 2009/07/15 16:56:10 dougb Exp $
+# $FreeBSD: ports/www/tclhttpd/files/tclhttpd.sh.in,v 1.3 2010/03/27 00:15:18 dougb Exp $
 #
 # PROVIDE: tclhttpd
 # REQUIRE: NETWORKING SERVERS
@@ -23,7 +23,7 @@
 . /etc/rc.subr
 
 name="tclhttpd"
-rcvar=`set_rcvar`
+rcvar=tclhttpd_enable
 
 load_rc_config $name
 

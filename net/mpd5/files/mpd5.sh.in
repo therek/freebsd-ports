@@ -1,13 +1,11 @@
 #!/bin/sh
-#
-# $FreeBSD: ports/net/mpd5/files/mpd5.sh.in,v 1.2 2010/03/27 00:13:49 dougb Exp $
-#
 
+# $FreeBSD: ports/net/mpd5/files/mpd5.sh.in,v 1.3 2011/12/21 16:16:43 sem Exp $
+#
 # PROVIDE: mpd
 # REQUIRE: SERVERS
 # BEFORE: DAEMON
 # KEYWORD: shutdown
-
 #
 # Add the following lines to /etc/rc.conf to enable mpd5:
 # mpd_enable (bool):	Set to "NO" by default.
@@ -16,12 +14,11 @@
 #			Extra flags passed to start command.
 #
 # See mpd5(8) for flags.
-#
 
 . /etc/rc.subr
 
 name="mpd5"
-rcvar=`set_rcvar mpd`
+rcvar=mpd_enable
 
 load_rc_config ${name}
 

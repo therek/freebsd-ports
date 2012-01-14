@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/isakmpd/files/isakmpd.sh.in,v 1.2 2006/03/27 20:57:48 simon Exp $
+# $FreeBSD: ports/security/isakmpd/files/isakmpd.sh.in,v 1.3 2010/03/27 00:14:44 dougb Exp $
 #
 
 # PROVIDE: ike isakmpd
@@ -11,7 +11,7 @@
 . /etc/rc.subr
 
 name="isakmpd"
-rcvar=`set_rcvar`
+rcvar=isakmpd_enable
 command="%%PREFIX%%/sbin/${name}"
 extra_commands="reload"
 

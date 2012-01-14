@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/pop3proxy/files/pop3proxyd.in,v 1.1 2006/11/23 17:36:33 pav Exp $
+# $FreeBSD: ports/mail/pop3proxy/files/pop3proxyd.in,v 1.2 2010/03/27 00:13:20 dougb Exp $
 #
 
 # PROVIDE: pop3proxyd
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name=pop3proxyd
-rcvar=`set_rcvar`
+rcvar=pop3proxyd_enable
 
 command=%%PREFIX%%/sbin/pop3proxyd
 

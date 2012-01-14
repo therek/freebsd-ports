@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: $
+# $FreeBSD: ports/security/suricata/files/suricata.in,v 1.1 2010/09/01 15:31:52 jmelo Exp $
 
 # PROVIDE: suricata
 # REQUIRE: DAEMON
@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name="suricata"
-rcvar=`set_rcvar`
+rcvar=suricata_enable
 
 command="%%PREFIX%%/bin/suricata"
 

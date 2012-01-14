@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/c-icap/files/c_icap.in,v 1.3 2009/08/02 19:35:57 mezz Exp $
+# $FreeBSD: ports/www/c-icap/files/c_icap.in,v 1.4 2010/03/27 00:15:10 dougb Exp $
 #
 
 # PROVIDE: c-icap
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="c_icap"
-rcvar=`set_rcvar`
+rcvar=c_icap_enable
 
 command="%%PREFIX%%/bin/c-icap"
 pidfile="%%RUN_DIR%%/c-icap.pid"

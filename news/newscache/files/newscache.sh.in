@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/news/newscache/files/newscache.sh.in,v 1.4 2009/07/15 16:56:00 dougb Exp $
+# $FreeBSD: ports/news/newscache/files/newscache.sh.in,v 1.5 2010/03/27 00:14:32 dougb Exp $
 #
 # PROVIDE: newscache
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@ newscache_enable=${newscache_enable-"NO"}
 . /etc/rc.subr
 
 name=newscache
-rcvar=`set_rcvar`
+rcvar=newscache_enable
 
 command=%%PREFIX%%/sbin/${name}
 pidfile=/var/run/${name}.pid

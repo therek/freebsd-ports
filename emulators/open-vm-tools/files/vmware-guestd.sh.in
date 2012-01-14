@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/emulators/open-vm-tools/files/vmware-guestd.sh.in,v 1.5 2009/06/08 23:24:44 mbr Exp $
+# $FreeBSD: ports/emulators/open-vm-tools/files/vmware-guestd.sh.in,v 1.6 2010/03/27 00:12:58 dougb Exp $
 #
 
 # PROVIDE: vmware-guestd
@@ -14,7 +14,7 @@ checkvm_cmd="%%PREFIX%%/bin/vmware-checkvm > /dev/null"
 
 # VMware guest daemon
 name="vmware_guestd"
-rcvar=`set_rcvar`
+rcvar=vmware_guestd_enable
 start_precmd="${checkvm_cmd}"
 unset start_cmd
 stop_precmd="${checkvm_cmd}"

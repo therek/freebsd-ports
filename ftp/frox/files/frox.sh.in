@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/ftp/frox/files/frox.sh.in,v 1.2 2009/07/15 16:55:42 dougb Exp $
+# $FreeBSD: ports/ftp/frox/files/frox.sh.in,v 1.3 2010/03/27 00:13:00 dougb Exp $
 #
 
 # PROVIDE: frox
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name=frox
-rcvar=`set_rcvar`
+rcvar=frox_enable
 
 command=%%PREFIX%%/sbin/frox
 pidfile=/var/run/frox.pid

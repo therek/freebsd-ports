@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/nstxd/files/nstxd.in,v 1.1 2007/03/23 17:53:36 miwi Exp $
+# $FreeBSD: ports/net/nstxd/files/nstxd.in,v 1.2 2010/03/27 00:13:50 dougb Exp $
 #
 
 # PROVIDE: nstxd
@@ -36,7 +36,7 @@
 . /etc/rc.subr
 
 name=nstxd
-rcvar=`set_rcvar`
+rcvar=nstxd_enable
 
 command=%%PREFIX%%/sbin/nstxd
 

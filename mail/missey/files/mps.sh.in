@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/missey/files/mps.sh.in,v 1.1 2006/07/06 06:12:21 delphij Exp $
+# $FreeBSD: ports/mail/missey/files/mps.sh.in,v 1.2 2010/03/27 00:13:18 dougb Exp $
 #
 
 # PROVIDE: mps
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="mps"
-rcvar=`set_rcvar`
+rcvar=mps_enable
 
 load_rc_config $name
 

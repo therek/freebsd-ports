@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/neubot/files/neubotd.in,v 1.1 2011/10/22 14:39:17 thierry Exp $
 #
 
 # PROVIDE: neubotd
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="neubotd"
-rcvar=`set_rcvar`
+rcvar=neubotd_enable
 
 # read settings, set default values
 load_rc_config "${name}"

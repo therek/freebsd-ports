@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/fprobe/files/fprobe.sh.in,v 1.1 2006/11/24 07:23:24 clsung Exp $
+# $FreeBSD: ports/net-mgmt/fprobe/files/fprobe.sh.in,v 1.2 2010/03/27 00:14:19 dougb Exp $
 #
 # PROVIDE: fprobe
 # REQUIRE: NETWORKING
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="%%NAME%%"
-rcvar=`set_rcvar`
+rcvar=%%NAME%%_enable
 
 command="%%PREFIX%%/sbin/fprobe"
 command_args="-i lo0 127.0.0.1:2055"

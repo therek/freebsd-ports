@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/3dm/files/3dm2.sh.in,v 1.3 2010/03/27 00:14:51 dougb Exp $
+# $FreeBSD: ports/sysutils/3dm/files/3dm2.sh.in,v 1.4 2010/07/01 11:47:55 sylvio Exp $
 #
 
 # PROVIDE: 3dm2
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=twdm2
-rcvar=`set_rcvar`
+rcvar=twdm2_enable
 
 start_precmd=twdm2_precmd
 command="%%PREFIX%%/sbin/3dm2"

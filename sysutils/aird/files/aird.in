@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/aird/files/aird.in,v 1.2 2011/06/13 20:40:26 crees Exp $
 #
 # PROVIDE: aird
 # REQUIRE: LOGIN
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="aird"
-rcvar=`set_rcvar`
+rcvar=aird_enable
 
 load_rc_config $name
 

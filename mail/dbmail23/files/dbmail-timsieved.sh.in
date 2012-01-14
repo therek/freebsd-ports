@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dbmail23/files/dbmail-timsieved.sh.in,v 1.2 2009/07/15 16:55:46 dougb Exp $
+# $FreeBSD: ports/mail/dbmail23/files/dbmail-timsieved.sh.in,v 1.3 2010/03/27 00:13:12 dougb Exp $
 #
 
 # PROVIDE: dbmail-timsieved
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name=dbmail_timsieved
-rcvar=`set_rcvar`
+rcvar=dbmail_timsieved_enable
 
 command=%%PREFIX%%/sbin/dbmail-timsieved
 pidfile=/var/run/dbmail-timsieved.pid

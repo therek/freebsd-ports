@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/daemontools/files/svscan.in,v 1.3 2010/01/06 11:07:54 roam Exp $
+# $FreeBSD: ports/sysutils/daemontools/files/svscan.in,v 1.4 2010/03/27 00:14:54 dougb Exp $
 #
 
 # PROVIDE: svscan
@@ -61,7 +61,7 @@
 . /etc/rc.subr
 
 name="svscan"
-rcvar=`set_rcvar`
+rcvar=svscan_enable
 command="%%PREFIX%%/bin/svscan"
 
 #

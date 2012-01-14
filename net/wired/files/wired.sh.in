@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/wired/files/wired.sh.in,v 1.3 2011/05/15 02:49:11 dougb Exp $
 #
 # PROVIDE: wired
 # REQUIRE: 
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="wired"
-rcvar=${name}_enable
+rcvar=wired_enable
 
 pidfile=%%PREFIX%%/wired/wired.pid
 command=%%PREFIX%%/sbin/${name}

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/mail/qmail/files/qmail-smtpd.rcNG,v 1.2 2011/05/15 02:49:08 dougb Exp $
 #
 # PROVIDE: qmailsmtpd
 # REQUIRE: LOGIN cleanvar
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="qmailsmtpd"
-rcvar=`set_rcvar`
+rcvar=qmailsmtpd_enable
 load_rc_config $name
 
 : ${qmailsmtpd_tcpserver="/usr/local/bin/tcpserver"}

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/proxyper/files/proxyper.in,v 1.1 2009/07/26 11:25:14 tdb Exp $
+# $FreeBSD: ports/misc/proxyper/files/proxyper.in,v 1.2 2010/03/27 00:13:29 dougb Exp $
 #
 # PROVIDE: proxyper
 # REQUIRE: LOGIN
@@ -14,7 +14,7 @@ user="nobody"
 . /etc/rc.subr
 
 name="proxyper"
-rcvar=`set_rcvar`
+rcvar=proxyper_enable
 
 pidfile=${dir}/rc5desproxy.pid
 required_files=${dir}/${name}.ini

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/cfengine3/files/cf-execd.in,v 1.6 2011/02/06 02:46:17 cy Exp $
+# $FreeBSD: ports/sysutils/cfengine3/files/cf-execd.in,v 1.7 2011/03/13 01:21:18 cy Exp $
 #
 # PROVIDE: cf-execd
 # REQUIRE: LOGIN
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name="cf_execd"
-rcvar=${name}_enable
+rcvar=cf_execd_enable
 
 command="%%PREFIX%%/sbin/cf-execd"
 

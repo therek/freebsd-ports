@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/comms/lirc/files/lircd.sh.in,v 1.3 2010/03/27 00:12:44 dougb Exp $
+# $FreeBSD: ports/comms/lirc/files/lircd.sh.in,v 1.4 2011/02/26 22:11:54 nox Exp $
 #
 # PROVIDE: lircd
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@
 . /etc/rc.subr
 
 name="lircd"
-rcvar=`set_rcvar`
+rcvar=lircd_enable
 
 load_rc_config ${name}
 : ${lircd_enable="NO"}

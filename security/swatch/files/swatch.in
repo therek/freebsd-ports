@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/swatch/files/swatch.in,v 1.5 2010/08/10 11:46:11 gabor Exp $
+# $FreeBSD: ports/security/swatch/files/swatch.in,v 1.6 2010/08/10 11:48:25 gabor Exp $
 #
 # PROVIDE: swatch
 # REQUIRE: DAEMON
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name=swatch
-rcvar=`set_rcvar`
+rcvar=swatch_enable
 
 command=%%PREFIX%%/bin/swatch
 procname=%%LOCALBASE%%/bin/perl

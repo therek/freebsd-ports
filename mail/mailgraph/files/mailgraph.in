@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mailgraph/files/mailgraph.in,v 1.3 2007/12/03 02:24:19 rafan Exp $
+# $FreeBSD: ports/mail/mailgraph/files/mailgraph.in,v 1.4 2010/03/27 00:13:16 dougb Exp $
 #
 # PROVIDE: mailgraph
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@
 . /etc/rc.subr
 
 name="mailgraph"
-rcvar=`set_rcvar`
+rcvar=mailgraph_enable
 
 command=%%PREFIX%%/sbin/${name}.pl > /dev/null 2>&1
 command_interpreter=/usr/bin/perl

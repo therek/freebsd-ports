@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/redir/files/redir.in,v 1.3 2006/04/03 04:33:22 mnag Exp $
+# $FreeBSD: ports/net/redir/files/redir.in,v 1.4 2010/03/27 00:13:55 dougb Exp $
 #
 # PROVIDE: redir
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name="redir"
-rcvar=${name}_enable
+rcvar=redir_enable
 
 load_rc_config $name
 

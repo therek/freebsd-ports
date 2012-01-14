@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/autocd/files/autocd.in,v 1.2 2008/08/06 14:31:59 pgollucci Exp $
+# $FreeBSD: ports/audio/autocd/files/autocd.in,v 1.3 2010/03/27 00:12:41 dougb Exp $
 #
 
 # PROVIDE: autocd
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name=autocd
-rcvar=${name}_enable
+rcvar=autocd_enable
 
 command=%%PREFIX%%/sbin/autocd
 

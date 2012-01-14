@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/www/tt-rss/files/ttrssd.in,v 1.1 2010/09/23 02:40:02 pgollucci Exp $
+# $FreeBSD: ports/www/tt-rss/files/ttrssd.in,v 1.2 2012/01/02 12:55:33 thierry Exp $
 #
 
 # PROVIDE: ttrssd
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="ttrssd"
-rcvar=`set_rcvar`
+rcvar=ttrssd_enable
 
 # read settings, set default values
 load_rc_config "${name}"

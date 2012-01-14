@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dk-milter/files/milter-dk.sh.in,v 1.8 2006/11/07 20:20:10 ache Exp $
+# $FreeBSD: ports/mail/dk-milter/files/milter-dk.sh.in,v 1.9 2010/03/27 00:13:12 dougb Exp $
 #
 
 # PROVIDE: milter-dk
@@ -32,7 +32,7 @@
 . /etc/rc.subr
 
 name="milterdk"
-rcvar=`set_rcvar`
+rcvar=milterdk_enable
 load_rc_config $name
 
 # DO NOT CHANGE THESE DEFAULT VALUES HERE

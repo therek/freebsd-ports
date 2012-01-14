@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/databases/couchdb/files/couchdb.in,v 1.8 2011/11/14 13:55:29 miwi Exp $
 #
 # PROVIDE: couchdb
 # REQUIRE: LOGIN
@@ -23,7 +23,7 @@
 . /etc/rc.subr
 
 name="couchdb"
-rcvar=${name}_enable
+rcvar=couchdb_enable
 
 load_rc_config $name
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav-devel/files/clamav-freshclam.in,v 1.2 2009/07/15 16:56:01 dougb Exp $
+# $FreeBSD: ports/security/clamav-devel/files/clamav-freshclam.in,v 1.3 2010/03/27 00:14:41 dougb Exp $
 #
 
 # PROVIDE: freshclam
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name=clamav_freshclam
-rcvar=`set_rcvar`
+rcvar=clamav_freshclam_enable
 
 command=%%PREFIX%%/bin/freshclam
 pidfile=%%RUNDIR%%/freshclam.pid

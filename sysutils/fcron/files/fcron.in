@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/fcron/files/fcron.in,v 1.1 2005/10/04 17:54:23 jylefort Exp $
+# $FreeBSD: ports/sysutils/fcron/files/fcron.in,v 1.2 2010/03/27 00:14:55 dougb Exp $
 #
 
 # PROVIDE: fcron
@@ -11,7 +11,7 @@
 . /etc/rc.subr
 
 name="fcron"
-rcvar="`set_rcvar`"
+rcvar=fcron_enable
 command="%%PREFIX%%/sbin/${name}"
 pidfile="/var/run/${name}.pid"
 

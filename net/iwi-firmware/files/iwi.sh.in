@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/iwi-firmware/files/iwi.sh.in,v 1.6 2006/05/08 09:37:17 flz Exp $
+# $FreeBSD: ports/net/iwi-firmware/files/iwi.sh.in,v 1.7 2010/03/27 00:13:46 dougb Exp $
 #
 
 # PROVIDE: %%DRIVERNAME%%
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="%%DRIVERNAME%%"
-rcvar=`set_rcvar`
+rcvar=%%DRIVERNAME%%_enable
 
 start_cmd="%%DRIVERNAME%%_start_cmd"
 stop_cmd="%%DRIVERNAME%%_stop_cmd"

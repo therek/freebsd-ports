@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop vmpsd
-# $FreeBSD: ports/net-mgmt/openvmps/files/vpmsd.in,v 1.1 2009/07/17 18:42:32 pgollucci Exp $
+# $FreeBSD: ports/net-mgmt/openvmps/files/vpmsd.in,v 1.2 2010/03/27 00:14:26 dougb Exp $
 
 # PROVIDE: vmpsd
 # REQUIRE: DAEMON
@@ -21,7 +21,7 @@
 . /etc/rc.subr
 
 name="vmpsd"
-rcvar=`set_rcvar`
+rcvar=vmpsd_enable
 command="%%PREFIX%%/sbin/${name}"
 
 load_rc_config $name

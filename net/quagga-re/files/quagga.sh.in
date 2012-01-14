@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/net/quagga/files/quagga.sh.in,v 1.19 2011/05/15 02:49:10 dougb Exp $
+# $FreeBSD: ports/net/quagga-re/files/quagga.sh.in,v 1.1 2011/11/25 14:09:12 sem Exp $
 #
 # PROVIDE: quagga
 # REQUIRE: netif routing 
@@ -28,7 +28,7 @@
 . /etc/rc.subr
 
 name="quagga"
-rcvar=`set_rcvar`
+rcvar=quagga_enable
 
 start_postcmd=start_postcmd
 stop_postcmd=stop_postcmd

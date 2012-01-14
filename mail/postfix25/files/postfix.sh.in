@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/postfix25/files/postfix.sh.in,v 1.9 2010/03/27 00:13:22 dougb Exp $
+# $FreeBSD: ports/mail/postfix25/files/postfix.sh.in,v 1.10 2011/05/15 02:49:08 dougb Exp $
 #
 # PROVIDE: postfix mail
 # REQUIRE: %%REQUIRE%%
@@ -21,7 +21,7 @@
 . /etc/rc.subr
 
 name="postfix"
-rcvar=${name}_enable
+rcvar=postfix_enable
 
 load_rc_config $name
 

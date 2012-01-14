@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/p5-openxpki-deployment/files/openxpki.sh.in,v 1.5 2010/08/18 12:47:08 bapt Exp $
+# $FreeBSD: ports/security/p5-openxpki-deployment/files/openxpki.sh.in,v 1.6 2011/05/15 02:49:14 dougb Exp $
 
 # PROVIDE: openxpki
 # REQUIRE: LOGIN
@@ -25,7 +25,7 @@ esac
 . /etc/rc.subr
 
 name="openxpki"
-rcvar=`set_rcvar`
+rcvar=openxpki_enable
 command="%%PREFIX%%/bin/openxpkictl"
 procname="openxpkid"
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/textproc/pootle/files/pootle.sh.in,v 1.4 2011/05/15 02:49:15 dougb Exp $
+# $FreeBSD: ports/textproc/pootle/files/pootle.sh.in,v 1.5 2011/10/11 15:16:15 skreuzer Exp $
 #
 # PROVIDE: pootle
 # REQUIRE: DAEMON
@@ -21,7 +21,7 @@
 . /etc/rc.subr
 
 name=pootle
-rcvar=${name}_enable
+rcvar=pootle_enable
 pidfile="%%POOTLERUNDIR%%/pootle.pid"
 command_interpreter="%%PYTHON_CMD%%"
 

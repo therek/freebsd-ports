@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/print/pips800/files/ekpd.sh,v 1.4 2009/07/15 16:56:00 dougb Exp $
+# $FreeBSD: ports/print/pips800/files/ekpd.sh,v 1.5 2010/03/27 00:14:36 dougb Exp $
 #
 
 # PROVIDE: ekpd
@@ -21,7 +21,7 @@
 . /etc/rc.subr
 
 name="ekpd"
-rcvar=`set_rcvar`
+rcvar=ekpd_enable
 command="%%PREFIX%%/libexec/pips/printer/ekpd"
 start_precmd="ekpd_prestart"
 

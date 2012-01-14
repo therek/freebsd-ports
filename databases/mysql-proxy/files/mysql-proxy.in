@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/databases/mysql-proxy/files/mysql-proxy.in,v 1.4 2011/09/18 19:58:15 swills Exp $
+# $FreeBSD: ports/databases/mysql-proxy/files/mysql-proxy.in,v 1.5 2011/09/27 13:42:12 swills Exp $
 #
 # PROVIDE: mysql-proxy
 # REQUIRE: LOGIN
@@ -26,7 +26,7 @@
 . /etc/rc.subr
 
 name="mysql_proxy"
-rcvar=`set_rcvar`
+rcvar=mysql_proxy_enable
 
 load_rc_config $name
 

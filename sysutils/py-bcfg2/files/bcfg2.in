@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/py-bcfg2/files/bcfg2.in,v 1.1 2008/01/12 14:46:13 bsam Exp $
+# $FreeBSD: ports/sysutils/py-bcfg2/files/bcfg2.in,v 1.2 2010/03/27 00:15:03 dougb Exp $
 #
 # PROVIDE: bcfg2
 # REQUIRE: LOGIN
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="bcfg2"
-rcvar=${name}_enable
+rcvar=bcfg2_enable
 
 load_rc_config $name
 

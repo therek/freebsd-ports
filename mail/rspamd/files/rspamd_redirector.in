@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/rspamd/files/rspamd_redirector.in,v 1.1 2011/02/07 16:53:04 vsevolod Exp $
 #
 # PROVIDE: rspamd_redirector
 # REQUIRE: LOGIN
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="rspamd_redirector"
-rcvar=`set_rcvar`
+rcvar=rspamd_redirector_enable
 command="%%PREFIX%%/bin/rspamd-redirector"
 
 load_rc_config $name

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/anyterm/files/anytermd.in,v 1.2 2010/03/27 00:15:08 dougb Exp $
+# $FreeBSD: ports/www/anyterm/files/anytermd.in,v 1.3 2011/01/15 15:33:43 sunpoet Exp $
 #
 
 # PROVIDE: anytermd
@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name=anytermd
-rcvar=`set_rcvar`
+rcvar=anytermd_enable
 
 load_rc_config $name
 

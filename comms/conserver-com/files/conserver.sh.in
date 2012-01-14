@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/comms/conserver-com/files/conserver.sh.in,v 1.3 2007/08/27 20:07:08 hrs Exp $
+# $FreeBSD: ports/comms/conserver-com/files/conserver.sh.in,v 1.4 2010/03/27 00:12:44 dougb Exp $
 #
 
 # PROVIDE: conserver
@@ -10,7 +10,7 @@
 . /etc/rc.subr
 
 name="conserver"
-rcvar=`set_rcvar`
+rcvar=conserver_enable
 
 command=%%PREFIX%%/sbin/${name}
 pidfile=/var/run/${name}.pid

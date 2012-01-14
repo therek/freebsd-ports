@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/asusoled/files/asusoled.sh.in,v 1.1 2008/09/23 21:19:03 jkim Exp $
 #
 # PROVIDE: asusoled
 # REQUIRE: DAEMON
@@ -18,7 +18,7 @@ asusoled_command=${asusoled_command-""}
 . /etc/rc.subr
 
 name=asusoled
-rcvar=`set_rcvar`
+rcvar=asusoled_enable
 
 start_cmd=asusoled_start
 stop_cmd=asusoled_stop

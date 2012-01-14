@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/p4p/files/p4p.sh.in,v 1.1 2010/05/10 15:02:17 rene Exp $
+# $FreeBSD: ports/devel/p4p/files/p4p.sh.in,v 1.2 2011/05/15 02:49:06 dougb Exp $
 #
 
 # PROVIDE: p4p
@@ -30,7 +30,7 @@
 . /etc/rc.subr
 
 name="p4p"
-rcvar=`set_rcvar`
+rcvar=p4p_enable
 
 load_rc_config $name
 

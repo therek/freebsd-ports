@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/webfs/files/webfsd.in,v 1.1 2007/06/18 18:17:55 miwi Exp $
+# $FreeBSD: ports/www/webfs/files/webfsd.in,v 1.2 2010/03/27 00:15:20 dougb Exp $
 #
 # PROVIDE: webfsd
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="webfsd"
-rcvar=`set_rcvar`
+rcvar=webfsd_enable
 
 load_rc_config $name
 

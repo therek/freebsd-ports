@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/irc/inspircd/files/inspircd.sh.in,v 1.2 2009/07/15 16:55:44 dougb Exp $
+# $FreeBSD: ports/irc/inspircd/files/inspircd.in,v 1.1 2011/03/17 15:51:01 miwi Exp $
 #
 # PROVIDE: %%PORTNAME%%
 # REQUIRE: DAEMON
@@ -30,7 +30,7 @@
 . /etc/rc.subr
 
 name=%%PORTNAME%%
-rcvar=`set_rcvar`
+rcvar=%%PORTNAME%%_enable
 
 load_rc_config ${name}
 

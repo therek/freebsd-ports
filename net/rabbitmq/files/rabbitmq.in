@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/rabbitmq/files/rabbitmq.in,v 1.8 2011/08/31 12:36:27 crees Exp $
 #
 # PROVIDE: rabbitmq
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name=rabbitmq
-rcvar=`set_rcvar`
+rcvar=rabbitmq_enable
 
 load_rc_config $name
 

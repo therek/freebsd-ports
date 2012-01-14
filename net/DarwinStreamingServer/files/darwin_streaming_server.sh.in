@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/DarwinStreamingServer/files/darwin_streaming_server.sh.in,v 1.1 2006/08/13 00:22:50 nork Exp $
+# $FreeBSD: ports/net/DarwinStreamingServer/files/darwin_streaming_server.sh.in,v 1.2 2010/03/27 00:13:33 dougb Exp $
 #
 # PROVIDE: darwin_streaming_server
 # REQUIRE: streamingadminserver
@@ -10,7 +10,7 @@ darwin_streaming_server_enable=${darwin_streaming_server_enable-"NO"}
 . /etc/rc.subr
 
 name=darwin_streaming_server
-rcvar=`set_rcvar`
+rcvar=darwin_streaming_server_enable
 command=%%PREFIX%%/sbin/DarwinStreamingServer
 
 load_rc_config ${name}

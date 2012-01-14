@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/mydns-ng/files/mydns.in,v 1.1 2009/03/29 11:56:20 lwhsu Exp $
+# $FreeBSD: ports/dns/mydns-ng/files/mydns.in,v 1.2 2010/03/27 00:12:55 dougb Exp $
 #
 
 # PROVIDE: mydns
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="mydns"
-rcvar=`set_rcvar`
+rcvar=mydns_enable
 
 load_rc_config $name
 

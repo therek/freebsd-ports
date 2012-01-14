@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/gatling/files/gatling.in,v 1.1 2009/05/28 17:21:46 dhn Exp $
+# $FreeBSD: ports/www/gatling/files/gatling.in,v 1.2 2010/03/27 00:15:12 dougb Exp $
 #
 
 # PROVIDE: gatling
@@ -27,7 +27,7 @@ check_user() {
 . /etc/rc.subr
 
 name=gatling
-rcvar=`set_rcvar`
+rcvar=gatling_enable
 
 load_rc_config ${name}
 

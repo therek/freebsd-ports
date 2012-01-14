@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/vtun/files/vtund.in,v 1.3 2010/04/16 08:57:43 kuriyama Exp $
+# $FreeBSD: ports/net/vtun/files/vtund.in,v 1.4 2011/04/21 15:03:57 kuriyama Exp $
 #
 # PROVIDE: vtund
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@ vtund_flags=${vtund_flags:-"-s"}
 . /etc/rc.subr
 
 name=vtund
-rcvar=`set_rcvar`
+rcvar=vtund_enable
 required_files="%%PREFIX%%/etc/vtund.conf"
 pidfile=/var/run/vtund.pid
 

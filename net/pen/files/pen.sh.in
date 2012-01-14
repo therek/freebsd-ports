@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/pen/files/pen.sh.in,v 1.2 2009/07/15 16:55:52 dougb Exp $
+# $FreeBSD: ports/net/pen/files/pen.sh.in,v 1.3 2010/03/27 00:13:53 dougb Exp $
 #
 
 # PROVIDE: pen
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name=pen
-rcvar=`set_rcvar`
+rcvar=pen_enable
 
 command=%%PREFIX%%/bin/pen
 

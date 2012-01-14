@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/dnetc/files/dnetc.sh.in,v 1.3 2009/07/26 12:01:21 tdb Exp $
+# $FreeBSD: ports/misc/dnetc/files/dnetc.sh.in,v 1.4 2010/03/27 00:13:27 dougb Exp $
 #
 # PROVIDE: dnetc
 # REQUIRE: LOGIN
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="dnetc"
-rcvar=`set_rcvar`
+rcvar=dnetc_enable
 
 load_rc_config $name
 

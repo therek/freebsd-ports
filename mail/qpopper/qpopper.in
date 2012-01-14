@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/qpopper/qpopper.in,v 1.1 2011/12/31 21:50:43 beech Exp $
 
 # PROVIDE: qpopper
 # REQUIRE: NETWORKING SERVERS
@@ -18,7 +18,7 @@ qpopper_flags=${qpopper_flags-""}
 . /etc/rc.subr
 
 name=qpopper
-rcvar=`set_rcvar`
+rcvar=qpopper_enable
 command=%%PREFIX%%/libexec/qpopper
 command_args="${qpopper_flags}"
 

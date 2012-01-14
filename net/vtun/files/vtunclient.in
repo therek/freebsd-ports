@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/vtun/files/vtunclient.in,v 1.5 2010/04/16 08:57:43 kuriyama Exp $
+# $FreeBSD: ports/net/vtun/files/vtunclient.in,v 1.6 2011/04/21 15:03:57 kuriyama Exp $
 #
 # PROVIDE: vtunclient
 # REQUIRE: DAEMON
@@ -29,7 +29,7 @@ vtunclient_enable=${vtunclient_enable:-"NO"}
 . /etc/rc.subr
 
 name=vtunclient
-rcvar=`set_rcvar`
+rcvar=vtunclient_enable
 required_files="%%PREFIX%%/etc/vtund.conf"
 
 command=%%PREFIX%%/sbin/vtund

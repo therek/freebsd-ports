@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/sid-milter/files/milter-sid.sh.in,v 1.4 2007/10/21 08:39:59 dinoex Exp $
+# $FreeBSD: ports/mail/sid-milter/files/milter-sid.sh.in,v 1.5 2010/03/27 00:13:24 dougb Exp $
 #
 
 # PROVIDE: miltersid
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="miltersid"
-rcvar=`set_rcvar`
+rcvar=miltersid_enable
 load_rc_config $name
 
 # DO NOT CHANGE THESE DEFAULT VALUES HERE

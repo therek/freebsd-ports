@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/cfengine/files/cfservd.in,v 1.2 2009/07/15 16:56:04 dougb Exp $
+# $FreeBSD: ports/sysutils/cfengine/files/cfservd.in,v 1.3 2010/03/27 00:14:54 dougb Exp $
 #
 # PROVIDE: cfservd
 # REQUIRE: SERVERS
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="cfservd"
-rcvar=${name}_enable
+rcvar=cfservd_enable
 
 command="%%PREFIX%%/sbin/${name}"
 

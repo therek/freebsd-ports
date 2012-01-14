@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/games/armagetron/files/armagetronad_dedicated.in,v 1.1 2010/07/04 14:38:22 sylvio Exp $
 #
 # PROVIDE: armagetronad_dedicated
 # REQUIRE: LOGIN
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="armagetronad_dedicated"
-rcvar=${name}_enable
+rcvar=armagetronad_dedicated_enable
 
 command=%%PREFIX%%/bin/${name}
 pidfile=/var/run/${name}.pid

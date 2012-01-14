@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/multimedia/zoneminder/files/zoneminder.in,v 1.1 2011/07/06 15:05:09 bsam Exp $
+# $FreeBSD: ports/multimedia/zoneminder/files/zoneminder.in,v 1.2 2011/07/09 18:55:02 bsam Exp $
 #
 # PROVIDE: zoneminder
 # REQUIRE: mysql apache
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="zoneminder"
-rcvar=${name}_enable
+rcvar=zoneminder_enable
 
 load_rc_config "$name"
 : ${zoneminder_enable="NO"}

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/astro/gpxloggerd/files/gpxloggerd.in,v 1.1 2010/10/13 09:32:34 sunpoet Exp $
+# $FreeBSD: ports/astro/gpxloggerd/files/gpxloggerd.in,v 1.2 2010/10/15 00:51:40 sunpoet Exp $
 #
 
 # PROVIDE: gpxloggerd
@@ -28,7 +28,7 @@
 . /etc/rc.subr
 
 name=gpxloggerd
-rcvar=`set_rcvar`
+rcvar=gpxloggerd_enable
 
 load_rc_config $name
 

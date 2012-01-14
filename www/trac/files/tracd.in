@@ -2,7 +2,7 @@
 #
 # tracd startup
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/trac/files/tracd.in,v 1.1 2011/07/06 00:26:45 clsung Exp $
 
 # PROVIDE: tracd
 # REQUIRE: LOGIN
@@ -30,7 +30,7 @@
 . /etc/rc.subr
 
 name="tracd"
-rcvar="${name}_enable"
+rcvar=tracd_enable
 
 tracd_enable=${tracd_enable:-"NO"}
 tracd_listen=${tracd_listen:-"0.0.0.0"}

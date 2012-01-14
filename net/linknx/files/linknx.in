@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/linknx/files/linknx.in,v 1.2 2010/03/27 00:13:47 dougb Exp $
+# $FreeBSD: ports/net/linknx/files/linknx.in,v 1.3 2011/05/15 02:49:10 dougb Exp $
 #
 
 # PROVIDE: linknx
@@ -23,7 +23,7 @@
 . /etc/rc.subr
 
 name="linknx"
-rcvar=`set_rcvar`
+rcvar=linknx_enable
 
 start_precmd="linknx_precmd"
 

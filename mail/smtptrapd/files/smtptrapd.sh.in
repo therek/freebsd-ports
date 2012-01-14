@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/smtptrapd/files/smtptrapd.sh.in,v 1.2 2006/02/20 20:47:14 dougb Exp $
+# $FreeBSD: ports/mail/smtptrapd/files/smtptrapd.sh.in,v 1.3 2010/03/27 00:13:25 dougb Exp $
 #
 
 # PROVIDE: smtptrapd
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name=smtptrapd
-rcvar=`set_rcvar`
+rcvar=smtptrapd_enable
 
 command=%%PREFIX%%/bin/smtptrapd
 

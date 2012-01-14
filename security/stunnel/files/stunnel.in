@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/stunnel/files/stunnel.in,v 1.9 2008/01/26 14:18:12 roam Exp $
+# $FreeBSD: ports/security/stunnel/files/stunnel.in,v 1.10 2010/03/27 00:14:49 dougb Exp $
 #
 
 # PROVIDE: stunnel
@@ -24,7 +24,7 @@
 . /etc/rc.subr
 
 name="stunnel"
-rcvar=`set_rcvar`
+rcvar=stunnel_enable
 
 load_rc_config $name
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/trac-bitten/files/bitten-slave.in,v 1.1 2011/10/13 23:22:22 glarkin Exp $
 #
 # PROVIDE: bitten_slave
 # REQUIRE: LOGIN
@@ -12,7 +12,7 @@
 . /etc/rc.subr
 
 name=bitten_slave
-rcvar=`set_rcvar`
+rcvar=bitten_slave_enable
 logfile=/var/log/bitten-slave.log
 conffile=%%ETCDIR%%/bitten-slave.conf
 workdir=/var/lib/bitten-slave

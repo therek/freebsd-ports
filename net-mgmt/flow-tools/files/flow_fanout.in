@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/flow-tools/files/flow_fanout.in,v 1.1 2007/06/12 12:52:32 stas Exp $
+# $FreeBSD: ports/net-mgmt/flow-tools/files/flow_fanout.in,v 1.2 2009/07/15 16:55:56 dougb Exp $
 #
 
 # PROVIDE: flow_fanout
@@ -41,7 +41,7 @@
 . /etc/rc.subr
 
 name="flow_fanout"
-rcvar=`set_rcvar`
+rcvar=flow_fanout_enable
 
 setup_profile_vars()
 {

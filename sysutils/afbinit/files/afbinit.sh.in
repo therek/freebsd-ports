@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/afbinit/files/afbinit.sh.in,v 1.1 2006/02/20 20:10:14 marius Exp $
+# $FreeBSD: ports/sysutils/afbinit/files/afbinit.sh.in,v 1.2 2010/03/27 00:14:51 dougb Exp $
 #
 
 # PROVIDE: afbinit
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name="afbinit"
-rcvar=${name}_enable
+rcvar=afbinit_enable
 
 start_cmd="afbinit_startcmd"
 

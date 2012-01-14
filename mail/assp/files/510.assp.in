@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/assp/files/periodic-assp.sh.in,v 1.5 2010/03/27 00:13:10 dougb Exp $
+# $FreeBSD: ports/mail/assp/files/510.assp.in,v 1.6 2011/01/06 16:26:53 ohauer Exp $
 #
 # Run ASSP's nightly housekeeping script, rebuildspamdb.pl
 # Delete old ASSP log files
@@ -20,7 +20,7 @@ fi
 
 . /etc/rc.subr
 name=assp
-rcvar=`set_rcvar`
+rcvar=assp_enable
 load_rc_config $name
 : ${assp_logexpire="45"}
 

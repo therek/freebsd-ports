@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/irc/ircservices/files/ircservices.in,v 1.2 2009/08/31 13:50:55 wxs Exp $
+# $FreeBSD: ports/irc/ircservices/files/ircservices.in,v 1.3 2010/03/27 00:13:05 dougb Exp $
 #
 # PROVIDE: ircservices
 # REQUIRE: LOGIN
@@ -8,7 +8,7 @@
 . /etc/rc.subr
 
 name=ircservices
-rcvar=${name}_enable
+rcvar=ircservices_enable
 
 command="%%PREFIX%%/sbin/${name}"
 command_args="-dir=%%PREFIX%%/etc/ircservices"

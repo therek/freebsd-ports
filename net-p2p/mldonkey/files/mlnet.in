@@ -1,6 +1,6 @@
 #!%%SH%%
 #
-# $FreeBSD: ports/net-p2p/mldonkey/files/mlnet.in,v 1.6 2010/03/27 00:14:30 dougb Exp $
+# $FreeBSD: ports/net-p2p/mldonkey/files/mlnet.in,v 1.7 2011/05/15 02:49:13 dougb Exp $
 #
 # Under a BSDL license. Copyright 2005. Mario S F Ferreira <lioux@FreeBSD.org>
 
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="mlnet"
-rcvar=`set_rcvar`
+rcvar=mlnet_enable
 command="%%PREFIX%%/bin/${name}"
 procname="%%PREFIX%%/bin/${name}-real"
 

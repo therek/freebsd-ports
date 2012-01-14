@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/ftp/ftpd-tls/files/ftpd-tls.sh.in,v 1.1 2006/02/20 12:38:27 marius Exp $
+# $FreeBSD: ports/ftp/ftpd-tls/files/ftpd-tls.sh.in,v 1.2 2010/03/27 00:13:00 dougb Exp $
 #
 
 # PROVIDE: ftpd-tls
@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name="ftpd_tls"
-rcvar=${name}_enable
+rcvar=ftpd_tls_enable
 
 command=%%PREFIX%%/libexec/ftpd-tls
 command_args="> /dev/null"

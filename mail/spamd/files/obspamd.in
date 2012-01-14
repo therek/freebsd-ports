@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/spamd/files/obspamd.in,v 1.6 2009/09/20 18:54:39 amdmi3 Exp $
+# $FreeBSD: ports/mail/spamd/files/obspamd.in,v 1.7 2010/03/27 00:13:25 dougb Exp $
 #
 
 # PROVIDE: obspamd
@@ -23,7 +23,7 @@ obspamd_enable=${obspamd_enable:-"NO"}
 . /etc/rc.subr
 
 name="obspamd"
-rcvar=`set_rcvar`
+rcvar=obspamd_enable
 
 command="%%PREFIX%%/libexec/%%SPAMDBIN%%"
 start_precmd="obspamd_precmd"

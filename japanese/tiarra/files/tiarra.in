@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/japanese/tiarra/files/tiarra.in,v 1.2 2009/10/18 17:55:05 ume Exp $
+# $FreeBSD: ports/japanese/tiarra/files/tiarra.in,v 1.3 2010/03/27 00:13:08 dougb Exp $
 #
 
 # PROVIDE: tiarra
@@ -8,19 +8,17 @@
 # BEFORE: LOGIN
 # KEYWORD: shutdown
 
-prefix=%%PREFIX%%
+. /etc/rc.subr
+
 name="tiarra"
+rcvar=tiarra_enable
+
+load_rc_config $name
 
 tiarra_enable=${tiarra_enable:-"NO"}
 tiarra_flags=${tiarra_flags:-"--quiet"}
 tiarra_user=${tiarra_user:-"%%TIARRA_USER%%"}
-tiarra_chdir=${tiarra_chdir:-"${prefix}/${name}"}
-
-. /etc/rc.subr
-
-rcvar=`set_rcvar`
-
-load_rc_config $name
+tiarra_chdir=${tiarra_chdir:-"%%PREFIX%%/${name}"}
 
 command="${tiarra_chdir}/${name}"
 command_interpreter="/usr/bin/perl"

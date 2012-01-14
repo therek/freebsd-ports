@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/comms/conserver/files/conserver.sh.in,v 1.6 2008/06/15 15:19:38 cy Exp $
+# $FreeBSD: ports/comms/conserver/files/conserver.sh.in,v 1.7 2008/06/18 19:06:52 cy Exp $
 
 # PROVIDE: conserver
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@ conserver_enable=${conserver_enable:-"no"}
 . /etc/rc.subr
 
 name=conserver
-rcvar=`set_rcvar`
+rcvar=conserver_enable
 
 command=%%PREFIX%%/sbin/conserver
 conserver_configfile=${conserver_configfile:-"%%PREFIX%%/etc/conserver.cf"}

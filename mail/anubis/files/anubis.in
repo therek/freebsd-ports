@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/anubis/files/anubis.in,v 1.1 2011/02/14 21:38:40 dhn Exp $
 #
 
 # PROVIDE: anubis
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="anubis"
-rcvar=`set_rcvar`
+rcvar=anubis_enable
 
 load_rc_config ${name}
 

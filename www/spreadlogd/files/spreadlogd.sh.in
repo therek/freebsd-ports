@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/spreadlogd/files/spreadlogd.sh.in,v 1.3 2009/07/15 16:56:10 dougb Exp $
+# $FreeBSD: ports/www/spreadlogd/files/spreadlogd.sh.in,v 1.4 2010/03/27 00:15:17 dougb Exp $
 #
 
 # PROVIDE: spreadlogd
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=spreadlogd
-rcvar=`set_rcvar`
+rcvar=spreadlogd_enable
 
 command="%%PREFIX%%/sbin/spreadlogd"
 pidfile=/var/run/${name}.pid

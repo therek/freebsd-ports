@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/nginx/files/nginx.sh.in,v 1.8 2010/03/27 00:15:15 dougb Exp $
+# $FreeBSD: ports/www/nginx/files/nginx.sh.in,v 1.9 2010/03/28 04:44:54 dougb Exp $
 
 # PROVIDE: nginx
 # REQUIRE: LOGIN cleanvar
@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name="nginx"
-rcvar=`set_rcvar`
+rcvar=nginx_enable
 
 start_precmd="nginx_precmd"
 restart_precmd="nginx_checkconfig"

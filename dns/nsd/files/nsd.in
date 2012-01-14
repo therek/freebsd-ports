@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/nsd/files/nsd.in,v 1.8 2010/11/25 16:04:00 bapt Exp $
+# $FreeBSD: ports/dns/nsd/files/nsd.in,v 1.9 2011/11/28 11:36:53 miwi Exp $
 #
 # PROVIDE: nsd
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name=nsd
-rcvar=`set_rcvar`
+rcvar=nsd_enable
 
 required_files=%%PREFIX%%/etc/nsd/nsd.conf
 

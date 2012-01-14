@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/devcpu-data/files/microcode_update.in,v 1.1 2009/08/16 17:23:58 stas Exp $
 #
 
 # PROVIDE:	microcode_update
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name="microcode_update"
-rcvar=`set_rcvar`
+rcvar=microcode_update_enable
 stop_cmd=":"
 start_precmd="microcode_update_prepare"
 start_cmd="microcode_update_start"

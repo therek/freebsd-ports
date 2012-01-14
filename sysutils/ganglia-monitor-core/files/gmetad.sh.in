@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/ganglia-monitor-core/files/gmetad.sh.in,v 1.1 2006/07/13 21:52:02 brooks Exp $
+# $FreeBSD: ports/sysutils/ganglia-monitor-core/files/gmetad.sh.in,v 1.2 2010/03/27 00:14:55 dougb Exp $
 
 # PROVIDE: gmetad
 # REQUIRE: gmond
@@ -8,7 +8,7 @@
 . /etc/rc.subr
 
 name=gmetad
-rcvar=`set_rcvar`
+rcvar=gmetad_enable
 command="%%PREFIX%%/sbin/${name}"
 start_precmd="gmetad_prestart"
 stop_postcmd="gmetad_poststop"

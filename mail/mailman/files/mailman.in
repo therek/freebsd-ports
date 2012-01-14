@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mailman/files/mailman.in,v 1.4 2011/06/13 19:22:25 crees Exp $
+# $FreeBSD: ports/mail/mailman/files/mailman.in,v 1.5 2011/06/14 11:49:25 wxs Exp $
 #
 # PROVIDE: mailman
 # REQUIRE: LOGIN
@@ -13,7 +13,7 @@
 . /etc/rc.subr
 
 name="mailman"
-rcvar=${name}_enable
+rcvar=mailman_enable
 
 pidfile="%%MAILMANDIR%%/data/master-qrunner.pid"
 

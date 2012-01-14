@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/perdition/files/perdition.imap4s.in,v 1.3 2009/07/15 16:55:48 dougb Exp $
+# $FreeBSD: ports/mail/perdition/files/perdition.imap4s.in,v 1.4 2010/03/27 00:13:19 dougb Exp $
 #
 # PROVIDE: perdition_imap4s
 # REQUIRE: DAEMON
@@ -19,7 +19,7 @@ perdition_imap4s_enable=${perdition_imap4s_enable-"NO"}
 . /etc/rc.subr
 
 name="perdition_imap4s"
-rcvar=`set_rcvar`
+rcvar=perdition_imap4s_enable
 
 command="%%PREFIX%%/sbin/perdition.imap4s"
 pidfile="/var/run/perdition.imap4s/perdition.imap4s.pid"

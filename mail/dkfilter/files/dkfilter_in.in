@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/dkfilter/files/dkfilter_in.in,v 1.3 2006/09/18 14:12:16 rafan Exp $
+# $FreeBSD: ports/mail/dkfilter/files/dkfilter_in.in,v 1.4 2010/03/27 00:13:12 dougb Exp $
 #
 
 # PROVIDE: dkfilter_in
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=dkfilter_in
-rcvar=`set_rcvar`
+rcvar=dkfilter_in_enable
 
 # set defaults
 

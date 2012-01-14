@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/yate/files/yate.sh.in,v 1.1 2011/05/22 12:38:03 flo Exp $
 #
 # PROVIDE: yate
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name=yate
-rcvar=`set_rcvar`
+rcvar=yate_enable
 
 command="%%PREFIX%%/bin/yate"
 pidfile="/var/run/${name}.pid"

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/slony1/files/slon.sh.in,v 1.5 2009/03/22 13:28:24 olgeni Exp $
+# $FreeBSD: ports/databases/slony1/files/slon.sh.in,v 1.6 2011/05/15 02:49:06 dougb Exp $
 # Modified by Brian A. Seklecki <bseklecki@collaborativefusion.com>
 #                               <lavalamp@spiritual-machines.org>
 # $Id$ 
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="slon"
-rcvar=`set_rcvar`
+rcvar=slon_enable
 
 load_rc_config "$name"
 _pidprefix="/var/run/${name}"

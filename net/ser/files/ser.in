@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/ser/files/ser.in,v 1.2 2009/07/15 16:55:54 dougb Exp $
+# $FreeBSD: ports/net/ser/files/ser.in,v 1.3 2010/03/27 00:14:03 dougb Exp $
 #
 
 # PROVIDE: ser
@@ -13,7 +13,7 @@
 . /etc/rc.subr
 
 name="ser"
-rcvar=`set_rcvar`
+rcvar=ser_enable
 command="%%PREFIX%%/sbin/${name}"
 pidfile="/var/run/${name}.pid"
 command_args="-P ${pidfile} > /dev/null"

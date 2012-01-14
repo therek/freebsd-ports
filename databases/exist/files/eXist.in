@@ -2,7 +2,7 @@
 #
 # eXist startup script.
 #
-# $FreeBSD: ports/databases/exist/files/eXist.in,v 1.1 2007/09/29 05:50:46 alepulver Exp $
+# $FreeBSD: ports/databases/exist/files/eXist.in,v 1.2 2010/03/27 00:12:45 dougb Exp $
 #
 
 # PROVIDE: eXist
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name="eXist"
-rcvar=`set_rcvar`
+rcvar=eXist_enable
 
 # Read settings and set default values.
 load_rc_config "$name"

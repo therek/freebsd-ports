@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/spamass-milter/files/spamass-milter.in,v 1.6 2009/04/26 03:34:38 tabthorpe Exp $
+# $FreeBSD: ports/mail/spamass-milter/files/spamass-milter.in,v 1.7 2010/03/27 00:13:25 dougb Exp $
 #
 
 # PROVIDE: spamass-milter
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name=spamass_milter
-rcvar=`set_rcvar`
+rcvar=spamass_milter_enable
 
 command=%%PREFIX%%/sbin/spamass-milter
 required_dirs=%%PREFIX%%/share/spamassassin

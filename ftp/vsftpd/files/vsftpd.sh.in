@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/ftp/vsftpd/files/vsftpd.sh.in,v 1.11 2010/07/31 07:21:48 dinoex Exp $
+# $FreeBSD: ports/ftp/vsftpd/files/vsftpd.sh.in,v 1.12 2010/08/07 07:49:17 dinoex Exp $
 #
 
 # PROVIDE: vsftpd
@@ -24,7 +24,7 @@
 . /etc/rc.subr
 
 name="vsftpd"
-rcvar=`set_rcvar`
+rcvar=vsftpd_enable
 
 load_rc_config "$name"
 : ${vsftpd_enable:="NO"}

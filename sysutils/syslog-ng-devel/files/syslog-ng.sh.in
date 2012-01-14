@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/syslog-ng-devel/files/syslog-ng.sh.in,v 1.7 2010/11/08 20:17:36 cy Exp $
+# $FreeBSD: ports/sysutils/syslog-ng-devel/files/syslog-ng.sh.in,v 1.8 2011/10/03 15:21:34 cy Exp $
 #
 
 # PROVIDE: syslogd
@@ -21,7 +21,7 @@ syslog_ng_purgeklog=${syslog_ng_purgeklog-"NO"}
 . /etc/rc.subr
 
 name=syslog_ng
-rcvar=`set_rcvar`
+rcvar=syslog_ng_enable
 
 command=%%PREFIX%%/sbin/syslog-ng
 required_files=%%PREFIX%%/etc/syslog-ng.conf

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/devel/viewvc/files/viewvc.in,v 1.5 2010/07/27 15:08:09 glarkin Exp $
+# $FreeBSD: ports/devel/viewvc/files/viewvc.in,v 1.6 2011/03/18 23:40:37 glarkin Exp $
 #
 # PROVIDE: viewvc
 # REQUIRE: LOGIN
@@ -30,7 +30,7 @@
 . /etc/rc.subr
 
 name=viewvc
-rcvar=${name}_enable
+rcvar=viewvc_enable
 load_rc_config $name
 
 # Set defaults

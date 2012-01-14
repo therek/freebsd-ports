@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/denyhosts/files/denyhosts.in,v 1.2 2010/02/01 17:43:23 pgollucci Exp $
+# $FreeBSD: ports/security/denyhosts/files/denyhosts.in,v 1.3 2010/03/27 00:14:42 dougb Exp $
 #
 # PROVIDE: denyhosts
 # REQUIRE: DAEMON
@@ -9,7 +9,7 @@
 . /etc/rc.subr
 
 name="denyhosts"
-rcvar=${name}_enable
+rcvar=denyhosts_enable
 
 command="%%PREFIX%%/bin/denyhosts.py"
 command_interpreter="%%PYTHON%%"

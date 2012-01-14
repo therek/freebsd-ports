@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/japanese/FreeWnn-server/files/kwnn.sh.in,v 1.2 2010/01/02 14:47:19 hrs Exp $
+# $FreeBSD: ports/japanese/FreeWnn-server/files/kwnn.sh.in,v 1.3 2010/03/27 00:13:07 dougb Exp $
 #
 # PROVIDE: kwnn
 # REQUIRE: LOGIN
@@ -9,7 +9,7 @@
 . /etc/rc.subr
 
 name=kwnn
-rcvar=`set_rcvar`
+rcvar=kwnn_enable
 command=%%PREFIX%%/bin/kWnn4/kserver
 procname=%%PREFIX%%/bin/kWnn4/kserver
 start_precmd=start_precmd

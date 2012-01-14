@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/dkfilter/files/dkfilter_out.in,v 1.3 2006/09/18 14:12:16 rafan Exp $
+# $FreeBSD: ports/mail/dkfilter/files/dkfilter_out.in,v 1.4 2010/03/27 00:13:12 dougb Exp $
 #
 
 # PROVIDE: dkfilter_out
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="dkfilter_out"
-rcvar=`set_rcvar`
+rcvar=dkfilter_out_enable
 
 # set defaults
 

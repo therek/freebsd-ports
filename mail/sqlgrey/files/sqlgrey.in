@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/mail/sqlgrey/files/sqlgrey.in,v 1.1 2011/06/03 11:25:11 wxs Exp $
+# $FreeBSD: ports/mail/sqlgrey/files/sqlgrey.in,v 1.2 2011/06/03 21:35:32 wxs Exp $
 #
 # PROVIDE: sqlgrey
 # REQUIRE: LOGIN
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=sqlgrey
-rcvar=`set_rcvar`
+rcvar=sqlgrey_enable
 
 command=%%PREFIX%%/sbin/sqlgrey
 extra_commands=reload

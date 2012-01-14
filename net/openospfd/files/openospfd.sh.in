@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openospfd/files/openospfd.sh.in,v 1.2 2009/07/15 16:55:52 dougb Exp $
+# $FreeBSD: ports/net/openospfd/files/openospfd.sh.in,v 1.3 2010/03/27 00:13:52 dougb Exp $
 #
 
 # PROVIDE: ospfd
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="openospfd"
-rcvar=`set_rcvar`
+rcvar=openospfd_enable
 
 extra_commands="reload"
 command="%%PREFIX%%/sbin/ospfd"

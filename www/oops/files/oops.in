@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/oops/files/oops.in,v 1.1 2008/06/29 09:53:47 itetcu Exp $
+# $FreeBSD: ports/www/oops/files/oops.in,v 1.2 2010/03/27 00:15:15 dougb Exp $
 #
 
 # PROVIDE: oops
@@ -9,7 +9,7 @@
 . /etc/rc.subr
 
 name="oops"
-rcvar=`set_rcvar`
+rcvar=oops_enable
 
 command="%%PREFIX%%/sbin/oopsctl"
 procname="%%PREFIX%%/sbin/oops"

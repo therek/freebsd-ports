@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/netxms/files/nxhttpd.in,v 1.2 2007/12/13 23:34:22 pav Exp $
+# $FreeBSD: ports/net-mgmt/netxms/files/nxhttpd.in,v 1.3 2010/03/27 00:14:25 dougb Exp $
 #
 # PROVIDE: nxhttpd
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@
 
 name="nxhttpd"
 nxhttpd_user="netxms"
-rcvar=${name}_enable
+rcvar=nxhttpd_enable
 
 load_rc_config $name
 

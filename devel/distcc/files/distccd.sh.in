@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/distcc/files/distccd.sh.in,v 1.4 2010/03/27 00:12:51 dougb Exp $
+# $FreeBSD: ports/devel/distcc/files/distccd.sh.in,v 1.5 2010/08/09 13:57:26 skreuzer Exp $
 #    $MCom: ports/devel/distcc/files/distccd.sh.in,v 1.1 2007/05/19 17:43:14 ahze Exp $
 
 # PROVIDE: distccd
@@ -19,7 +19,7 @@ distccd_flags=${distccd_flags-"-a 127.0.0.0/8 --user distcc --daemon -P %%DISTCC
 . /etc/rc.subr
 
 name=distccd
-rcvar=`set_rcvar`
+rcvar=distccd_enable
 
 command=%%PREFIX%%/sbin/${name}
 # extract pid file from distccd_flags (if any)

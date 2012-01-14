@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/openttd/files/openttd.in,v 1.1 2010/11/24 06:13:07 danfe Exp $
 #
 # PROVIDE: openttd
 # REQUIRE: LOGIN
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="openttd"
-rcvar=`set_rcvar`
+rcvar=openttd_enable
 command="%%PREFIX%%/bin/${name}"
 command_args="-s null -m null -v null -b null -D -f"
 

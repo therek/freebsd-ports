@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/ftp/tftp-hpa/files/tftpd.in,v 1.1 2011/12/02 22:33:35 brooks Exp $
 #
 # PROVIDE: tftpd
 # REQUIRE: NETWORKING
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="tftpd"
-rcvar=`set_rcvar`
+rcvar=tftpd_enable
 pidfile=${tftpd_pidfile:-"/var/run/tftpd.pid"}
 command="%%PREFIX%%/libexec/in.tftpd"
 command_args="-P $pidfile -l"
