@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.554 2011/12/20 05:00:01 jgh Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.555 2011/12/29 15:14:54 miwi Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1130,7 +1130,9 @@ MASTER_SITE_SAVANNAH+= \
 	http://mirror.lihnidos.org/GNU/savannah/%SUBDIR%/ \
 	http://ftp.twaren.net/Unix/NonGNU/%SUBDIR%/ \
 	ftp://ftp.twaren.net/Unix/NonGNU/%SUBDIR%/ \
-	http://download.savannah.gnu.org/releases-noredirect/%SUBDIR%/
+	http://gnu.mirrors.pair.com/savannah/savannah/%SUBDIR%/ \
+	ftp://gnu.mirrors.pair.com/savannah/%SUBDIR%/ \
+	http://download-mirror.savannah.gnu.org/releases/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_SOURCEFORGE)
