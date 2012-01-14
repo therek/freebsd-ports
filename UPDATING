@@ -5,6 +5,12 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20120112:
+  AFFECTS: Nobody
+  AUTHOR: wxs@FreeBSD.org
+
+  FreeBSD 9.0 released.
+
 20120109:
   AFFECTS: users of www/p5-WWW-GitHub-Gist
   AUTHOR: lbr@FreeBSD.org
@@ -5798,4 +5804,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1186 2012/01/11 03:13:36 lbr Exp $
+$FreeBSD: ports/UPDATING,v 1.1187 2012/01/12 21:36:04 crees Exp $
