@@ -1,8 +1,8 @@
-# $FreeBSD: ports/multimedia/avidemux2/Makefile.common,v 1.7 2011/11/11 02:57:50 linimon Exp $
+# $FreeBSD: ports/multimedia/avidemux2/Makefile.common,v 1.8 2011/12/21 08:48:26 mm Exp $
 #
 
 AVIDEMUX2_VERSION=	2.5.5
-PORTREVISION=	3
+PORTREVISION=	4
 MASTER_SITES=	BERLIOS \
 		SF/avidemux/avidemux/${PORTVERSION}
 DISTNAME=	avidemux_${PORTVERSION}
