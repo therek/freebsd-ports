@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2744 2012/01/14 05:59:58 miwi Exp $
+# $FreeBSD: ports/MOVED,v 1.2745 2012/01/14 06:05:46 miwi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3213,3 +3213,4 @@ www/xpi-num2web||2012-01-14|Has expired: Development has been ceased and not com
 www/xpi-savegenpage||2012-01-14|Has expired: Development has been ceased and not compatible with Firefox > 7.
 www/xpi-videodownloader||2012-01-14|Has expired: Development has been ceased and not compatible with Firefox > 7.
 www/xpi-xpcom-component-viewer||2012-01-14|Has expired: Development has been ceased and not compatible with Firefox > 7.
+net-im/skype20||2012-01-14|Has expired: old version without many of the newer features; please try net-im/skype instead
