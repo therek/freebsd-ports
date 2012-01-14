@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/net/radiusd-cistron/files/radrelay-cistron.in,v 1.1 2011/11/19 12:45:18 dinoex Exp $
+# $FreeBSD: ports/net/radiusd-cistron/files/radrelay-cistron.in,v 1.2 2012/01/14 08:56:24 dougb Exp $
 #
 # PROVIDE: radrelay-cistron
 # REQUIRE: LOGIN radiusd-cistron
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="radrelay"
-rcvar=radrelay_enable
+rcvar="radrelay_enable"
 
 command=%%PREFIX%%/sbin/${name}
 pidfile=/var/run/${name}.pid

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/mail/noattach/files/noattach.sh.in,v 1.3 2011/05/15 02:49:08 dougb Exp $
+# $FreeBSD: ports/mail/noattach/files/noattach.sh.in,v 1.4 2012/01/14 08:55:58 dougb Exp $
 
 # Start or stop noattach
 
@@ -26,7 +26,7 @@ noattach_socket=${noattach_socket:-"/var/run/noattach"} # Path to socket
 . /etc/rc.subr
 
 name="noattach"
-rcvar=noattach_enable
+rcvar="noattach_enable"
 command="%%PREFIX%%/libexec/${name}"
 required_files="%%PREFIX%%/etc/noattach.patterns"
 start_precmd="noattach_prestart"
