@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.43 2011/09/23 18:04:11 bsam Exp $
+# $FreeBSD: ports/Mk/bsd.linux-apps.mk,v 1.44 2011/09/23 19:28:06 bsam Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -140,6 +140,7 @@ cairo_DEPENDS=		fontconfig png xorglibs
 cups-libs_f10_FILE=	${LINUXBASE}/usr/lib/libcups.so.2
 cups-libs_DETECT=	${cups-libs${LINUX_DIST_SUFFIX:S/-/_/}_FILE}
 cups-libs_PORT=		${PORTSDIR}/print/linux${LINUX_DIST_SUFFIX}-cups-libs
+cups-libs=		gnutls
 
 curl_FILE=		${LINUXBASE}/usr/lib/libcurl.so.3.0.0
 curl_f10_FILE=		${LINUXBASE}/usr/lib/libcurl.so.4.1.1
