@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2553 2012/01/17 08:31:38 danfe Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2554 2012/01/17 08:36:56 danfe Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -73,7 +73,7 @@ Note:  Please add new entries to the beginning of this file.
     </description>
     <references>
       <cvename>CVE-2012-0049</cvename>
-      <url>http://security.openttd.org/en/CVE-2011-3343</url>
+      <url>http://security.openttd.org/en/CVE-2012-0049</url>
     </references>
     <dates>
       <discovery>2012-01-06</discovery>
