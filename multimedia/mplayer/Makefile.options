@@ -4,7 +4,7 @@
 # Some of the knobs are not tunable by the OPTIONS framework. These are
 # explained here in detail.
 #
-# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.21 2011/08/21 08:11:55 crees Exp $
+# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.22 2012/01/15 22:31:53 scheidell Exp $
 #
 # Feature options:
 # These options influence some general behaviour of mplayer. Almost all of the featues,
@@ -171,7 +171,7 @@ CONFIGURE_ARGS+=	--disable-cdparanoia
 .endif
 
 .if defined(WITH_LIBCDIO) && !defined(WITH_CDPARANOIA)
-LIB_DEPENDS+=	cdio.12:${PORTSDIR}/sysutils/libcdio
+LIB_DEPENDS+=	cdio.13:${PORTSDIR}/sysutils/libcdio
 .else
 CONFIGURE_ARGS+=	--disable-libcdio
 .endif
