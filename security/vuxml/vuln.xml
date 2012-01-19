@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2558 2012/01/19 09:16:00 knu Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2559 2012/01/19 18:27:36 delphij Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -310,7 +310,7 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
 	<name>php52-exif</name>
-	<range><gt>5.2.17_6</gt></range>
+	<range><lt>5.2.17_6</lt></range>
       </package>
     </affects>
     <description>
