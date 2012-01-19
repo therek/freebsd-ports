@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2750 2012/01/18 07:43:03 rm Exp $
+# $FreeBSD: ports/MOVED,v 1.2751 2012/01/19 01:23:54 scheidell Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3223,3 +3223,4 @@ sysutils/rsyslog4-rfc3195|rsyslog5-rfc3195|2012-01-16|EOL Upstream
 sysutils/rsyslog4-snmp|rsyslog5-snmp|2012-01-16|EOL Upstream
 net-im/gicq||2012-01-18|Runtime is broken. Unmaintained upstream
 net-im/libicq||2012-01-18|Runtime is broken. Unmaintained upstream
+devel/luajit|lang/luajit|2012-01-19|Compilers typically live in the lang category
