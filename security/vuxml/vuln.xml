@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2563 2012/01/20 18:28:10 delphij Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2564 2012/01/20 18:41:15 delphij Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -78,7 +78,7 @@ Note:  Please add new entries to the beginning of this file.
     </dates>
   </vuln>
 
-  <vuln vid="553ec4ed-38d6-11e0-94b1-000c29ba66d2">
+  <vuln vid="7f5ccb1d-439b-11e1-bc16-0023ae8e59f0">
     <topic>tomcat -- Denial of Service</topic>
     <affects>
       <package>
