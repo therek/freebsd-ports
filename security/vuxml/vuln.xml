@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2566 2012/01/20 21:43:39 zi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2567 2012/01/21 01:38:36 zi Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -52,7 +52,7 @@ Note:  Please add new entries to the beginning of this file.
     <affects>
       <package>
 	<name>openssl</name>
-	<range><lt>1.0.0g</lt></range>
+	<range><lt>1.0.0_9</lt></range>
       </package>
     </affects>
     <description>
@@ -204,6 +204,10 @@ Note:  Please add new entries to the beginning of this file.
       <package>
 	<name>v8</name>
 	<range><lt>3.8.5</lt></range>
+      </package>
+      <package>
+	<name>redis</name>
+	<range><le>2.4.6</le></range>
       </package>
       <package>
 	<name>node</name>
