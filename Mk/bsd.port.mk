@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.701 2012/01/13 02:17:01 eadler Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.702 2012/01/15 22:13:42 pav Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3654,7 +3654,7 @@ do-patch:
 run-autotools-fixup:
 # Work around an issue where FreeBSD 10.0 is detected as FreeBSD 1.x.
 .if ${OSVERSION} >= 1000000 && !defined(WITHOUT_FBSD10_FIX)
-	-@for f in `${FIND} ${WRKSRC} -type f \( -name config.libpath -o \
+	-@for f in `${FIND} ${WRKDIR} -type f \( -name config.libpath -o \
 		-name config.rpath -o -name configure -o -name libtool.m4 -o \
 		-name ltconfig -o -name libtool -o -name aclocal.m4 -o \
 		-name acinclude.m4 \)` ; do \
@@ -3666,6 +3666,8 @@ run-autotools-fixup:
 				-e 's|freebsd\[\[123\]\]\*)|freebsd[[123]].*)|g' \
 					$${f} ; \
 			${TOUCH} ${TOUCH_FLAGS} -mr $${f}.fbsd10bak $${f} ; \
+			${RM} -f $${f}.fbsd10bak ; \
+			${ECHO_MSG} "===>   FreeBSD 10 autotools fix applied to $${f}"; \
 		done
 .endif
 .endif
