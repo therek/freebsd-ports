@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2568 2012/01/22 02:49:22 zi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2569 2012/01/22 14:59:21 sunpoet Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -521,12 +521,14 @@ Note:  Please add new entries to the beginning of this file.
       </body>
     </description>
     <references>
+      <cvename>CVE-2012-0070</cvename>
       <url>http://secunia.com/advisories/47435/</url>
       <url>http://www.spamdyke.org/documentation/Changelog.txt</url>
     </references>
     <dates>
       <discovery>2012-01-04</discovery>
       <entry>2012-01-08</entry>
+      <modified>2012-01-23</modified>
     </dates>
   </vuln>
 
