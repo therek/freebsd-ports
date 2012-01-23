@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/math/wxMaxima/pkg-plist,v 1.10 2010/05/06 12:43:50 nivit Exp $
+@comment $FreeBSD: ports/math/wxMaxima/pkg-plist,v 1.11 2011/02/27 21:00:21 nivit Exp $
 bin/wxmaxima
 share/locale/ca/LC_MESSAGES/wxMaxima.mo
 share/locale/cs/LC_MESSAGES/wxMaxima.mo
@@ -8,8 +8,8 @@ share/locale/el/LC_MESSAGES/wxMaxima.mo
 share/locale/es/LC_MESSAGES/wxMaxima.mo
 share/locale/fr/LC_MESSAGES/wxMaxima.mo
 share/locale/hu/LC_MESSAGES/wxMaxima.mo
-share/locale/ja/LC_MESSAGES/wxMaxima.mo
 share/locale/it/LC_MESSAGES/wxMaxima.mo
+share/locale/ja/LC_MESSAGES/wxMaxima.mo
 share/locale/pl/LC_MESSAGES/wxMaxima.mo
 share/locale/pt_BR/LC_MESSAGES/wxMaxima.mo
 share/locale/ru/LC_MESSAGES/wxMaxima.mo
