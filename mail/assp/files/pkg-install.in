@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/assp/files/pkg-install.in,v 1.7 2011/01/06 16:26:53 ohauer Exp $
+# $FreeBSD: ports/mail/assp/files/pkg-install.in,v 1.8 2011/12/05 11:37:23 scheidell Exp $
 
 if [ "${2}" = "POST-INSTALL" ]; then
     ASSP_USER=%%ASSP_USER%%
@@ -19,7 +19,7 @@ if [ "${2}" = "POST-INSTALL" ]; then
     ln -sf ${DATADIR}/files ${ASSP_HOME}
     ln -sf ${DATADIR}/images ${ASSP_HOME}
     ln -sf ${DATADIR}/reports ${ASSP_HOME}
-    ln -sf ${DATADIR}/rebuildspam.pl ${ASSP_HOME}
+    ln -sf ${DATADIR}/rebuildspamdb.pl ${ASSP_HOME}
     ln -sf ${ASSP_LOG} ${ASSP_HOME}/logs
 
 fi
