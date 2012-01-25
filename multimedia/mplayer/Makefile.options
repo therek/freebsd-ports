@@ -4,7 +4,7 @@
 # Some of the knobs are not tunable by the OPTIONS framework. These are
 # explained here in detail.
 #
-# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.22 2012/01/15 22:31:53 scheidell Exp $
+# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.23 2012/01/18 17:36:26 arved Exp $
 #
 # Feature options:
 # These options influence some general behaviour of mplayer. Almost all of the featues,
@@ -104,7 +104,7 @@ CONFIGURE_ARGS+=	--disable-libvpx-lavc
 .endif
 
 .if defined(WITH_SCHROEDINGER)
-LIB_DEPENDS+=		schroedinger-1.0.10:${PORTSDIR}/multimedia/schroedinger
+LIB_DEPENDS+=		schroedinger-1.0.11:${PORTSDIR}/multimedia/schroedinger
 .else
 CONFIGURE_ARGS+=	--disable-libschroedinger-lavc
 .endif
