@@ -1,6 +1,6 @@
 # ex:ts=8
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/pure/bsd.pure.mk,v 1.1 2012/01/26 11:18:50 pav Exp $
 #
 # bsd.pure.mk - Support for the Pure language packages
 #
@@ -23,7 +23,6 @@ MASTER_SITES?=	http://pure-lang.googlecode.com/files/
 DIST_SUBDIR=	pure
 
 USE_GMAKE=	yes
-USE_GCC=	4.2+
 
 _PURE_audio_cat=	audio
 _PURE_csv_cat=		textproc
