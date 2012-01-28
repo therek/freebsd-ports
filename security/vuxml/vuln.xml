@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2579 2012/01/26 12:32:01 zi Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2580 2012/01/28 08:01:53 miwi Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -47,6 +47,45 @@ Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="93688f8f-4935-11e1-89b4-001ec9578670">
+    <topic>postfixadmin -- Multiple Vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>postfixadmin</name>
+	<range><lt>2.3.5</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Postfix Admin Team reports:</p>
+	<blockquote cite="http://sourceforge.net/projects/postfixadmin/forums/forum/676076/topic/4977778">
+	  <p>Multiple XSS vulnerabilities exist:
+	     - XSS with $_GET[domain] in templates/menu.php and edit-vacation
+	     - XSS in some create-domain input fields
+	     - XSS in create-alias and edit-alias error message
+	     - XSS (by values stored in the database) in fetchmail list view,
+	       list-domain and list-virtual</p>
+	  <p>Multiple SQL injection issues exist:
+	     - SQL injection in pacrypt() (if $CONF[encrypt] == 'mysql_encrypt')
+	     - SQL injection in backup.php - the dump was not mysql_escape()d,
+	       therefore users could inject SQL (for example in the vacation message)
+	       which will be executed when restoring the database dump.
+	       WARNING: database dumps created with backup.php from 2.3.4 or older
+	       might contain malicious SQL. Double-check before using them!</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2012-0811</cvename>
+      <cvename>CVE-2012-0812</cvename>
+      <url>http://sourceforge.net/projects/postfixadmin/forums/forum/676076/topic/4977778</url>
+    </references>
+    <dates>
+      <discovery>2012-01-27</discovery>
+      <entry>2012-01-27</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="e465159c-4817-11e1-89b4-001ec9578670">
     <topic>mpack -- Information disclosure</topic>
     <affects>
