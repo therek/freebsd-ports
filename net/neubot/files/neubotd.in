@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/neubot/files/neubotd.in,v 1.1 2011/10/22 14:39:17 thierry Exp $
+# $FreeBSD: ports/net/neubot/files/neubotd.in,v 1.2 2012/01/14 08:56:20 dougb Exp $
 #
 
 # PROVIDE: neubotd
@@ -9,7 +9,7 @@
 
 # Add the following line to /etc/rc.conf to enable `neubotd':
 #
-#neubotd_enable="YES"
+# neubotd_enable="YES"
 #
 
 . /etc/rc.subr
