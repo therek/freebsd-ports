@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2760 2012/01/29 15:44:24 eadler Exp $
+# $FreeBSD: ports/MOVED,v 1.2761 2012/01/31 07:16:48 martymac Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -2301,7 +2301,6 @@ audio/rbscrobbler||2011-08-01|Has expired: Looks like abandonware, no more publi
 audio/ripenc||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
 audio/wmcdplay||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
 audio/wmfmixer||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
-audio/wmmixer||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
 audio/wmmp3||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
 audio/wmusic||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
 audio/xmms-kj||2011-08-01|Has expired: Looks like abandonware, no more public distfiles
