@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.556 2012/01/14 21:15:00 amdmi3 Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.557 2012/01/17 21:30:55 jgh Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -118,7 +118,6 @@ MASTER_SITE_CHEESESHOP+=	\
 	http://d.pypi.python.org/packages/%SUBDIR%/ \
 	http://e.pypi.python.org/packages/%SUBDIR%/ \
 	http://f.pypi.python.org/packages/%SUBDIR%/ \
-	http://pypi.d9t.de/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
 	http://pypi.inqbus.de/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
 	http://pypi.it.uwosh.edu/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
 	http://pypi.python.jp/${DISTNAME:S/${DISTVERSION}//:S/-//}/
