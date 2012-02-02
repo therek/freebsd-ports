@@ -2,15 +2,17 @@
 # mplayer and mencoder....the variables that we need to set
 # before we include bsd.port.pre.mk
 #
-# $FreeBSD: ports/multimedia/mplayer/Makefile.shared,v 1.13 2011/08/21 08:11:55 crees Exp $
+# $FreeBSD: ports/multimedia/mplayer/Makefile.shared,v 1.14 2012/01/15 22:31:53 scheidell Exp $
 
 MPLAYER_SNAPSHOT_DATE=	2011-12-18
 MPLAYER_PORT_VERSION=	1.0.r${MPLAYER_SNAPSHOT_DATE:S/-//g}
 CATEGORIES?=	multimedia audio
-MASTER_SITES=	http://freebsd.unixfreunde.de/sources/ \
+MASTER_SITES=	${MASTER_SITE_GOOGLE_CODE} \
 		http://www.rrr.de/~riggs/mplayer/
 DISTNAME=	mplayer-${MPLAYER_PORT_VERSION:S/.r/rc/g}
 WRKSRC=		${WRKDIR}/mplayer-export-${MPLAYER_SNAPSHOT_DATE}
+
+PROJECTHOST=	bsdistfiles
 
 MAINTAINER?=	thomas.e.zander@googlemail.com
 

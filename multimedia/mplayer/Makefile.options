@@ -4,7 +4,7 @@
 # Some of the knobs are not tunable by the OPTIONS framework. These are
 # explained here in detail.
 #
-# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.23 2012/01/18 17:36:26 arved Exp $
+# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.24 2012/01/25 10:11:48 mm Exp $
 #
 # Feature options:
 # These options influence some general behaviour of mplayer. Almost all of the featues,
@@ -28,6 +28,10 @@
 # default: en
 # Enables language support bg, cz, de, dk, en, es, fr, gr, hu, it, ko, nl, no, pl, pt_BR, ro, ru, sk, tr, uk, zh
 #
+
+.if ${OSVERSION} < 802502
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-base_system_log2f
+.endif
 
 .if defined(WITH_LANG)
 CONFIGURE_ARGS+=--language=${WITH_LANG}
