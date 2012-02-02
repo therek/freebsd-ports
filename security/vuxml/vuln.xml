@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2586 2012/02/01 09:46:07 flo Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2587 2012/02/02 01:32:18 jgh Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -57,7 +57,7 @@ Note:  Please add new entries to the beginning of this file.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	<p>CVE Mitre reports:</p>
+	<p>CVE MITRE reports:</p>
 	<blockquote cite="http://httpd.apache.org/security/vulnerabilities_22.html">
 	  <p>Integer overflow in the ap_pregsub function in server/util.c in the
 	    Apache HTTP Server 2.0.x through 2.0.64 and 2.2.x through 2.2.21, when the
