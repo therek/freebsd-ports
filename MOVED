@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2763 2012/02/01 18:24:50 ehaupt Exp $
+# $FreeBSD: ports/MOVED,v 1.2764 2012/02/02 16:07:26 rene Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3228,3 +3228,4 @@ ftp/proftpd-mysql|databases/proftpd-mod_sql_mysql|2012-01-26|Module now in slave
 games/flightgear-aircrafts|games/flightgear-aircraft|2012-01-31|Renamed for better naming
 audio/wmmixer||2012-02-01|EOL Upstream; please use audio/wmsmixer instead
 x11-wm/xfce|x11-wm/xfce4|2012-02-02|Has expired: abandoned upstream, use x11-wm/xfce4 instead
+sysutils/py-dvdvideo|sysutils/dvdvideo|2012-02-03|Renamed for better naming
