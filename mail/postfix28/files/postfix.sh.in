@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/postfix/files/postfix.sh.in,v 1.9 2010/09/13 02:09:35 sahil Exp $
+# $FreeBSD: ports/mail/postfix28/files/postfix.sh.in,v 1.10 2012/01/14 08:56:00 dougb Exp $
 #
 # PROVIDE: postfix mail
 # REQUIRE: %%REQUIRE%%
