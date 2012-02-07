@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.686 2012/01/07 04:21:43 eadler Exp $
+# $FreeBSD: ports/LEGAL,v 1.687 2012/01/07 17:37:01 eadler Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -363,8 +363,6 @@ oracle/sqldeveloper*	databases/sqldeveloper	This software is under license
 						and export controls
 otojiro*		japanese/otojiro-fpw	The original dictionary is not
 						free
-ovt-*			science/ovt		Registration is needed to
-						download the tarball
 perforce/p4v-*		devel/p4v		Binary redistribution
 						restrictions in effect
 palmos-sdk-*-1.tar.gz	palm/palmos-sdk		License agreement is required
