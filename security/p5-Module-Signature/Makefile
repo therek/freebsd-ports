@@ -19,6 +19,8 @@ RUN_DEPENDS=	p5-IPC-Run>=0:${PORTSDIR}/devel/p5-IPC-Run \
 		p5-PAR-Dist>=0:${PORTSDIR}/devel/p5-PAR-Dist \
 		${LOCALBASE}/bin/gpg:${PORTSDIR}/security/gnupg1
 
+CONFIGURE_ENV=	PERL_MM_USE_DEFAULT="YES"
+
 PERL_CONFIGURE=	yes
 
 MAN1=		cpansign.1
