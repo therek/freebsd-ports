@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2771 2012/02/08 03:54:21 pgollucci Exp $
+# $FreeBSD: ports/MOVED,v 1.2772 2012/02/08 04:00:46 eadler Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3230,3 +3230,4 @@ sysutils/py-dvdvideo|sysutils/dvdvideo|2012-02-03|Renamed for better naming
 science/R-cran-survival||2012-02-03|This CRAN port has been included in math/R
 editors/openoffice.org-3-devel|editors/openoffice-3-devel|2012-02-06|Project was taken over and renamed.
 www/zope-cmf||2012-02-07|Has expired: Doesn't work with modern Zope versions
+chinese/fcitx-keyboard|textproc/fcitx-keyboard|2012-02-07|Moved to more appropriate category
