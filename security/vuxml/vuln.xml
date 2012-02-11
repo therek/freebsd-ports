@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2596 2012/02/10 10:11:49 jadawin Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2597 2012/02/10 10:26:06 jadawin Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -47,6 +47,30 @@ Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="039d057e-544e-11e1-9fb7-003067b2972c">
+    <topic>surf -- private information disclosure</topic>
+    <affects>
+      <package>
+	<name>surf</name>
+	<range><le>0.4.1</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>surf does not protect its cookie jar against access read access from
+	other local users</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2012-0842</cvename>
+      <url>http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=659296</url>
+    </references>
+    <dates>
+      <discovery>2012-02-10</discovery>
+      <entry>2012-02-11</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="7c769c89-53c2-11e1-8e52-00163e22ef61">
     <topic>glpi -- remote attack via crafted POST request</topic>
     <affects>
