@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2599 2012/02/11 04:55:42 eadler Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2600 2012/02/11 10:50:38 beat Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -94,7 +94,7 @@ Note:  Please add new entries to the beginning of this file.
   </vuln>
 
   <vuln vid="1c4cab30-5468-11e1-9fb7-003067b2972c">
-    <topic> bip -- buffer overflow</topic>
+    <topic>bip -- buffer overflow</topic>
     <affects>
       <package>
 	<name>bip</name>
@@ -148,8 +148,8 @@ Note:  Please add new entries to the beginning of this file.
     <topic>glpi -- remote attack via crafted POST request</topic>
     <affects>
       <package>
-        <name>glpi</name>
-        <range><lt>0.80.2</lt></range>
+	<name>glpi</name>
+	<range><lt>0.80.2</lt></range>
       </package>
     </affects>
     <description>
