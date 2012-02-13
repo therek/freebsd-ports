@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.2773 2012/02/08 07:07:05 delphij Exp $
+# $FreeBSD: ports/MOVED,v 1.2774 2012/02/13 06:13:00 pgj Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -3232,3 +3232,4 @@ editors/openoffice.org-3-devel|editors/openoffice-3-devel|2012-02-06|Project was
 www/zope-cmf||2012-02-07|Has expired: Doesn't work with modern Zope versions
 chinese/fcitx-keyboard|textproc/fcitx-keyboard|2012-02-07|Moved to more appropriate category
 textproc/hs-attoparsec-text||2012-02-13|Removed: The package is deprecated.
+devel/hs-hmake||2012-02-13|Removed: Broken, unmaintained upstream.
