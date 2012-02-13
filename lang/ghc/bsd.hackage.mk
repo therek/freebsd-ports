@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.83 2012/02/13 02:21:34 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.84 2012/02/13 02:24:19 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -206,6 +206,7 @@ url_port=			www/hs-url
 utf8-string_port=		devel/hs-utf8-string
 utility-ht_port=		devel/hs-utility-ht
 uuagc_port=			devel/hs-uuagc		# executable
+uuagc-bootstrap_port=		devel/hs-uuagc-bootstrap # executable
 uulib_port=			devel/hs-uulib
 vector_port=			devel/hs-vector
 vector-algorithms_port=		devel/hs-vector-algorithms
