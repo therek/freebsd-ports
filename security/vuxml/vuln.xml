@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2603 2012/02/13 16:27:11 eadler Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2604 2012/02/14 03:31:45 eadler Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -81,7 +81,7 @@ Note:  Please add new entries to the beginning of this file.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	<p>Jan Lieskovsky</p>
+	<p>Jan Lieskovsky reports,</p>
 	<blockquote cite="http://bugs.python.org/issue14001">
 	  <p>A denial of service flaw was found in the way Simple XML-RPC Server
 	    module of Python processed client connections, that were closed
