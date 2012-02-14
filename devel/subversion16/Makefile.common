@@ -2,7 +2,7 @@
 # Date created:				10 September 2001
 # Whom:					rooneg@electricjellyfish.net
 #
-# $FreeBSD: ports/devel/subversion16/Makefile.common,v 1.52 2012/01/09 15:40:57 tabthorpe Exp $
+# $FreeBSD: ports/devel/subversion16/Makefile.common,v 1.53 2012/02/14 22:31:43 scheidell Exp $
 
 PORTNAME=	subversion
 PORTVERSION=	#please edit Makefile.inc for PORTVERSION, so ../svnmerge can stay in sync.
