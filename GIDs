@@ -1,4 +1,4 @@
-# $FreeBSD: ports/GIDs,v 1.162 2011/12/28 21:01:44 marcus Exp $
+# $FreeBSD: ports/GIDs,v 1.163 2012/01/12 13:14:44 scheidell Exp $
 # Please keep this file sorted by GID!
 operator:*:5:amanda
 mail:*:6:postfix,clamav
@@ -109,6 +109,7 @@ hg:*:212:
 drizzle:*:213:
 bs:*:220:
 postgrey:*:225:
+sqlgrey:*:226:
 kismet:*:229:
 aprsd:*:240:
 tnc:*:241:
