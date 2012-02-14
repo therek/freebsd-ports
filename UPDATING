@@ -14,7 +14,7 @@ you update your ports collection, before attempting any port upgrades.
 
   # portmaster -w devel/pcre
   or
-  # portupgrade -w devel/pcre
+  # portupgrade devel/pcre
 
 20120213:
   AFFECTS: users of lang/ghc and */hs-*
@@ -5911,4 +5911,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1201 2012/02/13 06:22:21 pgj Exp $
+$FreeBSD: ports/UPDATING,v 1.1202 2012/02/14 21:40:50 dougb Exp $
