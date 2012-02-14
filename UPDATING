@@ -5,6 +5,17 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20120214:
+  AFFECTS: users of devel/pcre
+  AUTHOR: dougb@FreeBSD.org
+
+  Until all dependent ports have been updated you should update pcre in
+  a manner that will preserve its old shared library. For example:
+
+  # portmaster -w devel/pcre
+  or
+  # portupgrade -w devel/pcre
+
 20120213:
   AFFECTS: users of lang/ghc and */hs-*
   AUTHOR: pgj@FreeBSD.org
@@ -5900,4 +5911,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1200 2012/02/11 05:14:53 sahil Exp $
+$FreeBSD: ports/UPDATING,v 1.1201 2012/02/13 06:22:21 pgj Exp $
