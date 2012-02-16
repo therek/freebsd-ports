@@ -4,7 +4,7 @@
 # Some of the knobs are not tunable by the OPTIONS framework. These are
 # explained here in detail.
 #
-# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.24 2012/01/25 10:11:48 mm Exp $
+# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.26 2012/02/10 23:26:28 amdmi3 Exp $
 #
 # Feature options:
 # These options influence some general behaviour of mplayer. Almost all of the featues,
@@ -102,7 +102,7 @@ CONFIGURE_ARGS+=	--disable-theora
 .endif
 
 .if defined(WITH_VPX)
-LIB_DEPENDS+=		vpx.0:${PORTSDIR}/multimedia/libvpx
+LIB_DEPENDS+=		vpx.1:${PORTSDIR}/multimedia/libvpx
 .else
 CONFIGURE_ARGS+=	--disable-libvpx-lavc
 .endif
@@ -244,6 +244,8 @@ CONFIGURE_ARGS+=	--disable-libgsm
 .if defined(WITH_V4L)
 BUILD_DEPENDS+=		${LOCALBASE}/include/linux/videodev2.h:${PORTSDIR}/multimedia/v4l_compat
 LIB_DEPENDS+=		v4l2.0:${PORTSDIR}/multimedia/libv4l
+CONFIGURE_ARGS+=	--enable-tv-v4l1 \
+			--enable-tv-v4l2
 EXTRA_LIBS+=		-lv4l1 -lv4l2
 .else
 CONFIGURE_ARGS+=	--disable-tv-v4l1 \
