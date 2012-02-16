@@ -1,5 +1,6 @@
-$FreeBSD: ports/Tools/scripts/README,v 1.22 2010/01/29 14:52:45 kuriyama Exp $
+$FreeBSD: ports/Tools/scripts/README,v 1.23 2011/12/27 03:32:25 eadler Exp $
 
+MOVEDlint.awk - checks MOVED for common errors
 ardiff	- compare two archives easily
 addport	- replacement for easy-import
 bump_revision.pl - Small script to bump the PORTREVISION variable of ports
