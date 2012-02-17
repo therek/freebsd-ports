@@ -12,7 +12,7 @@ you update your ports collection, before attempting any port upgrades.
   libvpx has been updated to version 1.0.0, with a shared library bump.
   This requires dependencies to be rebuilt.
 
-  # portmaster -r multimedia/libvpx
+  # portmaster -r libvpx
   or
   # portupgrade -r multimedia/libvpx
 
@@ -5933,4 +5933,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1204 2012/02/15 00:17:40 jgh Exp $
+$FreeBSD: ports/UPDATING,v 1.1205 2012/02/16 15:58:46 ashish Exp $
