@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.108 2012/02/17 17:05:20 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.109 2012/02/17 17:07:37 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -99,6 +99,7 @@ gtksourceview2_port=		x11-toolkits/hs-gtksourceview2
 haddock_port=			devel/hs-haddock	# executable
 happstack-data_port=		www/hs-happstack-data
 happstack-ixset_port=		www/hs-happstack-ixset
+happstack-server_port=		www/hs-happstack-server
 happstack-util_port=		www/hs-happstack-util
 happy_port=			devel/hs-happy		# executable
 hashable_port=			devel/hs-hashable
