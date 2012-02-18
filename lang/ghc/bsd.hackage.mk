@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.116 2012/02/18 03:14:58 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.117 2012/02/18 03:18:11 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -254,6 +254,7 @@ xmlhtml_port=			textproc/hs-xmlhtml
 xmobar_port=			x11/hs-xmobar		# executable
 xmonad_port=			x11-wm/hs-xmonad	# executable
 xmonad-contrib_port=		x11-wm/hs-xmonad-contrib
+xss-sanitize_port=		www/hs-xss-sanitize
 zip-archive_port=		archivers/hs-zip-archive
 zlib_port=			archivers/hs-zlib
 zlib-bindings_port=		archivers/hs-zlib-bindings
