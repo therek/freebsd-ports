@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.138 2012/02/18 16:59:01 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.139 2012/02/18 17:01:42 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -87,6 +87,7 @@ directory-tree_port=		devel/hs-directory-tree
 distributive_port=		math/hs-distributive
 dlist_port=			devel/hs-dlist
 double-conversion_port=		textproc/hs-double-conversion
+email-validate_port=		mail/hs-email-validate
 entropy_port=			security/hs-entropy
 enumerator_port=		devel/hs-enumerator
 epic_port=			lang/hs-epic		# executable
