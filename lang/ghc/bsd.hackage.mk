@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.161 2012/02/18 18:46:37 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.162 2012/02/18 21:27:14 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -281,6 +281,7 @@ wai-extra_port=			www/hs-wai-extra
 wai-logger_port=		www/hs-wai-logger
 warp_port=			www/hs-warp
 webkit_port=			www/hs-webkit
+wxdirect_port=			x11-toolkits/hs-wxdirect	# executable
 X11_port=			x11/hs-X11		# lib_depends
 X11-xft_port=			x11/hs-X11-xft
 xhtml_port=			textproc/hs-xhtml
