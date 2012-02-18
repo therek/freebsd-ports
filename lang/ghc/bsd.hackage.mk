@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.113 2012/02/18 03:05:26 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.114 2012/02/18 03:08:15 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -84,6 +84,7 @@ fastcgi_port=			www/hs-fastcgi		# lib_depends
 feed_port=			textproc/hs-feed
 fgl_port=			devel/hs-fgl
 filemanip_port=			devel/hs-filemanip
+filestore_port=			devel/hs-filestore
 gconf_port=			devel/hs-gconf
 ghc-mtl_port=			devel/hs-ghc-mtl
 ghc-paths_port=			devel/hs-ghc-paths
