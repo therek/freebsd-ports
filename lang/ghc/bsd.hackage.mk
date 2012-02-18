@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.144 2012/02/18 17:15:46 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.145 2012/02/18 17:18:34 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -193,6 +193,7 @@ pcap_port=			net/hs-pcap
 pcre-light_port=		devel/hs-pcre-light	# lib_depends
 polyparse_port=			textproc/hs-polyparse
 pointed_port=			math/hs-pointed
+pool_port=			devel/hs-pool
 porte_port=			ports-mgmt/hs-porte	# executable
 primitive_port=			devel/hs-primitive
 probability_port=		math/hs-probability
