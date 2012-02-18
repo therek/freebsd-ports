@@ -4,7 +4,7 @@
 # Some of the knobs are not tunable by the OPTIONS framework. These are
 # explained here in detail.
 #
-# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.26 2012/02/10 23:26:28 amdmi3 Exp $
+# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.27 2012/02/16 20:17:31 lx Exp $
 #
 # Feature options:
 # These options influence some general behaviour of mplayer. Almost all of the featues,
@@ -72,7 +72,7 @@ CATEGORIES+=	ipv6
 .endif
 
 .if !defined(WITHOUT_LIBUNGIF)
-LIB_DEPENDS+=	ungif.5:${PORTSDIR}/graphics/libungif
+LIB_DEPENDS+=	gif.5:${PORTSDIR}/graphics/giflib
 .else
 CONFIGURE_ARGS+=	--disable-gif
 .endif
