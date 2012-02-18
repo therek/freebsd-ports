@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.150 2012/02/18 17:30:45 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.151 2012/02/18 17:32:38 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -222,6 +222,7 @@ shakespeare_port=		www/hs-shakespeare
 shakespeare-css_port=		www/hs-shakespeare-css
 shakespeare-i18n_port=		www/hs-shakespeare-i18n
 shakespeare-js_port=		www/hs-shakespeare-js
+shakespeare-text_port=		www/hs-shakespeare-text
 show_port=			devel/hs-show
 simple-sendfile_port=		net/hs-simple-sendfile
 skein_port=			security/hs-skein
