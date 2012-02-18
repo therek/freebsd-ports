@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.136 2012/02/18 16:53:34 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.137 2012/02/18 16:56:16 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -76,6 +76,7 @@ data-default_port=		devel/hs-data-default
 data-lens_port=			math/hs-data-lens
 data-lens-template_port=	math/hs-data-lens-template
 data-object_port=		devel/hs-data-object
+data-object-yaml_port=		devel/hs-data-object-yaml
 dataenc_port=			converters/hs-dataenc
 datetime_port=			devel/hs-datetime
 DeepArrow_port=			devel/hs-DeepArrow
