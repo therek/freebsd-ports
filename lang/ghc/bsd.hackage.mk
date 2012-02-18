@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.142 2012/02/18 17:11:03 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.143 2012/02/18 17:13:17 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -165,6 +165,7 @@ math-functions_port=		math/hs-math-functions
 MaybeT_port=			devel/hs-MaybeT
 MemoTrie_port=			devel/hs-MemoTrie
 mime_port=			mail/hs-mime
+mime-mail_port=			mail/hs-mime-mail
 MissingH_port=			devel/hs-MissingH
 mmap_port=			devel/hs-mmap
 monad-control_port=		devel/hs-monad-control
