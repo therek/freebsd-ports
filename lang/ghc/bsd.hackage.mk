@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.140 2012/02/18 17:04:33 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.141 2012/02/18 17:08:24 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -212,6 +212,7 @@ sendfile_port=			net/hs-sendfile
 semigroupoids_port=		math/hs-semigroupoids
 semigroups_port=		math/hs-semigroups
 SHA_port=			security/hs-SHA
+shakespeare_port=		www/hs-shakespeare
 show_port=			devel/hs-show
 simple-sendfile_port=		net/hs-simple-sendfile
 skein_port=			security/hs-skein
