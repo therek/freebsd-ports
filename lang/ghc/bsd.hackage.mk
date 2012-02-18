@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.111 2012/02/17 17:11:55 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.112 2012/02/17 17:13:44 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -48,6 +48,7 @@ clientsession_port=		security/hs-clientsession
 cmdargs_port=			devel/hs-cmdargs
 comonad_port=			math/hs-comonad
 comonad-transformers_port=	math/hs-comonad-transformers
+ConfigFile_port=		devel/hs-ConfigFile
 configurator_port=		devel/hs-configurator
 contravariant_port=		math/hs-contravariant
 convertible_port=		devel/hs-convertible
