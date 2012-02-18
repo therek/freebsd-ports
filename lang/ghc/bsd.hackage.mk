@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.160 2012/02/18 17:53:12 pgj Exp $
+# $FreeBSD: ports/lang/ghc/bsd.hackage.mk,v 1.161 2012/02/18 18:46:37 pgj Exp $
 #
 # bsd.hackage.mk -- List of Haskell Cabal ports.
 #
@@ -237,6 +237,7 @@ StateVar_port=			devel/hs-StateVar
 statistics_port=		math/hs-statistics
 stm_port=			devel/hs-stm
 Stream_port=			devel/hs-Stream
+strict_port=			devel/hs-strict
 stringsearch_port=		textproc/hs-stringsearch
 svgcairo_port=			graphics/hs-svgcairo
 syb_port=			devel/hs-syb
