@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/graphics/sane-backends/files/saned.in,v 1.1 2010/02/07 20:34:20 bms Exp $
+# $FreeBSD: ports/graphics/sane-backends/files/saned.in,v 1.2 2012/01/14 08:55:46 dougb Exp $
 #
 # PROVIDE: saned
-# REQUIRE: netif routing mountcritlocal
+# REQUIRE: LOGIN netif routing mountcritlocal
 # BEFORE:  NETWORKING
 #
 # A sample saned startup script.
