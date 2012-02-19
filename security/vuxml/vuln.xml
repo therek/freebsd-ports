@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2611 2012/02/18 15:00:46 matthew Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2612 2012/02/19 22:14:32 rene Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -56,7 +56,7 @@ Note:  Please add new entries to the beginning of this file.
       </package>
       <package>
 	<name>plib</name>
-	<range><le>1.8.5</le></range>
+	<range><le>1.8.5_3</le></range>
       </package>
     </affects>
     <description>
