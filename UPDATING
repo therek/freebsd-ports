@@ -5,6 +5,13 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20120220:
+  AFFECTS: users of graphics/libungif
+  AUTHOR: dinoex@FreeBSD.org
+
+  libungif is obsolete, please deinstall it and rebuild all ports using
+  it with graphics/giflib.
+
 20120216:
   AFFECTS: users of multimedia/libvpx
   AUTHOR: ashish@FreeBSD.org
@@ -5933,4 +5940,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1205 2012/02/16 15:58:46 ashish Exp $
+$FreeBSD: ports/UPDATING,v 1.1206 2012/02/17 10:30:19 dougb Exp $
