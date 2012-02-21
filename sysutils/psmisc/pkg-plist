@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/sysutils/psmisc/pkg-plist,v 1.3 2010/10/06 05:58:11 sunpoet Exp $
 bin/killall
 bin/pidof
 bin/pstree
@@ -8,6 +8,7 @@ bin/pstree.x11
 %%NLS%%share/locale/cs/LC_MESSAGES/psmisc.mo
 %%NLS%%share/locale/de/LC_MESSAGES/psmisc.mo
 %%NLS%%share/locale/el/LC_MESSAGES/psmisc.mo
+%%NLS%%share/locale/eo/LC_MESSAGES/psmisc.mo
 %%NLS%%share/locale/eu/LC_MESSAGES/psmisc.mo
 %%NLS%%share/locale/fi/LC_MESSAGES/psmisc.mo
 %%NLS%%share/locale/fr/LC_MESSAGES/psmisc.mo
