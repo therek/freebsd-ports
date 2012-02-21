@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/emulators/virtualbox-ose-additions/pkg-plist,v 1.3 2010/03/15 20:54:35 miwi Exp $
+@comment $FreeBSD: ports/emulators/virtualbox-ose-additions/pkg-plist,v 1.4 2011/01/31 23:06:45 decke Exp $
 %%X11%%bin/VBoxClient-all
 %%X11%%bin/VBoxClient
 %%X11%%etc/xdg/autostart/vboxclient.desktop
@@ -7,7 +7,6 @@ sbin/VBoxService
 %%X11%%share/autostart/vboxclient.desktop
 %%X11%%lib/xorg/modules/drivers/vboxvideo_drv.so
 %%X11%%lib/xorg/modules/input/vboxmouse_drv.so
-%%HAL%%share/hal/fdi/policy/10osvendor/90-vboxguest.fdi
 %%X11%%@dirrmtry share/autostart
 %%X11%%@dirrmtry lib/xorg/modules/drivers
 %%X11%%@dirrmtry lib/xorg/modules/input
