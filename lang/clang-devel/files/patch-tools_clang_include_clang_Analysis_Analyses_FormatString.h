@@ -1,16 +1,16 @@
 
-$FreeBSD: ports/devel/llvm-devel/files/patch-tools_clang_include_clang_Analysis_Analyses_FormatString.h,v 1.1 2010/08/31 19:04:20 brooks Exp $
+$FreeBSD$
 
 --- tools/clang/include/clang/Analysis/Analyses/FormatString.h.orig
 +++ tools/clang/include/clang/Analysis/Analyses/FormatString.h
-@@ -139,6 +139,10 @@
+@@ -141,6 +141,10 @@
      SArg,
-     
+ 
      // ** Printf-specific **
-+
++    
 +    // FreeBSD specific specifiers
 +    bArg,
 +    DArg,
-   
+ 
      // Objective-C specific specifiers.
      ObjCObjArg,  // '@'
