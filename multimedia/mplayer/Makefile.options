@@ -4,7 +4,7 @@
 # Some of the knobs are not tunable by the OPTIONS framework. These are
 # explained here in detail.
 #
-# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.27 2012/02/16 20:17:31 lx Exp $
+# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.28 2012/02/18 19:04:46 dinoex Exp $
 #
 # Feature options:
 # These options influence some general behaviour of mplayer. Almost all of the featues,
@@ -151,7 +151,7 @@ CONFIGURE_ARGS+=	--disable-pulse
 .endif
 
 .if defined(WITH_BLURAY)
-LIB_DEPENDS+=		bluray.0:${PORTSDIR}/multimedia/libbluray
+LIB_DEPENDS+=		bluray.1:${PORTSDIR}/multimedia/libbluray
 .else
 CONFIGURE_ARGS+=	--disable-bluray
 .endif
