@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.558 2012/01/31 20:19:07 jgh Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.559 2012/02/21 02:13:12 tabthorpe Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -182,7 +182,8 @@ MASTER_SITE_DEBIAN_NON_US+=	\
 	ftp://ftp2.de.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.snt.utwente.nl/pub/linux/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.df.lth.se/pub/debian-non-US/%SUBDIR%/ \
-	ftp://ftp.acc.umu.se/debian-non-US/%SUBDIR%/
+	ftp://ftp.acc.umu.se/debian-non-US/%SUBDIR%/ \
+	ftp://mirror.symnds.com/debian-non-US/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_DEBIAN_POOL)
