@@ -5,6 +5,17 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20120225:
+  AFFECTS: users of archivers/libarchive
+  AUTHOR: glewis@FreeBSD.org
+
+  libarchive has been updated to version 3.0.3, with a shared library bump.
+  This requires dependent ports to be rebuilt.
+
+  # portmaster -r libarchive
+  or
+  # portupgrade -r archivers/libarchive
+
 20120221:
   AFFECTS: users of emulators/virtualbox-ose
   AUTHOR: decke@FreeBSD.org
@@ -5950,4 +5961,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1207 2012/02/20 05:42:25 dinoex Exp $
+$FreeBSD: ports/UPDATING,v 1.1208 2012/02/21 14:31:53 decke Exp $
