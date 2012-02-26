@@ -1,7 +1,7 @@
 # Date created:		2009-01-25
 # Whom:			Wen Heping <wenheping@gmail.com>
 #
-# $FreeBSD: ports/Mk/bsd.cran.mk,v 1.9 2011/10/15 13:37:26 tota Exp $
+# $FreeBSD: ports/Mk/bsd.cran.mk,v 1.10 2011/11/15 20:08:55 tota Exp $
 #
 
 CRAN_Include_MAINTAINER=	wen@FreeBSD.org
@@ -39,7 +39,7 @@ R_INS=		${R_COMMAND} CMD INSTALL
 
 do-install:
 .if defined(USE_R_MOD)
-	@cd ${WRKDIR} && ${R_INS} ${PORTNAME}
+	@cd ${WRKDIR} && ${SETENV} ${MAKE_ENV} ${R_INS} ${PORTNAME}
 .endif
 
 .if defined(USE_R_MOD) && defined(R_MOD_AUTOPLIST)
