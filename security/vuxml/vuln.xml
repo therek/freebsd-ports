@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2614 2012/02/20 04:28:51 eadler Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.2615 2012/02/27 03:04:47 wxs Exp $
 
 
 QUICK GUIDE TO ADDING A NEW ENTRY
@@ -47,6 +47,34 @@ Note:  Please add new entries to the beginning of this file.
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="57f1a624-6197-11e1-b98c-bcaec565249c">
+    <topic>libxml2 -- heap buffer overflow</topic>
+    <affects>
+      <package>
+	<name>libxml2</name>
+	<range><lt>2.7.8_2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Google chrome team reports:</p>
+	<blockquote cite="http://googlechromereleases.blogspot.com/2012/01/stable-channel-update.html">
+	  <p>Heap-based buffer overflow in libxml2, allows remote attackers to
+             cause a denial of service or possibly have unspecified other 
+             impact via unknown vectors.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2011-3919</cvename>
+      <url>http://googlechromereleases.blogspot.com/2012/01/stable-channel-update.html</url>
+    </references>
+    <dates>
+      <discovery>2012-01-05</discovery>
+      <entry>2012-02-27</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="ba51c2f7-5b43-11e1-8288-00262d5ed8ee">
     <topic>plib -- remote code execution via buffer overflow</topic>
     <affects>
