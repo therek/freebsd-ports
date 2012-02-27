@@ -33,6 +33,12 @@ you update your ports collection, before attempting any port upgrades.
   libungif is obsolete, please deinstall it and rebuild all ports using
   it with graphics/giflib.
 
+  # portmaster -o graphics/giflib graphics/libungif
+  # portmaster -r giflib
+  or
+  # portupgrade -o graphics/giflib graphics/libungif
+  # portupgrade -rf giflib
+
 20120216:
   AFFECTS: users of multimedia/libvpx
   AUTHOR: ashish@FreeBSD.org
@@ -5961,4 +5967,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: ports/UPDATING,v 1.1208 2012/02/21 14:31:53 decke Exp $
+$FreeBSD: ports/UPDATING,v 1.1209 2012/02/25 22:42:24 glewis Exp $
