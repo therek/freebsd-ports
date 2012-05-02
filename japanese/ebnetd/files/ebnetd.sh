@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/japanese/ebnetd/files/ebnetd.sh,v 1.2 2006/02/20 20:47:04 dougb Exp $
+# $FreeBSD: ports/japanese/ebnetd/files/ebnetd.sh,v 1.3 2010/03/27 00:13:07 dougb Exp $
 #
 
 # PROVIDE: ebnetd ndtpd ebhttpd
@@ -27,7 +27,7 @@
 
 # ebnetd
 name=ebnetd
-rcvar=`set_rcvar`
+rcvar=ebnetd_enable
 command="%%PREFIX%%/sbin/${name}"
 pidfile="/var/run/ebnetd/ebnd.pid"
 required_dirs="/var/run/ebnetd"
@@ -44,7 +44,7 @@ run_rc_command "$1"
 
 # ndtpd
 name=ndtpd
-rcvar=`set_rcvar`
+rcvar=ndtpd_enable
 command="%%PREFIX%%/sbin/${name}"
 pidfile="/var/run/ebnetd/${name}.pid"
 required_dirs="/var/run/ebnetd"
@@ -61,7 +61,7 @@ run_rc_command "$1"
 
 # ebhttpd
 name=ebhttpd
-rcvar=`set_rcvar`
+rcvar=ebhttpd_enable
 command="%%PREFIX%%/sbin/${name}"
 pidfile="/var/run/ebnetd/${name}.pid"
 required_dirs="/var/run/ebnetd"

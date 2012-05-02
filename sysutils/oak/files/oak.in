@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/oak/files/oak.in,v 1.1 2007/02/01 12:11:18 demon Exp $
+# $FreeBSD: ports/sysutils/oak/files/oak.in,v 1.2 2010/03/27 00:15:00 dougb Exp $
 
 # PROVIDE: oak
 # REQUIRE: DAEMON
@@ -12,7 +12,7 @@ oak_enable="${oak_enable-NO}"
 . /etc/rc.subr
 
 name="oak"
-rcvar=`set_rcvar`
+rcvar=oak_enable
 command="%%PREFIX%%/bin/oak"
 
 load_rc_config $name

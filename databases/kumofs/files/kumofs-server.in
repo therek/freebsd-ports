@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/kumofs/files/kumofs-server.sh.in,v 1.1 2010/04/26 13:39:47 kuriyama Exp $
+# $FreeBSD: ports/databases/kumofs/files/kumofs-server.in,v 1.1 2010/04/27 14:54:52 kuriyama Exp $
 #
 
 # PROVIDE: kumofs-server
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="kumofs_server"
-rcvar=`set_rcvar`
+rcvar=kumofs_server_enable
 
 load_rc_config $name
 

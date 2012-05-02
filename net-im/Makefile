@@ -35,7 +35,6 @@
     SUBDIR += gajim
     SUBDIR += gajim-devel
     SUBDIR += gale
-    SUBDIR += gicq
     SUBDIR += gloox
     SUBDIR += grouch
     SUBDIR += gtkyahoo
@@ -61,7 +60,6 @@
     SUBDIR += konverse
     SUBDIR += kopete
     SUBDIR += kpopup
-    SUBDIR += libicq
     SUBDIR += libjingle
     SUBDIR += libmsn
     SUBDIR += libnice
@@ -158,7 +156,6 @@
     SUBDIR += sim-im-devel
     SUBDIR += skype
     SUBDIR += skype-devel
-    SUBDIR += skype20
     SUBDIR += tapioca-qt
     SUBDIR += telepathy-butterfly
     SUBDIR += telepathy-farsight
@@ -176,10 +173,10 @@
     SUBDIR += tkabber-devel
     SUBDIR += tkabber-plugins
     SUBDIR += tkabbur
-    SUBDIR += turpial
     SUBDIR += tmsnc
     SUBDIR += trix
     SUBDIR += ttytter
+    SUBDIR += turpial
     SUBDIR += twirssi
     SUBDIR += twitmail
     SUBDIR += vacuum-im

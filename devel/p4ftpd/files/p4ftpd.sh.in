@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/p4ftpd/files/p4ftpd.sh.in,v 1.1 2010/05/10 15:00:26 rene Exp $
+# $FreeBSD: ports/devel/p4ftpd/files/p4ftpd.sh.in,v 1.2 2011/05/15 02:49:06 dougb Exp $
 #
 
 # PROVIDE: p4ftpd
@@ -28,7 +28,7 @@
 . /etc/rc.subr
 
 name="p4ftpd"
-rcvar=`set_rcvar`
+rcvar=p4ftpd_enable
 
 load_rc_config $name
 

@@ -108,6 +108,7 @@
     SUBDIR += dgd-lpmud
     SUBDIR += dhcp6
     SUBDIR += dhcpcd
+    SUBDIR += dhcpd-pools
     SUBDIR += dhcpdump
     SUBDIR += dhcperf
     SUBDIR += dhcping
@@ -118,6 +119,7 @@
     SUBDIR += dimes
     SUBDIR += diradmin
     SUBDIR += dosdetector
+    SUBDIR += drawterm
     SUBDIR += dropbox-api-command
     SUBDIR += dtcp
     SUBDIR += dtcpclient
@@ -298,6 +300,7 @@
     SUBDIR += ldapsh
     SUBDIR += lft
     SUBDIR += libbgpdump
+    SUBDIR += libcmis
     SUBDIR += libconnect
     SUBDIR += libdnet
     SUBDIR += libexosip2
@@ -344,6 +347,7 @@
     SUBDIR += linneighborhood
     SUBDIR += linphone
     SUBDIR += linphone-base
+    SUBDIR += linux-f10-nss_ldap
     SUBDIR += linux-f10-openldap
     SUBDIR += linux-nx-client
     SUBDIR += linuxigd
@@ -574,6 +578,7 @@
     SUBDIR += p5-Net-HTTP
     SUBDIR += p5-Net-Hiveminder
     SUBDIR += p5-Net-INET6Glue
+    SUBDIR += p5-Net-IP-Minimal
     SUBDIR += p5-Net-IP-RangeCompare
     SUBDIR += p5-Net-IPTrie
     SUBDIR += p5-Net-IRR
@@ -641,6 +646,7 @@
     SUBDIR += p5-Net-SSH2
     SUBDIR += p5-Net-Server
     SUBDIR += p5-Net-Server-Coro
+    SUBDIR += p5-Net-Server-SS-PreFork
     SUBDIR += p5-Net-Services
     SUBDIR += p5-Net-Subnet
     SUBDIR += p5-Net-Subnets
@@ -711,6 +717,7 @@
     SUBDIR += p5-SOAP-Transport-TCP
     SUBDIR += p5-Samba-LDAP
     SUBDIR += p5-Server-Starter
+    SUBDIR += p5-Socket
     SUBDIR += p5-Socket-Class
     SUBDIR += p5-Socket-GetAddrInfo
     SUBDIR += p5-Socket-Multicast6
@@ -736,6 +743,7 @@
     SUBDIR += p5-XML-Compile-SOAP-AnyEvent
     SUBDIR += p5-XML-Compile-SOAP-Daemon
     SUBDIR += p5-XML-Compile-SOAP-WSA
+    SUBDIR += p5-XML-Fast
     SUBDIR += p5-XML-RPC
     SUBDIR += p5-XML-RPC-Fast
     SUBDIR += p5-XPC
@@ -798,6 +806,7 @@
     SUBDIR += pear-URI_Template
     SUBDIR += pear-XML_RPC
     SUBDIR += pear-XML_RPC2
+    SUBDIR += pecl-amqp
     SUBDIR += pecl-cvsclient
     SUBDIR += pecl-geoip
     SUBDIR += pecl-oauth
@@ -847,6 +856,7 @@
     SUBDIR += pvm++
     SUBDIR += pxe
     SUBDIR += py-GeoIP
+    SUBDIR += py-amqplib
     SUBDIR += py-avahi
     SUBDIR += py-beanstalkc
     SUBDIR += py-cloudfiles
@@ -890,6 +900,7 @@
     SUBDIR += py-twistedPair
     SUBDIR += py-twitter
     SUBDIR += py-txamqp
+    SUBDIR += py-urllib3
     SUBDIR += py-xmlrpc
     SUBDIR += py-xmlrpclib
     SUBDIR += py-yadis
@@ -1128,6 +1139,7 @@
     SUBDIR += ucarp
     SUBDIR += udptunnel
     SUBDIR += udpxy
+    SUBDIR += udt
     SUBDIR += ulxmlrpcpp
     SUBDIR += unfs3
     SUBDIR += unison
@@ -1201,7 +1213,6 @@
     SUBDIR += xrdp
     SUBDIR += yaph
     SUBDIR += yate
-    SUBDIR += yate-devel
     SUBDIR += yaz
     SUBDIR += yaz++
     SUBDIR += yazproxy

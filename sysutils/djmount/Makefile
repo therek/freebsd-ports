@@ -7,7 +7,7 @@
 
 PORTNAME=	djmount
 PORTVERSION=	0.71
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 
@@ -15,11 +15,9 @@ MAINTAINER=	d9364104@mail.nchu.edu.tw
 COMMENT=	Mount UPnP A/V Media
 
 LIB_DEPENDS=	fuse.2:${PORTSDIR}/sysutils/fusefs-libs \
-		upnp.7:${PORTSDIR}/devel/upnp
+		upnp.8:${PORTSDIR}/devel/upnp
 BUILD_DEPENDS=	iconv:${PORTSDIR}/converters/libiconv
 RUN_DEPENDS=	${LOCALBASE}/modules/fuse.ko:${PORTSDIR}/sysutils/fusefs-kmod
-
-BROKEN=		does not compile
 
 PLIST_FILES=	bin/${PORTNAME}
 GNU_CONFIGURE=	yes

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openntpd/files/openntpd.in,v 1.2 2010/03/16 18:08:10 naddy Exp $
+# $FreeBSD: ports/net/openntpd/files/openntpd.in,v 1.3 2010/03/27 00:13:52 dougb Exp $
 #
 # PROVIDE: openntpd
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=openntpd
-rcvar=`set_rcvar`
+rcvar=openntpd_enable
 
 command=%%PREFIX%%/sbin/ntpd
 required_files=%%PREFIX%%/etc/ntpd.conf

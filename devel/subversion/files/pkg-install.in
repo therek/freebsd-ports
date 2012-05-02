@@ -7,7 +7,7 @@
 # This script is a workaround for apxs bug: 
 # https://issues.apache.org/bugzilla/show_bug.cgi?id=47397
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/subversion/files/pkg-install.in,v 1.1 2010/04/19 10:39:12 lev Exp $
 #
 
 if [ "%%MOD_DAV_SVN_INSTALL%%" != "YES" ] ; then
@@ -43,7 +43,7 @@ if [ -z "${CONFFILE}" ]; then
 fi
 
 # use only 'egrep -e' else the check works not correct
-if [ ! -n "`egrep -e '^(Load|Add)Module.*dav_module' ${SYSCONFDIR}/${CONFFILE}`" ]; then
+if [ ! -n "`egrep -e '^LoadModule[[:blank:]]+dav_module' ${SYSCONFDIR}/${CONFFILE}`" ]; then
 	if [ -f ${LIBEXECDIR}/mod_dav.so ]; then
 		${APXSCMD} -e -S LIBEXECDIR=${LIBEXECDIR} -a -n dav ${LIBEXECDIR}/mod_dav.so
 	else

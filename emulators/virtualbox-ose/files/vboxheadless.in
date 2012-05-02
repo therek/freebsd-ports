@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/emulators/virtualbox-ose/files/vboxheadless.in,v 1.1 2011/05/22 13:51:59 decke Exp $
+# $FreeBSD: ports/emulators/virtualbox-ose/files/vboxheadless.in,v 1.2 2011/07/01 13:31:47 decke Exp $
 #
 # PROVIDE: vboxheadless
 # REQUIRE: LOGIN vboxnet
@@ -26,7 +26,7 @@
 . /etc/rc.subr
 
 name="vboxheadless"
-rcvar=`set_rcvar`
+rcvar=vboxheadless_enable
 
 command="%%PREFIX%%/bin/VBoxHeadless"
 pidbase="/var/run/${name}"

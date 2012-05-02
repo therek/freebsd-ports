@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/dhcp6/files/dhcp6relay.sh.in,v 1.3 2009/07/15 16:55:50 dougb Exp $
+# $FreeBSD: ports/net/dhcp6/files/dhcp6relay.sh.in,v 1.4 2010/03/27 00:13:40 dougb Exp $
 #
 
 # PROVIDE: dhcp6relay
@@ -23,7 +23,7 @@
 . /etc/rc.subr
 
 name="dhcp6relay"
-rcvar=${name}_enable
+rcvar=dhcp6relay_enable
 
 command=%%PREFIX%%/sbin/${name}
 start_precmd="${name}_precmd"

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/dtcp/files/dtcpc.sh.in,v 1.3 2009/07/15 16:55:50 dougb Exp $
+# $FreeBSD: ports/net/dtcp/files/dtcpc.sh.in,v 1.4 2010/03/27 00:13:41 dougb Exp $
 #
 
 # PROVIDE: dtcpc
@@ -24,7 +24,7 @@ dtcpc_flags=${dtcpc_flags:-"-t network -Dl"}	# Flags to dtcpc program
 . /etc/rc.subr
 
 name="dtcpc"
-rcvar=`set_rcvar`
+rcvar=dtcpc_enable
 command="%%PREFIX%%/sbin/${name}"
 command_interpreter="%%RUBY%%"
 pidfile="/var/run/${name}.pid"

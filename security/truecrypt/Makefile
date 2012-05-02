@@ -5,7 +5,7 @@
 # $FreeBSD$
 
 PORTNAME=	truecrypt
-PORTVERSION=	7.1
+PORTVERSION=	7.1a
 CATEGORIES=	security
 MASTER_SITES=	SF/wxwindows/${WX_VER}/:wxwidgets \
 		ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-11/v2-20/:rsa
@@ -44,11 +44,11 @@ PLIST_FILES+=	%%DOCSDIR%%/License.txt
 PLIST_DIRS=	%%DOCSDIR%%
 .endif
 
-OPTIONS=	GUI     "With GUI" off
+OPTIONS=	X11     "With GUI (depends on X)" off
 
 .include <bsd.port.options.mk>
 
-.ifdef(WITH_GUI)
+.ifdef(WITH_X11)
 USE_GNOME=	gtk20
 NOGUI=
 .else

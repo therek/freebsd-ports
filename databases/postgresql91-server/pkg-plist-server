@@ -1,4 +1,5 @@
 bin/initdb
+bin/pg_basebackup
 bin/pg_controldata
 bin/pg_ctl
 bin/pg_resetxlog
@@ -51,23 +52,27 @@ share/postgresql/extension/plpgsql--unpackaged--1.0.sql
 share/postgresql/extension/plpgsql.control
 @dirrmtry share/postgresql/extension
 %%GETTEXT%%share/locale/cs/LC_MESSAGES/initdb-9.1.mo
+%%GETTEXT%%share/locale/cs/LC_MESSAGES/pg_basebackup-9.1.mo
 %%GETTEXT%%share/locale/cs/LC_MESSAGES/pg_controldata-9.1.mo
 %%GETTEXT%%share/locale/cs/LC_MESSAGES/pg_ctl-9.1.mo
 %%GETTEXT%%share/locale/cs/LC_MESSAGES/pg_resetxlog-9.1.mo
 %%GETTEXT%%share/locale/cs/LC_MESSAGES/plpgsql-9.1.mo
 %%GETTEXT%%share/locale/de/LC_MESSAGES/initdb-9.1.mo
+%%GETTEXT%%share/locale/de/LC_MESSAGES/pg_basebackup-9.1.mo
 %%GETTEXT%%share/locale/de/LC_MESSAGES/pg_controldata-9.1.mo
 %%GETTEXT%%share/locale/de/LC_MESSAGES/pg_ctl-9.1.mo
 %%GETTEXT%%share/locale/de/LC_MESSAGES/pg_resetxlog-9.1.mo
 %%GETTEXT%%share/locale/de/LC_MESSAGES/plpgsql-9.1.mo
 %%GETTEXT%%share/locale/de/LC_MESSAGES/postgres-9.1.mo
 %%GETTEXT%%share/locale/es/LC_MESSAGES/initdb-9.1.mo
+%%GETTEXT%%share/locale/es/LC_MESSAGES/pg_basebackup-9.1.mo
 %%GETTEXT%%share/locale/es/LC_MESSAGES/pg_controldata-9.1.mo
 %%GETTEXT%%share/locale/es/LC_MESSAGES/pg_ctl-9.1.mo
 %%GETTEXT%%share/locale/es/LC_MESSAGES/pg_resetxlog-9.1.mo
 %%GETTEXT%%share/locale/es/LC_MESSAGES/plpgsql-9.1.mo
 %%GETTEXT%%share/locale/es/LC_MESSAGES/postgres-9.1.mo
 %%GETTEXT%%share/locale/fr/LC_MESSAGES/initdb-9.1.mo
+%%GETTEXT%%share/locale/fr/LC_MESSAGES/pg_basebackup-9.1.mo
 %%GETTEXT%%share/locale/fr/LC_MESSAGES/pg_controldata-9.1.mo
 %%GETTEXT%%share/locale/fr/LC_MESSAGES/pg_ctl-9.1.mo
 %%GETTEXT%%share/locale/fr/LC_MESSAGES/pg_resetxlog-9.1.mo
@@ -78,6 +83,7 @@ share/postgresql/extension/plpgsql.control
 %%GETTEXT%%share/locale/it/LC_MESSAGES/pg_resetxlog-9.1.mo
 %%GETTEXT%%share/locale/it/LC_MESSAGES/plpgsql-9.1.mo
 %%GETTEXT%%share/locale/ja/LC_MESSAGES/initdb-9.1.mo
+%%GETTEXT%%share/locale/ja/LC_MESSAGES/pg_basebackup-9.1.mo
 %%GETTEXT%%share/locale/ja/LC_MESSAGES/pg_controldata-9.1.mo
 %%GETTEXT%%share/locale/ja/LC_MESSAGES/pg_ctl-9.1.mo
 %%GETTEXT%%share/locale/ja/LC_MESSAGES/pg_resetxlog-9.1.mo
@@ -88,25 +94,31 @@ share/postgresql/extension/plpgsql.control
 %%GETTEXT%%share/locale/ko/LC_MESSAGES/pg_resetxlog-9.1.mo
 %%GETTEXT%%share/locale/ko/LC_MESSAGES/plpgsql-9.1.mo
 %%GETTEXT%%share/locale/pl/LC_MESSAGES/initdb-9.1.mo
+%%GETTEXT%%share/locale/pl/LC_MESSAGES/pg_basebackup-9.1.mo
 %%GETTEXT%%share/locale/pl/LC_MESSAGES/pg_controldata-9.1.mo
 %%GETTEXT%%share/locale/pl/LC_MESSAGES/pg_ctl-9.1.mo
 %%GETTEXT%%share/locale/pl/LC_MESSAGES/pg_resetxlog-9.1.mo
 %%GETTEXT%%share/locale/pl/LC_MESSAGES/plpgsql-9.1.mo
 %%GETTEXT%%share/locale/pl/LC_MESSAGES/postgres-9.1.mo
 %%GETTEXT%%share/locale/pt_BR/LC_MESSAGES/initdb-9.1.mo
+%%GETTEXT%%share/locale/pt_BR/LC_MESSAGES/pg_basebackup-9.1.mo
 %%GETTEXT%%share/locale/pt_BR/LC_MESSAGES/pg_controldata-9.1.mo
 %%GETTEXT%%share/locale/pt_BR/LC_MESSAGES/pg_ctl-9.1.mo
 %%GETTEXT%%share/locale/pt_BR/LC_MESSAGES/pg_resetxlog-9.1.mo
 %%GETTEXT%%share/locale/pt_BR/LC_MESSAGES/plpgsql-9.1.mo
 %%GETTEXT%%share/locale/pt_BR/LC_MESSAGES/postgres-9.1.mo
 %%GETTEXT%%share/locale/ro/LC_MESSAGES/initdb-9.1.mo
+%%GETTEXT%%share/locale/ro/LC_MESSAGES/pg_basebackup-9.1.mo
 %%GETTEXT%%share/locale/ro/LC_MESSAGES/pg_controldata-9.1.mo
 %%GETTEXT%%share/locale/ro/LC_MESSAGES/pg_resetxlog-9.1.mo
 %%GETTEXT%%share/locale/ro/LC_MESSAGES/plpgsql-9.1.mo
 %%GETTEXT%%share/locale/ru/LC_MESSAGES/initdb-9.1.mo
+%%GETTEXT%%share/locale/ru/LC_MESSAGES/pg_basebackup-9.1.mo
 %%GETTEXT%%share/locale/ru/LC_MESSAGES/pg_controldata-9.1.mo
 %%GETTEXT%%share/locale/ru/LC_MESSAGES/pg_ctl-9.1.mo
 %%GETTEXT%%share/locale/ru/LC_MESSAGES/pg_resetxlog-9.1.mo
+%%GETTEXT%%share/locale/ru/LC_MESSAGES/plpgsql-9.1.mo
+%%GETTEXT%%share/locale/ru/LC_MESSAGES/postgres-9.1.mo
 %%GETTEXT%%share/locale/sv/LC_MESSAGES/initdb-9.1.mo
 %%GETTEXT%%share/locale/sv/LC_MESSAGES/pg_resetxlog-9.1.mo
 %%GETTEXT%%share/locale/ta/LC_MESSAGES/pg_resetxlog-9.1.mo
@@ -765,6 +777,8 @@ share/postgresql/tsearch_data/ispell_sample.affix
 share/postgresql/tsearch_data/ispell_sample.dict
 share/postgresql/tsearch_data/synonym_sample.syn
 share/postgresql/tsearch_data/thesaurus_sample.ths
+@exec /bin/mkdir -p %%PREFIX%%/%%PG_USER%% || /usr/bin/true
+@exec /usr/sbin/chown %%PG_USER%%:%%PG_GROUP%% %%PREFIX%%/%%PG_USER%% || /usr/bin/true
 @dirrmtry share/postgresql/tsearch_data
 @dirrmtry share/postgresql
 @dirrmtry etc/periodic/daily

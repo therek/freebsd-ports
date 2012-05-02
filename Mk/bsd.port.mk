@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.698 2011/11/07 12:44:42 pav Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.705 2012/02/02 07:21:14 bapt Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -535,8 +535,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # Various directory definitions and variables to control them.
 # You rarely need to redefine any of these except WRKSRC and NO_WRKSUBDIR.
 #
-# X11BASE		- Where X11 ports install things.
-#				  Default: ${LOCALBASE}
 # LOCALBASE		- Where non-X11 ports install things.
 #				  Default: /usr/local
 # LINUXBASE		- Where Linux ports install things.
@@ -1098,7 +1096,7 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				- Different checksum algorithms to check for verifying the
 #				  integrity of the distfiles. The absence of the algorithm
 #				  in distinfo doesn't make it fail.
-#				  Default: sha256 (md5 is deprecated, allowed but unused)
+#				  Default: sha256
 # NO_CHECKSUM	- Don't verify the checksum.  Typically used when
 #				  when you noticed the distfile you just fetched has
 #				  a different checksum and you intend to verify if
@@ -1122,7 +1120,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # by individual Makefiles or local system make configuration.
 PORTSDIR?=		/usr/ports
 LOCALBASE?=		/usr/local
-X11BASE?=		${LOCALBASE}
 LINUXBASE?=		/compat/linux
 DISTDIR?=		${PORTSDIR}/distfiles
 _DISTDIR?=		${DISTDIR}/${DIST_SUBDIR}
@@ -1371,12 +1368,6 @@ ETCDIR?=		${PREFIX}/etc/${PORTNAME}
 .include "${PORTSDIR}/Mk/bsd.linux-apps.mk"
 .endif
 
-.if ${X11BASE} != ${LOCALBASE}
-.BEGIN:
-	@${ECHO_MSG} "X11BASE is now deprecated.  Unset X11BASE in make.conf and try again."
-	@${FALSE}
-.endif
-
 .if defined(USE_XORG) || defined(XORG_CAT)
 .include "${PORTSDIR}/Mk/bsd.xorg.mk"
 .endif
@@ -1566,8 +1557,8 @@ CONFIGURE_WRKSRC?=	${WRKSRC}
 BUILD_WRKSRC?=	${WRKSRC}
 INSTALL_WRKSRC?=${WRKSRC}
 
-PLIST_SUB+=	OSREL=${OSREL} PREFIX=%D LOCALBASE=${LOCALBASE} X11BASE=${X11BASE}
-SUB_LIST+=	PREFIX=${PREFIX} LOCALBASE=${LOCALBASE} X11BASE=${X11BASE} \
+PLIST_SUB+=	OSREL=${OSREL} PREFIX=%D LOCALBASE=${LOCALBASE} 
+SUB_LIST+=	PREFIX=${PREFIX} LOCALBASE=${LOCALBASE} \
 		DATADIR=${DATADIR} DOCSDIR=${DOCSDIR} EXAMPLESDIR=${EXAMPLESDIR} \
 		WWWDIR=${WWWDIR} ETCDIR=${ETCDIR}
 
@@ -1666,6 +1657,12 @@ IGNORE=		requires i386 (or compatible) platform to run
 LIB32DIR=	lib
 .endif
 PLIST_SUB+=	LIB32DIR=${LIB32DIR}
+
+.if defined(WITH_PKGNG)
+.if !defined(PKG_DEPENDS)
+PKG_DEPENDS+=		${LOCALBASE}/sbin/pkg:${PORTSDIR}/ports-mgmt/pkg
+.endif
+.endif
 
 .if defined(USE_ZIP)
 EXTRACT_DEPENDS+=	${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
@@ -1940,9 +1937,9 @@ BUILD_DEPENDS+=		imake:${X_IMAKE_PORT}
 
 .if defined(USE_DISPLAY) && !defined(DISPLAY)
 BUILD_DEPENDS+=	Xvfb:${X_VFBSERVER_PORT} \
-	${X11BASE}/lib/X11/fonts/misc/8x13O.pcf.gz:${X_FONTS_MISC_PORT} \
-	${X11BASE}/lib/X11/fonts/misc/fonts.alias:${X_FONTS_ALIAS_PORT} \
-	${X11BASE}/share/X11/xkb/rules/base:${PORTSDIR}/x11/xkeyboard-config \
+	${LOCALBASE}/lib/X11/fonts/misc/8x13O.pcf.gz:${X_FONTS_MISC_PORT} \
+	${LOCALBASE}/lib/X11/fonts/misc/fonts.alias:${X_FONTS_ALIAS_PORT} \
+	${LOCALBASE}/share/X11/xkb/rules/base:${PORTSDIR}/x11/xkeyboard-config \
 	xkbcomp:${PORTSDIR}/x11/xkbcomp
 .if !defined(PACKAGE_BUILDING)
 CONFIGURE_ENV+=	DISPLAY="localhost:1001"
@@ -1993,6 +1990,9 @@ IGNORE=	uses unknown USE_BISON construct
 
 .endif
 
+.if defined(WITH_PKGNG)
+.include "${PORTSDIR}/Mk/bsd.pkgng.mk"
+.endif
 .if defined(USE_LOCAL_MK)
 .include "${PORTSDIR}/Mk/bsd.local.mk"
 .endif
@@ -2102,15 +2102,15 @@ USE_SUBMAKE=	yes
 .	if defined(USE_LINUX)
 RUN_DEPENDS+=	${LINUXBASE}/usr/X11R6/lib/libXrender.so.1:${PORTSDIR}/x11/linux-xorg-libs
 .	else
-BUILD_DEPENDS+=	${X11BASE}/libdata/xorg/libraries:${X_LIBRARIES_PORT}
-RUN_DEPENDS+=	${X11BASE}/libdata/xorg/libraries:${X_LIBRARIES_PORT}
+BUILD_DEPENDS+=	${LOCALBASE}/libdata/xorg/libraries:${X_LIBRARIES_PORT}
+RUN_DEPENDS+=	${LOCALBASE}/libdata/xorg/libraries:${X_LIBRARIES_PORT}
 .	endif
 .endif
 
 .if defined(USE_XLIB) || defined(USE_XORG)
 # Add explicit X options to avoid problems with false positives in configure
 .if defined(GNU_CONFIGURE)
-CONFIGURE_ARGS+=--x-libraries=${X11BASE}/lib --x-includes=${X11BASE}/include
+CONFIGURE_ARGS+=--x-libraries=${LOCALBASE}/lib --x-includes=${LOCALBASE}/include
 .endif
 .endif
 
@@ -2198,7 +2198,7 @@ DISTINFO_FILE?=		${MASTERDIR}/distinfo
 MAKE_FLAGS?=	-f
 MAKEFILE?=		Makefile
 MAKE_ENV+=		PREFIX=${PREFIX} \
-			LOCALBASE=${LOCALBASE} X11BASE=${X11BASE} \
+			LOCALBASE=${LOCALBASE} \
 			MOTIFLIB="${MOTIFLIB}" LIBDIR="${LIBDIR}" \
 			CC="${CC}" CFLAGS="${CFLAGS}" \
 			CPP="${CPP}" CPPFLAGS="${CPPFLAGS}" \
@@ -2407,6 +2407,7 @@ PKGREQ?=		${PKGDIR}/pkg-req
 PKGMESSAGE?=	${PKGDIR}/pkg-message
 
 TMPPLIST?=	${WRKDIR}/.PLIST.mktmp
+TMPPLIST_SORT?=	${WRKDIR}/.PLIST.mktmp.sorted
 TMPGUCMD?=	${WRKDIR}/.PLIST.gucmd
 
 .for _CATEGORY in ${CATEGORIES}
@@ -2435,12 +2436,16 @@ PKG_ARGS+=		-C "${CONFLICTS_INSTALL}"
 .if defined(PKG_NOCOMPRESS)
 PKG_SUFX?=		.tar
 .else
+.if defined(WITH_PKGNG)
+PKG_SUFX?=		.txz
+.else
 PKG_SUFX?=		.tbz
+.endif
 .endif
 # where pkg_add records its dirty deeds.
 PKG_DBDIR?=		/var/db/pkg
 
-MOTIFLIB?=	-L${X11BASE}/lib -lXm -lXp
+MOTIFLIB?=	-L${LOCALBASE}/lib -lXm -lXp
 
 ALL_TARGET?=		all
 INSTALL_TARGET?=	install
@@ -2951,8 +2956,7 @@ SET_LATE_CONFIGURE_ARGS= \
 SCRIPTS_ENV+=	CURDIR=${MASTERDIR} DISTDIR=${DISTDIR} \
 		  WRKDIR=${WRKDIR} WRKSRC=${WRKSRC} PATCHDIR=${PATCHDIR} \
 		  SCRIPTDIR=${SCRIPTDIR} FILESDIR=${FILESDIR} \
-		  PORTSDIR=${PORTSDIR} PREFIX=${PREFIX} LOCALBASE=${LOCALBASE} \
-		  X11BASE=${X11BASE}
+		  PORTSDIR=${PORTSDIR} PREFIX=${PREFIX} LOCALBASE=${LOCALBASE} 
 
 .if defined(BATCH)
 SCRIPTS_ENV+=	BATCH=yes
@@ -3261,7 +3265,7 @@ all:
 	  DISTDIR=${DISTDIR} WRKDIR=${WRKDIR} WRKSRC=${WRKSRC} \
 	  PATCHDIR=${PATCHDIR} SCRIPTDIR=${SCRIPTDIR} \
 	  FILESDIR=${FILESDIR} PORTSDIR=${PORTSDIR} PREFIX=${PREFIX} \
-	  BUILD_DEPENDS="${BUILD_DEPENDS}" RUN_DEPENDS="${RUN_DEPENDS}" X11BASE=${X11BASE} \
+	  BUILD_DEPENDS="${BUILD_DEPENDS}" RUN_DEPENDS="${RUN_DEPENDS}" \
 	  CONFLICTS="${CONFLICTS}" \
 	${ALL_HOOK}
 .endif
@@ -3393,8 +3397,13 @@ check-deprecated:
 
 # Check if the port is listed in the vulnerability database
 
+.if defined(WITH_PKGNG)
+AUDITFILE?=		${PKG_DBDIR}/auditfile
+_EXTRACT_AUDITFILE=	${CAT} "${AUDITFILE}"
+.else
 AUDITFILE?=		/var/db/portaudit/auditfile.tbz
 _EXTRACT_AUDITFILE=	${TAR} -jxOf "${AUDITFILE}" auditfile
+.endif
 
 check-vulnerable:
 .if !defined(DISABLE_VULNERABILITIES) && !defined(PACKAGE_BUILDING)
@@ -3405,12 +3414,16 @@ check-vulnerable:
 		if [ "$$audit_created" -lt "$$audit_expiry" ]; then \
 			${ECHO_MSG} "===>  WARNING: Vulnerability database out of date, checking anyway"; \
 		fi; \
-		vlist=`${_EXTRACT_AUDITFILE} | ${GREP} "${PORTNAME}" | \
-			${AWK} -F\| ' /^[^#]/ { \
-				if (!system("${PKG_VERSION} -T \"${PKGNAME}\" \"" $$1 "\"")) \
-					print "=> " $$3 ".\n   Reference: " $$2 \
-			} \
-		'`; \
+		if [ -n "${WITH_PKGNG}" ]; then \
+			vlist=`${PKG_BIN} audit "${PKGNAME}"`; \
+		else \
+			vlist=`${_EXTRACT_AUDITFILE} | ${GREP} "${PORTNAME}" | \
+				${AWK} -F\| ' /^[^#]/ { \
+					if (!system("${PKG_VERSION} -T \"${PKGNAME}\" \"" $$1 "\"")) \
+						print "=> " $$3 ".\n   Reference: " $$2 \
+				} \
+			'`; \
+		fi; \
 		if [ -n "$$vlist" ]; then \
 			${ECHO_MSG} "===>  ${PKGNAME} has known vulnerabilities:"; \
 			${ECHO_MSG} "$$vlist"; \
@@ -3663,7 +3676,7 @@ do-patch:
 run-autotools-fixup:
 # Work around an issue where FreeBSD 10.0 is detected as FreeBSD 1.x.
 .if ${OSVERSION} >= 1000000 && !defined(WITHOUT_FBSD10_FIX)
-	-@for f in `${FIND} ${WRKSRC} -type f \( -name config.libpath -o \
+	-@for f in `${FIND} ${WRKDIR} -type f \( -name config.libpath -o \
 		-name config.rpath -o -name configure -o -name libtool.m4 -o \
 		-name ltconfig -o -name libtool -o -name aclocal.m4 -o \
 		-name acinclude.m4 \)` ; do \
@@ -3675,6 +3688,8 @@ run-autotools-fixup:
 				-e 's|freebsd\[\[123\]\]\*)|freebsd[[123]].*)|g' \
 					$${f} ; \
 			${TOUCH} ${TOUCH_FLAGS} -mr $${f}.fbsd10bak $${f} ; \
+			${RM} -f $${f}.fbsd10bak ; \
+			${ECHO_MSG} "===>   FreeBSD 10 autotools fix applied to $${f}"; \
 		done
 .endif
 .endif
@@ -3962,7 +3977,7 @@ delete-package-list: delete-package-links-list
 # Utility targets follow
 
 .if !target(check-already-installed)
-check-already-installed:
+check-already-installed: ${TMPPLIST_SORT}
 .if !defined(NO_PKG_REGISTER) && !defined(FORCE_PKG_REGISTER)
 		@${ECHO_MSG} "===>  Checking if ${PKGORIGIN} already installed"; \
 		${MKDIR} ${PKG_DBDIR}; \
@@ -3971,7 +3986,7 @@ check-already-installed:
 				for p in $${already_installed}; do \
 						prfx=`${PKG_INFO} -q -p $${p} 2> /dev/null | ${SED} -ne '1s|^@cwd ||p'`; \
 						if [ "x${PREFIX}" = "x$${prfx}" ]; then \
-								df=`${PKG_INFO} -q -f $${p} 2> /dev/null | ${GREP} -v "^@" | ${COMM} -12 - ${TMPPLIST}`; \
+								df=`${PKG_INFO} -q -f $${p} 2> /dev/null | ${GREP} -v "^@" | ${SORT} -u | ${COMM} -12 - ${TMPPLIST_SORT}`; \
 								if [ -n "$${df}" ]; then \
 										found_package=$${p}; \
 										break; \
@@ -4275,7 +4290,10 @@ _SANITY_SEQ=	${_CHROOT_SEQ} pre-everything check-makefile \
 				check-depends identify-install-conflicts check-deprecated \
 				check-vulnerable check-license buildanyway-message \
 				options-message
-_FETCH_DEP=		check-sanity
+
+_PKG_DEP=		check-sanity
+_PKG_SEQ=		pkg-depends
+_FETCH_DEP=		pkg
 _FETCH_SEQ=		fetch-depends pre-fetch pre-fetch-script \
 				do-fetch post-fetch post-fetch-script
 _EXTRACT_DEP=	fetch
@@ -4318,6 +4336,10 @@ check-sanity: ${_SANITY_SEQ}
 # XXX MCL might need to move in loop below?
 .if !target(fetch)
 fetch: ${_FETCH_DEP} ${_FETCH_SEQ}
+.endif
+
+.if !target(pkg)
+pkg: ${_PKG_DEP} ${_PKG_SEQ}
 .endif
 
 # Main logic. The loop generates 6 main targets and using cookies
@@ -4371,6 +4393,7 @@ ${${target:U}_COOKIE}::
 # Enforce order for -jN builds
 
 .ORDER: ${_SANITY_SEQ}
+.ORDER: ${_PKG_DEP} ${_PKG_SEQ}
 .ORDER: ${_FETCH_DEP} ${_FETCH_SEQ}
 .ORDER: ${_EXTRACT_DEP} ${_EXTRACT_SEQ}
 .ORDER: ${_PATCH_DEP} ${_PATCH_SEQ}
@@ -4395,7 +4418,7 @@ package-message:
 # Empty pre-* and post-* targets
 
 .for stage in pre post
-.for name in check-sanity fetch extract patch configure build install package
+.for name in pkg check-sanity fetch extract patch configure build install package
 
 .if !target(${stage}-${name})
 ${stage}-${name}:
@@ -4776,8 +4799,7 @@ check-checksum-algorithms:
 	done; \
 
 checksum_init=\
-	SHA256=${SHA256}; \
-	MD5=${MD5};
+	SHA256=${SHA256};
 
 .if !target(makesum)
 makesum: check-checksum-algorithms
@@ -4965,7 +4987,7 @@ package-noinstall:
 ################################################################
 
 .if !target(depends)
-depends: extract-depends patch-depends lib-depends fetch-depends build-depends run-depends
+depends: pkg-depends extract-depends patch-depends lib-depends fetch-depends build-depends run-depends
 
 .if defined(ALWAYS_BUILD_DEPENDS)
 _DEPEND_ALWAYS=	1
@@ -4976,9 +4998,18 @@ _DEPEND_ALWAYS=	0
 _INSTALL_DEPENDS=	\
 		if [ X${USE_PACKAGE_DEPENDS} != "X" ]; then \
 			subpkgfile=`(cd $$dir; ${MAKE} $$depends_args -V PKGFILE)`; \
+			subpkgname=$${subpkgfile%-*} ; \
+			subpkgname=$${subpkgname\#\#*/} ; \
 			if [ -r "$${subpkgfile}" -a "$$target" = "${DEPENDS_TARGET}" ]; then \
 				${ECHO_MSG} "===>   Installing existing package $${subpkgfile}"; \
-				${PKG_ADD} $${subpkgfile}; \
+				if [ -n "${WITH_PKGNG}" -a $${subpkgname} = "pkg" ]; then \
+					[ -d ${WRKDIR} ] || ${MKDIR} ${WRKDIR} ; \
+					${TAR} xf $${subpkgfile} -C ${WRKDIR} -s ",/.*/,,g" "*/pkg-static" ; \
+					${WRKDIR}/pkg-static add $${subpkgfile}; \
+					${RM} -f ${WRKDIR}/pkg-static; \
+				else \
+					${PKG_ADD} $${subpkgfile}; \
+				fi; \
 			else \
 			  (cd $$dir; ${MAKE} -DINSTALLS_DEPENDS $$target $$depends_args) ; \
 			fi; \
@@ -4987,7 +5018,7 @@ _INSTALL_DEPENDS=	\
 		fi; \
 		${ECHO_MSG} "===>   Returning to build of ${PKGNAME}";
 
-.for deptype in EXTRACT PATCH FETCH BUILD RUN
+.for deptype in PKG EXTRACT PATCH FETCH BUILD RUN
 ${deptype:L}-depends:
 .if defined(${deptype}_DEPENDS)
 .if !defined(NO_DEPENDS)
@@ -5132,7 +5163,7 @@ lib-depends:
 
 # Dependency lists: both build and runtime, recursive.  Print out directory names.
 
-_UNIFIED_DEPENDS=${EXTRACT_DEPENDS} ${PATCH_DEPENDS} ${FETCH_DEPENDS} ${BUILD_DEPENDS} ${LIB_DEPENDS} ${RUN_DEPENDS}
+_UNIFIED_DEPENDS=${PKG_DEPENDS} ${EXTRACT_DEPENDS} ${PATCH_DEPENDS} ${FETCH_DEPENDS} ${BUILD_DEPENDS} ${LIB_DEPENDS} ${RUN_DEPENDS}
 _DEPEND_DIRS=	${_UNIFIED_DEPENDS:C,^[^:]*:([^:]*).*$,\1,}
 
 all-depends-list:
@@ -5319,7 +5350,7 @@ fetch-required: fetch
 	@${ECHO_MSG} "===> NO_DEPENDS is set, not fetching any other distfiles for ${PKGNAME}"
 .else
 	@${ECHO_MSG} "===> Fetching all required distfiles for ${PKGNAME} and dependencies"
-.for deptype in EXTRACT PATCH FETCH BUILD RUN
+.for deptype in PKG EXTRACT PATCH FETCH BUILD RUN
 .if defined(${deptype}_DEPENDS)
 	@targ=fetch; deps="${${deptype}_DEPENDS}"; ${FETCH_LIST}
 .endif
@@ -5331,7 +5362,7 @@ fetch-required: fetch
 .if !target(fetch-required-list)
 fetch-required-list: fetch-list
 .if !defined(NO_DEPENDS)
-.for deptype in EXTRACT PATCH FETCH BUILD RUN
+.for deptype in PKG EXTRACT PATCH FETCH BUILD RUN
 .if defined(${deptype}_DEPENDS)
 	@targ=fetch-list; deps="${${deptype}_DEPENDS}"; ${FETCH_LIST}
 .endif
@@ -5350,12 +5381,12 @@ checksum-recursive:
 # Dependency lists: build and runtime.  Print out directory names.
 
 build-depends-list:
-.if defined(EXTRACT_DEPENDS) || defined(PATCH_DEPENDS) || defined(FETCH_DEPENDS) || defined(BUILD_DEPENDS) || defined(LIB_DEPENDS)
+.if defined(PKG_DEPENDS) || defined(EXTRACT_DEPENDS) || defined(PATCH_DEPENDS) || defined(FETCH_DEPENDS) || defined(BUILD_DEPENDS) || defined(LIB_DEPENDS)
 	@${BUILD-DEPENDS-LIST}
 .endif
 
 BUILD-DEPENDS-LIST= \
-	for dir in $$(${ECHO_CMD} "${EXTRACT_DEPENDS} ${PATCH_DEPENDS} ${FETCH_DEPENDS} ${BUILD_DEPENDS} ${LIB_DEPENDS}" | ${SED} -E -e 's,([^: ]*):([^: ]*)(:[^ ]*)?,\2,g' -e 'y/ /\n/'| ${SORT} -u); do \
+	for dir in $$(${ECHO_CMD} "${PKG_DEPENDS} ${EXTRACT_DEPENDS} ${PATCH_DEPENDS} ${FETCH_DEPENDS} ${BUILD_DEPENDS} ${LIB_DEPENDS}" | ${SED} -E -e 's,([^: ]*):([^: ]*)(:[^ ]*)?,\2,g' -e 'y/ /\n/'| ${SORT} -u); do \
 		if [ -d $$dir ]; then \
 			${ECHO_CMD} $$dir; \
 		else \
@@ -5583,7 +5614,7 @@ _PRETTY_PRINT_DEPENDS_LIST=\
 
 .if !target(pretty-print-build-depends-list)
 pretty-print-build-depends-list:
-.if defined(EXTRACT_DEPENDS) || defined(PATCH_DEPENDS) || \
+.if defined(PKG_PEPENDS) || defined(EXTRACT_DEPENDS) || defined(PATCH_DEPENDS) || \
 	defined(FETCH_DEPENDS) || defined(BUILD_DEPENDS) || defined(LIB_DEPENDS)
 	@${_PRETTY_PRINT_DEPENDS_LIST}
 .endif
@@ -5694,6 +5725,9 @@ generate-plist:
 ${TMPPLIST}:
 	@cd ${.CURDIR} && ${MAKE} generate-plist
 
+${TMPPLIST_SORT}: ${TMPPLIST}
+	@${SORT} -u ${TMPPLIST} >${TMPPLIST_SORT}
+
 .if !target(add-plist-docs)
 add-plist-docs:
 .if defined(PORTDOCS) && !defined(NOPORTDOCS)
@@ -5782,7 +5816,7 @@ add-plist-info:
 .endif
 .if (${PREFIX} != "/usr")
 	@${ECHO_CMD} "@unexec if [ -f %D/${INFO_PATH}/dir ]; then if sed -e '1,/Menu:/d' %D/${INFO_PATH}/dir | grep -q '^[*] '; then true; else rm %D/${INFO_PATH}/dir; fi; fi" >> ${TMPPLIST}
-.if (${PREFIX} != ${LOCALBASE} && ${PREFIX} != ${X11BASE} && ${PREFIX} != ${LINUXBASE})
+.if (${PREFIX} != ${LOCALBASE} && ${PREFIX} != ${LINUXBASE})
 	@${ECHO_CMD} "@unexec rmdir %D/${INFO_PATH} 2>/dev/null || true" >> ${TMPPLIST}
 .endif
 .endif
@@ -5793,7 +5827,7 @@ add-plist-info:
 # deinstall-time
 .if !target(add-plist-post)
 add-plist-post:
-.if (${PREFIX} != ${LOCALBASE} && ${PREFIX} != ${X11BASE} && ${PREFIX} != ${LINUXBASE} && ${PREFIX} != "/usr")
+.if (${PREFIX} != ${LOCALBASE} && ${PREFIX} != ${LINUXBASE} && ${PREFIX} != "/usr")
 	@${ECHO_CMD} "@unexec rmdir %D 2> /dev/null || true" >> ${TMPPLIST}
 .else
 	@${DO_NADA}

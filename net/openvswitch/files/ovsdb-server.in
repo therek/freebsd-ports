@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/openvswitch/files/ovsdb-server.in,v 1.1 2011/12/01 20:08:27 trasz Exp $
 #
 
 # PROVIDE: ovsdb_server
@@ -9,7 +9,7 @@
 . /etc/rc.subr
 
 name="ovsdb_server"
-rcvar=${name}_enable
+rcvar=ovsdb_server_enable
 
 command="%%PREFIX%%/sbin/ovsdb-server"
 pidfile="%%PREFIX%%/var/run/ovsdb-server.pid"

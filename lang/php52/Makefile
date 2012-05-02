@@ -7,7 +7,7 @@
 
 PORTNAME=	php52
 PORTVERSION=	5.2.17
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES?=	lang devel www
 MASTER_SITES=	${MASTER_SITE_PHP}
 MASTER_SITE_SUBDIR=	distributions
@@ -16,8 +16,9 @@ DISTNAME=	php-${PORTVERSION}
 MAINTAINER=	admin@lissyara.su
 COMMENT=	PHP Scripting Language
 
-DEPRECATED=		PHP 5.2 series is not supported anymore, migrate now
-EXPIRATION_DATE=	2012-03-01
+DEPRECATED=		PHP 5.2 series is strongly discouraged for new \
+			installations, migrate now
+EXPIRATION_DATE=	2013-03-01
 
 LATEST_LINK=	${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}
 
@@ -187,7 +188,7 @@ CONFIGURE_ARGS+=--disable-ipv6
 .endif
 
 .if defined(WITH_BACKPORTS)
-PATCHFILES+=	php52-backports-security-20120103.patch
+PATCHFILES+=	php52-backports-security-20120117.patch
 PATCH_SITES+=	http://php52-backports.googlecode.com/files/
 .else
 FORBIDDEN=	Vulnerable since 2011-01-13, http://portaudit.freebsd.org/3761df02-0f9c-11e0-becc-0022156e8794.html

@@ -2,7 +2,7 @@
 #
 # Startup script for Zope server.
 #
-# $FreeBSD: ports/www/zope211/files/zope211.in,v 1.3 2011/05/15 02:49:17 dougb Exp $
+# $FreeBSD: ports/www/zope213/files/zope213.in,v 1.1 2011/12/12 09:27:55 rm Exp $
 #
 # PROVIDE: zope213
 # REQUIRE: LOGIN
@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name="zope213"
-rcvar=`set_rcvar`
+rcvar=zope213_enable
 
 load_rc_config $name
 

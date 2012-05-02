@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/perdition/files/perdition.pop3s.in,v 1.3 2009/07/15 16:55:48 dougb Exp $
+# $FreeBSD: ports/mail/perdition/files/perdition.pop3s.in,v 1.4 2010/03/27 00:13:19 dougb Exp $
 #
 # PROVIDE: perdition_pop3s
 # REQUIRE: DAEMON
@@ -19,7 +19,7 @@ perdition_pop3s_enable=${perdition_pop3s_enable-"NO"}
 . /etc/rc.subr
 
 name="perdition_pop3s"
-rcvar=`set_rcvar`
+rcvar=perdition_pop3s_enable
 
 command="%%PREFIX%%/sbin/perdition.pop3s"
 pidfile="/var/run/perdition.pop3s/perdition.pop3s.pid"

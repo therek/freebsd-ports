@@ -7,7 +7,7 @@
 
 PORTNAME=	pcbsd-netmanager
 PORTVERSION=	8.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net kde
 MASTER_SITES=	ftp://ftp.pcbsd.org/pub/software/ \
 		http://www.pcbsd.org/~kris/software/
@@ -19,7 +19,6 @@ LIB_DEPENDS=	pcbsd.0:${PORTSDIR}/sysutils/libpcbsd
 
 WRKSRC=		${WRKDIR}/pcbsd-netmanager
 
-USE_QMAKE=	yes
 USE_KDE4=	automoc4 kdehier kdeprefix kdelibs workspace 
 USE_LDCONFIG=	yes
 USE_QT_VER=	4

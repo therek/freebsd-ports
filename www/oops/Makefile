@@ -1,17 +1,16 @@
 # New ports collection makefile for:	oops
 # Date created:		15 August 2000
-# Whom:			Sergey Osokin aka oZZ <osa@FreeBSD.org.ru>
+# Whom:			osa
 #
 # $FreeBSD$
 #
 
 PORTNAME=	oops
 PORTVERSION=	${OOPSVERSION}
-PORTREVISION=	7
+PORTREVISION=	11
 CATEGORIES=	www
 MASTER_SITES=	http://oops-cache.org/ \
 		ftp://kucha.ru/pub/misc/oops/
-DISTNAME=	${PORTNAME}-${OOPSVERSION}
 
 MAINTAINER=	marck@FreeBSD.org
 COMMENT=	A caching web proxy server
@@ -26,12 +25,21 @@ CONFIGURE_ARGS?=--sbindir=${PREFIX}/sbin \
 		--sysconfdir=${PREFIX}/etc/oops \
 		--localstatedir=${OOPSVAR} \
 		--libdir=${PREFIX}/libexec/oops \
-		--enable-oops-user=oops \
-		--enable-large-files
+		--enable-oops-user=${USERS} \
+		--enable-large-files \
+		--with-regexp=system
 CONFIGURE_ENV+=	PTHREAD_CFLAGS="${PTHREAD_CFLAGS}" \
 		PTHREAD_LIBS="${PTHREAD_LIBS}"
 CFLAGS+=	-fPIC
 CXXFLAGS+=	-fPIC
+
+.if ${CC} == "clang" || ${CXX} == "clang++"
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-configure.in \
+		${PATCHDIR}/extra-patch-src_modules_Makefile.in
+.endif
+
+USERS=		oops
+GROUPS=		nobody
 
 OOPSVAR=	/var/run/oops
 OOPSLOG=	/var/log/oops
@@ -49,7 +57,7 @@ OPTIONS=	GIGABASE	"GigaBase storage" on \
 		PGSQL		"PostgreSQL auth support" off \
 		PCRE		"PCRE support" off
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
 .if !defined(WITHOUT_GIGABASE)
 .if defined (WITH_DB4)
@@ -80,22 +88,18 @@ CONFIGURE_ARGS+=	--with-PGSQL=${PREFIX}/pgsql
 .endif
 
 .if defined(WITH_PCRE)
-LIB_DEPENDS+=	pcre.0:${PORTSDIR}/devel/pcre
+LIB_DEPENDS+=	pcre.1:${PORTSDIR}/devel/pcre
 CONFIGURE_ARGS+=	--with-regexp=pcre
 .endif
 
 pre-configure:
 	@cd ${WRKSRC} && ${AUTOHEADER}
 
-pre-install:
-	@PKG_PREFIX=${PREFIX} BATCH=${BATCH} ${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
-
 post-install:
 .if !defined(NO_INSTALL_MANPAGES)
 	@${INSTALL_MAN} ${WRKSRC}/doc/oops.8 ${PREFIX}/man/man8
 	@${INSTALL_MAN} ${WRKSRC}/doc/oopsctl.8 ${PREFIX}/man/man8
 .endif
-	@PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 	@${MKDIR} -m 750 ${OOPSVAR}
 	@${CHOWN} oops ${OOPSVAR}
 	@${MKDIR} -m 750 ${OOPSLOG}
@@ -106,4 +110,4 @@ post-install:
 post-clean:
 	@${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

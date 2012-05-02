@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	amavis-logwatch
-PORTVERSION=	1.50.04
+PORTVERSION=	1.51.01
 CATEGORIES=	mail
 MASTER_SITES=	SF/logreporters/${PORTNAME}/release/${PORTVERSION}
 EXTRACT_SUFX=	.tgz
@@ -14,7 +14,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	masaki@club.kyutech.ac.jp
 COMMENT=	Amavisd-new log parser
 
-LICENSE=	GPLv2
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 PORTDOCS=	Bugs Changes README
 PORTEXAMPLES=	${PORTNAME}.conf
@@ -31,7 +32,7 @@ post-patch:
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME} ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/${PORTNAME}.1 ${MANPREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/${PORTNAME}.1 ${MAN1PREFIX}/man/man1
 	@${CP} ${WRKSRC}/${PORTNAME}.conf ${WRKSRC}/${PORTNAME}.conf.sample
 	@${MKDIR} ${ETCDIR}
 	${INSTALL_DATA} ${WRKSRC}/${PORTNAME}.conf.sample ${ETCDIR}

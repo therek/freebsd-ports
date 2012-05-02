@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/maradns/files/zoneserver.in,v 1.3 2010/02/08 15:08:44 miwi Exp $
+# $FreeBSD: ports/dns/maradns/files/zoneserver.in,v 1.4 2010/03/27 00:12:55 dougb Exp $
 #
 
 # PROVIDE: zoneserver
@@ -15,7 +15,7 @@
 : ${maradns_conf="%%PREFIX%%/etc/mararc"}
 
 name="zoneserver"
-rcvar=`set_rcvar`
+rcvar=zoneserver_enable
 command="%%PREFIX%%/bin/duende"
 command_args="%%PREFIX%%/sbin/zoneserver -f ${maradns_conf}"
 pidfile="/var/run/${name}.pid"

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop zope
-# $FreeBSD: ports/www/zope/files/zope.in,v 1.1 2009/12/17 23:32:39 pgollucci Exp $
+# $FreeBSD: ports/www/zope/files/zope.in,v 1.2 2010/03/27 00:15:22 dougb Exp $
 
 # PROVIDE: zope
 # REQUIRE: DAEMON
@@ -21,7 +21,7 @@ zope_instances=${zope_instances:-""}    # List of instancehome dirs
 . /etc/rc.subr
 
 name="zope"
-rcvar=`set_rcvar`
+rcvar=zope_enable
 load_rc_config $name
 extra_commands="status"
 

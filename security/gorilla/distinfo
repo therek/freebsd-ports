@@ -1,2 +1,4 @@
-SHA256 (zdia-gorilla-v1.5.3.4-0-g7c3e819.tar.gz) = a97755e0c7005f8ee192905c1fbd9a97f5b235e5f24336f394c84c5aa7a596a0
-SIZE (zdia-gorilla-v1.5.3.4-0-g7c3e819.tar.gz) = 450557
+SHA256 (zdia-gorilla-v1.5.3.6-0-ga72f9d7.tar.gz) = 011826b82c81173aebd50f32b88eb483221998a7114c500868ba4ee98807f2f7
+SIZE (zdia-gorilla-v1.5.3.6-0-ga72f9d7.tar.gz) = 813768
+SHA256 (gorilla-sha256-1.5.3.6_1.tar.gz) = 5bccddc0ab606b11c6785b7874e2a5ec9d30ef5a9680d9fc2250b8147701edda
+SIZE (gorilla-sha256-1.5.3.6_1.tar.gz) = 6298

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-im/mu-conference/files/mu-conference.in,v 1.2 2008/04/30 14:03:30 mm Exp $
+# $FreeBSD: ports/net-im/mu-conference/files/mu-conference.in,v 1.3 2010/03/27 00:14:16 dougb Exp $
 
 # PROVIDE: mu_conference
 # REQUIRE: %%JABBER_REQUIRE%%
@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name="mu_conference"
-rcvar=`set_rcvar`
+rcvar=mu_conference_enable
 
 command="%%PREFIX%%/bin/mu-conference"
 

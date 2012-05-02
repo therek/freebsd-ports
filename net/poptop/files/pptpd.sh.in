@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/poptop/files/pptpd.sh.in,v 1.4 2009/07/15 16:55:53 dougb Exp $
+# $FreeBSD: ports/net/poptop/files/pptpd.sh.in,v 1.5 2010/03/27 00:13:53 dougb Exp $
 #
 # PROVIDE: pptpd
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@ pptpd_enable=${pptpd_enable-"NO"}
 . /etc/rc.subr
 
 name=pptpd
-rcvar=`set_rcvar`
+rcvar=pptpd_enable
 
 command=%%PREFIX%%/sbin/${name}
 pidfile=/var/run/${name}.pid

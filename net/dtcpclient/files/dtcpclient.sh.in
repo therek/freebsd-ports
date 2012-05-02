@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/dtcpclient/files/dtcpclient.sh.in,v 1.3 2009/07/15 16:55:50 dougb Exp $
+# $FreeBSD: ports/net/dtcpclient/files/dtcpclient.sh.in,v 1.4 2010/03/27 00:13:41 dougb Exp $
 #
 
 # PROVIDE: dtcpclient
@@ -24,7 +24,7 @@ dtcpclient_flags=${dtcpclient_flags:-"-t network -Dl"}	# Flags to dtcpclient pro
 . /etc/rc.subr
 
 name="dtcpclient"
-rcvar=`set_rcvar`
+rcvar=dtcpclient_enable
 command="%%PREFIX%%/sbin/${name}"
 pidfile="/var/run/${name}.pid"
 extra_commands="reload"

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/nagios/files/nagios.in,v 1.5 2011/08/23 01:50:48 zi Exp $
+# $FreeBSD: ports/net-mgmt/nagios/files/nagios.in,v 1.6 2011/09/30 00:06:20 zi Exp $
 #
 
 # PROVIDE: nagios
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name="nagios"
-rcvar=`set_rcvar`
+rcvar=nagios_enable
 
 command="%%PREFIX%%/bin/nagios"
 command_args="-d"

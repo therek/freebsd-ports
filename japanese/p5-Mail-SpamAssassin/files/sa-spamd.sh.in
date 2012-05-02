@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/japanese/p5-Mail-SpamAssassin/files/sa-spamd.sh.in,v 1.2 2008/02/15 17:21:38 miwi Exp $
+# $FreeBSD: ports/japanese/p5-Mail-SpamAssassin/files/sa-spamd.sh.in,v 1.3 2010/03/27 00:13:08 dougb Exp $
 #
 
 # PROVIDE: spamd
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name=spamd
-rcvar=`set_rcvar`
+rcvar=spamd_enable
 
 extra_commands="reload"
 load_rc_config $name

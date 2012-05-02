@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/japanese/rskkserv/files/rskkserv.sh.in,v 1.2 2006/02/20 20:47:05 dougb Exp $
+# $FreeBSD: ports/japanese/rskkserv/files/rskkserv.sh.in,v 1.3 2010/03/27 00:13:08 dougb Exp $
 #
 # PROVIDE: rskkserv
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@ rskkserv_flags=${rskkserv_flags:-""}
 . /etc/rc.subr
 
 name="rskkserv"
-rcvar=`set_rcvar`
+rcvar=rskkserv_enable
 command="${prefix}/sbin/${name}"
 command_interpreter="${prefix}/bin/ruby"
 pidfile="/var/run/${name}.pid"

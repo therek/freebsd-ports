@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD: ports/net-im/ejabberd/files/ejabberd.in,v 1.7 2011/09/19 15:52:30 ashish Exp $
+# $FreeBSD: ports/net-im/ejabberd/files/ejabberd.in,v 1.8 2011/09/24 18:50:05 ashish Exp $
 
 # PROVIDE: ejabberd
 # REQUIRE: DAEMON
@@ -20,7 +20,7 @@ ejabberd_epmd_address=${ejabberd_epmd_address-"127.0.0.1"}
 . /etc/rc.subr
 
 name="ejabberd"
-rcvar=`set_rcvar`
+rcvar=ejabberd_enable
 
 reload_cmd="ejabberd_reload"
 restart_cmd="ejabberd_reload"

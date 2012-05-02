@@ -17,10 +17,16 @@ DISTNAME=	SciPlore_MindMapping_AllOS_v${PORTVERSION:S/0.b//}b
 MAINTAINER=	mandree@FreeBSD.org
 COMMENT=	Mind Mapping tool with Reference and PDF Management
 
-LICENSE=	GPLv2
+# commented out to assist with tabthorpe's license framework changes
+#LICENSE=	GPLv2
 
 BUILD_DEPENDS=	update-mime-database:${PORTSDIR}/misc/shared-mime-info
 RUN_DEPENDS=	update-mime-database:${PORTSDIR}/misc/shared-mime-info
+
+DEPRECATED=	Discontinued, use deskutils/docear instead
+EXPIRATION_DATE=	2012-05-31
+
+NO_PACKAGE=	Deprecated and replaced by deskutils/docear.
 
 USE_ZIP=	yes
 USE_JAVA=	yes

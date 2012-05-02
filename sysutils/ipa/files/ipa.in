@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/ipa/files/ipa.in,v 1.1 2006/04/12 18:11:36 jmelo Exp $
+# $FreeBSD: ports/sysutils/ipa/files/ipa.in,v 1.2 2010/03/27 00:14:57 dougb Exp $
 #
 
 # If some IPA module requires some services, then they should
@@ -21,7 +21,7 @@
 . /etc/rc.subr
 
 name="ipa"
-rcvar=${name}_enable
+rcvar=ipa_enable
 
 command="%%PREFIX%%/bin/ipa"
 extra_commands="reload"

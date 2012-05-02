@@ -9,7 +9,7 @@
 
 PORTNAME=	apache
 PORTVERSION=	2.0.64
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_APACHE_HTTPD} \
 		${MASTER_SITE_LOCAL:S/$/:powerlogo/}
@@ -23,7 +23,7 @@ MAINTAINER?=	apache@FreeBSD.org
 COMMENT?=	Version 2.0.x of Apache web server with ${WITH_MPM:L} MPM.
 
 LIB_DEPENDS=	expat.6:${PORTSDIR}/textproc/expat2 \
-	pcre.0:${PORTSDIR}/devel/pcre \
+	pcre.1:${PORTSDIR}/devel/pcre \
 	apr-0:${PORTSDIR}/devel/apr0
 
 MAKE_JOBS_SAFE=	yes
@@ -144,7 +144,7 @@ APACHEDIR=	${MASTERDIR}
 
 .if defined (WITH_LDAP) || defined (WITH_LDAP_MODULES)
 USE_OPENLDAP=		YES
-CONFIGURE_ARGS+=	--enable-ldap=shared --enable-auth-ldap --with-ldap \
+CONFIGURE_ARGS+=	--enable-ldap=shared --enable-auth-ldap=shared --with-ldap \
 	--with-ldap-lib="${LOCALBASE}/lib" \
 	--with-ldap-include="${LOCALBASE}/include"
 .endif

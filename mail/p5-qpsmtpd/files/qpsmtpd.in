@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-qpsmtpd/files/qpsmtpd.in,v 1.3 2010/01/03 21:17:21 pgollucci Exp $
 #
 # PROVIDE: qpsmtpd
 # REQUIRE: LOGIN
@@ -27,7 +27,7 @@
 . /etc/rc.subr
 
 name="qpsmtpd"
-rcvar=`set_rcvar`
+rcvar=qpsmtpd_enable
 
 command="%%PREFIX%%/bin/qpsmtpd-forkserver"
 command_interpreter=%%PERL%%

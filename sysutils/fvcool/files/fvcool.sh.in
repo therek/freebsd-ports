@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# @(#) $FreeBSD: ports/sysutils/fvcool/files/fvcool.sh.in,v 1.2 2009/07/15 16:56:05 dougb Exp $
+# @(#) $FreeBSD: ports/sysutils/fvcool/files/fvcool.sh.in,v 1.3 2010/03/27 00:14:55 dougb Exp $
 
 # PROVIDE: %%PORTNAME%%
 # REQUIRE: LOGIN abi
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="%%PORTNAME%%"
-rcvar=`set_rcvar`
+rcvar=%%PORTNAME%%_enable
 
 command="%%PREFIX%%/sbin/%%PORTNAME%%"
 command_args="-e"

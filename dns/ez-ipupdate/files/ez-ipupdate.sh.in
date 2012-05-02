@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/ez-ipupdate/files/ez-ipupdate.sh.in,v 1.2 2006/02/20 20:46:57 dougb Exp $
+# $FreeBSD: ports/dns/ez-ipupdate/files/ez-ipupdate.sh.in,v 1.3 2010/03/27 00:12:55 dougb Exp $
 #
 
 # PROVIDE: ez-ipupdate
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=ez_ipupdate
-rcvar=`set_rcvar`
+rcvar=ez_ipupdate_enable
 
 load_rc_config $name
 

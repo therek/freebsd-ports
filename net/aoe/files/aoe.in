@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: src/etc/rc.d/aoe,v 1.0.0.1 2004/10/10 09:50:54 sah Exp $
+# $FreeBSD: ports/net/aoe/files/aoe.in,v 1.1 2010/09/14 13:30:54 fjoe Exp $
 #
 
 # PROVIDE: netdisks
@@ -10,7 +10,7 @@
 . /etc/rc.subr
 
 name="aoe"
-rcvar="`set_rcvar`"
+rcvar=aoe_enable
 start_cmd="aoe_start"
 stop_cmd=":"
 

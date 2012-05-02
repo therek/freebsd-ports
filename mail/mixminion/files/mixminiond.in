@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mixminion/files/mixminiond.in,v 1.1 2006/03/15 13:42:22 mnag Exp $
+# $FreeBSD: ports/mail/mixminion/files/mixminiond.in,v 1.2 2010/03/27 00:13:18 dougb Exp $
 #
 # REQUIRE: NETWORKING SERVERS USR
 # BEFORE: LOGIN
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name="mixminiond"
-rcvar=${name}_enable
+rcvar=mixminiond_enable
 
 load_rc_config ${name}
 

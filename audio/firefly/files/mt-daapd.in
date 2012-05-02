@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/audio/firefly/files/mt-daapd.in,v 1.2 2008/12/27 01:43:12 beech Exp $
+# $FreeBSD: ports/audio/firefly/files/mt-daapd.in,v 1.3 2010/03/27 00:12:41 dougb Exp $
 
 # PROVIDE: firefly
 # REQUIRE: LOGIN
@@ -9,7 +9,7 @@
 : ${firefly_enable=NO}
 
 name="firefly"
-rcvar="`set_rcvar`"
+rcvar=firefly_enable
 
 command="%%PREFIX%%/sbin/mt-daapd"
 command_args="-c %%PREFIX%%/etc/mt-daapd.conf"

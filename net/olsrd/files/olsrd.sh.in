@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/olsrd/files/olsrd.sh.in,v 1.1 2005/05/07 13:55:51 lawrance Exp $
+# $FreeBSD: ports/net/olsrd/files/olsrd.sh.in,v 1.2 2010/03/27 00:13:50 dougb Exp $
 #
 # PROVIDE: olsrd
 # REQUIRE: NETWORKING SERVERS
@@ -8,7 +8,7 @@
 . /etc/rc.subr
 
 name="olsrd"
-rcvar=`set_rcvar`
+rcvar=olsrd_enable
 
 command=%%PREFIX%%/sbin/olsrd
 command_args="-d 0"

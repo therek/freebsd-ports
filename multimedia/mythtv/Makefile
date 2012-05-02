@@ -7,8 +7,7 @@
 # $FreeBSD$
 
 PORTNAME=	mythtv
-PORTVERSION=	0.24.1
-PORTREVISION=	1
+PORTVERSION=	0.24.2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://ftp.osuosl.org/pub/mythtv/ \
 		http://ftp.osuosl.org/pub/mythtv/old_releases/ \
@@ -35,7 +34,7 @@ QT_NONSTANDARD=	yes
 USE_MYSQL=	51
 USE_GMAKE=	yes
 HAS_CONFIGURE=	yes
-USE_PERL=	yes
+USE_PERL5=	yes
 USE_LDCONFIG=	${PREFIX}/lib/mythtv/filters
 REINPLACE_ARGS=	-i ""
 USE_RC_SUBR=	mythbackend

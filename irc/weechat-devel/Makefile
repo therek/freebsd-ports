@@ -6,11 +6,12 @@
 #
 
 PORTNAME=	weechat
-PORTVERSION=	20111023
+PORTVERSION=	20120219
+PORTREVISION=	1
 CATEGORIES=	irc
 MASTER_SITES=	http://perturb.me.uk/distfiles/
 PKGNAMESUFFIX=	-devel
-DISTNAME=	weechat-devel-71bef80ce2c6dfc944972fcc93b3db46fcffb283
+DISTNAME=	weechat-devel-${GITREV}
 
 MAINTAINER=	freebsd@beardz.net
 COMMENT=	A lightweight and user friendly ncurse based IRC client
@@ -27,11 +28,18 @@ USE_CMAKE=	yes
 CFLAGS+=	-I${LOCALBASE}/include -L${LOCALBASE}/lib
 WANT_PERL=	yes
 
+LIB_DEPENDS+=	curl.6:${PORTSDIR}/ftp/curl
+
+# Please note: the DEBUG option is *NOT* empty, it is utilised by
+# bsd.cmake.mk to set the cmake build type to Debug instead of 
+# Release.
+
 OPTIONS=	RUBY		"Ruby scripting support"	Off	\
 		PYTHON		"Python scripting support"	Off	\
 		PERL		"Perl scripting support"	Off	\
 		TCL		"TCL scripting support"		Off	\
 		LUA		"Lua scripting support"		Off	\
+		GUILE		"Guile scripting support"	Off	\
 		CHARSET		"Charset support"		On	\
 		BACKTRACE	"Backtraces"			On	\
 		DEBUG		"Debugging"			On	\
@@ -40,7 +48,8 @@ OPTIONS=	RUBY		"Ruby scripting support"	Off	\
 		NLS		"NLS support"			On	\
 		DOCUMENTATION	"Build documentation"		Off
 
-WRKSRC=	${WRKDIR}/${PORTNAME}-71bef80
+GITREV=	8d63064
+WRKSRC=	${WRKDIR}/${PORTNAME}-${GITREV}
 
 .include <bsd.port.options.mk>
 
@@ -124,9 +133,18 @@ CMAKE_ARGS+=	-DENABLE_LUA=no
 PLIST_SUB+=	LUA="@comment "
 .endif
 
+.if defined(WITH_GUILE)
+IGNORE=		guile support currently causes a segfault on exit. Please re-run 'make config' and disable GUILE
+LIB_DEPENDS+=	guile.21:${PORTSDIR}/lang/guile
+PLIST_SUB+=	GUILE=""
+.else
+CMAKE_ARGS+=	-DENABLE_GUILE=no
+PLIST_SUB+=	GUILE="@comment "
+.endif
+
 .if defined(WITH_DOCUMENTATION)
 BUILD_DEPENDS+=	asciidoc:${PORTSDIR}/textproc/asciidoc
-BUILD_DEPENDS+=	source-highlight:${PORTSDIR}/textproc/source-highlight
+BUILD_DEPENDS+=	source-highlight>=3.1.5:${PORTSDIR}/textproc/source-highlight
 PLIST_SUB+=	DOCUMENTATION=""
 .else
 CMAKE_ARGS+=	-DENABLE_DOC=no
@@ -150,6 +168,6 @@ post-patch:
 .endif
 
 post-install:
-	${INSTALL_MAN} ${WRKSRC}/doc/weechat-curses.1 ${MANPREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/doc/weechat-curses.1 ${MAN1PREFIX}/man/man1
 
 .include <bsd.port.mk>

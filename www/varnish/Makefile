@@ -7,6 +7,7 @@
 
 PORTNAME=	varnish
 PORTVERSION=	3.0.2
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://repo.varnish-cache.org/source/
 
@@ -15,7 +16,7 @@ COMMENT=	The Varnish high-performance HTTP accelerator
 
 LICENSE=	BSD
 
-LIB_DEPENDS=	pcre.0:${PORTSDIR}/devel/pcre
+LIB_DEPENDS=	pcre.1:${PORTSDIR}/devel/pcre
 
 CONFLICTS=	varnish-2.*
 
@@ -26,7 +27,7 @@ CONFIGURE_ARGS=	--localstatedir=${PREFIX}
 CONFIGURE_ENV=	RST2MAN=true
 USE_LDCONFIG=	yes
 USE_GNOME=	pkgconfig
-USE_AUTOTOOLS=  aclocal libtool libtoolize autoheader automake autoconf
+USE_AUTOTOOLS=  aclocal libtool libtoolize automake autoconf
 ACLOCAL_ARGS=	-I m4
 LIBTOOLFLAGS=	--copy --force
 AUTOMAKE_ARGS=	--add-missing --copy --foreign
@@ -38,12 +39,6 @@ MAN3=		vmod_std.3
 MAN7=		vcl.7 varnish-cli.7 varnish-counters.7
 USE_RC_SUBR=	varnishd varnishlog varnishncsa
 SUB_FILES=	pkg-message
-
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 601000
-BROKEN=		does not compile
-.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|\$$(libdir)/pkgconfig|\$$(prefix)/libdata/pkgconfig|' \
@@ -60,4 +55,4 @@ post-install:
 .endfor
 	@${CAT} ${PKGMESSAGE}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

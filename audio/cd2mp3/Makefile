@@ -7,7 +7,7 @@
 
 PORTNAME=	cd2mp3
 PORTVERSION=	0.82
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://cvsup.theplanet.com/distfiles/ \
@@ -16,7 +16,7 @@ MASTER_SITES=	http://cvsup.theplanet.com/distfiles/ \
 MAINTAINER=	mark@foster.cc
 COMMENT=	Easy to use CD Ripping and MP3 Encoding tool
 
-RUN_DEPENDS=	lame:${PORTSDIR}/audio/lame/ \
+RUN_DEPENDS=	lame:${PORTSDIR}/audio/lame \
 		dagrab:${PORTSDIR}/audio/dagrab
 
 NO_BUILD=	yes

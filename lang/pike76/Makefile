@@ -7,7 +7,7 @@
 
 PORTNAME=	pike76
 PORTVERSION=	7.6.112
-PORTREVISION=	13
+PORTREVISION=	15
 CATEGORIES=	lang
 MASTER_SITES=	ftp://pike.ida.liu.se/pub/pike/beta/${PORTVERSION}/ \
 		http://pike.ida.liu.se/pub/pike/beta/${PORTVERSION}/ \
@@ -23,7 +23,7 @@ COMMENT=	A dynamic programming language with a syntax similar to C++
 LIB_DEPENDS=	jpeg.11:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		gdbm.4:${PORTSDIR}/databases/gdbm \
-		pcre.0:${PORTSDIR}/devel/pcre \
+		pcre.1:${PORTSDIR}/devel/pcre \
 		mird.1:${PORTSDIR}/databases/mird \
 		gmp.10:${PORTSDIR}/math/gmp
 
@@ -170,7 +170,7 @@ CONFIGURE_ARGS+=	--without-msql
 .endif
 
 .if defined(WITH_UNIXODBC)
-LIB_DEPENDS+=	odbc.1:${PORTSDIR}/databases/unixODBC
+LIB_DEPENDS+=	odbc.2:${PORTSDIR}/databases/unixODBC
 CONFIGURE_ARGS+=	--with-odbc
 .endif
 

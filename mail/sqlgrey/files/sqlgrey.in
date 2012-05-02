@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/mail/sqlgrey/files/sqlgrey.in,v 1.1 2011/06/03 11:25:11 wxs Exp $
+# $FreeBSD: ports/mail/sqlgrey/files/sqlgrey.in,v 1.3 2012/01/14 08:56:05 dougb Exp $
 #
 # PROVIDE: sqlgrey
 # REQUIRE: LOGIN
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=sqlgrey
-rcvar=`set_rcvar`
+rcvar=sqlgrey_enable
 
 command=%%PREFIX%%/sbin/sqlgrey
 extra_commands=reload
@@ -24,16 +24,17 @@ command_interpreter=%%PERL%%
 
 stop_postcmd=${name}_poststop
 
-sqlgrey_poststop()
-{
-	rm -f $pidfile
-}
-
 load_rc_config $name
 
 sqlgrey_enable=${sqlgrey_enable-"NO"}
 required_files=${sqlgrey_config-"%%PREFIX%%/%%ETCDIR%%/sqlgrey.conf"}
+pidfile=${sqlgrey_pidfile-"/var/run/sqlgrey.pid"}
 
-command_args="--configfile=${required_files} --daemonize"
+command_args="--configfile=${required_files} --pidfile=${pidfile} --daemonize"
+
+sqlgrey_poststop()
+{
+	rm -f $pidfile
+}
 
 run_rc_command "$1"

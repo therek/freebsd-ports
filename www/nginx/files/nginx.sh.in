@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/nginx/files/nginx.sh.in,v 1.8 2010/03/27 00:15:15 dougb Exp $
+# $FreeBSD: ports/www/nginx/files/nginx.sh.in,v 1.10 2012/01/14 08:57:15 dougb Exp $
 
 # PROVIDE: nginx
 # REQUIRE: LOGIN cleanvar
@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name="nginx"
-rcvar=`set_rcvar`
+rcvar=nginx_enable
 
 start_precmd="nginx_precmd"
 restart_precmd="nginx_checkconfig"
@@ -35,6 +35,7 @@ command="%%PREFIX%%/sbin/nginx"
 _pidprefix="/var/run/nginx"
 pidfile="${_pidprefix}.pid"
 required_files=%%PREFIX%%/etc/nginx/nginx.conf
+extra_commands="reload configtest upgrade gracefulstop"
 
 [ -z "$nginx_enable" ]		&& nginx_enable="NO"
 [ -z "$nginxlimits_enable" ]	&& nginxlimits_enable="NO"
@@ -118,5 +119,4 @@ nginx_precmd()
 	fi
 }
 
-extra_commands="reload configtest upgrade gracefulstop"
 run_rc_command "$1"

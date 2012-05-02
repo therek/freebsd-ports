@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/bounce/files/bounce.in,v 1.2 2007/01/02 09:07:17 miwi Exp $
+# $FreeBSD: ports/net/bounce/files/bounce.in,v 1.3 2010/03/27 00:13:38 dougb Exp $
 #
 #
 # PROVIDE: bounce
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name="bounce"
-rcvar=${name}_enable
+rcvar=bounce_enable
 
 load_rc_config $name
 

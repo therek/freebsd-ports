@@ -7,7 +7,7 @@
 
 PORTNAME=	modules
 PORTVERSION=	r20091106
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel games
 MASTER_SITES=	http://mirror.amdmi3.ru/distfiles/
 PKGNAMEPREFIX=	bennugd-
@@ -16,8 +16,8 @@ DISTNAME=	bennugd-${PORTVERSION}
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	High level open source game development suite, modules
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libbgdrtm.so:${PORTSDIR}/devel/bennugd-core/
-RUN_DEPENDS=	${LOCALBASE}/lib/libbgdrtm.so:${PORTSDIR}/devel/bennugd-core/
+BUILD_DEPENDS=	${LOCALBASE}/lib/libbgdrtm.so:${PORTSDIR}/devel/bennugd-core
+RUN_DEPENDS=	${LOCALBASE}/lib/libbgdrtm.so:${PORTSDIR}/devel/bennugd-core
 LIB_DEPENDS=	png.6:${PORTSDIR}/graphics/png
 
 USE_SDL=	sdl mixer

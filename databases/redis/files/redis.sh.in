@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/redis/files/redis.sh.in,v 1.2 2010/03/27 00:12:50 dougb Exp $
+# $FreeBSD: ports/databases/redis/files/redis.sh.in,v 1.3 2011/05/15 02:49:05 dougb Exp $
 #
 
 # PROVIDE: redis
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="redis"
-rcvar=`set_rcvar`
+rcvar=redis_enable
 
 extra_commands="reload"
 

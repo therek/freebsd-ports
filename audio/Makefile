@@ -230,6 +230,7 @@
     SUBDIR += gmpc-shout
     SUBDIR += gmpc-wikipedia
     SUBDIR += gmusicbrowser
+    SUBDIR += gnaural
     SUBDIR += gnome-audio
     SUBDIR += gnome-media
     SUBDIR += gnomoradio
@@ -302,8 +303,8 @@
     SUBDIR += icegenerator
     SUBDIR += ices
     SUBDIR += ices0
-    SUBDIR += id3el
     SUBDIR += id3ed
+    SUBDIR += id3el
     SUBDIR += id3lib
     SUBDIR += id3mtag
     SUBDIR += id3ren
@@ -378,6 +379,7 @@
     SUBDIR += libmtp
     SUBDIR += libmusicbrainz
     SUBDIR += libmusicbrainz3
+    SUBDIR += libmusicbrainz4
     SUBDIR += libnjb
     SUBDIR += libnoise
     SUBDIR += libofa
@@ -640,6 +642,7 @@
     SUBDIR += rosegarden
     SUBDIR += rplay
     SUBDIR += rsynth
+    SUBDIR += rubberband
     SUBDIR += ruby-audiofile
     SUBDIR += ruby-esound
     SUBDIR += ruby-freedb
@@ -668,6 +671,7 @@
     SUBDIR += shntool
     SUBDIR += shorten
     SUBDIR += shout
+    SUBDIR += shoutcast
     SUBDIR += sidplay
     SUBDIR += sidplay2
     SUBDIR += sidplayer
@@ -679,6 +683,7 @@
     SUBDIR += solfege
     SUBDIR += sonata
     SUBDIR += sonice
+    SUBDIR += sooperlooper
     SUBDIR += sound-juicer
     SUBDIR += soundconverter
     SUBDIR += soundgrab
@@ -752,6 +757,7 @@
     SUBDIR += umodplayer
     SUBDIR += umurmur
     SUBDIR += vagalume
+    SUBDIR += vamp-plugin-sdk
     SUBDIR += ventrilo-server
     SUBDIR += vitunes
     SUBDIR += vo-aacenc

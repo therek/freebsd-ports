@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/databases/frontbase/files/frontbase.sh.in,v 1.1 2008/06/13 04:16:29 edwin Exp $
+# $FreeBSD: ports/databases/frontbase/files/frontbase.sh.in,v 1.2 2010/03/27 00:12:46 dougb Exp $
 
 # PROVIDE: frontbase
 # REQUIRE: DAEMON
@@ -11,18 +11,17 @@
 #       /etc/rc.conf.local
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
-#
+
+. /etc/rc.subr
+
 name="frontbase"
+rcvar=frontbase_enable
 
 frontbase_enable="${frontbase_enable-NO}"
 frontbase_user="${frontbase_user-frontbase}"
 frontbase_flags="${frontbase_flags--autostart}"
 frontbase_pidfile="${frontbase_pidfile-/var/run/frontbase.pid}"
 frontbase_logfile="${frontbase_logfile-/var/log/frontbase.log}"
-
-. /etc/rc.subr
-
-rcvar=`set_rcvar`
 
 logfile=${frontbase_logfile}
 runuser=${frontbase_user}

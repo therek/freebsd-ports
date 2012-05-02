@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/amavisd-milter/files/amavisd-milter.sh.in,v 1.8 2010/03/27 00:14:38 dougb Exp $
+# $FreeBSD: ports/security/amavisd-milter/files/amavisd-milter.sh.in,v 1.9 2011/06/09 00:27:43 delphij Exp $
 #
 
 # PROVIDE: amavisd-milter
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="amavisd_milter"
-rcvar=`set_rcvar`
+rcvar=amavisd_milter_enable
 
 load_rc_config $name
 

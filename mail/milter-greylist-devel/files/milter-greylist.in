@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/milter-greylist-devel/files/milter-greylist.in,v 1.1 2008/12/25 16:08:41 pgollucci Exp $
+# $FreeBSD: ports/mail/milter-greylist-devel/files/milter-greylist.in,v 1.2 2010/03/27 00:13:17 dougb Exp $
 
 # PROVIDE: miltergreylist
 # REQUIRE: LOGIN
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name="miltergreylist"
-rcvar=`set_rcvar`
+rcvar=miltergreylist_enable
 command="%%PREFIX%%/bin/milter-greylist"
 
 load_rc_config $name

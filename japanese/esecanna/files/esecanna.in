@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/japanese/esecanna/files/esecanna.sh,v 1.8 2010/03/27 00:13:07 dougb Exp $
+# $FreeBSD: ports/japanese/esecanna/files/esecanna.in,v 1.1 2010/03/27 00:33:31 dougb Exp $
 #
 # PROVIDE: esecanna
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=esecanna
-rcvar=`set_rcvar`
+rcvar=esecanna_enable
 
 esecannaserver=%%PREFIX%%/sbin/esecannaserver
 

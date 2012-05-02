@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	tdiary
-PORTVERSION=	3.1.1
+PORTVERSION=	3.1.2
 PORTREVISION=	1
 CATEGORIES?=	www ruby
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/ \
@@ -17,11 +17,12 @@ MAINTAINER=	tota@FreeBSD.org
 COMMENT=	A Web-based diary system (like weblog) written in Ruby
 
 LICENSE=	GPLv2
-LICENSE_FILE=	${WRKDIR}/doc/COPYING
+LICENSE_FILE=	${WRKDIR}/doc/LICENSE
 
 RUN_DEPENDS=	hikidoc:${PORTSDIR}/textproc/ruby-hikidoc \
 		rubygem-imagesize>=0.1.1:${PORTSDIR}/graphics/rubygem-imagesize \
-		rubygem-json_pure>=1.6.1:${PORTSDIR}/devel/rubygem-json_pure
+		rubygem-json_pure>=1.6.5:${PORTSDIR}/devel/rubygem-json_pure \
+		rd2:${PORTSDIR}/textproc/ruby-rdtool
 
 NO_BUILD=	yes
 USE_RUBY=	yes
@@ -38,7 +39,7 @@ RUBY_SHEBANG_FILES=	index.fcgi \
 			misc/plugin/xmlrpc/xmlrpc.rb \
 			misc/standalone_cgi/bin/server
 
-PORTDOCS=	ChangeLog COPYING HOWTO-make-io.rd HOWTO-make-plugin.html \
+PORTDOCS=	ChangeLog HOWTO-make-io.rd HOWTO-make-plugin.html \
 		HOWTO-make-theme.html HOWTO-use-plugin.html \
 		HOWTO-write-tDiary.en.html HOWTO-write-tDiary.html INSTALL.html \
 		README.en.html README.html README.md UPGRADE doc.css
@@ -88,15 +89,18 @@ post-extract:
 	@${RM} ${WRKSRC}/config.ru
 	@${RM} -r ${WRKSRC}/public
 	@${RM} -r ${WRKSRC}/spec
+	@${RM} -r ${WRKSRC}/test
 	@${RM} -r ${WRKSRC}/vendor/hikidoc-0.0.6
 	@${RM} -r ${WRKSRC}/vendor/imagesize-0.1.1/*
-	@${RM} -r ${WRKSRC}/vendor/json_pure-1.6.1
+	@${RM} -r ${WRKSRC}/vendor/json_pure-1.6.5
+	@${RM} -r ${WRKSRC}/vendor/rdtool-0.6.29
 	@${MV} ${WRKSRC}/ChangeLog ${WRKSRC}/doc
+	@${MV} ${WRKSRC}/LICENSE ${WRKSRC}/doc
 	@${MV} ${WRKSRC}/README.md ${WRKSRC}/doc
-	@cd ${WRKSRC} && ${MV} doc ${WRKDIR}
+	@${MV} ${WRKSRC}/doc ${WRKDIR}
 
 post-patch:
-	${RUBY} -i -pe "sub %r|((\s*)require 'json')|, %Q|\\\2require 'rubygems'\n\\\1|" ${WRKSRC}/tdiary.rb
+	@${RUBY} -i -pe "sub %r|((\s*)require 'json')|, %Q|\\\2require 'rubygems'\n\\\1|" ${WRKSRC}/tdiary.rb
 
 pre-install:
 	@${SED} -e 's,#!/usr/bin/env ruby,#!${RUBY},' \

@@ -6,7 +6,8 @@
 #
 
 PORTNAME=	trafficserver
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.2
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	APACHE/${PORTNAME}
 
@@ -17,7 +18,7 @@ LICENSE=	AL2
 
 LIB_DEPENDS=	execinfo.1:${PORTSDIR}/devel/libexecinfo \
 		expat.6:${PORTSDIR}/textproc/expat2 \
-		pcre.0:${PORTSDIR}/devel/pcre
+		pcre.1:${PORTSDIR}/devel/pcre
 
 USE_AUTOTOOLS=	autoconf automake libtool
 USE_BZIP2=	yes
@@ -46,6 +47,9 @@ BROKEN=		does not compile on 7.X/amd64
 .if ${ARCH} == "ia64" || ${ARCH} == "powerpc" || ${ARCH} == "sparc64"
 BROKEN=		Does not compile on ia64, powerpc, or sparc64
 .endif
+
+post-patch:
+	${REINPLACE_CMD} -e 's,|| mv,|| cp -p,' ${WRKSRC}/proxy/config/Makefile.am
 
 post-configure:
 	@${FIND} ${WRKSRC} -name 'Makefile' | ${XARGS} ${REINPLACE_CMD} \

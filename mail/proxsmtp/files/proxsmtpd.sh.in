@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/proxsmtp/files/proxsmtpd.sh.in,v 1.3 2006/02/17 16:51:55 mnag Exp $
+# $FreeBSD: ports/mail/proxsmtp/files/proxsmtpd.sh.in,v 1.4 2010/03/27 00:13:23 dougb Exp $
 #
 # PROVIDE: proxsmtpd
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="proxsmtpd"
-rcvar=${name}_enable
+rcvar=proxsmtpd_enable
 
 load_rc_config ${name}
 

@@ -5,7 +5,7 @@
 #
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.commands.mk,v 1.8 2011/05/04 22:33:13 flz Exp $
+# $FreeBSD: ports/Mk/bsd.commands.mk,v 1.9 2011/12/23 16:19:31 crees Exp $
 #
 # DO NOT COMMIT CHANGES TO THIS FILE BY YOURSELF, EVEN IF YOU DID NOT GET
 # A RESPONSE FROM THE MAINTAINER(S) WITHIN A REASONABLE TIMEFRAME! ALL
@@ -113,6 +113,16 @@ ECHO_CMD?=	echo				# Shell builtin
 # Used to print all the '===>' style prompts - override this to turn them off.
 ECHO_MSG?=	${ECHO_CMD}
 
+.if defined(WITH_PKGNG)
+PKG_BIN?=		${LOCALBASE}/sbin/pkg
+PKG_CMD?=		${PKG_BIN} register
+PKG_DELETE?=		${PKG_BIN} delete -y
+PKG_INFO?=		${PKG_BIN} info -g
+PKG_VERSION?=		${PKG_BIN} version
+PKG_CREATE?=		${PKG_BIN} create
+PKG_ADD?=		${PKG_BIN} add
+PKG_QUERY?=		${PKG_BIN} query
+.else
 .if exists(${LOCALBASE}/sbin/pkg_info)
 PKG_CMD?=	${LOCALBASE}/sbin/pkg_create
 PKG_ADD?=	${LOCALBASE}/sbin/pkg_add
@@ -125,6 +135,7 @@ PKG_ADD?=	/usr/sbin/pkg_add
 PKG_DELETE?=	/usr/sbin/pkg_delete
 PKG_INFO?=	/usr/sbin/pkg_info
 PKG_VERSION?=	/usr/sbin/pkg_version
+.endif
 .endif
 
 .endif

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/popular/files/pcheckd.sh.in,v 1.2 2007/03/27 22:17:11 pav Exp $
+# $FreeBSD: ports/mail/popular/files/pcheckd.sh.in,v 1.3 2010/03/27 00:13:20 dougb Exp $
 #
 
 # PROVIDE: pcheckd
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="pcheckd"
-rcvar=`set_rcvar`
+rcvar=pcheckd_enable
 
 load_rc_config $name
 

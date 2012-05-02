@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/dhttpd/files/dhttpd.sh.in,v 1.1 2007/06/09 13:31:28 miwi Exp $
+# $FreeBSD: ports/www/dhttpd/files/dhttpd.sh.in,v 1.2 2010/03/27 00:15:12 dougb Exp $
 #
 # PROVIDE: dhttpd
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="dhttpd"
-rcvar=`set_rcvar`
+rcvar=dhttpd_enable
 
 load_rc_config $name
 

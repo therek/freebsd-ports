@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/get_iplayer/files/get_iplayer.in,v 1.1 2011/03/09 02:25:09 bf Exp $
 #
 # PROVIDE: get_iplayer
 # REQUIRE: LOGIN
@@ -28,7 +28,7 @@
 . /etc/rc.subr
 
 name="get_iplayer"
-rcvar=`set_rcvar`
+rcvar=get_iplayer_enable
 
 load_rc_config $name
 

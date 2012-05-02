@@ -7,6 +7,7 @@
 
 PORTNAME=	system-config-printer-kde
 PORTVERSION=	${KDE4_VERSION}
+PORTREVISION=	1
 CATEGORIES=	print kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	${KDE4_BRANCH}/${PORTVERSION}/src
@@ -17,7 +18,8 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE4 frontend for system-config-printer
 
 RUN_DEPENDS=	system-config-printer:${PORTSDIR}/print/system-config-printer \
-		${PYTHON_SITELIBDIR}/cups.so:${PORTSDIR}/print/py-cups
+		${PYTHON_SITELIBDIR}/cups.so:${PORTSDIR}/print/py-cups \
+		cupsd:${PORTSDIR}/print/cups-base
 
 USE_KDE4=	kdehier kdelibs kdeprefix pykde4 pykdeuic4 automoc4
 USE_PYTHON=	2.5+
@@ -36,5 +38,8 @@ post-patch:
 	cd ${BUILD_WRKSRC} && ${REINPLACE_CMD} -e 's,%%LOCALBASE%%,${LOCALBASE},g' \
 		system-config-printer-kde.py \
 		cmake-modules/FindSystemConfigPrinter.py
+
+post-install:
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/daemonlogger/files/daemonlogger.sh.in,v 1.3 2011/08/17 13:00:14 wxs Exp $
 #
 # PROVIDE: daemonlogger
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="daemonlogger"
-rcvar=`set_rcvar`
+rcvar=daemonlogger_enable
 
 load_rc_config $name
 

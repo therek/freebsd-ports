@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/enma/files/milter-enma.in,v 1.2 2009/05/14 12:47:06 pav Exp $
+# $FreeBSD: ports/mail/enma/files/milter-enma.in,v 1.3 2010/03/27 00:13:15 dougb Exp $
 #
 
 # PROVIDE: milterenma
@@ -29,7 +29,7 @@ milterenma_uid=${milterenma_uid:-"mailnull"}
 . /etc/rc.subr
 
 name="milterenma"
-rcvar=`set_rcvar`
+rcvar=milterenma_enable
 
 load_rc_config $name
 

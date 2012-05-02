@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/ezstream/files/ezstream.in,v 1.1 2010/02/04 03:14:15 pgollucci Exp $
+# $FreeBSD: ports/audio/ezstream/files/ezstream.in,v 1.2 2010/03/27 00:12:41 dougb Exp $
 #
 
 # PROVIDE: ezstream
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="ezstream"
-rcvar=`set_rcvar`
+rcvar=ezstream_enable
 
 # read configuration and set defaults
 load_rc_config "$name"

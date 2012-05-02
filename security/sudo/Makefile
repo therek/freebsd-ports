@@ -6,14 +6,18 @@
 #
 
 PORTNAME=	sudo
-PORTVERSION=	1.8.3
-PORTREVISION=	1
+PORTVERSION=	1.8.4
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SUDO}
-DISTNAME=	sudo-${PORTVERSION}p1
+DISTNAME=	sudo-${PORTVERSION}p2
 
 MAINTAINER=	wxs@FreeBSD.org
 COMMENT=	Allow others to run commands as root
+
+LICENSE=	sudo
+LICENSE_NAME=	Sudo license
+LICENSE_FILE=	${WRKSRC}/doc/LICENSE
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 MAKE_JOBS_SAFE=	yes
 GNU_CONFIGURE=	yes
@@ -94,6 +98,7 @@ post-patch:
 	@${REINPLACE_CMD} -E '/install-(binaries|noexec):/,/^$$/ \
 		s/\$$\(INSTALL\)/& ${STRIP}/;s/-b\~/-b ~/' \
 		${WRKSRC}/src/Makefile.in
+	@${REINPLACE_CMD} -e 's,$$(srcdir)/sudoers2ldif $$(DESTDIR)$$(docdir),$$(srcdir)/sudoers2ldif $$(DESTDIR)$$(bindir),' ${WRKSRC}/plugins/sudoers/Makefile.in
 .if defined(NOPORTDOCS)
 	@${REINPLACE_CMD} -e 's/mkinstalldirs $$(DESTDIR)$$(docdir)/mkinstalldirs/' \
 		${WRKSRC}/doc/Makefile.in

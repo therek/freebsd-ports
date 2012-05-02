@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/dtcp/files/dtcps.sh.in,v 1.3 2009/07/15 16:55:50 dougb Exp $
+# $FreeBSD: ports/net/dtcp/files/dtcps.sh.in,v 1.4 2010/03/27 00:13:41 dougb Exp $
 #
 
 # PROVIDE: dtcps
@@ -36,7 +36,7 @@ dtcps_enable=${dtcps_enable:-"NO"}		# Enable dtcps
 . /etc/rc.subr
 
 name="dtcps"
-rcvar=`set_rcvar`
+rcvar=dtcps_enable
 command="%%PREFIX%%/sbin/${name}"
 command_interpreter="%%RUBY%%"
 pidfile="/var/run/${name}.pid"

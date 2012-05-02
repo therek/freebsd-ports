@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	seamonkey-i18n
-PORTVERSION=	2.6.1
+PORTVERSION=	2.7.2
 CATEGORIES=	www
 MASTER_SITE_SUBDIR=	seamonkey/releases/${PORTVERSION}/langpack
 PKGNAMEPREFIX=
@@ -14,11 +14,11 @@ DISTFILES=	${SEAMONKEY_I18N_:S/$/.langpack.xpi/:S/^/seamonkey-${PORTVERSION}./}
 DIST_SUBDIR=	xpi/${DISTNAME}
 
 MAINTAINER=	gecko@FreeBSD.org
-COMMENT=	Localized interface for SeaMonkey 2.4
+COMMENT=	Localized interface for SeaMonkey
 
 EXTRACT_DEPENDS=	zip:${PORTSDIR}/archivers/zip
 
-USE_SEAMONKEY=	26
+USE_SEAMONKEY=	27
 USE_XPI=	seamonkey linux-seamonkey
 
 USE_SUBMAKE=	yes
@@ -47,9 +47,9 @@ pre-everything::
 	@${ECHO_CMD}
 	@${ECHO_CMD} "Please define SEAMONKEY_I18N_ALL to install all languages."
 	@${ECHO_CMD}
-	@${MKDIR} ${WRKSRC}
 
 do-extract:
+	@${MKDIR} ${WRKSRC}
 	@for lang in ${SEAMONKEY_I18N_}; do \
 		if ! (${EXTRACT_CMD} ${_DISTDIR}/seamonkey-${PORTVERSION}.$$lang.langpack.xpi -d ${WRKSRC}/langpack-$$lang@seamonkey.mozilla.org);\
 		then \

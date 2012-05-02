@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	pax-utils
-PORTVERSION=	0.2.3
+PORTVERSION=	0.3.0
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GENTOO} \
 		http://dev.gentoo.org/~vapier/dist/
@@ -27,6 +27,12 @@ PORTDOCS=	BUGS README TODO
 
 MAN1=		dumpelf.1 pspax.1 scanelf.1 scanmacho.1
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 800076
+BROKEN=	Does not build
+.endif
+
 do-install:
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${DOCSDIR}
@@ -37,4 +43,4 @@ do-install:
 .endfor
 	${INSTALL_MAN} ${MAN1:S,^,${WRKSRC}/man/,} ${PREFIX}/man/man1
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

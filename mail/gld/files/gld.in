@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/gld/files/gld.in,v 1.1 2006/01/14 17:08:46 pav Exp $
+# $FreeBSD: ports/mail/gld/files/gld.in,v 1.2 2010/03/27 00:13:15 dougb Exp $
 # was: $ FreeBSD: ports/mail/gld/files/gld.sh.tmpl,v 1.2 2004/09/01 08:06:24 vs Exp $
 #
 
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name=gld
-rcvar=`set_rcvar`
+rcvar=gld_enable
 
 load_rc_config $name
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/zmailer/files/zmailer.sh.in,v 1.1 2007/08/14 16:53:01 sem Exp $
+# $FreeBSD: ports/mail/zmailer/files/zmailer.sh.in,v 1.2 2010/03/27 00:13:27 dougb Exp $
 #
 
 # PROVIDE: mail
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=zmailer
-rcvar=`set_rcvar`
+rcvar=zmailer_enable
 
 command=%%PREFIX%%/sbin/zmailer
 required_files=%%PREFIX%%/etc/zmailer/mail.conf

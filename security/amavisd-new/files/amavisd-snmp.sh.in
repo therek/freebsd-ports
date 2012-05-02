@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/amavisd-new/files/amavisd-snmp.sh.in,v 1.1 2009/09/12 18:51:59 gabor Exp $
 #
 
 # PROVIDE: amavisd_snmp
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=amavisd_snmp
-rcvar=`set_rcvar`
+rcvar=amavisd_snmp_enable
 
 command="%%PREFIX%%/sbin/amavisd-snmp-subagent"
 command_interpreter="%%PERL%%"

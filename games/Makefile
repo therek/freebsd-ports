@@ -231,8 +231,9 @@
     SUBDIR += filters
     SUBDIR += fishsupper
     SUBDIR += fkiss
+    SUBDIR += flare
     SUBDIR += flightgear
-    SUBDIR += flightgear-aircrafts
+    SUBDIR += flightgear-aircraft
     SUBDIR += flightgear-atlas
     SUBDIR += flightgear-data
     SUBDIR += flightgear-mb339-pan
@@ -462,6 +463,7 @@
     SUBDIR += linux-enemyterritory-etpub
     SUBDIR += linux-enemyterritory-fortress
     SUBDIR += linux-enemyterritory-jaymod
+    SUBDIR += linux-enemyterritory-jaymod-21
     SUBDIR += linux-enemyterritory-omni-bot
     SUBDIR += linux-enemyterritory-omni-bot-0660
     SUBDIR += linux-enemyterritory-shrub
@@ -517,6 +519,7 @@
     SUBDIR += marsnomercy
     SUBDIR += masterserver
     SUBDIR += maxr
+    SUBDIR += meandmyshadow
     SUBDIR += megaglest
     SUBDIR += megaglest-data
     SUBDIR += memonix
@@ -575,6 +578,7 @@
     SUBDIR += nimuh
     SUBDIR += ninix-aya
     SUBDIR += njam
+    SUBDIR += nlarn
     SUBDIR += noegnud-addons
     SUBDIR += noegnud-data
     SUBDIR += noegnud-littlehack
@@ -708,6 +712,7 @@
     SUBDIR += qstat
     SUBDIR += qtv
     SUBDIR += quackle
+    SUBDIR += quadra
     SUBDIR += quake-data
     SUBDIR += quake-dpmod
     SUBDIR += quake-extras

@@ -7,7 +7,8 @@
 #
 
 PORTNAME?=	R
-PORTVERSION=	2.14.0
+PORTVERSION=	2.14.1
+PORTREVISION=	2
 CATEGORIES=	math lang
 MASTER_SITES=	http://cran.r-project.org/src/base/R-2/ \
 		ftp://cran.r-project.org/pub/R/src/base/R-2/ \
@@ -128,7 +129,7 @@ PLIST_SUB+=		NLS="@comment "
 .if defined(WITHOUT_PCRE_PORT)
 CONFIGURE_ARGS+=	--without-system-pcre
 .else
-LIB_DEPENDS+=		pcre.0:${PORTSDIR}/devel/pcre
+LIB_DEPENDS+=		pcre.1:${PORTSDIR}/devel/pcre
 CONFIGURE_ARGS+=	--with-system-pcre
 .endif
 
@@ -219,10 +220,6 @@ PLIST_SUB+=		PDF_MANUAL="@comment "
 .endif # !LIBRMATH_SLAVEPORT
 
 post-patch:
-	@${REINPLACE_CMD} -e '\|R_RD4PDF|s|,inconsolata||' \
-		${WRKSRC}/configure \
-		${WRKSRC}/src/library/tools/R/Rd2dvi.R \
-		${WRKSRC}/src/library/utils/R/help.R
 	@${REINPLACE_CMD} -e '\|LIBS=|s|-lrt ||' \
 		${WRKSRC}/configure
 	@${REINPLACE_CMD} -e 's|(libdir)/pkgconfig|(prefix)/libdata/pkgconfig|g' \
@@ -237,6 +234,10 @@ post-patch:
 		${WRKSRC}/src/extra/tzone/tzfile.h \
 		${WRKSRC}/src/scripts/javareconf
 .if !defined(LIBRMATH_SLAVEPORT)
+.if defined(WITH_PCRE_PORT)
+	@${REINPLACE_CMD} -e 's|_pcre_valid_utf8|_pcre_valid_utf|' \
+		${WRKSRC}/src/main/util.c
+.endif
 .if defined(WITHOUT_NLS)
 	@(cd ${WRKSRC}/src/library/Recommended; \
 	for tarfile in *.tgz *.tar.gz ; do \

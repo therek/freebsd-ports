@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/squeezeboxserver/files/squeezeboxserver.sh.in,v 1.2 2009/10/14 22:33:31 brooks Exp $
+# $FreeBSD: ports/audio/squeezeboxserver/files/squeezeboxserver.sh.in,v 1.3 2010/03/27 00:12:43 dougb Exp $
 #
 
 # PROVIDE: %%PORTNAME%%
@@ -18,7 +18,7 @@
 name=%%PORTNAME%%
 start_precmd="%%PORTNAME%%_start_precmd"
 stop_postcmd="%%PORTNAME%%_stop_postcmd"
-rcvar=`set_rcvar`
+rcvar=%%PORTNAME%%_enable
 
 command=%%PREFIX%%/%%SLIMDIR%%/slimserver.pl
 command_interpreter=%%PERL%%

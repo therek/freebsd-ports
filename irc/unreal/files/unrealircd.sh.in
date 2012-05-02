@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/irc/unreal/files/unrealircd.sh.in,v 1.1 2005/04/11 18:56:40 pav Exp $
+# $FreeBSD: ports/irc/unreal/files/unrealircd.sh.in,v 1.2 2010/03/27 00:13:07 dougb Exp $
 #
 
 # PROVIDE: unrealircd
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name="unrealircd"
-rcvar=`set_rcvar`
+rcvar=unrealircd_enable
 
 command="%%PREFIX%%/libexec/ircd"
 pidfile="%%RUNDIR%%/ircd.pid"

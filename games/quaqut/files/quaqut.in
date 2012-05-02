@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/games/quaqut/files/quaqut.in,v 1.1 2006/11/07 13:47:12 miwi Exp $
+# $FreeBSD: ports/games/quaqut/files/quaqut.in,v 1.2 2010/03/27 00:13:03 dougb Exp $
 #
 # PROVIDE: quaqut
 # REQUIRE: NETWORKING
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="quaqut"
-rcvar=${name}_enable
+rcvar=quaqut_enable
 
 load_rc_config $name
 

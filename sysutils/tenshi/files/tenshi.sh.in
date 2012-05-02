@@ -1,21 +1,23 @@
 #!/bin/sh
-#
-# $FreeBSD: ports/sysutils/tenshi/files/tenshi.sh.in,v 1.1 2006/04/05 19:37:00 garga Exp $
-#
 
+# $FreeBSD: ports/sysutils/tenshi/files/tenshi.sh.in,v 1.2 2010/03/27 00:15:06 dougb Exp $
+#
 # PROVIDE: tenshi
 # REQUIRE: LOGIN
 # KEYWORD: shutdown
-
+#
 # Add the following lines to /etc/rc.conf to enable `tenshi':
 #
-#tenshi_enable="YES"
-#
+# tenshi_enable="YES"
 
 . /etc/rc.subr
 
 name='tenshi'
-rcvar=`set_rcvar`
+rcvar=tenshi_enable
+
+load_rc_config "$name"
+
+tenshi_enable="${tenshi_enable:-NO}"
 
 extra_commands='reload'
 
@@ -26,9 +28,4 @@ pidfile='/var/run/tenshi.pid'
 
 required_files='%%PREFIX%%/etc/tenshi.conf'
 
-# set defaults
-
-tenshi_enable="${tenshi_enable:-NO}"
-
-load_rc_config "$name"
 run_rc_command "$1"

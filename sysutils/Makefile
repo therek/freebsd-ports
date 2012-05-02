@@ -136,6 +136,7 @@
     SUBDIR += cromwell
     SUBDIR += cronolog
     SUBDIR += cronolog-devel
+    SUBDIR += curly
     SUBDIR += cvsweb-converters
     SUBDIR += cw
     SUBDIR += daa2iso
@@ -189,6 +190,7 @@
     SUBDIR += dvdbackup
     SUBDIR += dvdimagecmp
     SUBDIR += dvdisaster
+    SUBDIR += dvdvideo
     SUBDIR += dvtm
     SUBDIR += dwatch
     SUBDIR += e2fsprogs
@@ -261,6 +263,7 @@
     SUBDIR += fusefs-cryptofs
     SUBDIR += fusefs-curlftpfs
     SUBDIR += fusefs-encfs
+    SUBDIR += fusefs-exfat
     SUBDIR += fusefs-ext4fuse
     SUBDIR += fusefs-funionfs
     SUBDIR += fusefs-fur
@@ -374,6 +377,7 @@
     SUBDIR += iograph
     SUBDIR += ioping
     SUBDIR += ipa
+    SUBDIR += ipad_charge
     SUBDIR += ipmitool
     SUBDIR += ipsc
     SUBDIR += isc-cron
@@ -429,6 +433,7 @@
     SUBDIR += lbl-hf
     SUBDIR += lcdproc
     SUBDIR += ldap-account-manager
+    SUBDIR += ldapenter
     SUBDIR += ldapvi
     SUBDIR += ledit
     SUBDIR += less
@@ -480,8 +485,8 @@
     SUBDIR += mapchan
     SUBDIR += massadmin
     SUBDIR += mbmon
-    SUBDIR += mcollective
     SUBDIR += mcelog
+    SUBDIR += mcollective
     SUBDIR += mcron
     SUBDIR += mcweject
     SUBDIR += mdcp
@@ -536,6 +541,7 @@
     SUBDIR += nctop
     SUBDIR += netdump-server
     SUBDIR += netident
+    SUBDIR += news
     SUBDIR += nitrogen
     SUBDIR += no-login
     SUBDIR += npadmin
@@ -590,6 +596,7 @@
     SUBDIR += p5-Schedule-Cron
     SUBDIR += p5-Schedule-Load
     SUBDIR += p5-Schedule-Match
+    SUBDIR += p5-Shell-Command
     SUBDIR += p5-Stat-lsMode
     SUBDIR += p5-Sys-CpuLoad
     SUBDIR += p5-Sys-Filesystem
@@ -682,6 +689,7 @@
     SUBDIR += pstack
     SUBDIR += pstree
     SUBDIR += puppet
+    SUBDIR += puppet-lint
     SUBDIR += pv
     SUBDIR += pwd_unmkdb
     SUBDIR += pwg
@@ -730,15 +738,6 @@
     SUBDIR += rsnapshot
     SUBDIR += rsyncbackup
     SUBDIR += rsyncmanager
-    SUBDIR += rsyslog4
-    SUBDIR += rsyslog4-dbi
-    SUBDIR += rsyslog4-gnutls
-    SUBDIR += rsyslog4-gssapi
-    SUBDIR += rsyslog4-mysql
-    SUBDIR += rsyslog4-pgsql
-    SUBDIR += rsyslog4-relp
-    SUBDIR += rsyslog4-rfc3195
-    SUBDIR += rsyslog4-snmp
     SUBDIR += rsyslog5
     SUBDIR += rsyslog5-dbi
     SUBDIR += rsyslog5-gnutls
@@ -784,6 +783,7 @@
     SUBDIR += rubygem-sys-proctable
     SUBDIR += rubygem-sys-uname
     SUBDIR += rubygem-sys-uptime
+    SUBDIR += rubygem-teamocil
     SUBDIR += runit
     SUBDIR += runwhen
     SUBDIR += safe-rm
@@ -824,6 +824,7 @@
     SUBDIR += sloth
     SUBDIR += slst
     SUBDIR += smartmontools
+    SUBDIR += smp_utils
     SUBDIR += snap
     SUBDIR += snowlog
     SUBDIR += socket
@@ -894,6 +895,7 @@
     SUBDIR += tty-clock
     SUBDIR += ttyload
     SUBDIR += tw_cli
+    SUBDIR += tzdialog
     SUBDIR += ua
     SUBDIR += ucspi-ipc
     SUBDIR += ucspi-proxy
@@ -914,6 +916,7 @@
     SUBDIR += upsd
     SUBDIR += upsdaemon
     SUBDIR += uptimed
+    SUBDIR += usb_modeswitch
     SUBDIR += usbhotkey
     SUBDIR += usbutils
     SUBDIR += uschedule
@@ -933,6 +936,7 @@
     SUBDIR += vimpager
     SUBDIR += virtualmin
     SUBDIR += vlogger
+    SUBDIR += vmdktool
     SUBDIR += vobcopy
     SUBDIR += volman
     SUBDIR += vordog

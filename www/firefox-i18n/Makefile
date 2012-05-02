@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	firefox-i18n
-PORTVERSION=	9.0.1
+PORTVERSION=	10.0.2
 CATEGORIES=	www
 MASTER_SITE_SUBDIR=	firefox/releases/${PORTVERSION}/linux-i686/xpi
 PKGNAMEPREFIX=
@@ -18,7 +18,7 @@ COMMENT=	Localized interface for Firefox
 
 EXTRACT_DEPENDS=	zip:${PORTSDIR}/archivers/zip
 
-USE_FIREFOX=	90
+USE_FIREFOX=	10
 USE_XPI=	firefox linux-firefox
 
 USE_SUBMAKE=	yes
@@ -48,9 +48,9 @@ pre-everything::
 	@${ECHO_CMD}
 	@${ECHO_CMD} "Please define FIREFOX_I18N_ALL to install all languages."
 	@${ECHO_CMD}
-	@${MKDIR} ${WRKSRC}
 
 do-extract:
+	@${MKDIR} ${WRKSRC}
 	@for lang in ${FIREFOX_I18N_}; do \
 		if ! (${EXTRACT_CMD} ${_DISTDIR}/$$lang.xpi -d ${WRKSRC}/langpack-$$lang@firefox.mozilla.org);\
 		then \

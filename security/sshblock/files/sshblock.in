@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/sshblock/files/sshblock.in,v 1.3 2009/07/15 16:56:04 dougb Exp $
+# $FreeBSD: ports/security/sshblock/files/sshblock.in,v 1.4 2010/03/27 00:14:49 dougb Exp $
 #
 # PROVIDE: sshblock
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="sshblock"
-rcvar=`set_rcvar`
+rcvar=sshblock_enable
 
 command_interpreter=%%PERL%%
 command="%%PREFIX%%/sbin/sshblock"

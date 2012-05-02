@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/dahdi-kmod/files/dahdi.in,v 1.7 2010/11/07 17:18:36 fjoe Exp $
+# $FreeBSD: ports/misc/dahdi-kmod/files/dahdi.in,v 1.8 2011/05/15 02:49:09 dougb Exp $
 #
 # PROVIDE: dahdi
 # REQUIRE: NETWORKING
@@ -34,7 +34,7 @@
 . /etc/rc.subr
 
 name="dahdi"
-rcvar=`set_rcvar`
+rcvar=dahdi_enable
 
 start_cmd="dahdi_start"
 stop_cmd="dahdi_stop"

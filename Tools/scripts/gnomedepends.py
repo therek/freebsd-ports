@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 #
 # gnomedepends
 # Analyse pkg/PLIST and give an advice as to which GNOME
@@ -13,7 +13,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/gnomedepends.py,v 1.3 2000/10/21 14:39:20 sobomax Exp $
+# $FreeBSD: ports/Tools/scripts/gnomedepends.py,v 1.4 2005/01/09 10:21:17 krion Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org
 #

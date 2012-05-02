@@ -6,17 +6,17 @@
 #
 
 PORTNAME=	suricata
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2.1
 CATEGORIES=	security
 MASTER_SITES=	http://www.openinfosecfoundation.org/download/
 
-MAINTAINER=	eksffa@freebsdbrasil.com.br
+MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Open Source next generation IDS/IPS engine by OISF
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	pcre.0:${PORTSDIR}/devel/pcre \
+LIB_DEPENDS=	pcre.1:${PORTSDIR}/devel/pcre \
 		yaml:${PORTSDIR}/textproc/libyaml \
 		pcap.1:${PORTSDIR}/net/libpcap \
 		htp-0.2.1:${PORTSDIR}/devel/libhtp

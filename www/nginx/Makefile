@@ -6,7 +6,8 @@
 #
 
 PORTNAME=	nginx
-PORTVERSION=	1.0.11
+PORTVERSION=	1.0.12
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/
@@ -53,8 +54,10 @@ OPTIONS=	DEBUG			"Enable nginx debugging" off \
 		HEADERS_MORE_MODULE	"3rd party headers_more module" off \
 		HTTP_ACCEPT_LANGUAGE	"3rd party accept_language module" off \
 		HTTP_ACCESSKEY_MODULE	"3rd party http_accesskey module" off \
+		HTTP_AUTH_DIGEST_MODULE	"3rd party http_authdigest module" off \
 		HTTP_AUTH_PAM_MODULE	"3rd party http_auth_pam module" off \
 		HTTP_AUTH_REQ_MODULE	"3rd party http_auth_request module" off \
+		HTTP_DAV_EXT_MODULE	"3rd party webdav_ext module" off \
 		HTTP_EVAL_MODULE	"3rd party eval module" off \
 		HTTP_FANCYINDEX_MODULE	"3rd party http_fancyindex module" off \
 		HTTP_GUNZIP_FILTER	"3rd party http_gunzip_filter module" off \
@@ -71,9 +74,13 @@ OPTIONS=	DEBUG			"Enable nginx debugging" off \
 		HTTP_UPSTREAM_HASH	"3rd party upstream hash module" off \
 		HTTP_UPSTREAM_KEEPALIVE "3rd party upstream keepalive module" off \
 		HTTP_ZIP_MODULE		"3rd party http_zip module" off \
+		ARRAYVAR_MODULE		"3rd party array_var module" off \
 		CHUNKIN_MODULE		"3rd party chunkin module" off \
 		DRIZZLE_MODULE		"3rd party drizzlie module" off \
+		ENCRYPTSESSION_MODULE	"3rd party encrypted_session module" off \
+		FORMINPUT_MODULE	"3rd party form_input module" off \
 		GRIDFS_MODULE		"3rd party gridfs module" off \
+		ICONV_MODULE		"3rd party iconv module" off \
 		LUA_MODULE		"3rd party lua module" off \
 		MEMC_MODULE		"3rd party memc (memcached) module" off \
 		NAXSI_MODULE		"3rd party naxsi module" off \
@@ -184,6 +191,14 @@ CONFIGURE_ARGS+=--add-module=${WRKDIR}/nginx-accesskey-${NGINX_ACCESSKEY_MODULE_
 CONFIGURE_ARGS+=--with-http_addition_module
 .endif
 
+.if defined(WITH_HTTP_AUTH_DIGEST_MODULE)
+GIT_AUTH_DIGEST_MODULE_VERSION=	bd1c86a
+FETCH_ARGS=	-pRr
+MASTER_SITES+=	https://github.com/samizdatco/nginx-http-auth-digest/tarball/master/:auth_digest
+DISTFILES+=	samizdatco-nginx-http-auth-digest-${GIT_AUTH_DIGEST_MODULE_VERSION}.tar.gz:auth_digest
+CONFIGURE_ARGS+=--add-module=${WRKDIR}/samizdatco-nginx-http-auth-digest-${GIT_AUTH_DIGEST_MODULE_VERSION}
+.endif
+
 .if defined(WITH_HTTP_AUTH_PAM_MODULE)
 NGINX_AUTH_PAM_MODULE_VERSION=	1.2
 MASTER_SITES+=	http://web.iti.upv.es/~sto/nginx/:auth_pam
@@ -210,8 +225,8 @@ CONFIGURE_ARGS+=--add-module=${WRKDIR}/ngx_cache_purge-${NGINX_CACHE_PURGE_MODUL
 .endif
 
 .if defined(WITH_ECHO_MODULE)
-NGINX_ECHO_MODULE_VERSION=	0.36
-GIT_ECHO_MODULE_VERSION=	0-g13dd12f
+NGINX_ECHO_MODULE_VERSION=	0.38rc1
+GIT_ECHO_MODULE_VERSION=	0-g6c1f553
 FETCH_ARGS=	-pRr
 MASTER_SITES+=	https://github.com/agentzh/echo-nginx-module/tarball/v${NGINX_ECHO_MODULE_VERSION}/:echo
 DISTFILES+=	agentzh-echo-nginx-module-v${NGINX_ECHO_MODULE_VERSION}-${GIT_ECHO_MODULE_VERSION}.tar.gz:echo
@@ -219,8 +234,8 @@ CONFIGURE_ARGS+=--add-module=${WRKDIR}/agentzh-echo-nginx-module-${GIT_ECHO_MODU
 .endif
 
 .if defined(WITH_HEADERS_MORE_MODULE)
-NGINX_HEADERS_MORE_MODULE_VERSION=	0.15
-GIT_HEADERS_MORE_MODULE_VERSION=	0-g137855d
+NGINX_HEADERS_MORE_MODULE_VERSION=	0.17rc1
+GIT_HEADERS_MORE_MODULE_VERSION=	0-g3580526
 FETCH_ARGS=	-pRr
 MASTER_SITES+=	https://github.com/agentzh/headers-more-nginx-module/tarball/v${NGINX_HEADERS_MORE_MODULE_VERSION}/:headers_more
 DISTFILES+=	agentzh-headers-more-nginx-module-v${NGINX_HEADERS_MORE_MODULE_VERSION}-${GIT_HEADERS_MORE_MODULE_VERSION}.tar.gz:headers_more
@@ -229,6 +244,16 @@ CONFIGURE_ARGS+=--add-module=${WRKDIR}/agentzh-headers-more-nginx-module-${GIT_H
 
 .if defined(WITH_HTTP_DAV_MODULE)
 CONFIGURE_ARGS+=--with-http_dav_module
+.endif
+
+.if defined(WITH_HTTP_DAV_EXT_MODULE)
+LIB_DEPENDS+=	expat.6:${PORTSDIR}/textproc/expat2
+NGINX_DAV_EXT_MODULE_VERSION=	0.0.2
+GIT_DAV_EXT_MODULE_VERSION=	0-g0e07a3e
+FETCH_ARGS=	-pRr
+MASTER_SITES+=	https://github.com/arut/nginx-dav-ext-module/tarball/v${NGINX_DAV_EXT_MODULE_VERSION}/:dav_ext
+DISTFILES+=	arut-nginx-dav-ext-module-v${NGINX_DAV_EXT_MODULE_VERSION}-${GIT_DAV_EXT_MODULE_VERSION}.tar.gz:dav_ext
+CONFIGURE_ARGS+=--add-module=${WRKDIR}/arut-nginx-dav-ext-module-${GIT_DAV_EXT_MODULE_VERSION:S/^0-g//}
 .endif
 
 .if defined(WITH_HTTP_EVAL_MODULE)
@@ -297,9 +322,11 @@ EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-ngx_http_streaming_module.c
 .endif
 
 .if defined(WITH_HTTP_NOTICE_MODULE)
-MASTER_SITES+=	http://xph.us/dist/nginx-notice/:notice2
-DISTFILES+=	nginx-notice-2.tar.gz:notice2
-CONFIGURE_ARGS+=--add-module=${WRKDIR}/nginx-notice-2
+GIT_NOTICE_MODULE_VERSION=	0-g3c95966
+FETCH_ARGS=	-pRr
+MASTER_SITES+=	https://github.com/kr/nginx-notice/tarball/master/:notice
+DISTFILES+=	kr-nginx-notice-${GIT_NOTICE_MODULE_VERSION}.tar.gz:notice
+CONFIGURE_ARGS+=--add-module=${WRKDIR}/kr-nginx-notice-${GIT_NOTICE_MODULE_VERSION:S/^0-g//}
 EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-ngx_http_notice_module.c
 .endif
 
@@ -410,8 +437,7 @@ CONFIGURE_ARGS+=--with-http_xslt_module
 
 .if defined(WITH_HTTP_ZIP_MODULE)
 NGINX_ZIP_MODULE_VERSION=	1.1.6
-MASTER_SITES+=	${MASTER_SITE_GOOGLE_CODE}:zip
-PROJECTHOST=	mod-zip
+MASTER_SITES+=	http://mod-zip.googlecode.com/files/:zip
 DISTFILES+=	mod_zip-${NGINX_ZIP_MODULE_VERSION}.tar.gz:zip
 CONFIGURE_ARGS+=--add-module=${WRKDIR}/mod_zip-${NGINX_ZIP_MODULE_VERSION}
 .endif
@@ -427,13 +453,23 @@ CONFIGURE_ARGS+=--add-module=${WRKDIR}/agentzh-chunkin-nginx-module-${GIT_CHUNKI
 
 .if defined(WITH_DRIZZLE_MODULE)
 LIB_DEPENDS+=	drizzle.0:${PORTSDIR}/databases/drizzle
-NGINX_DRIZZLE_MODULE_VERSION=	0.1.2rc4
-GIT_DRIZZLE_MODULE_VERSION=	0-g46b744a
+NGINX_DRIZZLE_MODULE_VERSION=	0.1.2rc6
+GIT_DRIZZLE_MODULE_VERSION=	0-ge05b5ff
 FETCH_ARGS=	-pRr
 MASTER_SITES+=	https://github.com/chaoslawful/drizzle-nginx-module/tarball/v${NGINX_DRIZZLE_MODULE_VERSION}/:drizzle
 DISTFILES+=	chaoslawful-drizzle-nginx-module-v${NGINX_DRIZZLE_MODULE_VERSION}-${GIT_DRIZZLE_MODULE_VERSION}.tar.gz:drizzle
 CONFIGURE_ARGS+=--add-module=${WRKDIR}/chaoslawful-drizzle-nginx-module-${GIT_DRIZZLE_MODULE_VERSION:S/^0-g//}
 EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-chaoslawful-drizzle-nginx-module::config
+.endif
+
+.if defined(WITH_ENCRYPTSESSION_MODULE)
+USE_NGINX_DEVEL_KIT=	yes
+NGINX_ENCRYPTSESSION_MODULE_VERSION=	0.02
+GIT_ENCRYPTSESSION_MODULE_VERSION=	0-gc752861
+FETCH_ARGS=	-pRr
+MASTER_SITES+=	https://github.com/agentzh/encrypted-session-nginx-module/tarball/v${NGINX_ENCRYPTSESSION_MODULE_VERSION}/:encryptsession
+DISTFILES+=	agentzh-encrypted-session-nginx-module-v${NGINX_ENCRYPTSESSION_MODULE_VERSION}-${GIT_ENCRYPTSESSION_MODULE_VERSION}.tar.gz:encryptsession
+CONFIGURE_ARGS+=--add-module=${WRKDIR}/agentzh-encrypted-session-nginx-module-${GIT_ENCRYPTSESSION_MODULE_VERSION:S/^0-g//}
 .endif
 
 .if defined(WITH_GRIDFS_MODULE)
@@ -450,12 +486,12 @@ CONFIGURE_ARGS+=--add-module=${WRKDIR}/mdirolf-nginx-gridfs-${GIT_GRIDFS_MODULE_
 .endif
 
 .if defined(WITH_LUA_MODULE)
-LIB_DEPENDS=	luajit-5.1.2:${PORTSDIR}/devel/luajit
+LIB_DEPENDS+=	luajit-5.1.2:${PORTSDIR}/lang/luajit
 CONFIGURE_ENV+=	"LUAJIT_INC=${LOCALBASE}/include/luajit-2.0"
 CONFIGURE_ENV+= "LUAJIT_LIB=${LOCALBASE}/lib"
 USE_NGINX_DEVEL_KIT=	yes
-NGINX_LUA_MODULE_VERSION=	0.4.0
-GIT_LUA_MODULE_VERSION=	0-g7bdd850
+NGINX_LUA_MODULE_VERSION=	0.4.1
+GIT_LUA_MODULE_VERSION=	0-g204ce2b
 FETCH_ARGS=	-pRr
 MASTER_SITES+=	https://github.com/chaoslawful/lua-nginx-module/tarball/v${NGINX_LUA_MODULE_VERSION}/:lua
 DISTFILES+=	chaoslawful-lua-nginx-module-v${NGINX_LUA_MODULE_VERSION}-${GIT_LUA_MODULE_VERSION}.tar.gz:lua
@@ -464,8 +500,8 @@ EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-chaoslawful-lua-nginx-module::config
 .endif
 
 .if defined(WITH_MEMC_MODULE)
-NGINX_MEMC_MODULE_VERSION=	0.12
-GIT_MEMC_MODULE_VERSION=	0-g4f1952c
+NGINX_MEMC_MODULE_VERSION=	0.13rc3
+GIT_MEMC_MODULE_VERSION=	0-g4007350
 FETCH_ARGS=	-pRr
 MASTER_SITES+=	https://github.com/agentzh/memc-nginx-module/tarball/v${NGINX_MEMC_MODULE_VERSION}/:memc
 DISTFILES+=	agentzh-memc-nginx-module-v${NGINX_MEMC_MODULE_VERSION}-${GIT_MEMC_MODULE_VERSION}.tar.gz:memc
@@ -473,10 +509,8 @@ CONFIGURE_ARGS+=--add-module=${WRKDIR}/agentzh-memc-nginx-module-${GIT_MEMC_MODU
 .endif
 
 .if defined(WITH_NAXSI_MODULE)
-NGINX_NAXSI_MODULE_VERSION=	0.42
-FETCH_ARGS=	-pRr
-MASTER_SITES+=	${MASTER_SITE_GOOGLE_CODE}:naxsi
-PROJECTHOST=	naxsi
+NGINX_NAXSI_MODULE_VERSION=	0.43
+MASTER_SITES+=	http://naxsi.googlecode.com/files/:naxsi
 DISTFILES+=	naxsi-${NGINX_NAXSI_MODULE_VERSION}.tar.gz:naxsi
 CONFIGURE_ARGS+=--add-module=${WRKDIR}/naxsi-${NGINX_NAXSI_MODULE_VERSION}/naxsi_src
 .endif
@@ -486,7 +520,7 @@ PKGNAMESUFFIX:=	${PKGNAMESUFFIX}-nopcre
 CONFIGURE_ARGS+=--without-http_rewrite_module \
 		--without-pcre
 .else
-LIB_DEPENDS+=	pcre.0:${PORTSDIR}/devel/pcre
+LIB_DEPENDS+=	pcre.1:${PORTSDIR}/devel/pcre
 CONFIGURE_ARGS+=--with-pcre
 .endif
 
@@ -530,8 +564,8 @@ CONFIGURE_ARGS+=--add-module=${WRKDIR}/agentzh-rds-json-nginx-module-${GIT_RDS_J
 .endif
 
 .if defined(WITH_REDIS2_MODULE)
-NGINX_REDIS2_MODULE_VERSION=	0.07
-GIT_REDIS2_MODULE_VERSION=	0-g6f7fc37
+NGINX_REDIS2_MODULE_VERSION=	0.08rc2
+GIT_REDIS2_MODULE_VERSION=	0-g0a8a6b9
 FETCH_ARGS=	-pRr
 MASTER_SITES+=	https://github.com/agentzh/redis2-nginx-module/tarball/v${NGINX_REDIS2_MODULE_VERSION}/:redis2
 DISTFILES+=	agentzh-redis2-nginx-module-v${NGINX_REDIS2_MODULE_VERSION}-${GIT_REDIS2_MODULE_VERSION}.tar.gz:redis2
@@ -540,8 +574,8 @@ CONFIGURE_ARGS+=--add-module=${WRKDIR}/agentzh-redis2-nginx-module-${GIT_REDIS2_
 
 .if defined(WITH_SET_MISC_MODULE)
 USE_NGINX_DEVEL_KIT=	yes
-NGINX_SET_MISC_MODULE_VERSION=	0.22rc3
-GIT_SET_MISC_VERSION=	0-g7adef5a
+NGINX_SET_MISC_MODULE_VERSION=	0.22rc5
+GIT_SET_MISC_VERSION=	0-ge6a54ab
 FETCH_ARGS=	-pRr
 MASTER_SITES+=	https://github.com/agentzh/set-misc-nginx-module/tarball/v${NGINX_SET_MISC_MODULE_VERSION}/:setmisc
 DISTFILES+=	agentzh-set-misc-nginx-module-v${NGINX_SET_MISC_MODULE_VERSION}-${GIT_SET_MISC_VERSION}.tar.gz:setmisc
@@ -550,15 +584,15 @@ EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-agentzh-set-misc-nginx-module::config
 .endif
 
 .if defined(WITH_SLOWFS_CACHE_MODULE)
-NGINX_SLOWFS_CACHE_MODULE_VERSION=	1.6
+NGINX_SLOWFS_CACHE_MODULE_VERSION=	1.8
 MASTER_SITES+=	http://labs.frickle.com/files/:slowfs_cache
 DISTFILES+=	ngx_slowfs_cache-${NGINX_SLOWFS_CACHE_MODULE_VERSION}.tar.gz:slowfs_cache
 CONFIGURE_ARGS+=--add-module=${WRKDIR}/ngx_slowfs_cache-${NGINX_SLOWFS_CACHE_MODULE_VERSION}
 .endif
 
 .if defined(WITH_SRCACHE_MODULE)
-NGINX_SRCACHE_MODULE_VERSION=	0.12
-GIT_SRCACHE_MODULE_VERSION=	0-g362530f
+NGINX_SRCACHE_MODULE_VERSION=	0.13rc3
+GIT_SRCACHE_MODULE_VERSION=	0-g60ca0d1
 FETCH_ARGS=	-pRr
 MASTER_SITES+=	https://github.com/agentzh/srcache-nginx-module/tarball/v${NGINX_SRCACHE_MODULE_VERSION}/:srcache
 DISTFILES+=	agentzh-srcache-nginx-module-v${NGINX_SRCACHE_MODULE_VERSION}-${GIT_SRCACHE_MODULE_VERSION}.tar.gz:srcache
@@ -595,8 +629,8 @@ CONFIGURE_ARGS+=--add-module=${WRKDIR}/gabor-nginx-x-rid-header-${GIT_XRID_MODUL
 .endif
 
 .if defined(WITH_XSS_MODULE)
-NGINX_XSS_MODULE_VERSION=	0.03rc3
-GIT_XSS_MODULE_VERSION=	0-g8618dd3
+NGINX_XSS_MODULE_VERSION=	0.03rc8
+GIT_XSS_MODULE_VERSION=	0-g57e2119
 FETCH_ARGS=	-pRr
 MASTER_SITES+=	https://github.com/agentzh/xss-nginx-module/tarball/v${NGINX_XSS_MODULE_VERSION}/:xss
 DISTFILES+=	agentzh-xss-nginx-module-v${NGINX_XSS_MODULE_VERSION}-${GIT_XSS_MODULE_VERSION}.tar.gz:xss
@@ -644,6 +678,38 @@ DISTFILES+=	simpl-ngx_devel_kit-v${NGINX_DEVEL_KIT_MODULE_VERSION}-${GIT_DEVEL_K
 CONFIGURE_ARGS+=--add-module=${WRKDIR}/simpl-ngx_devel_kit-${GIT_DEVEL_KIT_MODULE_VERSION:S/^0-g//}
 .endif
 
+.if defined(WITH_ARRAYVAR_MODULE)
+USE_NGINX_DEVEL_KIT=	yes
+NGINX_ARRAYVAR_MODULE_VERSION=	0.03rc1
+GIT_ARRAYVAR_MODULE_VERSION=	0-gfed751a
+FETCH_ARGS=	-pRr
+MASTER_SITES+=	https://github.com/agentzh/array-var-nginx-module/tarball/v${NGINX_ARRAYVAR_MODULE_VERSION}/:arrayvar
+DISTFILES+=	agentzh-array-var-nginx-module-v${NGINX_ARRAYVAR_MODULE_VERSION}-${GIT_ARRAYVAR_MODULE_VERSION}.tar.gz:arrayvar
+CONFIGURE_ARGS+=--add-module=${WRKDIR}/agentzh-array-var-nginx-module-${GIT_ARRAYVAR_MODULE_VERSION:S/^0-g//}
+.endif
+
+.if defined(WITH_FORMINPUT_MODULE)
+USE_NGINX_DEVEL_KIT=	yes
+NGINX_FORMINPUT_MODULE_VERSION=	0.07rc5
+GIT_FORMINPUT_MODULE_VERSION=	0-gd41681d
+FETCH_ARGS=	-pRr
+MASTER_SITES+=	https://github.com/calio/form-input-nginx-module/tarball/v${NGINX_FORMINPUT_MODULE_VERSION}/:forminput
+DISTFILES+=	calio-form-input-nginx-module-v${NGINX_FORMINPUT_MODULE_VERSION}-${GIT_FORMINPUT_MODULE_VERSION}.tar.gz:forminput
+CONFIGURE_ARGS+=--add-module=${WRKDIR}/calio-form-input-nginx-module-${GIT_FORMINPUT_MODULE_VERSION:S/^0-g//}
+.endif
+
+.if defined(WITH_ICONV_MODULE)
+LIB_DEPENDS+=	iconv:${PORTSDIR}/converters/libiconv
+USE_NGINX_DEVEL_KIT=	yes
+NGINX_ICONV_MODULE_VERSION=	0.10rc5
+GIT_ICONV_MODULE_VERSION=	0-g4e71946
+FETCH_ARGS=	-pRr
+MASTER_SITES+=	https://github.com/calio/iconv-nginx-module/tarball/v${NGINX_ICONV_MODULE_VERSION}/:iconv
+DISTFILES+=	calio-iconv-nginx-module-v${NGINX_ICONV_MODULE_VERSION}-${GIT_ICONV_MODULE_VERSION}.tar.gz:iconv
+CONFIGURE_ARGS+=--add-module=${WRKDIR}/calio-iconv-nginx-module-${GIT_ICONV_MODULE_VERSION:S/^0-g//}
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-calio-iconv-nginx-module::config
+.endif
+
 PLIST_SUB+=	NGINX_TMPDIR=${NGINX_TMPDIR} WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}
 
 .include <bsd.port.pre.mk>
@@ -683,7 +749,7 @@ post-patch:
 .endif
 .if defined(WITH_DRIZZLE_MODULE)
 	@${REINPLACE_CMD} \
-		's!%%PREFIX%%!${PREFIX}!' \
+		's!%%PREFIX%%!${LOCALBASE}!g' \
 		${WRKDIR}/chaoslawful-drizzle-nginx-module-${GIT_DRIZZLE_MODULE_VERSION:S/^0-g//}/config
 .endif
 # Respect CFLAGS by remove needless --std=c99 flag
@@ -694,7 +760,7 @@ post-patch:
 .endif
 .if defined(WITH_LUA_MODULE)
 	@${REINPLACE_CMD} \
-		's!%%PREFIX%%!${PREFIX}!g' \
+		's!%%PREFIX%%!${LOCALBASE}!g' \
 		${WRKDIR}/chaoslawful-lua-nginx-module-${GIT_LUA_MODULE_VERSION:S/^0-g//}/config
 .endif
 .if defined(WITH_PASSENGER_MODULE)
@@ -715,7 +781,7 @@ post-patch:
 .endif
 .if defined(WITH_POSTGRES_MODULE)
 	@${REINPLACE_CMD} \
-		's!%%PREFIX%%!${PREFIX}!' \
+		's!%%PREFIX%%!${LOCALBASE}!g' \
 		${WRKDIR}/ngx_postgres-${NGINX_POSTGRES_MODULE_VERSION}/config
 .endif
 .if defined(WITH_SUPERVISORD_MODULE)
@@ -725,6 +791,11 @@ post-patch:
 	( cd ${WRKSRC} && \
 		${PATCH} -p0 < \
 			${WRKDIR}/ngx_supervisord-${NGINX_SUPERVISORD_MODULE_VERSION}/patches/ngx_http_upstream_init_busy-0.8.17.patch )
+.endif
+.if defined(WITH_ICONV_MODULE)
+	@${REINPLACE_CMD} \
+		's!%%PREFIX%%!${LOCALBASE}!g' \
+		${WRKDIR}/calio-iconv-nginx-module-${GIT_ICONV_MODULE_VERSION:S/^0-g//}/config
 .endif
 
 do-build:

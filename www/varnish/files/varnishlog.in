@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/varnish/files/varnishlog.in,v 1.5 2009/10/13 18:51:10 des Exp $
+# $FreeBSD: ports/www/varnish/files/varnishlog.in,v 1.6 2010/03/27 00:15:19 dougb Exp $
 #
 
 # PROVIDE: varnishlog
@@ -34,7 +34,7 @@
 . /etc/rc.subr
 
 name="varnishlog"
-rcvar=`set_rcvar`
+rcvar=varnishlog_enable
 
 command="%%PREFIX%%/bin/${name}"
 

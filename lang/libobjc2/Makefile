@@ -43,15 +43,12 @@ CPPFLAGS+=	-DGNUSTEP
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 900000
-.if defined(CC) && ${CC:Mclang}
+.if defined(CC) && ${CC:T:Mclang}
 # all done
 .else
-.if defined(GNUSTEP_WITH_CLANG)
+# force clang
 CC=	${LOCALBASE}/bin/clang
 BUILD_DEPENDS+=	${LOCALBASE}/bin/clang:${PORTSDIR}/lang/clang
-.else
-USE_GCC=	4.6+
-.endif
 .endif
 .endif
 

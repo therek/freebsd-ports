@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/perdition/files/perdition.imaps.in,v 1.3 2009/07/15 16:55:48 dougb Exp $
+# $FreeBSD: ports/mail/perdition/files/perdition.imaps.in,v 1.4 2010/03/27 00:13:19 dougb Exp $
 #
 # PROVIDE: perdition_imaps
 # REQUIRE: DAEMON
@@ -19,7 +19,7 @@ perdition_imaps_enable=${perdition_imaps_enable-"NO"}
 . /etc/rc.subr
 
 name="perdition_imaps"
-rcvar=`set_rcvar`
+rcvar=perdition_imaps_enable
 
 command="%%PREFIX%%/sbin/perdition.imaps"
 pidfile="/var/run/perdition.imaps/perdition.imaps.pid"

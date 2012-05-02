@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/metalog/files/metalog.in,v 1.1 2007/07/14 15:57:01 sat Exp $
+# $FreeBSD: ports/sysutils/metalog/files/metalog.in,v 1.2 2010/03/27 00:14:58 dougb Exp $
 #
 
 # PROVIDE: metalog
@@ -10,7 +10,7 @@
 . /etc/rc.subr
 
 name=metalog
-rcvar=`set_rcvar`
+rcvar=metalog_enable
 pidfile="/var/run/metalog.pid"
 command="%%PREFIX%%/sbin/${name}"
 command_args="--daemonize"

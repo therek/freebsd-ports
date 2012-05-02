@@ -6,14 +6,14 @@
 #
 
 PORTNAME=	sinatra-respond_to
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	freebsdports@chillibear.com
 COMMENT=	A respond_to style Rails block for Sinatra
 
-RUN_DEPENDS=	rubygem-sinatra>=1.2:${PORTSDIR}/www/rubygem-sinatra
+RUN_DEPENDS=	rubygem-sinatra>=1.3:${PORTSDIR}/www/rubygem-sinatra
 
 USE_RUBY=		yes
 USE_RUBYGEMS=		yes

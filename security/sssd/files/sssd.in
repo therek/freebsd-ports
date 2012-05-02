@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/sssd/files/sssd.in,v 1.1 2011/10/15 02:13:20 zi Exp $
 #
 
 # PROVIDE: sssd
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="sssd"
-rcvar=`set_rcvar`
+rcvar=sssd_enable
 
 command="%%PREFIX%%/sbin/$name"
 sssd_flags="-D"

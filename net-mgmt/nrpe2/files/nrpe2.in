@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/nrpe2/files/nrpe2.in,v 1.4 2009/07/15 16:55:59 dougb Exp $
+# $FreeBSD: ports/net-mgmt/nrpe2/files/nrpe2.in,v 1.5 2010/03/27 00:14:26 dougb Exp $
 #
 
 # PROVIDE: nrpe2
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="nrpe2"
-rcvar=`set_rcvar`
+rcvar=nrpe2_enable
 
 command="%%PREFIX%%/sbin/nrpe2"
 command_args="-d"

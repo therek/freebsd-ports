@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/igmpproxy/files/igmpproxy.in,v 1.2 2010/03/27 00:13:45 dougb Exp $
+# $FreeBSD: ports/net/igmpproxy/files/igmpproxy.in,v 1.3 2010/10/31 14:47:29 rene Exp $
 #
 
 # PROVIDE: igmpproxy
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name="igmpproxy"
-rcvar=`set_rcvar`
+rcvar=igmpproxy_enable
 procname="%%PREFIX%%/sbin/${name}"
 command=/usr/sbin/daemon
 required_files="%%PREFIX%%/etc/igmpproxy.conf"

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/ndpmon/files/ndpmonitor.in,v 1.5 2011/09/25 16:47:03 zi Exp $
+# $FreeBSD: ports/net-mgmt/ndpmon/files/ndpmonitor.in,v 1.6 2011/09/25 20:35:06 zi Exp $
 #
 # PROVIDE: ndpmonitor
 # REQUIRE: LOGIN
@@ -10,7 +10,7 @@
 . /etc/rc.subr
 
 name="ndpmonitor"
-rcvar=`set_rcvar`
+rcvar=ndpmonitor_enable
 
 command="%%PREFIX%%/sbin/ndpmon"
 required_files=%%ETCDIR%%/config_ndpmon.xml

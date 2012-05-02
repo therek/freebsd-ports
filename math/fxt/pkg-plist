@@ -29,6 +29,9 @@ include/fxt/aux2-all.h
 include/fxt/aux2/copy2d.h
 include/fxt/aux2/transpose.h
 include/fxt/aux2/transpose2.h
+include/fxt/bits/bin-to-sl-gray.h
+include/fxt/bits/bit-sl-gray.h
+include/fxt/bits/fibrep-sl.h
 include/fxt/bits/bit-dragon-r4.h
 include/fxt/bits/bitzip-pairs.h
 include/fxt/bits/radix-2i.h
@@ -151,11 +154,23 @@ include/fxt/bpol/poly-tab.h
 include/fxt/chirpzt-all.h
 include/fxt/chirpzt/chirpzt.h
 include/fxt/comb-all.h
+include/fxt/comb/catalan-gslex.h
+include/fxt/comb/check-setpart-rgs.h
+include/fxt/comb/motzkin-path-lex.h
+include/fxt/comb/is-motzkin-path.h
+include/fxt/comb/catalan-subset-lex.h
+include/fxt/comb/dyck-rgs-subset-lex.h
+include/fxt/comb/setpart-rgs-subset-lex.h
+include/fxt/comb/mixedradix-gslex-alt2.h
+include/fxt/comb/mixedradix-naf-sl.h
+include/fxt/comb/paren-string-to-rgs.h
+include/fxt/comb/binary-sl-gray.h
+include/fxt/comb/mixedradix-naf-gray.h
 include/fxt/comb/acgray.h
 include/fxt/comb/check-mixedradix.h
 include/fxt/comb/delta2gray.h
-include/fxt/comb/mixedradix-cgray.h
 include/fxt/comb/mixedradix-subset-lex.h
+include/fxt/comb/mixedradix-sl-gray.h
 include/fxt/comb/monotonic-gray.h
 include/fxt/comb/test-gray.h
 include/fxt/comb/perm-st-pref.h
@@ -320,7 +335,6 @@ include/fxt/fht/shortfhtditcore.h
 include/fxt/fht/slowht.h
 include/fxt/fxtalloca.h
 include/fxt/fxtio.h
-include/fxt/fxtiomanip.h
 include/fxt/fxttypes.h
 include/fxt/graph-all.h
 include/fxt/graph/digraph-paths.h
@@ -472,6 +486,7 @@ include/fxt/walsh/walshwalrev.h
 include/fxt/walsh/weighted-arithtransform.h
 include/fxt/walsh/weighted-or-convolution.h
 include/fxt/wavelet-all.h
+include/fxt/wavelet/harmonic-wavelet.h
 include/fxt/wavelet/daubechies.h
 include/fxt/wavelet/wavelet.h
 include/fxt/wavelet/waveletfilter.h
@@ -499,6 +514,10 @@ lib/libfxt.a
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/arith/zero-divisors-func-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/arith/zero-divisors-func-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/arith/zero-divisors-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/bin-to-sl-gray-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/bin-to-sl-gray-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/bit-sl-gray-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/bit-sl-gray-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/dragon-r4-texpic-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/dragon-r4-texpic-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/radix-m1pi-to-z-out.txt
@@ -590,8 +609,6 @@ lib/libfxt.a
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/dragon-r9-texpic-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/dragon3-texpic-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/dragon3-texpic-out.txt
-%%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/fibrep-demo.cc
-%%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/fibrep-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/fibrep2-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/fibrep2-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/gotcha-demo.cc
@@ -616,6 +633,10 @@ lib/libfxt.a
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/hilbert-texpic-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/modular-lookup-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/modular-lookup-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/hilbert-gray-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/hilbert-gray-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/fibrep-sl-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/fibrep-sl-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/negbin-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/negbin-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/negbin2-demo.cc
@@ -638,13 +659,31 @@ lib/libfxt.a
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/thue-morse-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/zorder-texpic-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/bits/zorder-texpic-out.txt
-%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-cgray-rec-demo.cc
-%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-cgray-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/catalan-gslex-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/catalan-gslex-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/motzkin-path-lex-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/motzkin-path-lex-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/setpart-rgs-subset-lex-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/dyck-rgs-subset-lex-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/catalan-subset-lex-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/setpart-rgs-subset-lex-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/catalan-subset-lex-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/dyck-rgs-subset-lex-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-naf-sl-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-gslex-alt2-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-naf-sl-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-gslex-alt2-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-naf-gray-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/binary-sl-gray-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/binary-sl-gray-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-naf-gray-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-subset-lex-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-sl-gray-rec-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-sl-gray-rec-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-sl-gray-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-sl-gray-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mset-lex-out.txt
-%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-cgray-rec-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-subset-lex-out.txt
-%%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mixedradix-cgray-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/mset-lex-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/perm-st-pref-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/comb/perm-st-pref-out.txt
@@ -1168,6 +1207,14 @@ lib/libfxt.a
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/perm/revbin-perm-rec-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/perm/swap-blocks-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/perm/swap-blocks-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/seq/A206702-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/seq/A206702-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/seq/A080936-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/seq/A080936-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/seq/A206464-demo.cc
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/seq/A206464-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/seq/A207018-out.txt
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/seq/A207018-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/sort/equivclass-bitstring-demo.cc
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/sort/equivclass-bitstring-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/sort/equivclass-bracelets-demo.cc
@@ -1198,6 +1245,7 @@ lib/libfxt.a
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/sort/unique-out.txt
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/nextarg.h
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/topics.txt
+%%PORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/seq
 %%PORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/sort
 %%PORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/perm
 %%PORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/mod

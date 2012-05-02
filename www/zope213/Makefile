@@ -6,13 +6,13 @@
 #
 
 PORTNAME=	zope213
-PORTVERSION=	2.13.11
+PORTVERSION=	2.13.13
 CATEGORIES=	www python zope
 MASTER_SITES=	CHEESESHOP
 DISTNAME=	Zope2-${PORTVERSION}
 DIST_SUBDIR=	zope
 
-MAINTAINER=	rm@FreeBSD.org
+MAINTAINER=	zope@FreeBSD.org
 COMMENT=	An object-based web application platform Version 2.13
 
 LICENSE=	ZPL21

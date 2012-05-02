@@ -4,10 +4,11 @@
 #
 # $FreeBSD$
 #
+# Remeber to check sysutils/rubygem-chef
 
 PORTNAME=	net-ssh
 PORTVERSION=	2.1.4
-PORTEPOCH=	1
+PORTEPOCH=	2
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/devel/cvsd/files/cvsd.in,v 1.2 2007/02/26 22:49:34 miwi Exp $
+# $FreeBSD: ports/devel/cvsd/files/cvsd.in,v 1.3 2010/03/27 00:12:51 dougb Exp $
 #
 # PROVIDE: cvsd
 # REQUIRE: LOGIN syslogd
@@ -8,7 +8,7 @@
 . /etc/rc.subr
 
 name="cvsd"
-rcvar=${name}_enable
+rcvar=cvsd_enable
 
 command="%%PREFIX%%/sbin/$name"
 command_args='-f $cvsd_config'

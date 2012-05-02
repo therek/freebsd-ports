@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/mail/scam-backscatter/files/scam-backscatter.in,v 1.1 2010/08/26 14:57:15 pav Exp $
 
 # PROVIDE: scambackscatter
 # REQUIRE: LOGIN
@@ -21,7 +21,7 @@
 . /etc/rc.subr
 
 name="scambackscatter"
-rcvar=`set_rcvar`
+rcvar=scambackscatter_enable
 command="%%PREFIX%%/libexec/scam-back"
 start_precmd="${name}_prestart"
 

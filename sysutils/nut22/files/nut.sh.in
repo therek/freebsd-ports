@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/nut22/files/nut.sh.in,v 1.2 2009/09/21 09:11:59 pav Exp $
+# $FreeBSD: ports/sysutils/nut22/files/nut.sh.in,v 1.3 2010/03/27 00:15:00 dougb Exp $
 #
 
 # PROVIDE: nut
@@ -21,7 +21,7 @@ nut_prefix=${nut_prefix-"%%PREFIX%%"}
 . /etc/rc.subr
 
 name="nut"
-rcvar=`set_rcvar`
+rcvar=nut_enable
 
 load_rc_config $name
 

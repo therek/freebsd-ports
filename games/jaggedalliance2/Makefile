@@ -7,6 +7,7 @@
 
 PORTNAME=	ja2
 PORTVERSION=	0.12.1
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://deponie.yamagi.org/freebsd/distfiles/ \
 		http://tron.homeunix.org/ja2/
@@ -63,6 +64,8 @@ IGNORE=	no language has been chosen. Please choose the appropriate language for 
 MAKE_ARGS+=	NO_DEPS=yes # For a single full build dependency calculation is unnecessary
 
 MAKE_ARGS+=	SGPDATADIR=${DATADIR}
+
+MAKE_ARGS+=	${INSTALL_MACROS:S/BSD_//}
 
 MAN6=	ja2.6
 

@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	puppet
-PORTVERSION=	2.7.9
+PORTVERSION=	2.7.10
 CATEGORIES=	sysutils
 MASTER_SITES=	http://downloads.puppetlabs.com/puppet/
 
@@ -15,8 +15,6 @@ COMMENT=	A configuration management framework written in Ruby
 
 RUN_DEPENDS=	facter>=0:${PORTSDIR}/sysutils/facter \
 		rubygem-ruby-augeas>=0:${PORTSDIR}/textproc/rubygem-augeas
-
-CONFLICTS=	puppet-devel-[0-9]*
 
 NO_BUILD=	yes
 USE_RUBY=	yes
@@ -67,7 +65,7 @@ RUN_DEPENDS+=	rubygem-bzip2>=0:${PORTSDIR}/archivers/rubygem-bzip2
 .if !defined(WITH_PACKAGE_ORIGIN)
 EXTRA_PATCHES+=	${FILESDIR}/optpatch-package_root
 .else
-BROKEN=	"PACKAGE_ROOT option patch is incompatable with PACKAGE_ORIGIN patch."
+BROKEN=	PACKAGE_ROOT option patch is incompatable with PACKAGE_ORIGIN patch.
 .endif
 .endif
 

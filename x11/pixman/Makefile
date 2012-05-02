@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	pixman
-PORTVERSION=	0.24.0
+PORTVERSION=	0.24.2
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
@@ -16,22 +16,20 @@ XORG_CAT=	lib
 USE_AUTOTOOLS=	libtool
 USE_PERL5_BUILD=yes
 USE_GNOME=	ltverhack:9
+CONFIGURE_ARGS=	--disable-gtk
 
-OPTIONS=	SIMD "Enable autodetection of SIMD features (MMX, SSE2, VMX)" off
+OPTIONS=	SIMD "Enable SIMD features autodetection (MMX, SSE2, VMX)" off
 
 .include <bsd.port.pre.mk>
 
 .if defined(WITHOUT_SIMD)
 CONFIGURE_ARGS=	--disable-vmx --disable-arm-simd
-
-.if ${ARCH:Namd64}
-CONFIGURE_ARGS+=	--disable-mmx --disable-sse2
+. if ! ${MACHINE_CPU:Mmmx}
+CONFIGURE_ARGS+=	--disable-mmx
+. endif
+. if ! ${MACHINE_CPU:Msse2}
+CONFIGURE_ARGS+=	--disable-sse2
+. endif
 .endif
-
-.endif
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|gtk+-2\.0|disable-gtk|g' \
-		${WRKSRC}/configure
 
 .include <bsd.port.post.mk>

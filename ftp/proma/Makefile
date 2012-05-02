@@ -7,11 +7,14 @@
 
 PORTNAME=	proma
 PORTVERSION=	0.8.3
+PORTREVISION=	1
 CATEGORIES=	ftp
 MASTER_SITES=	SF
 
 MAINTAINER=	sexbear@tmu.edu.tw
 COMMENT=	Administrate a ProFTPd server storing users in a MySQL database
+
+BROKEN=		define an @exec depending on %F and %B before any files defined
 
 USE_BZIP2=	yes
 NO_BUILD=	yes
@@ -29,7 +32,7 @@ OPTIONS=	PROFTPD "Install ProFTPd with MySQL support" off \
 SUB_FILES=	pkg-message
 
 .if defined(WITH_PROFTPD)
-RUN_DEPENDS+=	proftpd:${PORTSDIR}/ftp/proftpd-mysql
+RUN_DEPENDS+=	${LOCALBASE}/libexec/proftpd/mod_sql_mysql.so:${PORTSDIR}/databases/proftpd-mod_sql_mysql
 .endif
 .if defined(WITH_APACHE)
 USE_APACHE=	22

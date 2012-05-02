@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/sfs/files/sfssd.in,v 1.1 2007/12/16 13:17:26 araujo Exp $
+# $FreeBSD: ports/security/sfs/files/sfssd.in,v 1.2 2010/03/27 00:14:47 dougb Exp $
 #
 # PROVIDE: sfssd
 # REQUIRE: NETWORKING
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name=sfssd
-rcvar=`set_rcvar`
+rcvar=sfssd_enable
 
 command="%%PREFIX%%/sbin/${name}"
 pidfile="/var/run/${name}.pid"

@@ -6,18 +6,17 @@
 #
 
 PORTNAME=	scrotwm
-PORTVERSION=	0.9.34
+PORTVERSION=	0.11.0
 CATEGORIES=	x11-wm
 MASTER_SITES=	https://opensource.conformal.com/snapshots/scrotwm/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	aragon@phat.za.net
+MAINTAINER=	zeising@daemonic.se
 COMMENT=	A small, dynamic tiling window manager for X11
 
 LICENSE=	ISCL
 
-OPTIONS=	DMENU "Depend on x11/dmenu" Off \
-		DMENU_BOTTOM "dmenu at screen bottom (instead of top)" Off
+OPTIONS=	DMENU_BOTTOM "dmenu at screen bottom (instead of top)" Off
 
 .include <bsd.port.pre.mk>
 
@@ -25,10 +24,15 @@ USE_XORG=	x11 xproto xrandr xt xtst
 
 MAN1=		scrotwm.1
 USE_LDCONFIG=yes
+PORTEXAMPLES=	scrotwm_cz.conf \
+		scrotwm_es.conf \
+		scrotwm_fr.conf \
+		scrotwm_fr_ch.conf \
+		scrotwm_se.conf \
+		scrotwm_us.conf
 
-.if defined(WITH_DMENU)
 RUN_DEPENDS+=	dmenu:${PORTSDIR}/x11/dmenu
-.endif
+
 .if defined(WITH_DMENU_BOTTOM)
 EXTRA_PATCHES+=	${FILESDIR}/spawn_menu_atbottom.patch
 .endif
@@ -37,22 +41,28 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|/etc/|${PREFIX}/etc/|g' ${WRKSRC}/scrotwm.*
 
 do-build:
-	${CC} ${CFLAGS} -I${X11BASE}/include \
-		-I${WRKSRC}/linux -lutil -L${X11BASE}/lib -lX11 -lXrandr -lXtst \
+	${CC} ${CFLAGS} -I${LOCALBASE}/include \
+		-I${WRKSRC}/freebsd -lutil -L${LOCALBASE}/lib -lX11 -lXrandr \
+		-lXtst -DSWM_LIB=\"${PREFIX}/lib/libswmhack.so\" \
 		-o ${WRKSRC}/${PORTNAME} ${WRKSRC}/${PORTNAME}.c
-	${CC} ${CFLAGS} -I${X11BASE}/include -shared -fPIC \
+	${CC} ${CFLAGS} -I${LOCALBASE}/include -shared -fpic -DPIC \
 		-o ${WRKSRC}/libswmhack.so ${WRKSRC}/lib/swm_hack.c
 
 do-install:
-	${MKDIR} ${EXAMPLESDIR}
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/screenshot.sh ${PREFIX}/bin
 	${INSTALL_LIB} ${WRKSRC}/libswmhack.so ${PREFIX}/lib
-	${INSTALL_MAN} ${WRKSRC}/scrotwm.1 ${MANPREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/scrotwm.1 ${MAN1PREFIX}/man/man1
 	${INSTALL_DATA} ${WRKSRC}/scrotwm.conf ${PREFIX}/etc/scrotwm.conf.sample
 	@if [ ! -f ${PREFIX}/etc/scrotwm.conf ]; then \
-		${CP} -p ${PREFIX}/etc/scrotwm.conf.sample ${PREFIX}/etc/scrotwm.conf ; \
+		${INSTALL_DATA} ${PREFIX}/etc/scrotwm.conf.sample ${PREFIX}/etc/scrotwm.conf ; \
 	fi
 	${INSTALL_SCRIPT} ${FILESDIR}/startscrotwm ${PREFIX}/bin
-	${INSTALL_SCRIPT} ${WRKSRC}/screenshot.sh ${EXAMPLESDIR}/
+.if !defined(NOPORTEXAMPLES)
+	${MKDIR} ${EXAMPLESDIR}
+.for conf in ${PORTEXAMPLES}
+	${INSTALL_DATA} ${WRKSRC}/${conf} ${EXAMPLESDIR}
+.endfor
+.endif
 
 .include <bsd.port.post.mk>

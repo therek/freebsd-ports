@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/multimedia/ptx-kmod/files/ptx.sh.in,v 1.1 2011/07/03 16:47:58 hrs Exp $
+# $FreeBSD: ports/multimedia/ptx-kmod/files/ptx.sh.in,v 1.2 2012/01/08 20:38:47 hrs Exp $
 
 # PROVIDE: ptx
 # REQUIRE: LOGIN abi
@@ -8,7 +8,7 @@
 . /etc/rc.subr
 
 name="ptx"
-rcvar=`set_rcvar`
+rcvar=ptx_enable
 start_cmd="ptx_start"
 stop_cmd="ptx_stop"
 

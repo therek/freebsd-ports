@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/synonym/files/synonym.sh.in,v 1.2 2006/02/20 20:47:15 dougb Exp $
+# $FreeBSD: ports/mail/synonym/files/synonym.sh.in,v 1.3 2010/03/27 00:13:26 dougb Exp $
 #
 # PROVIDE: synonym
 # REQUIRE: DAEMON
@@ -21,7 +21,7 @@ synonym_conffile=${synonym_conffile-"%%PREFIX%%/etc/synonym.conf"}
 . /etc/rc.subr
 
 name=synonym
-rcvar=`set_rcvar`
+rcvar=synonym_enable
 command=%%PREFIX%%/sbin/${name}
 
 load_rc_config ${name}

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openafs/files/afsd.in,v 1.1 2011/05/25 00:09:37 wxs Exp $
+# $FreeBSD: ports/net/openafs/files/afsd.in,v 1.2 2011/06/20 07:09:36 hrs Exp $
 #
 # PROVIDE: afsd
 # REQUIRE: afsserver named
@@ -28,7 +28,7 @@
 . /etc/rc.subr
 
 name="afsd"
-rcvar="afsd_enable"
+rcvar=afsd_enable
 
 command="%%PREFIX%%/sbin/${name}"
 command_args="-dynroot -fakestat-all -afsdb -memcache"

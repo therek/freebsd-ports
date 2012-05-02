@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/xrdp/files/xrdp.in,v 1.3 2010/02/16 15:12:20 pav Exp $
+# $FreeBSD: ports/net/xrdp/files/xrdp.in,v 1.4 2010/03/27 00:14:13 dougb Exp $
 #
 # REQUIRE: DAEMON
 # PROVIDE: xrdp sesman
@@ -9,7 +9,7 @@
 . /etc/rc.subr
 
 name="xrdp"
-rcvar=`set_rcvar`
+rcvar=xrdp_enable
 xrdp_daemons="xrdp xrdpsesman"
 
 # Read settings and set default values.
@@ -42,7 +42,7 @@ xrdp_cmd() {
     fi
     # Apply to all the daemons.
     for name in ${xrdp_daemons}; do
-	rcvar=$(set_rcvar)
+	rcvar=${name}_enable
 	if [ "${name}" = "xrdpsesman" ]; then
 		command="%%PREFIX%%/sbin/xrdp-sesman"
 		pidfile="/var/run/xrdp-sesman.pid"

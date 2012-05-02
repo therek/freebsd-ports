@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	CPAN-Reporter
-PORTVERSION=	1.2003
+PORTVERSION=	1.2004
 CATEGORIES=	devel
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DAGOLDEN
@@ -26,7 +26,7 @@ BUILD_DEPENDS=	p5-Archive-Tar>0:${PORTSDIR}/archivers/p5-Archive-Tar \
 		p5-Test-Reporter>1.54:${PORTSDIR}/devel/p5-Test-Reporter \
 		p5-Devel-Autoflush>0:${PORTSDIR}/devel/p5-Devel-Autoflush \
 		p5-Tee>0:${PORTSDIR}/devel/p5-Tee
-RUN_DEPENDS=	${BUILD_DEPENDS}
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	yes
 

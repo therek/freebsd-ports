@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/ng_ipacct/files/ng_ipacct.sh.in,v 1.4 2009/07/15 16:55:58 dougb Exp $
+# $FreeBSD: ports/net-mgmt/ng_ipacct/files/ng_ipacct.sh.in,v 1.5 2010/03/27 00:14:25 dougb Exp $
 #
 
 # PROVIDE: ng_ipacct
@@ -26,7 +26,7 @@
 . /etc/rc.subr
 
 name="ng_ipacct"
-rcvar=`set_rcvar`
+rcvar=ng_ipacct_enable
 
 # for debugging purpose you can append flag "-d" to these cmds
 # or even use dumb stubs.

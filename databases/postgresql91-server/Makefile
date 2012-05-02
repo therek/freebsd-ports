@@ -6,25 +6,32 @@
 #
 
 PORTNAME?=	postgresql
-DISTVERSION?=	9.1.2
+DISTVERSION?=	9.1.3
 CATEGORIES?=	databases
 MASTER_SITES=	${MASTER_SITE_PGSQL}
 MASTER_SITE_SUBDIR=	source/v${DISTVERSION}
 PKGNAMESUFFIX?=	-server
 
-MAINTAINER?=	girgen@FreeBSD.org
+MAINTAINER?=	crees@FreeBSD.org
 COMMENT?=	The most advanced open-source database available anywhere
 
-CONFLICTS?=	${PORTNAME}-client-8* \
-		${PORTNAME}-client-9.[02-9]* \
-		${PORTNAME}${PKGNAMESUFFIX}-8* \
-		${PORTNAME}${PKGNAMESUFFIX}-9.[02-9]
+CONFLICTS?=	${PORTNAME}-client-[^${PORTVERSION:R:R}].* \
+		${PORTNAME}${PKGNAMESUFFIX}-[^${PORTVERSION:R:R}].* \
+		${PORTNAME}-client-9.[^${PORTVERSION:R:E}].* \
+		${PORTNAME}${PKGNAMESUFFIX}-9.[^${PORTVERSION:R:E}].*
 
 WRKSRC=		${WRKDIR}/postgresql-${DISTVERSION}
 DIST_SUBDIR=	postgresql
 
-UNIQUENAME?=	${PORTNAME}91
+ICU_PATCHFILE?=	pg-910-icu-2011-09-22.diff.gz
+
+.if !defined(SLAVE_ONLY)
+UNIQUENAME?=	${PORTNAME}${DISTVERSION:R:S/.//}
 LATEST_LINK?=	${PKGNAMEPREFIX}${UNIQUENAME}${PKGNAMESUFFIX}
+.else # Contrib has different options from -client/-server
+UNIQUENAME?=    ${PORTNAME}${DISTVERSION:R:S/.//}${PKGNAMESUFFIX}
+LATEST_LINK?=	${PKGNAMEPREFIX}${UNIQUENAME}
+.endif
 
 PKGINSTALL?=	${PKGDIR}/pkg-install${PKGNAMESUFFIX}
 USE_BZIP2=	YES
@@ -51,12 +58,13 @@ CONFIGURE_ENV+=	INCLUDES="${INCLUDES}" \
 
 PLIST=		${PKGDIR}/pkg-plist${PKGNAMESUFFIX}
 
-BUILD_DIRS?=	src/timezone src/backend src/backend/utils/mb/conversion_procs \
+INSTALL_DIRS?=	src/timezone src/backend \
+		src/backend/utils/mb/conversion_procs \
 		src/backend/snowball src/backend/replication/libpqwalreceiver \
 		src/bin/initdb src/bin/pg_ctl \
-		src/bin/pg_controldata src/bin/pg_resetxlog src/pl
-
-INSTALL_DIRS?=	${BUILD_DIRS}
+		src/bin/pg_controldata src/bin/pg_resetxlog src/pl \
+		src/bin/pg_basebackup
+BUILD_DIRS?=	src/port ${INSTALL_DIRS}
 
 .if !defined(CLIENT_ONLY) && !defined(SLAVE_ONLY)
 SERVER_ONLY=	yes
@@ -72,16 +80,13 @@ GROUPS?=	${PG_GROUP}
 SUB_FILES+=	502.pgsql
 .endif
 
-.if !defined(SLAVE_ONLY)
-OPTIONS=	NLS "Use internationalized messages" on
-.endif
-
 .if !defined(CLIENT_ONLY)
 MAKE_ENV=	PATH=${PREFIX}/bin:${PATH}
 CONFIGURE_ENV+=	PATH=${PREFIX}/bin:${PATH}
 .endif
 
 .if !defined(SLAVE_ONLY)
+OPTIONS+=	NLS "Use internationalized messages" on
 OPTIONS+=	DTRACE "Build with DTrace probes (server only)" off
 OPTIONS+=	PAM "Build with PAM support (server only)" off
 OPTIONS+=	LDAP "Build with LDAP authentication support" off
@@ -114,11 +119,22 @@ CONFIGURE_ARGS+=--with-openssl
 .  if (defined(SERVER_ONLY) && defined(WITH_ICU)) || make(makesum)
 USE_AUTOTOOLS=	autoconf
 CONFIGURE_ARGS+=--with-icu
-PATCH_SITES+=	http://people.freebsd.org/~mm/patches/postgresql-icu/:icu
-PATCHFILES+=	pg-910-icu-2011-09-22.diff.gz:icu
+PATCH_SITES+=	http://people.freebsd.org/~crees/patches/postgresql-icu/:icu
+PATCHFILES+=	${ICU_PATCHFILE}:icu
+.    if defined(ICU_EXTRAPATCH)
+EXTRA_PATCHES+=	${ICU_EXTRAPATCH}
+.    endif
 LIB_DEPENDS+=	icudata.48:${PORTSDIR}/devel/icu
 .  endif
 .endif # !SLAVE_ONLY
+
+.if defined(WITH_OSSP_UUID)
+BUILD_DEPENDS+=	${LOCALBASE}/lib/libuuid.a:${PORTSDIR}/misc/ossp-uuid
+CONFIGURE_ARGS+=--with-ossp-uuid
+PLIST_SUB+=	OSSP=""
+.else
+PLIST_SUB+=	OSSP="@comment "
+.endif
 
 .include <bsd.port.pre.mk>
 
@@ -191,30 +207,41 @@ CONFIGURE_ARGS+=--with-gssapi
 LDFLAGS+=	-lgssapi
 LDFLAGS_SL+=	-lgssapi
 .endif
+.else
+CONFIGURE_ARGS+=--without-gssapi
 .endif
 
 .  if defined(WITH_MIT_KRB5)
+.   if defined(IGNORE_WITH_SRC_KRB5) && (exists(/usr/lib/libkrb5.so) || exists(/usr/bin/krb5-config))
+IGNORE=	requires that you remove heimdal's /usr/bin/krb5-config and /usr/lib/libkrb5.so*, and set NO_KERBEROS=true in /etc/src.conf to build successfully with MIT-KRB
+.   else
 CONFIGURE_ARGS+=--with-krb5
 # Allow defining a home built MIT Kerberos by setting KRB5_HOME
-.    if !(defined(KRB5_HOME) && exists(${KRB5_HOME}/lib/libgssapi_krb5.a) && exists(${KRB5_HOME}/bin/krb5-config))
+.    if defined(KRB5_HOME) && exists(${KRB5_HOME}/lib/libgssapi_krb5.a) && exists(${KRB5_HOME}/bin/krb5-config)
 LIB_DEPENDS+=	krb5.3:${PORTSDIR}/security/krb5
 .    endif
+.   endif
 .  endif
 
 .  if defined(WITH_HEIMDAL_KRB5)
 CONFIGURE_ARGS+=--with-krb5
 .  endif
 
+.  if defined(WITH_MIT_KRB5) && defined(WITH_HEIMDAL_KRB5)
+IGNORE=	has OPTIONS for MIT's and Heimdal Kerberos, which are mutually exclusive.  Please choose one or the other.
+.  endif
+
 .endif # !SLAVE_ONLY
 
 .if defined(CLIENT_ONLY)
-MAN1=		clusterdb.1 createdb.1 createlang.1 createuser.1   \
+MAN1?=		pg_basebackup.1
+MAN1+=		clusterdb.1 createdb.1 createlang.1 createuser.1   \
 		dropdb.1 droplang.1 dropuser.1 ecpg.1 initdb.1	   \
-		pg_basebackup.1 pg_config.1 pg_controldata.1 pg_ctl.1   \
+		pg_config.1 pg_controldata.1 pg_ctl.1		   \
 		pg_dump.1 pg_dumpall.1 pg_resetxlog.1 pg_restore.1 \
 		postgres.1 postmaster.1 psql.1 reindexdb.1 vacuumdb.1
 
-MAN3=		SPI_connect.3 SPI_copytuple.3 SPI_cursor_close.3 SPI_cursor_fetch.3 \
+MAN3+=		SPI_connect.3 SPI_copytuple.3 SPI_cursor_close.3 SPI_cursor_fetch.3 \
 		SPI_cursor_find.3 SPI_cursor_move.3 SPI_cursor_open.3 \
 		SPI_cursor_open_with_args.3 SPI_cursor_open_with_paramlist.3 \
 		SPI_exec.3 SPI_execp.3 SPI_execute.3 SPI_execute_plan.3 \
@@ -236,13 +263,16 @@ MAN3=		SPI_connect.3 SPI_copytuple.3 SPI_cursor_close.3 SPI_cursor_fetch.3 \
 		dblink_get_pkey.3 dblink_get_result.3 dblink_is_busy.3 \
 		dblink_open.3 dblink_send_query.3
 
-MAN7=		ABORT.7 ALTER_AGGREGATE.7 ALTER_COLLATION.7 ALTER_CONVERSION.7 \
-		ALTER_DATABASE.7 ALTER_EXTENSION.7 ALTER_DEFAULT_PRIVILEGES.7 \
-		ALTER_FOREIGN_TABLE.7 \
-		ALTER_DOMAIN.7 ALTER_FOREIGN_DATA_WRAPPER.7 ALTER_FUNCTION.7 ALTER_GROUP.7 \
-		ALTER_LARGE_OBJECT.7 ALTER_SERVER.7 \
-		ALTER_USER_MAPPING.7		ALTER_INDEX.7 ALTER_LANGUAGE.7 ALTER_OPERATOR_CLASS.7	      \
-		ALTER_OPERATOR_FAMILY.7 				      \
+MAN7?=		ALTER_COLLATION.7 ALTER_EXTENSION.7 ALTER_FOREIGN_TABLE.7 \
+		CREATE_COLLATION.7 CREATE_EXTENSION.7 CREATE_FOREIGN_TABLE.7 \
+		DROP_COLLATION.7 DROP_EXTENSION.7 DROP_FOREIGN_TABLE.7 \
+		SECURITY_LABEL.7
+MAN7+=		ABORT.7 ALTER_AGGREGATE.7 ALTER_CONVERSION.7		      \
+		ALTER_DATABASE.7 ALTER_DEFAULT_PRIVILEGES.7		      \
+		ALTER_DOMAIN.7 ALTER_FOREIGN_DATA_WRAPPER.7 ALTER_FUNCTION.7  \
+		ALTER_GROUP.7 ALTER_LARGE_OBJECT.7 ALTER_SERVER.7	      \
+		ALTER_USER_MAPPING.7 ALTER_INDEX.7 ALTER_LANGUAGE.7	      \
+		ALTER_OPERATOR_CLASS.7 ALTER_OPERATOR_FAMILY.7		      \
 		ALTER_ROLE.7						      \
 		ALTER_SCHEMA.7 ALTER_SEQUENCE.7 ALTER_TABLE.7		      \
 		ALTER_TEXT_SEARCH_CONFIGURATION.7			      \
@@ -253,49 +283,47 @@ MAN7=		ABORT.7 ALTER_AGGREGATE.7 ALTER_COLLATION.7 ALTER_CONVERSION.7 \
 		CHECKPOINT.7 CLOSE.7 CLUSTER.7 COMMENT.7 COMMIT.7	      \
 		COMMIT_PREPARED.7					      \
 		COPY.7 CREATE_AGGREGATE.7 CREATE_CAST.7			      \
-		CREATE_CONVERSION.7		      \
-		CREATE_DATABASE.7 CREATE_DOMAIN.7 CREATE_FOREIGN_DATA_WRAPPER.7 \
-		CREATE_FUNCTION.7	      \
+		CREATE_CONVERSION.7					      \
+		CREATE_DATABASE.7 CREATE_DOMAIN.7			      \
+		CREATE_FOREIGN_DATA_WRAPPER.7 CREATE_FUNCTION.7		      \
 		CREATE_GROUP.7 CREATE_INDEX.7 CREATE_LANGUAGE.7		      \
 		CREATE_OPERATOR.7 CREATE_OPERATOR_CLASS.7		      \
 		CREATE_OPERATOR_FAMILY.7 CREATE_ROLE.7			      \
 		CREATE_RULE.7 CREATE_SCHEMA.7 CREATE_SEQUENCE.7		      \
-		CREATE_SERVER.7 CREATE_TABLE.7 CREATE_TABLE_AS.7			      \
+		CREATE_SERVER.7 CREATE_TABLE.7 CREATE_TABLE_AS.7	      \
 		CREATE_TEXT_SEARCH_CONFIGURATION.7			      \
 		CREATE_TEXT_SEARCH_DICTIONARY.7				      \
 		CREATE_TEXT_SEARCH_PARSER.7				      \
 		CREATE_TEXT_SEARCH_TEMPLATE.7 CREATE_TRIGGER.7		      \
-		CREATE_TYPE.7 CREATE_USER.7 CREATE_USER_MAPPING.7 CREATE_VIEW.7 DEALLOCATE.7	      \
-		DECLARE.7 DELETE.7 DISCARD.7				      \
-		DO.7 DROP_AGGREGATE.7 DROP_CAST.7 DROP_CONVERSION.7		      \
-		DROP_DATABASE.7 DROP_DOMAIN.7 DROP_FOREIGN_DATA_WRAPPER.7 DROP_FUNCTION.7		      \
-		DROP_GROUP.7 DROP_INDEX.7 DROP_LANGUAGE.7		      \
+		CREATE_TYPE.7 CREATE_USER.7 CREATE_USER_MAPPING.7	      \
+		CREATE_VIEW.7 DEALLOCATE.7 DECLARE.7 DELETE.7 DISCARD.7	      \
+		DO.7 DROP_AGGREGATE.7 DROP_CAST.7 DROP_CONVERSION.7	      \
+		DROP_DATABASE.7 DROP_DOMAIN.7 DROP_FOREIGN_DATA_WRAPPER.7     \
+		DROP_FUNCTION.7 DROP_GROUP.7 DROP_INDEX.7 DROP_LANGUAGE.7     \
 		DROP_OPERATOR.7 DROP_OPERATOR_CLASS.7 DROP_OPERATOR_FAMILY.7  \
 		DROP_OWNED.7 DROP_ROLE.7 DROP_RULE.7			      \
-		DROP_SCHEMA.7 DROP_SEQUENCE.7 DROP_SERVER.7 DROP_TABLE.7		      \
+		DROP_SCHEMA.7 DROP_SEQUENCE.7 DROP_SERVER.7 DROP_TABLE.7      \
 		DROP_TEXT_SEARCH_CONFIGURATION.7			      \
 		DROP_TEXT_SEARCH_DICTIONARY.7				      \
 		DROP_TEXT_SEARCH_PARSER.7				      \
 		DROP_TEXT_SEARCH_TEMPLATE.7 DROP_TRIGGER.7		      \
-		DROP_TYPE.7 DROP_USER.7 DROP_USER_MAPPING.7 DROP_VIEW.7 END.7 EXECUTE.7	      \
-		EXPLAIN.7 FETCH.7 GRANT.7 INSERT.7 LISTEN.7 LOAD.7	      \
+		DROP_TYPE.7 DROP_USER.7 DROP_USER_MAPPING.7 DROP_VIEW.7 END.7 \
+		EXECUTE.7 EXPLAIN.7 FETCH.7 GRANT.7 INSERT.7 LISTEN.7 LOAD.7  \
 		LOCK.7 MOVE.7 NOTIFY.7 PREPARE.7 PREPARE_TRANSACTION.7	      \
 		REASSIGN_OWNED.7 REINDEX.7 RESET.7			      \
 		REVOKE.7 ROLLBACK.7 ROLLBACK_PREPARED.7 SELECT.7	      \
 		SELECT_INTO.7 SET.7					      \
 		SET_CONSTRAINTS.7 SET_ROLE.7 SET_TRANSACTION.7 SHOW.7	      \
 		SET_SESSION_AUTHORIZATION.7 START_TRANSACTION.7		      \
-		TABLE.7 TRUNCATE.7 UNLISTEN.7 UPDATE.7 VACUUM.7			      \
+		TABLE.7 TRUNCATE.7 UNLISTEN.7 UPDATE.7 VACUUM.7		      \
 		ALTER_OPERATOR.7 ALTER_TABLESPACE.7 ALTER_TYPE.7	      \
 		CREATE_TABLESPACE.7 DROP_TABLESPACE.7			      \
 		RELEASE_SAVEPOINT.7 ROLLBACK_TO_SAVEPOINT.7		      \
-		SAVEPOINT.7 VALUES.7 WITH.7 \
-		CREATE_COLLATION.7 CREATE_EXTENSION.7 CREATE_FOREIGN_TABLE.7 \
-		DROP_COLLATION.7 DROP_EXTENSION.7 DROP_FOREIGN_TABLE.7 \
-		SECURITY_LABEL.7
+		SAVEPOINT.7 VALUES.7 WITH.7
 .endif
 
-PLIST_SUB+=	PG_USER=$(PG_USER)
+PLIST_SUB+=	PG_USER=$(PG_USER) \
+		PG_GROUP=$(PG_GROUP)
 SUB_LIST+=	PG_GROUP=$(PG_GROUP) \
 		PG_USER=$(PG_USER) \
 		PG_UID=$(PG_UID)
@@ -307,16 +335,9 @@ pre-everything::
 
 .if !defined(NO_BUILD)
 
-pre-configure:
-.  if defined(WITH_MIT_KRB5) && defined(WITH_HEIMDAL_KRB5)
-	@${ECHO} "MIT's and Heimdal Kerberos are mutually exclusive."
-	@${ECHO} "Please choose one or the other."
-	@exit 1
-.  endif
-
 do-build:
 	@ cd ${WRKSRC}/src/backend && ${SETENV} ${MAKE_ENV} ${GMAKE} symlinks
-	@ for dir in src/port ${BUILD_DIRS}; do \
+	@ for dir in ${BUILD_DIRS}; do \
 		cd ${WRKSRC}/$${dir} && ${SETENV} ${MAKE_ENV} ${GMAKE}; \
 	done
 
@@ -354,6 +375,7 @@ do-install:
 	${MKDIR} ${PREFIX}/etc/periodic/daily ;\
 	${INSTALL_SCRIPT} ${WRKDIR}/502.pgsql \
 			${PREFIX}/etc/periodic/daily
+	${MKDIR} ${PREFIX}/${PG_USER} && ${CHOWN} ${PG_USER}:${PG_GROUP} ${PREFIX}/${PG_USER}
 .  endif # SERVER_ONLY
 .  if defined(CLIENT_ONLY)
 	@ cd ${WRKSRC}/src && ${SETENV} ${MAKE_ENV} ${GMAKE} install-local
@@ -361,9 +383,7 @@ do-install:
 	@ if [ -r ${PKGMESSAGE} ]; then \
 		${MKDIR} ${DOCSDIR} ;\
 		${INSTALL_DATA} ${PKGMESSAGE} ${DOCSDIR}/README${PKGNAMESUFFIX} ;\
-		${ECHO} "======================================================================" ;\
 		${CAT} ${PKGMESSAGE} ;\
-		${ECHO} "======================================================================" ;\
 	fi
 .endif # !NO_BUILD
 

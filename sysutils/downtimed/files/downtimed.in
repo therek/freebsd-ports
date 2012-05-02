@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/downtimed/files/downtimed.in,v 1.1 2010/12/23 16:41:19 skreuzer Exp $
+# $FreeBSD: ports/sysutils/downtimed/files/downtimed.in,v 1.2 2011/01/20 14:21:37 pav Exp $
 
 # PROVIDE: downtimed
 # REQUIRE: LOGIN syslogd
@@ -23,7 +23,7 @@
 . /etc/rc.subr
 
 name="downtimed"
-rcvar=`set_rcvar`
+rcvar=downtimed_enable
 
 command="%%PREFIX%%/sbin/${name}"
 pidfile="/var/run/${name}.pid"

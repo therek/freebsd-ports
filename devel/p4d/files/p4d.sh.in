@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/p4d/files/p4d.sh.in,v 1.1 2010/05/10 14:58:08 rene Exp $
+# $FreeBSD: ports/devel/p4d/files/p4d.sh.in,v 1.2 2011/05/15 02:49:06 dougb Exp $
 #
 
 # PROVIDE: p4d
@@ -28,7 +28,7 @@
 . /etc/rc.subr
 
 name="p4d"
-rcvar=`set_rcvar`
+rcvar=p4d_enable
 
 load_rc_config $name
 

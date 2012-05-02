@@ -7,7 +7,7 @@
 
 PORTNAME=	apel
 PORTVERSION=	${APEL_VER}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	editors elisp
 MASTER_SITES=	http://kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/dist/apel/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
@@ -35,7 +35,7 @@ MAKE_ARGS+=	PREFIX="${LOCALBASE}" \
 
 .include <bsd.port.pre.mk>
 
-.if (${EMACS_PORT_NAME} == "emacs23")
+.if ${EMACS_VER:C/\..*//} >= 23
 PLIST_SUB+=	EMACS23="" NOEMACS23="@comment "
 .else
 PLIST_SUB+=	EMACS23="@comment " NOEMACS23=""

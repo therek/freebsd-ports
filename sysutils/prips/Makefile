@@ -6,16 +6,18 @@
 #
 
 PORTNAME=	prips
-PORTVERSION=	0.9.7
+PORTVERSION=	0.9.9
 CATEGORIES=	sysutils
 MASTER_SITES=	http://devel.ringlet.net/sysutils/prips/
 
-MAINTAINER=	roam@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Prints IP subnet ranges by list or CIDR
 
 LICENSE=	GPLv2
+
 PORTDOCS=	README
 PLIST_FILES=	bin/prips
+
 MAN1=		prips.1
 MANCOMPRESSED=	yes
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/gearmand/files/gearmand.sh.in,v 1.5 2009/12/31 20:14:28 miwi Exp $
+# $FreeBSD: ports/devel/gearmand/files/gearmand.sh.in,v 1.6 2010/03/27 00:12:52 dougb Exp $
 #
 
 # PROVIDE: gearmand
@@ -9,7 +9,7 @@
 . /etc/rc.subr
 
 name="gearmand"
-rcvar=`set_rcvar`
+rcvar=gearmand_enable
 command="%%PREFIX%%/sbin/gearmand"
 
 load_rc_config "$name"

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/fetchmail/files/fetchmail.in,v 1.9 2010/03/27 00:13:15 dougb Exp $
+# $FreeBSD: ports/mail/fetchmail/files/fetchmail.in,v 1.10 2011/08/15 20:13:21 mandree Exp $
 #
 
 # PROVIDE: fetchmail
@@ -59,7 +59,7 @@
 . /etc/rc.subr
 
 name=fetchmail
-rcvar=`set_rcvar`
+rcvar=fetchmail_enable
 
 command=%%PREFIX%%/bin/${name}
 pidfile=/var/run/fetchmail/${name}.pid

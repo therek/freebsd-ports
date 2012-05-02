@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/boxbackup-devel/files/bbackupd.in,v 1.1 2011/09/16 20:54:53 zi Exp $
 #
 # PROVIDE: bbackupd
 # REQUIRE: NETWORKING
@@ -13,7 +13,7 @@
 . /etc/rc.subr
 
 name="bbackupd"
-rcvar=`set_rcvar`
+rcvar=bbackupd_enable
 
 load_rc_config $name
 

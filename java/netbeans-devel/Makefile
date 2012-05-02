@@ -24,11 +24,12 @@ PREFIXDIR=	${PREFIX}/netbeans-${PORTVERSION}
 
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
-#IGNORE=		No development version available right now. Please use java/netbeans instead.
+IGNORE=		No development version available right now. Please use java/netbeans instead.
 
 post-patch:
 	@${REINPLACE_CMD} -i "" -e '19s|#||;19s|/path/to/jdk|${JAVA_HOME}|' \
 	    ${WRKSRC}/etc/netbeans.conf
+	${RM} ${WRKSRC}/bin/netbeans.orig
 
 do-install:
 	@${MKDIR} ${PREFIXDIR}

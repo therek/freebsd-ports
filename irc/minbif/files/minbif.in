@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/minbif/files/minbif.in,v 1.1 2010/04/14 19:42:36 beat Exp $
 #
 # PROVIDE: minbif
 # REQUIRE: LOGIN
@@ -12,7 +12,7 @@
 . /etc/rc.subr 
 
 name="minbif"
-rcvar=`set_rcvar`
+rcvar=minbif_enable
 
 load_rc_config $name
 

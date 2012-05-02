@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/p5-Tail-Stat/files/tstatd.in,v 1.1 2010/11/09 09:02:35 jadawin Exp $
+# $FreeBSD: ports/sysutils/p5-Tail-Stat/files/tstatd.in,v 1.2 2011/05/15 02:49:14 dougb Exp $
 #
 # PROVIDE: tstatd
 # REQUIRE: DAEMON
@@ -25,7 +25,7 @@
 . /etc/rc.subr
 
 name="tstatd"
-rcvar=${name}_enable
+rcvar=tstatd_enable
 
 load_rc_config ${name}
 

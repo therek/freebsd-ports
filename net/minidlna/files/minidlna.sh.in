@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/net/minidlna/files/minidlna.sh.in,v 1.1 2010/12/14 06:11:04 mi Exp $
+# $FreeBSD: ports/net/minidlna/files/minidlna.sh.in,v 1.2 2010/12/18 19:57:07 mi Exp $
 #
 # PROVIDE: minidlna
 # REQUIRE: LOGIN
@@ -13,7 +13,7 @@
 . /etc/rc.subr
 
 name=minidlna
-rcvar=`set_rcvar`
+rcvar=minidlna_enable
 command=%%PREFIX%%/sbin/minidlna
 
 load_rc_config $name

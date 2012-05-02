@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/games/pvpgn/files/bnetd.sh.in,v 1.3 2009/07/15 16:55:43 dougb Exp $
+# $FreeBSD: ports/games/pvpgn/files/bnetd.sh.in,v 1.4 2010/03/27 00:13:03 dougb Exp $
 #
 
 # PROVIDE: bnetd
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name=bnetd
-rcvar=`set_rcvar`
+rcvar=bnetd_enable
 
 command=%%PREFIX%%/sbin/bnetd
 pidfile=/var/run/pvpgn/bnetd.pid

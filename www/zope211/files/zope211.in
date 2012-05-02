@@ -2,7 +2,7 @@
 #
 # Startup script for Zope server.
 #
-# $FreeBSD: ports/www/zope211/files/zope211.in,v 1.2 2010/03/27 00:15:22 dougb Exp $
+# $FreeBSD: ports/www/zope211/files/zope211.in,v 1.3 2011/05/15 02:49:17 dougb Exp $
 #
 # PROVIDE: zope211
 # REQUIRE: DAEMON
@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name="zope211"
-rcvar=`set_rcvar`
+rcvar=zope211_enable
 
 zope211ctl () {
     for instance in $zope211_instances; do

@@ -1,6 +1,6 @@
 #!/bin/sh 
 #
-# $FreeBSD: ports/databases/cego/files/cego.in,v 1.1 2011/04/24 09:54:22 bapt Exp $
+# $FreeBSD: ports/databases/cego/files/cego.in,v 1.2 2011/05/15 02:49:04 dougb Exp $
 #
 
 # PROVIDE: cego
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name="cego"
-rcvar=`set_rcvar`
+rcvar=cego_enable
 
 command="%%PREFIX%%/bin/cego"
 

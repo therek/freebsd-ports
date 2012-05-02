@@ -6,11 +6,12 @@
 #
 
 PORTNAME=	ffmpeg
-DISTVERSION=	2011-10-09
-PORTREVISION=	1
+DISTVERSION=	2012-01-22
+PORTREVISION=	3
 CATEGORIES=	multimedia audio ipv6 net
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	mm/ffmpeg
+PKGNAMESUFFIX=	-devel
 DISTNAME=	ffmpeg-HEAD-${GIT_SUFFIX}
 
 MAINTAINER=	mm@FreeBSD.org
@@ -23,7 +24,7 @@ CONFLICTS=	ffmpeg-0.*
 
 LATEST_LINK=	ffmpeg-devel
 
-GIT_SNAPSHOT=	9719f25e7b5a7222ca4a1e0966bb35f363752814
+GIT_SNAPSHOT=	b4ec645f471faa5142ce492e39c7527eddda46de
 GIT_SUFFIX=	${GIT_SNAPSHOT:C/^(.......).*$/\1/g}
 
 USE_XZ=		yes
@@ -37,17 +38,24 @@ OPTIONS=	AACPLUS	"Enable aac via libaacplus" off \
 		ALSA	"Enable alsa input/output device" off \
 		AMR_NB	"AMR Narrow Band audio encoder (opencore)" off \
 		AMR_WB	"AMR Wide Band audio decoder (opencore)" off \
+		ASS	"Subtitles rendering via libass" off \
+		CDIO	"Audio CD grabbing with libcdio" off \
 		CELT	"Enable CELT/Opus decoding via libcelt" off \
 		DIRAC	"Dirac codec via libdirac" off \
 		FAAC	"FAAC mp4/aac audio encoder" off \
 		FFSERVER "Build and install ffserver" on \
 		FREETYPE "Text on top of video frames (freetype2)" on \
 		FREI0R	"Frei0r wrapper filter" on \
+		GNUTLS	"GnuTLS support (disables OpenSSL)" on \
 		GSM	"GSM audio codec" off \
 		LAME	"LAME MP3 encoder" off \
+		MODPLUG	"Mod support via libmodplug" off \
+		OPENAL	"OpenAL 1.1 capture support" off \
 		OPENCV	"OpenCV video filtering support" on \
 		OPENJPEG	"JPEG 2000 decoder" off \
+		OPENSSL	"OpenSSL support" off \
 		OPTIMIZED_CFLAGS "Additional optimizations" off \
+		PULSE	"Pulseaudio input via libpulse" off \
 		RTMP	"RTMP[E] support via librtmp" off \
 		SCHROEDINGER	"Dirac codec via libschroedinger" on \
 		SDL	"SDL support (build ffplay)" off \
@@ -88,22 +96,24 @@ COMPAT_HEADERS=libavcodec/avcodec.h \
 	libpostproc/postprocess.h \
 	libswscale/swscale.h
 
+.include <bsd.port.options.mk>
+
+.if defined(WITH_OPENSSL) && !defined(WITH_GNUTLS)
+USE_OPENSSL=	yes
+FFMPEG_NONFREE=	yes
+.endif
+
 .include <bsd.port.pre.mk>
 
 CONFIGURE_ENV+=	COMPILER_PATH=${LOCALBASE}/bin
 MAKE_ENV+=	COMPILER_PATH=${LOCALBASE}/bin
-
-.if ${ARCH} == "sparc64"
-BROKEN=		Does not compile on sparc64
-.elif ${ARCH} == "i386"
-BROKEN=		does not build
-.endif
 
 CONFIGURE_ARGS+=--prefix="${PREFIX}" \
 		--mandir="${PREFIX}/man" \
 		--enable-shared \
 		--enable-gpl \
 		--enable-postproc \
+		--enable-avconv \
 		--enable-avfilter \
 		--enable-pthreads \
 		--enable-x11grab \
@@ -195,6 +205,22 @@ CONFIGURE_ARGS+=	--enable-libopencore-amrwb
 CONFIGURE_ARGS+=	--disable-libopencore-amrwb
 .endif
 
+# ass
+.if defined(WITH_ASS)
+LIB_DEPENDS+=	ass.5:${PORTSDIR}/multimedia/libass
+CONFIGURE_ARGS+=	--enable-libass
+.else
+CONFIGURE_ARGS+=	--disable-libass
+.endif
+
+# cdio
+.if defined(WITH_CDIO)
+LIB_DEPENDS+=	cdio.13:${PORTSDIR}/sysutils/libcdio
+CONFIGURE_ARGS+=	--enable-libcdio
+.else
+CONFIGURE_ARGS+=	--disable-libcdio
+.endif
+
 # celt
 .if defined(WITH_CELT)
 LIB_DEPENDS+=	celt0.2:${PORTSDIR}/audio/celt
@@ -248,6 +274,14 @@ CONFIGURE_ARGS+=	--enable-frei0r
 CONFIGURE_ARGS+=	--disable-frei0r
 .endif
 
+# GnuTLS
+.if !defined(WITHOUT_GNUTLS)
+LIB_DEPENDS+=	gnutls.47:${PORTSDIR}/security/gnutls
+CONFIGURE_ARGS+=	--enable-gnutls
+.else
+CONFIGURE_ARGS+=	--disable-gnutls
+.endif
+
 # gsm
 .if defined(WITH_GSM)
 LIB_DEPENDS+=	gsm.1:${PORTSDIR}/audio/gsm
@@ -262,6 +296,22 @@ LIB_DEPENDS+=	mp3lame.0:${PORTSDIR}/audio/lame
 CONFIGURE_ARGS+=	--enable-libmp3lame
 .else
 CONFIGURE_ARGS+=	--disable-libmp3lame
+.endif
+
+# modplug
+.if defined(WITH_MODPLUG)
+LIB_DEPENDS+=	 modplug.1:${PORTSDIR}/audio/libmodplug
+CONFIGURE_ARGS+=	--enable-libmodplug
+.else
+CONFIGURE_ARGS+=	--disable-libmodplug
+.endif
+
+# OpenAL
+.if defined(WITH_OPENAL)
+LIB_DEPENDS+=	openal.1:${PORTSDIR}/audio/openal-soft
+CONFIGURE_ARGS+=	--enable-openal
+.else
+CONFIGURE_ARGS+=	--disable-openal
 .endif
 
 # opencv
@@ -280,6 +330,14 @@ CONFIGURE_ARGS+=	--enable-libopenjpeg
 CONFIGURE_ARGS+=	--disable-libopenjpeg
 .endif
 
+# PulseAudio
+.if defined(WITH_PULSE)
+LIB_DEPENDS+=	pulse.0:${PORTSDIR}/audio/pulseaudio
+CONFIGURE_ARGS+=	--enable-libpulse
+.else
+CONFIGURE_ARGS+=	--disable-libpulse
+.endif
+
 # rtmp
 .if defined(WITH_RTMP)
 LIB_DEPENDS+=	rtmp.0:${PORTSDIR}/multimedia/rtmpdump
@@ -290,7 +348,7 @@ CONFIGURE_ARGS+=	--disable-librtmp
 
 # schroedinger
 .if !defined(WITHOUT_SCHROEDINGER)
-LIB_DEPENDS+=	schroedinger-1.0.10:${PORTSDIR}/multimedia/schroedinger
+LIB_DEPENDS+=	schroedinger-1.0.11:${PORTSDIR}/multimedia/schroedinger
 CONFIGURE_ARGS+=	--enable-libschroedinger
 .else
 CONFIGURE_ARGS+=	--disable-libschroedinger
@@ -369,7 +427,7 @@ CONFIGURE_ARGS+=	--disable-libvorbis
 
 # vp8
 .if !defined(WITHOUT_VP8)
-LIB_DEPENDS+=	vpx.0:${PORTSDIR}/multimedia/libvpx
+LIB_DEPENDS+=	vpx.1:${PORTSDIR}/multimedia/libvpx
 CONFIGURE_ARGS+=	--enable-libvpx
 .else
 CONFIGURE_ARGS+=	--disable-libvpx
@@ -420,7 +478,7 @@ pre-configure:
 post-patch:
 # {C,LD}FLAGS safeness
 	@${REINPLACE_CMD} -e 's|$$(LIBDIR)/pkgconfig|${PREFIX}/libdata/pkgconfig|' \
-		${WRKSRC}/subdir.mak
+		${WRKSRC}/library.mak
 	@${REINPLACE_CMD} -e 's|/etc/ffserver.conf|${PREFIX}/etc/ffserver.conf|' \
 		${WRKSRC}/ffserver.c
 	@${REINPLACE_CMD} -E \

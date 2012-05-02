@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/pgbouncer/files/pgbouncer.sh.in,v 1.4 2010/03/27 00:12:48 dougb Exp $
+# $FreeBSD: ports/databases/pgbouncer/files/pgbouncer.sh.in,v 1.5 2011/01/15 00:06:46 mm Exp $
 #
 
 # PROVIDE: pgbouncer
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name="pgbouncer"
-rcvar=`set_rcvar`
+rcvar=pgbouncer_enable
 
 load_rc_config "$name"
 : ${pgbouncer_enable="NO"}

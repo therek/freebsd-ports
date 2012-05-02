@@ -88,6 +88,9 @@
     SUBDIR += hs-gtksourceview2
     SUBDIR += hs-pango
     SUBDIR += hs-vte
+    SUBDIR += hs-wx
+    SUBDIR += hs-wxcore
+    SUBDIR += hs-wxdirect
     SUBDIR += irrlicht
     SUBDIR += itk
     SUBDIR += iwidgets
@@ -113,6 +116,7 @@
     SUBDIR += libsexymm
     SUBDIR += libwnck
     SUBDIR += libwnck-reference
+    SUBDIR += libxaw3dxft
     SUBDIR += libxfce4gui
     SUBDIR += libzvt
     SUBDIR += linux-f10-blt
@@ -173,9 +177,9 @@
     SUBDIR += p5-Tk-Getopt
     SUBDIR += p5-Tk-HistEntry
     SUBDIR += p5-Tk-JComboBox
+    SUBDIR += p5-Tk-ResizeButton
     SUBDIR += p5-Tk-Role-Dialog
     SUBDIR += p5-Tk-Role-HasWidgets
-    SUBDIR += p5-Tk-ResizeButton
     SUBDIR += p5-Tk-Splashscreen
     SUBDIR += p5-Tk-Sugar
     SUBDIR += p5-Tk-TableMatrix
@@ -191,6 +195,7 @@
     SUBDIR += phat
     SUBDIR += plib
     SUBDIR += pure-gtk
+    SUBDIR += pure-tk
     SUBDIR += py-Pmw
     SUBDIR += py-SciParam
     SUBDIR += py-fltk

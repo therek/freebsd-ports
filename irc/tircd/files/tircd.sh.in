@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD: ports/irc/tircd/files/tircd.sh.in,v 1.1 2010/03/18 01:02:40 amdmi3 Exp $
+# $FreeBSD: ports/irc/tircd/files/tircd.sh.in,v 1.2 2010/03/27 00:13:06 dougb Exp $
 #
 # PROVIDE: tircd
 # REQUIRE: LOGIN syslogd
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="tircd"
-rcvar=${name}_enable
+rcvar=tircd_enable
 
 command="%%PREFIX%%/bin/$name.pl"
 command_args="> /dev/null &"

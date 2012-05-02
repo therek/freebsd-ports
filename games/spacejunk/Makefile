@@ -7,7 +7,7 @@
 
 PORTNAME=	spacejunk
 PORTVERSION=	1.0.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -38,7 +38,7 @@ DESKTOP_ENTRIES=	"Spacejunk" \
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} == "sparc64"
-BROKEN=		Doesn't compile on sparc64"
+BROKEN=		Doesn't compile on sparc64
 .endif
 
 AUTOTOOLSFILES=	aclocal.m4

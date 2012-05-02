@@ -19,7 +19,12 @@
     SUBDIR += R-cran-RColorBrewer
     SUBDIR += R-cran-colorspace
     SUBDIR += R-cran-diagram
+    SUBDIR += R-cran-dichromat
     SUBDIR += R-cran-ggplot2
+    SUBDIR += R-cran-munsell
+    SUBDIR += R-cran-pixmap
+    SUBDIR += R-cran-rgdal
+    SUBDIR += R-cran-rtiff
     SUBDIR += R-cran-shape
     SUBDIR += SciPlot
     SUBDIR += a2png
@@ -299,6 +304,7 @@
     SUBDIR += gracula
     SUBDIR += grads
     SUBDIR += grafx2
+    SUBDIR += graphite2
     SUBDIR += graphopt
     SUBDIR += graphviz
     SUBDIR += grx
@@ -584,6 +590,7 @@
     SUBDIR += opengtl
     SUBDIR += openjpeg
     SUBDIR += openjump
+    SUBDIR += opennurbs
     SUBDIR += openrm
     SUBDIR += optar
     SUBDIR += optipng
@@ -816,6 +823,7 @@
     SUBDIR += py-seqdiag
     SUBDIR += py-sorl-thumbnail
     SUBDIR += py-soya3d
+    SUBDIR += py-stl
     SUBDIR += py-visual
     SUBDIR += py-webcolors
     SUBDIR += pygts
@@ -884,6 +892,7 @@
     SUBDIR += s10sh
     SUBDIR += sage
     SUBDIR += sam2p
+    SUBDIR += sampleicc
     SUBDIR += sane-backends
     SUBDIR += sane-epkowa
     SUBDIR += sane-frontends
@@ -920,7 +929,6 @@
     SUBDIR += squish
     SUBDIR += sswf
     SUBDIR += stamp
-    SUBDIR += stl2pov
     SUBDIR += structuresynth
     SUBDIR += svg2pdf
     SUBDIR += svg2png

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/dbmail20/files/dbmail-imapd.sh.in,v 1.2 2009/07/15 16:55:46 dougb Exp $
+# $FreeBSD: ports/mail/dbmail20/files/dbmail-imapd.sh.in,v 1.3 2010/03/27 00:13:11 dougb Exp $
 #
 
 # PROVIDE: dbmail-imapd
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name=dbmail_imapd
-rcvar=`set_rcvar`
+rcvar=dbmail_imapd_enable
 
 command=%%PREFIX%%/sbin/dbmail-imapd
 pidfile=/var/run/dbmail-imapd.pid

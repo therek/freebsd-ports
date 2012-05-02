@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/memcached12/files/memcached.in,v 1.2 2010/04/19 13:46:24 mm Exp $
+# $FreeBSD: ports/databases/memcached12/files/memcached.in,v 1.3 2010/04/20 07:02:59 mm Exp $
 #
 # PROVIDE: memcached
 # REQUIRE: LOGIN
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="memcached"
-rcvar=${name}_enable
+rcvar=memcached_enable
 
 load_rc_config ${name}
 

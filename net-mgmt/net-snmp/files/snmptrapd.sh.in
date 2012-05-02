@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/net-snmp/files/snmptrapd.sh.in,v 1.1 2006/05/08 05:00:27 clsung Exp $
+# $FreeBSD: ports/net-mgmt/net-snmp/files/snmptrapd.sh.in,v 1.2 2010/03/27 00:14:24 dougb Exp $
 #
 # PROVIDE: snmptrapd
 # REQUIRE: DAEMON
@@ -25,7 +25,7 @@ if [ ! -z "$net_snmptrapd_enable" ]; then
 fi
 
 name=snmptrapd
-rcvar=`set_rcvar`
+rcvar=snmptrapd_enable
 
 command=%%PREFIX%%/sbin/${name}
 pidfile=/var/run/${name}.pid

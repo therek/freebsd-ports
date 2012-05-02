@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/print/acroreadwrapper/files/linux_adobe.sh.in,v 1.1 2011/05/29 17:22:25 hrs Exp $
 
 # PROVIDE: linux_adobe
 # REQUIRE: LOGIN abi
@@ -8,7 +8,7 @@
 . /etc/rc.subr
 
 name="linux_adobe"
-rcvar=`set_rcvar`
+rcvar=linux_adobe_enable
 start_cmd="linux_adobe_start"
 stop_cmd="linux_adobe_stop"
 

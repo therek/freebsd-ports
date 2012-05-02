@@ -6,12 +6,12 @@
 #
 
 PORTNAME=	xbmc
-PORTVERSION=	58
-PORTREVISION=	1
+PORTVERSION=	65
+PORTREVISION=	4
 CATEGORIES=	multimedia
 MASTER_SITES=	LOCAL/nox
 PKGNAMESUFFIX=	-pvr-ppa-odk
-DISTNAME=	opdenkamp-${PORTNAME}-Eden-pvr_beta1-0-g${GITHASH}
+DISTNAME=	opdenkamp-${PORTNAME}-Eden-pvr_beta2-0-g${GITHASH}
 
 MAINTAINER=	nox@FreeBSD.org
 COMMENT=	XBMC is an award winning media center application - PVR branch
@@ -29,7 +29,7 @@ BUILD_DEPENDS=	enca:${PORTSDIR}/converters/enca \
 
 LIB_DEPENDS=	asound.2:${PORTSDIR}/audio/alsa-lib	\
 		boost_thread.4:${PORTSDIR}/devel/boost-libs \
-		cdio.12:${PORTSDIR}/sysutils/libcdio	\
+		cdio.13:${PORTSDIR}/sysutils/libcdio	\
 		curl.6:${PORTSDIR}/ftp/curl \
 		dbus-1.3:${PORTSDIR}/devel/dbus \
 		enca.5:${PORTSDIR}/converters/enca \
@@ -46,7 +46,7 @@ LIB_DEPENDS=	asound.2:${PORTSDIR}/audio/alsa-lib	\
 		modplug:${PORTSDIR}/audio/libmodplug \
 		mpeg2:${PORTSDIR}/multimedia/libmpeg2 \
 		ogg.7:${PORTSDIR}/audio/libogg \
-		pcre.0:${PORTSDIR}/devel/pcre \
+		pcre.1:${PORTSDIR}/devel/pcre \
 		png.6:${PORTSDIR}/graphics/png \
 		samplerate.1:${PORTSDIR}/audio/libsamplerate \
 		smbclient.0:${PORTSDIR}/net/samba-libsmbclient	\
@@ -63,7 +63,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/alsa-lib/libasound_module_pcm_oss.so:${PORTSDIR}/a
 		${PYTHON_SITELIBDIR}/PIL/__init__.py:${PORTSDIR}/graphics/py-imaging \
 		xdpyinfo:${PORTSDIR}/x11/xdpyinfo
 
-GITHASH=	84817e6
+GITHASH=	cbe2cf3
 WRKSRC=		${WRKDIR}/opdenkamp-${PORTNAME}-${GITHASH}
 FETCH_ARGS=	-Fpr
 USE_GMAKE=	yes
@@ -134,7 +134,7 @@ CONFIGURE_ARGS+=	--disable-avahi
 
 .if !defined(WITHOUT_LIBBLURAY)
 CONFIGURE_ARGS+=	--enable-libbluray
-LIB_DEPENDS+=	bluray.0:${PORTSDIR}/multimedia/libbluray
+LIB_DEPENDS+=	bluray.1:${PORTSDIR}/multimedia/libbluray
 .else
 CONFIGURE_ARGS+=	--disable-libbluray
 .endif
@@ -221,8 +221,6 @@ post-patch:
 		${WRKSRC}/lib/timidity/configure.in \
 		${WRKSRC}/xbmc/screensavers/rsxs-0.9/acinclude.m4
 	${RM} ${WRKSRC}/addons/library.xbmc.addon/libXBMC_addon.h.orig
-	${RM} ${WRKSRC}/addons/library.xbmc.gui/libXBMC_gui.h.orig
-	${RM} ${WRKSRC}/addons/library.xbmc.pvr/libXBMC_pvr.h.orig
 # XXX somehow there are still references to linux libraries, if you find
 # where they come from please tell us!
 .if ${ARCH} == "amd64"

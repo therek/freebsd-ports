@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	firefox36-i18n
-PORTVERSION=	3.6.25
+PORTVERSION=	3.6.27
 CATEGORIES=	www
 MASTER_SITE_SUBDIR=	firefox/releases/${PORTVERSION}/linux-i686/xpi
 PKGNAMEPREFIX=
@@ -46,9 +46,9 @@ pre-everything::
 	@${ECHO_CMD}
 	@${ECHO_CMD} "Please define FIREFOX_I18N_ALL to install all languages."
 	@${ECHO_CMD}
-	@${MKDIR} ${WRKSRC}
 
 do-extract:
+	@${MKDIR} ${WRKSRC}
 	@for lang in ${FIREFOX_I18N_}; do \
 		if ! (${EXTRACT_CMD} ${_DISTDIR}/$$lang.xpi -d ${WRKSRC}/langpack3-$$lang@firefox.mozilla.org);\
 		then \

@@ -6,16 +6,18 @@
 #
 
 PORTNAME=	Parse-Perl
-PORTVERSION=	0.005
+PORTVERSION=	0.007
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	gslin@gslin.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interpret string as Perl source
 
+RUN_DEPENDS=	p5-Devel-CallChecker>=0:${PORTSDIR}/devel/p5-Devel-CallChecker
+BUILD_DEPENDS:=	${RUN_DEPENDS}
+
 PERL_CONFIGURE=	yes
-USE_PERL5_RUN=	5.8.4+
 
 MAN3=		Parse::Perl.3 \
 		Parse::Perl::CopHintsHash.3 \

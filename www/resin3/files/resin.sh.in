@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/resin3/files/resin.sh.in,v 1.6 2006/08/09 21:18:10 hq Exp $
+# $FreeBSD: ports/www/resin3/files/resin.sh.in,v 1.7 2006/08/28 21:25:05 hq Exp $
 #
 
 # PROVIDE: %%APP_NAME%%
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=%%APP_NAME%%
-rcvar=`set_rcvar`
+rcvar=%%APP_NAME%%_enable
 
 command="%%PREFIX%%/sbin/%%APP_NAME%%ctl"
 command_args="start"

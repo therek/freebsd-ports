@@ -7,11 +7,10 @@
 
 PORTNAME=	nss
 PORTVERSION=	${_MAJOR}.${_MINOR}.${_PATCH}
-PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_MOZILLA}
-MASTER_SITE_SUBDIR=	security/nss/releases/NSS_${PORTVERSION:S/./_/g}_WITH_CKBI_${CKBI_VER:S/./_/}_RTM/src
-DISTNAME=	nss-${PORTVERSION}.with.ckbi.${CKBI_VER}
+MASTER_SITE_SUBDIR=	security/nss/releases/NSS_${PORTVERSION:S/./_/g}_RTM/src
+DISTNAME=	nss-${PORTVERSION}
 
 MAINTAINER=	gecko@FreeBSD.org
 COMMENT=	Libraries to support development of security-enabled applications
@@ -22,10 +21,8 @@ LIB_DEPENDS=	nspr4.1:${PORTSDIR}/devel/nspr \
 		sqlite3.8:${PORTSDIR}/databases/sqlite3
 
 _MAJOR=	3
-_MINOR=	12
-_PATCH=	11
-
-CKBI_VER=	1.88
+_MINOR=	13
+_PATCH=	2
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/mozilla/security/nss
 
@@ -40,9 +37,9 @@ CFLAGS+=	-I${LOCALBASE}/include/nspr -L${LOCALBASE}/lib
 
 DIST=		${WRKSRC:H:H}/dist
 
-EXTERNALS=	CVS dbm security/nss/cmd/zlib nsprpub security/dbm
+EXTERNALS=	CVS dbm security/nss/lib/zlib nsprpub security/dbm
 EXTRACT_AFTER_ARGS=| ${TAR} -xf -	\
-	${EXTERNALS:C,^,--exclude ${DISTNAME}/mozilla/,}
+	${EXTERNALS:C,^,--exclude ${PORTNAME}-${PORTVERSION}/mozilla/,}
 
 BINS=${DIST}/${OPSYS}${OSREL}_OPT.OBJ
 
@@ -51,10 +48,11 @@ INSTALL_BINS=	certcgi certutil checkcert cmsutil crlutil derdump makepqg \
 		p7verify pk12util rsaperf shlibsign signtool signver \
 		ssltap strsclnt symkeyutil vfychain vfyserv
 
-test:
+check regression-test test:
 	cd ${WRKSRC}/tests;	\
 		${SETENV} PATH="${BINS}/bin:${PATH}" \
 		    LD_LIBRARY_PATH="${BINS}/lib" \
+		    ${MAKE_ENV}	\
 			./all.sh
 	@if ${GREP} -F '>Failed<'	\
 	    ${WRKSRC:H:H}/tests_results/security/*/results.html; then	\
@@ -82,6 +80,8 @@ post-patch:
 		${XARGS} ${REINPLACE_CMD} -e 's|"nspr.h"|<nspr.h>|'
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' \
 		${WRKSRC}/lib/softoken/manifest.mn
+	${FIND} ${WRKSRC}/tests -name '*.sh' | ${XARGS} ${GREP} -l -F '/bin/bash' | \
+		${XARGS} ${REINPLACE_CMD} -e 's|#! */bin/bash|#!${SH}|'
 
 do-install:
 	${MKDIR} ${PREFIX}/include/nss/nss ${PREFIX}/lib/nss

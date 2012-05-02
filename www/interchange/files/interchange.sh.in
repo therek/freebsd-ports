@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/interchange/files/interchange.sh.in,v 1.1 2007/02/02 16:46:22 nivit Exp $
+# $FreeBSD: ports/www/interchange/files/interchange.sh.in,v 1.2 2010/03/27 00:15:14 dougb Exp $
 #
 
 # PROVIDE: interchange
@@ -21,7 +21,7 @@
 . /etc/rc.subr
 
 name="interchange"
-rcvar=`set_rcvar`
+rcvar=interchange_enable
 
 interchange_enable=${interchange_enable:-"NO"}
 interchange_config=${interchange_config:-"%%PREFIX%%/interchange/interchange.cfg"}

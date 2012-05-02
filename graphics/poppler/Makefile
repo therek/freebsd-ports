@@ -7,7 +7,7 @@
 #
 
 PORTNAME=	poppler
-PORTVERSION=	0.18.0
+PORTVERSION=	0.18.4
 PORTREVISION?=	0
 CATEGORIES=	graphics print
 MASTER_SITES=	http://poppler.freedesktop.org/
@@ -57,6 +57,7 @@ CONFIGURE_ARGS+=--disable-poppler-glib
 
 .if ${SLAVEPORT}=="qt4"
 CONFIGURE_ARGS+=--enable-poppler-qt4
+CONFIGURE_ENV+=	ac_cv_prog_MOCQT4=${LOCALBASE}/bin/moc-qt4
 USE_QT_VER+=	4
 QT_COMPONENTS=	gui corelib xml qtestlib moc_build
 # It requires poppler/splash to be built unless you disable splash backend
@@ -102,6 +103,8 @@ LIB_DEPENDS+=	openjpeg.2:${PORTSDIR}/graphics/openjpeg
 .endif
 
 post-patch:
+	@${REINPLACE_CMD} -e 's|-version-info 19:0:0|-version-info 18:0:0|g' \
+		${WRKSRC}/poppler/Makefile.in
 .if defined(SLAVEPORT) && ${SLAVEPORT}=="qt4"
 	@${REINPLACE_CMD} -e 's|MOCQT4=`.*|MOCQT4="${LOCALBASE}/bin/moc-qt4"|' \
 		${WRKSRC}/configure

@@ -6,7 +6,8 @@
 #
 
 PORTNAME=	musicpd
-PORTVERSION=	0.16.6
+PORTVERSION=	0.16.7
+PORTREVISION=	1
 CATEGORIES=	audio ipv6
 MASTER_SITES=	SF/${PORTNAME}/mpd/${PORTVERSION}
 DISTNAME=	mpd-${PORTVERSION}
@@ -60,7 +61,8 @@ OPTIONS=	ID3TAG          "Support ID3 v1/v2 tags"                on \
 		SNDFILE		"Adds support for libsndfile"		on \
 		LAME		"Support for MP3 Icecast Streams"	off \
 		HTTPD		"Support for httpd output streaming"	off \
-		SAMPLERATE	"Support sample rate conversion"	off
+		SAMPLERATE	"Support sample rate conversion"	off \
+		CUE		"Support embedded cue sheets"		off
 
 MPDDIR?=	/var/mpd
 MPDUSER?=	mpd
@@ -144,7 +146,7 @@ CONFIGURE_ARGS+=--enable-bzip2 \
 		--enable-zip \
 		--enable-iso9660
 LIB_DEPENDS+=	zzip.13:${PORTSDIR}/devel/zziplib \
-		iso9660.7:${PORTSDIR}/sysutils/libcdio
+		iso9660.8:${PORTSDIR}/sysutils/libcdio
 .endif
 
 .if defined(WITHOUT_FFMPEG)
@@ -226,6 +228,13 @@ CONFIGURE_ARGS+=--disable-lsr
 .else
 LIB_DEPENDS+=	samplerate.1:${PORTSDIR}/audio/libsamplerate
 CONFIGURE_ARGS+=--enable-lsr
+.endif
+
+.if defined(WITH_CUE)
+CONFIGURE_ARGS+=--enable-cue
+LIB_DEPENDS+=	cue:${PORTSDIR}/textproc/libcue
+.else
+CONFIGURE_ARGS+=--disable-cue
 .endif
 
 post-patch:

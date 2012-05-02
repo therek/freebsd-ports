@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/comms/thebridge/files/tbd.in,v 1.3 2009/07/15 16:55:39 dougb Exp $
+# $FreeBSD: ports/comms/thebridge/files/tbd.in,v 1.4 2010/03/27 00:12:45 dougb Exp $
 #
 
 # PROVIDE: tbd
@@ -20,7 +20,7 @@ tbd_enable=${tbd_enable-"NO"}
 . /etc/rc.subr
 
 name="tbd"
-rcvar=`set_rcvar`
+rcvar=tbd_enable
 command="%%PREFIX%%/libexec/tbd"
 
 load_rc_config $name

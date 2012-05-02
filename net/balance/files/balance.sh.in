@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/balance/files/balance.sh.in,v 1.4 2009/08/04 14:07:13 wxs Exp $
+# $FreeBSD: ports/net/balance/files/balance.sh.in,v 1.5 2010/03/27 00:13:34 dougb Exp $
 #
 
 # PROVIDE: balance
@@ -23,7 +23,7 @@
 . /etc/rc.subr
 
 name=balance
-rcvar=`set_rcvar`
+rcvar=balance_enable
 command=%%PREFIX%%/bin/balance
 
 start_cmd=start_cmd

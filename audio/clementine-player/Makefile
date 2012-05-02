@@ -7,6 +7,7 @@
 
 PORTNAME=	clementine
 PORTVERSION=	1.0.0
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	GOOGLE_CODE
 PKGNAMESUFFIX=	-player
@@ -18,14 +19,9 @@ LICENSE=	GPLv3
 
 LIB_DEPENDS=	tag.1:${PORTSDIR}/audio/taglib \
 		notify.4:${PORTSDIR}/devel/libnotify \
-		xine.1:${PORTSDIR}/multimedia/libxine \
-		mtp.11:${PORTSDIR}/audio/libmtp \
-		usbmuxd.1:${PORTSDIR}/comms/usbmuxd \
-		imobiledevice.1:${PORTSDIR}/comms/libimobiledevice \
-		gpod.7:${PORTSDIR}/audio/libgpod \
+		xine.2:${PORTSDIR}/multimedia/libxine \
 		qjson.0:${PORTSDIR}/devel/qjson
-BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:${PORTSDIR}/devel/boost-libs \
-		chrpath:${PORTSDIR}/devel/chrpath
+BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:${PORTSDIR}/devel/boost-libs
 
 PROJECTHOST=	${PORTNAME}${PKGNAMESUFFIX}
 
@@ -35,17 +31,17 @@ USE_GL=		glew
 USE_QT_VER=	4
 QT_COMPONENTS=	gui xml qmake_build uic_build moc_build rcc_build \
 		linguist_build network sql opengl dbus qtestlib corelib
-USE_GCC=	4.6+
+USE_GCC=	4.2+
 INSTALLS_ICONS=	yes
 USE_GSTREAMER=	gio ogg mp3 flac soup vorbis
 MAKE_JOBS_UNSAFE=	yes
 
-GCC_LIBS=	"${LOCALBASE}/lib/${_GCC_BUILD_DEPENDS}"
-CMAKE_ARGS+=	-DCMAKE_LIBRARY_PATH:PATH="${LOCALBASE}/lib:${PREFIX}/lib" \
-		-DCMAKE_SKIP_RPATH:BOOL=ON
+CMAKE_ARGS+=	-DCMAKE_LIBRARY_PATH:PATH="${LOCALBASE}/lib:${PREFIX}/lib"
 
 OPTIONS=	VISUALISATION "Visualisations from projectM" off \
-		LASTFM "Support Last.fm service (requires ruby)" on
+		LASTFM "Support Last.fm service (requires ruby)" on \
+		GPOD "iPod support" on \
+		MTP "MTP device support" on
 
 .include <bsd.port.pre.mk>
 
@@ -58,9 +54,20 @@ PLIST_SUB+=	VSL="@comment "
 
 .if defined(WITH_LASTFM)
 LIB_DEPENDS+=	lastfm.0:${PORTSDIR}/audio/liblastfm
+.else
+CMAKE_ARGS+=	-DENABLE_LIBLASTFM=Off
 .endif
 
-post-build:
-	${LOCALBASE}/bin/chrpath -r "${GCC_LIBS}" "${WRKSRC}/${PORTNAME}${PKGNAMESUFFIX}"
+.if defined(WITH_GPOD)
+LIB_DEPENDS+=	gpod.7:${PORTSDIR}/audio/libgpod
+.else
+CMAKE_ARGS+=	-DENABLE_LIBGPOD=Off
+.endif
+
+.if defined(WITH_MTP)
+LIB_DEPENDS+=	mtp.11:${PORTSDIR}/audio/libmtp
+.else
+CMAKE_ARGS+=	-DENABLE_LIBMTP=Off
+.endif
 
 .include <bsd.port.post.mk>

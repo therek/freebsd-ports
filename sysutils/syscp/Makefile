@@ -7,7 +7,7 @@
 
 PORTNAME=	syscp
 PORTVERSION=	1.4.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils www
 MASTER_SITES=	http://files.syscp.org/releases/tgz/
 
@@ -15,6 +15,9 @@ PATCH_DIST_STRIP=	-p0
 
 MAINTAINER=	ek@purplehat.org
 COMMENT=	PHP-based ISP System Control Panel
+
+DEPRECATED=	Long ditched, possibly dangerous and replaced with sysutils/froxlor
+EXPIRATION_DATE=2012-03-24
 
 WRKSRC=		${WRKDIR}
 
@@ -29,8 +32,9 @@ USE_APACHE=	22
 RUN_DEPENDS+=	\
 		dovecot:${PORTSDIR}/mail/dovecot \
 		postfix:${PORTSDIR}/mail/postfix \
-		proftpd:${PORTSDIR}/ftp/proftpd-mysql \
 		webalizer:${PORTSDIR}/www/webalizer
+
+RUN_DEPENDS+=	${LOCALBASE}/libexec/proftpd/mod_sql_mysql.so:${PORTSDIR}/databases/proftpd-mod_sql_mysql
 
 post-patch:
 	${FIND} ${WRKSRC}/${PORTNAME} -name '*.orig' -delete

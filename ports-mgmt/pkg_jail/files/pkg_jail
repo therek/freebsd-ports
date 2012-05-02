@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/ports-mgmt/pkg_jail/files/pkg_jail,v 1.2 2010/06/24 15:59:13 dinoex Exp $
+#	$FreeBSD: ports/ports-mgmt/pkg_jail/files/pkg_jail,v 1.4 2012/01/14 08:56:44 dougb Exp $
 #
 . /etc/rc.subr
 #
@@ -23,7 +23,7 @@ then
 fi
 #
 name="pkg_jail"
-rcvar=`set_rcvar`
+rcvar="pkg_jail_enable"
 init_cmd="pkg_jail_init"
 start_cmd="pkg_jail_start"
 shell_cmd="pkg_jail_shell"

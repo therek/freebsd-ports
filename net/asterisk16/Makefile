@@ -7,6 +7,7 @@
 
 PORTNAME=	asterisk
 PORTVERSION=	1.6.2.22
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://downloads.asterisk.org/pub/telephony/asterisk/ \
 		http://downloads.asterisk.org/pub/telephony/asterisk/old-releases/
@@ -22,6 +23,9 @@ LIB_DEPENDS=	speex.1:${PORTSDIR}/audio/speex \
 		newt.52:${PORTSDIR}/devel/newt \
 		execinfo:${PORTSDIR}/devel/libexecinfo
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
+
+DEPRECATED=	asterisk 1.6.2.* will be EOLed on 2012-04-21
+EXPIRATION_DATE=	2012-05-31
 
 ONLY_FOR_ARCHS=	i386 amd64 sparc64
 
@@ -129,7 +133,7 @@ PLIST_SUB+=	WITH_ODBC=""
 USE_AUTOTOOLS=	libltdl
 .if defined(WITH_UODBC)
 CONFIGURE_ARGS+=	--with-unixodbc --with-ltdl
-LIB_DEPENDS+=	odbc.1:${PORTSDIR}/databases/unixODBC
+LIB_DEPENDS+=	odbc.2:${PORTSDIR}/databases/unixODBC
 .elif defined(WITH_IODBC)
 CONFIGURE_ARGS+=	--with-iodbc --with-ltdl
 LIB_DEPENDS+=	iodbc.3:${PORTSDIR}/databases/libiodbc

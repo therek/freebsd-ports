@@ -4,11 +4,14 @@
 # Some of the knobs are not tunable by the OPTIONS framework. These are
 # explained here in detail.
 #
-# $FreeBSD$
+# $FreeBSD: ports/multimedia/mplayer/Makefile.options,v 1.28 2012/02/18 19:04:46 dinoex Exp $
 #
 # Feature options:
-# These options influence some general behaviour of mplayer. Most of the featues,
+# These options influence some general behaviour of mplayer. Almost all of the featues,
 # for example all the codecs, are selected via the OPTIONS framework.
+# The following options WITH_DVD_DEVICE, WITH_CDROM_DEVICE, WITH_LANG are *not*
+# selected via the options framework and must be set via make.conf or by passing
+# the variable to make during build, e.g. make WITH_DVD_DEVICE=/dev/cd0
 #
 # WITH_DVD_DEVICE=/path/to/desired/device
 # default 5.x: /dev/acd0
@@ -26,6 +29,10 @@
 # Enables language support bg, cz, de, dk, en, es, fr, gr, hu, it, ko, nl, no, pl, pt_BR, ro, ru, sk, tr, uk, zh
 #
 
+.if ${OSVERSION} < 802502
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-base_system_log2f
+.endif
+
 .if defined(WITH_LANG)
 CONFIGURE_ARGS+=--language=${WITH_LANG}
 .endif
@@ -37,17 +44,25 @@ CONFIGURE_ARGS+=--language=${WITH_LANG}
 DEBUG_FLAGS=	-g -O -fomit-frame-pointer
 .endif
 .else
-.if !defined(WITHOUT_OCFLAGS)
-#CFLAGS+=	-O3 -ffast-math -fomit-frame-pointer
-#Let mplayer determine its own cflags
-CFLAGS=
-.else
+#Historically, we manually set OCFLAGS to -O3 -ffast-math -fomit-frame-pointer
+#Nowadays, let mplayer determine its own optimised flags
+.if defined(WITHOUT_OCFLAGS)
 CFLAGS+=	-O -fomit-frame-pointer
+.else
+CONFIGURE_ENV+=		CFLAGS=
 .endif
-.endif
+.endif #WITH_DEBUG
 
 .if !defined(WITHOUT_RTCPU)
 CONFIGURE_ARGS+=--enable-runtime-cpudetection
+.endif
+
+.if defined(WITH_OTCHAIN)
+USE_GCC?=	4.6+
+BUILD_DEPENDS+=	${LOCALBASE}/bin/as:${PORTSDIR}/devel/binutils
+.else
+CONFIGURE_ARGS+=--disable-ssse3 --disable-fast-cmov
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-base_system_gcc
 .endif
 
 .if defined(WITHOUT_IPV6)
@@ -57,12 +72,12 @@ CATEGORIES+=	ipv6
 .endif
 
 .if !defined(WITHOUT_LIBUNGIF)
-LIB_DEPENDS+=	ungif.5:${PORTSDIR}/graphics/libungif
+LIB_DEPENDS+=	gif.5:${PORTSDIR}/graphics/giflib
 .else
 CONFIGURE_ARGS+=	--disable-gif
 .endif
 
-.ifdef(WITH_OPENJPEG)
+.if defined(WITH_OPENJPEG)
 LIB_DEPENDS+=		openjpeg.2:${PORTSDIR}/graphics/openjpeg
 .else
 CONFIGURE_ARGS+=	--disable-libopenjpeg
@@ -87,13 +102,13 @@ CONFIGURE_ARGS+=	--disable-theora
 .endif
 
 .if defined(WITH_VPX)
-LIB_DEPENDS+=		vpx.0:${PORTSDIR}/multimedia/libvpx
+LIB_DEPENDS+=		vpx.1:${PORTSDIR}/multimedia/libvpx
 .else
 CONFIGURE_ARGS+=	--disable-libvpx-lavc
 .endif
 
 .if defined(WITH_SCHROEDINGER)
-LIB_DEPENDS+=		schroedinger-1.0.10:${PORTSDIR}/multimedia/schroedinger
+LIB_DEPENDS+=		schroedinger-1.0.11:${PORTSDIR}/multimedia/schroedinger
 .else
 CONFIGURE_ARGS+=	--disable-libschroedinger-lavc
 .endif
@@ -136,8 +151,7 @@ CONFIGURE_ARGS+=	--disable-pulse
 .endif
 
 .if defined(WITH_BLURAY)
-LIB_DEPENDS+=		bluray.0:${PORTSDIR}/multimedia/libbluray
-CONFIGURE_ARGS+=	--enable-bluray
+LIB_DEPENDS+=		bluray.1:${PORTSDIR}/multimedia/libbluray
 .else
 CONFIGURE_ARGS+=	--disable-bluray
 .endif
@@ -161,7 +175,7 @@ CONFIGURE_ARGS+=	--disable-cdparanoia
 .endif
 
 .if defined(WITH_LIBCDIO) && !defined(WITH_CDPARANOIA)
-LIB_DEPENDS+=	cdio.12:${PORTSDIR}/sysutils/libcdio
+LIB_DEPENDS+=	cdio.13:${PORTSDIR}/sysutils/libcdio
 .else
 CONFIGURE_ARGS+=	--disable-libcdio
 .endif
@@ -213,21 +227,16 @@ CONFIGURE_ARGS+=	--disable-real
 LIB_DEPENDS+=	opencore-amrnb.0:${PORTSDIR}/audio/opencore-amr
 .endif
 
-.ifdef(WITH_AMR_NB)
-CONFIGURE_ARGS+=	--enable-libopencore_amrnb --enable-version3
-.else
+.ifdef(WITHOUT_AMR_NB)
 CONFIGURE_ARGS+=	--disable-libopencore_amrnb
 .endif
 
-.ifdef(WITH_AMR_WB)
-CONFIGURE_ARGS+=	--enable-libopencore_amrwb --enable-version3
-.else
+.ifdef(WITHOUT_AMR_WB)
 CONFIGURE_ARGS+=	--disable-libopencore_amrwb
 .endif
 
 .ifdef(WITH_GSM)
 LIB_DEPENDS+=	gsm.1:${PORTSDIR}/audio/gsm
-CONFIGURE_ARGS+=	--enable-libgsm
 .else
 CONFIGURE_ARGS+=	--disable-libgsm
 .endif

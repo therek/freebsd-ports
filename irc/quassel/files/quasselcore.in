@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/irc/quassel/files/quasselcore.in,v 1.1 2011/10/31 14:52:58 makc Exp $
 #
 # PROVIDE: quasselcore
 # REQUIRE: LOGIN
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name=quasselcore
-rcvar=`set_rcvar`
+rcvar=quasselcore_enable
 
 load_rc_config ${name}
 

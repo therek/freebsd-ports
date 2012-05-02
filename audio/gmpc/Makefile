@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	gmpc
-PORTVERSION=	0.20.0
+PORTVERSION=	11.8.16
 PORTEPOCH=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://download.sarine.nl/Programs/gmpc/${PORTVERSION}/ \
@@ -17,10 +17,11 @@ COMMENT=	Full featured GTK2 client for musicpd
 
 BUILD_DEPENDS=	gob2:${PORTSDIR}/devel/gob2 \
 		valac:${PORTSDIR}/lang/vala
-LIB_DEPENDS=	mpd.3:${PORTSDIR}/audio/libmpd \
+LIB_DEPENDS=	mpd.4:${PORTSDIR}/audio/libmpd \
 		sexy.2:${PORTSDIR}/x11-toolkits/libsexy \
 		sqlite3.8:${PORTSDIR}/databases/sqlite3 \
-		soup-2.4.1:${PORTSDIR}/devel/libsoup
+		soup-2.4.1:${PORTSDIR}/devel/libsoup \
+		unique-1.0:${PORTSDIR}/x11-toolkits/unique
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
@@ -31,7 +32,7 @@ CONFIGURE_ARGS=	--enable-system-libsexy
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-MAN1=		gmpc-remote.1 gmpc.1
+MAN1=		gmpc-remote.1 gmpc.1 gmpc-remote-stream.1
 
 OPTIONS=	MMKEYS "Enable multimedia keys support" on \
 		XSPF "Enable support for XSPF playlists" off

@@ -1,6 +1,6 @@
 #!/bin/sh
 # 
-# $FreeBSD: ports/graphics/geoserver/files/geoserver.in,v 1.2 2010/03/27 00:13:03 dougb Exp $
+# $FreeBSD: ports/graphics/geoserver/files/geoserver.in,v 1.3 2011/06/27 02:13:48 avl Exp $
 #
 # PROVIDE: geoserver
 # REQUIRE: NETWORKING
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="geoserver"
-rcvar=${name}_enable
+rcvar=geoserver_enable
 
 load_rc_config ${name}
 

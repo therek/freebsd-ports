@@ -6,10 +6,11 @@
 #
 
 PORTNAME=	Text-NeatTemplate
-PORTVERSION=	0.08
+PORTVERSION=	0.10.01
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
+DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 
 MAINTAINER=	clsung@FreeBSD.org
 COMMENT=	A fast, middleweight template engine
@@ -17,8 +18,5 @@ COMMENT=	A fast, middleweight template engine
 PERL_MODBUILD=	yes
 
 MAN3=		Text::NeatTemplate.3
-
-post-patch:
-		${CHMOD} u+w ${WRKSRC}/Makefile.PL
 
 .include <bsd.port.mk>

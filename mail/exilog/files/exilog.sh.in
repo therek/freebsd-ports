@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/exilog/files/exilog.sh.in,v 1.2 2006/05/19 22:50:37 pav Exp $
+# $FreeBSD: ports/mail/exilog/files/exilog.sh.in,v 1.3 2010/03/27 00:13:15 dougb Exp $
 #
 # PROVIDE: exilog
 # REQUIRE: %%SERVER%%
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name=exilog
-rcvar=`set_rcvar`
+rcvar=exilog_enable
 
 command=%%PREFIX%%/sbin/exilog_agent.pl
 pidfile=/var/run/exilog.pid

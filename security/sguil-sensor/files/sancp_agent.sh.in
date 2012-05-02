@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/security/sguil-sensor/files/sancp_agent.sh.in,v 1.1 2008/05/20 19:02:07 araujo Exp $
+# $FreeBSD: ports/security/sguil-sensor/files/sancp_agent.sh.in,v 1.2 2010/03/27 00:14:48 dougb Exp $
 
 # PROVIDE: sancp_agent
 # REQUIRE: DAEMON
@@ -24,7 +24,7 @@ sancp_agent_conf=${sancp_agent_conf:-"%%PREFIX%%/etc/%%SGUILDIR%%/sancp_agent.co
 sancp_agent_flags=${sancp_agent_flags:-"-D"}
 
 name="sancp_agent"
-rcvar=`set_rcvar`
+rcvar=sancp_agent_enable
 command="%%PREFIX%%/bin/%%SGUILDIR%%/sancp_agent.tcl"
 command_args="-c ${sancp_agent_conf} ${sancp_agent_flags}"
 procname="%%PREFIX%%/bin/tclsh8.4"

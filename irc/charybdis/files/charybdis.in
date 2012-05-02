@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/irc/charybdis/files/charybdis.in,v 1.1 2011/03/17 15:54:29 miwi Exp $
 #
 # PROVIDE: charybdis
 # REQUIRE: LOGIN
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="charybdis"
-rcvar=`set_rcvar`
+rcvar=charybdis_enable
 
 load_rc_config $name
 

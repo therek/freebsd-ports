@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	sass-rails
-PORTVERSION=	3.1.5
+PORTVERSION=	3.2.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -14,7 +14,7 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Sass adapter for the Rails asset pipeline
 
 RUN_DEPENDS=	rubygem-sass>=3.1.10:${PORTSDIR}/textproc/rubygem-sass \
-		rubygem-railties>=3.1.0:${PORTSDIR}/www/rubygem-railties
+		rubygem-railties>=3.2.0.:${PORTSDIR}/www/rubygem-railties
 
 USE_RUBY=		yes
 USE_RUBYGEMS=		yes

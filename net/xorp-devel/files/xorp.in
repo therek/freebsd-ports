@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/xorp-devel/files/xorp.in,v 1.2 2010/03/27 00:14:13 dougb Exp $
+# $FreeBSD: ports/net/xorp-devel/files/xorp.in,v 1.3 2011/05/15 02:49:12 dougb Exp $
 #
 # A sample XORP startup script.
 #
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="xorp"
-rcvar=`set_rcvar`
+rcvar=xorp_enable
 
 load_rc_config $name
 

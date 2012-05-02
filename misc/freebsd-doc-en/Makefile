@@ -28,7 +28,7 @@
 #
 
 PORTNAME=	freebsd-doc
-PORTVERSION=	20111014
+PORTVERSION=	20120205
 CATEGORIES=	misc docs
 MASTER_SITES=	LOCAL/blackend
 PKGNAMEPREFIX?=	en-
@@ -89,7 +89,7 @@ BUILD_DEPENDS=	docproj-jadetex>=1.17:${PORTSDIR}/textproc/docproj-jadetex
 BUILD_DEPENDS=	docproj-nojadetex>=1.17:${PORTSDIR}/textproc/docproj-nojadetex
 .endif
 
-MAKE_JOBS_SAFE=	yes
+MAKE_JOBS_UNSAFE=	yes
 
 .for F in ${DOCFORMAT:L}
 PLIST_FORMATS+=	${F:L}

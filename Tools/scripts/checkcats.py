@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 #
 # checkcats.py - verify that master categories in all ports are correct and
 # report any problems.
@@ -12,7 +12,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD$
+# $FreeBSD: ports/Tools/scripts/checkcats.py,v 1.1 2001/12/11 10:49:51 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
 #                                    highly discouraged!!!

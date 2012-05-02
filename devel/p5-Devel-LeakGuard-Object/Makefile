@@ -16,7 +16,8 @@ MAINTAINER=	markun@onohara.to
 COMMENT=	Scoped checks for object leaks
 
 BUILD_DEPENDS=	p5-Test-Differences>=0:${PORTSDIR}/devel/p5-Test-Differences
-RUN_DEPENDS=	${BUILD_DEPENDS}
+RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-latest>0:${PORTSDIR}/devel/p5-latest
 
 PERL_MODBUILD=	yes
 

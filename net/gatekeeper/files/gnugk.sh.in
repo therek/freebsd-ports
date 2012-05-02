@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/gatekeeper/files/gnugk.sh.in,v 1.1 2006/03/26 15:35:21 sem Exp $
+# $FreeBSD: ports/net/gatekeeper/files/gnugk.sh.in,v 1.2 2010/03/27 00:13:43 dougb Exp $
 #
 # PROVIDE: gnugk
 # REQUIRE: NETWORKING SERVERS
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name="gnugk"
-rcvar=`set_rcvar`
+rcvar=gnugk_enable
 command="%%PREFIX%%/bin/${name}"
 extra_commands="reload"
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/sysutils/atop/files/atop.in,v 1.3 2011/07/04 07:50:42 dougb Exp $
+# $FreeBSD: ports/sysutils/atop/files/atop.in,v 1.5 2012/01/14 08:56:56 dougb Exp $
 #
 # PROVIDE: atop
 # REQUIRE: LOGIN
@@ -30,7 +30,7 @@
 . /etc/rc.subr
 
 name="atop"
-rcvar=`set_rcvar`
+rcvar=atop_enable
 
 load_rc_config $name
 
@@ -62,7 +62,7 @@ atop_rotate()
     echo "Rotating logfile (${name})."
     # write final sample and stop
     sig_stop=SIGUSR2
-    /usr/bin/find $atop_logdir -name atop_???????? -mtime +${atop_keepdays} -exec rm {} \;
+    /usr/bin/find $atop_logdir/ -name atop_???????? -mtime +${atop_keepdays} -exec rm {} \;
     run_rc_command "restart"
 }
 

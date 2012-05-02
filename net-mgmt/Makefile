@@ -21,6 +21,7 @@
     SUBDIR += arts++
     SUBDIR += aspathtree
     SUBDIR += bandwidthd
+    SUBDIR += better-cacti-templates
     SUBDIR += bgpq
     SUBDIR += bgpq3
     SUBDIR += bigsister
@@ -80,6 +81,7 @@
     SUBDIR += grepip
     SUBDIR += gsnmp
     SUBDIR += hastmon
+    SUBDIR += hawk
     SUBDIR += horde-nic
     SUBDIR += icinga
     SUBDIR += icmpmonitor
@@ -129,6 +131,7 @@
     SUBDIR += nagios-check_tftp
     SUBDIR += nagios-devel
     SUBDIR += nagios-geom
+    SUBDIR += nagios-openldap-plugins
     SUBDIR += nagios-pf-plugin
     SUBDIR += nagios-plugins
     SUBDIR += nagios-portaudit
@@ -156,6 +159,7 @@
     SUBDIR += netams
     SUBDIR += netams-front
     SUBDIR += netdisco
+    SUBDIR += netdisco-mibs
     SUBDIR += netleak
     SUBDIR += netmask
     SUBDIR += netmond
@@ -188,6 +192,7 @@
     SUBDIR += p5-Cisco-Reconfig
     SUBDIR += p5-Data-Validate-IP
     SUBDIR += p5-FusionInventory-Agent
+    SUBDIR += p5-GRNOC-TL1
     SUBDIR += p5-MRTG-Parse
     SUBDIR += p5-Mon
     SUBDIR += p5-NSNMP

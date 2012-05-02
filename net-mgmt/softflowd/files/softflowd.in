@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/net-mgmt/softflowd/files/softflowd.in,v 1.2 2010/12/02 17:00:44 jpaetzel Exp $
+# $FreeBSD: ports/net-mgmt/softflowd/files/softflowd.in,v 1.3 2011/05/15 02:49:12 dougb Exp $
 
 # (c) 2010 Tom Judge
 
@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name=softflowd
-rcvar=`set_rcvar`
+rcvar=softflowd_enable
 
 start_precmd="softflowd_precommand $@"
 stop_precmd="softflowd_precommand $@"

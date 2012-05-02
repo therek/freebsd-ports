@@ -6,15 +6,14 @@
 #
 
 PORTNAME=	gmpc-magnatune
-PORTVERSION=	0.20.0
+PORTVERSION=	11.8.16
 CATEGORIES=	audio
-MASTER_SITES=	http://download.sarine.nl/Programs/gmpc/${PORTVERSION}/ \
-		http://freebsd.unixfreunde.de/sources/
+MASTER_SITES=	http://download.sarine.nl/Programs/gmpc/${PORTVERSION}/
 
 MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	The Magnatune plugin let's you preview music from Magnatune
 
-LIB_DEPENDS=	mpd.3:${PORTSDIR}/audio/libmpd \
+LIB_DEPENDS=	mpd.4:${PORTSDIR}/audio/libmpd \
 		sqlite3:${PORTSDIR}/databases/sqlite3
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/gmpc.pc:${PORTSDIR}/audio/gmpc
 RUN_DEPENDS=	gmpc:${PORTSDIR}/audio/gmpc

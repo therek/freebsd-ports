@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/monitorix/files/monitorix.in,v 1.4 2011/05/14 23:57:51 dougb Exp $
+# $FreeBSD: ports/sysutils/monitorix/files/monitorix.in,v 1.5 2011/07/31 17:29:02 crees Exp $
 #
 # PROVIDE: monitorix
 # REQUIRE: DAEMON
@@ -12,7 +12,7 @@ monitorix_enable=${monitorix_enable:-"NO"}
 . /etc/rc.subr
 
 name="monitorix"
-rcvar=`set_rcvar`
+rcvar=monitorix_enable
 
 load_rc_config $name
 

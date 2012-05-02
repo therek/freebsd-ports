@@ -6,10 +6,9 @@
 #
 
 PORTNAME=	Mojolicious
-PORTVERSION=	2.35
+PORTVERSION=	2.51
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:SRI
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	mopsfelder@gmail.com
@@ -57,6 +56,7 @@ MAN3=		Mojo.3 \
 		Mojo::IOWatcher.3 \
 		Mojo::IOWatcher::EV.3 \
 		Mojo::JSON.3 \
+		Mojo::JSON::Pointer.3 \
 		Mojo::Loader.3 \
 		Mojo::Log.3 \
 		Mojo::Message.3 \
@@ -86,8 +86,6 @@ MAN3=		Mojo.3 \
 		Mojolicious::Command::eval.3 \
 		Mojolicious::Command::generate.3 \
 		Mojolicious::Command::generate::app.3 \
-		Mojolicious::Command::generate::gitignore.3 \
-		Mojolicious::Command::generate::hypnotoad.3 \
 		Mojolicious::Command::generate::lite_app.3 \
 		Mojolicious::Command::generate::makefile.3 \
 		Mojolicious::Command::generate::plugin.3 \

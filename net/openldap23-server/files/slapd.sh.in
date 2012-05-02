@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap23-server/files/slapd.sh.in,v 1.5 2009/07/15 16:55:52 dougb Exp $
+# $FreeBSD: ports/net/openldap23-server/files/slapd.sh.in,v 1.6 2010/03/27 00:13:51 dougb Exp $
 #
 
 # PROVIDE: slapd
@@ -27,7 +27,7 @@
 . /etc/rc.subr
 
 name="slapd"
-rcvar=`set_rcvar`
+rcvar=slapd_enable
 
 command="%%PREFIX%%/libexec/slapd"
 pidfile="%%LDAP_RUN_DIR%%/slapd.pid"

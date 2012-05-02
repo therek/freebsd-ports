@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.89 2011/07/21 05:02:23 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.91 2012/02/07 04:04:12 glewis Exp $
 #
 
 .if !defined(Java_Include)
@@ -179,6 +179,8 @@ _JAVA_PORT_LINUX_SUN_JDK_1_5_INFO=			PORT=java/linux-sun-jdk15		HOME=${LOCALBASE
 											VERSION=1.5.0	OS=linux	VENDOR=sun
 _JAVA_PORT_LINUX_SUN_JDK_1_6_INFO=			PORT=java/linux-sun-jdk16		HOME=${LOCALBASE}/linux-sun-jdk1.6.0 \
 											VERSION=1.6.0	OS=linux	VENDOR=sun
+_JAVA_PORT_LINUX_SUN_JDK_1_7_INFO=			PORT=java/linux-sun-jdk17		HOME=${LOCALBASE}/linux-sun-jdk1.7.0 \
+											VERSION=1.7.0	OS=linux	VENDOR=sun
 
 # Verbose description for each VENDOR
 _JAVA_VENDOR_freebsd=		"FreeBSD Foundation"
@@ -191,11 +193,7 @@ _JAVA_OS_native=	Native
 _JAVA_OS_linux=		Linux
 
 # Enforce preferred Java ports according to OS
-.		if ${OSVERSION} < 800000
-_JAVA_PREFERRED_PORTS+=	JAVA_PORT_NATIVE_FREEBSD_JDK_1_6
-.		else
-_JAVA_PREFERRED_PORTS+=	JAVA_PORT_NATIVE_BSDJAVA_JDK_1_6
-.		endif
+_JAVA_PREFERRED_PORTS+=	JAVA_PORT_NATIVE_OPENJDK_JDK_1_6
 
 # List all JDK ports
 __JAVA_PORTS_ALL=	JAVA_PORT_NATIVE_FREEBSD_JDK_1_6 \
@@ -204,6 +202,7 @@ __JAVA_PORTS_ALL=	JAVA_PORT_NATIVE_FREEBSD_JDK_1_6 \
 					JAVA_PORT_NATIVE_OPENJDK_JDK_1_6 \
 					JAVA_PORT_NATIVE_BSDJAVA_JDK_1_6 \
 					JAVA_PORT_NATIVE_BSDJAVA_JDK_1_5 \
+					JAVA_PORT_LINUX_SUN_JDK_1_7 \
 					JAVA_PORT_LINUX_SUN_JDK_1_6 \
 					JAVA_PORT_LINUX_SUN_JDK_1_5
 _JAVA_PORTS_ALL=	${JAVA_PREFERRED_PORTS} \

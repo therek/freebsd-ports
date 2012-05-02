@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/mail/davmail/files/davmail.in,v 1.1 2011/03/09 14:01:48 miwi Exp $
+# $FreeBSD: ports/mail/davmail/files/davmail.in,v 1.2 2011/04/12 04:31:24 dhn Exp $
 #
 # PROVIDE: davmail
 # REQUIRE: LOGIN
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="davmail"
-rcvar=`set_rcvar`
+rcvar=davmail_enable
 
 load_rc_config $name
 

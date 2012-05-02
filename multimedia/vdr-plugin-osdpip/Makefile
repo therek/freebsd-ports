@@ -6,10 +6,10 @@
 #
 
 PORTNAME=	vdr-plugin-osdpip
-PORTVERSION=	0.1.0
-PORTREVISION=	9
+PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	multimedia
-MASTER_SITES=	http://projects.vdr-developer.org/attachments/download/267/
+MASTER_SITES=	http://projects.vdr-developer.org/attachments/download/880/
 DISTNAME=	${PORTNAME:S/-plugin-/-/}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}
 EXTRACT_SUFX=	.tgz
 

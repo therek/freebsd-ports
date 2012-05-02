@@ -7,8 +7,8 @@
 
 PORTNAME=	openssl
 PORTVERSION=	1.0.0
-DISTVERSIONSUFFIX=	f
-PORTREVISION=	8
+DISTVERSIONSUFFIX=	g
+PORTREVISION=	9
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.openssl.org/%SUBDIR%/ \
 		ftp://ftp.openssl.org/%SUBDIR%/ \
@@ -1137,6 +1137,8 @@ pre-everything::
 post-patch:
 	@${REINPLACE_CMD} -e 's|m4 -B 8192|m4|g' \
 		${WRKSRC}/crypto/des/Makefile
+	${REINPLACE_CMD} -e 's|SHLIB_VERSION_NUMBER "1.0.0"|SHLIB_VERSION_NUMBER "${OPENSSL_SHLIBVER}"|' \
+		${WRKSRC}/crypto/opensslv.h
 
 do-configure:
 	@${REINPLACE_CMD} -e "s|options 386|options|" \

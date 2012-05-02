@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/apinger/files/apinger.in,v 1.1 2010/01/25 12:24:06 mich Exp $
 #
 # PROVIDE: apinger
 # REQUIRE: LOGIN
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="apinger"
-rcvar=${name}_enable
+rcvar=apinger_enable
 
 command=%%PREFIX%%/sbin/${name}
 pidfile=/var/run/${name}.pid

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/abyssws/files/abyssws.sh.in,v 1.1 2007/09/06 12:00:08 edwin Exp $
+# $FreeBSD: ports/www/abyssws/files/abyssws.sh.in,v 1.2 2010/03/27 00:15:08 dougb Exp $
 #
 # PROVIDE: abyssws
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=abyssws
-rcvar=${name}_enable
+rcvar=abyssws_enable
 
 command="%%PREFIX%%/lib/abyssws/abyssws"
 command_args="-d >/dev/null"

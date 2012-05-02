@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/healthd/files/healthd.in,v 1.3 2009/07/27 23:12:00 dougb Exp $
+# $FreeBSD: ports/sysutils/healthd/files/healthd.in,v 1.4 2010/03/27 00:14:56 dougb Exp $
 #
 # $Id: healthd.sh,v 1.1.2.7 2004/06/23 14:11:57 housley Exp $
 
@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name=healthd
-rcvar=`set_rcvar`
+rcvar=healthd_enable
 
 extra_commands="reload"
 command=%%PREFIX%%/sbin/healthd

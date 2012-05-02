@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/sysutils/boxbackup/files/bbstored.in,v 1.1 2011/08/25 16:03:49 zi Exp $
+# $FreeBSD: ports/sysutils/boxbackup/files/bbstored.in,v 1.2 2011/08/31 19:15:09 zi Exp $
 #
 # PROVIDE: bbstored
 # REQUIRE: NETWORKING
@@ -13,7 +13,7 @@
 . /etc/rc.subr
 
 name="bbstored"
-rcvar=`set_rcvar`
+rcvar=bbstored_enable
 
 load_rc_config $name
 

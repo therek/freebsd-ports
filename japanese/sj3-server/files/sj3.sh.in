@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/japanese/sj3-server/files/sj3.sh.in,v 1.3 2008/10/26 19:35:08 hrs Exp $
+# $FreeBSD: ports/japanese/sj3-server/files/sj3.sh.in,v 1.4 2010/03/27 00:13:08 dougb Exp $
 #
 
 # PROVIDE: sj3
@@ -21,7 +21,7 @@ sj3_enable=${sj3_enable:-"NO"}		# Enable sj3
 . /etc/rc.subr
 
 name="sj3"
-rcvar=`set_rcvar`
+rcvar=sj3_enable
 command="%%PREFIX%%/sbin/sj3serv"
 start_precmd="sj3serv_precmd"
 

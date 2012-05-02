@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/devel/libvirt/pkg-plist,v 1.7 2011/11/11 17:27:15 miwi Exp $
+@comment $FreeBSD: ports/devel/libvirt/pkg-plist,v 1.8 2011/12/19 21:59:58 jgh Exp $
 bin/virsh
+bin/virt-host-validate
 bin/virt-pki-validate
 bin/virt-xml-validate
 @unexec if cmp -s %D/%%ETCDIR%%/libvirtd.conf.sample %D/%%ETCDIR%%/libvirtd.conf; then rm -f %D/%%ETCDIR%%/libvirtd.conf; fi

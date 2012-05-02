@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-im/jabber/files/jabber.in,v 1.2 2007/07/18 06:09:10 mm Exp $
+# $FreeBSD: ports/net-im/jabber/files/jabber.in,v 1.3 2010/03/27 00:14:14 dougb Exp $
 #
 # PROVIDE: jabber
 # REQUIRE: LOGIN
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="jabber"
-rcvar=`set_rcvar`
+rcvar=jabber_enable
 
 load_rc_config $name
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/bozohttpd/files/bozohttpd.in,v 1.1 2008/01/24 23:29:53 wxs Exp $
+# $FreeBSD: ports/www/bozohttpd/files/bozohttpd.in,v 1.2 2010/03/27 00:15:10 dougb Exp $
 #
 # PROVIDE: bozohttpd
 # REQUIRE: DAEMON
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="bozohttpd"
-rcvar=`set_rcvar`
+rcvar=bozohttpd_enable
 
 load_rc_config $name
 

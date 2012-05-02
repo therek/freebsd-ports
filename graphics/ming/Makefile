@@ -6,81 +6,63 @@
 #
 
 PORTNAME=	ming
-PORTVERSION=	0.4.3
+PORTVERSION=	0.4.4
 PORTREVISION?=	1
 CATEGORIES=	graphics
-MASTER_SITES=	SF/${PORTNAME}/Releases/Ming%20${PORTVERSION}
+MASTER_SITES=	SF/${PORTNAME}/Releases/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Flash 4/5 movie output library with many languages support
 
-LIB_DEPENDS=	png.6:${PORTSDIR}/graphics/png \
-		ungif.5:${PORTSDIR}/graphics/libungif \
-		freetype.9:${PORTSDIR}/print/freetype2
+LIB_DEPENDS=	freetype.9:${PORTSDIR}/print/freetype2 \
+		gif.5:${PORTSDIR}/graphics/giflib \
+		png.6:${PORTSDIR}/graphics/png
 
 CONFLICTS=	ja-ming-[0-9]*
 
-USE_GNOME=	gnomehack
-USE_GMAKE=	yes
-USE_BISON=	build
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/ming
-USE_LDCONFIG=	yes
-MAKE_JOBS_UNSAFE=	yes
-
+CFLAGS+=	-I${LOCALBASE}/include
+CONFIGURE_ARGS+=--includedir=${PREFIX}/include/ming
 CPPFLAGS+=	-I. -I.. -I${LOCALBASE}/include
 LDFLAGS+=	-L. -L.. -L${LOCALBASE}/lib
-CFLAGS+=	${CPPFLAGS}
+GNU_CONFIGURE=	yes
+MAKE_JOBS_UNSAFE=	yes
+USE_BISON=	build
+USE_GMAKE=	yes
+USE_GNOME=	gnomehack
+USE_LDCONFIG=	yes
 
 DOCS=		HISTORY NEWS README TODO
 DOCS_UTIL=	README TIPS TODO swftoperl.html
 
-.if defined(SLAVE_PORT)
+.if defined(SLAVEPORT)
 LIB_DEPENDS+=	ming.5:${PORTSDIR}/graphics/ming
 .endif
 
-.if defined(SLAVE_PORT) && ${SLAVE_PORT}=="p5"
-MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-.endif
+post-patch:
+	@${REINPLACE_CMD} -e 's|ungif|gif|g' ${WRKSRC}/configure ${WRKSRC}/docs/man/Makefile \
+		${WRKSRC}/perl_ext/Makefile.PL ${WRKSRC}/py_ext/setup.py.in
+# patch for graphics/p5-ming
+	@${REINPLACE_CMD} -e 's|\.3pm|.3|g' ${WRKSRC}/perl_ext/Makefile.PL ${WRKSRC}/perl_ext/mkdoc
+	@${REINPLACE_CMD} -e 's|GvCV(\(.*\)) = \(.*\);|GvCV_set(\1, \2);|' ${WRKSRC}/perl_ext/Exports.c
+	@${REINPLACE_CMD} -e '1 s|/usr/bin/perl|${PERL}|' ${WRKSRC}/perl_ext/examples/*.cgi
+# patch for graphics/py-ming
+	@${REINPLACE_CMD} -e 's| --root ".*"||' ${WRKSRC}/py_ext/Makefile.in
+	@${REINPLACE_CMD} -e 's|/usr/local/|${LOCALBASE}/|g' ${WRKSRC}/py_ext/setup.py.in
+	@${LN} -sf ${LOCALBASE}/include/ming ${WRKSRC}/src
 
+.if !target(post-install)
 post-install:
-.if !defined(SLAVE_PORT)
-	${INSTALL_SCRIPT} ${WRKSRC}/util/ming-config ${PREFIX}/bin
-	${INSTALL_SCRIPT} ${WRKSRC}/util/cws2fws ${PREFIX}/bin
-	@${MKDIR} ${PREFIX}/include/ming
-	${INSTALL_DATA} ${WRKSRC}/*.h ${PREFIX}/include/ming
-	${INSTALL_DATA} ${WRKSRC}/src/*.h ${PREFIX}/include/ming
-	@${MKDIR} ${PREFIX}/include/ming/util
-	${INSTALL_DATA} ${WRKSRC}/util/*.h ${PREFIX}/include/ming/util
-	${INSTALL_DATA} ${WRKSRC}/util/png2dbl.c ${PREFIX}/include/ming/util
-	@${MKDIR} ${PREFIX}/include/ming/blocks
-	${INSTALL_DATA} ${WRKSRC}/src/blocks/*.h ${PREFIX}/include/ming/blocks
+	${MKDIR} ${PREFIX}/include/ming/ ${PREFIX}/include/ming/blocks/ ${PREFIX}/include/ming/util/
+	cd ${WRKSRC}/ && \
+		${INSTALL_SCRIPT} util/cws2fws util/ming-config ${PREFIX}/bin/ && \
+		${INSTALL_DATA} *.h src/*.h ${PREFIX}/include/ming/ && \
+		${INSTALL_DATA} src/blocks/*.h ${PREFIX}/include/ming/blocks/ && \
+		${INSTALL_DATA} util/png2dbl.c util/*.h ${PREFIX}/include/ming/util/
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${DOCSDIR}
-.for docs in ${DOCS}
-	${INSTALL_DATA} ${WRKSRC}/${docs} ${DOCSDIR}
-.endfor
-	@${MKDIR} ${DOCSDIR}/util
-.for docs_utils in ${DOCS_UTIL}
-	@${INSTALL_DATA} ${WRKSRC}/util/${docs_utils} ${DOCSDIR}/util
-.endfor
+	${MKDIR} ${DOCSDIR}/ ${DOCSDIR}/util/
+	cd ${WRKSRC}/ && ${INSTALL_DATA} ${DOCS} ${DOCSDIR}/
+	cd ${WRKSRC}/util/ && ${INSTALL_DATA} ${DOCS_UTIL} ${DOCSDIR}/util/
 .endif
-.endif
-
-.if defined(SLAVE_PORT) && ${SLAVE_PORT}=="p5"
-.if !defined(NOPORTDOCS)
-	@${MKDIR} ${EXAMPLESDIR}
-	${INSTALL_DATA} ${INSTALL_WRKSRC}/examples/*.* ${EXAMPLESDIR}
-.endif
-.endif
-
-pre-install:
-.if defined(SLAVE_PORT) && ${SLAVE_PORT}=="p5"
-	@${REINPLACE_CMD} 's/3pm/3/g' ${INSTALL_WRKSRC}/Makefile
-	@${REINPLACE_CMD} 's/3pm/3/g' ${INSTALL_WRKSRC}/Makefile.perl
-.for m in ${MAN3}
-	${MV} ${INSTALL_WRKSRC}/blib/man3/${m}pm ${INSTALL_WRKSRC}/blib/man3/${m}
-.endfor
 .endif
 
 .include <bsd.port.mk>

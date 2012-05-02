@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/irrd/files/irrd.sh.in,v 1.1 2008/02/15 14:18:26 sem Exp $
+# $FreeBSD: ports/net/irrd/files/irrd.sh.in,v 1.2 2010/03/27 00:13:45 dougb Exp $
 
 # PROVIDE: irrd
 # REQUIRE: DAEMON
@@ -20,7 +20,7 @@ irrd_flags="${irrd_flags:--u}"			# Flags to imapd program
 . /etc/rc.subr
 
 name="irrd"
-rcvar=`set_rcvar`
+rcvar=irrd_enable
 command="%%PREFIX%%/sbin/irrd"
 required_files="%%PREFIX%%/etc/irrd.conf"
 

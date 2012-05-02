@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-p2p/bnbt/files/bnbt.sh.in,v 1.3 2009/07/15 16:56:00 dougb Exp $
+# $FreeBSD: ports/net-p2p/bnbt/files/bnbt.sh.in,v 1.4 2010/03/27 00:14:29 dougb Exp $
 #
 
 # PROVIDE: bnbt
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="bnbt"
-rcvar=`set_rcvar`
+rcvar=bnbt_enable
 
 # path to your executable, might be libxec, bin, sbin, ...
 command="%%PREFIX%%/bin/$name"

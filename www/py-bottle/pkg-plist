@@ -1,4 +1,5 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/www/py-bottle/pkg-plist,v 1.1 2009/11/04 09:13:22 nivit Exp $
+bin/bottle.py
 %%PYTHON_SITELIBDIR%%/bottle.py
 %%PYTHON_SITELIBDIR%%/bottle.pyc
 %%PYTHON_SITELIBDIR%%/bottle.pyo

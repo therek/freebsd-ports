@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/wwwoffle/files/wwwoffled.sh.in,v 1.3 2006/09/26 02:02:13 sumikawa Exp $
+# $FreeBSD: ports/www/wwwoffle/files/wwwoffled.sh.in,v 1.4 2010/03/27 00:15:20 dougb Exp $
 
 # PROVIDE: wwwoffled
 # REQUIRE: DAEMON
@@ -21,7 +21,7 @@ wwwoffled_conffile="%%PREFIX%%/etc/wwwoffle.conf"
 . /etc/rc.subr
 
 name="wwwoffled"
-rcvar=`set_rcvar`
+rcvar=wwwoffled_enable
 command="%%PREFIX%%/sbin/wwwoffled"
 extra_commands="reload"
 

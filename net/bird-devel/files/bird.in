@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/net/bird/files/bird.in,v 1.1 2010/06/28 07:58:07 pav Exp $
+# $FreeBSD: ports/net/bird-devel/files/bird.in,v 1.1 2011/11/08 09:44:29 sem Exp $
 #
 # PROVIDE: bird
 # REQUIRE: LOGIN
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="bird"
-rcvar=${name}_enable
+rcvar=bird_enable
 
 command=%%PREFIX%%/sbin/${name}
 

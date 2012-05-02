@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/whoson/files/whoson.sh.in,v 1.1 2006/05/13 21:39:05 sem Exp $
+# $FreeBSD: ports/mail/whoson/files/whoson.sh.in,v 1.2 2010/03/27 00:13:27 dougb Exp $
 #
 
 # PROVIDE: whoson
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=whosond
-rcvar=`set_rcvar`
+rcvar=whosond_enable
 
 command=%%PREFIX%%/sbin/${name}
 required_files=%%PREFIX%%/etc/whoson.conf

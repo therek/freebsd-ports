@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/moosefs-master/files/mfscgiserv.in,v 1.1 2010/04/07 02:54:15 wen Exp $
 #
 
 # PROVIDE: mfscgiserv
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=mfscgiserv
-rcvar=`set_rcvar`
+rcvar=mfscgiserv_enable
 
 command=%%PREFIX%%/sbin/mfscgiserv
 

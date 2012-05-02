@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/net/quagga/files/watchquagga.sh.in,v 1.7 2011/05/15 02:49:10 dougb Exp $
+# $FreeBSD: ports/net/quagga-re/files/watchquagga.sh.in,v 1.1 2011/11/25 14:09:12 sem Exp $
 #
 # PROVIDE: watchquagga
 # REQUIRE: NETWORKING quagga
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="watchquagga"
-rcvar=`set_rcvar`
+rcvar=watchquagga_enable
 
 
 stop_postcmd=stop_postcmd

@@ -1,5 +1,5 @@
---- makefile.orig	2011-11-01 12:55:40.000000000 +0100
-+++ makefile	2011-11-23 10:05:28.000000000 +0100
+--- makefile.orig	2012-01-01 16:17:58.000000000 +0100
++++ makefile	2012-02-03 11:22:53.000000000 +0100
 @@ -12,14 +12,14 @@
  # CFLAGS = -O2 -fomit-frame-pointer -Wall -Wextra -Wswitch-default -Wcast-qual -Waggregate-return -Wwrite-strings -Winline -Wconversion -Wshadow -Wpointer-arith -Wmissing-noreturn -Wno-multichar
  # CFLAGS = -O2 -g -Wall -Wstrict-prototypes -Winline -Wconversion -Wshadow -Wpointer-arith -ftrapv

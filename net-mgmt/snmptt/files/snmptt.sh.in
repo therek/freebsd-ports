@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/snmptt/files/snmptt.sh.in,v 1.3 2009/07/15 16:56:00 dougb Exp $
+# $FreeBSD: ports/net-mgmt/snmptt/files/snmptt.sh.in,v 1.4 2010/03/27 00:14:28 dougb Exp $
 #
 
 # PROVIDE: snmptt
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name=snmptt
-rcvar=`set_rcvar`
+rcvar=snmptt_enable
 
 command=%%PREFIX%%/sbin/${name}
 command_args=">/dev/null --daemon"

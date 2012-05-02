@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	calibre
-PORTVERSION=	0.8.26
+PORTVERSION=	0.8.40
 CATEGORIES=	deskutils python
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}/
 
@@ -19,38 +19,39 @@ LIB_DEPENDS=	MagickWand.5:${PORTSDIR}/graphics/ImageMagick \
 		wmflite:${PORTSDIR}/graphics/libwmf \
 		chm.0:${PORTSDIR}/misc/chmlib \
 		icudata.48:${PORTSDIR}/devel/icu
-BUILD_DEPENDS=	py*-setuptools>=0:${PORTSDIR}/devel/py-setuptools \
-		py*-sip>=0:${PORTSDIR}/devel/py-sip \
-		py*-qt4-core>=0:${PORTSDIR}/devel/py-qt4-core \
-		py*-qt4-gui>=0:${PORTSDIR}/x11-toolkits/py-qt4-gui \
-		py*-cssutils>=0:${PORTSDIR}/www/py-cssutils \
-		py*-dateutil>=0:${PORTSDIR}/devel/py-dateutil \
-		py*-lxml>=0:${PORTSDIR}/devel/py-lxml
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=0:${PORTSDIR}/devel/py-setuptools \
+		${PYTHON_PKGNAMEPREFIX}sip>=0:${PORTSDIR}/devel/py-sip \
+		${PYTHON_PKGNAMEPREFIX}qt4-core>=0:${PORTSDIR}/devel/py-qt4-core \
+		${PYTHON_PKGNAMEPREFIX}qt4-gui>=0:${PORTSDIR}/x11-toolkits/py-qt4-gui \
+		${PYTHON_PKGNAMEPREFIX}cssutils>=0:${PORTSDIR}/www/py-cssutils \
+		${PYTHON_PKGNAMEPREFIX}dateutil>=0:${PORTSDIR}/devel/py-dateutil \
+		${PYTHON_PKGNAMEPREFIX}lxml>=0:${PORTSDIR}/devel/py-lxml
 RUN_DEPENDS=	xdg-open:${PORTSDIR}/devel/xdg-utils \
-		py*-dnspython>=0:${PORTSDIR}/dns/py-dnspython \
-		py*-dateutil>=0:${PORTSDIR}/devel/py-dateutil \
-		py*-beautifulsoup>=0:${PORTSDIR}/www/py-beautifulsoup \
-		py*-imaging>=0:${PORTSDIR}/graphics/py-imaging \
-		py*-lxml>=0:${PORTSDIR}/devel/py-lxml \
-		py*-mechanize>=0:${PORTSDIR}/www/py-mechanize \
-		py*-sqlite3>=0:${PORTSDIR}/databases/py-sqlite3 \
-		py*-qt4-core>=0:${PORTSDIR}/devel/py-qt4-core \
-		py*-qt4-gui>=0:${PORTSDIR}/x11-toolkits/py-qt4-gui \
-		py*-qt4-network>=0:${PORTSDIR}/net/py-qt4-network \
-		py*-qt4-svg>=0:${PORTSDIR}/graphics/py-qt4-svg \
-		py*-qt4-webkit>=0:${PORTSDIR}/www/py-qt4-webkit \
-		py*-qt4-xml>=0:${PORTSDIR}/textproc/py-qt4-xml
+		${PYTHON_PKGNAMEPREFIX}dnspython>=0:${PORTSDIR}/dns/py-dnspython \
+		${PYTHON_PKGNAMEPREFIX}dateutil>=0:${PORTSDIR}/devel/py-dateutil \
+		${PYTHON_PKGNAMEPREFIX}beautifulsoup>=0:${PORTSDIR}/www/py-beautifulsoup \
+		${PYTHON_PKGNAMEPREFIX}imaging>=0:${PORTSDIR}/graphics/py-imaging \
+		${PYTHON_PKGNAMEPREFIX}lxml>=0:${PORTSDIR}/devel/py-lxml \
+		${PYTHON_PKGNAMEPREFIX}mechanize>=0:${PORTSDIR}/www/py-mechanize \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:${PORTSDIR}/databases/py-sqlite3 \
+		${PYTHON_PKGNAMEPREFIX}qt4-core>=0:${PORTSDIR}/devel/py-qt4-core \
+		${PYTHON_PKGNAMEPREFIX}qt4-gui>=0:${PORTSDIR}/x11-toolkits/py-qt4-gui \
+		${PYTHON_PKGNAMEPREFIX}qt4-network>=0:${PORTSDIR}/net/py-qt4-network \
+		${PYTHON_PKGNAMEPREFIX}qt4-svg>=0:${PORTSDIR}/graphics/py-qt4-svg \
+		${PYTHON_PKGNAMEPREFIX}qt4-webkit>=0:${PORTSDIR}/www/py-qt4-webkit \
+		${PYTHON_PKGNAMEPREFIX}qt4-xml>=0:${PORTSDIR}/textproc/py-qt4-xml \
+		${PYTHON_PKGNAMEPREFIX}dbus>=0:${PORTSDIR}/devel/py-dbus \
+		pdftohtml:${PORTSDIR}/graphics/poppler-utils \
+		lshal:${PORTSDIR}/sysutils/hal
 
-OPTIONS=	PODOFO "PDF support via PoDoFo library" on \
-		MOUNTHELPER_SUID "Install mount helper as suid binary" off
+OPTIONS=	PODOFO	"PDF support via PoDoFo library" on
 
-USE_GETTEXT=	yes
-USE_PYTHON=	2.7+
+USE_XZ=		yes
+USE_PYTHON=	2.7
 USE_QT_VER=	4
 QT_COMPONENTS=	qmake_build moc_build
 INSTALLS_ICONS=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
-PYSETUP=	setup.py
 CFLAGS+=	"-I${LOCALBASE}/include"
 LDFLAGS+=	"-L${LOCALBASE}/lib"
 MAKE_ENV+=	FC_INC_DIR="${LOCALBASE}/include/fontconfig" \
@@ -95,18 +96,13 @@ do-build:
 		${PYSETUP} build)
 
 do-install:
-	${MKDIR} ${PREFIX}/share/desktop-directories
-	${MKDIR} ${PREFIX}/share/applications
-	${MKDIR} ${PREFIX}/share/gnome/apps
-	${MKDIR} ${PREFIX}/share/mime/packages
-	${MKDIR} ${PREFIX}/share/icons/hicolor/128x128/apps
+.for dir in desktop-directories applications  gnome/apps mime/packages icons/hicolor/128x128/apps
+	${MKDIR} ${PREFIX}/share/${dir}
+.endfor
 	@(cd ${BUILD_WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} \
-		${PYSETUP} install --prefix ${PREFIX})
+		${PYSETUP} ${INSTALL} --prefix ${PREFIX})
 
 post-install:
-.if defined(WITH_MOUNTHELPER_SUID)
-	${CHOWN} ${BINOWN}:operator ${PREFIX}/bin/calibre-mount-helper
-	${CHMOD} ug+s ${PREFIX}/bin/calibre-mount-helper
-.endif
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>

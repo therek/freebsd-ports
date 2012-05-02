@@ -18,6 +18,7 @@
     SUBDIR += charis-compact
     SUBDIR += code2000
     SUBDIR += code2001
+    SUBDIR += croscorefonts-fonts-ttf
     SUBDIR += cyberbit-ttfonts
     SUBDIR += cyr-rfx
     SUBDIR += dejavu
@@ -130,6 +131,7 @@
     SUBDIR += profont
     SUBDIR += proggy_fonts
     SUBDIR += proggy_fonts-ttf
+    SUBDIR += roboto-fonts-ttf
     SUBDIR += sgifonts
     SUBDIR += sharefonts
     SUBDIR += showfont

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/security/sancp/files/sancp.in,v 1.2 2011/05/15 02:49:14 dougb Exp $
 #
 # PROVIDE: sancp
 # REQUIRE: DAEMON
@@ -55,7 +55,7 @@
 . /etc/rc.subr
 
 name="sancp"
-rcvar=`set_rcvar`
+rcvar=sancp_enable
 
 command="%%PREFIX%%/bin/sancp"
 

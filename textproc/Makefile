@@ -5,6 +5,7 @@
 
     SUBDIR += 2bsd-diff
     SUBDIR += R-cran-XML
+    SUBDIR += R-cran-stringr
     SUBDIR += R-cran-xtable
     SUBDIR += add-css-links
     SUBDIR += af-aspell
@@ -173,6 +174,7 @@
     SUBDIR += exslt
     SUBDIR += ezxml
     SUBDIR += fa-aspell
+    SUBDIR += fcitx-keyboard
     SUBDIR += fex
     SUBDIR += ffe
     SUBDIR += fi-aspell
@@ -232,10 +234,10 @@
     SUBDIR += hil-aspell
     SUBDIR += hr-aspell
     SUBDIR += hs-Diff
+    SUBDIR += hs-HStringTemplate
     SUBDIR += hs-HaXml
     SUBDIR += hs-attoparsec
     SUBDIR += hs-attoparsec-enumerator
-    SUBDIR += hs-attoparsec-text
     SUBDIR += hs-blaze-html
     SUBDIR += hs-bytestring-csv
     SUBDIR += hs-case-insensitive
@@ -266,7 +268,10 @@
     SUBDIR += hs-xhtml
     SUBDIR += hs-xhtml-docs
     SUBDIR += hs-xml
+    SUBDIR += hs-xml-enumerator
+    SUBDIR += hs-xml-types
     SUBDIR += hs-xmlhtml
+    SUBDIR += hs-yaml
     SUBDIR += hsb-aspell
     SUBDIR += htdig
     SUBDIR += html
@@ -295,6 +300,7 @@
     SUBDIR += id-aspell
     SUBDIR += id-hyphen
     SUBDIR += idnits
+    SUBDIR += igor
     SUBDIR += iksemel
     SUBDIR += info2html
     SUBDIR += info2man
@@ -351,6 +357,7 @@
     SUBDIR += libcue
     SUBDIR += libebml
     SUBDIR += libextractor
+    SUBDIR += libexttextcat
     SUBDIR += libkmfl
     SUBDIR += liblinebreak
     SUBDIR += liblingoteach
@@ -442,6 +449,7 @@
     SUBDIR += nb-aspell
     SUBDIR += nds-aspell
     SUBDIR += nl-aspell
+    SUBDIR += nl-hunspell
     SUBDIR += nl-hyphen
     SUBDIR += nl-ispell
     SUBDIR += nl-mythes
@@ -455,6 +463,7 @@
     SUBDIR += ocaml-expat
     SUBDIR += ocaml-pxp
     SUBDIR += ocaml-text
+    SUBDIR += ocaml-tyxml
     SUBDIR += odt2txt
     SUBDIR += openfts
     SUBDIR += openjade
@@ -785,6 +794,7 @@
     SUBDIR += p5-Text-Highlight
     SUBDIR += p5-Text-HikiDoc
     SUBDIR += p5-Text-Language-Guess
+    SUBDIR += p5-Text-Lorem
     SUBDIR += p5-Text-Markdown
     SUBDIR += p5-Text-Match-FastAlternatives
     SUBDIR += p5-Text-Metaphone
@@ -1150,7 +1160,6 @@
     SUBDIR += pybook
     SUBDIR += pychm
     SUBDIR += pystemmer
-    SUBDIR += qgoogletranslator
     SUBDIR += qstardict
     SUBDIR += qt4-clucene
     SUBDIR += qt4-xml
@@ -1409,6 +1418,7 @@
     SUBDIR += webcpp
     SUBDIR += website
     SUBDIR += weka
+    SUBDIR += wiggle
     SUBDIR += word2x
     SUBDIR += wordnet
     SUBDIR += words

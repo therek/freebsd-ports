@@ -6,11 +6,11 @@
 #
 
 PORTNAME=	DBIx-Custom
-PORTVERSION=	0.2104
+PORTVERSION=	0.2300
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:KIMOTO
 PKGNAMEPREFIX=	p5-
+DISTNAME=	${PORTNAME}-${PORTVERSION:C/00$//}
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Customizable DBI
@@ -29,7 +29,6 @@ PERL_CONFIGURE=	yes
 
 MAN3=		DBIx::Custom.3 \
 		DBIx::Custom::Guide.3 \
-		DBIx::Custom::Guide::Ja.3 \
 		DBIx::Custom::Mapper.3 \
 		DBIx::Custom::Model.3 \
 		DBIx::Custom::NotExists.3 \

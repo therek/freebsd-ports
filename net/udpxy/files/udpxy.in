@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/udpxy/files/udpxy.in,v 1.3 2010/03/27 00:14:08 dougb Exp $
+# $FreeBSD: ports/net/udpxy/files/udpxy.in,v 1.4 2010/05/09 11:21:50 miwi Exp $
 #
 
 # PROVIDE: udpxy
@@ -21,7 +21,7 @@
 . /etc/rc.subr
 
 name="udpxy"
-rcvar=$(set_rcvar)
+rcvar=udpxy_enable
 
 load_rc_config ${name}
 

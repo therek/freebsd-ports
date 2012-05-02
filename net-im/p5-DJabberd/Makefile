@@ -6,10 +6,10 @@
 #
 
 PORTNAME=	DJabberd
-PORTVERSION=	0.83
+PORTVERSION=	0.85
 CATEGORIES=	net-im perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:BRADFITZ
+MASTER_SITE_SUBDIR=	CPAN:MART
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	skv@FreeBSD.org
@@ -22,15 +22,26 @@ BUILD_DEPENDS=	${SITE_PERL}/Danga/Socket.pm:${PORTSDIR}/devel/p5-Danga-Socket \
 		${SITE_PERL}/${PERL_ARCH}/Net/SSLeay.pm:${PORTSDIR}/security/p5-Net-SSLeay \
 		${SITE_PERL}/Log/Log4perl.pm:${PORTSDIR}/devel/p5-Log-Log4perl \
 		${SITE_PERL}/Digest/HMAC_SHA1.pm:${PORTSDIR}/security/p5-Digest-HMAC
-RUN_DEPENDS=	${BUILD_DEPENDS}
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	yes
 
-MAN3=		DJabberd.3 DJabberd::Component.3 \
-		DJabberd::Component::Example.3 DJabberd::Component::External.3 \
-		DJabberd::Connection::ComponentIn.3 \
-		DJabberd::Connection::ComponentOut.3 \
-		DJabberd::Delivery::ComponentConnection.3 \
-		DJabberd::Delivery::LocalVHosts.3
+MAN3=	DJabberd.3\
+	DJabberd::Agent.3\
+	DJabberd::Agent::Node.3\
+	DJabberd::Component.3\
+	DJabberd::Component::Example.3\
+	DJabberd::Component::External.3\
+	DJabberd::Component::Node.3\
+	DJabberd::Config.3\
+	DJabberd::Connection::ComponentIn.3\
+	DJabberd::Connection::ComponentOut.3\
+	DJabberd::Delivery::ComponentConnection.3\
+	DJabberd::Delivery::LocalVHosts.3\
+	DJabberd::SASL.3\
+	DJabberd::SASL::AuthenSASL.3\
+	DJabberd::SASL::Connection.3\
+	DJabberd::SASL::DumbPlain.3\
+	DJabberd::SASL::ManagerBase.3
 
 .include <bsd.port.mk>

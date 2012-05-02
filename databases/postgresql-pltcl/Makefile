@@ -10,7 +10,7 @@ PORTREVISION=	3
 CATEGORIES=	databases tcl
 PKGNAMESUFFIX=	-pltcl
 
-MAINTAINER=	girgen@FreeBSD.org
+MAINTAINER=	crees@FreeBSD.org
 COMMENT=	A module for using Tcl to write SQL functions
 
 MASTERDIR=	${.CURDIR}/../../databases/postgresql${PGSQL_VER}-server
@@ -44,7 +44,8 @@ CONFIGURE_ARGS=	--with-tcl --without-tk \
 CONFIGURE_ENV+=	TCLSH="${TCLSH}"
 MAKE_ENV+=	TCL_INCDIR="${TCL_INCLUDEDIR}"
 
-BUILD_DIRS=	src/pl/tcl
+BUILD_DIRS=	src/backend src/pl/tcl
+INSTALL_DIRS=	src/pl/tcl
 SLAVE_ONLY=	yes
 
 .include "${MASTERDIR}/Makefile"

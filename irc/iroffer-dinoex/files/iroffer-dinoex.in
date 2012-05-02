@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/irc/iroffer-dinoex/files/iroffer-dinoex.in,v 1.1 2010/05/08 19:50:14 dinoex Exp $
+# $FreeBSD: ports/irc/iroffer-dinoex/files/iroffer-dinoex.in,v 1.2 2010/08/07 07:32:41 dinoex Exp $
 #
 
 # PROVIDE: iroffer
@@ -21,7 +21,7 @@
 . /etc/rc.subr
 
 name="iroffer"
-rcvar=`set_rcvar`
+rcvar=iroffer_enable
 
 # read configuration and set defaults
 load_rc_config "$name"

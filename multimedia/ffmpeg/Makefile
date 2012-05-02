@@ -5,8 +5,8 @@
 # $FreeBSD$
 
 PORTNAME=	ffmpeg
-PORTVERSION=	0.7.8
-PORTREVISION=	1
+PORTVERSION=	0.7.11
+PORTREVISION?=	4
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio ipv6 net
 MASTER_SITES=	http://ffmpeg.org/releases/
@@ -278,7 +278,7 @@ CONFIGURE_ARGS+=	--disable-librtmp
 
 # schroedinger
 .if !defined(WITHOUT_SCHROEDINGER)
-LIB_DEPENDS+=	schroedinger-1.0.10:${PORTSDIR}/multimedia/schroedinger
+LIB_DEPENDS+=	schroedinger-1.0.11:${PORTSDIR}/multimedia/schroedinger
 CONFIGURE_ARGS+=	--enable-libschroedinger
 .else
 CONFIGURE_ARGS+=	--disable-libschroedinger
@@ -357,7 +357,7 @@ CONFIGURE_ARGS+=	--disable-libvorbis
 
 # vp8
 .if !defined(WITHOUT_VP8)
-LIB_DEPENDS+=	vpx.0:${PORTSDIR}/multimedia/libvpx
+LIB_DEPENDS+=	vpx.1:${PORTSDIR}/multimedia/libvpx
 CONFIGURE_ARGS+=	--enable-libvpx
 .else
 CONFIGURE_ARGS+=	--disable-libvpx

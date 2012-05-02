@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/pmacct/files/pmacctd.in,v 1.1 2011/05/15 14:08:00 wxs Exp $
 #
 
 # PROVIDE: pmacctd
@@ -23,7 +23,7 @@
 . /etc/rc.subr
 
 name=pmacctd
-rcvar=`set_rcvar`
+rcvar=pmacctd_enable
 
 command=%%PREFIX%%/$name
 

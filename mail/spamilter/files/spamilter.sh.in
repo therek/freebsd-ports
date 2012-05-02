@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/mail/spamilter/files/spamilter.sh.in,v 1.2 2009/07/15 16:55:49 dougb Exp $
+# $FreeBSD: ports/mail/spamilter/files/spamilter.sh.in,v 1.4 2012/01/14 08:56:05 dougb Exp $
 
 # Start or stop spamilter
 
@@ -24,7 +24,7 @@ spamilter_enable=${spamilter_enable:-"NO"}      # Enable spamilter-milter
 . /etc/rc.subr
 
 name="spamilter"
-rcvar=`set_rcvar`
+rcvar="spamilter_enable"
 command="%%PREFIX%%/bin/spamilter"
 pidfile="/tmp/Spamilter.pid"
 required_files="%%PREFIX%%/etc/spamilter.rc"

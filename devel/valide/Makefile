@@ -6,19 +6,16 @@
 #
 
 PORTNAME=	valide
-PORTVERSION=	0.7.0
-PORTREVISION=	1
+PORTVERSION=	0.7.1
 CATEGORIES=	devel
-MASTER_SITES=	http://${PORTNAME}.googlecode.com/files/
+MASTER_SITES=	http://launchpadlibrarian.net/68237064/
 
 MAINTAINER=	romain@FreeBSD.org
 COMMENT=	An IDE for the Vala programming language
 
 LIB_DEPENDS=	gdl-1:${PORTSDIR}/x11-toolkits/gdl
 BUILD_DEPENDS=	valac:${PORTSDIR}/lang/vala
-RUN_DEPENDS=	${BUILD_DEPENDS}
-
-BROKEN=		Doesn't build with vala-0.10
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 INSTALLS_ICONS=	yes
 USE_GETTEXT=	yes

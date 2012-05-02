@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/hudson/files/hudson.sh.in,v 1.2 2010/03/27 00:15:13 dougb Exp $
+# $FreeBSD: ports/www/hudson/files/hudson.sh.in,v 1.3 2011/05/15 02:49:16 dougb Exp $
 #
 
 # PROVIDE: hudson
@@ -44,7 +44,7 @@ hudson_log_file=/var/log/hudson.log
 . /etc/rc.subr
 
 name="hudson"
-rcvar=`set_rcvar`
+rcvar=hudson_enable
 
 load_rc_config "${name}"
 

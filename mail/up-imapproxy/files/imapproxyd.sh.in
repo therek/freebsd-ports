@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/up-imapproxy/files/imapproxyd.sh.in,v 1.5 2010/03/27 00:13:26 dougb Exp $
+# $FreeBSD: ports/mail/up-imapproxy/files/imapproxyd.sh.in,v 1.6 2012/01/06 00:56:42 scheidell Exp $
 #
 # PROVIDE: imapproxyd
 # REQUIRE: DAEMON courier_imap_imapd courier_imap_imapd_ssl cyrus_imapd inetd %%DOVECOT%%
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name=imapproxyd
-rcvar=${name}_enable
+rcvar=imapproxyd_enable
 
 load_rc_config $name
 

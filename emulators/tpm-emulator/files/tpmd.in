@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/emulators/tpm-emulator/files/tpmd.in,v 1.1 2010/12/13 18:38:54 nork Exp $
+# $FreeBSD: ports/emulators/tpm-emulator/files/tpmd.in,v 1.2 2010/12/14 16:26:27 nork Exp $
 #
 # PROVIDE: tpmd
 # REQUIRE: SERVERS
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=tpmd
-rcvar=`set_rcvar`
+rcvar=tpmd_enable
 command="%%PREFIX%%/bin/${name}"
 
 load_rc_config $name

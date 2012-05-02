@@ -121,6 +121,7 @@ lib/calibre/calibre/db/schema_upgrades.py
 lib/calibre/calibre/db/errors.py
 lib/calibre/calibre/db/tables.py
 lib/calibre/calibre/db/cache.py
+lib/calibre/calibre/db/lazy.py
 lib/calibre/calibre/db/view.py
 lib/calibre/calibre/db/fields.py
 lib/calibre/calibre/db/tests/__init__.py
@@ -130,44 +131,8 @@ lib/calibre/calibre/ebooks/BeautifulSoup.py
 lib/calibre/calibre/ebooks/__init__.py
 lib/calibre/calibre/ebooks/azw4/__init__.py
 lib/calibre/calibre/ebooks/azw4/reader.py
-lib/calibre/calibre/ebooks/azw4/input.py
-lib/calibre/calibre/ebooks/chardet/__init__.py
-lib/calibre/calibre/ebooks/chardet/big5freq.py
-lib/calibre/calibre/ebooks/chardet/big5prober.py
-lib/calibre/calibre/ebooks/chardet/chardistribution.py
-lib/calibre/calibre/ebooks/chardet/charsetgroupprober.py
-lib/calibre/calibre/ebooks/chardet/charsetprober.py
-lib/calibre/calibre/ebooks/chardet/codingstatemachine.py
-lib/calibre/calibre/ebooks/chardet/constants.py
-lib/calibre/calibre/ebooks/chardet/escprober.py
-lib/calibre/calibre/ebooks/chardet/escsm.py
-lib/calibre/calibre/ebooks/chardet/eucjpprober.py
-lib/calibre/calibre/ebooks/chardet/euckrfreq.py
-lib/calibre/calibre/ebooks/chardet/euckrprober.py
-lib/calibre/calibre/ebooks/chardet/euctwfreq.py
-lib/calibre/calibre/ebooks/chardet/euctwprober.py
-lib/calibre/calibre/ebooks/chardet/gb2312freq.py
-lib/calibre/calibre/ebooks/chardet/gb2312prober.py
-lib/calibre/calibre/ebooks/chardet/hebrewprober.py
-lib/calibre/calibre/ebooks/chardet/jisfreq.py
-lib/calibre/calibre/ebooks/chardet/jpcntx.py
-lib/calibre/calibre/ebooks/chardet/langbulgarianmodel.py
-lib/calibre/calibre/ebooks/chardet/langcyrillicmodel.py
-lib/calibre/calibre/ebooks/chardet/langgreekmodel.py
-lib/calibre/calibre/ebooks/chardet/langhebrewmodel.py
-lib/calibre/calibre/ebooks/chardet/langhungarianmodel.py
-lib/calibre/calibre/ebooks/chardet/langthaimodel.py
-lib/calibre/calibre/ebooks/chardet/latin1prober.py
-lib/calibre/calibre/ebooks/chardet/mbcharsetprober.py
-lib/calibre/calibre/ebooks/chardet/mbcsgroupprober.py
-lib/calibre/calibre/ebooks/chardet/mbcssm.py
-lib/calibre/calibre/ebooks/chardet/sbcharsetprober.py
-lib/calibre/calibre/ebooks/chardet/sbcsgroupprober.py
-lib/calibre/calibre/ebooks/chardet/sjisprober.py
-lib/calibre/calibre/ebooks/chardet/universaldetector.py
-lib/calibre/calibre/ebooks/chardet/utf8prober.py
+lib/calibre/calibre/ebooks/chardet.py
 lib/calibre/calibre/ebooks/chm/__init__.py
-lib/calibre/calibre/ebooks/chm/input.py
 lib/calibre/calibre/ebooks/chm/metadata.py
 lib/calibre/calibre/ebooks/chm/reader.py
 lib/calibre/calibre/ebooks/comic/__init__.py
@@ -181,45 +146,73 @@ lib/calibre/calibre/ebooks/conversion/config.py
 lib/calibre/calibre/ebooks/conversion/plumber.py
 lib/calibre/calibre/ebooks/conversion/preprocess.py
 lib/calibre/calibre/ebooks/conversion/utils.py
+lib/calibre/calibre/ebooks/conversion/plugins/pml_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/htmlz_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/tcr_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/chm_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/odt_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/mobi_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/lrf_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/pdb_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/epub_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/pdb_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/pdf_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/lit_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/djvu_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/snb_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/tcr_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/rtf_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/fb2_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/__init__.py
+lib/calibre/calibre/ebooks/conversion/plugins/snb_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/azw4_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/pdf_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/mobi_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/fb2_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/rb_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/htmlz_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/txt_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/html_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/comic_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/rtf_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/lit_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/pml_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/html_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/lrf_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/oeb_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/recipe_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/txt_output.py
+lib/calibre/calibre/ebooks/conversion/plugins/epub_input.py
+lib/calibre/calibre/ebooks/conversion/plugins/rb_input.py
 lib/calibre/calibre/ebooks/cssselect.py
 lib/calibre/calibre/ebooks/djvu/__init__.py
 lib/calibre/calibre/ebooks/djvu/djvubzzdec.py
 lib/calibre/calibre/ebooks/djvu/djvu.py
-lib/calibre/calibre/ebooks/djvu/input.py
 lib/calibre/calibre/ebooks/epub/__init__.py
 lib/calibre/calibre/ebooks/epub/fix/__init__.py
 lib/calibre/calibre/ebooks/epub/fix/container.py
 lib/calibre/calibre/ebooks/epub/fix/epubcheck.py
 lib/calibre/calibre/ebooks/epub/fix/main.py
 lib/calibre/calibre/ebooks/epub/fix/unmanifested.py
-lib/calibre/calibre/ebooks/epub/input.py
-lib/calibre/calibre/ebooks/epub/output.py
 lib/calibre/calibre/ebooks/epub/pages.py
 lib/calibre/calibre/ebooks/epub/periodical.py
 lib/calibre/calibre/ebooks/fb2/__init__.py
 lib/calibre/calibre/ebooks/fb2/fb2ml.py
-lib/calibre/calibre/ebooks/fb2/input.py
-lib/calibre/calibre/ebooks/fb2/output.py
 lib/calibre/calibre/ebooks/html/__init__.py
 lib/calibre/calibre/ebooks/html/input.py
 lib/calibre/calibre/ebooks/html/meta.py
-lib/calibre/calibre/ebooks/html/output.py
 lib/calibre/calibre/ebooks/html/to_zip.py
 lib/calibre/calibre/ebooks/htmlz/__init__.py
 lib/calibre/calibre/ebooks/htmlz/oeb2html.py
-lib/calibre/calibre/ebooks/htmlz/output.py
-lib/calibre/calibre/ebooks/htmlz/input.py
 lib/calibre/calibre/ebooks/hyphenate.py
 lib/calibre/calibre/ebooks/iterator/__init__.py
 lib/calibre/calibre/ebooks/lit/__init__.py
 lib/calibre/calibre/ebooks/lit/from_any.py
-lib/calibre/calibre/ebooks/lit/input.py
 lib/calibre/calibre/ebooks/lit/lzx.py
 lib/calibre/calibre/ebooks/lit/maps/__init__.py
 lib/calibre/calibre/ebooks/lit/maps/html.py
 lib/calibre/calibre/ebooks/lit/maps/opf.py
 lib/calibre/calibre/ebooks/lit/mssha1.py
-lib/calibre/calibre/ebooks/lit/output.py
 lib/calibre/calibre/ebooks/lit/reader.py
 lib/calibre/calibre/ebooks/lit/writer.py
 lib/calibre/calibre/ebooks/lrf/__init__.py
@@ -236,7 +229,6 @@ lib/calibre/calibre/ebooks/lrf/lrs/__init__.py
 lib/calibre/calibre/ebooks/lrf/lrs/convert_from.py
 lib/calibre/calibre/ebooks/lrf/meta.py
 lib/calibre/calibre/ebooks/lrf/objects.py
-lib/calibre/calibre/ebooks/lrf/output.py
 lib/calibre/calibre/ebooks/lrf/pylrs/__init__.py
 lib/calibre/calibre/ebooks/lrf/pylrs/elements.py
 lib/calibre/calibre/ebooks/lrf/pylrs/pylrf.py
@@ -318,10 +310,8 @@ lib/calibre/calibre/ebooks/metadata/zip.py
 lib/calibre/calibre/ebooks/mobi/__init__.py
 lib/calibre/calibre/ebooks/mobi/debug.py
 lib/calibre/calibre/ebooks/mobi/huffcdic.py
-lib/calibre/calibre/ebooks/mobi/input.py
 lib/calibre/calibre/ebooks/mobi/langcodes.py
 lib/calibre/calibre/ebooks/mobi/mobiml.py
-lib/calibre/calibre/ebooks/mobi/output.py
 lib/calibre/calibre/ebooks/mobi/reader.py
 lib/calibre/calibre/ebooks/mobi/utils.py
 lib/calibre/calibre/ebooks/mobi/writer.py
@@ -333,11 +323,11 @@ lib/calibre/calibre/ebooks/odt/__init__.py
 lib/calibre/calibre/ebooks/odt/input.py
 lib/calibre/calibre/ebooks/oeb/__init__.py
 lib/calibre/calibre/ebooks/oeb/base.py
-lib/calibre/calibre/ebooks/oeb/entitydefs.py
 lib/calibre/calibre/ebooks/oeb/iterator.py
-lib/calibre/calibre/ebooks/oeb/output.py
+lib/calibre/calibre/ebooks/oeb/parse_utils.py
 lib/calibre/calibre/ebooks/oeb/reader.py
 lib/calibre/calibre/ebooks/oeb/stylizer.py
+lib/calibre/calibre/ebooks/oeb/display/test-cfi/run.py
 lib/calibre/calibre/ebooks/oeb/transforms/__init__.py
 lib/calibre/calibre/ebooks/oeb/transforms/cover.py
 lib/calibre/calibre/ebooks/oeb/transforms/filenames.py
@@ -366,8 +356,6 @@ lib/calibre/calibre/ebooks/pdb/ereader/writer.py
 lib/calibre/calibre/ebooks/pdb/formatreader.py
 lib/calibre/calibre/ebooks/pdb/formatwriter.py
 lib/calibre/calibre/ebooks/pdb/header.py
-lib/calibre/calibre/ebooks/pdb/input.py
-lib/calibre/calibre/ebooks/pdb/output.py
 lib/calibre/calibre/ebooks/pdb/palmdoc/__init__.py
 lib/calibre/calibre/ebooks/pdb/palmdoc/reader.py
 lib/calibre/calibre/ebooks/pdb/palmdoc/writer.py
@@ -380,7 +368,6 @@ lib/calibre/calibre/ebooks/pdb/ztxt/reader.py
 lib/calibre/calibre/ebooks/pdb/ztxt/writer.py
 lib/calibre/calibre/ebooks/pdf/__init__.py
 lib/calibre/calibre/ebooks/pdf/from_comic.py
-lib/calibre/calibre/ebooks/pdf/input.py
 lib/calibre/calibre/ebooks/pdf/manipulate/__init__.py
 lib/calibre/calibre/ebooks/pdf/manipulate/cli.py
 lib/calibre/calibre/ebooks/pdf/manipulate/crop.py
@@ -391,20 +378,15 @@ lib/calibre/calibre/ebooks/pdf/manipulate/merge.py
 lib/calibre/calibre/ebooks/pdf/manipulate/reverse.py
 lib/calibre/calibre/ebooks/pdf/manipulate/rotate.py
 lib/calibre/calibre/ebooks/pdf/manipulate/split.py
-lib/calibre/calibre/ebooks/pdf/output.py
 lib/calibre/calibre/ebooks/pdf/pageoptions.py
 lib/calibre/calibre/ebooks/pdf/pdftohtml.py
 lib/calibre/calibre/ebooks/pdf/reflow.py
 lib/calibre/calibre/ebooks/pdf/verify.py
 lib/calibre/calibre/ebooks/pdf/writer.py
 lib/calibre/calibre/ebooks/pml/__init__.py
-lib/calibre/calibre/ebooks/pml/input.py
-lib/calibre/calibre/ebooks/pml/output.py
 lib/calibre/calibre/ebooks/pml/pmlconverter.py
 lib/calibre/calibre/ebooks/pml/pmlml.py
 lib/calibre/calibre/ebooks/rb/__init__.py
-lib/calibre/calibre/ebooks/rb/input.py
-lib/calibre/calibre/ebooks/rb/output.py
 lib/calibre/calibre/ebooks/rb/rbml.py
 lib/calibre/calibre/ebooks/rb/reader.py
 lib/calibre/calibre/ebooks/rb/writer.py
@@ -415,7 +397,6 @@ lib/calibre/calibre/ebooks/readability/htmls.py
 lib/calibre/calibre/ebooks/readability/readability.py
 lib/calibre/calibre/ebooks/rtf/__init__.py
 lib/calibre/calibre/ebooks/rtf/input.py
-lib/calibre/calibre/ebooks/rtf/output.py
 lib/calibre/calibre/ebooks/rtf/preprocess.py
 lib/calibre/calibre/ebooks/rtf/rtfml.py
 lib/calibre/calibre/ebooks/rtf2xml/ParseRtf.py
@@ -469,21 +450,15 @@ lib/calibre/calibre/ebooks/rtf2xml/table_info.py
 lib/calibre/calibre/ebooks/rtf2xml/tokenize.py
 lib/calibre/calibre/ebooks/sgmllib.py
 lib/calibre/calibre/ebooks/snb/__init__.py
-lib/calibre/calibre/ebooks/snb/input.py
-lib/calibre/calibre/ebooks/snb/output.py
 lib/calibre/calibre/ebooks/snb/snbfile.py
 lib/calibre/calibre/ebooks/snb/snbml.py
 lib/calibre/calibre/ebooks/tcr/__init__.py
-lib/calibre/calibre/ebooks/tcr/input.py
-lib/calibre/calibre/ebooks/tcr/output.py
 lib/calibre/calibre/ebooks/textile/__init__.py
 lib/calibre/calibre/ebooks/textile/functions.py
 lib/calibre/calibre/ebooks/textile/unsmarten.py
 lib/calibre/calibre/ebooks/txt/__init__.py
-lib/calibre/calibre/ebooks/txt/input.py
 lib/calibre/calibre/ebooks/txt/markdownml.py
 lib/calibre/calibre/ebooks/txt/newlines.py
-lib/calibre/calibre/ebooks/txt/output.py
 lib/calibre/calibre/ebooks/txt/processor.py
 lib/calibre/calibre/ebooks/txt/textileml.py
 lib/calibre/calibre/ebooks/txt/txtml.py
@@ -535,6 +510,7 @@ lib/calibre/calibre/gui2/add.py
 lib/calibre/calibre/gui2/add_wizard/__init__.py
 lib/calibre/calibre/gui2/add_wizard/scan_ui.py
 lib/calibre/calibre/gui2/add_wizard/welcome_ui.py
+lib/calibre/calibre/gui2/auto_add.py
 lib/calibre/calibre/gui2/bars.py
 lib/calibre/calibre/gui2/book_details.py
 lib/calibre/calibre/gui2/catalog/__init__.py
@@ -686,6 +662,7 @@ lib/calibre/calibre/gui2/dialogs/tweak_epub_ui.py
 lib/calibre/calibre/gui2/dialogs/user_profiles.py
 lib/calibre/calibre/gui2/dialogs/user_profiles_ui.py
 lib/calibre/calibre/gui2/dnd.py
+lib/calibre/calibre/gui2/duplicates.py
 lib/calibre/calibre/gui2/ebook_download.py
 lib/calibre/calibre/gui2/email.py
 lib/calibre/calibre/gui2/filename_pattern_ui.py
@@ -775,11 +752,14 @@ lib/calibre/calibre/gui2/store/basic_config.py
 lib/calibre/calibre/gui2/store/opensearch_store.py
 lib/calibre/calibre/gui2/store/web_store_dialog.py
 lib/calibre/calibre/gui2/store/basic_config_widget_ui.py
+lib/calibre/calibre/gui2/store/stores/amazon_es_plugin.py
 lib/calibre/calibre/gui2/store/stores/amazon_fr_plugin.py
+lib/calibre/calibre/gui2/store/stores/amazon_it_plugin.py
 lib/calibre/calibre/gui2/store/stores/beam_ebooks_de_plugin.py
 lib/calibre/calibre/gui2/store/stores/ebookpoint_plugin.py
 lib/calibre/calibre/gui2/store/stores/escapemagazine_plugin.py
 lib/calibre/calibre/gui2/store/stores/gandalf_plugin.py
+lib/calibre/calibre/gui2/store/stores/litres_plugin.py
 lib/calibre/calibre/gui2/store/stores/pragmatic_bookshelf_plugin.py
 lib/calibre/calibre/gui2/store/stores/nexto_plugin.py
 lib/calibre/calibre/gui2/store/stores/rw2010_plugin.py
@@ -866,11 +846,12 @@ lib/calibre/calibre/gui2/viewer/bookmarkmanager_ui.py
 lib/calibre/calibre/gui2/viewer/config_ui.py
 lib/calibre/calibre/gui2/viewer/dictionary.py
 lib/calibre/calibre/gui2/viewer/documentview.py
+lib/calibre/calibre/gui2/viewer/javascript.py
 lib/calibre/calibre/gui2/viewer/flip.py
-lib/calibre/calibre/gui2/viewer/gestures.py
 lib/calibre/calibre/gui2/viewer/keys.py
 lib/calibre/calibre/gui2/viewer/main.py
 lib/calibre/calibre/gui2/viewer/main_ui.py
+lib/calibre/calibre/gui2/viewer/position.py
 lib/calibre/calibre/gui2/viewer/printing.py
 lib/calibre/calibre/gui2/widgets.py
 lib/calibre/calibre/gui2/wizard/__init__.py
@@ -884,7 +865,12 @@ lib/calibre/calibre/gui2/wizard/stanza_ui.py
 lib/calibre/calibre/library/__init__.py
 lib/calibre/calibre/library/add_to_library.py
 lib/calibre/calibre/library/caches.py
-lib/calibre/calibre/library/catalog.py
+lib/calibre/calibre/library/catalogs/bibtex.py
+lib/calibre/calibre/library/catalogs/epub_mobi_builder.py
+lib/calibre/calibre/library/catalogs/epub_mobi.py
+lib/calibre/calibre/library/catalogs/__init__.py
+lib/calibre/calibre/library/catalogs/csv_xml.py
+lib/calibre/calibre/library/catalogs/utils.py
 lib/calibre/calibre/library/check_library.py
 lib/calibre/calibre/library/cli.py
 lib/calibre/calibre/library/coloring.py
@@ -972,8 +958,10 @@ lib/calibre/calibre/utils/ipc/__init__.py
 lib/calibre/calibre/utils/ipc/job.py
 lib/calibre/calibre/utils/ipc/launch.py
 lib/calibre/calibre/utils/ipc/server.py
+lib/calibre/calibre/utils/ipc/simple_worker.py
 lib/calibre/calibre/utils/ipc/proxy.py
 lib/calibre/calibre/utils/ipc/worker.py
+lib/calibre/calibre/utils/ipython.py
 lib/calibre/calibre/utils/localization.py
 lib/calibre/calibre/utils/lock.py
 lib/calibre/calibre/utils/logging.py
@@ -1004,11 +992,14 @@ lib/calibre/calibre/utils/recycle_bin.py
 lib/calibre/calibre/utils/resources.py
 lib/calibre/calibre/utils/rss_gen.py
 lib/calibre/calibre/utils/search_query_parser.py
+lib/calibre/calibre/utils/serve_coffee.py
 lib/calibre/calibre/utils/sftp.py
 lib/calibre/calibre/utils/sigil.py
 lib/calibre/calibre/utils/smartypants.py
 lib/calibre/calibre/utils/smtp.py
 lib/calibre/calibre/utils/smtplib.py
+lib/calibre/calibre/utils/soupparser.py
+lib/calibre/calibre/utils/linux_trash.py
 lib/calibre/calibre/utils/terminfo.py
 lib/calibre/calibre/utils/text2int.py
 lib/calibre/calibre/utils/threadpool.py
@@ -1022,7 +1013,6 @@ lib/calibre/calibre/utils/zipfile.py
 lib/calibre/calibre/web/__init__.py
 lib/calibre/calibre/web/feeds/__init__.py
 lib/calibre/calibre/web/feeds/feedparser.py
-lib/calibre/calibre/web/feeds/input.py
 lib/calibre/calibre/web/feeds/news.py
 lib/calibre/calibre/web/feeds/recipes/__init__.py
 lib/calibre/calibre/web/feeds/recipes/collection.py
@@ -1035,14 +1025,52 @@ lib/calibre/calibre/web/jsbrowser/__init__.py
 lib/calibre/calibre/web/jsbrowser/login.py
 lib/calibre/calibre/web/jsbrowser/test.py
 lib/calibre/calibre/web/jsbrowser/forms.py
+lib/calibre/chardet/euctwprober.py
+lib/calibre/chardet/hebrewprober.py
+lib/calibre/chardet/euckrfreq.py
+lib/calibre/chardet/charsetgroupprober.py
+lib/calibre/chardet/latin1prober.py
+lib/calibre/chardet/mbcssm.py
+lib/calibre/chardet/langthaimodel.py
+lib/calibre/chardet/euckrprober.py
+lib/calibre/chardet/escprober.py
+lib/calibre/chardet/mbcharsetprober.py
+lib/calibre/chardet/langcyrillicmodel.py
+lib/calibre/chardet/__init__.py
+lib/calibre/chardet/chardistribution.py
+lib/calibre/chardet/sbcharsetprober.py
+lib/calibre/chardet/sjisprober.py
+lib/calibre/chardet/langbulgarianmodel.py
+lib/calibre/chardet/langhebrewmodel.py
+lib/calibre/chardet/gb2312prober.py
+lib/calibre/chardet/escsm.py
+lib/calibre/chardet/utf8prober.py
+lib/calibre/chardet/codingstatemachine.py
+lib/calibre/chardet/test.py
+lib/calibre/chardet/big5freq.py
+lib/calibre/chardet/gb2312freq.py
+lib/calibre/chardet/langgreekmodel.py
+lib/calibre/chardet/euctwfreq.py
+lib/calibre/chardet/eucjpprober.py
+lib/calibre/chardet/jpcntx.py
+lib/calibre/chardet/jisfreq.py
+lib/calibre/chardet/charsetprober.py
+lib/calibre/chardet/sbcsgroupprober.py
+lib/calibre/chardet/constants.py
+lib/calibre/chardet/mbcsgroupprober.py
+lib/calibre/chardet/langhungarianmodel.py
+lib/calibre/chardet/universaldetector.py
+lib/calibre/chardet/big5prober.py
 lib/calibre/cherrypy/__init__.py
-lib/calibre/cherrypy/_cpcgifs.py
 lib/calibre/cherrypy/_cpchecker.py
+lib/calibre/cherrypy/_cpcompat.py
 lib/calibre/cherrypy/_cpconfig.py
 lib/calibre/cherrypy/_cpdispatch.py
 lib/calibre/cherrypy/_cperror.py
 lib/calibre/cherrypy/_cplogging.py
 lib/calibre/cherrypy/_cpmodpy.py
+lib/calibre/cherrypy/_cpnative_server.py
+lib/calibre/cherrypy/_cpreqbody.py
 lib/calibre/cherrypy/_cprequest.py
 lib/calibre/cherrypy/_cpserver.py
 lib/calibre/cherrypy/_cpthreadinglocal.py
@@ -1052,19 +1080,23 @@ lib/calibre/cherrypy/_cpwsgi.py
 lib/calibre/cherrypy/_cpwsgi_server.py
 lib/calibre/cherrypy/lib/__init__.py
 lib/calibre/cherrypy/lib/auth.py
+lib/calibre/cherrypy/lib/auth_basic.py
+lib/calibre/cherrypy/lib/auth_digest.py
 lib/calibre/cherrypy/lib/caching.py
 lib/calibre/cherrypy/lib/covercp.py
+lib/calibre/cherrypy/lib/cpstats.py
 lib/calibre/cherrypy/lib/cptools.py
 lib/calibre/cherrypy/lib/encoding.py
+lib/calibre/cherrypy/lib/gctools.py
 lib/calibre/cherrypy/lib/http.py
 lib/calibre/cherrypy/lib/httpauth.py
+lib/calibre/cherrypy/lib/httputil.py
+lib/calibre/cherrypy/lib/jsontools.py
 lib/calibre/cherrypy/lib/profiler.py
-lib/calibre/cherrypy/lib/safemime.py
+lib/calibre/cherrypy/lib/reprconf.py
 lib/calibre/cherrypy/lib/sessions.py
 lib/calibre/cherrypy/lib/static.py
-lib/calibre/cherrypy/lib/tidy.py
-lib/calibre/cherrypy/lib/wsgiapp.py
-lib/calibre/cherrypy/lib/xmlrpc.py
+lib/calibre/cherrypy/lib/xmlrpcutil.py
 lib/calibre/cherrypy/process/__init__.py
 lib/calibre/cherrypy/process/plugins.py
 lib/calibre/cherrypy/process/servers.py
@@ -1072,6 +1104,46 @@ lib/calibre/cherrypy/process/win32.py
 lib/calibre/cherrypy/process/wspbus.py
 lib/calibre/cherrypy/scaffold/__init__.py
 lib/calibre/cherrypy/wsgiserver/__init__.py
+lib/calibre/cherrypy/wsgiserver/ssl_builtin.py
+lib/calibre/cherrypy/wsgiserver/ssl_pyopenssl.py
+lib/calibre/cherrypy/wsgiserver/wsgiserver2.py
+lib/calibre/cherrypy/wsgiserver/wsgiserver3.py
+lib/calibre/html5lib/sanitizer.py
+lib/calibre/html5lib/tokenizer.py
+lib/calibre/html5lib/html5parser.py
+lib/calibre/html5lib/ihatexml.py
+lib/calibre/html5lib/__init__.py
+lib/calibre/html5lib/tokenizer_old.py
+lib/calibre/html5lib/inputstream.py
+lib/calibre/html5lib/utils.py
+lib/calibre/html5lib/constants.py
+lib/calibre/html5lib/filters/lint.py
+lib/calibre/html5lib/filters/sanitizer.py
+lib/calibre/html5lib/filters/whitespace.py
+lib/calibre/html5lib/filters/__init__.py
+lib/calibre/html5lib/filters/inject_meta_charset.py
+lib/calibre/html5lib/filters/_base.py
+lib/calibre/html5lib/filters/formfiller.py
+lib/calibre/html5lib/filters/optionaltags.py
+lib/calibre/html5lib/serializer/xhtmlserializer.py
+lib/calibre/html5lib/serializer/__init__.py
+lib/calibre/html5lib/serializer/htmlserializer.py
+lib/calibre/html5lib/treewalkers/dom.py
+lib/calibre/html5lib/treewalkers/genshistream.py
+lib/calibre/html5lib/treewalkers/etree.py
+lib/calibre/html5lib/treewalkers/__init__.py
+lib/calibre/html5lib/treewalkers/pulldom.py
+lib/calibre/html5lib/treewalkers/soup.py
+lib/calibre/html5lib/treewalkers/lxmletree.py
+lib/calibre/html5lib/treewalkers/_base.py
+lib/calibre/html5lib/treewalkers/simpletree.py
+lib/calibre/html5lib/treebuilders/dom.py
+lib/calibre/html5lib/treebuilders/etree.py
+lib/calibre/html5lib/treebuilders/__init__.py
+lib/calibre/html5lib/treebuilders/etree_lxml.py
+lib/calibre/html5lib/treebuilders/soup.py
+lib/calibre/html5lib/treebuilders/_base.py
+lib/calibre/html5lib/treebuilders/simpletree.py
 lib/calibre/odf/__init__.py
 lib/calibre/odf/anim.py
 lib/calibre/odf/attrconverters.py
@@ -1134,340 +1206,307 @@ share/icons/hicolor/128x128/mimetypes/gnome-mime-text-lrs.png
 share/gnome/apps/calibre-gui.desktop
 share/gnome/apps/calibre-lrfviewer.desktop
 share/gnome/apps/calibre-ebook-viewer.desktop
-share/calibre/builtin_recipes.xml
-share/calibre/builtin_recipes.zip
-share/calibre/calibre-portable.bat
-share/calibre/catalog/DefaultCover.jpg
-share/calibre/catalog/mastheadImage.gif
-share/calibre/catalog/section_list_templates.py
-share/calibre/catalog/stylesheet.css
-share/calibre/catalog/template.xhtml
-share/calibre/content_server/av.jpg
-share/calibre/content_server/bg_search_box.png
-share/calibre/content_server/browse/browse.css
-share/calibre/content_server/browse/browse.html
-share/calibre/content_server/browse/browse.js
-share/calibre/content_server/browse/details.html
-share/calibre/content_server/browse/summary.html
-share/calibre/content_server/btn_search_box.png
-share/calibre/content_server/button-donate.png
-share/calibre/content_server/calibre.png
-share/calibre/content_server/calibre_banner.png
-share/calibre/content_server/date.js
-share/calibre/content_server/default_cover.jpg
-share/calibre/content_server/first.png
-share/calibre/content_server/gui.css
-share/calibre/content_server/gui.js
-share/calibre/content_server/index.html
-share/calibre/content_server/jquery.corner.js
-share/calibre/content_server/jquery.js
-share/calibre/content_server/jquery.multiselect.css
-share/calibre/content_server/jquery.multiselect.min.js
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-bg_flat_75_aaaaaa_40x100.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-bg_glass_100_f5f0e5_1x400.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-bg_glass_25_cb842e_1x400.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-bg_glass_70_ede4d4_1x400.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-bg_highlight-hard_100_f4f0ec_1x100.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-bg_highlight-hard_65_fee4bd_1x100.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-bg_highlight-hard_75_f5f5b5_1x100.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-bg_inset-soft_100_f4f0ec_1x100.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-icons_c47a23_256x240.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-icons_cb672b_256x240.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-icons_f08000_256x240.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-icons_f35f07_256x240.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-icons_ff7519_256x240.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/images/ui-icons_ffffff_256x240.png
-share/calibre/content_server/jquery_ui/css/humanity-custom/jquery-ui-1.8.5.custom.css
-share/calibre/content_server/jquery_ui/js/jquery-ui-1.8.5.custom.min.js
-share/calibre/content_server/last.png
-share/calibre/content_server/loading.gif
-share/calibre/content_server/logo.png
-share/calibre/content_server/mobile.css
-share/calibre/content_server/next.png
-share/calibre/content_server/previous.png
-share/calibre/content_server/read/monocle.js
-share/calibre/content_server/stacktrace.js
-share/calibre/content_server/star-half.png
-share/calibre/content_server/star-off.png
-share/calibre/content_server/star-on.png
-share/calibre/default_tweaks.py
-share/calibre/ebook-convert-complete.pickle
-share/calibre/fonts/liberation/LiberationMono-Bold.ttf
-share/calibre/fonts/liberation/LiberationMono-BoldItalic.ttf
-share/calibre/fonts/liberation/LiberationMono-Italic.ttf
-share/calibre/fonts/liberation/LiberationMono-Regular.ttf
-share/calibre/fonts/liberation/LiberationSans-Bold.ttf
-share/calibre/fonts/liberation/LiberationSans-BoldItalic.ttf
-share/calibre/fonts/liberation/LiberationSans-Italic.ttf
-share/calibre/fonts/liberation/LiberationSans-Regular.ttf
-share/calibre/fonts/liberation/LiberationSerif-Bold.ttf
-share/calibre/fonts/liberation/LiberationSerif-BoldItalic.ttf
-share/calibre/fonts/liberation/LiberationSerif-Italic.ttf
-share/calibre/fonts/liberation/LiberationSerif-Regular.ttf
-share/calibre/fonts/prs500/tt0003m_.ttf
-share/calibre/fonts/prs500/tt0011m_.ttf
-share/calibre/fonts/prs500/tt0419m_.ttf
-share/calibre/images.qrc
-share/calibre/images/add_book.png
-share/calibre/images/arrow-down.png
-share/calibre/images/arrow-up.png
-share/calibre/images/auto_author_sort.png
-share/calibre/images/back.png
-share/calibre/images/blank.png
-share/calibre/images/book.png
-share/calibre/images/bookmarks.png
-share/calibre/images/books_in_series.png
-share/calibre/images/catalog.png
-share/calibre/images/chapters.png
-share/calibre/images/clear_left.png
-share/calibre/images/column.png
-share/calibre/images/config.png
-share/calibre/images/connect_share.png
-share/calibre/images/console.png
-share/calibre/images/convert.png
-share/calibre/images/cover_flow.png
-share/calibre/images/debug.png
-share/calibre/images/default_cover.png
-share/calibre/images/devices/bambook.png
-share/calibre/images/devices/boox.jpg
-share/calibre/images/devices/folder.png
-share/calibre/images/devices/ipad.png
-share/calibre/images/devices/italica.png
-share/calibre/images/devices/itunes.png
-share/calibre/images/devices/kindle.jpg
-share/calibre/images/devices/nook.jpg
-share/calibre/images/dialog_error.png
-share/calibre/images/dialog_information.png
-share/calibre/images/dialog_question.png
-share/calibre/images/dialog_warning.png
-share/calibre/images/dictionary.png
-share/calibre/images/document-encrypt.png
-share/calibre/images/document_open.png
-share/calibre/images/donate.png
-share/calibre/images/drawer.png
-share/calibre/images/edit-clear.png
-share/calibre/images/edit-copy.png
-share/calibre/images/edit-cut.png
-share/calibre/images/edit-paste.png
-share/calibre/images/edit-redo.png
-share/calibre/images/edit-select-all.png
-share/calibre/images/edit-undo.png
-share/calibre/images/edit_input.png
-share/calibre/images/eject.png
-share/calibre/images/exec.png
-share/calibre/images/font_size_larger.png
-share/calibre/images/font_size_smaller.png
-share/calibre/images/format-fill-color.png
-share/calibre/images/format-indent-less.png
-share/calibre/images/format-indent-more.png
-share/calibre/images/format-justify-center.png
-share/calibre/images/format-justify-fill.png
-share/calibre/images/format-justify-left.png
-share/calibre/images/format-justify-right.png
-share/calibre/images/format-list-ordered.png
-share/calibre/images/format-list-unordered.png
-share/calibre/images/format-text-bold.png
-share/calibre/images/format-text-color.png
-share/calibre/images/format-text-heading.png
-share/calibre/images/format-text-italic.png
-share/calibre/images/format-text-strikethrough.png
-share/calibre/images/format-text-subscript.png
-share/calibre/images/format-text-superscript.png
-share/calibre/images/format-text-underline.png
-share/calibre/images/forward.png
-share/calibre/images/gmail_logo.png
-share/calibre/images/help.png
-share/calibre/images/heuristics.png
-share/calibre/images/hotmail.png
-share/calibre/images/insert-link.png
-share/calibre/images/jobs.png
-share/calibre/images/languages.png
-share/calibre/images/random.png
-share/calibre/images/keyboard-prefs.png
-share/calibre/images/library.png
-share/calibre/images/list_remove.png
-share/calibre/images/lookfeel.png
-share/calibre/images/lt.png
-share/calibre/images/mail.png
-share/calibre/images/merge_books.png
-share/calibre/images/metadata.png
-share/calibre/images/mimetypes/bmp.png
-share/calibre/images/mimetypes/computer.png
-share/calibre/images/mimetypes/dir.png
-share/calibre/images/mimetypes/epub.png
-share/calibre/images/mimetypes/fb2.png
-share/calibre/images/mimetypes/gif.png
-share/calibre/images/mimetypes/html.png
-share/calibre/images/mimetypes/jpeg.png
-share/calibre/images/mimetypes/lit.png
-share/calibre/images/mimetypes/lrf.png
-share/calibre/images/mimetypes/lrx.png
-share/calibre/images/mimetypes/mobi.png
-share/calibre/images/mimetypes/odt.png
-share/calibre/images/mimetypes/pdf.png
-share/calibre/images/mimetypes/png.png
-share/calibre/images/mimetypes/rar.png
-share/calibre/images/mimetypes/rtf.png
-share/calibre/images/mimetypes/snb.png
-share/calibre/images/mimetypes/svg.png
-share/calibre/images/mimetypes/txt.png
-share/calibre/images/mimetypes/unknown.png
-share/calibre/images/mimetypes/zero.png
-share/calibre/images/mimetypes/zip.png
-share/calibre/images/mimetypes/djvu.png
-share/calibre/images/mimetypes/xps.png
-share/calibre/images/minus.png
-share/calibre/images/minusminus.png
-share/calibre/images/network-server.png
-share/calibre/images/news.png
-share/calibre/images/next.png
-share/calibre/images/notify.png
-share/calibre/images/ok.png
-share/calibre/images/page.png
-share/calibre/images/plugboard.png
-share/calibre/images/plugins.png
-share/calibre/images/plugins/plugin_updater_updates.png
-share/calibre/images/plugins/plugin_new_invalid.png
-share/calibre/images/plugins/plugin_upgrade_ok.png
-share/calibre/images/plugins/plugin_disabled_ok.png
-share/calibre/images/plugins/plugin_new_valid.png
-share/calibre/images/plugins/plugin_new.png
-share/calibre/images/plugins/plugin_upgrade_valid.png
-share/calibre/images/plugins/plugin_deprecated.png
-share/calibre/images/plugins/mobileread.png
-share/calibre/images/plugins/plugin_disabled_invalid.png
-share/calibre/images/plugins/plugin_updater.png
-share/calibre/images/plugins/plugin_disabled_valid.png
-share/calibre/images/plugins/plugin_upgrade_invalid.png
-share/calibre/images/plus.png
-share/calibre/images/plusplus.png
-share/calibre/images/previous.png
-share/calibre/images/print-preview.png
-share/calibre/images/print.png
-share/calibre/images/publisher.png
-share/calibre/images/rating.png
-share/calibre/images/reader.png
-share/calibre/images/save.png
-share/calibre/images/scheduler.png
-share/calibre/images/sd.png
-share/calibre/images/search.png
-share/calibre/images/search_add_saved.png
-share/calibre/images/search_copy_saved.png
-share/calibre/images/search_delete_saved.png
-share/calibre/images/series.png
-share/calibre/images/swap.png
-share/calibre/images/sync.png
-share/calibre/images/tags.png
-share/calibre/images/tb_folder.png
-share/calibre/images/template_funcs.png
-share/calibre/images/trash.png
-share/calibre/images/trim.png
-share/calibre/images/user_profile.png
-share/calibre/images/view.png
-share/calibre/images/viewer.png
-share/calibre/images/welcome_wizard.png
-share/calibre/images/window-close.png
-share/calibre/images/wizard.png
-share/calibre/images/store.png
-share/calibre/images/highlight_only_off.png
-share/calibre/images/identifiers.png
-share/calibre/images/drm-locked.png
-share/calibre/images/highlight_only_on.png
-share/calibre/images/connect_share_on.png
-share/calibre/images/drm-unlocked.png
-share/calibre/jacket/stylesheet.css
-share/calibre/jacket/template.xhtml
-share/calibre/jquery.simulate.js
-share/calibre/localization/iso639.pickle
-share/calibre/localization/pykakasi/itaijidict2.pickle
-share/calibre/localization/pykakasi/kanadict2.pickle
-share/calibre/localization/pykakasi/kanwadict2.pickle
-share/calibre/localization/locales.zip
-share/calibre/localization/stats.pickle
-share/calibre/metadata_sqlite.sql
-share/calibre/mime.types
-share/calibre/quick_start.epub
-share/calibre/scripts.pickle
-share/calibre/template-functions.json
-share/calibre/templates/fb2.xsl
-share/calibre/templates/html.css
-share/calibre/templates/html_export_default.css
-share/calibre/templates/html_export_default.tmpl
-share/calibre/templates/html_export_default_index.tmpl
-share/calibre/templates/lrf.xsl
-share/calibre/templates/rtf.xsl
-share/calibre/templates/book_details.css
-share/calibre/tracer.epub
-share/calibre/viewer/bookmarks.js
-share/calibre/viewer/hyphenate/Hyphenator.js
-share/calibre/viewer/hyphenate/patterns/be.js
-share/calibre/viewer/hyphenate/patterns/bn.js
-share/calibre/viewer/hyphenate/patterns/cs.js
-share/calibre/viewer/hyphenate/patterns/da.js
-share/calibre/viewer/hyphenate/patterns/de.js
-share/calibre/viewer/hyphenate/patterns/el-monoton.js
-share/calibre/viewer/hyphenate/patterns/el-polyton.js
-share/calibre/viewer/hyphenate/patterns/en-gb.js
-share/calibre/viewer/hyphenate/patterns/en-us.js
-share/calibre/viewer/hyphenate/patterns/es.js
-share/calibre/viewer/hyphenate/patterns/fi.js
-share/calibre/viewer/hyphenate/patterns/fr.js
-share/calibre/viewer/hyphenate/patterns/grc.js
-share/calibre/viewer/hyphenate/patterns/gu.js
-share/calibre/viewer/hyphenate/patterns/hi.js
-share/calibre/viewer/hyphenate/patterns/hu.js
-share/calibre/viewer/hyphenate/patterns/hy.js
-share/calibre/viewer/hyphenate/patterns/it.js
-share/calibre/viewer/hyphenate/patterns/kn.js
-share/calibre/viewer/hyphenate/patterns/la.js
-share/calibre/viewer/hyphenate/patterns/lt.js
-share/calibre/viewer/hyphenate/patterns/lv.js
-share/calibre/viewer/hyphenate/patterns/ml.js
-share/calibre/viewer/hyphenate/patterns/nl.js
-share/calibre/viewer/hyphenate/patterns/no-nb.js
-share/calibre/viewer/hyphenate/patterns/or.js
-share/calibre/viewer/hyphenate/patterns/pa.js
-share/calibre/viewer/hyphenate/patterns/pl.js
-share/calibre/viewer/hyphenate/patterns/pt.js
-share/calibre/viewer/hyphenate/patterns/ru.js
-share/calibre/viewer/hyphenate/patterns/sl.js
-share/calibre/viewer/hyphenate/patterns/sv.js
-share/calibre/viewer/hyphenate/patterns/ta.js
-share/calibre/viewer/hyphenate/patterns/te.js
-share/calibre/viewer/hyphenate/patterns/tr.js
-share/calibre/viewer/hyphenate/patterns/uk.js
-share/calibre/viewer/hyphenation.js
-share/calibre/viewer/images.js
-share/calibre/viewer/jquery_scrollTo.js
-share/calibre/viewer/referencing.js
-@dirrm share/calibre/viewer/hyphenate/patterns
-@dirrm share/calibre/viewer/hyphenate
-@dirrm share/calibre/viewer
-@dirrm share/calibre/templates
-@dirrm share/calibre/localization/pykakasi
-@dirrm share/calibre/localization
-@dirrm share/calibre/jacket
-@dirrm share/calibre/images/mimetypes
-@dirrm share/calibre/images/devices
-@dirrm share/calibre/images/plugins
-@dirrm share/calibre/images
-@dirrm share/calibre/fonts/prs500
-@dirrm share/calibre/fonts/liberation
-@dirrm share/calibre/fonts
-@dirrm share/calibre/content_server/read
-@dirrm share/calibre/content_server/jquery_ui/js
-@dirrm share/calibre/content_server/jquery_ui/css/humanity-custom/images
-@dirrm share/calibre/content_server/jquery_ui/css/humanity-custom
-@dirrm share/calibre/content_server/jquery_ui/css
-@dirrm share/calibre/content_server/jquery_ui
-@dirrm share/calibre/content_server/browse
-@dirrm share/calibre/content_server
-@dirrm share/calibre/catalog
-@dirrm share/calibre
+%%DATADIR%%/builtin_recipes.xml
+%%DATADIR%%/builtin_recipes.zip
+%%DATADIR%%/calibre-portable.bat
+%%DATADIR%%/catalog/DefaultCover.jpg
+%%DATADIR%%/catalog/mastheadImage.gif
+%%DATADIR%%/catalog/section_list_templates.py
+%%DATADIR%%/catalog/stylesheet.css
+%%DATADIR%%/catalog/template.xhtml
+%%DATADIR%%/content_server/av.jpg
+%%DATADIR%%/content_server/bg_search_box.png
+%%DATADIR%%/content_server/browse/browse.css
+%%DATADIR%%/content_server/browse/browse.html
+%%DATADIR%%/content_server/browse/browse.js
+%%DATADIR%%/content_server/browse/details.html
+%%DATADIR%%/content_server/browse/summary.html
+%%DATADIR%%/content_server/btn_search_box.png
+%%DATADIR%%/content_server/button-donate.png
+%%DATADIR%%/content_server/calibre.png
+%%DATADIR%%/content_server/calibre_banner.png
+%%DATADIR%%/content_server/date.js
+%%DATADIR%%/content_server/default_cover.jpg
+%%DATADIR%%/content_server/first.png
+%%DATADIR%%/content_server/gui.css
+%%DATADIR%%/content_server/gui.js
+%%DATADIR%%/content_server/index.html
+%%DATADIR%%/content_server/jquery.corner.js
+%%DATADIR%%/content_server/jquery.js
+%%DATADIR%%/content_server/jquery.multiselect.css
+%%DATADIR%%/content_server/jquery.multiselect.min.js
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-bg_flat_75_aaaaaa_40x100.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-bg_glass_100_f5f0e5_1x400.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-bg_glass_25_cb842e_1x400.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-bg_glass_70_ede4d4_1x400.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-bg_highlight-hard_100_f4f0ec_1x100.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-bg_highlight-hard_65_fee4bd_1x100.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-bg_highlight-hard_75_f5f5b5_1x100.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-bg_inset-soft_100_f4f0ec_1x100.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-icons_c47a23_256x240.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-icons_cb672b_256x240.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-icons_f08000_256x240.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-icons_f35f07_256x240.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-icons_ff7519_256x240.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images/ui-icons_ffffff_256x240.png
+%%DATADIR%%/content_server/jquery_ui/css/humanity-custom/jquery-ui-1.8.5.custom.css
+%%DATADIR%%/content_server/jquery_ui/js/jquery-ui-1.8.5.custom.min.js
+%%DATADIR%%/content_server/last.png
+%%DATADIR%%/content_server/loading.gif
+%%DATADIR%%/content_server/logo.png
+%%DATADIR%%/content_server/mobile.css
+%%DATADIR%%/content_server/next.png
+%%DATADIR%%/content_server/previous.png
+%%DATADIR%%/content_server/read/monocle.js
+%%DATADIR%%/content_server/stacktrace.js
+%%DATADIR%%/content_server/star-half.png
+%%DATADIR%%/content_server/star-off.png
+%%DATADIR%%/content_server/star-on.png
+%%DATADIR%%/default_tweaks.py
+%%DATADIR%%/display/cfi.js
+%%DATADIR%%/ebook-convert-complete.pickle
+%%DATADIR%%/fonts/liberation/LiberationMono-Bold.ttf
+%%DATADIR%%/fonts/liberation/LiberationMono-BoldItalic.ttf
+%%DATADIR%%/fonts/liberation/LiberationMono-Italic.ttf
+%%DATADIR%%/fonts/liberation/LiberationMono-Regular.ttf
+%%DATADIR%%/fonts/liberation/LiberationSans-Bold.ttf
+%%DATADIR%%/fonts/liberation/LiberationSans-BoldItalic.ttf
+%%DATADIR%%/fonts/liberation/LiberationSans-Italic.ttf
+%%DATADIR%%/fonts/liberation/LiberationSans-Regular.ttf
+%%DATADIR%%/fonts/liberation/LiberationSerif-Bold.ttf
+%%DATADIR%%/fonts/liberation/LiberationSerif-BoldItalic.ttf
+%%DATADIR%%/fonts/liberation/LiberationSerif-Italic.ttf
+%%DATADIR%%/fonts/liberation/LiberationSerif-Regular.ttf
+%%DATADIR%%/fonts/prs500/tt0003m_.ttf
+%%DATADIR%%/fonts/prs500/tt0011m_.ttf
+%%DATADIR%%/fonts/prs500/tt0419m_.ttf
+%%DATADIR%%/images.qrc
+%%DATADIR%%/images/add_book.png
+%%DATADIR%%/images/arrow-down.png
+%%DATADIR%%/images/arrow-up.png
+%%DATADIR%%/images/auto_author_sort.png
+%%DATADIR%%/images/back.png
+%%DATADIR%%/images/blank.png
+%%DATADIR%%/images/book.png
+%%DATADIR%%/images/bookmarks.png
+%%DATADIR%%/images/books_in_series.png
+%%DATADIR%%/images/catalog.png
+%%DATADIR%%/images/chapters.png
+%%DATADIR%%/images/clear_left.png
+%%DATADIR%%/images/column.png
+%%DATADIR%%/images/config.png
+%%DATADIR%%/images/connect_share.png
+%%DATADIR%%/images/console.png
+%%DATADIR%%/images/convert.png
+%%DATADIR%%/images/cover_flow.png
+%%DATADIR%%/images/debug.png
+%%DATADIR%%/images/default_cover.png
+%%DATADIR%%/images/devices/bambook.png
+%%DATADIR%%/images/devices/boox.jpg
+%%DATADIR%%/images/devices/folder.png
+%%DATADIR%%/images/devices/ipad.png
+%%DATADIR%%/images/devices/italica.png
+%%DATADIR%%/images/devices/itunes.png
+%%DATADIR%%/images/devices/kindle.jpg
+%%DATADIR%%/images/devices/nook.jpg
+%%DATADIR%%/images/dialog_error.png
+%%DATADIR%%/images/dialog_information.png
+%%DATADIR%%/images/dialog_question.png
+%%DATADIR%%/images/dialog_warning.png
+%%DATADIR%%/images/dictionary.png
+%%DATADIR%%/images/document-encrypt.png
+%%DATADIR%%/images/document_open.png
+%%DATADIR%%/images/donate.png
+%%DATADIR%%/images/drawer.png
+%%DATADIR%%/images/edit-clear.png
+%%DATADIR%%/images/edit-copy.png
+%%DATADIR%%/images/edit-cut.png
+%%DATADIR%%/images/edit-paste.png
+%%DATADIR%%/images/edit-redo.png
+%%DATADIR%%/images/edit-select-all.png
+%%DATADIR%%/images/edit-undo.png
+%%DATADIR%%/images/edit_input.png
+%%DATADIR%%/images/eject.png
+%%DATADIR%%/images/exec.png
+%%DATADIR%%/images/font_size_larger.png
+%%DATADIR%%/images/font_size_smaller.png
+%%DATADIR%%/images/format-fill-color.png
+%%DATADIR%%/images/format-indent-less.png
+%%DATADIR%%/images/format-indent-more.png
+%%DATADIR%%/images/format-justify-center.png
+%%DATADIR%%/images/format-justify-fill.png
+%%DATADIR%%/images/format-justify-left.png
+%%DATADIR%%/images/format-justify-right.png
+%%DATADIR%%/images/format-list-ordered.png
+%%DATADIR%%/images/format-list-unordered.png
+%%DATADIR%%/images/format-text-bold.png
+%%DATADIR%%/images/format-text-color.png
+%%DATADIR%%/images/format-text-heading.png
+%%DATADIR%%/images/format-text-italic.png
+%%DATADIR%%/images/format-text-strikethrough.png
+%%DATADIR%%/images/format-text-subscript.png
+%%DATADIR%%/images/format-text-superscript.png
+%%DATADIR%%/images/format-text-underline.png
+%%DATADIR%%/images/forward.png
+%%DATADIR%%/images/gmail_logo.png
+%%DATADIR%%/images/help.png
+%%DATADIR%%/images/heuristics.png
+%%DATADIR%%/images/hotmail.png
+%%DATADIR%%/images/insert-link.png
+%%DATADIR%%/images/jobs.png
+%%DATADIR%%/images/languages.png
+%%DATADIR%%/images/random.png
+%%DATADIR%%/images/keyboard-prefs.png
+%%DATADIR%%/images/library.png
+%%DATADIR%%/images/list_remove.png
+%%DATADIR%%/images/lookfeel.png
+%%DATADIR%%/images/lt.png
+%%DATADIR%%/images/mail.png
+%%DATADIR%%/images/merge_books.png
+%%DATADIR%%/images/metadata.png
+%%DATADIR%%/images/mimetypes/bmp.png
+%%DATADIR%%/images/mimetypes/computer.png
+%%DATADIR%%/images/mimetypes/dir.png
+%%DATADIR%%/images/mimetypes/epub.png
+%%DATADIR%%/images/mimetypes/fb2.png
+%%DATADIR%%/images/mimetypes/gif.png
+%%DATADIR%%/images/mimetypes/html.png
+%%DATADIR%%/images/mimetypes/jpeg.png
+%%DATADIR%%/images/mimetypes/lit.png
+%%DATADIR%%/images/mimetypes/lrf.png
+%%DATADIR%%/images/mimetypes/lrx.png
+%%DATADIR%%/images/mimetypes/mobi.png
+%%DATADIR%%/images/mimetypes/odt.png
+%%DATADIR%%/images/mimetypes/pdf.png
+%%DATADIR%%/images/mimetypes/png.png
+%%DATADIR%%/images/mimetypes/rar.png
+%%DATADIR%%/images/mimetypes/rtf.png
+%%DATADIR%%/images/mimetypes/snb.png
+%%DATADIR%%/images/mimetypes/svg.png
+%%DATADIR%%/images/mimetypes/txt.png
+%%DATADIR%%/images/mimetypes/unknown.png
+%%DATADIR%%/images/mimetypes/zero.png
+%%DATADIR%%/images/mimetypes/zip.png
+%%DATADIR%%/images/mimetypes/djvu.png
+%%DATADIR%%/images/mimetypes/xps.png
+%%DATADIR%%/images/minus.png
+%%DATADIR%%/images/minusminus.png
+%%DATADIR%%/images/network-server.png
+%%DATADIR%%/images/news.png
+%%DATADIR%%/images/next.png
+%%DATADIR%%/images/notify.png
+%%DATADIR%%/images/ok.png
+%%DATADIR%%/images/page.png
+%%DATADIR%%/images/plugboard.png
+%%DATADIR%%/images/plugins.png
+%%DATADIR%%/images/plugins/plugin_updater_updates.png
+%%DATADIR%%/images/plugins/plugin_new_invalid.png
+%%DATADIR%%/images/plugins/plugin_upgrade_ok.png
+%%DATADIR%%/images/plugins/plugin_disabled_ok.png
+%%DATADIR%%/images/plugins/plugin_new_valid.png
+%%DATADIR%%/images/plugins/plugin_new.png
+%%DATADIR%%/images/plugins/plugin_upgrade_valid.png
+%%DATADIR%%/images/plugins/plugin_deprecated.png
+%%DATADIR%%/images/plugins/mobileread.png
+%%DATADIR%%/images/plugins/plugin_disabled_invalid.png
+%%DATADIR%%/images/plugins/plugin_updater.png
+%%DATADIR%%/images/plugins/plugin_disabled_valid.png
+%%DATADIR%%/images/plugins/plugin_upgrade_invalid.png
+%%DATADIR%%/images/plus.png
+%%DATADIR%%/images/plusplus.png
+%%DATADIR%%/images/previous.png
+%%DATADIR%%/images/print-preview.png
+%%DATADIR%%/images/print.png
+%%DATADIR%%/images/publisher.png
+%%DATADIR%%/images/rating.png
+%%DATADIR%%/images/reader.png
+%%DATADIR%%/images/save.png
+%%DATADIR%%/images/scheduler.png
+%%DATADIR%%/images/sd.png
+%%DATADIR%%/images/search.png
+%%DATADIR%%/images/search_add_saved.png
+%%DATADIR%%/images/search_copy_saved.png
+%%DATADIR%%/images/search_delete_saved.png
+%%DATADIR%%/images/series.png
+%%DATADIR%%/images/swap.png
+%%DATADIR%%/images/sync.png
+%%DATADIR%%/images/tags.png
+%%DATADIR%%/images/tb_folder.png
+%%DATADIR%%/images/template_funcs.png
+%%DATADIR%%/images/trash.png
+%%DATADIR%%/images/trim.png
+%%DATADIR%%/images/user_profile.png
+%%DATADIR%%/images/view.png
+%%DATADIR%%/images/viewer.png
+%%DATADIR%%/images/welcome_wizard.png
+%%DATADIR%%/images/window-close.png
+%%DATADIR%%/images/wizard.png
+%%DATADIR%%/images/store.png
+%%DATADIR%%/images/highlight_only_off.png
+%%DATADIR%%/images/identifiers.png
+%%DATADIR%%/images/drm-locked.png
+%%DATADIR%%/images/highlight_only_on.png
+%%DATADIR%%/images/connect_share_on.png
+%%DATADIR%%/images/drm-unlocked.png
+%%DATADIR%%/jacket/stylesheet.css
+%%DATADIR%%/jacket/template.xhtml
+%%DATADIR%%/jquery.simulate.js
+%%DATADIR%%/localization/iso639.pickle
+%%DATADIR%%/localization/pykakasi/itaijidict2.pickle
+%%DATADIR%%/localization/pykakasi/kanadict2.pickle
+%%DATADIR%%/localization/pykakasi/kanwadict2.pickle
+%%DATADIR%%/localization/locales.zip
+%%DATADIR%%/localization/stats.pickle
+%%DATADIR%%/metadata_sqlite.sql
+%%DATADIR%%/mime.types
+%%DATADIR%%/quick_start.epub
+%%DATADIR%%/scripts.pickle
+%%DATADIR%%/template-functions.json
+%%DATADIR%%/templates/fb2.xsl
+%%DATADIR%%/templates/html.css
+%%DATADIR%%/templates/html_export_default.css
+%%DATADIR%%/templates/html_export_default.tmpl
+%%DATADIR%%/templates/html_export_default_index.tmpl
+%%DATADIR%%/templates/lrf.xsl
+%%DATADIR%%/templates/rtf.xsl
+%%DATADIR%%/templates/book_details.css
+%%DATADIR%%/tracer.epub
+%%DATADIR%%/viewer/bookmarks.js
+%%DATADIR%%/viewer/hyphenate/Hyphenator.js
+%%DATADIR%%/viewer/hyphenate/patterns.zip
+%%DATADIR%%/viewer/hyphenation.js
+%%DATADIR%%/viewer/images.js
+%%DATADIR%%/viewer/jquery_scrollTo.js
+%%DATADIR%%/viewer/referencing.js
+@dirrm %%DATADIR%%/viewer/hyphenate
+@dirrm %%DATADIR%%/viewer
+@dirrm %%DATADIR%%/templates
+@dirrm %%DATADIR%%/localization/pykakasi
+@dirrm %%DATADIR%%/localization
+@dirrm %%DATADIR%%/jacket
+@dirrm %%DATADIR%%/images/mimetypes
+@dirrm %%DATADIR%%/images/devices
+@dirrm %%DATADIR%%/images/plugins
+@dirrm %%DATADIR%%/images
+@dirrm %%DATADIR%%/fonts/prs500
+@dirrm %%DATADIR%%/fonts/liberation
+@dirrm %%DATADIR%%/fonts
+@dirrm %%DATADIR%%/display
+@dirrm %%DATADIR%%/content_server/read
+@dirrm %%DATADIR%%/content_server/jquery_ui/js
+@dirrm %%DATADIR%%/content_server/jquery_ui/css/humanity-custom/images
+@dirrm %%DATADIR%%/content_server/jquery_ui/css/humanity-custom
+@dirrm %%DATADIR%%/content_server/jquery_ui/css
+@dirrm %%DATADIR%%/content_server/jquery_ui
+@dirrm %%DATADIR%%/content_server/browse
+@dirrm %%DATADIR%%/content_server
+@dirrm %%DATADIR%%/catalog
+@dirrm %%DATADIR%%
 @dirrm lib/calibre/templite
 @dirrm lib/calibre/routes
 @dirrm lib/calibre/pyPdf
 @dirrm lib/calibre/odf
+@dirrm lib/calibre/chardet
 @dirrm lib/calibre/cherrypy/wsgiserver
 @dirrm lib/calibre/cherrypy/scaffold
 @dirrm lib/calibre/cherrypy/process
@@ -1495,6 +1534,7 @@ share/calibre/viewer/referencing.js
 @dirrm lib/calibre/calibre/manual/plugin_examples
 @dirrm lib/calibre/calibre/manual
 @dirrm lib/calibre/calibre/library/server
+@dirrm lib/calibre/calibre/library/catalogs
 @dirrm lib/calibre/calibre/library
 @dirrm lib/calibre/calibre/gui2/wizard
 @dirrm lib/calibre/calibre/gui2/viewer
@@ -1537,6 +1577,8 @@ share/calibre/viewer/referencing.js
 @dirrm lib/calibre/calibre/ebooks/pdb/palmdoc
 @dirrm lib/calibre/calibre/ebooks/pdb/ereader
 @dirrm lib/calibre/calibre/ebooks/pdb
+@dirrm lib/calibre/calibre/ebooks/oeb/display/test-cfi
+@dirrm lib/calibre/calibre/ebooks/oeb/display
 @dirrm lib/calibre/calibre/ebooks/oeb/transforms
 @dirrm lib/calibre/calibre/ebooks/oeb
 @dirrm lib/calibre/calibre/ebooks/odt
@@ -1561,11 +1603,11 @@ share/calibre/viewer/referencing.js
 @dirrm lib/calibre/calibre/ebooks/epub/fix
 @dirrm lib/calibre/calibre/ebooks/epub
 @dirrm lib/calibre/calibre/ebooks/djvu
+@dirrm lib/calibre/calibre/ebooks/conversion/plugins
 @dirrm lib/calibre/calibre/ebooks/conversion
 @dirrm lib/calibre/calibre/ebooks/compression
 @dirrm lib/calibre/calibre/ebooks/comic
 @dirrm lib/calibre/calibre/ebooks/chm
-@dirrm lib/calibre/calibre/ebooks/chardet
 @dirrm lib/calibre/calibre/ebooks/azw4
 @dirrm lib/calibre/calibre/ebooks
 @dirrm lib/calibre/calibre/db/tests
@@ -1604,6 +1646,11 @@ share/calibre/viewer/referencing.js
 @dirrm lib/calibre/calibre/devices
 @dirrm lib/calibre/calibre/customize
 @dirrm lib/calibre/calibre
+@dirrm lib/calibre/html5lib/filters
+@dirrm lib/calibre/html5lib/serializer
+@dirrm lib/calibre/html5lib/treewalkers
+@dirrm lib/calibre/html5lib/treebuilders
+@dirrm lib/calibre/html5lib
 @dirrm lib/calibre
 @dirrmtry %%PYTHON_SITELIBDIR%%
 @dirrmtry %%PYTHON_LIBDIR%%

@@ -7,7 +7,7 @@
 
 PORTNAME=	amule
 PORTVERSION=	2.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-p2p
 MASTER_SITES=	SF/${PORTNAME}/aMule/${PORTVERSION}
 DISTNAME=	aMule-${PORTVERSION}
@@ -182,7 +182,7 @@ PLIST_SUB+=		PLASMAMULE="@comment "
 .endif
 
 .if !defined(WITHOUT_UPNP)
-LIB_DEPENDS+=		upnp.7:${PORTSDIR}/devel/upnp
+LIB_DEPENDS+=		upnp.8:${PORTSDIR}/devel/upnp
 .else
 CONFIGURE_ARGS+=	--disable-upnp
 .endif
@@ -223,6 +223,8 @@ post-patch:	.SILENT
 		-e 's/test.*-print-file-name.*`/true/' \
 		-e '/if.*test/s/==/=/' \
 		${WRKSRC}/configure
+	${FIND} ${WRKSRC} -name \*.pl -exec ${REINPLACE_CMD} \
+		's|/usr/bin/perl|${PERL}|' {} +
 .if defined(NOPORTDOCS)
 	${REINPLACE_CMD} 's/install-data-am:.*/install-data-am:/' \
 		${WRKSRC}/docs/Makefile.in

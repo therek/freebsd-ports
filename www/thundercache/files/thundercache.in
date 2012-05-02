@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/www/thundercache/files/thundercache.in,v 1.1 2010/03/18 21:42:30 dougb Exp $
 #
 # PROVIDE: thundercache
 # REQUIRE: LOGIN
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="thundercache"
-rcvar=`set_rcvar`
+rcvar=thundercache_enable
 
 command="%%PREFIX%%/thunder/sbin/thunder"
 required_files="%%PREFIX%%/thunder/etc/thunder.conf"

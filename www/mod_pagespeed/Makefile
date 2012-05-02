@@ -6,8 +6,9 @@
 #
 
 PORTNAME=	mod_pagespeed
-PORTVERSION=	20111031
-PORTREVISION=	1
+PORTVERSION=	0.10.21.2
+PORTREVISION=	2
+PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	swills
@@ -24,6 +25,7 @@ BUILD_DEPENDS=	bash:${PORTSDIR}/shells/bash \
 LIB_DEPENDS=	png.6:${PORTSDIR}/graphics/png \
 		jpeg.11:${PORTSDIR}/graphics/jpeg \
 		icutu.48:${PORTSDIR}/devel/icu \
+		opencv_legacy.2:${PORTSDIR}/graphics/opencv \
 		execinfo.1:${PORTSDIR}/devel/libexecinfo
 
 USE_XZ=		yes
@@ -32,6 +34,7 @@ USE_APACHE=	22+
 USE_PYTHON=	2.6+
 USE_GMAKE=	yes
 MAKE_JOBS_SAFE=	yes
+ONLY_FOR_ARCHS=	amd64 i386
 LDFLAGS+=	-L${LOCALBASE}/lib
 PLIST_SUB=	WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}
 MAKE_ENV+=	BUILDTYPE=Release
@@ -42,6 +45,7 @@ GYP_DEFINES+=	\
 		use_system_libpng=1 \
 		use_system_zlib=1 \
 		use_system_icu=1 \
+		use_system_opencv=1 \
 		system_include_path_httpd=${LOCALBASE}/include/apache22 \
 		system_include_path_apr=${LOCALBASE}/include/apr-1 \
 		system_include_path_aprutil=${LOCALBASE}/include/apr-1 \
@@ -50,6 +54,20 @@ GYP_DEFINES+=	\
 		include_dirs=${LOCALBASE}/include
 
 .include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 802517 || ${OSVERSION} < 900502
+EXTRA_PATCHES=		${FILESDIR}/extra-gperf.gypi
+BUILD_DEPENDS+=		${LOCALBASE}/bin/gperf:${PORTSDIR}/devel/gperf
+.endif
+
+post-patch:
+	${REINPLACE_CMD} -e "s,%%LOCALBASE%%,${LOCALBASE},g" \
+		${WRKSRC}/base/base.gypi
+.if ${OSVERSION} < 802517 || ${OSVERSION} < 900502
+	${REINPLACE_CMD} -e "s,%%LOCALBASE%%,${LOCALBASE},g" \
+		${WRKSRC}/net/instaweb/gperf.gypi
+
+.endif
 
 do-configure:
 	cd ${WRKSRC} && \

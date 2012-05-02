@@ -7,7 +7,7 @@
 #
 
 PORTNAME=	wine
-DISTVERSION=	1.3.36
+DISTVERSION=	1.4-rc5
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/Source \
@@ -77,7 +77,7 @@ PORTDATA=	fonts/ generic.ppd l_intl.nls wine.inf
 CONFIGURE_ARGS+=	--without-cups
 .else
 CONFIGURE_ARGS+=	--with-cups
-LIB_DEPENDS+=	cups.2:${PORTSDIR}/print/cups-base
+LIB_DEPENDS+=	cups.2:${PORTSDIR}/print/cups-client
 .endif
 
 .ifdef WITH_DOSBOX

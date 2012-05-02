@@ -7,13 +7,14 @@
 
 PORTNAME=	rspamd
 PORTVERSION=	0.4.6
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://highsecure.ru/
 
 MAINTAINER=	vsevolod@FreeBSD.org
 COMMENT=	Fast spam filtering system
 
-LIB_DEPENDS=	pcre.0:${PORTSDIR}/devel/pcre \
+LIB_DEPENDS=	pcre.1:${PORTSDIR}/devel/pcre \
 		gmime-2.0:${PORTSDIR}/mail/gmime2 \
 		event-1.4:${PORTSDIR}/devel/libevent
 
@@ -51,7 +52,7 @@ MAN1=	rspamc.1
 .endif
 
 .if defined(WITH_RSPAMD_REDIRECTOR)
- USE_PERL=	5.8+
+ USE_PERL5=	5.8+
  CMAKE_ARGS+=	-DENABLE_REDIRECTOR=ON
  PLIST_SUB+=	REDIRECTOR=""
  USE_RC_SUBR+=	rspamd_redirector

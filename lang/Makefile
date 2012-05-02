@@ -31,6 +31,7 @@
     SUBDIR += cint
     SUBDIR += clang
     SUBDIR += clang-devel
+    SUBDIR += clay
     SUBDIR += clisp
     SUBDIR += clojure
     SUBDIR += clojure-contrib
@@ -115,6 +116,7 @@
     SUBDIR += hla
     SUBDIR += hope
     SUBDIR += hs-brainfuck
+    SUBDIR += hs-epic
     SUBDIR += hs-unlambda
     SUBDIR += huc
     SUBDIR += hugs
@@ -155,6 +157,7 @@
     SUBDIR += lua-mode.el
     SUBDIR += lua4
     SUBDIR += lua50
+    SUBDIR += luajit
     SUBDIR += lush
     SUBDIR += maude
     SUBDIR += mawk
@@ -298,6 +301,7 @@
     SUBDIR += ruby18
     SUBDIR += ruby19
     SUBDIR += runawk
+    SUBDIR += rust
     SUBDIR += s9fes
     SUBDIR += sather-specification
     SUBDIR += sather-tutorial

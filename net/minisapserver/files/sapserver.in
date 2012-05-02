@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/minisapserver/files/sapserver.in,v 1.1 2010/03/27 01:08:47 dougb Exp $
 #
 # PROVIDE: sapserver
 # REQUIRE: NETWORKING
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name=sapserver
-rcvar=${name}_enable
+rcvar=sapserver_enable
 
 command=%%PREFIX%%/bin/${name}
 required_files=%%PREFIX%%/etc/sap.cfg

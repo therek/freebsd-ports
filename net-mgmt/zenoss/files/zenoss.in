@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/zenoss/files/zenoss.in,v 1.1 2011/07/21 16:55:07 crees Exp $
 #
 # PROVIDE: zenoss
 # REQUIRE: login
@@ -19,7 +19,7 @@ load_rc_config zenoss
 zenoss_enable=${zenoss_enable:-"NO"}
 
 name=zenoss
-rcvar=`set_rcvar`
+rcvar=zenoss_enable
 extra_commands="init"
 
 start_cmd="zenoss_command start"

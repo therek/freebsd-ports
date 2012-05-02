@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/relayd/files/relayd.in,v 1.4 2010/05/28 11:59:50 mm Exp $
+# $FreeBSD: ports/net/relayd/files/relayd.in,v 1.5 2011/05/28 09:46:41 mm Exp $
 #
 # PROVIDE: relayd
 # REQUIRE: NETWORKING syslogd
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name=relayd
-rcvar=${name}_enable
+rcvar=relayd_enable
 
 load_rc_config $name
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/cacheboy16/files/squid.in,v 1.1 2008/04/18 06:29:39 adrian Exp $
+# $FreeBSD: ports/www/cacheboy16/files/squid.in,v 1.2 2010/03/27 00:15:10 dougb Exp $
 #
 # PROVIDE: squid
 # REQUIRE: LOGIN
@@ -27,7 +27,7 @@ squid_stop() {
 . /etc/rc.subr
 
 name=squid
-rcvar=${name}_enable
+rcvar=squid_enable
 
 command=%%PREFIX%%/sbin/squid
 extra_commands=reload

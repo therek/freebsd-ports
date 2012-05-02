@@ -6,7 +6,8 @@
 #
 
 PORTNAME=	snort
-PORTVERSION=	2.9.2
+PORTVERSION=	2.9.2.1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	SF/snort/snort \
 		http://people.rit.edu/rpsfa/distfiles/
@@ -19,7 +20,7 @@ COMMENT=	Lightweight network intrusion detection system
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	pcre.0:${PORTSDIR}/devel/pcre
+LIB_DEPENDS=	pcre.1:${PORTSDIR}/devel/pcre
 BUILD_DEPENDS=	daq>=0.6.2:${PORTSDIR}/net/daq \
 		${LOCALBASE}/lib/libnet11/libnet.a:${PORTSDIR}/net/libnet
 RUN_DEPENDS=	daq>=0.6.2:${PORTSDIR}/net/daq \
@@ -97,7 +98,7 @@ CONFIGURE_ARGS+=	--with-mysql=no
 .endif
 
 .if defined(WITH_ODBC)
-LIB_DEPENDS+=		odbc.1:${PORTSDIR}/databases/unixODBC
+LIB_DEPENDS+=		odbc.2:${PORTSDIR}/databases/unixODBC
 CONFIGURE_ARGS+=	--with-odbc=${LOCALBASE}
 LDFLAGS+=		${PTHREAD_LIBS}
 .else
@@ -200,6 +201,8 @@ post-patch:
 .endif
 .if defined(NOPORTDOCS)
 	@${REINPLACE_CMD} '/SUBDIRS = /s/doc//' ${WRKSRC}/Makefile.in ${WRKSRC}/Makefile.am
+	@${REINPLACE_CMD} '/install-data-am: /s/install-dist_docDATA//' \
+		${WRKSRC}/tools/u2boat/Makefile.in
 .endif
 
 pre-configure:
@@ -207,8 +210,10 @@ pre-configure:
 	@${FIND} ${WRKSRC} -name 'Makefile.am' | ${XARGS} ${REINPLACE_CMD} -e 's|lib/snort_|lib/snort/|g'
 	@${REINPLACE_CMD} -e 's|libdir)/pkgconfig|prefix)/libdata/pkgconfig|' ${WRKSRC}/Makefile.am \
 		${WRKSRC}/src/dynamic-preprocessors/libs/Makefile.am
-	@${ECHO_MSG} "===>   Rebuilding required files for snortsam patches"
+	@${REINPLACE_CMD} -e '/README.u2boat/d' ${WRKSRC}/tools/u2boat/Makefile.am
+	@${ECHO_MSG} "===>   Rebuilding required files for snortsam patches..."
 	@cd ${WRKSRC} && ${SH} ${WRKSRC}/autojunk.sh
+	@${ECHO_MSG} "===>   Done.  Configuring..."
 .endif
 
 pre-install:

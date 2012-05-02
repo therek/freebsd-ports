@@ -6,8 +6,7 @@
 #
 
 PORTNAME=	hyperic-sigar
-PORTVERSION=	1.6.3
-PORTREVISION=	1
+PORTVERSION=	1.6.4
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 MASTER_SITE_SUBDIR=	sigar/sigar/${PORTVERSION:C/\.[0-9]+$//}
@@ -28,9 +27,8 @@ SHLIB_MAJOR=	0
 PLIST_SUB=	SHLIB_MAJOR="${SHLIB_MAJOR}"
 
 .include <bsd.port.pre.mk>
-
 .if ${OSVERSION} > 900007
-BROKEN=		fails to build with new utmpx
+BROKEN=	fails to build with new utmpx
 .endif
 
 do-install:

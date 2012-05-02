@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/net/rtg/files/rtgpoll.in,v 1.1 2010/06/30 20:05:46 stefan Exp $
+# $FreeBSD: ports/net/rtg/files/rtgpoll.in,v 1.2 2010/08/04 10:30:14 lwhsu Exp $
 #
 # PROVIDE: rtgpoll
 # REQUIRE: LOGIN mysql
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="rtgpoll"
-rcvar=${name}_enable
+rcvar=rtgpoll_enable
 
 command=%%PREFIX%%/bin/${name}
 

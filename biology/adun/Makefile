@@ -44,6 +44,7 @@ ADDITIONAL_LDFLAGS=	-rpath-link=${WRKSRC}/Kernel/AdunKernel/AdunKernel.framework
 
 MAKE_ENV+=	GSL_LIB_DIR=${LOCALBASE}/lib
 MAKE_ENV+=	GSL_INCLUDE_DIR=${LOCALBASE}/include
+MAKE_ENV+=	KERNEL_COMPILER="${CC}"
 
 post-patch:
 	${REINPLACE_CMD} -e 's|^GNUSTEP_INSTALLATION_DOMAIN|#GNUSTEP_INSTALLATION_DOMAIN|' \
@@ -59,5 +60,7 @@ post-patch:
 		${WRKSRC}/UL/ULFramework/GNUmakefile
 	${REINPLACE_CMD} -e 's|GNUSTEP_HOME./..GNUSTEP_USER_DIR_TOOLS|GNUSTEP_LOCAL_TOOLS|' \
 		${WRKSRC}/GNUmakefile.postamble
+	${REINPLACE_CMD} -e 's|<wait.h>|<sys/wait.h>|' \
+		${WRKSRC}/UL/AdunServer/AdServer.m
 
 .include <bsd.port.mk>

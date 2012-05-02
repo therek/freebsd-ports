@@ -104,6 +104,8 @@
     SUBDIR += hiredis
     SUBDIR += hk_classes
     SUBDIR += hs-mysql
+    SUBDIR += hs-persistent
+    SUBDIR += hs-persistent-template
     SUBDIR += hsqldb
     SUBDIR += hypertable
     SUBDIR += innobackup
@@ -180,6 +182,7 @@
     SUBDIR += mariadb-scripts
     SUBDIR += mariadb-server
     SUBDIR += mdbtools
+    SUBDIR += mdcached
     SUBDIR += memcached
     SUBDIR += memcached12
     SUBDIR += memcachedb
@@ -353,6 +356,7 @@
     SUBDIR += p5-DBIx-Class-ResultSet-HashRef
     SUBDIR += p5-DBIx-Class-ResultSet-RecursiveUpdate
     SUBDIR += p5-DBIx-Class-Schema-Loader
+    SUBDIR += p5-DBIx-Class-Schema-PopulateMore
     SUBDIR += p5-DBIx-Class-TimeStamp
     SUBDIR += p5-DBIx-Class-Tree
     SUBDIR += p5-DBIx-Class-Tree-NestedSet
@@ -391,6 +395,7 @@
     SUBDIR += p5-DBIx-TransactionManager
     SUBDIR += p5-DBIx-Tree
     SUBDIR += p5-DBIx-VersionedDDL
+    SUBDIR += p5-DBIx-Wrapper
     SUBDIR += p5-DBIx-XHTML_Table
     SUBDIR += p5-DBIx-XML_RDB
     SUBDIR += p5-DBM-Deep
@@ -453,6 +458,7 @@
     SUBDIR += p5-Search-InvertedIndex
     SUBDIR += p5-Search-Namazu
     SUBDIR += p5-Search-Xapian
+    SUBDIR += p5-Search-Xapian10
     SUBDIR += p5-T2
     SUBDIR += p5-Tangram
     SUBDIR += p5-Template-DBI
@@ -471,7 +477,6 @@
     SUBDIR += p5-TokyoCabinet
     SUBDIR += p5-hp200lx-db
     SUBDIR += p5-mysql-genocide
-    SUBDIR += p5-postgresql-plperl
     SUBDIR += p5-qdbm
     SUBDIR += p5-tokyotyrant
     SUBDIR += pear-DB
@@ -507,6 +512,7 @@
     SUBDIR += pear-Structures_DataGrid_DataSource_MDB2
     SUBDIR += pear-Structures_DataGrid_DataSource_PDO
     SUBDIR += pear-XML_Query2XML
+    SUBDIR += pecl-chdb
     SUBDIR += pecl-dbase
     SUBDIR += pecl-drizzle
     SUBDIR += pecl-handlersocket
@@ -541,6 +547,7 @@
     SUBDIR += pgtune
     SUBDIR += pgworksheet
     SUBDIR += php-adodb-ext
+    SUBDIR += php-mdcached
     SUBDIR += php-sqlite3
     SUBDIR += php-sqlrelay
     SUBDIR += php4-dba
@@ -599,7 +606,6 @@
     SUBDIR += php52-sybase_ct
     SUBDIR += phpminiadmin
     SUBDIR += phpmyadmin
-    SUBDIR += phpmyadmin211
     SUBDIR += phppgadmin
     SUBDIR += postgis
     SUBDIR += postgis-jdbc
@@ -623,18 +629,24 @@
     SUBDIR += postgresql82-server
     SUBDIR += postgresql83-client
     SUBDIR += postgresql83-contrib
+    SUBDIR += postgresql83-plperl
     SUBDIR += postgresql83-server
     SUBDIR += postgresql84-client
     SUBDIR += postgresql84-contrib
+    SUBDIR += postgresql84-plperl
     SUBDIR += postgresql84-server
     SUBDIR += postgresql90-client
     SUBDIR += postgresql90-contrib
+    SUBDIR += postgresql90-plperl
     SUBDIR += postgresql90-server
     SUBDIR += postgresql91-client
     SUBDIR += postgresql91-contrib
+    SUBDIR += postgresql91-plperl
     SUBDIR += postgresql91-server
     SUBDIR += postgresql_autodoc
     SUBDIR += powerarchitect
+    SUBDIR += proftpd-mod_sql_mysql
+    SUBDIR += proftpd-mod_sql_postgres
     SUBDIR += pure-sql3
     SUBDIR += puredb
     SUBDIR += pxlib
@@ -645,6 +657,7 @@
     SUBDIR += py-PyGreSQL
     SUBDIR += py-bsddb
     SUBDIR += py-bsddb3
+    SUBDIR += py-carbon
     SUBDIR += py-cdb
     SUBDIR += py-cmemcache
     SUBDIR += py-couchdb
@@ -821,7 +834,9 @@
     SUBDIR += wfb2sql
     SUBDIR += wmjsql
     SUBDIR += xapian-bindings
+    SUBDIR += xapian-bindings10
     SUBDIR += xapian-core
+    SUBDIR += xapian-core10
     SUBDIR += xmbase-grok
     SUBDIR += xtrabackup
     SUBDIR += yasql

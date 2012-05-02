@@ -25,6 +25,10 @@ USE_LINUX=	yes
 USE_LINUX_APPS=	openssl curl cyrus-sasl2 libssh2 nspr nss openldap gtk2
 WANT_GNOME=	yes
 
+DEPRECATED=	has vulnerabilities and is EOL
+FORBIDDEN=	insecure version - use flashplugin11
+EXPIRATION_DATE=	2012-03-27
+
 RESTRICTED=	Redistribution not allowed
 RESTRICTED_FILES=	${DISTFILES:Nlinux-f10-flashsupport*:C/:[^:]+$//}
 
@@ -34,7 +38,7 @@ WRKSRC=		${WRKDIR}
 USE_NPAPI=	linux-*
 NPAPI_FILES=	libflashplayer.so
 
-CONFLICTS=	linux-flashplugin-7* linux-flashplugin-9* linux-f8-flashplugin10-* linux-f10-flashplugin11-*
+CONFLICTS=	linux-flashplugin-9* linux-f8-flashplugin10-* linux-f10-flashplugin11-*
 
 OPTIONS=	GNOME "include gnome support for .desktop file" Off
 

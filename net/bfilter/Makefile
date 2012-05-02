@@ -7,14 +7,17 @@
 
 PORTNAME=	bfilter
 PORTVERSION=	1.1.4
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Smart filtering HTTP proxy
 
-LIB_DEPENDS=	ACE.5:${PORTSDIR}/devel/ace \
+LIB_DEPENDS=	ACE.6:${PORTSDIR}/devel/ace \
 		sigc-2.0.0:${PORTSDIR}/devel/libsigc++20
+
+BROKEN=		does not compile
 
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

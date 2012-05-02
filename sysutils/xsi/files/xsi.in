@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/xsi/files/xsi.in,v 1.4 2009/07/15 16:56:07 dougb Exp $
+# $FreeBSD: ports/sysutils/xsi/files/xsi.in,v 1.5 2010/03/27 00:15:07 dougb Exp $
 #
 # PROVIDE: xsi
 # REQUIRE: NETWORKING
@@ -17,7 +17,7 @@ xsi_enable=${xsi_enable-"NO"}
 . /etc/rc.subr
 
 name=xsi
-rcvar=`set_rcvar`
+rcvar=xsi_enable
 
 command=%%PREFIX%%/bin/${name}
 load_rc_config ${name}

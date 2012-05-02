@@ -7,6 +7,7 @@
 
 PORTNAME=	opera
 PORTVERSION=	${OPERA_VER}
+PORTREVISION=	1
 CATEGORIES=	www linux
 MASTER_SITES=	ftp://opera.inode.at/${MASTER_SITES_VER_PATH} \
 		http://gd.tuwien.ac.at/infosys/browsers/opera/${MASTER_SITES_VER_PATH} \
@@ -24,8 +25,8 @@ COMMENT=	Linux plugin support for the native Opera browser
 
 RUN_DEPENDS=	${PREFIX}/lib/opera/operapluginwrapper:${PORTSDIR}/${PKGCATEGORY}/opera
 
-OPERA_VER?=	11.60
-OPERA_BUILD?=	1185
+OPERA_VER?=	11.61
+OPERA_BUILD?=	1250
 MASTER_SITES_VER_PATH=	linux/${OPERA_VER:S/.//}/
 
 USE_XZ=		yes
@@ -35,6 +36,7 @@ USE_LINUX_APPS=	xorglibs
 ONLY_FOR_ARCHS=	i386 amd64
 
 NO_BUILD=	yes
+EXPLICIT_PACKAGE_DEPENDS=	yes
 
 PLIST_FILES=	lib/opera/operapluginwrapper.linux
 

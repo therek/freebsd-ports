@@ -7,6 +7,7 @@
 
 PORTNAME=	atunes
 PORTVERSION=	2.0.1
+PORTREVISION?=	1
 CATEGORIES=	audio java
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/aTunes%20${PORTVERSION}
 
@@ -40,7 +41,7 @@ RUN_DEPENDS+=	mplayer:${PORTSDIR}/multimedia/mplayer
 .endif
 
 .if defined(WITH_XINE)
-RUN_DEPENDS+=	xine.1:${PORTSDIR}/multimedia/libxine
+LIB_DEPENDS+=	xine.2:${PORTSDIR}/multimedia/libxine
 .endif
 
 .if defined(WITH_CDDA2WAV)

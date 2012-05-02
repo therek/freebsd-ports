@@ -7,17 +7,17 @@
 
 PORTNAME=	dbmail
 PORTVERSION=	2.3.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	http://www.dbmail.org/download/2.3/
 
-MAINTAINER=	mark_sf@kikg.ifmo.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	An SQL database-based mail system (POP3 and IMAP)
 
 LIB_DEPENDS+=	event-1.4:${PORTSDIR}/devel/libevent
 LIB_DEPENDS+=	gmime-2.0.4:${PORTSDIR}/mail/gmime2
 LIB_DEPENDS+=	mhash.2:${PORTSDIR}/security/mhash
-LIB_DEPENDS+=	zdb.7:${PORTSDIR}/databases/libzdb
+LIB_DEPENDS+=	zdb.8:${PORTSDIR}/databases/libzdb
 
 CONFLICTS=	dbmail-*-2.0.* dbmail-2.1.* dbmail-2.2.*
 NO_LATEST_LINK=	yes
@@ -112,7 +112,7 @@ NO_INSTALL_MANPAGES=yes
 .endif
 
 .if !defined(WITH_MYSQL) && !defined(WITH_POSTGRESQL) && !defined(WITH_SQLITE)
-IGNORE="requires at least one database backend selected. Run 'make config'"
+IGNORE=	requires at least one database backend selected. Run 'make config'
 .endif
 
 post-patch:

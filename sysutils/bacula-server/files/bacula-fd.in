@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/bacula-server/files/bacula-fd.in,v 1.5 2009/03/08 23:05:43 beech Exp $
+# $FreeBSD: ports/sysutils/bacula-server/files/bacula-fd.in,v 1.6 2010/03/27 00:14:52 dougb Exp $
 #
 # PROVIDE: bacula_fd
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name="bacula_fd"
-rcvar=${name}_enable
+rcvar=bacula_fd_enable
 command=%%PREFIX%%/sbin/bacula-fd
 
 load_rc_config $name

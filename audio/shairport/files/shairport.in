@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/shairport/files/shairport.in,v 1.1 2012/01/07 11:24:21 avl Exp $
+# $FreeBSD: ports/audio/shairport/files/shairport.in,v 1.2 2012/01/08 13:14:46 avl Exp $
 #
 # PROVIDE: shairport
 # REQUIRE: LOGIN avahi_daemon
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name="shairport"
-rcvar=${name}_enable
+rcvar=shairport_enable
 
 load_rc_config ${name}
 

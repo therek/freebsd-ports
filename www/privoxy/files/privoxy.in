@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/privoxy/files/privoxy.in,v 1.5 2010/02/24 01:36:26 wen Exp $
+# $FreeBSD: ports/www/privoxy/files/privoxy.in,v 1.6 2010/03/27 00:15:16 dougb Exp $
 #
 #
 # PROVIDE: privoxy
@@ -25,7 +25,7 @@
 . /etc/rc.subr
 
 name="privoxy"
-rcvar=${name}_enable
+rcvar=privoxy_enable
 load_rc_config ${name}
 
 : ${privoxy_enable="NO"}

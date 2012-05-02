@@ -6,8 +6,7 @@
 #
 
 PORTNAME=	tt-rss
-PORTVERSION=	1.5.8.1
-PORTREVISION=	1
+PORTVERSION=	1.5.10
 CATEGORIES=	www
 MASTER_SITES=	http://tt-rss.org/download/
 
@@ -38,7 +37,7 @@ USE_PHP+=	curl
 .endif
 
 SUB_FILES=	httpd-tt-rss.conf pkg-message
-SUB_LIST=	DB=${DB}
+SUB_LIST=	DB=${DB} WWWOWN=${WWWOWN}
 PLIST_SUB=	WWWOWN=${WWWOWN}:${WWWGRP}
 PKGMESSAGE=	${WRKDIR}/pkg-message
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/rotorouter/files/rotorouter.in,v 1.2 2010/02/01 03:25:56 dougb Exp $
 #
 # PROVIDE: rotorouter
 # REQUIRE: LOGIN
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=rotorouter
-rcvar=${name}_enable
+rcvar=rotorouter_enable
 
 command=%%PREFIX%%/sbin/${name}
 command_args='&'

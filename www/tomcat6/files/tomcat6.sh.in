@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/tomcat6/files/tomcat6.sh.in,v 1.10 2011/07/06 13:29:09 ale Exp $
+# $FreeBSD: ports/www/tomcat6/files/tomcat6.sh.in,v 1.11 2011/09/06 20:57:52 ale Exp $
 #
 
 # PROVIDE: tomcat%%TOMCAT_VERSION%%
@@ -66,7 +66,7 @@ tomcat%%TOMCAT_VERSION%%_stop_timeout="${tomcat%%TOMCAT_VERSION%%_stop_timeout:-
 . /etc/rc.subr
 
 name="tomcat%%TOMCAT_VERSION%%"
-rcvar=`set_rcvar`
+rcvar=tomcat%%TOMCAT_VERSION%%_enable
 pidfile="/var/run/%%APP_SHORTNAME%%.pid"
 
 load_rc_config "${name}"

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/masqmail/files/masqmail.in,v 1.1 2008/07/18 21:03:58 anray Exp $
+# $FreeBSD: ports/mail/masqmail/files/masqmail.in,v 1.2 2010/03/27 00:13:17 dougb Exp $
 #
 
 # PROVIDE: mail
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name=masqmail
-rcvar=`set_rcvar`
+rcvar=masqmail_enable
 
 command=%%PREFIX%%/sbin/masqmail
 required_dirs=/var/log/masqmail

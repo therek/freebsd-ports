@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/boinc-client/files/boinc.sh.in,v 1.5 2008/12/23 13:59:18 pav Exp $
+# $FreeBSD: ports/net/boinc-client/files/boinc.sh.in,v 1.6 2010/03/27 00:13:38 dougb Exp $
 
 # PROVIDE: boinc
 # REQUIRE: LOGIN
@@ -9,7 +9,7 @@
 . /etc/rc.subr
 
 name="boinc"
-rcvar=`set_rcvar`
+rcvar=boinc_enable
 
 boinc_user=%%BOINC_USER%%
 boinc_home=%%BOINC_HOME%%

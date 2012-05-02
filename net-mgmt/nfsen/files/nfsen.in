@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/nfsen/files/nfsen.in,v 1.2 2010/04/03 22:12:01 dougb Exp $
 #
 # PROVIDE: nfsen
 # REQUIRE: sshd
@@ -12,7 +12,7 @@ nfsen_enable=${nfsen_enable-"NO"}
 . /etc/rc.subr
 
 name="nfsen"
-rcvar=`set_rcvar`
+rcvar=nfsen_enable
 load_rc_config $name
 command="%%PREFIX%%/bin/nfsen"
 start_cmd="%%PREFIX%%/bin/nfsen start"

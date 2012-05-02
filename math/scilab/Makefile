@@ -7,7 +7,7 @@
 
 PORTNAME=	scilab
 PORTVERSION=	5.3.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math cad parallel java
 MASTER_SITES=	http://www.scilab.org/download/${PORTVERSION}/:scilab \
 		http://www.predatorlabs.net/dl/:jgraphx \
@@ -21,7 +21,7 @@ COMMENT=	Scientific software package for numerical computations
 # A partial dependencies list can be found at:
 # http://wiki.scilab.org/Dependencies_of_Scilab_5.X
 LIB_DEPENDS=	xml2.5:${PORTSDIR}/textproc/libxml2 \
-		pcre.0:${PORTSDIR}/devel/pcre
+		pcre.1:${PORTSDIR}/devel/pcre
 
 MAKE_JOBS_SAFE=	yes
 
@@ -49,6 +49,10 @@ OPTIONS=	ATLAS "Use Atlas instead of Blas" OFF \
 		UMFPACK "Build with umfpack" OFF
 
 .include <bsd.port.options.mk>
+
+.if ${OSVERSION} < 900000 && ${ARCH} == "amd64"
+BROKEN=		segfaults during build
+.endif
 
 .if defined(WITH_ATLAS)
 LIB_DEPENDS+=	atlas.2:${PORTSDIR}/math/atlas

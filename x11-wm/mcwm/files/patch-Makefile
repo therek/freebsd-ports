@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/x11-wm/mcwm/files/patch-Makefile,v 1.5 2011/12/28 16:42:05 crees Exp $
 
 Stops clobbering CC, CFLAGS, LDFLAGS, forcing -O2 and adds
 -lxcb-property to LDFLAGS to fix GCC46 build
@@ -17,7 +17,7 @@ http://www.freebsd.org/cgi/query-pr.cgi?pr=ports/163667
 -	-lxcb-atom #-ldmalloc
 +CFLAGS+=-g -std=c99 -Wall -Wextra -I/usr/local/include #-DDEBUG #-DDMALLOC
 +LDFLAGS+=-L/usr/local/lib -lxcb -lxcb-randr -lxcb-keysyms -lxcb-icccm \
-+	-lxcb-atom -lxcb-property #-ldmalloc
++	-lxcb-util #-ldmalloc
  
  RM=/bin/rm
 -PREFIX=/usr/local

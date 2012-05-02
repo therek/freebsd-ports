@@ -6,11 +6,11 @@
 #
 
 PORTNAME=	unplug
-DISTVERSION=	1.6.06
-DISTVERSIONSUFFIX=	-fx
+DISTVERSION=	2.050
+DISTVERSIONSUFFIX=	-fx+sm
 CATEGORIES=	www
 
-MAINTAINER=	miwi@FreeBSD.org
+MAINTAINER=	gecko@FreeBSD.org
 COMMENT=	Converts embedded media to html links
 
 XPI_ID=		unplug@compunach

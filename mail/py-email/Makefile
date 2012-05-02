@@ -13,8 +13,11 @@ MASTER_SITES=	http://cheeseshop.python.org/packages/source/e/email/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	email-${PORTVERSION}
 
-MAINTAINER=	mnag@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Email package for Python 2.3 or upper
+
+DEPRECATED=	Included into all supported python versions
+EXPIRATION_DATE=	2012-03-14
 
 DIST_SUBDIR=	python
 USE_PYTHON=	2.5+

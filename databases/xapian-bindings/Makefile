@@ -6,22 +6,29 @@
 #
 
 PORTNAME=	xapian-bindings
-PORTVERSION=	1.0.22
+PORTVERSION=	1.2.8
 CATEGORIES=	databases
-MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/
+MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
+		LOCAL/sunpoet
 
-MAINTAINER=	jf@dockes.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Bindings allowing Xapian to be used from various programming languages
 
-RUN_DEPENDS=	xapian-core>=1.0.22:${PORTSDIR}/databases/xapian-core
-BUILD_DEPENDS:=	${RUN_DEPENDS}
-
 LICENSE=	GPLv2
-CONFIGURE_ARGS+=	--datarootdir="${DATADIR}" --docdir="${DOCSDIR}" \
+
+LIB_DEPENDS=	xapian.26:${PORTSDIR}/databases/xapian-core
+
+OPTIONS=	PHP	"Build PHP binding" on \
+		PYTHON	"Build Python binding" on \
+		RUBY	"Build Ruby binding" on
+
+CONFIGURE_ARGS=	--datarootdir="${DATADIR}" --docdir="${DOCSDIR}" \
 		--without-csharp --without-java --without-tcl
 GNU_CONFIGURE=	yes
 
-.ifdef(WITHOUT_PHP)
+.include <bsd.port.options.mk>
+
+.if defined(WITHOUT_PHP)
 CONFIGURE_ARGS+=	--without-php
 PLIST_SUB+=	BINDING_PHP="@comment "
 .else
@@ -32,7 +39,7 @@ USE_PHP=	yes
 USE_PHP_BUILD=	yes
 .endif
 
-.ifdef(WITHOUT_PYTHON)
+.if defined(WITHOUT_PYTHON)
 CONFIGURE_ARGS+=	--without-python
 PLIST_SUB+=	BINDING_PYTHON="@comment "
 .else
@@ -42,22 +49,22 @@ PLIST_SUB+=	BINDING_PYTHON=""
 USE_PYTHON=	yes
 .endif
 
-.ifdef(WITHOUT_RUBY)
+.if defined(WITHOUT_RUBY)
 CONFIGURE_ARGS+=	--without-ruby
 PLIST_SUB+=	BINDING_RUBY="@comment "
 .else
 CONFIGURE_ARGS+=	--with-ruby
-USE_RUBY_RDOCS=	no
+USE_RUBY_RDOC=	no
 PLIST_SUB+=	BINDING_RUBY=""
 USE_RUBY=	yes
 .endif
 
-post-install:
-.ifdef(NOPORTDOCS)
-	${RM} -fr ${DOCSDIR}
-.endif
-.ifndef(WITHOUT_RUBY)
-	${RM} -fr ${DOCSDIR}/ruby/rdocs
+post-patch:
+# do not install rdoc
+	@${REINPLACE_CMD} -e '/^install-data-am:/ s|install-data-local||' ${WRKSRC}/ruby/Makefile.in
+.if defined(NOPORTDOCS)
+	@${REINPLACE_CMD} -e '/^install-data-am:/ s|install-dist_docdataDATA install-dist_exampledataDATA ||' ${WRKSRC}/php/Makefile.in ${WRKSRC}/python/Makefile.in
+	@${REINPLACE_CMD} -e '/^install-data-am:/ s|install-dist_docdataDATA||; 759 s|install-dist_exampledataDATA ||' ${WRKSRC}/ruby/Makefile.in
 .endif
 
 .include <bsd.port.mk>

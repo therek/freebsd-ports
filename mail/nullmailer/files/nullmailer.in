@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/mail/nullmailer/files/nullmailer.in,v 1.5 2011/05/02 19:22:45 glarkin Exp $
+# $FreeBSD: ports/mail/nullmailer/files/nullmailer.in,v 1.6 2011/05/17 16:07:49 glarkin Exp $
 #
 # PROVIDE: nullmailer
 # REQUIRE: LOGIN
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name=nullmailer
-rcvar=`set_rcvar`
+rcvar=nullmailer_enable
 
 command=/usr/sbin/daemon
 procname=%%PREFIX%%/sbin/nullmailer-send

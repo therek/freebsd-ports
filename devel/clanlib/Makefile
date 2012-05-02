@@ -8,7 +8,7 @@
 
 PORTNAME=	clanlib
 PORTVERSION=	0.8.1
-PORTREVISION=	9
+PORTREVISION=	10
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.clanlib.org/download/releases-0.8/
@@ -37,12 +37,6 @@ USE_SDL=	gfx
 USE_GL=		yes
 
 .include <bsd.port.pre.mk>
-
-# Is this still true for 0.8? Removed until we've got some
-# confirmation on this.
-#.if ${ARCH} != "i386" && ${ARCH} != "amd64"
-#BROKEN=		"Does not compile on !i386 and !amd64"
-#.endif
 
 post-patch:
 	@${GREP} -lR "SDL/SDL" ${WRKSRC} | ${XARGS} ${REINPLACE_CMD} -e \

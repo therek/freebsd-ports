@@ -1,12 +1,12 @@
---- configure.orig	2006-12-12 03:38:04.000000000 +0200
-+++ configure	2007-06-01 12:22:26.000000000 +0300
-@@ -1561,6 +1561,9 @@
+--- ./configure.orig	2011-12-18 10:20:51.000000000 +0000
++++ ./configure	2012-01-25 19:33:11.000000000 +0000
+@@ -3598,6 +3598,9 @@
+     ;;
    mips*-*-linux*)
-     noconfigdirs="$noconfigdirs target-newlib target-libgloss"
      ;;
 +  mipsallegrex*-*-*)
 +    noconfigdirs="$noconfigdirs target-libgloss"
 +    ;;
    mips*-*-*)
-     noconfigdirs="$noconfigdirs gprof ${libgcj}"
+     noconfigdirs="$noconfigdirs gprof"
      ;;

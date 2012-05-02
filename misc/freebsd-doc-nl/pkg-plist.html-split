@@ -68,6 +68,7 @@
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/boot-kernel.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/boot-shutdown.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/boot.html
+%%DOCSDIR%%/%%DOCLANG%%/books/handbook/bsdinstall.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/carp.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/colophon.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/common-tasks.html
@@ -214,6 +215,7 @@
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/mirrors.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/mount-unmount.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/multimedia.html
+%%DOCSDIR%%/%%DOCLANG%%/books/handbook/mythtv.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/network-aggregation.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/network-apache.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/network-atm.html
@@ -232,6 +234,7 @@
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/network-nis.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/network-ntp.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/network-plip.html
+%%DOCSDIR%%/%%DOCLANG%%/books/handbook/network-pxe-nfs.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/network-routing.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/network-samba.html
 %%DOCSDIR%%/%%DOCLANG%%/books/handbook/network-servers.html

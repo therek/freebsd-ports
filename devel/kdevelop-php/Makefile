@@ -6,6 +6,7 @@
 
 PORTNAME=	kdevelop
 PORTVERSION=	${KDEVELOP_VERSION:S/4./1./}
+PORTREVISION=	1
 CATEGORIES=	devel kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	${KDEVELOP_BRANCH}/kdevelop/${KDEVELOP_VERSION}/src
@@ -26,7 +27,7 @@ USE_GMAKE=	yes
 USE_KDE4=	automoc4 kdehier kdelibs kdeprefix
 USE_QT_VER=	4
 QT_COMPONENTS=	moc_build qmake_build rcc_build uic_build
-MAKE_JOBS_SAFE=	yes
+MAKE_JOBS_UNSAFE=	yes
 
 OPTIONS=	DOCS	"Integrate with PHP.net online documentation" on
 

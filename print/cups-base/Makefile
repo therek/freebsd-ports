@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	cups
-PORTVERSION=	1.5.0
+PORTVERSION=	1.5.2
 DISTVERSIONSUFFIX=	-source
 CATEGORIES=	print
 MASTER_SITES=	EASYSW/${PORTNAME}/${DISTVERSION}
@@ -70,9 +70,11 @@ CUPSSYSGRP=	wheel
 
 # UNIQUENAME must be set before bsd.port.pre.mk so OPTIONSFILE can be included
 .if defined(CUPS_CLIENT)
+PORTREVISION=	1
 LICENSE=	LGPL21
 CUPS_SUFFIX=	-client
 .elif defined(CUPS_IMAGE)
+PORTREVISION=	0
 CUPS_SUFFIX=	-image
 LICENSE=	LGPL21
 .else
@@ -83,10 +85,17 @@ CONFLICTS+=	cupsddk-*
 
 .include <bsd.port.pre.mk>
 
+.if ${OSVERSION} < 800000
+# the openssl in base of FreeBSD 7.x is too old
+WITH_OPENSSL_PORT?=	yes
+.endif
+
+
 .if defined(CUPS_CLIENT)
 COMMENT2=	Library cups
 INSTALL_WRKSRC=	${WRKSRC}/cups
 PLIST=		${MASTERDIR}/pkg-plist.client
+USE_ICONV=	yes
 USE_LDCONFIG=	yes
 PKGMESSAGE=	${NONEXISTENT}
 DESCR=		${MASTERDIR}/pkg-descr.client

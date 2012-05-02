@@ -4,7 +4,9 @@
 %%WWWDIR%%/atom-to-html.xsl
 %%WWWDIR%%/backend.php
 %%WWWDIR%%/cache/.htaccess
+%%WWWDIR%%/cache/export/.empty
 %%WWWDIR%%/cache/htmlpurifier/.empty
+%%WWWDIR%%/cache/images/.empty
 %%WWWDIR%%/cache/magpie/.empty
 %%WWWDIR%%/cache/simplepie/.empty
 %%WWWDIR%%/cdm.css
@@ -25,7 +27,6 @@
 %%WWWDIR%%/classes/pref_users.php
 %%WWWDIR%%/classes/protected_handler.php
 %%WWWDIR%%/classes/public_handler.php
-%%WWWDIR%%/classes/readitlater_button.php
 %%WWWDIR%%/classes/rpc.php
 %%WWWDIR%%/classes/share_button.php
 %%WWWDIR%%/classes/tweet_button.php
@@ -64,10 +65,8 @@
 %%WWWDIR%%/images/logo.png
 %%WWWDIR%%/images/logo_big.png
 %%WWWDIR%%/images/logo_wide.png
-%%WWWDIR%%/images/mark_set.gif
 %%WWWDIR%%/images/mark_set.png
 %%WWWDIR%%/images/mark_set.svg
-%%WWWDIR%%/images/mark_unset.gif
 %%WWWDIR%%/images/mark_unset.png
 %%WWWDIR%%/images/mark_unset.svg
 %%WWWDIR%%/images/new_version.png
@@ -75,9 +74,7 @@
 %%WWWDIR%%/images/overlay.png
 %%WWWDIR%%/images/piggie.png
 %%WWWDIR%%/images/piggie_icon.png
-%%WWWDIR%%/images/pub_set.gif
 %%WWWDIR%%/images/pub_set.png
-%%WWWDIR%%/images/pub_unset.gif
 %%WWWDIR%%/images/pub_unset.png
 %%WWWDIR%%/images/score_half_high.png
 %%WWWDIR%%/images/score_half_low.png
@@ -114,7 +111,6 @@
 %%WWWDIR%%/js/mail_button.js
 %%WWWDIR%%/js/note_button.js
 %%WWWDIR%%/js/prefs.js
-%%WWWDIR%%/js/readitlater_button.js
 %%WWWDIR%%/js/share_button.js
 %%WWWDIR%%/js/tt-rss.js
 %%WWWDIR%%/js/tweet_button.js
@@ -1777,6 +1773,7 @@
 %%WWWDIR%%/localized_js.php
 %%WWWDIR%%/lock/.empty
 %%WWWDIR%%/lock/.htaccess
+%%WWWDIR%%/messages.pot
 %%WWWDIR%%/mobile/article.php
 %%WWWDIR%%/mobile/backend.php
 %%WWWDIR%%/mobile/cat.php
@@ -1879,6 +1876,9 @@
 %%WWWDIR%%/schema/versions/mysql/84.sql
 %%WWWDIR%%/schema/versions/mysql/85.sql
 %%WWWDIR%%/schema/versions/mysql/86.sql
+%%WWWDIR%%/schema/versions/mysql/87.sql
+%%WWWDIR%%/schema/versions/mysql/88.sql
+%%WWWDIR%%/schema/versions/mysql/89.sql
 %%WWWDIR%%/schema/versions/mysql/9.sql
 %%WWWDIR%%/schema/versions/pgsql/10.sql
 %%WWWDIR%%/schema/versions/pgsql/11.sql
@@ -1963,6 +1963,9 @@
 %%WWWDIR%%/schema/versions/pgsql/84.sql
 %%WWWDIR%%/schema/versions/pgsql/85.sql
 %%WWWDIR%%/schema/versions/pgsql/86.sql
+%%WWWDIR%%/schema/versions/pgsql/87.sql
+%%WWWDIR%%/schema/versions/pgsql/88.sql
+%%WWWDIR%%/schema/versions/pgsql/89.sql
 %%WWWDIR%%/schema/versions/pgsql/9.sql
 %%WWWDIR%%/templates/digest_template.txt
 %%WWWDIR%%/templates/digest_template_html.txt
@@ -1982,30 +1985,11 @@
 %%WWWDIR%%/utils/extract-i18n-js.pl
 %%WWWDIR%%/utils/localized_schema.txt
 %%WWWDIR%%/utils/mysql_convert_unicode.php
-%%WWWDIR%%/utils/notifier/background.html
-%%WWWDIR%%/utils/notifier/images/alert.png
-%%WWWDIR%%/utils/notifier/images/error.png
-%%WWWDIR%%/utils/notifier/images/icon.png
-%%WWWDIR%%/utils/notifier/images/normal.png
-%%WWWDIR%%/utils/notifier/images/ttrss_logo.png
-%%WWWDIR%%/utils/notifier/lib/prototype.js
-%%WWWDIR%%/utils/notifier/lib/scriptaculous/controls.js
-%%WWWDIR%%/utils/notifier/lib/scriptaculous/dragdrop.js
-%%WWWDIR%%/utils/notifier/lib/scriptaculous/effects.js
-%%WWWDIR%%/utils/notifier/lib/scriptaculous/scriptaculous.js
-%%WWWDIR%%/utils/notifier/manifest.json
-%%WWWDIR%%/utils/notifier/options.html
-%%WWWDIR%%/utils/notifier/popup.html
-%%WWWDIR%%/utils/notifier/style.css
 %%WWWDIR%%/utils/regen_config_checks.sh
 %%WWWDIR%%/utils/stats.php
 %%WWWDIR%%/utils/update-schema-translations.sh
 %%WWWDIR%%/utils/update-translations.sh
 @exec chown -R %%WWWOWN%% %D/%%WWWDIR%%
-@dirrm %%WWWDIR%%/utils/notifier/lib/scriptaculous
-@dirrm %%WWWDIR%%/utils/notifier/lib
-@dirrm %%WWWDIR%%/utils/notifier/images
-@dirrm %%WWWDIR%%/utils/notifier
 @dirrm %%WWWDIR%%/utils
 @dirrm %%WWWDIR%%/themes/triple-pane
 @dirrm %%WWWDIR%%/themes
@@ -2304,7 +2288,9 @@
 @dirrm %%WWWDIR%%/classes
 @dirrmtry %%WWWDIR%%/cache/simplepie
 @dirrmtry %%WWWDIR%%/cache/magpie
+@dirrmtry %%WWWDIR%%/cache/images
 @dirrmtry %%WWWDIR%%/cache/htmlpurifier
+@dirrmtry %%WWWDIR%%/cache/export
 @dirrmtry %%WWWDIR%%/cache
 @dirrm %%WWWDIR%%/api
 @dirrmtry %%WWWDIR%%

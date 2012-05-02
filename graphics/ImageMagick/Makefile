@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	ImageMagick
-DISTVERSION=	6.7.4-4
+DISTVERSION=	6.7.5-7
 CATEGORIES=	graphics perl5
 MASTER_SITES=	ftp://ftp.imagemagick.org/pub/ImageMagick/ \
 		http://image_magick.veidrodis.com/image_magick/ \
@@ -369,10 +369,6 @@ CONFLICTS+=		display-[0-9]*
 CONFIGURE_ARGS+=	--with-x
 USE_XORG=		xext xt
 PLIST_SUB+=		X11=''
-.endif
-
-.if ${ARCH} == sparc64 && ${OSVERSION} < 700000
-USE_GCC=	4.2+
 .endif
 
 .if defined(NOPORTDOCS)

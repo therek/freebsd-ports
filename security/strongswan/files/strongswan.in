@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/security/strongswan/files/strongswan.in,v 1.1 2011/09/22 21:37:55 flo Exp $
 
 # PROVIDE: strongswan
 # REQUIRE: LOGIN
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="strongswan"
-rcvar=`set_rcvar`
+rcvar=strongswan_enable
 
 command="%%PREFIX%%/sbin/ipsec"
 extra_commands="reload statusall"

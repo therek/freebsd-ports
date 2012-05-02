@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/salt/files/salt_syndic.in,v 1.1 2011/12/26 20:52:53 eadler Exp $
 #
 # Salt Synic startup script
 #
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="salt_syndic"
-rcvar="${name}_enable"
+rcvar=salt_syndic_enable
 
 load_rc_config ${name}
 

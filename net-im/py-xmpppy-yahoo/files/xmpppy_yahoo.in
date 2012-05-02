@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-im/py-xmpppy-yahoo/files/xmpppy_yahoo.in,v 1.1 2007/07/27 08:56:09 lofi Exp $
+# $FreeBSD: ports/net-im/py-xmpppy-yahoo/files/xmpppy_yahoo.in,v 1.2 2010/03/27 00:14:17 dougb Exp $
 #
 # PROVIDE: xmpppy_yahoo
 # REQUIRE: DAEMON %%JABBER_REQUIRE%%
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="xmpppy_yahoo"
-rcvar=`set_rcvar`
+rcvar=xmpppy_yahoo_enable
 
 load_rc_config $name
 

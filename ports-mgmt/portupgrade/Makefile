@@ -13,7 +13,7 @@ CATEGORIES=	ports-mgmt
 MASTER_SITES=	ftp://ftp.SpringDaemons.com/soft/
 DISTNAME=	pkgtools-${DISTVERSION}
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	FreeBSD ports/packages administration and management tool suite
 
 OPTIONS=	BDB4 "Use Berkeley DB >=2 as backend" on \

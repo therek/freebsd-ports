@@ -7,7 +7,7 @@
 
 PORTNAME?=	inn
 PORTVERSION?=	2.4.6
-PORTREVISION?=	1
+PORTREVISION?=	3
 CATEGORIES=	news ipv6
 # Master distribution broken
 #MASTER_SITES?=	${MASTER_SITE_ISC}
@@ -81,7 +81,7 @@ CONFIGURE_ARGS+=	--without-kerberos
 .endif
 
 .if defined(WITH_PYTHON)
-USE_PYTHON=		YES
+USE_PYTHON=		yes
 CONFIGURE_ARGS+=	--with-python
 .    include "${PORTSDIR}/Mk/bsd.python.mk"
 .endif

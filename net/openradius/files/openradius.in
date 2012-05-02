@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openradius/files/openradius.in,v 1.2 2006/02/20 20:47:28 dougb Exp $
+# $FreeBSD: ports/net/openradius/files/openradius.in,v 1.3 2010/03/27 00:13:52 dougb Exp $
 #
 # PROVIDE: openradius
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="openradius"
-rcvar=`set_rcvar`
+rcvar=openradius_enable
 
 load_rc_config ${name}
 

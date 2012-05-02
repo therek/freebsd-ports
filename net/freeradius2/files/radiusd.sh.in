@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/freeradius2/files/radiusd.sh.in,v 1.6 2010/03/27 00:13:42 dougb Exp $
+# $FreeBSD: ports/net/freeradius2/files/radiusd.sh.in,v 1.7 2010/04/11 11:43:26 wxs Exp $
 #
 # PROVIDE: radiusd
 # REQUIRE: %%REQUIRE%%
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name=radiusd
-rcvar=`set_rcvar`
+rcvar=radiusd_enable
 load_rc_config $name
 
 command=%%PREFIX%%/sbin/radiusd

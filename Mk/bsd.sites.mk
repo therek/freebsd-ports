@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.554 2011/12/20 05:00:01 jgh Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.559 2012/02/21 02:13:12 tabthorpe Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -118,7 +118,6 @@ MASTER_SITE_CHEESESHOP+=	\
 	http://d.pypi.python.org/packages/%SUBDIR%/ \
 	http://e.pypi.python.org/packages/%SUBDIR%/ \
 	http://f.pypi.python.org/packages/%SUBDIR%/ \
-	http://pypi.d9t.de/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
 	http://pypi.inqbus.de/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
 	http://pypi.it.uwosh.edu/${DISTNAME:S/${DISTVERSION}//:S/-//}/ \
 	http://pypi.python.jp/${DISTNAME:S/${DISTVERSION}//:S/-//}/
@@ -155,6 +154,7 @@ MASTER_SITE_DEBIAN+=	\
 MASTER_SITE_DEBIAN_NON_US+=	\
 	ftp://ftp.au.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.bg.debian.org/debian-non-US/%SUBDIR%/ \
+	ftp://ftp.br.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.cl.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.cz.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.de.debian.org/debian-non-US/%SUBDIR%/ \
@@ -179,7 +179,11 @@ MASTER_SITE_DEBIAN_NON_US+=	\
 	ftp://ftp.sk.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.uk.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.wa.au.debian.org/debian-non-US/%SUBDIR%/ \
-	ftp://ftp2.de.debian.org/debian-non-US/%SUBDIR%/
+	ftp://ftp2.de.debian.org/debian-non-US/%SUBDIR%/ \
+	ftp://ftp.snt.utwente.nl/pub/linux/debian-non-US/%SUBDIR%/ \
+	ftp://ftp.df.lth.se/pub/debian-non-US/%SUBDIR%/ \
+	ftp://ftp.acc.umu.se/debian-non-US/%SUBDIR%/ \
+	ftp://mirror.symnds.com/debian-non-US/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_DEBIAN_POOL)
@@ -288,8 +292,6 @@ MASTER_SITE_FEDORA_LINUX+= \
 	ftp://ftp.tu-chemnitz.de/pub/linux/fedora-core/%SUBDIR%/ \
 	http://ftp.heanet.ie/pub/fedora/linux/core/%SUBDIR%/ \
 	ftp://ftp.heanet.ie/pub/fedora/linux/core/%SUBDIR%/ \
-	http://ftp.esat.net/pub/linux/fedora/%SUBDIR%/ \
-	ftp://ftp.esat.net/pub/linux/fedora/%SUBDIR%/ \
 	ftp://alviss.et.tudelft.nl/pub/fedora/core/%SUBDIR%/ \
 	http://ftp.surfnet.nl/ftp/pub/os/Linux/distr/fedora/linux/core/%SUBDIR%/ \
 	ftp://ftp.surfnet.nl/pub/os/Linux/distr/fedora/linux/core/%SUBDIR%/ \
@@ -678,7 +680,6 @@ MASTER_SITE_KDE+=	\
 	ftp://ftp.rhnet.is/pub/kde/%SUBDIR%/ \
 	http://ftp.rhnet.is/pub/kde/%SUBDIR%/ \
 	http://ftp-stud.fht-esslingen.de/Mirrors/ftp.kde.org/pub/kde/%SUBDIR%/ \
-	http://ftp.esat.net/mirrors/ftp.kde.org/pub/kde/%SUBDIR%/ \
 	ftp://kde.paralax.org/%SUBDIR%/ \
 	ftp://ftp.cronyx.ru/pub/mirror/kde/%SUBDIR%/ \
 	http://kde.cs.nctu.edu.tw/%SUBDIR%/ \
@@ -1130,7 +1131,9 @@ MASTER_SITE_SAVANNAH+= \
 	http://mirror.lihnidos.org/GNU/savannah/%SUBDIR%/ \
 	http://ftp.twaren.net/Unix/NonGNU/%SUBDIR%/ \
 	ftp://ftp.twaren.net/Unix/NonGNU/%SUBDIR%/ \
-	http://download.savannah.gnu.org/releases-noredirect/%SUBDIR%/
+	http://gnu.mirrors.pair.com/savannah/savannah/%SUBDIR%/ \
+	ftp://gnu.mirrors.pair.com/savannah/%SUBDIR%/ \
+	http://download-mirror.savannah.gnu.org/releases/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_SOURCEFORGE)

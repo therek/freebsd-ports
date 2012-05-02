@@ -6,8 +6,8 @@
 #
 
 PORTNAME=	mozc
-PORTVERSION=	1.3.931.102
-PORTREVISION?=	1
+PORTVERSION=	1.3.975.102
+PORTREVISION?=	0
 CATEGORIES=	japanese
 MASTER_SITES=	${MASTER_SITE_GOOGLE_CODE}
 PKGNAMEPREFIX?=	ja-
@@ -73,13 +73,12 @@ BUILD_CMD=	${SETENV} ${MAKE_ENV} ${GMAKE}
 BUILD_MOZC_CMD=	cd ${BUILD_WRKSRC} && \
 		${SETENV} BUILD_COMMAND="${WRKSRC}/mozcmake" \
 		PYTHONPATH=${WRKSRC}/third_party/gyp/local/lib/python${PYTHON_VER}/site-packages \
-		FLOCK= \
 		${PYTHON_CMD} build_mozc.py
 BUILD_GYP_CMD=	cd ${WRKSRC}/third_party/gyp && ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} ${PYSETUP}
 
 post-patch:
 	cd ${WRKSRC} && \
-		${REINPLACE_CMD} "s/@@LOCALBASE@@/${LOCALBASE:S/\//\\\//g}/g" \
+		${REINPLACE_CMD} "s,@@LOCALBASE@@,${LOCALBASE},g" \
 		${LOCALBASE_REPLACE_FILES}
 
 pre-build:

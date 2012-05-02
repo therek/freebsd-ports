@@ -6,14 +6,19 @@
     SUBDIR += GiNaC
     SUBDIR += PDL
     SUBDIR += R
+    SUBDIR += R-cran-Formula
+    SUBDIR += R-cran-KFAS
     SUBDIR += R-cran-RSvgDevice
     SUBDIR += R-cran-SuppDists
     SUBDIR += R-cran-Zelig
+    SUBDIR += R-cran-bdsmatrix
     SUBDIR += R-cran-car
     SUBDIR += R-cran-coda
     SUBDIR += R-cran-deldir
     SUBDIR += R-cran-gpclib
+    SUBDIR += R-cran-igraph
     SUBDIR += R-cran-inline
+    SUBDIR += R-cran-memisc
     SUBDIR += R-cran-mvtnorm
     SUBDIR += R-cran-psych
     SUBDIR += R-cran-sandwich
@@ -49,6 +54,7 @@
     SUBDIR += calcoo
     SUBDIR += calctool
     SUBDIR += cantor
+    SUBDIR += carve
     SUBDIR += cblas
     SUBDIR += ccmath
     SUBDIR += cgal
@@ -136,12 +142,16 @@
     SUBDIR += guppi
     SUBDIR += hs-Agda
     SUBDIR += hs-Agda-executable
+    SUBDIR += hs-NumInstances
     SUBDIR += hs-categories
     SUBDIR += hs-comonad
     SUBDIR += hs-comonad-transformers
     SUBDIR += hs-contravariant
+    SUBDIR += hs-data-lens
+    SUBDIR += hs-data-lens-template
     SUBDIR += hs-distributive
     SUBDIR += hs-erf
+    SUBDIR += hs-math-functions
     SUBDIR += hs-mwc-random
     SUBDIR += hs-pointed
     SUBDIR += hs-probability
@@ -303,6 +313,7 @@
     SUBDIR += octave-forge-plot
     SUBDIR += octave-forge-pt_br
     SUBDIR += octave-forge-quaternion
+    SUBDIR += octave-forge-queueing
     SUBDIR += octave-forge-secs1d
     SUBDIR += octave-forge-secs2d
     SUBDIR += octave-forge-secs3d
@@ -461,6 +472,7 @@
     SUBDIR += p5-Statistics-Regression
     SUBDIR += p5-Statistics-TTest
     SUBDIR += p5-Task-Math-Symbolic
+    SUBDIR += p5-Text-AsciiTeX
     SUBDIR += p5-bignum
     SUBDIR += pari
     SUBDIR += parmetis
@@ -489,6 +501,7 @@
     SUBDIR += prng
     SUBDIR += proofgeneral
     SUBDIR += pspp
+    SUBDIR += pure-mpfr
     SUBDIR += pure-rational
     SUBDIR += py-apgl
     SUBDIR += py-basemap
@@ -550,6 +563,7 @@
     SUBDIR += ruby-numru_misc
     SUBDIR += ruby-numru_units
     SUBDIR += saga
+    SUBDIR += sage
     SUBDIR += sc
     SUBDIR += scalapack
     SUBDIR += scilab
@@ -609,6 +623,7 @@
     SUBDIR += xgfe
     SUBDIR += xgobi
     SUBDIR += xgraph
+    SUBDIR += xlapack
     SUBDIR += xldlas
     SUBDIR += xlispstat
     SUBDIR += xplot

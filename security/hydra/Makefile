@@ -7,9 +7,11 @@
 #
 
 PORTNAME=	hydra
-PORTVERSION=	7.1
+PORTVERSION=	7.2
+PORTREVISION=	1
 CATEGORIES=	security
-MASTER_SITES=	http://freeworld.thc.org/releases/
+MASTER_SITES=	http://freeworld.thc.org/releases/ \
+		PACKETSTORM/groups/thc/
 EXTRACT_SUFX=	-src.tar.gz
 
 MAINTAINER=	rm@FreeBSD.org
@@ -19,7 +21,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	idn:${PORTSDIR}/dns/libidn \
-		pcre.0:${PORTSDIR}/devel/pcre \
+		pcre.1:${PORTSDIR}/devel/pcre \
 		sasl2.2:${PORTSDIR}/security/cyrus-sasl2
 
 NO_LATEST_LINK=	yes

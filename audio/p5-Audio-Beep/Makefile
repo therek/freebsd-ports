@@ -11,8 +11,11 @@ CATEGORIES=	audio perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	gslin@gslin.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	A module to use your computer beeper in fancy ways
+
+BUILD_DEPENDS=	beep:${PORTSDIR}/audio/beep
+RUN_DEPENDS=	beep:${PORTSDIR}/audio/beep
 
 PERL_CONFIGURE=	yes
 

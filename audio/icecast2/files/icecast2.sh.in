@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/icecast2/files/icecast2.sh.in,v 1.7 2010/04/24 20:45:05 sahil Exp $
+# $FreeBSD: ports/audio/icecast2/files/icecast2.sh.in,v 1.8 2010/08/16 15:23:57 ohauer Exp $
 #
 
 # PROVIDE: icecast2
@@ -24,7 +24,7 @@
 . /etc/rc.subr
 
 name="icecast"
-rcvar=`set_rcvar`
+rcvar=icecast_enable
 
 command="%%PREFIX%%/bin/icecast"
 command_args="-b 1>/dev/null"

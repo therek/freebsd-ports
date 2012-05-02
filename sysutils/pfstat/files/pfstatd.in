@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/pfstat/files/pfstatd.in,v 1.1 2010/09/15 23:42:41 pgollucci Exp $
 #
 
 # PROVIDE: pfstatd
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="pfstatd"
-rcvar=`set_rcvar`
+rcvar=pfstatd_enable
 command="%%PREFIX%%/bin/${name}"
 
 load_rc_config ${name}

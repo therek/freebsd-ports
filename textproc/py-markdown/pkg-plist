@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/py-markdown/pkg-plist,v 1.3 2009/08/05 08:24:29 nivit Exp $
+@comment $FreeBSD: ports/textproc/py-markdown/pkg-plist,v 1.4 2011/11/29 06:32:49 wen Exp $
 bin/markdown_py
 %%PYTHON_SITELIBDIR%%/markdown/__init__.py
 %%PYTHON_SITELIBDIR%%/markdown/__init__.pyc
@@ -78,9 +78,9 @@ bin/markdown_py
 %%PYTHON_SITELIBDIR%%/markdown/preprocessors.py
 %%PYTHON_SITELIBDIR%%/markdown/preprocessors.pyc
 %%PYTHON_SITELIBDIR%%/markdown/preprocessors.pyo
-%%PYTHON_SITELIBDIR%%/markdown/searializers.py
-%%PYTHON_SITELIBDIR%%/markdown/searializers.pyc
-%%PYTHON_SITELIBDIR%%/markdown/searializers.pyo
+%%PYTHON_SITELIBDIR%%/markdown/serializers.py
+%%PYTHON_SITELIBDIR%%/markdown/serializers.pyc
+%%PYTHON_SITELIBDIR%%/markdown/serializers.pyo
 %%PYTHON_SITELIBDIR%%/markdown/treeprocessors.py
 %%PYTHON_SITELIBDIR%%/markdown/treeprocessors.pyc
 %%PYTHON_SITELIBDIR%%/markdown/treeprocessors.pyo

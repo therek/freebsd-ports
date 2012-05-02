@@ -106,6 +106,8 @@ share/postgresql/system_views.sql
 %%GETTEXT%%share/locale/ru/LC_MESSAGES/pg_controldata-9.0.mo
 %%GETTEXT%%share/locale/ru/LC_MESSAGES/pg_ctl-9.0.mo
 %%GETTEXT%%share/locale/ru/LC_MESSAGES/pg_resetxlog-9.0.mo
+%%GETTEXT%%share/locale/ru/LC_MESSAGES/plpgsql-9.0.mo
+%%GETTEXT%%share/locale/ru/LC_MESSAGES/postgres-9.0.mo
 %%GETTEXT%%share/locale/sv/LC_MESSAGES/initdb-9.0.mo
 %%GETTEXT%%share/locale/sv/LC_MESSAGES/pg_controldata-9.0.mo
 %%GETTEXT%%share/locale/sv/LC_MESSAGES/pg_ctl-9.0.mo
@@ -771,6 +773,8 @@ share/postgresql/tsearch_data/ispell_sample.affix
 share/postgresql/tsearch_data/ispell_sample.dict
 share/postgresql/tsearch_data/synonym_sample.syn
 share/postgresql/tsearch_data/thesaurus_sample.ths
+@exec /bin/mkdir -p %%PREFIX%%/%%PG_USER%% || /usr/bin/true
+@exec /usr/sbin/chown %%PG_USER%%:%%PG_GROUP%% %%PREFIX%%/%%PG_USER%% || /usr/bin/true
 @dirrmtry share/postgresql/tsearch_data
 @dirrmtry share/postgresql
 @dirrmtry etc/periodic/daily

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/powerdns/files/pdns.in,v 1.6 2010/03/27 00:12:57 dougb Exp $
+# $FreeBSD: ports/dns/powerdns/files/pdns.in,v 1.7 2011/08/08 12:38:59 pav Exp $
 #
 
 # PROVIDE: pdns_server
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name=pdns
-rcvar=`set_rcvar`
+rcvar=pdns_enable
 
 command=%%PREFIX%%/sbin/pdns_server
 

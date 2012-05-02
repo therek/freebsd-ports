@@ -53,8 +53,8 @@ SVN_REV!=	svn info http://llvm.org/svn/llvm-project/ | ${GREP} Revision | cut -d
 .include "Makefile.svn_rev"
 .endif
 
-.if ${OSVERSION} >= 900007
-BROKEN=		relocation R_X86_64_PC32 happens with -fPIC
+.if ${ARCH} == "amd64" && ${OSVERSION} >= 900000
+BROKEN=		does not compile on FreeBSD 9.X
 .endif
 
 .if defined(BOOTSTRAP)

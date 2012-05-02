@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/anacron/files/anacron.sh.in,v 1.1 2005/06/16 15:51:38 jylefort Exp $
+# $FreeBSD: ports/sysutils/anacron/files/anacron.sh.in,v 1.2 2010/03/27 00:14:52 dougb Exp $
 #
 
 # PROVIDE: anacron
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="anacron"
-rcvar=`set_rcvar`
+rcvar=anacron_enable
 command="%%PREFIX%%/sbin/anacron"
 
 load_rc_config $name

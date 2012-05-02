@@ -152,6 +152,7 @@
     SUBDIR += fetchmail
     SUBDIR += fetchyahoo
     SUBDIR += filtermail
+    SUBDIR += findmaildirs
     SUBDIR += firemime
     SUBDIR += firepay
     SUBDIR += firetray
@@ -194,7 +195,9 @@
     SUBDIR += horde4-turba
     SUBDIR += horde4-webmail
     SUBDIR += hotwayd
+    SUBDIR += hs-email-validate
     SUBDIR += hs-mime
+    SUBDIR += hs-mime-mail
     SUBDIR += ifile
     SUBDIR += ilohamail
     SUBDIR += ilohamail-devel
@@ -253,6 +256,7 @@
     SUBDIR += mailscanner
     SUBDIR += mailsync
     SUBDIR += mailtray
+    SUBDIR += mailutils
     SUBDIR += mailx
     SUBDIR += mairix
     SUBDIR += majordomo
@@ -516,6 +520,7 @@
     SUBDIR += postfix25
     SUBDIR += postfix26
     SUBDIR += postfix27
+    SUBDIR += postfix28
     SUBDIR += postfixadmin
     SUBDIR += postgrey
     SUBDIR += postpals

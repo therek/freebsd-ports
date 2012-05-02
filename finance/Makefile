@@ -4,7 +4,13 @@
     COMMENT = Monetary, financial and related applications
 
     SUBDIR += R-cran-RFinanceYJ
+    SUBDIR += R-cran-ccgarch
     SUBDIR += R-cran-gmm
+    SUBDIR += R-cran-lmtest
+    SUBDIR += R-cran-plm
+    SUBDIR += R-cran-strucchange
+    SUBDIR += R-cran-urca
+    SUBDIR += R-cran-vars
     SUBDIR += aqbanking
     SUBDIR += aqmoney
     SUBDIR += beanie

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/bird6/files/bird6.in,v 1.1 2010/06/28 07:58:08 pav Exp $
 #
 # PROVIDE: bird6
 # REQUIRE: LOGIN
@@ -18,7 +18,7 @@
 . /etc/rc.subr
 
 name="bird6"
-rcvar=${name}_enable
+rcvar=bird6_enable
 
 command=%%PREFIX%%/sbin/${name}
 

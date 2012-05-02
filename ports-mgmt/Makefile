@@ -8,6 +8,7 @@
     SUBDIR += bxpkg
     SUBDIR += distilator
     SUBDIR += fastest_sites
+    SUBDIR += fbsdmon
     SUBDIR += genplist
     SUBDIR += gnome-packagekit
     SUBDIR += hs-porte
@@ -26,7 +27,9 @@
     SUBDIR += packagekit
     SUBDIR += packagekit-qt4
     SUBDIR += pbi-manager
+    SUBDIR += pchecker
     SUBDIR += pib
+    SUBDIR += pkg
     SUBDIR += pkg-orphan
     SUBDIR += pkg-plist
     SUBDIR += pkg_add_it
@@ -70,6 +73,7 @@
     SUBDIR += portupdate-scan
     SUBDIR += portupgrade
     SUBDIR += portupgrade-devel
+    SUBDIR += poudriere
     SUBDIR += psearch
     SUBDIR += pver
     SUBDIR += qtpkg

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/ipacctd/files/ipacctd.sh.in,v 1.2 2009/07/15 16:55:57 dougb Exp $
+# $FreeBSD: ports/net-mgmt/ipacctd/files/ipacctd.sh.in,v 1.3 2010/03/27 00:14:19 dougb Exp $
 #
 
 # PROVIDE:	ipacctd
@@ -31,7 +31,7 @@
 . /etc/rc.subr
 
 name="ipacctd"
-rcvar=`set_rcvar`
+rcvar=ipacctd_enable
 
 command="%%PREFIX%%/sbin/ipacctd"
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/mysql41-server/files/mysql-server.sh.in,v 1.6 2010/03/27 00:12:47 dougb Exp $
+# $FreeBSD: ports/databases/mysql41-server/files/mysql-server.sh.in,v 1.7 2011/05/15 02:49:05 dougb Exp $
 #
 
 # PROVIDE: mysql
@@ -23,7 +23,7 @@
 . /etc/rc.subr
 
 name="mysql"
-rcvar=`set_rcvar`
+rcvar=mysql_enable
 
 load_rc_config $name
 

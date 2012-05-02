@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-im/jabber-pyicq/files/jabber-pyicq-transport.sh.in,v 1.9 2008/01/15 13:11:29 garga Exp $
+# $FreeBSD: ports/net-im/jabber-pyicq/files/jabber-pyicq-transport.sh.in,v 1.10 2010/03/27 00:14:14 dougb Exp $
 #
 # PROVIDE: jabber_pyicq
 # REQUIRE: DAEMON %%JABBER_REQUIRE%%
@@ -14,7 +14,7 @@
 . /etc/rc.subr
 
 name="jabber_pyicq"
-rcvar=`set_rcvar`
+rcvar=jabber_pyicq_enable
 
 load_rc_config $name
 

@@ -10,8 +10,10 @@
     SUBDIR += R-cran-DCluster
     SUBDIR += R-cran-Epi
     SUBDIR += R-cran-bayesm
+    SUBDIR += R-cran-e1071
     SUBDIR += R-cran-eco
     SUBDIR += R-cran-epicalc
+    SUBDIR += R-cran-snow
     SUBDIR += abinit
     SUBDIR += afni
     SUBDIR += avogadro
@@ -159,6 +161,7 @@
     SUBDIR += py-obspy.iris
     SUBDIR += py-obspy.mseed
     SUBDIR += py-obspy.signal
+    SUBDIR += py-obspy.taup
     SUBDIR += py-obspy.wav
     SUBDIR += py-obspy.xseed
     SUBDIR += py-openbabel

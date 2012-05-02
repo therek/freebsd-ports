@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/dma/files/dma_flushq.in,v 1.1 2010/10/27 09:38:01 bapt Exp $
 #
 # PROVIDE: dma mail
 # REQUIRE: LOGIN cleanvar
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="dma_flushq"
-rcvar=${name}_enable
+rcvar=dma_flushq_enable
 
 load_rc_config ${name}
 

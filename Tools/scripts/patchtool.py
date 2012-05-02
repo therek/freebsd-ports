@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # ex:ts=4
 #-*- mode: Fundamental; tab-width: 4; -*-
 #
@@ -14,7 +14,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.14 2005/01/09 10:21:17 krion Exp $
+# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.15 2009/11/21 00:40:59 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
 #				     highly discouraged!!!

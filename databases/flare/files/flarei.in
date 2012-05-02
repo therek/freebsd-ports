@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/databases/flare/files/flarei.in,v 1.1 2010/05/31 16:43:38 nork Exp $
 #
 # PROVIDE: flarei
 # REQUIRE: LOGIN
@@ -17,7 +17,7 @@
 . /etc/rc.subr
 
 name=flarei
-rcvar=`set_rcvar`
+rcvar=flarei_enable
 command=%%PREFIX%%/bin/${name}
 extra_commands="reload"
 start_precmd=${name}_prestart

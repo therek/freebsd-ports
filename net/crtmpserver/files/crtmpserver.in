@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/net/crtmpserver/files/crtmpserver.in,v 1.2 2011/03/01 17:33:52 sylvio Exp $
+# $FreeBSD: ports/net/crtmpserver/files/crtmpserver.in,v 1.3 2011/07/30 15:49:07 lwhsu Exp $
 #
 # PROVIDE: crtmpserver
 # REQUIRE: LOGIN
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="crtmpserver"
-rcvar=${name}_enable
+rcvar=crtmpserver_enable
 
 command=%%PREFIX%%/sbin/${name}
 

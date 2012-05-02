@@ -7,7 +7,7 @@
 
 PORTNAME=	mediakit
 PORTVERSION=	0.4.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia gnustep
 MASTER_SITES=	http://download.gna.org/etoile/
 PKGNAMEPREFIX=	etoile-
@@ -37,5 +37,9 @@ FOUNDATION_PORT?=	devel/etoile-foundation
 SYSTEMCONFIG_PORT?=	deskutils/etoile-systemconfig
 
 ADDITIONAL_INCLUDE_DIRS+=	-I${LOCALBASE}/include/ffmpeg
+
+post-configure:
+	${REINPLACE_CMD} -e 's|-Werror||' ${WRKSRC}/etoile.make \
+		${WRKSRC}/Frameworks/MediaKit/GNUmakefile
 
 .include <bsd.port.mk>

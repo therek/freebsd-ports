@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/nss-pam-ldapd/files/nslcd.in,v 1.5 2011/09/15 12:59:49 sem Exp $
+# $FreeBSD: ports/net/nss-pam-ldapd/files/nslcd.in,v 1.6 2011/11/07 22:33:54 zi Exp $
 #
 # PROVIDE: nslcd
 # REQUIRE: ldconfig resolv
@@ -16,7 +16,7 @@ nslcd_enable=${nslcd_enable-"NO"}
 . /etc/rc.subr
 
 name=nslcd
-rcvar=$(set_rcvar)
+rcvar=nslcd_enable
 
 start_postcmd="nslcd_poststart"
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/snortsam/files/snortsam.sh.in,v 1.3 2009/12/31 20:18:29 miwi Exp $
+# $FreeBSD: ports/security/snortsam/files/snortsam.sh.in,v 1.4 2010/03/27 00:14:49 dougb Exp $
 
 # PROVIDE: snortsam
 # REQUIRE: DAEMON
@@ -19,7 +19,7 @@
 . /etc/rc.subr
 
 name="snortsam"
-rcvar=`set_rcvar`
+rcvar=snortsam_enable
 load_rc_config snortsam
 
 # defaults

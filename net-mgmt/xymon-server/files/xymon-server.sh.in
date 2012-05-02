@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net-mgmt/xymon-server/files/hobbit-server.sh.in,v 1.4 2010/03/27 00:14:28 dougb Exp $
+# $FreeBSD: ports/net-mgmt/xymon-server/files/xymon-server.sh.in,v 1.2 2012/01/14 08:56:42 dougb Exp $
 #
 
 # PROVIDE: xymon_server
@@ -9,7 +9,7 @@
 . /etc/rc.subr
 
 name="xymon_server"
-rcvar=`set_rcvar`
+rcvar="xymon_server_enable"
 
 load_rc_config "$name"
 : ${xymon_server_enable:="NO"}

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/databases/virtuoso/files/virtuoso.sh.in,v 1.4 2010/03/27 00:12:51 dougb Exp $
+# $FreeBSD: ports/databases/virtuoso/files/virtuoso.sh.in,v 1.5 2011/05/09 10:33:50 fjoe Exp $
 #
 # PROVIDE: virtuoso
 # REQUIRE: LOGIN
@@ -29,7 +29,7 @@ virtuoso_user=virtuoso
 virtuoso_data=%%PREFIX%%/virtuoso
 
 name=virtuoso
-rcvar=`set_rcvar`
+rcvar=virtuoso_enable
 
 command=%%PREFIX%%/bin/virtuoso-t
 command_args="+configfile ${virtuoso_config} ${virtuoso_flags}"

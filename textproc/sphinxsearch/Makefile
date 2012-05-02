@@ -10,11 +10,13 @@
 
 PORTNAME=	sphinxsearch
 PORTVERSION=	2.0.3
+PORTREVISION=	1
 CATEGORIES=	textproc databases
 MASTER_SITES=	http://sphinxsearch.com/files/
 DISTNAME=	sphinx-${PORTVERSION}-release
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	m.seaman@infracaninophile.co.uk
+MAINTAINER=	matthew@FreeBSD.org
 COMMENT=	Sphinx Full-Text Search Engine
 
 LICENSE=	GPLv2
@@ -22,7 +24,7 @@ LICENSE=	GPLv2
 # If expat is present on the system and configure finds it, it will
 # unconditionally link the output binary against it.  There's no way
 # of turning this off.  So for consistency, make sure it's always on.
-LIB_DEPENDS=	expat.6:${PORTSDIR}/textproc/expat2
+LIB_DEPENDS=	expat:${PORTSDIR}/textproc/expat2
 
 OPTIONS=	MYSQL		 "MySQL support"		    on	\
 		PGSQL		 "PostgreSQL support"		    off \
@@ -30,10 +32,8 @@ OPTIONS=	MYSQL		 "MySQL support"		    on	\
 		OPTIMIZED_CFLAGS "Use compiler optimization (-O3)"  off \
 		ID64		 "use 64-bit document and word IDs" off \
 		UNIXODBC	 "unixODBC support"		    off \
-		SYSLOG		 "enable logging via syslog"	    on
-
-## FFR
-##	       LIBSTEMMER	"compile with libstemmer support"  off
+		SYSLOG		 "enable logging via syslog"	    on  \
+		LIBSTEMMER	 "compile with libstemmer support"  off
 
 CONFLICTS=	sphinxsearch-devel-[0-9]*
 
@@ -42,21 +42,21 @@ CONFLICTS=	sphinxsearch-devel-[0-9]*
 # The port will successfully compile with both PGSQL and MYSQL support
 # simultaneously.  Not sure how useful that is in practice though.
 
-.if defined(WITH_MYSQL) && !defined(WITHOUT_MYSQL)
+.if defined(WITH_MYSQL)
 CONFIGURE_ARGS+=	--with-mysql
 USE_MYSQL=		yes
 .else
 CONFIGURE_ARGS+=	--without-mysql
 .endif
 
-.if defined(WITH_PGSQL) && !defined(WITHOUT_PGSQL)
+.if defined(WITH_PGSQL)
 CONFIGURE_ARGS+=	--with-pgsql
 USE_PGSQL=		yes
 .else
 CONFIGURE_ARGS+=	--without-pgsql
 .endif
 
-.if defined(WITH_ICONV) && !defined(WITHOUT_ICONV)
+.if defined(WITH_ICONV)
 CONFIGURE_ARGS+=	--with-iconv
 USE_ICONV=		yes
 .else
@@ -76,34 +76,43 @@ CONFIGURE_ARGS+=	--enable-id64
 
 .if defined(WITH_UNIXODBC)
 CONFIGURE_ARGS+=	--with-unixodbc
-LIB_DEPENDS+=		odbc.1:${PORTSDIR}/databases/unixODBC
+LIB_DEPENDS+=		odbc:${PORTSDIR}/databases/unixODBC
 .else
 CONFIGURE_ARGS+=	--without-unixodbc
 .endif
 
-.if defined(WITH_SYSLOG) && !defined(WITHOUT_SYSLOG)
+.if defined(WITH_SYSLOG)
 CONFIGURE_ARGS+=	--with-syslog
 .else
 CONFIGURE_ARGS+=	--without-syslog
 .endif
 
-## FFR.  The snowball project doesn't release numbered versions of
-## it's pre-processors.  Instead, at arbitrary intervals a snapshot of
-## their source repository is turned into a tarball (always the same
-## filename) and placed on their web site.  It's like they want to
-## make it as hard as possible for anyone to package and use their
-## software.
-##
-## # Adds support for two additional word stemmming pre-processors
-## # from the Snowball project (http://snowball.tartarus.org/) --
-## # these essentially do exactly the same thing as the built in
-## # English and Russian stemmers but are slightly slower and may
-## # produce subtly different output. Disabled by default.
-## .if defined(WITH_LIBSTEMMER) && !defined(WITHOUT_LIBSTEMMER)
-## CONFIGURE_ARGS+=	--with-libstemmer
-## .else
-## CONFIGURE_ARGS+=	--without-libstemmer
-## .endif
+# Note: The snowball project doesn't release numbered versions of it's
+# pre-processors.  Instead, at arbitrary but fairly long intervals a
+# snapshot of their source repository is turned into a tarball (always
+# the same filename) and placed on their web site.  It's like they
+# want to make it as hard as possible for anyone to package and use
+# their software.
+#
+# Adds support for two additional word stemmming pre-processors from
+# the Snowball project (http://snowball.tartarus.org/) -- these
+# essentially do exactly the same thing as the built in English,
+# Russian and Czech stemmers but also support French, Spanish,
+# Portuguese, Italian, Romanian, German, Dutch, Swedish, Norwegian,
+# Danish, Finnish, Hungarian.  Disabled by default.
+
+.if defined(WITH_LIBSTEMMER) || make(makesum) || defined(FETCH_ALL)
+MASTER_SITES+=	http://snowball.tartarus.org/dist/:libstemmer
+LIBSTEMMER_TGZ=	libstemmer_c.tgz
+DISTFILES+=	${LIBSTEMMER_TGZ}:libstemmer
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
+.endif
+
+.if defined(WITH_LIBSTEMMER)
+CONFIGURE_ARGS+=	--with-libstemmer
+.else
+CONFIGURE_ARGS+=	--without-libstemmer
+.endif
 
 USERS?=		_sphinx
 GROUPS?=	_sphinx
@@ -137,8 +146,14 @@ PORTEXAMPLES=	*
 DOCS=		doc/sphinx.css doc/sphinx.html doc/sphinx.txt doc/sphinx.xml
 .endif
 
-# Fix up the sample configuration file to correspond to FreeBSD norms
+post-extract:
+.if defined(WITH_LIBSTEMMER)
+	@( cd ${WRKSRC} && \
+	    ${GZIP_CMD} ${EXTRACT_BEFORE_ARGS} ${DISTDIR}/${LIBSTEMMER_TGZ} \
+	    ${EXTRACT_AFTER_ARGS} )
+.endif
 
+# Fix up the sample configuration file to correspond to FreeBSD norms
 post-patch:
 	@${REINPLACE_CMD} \
 	    -e "s!@CONFDIR@/log/searchd.pid!${SPHINX_RUN}/searchd.pid!"	   \

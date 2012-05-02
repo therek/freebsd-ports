@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/wired-tracker/files/trackerd.sh.in,v 1.3 2011/05/15 02:49:11 dougb Exp $
 #
 # PROVIDE: trackerd
 # REQUIRE: 
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="trackerd"
-rcvar=${name}_enable
+rcvar=trackerd_enable
 
 pidfile=%%PREFIX%%/wired/trackerd.pid
 command=%%PREFIX%%/sbin/${name}

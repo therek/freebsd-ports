@@ -7,6 +7,7 @@
 
 PORTNAME=	cantor
 PORTVERSION=	${KDE4_VERSION}
+PORTREVISION=	1
 CATEGORIES=	math kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	${KDE4_BRANCH}/${PORTVERSION}/src
@@ -35,7 +36,11 @@ OPTIONS=	KALGEBRA "KAlgebra backend" on \
 .include <bsd.port.options.mk>
 
 .ifndef(WITHOUT_KALGEBRA)
-RUN_DEPENDS+=	${KDE4_PREFIX}/bin/kalgebra:${PORTSDIR}/math/kalgebra
+LIB_DEPENDS+=	analitza.5:${PORTSDIR}/math/kalgebra
+PLIST_SUB+=	KALGEBRA=""
+.else
+CMAKE_ARGS+=	-DWITH_Analitza:BOOL=FALSE
+PLIST_SUB+=	KALGEBRA="@comment "
 .endif
 
 .ifdef(WITH_MAXIMA)

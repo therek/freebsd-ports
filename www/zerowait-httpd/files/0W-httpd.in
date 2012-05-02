@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/zerowait-httpd/files/0W-httpd.in,v 1.1 2006/04/25 19:52:00 pav Exp $
+# $FreeBSD: ports/www/zerowait-httpd/files/0W-httpd.in,v 1.2 2010/03/27 00:15:21 dougb Exp $
 
 # PROVIDE: zerowait
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@
 . /etc/rc.subr
 
 name="zerowait"
-rcvar=`set_rcvar`
+rcvar=zerowait_enable
 command="%%PREFIX%%/sbin/0W-httpd"
 args="-c %%PREFIX%%/etc/0W-httpd/httpd.conf"
 required_files="%%PREFIX%%/etc/0W-httpd/httpd.conf"

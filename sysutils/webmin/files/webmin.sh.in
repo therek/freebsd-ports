@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/webmin/files/webmin.sh.in,v 1.10 2009/07/15 16:56:07 dougb Exp $
+# $FreeBSD: ports/sysutils/webmin/files/webmin.sh.in,v 1.11 2010/03/27 00:15:07 dougb Exp $
 #
 # PROVIDE: webmin
 # REQUIRE: LOGIN
@@ -15,7 +15,7 @@ webmin_enable=${webmin_enable:-"NO"}
 . /etc/rc.subr
 
 name=webmin
-rcvar=`set_rcvar`
+rcvar=webmin_enable
 
 procname=%%PERL5%%
 pidfile=/var/log/webmin/miniserv.pid

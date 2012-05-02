@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/multimedia/webcamd/files/webcamd.in,v 1.5 2010/12/12 22:52:07 kwm Exp $
+# $FreeBSD: ports/multimedia/webcamd/files/webcamd.in,v 1.7 2012/01/14 08:56:08 dougb Exp $
 #
 # PROVIDE: webcamd
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@ hald_enable=${hald_enable-"NO"}
 . /etc/rc.subr
 
 name=webcamd
-rcvar=`set_rcvar`
+rcvar=webcamd_enable
 command=%%PREFIX%%/sbin/webcamd
 command_args="-B -U webcamd -G webcamd"
 
@@ -31,6 +31,15 @@ webcamd_prestart()
 pidfile="/var/run/webcamd.*.0.pid"
 
 load_rc_config $name
+
+if [ "$2" = "vflip" ] || [ "$3" = "vflip" ]; then
+	command_args="$command_args -m v4l2.vflip=1"
+fi
+
+if [ "$2" = "hflip" ] || [ "$3" = "hflip" ]; then
+	command_args="$command_args -m v4l2.hflip=1"
+fi
+
 if [ $# -gt 1 ]; then
 	pidfile="webcamd.dummy"
 	command_args="$command_args -d $2 -i 0"

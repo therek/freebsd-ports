@@ -39,6 +39,7 @@
     SUBDIR += beecrypt
     SUBDIR += belier
     SUBDIR += bfbtester
+    SUBDIR += binwalk
     SUBDIR += bioapi
     SUBDIR += blindelephant
     SUBDIR += blocksshd
@@ -184,8 +185,23 @@
     SUBDIR += horde-jeta
     SUBDIR += hotssh
     SUBDIR += hs-Crypto
+    SUBDIR += hs-HsOpenSSL
+    SUBDIR += hs-RSA
     SUBDIR += hs-SHA
+    SUBDIR += hs-certificate
+    SUBDIR += hs-clientsession
+    SUBDIR += hs-cprng-aes
+    SUBDIR += hs-crypto-api
+    SUBDIR += hs-crypto-pubkey-types
+    SUBDIR += hs-cryptocipher
+    SUBDIR += hs-cryptohash
     SUBDIR += hs-digest
+    SUBDIR += hs-entropy
+    SUBDIR += hs-pureMD5
+    SUBDIR += hs-pwstore-fast
+    SUBDIR += hs-skein
+    SUBDIR += hs-tls
+    SUBDIR += hs-tls-extra
     SUBDIR += httprint
     SUBDIR += hunch
     SUBDIR += hydra
@@ -305,6 +321,7 @@
     SUBDIR += nmapsi4
     SUBDIR += nss
     SUBDIR += oath-toolkit
+    SUBDIR += obfsproxy
     SUBDIR += ocaml-cryptgps
     SUBDIR += ocaml-cryptokit
     SUBDIR += ocaml-ssl
@@ -359,6 +376,7 @@
     SUBDIR += p5-Authen-Krb5
     SUBDIR += p5-Authen-Libwrap
     SUBDIR += p5-Authen-NTLM
+    SUBDIR += p5-Authen-OATH
     SUBDIR += p5-Authen-PAAS
     SUBDIR += p5-Authen-PAM
     SUBDIR += p5-Authen-Passphrase
@@ -472,6 +490,7 @@
     SUBDIR += p5-Crypt-UnixCrypt_XS
     SUBDIR += p5-Crypt-X509
     SUBDIR += p5-Crypt-xDBM_File
+    SUBDIR += p5-Dancer-Plugin-Passphrase
     SUBDIR += p5-Data-Entropy
     SUBDIR += p5-Data-Password
     SUBDIR += p5-Digest
@@ -590,6 +609,7 @@
     SUBDIR += parano
     SUBDIR += pbc
     SUBDIR += pbnj
+    SUBDIR += pcsc-tools
     SUBDIR += pdfcrack
     SUBDIR += pear-Auth
     SUBDIR += pear-Auth_HTTP
@@ -692,6 +712,7 @@
     SUBDIR += py-bcrypt
     SUBDIR += py-borg.localrole
     SUBDIR += py-cerealizer
+    SUBDIR += py-certify
     SUBDIR += py-clamav
     SUBDIR += py-crack
     SUBDIR += py-cryptkit
@@ -771,6 +792,7 @@
     SUBDIR += ruby-tcpwrap
     SUBDIR += rubygem-bcrypt-ruby
     SUBDIR += rubygem-ezcrypto
+    SUBDIR += rubygem-gpgr
     SUBDIR += rubygem-net-scp
     SUBDIR += rubygem-net-sftp
     SUBDIR += rubygem-net-ssh
@@ -782,6 +804,7 @@
     SUBDIR += saferpay
     SUBDIR += safesh
     SUBDIR += saint
+    SUBDIR += samba-virusfilter
     SUBDIR += samhain
     SUBDIR += samhain-client
     SUBDIR += samhain-server
@@ -848,6 +871,7 @@
     SUBDIR += sshguard-ipfw
     SUBDIR += sshguard-pf
     SUBDIR += sshit
+    SUBDIR += sshpass
     SUBDIR += ssl-admin
     SUBDIR += sslproxy
     SUBDIR += sslscan
@@ -890,6 +914,7 @@
     SUBDIR += tripwire12
     SUBDIR += trousers
     SUBDIR += truecrypt
+    SUBDIR += tsshbatch
     SUBDIR += tthsum
     SUBDIR += tuntun
     SUBDIR += umit

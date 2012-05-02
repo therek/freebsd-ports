@@ -7,6 +7,7 @@
 
 PORTNAME=	vlc
 DISTVERSION=	1.1.13
+PORTREVISION=	6
 PORTEPOCH=	3
 CATEGORIES=	multimedia audio ipv6 net www
 MASTER_SITES=	http://download.videolan.org/pub/videolan/${PORTNAME}/${DISTVERSION}/ \
@@ -552,7 +553,7 @@ CONFIGURE_ARGS+=--disable-smb
 .endif
 
 .if defined(WITH_SCHROED)
-LIB_DEPENDS+=	schroedinger-1.0.10:${PORTSDIR}/multimedia/schroedinger
+LIB_DEPENDS+=	schroedinger-1.0.11:${PORTSDIR}/multimedia/schroedinger
 CONFIGURE_ARGS+=--enable-schroedinger
 .else
 CONFIGURE_ARGS+=--disable-schroedinger
@@ -644,7 +645,7 @@ CONFIGURE_ARGS+=	--enable-twolame
 .endif
 
 .if defined(WITH_UPNP)
-LIB_DEPENDS+=	upnp.7:${PORTSDIR}/devel/upnp
+LIB_DEPENDS+=	upnp.8:${PORTSDIR}/devel/upnp
 CONFIGURE_ARGS+=--enable-upnp
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-modules__services_discovery__upnp_intel.cpp
 .else
@@ -695,7 +696,8 @@ CONFIGURE_ARGS+=--disable-x264
 CONFIGURE_ARGS+=--disable-xcb --without-x
 .else
 USE_XORG=	xpm
-LIBDEPENDS+=	xcb.2:${PORTSDIR}/x11/libxcb
+LIB_DEPENDS+=	xcb.2:${PORTSDIR}/x11/libxcb \
+		xcb-keysyms.1:${PORTSDIR}/x11/xcb-util-keysyms
 CONFIGURE_ARGS+=--enable-xcb --with-x
 .endif
 

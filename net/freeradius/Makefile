@@ -7,7 +7,7 @@
 
 PORTNAME=	freeradius
 PORTVERSION?=	1.1.8
-PORTREVISION?=	4
+PORTREVISION?=	5
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/freeradius/%SUBDIR%/ \
 		ftp://ftp.ntua.gr/pub/net/radius/freeradius/%SUBDIR%/ \
@@ -23,6 +23,9 @@ PKGNAMESUFFIX=	-mysql
 
 MAINTAINER?=	zi@FreeBSD.org
 COMMENT?=	A free RADIUS server implementation
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	gdbm.4:${PORTSDIR}/databases/gdbm
 
@@ -167,7 +170,7 @@ PLIST_SUB+=	PGSQL="@comment "
 .ifdef(WITH_UNIXODBC)
 CONFIGURE_ARGS+=--with-rlm_sql_unixodbc
 PLIST_SUB+=	UNIXODBC=""
-LIB_DEPENDS+=	odbc.1:${PORTSDIR}/databases/unixODBC
+LIB_DEPENDS+=	odbc.2:${PORTSDIR}/databases/unixODBC
 .else
 CONFIGURE_ARGS+=--without-rlm_sql_unixodbc
 PLIST_SUB+=	UNIXODBC="@comment "
@@ -229,6 +232,9 @@ CONFIGURE_ARGS+=	--with-pic
 .endif
 
 post-patch:
+	@${REINPLACE_CMD} -e 's|timestamp(14)|timestamp|g' \
+		${WRKSRC}/doc/examples/mysql.sql
+	@${RM} ${WRKSRC}/doc/examples/mysql.sql.bak
 # Patch Makefile / Makefile.in throughout the source tree to install raddb
 # contents in ${EXAMPLESDIR}/raddb rather than the raddbdir from configure
 	@${FIND} -E ${WRKSRC} -regex '.*/Makefile(\.in)?$$' -exec \

@@ -12,6 +12,7 @@
     SUBDIR += bind97
     SUBDIR += bind97-sdb
     SUBDIR += bind98
+    SUBDIR += bind99
     SUBDIR += bindgraph
     SUBDIR += c-ares
     SUBDIR += checkdns
@@ -110,6 +111,7 @@
     SUBDIR += p5-Net-Nslookup
     SUBDIR += p5-Net-RBLClient
     SUBDIR += p5-POE-Component-Client-DNS
+    SUBDIR += p5-POE-Component-Client-DNS-Recursive
     SUBDIR += p5-POE-Component-Resolver
     SUBDIR += p5-POE-Component-Server-DNS
     SUBDIR += p5-Stanford-DNSserver
@@ -127,6 +129,7 @@
     SUBDIR += py-adns
     SUBDIR += py-dns
     SUBDIR += py-dnspython
+    SUBDIR += py-easyzone
     SUBDIR += py-idnkit2
     SUBDIR += py-namebench
     SUBDIR += py-twistedNames

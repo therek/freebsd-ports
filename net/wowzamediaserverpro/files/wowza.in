@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/wowzamediaserverpro/files/wowza.in,v 1.1 2009/10/11 12:37:10 miwi Exp $
+# $FreeBSD: ports/net/wowzamediaserverpro/files/wowza.in,v 1.2 2010/03/27 00:14:11 dougb Exp $
 #
 
 # PROVIDE: wowza
@@ -75,7 +75,7 @@ wowza_stderr_log="${wowza_stderr_log:-"%%STDERR_LOG%%"}"
 . /etc/rc.subr
 
 name="wowza"
-rcvar=`set_rcvar`
+rcvar=wowza_enable
 pidfile="/var/run/${name}.pid"
 procname="java"
 

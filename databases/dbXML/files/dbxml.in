@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/databases/dbXML/files/dbxml.in,v 1.1 2011/06/07 05:39:08 glewis Exp $
 #
 # PROVIDE: dbxml
 # REQUIRE: LOGIN
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name="%%PORTNAME%%"
-rcvar=${name}_enable
+rcvar=%%PORTNAME%%_enable
 
 command=%%LOCALBASE%%/bin/dbxmlctl
 pidfile=%%DBXML_HOME%%/config/${name}.pid

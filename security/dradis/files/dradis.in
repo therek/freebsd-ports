@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/dradis/files/dradis.in,v 1.1 2010/08/12 20:51:33 ohauer Exp $
+# $FreeBSD: ports/security/dradis/files/dradis.in,v 1.2 2011/01/09 22:06:07 ohauer Exp $
 #
 # PROVIDE: dradis
 # REQUIRE: LOGIN
@@ -20,7 +20,7 @@
 . /etc/rc.subr
 
 name=dradis
-rcvar=`set_rcvar`
+rcvar=dradis_enable
 
 dradis_enable=${dradis_enable-"NO"}
 dradis_bindip=${dradis_bindip-"127.0.0.1"}

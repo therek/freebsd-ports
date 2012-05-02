@@ -10,7 +10,7 @@ PORTREVISION=	2
 CATEGORIES?=	databases tcl
 PKGNAMESUFFIX=	-tcltk
 
-MAINTAINER=	girgen@FreeBSD.org
+MAINTAINER=	crees@FreeBSD.org
 COMMENT=	A TCL interface to the database PostgreSQL, including a tk GUI
 
 TCLPORTDIR?=	${PORTSDIR}/lang/tcl
@@ -21,6 +21,9 @@ USE_PGSQL=	yes
 MASTERDIR=	${.CURDIR}/../../databases/postgresql84-server
 
 BROKEN=		Does not work with PostgreSQL 8.X
+
+DEPRECATED=	Broken for months with no-one caring, superseded by http://pgtclng.sourceforge.net/
+EXPIRATION_DATE=2012/03/16
 
 LATEST_LINK=	${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}
 

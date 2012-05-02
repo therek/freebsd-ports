@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/nostromo/files/nostromo.sh.in,v 1.1 2011/04/16 08:45:27 dhn Exp $
 #
 
 # PROVIDE: nostromo
@@ -16,7 +16,7 @@
 . /etc/rc.subr
 
 name=nostromo
-rcvar=`set_rcvar`
+rcvar=nostromo_enable
 
 command=/usr/local/sbin/nhttpd
 

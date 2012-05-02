@@ -7,7 +7,7 @@
 
 PORTNAME=	ntop
 PORTVERSION=	4.1.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 #MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Stable
@@ -21,10 +21,8 @@ LIB_DEPENDS=	gdbm.4:${PORTSDIR}/databases/gdbm \
 BUILD_DEPENDS=	rrdtool>=1.2:${PORTSDIR}/databases/rrdtool \
 		dot:${PORTSDIR}/graphics/graphviz \
 		geoiplookup:${PORTSDIR}/net/GeoIP
-RUN_DEPENDS=	dot:${PORTSDIR}/graphics/graphviz \
-		${LOCALBASE}/lib/X11/fonts/URW/a010013l.afm:${PORTSDIR}/x11-fonts/urwfonts \
-		rrdtool>=1.2:${PORTSDIR}/databases/rrdtool \
-		geoiplookup:${PORTSDIR}/net/GeoIP
+RUN_DEPENDS:=	${BUILD_DEPENDS} \
+		 ${LOCALBASE}/lib/X11/fonts/URW/a010013l.afm:${PORTSDIR}/x11-fonts/urwfonts
 
 DBDIR?=		/var/db
 
@@ -53,18 +51,19 @@ USE_RC_SUBR=	ntop.sh
 
 ##
 ## Available knobs:
-##    WITH_LOCALE:        Enable locale (i18n) support.
 ##    WITH_PCAP_PORT:     Use libpcap from ports.
 ##    WITH_XMLDUMP:       Enable XML Dump support.
+##    WITH_MAKO:	 Enable Host Map, Region View (installs py-mako)
 ##
 OPTIONS=	PCAP_PORT "Use libpcap from ports." Off \
 		XMLDUMP "Enable XML Dump support." Off \
-		JUMBO_FRAMES "Jumbo Frames. Experimental." Off
+		JUMBO_FRAMES "Jumbo Frames. Experimental." Off \
+		MAKO "Install py-mako for Host Map, Region View " Off
 
 .include <bsd.port.pre.mk>
 
 .if defined(WITH_PCAP_PORT)
-BUILD_DEPENDS+=		${LOCALBASE}/lib/libpcap.a:${PORTSDIR}/net/libpcap
+LIB_DEPENDS+=		pcap.1:${PORTSDIR}/net/libpcap
 CONFIGURE_ARGS+=	--with-pcap-root=${LOCALBASE}
 .else
 CONFIGURE_ARGS+=	--with-pcap-root=/usr
@@ -82,6 +81,10 @@ CPPFLAGS+=		-I${LOCALBASE}/include/libxml2 \
 CONFIGURE_ARGS+=	--enable-jumbo-frames
 # should set your mtu to 9000
 # see http://www.cyberciti.biz/faq/freebsd-jumbo-frames-networking-configration/
+.endif
+
+.if defined(WITH_MAKO)
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}mako>0:${PORTSDIR}/textproc/py-mako
 .endif
 
 .if ${OSVERSION} < 700000
